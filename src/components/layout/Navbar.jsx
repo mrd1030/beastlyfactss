@@ -1,23 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, BookOpen, Search, Layers, Rss } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
+import { encyclopediaCategories } from '@/lib/data/encyclopedia';
 
-const navLinks = [
-  { to: '/', label: 'Home', emoji: '🏠' },
-  { to: '/facts', label: 'Fun Facts', emoji: '🧠' },
-  { to: '/guides', label: 'Care Guides', emoji: '📖' },
-  { to: '/quiz', label: 'Quiz', emoji: '🎯' },
-  { to: '/pack', label: 'My Pack', emoji: '❤️' },
+const primaryLinks = [
+  { to: '/', label: 'Home' },
+  { to: '/facts', label: 'Facts' },
+  { to: '/blog', label: 'Critter Digest' },
+  { to: '/quiz', label: 'Quiz' },
+  { to: '/pack', label: 'My Pack' },
 ];
 
 export default function Navbar() {
   const [dark, setDark] = useDarkMode();
   const { streak, recordVisit } = useDailyStreak();
-  const [open, setOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [megaOpen, setMegaOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const megaRef = useRef(null);
 
   useEffect(() => { recordVisit(); }, []);
 
@@ -27,7 +30,23 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
-  useEffect(() => { setOpen(false); }, [location]);
+  useEffect(() => {
+    setMobileOpen(false);
+    setMegaOpen(false);
+  }, [location]);
+
+  // Close mega menu on outside click
+  useEffect(() => {
+    const handler = (e) => {
+      if (megaRef.current && !megaRef.current.contains(e.target)) {
+        setMegaOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  const isEncyclopedia = location.pathname.startsWith('/encyclopedia') || location.pathname.startsWith('/guides');
 
   return (
     <motion.nav
@@ -35,29 +54,25 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-card/90 backdrop-blur-xl shadow-sm border-b border-border'
+          ? 'bg-card/95 backdrop-blur-xl shadow-sm border-b border-border'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <motion.span
-              className="text-2xl"
-              whileHover={{ rotate: [0, -10, 10, -10, 0] }}
-              transition={{ duration: 0.5 }}
-            >
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
+            <motion.span className="text-xl" whileHover={{ rotate: [0, -10, 10, 0] }} transition={{ duration: 0.4 }}>
               🦁
             </motion.span>
-            <span className="font-display font-bold text-lg text-foreground">
+            <span className="font-display font-bold text-base text-foreground">
               Beastly<span className="text-secondary">Facts</span>
             </span>
           </Link>
 
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-1">
-            {navLinks.map(link => (
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-0.5">
+            {primaryLinks.map(link => (
               <Link
                 key={link.to}
                 to={link.to}
@@ -67,47 +82,103 @@ export default function Navbar() {
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                <span className="mr-1">{link.emoji}</span>
                 {link.label}
               </Link>
             ))}
+
+            {/* Encyclopedia mega dropdown */}
+            <div ref={megaRef} className="relative">
+              <button
+                onClick={() => setMegaOpen(!megaOpen)}
+                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
+                  isEncyclopedia
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+              >
+                Encyclopedia
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              <AnimatePresence>
+                {megaOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 mt-2 w-72 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
+                  >
+                    <div className="p-3 border-b border-border">
+                      <Link
+                        to="/encyclopedia"
+                        className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors"
+                      >
+                        <Search className="w-4 h-4 text-secondary" />
+                        <div>
+                          <p className="font-display font-bold text-xs text-foreground">Browse All Animals</p>
+                          <p className="text-xs text-muted-foreground font-body">Search the full encyclopedia</p>
+                        </div>
+                      </Link>
+                      <Link
+                        to="/guides"
+                        className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors"
+                      >
+                        <BookOpen className="w-4 h-4 text-accent" />
+                        <div>
+                          <p className="font-display font-bold text-xs text-foreground">Care Guides</p>
+                          <p className="text-xs text-muted-foreground font-body">Detailed husbandry guides</p>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="p-3">
+                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-2">Browse by Category</p>
+                      <div className="grid grid-cols-2 gap-1">
+                        {encyclopediaCategories.map(cat => (
+                          <Link
+                            key={cat.name}
+                            to={`/encyclopedia?category=${encodeURIComponent(cat.name)}`}
+                            className="flex items-center gap-2 px-2.5 py-2 rounded-xl hover:bg-muted transition-colors"
+                          >
+                            <span className="text-base">{cat.emoji}</span>
+                            <span className="text-xs font-body text-foreground">{cat.name}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </div>
 
           {/* Right controls */}
-          <div className="flex items-center gap-2">
-            {/* Streak */}
+          <div className="flex items-center gap-1.5">
             {streak > 0 && (
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                className="flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-sm px-2.5 py-1 rounded-full"
+                className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-xs px-2 py-1 rounded-full"
               >
                 🔥 {streak}
               </motion.div>
             )}
-
-            {/* Dark mode */}
             <button
               onClick={() => setDark(!dark)}
               className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Toggle dark mode"
             >
-              <motion.div
-                key={dark ? 'dark' : 'light'}
-                initial={{ rotate: -90, opacity: 0 }}
-                animate={{ rotate: 0, opacity: 1 }}
-                exit={{ rotate: 90, opacity: 0 }}
-              >
-                {dark ? <Sun className="w-4 h-4 text-sunny" /> : <Moon className="w-4 h-4" />}
-              </motion.div>
+              {dark
+                ? <Sun className="w-4 h-4 text-sunny" />
+                : <Moon className="w-4 h-4 text-muted-foreground" />
+              }
             </button>
-
-            {/* Mobile menu */}
             <button
-              onClick={() => setOpen(!open)}
+              onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden p-2 rounded-full hover:bg-muted transition-colors"
+              aria-label="Open menu"
             >
-              {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -115,28 +186,60 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <AnimatePresence>
-        {open && (
+        {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-border bg-card/95 backdrop-blur-xl"
+            className="md:hidden border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
           >
-            <div className="p-4 flex flex-col gap-1">
-              {navLinks.map(link => (
+            <div className="p-4 space-y-1 max-h-[80vh] overflow-y-auto">
+              {primaryLinks.map(link => (
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`px-4 py-3 rounded-xl text-sm font-body font-semibold flex items-center gap-2 transition-all ${
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
                     location.pathname === link.to
                       ? 'bg-primary text-primary-foreground'
                       : 'text-foreground hover:bg-muted'
                   }`}
                 >
-                  <span className="text-lg">{link.emoji}</span>
                   {link.label}
                 </Link>
               ))}
+
+              {/* Encyclopedia section */}
+              <div className="pt-2 pb-1">
+                <p className="text-xs font-display font-bold text-muted-foreground px-4 mb-2 uppercase tracking-wide">Encyclopedia</p>
+                <Link
+                  to="/encyclopedia"
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/encyclopedia' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  <Search className="w-4 h-4" /> Browse All Animals
+                </Link>
+                <Link
+                  to="/guides"
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/guides' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  <BookOpen className="w-4 h-4" /> Care Guides
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-2 gap-1 px-1 pt-1">
+                {encyclopediaCategories.map(cat => (
+                  <Link
+                    key={cat.name}
+                    to={`/encyclopedia?category=${encodeURIComponent(cat.name)}`}
+                    className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+                  >
+                    <span>{cat.emoji}</span> {cat.name}
+                  </Link>
+                ))}
+              </div>
             </div>
           </motion.div>
         )}

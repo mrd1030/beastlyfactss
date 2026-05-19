@@ -12,6 +12,9 @@ import Facts from '@/pages/Facts';
 import Guides from '@/pages/Guides';
 import Quiz from '@/pages/Quiz';
 import Pack from '@/pages/Pack';
+import Encyclopedia from '@/pages/Encyclopedia';
+import Blog from '@/pages/Blog';
+import GuideDetail from '@/pages/GuideDetail';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -21,19 +24,15 @@ const AuthenticatedApp = () => {
       <div className="fixed inset-0 flex items-center justify-center bg-background">
         <div className="text-center">
           <span className="text-4xl block mb-3 animate-wiggle">🦁</span>
-          <div className="w-8 h-8 border-4 border-secondary/20 border-t-secondary rounded-full animate-spin mx-auto"></div>
+          <div className="w-8 h-8 border-4 border-secondary/20 border-t-secondary rounded-full animate-spin mx-auto" />
         </div>
       </div>
     );
   }
 
   if (authError) {
-    if (authError.type === 'user_not_registered') {
-      return <UserNotRegisteredError />;
-    } else if (authError.type === 'auth_required') {
-      navigateToLogin();
-      return null;
-    }
+    if (authError.type === 'user_not_registered') return <UserNotRegisteredError />;
+    if (authError.type === 'auth_required') { navigateToLogin(); return null; }
   }
 
   return (
@@ -42,6 +41,9 @@ const AuthenticatedApp = () => {
         <Route path="/" element={<Home />} />
         <Route path="/facts" element={<Facts />} />
         <Route path="/guides" element={<Guides />} />
+        <Route path="/guides/:id" element={<GuideDetail />} />
+        <Route path="/encyclopedia" element={<Encyclopedia />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/pack" element={<Pack />} />
       </Route>
@@ -60,7 +62,7 @@ function App() {
         <Toaster />
       </QueryClientProvider>
     </AuthProvider>
-  )
+  );
 }
 
-export default App
+export default App;
