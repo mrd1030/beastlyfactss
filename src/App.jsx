@@ -22,6 +22,9 @@ import AnimalFacts from '@/pages/AnimalFacts';
 import TriviaQuiz from '@/pages/TriviaQuiz';
 import DonateSuccess from '@/pages/DonateSuccess';
 import DonateCancel from '@/pages/DonateCancel';
+import Donate from '@/pages/Donate';
+import Terms from '@/pages/Terms';
+import Privacy from '@/pages/Privacy';
 import AnalyticsTracker from '@/components/AnalyticsTracker';
 
 const AuthenticatedApp = () => {
@@ -60,8 +63,11 @@ const AuthenticatedApp = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/animal-facts" element={<AnimalFacts />} />
         <Route path="/trivia" element={<TriviaQuiz />} />
+        <Route path="/donate" element={<Donate />} />
         <Route path="/donate/success" element={<DonateSuccess />} />
         <Route path="/donate/cancel" element={<DonateCancel />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
         </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

@@ -87,7 +87,7 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground font-body">
             © {year} BeastlyFacts.com — No animals were harmed in the making of this website 🐾
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
             <Link to="/encyclopedia" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
               Encyclopedia
             </Link>
@@ -102,6 +102,12 @@ export default function Footer() {
             </Link>
             <Link to="/contact" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
               Contact
+            </Link>
+            <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
+              Terms
+            </Link>
+            <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
+              Privacy
             </Link>
           </div>
         </div>

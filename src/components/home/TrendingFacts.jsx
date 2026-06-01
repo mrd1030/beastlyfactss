@@ -48,8 +48,8 @@ export default function TrendingFacts({ onOpenFact }) {
 
         <div
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          className="flex justify-start gap-4 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', alignItems: 'flex-start' }}
         >
           {trending.map((fact, i) => (
             <div key={fact.id} className="min-w-[260px] max-w-[280px] snap-start flex-shrink-0">
