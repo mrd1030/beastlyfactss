@@ -1,20 +1,47 @@
-import base44 from "@base44/vite-plugin"
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// https://vite.dev/config/
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 export default defineConfig({
-  logLevel: 'error', // Suppress warnings, only show errors
-  plugins: [
-    base44({
-      // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.
-      // can be removed if the code has been updated to use the new SDK imports from @base44/sdk
-      legacySDKImports: process.env.BASE44_LEGACY_SDK_IMPORTS === 'true',
-      hmrNotifier: true,
-      navigationNotifier: true,
-      analyticsTracker: true,
-      visualEditAgent: true
-    }),
-    react(),
-  ]
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
+    chunkSizeWarningLimit: 630,
+    rollupOptions: {
+      output: {
+        // Targeted chunking to prevent circular dependency loops 🎯
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            // Keep Sanity separate (it's heavy and only used on content pages)
+            if (id.includes('sanity') || id.includes('@sanity') || id.includes('portabletext')) {
+              return 'sanity-vendor';
+            }
+            // Keep Stripe separate (only used for packs/donations)
+            if (id.includes('stripe') || id.includes('@stripe')) {
+              return 'stripe-vendor';
+            }
+            // Keep heavy data charts separate
+            if (id.includes('recharts') || id.includes('d3')) {
+              return 'charts-vendor';
+            }
+            
+            // Let React, Radix, and Framer Motion bundle together naturally into a single core vendor chunk
+            return 'vendor';
+          }
+        },
+      },
+    },
+  },
+  server: {
+    allowedHosts: 'all'
+  }
 });

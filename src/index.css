@@ -93,3 +93,20 @@
     scroll-behavior: smooth;
   }
 }
+
+/* ─── Mobile global improvements ─── */
+html, body {
+  overscroll-behavior: none;
+}
+
+/* Safe area support for navbar */
+.navbar-safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+/* Utility: suppress text selection on interactive UI only */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}

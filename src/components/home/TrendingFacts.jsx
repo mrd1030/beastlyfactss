@@ -1,12 +1,25 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
+import { base44 } from '@/api/base44Client';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
 
 export default function TrendingFacts({ onOpenFact }) {
   const scrollRef = useRef(null);
-  const trending = facts.slice(0, 8);
+
+  const { data: dynamicFacts = [] } = useQuery({
+    queryKey: ['dynamicFacts'],
+    queryFn: () => base44.entities.DynamicFact.list('-created_date', 5),
+    staleTime: 1000 * 60 * 10,
+  });
+
+  // Show newest dynamic facts first, then fall back to static facts to fill up to 8
+  const trending = [
+    ...dynamicFacts,
+    ...facts.slice(0, Math.max(0, 8 - dynamicFacts.length)),
+  ].slice(0, 8);
 
   const scroll = (dir) => {
     if (scrollRef.current) {

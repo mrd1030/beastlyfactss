@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteCounter from '@/components/shared/SiteCounter';
+import DonateButton from '@/components/DonateButton';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -22,6 +23,9 @@ export default function Footer() {
               For reptile keepers and animal lovers everywhere.
             </p>
             <SiteCounter />
+            <div className="mt-4">
+              <DonateButton className="w-full font-display font-bold" />
+            </div>
           </div>
 
           {/* Explore */}
@@ -61,15 +65,21 @@ export default function Footer() {
 
           {/* Info */}
           <div>
-            <h4 className="font-display font-bold text-xs uppercase tracking-wide text-muted-foreground mb-3">About</h4>
-            <p className="text-xs text-muted-foreground font-body leading-relaxed">
-              All information is for educational purposes. Always research thoroughly before adopting any exotic pet. 🌿
-            </p>
-            <div className="mt-3">
-              <Link to="/blog" className="text-xs font-display font-semibold text-secondary hover:underline">
-                📰 Subscribe to Critter Digest →
-              </Link>
+            <h4 className="font-display font-bold text-xs uppercase tracking-wide text-muted-foreground mb-3">Info</h4>
+            <div className="flex flex-col gap-2 mb-3">
+              {[
+                { to: '/about', label: 'About BeastlyFacts' },
+                { to: '/contact', label: 'Contact' },
+                { to: '/animal-facts', label: 'Fun Animal Facts' },
+              ].map(link => (
+                <Link key={link.to} to={link.to} className="text-xs text-muted-foreground hover:text-foreground transition-colors font-body">
+                  {link.label}
+                </Link>
+              ))}
             </div>
+            <p className="text-xs text-muted-foreground font-body leading-relaxed">
+              All info is for educational purposes. Always research before adopting any exotic pet. 🌿
+            </p>
           </div>
         </div>
 
@@ -86,6 +96,12 @@ export default function Footer() {
             </Link>
             <Link to="/guides" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
               Guides
+            </Link>
+            <Link to="/about" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
+              About
+            </Link>
+            <Link to="/contact" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
+              Contact
             </Link>
           </div>
         </div>

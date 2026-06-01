@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun, ChevronDown, BookOpen, Search, Layers, Rss } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, BookOpen, Search } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
 import { encyclopediaCategories } from '@/lib/data/encyclopedia';
+import MobileBackButton from './MobileBackButton';
+import DonateButton from '@/components/DonateButton';
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
@@ -47,21 +49,23 @@ export default function Navbar() {
   }, []);
 
   const isEncyclopedia = location.pathname.startsWith('/encyclopedia') || location.pathname.startsWith('/guides');
+  // Detect child routes where mobile should show back button
+  const isChildRoute = /^\/guides\/.+/.test(location.pathname);
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-safe-top ${
         scrolled
           ? 'bg-card/95 backdrop-blur-xl shadow-sm border-b border-border'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-14">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
+        <div className="relative flex items-center justify-between h-14">
+          {/* Logo — hidden on mobile child routes; replaced by back button */}
+          <Link to="/" className={`items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
             <motion.span className="text-xl" whileHover={{ rotate: [0, -10, 10, 0] }} transition={{ duration: 0.4 }}>
               🦁
             </motion.span>
@@ -69,6 +73,17 @@ export default function Navbar() {
               Beastly<span className="text-secondary">Facts</span>
             </span>
           </Link>
+          {/* Mobile-only back button for child routes */}
+          <div className={`md:hidden ${isChildRoute ? 'flex' : 'hidden'}`}>
+            <MobileBackButton />
+          </div>
+
+          {/* Mobile child route: centered page title */}
+          {isChildRoute && (
+            <div className="md:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none">
+              <span className="font-display font-bold text-sm text-foreground">Care Guide</span>
+            </div>
+          )}
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-0.5">
@@ -154,6 +169,7 @@ export default function Navbar() {
 
           {/* Right controls */}
           <div className="flex items-center gap-1.5">
+            <DonateButton className="hidden md:flex h-8 text-xs px-3 font-display font-bold" />
             {streak > 0 && (
               <motion.div
                 initial={{ scale: 0 }}

@@ -1,33 +1,86 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Clock, Tag, Send, Check, X } from 'lucide-react';
-import { blogPosts, blogCategories } from '@/lib/data/blog';
-import confetti from 'canvas-confetti';
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { ArrowLeft, Clock } from 'lucide-react';
+import { client } from '@/lib/sanity';
+import groq from 'groq';
+import PortableTextRenderer from '@/components/PortableTextRenderer';
+import { blogPosts as localPosts } from '@/lib/data/newsletters';
+import PostEngagement from '@/components/blog/PostEngagement';
+import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
+import PostSidebar from '@/components/blog/PostSidebar';
+import { urlFor } from '@/lib/sanityImage';
 
 export default function Blog() {
+  const [sanityPosts, setSanityPosts] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedPost, setSelectedPost] = useState(null);
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
 
-  const filtered = blogPosts.filter(p =>
+  // Fetch from Sanity
+  useEffect(() => {
+    const query = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
+      _id,
+      title,
+      slug,
+      excerpt,
+      mainImage,
+      publishedAt,
+      animalType,
+      readTime,
+      body,
+      "category": categories[0]->title
+    }`;
+
+    client.fetch(query).then(posts => {
+      setSanityPosts(posts);
+      // Open post from URL param ?post=slug
+      const urlParams = new URLSearchParams(window.location.search);
+      const postParam = urlParams.get('post');
+      if (postParam && !selectedPost) {
+        const match = posts.find(p => p.slug?.current === postParam || p._id === postParam)
+          || localPosts.find(p => p.id === postParam);
+        if (match) setSelectedPost({ ...match, _id: match._id || match.id, publishedAt: match.publishedAt || match.date, mainImage: match.mainImage || null });
+      }
+    }).catch(console.error);
+  }, []);
+
+  // Combine Sanity + Local posts
+  const allPosts = [
+    ...sanityPosts,
+    ...localPosts.map(post => ({
+      ...post,
+      _id: post.id,
+      publishedAt: post.date,
+      mainImage: null
+    }))
+  ];
+
+  const filtered = allPosts.filter(p =>
     activeCategory === 'All' || p.category === activeCategory
   );
 
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (!email) return;
-    setSubscribed(true);
-    confetti({ particleCount: 100, spread: 70, origin: { y: 0.7 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D'] });
+  const handleBack = () => {
+    setSelectedPost(null);
+    const url = new URL(window.location);
+    url.searchParams.delete('post');
+    window.history.replaceState({}, '', url);
+  };
+
+  const handleSelectPost = (post) => {
+    setSelectedPost(post);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const url = new URL(window.location);
+    url.searchParams.set('post', post.slug?.current || post._id || post.id);
+    window.history.pushState({}, '', url);
   };
 
   if (selectedPost) {
-    return <PostView post={selectedPost} onBack={() => setSelectedPost(null)} />;
+    return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
   }
+
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
+      {/* Header - Unchanged */}
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -36,13 +89,13 @@ export default function Blog() {
               The Critter Digest
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              In-depth reptile and exotic pet guides, care tips, and husbandry deep-dives. Updated regularly.
+              In-depth reptile and exotic pet guides, care tips, and husbandry deep-dives.
             </p>
           </motion.div>
 
-          {/* Category filter */}
+          {/* Category filter - Unchanged */}
           <div className="flex flex-wrap gap-2 mt-5">
-            {blogCategories.map(cat => (
+            {['All', 'Care Tips', 'Reptiles', 'Husbandry'].map(cat => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
@@ -61,124 +114,71 @@ export default function Blog() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Posts */}
+          {/* Posts - Unchanged layout */}
           <div className="lg:col-span-2 space-y-4">
             {filtered.map((post, i) => (
               <motion.article
-                key={post.id}
+                key={post._id}
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.05 }}
-                onClick={() => setSelectedPost(post)}
+                onClick={() => handleSelectPost(post)}
                 className="bg-card border border-border rounded-2xl p-5 cursor-pointer hover:border-secondary/40 hover:shadow-md transition-all group"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl flex-shrink-0">{post.emoji}</span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1.5">
                       <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
-                        {post.category}
+                        {post.category || 'Article'}
                       </span>
                       <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                        <Clock className="w-3 h-3" /> {post.readTime}
+                        <Clock className="w-3 h-3" /> {new Date(post.publishedAt).toLocaleDateString()}
                       </span>
                     </div>
-                    <h2 className="font-display font-bold text-base text-foreground mb-1.5 group-hover:text-secondary transition-colors leading-snug">
+                    <h2 className="font-display font-bold text-xl text-foreground mb-2 group-hover:text-secondary transition-colors">
                       {post.title}
                     </h2>
-                    <p className="text-sm text-muted-foreground font-body leading-relaxed line-clamp-2">
+                    <p className="text-sm text-muted-foreground font-body leading-relaxed line-clamp-3 mb-2">
                       {post.excerpt}
                     </p>
-                    <div className="flex flex-wrap gap-1.5 mt-3">
-                      {post.tags.map(tag => (
-                        <span key={tag} className="text-xs text-muted-foreground font-body bg-muted rounded-md px-2 py-0.5">
-                          #{tag}
-                        </span>
-                      ))}
-                    </div>
+                    {post.readTime && (
+                      <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                        <Clock className="w-3 h-3" /> {post.readTime} min read
+                      </span>
+                    )}
                   </div>
                 </div>
               </motion.article>
             ))}
-            {filtered.length === 0 && (
-              <div className="text-center py-12">
-                <span className="text-3xl block mb-2">📭</span>
-                <p className="font-display font-bold text-foreground">No posts in this category yet.</p>
-              </div>
-            )}
           </div>
 
-          {/* Sidebar */}
+          {/* Sidebar - Unchanged */}
           <div className="space-y-5">
-            {/* Subscribe */}
-            <div className="bg-gradient-to-br from-secondary/10 to-accent/5 border border-secondary/20 rounded-2xl p-5">
-              <span className="text-2xl block mb-2">📬</span>
-              <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe to The Critter Digest</h3>
-              <p className="text-xs text-muted-foreground font-body mb-3 leading-relaxed">
-                New care guides and articles delivered straight to your inbox. No spam, just scales &amp; tails.
+            {/* Subscribe box */}
+            <div className="bg-card border border-border rounded-2xl p-6">
+              <h3 className="font-display font-bold text-base text-foreground mb-1">
+                Subscribe — it's free
+              </h3>
+              <p className="text-xs text-muted-foreground font-body mb-4">
+                New articles straight to your inbox. No spam, ever. 🐾
               </p>
-              {subscribed ? (
-                <motion.div
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  className="flex items-center gap-2 text-teal font-display font-bold text-sm"
-                >
-                  <Check className="w-4 h-4" /> You're subscribed! 🎉
-                </motion.div>
-              ) : (
-                <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-card border border-border rounded-xl px-3 py-2.5 text-xs font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="w-full bg-secondary text-secondary-foreground font-display font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:opacity-90 transition-opacity"
-                  >
-                    <Send className="w-3.5 h-3.5" /> Subscribe
-                  </button>
-                </form>
-              )}
+              <BeehiivSubscribe />
             </div>
 
-            {/* Recent posts */}
+            {/* Recent Articles - Unchanged */}
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-display font-bold text-sm text-foreground mb-3">Recent Articles</h3>
               <div className="space-y-3">
-                {blogPosts.slice(0, 4).map(post => (
+                {allPosts.slice(0, 4).map(post => (
                   <button
-                    key={post.id}
-                    onClick={() => setSelectedPost(post)}
+                    key={post._id}
+                    onClick={() => handleSelectPost(post)}
                     className="w-full text-left flex items-start gap-2.5 group"
                   >
-                    <span className="text-lg flex-shrink-0">{post.emoji}</span>
+                    <span className="text-lg flex-shrink-0">🦎</span>
                     <p className="text-xs font-body text-muted-foreground group-hover:text-foreground transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Categories */}
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-display font-bold text-sm text-foreground mb-3">Topics</h3>
-              <div className="flex flex-wrap gap-1.5">
-                {blogCategories.slice(1).map(cat => (
-                  <button
-                    key={cat}
-                    onClick={() => setActiveCategory(cat)}
-                    className={`text-xs font-display font-semibold px-2.5 py-1 rounded-full transition-all border ${
-                      activeCategory === cat
-                        ? 'bg-secondary text-secondary-foreground border-transparent'
-                        : 'bg-transparent border-border text-muted-foreground hover:text-foreground'
-                    }`}
-                  >
-                    {cat}
                   </button>
                 ))}
               </div>
@@ -190,25 +190,70 @@ export default function Blog() {
   );
 }
 
-function PostView({ post, onBack }) {
-  // Render markdown-like content
-  const renderContent = (content) => {
-    return content.split('\n\n').map((block, i) => {
-      if (block.startsWith('**') && block.endsWith('**') && !block.slice(2).includes('**')) {
-        return <h3 key={i} className="font-display font-bold text-base text-foreground mt-5 mb-2">{block.slice(2, -2)}</h3>;
-      }
-      // Bold within text
-      const parts = block.split(/(\*\*[^*]+\*\*)/g);
-      return (
-        <p key={i} className="text-sm text-muted-foreground font-body leading-relaxed mb-3">
-          {parts.map((part, j) =>
-            part.startsWith('**') && part.endsWith('**')
-              ? <strong key={j} className="text-foreground font-semibold">{part.slice(2, -2)}</strong>
-              : part
-          )}
-        </p>
+// Renders local markdown-style content (bold, bullets, headings, paragraphs)
+function LocalPostContent({ content }) {
+  const lines = content.split('\n');
+  const elements = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i].trim();
+
+    if (!line) { i++; continue; }
+
+    // Bold heading lines like **Title**
+    if (/^\*\*(.+)\*\*$/.test(line)) {
+      const text = line.replace(/^\*\*/, '').replace(/\*\*$/, '');
+      elements.push(
+        <h3 key={i} className="font-display font-bold text-lg text-foreground mt-6 mb-2">{text}</h3>
       );
+      i++; continue;
+    }
+
+    // Bullet points
+    if (line.startsWith('- ')) {
+      const bullets = [];
+      while (i < lines.length && lines[i].trim().startsWith('- ')) {
+        bullets.push(lines[i].trim().slice(2));
+        i++;
+      }
+      elements.push(
+        <ul key={`ul-${i}`} className="list-disc pl-5 mb-4 space-y-1.5 text-muted-foreground font-body text-sm leading-relaxed">
+          {bullets.map((b, bi) => <li key={bi}>{b}</li>)}
+        </ul>
+      );
+      continue;
+    }
+
+    // Normal paragraph — inline bold support
+    const parts = line.split(/(\*\*[^*]+\*\*)/g).map((part, pi) => {
+      if (/^\*\*(.+)\*\*$/.test(part)) {
+        return <strong key={pi} className="text-foreground font-semibold">{part.slice(2, -2)}</strong>;
+      }
+      return part;
     });
+    elements.push(
+      <p key={i} className="mb-4 leading-relaxed text-muted-foreground font-body text-sm">{parts}</p>
+    );
+    i++;
+  }
+
+  return <div className="space-y-0">{elements}</div>;
+}
+
+// PostView
+function PostView({ post, onBack, allPosts, onSelectPost }) {
+  // Intercept browser back button to go back to the list, not previous page
+  React.useEffect(() => {
+    window.history.pushState(null, '', window.location.href);
+    const handlePopState = () => onBack();
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [onBack]);
+
+  const handleSidebarSelect = (p) => {
+    onSelectPost(p);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -217,43 +262,64 @@ function PostView({ post, onBack }) {
       animate={{ opacity: 1, y: 0 }}
       className="min-h-screen"
     >
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-16">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Critter Digest
-        </button>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          {/* Main content */}
+          <div className="lg:col-span-2">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
+            >
+              <ArrowLeft className="w-4 h-4" /> Back to Critter Digest
+            </button>
 
-        <span className="text-5xl block mb-4">{post.emoji}</span>
-        <div className="flex items-center gap-2 mb-3">
-          <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
-            {post.category}
-          </span>
-          <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-            <Clock className="w-3 h-3" /> {post.readTime}
-          </span>
-          <span className="text-xs text-muted-foreground font-body">{post.date}</span>
-        </div>
+            <span className="text-5xl block mb-4">{post.emoji || '🦎'}</span>
 
-        <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4 leading-tight">
-          {post.title}
-        </h1>
+            <div className="flex items-center gap-2 mb-3 flex-wrap">
+              <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+                {post.category || 'Article'}
+              </span>
+              <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                <Clock className="w-3 h-3" /> {new Date(post.publishedAt).toLocaleDateString()}
+              </span>
+              {post.readTime && (
+                <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                  <Clock className="w-3 h-3" /> {post.readTime} min read
+                </span>
+              )}
+            </div>
 
-        <p className="text-sm text-muted-foreground font-body mb-6 leading-relaxed border-l-2 border-secondary pl-3 italic">
-          {post.excerpt}
-        </p>
+            <h1 className="font-display font-bold text-3xl text-foreground mb-6 leading-tight">
+              {post.title}
+            </h1>
 
-        <div className="prose-sm max-w-none">
-          {renderContent(post.content)}
-        </div>
+            <p className="text-sm text-muted-foreground font-body mb-8 leading-relaxed border-l-4 border-secondary pl-4 italic">
+              {post.excerpt}
+            </p>
 
-        <div className="flex flex-wrap gap-1.5 mt-8 pt-6 border-t border-border">
-          {post.tags.map(tag => (
-            <span key={tag} className="text-xs font-body text-muted-foreground bg-muted rounded-md px-2.5 py-1 flex items-center gap-1">
-              <Tag className="w-2.5 h-2.5" /> {tag}
-            </span>
-          ))}
+            {post.mainImage && (
+              <img
+                src={urlFor(post.mainImage).width(800).url()}
+                alt={post.title}
+                className="w-full rounded-2xl mb-10 shadow-lg"
+              />
+            )}
+
+            <div className="prose max-w-none">
+              {post.body ? (
+                <PortableTextRenderer content={post.body} />
+              ) : (
+                <LocalPostContent content={post.content || ''} />
+              )}
+            </div>
+
+            <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
+          </div>
+
+          {/* Sidebar */}
+          <div className="lg:sticky lg:top-6">
+            <PostSidebar allPosts={allPosts} currentPost={post} onSelectPost={handleSidebarSelect} />
+          </div>
         </div>
       </div>
     </motion.div>

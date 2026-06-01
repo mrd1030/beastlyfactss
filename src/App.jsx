@@ -4,8 +4,9 @@ import { queryClientInstance } from '@/lib/query-client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
+import { FavoritesProvider } from '@/lib/FavoritesContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
-
+import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
 import Home from '@/pages/Home';
 import Facts from '@/pages/Facts';
@@ -15,6 +16,13 @@ import Pack from '@/pages/Pack';
 import Encyclopedia from '@/pages/Encyclopedia';
 import Blog from '@/pages/Blog';
 import GuideDetail from '@/pages/GuideDetail';
+import About from '@/pages/About';
+import Contact from '@/pages/Contact';
+import AnimalFacts from '@/pages/AnimalFacts';
+import TriviaQuiz from '@/pages/TriviaQuiz';
+import DonateSuccess from '@/pages/DonateSuccess';
+import DonateCancel from '@/pages/DonateCancel';
+import AnalyticsTracker from '@/components/AnalyticsTracker';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -36,6 +44,8 @@ const AuthenticatedApp = () => {
   }
 
   return (
+    <>
+    <AnalyticsTracker />
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
@@ -46,21 +56,31 @@ const AuthenticatedApp = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/pack" element={<Pack />} />
-      </Route>
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/animal-facts" element={<AnimalFacts />} />
+        <Route path="/trivia" element={<TriviaQuiz />} />
+        <Route path="/donate/success" element={<DonateSuccess />} />
+        <Route path="/donate/cancel" element={<DonateCancel />} />
+        </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
+    </>
   );
 };
 
 function App() {
   return (
     <AuthProvider>
+      <FavoritesProvider>
       <QueryClientProvider client={queryClientInstance}>
         <Router>
-          <AuthenticatedApp />
+            <AuthenticatedApp />
+            <ScrollToTop />
         </Router>
         <Toaster />
       </QueryClientProvider>
+      </FavoritesProvider>
     </AuthProvider>
   );
 }

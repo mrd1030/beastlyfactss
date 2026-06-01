@@ -1,18 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Share2 } from 'lucide-react';
-import { useFavorites } from '@/lib/hooks/useLocalStorage';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function FactCard({ fact, index = 0, onOpen }) {
-  const { toggleFavorite, isFavorite } = useFavorites();
+  const { toggleFavorite, isFavorite } = useFavoritesCtx();
   const fav = isFavorite(fact.id);
 
   const handleShare = (e) => {
     e.stopPropagation();
+    const factsPageUrl = window.location.origin + '/facts';
     if (navigator.share) {
-      navigator.share({ title: fact.title, text: `${fact.emoji} ${fact.fact}`, url: window.location.href });
+      navigator.share({ title: fact.title, text: `${fact.emoji} ${fact.fact}`, url: factsPageUrl });
     } else {
-      navigator.clipboard.writeText(`${fact.emoji} ${fact.fact}`);
+      navigator.clipboard.writeText(`${fact.emoji} ${fact.fact} ${factsPageUrl}`);
     }
   };
 

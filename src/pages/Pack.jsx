@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Trash2 } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
-import { useFavorites } from '@/lib/hooks/useLocalStorage';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
+import ClearPackDialog from '@/components/layout/ClearPackDialog';
 
 export default function Pack() {
-  const { favorites, toggleFavorite } = useFavorites();
+  const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
 
   const savedFacts = facts.filter(f => favorites.includes(f.id));
@@ -66,6 +67,13 @@ export default function Pack() {
       </div>
 
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} />
+
+      {/* Pack management section */}
+      <div className="mt-16 pt-8 border-t border-border max-w-7xl mx-auto">
+        <h2 className="font-display font-bold text-base text-foreground mb-1">Pack Management</h2>
+        <p className="text-xs text-muted-foreground font-body mb-4">Manage your Beast Pack collection.</p>
+        <ClearPackDialog />
+      </div>
     </div>
   );
 }

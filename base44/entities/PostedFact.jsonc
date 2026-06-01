@@ -1,0 +1,13 @@
+{
+  "name": "PostedFact",
+  "type": "object",
+  "properties": {
+    "fact_title": {
+      "type": "string",
+      "description": "Title of the fact that was posted to Instagram"
+    }
+  },
+  "required": [
+    "fact_title"
+  ]
+}

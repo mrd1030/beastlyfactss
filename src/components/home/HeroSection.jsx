@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { facts } from '@/lib/data/facts';
+import heroImg from '@/assets/hero-animals.webp';
 
-const HERO_IMAGE = 'https://media.base44.com/images/public/user_68efe7733df1fc9bf8ccae02/f6b748fac_hero-animals.jpg';
+ // Make sure this image is in your public folder
 
 export default function HeroSection() {
+  const HERO_IMAGE = heroImg;
   const dailyFact = facts[new Date().getDate() % facts.length];
   const [learned, setLearned] = useState(false);
 
@@ -22,6 +24,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={HERO_IMAGE}
+          fetchpriority="high"
           alt="Majestic lion, colorful macaw, and bearded dragon in nature"
           className="w-full h-full object-cover"
         />

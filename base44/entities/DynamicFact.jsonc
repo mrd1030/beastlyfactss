@@ -1,0 +1,41 @@
+{
+  "name": "DynamicFact",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Short catchy title for the fact"
+    },
+    "animal": {
+      "type": "string",
+      "description": "The animal this fact is about"
+    },
+    "emoji": {
+      "type": "string",
+      "description": "Representative emoji for the animal"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Mammals",
+        "Birds",
+        "Reptiles",
+        "Ocean",
+        "Weird & Wonderful",
+        "Dogs & Cats"
+      ],
+      "description": "Fact category"
+    },
+    "fact": {
+      "type": "string",
+      "description": "The full fact text"
+    }
+  },
+  "required": [
+    "title",
+    "animal",
+    "emoji",
+    "category",
+    "fact"
+  ]
+}
