@@ -125,6 +125,13 @@ export default function Donate() {
             {donateLabel} {donationType === 'monthly' ? 'Monthly' : 'Now'}
           </Button>
 
+          <div className="flex items-start gap-3 bg-accent/10 border border-accent/20 rounded-xl p-3">
+            <span className="text-xl flex-shrink-0">🌍</span>
+            <p className="text-xs text-muted-foreground font-body leading-relaxed">
+              <span className="font-semibold text-foreground">BeastlyFacts.com</span> will contribute <span className="font-semibold text-accent">1% of every purchase or donation</span> to removing CO₂ from the atmosphere — because protecting animals means protecting their planet too.
+            </p>
+          </div>
+
           <p className="text-xs text-muted-foreground font-body text-center">
             Payments are securely processed by Stripe. BeastlyFacts never stores your card details.
           </p>
