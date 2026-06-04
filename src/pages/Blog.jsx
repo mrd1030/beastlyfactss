@@ -210,6 +210,15 @@ function LocalPostContent({ content }) {
       i++; continue;
     }
 
+    // H4 heading lines like ####Title####
+    if (/^####(.+)####$/.test(line)) {
+      const text = line.replace(/^####/, '').replace(/####$/, '');
+      elements.push(
+        <h4 key={i} className="font-display font-bold text-xl text-foreground mt-6 mb-2">{text}</h4>
+      );
+      i++; continue;
+    }
+
     // Bullet points
     if (line.startsWith('- ')) {
       const bullets = [];
