@@ -49,6 +49,30 @@ export default defineType({
       rows: 3,
       description: 'Short summary for SEO',
     }),
+    // --- NEW SEO FIELDS START HERE ---
+    defineField({
+      name: 'seoTitle',
+      title: 'SEO Meta Title',
+      type: 'string',
+      description: 'Override the default title for search engines. Ideal length 50-60 characters.',
+      validation: Rule => Rule.max(60).warning('Longer titles may be truncated by Google.')
+    }),
+    defineField({
+      name: 'seoDescription',
+      title: 'SEO Meta Description',
+      type: 'text',
+      rows: 2,
+      description: 'The snippet that appears in search results. Ideal length 150-160 characters.',
+      validation: Rule => Rule.max(160).warning('Descriptions over 160 characters are usually cut off.')
+    }),
+    defineField({
+      name: 'seoImage',
+      title: 'SEO Social Image',
+      type: 'image',
+      description: 'Custom image for Twitter/Facebook link previews. If left blank, the Main Image will be used.',
+      options: { hotspot: true },
+    }),
+    // --- NEW SEO FIELDS END HERE ---
     defineField({
       name: 'animalType',
       title: 'Animal Type',
