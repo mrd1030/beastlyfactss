@@ -32,7 +32,7 @@ export default function Facts() {
   const allCategories = ['All', ...categories.map(c => c.name)];
 
   const filtered = useMemo(() => {
-    setPage(1); // reset page when filters change
+    
     return allFacts.filter(f => {
       const matchesCategory = activeCategory === 'All' || f.category === activeCategory;
       const matchesSearch = !search ||
