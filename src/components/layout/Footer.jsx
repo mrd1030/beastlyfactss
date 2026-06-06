@@ -7,8 +7,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-card border-t border-border mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+    <footer id="site-footer" className="bg-card border-t border-border mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 pb-28 md:pb-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">

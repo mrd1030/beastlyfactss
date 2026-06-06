@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
@@ -15,7 +15,19 @@ export default function BeastlyBuddy() {
   const [open, setOpen] = useState(false);
   const [currentFact, setCurrentFact] = useState(null);
   const [greeting] = useState(greetings[Math.floor(Math.random() * greetings.length)]);
+  const [footerVisible, setFooterVisible] = useState(false);
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
+
+  useEffect(() => {
+    const footer = document.getElementById('site-footer');
+    if (!footer) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setFooterVisible(entry.isIntersecting),
+      { threshold: 0.05 }
+    );
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
 
   const getRandomFact = () => {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
@@ -23,7 +35,7 @@ export default function BeastlyBuddy() {
   };
 
   return (
-    <div className="fixed bottom-20 md:bottom-16 right-4 z-50">
+    <div className={`fixed right-4 z-50 transition-all duration-300 ${footerVisible ? 'bottom-[calc(env(safe-area-inset-bottom,0px)+14rem)] md:bottom-16' : 'bottom-20 md:bottom-16'}`}>
       <AnimatePresence>
         {open && (
           <motion.div
