@@ -5,7 +5,7 @@ export const guidesExtended = [
     name: "Crested Gecko",
     emoji: "🦎",
     difficulty: "Beginner",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "The velvety, fan-fringed gecko that needs no heat lamp!",
     funFact: "Crested geckos were thought to be extinct until rediscovered in 1994 during a tropical storm in New Caledonia!",
     sections: {
@@ -21,7 +21,7 @@ export const guidesExtended = [
     name: "Leopard Gecko",
     emoji: "🦎",
     difficulty: "Beginner",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
     sections: {
@@ -37,7 +37,7 @@ export const guidesExtended = [
     name: "Gargoyle Gecko",
     emoji: "🦎",
     difficulty: "Beginner",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
     funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
     sections: {
@@ -53,7 +53,7 @@ export const guidesExtended = [
     name: "Mourning Gecko",
     emoji: "🦎",
     difficulty: "Beginner",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
     sections: {
@@ -69,7 +69,7 @@ export const guidesExtended = [
     name: "Hognose Snake",
     emoji: "🐍",
     difficulty: "Moderate",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The drama queen of snakes: all bluff and zero bite!",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
     sections: {
@@ -85,7 +85,7 @@ export const guidesExtended = [
     name: "Jackson's Chameleon",
     emoji: "🦎",
     difficulty: "High",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
     funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
     sections: {
@@ -101,7 +101,7 @@ export const guidesExtended = [
     name: "Ball Python",
     emoji: "🐍",
     difficulty: "Moderate",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
     funFact: "Ball pythons can go up to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
     sections: {
@@ -117,7 +117,7 @@ export const guidesExtended = [
     name: "Bearded Dragon",
     emoji: "🦎",
     difficulty: "Moderate",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
     funFact: "Bearded dragons wave at each other as a sign of submission, basically saying 'Hey, you're the boss!'",
     sections: {
@@ -133,7 +133,7 @@ export const guidesExtended = [
     name: "Blue Tongue Skink",
     emoji: "🦎",
     difficulty: "Low to Moderate",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
     funFact: "Blue tongue skinks give live birth and are one of the largest skink species kept as pets. Adults can reach 18 to 24 inches!",
     sections: {
@@ -149,7 +149,7 @@ export const guidesExtended = [
     name: "Corn Snake",
     emoji: "🐍",
     difficulty: "Beginner",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
     sections: {
@@ -165,7 +165,7 @@ export const guidesExtended = [
     name: "Ackie Monitor",
     emoji: "🦎",
     difficulty: "High",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The miniature Komodo dragon with a huge personality!",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
     sections: {
@@ -181,7 +181,7 @@ export const guidesExtended = [
     name: "Boa Constrictor",
     emoji: "🐍",
     difficulty: "Moderate to High",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
     sections: {
@@ -197,7 +197,7 @@ export const guidesExtended = [
     name: "Argentine Black and White Tegu",
     emoji: "🦎",
     difficulty: "High",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The dog-like mega-lizard that can learn its own name!",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
     sections: {
@@ -213,7 +213,7 @@ export const guidesExtended = [
     name: "Leaf-Tailed Gecko",
     emoji: "🦎",
     difficulty: "High",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
     sections: {
@@ -229,7 +229,7 @@ export const guidesExtended = [
     name: "Red-Eared Slider",
     emoji: "🐢",
     difficulty: "High",
-    petType: "Turtle",
+    petType: "Turtles & Tortoises",
     tagline: "The iconic pet turtle that grows much larger than the pet store suggests!",
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
     sections: {
@@ -245,7 +245,7 @@ export const guidesExtended = [
     name: "Rabbit",
     emoji: "🐰",
     difficulty: "Beginner",
-    petType: "Lagomorph",
+    petType: "Small Mammals",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
     sections: {
@@ -272,7 +272,7 @@ export const guidesExtended = [
     name: "Hedgehog",
     emoji: "🦔",
     difficulty: "Intermediate",
-    petType: "Insectivore",
+    petType: "Small Mammals",
     tagline: "The spiky little explorer that runs on a wheel all night!",
     funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
     sections: {
@@ -299,7 +299,7 @@ export const guidesExtended = [
     name: "Guinea Pig",
     emoji: "🐹",
     difficulty: "Beginner",
-    petType: "Cavy",
+    petType: "Small Mammals",
     tagline: "The vocal, social little veggie lover that needs a friend!",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
     sections: {
@@ -326,7 +326,7 @@ export const guidesExtended = [
     name: "Chinchilla",
     emoji: "🐭",
     difficulty: "Intermediate",
-    petType: "Chinchilla",
+    petType: "Small Mammals",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
     funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
     sections: {
@@ -353,7 +353,7 @@ export const guidesExtended = [
     name: "Sugar Glider",
     emoji: "🐿️",
     difficulty: "Advanced",
-    petType: "Marsupial",
+    petType: "Small Mammals",
     tagline: "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!",
     funFact: "Sugar gliders can glide up to 150 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
     sections: {
@@ -380,7 +380,7 @@ export const guidesExtended = [
     name: "African Grey Parrot",
     emoji: "🦜",
     difficulty: "Advanced",
-    petType: "Parrot",
+    petType: "Birds",
     tagline: "The genius of the parrot world, one of the most intelligent animals on Earth!",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
     sections: {
@@ -407,7 +407,7 @@ export const guidesExtended = [
     name: "Budgie",
     emoji: "🐦",
     difficulty: "Beginner",
-    petType: "Parakeet",
+    petType: "Birds",
     tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
     sections: {
@@ -434,7 +434,7 @@ export const guidesExtended = [
     name: "Lovebird",
     emoji: "❤️",
     difficulty: "Intermediate",
-    petType: "Parrot",
+    petType: "Birds",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
     sections: {
@@ -461,7 +461,7 @@ export const guidesExtended = [
     name: "Tokay Gecko",
     emoji: "🦎",
     difficulty: "Intermediate",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "The jewel-toned, loud-voiced gecko that's not for the faint of heart!",
     funFact: "Tokay geckos are named after their incredibly loud 'TO-KAY!' call. Males use this booming vocalization to defend territory and attract mates. You'll hear them from across a room!",
     sections: {
@@ -488,7 +488,7 @@ export const guidesExtended = [
     name: "African Fat-Tailed Gecko",
     emoji: "🦎",
     difficulty: "Beginner",
-    petType: "Gecko",
+    petType: "Geckos",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
     sections: {
@@ -515,7 +515,7 @@ export const guidesExtended = [
     name: "Uromastyx",
     emoji: "🦎",
     difficulty: "Moderate",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
     sections: {
@@ -542,7 +542,7 @@ export const guidesExtended = [
     name: "Savannah Monitor",
     emoji: "🦎",
     difficulty: "High",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     sections: {
@@ -569,7 +569,7 @@ export const guidesExtended = [
     name: "Green Anole",
     emoji: "🦎",
     difficulty: "Low to Moderate",
-    petType: "Lizard",
+    petType: "Lizards",
     tagline: "America's tiny chameleon: the little green lizard that turns brown with its mood!",
     funFact: "Green anoles can change color from bright green to brown depending on temperature, stress, or mood, earning them the nickname 'American chameleon,' though they're not true chameleons at all!",
     sections: {
@@ -596,7 +596,7 @@ export const guidesExtended = [
     name: "California Kingsnake",
     emoji: "🐍",
     difficulty: "Beginner",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
     sections: {
@@ -623,7 +623,7 @@ export const guidesExtended = [
     name: "Milk Snake",
     emoji: "🐍",
     difficulty: "Beginner",
-    petType: "Snake",
+    petType: "Snakes",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
     sections: {
@@ -650,7 +650,7 @@ export const guidesExtended = [
     name: "Russian Tortoise",
     emoji: "🐢",
     difficulty: "Moderate",
-    petType: "Tortoise",
+    petType: "Turtles & Tortoises",
     tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
     sections: {
@@ -677,7 +677,7 @@ export const guidesExtended = [
     name: "Sulcata Tortoise",
     emoji: "🐢",
     difficulty: "High",
-    petType: "Tortoise",
+    petType: "Turtles & Tortoises",
     tagline: "The third-largest tortoise in the world: a lifetime commitment that can outlive you!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     sections: {
@@ -704,7 +704,7 @@ export const guidesExtended = [
     name: "Box Turtle",
     emoji: "🐢",
     difficulty: "Moderate",
-    petType: "Turtle",
+    petType: "Turtles & Tortoises",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
     sections: {
@@ -731,7 +731,7 @@ export const guidesExtended = [
     name: "Ferret",
     emoji: "🦡",
     difficulty: "Intermediate",
-    petType: "Small Mammal",
+    petType: "Small Mammals",
     tagline: "The mischievous, slinky escape artist that sleeps 18 hours and causes chaos for the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
     sections: {
@@ -759,7 +759,7 @@ export const guidesExtended = [
     name: "Tarantula",
     emoji: "🕷️",
     difficulty: "Beginner",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
     sections: {
@@ -786,7 +786,7 @@ export const guidesExtended = [
     name: "Praying Mantis",
     emoji: "🦗",
     difficulty: "Beginner",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
     funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
     sections: {
@@ -813,7 +813,7 @@ export const guidesExtended = [
     name: "Giant Millipede",
     emoji: "🐛",
     difficulty: "Beginner",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "The slow-moving, gentle detritivore that is essentially a living composting machine!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
     sections: {
@@ -840,7 +840,7 @@ export const guidesExtended = [
     name: "Emperor Scorpion",
     emoji: "🦂",
     difficulty: "Intermediate",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "One of the largest scorpions in the world, and one of the least venomous pet scorpions!",
     funFact: "Scorpions fluoresce a brilliant blue-green color under ultraviolet (UV/black) light. Scientists are not entirely sure why, but the chemical responsible is in the hyaline layer of their exoskeleton. Scorpions do this under natural UV from moonlight too.",
     sections: {
@@ -867,7 +867,7 @@ export const guidesExtended = [
     name: "Madagascar Hissing Cockroach",
     emoji: "🪲",
     difficulty: "Beginner",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "The armored insect that hisses by forcing air through its spiracles, and is surprisingly clean!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
     sections: {
@@ -894,7 +894,7 @@ export const guidesExtended = [
     name: "Stick Insect",
     emoji: "🌿",
     difficulty: "Beginner",
-    petType: "Invertebrate",
+    petType: "Invertebrates",
     tagline: "The master of disguise that is literally a twig with legs!",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
     sections: {
@@ -923,7 +923,7 @@ export const guidesExtended = [
     name: "White's Tree Frog",
     emoji: "🐸",
     difficulty: "Beginner",
-    petType: "Amphibian",
+    petType: "Amphibians",
     tagline: "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
     sections: {
@@ -950,7 +950,7 @@ export const guidesExtended = [
     name: "Pacman Frog",
     emoji: "🐸",
     difficulty: "Beginner",
-    petType: "Amphibian",
+    petType: "Amphibians",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     sections: {
@@ -977,7 +977,7 @@ export const guidesExtended = [
     name: "Fire-Bellied Toad",
     emoji: "🐸",
     difficulty: "Beginner",
-    petType: "Amphibian",
+    petType: "Amphibians",
     tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
     funFact: "When threatened, fire-bellied toads perform the Unkenreflex: they arch their backs and flip their limbs upward to display the bright red and black warning coloration on their bellies. This 'unken' pose is a classic example of aposematism, advertising: 'I am toxic, do not eat me!'",
     sections: {
@@ -1004,7 +1004,7 @@ export const guidesExtended = [
     name: "Axolotl",
     emoji: "🦎",
     difficulty: "Intermediate",
-    petType: "Amphibian",
+    petType: "Amphibians",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
     sections: {
@@ -1031,7 +1031,7 @@ export const guidesExtended = [
     name: "Tiger Salamander",
     emoji: "🐸",
     difficulty: "Beginner",
-    petType: "Amphibian",
+    petType: "Amphibians",
     tagline: "North America's largest land-dwelling salamander and a remarkably personable pet!",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
     sections: {
@@ -1059,7 +1059,7 @@ export const guidesExtended = [
     name: "Cockatiel",
     emoji: "🦜",
     difficulty: "Beginner",
-    petType: "Bird",
+    petType: "Birds",
     tagline: "The whistling, crested charmer that's the perfect first parrot!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
     sections: {
@@ -1086,7 +1086,7 @@ export const guidesExtended = [
     name: "Green Cheek Conure",
     emoji: "🦜",
     difficulty: "Intermediate",
-    petType: "Bird",
+    petType: "Birds",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
     sections: {

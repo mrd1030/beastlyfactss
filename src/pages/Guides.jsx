@@ -8,34 +8,38 @@ import { difficultyColor } from '@/lib/data/encyclopedia';
 
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
-const topFilters = ['All', 'Reptiles & Exotics', 'Dogs', 'Cats'];
+const topFilters = [
+  { label: 'All', emoji: '🐾' },
+  { label: 'Geckos', emoji: '🦎' },
+  { label: 'Lizards', emoji: '🦎' },
+  { label: 'Snakes', emoji: '🐍' },
+  { label: 'Turtles & Tortoises', emoji: '🐢' },
+  { label: 'Small Mammals', emoji: '🦔' },
+  { label: 'Birds', emoji: '🐦' },
+  { label: 'Dogs', emoji: '🐶' },
+  { label: 'Cats', emoji: '🐱' },
+  { label: 'Invertebrates', emoji: '🕷️' },
+  { label: 'Amphibians', emoji: '🐸' },
+];
 
-const reptileExoticTypes = ['Gecko', 'Lizard', 'Snake', 'Turtle', 'Tortoise', 'Lagomorph', 'Insectivore', 'Cavy', 'Chinchilla', 'Marsupial', 'Parrot', 'Parakeet', 'Bird', 'Small Mammal'];
+// petType values in guidesExtended now match encyclopedia categories exactly
+const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians']);
 
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
 export default function Guides() {
-  const [topFilter, setTopFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState('All');
   const [dogSize, setDogSize] = useState('All Sizes');
-  const [reptileType, setReptileType] = useState('All');
-
-  const reptileSubTypes = useMemo(() => {
-    const types = new Set();
-    guidesExtended.forEach(g => types.add(g.petType));
-    return ['All', ...Array.from(types).sort()];
-  }, []);
 
   const filtered = useMemo(() => {
-    if (topFilter === 'All') return allGuides;
-    if (topFilter === 'Dogs') {
+    if (activeFilter === 'All') return allGuides;
+    if (activeFilter === 'Dogs') {
       return dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize || g.sizeCategory === 'All Sizes');
     }
-    if (topFilter === 'Cats') return catGuides;
-    if (topFilter === 'Reptiles & Exotics') {
-      return guidesExtended.filter(g => reptileType === 'All' || g.petType === reptileType);
-    }
+    if (activeFilter === 'Cats') return catGuides;
+    if (directMatchCategories.has(activeFilter)) return guidesExtended.filter(g => g.petType === activeFilter);
     return allGuides;
-  }, [topFilter, dogSize, reptileType]);
+  }, [activeFilter, dogSize]);
 
   return (
     <div className="min-h-screen">
@@ -47,29 +51,29 @@ export default function Guides() {
               Care Guides
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Evidence-based care guides for reptiles, exotic pets, dogs, and cats. Click any guide to read in full.
+              Evidence-based care guides for reptiles, exotic pets, dogs, and cats.
             </p>
           </motion.div>
 
-          {/* Top category filter */}
+          {/* Category filter */}
           <div className="flex flex-wrap gap-2 mt-5">
             {topFilters.map(f => (
               <button
-                key={f}
-                onClick={() => { setTopFilter(f); setDogSize('All Sizes'); setReptileType('All'); }}
-                className={`px-4 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                  topFilter === f
+                key={f.label}
+                onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); }}
+                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+                  activeFilter === f.label
                     ? 'bg-accent text-accent-foreground'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {f}
+                <span>{f.emoji}</span> {f.label}
               </button>
             ))}
           </div>
 
           {/* Dog size sub-filter */}
-          {topFilter === 'Dogs' && (
+          {activeFilter === 'Dogs' && (
             <div className="flex flex-wrap gap-2 mt-3">
               <span className="text-xs font-body text-muted-foreground self-center pr-1">Size:</span>
               {dogSizes.map(s => (
@@ -83,26 +87,6 @@ export default function Guides() {
                   }`}
                 >
                   {s}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {/* Reptile type sub-filter */}
-          {topFilter === 'Reptiles & Exotics' && (
-            <div className="flex flex-wrap gap-2 mt-3">
-              <span className="text-xs font-body text-muted-foreground self-center pr-1">Type:</span>
-              {reptileSubTypes.map(t => (
-                <button
-                  key={t}
-                  onClick={() => setReptileType(t)}
-                  className={`px-3 py-1 rounded-full text-xs font-display font-semibold transition-all ${
-                    reptileType === t
-                      ? 'bg-secondary text-secondary-foreground'
-                      : 'bg-muted text-muted-foreground hover:text-foreground'
-                  }`}
-                >
-                  {t}
                 </button>
               ))}
             </div>

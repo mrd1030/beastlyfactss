@@ -1,6 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Instagram, Twitter } from 'lucide-react';
+import { Mail, Instagram } from 'lucide-react';
+
+// X (formerly Twitter) logo SVG — not the bird
+function XLogo({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 import DonateButton from '@/components/DonateButton';
 
 export default function Contact() {
@@ -70,10 +79,10 @@ export default function Contact() {
           className="flex items-center gap-5 bg-card border border-border rounded-2xl p-6 hover:border-secondary/40 hover:shadow-sm transition-all group"
         >
           <div className="w-12 h-12 bg-foreground/5 rounded-2xl flex items-center justify-center flex-shrink-0">
-            <Twitter className="w-5 h-5 text-foreground" />
+            <XLogo className="w-5 h-5 text-foreground" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">X (Twitter)</p>
+            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">X</p>
             <p className="text-sm text-muted-foreground font-body">@beastly_facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts & wildlife content 🐾</p>
           </div>

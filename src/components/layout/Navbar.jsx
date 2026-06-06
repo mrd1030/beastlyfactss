@@ -1,8 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun, ChevronDown } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, Instagram } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
+
+function XLogo({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
 
@@ -100,7 +108,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* Encyclopedia / Guides mega dropdown */}
+            {/* Full site navigator dropdown */}
             <div ref={megaRef} className="relative">
               <button
                 onClick={() => setMegaOpen(!megaOpen)}
@@ -110,7 +118,7 @@ export default function Navbar() {
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Learn
+                Explore
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? 'rotate-180' : ''}`} />
               </button>
 
@@ -123,47 +131,84 @@ export default function Navbar() {
                     transition={{ duration: 0.15 }}
                     className="absolute right-0 mt-2 w-64 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
                   >
-                    <div className="p-3 space-y-0.5">
-                      <Link
-                        to="/encyclopedia"
-                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
-                      >
-                        <span className="text-lg">🔍</span>
-                        <div>
-                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Encyclopedia</p>
-                          <p className="text-xs text-muted-foreground font-body">Browse all animals</p>
-                        </div>
-                      </Link>
-                      <Link
-                        to="/guides"
-                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
-                      >
-                        <span className="text-lg">📖</span>
-                        <div>
-                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Care Guides</p>
-                          <p className="text-xs text-muted-foreground font-body">Reptiles, dogs, cats and more</p>
-                        </div>
-                      </Link>
-                      <Link
-                        to="/facts"
-                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
-                      >
-                        <span className="text-lg">⚡</span>
-                        <div>
-                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Animal Facts</p>
-                          <p className="text-xs text-muted-foreground font-body">Wild facts and science</p>
-                        </div>
-                      </Link>
-                      <Link
-                        to="/trivia"
-                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
-                      >
-                        <span className="text-lg">🧠</span>
-                        <div>
-                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Trivia Quiz</p>
-                          <p className="text-xs text-muted-foreground font-body">Test your knowledge</p>
-                        </div>
-                      </Link>
+                    {/* Learn section */}
+                    <div className="p-3 pb-2">
+                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Learn</p>
+                      <div className="space-y-0.5">
+                        {[
+                          { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
+                          { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                          { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
+                          { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
+                          { to: '/blog', emoji: '📰', label: 'Critter Digest' },
+                        ].map(item => (
+                          <Link key={item.to} to={item.to}
+                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
+                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+                            }`}
+                          >
+                            <span className="text-base w-5 text-center">{item.emoji}</span>
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Play section */}
+                    <div className="px-3 pb-2">
+                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Play</p>
+                      <div className="space-y-0.5">
+                        {[
+                          { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
+                          { to: '/pack', emoji: '🐾', label: 'My Pack' },
+                        ].map(item => (
+                          <Link key={item.to} to={item.to}
+                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
+                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+                            }`}
+                          >
+                            <span className="text-base w-5 text-center">{item.emoji}</span>
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Info section */}
+                    <div className="px-3 pb-2">
+                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Info</p>
+                      <div className="space-y-0.5">
+                        {[
+                          { to: '/about', emoji: '🦁', label: 'About' },
+                          { to: '/donate', emoji: '❤️', label: 'Support Us' },
+                          { to: '/contact', emoji: '💌', label: 'Contact' },
+                        ].map(item => (
+                          <Link key={item.to} to={item.to}
+                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
+                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
+                            }`}
+                          >
+                            <span className="text-base w-5 text-center">{item.emoji}</span>
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Social links */}
+                    <div className="px-3 pb-3 pt-1 border-t border-border mt-1">
+                      <div className="flex items-center gap-2 pt-2">
+                        <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
+                          className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink hover:bg-hotpink/20 transition-colors text-xs font-display font-bold"
+                        >
+                          <Instagram className="w-4 h-4" /> Instagram
+                        </a>
+                        <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer"
+                          className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground hover:bg-foreground/10 transition-colors text-xs font-display font-bold"
+                        >
+                          <XLogo className="w-4 h-4" /> X
+                        </a>
+                      </div>
                     </div>
                   </motion.div>
                 )}
@@ -228,41 +273,41 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              {/* Learn section */}
-              <div className="pt-2 pb-1">
-                <p className="text-xs font-display font-bold text-muted-foreground px-4 mb-2 uppercase tracking-wide">Learn</p>
-                <Link
-                  to="/encyclopedia"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === '/encyclopedia' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
-                  }`}
+              {/* All pages */}
+              <div className="pt-2 pb-1 space-y-0.5">
+                {[
+                  { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
+                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
+                  { to: '/blog', emoji: '📰', label: 'Critter Digest' },
+                  { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
+                  { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
+                  { to: '/pack', emoji: '🐾', label: 'My Pack' },
+                  { to: '/about', emoji: '🦁', label: 'About' },
+                  { to: '/donate', emoji: '❤️', label: 'Support Us' },
+                  { to: '/contact', emoji: '💌', label: 'Contact' },
+                ].map(item => (
+                  <Link key={item.to} to={item.to}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                      location.pathname === item.to ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                    }`}
+                  >
+                    <span>{item.emoji}</span> {item.label}
+                  </Link>
+                ))}
+              </div>
+              {/* Social links */}
+              <div className="flex gap-2 pt-2 pb-1 px-1">
+                <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-hotpink/10 text-hotpink text-sm font-display font-bold"
                 >
-                  🔍 Encyclopedia
-                </Link>
-                <Link
-                  to="/guides"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === '/guides' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
-                  }`}
+                  <Instagram className="w-4 h-4" /> Instagram
+                </a>
+                <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-foreground/5 text-foreground text-sm font-display font-bold"
                 >
-                  📖 Care Guides
-                </Link>
-                <Link
-                  to="/facts"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === '/facts' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
-                  }`}
-                >
-                  ⚡ Animal Facts
-                </Link>
-                <Link
-                  to="/trivia"
-                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === '/trivia' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
-                  }`}
-                >
-                  🧠 Trivia Quiz
-                </Link>
+                  <XLogo className="w-4 h-4" /> X
+                </a>
               </div>
             </div>
           </motion.div>
