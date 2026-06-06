@@ -27,19 +27,42 @@ const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles &
 
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
+const subtypes = {
+  Geckos: ['Crested Gecko', 'Leopard Gecko', 'Gargoyle Gecko', 'Mourning Gecko', 'Tokay Gecko', 'African Fat-Tailed Gecko', 'Leaf-Tailed Gecko'],
+  Lizards: ['Bearded Dragon', 'Blue Tongue Skink', 'Jackson\'s Chameleon', 'Green Anole', 'Ackie Monitor', 'Savannah Monitor', 'Uromastyx', 'Argentine Black and White Tegu'],
+  Snakes: ['Ball Python', 'Corn Snake', 'Hognose Snake', 'Boa Constrictor', 'California Kingsnake', 'Milk Snake'],
+  'Turtles & Tortoises': ['Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise', 'Box Turtle'],
+  'Small Mammals': ['Rabbit', 'Hedgehog', 'Guinea Pig', 'Chinchilla', 'Ferret', 'Sugar Glider'],
+  Birds: ['Budgie', 'Cockatiel', 'Green Cheek Conure', 'Lovebird', 'African Grey Parrot'],
+  Dogs: ['Labrador Retriever', 'Golden Retriever', 'German Shepherd', 'French Bulldog', 'Border Collie', 'Siberian Husky'],
+  Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
+  Invertebrates: ['Tarantula', 'Praying Mantis', 'Giant Millipede', 'Emperor Scorpion', 'Madagascar Hissing Cockroach', 'Stick Insect'],
+  Amphibians: ['White\'s Tree Frog', 'Pacman Frog', 'Fire-Bellied Toad', 'Axolotl', 'Tiger Salamander'],
+};
+
 export default function Guides() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [dogSize, setDogSize] = useState('All Sizes');
+  const [activeSubtype, setActiveSubtype] = useState(null);
 
   const filtered = useMemo(() => {
     if (activeFilter === 'All') return allGuides;
     if (activeFilter === 'Dogs') {
-      return dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize || g.sizeCategory === 'All Sizes');
+      const sized = dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize || g.sizeCategory === 'All Sizes');
+      if (activeSubtype) return sized.filter(g => g.name.includes(activeSubtype));
+      return sized;
     }
-    if (activeFilter === 'Cats') return catGuides;
-    if (directMatchCategories.has(activeFilter)) return guidesExtended.filter(g => g.petType === activeFilter);
+    if (activeFilter === 'Cats') {
+      if (activeSubtype) return catGuides.filter(g => g.name.includes(activeSubtype));
+      return catGuides;
+    }
+    if (directMatchCategories.has(activeFilter)) {
+      const byType = guidesExtended.filter(g => g.petType === activeFilter);
+      if (activeSubtype) return byType.filter(g => g.name.includes(activeSubtype));
+      return byType;
+    }
     return allGuides;
-  }, [activeFilter, dogSize]);
+  }, [activeFilter, dogSize, activeSubtype]);
 
   return (
     <div className="min-h-screen">
@@ -60,7 +83,7 @@ export default function Guides() {
             {topFilters.map(f => (
               <button
                 key={f.label}
-                onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); }}
+                onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); setActiveSubtype(null); }}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
                   activeFilter === f.label
                     ? 'bg-accent text-accent-foreground'
@@ -79,7 +102,7 @@ export default function Guides() {
               {dogSizes.map(s => (
                 <button
                   key={s}
-                  onClick={() => setDogSize(s)}
+                  onClick={() => { setDogSize(s); setActiveSubtype(null); }}
                   className={`px-3 py-1 rounded-full text-xs font-display font-semibold transition-all ${
                     dogSize === s
                       ? 'bg-secondary text-secondary-foreground'
@@ -87,6 +110,35 @@ export default function Guides() {
                   }`}
                 >
                   {s}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Subtype filter — shown when a specific category is active */}
+          {activeFilter !== 'All' && subtypes[activeFilter] && (
+            <div className="flex flex-wrap gap-1.5 mt-2">
+              <button
+                onClick={() => setActiveSubtype(null)}
+                className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${
+                  activeSubtype === null
+                    ? 'bg-primary/20 text-primary'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                All
+              </button>
+              {subtypes[activeFilter].map(sub => (
+                <button
+                  key={sub}
+                  onClick={() => setActiveSubtype(activeSubtype === sub ? null : sub)}
+                  className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${
+                    activeSubtype === sub
+                      ? 'bg-primary/20 text-primary'
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  {sub}
                 </button>
               ))}
             </div>
