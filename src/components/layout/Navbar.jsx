@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun, ChevronDown, BookOpen, Search } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
-import { encyclopediaCategories } from '@/lib/data/encyclopedia';
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
 
@@ -101,7 +100,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* Encyclopedia mega dropdown */}
+            {/* Encyclopedia / Guides mega dropdown */}
             <div ref={megaRef} className="relative">
               <button
                 onClick={() => setMegaOpen(!megaOpen)}
@@ -111,7 +110,7 @@ export default function Navbar() {
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Encyclopedia
+                Learn
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? 'rotate-180' : ''}`} />
               </button>
 
@@ -122,44 +121,49 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.97 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-2 w-72 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
+                    className="absolute right-0 mt-2 w-64 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
                   >
-                    <div className="p-3 border-b border-border">
+                    <div className="p-3 space-y-0.5">
                       <Link
                         to="/encyclopedia"
-                        className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors"
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
                       >
-                        <Search className="w-4 h-4 text-secondary" />
+                        <span className="text-lg">🔍</span>
                         <div>
-                          <p className="font-display font-bold text-xs text-foreground">Browse All Animals</p>
-                          <p className="text-xs text-muted-foreground font-body">Search the full encyclopedia</p>
+                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Encyclopedia</p>
+                          <p className="text-xs text-muted-foreground font-body">Browse all animals</p>
                         </div>
                       </Link>
                       <Link
                         to="/guides"
-                        className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors"
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
                       >
-                        <BookOpen className="w-4 h-4 text-accent" />
+                        <span className="text-lg">📖</span>
                         <div>
-                          <p className="font-display font-bold text-xs text-foreground">Care Guides</p>
-                          <p className="text-xs text-muted-foreground font-body">Detailed husbandry guides</p>
+                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Care Guides</p>
+                          <p className="text-xs text-muted-foreground font-body">Reptiles, dogs, cats and more</p>
                         </div>
                       </Link>
-                    </div>
-                    <div className="p-3">
-                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-2">Browse by Category</p>
-                      <div className="grid grid-cols-2 gap-1">
-                        {encyclopediaCategories.map(cat => (
-                          <Link
-                            key={cat.name}
-                            to={`/encyclopedia?category=${encodeURIComponent(cat.name)}`}
-                            className="flex items-center gap-2 px-2.5 py-2 rounded-xl hover:bg-muted transition-colors"
-                          >
-                            <span className="text-base">{cat.emoji}</span>
-                            <span className="text-xs font-body text-foreground">{cat.name}</span>
-                          </Link>
-                        ))}
-                      </div>
+                      <Link
+                        to="/facts"
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
+                      >
+                        <span className="text-lg">⚡</span>
+                        <div>
+                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Animal Facts</p>
+                          <p className="text-xs text-muted-foreground font-body">Wild facts and science</p>
+                        </div>
+                      </Link>
+                      <Link
+                        to="/trivia"
+                        className="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-muted transition-colors group"
+                      >
+                        <span className="text-lg">🧠</span>
+                        <div>
+                          <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">Trivia Quiz</p>
+                          <p className="text-xs text-muted-foreground font-body">Test your knowledge</p>
+                        </div>
+                      </Link>
                     </div>
                   </motion.div>
                 )}
@@ -224,16 +228,16 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              {/* Encyclopedia section */}
+              {/* Learn section */}
               <div className="pt-2 pb-1">
-                <p className="text-xs font-display font-bold text-muted-foreground px-4 mb-2 uppercase tracking-wide">Encyclopedia</p>
+                <p className="text-xs font-display font-bold text-muted-foreground px-4 mb-2 uppercase tracking-wide">Learn</p>
                 <Link
                   to="/encyclopedia"
                   className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
                     location.pathname === '/encyclopedia' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
-                  <Search className="w-4 h-4" /> Browse All Animals
+                  🔍 Encyclopedia
                 </Link>
                 <Link
                   to="/guides"
@@ -241,20 +245,24 @@ export default function Navbar() {
                     location.pathname === '/guides' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
-                  <BookOpen className="w-4 h-4" /> Care Guides
+                  📖 Care Guides
                 </Link>
-              </div>
-
-              <div className="grid grid-cols-2 gap-1 px-1 pt-1">
-                {encyclopediaCategories.map(cat => (
-                  <Link
-                    key={cat.name}
-                    to={`/encyclopedia?category=${encodeURIComponent(cat.name)}`}
-                    className="flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
-                  >
-                    <span>{cat.emoji}</span> {cat.name}
-                  </Link>
-                ))}
+                <Link
+                  to="/facts"
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/facts' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  ⚡ Animal Facts
+                </Link>
+                <Link
+                  to="/trivia"
+                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/trivia' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  🧠 Trivia Quiz
+                </Link>
               </div>
             </div>
           </motion.div>
