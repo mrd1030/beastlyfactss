@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
@@ -15,11 +14,14 @@ export default function TrendingFacts({ onOpenFact }) {
     staleTime: 1000 * 60 * 10,
   });
 
-  // Show newest dynamic facts first, then fall back to static facts to fill up to 8
-  const trending = [
-    ...dynamicFacts,
-    ...facts.slice(0, Math.max(0, 8 - dynamicFacts.length)),
-  ].slice(0, 8);
+  // Show newest dynamic facts first, then fill with a random selection of static facts
+  const trending = useMemo(() => {
+    const needed = Math.max(0, 8 - dynamicFacts.length);
+    const dynamicTitles = new Set(dynamicFacts.map(f => f.title));
+    const staticPool = facts.filter(f => !dynamicTitles.has(f.title));
+    const shuffled = [...staticPool].sort(() => Math.random() - 0.5).slice(0, needed);
+    return [...dynamicFacts, ...shuffled].slice(0, 8);
+  }, [dynamicFacts]);
 
   const scroll = (dir) => {
     if (scrollRef.current) {
@@ -52,7 +54,7 @@ export default function TrendingFacts({ onOpenFact }) {
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', alignItems: 'flex-start' }}
         >
           {trending.map((fact, i) => (
-            <div key={fact.id} className="min-w-[260px] max-w-[280px] snap-start flex-shrink-0">
+            <div key={fact.id || fact.title} className="min-w-[260px] max-w-[280px] snap-start flex-shrink-0">
               <FactCard fact={fact} index={i} onOpen={onOpenFact} />
             </div>
           ))}
