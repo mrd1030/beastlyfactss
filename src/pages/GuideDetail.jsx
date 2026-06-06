@@ -3,6 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight } from 'lucide-react';
 import { guidesExtended } from '@/lib/data/guidesExtended';
+import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
+
+const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 import { difficultyColor } from '@/lib/data/encyclopedia';
 
 const tabLabels = {
@@ -14,7 +17,7 @@ const tabLabels = {
 
 export default function GuideDetail() {
   const { id } = useParams();
-  const guide = guidesExtended.find(g => g.id === id);
+  const guide = allGuides.find(g => g.id === id);
   const [activeTab, setActiveTab] = useState('housing');
 
   const handlePrint = () => {
