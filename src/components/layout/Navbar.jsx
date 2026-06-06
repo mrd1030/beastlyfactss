@@ -98,6 +98,7 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all ${
                   location.pathname === link.to
                     ? 'bg-primary text-primary-foreground'
@@ -143,6 +144,7 @@ export default function Navbar() {
                           { to: '/blog', emoji: '📰', label: 'Critter Digest' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
                               location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
                             }`}
@@ -163,6 +165,7 @@ export default function Navbar() {
                           { to: '/pack', emoji: '🐾', label: 'My Pack' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
                               location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
                             }`}
@@ -184,6 +187,7 @@ export default function Navbar() {
                           { to: '/contact', emoji: '💌', label: 'Contact' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
                               location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
                             }`}
@@ -258,46 +262,40 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
           >
-            <div className="p-4 space-y-1 max-h-[80vh] overflow-y-auto">
-              {primaryLinks.map(link => (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === link.to
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-foreground hover:bg-muted'
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
-
-              {/* All pages */}
-              <div className="pt-2 pb-1 space-y-0.5">
+            <div className="p-4 max-h-[80vh] overflow-y-auto">
+              {/* Main nav — single unified list, no duplicates */}
+              <div className="space-y-0.5">
                 {[
-                  { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
-                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/', label: 'Home' },
                   { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
                   { to: '/blog', emoji: '📰', label: 'Critter Digest' },
-                  { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
                   { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
                   { to: '/pack', emoji: '🐾', label: 'My Pack' },
+                  { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
+                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
                   { to: '/about', emoji: '🦁', label: 'About' },
                   { to: '/donate', emoji: '❤️', label: 'Support Us' },
                   { to: '/contact', emoji: '💌', label: 'Contact' },
                 ].map(item => (
-                  <Link key={item.to} to={item.to}
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                      location.pathname === item.to ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                      location.pathname === item.to
+                        ? 'bg-primary text-primary-foreground'
+                        : 'text-foreground hover:bg-muted'
                     }`}
                   >
-                    <span>{item.emoji}</span> {item.label}
+                    {item.emoji && <span>{item.emoji}</span>}
+                    {item.label}
                   </Link>
                 ))}
               </div>
+
               {/* Social links */}
-              <div className="flex gap-2 pt-2 pb-1 px-1">
+              <div className="flex gap-2 pt-3 pb-1">
                 <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-hotpink/10 text-hotpink text-sm font-display font-bold"
                 >
