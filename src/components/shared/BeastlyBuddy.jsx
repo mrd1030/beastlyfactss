@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { base44 } from '@/api/base44Client';
 
 const greetings = [
   "Hey there, animal friend! 🐾 Want a fun fact?",
@@ -32,6 +33,7 @@ export default function BeastlyBuddy() {
   const getRandomFact = () => {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
     setCurrentFact(randomFact);
+    base44.analytics.track({ eventName: 'beastly_buddy_random_fact', properties: { animal: randomFact.animal, category: randomFact.category } });
   };
 
   return (
@@ -75,8 +77,11 @@ export default function BeastlyBuddy() {
                     🎲 Another!
                   </button>
                   <button
-                    onClick={() => toggleFavorite(currentFact.id)}
-                    className={`px-3 py-2 rounded-xl transition-all ${isFavorite(currentFact.id) ? 'bg-pink-100 dark:bg-pink-950' : 'bg-muted hover:bg-muted/80'}`}
+                   onClick={() => {
+                     toggleFavorite(currentFact.id);
+                     base44.analytics.track({ eventName: 'beastly_buddy_favorite_toggled', properties: { animal: currentFact.animal, favorited: !isFavorite(currentFact.id) } });
+                   }}
+                   className={`px-3 py-2 rounded-xl transition-all ${isFavorite(currentFact.id) ? 'bg-pink-100 dark:bg-pink-950' : 'bg-muted hover:bg-muted/80'}`}
                   >
                     <Heart className={`w-4 h-4 ${isFavorite(currentFact.id) ? 'fill-hotpink text-hotpink' : 'text-muted-foreground'}`} />
                   </button>
@@ -88,7 +93,16 @@ export default function BeastlyBuddy() {
       </AnimatePresence>
 
       <motion.button
-        onClick={() => { setOpen(!open); if (!open) setCurrentFact(null); }}
+        onClick={() => {
+          const opening = !open;
+          setOpen(opening);
+          if (opening) {
+            setCurrentFact(null);
+            base44.analytics.track({ eventName: 'beastly_buddy_opened' });
+          } else {
+            base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+          }
+        }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg shadow-secondary/30 text-2xl"

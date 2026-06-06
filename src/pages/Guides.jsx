@@ -5,6 +5,7 @@ import { ChevronRight } from 'lucide-react';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
+import { base44 } from '@/api/base44Client';
 
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
@@ -83,7 +84,7 @@ export default function Guides() {
             {topFilters.map(f => (
               <button
                 key={f.label}
-                onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); setActiveSubtype(null); }}
+                onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); setActiveSubtype(null); base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } }); }}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
                   activeFilter === f.label
                     ? 'bg-accent text-accent-foreground'
@@ -131,7 +132,7 @@ export default function Guides() {
               {subtypes[activeFilter].map(sub => (
                 <button
                   key={sub}
-                  onClick={() => setActiveSubtype(activeSubtype === sub ? null : sub)}
+                  onClick={() => { const next = activeSubtype === sub ? null : sub; setActiveSubtype(next); if (next) base44.analytics.track({ eventName: 'guides_subtype_filter_clicked', properties: { subtype: sub, category: activeFilter } }); }}
                   className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${
                     activeSubtype === sub
                       ? 'bg-primary/20 text-primary'
@@ -176,7 +177,7 @@ function GuideCard({ guide, index }) {
       transition={{ delay: Math.min(index * 0.03, 0.4) }}
       whileHover={{ y: -3 }}
     >
-      <Link to={`/guides/${guide.id}`}>
+      <Link to={`/guides/${guide.id}`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           <div className="flex items-start justify-between mb-3">
             <span className="text-3xl">{guide.emoji}</span>
