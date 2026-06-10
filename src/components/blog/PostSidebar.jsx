@@ -1,9 +1,11 @@
 import React, { useMemo } from 'react';
-import { Clock } from 'lucide-react';
+import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import BeehiivSubscribe from './BeehiivSubscribe';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
+  const { isFavorite, toggleFavorite } = useFavoritesCtx();
   // Related posts: same animalType/category, excluding current, up to 5
   const related = useMemo(() => {
     const others = allPosts.filter(p => (p._id || p.id) !== (currentPost._id || currentPost.id));
@@ -71,6 +73,17 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         <p className="text-xs font-display font-bold text-secondary mb-1">{randomFact.title}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">{randomFact.fact}</p>
         <p className="text-xs text-muted-foreground/60 font-body mt-2 italic">— {randomFact.animal}</p>
+        <button
+          onClick={() => toggleFavorite(randomFact.id)}
+          className={`mt-3 w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl text-xs font-display font-bold border transition-all ${
+            isFavorite(randomFact.id)
+              ? 'bg-hotpink/10 text-hotpink border-hotpink/30'
+              : 'bg-muted text-muted-foreground border-border hover:text-hotpink hover:border-hotpink/30'
+          }`}
+        >
+          <Heart className={`w-3.5 h-3.5 ${isFavorite(randomFact.id) ? 'fill-hotpink' : ''}`} />
+          {isFavorite(randomFact.id) ? 'Saved to Pack 🐾' : 'Save to My Pack'}
+        </button>
       </div>
     </div>
   );

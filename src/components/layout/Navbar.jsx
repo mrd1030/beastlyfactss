@@ -18,8 +18,10 @@ import DonateButton from '@/components/DonateButton';
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
-  { to: '/search', label: 'Search' },
+  { to: '/encyclopedia', label: 'Encyclopedia' },
   { to: '/facts', label: 'Facts' },
+  { to: '/blog', label: 'Critter Digest' },
+  { to: '/pack', label: 'My Pack' },
 ];
 
 export default function Navbar() {
@@ -93,20 +95,26 @@ export default function Navbar() {
 
           {/* Desktop nav — primary links */}
           <div className="hidden md:flex items-center gap-0.5">
-            {primaryLinks.map(link => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all ${
-                  location.pathname === link.to
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+            {primaryLinks.map(link => {
+              const isActive =
+                link.to === '/blog'
+                  ? isDigest
+                  : location.pathname === link.to;
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Right controls */}
@@ -123,7 +131,8 @@ export default function Navbar() {
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-xs px-2 py-1 rounded-full"
+                title={`${streak}-day visit streak! Keep it up 🔥`}
+                className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-xs px-2 py-1 rounded-full cursor-default"
               >
                 🔥 {streak}
               </motion.div>
