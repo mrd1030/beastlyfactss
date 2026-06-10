@@ -1,18 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { base44 } from '@/api/base44Client';
 
 export default function Donate() {
-  const [amount, setAmount] = useState('5');
+  const [amount, setAmount] = useState('');
   const [customAmount, setCustomAmount] = useState('');
-  const [donationType, setDonationType] = useState('one-time');
+  const [donationType, setDonationType] = useState('');
   const [loading, setLoading] = useState(false);
+
+  // Refs for arrow key navigation
+  const amountContainerRef = useRef(null);
+  const typeContainerRef = useRef(null);
+
+  const handleKeyDown = (e, containerRef) => {
+    const buttons = Array.from(containerRef.current.querySelectorAll('button'));
+    const index = buttons.indexOf(document.activeElement);
+
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      const next = (index + 1) % buttons.length;
+      buttons[next].focus();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      const prev = (index - 1 + buttons.length) % buttons.length;
+      buttons[prev].focus();
+    }
+  };
 
   const handleDonate = async () => {
     setLoading(true);
@@ -33,58 +51,45 @@ export default function Donate() {
     setLoading(false);
   };
 
-  const donateLabel = amount === 'custom'
-    ? `Donate${customAmount ? ` $${customAmount}` : ''}`
-    : `Donate $${amount}`;
+  const donateLabel = amount === 'custom' 
+    ? (customAmount ? `Donate $${customAmount}` : 'Donate') 
+    : amount ? `Donate $${amount}` : 'Donate';
 
   return (
     <div className="min-h-screen">
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🐾</span>
-            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
-              Support BeastlyFacts
-            </h1>
-            <p className="text-sm text-muted-foreground font-body max-w-md">
-              Your contribution helps us keep sharing amazing animal facts and reptile care guides — ad-free and forever free to read.
-            </p>
-          </motion.div>
+        <div className="max-w-xl mx-auto text-center">
+          <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Support BeastlyFacts</h1>
+          <p className="text-sm text-muted-foreground font-body">Your contribution helps us keep sharing amazing animal facts.</p>
         </div>
       </div>
 
       <div className="max-w-xl mx-auto px-4 sm:px-6 pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="bg-card border border-border rounded-2xl p-8 space-y-6"
-        >
-          {/* Amount */}
+        <div className="bg-card border border-border rounded-2xl p-8 space-y-6">
+          
+          {/* Amount Section */}
           <div className="space-y-3">
             <Label className="text-base font-body font-semibold">Choose an amount:</Label>
-            <RadioGroup value={amount} onValueChange={setAmount} className="grid grid-cols-2 gap-3">
-              {['1', '5', '10'].map((val) => (
-                <div key={val}>
-                  <RadioGroupItem value={val} id={`amount-${val}`} className="peer sr-only" />
-                  <Label
-                    htmlFor={`amount-${val}`}
-                    className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer transition-all"
-                  >
-                    <span className="font-display text-2xl font-bold text-foreground">${val}</span>
-                  </Label>
-                </div>
-              ))}
-              <div>
-                <RadioGroupItem value="custom" id="amount-custom" className="peer sr-only" />
-                <Label
-                  htmlFor="amount-custom"
-                  className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer transition-all"
+            <div 
+              className="grid grid-cols-2 gap-3" 
+              ref={amountContainerRef} 
+              onKeyDown={(e) => handleKeyDown(e, amountContainerRef)}
+            >
+              {['1', '5', '10', 'custom'].map((val) => (
+                <button
+                  key={val}
+                  type="button"
+                  onClick={() => setAmount(val)}
+                  className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                    amount === val 
+                      ? 'border-primary bg-primary/10 text-foreground' 
+                      : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
+                  }`}
                 >
-                  <span className="font-display text-lg font-bold text-foreground">Custom</span>
-                </Label>
-              </div>
-            </RadioGroup>
+                  <span className="font-display text-2xl font-bold">{val === 'custom' ? 'Custom' : `$${val}`}</span>
+                </button>
+              ))}
+            </div>
           </div>
 
           {amount === 'custom' && (
@@ -95,36 +100,50 @@ export default function Donate() {
               placeholder="Enter custom amount ($)"
               value={customAmount}
               onChange={(e) => setCustomAmount(e.target.value)}
+              autoFocus
+              className="focus-visible:ring-4 focus-visible:ring-primary"
             />
           )}
 
-          {/* Type */}
+          {/* Type Section */}
           <div className="space-y-3">
             <Label className="text-base font-body font-semibold">Donation type:</Label>
-            <RadioGroup value={donationType} onValueChange={setDonationType} className="grid grid-cols-2 gap-3">
-              {[{ value: 'one-time', label: 'One-time' }, { value: 'monthly', label: 'Monthly' }].map(({ value, label }) => (
-                <div key={value}>
-                  <RadioGroupItem value={value} id={`type-${value}`} className="peer sr-only" />
-                  <Label
-                    htmlFor={`type-${value}`}
-                    className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer transition-all"
-                  >
-                    <span className="font-display text-base font-bold text-foreground">{label}</span>
-                  </Label>
-                </div>
+            <div 
+              className="grid grid-cols-2 gap-3" 
+              ref={typeContainerRef} 
+              onKeyDown={(e) => handleKeyDown(e, typeContainerRef)}
+            >
+              {[
+                { value: 'one-time', label: 'One-time' },
+                { value: 'monthly', label: 'Monthly' }
+              ].map(({ value, label }) => (
+                <button
+                  key={value}
+                  type="button"
+                  onClick={() => setDonationType(value)}
+                  className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 ${
+                    donationType === value 
+                      ? 'border-primary bg-primary/10 text-foreground' 
+                      : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
+                  }`}
+                >
+                  <span className="font-display text-base font-bold">{label}</span>
+                </button>
               ))}
-            </RadioGroup>
+            </div>
           </div>
 
+          {/* Donate Button */}
           <Button
             onClick={handleDonate}
-            disabled={loading || (amount === 'custom' && (!customAmount || parseFloat(customAmount) <= 0))}
-            className="w-full font-display font-bold text-lg py-6"
+            disabled={loading || !amount || !donationType || (amount === 'custom' && (!customAmount || parseFloat(customAmount) <= 0))}
+            className="w-full font-display font-bold text-lg py-6 focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
             {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Heart className="mr-2 h-4 w-4 fill-white" />}
-            {donateLabel} {donationType === 'monthly' ? 'Monthly' : 'Now'}
+            {donateLabel}
           </Button>
 
+            
           <div className="flex items-start gap-3 bg-accent/10 border border-accent/20 rounded-xl p-3">
             <span className="text-xl flex-shrink-0">🌍</span>
             <p className="text-xs text-muted-foreground font-body leading-relaxed">
@@ -135,7 +154,7 @@ export default function Donate() {
           <p className="text-xs text-muted-foreground font-body text-center">
             Payments are securely processed by Stripe. BeastlyFacts never stores your card details.
           </p>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

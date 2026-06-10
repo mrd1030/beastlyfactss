@@ -23,7 +23,7 @@ export default function GuideSpotlight() {
               Featured Care Guides
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Detailed, research-backed guides for exotic pets
+              Detailed, research-backed guides for pets
             </p>
           </div>
           <Link to="/guides" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">

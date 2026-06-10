@@ -25,6 +25,8 @@ export default function SiteCounter() {
       console.error('Analytics failed to log', err);
     }
 
+    let timeoutId;
+    
     const simulateLiveTraffic = () => {
       const nextTickDelay = Math.floor(Math.random() * 135000) + 45000;
 
@@ -34,7 +36,7 @@ export default function SiteCounter() {
       }, nextTickDelay);
     };
 
-    let timeoutId;
+    
     simulateLiveTraffic();
 
     return () => clearTimeout(timeoutId);

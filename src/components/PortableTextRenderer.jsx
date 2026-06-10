@@ -30,7 +30,6 @@ const components = {
   },
 
   types: {
-    // Image — pass link and alt explicitly from the block value
     image: ({ value }) => (
       <PortableTextImage
         value={value}
@@ -39,44 +38,49 @@ const components = {
       />
     ),
 
-    // Amazon Product Recommendation
-    productRecommendation: ({ value }) => (
-      <div className="my-10 border border-secondary/20 rounded-2xl p-6 bg-card shadow-sm">
-        <div className="flex flex-col md:flex-row gap-6 items-start">
-          {value.image && (
-            <div className="w-full md:w-48 flex-shrink-0">
-              <img
-                src={urlFor(value.image).width(400).url()}
-                alt={value.productName || 'Product image'}
-                className="rounded-xl object-contain w-full"
-              />
+    productRecommendation: ({ value }) => {
+      // FIX: Guard against rendering broken "undefined" links if data is missing in Sanity CMS
+      const finalUrl = value.affiliateUrl || (value.asin ? `https://www.amazon.com/dp/${value.asin}?tag=beastlyfacts-20` : '#');
+
+      return (
+        <div className="my-10 border border-secondary/20 rounded-2xl p-6 bg-card shadow-sm">
+          <div className="flex flex-col md:flex-row gap-6 items-start">
+            {value.image && (
+              <div className="w-full md:w-48 flex-shrink-0">
+                <img
+                  src={urlFor(value.image).width(400).url()}
+                  alt={value.productName || 'Product image'}
+                  className="rounded-xl object-contain w-full"
+                />
+              </div>
+            )}
+            <div className="flex-1">
+              <h3 className="font-display font-bold text-xl text-foreground mb-1">{value.productName}</h3>
+              {value.bestFor && (
+                <p className="text-secondary font-body text-sm font-semibold mb-3">{value.bestFor}</p>
+              )}
+              {value.description && (
+                <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">{value.description}</p>
+              )}
+              {value.priceRange && (
+                <p className="text-lg font-display font-bold text-foreground mb-4">{value.priceRange}</p>
+              )}
+              {finalUrl !== '#' && (
+                <a
+                  href={finalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-2.5 rounded-xl font-display font-semibold text-sm transition-all"
+                >
+                  Check Price on Amazon →
+                </a>
+              )}
             </div>
-          )}
-          <div className="flex-1">
-            <h3 className="font-display font-bold text-xl text-foreground mb-1">{value.productName}</h3>
-            {value.bestFor && (
-              <p className="text-secondary font-body text-sm font-semibold mb-3">{value.bestFor}</p>
-            )}
-            {value.description && (
-              <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">{value.description}</p>
-            )}
-            {value.priceRange && (
-              <p className="text-lg font-display font-bold text-foreground mb-4">{value.priceRange}</p>
-            )}
-            <a
-              href={value.affiliateUrl || `https://www.amazon.com/dp/${value.asin}?tag=beastlyfacts-20`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-2.5 rounded-xl font-display font-semibold text-sm transition-all"
-            >
-              Check Price on Amazon →
-            </a>
           </div>
         </div>
-      </div>
-    ),
+      );
+    },
 
-    // Pros & Cons
     prosCons: ({ value }) => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
         <div className="bg-green-50 border border-green-200 p-6 rounded-2xl">
@@ -102,7 +106,6 @@ const components = {
       </div>
     ),
 
-    // Comparison Table
     comparisonTable: ({ value }) => (
       <div className="my-12 overflow-x-auto">
         {value.title && (
@@ -112,7 +115,8 @@ const components = {
           <thead>
             <tr className="bg-muted">
               {value.headers?.map((header, i) => (
-                <th key={i} className="border border-border px-6 py-3 text-left font-medium text-sm">
+                /* FIX: Added scope="col" attribute for proper screen reader accessibility support */
+                <th key={i} scope="col" className="border border-border px-6 py-3 text-left font-medium text-sm">
                   {header}
                 </th>
               ))}
@@ -133,7 +137,6 @@ const components = {
       </div>
     ),
 
-    // Affiliate Disclosure
     affiliateDisclosure: ({ value }) => (
       <div className="my-8 p-5 bg-amber-50 border border-amber-200 border-l-4 border-l-amber-400 rounded-r-2xl flex gap-3 items-start">
         <Info className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />

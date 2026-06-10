@@ -37,7 +37,7 @@ export default function CritterDigestPreview() {
               Latest Articles
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Care guides, deep-dives, and husbandry tips from our blog
+              Care guides, deep-dives, and more from our blog
             </p>
           </div>
           <Link to="/blog" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">

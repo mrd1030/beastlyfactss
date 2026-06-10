@@ -61,27 +61,29 @@ export default function DonateModal({ children }) {
         </DialogHeader>
 
         <div className="grid gap-4 py-4">
+          
+          {/* Amount Options - Accessible Arrow Navigation */}
           <div className="space-y-2">
             <Label className="text-base font-body font-semibold">Choose an amount:</Label>
             <RadioGroup value={amount} onValueChange={setAmount} className="grid grid-cols-2 gap-2">
               {['1', '5', '10'].map((val) => (
-                <div key={val}>
-                  <RadioGroupItem value={val} id={`amount-${val}`} className="peer sr-only" />
+                <div key={val} className="relative">
+                  <RadioGroupItem value={val} id={`modal-amount-${val}`} className="peer sr-only" />
                   <Label
-                    htmlFor={`amount-${val}`}
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer"
+                    htmlFor={`modal-amount-${val}`}
+                    className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 cursor-pointer transition-all duration-200 text-muted-foreground hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:bg-primary peer-data-[state=checked]:text-primary-foreground peer-data-[state=checked]:border-primary peer-focus-visible:ring-4 peer-focus-visible:ring-secondary peer-focus-visible:ring-offset-2"
                   >
-                    <span className="font-display text-2xl font-bold text-foreground">${val}</span>
+                    <span className="font-display text-2xl font-bold">${val}</span>
                   </Label>
                 </div>
               ))}
-              <div>
-                <RadioGroupItem value="custom" id="amount-custom" className="peer sr-only" />
+              <div className="relative">
+                <RadioGroupItem value="custom" id="modal-amount-custom" className="peer sr-only" />
                 <Label
-                  htmlFor="amount-custom"
-                  className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer"
+                  htmlFor="modal-amount-custom"
+                  className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 cursor-pointer transition-all duration-200 text-muted-foreground hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:bg-primary peer-data-[state=checked]:text-primary-foreground peer-data-[state=checked]:border-primary peer-focus-visible:ring-4 peer-focus-visible:ring-secondary peer-focus-visible:ring-offset-2"
                 >
-                  <span className="font-display text-lg font-bold text-foreground">Custom</span>
+                  <span className="font-display text-lg font-bold">Custom</span>
                 </Label>
               </div>
             </RadioGroup>
@@ -95,20 +97,25 @@ export default function DonateModal({ children }) {
               placeholder="Enter custom amount ($)"
               value={customAmount}
               onChange={(e) => setCustomAmount(e.target.value)}
+              autoFocus
             />
           )}
 
+          {/* Donation Frequency Options - Accessible Arrow Navigation */}
           <div className="space-y-2">
             <Label className="text-base font-body font-semibold">Donation type:</Label>
             <RadioGroup value={donationType} onValueChange={setDonationType} className="grid grid-cols-2 gap-2">
-              {[{ value: 'one-time', label: 'One-time' }, { value: 'monthly', label: 'Monthly' }].map(({ value, label }) => (
-                <div key={value}>
-                  <RadioGroupItem value={value} id={`type-${value}`} className="peer sr-only" />
+              {[
+                { value: 'one-time', label: 'One-time' },
+                { value: 'monthly', label: 'Monthly' }
+              ].map(({ value, label }) => (
+                <div key={value} className="relative">
+                  <RadioGroupItem value={value} id={`modal-type-${value}`} className="peer sr-only" />
                   <Label
-                    htmlFor={`type-${value}`}
-                    className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary cursor-pointer"
+                    htmlFor={`modal-type-${value}`}
+                    className="flex flex-col items-center justify-center rounded-xl border-2 border-muted bg-popover p-4 cursor-pointer transition-all duration-200 text-muted-foreground hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:bg-primary peer-data-[state=checked]:text-primary-foreground peer-data-[state=checked]:border-primary peer-focus-visible:ring-4 peer-focus-visible:ring-secondary peer-focus-visible:ring-offset-2"
                   >
-                    <span className="font-display text-base font-bold text-foreground">{label}</span>
+                    <span className="font-display text-base font-bold">{label}</span>
                   </Label>
                 </div>
               ))}
@@ -118,11 +125,11 @@ export default function DonateModal({ children }) {
 
         <Button
           onClick={handleDonate}
-          disabled={loading || (amount === 'custom' && (!customAmount || parseFloat(customAmount) <= 0))}
+          disabled={loading || !amount || !donationType || (amount === 'custom' && (!customAmount || parseFloat(customAmount) <= 0))}
           className="w-full font-display font-bold text-lg py-6"
         >
           {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Heart className="mr-2 h-4 w-4 fill-white" />}
-          {donateLabel} {donationType === 'monthly' ? 'Monthly' : 'Now'}
+          {donateLabel} {donationType === 'monthly' ? '/ month' : ''}
         </Button>
       </DialogContent>
     </Dialog>

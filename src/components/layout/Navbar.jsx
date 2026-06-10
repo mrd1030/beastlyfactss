@@ -72,12 +72,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
+  // Sync state cleanly if shifts happen unexpectedly
   useEffect(() => {
     setMobileOpen(false);
     setDigestOpen(false);
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [location]);
+  }, [location.pathname]);
 
+  // Outside click & focus capture handler core engine
   useEffect(() => {
     if (!mobileOpen) return;
 
@@ -127,10 +128,11 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
+  // FIX: Force clear dropdown frames completely when any inline link routes
   const handleMenuNav = () => {
     setMobileOpen(false);
     setDigestOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
   const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
@@ -152,7 +154,7 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="relative flex items-center justify-between h-14">
-          <Link to="/" className={`items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
+          <Link to="/" onClick={handleMenuNav} className={`items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
             <motion.span className="text-xl" whileHover={{ rotate: [0, -10, 10, 0] }} transition={{ duration: 0.4 }}>
               🦁
             </motion.span>
@@ -193,7 +195,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-1.5">
             <button
-              onClick={() => navigate('/search')}
+              onClick={() => { handleMenuNav(); navigate('/search'); }}
               className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Search"
             >
@@ -221,7 +223,8 @@ export default function Navbar() {
               ref={buttonRef}
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 rounded-full hover:bg-muted transition-colors"
-              aria-label="Open menu"
+              aria-label="Toggle navigation menu"
+              aria-expanded={mobileOpen}
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -234,10 +237,6 @@ export default function Navbar() {
           <motion.div
             {...dropdownAnimation}
             ref={menuRef}
-            /* FIXED className: 
-               Replaced explicit color fallbacks entirely with 'bg-card/75' and 'text-foreground'.
-               This binds it completely to your global theme variables while maintaining the translucent frosted look.
-            */
             className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
             <div className="p-4 max-h-[55vh] md:max-h-[70vh] overflow-y-auto custom-scrollbar">

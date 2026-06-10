@@ -1,33 +1,42 @@
-import { Toaster } from "@/components/ui/toaster"
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClientInstance } from '@/lib/query-client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import PageNotFound from './lib/PageNotFound';
+import React, { lazy, Suspense } from 'react'; // Added lazy & Suspense
+import { Toaster } from "@/components/ui/toaster";
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClientInstance } from '@/lib/query-client';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
-import Home from '@/pages/Home';
-import Facts from '@/pages/Facts';
-import Quiz from '@/pages/Quiz';
-import Pack from '@/pages/Pack';
-import Encyclopedia from '@/pages/Encyclopedia';
-import Blog from '@/pages/Blog';
-import GuideDetail from '@/pages/GuideDetail';
-import About from '@/pages/About';
-import Contact from '@/pages/Contact';
-import AnimalFacts from '@/pages/AnimalFacts';
-import DonateSuccess from '@/pages/DonateSuccess';
-import DonateCancel from '@/pages/DonateCancel';
-import Donate from '@/pages/Donate';
-import Terms from '@/pages/Terms';
-import Privacy from '@/pages/Privacy';
 import AnalyticsTracker from '@/components/AnalyticsTracker';
-import Categories from '@/pages/Categories';
-import CategoryPage from '@/pages/CategoryPage';
-import Search from '@/pages/Search';
-import { Navigate } from 'react-router-dom';
+import UserNotRegisteredError from '@/components/UserNotRegisteredError';
+import PageNotFound from './lib/PageNotFound';
+
+// 1. LAZY LOADED PAGES (Split code into standalone bundles)
+const Home = lazy(() => import('@/pages/Home'));
+const Facts = lazy(() => import('@/pages/Facts'));
+const Quiz = lazy(() => import('@/pages/Quiz'));
+const Pack = lazy(() => import('@/pages/Pack'));
+const Encyclopedia = lazy(() => import('@/pages/Encyclopedia'));
+const Blog = lazy(() => import('@/pages/Blog'));
+const GuideDetail = lazy(() => import('@/pages/GuideDetail'));
+const About = lazy(() => import('@/pages/About'));
+const Contact = lazy(() => import('@/pages/Contact'));
+const AnimalFacts = lazy(() => import('@/pages/AnimalFacts'));
+const Donate = lazy(() => import('@/pages/Donate'));
+const DonateSuccess = lazy(() => import('@/pages/DonateSuccess'));
+const DonateCancel = lazy(() => import('@/pages/DonateCancel'));
+const Terms = lazy(() => import('@/pages/Terms'));
+const Privacy = lazy(() => import('@/pages/Privacy'));
+const Categories = lazy(() => import('@/pages/Categories'));
+const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
+const Search = lazy(() => import('@/pages/Search'));
+
+// Shared, lightweight loading fallback when hopping between on-demand chunks
+const PageLoadingFallback = () => (
+  <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
+    <div className="w-6 h-6 border-2 border-primary/20 border-t-primary rounded-full animate-spin" />
+  </div>
+);
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -50,32 +59,35 @@ const AuthenticatedApp = () => {
 
   return (
     <>
-    <AnalyticsTracker />
-    <Routes>
-      <Route element={<AppLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/facts" element={<Facts />} />
-        <Route path="/guides" element={<Navigate to="/encyclopedia?tab=guides" replace />} />
-        <Route path="/guides/:id" element={<GuideDetail />} />
-        <Route path="/encyclopedia" element={<Encyclopedia />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/pack" element={<Pack />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/animal-facts" element={<AnimalFacts />} />
-        <Route path="/trivia" element={<Navigate to="/quiz?tab=trivia" replace />} />
-        <Route path="/donate" element={<Donate />} />
-        <Route path="/donate/success" element={<DonateSuccess />} />
-        <Route path="/donate/cancel" element={<DonateCancel />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/categories" element={<Categories />} />
-        <Route path="/category/:slug" element={<CategoryPage />} />
-        <Route path="/search" element={<Search />} />
-        </Route>
-      <Route path="*" element={<PageNotFound />} />
-    </Routes>
+      <AnalyticsTracker />
+      {/* 2. SUSPENSE BOUNDARY: Safely catches the chunk download before loading page components */}
+      <Suspense fallback={<PageLoadingFallback />}>
+        <Routes>
+          <Route element={<AppLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/facts" element={<Facts />} />
+            <Route path="/guides" element={<Navigate to="/encyclopedia?tab=guides" replace />} />
+            <Route path="/guides/:id" element={<GuideDetail />} />
+            <Route path="/encyclopedia" element={<Encyclopedia />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/pack" element={<Pack />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/animal-facts" element={<AnimalFacts />} />
+            <Route path="/trivia" element={<Navigate to="/quiz?tab=trivia" replace />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/donate/success" element={<DonateSuccess />} />
+            <Route path="/donate/cancel" element={<DonateCancel />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/category/:slug" element={<CategoryPage />} />
+            <Route path="/search" element={<Search />} />
+          </Route>
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Suspense>
     </>
   );
 };
@@ -84,13 +96,13 @@ function App() {
   return (
     <AuthProvider>
       <FavoritesProvider>
-      <QueryClientProvider client={queryClientInstance}>
-        <Router>
+        <QueryClientProvider client={queryClientInstance}>
+          <Router>
             <AuthenticatedApp />
             <ScrollToTop />
-        </Router>
-        <Toaster />
-      </QueryClientProvider>
+          </Router>
+          <Toaster />
+        </QueryClientProvider>
       </FavoritesProvider>
     </AuthProvider>
   );

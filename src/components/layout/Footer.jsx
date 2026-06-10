@@ -7,10 +7,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer id="site-footer" className="bg-card border-t border-border mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 pb-28 md:pb-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
+    <footer className="bg-card border-t border-border mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-28 md:pb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          
+          {/* Brand Column - Prominent */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
               <span className="text-xl">🦁</span>
@@ -18,9 +19,8 @@ export default function Footer() {
                 Beastly<span className="text-secondary">Facts</span>
               </span>
             </div>
-            <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">
-              Facts that roar. Guides that care.<br />
-              For reptile keepers and animal lovers everywhere.
+            <p className="text-xs text-muted-foreground font-body leading-relaxed mb-4 max-w-[250px]">
+              Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
             </p>
             <SiteCounter />
             <div className="mt-4">
@@ -28,88 +28,59 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Explore */}
-          <div>
-            <h4 className="font-display font-bold text-xs uppercase tracking-wide text-muted-foreground mb-3">Explore</h4>
-            <div className="flex flex-col gap-2">
-              {[
+          {/* Navigation Links - Cleaned Up */}
+          {[
+            { 
+              title: "Explore", 
+              links: [
                 { to: '/facts', label: 'Fun Facts' },
                 { to: '/quiz', label: 'Personality Quiz' },
                 { to: '/pack', label: 'My Beast Pack' },
                 { to: '/blog', label: 'Critter Digest' },
-              ].map(link => (
-                <Link key={link.to} to={link.to} className="text-xs text-muted-foreground hover:text-foreground transition-colors font-body">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Encyclopedia */}
-          <div>
-            <h4 className="font-display font-bold text-xs uppercase tracking-wide text-muted-foreground mb-3">Encyclopedia</h4>
-            <div className="flex flex-col gap-2">
-              {[
+              ] 
+            },
+            { 
+              title: "Encyclopedia", 
+              links: [
                 { to: '/encyclopedia', label: 'Browse All' },
                 { to: '/guides', label: 'Care Guides' },
                 { to: '/encyclopedia?category=Geckos', label: 'Geckos' },
                 { to: '/encyclopedia?category=Snakes', label: 'Snakes' },
-                { to: '/encyclopedia?category=Lizards', label: 'Lizards' },
-              ].map(link => (
-                <Link key={link.to} to={link.to} className="text-xs text-muted-foreground hover:text-foreground transition-colors font-body">
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* Info */}
-          <div>
-            <h4 className="font-display font-bold text-xs uppercase tracking-wide text-muted-foreground mb-3">Info</h4>
-            <div className="flex flex-col gap-2 mb-3">
-              {[
-                { to: '/about', label: 'About BeastlyFacts' },
+              ] 
+            },
+            { 
+              title: "Info", 
+              links: [
+                { to: '/about', label: 'About Us' },
                 { to: '/contact', label: 'Contact' },
-                { to: '/animal-facts', label: 'Fun Animal Facts' },
-              ].map(link => (
-                <Link key={link.to} to={link.to} className="text-xs text-muted-foreground hover:text-foreground transition-colors font-body">
-                  {link.label}
-                </Link>
-              ))}
+                { to: '/terms', label: 'Terms' },
+                { to: '/privacy', label: 'Privacy' },
+              ] 
+            }
+          ].map((section) => (
+            <div key={section.title}>
+              <h4 className="font-display font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-4">
+                {section.title}
+              </h4>
+              <nav className="flex flex-col gap-2.5">
+                {section.links.map(link => (
+                  <Link key={link.to} to={link.to} className="text-xs text-muted-foreground hover:text-primary transition-colors font-body">
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
             </div>
-            <p className="text-xs text-muted-foreground font-body leading-relaxed">
-              All info is for educational purposes. Always research before adopting any exotic pet. 🌿
-            </p>
-          </div>
+          ))}
         </div>
 
-        <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs text-muted-foreground font-body">
-            © {year} BeastlyFacts.com — No animals were harmed in the making of this website 🐾
+        {/* Minimal Copyright - Removed Redundant Links */}
+        <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-[10px] text-muted-foreground font-body">
+            © {year} BeastlyFacts.com — No animals were harmed in the making of this website. 🐾
           </p>
-          <div className="flex items-center gap-4 flex-wrap justify-center sm:justify-end">
-            <Link to="/encyclopedia" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Encyclopedia
-            </Link>
-            <Link to="/blog" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Blog
-            </Link>
-            <Link to="/guides" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Guides
-            </Link>
-            <Link to="/about" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              About
-            </Link>
-            <Link to="/contact" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Contact
-            </Link>
-            <Link to="/terms" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Terms
-            </Link>
-            <Link to="/privacy" className="text-xs text-muted-foreground hover:text-foreground font-body transition-colors">
-              Privacy
-            </Link>
-          </div>
+          <p className="text-[10px] text-muted-foreground/60 font-body">
+            Educational purposes only. Always research before adopting.
+          </p>
         </div>
       </div>
     </footer>
