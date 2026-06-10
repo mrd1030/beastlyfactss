@@ -1,4 +1,5 @@
-import React, { lazy, Suspense } from 'react'; // Added lazy & Suspense
+import React, { lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClientInstance } from '@/lib/query-client';
@@ -11,7 +12,7 @@ import AnalyticsTracker from '@/components/AnalyticsTracker';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import PageNotFound from './lib/PageNotFound';
 
-// 1. LAZY LOADED PAGES (Split code into standalone bundles)
+// Lazy Loaded Pages
 const Home = lazy(() => import('@/pages/Home'));
 const Facts = lazy(() => import('@/pages/Facts'));
 const Quiz = lazy(() => import('@/pages/Quiz'));
@@ -31,7 +32,6 @@ const Categories = lazy(() => import('@/pages/Categories'));
 const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
 const Search = lazy(() => import('@/pages/Search'));
 
-// Shared, lightweight loading fallback when hopping between on-demand chunks
 const PageLoadingFallback = () => (
   <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
     <div className="w-6 h-6 border-2 border-primary/20 border-t-primary rounded-full animate-spin" />
@@ -60,7 +60,6 @@ const AuthenticatedApp = () => {
   return (
     <>
       <AnalyticsTracker />
-      {/* 2. SUSPENSE BOUNDARY: Safely catches the chunk download before loading page components */}
       <Suspense fallback={<PageLoadingFallback />}>
         <Routes>
           <Route element={<AppLayout />}>
@@ -93,11 +92,31 @@ const AuthenticatedApp = () => {
 };
 
 function App() {
+  // SEO: Define Structured Data for the Site
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BeastlyFacts",
+    "url": "https://beastlyfacts.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://beastlyfacts.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <AuthProvider>
       <FavoritesProvider>
         <QueryClientProvider client={queryClientInstance}>
           <Router>
+            {/* Inject SEO Data */}
+            <Helmet>
+              <script type="application/ld+json">
+                {JSON.stringify(structuredData)}
+              </script>
+            </Helmet>
+            
             <AuthenticatedApp />
             <ScrollToTop />
           </Router>
