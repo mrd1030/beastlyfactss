@@ -26,6 +26,9 @@ import Donate from '@/pages/Donate';
 import Terms from '@/pages/Terms';
 import Privacy from '@/pages/Privacy';
 import AnalyticsTracker from '@/components/AnalyticsTracker';
+import Categories from '@/pages/Categories';
+import CategoryPage from '@/pages/CategoryPage';
+import Search from '@/pages/Search';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -68,6 +71,9 @@ const AuthenticatedApp = () => {
         <Route path="/donate/cancel" element={<DonateCancel />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/categories" element={<Categories />} />
+        <Route path="/category/:slug" element={<CategoryPage />} />
+        <Route path="/search" element={<Search />} />
         </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>

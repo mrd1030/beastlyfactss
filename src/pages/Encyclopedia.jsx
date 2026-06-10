@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Search, ChevronRight, Clock } from 'lucide-react';
+import { Search, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 
@@ -163,8 +163,8 @@ function AnimalRow({ animal }) {
         <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>
           {animal.difficulty}
         </span>
-        <span className="text-xs font-display font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-full flex items-center gap-1">
-          <Clock className="w-2.5 h-2.5" /> Soon
+        <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>
+          {animal.difficulty}
         </span>
       </div>
     </div>

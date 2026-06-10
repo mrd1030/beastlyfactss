@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Moon, Sun, ChevronDown, Instagram } from 'lucide-react';
+import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
 
 function XLogo({ className }) {
@@ -29,6 +29,7 @@ export default function Navbar() {
   const [megaOpen, setMegaOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const megaRef = useRef(null);
 
   useEffect(() => { recordVisit(); }, []);
@@ -139,9 +140,11 @@ export default function Navbar() {
                         {[
                           { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
                           { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                          { to: '/categories', emoji: '🗂️', label: 'Categories' },
                           { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
                           { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
                           { to: '/blog', emoji: '📰', label: 'Critter Digest' },
+                          { to: '/search', emoji: '🔎', label: 'Search' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -222,6 +225,13 @@ export default function Navbar() {
 
           {/* Right controls */}
           <div className="flex items-center gap-1.5">
+            <button
+              onClick={() => navigate('/search')}
+              className="p-2 rounded-full hover:bg-muted transition-colors"
+              aria-label="Search"
+            >
+              <Search className="w-4 h-4 text-muted-foreground" />
+            </button>
             <DonateButton className="hidden md:flex h-8 text-xs px-3 font-display font-bold" />
             {streak > 0 && (
               <motion.div
@@ -273,6 +283,8 @@ export default function Navbar() {
                   { to: '/pack', emoji: '🐾', label: 'My Pack' },
                   { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
                   { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/categories', emoji: '🗂️', label: 'Categories' },
+                  { to: '/search', emoji: '🔎', label: 'Search' },
                   { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
                   { to: '/about', emoji: '🦁', label: 'About' },
                   { to: '/donate', emoji: '❤️', label: 'Support Us' },
