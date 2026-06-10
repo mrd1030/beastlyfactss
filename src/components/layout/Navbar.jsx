@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
+import { client } from '@/lib/sanity';
+import groq from 'groq';
 
 function XLogo({ className }) {
   return (
@@ -17,7 +19,6 @@ import DonateButton from '@/components/DonateButton';
 const primaryLinks = [
   { to: '/', label: 'Home' },
   { to: '/facts', label: 'Facts' },
-  { to: '/blog', label: 'Critter Digest' },
   { to: '/quiz', label: 'Quiz' },
   { to: '/pack', label: 'My Pack' },
 ];
@@ -27,10 +28,20 @@ export default function Navbar() {
   const { streak, recordVisit } = useDailyStreak();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
+  const [digestOpen, setDigestOpen] = useState(false);
+  const [mobileDigestOpen, setMobileDigestOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [navCategories, setNavCategories] = useState([]);
   const location = useLocation();
   const navigate = useNavigate();
   const megaRef = useRef(null);
+  const digestRef = useRef(null);
+
+  useEffect(() => {
+    client.fetch(groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
+      _id, title, "slug": slug.current
+    }`).then(cats => setNavCategories(cats)).catch(() => {});
+  }, []);
 
   useEffect(() => { recordVisit(); }, []);
 
@@ -43,20 +54,21 @@ export default function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
     setMegaOpen(false);
+    setDigestOpen(false);
   }, [location]);
 
-  // Close mega menu on outside click
+  // Close menus on outside click
   useEffect(() => {
     const handler = (e) => {
-      if (megaRef.current && !megaRef.current.contains(e.target)) {
-        setMegaOpen(false);
-      }
+      if (megaRef.current && !megaRef.current.contains(e.target)) setMegaOpen(false);
+      if (digestRef.current && !digestRef.current.contains(e.target)) setDigestOpen(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, []);
 
   const isEncyclopedia = location.pathname.startsWith('/encyclopedia') || location.pathname.startsWith('/guides');
+  const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
   // Detect child routes where mobile should show back button
   const isChildRoute = /^\/guides\/.+/.test(location.pathname);
 
@@ -110,6 +122,49 @@ export default function Navbar() {
               </Link>
             ))}
 
+            {/* Critter Digest dropdown */}
+            <div ref={digestRef} className="relative">
+              <button
+                onClick={() => setDigestOpen(!digestOpen)}
+                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
+                  location.pathname.startsWith('/blog') || location.pathname.startsWith('/category')
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+              >
+                Critter Digest
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {digestOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute left-0 mt-2 w-56 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden z-50"
+                  >
+                    <div className="p-2">
+                      <Link to="/blog" className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/blog' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
+                        <span className="text-base w-5 text-center">📰</span> All Articles
+                      </Link>
+                      {navCategories.length > 0 && (
+                        <>
+                          <p className="text-xs font-display font-bold text-muted-foreground px-3 mt-2 mb-1 uppercase tracking-wide">Categories</p>
+                          {navCategories.map(cat => (
+                            <Link key={cat._id} to={`/category/${cat.slug}`}
+                              className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === `/category/${cat.slug}` ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
+                              <span className="text-base w-5 text-center">🗂️</span> {cat.title}
+                            </Link>
+                          ))}
+                        </>
+                      )}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
             {/* Full site navigator dropdown */}
             <div ref={megaRef} className="relative">
               <button
@@ -140,10 +195,8 @@ export default function Navbar() {
                         {[
                           { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
                           { to: '/guides', emoji: '📖', label: 'Care Guides' },
-                          { to: '/categories', emoji: '🗂️', label: 'Categories' },
                           { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
                           { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
-                          { to: '/blog', emoji: '📰', label: 'Critter Digest' },
                           { to: '/search', emoji: '🔎', label: 'Search' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
@@ -273,17 +326,15 @@ export default function Navbar() {
             className="md:hidden border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
           >
             <div className="p-4 max-h-[80vh] overflow-y-auto">
-              {/* Main nav — single unified list, no duplicates */}
+              {/* Main nav */}
               <div className="space-y-0.5">
                 {[
                   { to: '/', label: 'Home' },
                   { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
-                  { to: '/blog', emoji: '📰', label: 'Critter Digest' },
                   { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
                   { to: '/pack', emoji: '🐾', label: 'My Pack' },
                   { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
                   { to: '/guides', emoji: '📖', label: 'Care Guides' },
-                  { to: '/categories', emoji: '🗂️', label: 'Categories' },
                   { to: '/search', emoji: '🔎', label: 'Search' },
                   { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
                   { to: '/about', emoji: '🦁', label: 'About' },
@@ -304,6 +355,31 @@ export default function Navbar() {
                     {item.label}
                   </Link>
                 ))}
+
+                {/* Critter Digest expandable */}
+                <button
+                  onClick={() => setMobileDigestOpen(!mobileDigestOpen)}
+                  className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname.startsWith('/blog') || location.pathname.startsWith('/category')
+                      ? 'bg-primary text-primary-foreground'
+                      : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  <span className="flex items-center gap-3"><span>📰</span> Critter Digest</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileDigestOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileDigestOpen && (
+                  <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
+                    <Link to="/blog" className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
+                      All Articles
+                    </Link>
+                    {navCategories.map(cat => (
+                      <Link key={cat._id} to={`/category/${cat.slug}`} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
+                        {cat.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Social links */}

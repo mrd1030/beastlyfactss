@@ -20,7 +20,7 @@ export function useLocalStorage(key, initialValue) {
 }
 
 export function useDarkMode() {
-  const [dark, setDark] = useLocalStorage('beastly-dark-mode', false);
+  const [dark, setDark] = useLocalStorage('beastly-dark-mode', true);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
