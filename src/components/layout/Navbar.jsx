@@ -49,17 +49,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
+  // FIX 1: Bulletproof Scroll-to-Top on Route Change
   useEffect(() => {
     setMobileOpen(false);
     setDigestOpen(false);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [location]);
 
 
-
+  // Handles closing & scrolling if user clicks a link to the page they are already on
   const handleMenuNav = () => {
     setMobileOpen(false);
     setDigestOpen(false);
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
