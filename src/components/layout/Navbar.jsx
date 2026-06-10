@@ -175,9 +175,10 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
           >
-            <div className="p-4 max-h-[80vh] overflow-y-auto">
-              {/* Main nav */}
-              <div className="space-y-0.5">
+            {/* FIX 2: Restricted max height from 80vh down to 55vh */}
+            <div className="p-4 max-h-[55vh] overflow-y-auto custom-scrollbar">
+              {/* Main vertical links */}
+              <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
                   { to: '/search', emoji: '🔎', label: 'Search' },
@@ -187,7 +188,7 @@ export default function Navbar() {
                     key={item.to}
                     to={item.to}
                     onClick={handleMenuNav}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                       location.pathname === item.to
                         ? 'bg-primary text-primary-foreground'
                         : 'text-foreground hover:bg-muted'
@@ -198,10 +199,10 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                {/* Critter Digest expandable */}
+                {/* Critter Digest Expandable */}
                 <button
                   onClick={() => setDigestOpen(!digestOpen)}
-                  className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                  className={`w-full flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                     isDigest ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
@@ -209,7 +210,7 @@ export default function Navbar() {
                   <ChevronDown className={`w-4 h-4 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
                 </button>
                 {digestOpen && (
-                  <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
+                  <div className="ml-4 my-1 space-y-0.5 border-l-2 border-border pl-3">
                     <Link to="/blog" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
                       All Articles
                     </Link>
@@ -221,37 +222,39 @@ export default function Navbar() {
                   </div>
                 )}
 
-                {/* Quizzes — single link */}
+                {/* Quizzes */}
                 <Link
                   to="/quiz"
                   onClick={handleMenuNav}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                  className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                     location.pathname === '/quiz' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
                   <span>🎯</span> Quizzes
                 </Link>
+              </div>
 
+              {/* FIX 2 Continued: Compact 2-Column Grid for Secondary Links */}
+              <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
-                  { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia & Guides' },
+                  { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia' },
                   { to: '/pack', emoji: '🐾', label: 'My Pack' },
                   { to: '/about', emoji: '🦁', label: 'About' },
                   { to: '/donate', emoji: '❤️', label: 'Support Us' },
                   { to: '/contact', emoji: '💌', label: 'Contact' },
-
                 ].map(item => (
                   <Link
                     key={item.to}
                     to={item.to}
                     onClick={handleMenuNav}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-body font-semibold transition-all ${
                       location.pathname === item.to
                         ? 'bg-primary text-primary-foreground'
-                        : 'text-foreground hover:bg-muted'
+                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
-                    <span>{item.emoji}</span>
-                    {item.label}
+                    <span className="text-sm">{item.emoji}</span>
+                    <span className="truncate">{item.label}</span>
                   </Link>
                 ))}
               </div>
