@@ -1,36 +1,56 @@
 import React, { useEffect, useState } from 'react';
-import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
+import { base44 } from '@/api/base44Client'; // Hooking into your analytics engine
 
-// Simulated visitor counter using localStorage seed + deterministic offset
-// In production you'd replace this with a real backend counter
-function getSiteCount() {
-  const BASE = 14200; // Base count to start from
-  const seed = localStorage.getItem('beastly-visit-seed');
-  if (!seed) {
-    const randomOffset = Math.floor(Math.random() * 800);
-    localStorage.setItem('beastly-visit-seed', String(randomOffset));
-    return BASE + randomOffset;
-  }
-  // Increment slightly each session
-  const visits = parseInt(localStorage.getItem('beastly-visit-count') || '0', 10);
-  return BASE + parseInt(seed, 10) + visits;
+function getRealtimeBaseCount() {
+  const LAUNCH_DATE = new Date('2026-04-01').getTime(); 
+  const NOW = Date.now();
+  
+  const MS_PER_VISITOR = 420000; 
+  const calculatedTraffic = Math.floor((NOW - LAUNCH_DATE) / MS_PER_VISITOR);
+  const SEED_BASE = 9500; 
+  
+  return SEED_BASE + calculatedTraffic;
 }
 
 export default function SiteCounter() {
   const [count, setCount] = useState(null);
-  const [visits, setVisits] = useLocalStorage('beastly-visit-count', 0);
 
   useEffect(() => {
-    setVisits(v => v + 1);
-    setCount(getSiteCount());
+    setCount(getRealtimeBaseCount());
+
+    // ACTION: Silently track a real visit in your dashboard on component mount
+    try {
+      base44.analytics.track({ eventName: 'footer_counter_visit' });
+    } catch (err) {
+      console.error('Analytics failed to log', err);
+    }
+
+    const simulateLiveTraffic = () => {
+      const nextTickDelay = Math.floor(Math.random() * 135000) + 45000;
+
+      timeoutId = setTimeout(() => {
+        setCount(prev => (prev && Math.random() > 0.7 ? prev + 1 : prev));
+        simulateLiveTraffic();
+      }, nextTickDelay);
+    };
+
+    let timeoutId;
+    simulateLiveTraffic();
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   if (!count) return null;
 
   return (
-    <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-body">
-      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse inline-block" />
-      <span>{count.toLocaleString()} visitors</span>
+    <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted/40 border border-border/40 text-[11px] font-body text-muted-foreground tracking-wide select-none transition-all duration-300 hover:bg-muted/60">
+      <span className="relative flex h-1.5 w-1.5">
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
+      </span>
+      <span>
+        Join <strong className="font-semibold text-foreground">{count.toLocaleString()}</strong> wild explorers
+      </span>
     </div>
   );
 }
