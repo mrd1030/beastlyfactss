@@ -18,7 +18,9 @@ const POSTS_PER_PAGE = 10;
 const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id, title, slug, excerpt, mainImage, publishedAt, readTime, animalType, body,
   "category": categories[0]->title,
-  "categorySlug": categories[0]->slug.current
+  "categorySlug": categories[0]->slug.current,
+  "allCategories": categories[]->title,
+  "allCategorySlugs": categories[]->slug.current
 }`;
 
 const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
@@ -65,9 +67,14 @@ export default function Blog() {
     }))
   ];
 
-  const filtered = allPosts.filter(p =>
-    activeCategory === 'All' || p.category === activeCategory
-  );
+  const filtered = allPosts.filter(p => {
+    if (activeCategory === 'All') return true;
+    // Check all categories the post belongs to (multi-category support)
+    if (p.allCategories && Array.isArray(p.allCategories)) {
+      return p.allCategories.includes(activeCategory);
+    }
+    return p.category === activeCategory;
+  });
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);

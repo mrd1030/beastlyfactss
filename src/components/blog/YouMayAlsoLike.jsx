@@ -12,7 +12,7 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, category, 
 
     // Try category-based related first, fall back to recent
     const query = categorySlug
-      ? groq`*[_type == "post" && defined(slug.current) && _id != $id && categories[]->slug.current match $catSlug] | order(publishedAt desc)[0...6] {
+      ? groq`*[_type == "post" && defined(slug.current) && _id != $id && $catSlug in categories[]->slug.current] | order(publishedAt desc)[0...6] {
           _id, title, slug, excerpt, mainImage, publishedAt, readTime,
           "category": categories[0]->title,
           "categorySlug": categories[0]->slug.current
@@ -24,7 +24,7 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, category, 
         }`;
 
     const params = categorySlug
-      ? { id: currentPostId, catSlug: `*${categorySlug}*` }
+      ? { id: currentPostId, catSlug: categorySlug }
       : { id: currentPostId };
 
     client.fetch(query, params)

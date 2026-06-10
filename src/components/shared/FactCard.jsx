@@ -5,15 +5,17 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function FactCard({ fact, index = 0, onOpen }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
-  const fav = isFavorite(fact.id);
+  // Support both static facts (fact.id) and dynamic/DB facts (fact._id)
+  const factId = fact.id || fact._id;
+  const fav = isFavorite(factId);
 
   const handleShare = (e) => {
     e.stopPropagation();
     const factsPageUrl = window.location.origin + '/facts';
     if (navigator.share) {
-      navigator.share({ title: fact.title, text: `${fact.emoji} ${fact.fact}`, url: factsPageUrl });
+      navigator.share({ title: fact.title, text: `${fact.emoji || '🐾'} ${fact.fact}`, url: factsPageUrl });
     } else {
-      navigator.clipboard.writeText(`${fact.emoji} ${fact.fact} ${factsPageUrl}`);
+      navigator.clipboard.writeText(`${fact.emoji || '🐾'} ${fact.fact} ${factsPageUrl}`);
     }
   };
 
@@ -55,7 +57,7 @@ export default function FactCard({ fact, index = 0, onOpen }) {
         {/* Actions */}
         <div className="flex items-center gap-2 mt-4 pt-3 border-t border-border">
           <button
-            onClick={(e) => { e.stopPropagation(); toggleFavorite(fact.id); }}
+            onClick={(e) => { e.stopPropagation(); toggleFavorite(factId); }}
             className="flex items-center gap-1 text-xs font-semibold transition-colors"
           >
             <motion.div

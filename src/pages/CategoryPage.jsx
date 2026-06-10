@@ -13,7 +13,9 @@ const CATEGORY_QUERY = groq`*[_type == "category" && slug.current == $slug][0] {
 const POSTS_QUERY = groq`*[_type == "post" && defined(slug.current) && $slug in categories[]->slug.current] | order(publishedAt desc) {
   _id, title, slug, excerpt, mainImage, publishedAt, readTime,
   "category": categories[0]->title,
-  "categorySlug": categories[0]->slug.current
+  "categorySlug": categories[0]->slug.current,
+  "allCategories": categories[]->title,
+  "allCategorySlugs": categories[]->slug.current
 }`;
 
 const ALL_CATS_QUERY = groq`*[_type == "category"] | order(title asc) {
