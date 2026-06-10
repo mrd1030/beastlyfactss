@@ -166,17 +166,18 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Hamburger menu — shown on all screen sizes */}
+      {/* Hamburger menu / Desktop Dropdown Panel */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
+            initial={{ opacity: 0, height: 0, y: -10 }}
+            animate={{ opacity: 1, height: 'auto', y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            className="border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-xl"
           >
-            {/* FIX 2: Restricted max height from 80vh down to 55vh */}
-            <div className="p-4 max-h-[55vh] overflow-y-auto custom-scrollbar">
+            {/* Max height constraint for mobile viewport, cleanly scrolls if content overflows */}
+            <div className="p-4 max-h-[55vh] md:max-h-[70vh] overflow-y-auto custom-scrollbar">
               {/* Main vertical links */}
               <div className="space-y-1">
                 {[
@@ -234,7 +235,7 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              {/* FIX 2 Continued: Compact 2-Column Grid for Secondary Links */}
+              {/* Compact 2-Column Grid for Secondary Links */}
               <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
                   { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia' },
@@ -260,16 +261,16 @@ export default function Navbar() {
               </div>
 
               {/* Social links */}
-              <div className="flex gap-2 pt-3 pb-1">
+              <div className="flex gap-2 pt-3 mt-2 border-t border-border/60">
                 <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-hotpink/10 text-hotpink text-sm font-display font-bold"
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink text-xs font-display font-bold"
                 >
-                  <Instagram className="w-4 h-4" /> Instagram
+                  <Instagram className="w-3.5 h-3.5" /> Instagram
                 </a>
                 <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-foreground/5 text-foreground text-sm font-display font-bold"
+                  className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-display font-bold"
                 >
-                  <XLogo className="w-4 h-4" /> X
+                  <XLogo className="w-3.5 h-3.5" /> X
                 </a>
               </div>
             </div>
