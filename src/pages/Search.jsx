@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Search as SearchIcon, X, ChevronRight } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Search as SearchIcon, X } from 'lucide-react';
 import { client } from '@/lib/sanity';
 import groq from 'groq';
 import { CATEGORIES } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { base44 } from '@/api/base44Client';
+
+const SANITY_CATEGORIES_QUERY = groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
+  _id, title, "slug": slug.current,
+  "count": count(*[_type == "post" && references(^._id)])
+}`;
 
 const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
   title match $q ||
@@ -27,6 +32,7 @@ export default function Search() {
   const [loading, setLoading] = useState(false);
   const [sort, setSort] = useState('relevance');
   const [activeCategory, setActiveCategory] = useState('');
+  const [sanityCategories, setSanityCategories] = useState([]);
   const debounceRef = useRef(null);
   const hasSearched = useRef(false);
 
@@ -36,6 +42,11 @@ export default function Search() {
     client.fetch(SEARCH_QUERY, { q: `*${q}*` })
       .then(data => { setResults(data); setLoading(false); })
       .catch(() => setLoading(false));
+  }, []);
+
+  // Load Sanity categories on mount
+  useEffect(() => {
+    client.fetch(SANITY_CATEGORIES_QUERY).then(cats => setSanityCategories(cats)).catch(() => {});
   }, []);
 
   // Run on mount if ?q= param present
@@ -180,13 +191,19 @@ export default function Search() {
           <div className="py-8">
             <p className="text-sm font-body text-muted-foreground mb-4">Browse popular categories:</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {CATEGORIES.map(c => (
-                <Link key={c.slug} to={`/category/${c.slug}`}
-                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group">
-                  <span className="text-xl">{c.emoji}</span>
-                  <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{c.label}</span>
-                </Link>
-              ))}
+              {(sanityCategories.length > 0 ? sanityCategories : CATEGORIES).map(c => {
+                const local = CATEGORIES.find(lc => lc.slug === c.slug || lc.label?.toLowerCase() === c.title?.toLowerCase());
+                const emoji = local?.emoji || '🐾';
+                const label = c.title || local?.label || c.slug;
+                const slug = c.slug;
+                return (
+                  <Link key={slug} to={`/category/${slug}`}
+                    className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group">
+                    <span className="text-xl">{emoji}</span>
+                    <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{label}</span>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}

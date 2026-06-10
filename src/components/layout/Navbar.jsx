@@ -192,7 +192,7 @@ export default function Navbar() {
 
                 {/* Critter Digest expandable */}
                 <button
-                  onClick={() => setDigestOpen(!digestOpen)}
+                  onClick={() => { setDigestOpen(!digestOpen); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
                     isDigest ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
@@ -202,11 +202,11 @@ export default function Navbar() {
                 </button>
                 {digestOpen && (
                   <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
-                    <Link to="/blog" className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
+                    <Link to="/blog" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
                       All Articles
                     </Link>
                     {navCategories.map(cat => (
-                      <Link key={cat._id} to={`/category/${cat.slug}`} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
+                      <Link key={cat._id} to={`/category/${cat.slug}`} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
                         {cat.title}
                       </Link>
                     ))}
