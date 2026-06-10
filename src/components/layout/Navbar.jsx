@@ -19,7 +19,7 @@ import DonateButton from '@/components/DonateButton';
 const primaryLinks = [
   { to: '/', label: 'Home' },
   { to: '/facts', label: 'Facts' },
-  { to: '/quiz', label: 'Quiz' },
+  { to: '/search', label: 'Search' },
   { to: '/pack', label: 'My Pack' },
 ];
 
@@ -29,13 +29,16 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const [digestOpen, setDigestOpen] = useState(false);
+  const [quizOpen, setQuizOpen] = useState(false);
   const [mobileDigestOpen, setMobileDigestOpen] = useState(false);
+  const [mobileQuizOpen, setMobileQuizOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [navCategories, setNavCategories] = useState([]);
   const location = useLocation();
   const navigate = useNavigate();
   const megaRef = useRef(null);
   const digestRef = useRef(null);
+  const quizRef = useRef(null);
 
   useEffect(() => {
     client.fetch(groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
@@ -55,6 +58,7 @@ export default function Navbar() {
     setMobileOpen(false);
     setMegaOpen(false);
     setDigestOpen(false);
+    setQuizOpen(false);
   }, [location]);
 
   // Close menus on outside click
@@ -62,6 +66,7 @@ export default function Navbar() {
     const handler = (e) => {
       if (megaRef.current && !megaRef.current.contains(e.target)) setMegaOpen(false);
       if (digestRef.current && !digestRef.current.contains(e.target)) setDigestOpen(false);
+      if (quizRef.current && !quizRef.current.contains(e.target)) setQuizOpen(false);
     };
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
@@ -125,11 +130,9 @@ export default function Navbar() {
             {/* Critter Digest dropdown */}
             <div ref={digestRef} className="relative">
               <button
-                onClick={() => setDigestOpen(!digestOpen)}
+                onClick={() => { setDigestOpen(!digestOpen); setQuizOpen(false); setMegaOpen(false); }}
                 className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
-                  location.pathname.startsWith('/blog') || location.pathname.startsWith('/category')
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                  isDigest ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
                 Critter Digest
@@ -165,20 +168,54 @@ export default function Navbar() {
               </AnimatePresence>
             </div>
 
-            {/* Full site navigator dropdown */}
-            <div ref={megaRef} className="relative">
+            {/* Quizzes dropdown */}
+            <div ref={quizRef} className="relative">
               <button
-                onClick={() => setMegaOpen(!megaOpen)}
+                onClick={() => { setQuizOpen(!quizOpen); setDigestOpen(false); setMegaOpen(false); }}
                 className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
-                  isEncyclopedia
+                  location.pathname === '/quiz' || location.pathname === '/trivia'
                     ? 'bg-primary text-primary-foreground'
                     : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                 }`}
               >
-                Explore
+                Quizzes
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${quizOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {quizOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute left-0 mt-2 w-48 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden z-50"
+                  >
+                    <div className="p-2">
+                      <Link to="/quiz" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/quiz' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
+                        <span className="text-base w-5 text-center">🎯</span> Daily Quiz
+                      </Link>
+                      <Link to="/trivia" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/trivia' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
+                        <span className="text-base w-5 text-center">🧠</span> Trivia Quiz
+                      </Link>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* More dropdown */}
+            <div ref={megaRef} className="relative">
+              <button
+                onClick={() => { setMegaOpen(!megaOpen); setDigestOpen(false); setQuizOpen(false); }}
+                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
+                  isEncyclopedia ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                }`}
+              >
+                More
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? 'rotate-180' : ''}`} />
               </button>
-
               <AnimatePresence>
                 {megaOpen && (
                   <motion.div
@@ -186,18 +223,14 @@ export default function Navbar() {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 8, scale: 0.97 }}
                     transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-2 w-64 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
+                    className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
                   >
-                    {/* Learn section */}
                     <div className="p-3 pb-2">
                       <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Learn</p>
                       <div className="space-y-0.5">
                         {[
                           { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
                           { to: '/guides', emoji: '📖', label: 'Care Guides' },
-                          { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
-                          { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
-                          { to: '/search', emoji: '🔎', label: 'Search' },
                         ].map(item => (
                           <Link key={item.to} to={item.to}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -211,29 +244,6 @@ export default function Navbar() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Play section */}
-                    <div className="px-3 pb-2">
-                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Play</p>
-                      <div className="space-y-0.5">
-                        {[
-                          { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
-                          { to: '/pack', emoji: '🐾', label: 'My Pack' },
-                        ].map(item => (
-                          <Link key={item.to} to={item.to}
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
-                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
-                            }`}
-                          >
-                            <span className="text-base w-5 text-center">{item.emoji}</span>
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Info section */}
                     <div className="px-3 pb-2">
                       <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Info</p>
                       <div className="space-y-0.5">
@@ -254,8 +264,6 @@ export default function Navbar() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Social links */}
                     <div className="px-3 pb-3 pt-1 border-t border-border mt-1">
                       <div className="flex items-center gap-2 pt-2">
                         <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
@@ -331,15 +339,7 @@ export default function Navbar() {
                 {[
                   { to: '/', label: 'Home' },
                   { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
-                  { to: '/quiz', emoji: '🎯', label: 'Daily Quiz' },
-                  { to: '/pack', emoji: '🐾', label: 'My Pack' },
-                  { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
-                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
                   { to: '/search', emoji: '🔎', label: 'Search' },
-                  { to: '/trivia', emoji: '🧠', label: 'Trivia Quiz' },
-                  { to: '/about', emoji: '🦁', label: 'About' },
-                  { to: '/donate', emoji: '❤️', label: 'Support Us' },
-                  { to: '/contact', emoji: '💌', label: 'Contact' },
                 ].map(item => (
                   <Link
                     key={item.to}
@@ -380,6 +380,51 @@ export default function Navbar() {
                     ))}
                   </div>
                 )}
+
+                {/* Quizzes expandable */}
+                <button
+                  onClick={() => setMobileQuizOpen(!mobileQuizOpen)}
+                  className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/quiz' || location.pathname === '/trivia'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'text-foreground hover:bg-muted'
+                  }`}
+                >
+                  <span className="flex items-center gap-3"><span>🎯</span> Quizzes</span>
+                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileQuizOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {mobileQuizOpen && (
+                  <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
+                    <Link to="/quiz" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
+                      🎯 Daily Quiz
+                    </Link>
+                    <Link to="/trivia" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
+                      🧠 Trivia Quiz
+                    </Link>
+                  </div>
+                )}
+
+                {[
+                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/pack', emoji: '🐾', label: 'My Pack' },
+                  { to: '/about', emoji: '🦁', label: 'About' },
+                  { to: '/donate', emoji: '❤️', label: 'Support Us' },
+                  { to: '/contact', emoji: '💌', label: 'Contact' },
+                ].map(item => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                      location.pathname === item.to
+                        ? 'bg-primary text-primary-foreground'
+                        : 'text-foreground hover:bg-muted'
+                    }`}
+                  >
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </Link>
+                ))}
               </div>
 
               {/* Social links */}

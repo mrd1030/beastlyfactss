@@ -4,45 +4,38 @@ import { client } from '@/lib/sanity';
 import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
-export default function YouMayAlsoLike({ currentPostId, categorySlug, category, onSelectPost }) {
+// Full post query — includes body so the article renders completely
+const FULL_POST_FIELDS = `
+  _id, title, slug, excerpt, mainImage, publishedAt, readTime, body,
+  "category": categories[0]->title,
+  "categorySlug": categories[0]->slug.current,
+  "allCategories": categories[]->title,
+  "allCategorySlugs": categories[]->slug.current
+`;
+
+export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost }) {
   const [related, setRelated] = useState([]);
 
   useEffect(() => {
     if (!currentPostId) return;
 
-    // Try category-based related first, fall back to recent
     const query = categorySlug
-      ? groq`*[_type == "post" && defined(slug.current) && _id != $id && $catSlug in categories[]->slug.current] | order(publishedAt desc)[0...6] {
-          _id, title, slug, excerpt, mainImage, publishedAt, readTime,
-          "category": categories[0]->title,
-          "categorySlug": categories[0]->slug.current
-        }`
-      : groq`*[_type == "post" && defined(slug.current) && _id != $id] | order(publishedAt desc)[0...6] {
-          _id, title, slug, excerpt, mainImage, publishedAt, readTime,
-          "category": categories[0]->title,
-          "categorySlug": categories[0]->slug.current
-        }`;
+      ? groq`*[_type == "post" && defined(slug.current) && _id != $id && $catSlug in categories[]->slug.current] | order(publishedAt desc)[0...6] { ${FULL_POST_FIELDS} }`
+      : groq`*[_type == "post" && defined(slug.current) && _id != $id] | order(publishedAt desc)[0...6] { ${FULL_POST_FIELDS} }`;
 
-    const params = categorySlug
-      ? { id: currentPostId, catSlug: categorySlug }
-      : { id: currentPostId };
+    const params = categorySlug ? { id: currentPostId, catSlug: categorySlug } : { id: currentPostId };
 
     client.fetch(query, params)
       .then(data => {
         if (data.length < 3) {
-          // Fallback: just grab recent posts excluding current
           return client.fetch(
-            groq`*[_type == "post" && defined(slug.current) && _id != $id] | order(publishedAt desc)[0...6] {
-              _id, title, slug, excerpt, mainImage, publishedAt, readTime,
-              "category": categories[0]->title,
-              "categorySlug": categories[0]->slug.current
-            }`,
+            groq`*[_type == "post" && defined(slug.current) && _id != $id] | order(publishedAt desc)[0...6] { ${FULL_POST_FIELDS} }`,
             { id: currentPostId }
           );
         }
         return data;
       })
-      .then(data => setRelated(data.slice(0, 6)))
+      .then(data => setRelated(data.slice(0, 4)))
       .catch(console.error);
   }, [currentPostId, categorySlug]);
 

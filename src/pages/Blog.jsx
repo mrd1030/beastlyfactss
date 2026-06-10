@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -34,6 +34,7 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedPost, setSelectedPost] = useState(null);
   const [page, setPage] = useState(1);
+  const listRef = useRef(null);
 
   useEffect(() => {
     client.fetch(ALL_POSTS_QUERY).then(posts => {
@@ -99,7 +100,14 @@ export default function Blog() {
     const url = new URL(window.location);
     url.searchParams.set('page', newPage);
     window.history.pushState({}, '', url);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      if (listRef.current) {
+        const top = listRef.current.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 50);
   };
 
   const handleCategoryChange = (cat) => {
@@ -159,7 +167,7 @@ export default function Blog() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Posts */}
           <div className="lg:col-span-2">
-            <div className="space-y-3 mb-6">
+            <div ref={listRef} className="space-y-3 mb-6">
               {paginated.map((post, i) => (
                 <motion.div
                   key={post._id}
@@ -331,13 +339,14 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 
-            {/* You May Also Like */}
-            <YouMayAlsoLike
-              currentPostId={post._id || post.id}
-              categorySlug={post.categorySlug}
-              category={post.category}
-              onSelectPost={onSelectPost}
-            />
+            {/* You May Also Like — only for Sanity posts with body content */}
+            {post.body && (
+              <YouMayAlsoLike
+                currentPostId={post._id}
+                categorySlug={post.categorySlug}
+                onSelectPost={onSelectPost}
+              />
+            )}
           </div>
 
           <div className="lg:sticky lg:top-6">
