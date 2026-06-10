@@ -128,9 +128,9 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  // FIX: Force clear dropdown frames completely when any inline link routes
+  // Remove setMobileOpen(false) from here. 
+  // Let the Link navigation trigger the useEffect that watches location.pathname.
   const handleMenuNav = () => {
-    setMobileOpen(false);
     setDigestOpen(false);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
