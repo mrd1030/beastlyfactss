@@ -19,6 +19,9 @@ export default function BeastlyBuddy() {
   const [footerVisible, setFooterVisible] = useState(false);
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
 
+  const popupRef = useRef(null);
+  const triggerRef = useRef(null);
+
   useEffect(() => {
     const footer = document.getElementById('site-footer');
     if (!footer) return;
@@ -29,6 +32,74 @@ export default function BeastlyBuddy() {
     observer.observe(footer);
     return () => observer.disconnect();
   }, []);
+
+  // Keyboard accessibility, focus capture, & Out-of-bounds interaction handler
+  useEffect(() => {
+    if (!open) return;
+
+    // FIX: Programmatically pull focus inside the card as soon as it opens
+    const focusableSelectors = 'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])';
+    
+    // We use a safe micro-tick to ensure Framer Motion has mounted the DOM node cleanly
+    const focusTimeout = setTimeout(() => {
+      if (popupRef.current) {
+        const focusableElements = popupRef.current.querySelectorAll(focusableSelectors);
+        if (focusableElements.length > 0) {
+          focusableElements[0].focus();
+        }
+      }
+    }, 30);
+
+    const handleOutsideInteraction = (event) => {
+      if (
+        popupRef.current && !popupRef.current.contains(event.target) &&
+        triggerRef.current && !triggerRef.current.contains(event.target)
+      ) {
+        setOpen(false);
+        base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+      }
+    };
+
+    const handleKeyDown = (event) => {
+      // Close popup via Escape Key
+      if (event.key === 'Escape') {
+        setOpen(false);
+        triggerRef.current?.focus();
+        base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+        return;
+      }
+
+      // Tab Lock Focus Trap Engine
+      if (event.key === 'Tab' && popupRef.current) {
+        const focusableElements = popupRef.current.querySelectorAll(focusableSelectors);
+        if (focusableElements.length === 0) return;
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (event.shiftKey) { // Back tab
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            event.preventDefault();
+          }
+        } else { // Forward tab
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            event.preventDefault();
+          }
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideInteraction);
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      clearTimeout(focusTimeout);
+      document.removeEventListener('mousedown', handleOutsideInteraction);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [open]);
 
   const getRandomFact = () => {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
@@ -41,6 +112,7 @@ export default function BeastlyBuddy() {
       <AnimatePresence>
         {open && (
           <motion.div
+            ref={popupRef}
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
@@ -48,7 +120,7 @@ export default function BeastlyBuddy() {
           >
             <div className="flex justify-between items-start mb-2">
               <span className="text-2xl">🦊</span>
-              <button onClick={() => setOpen(false)} className="p-1 hover:bg-muted rounded-full">
+              <button onClick={() => setOpen(false)} className="p-1 hover:bg-muted rounded-full" aria-label="Close fact panel">
                 <X className="w-4 h-4" />
               </button>
             </div>
@@ -77,11 +149,12 @@ export default function BeastlyBuddy() {
                     🎲 Another!
                   </button>
                   <button
-                   onClick={() => {
-                     toggleFavorite(currentFact.id);
-                     base44.analytics.track({ eventName: 'beastly_buddy_favorite_toggled', properties: { animal: currentFact.animal, favorited: !isFavorite(currentFact.id) } });
-                   }}
-                   className={`px-3 py-2 rounded-xl transition-all ${isFavorite(currentFact.id) ? 'bg-pink-100 dark:bg-pink-950' : 'bg-muted hover:bg-muted/80'}`}
+                    onClick={() => {
+                      toggleFavorite(currentFact.id);
+                      base44.analytics.track({ eventName: 'beastly_buddy_favorite_toggled', properties: { animal: currentFact.animal, favorited: !isFavorite(currentFact.id) } });
+                    }}
+                    className={`px-3 py-2 rounded-xl transition-all ${isFavorite(currentFact.id) ? 'bg-pink-100 dark:bg-pink-950' : 'bg-muted hover:bg-muted/80'}`}
+                    aria-label={isFavorite(currentFact.id) ? "Remove fact from favorites" : "Save fact to favorites"}
                   >
                     <Heart className={`w-4 h-4 ${isFavorite(currentFact.id) ? 'fill-hotpink text-hotpink' : 'text-muted-foreground'}`} />
                   </button>
@@ -93,6 +166,7 @@ export default function BeastlyBuddy() {
       </AnimatePresence>
 
       <motion.button
+        ref={triggerRef}
         onClick={() => {
           const opening = !open;
           setOpen(opening);
@@ -106,6 +180,8 @@ export default function BeastlyBuddy() {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center shadow-lg shadow-secondary/30 text-2xl"
+        aria-label={open ? "Close Beastly Buddy panel" : "Open Beastly Buddy fact assistant"}
+        aria-expanded={open}
       >
         <motion.span
           animate={open ? {} : { rotate: [0, -5, 5, -5, 0] }}

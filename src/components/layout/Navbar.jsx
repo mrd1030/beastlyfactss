@@ -1,10 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
 import { client } from '@/lib/sanity';
 import groq from 'groq';
+import MobileBackButton from './MobileBackButton';
+import DonateButton from '@/components/DonateButton';
+
+const dropdownAnimation = {
+  key: "navigation-dropdown",
+  initial: { opacity: 0, height: 0, y: -50, scale: 0.94 },
+  animate: { opacity: 1, height: 'auto', y: 0, scale: 1 },
+  exit: { opacity: 0, height: 0, y: -50, scale: 0.94 },
+  transition: { 
+    type: 'spring', 
+    stiffness: 420, 
+    damping: 18, 
+    height: { type: 'tween', duration: 0.28, ease: 'easeInOut' }
+  }
+};
+
+const getSecondaryLinkClass = (isActive) => {
+  return `flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-body font-semibold transition-all ${
+    isActive 
+      ? 'bg-primary text-primary-foreground' 
+      : 'text-foreground hover:text-foreground hover:bg-muted'
+  }`;
+};
 
 function XLogo({ className }) {
   return (
@@ -13,8 +36,6 @@ function XLogo({ className }) {
     </svg>
   );
 }
-import MobileBackButton from './MobileBackButton';
-import DonateButton from '@/components/DonateButton';
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
@@ -33,7 +54,9 @@ export default function Navbar() {
   const [navCategories, setNavCategories] = useState([]);
   const location = useLocation();
   const navigate = useNavigate();
-
+  
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     client.fetch(groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
@@ -49,15 +72,61 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
-  // FIX 1: Bulletproof Scroll-to-Top on Route Change
   useEffect(() => {
     setMobileOpen(false);
     setDigestOpen(false);
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [location]);
 
+  useEffect(() => {
+    if (!mobileOpen) return;
 
-  // Handles closing & scrolling if user clicks a link to the page they are already on
+    const handleOutsideInteraction = (event) => {
+      if (
+        menuRef.current && !menuRef.current.contains(event.target) &&
+        buttonRef.current && !buttonRef.current.contains(event.target)
+      ) {
+        setMobileOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        setMobileOpen(false);
+        buttonRef.current?.focus();
+        return;
+      }
+
+      if (event.key === 'Tab' && menuRef.current) {
+        const focusableSelectors = 'a[href], button, input, textarea, select, [tabindex]:not([tabindex="-1"])';
+        const focusableElements = menuRef.current.querySelectorAll(focusableSelectors);
+        if (focusableElements.length === 0) return;
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        if (event.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            event.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            event.preventDefault();
+          }
+        }
+      }
+    };
+
+    document.addEventListener('mousedown', handleOutsideInteraction);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideInteraction);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [mobileOpen]);
+
   const handleMenuNav = () => {
     setMobileOpen(false);
     setDigestOpen(false);
@@ -65,22 +134,24 @@ export default function Navbar() {
   };
 
   const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
-  // Detect child routes where mobile should show back button
   const isChildRoute = /^\/guides\/.+/.test(location.pathname);
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar-safe-top ${
-        scrolled
-          ? 'bg-card/95 backdrop-blur-xl shadow-sm border-b border-border'
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 navbar-safe-top"
     >
+      <div 
+        className={`absolute inset-0 -z-10 transition-all duration-300 ${
+          mobileOpen || scrolled
+            ? 'bg-card/75 backdrop-blur-xl shadow-sm border-b border-border'
+            : 'bg-transparent'
+        }`}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="relative flex items-center justify-between h-14">
-          {/* Logo — hidden on mobile child routes; replaced by back button */}
           <Link to="/" className={`items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
             <motion.span className="text-xl" whileHover={{ rotate: [0, -10, 10, 0] }} transition={{ duration: 0.4 }}>
               🦁
@@ -89,25 +160,20 @@ export default function Navbar() {
               Beastly<span className="text-secondary">Facts</span>
             </span>
           </Link>
-          {/* Mobile-only back button for child routes */}
+
           <div className={`md:hidden ${isChildRoute ? 'flex' : 'hidden'}`}>
             <MobileBackButton />
           </div>
 
-          {/* Mobile child route: centered page title */}
           {isChildRoute && (
             <div className="md:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none">
               <span className="font-display font-bold text-sm text-foreground">Care Guide</span>
             </div>
           )}
 
-          {/* Desktop nav — primary links */}
           <div className="hidden md:flex items-center gap-0.5">
             {primaryLinks.map(link => {
-              const isActive =
-                link.to === '/blog'
-                  ? isDigest
-                  : location.pathname === link.to;
+              const isActive = link.to === '/blog' ? isDigest : location.pathname === link.to;
               return (
                 <Link
                   key={link.to}
@@ -125,7 +191,6 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Right controls */}
           <div className="flex items-center gap-1.5">
             <button
               onClick={() => navigate('/search')}
@@ -150,12 +215,10 @@ export default function Navbar() {
               className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Toggle dark mode"
             >
-              {dark
-                ? <Sun className="w-4 h-4 text-sunny" />
-                : <Moon className="w-4 h-4 text-muted-foreground" />
-              }
+              {dark ? <Sun className="w-4 h-4 text-sunny" /> : <Moon className="w-4 h-4 text-muted-foreground" />}
             </button>
             <button
+              ref={buttonRef}
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Open menu"
@@ -166,19 +229,18 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Hamburger menu / Desktop Dropdown Panel */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0, y: -10 }}
-            animate={{ opacity: 1, height: 'auto', y: 0 }}
-            exit={{ opacity: 0, height: 0, y: -10 }}
-            transition={{ duration: 0.25, ease: 'easeInOut' }}
-            className="border-t border-border bg-card backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-xl"
+            {...dropdownAnimation}
+            ref={menuRef}
+            /* FIXED className: 
+               Replaced explicit color fallbacks entirely with 'bg-card/75' and 'text-foreground'.
+               This binds it completely to your global theme variables while maintaining the translucent frosted look.
+            */
+            className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
-            {/* Max height constraint for mobile viewport, cleanly scrolls if content overflows */}
             <div className="p-4 max-h-[55vh] md:max-h-[70vh] overflow-y-auto custom-scrollbar">
-              {/* Main vertical links */}
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
@@ -192,7 +254,7 @@ export default function Navbar() {
                     className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                       location.pathname === item.to
                         ? 'bg-primary text-primary-foreground'
-                        : 'text-foreground hover:bg-muted'
+                        : 'text-foreground hover:text-foreground hover:bg-muted'
                     }`}
                   >
                     {item.emoji && <span>{item.emoji}</span>}
@@ -200,16 +262,16 @@ export default function Navbar() {
                   </Link>
                 ))}
 
-                {/* Critter Digest Expandable */}
                 <button
                   onClick={() => setDigestOpen(!digestOpen)}
                   className={`w-full flex items-center justify-between gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
-                    isDigest ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
+                    isDigest ? 'bg-primary text-primary-foreground' : 'text-foreground hover:text-foreground hover:bg-muted'
                   }`}
                 >
                   <span className="flex items-center gap-3"><span>📰</span> Critter Digest</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
                 </button>
+                
                 {digestOpen && (
                   <div className="ml-4 my-1 space-y-0.5 border-l-2 border-border pl-3">
                     <Link to="/blog" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
@@ -223,7 +285,6 @@ export default function Navbar() {
                   </div>
                 )}
 
-                {/* Quizzes */}
                 <Link
                   to="/quiz"
                   onClick={handleMenuNav}
@@ -235,7 +296,6 @@ export default function Navbar() {
                 </Link>
               </div>
 
-              {/* Compact 2-Column Grid for Secondary Links */}
               <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
                   { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia' },
@@ -248,11 +308,7 @@ export default function Navbar() {
                     key={item.to}
                     to={item.to}
                     onClick={handleMenuNav}
-                    className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-body font-semibold transition-all ${
-                      location.pathname === item.to
-                        ? 'bg-primary text-primary-foreground'
-                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                    }`}
+                    className={getSecondaryLinkClass(location.pathname === item.to)}
                   >
                     <span className="text-sm">{item.emoji}</span>
                     <span className="truncate">{item.label}</span>
@@ -260,7 +316,6 @@ export default function Navbar() {
                 ))}
               </div>
 
-              {/* Social links */}
               <div className="flex gap-2 pt-3 mt-2 border-t border-border/60">
                 <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink text-xs font-display font-bold"
@@ -278,4 +333,5 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </motion.nav>
-  )}
+  );
+}
