@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
@@ -18,27 +18,20 @@ import DonateButton from '@/components/DonateButton';
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
-  { to: '/facts', label: 'Facts' },
   { to: '/search', label: 'Search' },
-  { to: '/pack', label: 'My Pack' },
+  { to: '/facts', label: 'Facts' },
 ];
 
 export default function Navbar() {
   const [dark, setDark] = useDarkMode();
   const { streak, recordVisit } = useDailyStreak();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [megaOpen, setMegaOpen] = useState(false);
   const [digestOpen, setDigestOpen] = useState(false);
-  const [quizOpen, setQuizOpen] = useState(false);
-  const [mobileDigestOpen, setMobileDigestOpen] = useState(false);
-  const [mobileQuizOpen, setMobileQuizOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [navCategories, setNavCategories] = useState([]);
   const location = useLocation();
   const navigate = useNavigate();
-  const megaRef = useRef(null);
-  const digestRef = useRef(null);
-  const quizRef = useRef(null);
+
 
   useEffect(() => {
     client.fetch(groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
@@ -56,23 +49,11 @@ export default function Navbar() {
 
   useEffect(() => {
     setMobileOpen(false);
-    setMegaOpen(false);
     setDigestOpen(false);
-    setQuizOpen(false);
   }, [location]);
 
-  // Close menus on outside click
-  useEffect(() => {
-    const handler = (e) => {
-      if (megaRef.current && !megaRef.current.contains(e.target)) setMegaOpen(false);
-      if (digestRef.current && !digestRef.current.contains(e.target)) setDigestOpen(false);
-      if (quizRef.current && !quizRef.current.contains(e.target)) setQuizOpen(false);
-    };
-    document.addEventListener('mousedown', handler);
-    return () => document.removeEventListener('mousedown', handler);
-  }, []);
 
-  const isEncyclopedia = location.pathname.startsWith('/encyclopedia') || location.pathname.startsWith('/guides');
+
   const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
   // Detect child routes where mobile should show back button
   const isChildRoute = /^\/guides\/.+/.test(location.pathname);
@@ -110,7 +91,7 @@ export default function Navbar() {
             </div>
           )}
 
-          {/* Desktop nav */}
+          {/* Desktop nav — primary links */}
           <div className="hidden md:flex items-center gap-0.5">
             {primaryLinks.map(link => (
               <Link
@@ -126,162 +107,6 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-
-            {/* Critter Digest dropdown */}
-            <div ref={digestRef} className="relative">
-              <button
-                onClick={() => { setDigestOpen(!digestOpen); setQuizOpen(false); setMegaOpen(false); }}
-                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
-                  isDigest ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                Critter Digest
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {digestOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute left-0 mt-2 w-56 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden z-50"
-                  >
-                    <div className="p-2">
-                      <Link to="/blog" className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/blog' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
-                        <span className="text-base w-5 text-center">📰</span> All Articles
-                      </Link>
-                      {navCategories.length > 0 && (
-                        <>
-                          <p className="text-xs font-display font-bold text-muted-foreground px-3 mt-2 mb-1 uppercase tracking-wide">Categories</p>
-                          {navCategories.map(cat => (
-                            <Link key={cat._id} to={`/category/${cat.slug}`}
-                              className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === `/category/${cat.slug}` ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
-                              <span className="text-base w-5 text-center">🗂️</span> {cat.title}
-                            </Link>
-                          ))}
-                        </>
-                      )}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* Quizzes dropdown */}
-            <div ref={quizRef} className="relative">
-              <button
-                onClick={() => { setQuizOpen(!quizOpen); setDigestOpen(false); setMegaOpen(false); }}
-                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
-                  location.pathname === '/quiz' || location.pathname === '/trivia'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                Quizzes
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${quizOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {quizOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute left-0 mt-2 w-48 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden z-50"
-                  >
-                    <div className="p-2">
-                      <Link to="/quiz" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/quiz' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
-                        <span className="text-base w-5 text-center">🎯</span> Daily Quiz
-                      </Link>
-                      <Link to="/trivia" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${location.pathname === '/trivia' ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'}`}>
-                        <span className="text-base w-5 text-center">🧠</span> Trivia Quiz
-                      </Link>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* More dropdown */}
-            <div ref={megaRef} className="relative">
-              <button
-                onClick={() => { setMegaOpen(!megaOpen); setDigestOpen(false); setQuizOpen(false); }}
-                className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all flex items-center gap-1 ${
-                  isEncyclopedia ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                }`}
-              >
-                More
-                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${megaOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <AnimatePresence>
-                {megaOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8, scale: 0.97 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: 8, scale: 0.97 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-2 w-56 bg-card border border-border rounded-2xl shadow-xl shadow-foreground/10 overflow-hidden"
-                  >
-                    <div className="p-3 pb-2">
-                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Learn</p>
-                      <div className="space-y-0.5">
-                        {[
-                          { to: '/encyclopedia', emoji: '🔍', label: 'Encyclopedia' },
-                          { to: '/guides', emoji: '📖', label: 'Care Guides' },
-                        ].map(item => (
-                          <Link key={item.to} to={item.to}
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
-                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
-                            }`}
-                          >
-                            <span className="text-base w-5 text-center">{item.emoji}</span>
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="px-3 pb-2">
-                      <p className="text-xs font-display font-bold text-muted-foreground px-1 mb-1.5 uppercase tracking-wide">Info</p>
-                      <div className="space-y-0.5">
-                        {[
-                          { to: '/about', emoji: '🦁', label: 'About' },
-                          { to: '/donate', emoji: '❤️', label: 'Support Us' },
-                          { to: '/contact', emoji: '💌', label: 'Contact' },
-                        ].map(item => (
-                          <Link key={item.to} to={item.to}
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-sm font-body font-semibold transition-all ${
-                              location.pathname === item.to ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
-                            }`}
-                          >
-                            <span className="text-base w-5 text-center">{item.emoji}</span>
-                            {item.label}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="px-3 pb-3 pt-1 border-t border-border mt-1">
-                      <div className="flex items-center gap-2 pt-2">
-                        <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink hover:bg-hotpink/20 transition-colors text-xs font-display font-bold"
-                        >
-                          <Instagram className="w-4 h-4" /> Instagram
-                        </a>
-                        <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer"
-                          className="flex-1 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground hover:bg-foreground/10 transition-colors text-xs font-display font-bold"
-                        >
-                          <XLogo className="w-4 h-4" /> X
-                        </a>
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
           </div>
 
           {/* Right controls */}
@@ -315,7 +140,7 @@ export default function Navbar() {
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-full hover:bg-muted transition-colors"
+              className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Open menu"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -324,22 +149,22 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Hamburger menu — shown on all screen sizes */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
+            className="border-t border-border bg-card/98 backdrop-blur-xl overflow-hidden"
           >
             <div className="p-4 max-h-[80vh] overflow-y-auto">
               {/* Main nav */}
               <div className="space-y-0.5">
                 {[
                   { to: '/', label: 'Home' },
-                  { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
                   { to: '/search', emoji: '🔎', label: 'Search' },
+                  { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
                 ].map(item => (
                   <Link
                     key={item.to}
@@ -358,17 +183,15 @@ export default function Navbar() {
 
                 {/* Critter Digest expandable */}
                 <button
-                  onClick={() => setMobileDigestOpen(!mobileDigestOpen)}
+                  onClick={() => setDigestOpen(!digestOpen)}
                   className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname.startsWith('/blog') || location.pathname.startsWith('/category')
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-foreground hover:bg-muted'
+                    isDigest ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
                   <span className="flex items-center gap-3"><span>📰</span> Critter Digest</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileDigestOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
                 </button>
-                {mobileDigestOpen && (
+                {digestOpen && (
                   <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
                     <Link to="/blog" className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
                       All Articles
@@ -381,35 +204,24 @@ export default function Navbar() {
                   </div>
                 )}
 
-                {/* Quizzes expandable */}
-                <button
-                  onClick={() => setMobileQuizOpen(!mobileQuizOpen)}
-                  className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
-                    location.pathname === '/quiz' || location.pathname === '/trivia'
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-foreground hover:bg-muted'
+                {/* Quizzes — single link */}
+                <Link
+                  to="/quiz"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-body font-semibold transition-all ${
+                    location.pathname === '/quiz' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
                   }`}
                 >
-                  <span className="flex items-center gap-3"><span>🎯</span> Quizzes</span>
-                  <ChevronDown className={`w-4 h-4 transition-transform ${mobileQuizOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {mobileQuizOpen && (
-                  <div className="ml-4 space-y-0.5 border-l-2 border-border pl-3">
-                    <Link to="/quiz" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
-                      🎯 Daily Quiz
-                    </Link>
-                    <Link to="/trivia" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
-                      🧠 Trivia Quiz
-                    </Link>
-                  </div>
-                )}
+                  <span>🎯</span> Quizzes
+                </Link>
 
                 {[
-                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia & Guides' },
                   { to: '/pack', emoji: '🐾', label: 'My Pack' },
                   { to: '/about', emoji: '🦁', label: 'About' },
                   { to: '/donate', emoji: '❤️', label: 'Support Us' },
                   { to: '/contact', emoji: '💌', label: 'Contact' },
+
                 ].map(item => (
                   <Link
                     key={item.to}

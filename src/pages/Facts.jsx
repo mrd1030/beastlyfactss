@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { motion } from 'framer-motion';
-import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useQuery } from '@tanstack/react-query';
 import { base44 } from '@/api/base44Client';
 import { facts as staticFacts, categories } from '@/lib/data/facts';
@@ -8,6 +8,15 @@ import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 
 const PAGE_SIZE = 36;
+
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 export default function Facts() {
   const params = new URLSearchParams(window.location.search);
@@ -17,22 +26,27 @@ export default function Facts() {
   const [activeCategory, setActiveCategory] = useState(initialCategory);
   const [selectedFact, setSelectedFact] = useState(null);
   const [page, setPage] = useState(1);
+  const [randomized, setRandomized] = useState(false);
+  const [randomOrder, setRandomOrder] = useState([]);
 
   const { data: dynamicFacts = [] } = useQuery({
     queryKey: ['dynamicFacts'],
     queryFn: () => base44.entities.DynamicFact.list('-created_date', 200),
   });
 
-  // Merge dynamic facts (newest first) + static facts
+  // Build numbered facts: static facts are oldest (#1 first), dynamic on top but numbered after static
   const allFacts = useMemo(() => {
-    const dynamic = dynamicFacts.map((f, i) => ({ ...f, isDynamic: true }));
-    return [...dynamic, ...staticFacts];
+    // Static facts: oldest = #1, so reverse them for numbering
+    const staticNumbered = [...staticFacts].reverse().map((f, i) => ({ ...f, factNumber: i + 1 }));
+    // Dynamic facts numbered after static
+    const dynamic = dynamicFacts.map((f, i) => ({ ...f, isDynamic: true, factNumber: staticNumbered.length + i + 1 }));
+    // Display: dynamic first (newest), then static oldest→newest
+    return [...dynamic, ...staticNumbered.reverse()];
   }, [dynamicFacts]);
 
   const allCategories = ['All', ...categories.map(c => c.name)];
 
   const filtered = useMemo(() => {
-    
     return allFacts.filter(f => {
       const matchesCategory = activeCategory === 'All' || f.category === activeCategory;
       const matchesSearch = !search ||
@@ -43,17 +57,41 @@ export default function Facts() {
     });
   }, [allFacts, search, activeCategory]);
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const displayFacts = useMemo(() => {
+    if (randomized && randomOrder.length > 0) {
+      // Apply random order to filtered set
+      const ids = new Set(filtered.map(f => f.id || f.factNumber));
+      return randomOrder.filter(f => ids.has(f.id || f.factNumber));
+    }
+    return filtered;
+  }, [filtered, randomized, randomOrder]);
+
+  const handleRandomize = useCallback(() => {
+    if (!randomized) {
+      setRandomOrder(shuffleArray(filtered));
+      setRandomized(true);
+    } else {
+      setRandomized(false);
+      setRandomOrder([]);
+    }
+    setPage(1);
+  }, [randomized, filtered]);
+
+  const totalPages = Math.ceil(displayFacts.length / PAGE_SIZE);
+  const paginated = displayFacts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat);
     setPage(1);
+    setRandomized(false);
+    setRandomOrder([]);
   };
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
     setPage(1);
+    setRandomized(false);
+    setRandomOrder([]);
   };
 
   return (
@@ -71,16 +109,28 @@ export default function Facts() {
             </p>
           </motion.div>
 
-          {/* Search */}
-          <div className="relative mt-6 max-w-md">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-            <input
-              type="text"
-              placeholder="Search facts..."
-              value={search}
-              onChange={handleSearchChange}
-              className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
-            />
+          {/* Search + Randomize */}
+          <div className="flex gap-2 mt-6 max-w-md">
+            <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search facts..."
+                value={search}
+                onChange={handleSearchChange}
+                className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
+              />
+            </div>
+            <button
+              onClick={handleRandomize}
+              className={`flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-display font-bold border transition-all flex-shrink-0 ${
+                randomized
+                  ? 'bg-secondary text-secondary-foreground border-secondary'
+                  : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'
+              }`}
+            >
+              <Shuffle className="w-3.5 h-3.5" /> Randomize
+            </button>
           </div>
 
           {/* Category chips */}
@@ -105,17 +155,23 @@ export default function Facts() {
       {/* Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
         <p className="text-xs text-muted-foreground font-body mb-6">
-          {filtered.length} facts found
+          {displayFacts.length} facts found
+          {randomized && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
           {totalPages > 1 && ` · Page ${page} of ${totalPages}`}
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {paginated.map((fact, i) => (
-            <FactCard key={fact.id || `d-${i}`} fact={fact} index={i} onOpen={setSelectedFact} />
+            <div key={fact.id || `d-${i}`} className="relative">
+              <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
+                #{fact.factNumber}
+              </span>
+              <FactCard fact={fact} index={i} onOpen={setSelectedFact} />
+            </div>
           ))}
         </div>
 
-        {filtered.length === 0 && (
+        {displayFacts.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
             <p className="font-display font-bold text-foreground">No facts found!</p>
@@ -134,7 +190,7 @@ export default function Facts() {
               <ChevronLeft className="w-4 h-4" /> Previous
             </button>
             <div className="flex gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
+              {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => i + 1).map(p => (
                 <button
                   key={p}
                   onClick={() => { setPage(p); window.scrollTo({ top: 0, behavior: 'smooth' }); }}

@@ -10,7 +10,6 @@ import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
 import Home from '@/pages/Home';
 import Facts from '@/pages/Facts';
-import Guides from '@/pages/Guides';
 import Quiz from '@/pages/Quiz';
 import Pack from '@/pages/Pack';
 import Encyclopedia from '@/pages/Encyclopedia';
@@ -19,7 +18,6 @@ import GuideDetail from '@/pages/GuideDetail';
 import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 import AnimalFacts from '@/pages/AnimalFacts';
-import TriviaQuiz from '@/pages/TriviaQuiz';
 import DonateSuccess from '@/pages/DonateSuccess';
 import DonateCancel from '@/pages/DonateCancel';
 import Donate from '@/pages/Donate';
@@ -29,6 +27,7 @@ import AnalyticsTracker from '@/components/AnalyticsTracker';
 import Categories from '@/pages/Categories';
 import CategoryPage from '@/pages/CategoryPage';
 import Search from '@/pages/Search';
+import { Navigate } from 'react-router-dom';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -56,7 +55,7 @@ const AuthenticatedApp = () => {
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/facts" element={<Facts />} />
-        <Route path="/guides" element={<Guides />} />
+        <Route path="/guides" element={<Navigate to="/encyclopedia?tab=guides" replace />} />
         <Route path="/guides/:id" element={<GuideDetail />} />
         <Route path="/encyclopedia" element={<Encyclopedia />} />
         <Route path="/blog" element={<Blog />} />
@@ -65,7 +64,7 @@ const AuthenticatedApp = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/animal-facts" element={<AnimalFacts />} />
-        <Route path="/trivia" element={<TriviaQuiz />} />
+        <Route path="/trivia" element={<Navigate to="/quiz?tab=trivia" replace />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/donate/success" element={<DonateSuccess />} />
         <Route path="/donate/cancel" element={<DonateCancel />} />
