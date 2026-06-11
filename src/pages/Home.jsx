@@ -18,12 +18,10 @@ export default function Home() {
       {/* SEO: Meta Tags */}
       <Helmet>
         <title>Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes</title>
-        <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, play engaging wildlife quizzes, and dive deep into the wonders of the animal kingdom. Learn today!" />
+        <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and dive intothe animal kingdom. Learn today!" />
       </Helmet>
 
-      {/* SEO: Proper H1 Tag */}
-      <h1 className="sr-only">Beastly Facts: The Ultimate Destination for Animal Trivia and Wildlife Guides</h1>
-
+      
       <HeroSection />
       
     {/* Descriptive content to fix "0 word count" issue */}
