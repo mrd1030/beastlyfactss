@@ -6,13 +6,38 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   const { isFavorite, toggleFavorite } = useFavoritesCtx();
-  // Related posts: same animalType/category, excluding current, up to 5
+
+  // Related posts logic fixed to handle both Sanity objects and Static strings
   const related = useMemo(() => {
+    // 1. Filter out the post we are currently reading
     const others = allPosts.filter(p => (p._id || p.id) !== (currentPost._id || currentPost.id));
-    const sameCategory = others.filter(p =>
-      p.category === currentPost.category || p.animalType === currentPost.animalType
-    );
-    const pool = sameCategory.length >= 3 ? sameCategory : others;
+
+    // 2. Helper function to safely extract category/animal strings from both Sanity & Static data
+    const getSafeString = (field) => {
+      if (!field) return null;
+      if (typeof field === 'string') return field.toLowerCase();
+      if (field.title) return field.title.toLowerCase(); // Extracts from Sanity object
+      return null;
+    };
+
+    const currentCat = getSafeString(currentPost.category);
+    const currentAnimal = getSafeString(currentPost.animalType);
+
+    // 3. Find matching posts
+    const sameCategory = others.filter(p => {
+      const pCat = getSafeString(p.category);
+      const pAnimal = getSafeString(p.animalType);
+      
+      // Match if either category or animalType aligns
+      return (currentCat && pCat === currentCat) || (currentAnimal && pAnimal === currentAnimal);
+    });
+
+    // 4. If we don't have enough related posts, fallback to 'others'
+    let pool = sameCategory.length >= 2 ? sameCategory : others;
+
+    // 5. Shuffle the array so it doesn't look completely static every time
+    pool = [...pool].sort(() => 0.5 - Math.random());
+
     return pool.slice(0, 5);
   }, [allPosts, currentPost]);
 
@@ -22,7 +47,10 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   }, [currentPost._id || currentPost.id]);
 
   return (
-    <div className="space-y-5">
+    // ✅ FIX: Added `sticky top-24 self-start` to prevent header cut-off. 
+    // You can adjust `top-24` to `top-28` or `top-32` if your navbar is taller!
+    <div className="space-y-5 sticky top-28 self-start">
+      
       {/* Subscribe */}
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe — it's free</h3>
