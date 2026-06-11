@@ -66,25 +66,32 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
     return <div className="space-y-5 animate-pulse opacity-50">Loading...</div>;
   }
 
-// Smart icon guesser
+// Smart icon guesser using your imported 'facts' data
   const getPostIcon = (post) => {
-    // 1. If you explicitly set an emoji in the data, always use that first!
+    // 1. If you explicitly set an emoji in the CMS, always use that first!
     if (post.emoji) return post.emoji;
 
-    // 2. Combine the title and category into one string so we can search it
-    const searchString = `${post.title} ${post.category?.title || post.category} ${post.animalType?.title || post.animalType}`.toLowerCase();
+    // 2. Grab the text strings we want to search through, safely converted to lowercase
+    const postTitle = (post.title || '').toLowerCase();
+    const postCategory = (post.category?.title || post.category || '').toLowerCase();
+    const postAnimal = (post.animalType?.title || post.animalType || '').toLowerCase();
 
-    // 3. Guess the animal based on keywords
-    if (searchString.includes('dog') || searchString.includes('puppy')) return '🐕';
-    if (searchString.includes('bird') || searchString.includes('crow')) return '🦅';
-    if (searchString.includes('shrimp') || searchString.includes('ocean') || searchString.includes('fish')) return '🦐';
-    if (searchString.includes('badger')) return '🦡';
-    if (searchString.includes('reptile') || searchString.includes('lizard') || searchString.includes('snake')) return '🦎';
-    
-    // 4. The ultimate fallback if we have no idea what it is
-    return '🐾'; 
+    // 3. Look through your imported 'facts' array for a match
+    const matchedFact = facts.find((fact) => {
+      // Assuming your fact objects have an 'animal' property (e.g., animal: 'Honey Badger')
+      const factAnimalName = (fact.animal || '').toLowerCase();
+      
+      // If the fact's animal name shows up in the post's title, category, or animalType, it's a match!
+      return (
+        postTitle.includes(factAnimalName) || 
+        postCategory.includes(factAnimalName) || 
+        postAnimal.includes(factAnimalName)
+      );
+    });
+
+    // 4. Return the emoji from the matched fact, or fallback to a paw print if nothing matches
+    return matchedFact?.emoji || '🐾';
   };
-
 
   return (
     <div className="space-y-5">
