@@ -66,6 +66,26 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
     return <div className="space-y-5 animate-pulse opacity-50">Loading...</div>;
   }
 
+// Smart icon guesser
+  const getPostIcon = (post) => {
+    // 1. If you explicitly set an emoji in the data, always use that first!
+    if (post.emoji) return post.emoji;
+
+    // 2. Combine the title and category into one string so we can search it
+    const searchString = `${post.title} ${post.category?.title || post.category} ${post.animalType?.title || post.animalType}`.toLowerCase();
+
+    // 3. Guess the animal based on keywords
+    if (searchString.includes('dog') || searchString.includes('puppy')) return '🐕';
+    if (searchString.includes('bird') || searchString.includes('crow')) return '🦅';
+    if (searchString.includes('shrimp') || searchString.includes('ocean') || searchString.includes('fish')) return '🦐';
+    if (searchString.includes('badger')) return '🦡';
+    if (searchString.includes('reptile') || searchString.includes('lizard') || searchString.includes('snake')) return '🦎';
+    
+    // 4. The ultimate fallback if we have no idea what it is
+    return '🐾'; 
+  };
+
+
   return (
     <div className="space-y-5">
       {/* ... KEEP YOUR EXISTING SUBSCRIBE, RELATED, AND FACT JSX BELOW ... */}
@@ -88,7 +108,8 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
               className="w-full text-left group"
             >
               <div className="flex items-start gap-2.5">
-                <span className="text-lg flex-shrink-0 mt-0.5">{post.emoji || '🦎'}</span>
+                {/* New */}
+                <span className="text-lg flex-shrink-0 mt-0.5">{getPostIcon(post)}</span>
                 <div className="min-w-0">
                   <p className="text-xs font-body text-muted-foreground group-hover:text-foreground transition-colors leading-snug line-clamp-2 mb-1">
                     {post.title}
