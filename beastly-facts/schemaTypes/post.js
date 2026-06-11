@@ -125,6 +125,7 @@ export default defineType({
         { type: 'comparisonTable' },
         { type: 'affiliateDisclosure' },
         { type: 'sourcesBlock' },
+        { type: 'funFact' },
       ],
     }),
   ],

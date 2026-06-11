@@ -1,8 +1,17 @@
 import React from 'react';
 import { PortableText } from '@portabletext/react';
-import { Info, CheckCircle2, XCircle, BookOpen } from 'lucide-react';
+import { Info, CheckCircle2, XCircle, BookOpen, Lightbulb } from 'lucide-react';
 import { urlFor } from '../lib/sanityImage';
 import PortableTextImage from './PortableTextImage';
+
+const funFactComponents = {
+  block: {
+    normal: ({ children }) => <p className="mb-3 last:mb-0 text-foreground">{children}</p>,
+  },
+  list: {
+    bullet: ({ children }) => <ul className="list-disc pl-5 mb-3 space-y-1 text-foreground">{children}</ul>,
+  },
+};
 
 const components = {
   marks: {
@@ -38,74 +47,74 @@ const components = {
       />
     ),
 
-sourcesBlock: ({ value }) => {
-      if (!value) return null;
+      sourcesBlock: ({ value }) => {
+            if (!value) return null;
 
-      const { heading, sources, showMoreSection, moreText, moreUrl } = value;
+            const { heading, sources, showMoreSection, moreText, moreUrl } = value;
 
-      return (
-        <div className="my-10 border border-border rounded-2xl p-6 bg-card shadow-sm font-body">
-          {/* Section Header */}
-          <h3 className="font-display font-bold text-xl text-foreground mb-4 flex items-center gap-2">
-            <BookOpen className="w-5 h-5 text-secondary flex-shrink-0" />
-            {heading || 'Sources & Further Reading'}
-          </h3>
+            return (
+              <div className="my-10 border border-border rounded-2xl p-6 bg-card shadow-sm font-body">
+                {/* Section Header */}
+                <h3 className="font-display font-bold text-xl text-foreground mb-4 flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-secondary flex-shrink-0" />
+                  {heading || 'Sources & Further Reading'}
+                </h3>
 
-          {/* List of individual sources */}
-          {sources && sources.length > 0 ? (
-            <ul className="space-y-4 pl-0 list-none">
-              {sources.map((source, i) => (
-                <li key={source._key || i} className="text-sm leading-relaxed text-muted-foreground">
-                  <div className="flex items-start gap-2">
-                    <span className="text-secondary mt-1 flex-shrink-0">•</span>
-                    <div>
-                      <a
-                        href={source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-secondary font-semibold underline underline-offset-2 hover:text-secondary/80 transition-colors inline-flex items-center"
-                      >
-                        {source.title}
-                      </a>
-                      
-                      {/* Optional metadata badge for source type */}
-                      {source.sourceType && (
-                        <span className="ml-2 text-[10px] uppercase tracking-wider font-semibold bg-muted text-muted-foreground px-1.5 py-0.5 rounded border border-border">
-                          {source.sourceType}
-                        </span>
-                      )}
+                {/* List of individual sources */}
+                {sources && sources.length > 0 ? (
+                  <ul className="space-y-4 pl-0 list-none">
+                    {sources.map((source, i) => (
+                      <li key={source._key || i} className="text-sm leading-relaxed text-muted-foreground">
+                        <div className="flex items-start gap-2">
+                          <span className="text-secondary mt-1 flex-shrink-0">•</span>
+                          <div>
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-secondary font-semibold underline underline-offset-2 hover:text-secondary/80 transition-colors inline-flex items-center"
+                            >
+                              {source.title}
+                            </a>
+                            
+                            {/* Optional metadata badge for source type */}
+                            {source.sourceType && (
+                              <span className="ml-2 text-[10px] uppercase tracking-wider font-semibold bg-muted text-muted-foreground px-1.5 py-0.5 rounded border border-border">
+                                {source.sourceType}
+                              </span>
+                            )}
 
-                      {/* Optional source description text */}
-                      {source.description && (
-                        <p className="text-xs text-muted-foreground/80 mt-1 italic">
-                          {source.description}
-                        </p>
-                      )}
-                    </div>
+                            {/* Optional source description text */}
+                            {source.description && (
+                              <p className="text-xs text-muted-foreground/80 mt-1 italic">
+                                {source.description}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm italic text-muted-foreground">No sources listed.</p>
+                )}
+
+                {/* Optional Footer Link Box */}
+                {showMoreSection && moreUrl && (
+                  <div className="mt-6 pt-4 border-t border-border text-sm">
+                    <a
+                      href={moreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-secondary font-display font-semibold hover:underline inline-flex items-center gap-1"
+                    >
+                      {moreText || 'Explore more'} →
+                    </a>
                   </div>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="text-sm italic text-muted-foreground">No sources listed.</p>
-          )}
-
-          {/* Optional Footer Link Box */}
-          {showMoreSection && moreUrl && (
-            <div className="mt-6 pt-4 border-t border-border text-sm">
-              <a
-                href={moreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary font-display font-semibold hover:underline inline-flex items-center gap-1"
-              >
-                {moreText || 'Explore more'} →
-              </a>
-            </div>
-          )}
-        </div>
-      );
-    },
+                )}
+              </div>
+            );
+          },
 
 
     productRecommendation: ({ value }) => {
@@ -216,6 +225,28 @@ sourcesBlock: ({ value }) => {
         </p>
       </div>
     ),
+  
+
+    funFact: ({ value }) => {
+      if (!value) return null;
+
+      return (
+        <div className="my-8 border-2 border-orange/20 bg-orange/5 rounded-2xl p-6 shadow-sm font-body relative overflow-hidden">
+          {/* Subtle colored accent strip along the left side */}
+          <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-orange" />
+          
+          <h4 className="font-display font-bold text-lg text-orange mb-3 flex items-center gap-2 pl-2">
+            <Lightbulb className="w-5 h-5 text-orange flex-shrink-0" />
+            {value.heading || 'Fun Fact!'}
+          </h4>
+          
+          {/* ✅ Pass the block array to a nested PortableText component */}
+          <div className="text-sm leading-relaxed text-foreground pl-2">
+            <PortableText value={value.text} components={funFactComponents} />
+          </div>
+        </div>
+      );
+    },
   },
 };
 

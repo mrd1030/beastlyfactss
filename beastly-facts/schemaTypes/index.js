@@ -9,7 +9,7 @@ import comparisonTable from './comparisonTable'
 import affiliateDisclosure from './affiliateDisclosure'
 import sourceItem from './objects/sourceItem'
 import sourcesBlock from './blocks/sourcesBlock'
-
+import funFact from './blocks/funFact'
 
 export const schemaTypes = [
   post,
@@ -22,4 +22,5 @@ export const schemaTypes = [
   affiliateDisclosure,
   sourceItem,
   sourcesBlock,
+  funFact,
 ]
