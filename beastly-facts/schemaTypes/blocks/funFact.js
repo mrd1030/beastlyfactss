@@ -8,7 +8,7 @@ export default {
       name: 'heading',
       title: 'Heading',
       type: 'string',
-      initialValue: 'Fun Fact! 💡',
+      initialValue: 'Fun Fact!',
     },
     {
       name: 'text',
