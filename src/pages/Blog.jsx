@@ -349,9 +349,17 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             )}
           </div>
 
-          <div className="lg:sticky lg:top-6">
-            <PostSidebar allPosts={allPosts} currentPost={post} onSelectPost={(p) => { onSelectPost(p); window.scrollTo({ top: 0, behavior: 'smooth' }); }} />
-          </div>
+         {/* On your Blog Page Layout */}
+<div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4">
+  <PostSidebar 
+    allPosts={allPosts} 
+    currentPost={post} 
+    onSelectPost={(p) => { 
+      onSelectPost(p); 
+      window.scrollTo({ top: 0, behavior: 'smooth' }); 
+    }} 
+  />
+</div>
         </div>
       </div>
     </motion.div>
