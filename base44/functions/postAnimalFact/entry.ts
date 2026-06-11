@@ -19,17 +19,20 @@ Deno.serve(async (req) => {
     const base44 = createClientFromRequest(req);
     console.log('postAnimalFact started');
 
-    // Fetch facts from remote source
+// Fetch facts from remote source
     const factsRes = await fetch(FACTS_URL);
-    const facts = await factsRes.json();
-    console.log('Total facts loaded:', facts.length);
+    const fullData = await factsRes.json(); // This is the object: { facts: [...], categories: [...] }
+    
+    // Explicitly grab the array
+    const allFacts = fullData.facts; 
+    console.log('Total facts loaded:', allFacts.length);
 
-    // Read posted history (stored as fact id as string in fact_title field)
+    // Read posted history
     const postedRecords = await base44.asServiceRole.entities.PostedFact.list('-created_date', 1000);
     const postedIds = new Set(postedRecords.map(r => Number(r.fact_title)));
 
-    // Filter to unposted facts
-    let unposted = facts.filter(f => !postedIds.has(f.id));
+    // Filter to unposted facts (Use allFacts instead of facts)
+    let unposted = allFacts.filter(f => !postedIds.has(f.id));
 
     // All facts have been posted — reset cycle
     if (unposted.length === 0) {
@@ -37,7 +40,7 @@ Deno.serve(async (req) => {
       for (const r of postedRecords) {
         await base44.asServiceRole.entities.PostedFact.delete(r.id);
       }
-      unposted = facts;
+      unposted = allFacts; // Use allFacts here, not the full object
     }
 
     const chosen = unposted[Math.floor(Math.random() * unposted.length)];
