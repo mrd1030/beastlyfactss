@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 /**
  * Usage: node scripts/generate-facts.js [count]
- * Generates new animal facts via OpenAI and appends them to src/lib/data/facts.js
+ * Generates new animal facts via xAI Grok and appends them to src/lib/data/facts.js
  *
- * Requires: OPENAI_API_KEY environment variable
- *   export OPENAI_API_KEY=sk-...
+ * Requires: XAI_API_KEY environment variable
  */
 
+import 'dotenv/config';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -14,28 +14,26 @@ import process from 'process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FACTS_FILE = path.resolve(__dirname, '../src/lib/data/facts.js');
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const XAI_API_KEY = process.env.XAI_API_KEY;
 const COUNT = parseInt(process.argv[2]) || 5;
 
-if (!OPENAI_API_KEY) {
-  console.error('❌  Missing OPENAI_API_KEY environment variable.');
+if (!XAI_API_KEY) {
+  console.error('❌  Missing XAI_API_KEY environment variable.');
   process.exit(1);
 }
 
 // ---------------------------------------------------------------------------
-// Read existing facts.js and extract current facts array
+// Read existing facts
 // ---------------------------------------------------------------------------
 function readCurrentFacts() {
   const source = fs.readFileSync(FACTS_FILE, 'utf-8');
 
-  // Extract every { id: N, ... } object from the array
   const idMatches = source.match(/id:\s*(\d+)/g) || [];
   const maxId = idMatches.reduce((max, m) => {
     const n = parseInt(m.replace('id:', '').trim());
     return n > max ? n : max;
   }, 0);
 
-  // Extract all title values to avoid duplicates
   const titleMatches = [...source.matchAll(/title:\s*"([^"]+)"/g)];
   const existingTitles = titleMatches.map(m => m[1]);
 
@@ -43,73 +41,74 @@ function readCurrentFacts() {
 }
 
 // ---------------------------------------------------------------------------
-// Call OpenAI chat completions
+// Call xAI Grok API
 // ---------------------------------------------------------------------------
 async function generateFacts(existingTitles, count) {
-  const prompt = `Generate exactly ${count} unique, surprising, and scientifically accurate animal facts for a wildlife/pet education website called Beastly Facts.
+  const prompt = `Generate exactly ${count} unique, surprising, and scientifically accurate animal facts for Beastly Facts.
 
 Rules:
 - Each fact must be about a DIFFERENT animal
-- Do NOT reuse any of these already-published titles: ${existingTitles.slice(-60).join(', ')}
-- Facts should be genuinely surprising and written in an engaging, fun tone
-- Keep each fact to 2-3 sentences max
-- Choose animals from a wide variety: mammals, birds, reptiles, ocean creatures, insects, exotic pets, etc.
-- Categories must be exactly one of: Mammals, Birds, Reptiles, Ocean, Weird & Wonderful, Dogs & Cats
+- Do NOT reuse any of these titles: ${existingTitles.slice(-80).join(' | ')}
+- Keep each fact to 2-3 sentences
+- Use one of these categories exactly: Mammals, Birds, Reptiles, Ocean, Weird & Wonderful, Dogs & Cats
+- Tone: engaging and fun, but factual
 
-Respond with ONLY a raw JSON array (no markdown, no explanation) of ${count} objects, each with keys:
-  title (string, 2-5 words), animal (string), emoji (string, one emoji), category (string), fact (string)`;
+Respond with ONLY a raw JSON array (no markdown) of objects with these exact keys:
+title, animal, emoji, category, fact`;
 
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const res = await fetch('https://api.x.ai/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${OPENAI_API_KEY}`,
+      'Authorization': `Bearer ${XAI_API_KEY}`,
     },
     body: JSON.stringify({
-      model: 'gpt-4o-mini',
-      temperature: 0.9,
+      model: 'grok-4.3',           // ← Use a real xAI model
+      temperature: 0.85,
       messages: [{ role: 'user', content: prompt }],
+      // Optional but recommended for cleaner output:
+      response_format: { type: "json_object" }   // xAI supports this
     }),
   });
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`OpenAI error ${res.status}: ${err}`);
+    throw new Error(`xAI API error ${res.status}: ${err}`);
   }
 
   const json = await res.json();
-  const text = json.choices[0].message.content.trim();
+  let text = json.choices[0].message.content.trim();
 
-  // Strip optional markdown code fences
-  const cleaned = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
-  return JSON.parse(cleaned);
+  // Clean up possible markdown fences
+  text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+
+  return JSON.parse(text);
 }
 
 // ---------------------------------------------------------------------------
-// Append new facts to the source file
+// Append to facts.js
 // ---------------------------------------------------------------------------
 function appendFacts(source, newFacts, startId) {
   const factsWithIds = newFacts.map((f, i) => ({
-    id: startId + i,
+    id: startId + i + 1,
     title: f.title,
     emoji: f.emoji,
     animal: f.animal,
     category: f.category,
     fact: f.fact,
-    image: f.emoji,
+    image: f.emoji, // You may want to change this later
   }));
 
   const jsLines = factsWithIds.map(f =>
     `  { id: ${f.id}, title: ${JSON.stringify(f.title)}, emoji: ${JSON.stringify(f.emoji)}, animal: ${JSON.stringify(f.animal)}, category: ${JSON.stringify(f.category)}, fact: ${JSON.stringify(f.fact)}, image: ${JSON.stringify(f.image)} }`
   ).join(',\n');
 
-  // Find the closing bracket of the facts array and insert before it
   const insertPoint = source.lastIndexOf('];');
   if (insertPoint === -1) throw new Error('Could not find closing ]; in facts.js');
 
   const updated =
     source.slice(0, insertPoint) +
-    ',\n' + jsLines + ',\n' +
+    ',\n' + jsLines + '\n' +
     source.slice(insertPoint);
 
   return { updated, factsWithIds };
@@ -123,14 +122,16 @@ function appendFacts(source, newFacts, startId) {
   const { source, maxId, existingTitles } = readCurrentFacts();
   console.log(`   Found ${existingTitles.length} existing facts (max id: ${maxId})`);
 
-  console.log(`\n✨  Generating ${COUNT} new facts via OpenAI...`);
+  console.log(`\n✨  Generating ${COUNT} new facts via xAI Grok...`);
   const newFacts = await generateFacts(existingTitles, COUNT);
   console.log(`   Received ${newFacts.length} facts.`);
 
-  const { updated, factsWithIds } = appendFacts(source, newFacts, maxId + 1);
+  const { updated, factsWithIds } = appendFacts(source, newFacts, maxId);
 
   fs.writeFileSync(FACTS_FILE, updated, 'utf-8');
 
   console.log('\n✅  facts.js updated! New facts added:');
-  factsWithIds.forEach(f => console.log(`   #${f.id} [${f.category}] ${f.emoji} ${f.title} — ${f.animal}`));
+  factsWithIds.forEach(f => 
+    console.log(`   #${f.id} [${f.category}] ${f.emoji} ${f.title} — ${f.animal}`)
+  );
 })();
