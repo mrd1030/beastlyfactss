@@ -3,11 +3,13 @@ import post from './post'
 import author from './author'
 import category from './category'
 import blockContent from './blockContent'
-
 import productRecommendation from './productRecommendation'
 import prosCons from './prosCons'
 import comparisonTable from './comparisonTable'
 import affiliateDisclosure from './affiliateDisclosure'
+import sourceItem from './objects/sourceItem'
+import sourcesBlock from './blocks/sourcesBlock'
+
 
 export const schemaTypes = [
   post,
@@ -18,4 +20,6 @@ export const schemaTypes = [
   prosCons,
   comparisonTable,
   affiliateDisclosure,
+  sourceItem,
+  sourcesBlock,
 ]

@@ -124,6 +124,7 @@ export default defineType({
         { type: 'prosCons' },
         { type: 'comparisonTable' },
         { type: 'affiliateDisclosure' },
+        { type: 'sourcesBlock' },
       ],
     }),
   ],
