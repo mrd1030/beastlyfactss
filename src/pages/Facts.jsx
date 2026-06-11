@@ -1,9 +1,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
-import { useQuery } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
-import { facts as staticFacts, categories } from '@/lib/data/facts';
+import { facts, categories } from '@/lib/data/facts';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 
@@ -29,38 +27,7 @@ export default function Facts() {
   const [randomized, setRandomized] = useState(false);
   const [randomOrder, setRandomOrder] = useState([]);
 
-  const { data: dynamicFacts = [] } = useQuery({
-    queryKey: ['dynamicFacts'],
-    queryFn: () => base44.entities.DynamicFact.list('-created_date', 200),
-  });
-
-  // Build numbered facts:
-  // Static facts: id 1 = oldest = #1
-  // Dynamic facts: numbered after static (oldest dynamic = staticCount+1, newest = highest number)
-  // Display order: newest 8 dynamic facts first (no number badge shown differently), then ALL facts #1 onwards
-  const allFacts = useMemo(() => {
-    const staticCount = staticFacts.length;
-    // Static facts numbered #1 (oldest) upward — staticFacts array is oldest-first by id
-    const staticNumbered = staticFacts.map((f, i) => ({ ...f, factNumber: i + 1 }));
-    // Dynamic facts: list comes back newest-first from API (-created_date)
-    // Assign numbers: oldest dynamic = staticCount+1, so reverse to assign then re-reverse
-    const dynamicOldestFirst = [...dynamicFacts].reverse();
-    const dynamicNumbered = dynamicOldestFirst.map((f, i) => ({
-      ...f,
-      isDynamic: true,
-      factNumber: staticCount + i + 1,
-    }));
-    // newest 8 dynamic facts (already newest-first in original dynamicFacts)
-    const newest8 = dynamicNumbered.slice().reverse().slice(0, 8);
-    // All facts in numbered order #1 → highest
-    const allNumbered = [...staticNumbered, ...dynamicNumbered];
-    // Final display: newest 8 first (tagged), then full numbered list
-    const newest8Ids = new Set(newest8.map(f => f.id || f.factNumber));
-    return [
-      ...newest8.map(f => ({ ...f, isNewest: true })),
-      ...allNumbered.filter(f => !newest8Ids.has(f.id || f.factNumber)),
-    ];
-  }, [dynamicFacts]);
+  const allFacts = useMemo(() => facts.map((f, i) => ({ ...f, factNumber: i + 1 })), []);
 
   const allCategories = ['All', ...categories.map(c => c.name)];
 
@@ -180,16 +147,10 @@ export default function Facts() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {paginated.map((fact, i) => (
-            <div key={fact.id || `d-${fact.factNumber}-${i}`} className="relative">
-              {fact.isNewest ? (
-                <span className="absolute top-2 left-2 z-10 bg-secondary text-secondary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
-                  NEW ✨
-                </span>
-              ) : (
-                <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
-                  #{fact.factNumber}
-                </span>
-              )}
+            <div key={fact.id} className="relative">
+              <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
+                #{fact.factNumber}
+              </span>
               <FactCard fact={fact} index={i} onOpen={setSelectedFact} />
             </div>
           ))}

@@ -4,8 +4,6 @@ import { Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
-import { useQuery } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
@@ -14,14 +12,7 @@ export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
 
-  const { data: dynamicFacts = [] } = useQuery({
-    queryKey: ['dynamicFacts'],
-    queryFn: () => base44.entities.DynamicFact.list('-created_date', 200),
-  });
-
-  // Combine static + dynamic facts, then filter to saved ones
-  const allFacts = [...dynamicFacts, ...facts];
-  const savedFacts = allFacts.filter(f => favorites.includes(f.id || f._id));
+  const savedFacts = facts.filter(f => favorites.includes(f.id));
 
   return (
     <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
