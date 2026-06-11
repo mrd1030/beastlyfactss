@@ -47,6 +47,8 @@ export default function Facts() {
     const dynamicOldestFirst = [...dynamicFacts].reverse();
     const dynamicNumbered = dynamicOldestFirst.map((f, i) => ({
       ...f,
+      // DB records nest fields inside `data` — flatten them out
+      ...(f.data || {}),
       isDynamic: true,
       factNumber: staticCount + i + 1,
     }));
