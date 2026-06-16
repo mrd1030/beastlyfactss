@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,20 @@ import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { base44 } from '@/api/base44Client';
+
+function useDocumentTitle(title) {
+  useEffect(() => {
+    document.title = title;
+  }, [title]);
+}
+
+function useMetaDescription(description) {
+  useEffect(() => {
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", description);
+  }, [description]);
+}
+
 
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
@@ -62,6 +76,18 @@ export default function Encyclopedia() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [dogSize, setDogSize] = useState('All Sizes');
   const [activeSubtype, setActiveSubtype] = useState(null);
+
+useDocumentTitle(
+    activeCategory === 'All' 
+      ? `Encyclopedia & Care Guides | Beastly Facts` 
+      : `${activeCategory} Care Guides & Facts | Beastly Facts`
+  );
+
+  useMetaDescription(
+    `Explore our detailed encyclopedia and care guides for ${
+      activeCategory === 'All' ? 'all your pets' : activeCategory
+    }. Everything you need to know about husbandry, health, and happiness.`
+  );
 
   // Encyclopedia filtering
   const filteredEncyclopedia = useMemo(() => {
