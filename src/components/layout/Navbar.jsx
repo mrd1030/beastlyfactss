@@ -7,6 +7,7 @@ import { client } from '@/lib/sanity';
 import groq from 'groq';
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
+import Logo from '@/components/Logo';
 
 const dropdownAnimation = {
   key: "navigation-dropdown",
@@ -154,13 +155,8 @@ export default function Navbar() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="relative flex items-center justify-between h-14">
-          <Link to="/" onClick={handleMenuNav} className={`items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
-            <motion.span className="text-xl" whileHover={{ rotate: [0, -10, 10, 0] }} transition={{ duration: 0.4 }}>
-              🦁
-            </motion.span>
-            <span className="font-display font-bold text-base text-foreground">
-              Beastly<span className="text-secondary">Facts</span>
-            </span>
+          <Link to="/" onClick={handleMenuNav} className={`flex items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
+            <Logo />
           </Link>
 
           <div className={`md:hidden ${isChildRoute ? 'flex' : 'hidden'}`}>
