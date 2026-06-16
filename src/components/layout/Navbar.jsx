@@ -30,6 +30,15 @@ const getSecondaryLinkClass = (isActive) => {
   }`;
 };
 
+// Helper function to turn category names into clean synchronized hyphens
+const slugify = (text) => {
+  if (!text) return '';
+  return text
+    .toLowerCase()
+    .replace(/ & /g, '-')
+    .replace(/ /g, '-');
+};
+
 function XLogo({ className }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -73,13 +82,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', fn);
   }, []);
 
-  // Sync state cleanly if shifts happen unexpectedly
   useEffect(() => {
     setMobileOpen(false);
     setDigestOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.search]);
 
-  // Outside click & focus capture handler core engine
   useEffect(() => {
     if (!mobileOpen) return;
 
@@ -129,14 +136,13 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
-  // Remove setMobileOpen(false) from here. 
-  // Let the Link navigation trigger the useEffect that watches location.pathname.
   const handleMenuNav = () => {
     setDigestOpen(false);
     window.scrollTo({ top: 0, behavior: 'instant' });
   };
 
-  const isDigest = location.pathname.startsWith('/blog') || location.pathname.startsWith('/category');
+  // The condition now strictly expects matching the '/blog' layout parameters
+  const isDigest = location.pathname.startsWith('/blog');
   const isChildRoute = /^\/guides\/.+/.test(location.pathname);
 
   return (
@@ -158,6 +164,7 @@ export default function Navbar() {
           <Link to="/" onClick={handleMenuNav} className={`flex items-center gap-2 flex-shrink-0 ${isChildRoute ? 'hidden md:flex' : 'flex'}`}>
             <Logo />
           </Link>
+        
 
           <div className={`md:hidden ${isChildRoute ? 'flex' : 'hidden'}`}>
             <MobileBackButton />
@@ -273,7 +280,12 @@ export default function Navbar() {
                       All Articles
                     </Link>
                     {navCategories.map(cat => (
-                      <Link key={cat._id} to={`/category/${cat.slug}`} onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all">
+                      <Link 
+                        key={cat._id} 
+                        to={`/blog?category=${slugify(cat.title)}`} 
+                        onClick={handleMenuNav} 
+                        className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+                      >
                         {cat.title}
                       </Link>
                     ))}

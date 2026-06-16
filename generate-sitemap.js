@@ -12,19 +12,33 @@ const staticPages = [
   '/facts',            // Facts.jsx
   '/animal-facts',     // AnimalFacts.jsx
   '/blog',             // Blog.jsx
+
+// Blog filter pages (Now beautifully synced with hyphens instead of %20)
+  '/blog?category=amphibians',
+  '/blog?category=aquatic-life',
+  '/blog?category=birds',
+  '/blog?category=cats',
+  '/blog?category=dogs',
+  '/blog?category=fun-facts',
+  '/blog?category=invertebrates',
+  '/blog?category=pet-care',
+  '/blog?category=product-picks',
+  '/blog?category=reptiles',
+  '/blog?category=small-exotic-pets', 
+  '/blog?category=wild-animals',
+
   '/encyclopedia',     // Encyclopedia.jsx
   // Encyclopedia filter pages
   '/encyclopedia?category=snakes',
   '/encyclopedia?category=geckos',
   '/encyclopedia?category=lizards',
   '/encyclopedia?category=turtles-tortoises',
-  '/encyclopedia?category=small%20mammals',
+  '/encyclopedia?category=small-mammals',
   '/encyclopedia?category=birds',
   '/encyclopedia?category=dogs',
   '/encyclopedia?category=cats',
   '/encyclopedia?category=invertebrates',
   '/encyclopedia?category=amphibians',
-
 
   '/guides',           // Guides.jsx
   // Geckos
@@ -109,19 +123,7 @@ const staticPages = [
   '/pack',             // Pack.jsx
   '/quiz',             // Quiz.jsx
   '/trivia-quiz',      // TriviaQuiz.jsx
-  '/categories',
-  '/category/amphibians',
-  '/category/aquatic-life',
-  '/category/reptiles',
-  '/category/fun-facts',
-  '/category/dogs',
-  '/category/cats',
-  '/category/birds',
-  '/category/invertebrates',
-  '/category/pet-care',
-  '/category/product-picks',
-  '/category/small-and-exotix-pets',
-  '/category/wild-animals',
+ 
 
   '/donate', // Donate.jsx
   '/privacy', // Privacy.jsx

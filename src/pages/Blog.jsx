@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom'; // Powered by React Router
 import { client } from '@/lib/sanity';
 import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
@@ -28,6 +28,15 @@ const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
   "count": count(*[_type == "post" && references(^._id)])
 }`;
 
+// Helper function to safely turn any string into a clean hyphenated URL param
+const slugify = (text) => {
+  if (!text) return '';
+  return text
+    .toLowerCase()
+    .replace(/ & /g, '-')  // Handle special ' & ' cleanups
+    .replace(/ /g, '-');    // Turn spaces into hyphens
+};
+
 export default function Blog() {
   const [sanityPosts, setSanityPosts] = useState([]);
   const [sanityCategories, setSanityCategories] = useState([]);
@@ -36,16 +45,13 @@ export default function Blog() {
   const [page, setPage] = useState(1);
   const listRef = useRef(null);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // 1. Fetch initial data once on mount
   useEffect(() => {
     client.fetch(ALL_POSTS_QUERY).then(posts => {
       setSanityPosts(posts);
-      const urlParams = new URLSearchParams(window.location.search);
-      const postParam = urlParams.get('post');
-      if (postParam && !selectedPost) {
-        const match = posts.find(p => p.slug?.current === postParam || p._id === postParam)
-          || localPosts.find(p => p.id === postParam);
-        if (match) setSelectedPost({ ...match, _id: match._id || match.id, publishedAt: match.publishedAt || match.date, mainImage: match.mainImage || null });
-      }
     }).catch(console.error);
 
     client.fetch(CATEGORIES_QUERY).then(cats => {
@@ -53,12 +59,44 @@ export default function Blog() {
     }).catch(console.error);
   }, []);
 
-  // Read page from URL
+  // 2. Main Synchronizer: Listen to all location/URL adjustments to drive page UI state
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
+    if (sanityPosts.length === 0) return;
+
+    const urlParams = new URLSearchParams(location.search);
+    const postParam = urlParams.get('post');
+    const catParam = urlParams.get('category');
     const pageParam = parseInt(urlParams.get('page')) || 1;
+
+    // Sync active category state
+    setActiveCategory(catParam ? catParam : 'All');
+
+    // Sync page state
     setPage(pageParam);
-  }, []);
+
+    // Sync selected post state dynamically (Fixes the sticky article layout!)
+    if (postParam) {
+      const allPostsList = [
+        ...sanityPosts,
+        ...localPosts.map(post => ({
+          ...post, _id: post.id, publishedAt: post.date, mainImage: null, categorySlug: null
+        }))
+      ];
+      const match = allPostsList.find(p => p.slug?.current === postParam || p._id === postParam);
+      if (match) {
+        setSelectedPost({ 
+          ...match, 
+          _id: match._id || match.id, 
+          publishedAt: match.publishedAt || match.date, 
+          mainImage: match.mainImage || null 
+        });
+      } else {
+        setSelectedPost(null);
+      }
+    } else {
+      setSelectedPost(null);
+    }
+  }, [location.search, sanityPosts]);
 
   const allPosts = [
     ...sanityPosts,
@@ -68,38 +106,49 @@ export default function Blog() {
     }))
   ];
 
+  // Hyphen-aware filtering logic
   const filtered = allPosts.filter(p => {
-    if (activeCategory === 'All') return true;
-    // Check all categories the post belongs to (multi-category support)
+    if (slugify(activeCategory) === 'all') return true;
+
+    const lowerActiveCat = slugify(activeCategory);
+
     if (p.allCategories && Array.isArray(p.allCategories)) {
-      return p.allCategories.includes(activeCategory);
+      return p.allCategories.some(cat => slugify(cat) === lowerActiveCat);
     }
-    return p.category === activeCategory;
+    
+    return p.category && slugify(p.category) === lowerActiveCat;
   });
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 
+  // Clears the post but cleanly maintains where they left off without query baggage
   const handleBack = () => {
-    setSelectedPost(null);
-    const url = new URL(window.location);
-    url.searchParams.delete('post');
-    window.history.replaceState({}, '', url);
+    const urlParams = new URLSearchParams();
+    
+    if (activeCategory && slugify(activeCategory) !== 'all') {
+      urlParams.set('category', slugify(activeCategory));
+    }
+    if (page > 1) {
+      urlParams.set('page', page.toString());
+    }
+
+    navigate({ search: urlParams.toString() });
   };
 
+  // Purely creates a clean single query argument matching your sitemap to maximize SEO metrics
   const handleSelectPost = (post) => {
-    setSelectedPost(post);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    const url = new URL(window.location);
-    url.searchParams.set('post', post.slug?.current || post._id || post.id);
-    window.history.pushState({}, '', url);
+    const targetPostSlug = post.slug?.current || post._id || post.id;
+    navigate({ search: `?post=${targetPostSlug}` });
   };
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
-    const url = new URL(window.location);
-    url.searchParams.set('page', newPage);
-    window.history.pushState({}, '', url);
+    const urlParams = new URLSearchParams(location.search);
+    urlParams.set('page', newPage.toString());
+    navigate({ search: urlParams.toString() });
+    
     setTimeout(() => {
       if (listRef.current) {
         const top = listRef.current.getBoundingClientRect().top + window.scrollY - 80;
@@ -111,8 +160,11 @@ export default function Blog() {
   };
 
   const handleCategoryChange = (cat) => {
-    setActiveCategory(cat);
-    setPage(1);
+    const urlParams = new URLSearchParams();
+    if (slugify(cat) !== 'all') {
+      urlParams.set('category', slugify(cat));
+    }
+    navigate({ search: urlParams.toString() });
   };
 
   if (selectedPost) {
@@ -138,7 +190,7 @@ export default function Blog() {
             <button
               onClick={() => handleCategoryChange('All')}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                activeCategory === 'All'
+                slugify(activeCategory) === 'all'
                   ? 'bg-secondary text-secondary-foreground'
                   : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
@@ -150,10 +202,10 @@ export default function Blog() {
                 key={cat._id}
                 onClick={() => handleCategoryChange(cat.title)}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                  activeCategory === cat.title
+                  slugify(activeCategory) === slugify(cat.title)
                     ? 'bg-secondary text-secondary-foreground'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
+              }`}
               >
                 {cat.title}
                 {cat.count > 0 && <span className="ml-1 opacity-60">({cat.count})</span>}
@@ -218,14 +270,14 @@ export default function Blog() {
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {sanityCategories.filter(c => c.count > 0).map(cat => (
-                    <Link
+                    <button
                       key={cat._id}
-                      to={`/category/${cat.slug}`}
+                      onClick={() => handleCategoryChange(cat.title)}
                       className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group"
                     >
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
-                    </Link>
+                    </button>
                   ))}
                 </div>
               </div>
@@ -288,13 +340,7 @@ function LocalPostContent({ content }) {
 }
 
 function PostView({ post, onBack, allPosts, onSelectPost }) {
-  React.useEffect(() => {
-    window.history.pushState(null, '', window.location.href);
-    const handlePopState = () => onBack();
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, [onBack]);
-
+  // Let React Router manage popstate natively through the trigger loop
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
@@ -349,17 +395,16 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             )}
           </div>
 
-         {/* On your Blog Page Layout */}
-<div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4">
-  <PostSidebar 
-    allPosts={allPosts} 
-    currentPost={post} 
-    onSelectPost={(p) => { 
-      onSelectPost(p); 
-      window.scrollTo({ top: 0, behavior: 'smooth' }); 
-    }} 
-  />
-</div>
+          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4">
+            <PostSidebar 
+              allPosts={allPosts} 
+              currentPost={post} 
+              onSelectPost={(p) => { 
+                onSelectPost(p); 
+                window.scrollTo({ top: 0, behavior: 'smooth' }); 
+              }} 
+            />
+          </div>
         </div>
       </div>
     </motion.div>

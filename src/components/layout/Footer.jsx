@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SiteCounter from '@/components/shared/SiteCounter';
 import DonateButton from '@/components/DonateButton';
+import Logo from '@/components/Logo';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -14,11 +15,14 @@ export default function Footer() {
           {/* Brand Column - Prominent */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">🦁</span>
-              <span className="font-display font-bold text-base">
-                Beastly<span className="text-secondary">Facts</span>
-              </span>
-            </div>
+    <Link 
+      to="/" 
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+      className="flex items-center gap-2 flex-shrink-0"
+    >
+      <Logo />
+    </Link>
+  </div>
             <p className="text-xs text-muted-foreground font-body leading-relaxed mb-4 max-w-[250px]">
               Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
             </p>

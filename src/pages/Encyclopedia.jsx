@@ -84,7 +84,10 @@ export default function Encyclopedia() {
       // Find the category by matching the slug-version of the category name
       // We use .toLowerCase() on both sides to ensure it matches regardless of case
       const foundCat = encyclopediaCategories.find(c => 
-        c.name.toLowerCase().replace(/ & /g, '-').toLowerCase() === catFromUrl.toLowerCase()
+        c.name.toLowerCase()
+        .replace(/ & /g, '-')
+        .replace(/ /g, '-')
+        .toLowerCase() === catFromUrl.toLowerCase()
       );
       
       setActiveCategory(foundCat ? foundCat.name : 'All');
@@ -227,7 +230,10 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             <button
               key={cat.name}
               onClick={() => {
-                const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-');
+                const urlSlug = cat.name.toLowerCase()
+                .replace(/ & /g, '-')
+                .replace(/ /g, '-');
+
                 navigate(`/encyclopedia?category=${urlSlug}`);
               }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
