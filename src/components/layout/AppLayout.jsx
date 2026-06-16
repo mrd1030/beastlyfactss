@@ -8,6 +8,8 @@ import BottomTabs from './BottomTabs';
 export default function AppLayout() {
   return (
     <div className="min-h-screen flex flex-col font-body">
+
+      <h1 className="sr-only">Beastly Facts: Animal Trivia & Wildlife Guides</h1>
       <Navbar />
       {/* pt-14 for navbar + on mobile pb-16 for bottom tabs */}
       <main className="flex-1 pt-14 pb-0 md:pb-0">
