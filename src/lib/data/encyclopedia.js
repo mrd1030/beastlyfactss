@@ -70,12 +70,18 @@ export const encyclopediaAnimals = [
   { id: "praying-mantis", name: "Praying Mantis", scientific: "Various", category: "Invertebrates", emoji: "🦗", difficulty: "Low", guideId: "praying-mantis", available: true },
   { id: "millipede", name: "Giant African Millipede", scientific: "Archispirostreptus gigas", category: "Invertebrates", emoji: "🐛", difficulty: "Low", guideId: "millipede", available: true },
   { id: "hissing-cockroach", name: "Madagascar Hissing Cockroach", scientific: "Gromphadorhina portentosa", category: "Invertebrates", emoji: "🪳", difficulty: "Low", guideId: "hissing-cockroach", available: true },
+  { id: "stick-insect", name: "Stick Insect", scientific: "Phasmatodea", category: "Invertebrates", emoji: "🌿", difficulty: "Low", guideId: "stick-insect", available: true },
+  { id: "emperor-scorpion", name: "Emperor Scorpion", scientific: "Pandinus imperator", category: "Invertebrates", emoji: "🦂", difficulty: "Low–Moderate", guideId: "emperor-scorpion", available: true },
+
+
 
   // AMPHIBIANS
   { id: "pacman-frog", name: "Pac-Man Frog", scientific: "Ceratophrys ornata", category: "Amphibians", emoji: "🐸", difficulty: "Low", guideId: "pacman-frog", available: true },
   { id: "axolotl", name: "Axolotl", scientific: "Ambystoma mexicanum", category: "Amphibians", emoji: "🦎", difficulty: "Moderate", guideId: "axolotl", available: true },
   { id: "whites-tree-frog", name: "White's Tree Frog", scientific: "Litoria caerulea", category: "Amphibians", emoji: "🐸", difficulty: "Low", guideId: "whites-tree-frog", available: true },
   { id: "fire-belly-toad", name: "Fire-Bellied Toad", scientific: "Bombina orientalis", category: "Amphibians", emoji: "🐸", difficulty: "Low–Moderate", guideId: "fire-belly-toad", available: true },
+  { id: "tiger-salamander", name: "Tiger Salamander", scientific: "Ambystoma tigrinum", category: "Amphibians", emoji: "🦎", difficulty: "Moderate", guideId: "tiger-salamander", available: true },
+
 ];
 
 export const encyclopediaCategories = [
