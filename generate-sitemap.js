@@ -14,14 +14,101 @@ const staticPages = [
   '/blog',             // Blog.jsx
   '/encyclopedia',     // Encyclopedia.jsx
   '/guides',           // Guides.jsx
+  // Geckos
+  '/guides/crested-gecko',
+  '/guides/leopard-gecko',
+  '/guides/gargoyle-gecko',
+  '/guides/mourning-gecko',
+  '/guides/tokay-gecko',
+  '/guides/african-fat-tail',
+  '/guides/leaf-tailed-gecko',
+  
+  // Lizards
+  '/guides/bearded-dragon',
+  '/guides/blue-tongue-skink',
+  '/guides/chameleon',
+  '/guides/green-anole',
+  '/guides/ackie-monitor',
+  '/guides/savannah-monitor',
+  '/guides/uromastyx',
+  '/guides/tegu',
+  
+  // Snakes
+  '/guides/ball-python',
+  '/guides/corn-snake',
+  '/guides/hognose-snake',
+  '/guides/boa-constrictor',
+  '/guides/california-kingsnake',
+  '/guides/milk-snake',
+  
+  // Turtles & Tortoises
+  '/guides/red-eared-slider',
+  '/guides/russian-tortoise',
+  '/guides/sulcata-tortoise',
+  '/guides/box-turtle',
+  
+  // Small Mammals
+  '/guides/rabbit',
+  '/guides/hedgehog',
+  '/guides/guinea-pig',
+  '/guides/chinchilla',
+  '/guides/ferret',
+  '/guides/sugar-glider',
+  
+  // Birds
+  '/guides/budgie',
+  '/guides/cockatiel',
+  '/guides/conure',
+  '/guides/lovebird',
+  '/guides/african-grey',
+  
+  // Dogs
+  '/guides/dog-labrador',
+  '/guides/dog-golden-retriever',
+  '/guides/dog-german-shepherd',
+  '/guides/dog-french-bulldog',
+  '/guides/dog-border-collie',
+  '/guides/dog-siberian-husky',
+  
+  // Cats
+  '/guides/cat-domestic-shorthair',
+  '/guides/cat-maine-coon',
+  '/guides/cat-siamese',
+  '/guides/cat-ragdoll',
+  '/guides/cat-bengal',
+  '/guides/cat-persian',
+  
+  // Invertebrates
+  '/guides/tarantula',
+  '/guides/praying-mantis',
+  '/guides/millipede',
+  '/guides/emperor-scorpion',
+  '/guides/hissing-cockroach',
+  '/guides/stick-insect',
+  
+  // Amphibians
+  '/guides/whites-tree-frog',
+  '/guides/pacman-frog',
+  '/guides/fire-bellied-toad',
+  '/guides/axolotl',
+  '/guides/tiger-salamander',
+
   '/pack',             // Pack.jsx
   '/quiz',             // Quiz.jsx
   '/trivia-quiz',      // TriviaQuiz.jsx
-  '/categories/reptiles',
-  '/categories/small-mammals',
-  '/categories/dogs',
-  '/categories/cats',
-  '/categories/birds'
+  '/categories',
+  '/category/amphibians,
+  '/category/aquatic-life',
+  '/category/reptiles',
+  '/category/fun-facts',
+  '/category/dogs',
+  '/category/cats',
+  '/category/birds'
+  '/category/invertebrates,
+  '/category/pet-care',
+  '/category/product-picks',
+  '/category/small-and-exotix-pets',
+  '/category/wild-animals',
 ];
 
 async function generateSitemap() {
