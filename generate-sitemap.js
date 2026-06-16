@@ -41,8 +41,9 @@ async function generateSitemap() {
     // Extract slugs and format them into relative URLs
     const dynamicPages = data.result.map(post => {
       return {
-        path: `/posts/${post.slug}`,
-        lastmod: post._updatedAt.split('T')[0] // Formats timestamp to YYYY-MM-DD
+        path: `/blog?post=${post.slug}`,
+        lastmod: post._updatedAt.split('T')[0]
+       // Formats timestamp to YYYY-MM-DD
       };
     });
 
