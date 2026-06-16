@@ -97,18 +97,19 @@ const staticPages = [
   '/quiz',             // Quiz.jsx
   '/trivia-quiz',      // TriviaQuiz.jsx
   '/categories',
-  '/category/amphibians,
+  '/category/amphibians',
   '/category/aquatic-life',
   '/category/reptiles',
   '/category/fun-facts',
   '/category/dogs',
   '/category/cats',
-  '/category/birds'
-  '/category/invertebrates,
+  '/category/birds',
+  '/category/invertebrates',
   '/category/pet-care',
   '/category/product-picks',
   '/category/small-and-exotix-pets',
   '/category/wild-animals',
+
 ];
 
 async function generateSitemap() {
