@@ -126,6 +126,7 @@ const staticPages = [
   '/donate', // Donate.jsx
   '/privacy', // Privacy.jsx
   '/terms', // Terms.jsx
+  '/search', // Search.jsx
 
 ];
 
