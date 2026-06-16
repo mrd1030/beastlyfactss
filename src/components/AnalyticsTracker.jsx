@@ -1,13 +1,15 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import ReactGA4 from 'react-ga4';
 
 export default function AnalyticsTracker() {
   const location = useLocation();
 
   useEffect(() => {
-    if (import.meta.env.VITE_GA4_MEASUREMENT_ID) {
-      ReactGA4.send({ hitType: "pageview", page: location.pathname + location.search });
+    // Check if gtag is loaded and the ID exists
+    if (window.gtag && import.meta.env.VITE_GA4_MEASUREMENT_ID) {
+      window.gtag('config', import.meta.env.VITE_GA4_MEASUREMENT_ID, {
+        page_path: location.pathname + location.search,
+      });
     }
   }, [location]);
 
