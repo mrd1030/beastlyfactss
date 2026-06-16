@@ -44,7 +44,7 @@ export default function Terms() {
 
           <Section title="4. Donations & Payments">
             <p>Donations made through BeastlyFacts.com are processed securely by Stripe. All transactions are subject to Stripe's Terms of Service. BeastlyFacts.com does not store any payment card information.</p>
-            <p>Donations are voluntary and non-refundable unless required by applicable law. Monthly recurring donations can be cancelled at any time by contacting us at hello@beastlyfacts.com.</p>
+            <p>Donations are voluntary and non-refundable unless required by applicable law. Monthly recurring donations can be cancelled at any time by contacting us at info@beastlyfacts.com.</p>
           </Section>
 
           <Section title="5. Disclaimer of Warranties">
@@ -61,7 +61,7 @@ export default function Terms() {
           </Section>
 
           <Section title="8. Contact">
-            <p>For any questions regarding these Terms, please contact us at <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a>.</p>
+            <p>For any questions regarding these Terms, please contact us at <a href="mailto:info@beastlyfacts.com" className="text-secondary hover:underline">info@beastlyfacts.com</a>.</p>
           </Section>
         </motion.div>
       </div>
