@@ -16,7 +16,7 @@ export default function Terms() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block">📋</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: June 1, 2025</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: June 16, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -24,11 +24,11 @@ export default function Terms() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
           <Section title="1. Acceptance of Terms">
-            <p>By accessing or using BeastlyFacts.com ("the Site"), you agree to be bound by these Terms of Service. If you do not agree, please discontinue use of the Site immediately.</p>
+            <p>By accessing or using BeastlyFacts.com ("the Site"), you agree to be bound by these Terms of Service and our accompanying Privacy Policy, which is incorporated here by reference. If you do not agree to these terms, please discontinue use of the Site immediately.</p>
           </Section>
 
           <Section title="2. Use of Content">
-            <p>All content on BeastlyFacts.com — including animal facts, care guides, articles, images, and quizzes — is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with attribution to BeastlyFacts.com.</p>
+            <p>All content on BeastlyFacts.com — including animal facts, care guides, articles, images, and quizzes — is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with clear attribution to BeastlyFacts.com.</p>
             <p>You may not reproduce, republish, scrape, or redistribute the Site's content in bulk without prior written permission.</p>
           </Section>
 
@@ -48,15 +48,16 @@ export default function Terms() {
           </Section>
 
           <Section title="5. Disclaimer of Warranties">
-            <p>The information on this Site is provided "as is" without warranties of any kind. While we strive for accuracy, animal care information should always be verified with qualified veterinary professionals. BeastlyFacts.com is not liable for any decisions made based on content found on this Site.</p>
+            <p>The information on this Site is provided "as is" without warranties of any kind. While we strive for absolute accuracy, animal care information should always be verified with qualified veterinary professionals. BeastlyFacts.com is not liable for any decisions made based on content found on this Site.</p>
           </Section>
 
-          <Section title="6. External Links">
-            <p>The Site may contain links to third-party websites. These are provided for convenience only, and we are not responsible for the content, privacy practices, or reliability of any external sites.</p>
+          <Section title="6. External Links & Affiliate Programs">
+            <p>The Site contains links to third-party websites, including affiliate links through programs like the Amazon Associates program. These links are provided for your convenience and to help fund the operations of this independent platform.</p>
+            <p>We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. We strongly advise you to read the terms and privacy policies of any third-party sites you visit.</p>
           </Section>
 
           <Section title="7. Changes to Terms">
-            <p>We reserve the right to update these Terms at any time. Continued use of the Site after changes are posted constitutes acceptance of the revised Terms.</p>
+            <p>We reserve the right to update these Terms at any time. Continued use of the Site after changes are posted constitutes full acceptance of the revised Terms.</p>
           </Section>
 
           <Section title="8. Contact">
