@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom'; // Add this
 import { motion } from 'framer-motion';
 import { Search, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -70,6 +71,19 @@ export default function Encyclopedia() {
   const initialTab = urlParams.get('tab') === 'guides' ? 'guides' : 'encyclopedia';
   const initialCat = urlParams.get('category') || 'All';
 
+const navigate = useNavigate(); // Add this inside the component
+const location = useLocation();
+
+useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  const catFromUrl = params.get('category');
+  if (catFromUrl) {
+    // You might need to capitalize/format this string to match your data
+    // e.g., 'snakes' -> 'Snakes'
+    const formattedCat = catFromUrl.charAt(0).toUpperCase() + catFromUrl.slice(1);
+    setActiveCategory(formattedCat);
+  }
+}, [location.search]); 
   const [activeTab, setActiveTab] = useState(initialTab);
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState(initialCat);
@@ -218,7 +232,10 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           {encyclopediaCategories.map(cat => (
             <button
               key={cat.name}
-              onClick={() => setActiveCategory(cat.name)}
+              onClick={() => {
+  setActiveCategory(cat.name);
+  navigate(`/encyclopedia?category=${cat.name.toLowerCase().replace(/ & /g, '-')}`);
+}}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                 activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
