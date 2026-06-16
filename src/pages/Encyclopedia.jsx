@@ -1,13 +1,13 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom'; // Add this
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { base44 } from '@/api/base44Client';
 
+// --- SEO HOOKS ---
 function useDocumentTitle(title) {
   useEffect(() => {
     document.title = title;
@@ -21,12 +21,7 @@ function useMetaDescription(description) {
   }, [description]);
 }
 
-
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
-
-// Build a lookup from guideId -> guide for encyclopedia animals
-const guideById = {};
-allGuides.forEach(g => { guideById[g.id] = g; });
 
 // Tabs
 const TABS = [
@@ -34,7 +29,6 @@ const TABS = [
   { id: 'guides', label: '📖 Care Guides' },
 ];
 
-// Guide categories + subtypes
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
   { label: 'Geckos', emoji: '🦎' },
@@ -67,23 +61,13 @@ const subtypes = {
 };
 
 export default function Encyclopedia() {
-  const urlParams = new URLSearchParams(window.location.search);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const urlParams = new URLSearchParams(location.search);
+  
   const initialTab = urlParams.get('tab') === 'guides' ? 'guides' : 'encyclopedia';
   const initialCat = urlParams.get('category') || 'All';
 
-const navigate = useNavigate(); // Add this inside the component
-const location = useLocation();
-
-useEffect(() => {
-  const params = new URLSearchParams(location.search);
-  const catFromUrl = params.get('category');
-  if (catFromUrl) {
-    // You might need to capitalize/format this string to match your data
-    // e.g., 'snakes' -> 'Snakes'
-    const formattedCat = catFromUrl.charAt(0).toUpperCase() + catFromUrl.slice(1);
-    setActiveCategory(formattedCat);
-  }
-}, [location.search]); 
   const [activeTab, setActiveTab] = useState(initialTab);
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState(initialCat);
@@ -91,7 +75,20 @@ useEffect(() => {
   const [dogSize, setDogSize] = useState('All Sizes');
   const [activeSubtype, setActiveSubtype] = useState(null);
 
-useDocumentTitle(
+  // Sync state with URL changes
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const catFromUrl = params.get('category');
+    if (catFromUrl) {
+      const foundCat = encyclopediaCategories.find(c => c.name.toLowerCase().replace(/ & /g, '-') === catFromUrl);
+      setActiveCategory(foundCat ? foundCat.name : 'All');
+    } else {
+      setActiveCategory('All');
+    }
+  }, [location.search]);
+
+  // SEO Updates
+  useDocumentTitle(
     activeCategory === 'All' 
       ? `Encyclopedia & Care Guides | Beastly Facts` 
       : `${activeCategory} Care Guides & Facts | Beastly Facts`
@@ -149,7 +146,6 @@ useDocumentTitle(
 
   return (
     <div className="min-h-screen">
-      {/* Header */}
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
@@ -157,21 +153,14 @@ useDocumentTitle(
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
               Encyclopedia & Care Guides
             </h1>
-            <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Browse the animal encyclopedia or dive into in-depth care guides for reptiles, dogs, cats & more.
-            </p>
           </motion.div>
-
-          {/* Tab switcher */}
           <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
-                  activeTab === tab.id
-                    ? 'bg-card shadow-sm text-foreground'
-                    : 'text-muted-foreground hover:text-foreground'
+                  activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {tab.label}
@@ -188,6 +177,7 @@ useDocumentTitle(
           activeCategory={activeCategory}
           setActiveCategory={setActiveCategory}
           grouped={grouped}
+          navigate={navigate}
         />
       ) : (
         <GuidesTab
@@ -204,11 +194,10 @@ useDocumentTitle(
   );
 }
 
-function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped }) {
+function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
-        {/* Search */}
         <div className="relative max-w-sm mb-4">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <input
@@ -219,10 +208,9 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
           />
         </div>
-        {/* Category filter */}
         <div className="flex flex-wrap gap-2 mb-6">
           <button
-            onClick={() => setActiveCategory('All')}
+            onClick={() => { setActiveCategory('All'); navigate('/encyclopedia'); }}
             className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
               activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
             }`}
@@ -233,9 +221,9 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             <button
               key={cat.name}
               onClick={() => {
-  setActiveCategory(cat.name);
-  navigate(`/encyclopedia?category=${cat.name.toLowerCase().replace(/ & /g, '-')}`);
-}}
+                const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-');
+                navigate(`/encyclopedia?category=${urlSlug}`);
+              }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                 activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
@@ -251,7 +239,6 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
               <span>{group.emoji}</span> {group.name}
-              <span className="text-xs font-body text-muted-foreground font-normal">({group.animals.length})</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
@@ -260,6 +247,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             </div>
           </motion.div>
         ))}
+
         {grouped.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
@@ -268,9 +256,9 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           </div>
         )}
       </div>
-    </div>
+    </div> // This closes the main div of the component
   );
-}
+} // This closes the EncyclopediaTab function
 
 function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides }) {
   return (
