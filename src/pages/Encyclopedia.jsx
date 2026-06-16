@@ -79,8 +79,14 @@ export default function Encyclopedia() {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const catFromUrl = params.get('category');
+    
     if (catFromUrl) {
-      const foundCat = encyclopediaCategories.find(c => c.name.toLowerCase().replace(/ & /g, '-') === catFromUrl);
+      // Find the category by matching the slug-version of the category name
+      // We use .toLowerCase() on both sides to ensure it matches regardless of case
+      const foundCat = encyclopediaCategories.find(c => 
+        c.name.toLowerCase().replace(/ & /g, '-').toLowerCase() === catFromUrl.toLowerCase()
+      );
+      
       setActiveCategory(foundCat ? foundCat.name : 'All');
     } else {
       setActiveCategory('All');
