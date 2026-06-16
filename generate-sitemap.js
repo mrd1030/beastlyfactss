@@ -13,6 +13,19 @@ const staticPages = [
   '/animal-facts',     // AnimalFacts.jsx
   '/blog',             // Blog.jsx
   '/encyclopedia',     // Encyclopedia.jsx
+  // Encyclopedia filter pages
+  '/encyclopedia?category=snakes',
+  '/encyclopedia?category=geckos',
+  '/encyclopedia?category=lizards',
+  '/encyclopedia?category=turtles-tortoises',
+  '/encyclopedia?category=small-mammals',
+  '/encyclopedia?category=birds',
+  '/encyclopedia?category=dogs',
+  '/encyclopedia?category=cats',
+  '/encyclopedia?category=invertebrates',
+  '/encyclopedia?category=amphibians',
+
+
   '/guides',           // Guides.jsx
   // Geckos
   '/guides/crested-gecko',
@@ -109,6 +122,10 @@ const staticPages = [
   '/category/product-picks',
   '/category/small-and-exotix-pets',
   '/category/wild-animals',
+
+  '/donate', // Donate.jsx
+  '/privacy', // Privacy.jsx
+  '/terms', // Terms.jsx
 
 ];
 
