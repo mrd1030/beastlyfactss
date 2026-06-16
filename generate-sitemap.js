@@ -9,7 +9,20 @@ const staticPages = [
   '',
   '/about',
   '/contact',
+  
   '/facts',            // Facts.jsx
+  // Unified Fun Facts filter pages (Clean hyphens synced with Facts.jsx logic)
+  '/facts?category=amphibians',
+  '/facts?category=birds',
+  '/facts?category=cats',
+  '/facts?category=dogs',
+  '/facts?category=invertebrates',
+  '/facts?category=reptiles',
+  '/facts?category=small-mammals',
+  '/facts?category=turtles-tortoises',
+  '/facts?category=wild-animals',
+
+
   '/animal-facts',     // AnimalFacts.jsx
   '/blog',             // Blog.jsx
 
