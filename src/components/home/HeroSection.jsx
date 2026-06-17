@@ -4,30 +4,48 @@ import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { facts } from '@/lib/data/facts';
-import heroImg from '@/assets/hero-animals.webp';
-
- // Make sure this image is in your public folder
 
 export default function HeroSection() {
-  const HERO_IMAGE = heroImg;
   const dailyFact = facts[new Date().getDate() % facts.length];
   const [learned, setLearned] = useState(false);
 
   const handleLearned = () => {
     setLearned(true);
-    confetti({ particleCount: 100, spread: 70, origin: { y: 0.8 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'] });
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.8 },
+      colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'],
+    });
   };
 
   return (
     <section className="relative min-h-[85vh] flex items-end overflow-hidden">
-      {/* Background image */}
+      {/* ==================== OPTIMIZED HERO IMAGE ==================== */}
       <div className="absolute inset-0">
-        <img
-          src={HERO_IMAGE}
-          fetchpriority="high"
-          alt="Majestic lion, colorful macaw, and bearded dragon in nature"
-          className="w-full h-full object-cover"
-        />
+        <picture>
+          <source
+            srcSet="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            type="image/webp"
+          />
+          <source
+            srcSet="/assets/hero-400.jpg 400w, /assets/hero-800.jpg 800w, /assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            type="image/jpeg"
+          />
+          <img
+            src="/assets/hero-1200.jpg"
+            alt="Majestic lion, colorful macaw, and bearded dragon in nature"
+            className="w-full h-full object-cover"
+            fetchpriority="high"
+            width="1200"
+            height="800"
+            decoding="async"
+          />
+        </picture>
+
+        {/* Gradient overlays */}
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
