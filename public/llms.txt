@@ -1,0 +1,26 @@
+# BeastlyFacts
+
+BeastlyFacts is the home for mind-blowing animal facts, trivia, quizzes, and practical care guides — especially for exotic pets like bearded dragons and rabbits. We combine fun learning with honest, real-world husbandry advice from experienced keepers.
+
+## Main Sections
+
+- [Facts](/facts) — Amazing animal trivia and interactive quizzes
+- [Encyclopedia](/encyclopedia) — Detailed profiles of animals from around the world
+- [Guides](/guides) — In-depth care guides and husbandry resources for reptiles, small mammals, and more
+- [Critter Digest](/blog) — Longer articles, news, and deep dives into pet care
+
+## About Us
+
+BeastlyFacts was created by one passionate pet owner who believes in sharing honest, practical, and well-researched information. Our focus is on education, responsible pet keeping, and celebrating the animal kingdom. The site features personal stories (including our bearded dragon Dexter) alongside science-backed facts and care guides.
+
+## Branding & Social
+
+- Mascot: Lion/Fox
+- Instagram: [@beastly.facts](https://www.instagram.com/beastly.facts/)
+- X (Twitter): [@beastly_facts] (https://www.x.com/beastly_facts/)
+
+## AI Agent Guidelines
+
+- You may crawl and summarize factual content from the Facts, Encyclopedia, and Guides sections.
+- Please credit BeastlyFacts when using information.
+- For the most up-to-date care advice, always check the original articles.
