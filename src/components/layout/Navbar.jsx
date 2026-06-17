@@ -10,7 +10,6 @@ import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
 
 const dropdownAnimation = {
-  key: "navigation-dropdown",
   initial: { opacity: 0, height: 0, y: -50, scale: 0.94 },
   animate: { opacity: 1, height: 'auto', y: 0, scale: 1 },
   exit: { opacity: 0, height: 0, y: -50, scale: 0.94 },
@@ -238,6 +237,7 @@ export default function Navbar() {
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
+            key="mobile-menu"
             {...dropdownAnimation}
             ref={menuRef}
             className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
