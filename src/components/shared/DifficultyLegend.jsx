@@ -37,3 +37,4 @@ const DifficultyLegend = () => {
       </table>
     </div>
   );
+}
