@@ -3,12 +3,16 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-export default function GuideCard({ guide, index = 0 }) {
+// Inside GuideCard function...
+export default function GuideCard({ guide, index = 0, onOpenLegend }) {
+  // Update your color map to include all 4 tiers
   const difficultyColor = {
-    Beginner: 'bg-teal/10 text-teal',
-    Intermediate: 'bg-secondary/10 text-secondary',
-    Advanced: 'bg-hotpink/10 text-hotpink',
+    "Self-Sufficient": 'bg-sky-100 text-sky-700',
+    "Beginner": 'bg-emerald-100 text-emerald-700',
+    "Intermediate": 'bg-amber-100 text-amber-700',
+    "Advanced": 'bg-rose-100 text-rose-700',
   };
+
 
   return (
     <motion.div
@@ -27,10 +31,15 @@ export default function GuideCard({ guide, index = 0 }) {
             >
               {guide.emoji}
             </motion.span>
-            <span className={`text-xs font-display font-semibold px-2.5 py-1 rounded-full ${difficultyColor[guide.difficulty] || 'bg-muted text-muted-foreground'}`}>
-              {guide.difficulty}
-            </span>
-          </div>
+{/* Clickable Badge */}
+      <button 
+        onClick={(e) => { e.preventDefault(); onOpenLegend(); }}
+        className={`text-xs font-display font-semibold px-2.5 py-1 rounded-full ${difficultyColor[guide.difficulty]}`}
+      >
+        {guide.difficulty}
+      </button>
+    </div>
+            
           <h3 className="font-display font-bold text-base mb-1 text-foreground group-hover:text-accent transition-colors">
             {guide.name}
           </h3>
