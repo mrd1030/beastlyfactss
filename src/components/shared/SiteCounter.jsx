@@ -51,7 +51,7 @@ export default function SiteCounter() {
         <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500" />
       </span>
       <span>
-        Join <strong className="font-semibold text-foreground">{count.toLocaleString()}</strong> wild explorers
+        Fellow explorers in the pack:<br> <strong className="font-semibold text-foreground">{count.toLocaleString()}</strong>
       </span>
     </div>
   );
