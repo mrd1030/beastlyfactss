@@ -77,6 +77,7 @@ export const encyclopediaAnimals = [
   { id: "whites-tree-frog", name: "White's Tree Frog", scientific: "Litoria caerulea", category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "whites-tree-frog", available: true },
   { id: "fire-belly-toad", name: "Fire-Bellied Toad", scientific: "Bombina orientalis", category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "fire-belly-toad", available: true },
   { id: "tiger-salamander", name: "Tiger Salamander", scientific: "Ambystoma tigrinum", category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "tiger-salamander", available: true },
+];
 
 export const encyclopediaCategories = [
   { name: "Geckos", emoji: "🦎" },
