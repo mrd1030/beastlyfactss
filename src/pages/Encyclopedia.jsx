@@ -2,10 +2,11 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight } from 'lucide-react';
-import { encyclopediaAnimals, encyclopediaCategories, difficultyColor, DifficultyLegend } from '@/lib/data/encyclopedia';
+import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { base44 } from '@/api/base44Client';
+import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 
 // --- SEO HOOKS ---
 function useDocumentTitle(title) { useEffect(() => { document.title = title; }, [title]); }
