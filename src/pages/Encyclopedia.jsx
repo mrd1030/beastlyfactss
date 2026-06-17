@@ -2,18 +2,13 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight } from 'lucide-react';
-import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
+import { encyclopediaAnimals, encyclopediaCategories, difficultyColor, DifficultyLegend } from '@/lib/data/encyclopedia';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { base44 } from '@/api/base44Client';
 
 // --- SEO HOOKS ---
-function useDocumentTitle(title) {
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-}
-
+function useDocumentTitle(title) { useEffect(() => { document.title = title; }, [title]); }
 function useMetaDescription(description) {
   useEffect(() => {
     const meta = document.querySelector('meta[name="description"]');
@@ -22,31 +17,17 @@ function useMetaDescription(description) {
 }
 
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
-
-// Tabs
-const TABS = [
-  { id: 'encyclopedia', label: '📚 Encyclopedia' },
-  { id: 'guides', label: '📖 Care Guides' },
-];
-
+const TABS = [{ id: 'encyclopedia', label: '📚 Encyclopedia' }, { id: 'guides', label: '📖 Care Guides' }];
 const guideFilters = [
-  { label: 'All', emoji: '🐾' },
-  { label: 'Geckos', emoji: '🦎' },
-  { label: 'Lizards', emoji: '🦎' },
-  { label: 'Snakes', emoji: '🐍' },
-  { label: 'Turtles & Tortoises', emoji: '🐢' },
-  { label: 'Small Mammals', emoji: '🦔' },
-  { label: 'Birds', emoji: '🐦' },
-  { label: 'Dogs', emoji: '🐶' },
-  { label: 'Cats', emoji: '🐱' },
-  { label: 'Invertebrates', emoji: '🕷️' },
-  { label: 'Amphibians', emoji: '🐸' },
+  { label: 'All', emoji: '🐾' }, { label: 'Geckos', emoji: '🦎' }, { label: 'Lizards', emoji: '🦎' },
+  { label: 'Snakes', emoji: '🐍' }, { label: 'Turtles & Tortoises', emoji: '🐢' },
+  { label: 'Small Mammals', emoji: '🦔' }, { label: 'Birds', emoji: '🐦' },
+  { label: 'Dogs', emoji: '🐶' }, { label: 'Cats', emoji: '🐱' },
+  { label: 'Invertebrates', emoji: '🕷️' }, { label: 'Amphibians', emoji: '🐸' },
 ];
 
 const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians']);
-
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
-
 const subtypes = {
   Geckos: ['Crested Gecko', 'Leopard Gecko', 'Gargoyle Gecko', 'Mourning Gecko', 'Tokay Gecko', 'African Fat-Tailed Gecko', 'Leaf-Tailed Gecko'],
   Lizards: ['Bearded Dragon', 'Blue Tongue Skink', "Jackson's Chameleon", 'Green Anole', 'Ackie Monitor', 'Savannah Monitor', 'Uromastyx', 'Argentine Black and White Tegu'],
@@ -63,69 +44,24 @@ const subtypes = {
 export default function Encyclopedia() {
   const navigate = useNavigate();
   const location = useLocation();
-  const urlParams = new URLSearchParams(location.search);
-  
-  const initialTab = urlParams.get('tab') === 'guides' ? 'guides' : 'encyclopedia';
-  const initialCat = urlParams.get('category') || 'All';
-
-  const [activeTab, setActiveTab] = useState(initialTab);
+  const [activeTab, setActiveTab] = useState('encyclopedia');
+  const [isLegendOpen, setIsLegendOpen] = useState(false);
   const [search, setSearch] = useState('');
-  const [activeCategory, setActiveCategory] = useState(initialCat);
+  const [activeCategory, setActiveCategory] = useState('All');
   const [activeFilter, setActiveFilter] = useState('All');
   const [dogSize, setDogSize] = useState('All Sizes');
   const [activeSubtype, setActiveSubtype] = useState(null);
 
-  // Sync state with URL changes
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const catFromUrl = params.get('category');
-    
-    if (catFromUrl) {
-      // Find the category by matching the slug-version of the category name
-      // We use .toLowerCase() on both sides to ensure it matches regardless of case
-      const foundCat = encyclopediaCategories.find(c => 
-        c.name.toLowerCase()
-        .replace(/ & /g, '-')
-        .replace(/ /g, '-')
-        .toLowerCase() === catFromUrl.toLowerCase()
-      );
-      
-      setActiveCategory(foundCat ? foundCat.name : 'All');
-    } else {
-      setActiveCategory('All');
-    }
-  }, [location.search]);
-
-  // SEO Updates
-  useDocumentTitle(
-    activeCategory === 'All' 
-      ? `Encyclopedia & Care Guides | Beastly Facts` 
-      : `${activeCategory} Care Guides & Facts | Beastly Facts`
-  );
-
-  useMetaDescription(
-    `Explore our detailed encyclopedia and care guides for ${
-      activeCategory === 'All' ? 'all your pets' : activeCategory
-    }. Everything you need to know about husbandry, health, and happiness.`
-  );
-
-  // Encyclopedia filtering
   const filteredEncyclopedia = useMemo(() => {
     return encyclopediaAnimals.filter(a => {
       const matchesCat = activeCategory === 'All' || a.category === activeCategory;
       const q = search.toLowerCase();
-      const matchesSearch = !q ||
-        a.name.toLowerCase().includes(q) ||
-        a.scientific.toLowerCase().includes(q) ||
-        a.category.toLowerCase().includes(q);
-      return matchesCat && matchesSearch;
+      return matchesCat && (!q || a.name.toLowerCase().includes(q) || a.scientific.toLowerCase().includes(q) || a.category.toLowerCase().includes(q));
     });
   }, [search, activeCategory]);
 
   const grouped = useMemo(() => {
-    const cats = activeCategory === 'All'
-      ? encyclopediaCategories.map(c => c.name)
-      : [activeCategory];
+    const cats = activeCategory === 'All' ? encyclopediaCategories.map(c => c.name) : [activeCategory];
     return cats.map(cat => ({
       name: cat,
       emoji: encyclopediaCategories.find(c => c.name === cat)?.emoji || '🦎',
@@ -133,22 +69,16 @@ export default function Encyclopedia() {
     })).filter(g => g.animals.length > 0);
   }, [filteredEncyclopedia, activeCategory]);
 
-  // Guides filtering
   const filteredGuides = useMemo(() => {
     if (activeFilter === 'All') return allGuides;
     if (activeFilter === 'Dogs') {
-      const sized = dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize || g.sizeCategory === 'All Sizes');
-      if (activeSubtype) return sized.filter(g => g.name.includes(activeSubtype));
-      return sized;
+      const sized = dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize);
+      return activeSubtype ? sized.filter(g => g.name.includes(activeSubtype)) : sized;
     }
-    if (activeFilter === 'Cats') {
-      if (activeSubtype) return catGuides.filter(g => g.name.includes(activeSubtype));
-      return catGuides;
-    }
+    if (activeFilter === 'Cats' && activeSubtype) return catGuides.filter(g => g.name.includes(activeSubtype));
     if (directMatchCategories.has(activeFilter)) {
       const byType = guidesExtended.filter(g => g.petType === activeFilter);
-      if (activeSubtype) return byType.filter(g => g.name.includes(activeSubtype));
-      return byType;
+      return activeSubtype ? byType.filter(g => g.name.includes(activeSubtype)) : byType;
     }
     return allGuides;
   }, [activeFilter, dogSize, activeSubtype]);
@@ -157,21 +87,10 @@ export default function Encyclopedia() {
     <div className="min-h-screen">
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">📚</span>
-            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
-              Encyclopedia & Care Guides
-            </h1>
-          </motion.div>
+          <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground">Encyclopedia & Care Guides</h1>
           <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
-                  activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
+              <button key={tab.id} onClick={() => setActiveTab(tab.id)} className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold ${activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground'}`}>
                 {tab.label}
               </button>
             ))}
@@ -180,229 +99,70 @@ export default function Encyclopedia() {
       </div>
 
       {activeTab === 'encyclopedia' ? (
-        <EncyclopediaTab
-          search={search}
-          setSearch={setSearch}
-          activeCategory={activeCategory}
-          setActiveCategory={setActiveCategory}
-          grouped={grouped}
-          navigate={navigate}
-        />
+        <EncyclopediaTab search={search} setSearch={setSearch} activeCategory={activeCategory} setActiveCategory={setActiveCategory} grouped={grouped} navigate={navigate} onOpenLegend={() => setIsLegendOpen(true)} />
       ) : (
-        <GuidesTab
-          activeFilter={activeFilter}
-          setActiveFilter={setActiveFilter}
-          dogSize={dogSize}
-          setDogSize={setDogSize}
-          activeSubtype={activeSubtype}
-          setActiveSubtype={setActiveSubtype}
-          filteredGuides={filteredGuides}
-        />
+        <GuidesTab activeFilter={activeFilter} setActiveFilter={setActiveFilter} dogSize={dogSize} setDogSize={setDogSize} activeSubtype={activeSubtype} setActiveSubtype={setActiveSubtype} filteredGuides={filteredGuides} onOpenLegend={() => setIsLegendOpen(true)} />
+      )}
+
+      {isLegendOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+          <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="bg-card p-6 rounded-2xl max-w-2xl w-full border border-border shadow-2xl">
+            <h2 className="text-xl font-bold mb-4 font-display">Care Difficulty Legend</h2>
+            <DifficultyLegend />
+            <button onClick={() => setIsLegendOpen(false)} className="mt-6 w-full bg-secondary text-secondary-foreground py-2.5 rounded-xl font-bold text-sm">Close</button>
+          </motion.div>
+        </div>
       )}
     </div>
   );
 }
 
-function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate }) {
+function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate, onOpenLegend }) {
   return (
-    <div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
-        <div className="relative max-w-sm mb-4">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <input
-            type="text"
-            placeholder="Search by name or type..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
-          />
-        </div>
-        <div className="flex flex-wrap gap-2 mb-6">
-          <button
-            onClick={() => { setActiveCategory('All'); navigate('/encyclopedia'); }}
-            className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-              activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-            }`}
-          >
-            ✨ All
-          </button>
-          {encyclopediaCategories.map(cat => (
-            <button
-              key={cat.name}
-              onClick={() => {
-                const urlSlug = cat.name.toLowerCase()
-                .replace(/ & /g, '-')
-                .replace(/ /g, '-');
-
-                navigate(`/encyclopedia?category=${urlSlug}`);
-              }}
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              {cat.emoji} {cat.name}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 space-y-10">
-        {grouped.map((group) => (
-          <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
-            <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-              <span>{group.emoji}</span> {group.name}
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {group.animals.map((animal) => (
-                <AnimalRow key={animal.id} animal={animal} />
-              ))}
-            </div>
-          </motion.div>
-        ))}
-
-        {grouped.length === 0 && (
-          <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
-            <p className="font-display font-bold text-foreground">Nothing found</p>
-            <p className="text-sm text-muted-foreground font-body mt-1">Try a different search or category.</p>
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+      <input type="text" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} className="w-full bg-card border border-border rounded-xl px-4 py-2.5 mb-6 text-sm" />
+      {grouped.map((group) => (
+        <div key={group.name} className="mb-10">
+          <h2 className="font-bold text-lg mb-3">{group.emoji} {group.name}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            {group.animals.map((animal) => <AnimalRow key={animal.id} animal={animal} onOpenLegend={onOpenLegend} />)}
           </div>
-        )}
-      </div>
-    </div> // This closes the main div of the component
+        </div>
+      ))}
+    </div>
   );
-} // This closes the EncyclopediaTab function
+}
 
-function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides }) {
+function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend }) {
   return (
-    <div>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
-        {/* Category filter */}
-        <div className="flex flex-wrap gap-2 mb-3">
-          {guideFilters.map(f => (
-            <button
-              key={f.label}
-              onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); setActiveSubtype(null); base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } }); }}
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
-                activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <span>{f.emoji}</span> {f.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Dog size sub-filter */}
-        {activeFilter === 'Dogs' && (
-          <div className="flex flex-wrap gap-2 mb-2">
-            <span className="text-xs font-body text-muted-foreground self-center pr-1">Size:</span>
-            {dogSizes.map(s => (
-              <button key={s} onClick={() => { setDogSize(s); setActiveSubtype(null); }}
-                className={`px-3 py-1 rounded-full text-xs font-display font-semibold transition-all ${dogSize === s ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
-                {s}
-              </button>
-            ))}
-          </div>
-        )}
-
-        {/* Subtype filter */}
-        {activeFilter !== 'All' && subtypes[activeFilter] && (
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            <button onClick={() => setActiveSubtype(null)}
-              className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === null ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
-              All
-            </button>
-            {subtypes[activeFilter].map(sub => (
-              <button key={sub} onClick={() => { const next = activeSubtype === sub ? null : sub; setActiveSubtype(next); if (next) base44.analytics.track({ eventName: 'guides_subtype_filter_clicked', properties: { subtype: sub, category: activeFilter } }); }}
-                className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === sub ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
-                {sub}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
-        {filteredGuides.length === 0 ? (
-          <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
-            <p className="font-display font-bold text-foreground">No guides found</p>
-          </div>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {filteredGuides.map((guide, i) => (
-              <GuideCard key={guide.id} guide={guide} index={i} />
-            ))}
-          </div>
-        )}
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {filteredGuides.map((guide, i) => <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={onOpenLegend} />)}
       </div>
     </div>
   );
 }
 
-function AnimalRow({ animal }) {
-  const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
-
-  if (animal.available && animal.guideId) {
-    return (
-      <Link to={`/guides/${animal.guideId}`}>
-        <motion.div whileHover={{ x: 3 }}
-          className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
-          <div className="flex items-center gap-3 min-w-0">
-            <span className="text-xl flex-shrink-0">{animal.emoji}</span>
-            <div className="min-w-0">
-              <p className="font-display font-semibold text-sm text-foreground truncate">{animal.name}</p>
-              <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2 flex-shrink-0">
-            <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>{animal.difficulty}</span>
-            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-secondary transition-colors" />
-          </div>
-        </motion.div>
-      </Link>
-    );
-  }
-
+function AnimalRow({ animal, onOpenLegend }) {
+  const diffClass = difficultyColor[animal.difficulty] || 'bg-muted';
   return (
-    <div className="flex items-center justify-between bg-card/50 border border-border/50 rounded-xl px-4 py-3 opacity-60">
-      <div className="flex items-center gap-3 min-w-0">
-        <span className="text-xl flex-shrink-0 grayscale">{animal.emoji}</span>
-        <div className="min-w-0">
-          <p className="font-display font-semibold text-sm text-foreground truncate">{animal.name}</p>
-          <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>
-        </div>
-      </div>
-      <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>{animal.difficulty}</span>
+    <div className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3">
+      <span className="text-xl">{animal.emoji} {animal.name}</span>
+      <button onClick={(e) => { e.preventDefault(); onOpenLegend(); }} className={`text-xs px-2 py-0.5 rounded-full ${diffClass}`}>{animal.difficulty}</button>
     </div>
   );
 }
 
-function GuideCard({ guide, index }) {
-  const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
-  const isBreedQuirk = guide.name.includes('Breed Quirks') || guide.name.includes(':');
-
+function GuideCard({ guide, index, onOpenLegend }) {
+  const diffClass = difficultyColor[guide.difficulty] || 'bg-muted';
   return (
-    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
-        <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
-          <div className="flex items-start justify-between mb-3">
-            <span className="text-3xl">{guide.emoji}</span>
-            <div className="flex items-center gap-1.5 flex-wrap justify-end">
-              {isBreedQuirk && <span className="text-xs font-display font-semibold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">Breed Quirks</span>}
-              {guide.sizeCategory && guide.sizeCategory !== 'All Sizes' && (
-                <span className="text-xs font-display font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{guide.sizeCategory}</span>
-              )}
-              <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>{guide.difficulty}</span>
-            </div>
-          </div>
-          <h3 className="font-display font-bold text-base text-foreground mb-1 group-hover:text-secondary transition-colors">{guide.name}</h3>
-          <p className="text-xs text-muted-foreground font-body mb-2">{guide.petType}</p>
-          <p className="text-xs text-muted-foreground font-body leading-relaxed flex-1">{guide.tagline}</p>
-          <div className="flex items-center gap-1 mt-4 text-xs font-display font-semibold text-secondary">
-            View full guide <ChevronRight className="w-3.5 h-3.5" />
-          </div>
-        </div>
-      </Link>
-    </motion.div>
+    <div className="bg-card border border-border rounded-2xl p-5 h-full">
+      <div className="flex justify-between mb-3">
+        <span className="text-3xl">{guide.emoji}</span>
+        <button onClick={(e) => { e.preventDefault(); onOpenLegend(); }} className={`text-xs px-2 py-0.5 rounded-full ${diffClass}`}>{guide.difficulty}</button>
+      </div>
+      <h3 className="font-bold">{guide.name}</h3>
+      <p className="text-sm text-muted-foreground">{guide.tagline}</p>
+    </div>
   );
 }
