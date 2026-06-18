@@ -124,9 +124,12 @@ export default function Blog() {
   };
 
   const handleSelectPost = (post) => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
     const targetSlug = post.slug?.current || post._id || post.id;
     navigate({ search: `?post=${targetSlug}` });
+
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 80);
   };
 
   const handlePageChange = (newPage) => {
@@ -145,8 +148,14 @@ export default function Blog() {
 
   const handleCategoryChange = (cat) => {
     const urlParams = new URLSearchParams();
-    if (slugify(cat) !== 'all') urlParams.set('category', slugify(cat));
+    if (slugify(cat) !== 'all') {
+      urlParams.set('category', slugify(cat));
+    }
     navigate({ search: urlParams.toString() });
+
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 80);
   };
 
   if (selectedPost) {
@@ -286,7 +295,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
               {post.excerpt}
             </p>
 
-            {/* === ONLY CHANGE: Using SanityImage for the featured image === */}
+            {/* Featured Image using SanityImage */}
             {post.mainImage && (
               <div className="mb-10">
                 <SanityImage 

@@ -20,14 +20,14 @@ export default function PortableTextImage({ value, link, alt }) {
     urlFor(value).width(1200).quality(80).format('jpg').url() + ' 1200w',
   ].join(', ');
 
-  const imageEl = (
+  const imageElement = (
     <picture>
-      <source srcSet={webpSrcSet} sizes="(max-width: 768px) 100vw, 800px" type="image/webp" />
-      <source srcSet={jpgSrcSet} sizes="(max-width: 768px) 100vw, 800px" type="image/jpeg" />
+      <source srcSet={webpSrcSet} sizes="(max-width: 768px) 100vw, 900px" type="image/webp" />
+      <source srcSet={jpgSrcSet} sizes="(max-width: 768px) 100vw, 900px" type="image/jpeg" />
       <img
-        src={urlFor(value).width(800).quality(80).format('jpg').url()}
+        src={urlFor(value).width(900).quality(80).format('jpg').url()}
         alt={altText}
-        className={`rounded-2xl shadow-md w-full max-w-lg max-h-80 object-contain transition-shadow ${
+        className={`rounded-2xl shadow-md w-full max-w-2xl max-h-[500px] object-contain transition-shadow ${
           linkUrl ? 'cursor-pointer hover:shadow-xl' : ''
         }`}
         loading="lazy"
@@ -39,20 +39,16 @@ export default function PortableTextImage({ value, link, alt }) {
   return (
     <figure className="my-8 flex justify-center">
       {linkUrl ? (
-        <a 
-          href={linkUrl} 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          {imageEl}
+        <a href={linkUrl} target="_blank" rel="noopener noreferrer">
+          {imageElement}
         </a>
       ) : (
-        imageEl
+        imageElement
       )}
-      
+
       {/* Optional caption */}
       {value.caption && (
-        <figcaption className="mt-2 text-center text-xs text-muted-foreground italic">
+        <figcaption className="mt-2 text-center text-xs text-muted-foreground italic max-w-2xl">
           {value.caption}
         </figcaption>
       )}
