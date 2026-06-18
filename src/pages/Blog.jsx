@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
-import { useNavigate, useLocation } from 'react-router-dom'; // Powered by React Router
+import { useNavigate, useLocation } from 'react-router-dom';
 import { client } from '@/lib/sanity';
 import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
@@ -9,7 +9,7 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
-import { urlFor } from '@/lib/sanityImage';
+import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 
@@ -28,13 +28,9 @@ const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
   "count": count(*[_type == "post" && references(^._id)])
 }`;
 
-// Helper function to safely turn any string into a clean hyphenated URL param
 const slugify = (text) => {
   if (!text) return '';
-  return text
-    .toLowerCase()
-    .replace(/ & /g, '-')  // Handle special ' & ' cleanups
-    .replace(/ /g, '-');    // Turn spaces into hyphens
+  return text.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
 };
 
 export default function Blog() {
@@ -48,18 +44,11 @@ export default function Blog() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // 1. Fetch initial data once on mount
   useEffect(() => {
-    client.fetch(ALL_POSTS_QUERY).then(posts => {
-      setSanityPosts(posts);
-    }).catch(console.error);
-
-    client.fetch(CATEGORIES_QUERY).then(cats => {
-      setSanityCategories(cats);
-    }).catch(console.error);
+    client.fetch(ALL_POSTS_QUERY).then(setSanityPosts).catch(console.error);
+    client.fetch(CATEGORIES_QUERY).then(setSanityCategories).catch(console.error);
   }, []);
 
-  // 2. Main Synchronizer: Listen to all location/URL adjustments to drive page UI state
   useEffect(() => {
     if (sanityPosts.length === 0) return;
 
@@ -68,27 +57,31 @@ export default function Blog() {
     const catParam = urlParams.get('category');
     const pageParam = parseInt(urlParams.get('page')) || 1;
 
-    // Sync active category state
-    setActiveCategory(catParam ? catParam : 'All');
-
-    // Sync page state
+    setActiveCategory(catParam || 'All');
     setPage(pageParam);
 
-    // Sync selected post state dynamically (Fixes the sticky article layout!)
     if (postParam) {
       const allPostsList = [
         ...sanityPosts,
         ...localPosts.map(post => ({
-          ...post, _id: post.id, publishedAt: post.date, mainImage: null, categorySlug: null
-        }))
+          ...post,
+          _id: post.id,
+          publishedAt: post.date,
+          mainImage: null,
+          categorySlug: null,
+        })),
       ];
-      const match = allPostsList.find(p => p.slug?.current === postParam || p._id === postParam);
+
+      const match = allPostsList.find(p => 
+        p.slug?.current === postParam || p._id === postParam
+      );
+
       if (match) {
-        setSelectedPost({ 
-          ...match, 
-          _id: match._id || match.id, 
-          publishedAt: match.publishedAt || match.date, 
-          mainImage: match.mainImage || null 
+        setSelectedPost({
+          ...match,
+          _id: match._id || match.id,
+          publishedAt: match.publishedAt || match.date,
+          mainImage: match.mainImage || null,
         });
       } else {
         setSelectedPost(null);
@@ -101,46 +94,39 @@ export default function Blog() {
   const allPosts = [
     ...sanityPosts,
     ...localPosts.map(post => ({
-      ...post, _id: post.id, publishedAt: post.date, mainImage: null,
-      categorySlug: null
-    }))
+      ...post,
+      _id: post.id,
+      publishedAt: post.date,
+      mainImage: null,
+      categorySlug: null,
+    })),
   ];
 
-  // Hyphen-aware filtering logic
   const filtered = allPosts.filter(p => {
     if (slugify(activeCategory) === 'all') return true;
-
-    const lowerActiveCat = slugify(activeCategory);
-
+    const lowerActive = slugify(activeCategory);
     if (p.allCategories && Array.isArray(p.allCategories)) {
-      return p.allCategories.some(cat => slugify(cat) === lowerActiveCat);
+      return p.allCategories.some(cat => slugify(cat) === lowerActive);
     }
-    
-    return p.category && slugify(p.category) === lowerActiveCat;
+    return p.category && slugify(p.category) === lowerActive;
   });
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 
-  // Clears the post but cleanly maintains where they left off without query baggage
   const handleBack = () => {
     const urlParams = new URLSearchParams();
-    
     if (activeCategory && slugify(activeCategory) !== 'all') {
       urlParams.set('category', slugify(activeCategory));
     }
-    if (page > 1) {
-      urlParams.set('page', page.toString());
-    }
-
+    if (page > 1) urlParams.set('page', page.toString());
     navigate({ search: urlParams.toString() });
   };
 
-  // Purely creates a clean single query argument matching your sitemap to maximize SEO metrics
   const handleSelectPost = (post) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    const targetPostSlug = post.slug?.current || post._id || post.id;
-    navigate({ search: `?post=${targetPostSlug}` });
+    const targetSlug = post.slug?.current || post._id || post.id;
+    navigate({ search: `?post=${targetSlug}` });
   };
 
   const handlePageChange = (newPage) => {
@@ -148,22 +134,18 @@ export default function Blog() {
     const urlParams = new URLSearchParams(location.search);
     urlParams.set('page', newPage.toString());
     navigate({ search: urlParams.toString() });
-    
+
     setTimeout(() => {
       if (listRef.current) {
         const top = listRef.current.getBoundingClientRect().top + window.scrollY - 80;
         window.scrollTo({ top, behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }, 50);
   };
 
   const handleCategoryChange = (cat) => {
     const urlParams = new URLSearchParams();
-    if (slugify(cat) !== 'all') {
-      urlParams.set('category', slugify(cat));
-    }
+    if (slugify(cat) !== 'all') urlParams.set('category', slugify(cat));
     navigate({ search: urlParams.toString() });
   };
 
@@ -185,14 +167,11 @@ export default function Blog() {
             </p>
           </motion.div>
 
-          {/* Category filter — dynamic from Sanity */}
           <div className="flex flex-wrap gap-2 mt-5">
             <button
               onClick={() => handleCategoryChange('All')}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                slugify(activeCategory) === 'all'
-                  ? 'bg-secondary text-secondary-foreground'
-                  : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                slugify(activeCategory) === 'all' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
               All
@@ -202,13 +181,10 @@ export default function Blog() {
                 key={cat._id}
                 onClick={() => handleCategoryChange(cat.title)}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                  slugify(activeCategory) === slugify(cat.title)
-                    ? 'bg-secondary text-secondary-foreground'
-                    : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
+                  slugify(activeCategory) === slugify(cat.title) ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
               >
-                {cat.title}
-                {cat.count > 0 && <span className="ml-1 opacity-60">({cat.count})</span>}
+                {cat.title} <span className="opacity-60">({cat.count})</span>
               </button>
             ))}
           </div>
@@ -217,46 +193,28 @@ export default function Blog() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Posts */}
           <div className="lg:col-span-2">
             <div ref={listRef} className="space-y-3 mb-6">
               {paginated.map((post, i) => (
-                <motion.div
-                  key={post._id}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.04 }}
-                >
+                <motion.div key={post._id} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
                   <CompactPostCard post={post} onClick={() => handleSelectPost(post)} />
                 </motion.div>
               ))}
             </div>
 
-            {/* Pagination */}
             {totalPages > 1 && (
               <div className="flex items-center justify-between mt-6">
-                <button
-                  onClick={() => handlePageChange(page - 1)}
-                  disabled={page === 1}
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-                >
-                  <ChevronLeft className="w-4 h-4" /> Previous
+                <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
+                  Previous
                 </button>
-                <span className="text-sm font-body text-muted-foreground">
-                  Page {page} of {totalPages}
-                </span>
-                <button
-                  onClick={() => handlePageChange(page + 1)}
-                  disabled={page === totalPages}
-                  className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-                >
-                  Next <ChevronRight className="w-4 h-4" />
+                <span className="text-sm text-muted-foreground">Page {page} of {totalPages}</span>
+                <button onClick={() => handlePageChange(page + 1)} disabled={page === totalPages} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
+                  Next
                 </button>
               </div>
             )}
           </div>
 
-          {/* Sidebar */}
           <div className="space-y-5">
             <div className="bg-card border border-border rounded-2xl p-6">
               <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe — it's free</h3>
@@ -264,17 +222,12 @@ export default function Blog() {
               <BeehiivSubscribe />
             </div>
 
-            {/* Categories sidebar */}
             {sanityCategories.filter(c => c.count > 0).length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {sanityCategories.filter(c => c.count > 0).map(cat => (
-                    <button
-                      key={cat._id}
-                      onClick={() => handleCategoryChange(cat.title)}
-                      className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group"
-                    >
+                    <button key={cat._id} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
                     </button>
@@ -283,20 +236,13 @@ export default function Blog() {
               </div>
             )}
 
-            {/* Recent Articles */}
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-display font-bold text-sm text-foreground mb-3">Recent Articles</h3>
               <div className="space-y-3">
                 {allPosts.slice(0, 4).map(post => (
-                  <button
-                    key={post._id}
-                    onClick={() => handleSelectPost(post)}
-                    className="w-full text-left flex items-start gap-2.5 group"
-                  >
+                  <button key={post._id} onClick={() => handleSelectPost(post)} className="w-full text-left flex items-start gap-2.5 group">
                     <span className="text-lg flex-shrink-0">🦎</span>
-                    <p className="text-xs font-body text-muted-foreground group-hover:text-foreground transition-colors leading-snug line-clamp-2">
-                      {post.title}
-                    </p>
+                    <p className="text-xs text-muted-foreground group-hover:text-foreground transition-colors line-clamp-2">{post.title}</p>
                   </button>
                 ))}
               </div>
@@ -308,48 +254,13 @@ export default function Blog() {
   );
 }
 
-function LocalPostContent({ content }) {
-  const lines = content.split('\n');
-  const elements = [];
-  let i = 0;
-  while (i < lines.length) {
-    const line = lines[i].trim();
-    if (!line) { i++; continue; }
-    if (/^\*\*(.+)\*\*$/.test(line)) {
-      elements.push(<h3 key={i} className="font-display font-bold text-lg text-foreground mt-6 mb-2">{line.replace(/^\*\*/, '').replace(/\*\*$/, '')}</h3>);
-      i++; continue;
-    }
-    if (/^####(.+)####$/.test(line)) {
-      elements.push(<h4 key={i} className="font-display font-bold text-xl text-foreground mt-6 mb-2">{line.replace(/^####/, '').replace(/####$/, '')}</h4>);
-      i++; continue;
-    }
-    if (line.startsWith('- ')) {
-      const bullets = [];
-      while (i < lines.length && lines[i].trim().startsWith('- ')) { bullets.push(lines[i].trim().slice(2)); i++; }
-      elements.push(<ul key={`ul-${i}`} className="list-disc pl-5 mb-4 space-y-1.5 text-muted-foreground font-body text-sm leading-relaxed">{bullets.map((b, bi) => <li key={bi}>{b}</li>)}</ul>);
-      continue;
-    }
-    const parts = line.split(/(\*\*[^*]+\*\*)/g).map((part, pi) => {
-      if (/^\*\*(.+)\*\*$/.test(part)) return <strong key={pi} className="text-foreground font-semibold">{part.slice(2, -2)}</strong>;
-      return part;
-    });
-    elements.push(<p key={i} className="mb-4 leading-relaxed text-muted-foreground font-body text-sm">{parts}</p>);
-    i++;
-  }
-  return <div className="space-y-0">{elements}</div>;
-}
-
 function PostView({ post, onBack, allPosts, onSelectPost }) {
-  // Let React Router manage popstate natively through the trigger loop
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <button
-              onClick={onBack}
-              className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
-            >
+            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6">
               <ArrowLeft className="w-4 h-4" /> Back to Critter Digest
             </button>
 
@@ -375,23 +286,30 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
               {post.excerpt}
             </p>
 
+            {/* === ONLY CHANGE: Using SanityImage for the featured image === */}
             {post.mainImage && (
-              <img src={urlFor(post.mainImage).width(800).url()} alt={post.title} className="w-full rounded-2xl mb-10 shadow-lg" />
+              <div className="mb-10">
+                <SanityImage 
+                  image={post.mainImage} 
+                  alt={post.title}
+                  width={1200}
+                  className="w-full rounded-2xl shadow-lg"
+                />
+              </div>
             )}
 
             <div className="prose max-w-none">
-              {post.body ? <PortableTextRenderer content={post.body} /> : <LocalPostContent content={post.content || ''} />}
+              {post.body ? (
+                <PortableTextRenderer content={post.body} />
+              ) : (
+                <LocalPostContent content={post.content || ''} />
+              )}
             </div>
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 
-            {/* You May Also Like — only for Sanity posts with body content */}
             {post.body && (
-              <YouMayAlsoLike
-                currentPostId={post._id}
-                categorySlug={post.categorySlug}
-                onSelectPost={onSelectPost}
-              />
+              <YouMayAlsoLike currentPostId={post._id} categorySlug={post.categorySlug} onSelectPost={onSelectPost} />
             )}
           </div>
 
@@ -399,9 +317,9 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             <PostSidebar 
               allPosts={allPosts} 
               currentPost={post} 
-              onSelectPost={(p) => { 
-                onSelectPost(p); 
-                window.scrollTo({ top: 0, behavior: 'smooth' }); 
+              onSelectPost={(p) => {
+                onSelectPost(p);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
               }} 
             />
           </div>
@@ -409,4 +327,45 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
       </div>
     </motion.div>
   );
+}
+
+function LocalPostContent({ content }) {
+  const lines = content.split('\n');
+  const elements = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i].trim();
+    if (!line) { i++; continue; }
+
+    if (/^\*\*(.+)\*\*$/.test(line)) {
+      elements.push(<h3 key={i} className="font-display font-bold text-lg text-foreground mt-6 mb-2">{line.replace(/^\*\*/, '').replace(/\*\*$/, '')}</h3>);
+      i++; continue;
+    }
+
+    if (/^####(.+)####$/.test(line)) {
+      elements.push(<h4 key={i} className="font-display font-bold text-xl text-foreground mt-6 mb-2">{line.replace(/^####/, '').replace(/####$/, '')}</h4>);
+      i++; continue;
+    }
+
+    if (line.startsWith('- ')) {
+      const bullets = [];
+      while (i < lines.length && lines[i].trim().startsWith('- ')) {
+        bullets.push(lines[i].trim().slice(2));
+        i++;
+      }
+      elements.push(<ul key={`ul-${i}`} className="list-disc pl-5 mb-4 space-y-1.5 text-muted-foreground font-body text-sm leading-relaxed">{bullets.map((b, bi) => <li key={bi}>{b}</li>)}</ul>);
+      continue;
+    }
+
+    const parts = line.split(/(\*\*[^*]+\*\*)/g).map((part, pi) => {
+      if (/^\*\*(.+)\*\*$/.test(part)) return <strong key={pi} className="text-foreground font-semibold">{part.slice(2, -2)}</strong>;
+      return part;
+    });
+
+    elements.push(<p key={i} className="mb-4 leading-relaxed text-muted-foreground font-body text-sm">{parts}</p>);
+    i++;
+  }
+
+  return <div className="space-y-0">{elements}</div>;
 }
