@@ -39,10 +39,10 @@ export default function TrendingFacts({ onOpenFact }) {
             <p className="text-sm text-muted-foreground font-body mt-1">The wildest facts everyone's talking about</p>
           </div>
           <div className="hidden sm:flex gap-2">
-            <button onClick={() => scroll(-1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors">
+            <button onClick={() => scroll(-1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll left">
               <ChevronLeft className="w-4 h-4" />
             </button>
-            <button onClick={() => scroll(1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors">
+            <button onClick={() => scroll(1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll right">
               <ChevronRight className="w-4 h-4" />
             </button>
           </div>

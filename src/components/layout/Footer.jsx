@@ -23,7 +23,7 @@ export default function Footer() {
       <Logo />
     </Link>
   </div>
-            <p className="text-xs text-muted-foreground font-body leading-relaxed mb-4 max-w-[250px]">
+            <p className="text-xs text-foreground/80 font-body leading-relaxed mb-4 max-w-[250px]">
               Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
             </p>
             <SiteCounter />

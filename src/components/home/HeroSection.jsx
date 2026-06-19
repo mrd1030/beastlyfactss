@@ -93,7 +93,7 @@ export default function HeroSection() {
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
+                  className="bg-secondary backdrop-blur-sm border border-border text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
                 >
                   🧠 Explore Facts
                   <ArrowRight className="w-4 h-4" />
