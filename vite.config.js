@@ -1,17 +1,31 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import mdx from '@mdx-js/rollup';
+import remarkFrontmatter from 'remark-frontmatter';
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    mdx({
+      remarkPlugins: [
+        remarkFrontmatter,      // Parses the YAML frontmatter
+        remarkMdxFrontmatter,   // Makes it available as `frontmatter` export
+      ],
+    }),
+    react(),
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
+
+
+  // ... rest of your config (build, server, etc.)
   build: {
     outDir: 'dist',
     emptyOutDir: true,
