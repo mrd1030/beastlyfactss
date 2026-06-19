@@ -24,6 +24,16 @@ const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
   "tags": tags
 }`;
 
+// EXACT MATCH slugify function to bridge perfectly with Blog.jsx
+const slugify = (text) => {
+  if (!text) return '';
+  return text.toString().toLowerCase()
+    .replace(/\s*&\s*|\s*and\s*/g, '-')
+    .replace(/[^a-z0-9\-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+};
+
 export default function Search() {
   const navigate = useNavigate();
   const urlParams = new URLSearchParams(window.location.search);
@@ -69,8 +79,12 @@ export default function Search() {
     }, 400);
   };
 
+  // Safe matching internally using slugify
   const filtered = results.filter(p =>
-    !activeCategory || p.categorySlug === activeCategory || (p.tags || []).includes(activeCategory)
+    !activeCategory || 
+    slugify(p.categorySlug) === slugify(activeCategory) || 
+    slugify(p.category) === slugify(activeCategory) ||
+    (p.tags || []).some(t => slugify(t) === slugify(activeCategory))
   );
 
   const sorted = [...filtered].sort((a, b) => {
@@ -120,7 +134,7 @@ export default function Search() {
             >
               All
             </button>
-            {CATEGORIES.filter(c => results.some(r => r.categorySlug === c.slug || (r.tags || []).includes(c.slug))).map(c => (
+            {CATEGORIES.filter(c => results.some(r => slugify(r.categorySlug) === slugify(c.slug) || slugify(r.category) === slugify(c.slug) || (r.tags || []).some(t => slugify(t) === slugify(c.slug)))).map(c => (
               <button
                 key={c.slug}
                 onClick={() => setActiveCategory(activeCategory === c.slug ? '' : c.slug)}
@@ -163,7 +177,10 @@ export default function Search() {
           <div className="space-y-3">
             {sorted.map((post, i) => (
               <motion.div key={post._id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
-                <CompactPostCard post={post} />
+                <CompactPostCard 
+                  post={post} 
+                  onClick={() => navigate(`/blog?post=${post.slug?.current || post._id}`)} 
+                />
               </motion.div>
             ))}
           </div>
@@ -176,17 +193,23 @@ export default function Search() {
             <p className="font-display font-bold text-foreground text-lg">No results found</p>
             <p className="text-sm text-muted-foreground font-body mt-1 mb-6">Try different keywords or browse by category.</p>
             <div className="flex flex-wrap justify-center gap-2">
-              {CATEGORIES.slice(0, 6).map(c => (
-                <Link key={c.slug} to={`/category/${c.slug}`}
-                  className="text-xs font-display font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1">
-                  {c.emoji} {c.label}
-                </Link>
-              ))}
+              {CATEGORIES.slice(0, 6).map(c => {
+                const cleanSlug = slugify(c.slug || c.label);
+                return (
+                  <Link 
+                    key={c.slug} 
+                    to={`/blog?category=${cleanSlug}`}
+                    className="text-xs font-display font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1"
+                  >
+                    {c.emoji} {c.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
 
-        {/* Pre-search state */}
+        {/* Pre-search state - Browse popular categories */}
         {!loading && !hasSearched.current && (
           <div className="py-8">
             <p className="text-sm font-body text-muted-foreground mb-4">Browse popular categories:</p>
@@ -195,10 +218,15 @@ export default function Search() {
                 const local = CATEGORIES.find(lc => lc.slug === c.slug || lc.label?.toLowerCase() === c.title?.toLowerCase());
                 const emoji = local?.emoji || '🐾';
                 const label = c.title || local?.label || c.slug;
-                const slug = c.slug;
+                
+                const cleanSlug = slugify(c.slug || label);
+
                 return (
-                  <Link key={slug} to={`/category/${slug}`}
-                    className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group">
+                  <Link 
+                    key={c.slug || label} 
+                    to={`/blog?category=${cleanSlug}`}
+                    className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
+                  >
                     <span className="text-xl">{emoji}</span>
                     <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{label}</span>
                   </Link>
