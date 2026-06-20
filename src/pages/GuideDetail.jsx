@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight } from 'lucide-react';
@@ -175,9 +175,22 @@ export default function GuideDetail() {
         <meta property="og:description" content={guideDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content={`${guide.name} care guide — Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guideTitle} />
         <meta name="twitter:description" content={guideDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": guideTitle,
+          "description": guideDescription,
+          "url": canonicalUrl,
+          "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
+          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
+          "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
+        })}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-16">

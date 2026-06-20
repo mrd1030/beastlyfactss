@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -423,9 +423,12 @@ export default function Quiz() {
         <meta property="og:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
         <meta property="og:url" content="https://beastlyfacts.com/quiz" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — animal personality and trivia quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
         <meta name="twitter:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">

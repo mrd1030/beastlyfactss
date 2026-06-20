@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Mail, Instagram } from 'lucide-react';
 
@@ -24,9 +24,12 @@ export default function Contact() {
         <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
         <meta property="og:url" content="https://beastlyfacts.com/contact" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — get in touch" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Beastly Facts" />
         <meta name="twitter:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">

@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
 import { client } from '@/lib/sanity';
+import { urlFor } from '@/lib/sanityImage';
 import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -199,9 +200,12 @@ export default function Blog() {
         <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
         <meta property="og:url" content="https://beastlyfacts.com/blog" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="The Critter Digest — reptile and exotic pet care blog by Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Critter Digest | Beastly Facts" />
         <meta name="twitter:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
@@ -324,6 +328,9 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}`;
   const postTitle = `${post.title} | Beastly Facts`;
   const postDescription = post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
+  const ogImage = post.mainImage
+    ? urlFor(post.mainImage).width(1200).height(630).fit('crop').url()
+    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -331,6 +338,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
     "headline": post.title,
     "description": post.excerpt || '',
     "url": canonicalUrl,
+    "image": ogImage,
     "datePublished": post.publishedAt || '',
     "dateModified": post._updatedAt || post.publishedAt || '',
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
@@ -358,11 +366,14 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <meta property="og:description" content={postDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content={ogImage} />
+        <meta property="og:image:alt" content={post.title} />
         {post.publishedAt && <meta property="article:published_time" content={post.publishedAt} />}
         {post.category && <meta property="article:section" content={post.category} />}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={postDescription} />
+        <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

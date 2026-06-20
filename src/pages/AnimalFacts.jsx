@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -66,9 +66,12 @@ export default function AnimalFacts() {
         <meta property="og:description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets." />
         <meta property="og:url" content="https://beastlyfacts.com/animal-facts" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — fun animal facts and pet care tips" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fun Animal Facts & Pet Care Tips | Beastly Facts" />
         <meta name="twitter:description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">

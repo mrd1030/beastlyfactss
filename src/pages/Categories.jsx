@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -34,9 +34,12 @@ export default function Categories() {
         <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more." />
         <meta property="og:url" content="https://beastlyfacts.com/categories" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — browse by category" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Browse by Category | Beastly Facts" />
         <meta name="twitter:description" content="Explore Beastly Facts articles and care guides by animal category." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">

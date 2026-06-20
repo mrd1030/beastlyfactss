@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
@@ -93,9 +93,12 @@ export default function CategoryPage() {
         <meta property="og:description" content={categoryDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content={`${categoryTitle} articles and care guides — Beastly Facts`} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${categoryTitle} Articles | Beastly Facts`} />
         <meta name="twitter:description" content={categoryDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
       {/* Breadcrumb */}

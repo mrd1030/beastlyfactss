@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
@@ -76,9 +76,12 @@ export default function Guides() {
         <meta property="og:description" content="Browse evidence-based care guides for reptiles, exotic pets, dogs, and cats. Covering housing, diet, health, and enrichment for over 50 species." />
         <meta property="og:url" content="https://beastlyfacts.com/encyclopedia?tab=guides" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — pet care guides for reptiles, dogs, cats and exotic pets" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Pet Care Guides | Beastly Facts" />
         <meta name="twitter:description" content="Browse evidence-based care guides for reptiles, exotic pets, dogs, and cats." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
