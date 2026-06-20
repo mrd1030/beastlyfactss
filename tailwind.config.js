@@ -43,11 +43,11 @@ module.exports = {
             '--tw-prose-invert-th-borders': 'hsl(var(--border))',
             '--tw-prose-invert-td-borders': 'hsl(var(--border))',
             // Default body styles for prose elements not explicitly configured below
-            fontFamily: 'var(--font-body), sans-serif',
+            fontFamily: ['var(--font-body)', 'sans-serif'],
             fontSize: '1rem',
             lineHeight: '1.75',
             h1: {
-              fontFamily: 'var(--font-display), sans-serif',
+              fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '700',
               fontSize: '2rem',
               lineHeight: '1.2',
@@ -55,7 +55,7 @@ module.exports = {
               marginTop: '0',
             },
             h2: {
-              fontFamily: 'var(--font-display), sans-serif',
+              fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '700',
               fontSize: '1.5rem',
               lineHeight: '1.3',
@@ -63,7 +63,7 @@ module.exports = {
               marginBottom: '0.75rem',
             },
             h3: {
-              fontFamily: 'var(--font-display), sans-serif',
+              fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '600',
               fontSize: '1.25rem',
               lineHeight: '1.4',
@@ -71,7 +71,7 @@ module.exports = {
               marginBottom: '0.5rem',
             },
             h4: {
-              fontFamily: 'var(--font-display), sans-serif',
+              fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '600',
               fontSize: '1.1rem',
               lineHeight: '1.4',
@@ -139,7 +139,7 @@ module.exports = {
               width: '100%',
             },
             th: {
-              fontFamily: 'var(--font-display), sans-serif',
+              fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '600',
               backgroundColor: 'hsl(var(--muted))',
             },
