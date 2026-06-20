@@ -114,15 +114,22 @@ export default function Blog() {
   });
 
   // Build extra categories from MDX posts that aren't already in Sanity categories
-  const sanitycategorySlugs = new Set(sanityCategories.map(c => slugify(c.title)));
+  const sanityCategorySlugs = new Set(sanityCategories.map(c => slugify(c.title)));
   const mdxCategories = Array.from(
     mdxPosts.reduce((map, post) => {
-      const cats = post.allCategories?.length ? post.allCategories : post.category ? [post.category] : [];
-      cats.forEach(cat => {
-        const s = slugify(cat);
-        if (!sanitycategorySlugs.has(s)) {
-          if (!map.has(s)) map.set(s, { title: cat, slug: s, count: 0 });
-          map.get(s).count += 1;
+      let categories;
+      if (post.allCategories?.length) {
+        categories = post.allCategories;
+      } else if (post.category) {
+        categories = [post.category];
+      } else {
+        categories = [];
+      }
+      categories.forEach(cat => {
+        const categorySlug = slugify(cat);
+        if (!sanityCategorySlugs.has(categorySlug)) {
+          if (!map.has(categorySlug)) map.set(categorySlug, { title: cat, slug: categorySlug, count: 0 });
+          map.get(categorySlug).count += 1;
         }
       });
       return map;
@@ -343,12 +350,12 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             )}
 
             <div className="prose max-w-none">
-              {post.source === 'mdx' ? (
-                (() => { const MdxContent = post.content; return <MdxContent components={MdxComponents} />; })()
+              {post.source === 'mdx' && post.content ? (
+                React.createElement(post.content, { components: MdxComponents })
               ) : post.body ? (
                 <PortableTextRenderer content={post.body} />
               ) : (
-                <LocalPostContent content={post.content || ''} />
+                <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
             </div>
 
