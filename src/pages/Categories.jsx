@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CATEGORIES } from '@/lib/data/categories';
@@ -25,10 +26,22 @@ export default function Categories() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Browse by Category | Beastly Facts</title>
+        <meta name="description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more. Find exactly what you're looking for." />
+        <link rel="canonical" href="https://beastlyfacts.com/categories" />
+        <meta property="og:title" content="Browse by Category | Beastly Facts" />
+        <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more." />
+        <meta property="og:url" content="https://beastlyfacts.com/categories" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Browse by Category | Beastly Facts" />
+        <meta name="twitter:description" content="Explore Beastly Facts articles and care guides by animal category." />
+      </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🗂️</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="File cabinet">🗂️</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Browse by Category</h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
               Explore care guides, fun facts, and expert tips organised by animal type.

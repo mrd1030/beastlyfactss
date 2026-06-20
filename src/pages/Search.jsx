@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search as SearchIcon, X } from 'lucide-react';
@@ -95,10 +96,16 @@ export default function Search() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Search Animal Care Guides & Articles | Beastly Facts</title>
+        <meta name="description" content="Search Beastly Facts for animal care guides, fun facts, reptile husbandry tips, and pet care articles. Find exactly what you need from our growing library." />
+        <link rel="canonical" href="https://beastlyfacts.com/search" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🔍</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Search">🔍</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-4">
               Search Care Guides & Articles
             </h1>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Mail, Instagram } from 'lucide-react';
 
@@ -15,10 +16,22 @@ import DonateButton from '@/components/DonateButton';
 export default function Contact() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Contact Beastly Facts | Get in Touch</title>
+        <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team — we'd love to hear from you!" />
+        <link rel="canonical" href="https://beastlyfacts.com/contact" />
+        <meta property="og:title" content="Contact Beastly Facts" />
+        <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
+        <meta property="og:url" content="https://beastlyfacts.com/contact" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Contact Beastly Facts" />
+        <meta name="twitter:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
+      </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">💌</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Love letter">💌</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Get in Touch
             </h1>

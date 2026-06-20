@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
@@ -67,10 +68,22 @@ export default function Guides() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Pet Care Guides | Reptiles, Dogs, Cats & Exotic Pets | Beastly Facts</title>
+        <meta name="description" content="Browse evidence-based care guides for reptiles, exotic pets, dogs, and cats on Beastly Facts. Covering housing, diet, health, and enrichment for over 50 species." />
+        <link rel="canonical" href="https://beastlyfacts.com/encyclopedia?tab=guides" />
+        <meta property="og:title" content="Pet Care Guides | Reptiles, Dogs, Cats & Exotic Pets | Beastly Facts" />
+        <meta property="og:description" content="Browse evidence-based care guides for reptiles, exotic pets, dogs, and cats. Covering housing, diet, health, and enrichment for over 50 species." />
+        <meta property="og:url" content="https://beastlyfacts.com/encyclopedia?tab=guides" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Pet Care Guides | Beastly Facts" />
+        <meta name="twitter:description" content="Browse evidence-based care guides for reptiles, exotic pets, dogs, and cats." />
+      </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">📖</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Open book">📖</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
               Care Guides
             </h1>

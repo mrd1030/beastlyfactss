@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -414,10 +415,22 @@ export default function Quiz() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts</title>
+        <meta name="description" content="Take a fun animal quiz on Beastly Facts — find out which animal matches your personality, test your wildlife trivia, or challenge yourself with the Beastly Facts knowledge quiz." />
+        <link rel="canonical" href="https://beastlyfacts.com/quiz" />
+        <meta property="og:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
+        <meta property="og:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
+        <meta property="og:url" content="https://beastlyfacts.com/quiz" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
+        <meta name="twitter:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
+      </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🧩</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Puzzle piece">🧩</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Quizzes</h1>
             <p className="text-sm text-muted-foreground font-body">Personality quiz or knowledge trivia — pick your challenge!</p>
           </motion.div>

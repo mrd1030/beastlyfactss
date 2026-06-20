@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight, Info } from 'lucide-react';
@@ -8,20 +9,7 @@ import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { base44 } from '@/api/base44Client';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 
-// --- SEO HOOKS ---
-function useDocumentTitle(title) {
-  useEffect(() => {
-    document.title = title;
-  }, [title]);
-}
-
-function useMetaDescription(description) {
-  useEffect(() => {
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", description);
-  }, [description]);
-}
-
+// --- SEO ---
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
 // Tabs
@@ -113,19 +101,6 @@ export default function Encyclopedia() {
     }
   }, [location.search]);
 
-  // SEO Updates
-  useDocumentTitle(
-    activeCategory === 'All' 
-      ? `Encyclopedia & Care Guides | Beastly Facts` 
-      : `${activeCategory} Care Guides & Facts | Beastly Facts`
-  );
-
-  useMetaDescription(
-    `Explore our detailed encyclopedia and care guides for ${
-      activeCategory === 'All' ? 'all your pets' : activeCategory
-    }. Everything you need to know about husbandry, health, and happiness.`
-  );
-
   // Encyclopedia filtering
   const filteredEncyclopedia = useMemo(() => {
     return encyclopediaAnimals.filter(a => {
@@ -170,12 +145,34 @@ export default function Encyclopedia() {
     return allGuides;
   }, [activeFilter, dogSize, activeSubtype]);
 
+  const encTitle = activeCategory === 'All'
+    ? 'Encyclopedia & Care Guides | Beastly Facts'
+    : `${activeCategory} Care Guides & Facts | Beastly Facts`;
+  const encDescription = `Explore our detailed encyclopedia and care guides for ${
+    activeCategory === 'All' ? 'all your pets' : activeCategory
+  }. Everything you need to know about husbandry, health, and happiness.`;
+  const encCanonical = activeCategory === 'All'
+    ? 'https://beastlyfacts.com/encyclopedia'
+    : `https://beastlyfacts.com/encyclopedia?category=${activeCategory.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`;
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{encTitle}</title>
+        <meta name="description" content={encDescription} />
+        <link rel="canonical" href={encCanonical} />
+        <meta property="og:title" content={encTitle} />
+        <meta property="og:description" content={encDescription} />
+        <meta property="og:url" content={encCanonical} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={encTitle} />
+        <meta name="twitter:description" content={encDescription} />
+      </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">📚</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Books">📚</span>
             <div className="flex items-center gap-2 mb-1">
               <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground">
                 Encyclopedia & Care Guides

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 
 const Section = ({ title, children }) => (
@@ -11,10 +12,16 @@ const Section = ({ title, children }) => (
 export default function Terms() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Terms of Service | Beastly Facts</title>
+        <meta name="description" content="Read the Beastly Facts terms of service to understand the rules and guidelines for using our animal facts, care guides, and quiz platform." />
+        <link rel="canonical" href="https://beastlyfacts.com/terms" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">📋</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Clipboard">📋</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
             <p className="text-xs text-muted-foreground font-body">Last updated: June 16, 2026</p>
           </motion.div>

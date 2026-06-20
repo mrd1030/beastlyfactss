@@ -1,14 +1,27 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>About Beastly Facts | Animal Trivia, Care Guides & Quizzes</title>
+        <meta name="description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+        <link rel="canonical" href="https://beastlyfacts.com/about" />
+        <meta property="og:title" content="About Beastly Facts" />
+        <meta property="og:description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+        <meta property="og:url" content="https://beastlyfacts.com/about" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Beastly Facts" />
+        <meta name="twitter:description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+      </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🦁</span>
+            <span className="text-3xl mb-2 block" role="img" aria-label="Lion">🦁</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-4">
               About BeastlyFacts
             </h1>

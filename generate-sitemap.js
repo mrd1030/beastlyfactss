@@ -134,8 +134,8 @@ const staticPages = [
   '/guides/tiger-salamander',
 
   '/pack',             // Pack.jsx
-  '/quiz',             // Quiz.jsx
-  '/trivia-quiz',      // TriviaQuiz.jsx
+  '/quiz',             // Quiz.jsx (personality + trivia + knowledge tabs)
+  '/trivia',           // redirects to /quiz?tab=trivia
  
 
   '/donate', // Donate.jsx
@@ -162,7 +162,7 @@ async function generateSitemap() {
     // Extract slugs and format them into relative URLs
     const dynamicPages = data.result.map(post => {
       return {
-        path: `/blog?post=${post.slug}`,
+        path: `/blog/${post.slug}`,
         lastmod: post._updatedAt.split('T')[0]
        // Formats timestamp to YYYY-MM-DD
       };
@@ -177,11 +177,16 @@ async function generateSitemap() {
 
     // Add static pages to XML
     staticPages.forEach(path => {
+      const isHome = path === '';
+      const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/animal-facts', '/quiz'].includes(path);
+      const isLowFreq = path.startsWith('/guides/') || path.startsWith('/category/') || path.startsWith('/privacy') || path.startsWith('/terms');
+      const changefreq = isHighFreq ? 'weekly' : isLowFreq ? 'monthly' : 'weekly';
+      const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isLowFreq ? '0.6' : '0.7';
       xml += `  <url>\n`;
       xml += `    <loc>${BASE_URL}${path}</loc>\n`;
       xml += `    <lastmod>${today}</lastmod>\n`;
-      xml += `    <changefreq>daily</changefreq>\n`;
-      xml += `    <priority>${path === '' ? '1.0' : '0.8'}</priority>\n`;
+      xml += `    <changefreq>${changefreq}</changefreq>\n`;
+      xml += `    <priority>${priority}</priority>\n`;
       xml += `  </url>\n`;
     });
 
