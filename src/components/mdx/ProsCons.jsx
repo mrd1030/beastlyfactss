@@ -7,7 +7,7 @@ export default function ProsCons({
   className = '' 
 }) {
   return (
-    <div className={`my-8 grid gap-4 md:grid-cols-2 ${className}`}>
+    <div className={`not-prose my-8 grid gap-4 md:grid-cols-2 ${className}`}>
       {/* Pros */}
       <div className="rounded-2xl border border-green-200 bg-green-50/50 p-6 dark:border-green-900/50 dark:bg-green-950/20">
         <div className="mb-4 flex items-center gap-2 text-green-700 dark:text-green-400">

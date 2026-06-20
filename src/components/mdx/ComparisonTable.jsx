@@ -8,7 +8,7 @@ export default function ComparisonTable({
   if (!headers.length || !rows.length) return null;
 
   return (
-    <div className={`my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
+    <div className={`not-prose my-8 overflow-x-auto rounded-xl border border-border ${className}`}>
       <table className="w-full text-sm">
         <thead>
           <tr className="border-b border-border bg-muted/50">

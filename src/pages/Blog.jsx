@@ -349,7 +349,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
               </div>
             )}
 
-            <div className="prose max-w-none">
+            <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 React.createElement(post.content, { components: MdxComponents })
               ) : post.body ? (
