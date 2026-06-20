@@ -6,6 +6,8 @@ import { client } from '@/lib/sanity';
 import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
+import { mdxPosts } from '@/lib/mdxPosts';
+import * as MdxComponents from '@/components/mdx';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
@@ -50,8 +52,6 @@ export default function Blog() {
   }, []);
 
   useEffect(() => {
-    if (sanityPosts.length === 0) return;
-
     const urlParams = new URLSearchParams(location.search);
     const postParam = urlParams.get('post');
     const catParam = urlParams.get('category');
@@ -70,6 +70,7 @@ export default function Blog() {
           mainImage: null,
           categorySlug: null,
         })),
+        ...mdxPosts,
       ];
 
       const match = allPostsList.find(p => 
@@ -100,6 +101,7 @@ export default function Blog() {
       mainImage: null,
       categorySlug: null,
     })),
+    ...mdxPosts,
   ];
 
   const filtered = allPosts.filter(p => {
@@ -110,6 +112,29 @@ export default function Blog() {
     }
     return p.category && slugify(p.category) === lowerActive;
   });
+
+  // Build extra categories from MDX posts that aren't already in Sanity categories
+  const sanityCategorySlugs = new Set(sanityCategories.map(c => slugify(c.title)));
+  const mdxCategories = Array.from(
+    mdxPosts.reduce((map, post) => {
+      let categories;
+      if (post.allCategories?.length) {
+        categories = post.allCategories;
+      } else if (post.category) {
+        categories = [post.category];
+      } else {
+        categories = [];
+      }
+      categories.forEach(cat => {
+        const categorySlug = slugify(cat);
+        if (!sanityCategorySlugs.has(categorySlug)) {
+          if (!map.has(categorySlug)) map.set(categorySlug, { title: cat, slug: categorySlug, count: 0 });
+          map.get(categorySlug).count += 1;
+        }
+      });
+      return map;
+    }, new Map())
+  ).map(([, val]) => val);
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
@@ -196,6 +221,17 @@ export default function Blog() {
                 {cat.title} <span className="opacity-60">({cat.count})</span>
               </button>
             ))}
+            {mdxCategories.map(cat => (
+              <button
+                key={cat.slug}
+                onClick={() => handleCategoryChange(cat.title)}
+                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+                  slugify(activeCategory) === cat.slug ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {cat.title} <span className="opacity-60">({cat.count})</span>
+              </button>
+            ))}
           </div>
         </div>
       </div>
@@ -231,12 +267,18 @@ export default function Blog() {
               <BeehiivSubscribe />
             </div>
 
-            {sanityCategories.filter(c => c.count > 0).length > 0 && (
+            {(sanityCategories.filter(c => c.count > 0).length > 0 || mdxCategories.length > 0) && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {sanityCategories.filter(c => c.count > 0).map(cat => (
                     <button key={cat._id} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
+                      <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
+                      <span className="text-muted-foreground">{cat.count}</span>
+                    </button>
+                  ))}
+                  {mdxCategories.map(cat => (
+                    <button key={cat.slug} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
                     </button>
@@ -307,11 +349,13 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
               </div>
             )}
 
-            <div className="prose max-w-none">
-              {post.body ? (
+            <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
+              {post.source === 'mdx' && post.content ? (
+                React.createElement(post.content, { components: MdxComponents })
+              ) : post.body ? (
                 <PortableTextRenderer content={post.body} />
               ) : (
-                <LocalPostContent content={post.content || ''} />
+                <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
             </div>
 

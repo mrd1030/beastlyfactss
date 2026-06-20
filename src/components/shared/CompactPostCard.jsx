@@ -24,6 +24,17 @@ export default function CompactPostCard({ post, onClick }) {
             className="w-full h-full object-cover"
           />
         </div>
+      ) : post.image ? (
+        <div className="w-20 h-14 flex-shrink-0 overflow-hidden rounded-lg">
+          <img
+            src={post.image}
+            alt={post.imageAlt || post.title}
+            className="w-full h-full object-cover"
+            loading="lazy"
+            width={160}
+            height={112}
+          />
+        </div>
       ) : (
         <div className="w-20 h-14 rounded-lg bg-muted flex items-center justify-center flex-shrink-0 text-2xl">
           🐾
