@@ -31,6 +31,8 @@ export default function CompactPostCard({ post, onClick }) {
             alt={post.imageAlt || post.title}
             className="w-full h-full object-cover"
             loading="lazy"
+            width={160}
+            height={112}
           />
         </div>
       ) : (
