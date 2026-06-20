@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight } from 'lucide-react';
@@ -148,8 +149,50 @@ export default function GuideDetail() {
 
   const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
 
+  const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
+  const guideDescription = guide.tagline
+    ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
+    : `Complete care guide for ${guide.name} — covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`;
+  const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Encyclopedia & Guides", "item": "https://beastlyfacts.com/encyclopedia" },
+      { "@type": "ListItem", "position": 3, "name": `${guide.name} Care Guide`, "item": canonicalUrl },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{guideTitle}</title>
+        <meta name="description" content={guideDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={guideTitle} />
+        <meta property="og:description" content={guideDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content={`${guide.name} care guide — Beastly Facts`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={guideTitle} />
+        <meta name="twitter:description" content={guideDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": guideTitle,
+          "description": guideDescription,
+          "url": canonicalUrl,
+          "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
+          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
+          "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
+        })}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      </Helmet>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
         <Link

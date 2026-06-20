@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet'; // Ensure you have react-helmet installed
+import { Helmet } from 'react-helmet-async'; // Ensure you have react-helmet installed
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/home/HeroSection';
 import TrendingFacts from '@/components/home/TrendingFacts';
@@ -20,6 +20,17 @@ export default function Home() {
       <Helmet>
         <title>Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes</title>
         <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and dive into the animal kingdom. Learn today!" />
+        <link rel="canonical" href="https://beastlyfacts.com/" />
+        <meta property="og:title" content="Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes" />
+        <meta property="og:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and dive into the animal kingdom. Learn today!" />
+        <meta property="og:url" content="https://beastlyfacts.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — amazing animal trivia, guides and quizzes" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes" />
+        <meta name="twitter:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and dive into the animal kingdom." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
 
       

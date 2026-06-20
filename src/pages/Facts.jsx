@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom'; 
@@ -204,13 +205,38 @@ export default function Facts() {
     );
   };
 
+  const pageTitle = activeCategory === 'All'
+    ? 'Fun Animal Facts | Beastly Facts'
+    : `${activeCategory} Facts | Beastly Facts`;
+  const pageDescription = activeCategory === 'All'
+    ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts — from weird reptile behaviours to surprising dog science and wild animal trivia.'
+    : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts — curated, verified, and genuinely mind-blowing.`;
+  const canonicalPath = activeCategory === 'All'
+    ? 'https://beastlyfacts.com/facts'
+    : `https://beastlyfacts.com/facts?category=${slugify(activeCategory)}`;
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalPath} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalPath} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts — animal facts collection" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+      </Helmet>
       {/* Header */}
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-            <span className="text-3xl mb-2 block">🧠</span> 
+            <span className="text-3xl mb-2 block" role="img" aria-label="Brain">🧠</span> 
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
               Fun Animal Facts
             </h1> 

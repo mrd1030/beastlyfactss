@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
@@ -67,8 +68,39 @@ export default function CategoryPage() {
     );
   }
 
+  const categoryTitle = category?.title || slug;
+  const categoryDescription = category?.description
+    || `Explore all ${categoryTitle} articles and care guides on Beastly Facts.`;
+  const canonicalUrl = `https://beastlyfacts.com/category/${slug}`;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": categoryTitle, "item": canonicalUrl },
+    ],
+  };
+
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{categoryTitle} Articles & Care Guides | Beastly Facts</title>
+        <meta name="description" content={categoryDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={`${categoryTitle} Articles | Beastly Facts`} />
+        <meta property="og:description" content={categoryDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content={`${categoryTitle} articles and care guides — Beastly Facts`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${categoryTitle} Articles | Beastly Facts`} />
+        <meta name="twitter:description" content={categoryDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      </Helmet>
       {/* Breadcrumb */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-6">
         <nav className="flex items-center gap-1.5 text-xs font-body text-muted-foreground">
@@ -130,18 +162,23 @@ export default function CategoryPage() {
           </div>
         ) : sorted.length === 0 ? (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🗂️</span>
+            <span className="text-4xl block mb-3" role="img" aria-label="File cabinet">🗂️</span>
             <p className="font-display font-bold text-foreground">No articles yet</p>
             <p className="text-sm text-muted-foreground font-body mt-1">Check back soon — more content is on the way!</p>
             <Link to="/blog" className="text-secondary text-sm mt-4 block">← Back to Critter Digest</Link>
           </div>
         ) : (
           <div className="space-y-3">
-            {sorted.map((post, i) => (
-              <motion.div key={post._id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
-                <CompactPostCard post={post} />
-              </motion.div>
-            ))}
+            {sorted.map((post, i) => {
+              const postSlug = post.slug?.current || post._id;
+              return (
+                <motion.div key={post._id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
+                  <Link to={`/blog/${postSlug}`} className="block">
+                    <CompactPostCard post={post} />
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         )}
 

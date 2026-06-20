@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Heart, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -57,6 +58,12 @@ export default function Donate() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Support Beastly Facts | Donate</title>
+        <meta name="description" content="Love Beastly Facts? Support us with a donation and help keep amazing animal facts, care guides, and quizzes free for everyone." />
+        <link rel="canonical" href="https://beastlyfacts.com/donate" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Support BeastlyFacts</h1>

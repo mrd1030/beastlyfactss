@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, XCircle, Trophy, RotateCcw, ChevronRight } from 'lucide-react';
 import { triviaQuestions } from '@/lib/data/triviaQuestions';
@@ -60,6 +61,21 @@ export default function TriviaQuiz() {
   if (step === 'intro') {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
+        <Helmet>
+          <title>Animal Origins Trivia Quiz | Beastly Facts</title>
+          <meta name="description" content={`Test your animal knowledge with ${TOTAL} trivia questions about where animals and breeds come from. Instant feedback and a final score!`} />
+          <link rel="canonical" href="https://beastlyfacts.com/trivia" />
+          <meta property="og:title" content="Animal Origins Trivia Quiz | Beastly Facts" />
+          <meta property="og:description" content={`Test your animal knowledge with ${TOTAL} trivia questions about where animals and breeds come from.`} />
+          <meta property="og:url" content="https://beastlyfacts.com/trivia" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+          <meta property="og:image:alt" content="Beastly Facts — animal origins trivia quiz" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Animal Origins Trivia Quiz | Beastly Facts" />
+          <meta name="twitter:description" content={`Test your animal knowledge with ${TOTAL} trivia questions about where animals and breeds come from.`} />
+          <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        </Helmet>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

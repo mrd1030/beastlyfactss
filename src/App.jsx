@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Helmet } from 'react-helmet'; // Added for SEO Structured Data
+import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClientInstance } from '@/lib/query-client';
@@ -69,6 +69,7 @@ const AuthenticatedApp = () => {
             <Route path="/guides/:id" element={<GuideDetail />} />
             <Route path="/encyclopedia" element={<Encyclopedia />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<Blog />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/pack" element={<Pack />} />
             <Route path="/about" element={<About />} />

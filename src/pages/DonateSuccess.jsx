@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,6 +8,10 @@ import { Button } from '@/components/ui/button';
 export default function DonateSuccess() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
+      <Helmet>
+        <title>Donation Successful | Beastly Facts</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
