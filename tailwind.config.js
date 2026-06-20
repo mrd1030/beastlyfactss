@@ -42,6 +42,7 @@ module.exports = {
             '--tw-prose-invert-pre-bg': 'hsl(var(--muted))',
             '--tw-prose-invert-th-borders': 'hsl(var(--border))',
             '--tw-prose-invert-td-borders': 'hsl(var(--border))',
+            // Default body styles for prose elements not explicitly configured below
             fontFamily: 'var(--font-body), sans-serif',
             fontSize: '1rem',
             lineHeight: '1.75',
@@ -90,7 +91,7 @@ module.exports = {
               marginTop: '0.25rem',
               marginBottom: '0.25rem',
             },
-            'a': {
+            a: {
               color: 'hsl(var(--secondary))',
               textDecoration: 'underline',
               textUnderlineOffset: '2px',
@@ -99,11 +100,11 @@ module.exports = {
                 color: 'hsl(var(--primary))',
               },
             },
-            'strong': {
+            strong: {
               fontWeight: '700',
               color: 'hsl(var(--foreground))',
             },
-            'u': {
+            u: {
               textDecorationColor: 'hsl(var(--secondary))',
               textUnderlineOffset: '2px',
             },
@@ -119,7 +120,7 @@ module.exports = {
               marginTop: '2rem',
               marginBottom: '2rem',
             },
-            'code': {
+            code: {
               backgroundColor: 'hsl(var(--muted))',
               borderRadius: '0.25rem',
               padding: '0.125rem 0.375rem',
@@ -137,7 +138,7 @@ module.exports = {
               fontSize: '0.9rem',
               width: '100%',
             },
-            'th': {
+            th: {
               fontFamily: 'var(--font-display), sans-serif',
               fontWeight: '600',
               backgroundColor: 'hsl(var(--muted))',
@@ -205,8 +206,6 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
-    require("@tailwindcss/typography")({
-      className: 'prose',
-    }),
+    require("@tailwindcss/typography"),
   ],
 };
