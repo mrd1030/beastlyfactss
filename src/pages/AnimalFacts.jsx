@@ -120,11 +120,8 @@ export default function AnimalFacts() {
             <Link to="/facts" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
               🐾 Browse All Facts
             </Link>
-            <Link to="/guides" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
-              📖 Care Guides
-            </Link>
             <Link to="/encyclopedia" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
-              📚 Encyclopedia
+              📚 Encyclopedia & Care Guides
             </Link>
           </div>
         </motion.div>

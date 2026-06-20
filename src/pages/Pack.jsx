@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Heart, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -8,11 +8,13 @@ import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
 
+
 export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
-
+  const { savedQuizResults, removeQuizResult } = useFavoritesCtx();
   const savedFacts = facts.filter(f => favorites.includes(f.id));
+  const [confirmingId, setConfirmingId] = useState(null);
 
   return (
     <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
@@ -26,7 +28,90 @@ export default function Pack() {
             Your personal collection of favorite facts! Tap the heart on any fact to save it here. 🐾
           </p>
         </motion.div>
+{/* Saved Quiz Results */}
+{savedQuizResults.length > 0 && (
+  <div className="mt-10 mb-8">
+    <h2 className="font-display font-bold text-xl text-foreground mb-4">🧩 Saved Quiz Results</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {savedQuizResults.map((qr) => {
+        const handleShareQuiz = () => {
+          const text = `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
+          
+          if (navigator.share) {
+            navigator.share({
+              title: qr.title,
+              text: text,
+            });
+          } else {
+            navigator.clipboard.writeText(text);
+            // Optional: you can add a small toast here later if you want
+          }
+        };
 
+        return (
+          <div key={qr.id} className="bg-card border border-border rounded-2xl p-5 relative">
+            {/* Remove button */}
+            {/* Remove button with confirmation */}
+{/* Remove Button + Styled Confirmation */}
+<div className="absolute top-3 right-3">
+  {!confirmingId || confirmingId !== qr.id ? (
+    <button 
+      onClick={() => setConfirmingId(qr.id)}
+      className="w-6 h-6 flex items-center justify-center rounded-full text-red-400 hover:text-red-500 hover:bg-red-500/10 transition-colors text-lg leading-none"
+      title="Remove from Pack"
+    >
+      ×
+    </button>
+  ) : (
+    // === Styled Confirmation Popup ===
+    <div className="bg-zinc-900 border border-red-500/30 rounded-lg p-3 shadow-xl text-sm w-[210px]">
+      <p className="text-red-400 text-xs mb-2">Remove this result from your Pack?</p>
+      
+      <div className="flex gap-2">
+        <button
+          onClick={() => {
+            removeQuizResult(qr.id);
+            setConfirmingId(null);
+          }}
+          className="flex-1 bg-red-500 hover:bg-red-600 text-white text-xs font-bold py-1.5 rounded-md transition-colors"
+        >
+          Yes, Remove
+        </button>
+        
+        <button
+          onClick={() => setConfirmingId(null)}
+          className="flex-1 bg-zinc-700 hover:bg-zinc-600 text-white text-xs font-bold py-1.5 rounded-md transition-colors"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  )}
+</div>
+
+            <span className="text-4xl block mb-2">{qr.emoji}</span>
+            <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
+            <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{qr.description}</p>
+
+            <div className="flex items-center gap-2 mt-4">
+              {/* Share Button */}
+              <button
+                onClick={handleShareQuiz}
+                className="flex items-center gap-1.5 text-xs font-display font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+              >
+                <Share2 className="w-3.5 h-3.5" /> Share
+              </button>
+
+              <span className="text-[10px] text-muted-foreground">
+                Saved {new Date(qr.savedAt).toLocaleDateString()}
+              </span>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+)}
         {savedFacts.length > 0 ? (
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {savedFacts.map((fact, i) => (

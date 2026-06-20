@@ -21,17 +21,17 @@ export default function Newsletter() {
                         <div>
                             <span className="text-3xl block mb-3">📰</span>
                             <h2 className="font-display font-bold text-2xl text-foreground mb-2">
-                                The Critter Digest
+                                Weekly Critter Digest
                             </h2>
                             <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
-                                Our blog and newsletter in one place. In-depth reptile care guides, husbandry deep-dives, species spotlights, and expert tips — delivered to your inbox and published here.
+                                Get a weekly roundup of verified animal facts, practical care tips, and short quiz challenges—delivered every Sunday. No spam, ever.
                             </p>
                             <div className="flex flex-col gap-2 mb-5">
                                 {[
-                                    "🦎 Gecko & reptile husbandry deep-dives",
-                                    "☀️ UVB lighting & supplementation guides",
-                                    "🌿 Bioactive enclosure walkthroughs",
-                                    "🩺 Health & vet care tips",
+                                    "🦎 Quick reptile care wins for every home",
+                                    "☀️ UVB, heat, and habitat tips that actually work",
+                                    "🌿 Bioactive setup ideas and maintenance hacks",
+                                    "🩺 Simple health checks for happier pets",
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-start gap-2 text-xs font-body text-muted-foreground">
                                         <span className="text-base leading-none mt-0.5">{item.split(' ')[0]}</span>

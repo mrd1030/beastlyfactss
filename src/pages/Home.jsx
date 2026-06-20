@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet'; // Ensure you have react-helmet installed
+import { Link } from 'react-router-dom';
 import HeroSection from '@/components/home/HeroSection';
 import TrendingFacts from '@/components/home/TrendingFacts';
 import EncyclopediaTeaser from '@/components/home/EncyclopediaTeaser';
@@ -23,17 +24,23 @@ export default function Home() {
 
       
       <HeroSection />
-      
-    {/* Descriptive content to fix "0 word count" issue */}
-<section className="px-6 py-8 mt-8 max-w-4xl mx-auto text-muted-foreground border border-border rounded-2xl bg-card shadow-sm">
-  <h2 className="text-xl font-bold text-foreground mb-4"><u>~Welcome to Beastly Facts</u></h2>
-  <p className="mb-4">
-    At Beastly Facts, we are dedicated to bringing the wonders of the animal kingdom directly to your screen. Whether you are a fan of reptiles, mammals, or deep-sea creatures, our platform offers verified facts, educational guides, and fun interactive quizzes.
-  </p>
-  <p>
-    Our mission is to foster a deeper appreciation for wildlife conservation and biology through accessible, bite-sized information. Explore our encyclopedia, test your knowledge with our trivia, or dive into our specialized care guides fit for a wide variety of animals. Every fact you learn here helps support our community of animal enthusiasts.
-  </p>
-</section>
+
+      <section className="px-6 py-8 mt-8 max-w-4xl mx-auto bg-card border border-border rounded-2xl shadow-sm">
+        <div className="px-4 py-6 sm:px-6 items-center text-center">
+          <h2 className="text-2xl font-display font-bold text-foreground mb-3">Start here: the easiest way into Beastly Facts</h2>
+          <p className="text-sm text-center text-muted-foreground font-body leading-relaxed mx-auto max-w-2xl">
+            Choose the best first step for your visit: browse curated verified facts, explore our combined encyclopedia & care guides, or launch a short quiz to discover your animal spirit match.
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <Link to="/facts" className="inline-flex items-center justify-center rounded-full bg-secondary px-5 py-3 text-sm font-display font-bold text-secondary-foreground shadow-lg shadow-secondary/20 hover:bg-secondary/90 transition-colors">
+              Browse curated facts
+            </Link>
+            <Link to="/encyclopedia" className="inline-flex items-center justify-center rounded-full border border-border bg-card px-5 py-3 text-sm font-display font-bold text-foreground hover:bg-muted transition-colors">
+              Explore encyclopedia & guides
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <TrendingFacts onOpenFact={setSelectedFact} />
       <EncyclopediaTeaser />

@@ -5,6 +5,8 @@ import confetti from 'canvas-confetti';
 import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
 import { triviaQuestions } from '@/lib/data/triviaQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';   // ← ADDED
+import KnowledgeQuiz from '@/lib/data/KnowledgeQuiz';
 
 const TRIVIA_TOTAL = triviaQuestions.length;
 
@@ -14,6 +16,9 @@ function PersonalityQuiz() {
   const [scores, setScores] = useState({});
   const [result, setResult] = useLocalStorage('beastly-quiz-result', null);
   const [showResult, setShowResult] = useState(!!result);
+  const [justSaved, setJustSaved] = useState(false);           // ← ADDED
+
+  const { saveQuizResult } = useFavoritesCtx();                // ← ADDED
 
   const currentQ = quizQuestions[step - 1];
   const totalQ = quizQuestions.length;
@@ -42,6 +47,7 @@ function PersonalityQuiz() {
     setScores({});
     setResult(null);
     setShowResult(false);
+    setJustSaved(false);                                       // ← ADDED
   };
 
   const handleShare = () => {
@@ -52,6 +58,14 @@ function PersonalityQuiz() {
     } else {
       navigator.clipboard.writeText(text);
     }
+  };
+
+  // === ADDED: Save to Beast Pack ===
+  const handleSaveToPack = () => {
+    if (!result) return;
+    saveQuizResult(result);
+    setJustSaved(true);
+    setTimeout(() => setJustSaved(false), 2000);
   };
 
   if (showResult && result) {
@@ -76,11 +90,23 @@ function PersonalityQuiz() {
               </span>
             ))}
           </div>
-          <div className="flex justify-center gap-3">
+
+          {/* UPDATED: Added Save to Pack button */}
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
               className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
               <Share2 className="w-4 h-4" /> Share Result
             </motion.button>
+
+            <motion.button 
+              whileHover={{ scale: 1.03 }} 
+              whileTap={{ scale: 0.97 }} 
+              onClick={handleSaveToPack}
+              className={`font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 transition-all
+                ${justSaved ? 'bg-emerald-500 text-white' : 'bg-card border border-border text-foreground hover:bg-secondary/10'}`}>
+              {justSaved ? '✓ Saved!' : '❤️ Save to Beast Pack'}
+            </motion.button>
+
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={restart}
               className="bg-card border border-border text-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
               <RotateCcw className="w-4 h-4" /> Retake
@@ -90,6 +116,8 @@ function PersonalityQuiz() {
       </div>
     );
   }
+
+  // ... (rest of your original code for intro and questions remains unchanged)
 
   if (step === 0) {
     return (
@@ -331,14 +359,58 @@ function TriviaQuizSection() {
 }
 
 // ─── Main Quiz Page ─────────────────────────────────────────────
+const KnowledgeQuizTab = () => {
+  const [started, setStarted] = useState(false);
+
+  return started ? (
+    <KnowledgeQuiz />
+  ) : (
+    <div className="max-w-3xl mx-auto py-12">
+      <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+        <div className="text-center">
+          <span className="text-5xl block mb-4">🧠</span>
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">Beastly Facts Challenge</h2>
+          <p className="mx-auto mb-8 max-w-xl text-sm text-muted-foreground leading-relaxed">
+            Put your animal knowledge to the test with quick multiple-choice questions, instant feedback, and a final score.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 mb-8 text-left">
+            {[
+              'Instant explanations for each question',
+              'Friendly score tracker that shows your progress',
+              'Designed for curious readers and animal lovers',
+              'Perfect for quick learning sessions on the go',
+            ].map((item) => (
+              <div key={item} className="rounded-2xl border border-border bg-background/80 p-4 text-sm text-foreground">
+                {item}
+              </div>
+            ))}
+          </div>
+          <motion.button
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            onClick={() => setStarted(true)}
+            className="inline-flex items-center justify-center rounded-2xl bg-secondary px-8 py-3 text-sm font-display font-bold text-secondary-foreground shadow-lg shadow-secondary/20 transition-colors"
+          >
+            Start the Knowledge Quiz
+          </motion.button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const TABS = [
   { id: 'personality', label: '🎯 Which Critter Are You?' },
   { id: 'trivia', label: '🌍 Animal Origins Trivia' },
+  { id: 'knowledge', label: '🧠 Beastly Facts Challenge' },
 ];
 
 export default function Quiz() {
   const params = new URLSearchParams(window.location.search);
-  const [activeTab, setActiveTab] = useState(params.get('tab') === 'trivia' ? 'trivia' : 'personality');
+  const initialTab = params.get('tab');
+  const [activeTab, setActiveTab] = useState(
+    initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
+  );
 
   return (
     <div className="min-h-screen">
@@ -378,7 +450,9 @@ export default function Quiz() {
             exit={{ opacity: 0, y: -16 }}
             transition={{ duration: 0.2 }}
           >
-            {activeTab === 'personality' ? <PersonalityQuiz /> : <TriviaQuizSection />}
+{activeTab === 'personality' && <PersonalityQuiz />}
+{activeTab === 'trivia' && <TriviaQuizSection />}
+{activeTab === 'knowledge' && <KnowledgeQuizTab />}
           </motion.div>
         </AnimatePresence>
       </div>

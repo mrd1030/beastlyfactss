@@ -20,7 +20,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-[85vh] flex items-end overflow-hidden">
+   <section className="relative min-h-screen flex items-center justify-center overflow-hidden text-center">
       {/* ==================== OPTIMIZED HERO IMAGE ==================== */}
       <div className="absolute inset-0">
         <picture>
@@ -64,38 +64,38 @@ export default function HeroSection() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-12 pt-32 w-full">
-        <div className="max-w-2xl">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 mt-28 w-full flex justify-center">
+        <div className="max-w-2xl h-full flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm text-secondary font-display font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-display font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
             </div>
 
             <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4">
-              <span className="text-foreground">Welcome to</span>
+              <span className="text-foreground">Curated animal facts, practical care advice,</span>
               <br />
-              <span className="text-secondary">Beastly</span>
-              <span className="text-foreground">Facts</span>
-              <span className="text-accent">.com</span>
+              <span className="text-secondary">and playful quizzes</span>
+              <br />
+              <span className="text-foreground">for curious families and animal lovers.</span>
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground font-body max-w-lg mb-6 leading-relaxed">
-              Discover mind-blowing animal facts, expert pet care guides, and find out which critter matches your personality! 🐾
-            </p>
+           <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
+  Discover verified wild facts, beginner-friendly pet care guides, and short quizzes designed to make every visit quick, fun, and useful.
+</p>
 
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap justify-center gap-3 mb-4">
               <Link to="/facts">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="bg-secondary backdrop-blur-sm border border-border text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
+                  className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
                 >
-                  🧠 Explore Facts
+                  🧠 Start with Verified Facts
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </Link>
@@ -103,12 +103,16 @@ export default function HeroSection() {
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
-                  className="bg-card/80 backdrop-blur-sm border border-border text-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
+                  className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
                 >
-                  🎯 Take the Quiz
+                  🎯 Play the Quiz
                 </motion.button>
               </Link>
             </div>
+
+            <p className="text-xs text-muted-foreground font-body max-w-md mx-auto text-center leading-relaxed">
+              Updated weekly with reviewed animal facts, practical pet care tips, and quiz challenges that help you learn faster.
+            </p>
           </motion.div>
 
           {/* Daily Fact */}
