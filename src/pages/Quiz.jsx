@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -407,18 +409,20 @@ const TABS = [
 ];
 
 export default function Quiz() {
-  const params = new URLSearchParams(window.location.search);
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
   const initialTab = params.get('tab');
   const [activeTab, setActiveTab] = useState(
     initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
   );
-
+  const shouldNoindex = hasNoindexStateParams(location.search);
   return (
     <div className="min-h-screen">
       <Helmet>
         <title>Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts</title>
         <meta name="description" content="Take a fun animal quiz on Beastly Facts — find out which animal matches your personality, test your wildlife trivia, or challenge yourself with the Beastly Facts knowledge quiz." />
         <link rel="canonical" href="https://beastlyfacts.com/quiz" />
+        <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
         <meta property="og:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
         <meta property="og:url" content="https://beastlyfacts.com/quiz" />

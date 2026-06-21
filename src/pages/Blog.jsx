@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
@@ -190,12 +191,15 @@ export default function Blog() {
     return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
   }
 
+  const shouldNoindex = hasNoindexStateParams(location.search);
+
   return (
     <div className="min-h-screen">
       <Helmet>
         <title>The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts</title>
         <meta name="description" content="Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week." />
         <link rel="canonical" href="https://beastlyfacts.com/blog" />
+        <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="The Critter Digest | Reptile & Exotic Pet Care Blog" />
         <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
         <meta property="og:url" content="https://beastlyfacts.com/blog" />
@@ -362,6 +366,8 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <title>{postTitle}</title>
         <meta name="description" content={postDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        {/* Individual blog post detail pages are always indexable; only the listing view uses dynamic noindex logic. */}
+        <meta name="robots" content="index,follow" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={postDescription} />
         <meta property="og:url" content={canonicalUrl} />

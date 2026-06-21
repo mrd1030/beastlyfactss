@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight, Info } from 'lucide-react';
@@ -151,9 +152,8 @@ export default function Encyclopedia() {
   const encDescription = `Explore our detailed encyclopedia and care guides for ${
     activeCategory === 'All' ? 'all your pets' : activeCategory
   }. Everything you need to know about husbandry, health, and happiness.`;
-  const encCanonical = activeCategory === 'All'
-    ? 'https://beastlyfacts.com/encyclopedia'
-    : `https://beastlyfacts.com/encyclopedia?category=${activeCategory.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`;
+  const encCanonical = 'https://beastlyfacts.com/encyclopedia';
+  const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">
@@ -161,6 +161,7 @@ export default function Encyclopedia() {
         <title>{encTitle}</title>
         <meta name="description" content={encDescription} />
         <link rel="canonical" href={encCanonical} />
+        <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={encTitle} />
         <meta property="og:description" content={encDescription} />
         <meta property="og:url" content={encCanonical} />

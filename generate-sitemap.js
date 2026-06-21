@@ -11,47 +11,11 @@ const staticPages = [
   '/contact',
   
   '/facts',            // Facts.jsx
-  // Unified Fun Facts filter pages (Clean hyphens synced with Facts.jsx logic)
-  '/facts?category=amphibians',
-  '/facts?category=birds',
-  '/facts?category=cats',
-  '/facts?category=dogs',
-  '/facts?category=invertebrates',
-  '/facts?category=reptiles',
-  '/facts?category=small-mammals',
-  '/facts?category=turtles-tortoises',
-  '/facts?category=wild-animals',
-
 
   '/animal-facts',     // AnimalFacts.jsx
   '/blog',             // Blog.jsx
 
-// Blog filter pages (Now beautifully synced with hyphens instead of %20)
-  '/blog?category=amphibians',
-  '/blog?category=aquatic-life',
-  '/blog?category=birds',
-  '/blog?category=cats',
-  '/blog?category=dogs',
-  '/blog?category=fun-facts',
-  '/blog?category=invertebrates',
-  '/blog?category=pet-care',
-  '/blog?category=product-picks',
-  '/blog?category=reptiles',
-  '/blog?category=small-exotic-pets', 
-  '/blog?category=wild-animals',
-
   '/encyclopedia',     // Encyclopedia.jsx
-  // Encyclopedia filter pages
-  '/encyclopedia?category=snakes',
-  '/encyclopedia?category=geckos',
-  '/encyclopedia?category=lizards',
-  '/encyclopedia?category=turtles-tortoises',
-  '/encyclopedia?category=small-mammals',
-  '/encyclopedia?category=birds',
-  '/encyclopedia?category=dogs',
-  '/encyclopedia?category=cats',
-  '/encyclopedia?category=invertebrates',
-  '/encyclopedia?category=amphibians',
 
   '/guides',           // Guides.jsx
   // Geckos
@@ -135,13 +99,6 @@ const staticPages = [
 
   '/pack',             // Pack.jsx
   '/quiz',             // Quiz.jsx (personality + trivia + knowledge tabs)
-  '/trivia',           // redirects to /quiz?tab=trivia
- 
-
-  '/donate', // Donate.jsx
-  '/privacy', // Privacy.jsx
-  '/terms', // Terms.jsx
-  '/search', // Search.jsx
 
 ];
 
@@ -171,15 +128,24 @@ async function generateSitemap() {
     // Get today's date for the static pages
     const today = new Date().toISOString().split('T')[0];
 
+    // Deduplicate static paths and dynamic paths before emitting XML
+    const uniqueStaticPages = [...new Set(staticPages)];
+    const seenDynamic = new Set();
+    const uniqueDynamicPages = dynamicPages.filter(page => {
+      if (seenDynamic.has(page.path)) return false;
+      seenDynamic.add(page.path);
+      return true;
+    });
+
     // 3. Start building the XML string
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
     xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
     // Add static pages to XML
-    staticPages.forEach(path => {
+    uniqueStaticPages.forEach(path => {
       const isHome = path === '';
       const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/animal-facts', '/quiz'].includes(path);
-      const isLowFreq = path.startsWith('/guides/') || path.startsWith('/category/') || path.startsWith('/privacy') || path.startsWith('/terms');
+      const isLowFreq = path.startsWith('/guides/');
       const changefreq = isHighFreq ? 'weekly' : isLowFreq ? 'monthly' : 'weekly';
       const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isLowFreq ? '0.6' : '0.7';
       xml += `  <url>\n`;
@@ -191,7 +157,7 @@ async function generateSitemap() {
     });
 
     // Add dynamic Sanity pages to XML
-    dynamicPages.forEach(page => {
+    uniqueDynamicPages.forEach(page => {
       xml += `  <url>\n`;
       xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
       xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
