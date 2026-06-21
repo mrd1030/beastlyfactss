@@ -412,15 +412,14 @@ export default function Quiz() {
   const [activeTab, setActiveTab] = useState(
     initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
   );
-  const hasTabParam = !!initialTab;
-
+  const hasQueryParams = !!initialTab;
   return (
     <div className="min-h-screen">
       <Helmet>
         <title>Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts</title>
         <meta name="description" content="Take a fun animal quiz on Beastly Facts — find out which animal matches your personality, test your wildlife trivia, or challenge yourself with the Beastly Facts knowledge quiz." />
         <link rel="canonical" href="https://beastlyfacts.com/quiz" />
-        <meta name="robots" content={hasTabParam ? 'noindex,follow' : 'index,follow'} />
+        <meta name="robots" content={hasQueryParams ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
         <meta property="og:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
         <meta property="og:url" content="https://beastlyfacts.com/quiz" />
