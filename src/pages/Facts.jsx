@@ -213,7 +213,7 @@ export default function Facts() {
     ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts — from weird reptile behaviours to surprising dog science and wild animal trivia.'
     : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts — curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = 'https://beastlyfacts.com/facts';
-  const hasQueryParams = hasNoindexStateParams(location.search);
+  const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">
@@ -221,7 +221,7 @@ export default function Facts() {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalPath} />
-        <meta name="robots" content={hasQueryParams ? 'noindex,follow' : 'index,follow'} />
+        <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalPath} />

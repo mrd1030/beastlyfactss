@@ -153,7 +153,7 @@ export default function Encyclopedia() {
     activeCategory === 'All' ? 'all your pets' : activeCategory
   }. Everything you need to know about husbandry, health, and happiness.`;
   const encCanonical = 'https://beastlyfacts.com/encyclopedia';
-  const hasQueryParams = hasNoindexStateParams(location.search);
+  const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">
@@ -161,7 +161,7 @@ export default function Encyclopedia() {
         <title>{encTitle}</title>
         <meta name="description" content={encDescription} />
         <link rel="canonical" href={encCanonical} />
-        <meta name="robots" content={hasQueryParams ? 'noindex,follow' : 'index,follow'} />
+        <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={encTitle} />
         <meta property="og:description" content={encDescription} />
         <meta property="og:url" content={encCanonical} />
