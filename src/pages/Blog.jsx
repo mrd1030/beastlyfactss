@@ -366,6 +366,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <title>{postTitle}</title>
         <meta name="description" content={postDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        {/* Individual blog post detail pages are always indexable; only the listing view uses dynamic noindex logic. */}
         <meta name="robots" content="index,follow" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={postDescription} />

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
@@ -408,12 +409,13 @@ const TABS = [
 ];
 
 export default function Quiz() {
-  const params = new URLSearchParams(window.location.search);
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
   const initialTab = params.get('tab');
   const [activeTab, setActiveTab] = useState(
     initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
   );
-  const shouldNoindex = hasNoindexStateParams(window.location.search);
+  const shouldNoindex = hasNoindexStateParams(location.search);
   return (
     <div className="min-h-screen">
       <Helmet>
