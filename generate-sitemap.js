@@ -128,12 +128,21 @@ async function generateSitemap() {
     // Get today's date for the static pages
     const today = new Date().toISOString().split('T')[0];
 
+    // Deduplicate static paths and dynamic paths before emitting XML
+    const uniqueStaticPages = [...new Set(staticPages)];
+    const seenDynamic = new Set();
+    const uniqueDynamicPages = dynamicPages.filter(page => {
+      if (seenDynamic.has(page.path)) return false;
+      seenDynamic.add(page.path);
+      return true;
+    });
+
     // 3. Start building the XML string
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
     xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
     // Add static pages to XML
-    staticPages.forEach(path => {
+    uniqueStaticPages.forEach(path => {
       const isHome = path === '';
       const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/animal-facts', '/quiz'].includes(path);
       const isLowFreq = path.startsWith('/guides/');
@@ -148,7 +157,7 @@ async function generateSitemap() {
     });
 
     // Add dynamic Sanity pages to XML
-    dynamicPages.forEach(page => {
+    uniqueDynamicPages.forEach(page => {
       xml += `  <url>\n`;
       xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
       xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
