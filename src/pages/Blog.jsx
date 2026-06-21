@@ -190,12 +190,15 @@ export default function Blog() {
     return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
   }
 
+  const hasQueryParams = location.search.length > 0;
+
   return (
     <div className="min-h-screen">
       <Helmet>
         <title>The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts</title>
         <meta name="description" content="Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week." />
         <link rel="canonical" href="https://beastlyfacts.com/blog" />
+        <meta name="robots" content={hasQueryParams ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="The Critter Digest | Reptile & Exotic Pet Care Blog" />
         <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
         <meta property="og:url" content="https://beastlyfacts.com/blog" />
@@ -362,6 +365,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <title>{postTitle}</title>
         <meta name="description" content={postDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index,follow" />
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={postDescription} />
         <meta property="og:url" content={canonicalUrl} />
