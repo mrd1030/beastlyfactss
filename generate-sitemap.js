@@ -136,7 +136,7 @@ async function generateSitemap() {
     staticPages.forEach(path => {
       const isHome = path === '';
       const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/animal-facts', '/quiz'].includes(path);
-      const isLowFreq = path.startsWith('/guides/') || path.startsWith('/category/');
+      const isLowFreq = path.startsWith('/guides/');
       const changefreq = isHighFreq ? 'weekly' : isLowFreq ? 'monthly' : 'weekly';
       const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isLowFreq ? '0.6' : '0.7';
       xml += `  <url>\n`;
