@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight, Info } from 'lucide-react';
@@ -152,7 +153,7 @@ export default function Encyclopedia() {
     activeCategory === 'All' ? 'all your pets' : activeCategory
   }. Everything you need to know about husbandry, health, and happiness.`;
   const encCanonical = 'https://beastlyfacts.com/encyclopedia';
-  const hasQueryParams = location.search.length > 0;
+  const hasQueryParams = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">

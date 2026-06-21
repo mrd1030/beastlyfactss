@@ -1,5 +1,6 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom'; 
@@ -212,7 +213,7 @@ export default function Facts() {
     ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts — from weird reptile behaviours to surprising dog science and wild animal trivia.'
     : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts — curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = 'https://beastlyfacts.com/facts';
-  const hasQueryParams = location.search.length > 0;
+  const hasQueryParams = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">

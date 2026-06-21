@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
@@ -190,7 +191,7 @@ export default function Blog() {
     return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
   }
 
-  const hasQueryParams = location.search.length > 0;
+  const hasQueryParams = hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">

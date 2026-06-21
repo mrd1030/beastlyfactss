@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
@@ -412,7 +413,7 @@ export default function Quiz() {
   const [activeTab, setActiveTab] = useState(
     initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
   );
-  const hasQueryParams = !!initialTab;
+  const hasQueryParams = hasNoindexStateParams(window.location.search);
   return (
     <div className="min-h-screen">
       <Helmet>
