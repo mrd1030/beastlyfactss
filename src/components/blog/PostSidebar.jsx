@@ -108,32 +108,35 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-4">You Might Also Like</h3>
         <div className="space-y-3">
-          {displayRelated.map(post => (
-            <button
-              key={post._id || post.id}
-              onClick={() => onSelectPost(post)}
-              className="w-full text-left group"
-            >
-              <div className="flex items-start gap-2.5">
-                {/* New */}
-                <span className="text-lg flex-shrink-0 mt-0.5">{getPostIcon(post)}</span>
-                <div className="min-w-0">
-                  <p className="text-xs font-body text-muted-foreground group-hover:text-foreground transition-colors leading-snug line-clamp-2 mb-1">
-                    {post.title}
-                  </p>
-                  {(post.readTime || post.category) && (
-                    <div className="flex items-center gap-2">
-                      {post.readTime && (
-                        <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                          <Clock className="w-3 h-3" /> {post.readTime} min read
-                        </span>
-                      )}
-                    </div>
-                  )}
+          {displayRelated.map(post => {
+            const slug = post.slug?.current || post._id || post.id;
+            return (
+              <a
+                key={post._id || post.id}
+                href={`/blog/${slug}`}
+                onClick={e => { e.preventDefault(); onSelectPost(post); }}
+                className="w-full text-left group block"
+              >
+                <div className="flex items-start gap-2.5">
+                  <span className="text-lg flex-shrink-0 mt-0.5">{getPostIcon(post)}</span>
+                  <div className="min-w-0">
+                    <p className="text-xs font-body text-muted-foreground group-hover:text-foreground transition-colors leading-snug line-clamp-2 mb-1">
+                      {post.title}
+                    </p>
+                    {(post.readTime || post.category) && (
+                      <div className="flex items-center gap-2">
+                        {post.readTime && (
+                          <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                            <Clock className="w-3 h-3" /> {post.readTime} min read
+                          </span>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </button>
-          ))}
+              </a>
+            );
+          })}
         </div>
       </div>
 

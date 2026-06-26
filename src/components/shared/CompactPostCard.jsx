@@ -3,15 +3,17 @@ import { Clock, Calendar } from 'lucide-react';
 import SanityImage from '@/components/SanityImage';
 
 export default function CompactPostCard({ post, onClick }) {
-  const date = post.publishedAt 
-    ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) 
+  const date = post.publishedAt
+    ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
     : '';
 
   const category = post.category || post.animalType || 'Article';
+  const slug = post.slug?.current || post._id || post.id;
 
   return (
-    <div 
-      onClick={onClick}
+    <a
+      href={`/blog/${slug}`}
+      onClick={e => { e.preventDefault(); onClick?.(e); }}
       className="flex items-start gap-3 bg-card border border-border rounded-xl p-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
     >
       {/* Image */}
@@ -72,6 +74,6 @@ export default function CompactPostCard({ post, onClick }) {
           )}
         </div>
       </div>
-    </div>
+    </a>
   );
 }
