@@ -6,21 +6,59 @@ import { client } from '@/lib/sanity';
 import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
-const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc)[0...9] {
+import { blogPosts as localPosts } from '@/lib/data/newsletters';
+import { mdxPosts } from '@/lib/mdxPosts';
+
+const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id, title, slug, excerpt, mainImage, publishedAt, readTime,
   "category": categories[0]->title,
   "categorySlug": categories[0]->slug.current
 }`;
 
 export default function CritterDigestPreview() {
-  const [posts, setPosts] = useState([]);
+  const [sanityPosts, setSanityPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     client.fetch(QUERY)
-      .then(data => { setPosts(data); setLoading(false); })
+      .then(data => {
+        setSanityPosts(data);
+        setLoading(false);
+      })
       .catch(() => setLoading(false));
   }, []);
+
+  // Helper to safely get slug as string
+  const getSlug = (post) => {
+    if (!post) return '';
+    if (typeof post.slug === 'string') return post.slug;
+    if (post.slug?.current) return post.slug.current;
+    return post._id || post.id || '';
+  };
+
+  // Merge, normalize, and sort
+  const allPosts = [
+    ...sanityPosts,
+    ...localPosts.map(post => ({
+      ...post,
+      _id: post.id || post._id,
+      publishedAt: post.date,
+      mainImage: null,
+      categorySlug: null,
+      slug: { current: getSlug(post) }   // normalize to same shape as Sanity
+    })),
+    ...mdxPosts.map(post => ({
+      ...post,
+      _id: post._id || post.id,
+      slug: { current: getSlug(post) }
+    })),
+  ].sort((a, b) => {
+    const dateA = new Date(a.publishedAt || a.date || 0);
+    const dateB = new Date(b.publishedAt || b.date || 0);
+    return dateB - dateA;
+  });
+
+  const previewPosts = allPosts.slice(0, 5);
 
   return (
     <section className="py-12 px-4 sm:px-6">
@@ -47,21 +85,32 @@ export default function CritterDigestPreview() {
 
         {loading ? (
           <div className="space-y-3">
-            {[...Array(4)].map((_, i) => <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />)}
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />
+            ))}
           </div>
         ) : (
           <div className="space-y-3">
-            {posts.map((post, i) => (
-              <motion.div
-                key={post._id}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.04 }}
-              >
-                <CompactPostCard post={post} />
-              </motion.div>
-            ))}
+            {previewPosts.map((post, i) => {
+              const postSlug = getSlug(post);
+
+              return (
+                <motion.div
+                  key={post._id || post.id}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.04 }}
+                >
+                  <Link 
+                    to={`/blog/${postSlug}`} 
+                    className="block hover:no-underline"
+                  >
+                    <CompactPostCard post={post} />
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         )}
 

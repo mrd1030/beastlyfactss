@@ -106,7 +106,13 @@ export default function Blog() {
       categorySlug: null,
     })),
     ...mdxPosts,
-  ];
+  ]
+  .sort((a, b) => {
+      const dateA = new Date(a.publishedAt || a.date || 0);
+      const dateB = new Date(b.publishedAt || b.date || 0);
+      return dateB - dateA;
+    });
+
 
   const filtered = allPosts.filter(p => {
     if (slugify(activeCategory) === 'all') return true;
