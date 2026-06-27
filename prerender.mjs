@@ -27,6 +27,16 @@ const ENCYCLOPEDIA_CATEGORIES = [
   'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
 ];
 
+// Local newsletter post slugs (mirrors newsletters.js — update when posts are added/removed)
+const LOCAL_POST_SLUGS = [
+  'crested-gecko-humidity-guide',
+  'leopard-gecko-temperature-guide',
+  'ball-python-feeding-guide',
+  'beginners-guide-to-bioactive-enclosures',
+  'uvb-lighting-complete-guide',
+  'reptile-shedding-complete-guide',
+];
+
 // Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
 const STATIC_ROUTES = [
   '/',
@@ -42,6 +52,7 @@ const STATIC_ROUTES = [
   '/search',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
+  ...LOCAL_POST_SLUGS.map(s => `/blog/${s}`),
 ];
 
 async function getSanityRoutes() {
