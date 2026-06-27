@@ -46,7 +46,7 @@ export default function Blog() {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const { slug: routeSlug } = useParams();
+  const { slug: routeSlug, catSlug } = useParams();
 
   useEffect(() => {
     const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
@@ -65,7 +65,7 @@ export default function Blog() {
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
     const postParam = routeSlug || urlParams.get('post');
-    const catParam = urlParams.get('category');
+    const catParam = catSlug || urlParams.get('category');
     const pageParam = parseInt(urlParams.get('page')) || 1;
 
     setActiveCategory(catParam || 'All');
@@ -101,7 +101,7 @@ export default function Blog() {
     } else {
       setSelectedPost(null);
     }
-  }, [location.search, routeSlug, sanityPosts]);
+  }, [location.search, routeSlug, catSlug, sanityPosts]);
 
   const allPosts = [
     ...sanityPosts,
@@ -130,39 +130,42 @@ export default function Blog() {
     return p.category && slugify(p.category) === lowerActive;
   });
 
-  // Build extra categories from MDX posts that aren't already in Sanity categories
+  // Count non-Sanity posts per category slug
   const sanityCategorySlugs = new Set(sanityCategories.map(c => slugify(c.title)));
-  const mdxCategories = Array.from(
-    mdxPosts.reduce((map, post) => {
-      let categories;
-      if (post.allCategories?.length) {
-        categories = post.allCategories;
-      } else if (post.category) {
-        categories = [post.category];
+  const extraPostCounts = new Map(); // counts for Sanity categories from local/MDX posts
+  const extraCategoryMap = new Map(); // new categories only in local/MDX posts
+
+  [...localPosts, ...mdxPosts].forEach(post => {
+    const cats = post.allCategories?.length ? post.allCategories
+      : post.category ? [post.category] : [];
+    cats.forEach(cat => {
+      const s = slugify(cat);
+      if (sanityCategorySlugs.has(s)) {
+        extraPostCounts.set(s, (extraPostCounts.get(s) || 0) + 1);
       } else {
-        categories = [];
+        if (!extraCategoryMap.has(s)) extraCategoryMap.set(s, { title: cat, slug: s, count: 0 });
+        extraCategoryMap.get(s).count += 1;
       }
-      categories.forEach(cat => {
-        const categorySlug = slugify(cat);
-        if (!sanityCategorySlugs.has(categorySlug)) {
-          if (!map.has(categorySlug)) map.set(categorySlug, { title: cat, slug: categorySlug, count: 0 });
-          map.get(categorySlug).count += 1;
-        }
-      });
-      return map;
-    }, new Map())
-  ).map(([, val]) => val);
+    });
+  });
+
+  const enrichedSanityCategories = sanityCategories.map(c => ({
+    ...c,
+    count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),
+  }));
+
+  const mdxCategories = Array.from(extraCategoryMap.values());
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 
   const handleBack = () => {
+    const catPath = activeCategory && slugify(activeCategory) !== 'all'
+      ? `/blog/category/${slugify(activeCategory)}`
+      : '/blog';
     const urlParams = new URLSearchParams();
-    if (activeCategory && slugify(activeCategory) !== 'all') {
-      urlParams.set('category', slugify(activeCategory));
-    }
     if (page > 1) urlParams.set('page', page.toString());
-    navigate({ pathname: '/blog', search: urlParams.toString() });
+    navigate({ pathname: catPath, search: urlParams.toString() });
   };
 
   const handleSelectPost = (post) => {
@@ -176,9 +179,12 @@ export default function Blog() {
 
   const handlePageChange = (newPage) => {
     setPage(newPage);
-    const urlParams = new URLSearchParams(location.search);
-    urlParams.set('page', newPage.toString());
-    navigate({ search: urlParams.toString() });
+    const catPath = activeCategory && slugify(activeCategory) !== 'all'
+      ? `/blog/category/${slugify(activeCategory)}`
+      : '/blog';
+    const urlParams = new URLSearchParams();
+    if (newPage > 1) urlParams.set('page', newPage.toString());
+    navigate({ pathname: catPath, search: urlParams.toString() });
 
     setTimeout(() => {
       if (listRef.current) {
@@ -189,11 +195,8 @@ export default function Blog() {
   };
 
   const handleCategoryChange = (cat) => {
-    const urlParams = new URLSearchParams();
-    if (slugify(cat) !== 'all') {
-      urlParams.set('category', slugify(cat));
-    }
-    navigate({ search: urlParams.toString() });
+    const catPath = slugify(cat) !== 'all' ? `/blog/category/${slugify(cat)}` : '/blog';
+    navigate(catPath);
 
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -260,7 +263,7 @@ export default function Blog() {
             >
               All
             </button>
-            {sanityCategories.filter(c => c.count > 0).map(cat => (
+            {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
               <button
                 key={cat._id}
                 onClick={() => handleCategoryChange(cat.title)}
@@ -317,11 +320,11 @@ export default function Blog() {
               <BeehiivSubscribe />
             </div>
 
-            {(sanityCategories.filter(c => c.count > 0).length > 0 || mdxCategories.length > 0) && (
+            {(enrichedSanityCategories.filter(c => c.count > 0).length > 0 || mdxCategories.length > 0) && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
-                  {sanityCategories.filter(c => c.count > 0).map(cat => (
+                  {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
                     <button key={cat._id} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
