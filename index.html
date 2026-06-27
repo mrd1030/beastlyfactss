@@ -5,44 +5,62 @@
     <link rel="icon" type="image/webp" sizes="32x32" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="./src/assets/favicon.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fallback meta for homepage — social bots and Googlebot first pass (JS not yet run).
-         react-helmet-async overrides these for every route after hydration. -->
+
+    <!-- Homepage fallback meta — for social bots (no JS) and Googlebot first-pass crawl.
+         NO canonical here: react-helmet-async injects the correct one per-route.
+         Two canonicals = Google ignores both. -->
     <title>Beastly Facts | Amazing Animal Trivia, Guides &amp; Fun Quizzes</title>
-    <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and care guides for reptiles, mammals, birds and more." />
-    <link rel="canonical" href="https://beastlyfacts.com/" />
+    <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more. Start learning today!" />
+
     <!-- Open Graph -->
     <meta property="og:site_name" content="Beastly Facts" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://beastlyfacts.com/" />
     <meta property="og:title" content="Beastly Facts | Amazing Animal Trivia, Guides &amp; Fun Quizzes" />
-    <meta property="og:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and care guides for reptiles, mammals, birds and more." />
-    <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+    <meta property="og:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more." />
+    <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Beastly Facts — amazing animal trivia, guides and quizzes" />
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@beastlyfacts" />
     <meta name="twitter:title" content="Beastly Facts | Amazing Animal Trivia, Guides &amp; Fun Quizzes" />
-    <meta name="twitter:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging quizzes, and care guides for reptiles, mammals, birds and more." />
-    <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
-    
+    <meta name="twitter:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more." />
+    <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.webp" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- LCP preload: hero image above fold, fetched before render -->
+    <link rel="preload" as="image" href="/assets/hero-1200.webp" type="image/webp" />
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795"
-     crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0T3V8PPP7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    // gtag('config', 'G-YOUR_MEASUREMENT_ID'); // Initialized later via your tracker component
-  </script>
+    <!-- Fonts: preload then apply async to avoid render-blocking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" />
+    </noscript>
 
-<script async src="https://fundingchoicesmessages.google.com/i/pub-2950702470680795?ers=1"></script>
+    <meta name="p:domain_verify" content="bb226bb96315ba08f0689d0569facbcb"/>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N3PXSDZB');</script>
+    <!-- End Google Tag Manager -->
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L0T3V8PPP7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
+
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-2950702470680795?ers=1"></script>
     <script>
       (function() {
         function signalGooglefcPresent() {
@@ -61,25 +79,13 @@
         signalGooglefcPresent();
       })();
     </script>
-
-    <meta name="p:domain_verify" content="bb226bb96315ba08f0689d0569facbcb"/>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N3PXSDZB');</script>
-<!-- End Google Tag Manager -->
-
-
-
 </head>
   <body>
-    <div id="root"></div>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3PXSDZB"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3PXSDZB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
