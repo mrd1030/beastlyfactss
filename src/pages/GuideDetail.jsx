@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight } from 'lucide-react';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
@@ -9,17 +9,16 @@ import { difficultyColor } from '@/lib/data/encyclopedia';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
-const tabLabels = {
-  housing: '🏠 Housing',
-  diet: '🥗 Diet',
-  enrichment: '🎮 Enrichment',
-  health: '💊 Health',
-};
+const sectionMeta = [
+  { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
+  { key: 'diet',       icon: '🥗', label: 'Diet & Feeding' },
+  { key: 'enrichment', icon: '🎮', label: 'Enrichment & Handling' },
+  { key: 'health',     icon: '💊', label: 'Health & Common Issues' },
+];
 
 export default function GuideDetail() {
   const { id } = useParams();
   const guide = allGuides.find(g => g.id === id);
-  const [activeTab, setActiveTab] = useState('housing');
   const [isLegendOpen, setIsLegendOpen] = useState(false);
 
   // Keyboard listener to close popup modal on "Escape" keypress
@@ -241,37 +240,21 @@ export default function GuideDetail() {
           </div>
         </motion.div>
 
-        {/* Tabs */}
-        <div className="flex gap-1 overflow-x-auto pb-1 mb-5">
-          {Object.entries(tabLabels).map(([key, label]) => (
-            <button
-              key={key}
-              onClick={() => setActiveTab(key)}
-              className={`px-3 py-2 rounded-xl text-xs font-display font-semibold whitespace-nowrap transition-all flex-shrink-0 ${
-                activeTab === key
-                  ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'text-muted-foreground hover:bg-muted hover:text-foreground'
-              }`}
-            >
-              {label}
-            </button>
+        {/* Sections — all visible so search engines index full content */}
+        <div className="space-y-5 mb-6">
+          {sectionMeta.map(({ key, icon, label }) => (
+            <div key={key} className="bg-card border border-border rounded-2xl p-5">
+              <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                {icon} {label}
+              </h2>
+              <div className="text-sm text-muted-foreground font-body leading-relaxed space-y-3">
+                {guide.sections[key].split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
-
-        {/* Tab Content */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            className="bg-card border border-border rounded-2xl p-5 mb-6"
-          >
-            <p className="text-sm text-muted-foreground font-body leading-relaxed">
-              {guide.sections[activeTab]}
-            </p>
-          </motion.div>
-        </AnimatePresence>
 
         {/* Checklist */}
         <div className="bg-card border border-border rounded-2xl p-5">
