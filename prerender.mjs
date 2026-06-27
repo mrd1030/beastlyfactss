@@ -187,7 +187,7 @@ async function main() {
   server.httpServer.close();
 
   console.log(`\n🎉 Prerender complete: ${results.passed} succeeded, ${results.failed} failed.`);
-  if (failed > 0) process.exit(1);
+  if (results.failed > 0) process.exit(1);
 }
 
 main().catch(err => {
