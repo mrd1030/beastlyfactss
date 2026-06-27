@@ -45,6 +45,23 @@ async function getMdxRoutes() {
   return routes;
 }
 
+// All care guide IDs (mirrors guidesExtended.js + dogCatGuides.js)
+const GUIDE_IDS = [
+  'crested-gecko','leopard-gecko','gargoyle-gecko','mourning-gecko','hognose-snake',
+  'chameleon','ball-python','bearded-dragon','blue-tongue-skink','corn-snake',
+  'ackie-monitor','boa-constrictor','tegu','leaf-tailed-gecko','red-eared-slider',
+  'rabbit','hedgehog','guinea-pig','chinchilla','sugar-glider','african-grey',
+  'budgie','lovebird','tokay-gecko','african-fat-tail','uromastyx','savannah-monitor',
+  'green-anole','california-kingsnake','milk-snake','russian-tortoise','sulcata-tortoise',
+  'box-turtle','ferret','tarantula','praying-mantis','millipede','emperor-scorpion',
+  'hissing-cockroach','stick-insect','whites-tree-frog','pacman-frog','fire-belly-toad',
+  'axolotl','tiger-salamander','cockatiel','conure',
+  'dog-universal','dog-small-breed','dog-medium-breed','dog-large-breed','dog-labrador',
+  'dog-golden-retriever','dog-german-shepherd','dog-french-bulldog','dog-border-collie',
+  'dog-siberian-husky','cat-universal','cat-domestic-shorthair','cat-maine-coon',
+  'cat-siamese','cat-ragdoll','cat-bengal','cat-persian',
+];
+
 // Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
 const STATIC_ROUTES = [
   '/',
@@ -60,6 +77,7 @@ const STATIC_ROUTES = [
   '/search',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
+  ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
 
 async function getSanityRoutes() {
