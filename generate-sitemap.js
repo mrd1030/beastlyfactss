@@ -1,5 +1,40 @@
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import fetch from 'node-fetch';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+function parseFrontmatter(content) {
+  const match = content.match(/^---\n([\s\S]*?)\n---/);
+  if (!match) return {};
+  const result = {};
+  for (const line of match[1].split('\n')) {
+    const colonIdx = line.indexOf(':');
+    if (colonIdx === -1) continue;
+    const key = line.slice(0, colonIdx).trim();
+    const val = line.slice(colonIdx + 1).trim().replace(/^["']|["']$/g, '');
+    result[key] = val;
+  }
+  return result;
+}
+
+function getMdxPosts(today) {
+  const contentDirs = ['guides', 'blog', 'fun-facts', 'short-story'];
+  const posts = [];
+  for (const dir of contentDirs) {
+    const dirPath = path.join(__dirname, 'content', dir);
+    if (!fs.existsSync(dirPath)) continue;
+    for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.mdx'))) {
+      const content = fs.readFileSync(path.join(dirPath, file), 'utf8');
+      const fm = parseFrontmatter(content);
+      const slug = fm.slug || file.replace('.mdx', '');
+      const lastmod = fm.lastUpdated || fm.date || today;
+      posts.push({ path: `/blog/${slug}/`, lastmod, changefreq: 'weekly', priority: '0.7' });
+    }
+  }
+  return posts;
+}
 
 const BASE_URL = 'https://beastlyfacts.com';
 const PROJECT_ID = '7nqbs1gk';
@@ -133,6 +168,8 @@ async function generateSitemap() {
     priority: '0.7',
   }));
 
+  const mdxPostPages = getMdxPosts(today);
+
   // Dedup static pages
   const uniqueStatic = [...new Set(staticPages)];
 
@@ -154,7 +191,7 @@ async function generateSitemap() {
     xml += `  </url>\n`;
   });
 
-  [...blogCategoryPages, ...blogPostPages].forEach(page => {
+  [...blogCategoryPages, ...blogPostPages, ...mdxPostPages].forEach(page => {
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
     xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
@@ -166,7 +203,7 @@ async function generateSitemap() {
   xml += `</urlset>`;
 
   fs.writeFileSync('./dist/sitemap.xml', xml);
-  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${blogPostPages.length} blog posts`);
+  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${blogPostPages.length} Sanity posts + ${mdxPostPages.length} MDX posts`);
 }
 
 generateSitemap().catch(err => {
