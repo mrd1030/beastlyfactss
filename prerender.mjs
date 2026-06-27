@@ -21,18 +21,27 @@ const BASE_URL = `http://localhost:${PORT}`;
 const SANITY_PROJECT = '7nqbs1gk';
 const SANITY_DATASET = 'production';
 
+// Encyclopedia category slugs (mirrors encyclopediaCategories in encyclopedia.js)
+const ENCYCLOPEDIA_CATEGORIES = [
+  'geckos', 'lizards', 'snakes', 'turtles-tortoises',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+];
+
 // Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
 const STATIC_ROUTES = [
   '/',
   '/facts',
   '/blog',
   '/encyclopedia',
+  '/encyclopedia/guides',
   '/quiz',
   '/about',
   '/contact',
   '/animal-facts',
   '/categories',
   '/search',
+  ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
+  ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
 ];
 
 async function getSanityRoutes() {
@@ -53,8 +62,9 @@ async function getSanityRoutes() {
 
     const blogRoutes = (postData.result || []).map(p => `/blog/${p.slug}`);
     const categoryRoutes = (catData.result || []).map(c => `/category/${c.slug}`);
+    const blogCategoryRoutes = (catData.result || []).map(c => `/blog/category/${c.slug}`);
 
-    return [...blogRoutes, ...categoryRoutes];
+    return [...blogRoutes, ...categoryRoutes, ...blogCategoryRoutes];
   } catch (err) {
     console.warn('⚠️  Could not fetch Sanity dynamic routes:', err.message);
     return [];
@@ -65,9 +75,27 @@ async function renderRoute(page, route) {
   const url = `${BASE_URL}${route}`;
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
 
-  // Give React one extra tick to flush any post-network state updates
-  await new Promise(r => setTimeout(r, 300));
+  // For individual blog posts, networkidle0 fires after the Sanity fetch
+  // completes but before React re-runs the useEffect that sets selectedPost
+  // and updates the Helmet meta tags. Wait for the canonical URL to reflect
+  // the post slug — that proves PostView has fully rendered.
+  if (/^\/blog\/[^/]+$/.test(route)) {
+    const slug = route.split('/').pop();
+    try {
+      await page.waitForFunction(
+        (s) => {
+          const canonical = document.querySelector('link[rel="canonical"]');
+          return canonical && canonical.getAttribute('href').includes(s);
+        },
+        { timeout: 8000 },
+        slug
+      );
+    } catch {
+      // Post may not have loaded (e.g. local-only post); fall through
+    }
+  }
 
+  await new Promise(r => setTimeout(r, 300));
   return page.content();
 }
 
