@@ -124,7 +124,7 @@ async function renderRoute(page, route) {
           const canonical = document.querySelector('link[rel="canonical"]');
           return canonical && canonical.getAttribute('href').includes(s);
         },
-        { timeout: 8000 },
+        { timeout: 3000 },
         routeSlug
       );
     } catch {
@@ -132,7 +132,6 @@ async function renderRoute(page, route) {
     }
   }
 
-  await new Promise(r => setTimeout(r, 300));
   return page.content();
 }
 
@@ -146,7 +145,7 @@ async function saveHtml(route, html) {
   await writeFile(filePath, html, 'utf-8');
 }
 
-const CONCURRENCY = 5; // render N routes at a time
+const CONCURRENCY = 8; // render N routes at a time
 
 async function renderWorker(browser, routes, results) {
   for (const route of routes) {
@@ -155,7 +154,8 @@ async function renderWorker(browser, routes, results) {
     page.on('request', req => {
       const u = req.url();
       if (u.includes('googletagmanager') || u.includes('google-analytics') ||
-          u.includes('pagead') || u.includes('fundingchoices')) {
+          u.includes('pagead') || u.includes('fundingchoices') ||
+          u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
         req.abort();
       } else {
         req.continue();
