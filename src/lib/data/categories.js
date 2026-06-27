@@ -9,7 +9,7 @@ export const CATEGORIES = [
   { slug: 'pet-care', label: 'Pet Care', emoji: '🩺', description: 'General pet health, nutrition, and husbandry tips.' },
   { slug: 'product-picks', label: 'Product Picks', emoji: '🛒', description: 'Gear and product recommendations for pet owners.' },
   { slug: 'reptiles', label: 'Reptiles', emoji: '🦎', description: 'Snakes, geckos, bearded dragons and all reptile guides.' },
-  { slug: 'small-exotic-pets', label: 'Small & Exotic Pets', emoji: '🦔', description: 'Hedgehogs, rabbits, ferrets, sugar gliders and more.' },
+  { slug: 'small-and-exotic-pets', label: 'Small & Exotic Pets', emoji: '🦔', description: 'Hedgehogs, rabbits, ferrets, sugar gliders and more.' },
   { slug: 'wild-animals', label: 'Wild Animals', emoji: '🦁', description: 'Wildlife, conservation, and wild animal facts.' },
 ];
 
