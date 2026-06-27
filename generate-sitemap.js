@@ -1,24 +1,42 @@
 import fs from 'fs';
-import fetch from 'node-fetch'; // Remove this line if you are using Node 18+
+import fetch from 'node-fetch';
 
-// 1. Define your base URL
 const BASE_URL = 'https://beastlyfacts.com';
+const PROJECT_ID = '7nqbs1gk';
+const DATASET = 'production';
 
-// 2. Hardcode your static pages (Homepage, About, Categories, etc.)
+// Encyclopedia category slugs (mirrors encyclopediaCategories in encyclopedia.js)
+const encyclopediaCategories = [
+  'geckos', 'lizards', 'snakes', 'turtles-tortoises',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+];
+
+// Guide filter slugs (mirrors guideFilters in Encyclopedia.jsx, excluding 'all')
+const guideFilters = [
+  'geckos', 'lizards', 'snakes', 'turtles-tortoises',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+];
+
 const staticPages = [
   '',
   '/about',
   '/contact',
-  
-  '/facts',            // Facts.jsx
+  '/categories',
+  '/facts',
+  '/animal-facts',
+  '/blog',
+  '/encyclopedia',
+  '/encyclopedia/guides',
+  '/quiz',
+  '/search',
 
-  '/animal-facts',     // AnimalFacts.jsx
-  '/blog',             // Blog.jsx
+  // Encyclopedia categories
+  ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}`),
 
-  '/encyclopedia',     // Encyclopedia.jsx
+  // Encyclopedia guide filters
+  ...guideFilters.map(s => `/encyclopedia/guides/${s}`),
 
-  '/guides',           // Guides.jsx
-  // Geckos
+  // Individual guide detail pages
   '/guides/crested-gecko',
   '/guides/leopard-gecko',
   '/guides/gargoyle-gecko',
@@ -26,8 +44,6 @@ const staticPages = [
   '/guides/tokay-gecko',
   '/guides/african-fat-tail',
   '/guides/leaf-tailed-gecko',
-  
-  // Lizards
   '/guides/bearded-dragon',
   '/guides/blue-tongue-skink',
   '/guides/chameleon',
@@ -36,145 +52,119 @@ const staticPages = [
   '/guides/savannah-monitor',
   '/guides/uromastyx',
   '/guides/tegu',
-  
-  // Snakes
   '/guides/ball-python',
   '/guides/corn-snake',
   '/guides/hognose-snake',
   '/guides/boa-constrictor',
   '/guides/california-kingsnake',
   '/guides/milk-snake',
-  
-  // Turtles & Tortoises
   '/guides/red-eared-slider',
   '/guides/russian-tortoise',
   '/guides/sulcata-tortoise',
   '/guides/box-turtle',
-  
-  // Small Mammals
   '/guides/rabbit',
   '/guides/hedgehog',
   '/guides/guinea-pig',
   '/guides/chinchilla',
   '/guides/ferret',
   '/guides/sugar-glider',
-  
-  // Birds
   '/guides/budgie',
   '/guides/cockatiel',
   '/guides/conure',
   '/guides/lovebird',
   '/guides/african-grey',
-  
-  // Dogs
   '/guides/dog-labrador',
   '/guides/dog-golden-retriever',
   '/guides/dog-german-shepherd',
   '/guides/dog-french-bulldog',
   '/guides/dog-border-collie',
   '/guides/dog-siberian-husky',
-  
-  // Cats
   '/guides/cat-domestic-shorthair',
   '/guides/cat-maine-coon',
   '/guides/cat-siamese',
   '/guides/cat-ragdoll',
   '/guides/cat-bengal',
   '/guides/cat-persian',
-  
-  // Invertebrates
   '/guides/tarantula',
   '/guides/praying-mantis',
   '/guides/millipede',
   '/guides/emperor-scorpion',
   '/guides/hissing-cockroach',
   '/guides/stick-insect',
-  
-  // Amphibians
   '/guides/whites-tree-frog',
   '/guides/pacman-frog',
   '/guides/fire-bellied-toad',
   '/guides/axolotl',
   '/guides/tiger-salamander',
-
-  '/pack',             // Pack.jsx
-  '/quiz',             // Quiz.jsx (personality + trivia + knowledge tabs)
-
 ];
 
-async function generateSitemap() {
-  // Replace these with your actual Sanity details
-  const PROJECT_ID = '7nqbs1gk'; 
-  const DATASET = 'production'; 
-  
-  // GROQ query to grab all published post slugs and their last updated date
-  const groqQuery = encodeURIComponent('*[_type == "post"]{ "slug": slug.current, _updatedAt }');
-  const sanityUrl = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${groqQuery}`;
-
-  try {
-    console.log('Fetching fresh post slugs from Sanity...');
-    const response = await fetch(sanityUrl);
-    const data = await response.json();
-    
-    // Extract slugs and format them into relative URLs
-    const dynamicPages = data.result.map(post => {
-      return {
-        path: `/blog/${post.slug}`,
-        lastmod: post._updatedAt.split('T')[0]
-       // Formats timestamp to YYYY-MM-DD
-      };
-    });
-
-    // Get today's date for the static pages
-    const today = new Date().toISOString().split('T')[0];
-
-    // Deduplicate static paths and dynamic paths before emitting XML
-    const uniqueStaticPages = [...new Set(staticPages)];
-    const seenDynamic = new Set();
-    const uniqueDynamicPages = dynamicPages.filter(page => {
-      if (seenDynamic.has(page.path)) return false;
-      seenDynamic.add(page.path);
-      return true;
-    });
-
-    // 3. Start building the XML string
-    let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-    xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
-
-    // Add static pages to XML
-    uniqueStaticPages.forEach(path => {
-      const isHome = path === '';
-      const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/animal-facts', '/quiz'].includes(path);
-      const isLowFreq = path.startsWith('/guides/');
-      const changefreq = isHighFreq ? 'weekly' : isLowFreq ? 'monthly' : 'weekly';
-      const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isLowFreq ? '0.6' : '0.7';
-      xml += `  <url>\n`;
-      xml += `    <loc>${BASE_URL}${path}</loc>\n`;
-      xml += `    <lastmod>${today}</lastmod>\n`;
-      xml += `    <changefreq>${changefreq}</changefreq>\n`;
-      xml += `    <priority>${priority}</priority>\n`;
-      xml += `  </url>\n`;
-    });
-
-    // Add dynamic Sanity pages to XML
-    uniqueDynamicPages.forEach(page => {
-      xml += `  <url>\n`;
-      xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
-      xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
-      xml += `    <changefreq>weekly</changefreq>\n`;
-      xml += `    <priority>0.7</priority>\n`;
-      xml += `  </url>\n`;
-    });
-
-    xml += `</urlset>`;
-
-    // 4. Write the file straight into Vite's production build folder
-    fs.writeFileSync('./dist/sitemap.xml', xml);
-    console.log('🎉 Dynamic sitemap successfully generated in ./dist/sitemap.xml');
-
-  } catch (error) {
-    console.error('❌ Failed to generate sitemap:', error);
-  }
+async function sanityFetch(groqQuery) {
+  const url = `https://${PROJECT_ID}.api.sanity.io/v2021-10-21/data/query/${DATASET}?query=${encodeURIComponent(groqQuery)}`;
+  const res = await fetch(url);
+  const data = await res.json();
+  return data.result;
 }
 
-generateSitemap();
+async function generateSitemap() {
+  const today = new Date().toISOString().split('T')[0];
+
+  console.log('Fetching posts and categories from Sanity...');
+  const [posts, categories] = await Promise.all([
+    sanityFetch('*[_type == "post" && defined(slug.current)]{ "slug": slug.current, _updatedAt }'),
+    sanityFetch('*[_type == "category" && defined(slug.current)]{ "slug": slug.current }'),
+  ]);
+
+  const blogPostPages = posts.map(p => ({
+    path: `/blog/${p.slug}`,
+    lastmod: p._updatedAt.split('T')[0],
+    changefreq: 'weekly',
+    priority: '0.7',
+  }));
+
+  const blogCategoryPages = categories.map(c => ({
+    path: `/blog/category/${c.slug}`,
+    lastmod: today,
+    changefreq: 'weekly',
+    priority: '0.7',
+  }));
+
+  // Dedup static pages
+  const uniqueStatic = [...new Set(staticPages)];
+
+  let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+  uniqueStatic.forEach(path => {
+    const isHome = path === '';
+    const isHighFreq = ['', '/facts', '/blog', '/encyclopedia', '/encyclopedia/guides', '/animal-facts', '/quiz'].includes(path);
+    const isGuideDetail = path.startsWith('/guides/');
+    const isEncCat = path.startsWith('/encyclopedia/category/') || path.startsWith('/encyclopedia/guides/');
+    const changefreq = isHighFreq ? 'weekly' : isGuideDetail ? 'monthly' : 'weekly';
+    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isEncCat ? '0.7' : isGuideDetail ? '0.6' : '0.7';
+    xml += `  <url>\n`;
+    xml += `    <loc>${BASE_URL}${path}</loc>\n`;
+    xml += `    <lastmod>${today}</lastmod>\n`;
+    xml += `    <changefreq>${changefreq}</changefreq>\n`;
+    xml += `    <priority>${priority}</priority>\n`;
+    xml += `  </url>\n`;
+  });
+
+  [...blogCategoryPages, ...blogPostPages].forEach(page => {
+    xml += `  <url>\n`;
+    xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
+    xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
+    xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
+    xml += `    <priority>${page.priority}</priority>\n`;
+    xml += `  </url>\n`;
+  });
+
+  xml += `</urlset>`;
+
+  fs.writeFileSync('./dist/sitemap.xml', xml);
+  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${blogPostPages.length} blog posts`);
+}
+
+generateSitemap().catch(err => {
+  console.error('Failed to generate sitemap:', err);
+  process.exit(1);
+});

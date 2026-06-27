@@ -89,10 +89,19 @@ export default function Search() {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Search Animal Care Guides & Articles | Beastly Facts</title>
+        <title>{query.trim() ? `Search: "${query.trim()}" | Beastly Facts` : 'Search Animal Care Guides & Articles | Beastly Facts'}</title>
         <meta name="description" content="Search Beastly Facts for animal care guides, fun facts, reptile husbandry tips, and pet care articles. Find exactly what you need from our growing library." />
         <link rel="canonical" href="https://beastlyfacts.com/search" />
         <meta name="robots" content="noindex, follow" />
+        <meta property="og:title" content="Search | Beastly Facts" />
+        <meta property="og:description" content="Search animal care guides, fun facts, and pet care articles on Beastly Facts." />
+        <meta property="og:url" content="https://beastlyfacts.com/search" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Search | Beastly Facts" />
+        <meta name="twitter:description" content="Search animal care guides, fun facts, and pet care articles on Beastly Facts." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">

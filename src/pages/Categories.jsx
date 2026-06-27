@@ -40,6 +40,14 @@ export default function Categories() {
         <meta name="twitter:title" content="Browse by Category | Beastly Facts" />
         <meta name="twitter:description" content="Explore Beastly Facts articles and care guides by animal category." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Browse by Category | Beastly Facts",
+          "description": "Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more.",
+          "url": "https://beastlyfacts.com/categories",
+          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" }
+        })}</script>
       </Helmet>
       <div className="bg-gradient-to-b from-accent/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
