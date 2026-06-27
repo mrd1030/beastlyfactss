@@ -36,7 +36,7 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
         return data;
       })
       .then(data => setRelated(data.slice(0, 4)))
-      .catch(console.error);
+      .catch(() => {});
   }, [currentPostId, categorySlug]);
 
   if (related.length === 0) return null;

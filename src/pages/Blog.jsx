@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
+import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams } from 'react-router-dom';
@@ -33,10 +34,6 @@ const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
   "count": count(*[_type == "post" && references(^._id)])
 }`;
 
-const slugify = (text) => {
-  if (!text) return '';
-  return text.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-};
 
 export default function Blog() {
   const [sanityPosts, setSanityPosts] = useState([]);
@@ -44,6 +41,7 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedPost, setSelectedPost] = useState(null);
   const [page, setPage] = useState(1);
+  const [fetchError, setFetchError] = useState(false);
   const listRef = useRef(null);
 
   const navigate = useNavigate();
@@ -51,8 +49,17 @@ export default function Blog() {
   const { slug: routeSlug } = useParams();
 
   useEffect(() => {
-    client.fetch(ALL_POSTS_QUERY).then(setSanityPosts).catch(console.error);
-    client.fetch(CATEGORIES_QUERY).then(setSanityCategories).catch(console.error);
+    const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
+    Promise.race([
+      Promise.all([
+        client.fetch(ALL_POSTS_QUERY),
+        client.fetch(CATEGORIES_QUERY),
+      ]),
+      timeout,
+    ]).then(([posts, cats]) => {
+      setSanityPosts(posts);
+      setSanityCategories(cats);
+    }).catch(() => setFetchError(true));
   }, []);
 
   useEffect(() => {
@@ -195,6 +202,21 @@ export default function Blog() {
 
   if (selectedPost) {
     return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
+  }
+
+  if (fetchError) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center">
+          <span className="text-4xl mb-3 block">😿</span>
+          <h2 className="font-display font-bold text-xl text-foreground mb-2">Couldn't load articles</h2>
+          <p className="text-sm text-muted-foreground font-body mb-4">Something went wrong fetching the blog. Please try again.</p>
+          <button onClick={() => window.location.reload()} className="text-sm font-display font-semibold text-secondary hover:underline">
+            Refresh
+          </button>
+        </div>
+      </div>
+    );
   }
 
   const shouldNoindex = hasNoindexStateParams(location.search);

@@ -24,16 +24,10 @@ if (isDev && APP_ID) {
   // Only use real Base44 client in development
   try {
     base44 = createClient({ appId: APP_ID });
-    console.log('[Base44] Using real client (development mode)');
   } catch (error) {
-    console.warn('[Base44] Failed to init in dev. Using dummy.', error);
     base44 = createDummyClient();
   }
 } else {
-  // Production or no App ID → always use dummy
-  if (!isDev) {
-    console.log('[Base44] Production mode → using safe dummy client');
-  }
   base44 = createDummyClient();
 }
 

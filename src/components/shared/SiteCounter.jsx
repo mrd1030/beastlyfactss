@@ -22,7 +22,6 @@ export default function SiteCounter() {
     try {
       base44.analytics.track({ eventName: 'footer_counter_visit' });
     } catch (err) {
-      console.error('Analytics failed to log', err);
     }
 
     let timeoutId;

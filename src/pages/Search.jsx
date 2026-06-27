@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
+import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { Search as SearchIcon, X } from 'lucide-react';
 import { client } from '@/lib/sanity';
@@ -25,15 +26,6 @@ const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
   "tags": tags
 }`;
 
-// EXACT MATCH slugify function to bridge perfectly with Blog.jsx
-const slugify = (text) => {
-  if (!text) return '';
-  return text.toString().toLowerCase()
-    .replace(/\s*&\s*|\s*and\s*/g, '-')
-    .replace(/[^a-z0-9\-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-};
 
 export default function Search() {
   const navigate = useNavigate();

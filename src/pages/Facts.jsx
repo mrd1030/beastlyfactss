@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
+import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom'; 
@@ -11,14 +12,6 @@ import FactModal from '@/components/shared/FactModal';
 // Reduced footprint size to instantly clear initial painting lag
 const PAGE_SIZE = 16; 
 
-// Helper function matching your universal clean-hyphen strategy
-const slugify = (text) => {
-  if (!text) return '';
-  return text
-    .toLowerCase()
-    .replace(/ & /g, '-')
-    .replace(/ /g, '-');
-};
 
 function shuffleArray(arr) {
   const a = [...arr];
@@ -221,6 +214,8 @@ export default function Facts() {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalPath} />
+        {page > 1 && <link rel="prev" href={`${canonicalPath}${page === 2 ? '' : `?page=${page - 1}`}`} />}
+        {page < totalPages && <link rel="next" href={`${canonicalPath}?page=${page + 1}`} />}
         <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />

@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async'; // Ensure you have react-helmet installed
+import React, { useState, lazy, Suspense } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import HeroSection from '@/components/home/HeroSection';
-import TrendingFacts from '@/components/home/TrendingFacts';
-import EncyclopediaTeaser from '@/components/home/EncyclopediaTeaser';
-import CritterDigestPreview from '@/components/home/CritterDigestPreview';
-import GuideSpotlight from '@/components/home/GuideSpotlight';
-import QuizTeaser from '@/components/home/QuizTeaser';
-import TriviaTeaser from '@/components/home/TriviaTeaser';
-import Newsletter from '@/components/shared/Newsletter';
+const TrendingFacts = lazy(() => import('@/components/home/TrendingFacts'));
+const EncyclopediaTeaser = lazy(() => import('@/components/home/EncyclopediaTeaser'));
+const CritterDigestPreview = lazy(() => import('@/components/home/CritterDigestPreview'));
+const GuideSpotlight = lazy(() => import('@/components/home/GuideSpotlight'));
+const QuizTeaser = lazy(() => import('@/components/home/QuizTeaser'));
+const TriviaTeaser = lazy(() => import('@/components/home/TriviaTeaser'));
+const Newsletter = lazy(() => import('@/components/shared/Newsletter'));
 import FactModal from '@/components/shared/FactModal';
 
 export default function Home() {
@@ -53,13 +53,15 @@ export default function Home() {
         </div>
       </section>
 
-      <TrendingFacts onOpenFact={setSelectedFact} />
-      <EncyclopediaTeaser />
-      <CritterDigestPreview />
-      <GuideSpotlight />
-      <TriviaTeaser />
-      <QuizTeaser />
-      <Newsletter />
+      <Suspense fallback={null}>
+        <TrendingFacts onOpenFact={setSelectedFact} />
+        <EncyclopediaTeaser />
+        <CritterDigestPreview />
+        <GuideSpotlight />
+        <TriviaTeaser />
+        <QuizTeaser />
+        <Newsletter />
+      </Suspense>
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} />
     </main>
   );

@@ -24,7 +24,6 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     setIsAuthenticated(false);
     // You can add more logout logic later
-    console.log("User logged out");
   };
 
   const navigateToLogin = () => {

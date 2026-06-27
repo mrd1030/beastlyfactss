@@ -32,29 +32,53 @@ export default function CategoryPage() {
   const [loading, setLoading] = useState(true);
   const [sort, setSort] = useState('newest');
   const [notFound, setNotFound] = useState(false);
+  const [fetchError, setFetchError] = useState(false);
 
   useEffect(() => {
     if (!slug) return;
     setLoading(true);
     setNotFound(false);
+    setFetchError(false);
 
-    Promise.all([
-      client.fetch(CATEGORY_QUERY, { slug }),
-      client.fetch(POSTS_QUERY, { slug }),
-      client.fetch(ALL_CATS_QUERY)
+    const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
+    Promise.race([
+      Promise.all([
+        client.fetch(CATEGORY_QUERY, { slug }),
+        client.fetch(POSTS_QUERY, { slug }),
+        client.fetch(ALL_CATS_QUERY),
+      ]),
+      timeout,
     ]).then(([cat, postsData, cats]) => {
       if (!cat) setNotFound(true);
       setCategory(cat);
       setPosts(postsData);
       setAllCategories(cats.filter(c => c.count > 0));
       setLoading(false);
-    }).catch(() => setLoading(false));
+    }).catch(() => {
+      setFetchError(true);
+      setLoading(false);
+    });
   }, [slug]);
 
   const sorted = [...posts].sort((a, b) => {
     const da = new Date(a.publishedAt), db = new Date(b.publishedAt);
     return sort === 'newest' ? db - da : da - db;
   });
+
+  if (!loading && fetchError) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center">
+          <span className="text-4xl mb-3 block">😿</span>
+          <h2 className="font-display font-bold text-xl text-foreground mb-2">Couldn't load this category</h2>
+          <p className="text-sm text-muted-foreground font-body mb-4">Something went wrong. Please try again.</p>
+          <button onClick={() => window.location.reload()} className="text-sm font-display font-semibold text-secondary hover:underline">
+            Refresh
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (!loading && notFound) {
     return (

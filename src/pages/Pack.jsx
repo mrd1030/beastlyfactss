@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Heart, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -18,6 +19,19 @@ export default function Pack() {
 
   return (
     <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
+      <Helmet>
+        <title>My Beast Pack | Beastly Facts</title>
+        <meta name="description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts. Heart any fact to save it here." />
+        <link rel="canonical" href="https://beastlyfacts.com/pack" />
+        <meta name="robots" content="noindex,follow" />
+        <meta property="og:title" content="My Beast Pack | Beastly Facts" />
+        <meta property="og:description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts." />
+        <meta property="og:url" content="https://beastlyfacts.com/pack" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="My Beast Pack | Beastly Facts" />
+        <meta name="twitter:description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts." />
+      </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <span className="text-3xl mb-2 block">❤️</span>
