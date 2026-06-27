@@ -282,7 +282,7 @@ export default function Navbar() {
                     {navCategories.map(cat => (
                       <Link 
                         key={cat._id} 
-                        to={`/blog?category=${slugify(cat.title)}`} 
+                        to={`/blog/category/${slugify(cat.title)}`}
                         onClick={handleMenuNav} 
                         className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
                       >
