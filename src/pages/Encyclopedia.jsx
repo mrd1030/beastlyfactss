@@ -157,7 +157,7 @@ export default function Encyclopedia() {
   const encDescription = isGuides
     ? `Browse reptile and exotic pet care guides${activeFilter !== 'All' ? ` for ${activeFilter}` : ''} on Beastly Facts.`
     : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
-  const encCanonical = `https://beastlyfacts.com${location.pathname}`;
+  const encCanonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
   const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (

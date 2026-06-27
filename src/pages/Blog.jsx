@@ -229,7 +229,7 @@ export default function Blog() {
       <Helmet>
         <title>The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts</title>
         <meta name="description" content="Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week." />
-        <link rel="canonical" href="https://beastlyfacts.com/blog" />
+        <link rel="canonical" href="https://beastlyfacts.com/blog/" />
         <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="The Critter Digest | Reptile & Exotic Pet Care Blog" />
         <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
@@ -379,7 +379,7 @@ function AuthorBio() {
 
 function PostView({ post, onBack, allPosts, onSelectPost }) {
   const postSlug = post.slug?.current || post._id || post.id;
-  const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}`;
+  const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   const postTitle = `${post.title} | Beastly Facts`;
   const postDescription = post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
   const ogImage = post.mainImage
@@ -407,7 +407,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog" },
+      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog/" },
       { "@type": "ListItem", "position": 3, "name": post.title, "item": canonicalUrl },
     ],
   };

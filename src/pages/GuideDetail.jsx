@@ -152,14 +152,14 @@ export default function GuideDetail() {
   const guideDescription = guide.tagline
     ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
     : `Complete care guide for ${guide.name} — covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`;
-  const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}`;
+  const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Encyclopedia & Guides", "item": "https://beastlyfacts.com/encyclopedia" },
+      { "@type": "ListItem", "position": 2, "name": "Encyclopedia & Guides", "item": "https://beastlyfacts.com/encyclopedia/" },
       { "@type": "ListItem", "position": 3, "name": `${guide.name} Care Guide`, "item": canonicalUrl },
     ],
   };

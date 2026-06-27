@@ -205,7 +205,7 @@ export default function Facts() {
   const pageDescription = activeCategory === 'All'
     ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts — from weird reptile behaviours to surprising dog science and wild animal trivia.'
     : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts — curated, verified, and genuinely mind-blowing.`;
-  const canonicalPath = 'https://beastlyfacts.com/facts';
+  const canonicalPath = 'https://beastlyfacts.com/facts/';
   const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (

@@ -61,7 +61,7 @@ export default function AnimalFacts() {
       <Helmet>
         <title>Fun Animal Facts & Pet Care Tips | Beastly Facts</title>
         <meta name="description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets. From ball python feeding to cat behavior — your go-to animal knowledge hub." />
-        <link rel="canonical" href="https://beastlyfacts.com/animal-facts" />
+        <link rel="canonical" href="https://beastlyfacts.com/animal-facts/" />
         <meta property="og:title" content="Fun Animal Facts & Pet Care Tips | Beastly Facts" />
         <meta property="og:description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets." />
         <meta property="og:url" content="https://beastlyfacts.com/animal-facts" />

@@ -19,7 +19,7 @@ export default function Contact() {
       <Helmet>
         <title>Contact Beastly Facts | Get in Touch</title>
         <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team — we'd love to hear from you!" />
-        <link rel="canonical" href="https://beastlyfacts.com/contact" />
+        <link rel="canonical" href="https://beastlyfacts.com/contact/" />
         <meta property="og:title" content="Contact Beastly Facts" />
         <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
         <meta property="og:url" content="https://beastlyfacts.com/contact" />

@@ -29,7 +29,7 @@ export default function Categories() {
       <Helmet>
         <title>Browse by Category | Beastly Facts</title>
         <meta name="description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more. Find exactly what you're looking for." />
-        <link rel="canonical" href="https://beastlyfacts.com/categories" />
+        <link rel="canonical" href="https://beastlyfacts.com/categories/" />
         <meta property="og:title" content="Browse by Category | Beastly Facts" />
         <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more." />
         <meta property="og:url" content="https://beastlyfacts.com/categories" />

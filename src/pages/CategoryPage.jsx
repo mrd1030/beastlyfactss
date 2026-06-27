@@ -95,7 +95,7 @@ export default function CategoryPage() {
   const categoryTitle = category?.title || slug;
   const categoryDescription = category?.description
     || `Explore all ${categoryTitle} articles and care guides on Beastly Facts.`;
-  const canonicalUrl = `https://beastlyfacts.com/category/${slug}`;
+  const canonicalUrl = `https://beastlyfacts.com/category/${slug}/`;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
