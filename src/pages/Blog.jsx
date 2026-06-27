@@ -4,7 +4,7 @@ import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
-import { useNavigate, useLocation, useParams } from 'react-router-dom';
+import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { client } from '@/lib/sanity';
 import { urlFor } from '@/lib/sanityImage';
 import groq from 'groq';
@@ -358,6 +358,25 @@ export default function Blog() {
   );
 }
 
+function AuthorBio() {
+  return (
+    <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
+      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
+        🦎
+      </div>
+      <div>
+        <p className="font-display font-bold text-sm text-foreground mb-1">Written by Mike</p>
+        <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
+          Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.
+        </p>
+        <Link to="/about" className="text-xs font-display font-semibold text-secondary hover:underline">
+          More about Mike →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 function PostView({ post, onBack, allPosts, onSelectPost }) {
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}`;
@@ -466,6 +485,8 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
             </div>
+
+            <AuthorBio />
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 
