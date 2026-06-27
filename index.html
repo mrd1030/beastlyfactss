@@ -31,7 +31,14 @@
     <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
 
     <!-- LCP preload: hero image above fold, fetched before render -->
-    <link rel="preload" as="image" href="/assets/hero-1200.jpg" type="image/webp" />
+    <!-- Preload WebP hero (preferred by modern browsers); sizes match HeroSection srcset -->
+    <link rel="preload" as="image" href="/assets/hero-1200.webp" type="image/webp"
+      imagesrcset="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
+      imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px" />
+    <!-- Fallback preload for browsers without WebP support -->
+    <link rel="preload" as="image" href="/assets/hero-1200.jpg" type="image/jpeg"
+      imagesrcset="/assets/hero-400.jpg 400w, /assets/hero-800.jpg 800w, /assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w"
+      imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px" />
 
     <!-- Fonts: preload then apply async to avoid render-blocking -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
