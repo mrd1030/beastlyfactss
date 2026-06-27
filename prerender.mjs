@@ -11,7 +11,7 @@
 
 import puppeteer from 'puppeteer';
 import { preview } from 'vite';
-import fs from 'fs/promises';
+import { mkdir, writeFile, readdir, readFile } from 'fs/promises';
 import path from 'path';
 
 const DIST = './dist';
@@ -27,15 +27,23 @@ const ENCYCLOPEDIA_CATEGORIES = [
   'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
 ];
 
-// Local newsletter post slugs (mirrors newsletters.js — update when posts are added/removed)
-const LOCAL_POST_SLUGS = [
-  'crested-gecko-humidity-guide',
-  'leopard-gecko-temperature-guide',
-  'ball-python-feeding-guide',
-  'beginners-guide-to-bioactive-enclosures',
-  'uvb-lighting-complete-guide',
-  'reptile-shedding-complete-guide',
-];
+// Reads slug from MDX frontmatter; falls back to filename if not set
+async function getMdxRoutes() {
+  const contentDirs = ['content/blog', 'content/guides', 'content/fun-facts', 'content/short-story'];
+  const routes = [];
+  for (const dir of contentDirs) {
+    try {
+      const files = await readdir(dir);
+      for (const file of files.filter(f => f.endsWith('.mdx'))) {
+        const raw = await readFile(path.join(dir, file), 'utf-8');
+        const match = raw.match(/^slug:\s*["']?([^"'\n]+)["']?/m);
+        const slug = match ? match[1].trim() : file.replace('.mdx', '');
+        routes.push(`/blog/${slug}`);
+      }
+    } catch {}
+  }
+  return routes;
+}
 
 // Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
 const STATIC_ROUTES = [
@@ -52,7 +60,6 @@ const STATIC_ROUTES = [
   '/search',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
-  ...LOCAL_POST_SLUGS.map(s => `/blog/${s}`),
 ];
 
 async function getSanityRoutes() {
@@ -116,14 +123,15 @@ async function saveHtml(route, html) {
       ? path.join(DIST, 'index.html')
       : path.join(DIST, route.replace(/^\//, ''), 'index.html');
 
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, html, 'utf-8');
+  await mkdir(path.dirname(filePath), { recursive: true });
+  await writeFile(filePath, html, 'utf-8');
 }
 
 async function main() {
-  console.log('🔍 Discovering dynamic routes from Sanity...');
-  const dynamicRoutes = await getSanityRoutes();
-  const allRoutes = [...STATIC_ROUTES, ...dynamicRoutes];
+  console.log('🔍 Discovering dynamic routes from Sanity and MDX...');
+  const [dynamicRoutes, mdxRoutes] = await Promise.all([getSanityRoutes(), getMdxRoutes()]);
+  // Deduplicate in case MDX slugs overlap with Sanity slugs
+  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes])];
   console.log(`📄 Prerendering ${allRoutes.length} routes (${dynamicRoutes.length} dynamic)...`);
 
   // Start Vite preview server

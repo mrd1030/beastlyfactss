@@ -365,7 +365,9 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const postDescription = post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
   const ogImage = post.mainImage
     ? urlFor(post.mainImage).width(1200).height(630).fit('crop').url()
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : post.image
+      ? `https://beastlyfacts.com${post.image}`
+      : 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
   const articleSchema = {
     "@context": "https://schema.org",
