@@ -60,7 +60,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   };
 
   const handleShare = async () => {
-    const url = `https://beastlyfacts.com/blog?post=${postSlug || postId}`;
+    const url = `https://beastlyfacts.com/blog/${postSlug || postId}`;
     if (navigator.share) {
       try {
         await navigator.share({ title: postTitle, url });
