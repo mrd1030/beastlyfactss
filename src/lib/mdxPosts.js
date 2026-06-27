@@ -4,6 +4,7 @@
 const guideModules = import.meta.glob('/content/guides/*.mdx', { eager: true });
 const blogModules = import.meta.glob('/content/blog/*.mdx', { eager: true });
 const funFactModules = import.meta.glob('/content/fun-facts/*.mdx', { eager: true });
+const shortstoryModules = import.meta.glob('/content/short-story/*.mdx', { eager: true });
 
 /**
  * Normalizes an MDX module into a consistent post object
@@ -50,6 +51,7 @@ export const mdxPosts = [
   ...Object.entries(guideModules).map(([path, mod]) => normalizeMdxPost(path, mod)),
   ...Object.entries(blogModules).map(([path, mod]) => normalizeMdxPost(path, mod)),
   ...Object.entries(funFactModules).map(([path, mod]) => normalizeMdxPost(path, mod)),
+  ...Object.entries(shortstoryModules).map(([path, mod]) => normalizeMdxPost(path, mod)),
 ];
 
 // Optional: Export a helper to get posts by category
