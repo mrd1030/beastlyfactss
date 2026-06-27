@@ -111,12 +111,13 @@ async function renderRoute(page, route) {
   const url = `${BASE_URL}${route}`;
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
 
-  // For individual blog posts, networkidle0 fires after the Sanity fetch
-  // completes but before React re-runs the useEffect that sets selectedPost
-  // and updates the Helmet meta tags. Wait for the canonical URL to reflect
-  // the post slug — that proves PostView has fully rendered.
-  if (/^\/blog\/[^/]+$/.test(route)) {
-    const slug = route.split('/').pop();
+  // For lazy-loaded routes, networkidle0 fires after the JS chunk downloads
+  // but React may not have re-rendered yet, so react-helmet-async hasn't
+  // updated <head>. Wait for the canonical to reflect the current route slug
+  // before capturing — covers blog posts, guide pages, and any other lazy route.
+  const slugMatch = route.match(/\/([^/]+)$/);
+  const routeSlug = slugMatch ? slugMatch[1] : null;
+  if (routeSlug && route !== '/') {
     try {
       await page.waitForFunction(
         (s) => {
@@ -124,10 +125,10 @@ async function renderRoute(page, route) {
           return canonical && canonical.getAttribute('href').includes(s);
         },
         { timeout: 8000 },
-        slug
+        routeSlug
       );
     } catch {
-      // Post may not have loaded (e.g. local-only post); fall through
+      // Canonical didn't update in time (e.g. category pages with no slug in canonical); fall through
     }
   }
 
