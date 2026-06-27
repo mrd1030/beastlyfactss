@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
@@ -53,18 +53,41 @@ const subtypes = {
 export default function Encyclopedia() {
   const navigate = useNavigate();
   const location = useLocation();
-  const urlParams = new URLSearchParams(location.search);
 
-  const initialTab = urlParams.get('tab') === 'guides' ? 'guides' : 'encyclopedia';
-  const initialCat = urlParams.get('category') || 'All';
+  const { encCat, guideFilter } = useParams();
+  const isGuidesPath = location.pathname.startsWith('/encyclopedia/guides');
+  const initialTab = isGuidesPath ? 'guides' : 'encyclopedia';
+
+  const resolveEncCat = (slug) => {
+    if (!slug) return 'All';
+    const found = encyclopediaCategories.find(c =>
+      c.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-') === slug.toLowerCase()
+    );
+    return found ? found.name : 'All';
+  };
+
+  const resolveGuideFilter = (slug) => {
+    if (!slug) return 'All';
+    const found = guideFilters.find(f =>
+      f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-').replace(/ /g, '-') === slug.toLowerCase()
+    );
+    return found ? found.label : 'All';
+  };
 
   const [activeTab, setActiveTab] = useState(initialTab);
   const [search, setSearch] = useState('');
-  const [activeCategory, setActiveCategory] = useState(initialCat);
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeCategory, setActiveCategory] = useState(() => resolveEncCat(encCat));
+  const [activeFilter, setActiveFilter] = useState(() => resolveGuideFilter(guideFilter));
   const [dogSize, setDogSize] = useState('All Sizes');
   const [activeSubtype, setActiveSubtype] = useState(null);
   const [isLegendOpen, setIsLegendOpen] = useState(false);
+
+  // Sync state when route params change (e.g. back/forward)
+  useEffect(() => {
+    setActiveTab(location.pathname.startsWith('/encyclopedia/guides') ? 'guides' : 'encyclopedia');
+    setActiveCategory(resolveEncCat(encCat));
+    setActiveFilter(resolveGuideFilter(guideFilter));
+  }, [encCat, guideFilter, location.pathname]);
 
   // Keyboard listener to close popup modal on "Escape" keypress
   useEffect(() => {
@@ -82,25 +105,6 @@ export default function Encyclopedia() {
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [isLegendOpen]);
-
-  // Sync state with URL changes
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const catFromUrl = params.get('category');
-
-    if (catFromUrl) {
-      const foundCat = encyclopediaCategories.find(c => 
-        c.name.toLowerCase()
-        .replace(/ & /g, '-')
-        .replace(/ /g, '-')
-        .toLowerCase() === catFromUrl.toLowerCase()
-      );
-
-      setActiveCategory(foundCat ? foundCat.name : 'All');
-    } else {
-      setActiveCategory('All');
-    }
-  }, [location.search]);
 
   // Encyclopedia filtering
   const filteredEncyclopedia = useMemo(() => {
@@ -146,13 +150,14 @@ export default function Encyclopedia() {
     return allGuides;
   }, [activeFilter, dogSize, activeSubtype]);
 
-  const encTitle = activeCategory === 'All'
-    ? 'Encyclopedia & Care Guides | Beastly Facts'
-    : `${activeCategory} Care Guides & Facts | Beastly Facts`;
-  const encDescription = `Explore our detailed encyclopedia and care guides for ${
-    activeCategory === 'All' ? 'all your pets' : activeCategory
-  }. Everything you need to know about husbandry, health, and happiness.`;
-  const encCanonical = 'https://beastlyfacts.com/encyclopedia';
+  const isGuides = activeTab === 'guides';
+  const encTitle = isGuides
+    ? (activeFilter === 'All' ? 'Care Guides | Beastly Facts' : `${activeFilter} Care Guides | Beastly Facts`)
+    : (activeCategory === 'All' ? 'Encyclopedia & Care Guides | Beastly Facts' : `${activeCategory} Care Guides & Facts | Beastly Facts`);
+  const encDescription = isGuides
+    ? `Browse reptile and exotic pet care guides${activeFilter !== 'All' ? ` for ${activeFilter}` : ''} on Beastly Facts.`
+    : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
+  const encCanonical = `https://beastlyfacts.com${location.pathname}`;
   const shouldNoindex = hasNoindexStateParams(location.search);
 
   return (
@@ -195,7 +200,7 @@ export default function Encyclopedia() {
             {TABS.map(tab => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => navigate(tab.id === 'guides' ? '/encyclopedia/guides' : '/encyclopedia')}
                 className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
                   activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
@@ -227,6 +232,7 @@ export default function Encyclopedia() {
           setActiveSubtype={setActiveSubtype}
           filteredGuides={filteredGuides}
           onOpenLegend={() => setIsLegendOpen(true)}
+          navigate={navigate}
         />
       )}
 
@@ -282,11 +288,8 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             <button
               key={cat.name}
               onClick={() => {
-                const urlSlug = cat.name.toLowerCase()
-                .replace(/ & /g, '-')
-                .replace(/ /g, '-');
-
-                navigate(`/encyclopedia?category=${urlSlug}`);
+                const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+                navigate(`/encyclopedia/category/${urlSlug}`);
               }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                 activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -324,7 +327,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
   );
 } 
 
-function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend }) {
+function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, navigate }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -333,7 +336,12 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
           {guideFilters.map(f => (
             <button
               key={f.label}
-              onClick={() => { setActiveFilter(f.label); setDogSize('All Sizes'); setActiveSubtype(null); base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } }); }}
+              onClick={() => {
+                const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+                navigate(f.label === 'All' ? '/encyclopedia/guides' : `/encyclopedia/guides/${slug}`);
+                setDogSize('All Sizes'); setActiveSubtype(null);
+                base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } });
+              }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
                 activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
