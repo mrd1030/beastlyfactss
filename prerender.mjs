@@ -127,59 +127,66 @@ async function saveHtml(route, html) {
   await writeFile(filePath, html, 'utf-8');
 }
 
-async function main() {
-  console.log('🔍 Discovering dynamic routes from Sanity and MDX...');
-  const [dynamicRoutes, mdxRoutes] = await Promise.all([getSanityRoutes(), getMdxRoutes()]);
-  // Deduplicate in case MDX slugs overlap with Sanity slugs
-  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes])];
-  console.log(`📄 Prerendering ${allRoutes.length} routes (${dynamicRoutes.length} dynamic)...`);
+const CONCURRENCY = 5; // render N routes at a time
 
-  // Start Vite preview server
-  const server = await preview({ preview: { port: PORT, open: false } });
-
-  const browser = await puppeteer.launch({
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
-  });
-
-  let passed = 0;
-  let failed = 0;
-
-  for (const route of allRoutes) {
+async function renderWorker(browser, routes, results) {
+  for (const route of routes) {
     const page = await browser.newPage();
-    // Block ads/analytics to speed up rendering
     await page.setRequestInterception(true);
     page.on('request', req => {
-      const url = req.url();
-      if (
-        url.includes('googletagmanager') ||
-        url.includes('google-analytics') ||
-        url.includes('pagead') ||
-        url.includes('fundingchoices')
-      ) {
+      const u = req.url();
+      if (u.includes('googletagmanager') || u.includes('google-analytics') ||
+          u.includes('pagead') || u.includes('fundingchoices')) {
         req.abort();
       } else {
         req.continue();
       }
     });
-
     try {
       const html = await renderRoute(page, route);
       await saveHtml(route, html);
       console.log(`  ✓ ${route}`);
-      passed++;
+      results.passed++;
     } catch (err) {
       console.warn(`  ✗ ${route} — ${err.message}`);
-      failed++;
+      results.failed++;
     } finally {
       await page.close();
     }
   }
+}
+
+async function main() {
+  // On Cloudflare Pages, skip prerender for non-production branches (preview deploys).
+  // Set CF_PAGES_BRANCH in the Cloudflare Pages env vars, or SKIP_PRERENDER=true to always skip.
+  const branch = process.env.CF_PAGES_BRANCH;
+  if (process.env.SKIP_PRERENDER === 'true' || (branch && branch !== 'main')) {
+    console.log(`Skipping prerender (branch: ${branch || 'unknown'}, SKIP_PRERENDER=${process.env.SKIP_PRERENDER})`);
+    process.exit(0);
+  }
+
+  console.log('🔍 Discovering dynamic routes from Sanity and MDX...');
+  const [dynamicRoutes, mdxRoutes] = await Promise.all([getSanityRoutes(), getMdxRoutes()]);
+  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes])];
+  console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY}...`);
+
+  const server = await preview({ preview: { port: PORT, open: false } });
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+  });
+
+  // Split routes into CONCURRENCY buckets and run in parallel
+  const results = { passed: 0, failed: 0 };
+  const buckets = Array.from({ length: CONCURRENCY }, (_, i) =>
+    allRoutes.filter((_, j) => j % CONCURRENCY === i)
+  );
+  await Promise.all(buckets.map(bucket => renderWorker(browser, bucket, results)));
 
   await browser.close();
   server.httpServer.close();
 
-  console.log(`\n🎉 Prerender complete: ${passed} succeeded, ${failed} failed.`);
+  console.log(`\n🎉 Prerender complete: ${results.passed} succeeded, ${results.failed} failed.`);
   if (failed > 0) process.exit(1);
 }
 
