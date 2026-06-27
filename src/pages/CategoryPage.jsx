@@ -94,7 +94,7 @@ export default function CategoryPage() {
 
   const categoryTitle = category?.title || slug;
   const categoryDescription = category?.description
-    || `Explore all ${categoryTitle} articles and care guides on Beastly Facts.`;
+    || `Browse all ${categoryTitle} articles and care guides on Beastly Facts — expert tips, husbandry advice, and pet care essentials from experienced keepers.`;
   const canonicalUrl = `https://beastlyfacts.com/category/${slug}/`;
 
   const breadcrumbSchema = {

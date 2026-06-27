@@ -155,7 +155,9 @@ export default function Encyclopedia() {
     ? (activeFilter === 'All' ? 'Care Guides | Beastly Facts' : `${activeFilter} Care Guides | Beastly Facts`)
     : (activeCategory === 'All' ? 'Encyclopedia & Care Guides | Beastly Facts' : `${activeCategory} Care Guides & Facts | Beastly Facts`);
   const encDescription = isGuides
-    ? `Browse reptile and exotic pet care guides${activeFilter !== 'All' ? ` for ${activeFilter}` : ''} on Beastly Facts.`
+    ? (activeFilter !== 'All'
+        ? `Explore all ${activeFilter} care guides on Beastly Facts — husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
+        : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.')
     : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
   const encCanonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
   const shouldNoindex = hasNoindexStateParams(location.search);

@@ -1321,7 +1321,7 @@ Hibernation (brumation) is natural and important for Russian tortoises. Animals 
     emoji: "🐢",
     difficulty: "Advanced",
     petType: "Turtles & Tortoises",
-    tagline: "The third-largest tortoise in the world: a lifetime commitment that can outlive you!",
+    tagline: "The third-largest tortoise: a lifetime commitment that may outlive you!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     sections: {
       housing: "Baby sulcatas can start indoors, but adults require large outdoor enclosures. Adults need at least 100+ square feet of outdoor space, and many keepers give them an entire yard. Outdoor walls must be buried 12 to 18 inches underground (they will dig under anything). A heated shelter with temperatures maintained at 60 degrees F+ is essential for cooler climates. Indoor basking spot: 95 to 105 degrees F. Strong UVB (Arcadia 12%) is mandatory. These tortoises will eventually demolish most enclosure furniture. Plan accordingly.",
@@ -1399,7 +1399,7 @@ Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately f
     emoji: "🦡",
     difficulty: "Intermediate",
     petType: "Small Mammals",
-    tagline: "The mischievous, slinky escape artist that sleeps 18 hours and causes chaos for the other 6!",
+    tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
     sections: {
       housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day — this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
@@ -1521,7 +1521,7 @@ Most pet mantis species have lifespans of 12 to 18 months. The hobby cycle for m
     emoji: "🐛",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
-    tagline: "The slow-moving, gentle detritivore that is essentially a living composting machine!",
+    tagline: "The gentle detritivore that works as a living composting machine!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
     sections: {
       housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
@@ -1591,7 +1591,7 @@ If housing multiple individuals, watch carefully for cannibalism. Emperor scorpi
     emoji: "🪲",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
-    tagline: "The armored insect that hisses by forcing air through its spiracles, and is surprisingly clean!",
+    tagline: "Calm, armored, surprisingly clean — and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
     sections: {
       housing: `A 10-gallon terrarium with a tight, secure lid is a reasonable starting point for a small colony of 10 to 20 individuals. For larger colonies (which they become quickly), upgrade to a 20-gallon or larger rubbermaid-style container with a ventilated lid. Madagascar hissing cockroaches are exceptional climbers on rough surfaces — any textured wall, wood, or mesh can be scaled. Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape. Petroleum jelly applied near the top edge (a "barrier" band) is a secondary escape-proofing method some keepers use.

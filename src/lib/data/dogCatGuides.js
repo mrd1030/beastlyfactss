@@ -162,7 +162,7 @@ export const dogGuides = [
     difficulty: "Beginner",
     petType: "Dog",
     sizeCategory: "Large",
-    tagline: "The gentle, golden-hearted family dog with a joyful outlook on life.",
+    tagline: "Gentle, joyful, and endlessly loyal: the golden retriever.",
     funFact: "Goldens have an unusually high rate of cancer compared to other breeds: studies suggest up to 60% of Golden Retrievers will die from cancer. The Morris Animal Foundation is running the largest canine health study in history specifically to investigate this.",
     sections: {
       housing: "Goldens are family-oriented dogs that do not do well in isolation. They thrive with access to a yard for play but adapt to apartment life with sufficient daily exercise. Their long, double coat means significant shedding year-round, with heavy seasonal blowouts. Regular brushing (3 to 4 times per week) and a good vacuum are essential.",
@@ -218,7 +218,7 @@ export const dogGuides = [
     difficulty: "Intermediate",
     petType: "Dog",
     sizeCategory: "Small",
-    tagline: "Charming, adaptable, and popular, but needs informed, attentive ownership.",
+    tagline: "Charming and adaptable, but needs informed, attentive ownership.",
     funFact: "French Bulldogs cannot reproduce naturally in most cases: their puppies' heads are too large to pass through the birth canal, so nearly all Frenchie litters are delivered by C-section. They also cannot swim due to their front-heavy build and must always wear a life jacket near water.",
     sections: {
       housing: "Frenchies are well-suited to apartment living and are relatively low-exercise compared to many breeds. However, they are very sensitive to heat and humidity: their brachycephalic (flat-faced) anatomy severely limits their ability to cool themselves by panting. Never leave a French Bulldog in a hot car, do not exercise them in warm weather, and keep AC available in summer.",

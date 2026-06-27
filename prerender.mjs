@@ -124,7 +124,7 @@ async function renderRoute(page, route) {
           const canonical = document.querySelector('link[rel="canonical"]');
           return canonical && canonical.getAttribute('href').includes(s);
         },
-        { timeout: 3000 },
+        { timeout: 8000 },
         routeSlug
       );
     } catch {

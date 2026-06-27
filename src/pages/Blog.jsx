@@ -223,17 +223,29 @@ export default function Blog() {
   }
 
   const shouldNoindex = hasNoindexStateParams(location.search);
+  const catTitle = catSlug
+    ? catSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+    : null;
+  const blogTitle = catTitle
+    ? `${catTitle} Articles | Beastly Facts`
+    : 'The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts';
+  const blogDescription = catTitle
+    ? `Browse all ${catTitle} articles on Beastly Facts — reptile care guides, exotic pet tips, and animal husbandry deep-dives from The Critter Digest.`
+    : 'Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
+  const blogCanonical = catSlug
+    ? `https://beastlyfacts.com/blog/category/${catSlug}/`
+    : 'https://beastlyfacts.com/blog/';
 
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts</title>
-        <meta name="description" content="Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week." />
-        <link rel="canonical" href="https://beastlyfacts.com/blog/" />
+        <title>{blogTitle}</title>
+        <meta name="description" content={blogDescription} />
+        <link rel="canonical" href={blogCanonical} />
         <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
-        <meta property="og:title" content="The Critter Digest | Reptile & Exotic Pet Care Blog" />
-        <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
-        <meta property="og:url" content="https://beastlyfacts.com/blog/" />
+        <meta property="og:title" content={blogTitle} />
+        <meta property="og:description" content={blogDescription} />
+        <meta property="og:url" content={blogCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="The Critter Digest — reptile and exotic pet care blog by Beastly Facts" />

@@ -1,26 +1,120 @@
-# BeastlyFacts
+# Beastly Facts
 
-BeastlyFacts is the home for mind-blowing animal facts, trivia, quizzes, and practical care guides — especially for exotic pets like bearded dragons and rabbits. We combine fun learning with honest, real-world husbandry advice from experienced keepers.
+> Animal care guides, fun facts, quizzes, and a blog for exotic and domestic pet owners. Created by one passionate keeper who believes in honest, practical, science-backed animal husbandry advice.
+
+## About
+
+Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, invertebrates, dogs, and cats. Content ranges from bite-sized fun facts to comprehensive care guides. The site features a personal mascot (a bearded dragon named Dexter) and is run by a single owner-creator.
 
 ## Main Sections
 
-- [Facts](/facts) — Amazing animal trivia and interactive quizzes
-- [Encyclopedia](/encyclopedia) — Detailed profiles of animals from around the world
-- [Guides](/guides) — In-depth care guides and husbandry resources for reptiles, small mammals, and more
-- [Critter Digest](/blog) — Longer articles, news, and deep dives into pet care
+- [Animal Facts](https://beastlyfacts.com/facts/): Hundreds of curated fun animal facts, filterable by category. Great for trivia and quick learning.
+- [Encyclopedia](https://beastlyfacts.com/encyclopedia/): Animal profiles organized by category (geckos, lizards, snakes, turtles, small mammals, birds, dogs, cats, invertebrates, amphibians).
+- [Care Guides](https://beastlyfacts.com/encyclopedia/guides/): In-depth husbandry guides for exotic and domestic pets.
+- [Blog / Critter Digest](https://beastlyfacts.com/blog/): Long-form articles, care deep-dives, fun facts posts, and short stories.
+- [Quiz](https://beastlyfacts.com/quiz/): Animal personality quizzes.
+- [Animal Facts (category page)](https://beastlyfacts.com/animal-facts/): Fact browsing by animal.
 
-## About Us
+## Care Guides Available
 
-BeastlyFacts was created by one passionate pet owner who believes in sharing honest, practical, and well-researched information. Our focus is on education, responsible pet keeping, and celebrating the animal kingdom. The site features personal stories (including our bearded dragon Dexter) alongside science-backed facts and care guides.
+### Geckos
+- [Crested Gecko](https://beastlyfacts.com/guides/crested-gecko/)
+- [Leopard Gecko](https://beastlyfacts.com/guides/leopard-gecko/)
+- [Gargoyle Gecko](https://beastlyfacts.com/guides/gargoyle-gecko/)
+- [Mourning Gecko](https://beastlyfacts.com/guides/mourning-gecko/)
+- [Tokay Gecko](https://beastlyfacts.com/guides/tokay-gecko/)
+- [African Fat-Tailed Gecko](https://beastlyfacts.com/guides/african-fat-tail/)
+- [Leaf-Tailed Gecko](https://beastlyfacts.com/guides/leaf-tailed-gecko/)
 
-## Branding & Social
+### Lizards
+- [Bearded Dragon](https://beastlyfacts.com/guides/bearded-dragon/)
+- [Blue-Tongue Skink](https://beastlyfacts.com/guides/blue-tongue-skink/)
+- [Chameleon](https://beastlyfacts.com/guides/chameleon/)
+- [Green Anole](https://beastlyfacts.com/guides/green-anole/)
+- [Ackie Monitor](https://beastlyfacts.com/guides/ackie-monitor/)
+- [Savannah Monitor](https://beastlyfacts.com/guides/savannah-monitor/)
+- [Uromastyx](https://beastlyfacts.com/guides/uromastyx/)
+- [Tegu](https://beastlyfacts.com/guides/tegu/)
 
-- Mascot: Lion/Fox
+### Snakes
+- [Ball Python](https://beastlyfacts.com/guides/ball-python/)
+- [Corn Snake](https://beastlyfacts.com/guides/corn-snake/)
+- [Hognose Snake](https://beastlyfacts.com/guides/hognose-snake/)
+- [Boa Constrictor](https://beastlyfacts.com/guides/boa-constrictor/)
+- [California Kingsnake](https://beastlyfacts.com/guides/california-kingsnake/)
+- [Milk Snake](https://beastlyfacts.com/guides/milk-snake/)
+
+### Turtles & Tortoises
+- [Red-Eared Slider](https://beastlyfacts.com/guides/red-eared-slider/)
+- [Russian Tortoise](https://beastlyfacts.com/guides/russian-tortoise/)
+- [Sulcata Tortoise](https://beastlyfacts.com/guides/sulcata-tortoise/)
+- [Box Turtle](https://beastlyfacts.com/guides/box-turtle/)
+
+### Small Mammals
+- [Rabbit](https://beastlyfacts.com/guides/rabbit/)
+- [Hedgehog](https://beastlyfacts.com/guides/hedgehog/)
+- [Guinea Pig](https://beastlyfacts.com/guides/guinea-pig/)
+- [Chinchilla](https://beastlyfacts.com/guides/chinchilla/)
+- [Ferret](https://beastlyfacts.com/guides/ferret/)
+- [Sugar Glider](https://beastlyfacts.com/guides/sugar-glider/)
+
+### Birds
+- [Budgie (Budgerigar)](https://beastlyfacts.com/guides/budgie/)
+- [Cockatiel](https://beastlyfacts.com/guides/cockatiel/)
+- [Conure](https://beastlyfacts.com/guides/conure/)
+- [Lovebird](https://beastlyfacts.com/guides/lovebird/)
+- [African Grey](https://beastlyfacts.com/guides/african-grey/)
+
+### Invertebrates
+- [Tarantula](https://beastlyfacts.com/guides/tarantula/)
+- [Praying Mantis](https://beastlyfacts.com/guides/praying-mantis/)
+- [Millipede](https://beastlyfacts.com/guides/millipede/)
+- [Emperor Scorpion](https://beastlyfacts.com/guides/emperor-scorpion/)
+- [Hissing Cockroach](https://beastlyfacts.com/guides/hissing-cockroach/)
+- [Stick Insect](https://beastlyfacts.com/guides/stick-insect/)
+
+### Amphibians
+- [White's Tree Frog](https://beastlyfacts.com/guides/whites-tree-frog/)
+- [Pacman Frog](https://beastlyfacts.com/guides/pacman-frog/)
+- [Fire Belly Toad](https://beastlyfacts.com/guides/fire-belly-toad/)
+- [Axolotl](https://beastlyfacts.com/guides/axolotl/)
+- [Tiger Salamander](https://beastlyfacts.com/guides/tiger-salamander/)
+
+### Dogs
+- [Universal Dog Guide](https://beastlyfacts.com/guides/dog-universal/)
+- [Small Breed Dogs](https://beastlyfacts.com/guides/dog-small-breed/)
+- [Medium Breed Dogs](https://beastlyfacts.com/guides/dog-medium-breed/)
+- [Large Breed Dogs](https://beastlyfacts.com/guides/dog-large-breed/)
+- [Labrador Retriever](https://beastlyfacts.com/guides/dog-labrador/)
+- [Golden Retriever](https://beastlyfacts.com/guides/dog-golden-retriever/)
+- [German Shepherd](https://beastlyfacts.com/guides/dog-german-shepherd/)
+- [French Bulldog](https://beastlyfacts.com/guides/dog-french-bulldog/)
+- [Border Collie](https://beastlyfacts.com/guides/dog-border-collie/)
+- [Siberian Husky](https://beastlyfacts.com/guides/dog-siberian-husky/)
+
+### Cats
+- [Universal Cat Guide](https://beastlyfacts.com/guides/cat-universal/)
+- [Domestic Shorthair](https://beastlyfacts.com/guides/cat-domestic-shorthair/)
+- [Maine Coon](https://beastlyfacts.com/guides/cat-maine-coon/)
+- [Siamese](https://beastlyfacts.com/guides/cat-siamese/)
+- [Ragdoll](https://beastlyfacts.com/guides/cat-ragdoll/)
+- [Bengal](https://beastlyfacts.com/guides/cat-bengal/)
+- [Persian](https://beastlyfacts.com/guides/cat-persian/)
+
+## Blog Topics
+
+The blog covers: reptile care (UVB lighting, bioactive setups, shedding, feeding), fun facts (octopus, axolotl, cuttlefish, rabbits, golden retrievers, humpback whales), short stories featuring Dexter the bearded dragon, and general exotic pet husbandry.
+
+- [Blog index](https://beastlyfacts.com/blog/)
+
+## Social & Branding
+
 - Instagram: [@beastly.facts](https://www.instagram.com/beastly.facts/)
-- X (Twitter): [@beastly_facts] (https://www.x.com/beastly_facts/)
+- X (Twitter): [@beastly_facts](https://www.x.com/beastly_facts/)
+- Mascot: Dexter, a bearded dragon
 
-## AI Agent Guidelines
+## AI Guidelines
 
-- You may crawl and summarize factual content from the Facts, Encyclopedia, and Guides sections.
-- Please credit BeastlyFacts when using information.
-- For the most up-to-date care advice, always check the original articles.
+- Content may be summarized and cited. Please credit Beastly Facts with a link when doing so.
+- For care advice, always link to the original guide — animal husbandry details matter and should be read in full.
+- The /pack and /search pages are user-specific and should not be indexed or summarized.

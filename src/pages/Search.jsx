@@ -91,11 +91,11 @@ export default function Search() {
       <Helmet>
         <title>{query.trim() ? `Search: "${query.trim()}" | Beastly Facts` : 'Search Animal Care Guides & Articles | Beastly Facts'}</title>
         <meta name="description" content="Search Beastly Facts for animal care guides, fun facts, reptile husbandry tips, and pet care articles. Find exactly what you need from our growing library." />
-        <link rel="canonical" href="https://beastlyfacts.com/search" />
+        <link rel="canonical" href="https://beastlyfacts.com/search/" />
         <meta name="robots" content="noindex, follow" />
         <meta property="og:title" content="Search | Beastly Facts" />
         <meta property="og:description" content="Search animal care guides, fun facts, and pet care articles on Beastly Facts." />
-        <meta property="og:url" content="https://beastlyfacts.com/search" />
+        <meta property="og:url" content="https://beastlyfacts.com/search/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta name="twitter:card" content="summary_large_image" />

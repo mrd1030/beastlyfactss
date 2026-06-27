@@ -63,7 +63,6 @@ const staticPages = [
   '/encyclopedia/',
   '/encyclopedia/guides/',
   '/quiz/',
-  '/search/',
 
   // Encyclopedia categories
   ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}/`),
