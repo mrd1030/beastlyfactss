@@ -138,7 +138,7 @@ export default function GuideDetail() {
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Guide not found</h2>
-          <Link to="/encyclopedia" className="text-secondary text-sm font-display font-semibold hover:underline">
+          <Link to="/encyclopedia/" className="text-secondary text-sm font-display font-semibold hover:underline">
             Browse the encyclopedia →
           </Link>
         </div>
@@ -195,7 +195,7 @@ export default function GuideDetail() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
         <Link
-          to="/encyclopedia"
+          to="/encyclopedia/"
           className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
@@ -273,7 +273,7 @@ export default function GuideDetail() {
 
         {/* Back to browse */}
         <div className="mt-8 flex items-center gap-2 text-sm font-display font-semibold text-muted-foreground">
-          <Link to="/encyclopedia" className="hover:text-secondary transition-colors flex items-center gap-1">
+          <Link to="/encyclopedia/" className="hover:text-secondary transition-colors flex items-center gap-1">
             Browse all animals <ChevronRight className="w-3.5 h-3.5" />
           </Link>
         </div>

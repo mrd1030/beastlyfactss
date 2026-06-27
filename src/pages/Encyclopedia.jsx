@@ -277,7 +277,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
         </div>
         <div className="flex flex-wrap gap-2 mb-6">
           <button
-            onClick={() => { setActiveCategory('All'); navigate('/encyclopedia'); }}
+            onClick={() => { setActiveCategory('All'); navigate('/encyclopedia/'); }}
             className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
               activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
             }`}
@@ -404,7 +404,7 @@ function AnimalRow({ animal, onOpenLegend }) {
 
   if (animal.available && animal.guideId) {
     return (
-      <Link to={`/guides/${animal.guideId}`}>
+      <Link to={`/guides/${animal.guideId}/`}>
         <motion.div whileHover={{ x: 3 }}
           className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
           <div className="flex items-center gap-3 min-w-0">
@@ -453,7 +453,7 @@ function GuideCard({ guide, index, onOpenLegend }) {
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
+      <Link to={`/guides/${guide.id}/`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           <div className="flex items-start justify-between mb-3">
             <span className="text-3xl">{guide.emoji}</span>

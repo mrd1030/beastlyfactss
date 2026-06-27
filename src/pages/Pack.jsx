@@ -151,7 +151,7 @@ export default function Pack() {
             <p className="text-sm text-muted-foreground font-body mb-6 max-w-sm mx-auto">
               Go explore some facts and tap the ❤️ to start building your collection!
             </p>
-            <Link to="/facts">
+            <Link to="/facts/">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

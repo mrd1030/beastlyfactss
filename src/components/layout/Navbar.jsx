@@ -197,7 +197,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-1.5">
             <button
-              onClick={() => { handleMenuNav(); navigate('/search'); }}
+              onClick={() => { handleMenuNav(); navigate('/search/'); }}
               className="p-2 rounded-full hover:bg-muted transition-colors"
               aria-label="Search"
             >
@@ -276,7 +276,7 @@ export default function Navbar() {
                 
                 {digestOpen && (
                   <div className="ml-4 my-1 space-y-0.5 border-l-2 border-border pl-3">
-                    <Link to="/blog" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
+                    <Link to="/blog/" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
                       All Articles
                     </Link>
                     {navCategories.map(cat => (
@@ -293,7 +293,7 @@ export default function Navbar() {
                 )}
 
                 <Link
-                  to="/quiz"
+                  to="/quiz/"
                   onClick={handleMenuNav}
                   className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                     location.pathname === '/quiz' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'

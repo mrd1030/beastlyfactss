@@ -86,7 +86,7 @@ export default function CategoryPage() {
         <div className="text-center">
           <span className="text-4xl mb-3 block">🔍</span>
           <h1 className="font-display font-bold text-xl text-foreground">Category not found</h1>
-          <Link to="/blog" className="text-secondary text-sm mt-2 block">← Back to Critter Digest</Link>
+          <Link to="/blog/" className="text-secondary text-sm mt-2 block">← Back to Critter Digest</Link>
         </div>
       </div>
     );
@@ -102,7 +102,7 @@ export default function CategoryPage() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog" },
+      { "@type": "ListItem", "position": 2, "name": "Critter Digest", "item": "https://beastlyfacts.com/blog/" },
       { "@type": "ListItem", "position": 3, "name": categoryTitle, "item": canonicalUrl },
     ],
   };
@@ -130,7 +130,7 @@ export default function CategoryPage() {
         <nav className="flex items-center gap-1.5 text-xs font-body text-muted-foreground">
           <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
           <ChevronRight className="w-3 h-3" />
-          <Link to="/blog" className="hover:text-foreground transition-colors">Critter Digest</Link>
+          <Link to="/blog/" className="hover:text-foreground transition-colors">Critter Digest</Link>
           <ChevronRight className="w-3 h-3" />
           <span className="text-foreground">{category?.title || slug}</span>
         </nav>
@@ -156,7 +156,7 @@ export default function CategoryPage() {
         {allCategories.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-6">
             {allCategories.filter(c => c.slug !== slug).slice(0, 8).map(c => (
-              <Link key={c.slug} to={`/category/${c.slug}`}
+              <Link key={c.slug} to={`/category/${c.slug}/`}
                 className="text-xs font-display font-semibold px-3 py-1 rounded-full bg-muted text-muted-foreground hover:text-foreground hover:bg-muted/80 transition-all">
                 {c.title}
               </Link>
@@ -197,7 +197,7 @@ export default function CategoryPage() {
               const postSlug = post.slug?.current || post._id;
               return (
                 <motion.div key={post._id} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
-                  <Link to={`/blog/${postSlug}`} className="block">
+                  <Link to={`/blog/${postSlug}/`} className="block">
                     <CompactPostCard post={post} />
                   </Link>
                 </motion.div>
@@ -207,7 +207,7 @@ export default function CategoryPage() {
         )}
 
         <div className="mt-10 pt-6 border-t border-border">
-          <Link to="/blog" className="text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/blog/" className="text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors">
             ← Back to Critter Digest
           </Link>
         </div>

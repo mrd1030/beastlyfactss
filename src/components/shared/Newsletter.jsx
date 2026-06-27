@@ -39,7 +39,7 @@ export default function Newsletter() {
                                     </div>
                                 ))}
                             </div>
-                            <Link to="/blog">
+                            <Link to="/blog/">
                                 <motion.button
                                     whileHover={{ x: 3 }}
                                     className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-secondary hover:underline"

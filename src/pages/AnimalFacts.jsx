@@ -133,10 +133,10 @@ export default function AnimalFacts() {
             Explore our full facts library, take the animal personality quiz, or dive into our in-depth care guides.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <Link to="/facts" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
+            <Link to="/facts/" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
               🐾 Browse All Facts
             </Link>
-            <Link to="/encyclopedia" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
+            <Link to="/encyclopedia/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
               📚 Encyclopedia & Care Guides
             </Link>
           </div>

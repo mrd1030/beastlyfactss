@@ -26,7 +26,7 @@ export default function GuideSpotlight() {
               Detailed, research-backed guides for pets
             </p>
           </div>
-          <Link to="/guides" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
+          <Link to="/encyclopedia/guides/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
             All guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
@@ -43,7 +43,7 @@ export default function GuideSpotlight() {
                 transition={{ delay: i * 0.07 }}
                 whileHover={{ y: -3 }}
               >
-                <Link to={`/guides/${guide.id}`}>
+                <Link to={`/guides/${guide.id}/`}>
                   <div className="bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
                     <div className="flex items-start justify-between mb-3">
                       <span className="text-3xl">{guide.emoji}</span>
@@ -68,7 +68,7 @@ export default function GuideSpotlight() {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/guides" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
+          <Link to="/encyclopedia/guides/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
             All care guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

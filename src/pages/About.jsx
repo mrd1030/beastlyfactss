@@ -99,7 +99,7 @@ export default function About() {
             Every fact is researched, every care guide is written with real animals in mind, and the whole site
             is designed to feel like getting advice from a knowledgeable friend rather than reading a dry textbook.
             If you've got questions, feedback, or just want to share a cool animal fact — reach out via the{' '}
-            <Link to="/contact" className="text-secondary font-semibold hover:underline">Contact page</Link>.
+            <Link to="/contact/" className="text-secondary font-semibold hover:underline">Contact page</Link>.
           </p>
         </motion.section>
 
@@ -109,13 +109,13 @@ export default function About() {
           transition={{ delay: 0.25 }}
           className="flex flex-wrap gap-3"
         >
-          <Link to="/facts" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
+          <Link to="/facts/" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
             🐾 Explore Facts
           </Link>
-          <Link to="/guides" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
+          <Link to="/encyclopedia/guides/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
             📖 Care Guides
           </Link>
-          <Link to="/quiz" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
+          <Link to="/quiz/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
             🧠 Take the Quiz
           </Link>
         </motion.div>

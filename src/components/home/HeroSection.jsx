@@ -89,7 +89,7 @@ export default function HeroSection() {
 </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-4">
-              <Link to="/facts">
+              <Link to="/facts/">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
@@ -99,7 +99,7 @@ export default function HeroSection() {
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </Link>
-              <Link to="/quiz">
+              <Link to="/quiz/">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}

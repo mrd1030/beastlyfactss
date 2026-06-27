@@ -34,7 +34,7 @@ export default function QuizTeaser() {
             <p className="text-sm text-primary-foreground/80 font-body mb-6 leading-relaxed">
               Take our fun personality quiz and discover your animal spirit match! Are you a chill ball python or a chatty parrot? 🤔
             </p>
-            <Link to="/quiz">
+            <Link to="/quiz/">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}

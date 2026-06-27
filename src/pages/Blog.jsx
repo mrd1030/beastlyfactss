@@ -170,7 +170,7 @@ export default function Blog() {
 
   const handleSelectPost = (post) => {
     const targetSlug = post.slug?.current || post._id || post.id;
-    navigate(`/blog/${targetSlug}`);
+    navigate(`/blog/${targetSlug}/`);
 
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -233,7 +233,7 @@ export default function Blog() {
         <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content="The Critter Digest | Reptile & Exotic Pet Care Blog" />
         <meta property="og:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts." />
-        <meta property="og:url" content="https://beastlyfacts.com/blog" />
+        <meta property="og:url" content="https://beastlyfacts.com/blog/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="The Critter Digest — reptile and exotic pet care blog by Beastly Facts" />
@@ -369,7 +369,7 @@ function AuthorBio() {
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
           Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.
         </p>
-        <Link to="/about" className="text-xs font-display font-semibold text-secondary hover:underline">
+        <Link to="/about/" className="text-xs font-display font-semibold text-secondary hover:underline">
           More about Mike →
         </Link>
       </div>
