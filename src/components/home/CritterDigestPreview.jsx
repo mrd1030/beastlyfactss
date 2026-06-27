@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { client } from '@/lib/sanity';
 import groq from 'groq';
@@ -18,6 +18,7 @@ const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(published
 export default function CritterDigestPreview() {
   const [sanityPosts, setSanityPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     client.fetch(QUERY)
@@ -102,12 +103,10 @@ export default function CritterDigestPreview() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.04 }}
                 >
-                  <Link 
-                    to={`/blog/${postSlug}`} 
-                    className="block hover:no-underline"
-                  >
-                    <CompactPostCard post={post} />
-                  </Link>
+                  <CompactPostCard
+                    post={post}
+                    onClick={() => navigate(`/blog/${postSlug}`)}
+                  />
                 </motion.div>
               );
             })}
