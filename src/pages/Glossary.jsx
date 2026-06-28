@@ -122,6 +122,12 @@ const CATEGORIES = [
 ];
 
 const TOTAL_TERMS = CATEGORIES.reduce((sum, c) => sum + c.terms.length, 0);
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+
+// Letters that have at least one term — computed once at module level
+const LETTERS_WITH_TERMS = new Set(
+  CATEGORIES.flatMap(c => c.terms.map(t => t.term[0].toUpperCase()))
+);
 
 function TermCard({ term, showCategory, catEmoji, catLabel }) {
   return (
@@ -152,6 +158,17 @@ function TermCard({ term, showCategory, catEmoji, catLabel }) {
 
 export default function Glossary() {
   const [query, setQuery] = useState('');
+  const [activeLetter, setActiveLetter] = useState(null);
+
+  const handleLetterClick = (letter) => {
+    setQuery('');
+    setActiveLetter(prev => prev === letter ? null : letter);
+  };
+
+  const handleSearchChange = (e) => {
+    setQuery(e.target.value);
+    setActiveLetter(null);
+  };
 
   const searchResults = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -166,6 +183,22 @@ export default function Glossary() {
     }
     return results;
   }, [query]);
+
+  const letterResults = useMemo(() => {
+    if (!activeLetter) return null;
+    const results = [];
+    for (const cat of CATEGORIES) {
+      for (const term of cat.terms) {
+        if (term.term[0].toUpperCase() === activeLetter) {
+          results.push({ ...term, catEmoji: cat.emoji, catLabel: cat.label });
+        }
+      }
+    }
+    return results;
+  }, [activeLetter]);
+
+  const activeResults = searchResults || letterResults;
+  const isFiltered = activeResults !== null;
 
   const DESCRIPTION = `Plain-English glossary of ${TOTAL_TERMS}+ exotic pet and reptile care terms — from husbandry and UVB to molting, brumation, and beyond. Essential reading for new keepers.`;
 
@@ -200,14 +233,43 @@ export default function Glossary() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
 
+        {/* A–Z letter filter */}
+        <div
+          className="flex gap-1 overflow-x-auto pb-1 mt-4 mb-4 scrollbar-hide"
+          role="navigation"
+          aria-label="Browse by letter"
+        >
+          {ALPHABET.map(letter => {
+            const hasTerms = LETTERS_WITH_TERMS.has(letter);
+            const isActive = activeLetter === letter;
+            return (
+              <button
+                key={letter}
+                onClick={() => hasTerms && handleLetterClick(letter)}
+                aria-pressed={isActive}
+                aria-disabled={!hasTerms}
+                className={`flex-shrink-0 w-8 h-8 rounded-lg text-sm font-display font-bold transition-colors ${
+                  isActive
+                    ? 'bg-primary text-primary-foreground'
+                    : hasTerms
+                      ? 'bg-muted text-foreground hover:bg-primary/10 hover:text-primary cursor-pointer'
+                      : 'text-muted-foreground/25 cursor-default pointer-events-none'
+                }`}
+              >
+                {letter}
+              </button>
+            );
+          })}
+        </div>
+
         {/* Search */}
-        <div className="relative mb-8 mt-2">
+        <div className="relative mb-8">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
           <input
             type="text"
             placeholder="Search terms..."
             value={query}
-            onChange={e => setQuery(e.target.value)}
+            onChange={handleSearchChange}
             className="w-full pl-9 pr-9 py-3 rounded-xl border border-border bg-card text-sm font-body focus:outline-none focus:ring-2 focus:ring-primary/40 placeholder:text-muted-foreground/60"
           />
           {query && (
@@ -221,8 +283,8 @@ export default function Glossary() {
           )}
         </div>
 
-        {/* Category jump nav — hidden when searching */}
-        {!searchResults && (
+        {/* Category jump nav — only when not filtered */}
+        {!isFiltered && (
           <div className="flex flex-wrap gap-2 mb-10">
             {CATEGORIES.map(cat => (
               <a
@@ -236,20 +298,24 @@ export default function Glossary() {
           </div>
         )}
 
-        {/* Search results */}
-        {searchResults && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} key="results">
-            {searchResults.length === 0 ? (
+        {/* Filtered results (letter or search) */}
+        {isFiltered && (
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} key={activeLetter || query}>
+            {activeResults.length === 0 ? (
               <p className="text-sm text-muted-foreground font-body text-center py-16">
-                No terms matching &ldquo;{query}&rdquo; — try a shorter word.
+                {activeLetter
+                  ? `No terms starting with "${activeLetter}".`
+                  : `No terms matching “${query}” — try a shorter word.`}
               </p>
             ) : (
               <>
                 <p className="text-xs text-muted-foreground font-body mb-4">
-                  {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
+                  {activeLetter
+                    ? `${activeResults.length} term${activeResults.length !== 1 ? 's' : ''} starting with "${activeLetter}"`
+                    : `${activeResults.length} result${activeResults.length !== 1 ? 's' : ''}`}
                 </p>
                 <div className="space-y-4">
-                  {searchResults.map(t => (
+                  {activeResults.map(t => (
                     <TermCard key={t.term} term={t} showCategory catEmoji={t.catEmoji} catLabel={t.catLabel} />
                   ))}
                 </div>
@@ -258,8 +324,8 @@ export default function Glossary() {
           </motion.div>
         )}
 
-        {/* All categories */}
-        {!searchResults && CATEGORIES.map((cat, i) => (
+        {/* All categories — only when not filtered */}
+        {!isFiltered && CATEGORIES.map((cat, i) => (
           <motion.section
             key={cat.id}
             id={cat.id}
