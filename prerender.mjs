@@ -72,6 +72,7 @@ const STATIC_ROUTES = [
   '/quiz',
   '/about',
   '/contact',
+  '/glossary',
   '/animal-facts',
   '/categories',
   '/search',

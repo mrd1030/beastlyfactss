@@ -43,14 +43,14 @@ export default function Footer() {
                 { to: '/blog', label: 'Critter Digest' },
               ] 
             },
-            { 
-              title: "Encyclopedia", 
+            {
+              title: "Encyclopedia",
               links: [
                 { to: '/encyclopedia', label: 'Browse All' },
                 { to: '/guides', label: 'Care Guides' },
+                { to: '/glossary', label: 'Glossary' },
                 { to: '/encyclopedia?category=Geckos', label: 'Geckos' },
-                { to: '/encyclopedia?category=Snakes', label: 'Snakes' },
-              ] 
+              ]
             },
             { 
               title: "Info", 

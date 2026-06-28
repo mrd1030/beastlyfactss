@@ -61,7 +61,7 @@ export default function Donate() {
       <Helmet>
         <title>Support Beastly Facts | Donate</title>
         <meta name="description" content="Love Beastly Facts? Support us with a donation and help keep amazing animal facts, care guides, and quizzes free for everyone." />
-        <link rel="canonical" href="https://beastlyfacts.com/donate" />
+        <link rel="canonical" href="https://beastlyfacts.com/donate/" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">

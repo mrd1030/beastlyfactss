@@ -15,7 +15,7 @@ export default function Terms() {
       <Helmet>
         <title>Terms of Service | Beastly Facts</title>
         <meta name="description" content="Read the Beastly Facts terms of service to understand the rules and guidelines for using our animal facts, care guides, and quiz platform." />
-        <link rel="canonical" href="https://beastlyfacts.com/terms" />
+        <link rel="canonical" href="https://beastlyfacts.com/terms/" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">

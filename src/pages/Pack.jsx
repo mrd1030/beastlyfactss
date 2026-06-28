@@ -22,11 +22,11 @@ export default function Pack() {
       <Helmet>
         <title>My Beast Pack | Beastly Facts</title>
         <meta name="description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts. Heart any fact to save it here." />
-        <link rel="canonical" href="https://beastlyfacts.com/pack" />
+        <link rel="canonical" href="https://beastlyfacts.com/pack/" />
         <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content="My Beast Pack | Beastly Facts" />
         <meta property="og:description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts." />
-        <meta property="og:url" content="https://beastlyfacts.com/pack" />
+        <meta property="og:url" content="https://beastlyfacts.com/pack/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="My Beast Pack | Beastly Facts" />

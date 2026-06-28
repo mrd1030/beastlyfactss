@@ -15,7 +15,7 @@ export default function Privacy() {
       <Helmet>
         <title>Privacy Policy | Beastly Facts</title>
         <meta name="description" content="Read the Beastly Facts privacy policy to understand how we collect, use, and protect your data when you use our animal facts and care guide website." />
-        <link rel="canonical" href="https://beastlyfacts.com/privacy" />
+        <link rel="canonical" href="https://beastlyfacts.com/privacy/" />
         <meta name="robots" content="noindex, follow" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">

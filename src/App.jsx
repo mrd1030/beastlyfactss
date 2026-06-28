@@ -31,6 +31,7 @@ const Privacy = lazy(() => import('@/pages/Privacy'));
 const Categories = lazy(() => import('@/pages/Categories'));
 const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
 const Search = lazy(() => import('@/pages/Search'));
+const Glossary = lazy(() => import('@/pages/Glossary'));
 
 const PageLoadingFallback = () => (
   <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
@@ -88,6 +89,7 @@ const AuthenticatedApp = () => {
             <Route path="/categories" element={<Categories />} />
             <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/glossary" element={<Glossary />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

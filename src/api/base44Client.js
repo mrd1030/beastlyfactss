@@ -1,12 +1,16 @@
 import { createClient } from '@base44/sdk';
 
-const isDev = import.meta.env.DEV;
 const APP_ID = import.meta.env.VITE_BASE44_APP_ID || '6a0c18cd7389ddefed517c2f';
 
-// Safe dummy client (no network calls)
+// Two-level proxy: entity.AnyEntity.anyMethod() resolves cleanly instead of throwing
+const createEntityProxy = () => new Proxy({}, {
+  get: () => () => Promise.resolve([]),
+});
+
+// Fallback client used only if createClient throws at init time
 const createDummyClient = () => ({
   entities: new Proxy({}, {
-    get: () => () => Promise.resolve([]),
+    get: () => createEntityProxy(),
   }),
   functions: {
     invoke: () => Promise.resolve({ data: null }),
@@ -20,14 +24,9 @@ const createDummyClient = () => ({
 
 let base44;
 
-if (isDev && APP_ID) {
-  // Only use real Base44 client in development
-  try {
-    base44 = createClient({ appId: APP_ID });
-  } catch (error) {
-    base44 = createDummyClient();
-  }
-} else {
+try {
+  base44 = createClient({ appId: APP_ID });
+} catch {
   base44 = createDummyClient();
 }
 
