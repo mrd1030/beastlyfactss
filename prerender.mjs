@@ -87,7 +87,7 @@ async function getSanityRoutes() {
       '*[_type == "post" && defined(slug.current)]{ "slug": slug.current }'
     );
     const catQuery = encodeURIComponent(
-      '*[_type == "category" && defined(slug.current) && count(*[_type == "post" && references(^._id)]) > 0]{ "slug": slug.current }'
+      '*[_type == "category" && defined(slug.current) && count(*[_type == "post" && !(_id in path("drafts.**")) && references(^._id)]) > 0]{ "slug": slug.current }'
     );
 
     const [postRes, catRes] = await Promise.all([
