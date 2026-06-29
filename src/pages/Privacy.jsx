@@ -23,7 +23,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Padlock">🔒</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: June 16, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: June 29, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Privacy() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
           <div className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
-            <p>BeastlyFacts.com ("we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy outlines our data practices and is subject to our overarching <a href="/terms" className="text-secondary hover:underline">Terms of Service</a>.</p>
+            <p>BeastlyFacts.com ("we," "us," or "our") respects your privacy and is committed to protecting the personal information you share with us. This Privacy Policy outlines our data practices and is subject to our overarching <a href="/terms/" className="text-secondary hover:underline">Terms of Service</a>.</p>
           </div>
 
           <Section title="1. Information We Collect">
@@ -52,7 +52,7 @@ export default function Privacy() {
               <li><strong className="text-foreground">Google AdSense & Third-Party Advertising</strong> — third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet.</li>
               <li><strong className="text-foreground">Stripe</strong> — used for fraud prevention and secure payment processing on donation metrics.</li>
               <li><strong className="text-foreground">Affiliate Tracking</strong> — third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
-              <li><strong className="text-foreground">Local Storage</strong> — used to save favorite facts and quiz results locally in your browser (never sent to our servers).</li>
+              <li><strong className="text-foreground">Local Storage</strong> — used to save favorite facts, quiz results, and blog post like state locally in your browser (never sent to our servers).</li>
             </ul>
             <p className="mt-3">You can choose to opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">www.aboutads.info</a>.</p>
           </Section>

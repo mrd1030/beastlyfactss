@@ -31,7 +31,7 @@ export default function Terms() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
           <Section title="1. Acceptance of Terms">
-            <p>By accessing or using BeastlyFacts.com ("the Site"), you agree to be bound by these Terms of Service and our accompanying <a href="/privacy" className="text-secondary hover:underline font-medium">Privacy Policy</a>, which is incorporated here by reference. If you do not agree to these terms, please discontinue use of the Site immediately.</p>
+            <p>By accessing or using BeastlyFacts.com ("the Site"), you agree to be bound by these Terms of Service and our accompanying <a href="/privacy/" className="text-secondary hover:underline font-medium">Privacy Policy</a>, which is incorporated here by reference. If you do not agree to these terms, please discontinue use of the Site immediately.</p>
           </Section>
 
           <Section title="2. Use of Content">
