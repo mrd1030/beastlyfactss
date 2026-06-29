@@ -76,11 +76,12 @@ const AuthenticatedApp = () => {
             <Route path="/blog/category/:catSlug" element={<Blog />} />
             <Route path="/blog/:slug" element={<Blog />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz/:tab" element={<Quiz />} />
             <Route path="/pack" element={<Pack />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/animal-facts" element={<AnimalFacts />} />
-            <Route path="/trivia" element={<Navigate to="/quiz?tab=trivia" replace />} />
+            <Route path="/trivia" element={<Navigate to="/quiz/trivia/" replace />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/donate/success" element={<DonateSuccess />} />
             <Route path="/donate/cancel" element={<DonateCancel />} />

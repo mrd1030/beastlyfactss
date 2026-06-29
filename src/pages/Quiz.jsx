@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
@@ -408,30 +408,48 @@ const TABS = [
   { id: 'knowledge', label: '🧠 Beastly Facts Challenge' },
 ];
 
+const TAB_META = {
+  personality: {
+    title: 'Which Critter Are You? | Beastly Facts Quiz',
+    description: 'Answer a few fun questions and discover which animal matches your personality — are you a loyal golden retriever, a mysterious ball python, or something wilder?',
+    canonical: 'https://beastlyfacts.com/quiz/personality/',
+  },
+  trivia: {
+    title: 'Animal Origins Trivia Quiz | Beastly Facts',
+    description: 'Test your knowledge of where animals and breeds come from — 15 questions with instant feedback and a final score. How well do you know the animal kingdom?',
+    canonical: 'https://beastlyfacts.com/quiz/trivia/',
+  },
+  knowledge: {
+    title: 'Beastly Facts Challenge | Animal Knowledge Quiz',
+    description: 'Challenge yourself with multiple-choice animal questions, instant explanations, and a score. A quick, fun way to learn something new about the animal world.',
+    canonical: 'https://beastlyfacts.com/quiz/knowledge/',
+  },
+};
+
 export default function Quiz() {
   const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const initialTab = params.get('tab');
-  const [activeTab, setActiveTab] = useState(
-    initialTab === 'trivia' || initialTab === 'knowledge' ? initialTab : 'personality'
-  );
+  const navigate = useNavigate();
+  const { tab: urlTab } = useParams();
+  const activeTab = ['trivia', 'knowledge'].includes(urlTab) ? urlTab : 'personality';
   const shouldNoindex = hasNoindexStateParams(location.search);
+  const meta = TAB_META[activeTab] || TAB_META.personality;
+
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts</title>
-        <meta name="description" content="Take a fun animal quiz on Beastly Facts — find out which animal matches your personality, test your wildlife trivia, or challenge yourself with the Beastly Facts knowledge quiz." />
-        <link rel="canonical" href="https://beastlyfacts.com/quiz/" />
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <link rel="canonical" href={meta.canonical} />
         <meta name="robots" content={shouldNoindex ? 'noindex,follow' : 'index,follow'} />
-        <meta property="og:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
-        <meta property="og:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
-        <meta property="og:url" content="https://beastlyfacts.com/quiz" />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:url" content={meta.canonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="Beastly Facts — animal personality and trivia quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Animal Quiz | Personality, Trivia & Knowledge | Beastly Facts" />
-        <meta name="twitter:description" content="Take a fun animal quiz — find out which animal matches your personality, test your wildlife trivia, or challenge your knowledge." />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
@@ -447,7 +465,7 @@ export default function Quiz() {
             {TABS.map(tab => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id)}
+                onClick={() => navigate(`/quiz/${tab.id}/`)}
                 className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold transition-all ${
                   activeTab === tab.id
                     ? 'bg-card shadow-sm text-foreground'

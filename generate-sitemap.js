@@ -63,6 +63,9 @@ const staticPages = [
   '/encyclopedia/',
   '/encyclopedia/guides/',
   '/quiz/',
+  '/quiz/personality/',
+  '/quiz/trivia/',
+  '/quiz/knowledge/',
   '/glossary/',
 
   // Encyclopedia categories

@@ -35,7 +35,7 @@ export default function TriviaTeaser() {
               Do you know where your favourite breeds and animals come from? Test your knowledge with {' '}
               <span className="font-bold">15 trivia questions</span> and earn your expert badge! 🏆
             </p>
-            <Link to="/quiz?tab=trivia">
+            <Link to="/quiz/trivia/">
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
