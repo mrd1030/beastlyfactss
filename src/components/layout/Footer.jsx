@@ -49,7 +49,6 @@ export default function Footer() {
                 { to: '/encyclopedia', label: 'Browse All' },
                 { to: '/guides', label: 'Care Guides' },
                 { to: '/glossary', label: 'Glossary' },
-                { to: '/encyclopedia?category=Geckos', label: 'Geckos' },
               ]
             },
             { 
@@ -83,7 +82,7 @@ export default function Footer() {
             © {year} BeastlyFacts.com — No animals were harmed in the making of this website. 🐾
           </p>
           <p className="text-[10px] text-muted-foreground/60 font-body">
-            Educational purposes only. Always research before adopting.
+            For educational purposes only. Not a substitute for professional veterinary advice. Always consult a qualified pet, exotic, or reptile veterinarian.
           </p>
         </div>
       </div>
