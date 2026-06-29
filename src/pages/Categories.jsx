@@ -32,7 +32,7 @@ export default function Categories() {
         <link rel="canonical" href="https://beastlyfacts.com/categories/" />
         <meta property="og:title" content="Browse by Category | Beastly Facts" />
         <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more." />
-        <meta property="og:url" content="https://beastlyfacts.com/categories" />
+        <meta property="og:url" content="https://beastlyfacts.com/categories/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="Beastly Facts — browse by category" />
@@ -45,7 +45,7 @@ export default function Categories() {
           "@type": "CollectionPage",
           "name": "Browse by Category | Beastly Facts",
           "description": "Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more.",
-          "url": "https://beastlyfacts.com/categories",
+          "url": "https://beastlyfacts.com/categories/",
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" }
         })}</script>
       </Helmet>

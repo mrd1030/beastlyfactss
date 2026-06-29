@@ -212,6 +212,10 @@ export default function Glossary() {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://beastlyfacts.com/glossary/" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:alt" content="Beastly Facts Reptile & Exotic Pet Care Glossary" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta name="twitter:title" content="Reptile & Exotic Pet Care Glossary | Beastly Facts" />
         <meta name="twitter:description" content={DESCRIPTION} />
       </Helmet>

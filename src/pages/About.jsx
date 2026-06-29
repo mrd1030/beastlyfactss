@@ -12,7 +12,7 @@ export default function About() {
         <link rel="canonical" href="https://beastlyfacts.com/about/" />
         <meta property="og:title" content="About Beastly Facts" />
         <meta property="og:description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
-        <meta property="og:url" content="https://beastlyfacts.com/about" />
+        <meta property="og:url" content="https://beastlyfacts.com/about/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="Beastly Facts — animal trivia, care guides and quizzes" />
