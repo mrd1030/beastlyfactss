@@ -80,16 +80,16 @@ export const encyclopediaAnimals = [
 ];
 
 export const encyclopediaCategories = [
-  { name: "Geckos", emoji: "🦎" },
-  { name: "Lizards", emoji: "🦎" },
-  { name: "Snakes", emoji: "🐍" },
-  { name: "Turtles & Tortoises", emoji: "🐢" },
-  { name: "Small Mammals", emoji: "🦔" },
-  { name: "Birds", emoji: "🐦" },
-  { name: "Dogs", emoji: "🐶" },
-  { name: "Cats", emoji: "🐱" },
-  { name: "Invertebrates", emoji: "🕷️" },
-  { name: "Amphibians", emoji: "🐸" },
+  { name: "Geckos", emoji: "🦎", slug: "geckos" },
+  { name: "Lizards", emoji: "🦎", slug: "lizards" },
+  { name: "Snakes", emoji: "🐍", slug: "snakes" },
+  { name: "Turtles & Tortoises", emoji: "🐢", slug: "turtles-tortoises" },
+  { name: "Small Mammals", emoji: "🦔", slug: "small-mammals" },
+  { name: "Birds", emoji: "🐦", slug: "birds" },
+  { name: "Dogs", emoji: "🐶", slug: "dogs" },
+  { name: "Cats", emoji: "🐱", slug: "cats" },
+  { name: "Invertebrates", emoji: "🕷️", slug: "invertebrates" },
+  { name: "Amphibians", emoji: "🐸", slug: "amphibians" },
 ];
 
 export const difficultyColor = {

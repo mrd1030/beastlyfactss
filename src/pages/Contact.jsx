@@ -22,7 +22,7 @@ export default function Contact() {
         <link rel="canonical" href="https://beastlyfacts.com/contact/" />
         <meta property="og:title" content="Contact Beastly Facts" />
         <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
-        <meta property="og:url" content="https://beastlyfacts.com/contact" />
+        <meta property="og:url" content="https://beastlyfacts.com/contact/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:alt" content="Beastly Facts — get in touch" />

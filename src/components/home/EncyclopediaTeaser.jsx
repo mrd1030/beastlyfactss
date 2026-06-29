@@ -38,7 +38,7 @@ export default function EncyclopediaTeaser() {
               transition={{ delay: i * 0.05 }}
               whileHover={{ scale: 1.03 }}
             >
-              <Link to={`/encyclopedia?category=${encodeURIComponent(cat.name)}`}>
+              <Link to={`/encyclopedia/category/${cat.slug}/`}>
                 <div className="bg-card border border-border rounded-2xl p-4 text-center hover:border-secondary/40 hover:shadow-md transition-all group">
                   <span className="text-3xl block mb-2">{cat.emoji}</span>
                   <p className="font-display font-bold text-xs text-foreground group-hover:text-secondary transition-colors">

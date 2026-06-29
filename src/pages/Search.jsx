@@ -206,7 +206,7 @@ export default function Search() {
                 return (
                   <Link 
                     key={c.slug} 
-                    to={`/blog?category=${cleanSlug}`}
+                    to={`/blog/category/${cleanSlug}/`}
                     className="text-xs font-display font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1"
                   >
                     {c.emoji} {c.label}
@@ -232,7 +232,7 @@ export default function Search() {
                 return (
                   <Link 
                     key={c.slug || label} 
-                    to={`/blog?category=${cleanSlug}`}
+                    to={`/blog/category/${cleanSlug}/`}
                     className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
                   >
                     <span className="text-xl">{emoji}</span>
