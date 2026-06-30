@@ -180,7 +180,6 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     id: "chinchilla",
     name: "Chinchilla",
     emoji: "🐭",
-    difficulty: "Intermediate",
     difficulty: "Advanced",
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",

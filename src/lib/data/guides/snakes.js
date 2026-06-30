@@ -147,7 +147,6 @@ Escape prevention is not a health issue per se, but an escaped corn snake is at 
     id: "boa-constrictor",
     name: "Boa Constrictor",
     emoji: "🐍",
-    difficulty: "Intermediate",
     difficulty: "Advanced",
     petType: "Snakes",
     image: "/assets/guides/boa-constrictor.jpg",
