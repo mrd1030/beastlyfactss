@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Printer, Check, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown } from 'lucide-react';
 import { guidesExtended } from '@/lib/data/guidesExtended';
 import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
@@ -20,6 +20,7 @@ export default function GuideDetail() {
   const { id } = useParams();
   const guide = allGuides.find(g => g.id === id);
   const [isLegendOpen, setIsLegendOpen] = useState(false);
+  const [openFaq, setOpenFaq] = useState(null);
 
   // Keyboard listener to close popup modal on "Escape" keypress
   useEffect(() => {
@@ -192,6 +193,19 @@ export default function GuideDetail() {
         })}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      {guide.faqs?.length > 0 && (
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": guide.faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": { "@type": "Answer", "text": faq.a },
+            })),
+          })}</script>
+        </Helmet>
+      )}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
         <Link
@@ -270,6 +284,33 @@ export default function GuideDetail() {
             ))}
           </div>
         </div>
+
+        {/* FAQ */}
+        {guide.faqs?.length > 0 && (
+          <div className="bg-card border border-border rounded-2xl p-5 mt-5">
+            <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+              ❓ Frequently Asked Questions
+            </h2>
+            <div className="space-y-1">
+              {guide.faqs.map((faq, i) => (
+                <div key={i} className="border border-border/60 rounded-xl overflow-hidden">
+                  <button
+                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                    className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors"
+                  >
+                    <span className="font-display font-semibold text-sm text-foreground">{faq.q}</span>
+                    <ChevronDown className={`w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`} />
+                  </button>
+                  {openFaq === i && (
+                    <div className="px-4 pb-3 text-sm text-muted-foreground font-body leading-relaxed border-t border-border/40">
+                      <p className="pt-3">{faq.a}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Back to browse */}
         <div className="mt-8 flex items-center gap-2 text-sm font-display font-semibold text-muted-foreground">
