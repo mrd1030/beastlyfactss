@@ -5,13 +5,11 @@ import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Search, ChevronRight, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
-import { guidesExtended } from '@/lib/data/guidesExtended';
-import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
+import { allGuides } from '@/lib/data/guides';
+import { dogGuides } from '@/lib/data/guides/dogs';
+import { catGuides } from '@/lib/data/guides/cats';
 import { base44 } from '@/api/base44Client';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
-
-// --- SEO ---
-const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
 // Tabs
 const TABS = [
@@ -143,7 +141,7 @@ export default function Encyclopedia() {
       return catGuides;
     }
     if (directMatchCategories.has(activeFilter)) {
-      const byType = guidesExtended.filter(g => g.petType === activeFilter);
+      const byType = allGuides.filter(g => g.petType === activeFilter);
       if (activeSubtype) return byType.filter(g => g.name.includes(activeSubtype));
       return byType;
     }

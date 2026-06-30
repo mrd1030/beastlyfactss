@@ -3,11 +3,9 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown } from 'lucide-react';
-import { guidesExtended } from '@/lib/data/guidesExtended';
-import { dogGuides, catGuides } from '@/lib/data/dogCatGuides';
+import { allGuides } from '@/lib/data/guides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
-const allGuides = [...guidesExtended, ...dogGuides, ...catGuides];
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },

@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import { guidesExtended } from '@/lib/data/guidesExtended';
+import { allGuides } from '@/lib/data/guides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 
-const featured = guidesExtended.slice(0, 4);
+const featured = allGuides.slice(0, 4);
 
 export default function GuideSpotlight() {
   return (
