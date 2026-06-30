@@ -5,6 +5,7 @@ export const geckoGuides = [
     emoji: "🦎",
     difficulty: "Beginner",
     petType: "Geckos",
+    image: "/assets/guides/crested-gecko.jpg",
     tagline: "The velvety, fan-fringed gecko that needs no heat lamp!",
     funFact: "Crested geckos were thought to be extinct until rediscovered in 1994 during a tropical storm in New Caledonia!",
     sections: {
@@ -52,6 +53,7 @@ Watch for weight loss, lethargy, loss of appetite, respiratory sounds, or abnorm
     emoji: "🦎",
     difficulty: "Beginner",
     petType: "Geckos",
+    image: "/assets/guides/leopard-gecko.jpg",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
     sections: {
@@ -141,6 +143,7 @@ Maintain temperatures below 85 degrees F at all times. Heat stress is a genuine 
     emoji: "🦎",
     difficulty: "Beginner",
     petType: "Geckos",
+    image: "/assets/guides/mourning-gecko.jpg",
     tagline: "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
     sections: {
@@ -181,6 +184,7 @@ Escape prevention is critical not only for the geckos' welfare but also for your
     emoji: "🦎",
     difficulty: "Intermediate",
     petType: "Geckos",
+    image: "/assets/guides/tokay-gecko.jpg",
     tagline: "The jewel-toned, loud-voiced gecko that's not for the faint of heart!",
     funFact: "Tokay geckos are named after their incredibly loud 'TO-KAY!' call. Males use this booming vocalization to defend territory and attract mates. You'll hear them from across a room!",
     sections: {
@@ -224,6 +228,7 @@ Only purchase captive-bred individuals from reputable breeders whenever possible
     emoji: "🦎",
     difficulty: "Beginner",
     petType: "Geckos",
+    image: "/assets/guides/african-fat-tail.jpg",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
     sections: {
@@ -267,6 +272,7 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
     emoji: "🦎",
     difficulty: "Advanced",
     petType: "Geckos",
+    image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
     sections: {

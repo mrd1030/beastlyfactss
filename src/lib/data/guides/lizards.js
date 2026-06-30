@@ -6,6 +6,7 @@ export const lizardGuides = [
     difficulty: "Beginner",
     difficulty: "Intermediate",
     petType: "Lizards",
+    image: "/assets/guides/bearded-dragon.jpg",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
     funFact: "Bearded dragons wave at each other as a sign of submission, basically saying 'Hey, you're the boss!'",
     sections: {

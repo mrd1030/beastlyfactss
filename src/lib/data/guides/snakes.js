@@ -5,6 +5,7 @@ export const snakeGuides = [
     emoji: "🐍",
     difficulty: "Intermediate",
     petType: "Snakes",
+    image: "/assets/guides/hognose-snake.jpg",
     tagline: "The drama queen of snakes: all bluff and zero bite!",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
     sections: {
@@ -45,6 +46,7 @@ Respiratory infections can result from temperatures that are too low or a substr
     emoji: "🐍",
     difficulty: "Intermediate",
     petType: "Snakes",
+    image: "/assets/guides/ball-python.jpg",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
     funFact: "Ball pythons can go up to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
     sections: {
@@ -92,6 +94,7 @@ Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and py
     emoji: "🐍",
     difficulty: "Beginner",
     petType: "Snakes",
+    image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
     sections: {
