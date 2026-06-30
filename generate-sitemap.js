@@ -170,6 +170,13 @@ async function generateSitemap() {
     priority: '0.7',
   }));
 
+  const categoryPages = categories.map(c => ({
+    path: `/category/${c.slug}/`,
+    lastmod: today,
+    changefreq: 'weekly',
+    priority: '0.7',
+  }));
+
   const mdxPostPages = getMdxPosts(today);
 
   // Dedup static pages
@@ -193,7 +200,7 @@ async function generateSitemap() {
     xml += `  </url>\n`;
   });
 
-  [...blogCategoryPages, ...blogPostPages, ...mdxPostPages].forEach(page => {
+  [...blogCategoryPages, ...categoryPages, ...blogPostPages, ...mdxPostPages].forEach(page => {
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
     xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
@@ -205,7 +212,7 @@ async function generateSitemap() {
   xml += `</urlset>`;
 
   fs.writeFileSync('./dist/sitemap.xml', xml);
-  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${blogPostPages.length} Sanity posts + ${mdxPostPages.length} MDX posts`);
+  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${categoryPages.length} category pages + ${blogPostPages.length} Sanity posts + ${mdxPostPages.length} MDX posts`);
 }
 
 generateSitemap().catch(err => {
