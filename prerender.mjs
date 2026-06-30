@@ -45,6 +45,22 @@ async function getMdxRoutes() {
   return routes;
 }
 
+// All encyclopedia animal IDs (mirrors encyclopediaAnimals in encyclopedia.js)
+const ENCYCLOPEDIA_ANIMAL_IDS = [
+  'crested-gecko','leopard-gecko','gargoyle-gecko','mourning-gecko','tokay-gecko',
+  'african-fat-tail','leaf-tailed-gecko',
+  'bearded-dragon','blue-tongue-skink','ackie-monitor','tegu','chameleon-jackson',
+  'green-anole','savannah-monitor','uromastyx',
+  'ball-python','corn-snake','hognose-snake','boa-constrictor','kingsnake','milk-snake',
+  'red-eared-slider','russian-tortoise','sulcata-tortoise','box-turtle',
+  'hedgehog','rabbit','guinea-pig','chinchilla','ferret','sugar-glider',
+  'budgie','cockatiel','conure','african-grey','lovebird',
+  'labrador','golden-retriever','german-shepherd','french-bulldog','border-collie','siberian-husky',
+  'domestic-shorthair','maine-coon','siamese','ragdoll','bengal','persian',
+  'tarantula','praying-mantis','millipede','hissing-cockroach','stick-insect','emperor-scorpion',
+  'pacman-frog','axolotl','whites-tree-frog','fire-belly-toad','tiger-salamander',
+];
+
 // All care guide IDs (mirrors guidesExtended.js + dogCatGuides.js)
 const GUIDE_IDS = [
   'crested-gecko','leopard-gecko','gargoyle-gecko','mourning-gecko','hognose-snake',
@@ -83,6 +99,7 @@ const STATIC_ROUTES = [
   '/privacy',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
+  ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
 

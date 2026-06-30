@@ -73,6 +73,67 @@ const staticPages = [
   // Encyclopedia guide filters
   ...guideFilters.map(s => `/encyclopedia/guides/${s}/`),
 
+  // Individual encyclopedia animal pages
+  '/encyclopedia/animal/crested-gecko/',
+  '/encyclopedia/animal/leopard-gecko/',
+  '/encyclopedia/animal/gargoyle-gecko/',
+  '/encyclopedia/animal/mourning-gecko/',
+  '/encyclopedia/animal/tokay-gecko/',
+  '/encyclopedia/animal/african-fat-tail/',
+  '/encyclopedia/animal/leaf-tailed-gecko/',
+  '/encyclopedia/animal/bearded-dragon/',
+  '/encyclopedia/animal/blue-tongue-skink/',
+  '/encyclopedia/animal/ackie-monitor/',
+  '/encyclopedia/animal/tegu/',
+  '/encyclopedia/animal/chameleon-jackson/',
+  '/encyclopedia/animal/green-anole/',
+  '/encyclopedia/animal/savannah-monitor/',
+  '/encyclopedia/animal/uromastyx/',
+  '/encyclopedia/animal/ball-python/',
+  '/encyclopedia/animal/corn-snake/',
+  '/encyclopedia/animal/hognose-snake/',
+  '/encyclopedia/animal/boa-constrictor/',
+  '/encyclopedia/animal/kingsnake/',
+  '/encyclopedia/animal/milk-snake/',
+  '/encyclopedia/animal/red-eared-slider/',
+  '/encyclopedia/animal/russian-tortoise/',
+  '/encyclopedia/animal/sulcata-tortoise/',
+  '/encyclopedia/animal/box-turtle/',
+  '/encyclopedia/animal/hedgehog/',
+  '/encyclopedia/animal/rabbit/',
+  '/encyclopedia/animal/guinea-pig/',
+  '/encyclopedia/animal/chinchilla/',
+  '/encyclopedia/animal/ferret/',
+  '/encyclopedia/animal/sugar-glider/',
+  '/encyclopedia/animal/budgie/',
+  '/encyclopedia/animal/cockatiel/',
+  '/encyclopedia/animal/conure/',
+  '/encyclopedia/animal/african-grey/',
+  '/encyclopedia/animal/lovebird/',
+  '/encyclopedia/animal/labrador/',
+  '/encyclopedia/animal/golden-retriever/',
+  '/encyclopedia/animal/german-shepherd/',
+  '/encyclopedia/animal/french-bulldog/',
+  '/encyclopedia/animal/border-collie/',
+  '/encyclopedia/animal/siberian-husky/',
+  '/encyclopedia/animal/domestic-shorthair/',
+  '/encyclopedia/animal/maine-coon/',
+  '/encyclopedia/animal/siamese/',
+  '/encyclopedia/animal/ragdoll/',
+  '/encyclopedia/animal/bengal/',
+  '/encyclopedia/animal/persian/',
+  '/encyclopedia/animal/tarantula/',
+  '/encyclopedia/animal/praying-mantis/',
+  '/encyclopedia/animal/millipede/',
+  '/encyclopedia/animal/hissing-cockroach/',
+  '/encyclopedia/animal/stick-insect/',
+  '/encyclopedia/animal/emperor-scorpion/',
+  '/encyclopedia/animal/pacman-frog/',
+  '/encyclopedia/animal/axolotl/',
+  '/encyclopedia/animal/whites-tree-frog/',
+  '/encyclopedia/animal/fire-belly-toad/',
+  '/encyclopedia/animal/tiger-salamander/',
+
   // Individual guide detail pages
   '/guides/crested-gecko/',
   '/guides/leopard-gecko/',
@@ -189,9 +250,10 @@ async function generateSitemap() {
     const isHome = path === '/';
     const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/encyclopedia/guides/', '/animal-facts/', '/quiz/'].includes(path);
     const isGuideDetail = path.startsWith('/guides/');
+    const isEncAnimal = path.startsWith('/encyclopedia/animal/');
     const isEncCat = path.startsWith('/encyclopedia/category/') || path.startsWith('/encyclopedia/guides/');
-    const changefreq = isHighFreq ? 'weekly' : isGuideDetail ? 'monthly' : 'weekly';
-    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isEncCat ? '0.7' : isGuideDetail ? '0.6' : '0.7';
+    const changefreq = isHighFreq ? 'weekly' : (isGuideDetail || isEncAnimal) ? 'monthly' : 'weekly';
+    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isEncCat ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${path}</loc>\n`;
     xml += `    <lastmod>${today}</lastmod>\n`;

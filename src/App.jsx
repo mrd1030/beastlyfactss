@@ -32,6 +32,7 @@ const Categories = lazy(() => import('@/pages/Categories'));
 const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
 const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
+const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
 
 const PageLoadingFallback = () => (
   <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
@@ -69,6 +70,7 @@ const AuthenticatedApp = () => {
             <Route path="/guides" element={<Navigate to="/encyclopedia/guides/" replace />} />
             <Route path="/guides/:id" element={<GuideDetail />} />
             <Route path="/encyclopedia" element={<Encyclopedia />} />
+            <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
             <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />
             <Route path="/encyclopedia/guides" element={<Encyclopedia />} />
             <Route path="/encyclopedia/guides/:guideFilter" element={<Encyclopedia />} />

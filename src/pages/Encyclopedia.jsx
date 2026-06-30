@@ -402,9 +402,9 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
 function AnimalRow({ animal, onOpenLegend }) {
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
 
-  if (animal.available && animal.guideId) {
+  if (animal.available) {
     return (
-      <Link to={`/guides/${animal.guideId}/`}>
+      <Link to={`/encyclopedia/animal/${animal.id}/`}>
         <motion.div whileHover={{ x: 3 }}
           className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
           <div className="flex items-center gap-3 min-w-0">
