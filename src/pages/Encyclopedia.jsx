@@ -455,6 +455,16 @@ function GuideCard({ guide, index, onOpenLegend }) {
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
       <Link to={`/guides/${guide.id}/`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
+          {guide.image && (
+            <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">
+              <img
+                src={guide.image}
+                alt={guide.name}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          )}
           <div className="flex items-start justify-between mb-3">
             <span className="text-3xl">{guide.emoji}</span>
             <div className="flex items-center gap-1.5 flex-wrap justify-end">

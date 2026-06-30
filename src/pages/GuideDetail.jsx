@@ -147,6 +147,10 @@ export default function GuideDetail() {
 
   const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
 
+  const ogImage = guide.image
+    ? `https://beastlyfacts.com${guide.image}`
+    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+
   const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
   const guideDescription = guide.tagline
     ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
@@ -173,12 +177,12 @@ export default function GuideDetail() {
         <meta property="og:description" content={guideDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:alt" content={`${guide.name} care guide — Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guideTitle} />
         <meta name="twitter:description" content={guideDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
@@ -251,6 +255,18 @@ export default function GuideDetail() {
             </p>
           </div>
         </motion.div>
+
+        {/* Hero image */}
+        {guide.image && (
+          <div className="rounded-2xl overflow-hidden mb-6 aspect-video">
+            <img
+              src={guide.image}
+              alt={`${guide.name} — ${guide.petType}`}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        )}
 
         {/* Sections — all visible so search engines index full content */}
         <div className="space-y-5 mb-6">
