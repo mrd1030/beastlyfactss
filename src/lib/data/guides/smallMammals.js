@@ -56,6 +56,7 @@ Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's 
     emoji: "🦔",
     difficulty: "Intermediate",
     petType: "Small Mammals",
+    image: "/assets/guides/hedgehog.jpg",
     tagline: "The spiky little explorer that runs on a wheel all night!",
     funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
     sections: {
@@ -159,6 +160,7 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     difficulty: "Intermediate",
     difficulty: "Advanced",
     petType: "Small Mammals",
+    image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
     funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
     sections: {
@@ -202,6 +204,7 @@ Fur ring — a constricting ring of fur around the penis in males — can develo
     emoji: "🐿️",
     difficulty: "Advanced",
     petType: "Small Mammals",
+    image: "/assets/guides/sugar-glider.jpg",
     tagline: "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!",
     funFact: "Sugar gliders can glide up to 150 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
     sections: {

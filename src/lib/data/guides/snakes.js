@@ -136,6 +136,7 @@ Escape prevention is not a health issue per se, but an escaped corn snake is at 
     difficulty: "Intermediate",
     difficulty: "Advanced",
     petType: "Snakes",
+    image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
     sections: {
@@ -176,6 +177,7 @@ Annual veterinary wellness checks are strongly recommended, particularly for adu
     emoji: "🐍",
     difficulty: "Beginner",
     petType: "Snakes",
+    image: "/assets/guides/california-kingsnake.jpg",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
     sections: {
@@ -215,6 +217,7 @@ Escape prevention is a practical safety issue — an escaped kingsnake faces col
     emoji: "🐍",
     difficulty: "Beginner",
     petType: "Snakes",
+    image: "/assets/guides/milk-snake.jpg",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
     sections: {

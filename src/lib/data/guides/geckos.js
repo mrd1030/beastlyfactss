@@ -103,6 +103,7 @@ Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A
     emoji: "🦎",
     difficulty: "Beginner",
     petType: "Geckos",
+    image: "/assets/guides/gargoyle-gecko.jpg",
     tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
     funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
     sections: {

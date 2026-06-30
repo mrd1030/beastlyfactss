@@ -55,6 +55,7 @@ Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and o
     difficulty: "Beginner",
     difficulty: "Intermediate",
     petType: "Lizards",
+    image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
     funFact: "Blue tongue skinks give live birth and are one of the largest skink species kept as pets. Adults can reach 18 to 24 inches!",
     sections: {
@@ -136,6 +137,7 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     difficulty: "Beginner",
     difficulty: "Intermediate",
     petType: "Lizards",
+    image: "/assets/guides/green-anole.jpg",
     tagline: "America's tiny chameleon: the little green lizard that turns brown with its mood!",
     funFact: "Green anoles can change color from bright green to brown depending on temperature, stress, or mood, earning them the nickname 'American chameleon,' though they're not true chameleons at all!",
     sections: {
@@ -179,6 +181,7 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     emoji: "🦎",
     difficulty: "Advanced",
     petType: "Lizards",
+    image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
     sections: {
@@ -219,6 +222,7 @@ Respiratory infections and scale rot can occur if humidity and temperatures are 
     emoji: "🦎",
     difficulty: "Advanced",
     petType: "Lizards",
+    image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
     sections: {
@@ -258,6 +262,7 @@ These are powerful animals. Adult savannah monitors can inflict significant inju
     emoji: "🦎",
     difficulty: "Intermediate",
     petType: "Lizards",
+    image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
     sections: {
