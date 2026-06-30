@@ -61,7 +61,7 @@ const staticPages = [
   '/animal-facts/',
   '/blog/',
   '/encyclopedia/',
-  '/encyclopedia/guides/',
+  '/guides/',
   '/quiz/personality/',
   '/quiz/trivia/',
   '/quiz/knowledge/',
@@ -70,8 +70,8 @@ const staticPages = [
   // Encyclopedia categories
   ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}/`),
 
-  // Encyclopedia guide filters
-  ...guideFilters.map(s => `/encyclopedia/guides/${s}/`),
+  // Guide category filter pages
+  ...guideFilters.map(s => `/guides/category/${s}/`),
 
   // Individual encyclopedia animal pages
   '/encyclopedia/animal/crested-gecko/',
@@ -248,12 +248,13 @@ async function generateSitemap() {
 
   uniqueStatic.forEach(path => {
     const isHome = path === '/';
-    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/encyclopedia/guides/', '/animal-facts/', '/quiz/'].includes(path);
-    const isGuideDetail = path.startsWith('/guides/');
+    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/guides/', '/animal-facts/', '/quiz/'].includes(path);
+    const isGuideCat = path.startsWith('/guides/category/');
+    const isGuideDetail = path.startsWith('/guides/') && !isGuideCat;
     const isEncAnimal = path.startsWith('/encyclopedia/animal/');
-    const isEncCat = path.startsWith('/encyclopedia/category/') || path.startsWith('/encyclopedia/guides/');
+    const isEncCat = path.startsWith('/encyclopedia/category/');
     const changefreq = isHighFreq ? 'weekly' : (isGuideDetail || isEncAnimal) ? 'monthly' : 'weekly';
-    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : isEncCat ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
+    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${path}</loc>\n`;
     xml += `    <lastmod>${today}</lastmod>\n`;

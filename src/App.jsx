@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider } from '@tanstack/react-query';
 import { queryClientInstance } from '@/lib/query-client';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
@@ -33,6 +33,12 @@ const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
 const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
+const Guides = lazy(() => import('@/pages/Guides'));
+
+function RedirectGuideFilter() {
+  const { guideFilter } = useParams();
+  return <Navigate to={`/guides/category/${guideFilter}/`} replace />;
+}
 
 const PageLoadingFallback = () => (
   <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
@@ -67,13 +73,14 @@ const AuthenticatedApp = () => {
           <Route element={<AppLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/facts" element={<Facts />} />
-            <Route path="/guides" element={<Navigate to="/encyclopedia/guides/" replace />} />
+            <Route path="/guides" element={<Guides />} />
+            <Route path="/guides/category/:category" element={<Guides />} />
             <Route path="/guides/:id" element={<GuideDetail />} />
             <Route path="/encyclopedia" element={<Encyclopedia />} />
             <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
             <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />
-            <Route path="/encyclopedia/guides" element={<Encyclopedia />} />
-            <Route path="/encyclopedia/guides/:guideFilter" element={<Encyclopedia />} />
+            <Route path="/encyclopedia/guides" element={<Navigate to="/guides/" replace />} />
+            <Route path="/encyclopedia/guides/:guideFilter" element={<RedirectGuideFilter />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/category/:catSlug" element={<Blog />} />
             <Route path="/blog/:slug" element={<Blog />} />

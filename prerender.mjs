@@ -84,7 +84,7 @@ const STATIC_ROUTES = [
   '/facts',
   '/blog',
   '/encyclopedia',
-  '/encyclopedia/guides',
+  '/guides',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
@@ -98,7 +98,7 @@ const STATIC_ROUTES = [
   '/terms',
   '/privacy',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
-  ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/guides/${s}`),
+  ...ENCYCLOPEDIA_CATEGORIES.map(s => `/guides/category/${s}`),
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];

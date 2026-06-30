@@ -200,7 +200,7 @@ export default function Encyclopedia() {
             {TABS.map(tab => (
               <button
                 key={tab.id}
-                onClick={() => navigate(tab.id === 'guides' ? '/encyclopedia/guides' : '/encyclopedia')}
+                onClick={() => navigate(tab.id === 'guides' ? '/guides/' : '/encyclopedia/')}
                 className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
                   activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}

@@ -73,6 +73,7 @@ function ThreadsLogo({ className }) {
 const primaryLinks = [
   { to: '/', label: 'Home' },
   { to: '/encyclopedia', label: 'Encyclopedia' },
+  { to: '/guides', label: 'Guides' },
   { to: '/facts', label: 'Facts' },
   { to: '/blog', label: 'Critter Digest' },
   { to: '/pack', label: 'My Pack' },
@@ -166,7 +167,8 @@ export default function Navbar() {
 
   // The condition now strictly expects matching the '/blog' layout parameters
   const isDigest = location.pathname.startsWith('/blog');
-  const isChildRoute = /^\/guides\/.+/.test(location.pathname);
+  const isGuidesSection = location.pathname.startsWith('/guides');
+  const isChildRoute = /^\/guides\/(?!category\/).+/.test(location.pathname);
 
   return (
     <motion.nav
@@ -201,7 +203,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-0.5">
             {primaryLinks.map(link => {
-              const isActive = link.to === '/blog' ? isDigest : location.pathname === link.to;
+              const isActive = link.to === '/blog' ? isDigest : link.to === '/guides' ? isGuidesSection : location.pathname === link.to;
               return (
                 <Link
                   key={link.to}
@@ -272,6 +274,7 @@ export default function Navbar() {
                   { to: '/', label: 'Home' },
                   { to: '/search', emoji: '🔎', label: 'Search' },
                   { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
+                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
                 ].map(item => (
                   <Link
                     key={item.to}
