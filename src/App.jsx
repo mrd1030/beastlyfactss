@@ -75,7 +75,7 @@ const AuthenticatedApp = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/category/:catSlug" element={<Blog />} />
             <Route path="/blog/:slug" element={<Blog />} />
-            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
             <Route path="/quiz/:tab" element={<Quiz />} />
             <Route path="/pack" element={<Pack />} />
             <Route path="/about" element={<About />} />
