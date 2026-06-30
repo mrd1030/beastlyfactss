@@ -5,6 +5,7 @@ export const turtleGuides = [
     emoji: "🐢",
     difficulty: "Advanced",
     petType: "Turtles & Tortoises",
+    image: "/assets/guides/red-eared-slider.jpg",
     tagline: "The iconic pet turtle that grows much larger than the pet store suggests!",
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
     sections: {
@@ -45,6 +46,7 @@ Metabolic bone disease from inadequate UVB causes soft shell and skeletal deform
     emoji: "🐢",
     difficulty: "Intermediate",
     petType: "Turtles & Tortoises",
+    image: "/assets/guides/russian-tortoise.jpg",
     tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
     sections: {
@@ -84,6 +86,7 @@ Hibernation (brumation) is natural and important for Russian tortoises. Animals 
     emoji: "🐢",
     difficulty: "Advanced",
     petType: "Turtles & Tortoises",
+    image: "/assets/guides/sulcata-tortoise.jpg",
     tagline: "The third-largest tortoise: a lifetime commitment that may outlive you!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
     sections: {
@@ -123,6 +126,7 @@ Sulcatas regularly outlive their owners — they can live 70 to 150+ years. This
     emoji: "🐢",
     difficulty: "Intermediate",
     petType: "Turtles & Tortoises",
+    image: "/assets/guides/box-turtle.jpg",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
     sections: {

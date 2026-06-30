@@ -5,6 +5,7 @@ export const birdGuides = [
     emoji: "🦜",
     difficulty: "Advanced",
     petType: "Birds",
+    image: "/assets/guides/african-grey.jpg",
     tagline: "The genius of the parrot world, one of the most intelligent animals on Earth!",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
     sections: {
@@ -54,6 +55,7 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     emoji: "🐦",
     difficulty: "Beginner",
     petType: "Birds",
+    image: "/assets/guides/budgie.jpg",
     tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
     sections: {
@@ -105,6 +107,7 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
     emoji: "❤️",
     difficulty: "Intermediate",
     petType: "Birds",
+    image: "/assets/guides/lovebird.jpg",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
     sections: {
@@ -154,6 +157,7 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
     emoji: "🦜",
     difficulty: "Beginner",
     petType: "Birds",
+    image: "/assets/guides/cockatiel.jpg",
     tagline: "The whistling, crested charmer that's the perfect first parrot!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
     sections: {

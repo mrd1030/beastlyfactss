@@ -320,6 +320,7 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     emoji: "🦎",
     difficulty: "Advanced",
     petType: "Lizards",
+    image: "/assets/guides/tegu.jpg",
     tagline: "The dog-like mega-lizard that can learn its own name!",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
     sections: {

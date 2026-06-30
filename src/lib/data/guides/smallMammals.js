@@ -5,6 +5,7 @@ export const smallMammalGuides = [
     emoji: "🐰",
     difficulty: "Beginner",
     petType: "Small Mammals",
+    image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
     sections: {
@@ -122,6 +123,7 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     emoji: "🐹",
     difficulty: "Beginner",
     petType: "Small Mammals",
+    image: "/assets/guides/guinea-pig.jpg",
     tagline: "The vocal, social little veggie lover that needs a friend!",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
     sections: {
