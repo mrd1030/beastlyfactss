@@ -154,7 +154,7 @@ export default function Blog() {
     count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),
   }));
 
-  const mdxCategories = Array.from(extraCategoryMap.values());
+  const mdxCategories = Array.from(extraCategoryMap.values()).sort((a, b) => a.title.localeCompare(b.title));
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);

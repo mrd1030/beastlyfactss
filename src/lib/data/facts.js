@@ -131,10 +131,10 @@ export const facts = [
 ];
 
 export const categories = [
-  { name: "Mammals", emoji: "🦁", color: "bg-orange" },
   { name: "Birds", emoji: "🦜", color: "bg-teal" },
-  { name: "Reptiles", emoji: "🦎", color: "bg-forest" },
-  { name: "Ocean", emoji: "🐬", color: "bg-blue-500" },
-  { name: "Weird & Wonderful", emoji: "🦄", color: "bg-hotpink" },
   { name: "Dogs & Cats", emoji: "🐾", color: "bg-amber-500" },
+  { name: "Mammals", emoji: "🦁", color: "bg-orange" },
+  { name: "Ocean", emoji: "🐬", color: "bg-blue-500" },
+  { name: "Reptiles", emoji: "🦎", color: "bg-forest" },
+  { name: "Weird & Wonderful", emoji: "🦄", color: "bg-hotpink" },
 ];
