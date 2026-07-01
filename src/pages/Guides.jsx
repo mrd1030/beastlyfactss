@@ -137,6 +137,22 @@ export default function Guides() {
               Evidence-based husbandry guides for reptiles, birds, mammals, and more.
             </p>
           </motion.div>
+          <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
+            {[
+              { id: 'encyclopedia', label: '📚 Encyclopedia' },
+              { id: 'guides', label: '📖 Care Guides' },
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => navigate(tab.id === 'encyclopedia' ? '/encyclopedia/' : '/guides/')}
+                className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
+                  tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
