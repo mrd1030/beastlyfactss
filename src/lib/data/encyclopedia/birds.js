@@ -64,4 +64,30 @@ export const birdEncyclopedia = [
       conservation: "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)",
     },
   },
+  {
+    id: "canary", name: "Canary", scientific: "Serinus canaria domestica",
+    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "canary", available: true,
+    bio: {
+      overview: "The domestic canary descends from the wild Atlantic canary, native to the Canary Islands, Azores, and Madeira, and has been selectively bred since the 16th century into distinct song and appearance varieties. Only males typically sing, a behavior tied to testosterone and daylight length, and centuries of selective breeding have produced dedicated song breeds like the Roller canary. Unlike most popular pet birds, canaries are kept primarily to be heard and watched rather than handled.",
+      origin: "Canary Islands, Azores, and Madeira",
+      habitat: "Woodland, scrubland, and gardens",
+      adultSize: "4.5–5 inches (11–13 cm)",
+      wildDiet: "Seeds, with insects taken for protein especially during breeding",
+      wildLifespan: "8–10 years (up to 12–15 years in captivity)",
+      conservation: "Least Concern (IUCN, wild ancestor)",
+    },
+  },
+  {
+    id: "cockatoo", name: "Cockatoo", scientific: "Cacatua alba",
+    category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "cockatoo", available: true,
+    bio: {
+      overview: "The umbrella cockatoo, native to the tropical rainforests of Indonesia's Maluku Islands, is one of the most commonly kept cockatoo species and among the most affection-dependent parrots in aviculture. In the wild, cockatoos maintain near-constant physical contact with their flock and mate, a trait that carries directly into captivity as an intense need for daily interaction with their keeper. Habitat loss and historic capture for the pet trade have made wild populations increasingly rare.",
+      origin: "Maluku Islands, Indonesia",
+      habitat: "Tropical lowland and hill rainforest",
+      adultSize: "18 inches (46 cm); 1.1–1.7 lbs",
+      wildDiet: "Seeds, nuts, fruit, and insects",
+      wildLifespan: "40–60 years (some individuals living considerably longer)",
+      conservation: "Vulnerable (IUCN)",
+    },
+  },
 ];

@@ -390,4 +390,54 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
       { q: "How long do tegus live?", a: "15 to 20 years with appropriate care, proper diet, adequate housing, and annual wellness veterinary checks. A tegu is a multi-decade commitment. Their cognitive sophistication and social bonding make them deeply rewarding animals — but only for keepers who can genuinely provide the space, time, and resources their long lives require." },
     ],
   },
+  {
+    id: "veiled-chameleon",
+    name: "Veiled Chameleon",
+    emoji: "🦎",
+    difficulty: "Intermediate",
+    petType: "Lizards",
+    tagline: "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!",
+    funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
+    sections: {
+      housing: `A 24x24x48 inch or larger all-screen enclosure is the minimum for one adult veiled chameleon. Screen construction is mandatory, not optional — stagnant air in glass or plastic enclosures causes rapid-onset respiratory infections in chameleons of every species. Dense live plants (pothos, hibiscus, ficus) covering 60 to 70% of the enclosure interior provide humidity regulation, visual security, and climbing structure. Bare enclosures produce chronically stressed animals.
+
+Veiled chameleons tolerate warmer basking temperatures than most other chameleon species: a basking spot of 85 to 95 degrees F for adults is appropriate, with ambient daytime temperatures of 75 to 85 degrees F. Nighttime temperatures can drop to 65 to 75 degrees F. Strong UVB lighting (T5 HO Arcadia 6% or 12%) is mandatory for calcium metabolism.
+
+A dripper and/or automatic misting system is required, since chameleons rarely drink from standing water and instead drink droplets from leaves after simulated rainfall. Just as important and specific to this species: a deep laying bin of moist sand or soil must be available at all times, regardless of whether a female has ever been near a male — she will lay infertile eggs on her own schedule and needs somewhere to dig, or she risks fatal egg-binding.`,
+      diet: `Veiled chameleons are primarily insectivorous. Offer a rotating variety of crickets, dubia roaches, superworms, silkworms, hornworms, and black soldier fly larvae — variety in feeder species is one of the most important factors in long-term health. Gut-load all feeders 24 to 48 hours before offering them.
+
+Unusually among chameleons, veiled chameleons also opportunistically eat plant matter in the wild, including leaves and flowers such as hibiscus. Offering occasional leafy greens or hibiscus flowers alongside their insect diet reflects natural behavior and provides some supplemental hydration and nutrition, though insects should remain the dietary foundation.
+
+Feed juveniles daily, offering as much as they'll consume in about 15 minutes. Feed adults every other day, offering 5 to 10 appropriately sized insects — no larger than the width of the chameleon's head. Dust feeders with calcium without D3 at most feedings, calcium with D3 twice weekly, and a reptile multivitamin once a week.`,
+      enrichment: `Multi-level branching is the most important structural enrichment, since veiled chameleons are almost entirely arboreal and spend their lives navigating a three-dimensional network of branches and leaves. The large casque (the helmet-like structure on top of the head) helps condense atmospheric moisture and plays a role in thermoregulation and visual signaling to other chameleons.
+
+Color changes are primarily a communication tool — signaling mood, temperature, and social or reproductive status — rather than camouflage as commonly assumed. Bright colors often indicate excitement or a display; dark, muted tones typically signal stress or cold.
+
+Handle minimally. Chameleons are display and observation animals rather than handling pets, and unnecessary handling is a significant stress factor. When handling is required for husbandry or veterinary reasons, move slowly and let the chameleon walk onto your hand voluntarily. Always keep a laying bin available for females at all times — this is enrichment and a genuine health necessity in one.`,
+      health: `Dehydration is the most common cause of early death in pet chameleons of any species. Sunken eyes, dark coloration, and lethargy are the key warning signs, and any chameleon showing them needs immediate long misting sessions and, if it doesn't improve quickly, veterinary care. Maintain the dripper and misting schedule without gaps.
+
+Egg-binding (dystocia) is a serious and species-specific health risk for female veiled chameleons, since they lay eggs whether or not they've mated. A female without an appropriate laying bin available at all times, or one that strains and appears lethargic without laying, needs prompt veterinary attention — this is a genuine emergency.
+
+Metabolic bone disease from inadequate UVB or supplementation causes swollen limbs and deformities. Respiratory infections follow stagnant air and poor ventilation, which is exactly why the all-screen enclosure requirement exists. Find a reptile vet experienced with chameleons before you need one.`,
+      checklist: [
+        "24x24x48\" all-screen enclosure",
+        "Strong UVB lighting (T5 HO Arcadia 6% or 12%)",
+        "Basking bulb (85 to 95°F hot spot for adults)",
+        "Dripper system and automatic mister",
+        "Live plants (pothos, hibiscus, ficus)",
+        "Laying bin with moist sand/soil, always available (females)",
+        "Gut-loaded feeder insects",
+        "Calcium w/ and w/o D3 supplements",
+        "Reptile multivitamin",
+        "Reptile vet with chameleon experience",
+      ],
+    },
+    faqs: [
+      { q: "Are veiled chameleons good for beginners?", a: "They're often called the most forgiving chameleon species to start with, since they tolerate a wider range of temperature and humidity than most other chameleons. That said, they're still not a true beginner reptile — they require an all-screen enclosure, strong UVB, a dripper or misting system, live plants, and daily gut-loaded insects. Compared to other chameleon species they're relatively approachable; compared to a leopard gecko or bearded dragon, they remain considerably more demanding." },
+      { q: "Why does my female veiled chameleon keep laying eggs without a male?", a: "This is completely normal. Female veiled chameleons produce infertile egg clutches on a regular cycle regardless of whether they've ever had contact with a male. Because of this, every female needs a deep laying bin of moist sand or soil available at all times — without one, she can develop fatal egg-binding trying to lay in an unsuitable space." },
+      { q: "What is the casque for?", a: "The casque is the helmet-like structure on top of a veiled chameleon's head. It helps condense atmospheric moisture (functioning almost like a small collection surface in humid air), assists with thermoregulation, and plays a role in visual signaling and species recognition. Casque size and shape also differ notably between males and females, with males developing a substantially larger casque." },
+      { q: "How big do veiled chameleons get?", a: "Males typically reach 18 to 24 inches in total length and 140 to 200 grams, making them one of the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 14 inches, but require equally attentive care since they're prone to reproductive complications like egg-binding." },
+      { q: "How long do veiled chameleons live?", a: "5 to 8 years is typical with optimal care. Males often outlive females, since females that lay frequent egg clutches over their lifetime tend to have measurably shortened lifespans. Consistent UVB, proper hydration, and a laying bin for females all meaningfully improve longevity." },
+    ],
+  },
 ];

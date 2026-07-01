@@ -30,6 +30,7 @@ Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, inverteb
 - [Bearded Dragon](https://beastlyfacts.com/guides/bearded-dragon/)
 - [Blue-Tongue Skink](https://beastlyfacts.com/guides/blue-tongue-skink/)
 - [Chameleon](https://beastlyfacts.com/guides/chameleon/)
+- [Veiled Chameleon](https://beastlyfacts.com/guides/veiled-chameleon/)
 - [Green Anole](https://beastlyfacts.com/guides/green-anole/)
 - [Ackie Monitor](https://beastlyfacts.com/guides/ackie-monitor/)
 - [Savannah Monitor](https://beastlyfacts.com/guides/savannah-monitor/)
@@ -64,6 +65,8 @@ Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, inverteb
 - [Conure](https://beastlyfacts.com/guides/conure/)
 - [Lovebird](https://beastlyfacts.com/guides/lovebird/)
 - [African Grey](https://beastlyfacts.com/guides/african-grey/)
+- [Canary](https://beastlyfacts.com/guides/canary/)
+- [Cockatoo](https://beastlyfacts.com/guides/cockatoo/)
 
 ### Invertebrates
 - [Tarantula](https://beastlyfacts.com/guides/tarantula/)
@@ -72,6 +75,8 @@ Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, inverteb
 - [Emperor Scorpion](https://beastlyfacts.com/guides/emperor-scorpion/)
 - [Hissing Cockroach](https://beastlyfacts.com/guides/hissing-cockroach/)
 - [Stick Insect](https://beastlyfacts.com/guides/stick-insect/)
+- [Jumping Spider](https://beastlyfacts.com/guides/jumping-spider/)
+- [Hermit Crab](https://beastlyfacts.com/guides/hermit-crab/)
 
 ### Amphibians
 - [White's Tree Frog](https://beastlyfacts.com/guides/whites-tree-frog/)

@@ -77,4 +77,30 @@ export const invertebrateEncyclopedia = [
       conservation: "Appendix II (CITES)",
     },
   },
+  {
+    id: "jumping-spider", name: "Jumping Spider", scientific: "Phidippus regius",
+    category: "Invertebrates", emoji: "🕷️", difficulty: "Beginner", guideId: "jumping-spider", available: true,
+    bio: {
+      overview: "The regal jumping spider is the most commonly kept pet jumping spider, native to scrubland, palmetto stands, and forest edges of the southeastern United States and the Caribbean. Unlike web-building spiders, jumping spiders are active visual hunters, using four pairs of eyes for nearly 360-degree awareness and sharp depth perception to stalk and pounce on prey. Many keepers describe their jumping spider as genuinely curious, often turning to track movement outside its enclosure.",
+      origin: "Southeastern United States, Bahamas, and Caribbean islands",
+      habitat: "Scrubland, palmetto stands, and forest edges",
+      adultSize: "0.5–0.75 inches (1.3–1.9 cm); females larger than males",
+      wildDiet: "Flies, moths, and other small insects, caught by active stalking and pouncing",
+      wildLifespan: "1–2 years",
+      conservation: "Not evaluated (widespread and common)",
+    },
+  },
+  {
+    id: "hermit-crab", name: "Hermit Crab", scientific: "Coenobita clypeatus",
+    category: "Invertebrates", emoji: "🦀", difficulty: "Intermediate", guideId: "hermit-crab", available: true,
+    bio: {
+      overview: "The Caribbean hermit crab, also called the purple pincer hermit crab, is the most commonly kept pet land hermit crab, native to coastal regions of the Caribbean and the western Atlantic. Because they don't grow their own shells, hermit crabs spend their lives searching for, trying on, and trading empty snail shells as they grow — a behavior so structured that groups will form an orderly size-based queue to exchange shells when a larger one becomes available. Despite their reputation as a disposable beach-souvenir pet, they can live for decades with proper care.",
+      origin: "Caribbean islands and coastal Central America and Florida",
+      habitat: "Tropical coastal regions; land-dwelling but reliant on nearby fresh and marine water",
+      adultSize: "Up to 4 inches (10 cm) across, including legs",
+      wildDiet: "Decaying plant and animal matter, fruit, and organic debris (omnivorous scavenger)",
+      wildLifespan: "20–30+ years in the wild",
+      conservation: "Not evaluated; regional populations pressured by coastal development and the pet trade",
+    },
+  },
 ];

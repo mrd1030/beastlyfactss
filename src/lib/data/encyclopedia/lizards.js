@@ -103,4 +103,17 @@ export const lizardEncyclopedia = [
       conservation: "Varies by species; many Near Threatened (IUCN)",
     },
   },
+  {
+    id: "veiled-chameleon", name: "Veiled Chameleon", scientific: "Chamaeleo calyptratus",
+    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "veiled-chameleon", available: true,
+    bio: {
+      overview: "The veiled chameleon is native to the mountainous valleys of Yemen and southwestern Saudi Arabia, where it tolerates wider swings in temperature and humidity than most other chameleon species — an adaptation to its relatively dry, variable habitat. Both sexes develop a tall, helmet-like casque on top of the head, more pronounced in males, which helps condense atmospheric moisture and plays a role in visual communication. Females can lay large clutches of infertile eggs even without ever mating.",
+      origin: "Yemen and southwestern Saudi Arabia",
+      habitat: "Mountain valleys, plateaus, and vegetation near water sources in an otherwise arid landscape",
+      adultSize: "18–24 inches (46–61 cm) males; 10–14 inches (25–36 cm) females",
+      wildDiet: "Insects, with some opportunistic feeding on leaves and flowers",
+      wildLifespan: "5–8 years (males often longer than females)",
+      conservation: "Not evaluated (widespread and common)",
+    },
+  },
 ];
