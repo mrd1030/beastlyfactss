@@ -1,1 +1,8 @@
+/quiz /quiz/personality/ 301
+/quiz/ /quiz/personality/ 301
+/trivia /quiz/trivia/ 301
+/trivia/ /quiz/trivia/ 301
+/encyclopedia/guides /guides/ 301
+/encyclopedia/guides/ /guides/ 301
+/encyclopedia/guides/* /guides/category/:splat/ 301
 /* /index.html 200
