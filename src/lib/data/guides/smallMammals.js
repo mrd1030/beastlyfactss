@@ -271,6 +271,13 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
         "Exotic veterinarian experienced with gliders"
       ],
     },
+    faqs: [
+      { q: "Can sugar gliders live alone?", a: "No. A lone sugar glider experiences profound loneliness and frequently develops self-mutilation behaviors — barbering or biting themselves — along with depression and a shortened lifespan. Sugar gliders must be kept in pairs or small groups. If you cannot commit to at least two animals, a sugar glider is not appropriate for your situation. Adoption of bonded pairs is strongly recommended." },
+      { q: "What is the correct diet for sugar gliders?", a: "Sugar glider nutrition is complex and highly debated. The most widely used, researched diets are the BML (Bourbon's Modified Leadbeater's) formula and the TPG (The Pet Glider) diet — both are specifically formulated to maintain the critical 2:1 calcium-to-phosphorus ratio that prevents Metabolic Bone Disease. Supplement with fresh fruits, vegetables, and occasional live insects. Research your chosen diet thoroughly before acquiring gliders." },
+      { q: "Do sugar gliders need specialized veterinary care?", a: "Yes. Only exotic veterinarians with specific experience in sugar gliders can provide appropriate care. Annual wellness exams are mandatory — sugar gliders mask illness as an evolutionary defense, and by the time symptoms are visible, the animal is usually significantly compromised. Find a glider-experienced exotic vet before acquiring your gliders, not during an emergency." },
+      { q: "Are sugar gliders good pets for beginners?", a: "Sugar gliders are not recommended for first-time exotic pet owners. They require a specialized and research-intensive diet, must be kept in same-species groups, are nocturnal and most active when most people are sleeping, need daily bonding time during their active hours, and require exotic veterinary care. They are rewarding for dedicated keepers who fully prepare, but frequently end up in rescue from unprepared owners." },
+      { q: "How long do sugar gliders live?", a: "10 to 15 years in captivity with excellent care — appropriate companionship, correct calcium-phosphorus balanced diet, nocturnal scheduling respected, and annual exotic vet exams. Life expectancy drops sharply in isolated animals or those on poorly balanced diets. A sugar glider is a decade-plus commitment." },
+    ],
   },
   {
     id: "ferret",
@@ -322,5 +329,12 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
         "Ferret-experienced exotic veterinarian",
       ],
     },
+    faqs: [
+      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent — the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
+      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats — plant carbohydrates are strongly associated with insulinoma development in ferrets." },
+      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
+      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
+      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers — many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
+    ],
   },
 ];

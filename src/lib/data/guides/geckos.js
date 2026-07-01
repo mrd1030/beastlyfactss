@@ -185,6 +185,13 @@ Monitor colony reproductive rate in optimal conditions, mourning gecko populatio
 Escape prevention is critical not only for the geckos' welfare but also for your household. A mourning gecko loose in a home is nearly impossible to recover. Inspect enclosure seals regularly, especially after cleaning or rearranging the enclosure.`,
       checklist: ["18x18x24\" planted vivarium", "Bioactive or coconut fiber substrate", "UVB T5 HO (low output)", "Tight-fitting lid (escape-proof!)", "Commercial CGD", "Fruit flies and tiny feeder insects", "Calcium dish (always available)", "Cork bark and dense planting", "Hygrometer and thermometer", "Fine mist system or manual misting"],
     },
+    faqs: [
+      { q: "Do mourning geckos need to live in groups?", a: "They thrive in small colonies of 3 to 5 females. Mourning geckos are social, and the colony dynamic — vocalizing, interacting, and reproducing — is a major part of their appeal. Because they are all-female and parthenogenetic, you will never have an unmanageable sex ratio." },
+      { q: "Are mourning geckos parthenogenetic?", a: "Yes — every individual is female, and they reproduce by producing fertile, unfertilized eggs that are genetic clones of the mother. No males exist in the wild. A colony in optimal conditions will grow over time as eggs hatch inside the vivarium, so plan for population management eventually." },
+      { q: "How big do mourning geckos get?", a: "Adults reach just 3 to 4 inches total length and weigh 4 to 8 grams. This small size means appropriately tiny prey — melanogaster fruit flies, bean beetles, pinhead crickets — and a tight, escape-proof enclosure with no gaps wider than a couple of millimeters." },
+      { q: "What do mourning geckos eat?", a: "Commercial crested gecko diet (CGD) is the nutritional foundation, offered every 2 to 3 days. Supplement with tiny live insects 1 to 2 times per week: melanogaster fruit flies, pinhead crickets, and bean beetles are appropriate for adults. A calcium dish available at all times is critical for egg-laying females." },
+      { q: "How long do mourning geckos live?", a: "With appropriate humidity, calcium supplementation, and live insects in the diet, mourning geckos typically live 6 to 10 years in captivity. Egg-laying females have higher calcium demands; consistent supplementation is important for their long-term health." },
+    ],
   },
   {
     id: "tokay-gecko",
@@ -229,6 +236,13 @@ Only purchase captive-bred individuals from reputable breeders whenever possible
         "Reptile-savvy exotic vet contact",
       ],
     },
+    faqs: [
+      { q: "Are tokay geckos good beginner geckos?", a: "No. Tokay geckos are defensive, fast, and have a powerful, tenacious bite. They are best suited to experienced keepers comfortable with handling a defensive animal. With consistent, patient work over months or even years, many individuals become calmer — but some remain defensive throughout their lives. Respect the individual temperament." },
+      { q: "Do tokay geckos bite?", a: "Yes, and their bite is strong for a gecko. Initial handling sessions should use leather gloves. They grip and hold rather than releasing quickly. Lowering your hand toward the ground usually triggers a release, as they instinctively release prey when it 'lands.' Never jerk your hand away during a bite — this causes lacerations from their small, recurved teeth." },
+      { q: "What do tokay geckos eat?", a: "Tokay geckos are insectivorous carnivores — they will not eat commercial crested gecko diet. Offer appropriately sized live insects: dubia roaches, crickets, mealworms, and superworms. Adults can occasionally have small pinky mice. Gut-load all insects 24 to 48 hours before offering and dust with calcium w/D3 2 to 3 times per week." },
+      { q: "How big do tokay geckos get?", a: "Tokay geckos are one of the largest gecko species kept in captivity. Adults typically reach 11 to 15 inches total length — males at the larger end, females slightly smaller. Their size, powerful jaws, and vivid spotted coloration make them impressive display animals." },
+      { q: "How long do tokay geckos live?", a: "With appropriate housing — a tall arboreal enclosure, 60 to 80% humidity, and temperatures of 82 to 88 degrees F during the day — tokay geckos commonly live 10 to 20 years in captivity. Annual wellness checks with a reptile-savvy veterinarian are recommended, particularly for wild-caught animals that may carry parasites." },
+    ],
   },
   {
     id: "african-fat-tail",
@@ -273,6 +287,13 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
         "Low-output UVB light (optional but beneficial)",
       ],
     },
+    faqs: [
+      { q: "How are African fat-tailed geckos different from leopard geckos?", a: "They are closely related and share similar husbandry, but African fat-tailed geckos (AFTs) require notably higher ambient humidity — 50 to 60% versus the leopard gecko's 30 to 40%. AFTs are also generally calmer and more docile, and they have a velvety skin texture quite different from the leopard gecko's pebbly appearance. Both species use an under-tank heater for belly heat and are strict insectivores." },
+      { q: "Do African fat-tailed geckos need a humid hide?", a: "Yes — the moist hide is critical, and AFTs need it more consistently than leopard geckos. Fill a hide box with damp sphagnum moss and keep it on the warm side. They require higher ambient humidity (50 to 60%) than most other ground-dwelling geckos, and the moist hide provides the microhabitat that prevents persistent stuck shed, particularly on the toes." },
+      { q: "What do African fat-tailed geckos eat?", a: "Strict insectivores. Crickets, dubia roaches, and black soldier fly larvae are the best staples. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. All feeders must be gut-loaded 24 to 48 hours before offering and dusted with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." },
+      { q: "How big do African fat-tailed geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 35 to 80 grams. Females are usually smaller than males. The tail, which stores fat reserves just like the leopard gecko's, should be plump and rounded in a healthy, well-fed gecko." },
+      { q: "How long do African fat-tailed geckos live?", a: "With correct humidity, appropriate thermal gradient (88 to 92 degrees F warm-side floor temperature via UTH on thermostat), and consistent supplementation, African fat-tailed geckos commonly live 10 to 20 years in captivity. They are robust animals when their humidity requirement is met." },
+    ],
   },
   {
     id: "leaf-tailed-gecko",
@@ -306,5 +327,12 @@ Dehydration is a primary and rapidly lethal concern. Signs include sunken eyes, 
 Temperature spikes above 80 degrees F cause acute heat stress. In summer, this requires active cooling measures. Stress-related anorexia is common after handling, shipping, or any significant husbandry disturbance. A gecko that has not eaten for more than 2 weeks needs veterinary assessment. Annual wellness checks with a reptile vet experienced in geckos are strongly recommended.`,
       checklist: ["24x24x36\"+ tall planted enclosure", "Live plants (pothos, ficus, bromeliads)", "Automatic misting system", "Digital hygrometer (target 70 to 90%)", "Cool-temperature environment (65 to 75 degrees F)", "Low-output UVB (T5 HO)", "Gut-loaded insect feeders", "Calcium w/D3 supplement", "Cork bark for hiding structures", "Emergency reptile vet contact"],
     },
+    faqs: [
+      { q: "Are leaf-tailed geckos good pets?", a: "Leaf-tailed geckos are advanced specialist display animals, not pets in the conventional sense. They are highly sensitive to husbandry errors, do not tolerate handling, and decline rapidly when any parameter is off. For experienced keepers who can provide the precise conditions they need, watching them in a well-planted vivarium is extraordinary. For beginners, they are not appropriate." },
+      { q: "What temperature do leaf-tailed geckos require?", a: "Cool temperatures: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. This is the most common husbandry failure — leaf-tailed geckos are highland Madagascar species that require temperatures most reptiles would find uncomfortably cold. Temperatures above 80 degrees F cause acute heat stress. An air conditioner or cooling system may be necessary in summer." },
+      { q: "How difficult are leaf-tailed geckos to keep?", a: "Very. They require a highly specific combination of cool temperatures, 80 to 100% humidity, dense live planting, an automatic misting system, strong UVB, and extremely minimal handling. They mask illness effectively and decline rapidly once husbandry fails. They are considered one of the most demanding reptiles in the hobby and should only be kept by experienced keepers with significant resources dedicated to their specific needs." },
+      { q: "What do leaf-tailed geckos eat?", a: "Strictly insectivorous. Crickets, dubia roaches, and isopods are appropriate feeders. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly. Feed every 2 to 3 days in the evening when they are naturally active." },
+      { q: "How long do leaf-tailed geckos live?", a: "With exceptional care — cool temperatures consistently maintained, high humidity, live-planted vivarium, and virtually no handling — leaf-tailed geckos can live 5 to 10 years in captivity. Their sensitive nature means longevity depends heavily on getting every parameter right from day one." },
+    ],
   },
 ];

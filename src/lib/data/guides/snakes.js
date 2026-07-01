@@ -231,6 +231,13 @@ Escape prevention is a practical safety issue — an escaped kingsnake faces col
         "Reptile-savvy vet contact",
       ],
     },
+    faqs: [
+      { q: "Are California kingsnakes immune to snake venom?", a: "Yes. California kingsnakes are ophiophagous — they eat other snakes in the wild, including venomous species like rattlesnakes, copperheads, and cottonmouths, to whose venom they are largely immune. The name 'King' reflects this apex predatory status. Never house with other snakes; they will attempt to eat enclosure mates regardless of species." },
+      { q: "How big do California kingsnakes get?", a: "Adults typically reach 3 to 4 feet in total length — a manageable, handleable size that makes them popular with first-time snake owners and experienced collectors alike. They are slender, muscular snakes that feel confident in the hand. They reach adult size by 2 to 3 years of age." },
+      { q: "Are California kingsnakes good beginner snakes?", a: "Yes. They feed reliably on frozen/thawed prey, tame down quickly with consistent calm handling, and have straightforward temperature and humidity requirements. Juvenile kingsnakes can be defensive — musking, hissing, or striking — but this diminishes significantly with regular interaction. Most adults become calm, handleable snakes within weeks to months of consistent work." },
+      { q: "What humidity do California kingsnakes need?", a: "Low to moderate — 30 to 50% ambient humidity is appropriate. This is generally achievable at room humidity in most homes without additional measures. The most important shedding support is a moist hide (a box packed with damp sphagnum moss) available at all times. Retained shed on eye caps is preventable with consistent access to a humid microhabitat." },
+      { q: "Why is my California kingsnake musking?", a: "Musking — releasing a pungent musk from cloacal glands — is a normal defensive behavior in juveniles and newly acquired adults. It is not an indication of illness or permanent temperament. Most California kingsnakes reduce or eliminate musking with consistent, calm handling over weeks. Never react to musking with fear or by putting the snake down — this reinforces the behavior." },
+    ],
   },
   {
     id: "milk-snake",
@@ -271,5 +278,12 @@ Their secretive nature means illness can be hidden until advanced. Monitor feedi
         "Reptile-savvy vet contact",
       ],
     },
+    faqs: [
+      { q: "Are milk snakes venomous?", a: "No. Milk snakes are completely harmless. Their vivid red, black, and yellow banding mimics the pattern of the coral snake — a venomous species — in a survival strategy called Batesian mimicry. The old rhyme helps: 'Red touches black, friend of Jack; red touches yellow, kill a fellow.' On a milk snake, red touches black. They have no venom and pose no danger to humans." },
+      { q: "How big do milk snakes get?", a: "Size varies significantly by subspecies. The Eastern milk snake reaches 2 to 3 feet; Sinaloan milk snakes (one of the most popular) can reach 4 to 5 feet; the Mexican milk snake stays around 2.5 to 3 feet. Choose your enclosure and prey size based on your specific subspecies. All are slender, graceful snakes." },
+      { q: "How do I tell a milk snake from a coral snake?", a: "Use the rhyme: 'Red touches black, friend of Jack; red touches yellow, kill a fellow.' Milk snakes have red bands bordered by black bands. Coral snakes have red bands bordered by yellow bands. This rhyme applies to North American species. In all cases, never handle an unidentified snake in the wild." },
+      { q: "Are milk snakes good beginner snakes?", a: "Yes — once established, they are strong feeders and straightforward to care for. Juvenile milk snakes can be nippy initially, but this diminishes rapidly with consistent calm handling. Their smaller size (compared to ball pythons or corn snakes) makes them easy to manage. Ensure a secure, lockable lid — milk snakes are persistent escape artists that will test every seam." },
+      { q: "How long do milk snakes live?", a: "12 to 20 years in captivity with appropriate care — correct temperatures, consistent prey, humidity appropriate for the subspecies, and annual wellness checks with a reptile-savvy veterinarian. A milk snake acquired as a hatchling is a long-term commitment." },
+    ],
   },
 ];

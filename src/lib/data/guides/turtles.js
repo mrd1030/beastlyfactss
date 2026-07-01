@@ -39,6 +39,13 @@ Vitamin A deficiency is common in sliders fed primarily commercial pellets witho
 Metabolic bone disease from inadequate UVB causes soft shell and skeletal deformities. Annual wellness visits with a reptile vet experienced in chelonians (turtles and tortoises) are strongly recommended.`,
       checklist: ["100+ gallon enclosure (or pond)", "Powerful canister filter (2 to 3x tank volume)", "Large basking platform", "Strong UVB bulb (T5 HO)", "Basking heat lamp (85 to 95 degrees F)", "Water heater (75 to 80 degrees F)", "Commercial turtle pellets", "Dark leafy greens", "Water quality test kit", "Aquarium vacuum for substrate cleaning"],
     },
+    faqs: [
+      { q: "How big do red-eared sliders get?", a: "Females typically reach 10 to 12 inches shell length; males stay at 6 to 8 inches. This size is dramatically larger than the 4-inch hatchlings sold in pet stores. An adult female slider needs a minimum 100-gallon tank — the 10-gallon starter kits sold with hatchlings become inadequate within months. Research adult size requirements before acquiring any slider." },
+      { q: "How long do red-eared sliders live?", a: "20 to 40 years in captivity with appropriate care — proper water quality, strong UVB, a balanced diet, and regular veterinary attention. This is a multi-decade commitment. Many sliders end up in rescue because their owners underestimated their adult size and lifespan. Outdoor pond housing in appropriate climates is often the best long-term solution for adults." },
+      { q: "What do red-eared sliders eat?", a: "High-quality commercial aquatic turtle pellets should form about 50% of the diet. Supplement with dark leafy greens (romaine, dandelion greens, kale), aquatic plants, and occasional protein (feeder fish, cooked shrimp, earthworms). Juveniles eat more protein; adults become significantly more herbivorous. Feed in the water, where they naturally eat." },
+      { q: "Do red-eared sliders need a filter?", a: "Yes — a powerful one. Red-eared sliders are extremely messy, defecating heavily in the water where they eat. A canister filter rated for 2 to 3 times the tank volume is the minimum. Even with strong filtration, weekly 25 to 30% water changes are required. Poor water quality causes the majority of health problems in captive sliders." },
+      { q: "Are red-eared sliders legal to own?", a: "In many regions yes, but check local regulations carefully. They are one of the world's most invasive species — released or escaped pets have established wild populations on every continent except Antarctica. It is illegal to release them into the wild anywhere in the US. Some areas have restrictions on ownership. Sale of sliders with shells under 4 inches is illegal in the US under federal law." },
+    ],
   },
   {
     id: "russian-tortoise",
@@ -79,6 +86,13 @@ Hibernation (brumation) is natural and important for Russian tortoises. Animals 
         "Reptile vet with tortoise experience",
       ],
     },
+    faqs: [
+      { q: "How long do Russian tortoises live?", a: "40 to 80+ years in captivity, with some individuals documented over 100 years. This is one of the most important facts to understand before acquiring one — a Russian tortoise purchased today may still be alive when passed down to the next generation. Annual wellness checks with a tortoise-experienced veterinarian are essential for this level of commitment." },
+      { q: "What do Russian tortoises eat?", a: "Dark leafy greens and edible weeds form the dietary core: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Unlimited grass hay should always be available. Avoid high-protein foods, excessive fruit, and commercial tortoise pellets as primary food. The diet should be high-fiber and very low in protein and sugar." },
+      { q: "Do Russian tortoises need to hibernate?", a: "Yes — brumation is a natural and important part of Russian tortoise biology. Animals prevented from hibernating can develop reproductive problems and shortened lifespans over time. The hibernation period typically runs from autumn through early spring. Consult a tortoise-experienced reptile veterinarian for safe hibernation protocols before your tortoise's first winter." },
+      { q: "How big do Russian tortoises get?", a: "6 to 10 inches shell length, making them one of the smaller tortoise species commonly kept as pets. Males are usually smaller than females. Their relatively modest size makes them more manageable than larger species like sulcatas, but they still require spacious outdoor enclosures with deep burrowing substrate in warm climates." },
+      { q: "Can Russian tortoises live outdoors?", a: "Yes, in appropriate climates — and for many keepers, outdoor housing is the ideal long-term solution. They need an outdoor enclosure with walls buried 12 inches or more underground (they burrow and escape constantly), natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis), access to edible weeds, and a sheltered area for cool or wet weather." },
+    ],
   },
   {
     id: "sulcata-tortoise",
@@ -119,6 +133,13 @@ Sulcatas regularly outlive their owners — they can live 70 to 150+ years. This
         "Reptile vet + long-term rehoming plan in place",
       ],
     },
+    faqs: [
+      { q: "How big do sulcata tortoises get?", a: "Sulcatas are the third-largest tortoise species in the world. Adults commonly reach 24 to 36 inches shell length and 80 to 150+ lbs, with some exceptional males exceeding 200 lbs. That palm-sized hatchling at the pet store will become an animal that requires a yard and a heated shelter. Research adult size and space requirements very carefully before acquiring a sulcata." },
+      { q: "How long do sulcata tortoises live?", a: "70 to 150+ years — they will almost certainly outlive you. Before acquiring a sulcata, establish a contingency rehoming plan with a reputable tortoise rescue organization. This is a responsibility that may need to be passed to the next generation. Many sulcatas end up in rescue because their owners were not prepared for their adult size and lifespan." },
+      { q: "What do sulcata tortoises eat?", a: "80% of the diet should be grass — Bermuda grass, orchard grass, Timothy hay — with edible weeds and leafy greens as a supplement. Do not feed fruit, animal protein, or excessive commercial tortoise pellets. These cause the shell pyramiding and organ damage common in improperly fed sulcatas. A natural grass pasture outdoor enclosure is ideal." },
+      { q: "What causes shell pyramiding in sulcatas?", a: "Pyramiding — raised, bumpy scutes — is caused by excessive protein or fruit in the diet, rapid growth from inappropriate high-calorie feeding, and low humidity during the growth phase. Once pyramiding occurs, it is irreversible. The only prevention is a correct high-fiber, low-protein diet and appropriate growth rate from hatching." },
+      { q: "Can I keep a baby sulcata tortoise indoors?", a: "Yes, but only temporarily. Hatchlings and juveniles can be kept indoors with a T5 HO UVB lamp (Arcadia 12%) and basking spot of 95 to 105 degrees F. As they grow — which happens faster than most people expect — they need progressively larger outdoor enclosures. An adult sulcata cannot be kept indoors in any practical sense." },
+    ],
   },
   {
     id: "box-turtle",
@@ -159,5 +180,12 @@ Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately f
         "Hibernation safety protocol (consult vet)",
       ],
     },
+    faqs: [
+      { q: "How long do box turtles live?", a: "50 to 100+ years — some wild box turtles have been documented exceeding 100 years, and captive animals routinely live into their 50s and 60s with good care. This is a genuinely multi-generational commitment. Always source captive-bred box turtles from reputable breeders, never from wild collection, as wild populations are declining significantly." },
+      { q: "What do box turtles eat?", a: "True omnivores with broad needs. A balanced diet is approximately 50% animal protein (earthworms are the single best protein source) and 50% plant matter — dark greens, various berries, mushrooms, flowers, and soft fruits. Juveniles need more protein (60 to 70%) for growth. Vary the diet as much as possible; dietary variety produces healthier, more vibrant animals." },
+      { q: "Can I pick up a box turtle I find in the wild and keep it as a pet?", a: "No — do not collect box turtles from the wild. Wild populations are declining seriously across North America from habitat loss, vehicle strikes, and collection. Removing a box turtle from its territory is also directly harmful to that individual, as they have strong homing instincts and attempt to return. Source only captive-bred animals from reputable breeders." },
+      { q: "Do box turtles need to hibernate?", a: "Annual brumation is natural and important for adult box turtles in most of their range. Animals prevented from hibernating long-term can develop reproductive issues and shortened lifespans. Consult a chelonian-experienced veterinarian for safe hibernation protocols tailored to your climate and the specific subspecies you are keeping before the first winter." },
+      { q: "What kind of outdoor enclosure do box turtles need?", a: "A minimum 4x8 ft outdoor enclosure with walls buried 6 to 12 inches underground is appropriate for one adult. Box turtles are persistent diggers and climbers. Provide deep leaf litter for burrowing, a shallow water dish large enough to soak in (changed daily), varied terrain including logs and plants, and moist areas in one section of the enclosure." },
+    ],
   },
 ];

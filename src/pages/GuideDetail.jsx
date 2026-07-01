@@ -25,7 +25,8 @@ export default function GuideDetail() {
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
     const gName = guide.name.toLowerCase();
-    return gName.includes(fAnimal) || fAnimal.split(' ').some(w => w.length > 3 && gName.includes(w));
+    const gWords = gName.split(' ');
+    return gName.includes(fAnimal) || fAnimal.split(' ').some(w => w.length > 3 && gWords.includes(w));
   }).slice(0, 3) : [];
 
   // Keyboard listener to close popup modal on "Escape" keypress
@@ -401,7 +402,7 @@ export default function GuideDetail() {
               </p>
               <div className="space-y-2">
                 <Link
-                  to="/encyclopedia/guides/"
+                  to="/guides/"
                   className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <BookOpen className="w-4 h-4 flex-shrink-0" />

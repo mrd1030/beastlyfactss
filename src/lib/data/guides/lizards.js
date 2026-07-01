@@ -188,6 +188,13 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
         "Reptile-savvy exotic veterinarian",
       ],
     },
+    faqs: [
+      { q: "Are green anoles good pets to handle?", a: "Green anoles are better appreciated as display animals than handling pets. They are sensitive to stress, and frequent handling causes immune suppression and shortened lifespan. Their natural behaviors — dewlap displays, color shifts from green to brown, territorial posturing, and active hunting — are the primary appeal and are best observed through the glass." },
+      { q: "Why does my green anole turn brown?", a: "Color change in green anoles is triggered by temperature, stress, mood, and ambient conditions — not just camouflage. A cold or stressed anole turns brown; a warm, relaxed anole is bright green. This color-shifting ability is why they are sometimes called 'American chameleons,' though they are not true chameleons. Brown color alone is not a sign of illness." },
+      { q: "What do green anoles eat?", a: "Green anoles are strict insectivores. Feed small live insects — appropriately sized crickets, small dubia roaches, and fruit flies for juveniles and smaller adults. Prey should be no wider than the space between the anole's eyes. Feed daily for juveniles, every other day for adults. Gut-load all insects 24 to 48 hours before offering." },
+      { q: "How big do green anoles get?", a: "Adults reach 5 to 8 inches total length — most of which is the slender, whip-like tail. They are lightweight, delicate animals. Males develop a distinctive red dewlap (throat fan) used in territorial and courtship displays. Two males should never be housed together as they fight aggressively." },
+      { q: "Do green anoles need UVB?", a: "Yes, UVB is essential. A T5 HO 5 to 6% UVB bulb on a 12-hour cycle supports calcium metabolism and vitamin D3 synthesis. Without adequate UVB, green anoles develop calcium deficiency and metabolic bone disease. A proper automatic misting system is equally critical — they drink from water droplets on leaves and rarely from standing water dishes." },
+    ],
   },
   {
     id: "ackie-monitor",
@@ -229,6 +236,13 @@ Parasites — particularly pentastomids (tongue worms) in wild-caught animals �
 Respiratory infections and scale rot can occur if humidity and temperatures are incorrect. Always have a reptile veterinarian with monitor experience identified before acquiring an ackie. These are rewarding but high-maintenance animals that deserve expert veterinary care.`,
       checklist: ["6x3x3 ft+ enclosure", "Deep substrate (12 inch+ sandy soil mix)", "High-wattage basking bulb (120 to 150 degrees F surface)", "Quality thermostat", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Digital thermometer (IR gun recommended)", "Calcium w/D3 + multivitamin", "Large insect variety", "Cork bark and rock structures", "Water dish + humid microhabitat area"],
     },
+    faqs: [
+      { q: "How hot does an ackie monitor's basking spot need to be?", a: "120 to 150 degrees F at the basking surface, measured with an infrared temperature gun. This is the most critical parameter in ackie monitor care and the most commonly failed. Without adequate basking temperatures, ackies cannot fully thermoregulate, digest food, or activate their immune systems — leading to chronic health problems. High-wattage halogen or flood bulbs achieve these temperatures effectively." },
+      { q: "Can ackie monitors be kept in pairs or groups?", a: "Yes — ackies often do well and sometimes prefer living in bonded pairs or trios when raised together from a young age. Cohab success depends on having adequate space (6x3x3 ft minimum for a pair), multiple basking sites, and deep substrate for individual burrowing. Monitor for aggression and be prepared to separate if conflict arises." },
+      { q: "What do ackie monitors eat?", a: "Primarily insects in captivity: large dubia roaches, crickets, superworms, hornworms, and silkworms are the staples. Adults can have occasional pinky or fuzzy mice as a protein supplement and quail or scrambled eggs periodically. Gut-load all insects 24 to 48 hours before feeding. Feed juveniles daily, adults 3 to 5 times per week." },
+      { q: "How big do ackie monitors get?", a: "Adults typically reach 24 to 28 inches total length — significantly smaller than most other monitor species, which is one reason ackies are popular. They are powerfully built for their size, with strong legs, sharp claws, and an active, energetic temperament. Their manageable size combined with their big personality makes them the most popular dwarf monitor in the hobby." },
+      { q: "Are ackie monitors good pets?", a: "Yes, for experienced keepers ready for their specific requirements. Ackies are intelligent, active, and become remarkably tame with patient, consistent handling from a young age — many seek out their keepers and explore hands and arms voluntarily. The key commitments are the extreme basking temperatures (verified with an IR gun), deep burrowing substrate, and a diverse insect-heavy diet." },
+    ],
   },
   {
     id: "savannah-monitor",
@@ -269,6 +283,13 @@ These are powerful animals. Adult savannah monitors can inflict significant inju
         "Reptile vet with monitor lizard experience",
       ],
     },
+    faqs: [
+      { q: "What is the biggest mistake in savannah monitor care?", a: "Feeding primarily or exclusively rodents. A diet of mice and rats causes severe obesity, fatty liver disease, and cardiovascular problems that dramatically shorten lifespan to 5 to 8 years instead of the 15 to 20 years achievable with appropriate care. Wild savannah monitors eat primarily invertebrates. An invertebrate-heavy diet — dubia roaches, superworms, eggs, large insects — is the correct dietary model, with whole prey mammals offered only occasionally." },
+      { q: "How big do savannah monitors get?", a: "Adults typically reach 3 to 5 feet in total length and weigh 6 to 15+ lbs. This is a large, powerful animal requiring enormous housing — 8x4x4 ft at minimum, and many dedicated keepers build custom rooms. Prospective owners should research adult size requirements thoroughly before acquiring a hatchling." },
+      { q: "Do savannah monitors become tame?", a: "Yes, with consistent confident handling from a young age, many savannah monitors become remarkably calm and tolerant. Adult tame monitors can be handled confidently and even enjoy interaction. The key is consistent calm handling that builds trust — never fear or forced interaction. Adults that were handled regularly as juveniles are dramatically different animals from those that were not." },
+      { q: "How hot does a savannah monitor's basking spot need to be?", a: "130 to 150 degrees F at the surface, measured with an infrared temperature gun. Without adequate basking temperatures, savannah monitors cannot properly thermoregulate, digest food, or activate their immune systems. High-wattage halogen or flood bulbs in a quality fixture achieve these temperatures." },
+      { q: "How long do savannah monitors live?", a: "With an invertebrate-based diet, appropriate housing (8x4x4 ft+), correct basking temperatures, and regular veterinary care, savannah monitors can live 15 to 20 years. The species has a reputation for short captive lifespans because most are fed primarily rodents — this is an entirely preventable outcome." },
+    ],
   },
   {
     id: "uromastyx",
@@ -313,6 +334,13 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
         "Reptile vet experienced with uromastyx",
       ],
     },
+    faqs: [
+      { q: "Do uromastyx need a water dish?", a: "No — and providing one is actively discouraged for most setups. Uromastyx are adapted to extremely arid environments and get all necessary hydration from their food. A water dish raises enclosure humidity significantly, which is inappropriate for this desert-adapted species. Remove any water dish from a standard uromastyx setup and rely on fresh vegetables for hydration." },
+      { q: "How hot does the basking spot need to be for uromastyx?", a: "120 to 140 degrees F at the surface, measured with an infrared temperature gun. This is biologically critical — uromastyx cannot digest food, activate immune function, or properly thermoregulate without access to these extreme surface temperatures. High-wattage halogen or flood bulbs on a quality thermostat are the standard approach." },
+      { q: "What do uromastyx eat?", a: "Dark leafy greens (collard greens, mustard greens, dandelion greens, endive, escarole) form the plant base. Uniquely, they are enthusiastic seed-eaters — millet, lentils, split peas, and various legume seeds are a nutritionally important supplement. They are nearly entirely herbivorous with no insects in the diet. Keep humidity very low (20 to 30%) and do not provide a water dish." },
+      { q: "How big do uromastyx get?", a: "10 to 18 inches total length, depending on the species. Ornate uromastyx and Egyptian uromastyx are among the larger commonly kept species. All are stocky, heavyset lizards with thick, spiny tails used for defense. They reach adult size by 3 to 5 years of age." },
+      { q: "How long do uromastyx live?", a: "15 to 20+ years in captivity with appropriate care — primarily the correct extreme basking temperatures (120 to 140 degrees F surface), dry conditions (20 to 30% humidity), a primarily herbivorous diet with seeds, and strong desert UVB. They are hardy animals once their specific needs are met." },
+    ],
   },
   {
     id: "tegu",
@@ -354,5 +382,12 @@ Parasites — particularly internal parasites — are common in tegus, especiall
 These are powerful animals. A tame adult tegu can still cause injury unintentionally — their claws and tail are strong. Approach with confidence, never fear, and never force interactions. A veterinarian with large lizard experience is an essential part of responsible tegu ownership. Annual wellness checks are strongly recommended for all adult tegus.`,
       checklist: ["8x4x4 ft+ custom enclosure or room", "Very hot basking spot (100 to 110 degrees F+)", "Strong desert UVB (T5 HO 12%+)", "4 to 6 inch substrate (soil/sand mix)", "Large water tub for soaking", "Quality thermostat", "Whole prey and varied diet", "Calcium and multivitamin", "Enrichment objects and puzzle feeders", "Brumation space (cool, dark area)"],
     },
+    faqs: [
+      { q: "Are tegus really like dogs?", a: "In many meaningful ways, yes. Well-socialized tegus recognize and respond to their names, come when called, follow their keepers around, seek physical contact, and form genuine bonds that deepen over years. They are widely regarded as the most dog-like reptile accessible to hobbyists. This intelligence also means they require enrichment, space, and interaction to thrive." },
+      { q: "What is brumation and do tegus need it?", a: "Brumation is a natural winter dormancy period lasting 3 to 5 months, typically beginning in autumn. Tegus slow dramatically, stop eating, and become largely inactive. This is normal and essential biology — do not attempt to prevent or interrupt it. Provide a cool (55 to 65 degrees F), dark space for brumation. Forced wakefulness during this period causes significant stress and health problems." },
+      { q: "How big do tegus get?", a: "Argentine black and white tegu males typically reach 3.5 to 4.5 feet, with some exceeding 5 feet. Females are 2.5 to 3.5 feet. They are powerfully muscled animals — an adult male tegu is a substantial animal requiring an 8x4x4 ft minimum enclosure, and many experienced keepers convert entire rooms to accommodate them properly." },
+      { q: "What do tegus eat?", a: "True omnivores with age-dependent ratios. Juveniles eat primarily animal protein: whole prey (rats, quail, chicks), organ meats, raw eggs, and lean ground turkey. As they mature, plant matter becomes increasingly important — adults may be 40 to 60% plant-based during the warmer months. Eggs are an excellent regular protein source at any age. Avoid dog or cat food as a staple." },
+      { q: "How long do tegus live?", a: "15 to 20 years with appropriate care, proper diet, adequate housing, and annual wellness veterinary checks. A tegu is a multi-decade commitment. Their cognitive sophistication and social bonding make them deeply rewarding animals — but only for keepers who can genuinely provide the space, time, and resources their long lives require." },
+    ],
   },
 ];
