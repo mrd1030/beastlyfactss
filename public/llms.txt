@@ -4,12 +4,12 @@
 
 ## About
 
-Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, invertebrates, dogs, and cats. Content ranges from bite-sized fun facts to comprehensive care guides. The site features a personal mascot (a bearded dragon named Dexter) and is run by a single owner-creator.
+Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, invertebrates, fish, dogs, and cats. Content ranges from bite-sized fun facts to comprehensive care guides. The site features a personal mascot (a bearded dragon named Dexter) and is run by a single owner-creator.
 
 ## Main Sections
 
 - [Animal Facts](https://beastlyfacts.com/facts/): Hundreds of curated fun animal facts, filterable by category. Great for trivia and quick learning.
-- [Encyclopedia](https://beastlyfacts.com/encyclopedia/): Animal profiles organized by category (geckos, lizards, snakes, turtles, small mammals, birds, dogs, cats, invertebrates, amphibians).
+- [Encyclopedia](https://beastlyfacts.com/encyclopedia/): Animal profiles organized by category (geckos, lizards, snakes, turtles, small mammals, birds, dogs, cats, invertebrates, amphibians, fish).
 - [Care Guides](https://beastlyfacts.com/encyclopedia/guides/): In-depth husbandry guides for exotic and domestic pets.
 - [Blog / Critter Digest](https://beastlyfacts.com/blog/): Long-form articles, care deep-dives, fun facts posts, and short stories.
 - [Quiz](https://beastlyfacts.com/quiz/): Animal personality quizzes.
@@ -79,6 +79,16 @@ Beastly Facts (beastlyfacts.com) covers reptiles, small mammals, birds, inverteb
 - [Fire Belly Toad](https://beastlyfacts.com/guides/fire-belly-toad/)
 - [Axolotl](https://beastlyfacts.com/guides/axolotl/)
 - [Tiger Salamander](https://beastlyfacts.com/guides/tiger-salamander/)
+
+### Fish
+- [Betta Fish](https://beastlyfacts.com/guides/betta-fish/)
+- [Goldfish](https://beastlyfacts.com/guides/goldfish/)
+- [Koi](https://beastlyfacts.com/guides/koi/)
+- [Guppy](https://beastlyfacts.com/guides/guppy/)
+- [Angelfish](https://beastlyfacts.com/guides/angelfish/)
+- [Corydoras Catfish](https://beastlyfacts.com/guides/corydoras-catfish/)
+- [Neon Tetra](https://beastlyfacts.com/guides/neon-tetra/)
+- [Oscar](https://beastlyfacts.com/guides/oscar/)
 
 ### Dogs
 - [Universal Dog Guide](https://beastlyfacts.com/guides/dog-universal/)

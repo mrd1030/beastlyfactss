@@ -8,6 +8,7 @@ import { invertebrateGuides } from './invertebrates';
 import { amphibianGuides } from './amphibians';
 import { dogGuides } from './dogs';
 import { catGuides } from './cats';
+import { fishGuides } from './fish';
 
 export const allGuides = [
   ...geckoGuides,
@@ -20,4 +21,5 @@ export const allGuides = [
   ...amphibianGuides,
   ...dogGuides,
   ...catGuides,
+  ...fishGuides,
 ];

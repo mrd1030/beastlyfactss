@@ -8,6 +8,7 @@ import { dogEncyclopedia } from './dogs';
 import { catEncyclopedia } from './cats';
 import { invertebrateEncyclopedia } from './invertebrates';
 import { amphibianEncyclopedia } from './amphibians';
+import { fishEncyclopedia } from './fish';
 
 export const encyclopediaAnimals = [
   ...geckoEncyclopedia,
@@ -20,6 +21,7 @@ export const encyclopediaAnimals = [
   ...catEncyclopedia,
   ...invertebrateEncyclopedia,
   ...amphibianEncyclopedia,
+  ...fishEncyclopedia,
 ];
 
 export const encyclopediaCategories = [
@@ -27,6 +29,7 @@ export const encyclopediaCategories = [
   { name: "Birds", emoji: "🐦", slug: "birds" },
   { name: "Cats", emoji: "🐱", slug: "cats" },
   { name: "Dogs", emoji: "🐶", slug: "dogs" },
+  { name: "Fish", emoji: "🐠", slug: "fish" },
   { name: "Geckos", emoji: "🦎", slug: "geckos" },
   { name: "Invertebrates", emoji: "🕷️", slug: "invertebrates" },
   { name: "Lizards", emoji: "🦎", slug: "lizards" },

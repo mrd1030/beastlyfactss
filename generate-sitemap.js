@@ -43,13 +43,13 @@ const DATASET = 'production';
 // Encyclopedia category slugs (mirrors encyclopediaCategories in encyclopedia.js)
 const encyclopediaCategories = [
   'geckos', 'lizards', 'snakes', 'turtles-tortoises',
-  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
 // Guide filter slugs (mirrors guideFilters in Encyclopedia.jsx, excluding 'all')
 const guideFilters = [
   'geckos', 'lizards', 'snakes', 'turtles-tortoises',
-  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
 const staticPages = [
@@ -133,6 +133,14 @@ const staticPages = [
   '/encyclopedia/animal/whites-tree-frog/',
   '/encyclopedia/animal/fire-belly-toad/',
   '/encyclopedia/animal/tiger-salamander/',
+  '/encyclopedia/animal/betta-fish/',
+  '/encyclopedia/animal/goldfish/',
+  '/encyclopedia/animal/koi/',
+  '/encyclopedia/animal/guppy/',
+  '/encyclopedia/animal/angelfish/',
+  '/encyclopedia/animal/corydoras-catfish/',
+  '/encyclopedia/animal/neon-tetra/',
+  '/encyclopedia/animal/oscar/',
 
   // Individual guide detail pages
   '/guides/crested-gecko/',
@@ -199,6 +207,14 @@ const staticPages = [
   '/guides/fire-belly-toad/',
   '/guides/axolotl/',
   '/guides/tiger-salamander/',
+  '/guides/betta-fish/',
+  '/guides/goldfish/',
+  '/guides/koi/',
+  '/guides/guppy/',
+  '/guides/angelfish/',
+  '/guides/corydoras-catfish/',
+  '/guides/neon-tetra/',
+  '/guides/oscar/',
 ];
 
 async function sanityFetch(groqQuery) {

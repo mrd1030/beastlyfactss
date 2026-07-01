@@ -23,6 +23,7 @@ const guideFilters = [
   { label: 'Birds', emoji: '🐦' },
   { label: 'Cats', emoji: '🐱' },
   { label: 'Dogs', emoji: '🐶' },
+  { label: 'Fish', emoji: '🐠' },
   { label: 'Geckos', emoji: '🦎' },
   { label: 'Invertebrates', emoji: '🕷️' },
   { label: 'Lizards', emoji: '🦎' },
@@ -31,7 +32,7 @@ const guideFilters = [
   { label: 'Turtles & Tortoises', emoji: '🐢' },
 ];
 
-const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians']);
+const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians', 'Fish']);
 
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
@@ -46,6 +47,7 @@ const subtypes = {
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
   Invertebrates: ['Tarantula', 'Praying Mantis', 'Giant Millipede', 'Emperor Scorpion', 'Madagascar Hissing Cockroach', 'Stick Insect'],
   Amphibians: ["White's Tree Frog", 'Pacman Frog', 'Fire-Bellied Toad', 'Axolotl', 'Tiger Salamander'],
+  Fish: ['Betta Fish', 'Goldfish', 'Koi', 'Guppy', 'Angelfish', 'Corydoras Catfish', 'Neon Tetra', 'Oscar'],
 };
 
 export default function Encyclopedia() {

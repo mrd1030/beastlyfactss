@@ -24,7 +24,7 @@ const SANITY_DATASET = 'production';
 // Encyclopedia category slugs (mirrors encyclopediaCategories in encyclopedia.js)
 const ENCYCLOPEDIA_CATEGORIES = [
   'geckos', 'lizards', 'snakes', 'turtles-tortoises',
-  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians',
+  'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
 // Reads slug from MDX frontmatter; falls back to filename if not set
@@ -59,6 +59,7 @@ const ENCYCLOPEDIA_ANIMAL_IDS = [
   'domestic-shorthair','maine-coon','siamese','ragdoll','bengal','persian',
   'tarantula','praying-mantis','millipede','hissing-cockroach','stick-insect','emperor-scorpion',
   'pacman-frog','axolotl','whites-tree-frog','fire-belly-toad','tiger-salamander',
+  'betta-fish','goldfish','koi','guppy','angelfish','corydoras-catfish','neon-tetra','oscar',
 ];
 
 // All care guide IDs (mirrors guidesExtended.js + dogCatGuides.js)
@@ -76,6 +77,7 @@ const GUIDE_IDS = [
   'dog-golden-retriever','dog-german-shepherd','dog-french-bulldog','dog-border-collie',
   'dog-siberian-husky','cat-universal','cat-domestic-shorthair','cat-maine-coon',
   'cat-siamese','cat-ragdoll','cat-bengal','cat-persian',
+  'betta-fish','goldfish','koi','guppy','angelfish','corydoras-catfish','neon-tetra','oscar',
 ];
 
 // Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
