@@ -161,8 +161,8 @@ export default function Blog() {
 
   const handleBack = () => {
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${slugify(activeCategory)}`
-      : '/blog';
+      ? `/blog/category/${slugify(activeCategory)}/`
+      : '/blog/';
     const urlParams = new URLSearchParams();
     if (page > 1) urlParams.set('page', page.toString());
     navigate({ pathname: catPath, search: urlParams.toString() });
@@ -180,8 +180,8 @@ export default function Blog() {
   const handlePageChange = (newPage) => {
     setPage(newPage);
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${slugify(activeCategory)}`
-      : '/blog';
+      ? `/blog/category/${slugify(activeCategory)}/`
+      : '/blog/';
     const urlParams = new URLSearchParams();
     if (newPage > 1) urlParams.set('page', newPage.toString());
     navigate({ pathname: catPath, search: urlParams.toString() });
@@ -195,7 +195,7 @@ export default function Blog() {
   };
 
   const handleCategoryChange = (cat) => {
-    const catPath = slugify(cat) !== 'all' ? `/blog/category/${slugify(cat)}` : '/blog';
+    const catPath = slugify(cat) !== 'all' ? `/blog/category/${slugify(cat)}/` : '/blog/';
     navigate(catPath);
 
     setTimeout(() => {

@@ -292,7 +292,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
               key={cat.name}
               onClick={() => {
                 const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-                navigate(`/encyclopedia/category/${urlSlug}`);
+                navigate(`/encyclopedia/category/${urlSlug}/`);
               }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                 activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -341,7 +341,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
               key={f.label}
               onClick={() => {
                 const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-                navigate(f.label === 'All' ? '/encyclopedia/guides' : `/encyclopedia/guides/${slug}`);
+                navigate(f.label === 'All' ? '/encyclopedia/guides/' : `/encyclopedia/guides/${slug}/`);
                 setDogSize('All Sizes'); setActiveSubtype(null);
                 base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } });
               }}

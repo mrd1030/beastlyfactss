@@ -34,31 +34,31 @@ export default function Footer() {
 
           {/* Navigation Links - Cleaned Up */}
           {[
-            { 
-              title: "Explore", 
+            {
+              title: "Explore",
               links: [
-                { to: '/facts', label: 'Fun Facts' },
-                { to: '/quiz', label: 'Personality Quiz' },
-                { to: '/pack', label: 'My Beast Pack' },
-                { to: '/blog', label: 'Critter Digest' },
-              ] 
+                { to: '/facts/', label: 'Fun Facts' },
+                { to: '/quiz/', label: 'Personality Quiz' },
+                { to: '/pack/', label: 'My Beast Pack' },
+                { to: '/blog/', label: 'Critter Digest' },
+              ]
             },
             {
               title: "Encyclopedia",
               links: [
-                { to: '/encyclopedia', label: 'Browse All' },
-                { to: '/guides', label: 'Care Guides' },
-                { to: '/glossary', label: 'Glossary' },
+                { to: '/encyclopedia/', label: 'Browse All' },
+                { to: '/guides/', label: 'Care Guides' },
+                { to: '/glossary/', label: 'Glossary' },
               ]
             },
-            { 
-              title: "Info", 
+            {
+              title: "Info",
               links: [
-                { to: '/about', label: 'About Us' },
-                { to: '/contact', label: 'Contact' },
-                { to: '/terms', label: 'Terms' },
-                { to: '/privacy', label: 'Privacy' },
-              ] 
+                { to: '/about/', label: 'About Us' },
+                { to: '/contact/', label: 'Contact' },
+                { to: '/terms/', label: 'Terms' },
+                { to: '/privacy/', label: 'Privacy' },
+              ]
             }
           ].map((section) => (
             <div key={section.title}>

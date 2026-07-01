@@ -189,7 +189,7 @@ export default function CategoryPage() {
             <span className="text-4xl block mb-3" role="img" aria-label="File cabinet">🗂️</span>
             <p className="font-display font-bold text-foreground">No articles yet</p>
             <p className="text-sm text-muted-foreground font-body mt-1">Check back soon — more content is on the way!</p>
-            <Link to="/blog" className="text-secondary text-sm mt-4 block">← Back to Critter Digest</Link>
+            <Link to="/blog/" className="text-secondary text-sm mt-4 block">← Back to Critter Digest</Link>
           </div>
         ) : (
           <div className="space-y-3">

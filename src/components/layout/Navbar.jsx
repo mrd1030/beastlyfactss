@@ -72,11 +72,11 @@ function ThreadsLogo({ className }) {
 
 const primaryLinks = [
   { to: '/', label: 'Home' },
-  { to: '/encyclopedia', label: 'Encyclopedia' },
-  { to: '/guides', label: 'Guides' },
-  { to: '/facts', label: 'Facts' },
-  { to: '/blog', label: 'Critter Digest' },
-  { to: '/pack', label: 'My Pack' },
+  { to: '/encyclopedia/', label: 'Encyclopedia' },
+  { to: '/guides/', label: 'Guides' },
+  { to: '/facts/', label: 'Facts' },
+  { to: '/blog/', label: 'Critter Digest' },
+  { to: '/pack/', label: 'My Pack' },
 ];
 
 export default function Navbar() {
@@ -203,7 +203,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-0.5">
             {primaryLinks.map(link => {
-              const isActive = link.to === '/blog' ? isDigest : link.to === '/guides' ? isGuidesSection : location.pathname === link.to;
+              const isActive = link.to === '/blog/' ? isDigest : link.to === '/guides/' ? isGuidesSection : location.pathname === link.to;
               return (
                 <Link
                   key={link.to}
@@ -272,9 +272,9 @@ export default function Navbar() {
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
-                  { to: '/search', emoji: '🔎', label: 'Search' },
-                  { to: '/facts', emoji: '⚡', label: 'Animal Facts' },
-                  { to: '/guides', emoji: '📖', label: 'Care Guides' },
+                  { to: '/search/', emoji: '🔎', label: 'Search' },
+                  { to: '/facts/', emoji: '⚡', label: 'Animal Facts' },
+                  { to: '/guides/', emoji: '📖', label: 'Care Guides' },
                 ].map(item => (
                   <Link
                     key={item.to}
@@ -307,9 +307,9 @@ export default function Navbar() {
                       All Articles
                     </Link>
                     {navCategories.map(cat => (
-                      <Link 
-                        key={cat._id} 
-                        to={`/blog/category/${slugify(cat.title)}`}
+                      <Link
+                        key={cat._id}
+                        to={`/blog/category/${slugify(cat.title)}/`}
                         onClick={handleMenuNav} 
                         className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
                       >
@@ -332,11 +332,11 @@ export default function Navbar() {
 
               <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
-                  { to: '/encyclopedia', emoji: '📚', label: 'Encyclopedia' },
-                  { to: '/pack', emoji: '🐾', label: 'My Pack' },
-                  { to: '/about', emoji: '🦁', label: 'About' },
-                  { to: '/donate', emoji: '❤️', label: 'Support Us' },
-                  { to: '/contact', emoji: '💌', label: 'Contact' },
+                  { to: '/encyclopedia/', emoji: '📚', label: 'Encyclopedia' },
+                  { to: '/pack/', emoji: '🐾', label: 'My Pack' },
+                  { to: '/about/', emoji: '🦁', label: 'About' },
+                  { to: '/donate/', emoji: '❤️', label: 'Support Us' },
+                  { to: '/contact/', emoji: '💌', label: 'Contact' },
                 ].map(item => (
                   <Link
                     key={item.to}

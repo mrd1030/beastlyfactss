@@ -220,7 +220,7 @@ export default function EncyclopediaAnimal() {
               </p>
               <div className="space-y-2">
                 <Link
-                  to={`/encyclopedia/category/${animal.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`}
+                  to={`/encyclopedia/category/${animal.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/`}
                   className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <BookOpen className="w-4 h-4 flex-shrink-0" />
