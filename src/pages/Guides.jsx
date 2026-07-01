@@ -13,16 +13,16 @@ import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
+  { label: 'Amphibians', emoji: '🐸' },
+  { label: 'Birds', emoji: '🐦' },
+  { label: 'Cats', emoji: '🐱' },
+  { label: 'Dogs', emoji: '🐶' },
   { label: 'Geckos', emoji: '🦎' },
+  { label: 'Invertebrates', emoji: '🕷️' },
   { label: 'Lizards', emoji: '🦎' },
+  { label: 'Small Mammals', emoji: '🦔' },
   { label: 'Snakes', emoji: '🐍' },
   { label: 'Turtles & Tortoises', emoji: '🐢' },
-  { label: 'Small Mammals', emoji: '🦔' },
-  { label: 'Birds', emoji: '🐦' },
-  { label: 'Dogs', emoji: '🐶' },
-  { label: 'Cats', emoji: '🐱' },
-  { label: 'Invertebrates', emoji: '🕷️' },
-  { label: 'Amphibians', emoji: '🐸' },
 ];
 
 const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians']);

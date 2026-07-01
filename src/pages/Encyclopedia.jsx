@@ -19,16 +19,16 @@ const TABS = [
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
+  { label: 'Amphibians', emoji: '🐸' },
+  { label: 'Birds', emoji: '🐦' },
+  { label: 'Cats', emoji: '🐱' },
+  { label: 'Dogs', emoji: '🐶' },
   { label: 'Geckos', emoji: '🦎' },
+  { label: 'Invertebrates', emoji: '🕷️' },
   { label: 'Lizards', emoji: '🦎' },
+  { label: 'Small Mammals', emoji: '🦔' },
   { label: 'Snakes', emoji: '🐍' },
   { label: 'Turtles & Tortoises', emoji: '🐢' },
-  { label: 'Small Mammals', emoji: '🦔' },
-  { label: 'Birds', emoji: '🐦' },
-  { label: 'Dogs', emoji: '🐶' },
-  { label: 'Cats', emoji: '🐱' },
-  { label: 'Invertebrates', emoji: '🕷️' },
-  { label: 'Amphibians', emoji: '🐸' },
 ];
 
 const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians']);
@@ -195,6 +195,9 @@ export default function Encyclopedia() {
                 <Info className="w-5 h-5 sm:w-6 sm:h-6" />
               </button>
             </div>
+            <p className="text-sm text-muted-foreground font-body mt-1">
+              Deep-dive profiles and care guides for reptiles, birds, mammals, and more.
+            </p>
           </motion.div>
           <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => (
