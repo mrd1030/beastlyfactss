@@ -28,7 +28,7 @@ function normalizeMdxPost(filePath, module) {
     category: frontmatter.category || 'General',
     allCategories: frontmatter.category ? [frontmatter.category] : [],
     tags: frontmatter.tags || [],
-    readingTime: frontmatter.readingTime || frontmatter.readTime || null,
+    readTime: frontmatter.readingTime || frontmatter.readTime || null,
     difficulty: frontmatter.difficulty || null,
     
     // Images
@@ -43,6 +43,7 @@ function normalizeMdxPost(filePath, module) {
     emoji: frontmatter.emoji || null,
     lastReviewed: frontmatter.lastReviewed || null,
     canonicalUrl: frontmatter.canonicalUrl || null,
+    faqs: frontmatter.faqs || [],
   };
 }
 

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ChevronLeft, ChevronRight, Clock } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight, ChevronDown, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { client } from '@/lib/sanity';
 import { urlFor } from '@/lib/sanityImage';
@@ -390,6 +390,7 @@ function AuthorBio() {
 }
 
 function PostView({ post, onBack, allPosts, onSelectPost }) {
+  const [openFaq, setOpenFaq] = useState(null);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   const postTitle = `${post.title} | Beastly Facts`;
@@ -424,6 +425,16 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
     ],
   };
 
+  const faqSchema = post.faqs?.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": post.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.a },
+    })),
+  } : null;
+
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="min-h-screen">
       <Helmet>
@@ -446,6 +457,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
       </Helmet>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -477,16 +489,25 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             </p>
 
             {/* Featured Image using SanityImage */}
-            {post.mainImage && (
+            {post.mainImage ? (
               <div className="mb-10">
-                <SanityImage 
-                  image={post.mainImage} 
+                <SanityImage
+                  image={post.mainImage}
                   alt={post.title}
                   width={1200}
                   className="w-full rounded-2xl shadow-lg"
                 />
               </div>
-            )}
+            ) : post.image ? (
+              <div className="mb-10">
+                <img
+                  src={post.image}
+                  alt={post.imageAlt || post.title}
+                  className="w-full rounded-2xl shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+            ) : null}
 
             <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
@@ -497,6 +518,32 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
             </div>
+
+            {post.faqs?.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5 mt-8">
+                <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                  ❓ Frequently Asked Questions
+                </h2>
+                <div className="space-y-1">
+                  {post.faqs.map((faq, i) => (
+                    <div key={i} className="border border-border/60 rounded-xl overflow-hidden">
+                      <button
+                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                        className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors"
+                      >
+                        <span className="font-display font-semibold text-sm text-foreground">{faq.q}</span>
+                        <ChevronDown className={`w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`} />
+                      </button>
+                      {openFaq === i && (
+                        <div className="px-4 pb-3 text-sm text-muted-foreground font-body leading-relaxed border-t border-border/40">
+                          <p className="pt-3">{faq.a}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             <AuthorBio />
 
