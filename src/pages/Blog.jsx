@@ -23,7 +23,7 @@ import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 const POSTS_PER_PAGE = 10;
 
 const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
-  _id, title, slug, excerpt, mainImage, publishedAt, readTime, animalType, body,
+  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, animalType, body,
   "category": categories[0]->title,
   "categorySlug": categories[0]->slug.current,
   "allCategories": categories[]->title,
@@ -379,10 +379,12 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const [openFaq, setOpenFaq] = useState(null);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
-  const postTitle = `${post.title} | Beastly Facts`;
-  const postDescription = post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
-  const ogImage = post.mainImage
-    ? urlFor(post.mainImage).width(1200).height(630).fit('crop').url()
+  // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
+  const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
+  const postDescription = post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
+  const ogImageSource = post.seoImage || post.mainImage;
+  const ogImage = ogImageSource
+    ? urlFor(ogImageSource).width(1200).height(630).fit('crop').url()
     : post.image
       ? `https://beastlyfacts.com${post.image}`
       : 'https://beastlyfacts.com/assets/hero-1200.jpg';
@@ -391,7 +393,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
-    "description": post.excerpt || '',
+    "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
     "datePublished": post.publishedAt || '',
@@ -429,7 +431,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <link rel="canonical" href={canonicalUrl} />
         {/* Individual blog post detail pages are always indexable; only the listing view uses dynamic noindex logic. */}
         <meta name="robots" content="index,follow" />
-        <meta property="og:title" content={post.title} />
+        <meta property="og:title" content={post.seoTitle || post.title} />
         <meta property="og:description" content={postDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
@@ -438,7 +440,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         {post.publishedAt && <meta property="article:published_time" content={post.publishedAt} />}
         {post.category && <meta property="article:section" content={post.category} />}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:title" content={post.seoTitle || post.title} />
         <meta name="twitter:description" content={postDescription} />
         <meta name="twitter:image" content={ogImage} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
