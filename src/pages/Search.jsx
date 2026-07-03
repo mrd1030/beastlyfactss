@@ -5,15 +5,11 @@ import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { Search as SearchIcon, X } from 'lucide-react';
 import { client } from '@/lib/sanity';
+import { fetchCategories } from '@/lib/sanityCategories';
 import groq from 'groq';
 import { CATEGORIES } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { base44 } from '@/api/base44Client';
-
-const SANITY_CATEGORIES_QUERY = groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
-  _id, title, "slug": slug.current,
-  "count": count(*[_type == "post" && references(^._id)])
-}`;
 
 const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
   title match $q ||
@@ -49,7 +45,7 @@ export default function Search() {
 
   // Load Sanity categories on mount
   useEffect(() => {
-    client.fetch(SANITY_CATEGORIES_QUERY).then(cats => setSanityCategories(cats)).catch(() => {});
+    fetchCategories().then(cats => setSanityCategories(cats.filter(c => c.count > 0))).catch(() => {});
   }, []);
 
   // Run on mount if ?q= param present

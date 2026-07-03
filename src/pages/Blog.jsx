@@ -3,9 +3,10 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ChevronLeft, ChevronRight, ChevronDown, Clock } from 'lucide-react';
+import { ArrowLeft, ChevronDown, Clock } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { client } from '@/lib/sanity';
+import { fetchCategories } from '@/lib/sanityCategories';
 import { urlFor } from '@/lib/sanityImage';
 import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
@@ -29,12 +30,6 @@ const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order
   "allCategorySlugs": categories[]->slug.current
 }`;
 
-const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
-  _id, title, "slug": slug.current,
-  "count": count(*[_type == "post" && references(^._id)])
-}`;
-
-
 export default function Blog() {
   const [sanityPosts, setSanityPosts] = useState([]);
   const [sanityCategories, setSanityCategories] = useState([]);
@@ -53,7 +48,7 @@ export default function Blog() {
     Promise.race([
       Promise.all([
         client.fetch(ALL_POSTS_QUERY),
-        client.fetch(CATEGORIES_QUERY),
+        fetchCategories(),
       ]),
       timeout,
     ]).then(([posts, cats]) => {

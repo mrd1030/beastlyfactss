@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from 'react';
+import { MotionConfig } from 'framer-motion';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider } from '@tanstack/react-query';
@@ -126,18 +127,21 @@ function App() {
     <AuthProvider>
       <FavoritesProvider>
         <QueryClientProvider client={queryClientInstance}>
-          <Router>
-            {/* Inject SEO Data */}
-            <Helmet>
-              <script type="application/ld+json">
-                {JSON.stringify(structuredData)}
-              </script>
-            </Helmet>
-            
-            <AuthenticatedApp />
-            <ScrollToTop />
-          </Router>
-          <Toaster />
+          {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
+          <MotionConfig reducedMotion="user">
+            <Router>
+              {/* Inject SEO Data */}
+              <Helmet>
+                <script type="application/ld+json">
+                  {JSON.stringify(structuredData)}
+                </script>
+              </Helmet>
+
+              <AuthenticatedApp />
+              <ScrollToTop />
+            </Router>
+            <Toaster />
+          </MotionConfig>
         </QueryClientProvider>
       </FavoritesProvider>
     </AuthProvider>

@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { client } from '@/lib/sanity';
+import { fetchCategories } from '@/lib/sanityCategories';
 import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
@@ -17,11 +18,6 @@ const POSTS_QUERY = groq`*[_type == "post" && defined(slug.current) && $slug in 
   "categorySlug": categories[0]->slug.current,
   "allCategories": categories[]->title,
   "allCategorySlugs": categories[]->slug.current
-}`;
-
-const ALL_CATS_QUERY = groq`*[_type == "category"] | order(title asc) {
-  _id, title, "slug": slug.current,
-  "count": count(*[_type == "post" && references(^._id)])
 }`;
 
 export default function CategoryPage() {
@@ -45,7 +41,7 @@ export default function CategoryPage() {
       Promise.all([
         client.fetch(CATEGORY_QUERY, { slug }),
         client.fetch(POSTS_QUERY, { slug }),
-        client.fetch(ALL_CATS_QUERY),
+        fetchCategories(),
       ]),
       timeout,
     ]).then(([cat, postsData, cats]) => {

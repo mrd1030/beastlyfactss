@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -21,6 +21,8 @@ export default function GuideDetail() {
   const encAnimal = encyclopediaAnimals.find(a => a.guideId === id);
   const [isLegendOpen, setIsLegendOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
+  const legendTriggerRef = useRef(null);
+  const legendModalRef = useRef(null);
 
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
@@ -29,20 +31,39 @@ export default function GuideDetail() {
     return gName.includes(fAnimal) || fAnimal.split(' ').some(w => w.length > 3 && gWords.includes(w));
   }).slice(0, 3) : [];
 
-  // Keyboard listener to close popup modal on "Escape" keypress
+  // Modal keyboard handling: Escape closes, Tab is trapped inside, and focus
+  // returns to the trigger button on close.
   useEffect(() => {
+    if (!isLegendOpen) return;
+
+    const modal = legendModalRef.current;
+    const focusables = modal
+      ? modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+      : [];
+    if (focusables.length) focusables[0].focus();
+
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
         setIsLegendOpen(false);
+        return;
+      }
+      if (e.key === 'Tab' && focusables.length) {
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     };
 
-    if (isLegendOpen) {
-      window.addEventListener('keydown', handleKeyDown);
-    }
-
+    window.addEventListener('keydown', handleKeyDown);
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
+      legendTriggerRef.current?.focus();
     };
   }, [isLegendOpen]);
 
@@ -135,6 +156,7 @@ export default function GuideDetail() {
     `;
 
     const w = window.open('', '_blank');
+    if (!w) return; // popup blocked
     w.document.write(printHTML);
     w.document.close();
     w.print();
@@ -238,6 +260,7 @@ export default function GuideDetail() {
                 <p className="text-sm text-muted-foreground font-body mt-0.5">{guide.petType}</p>
                 <div className="flex items-center gap-2 mt-1.5">
                   <button
+                    ref={legendTriggerRef}
                     onClick={() => setIsLegendOpen(true)}
                     className={`text-xs font-display font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
                   >
@@ -429,8 +452,12 @@ export default function GuideDetail() {
           onClick={() => setIsLegendOpen(false)}
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in"
         >
-          <div 
-            onClick={(e) => e.stopPropagation()} 
+          <div
+            ref={legendModalRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Care difficulty legend"
+            onClick={(e) => e.stopPropagation()}
             className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative"
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>

@@ -3,8 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
-import { client } from '@/lib/sanity';
-import groq from 'groq';
+import { fetchCategories } from '@/lib/sanityCategories';
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
@@ -93,9 +92,7 @@ export default function Navbar() {
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    client.fetch(groq`*[_type == "category" && count(*[_type == "post" && references(^._id)]) > 0] | order(title asc) {
-      _id, title, "slug": slug.current
-    }`).then(cats => setNavCategories(cats)).catch(() => {});
+    fetchCategories().then(cats => setNavCategories(cats.filter(c => c.count > 0))).catch(() => {});
   }, []);
 
   useEffect(() => { recordVisit(); }, []);
