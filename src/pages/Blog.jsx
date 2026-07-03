@@ -155,8 +155,9 @@ export default function Blog() {
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 
   const handleBack = () => {
+    // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${slugify(activeCategory)}/`
+      ? `/blog/category/${catSlug || slugify(activeCategory)}/`
       : '/blog/';
     const urlParams = new URLSearchParams();
     if (page > 1) urlParams.set('page', page.toString());
@@ -175,7 +176,7 @@ export default function Blog() {
   const handlePageChange = (newPage) => {
     setPage(newPage);
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
-      ? `/blog/category/${slugify(activeCategory)}/`
+      ? `/blog/category/${catSlug || slugify(activeCategory)}/`
       : '/blog/';
     const urlParams = new URLSearchParams();
     if (newPage > 1) urlParams.set('page', newPage.toString());
@@ -264,7 +265,7 @@ export default function Blog() {
             {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
               <Link
                 key={cat._id}
-                to={`/blog/category/${slugify(cat.title)}/`}
+                to={`/blog/category/${cat.slug}/`}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                   slugify(activeCategory) === slugify(cat.title) ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
@@ -323,7 +324,7 @@ export default function Blog() {
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
-                    <Link key={cat._id} to={`/blog/category/${slugify(cat.title)}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
+                    <Link key={cat._id} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
                     </Link>

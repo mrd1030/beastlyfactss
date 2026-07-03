@@ -4,11 +4,11 @@ import { Home, Layers, BookOpen, Compass, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const tabs = [
-  { to: '/',            label: 'Home',    icon: Home },
-  { to: '/facts',       label: 'Facts',   icon: Compass },
-  { to: '/encyclopedia',label: 'Browse',  icon: Layers },
-  { to: '/blog',        label: 'Critter Digest',  icon: BookOpen },
-  { to: '/pack',        label: 'My Pack', icon: Heart },
+  { to: '/',             label: 'Home',    icon: Home },
+  { to: '/facts/',       label: 'Facts',   icon: Compass },
+  { to: '/encyclopedia/',label: 'Browse',  icon: Layers },
+  { to: '/blog/',        label: 'Critter Digest',  icon: BookOpen },
+  { to: '/pack/',        label: 'My Pack', icon: Heart },
 ];
 
 export default function BottomTabs() {
@@ -23,8 +23,10 @@ export default function BottomTabs() {
     >
       <div className="flex items-stretch h-14">
         {tabs.map(({ to, label, icon: Icon }) => {
-          // Mark active: exact for home, startsWith for others
-          const active = to === '/' ? pathname === '/' : pathname.startsWith(to);
+          // Mark active: exact for home; for others match the section with or
+          // without the trailing slash so /facts and /facts/ both light up.
+          const base = to.replace(/\/$/, '');
+          const active = to === '/' ? pathname === '/' : (pathname === base || pathname.startsWith(`${base}/`));
           return (
             <Link
               key={to}

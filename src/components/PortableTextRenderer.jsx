@@ -51,6 +51,11 @@ const components = {
             if (!value) return null;
 
             const { heading, sources, showMoreSection, moreText, moreUrl } = value;
+            // Older posts stored the default "more" link without a trailing
+            // slash; normalize internal URLs so they don't hit a 308 redirect.
+            const normalizedMoreUrl = moreUrl && /^https:\/\/beastlyfacts\.com\/[^?#]*[^/?#]$/.test(moreUrl)
+              ? `${moreUrl}/`
+              : moreUrl;
 
             return (
               <div className="my-10 border border-border rounded-2xl p-6 bg-card shadow-sm font-body">
@@ -103,7 +108,7 @@ const components = {
                 {showMoreSection && moreUrl && (
                   <div className="mt-6 pt-4 border-t border-border text-sm">
                     <a
-                      href={moreUrl}
+                      href={normalizedMoreUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-secondary font-display font-semibold hover:underline inline-flex items-center gap-1"

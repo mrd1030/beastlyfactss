@@ -70,7 +70,7 @@ export default function FactModal({ fact, onClose }) {
 
   // Reusable share handler matching your FactCard behavior
   const handleShare = () => {
-    const factsPageUrl = window.location.origin + '/facts';
+    const factsPageUrl = window.location.origin + '/facts/';
     
     if (navigator.share) {
       navigator.share({ 

@@ -12,7 +12,7 @@ export default function CompactPostCard({ post, onClick }) {
 
   return (
     <a
-      href={`/blog/${slug}`}
+      href={`/blog/${slug}/`}
       onClick={e => { e.preventDefault(); onClick?.(e); }}
       className="flex items-start gap-3 bg-card border border-border rounded-xl p-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
     >

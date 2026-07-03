@@ -113,7 +113,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
             return (
               <a
                 key={post._id || post.id}
-                href={`/blog/${slug}`}
+                href={`/blog/${slug}/`}
                 onClick={e => { e.preventDefault(); onSelectPost(post); }}
                 className="w-full text-left group block"
               >

@@ -57,6 +57,7 @@ export default function Footer() {
               title: "Info",
               links: [
                 { to: '/about/', label: 'About Us' },
+                { to: '/blog/welcome-to-beastlyfacts/', label: 'Why We\'re Here' },
                 { to: '/contact/', label: 'Contact' },
                 { to: '/terms/', label: 'Terms' },
                 { to: '/privacy/', label: 'Privacy' },

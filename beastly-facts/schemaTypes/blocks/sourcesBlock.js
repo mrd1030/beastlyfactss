@@ -32,7 +32,7 @@ export default {
       name: 'moreUrl',
       title: 'Link URL',
       type: 'url',
-      initialValue: 'https://beastlyfacts.com/blog',
+      initialValue: 'https://beastlyfacts.com/blog/',
       hidden: ({ parent }) => !parent?.showMoreSection,
     },
   ],

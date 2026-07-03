@@ -13,7 +13,7 @@ export default function FactCard({ fact, index = 0, onOpen }) {
 
   const handleShare = (e) => {
     e.stopPropagation();
-    const factsPageUrl = window.location.origin + '/facts';
+    const factsPageUrl = window.location.origin + '/facts/';
     
     if (navigator.share) {
       navigator.share({ 
