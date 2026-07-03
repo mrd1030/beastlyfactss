@@ -112,10 +112,10 @@ export default function About() {
           <Link to="/facts/" className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:opacity-90 transition-opacity">
             🐾 Explore Facts
           </Link>
-          <Link to="/encyclopedia/guides/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
+          <Link to="/guides/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
             📖 Care Guides
           </Link>
-          <Link to="/quiz/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
+          <Link to="/quiz/personality/" className="bg-card border border-border text-foreground px-5 py-2.5 rounded-full font-display font-bold text-sm hover:bg-muted transition-colors">
             🧠 Take the Quiz
           </Link>
         </motion.div>

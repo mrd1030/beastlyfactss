@@ -99,7 +99,7 @@ export default function HeroSection() {
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </Link>
-              <Link to="/quiz/">
+              <Link to="/quiz/personality/">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}

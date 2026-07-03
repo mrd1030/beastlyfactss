@@ -317,7 +317,7 @@ export default function Navbar() {
                 )}
 
                 <Link
-                  to="/quiz/"
+                  to="/quiz/personality/"
                   onClick={handleMenuNav}
                   className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-body font-semibold transition-all ${
                     location.pathname === '/quiz' ? 'bg-primary text-primary-foreground' : 'text-foreground hover:bg-muted'
