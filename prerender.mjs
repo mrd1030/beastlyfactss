@@ -137,26 +137,28 @@ async function renderRoute(page, route) {
   const url = `${BASE_URL}${route}`;
   await page.goto(url, { waitUntil: 'networkidle0', timeout: 30000 });
 
-  // For lazy-loaded routes, networkidle0 fires after the JS chunk downloads
-  // but React may not have re-rendered yet, so react-helmet-async hasn't
-  // updated <head>. Wait for the canonical to reflect the current route slug
-  // before capturing — covers blog posts, guide pages, and any other lazy route.
-  const slugMatch = route.match(/\/([^/]+)$/);
-  const routeSlug = slugMatch ? slugMatch[1] : null;
-  if (routeSlug && route !== '/') {
-    try {
-      await page.waitForFunction(
-        (s) => {
-          const canonical = document.querySelector('link[rel="canonical"]');
-          return canonical && canonical.getAttribute('href').includes(s);
-        },
-        { timeout: 8000 },
-        routeSlug
+  // networkidle0 fires when the JS chunk downloads, but react-helmet-async
+  // may not have applied this route's <head> yet. Don't capture until the
+  // canonical equals this route's production URL and a meta description is
+  // present (noindex pages are exempt — they opt out of SEO tags). Every
+  // route including '/' must pass. A timeout is a hard failure: capturing
+  // early ships a generic <head> to production, which is worse than a
+  // failed build. Timeouts are retried by renderWorker.
+  const expectedCanonical = `https://beastlyfacts.com${route === '/' ? '/' : `${route}/`}`;
+  await page.waitForFunction(
+    (expected) => {
+      const robots = document.querySelector('meta[name="robots"]');
+      if (robots && /noindex/i.test(robots.getAttribute('content') || '')) return true;
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const description = document.querySelector('meta[name="description"]');
+      return Boolean(
+        canonical && canonical.getAttribute('href') === expected &&
+        description && description.getAttribute('content')
       );
-    } catch {
-      // Canonical didn't update in time (e.g. category pages with no slug in canonical); fall through
-    }
-  }
+    },
+    { timeout: 30000 },
+    expectedCanonical
+  );
 
   return page.content();
 }
@@ -171,32 +173,44 @@ async function saveHtml(route, html) {
   await writeFile(filePath, html, 'utf-8');
 }
 
-const CONCURRENCY = 8; // render N routes at a time
+// 4 tabs, not 8: each tab parses the full JS bundle, and heavy pages
+// (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency —
+// their <head> never applies within the wait window and the build fails.
+const CONCURRENCY = 4;
+const MAX_ATTEMPTS = 3; // retries per route before failing the build
 
 async function renderWorker(browser, routes, results) {
   for (const route of routes) {
-    const page = await browser.newPage();
-    await page.setRequestInterception(true);
-    page.on('request', req => {
-      const u = req.url();
-      if (u.includes('googletagmanager') || u.includes('google-analytics') ||
-          u.includes('pagead') || u.includes('fundingchoices') ||
-          u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
-        req.abort();
-      } else {
-        req.continue();
+    let lastErr = null;
+    let done = false;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS && !done; attempt++) {
+      const page = await browser.newPage();
+      await page.setRequestInterception(true);
+      page.on('request', req => {
+        const u = req.url();
+        if (u.includes('googletagmanager') || u.includes('google-analytics') ||
+            u.includes('pagead') || u.includes('fundingchoices') ||
+            u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
+          req.abort();
+        } else {
+          req.continue();
+        }
+      });
+      try {
+        const html = await renderRoute(page, route);
+        await saveHtml(route, html);
+        console.log(`  ✓ ${route}${attempt > 1 ? ` (attempt ${attempt})` : ''}`);
+        results.passed++;
+        done = true;
+      } catch (err) {
+        lastErr = err;
+      } finally {
+        await page.close();
       }
-    });
-    try {
-      const html = await renderRoute(page, route);
-      await saveHtml(route, html);
-      console.log(`  ✓ ${route}`);
-      results.passed++;
-    } catch (err) {
-      console.warn(`  ✗ ${route} — ${err.message}`);
+    }
+    if (!done) {
+      console.warn(`  ✗ ${route} — ${lastErr.message}`);
       results.failed++;
-    } finally {
-      await page.close();
     }
   }
 }

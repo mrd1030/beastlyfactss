@@ -19,7 +19,7 @@ function parseFrontmatter(content) {
   return result;
 }
 
-function getMdxPosts(today) {
+function getMdxPosts() {
   const contentDirs = ['guides', 'blog', 'fun-facts', 'short-story'];
   const posts = [];
   for (const dir of contentDirs) {
@@ -29,7 +29,9 @@ function getMdxPosts(today) {
       const content = fs.readFileSync(path.join(dirPath, file), 'utf8');
       const fm = parseFrontmatter(content);
       const slug = fm.slug || file.replace('.mdx', '');
-      const lastmod = fm.lastUpdated || fm.date || today;
+      // Only emit lastmod when the frontmatter carries a real date —
+      // a fabricated build-date lastmod is worse than none at all.
+      const lastmod = fm.lastUpdated || fm.date || null;
       posts.push({ path: `/blog/${slug}/`, lastmod, changefreq: 'weekly', priority: '0.7' });
     }
   }
@@ -235,8 +237,6 @@ async function sanityFetch(groqQuery) {
 }
 
 async function generateSitemap() {
-  const today = new Date().toISOString().split('T')[0];
-
   console.log('Fetching posts and categories from Sanity...');
   const [posts, categories] = await Promise.all([
     sanityFetch('*[_type == "post" && defined(slug.current)]{ "slug": slug.current, _updatedAt }'),
@@ -250,21 +250,22 @@ async function generateSitemap() {
     priority: '0.7',
   }));
 
+  // Category and static pages carry no lastmod: stamping them with the build
+  // date on every deploy makes the signal meaningless, and omitting lastmod
+  // is valid per the sitemap spec.
   const blogCategoryPages = categories.map(c => ({
     path: `/blog/category/${c.slug}/`,
-    lastmod: today,
     changefreq: 'weekly',
     priority: '0.7',
   }));
 
   const categoryPages = categories.map(c => ({
     path: `/category/${c.slug}/`,
-    lastmod: today,
     changefreq: 'weekly',
     priority: '0.7',
   }));
 
-  const mdxPostPages = getMdxPosts(today);
+  const mdxPostPages = getMdxPosts();
 
   // Dedup static pages
   const uniqueStatic = [...new Set(staticPages)];
@@ -283,7 +284,6 @@ async function generateSitemap() {
     const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${path}</loc>\n`;
-    xml += `    <lastmod>${today}</lastmod>\n`;
     xml += `    <changefreq>${changefreq}</changefreq>\n`;
     xml += `    <priority>${priority}</priority>\n`;
     xml += `  </url>\n`;
@@ -292,7 +292,7 @@ async function generateSitemap() {
   [...blogCategoryPages, ...categoryPages, ...blogPostPages, ...mdxPostPages].forEach(page => {
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
-    xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
+    if (page.lastmod) xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
     xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
     xml += `    <priority>${page.priority}</priority>\n`;
     xml += `  </url>\n`;
