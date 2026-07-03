@@ -281,28 +281,29 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           />
         </div>
         <div className="flex flex-wrap gap-2 mb-6">
-          <button
-            onClick={() => { setActiveCategory('All'); navigate('/encyclopedia/'); }}
+          <Link
+            to="/encyclopedia/"
+            onClick={() => setActiveCategory('All')}
             className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
               activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
             }`}
           >
             ✨ All
-          </button>
-          {encyclopediaCategories.map(cat => (
-            <button
-              key={cat.name}
-              onClick={() => {
-                const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-                navigate(`/encyclopedia/category/${urlSlug}/`);
-              }}
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              {cat.emoji} {cat.name}
-            </button>
-          ))}
+          </Link>
+          {encyclopediaCategories.map(cat => {
+            const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+            return (
+              <Link
+                key={cat.name}
+                to={`/encyclopedia/category/${urlSlug}/`}
+                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+                  activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {cat.emoji} {cat.name}
+              </Link>
+            );
+          })}
         </div>
       </div>
 

@@ -38,7 +38,8 @@ export default function Footer() {
               title: "Explore",
               links: [
                 { to: '/facts/', label: 'Fun Facts' },
-                { to: '/quiz/', label: 'Personality Quiz' },
+                { to: '/animal-facts/', label: 'Facts Hub' },
+                { to: '/quiz/personality/', label: 'Personality Quiz' },
                 { to: '/pack/', label: 'My Beast Pack' },
                 { to: '/blog/', label: 'Critter Digest' },
               ]
@@ -48,6 +49,7 @@ export default function Footer() {
               links: [
                 { to: '/encyclopedia/', label: 'Browse All' },
                 { to: '/guides/', label: 'Care Guides' },
+                { to: '/categories/', label: 'All Categories' },
                 { to: '/glossary/', label: 'Glossary' },
               ]
             },

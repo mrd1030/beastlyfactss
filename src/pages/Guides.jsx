@@ -160,25 +160,27 @@ export default function Guides() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
         <div className="flex flex-wrap gap-2 mb-3">
-          {guideFilters.map(f => (
-            <button
-              key={f.label}
-              onClick={() => {
-                const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-                navigate(f.label === 'All' ? '/guides/' : `/guides/category/${slug}/`);
-                setDogSize('All Sizes');
-                setActiveSubtype(null);
-                base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } });
-              }}
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
-                activeFilter === f.label
-                  ? 'bg-accent text-accent-foreground'
-                  : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              <span>{f.emoji}</span> {f.label}
-            </button>
-          ))}
+          {guideFilters.map(f => {
+            const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+            return (
+              <Link
+                key={f.label}
+                to={f.label === 'All' ? '/guides/' : `/guides/category/${slug}/`}
+                onClick={() => {
+                  setDogSize('All Sizes');
+                  setActiveSubtype(null);
+                  base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } });
+                }}
+                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+                  activeFilter === f.label
+                    ? 'bg-accent text-accent-foreground'
+                    : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                <span>{f.emoji}</span> {f.label}
+              </Link>
+            );
+          })}
         </div>
 
         {activeFilter === 'Dogs' && (

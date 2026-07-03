@@ -6,6 +6,7 @@ import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
+import { truncateDescription } from '@/lib/utils/truncate';
 
 function BioField({ label, value }) {
   return (
@@ -35,6 +36,10 @@ export default function EncyclopediaAnimal() {
   if (!animal) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+        <Helmet>
+          <title>Animal Not Found | Beastly Facts</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Animal not found</h2>
@@ -53,8 +58,8 @@ export default function EncyclopediaAnimal() {
     ? `https://beastlyfacts.com${guide.image}`
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
   const pageTitle = `${animal.name} — Encyclopedia | Beastly Facts`;
-  const pageDescription = bio.overview
-    || `Learn about the ${animal.name} (${animal.scientific}) — natural habitat, wild diet, lifespan, size, and conservation status.`;
+  const pageDescription = truncateDescription(bio.overview
+    || `Learn about the ${animal.name} (${animal.scientific}) — natural habitat, wild diet, lifespan, size, and conservation status.`);
   const canonicalUrl = `https://beastlyfacts.com/encyclopedia/animal/${animal.id}/`;
 
   return (

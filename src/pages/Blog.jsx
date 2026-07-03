@@ -189,15 +189,6 @@ export default function Blog() {
     }, 50);
   };
 
-  const handleCategoryChange = (cat) => {
-    const catPath = slugify(cat) !== 'all' ? `/blog/category/${slugify(cat)}/` : '/blog/';
-    navigate(catPath);
-
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 80);
-  };
-
   if (selectedPost) {
     return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
   }
@@ -262,35 +253,35 @@ export default function Blog() {
           </motion.div>
 
           <div className="flex flex-wrap gap-2 mt-5">
-            <button
-              onClick={() => handleCategoryChange('All')}
+            <Link
+              to="/blog/"
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                 slugify(activeCategory) === 'all' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
               All
-            </button>
+            </Link>
             {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
-              <button
+              <Link
                 key={cat._id}
-                onClick={() => handleCategoryChange(cat.title)}
+                to={`/blog/category/${slugify(cat.title)}/`}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                   slugify(activeCategory) === slugify(cat.title) ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {cat.title} <span className="opacity-60">({cat.count})</span>
-              </button>
+              </Link>
             ))}
             {mdxCategories.map(cat => (
-              <button
+              <Link
                 key={cat.slug}
-                onClick={() => handleCategoryChange(cat.title)}
+                to={`/blog/category/${cat.slug}/`}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                   slugify(activeCategory) === cat.slug ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {cat.title} <span className="opacity-60">({cat.count})</span>
-              </button>
+              </Link>
             ))}
           </div>
         </div>
@@ -332,16 +323,16 @@ export default function Blog() {
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
-                    <button key={cat._id} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
+                    <Link key={cat._id} to={`/blog/category/${slugify(cat.title)}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
-                    </button>
+                    </Link>
                   ))}
                   {mdxCategories.map(cat => (
-                    <button key={cat.slug} onClick={() => handleCategoryChange(cat.title)} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
+                    <Link key={cat.slug} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
-                    </button>
+                    </Link>
                   ))}
                 </div>
               </div>

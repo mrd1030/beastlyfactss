@@ -79,6 +79,10 @@ export default function CategoryPage() {
   if (!loading && notFound) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+        <Helmet>
+          <title>Category Not Found | Beastly Facts</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <div className="text-center">
           <span className="text-4xl mb-3 block">🔍</span>
           <h1 className="font-display font-bold text-xl text-foreground">Category not found</h1>

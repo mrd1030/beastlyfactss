@@ -6,6 +6,7 @@ import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen } from '
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
+import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 
 const sectionMeta = [
@@ -165,6 +166,10 @@ export default function GuideDetail() {
   if (!guide) {
     return (
       <div className="min-h-screen flex items-center justify-center">
+        <Helmet>
+          <title>Guide Not Found | Beastly Facts</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Guide not found</h2>
@@ -183,9 +188,9 @@ export default function GuideDetail() {
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
   const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
-  const guideDescription = guide.tagline
+  const guideDescription = truncateDescription(guide.tagline
     ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
-    : `Complete care guide for ${guide.name} — covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`;
+    : `Complete care guide for ${guide.name} — covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
   const breadcrumbSchema = {

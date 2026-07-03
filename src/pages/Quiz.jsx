@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
@@ -463,17 +463,17 @@ export default function Quiz() {
           {/* Tab switcher */}
           <div className="flex gap-2 mt-6 bg-muted/60 rounded-2xl p-1.5 max-w-md mx-auto">
             {TABS.map(tab => (
-              <button
+              <Link
                 key={tab.id}
-                onClick={() => navigate(`/quiz/${tab.id}/`)}
-                className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold transition-all ${
+                to={`/quiz/${tab.id}/`}
+                className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold transition-all text-center ${
                   activeTab === tab.id
                     ? 'bg-card shadow-sm text-foreground'
                     : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {tab.label}
-              </button>
+              </Link>
             ))}
           </div>
         </div>
