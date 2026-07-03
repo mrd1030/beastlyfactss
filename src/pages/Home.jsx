@@ -19,7 +19,7 @@ export default function Home() {
       {/* SEO: Meta Tags */}
       <Helmet>
         <title>Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes</title>
-        <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more. Start learning today!" />
+        <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more." />
         <link rel="canonical" href="https://beastlyfacts.com/" />
         <meta property="og:title" content="Beastly Facts | Amazing Animal Trivia, Guides & Fun Quizzes" />
         <meta property="og:description" content="Explore Beastly Facts to discover mind-blowing animal facts, engaging wildlife quizzes, and practical care guides for reptiles, mammals, birds and more." />

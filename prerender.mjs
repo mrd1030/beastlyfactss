@@ -36,7 +36,7 @@ async function getMdxRoutes() {
       const files = await readdir(dir);
       for (const file of files.filter(f => f.endsWith('.mdx'))) {
         const raw = await readFile(path.join(dir, file), 'utf-8');
-        const match = raw.match(/^slug:\s*["']?([^"'\n]+)["']?/m);
+        const match = raw.match(/^slug:\s*["']?([^"'\r\n]+)["']?/m);
         const slug = match ? match[1].trim() : file.replace('.mdx', '');
         routes.push(`/blog/${slug}`);
       }
@@ -177,7 +177,7 @@ async function saveHtml(route, html) {
 // (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency —
 // their <head> never applies within the wait window and the build fails.
 const CONCURRENCY = 4;
-const MAX_ATTEMPTS = 3; // retries per route before failing the build
+const MAX_ATTEMPTS = 4; // retries per route before failing the build
 
 async function renderWorker(browser, routes, results) {
   for (const route of routes) {
