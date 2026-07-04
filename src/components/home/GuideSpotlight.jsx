@@ -5,7 +5,12 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 
-const featured = allGuides.slice(0, 4);
+// One guide per pet type so the sample reflects the site's actual range
+// instead of whichever category happens to sit first in allGuides.
+const SAMPLE_PET_TYPES = ['Dog', 'Cat', 'Lizards', 'Small Mammals'];
+const featured = SAMPLE_PET_TYPES
+  .map(petType => allGuides.find(g => g.petType === petType))
+  .filter(Boolean);
 
 export default function GuideSpotlight() {
   return (
@@ -20,7 +25,7 @@ export default function GuideSpotlight() {
           <div>
             <span className="text-2xl block mb-1">📖</span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Featured Care Guides
+              Sample Guides
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
               Detailed, research-backed guides for pets
