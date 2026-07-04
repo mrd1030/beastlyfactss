@@ -1,7 +1,7 @@
 export const geckoEncyclopedia = [
   {
     id: "crested-gecko", name: "Crested Gecko", scientific: "Correlophus ciliatus",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "crested-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "crested-gecko", available: true, image: "/assets/guides/crested-gecko.jpg",
     bio: {
       overview: "Native to New Caledonia's southern islands, the crested gecko was thought extinct until rediscovered in 1994. These arboreal geckos have specialized toe pads and a prehensile tail that helps them navigate forest canopies. Their eyelash-like crests and vibrant color morphs have made them one of the most popular reptile pets worldwide.",
       origin: "New Caledonia (South Pacific islands)",
@@ -14,7 +14,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "leopard-gecko", name: "Leopard Gecko", scientific: "Eublepharis macularius",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "leopard-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "leopard-gecko", available: true, image: "/assets/guides/leopard-gecko.jpg",
     bio: {
       overview: "Found across arid regions from Pakistan to northwestern India, leopard geckos are ground-dwelling lizards that shelter in rocky outcrops and dry grasslands by day. Unlike most geckos, they have true eyelids and lack toe pads, making them unable to climb glass. They are among the most widely kept reptile pets in the world, with over 100 recognized color morphs in captivity.",
       origin: "Pakistan, Afghanistan, Iran, India, Nepal",
@@ -27,7 +27,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "gargoyle-gecko", name: "Gargoyle Gecko", scientific: "Rhacodactylus auriculatus",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "gargoyle-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "gargoyle-gecko", available: true, image: "/assets/guides/gargoyle-gecko.jpg",
     bio: {
       overview: "Endemic to southern New Caledonia, the gargoyle gecko takes its name from the bumpy protrusions on its head that resemble stone gargoyles. Like the crested gecko, it is an arboreal species adapted to humid forest environments. If threatened, it can drop and partially regenerate its tail — though the regrown version is smooth and bumpy, lacking the original pattern.",
       origin: "Southern New Caledonia",
@@ -40,7 +40,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "mourning-gecko", name: "Mourning Gecko", scientific: "Lepidodactylus lugubris",
-    category: "Geckos", emoji: "🦎", difficulty: "Intermediate", guideId: "mourning-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Intermediate", guideId: "mourning-gecko", available: true, image: "/assets/guides/mourning-gecko.jpg",
     bio: {
       overview: "The mourning gecko holds a remarkable distinction: wild populations are almost entirely female and reproduce through parthenogenesis — producing fertile eggs without fertilization. Originally native to islands across the Indo-Pacific, they have colonized tropical coastlines worldwide by hitchhiking on cargo ships. They are tiny, fast, and thrive in communal setups, making them fascinating display animals.",
       origin: "Indo-Pacific islands; introduced worldwide in tropical regions",
@@ -53,7 +53,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "tokay-gecko", name: "Tokay Gecko", scientific: "Gekko gecko",
-    category: "Geckos", emoji: "🦎", difficulty: "Intermediate", guideId: "tokay-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Intermediate", guideId: "tokay-gecko", available: true, image: "/assets/guides/tokay-gecko.jpg",
     bio: {
       overview: "The tokay gecko is one of the largest gecko species, named for its distinctive \"to-kay!\" mating call audible from considerable distance. Native to Southeast Asia, they are highly territorial and notorious for their powerful bite. In parts of Asia they are considered good luck charms and natural pest controllers, consuming insects and small rodents from the walls of homes and temples.",
       origin: "South and Southeast Asia (India through Indonesia and Philippines)",
@@ -66,7 +66,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "african-fat-tail", name: "African Fat-Tailed Gecko", scientific: "Hemitheconyx caudicinctus",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "african-fat-tail", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "african-fat-tail", available: true, image: "/assets/guides/african-fat-tail.jpg",
     bio: {
       overview: "The African fat-tailed gecko hails from the arid savanna and scrubland of West Africa, where it shelters in rock crevices and termite mounds by day. Like the leopard gecko, it is a terrestrial species with true eyelids. Its thick tail stores fat reserves for use during food scarcity — a trait reflected in its name. They are generally calmer and more tolerant of handling than many other gecko species.",
       origin: "West Africa (Senegal to Cameroon)",
@@ -79,7 +79,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "leaf-tailed-gecko", name: "Leaf-Tailed Gecko", scientific: "Uroplatus spp.",
-    category: "Geckos", emoji: "🦎", difficulty: "Advanced", guideId: "leaf-tailed-gecko", available: true,
+    category: "Geckos", emoji: "🦎", difficulty: "Advanced", guideId: "leaf-tailed-gecko", available: true, image: "/assets/guides/leaf-tailed-gecko.jpg",
     bio: {
       overview: "Madagascar's leaf-tailed geckos are masters of camouflage, with flattened bodies and leaf-like tails that make them virtually invisible against tree bark and fallen leaves. The genus contains over 15 species ranging from the massive Uroplatus fimbriatus to the tiny U. ebenaui. All are nocturnal ambush predators endemic to Madagascar's increasingly fragmented forests.",
       origin: "Madagascar",

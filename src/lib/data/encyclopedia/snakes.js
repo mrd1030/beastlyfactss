@@ -1,7 +1,7 @@
 export const snakeEncyclopedia = [
   {
     id: "ball-python", name: "Ball Python", scientific: "Python regius",
-    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "ball-python", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "ball-python", available: true, image: "/assets/guides/ball-python.jpg",
     bio: {
       overview: "The ball python — called the royal python in Europe — is native to the grasslands and open forests of sub-Saharan West and Central Africa. Its common name comes from its defensive behavior of coiling into a tight ball with its head protected in the center. They are the most popular pet snake in the world, with hundreds of color morphs developed through selective breeding. Wild populations face pressure from over-collection for the pet trade and habitat loss.",
       origin: "West and Central Africa (Senegal to Uganda)",
@@ -14,7 +14,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "corn-snake", name: "Corn Snake", scientific: "Pantherophis guttatus",
-    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "corn-snake", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "corn-snake", available: true, image: "/assets/guides/corn-snake.jpg",
     bio: {
       overview: "Corn snakes are slender, medium-sized rat snakes native to the eastern United States. They are excellent climbers and highly active, often found in cornfields and farm buildings where rodent prey is abundant — hence the name. Docile, hardy, and available in a staggering array of captive-bred color morphs, they are widely considered the ideal beginner snake for new reptile keepers.",
       origin: "Eastern and central United States",
@@ -27,7 +27,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "hognose-snake", name: "Hognose Snake", scientific: "Heterodon spp.",
-    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "hognose-snake", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "hognose-snake", available: true, image: "/assets/guides/hognose-snake.jpg",
     bio: {
       overview: "Hognose snakes are famous for their dramatic bluffing behavior — they hiss loudly, flatten their heads cobra-like, and if that fails, roll over and play dead convincingly (complete with open mouth and lolling tongue). Native to North America, they have upturned snouts used to dig up buried toads — their primary wild prey. They are rear-fanged with mild venom effective on toads but harmless to humans in the vast majority of cases.",
       origin: "North America (eastern, western, and southern species)",
@@ -40,7 +40,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "boa-constrictor", name: "Boa Constrictor", scientific: "Boa spp.",
-    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "boa-constrictor", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "boa-constrictor", available: true, image: "/assets/guides/boa-constrictor.jpg",
     bio: {
       overview: "Boa constrictors are large, heavy-bodied snakes distributed from Mexico through Central and South America to Caribbean island populations. As ambush predators they use constriction to subdue prey — squeezing until the prey's circulatory system stops, rather than suffocating it as once thought. They are viviparous (live-bearing), with females giving birth to litters of up to 60 live young.",
       origin: "Mexico, Central America, South America, and Caribbean islands",
@@ -53,7 +53,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "kingsnake", name: "California Kingsnake", scientific: "Lampropeltis californiae",
-    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "california-kingsnake", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "california-kingsnake", available: true, image: "/assets/guides/california-kingsnake.jpg",
     bio: {
       overview: "The California kingsnake is a non-venomous colubrid found throughout the western United States and northwestern Mexico. \"King\" snakes earned their name from their ability to kill and consume venomous rattlesnakes — they are immune to pit viper venom. Highly variable in pattern and coloration, they can mimic the banding of venomous coral snakes in some regions. Hardy and easy to care for, they are a popular beginner species.",
       origin: "Western United States and northwestern Mexico",
@@ -66,7 +66,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "milk-snake", name: "Milk Snake", scientific: "Lampropeltis triangulum",
-    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "milk-snake", available: true,
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "milk-snake", available: true, image: "/assets/guides/milk-snake.jpg",
     bio: {
       overview: "Milk snakes are a widely distributed kingsnake species found from Canada through Central America. Their name comes from the folk myth that they slipped into barns to drink cow's milk — unfounded, but barn-dwelling rodents are certainly part of their diet. Many subspecies display vivid red, black, and yellow/white banding that mimics the venomous coral snake — a classic example of Batesian mimicry.",
       origin: "North and Central America (Canada to Ecuador)",

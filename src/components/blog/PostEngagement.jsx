@@ -122,10 +122,12 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           {shared ? 'Copied!' : 'Share'}
         </button>
 
-        <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-body ml-auto">
-          <MessageCircle className="w-3.5 h-3.5" />
-          {comments.length} {comments.length === 1 ? 'comment' : 'comments'}
-        </div>
+        {comments.length > 0 && (
+          <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-body ml-auto">
+            <MessageCircle className="w-3.5 h-3.5" />
+            {comments.length} {comments.length === 1 ? 'comment' : 'comments'}
+          </div>
+        )}
       </div>
 
       {/* Comments section */}

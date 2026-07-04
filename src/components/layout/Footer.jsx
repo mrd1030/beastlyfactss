@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SiteCounter from '@/components/shared/SiteCounter';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
 
@@ -26,7 +25,6 @@ export default function Footer() {
             <p className="text-xs text-foreground/80 font-body leading-relaxed mb-4 max-w-[250px]">
               Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
             </p>
-            <SiteCounter />
             <div className="mt-4">
               <DonateButton className="w-full font-display font-bold" />
             </div>

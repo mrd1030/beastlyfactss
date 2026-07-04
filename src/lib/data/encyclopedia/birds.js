@@ -1,7 +1,7 @@
 export const birdEncyclopedia = [
   {
     id: "budgie", name: "Budgie / Parakeet", scientific: "Melopsittacus undulatus",
-    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "budgie", available: true,
+    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "budgie", available: true, image: "/assets/guides/budgie.jpg",
     bio: {
       overview: "The budgerigar (budgie) is native to the semi-arid interior of Australia, where enormous nomadic flocks follow rainfall and seed availability across the outback. In the wild they are small, swift, and highly social — flocks of thousands are common. They are the third most popular pet in the world after dogs and cats, and the best-selling pet bird globally. With training, many budgies develop the ability to mimic speech — some hold records for the largest bird vocabulary.",
       origin: "Interior of Australia",
@@ -14,7 +14,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "cockatiel", name: "Cockatiel", scientific: "Nymphicus hollandicus",
-    category: "Birds", emoji: "🦜", difficulty: "Beginner", guideId: "cockatiel", available: true,
+    category: "Birds", emoji: "🦜", difficulty: "Beginner", guideId: "cockatiel", available: true, image: "/assets/guides/cockatiel.jpg",
     bio: {
       overview: "Cockatiels are the smallest member of the cockatoo family and are endemic to Australia, where they inhabit open country and lightly wooded areas across the continent. They are highly nomadic, following water sources and seeding grasses. Cockatiels were the first parrot species to be widely bred in captivity and remain among the most popular pet birds worldwide, prized for their gentle temperament, whistling ability, and trainability.",
       origin: "Australia",
@@ -40,7 +40,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "african-grey", name: "African Grey Parrot", scientific: "Psittacus erithacus",
-    category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "african-grey", available: true,
+    category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "african-grey", available: true, image: "/assets/guides/african-grey.jpg",
     bio: {
       overview: "The African grey parrot is widely regarded as the most intelligent parrot species and among the most cognitively sophisticated of all animals. Native to the dense equatorial forests of West and Central Africa, they live in large flocks and form long-term pair bonds. The research parrot Alex, studied by Dr. Irene Pepperberg for over 30 years, demonstrated a working vocabulary of over 150 words and the ability to understand concepts of color, shape, number, and \"same vs. different.\"",
       origin: "West and Central Africa (Ghana, Ivory Coast, Congo, Cameroon)",
@@ -53,7 +53,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "lovebird", name: "Lovebird", scientific: "Agapornis spp.",
-    category: "Birds", emoji: "🐦", difficulty: "Intermediate", guideId: "lovebird", available: true,
+    category: "Birds", emoji: "🐦", difficulty: "Intermediate", guideId: "lovebird", available: true, image: "/assets/guides/lovebird.jpg",
     bio: {
       overview: "Lovebirds are a genus of nine small parrot species native to Africa and Madagascar. Their name comes from the strong pair bonds they form — bonded pairs spend hours preening each other and sitting pressed together. In captivity, a single lovebird deprived of a companion will often direct all its attachment behavior toward its human keeper — requiring significant daily interaction to thrive emotionally and prevent behavioral problems.",
       origin: "Africa and Madagascar",

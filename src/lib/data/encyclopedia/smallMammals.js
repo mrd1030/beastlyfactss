@@ -1,7 +1,7 @@
 export const smallMammalEncyclopedia = [
   {
     id: "hedgehog", name: "Hedgehog", scientific: "Atelerix albiventris",
-    category: "Small Mammals", emoji: "🦔", difficulty: "Intermediate", guideId: "hedgehog", available: true,
+    category: "Small Mammals", emoji: "🦔", difficulty: "Intermediate", guideId: "hedgehog", available: true, image: "/assets/guides/hedgehog.jpg",
     bio: {
       overview: "The African pygmy hedgehog — the species most commonly kept as a pet — is native to the arid savanna and grassland of central Africa. Wild hedgehogs are solitary, nocturnal insectivores that travel several miles each night in search of food. When threatened, they curl into a tight ball of interlocking spines that effectively deters most predators. Their spines are not barbed or poisonous — they are hollow, hardened hairs.",
       origin: "Central Africa (Senegal to Tanzania)",
@@ -14,7 +14,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "rabbit", name: "Rabbit", scientific: "Oryctolagus cuniculus",
-    category: "Small Mammals", emoji: "🐰", difficulty: "Intermediate", guideId: "rabbit", available: true,
+    category: "Small Mammals", emoji: "🐰", difficulty: "Intermediate", guideId: "rabbit", available: true, image: "/assets/guides/rabbit.jpg",
     bio: {
       overview: "The European rabbit is the ancestor of all domestic rabbit breeds — over 300 recognized worldwide. Originally native to the Iberian Peninsula, they were spread across Europe by the Romans and introduced globally by colonizers, becoming one of the world's most ecologically impactful invasive species in places like Australia. In the wild they live in large, complex underground warrens with strict social hierarchies.",
       origin: "Iberian Peninsula (Spain, Portugal); domesticated globally",
@@ -27,7 +27,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "guinea-pig", name: "Guinea Pig", scientific: "Cavia porcellus",
-    category: "Small Mammals", emoji: "🐹", difficulty: "Beginner", guideId: "guinea-pig", available: true,
+    category: "Small Mammals", emoji: "🐹", difficulty: "Beginner", guideId: "guinea-pig", available: true, image: "/assets/guides/guinea-pig.jpg",
     bio: {
       overview: "Guinea pigs (cavies) have never been found in the wild — they are a fully domesticated species descended from South American wild cavies, selectively bred by Andean peoples for over 3,000 years as a food source and in religious ceremonies. Today they are one of the world's most popular small pet animals, valued for their vocal, social nature and gentle temperament. They use over 11 distinct vocalizations to communicate.",
       origin: "Domesticated from wild cavies of the Andes (Peru, Bolivia, Ecuador)",
@@ -40,7 +40,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "chinchilla", name: "Chinchilla", scientific: "Chinchilla lanigera",
-    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate", guideId: "chinchilla", available: true,
+    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate", guideId: "chinchilla", available: true, image: "/assets/guides/chinchilla.jpg",
     bio: {
       overview: "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered — their extraordinarily dense fur (up to 80 hairs per follicle, versus 2–3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
       origin: "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",
@@ -66,7 +66,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "sugar-glider", name: "Sugar Glider", scientific: "Petaurus breviceps",
-    category: "Small Mammals", emoji: "🐿️", difficulty: "Advanced", guideId: "sugar-glider", available: true,
+    category: "Small Mammals", emoji: "🐿️", difficulty: "Advanced", guideId: "sugar-glider", available: true, image: "/assets/guides/sugar-glider.jpg",
     bio: {
       overview: "Sugar gliders are small marsupials native to Australia, New Guinea, and eastern Indonesia — more closely related to koalas and kangaroos than to flying squirrels, which they superficially resemble. They possess a membrane (patagium) stretching from wrist to ankle that allows them to glide up to 165 feet between trees. Highly social in the wild, they live in groups of 10–15 individuals and communicate through a range of calls, barks, and crabbing sounds.",
       origin: "Northern and eastern Australia, New Guinea, eastern Indonesia",

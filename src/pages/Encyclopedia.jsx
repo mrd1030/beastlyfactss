@@ -414,7 +414,11 @@ function AnimalRow({ animal, onOpenLegend }) {
         <motion.div whileHover={{ x: 3 }}
           className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
           <div className="flex items-center gap-3 min-w-0">
-            <span className="text-xl flex-shrink-0">{animal.emoji}</span>
+            {animal.image ? (
+              <img src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover flex-shrink-0" />
+            ) : (
+              <span className="text-xl flex-shrink-0">{animal.emoji}</span>
+            )}
             <div className="min-w-0">
               <p className="font-display font-semibold text-sm text-foreground truncate">{animal.name}</p>
               <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>
@@ -437,7 +441,11 @@ function AnimalRow({ animal, onOpenLegend }) {
   return (
     <div className="flex items-center justify-between bg-card/50 border border-border/50 rounded-xl px-4 py-3 opacity-60">
       <div className="flex items-center gap-3 min-w-0">
-        <span className="text-xl flex-shrink-0 grayscale">{animal.emoji}</span>
+        {animal.image ? (
+          <img src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover grayscale flex-shrink-0" />
+        ) : (
+          <span className="text-xl flex-shrink-0 grayscale">{animal.emoji}</span>
+        )}
         <div className="min-w-0">
           <p className="font-display font-semibold text-sm text-foreground truncate">{animal.name}</p>
           <p className="text-xs text-muted-foreground font-body italic truncate">{animal.scientific}</p>

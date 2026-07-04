@@ -57,6 +57,7 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: 'all'
+    allowedHosts: 'all',
+    port: process.env.PORT ? Number(process.env.PORT) : 5173,
   }
 });

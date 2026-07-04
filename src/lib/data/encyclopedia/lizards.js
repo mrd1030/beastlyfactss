@@ -1,7 +1,7 @@
 export const lizardEncyclopedia = [
   {
     id: "bearded-dragon", name: "Bearded Dragon", scientific: "Pogona vitticeps",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "bearded-dragon", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "bearded-dragon", available: true, image: "/assets/guides/bearded-dragon.jpg",
     bio: {
       overview: "The inland bearded dragon is native to Australia's arid and semi-arid interior, where it basks on rocks and fence posts in open woodland and scrubland. They take their name from the expandable, spiny throat pouch — the \"beard\" — which darkens to black when threatened or excited. Among the most social of reptile pets, beardies are capable of forming genuine bonds with their keepers and are often described as having distinct personalities.",
       origin: "Australia (central and eastern interior)",
@@ -14,7 +14,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "blue-tongue-skink", name: "Blue Tongue Skink", scientific: "Tiliqua spp.",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "blue-tongue-skink", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "blue-tongue-skink", available: true, image: "/assets/guides/blue-tongue-skink.jpg",
     bio: {
       overview: "Blue-tongued skinks are large, slow-moving lizards native to Australia and parts of Indonesia and New Guinea. Their shocking blue tongue, flashed at predators, serves as a startling warning display. They are ground-dwelling omnivores that consume a diverse wild diet of fruits, plants, snails, and carrion. Thick-bodied and docile by nature, their manageable temperament has made them highly popular as pets.",
       origin: "Australia, Indonesia, New Guinea",
@@ -27,7 +27,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "ackie-monitor", name: "Ackie Monitor", scientific: "Varanus acanthurus",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "ackie-monitor", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "ackie-monitor", available: true, image: "/assets/guides/ackie-monitor.jpg",
     bio: {
       overview: "The ackie monitor (ridge-tailed monitor) is a small, active monitor lizard native to the rocky arid regions of northwestern and central Australia. Despite being a \"dwarf\" member of the Varanus genus — which includes the massive Komodo dragon — ackies exhibit the same intelligence and prey drive as their larger relatives. They use their spiny, whip-like tails to wedge themselves into rock crevices when threatened.",
       origin: "Northwestern and central Australia",
@@ -40,7 +40,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "tegu", name: "Argentine Black & White Tegu", scientific: "Salvator merianae",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "tegu", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "tegu", available: true, image: "/assets/guides/tegu.jpg",
     bio: {
       overview: "The Argentine black and white tegu is one of the largest lizards in South America, with intelligence rivaling that of monitor lizards. They are notable among reptiles for having near-endothermic (warm-blooded) properties during breeding season — their body temperature rises above ambient temperatures. In the wild they are powerful, opportunistic predators; well-socialized tegus in captivity can become remarkably dog-like companions.",
       origin: "South America (Argentina, Brazil, Paraguay, Uruguay)",
@@ -66,7 +66,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "green-anole", name: "Green Anole", scientific: "Anolis carolinensis",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "green-anole", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "green-anole", available: true, image: "/assets/guides/green-anole.jpg",
     bio: {
       overview: "The green anole is North America's only native anole and the most commonly kept anole species in captivity. Found throughout the American Southeast, it inhabits shrubs, trees, and garden vegetation. Males display an expandable pink throat fan (dewlap) in territorial and courtship displays. While capable of limited color change from vivid green to brown, they are not true chameleons — color change reflects mood and temperature rather than camouflage.",
       origin: "Southeastern United States and Caribbean",
@@ -79,7 +79,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "savannah-monitor", name: "Savannah Monitor", scientific: "Varanus exanthematicus",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "savannah-monitor", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "savannah-monitor", available: true, image: "/assets/guides/savannah-monitor.jpg",
     bio: {
       overview: "The savannah monitor is a medium-to-large monitor lizard native to the sub-Saharan African savanna and semi-arid grasslands. In the wild they are highly active, covering considerable distances in search of prey and aestivating in burrows during the dry season. Despite a reputation for being tameable, savannah monitors in captivity frequently suffer from obesity and shortened lifespans due to improper high-fat diets.",
       origin: "Sub-Saharan Africa (Senegal to Sudan)",
@@ -92,7 +92,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "uromastyx", name: "Uromastyx", scientific: "Uromastyx spp.",
-    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "uromastyx", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "uromastyx", available: true, image: "/assets/guides/uromastyx.jpg",
     bio: {
       overview: "Uromastyx — also called spiny-tailed lizards or dabb lizards — are robust, herbivorous lizards native to rocky desert and arid landscapes stretching from North Africa to the Middle East and South Asia. Their spiny, club-like tails are used as defensive weapons against predators. Highly adapted to extreme heat and drought, they obtain most of their water from plant matter and seeds. They are striking, underrated pets known for bold colors and a calm demeanor.",
       origin: "North Africa, Middle East, and South Asia",
