@@ -21,7 +21,7 @@ function PersonalityQuiz() {
   const [showResult, setShowResult] = useState(!!result);
   const [justSaved, setJustSaved] = useState(false);           // ← ADDED
 
-  const { saveQuizResult } = useFavoritesCtx();                // ← ADDED
+  const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();                // ← ADDED
 
   const currentQ = quizQuestions[step - 1];
   const totalQ = quizQuestions.length;
@@ -39,6 +39,7 @@ function PersonalityQuiz() {
       const quizResult = quizResults[topAnimal];
       setResult(quizResult);
       setShowResult(true);
+      recordQuizCompletion();
       confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D', '#0F3A1F'] });
     } else {
       setStep(step + 1);
@@ -187,6 +188,8 @@ function TriviaQuizSection() {
   const [score, setScore] = useState(0);
   const [direction, setDirection] = useState(1);
 
+  const { recordQuizCompletion } = useFavoritesCtx();
+
   const question = triviaQuestions[currentIndex];
 
   const handleSelect = (optionIndex) => {
@@ -200,6 +203,7 @@ function TriviaQuizSection() {
     setDirection(1);
     if (currentIndex + 1 >= TRIVIA_TOTAL) {
       setStep('results');
+      recordQuizCompletion();
     } else {
       setAnswered(false);
       setSelected(null);

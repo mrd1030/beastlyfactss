@@ -4,7 +4,7 @@ import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
-import { useNavigate, useLocation } from 'react-router-dom'; 
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts'; 
 import FactCard from '@/components/shared/FactCard'; 
 import FactModal from '@/components/shared/FactModal'; 
@@ -238,7 +238,10 @@ export default function Facts() {
             </h1> 
             <p className="text-sm text-muted-foreground font-body max-w-lg">
               Mind-blowing facts that will make you say "wait, REALLY?!" 🤯
-            </p> 
+            </p>
+            <Link to="/fact-files/" className="inline-flex items-center gap-1 mt-2 text-xs font-display font-semibold text-secondary hover:underline">
+              Want deeper dives? Browse our Fact Files →
+            </Link>
           </motion.div>
 
           {/* Search + Randomize */}

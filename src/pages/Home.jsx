@@ -5,9 +5,9 @@ import HeroSection from '@/components/home/HeroSection';
 const TrendingFacts = lazy(() => import('@/components/home/TrendingFacts'));
 const EncyclopediaTeaser = lazy(() => import('@/components/home/EncyclopediaTeaser'));
 const CritterDigestPreview = lazy(() => import('@/components/home/CritterDigestPreview'));
+const DexTeaser = lazy(() => import('@/components/home/DexTeaser'));
 const GuideSpotlight = lazy(() => import('@/components/home/GuideSpotlight'));
-const QuizTeaser = lazy(() => import('@/components/home/QuizTeaser'));
-const TriviaTeaser = lazy(() => import('@/components/home/TriviaTeaser'));
+const QuizzesTeaser = lazy(() => import('@/components/home/QuizzesTeaser'));
 const Newsletter = lazy(() => import('@/components/shared/Newsletter'));
 import FactModal from '@/components/shared/FactModal';
 
@@ -55,11 +55,14 @@ export default function Home() {
 
       <Suspense fallback={null}>
         <TrendingFacts onOpenFact={setSelectedFact} />
+        {/* Reference content: animal profiles + care guides, together */}
         <EncyclopediaTeaser />
-        <CritterDigestPreview />
         <GuideSpotlight />
-        <TriviaTeaser />
-        <QuizTeaser />
+        {/* Editorial content: articles + fiction, together */}
+        <CritterDigestPreview />
+        <DexTeaser />
+        {/* Interactive content */}
+        <QuizzesTeaser />
         <Newsletter />
       </Suspense>
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} />

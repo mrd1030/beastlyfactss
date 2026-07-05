@@ -2,6 +2,10 @@ export const lizardEncyclopedia = [
   {
     id: "bearded-dragon", name: "Bearded Dragon", scientific: "Pogona vitticeps",
     category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "bearded-dragon", available: true, image: "/assets/guides/bearded-dragon.jpg",
+    relatedStory: {
+      slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
+      title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
+    },
     bio: {
       overview: "The inland bearded dragon is native to Australia's arid and semi-arid interior, where it basks on rocks and fence posts in open woodland and scrubland. They take their name from the expandable, spiny throat pouch — the \"beard\" — which darkens to black when threatened or excited. Among the most social of reptile pets, beardies are capable of forming genuine bonds with their keepers and are often described as having distinct personalities.",
       origin: "Australia (central and eastern interior)",

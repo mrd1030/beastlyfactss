@@ -10,7 +10,7 @@ const KnowledgeQuiz = () => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [justSaved, setJustSaved] = useState(false);
 
-  const { saveQuizResult } = useFavoritesCtx();
+  const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
 
   const questions = [
     {
@@ -79,6 +79,7 @@ const KnowledgeQuiz = () => {
       setShowExplanation(false);
     } else {
       setShowResult(true);
+      recordQuizCompletion();
     }
   };
 

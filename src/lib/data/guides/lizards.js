@@ -9,6 +9,10 @@ export const lizardGuides = [
     image: "/assets/guides/bearded-dragon.jpg",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
     funFact: "Bearded dragons wave at each other as a sign of submission, basically saying 'Hey, you're the boss!'",
+    relatedStory: {
+      slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
+      title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
+    },
     sections: {
       housing: `Adult bearded dragons need a minimum 4x2x2 ft enclosure, and larger is always better. Juveniles can start smaller but reach their adult size relatively quickly, so investing in the correct adult enclosure from the start makes practical sense. PVC or wooden enclosures with glass fronts retain heat better than glass tanks and are widely preferred by experienced keepers.
 

@@ -37,6 +37,7 @@ export default function Footer() {
               links: [
                 { to: '/facts/', label: 'Fun Facts' },
                 { to: '/animal-facts/', label: 'Facts Hub' },
+                { to: '/fact-files/', label: 'Fact Files' },
                 { to: '/quiz/personality/', label: 'Personality Quiz' },
                 { to: '/pack/', label: 'My Beast Pack' },
                 { to: '/blog/', label: 'Critter Digest' },

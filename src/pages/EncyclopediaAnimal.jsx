@@ -7,6 +7,8 @@ import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
+import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
+import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 
 function BioField({ label, value }) {
   return (
@@ -162,6 +164,12 @@ export default function EncyclopediaAnimal() {
               </div>
             </div>
 
+            {/* Compare */}
+            <AnimalCompare animal={animal} key={`compare-${animal.id}`} />
+
+            {/* Test yourself */}
+            <AnimalQuiz animal={animal} key={animal.id} />
+
             {/* Fun facts from facts page */}
             {relatedFacts.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
@@ -215,6 +223,19 @@ export default function EncyclopediaAnimal() {
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-display font-bold text-secondary mb-2">🤓 Did You Know?</p>
                 <p className="text-sm font-body text-foreground leading-relaxed">{guide.funFact}</p>
+              </div>
+            )}
+
+            {/* Related short story */}
+            {animal.relatedStory && (
+              <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
+                <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
+                <p className="text-xs text-muted-foreground font-body mb-2">There's a whole fiction series about a {animal.name.toLowerCase()}:</p>
+                <Link to={`/blog/${animal.relatedStory.slug}/`} className="group block">
+                  <p className="text-sm font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                    {animal.relatedStory.title}
+                  </p>
+                </Link>
               </div>
             )}
 

@@ -35,6 +35,7 @@ const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
 const Guides = lazy(() => import('@/pages/Guides'));
+const FactFiles = lazy(() => import('@/pages/FactFiles'));
 
 function RedirectGuideFilter() {
   const { guideFilter } = useParams();
@@ -91,6 +92,7 @@ const AuthenticatedApp = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/animal-facts" element={<AnimalFacts />} />
+            <Route path="/fact-files" element={<FactFiles />} />
             <Route path="/trivia" element={<Navigate to="/quiz/trivia/" replace />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/donate/success" element={<DonateSuccess />} />

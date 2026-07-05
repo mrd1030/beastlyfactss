@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Heart, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
-import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
@@ -13,7 +13,7 @@ import ClearPackDialog from '@/components/layout/ClearPackDialog';
 export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
-  const { savedQuizResults, removeQuizResult } = useFavoritesCtx();
+  const { savedQuizResults, removeQuizResult, unlockedAchievements, streak } = useFavoritesCtx();
   const savedFacts = facts.filter(f => favorites.includes(f.id));
   const [confirmingId, setConfirmingId] = useState(null);
 
@@ -42,6 +42,38 @@ export default function Pack() {
             Your personal collection of favorite facts! Tap the heart on any fact to save it here. 🐾
           </p>
         </motion.div>
+
+        {/* Achievements */}
+        <div className="mt-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="font-display font-bold text-xl text-foreground">🏆 Achievements</h2>
+            {streak >= 2 && (
+              <span className="text-xs font-display font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
+                🔥 {streak}-day streak
+              </span>
+            )}
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+            {ACHIEVEMENTS.map(a => {
+              const unlocked = unlockedAchievements.some(u => u.id === a.id);
+              return (
+                <div
+                  key={a.id}
+                  title={a.description}
+                  className={`text-center rounded-2xl p-3 border transition-all ${
+                    unlocked
+                      ? 'bg-secondary/5 border-secondary/30'
+                      : 'bg-muted/40 border-border opacity-40 grayscale'
+                  }`}
+                >
+                  <span className="text-2xl block mb-1">{a.emoji}</span>
+                  <p className="text-[11px] font-display font-bold text-foreground leading-tight">{a.title}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
 {/* Saved Quiz Results */}
 {savedQuizResults.length > 0 && (
   <div className="mt-10 mb-8">

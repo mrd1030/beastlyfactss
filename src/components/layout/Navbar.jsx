@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
-import { useDarkMode, useDailyStreak } from '@/lib/hooks/useLocalStorage';
+import { useDarkMode } from '@/lib/hooks/useLocalStorage';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { fetchCategories } from '@/lib/sanityCategories';
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
@@ -80,7 +81,7 @@ const primaryLinks = [
 
 export default function Navbar() {
   const [dark, setDark] = useDarkMode();
-  const { streak, recordVisit } = useDailyStreak();
+  const { streak } = useFavoritesCtx();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [digestOpen, setDigestOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -94,8 +95,6 @@ export default function Navbar() {
   useEffect(() => {
     fetchCategories().then(cats => setNavCategories(cats.filter(c => c.count > 0))).catch(() => {});
   }, []);
-
-  useEffect(() => { recordVisit(); }, []);
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 20);
