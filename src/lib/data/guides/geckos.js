@@ -8,6 +8,26 @@ export const geckoGuides = [
     image: "/assets/guides/crested-gecko.jpg",
     tagline: "The velvety, fan-fringed gecko that needs no heat lamp!",
     funFact: "Crested geckos were thought to be extinct until rediscovered in 1994 during a tropical storm in New Caledonia!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
+        { item: "Low-output UVB (T5 HO, Zone 1)", low: 45, high: 80 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
+        { item: "Cork bark tubes and branches", low: 20, high: 40 },
+        { item: "Live or artificial plants", low: 25, high: 45 },
+        { item: "Fine misting bottle or fogger", low: 10, high: 40 },
+      ],
+      annual: [
+        { item: "Commercial crested gecko diet (CGD)", low: 40, high: 70 },
+        { item: "Feeder insects (crickets, dubia)", low: 60, high: 120 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (lighting)", low: 25, high: 45 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `An 18x18x24" front-opening enclosure is the recommended minimum for a single adult crested gecko, but bigger is always better — an 18x18x36" or 24x24x48" gives them far more room to explore and express natural behavior. Vertical height is more important than floor space because crested geckos are arboreal: they spend the vast majority of their time off the ground, perched on branches, cork bark, and leaves.
 
@@ -56,6 +76,25 @@ Watch for weight loss, lethargy, loss of appetite, respiratory sounds, or abnorm
     image: "/assets/guides/leopard-gecko.jpg",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x18x18 in enclosure", low: 120, high: 220 },
+        { item: "Under-tank heater with thermostat", low: 40, high: 70 },
+        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
+        { item: "Sphagnum moss for moist hide", low: 5, high: 10 },
+        { item: "Digital thermometer (IR gun recommended)", low: 15, high: 30 },
+        { item: "Shallow water dish", low: 8, high: 15 },
+        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
+      ],
+      annual: [
+        { item: "Live insects (crickets, dubia, mealworms)", low: 100, high: 180 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
+        { item: "Electricity (heat)", low: 30, high: 50 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 36x18x18" enclosure is the current minimum recommendation for a single adult leopard gecko. The old standard of a 20-gallon tank is now considered inadequate by most experienced keepers and veterinarians. Larger enclosures allow for better thermal gradients and more enrichment opportunities, both of which are critical for long-term health.
 
@@ -106,6 +145,26 @@ Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A
     image: "/assets/guides/gargoyle-gecko.jpg",
     tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
     funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
+        { item: "Cork bark and branches", low: 20, high: 40 },
+        { item: "Live or artificial plants", low: 25, high: 45 },
+        { item: "Misting bottle", low: 5, high: 15 },
+      ],
+      annual: [
+        { item: "Commercial crested gecko diet", low: 40, high: 70 },
+        { item: "Dubia roaches and crickets", low: 70, high: 130 },
+        { item: "Calcium + D3 and multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (lighting)", low: 25, high: 45 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `An 18x18x24" or larger enclosure works well for a single adult gargoyle gecko, with height being the priority over floor space. Like crested geckos, gargoyles are arboreal and spend most of their time off the ground. A front-opening design is strongly preferred for easier, less stressful access.
 
@@ -149,11 +208,31 @@ Maintain temperatures below 85 degrees F at all times. Heat stress is a genuine 
     id: "mourning-gecko",
     name: "Mourning Gecko",
     emoji: "🦎",
-    difficulty: "Beginner",
+    difficulty: "Beginner/Intermediate",
     petType: "Geckos",
     image: "/assets/guides/mourning-gecko.jpg",
     tagline: "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!",
     funFact: "Mourning geckos are parthenogenetic. Every individual is female, and they can reproduce without males by cloning themselves!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in planted vivarium", low: 100, high: 200 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Tight-fitting escape-proof lid", low: 20, high: 50 },
+        { item: "Bioactive or coconut fiber substrate", low: 20, high: 40 },
+        { item: "Cork bark and dense planting", low: 30, high: 60 },
+        { item: "Hygrometer and thermometer", low: 15, high: 25 },
+        { item: "Fine mist system or manual misting bottle", low: 10, high: 40 },
+      ],
+      annual: [
+        { item: "Commercial crested gecko diet", low: 30, high: 60 },
+        { item: "Fruit flies and tiny feeder insects", low: 50, high: 100 },
+        { item: "Calcium (always-available dish)", low: 10, high: 20 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (lighting)", low: 25, high: 45 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `An 18x18x24" enclosure is suitable for a small colony of 3 to 5 mourning geckos. These tiny animals (typically 3 to 4 inches as adults) are perfectly suited to lush, fully planted vivariums. Bioactive setups are ideal for this species — live plants regulate humidity naturally, isopods and springtails serve as a biological clean-up crew, and the rich environment provides the complex, stimulating habitat mourning geckos thrive in.
 
@@ -202,6 +281,25 @@ Escape prevention is critical not only for the geckos' welfare but also for your
     image: "/assets/guides/tokay-gecko.jpg",
     tagline: "The jewel-toned, loud-voiced gecko that's not for the faint of heart!",
     funFact: "Tokay geckos are named after their incredibly loud 'TO-KAY!' call. Males use this booming vocalization to defend territory and attract mates. You'll hear them from across a room!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20x20x30 in+ vertical arboreal enclosure", low: 130, high: 250 },
+        { item: "Cork bark rounds and sturdy branches", low: 25, high: 50 },
+        { item: "Dense live or artificial plants", low: 30, high: 60 },
+        { item: "Thermostat-controlled heat source", low: 40, high: 70 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Automatic mister or fine misting bottle", low: 10, high: 40 },
+      ],
+      annual: [
+        { item: "Dubia roaches, crickets, and varied insects", low: 100, high: 180 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (heat and lighting)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A minimum 20x20x30" (or larger) vertical, arboreal enclosure is ideal for a single adult tokay gecko. Height is more important than floor space as these geckos are strongly arboreal and will spend most of their time in the upper third of the enclosure. Front-opening enclosures are much safer for interaction with this defensive species.
 
@@ -253,6 +351,25 @@ Only purchase captive-bred individuals from reputable breeders whenever possible
     image: "/assets/guides/african-fat-tail.jpg",
     tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
     funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "30x12x12 in or larger enclosure", low: 90, high: 170 },
+        { item: "Under-tank heater with quality thermostat", low: 40, high: 70 },
+        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
+        { item: "Damp sphagnum moss for moist hide", low: 5, high: 10 },
+        { item: "Digital thermometer (IR gun ideal)", low: 15, high: 30 },
+        { item: "Shallow water dish", low: 8, high: 15 },
+        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
+      ],
+      annual: [
+        { item: "Dubia roaches, crickets, mealworms", low: 90, high: 160 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
+        { item: "Electricity (heat)", low: 30, high: 50 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 30x12x12" (20-gallon long) enclosure is the minimum for one adult African fat-tailed gecko, though a 36x18" or larger provides a better thermal gradient and more enrichment space. Like leopard geckos, AFTs are terrestrial — floor space is more important than height.
 
@@ -304,6 +421,25 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
     image: "/assets/guides/leaf-tailed-gecko.jpg",
     tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
     funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x36 in+ tall planted enclosure", low: 150, high: 300 },
+        { item: "Live plants (pothos, ficus, bromeliads)", low: 40, high: 80 },
+        { item: "Automatic misting system", low: 60, high: 130 },
+        { item: "Digital hygrometer", low: 15, high: 25 },
+        { item: "Cooling solution (fan or AC assist, varies)", low: 0, high: 150 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Cork bark for hiding structures", low: 25, high: 50 },
+      ],
+      annual: [
+        { item: "Gut-loaded insect feeders", low: 100, high: 180 },
+        { item: "Calcium w/D3 supplement", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (misting system, lighting)", low: 40, high: 80 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `Tall, well-planted enclosures are absolutely essential for leaf-tailed geckos. A minimum of 24x24x36" for smaller species (Uroplatus ebenaui, U. phantasticus) and significantly larger for bigger species like U. fimbriatus. Use live plants extensively throughout the enclosure — they are not decorative but critical for humidity regulation, camouflage opportunities, and the gecko's psychological wellbeing.
 

@@ -7,6 +7,20 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!",
     funFact: "Wild betta fish live in shallow rice paddies and slow-moving water that can run low on oxygen, so they evolved a labyrinth organ that lets them gulp air directly from the surface. Males also build floating bubble nests out of saliva-coated air bubbles to hold their eggs — a behavior captive males will still perform even without a female present.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "5+ gallon tank", low: 30, high: 60 },
+        { item: "Aquarium heater", low: 15, high: 25 },
+        { item: "Gentle/sponge filter", low: 15, high: 25 },
+        { item: "Live or silk plants", low: 15, high: 25 },
+        { item: "Water test kit", low: 15, high: 20 },
+      ],
+      annual: [
+        { item: "Betta pellets + frozen/freeze-dried variety", low: 30, high: 50 },
+        { item: "Water conditioner", low: 10, high: 15 },
+      ],
+    },
     sections: {
       housing: "A heated, filtered tank of at least 5 gallons is the real minimum for a betta — not the bowls or unheated cups they are often sold in. Water temperature should stay between 78 and 80 degrees F, which requires a small aquarium heater in almost every home. Bettas have long, delicate fins, so filtration should produce gentle flow (a sponge filter or a baffled outflow works well) rather than a strong current that exhausts them. Always use a tight-fitting lid, since bettas are surprisingly capable jumpers. Choose live or silk plants over stiff plastic ones, which can tear their fins.",
       diet: "Bettas are carnivores and do best on a high-quality betta-specific pellet as their staple diet. Rotate in freeze-dried or frozen bloodworms, brine shrimp, and daphnia for variety and enrichment. Feed only what your betta can finish in about two minutes, once or twice a day — overfeeding is one of the most common mistakes and leads to bloating and constipation. Skipping food one day a week gives their digestive system a break and is a normal part of a healthy feeding routine.",
@@ -41,6 +55,18 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The pond classic that outgrows its reputation — and its bowl — in a hurry!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors — directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20+ gallon tank", low: 80, high: 180 },
+        { item: "Canister filter (strong filtration)", low: 60, high: 120 },
+        { item: "Smooth gravel or sand substrate", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Goldfish pellets + blanched vegetables", low: 50, high: 90 },
+        { item: "Water conditioner and test kit", low: 20, high: 30 },
+      ],
+    },
     sections: {
       housing: "A single fancy goldfish needs at least 20 gallons, with 10 additional gallons for each fish added. Common and comet goldfish grow considerably larger and are much better suited to an outdoor pond or a tank of 55 gallons or more. Goldfish are cold-water fish and generally do not need a heater — room temperature in the 65 to 72 degree F range suits them well, though they should never be mixed with tropical species that require heat. Because goldfish produce a lot of waste, strong filtration (a canister filter is ideal) is essential regardless of tank size. Bowls should never be used under any circumstances.",
       diet: "Goldfish are omnivores and do best on a high-quality goldfish-specific pellet as their staple food. Blanched vegetables — shelled peas, zucchini, and leafy greens — are important for digestion and help prevent the swim bladder problems goldfish are prone to. Occasional treats of bloodworms or brine shrimp add variety. Feed small portions once or twice a day; goldfish will beg constantly but are prone to overeating, bloating, and constipation if fed too much or given only low-quality flake food.",
@@ -75,6 +101,22 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The living jewels of the pond world that can genuinely outlive their keepers!",
     funFact: "Koi are famously long-lived, with some individuals in Japan documented living well past 70 years and one famous fish, Hanako, claimed to have reached 226 years old (a figure that remains disputed among scientists but reflects just how extraordinarily long-lived the species genuinely can be). Koi also recognize individual people and will learn to approach a familiar keeper at the pond's edge for food.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // This is a full outdoor pond build, not a tank — costs vary enormously
+    // by region, excavation needs, and whether you DIY or hire a contractor.
+    costs: {
+      setup: [
+        { item: "1,000+ gallon pond excavation and liner", low: 2000, high: 8000 },
+        { item: "Pond filtration system + UV clarifier", low: 300, high: 800 },
+        { item: "Aeration or waterfall pump", low: 100, high: 250 },
+        { item: "Predator netting", low: 50, high: 150 },
+      ],
+      annual: [
+        { item: "Seasonal koi pellets", low: 150, high: 300 },
+        { item: "Beneficial bacteria (spring startup)", low: 20, high: 40 },
+        { item: "Water test kit supplies", low: 30, high: 50 },
+      ],
+    },
     sections: {
       housing: "Koi belong in an outdoor pond, not an aquarium — plan for at least 1,000 gallons for even a small group, with a depth of 3 feet or more to protect them from predators and temperature extremes and to give them a stable refuge in winter. Strong pond filtration paired with a UV clarifier keeps water clear and biologically healthy at this scale. Adequate surface agitation from a waterfall, fountain, or dedicated aerator is essential for oxygen exchange, especially in summer heat. Predator netting protects koi from herons and raccoons, which are a real and common threat to outdoor ponds.",
       diet: "Koi are omnivores and do well on a high-quality floating koi pellet, with protein content that should be adjusted seasonally — lower protein in cooler spring and fall water, higher protein in summer. Feeding should stop entirely once water temperature drops below about 50 degrees F, since their metabolism slows dramatically and undigested food can cause serious internal problems. Occasional treats like shelled peas, watermelon, and orange slices are enjoyed in moderation. Feed only what is consumed within about five minutes to avoid foulling the water.",
@@ -109,6 +151,19 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
     funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "10+ gallon tank", low: 40, high: 80 },
+        { item: "Aquarium heater", low: 15, high: 25 },
+        { item: "Gentle filter", low: 15, high: 25 },
+        { item: "Dense live or silk plants", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Flake/micro-pellet food + frozen brine shrimp", low: 35, high: 60 },
+        { item: "Water conditioner", low: 10, high: 15 },
+      ],
+    },
     sections: {
       housing: "A 10-gallon tank is a reasonable minimum for a small group of guppies, and they need warm, heated water between 72 and 82 degrees F, with about 78 degrees F being ideal. Gentle filtration suits them well, and dense live or silk planting gives both adults and fry places to hide, which matters if you want any fry to survive to adulthood. A lid is a good idea since guppies can occasionally jump. They are peaceful community fish, but avoid pairing them with fin-nipping species, since a guppy's flowing tail is an easy target.",
       diet: "Guppies are omnivores that do well on a high-quality flake or micro-pellet food as their staple diet. Supplementing with frozen or live baby brine shrimp and daphnia adds valuable variety and encourages natural hunting behavior. Occasional spirulina-based flakes support healthy color. Feed small amounts once or twice a day. If you're intentionally raising fry, they need very fine food like infusoria, crushed flake, or baby brine shrimp until they're large enough for standard flake.",
@@ -142,6 +197,19 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The elegant Amazonian cichlid that pairs for life and rules its corner of the tank!",
     funFact: "Angelfish are cichlids that often form long-term monogamous breeding pairs, and unlike most fish, both parents cooperatively guard their eggs and fry — fanning them with fresh water and defending the territory together. Their tall, laterally flattened body shape is a natural adaptation for slipping between roots and plant stems in flooded Amazon forest, effectively letting them disguise themselves as a drifting leaf.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "29+ gallon tall tank", low: 100, high: 200 },
+        { item: "Aquarium heater", low: 20, high: 35 },
+        { item: "Moderate filtration", low: 30, high: 50 },
+        { item: "Driftwood and tall plants", low: 30, high: 60 },
+      ],
+      annual: [
+        { item: "Cichlid pellets/flakes + frozen bloodworms", low: 50, high: 90 },
+        { item: "Water test kit and conditioner", low: 20, high: 30 },
+      ],
+    },
     sections: {
       housing: "Angelfish need a tall tank — at least 29 to 30 gallons, with a height of 18 inches or more, since their body shape means vertical space matters as much as footprint. A group of five or six juveniles that will grow out and naturally pair off does best in 55 gallons or more. Keep water heated between 78 and 84 degrees F with moderate filtration. Vertical decor like driftwood and tall plants recreates the flooded forest roots they naturally shelter among, and dim lighting tends to suit them better than bright, direct light.",
       diet: "Angelfish are omnivores that do well on a high-quality cichlid pellet or flake as a dietary staple. Live or frozen bloodworms, brine shrimp, and daphnia provide valuable protein and support vivid color. Occasional blanched vegetables round out the diet. Feed once or twice daily, offering only what's consumed within a couple of minutes — breeding pairs in particular benefit from extra protein during and after spawning.",
@@ -175,6 +243,20 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine — a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Priced for a proper school of 6+, since they're obligate shoaling fish.
+    costs: {
+      setup: [
+        { item: "10-20+ gallon tank", low: 60, high: 120 },
+        { item: "Gentle filter", low: 20, high: 35 },
+        { item: "Soft sand or smooth fine gravel", low: 15, high: 25 },
+        { item: "Driftwood and plant cover", low: 20, high: 35 },
+      ],
+      annual: [
+        { item: "Sinking wafers + frozen bloodworms", low: 40, high: 70 },
+        { item: "Water conditioner", low: 10, high: 15 },
+      ],
+    },
     sections: {
       housing: "A 10 to 20 gallon tank suits a proper school, since corydoras are obligate shoaling fish that need at least six of the same species to feel secure. Soft sand substrate is essential — sharp or rough gravel damages their sensitive barbels, the whisker-like feelers they use to find food. Gentle filtration, driftwood, and plants for cover round out a good setup, kept at 72 to 78 degrees F with well-oxygenated water.",
       diet: "Corydoras are omnivorous bottom feeders that do best on sinking wafers or pellets formulated specifically for catfish. Supplement with blanched vegetables and frozen bloodworms or brine shrimp for variety. Feed in the evening, or make sure food reaches the bottom before faster mid-water fish eat it all — relying only on leftover flake food from other tankmates does not provide adequate nutrition for corydoras.",
@@ -209,6 +291,20 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment — it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Priced for a proper school of 6-10+.
+    costs: {
+      setup: [
+        { item: "10-20+ gallon tank", low: 60, high: 120 },
+        { item: "Aquarium heater", low: 15, high: 25 },
+        { item: "Gentle filter", low: 20, high: 35 },
+        { item: "Dense live plants", low: 20, high: 35 },
+      ],
+      annual: [
+        { item: "Micro-pellets + baby brine shrimp", low: 30, high: 50 },
+        { item: "Water test kit and conditioner", low: 15, high: 25 },
+      ],
+    },
     sections: {
       housing: "A 10 to 20 gallon tank works well for a proper school of 6 to 10 or more, since neon tetras are intensely shoaling fish that show visible stress in small numbers. Keep water heated between 72 and 78 degrees F with gentle filtration and current. Dense planting paired with some open swimming space, along with subdued lighting, mimics the dappled blackwater streams they come from. A stable, fully established tank is strongly preferred over a brand-new one, since neon tetras are notably sensitive to ammonia spikes.",
       diet: "Neon tetras are omnivores that do well on high-quality micro-pellets or crushed flake sized appropriately for their small mouths. Supplementing with baby brine shrimp or micro daphnia adds valuable variety. Feed small amounts once or twice a day — overfeeding fouls water quickly given how sensitive this species is to poor water quality relative to its tiny bioload.",
@@ -243,6 +339,19 @@ export const fishGuides = [
     petType: "Fish",
     tagline: "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!",
     funFact: "Oscars are sometimes nicknamed 'water dogs' because of how strongly they bond with and recognize individual keepers — learning to beg at the glass, follow a finger around the tank, and in some cases tolerate supervised hand-feeding, behavior that sets them apart from most other fish.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "55+ gallon tank (75+ for an adult)", low: 150, high: 350 },
+        { item: "Heavy-duty canister filter", low: 100, high: 200 },
+        { item: "Aquarium heater", low: 25, high: 45 },
+        { item: "Heavy driftwood and rock (digging-proof)", low: 40, high: 80 },
+      ],
+      annual: [
+        { item: "Cichlid pellets + occasional meaty treats", low: 80, high: 140 },
+        { item: "Water conditioner and test kit", low: 25, high: 40 },
+      ],
+    },
     sections: {
       housing: "A juvenile oscar needs at least 55 gallons, growing to 75 gallons or more as an adult, since they can reach 12 to 14 inches or longer. Heavy-duty filtration, ideally a large canister filter, is essential given how much waste they produce. Keep water heated between 74 and 81 degrees F, and use a secure lid, since oscars are powerful swimmers capable of knocking loose decor around. Choose only heavy, sturdy decor — driftwood and large rock — since oscars naturally dig and rearrange their tank, and lighter items get toppled or buried.",
       diet: "Oscars are carnivorous, predatory cichlids that do best on a high-quality cichlid pellet as their dietary staple. Avoid feeding an all-feeder-fish diet, which has been linked to nutritional deficiencies and disease transmission. Occasional treats like earthworms and prawns or shrimp add welcome variety. Feed once or twice daily, offering only what's consumed within a couple of minutes, since oscars are prone to obesity if overfed.",

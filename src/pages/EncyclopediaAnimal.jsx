@@ -26,7 +26,9 @@ function getRelatedFacts(animal) {
   const nameLower = animal.name.toLowerCase();
   return facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
-    return nameLower.includes(fAnimal) || fAnimal.split(' ').some(word => word.length > 3 && nameLower.includes(word));
+    // Whole-name containment only — matching on individual shared words
+    // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
+    return nameLower.includes(fAnimal) || fAnimal.includes(nameLower);
   }).slice(0, 3);
 }
 

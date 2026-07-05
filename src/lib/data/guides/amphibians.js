@@ -7,6 +7,22 @@ export const amphibianGuides = [
     petType: "Amphibians",
     tagline: "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in+ arboreal terrarium", low: 100, high: 200 },
+        { item: "Broad-leafed plants or artificial foliage", low: 25, high: 45 },
+        { item: "Cork bark and PVC pipe hides", low: 15, high: 30 },
+        { item: "Low-output UVB (T5 HO 5%)", low: 45, high: 80 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Gut-loaded live insect feeders", low: 80, high: 150 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+      ],
+    },
     sections: {
       housing: "A tall 18x18x24 inch or larger arboreal terrarium suits one to two adults. Provide plenty of broad-leafed plants or artificial foliage, cork bark, and PVC pipe sections for perching and hiding. These frogs like to perch up high during the day. Temperature should stay between 75 and 85 degrees F during the day, dropping to 65 to 75 degrees F at night. Never let temperatures exceed 90 degrees F. A low-output UVB (T5 HO 5% or Zoo Med 5.0 compact) is now strongly recommended by amphibian veterinarians and improves bone density and health outcomes. Humidity should be maintained at 50 to 70% during the day and 80 to 100% at night (mist in the evening to simulate natural humidity cycles).",
       diet: `White's tree frogs are insectivores. Feed live insects sized appropriately — no wider than the space between the frog's eyes. Dubia roaches are an excellent staple. Crickets, hornworms, silkworms, and black soldier fly larvae provide variety and different nutritional profiles. Waxworms are extremely high in fat and should be used only as occasional treats.
@@ -49,6 +65,22 @@ Provide broad-leafed plants or quality artificial foliage at different heights, 
     petType: "Amphibians",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "10-20 gallon terrarium", low: 40, high: 80 },
+        { item: "Deep coconut fiber or topsoil substrate", low: 15, high: 25 },
+        { item: "Low-wattage heat lamp/mat with thermostat", low: 30, high: 55 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Small shallow water dish", low: 5, high: 10 },
+        { item: "Feeding tongs", low: 8, high: 15 },
+      ],
+      annual: [
+        { item: "Gut-loaded live insects (dubia, crickets, earthworms)", low: 70, high: 130 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "Monthly substrate replacement", low: 30, high: 50 },
+      ],
+    },
     sections: {
       housing: "A 10 to 20 gallon terrarium is sufficient for a single adult. Pacman frogs are sedentary ambush predators that spend most of their time buried in moist substrate with just their eyes and mouth exposed. They do not need tall enclosures. They need deep (3 to 4 inch), very moist coconut fiber or organic topsoil substrate. The substrate must feel damp like a wrung-out sponge at all times. They absorb all their water through their skin and a dried-out Pacman frog will go into estivation (a state of dormancy) and potentially die. Temperature: 75 to 85 degrees F. Humidity: 70 to 90%.",
       diet: `Pacman frogs eat with reckless, impressive aggression. Offer appropriately sized live or freshly deceased prey: dubia roaches, crickets, and nightcrawlers (earthworms are an excellent nutritional staple) form the primary diet. Occasional pinky mice for large adult frogs and waxworms as very occasional treats are acceptable. Prey should be no larger than the width of the frog's head.
@@ -91,6 +123,21 @@ Observe rather than handle. Pacman frogs are display animals — watching them h
     petType: "Amphibians",
     tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
     funFact: "When threatened, fire-bellied toads perform the Unkenreflex: they arch their backs and flip their limbs upward to display the bright red and black warning coloration on their bellies. This 'unken' pose is a classic example of aposematism, advertising: 'I am toxic, do not eat me!'",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Priced for a small group (3-5), the natural social size for this species.
+    costs: {
+      setup: [
+        { item: "20-gallon paludarium (land + water sections)", low: 100, high: 200 },
+        { item: "Aquarium filter for water section", low: 25, high: 50 },
+        { item: "Live or artificial plants + cork bark", low: 30, high: 55 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Small live feeder insects", low: 60, high: 110 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+      ],
+    },
     sections: {
       housing: `A paludarium — a terrarium with both land and water sections — is the ideal and most natural setup for fire-bellied toads. A 20-gallon tank with approximately 60% water section and 40% land section works well for a group of 3 to 5 adults. The water section should be 3 to 4 inches deep with a small aquarium filter to keep the water clean between changes. The land section should feature moist coconut fiber substrate, sheet moss, and live or quality artificial plants.
 
@@ -141,6 +188,21 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
     petType: "Amphibians",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20-gallon long+ aquarium", low: 100, high: 200 },
+        { item: "Aquarium chiller (keeps water 60-68°F)", low: 150, high: 350 },
+        { item: "Gentle sponge or baffled canister filter", low: 30, high: 60 },
+        { item: "Caves, PVC pipes, and hides", low: 20, high: 40 },
+        { item: "Water test kit", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Nightcrawlers and carnivore pellets", low: 100, high: 180 },
+        { item: "Electricity (chiller running cost)", low: 100, high: 200 },
+        { item: "Water conditioner", low: 15, high: 25 },
+      ],
+    },
     sections: {
       housing: "Axolotls are fully aquatic. A 20-gallon long aquarium is the minimum for one adult (40 gallons preferred). Tank length matters more than height. Water temperature must stay between 60 and 68 degrees F. This is critical. Axolotls above 72 degrees F develop severe stress, immune failure, and fungal infections. In warm climates, a chiller is necessary. Use a gentle, low-flow filter (sponge filter or output baffled canister) as axolotls have delicate gills that are stressed by strong currents. Bare-bottom tanks or large river rocks (too big to swallow) are safest as substrates. Fine gravel is dangerous as axolotls can ingest it while eating, causing lethal impaction. Perform 20 to 25% water changes weekly.",
       diet: `Axolotls eat a carnivorous diet. The single best food for most axolotls is nightcrawlers (large earthworms from a bait shop or garden, provided they come from a pesticide-free source). Nightcrawlers are nutritionally complete, naturally scented, and accepted by virtually all axolotls. Cut to appropriate size for juveniles.
@@ -179,6 +241,22 @@ Occasional variety with frozen bloodworms (thawed), brine shrimp, daphnia, or si
     petType: "Amphibians",
     tagline: "North America's largest land-dwelling salamander and a remarkably personable pet!",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20-gallon long aquarium (terrestrial setup)", low: 80, high: 160 },
+        { item: "Deep moist substrate (coconut fiber, soil, moss)", low: 20, high: 40 },
+        { item: "Flat cork bark and rock hides", low: 15, high: 30 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Shallow soaking water dish", low: 8, high: 15 },
+      ],
+      annual: [
+        { item: "Nightcrawlers, crickets, and dubia roaches", low: 70, high: 130 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "Dechlorinated/RO water treatment", low: 15, high: 30 },
+        { item: "Annual vet check (exotic/amphibian)", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 20-gallon long aquarium is the recommended minimum for one adult tiger salamander, though 40 gallons is significantly better and allows more natural behavior. Longer, lower enclosures suit this ground-dwelling species better than tall enclosures. Provide deep substrate — 4 to 6 inches minimum — of a mix of coconut fiber, organic potting soil (no perlite, no fertilizer, no bark dyes), and sphagnum moss. Tiger salamanders are semi-fossorial: they will burrow into this substrate and spend significant time underground.
 

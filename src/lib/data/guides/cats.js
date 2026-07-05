@@ -9,6 +9,24 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "Core care principles that apply to every cat, every breed.",
     funFact: "Cats spend approximately 30 to 50% of their waking hours grooming themselves. This is not just cleanliness: grooming regulates body temperature, stimulates circulation, distributes natural oils, and is a bonding behavior between cats.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Litter boxes (one per cat + one extra)", low: 30, high: 60 },
+        { item: "Cat tree or vertical climbing space", low: 60, high: 120 },
+        { item: "Scratching posts", low: 20, high: 40 },
+        { item: "Food/water bowls or cat fountain", low: 20, high: 40 },
+        { item: "Carrier", low: 25, high: 45 },
+        { item: "Spay or neuter", low: 100, high: 300 },
+      ],
+      annual: [
+        { item: "AAFCO-approved cat food (wet + dry)", low: 400, high: 700 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Monthly flea prevention", low: 100, high: 180 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+        { item: "Dental hygiene routine", low: 20, high: 40 },
+      ],
+    },
     sections: {
       housing: "Indoor cats live dramatically longer (10 to 15 years average versus 2 to 5 years for outdoor cats) due to protection from cars, predators, disease, and injury. If outdoor access is desired, consider a supervised outdoor enclosure (catio) or leash walking. Indoors, cats need vertical space: cat trees, shelves, and window perches are not luxury items, they are necessary for a cat's mental health. Provide at least one litter box per cat plus one extra. Litter boxes must be scooped daily and fully emptied and cleaned monthly.",
       diet: "Cats are obligate carnivores: they require animal-sourced protein and cannot synthesize several essential nutrients (taurine, arachidonic acid, vitamin A) from plant sources. Feed a complete, AAFCO-approved wet, dry, or raw diet formulated for cats. Wet food is strongly preferred by veterinary nutritionists for hydration: cats evolved in deserts and have a low thirst drive. Cats that eat primarily dry food often live in a state of chronic mild dehydration, which contributes to urinary tract disease and kidney disease. Fresh water must always be available; many cats prefer moving water (cat fountains).",
@@ -41,6 +59,21 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The most common cat in the world, and often the healthiest.",
     funFact: "Domestic shorthairs are not a breed: they are mixed-breed cats with no pedigree. This genetic diversity (hybrid vigor) tends to make them hardier and longer-lived than many purebred cats, often reaching 15 to 20 years.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
+        { item: "Food/water bowls", low: 15, high: 25 },
+        { item: "Carrier", low: 25, high: 45 },
+        { item: "Spay or neuter", low: 100, high: 300 },
+      ],
+      annual: [
+        { item: "Complete AAFCO cat food (wet preferred)", low: 350, high: 600 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Monthly flea prevention", low: 100, high: 180 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Domestic shorthairs are highly adaptable to apartment and house living. They are generally robust, low-maintenance, and come in an enormous variety of personalities. Provide standard indoor enrichment: cat trees, perches, toys, and a clean litter box routine.",
       diet: "Feed a complete, balanced wet and dry food combination. No breed-specific dietary needs, but all cats benefit from wet food as a primary diet source for hydration. Monitor weight, as DSH cats can be prone to indoor-cat obesity.",
@@ -65,6 +98,21 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The gentle giant of the cat world, with a dog-like personality.",
     funFact: "Maine Coons are the largest domestic cat breed, with males reaching 18 to 25 lbs. They are known for a chirping, trilling vocalization instead of a typical meow, and many enjoy playing in water (unusual for cats).",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Sturdy large cat tree (rated 20+ lbs)", low: 100, high: 200 },
+        { item: "Grooming tools (long coat)", low: 25, high: 45 },
+        { item: "Litter boxes + scratching posts", low: 60, high: 120 },
+        { item: "HCM, SMA, and PKD DNA clearances", low: 150, high: 300 },
+      ],
+      annual: [
+        { item: "High-quality wet and dry food (large breed)", low: 450, high: 750 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Annual cardiac ultrasound (from age 2)", low: 150, high: 300 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Maine Coons are active, large cats that need space and sturdy cat furniture. Standard cat trees may be too flimsy for a 20 lb Maine Coon: invest in robust structures. They are sociable and do well with other pets and children. Their long, semi-water-repellent coat requires regular grooming.",
       diet: "Feed a high-quality protein-rich adult or large breed cat food. Maine Coons are large-framed but should not be obese: monitor body condition score. Their size means slow growth: they do not fully mature until 3 to 5 years of age. Wet food as a significant portion of the diet supports kidney health.",
@@ -91,6 +139,20 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The vocal, social, opinionated cat that demands to be part of everything.",
     funFact: "Siamese cats are one of the oldest and most recognizable cat breeds in the world, believed to originate in ancient Thailand (then Siam). Their distinctive color-point pattern (darker face, ears, paws, and tail) is caused by a temperature-sensitive enzyme: cooler areas of the body produce more pigment.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
+        { item: "Puzzle feeders and interactive toys", low: 25, high: 45 },
+        { item: "Warm bedding (sensitive to cold)", low: 20, high: 40 },
+      ],
+      annual: [
+        { item: "Complete wet and dry cat food", low: 350, high: 600 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Annual wellness exam with bloodwork (from age 7)", low: 150, high: 300 },
+        { item: "Dental hygiene routine", low: 20, high: 40 },
+      ],
+    },
     sections: {
       housing: "Siamese are extremely social and do not tolerate being left alone for long periods. They are best in homes where someone is home frequently, or with another cat companion. They are highly vocal and will 'talk' loudly and persistently when bored, lonely, or wanting attention. This is normal breed behavior, not a problem to be suppressed.",
       diet: "Feed a complete, balanced wet and dry diet. Siamese have no specific breed dietary needs, but wet food is important for hydration as with all cats. They tend to be leaner than many breeds: monitor weight but do not underfeed. Their lower body fat makes them more sensitive to cold.",
@@ -117,6 +179,20 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The floppy, gentle giant that goes limp when you pick them up.",
     funFact: "Ragdolls get their name from their distinctive tendency to go completely limp and relaxed when picked up. This trait appears to be genetic, as it is consistently present in the breed from kittenhood.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
+        { item: "Grooming tools (long silky coat)", low: 25, high: 45 },
+        { item: "HCM DNA clearance from breeder", low: 100, high: 200 },
+      ],
+      annual: [
+        { item: "Kitten/all-life-stages food (until age 4) or adult food", low: 400, high: 700 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Annual cardiac ultrasound (from age 2)", low: 150, high: 300 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Ragdolls are calm, gentle, and well-suited to quiet indoor homes. They are not highly active cats and prefer lounging on soft surfaces and in laps. Their long, silky coat requires regular brushing (2 to 3 times per week) to prevent matting. They are known to greet owners at the door like dogs and follow family members from room to room.",
       diet: "Feed a high-quality wet and dry food combination. Ragdolls are large cats (males can reach 15 to 20 lbs) but should not be obese. Their slow maturation (full size at 4 years) means they benefit from a kitten or all-life-stages food until age 4. Wet food is important for urinary health.",
@@ -143,6 +219,21 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The wild-looking, highly athletic cat that needs an active owner.",
     funFact: "Bengal cats are a hybrid breed created by crossing domestic cats with the Asian Leopard Cat. Their striking spotted or marbled coat is a direct result of this wild ancestry. Early generation Bengals (F1 to F3) can be quite wild in behavior: pet Bengals are typically F4 generation or later.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Large sturdy multi-level cat furniture", low: 120, high: 250 },
+        { item: "Catio or secure outdoor access materials", low: 200, high: 600 },
+        { item: "Leash and harness", low: 20, high: 35 },
+        { item: "PRA-b DNA clearance from breeder", low: 100, high: 200 },
+      ],
+      annual: [
+        { item: "High-protein wet food (primary diet)", low: 450, high: 750 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Annual HCM screening (from age 2)", low: 150, high: 300 },
+        { item: "Annual vet exam + fecal parasite testing", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Bengals are high-energy, athletic cats that need significantly more space and activity than typical domestic cats. They climb, leap, and run constantly. Catios, leash walking, and large multi-level cat furniture are important. They are known to turn on faucets, open cabinets, and learn how to operate lever-style door handles. Bengal-proof your home like you would for a curious toddler.",
       diet: "Bengals often do well on a high-protein, grain-free diet that aligns with their semi-wild ancestry. Many Bengal owners feed raw or high-meat wet food as the primary diet. As with all cats, AAFCO compliance and nutritional completeness are essential. Wet food is important for urinary health.",
@@ -171,6 +262,20 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The luxurious, calm lap cat with significant grooming requirements.",
     funFact: "Persian cats have been selectively bred for their flat faces (brachycephaly) for over 100 years. The modern 'extreme' or 'peke-faced' Persian has a nose set so far back that it is level with the inner corners of the eyes, which causes significant health problems not present in traditional Persians.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Litter boxes + low furniture/perches", low: 90, high: 180 },
+        { item: "Daily grooming tools (brushes, combs)", low: 25, high: 50 },
+        { item: "PKD DNA clearance from breeder", low: 100, high: 200 },
+      ],
+      annual: [
+        { item: "Brachycephalic-friendly wet/dry food", low: 400, high: 650 },
+        { item: "Litter", low: 150, high: 250 },
+        { item: "Annual HCM screening (from age 2)", low: 150, high: 300 },
+        { item: "Annual vet exam (dental + BOAS assessment)", low: 180, high: 350 },
+      ],
+    },
     sections: {
       housing: "Persians are calm, quiet, and well-suited to peaceful indoor environments. They are not athletic or demanding of exercise. They prefer to stay low (they do not typically climb or jump as much as other breeds). Their long, dense coat mats easily and requires daily grooming. Keep them away from humid environments which can cause skin fold dermatitis.",
       diet: "Feed a complete, balanced wet and dry food. Flat-faced Persians may have difficulty picking up and chewing standard dry kibble shapes: flat or small kibble designed for brachycephalic cats is available. Wet food is important for hydration. Monitor weight as Persians are relatively inactive.",

@@ -40,7 +40,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "boa-constrictor", name: "Boa Constrictor", scientific: "Boa spp.",
-    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "boa-constrictor", available: true, image: "/assets/guides/boa-constrictor.jpg",
+    category: "Snakes", emoji: "🐍", difficulty: "Intermediate/Advanced", guideId: "boa-constrictor", available: true, image: "/assets/guides/boa-constrictor.jpg",
     bio: {
       overview: "Boa constrictors are large, heavy-bodied snakes distributed from Mexico through Central and South America to Caribbean island populations. As ambush predators they use constriction to subdue prey — squeezing until the prey's circulatory system stops, rather than suffocating it as once thought. They are viviparous (live-bearing), with females giving birth to litters of up to 60 live young.",
       origin: "Mexico, Central America, South America, and Caribbean islands",

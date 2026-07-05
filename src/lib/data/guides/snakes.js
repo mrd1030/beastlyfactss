@@ -8,6 +8,25 @@ export const snakeGuides = [
     image: "/assets/guides/hognose-snake.jpg",
     tagline: "The drama queen of snakes: all bluff and zero bite!",
     funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x18x18 in enclosure", low: 100, high: 180 },
+        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
+        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
+        { item: "Water dish", low: 8, high: 15 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+        { item: "Branches and cork bark", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice", low: 60, high: 120 },
+        { item: "Substrate replacement", low: 30, high: 50 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 36x18x18" or 36x18x12" enclosure with 4 to 6 inches of deep, loose substrate is the appropriate setup for an adult western hognose snake. Hognoses are fossorial (burrowing) animals that spend significant time underground in the wild. Deep substrate is not optional — it allows natural burrowing behavior, provides thermal insulation, and gives the snake psychological security.
 
@@ -56,6 +75,25 @@ Respiratory infections can result from temperatures that are too low or a substr
     image: "/assets/guides/ball-python.jpg",
     tagline: "The gentle noodle that curls into a perfect ball when shy!",
     funFact: "Ball pythons can go up to 6 months without eating (though they shouldn't have to). When scared, they curl into a tight ball to protect their head, hence the name!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft PVC or wood enclosure", low: 150, high: 300 },
+        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
+        { item: "Two snug hides", low: 15, high: 30 },
+        { item: "Large soak-able water dish", low: 15, high: 25 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Coconut fiber or cypress mulch substrate", low: 20, high: 30 },
+        { item: "Spray bottle", low: 5, high: 10 },
+        { item: "Cork bark and branches", low: 20, high: 40 },
+      ],
+      annual: [
+        { item: "Frozen/thawed rats or mice", low: 100, high: 180 },
+        { item: "Substrate replacement", low: 30, high: 50 },
+        { item: "Electricity (heat)", low: 50, high: 90 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `Adult ball pythons require a minimum 4x2x2 ft enclosure (approximately 120 gallons equivalent). Smaller enclosures are frequently cited as the cause of the most common ball python husbandry problems: feeding refusals, chronic stress, and poor immune health. Despite their reputation as small snakes, ball pythons are muscular, heavy-bodied animals that need room to move, explore, and thermoregulate.
 
@@ -104,6 +142,25 @@ Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and py
     image: "/assets/guides/corn-snake.jpg",
     tagline: "The curious, colorful beginner snake that never stops exploring!",
     funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
+        { item: "Heat source with thermostat", low: 35, high: 60 },
+        { item: "Two hides", low: 15, high: 25 },
+        { item: "Soak-able water dish", low: 10, high: 15 },
+        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
+        { item: "Digital thermometer", low: 15, high: 20 },
+        { item: "Branches for climbing", low: 15, high: 25 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice and small rats", low: 80, high: 150 },
+        { item: "Substrate replacement", low: 25, high: 40 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 4x2x2 ft enclosure is appropriate for most adult corn snakes. Despite being considered a beginner species, corn snakes benefit from generous space — they are active, curious, and will use every inch of an enriched enclosure. Corn snakes are notorious and highly capable escape artists. Ensure every single seam, lid hinge, and ventilation gap is secured. They can compress their bodies and squeeze through openings that seem impossibly small.
 
@@ -147,12 +204,30 @@ Escape prevention is not a health issue per se, but an escaped corn snake is at 
     id: "boa-constrictor",
     name: "Boa Constrictor",
     emoji: "🐍",
-    difficulty: "Intermediate",
-    difficulty: "Advanced",
+    difficulty: "Intermediate/Advanced",
     petType: "Snakes",
     image: "/assets/guides/boa-constrictor.jpg",
     tagline: "The powerful, graceful heavyweight of the pet snake world!",
     funFact: "Boa constrictors can sense the heartbeat of their prey using heat-sensitive pits. They literally feel your pulse!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "6x3x3 ft+ PVC or wood enclosure", low: 300, high: 600 },
+        { item: "Heat source + quality thermostat", low: 50, high: 90 },
+        { item: "Multiple large hides", low: 30, high: 60 },
+        { item: "Large soak-able water dish", low: 25, high: 40 },
+        { item: "Cypress mulch or coconut fiber substrate", low: 30, high: 50 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Sturdy climbing branches", low: 30, high: 50 },
+        { item: "Mist system or spray bottle", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Frozen/thawed large prey items", low: 150, high: 300 },
+        { item: "Substrate replacement", low: 50, high: 80 },
+        { item: "Electricity (heat)", low: 70, high: 120 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `Adult boa constrictors require a minimum 6x3x3 ft enclosure, and many adults — particularly female Colombian boas, which regularly exceed 8 ft — will benefit from 8x4x4 ft or larger. Boa constrictors are heavy-bodied, powerful snakes that deserve generous space. PVC or wooden enclosures retain heat and humidity far better than glass and are strongly preferred.
 
@@ -201,6 +276,25 @@ Annual veterinary wellness checks are strongly recommended, particularly for adu
     image: "/assets/guides/california-kingsnake.jpg",
     tagline: "The boldly banded beginner snake that becomes a gem with handling!",
     funFact: "Kingsnakes are immune to the venom of rattlesnakes, copperheads, and cottonmouths, and they actively hunt and eat other snakes, including venomous ones! The name 'King' is well earned.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
+        { item: "Under-tank heater with thermostat", low: 35, high: 60 },
+        { item: "Two snug hides", low: 15, high: 25 },
+        { item: "Aspen or cypress mulch substrate", low: 15, high: 25 },
+        { item: "Soak-able water dish", low: 10, high: 15 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+        { item: "Digital thermometer", low: 15, high: 20 },
+        { item: "Branches for enrichment", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice", low: 80, high: 150 },
+        { item: "Substrate replacement", low: 25, high: 40 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 4x2x2 ft enclosure is appropriate for most adult California kingsnakes. This species is active and curious and will use all available space meaningfully. California kingsnakes are determined, persistent escape artists — they methodically test every seam, hinge, and gap. A lockable lid is essential. Check all seams regularly.
 
@@ -248,6 +342,25 @@ Escape prevention is a practical safety issue — an escaped kingsnake faces col
     image: "/assets/guides/milk-snake.jpg",
     tagline: "The brilliantly banded mimic that wears venomous colors with no venom required!",
     funFact: "Milk snakes are harmless, but their red, black, and yellow banding mimics the deadly coral snake: a survival trick called Batesian mimicry. The rhyme 'Red touch yellow, kill a fellow; red touch black, friend of Jack' helps tell them apart!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "3x1.5x1.5 ft to 4x2x2 ft enclosure", low: 100, high: 250 },
+        { item: "Under-tank heater with thermostat", low: 35, high: 60 },
+        { item: "Multiple snug hides", low: 15, high: 25 },
+        { item: "Aspen shavings substrate", low: 15, high: 25 },
+        { item: "Soak-able water dish", low: 8, high: 15 },
+        { item: "Digital thermometer", low: 15, high: 20 },
+        { item: "Cork bark and branches", low: 15, high: 25 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice", low: 70, high: 130 },
+        { item: "Substrate replacement", low: 25, high: 40 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 3x1.5x1.5 ft to 4x2x2 ft enclosure suits most adult milk snakes depending on subspecies — they range from a compact 2 ft (scarlet king subspecies) to over 5 ft (Sinaloan milk snake). Milk snakes are secretive, semi-fossorial animals that spend most of their time hidden. Multiple snug hides are essential.
 

@@ -14,7 +14,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "rabbit", name: "Rabbit", scientific: "Oryctolagus cuniculus",
-    category: "Small Mammals", emoji: "🐰", difficulty: "Intermediate", guideId: "rabbit", available: true, image: "/assets/guides/rabbit.jpg",
+    category: "Small Mammals", emoji: "🐰", difficulty: "Beginner/Intermediate", guideId: "rabbit", available: true, image: "/assets/guides/rabbit.jpg",
     bio: {
       overview: "The European rabbit is the ancestor of all domestic rabbit breeds — over 300 recognized worldwide. Originally native to the Iberian Peninsula, they were spread across Europe by the Romans and introduced globally by colonizers, becoming one of the world's most ecologically impactful invasive species in places like Australia. In the wild they live in large, complex underground warrens with strict social hierarchies.",
       origin: "Iberian Peninsula (Spain, Portugal); domesticated globally",
@@ -40,7 +40,7 @@ export const smallMammalEncyclopedia = [
   },
   {
     id: "chinchilla", name: "Chinchilla", scientific: "Chinchilla lanigera",
-    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate", guideId: "chinchilla", available: true, image: "/assets/guides/chinchilla.jpg",
+    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate/Advanced", guideId: "chinchilla", available: true, image: "/assets/guides/chinchilla.jpg",
     bio: {
       overview: "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered — their extraordinarily dense fur (up to 80 hairs per follicle, versus 2–3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
       origin: "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",

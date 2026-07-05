@@ -29,8 +29,9 @@ export default function GuideDetail() {
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
     const gName = guide.name.toLowerCase();
-    const gWords = gName.split(' ');
-    return gName.includes(fAnimal) || fAnimal.split(' ').some(w => w.length > 3 && gWords.includes(w));
+    // Whole-name containment only — matching on individual shared words
+    // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
+    return gName.includes(fAnimal) || fAnimal.includes(gName);
   }).slice(0, 3) : [];
 
   // Modal keyboard handling: Escape closes, Tab is trapped inside, and focus
@@ -174,8 +175,8 @@ export default function GuideDetail() {
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Guide not found</h2>
-          <Link to="/encyclopedia/" className="text-secondary text-sm font-display font-semibold hover:underline">
-            Browse the encyclopedia →
+          <Link to="/guides/" className="text-secondary text-sm font-display font-semibold hover:underline">
+            Browse all guides →
           </Link>
         </div>
       </div>
@@ -199,7 +200,7 @@ export default function GuideDetail() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://beastlyfacts.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Encyclopedia & Guides", "item": "https://beastlyfacts.com/encyclopedia/" },
+      { "@type": "ListItem", "position": 2, "name": "Care Guides", "item": "https://beastlyfacts.com/guides/" },
       { "@type": "ListItem", "position": 3, "name": `${guide.name} Care Guide`, "item": canonicalUrl },
     ],
   };
@@ -248,10 +249,10 @@ export default function GuideDetail() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
         <Link
-          to="/encyclopedia/"
+          to="/guides/"
           className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
         >
-          <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
+          <ArrowLeft className="w-4 h-4" /> Back to Guides
         </Link>
 
         {/* Header */}

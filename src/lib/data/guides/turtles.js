@@ -8,6 +8,26 @@ export const turtleGuides = [
     image: "/assets/guides/red-eared-slider.jpg",
     tagline: "The iconic pet turtle that grows much larger than the pet store suggests!",
     funFact: "Red-eared sliders are one of the world's most invasive species. Released or escaped pets have established populations on every continent except Antarctica!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "100+ gallon enclosure or pond setup", low: 300, high: 700 },
+        { item: "Powerful canister filter (2-3x tank volume)", low: 120, high: 250 },
+        { item: "Large basking platform", low: 25, high: 50 },
+        { item: "Strong UVB (T5 HO)", low: 60, high: 100 },
+        { item: "Basking heat lamp", low: 20, high: 40 },
+        { item: "Submersible water heater", low: 30, high: 60 },
+        { item: "Water quality test kit", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Commercial turtle pellets", low: 40, high: 80 },
+        { item: "Dark leafy greens", low: 60, high: 100 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Filter media replacement", low: 40, high: 80 },
+        { item: "Electricity (filter, heat, lighting)", low: 100, high: 180 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `The standard rule for red-eared slider housing is 10 gallons of water capacity per inch of shell length. A 10-inch adult female (females grow significantly larger than males) needs a 100-gallon or larger aquarium or stock tank. Many experienced keepers house adults in outdoor ponds in appropriate climates, which is close to ideal. The pet store 10-gallon starter kits sold with hatchlings are inadequate within months.
 
@@ -56,6 +76,25 @@ Metabolic bone disease from inadequate UVB causes soft shell and skeletal deform
     image: "/assets/guides/russian-tortoise.jpg",
     tagline: "The compact, hardy tortoise that can live over 50 years with proper care!",
     funFact: "Russian tortoises are one of the world's most cold-tolerant tortoise species. They can survive sub-zero temperatures in the wild by hibernating (brumating) deep underground for months at a time!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Tortoise table or outdoor pen", low: 150, high: 350 },
+        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 100 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Deep substrate (topsoil/sand or coir/sand mix)", low: 25, high: 50 },
+        { item: "Secure high walls (escape-proof)", low: 30, high: 60 },
+        { item: "Shallow water dish", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Dark leafy greens and edible weeds", low: 100, high: 200 },
+        { item: "Grass hay (unlimited access)", low: 40, high: 80 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Electricity (heat and lighting)", low: 60, high: 100 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: "A minimum 4x4 ft outdoor enclosure or 4x2 ft indoor tortoise table is needed for one adult. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 90 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
       diet: `Russian tortoises are almost entirely herbivorous. The foundation of the diet is unlimited grass hay (Timothy, orchard, or meadow) and a wide variety of dark leafy greens and edible weeds: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Weeds and fibrous leafy greens are the most nutritionally appropriate foods and should dominate the diet.
@@ -103,6 +142,25 @@ Hibernation (brumation) is natural and important for Russian tortoises. Animals 
     image: "/assets/guides/sulcata-tortoise.jpg",
     tagline: "The third-largest tortoise: a lifetime commitment that may outlive you!",
     funFact: "Sulcata tortoises (African spurred tortoises) are the third-largest tortoise species on Earth. A hatchling the size of a ping-pong ball can grow to over 100 lbs and 3 feet long, in the same home!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Adult outdoor housing varies enormously (fencing, heated shelter
+    // construction), so these numbers are wide on purpose.
+    costs: {
+      setup: [
+        { item: "Indoor tortoise table (for hatchlings/juveniles)", low: 150, high: 300 },
+        { item: "Outdoor enclosure materials + buried fencing", low: 300, high: 1500 },
+        { item: "Heated shelter (materials + heater)", low: 200, high: 600 },
+        { item: "Strong UVB (Arcadia 12%, indoor setups)", low: 60, high: 100 },
+        { item: "Basking bulb", low: 20, high: 40 },
+      ],
+      annual: [
+        { item: "Grass hay (Bermuda, orchard, Timothy)", low: 100, high: 200 },
+        { item: "Edible weeds and leafy greens", low: 60, high: 120 },
+        { item: "Calcium supplements", low: 15, high: 25 },
+        { item: "Electricity (heated shelter)", low: 150, high: 350 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: "Baby sulcatas can start indoors, but adults require large outdoor enclosures. Adults need at least 100+ square feet of outdoor space, and many keepers give them an entire yard. Outdoor walls must be buried 12 to 18 inches underground (they will dig under anything). A heated shelter with temperatures maintained at 60 degrees F+ is essential for cooler climates. Indoor basking spot: 95 to 105 degrees F. Strong UVB (Arcadia 12%) is mandatory. These tortoises will eventually demolish most enclosure furniture. Plan accordingly.",
       diet: `Sulcata tortoises require a high-fiber, very low protein, low sugar diet. The primary food source should be grass — Bermuda grass, orchard grass, Timothy hay, and other grass hays make up 70 to 80% of the diet. Unlimited hay must always be available. An outdoor enclosure with natural grass pasture is the ideal setup.
@@ -150,6 +208,23 @@ Sulcatas regularly outlive their owners — they can live 70 to 150+ years. This
     image: "/assets/guides/box-turtle.jpg",
     tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
     funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Outdoor enclosure or large tortoise table", low: 150, high: 400 },
+        { item: "UVB (T5 HO Arcadia 6-12%)", low: 60, high: 100 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Deep moist substrate (coconut coir/topsoil)", low: 25, high: 45 },
+        { item: "Shallow soak dish", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Earthworms, insects, and produce", low: 100, high: 180 },
+        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Electricity (heat and lighting)", low: 50, high: 90 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: "Box turtles do best in large outdoor enclosures with natural soil, plants, and varied terrain. A minimum 4x8 ft for one adult, bigger is always better. Walls must be buried 6 to 12 inches underground. Provide a shallow water dish they can soak in (but not deep enough to drown), hiding spots under logs and leaf litter, and moist areas for burrowing. Indoor setups require a large tortoise table with UVB (T5 HO Arcadia 6 to 12%), a basking spot (85 to 88 degrees F), and deep, moist substrate (coconut coir/topsoil mix, 6 inches or more deep).",
       diet: `Box turtles are true omnivores with broad dietary needs. A balanced diet consists of roughly 50% animal protein sources and 50% plant matter. Protein sources include earthworms (the single best protein for most turtles), crickets, dubia roaches, slugs, occasional cooked lean meat, and feeder fish. Plant matter includes dark leafy greens, various berries, mushrooms, flowers, and soft fruits.

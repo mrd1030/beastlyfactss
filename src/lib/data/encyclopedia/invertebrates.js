@@ -66,7 +66,7 @@ export const invertebrateEncyclopedia = [
   },
   {
     id: "emperor-scorpion", name: "Emperor Scorpion", scientific: "Pandinus imperator",
-    category: "Invertebrates", emoji: "🦂", difficulty: "Beginner", guideId: "emperor-scorpion", available: true,
+    category: "Invertebrates", emoji: "🦂", difficulty: "Beginner/Intermediate", guideId: "emperor-scorpion", available: true,
     bio: {
       overview: "The emperor scorpion is one of the largest scorpion species in the world and the most widely kept scorpion as a pet. Native to the tropical rainforest and savanna of West Africa, they are surprisingly mild-mannered compared to many smaller species. Under UV light their exoskeleton fluoresces a vivid blue-green — a phenomenon related to compounds in the cuticle whose precise function is still debated. Their venom is relatively weak for their size.",
       origin: "West Africa (Senegal, Guinea-Bissau, Ghana, Nigeria, Togo, Benin)",

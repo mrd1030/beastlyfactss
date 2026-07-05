@@ -12,6 +12,23 @@ export const dogGuides = [
     sizeCategory: "All Sizes",
     tagline: "Everything every dog owner needs to know, regardless of breed.",
     funFact: "Dogs have a sense of smell that is 10,000 to 100,000 times more powerful than a human's. They can detect certain diseases, including cancer, diabetes, and epileptic seizures, through scent alone.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Properly sized crate", low: 50, high: 120 },
+        { item: "Dog bed", low: 30, high: 70 },
+        { item: "Food and water bowls", low: 15, high: 25 },
+        { item: "Collar with ID tag + microchip", low: 60, high: 90 },
+        { item: "Leash", low: 15, high: 25 },
+        { item: "Puzzle feeders and enrichment toys", low: 25, high: 45 },
+      ],
+      annual: [
+        { item: "AAFCO-approved dog food", low: 350, high: 600 },
+        { item: "Heartworm, flea, and tick prevention", low: 200, high: 350 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+        { item: "Dental chews/toothpaste", low: 20, high: 40 },
+      ],
+    },
     sections: {
       housing: "Dogs need a safe, comfortable space of their own: a crate or dog bed in a low-traffic area works well. Crate training is not cruel when done correctly. It gives dogs a secure den and prevents destructive behavior when unsupervised. Size matters: your dog should be able to stand, turn around, and lie down comfortably. Keep sleeping areas clean, dry, and away from drafts. Puppies and senior dogs may need extra warmth.",
       diet: "Feed a complete, AAFCO-approved commercial dog food appropriate for your dog's life stage (puppy, adult, senior) and size (small, medium, large, giant breed). Protein should be the first ingredient. Avoid artificial preservatives, excessive fillers, and foods toxic to dogs: grapes, raisins, onions, garlic, xylitol, chocolate, macadamia nuts, and cooked bones. Fresh water must always be available. Measure portions by weight using feeding guidelines on the packaging as a starting point, adjusted for your individual dog's body condition score.",
@@ -44,6 +61,22 @@ export const dogGuides = [
     sizeCategory: "Small",
     tagline: "Big personalities in a tiny package. Know their specific needs!",
     funFact: "Small dogs typically live significantly longer than large breeds. Chihuahuas and Dachshunds regularly reach 15 to 18 years, while Great Danes average only 7 to 10 years. The reason is not fully understood, but metabolic rate differences are thought to play a role.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Small crate + bed", low: 50, high: 100 },
+        { item: "Harness (prevents tracheal strain)", low: 15, high: 30 },
+        { item: "Small-sized puzzle feeders and toys", low: 20, high: 35 },
+        { item: "Dog jacket for cold weather", low: 15, high: 30 },
+        { item: "Collar with ID tag + microchip", low: 60, high: 90 },
+      ],
+      annual: [
+        { item: "Small/toy breed dog food", low: 200, high: 350 },
+        { item: "Heartworm, flea, and tick prevention", low: 150, high: 250 },
+        { item: "Annual vet exam (dental + patella focus)", low: 150, high: 250 },
+        { item: "Dental care (brushing supplies/chews)", low: 20, high: 40 },
+      ],
+    },
     sections: {
       housing: "Small dogs (under 20 lbs) are well-suited to apartments and smaller homes, but still need daily walks and indoor enrichment. Their small size means they can get cold quickly in winter: consider a dog jacket for outdoor walks below 45 degrees F. Watch for 'small dog syndrome' -- a pattern where small dogs are allowed behaviors (jumping, snapping, demanding) that would be corrected in large breeds. Consistent training matters regardless of size.",
       diet: "Small breeds have faster metabolisms and higher caloric needs per pound than large breeds. Feed a small-breed specific formula with smaller kibble size, which is easier on small jaws. Small dogs are prone to obesity from overfeeding or excess treats, which puts serious strain on their joints and organs. Hypoglycemia (low blood sugar) can affect toy breeds, especially puppies: feed multiple small meals daily and monitor closely.",
@@ -74,6 +107,22 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The 'just right' size with its own unique needs.",
     funFact: "Medium-sized dogs (roughly 20 to 60 lbs) often show the most behavioral versatility. Studies show they tend to score higher on trainability assessments, possibly because they were historically bred for working roles that required responsiveness to human cues.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Crate or dog bed (full-stretch size)", low: 80, high: 150 },
+        { item: "Food and water bowls", low: 15, high: 25 },
+        { item: "Flat collar + harness + leash", low: 25, high: 45 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "Puzzle feeders", low: 25, high: 45 },
+      ],
+      annual: [
+        { item: "Medium/adult breed dog food", low: 350, high: 550 },
+        { item: "Heartworm, flea, and tick prevention", low: 200, high: 300 },
+        { item: "Annual wellness vet exam", low: 150, high: 300 },
+        { item: "Dental hygiene routine", low: 25, high: 40 },
+      ],
+    },
     sections: {
       housing: "Medium breeds (20 to 60 lbs) adapt well to most living situations given adequate exercise. They can thrive in apartments with 2 or more dedicated walks per day. Provide a dog bed or crate that allows them to fully stretch out. Medium dogs are often very social and do not do well isolated for 8 or more hours daily: consider doggy daycare or a midday walk if you work long hours.",
       diet: "Feed a complete, AAFCO-approved food formulated for medium breeds or adult dogs. Portion control matters: medium dogs are prone to obesity, especially after spaying or neutering. Use a measuring cup, not a scoop guess. Avoid free-feeding (leaving food out all day). Feed twice daily for adult dogs. High-quality protein sources should lead the ingredient list.",
@@ -104,6 +153,23 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "More dog to love, and more responsibility to match.",
     funFact: "Large and giant breed puppies must be fed specific large-breed puppy food that is lower in calcium and calories to prevent too-rapid bone growth, which can cause lifelong joint problems. Never feed giant breed puppies regular puppy food.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "XL crate (42-54 in)", low: 150, high: 300 },
+        { item: "XL orthopedic dog bed", low: 80, high: 150 },
+        { item: "Raised food bowl", low: 20, high: 35 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "Orthopedic rugs/ramps for slippery floors", low: 40, high: 80 },
+      ],
+      annual: [
+        { item: "Large breed dog food", low: 500, high: 900 },
+        { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
+        { item: "Annual vet exam + hip/joint screening", low: 200, high: 400 },
+        { item: "Joint supplements (glucosamine/chondroitin)", low: 100, high: 200 },
+        { item: "Dental hygiene routine", low: 30, high: 50 },
+      ],
+    },
     sections: {
       housing: "Large breeds (60 lbs and up) need adequate space to move comfortably. A large crate (often 42 to 54 inches) that allows them to stand and turn around is important. Giant breeds like Great Danes and Saint Bernards need extra-large, orthopedic beds to protect their joints. Stairs and slippery floors can be hard on large-breed hips: use rugs and consider ramps for senior dogs.",
       diet: "Feed large breed specific food to control calcium/phosphorus ratios and growth rate (critical for puppies). Avoid overfeeding: obesity is devastating to large breed joints. Do NOT feed large breed puppies regular puppy food, which promotes too-rapid growth and increases risk of hip and elbow dysplasia. Giant breeds should eat from a raised bowl to reduce neck strain, though note this does not clearly prevent bloat. Feed twice daily rather than once.",
@@ -136,6 +202,21 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "The world's most popular dog breed, and for good reason!",
     funFact: "Labs are famously food-motivated because many carry a mutation in the POMC gene, which regulates hunger signals. This means many Labs genuinely never feel full, making them highly trainable but also prone to obesity.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Large crate + bed", low: 120, high: 250 },
+        { item: "Durable chew toys (powerful chewers)", low: 30, high: 60 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "OFA hip/elbow screening (around age 2)", low: 150, high: 300 },
+      ],
+      annual: [
+        { item: "Large breed dog food (precise portioning)", low: 450, high: 750 },
+        { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
+        { item: "Annual wellness exam with weight monitoring", low: 150, high: 300 },
+        { item: "Dental hygiene routine", low: 25, high: 40 },
+      ],
+    },
     sections: {
       housing: "Labs are highly adaptable and thrive in homes with yards, but can do well in larger apartments with sufficient daily exercise (60 to 90 minutes minimum). They are mouthy puppies who chew: manage this with appropriate chew toys and not leaving them unsupervised near shoes, furniture, or wiring.",
       diet: "Labs are one of the most obesity-prone breeds due to the POMC gene mutation. Strict portion control is essential from puppyhood. Measure food precisely, limit treats to 10% of daily calories, and keep them at a lean body condition score (ribs easily felt but not seen). Obesity dramatically worsens hip dysplasia, one of the breed's major health concerns.",
@@ -164,6 +245,22 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "Gentle, joyful, and endlessly loyal: the golden retriever.",
     funFact: "Goldens have an unusually high rate of cancer compared to other breeds: studies suggest up to 60% of Golden Retrievers will die from cancer. The Morris Animal Foundation is running the largest canine health study in history specifically to investigate this.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Large crate + bed", low: 120, high: 250 },
+        { item: "Grooming supplies (heavy shedding coat)", low: 30, high: 60 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "OFA hip/elbow + cardiac screening", low: 150, high: 300 },
+      ],
+      annual: [
+        { item: "Large breed high-quality dog food", low: 450, high: 750 },
+        { item: "Fish oil / omega-3 supplement", low: 30, high: 60 },
+        { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
+        { item: "Annual exam + cancer screening bloodwork (age 5+)", low: 200, high: 400 },
+        { item: "Dental hygiene routine", low: 25, high: 40 },
+      ],
+    },
     sections: {
       housing: "Goldens are family-oriented dogs that do not do well in isolation. They thrive with access to a yard for play but adapt to apartment life with sufficient daily exercise. Their long, double coat means significant shedding year-round, with heavy seasonal blowouts. Regular brushing (3 to 4 times per week) and a good vacuum are essential.",
       diet: "Feed a high-quality large breed adult food. Like Labs, Goldens are prone to obesity: monitor weight carefully. Some Goldens have food sensitivities and do better on limited-ingredient or novel protein diets. Omega-3 supplementation (fish oil) is beneficial for skin, coat, and joint health.",
@@ -192,6 +289,21 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "One of the world's most versatile and intelligent working dogs.",
     funFact: "German Shepherds consistently rank among the top 3 most intelligent dog breeds. They are the most common breed used as police, military, search and rescue, and guide dogs due to their unmatched combination of intelligence, trainability, loyalty, and physical capability.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Large crate + bed", low: 120, high: 250 },
+        { item: "Grooming supplies (heavy shedding coat)", low: 30, high: 60 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "DM DNA test + OFA hip/elbow clearances", low: 150, high: 300 },
+      ],
+      annual: [
+        { item: "High-protein large breed dog food", low: 450, high: 750 },
+        { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
+        { item: "Annual wellness exam with bloodwork", low: 200, high: 400 },
+        { item: "Joint supplements (from middle age)", low: 80, high: 160 },
+      ],
+    },
     sections: {
       housing: "German Shepherds need space and activity: they are not well-suited to small apartments without major exercise commitment. They bond intensely with their family and can develop separation anxiety. Crate training from puppyhood helps prevent anxiety. Their double coat requires regular brushing to manage heavy shedding.",
       diet: "Feed a large breed adult food with high-quality protein. GSDs can be prone to food allergies and sensitivities: common triggers include chicken and wheat. If your GSD has chronic loose stools, skin issues, or ear infections, consider a food trial with a novel protein. Joint supplements are beneficial for older dogs.",
@@ -220,6 +332,22 @@ export const dogGuides = [
     sizeCategory: "Small",
     tagline: "Charming and adaptable, but needs informed, attentive ownership.",
     funFact: "French Bulldogs cannot reproduce naturally in most cases: their puppies' heads are too large to pass through the birth canal, so nearly all Frenchie litters are delivered by C-section. They also cannot swim due to their front-heavy build and must always wear a life jacket near water.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Small/medium crate + bed", low: 80, high: 150 },
+        { item: "Life jacket (cannot swim)", low: 20, high: 40 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "BOAS veterinary assessment", low: 100, high: 250 },
+      ],
+      annual: [
+        { item: "Small/medium breed dog food", low: 250, high: 400 },
+        { item: "Heartworm, flea, and tick prevention", low: 150, high: 250 },
+        { item: "Annual exam (brachycephalic-experienced vet)", low: 200, high: 400 },
+        { item: "Skin fold cleaning supplies", low: 20, high: 40 },
+        { item: "Pet insurance (strongly recommended)", low: 300, high: 600 },
+      ],
+    },
     sections: {
       housing: "Frenchies are well-suited to apartment living and are relatively low-exercise compared to many breeds. However, they are very sensitive to heat and humidity: their brachycephalic (flat-faced) anatomy severely limits their ability to cool themselves by panting. Never leave a French Bulldog in a hot car, do not exercise them in warm weather, and keep AC available in summer.",
       diet: "Feed a high-quality small-to-medium breed adult food. Frenchies are prone to obesity, which dramatically worsens their already compromised breathing. Strict portion control and limited treats are important. Many Frenchies have food allergies and sensitivities: watch for itching, paw licking, and ear infections as signs of dietary intolerance.",
@@ -248,6 +376,21 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The world's most intelligent dog breed, and the most demanding.",
     funFact: "A Border Collie named Chaser learned the names of 1,022 individual objects, the largest tested vocabulary of any non-human animal. Border Collies can learn a new command in under 5 repetitions and obey it correctly 95% of the time.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Medium crate + bed", low: 80, high: 150 },
+        { item: "Agility/sport equipment (disc, agility gear)", low: 40, high: 100 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "MDR1 DNA test + CEA eye clearance", low: 100, high: 200 },
+      ],
+      annual: [
+        { item: "Active/working breed dog food", low: 400, high: 650 },
+        { item: "Heartworm, flea, and tick prevention", low: 200, high: 300 },
+        { item: "Annual wellness exam", low: 150, high: 300 },
+        { item: "Sport class fees (agility, herding, etc.)", low: 100, high: 300 },
+      ],
+    },
     sections: {
       housing: "Border Collies are absolutely not suitable for low-activity households or apartments without extremely high exercise commitment. They were bred to run all day herding sheep, making 2 to 3 miles of daily walking woefully insufficient. They need running, off-leash exercise, and mental challenges daily. Bored Border Collies become obsessive, destructive, and neurotic.",
       diet: "Feed a high-quality adult or active breed formula. Working dogs or highly active sport dogs may need performance diets. Maintain a healthy weight: they should look lean and athletic, not chunky. Energy needs are very high in active dogs and should be matched to actual activity level.",
@@ -276,6 +419,21 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The escape artist sled dog that needs a job and a secure fence.",
     funFact: "In 1925, a relay team of sled dogs (led most famously by Balto and Togo) ran 674 miles across Alaska in brutal winter conditions to deliver diphtheria antitoxin to the isolated town of Nome. Togo, a Siberian Husky, ran the longest and most dangerous leg, 261 miles.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Medium crate + bed", low: 80, high: 150 },
+        { item: "Escape-proof fencing (buried base)", low: 300, high: 1000 },
+        { item: "Collar ID tag + microchip", low: 60, high: 90 },
+        { item: "PRA and hip OFA clearances", low: 100, high: 200 },
+      ],
+      annual: [
+        { item: "Adult breed dog food", low: 350, high: 550 },
+        { item: "Omega-3 supplement (coat health)", low: 30, high: 60 },
+        { item: "Heartworm, flea, and tick prevention", low: 200, high: 300 },
+        { item: "Annual wellness exam", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Huskies are escape artists of the highest order: they can dig under, climb over, or jump 6-foot fences with ease. A secure, buried-bottom fence is essential. They should never be off-leash in an unfenced area: their prey drive and wanderlust mean they will run and may not return. They are vocal dogs known for howling and 'talking.' They do not do well in hot climates.",
       diet: "Feed a high-quality medium breed adult food. Huskies are known to be efficient metabolizers and often need less food than you would expect for their size. They can be finicky eaters. Avoid overfeeding: obesity in this athletic breed is damaging. Their thick double coat is supported by omega-3 fatty acids.",

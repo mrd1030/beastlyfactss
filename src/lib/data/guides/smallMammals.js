@@ -3,11 +3,30 @@ export const smallMammalGuides = [
     id: "rabbit",
     name: "Rabbit",
     emoji: "🐰",
-    difficulty: "Beginner",
+    difficulty: "Beginner/Intermediate",
     petType: "Small Mammals",
     image: "/assets/guides/rabbit.jpg",
     tagline: "The gentle, litter-trainable companion that loves to binky!",
     funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Exercise pen or C&C condo", low: 60, high: 150 },
+        { item: "Litter box + litter", low: 15, high: 25 },
+        { item: "Hideouts and tunnels", low: 20, high: 40 },
+        { item: "Chew toys", low: 15, high: 30 },
+        { item: "Food and water dishes", low: 10, high: 20 },
+        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
+        { item: "Spay/neuter", low: 150, high: 400 },
+      ],
+      annual: [
+        { item: "Grass hay (unlimited)", low: 150, high: 250 },
+        { item: "Rabbit pellets", low: 40, high: 70 },
+        { item: "Fresh leafy greens daily", low: 150, high: 250 },
+        { item: "Litter/bedding", low: 60, high: 100 },
+        { item: "Annual vet wellness check", low: 50, high: 100 },
+      ],
+    },
     sections: {
       housing: `Rabbits need far more space than most people expect. A minimum of 8 to 10 square feet of living space for a single rabbit, with at least 24 square feet of daily exercise space, is the current recommended standard. Many experienced rabbit owners and welfare organizations now advocate for free-roaming setups or very large enclosures, as rabbits confined to small hutches develop severe physical and psychological problems over time.
 
@@ -67,6 +86,23 @@ Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's 
     image: "/assets/guides/hedgehog.jpg",
     tagline: "The spiky little explorer that runs on a wheel all night!",
     funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "2x4 ft enclosure (bin or modified cage)", low: 60, high: 150 },
+        { item: "Solid exercise wheel (10-12 in)", low: 30, high: 50 },
+        { item: "Hideout/igloo", low: 10, high: 20 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Supplemental heat source", low: 30, high: 60 },
+        { item: "Nail clippers", low: 8, high: 12 },
+      ],
+      annual: [
+        { item: "High-quality cat food", low: 40, high: 70 },
+        { item: "Live insects", low: 60, high: 100 },
+        { item: "Bedding (paper-based or fleece)", low: 60, high: 100 },
+        { item: "Annual vet wellness check (exotic)", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `Hedgehogs need more space than the small round cages commonly sold in pet stores. A minimum of 2 ft x 4 ft of floor space is required for one adult hedgehog, and more is always better. Excellent options include large plastic storage bins modified with ventilation, double-level Critter Nation cages with ramps (that the hedgehog can safely navigate), or DIY C&C cage setups.
 
@@ -126,6 +162,24 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
     image: "/assets/guides/guinea-pig.jpg",
     tagline: "The vocal, social little veggie lover that needs a friend!",
     funFact: "Guinea pigs have over 11 different vocalizations. They 'wheek' when excited about food and 'purr' when content (similar to cats but much louder)!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "C&C cage (7.5 sq ft+)", low: 80, high: 180 },
+        { item: "Hideouts and tunnels", low: 20, high: 40 },
+        { item: "Chew toys", low: 15, high: 25 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
+        { item: "Water bottle and food dishes", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Grass hay (unlimited)", low: 120, high: 200 },
+        { item: "Guinea pig pellets", low: 40, high: 70 },
+        { item: "Fresh vegetables (especially bell peppers)", low: 150, high: 250 },
+        { item: "Bedding", low: 60, high: 100 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `Guinea pigs need significantly more space than pet store cages typically provide. The minimum for a pair of guinea pigs (and guinea pigs should almost always be kept in pairs or groups) is 10 to 13 square feet of unobstructed floor space. The Humane Society and most cavy welfare organizations recommend even larger. Solitary guinea pigs are stressed, lonely animals — they need companions of their own species.
 
@@ -180,12 +234,30 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     id: "chinchilla",
     name: "Chinchilla",
     emoji: "🐭",
-    difficulty: "Intermediate",
-    difficulty: "Advanced",
+    difficulty: "Intermediate/Advanced",
     petType: "Small Mammals",
     image: "/assets/guides/chinchilla.jpg",
     tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
     funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
+        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
+        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
+        { item: "Platforms and hideouts", low: 30, high: 60 },
+        { item: "Chew toys", low: 15, high: 30 },
+        { item: "Digital thermometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Grass hay (unlimited)", low: 120, high: 200 },
+        { item: "Chinchilla pellets", low: 30, high: 50 },
+        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
+        { item: "Bedding", low: 50, high: 90 },
+        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
+        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
+      ],
+    },
     sections: {
       housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes — they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
 
@@ -237,6 +309,24 @@ Fur ring — a constricting ring of fur around the penis in males — can develo
     image: "/assets/guides/sugar-glider.jpg",
     tagline: "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!",
     funFact: "Sugar gliders can glide up to 150 feet in the wild using a membrane called a patagium. They steer with their tails and can even do mid-air turns!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x36 in aviary-style cage", low: 150, high: 300 },
+        { item: "Solid exercise wheel (glider-specific)", low: 40, high: 70 },
+        { item: "Multiple sleeping pouches", low: 30, high: 60 },
+        { item: "Branches and climbing structures", low: 25, high: 45 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Bonding pouch", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Commercial sugar glider diet (BML/TPG)", low: 200, high: 350 },
+        { item: "Fresh fruits, vegetables, and insects", low: 100, high: 180 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "Electricity (heat, temp-sensitive)", low: 60, high: 100 },
+        { item: "Annual vet wellness check (exotic)", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: `Sugar gliders require a minimum 24x24x36" aviary-style cage, though larger is strongly recommended. They are highly active gliders and climbers that need vertical space and horizontal bars they can climb throughout. Bar spacing of 1/2 inch or less prevents escape and entrapment.
 
@@ -287,6 +377,22 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
     petType: "Small Mammals",
     tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
     funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
+        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
+        { item: "Litter box", low: 10, high: 15 },
+        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
+        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
+      ],
+      annual: [
+        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
+        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
+        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
+        { item: "Bedding and litter", low: 50, high: 80 },
+      ],
+    },
     sections: {
       housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day — this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
 

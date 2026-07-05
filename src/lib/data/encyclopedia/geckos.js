@@ -40,7 +40,7 @@ export const geckoEncyclopedia = [
   },
   {
     id: "mourning-gecko", name: "Mourning Gecko", scientific: "Lepidodactylus lugubris",
-    category: "Geckos", emoji: "🦎", difficulty: "Intermediate", guideId: "mourning-gecko", available: true, image: "/assets/guides/mourning-gecko.jpg",
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "mourning-gecko", available: true, image: "/assets/guides/mourning-gecko.jpg",
     bio: {
       overview: "The mourning gecko holds a remarkable distinction: wild populations are almost entirely female and reproduce through parthenogenesis — producing fertile eggs without fertilization. Originally native to islands across the Indo-Pacific, they have colonized tropical coastlines worldwide by hitchhiking on cargo ships. They are tiny, fast, and thrive in communal setups, making them fascinating display animals.",
       origin: "Indo-Pacific islands; introduced worldwide in tropical regions",

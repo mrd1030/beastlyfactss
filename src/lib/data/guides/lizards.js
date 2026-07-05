@@ -3,8 +3,7 @@ export const lizardGuides = [
     id: "bearded-dragon",
     name: "Bearded Dragon",
     emoji: "🦎",
-    difficulty: "Beginner",
-    difficulty: "Intermediate",
+    difficulty: "Beginner/Intermediate",
     petType: "Lizards",
     image: "/assets/guides/bearded-dragon.jpg",
     tagline: "The chill, cuddly lizard that changes color with its mood!",
@@ -78,12 +77,31 @@ Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and o
     id: "blue-tongue-skink",
     name: "Blue Tongue Skink",
     emoji: "🦎",
-    difficulty: "Beginner",
-    difficulty: "Intermediate",
+    difficulty: "Beginner/Intermediate",
     petType: "Lizards",
     image: "/assets/guides/blue-tongue-skink.jpg",
     tagline: "The chunky, blue-tongued charmer who loves a good meal!",
     funFact: "Blue tongue skinks give live birth and are one of the largest skink species kept as pets. Adults can reach 18 to 24 inches!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft enclosure", low: 150, high: 300 },
+        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 50, high: 90 },
+        { item: "Basking bulb + fixture", low: 20, high: 40 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Coconut fiber + topsoil substrate", low: 20, high: 35 },
+        { item: "Large water dish", low: 15, high: 25 },
+        { item: "Multiple hides and enrichment items", low: 20, high: 40 },
+      ],
+      annual: [
+        { item: "Leafy greens and vegetables", low: 150, high: 250 },
+        { item: "Insect and protein feeders", low: 100, high: 200 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Electricity (heat and lighting)", low: 60, high: 100 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A 4x2x2 ft enclosure is the minimum for a single adult blue tongue skink, though larger is always preferable. Blue tongues are terrestrial lizards — floor space matters far more than height. They are active, exploratory animals that will walk laps of their enclosure daily when conditions are correct, so generous floor space meaningfully improves their quality of life.
 
@@ -131,6 +149,24 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     petType: "Lizards",
     tagline: "The horned, color-shifting dinosaur of the reptile world!",
     funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
+        { item: "Strong UVB (T5 HO Arcadia 6-12%)", low: 70, high: 110 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Dripper system and automatic mister", low: 50, high: 100 },
+        { item: "Live plants (pothos, ficus)", low: 40, high: 80 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 300 },
+        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
+        { item: "Annual vet wellness check (chameleon-experienced)", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: `A 24x24x48" all-screen enclosure is the minimum for a single adult Jackson's chameleon. Screen construction is non-negotiable — stagnant air in glass or plastic enclosures causes rapid onset respiratory infections in chameleons. Airflow must be constant and significant. Many experienced keepers use screen cages outdoors in appropriate climates, which is close to ideal.
 
@@ -174,12 +210,30 @@ Respiratory infections result from stagnant air and temperature fluctuations. Th
     id: "green-anole",
     name: "Green Anole",
     emoji: "🦎",
-    difficulty: "Beginner",
-    difficulty: "Intermediate",
+    difficulty: "Beginner/Intermediate",
     petType: "Lizards",
     image: "/assets/guides/green-anole.jpg",
     tagline: "America's tiny chameleon: the little green lizard that turns brown with its mood!",
     funFact: "Green anoles can change color from bright green to brown depending on temperature, stress, or mood, earning them the nickname 'American chameleon,' though they're not true chameleons at all!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in tall planted enclosure", low: 80, high: 150 },
+        { item: "UVB (T5 HO 5-6%)", low: 50, high: 90 },
+        { item: "Basking bulb", low: 15, high: 30 },
+        { item: "Dense live plants", low: 25, high: 45 },
+        { item: "Thin branches and cork bark", low: 15, high: 25 },
+        { item: "Automatic mister or manual misting bottle", low: 10, high: 40 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Small feeder insects (crickets, fruit flies)", low: 60, high: 120 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 50, high: 90 },
+        { item: "Electricity (heat and lighting)", low: 30, high: 50 },
+        { item: "Annual vet wellness check", low: 40, high: 80 },
+      ],
+    },
     sections: {
       housing: `A well-planted 18x18x24" vertical enclosure works for 1 to 2 green anoles. Never house two males together — they fight aggressively and will injure or kill each other. A male-female pair or a group of females can be housed together in a sufficiently large and well-planted enclosure.
 
@@ -231,6 +285,26 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     image: "/assets/guides/ackie-monitor.jpg",
     tagline: "The miniature Komodo dragon with a huge personality!",
     funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "6x3x3 ft+ enclosure", low: 300, high: 600 },
+        { item: "Deep substrate (12 in+ sandy soil mix)", low: 80, high: 150 },
+        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
+        { item: "Infrared thermometer gun", low: 25, high: 40 },
+        { item: "Cork bark and rock structures", low: 40, high: 80 },
+        { item: "Water dish", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Large insect variety", low: 200, high: 350 },
+        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (high-wattage basking)", low: 100, high: 180 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `A 6x3x3 ft enclosure is the minimum for a pair of ackie monitors — and ackies do well and often prefer living in bonded pairs or trios when raised together. Single animals can be kept in slightly smaller spaces but will benefit from the larger footprint for activity and thermal gradient establishment.
 
@@ -279,6 +353,26 @@ Respiratory infections and scale rot can occur if humidity and temperatures are 
     image: "/assets/guides/savannah-monitor.jpg",
     tagline: "The powerful, intelligent monitor that needs serious space and a serious keeper!",
     funFact: "Savannah monitors are built for digging. In the wild they may create burrows several feet deep to escape the African heat. A deep substrate is one of the most important enrichment features you can give them!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Adult housing is often custom-built; setup range reflects that.
+    costs: {
+      setup: [
+        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
+        { item: "12 in+ deep substrate (topsoil/sand mix)", low: 100, high: 200 },
+        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
+        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+        { item: "Infrared thermometer gun", low: 25, high: 40 },
+        { item: "Large water tub for soaking", low: 30, high: 60 },
+      ],
+      annual: [
+        { item: "Varied diet (roaches, eggs, occasional mice/rats)", low: 250, high: 450 },
+        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
+        { item: "Annual vet wellness check", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: "Adult savannah monitors can reach 3 to 5 ft and require enormous enclosures. A minimum 8x4x4 ft is recommended, and many keepers build custom rooms. Deep substrate (12 inches or more of a 50/50 topsoil/sand mix) is essential for burrowing and thermoregulation. A very hot basking spot (130 to 150 degrees F surface) is critical. Ambient warm side: 90 to 95 degrees F. Cool side: 78 to 82 degrees F. Strong desert UVB (Arcadia Dragon 12%) is mandatory. High humidity (60 to 70%) in the cool/burrow area, low humidity under the basking spot.",
       diet: `Savannah monitors are carnivores that benefit from a varied diet reflecting their natural feeding habits. In the wild, savannah monitors eat a wide variety of invertebrates, small vertebrates, and eggs — not primarily rodents. Research consistently shows that monitors fed primarily on mice and rats develop severe obesity, fatty liver disease, and cardiac problems. An invertebrate-heavy diet is significantly healthier.
@@ -326,6 +420,25 @@ These are powerful animals. Adult savannah monitors can inflict significant inju
     image: "/assets/guides/uromastyx.jpg",
     tagline: "The colorful, seed-eating desert dragon that thrives on extreme heat!",
     funFact: "Uromastyx (also called spiny-tailed lizards) are almost entirely herbivorous. They get nearly all their water from their food and rarely need a standing water dish! They're one of the few reptiles that thrive on seeds.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft+ enclosure", low: 150, high: 300 },
+        { item: "High-wattage basking bulb + fixture", low: 25, high: 45 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
+        { item: "Sandy desert substrate", low: 20, high: 35 },
+        { item: "Infrared thermometer gun", low: 25, high: 40 },
+      ],
+      annual: [
+        { item: "Dark leafy greens daily", low: 100, high: 180 },
+        { item: "Seeds and legumes", low: 30, high: 60 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (high-wattage basking)", low: 70, high: 120 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `Adults need a minimum 4x2x2 ft enclosure. Uromastyx are desert lizards from North Africa and the Middle East requiring extremely hot basking spots. A surface temperature of 120 to 140 degrees F at the basking site is not optional — it is biologically critical for digestion, immune function, and thermoregulation. Without adequate basking heat, uromastyx cannot function properly.
 
@@ -377,6 +490,25 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     image: "/assets/guides/tegu.jpg",
     tagline: "The dog-like mega-lizard that can learn its own name!",
     funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Adult housing is often custom-built; setup range reflects that.
+    costs: {
+      setup: [
+        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
+        { item: "High-wattage basking setup", low: 40, high: 70 },
+        { item: "Strong desert UVB (T5 HO 12%+)", low: 80, high: 120 },
+        { item: "Substrate (4-6 in soil/sand mix)", low: 60, high: 120 },
+        { item: "Large water tub for soaking", low: 30, high: 60 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+      ],
+      annual: [
+        { item: "Whole prey and varied diet (rats, eggs, protein)", low: 250, high: 450 },
+        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 80, high: 120 },
+        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
+        { item: "Annual vet wellness check", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: `Argentine black and white tegus are among the largest lizards kept as pets and require enclosures that reflect their impressive size. Adults typically reach 3.5 to 4.5 ft for males and 2.5 to 3.5 ft for females, with some males exceeding 5 ft. The minimum enclosure for an adult is 8x4x4 ft, and many dedicated keepers build entire rooms for their tegus — a converted bedroom or large wooden enclosure the size of a garden shed.
 
@@ -424,6 +556,24 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
     petType: "Lizards",
     tagline: "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
+        { item: "Strong UVB (T5 HO Arcadia 6% or 12%)", low: 70, high: 110 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Dripper system and automatic mister", low: 50, high: 100 },
+        { item: "Live plants (pothos, hibiscus, ficus)", low: 40, high: 80 },
+        { item: "Laying bin with moist sand/soil (females)", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 280 },
+        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
+        { item: "Annual vet wellness check (chameleon-experienced)", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `A 24x24x48 inch or larger all-screen enclosure is the minimum for one adult veiled chameleon. Screen construction is mandatory, not optional — stagnant air in glass or plastic enclosures causes rapid-onset respiratory infections in chameleons of every species. Dense live plants (pothos, hibiscus, ficus) covering 60 to 70% of the enclosure interior provide humidity regulation, visual security, and climbing structure. Bare enclosures produce chronically stressed animals.
 

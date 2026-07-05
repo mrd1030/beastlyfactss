@@ -38,14 +38,28 @@ export function DifficultyLegend() {
               </td>
             </tr>
             <tr>
-              <td className="p-2.5 sm:p-3 font-display font-bold text-amber-500 dark:text-amber-400 whitespace-nowrap">3</td>
+              <td className="p-2.5 sm:p-3 font-display font-bold text-lime-500 dark:text-lime-400 whitespace-nowrap">3</td>
+              <td className="p-2.5 sm:p-3 font-display font-semibold text-foreground whitespace-nowrap">Beginner/Intermediate</td>
+              <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
+                Manageable for a first-timer willing to research, but with a real learning curve — a specific husbandry detail, temperament quirk, or dietary requirement most true beginner species don't have.
+              </td>
+            </tr>
+            <tr>
+              <td className="p-2.5 sm:p-3 font-display font-bold text-amber-500 dark:text-amber-400 whitespace-nowrap">4</td>
               <td className="p-2.5 sm:p-3 font-display font-semibold text-foreground whitespace-nowrap">Intermediate</td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Demands specialized husbandry parameters, precise dietary variations, regular environmental balancing, or managed handling temperaments.
               </td>
             </tr>
             <tr>
-              <td className="p-2.5 sm:p-3 font-display font-bold text-hotpink whitespace-nowrap">4</td>
+              <td className="p-2.5 sm:p-3 font-display font-bold text-orange-500 dark:text-orange-400 whitespace-nowrap">5</td>
+              <td className="p-2.5 sm:p-3 font-display font-semibold text-foreground whitespace-nowrap">Intermediate/Advanced</td>
+              <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
+                Beyond typical intermediate care — often due to adult size, strength, or a demanding environmental parameter — but not yet requiring truly expert-only experience.
+              </td>
+            </tr>
+            <tr>
+              <td className="p-2.5 sm:p-3 font-display font-bold text-hotpink whitespace-nowrap">6</td>
               <td className="p-2.5 sm:p-3 font-display font-semibold text-foreground whitespace-nowrap">Advanced</td>
               <td className="p-2.5 sm:p-3 text-muted-foreground font-body leading-relaxed">
                 Strict environmental control tolerances, complex diet demands, major space allocations, intense financial or long-term lifespans, or expert-only species profiles.

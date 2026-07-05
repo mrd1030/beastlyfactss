@@ -7,6 +7,21 @@ export const invertebrateGuides = [
     petType: "Invertebrates",
     tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
     funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Species-appropriate enclosure", low: 30, high: 70 },
+        { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
+        { item: "Cork bark hide", low: 10, high: 20 },
+        { item: "Small water dish", low: 5, high: 10 },
+        { item: "Feeding tongs", low: 8, high: 15 },
+        { item: "Digital thermometer", low: 10, high: 15 },
+      ],
+      annual: [
+        { item: "Live feeder insects", low: 40, high: 80 },
+        { item: "Substrate replacement (infrequent)", low: 15, high: 25 },
+      ],
+    },
     sections: {
       housing: "Tarantula housing is highly species-dependent. Burrowing species (like Grammostola pulchripes, the Chilean Rose Hair) need enclosures with 3 to 4 times their leg span in floor space and deep substrate (4 to 6 inches of a coconut fiber and peat mix). Arboreal species (like Avicularia avicularia, the Pink-Toe) need tall enclosures (12x12x18 inches minimum) with cross-ventilation, cork bark, and artificial plants for climbing and anchoring their tube web. All enclosures need a secure, locking lid. A small, shallow water dish (bottle cap size for spiderlings, bottlecap to small dish for adults) must always be available. Overflow the dish occasionally for terrestrial species to create a moisture gradient. Temperatures for most pet tarantulas should stay between 68 and 82 degrees F. Most species do not need supplemental heat in a typical home.",
       diet: `Tarantulas eat live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard feeder insects for most species. Prey should be no larger than the tarantula's abdomen. Larger prey items cause unnecessary stress and potential injury.
@@ -45,6 +60,18 @@ During premolt (recognizable by a darkened, fat abdomen, and refusal of food tha
     petType: "Invertebrates",
     tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
     funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Tall vertical mesh or acrylic enclosure", low: 15, high: 35 },
+        { item: "Vertical branch or stick for molting", low: 5, high: 10 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Fine misting bottle", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Fruit flies and live feeder insects", low: 30, high: 60 },
+      ],
+    },
     sections: {
       housing: "Most pet mantis species (Ghost Mantis, Chinese Mantis, African Flower Mantis) need a small vertical enclosure. A tall deli cup (for nymphs) to a 12x12x18 inch mesh or acrylic enclosure (for adults) is appropriate. The rule of thumb is 3 times the mantis length in height and 2 times in width. Cross-ventilation is critical. Mantises molt hanging from the top of the enclosure so adequate height is non-negotiable. Provide a stick or branch angled from floor to ceiling for perching and molting. Temperature ranges from 72 to 95 degrees F depending on species. Most common pet species do well at 75 to 85 degrees F.",
       diet: `Mantises eat live prey exclusively. Match the prey size to the mantis: fruit flies (Drosophila melanogaster, the small species) for early nymph stages, progressing to bottle flies, small crickets, and small dubia roaches as the mantis grows. Adult mantises can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width.
@@ -91,6 +118,20 @@ Most pet mantis species have lifespans of 12 to 18 months. The hobby cycle for m
     petType: "Invertebrates",
     tagline: "The gentle detritivore that works as a living composting machine!",
     funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20-gallon+ enclosure", low: 40, high: 80 },
+        { item: "Deep substrate (coconut fiber, topsoil, hardwood)", low: 20, high: 40 },
+        { item: "Cork bark hides", low: 10, high: 20 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Fresh vegetables", low: 30, high: 60 },
+        { item: "Substrate replacement", low: 20, high: 40 },
+        { item: "Cuttlebone or crushed eggshell", low: 5, high: 10 },
+      ],
+    },
     sections: {
       housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
       diet: "Millipedes are detritivores: they eat decaying organic matter. Their primary diet is the substrate itself (rotting wood and leaf litter). Supplement with fresh vegetables: sweet potato, cucumber, zucchini, carrots, apple slices, and leafy greens. Rotate offerings and remove uneaten fresh food within 24 to 48 hours to prevent mold. Calcium is critical for their exoskeleton: offer cuttlebone pieces or crushed eggshell in the enclosure at all times. Avoid acidic fruits and vegetables (citrus, tomatoes).",
@@ -125,10 +166,25 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     id: "emperor-scorpion",
     name: "Emperor Scorpion",
     emoji: "🦂",
-    difficulty: "Intermediate",
+    difficulty: "Beginner/Intermediate",
     petType: "Invertebrates",
     tagline: "One of the largest scorpions in the world, and one of the least venomous pet scorpions!",
     funFact: "Scorpions fluoresce a brilliant blue-green color under ultraviolet (UV/black) light. Scientists are not entirely sure why, but the chemical responsible is in the hyaline layer of their exoskeleton. Scorpions do this under natural UV from moonlight too.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "10-20 gallon enclosure with secure lid", low: 40, high: 80 },
+        { item: "Moist substrate (coconut fiber + topsoil)", low: 20, high: 35 },
+        { item: "Cork bark slabs and flat stones", low: 15, high: 30 },
+        { item: "Heat mat with thermostat", low: 30, high: 50 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "UV/black light (optional)", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Live feeder insects", low: 50, high: 100 },
+        { item: "Substrate replacement", low: 20, high: 35 },
+      ],
+    },
     sections: {
       housing: "A 10 to 20 gallon terrarium with a secure lid is suitable for 1 to 2 emperor scorpions. They are fossorial (burrowing) animals that need 4 to 6 inches of a moist substrate: a coconut fiber and organic topsoil mix holds burrows well. Provide cork bark slabs or flat stones as alternative hide/basking structures. Temperatures of 76 to 86 degrees F and high humidity (75 to 85%) are required. A small shallow water dish must always be present. These are tropical forest scorpions from West Africa and need warmth and moisture.",
       diet: `Emperor scorpions eat live insects. Crickets and dubia roaches form the most practical staple prey. Mealworms, superworms, and the occasional waxworm are acceptable supplements. Prey size should not exceed the scorpion's body length (excluding tail). Always offer prey with feeding tongs rather than by hand — a startled scorpion may sting a hand it encounters unexpectedly.
@@ -175,6 +231,20 @@ If housing multiple individuals, watch carefully for cannibalism. Emperor scorpi
     petType: "Invertebrates",
     tagline: "Calm, armored, surprisingly clean — and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "10-gallon terrarium with secure lid", low: 30, high: 60 },
+        { item: "Coconut fiber or bark chip substrate", low: 15, high: 25 },
+        { item: "Cork bark tubes or egg cartons", low: 10, high: 20 },
+        { item: "Shallow water dish with sponge insert", low: 5, high: 10 },
+        { item: "Digital thermometer", low: 10, high: 15 },
+      ],
+      annual: [
+        { item: "Fresh fruits, vegetables, and dry kibble", low: 30, high: 60 },
+        { item: "Substrate replacement", low: 15, high: 25 },
+      ],
+    },
     sections: {
       housing: `A 10-gallon terrarium with a tight, secure lid is a reasonable starting point for a small colony of 10 to 20 individuals. For larger colonies (which they become quickly), upgrade to a 20-gallon or larger rubbermaid-style container with a ventilated lid. Madagascar hissing cockroaches are exceptional climbers on rough surfaces — any textured wall, wood, or mesh can be scaled. Smooth glass or smooth plastic sides at least 10 to 12 inches tall will prevent escape. Petroleum jelly applied near the top edge (a "barrier" band) is a secondary escape-proofing method some keepers use.
 
@@ -225,6 +295,19 @@ Escaped cockroaches are the most serious concern for many keepers: check the lid
     petType: "Invertebrates",
     tagline: "The master of disguise that is literally a twig with legs!",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Host plant leaves are often free (garden/hedge cuttings), so annual
+    // food cost is low compared to most other pets on this list.
+    costs: {
+      setup: [
+        { item: "Tall mesh enclosure", low: 25, high: 50 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Fine misting bottle", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Host plant cuttings (often free if garden-sourced)", low: 0, high: 40 },
+      ],
+    },
     sections: {
       housing: "A tall, well-ventilated mesh enclosure is essential. The rule is at least 3 times the insect's body length in height and 2 times in width, to allow molting (they hang and pull free of their old exoskeleton). A 30x30x45 cm or larger mesh enclosure suits most adult species. Ventilation is critical: still air causes respiratory problems. Keep fresh host plant cuttings in a vase of water (covered so insects cannot drown) inside the enclosure. Temperatures of 68 to 80 degrees F suit most temperate and tropical species.",
       diet: `Stick insects eat leaves of specific host plants, and the species must match the plant. Indian stick insects (Carausius morosus, the most common and beginner-friendly species) readily accept bramble (blackberry), rose, hawthorn, privet, ivy, and oak — providing multiple options ensures the insect always has fresh food when one plant is out of season.
@@ -271,6 +354,17 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
     petType: "Invertebrates",
     tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
     funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing — hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
+        { item: "Climbing branches and cork bark", low: 10, high: 20 },
+        { item: "Feeding tongs", low: 8, high: 15 },
+      ],
+      annual: [
+        { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
+      ],
+    },
     sections: {
       housing: "A small enclosure is not just acceptable but preferred — something around 5x5x8 inches works well for one adult regal jumping spider (Phidippus regius), the most common pet species. Taller than wide is ideal since jumping spiders climb constantly. Ventilation is essential, via a mesh top or side vents, since stagnant air causes health problems. Furnish with climbing branches, cork bark, and artificial plants, which jumping spiders use both for exploring and for building silk hammock retreats where they sleep and molt. Light misting every day or two maintains humidity and gives them water droplets to drink. Room temperature of 70 to 80 degrees F is fine without any supplemental heating in most homes.",
       diet: "Jumping spiders eat live prey exclusively. Appropriately sized crickets, flightless fruit flies (ideal for juveniles), and small roaches work well, sized no larger than the spider's body. Offer prey 2 to 3 times a week and remove anything uneaten after a day. Unlike web-building spiders, jumping spiders are active visual hunters that stalk and pounce on prey rather than waiting passively — watching this hunting behavior is one of the most rewarding parts of keeping the species.",
@@ -303,6 +397,22 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
     petType: "Invertebrates",
     tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
     funFact: "Hermit crabs don't grow their own shells — they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Priced for a small group (2-3 crabs), since solo housing isn't appropriate.
+    costs: {
+      setup: [
+        { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
+        { item: "Hygrometer and thermometer", low: 15, high: 25 },
+        { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
+        { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
+        { item: "Climbing branches and cork bark", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Hermit crab food + varied fresh food", low: 30, high: 60 },
+        { item: "Substrate replacement", low: 20, high: 40 },
+        { item: "Marine salt mix (saltwater pool)", low: 10, high: 20 },
+      ],
+    },
     sections: {
       housing: "A 10-gallon tank is an absolute floor, but 20 gallons or more is far more appropriate — and necessary for a group, since hermit crabs are social and should be kept with at least 2 to 3 others, not alone. This is one of the most under-communicated requirements in the pet trade. Humidity must stay at 70 to 80%, measured with a hygrometer rather than guessed, since hermit crabs breathe through modified gills that need consistently moist air; a secure lid, substrate misting, and a mostly covered tank all help maintain this. Deep substrate — a sand and coconut fiber mix at least three times the crab's body length — is essential, since crabs burrow completely underground to molt, sometimes for weeks at a time. Provide both a freshwater pool and a marine saltwater pool, each deep enough to submerge in but with an easy exit ramp to prevent drowning, using only dechlorinated water. Keep temperatures at 75 to 85 degrees F, and always have 2 to 3 spare empty shells per crab, slightly larger than their current one, available so they can upgrade as they grow.",
       diet: "Hermit crabs are omnivorous scavengers. A commercial hermit crab food can form a base, but a genuinely varied diet of fresh fruit, vegetables, unseasoned meat, and calcium sources like cuttlebone or crushed eggshell makes a real difference in health and molt success. Avoid pre-packaged shells or substrate treated with paint, dye, or chemicals, and never offer any food that has been near soap, pesticides, or copper-based products — all are toxic to hermit crabs. Feed daily in a shallow dish and remove uneaten fresh food within a day to prevent mold in the humid enclosure.",

@@ -8,6 +8,23 @@ export const birdGuides = [
     image: "/assets/guides/african-grey.jpg",
     tagline: "The genius of the parrot world, one of the most intelligent animals on Earth!",
     funFact: "African Greys have the cognitive ability of a 5-year-old child and can learn over 1,000 words. The famous parrot Alex could identify colors, shapes, and even understand the concept of 'same' and 'different'!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x24x48 in cage (larger preferred)", low: 300, high: 600 },
+        { item: "Multiple textured perches", low: 30, high: 60 },
+        { item: "Full-spectrum UVB light", low: 40, high: 70 },
+        { item: "Foraging and puzzle toys", low: 40, high: 80 },
+        { item: "Sleep cage or covered area", low: 80, high: 150 },
+        { item: "Misting bottle", low: 8, high: 15 },
+      ],
+      annual: [
+        { item: "High-quality parrot pellets", low: 150, high: 250 },
+        { item: "Fresh vegetables and limited fruit", low: 150, high: 250 },
+        { item: "Rotating toys", low: 80, high: 150 },
+        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: `African grey parrots require significantly more space than their body size might suggest. A minimum cage of 36x24x48 inches is required, though 48x36x60 inches or larger is strongly preferred. African greys need room to climb, flap, and move. Bar spacing of 3/4 to 1 inch. Stainless steel cages are the safest long-term investment.
 
@@ -65,6 +82,21 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     image: "/assets/guides/budgie.jpg",
     tagline: "The cheerful, chatty little parakeet that's perfect for first-time bird owners!",
     funFact: "Budgies can learn to talk and have been known to learn over 1,700 words! The Guinness World Record holder was a budgie named Puck who knew 1,728 words, more than any other bird on record!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in cage (larger preferred)", low: 50, high: 100 },
+        { item: "Perches of varied diameters", low: 15, high: 25 },
+        { item: "Swings, ladders, and foraging toys", low: 20, high: 40 },
+        { item: "Nail clippers", low: 8, high: 12 },
+      ],
+      annual: [
+        { item: "Budgie pellets or seed mix", low: 50, high: 80 },
+        { item: "Fresh vegetables", low: 60, high: 100 },
+        { item: "Millet sprays (treats)", low: 15, high: 25 },
+        { item: "Annual avian vet check", low: 50, high: 90 },
+      ],
+    },
     sections: {
       housing: `A minimum cage size of 18x18x24 inches is required for a single budgie, but larger is strongly preferred — budgies are active, agile flyers that need space to move. Bar spacing of 1/2 inch or less is essential; wider bars allow a budgie's head to get stuck. The cage orientation should prioritize width over height to allow lateral flight.
 
@@ -124,6 +156,21 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
     image: "/assets/guides/lovebird.jpg",
     tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
     funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x24 in+ cage (larger preferred)", low: 80, high: 150 },
+        { item: "Perches and swings", low: 20, high: 35 },
+        { item: "Shreddable toys", low: 20, high: 40 },
+        { item: "Sleep tent", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Small parrot pellets", low: 70, high: 110 },
+        { item: "Fresh vegetables", low: 80, high: 130 },
+        { item: "Toys (rotating)", low: 40, high: 70 },
+        { item: "Annual avian vet check + psittacosis testing", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 24x24x24 inches is required, though 30x24x30 inches or larger is preferred. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers — cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
 
@@ -181,6 +228,22 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
     image: "/assets/guides/cockatiel.jpg",
     tagline: "The whistling, crested charmer that's the perfect first parrot!",
     funFact: "Cockatiels are masters of mimicry. Males especially love to learn whistled tunes and will serenade you (and any reflective surface) for hours. Many can even learn short phrases!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x30 in cage (larger preferred)", low: 80, high: 160 },
+        { item: "Perches of varied diameters", low: 20, high: 35 },
+        { item: "Nightlight (prevents night frights)", low: 10, high: 15 },
+        { item: "Cuttlebone and mineral block", low: 5, high: 10 },
+        { item: "Foraging and shreddable toys", low: 20, high: 40 },
+      ],
+      annual: [
+        { item: "Cockatiel pellets", low: 70, high: 110 },
+        { item: "Fresh vegetables", low: 80, high: 130 },
+        { item: "Toys (rotating)", low: 40, high: 70 },
+        { item: "Annual avian vet check", low: 60, high: 100 },
+      ],
+    },
     sections: {
       housing: `A minimum cage of 24x24x30 inches is required for a cockatiel, though 30x24x36 inches or larger is strongly preferred. Cockatiels are active climbers and benefit from vertical space. Bar spacing of 1/2 to 3/4 inch is appropriate — never wider, which risks head entrapment.
 
@@ -239,6 +302,21 @@ Feather destructive behavior and chronic screaming indicate inadequate enrichmen
     petType: "Birds",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x30 in+ cage (larger preferred)", low: 100, high: 180 },
+        { item: "Perches of varied diameters", low: 20, high: 40 },
+        { item: "Foraging and shreddable toys", low: 30, high: 60 },
+        { item: "Snuggle pouch or bird tent", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Small parrot pellets", low: 80, high: 120 },
+        { item: "Fresh vegetables and limited fruit", low: 80, high: 140 },
+        { item: "Toys (rotating)", low: 50, high: 90 },
+        { item: "Annual avian vet check", low: 70, high: 120 },
+      ],
+    },
     sections: {
       housing: `A minimum cage of 24x24x30 inches is required for a green cheek conure, though 24x24x36 inches or larger is strongly preferred. Green cheeks are active and athletic birds that need room to climb, swing, and flap. Bar spacing of 1/2 to 3/4 inch prevents head entrapment. Stainless steel or powder-coated wrought iron cages from reputable manufacturers are the safest options.
 
@@ -295,6 +373,21 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     petType: "Birds",
     tagline: "The classic singing songbird that's happiest observed, not handled!",
     funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Flight cage (24-30 in wide)", low: 60, high: 120 },
+        { item: "Perches of varied diameters", low: 15, high: 25 },
+        { item: "Shallow bath dish", low: 8, high: 15 },
+        { item: "Cuttlebone or mineral block", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Seed mix or pellets", low: 50, high: 80 },
+        { item: "Fresh greens and vegetables", low: 50, high: 90 },
+        { item: "Egg food (molting/breeding season)", low: 15, high: 25 },
+        { item: "Annual avian vet check", low: 40, high: 70 },
+      ],
+    },
     sections: {
       housing: "A flight cage at least 24 to 30 inches wide is far better than a typical small cage, since canaries are active fliers that need horizontal space more than height. Provide multiple natural perches of varying diameter positioned so the bird can fly lengthwise across the cage. Position away from drafts, kitchen fumes (which are lethal to birds), and direct sun. Canaries do best kept singly or in a compatible pair — males housed together, especially during breeding season, will often fight. Cover the cage at night to provide a consistent 10 to 12 hours of uninterrupted darkness for sleep.",
       diet: "A high-quality canary or finch seed mix can form a base, but a pelleted diet or seed heavily supplemented with fresh greens (dandelion, spinach, chickweed) and vegetables closes the nutritional gaps that come with a seed-only diet. Egg food — hard-boiled egg mixed with bread or a commercial egg food supplement — provides valuable protein, especially important during molting and breeding season. A cuttlebone or mineral block supplies calcium and trace minerals. Provide fresh water daily.",
@@ -328,6 +421,21 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     petType: "Birds",
     tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner — which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
+        { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
+        { item: "Foraging toys", low: 50, high: 100 },
+        { item: "Cage-specific padlocks", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Large parrot pellets", low: 200, high: 350 },
+        { item: "Fresh vegetables, fruit, and nuts", low: 200, high: 350 },
+        { item: "Toys (rotating, heavy destruction rate)", low: 150, high: 300 },
+        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
+      ],
+    },
     sections: {
       housing: "Provide the largest cage that can reasonably fit in your home — a minimum of 3x2x4 feet, with larger strongly preferred, since cockatoos are large, powerful birds that need real room to climb, stretch, and flap. Cage bars must be heavy-gauge metal, since cockatoos have immensely strong beaks capable of bending weaker cages or working open standard latches; many owners add cage-specific padlocks for this reason. Position the cage in a social area of the home, since isolation is especially damaging to this species. Keep a constant supply of destructible wood toys available, since chewing is a critical behavioral outlet and supports beak health.",
       diet: "A high-quality large parrot pellet should form 60 to 70% of the diet, supplemented daily with fresh vegetables, fruit, and a rotating variety of nuts (almonds and in-shell walnuts are excellent for foraging and enrichment). Seed-only diets cause the same fatty liver disease and nutritional deficiencies seen in smaller parrots, at greater scale given a cockatoo's size and long lifespan. Foraging-based feeding — food hidden in puzzle toys or wrapped in paper — is strongly recommended, both for nutritional enrichment and to occupy a bird that's otherwise prone to problem behaviors out of sheer boredom.",

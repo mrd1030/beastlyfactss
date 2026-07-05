@@ -1,7 +1,7 @@
 export const lizardEncyclopedia = [
   {
     id: "bearded-dragon", name: "Bearded Dragon", scientific: "Pogona vitticeps",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "bearded-dragon", available: true, image: "/assets/guides/bearded-dragon.jpg",
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "bearded-dragon", available: true, image: "/assets/guides/bearded-dragon.jpg",
     relatedStory: {
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
       title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
@@ -18,7 +18,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "blue-tongue-skink", name: "Blue Tongue Skink", scientific: "Tiliqua spp.",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "blue-tongue-skink", available: true, image: "/assets/guides/blue-tongue-skink.jpg",
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "blue-tongue-skink", available: true, image: "/assets/guides/blue-tongue-skink.jpg",
     bio: {
       overview: "Blue-tongued skinks are large, slow-moving lizards native to Australia and parts of Indonesia and New Guinea. Their shocking blue tongue, flashed at predators, serves as a startling warning display. They are ground-dwelling omnivores that consume a diverse wild diet of fruits, plants, snails, and carrion. Thick-bodied and docile by nature, their manageable temperament has made them highly popular as pets.",
       origin: "Australia, Indonesia, New Guinea",
@@ -70,7 +70,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "green-anole", name: "Green Anole", scientific: "Anolis carolinensis",
-    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "green-anole", available: true, image: "/assets/guides/green-anole.jpg",
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "green-anole", available: true, image: "/assets/guides/green-anole.jpg",
     bio: {
       overview: "The green anole is North America's only native anole and the most commonly kept anole species in captivity. Found throughout the American Southeast, it inhabits shrubs, trees, and garden vegetation. Males display an expandable pink throat fan (dewlap) in territorial and courtship displays. While capable of limited color change from vivid green to brown, they are not true chameleons — color change reflects mood and temperature rather than camouflage.",
       origin: "Southeastern United States and Caribbean",
