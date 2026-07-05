@@ -16,6 +16,7 @@ import * as MdxComponents from '@/components/mdx';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
+import TableOfContents from '@/components/blog/TableOfContents';
 import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
@@ -378,6 +379,7 @@ function AuthorBio() {
 
 function PostView({ post, onBack, allPosts, onSelectPost }) {
   const [openFaq, setOpenFaq] = useState(null);
+  const contentRef = useRef(null);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
@@ -498,7 +500,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
               </div>
             ) : null}
 
-            <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
+            <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 React.createElement(post.content, { components: MdxComponents })
               ) : post.body ? (
@@ -543,8 +545,9 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
             )}
           </div>
 
-          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4">
-            <PostSidebar 
+          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
+            <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+            <PostSidebar
               allPosts={allPosts} 
               currentPost={post} 
               onSelectPost={(p) => {
