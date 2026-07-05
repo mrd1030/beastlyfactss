@@ -17,6 +17,7 @@ import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
+import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
@@ -428,6 +429,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
 
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="min-h-screen">
+      <ReadingProgressBar />
       <Helmet>
         <title>{postTitle}</title>
         <meta name="description" content={postDescription} />
