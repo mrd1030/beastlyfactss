@@ -8,6 +8,7 @@ import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
+import CostBuilder from '@/components/guides/CostBuilder';
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
@@ -338,6 +339,9 @@ export default function GuideDetail() {
                 ))}
               </div>
             </div>
+
+            {/* Cost builder */}
+            <CostBuilder guide={guide} />
 
             {/* FAQ */}
             {guide.faqs?.length > 0 && (

@@ -13,6 +13,28 @@ export const lizardGuides = [
       slug: "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
       title: "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away",
     },
+    // Rough starting ranges, not verified current pricing — reviewed by
+    // Mike before treating these as accurate for readers.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft enclosure (PVC or wood/glass)", low: 200, high: 400 },
+        { item: "T5 HO UVB fixture + bulb", low: 60, high: 100 },
+        { item: "Basking bulb + fixture", low: 20, high: 40 },
+        { item: "Infrared thermometer gun", low: 15, high: 30 },
+        { item: "Substrate (tile or reptile carpet)", low: 20, high: 40 },
+        { item: "Branches, hides, and decor", low: 30, high: 60 },
+        { item: "Food and water dishes", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "UVB bulb replacement (every 6-12 months)", low: 60, high: 100 },
+        { item: "Basking bulb replacement", low: 15, high: 25 },
+        { item: "Feeder insects (dubia, BSFL, crickets)", low: 200, high: 400 },
+        { item: "Leafy greens and vegetables", low: 150, high: 250 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "Electricity (heat and lighting)", low: 80, high: 150 },
+        { item: "Annual vet wellness check", low: 50, high: 100 },
+      ],
+    },
     sections: {
       housing: `Adult bearded dragons need a minimum 4x2x2 ft enclosure, and larger is always better. Juveniles can start smaller but reach their adult size relatively quickly, so investing in the correct adult enclosure from the start makes practical sense. PVC or wooden enclosures with glass fronts retain heat better than glass tanks and are widely preferred by experienced keepers.
 
