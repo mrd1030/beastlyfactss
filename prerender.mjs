@@ -164,6 +164,11 @@ async function renderRoute(page, route) {
   return page.content();
 }
 
+// A path guaranteed not to match any real route, so it always renders the
+// wildcard PageNotFound component — reusing the real app's styling/links
+// instead of hand-maintaining a separate static 404 page.
+const NOT_FOUND_PROBE_ROUTE = '/__prerender_404_probe__';
+
 async function saveHtml(route, html) {
   const filePath =
     route === '/'
@@ -242,6 +247,21 @@ async function main() {
     allRoutes.filter((_, j) => j % CONCURRENCY === i)
   );
   await Promise.all(buckets.map(bucket => renderWorker(browser, bucket, results)));
+
+  // Cloudflare Pages serves a literal 404.html (with a real 404 status) for
+  // any request that doesn't match a static asset or an explicit _redirects
+  // rule. Generate it from the actual app instead of hand-writing a separate
+  // page, so it always matches the live PageNotFound component/styling.
+  try {
+    const page = await browser.newPage();
+    const html = await renderRoute(page, NOT_FOUND_PROBE_ROUTE);
+    await writeFile(path.join(DIST, '404.html'), html, 'utf-8');
+    await page.close();
+    console.log('  ✓ 404.html');
+  } catch (err) {
+    console.warn(`  ✗ 404.html — ${err.message}`);
+    results.failed++;
+  }
 
   await browser.close();
   server.httpServer.close();

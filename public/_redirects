@@ -23,4 +23,48 @@
 /encyclopedia/guides /guides/ 301
 /encyclopedia/guides/ /guides/ 301
 /encyclopedia/guides/* /guides/category/:splat/ 301
-/* /index.html 200
+
+# Real app routes fall back to the SPA shell (200) so React Router can render
+# them client-side — this matters for paths not covered by prerendering yet
+# (e.g. a brand-new Sanity post, or /donate/success after a live Stripe
+# redirect). Listed explicitly rather than a blanket /* so that genuinely
+# unknown paths fall through to the 404 rule below instead of silently
+# returning 200 for a page that doesn't exist.
+/ /index.html 200
+/facts /index.html 200
+/facts/ /index.html 200
+/guides /index.html 200
+/guides/* /index.html 200
+/encyclopedia /index.html 200
+/encyclopedia/* /index.html 200
+/blog /index.html 200
+/blog/* /index.html 200
+/quiz/* /index.html 200
+/pack /index.html 200
+/pack/ /index.html 200
+/about /index.html 200
+/about/ /index.html 200
+/contact /index.html 200
+/contact/ /index.html 200
+/animal-facts /index.html 200
+/animal-facts/ /index.html 200
+/fact-files /index.html 200
+/fact-files/ /index.html 200
+/donate /index.html 200
+/donate/* /index.html 200
+/terms /index.html 200
+/terms/ /index.html 200
+/privacy /index.html 200
+/privacy/ /index.html 200
+/categories /index.html 200
+/categories/ /index.html 200
+/category/* /index.html 200
+/search /index.html 200
+/search/ /index.html 200
+/glossary /index.html 200
+/glossary/ /index.html 200
+
+# Anything else genuinely doesn't exist — serve the real custom 404 page
+# with an actual 404 status instead of the SPA shell (which returned 200 for
+# every URL, making automated "custom 404 page" checks see no 404 at all).
+/* /404.html 404
