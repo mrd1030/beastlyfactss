@@ -10,6 +10,28 @@
 /blog/leopard-gecko-temps/ /blog/leopard-gecko-temperature-guide/ 301
 /blog/category/small-exotic-pets /blog/category/small-and-exotic-pets/ 301
 /blog/category/small-exotic-pets/ /blog/category/small-and-exotic-pets/ 301
+/blog/category/bird-care /blog/category/birds/ 301
+/blog/category/bird-care/ /blog/category/birds/ 301
+/blog/category/reptile-care /blog/category/reptiles/ 301
+/blog/category/reptile-care/ /blog/category/reptiles/ 301
+/blog/category/invertebrate-care /blog/category/invertebrates/ 301
+/blog/category/invertebrate-care/ /blog/category/invertebrates/ 301
+/blog/category/fish-care /blog/category/aquatic-life/ 301
+/blog/category/fish-care/ /blog/category/aquatic-life/ 301
+/blog/category/small-mammal-care /blog/category/small-and-exotic-pets/ 301
+/blog/category/small-mammal-care/ /blog/category/small-and-exotic-pets/ 301
+/blog/category/care-tips /blog/category/pet-care/ 301
+/blog/category/care-tips/ /blog/category/pet-care/ 301
+/blog/category/lighting /blog/category/pet-care/ 301
+/blog/category/lighting/ /blog/category/pet-care/ 301
+/blog/category/health /blog/category/pet-care/ 301
+/blog/category/health/ /blog/category/pet-care/ 301
+/blog/category/feeding /blog/category/pet-care/ 301
+/blog/category/feeding/ /blog/category/pet-care/ 301
+/blog/category/enclosures /blog/category/pet-care/ 301
+/blog/category/enclosures/ /blog/category/pet-care/ 301
+/blog/category/site-news /blog/welcome-to-beastlyfacts/ 301
+/blog/category/site-news/ /blog/welcome-to-beastlyfacts/ 301
 /guides/domestic-shorthair /guides/cat-domestic-shorthair/ 301
 /guides/domestic-shorthair/ /guides/cat-domestic-shorthair/ 301
 /guides/african-grey-parrot /guides/african-grey/ 301
@@ -28,43 +50,53 @@
 # them client-side — this matters for paths not covered by prerendering yet
 # (e.g. a brand-new Sanity post, or /donate/success after a live Stripe
 # redirect). Listed explicitly rather than a blanket /* so that genuinely
-# unknown paths fall through to the 404 rule below instead of silently
-# returning 200 for a page that doesn't exist.
-/ /index.html 200
+# unknown paths fall through to Cloudflare's automatic 404.html handling
+# below instead of silently returning 200 for a page that doesn't exist.
+#
+# Destination is "/" rather than "/index.html" — Cloudflare Pages auto-
+# normalizes any request/rewrite touching a literal "/index.html" or
+# "*.html" path, and when the source pattern also ends in "/" or "/*" that
+# normalization loops back into this same rule, which Cloudflare's linter
+# detects and silently disables the whole rule (see deploy log: "Infinite
+# loop detected... has been ignored"). "/" resolves to the exact same file
+# (this is a static SPA shell either way) without tripping that check.
 /facts /index.html 200
-/facts/ /index.html 200
+/facts/ / 200
 /guides /index.html 200
-/guides/* /index.html 200
+/guides/* / 200
 /encyclopedia /index.html 200
-/encyclopedia/* /index.html 200
+/encyclopedia/* / 200
 /blog /index.html 200
-/blog/* /index.html 200
-/quiz/* /index.html 200
+/blog/* / 200
+/quiz/* / 200
 /pack /index.html 200
-/pack/ /index.html 200
+/pack/ / 200
 /about /index.html 200
-/about/ /index.html 200
+/about/ / 200
 /contact /index.html 200
-/contact/ /index.html 200
+/contact/ / 200
 /animal-facts /index.html 200
-/animal-facts/ /index.html 200
+/animal-facts/ / 200
 /fact-files /index.html 200
-/fact-files/ /index.html 200
+/fact-files/ / 200
 /donate /index.html 200
-/donate/* /index.html 200
+/donate/* / 200
 /terms /index.html 200
-/terms/ /index.html 200
+/terms/ / 200
 /privacy /index.html 200
-/privacy/ /index.html 200
+/privacy/ / 200
 /categories /index.html 200
-/categories/ /index.html 200
-/category/* /index.html 200
+/categories/ / 200
+/category/* / 200
 /search /index.html 200
-/search/ /index.html 200
+/search/ / 200
 /glossary /index.html 200
-/glossary/ /index.html 200
+/glossary/ / 200
 
-# Anything else genuinely doesn't exist — serve the real custom 404 page
-# with an actual 404 status instead of the SPA shell (which returned 200 for
-# every URL, making automated "custom 404 page" checks see no 404 at all).
-/* /404.html 404
+# No explicit "/" or catch-all 404 rule needed below: Cloudflare Pages
+# serves the real dist/index.html for "/" automatically (it's a literal
+# static file), and automatically serves dist/404.html with a genuine 404
+# status for any request that matches no static asset and no rule above —
+# no _redirects entry can override the 404 status code anyway (valid codes
+# are only 200/301/302/303/307/308), so a "/* /404.html 404" line here is
+# always invalid and does nothing.

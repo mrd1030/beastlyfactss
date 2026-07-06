@@ -37,7 +37,7 @@ function ItemLabel({ text, textClassName }) {
         <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
           <img
             src={product.image}
-            alt=""
+            alt={product.product}
             className="w-24 h-24 object-cover rounded-lg border border-border shadow-lg bg-white"
           />
         </span>
