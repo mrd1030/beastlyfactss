@@ -83,6 +83,13 @@ const ANIMAL_IMAGES = {
   'Owl': '/assets/facts/owl.jpg',
   'Reindeer': '/assets/facts/reindeer.jpg',
   'Chicken': '/assets/facts/chicken.jpg',
+  'Cheetah': '/assets/facts/cheetah.jpg',
+  'Tamarin Monkeys': '/assets/facts/tamarin-monkeys.jpg',
+  'Red-footed Booby': '/assets/facts/red-footed-booby.jpg',
+  "Wallace's Flying Frog": '/assets/facts/wallaces-flying-frog.jpg',
+  'Gentoo and Adélie Penguin': '/assets/facts/penguin.jpg',
+  'Capybara': '/assets/facts/capybara.jpg',
+  'Sea Sponge': '/assets/facts/sea-sponge.jpg',
 };
 
 function imageFor(animal) {
