@@ -18,6 +18,7 @@ import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
+import GlossaryHighlighter from '@/components/blog/GlossaryHighlighter';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
@@ -559,6 +560,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
 
           <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
             <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+            <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
             <PostSidebar
               allPosts={allPosts} 
               currentPost={post} 
