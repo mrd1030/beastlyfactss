@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Calculator } from 'lucide-react';
+import { Calculator, ShoppingCart } from 'lucide-react';
+import { getAffiliateForItem } from '@/lib/data/affiliateProducts';
 
 function formatRange(r) {
   return r.low === r.high ? `$${r.low}` : `$${r.low}–$${r.high}`;
@@ -9,6 +10,39 @@ function sumRange(items, checked) {
   return items.reduce(
     (acc, item, i) => (checked[i] ? { low: acc.low + item.low, high: acc.high + item.high } : acc),
     { low: 0, high: 0 }
+  );
+}
+
+function ItemLabel({ text, textClassName }) {
+  const product = getAffiliateForItem(text);
+
+  if (!product) {
+    return <span className={textClassName}>{text}</span>;
+  }
+
+  return (
+    <span className="relative inline-flex items-center gap-1 group/aff min-w-0">
+      <a
+        href={product.link}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        onClick={(e) => e.stopPropagation()}
+        title="Paid link — opens the product on Amazon"
+        className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
+      >
+        {text}
+      </a>
+      <ShoppingCart className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" aria-hidden="true" />
+      {product.image && (
+        <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
+          <img
+            src={product.image}
+            alt=""
+            className="w-24 h-24 object-cover rounded-lg border border-border shadow-lg bg-white"
+          />
+        </span>
+      )}
+    </span>
   );
 }
 
@@ -29,9 +63,10 @@ function CostSection({ title, items, checked, onToggle }) {
                 onChange={() => onToggle(i)}
                 className="accent-secondary w-3.5 h-3.5 flex-shrink-0"
               />
-              <span className={checked[i] ? 'text-foreground' : 'text-muted-foreground line-through'}>
-                {item.item}
-              </span>
+              <ItemLabel
+                text={item.item}
+                textClassName={checked[i] ? 'text-foreground' : 'text-muted-foreground line-through'}
+              />
             </span>
             <span className="text-muted-foreground flex-shrink-0 whitespace-nowrap">
               {item.low === item.high ? `$${item.low}` : `$${item.low}–$${item.high}`}
@@ -52,6 +87,9 @@ export default function CostBuilder({ guide }) {
 
   const setupTotal = sumRange(costs.setup, checkedSetup);
   const annualTotal = sumRange(costs.annual, checkedAnnual);
+  const hasAffiliateLinks = [...(costs.setup || []), ...(costs.annual || [])].some(
+    (i) => getAffiliateForItem(i.item)
+  );
 
   const toggleSetup = (i) => setCheckedSetup(prev => prev.map((v, idx) => (idx === i ? !v : v)));
   const toggleAnnual = (i) => setCheckedAnnual(prev => prev.map((v, idx) => (idx === i ? !v : v)));
@@ -80,6 +118,7 @@ export default function CostBuilder({ guide }) {
       </div>
       <p className="text-[10px] text-muted-foreground/70 font-body mt-3 italic">
         Rough estimates to help you plan — actual prices vary by region and retailer.
+        {hasAffiliateLinks && ' Underlined items are paid Amazon links — we may earn a commission at no extra cost to you.'}
       </p>
     </div>
   );
