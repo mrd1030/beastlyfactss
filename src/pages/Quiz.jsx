@@ -450,6 +450,8 @@ export default function Quiz() {
         <meta property="og:url" content={meta.canonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts — animal personality and trivia quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />

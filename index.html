@@ -10,17 +10,17 @@
          NO canonical here: react-helmet-async injects the correct one per-route.
          Two canonicals = Google ignores both. -->
     <title>Beastly Facts | Amazing Animal Trivia, Guides &amp; Fun Quizzes</title>
-    <!-- Open Graph — site-wide only; per-page og:url/title/description/type injected by react-helmet-async -->
+    <!-- Open Graph — site-wide only; per-page og:url/title/description/type/image injected
+         by react-helmet-async. og:image (+width/height/alt) intentionally NOT duplicated here —
+         every page now sets its own via Helmet, and a static leftover here would sit alongside
+         Helmet's per-page override as a second, stale og:image tag (same failure mode already
+         fixed for meta name="description"). Crawlers reading the first of two conflicting
+         og:image tags would get this generic one instead of the per-post image. -->
     <meta property="og:site_name" content="Beastly Facts" />
-    <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Beastly Facts — amazing animal trivia, guides and quizzes" />
 
     <!-- Twitter Card — site-wide only -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@beastlyfacts" />
-    <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
 
     <!-- LCP preload: hero image above fold, fetched before render -->
     <!-- Preload WebP hero (preferred by modern browsers); sizes match HeroSection srcset -->

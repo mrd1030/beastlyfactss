@@ -9,6 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CostBuilder from '@/components/guides/CostBuilder';
+import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
@@ -188,6 +189,10 @@ export default function GuideDetail() {
   const ogImage = guide.image
     ? `https://beastlyfacts.com${guide.image}`
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  // og:image:width/height must match the actual image's real size — Helmet
+  // has no way to "unset" a tag it doesn't declare, so leaving these fixed
+  // at 1200x630 would silently misdeclare every guide photo's real dimensions.
+  const ogImageDims = (guide.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
 
   const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
   const guideDescription = truncateDescription(guide.tagline
@@ -216,6 +221,8 @@ export default function GuideDetail() {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content={String(ogImageDims.width)} />
+        <meta property="og:image:height" content={String(ogImageDims.height)} />
         <meta property="og:image:alt" content={`${guide.name} care guide — Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guideTitle} />

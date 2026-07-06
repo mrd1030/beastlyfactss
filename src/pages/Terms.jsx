@@ -17,6 +17,10 @@ export default function Terms() {
         <meta name="description" content="Read the Beastly Facts terms of service to understand the rules and guidelines for using our animal facts, care guides, and quiz platform." />
         <link rel="canonical" href="https://beastlyfacts.com/terms/" />
         <meta name="robots" content="noindex, follow" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">

@@ -11,6 +11,10 @@ export default function DonateCancel() {
       <Helmet>
         <title>Donation Cancelled | Beastly Facts</title>
         <meta name="robots" content="noindex, nofollow" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 50 }}

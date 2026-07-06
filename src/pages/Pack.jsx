@@ -28,9 +28,13 @@ export default function Pack() {
         <meta property="og:description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts." />
         <meta property="og:url" content="https://beastlyfacts.com/pack/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="My Beast Pack | Beastly Facts" />
         <meta name="twitter:description" content="Your personal collection of saved animal facts and quiz results on Beastly Facts." />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>

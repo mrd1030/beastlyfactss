@@ -9,6 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
+import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 
 function BioField({ label, value }) {
   return (
@@ -61,6 +62,10 @@ export default function EncyclopediaAnimal() {
   const ogImage = guide?.image
     ? `https://beastlyfacts.com${guide.image}`
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  // og:image:width/height must match the actual image's real size — Helmet
+  // has no way to "unset" a tag it doesn't declare, so leaving these fixed
+  // at 1200x630 would silently misdeclare every animal photo's real dimensions.
+  const ogImageDims = (guide?.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
   const pageTitle = `${animal.name} — Encyclopedia | Beastly Facts`;
   const pageDescription = truncateDescription(bio.overview
     || `Learn about the ${animal.name} (${animal.scientific}) — natural habitat, wild diet, lifespan, size, and conservation status.`);
@@ -77,6 +82,8 @@ export default function EncyclopediaAnimal() {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content={String(ogImageDims.width)} />
+        <meta property="og:image:height" content={String(ogImageDims.height)} />
         <meta property="og:image:alt" content={`${animal.name} — Beastly Facts Encyclopedia`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />

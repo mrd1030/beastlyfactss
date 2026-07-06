@@ -67,6 +67,8 @@ export default function AnimalFacts() {
         <meta property="og:url" content="https://beastlyfacts.com/animal-facts/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts — fun animal facts and pet care tips" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fun Animal Facts & Pet Care Tips | Beastly Facts" />

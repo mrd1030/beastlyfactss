@@ -12,6 +12,7 @@ import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
+import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import * as MdxComponents from '@/components/mdx';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
@@ -387,11 +388,18 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
   const postDescription = post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
   const ogImageSource = post.seoImage || post.mainImage;
+  // Sanity images are always cropped to exactly 1200x630 below, and the hero
+  // fallback is also 1200x630 — only a raw post.image asset has a real size
+  // that can differ, so og:image:width/height must be looked up per-image
+  // rather than left at a fixed default (Helmet has no way to "unset" a tag,
+  // so a wrong declared size would otherwise silently persist from whichever
+  // page rendered last).
   const ogImage = ogImageSource
     ? urlFor(ogImageSource).width(1200).height(630).fit('crop').url()
     : post.image
       ? `https://beastlyfacts.com${post.image}`
       : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  const ogImageDims = (!ogImageSource && post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -441,6 +449,8 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:image" content={ogImage} />
+        <meta property="og:image:width" content={String(ogImageDims.width)} />
+        <meta property="og:image:height" content={String(ogImageDims.height)} />
         <meta property="og:image:alt" content={post.title} />
         {post.publishedAt && <meta property="article:published_time" content={post.publishedAt} />}
         {post.category && <meta property="article:section" content={post.category} />}

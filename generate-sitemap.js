@@ -64,6 +64,7 @@ const staticPages = [
   '/categories/',
   '/facts/',
   '/animal-facts/',
+  '/fact-files/',
   '/blog/',
   '/encyclopedia/',
   '/guides/',
@@ -278,7 +279,7 @@ async function generateSitemap() {
 
   uniqueStatic.forEach(path => {
     const isHome = path === '/';
-    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/guides/', '/animal-facts/', '/quiz/'].includes(path);
+    const isHighFreq = ['/', '/facts/', '/blog/', '/encyclopedia/', '/guides/', '/animal-facts/', '/fact-files/', '/quiz/'].includes(path);
     const isGuideCat = path.startsWith('/guides/category/');
     const isGuideDetail = path.startsWith('/guides/') && !isGuideCat;
     const isEncAnimal = path.startsWith('/encyclopedia/animal/');

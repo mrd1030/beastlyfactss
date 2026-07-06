@@ -15,6 +15,8 @@ export default function About() {
         <meta property="og:url" content="https://beastlyfacts.com/about/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts — animal trivia, care guides and quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Beastly Facts" />
