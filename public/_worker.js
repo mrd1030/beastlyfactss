@@ -17,6 +17,17 @@ const ANIMAL_IMAGES = {
   'Octopus': '/assets/images/fun-facts-octopus.jpg',
   'Cuttlefish': '/assets/images/fun-facts-cuttlefish.jpg',
   'Boa Constrictor': '/assets/images/fun-facts-boa-constrictor.jpg',
+  'Wombat': '/assets/facts/wombat.jpg',
+  'Narwhal': '/assets/facts/narwhal.jpg',
+  'Honey Badger': '/assets/facts/honey-badger.jpg',
+  'Cat': '/assets/facts/cat.jpg',
+  'Dog': '/assets/facts/dog.jpg',
+  'Parrot': '/assets/facts/parrot.jpg',
+  'Chameleon': '/assets/facts/chameleon.jpg',
+  'Clownfish': '/assets/facts/clownfish.jpg',
+  'Dolphin': '/assets/facts/dolphin.jpg',
+  'Dolphins': '/assets/facts/dolphin.jpg',
+  'Elephant': '/assets/facts/elephant.jpg',
 };
 
 function imageFor(animal) {
