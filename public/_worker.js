@@ -1,6 +1,28 @@
 const DAY_MS = 86400000;
 const EPOCH = Date.UTC(2026, 0, 1);
 const WINDOW = 14;
+const FALLBACK_IMAGE = 'https://beastlyfacts.com/assets/hero-1200.jpg';
+
+// Only exact, confirmed species matches - add more as real photos get sourced.
+// Anything not listed here falls back to the branded hero image.
+const ANIMAL_IMAGES = {
+  'Bearded Dragon': '/assets/guides/bearded-dragon.jpg',
+  'Leopard Gecko': '/assets/guides/leopard-gecko.jpg',
+  'Crested Gecko': '/assets/guides/crested-gecko.jpg',
+  'Ball Python': '/assets/guides/ball-python.jpg',
+  'Rabbit': '/assets/guides/rabbit.jpg',
+  'Guinea Pig': '/assets/guides/guinea-pig.jpg',
+  'Hedgehog': '/assets/guides/hedgehog.jpg',
+  'Axolotl': '/assets/images/fun-facts-axolotl.jpg',
+  'Octopus': '/assets/images/fun-facts-octopus.jpg',
+  'Cuttlefish': '/assets/images/fun-facts-cuttlefish.jpg',
+  'Boa Constrictor': '/assets/images/fun-facts-boa-constrictor.jpg',
+};
+
+function imageFor(animal) {
+  const path = ANIMAL_IMAGES[animal];
+  return path ? `https://beastlyfacts.com${path}` : FALLBACK_IMAGE;
+}
 
 function cdata(value) {
   return `<![CDATA[${String(value).replace(/]]>/g, ']]]]><![CDATA[>')}]]>`;
@@ -31,6 +53,7 @@ export default {
       <guid isPermaLink="false">${guid}</guid>
       <pubDate>${pubDate.toUTCString()}</pubDate>
       <description>${cdata(`${fact.emoji} ${fact.fact}`)}</description>
+      <enclosure url="${imageFor(fact.animal)}" type="image/jpeg" length="0" />
     </item>`
       )
       .join('');
