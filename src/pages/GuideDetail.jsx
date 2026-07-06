@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen } from 'lucide-react';
+import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calculator, HelpCircle, BookMarked } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
@@ -26,6 +26,14 @@ export default function GuideDetail() {
   const [openFaq, setOpenFaq] = useState(null);
   const legendTriggerRef = useRef(null);
   const legendModalRef = useRef(null);
+  const [isPrintOpen, setIsPrintOpen] = useState(false);
+  const [printOptions, setPrintOptions] = useState({ encyclopedia: false, cost: false, faq: false });
+  const printTriggerRef = useRef(null);
+  const printModalRef = useRef(null);
+
+  const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
+  const hasFaq = !!guide?.faqs?.length;
+  const hasEncyclopedia = !!encAnimal?.bio;
 
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
@@ -71,7 +79,46 @@ export default function GuideDetail() {
     };
   }, [isLegendOpen]);
 
-  const handlePrint = () => {
+  // Same modal keyboard handling as the difficulty legend above, kept as a
+  // separate effect (rather than generalized) since the two modals never
+  // open at the same time and each has its own trigger/ref to restore focus to.
+  useEffect(() => {
+    if (!isPrintOpen) return;
+
+    const modal = printModalRef.current;
+    const focusables = modal
+      ? modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+      : [];
+    if (focusables.length) focusables[0].focus();
+
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        setIsPrintOpen(false);
+        return;
+      }
+      if (e.key === 'Tab' && focusables.length) {
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      printTriggerRef.current?.focus();
+    };
+  }, [isPrintOpen]);
+
+  const formatRange = (r) => (r.low === r.high ? `$${r.low}` : `$${r.low}–$${r.high}`);
+
+  const handlePrint = (options = {}) => {
     const sections = [
       { title: '🏠 Housing', content: guide.sections.housing },
       { title: '🥗 Diet', content: guide.sections.diet },
@@ -83,14 +130,62 @@ export default function GuideDetail() {
       .map(item => `☐  ${item}`)
       .join('<br>');
 
+    const encyclopediaHTML = options.encyclopedia && hasEncyclopedia ? `
+      <div class="section encyclopedia-section">
+        <h2>📚 ${encAnimal.name} — Encyclopedia Overview</h2>
+        ${encAnimal.bio.overview ? `<p class="overview-text">${encAnimal.bio.overview}</p>` : ''}
+        <table class="quick-facts-table">
+          ${[
+            ['Native Range', encAnimal.bio.origin],
+            ['Natural Habitat', encAnimal.bio.habitat],
+            ['Adult Size', encAnimal.bio.adultSize],
+            ['Wild Diet', encAnimal.bio.wildDiet],
+            ['Wild Lifespan', encAnimal.bio.wildLifespan],
+            ['Conservation Status', encAnimal.bio.conservation],
+          ].filter(([, value]) => value).map(([label, value]) => `<tr><td class="qf-label">${label}</td><td>${value}</td></tr>`).join('')}
+        </table>
+      </div>
+    ` : '';
+
+    const costHTML = options.cost && hasCost ? `
+      <div class="section cost-section">
+        <h2>💰 Cost Breakdown</h2>
+        ${['setup', 'annual'].map(key => {
+          const items = guide.costs[key] || [];
+          if (!items.length) return '';
+          const total = items.reduce((acc, i) => ({ low: acc.low + i.low, high: acc.high + i.high }), { low: 0, high: 0 });
+          return `
+            <h3>${key === 'setup' ? 'One-Time Setup' : 'Ongoing (Per Year)'}</h3>
+            <table class="cost-table">
+              ${items.map(i => `<tr><td>${i.item}</td><td>${formatRange(i)}</td></tr>`).join('')}
+              <tr class="cost-total"><td>Total</td><td>${formatRange(total)}</td></tr>
+            </table>
+          `;
+        }).join('')}
+        <p class="cost-note">Rough estimates — actual prices vary by region and retailer.</p>
+      </div>
+    ` : '';
+
+    const faqHTML = options.faq && hasFaq ? `
+      <div class="section">
+        <h2>❓ Frequently Asked Questions</h2>
+        ${guide.faqs.map(faq => `
+          <div class="faq-item">
+            <p class="faq-q">${faq.q}</p>
+            <p class="faq-a">${faq.a}</p>
+          </div>
+        `).join('')}
+      </div>
+    ` : '';
+
     const printHTML = `
       <html>
         <head>
           <title>${guide.emoji} ${guide.name} — Care Guide</title>
           <style>
             @media print {
-              .section { 
-                page-break-inside: avoid; 
+              .section {
+                page-break-inside: avoid;
                 break-inside: avoid;
               }
               .checklist-section {
@@ -98,40 +193,53 @@ export default function GuideDetail() {
                 break-inside: avoid;
               }
             }
-            body { 
-              font-family: system-ui, -apple-system, sans-serif; 
-              padding: 32px 40px; 
-              line-height: 1.65; 
-              color: #222; 
+            body {
+              font-family: system-ui, -apple-system, sans-serif;
+              padding: 32px 40px;
+              line-height: 1.65;
+              color: #222;
               max-width: 820px;
               margin: 0 auto;
             }
             h1 { font-size: 24px; margin-bottom: 4px; }
             h2 { font-size: 17px; margin-top: 26px; margin-bottom: 10px; border-bottom: 1.5px solid #eee; padding-bottom: 6px; }
+            h3 { font-size: 14px; margin-top: 14px; margin-bottom: 6px; color: #444; }
             .section { margin-bottom: 22px; }
-            .checklist { 
-              font-size: 13.5px; 
-              line-height: 2; 
-              background: #f8f9fa; 
-              padding: 20px 22px; 
+            .checklist {
+              font-size: 13.5px;
+              line-height: 2;
+              background: #f8f9fa;
+              padding: 20px 22px;
               border-radius: 10px;
               margin-top: 12px;
             }
-            .footer { 
-              margin-top: 40px; 
-              font-size: 10.5px; 
-              color: #888; 
-              border-top: 1px solid #ddd; 
-              padding-top: 14px; 
+            .footer {
+              margin-top: 40px;
+              font-size: 10.5px;
+              color: #888;
+              border-top: 1px solid #ddd;
+              padding-top: 14px;
             }
             .tagline {
               font-style: italic;
               color: #444;
               margin: 16px 0 24px;
             }
+            table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+            .cost-table td, .quick-facts-table td { padding: 5px 4px; border-bottom: 1px solid #eee; }
+            .cost-table td:last-child { text-align: right; color: #555; white-space: nowrap; }
+            .cost-total td { font-weight: 700; border-top: 1.5px solid #ccc; border-bottom: none; }
+            .cost-note { font-size: 10.5px; color: #888; font-style: italic; margin-top: 4px; }
+            .qf-label { font-weight: 600; color: #555; width: 40%; }
+            .overview-text { font-size: 13.5px; color: #333; margin-bottom: 10px; }
+            .encyclopedia-section { background: #f8f9fa; padding: 18px 20px; border-radius: 10px; }
+            .faq-item { margin-bottom: 12px; }
+            .faq-q { font-weight: 700; font-size: 13.5px; margin-bottom: 2px; }
+            .faq-a { font-size: 13px; color: #444; }
           </style>
         </head>
         <body>
+          ${encyclopediaHTML}
           <h1>${guide.emoji} ${guide.name}</h1>
           <p style="color: #555; font-size: 13.5px; margin-top: -4px;">${guide.petType} • ${guide.difficulty} level</p>
           <p class="tagline">${guide.tagline}</p>
@@ -151,6 +259,9 @@ export default function GuideDetail() {
               ${checklistHTML}
             </div>
           </div>
+
+          ${costHTML}
+          ${faqHTML}
 
           <div class="footer">
             Printed from BeastlyFacts.com • ${new Date().toLocaleDateString()} • Keep this guide handy! 🐾
@@ -284,7 +395,8 @@ export default function GuideDetail() {
               </div>
             </div>
             <button
-              onClick={handlePrint}
+              ref={printTriggerRef}
+              onClick={() => setIsPrintOpen(true)}
               className="flex-shrink-0 flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
             >
               <Printer className="w-3.5 h-3.5" /> Print Checklist
@@ -492,12 +604,108 @@ export default function GuideDetail() {
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>
             <DifficultyLegend />
-            <button 
+            <button
               onClick={() => setIsLegendOpen(false)}
               className="mt-4 w-full bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-display font-semibold transition-colors hover:opacity-90"
             >
               Close Window
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* Print Options Popup Modal */}
+      {isPrintOpen && (
+        <div
+          onClick={() => setIsPrintOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in"
+        >
+          <div
+            ref={printModalRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Print options"
+            onClick={(e) => e.stopPropagation()}
+            className="bg-card border border-border p-6 rounded-2xl max-w-md w-full shadow-2xl relative"
+          >
+            <h2 className="text-lg font-bold mb-1 font-display text-foreground flex items-center gap-2">
+              <Printer className="w-4 h-4" /> Print Options
+            </h2>
+            <p className="text-xs text-muted-foreground font-body mb-4">
+              Housing, diet, enrichment, health &amp; the checklist are always included. Add anything else below.
+            </p>
+
+            <div className="space-y-2 mb-5">
+              {hasEncyclopedia && (
+                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={printOptions.encyclopedia}
+                    onChange={() => setPrintOptions(p => ({ ...p, encyclopedia: !p.encyclopedia }))}
+                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
+                  />
+                  <span>
+                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                      <BookMarked className="w-3.5 h-3.5" /> Encyclopedia Overview
+                    </span>
+                    <span className="text-xs text-muted-foreground block mt-0.5">
+                      Species overview &amp; quick facts — added to the top of the printout
+                    </span>
+                  </span>
+                </label>
+              )}
+              {hasCost && (
+                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={printOptions.cost}
+                    onChange={() => setPrintOptions(p => ({ ...p, cost: !p.cost }))}
+                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
+                  />
+                  <span>
+                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                      <Calculator className="w-3.5 h-3.5" /> Cost Builder
+                    </span>
+                    <span className="text-xs text-muted-foreground block mt-0.5">
+                      Full one-time &amp; ongoing price breakdown
+                    </span>
+                  </span>
+                </label>
+              )}
+              {hasFaq && (
+                <label className="flex items-start gap-2.5 text-sm font-body bg-muted/50 rounded-xl px-3 py-2.5 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={printOptions.faq}
+                    onChange={() => setPrintOptions(p => ({ ...p, faq: !p.faq }))}
+                    className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
+                  />
+                  <span>
+                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                      <HelpCircle className="w-3.5 h-3.5" /> FAQ
+                    </span>
+                    <span className="text-xs text-muted-foreground block mt-0.5">
+                      Frequently asked questions
+                    </span>
+                  </span>
+                </label>
+              )}
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setIsPrintOpen(false)}
+                className="flex-1 border border-border text-foreground px-4 py-2 rounded-xl font-display font-semibold text-sm transition-colors hover:bg-muted"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => { handlePrint(printOptions); setIsPrintOpen(false); }}
+                className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-display font-semibold text-sm transition-colors hover:opacity-90"
+              >
+                Print
+              </button>
+            </div>
           </div>
         </div>
       )}
