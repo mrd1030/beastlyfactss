@@ -67,6 +67,22 @@ const ANIMAL_IMAGES = {
   'Humpback Whale': '/assets/facts/humpback-whale.jpg',
   'Lemur': '/assets/facts/lemur.jpg',
   'Kangaroo': '/assets/facts/kangaroo.jpg',
+  'Honeybee': '/assets/facts/honeybee.jpg',
+  'Honey Bee': '/assets/facts/honeybee.jpg',
+  'Lyrebird': '/assets/facts/lyrebird.jpg',
+  'Mimic Octopus': '/assets/facts/mimic-octopus.jpg',
+  'Cricket': '/assets/facts/cricket.jpg',
+  'Green Sea Turtle': '/assets/facts/green-sea-turtle.jpg',
+  'Common House Spider': '/assets/facts/common-house-spider.jpg',
+  'Mayfly': '/assets/facts/mayfly.jpg',
+  'Kangaroo Rat': '/assets/facts/kangaroo-rat.jpg',
+  'Sphynx Cat': '/assets/facts/sphynx-cat.jpg',
+  'Sea Turtles': '/assets/facts/sea-turtles.jpg',
+  'Box Turtle': '/assets/facts/box-turtle.jpg',
+  'California Sea Lion': '/assets/facts/california-sea-lion.jpg',
+  'Owl': '/assets/facts/owl.jpg',
+  'Reindeer': '/assets/facts/reindeer.jpg',
+  'Chicken': '/assets/facts/chicken.jpg',
 };
 
 function imageFor(animal) {
