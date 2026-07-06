@@ -24,6 +24,9 @@ export default function TableOfContents({ contentRef, watch, skipText }) {
         while (seenIds.has(unique)) unique = `${id}-${i++}`;
         seenIds.add(unique);
         if (!node.id) node.id = unique;
+        // Clears the fixed navbar (+ reading progress bar, which overlaps it) plus
+        // a little breathing room, so a jumped-to heading isn't flush against the top.
+        node.style.scrollMarginTop = 'calc(56px + env(safe-area-inset-top, 0px) + 16px)';
         return { id: unique, text, level: node.tagName === 'H3' ? 3 : 2 };
       });
 
