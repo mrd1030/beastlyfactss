@@ -157,6 +157,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/fun-facts-ball-python.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/fun-facts-betta-fish.jpg": {
     "width": 1168,
     "height": 784
