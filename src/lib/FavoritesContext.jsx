@@ -87,6 +87,36 @@ export function FavoritesProvider({ children }) {
   const achievementState = { favoritesCount: favorites.length, quizzesCompleted, streakCount: streak };
   const unlockedAchievements = ACHIEVEMENTS.filter(a => a.check(achievementState));
 
+  // Seeded once, on first-ever load, with whatever's already unlocked at that
+  // moment — so returning users aren't hit with a pile of toasts for things
+  // they achieved before this feature existed. Deliberately NOT effect-driven:
+  // an effect here raced with React 18 StrictMode's dev-only double-invoke
+  // (the localStorage write leaked into a second "fresh" mount that then read
+  // it back and thought everything was already seen). Pending toasts are just
+  // unlockedAchievements minus seenAchievements, computed straight in render;
+  // seenAchievements is only ever mutated by the explicit dismiss below.
+  const [seenAchievements, setSeenAchievements] = useState(() => {
+    try {
+      const raw = localStorage.getItem('beastly-seen-achievements');
+      if (raw !== null) return JSON.parse(raw);
+    } catch {}
+    const seed = ACHIEVEMENTS.filter(a => a.check(achievementState)).map(a => a.id);
+    try { localStorage.setItem('beastly-seen-achievements', JSON.stringify(seed)); } catch {}
+    return seed;
+  });
+
+  const currentAchievementToast = unlockedAchievements.find(a => !seenAchievements.includes(a.id)) || null;
+
+  const dismissCurrentToast = () => {
+    if (!currentAchievementToast) return;
+    setSeenAchievements(prev => {
+      if (prev.includes(currentAchievementToast.id)) return prev;
+      const next = [...prev, currentAchievementToast.id];
+      try { localStorage.setItem('beastly-seen-achievements', JSON.stringify(next)); } catch {}
+      return next;
+    });
+  };
+
   return (
     <FavoritesContext.Provider value={{
       favorites,
@@ -100,6 +130,8 @@ export function FavoritesProvider({ children }) {
       recordQuizCompletion,
       streak,
       unlockedAchievements,
+      currentAchievementToast,
+      dismissCurrentToast,
     }}>
       {children}
     </FavoritesContext.Provider>
