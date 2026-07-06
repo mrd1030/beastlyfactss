@@ -58,14 +58,14 @@ export const AFFILIATE_PRODUCTS = [
     product: "High-wattage basking bulb (250W)",
     link: "https://amzn.to/4vfa5L0",
     image: "/assets/images/affiliate/product-8.jpg",
-    covers: ["High-wattage basking bulb + fixture", "High-wattage basking setup"],
+    covers: ["High-wattage basking bulb + fixture"],
   },
   {
     slug: "high-wattage-basking-fixture",
     product: "High-wattage basking fixture (up to 150W)",
     link: "https://amzn.to/4ybRSRw",
     image: "/assets/images/affiliate/product-9.jpg",
-    covers: [],
+    covers: ["High-wattage basking setup"],
   },
   {
     slug: "under-tank-heat-mat-thermostat-kit",

@@ -14,6 +14,7 @@ export default function DonateCancel() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
       </Helmet>
       <motion.div

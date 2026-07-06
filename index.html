@@ -18,8 +18,10 @@
          og:image tags would get this generic one instead of the per-post image. -->
     <meta property="og:site_name" content="Beastly Facts" />
 
-    <!-- Twitter Card — site-wide only -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Twitter Card — twitter:card intentionally NOT duplicated here for the same
+         reason as og:image above: every page now sets its own via Helmet (including
+         Pack.jsx, which deliberately uses "summary" instead of "summary_large_image"),
+         and a static leftover here would create a second, conflicting twitter:card tag. -->
     <meta name="twitter:site" content="@beastlyfacts" />
 
     <!-- LCP preload: hero image above fold, fetched before render -->
