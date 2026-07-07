@@ -176,7 +176,15 @@ export default function Blog() {
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
 
+  // Fact Files links to posts with router state flagging where they came from,
+  // so the post view can send readers back there instead of always to the blog.
+  const cameFromFactFiles = location.state?.from === 'fact-files';
+
   const handleBack = () => {
+    if (cameFromFactFiles) {
+      navigate('/fact-files/');
+      return;
+    }
     // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
     const catPath = activeCategory && slugify(activeCategory) !== 'all'
       ? `/blog/category/${catSlug || slugify(activeCategory)}/`
@@ -213,7 +221,15 @@ export default function Blog() {
   };
 
   if (selectedPost) {
-    return <PostView post={selectedPost} onBack={handleBack} allPosts={allPosts} onSelectPost={handleSelectPost} />;
+    return (
+      <PostView
+        post={selectedPost}
+        onBack={handleBack}
+        backLabel={cameFromFactFiles ? 'Back to Fact Files' : 'Back to Critter Digest'}
+        allPosts={allPosts}
+        onSelectPost={handleSelectPost}
+      />
+    );
   }
 
   if (fetchError) {
@@ -406,7 +422,7 @@ function AuthorBio() {
   );
 }
 
-function PostView({ post, onBack, allPosts, onSelectPost }) {
+function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts, onSelectPost }) {
   const [openFaq, setOpenFaq] = useState(null);
   const contentRef = useRef(null);
   const postSlug = post.slug?.current || post._id || post.id;
@@ -497,7 +513,7 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
             <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6">
-              <ArrowLeft className="w-4 h-4" /> Back to Critter Digest
+              <ArrowLeft className="w-4 h-4" /> {backLabel}
             </button>
 
             <span className="text-5xl block mb-4">{post.emoji || '🦎'}</span>

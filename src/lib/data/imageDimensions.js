@@ -249,13 +249,33 @@ export const IMAGE_DIMENSIONS = {
     "width": 784,
     "height": 1168
   },
+  "/assets/images/betta-fish-water-parameters.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
   "/assets/images/bioactive-bearded-dragon.jpg": {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/budgie-cere-color.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
+  "/assets/images/chameleon-hydration.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
+  "/assets/images/cockatoo-feather-plucking.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
   "/assets/images/crested-gecko-humidity.jpg": {
     "width": 784,
     "height": 1168
+  },
+  "/assets/images/ferret-adrenal-disease.jpg": {
+    "width": 1620,
+    "height": 1080
   },
   "/assets/images/fun-bearded-dragon-facts.jpg": {
     "width": 1168,
@@ -317,13 +337,33 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/goldfish-tank-size.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
+  "/assets/images/invertebrate-molting.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
   "/assets/images/leopard-gecko-temperature.jpg": {
     "width": 784,
     "height": 1168
   },
+  "/assets/images/praying-mantis-ootheca.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
+  "/assets/images/rabbit-gi-stasis.jpg": {
+    "width": 1620,
+    "height": 1080
+  },
   "/assets/images/reptile-shedding.jpg": {
     "width": 1168,
     "height": 784
+  },
+  "/assets/images/snake-brumation.jpg": {
+    "width": 1620,
+    "height": 1080
   },
   "/assets/images/uvb-lighting.jpg": {
     "width": 784,

@@ -62,7 +62,11 @@ export default function FactFiles() {
               viewport={{ once: true }}
               transition={{ delay: (i % 6) * 0.05 }}
             >
-              <Link to={`/blog/${post.slug.current}/`} className="group block h-full bg-card border border-border rounded-2xl overflow-hidden hover:border-secondary/50 hover:shadow-md hover:shadow-secondary/10 transition-all">
+              <Link
+                to={`/blog/${post.slug.current}/`}
+                state={{ from: 'fact-files' }}
+                className="group block h-full bg-card border border-border rounded-2xl overflow-hidden hover:border-secondary/50 hover:shadow-md hover:shadow-secondary/10 transition-all"
+              >
                 {post.image && (
                   <div className="aspect-video overflow-hidden">
                     <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
