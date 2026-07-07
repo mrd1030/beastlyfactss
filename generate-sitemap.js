@@ -97,6 +97,7 @@ const staticPages = [
   '/blog/',
   '/encyclopedia/',
   '/guides/',
+  '/gear/',
   '/quiz/personality/',
   '/quiz/trivia/',
   '/quiz/knowledge/',

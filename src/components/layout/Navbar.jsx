@@ -264,7 +264,7 @@ export default function Navbar() {
             ref={menuRef}
             className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
-            <div className="p-4 max-h-[55vh] md:max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_env(safe-area-inset-top))] md:max-h-[70vh] overflow-y-auto custom-scrollbar">
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
@@ -359,6 +359,7 @@ export default function Navbar() {
               <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
                   { to: '/encyclopedia/', emoji: '📚', label: 'Encyclopedia' },
+                  { to: '/gear/', emoji: '🛒', label: 'Gear' },
                   { to: '/pack/', emoji: '🐾', label: 'My Pack' },
                   { to: '/about/', emoji: '🦁', label: 'About' },
                   { to: '/donate/', emoji: '❤️', label: 'Support Us' },

@@ -35,6 +35,7 @@ const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
 const Guides = lazy(() => import('@/pages/Guides'));
+const Gear = lazy(() => import('@/pages/Gear'));
 const FactFiles = lazy(() => import('@/pages/FactFiles'));
 const Chronicles = lazy(() => import('@/pages/Chronicles'));
 
@@ -79,6 +80,7 @@ const AuthenticatedApp = () => {
             <Route path="/guides" element={<Guides />} />
             <Route path="/guides/category/:category" element={<Guides />} />
             <Route path="/guides/:id" element={<GuideDetail />} />
+            <Route path="/gear" element={<Gear />} />
             <Route path="/encyclopedia" element={<Encyclopedia />} />
             <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
             <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />

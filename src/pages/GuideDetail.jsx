@@ -586,6 +586,14 @@ export default function GuideDetail() {
                   Animal Fun Facts
                   <ChevronRight className="w-3.5 h-3.5 ml-auto" />
                 </Link>
+                <Link
+                  to="/gear/"
+                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                >
+                  <span className="text-base">🛒</span>
+                  Recommended Gear
+                  <ChevronRight className="w-3.5 h-3.5 ml-auto" />
+                </Link>
               </div>
             </div>
           </div>

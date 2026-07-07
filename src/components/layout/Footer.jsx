@@ -49,6 +49,7 @@ export default function Footer() {
               links: [
                 { to: '/encyclopedia/', label: 'Browse All' },
                 { to: '/guides/', label: 'Care Guides' },
+                { to: '/gear/', label: 'Recommended Gear' },
                 { to: '/categories/', label: 'All Categories' },
                 { to: '/glossary/', label: 'Glossary' },
               ]
