@@ -46,57 +46,26 @@
 /encyclopedia/guides/ /guides/ 301
 /encyclopedia/guides/* /guides/category/:splat/ 301
 
-# Real app routes fall back to the SPA shell (200) so React Router can render
-# them client-side — this matters for paths not covered by prerendering yet
-# (e.g. a brand-new Sanity post, or /donate/success after a live Stripe
-# redirect). Listed explicitly rather than a blanket /* so that genuinely
-# unknown paths fall through to Cloudflare's automatic 404.html handling
-# below instead of silently returning 200 for a page that doesn't exist.
+# No SPA-fallback 200-rewrite block here on purpose. A prior version of
+# this file had rules like "/guides/* / 200" intended to fall back to the
+# SPA shell for paths not covered by prerendering yet — but Cloudflare
+# Pages applies _redirects rules BEFORE checking whether a matching static
+# asset already exists, so every one of those wildcard rules was silently
+# hijacking its own already-prerendered pages (e.g. /guides/bearded-dragon/,
+# /encyclopedia/category/small-mammals/) and serving the fully-baked
+# homepage's HTML in their place — confirmed live via curl showing the
+# homepage's <title> and canonical on dozens of unrelated pages, caught by
+# an Ahrefs crawl. This broke canonical/title/og-tags sitewide.
 #
-# Destination is "/" rather than "/index.html" — Cloudflare Pages auto-
-# normalizes any request/rewrite touching a literal "/index.html" or
-# "*.html" path, and when the source pattern also ends in "/" or "/*" that
-# normalization loops back into this same rule, which Cloudflare's linter
-# detects and silently disables the whole rule (see deploy log: "Infinite
-# loop detected... has been ignored"). "/" resolves to the exact same file
-# (this is a static SPA shell either way) without tripping that check.
-/facts /index.html 200
-/facts/ / 200
-/guides /index.html 200
-/guides/* / 200
-/encyclopedia /index.html 200
-/encyclopedia/* / 200
-/blog /index.html 200
-/blog/* / 200
-/quiz/* / 200
-/pack /index.html 200
-/pack/ / 200
-/about /index.html 200
-/about/ / 200
-/contact /index.html 200
-/contact/ / 200
-/animal-facts /index.html 200
-/animal-facts/ / 200
-/fact-files /index.html 200
-/fact-files/ / 200
-/donate /index.html 200
-/donate/* / 200
-/terms /index.html 200
-/terms/ / 200
-/privacy /index.html 200
-/privacy/ / 200
-/categories /index.html 200
-/categories/ / 200
-/category/* / 200
-/search /index.html 200
-/search/ / 200
-/glossary /index.html 200
-/glossary/ / 200
-
-# No explicit "/" or catch-all 404 rule needed below: Cloudflare Pages
-# serves the real dist/index.html for "/" automatically (it's a literal
-# static file), and automatically serves dist/404.html with a genuine 404
-# status for any request that matches no static asset and no rule above —
-# no _redirects entry can override the 404 status code anyway (valid codes
-# are only 200/301/302/303/307/308), so a "/* /404.html 404" line here is
-# always invalid and does nothing.
+# Static assets are always served correctly with no rule needed here at
+# all — every guide/encyclopedia/blog/static page is prerendered (see
+# prerender.mjs), so Cloudflare finds and serves the real file directly.
+# For the handful of routes with no static file (e.g. /donate/success,
+# /donate/cancel after a Stripe redirect, or /pack/), Cloudflare's
+# automatic 404.html handling serves a real 404 status — but since this is
+# a client-side-routed SPA, React Router reads the actual browser URL on
+# mount regardless of which HTML/status was initially served, so a real
+# visitor's JS still loads and renders the correct page either way. Only
+# a non-JS crawler hitting one of those exact few noindex routes would see
+# a 404 instead of a soft 200 — an acceptable trade for not breaking SEO
+# tags on every real, indexed page on the site.
