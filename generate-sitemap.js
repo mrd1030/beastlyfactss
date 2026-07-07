@@ -39,7 +39,7 @@ function getMdxPosts() {
       const fm = parseFrontmatter(content);
       const slug = fm.slug || file.replace('.mdx', '');
       if (isChroniclesSlug(slug)) continue; // listed via getChroniclesPages()
-      // Only emit lastmod when the frontmatter carries a real date - // a fabricated build-date lastmod is worse than none at all.
+      // Only emit lastmod when the frontmatter carries a real date - a fabricated build-date lastmod is worse than none at all.
       const lastmod = fm.lastUpdated || fm.date || null;
       posts.push({ path: `/blog/${slug}/`, lastmod, changefreq: 'weekly', priority: '0.7' });
     }

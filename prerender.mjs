@@ -54,7 +54,7 @@ async function getMdxRoutes() {
 }
 
 // Chronicles part routes: /chronicles/<series> (part 1) plus /chronicles/<series>/<n>.
-// Parts = MDX short-story files + Sanity short-story posts, ordered by date - // must stay consistent with groupChronicles() in src/lib/chronicles.js.
+// Parts = MDX short-story files + Sanity short-story posts, ordered by date - must stay consistent with groupChronicles() in src/lib/chronicles.js.
 async function getChroniclesRoutes() {
   const stories = [];
   try {
@@ -229,7 +229,7 @@ async function saveHtml(route, html) {
 }
 
 // 4 tabs, not 8: each tab parses the full JS bundle, and heavy pages
-// (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency - // their <head> never applies within the wait window and the build fails.
+// (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency - their <head> never applies within the wait window and the build fails.
 const CONCURRENCY = 4;
 const MAX_ATTEMPTS = 4; // retries per route before failing the build
 
