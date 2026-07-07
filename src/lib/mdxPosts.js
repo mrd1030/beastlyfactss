@@ -21,6 +21,7 @@ function normalizeMdxPost(filePath, module) {
     _id: slug,
     slug: { current: slug },
     title: frontmatter.title || 'Untitled',
+    seoTitle: frontmatter.seoTitle || null,
     excerpt: frontmatter.excerpt || '',
     publishedAt: frontmatter.date || frontmatter.lastUpdated || new Date().toISOString(),
     
