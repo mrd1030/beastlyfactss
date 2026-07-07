@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
@@ -10,6 +10,35 @@ import groq from 'groq';
 import { CATEGORIES } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { base44 } from '@/api/base44Client';
+import { searchLocalContent } from '@/lib/localSearch';
+
+function LocalResultRow({ result }) {
+  return (
+    <Link
+      to={result.to}
+      className="flex items-start gap-3 bg-card border border-border rounded-xl p-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
+    >
+      <div className="w-10 h-10 flex-shrink-0 rounded-lg bg-muted flex items-center justify-center text-xl">
+        {result.emoji}
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
+          <span className="text-[10px] font-display font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-1.5 py-0.5 rounded-full">
+            {result.type}
+          </span>
+        </div>
+        <h3 className="font-display font-bold text-sm text-foreground leading-snug group-hover:text-secondary transition-colors line-clamp-1">
+          {result.title}
+        </h3>
+        {result.subtitle && (
+          <p className="text-xs text-muted-foreground font-body line-clamp-1 mt-0.5">
+            {result.subtitle}
+          </p>
+        )}
+      </div>
+    </Link>
+  );
+}
 
 const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
   title match $q ||
@@ -82,6 +111,11 @@ export default function Search() {
     return sort === 'newest' ? db - da : da - db;
   });
 
+  // Guides/encyclopedia/glossary live in static data, not Sanity, so they need
+  // their own client-side match - the query above only ever searches blog posts.
+  const localResults = useMemo(() => searchLocalContent(query), [query]);
+  const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
+
   return (
     <div className="min-h-screen">
       <Helmet>
@@ -131,6 +165,20 @@ export default function Search() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+        {/* Guides / Encyclopedia / Glossary matches - static data, matched instantly client-side */}
+        {query.trim() && localResultsFlat.length > 0 && (
+          <div className="mb-6">
+            <p className="text-sm font-body text-muted-foreground mb-3">
+              {localResultsFlat.length} guide{localResultsFlat.length !== 1 ? 's' : ''} & reference match{localResultsFlat.length !== 1 ? 'es' : ''} for "{query}"
+            </p>
+            <div className="space-y-2">
+              {localResultsFlat.map(result => (
+                <LocalResultRow key={result.key} result={result} />
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Category filter chips */}
         {results.length > 0 && (
           <div className="flex flex-wrap gap-2 mb-4">
@@ -193,7 +241,7 @@ export default function Search() {
         )}
 
         {/* Empty state */}
-        {!loading && hasSearched.current && query && sorted.length === 0 && (
+        {!loading && hasSearched.current && query && sorted.length === 0 && localResultsFlat.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">😔</span>
             <p className="font-display font-bold text-foreground text-lg">No results found</p>

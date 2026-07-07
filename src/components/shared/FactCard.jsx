@@ -29,6 +29,13 @@ export default function FactCard({ fact, index = 0, onOpen }) {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onOpen?.(fact);
+    }
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -36,8 +43,12 @@ export default function FactCard({ fact, index = 0, onOpen }) {
       viewport={{ once: true }}
       transition={{ delay: index * 0.05, duration: 0.4 }}
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
-      className="group cursor-pointer"
+      className="group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-2xl"
       onClick={() => onOpen?.(fact)}
+      onKeyDown={handleKeyDown}
+      role="button"
+      tabIndex={0}
+      aria-label={`Read more: ${fact.title}`}
     >
       <div className="bg-card border border-border rounded-2xl p-4 h-full flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-secondary/40">
         <div>

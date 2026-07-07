@@ -1,12 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react'; // Added useState here
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { X, Heart, Share2 } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 
 export default function FactModal({ fact, onClose }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
   const [copied, setCopied] = useState(false); // State to track clipboard copy inside modal
   const modalRef = useRef(null);
+
+  // Exact match only (case-insensitive) - a "contains" match risks linking a fact to the
+  // wrong animal (e.g. Komodo Dragon vs Bearded Dragon), so most facts just show no link at all.
+  const encyclopediaMatch = fact?.animal
+    ? encyclopediaAnimals.find(a => a.name.toLowerCase() === fact.animal.toLowerCase())
+    : null;
 
   useEffect(() => {
     if (!fact) return;
@@ -134,6 +142,15 @@ export default function FactModal({ fact, onClose }) {
             <p className="text-sm text-muted-foreground leading-relaxed font-body">
               {fact.fact}
             </p>
+
+            {encyclopediaMatch && (
+              <Link
+                to={`/encyclopedia/animal/${encyclopediaMatch.id}/`}
+                className="inline-block text-xs text-muted-foreground hover:text-foreground underline decoration-dotted underline-offset-2 mt-3 font-body"
+              >
+                Curious about {encyclopediaMatch.name}? Full animal profile →
+              </Link>
+            )}
 
             <div className="flex items-center gap-3 mt-6 pt-4 border-t border-border">
               <button
