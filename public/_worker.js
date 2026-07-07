@@ -90,6 +90,7 @@ const ANIMAL_IMAGES = {
   'Gentoo and Adélie Penguin': '/assets/facts/penguin.jpg',
   'Capybara': '/assets/facts/capybara.jpg',
   'Sea Sponge': '/assets/facts/sea-sponge.jpg',
+  'Pistol Shrimp': '/assets/facts/pistol-shrimp.jpg',
 };
 
 function imageFor(animal) {
