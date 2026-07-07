@@ -1,5 +1,69 @@
 export const turtleGuides = [
   {
+    id: "box-turtle",
+    name: "Box Turtle",
+    emoji: "🐢",
+    difficulty: "Intermediate",
+    petType: "Turtles & Tortoises",
+    image: "/assets/guides/box-turtle.jpg",
+    tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
+    funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Outdoor enclosure or large tortoise table", low: 150, high: 400 },
+        { item: "UVB (T5 HO Arcadia 6-12%)", low: 60, high: 100 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Deep moist substrate (coconut coir/topsoil)", low: 25, high: 45 },
+        { item: "Shallow soak dish", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Earthworms, insects, and produce", low: 100, high: 180 },
+        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Electricity (heat and lighting)", low: 50, high: 90 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
+    sections: {
+      housing: "Box turtles do best in large outdoor enclosures with natural soil, plants, and varied terrain. A minimum 4x8 ft for one adult, bigger is always better. Walls must be buried 6 to 12 inches underground. Provide a shallow water dish they can soak in (but not deep enough to drown), hiding spots under logs and leaf litter, and moist areas for burrowing. Indoor setups require a large tortoise table with UVB (T5 HO Arcadia 6 to 12%), a basking spot (85 to 88 degrees F), and deep, moist substrate (coconut coir/topsoil mix, 6 inches or more deep).",
+      diet: `Box turtles are true omnivores with broad dietary needs. A balanced diet consists of roughly 50% animal protein sources and 50% plant matter. Protein sources include earthworms (the single best protein for most turtles), crickets, dubia roaches, slugs, occasional cooked lean meat, and feeder fish. Plant matter includes dark leafy greens, various berries, mushrooms, flowers, and soft fruits.
+
+Juveniles need more protein (60 to 70%) for growth. Adults shift toward more plant matter. Vary the diet as much as possible — wild box turtles eat dozens of different food items throughout the year, and dietary variety in captivity produces healthier, more vibrant animals.
+
+Calcium dusting 2 to 3 times per week is important, particularly for females during egg production. Fresh, dechlorinated water always available in a shallow dish they can soak in. Change water daily as turtles defecate in their water frequently.`,
+      enrichment: `Box turtles thrive in naturalistic outdoor setups with varied terrain, deep leaf litter for burrowing, plants to navigate through, logs to hide under, and natural prey to forage for. The richer the environment, the more natural behavior is expressed. Watching a box turtle hunt earthworms after rain or forage through leaf litter is genuinely rewarding.
+
+Box turtles have excellent homing instincts and will persistently try to return to their territory if released or escape. Never release a captive box turtle outside its precise local area — even a few miles can disorient them fatally. They also should not be removed from the wild (wild populations are declining significantly).
+
+They recognize their keepers over time and approach for food. Annual hibernation (brumation) is natural and important for adult box turtles — consult a chelonian-experienced vet for safe hibernation protocols specific to your climate.`,
+      health: `Wild-caught box turtles frequently carry parasites (internal worms, protozoa), herpesvirus (Ranavirus or Testudinid herpesvirus), and are heavily stressed from capture and transport. Only acquire captive-bred animals from reputable breeders. Any wild-caught box turtle should receive a full veterinary workup including fecal exam upon acquisition.
+
+Herpesvirus infection is common in wild populations and causes nasal discharge, eye swelling, lethargy, and loss of appetite. There is no cure — affected animals are managed with supportive care and antiviral treatment under veterinary supervision. Respiratory infections from cold, damp conditions are also common.
+
+Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately frequent in outdoor turtles. Secure outdoor enclosures with buried walls prevent escapes. Annual wellness checks with a chelonian-experienced reptile vet are essential for all box turtles.`,
+      checklist: [
+        "4x8 ft+ outdoor enclosure (walls buried 6 to 12 inch)",
+        "OR large indoor tortoise table with 6 inch+ moist substrate",
+        "UVB T5 HO (Arcadia 6 to 12%)",
+        "Basking spot (85 to 88 degrees F)",
+        "Shallow soak dish (changed daily)",
+        "Deep leaf litter and hiding spots",
+        "Earthworms, dubia roaches, dark greens, berries",
+        "Calcium + multivitamin supplements",
+        "Reptile vet with chelonian (turtle) experience",
+        "Hibernation safety protocol (consult vet)",
+      ],
+    },
+    faqs: [
+      { q: "How long do box turtles live?", a: "50 to 100+ years — some wild box turtles have been documented exceeding 100 years, and captive animals routinely live into their 50s and 60s with good care. This is a genuinely multi-generational commitment. Always source captive-bred box turtles from reputable breeders, never from wild collection, as wild populations are declining significantly." },
+      { q: "What do box turtles eat?", a: "True omnivores with broad needs. A balanced diet is approximately 50% animal protein (earthworms are the single best protein source) and 50% plant matter — dark greens, various berries, mushrooms, flowers, and soft fruits. Juveniles need more protein (60 to 70%) for growth. Vary the diet as much as possible; dietary variety produces healthier, more vibrant animals." },
+      { q: "Can I pick up a box turtle I find in the wild and keep it as a pet?", a: "No — do not collect box turtles from the wild. Wild populations are declining seriously across North America from habitat loss, vehicle strikes, and collection. Removing a box turtle from its territory is also directly harmful to that individual, as they have strong homing instincts and attempt to return. Source only captive-bred animals from reputable breeders." },
+      { q: "Do box turtles need to hibernate?", a: "Annual brumation is natural and important for adult box turtles in most of their range. Animals prevented from hibernating long-term can develop reproductive issues and shortened lifespans. Consult a chelonian-experienced veterinarian for safe hibernation protocols tailored to your climate and the specific subspecies you are keeping before the first winter." },
+      { q: "What kind of outdoor enclosure do box turtles need?", a: "A minimum 4x8 ft outdoor enclosure with walls buried 6 to 12 inches underground is appropriate for one adult. Box turtles are persistent diggers and climbers. Provide deep leaf litter for burrowing, a shallow water dish large enough to soak in (changed daily), varied terrain including logs and plants, and moist areas in one section of the enclosure." },
+    ],
+  },
+  {
     id: "red-eared-slider",
     name: "Red-Eared Slider",
     emoji: "🐢",
@@ -197,70 +261,6 @@ Sulcatas regularly outlive their owners — they can live 70 to 150+ years. This
       { q: "What do sulcata tortoises eat?", a: "80% of the diet should be grass — Bermuda grass, orchard grass, Timothy hay — with edible weeds and leafy greens as a supplement. Do not feed fruit, animal protein, or excessive commercial tortoise pellets. These cause the shell pyramiding and organ damage common in improperly fed sulcatas. A natural grass pasture outdoor enclosure is ideal." },
       { q: "What causes shell pyramiding in sulcatas?", a: "Pyramiding — raised, bumpy scutes — is caused by excessive protein or fruit in the diet, rapid growth from inappropriate high-calorie feeding, and low humidity during the growth phase. Once pyramiding occurs, it is irreversible. The only prevention is a correct high-fiber, low-protein diet and appropriate growth rate from hatching." },
       { q: "Can I keep a baby sulcata tortoise indoors?", a: "Yes, but only temporarily. Hatchlings and juveniles can be kept indoors with a T5 HO UVB lamp (Arcadia 12%) and basking spot of 95 to 105 degrees F. As they grow — which happens faster than most people expect — they need progressively larger outdoor enclosures. An adult sulcata cannot be kept indoors in any practical sense." },
-    ],
-  },
-  {
-    id: "box-turtle",
-    name: "Box Turtle",
-    emoji: "🐢",
-    difficulty: "Intermediate",
-    petType: "Turtles & Tortoises",
-    image: "/assets/guides/box-turtle.jpg",
-    tagline: "The self-closing, woodland wanderer that can live for over 100 years!",
-    funFact: "Box turtles have a hinged plastron (lower shell) that closes so tightly that no predator can get in. They are the only turtles that can completely seal themselves inside their shell!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "Outdoor enclosure or large tortoise table", low: 150, high: 400 },
-        { item: "UVB (T5 HO Arcadia 6-12%)", low: 60, high: 100 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Deep moist substrate (coconut coir/topsoil)", low: 25, high: 45 },
-        { item: "Shallow soak dish", low: 10, high: 20 },
-      ],
-      annual: [
-        { item: "Earthworms, insects, and produce", low: 100, high: 180 },
-        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 60, high: 100 },
-        { item: "Electricity (heat and lighting)", low: 50, high: 90 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: "Box turtles do best in large outdoor enclosures with natural soil, plants, and varied terrain. A minimum 4x8 ft for one adult, bigger is always better. Walls must be buried 6 to 12 inches underground. Provide a shallow water dish they can soak in (but not deep enough to drown), hiding spots under logs and leaf litter, and moist areas for burrowing. Indoor setups require a large tortoise table with UVB (T5 HO Arcadia 6 to 12%), a basking spot (85 to 88 degrees F), and deep, moist substrate (coconut coir/topsoil mix, 6 inches or more deep).",
-      diet: `Box turtles are true omnivores with broad dietary needs. A balanced diet consists of roughly 50% animal protein sources and 50% plant matter. Protein sources include earthworms (the single best protein for most turtles), crickets, dubia roaches, slugs, occasional cooked lean meat, and feeder fish. Plant matter includes dark leafy greens, various berries, mushrooms, flowers, and soft fruits.
-
-Juveniles need more protein (60 to 70%) for growth. Adults shift toward more plant matter. Vary the diet as much as possible — wild box turtles eat dozens of different food items throughout the year, and dietary variety in captivity produces healthier, more vibrant animals.
-
-Calcium dusting 2 to 3 times per week is important, particularly for females during egg production. Fresh, dechlorinated water always available in a shallow dish they can soak in. Change water daily as turtles defecate in their water frequently.`,
-      enrichment: `Box turtles thrive in naturalistic outdoor setups with varied terrain, deep leaf litter for burrowing, plants to navigate through, logs to hide under, and natural prey to forage for. The richer the environment, the more natural behavior is expressed. Watching a box turtle hunt earthworms after rain or forage through leaf litter is genuinely rewarding.
-
-Box turtles have excellent homing instincts and will persistently try to return to their territory if released or escape. Never release a captive box turtle outside its precise local area — even a few miles can disorient them fatally. They also should not be removed from the wild (wild populations are declining significantly).
-
-They recognize their keepers over time and approach for food. Annual hibernation (brumation) is natural and important for adult box turtles — consult a chelonian-experienced vet for safe hibernation protocols specific to your climate.`,
-      health: `Wild-caught box turtles frequently carry parasites (internal worms, protozoa), herpesvirus (Ranavirus or Testudinid herpesvirus), and are heavily stressed from capture and transport. Only acquire captive-bred animals from reputable breeders. Any wild-caught box turtle should receive a full veterinary workup including fecal exam upon acquisition.
-
-Herpesvirus infection is common in wild populations and causes nasal discharge, eye swelling, lethargy, and loss of appetite. There is no cure — affected animals are managed with supportive care and antiviral treatment under veterinary supervision. Respiratory infections from cold, damp conditions are also common.
-
-Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately frequent in outdoor turtles. Secure outdoor enclosures with buried walls prevent escapes. Annual wellness checks with a chelonian-experienced reptile vet are essential for all box turtles.`,
-      checklist: [
-        "4x8 ft+ outdoor enclosure (walls buried 6 to 12 inch)",
-        "OR large indoor tortoise table with 6 inch+ moist substrate",
-        "UVB T5 HO (Arcadia 6 to 12%)",
-        "Basking spot (85 to 88 degrees F)",
-        "Shallow soak dish (changed daily)",
-        "Deep leaf litter and hiding spots",
-        "Earthworms, dubia roaches, dark greens, berries",
-        "Calcium + multivitamin supplements",
-        "Reptile vet with chelonian (turtle) experience",
-        "Hibernation safety protocol (consult vet)",
-      ],
-    },
-    faqs: [
-      { q: "How long do box turtles live?", a: "50 to 100+ years — some wild box turtles have been documented exceeding 100 years, and captive animals routinely live into their 50s and 60s with good care. This is a genuinely multi-generational commitment. Always source captive-bred box turtles from reputable breeders, never from wild collection, as wild populations are declining significantly." },
-      { q: "What do box turtles eat?", a: "True omnivores with broad needs. A balanced diet is approximately 50% animal protein (earthworms are the single best protein source) and 50% plant matter — dark greens, various berries, mushrooms, flowers, and soft fruits. Juveniles need more protein (60 to 70%) for growth. Vary the diet as much as possible; dietary variety produces healthier, more vibrant animals." },
-      { q: "Can I pick up a box turtle I find in the wild and keep it as a pet?", a: "No — do not collect box turtles from the wild. Wild populations are declining seriously across North America from habitat loss, vehicle strikes, and collection. Removing a box turtle from its territory is also directly harmful to that individual, as they have strong homing instincts and attempt to return. Source only captive-bred animals from reputable breeders." },
-      { q: "Do box turtles need to hibernate?", a: "Annual brumation is natural and important for adult box turtles in most of their range. Animals prevented from hibernating long-term can develop reproductive issues and shortened lifespans. Consult a chelonian-experienced veterinarian for safe hibernation protocols tailored to your climate and the specific subspecies you are keeping before the first winter." },
-      { q: "What kind of outdoor enclosure do box turtles need?", a: "A minimum 4x8 ft outdoor enclosure with walls buried 6 to 12 inches underground is appropriate for one adult. Box turtles are persistent diggers and climbers. Provide deep leaf litter for burrowing, a shallow water dish large enough to soak in (changed daily), varied terrain including logs and plants, and moist areas in one section of the enclosure." },
     ],
   },
 ];

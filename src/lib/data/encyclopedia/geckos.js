@@ -1,5 +1,18 @@
 export const geckoEncyclopedia = [
   {
+    id: "african-fat-tail", name: "African Fat-Tailed Gecko", scientific: "Hemitheconyx caudicinctus",
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "african-fat-tail", available: true, image: "/assets/guides/african-fat-tail.jpg",
+    bio: {
+      overview: "The African fat-tailed gecko hails from the arid savanna and scrubland of West Africa, where it shelters in rock crevices and termite mounds by day. Like the leopard gecko, it is a terrestrial species with true eyelids. Its thick tail stores fat reserves for use during food scarcity — a trait reflected in its name. They are generally calmer and more tolerant of handling than many other gecko species.",
+      origin: "West Africa (Senegal to Cameroon)",
+      habitat: "Arid savanna, dry forest, and rocky scrubland",
+      adultSize: "7–9 inches (18–23 cm)",
+      wildDiet: "Insects, worms, and small invertebrates",
+      wildLifespan: "10–20 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "crested-gecko", name: "Crested Gecko", scientific: "Correlophus ciliatus",
     category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "crested-gecko", available: true, image: "/assets/guides/crested-gecko.jpg",
     bio: {
@@ -13,19 +26,6 @@ export const geckoEncyclopedia = [
     },
   },
   {
-    id: "leopard-gecko", name: "Leopard Gecko", scientific: "Eublepharis macularius",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "leopard-gecko", available: true, image: "/assets/guides/leopard-gecko.jpg",
-    bio: {
-      overview: "Found across arid regions from Pakistan to northwestern India, leopard geckos are ground-dwelling lizards that shelter in rocky outcrops and dry grasslands by day. Unlike most geckos, they have true eyelids and lack toe pads, making them unable to climb glass. They are among the most widely kept reptile pets in the world, with over 100 recognized color morphs in captivity.",
-      origin: "Pakistan, Afghanistan, Iran, India, Nepal",
-      habitat: "Rocky desert, arid grassland, and dry scrubland",
-      adultSize: "7–11 inches (18–28 cm)",
-      wildDiet: "Insects, scorpions, small lizards, and worms",
-      wildLifespan: "15–22 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
     id: "gargoyle-gecko", name: "Gargoyle Gecko", scientific: "Rhacodactylus auriculatus",
     category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "gargoyle-gecko", available: true, image: "/assets/guides/gargoyle-gecko.jpg",
     bio: {
@@ -36,6 +36,32 @@ export const geckoEncyclopedia = [
       wildDiet: "Fruit, nectar, small insects, and invertebrates",
       wildLifespan: "15–20 years",
       conservation: "Vulnerable (IUCN)",
+    },
+  },
+  {
+    id: "leaf-tailed-gecko", name: "Leaf-Tailed Gecko", scientific: "Uroplatus spp.",
+    category: "Geckos", emoji: "🦎", difficulty: "Advanced", guideId: "leaf-tailed-gecko", available: true, image: "/assets/guides/leaf-tailed-gecko.jpg",
+    bio: {
+      overview: "Madagascar's leaf-tailed geckos are masters of camouflage, with flattened bodies and leaf-like tails that make them virtually invisible against tree bark and fallen leaves. The genus contains over 15 species ranging from the massive Uroplatus fimbriatus to the tiny U. ebenaui. All are nocturnal ambush predators endemic to Madagascar's increasingly fragmented forests.",
+      origin: "Madagascar",
+      habitat: "Tropical rainforest and coastal forest",
+      adultSize: "2.5–12 inches (6–30 cm) depending on species",
+      wildDiet: "Insects, snails, and small invertebrates",
+      wildLifespan: "5–10 years",
+      conservation: "Ranges from Least Concern to Endangered depending on species (IUCN)",
+    },
+  },
+  {
+    id: "leopard-gecko", name: "Leopard Gecko", scientific: "Eublepharis macularius",
+    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "leopard-gecko", available: true, image: "/assets/guides/leopard-gecko.jpg",
+    bio: {
+      overview: "Found across arid regions from Pakistan to northwestern India, leopard geckos are ground-dwelling lizards that shelter in rocky outcrops and dry grasslands by day. Unlike most geckos, they have true eyelids and lack toe pads, making them unable to climb glass. They are among the most widely kept reptile pets in the world, with over 100 recognized color morphs in captivity.",
+      origin: "Pakistan, Afghanistan, Iran, India, Nepal",
+      habitat: "Rocky desert, arid grassland, and dry scrubland",
+      adultSize: "7–11 inches (18–28 cm)",
+      wildDiet: "Insects, scorpions, small lizards, and worms",
+      wildLifespan: "15–22 years",
+      conservation: "Least Concern (IUCN)",
     },
   },
   {
@@ -62,32 +88,6 @@ export const geckoEncyclopedia = [
       wildDiet: "Insects, small mammals, birds, lizards, and eggs",
       wildLifespan: "10–15 years",
       conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "african-fat-tail", name: "African Fat-Tailed Gecko", scientific: "Hemitheconyx caudicinctus",
-    category: "Geckos", emoji: "🦎", difficulty: "Beginner", guideId: "african-fat-tail", available: true, image: "/assets/guides/african-fat-tail.jpg",
-    bio: {
-      overview: "The African fat-tailed gecko hails from the arid savanna and scrubland of West Africa, where it shelters in rock crevices and termite mounds by day. Like the leopard gecko, it is a terrestrial species with true eyelids. Its thick tail stores fat reserves for use during food scarcity — a trait reflected in its name. They are generally calmer and more tolerant of handling than many other gecko species.",
-      origin: "West Africa (Senegal to Cameroon)",
-      habitat: "Arid savanna, dry forest, and rocky scrubland",
-      adultSize: "7–9 inches (18–23 cm)",
-      wildDiet: "Insects, worms, and small invertebrates",
-      wildLifespan: "10–20 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "leaf-tailed-gecko", name: "Leaf-Tailed Gecko", scientific: "Uroplatus spp.",
-    category: "Geckos", emoji: "🦎", difficulty: "Advanced", guideId: "leaf-tailed-gecko", available: true, image: "/assets/guides/leaf-tailed-gecko.jpg",
-    bio: {
-      overview: "Madagascar's leaf-tailed geckos are masters of camouflage, with flattened bodies and leaf-like tails that make them virtually invisible against tree bark and fallen leaves. The genus contains over 15 species ranging from the massive Uroplatus fimbriatus to the tiny U. ebenaui. All are nocturnal ambush predators endemic to Madagascar's increasingly fragmented forests.",
-      origin: "Madagascar",
-      habitat: "Tropical rainforest and coastal forest",
-      adultSize: "2.5–12 inches (6–30 cm) depending on species",
-      wildDiet: "Insects, snails, and small invertebrates",
-      wildLifespan: "5–10 years",
-      conservation: "Ranges from Least Concern to Endangered depending on species (IUCN)",
     },
   },
 ];

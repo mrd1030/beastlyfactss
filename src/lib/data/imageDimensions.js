@@ -61,6 +61,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/guides/chameleon.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/chinchilla.jpg": {
     "width": 1168,
     "height": 784
@@ -86,6 +90,14 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/guides/crested-gecko.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/emperor-scorpion.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/ferret.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -117,9 +129,21 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/hermit-crab.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/hissing-cockroach.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/hognose-snake.jpg": {
     "width": 1280,
     "height": 720
+  },
+  "/assets/guides/jumping-spider.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/guides/koi.jpg": {
     "width": 1248,
@@ -141,6 +165,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/millipede.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/mourning-gecko.jpg": {
     "width": 1280,
     "height": 720
@@ -156,6 +184,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/guides/pacman-frog.jpg": {
     "width": 1280,
     "height": 720
+  },
+  "/assets/guides/praying-mantis.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/guides/rabbit.jpg": {
     "width": 1280,
@@ -173,6 +205,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/guides/stick-insect.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/guides/sugar-glider.jpg": {
     "width": 1168,
     "height": 784
@@ -180,6 +216,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/guides/sulcata-tortoise.jpg": {
     "width": 1280,
     "height": 720
+  },
+  "/assets/guides/tarantula.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/guides/tegu.jpg": {
     "width": 1280,
@@ -194,6 +234,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 720
   },
   "/assets/guides/uromastyx.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/guides/veiled-chameleon.jpg": {
     "width": 1280,
     "height": 720
   },

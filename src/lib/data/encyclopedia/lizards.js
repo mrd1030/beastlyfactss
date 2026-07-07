@@ -1,5 +1,31 @@
 export const lizardEncyclopedia = [
   {
+    id: "ackie-monitor", name: "Ackie Monitor", scientific: "Varanus acanthurus",
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "ackie-monitor", available: true, image: "/assets/guides/ackie-monitor.jpg",
+    bio: {
+      overview: "The ackie monitor (ridge-tailed monitor) is a small, active monitor lizard native to the rocky arid regions of northwestern and central Australia. Despite being a \"dwarf\" member of the Varanus genus — which includes the massive Komodo dragon — ackies exhibit the same intelligence and prey drive as their larger relatives. They use their spiny, whip-like tails to wedge themselves into rock crevices when threatened.",
+      origin: "Northwestern and central Australia",
+      habitat: "Rocky desert, arid scrubland, and spinifex grassland",
+      adultSize: "18–28 inches (45–70 cm) including tail",
+      wildDiet: "Insects, spiders, scorpions, small lizards, and eggs",
+      wildLifespan: "15–20 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "tegu", name: "Argentine Black & White Tegu", scientific: "Salvator merianae",
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "tegu", available: true, image: "/assets/guides/tegu.jpg",
+    bio: {
+      overview: "The Argentine black and white tegu is one of the largest lizards in South America, with intelligence rivaling that of monitor lizards. They are notable among reptiles for having near-endothermic (warm-blooded) properties during breeding season — their body temperature rises above ambient temperatures. In the wild they are powerful, opportunistic predators; well-socialized tegus in captivity can become remarkably dog-like companions.",
+      origin: "South America (Argentina, Brazil, Paraguay, Uruguay)",
+      habitat: "Tropical and subtropical forest, scrubland, and grassland",
+      adultSize: "3–5 feet (90–150 cm)",
+      wildDiet: "Omnivore — small mammals, eggs, birds, insects, fruits, and carrion",
+      wildLifespan: "15–20 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "bearded-dragon", name: "Bearded Dragon", scientific: "Pogona vitticeps",
     category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "bearded-dragon", available: true, image: "/assets/guides/bearded-dragon.jpg",
     relatedStory: {
@@ -30,45 +56,6 @@ export const lizardEncyclopedia = [
     },
   },
   {
-    id: "ackie-monitor", name: "Ackie Monitor", scientific: "Varanus acanthurus",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "ackie-monitor", available: true, image: "/assets/guides/ackie-monitor.jpg",
-    bio: {
-      overview: "The ackie monitor (ridge-tailed monitor) is a small, active monitor lizard native to the rocky arid regions of northwestern and central Australia. Despite being a \"dwarf\" member of the Varanus genus — which includes the massive Komodo dragon — ackies exhibit the same intelligence and prey drive as their larger relatives. They use their spiny, whip-like tails to wedge themselves into rock crevices when threatened.",
-      origin: "Northwestern and central Australia",
-      habitat: "Rocky desert, arid scrubland, and spinifex grassland",
-      adultSize: "18–28 inches (45–70 cm) including tail",
-      wildDiet: "Insects, spiders, scorpions, small lizards, and eggs",
-      wildLifespan: "15–20 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "tegu", name: "Argentine Black & White Tegu", scientific: "Salvator merianae",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "tegu", available: true, image: "/assets/guides/tegu.jpg",
-    bio: {
-      overview: "The Argentine black and white tegu is one of the largest lizards in South America, with intelligence rivaling that of monitor lizards. They are notable among reptiles for having near-endothermic (warm-blooded) properties during breeding season — their body temperature rises above ambient temperatures. In the wild they are powerful, opportunistic predators; well-socialized tegus in captivity can become remarkably dog-like companions.",
-      origin: "South America (Argentina, Brazil, Paraguay, Uruguay)",
-      habitat: "Tropical and subtropical forest, scrubland, and grassland",
-      adultSize: "3–5 feet (90–150 cm)",
-      wildDiet: "Omnivore — small mammals, eggs, birds, insects, fruits, and carrion",
-      wildLifespan: "15–20 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "chameleon-jackson", name: "Jackson's Chameleon", scientific: "Trioceros jacksonii",
-    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "chameleon", available: true,
-    bio: {
-      overview: "Named for naturalist Frederick John Jackson, Jackson's chameleons are native to the highland forests of Kenya and Tanzania. Males are unmistakable — they sport three prominent horns, resembling a miniature Triceratops. Unlike most reptiles, Jackson's chameleons give birth to live young (viviparous) rather than laying eggs. They were introduced to Hawaii in the 1970s and have established feral populations there.",
-      origin: "East Africa (Kenya, Tanzania); introduced to Hawaii",
-      habitat: "Montane rainforest and cool highland forest",
-      adultSize: "9–13 inches (23–33 cm)",
-      wildDiet: "Insects, worms, snails, and small invertebrates",
-      wildLifespan: "5–10 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
     id: "green-anole", name: "Green Anole", scientific: "Anolis carolinensis",
     category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "green-anole", available: true, image: "/assets/guides/green-anole.jpg",
     bio: {
@@ -78,6 +65,19 @@ export const lizardEncyclopedia = [
       adultSize: "5–8 inches (13–20 cm) including tail",
       wildDiet: "Insects, spiders, and small invertebrates",
       wildLifespan: "3–7 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "chameleon-jackson", name: "Jackson's Chameleon", scientific: "Trioceros jacksonii",
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "chameleon", available: true, image: "/assets/guides/chameleon.jpg",
+    bio: {
+      overview: "Named for naturalist Frederick John Jackson, Jackson's chameleons are native to the highland forests of Kenya and Tanzania. Males are unmistakable — they sport three prominent horns, resembling a miniature Triceratops. Unlike most reptiles, Jackson's chameleons give birth to live young (viviparous) rather than laying eggs. They were introduced to Hawaii in the 1970s and have established feral populations there.",
+      origin: "East Africa (Kenya, Tanzania); introduced to Hawaii",
+      habitat: "Montane rainforest and cool highland forest",
+      adultSize: "9–13 inches (23–33 cm)",
+      wildDiet: "Insects, worms, snails, and small invertebrates",
+      wildLifespan: "5–10 years",
       conservation: "Least Concern (IUCN)",
     },
   },
@@ -109,7 +109,7 @@ export const lizardEncyclopedia = [
   },
   {
     id: "veiled-chameleon", name: "Veiled Chameleon", scientific: "Chamaeleo calyptratus",
-    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "veiled-chameleon", available: true,
+    category: "Lizards", emoji: "🦎", difficulty: "Intermediate", guideId: "veiled-chameleon", available: true, image: "/assets/guides/veiled-chameleon.jpg",
     bio: {
       overview: "The veiled chameleon is native to the mountainous valleys of Yemen and southwestern Saudi Arabia, where it tolerates wider swings in temperature and humidity than most other chameleon species — an adaptation to its relatively dry, variable habitat. Both sexes develop a tall, helmet-like casque on top of the head, more pronounced in males, which helps condense atmospheric moisture and plays a role in visual communication. Females can lay large clutches of infertile eggs even without ever mating.",
       origin: "Yemen and southwestern Saudi Arabia",

@@ -1,156 +1,147 @@
 export const smallMammalGuides = [
   {
-    id: "rabbit",
-    name: "Rabbit",
-    emoji: "🐰",
-    difficulty: "Beginner/Intermediate",
+    id: "chinchilla",
+    name: "Chinchilla",
+    emoji: "🐭",
+    difficulty: "Intermediate/Advanced",
     petType: "Small Mammals",
-    image: "/assets/guides/rabbit.jpg",
-    tagline: "The gentle, litter-trainable companion that loves to binky!",
-    funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
+    image: "/assets/guides/chinchilla.jpg",
+    tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
+    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "Exercise pen or C&C condo", low: 60, high: 150 },
-        { item: "Litter box + litter", low: 15, high: 25 },
-        { item: "Hideouts and tunnels", low: 20, high: 40 },
+        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
+        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
+        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
+        { item: "Platforms and hideouts", low: 30, high: 60 },
         { item: "Chew toys", low: 15, high: 30 },
-        { item: "Food and water dishes", low: 10, high: 20 },
-        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
-        { item: "Spay/neuter", low: 150, high: 400 },
+        { item: "Digital thermometer", low: 15, high: 25 },
       ],
       annual: [
-        { item: "Grass hay (unlimited)", low: 150, high: 250 },
-        { item: "Rabbit pellets", low: 40, high: 70 },
-        { item: "Fresh leafy greens daily", low: 150, high: 250 },
-        { item: "Litter/bedding", low: 60, high: 100 },
-        { item: "Annual vet wellness check", low: 50, high: 100 },
+        { item: "Grass hay (unlimited)", low: 120, high: 200 },
+        { item: "Chinchilla pellets", low: 30, high: 50 },
+        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
+        { item: "Bedding", low: 50, high: 90 },
+        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
+        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
       ],
     },
     sections: {
-      housing: `Rabbits need far more space than most people expect. A minimum of 8 to 10 square feet of living space for a single rabbit, with at least 24 square feet of daily exercise space, is the current recommended standard. Many experienced rabbit owners and welfare organizations now advocate for free-roaming setups or very large enclosures, as rabbits confined to small hutches develop severe physical and psychological problems over time.
+      housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes — they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
 
-Use an exercise pen (X-pen), a large C&C condo, or a bunny-proofed room as the primary living space. Wire-bottom cages must be avoided entirely — wire floors cause pressure sores on the hocks (feet) that are painful, difficult to heal, and sometimes lead to serious infection. Always use solid flooring with appropriate soft bedding.
+Temperature is critical. Chinchillas cannot tolerate heat above 75 to 80 degrees F. In North American summers, air conditioning is often necessary. They are comfortable at 60 to 72 degrees F and are far more cold-tolerant than heat-tolerant. A chinchilla in a warm room will show rapid, labored breathing — this is heat distress and an emergency.
 
-Provide a litter box with paper-based litter and a layer of hay on top, a cozy hideout or tunnel, and multiple safe chew toys. Rabbits have continuously growing teeth and must gnaw to keep them worn down. Apple wood sticks, willow balls, untreated wicker, and cardboard are all safe options.
+Use fleece liners or paper-based bedding (Carefresh). Never use cedar or pine shavings (toxic aromatic oils). Provide a dedicated dust bath house (a plastic or ceramic container large enough for full body rolling) with chinchilla-specific dust (not sand) 2 to 3 times per week for 10 to 15 minutes. Dust baths are how chinchillas maintain their impossibly dense, silky fur.`,
+      diet: `Unlimited Timothy or orchard grass hay is the foundation of the chinchilla diet — it must be available at all times. Hay provides the indigestible fiber that keeps the chinchilla's continuously moving digestive tract functional and wears down continuously growing teeth. A chinchilla without constant hay access will develop life-threatening digestive impaction and dental overgrowth.
 
-Temperature should stay between 60 and 72 degrees F. Rabbits are sensitive to heat and can die of heatstroke above 85 degrees F. Keep them away from drafts, direct sunlight, and extreme temperatures.`,
-      diet: `Hay is the single most important food in a rabbit's diet and should make up 80 to 90% of everything they eat, with unlimited access at all times. Timothy, orchard grass, and meadow hay are the best choices for adult rabbits. Fresh hay stimulates the gut, wears down teeth naturally, and prevents the life-threatening condition GI stasis.
+Supplement with high-quality chinchilla pellets: 1 to 2 tablespoons per day. Choose Timothy-based pellets without added seeds, dried fruit, or colorful pieces. Plain, uniform pellets are nutritionally correct. Avoid muesli-style mixed foods — chinchillas selectively eat the sugary pieces and leave the nutritious ones.
 
-Supplement with high-quality pellets: 1/8 to 1/4 cup per day for most adult rabbits, scaled to body weight. Choose pellets with high fiber content and no added seeds, nuts, or colored pieces. Pellets are a supplement, not a replacement for hay.
+Treats must be minimal. Rose hips, dried herbs (chamomile, dandelion), small pieces of apple, or a raisin once per week are appropriate. Excessive sugar disrupts gut flora, causes obesity, and can precipitate life-threatening GI problems in this highly sensitive digestive system. Fresh water in a sipper bottle changed daily is essential.`,
+      enrichment: `A 12 to 14 inch solid-surface exercise wheel (not wire or mesh, which catches legs) is essential. Chinchillas are highly active and need vigorous nightly exercise. Without a wheel, they develop obesity, boredom stereotypies, and behavioral problems. Flying Saucer-style wheels work particularly well for chinchillas.
 
-Fresh leafy greens should be offered daily: 1 to 2 cups per 4 pounds of body weight. Excellent choices include romaine lettuce, cilantro, flat-leaf parsley, dandelion greens, arugula, and basil. Introduce new greens gradually to avoid digestive upset. Avoid iceberg lettuce (nutritionally empty) and excess spinach (high oxalates).
+Provide platforms at multiple heights, wooden ledges, tunnels, cork bark tubes, and a variety of safe chew toys: apple wood, willow balls, rose hip pieces, and pumice blocks. Chinchillas need to gnaw continuously to maintain their constantly growing teeth, and providing appropriate gnawing material prevents them from destroying cage furniture.
 
-Treats like carrots, fruit, and commercial bunny treats should be limited to a thumbnail-sized piece a few times per week at most. These are high-sugar foods that can disrupt gut flora. Fresh water in a heavy ceramic bowl must always be available and changed daily.`,
-      enrichment: `Rabbits are intelligent, curious, and naturally active animals that need at minimum 3 to 4 hours of free-roaming time in a bunny-proofed space every day. Without adequate space and enrichment, rabbits develop behavioral problems including aggression, destructiveness, and depression.
+Supervised out-of-cage playtime in a chinchilla-proofed room (no electrical cords, no small gaps to escape into, no toxic plants) is excellent enrichment. Chinchillas explore with spectacular energy — leaping, bounding, and investigating everything. Handle gently and consistently, allowing the chinchilla to approach voluntarily rather than being grabbed.`,
+      health: `Heat stroke is the most acute and deadly risk for chinchillas. Above 75 to 80 degrees F, chinchillas begin to overheat rapidly. Signs include rapid breathing, drooling, and lethargy. Move to a cool area immediately and contact an exotic vet. Prevention through climate control (air conditioning in summer) is essential.
 
-Provide cardboard boxes with multiple holes cut in them, paper bags filled with hay for foraging, willow balls and tunnels, digging boxes filled with shredded paper, and puzzle feeders with pellets or herbs. Rotate enrichment items regularly to maintain interest. Rabbits are highly food-motivated and foraging enrichment is particularly effective at keeping them mentally engaged.
+Dental disease (malocclusion and molar spurs) is extremely common in chinchillas and is the most common cause of weight loss and anorexia in middle-aged and older animals. Because the cheek teeth are far back in the mouth and not visible without sedation and magnification, dental disease is frequently discovered only when the chinchilla has already lost significant weight. Annual dental checks under anesthesia with an exotic vet are strongly recommended.
 
-Rabbits are social animals and generally do best in bonded pairs or groups. A bonded pair provides constant companionship, play, and mutual grooming. Solo rabbits require more human interaction to compensate for the absence of a companion. Bonding takes patience with a slow, neutral-space introduction process, but the result is two dramatically happier animals.
-
-Rabbits can be litter-trained much like cats. Place the litter box in the corner they naturally use and reward correct behavior. Most rabbits are fully litter-trained within a few weeks, making free-roaming setups practical and clean.`,
-      health: `GI stasis is the most serious and common rabbit emergency. It occurs when the digestive tract slows down or stops completely, usually caused by stress, pain, low fiber intake, or dehydration. Signs include small or absent droppings, hunched posture, refusal to eat, and a distended or hard abdomen. GI stasis requires immediate veterinary attention. A rabbit that has not eaten or produced droppings for 12 hours is an emergency.
-
-Dental disease is the second most common serious health problem. Rabbit teeth grow continuously and must be worn down through constant hay chewing. Without adequate hay, molars overgrow and cause pain, drooling, and weight loss. Annual veterinary dental exams are recommended for all rabbits.
-
-Uterine cancer (uterine adenocarcinoma) affects the majority of unspayed female rabbits by age 4 to 5 and is one of the most preventable causes of early death in pet rabbits. Spaying is strongly recommended before 2 years of age. Neutering males reduces territorial behavior, spraying, and testicular cancer risk.
-
-Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's hindquarters and maggots emerge. Check the hindquarters daily in summer. Annual wellness visits with a rabbit-savvy veterinarian are essential for all rabbits.`,
+Fur ring — a constricting ring of fur around the penis in males — can develop during or after mating and causes serious tissue damage if not addressed promptly. Male owners should learn to check for fur ring monthly. GI stasis from insufficient hay is another serious risk. A chinchilla that has not produced droppings for 12 hours is an emergency.`,
       checklist: [
-        "Minimum 8 sq ft enclosure or exercise pen",
-        "Grass hay (Timothy or Orchard), unlimited",
-        "High-quality rabbit pellets (1/8 to 1/4 cup daily)",
-        "Fresh leafy greens (romaine, parsley, cilantro)",
-        "Litter box + litter (paper-based or aspen)",
-        "Coconut fiber or safe bedding",
-        "Multiple hideouts and tunnels",
-        "Safe chew toys (apple wood, willow, cardboard)",
-        "Nail clippers and styptic powder",
-        "Rabbit-savvy veterinarian contact"
+        "Minimum 24x24x48\" multi-level cage",
+        "12 to 14 inch solid exercise wheel",
+        "Unlimited grass hay (Timothy or Orchard)",
+        "High-quality chinchilla pellets",
+        "Dust bath (chinchilla dust, not sand)",
+        "Multiple platforms and hideouts",
+        "Safe chew toys (apple wood, willow, pumice)",
+        "Digital thermometer (critical, keep under 80 degrees F)",
+        "Nail clippers",
+        "Exotic veterinarian experienced with chinchillas"
       ],
     },
     faqs: [
-      { q: "Do rabbits need a companion?", a: "Yes, for most rabbits. Rabbits are highly social animals that live in groups in the wild, and a solitary rabbit is generally an anxious, understimulated animal. Bonded pairs groom each other, sleep together, and communicate in ways no amount of human interaction fully replicates. Same-sex pairs (particularly two spayed or neutered animals) work well when properly introduced. Single rabbits can still thrive with extensive human interaction, but a bonded pair is the gold standard." },
-      { q: "What do rabbits eat?", a: "The foundation of a rabbit's diet is unlimited grass hay — Timothy, orchard grass, or meadow grass — which should make up 80 to 90% of total intake. Hay provides the indigestible fiber essential for healthy gut motility and wears down continuously growing teeth. Supplement with a daily cup of fresh leafy greens per 5 pounds of body weight: romaine lettuce, cilantro, parsley, and dandelion greens are excellent choices. High-quality pellets can be offered in small amounts. Avoid sugary treats and commercial treat sticks — these cause gut flora disruption and dental disease." },
-      { q: "Can rabbits be litter trained?", a: "Yes, and they learn remarkably quickly. Rabbits naturally choose one or two corners for elimination. Place a litter box with paper-based litter (never clay or clumping cat litter) where the rabbit already goes. Hay placed at one end of the litter box encourages consistent use, as rabbits like to eat while they eliminate. Spaying or neutering significantly improves litter habits. Most rabbits are reliably litter trained within a few weeks of consistent reinforcement." },
-      { q: "How long do rabbits live?", a: "Domestic rabbits commonly live 8 to 12 years with good care, and some individuals reach 14 or more years. Life expectancy has improved dramatically as knowledge of proper diet (hay-based, not pellet-heavy), spacious housing, spay/neuter practices, and exotic veterinary care has become more widely available. The old paradigm of small hutches and pellet-only diets produced lifespans of 5 to 6 years; modern care standards produce much longer, healthier lives." },
-      { q: "Do rabbits need veterinary care?", a: "Yes. Rabbits need annual wellness examinations with a veterinarian experienced in exotic small mammals. They are prey animals that instinctively hide illness — by the time a rabbit shows obvious signs of being sick, the problem is usually already serious. Spaying female rabbits before age 2 is critical, as uterine cancer affects the majority of unspayed females by age 4 to 5. Finding a rabbit-savvy exotic vet before an emergency arises is one of the most important things a new rabbit owner can do." },
+      { q: "Why do chinchillas take dust baths?", a: "Chinchillas' extraordinary fur — up to 60 hairs per follicle compared to a human's 1 — would mat, clump, and become oily if bathed in water like most mammals. In the wild, Andean chinchillas bathe in volcanic ash to absorb oils and moisture from their dense coats. In captivity, chinchilla-specific dust replicates this. Offer a dust bath container large enough for rolling 2 to 3 times per week for 10 to 15 minutes. Never bathe a chinchilla in water — wet fur takes many hours to dry and can lead to fungal infections and life-threatening chilling." },
+      { q: "Can chinchillas be kept in warm climates?", a: "With difficulty. Chinchillas are native to the high-altitude Andes and cannot tolerate temperatures above 75 to 80 degrees F. Above this threshold they develop heat stroke rapidly — a genuine veterinary emergency. In warm climates, air conditioning is not optional but a care requirement. Signs of heat distress include rapid panting, drooling, and lethargy. If you live somewhere without reliable air conditioning, a chinchilla is not a suitable pet." },
+      { q: "How long do chinchillas live?", a: "Chinchillas are one of the longer-lived small pet mammals. With excellent care, they commonly live 10 to 15 years, and some individuals have reached 20 years. This makes a chinchilla a longer commitment than many people realize at purchase. Their longevity makes annual veterinary care, appropriate diet (unlimited hay plus quality pellets), and temperature control especially important investments." },
+      { q: "Are chinchillas good pets for children?", a: "Chinchillas are best suited to older teenagers and adults rather than young children. They are crepuscular and nocturnal — most active in the evening when children should be sleeping — and are not natural cuddlers. They are also delicate and can develop serious stress responses to rough handling, require precise temperature management (never above 75 degrees F), and need an adult-level commitment to their care." },
+      { q: "What do chinchillas eat?", a: "Unlimited Timothy or orchard grass hay is the cornerstone of the chinchilla diet and must always be available. Hay keeps continuously growing teeth worn and the sensitive digestive system moving. Supplement with 1 to 2 tablespoons of high-quality chinchilla pellets (Timothy-based, no added seeds or colored pieces) daily. Treats must be very limited: a single raisin, a small piece of dried rose hip, or a dried herb like chamomile once or twice per week. Excessive sugar causes severe gut disruption in chinchillas." },
     ],
   },
   {
-    id: "hedgehog",
-    name: "Hedgehog",
-    emoji: "🦔",
+    id: "ferret",
+    name: "Ferret",
+    emoji: "🦡",
     difficulty: "Intermediate",
     petType: "Small Mammals",
-    image: "/assets/guides/hedgehog.jpg",
-    tagline: "The spiky little explorer that runs on a wheel all night!",
-    funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
+    image: "/assets/guides/ferret.jpg",
+    tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
+    funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "2x4 ft enclosure (bin or modified cage)", low: 60, high: 150 },
-        { item: "Solid exercise wheel (10-12 in)", low: 30, high: 50 },
-        { item: "Hideout/igloo", low: 10, high: 20 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Supplemental heat source", low: 30, high: 60 },
-        { item: "Nail clippers", low: 8, high: 12 },
+        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
+        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
+        { item: "Litter box", low: 10, high: 15 },
+        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
+        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
       ],
       annual: [
-        { item: "High-quality cat food", low: 40, high: 70 },
-        { item: "Live insects", low: 60, high: 100 },
-        { item: "Bedding (paper-based or fleece)", low: 60, high: 100 },
-        { item: "Annual vet wellness check (exotic)", low: 60, high: 100 },
+        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
+        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
+        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
+        { item: "Bedding and litter", low: 50, high: 80 },
       ],
     },
     sections: {
-      housing: `Hedgehogs need more space than the small round cages commonly sold in pet stores. A minimum of 2 ft x 4 ft of floor space is required for one adult hedgehog, and more is always better. Excellent options include large plastic storage bins modified with ventilation, double-level Critter Nation cages with ramps (that the hedgehog can safely navigate), or DIY C&C cage setups.
+      housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day — this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
 
-Provide a solid exercise wheel 10 to 12 inches in diameter — this is not optional. Hedgehogs can run 5 to 8 miles per night on a wheel. A wheel that is too small (under 10 inches) causes spinal stress. The wheel must have a solid running surface, not bars or mesh, which catch legs and cause injuries. Carolina Storm Wheels and Bucket Wheel are widely recommended.
+Ferret-proofing is a serious undertaking. Ferrets squeeze through impossibly small gaps, chew electrical cords, steal and hide small objects (including jewelry, keys, and remote controls), fall into open toilets, and get into everything. Check every baseboard, gap under appliances, and recliner mechanism (ferrets love to climb into recliners and get crushed). Block all gaps under doors and any opening wider than 1 inch.
 
-Temperature is critically important. Hedgehogs must be kept at 72 to 80 degrees F at all times. Below 65 degrees F, African pygmy hedgehogs (the common pet species) can enter a dangerous state of torpor — they are not cold-adapted hibernators, and torpor in pet hedgehogs causes organ damage and can be fatal. Keep the room warm and use a thermostat if necessary.
+Inside the cage: fleece hammocks, sleep sacks, and tube tunnels provide resting spots. Line the cage floor with fleece liners or paper-based bedding — never cedar or pine, which contain toxic aromatic oils. Provide a litter box with paper-based litter in one corner, and keep room temperature below 80 degrees F. Ferrets overheat easily and can die from heat stroke at temperatures that feel comfortable to humans.
 
-Bedding should be paper-based (Carefresh, shredded paper) or fleece liners. Never use cedar or pine shavings — the aromatic oils are toxic to small mammals. Provide a cozy hideout (a plastic igloo or small wooden hide box), a food dish, and a water bottle or heavy ceramic water bowl.`,
-      diet: `High-quality cat food forms the cornerstone of most pet hedgehog diets. Choose a kibble with a named protein (chicken, turkey) as the first ingredient, low fat content (under 15%), high fiber, and no artificial colors or preservatives. Hedgehog-specific commercial diets exist but vary widely in quality — research ingredients carefully. A mix of 2 to 3 high-quality cat foods provides better nutritional variety than a single option.
+Multiple ferrets do significantly better together — they are social animals that wrestle, groom, and sleep in piles. A pair or trio is far preferable to a solo ferret for the animals' wellbeing.`,
+      diet: `Ferrets are obligate carnivores with a digestive tract optimized for animal protein and fat and no capacity to process plant matter. The dietary principle is simple: high protein, high fat, zero carbohydrates, zero plant fiber. The practical challenge is finding commercial foods that actually meet this standard.
 
-Supplement with live insects 3 to 5 times per week. Mealworms (in moderation as they are high in fat and low in calcium), dubia roaches, crickets, and waxworms as an occasional treat are all appropriate. Insects provide protein variety and behavioral enrichment — hedgehogs actively hunt prey and this activity is enriching and natural.
+A high-quality, grain-free ferret kibble with a named animal protein (chicken, turkey, duck) as the first 2 to 3 ingredients, fat content above 20%, and carbohydrate content below 20% is the commercial food baseline. Multiple higher-end brands meet this standard; avoid brands containing corn, wheat, soy, or pea protein as primary ingredients.
 
-Small amounts of cooked egg, plain cooked chicken, baby food (single-ingredient meat varieties), and low-fat cottage cheese can be offered occasionally for variety. Fresh fruits and vegetables can be offered in tiny quantities: blueberries, apple slices (no seeds), cooked carrot, and leafy greens are safe options. Avoid grapes, raisins, citrus, onion, garlic, and anything with xylitol.
+A raw meat diet (whole prey, chunks of meat and organs, or commercial raw ferret food) is arguably the most species-appropriate option and produces excellent coat condition, dental health, and energy levels in most ferrets. Transition to raw slowly if switching from kibble to avoid digestive upset.
 
-Fresh water must always be available. Some hedgehogs prefer a water bowl over a bottle — offer both initially to see which the hedgehog uses more.`,
-      enrichment: `The solid exercise wheel is the single most critical enrichment item and must be provided every night. Without adequate running opportunities, hedgehogs become obese, lethargic, and develop behavioral and health problems. Most hedgehogs run for several hours each night. Accept that this is part of keeping a hedgehog and plan for the wheel noise accordingly.
+Avoid: fruits, vegetables, grains, dairy, fish-based foods, and sugary treats. Ferrets cannot digest plant matter and chronic exposure to plant carbohydrates is strongly associated with insulinoma (pancreatic cancer) development. Fresh water in a heavy bowl must always be available — bottles are difficult for ferrets to drink from adequately and often run dry unnoticed.`,
+      enrichment: `Ferrets are among the most playful and mischievous animals kept as pets. Their characteristic "dooking" (excited chattering while performing the war dance — a frenzied hopping, bouncing, sideways leaping display) is one of the most joyful sights in the exotic pet world, and it tells you your ferret is having the time of its life.
 
-Provide tunnels (toilet paper rolls, PVC pipes, plastic igloo tunnels), foraging toys (hiding insects or kibble in egg cartons or puzzle feeders), and safe items to explore at various heights. Hedgehogs have excellent senses of smell and will investigate every new scent in their environment. Rotate enrichment items regularly.
+Rotate enrichment items frequently — ferrets become bored with toys quickly and light up at novelty. Crinkle balls, tunnels, dig boxes (shallow bins filled with dry rice, dirt, or shredded paper), ferret-safe puzzle feeders, and "treasure stash" boxes (a container they can deposit stolen items into) are all excellent options.
 
-Supervised free-roam time in a warm, hedgehog-proofed area (no gaps under furniture large enough for escape, no electrical cords at floor level) is excellent additional enrichment. Many hedgehogs enjoy bath time in a shallow, warm water tub and will swim briefly before toweling off.
+Daily free-roam time with human interaction is the most important enrichment. Chase games, hide-and-seek, and learning tricks (ferrets can learn to sit, come when called, and perform simple tricks) all strengthen the bond between ferret and keeper. Many ferrets will return to their cage on their own when tired if the door is left open.
 
-Most hedgehogs have a grumpy, defensive reputation — but with patient, consistent handling from a young age, many become quite relaxed and even sociable. Handle at dusk when they are naturally active. Move slowly, support the whole body, and avoid startling them. An anointing hedgehog (self-anointing with unusual scents by licking and spreading saliva on their quills) is engaging and completely normal behavior.`,
-      health: `Wobbly Hedgehog Syndrome (WHS) is a progressive and incurable neurological disease caused by a genetic mutation that causes muscle wasting and progressive paralysis, starting in the hindquarters and moving forward. It affects an estimated 1 in 3 African pygmy hedgehogs and has no treatment. A hedgehog with WHS will gradually lose the ability to use its hind legs, then its front legs, and eventually lose the ability to eat. Comfort care and quality of life management with veterinary guidance is the approach.
+Ferrets sleep 16 to 18 hours per day in deep, often concerning-looking coma-like sleep. This is completely normal. Schedule free-roam time for their active periods (generally morning and early evening).`,
+      health: `Ferrets in North America have a near-universal susceptibility to three serious diseases: insulinoma (pancreatic beta cell cancer), adrenal gland disease, and lymphoma. The majority of ferrets will develop at least one of these by age 4 to 5, and many develop all three. This is not a reason to avoid ferrets — it is a reason to commit to appropriate veterinary care.
 
-Obesity is extremely common and leads to fatty liver disease, heart problems, and joint issues. Hedgehogs become obese from overfeeding high-fat insects, insufficient exercise, or inadequate wheel access. Monitor body condition: you should be able to feel but not see the hip bones. A hedgehog that cannot curl into a full ball due to fat deposits is significantly overweight.
+Insulinoma causes low blood sugar (hypoglycemia) from excess insulin production. Signs include weakness, stumbling, drooling, glassy eyes, and in severe cases, seizures. Management includes diet modification (low carbohydrate is critical — another reason to avoid carb-heavy kibble), medications (prednisone, diazoxide), and sometimes surgery. A ferret with insulinoma needs ongoing veterinary management.
 
-Cancer is unfortunately common in hedgehogs over 3 years old — tumors of the uterus, mouth, and mammary glands are most frequently encountered. Annual veterinary examinations with an exotic vet experienced in hedgehogs are strongly recommended from age 2 onward. Spaying females reduces uterine cancer risk significantly.
+Adrenal gland disease causes hair loss typically starting at the tail and progressing forward, muscle wasting, and in females, vulvar swelling (a dangerous estrogen-producing effect from adrenal tumors). It is managed with hormonal implants, medications, or surgery depending on severity.
 
-Torpor (temperature-induced dormancy) in response to cold temperatures is a veterinary emergency in pet hedgehogs. Signs include extreme lethargy, cold body temperature, and difficulty moving. Warm the hedgehog slowly against your body and contact a vet immediately.`,
+All ferrets should be vaccinated against canine distemper (fatal in ferrets) and rabies. Annual wellness exams including bloodwork starting at age 2 to 3 are essential for early disease detection. A ferret-experienced exotic veterinarian is not optional — find one before acquiring ferrets.`,
       checklist: [
-        "Minimum 2x4 ft secure enclosure",
-        "8 to 12 inch solid exercise wheel",
-        "High-quality kitten or adult cat food",
-        "Live insects (mealworms, dubia roaches)",
-        "Paper-based or fleece bedding",
-        "Hideout/igloo",
-        "Digital thermometer and hygrometer",
-        "Safe foraging toys and tunnels",
-        "Nail clippers",
-        "Exotic vet experienced with hedgehogs"
+        "Multi-level ferret cage (3x2x2 ft minimum)",
+        "Fleece hammocks and sleep sacks",
+        "Ferret-proofed free-roam room (4+ hours/day)",
+        "High-quality ferret kibble or raw meat diet",
+        "Fresh water bowl (always available)",
+        "Tunnels, dig boxes, and rotating toys",
+        "Canine distemper and rabies vaccinations",
+        "Spay/neuter (if not already done)",
+        "Annual fecal exam and bloodwork",
+        "Ferret-experienced exotic veterinarian",
       ],
     },
     faqs: [
-      { q: "Are hedgehogs nocturnal?", a: "Yes. African pygmy hedgehogs — the standard pet species — are crepuscular to nocturnal, most active from dusk through the night. During daylight hours they will typically sleep in their hideout or curl into a defensive ball. The best time to interact, feed, and observe your hedgehog is in the evening and early night hours. Forcing interaction during the day causes significant stress. If you are primarily a daytime person, a hedgehog's natural schedule may not align well with your lifestyle." },
-      { q: "Can hedgehogs run on a wheel?", a: "Yes — and they must. A solid exercise wheel 10 to 12 inches in diameter is one of the most critical pieces of hedgehog equipment. Hedgehogs can run 5 to 8 miles per night and require this nightly exercise for physical and mental health. Without adequate wheel access, hedgehogs become obese, lethargic, and develop health problems including fatty liver disease. The wheel must have a solid running surface — bars or mesh injure feet and legs." },
-      { q: "What do hedgehogs eat?", a: "High-quality low-fat cat food forms the backbone of most hedgehog diets. Look for a named protein (chicken, turkey) as the first ingredient and fat content under 15%. Supplement with live insects 3 to 5 times per week — dubia roaches, small mealworms in moderation, and crickets are appropriate. Small amounts of cooked egg, cooked chicken, and safe fruits and vegetables like blueberries, apple, and cooked carrot can be offered as variety. Avoid grapes, raisins, avocado, citrus, onion, garlic, and any xylitol-containing foods." },
-      { q: "What is Wobbly Hedgehog Syndrome?", a: "Wobbly Hedgehog Syndrome (WHS) is a progressive, incurable neurological disease caused by a genetic mutation that produces muscle wasting and paralysis. It begins in the hindquarters and moves forward over months to years, eventually affecting the entire body. An estimated 1 in 3 African pygmy hedgehogs is affected. There is no treatment — management focuses on quality of life with veterinary guidance on when euthanasia becomes the compassionate choice." },
-      { q: "How long do hedgehogs live?", a: "African pygmy hedgehogs typically live 3 to 6 years in captivity. Some individuals reach 7 to 8 years, but this is the exception. Lifespan is significantly affected by genetics (WHS, cancer predisposition), diet (obesity is extremely common and life-shortening), and access to appropriate veterinary care. Annual check-ups with an exotic vet experienced in hedgehogs from age 2 onward are strongly recommended." },
+      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent — the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
+      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats — plant carbohydrates are strongly associated with insulinoma development in ferrets." },
+      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
+      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
+      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers — many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
     ],
   },
   {
@@ -231,73 +222,157 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     ],
   },
   {
-    id: "chinchilla",
-    name: "Chinchilla",
-    emoji: "🐭",
-    difficulty: "Intermediate/Advanced",
+    id: "hedgehog",
+    name: "Hedgehog",
+    emoji: "🦔",
+    difficulty: "Intermediate",
     petType: "Small Mammals",
-    image: "/assets/guides/chinchilla.jpg",
-    tagline: "The incredibly soft, high-jumping rodent that needs dust baths!",
-    funFact: "Chinchillas can jump up to 6 feet high and can rotate their ears 180 degrees! Their fur is so dense they can have up to 60 hairs per follicle (humans have only 1).",
+    image: "/assets/guides/hedgehog.jpg",
+    tagline: "The spiky little explorer that runs on a wheel all night!",
+    funFact: "When threatened, hedgehogs roll into a tight ball and can make a variety of cute snuffling and hissing sounds. They're surprisingly vocal!",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "24x24x48 in multi-level cage", low: 150, high: 300 },
-        { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
-        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
-        { item: "Platforms and hideouts", low: 30, high: 60 },
-        { item: "Chew toys", low: 15, high: 30 },
-        { item: "Digital thermometer", low: 15, high: 25 },
+        { item: "2x4 ft enclosure (bin or modified cage)", low: 60, high: 150 },
+        { item: "Solid exercise wheel (10-12 in)", low: 30, high: 50 },
+        { item: "Hideout/igloo", low: 10, high: 20 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Supplemental heat source", low: 30, high: 60 },
+        { item: "Nail clippers", low: 8, high: 12 },
       ],
       annual: [
-        { item: "Grass hay (unlimited)", low: 120, high: 200 },
-        { item: "Chinchilla pellets", low: 30, high: 50 },
-        { item: "Chinchilla dust (ongoing)", low: 30, high: 50 },
-        { item: "Bedding", low: 50, high: 90 },
-        { item: "Electricity (cooling in warm months)", low: 80, high: 150 },
-        { item: "Annual vet check (dental, under anesthesia)", low: 80, high: 150 },
+        { item: "High-quality cat food", low: 40, high: 70 },
+        { item: "Live insects", low: 60, high: 100 },
+        { item: "Bedding (paper-based or fleece)", low: 60, high: 100 },
+        { item: "Annual vet wellness check (exotic)", low: 60, high: 100 },
       ],
     },
     sections: {
-      housing: `A minimum 24x24x48 inch multi-level cage with solid platforms (never wire grates, which injure feet) is required. Chinchillas are extraordinary athletes — they can jump 6 feet vertically and need height for exercise. The more platforms at different levels, the better. Bar spacing should be 1 inch or less for adults, 1/2 inch for juveniles.
+      housing: `Hedgehogs need more space than the small round cages commonly sold in pet stores. A minimum of 2 ft x 4 ft of floor space is required for one adult hedgehog, and more is always better. Excellent options include large plastic storage bins modified with ventilation, double-level Critter Nation cages with ramps (that the hedgehog can safely navigate), or DIY C&C cage setups.
 
-Temperature is critical. Chinchillas cannot tolerate heat above 75 to 80 degrees F. In North American summers, air conditioning is often necessary. They are comfortable at 60 to 72 degrees F and are far more cold-tolerant than heat-tolerant. A chinchilla in a warm room will show rapid, labored breathing — this is heat distress and an emergency.
+Provide a solid exercise wheel 10 to 12 inches in diameter — this is not optional. Hedgehogs can run 5 to 8 miles per night on a wheel. A wheel that is too small (under 10 inches) causes spinal stress. The wheel must have a solid running surface, not bars or mesh, which catch legs and cause injuries. Carolina Storm Wheels and Bucket Wheel are widely recommended.
 
-Use fleece liners or paper-based bedding (Carefresh). Never use cedar or pine shavings (toxic aromatic oils). Provide a dedicated dust bath house (a plastic or ceramic container large enough for full body rolling) with chinchilla-specific dust (not sand) 2 to 3 times per week for 10 to 15 minutes. Dust baths are how chinchillas maintain their impossibly dense, silky fur.`,
-      diet: `Unlimited Timothy or orchard grass hay is the foundation of the chinchilla diet — it must be available at all times. Hay provides the indigestible fiber that keeps the chinchilla's continuously moving digestive tract functional and wears down continuously growing teeth. A chinchilla without constant hay access will develop life-threatening digestive impaction and dental overgrowth.
+Temperature is critically important. Hedgehogs must be kept at 72 to 80 degrees F at all times. Below 65 degrees F, African pygmy hedgehogs (the common pet species) can enter a dangerous state of torpor — they are not cold-adapted hibernators, and torpor in pet hedgehogs causes organ damage and can be fatal. Keep the room warm and use a thermostat if necessary.
 
-Supplement with high-quality chinchilla pellets: 1 to 2 tablespoons per day. Choose Timothy-based pellets without added seeds, dried fruit, or colorful pieces. Plain, uniform pellets are nutritionally correct. Avoid muesli-style mixed foods — chinchillas selectively eat the sugary pieces and leave the nutritious ones.
+Bedding should be paper-based (Carefresh, shredded paper) or fleece liners. Never use cedar or pine shavings — the aromatic oils are toxic to small mammals. Provide a cozy hideout (a plastic igloo or small wooden hide box), a food dish, and a water bottle or heavy ceramic water bowl.`,
+      diet: `High-quality cat food forms the cornerstone of most pet hedgehog diets. Choose a kibble with a named protein (chicken, turkey) as the first ingredient, low fat content (under 15%), high fiber, and no artificial colors or preservatives. Hedgehog-specific commercial diets exist but vary widely in quality — research ingredients carefully. A mix of 2 to 3 high-quality cat foods provides better nutritional variety than a single option.
 
-Treats must be minimal. Rose hips, dried herbs (chamomile, dandelion), small pieces of apple, or a raisin once per week are appropriate. Excessive sugar disrupts gut flora, causes obesity, and can precipitate life-threatening GI problems in this highly sensitive digestive system. Fresh water in a sipper bottle changed daily is essential.`,
-      enrichment: `A 12 to 14 inch solid-surface exercise wheel (not wire or mesh, which catches legs) is essential. Chinchillas are highly active and need vigorous nightly exercise. Without a wheel, they develop obesity, boredom stereotypies, and behavioral problems. Flying Saucer-style wheels work particularly well for chinchillas.
+Supplement with live insects 3 to 5 times per week. Mealworms (in moderation as they are high in fat and low in calcium), dubia roaches, crickets, and waxworms as an occasional treat are all appropriate. Insects provide protein variety and behavioral enrichment — hedgehogs actively hunt prey and this activity is enriching and natural.
 
-Provide platforms at multiple heights, wooden ledges, tunnels, cork bark tubes, and a variety of safe chew toys: apple wood, willow balls, rose hip pieces, and pumice blocks. Chinchillas need to gnaw continuously to maintain their constantly growing teeth, and providing appropriate gnawing material prevents them from destroying cage furniture.
+Small amounts of cooked egg, plain cooked chicken, baby food (single-ingredient meat varieties), and low-fat cottage cheese can be offered occasionally for variety. Fresh fruits and vegetables can be offered in tiny quantities: blueberries, apple slices (no seeds), cooked carrot, and leafy greens are safe options. Avoid grapes, raisins, citrus, onion, garlic, and anything with xylitol.
 
-Supervised out-of-cage playtime in a chinchilla-proofed room (no electrical cords, no small gaps to escape into, no toxic plants) is excellent enrichment. Chinchillas explore with spectacular energy — leaping, bounding, and investigating everything. Handle gently and consistently, allowing the chinchilla to approach voluntarily rather than being grabbed.`,
-      health: `Heat stroke is the most acute and deadly risk for chinchillas. Above 75 to 80 degrees F, chinchillas begin to overheat rapidly. Signs include rapid breathing, drooling, and lethargy. Move to a cool area immediately and contact an exotic vet. Prevention through climate control (air conditioning in summer) is essential.
+Fresh water must always be available. Some hedgehogs prefer a water bowl over a bottle — offer both initially to see which the hedgehog uses more.`,
+      enrichment: `The solid exercise wheel is the single most critical enrichment item and must be provided every night. Without adequate running opportunities, hedgehogs become obese, lethargic, and develop behavioral and health problems. Most hedgehogs run for several hours each night. Accept that this is part of keeping a hedgehog and plan for the wheel noise accordingly.
 
-Dental disease (malocclusion and molar spurs) is extremely common in chinchillas and is the most common cause of weight loss and anorexia in middle-aged and older animals. Because the cheek teeth are far back in the mouth and not visible without sedation and magnification, dental disease is frequently discovered only when the chinchilla has already lost significant weight. Annual dental checks under anesthesia with an exotic vet are strongly recommended.
+Provide tunnels (toilet paper rolls, PVC pipes, plastic igloo tunnels), foraging toys (hiding insects or kibble in egg cartons or puzzle feeders), and safe items to explore at various heights. Hedgehogs have excellent senses of smell and will investigate every new scent in their environment. Rotate enrichment items regularly.
 
-Fur ring — a constricting ring of fur around the penis in males — can develop during or after mating and causes serious tissue damage if not addressed promptly. Male owners should learn to check for fur ring monthly. GI stasis from insufficient hay is another serious risk. A chinchilla that has not produced droppings for 12 hours is an emergency.`,
+Supervised free-roam time in a warm, hedgehog-proofed area (no gaps under furniture large enough for escape, no electrical cords at floor level) is excellent additional enrichment. Many hedgehogs enjoy bath time in a shallow, warm water tub and will swim briefly before toweling off.
+
+Most hedgehogs have a grumpy, defensive reputation — but with patient, consistent handling from a young age, many become quite relaxed and even sociable. Handle at dusk when they are naturally active. Move slowly, support the whole body, and avoid startling them. An anointing hedgehog (self-anointing with unusual scents by licking and spreading saliva on their quills) is engaging and completely normal behavior.`,
+      health: `Wobbly Hedgehog Syndrome (WHS) is a progressive and incurable neurological disease caused by a genetic mutation that causes muscle wasting and progressive paralysis, starting in the hindquarters and moving forward. It affects an estimated 1 in 3 African pygmy hedgehogs and has no treatment. A hedgehog with WHS will gradually lose the ability to use its hind legs, then its front legs, and eventually lose the ability to eat. Comfort care and quality of life management with veterinary guidance is the approach.
+
+Obesity is extremely common and leads to fatty liver disease, heart problems, and joint issues. Hedgehogs become obese from overfeeding high-fat insects, insufficient exercise, or inadequate wheel access. Monitor body condition: you should be able to feel but not see the hip bones. A hedgehog that cannot curl into a full ball due to fat deposits is significantly overweight.
+
+Cancer is unfortunately common in hedgehogs over 3 years old — tumors of the uterus, mouth, and mammary glands are most frequently encountered. Annual veterinary examinations with an exotic vet experienced in hedgehogs are strongly recommended from age 2 onward. Spaying females reduces uterine cancer risk significantly.
+
+Torpor (temperature-induced dormancy) in response to cold temperatures is a veterinary emergency in pet hedgehogs. Signs include extreme lethargy, cold body temperature, and difficulty moving. Warm the hedgehog slowly against your body and contact a vet immediately.`,
       checklist: [
-        "Minimum 24x24x48\" multi-level cage",
-        "12 to 14 inch solid exercise wheel",
-        "Unlimited grass hay (Timothy or Orchard)",
-        "High-quality chinchilla pellets",
-        "Dust bath (chinchilla dust, not sand)",
-        "Multiple platforms and hideouts",
-        "Safe chew toys (apple wood, willow, pumice)",
-        "Digital thermometer (critical, keep under 80 degrees F)",
+        "Minimum 2x4 ft secure enclosure",
+        "8 to 12 inch solid exercise wheel",
+        "High-quality kitten or adult cat food",
+        "Live insects (mealworms, dubia roaches)",
+        "Paper-based or fleece bedding",
+        "Hideout/igloo",
+        "Digital thermometer and hygrometer",
+        "Safe foraging toys and tunnels",
         "Nail clippers",
-        "Exotic veterinarian experienced with chinchillas"
+        "Exotic vet experienced with hedgehogs"
       ],
     },
     faqs: [
-      { q: "Why do chinchillas take dust baths?", a: "Chinchillas' extraordinary fur — up to 60 hairs per follicle compared to a human's 1 — would mat, clump, and become oily if bathed in water like most mammals. In the wild, Andean chinchillas bathe in volcanic ash to absorb oils and moisture from their dense coats. In captivity, chinchilla-specific dust replicates this. Offer a dust bath container large enough for rolling 2 to 3 times per week for 10 to 15 minutes. Never bathe a chinchilla in water — wet fur takes many hours to dry and can lead to fungal infections and life-threatening chilling." },
-      { q: "Can chinchillas be kept in warm climates?", a: "With difficulty. Chinchillas are native to the high-altitude Andes and cannot tolerate temperatures above 75 to 80 degrees F. Above this threshold they develop heat stroke rapidly — a genuine veterinary emergency. In warm climates, air conditioning is not optional but a care requirement. Signs of heat distress include rapid panting, drooling, and lethargy. If you live somewhere without reliable air conditioning, a chinchilla is not a suitable pet." },
-      { q: "How long do chinchillas live?", a: "Chinchillas are one of the longer-lived small pet mammals. With excellent care, they commonly live 10 to 15 years, and some individuals have reached 20 years. This makes a chinchilla a longer commitment than many people realize at purchase. Their longevity makes annual veterinary care, appropriate diet (unlimited hay plus quality pellets), and temperature control especially important investments." },
-      { q: "Are chinchillas good pets for children?", a: "Chinchillas are best suited to older teenagers and adults rather than young children. They are crepuscular and nocturnal — most active in the evening when children should be sleeping — and are not natural cuddlers. They are also delicate and can develop serious stress responses to rough handling, require precise temperature management (never above 75 degrees F), and need an adult-level commitment to their care." },
-      { q: "What do chinchillas eat?", a: "Unlimited Timothy or orchard grass hay is the cornerstone of the chinchilla diet and must always be available. Hay keeps continuously growing teeth worn and the sensitive digestive system moving. Supplement with 1 to 2 tablespoons of high-quality chinchilla pellets (Timothy-based, no added seeds or colored pieces) daily. Treats must be very limited: a single raisin, a small piece of dried rose hip, or a dried herb like chamomile once or twice per week. Excessive sugar causes severe gut disruption in chinchillas." },
+      { q: "Are hedgehogs nocturnal?", a: "Yes. African pygmy hedgehogs — the standard pet species — are crepuscular to nocturnal, most active from dusk through the night. During daylight hours they will typically sleep in their hideout or curl into a defensive ball. The best time to interact, feed, and observe your hedgehog is in the evening and early night hours. Forcing interaction during the day causes significant stress. If you are primarily a daytime person, a hedgehog's natural schedule may not align well with your lifestyle." },
+      { q: "Can hedgehogs run on a wheel?", a: "Yes — and they must. A solid exercise wheel 10 to 12 inches in diameter is one of the most critical pieces of hedgehog equipment. Hedgehogs can run 5 to 8 miles per night and require this nightly exercise for physical and mental health. Without adequate wheel access, hedgehogs become obese, lethargic, and develop health problems including fatty liver disease. The wheel must have a solid running surface — bars or mesh injure feet and legs." },
+      { q: "What do hedgehogs eat?", a: "High-quality low-fat cat food forms the backbone of most hedgehog diets. Look for a named protein (chicken, turkey) as the first ingredient and fat content under 15%. Supplement with live insects 3 to 5 times per week — dubia roaches, small mealworms in moderation, and crickets are appropriate. Small amounts of cooked egg, cooked chicken, and safe fruits and vegetables like blueberries, apple, and cooked carrot can be offered as variety. Avoid grapes, raisins, avocado, citrus, onion, garlic, and any xylitol-containing foods." },
+      { q: "What is Wobbly Hedgehog Syndrome?", a: "Wobbly Hedgehog Syndrome (WHS) is a progressive, incurable neurological disease caused by a genetic mutation that produces muscle wasting and paralysis. It begins in the hindquarters and moves forward over months to years, eventually affecting the entire body. An estimated 1 in 3 African pygmy hedgehogs is affected. There is no treatment — management focuses on quality of life with veterinary guidance on when euthanasia becomes the compassionate choice." },
+      { q: "How long do hedgehogs live?", a: "African pygmy hedgehogs typically live 3 to 6 years in captivity. Some individuals reach 7 to 8 years, but this is the exception. Lifespan is significantly affected by genetics (WHS, cancer predisposition), diet (obesity is extremely common and life-shortening), and access to appropriate veterinary care. Annual check-ups with an exotic vet experienced in hedgehogs from age 2 onward are strongly recommended." },
+    ],
+  },
+  {
+    id: "rabbit",
+    name: "Rabbit",
+    emoji: "🐰",
+    difficulty: "Beginner/Intermediate",
+    petType: "Small Mammals",
+    image: "/assets/guides/rabbit.jpg",
+    tagline: "The gentle, litter-trainable companion that loves to binky!",
+    funFact: "Rabbits can jump up to 4 feet high and run up to 25 mph. They're surprisingly athletic!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Exercise pen or C&C condo", low: 60, high: 150 },
+        { item: "Litter box + litter", low: 15, high: 25 },
+        { item: "Hideouts and tunnels", low: 20, high: 40 },
+        { item: "Chew toys", low: 15, high: 30 },
+        { item: "Food and water dishes", low: 10, high: 20 },
+        { item: "Nail clippers + styptic powder", low: 10, high: 15 },
+        { item: "Spay/neuter", low: 150, high: 400 },
+      ],
+      annual: [
+        { item: "Grass hay (unlimited)", low: 150, high: 250 },
+        { item: "Rabbit pellets", low: 40, high: 70 },
+        { item: "Fresh leafy greens daily", low: 150, high: 250 },
+        { item: "Litter/bedding", low: 60, high: 100 },
+        { item: "Annual vet wellness check", low: 50, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `Rabbits need far more space than most people expect. A minimum of 8 to 10 square feet of living space for a single rabbit, with at least 24 square feet of daily exercise space, is the current recommended standard. Many experienced rabbit owners and welfare organizations now advocate for free-roaming setups or very large enclosures, as rabbits confined to small hutches develop severe physical and psychological problems over time.
+
+Use an exercise pen (X-pen), a large C&C condo, or a bunny-proofed room as the primary living space. Wire-bottom cages must be avoided entirely — wire floors cause pressure sores on the hocks (feet) that are painful, difficult to heal, and sometimes lead to serious infection. Always use solid flooring with appropriate soft bedding.
+
+Provide a litter box with paper-based litter and a layer of hay on top, a cozy hideout or tunnel, and multiple safe chew toys. Rabbits have continuously growing teeth and must gnaw to keep them worn down. Apple wood sticks, willow balls, untreated wicker, and cardboard are all safe options.
+
+Temperature should stay between 60 and 72 degrees F. Rabbits are sensitive to heat and can die of heatstroke above 85 degrees F. Keep them away from drafts, direct sunlight, and extreme temperatures.`,
+      diet: `Hay is the single most important food in a rabbit's diet and should make up 80 to 90% of everything they eat, with unlimited access at all times. Timothy, orchard grass, and meadow hay are the best choices for adult rabbits. Fresh hay stimulates the gut, wears down teeth naturally, and prevents the life-threatening condition GI stasis.
+
+Supplement with high-quality pellets: 1/8 to 1/4 cup per day for most adult rabbits, scaled to body weight. Choose pellets with high fiber content and no added seeds, nuts, or colored pieces. Pellets are a supplement, not a replacement for hay.
+
+Fresh leafy greens should be offered daily: 1 to 2 cups per 4 pounds of body weight. Excellent choices include romaine lettuce, cilantro, flat-leaf parsley, dandelion greens, arugula, and basil. Introduce new greens gradually to avoid digestive upset. Avoid iceberg lettuce (nutritionally empty) and excess spinach (high oxalates).
+
+Treats like carrots, fruit, and commercial bunny treats should be limited to a thumbnail-sized piece a few times per week at most. These are high-sugar foods that can disrupt gut flora. Fresh water in a heavy ceramic bowl must always be available and changed daily.`,
+      enrichment: `Rabbits are intelligent, curious, and naturally active animals that need at minimum 3 to 4 hours of free-roaming time in a bunny-proofed space every day. Without adequate space and enrichment, rabbits develop behavioral problems including aggression, destructiveness, and depression.
+
+Provide cardboard boxes with multiple holes cut in them, paper bags filled with hay for foraging, willow balls and tunnels, digging boxes filled with shredded paper, and puzzle feeders with pellets or herbs. Rotate enrichment items regularly to maintain interest. Rabbits are highly food-motivated and foraging enrichment is particularly effective at keeping them mentally engaged.
+
+Rabbits are social animals and generally do best in bonded pairs or groups. A bonded pair provides constant companionship, play, and mutual grooming. Solo rabbits require more human interaction to compensate for the absence of a companion. Bonding takes patience with a slow, neutral-space introduction process, but the result is two dramatically happier animals.
+
+Rabbits can be litter-trained much like cats. Place the litter box in the corner they naturally use and reward correct behavior. Most rabbits are fully litter-trained within a few weeks, making free-roaming setups practical and clean.`,
+      health: `GI stasis is the most serious and common rabbit emergency. It occurs when the digestive tract slows down or stops completely, usually caused by stress, pain, low fiber intake, or dehydration. Signs include small or absent droppings, hunched posture, refusal to eat, and a distended or hard abdomen. GI stasis requires immediate veterinary attention. A rabbit that has not eaten or produced droppings for 12 hours is an emergency.
+
+Dental disease is the second most common serious health problem. Rabbit teeth grow continuously and must be worn down through constant hay chewing. Without adequate hay, molars overgrow and cause pain, drooling, and weight loss. Annual veterinary dental exams are recommended for all rabbits.
+
+Uterine cancer (uterine adenocarcinoma) affects the majority of unspayed female rabbits by age 4 to 5 and is one of the most preventable causes of early death in pet rabbits. Spaying is strongly recommended before 2 years of age. Neutering males reduces territorial behavior, spraying, and testicular cancer risk.
+
+Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's hindquarters and maggots emerge. Check the hindquarters daily in summer. Annual wellness visits with a rabbit-savvy veterinarian are essential for all rabbits.`,
+      checklist: [
+        "Minimum 8 sq ft enclosure or exercise pen",
+        "Grass hay (Timothy or Orchard), unlimited",
+        "High-quality rabbit pellets (1/8 to 1/4 cup daily)",
+        "Fresh leafy greens (romaine, parsley, cilantro)",
+        "Litter box + litter (paper-based or aspen)",
+        "Coconut fiber or safe bedding",
+        "Multiple hideouts and tunnels",
+        "Safe chew toys (apple wood, willow, cardboard)",
+        "Nail clippers and styptic powder",
+        "Rabbit-savvy veterinarian contact"
+      ],
+    },
+    faqs: [
+      { q: "Do rabbits need a companion?", a: "Yes, for most rabbits. Rabbits are highly social animals that live in groups in the wild, and a solitary rabbit is generally an anxious, understimulated animal. Bonded pairs groom each other, sleep together, and communicate in ways no amount of human interaction fully replicates. Same-sex pairs (particularly two spayed or neutered animals) work well when properly introduced. Single rabbits can still thrive with extensive human interaction, but a bonded pair is the gold standard." },
+      { q: "What do rabbits eat?", a: "The foundation of a rabbit's diet is unlimited grass hay — Timothy, orchard grass, or meadow grass — which should make up 80 to 90% of total intake. Hay provides the indigestible fiber essential for healthy gut motility and wears down continuously growing teeth. Supplement with a daily cup of fresh leafy greens per 5 pounds of body weight: romaine lettuce, cilantro, parsley, and dandelion greens are excellent choices. High-quality pellets can be offered in small amounts. Avoid sugary treats and commercial treat sticks — these cause gut flora disruption and dental disease." },
+      { q: "Can rabbits be litter trained?", a: "Yes, and they learn remarkably quickly. Rabbits naturally choose one or two corners for elimination. Place a litter box with paper-based litter (never clay or clumping cat litter) where the rabbit already goes. Hay placed at one end of the litter box encourages consistent use, as rabbits like to eat while they eliminate. Spaying or neutering significantly improves litter habits. Most rabbits are reliably litter trained within a few weeks of consistent reinforcement." },
+      { q: "How long do rabbits live?", a: "Domestic rabbits commonly live 8 to 12 years with good care, and some individuals reach 14 or more years. Life expectancy has improved dramatically as knowledge of proper diet (hay-based, not pellet-heavy), spacious housing, spay/neuter practices, and exotic veterinary care has become more widely available. The old paradigm of small hutches and pellet-only diets produced lifespans of 5 to 6 years; modern care standards produce much longer, healthier lives." },
+      { q: "Do rabbits need veterinary care?", a: "Yes. Rabbits need annual wellness examinations with a veterinarian experienced in exotic small mammals. They are prey animals that instinctively hide illness — by the time a rabbit shows obvious signs of being sick, the problem is usually already serious. Spaying female rabbits before age 2 is critical, as uterine cancer affects the majority of unspayed females by age 4 to 5. Finding a rabbit-savvy exotic vet before an emergency arises is one of the most important things a new rabbit owner can do." },
     ],
   },
   {
@@ -367,80 +442,6 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
       { q: "Do sugar gliders need specialized veterinary care?", a: "Yes. Only exotic veterinarians with specific experience in sugar gliders can provide appropriate care. Annual wellness exams are mandatory — sugar gliders mask illness as an evolutionary defense, and by the time symptoms are visible, the animal is usually significantly compromised. Find a glider-experienced exotic vet before acquiring your gliders, not during an emergency." },
       { q: "Are sugar gliders good pets for beginners?", a: "Sugar gliders are not recommended for first-time exotic pet owners. They require a specialized and research-intensive diet, must be kept in same-species groups, are nocturnal and most active when most people are sleeping, need daily bonding time during their active hours, and require exotic veterinary care. They are rewarding for dedicated keepers who fully prepare, but frequently end up in rescue from unprepared owners." },
       { q: "How long do sugar gliders live?", a: "10 to 15 years in captivity with excellent care — appropriate companionship, correct calcium-phosphorus balanced diet, nocturnal scheduling respected, and annual exotic vet exams. Life expectancy drops sharply in isolated animals or those on poorly balanced diets. A sugar glider is a decade-plus commitment." },
-    ],
-  },
-  {
-    id: "ferret",
-    name: "Ferret",
-    emoji: "🦡",
-    difficulty: "Intermediate",
-    petType: "Small Mammals",
-    tagline: "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!",
-    funFact: "Ferrets do a 'war dance' when they're excited: a frenzied hopping, bouncing, and sideways leaping display also called the 'dooking.' Dooking means your ferret is having the time of their life!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x2 ft multi-level cage", low: 100, high: 200 },
-        { item: "Fleece hammocks and sleep sacks", low: 20, high: 40 },
-        { item: "Litter box", low: 10, high: 15 },
-        { item: "Toys, tunnels, and dig boxes", low: 25, high: 45 },
-        { item: "Spay/neuter + initial vaccinations (if needed)", low: 150, high: 300 },
-      ],
-      annual: [
-        { item: "High-quality ferret kibble or raw diet", low: 150, high: 250 },
-        { item: "Distemper and rabies vaccine boosters", low: 50, high: 100 },
-        { item: "Annual fecal exam and bloodwork", low: 100, high: 200 },
-        { item: "Bedding and litter", low: 50, high: 80 },
-      ],
-    },
-    sections: {
-      housing: `Ferrets need a multi-level cage (minimum 3x2x2 ft with solid ramps and platforms) as their home base, but they cannot live in a cage full-time. Ferrets require a minimum of 4 hours of free-roaming time in a ferret-proofed room every single day — this is not optional. Ferrets kept in cages all day develop significant physical and behavioral problems.
-
-Ferret-proofing is a serious undertaking. Ferrets squeeze through impossibly small gaps, chew electrical cords, steal and hide small objects (including jewelry, keys, and remote controls), fall into open toilets, and get into everything. Check every baseboard, gap under appliances, and recliner mechanism (ferrets love to climb into recliners and get crushed). Block all gaps under doors and any opening wider than 1 inch.
-
-Inside the cage: fleece hammocks, sleep sacks, and tube tunnels provide resting spots. Line the cage floor with fleece liners or paper-based bedding — never cedar or pine, which contain toxic aromatic oils. Provide a litter box with paper-based litter in one corner, and keep room temperature below 80 degrees F. Ferrets overheat easily and can die from heat stroke at temperatures that feel comfortable to humans.
-
-Multiple ferrets do significantly better together — they are social animals that wrestle, groom, and sleep in piles. A pair or trio is far preferable to a solo ferret for the animals' wellbeing.`,
-      diet: `Ferrets are obligate carnivores with a digestive tract optimized for animal protein and fat and no capacity to process plant matter. The dietary principle is simple: high protein, high fat, zero carbohydrates, zero plant fiber. The practical challenge is finding commercial foods that actually meet this standard.
-
-A high-quality, grain-free ferret kibble with a named animal protein (chicken, turkey, duck) as the first 2 to 3 ingredients, fat content above 20%, and carbohydrate content below 20% is the commercial food baseline. Multiple higher-end brands meet this standard; avoid brands containing corn, wheat, soy, or pea protein as primary ingredients.
-
-A raw meat diet (whole prey, chunks of meat and organs, or commercial raw ferret food) is arguably the most species-appropriate option and produces excellent coat condition, dental health, and energy levels in most ferrets. Transition to raw slowly if switching from kibble to avoid digestive upset.
-
-Avoid: fruits, vegetables, grains, dairy, fish-based foods, and sugary treats. Ferrets cannot digest plant matter and chronic exposure to plant carbohydrates is strongly associated with insulinoma (pancreatic cancer) development. Fresh water in a heavy bowl must always be available — bottles are difficult for ferrets to drink from adequately and often run dry unnoticed.`,
-      enrichment: `Ferrets are among the most playful and mischievous animals kept as pets. Their characteristic "dooking" (excited chattering while performing the war dance — a frenzied hopping, bouncing, sideways leaping display) is one of the most joyful sights in the exotic pet world, and it tells you your ferret is having the time of its life.
-
-Rotate enrichment items frequently — ferrets become bored with toys quickly and light up at novelty. Crinkle balls, tunnels, dig boxes (shallow bins filled with dry rice, dirt, or shredded paper), ferret-safe puzzle feeders, and "treasure stash" boxes (a container they can deposit stolen items into) are all excellent options.
-
-Daily free-roam time with human interaction is the most important enrichment. Chase games, hide-and-seek, and learning tricks (ferrets can learn to sit, come when called, and perform simple tricks) all strengthen the bond between ferret and keeper. Many ferrets will return to their cage on their own when tired if the door is left open.
-
-Ferrets sleep 16 to 18 hours per day in deep, often concerning-looking coma-like sleep. This is completely normal. Schedule free-roam time for their active periods (generally morning and early evening).`,
-      health: `Ferrets in North America have a near-universal susceptibility to three serious diseases: insulinoma (pancreatic beta cell cancer), adrenal gland disease, and lymphoma. The majority of ferrets will develop at least one of these by age 4 to 5, and many develop all three. This is not a reason to avoid ferrets — it is a reason to commit to appropriate veterinary care.
-
-Insulinoma causes low blood sugar (hypoglycemia) from excess insulin production. Signs include weakness, stumbling, drooling, glassy eyes, and in severe cases, seizures. Management includes diet modification (low carbohydrate is critical — another reason to avoid carb-heavy kibble), medications (prednisone, diazoxide), and sometimes surgery. A ferret with insulinoma needs ongoing veterinary management.
-
-Adrenal gland disease causes hair loss typically starting at the tail and progressing forward, muscle wasting, and in females, vulvar swelling (a dangerous estrogen-producing effect from adrenal tumors). It is managed with hormonal implants, medications, or surgery depending on severity.
-
-All ferrets should be vaccinated against canine distemper (fatal in ferrets) and rabies. Annual wellness exams including bloodwork starting at age 2 to 3 are essential for early disease detection. A ferret-experienced exotic veterinarian is not optional — find one before acquiring ferrets.`,
-      checklist: [
-        "Multi-level ferret cage (3x2x2 ft minimum)",
-        "Fleece hammocks and sleep sacks",
-        "Ferret-proofed free-roam room (4+ hours/day)",
-        "High-quality ferret kibble or raw meat diet",
-        "Fresh water bowl (always available)",
-        "Tunnels, dig boxes, and rotating toys",
-        "Canine distemper and rabies vaccinations",
-        "Spay/neuter (if not already done)",
-        "Annual fecal exam and bloodwork",
-        "Ferret-experienced exotic veterinarian",
-      ],
-    },
-    faqs: [
-      { q: "Do ferrets smell?", a: "Yes, to varying degrees. Ferrets have musk glands and produce a natural musky scent. Most pet ferrets in North America are descented (musk glands removed), which reduces but does not eliminate the scent — the skin and fur themselves produce a natural oil-based smell. Regular bathing reduces the odor temporarily but too-frequent bathing stimulates more oil production. Good litter box hygiene and regular bedding washing manage most of the smell." },
-      { q: "What do ferrets eat?", a: "Obligate carnivores requiring high protein, high fat, and zero carbohydrates. A quality grain-free ferret kibble with named animal protein as the first 2 to 3 ingredients is the commercial baseline. A raw meat diet (whole prey, raw meat and organs) is arguably the most species-appropriate option. Avoid all fruits, vegetables, grains, dairy, and sugary treats — plant carbohydrates are strongly associated with insulinoma development in ferrets." },
-      { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
-      { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
-      { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers — many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
     ],
   },
 ];

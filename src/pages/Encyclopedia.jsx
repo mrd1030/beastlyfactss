@@ -37,17 +37,17 @@ const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles &
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
 const subtypes = {
-  Geckos: ['Crested Gecko', 'Leopard Gecko', 'Gargoyle Gecko', 'Mourning Gecko', 'Tokay Gecko', 'African Fat-Tailed Gecko', 'Leaf-Tailed Gecko'],
-  Lizards: ['Bearded Dragon', 'Blue Tongue Skink', "Jackson's Chameleon", 'Veiled Chameleon', 'Green Anole', 'Ackie Monitor', 'Savannah Monitor', 'Uromastyx', 'Argentine Black and White Tegu'],
-  Snakes: ['Ball Python', 'Corn Snake', 'Hognose Snake', 'Boa Constrictor', 'California Kingsnake', 'Milk Snake'],
-  'Turtles & Tortoises': ['Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise', 'Box Turtle'],
-  'Small Mammals': ['Rabbit', 'Hedgehog', 'Guinea Pig', 'Chinchilla', 'Ferret', 'Sugar Glider'],
-  Birds: ['Budgie', 'Cockatiel', 'Green Cheek Conure', 'Lovebird', 'African Grey Parrot', 'Canary', 'Cockatoo'],
+  Geckos: ['African Fat-Tailed Gecko', 'Crested Gecko', 'Gargoyle Gecko', 'Leaf-Tailed Gecko', 'Leopard Gecko', 'Mourning Gecko', 'Tokay Gecko'],
+  Lizards: ['Ackie Monitor', 'Argentine Black and White Tegu', 'Bearded Dragon', 'Blue Tongue Skink', 'Green Anole', "Jackson's Chameleon", 'Savannah Monitor', 'Uromastyx', 'Veiled Chameleon'],
+  Snakes: ['Ball Python', 'Boa Constrictor', 'California Kingsnake', 'Corn Snake', 'Hognose Snake', 'Milk Snake'],
+  'Turtles & Tortoises': ['Box Turtle', 'Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise'],
+  'Small Mammals': ['Chinchilla', 'Ferret', 'Guinea Pig', 'Hedgehog', 'Rabbit', 'Sugar Glider'],
+  Birds: ['African Grey Parrot', 'Budgie', 'Canary', 'Cockatiel', 'Cockatoo', 'Green Cheek Conure', 'Lovebird'],
   Dogs: ['Labrador Retriever', 'Golden Retriever', 'German Shepherd', 'French Bulldog', 'Border Collie', 'Siberian Husky'],
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
-  Invertebrates: ['Tarantula', 'Praying Mantis', 'Giant Millipede', 'Emperor Scorpion', 'Madagascar Hissing Cockroach', 'Stick Insect', 'Jumping Spider', 'Hermit Crab'],
-  Amphibians: ["White's Tree Frog", 'Pacman Frog', 'Fire-Bellied Toad', 'Axolotl', 'Tiger Salamander'],
-  Fish: ['Betta Fish', 'Goldfish', 'Koi', 'Guppy', 'Angelfish', 'Corydoras Catfish', 'Neon Tetra', 'Oscar'],
+  Invertebrates: ['Emperor Scorpion', 'Giant Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
+  Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
 };
 
 export default function Encyclopedia() {

@@ -1,5 +1,18 @@
 export const turtleEncyclopedia = [
   {
+    id: "box-turtle", name: "Box Turtle", scientific: "Terrapene spp.",
+    category: "Turtles & Tortoises", emoji: "🐢", difficulty: "Intermediate", guideId: "box-turtle", available: true, image: "/assets/guides/box-turtle.jpg",
+    bio: {
+      overview: "Box turtles are North America's most beloved native turtle, found from the eastern United States west to the Great Plains. Unlike their aquatic cousins, box turtles are largely terrestrial. Their hinged plastron (lower shell) closes so completely that no predator can reach the soft tissue inside — a unique adaptation in the turtle world. They can live over 100 years and have strong homing instincts, navigating back to precise territories across their lifetime.",
+      origin: "North America (eastern and central United States, Mexico)",
+      habitat: "Forest, meadow, grassland, and woodland edges",
+      adultSize: "4.5–7 inches (11–18 cm)",
+      wildDiet: "Omnivore — earthworms, insects, berries, mushrooms, and plants",
+      wildLifespan: "50–100+ years",
+      conservation: "Vulnerable (IUCN); threatened in many US states",
+    },
+  },
+  {
     id: "red-eared-slider", name: "Red-Eared Slider", scientific: "Trachemys scripta elegans",
     category: "Turtles & Tortoises", emoji: "🐢", difficulty: "Advanced", guideId: "red-eared-slider", available: true, image: "/assets/guides/red-eared-slider.jpg",
     bio: {
@@ -36,19 +49,6 @@ export const turtleEncyclopedia = [
       wildDiet: "Grasses, hay, succulent plants, and cactus pads",
       wildLifespan: "70–150+ years",
       conservation: "Vulnerable (IUCN)",
-    },
-  },
-  {
-    id: "box-turtle", name: "Box Turtle", scientific: "Terrapene spp.",
-    category: "Turtles & Tortoises", emoji: "🐢", difficulty: "Intermediate", guideId: "box-turtle", available: true, image: "/assets/guides/box-turtle.jpg",
-    bio: {
-      overview: "Box turtles are North America's most beloved native turtle, found from the eastern United States west to the Great Plains. Unlike their aquatic cousins, box turtles are largely terrestrial. Their hinged plastron (lower shell) closes so completely that no predator can reach the soft tissue inside — a unique adaptation in the turtle world. They can live over 100 years and have strong homing instincts, navigating back to precise territories across their lifetime.",
-      origin: "North America (eastern and central United States, Mexico)",
-      habitat: "Forest, meadow, grassland, and woodland edges",
-      adultSize: "4.5–7 inches (11–18 cm)",
-      wildDiet: "Omnivore — earthworms, insects, berries, mushrooms, and plants",
-      wildLifespan: "50–100+ years",
-      conservation: "Vulnerable (IUCN); threatened in many US states",
     },
   },
 ];

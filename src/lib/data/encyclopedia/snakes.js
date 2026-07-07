@@ -13,32 +13,6 @@ export const snakeEncyclopedia = [
     },
   },
   {
-    id: "corn-snake", name: "Corn Snake", scientific: "Pantherophis guttatus",
-    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "corn-snake", available: true, image: "/assets/guides/corn-snake.jpg",
-    bio: {
-      overview: "Corn snakes are slender, medium-sized rat snakes native to the eastern United States. They are excellent climbers and highly active, often found in cornfields and farm buildings where rodent prey is abundant — hence the name. Docile, hardy, and available in a staggering array of captive-bred color morphs, they are widely considered the ideal beginner snake for new reptile keepers.",
-      origin: "Eastern and central United States",
-      habitat: "Pine forest, woodland, rocky hillside, and agricultural land",
-      adultSize: "3.5–5 feet (107–152 cm)",
-      wildDiet: "Mice, rats, birds, and lizards",
-      wildLifespan: "10–15 years (up to 22 years in captivity)",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "hognose-snake", name: "Hognose Snake", scientific: "Heterodon spp.",
-    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "hognose-snake", available: true, image: "/assets/guides/hognose-snake.jpg",
-    bio: {
-      overview: "Hognose snakes are famous for their dramatic bluffing behavior — they hiss loudly, flatten their heads cobra-like, and if that fails, roll over and play dead convincingly (complete with open mouth and lolling tongue). Native to North America, they have upturned snouts used to dig up buried toads — their primary wild prey. They are rear-fanged with mild venom effective on toads but harmless to humans in the vast majority of cases.",
-      origin: "North America (eastern, western, and southern species)",
-      habitat: "Sandy soil areas, prairies, woodland edges, and coastal plains",
-      adultSize: "1.5–3.5 feet (45–107 cm) depending on species",
-      wildDiet: "Toads, frogs, salamanders, and occasionally small rodents",
-      wildLifespan: "10–18 years",
-      conservation: "Least Concern (most species); some state-level protections",
-    },
-  },
-  {
     id: "boa-constrictor", name: "Boa Constrictor", scientific: "Boa spp.",
     category: "Snakes", emoji: "🐍", difficulty: "Intermediate/Advanced", guideId: "boa-constrictor", available: true, image: "/assets/guides/boa-constrictor.jpg",
     bio: {
@@ -62,6 +36,32 @@ export const snakeEncyclopedia = [
       wildDiet: "Lizards, rodents, birds, eggs, and other snakes (including rattlesnakes)",
       wildLifespan: "10–15 years (up to 20+ years in captivity)",
       conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "corn-snake", name: "Corn Snake", scientific: "Pantherophis guttatus",
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "corn-snake", available: true, image: "/assets/guides/corn-snake.jpg",
+    bio: {
+      overview: "Corn snakes are slender, medium-sized rat snakes native to the eastern United States. They are excellent climbers and highly active, often found in cornfields and farm buildings where rodent prey is abundant — hence the name. Docile, hardy, and available in a staggering array of captive-bred color morphs, they are widely considered the ideal beginner snake for new reptile keepers.",
+      origin: "Eastern and central United States",
+      habitat: "Pine forest, woodland, rocky hillside, and agricultural land",
+      adultSize: "3.5–5 feet (107–152 cm)",
+      wildDiet: "Mice, rats, birds, and lizards",
+      wildLifespan: "10–15 years (up to 22 years in captivity)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "hognose-snake", name: "Hognose Snake", scientific: "Heterodon spp.",
+    category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "hognose-snake", available: true, image: "/assets/guides/hognose-snake.jpg",
+    bio: {
+      overview: "Hognose snakes are famous for their dramatic bluffing behavior — they hiss loudly, flatten their heads cobra-like, and if that fails, roll over and play dead convincingly (complete with open mouth and lolling tongue). Native to North America, they have upturned snouts used to dig up buried toads — their primary wild prey. They are rear-fanged with mild venom effective on toads but harmless to humans in the vast majority of cases.",
+      origin: "North America (eastern, western, and southern species)",
+      habitat: "Sandy soil areas, prairies, woodland edges, and coastal plains",
+      adultSize: "1.5–3.5 feet (45–107 cm) depending on species",
+      wildDiet: "Toads, frogs, salamanders, and occasionally small rodents",
+      wildLifespan: "10–18 years",
+      conservation: "Least Concern (most species); some state-level protections",
     },
   },
   {

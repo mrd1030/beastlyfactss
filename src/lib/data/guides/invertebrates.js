@@ -1,173 +1,11 @@
 export const invertebrateGuides = [
   {
-    id: "tarantula",
-    name: "Tarantula",
-    emoji: "🕷️",
-    difficulty: "Beginner",
-    petType: "Invertebrates",
-    tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
-    funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "Species-appropriate enclosure", low: 30, high: 70 },
-        { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
-        { item: "Cork bark hide", low: 10, high: 20 },
-        { item: "Small water dish", low: 5, high: 10 },
-        { item: "Feeding tongs", low: 8, high: 15 },
-        { item: "Digital thermometer", low: 10, high: 15 },
-      ],
-      annual: [
-        { item: "Live feeder insects", low: 40, high: 80 },
-        { item: "Substrate replacement (infrequent)", low: 15, high: 25 },
-      ],
-    },
-    sections: {
-      housing: "Tarantula housing is highly species-dependent. Burrowing species (like Grammostola pulchripes, the Chilean Rose Hair) need enclosures with 3 to 4 times their leg span in floor space and deep substrate (4 to 6 inches of a coconut fiber and peat mix). Arboreal species (like Avicularia avicularia, the Pink-Toe) need tall enclosures (12x12x18 inches minimum) with cross-ventilation, cork bark, and artificial plants for climbing and anchoring their tube web. All enclosures need a secure, locking lid. A small, shallow water dish (bottle cap size for spiderlings, bottlecap to small dish for adults) must always be available. Overflow the dish occasionally for terrestrial species to create a moisture gradient. Temperatures for most pet tarantulas should stay between 68 and 82 degrees F. Most species do not need supplemental heat in a typical home.",
-      diet: `Tarantulas eat live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard feeder insects for most species. Prey should be no larger than the tarantula's abdomen. Larger prey items cause unnecessary stress and potential injury.
-
-Feed juveniles every 4 to 7 days, adults every 10 to 14 days. Always remove uneaten prey within 24 hours. Live crickets are particularly dangerous near a molting or freshly molted tarantula — they will attack the vulnerable spider, causing severe injury or death. Pre-kill crickets before offering if unsure about molt timing.
-
-During premolt (recognizable by a darkened, fat abdomen, and refusal of food that can last weeks or even months), do not attempt to feed. After molting, wait 7 to 14 days for the fangs to fully harden before offering food again. A freshly molted tarantula with soft fangs cannot eat safely and can be injured by prey. Provide a water overflow during premolt to ensure adequate hydration for the molt process.`,
-      enrichment: "Tarantulas are observation animals, not handling animals. Many species are defensive or fast, and stress from handling can cause them to kick urticating (itching) hairs from their abdomen. The Goliath Bird-Eater can produce a loud hissing sound by rubbing its legs together. Design the enclosure to display natural behaviors: burrowing species will excavate elaborate tunnels, arboreal species will build impressive silk tube webs. This is the enrichment. A cork bark hide or cork tube allows them to feel secure.",
-      health: "Molting is the single most important and vulnerable event in a tarantula's life. Never disturb a molting spider. Do not feed for 1 to 2 weeks before or after a molt. Common health concerns include dehydration (shriveled abdomen, keep water available and overflow occasionally), mites (tiny white dots moving in enclosure, treat with a full substrate change), and DKS (dyskinetic syndrome, a poorly understood neurological issue). Failed molts can be fatal if the spider becomes stuck. Maintaining appropriate humidity for the species during premolt reduces this risk.",
-      checklist: [
-        "Species-appropriate enclosure (terrestrial or arboreal)",
-        "Coconut fiber and peat substrate (4 to 6 inch depth for burrowers)",
-        "Secure locking lid",
-        "Cork bark hide or tube",
-        "Small shallow water dish (always available)",
-        "Live feeder insects (crickets, dubia roaches)",
-        "Feeding tongs (never hand-feed)",
-        "Digital thermometer",
-        "Spray bottle for humidity management",
-        "Escape plan: know your species' defense behaviors",
-      ],
-    },
-    faqs: [
-      { q: "Are tarantulas venomous and dangerous?", a: "Yes, all tarantulas have venom used to subdue prey — but for healthy adults the bite of common pet species is medically comparable to a bee sting: painful, temporarily swollen, and rarely requiring more than basic first aid. New World species (most common in the pet trade: Brachypelma, Grammostola, Chromatopelma) have mild venom but kick urticating hairs from their abdomen as their primary defense. These hairs cause intense itching and can cause serious eye damage — never rub your eyes after handling. Old World species (Poecilotheria, Pterinochilus) have more potent venom and should not be handled at all." },
-      { q: "Can I handle my tarantula?", a: "It depends entirely on the species. Docile New World species like the Chilean Rose Hair (Grammostola rosea) or Brachypelma hamorii tolerate calm, gentle handling. Many Old World species and all Poecilotheria (ornamental tarantulas) are fast, defensive, and should be considered display-only animals. The risk of handling is less about venom and more about falls — a dropped tarantula hitting hard flooring will rupture its abdomen and die instantly. Always sit on the floor while handling." },
-      { q: "How long do tarantulas live?", a: "Dramatically different by sex. Females of many popular species live 20 to 30 years in captivity — some documented individuals of Grammostola pulchripes (Chaco Golden Knee) have exceeded 30 years. Males of the same species may live only 3 to 7 years, and often die within months of reaching sexual maturity. If longevity matters to you, acquire a confirmed female juvenile. Females from reputable breeders may cost more but represent the long-term experience of the hobby." },
-      { q: "What do tarantulas eat?", a: "Live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard. Prey size should be no larger than the tarantula's abdomen. Always remove uneaten prey within 24 hours — live insects left overnight will attack a molting or freshly molted tarantula, causing severe injury or death. Never feed during premolt (when the tarantula refuses food and its abdomen appears dark and full) and wait 7 to 14 days after a molt before offering prey again." },
-      { q: "What is molting and how do I prepare for it?", a: "Molting is how tarantulas grow — they shed their entire exoskeleton, including the lining of their fangs, stomach, and book lungs. It is the most vulnerable event in a tarantula's life. Signs of premolt: refusing food for weeks or months, a fat darkened abdomen, hiding more than usual. During molt, the tarantula lies on its back and slowly works free of the old exoskeleton — this can take 15 minutes to several hours. Never disturb this process. Never attempt to help a stuck molt without expert guidance. Remove all prey insects and ensure a small water source is available." },
-    ],
-  },
-  {
-    id: "praying-mantis",
-    name: "Praying Mantis",
-    emoji: "🦗",
-    difficulty: "Self-Sufficient",
-    petType: "Invertebrates",
-    tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
-    funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "Tall vertical mesh or acrylic enclosure", low: 15, high: 35 },
-        { item: "Vertical branch or stick for molting", low: 5, high: 10 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Fine misting bottle", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Fruit flies and live feeder insects", low: 30, high: 60 },
-      ],
-    },
-    sections: {
-      housing: "Most pet mantis species (Ghost Mantis, Chinese Mantis, African Flower Mantis) need a small vertical enclosure. A tall deli cup (for nymphs) to a 12x12x18 inch mesh or acrylic enclosure (for adults) is appropriate. The rule of thumb is 3 times the mantis length in height and 2 times in width. Cross-ventilation is critical. Mantises molt hanging from the top of the enclosure so adequate height is non-negotiable. Provide a stick or branch angled from floor to ceiling for perching and molting. Temperature ranges from 72 to 95 degrees F depending on species. Most common pet species do well at 75 to 85 degrees F.",
-      diet: `Mantises eat live prey exclusively. Match the prey size to the mantis: fruit flies (Drosophila melanogaster, the small species) for early nymph stages, progressing to bottle flies, small crickets, and small dubia roaches as the mantis grows. Adult mantises can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width.
-
-Feed every 2 to 3 days. Mantises will fast in the days before molting — do not offer prey during this time and remove any uneaten insects promptly. After molting, wait until the mantis's legs and mouthparts are fully hardened (several hours to a day) before offering food. Adult females require more frequent feeding than males and have significantly longer lifespans.
-
-Prey variety is beneficial. Waxworms are high in fat and should be treats rather than staples. Bottle flies (blue or green bottle flies in pupae form, which you hatch at home) are one of the best feeders for many mantis species — appropriately sized, easy to culture, and eagerly taken.`,
-      enrichment: `Mantises are highly visual, active hunters that track and stalk prey with their distinctive head-turning behavior. Watching a mantis hunt — the slow, swaying approach followed by a lightning-fast strike — is one of the most captivating behaviors in the invertebrate hobby. The prey of the day (and the hunting sequence) is the primary enrichment.
-
-Provide varied perching structures at different heights: branches, cork bark, artificial plants, and vertical surfaces. Mantises naturally vary their position throughout the day. Some docile species (Orchid Mantis, African Flower Mantis) can be gently handled — allow them to walk voluntarily from hand to hand. They may bite if startled or if fingers smell like prey.
-
-Their "alien" compound eyes, remarkable camouflage, and astonishing hunting behaviors make mantises among the most visually engaging invertebrate pets. They are genuinely fascinating display animals.`,
-      health: `Failed molts are the primary cause of mantis death in captivity. The mantis hangs upside down from the enclosure top to molt, pulling free of its old exoskeleton. If the enclosure is too short, too humid, too dry, or if the mantis is disturbed during this process, the molt fails and the mantis dies or is permanently injured. Always ensure adequate height (3 times the mantis length minimum) and an appropriate perch from which to hang.
-
-Maintain appropriate humidity for the species by misting one side of the enclosure once daily. Dehydration causes failed molts. Overcrowding and cannibalism are serious risks — always house mantises individually, one per enclosure. Even a mantis kept alone for weeks has been known to cannibalize a newly housed enclosure mate.
-
-Most pet mantis species have lifespans of 12 to 18 months. The hobby cycle for mantises is acquisition as a nymph, raising through multiple molts to adulthood, and a relatively short adult phase. Females live significantly longer than males.`,
-      checklist: [
-        "Tall vertical mesh or acrylic enclosure (3x height rule)",
-        "Vertical branch or stick for molting",
-        "Species-appropriate temperature range",
-        "Fruit flies (for nymphs) and appropriate live insects for adults",
-        "Feeding tongs or forceps",
-        "Fine misting bottle (daily humidity maintenance)",
-        "Digital thermometer and hygrometer",
-        "House individually (cannibalistic species)",
-        "Never disturb during molt",
-        "Secure ventilated lid",
-      ],
-    },
-    faqs: [
-      { q: "How long do praying mantises live?", a: "Most pet species live 12 to 18 months total. Females live significantly longer than males — males often die shortly after their final molt to adulthood, while females continue living and laying eggs for months. The typical keeper experience is acquiring a nymph, raising it through 6 to 9 molts over several months, enjoying the adult phase, and then the cycle ends. If you want continuous mantis keeping, plan to culture your own oothecae (egg cases) or establish a reliable supplier for juveniles." },
-      { q: "Can praying mantises be kept together?", a: "Never. Praying mantises are solitary, highly territorial, and cannibalistic with any insect they can catch — including a sibling they have lived next to for weeks. Even a mantis kept in complete isolation for months will immediately attempt to eat a newly introduced individual. Always house one per enclosure, no exceptions. The only intended exception is brief supervised mating, and even then the female frequently eats the male during or after the process." },
-      { q: "What do praying mantises eat?", a: "Live prey exclusively, sized to the mantis. Early nymphs eat fruit flies (Drosophila melanogaster). As they grow, progress to bottle flies, small crickets, and appropriately sized dubia roaches. Adults can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width. Feed every 2 to 3 days and always remove uneaten prey promptly — stress from live prey in the enclosure can interfere with molting." },
-      { q: "What causes failed molts in mantises?", a: "The top three causes are: enclosure too short (the mantis needs 3x its body length in height to hang and pull free of the old exoskeleton), humidity too low (dry conditions make the old skin brittle and hard to exit), and being disturbed during the molt. Never handle, disturb, or offer food when a mantis is hanging still from the cage top — this is pre-molt positioning. A mantis that gets stuck in a molt almost always dies. Prevention is the only viable approach." },
-      { q: "Can praying mantises be handled?", a: "Many docile species tolerate gentle handling well — Ghost Mantis, African Flower Mantis, and Chinese Mantis are commonly reported as calm on the hand. They may bite if startled or if fingers smell like prey (from handling insects), but the bite of most pet mantises is minor — more surprise than damage. Always let the mantis walk voluntarily onto your hand rather than grabbing it. Some individuals are more defensive than others; read the individual animal's posture before attempting contact." },
-    ],
-  },
-  {
-    id: "millipede",
-    name: "Giant Millipede",
-    emoji: "🐛",
-    difficulty: "Self-Sufficient",
-    petType: "Invertebrates",
-    tagline: "The gentle detritivore that works as a living composting machine!",
-    funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "20-gallon+ enclosure", low: 40, high: 80 },
-        { item: "Deep substrate (coconut fiber, topsoil, hardwood)", low: 20, high: 40 },
-        { item: "Cork bark hides", low: 10, high: 20 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Fresh vegetables", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Cuttlebone or crushed eggshell", low: 5, high: 10 },
-      ],
-    },
-    sections: {
-      housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
-      diet: "Millipedes are detritivores: they eat decaying organic matter. Their primary diet is the substrate itself (rotting wood and leaf litter). Supplement with fresh vegetables: sweet potato, cucumber, zucchini, carrots, apple slices, and leafy greens. Rotate offerings and remove uneaten fresh food within 24 to 48 hours to prevent mold. Calcium is critical for their exoskeleton: offer cuttlebone pieces or crushed eggshell in the enclosure at all times. Avoid acidic fruits and vegetables (citrus, tomatoes).",
-      enrichment: `Millipedes are nocturnal detritivores — they spend most of their time buried in the substrate, emerging at night to graze on decaying organic matter. Cork bark slabs, flat pieces of rotting hardwood, and varied substrate layers (different textures at different depths) provide natural enrichment for burrowing. Watch them emerge in the evening and methodically traverse the enclosure.
-
-They are one of the most docile invertebrate pets and among the safest for beginners. They will walk slowly and steadily across hands and forearms, rarely making sudden moves. When threatened, they curl into a tight spiral — this is their primary defense mechanism. They may also secrete mild defensive chemicals (benzoquinones) that can temporarily stain skin a yellow-brown color. Wash hands thoroughly after handling. The stain fades within a few days.
-
-Their enrichment needs are simple: fresh substrate, fresh food, and the right conditions. They are fascinating display animals that interact with their environment in a subtle, unhurried way that is genuinely relaxing to observe.`,
-      health: "Substrate quality is the defining factor in millipede health. Poor substrate (wrong moisture level, wrong composition, lack of calcium) leads to failed molts and skeletal deformities. They molt periodically (burrowing deep to do so) and are vulnerable during this time. Never disturb a molting millipede. Common concerns include dehydration, mite infestations (treat with substrate replacement and drying one section of the enclosure), and calcium deficiency. Millipedes can live 5 to 10 years with appropriate care.",
-      checklist: [
-        "20-gallon+ enclosure with ventilation",
-        "4 to 6 inch deep substrate (coconut fiber, organic topsoil, rotting hardwood, leaf litter)",
-        "Cuttlebone or crushed eggshell (always in enclosure)",
-        "Cork bark hides",
-        "Digital thermometer and hygrometer",
-        "Fresh vegetables (sweet potato, cucumber, carrot, leafy greens)",
-        "Rotting hardwood pieces and leaf litter (replenish regularly)",
-        "Spray bottle for humidity management",
-        "Secure ventilated lid",
-        "Wash hands after handling (defensive secretions)",
-      ],
-    },
-    faqs: [
-      { q: "Do millipedes actually have a thousand legs?", a: "No — despite the name (milli = thousand, pede = foot), no millipede species has exactly 1,000 legs. Most common pet species have between 40 and 400 legs. Until 2021 no species with over 750 legs had been documented. Then Eumillipes persephone, discovered 60 meters underground in Australia, was confirmed with 1,306 legs — the first true 'millipede' by the literal definition. Your Giant African Millipede almost certainly has somewhere between 200 and 400 legs." },
-      { q: "Are giant millipedes safe to handle?", a: "Yes — they are one of the most handleable invertebrate pets. They walk slowly and steadily across hands and forearms, rarely make sudden moves, and have no venom or biting mechanism. When threatened, they curl into a tight defensive spiral. Their primary defense is secreting mild benzoquinone compounds from pores along their body segments, which can temporarily stain skin a yellow-brown color and cause mild irritation. Wash hands thoroughly after handling and avoid touching your eyes. The stain fades within a few days." },
-      { q: "What do giant millipedes eat?", a: "They are detritivores — in nature they eat decaying organic matter, and in captivity their primary food is the substrate itself (rotting wood and leaf litter). Supplement with fresh soft vegetables: sweet potato, cucumber, zucchini, carrot, apple slices, and leafy greens. Calcium is essential for their exoskeleton — keep cuttlebone or crushed eggshell in the enclosure at all times. Remove fresh food within 24 to 48 hours to prevent mold. Avoid acidic fruits (citrus, tomatoes) and anything that has been treated with pesticides." },
-      { q: "How long do giant millipedes live?", a: "5 to 10 years with appropriate care, making them one of the longer-lived invertebrate pets. The key to longevity is substrate quality — millipedes continuously burrow through and ingest their substrate, so maintaining proper moisture levels, rotting hardwood content, and consistent calcium supplementation directly determines their health and lifespan. They molt periodically by burrowing deep into the substrate; never disturb a burrowed millipede that hasn't surfaced for several days, as it may be mid-molt." },
-      { q: "How important is calcium for millipedes?", a: "Critical. Millipedes are continuously rebuilding their exoskeleton and require constant dietary calcium. Without adequate calcium, their segments become soft, they fail to molt cleanly, and skeletal deformities develop over successive molts. The simplest solution is to leave a piece of cuttlebone in the enclosure at all times — millipedes will gnaw on it as needed. Crushed eggshell works as well. This single addition prevents the most common long-term health problem in captive millipedes." },
-    ],
-  },
-  {
     id: "emperor-scorpion",
     name: "Emperor Scorpion",
     emoji: "🦂",
     difficulty: "Beginner/Intermediate",
     petType: "Invertebrates",
+    image: "/assets/guides/emperor-scorpion.jpg",
     tagline: "One of the largest scorpions in the world, and one of the least venomous pet scorpions!",
     funFact: "Scorpions fluoresce a brilliant blue-green color under ultraviolet (UV/black) light. Scientists are not entirely sure why, but the chemical responsible is in the hyaline layer of their exoskeleton. Scorpions do this under natural UV from moonlight too.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -224,11 +62,160 @@ If housing multiple individuals, watch carefully for cannibalism. Emperor scorpi
     ],
   },
   {
+    id: "millipede",
+    name: "Giant Millipede",
+    emoji: "🐛",
+    difficulty: "Self-Sufficient",
+    petType: "Invertebrates",
+    image: "/assets/guides/millipede.jpg",
+    tagline: "The gentle detritivore that works as a living composting machine!",
+    funFact: "Despite their name, millipedes do not have 1,000 legs. Most species have 40 to 400 legs. However, a species discovered in 2021 (Eumillipes persephone) was found 60 meters underground in Australia and has a record 1,306 legs, making it the only true millipede.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "20-gallon+ enclosure", low: 40, high: 80 },
+        { item: "Deep substrate (coconut fiber, topsoil, hardwood)", low: 20, high: 40 },
+        { item: "Cork bark hides", low: 10, high: 20 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Fresh vegetables", low: 30, high: 60 },
+        { item: "Substrate replacement", low: 20, high: 40 },
+        { item: "Cuttlebone or crushed eggshell", low: 5, high: 10 },
+      ],
+    },
+    sections: {
+      housing: "A 20-gallon long terrarium (or equivalent) comfortably houses 2 to 3 adult North American giant millipedes (Narceus americanus) or African giant millipedes (Archispirostreptus gigas). Deep substrate (4 to 6 inches minimum) is essential as millipedes spend most of their time burrowing through and consuming it. Use a mixture of coconut fiber, organic topsoil (no fertilizers or pesticides), rotting hardwood (never pine or cedar), and leaf litter. This substrate IS their diet as well as their habitat. Temperatures of 72 to 80 degrees F are suitable for most pet species. Humidity should be high (70 to 80%) with adequate ventilation to prevent mold issues.",
+      diet: "Millipedes are detritivores: they eat decaying organic matter. Their primary diet is the substrate itself (rotting wood and leaf litter). Supplement with fresh vegetables: sweet potato, cucumber, zucchini, carrots, apple slices, and leafy greens. Rotate offerings and remove uneaten fresh food within 24 to 48 hours to prevent mold. Calcium is critical for their exoskeleton: offer cuttlebone pieces or crushed eggshell in the enclosure at all times. Avoid acidic fruits and vegetables (citrus, tomatoes).",
+      enrichment: `Millipedes are nocturnal detritivores — they spend most of their time buried in the substrate, emerging at night to graze on decaying organic matter. Cork bark slabs, flat pieces of rotting hardwood, and varied substrate layers (different textures at different depths) provide natural enrichment for burrowing. Watch them emerge in the evening and methodically traverse the enclosure.
+
+They are one of the most docile invertebrate pets and among the safest for beginners. They will walk slowly and steadily across hands and forearms, rarely making sudden moves. When threatened, they curl into a tight spiral — this is their primary defense mechanism. They may also secrete mild defensive chemicals (benzoquinones) that can temporarily stain skin a yellow-brown color. Wash hands thoroughly after handling. The stain fades within a few days.
+
+Their enrichment needs are simple: fresh substrate, fresh food, and the right conditions. They are fascinating display animals that interact with their environment in a subtle, unhurried way that is genuinely relaxing to observe.`,
+      health: "Substrate quality is the defining factor in millipede health. Poor substrate (wrong moisture level, wrong composition, lack of calcium) leads to failed molts and skeletal deformities. They molt periodically (burrowing deep to do so) and are vulnerable during this time. Never disturb a molting millipede. Common concerns include dehydration, mite infestations (treat with substrate replacement and drying one section of the enclosure), and calcium deficiency. Millipedes can live 5 to 10 years with appropriate care.",
+      checklist: [
+        "20-gallon+ enclosure with ventilation",
+        "4 to 6 inch deep substrate (coconut fiber, organic topsoil, rotting hardwood, leaf litter)",
+        "Cuttlebone or crushed eggshell (always in enclosure)",
+        "Cork bark hides",
+        "Digital thermometer and hygrometer",
+        "Fresh vegetables (sweet potato, cucumber, carrot, leafy greens)",
+        "Rotting hardwood pieces and leaf litter (replenish regularly)",
+        "Spray bottle for humidity management",
+        "Secure ventilated lid",
+        "Wash hands after handling (defensive secretions)",
+      ],
+    },
+    faqs: [
+      { q: "Do millipedes actually have a thousand legs?", a: "No — despite the name (milli = thousand, pede = foot), no millipede species has exactly 1,000 legs. Most common pet species have between 40 and 400 legs. Until 2021 no species with over 750 legs had been documented. Then Eumillipes persephone, discovered 60 meters underground in Australia, was confirmed with 1,306 legs — the first true 'millipede' by the literal definition. Your Giant African Millipede almost certainly has somewhere between 200 and 400 legs." },
+      { q: "Are giant millipedes safe to handle?", a: "Yes — they are one of the most handleable invertebrate pets. They walk slowly and steadily across hands and forearms, rarely make sudden moves, and have no venom or biting mechanism. When threatened, they curl into a tight defensive spiral. Their primary defense is secreting mild benzoquinone compounds from pores along their body segments, which can temporarily stain skin a yellow-brown color and cause mild irritation. Wash hands thoroughly after handling and avoid touching your eyes. The stain fades within a few days." },
+      { q: "What do giant millipedes eat?", a: "They are detritivores — in nature they eat decaying organic matter, and in captivity their primary food is the substrate itself (rotting wood and leaf litter). Supplement with fresh soft vegetables: sweet potato, cucumber, zucchini, carrot, apple slices, and leafy greens. Calcium is essential for their exoskeleton — keep cuttlebone or crushed eggshell in the enclosure at all times. Remove fresh food within 24 to 48 hours to prevent mold. Avoid acidic fruits (citrus, tomatoes) and anything that has been treated with pesticides." },
+      { q: "How long do giant millipedes live?", a: "5 to 10 years with appropriate care, making them one of the longer-lived invertebrate pets. The key to longevity is substrate quality — millipedes continuously burrow through and ingest their substrate, so maintaining proper moisture levels, rotting hardwood content, and consistent calcium supplementation directly determines their health and lifespan. They molt periodically by burrowing deep into the substrate; never disturb a burrowed millipede that hasn't surfaced for several days, as it may be mid-molt." },
+      { q: "How important is calcium for millipedes?", a: "Critical. Millipedes are continuously rebuilding their exoskeleton and require constant dietary calcium. Without adequate calcium, their segments become soft, they fail to molt cleanly, and skeletal deformities develop over successive molts. The simplest solution is to leave a piece of cuttlebone in the enclosure at all times — millipedes will gnaw on it as needed. Crushed eggshell works as well. This single addition prevents the most common long-term health problem in captive millipedes." },
+    ],
+  },
+  {
+    id: "hermit-crab",
+    name: "Hermit Crab",
+    emoji: "🦀",
+    difficulty: "Intermediate",
+    petType: "Invertebrates",
+    image: "/assets/guides/hermit-crab.jpg",
+    tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
+    funFact: "Hermit crabs don't grow their own shells — they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Priced for a small group (2-3 crabs), since solo housing isn't appropriate.
+    costs: {
+      setup: [
+        { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
+        { item: "Hygrometer and thermometer", low: 15, high: 25 },
+        { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
+        { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
+        { item: "Climbing branches and cork bark", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Hermit crab food + varied fresh food", low: 30, high: 60 },
+        { item: "Substrate replacement", low: 20, high: 40 },
+        { item: "Marine salt mix (saltwater pool)", low: 10, high: 20 },
+      ],
+    },
+    sections: {
+      housing: "A 10-gallon tank is an absolute floor, but 20 gallons or more is far more appropriate — and necessary for a group, since hermit crabs are social and should be kept with at least 2 to 3 others, not alone. This is one of the most under-communicated requirements in the pet trade. Humidity must stay at 70 to 80%, measured with a hygrometer rather than guessed, since hermit crabs breathe through modified gills that need consistently moist air; a secure lid, substrate misting, and a mostly covered tank all help maintain this. Deep substrate — a sand and coconut fiber mix at least three times the crab's body length — is essential, since crabs burrow completely underground to molt, sometimes for weeks at a time. Provide both a freshwater pool and a marine saltwater pool, each deep enough to submerge in but with an easy exit ramp to prevent drowning, using only dechlorinated water. Keep temperatures at 75 to 85 degrees F, and always have 2 to 3 spare empty shells per crab, slightly larger than their current one, available so they can upgrade as they grow.",
+      diet: "Hermit crabs are omnivorous scavengers. A commercial hermit crab food can form a base, but a genuinely varied diet of fresh fruit, vegetables, unseasoned meat, and calcium sources like cuttlebone or crushed eggshell makes a real difference in health and molt success. Avoid pre-packaged shells or substrate treated with paint, dye, or chemicals, and never offer any food that has been near soap, pesticides, or copper-based products — all are toxic to hermit crabs. Feed daily in a shallow dish and remove uneaten fresh food within a day to prevent mold in the humid enclosure.",
+      enrichment: "Hermit crabs are highly social, and keeping a single crab alone is a well-documented contributor to poor health and a shortened lifespan — groups of several allow the natural social interaction this species needs. Climbing branches, cork bark, and fishnet or plastic mesh support their active, exploratory nature. Always keep several appropriately sized spare shells available so crabs can choose and switch between them, which is itself a form of enrichment as much as a physical necessity. A crab that suddenly burrows and disappears for weeks is very likely beginning to molt, not sick or dead — resist the urge to dig them up to check.",
+      health: "Incorrect humidity is the single leading cause of death in pet hermit crabs — too dry an enclosure causes their gills to dry out and the crab to slowly suffocate. Molting is a vulnerable, weeks-long underground process, and a buried, motionless crab should never be dug up or disturbed. Shell shortage stress occurs when no appropriately sized replacement shells are available, forcing crabs to fight over shells or remain in an outgrown one that restricts their growth. Isolation stress from being kept alone is a well-documented contributor to premature death. Avoid painted, glued, or otherwise 'decorative' shells sometimes sold in stores, which can be toxic or physically restrictive.",
+      checklist: [
+        "10–20+ gallon tank for a group of 2–3+ crabs",
+        "Secure lid to retain humidity",
+        "Hygrometer and thermometer",
+        "70–80% humidity, 75–85°F temperature",
+        "Deep sand/coconut fiber substrate (3x crab body length)",
+        "Freshwater and marine saltwater pools with exit ramps (dechlorinated)",
+        "2–3 extra appropriately sized shells per crab",
+        "Climbing branches and cork bark",
+        "Calcium sources (cuttlebone, crushed eggshell)",
+        "Varied fresh food; avoid painted shells and chemical-treated decor",
+      ],
+    },
+    faqs: [
+      { q: "Can hermit crabs live alone?", a: "They shouldn't, long term. Hermit crabs are social animals, and isolation is a well-documented contributor to stress and shortened lifespan. Keep at least 2 to 3 together, and preferably more." },
+      { q: "Why is my hermit crab buried and not moving?", a: "Almost always molting — a normal process that can take several weeks underground. Never dig up a buried crab to check on it; disturbing a molting hermit crab can be fatal." },
+      { q: "How long do hermit crabs live?", a: "In the wild, land hermit crabs can live 20 to 30 years or more. Sadly, most pet hermit crabs die within their first year due to incorrect humidity and being kept alone. With proper humidity, a social group, and appropriately sized spare shells, captive lifespans of a decade or more are genuinely achievable." },
+      { q: "Do hermit crabs need salt water?", a: "Yes, along with fresh water — both pools should be available at all times, deep enough to submerge in but with an easy exit ramp, using only dechlorinated water for each." },
+      { q: "Why does my hermit crab need extra shells?", a: "As they grow, hermit crabs need to move into progressively larger shells. Without 2 to 3 appropriately sized spares always available, they can become stressed, fight with tankmates over shells, or be forced to stay in a restrictive shell that stunts their growth." },
+    ],
+  },
+  {
+    id: "jumping-spider",
+    name: "Jumping Spider",
+    emoji: "🕷️",
+    difficulty: "Beginner",
+    petType: "Invertebrates",
+    image: "/assets/guides/jumping-spider.jpg",
+    tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
+    funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing — hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
+        { item: "Climbing branches and cork bark", low: 10, high: 20 },
+        { item: "Feeding tongs", low: 8, high: 15 },
+      ],
+      annual: [
+        { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
+      ],
+    },
+    sections: {
+      housing: "A small enclosure is not just acceptable but preferred — something around 5x5x8 inches works well for one adult regal jumping spider (Phidippus regius), the most common pet species. Taller than wide is ideal since jumping spiders climb constantly. Ventilation is essential, via a mesh top or side vents, since stagnant air causes health problems. Furnish with climbing branches, cork bark, and artificial plants, which jumping spiders use both for exploring and for building silk hammock retreats where they sleep and molt. Light misting every day or two maintains humidity and gives them water droplets to drink. Room temperature of 70 to 80 degrees F is fine without any supplemental heating in most homes.",
+      diet: "Jumping spiders eat live prey exclusively. Appropriately sized crickets, flightless fruit flies (ideal for juveniles), and small roaches work well, sized no larger than the spider's body. Offer prey 2 to 3 times a week and remove anything uneaten after a day. Unlike web-building spiders, jumping spiders are active visual hunters that stalk and pounce on prey rather than waiting passively — watching this hunting behavior is one of the most rewarding parts of keeping the species.",
+      enrichment: "Jumping spiders are unusually curious and visually engaged with their surroundings for an invertebrate, often turning to track movement and appearing to observe their keeper. Climbing branches and varied décor support their naturally exploratory behavior. Some keepers offer brief, supervised free-roam time in a small, secure, escape-proof space. Handling should stay minimal — they're delicate and can jump or fall — though many individuals are calm enough to gently walk onto an open hand for a short supervised moment.",
+      health: "Molting is the most vulnerable period in a jumping spider's life, just as it is for tarantulas — never disturb a molting spider, and avoid offering live prey right before or after a molt. Dehydration is preventable with regular light misting and a small water source. A short natural lifespan of only 1 to 2 years is completely normal for this species and not a sign of poor care. Mite issues are uncommon but possible in an unclean enclosure, so remove uneaten prey and old webbing periodically.",
+      checklist: [
+        "Small, tall enclosure (5x5x8 inches or similar)",
+        "Ventilated, secure lid",
+        "Climbing branches and cork bark",
+        "Light misting for humidity and drinking water",
+        "Small live prey (crickets, flightless fruit flies)",
+        "Room temperature 70–80°F (no heating needed)",
+        "Feeding tongs",
+        "Patience — they're an observation pet, not a handling pet",
+      ],
+    },
+    faqs: [
+      { q: "Are jumping spiders dangerous?", a: "No. Jumping spiders have very mild venom meant for tiny insect prey, are extremely reluctant to bite, and are essentially harmless to humans. A bite, in the rare event one happens, is typically compared to a mosquito bite at most." },
+      { q: "How long do jumping spiders live?", a: "1 to 2 years is typical for most pet species, sometimes slightly longer for well-cared-for females. This short natural lifespan is completely normal for the species and isn't a sign that something went wrong." },
+      { q: "Can you handle a jumping spider?", a: "Gently and briefly. They aren't a cuddly pet and can jump or fall unexpectedly, but many individuals are calm enough to walk onto an open hand for a short, supervised moment. Regular or prolonged handling isn't recommended." },
+      { q: "What do jumping spiders eat?", a: "Live prey only — appropriately sized crickets, flightless fruit flies, and small roaches, offered 2 to 3 times a week and sized no larger than the spider's body." },
+      { q: "Do jumping spiders need a big enclosure?", a: "No — quite the opposite. Jumping spiders generally do better in smaller enclosures, where locating prey is easier and the space feels less overwhelming. Height matters more than footprint, since they spend most of their time climbing." },
+    ],
+  },
+  {
     id: "hissing-cockroach",
     name: "Madagascar Hissing Cockroach",
     emoji: "🪲",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
+    image: "/assets/guides/hissing-cockroach.jpg",
     tagline: "Calm, armored, surprisingly clean — and yes, it hisses!",
     funFact: "Madagascar hissing cockroaches are one of the few insect species where the father plays an active role in rearing offspring. Males guard and protect the female and young after birth, and juveniles stay with the family group for weeks.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -288,11 +275,71 @@ Escaped cockroaches are the most serious concern for many keepers: check the lid
     ],
   },
   {
+    id: "praying-mantis",
+    name: "Praying Mantis",
+    emoji: "🦗",
+    difficulty: "Self-Sufficient",
+    petType: "Invertebrates",
+    image: "/assets/guides/praying-mantis.jpg",
+    tagline: "Nature's most impressive ambush predator, in a palm-sized package!",
+    funFact: "Praying mantises are the only insects known to have a single ear, located in the center of their chest between their hind legs. They use it to detect the ultrasonic calls of hunting bats, letting them dodge mid-flight. They are also the only insect that can turn its head 180 degrees.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "Tall vertical mesh or acrylic enclosure", low: 15, high: 35 },
+        { item: "Vertical branch or stick for molting", low: 5, high: 10 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Fine misting bottle", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Fruit flies and live feeder insects", low: 30, high: 60 },
+      ],
+    },
+    sections: {
+      housing: "Most pet mantis species (Ghost Mantis, Chinese Mantis, African Flower Mantis) need a small vertical enclosure. A tall deli cup (for nymphs) to a 12x12x18 inch mesh or acrylic enclosure (for adults) is appropriate. The rule of thumb is 3 times the mantis length in height and 2 times in width. Cross-ventilation is critical. Mantises molt hanging from the top of the enclosure so adequate height is non-negotiable. Provide a stick or branch angled from floor to ceiling for perching and molting. Temperature ranges from 72 to 95 degrees F depending on species. Most common pet species do well at 75 to 85 degrees F.",
+      diet: `Mantises eat live prey exclusively. Match the prey size to the mantis: fruit flies (Drosophila melanogaster, the small species) for early nymph stages, progressing to bottle flies, small crickets, and small dubia roaches as the mantis grows. Adult mantises can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width.
+
+Feed every 2 to 3 days. Mantises will fast in the days before molting — do not offer prey during this time and remove any uneaten insects promptly. After molting, wait until the mantis's legs and mouthparts are fully hardened (several hours to a day) before offering food. Adult females require more frequent feeding than males and have significantly longer lifespans.
+
+Prey variety is beneficial. Waxworms are high in fat and should be treats rather than staples. Bottle flies (blue or green bottle flies in pupae form, which you hatch at home) are one of the best feeders for many mantis species — appropriately sized, easy to culture, and eagerly taken.`,
+      enrichment: `Mantises are highly visual, active hunters that track and stalk prey with their distinctive head-turning behavior. Watching a mantis hunt — the slow, swaying approach followed by a lightning-fast strike — is one of the most captivating behaviors in the invertebrate hobby. The prey of the day (and the hunting sequence) is the primary enrichment.
+
+Provide varied perching structures at different heights: branches, cork bark, artificial plants, and vertical surfaces. Mantises naturally vary their position throughout the day. Some docile species (Orchid Mantis, African Flower Mantis) can be gently handled — allow them to walk voluntarily from hand to hand. They may bite if startled or if fingers smell like prey.
+
+Their "alien" compound eyes, remarkable camouflage, and astonishing hunting behaviors make mantises among the most visually engaging invertebrate pets. They are genuinely fascinating display animals.`,
+      health: `Failed molts are the primary cause of mantis death in captivity. The mantis hangs upside down from the enclosure top to molt, pulling free of its old exoskeleton. If the enclosure is too short, too humid, too dry, or if the mantis is disturbed during this process, the molt fails and the mantis dies or is permanently injured. Always ensure adequate height (3 times the mantis length minimum) and an appropriate perch from which to hang.
+
+Maintain appropriate humidity for the species by misting one side of the enclosure once daily. Dehydration causes failed molts. Overcrowding and cannibalism are serious risks — always house mantises individually, one per enclosure. Even a mantis kept alone for weeks has been known to cannibalize a newly housed enclosure mate.
+
+Most pet mantis species have lifespans of 12 to 18 months. The hobby cycle for mantises is acquisition as a nymph, raising through multiple molts to adulthood, and a relatively short adult phase. Females live significantly longer than males.`,
+      checklist: [
+        "Tall vertical mesh or acrylic enclosure (3x height rule)",
+        "Vertical branch or stick for molting",
+        "Species-appropriate temperature range",
+        "Fruit flies (for nymphs) and appropriate live insects for adults",
+        "Feeding tongs or forceps",
+        "Fine misting bottle (daily humidity maintenance)",
+        "Digital thermometer and hygrometer",
+        "House individually (cannibalistic species)",
+        "Never disturb during molt",
+        "Secure ventilated lid",
+      ],
+    },
+    faqs: [
+      { q: "How long do praying mantises live?", a: "Most pet species live 12 to 18 months total. Females live significantly longer than males — males often die shortly after their final molt to adulthood, while females continue living and laying eggs for months. The typical keeper experience is acquiring a nymph, raising it through 6 to 9 molts over several months, enjoying the adult phase, and then the cycle ends. If you want continuous mantis keeping, plan to culture your own oothecae (egg cases) or establish a reliable supplier for juveniles." },
+      { q: "Can praying mantises be kept together?", a: "Never. Praying mantises are solitary, highly territorial, and cannibalistic with any insect they can catch — including a sibling they have lived next to for weeks. Even a mantis kept in complete isolation for months will immediately attempt to eat a newly introduced individual. Always house one per enclosure, no exceptions. The only intended exception is brief supervised mating, and even then the female frequently eats the male during or after the process." },
+      { q: "What do praying mantises eat?", a: "Live prey exclusively, sized to the mantis. Early nymphs eat fruit flies (Drosophila melanogaster). As they grow, progress to bottle flies, small crickets, and appropriately sized dubia roaches. Adults can handle larger crickets, mealworms, waxworms, and bottle flies. Prey should never exceed the space between the mantis's eyes in width. Feed every 2 to 3 days and always remove uneaten prey promptly — stress from live prey in the enclosure can interfere with molting." },
+      { q: "What causes failed molts in mantises?", a: "The top three causes are: enclosure too short (the mantis needs 3x its body length in height to hang and pull free of the old exoskeleton), humidity too low (dry conditions make the old skin brittle and hard to exit), and being disturbed during the molt. Never handle, disturb, or offer food when a mantis is hanging still from the cage top — this is pre-molt positioning. A mantis that gets stuck in a molt almost always dies. Prevention is the only viable approach." },
+      { q: "Can praying mantises be handled?", a: "Many docile species tolerate gentle handling well — Ghost Mantis, African Flower Mantis, and Chinese Mantis are commonly reported as calm on the hand. They may bite if startled or if fingers smell like prey (from handling insects), but the bite of most pet mantises is minor — more surprise than damage. Always let the mantis walk voluntarily onto your hand rather than grabbing it. Some individuals are more defensive than others; read the individual animal's posture before attempting contact." },
+    ],
+  },
+  {
     id: "stick-insect",
     name: "Stick Insect",
     emoji: "🌿",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",
+    image: "/assets/guides/stick-insect.jpg",
     tagline: "The master of disguise that is literally a twig with legs!",
     funFact: "Stick insects are parthenogenetic: females can reproduce without males and lay fertile eggs throughout their lives. The eggs of some species can remain viable in soil for years, hatching after the mother is long dead, mimicking plant seeds so perfectly that ants carry them underground.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -347,96 +394,57 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
     ],
   },
   {
-    id: "jumping-spider",
-    name: "Jumping Spider",
+    id: "tarantula",
+    name: "Tarantula",
     emoji: "🕷️",
     difficulty: "Beginner",
     petType: "Invertebrates",
-    tagline: "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!",
-    funFact: "Jumping spiders have some of the best vision of any arthropod, with four pairs of eyes giving them nearly 360-degree awareness and sharp enough focus to visually track and judge the distance of prey before pouncing — hence the name. Many keepers report their jumping spider appearing to watch and turn to follow movement outside the enclosure, genuinely interactive behavior that's unusual for an invertebrate.",
+    image: "/assets/guides/tarantula.jpg",
+    tagline: "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!",
+    funFact: "Tarantulas can live extraordinarily long lives. Females of some species (like the Mexican Red Knee) can live 25 to 30 years in captivity, while males typically live only 5 to 7 years. A female tarantula may outlive your dog.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark", low: 10, high: 20 },
+        { item: "Species-appropriate enclosure", low: 30, high: 70 },
+        { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
+        { item: "Cork bark hide", low: 10, high: 20 },
+        { item: "Small water dish", low: 5, high: 10 },
         { item: "Feeding tongs", low: 8, high: 15 },
+        { item: "Digital thermometer", low: 10, high: 15 },
       ],
       annual: [
-        { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
+        { item: "Live feeder insects", low: 40, high: 80 },
+        { item: "Substrate replacement (infrequent)", low: 15, high: 25 },
       ],
     },
     sections: {
-      housing: "A small enclosure is not just acceptable but preferred — something around 5x5x8 inches works well for one adult regal jumping spider (Phidippus regius), the most common pet species. Taller than wide is ideal since jumping spiders climb constantly. Ventilation is essential, via a mesh top or side vents, since stagnant air causes health problems. Furnish with climbing branches, cork bark, and artificial plants, which jumping spiders use both for exploring and for building silk hammock retreats where they sleep and molt. Light misting every day or two maintains humidity and gives them water droplets to drink. Room temperature of 70 to 80 degrees F is fine without any supplemental heating in most homes.",
-      diet: "Jumping spiders eat live prey exclusively. Appropriately sized crickets, flightless fruit flies (ideal for juveniles), and small roaches work well, sized no larger than the spider's body. Offer prey 2 to 3 times a week and remove anything uneaten after a day. Unlike web-building spiders, jumping spiders are active visual hunters that stalk and pounce on prey rather than waiting passively — watching this hunting behavior is one of the most rewarding parts of keeping the species.",
-      enrichment: "Jumping spiders are unusually curious and visually engaged with their surroundings for an invertebrate, often turning to track movement and appearing to observe their keeper. Climbing branches and varied décor support their naturally exploratory behavior. Some keepers offer brief, supervised free-roam time in a small, secure, escape-proof space. Handling should stay minimal — they're delicate and can jump or fall — though many individuals are calm enough to gently walk onto an open hand for a short supervised moment.",
-      health: "Molting is the most vulnerable period in a jumping spider's life, just as it is for tarantulas — never disturb a molting spider, and avoid offering live prey right before or after a molt. Dehydration is preventable with regular light misting and a small water source. A short natural lifespan of only 1 to 2 years is completely normal for this species and not a sign of poor care. Mite issues are uncommon but possible in an unclean enclosure, so remove uneaten prey and old webbing periodically.",
+      housing: "Tarantula housing is highly species-dependent. Burrowing species (like Grammostola pulchripes, the Chilean Rose Hair) need enclosures with 3 to 4 times their leg span in floor space and deep substrate (4 to 6 inches of a coconut fiber and peat mix). Arboreal species (like Avicularia avicularia, the Pink-Toe) need tall enclosures (12x12x18 inches minimum) with cross-ventilation, cork bark, and artificial plants for climbing and anchoring their tube web. All enclosures need a secure, locking lid. A small, shallow water dish (bottle cap size for spiderlings, bottlecap to small dish for adults) must always be available. Overflow the dish occasionally for terrestrial species to create a moisture gradient. Temperatures for most pet tarantulas should stay between 68 and 82 degrees F. Most species do not need supplemental heat in a typical home.",
+      diet: `Tarantulas eat live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard feeder insects for most species. Prey should be no larger than the tarantula's abdomen. Larger prey items cause unnecessary stress and potential injury.
+
+Feed juveniles every 4 to 7 days, adults every 10 to 14 days. Always remove uneaten prey within 24 hours. Live crickets are particularly dangerous near a molting or freshly molted tarantula — they will attack the vulnerable spider, causing severe injury or death. Pre-kill crickets before offering if unsure about molt timing.
+
+During premolt (recognizable by a darkened, fat abdomen, and refusal of food that can last weeks or even months), do not attempt to feed. After molting, wait 7 to 14 days for the fangs to fully harden before offering food again. A freshly molted tarantula with soft fangs cannot eat safely and can be injured by prey. Provide a water overflow during premolt to ensure adequate hydration for the molt process.`,
+      enrichment: "Tarantulas are observation animals, not handling animals. Many species are defensive or fast, and stress from handling can cause them to kick urticating (itching) hairs from their abdomen. The Goliath Bird-Eater can produce a loud hissing sound by rubbing its legs together. Design the enclosure to display natural behaviors: burrowing species will excavate elaborate tunnels, arboreal species will build impressive silk tube webs. This is the enrichment. A cork bark hide or cork tube allows them to feel secure.",
+      health: "Molting is the single most important and vulnerable event in a tarantula's life. Never disturb a molting spider. Do not feed for 1 to 2 weeks before or after a molt. Common health concerns include dehydration (shriveled abdomen, keep water available and overflow occasionally), mites (tiny white dots moving in enclosure, treat with a full substrate change), and DKS (dyskinetic syndrome, a poorly understood neurological issue). Failed molts can be fatal if the spider becomes stuck. Maintaining appropriate humidity for the species during premolt reduces this risk.",
       checklist: [
-        "Small, tall enclosure (5x5x8 inches or similar)",
-        "Ventilated, secure lid",
-        "Climbing branches and cork bark",
-        "Light misting for humidity and drinking water",
-        "Small live prey (crickets, flightless fruit flies)",
-        "Room temperature 70–80°F (no heating needed)",
-        "Feeding tongs",
-        "Patience — they're an observation pet, not a handling pet",
+        "Species-appropriate enclosure (terrestrial or arboreal)",
+        "Coconut fiber and peat substrate (4 to 6 inch depth for burrowers)",
+        "Secure locking lid",
+        "Cork bark hide or tube",
+        "Small shallow water dish (always available)",
+        "Live feeder insects (crickets, dubia roaches)",
+        "Feeding tongs (never hand-feed)",
+        "Digital thermometer",
+        "Spray bottle for humidity management",
+        "Escape plan: know your species' defense behaviors",
       ],
     },
     faqs: [
-      { q: "Are jumping spiders dangerous?", a: "No. Jumping spiders have very mild venom meant for tiny insect prey, are extremely reluctant to bite, and are essentially harmless to humans. A bite, in the rare event one happens, is typically compared to a mosquito bite at most." },
-      { q: "How long do jumping spiders live?", a: "1 to 2 years is typical for most pet species, sometimes slightly longer for well-cared-for females. This short natural lifespan is completely normal for the species and isn't a sign that something went wrong." },
-      { q: "Can you handle a jumping spider?", a: "Gently and briefly. They aren't a cuddly pet and can jump or fall unexpectedly, but many individuals are calm enough to walk onto an open hand for a short, supervised moment. Regular or prolonged handling isn't recommended." },
-      { q: "What do jumping spiders eat?", a: "Live prey only — appropriately sized crickets, flightless fruit flies, and small roaches, offered 2 to 3 times a week and sized no larger than the spider's body." },
-      { q: "Do jumping spiders need a big enclosure?", a: "No — quite the opposite. Jumping spiders generally do better in smaller enclosures, where locating prey is easier and the space feels less overwhelming. Height matters more than footprint, since they spend most of their time climbing." },
-    ],
-  },
-  {
-    id: "hermit-crab",
-    name: "Hermit Crab",
-    emoji: "🦀",
-    difficulty: "Intermediate",
-    petType: "Invertebrates",
-    tagline: "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!",
-    funFact: "Hermit crabs don't grow their own shells — they spend their entire lives searching for, trying on, and trading empty snail shells as they grow, and will even form an orderly 'vacancy chain,' lining up by size to swap shells in turn when a larger one becomes available. In the wild, land hermit crabs can live 20 to 30+ years, though most pet hermit crabs sold in beach-town gift shops die within their first year from incorrect humidity and being kept alone.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    // Priced for a small group (2-3 crabs), since solo housing isn't appropriate.
-    costs: {
-      setup: [
-        { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
-        { item: "Hygrometer and thermometer", low: 15, high: 25 },
-        { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
-        { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Hermit crab food + varied fresh food", low: 30, high: 60 },
-        { item: "Substrate replacement", low: 20, high: 40 },
-        { item: "Marine salt mix (saltwater pool)", low: 10, high: 20 },
-      ],
-    },
-    sections: {
-      housing: "A 10-gallon tank is an absolute floor, but 20 gallons or more is far more appropriate — and necessary for a group, since hermit crabs are social and should be kept with at least 2 to 3 others, not alone. This is one of the most under-communicated requirements in the pet trade. Humidity must stay at 70 to 80%, measured with a hygrometer rather than guessed, since hermit crabs breathe through modified gills that need consistently moist air; a secure lid, substrate misting, and a mostly covered tank all help maintain this. Deep substrate — a sand and coconut fiber mix at least three times the crab's body length — is essential, since crabs burrow completely underground to molt, sometimes for weeks at a time. Provide both a freshwater pool and a marine saltwater pool, each deep enough to submerge in but with an easy exit ramp to prevent drowning, using only dechlorinated water. Keep temperatures at 75 to 85 degrees F, and always have 2 to 3 spare empty shells per crab, slightly larger than their current one, available so they can upgrade as they grow.",
-      diet: "Hermit crabs are omnivorous scavengers. A commercial hermit crab food can form a base, but a genuinely varied diet of fresh fruit, vegetables, unseasoned meat, and calcium sources like cuttlebone or crushed eggshell makes a real difference in health and molt success. Avoid pre-packaged shells or substrate treated with paint, dye, or chemicals, and never offer any food that has been near soap, pesticides, or copper-based products — all are toxic to hermit crabs. Feed daily in a shallow dish and remove uneaten fresh food within a day to prevent mold in the humid enclosure.",
-      enrichment: "Hermit crabs are highly social, and keeping a single crab alone is a well-documented contributor to poor health and a shortened lifespan — groups of several allow the natural social interaction this species needs. Climbing branches, cork bark, and fishnet or plastic mesh support their active, exploratory nature. Always keep several appropriately sized spare shells available so crabs can choose and switch between them, which is itself a form of enrichment as much as a physical necessity. A crab that suddenly burrows and disappears for weeks is very likely beginning to molt, not sick or dead — resist the urge to dig them up to check.",
-      health: "Incorrect humidity is the single leading cause of death in pet hermit crabs — too dry an enclosure causes their gills to dry out and the crab to slowly suffocate. Molting is a vulnerable, weeks-long underground process, and a buried, motionless crab should never be dug up or disturbed. Shell shortage stress occurs when no appropriately sized replacement shells are available, forcing crabs to fight over shells or remain in an outgrown one that restricts their growth. Isolation stress from being kept alone is a well-documented contributor to premature death. Avoid painted, glued, or otherwise 'decorative' shells sometimes sold in stores, which can be toxic or physically restrictive.",
-      checklist: [
-        "10–20+ gallon tank for a group of 2–3+ crabs",
-        "Secure lid to retain humidity",
-        "Hygrometer and thermometer",
-        "70–80% humidity, 75–85°F temperature",
-        "Deep sand/coconut fiber substrate (3x crab body length)",
-        "Freshwater and marine saltwater pools with exit ramps (dechlorinated)",
-        "2–3 extra appropriately sized shells per crab",
-        "Climbing branches and cork bark",
-        "Calcium sources (cuttlebone, crushed eggshell)",
-        "Varied fresh food; avoid painted shells and chemical-treated decor",
-      ],
-    },
-    faqs: [
-      { q: "Can hermit crabs live alone?", a: "They shouldn't, long term. Hermit crabs are social animals, and isolation is a well-documented contributor to stress and shortened lifespan. Keep at least 2 to 3 together, and preferably more." },
-      { q: "Why is my hermit crab buried and not moving?", a: "Almost always molting — a normal process that can take several weeks underground. Never dig up a buried crab to check on it; disturbing a molting hermit crab can be fatal." },
-      { q: "How long do hermit crabs live?", a: "In the wild, land hermit crabs can live 20 to 30 years or more. Sadly, most pet hermit crabs die within their first year due to incorrect humidity and being kept alone. With proper humidity, a social group, and appropriately sized spare shells, captive lifespans of a decade or more are genuinely achievable." },
-      { q: "Do hermit crabs need salt water?", a: "Yes, along with fresh water — both pools should be available at all times, deep enough to submerge in but with an easy exit ramp, using only dechlorinated water for each." },
-      { q: "Why does my hermit crab need extra shells?", a: "As they grow, hermit crabs need to move into progressively larger shells. Without 2 to 3 appropriately sized spares always available, they can become stressed, fight with tankmates over shells, or be forced to stay in a restrictive shell that stunts their growth." },
+      { q: "Are tarantulas venomous and dangerous?", a: "Yes, all tarantulas have venom used to subdue prey — but for healthy adults the bite of common pet species is medically comparable to a bee sting: painful, temporarily swollen, and rarely requiring more than basic first aid. New World species (most common in the pet trade: Brachypelma, Grammostola, Chromatopelma) have mild venom but kick urticating hairs from their abdomen as their primary defense. These hairs cause intense itching and can cause serious eye damage — never rub your eyes after handling. Old World species (Poecilotheria, Pterinochilus) have more potent venom and should not be handled at all." },
+      { q: "Can I handle my tarantula?", a: "It depends entirely on the species. Docile New World species like the Chilean Rose Hair (Grammostola rosea) or Brachypelma hamorii tolerate calm, gentle handling. Many Old World species and all Poecilotheria (ornamental tarantulas) are fast, defensive, and should be considered display-only animals. The risk of handling is less about venom and more about falls — a dropped tarantula hitting hard flooring will rupture its abdomen and die instantly. Always sit on the floor while handling." },
+      { q: "How long do tarantulas live?", a: "Dramatically different by sex. Females of many popular species live 20 to 30 years in captivity — some documented individuals of Grammostola pulchripes (Chaco Golden Knee) have exceeded 30 years. Males of the same species may live only 3 to 7 years, and often die within months of reaching sexual maturity. If longevity matters to you, acquire a confirmed female juvenile. Females from reputable breeders may cost more but represent the long-term experience of the hobby." },
+      { q: "What do tarantulas eat?", a: "Live prey exclusively. Appropriately sized crickets, dubia roaches, mealworms, and superworms are standard. Prey size should be no larger than the tarantula's abdomen. Always remove uneaten prey within 24 hours — live insects left overnight will attack a molting or freshly molted tarantula, causing severe injury or death. Never feed during premolt (when the tarantula refuses food and its abdomen appears dark and full) and wait 7 to 14 days after a molt before offering prey again." },
+      { q: "What is molting and how do I prepare for it?", a: "Molting is how tarantulas grow — they shed their entire exoskeleton, including the lining of their fangs, stomach, and book lungs. It is the most vulnerable event in a tarantula's life. Signs of premolt: refusing food for weeks or months, a fat darkened abdomen, hiding more than usual. During molt, the tarantula lies on its back and slowly works free of the old exoskeleton — this can take 15 minutes to several hours. Never disturb this process. Never attempt to help a stuck molt without expert guidance. Remove all prey insects and ensure a small water source is available." },
     ],
   },
 ];

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ChevronRight, Info } from 'lucide-react';
+import { ChevronRight, Info, Search } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
@@ -31,17 +31,17 @@ const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles &
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
 const subtypes = {
-  Geckos: ['Crested Gecko', 'Leopard Gecko', 'Gargoyle Gecko', 'Mourning Gecko', 'Tokay Gecko', 'African Fat-Tailed Gecko', 'Leaf-Tailed Gecko'],
-  Lizards: ['Bearded Dragon', 'Blue Tongue Skink', "Jackson's Chameleon", 'Veiled Chameleon', 'Green Anole', 'Ackie Monitor', 'Savannah Monitor', 'Uromastyx', 'Argentine Black and White Tegu'],
-  Snakes: ['Ball Python', 'Corn Snake', 'Hognose Snake', 'Boa Constrictor', 'California Kingsnake', 'Milk Snake'],
-  'Turtles & Tortoises': ['Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise', 'Box Turtle'],
-  'Small Mammals': ['Rabbit', 'Hedgehog', 'Guinea Pig', 'Chinchilla', 'Ferret', 'Sugar Glider'],
-  Birds: ['Budgie', 'Cockatiel', 'Green Cheek Conure', 'Lovebird', 'African Grey Parrot', 'Canary', 'Cockatoo'],
+  Geckos: ['African Fat-Tailed Gecko', 'Crested Gecko', 'Gargoyle Gecko', 'Leaf-Tailed Gecko', 'Leopard Gecko', 'Mourning Gecko', 'Tokay Gecko'],
+  Lizards: ['Ackie Monitor', 'Argentine Black and White Tegu', 'Bearded Dragon', 'Blue Tongue Skink', 'Green Anole', "Jackson's Chameleon", 'Savannah Monitor', 'Uromastyx', 'Veiled Chameleon'],
+  Snakes: ['Ball Python', 'Boa Constrictor', 'California Kingsnake', 'Corn Snake', 'Hognose Snake', 'Milk Snake'],
+  'Turtles & Tortoises': ['Box Turtle', 'Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise'],
+  'Small Mammals': ['Chinchilla', 'Ferret', 'Guinea Pig', 'Hedgehog', 'Rabbit', 'Sugar Glider'],
+  Birds: ['African Grey Parrot', 'Budgie', 'Canary', 'Cockatiel', 'Cockatoo', 'Green Cheek Conure', 'Lovebird'],
   Dogs: ['Labrador Retriever', 'Golden Retriever', 'German Shepherd', 'French Bulldog', 'Border Collie', 'Siberian Husky'],
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
-  Invertebrates: ['Tarantula', 'Praying Mantis', 'Giant Millipede', 'Emperor Scorpion', 'Madagascar Hissing Cockroach', 'Stick Insect', 'Jumping Spider', 'Hermit Crab'],
-  Amphibians: ["White's Tree Frog", 'Pacman Frog', 'Fire-Bellied Toad', 'Axolotl', 'Tiger Salamander'],
-  Fish: ['Betta Fish', 'Goldfish', 'Koi', 'Guppy', 'Angelfish', 'Corydoras Catfish', 'Neon Tetra', 'Oscar'],
+  Invertebrates: ['Emperor Scorpion', 'Giant Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
+  Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
 };
 
 const resolveFilter = (slug) => {
@@ -60,6 +60,7 @@ export default function Guides() {
   const [dogSize, setDogSize] = useState('All Sizes');
   const [activeSubtype, setActiveSubtype] = useState(null);
   const [isLegendOpen, setIsLegendOpen] = useState(false);
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     setActiveFilter(resolveFilter(category));
@@ -74,20 +75,25 @@ export default function Guides() {
   }, [isLegendOpen]);
 
   const filteredGuides = useMemo(() => {
-    if (activeFilter === 'All') return allGuides;
-    if (activeFilter === 'Dogs') {
+    let base;
+    if (activeFilter === 'All') {
+      base = allGuides;
+    } else if (activeFilter === 'Dogs') {
       const sized = dogGuides.filter(g => dogSize === 'All Sizes' || g.sizeCategory === dogSize || g.sizeCategory === 'All Sizes');
-      return activeSubtype ? sized.filter(g => g.name.includes(activeSubtype)) : sized;
-    }
-    if (activeFilter === 'Cats') {
-      return activeSubtype ? catGuides.filter(g => g.name.includes(activeSubtype)) : catGuides;
-    }
-    if (directMatchCategories.has(activeFilter)) {
+      base = activeSubtype ? sized.filter(g => g.name.includes(activeSubtype)) : sized;
+    } else if (activeFilter === 'Cats') {
+      base = activeSubtype ? catGuides.filter(g => g.name.includes(activeSubtype)) : catGuides;
+    } else if (directMatchCategories.has(activeFilter)) {
       const byType = allGuides.filter(g => g.petType === activeFilter);
-      return activeSubtype ? byType.filter(g => g.name.includes(activeSubtype)) : byType;
+      base = activeSubtype ? byType.filter(g => g.name.includes(activeSubtype)) : byType;
+    } else {
+      base = allGuides;
     }
-    return allGuides;
-  }, [activeFilter, dogSize, activeSubtype]);
+
+    const q = search.trim().toLowerCase();
+    if (!q) return base;
+    return base.filter(g => g.name.toLowerCase().includes(q) || g.petType.toLowerCase().includes(q));
+  }, [activeFilter, dogSize, activeSubtype, search]);
 
   const pageTitle = activeFilter === 'All'
     ? 'Care Guides | Beastly Facts'
@@ -161,6 +167,16 @@ export default function Guides() {
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
+        <div className="relative max-w-sm mb-4">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+          <input
+            type="text"
+            placeholder="Search by name or type..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
+          />
+        </div>
         <div className="flex flex-wrap gap-2 mb-3">
           {guideFilters.map(f => {
             const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');

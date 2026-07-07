@@ -11,15 +11,15 @@ import { catGuides } from './cats';
 import { fishGuides } from './fish';
 
 export const allGuides = [
+  ...amphibianGuides,
+  ...birdGuides,
+  ...catGuides,
+  ...dogGuides,
+  ...fishGuides,
   ...geckoGuides,
+  ...invertebrateGuides,
   ...lizardGuides,
+  ...smallMammalGuides,
   ...snakeGuides,
   ...turtleGuides,
-  ...smallMammalGuides,
-  ...birdGuides,
-  ...invertebrateGuides,
-  ...amphibianGuides,
-  ...dogGuides,
-  ...catGuides,
-  ...fishGuides,
 ];

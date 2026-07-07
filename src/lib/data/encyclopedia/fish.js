@@ -1,5 +1,18 @@
 export const fishEncyclopedia = [
   {
+    id: "angelfish", name: "Angelfish", scientific: "Pterophyllum scalare",
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "angelfish", available: true, image: "/assets/guides/angelfish.jpg",
+    bio: {
+      overview: "The freshwater angelfish is a cichlid native to the slow-moving tributaries and flooded forest of the Amazon Basin. Its tall, laterally compressed body is a natural adaptation for slipping between submerged roots and plant stems, effectively disguising it as a drifting leaf. Angelfish often form long-term monogamous breeding pairs and display cooperative biparental care of their eggs and fry, an unusually elaborate parenting behavior for a fish.",
+      origin: "Amazon Basin (Peru, Colombia, Brazil, Guyana)",
+      habitat: "Slow-moving tributaries, flooded forest, and blackwater streams",
+      adultSize: "6 inches (15 cm) body; 8–10 inches (20–25 cm) including fins",
+      wildDiet: "Small insects, crustaceans, zooplankton, and occasionally small fish",
+      wildLifespan: "10–12 years",
+      conservation: "Not evaluated (widespread and common)",
+    },
+  },
+  {
     id: "betta-fish", name: "Betta Fish", scientific: "Betta splendens",
     category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "betta-fish", available: true, image: "/assets/guides/betta-fish.jpg",
     bio: {
@@ -13,6 +26,19 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Corydoras aeneus",
+    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true, image: "/assets/guides/corydoras-catfish.jpg",
+    bio: {
+      overview: "Corydoras catfish are small, armored, bottom-dwelling fish native to the rivers and streams of South America. They are obligate shoaling fish, meaning they need the company of their own species to feel secure and behave naturally, and they spend much of the day actively foraging through soft substrate with sensitive barbels around their mouth. A unique adaptation lets them gulp air at the surface and absorb oxygen through their intestine, a backup system for the low-oxygen waters they evolved in.",
+      origin: "South America (Amazon Basin and surrounding river systems)",
+      habitat: "Slow-moving rivers, streams, and flooded forest with soft sediment",
+      adultSize: "2–3 inches (5–7.5 cm)",
+      wildDiet: "Insect larvae, worms, small crustaceans, and organic detritus",
+      wildLifespan: "5–10 years; up to 15 years with excellent care",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "goldfish", name: "Goldfish", scientific: "Carassius auratus",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true, image: "/assets/guides/goldfish.jpg",
     bio: {
@@ -22,19 +48,6 @@ export const fishEncyclopedia = [
       adultSize: "4–12+ inches (10–30+ cm) depending on variety and space",
       wildDiet: "Omnivorous — plant matter, insects, crustaceans, and detritus",
       wildLifespan: "10–15 years typical; 20–30+ years in spacious, well-kept ponds",
-      conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
-    },
-  },
-  {
-    id: "koi", name: "Koi", scientific: "Cyprinus rubrofuscus",
-    category: "Fish", emoji: "🎏", difficulty: "Intermediate", guideId: "koi", available: true, image: "/assets/guides/koi.jpg",
-    bio: {
-      overview: "Koi are ornamental varieties of the Amur carp, developed in Japan starting in the early 19th century from food carp that displayed unusual color mutations. Breeders selectively refined these mutations into today's dozens of recognized color patterns — kohaku, showa, and sanke among the most prized — which are still judged competitively at shows in Japan. Koi are exceptionally long-lived and develop genuine recognition of individual keepers, often gathering at a pond's edge when a familiar person approaches.",
-      origin: "Japan (developed from Amur carp of East Asia)",
-      habitat: "Outdoor ponds and slow-moving freshwater systems; entirely domesticated as a pet",
-      adultSize: "12–36 inches (30–90 cm) depending on pond size and variety",
-      wildDiet: "Omnivorous bottom feeder — aquatic plants, insects, and crustaceans",
-      wildLifespan: "25–35 years typical; some documented individuals far longer",
       conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
     },
   },
@@ -52,29 +65,16 @@ export const fishEncyclopedia = [
     },
   },
   {
-    id: "angelfish", name: "Angelfish", scientific: "Pterophyllum scalare",
-    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "angelfish", available: true, image: "/assets/guides/angelfish.jpg",
+    id: "koi", name: "Koi", scientific: "Cyprinus rubrofuscus",
+    category: "Fish", emoji: "🎏", difficulty: "Intermediate", guideId: "koi", available: true, image: "/assets/guides/koi.jpg",
     bio: {
-      overview: "The freshwater angelfish is a cichlid native to the slow-moving tributaries and flooded forest of the Amazon Basin. Its tall, laterally compressed body is a natural adaptation for slipping between submerged roots and plant stems, effectively disguising it as a drifting leaf. Angelfish often form long-term monogamous breeding pairs and display cooperative biparental care of their eggs and fry, an unusually elaborate parenting behavior for a fish.",
-      origin: "Amazon Basin (Peru, Colombia, Brazil, Guyana)",
-      habitat: "Slow-moving tributaries, flooded forest, and blackwater streams",
-      adultSize: "6 inches (15 cm) body; 8–10 inches (20–25 cm) including fins",
-      wildDiet: "Small insects, crustaceans, zooplankton, and occasionally small fish",
-      wildLifespan: "10–12 years",
-      conservation: "Not evaluated (widespread and common)",
-    },
-  },
-  {
-    id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Corydoras aeneus",
-    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true, image: "/assets/guides/corydoras-catfish.jpg",
-    bio: {
-      overview: "Corydoras catfish are small, armored, bottom-dwelling fish native to the rivers and streams of South America. They are obligate shoaling fish, meaning they need the company of their own species to feel secure and behave naturally, and they spend much of the day actively foraging through soft substrate with sensitive barbels around their mouth. A unique adaptation lets them gulp air at the surface and absorb oxygen through their intestine, a backup system for the low-oxygen waters they evolved in.",
-      origin: "South America (Amazon Basin and surrounding river systems)",
-      habitat: "Slow-moving rivers, streams, and flooded forest with soft sediment",
-      adultSize: "2–3 inches (5–7.5 cm)",
-      wildDiet: "Insect larvae, worms, small crustaceans, and organic detritus",
-      wildLifespan: "5–10 years; up to 15 years with excellent care",
-      conservation: "Least Concern (IUCN)",
+      overview: "Koi are ornamental varieties of the Amur carp, developed in Japan starting in the early 19th century from food carp that displayed unusual color mutations. Breeders selectively refined these mutations into today's dozens of recognized color patterns — kohaku, showa, and sanke among the most prized — which are still judged competitively at shows in Japan. Koi are exceptionally long-lived and develop genuine recognition of individual keepers, often gathering at a pond's edge when a familiar person approaches.",
+      origin: "Japan (developed from Amur carp of East Asia)",
+      habitat: "Outdoor ponds and slow-moving freshwater systems; entirely domesticated as a pet",
+      adultSize: "12–36 inches (30–90 cm) depending on pond size and variety",
+      wildDiet: "Omnivorous bottom feeder — aquatic plants, insects, and crustaceans",
+      wildLifespan: "25–35 years typical; some documented individuals far longer",
+      conservation: "Domesticated (not evaluated; wild ancestor Least Concern)",
     },
   },
   {

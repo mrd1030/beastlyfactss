@@ -11,17 +11,17 @@ import { amphibianEncyclopedia } from './amphibians';
 import { fishEncyclopedia } from './fish';
 
 export const encyclopediaAnimals = [
+  ...amphibianEncyclopedia,
+  ...birdEncyclopedia,
+  ...catEncyclopedia,
+  ...dogEncyclopedia,
+  ...fishEncyclopedia,
   ...geckoEncyclopedia,
+  ...invertebrateEncyclopedia,
   ...lizardEncyclopedia,
+  ...smallMammalEncyclopedia,
   ...snakeEncyclopedia,
   ...turtleEncyclopedia,
-  ...smallMammalEncyclopedia,
-  ...birdEncyclopedia,
-  ...dogEncyclopedia,
-  ...catEncyclopedia,
-  ...invertebrateEncyclopedia,
-  ...amphibianEncyclopedia,
-  ...fishEncyclopedia,
 ];
 
 export const encyclopediaCategories = [

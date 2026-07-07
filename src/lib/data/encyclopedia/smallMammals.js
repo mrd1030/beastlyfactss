@@ -1,5 +1,44 @@
 export const smallMammalEncyclopedia = [
   {
+    id: "chinchilla", name: "Chinchilla", scientific: "Chinchilla lanigera",
+    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate/Advanced", guideId: "chinchilla", available: true, image: "/assets/guides/chinchilla.jpg",
+    bio: {
+      overview: "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered — their extraordinarily dense fur (up to 80 hairs per follicle, versus 2–3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
+      origin: "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",
+      habitat: "Rocky, arid Andean mountains at high altitude",
+      adultSize: "9–15 inches (23–38 cm); 1–2 lbs",
+      wildDiet: "Grasses, seeds, leaves, bark, and insects",
+      wildLifespan: "10–20 years",
+      conservation: "Critically Endangered (IUCN)",
+    },
+  },
+  {
+    id: "ferret", name: "Ferret", scientific: "Mustela putorius furo",
+    category: "Small Mammals", emoji: "🦡", difficulty: "Intermediate", guideId: "ferret", available: true, image: "/assets/guides/ferret.jpg",
+    bio: {
+      overview: "Ferrets are fully domesticated descendants of the European polecat, bred by humans for at least 2,500 years — initially for hunting rabbits (a practice called ferreting). They belong to the Mustelidae family, making them relatives of otters, minks, and badgers. Highly social, playful, and mischievous, ferrets sleep up to 16–18 hours per day but are intensely active during their waking periods. They are obligate carnivores requiring high-protein diets.",
+      origin: "Domesticated from the European polecat; origin in Europe",
+      habitat: "Fully domesticated; no established wild population",
+      adultSize: "13–16 inches (33–40 cm) body; males significantly larger",
+      wildDiet: "(Ancestral polecat) Small mammals, birds, amphibians, and eggs",
+      wildLifespan: "5–10 years",
+      conservation: "Not assessed (domesticated); European polecat is Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "guinea-pig", name: "Guinea Pig", scientific: "Cavia porcellus",
+    category: "Small Mammals", emoji: "🐹", difficulty: "Beginner", guideId: "guinea-pig", available: true, image: "/assets/guides/guinea-pig.jpg",
+    bio: {
+      overview: "Guinea pigs (cavies) have never been found in the wild — they are a fully domesticated species descended from South American wild cavies, selectively bred by Andean peoples for over 3,000 years as a food source and in religious ceremonies. Today they are one of the world's most popular small pet animals, valued for their vocal, social nature and gentle temperament. They use over 11 distinct vocalizations to communicate.",
+      origin: "Domesticated from wild cavies of the Andes (Peru, Bolivia, Ecuador)",
+      habitat: "Fully domesticated; no wild population",
+      adultSize: "8–12 inches (20–30 cm); 1.5–2.6 lbs",
+      wildDiet: "Grasses, hay, leafy plants, and vegetables",
+      wildLifespan: "4–8 years",
+      conservation: "Not assessed (fully domesticated species)",
+    },
+  },
+  {
     id: "hedgehog", name: "Hedgehog", scientific: "Atelerix albiventris",
     category: "Small Mammals", emoji: "🦔", difficulty: "Intermediate", guideId: "hedgehog", available: true, image: "/assets/guides/hedgehog.jpg",
     bio: {
@@ -23,45 +62,6 @@ export const smallMammalEncyclopedia = [
       wildDiet: "Grasses, hay, herbs, root vegetables, and bark",
       wildLifespan: "5–12 years (wild); up to 12+ years in captivity",
       conservation: "Endangered (wild European rabbit, IUCN)",
-    },
-  },
-  {
-    id: "guinea-pig", name: "Guinea Pig", scientific: "Cavia porcellus",
-    category: "Small Mammals", emoji: "🐹", difficulty: "Beginner", guideId: "guinea-pig", available: true, image: "/assets/guides/guinea-pig.jpg",
-    bio: {
-      overview: "Guinea pigs (cavies) have never been found in the wild — they are a fully domesticated species descended from South American wild cavies, selectively bred by Andean peoples for over 3,000 years as a food source and in religious ceremonies. Today they are one of the world's most popular small pet animals, valued for their vocal, social nature and gentle temperament. They use over 11 distinct vocalizations to communicate.",
-      origin: "Domesticated from wild cavies of the Andes (Peru, Bolivia, Ecuador)",
-      habitat: "Fully domesticated; no wild population",
-      adultSize: "8–12 inches (20–30 cm); 1.5–2.6 lbs",
-      wildDiet: "Grasses, hay, leafy plants, and vegetables",
-      wildLifespan: "4–8 years",
-      conservation: "Not assessed (fully domesticated species)",
-    },
-  },
-  {
-    id: "chinchilla", name: "Chinchilla", scientific: "Chinchilla lanigera",
-    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate/Advanced", guideId: "chinchilla", available: true, image: "/assets/guides/chinchilla.jpg",
-    bio: {
-      overview: "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered — their extraordinarily dense fur (up to 80 hairs per follicle, versus 2–3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
-      origin: "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",
-      habitat: "Rocky, arid Andean mountains at high altitude",
-      adultSize: "9–15 inches (23–38 cm); 1–2 lbs",
-      wildDiet: "Grasses, seeds, leaves, bark, and insects",
-      wildLifespan: "10–20 years",
-      conservation: "Critically Endangered (IUCN)",
-    },
-  },
-  {
-    id: "ferret", name: "Ferret", scientific: "Mustela putorius furo",
-    category: "Small Mammals", emoji: "🦡", difficulty: "Intermediate", guideId: "ferret", available: true,
-    bio: {
-      overview: "Ferrets are fully domesticated descendants of the European polecat, bred by humans for at least 2,500 years — initially for hunting rabbits (a practice called ferreting). They belong to the Mustelidae family, making them relatives of otters, minks, and badgers. Highly social, playful, and mischievous, ferrets sleep up to 16–18 hours per day but are intensely active during their waking periods. They are obligate carnivores requiring high-protein diets.",
-      origin: "Domesticated from the European polecat; origin in Europe",
-      habitat: "Fully domesticated; no established wild population",
-      adultSize: "13–16 inches (33–40 cm) body; males significantly larger",
-      wildDiet: "(Ancestral polecat) Small mammals, birds, amphibians, and eggs",
-      wildLifespan: "5–10 years",
-      conservation: "Not assessed (domesticated); European polecat is Least Concern (IUCN)",
     },
   },
   {

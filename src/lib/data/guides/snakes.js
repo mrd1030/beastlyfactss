@@ -1,72 +1,5 @@
 export const snakeGuides = [
   {
-    id: "hognose-snake",
-    name: "Hognose Snake",
-    emoji: "🐍",
-    difficulty: "Intermediate",
-    petType: "Snakes",
-    image: "/assets/guides/hognose-snake.jpg",
-    tagline: "The drama queen of snakes: all bluff and zero bite!",
-    funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "36x18x18 in enclosure", low: 100, high: 180 },
-        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
-        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
-        { item: "Water dish", low: 8, high: 15 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-        { item: "Branches and cork bark", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice", low: 60, high: 120 },
-        { item: "Substrate replacement", low: 30, high: 50 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 36x18x18" or 36x18x12" enclosure with 4 to 6 inches of deep, loose substrate is the appropriate setup for an adult western hognose snake. Hognoses are fossorial (burrowing) animals that spend significant time underground in the wild. Deep substrate is not optional — it allows natural burrowing behavior, provides thermal insulation, and gives the snake psychological security.
-
-Good substrate choices include aspen shavings, coconut fiber, organic topsoil (no fertilizers or perlite), or a mix of topsoil and playsand. The substrate should hold the shape of a burrow tunnel when the snake digs into it. Avoid sand-only substrates (too loose) and cedar or pine shavings (toxic resin).
-
-Provide a warm hide with a belly-heat surface temperature of 85 to 90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to 76 degrees F, and a humid hide (a hide box with damp sphagnum moss) for shedding support. Ambient humidity of 40 to 60% is appropriate, rising during shed.
-
-A secure, lockable lid is essential. Hognose snakes are surprisingly capable escape artists despite their stocky build. Ensure all ventilation gaps are snake-proof.`,
-      diet: `Western hognose snakes eat frozen/thawed rodents (appropriately sized mice) as adults. Prey size should match the snake's widest mid-body point. Always use feeding tongs and always feed frozen/thawed prey — live prey can injure the snake.
-
-Hatchlings and young juveniles can be notoriously reluctant feeders. In the wild, hognose snakes specialize in eating toads, and some hatchlings imprint strongly on amphibian prey. Common solutions include scenting prey with toad or frog shed, offering a smaller prey item, feeding in a separate enclosure, offering at night in a completely dark environment, and leaving pre-killed prey overnight. Most hognoses that refuse initially will convert to unscented mice within a few attempts. Patience is essential — stressing the snake by repeated handling or forcing prey makes refusals worse.
-
-Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days. After feeding, allow 48 to 72 hours before handling. Always provide fresh water in a soak-able dish.
-
-Some hognose snakes are dramatic bluffers that flatten their necks, hiss loudly, and fake strike during feeding. This is normal defensive behavior. Use tongs consistently and do not offer prey by hand.`,
-      enrichment: `Deep, burrowing substrate is the single most important enrichment for hognose snakes. Providing 4 to 6 inches of appropriate substrate allows them to burrow, thermoregulate underground, and behave naturally. A hognose snake in a bare enclosure with only paper towel substrate is a deprived animal.
-
-Add cork bark hides at both temperature ends, branches for occasional climbing, and leaf litter or dried botanicals on the substrate surface for natural texture and cover. Change up the layout occasionally to provide novelty — hognose snakes investigate new objects with interest.
-
-Hognose snakes are crepuscular, most active in the morning and evening. Handle regularly and gently to build trust. Many hognoses go through an initial defensive phase (dramatic bluffing displays, flattened neck, hissing, playing dead) that diminishes significantly with consistent calm handling. Most adult western hognoses become quite calm and handleable.
-
-The famous death-feigning behavior (rolling upside down, going limp, mouth gaping) is one of the most charming and memorable aspects of this species. It is a hardwired defensive response and not a sign of illness or distress.`,
-      health: `Feeding refusals are the most common concern with new hognose snakes and are usually behavioral rather than medical. Before assuming illness, ensure temperatures are correct, the snake is not in pre-shed, and that you have tried multiple feeding strategies. An established hognose that suddenly stops eating after months of reliable feeding warrants a veterinary assessment.
-
-Retained shed — especially on the eye caps — results from low humidity. A moist hide filled with damp sphagnum moss prevents most shedding problems. If retained shed occurs, soak in shallow lukewarm water for 20 to 30 minutes before attempting gentle removal.
-
-Wild-caught hognose snakes frequently carry internal parasites (pinworms, nematodes, coccidia). Always obtain a fecal exam from a reptile vet within 30 days of acquisition for any wild-caught or unknown-origin animal. Captive-bred animals from reputable breeders are far less likely to carry significant parasite loads.
-
-Respiratory infections can result from temperatures that are too low or a substrate that is too damp without adequate ventilation. Signs include wheezing, mucus, and open-mouth breathing. Any suspected respiratory infection requires antibiotic treatment from a reptile veterinarian.`,
-      checklist: ["36x18x18\" enclosure", "Deep substrate (4 to 6 inch aspen or coconut fiber)", "Thermostat-controlled heat source", "Warm and cool hides", "Humid hide with damp sphagnum", "Digital thermometer and hygrometer", "Frozen/thawed mice", "Feeding tongs", "Water dish", "Branches and cork bark"],
-    },
-    faqs: [
-      { q: "Do hognose snakes really play dead?", a: "Yes, and it's one of the most dramatic defense displays in the reptile world. When threatened, a hognose snake flattens its neck, hisses loudly, and lunges with a closed mouth. If that fails, it rolls onto its back, opens its mouth, lets its tongue hang out, and goes completely limp — even emitting a musky odor. Remarkably, if you flip it right-side up, it rolls back over to maintain the death display, which somewhat undermines the performance." },
-      { q: "Are hognose snakes venomous?", a: "Technically yes, but functionally no for humans. Hognose snakes produce a mild rear-fanged venom used to subdue amphibian prey, particularly toads. The venom is entirely harmless to humans — bites, which are rare and almost always defensive, cause minimal local irritation at most. A hognose snake's first line of defense is always dramatic bluffing, not biting. They are handled safely by keepers worldwide and are considered medically insignificant." },
-      { q: "How big do hognose snakes get?", a: "Western hognose snakes — the most common pet species — are modest in size. Females typically reach 2 to 3 feet; males stay at 1 to 1.5 feet. Eastern hognose snakes can reach 2 to 4 feet. Both sexes are fully grown by 2 to 3 years. The notable size difference between males and females in the western species is more pronounced than in most other pet snakes." },
-      { q: "How often should I feed my hognose snake?", a: "Feed juvenile hognose snakes every 5 to 7 days and adults every 7 to 14 days. Always offer frozen and thawed prey — live rodents can injure snakes. Prey size should not exceed the widest part of the snake's body. Western hognose snakes can be finicky eaters; scenting prey with toad or fish can encourage reluctant feeders." },
-      { q: "Do hognose snakes need a humid hide?", a: "Yes. All hognose snakes benefit from a humid hide — a box packed with damp sphagnum moss — especially during pre-shed. Western hognose snakes prefer drier ambient conditions (40 to 60% humidity) than many other colubrids, but a moist microhabitat for shedding is still essential. Without it, retained shed on the eye caps is a common and preventable problem." },
-    ],
-  },
-  {
     id: "ball-python",
     name: "Ball Python",
     emoji: "🐍",
@@ -131,73 +64,6 @@ Inclusion Body Disease (IBD) is a serious and fatal viral disease in boas and py
       { q: "Why is my ball python not eating?", a: "Ball pythons are notorious for food refusals, which are often temporary and not medically concerning. Common causes include pre-shed (look for dull or bluish skin), breeding season from October through March (males especially), enclosure stress from incorrect temperatures or hides, or a prey-type change. A refusal of 2 to 4 weeks in an otherwise healthy adult is normal. Consult a vet if weight loss accompanies a refusal longer than 6 to 8 weeks." },
       { q: "Do ball pythons need humidity?", a: "Yes. Ball pythons require 60 to 80% ambient humidity to support healthy sheds and respiratory health. Humidity below 50% causes stuck shed and, over time, respiratory problems. A humid hide packed with damp sphagnum moss is essential. A sealed substrate like cypress mulch or coconut fiber helps maintain ambient humidity between mistings." },
       { q: "Are ball pythons good beginner snakes?", a: "Yes. Ball pythons are widely considered one of the best beginner snakes due to their small to medium size, slow movement, and generally calm temperament once acclimated. Their main challenge is occasional food refusals, which can worry new keepers but are usually not medically significant. Correct enclosure temperatures and hides resolve most husbandry-related behavioral issues." },
-    ],
-  },
-  {
-    id: "corn-snake",
-    name: "Corn Snake",
-    emoji: "🐍",
-    difficulty: "Beginner",
-    petType: "Snakes",
-    image: "/assets/guides/corn-snake.jpg",
-    tagline: "The curious, colorful beginner snake that never stops exploring!",
-    funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
-        { item: "Heat source with thermostat", low: 35, high: 60 },
-        { item: "Two hides", low: 15, high: 25 },
-        { item: "Soak-able water dish", low: 10, high: 15 },
-        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
-        { item: "Digital thermometer", low: 15, high: 20 },
-        { item: "Branches for climbing", low: 15, high: 25 },
-        { item: "Feeding tongs", low: 5, high: 10 },
-      ],
-      annual: [
-        { item: "Frozen/thawed mice and small rats", low: 80, high: 150 },
-        { item: "Substrate replacement", low: 25, high: 40 },
-        { item: "Electricity (heat)", low: 40, high: 70 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 4x2x2 ft enclosure is appropriate for most adult corn snakes. Despite being considered a beginner species, corn snakes benefit from generous space — they are active, curious, and will use every inch of an enriched enclosure. Corn snakes are notorious and highly capable escape artists. Ensure every single seam, lid hinge, and ventilation gap is secured. They can compress their bodies and squeeze through openings that seem impossibly small.
-
-Provide a warm end with a surface temperature of 85 to 88 degrees F using an under-tank heater on a thermostat, and a cool end at approximately 72 to 75 degrees F. Corn snakes originate from the eastern United States, where temperatures are moderate, and they do not require the extreme heat that tropical or desert species need. A simple warm/cool gradient with two hides — one at each end — meets their thermoregulatory needs.
-
-Humidity should stay at 40 to 60%. This is generally achievable at ambient room humidity in most homes. During shed, raise humidity slightly by adding a moist hide (a hide box with damp sphagnum moss). Aspen shavings are an excellent substrate: they hold burrow tunnels, are affordable, easy to spot-clean, and maintain appropriate humidity levels when not over-misted.
-
-Corn snakes are semi-arboreal and will use elevated branches and perches, especially juveniles. Providing height and branching in the enclosure gives them an outlet for this natural behavior and makes the enclosure more enriching.`,
-      diet: `Corn snakes eat appropriately sized frozen/thawed mice, or small rats as they grow. Prey should roughly match the widest point of the snake's mid-body — a slight bulge after feeding is normal and healthy; a dramatically distended body indicates prey is too large.
-
-Feed juveniles every 5 to 7 days, sub-adults every 7 to 10 days, and adults every 10 to 14 days. Always thaw frozen prey fully in warm water until the core reaches approximately 100 degrees F before offering. Always use feeding tongs — every single feeding. This prevents the snake from associating your hand with food and dramatically reduces the chance of accidental strikes during handling.
-
-Corn snakes are generally reliable, enthusiastic feeders. If a corn snake refuses food, consider whether it is in pre-shed (the skin and eyes will appear dull and bluish), whether it is cold (check temperatures), or whether the prey is too warm or too cold. Most refusals in otherwise healthy corn snakes resolve without intervention. Allow 48 to 72 hours after feeding before handling.
-
-Fresh water in a clean, soak-able dish must be available at all times. Corn snakes drink regularly and often soak before shedding. Change the water at least twice per week and clean the dish thoroughly with a reptile-safe disinfectant weekly.`,
-      enrichment: `Corn snakes are one of the most active and exploratory snakes in captivity. Given appropriate space, they investigate every corner of their enclosure, climb branches, burrow through substrate, and soak in their water dish. Enriching their environment significantly improves their quality of life compared to a bare enclosure with only a hide.
-
-Provide branches at varying heights for climbing, multiple hides of different sizes and shapes, cork bark for climbing and hiding, and a water dish large enough to coil in. Covering the exterior walls of the enclosure with backgrounds gives the snake a greater sense of security and reduces stress from seeing movement outside the enclosure constantly.
-
-Corn snakes tame exceptionally well with consistent handling. Start with brief 5-minute sessions after the snake has been allowed to settle for 2 weeks following acquisition. Build up gradually to 15 to 30 minute sessions. Most corn snakes become remarkably calm and interactive — comfortable exploring their keeper's arms and shoulders without any defensiveness.
-
-Substrate enrichment is underutilized. Providing aspen shavings deep enough to burrow in (3 to 4 inches), adding dried leaves on top, and hiding prey items in the substrate creates a more naturalistic and stimulating environment that supports natural foraging behavior.`,
-      health: `Corn snakes are among the hardiest and most disease-resistant snakes available as pets. When husbandry is correct, they rarely develop serious health problems. The most common issues are all preventable with proper setup.
-
-Respiratory infections result from temperatures that are too low, humidity that is too high without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, open-mouth breathing, and lethargy. Any suspected respiratory infection requires veterinary treatment. Address the underlying husbandry cause simultaneously to prevent recurrence.
-
-Retained shed is caused by low humidity and/or lack of a moist hide. A complete shed should come off in one piece. Retained shed on the eye caps is the most serious — it blurs vision and if left in place can cause eye damage. Soaking in shallow lukewarm water for 20 to 30 minutes softens retained shed for gentle removal.
-
-Escape prevention is not a health issue per se, but an escaped corn snake is at serious risk from dehydration, temperature extremes, household hazards, and being stepped on. Check the enclosure for gaps regularly. A corn snake that escapes and is not found within 24 to 48 hours has a dramatically reduced chance of being recovered safely.`,
-      checklist: ["4x2x2 ft escape-proof enclosure", "Heat source with thermostat (85 to 88 degrees F warm end)", "Two hides (warm and cool)", "Water dish (soak-able size)", "Aspen or coconut fiber substrate", "Frozen/thawed mice and small rats", "Feeding tongs", "Branches for climbing", "Digital thermometer", "Secure, lockable lid"],
-    },
-    faqs: [
-      { q: "How big do corn snakes get?", a: "Adult corn snakes typically reach 4 to 5 feet, with females often slightly larger than males. They are slender snakes and never feel heavy or cumbersome at full size. Juveniles hatch at about 8 to 12 inches and reach adult size by 2 to 3 years, though they continue filling out slowly until age 4 to 5." },
-      { q: "Are corn snakes good beginner snakes?", a: "Yes — corn snakes are widely regarded as one of the best beginner snakes available. They are active and curious rather than sedentary, which makes them more engaging to watch than many other colubrids. They feed reliably, tolerate handling well with regular interaction, and have straightforward temperature and humidity requirements. The main challenge is their legendary escape-artist reputation — every gap in a corn snake enclosure will eventually be found." },
-      { q: "How often do corn snakes eat?", a: "Feed juvenile corn snakes every 5 to 7 days and adults every 10 to 14 days. Always feed frozen and thawed prey sized to the widest part of the snake's body. Corn snakes are enthusiastic feeders and food-motivated, which also means they may strike at your hand if they smell prey — always wash hands before handling." },
-      { q: "How long do corn snakes live?", a: "Corn snakes commonly live 15 to 20 years in captivity with proper care, and some individuals exceed 20 years. They are one of the longer-lived colubrid species. Longevity depends on consistent appropriate temperatures, annual fecal checks for parasites, and prompt veterinary care for any health concerns." },
-      { q: "Do corn snakes need humidity?", a: "Corn snakes do well at 40 to 60% ambient humidity, which is achievable in most homes without additional measures. The most important provision is a humid hide — a box packed with damp sphagnum moss — available at all times and especially during the shedding cycle. Dry sheds from insufficient humidity are one of the most common corn snake health issues and can result in retained eye caps and constricting shed on the tail tip." },
     ],
   },
   {
@@ -331,6 +197,140 @@ Escape prevention is a practical safety issue — an escaped kingsnake faces col
       { q: "Are California kingsnakes good beginner snakes?", a: "Yes. They feed reliably on frozen/thawed prey, tame down quickly with consistent calm handling, and have straightforward temperature and humidity requirements. Juvenile kingsnakes can be defensive — musking, hissing, or striking — but this diminishes significantly with regular interaction. Most adults become calm, handleable snakes within weeks to months of consistent work." },
       { q: "What humidity do California kingsnakes need?", a: "Low to moderate — 30 to 50% ambient humidity is appropriate. This is generally achievable at room humidity in most homes without additional measures. The most important shedding support is a moist hide (a box packed with damp sphagnum moss) available at all times. Retained shed on eye caps is preventable with consistent access to a humid microhabitat." },
       { q: "Why is my California kingsnake musking?", a: "Musking — releasing a pungent musk from cloacal glands — is a normal defensive behavior in juveniles and newly acquired adults. It is not an indication of illness or permanent temperament. Most California kingsnakes reduce or eliminate musking with consistent, calm handling over weeks. Never react to musking with fear or by putting the snake down — this reinforces the behavior." },
+    ],
+  },
+  {
+    id: "corn-snake",
+    name: "Corn Snake",
+    emoji: "🐍",
+    difficulty: "Beginner",
+    petType: "Snakes",
+    image: "/assets/guides/corn-snake.jpg",
+    tagline: "The curious, colorful beginner snake that never stops exploring!",
+    funFact: "Corn snakes are named for their distinctive belly pattern that resembles Indian corn kernels, not because they're found in corn fields (though they are)!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "4x2x2 ft escape-proof enclosure", low: 130, high: 250 },
+        { item: "Heat source with thermostat", low: 35, high: 60 },
+        { item: "Two hides", low: 15, high: 25 },
+        { item: "Soak-able water dish", low: 10, high: 15 },
+        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
+        { item: "Digital thermometer", low: 15, high: 20 },
+        { item: "Branches for climbing", low: 15, high: 25 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice and small rats", low: 80, high: 150 },
+        { item: "Substrate replacement", low: 25, high: 40 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `A 4x2x2 ft enclosure is appropriate for most adult corn snakes. Despite being considered a beginner species, corn snakes benefit from generous space — they are active, curious, and will use every inch of an enriched enclosure. Corn snakes are notorious and highly capable escape artists. Ensure every single seam, lid hinge, and ventilation gap is secured. They can compress their bodies and squeeze through openings that seem impossibly small.
+
+Provide a warm end with a surface temperature of 85 to 88 degrees F using an under-tank heater on a thermostat, and a cool end at approximately 72 to 75 degrees F. Corn snakes originate from the eastern United States, where temperatures are moderate, and they do not require the extreme heat that tropical or desert species need. A simple warm/cool gradient with two hides — one at each end — meets their thermoregulatory needs.
+
+Humidity should stay at 40 to 60%. This is generally achievable at ambient room humidity in most homes. During shed, raise humidity slightly by adding a moist hide (a hide box with damp sphagnum moss). Aspen shavings are an excellent substrate: they hold burrow tunnels, are affordable, easy to spot-clean, and maintain appropriate humidity levels when not over-misted.
+
+Corn snakes are semi-arboreal and will use elevated branches and perches, especially juveniles. Providing height and branching in the enclosure gives them an outlet for this natural behavior and makes the enclosure more enriching.`,
+      diet: `Corn snakes eat appropriately sized frozen/thawed mice, or small rats as they grow. Prey should roughly match the widest point of the snake's mid-body — a slight bulge after feeding is normal and healthy; a dramatically distended body indicates prey is too large.
+
+Feed juveniles every 5 to 7 days, sub-adults every 7 to 10 days, and adults every 10 to 14 days. Always thaw frozen prey fully in warm water until the core reaches approximately 100 degrees F before offering. Always use feeding tongs — every single feeding. This prevents the snake from associating your hand with food and dramatically reduces the chance of accidental strikes during handling.
+
+Corn snakes are generally reliable, enthusiastic feeders. If a corn snake refuses food, consider whether it is in pre-shed (the skin and eyes will appear dull and bluish), whether it is cold (check temperatures), or whether the prey is too warm or too cold. Most refusals in otherwise healthy corn snakes resolve without intervention. Allow 48 to 72 hours after feeding before handling.
+
+Fresh water in a clean, soak-able dish must be available at all times. Corn snakes drink regularly and often soak before shedding. Change the water at least twice per week and clean the dish thoroughly with a reptile-safe disinfectant weekly.`,
+      enrichment: `Corn snakes are one of the most active and exploratory snakes in captivity. Given appropriate space, they investigate every corner of their enclosure, climb branches, burrow through substrate, and soak in their water dish. Enriching their environment significantly improves their quality of life compared to a bare enclosure with only a hide.
+
+Provide branches at varying heights for climbing, multiple hides of different sizes and shapes, cork bark for climbing and hiding, and a water dish large enough to coil in. Covering the exterior walls of the enclosure with backgrounds gives the snake a greater sense of security and reduces stress from seeing movement outside the enclosure constantly.
+
+Corn snakes tame exceptionally well with consistent handling. Start with brief 5-minute sessions after the snake has been allowed to settle for 2 weeks following acquisition. Build up gradually to 15 to 30 minute sessions. Most corn snakes become remarkably calm and interactive — comfortable exploring their keeper's arms and shoulders without any defensiveness.
+
+Substrate enrichment is underutilized. Providing aspen shavings deep enough to burrow in (3 to 4 inches), adding dried leaves on top, and hiding prey items in the substrate creates a more naturalistic and stimulating environment that supports natural foraging behavior.`,
+      health: `Corn snakes are among the hardiest and most disease-resistant snakes available as pets. When husbandry is correct, they rarely develop serious health problems. The most common issues are all preventable with proper setup.
+
+Respiratory infections result from temperatures that are too low, humidity that is too high without adequate ventilation, or both. Signs include wheezing, mucus from the mouth and nostrils, open-mouth breathing, and lethargy. Any suspected respiratory infection requires veterinary treatment. Address the underlying husbandry cause simultaneously to prevent recurrence.
+
+Retained shed is caused by low humidity and/or lack of a moist hide. A complete shed should come off in one piece. Retained shed on the eye caps is the most serious — it blurs vision and if left in place can cause eye damage. Soaking in shallow lukewarm water for 20 to 30 minutes softens retained shed for gentle removal.
+
+Escape prevention is not a health issue per se, but an escaped corn snake is at serious risk from dehydration, temperature extremes, household hazards, and being stepped on. Check the enclosure for gaps regularly. A corn snake that escapes and is not found within 24 to 48 hours has a dramatically reduced chance of being recovered safely.`,
+      checklist: ["4x2x2 ft escape-proof enclosure", "Heat source with thermostat (85 to 88 degrees F warm end)", "Two hides (warm and cool)", "Water dish (soak-able size)", "Aspen or coconut fiber substrate", "Frozen/thawed mice and small rats", "Feeding tongs", "Branches for climbing", "Digital thermometer", "Secure, lockable lid"],
+    },
+    faqs: [
+      { q: "How big do corn snakes get?", a: "Adult corn snakes typically reach 4 to 5 feet, with females often slightly larger than males. They are slender snakes and never feel heavy or cumbersome at full size. Juveniles hatch at about 8 to 12 inches and reach adult size by 2 to 3 years, though they continue filling out slowly until age 4 to 5." },
+      { q: "Are corn snakes good beginner snakes?", a: "Yes — corn snakes are widely regarded as one of the best beginner snakes available. They are active and curious rather than sedentary, which makes them more engaging to watch than many other colubrids. They feed reliably, tolerate handling well with regular interaction, and have straightforward temperature and humidity requirements. The main challenge is their legendary escape-artist reputation — every gap in a corn snake enclosure will eventually be found." },
+      { q: "How often do corn snakes eat?", a: "Feed juvenile corn snakes every 5 to 7 days and adults every 10 to 14 days. Always feed frozen and thawed prey sized to the widest part of the snake's body. Corn snakes are enthusiastic feeders and food-motivated, which also means they may strike at your hand if they smell prey — always wash hands before handling." },
+      { q: "How long do corn snakes live?", a: "Corn snakes commonly live 15 to 20 years in captivity with proper care, and some individuals exceed 20 years. They are one of the longer-lived colubrid species. Longevity depends on consistent appropriate temperatures, annual fecal checks for parasites, and prompt veterinary care for any health concerns." },
+      { q: "Do corn snakes need humidity?", a: "Corn snakes do well at 40 to 60% ambient humidity, which is achievable in most homes without additional measures. The most important provision is a humid hide — a box packed with damp sphagnum moss — available at all times and especially during the shedding cycle. Dry sheds from insufficient humidity are one of the most common corn snake health issues and can result in retained eye caps and constricting shed on the tail tip." },
+    ],
+  },
+  {
+    id: "hognose-snake",
+    name: "Hognose Snake",
+    emoji: "🐍",
+    difficulty: "Intermediate",
+    petType: "Snakes",
+    image: "/assets/guides/hognose-snake.jpg",
+    tagline: "The drama queen of snakes: all bluff and zero bite!",
+    funFact: "When threatened, hognose snakes will flatten their neck, hiss, lunge (mouth closed), and if that fails, flip over and play dead complete with open mouth and tongue hanging out!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x18x18 in enclosure", low: 100, high: 180 },
+        { item: "Under-tank heater + thermostat", low: 40, high: 70 },
+        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Aspen or coconut fiber substrate", low: 15, high: 25 },
+        { item: "Water dish", low: 8, high: 15 },
+        { item: "Feeding tongs", low: 5, high: 10 },
+        { item: "Branches and cork bark", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice", low: 60, high: 120 },
+        { item: "Substrate replacement", low: 30, high: 50 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `A 36x18x18" or 36x18x12" enclosure with 4 to 6 inches of deep, loose substrate is the appropriate setup for an adult western hognose snake. Hognoses are fossorial (burrowing) animals that spend significant time underground in the wild. Deep substrate is not optional — it allows natural burrowing behavior, provides thermal insulation, and gives the snake psychological security.
+
+Good substrate choices include aspen shavings, coconut fiber, organic topsoil (no fertilizers or perlite), or a mix of topsoil and playsand. The substrate should hold the shape of a burrow tunnel when the snake digs into it. Avoid sand-only substrates (too loose) and cedar or pine shavings (toxic resin).
+
+Provide a warm hide with a belly-heat surface temperature of 85 to 90 degrees F on an under-tank heater with a thermostat, a cool hide at 72 to 76 degrees F, and a humid hide (a hide box with damp sphagnum moss) for shedding support. Ambient humidity of 40 to 60% is appropriate, rising during shed.
+
+A secure, lockable lid is essential. Hognose snakes are surprisingly capable escape artists despite their stocky build. Ensure all ventilation gaps are snake-proof.`,
+      diet: `Western hognose snakes eat frozen/thawed rodents (appropriately sized mice) as adults. Prey size should match the snake's widest mid-body point. Always use feeding tongs and always feed frozen/thawed prey — live prey can injure the snake.
+
+Hatchlings and young juveniles can be notoriously reluctant feeders. In the wild, hognose snakes specialize in eating toads, and some hatchlings imprint strongly on amphibian prey. Common solutions include scenting prey with toad or frog shed, offering a smaller prey item, feeding in a separate enclosure, offering at night in a completely dark environment, and leaving pre-killed prey overnight. Most hognoses that refuse initially will convert to unscented mice within a few attempts. Patience is essential — stressing the snake by repeated handling or forcing prey makes refusals worse.
+
+Adults should eat every 7 to 14 days. Juveniles every 5 to 7 days. After feeding, allow 48 to 72 hours before handling. Always provide fresh water in a soak-able dish.
+
+Some hognose snakes are dramatic bluffers that flatten their necks, hiss loudly, and fake strike during feeding. This is normal defensive behavior. Use tongs consistently and do not offer prey by hand.`,
+      enrichment: `Deep, burrowing substrate is the single most important enrichment for hognose snakes. Providing 4 to 6 inches of appropriate substrate allows them to burrow, thermoregulate underground, and behave naturally. A hognose snake in a bare enclosure with only paper towel substrate is a deprived animal.
+
+Add cork bark hides at both temperature ends, branches for occasional climbing, and leaf litter or dried botanicals on the substrate surface for natural texture and cover. Change up the layout occasionally to provide novelty — hognose snakes investigate new objects with interest.
+
+Hognose snakes are crepuscular, most active in the morning and evening. Handle regularly and gently to build trust. Many hognoses go through an initial defensive phase (dramatic bluffing displays, flattened neck, hissing, playing dead) that diminishes significantly with consistent calm handling. Most adult western hognoses become quite calm and handleable.
+
+The famous death-feigning behavior (rolling upside down, going limp, mouth gaping) is one of the most charming and memorable aspects of this species. It is a hardwired defensive response and not a sign of illness or distress.`,
+      health: `Feeding refusals are the most common concern with new hognose snakes and are usually behavioral rather than medical. Before assuming illness, ensure temperatures are correct, the snake is not in pre-shed, and that you have tried multiple feeding strategies. An established hognose that suddenly stops eating after months of reliable feeding warrants a veterinary assessment.
+
+Retained shed — especially on the eye caps — results from low humidity. A moist hide filled with damp sphagnum moss prevents most shedding problems. If retained shed occurs, soak in shallow lukewarm water for 20 to 30 minutes before attempting gentle removal.
+
+Wild-caught hognose snakes frequently carry internal parasites (pinworms, nematodes, coccidia). Always obtain a fecal exam from a reptile vet within 30 days of acquisition for any wild-caught or unknown-origin animal. Captive-bred animals from reputable breeders are far less likely to carry significant parasite loads.
+
+Respiratory infections can result from temperatures that are too low or a substrate that is too damp without adequate ventilation. Signs include wheezing, mucus, and open-mouth breathing. Any suspected respiratory infection requires antibiotic treatment from a reptile veterinarian.`,
+      checklist: ["36x18x18\" enclosure", "Deep substrate (4 to 6 inch aspen or coconut fiber)", "Thermostat-controlled heat source", "Warm and cool hides", "Humid hide with damp sphagnum", "Digital thermometer and hygrometer", "Frozen/thawed mice", "Feeding tongs", "Water dish", "Branches and cork bark"],
+    },
+    faqs: [
+      { q: "Do hognose snakes really play dead?", a: "Yes, and it's one of the most dramatic defense displays in the reptile world. When threatened, a hognose snake flattens its neck, hisses loudly, and lunges with a closed mouth. If that fails, it rolls onto its back, opens its mouth, lets its tongue hang out, and goes completely limp — even emitting a musky odor. Remarkably, if you flip it right-side up, it rolls back over to maintain the death display, which somewhat undermines the performance." },
+      { q: "Are hognose snakes venomous?", a: "Technically yes, but functionally no for humans. Hognose snakes produce a mild rear-fanged venom used to subdue amphibian prey, particularly toads. The venom is entirely harmless to humans — bites, which are rare and almost always defensive, cause minimal local irritation at most. A hognose snake's first line of defense is always dramatic bluffing, not biting. They are handled safely by keepers worldwide and are considered medically insignificant." },
+      { q: "How big do hognose snakes get?", a: "Western hognose snakes — the most common pet species — are modest in size. Females typically reach 2 to 3 feet; males stay at 1 to 1.5 feet. Eastern hognose snakes can reach 2 to 4 feet. Both sexes are fully grown by 2 to 3 years. The notable size difference between males and females in the western species is more pronounced than in most other pet snakes." },
+      { q: "How often should I feed my hognose snake?", a: "Feed juvenile hognose snakes every 5 to 7 days and adults every 7 to 14 days. Always offer frozen and thawed prey — live rodents can injure snakes. Prey size should not exceed the widest part of the snake's body. Western hognose snakes can be finicky eaters; scenting prey with toad or fish can encourage reluctant feeders." },
+      { q: "Do hognose snakes need a humid hide?", a: "Yes. All hognose snakes benefit from a humid hide — a box packed with damp sphagnum moss — especially during pre-shed. Western hognose snakes prefer drier ambient conditions (40 to 60% humidity) than many other colubrids, but a moist microhabitat for shedding is still essential. Without it, retained shed on the eye caps is a common and preventable problem." },
     ],
   },
   {

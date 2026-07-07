@@ -1,5 +1,75 @@
 export const geckoGuides = [
   {
+    id: "african-fat-tail",
+    name: "African Fat-Tailed Gecko",
+    emoji: "🦎",
+    difficulty: "Beginner",
+    petType: "Geckos",
+    image: "/assets/guides/african-fat-tail.jpg",
+    tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
+    funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "30x12x12 in or larger enclosure", low: 90, high: 170 },
+        { item: "Under-tank heater with quality thermostat", low: 40, high: 70 },
+        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
+        { item: "Damp sphagnum moss for moist hide", low: 5, high: 10 },
+        { item: "Digital thermometer (IR gun ideal)", low: 15, high: 30 },
+        { item: "Shallow water dish", low: 8, high: 15 },
+        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
+      ],
+      annual: [
+        { item: "Dubia roaches, crickets, mealworms", low: 90, high: 160 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
+        { item: "Electricity (heat)", low: 30, high: 50 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `A 30x12x12" (20-gallon long) enclosure is the minimum for one adult African fat-tailed gecko, though a 36x18" or larger provides a better thermal gradient and more enrichment space. Like leopard geckos, AFTs are terrestrial — floor space is more important than height.
+
+Provide three hides: a warm hide (floor temperature 88 to 92 degrees F under the UTH), a cool hide (75 to 78 degrees F), and a moist hide filled with damp sphagnum moss on the warm side. The moist hide is critical — AFTs require higher humidity than leopard geckos and chronic dryness causes persistent shedding problems.
+
+Aim for 50 to 60% ambient humidity, which is higher than the 30 to 40% appropriate for leopard geckos. Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean. Use an under-tank heater on a quality thermostat as the primary heat source, verified with an infrared temperature gun. Low-output UVB is now recommended by reptile veterinarians.`,
+      diet: `African fat-tailed geckos are strict insectivores. Offer crickets, dubia roaches, and black soldier fly larvae as primary feeders. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no wider than the space between the gecko's eyes.
+
+Gut-load all feeder insects 24 to 48 hours before offering. Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults. A reptile multivitamin once weekly. A small dish of pure calcium powder placed in the enclosure allows the gecko to self-supplement as needed — this is particularly important for reproductive females.
+
+Fresh, dechlorinated water in a shallow dish must always be available. Unlike many reptiles, AFTs are relatively good about drinking from dishes and should be offered access continuously.`,
+      enrichment: `African fat-tailed geckos are among the calmest and most handleable gecko species available. Their slow, deliberate movements and natural docility make them ideal for keepers seeking a handleable gecko companion. With regular, gentle interaction, most become very relaxed and comfortable with human contact.
+
+Provide multiple hides at both ends of the thermal gradient, flat cork bark pieces and rock slates as basking and resting surfaces, and textured substrate for natural exploration. They are crepuscular, most active at dusk and dawn. Handle during these activity windows for the most relaxed interactions.
+
+Avoid handling during shed (identifiable by a dull, slightly grayish skin tone and clouding of the eyes). Always wash hands before handling to avoid introducing any chemical residues to the gecko's skin.`,
+      health: `Stuck shed (dysecdysis) is the most common health issue and is almost always prevented by a properly maintained moist hide. Stuck shed on the toes is the most dangerous — it constricts blood flow and leads to digit loss if not addressed. Soak the gecko briefly in shallow lukewarm water and gently remove retained shed with a damp cotton swab.
+
+Metabolic Bone Disease from inadequate calcium or vitamin D3 causes trembling, weakness, and skeletal deformities. Consistent supplementation and UVB exposure prevent it. MBD is entirely preventable with correct husbandry.
+
+Parasites are less common in AFTs than in many other gecko species but annual fecal exams are recommended, especially for wild-caught animals. AFTs are sensitive to humidity — chronically low humidity causes not just shedding problems but respiratory stress and immune suppression. Annual vet checks with a reptile-experienced veterinarian are recommended.`,
+      checklist: [
+        "30x12x12\" or larger terrestrial enclosure",
+        "Under-tank heater with quality thermostat",
+        "3 hides (warm, cool, moist)",
+        "Damp sphagnum moss for moist hide",
+        "Digital thermometer (IR gun ideal)",
+        "Calcium w/D3 + multivitamin supplements",
+        "Calcium dish (always in enclosure)",
+        "Shallow water dish",
+        "Dubia roaches, crickets, mealworms",
+        "Low-output UVB light (optional but beneficial)",
+      ],
+    },
+    faqs: [
+      { q: "How are African fat-tailed geckos different from leopard geckos?", a: "They are closely related and share similar husbandry, but African fat-tailed geckos (AFTs) require notably higher ambient humidity — 50 to 60% versus the leopard gecko's 30 to 40%. AFTs are also generally calmer and more docile, and they have a velvety skin texture quite different from the leopard gecko's pebbly appearance. Both species use an under-tank heater for belly heat and are strict insectivores." },
+      { q: "Do African fat-tailed geckos need a humid hide?", a: "Yes — the moist hide is critical, and AFTs need it more consistently than leopard geckos. Fill a hide box with damp sphagnum moss and keep it on the warm side. They require higher ambient humidity (50 to 60%) than most other ground-dwelling geckos, and the moist hide provides the microhabitat that prevents persistent stuck shed, particularly on the toes." },
+      { q: "What do African fat-tailed geckos eat?", a: "Strict insectivores. Crickets, dubia roaches, and black soldier fly larvae are the best staples. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. All feeders must be gut-loaded 24 to 48 hours before offering and dusted with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." },
+      { q: "How big do African fat-tailed geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 35 to 80 grams. Females are usually smaller than males. The tail, which stores fat reserves just like the leopard gecko's, should be plump and rounded in a healthy, well-fed gecko." },
+      { q: "How long do African fat-tailed geckos live?", a: "With correct humidity, appropriate thermal gradient (88 to 92 degrees F warm-side floor temperature via UTH on thermostat), and consistent supplementation, African fat-tailed geckos commonly live 10 to 20 years in captivity. They are robust animals when their humidity requirement is met." },
+    ],
+  },
+  {
     id: "crested-gecko",
     name: "Crested Gecko",
     emoji: "🦎",
@@ -65,6 +135,133 @@ Watch for weight loss, lethargy, loss of appetite, respiratory sounds, or abnorm
       { q: "How often should I mist my crested gecko?", a: "Mist lightly once or twice daily. The goal is a brief humidity spike to 80 to 100% after evening misting that drops back to 50 to 70% during the day. This wet-dry cycle is critical for respiratory health and mirrors their native New Caledonian rainforest climate." },
       { q: "Can crested geckos lose their tails?", a: "Yes. Crested geckos can drop their tails as a stress or defense response. Unlike leopard geckos, the tail does not regenerate. A tail-less crested gecko (called a frogbutt) is perfectly healthy and suffers no long-term consequences, but the tail is permanently gone." },
       { q: "How long do crested geckos live?", a: "With proper care, crested geckos commonly live 15 to 20 years in captivity, with some exceeding 20 years. Longevity depends heavily on keeping temperatures below 85 degrees F, consistent calcium supplementation, and annual wellness checks with a reptile-savvy veterinarian." },
+    ],
+  },
+  {
+    id: "gargoyle-gecko",
+    name: "Gargoyle Gecko",
+    emoji: "🦎",
+    difficulty: "Beginner",
+    petType: "Geckos",
+    image: "/assets/guides/gargoyle-gecko.jpg",
+    tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
+    funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
+        { item: "Cork bark and branches", low: 20, high: 40 },
+        { item: "Live or artificial plants", low: 25, high: 45 },
+        { item: "Misting bottle", low: 5, high: 15 },
+      ],
+      annual: [
+        { item: "Commercial crested gecko diet", low: 40, high: 70 },
+        { item: "Dubia roaches and crickets", low: 70, high: 130 },
+        { item: "Calcium + D3 and multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (lighting)", low: 25, high: 45 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `An 18x18x24" or larger enclosure works well for a single adult gargoyle gecko, with height being the priority over floor space. Like crested geckos, gargoyles are arboreal and spend most of their time off the ground. A front-opening design is strongly preferred for easier, less stressful access.
+
+Cork bark rounds, thick and thin branches, and live or high-quality artificial plants at varying heights create the layered climbing environment these geckos need. Gargoyle geckos are sturdier and more deliberate climbers than crested geckos — they grip surfaces firmly and move with purpose, which makes them easier to handle and less prone to sudden jumps.
+
+Temperature should stay between 72 and 80 degrees F during the day, with a nighttime drop to 65 to 72 degrees F. Gargoyle geckos share the crested gecko's sensitivity to heat — temperatures above 85 degrees F can be fatal. No supplemental heat is required in most homes. Humidity should follow the same wet-dry cycling as crested geckos: 50 to 70% during the day, spiking briefly after evening misting.
+
+A low-output UVB light (T5 HO 5 to 6%) on a 10 to 12 hour cycle is now recommended. While not historically considered mandatory, UVB improves calcium metabolism and supports healthy circadian rhythms.`,
+      diet: `A commercial crested gecko diet (CGD) such as Repashy or Pangea forms the nutritional foundation for gargoyle geckos. Offer the mixed CGD in a raised dish every 2 to 3 days, removing and refreshing it every 48 hours to prevent spoilage. Gargoyle geckos are slightly less enthusiastic about CGD than crested geckos on average, so offering a variety of flavors and brands can help maintain consistent intake.
+
+Supplement with live feeder insects 1 to 2 times per week: dubia roaches, crickets, small hornworms, and silkworms. Gut-load all insects 24 to 48 hours before offering. Appropriately size prey to no wider than the space between the gecko's eyes.
+
+Dust insects with calcium w/D3 2 to 3 times per week and a reptile multivitamin once per week. A small dish of pure calcium powder in the enclosure allows the gecko to self-supplement as needed. Fresh dechlorinated water in a shallow dish should always be available.
+
+Fruit-based treats (mashed mango or papaya) can be offered occasionally as enrichment and variety, but should not replace CGD.`,
+      enrichment: `Gargoyle geckos are often described as the ideal handler's gecko in the New Caledonian gecko family. Their slower, more deliberate movement and firmer grip make them significantly more predictable than crested geckos, and they rarely jump suddenly. Many individuals become extremely calm and relaxed with regular handling.
+
+Provide climbing structures at multiple levels — cork bark rounds, thick branches, and sturdy plant stems. Unlike crested geckos, gargoyle geckos are heavier and need more substantial perching. Thin twigs that flex under their weight are less appropriate than the sturdier options crested geckos enjoy.
+
+Gargoyle geckos are most active in the evening and at night. Handle gently at dusk when they are naturally alert. Allow the gecko to move voluntarily rather than forcing or restricting movement. Sessions of 10 to 20 minutes a few times per week build trust effectively.
+
+Tail autotomy (voluntary tail-dropping as a defense mechanism) is possible in gargoyle geckos, though they are somewhat less prone to this than crested geckos. The tail partially regenerates but looks different from the original. Avoid grabbing or restraining the tail.`,
+      health: `Dysecdysis (stuck shed) is the most common health issue. The toes are the most critical area — retained shed on the toes constricts blood flow and can lead to digit loss. A moist hide with damp sphagnum moss prevents most shedding problems. If stuck shed is present, soak briefly in shallow lukewarm water and gently remove with a damp cotton swab.
+
+Metabolic Bone Disease (MBD) results from inadequate calcium or vitamin D3. Early signs include leg trembling, rubber jaw, and difficulty walking. Consistent supplementation and UVB exposure prevent it entirely. Do not skip supplementation.
+
+Tail drops can occur from rough handling, predator-like grasps from above, or significant stress. The tail regrows partially. While not life-threatening, prevent it through calm, gentle handling that allows the gecko to move voluntarily.
+
+Maintain temperatures below 85 degrees F at all times. Heat stress is a genuine welfare risk in gargoyle geckos. During summer, monitor enclosure temperatures carefully. Annual wellness checks with a reptile-savvy vet are recommended.`,
+      checklist: ["18x18x24\" arboreal enclosure", "Coconut fiber or bioactive substrate", "UVB T5 HO (low output)", "Thermometer and hygrometer", "Commercial crested gecko diet", "Dubia roaches and crickets", "Calcium + D3 and multivitamin", "Cork bark and branches", "Live or artificial plants", "Misting bottle"],
+    },
+    faqs: [
+      { q: "How are gargoyle geckos different from crested geckos?", a: "Gargoyle and crested geckos share nearly identical care requirements but differ in a few key ways. Gargoyle geckos are stockier and more muscular, with bumpy skin and a horned head that gives them their name. They are slightly less skittish, tolerate handling well, and have a higher protein requirement that benefits from more frequent insect feedings. Both species eat commercial crested gecko diet, need no supplemental heat in most homes, and thrive at the same temperature and humidity ranges." },
+      { q: "Do gargoyle geckos regrow their tails?", a: "Yes — unlike crested geckos, gargoyle geckos can regenerate dropped tails. The regrown tail looks different from the original: smoother, lacking original markings, and slightly blunter in shape. The gecko suffers no permanent health consequences from the loss. Tail drops are triggered by extreme stress, rough handling, or combat between geckos. Gentle, calm handling prevents the vast majority of unnecessary tail drops." },
+      { q: "What do gargoyle geckos eat?", a: "Gargoyle geckos thrive on a commercial crested gecko diet (CGD) like Repashy or Pangea as their nutritional foundation. Because they are more insectivorous than crested geckos, live insects should be offered 2 to 3 times per week — dubia roaches, crickets, and hornworms are excellent choices. All insects should be gut-loaded and dusted with calcium w/D3 before feeding. Occasional fruit-based purees can be offered as a treat." },
+      { q: "How big do gargoyle geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 60 to 80 grams, making them slightly more robust than crested geckos. They reach sexual maturity around 15 to 18 months but continue filling out until 24 to 30 months. Females should not be paired with males until they reach at least 40 grams — breeding underweight females carries serious health risks." },
+      { q: "Are gargoyle geckos good pets for beginners?", a: "Yes, with some research. Gargoyle geckos are excellent for anyone prepared for their slightly higher insect requirements compared to crested geckos. They are hardier than most tropical reptiles, need no supplemental heating in most homes, and become quite handleable with regular gentle interaction. They sit between a true beginner species and intermediate species — beginners who do their homework do very well with gargoyle geckos." },
+    ],
+  },
+  {
+    id: "leaf-tailed-gecko",
+    name: "Leaf-Tailed Gecko",
+    emoji: "🦎",
+    difficulty: "Advanced",
+    petType: "Geckos",
+    image: "/assets/guides/leaf-tailed-gecko.jpg",
+    tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
+    funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x36 in+ tall planted enclosure", low: 150, high: 300 },
+        { item: "Live plants (pothos, ficus, bromeliads)", low: 40, high: 80 },
+        { item: "Automatic misting system", low: 60, high: 130 },
+        { item: "Digital hygrometer", low: 15, high: 25 },
+        { item: "Cooling solution (fan or AC assist, varies)", low: 0, high: 150 },
+        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
+        { item: "Cork bark for hiding structures", low: 25, high: 50 },
+      ],
+      annual: [
+        { item: "Gut-loaded insect feeders", low: 100, high: 180 },
+        { item: "Calcium w/D3 supplement", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 45, high: 80 },
+        { item: "Electricity (misting system, lighting)", low: 40, high: 80 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `Tall, well-planted enclosures are absolutely essential for leaf-tailed geckos. A minimum of 24x24x36" for smaller species (Uroplatus ebenaui, U. phantasticus) and significantly larger for bigger species like U. fimbriatus. Use live plants extensively throughout the enclosure — they are not decorative but critical for humidity regulation, camouflage opportunities, and the gecko's psychological wellbeing.
+
+Temperature must remain cool: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. Never allow temperatures to exceed 80 degrees F. This is one of the most common husbandry failures — leaf-tailed geckos are highland species from Madagascar and require cool temperatures that most other reptiles would find uncomfortably cold. An air conditioner or cooling system may be necessary in summer.
+
+Humidity must stay at 80 to 100%, achieved through extensive live planting, a fine misting system running multiple times daily, and natural substrate that holds moisture. An automatic misting system is highly recommended over manual misting for consistency.`,
+      diet: `Leaf-tailed geckos are strictly insectivorous. Appropriate feeders include crickets, dubia roaches, and isopods. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly.
+
+Feed every 2 to 3 days in the evening, when these nocturnal geckos are naturally active. Prey should be no larger than the space between the gecko's eyes. Remove uneaten prey promptly — live insects in the enclosure at night can disturb and stress the gecko.
+
+Larger species (U. fimbriatus) can be offered larger roaches, hornworms, and silkworms. Smaller pygmy species require appropriately tiny prey — fruit flies, pinhead crickets, and very small roaches.`,
+      enrichment: `Leaf-tailed geckos are quintessential display animals — they are not for handling. Their incredible camouflage, alien appearance, and natural behavior in a well-planted vivarium are the entire appeal. Setting up a beautiful planted enclosure and watching these extraordinary geckos disappear into it is the experience.
+
+Provide cork bark pieces, driftwood, dried leaf litter, and branching at multiple heights among the live plants. The complexity of the environment directly supports natural camouflage behavior — a leaf-tailed gecko in a sparse enclosure is a stressed gecko with nowhere to hide.
+
+Minimize handling to absolute necessity (vet visits, enclosure cleaning). Even brief handling causes significant stress that suppresses immune function and appetite. These are advanced, specialist display animals for experienced keepers.`,
+      health: `Leaf-tailed geckos are among the most husbandry-sensitive reptiles in the hobby. They decline rapidly when any parameter is off — temperature too high, humidity too low, enclosure too sparse, or handling too frequent. Attentive daily monitoring of temperature, humidity, and feeding response is essential.
+
+Dehydration is a primary and rapidly lethal concern. Signs include sunken eyes, wrinkled skin, and refusal to eat. Consistent high humidity (80 to 100%) and a misting system that creates regular droplets on leaves prevents dehydration in a species that rarely drinks from dishes.
+
+Temperature spikes above 80 degrees F cause acute heat stress. In summer, this requires active cooling measures. Stress-related anorexia is common after handling, shipping, or any significant husbandry disturbance. A gecko that has not eaten for more than 2 weeks needs veterinary assessment. Annual wellness checks with a reptile vet experienced in geckos are strongly recommended.`,
+      checklist: ["24x24x36\"+ tall planted enclosure", "Live plants (pothos, ficus, bromeliads)", "Automatic misting system", "Digital hygrometer (target 70 to 90%)", "Cool-temperature environment (65 to 75 degrees F)", "Low-output UVB (T5 HO)", "Gut-loaded insect feeders", "Calcium w/D3 supplement", "Cork bark for hiding structures", "Emergency reptile vet contact"],
+    },
+    faqs: [
+      { q: "Are leaf-tailed geckos good pets?", a: "Leaf-tailed geckos are advanced specialist display animals, not pets in the conventional sense. They are highly sensitive to husbandry errors, do not tolerate handling, and decline rapidly when any parameter is off. For experienced keepers who can provide the precise conditions they need, watching them in a well-planted vivarium is extraordinary. For beginners, they are not appropriate." },
+      { q: "What temperature do leaf-tailed geckos require?", a: "Cool temperatures: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. This is the most common husbandry failure — leaf-tailed geckos are highland Madagascar species that require temperatures most reptiles would find uncomfortably cold. Temperatures above 80 degrees F cause acute heat stress. An air conditioner or cooling system may be necessary in summer." },
+      { q: "How difficult are leaf-tailed geckos to keep?", a: "Very. They require a highly specific combination of cool temperatures, 80 to 100% humidity, dense live planting, an automatic misting system, strong UVB, and extremely minimal handling. They mask illness effectively and decline rapidly once husbandry fails. They are considered one of the most demanding reptiles in the hobby and should only be kept by experienced keepers with significant resources dedicated to their specific needs." },
+      { q: "What do leaf-tailed geckos eat?", a: "Strictly insectivorous. Crickets, dubia roaches, and isopods are appropriate feeders. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly. Feed every 2 to 3 days in the evening when they are naturally active." },
+      { q: "How long do leaf-tailed geckos live?", a: "With exceptional care — cool temperatures consistently maintained, high humidity, live-planted vivarium, and virtually no handling — leaf-tailed geckos can live 5 to 10 years in captivity. Their sensitive nature means longevity depends heavily on getting every parameter right from day one." },
     ],
   },
   {
@@ -134,74 +331,6 @@ Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A
       { q: "Do leopard geckos need a heat lamp?", a: "No. Leopard geckos thermoregulate via belly heat, not basking. An under-tank heater (UTH) on a quality thermostat is the preferred heat source, targeting a warm-side surface temperature of 88 to 92 degrees F. Overhead heat lamps can supplement ambient temperature if the room is cold, but they are not the primary heat source for this species." },
       { q: "How do I know if my leopard gecko is sick?", a: "Key warning signs include significant weight loss (weigh weekly on a kitchen scale), lethargy during their active evening hours, refusal to eat for more than two weeks, stuck shed on toes or tail tip, cloudy eyes outside of pre-shed, or any respiratory sounds like clicking or wheezing. Locate a reptile-experienced vet before an emergency arises." },
       { q: "Can I keep two leopard geckos together?", a: "Same-sex females can sometimes cohabit in a large enclosure with multiple hides and feeding stations, but conflicts are still common. Two males must never be housed together. Males and females should not be housed together outside of brief, supervised breeding sessions. Most experienced keepers recommend one gecko per enclosure to eliminate competition stress entirely." },
-    ],
-  },
-  {
-    id: "gargoyle-gecko",
-    name: "Gargoyle Gecko",
-    emoji: "🦎",
-    difficulty: "Beginner",
-    petType: "Geckos",
-    image: "/assets/guides/gargoyle-gecko.jpg",
-    tagline: "The stocky, grippy gecko with a face only a reptile lover could adore!",
-    funFact: "Gargoyle geckos can drop and partially regenerate their tails, but the regrown version looks different from the original.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
-        { item: "Cork bark and branches", low: 20, high: 40 },
-        { item: "Live or artificial plants", low: 25, high: 45 },
-        { item: "Misting bottle", low: 5, high: 15 },
-      ],
-      annual: [
-        { item: "Commercial crested gecko diet", low: 40, high: 70 },
-        { item: "Dubia roaches and crickets", low: 70, high: 130 },
-        { item: "Calcium + D3 and multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (lighting)", low: 25, high: 45 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `An 18x18x24" or larger enclosure works well for a single adult gargoyle gecko, with height being the priority over floor space. Like crested geckos, gargoyles are arboreal and spend most of their time off the ground. A front-opening design is strongly preferred for easier, less stressful access.
-
-Cork bark rounds, thick and thin branches, and live or high-quality artificial plants at varying heights create the layered climbing environment these geckos need. Gargoyle geckos are sturdier and more deliberate climbers than crested geckos — they grip surfaces firmly and move with purpose, which makes them easier to handle and less prone to sudden jumps.
-
-Temperature should stay between 72 and 80 degrees F during the day, with a nighttime drop to 65 to 72 degrees F. Gargoyle geckos share the crested gecko's sensitivity to heat — temperatures above 85 degrees F can be fatal. No supplemental heat is required in most homes. Humidity should follow the same wet-dry cycling as crested geckos: 50 to 70% during the day, spiking briefly after evening misting.
-
-A low-output UVB light (T5 HO 5 to 6%) on a 10 to 12 hour cycle is now recommended. While not historically considered mandatory, UVB improves calcium metabolism and supports healthy circadian rhythms.`,
-      diet: `A commercial crested gecko diet (CGD) such as Repashy or Pangea forms the nutritional foundation for gargoyle geckos. Offer the mixed CGD in a raised dish every 2 to 3 days, removing and refreshing it every 48 hours to prevent spoilage. Gargoyle geckos are slightly less enthusiastic about CGD than crested geckos on average, so offering a variety of flavors and brands can help maintain consistent intake.
-
-Supplement with live feeder insects 1 to 2 times per week: dubia roaches, crickets, small hornworms, and silkworms. Gut-load all insects 24 to 48 hours before offering. Appropriately size prey to no wider than the space between the gecko's eyes.
-
-Dust insects with calcium w/D3 2 to 3 times per week and a reptile multivitamin once per week. A small dish of pure calcium powder in the enclosure allows the gecko to self-supplement as needed. Fresh dechlorinated water in a shallow dish should always be available.
-
-Fruit-based treats (mashed mango or papaya) can be offered occasionally as enrichment and variety, but should not replace CGD.`,
-      enrichment: `Gargoyle geckos are often described as the ideal handler's gecko in the New Caledonian gecko family. Their slower, more deliberate movement and firmer grip make them significantly more predictable than crested geckos, and they rarely jump suddenly. Many individuals become extremely calm and relaxed with regular handling.
-
-Provide climbing structures at multiple levels — cork bark rounds, thick branches, and sturdy plant stems. Unlike crested geckos, gargoyle geckos are heavier and need more substantial perching. Thin twigs that flex under their weight are less appropriate than the sturdier options crested geckos enjoy.
-
-Gargoyle geckos are most active in the evening and at night. Handle gently at dusk when they are naturally alert. Allow the gecko to move voluntarily rather than forcing or restricting movement. Sessions of 10 to 20 minutes a few times per week build trust effectively.
-
-Tail autotomy (voluntary tail-dropping as a defense mechanism) is possible in gargoyle geckos, though they are somewhat less prone to this than crested geckos. The tail partially regenerates but looks different from the original. Avoid grabbing or restraining the tail.`,
-      health: `Dysecdysis (stuck shed) is the most common health issue. The toes are the most critical area — retained shed on the toes constricts blood flow and can lead to digit loss. A moist hide with damp sphagnum moss prevents most shedding problems. If stuck shed is present, soak briefly in shallow lukewarm water and gently remove with a damp cotton swab.
-
-Metabolic Bone Disease (MBD) results from inadequate calcium or vitamin D3. Early signs include leg trembling, rubber jaw, and difficulty walking. Consistent supplementation and UVB exposure prevent it entirely. Do not skip supplementation.
-
-Tail drops can occur from rough handling, predator-like grasps from above, or significant stress. The tail regrows partially. While not life-threatening, prevent it through calm, gentle handling that allows the gecko to move voluntarily.
-
-Maintain temperatures below 85 degrees F at all times. Heat stress is a genuine welfare risk in gargoyle geckos. During summer, monitor enclosure temperatures carefully. Annual wellness checks with a reptile-savvy vet are recommended.`,
-      checklist: ["18x18x24\" arboreal enclosure", "Coconut fiber or bioactive substrate", "UVB T5 HO (low output)", "Thermometer and hygrometer", "Commercial crested gecko diet", "Dubia roaches and crickets", "Calcium + D3 and multivitamin", "Cork bark and branches", "Live or artificial plants", "Misting bottle"],
-    },
-    faqs: [
-      { q: "How are gargoyle geckos different from crested geckos?", a: "Gargoyle and crested geckos share nearly identical care requirements but differ in a few key ways. Gargoyle geckos are stockier and more muscular, with bumpy skin and a horned head that gives them their name. They are slightly less skittish, tolerate handling well, and have a higher protein requirement that benefits from more frequent insect feedings. Both species eat commercial crested gecko diet, need no supplemental heat in most homes, and thrive at the same temperature and humidity ranges." },
-      { q: "Do gargoyle geckos regrow their tails?", a: "Yes — unlike crested geckos, gargoyle geckos can regenerate dropped tails. The regrown tail looks different from the original: smoother, lacking original markings, and slightly blunter in shape. The gecko suffers no permanent health consequences from the loss. Tail drops are triggered by extreme stress, rough handling, or combat between geckos. Gentle, calm handling prevents the vast majority of unnecessary tail drops." },
-      { q: "What do gargoyle geckos eat?", a: "Gargoyle geckos thrive on a commercial crested gecko diet (CGD) like Repashy or Pangea as their nutritional foundation. Because they are more insectivorous than crested geckos, live insects should be offered 2 to 3 times per week — dubia roaches, crickets, and hornworms are excellent choices. All insects should be gut-loaded and dusted with calcium w/D3 before feeding. Occasional fruit-based purees can be offered as a treat." },
-      { q: "How big do gargoyle geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 60 to 80 grams, making them slightly more robust than crested geckos. They reach sexual maturity around 15 to 18 months but continue filling out until 24 to 30 months. Females should not be paired with males until they reach at least 40 grams — breeding underweight females carries serious health risks." },
-      { q: "Are gargoyle geckos good pets for beginners?", a: "Yes, with some research. Gargoyle geckos are excellent for anyone prepared for their slightly higher insect requirements compared to crested geckos. They are hardier than most tropical reptiles, need no supplemental heating in most homes, and become quite handleable with regular gentle interaction. They sit between a true beginner species and intermediate species — beginners who do their homework do very well with gargoyle geckos." },
     ],
   },
   {
@@ -340,135 +469,6 @@ Only purchase captive-bred individuals from reputable breeders whenever possible
       { q: "What do tokay geckos eat?", a: "Tokay geckos are insectivorous carnivores — they will not eat commercial crested gecko diet. Offer appropriately sized live insects: dubia roaches, crickets, mealworms, and superworms. Adults can occasionally have small pinky mice. Gut-load all insects 24 to 48 hours before offering and dust with calcium w/D3 2 to 3 times per week." },
       { q: "How big do tokay geckos get?", a: "Tokay geckos are one of the largest gecko species kept in captivity. Adults typically reach 11 to 15 inches total length — males at the larger end, females slightly smaller. Their size, powerful jaws, and vivid spotted coloration make them impressive display animals." },
       { q: "How long do tokay geckos live?", a: "With appropriate housing — a tall arboreal enclosure, 60 to 80% humidity, and temperatures of 82 to 88 degrees F during the day — tokay geckos commonly live 10 to 20 years in captivity. Annual wellness checks with a reptile-savvy veterinarian are recommended, particularly for wild-caught animals that may carry parasites." },
-    ],
-  },
-  {
-    id: "african-fat-tail",
-    name: "African Fat-Tailed Gecko",
-    emoji: "🦎",
-    difficulty: "Beginner",
-    petType: "Geckos",
-    image: "/assets/guides/african-fat-tail.jpg",
-    tagline: "The calm, velvety cousin of the leopard gecko: gentle as can be!",
-    funFact: "African fat-tailed geckos store fat in their wide, sausage-shaped tails as an energy reserve, just like leopard geckos. A plump tail is a sign of a healthy, well-fed gecko!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "30x12x12 in or larger enclosure", low: 90, high: 170 },
-        { item: "Under-tank heater with quality thermostat", low: 40, high: 70 },
-        { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
-        { item: "Damp sphagnum moss for moist hide", low: 5, high: 10 },
-        { item: "Digital thermometer (IR gun ideal)", low: 15, high: 30 },
-        { item: "Shallow water dish", low: 8, high: 15 },
-        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
-      ],
-      annual: [
-        { item: "Dubia roaches, crickets, mealworms", low: 90, high: 160 },
-        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
-        { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
-        { item: "Electricity (heat)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
-      ],
-    },
-    sections: {
-      housing: `A 30x12x12" (20-gallon long) enclosure is the minimum for one adult African fat-tailed gecko, though a 36x18" or larger provides a better thermal gradient and more enrichment space. Like leopard geckos, AFTs are terrestrial — floor space is more important than height.
-
-Provide three hides: a warm hide (floor temperature 88 to 92 degrees F under the UTH), a cool hide (75 to 78 degrees F), and a moist hide filled with damp sphagnum moss on the warm side. The moist hide is critical — AFTs require higher humidity than leopard geckos and chronic dryness causes persistent shedding problems.
-
-Aim for 50 to 60% ambient humidity, which is higher than the 30 to 40% appropriate for leopard geckos. Cypress mulch or coconut fiber substrate help maintain this humidity level while remaining easy to clean. Use an under-tank heater on a quality thermostat as the primary heat source, verified with an infrared temperature gun. Low-output UVB is now recommended by reptile veterinarians.`,
-      diet: `African fat-tailed geckos are strict insectivores. Offer crickets, dubia roaches, and black soldier fly larvae as primary feeders. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. Prey should be no wider than the space between the gecko's eyes.
-
-Gut-load all feeder insects 24 to 48 hours before offering. Dust with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults. A reptile multivitamin once weekly. A small dish of pure calcium powder placed in the enclosure allows the gecko to self-supplement as needed — this is particularly important for reproductive females.
-
-Fresh, dechlorinated water in a shallow dish must always be available. Unlike many reptiles, AFTs are relatively good about drinking from dishes and should be offered access continuously.`,
-      enrichment: `African fat-tailed geckos are among the calmest and most handleable gecko species available. Their slow, deliberate movements and natural docility make them ideal for keepers seeking a handleable gecko companion. With regular, gentle interaction, most become very relaxed and comfortable with human contact.
-
-Provide multiple hides at both ends of the thermal gradient, flat cork bark pieces and rock slates as basking and resting surfaces, and textured substrate for natural exploration. They are crepuscular, most active at dusk and dawn. Handle during these activity windows for the most relaxed interactions.
-
-Avoid handling during shed (identifiable by a dull, slightly grayish skin tone and clouding of the eyes). Always wash hands before handling to avoid introducing any chemical residues to the gecko's skin.`,
-      health: `Stuck shed (dysecdysis) is the most common health issue and is almost always prevented by a properly maintained moist hide. Stuck shed on the toes is the most dangerous — it constricts blood flow and leads to digit loss if not addressed. Soak the gecko briefly in shallow lukewarm water and gently remove retained shed with a damp cotton swab.
-
-Metabolic Bone Disease from inadequate calcium or vitamin D3 causes trembling, weakness, and skeletal deformities. Consistent supplementation and UVB exposure prevent it. MBD is entirely preventable with correct husbandry.
-
-Parasites are less common in AFTs than in many other gecko species but annual fecal exams are recommended, especially for wild-caught animals. AFTs are sensitive to humidity — chronically low humidity causes not just shedding problems but respiratory stress and immune suppression. Annual vet checks with a reptile-experienced veterinarian are recommended.`,
-      checklist: [
-        "30x12x12\" or larger terrestrial enclosure",
-        "Under-tank heater with quality thermostat",
-        "3 hides (warm, cool, moist)",
-        "Damp sphagnum moss for moist hide",
-        "Digital thermometer (IR gun ideal)",
-        "Calcium w/D3 + multivitamin supplements",
-        "Calcium dish (always in enclosure)",
-        "Shallow water dish",
-        "Dubia roaches, crickets, mealworms",
-        "Low-output UVB light (optional but beneficial)",
-      ],
-    },
-    faqs: [
-      { q: "How are African fat-tailed geckos different from leopard geckos?", a: "They are closely related and share similar husbandry, but African fat-tailed geckos (AFTs) require notably higher ambient humidity — 50 to 60% versus the leopard gecko's 30 to 40%. AFTs are also generally calmer and more docile, and they have a velvety skin texture quite different from the leopard gecko's pebbly appearance. Both species use an under-tank heater for belly heat and are strict insectivores." },
-      { q: "Do African fat-tailed geckos need a humid hide?", a: "Yes — the moist hide is critical, and AFTs need it more consistently than leopard geckos. Fill a hide box with damp sphagnum moss and keep it on the warm side. They require higher ambient humidity (50 to 60%) than most other ground-dwelling geckos, and the moist hide provides the microhabitat that prevents persistent stuck shed, particularly on the toes." },
-      { q: "What do African fat-tailed geckos eat?", a: "Strict insectivores. Crickets, dubia roaches, and black soldier fly larvae are the best staples. Mealworms can be offered occasionally. Feed juveniles every other day, adults 2 to 3 times per week. All feeders must be gut-loaded 24 to 48 hours before offering and dusted with calcium w/D3 at every juvenile feeding and 2 to 3 times per week for adults." },
-      { q: "How big do African fat-tailed geckos get?", a: "Adults typically reach 7 to 9 inches in total length and 35 to 80 grams. Females are usually smaller than males. The tail, which stores fat reserves just like the leopard gecko's, should be plump and rounded in a healthy, well-fed gecko." },
-      { q: "How long do African fat-tailed geckos live?", a: "With correct humidity, appropriate thermal gradient (88 to 92 degrees F warm-side floor temperature via UTH on thermostat), and consistent supplementation, African fat-tailed geckos commonly live 10 to 20 years in captivity. They are robust animals when their humidity requirement is met." },
-    ],
-  },
-  {
-    id: "leaf-tailed-gecko",
-    name: "Leaf-Tailed Gecko",
-    emoji: "🦎",
-    difficulty: "Advanced",
-    petType: "Geckos",
-    image: "/assets/guides/leaf-tailed-gecko.jpg",
-    tagline: "Nature's ultimate camouflage artist, hiding in plain sight!",
-    funFact: "Satanic leaf-tailed geckos (Uroplatus phantasticus) look exactly like dead, decaying leaves, right down to the 'bite marks' and brown patches on their edges!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x36 in+ tall planted enclosure", low: 150, high: 300 },
-        { item: "Live plants (pothos, ficus, bromeliads)", low: 40, high: 80 },
-        { item: "Automatic misting system", low: 60, high: 130 },
-        { item: "Digital hygrometer", low: 15, high: 25 },
-        { item: "Cooling solution (fan or AC assist, varies)", low: 0, high: 150 },
-        { item: "Low-output UVB (T5 HO)", low: 45, high: 80 },
-        { item: "Cork bark for hiding structures", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Gut-loaded insect feeders", low: 100, high: 180 },
-        { item: "Calcium w/D3 supplement", low: 15, high: 25 },
-        { item: "UVB bulb replacement", low: 45, high: 80 },
-        { item: "Electricity (misting system, lighting)", low: 40, high: 80 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
-      ],
-    },
-    sections: {
-      housing: `Tall, well-planted enclosures are absolutely essential for leaf-tailed geckos. A minimum of 24x24x36" for smaller species (Uroplatus ebenaui, U. phantasticus) and significantly larger for bigger species like U. fimbriatus. Use live plants extensively throughout the enclosure — they are not decorative but critical for humidity regulation, camouflage opportunities, and the gecko's psychological wellbeing.
-
-Temperature must remain cool: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. Never allow temperatures to exceed 80 degrees F. This is one of the most common husbandry failures — leaf-tailed geckos are highland species from Madagascar and require cool temperatures that most other reptiles would find uncomfortably cold. An air conditioner or cooling system may be necessary in summer.
-
-Humidity must stay at 80 to 100%, achieved through extensive live planting, a fine misting system running multiple times daily, and natural substrate that holds moisture. An automatic misting system is highly recommended over manual misting for consistency.`,
-      diet: `Leaf-tailed geckos are strictly insectivorous. Appropriate feeders include crickets, dubia roaches, and isopods. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly.
-
-Feed every 2 to 3 days in the evening, when these nocturnal geckos are naturally active. Prey should be no larger than the space between the gecko's eyes. Remove uneaten prey promptly — live insects in the enclosure at night can disturb and stress the gecko.
-
-Larger species (U. fimbriatus) can be offered larger roaches, hornworms, and silkworms. Smaller pygmy species require appropriately tiny prey — fruit flies, pinhead crickets, and very small roaches.`,
-      enrichment: `Leaf-tailed geckos are quintessential display animals — they are not for handling. Their incredible camouflage, alien appearance, and natural behavior in a well-planted vivarium are the entire appeal. Setting up a beautiful planted enclosure and watching these extraordinary geckos disappear into it is the experience.
-
-Provide cork bark pieces, driftwood, dried leaf litter, and branching at multiple heights among the live plants. The complexity of the environment directly supports natural camouflage behavior — a leaf-tailed gecko in a sparse enclosure is a stressed gecko with nowhere to hide.
-
-Minimize handling to absolute necessity (vet visits, enclosure cleaning). Even brief handling causes significant stress that suppresses immune function and appetite. These are advanced, specialist display animals for experienced keepers.`,
-      health: `Leaf-tailed geckos are among the most husbandry-sensitive reptiles in the hobby. They decline rapidly when any parameter is off — temperature too high, humidity too low, enclosure too sparse, or handling too frequent. Attentive daily monitoring of temperature, humidity, and feeding response is essential.
-
-Dehydration is a primary and rapidly lethal concern. Signs include sunken eyes, wrinkled skin, and refusal to eat. Consistent high humidity (80 to 100%) and a misting system that creates regular droplets on leaves prevents dehydration in a species that rarely drinks from dishes.
-
-Temperature spikes above 80 degrees F cause acute heat stress. In summer, this requires active cooling measures. Stress-related anorexia is common after handling, shipping, or any significant husbandry disturbance. A gecko that has not eaten for more than 2 weeks needs veterinary assessment. Annual wellness checks with a reptile vet experienced in geckos are strongly recommended.`,
-      checklist: ["24x24x36\"+ tall planted enclosure", "Live plants (pothos, ficus, bromeliads)", "Automatic misting system", "Digital hygrometer (target 70 to 90%)", "Cool-temperature environment (65 to 75 degrees F)", "Low-output UVB (T5 HO)", "Gut-loaded insect feeders", "Calcium w/D3 supplement", "Cork bark for hiding structures", "Emergency reptile vet contact"],
-    },
-    faqs: [
-      { q: "Are leaf-tailed geckos good pets?", a: "Leaf-tailed geckos are advanced specialist display animals, not pets in the conventional sense. They are highly sensitive to husbandry errors, do not tolerate handling, and decline rapidly when any parameter is off. For experienced keepers who can provide the precise conditions they need, watching them in a well-planted vivarium is extraordinary. For beginners, they are not appropriate." },
-      { q: "What temperature do leaf-tailed geckos require?", a: "Cool temperatures: 65 to 75 degrees F during the day, dropping to 60 to 68 degrees F at night. This is the most common husbandry failure — leaf-tailed geckos are highland Madagascar species that require temperatures most reptiles would find uncomfortably cold. Temperatures above 80 degrees F cause acute heat stress. An air conditioner or cooling system may be necessary in summer." },
-      { q: "How difficult are leaf-tailed geckos to keep?", a: "Very. They require a highly specific combination of cool temperatures, 80 to 100% humidity, dense live planting, an automatic misting system, strong UVB, and extremely minimal handling. They mask illness effectively and decline rapidly once husbandry fails. They are considered one of the most demanding reptiles in the hobby and should only be kept by experienced keepers with significant resources dedicated to their specific needs." },
-      { q: "What do leaf-tailed geckos eat?", a: "Strictly insectivorous. Crickets, dubia roaches, and isopods are appropriate feeders. Gut-load all prey 24 to 48 hours before feeding. Dust with calcium w/D3 at every feeding for juveniles and every other feeding for adults, plus a reptile multivitamin once weekly. Feed every 2 to 3 days in the evening when they are naturally active." },
-      { q: "How long do leaf-tailed geckos live?", a: "With exceptional care — cool temperatures consistently maintained, high humidity, live-planted vivarium, and virtually no handling — leaf-tailed geckos can live 5 to 10 years in captivity. Their sensitive nature means longevity depends heavily on getting every parameter right from day one." },
     ],
   },
 ];

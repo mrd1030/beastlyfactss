@@ -1,5 +1,140 @@
 export const lizardGuides = [
   {
+    id: "ackie-monitor",
+    name: "Ackie Monitor",
+    emoji: "🦎",
+    difficulty: "Advanced",
+    petType: "Lizards",
+    image: "/assets/guides/ackie-monitor.jpg",
+    tagline: "The miniature Komodo dragon with a huge personality!",
+    funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "6x3x3 ft+ enclosure", low: 300, high: 600 },
+        { item: "Deep substrate (12 in+ sandy soil mix)", low: 80, high: 150 },
+        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
+        { item: "Infrared thermometer gun", low: 25, high: 40 },
+        { item: "Cork bark and rock structures", low: 40, high: 80 },
+        { item: "Water dish", low: 10, high: 20 },
+      ],
+      annual: [
+        { item: "Large insect variety", low: 200, high: 350 },
+        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 70, high: 110 },
+        { item: "Electricity (high-wattage basking)", low: 100, high: 180 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `A 6x3x3 ft enclosure is the minimum for a pair of ackie monitors — and ackies do well and often prefer living in bonded pairs or trios when raised together. Single animals can be kept in slightly smaller spaces but will benefit from the larger footprint for activity and thermal gradient establishment.
+
+The deep substrate is the defining feature of an ackie monitor setup. A minimum of 12 inches of a sandy soil mixture (60% organic topsoil, 40% playsand is a common ratio) must be provided. Ackies are native to the arid rocky outcrops of western and central Australia and spend large portions of their time burrowing to thermoregulate. Burrowing is not optional behavior — it is essential for health and wellbeing.
+
+The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light. This sounds extreme because it is — ackie monitors require these temperatures to fully thermoregulate, activate their immune system, and digest prey efficiently. Without adequate basking temperatures, even an otherwise well-kept ackie will show chronic health problems, poor growth, and reduced lifespan. Use high-wattage halogen or flood bulbs and verify surface temperatures with an infrared temperature gun.
+
+Strong desert UVB (T5 HO Arcadia Dragon 12% or equivalent) on a 10 to 12 hour cycle is mandatory. The cool side of the enclosure should be 80 to 85 degrees F ambient. Humidity in the burrow area (achieved by allowing one section of the substrate to stay slightly more moist than the rest) should be 40 to 60%.`,
+      diet: `Ackie monitors are primarily insectivorous in the wild, and their captive diet should reflect this. Large dubia roaches, crickets, superworms, hornworms, and silkworms form the core of a balanced diet. Gut-load all insects 24 to 48 hours before feeding — the nutritional quality of a gut-loaded insect versus an empty one is dramatically different.
+
+Adult ackies can be offered occasional pinky or fuzzy mice as a protein supplement — not as a staple. Whole prey items offer nutritional completeness when used judiciously. Eggs (quail or scrambled chicken eggs) are another excellent nutritional supplement offered occasionally.
+
+Feed juveniles daily with as many insects as they will actively pursue and eat. Adults eat 3 to 5 times per week. Reduce feeding frequency if the animal is becoming visibly obese (fat deposits around the neck, limbs, and tail base). Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule.
+
+Fresh water in a shallow dish must always be available. Many ackies will soak in their water dish, which supports hydration and shedding. Replace the water daily.`,
+      enrichment: `The deep substrate is the most important enrichment — ackies spend significant time excavating burrow systems that can extend 12 to 24 inches underground. Providing adequate substrate depth allows this natural behavior. Watching an ackie monitor engineer a complex burrow system is one of the most impressive behaviors in the reptile hobby.
+
+Add rock structures (securely stacked so they cannot topple and crush the monitor), cork bark pieces at the surface for additional hiding and temperature regulation spots, and branches for climbing. Ackies are more terrestrial than truly arboreal but will use low branches and rock edges frequently.
+
+Foraging enrichment dramatically improves quality of life for intelligent monitor lizards. Hide insects in the substrate, under rocks, and inside cork bark. Vary feeding locations. Offer live insects that require pursuit. Ackies in enriched environments with foraging opportunities show dramatically more natural, active behavior than those fed in predictable ways.
+
+Young ackies can be fast and defensive and may bite. Consistent, patient handling from a young age produces remarkably tame animals. Adults often become confident and genuinely interactive, approaching their keepers and exploring hands voluntarily.`,
+      health: `Inadequate basking temperature is the most common and most serious husbandry failure in ackie monitors. An ackie that cannot reach 130 to 150 degrees F at the basking surface cannot fully activate its immune system, cannot adequately digest food, and cannot thermoregulate its core body temperature. This leads to chronic immune suppression, poor growth, repeated infections, and a significantly shortened lifespan. Invest in high-quality, high-wattage bulbs and verify temperatures regularly.
+
+Metabolic Bone Disease (MBD) from inadequate UVB or calcium supplementation presents as weak, trembling limbs, rubber jaw, difficulty climbing, and lethargy. Strong UVB and consistent supplementation prevent it.
+
+Parasites — particularly pentastomids (tongue worms) in wild-caught animals — are a significant concern. Source captive-bred animals from reputable breeders whenever possible. Wild-caught ackies frequently carry heavy parasite loads that require veterinary treatment. Annual fecal exams are recommended for all monitors.
+
+Respiratory infections and scale rot can occur if humidity and temperatures are incorrect. Always have a reptile veterinarian with monitor experience identified before acquiring an ackie. These are rewarding but high-maintenance animals that deserve expert veterinary care.`,
+      checklist: ["6x3x3 ft+ enclosure", "Deep substrate (12 inch+ sandy soil mix)", "High-wattage basking bulb (120 to 150 degrees F surface)", "Quality thermostat", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Digital thermometer (IR gun recommended)", "Calcium w/D3 + multivitamin", "Large insect variety", "Cork bark and rock structures", "Water dish + humid microhabitat area"],
+    },
+    faqs: [
+      { q: "How hot does an ackie monitor's basking spot need to be?", a: "120 to 150 degrees F at the basking surface, measured with an infrared temperature gun. This is the most critical parameter in ackie monitor care and the most commonly failed. Without adequate basking temperatures, ackies cannot fully thermoregulate, digest food, or activate their immune systems — leading to chronic health problems. High-wattage halogen or flood bulbs achieve these temperatures effectively." },
+      { q: "Can ackie monitors be kept in pairs or groups?", a: "Yes — ackies often do well and sometimes prefer living in bonded pairs or trios when raised together from a young age. Cohab success depends on having adequate space (6x3x3 ft minimum for a pair), multiple basking sites, and deep substrate for individual burrowing. Monitor for aggression and be prepared to separate if conflict arises." },
+      { q: "What do ackie monitors eat?", a: "Primarily insects in captivity: large dubia roaches, crickets, superworms, hornworms, and silkworms are the staples. Adults can have occasional pinky or fuzzy mice as a protein supplement and quail or scrambled eggs periodically. Gut-load all insects 24 to 48 hours before feeding. Feed juveniles daily, adults 3 to 5 times per week." },
+      { q: "How big do ackie monitors get?", a: "Adults typically reach 24 to 28 inches total length — significantly smaller than most other monitor species, which is one reason ackies are popular. They are powerfully built for their size, with strong legs, sharp claws, and an active, energetic temperament. Their manageable size combined with their big personality makes them the most popular dwarf monitor in the hobby." },
+      { q: "Are ackie monitors good pets?", a: "Yes, for experienced keepers ready for their specific requirements. Ackies are intelligent, active, and become remarkably tame with patient, consistent handling from a young age — many seek out their keepers and explore hands and arms voluntarily. The key commitments are the extreme basking temperatures (verified with an IR gun), deep burrowing substrate, and a diverse insect-heavy diet." },
+    ],
+  },
+  {
+    id: "tegu",
+    name: "Argentine Black and White Tegu",
+    emoji: "🦎",
+    difficulty: "Advanced",
+    petType: "Lizards",
+    image: "/assets/guides/tegu.jpg",
+    tagline: "The dog-like mega-lizard that can learn its own name!",
+    funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Adult housing is often custom-built; setup range reflects that.
+    costs: {
+      setup: [
+        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
+        { item: "High-wattage basking setup", low: 40, high: 70 },
+        { item: "Strong desert UVB (T5 HO 12%+)", low: 80, high: 120 },
+        { item: "Substrate (4-6 in soil/sand mix)", low: 60, high: 120 },
+        { item: "Large water tub for soaking", low: 30, high: 60 },
+        { item: "Quality thermostat", low: 40, high: 70 },
+      ],
+      annual: [
+        { item: "Whole prey and varied diet (rats, eggs, protein)", low: 250, high: 450 },
+        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "UVB bulb replacement", low: 80, high: 120 },
+        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
+        { item: "Annual vet wellness check", low: 70, high: 120 },
+      ],
+    },
+    sections: {
+      housing: `Argentine black and white tegus are among the largest lizards kept as pets and require enclosures that reflect their impressive size. Adults typically reach 3.5 to 4.5 ft for males and 2.5 to 3.5 ft for females, with some males exceeding 5 ft. The minimum enclosure for an adult is 8x4x4 ft, and many dedicated keepers build entire rooms for their tegus — a converted bedroom or large wooden enclosure the size of a garden shed.
+
+A very hot basking spot of 100 to 110 degrees F or higher is required at the surface. Tegus are from the subtropical and tropical regions of South America and require intense heat for digestion and immune function. The ambient warm side should be 85 to 90 degrees F and the cool side 75 to 80 degrees F. Strong desert UVB (T5 HO Arcadia Dragon 12%) is mandatory.
+
+Substrate of 4 to 6 inches minimum is needed for natural burrowing behavior. A 50/50 mix of organic topsoil and play sand works well, as does a commercial reptile bedding mix. Tegus burrow extensively and need substrate they can actually dig into.
+
+Brumation — a winter dormancy period lasting several months — is a natural and necessary part of tegu biology. Beginning in autumn, tegus slow down, stop eating, and eventually become largely inactive. Provide a cool (55 to 65 degrees F), dark brumation space, or allow them to burrow in their enclosure. Do not try to prevent or interrupt brumation; forced wakefulness causes significant health problems.`,
+      diet: `Argentine tegus are true omnivores with a wide-ranging diet that changes with age. Juveniles and young adults eat primarily animal protein: whole prey items like appropriately sized rats and chicks, organ meats (heart, liver), lean ground turkey, and eggs. As tegus mature, plant matter becomes an increasingly important part of the diet — mature adults may be 40 to 60% plant-based in the warmer months.
+
+Whole prey items are ideal for the protein component: rats (frozen/thawed), quail eggs, raw whole chicken or turkey pieces, and shrimp provide nutritional variety. Eggs — especially raw scrambled or hard-boiled — are an excellent regular protein source. Avoid exclusively feeding one prey type.
+
+Plant matter includes dark leafy greens (collard, mustard, dandelion greens), squash, berries (in moderation), and seasonal fruits as treats. Do not over-supplement with fruit, which is high in sugar. Supplement all food with calcium w/D3 and a reptile multivitamin on a regular schedule.
+
+Never feed dog or cat food as a staple — the preservatives, artificial additives, and non-nutritional fillers are inappropriate for tegus despite the protein content. Fresh water must always be available in a large tub they can soak in.`,
+      enrichment: `Argentine tegus are often described as the most dog-like of all reptiles — and this is not hyperbole. Well-socialized adult tegus recognize their names, come when called, follow their keepers around the house, seek out physical contact, and form genuine bonds over time. They are some of the most cognitively sophisticated reptiles accessible to hobbyists.
+
+Provide supervised free-roaming time daily in a tegu-proofed area. Tegus explore confidently, investigate novel objects with their tongues, and interact with household pets (under supervision) and family members. Puzzle feeders, hiding food in different locations, introducing novel safe objects, and training sessions — where the tegu learns to touch a target stick for food rewards — are all excellent enrichment.
+
+Handling from a young age produces the most socialized adults. Juvenile tegus can be fast and defensive. Consistent calm handling sessions, even short ones, over weeks and months produce remarkable results. Adult tegus that have been consistently handled are generally very calm large animals.
+
+Brumation period enrichment means preparing an appropriate cool, dark space and respecting the natural dormancy. Do not disturb a brumating tegu unnecessarily. Check on the animal briefly every 1 to 2 weeks to confirm it is alive and healthy, and offer water occasionally, but do not force feeding or activity.`,
+      health: `Inadequate enclosure size is the most common welfare problem in tegus. A tegu kept in a small enclosure cannot properly thermoregulate, cannot exercise, and cannot express natural behavior — this leads to physical and psychological deterioration. If you cannot provide an 8x4x4 ft or larger adult setup, a tegu is not the right animal for your situation.
+
+Metabolic Bone Disease from inadequate UVB or calcium is less common in tegus than in some other species when husbandry is correct, but still possible. Strong UVB and consistent supplementation prevent it.
+
+Parasites — particularly internal parasites — are common in tegus, especially those sourced from unknown backgrounds or import chains. Annual fecal exams with a reptile vet are recommended. Tegus sourced from reputable captive breeders typically have fewer parasite issues.
+
+These are powerful animals. A tame adult tegu can still cause injury unintentionally — their claws and tail are strong. Approach with confidence, never fear, and never force interactions. A veterinarian with large lizard experience is an essential part of responsible tegu ownership. Annual wellness checks are strongly recommended for all adult tegus.`,
+      checklist: ["8x4x4 ft+ custom enclosure or room", "Very hot basking spot (100 to 110 degrees F+)", "Strong desert UVB (T5 HO 12%+)", "4 to 6 inch substrate (soil/sand mix)", "Large water tub for soaking", "Quality thermostat", "Whole prey and varied diet", "Calcium and multivitamin", "Enrichment objects and puzzle feeders", "Brumation space (cool, dark area)"],
+    },
+    faqs: [
+      { q: "Are tegus really like dogs?", a: "In many meaningful ways, yes. Well-socialized tegus recognize and respond to their names, come when called, follow their keepers around, seek physical contact, and form genuine bonds that deepen over years. They are widely regarded as the most dog-like reptile accessible to hobbyists. This intelligence also means they require enrichment, space, and interaction to thrive." },
+      { q: "What is brumation and do tegus need it?", a: "Brumation is a natural winter dormancy period lasting 3 to 5 months, typically beginning in autumn. Tegus slow dramatically, stop eating, and become largely inactive. This is normal and essential biology — do not attempt to prevent or interrupt it. Provide a cool (55 to 65 degrees F), dark space for brumation. Forced wakefulness during this period causes significant stress and health problems." },
+      { q: "How big do tegus get?", a: "Argentine black and white tegu males typically reach 3.5 to 4.5 feet, with some exceeding 5 feet. Females are 2.5 to 3.5 feet. They are powerfully muscled animals — an adult male tegu is a substantial animal requiring an 8x4x4 ft minimum enclosure, and many experienced keepers convert entire rooms to accommodate them properly." },
+      { q: "What do tegus eat?", a: "True omnivores with age-dependent ratios. Juveniles eat primarily animal protein: whole prey (rats, quail, chicks), organ meats, raw eggs, and lean ground turkey. As they mature, plant matter becomes increasingly important — adults may be 40 to 60% plant-based during the warmer months. Eggs are an excellent regular protein source at any age. Avoid dog or cat food as a staple." },
+      { q: "How long do tegus live?", a: "15 to 20 years with appropriate care, proper diet, adequate housing, and annual wellness veterinary checks. A tegu is a multi-decade commitment. Their cognitive sophistication and social bonding make them deeply rewarding animals — but only for keepers who can genuinely provide the space, time, and resources their long lives require." },
+    ],
+  },
+  {
     id: "bearded-dragon",
     name: "Bearded Dragon",
     emoji: "🦎",
@@ -142,71 +277,6 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     ],
   },
   {
-    id: "chameleon",
-    name: "Jackson's Chameleon",
-    emoji: "🦎",
-    difficulty: "Advanced",
-    petType: "Lizards",
-    tagline: "The horned, color-shifting dinosaur of the reptile world!",
-    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
-        { item: "Strong UVB (T5 HO Arcadia 6-12%)", low: 70, high: 110 },
-        { item: "Basking bulb", low: 20, high: 40 },
-        { item: "Dripper system and automatic mister", low: 50, high: 100 },
-        { item: "Live plants (pothos, ficus)", low: 40, high: 80 },
-        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-      ],
-      annual: [
-        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 300 },
-        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
-        { item: "Annual vet wellness check (chameleon-experienced)", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `A 24x24x48" all-screen enclosure is the minimum for a single adult Jackson's chameleon. Screen construction is non-negotiable — stagnant air in glass or plastic enclosures causes rapid onset respiratory infections in chameleons. Airflow must be constant and significant. Many experienced keepers use screen cages outdoors in appropriate climates, which is close to ideal.
-
-Live plants are essential, not decorative. Pothos, ficus, hibiscus, and dracaena provide natural humidity regulation, visual barriers for security, resting surfaces, and environmental complexity. Bare enclosures produce chronically stressed, sick chameleons. Aim for at least 60 to 70% plant coverage of the enclosure interior.
-
-Temperature requirements: daytime ambient of 72 to 80 degrees F with a basking spot of 85 to 88 degrees F. Jackson's chameleons prefer cooler temperatures than most other chameleon species — they originate from the cool highlands of East Africa and Hawaii's Maui island. Nighttime temperatures can drop to 55 to 65 degrees F, which is actually beneficial. Never allow temperatures to exceed 90 degrees F. Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory.
-
-A dripper system and/or automatic misting system is required for hydration. Chameleons almost never drink from standing water — they drink water droplets from leaves and their environment after rainfall. A dripper creating slow drips onto leaves for 30 to 60 minutes morning and afternoon, combined with a fine misting system that runs for 3 to 5 minutes several times daily, meets hydration and humidity needs.`,
-      diet: `Jackson's chameleons eat live insects exclusively. The variety of feeder insects is one of the most important factors in long-term health. Offer crickets, dubia roaches, hornworms, silkworms, black soldier fly larvae, and blue bottle flies. Each insect species has a different nutritional profile, and rotation provides comprehensive nutrition. Avoid relying on a single feeder type.
-
-Gut-loading feeder insects 24 to 48 hours before feeding is critical. Feed insects a high-quality commercial gut-load or fresh vegetables (collard greens, mustard greens, sweet potato, carrot, apple). The chameleon's nutrition is entirely dependent on what its prey ate. An unloaded cricket offers minimal nutritional value.
-
-Feed juveniles daily (as many as they will eat in 15 minutes). Feed adults every other day, offering 5 to 10 appropriately sized insects. Prey should be no larger than the width of the chameleon's head. Overfeeding causes obesity, which stresses the liver and reproductive system.
-
-Supplementation schedule: calcium without D3 at every or every-other feeding, calcium with D3 twice weekly, and a reptile multivitamin once per week. Jackson's chameleons are sensitive to over-supplementation as much as under-supplementation. Follow this schedule precisely.`,
-      enrichment: `Dense, multi-level branching is the most important structural enrichment. Chameleons are almost entirely arboreal and spend their lives navigating through a three-dimensional network of branches and leaves. Horizontal branches at multiple heights, thin perching vines at the top (where they feel safest), and thick branches lower for basking create the complexity they need.
-
-The dripper and misting system doubles as enrichment — chameleons investigate and drink droplets naturally and actively. Watching a chameleon track and hunt live prey is a major appeal of keeping them; the prey variety itself provides mental engagement.
-
-Handle minimally. Chameleons are not handling animals. Stress is a primary health concern — a chronically stressed chameleon will stop eating, develop immune suppression, and die. Many chameleons spend their entire lives in their enclosure without needing to be handled. When handling is necessary (for veterinary visits, enclosure cleaning), move slowly, allow the chameleon to walk onto your hand voluntarily, and keep sessions as brief as possible.
-
-Jackson's chameleons are live-bearing (viviparous), unlike most chameleon species that lay eggs. A gravid female needs adequate nutrition and a suitable warm, humid hiding area. Breeding is not recommended without extensive experience.`,
-      health: `Chameleons are masters of concealing illness. By the time a chameleon shows obvious signs of sickness — color changes, sunken eyes, closed eyes during the day, gaping mouth, lethargy — it has usually been ill for some time and is severely compromised. Attentive daily observation of baseline behavior is essential. Know what your chameleon's normal colors, activity level, and feeding response look like.
-
-Dehydration is the single most common cause of early death in pet chameleons. Sunken eyes (the most visible sign), dark coloration, and lethargy indicate dehydration. A chameleon that is not drinking needs immediate intervention: long misting sessions, paper towel soaks, and veterinary care if the animal does not rehydrate quickly. Maintain the dripper and misting schedule without gaps.
-
-Metabolic Bone Disease (MBD) from inadequate UVB or supplementation causes swollen limbs, deformities, and difficulty moving. Maintain proper UVB schedules, replace UVB bulbs on schedule, and follow supplementation protocols exactly.
-
-Respiratory infections result from stagnant air and temperature fluctuations. The all-screen enclosure mandate is specifically to prevent this. Female Jackson's chameleons can develop reproductive problems (dystocia, retained offspring) that require veterinary intervention. Find a reptile vet with chameleon experience before you need one — do not wait for an emergency to identify your veterinary resource.`,
-      checklist: ["24x24x48\" all-screen enclosure", "Strong UVB lighting (T5 HO Arcadia 6% or 12%)", "Basking bulb (80 to 85 degrees F hot spot)", "Dripper system and automatic mister", "Live plants (pothos, ficus)", "Gut-loaded feeder insects", "Calcium w/D3 and without D3 supplements", "Multivitamin supplement", "Digital thermometer and hygrometer", "Reptile vet with chameleon experience"],
-    },
-    faqs: [
-      { q: "Are chameleons hard to keep?", a: "Chameleons are widely considered one of the most demanding reptiles in the hobby and are not recommended for first-time reptile keepers. They require very specific conditions: all-screen enclosures for ventilation, precise temperature gradients, high humidity with a wet-dry cycle, strong UVB lighting, live gut-loaded insects at every feeding, and a dripper or automatic misting system for hydration. They are also highly stress-sensitive — improper conditions or a high-traffic cage location cause rapid health decline. Experienced keepers find them deeply rewarding; beginners often experience significant losses." },
-      { q: "Why do chameleons change color?", a: "Chameleons change color primarily to communicate mood, social status, and reproductive readiness — not primarily for camouflage as commonly believed. Bright, vivid colors often signal excitement, territorial aggression, or a male displaying to a female. Dark, muted colors typically indicate stress, illness, or cold. The color change is achieved by manipulating nanocrystals within specialized skin cells called iridophores, which reflect different wavelengths of light depending on their arrangement." },
-      { q: "How do I get my chameleon to drink water?", a: "Chameleons rarely drink from standing water bowls — in the wild, they drink droplets from leaves after rain. Provide water by misting the enclosure 2 to 3 times daily so the chameleon can drink from leaves and cage walls. A dripper system that slowly keeps leaves wet is highly effective. Always use dechlorinated or filtered water. Signs of dehydration include sunken eyes, lethargy, and yellow-orange urates — the urate portion of droppings should be white, not yellow." },
-      { q: "How big do veiled chameleons get?", a: "Male veiled chameleons typically reach 18 to 24 inches total length and 140 to 200 grams — they are among the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 13 inches, but require more advanced care because they are prone to reproductive issues. Females produce infertile eggs even without a male and must have a deep laying box available at all times to prevent fatal egg-binding." },
-      { q: "How long do chameleons live?", a: "Captive-bred veiled chameleons live 5 to 8 years with optimal care, with males often outliving females (females that lay frequent clutches have significantly shortened lifespans). Jackson's chameleons live 5 to 10 years. Panther chameleons live 3 to 7 years. Wild-caught chameleons rarely survive long in captivity due to extreme capture stress. Regular access to a vet experienced with chameleons dramatically improves outcomes at any age." },
-    ],
-  },
-  {
     id: "green-anole",
     name: "Green Anole",
     emoji: "🦎",
@@ -277,71 +347,69 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     ],
   },
   {
-    id: "ackie-monitor",
-    name: "Ackie Monitor",
+    id: "chameleon",
+    name: "Jackson's Chameleon",
     emoji: "🦎",
     difficulty: "Advanced",
     petType: "Lizards",
-    image: "/assets/guides/ackie-monitor.jpg",
-    tagline: "The miniature Komodo dragon with a huge personality!",
-    funFact: "Ackie monitors 'taste' the air constantly with their forked tongues, using their Jacobson's organ to detect prey scent, just like their giant Komodo cousins!",
+    image: "/assets/guides/chameleon.jpg",
+    tagline: "The horned, color-shifting dinosaur of the reptile world!",
+    funFact: "Jackson's chameleons are one of the few chameleon species that give live birth rather than laying eggs. Females can birth 8 to 30 live young!",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "6x3x3 ft+ enclosure", low: 300, high: 600 },
-        { item: "Deep substrate (12 in+ sandy soil mix)", low: 80, high: 150 },
-        { item: "High-wattage basking bulb + fixture", low: 30, high: 60 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO Arcadia Dragon 12%)", low: 70, high: 110 },
-        { item: "Infrared thermometer gun", low: 25, high: 40 },
-        { item: "Cork bark and rock structures", low: 40, high: 80 },
-        { item: "Water dish", low: 10, high: 20 },
+        { item: "24x24x48 in all-screen enclosure", low: 150, high: 300 },
+        { item: "Strong UVB (T5 HO Arcadia 6-12%)", low: 70, high: 110 },
+        { item: "Basking bulb", low: 20, high: 40 },
+        { item: "Dripper system and automatic mister", low: 50, high: 100 },
+        { item: "Live plants (pothos, ficus)", low: 40, high: 80 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
       ],
       annual: [
-        { item: "Large insect variety", low: 200, high: 350 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
+        { item: "Gut-loaded feeder insects (variety)", low: 150, high: 300 },
+        { item: "Calcium w/ and w/o D3 + multivitamin", low: 25, high: 35 },
         { item: "UVB bulb replacement", low: 70, high: 110 },
-        { item: "Electricity (high-wattage basking)", low: 100, high: 180 },
-        { item: "Annual vet wellness check", low: 60, high: 100 },
+        { item: "Electricity (heat, lighting, mister)", low: 50, high: 90 },
+        { item: "Annual vet wellness check (chameleon-experienced)", low: 70, high: 120 },
       ],
     },
     sections: {
-      housing: `A 6x3x3 ft enclosure is the minimum for a pair of ackie monitors — and ackies do well and often prefer living in bonded pairs or trios when raised together. Single animals can be kept in slightly smaller spaces but will benefit from the larger footprint for activity and thermal gradient establishment.
+      housing: `A 24x24x48" all-screen enclosure is the minimum for a single adult Jackson's chameleon. Screen construction is non-negotiable — stagnant air in glass or plastic enclosures causes rapid onset respiratory infections in chameleons. Airflow must be constant and significant. Many experienced keepers use screen cages outdoors in appropriate climates, which is close to ideal.
 
-The deep substrate is the defining feature of an ackie monitor setup. A minimum of 12 inches of a sandy soil mixture (60% organic topsoil, 40% playsand is a common ratio) must be provided. Ackies are native to the arid rocky outcrops of western and central Australia and spend large portions of their time burrowing to thermoregulate. Burrowing is not optional behavior — it is essential for health and wellbeing.
+Live plants are essential, not decorative. Pothos, ficus, hibiscus, and dracaena provide natural humidity regulation, visual barriers for security, resting surfaces, and environmental complexity. Bare enclosures produce chronically stressed, sick chameleons. Aim for at least 60 to 70% plant coverage of the enclosure interior.
 
-The basking spot temperature is the most critical parameter: 120 to 150 degrees F at the surface directly under the basking light. This sounds extreme because it is — ackie monitors require these temperatures to fully thermoregulate, activate their immune system, and digest prey efficiently. Without adequate basking temperatures, even an otherwise well-kept ackie will show chronic health problems, poor growth, and reduced lifespan. Use high-wattage halogen or flood bulbs and verify surface temperatures with an infrared temperature gun.
+Temperature requirements: daytime ambient of 72 to 80 degrees F with a basking spot of 85 to 88 degrees F. Jackson's chameleons prefer cooler temperatures than most other chameleon species — they originate from the cool highlands of East Africa and Hawaii's Maui island. Nighttime temperatures can drop to 55 to 65 degrees F, which is actually beneficial. Never allow temperatures to exceed 90 degrees F. Strong UVB (T5 HO Arcadia 6% or 12%) is mandatory.
 
-Strong desert UVB (T5 HO Arcadia Dragon 12% or equivalent) on a 10 to 12 hour cycle is mandatory. The cool side of the enclosure should be 80 to 85 degrees F ambient. Humidity in the burrow area (achieved by allowing one section of the substrate to stay slightly more moist than the rest) should be 40 to 60%.`,
-      diet: `Ackie monitors are primarily insectivorous in the wild, and their captive diet should reflect this. Large dubia roaches, crickets, superworms, hornworms, and silkworms form the core of a balanced diet. Gut-load all insects 24 to 48 hours before feeding — the nutritional quality of a gut-loaded insect versus an empty one is dramatically different.
+A dripper system and/or automatic misting system is required for hydration. Chameleons almost never drink from standing water — they drink water droplets from leaves and their environment after rainfall. A dripper creating slow drips onto leaves for 30 to 60 minutes morning and afternoon, combined with a fine misting system that runs for 3 to 5 minutes several times daily, meets hydration and humidity needs.`,
+      diet: `Jackson's chameleons eat live insects exclusively. The variety of feeder insects is one of the most important factors in long-term health. Offer crickets, dubia roaches, hornworms, silkworms, black soldier fly larvae, and blue bottle flies. Each insect species has a different nutritional profile, and rotation provides comprehensive nutrition. Avoid relying on a single feeder type.
 
-Adult ackies can be offered occasional pinky or fuzzy mice as a protein supplement — not as a staple. Whole prey items offer nutritional completeness when used judiciously. Eggs (quail or scrambled chicken eggs) are another excellent nutritional supplement offered occasionally.
+Gut-loading feeder insects 24 to 48 hours before feeding is critical. Feed insects a high-quality commercial gut-load or fresh vegetables (collard greens, mustard greens, sweet potato, carrot, apple). The chameleon's nutrition is entirely dependent on what its prey ate. An unloaded cricket offers minimal nutritional value.
 
-Feed juveniles daily with as many insects as they will actively pursue and eat. Adults eat 3 to 5 times per week. Reduce feeding frequency if the animal is becoming visibly obese (fat deposits around the neck, limbs, and tail base). Dust prey with calcium w/D3 and a reptile multivitamin on a consistent schedule.
+Feed juveniles daily (as many as they will eat in 15 minutes). Feed adults every other day, offering 5 to 10 appropriately sized insects. Prey should be no larger than the width of the chameleon's head. Overfeeding causes obesity, which stresses the liver and reproductive system.
 
-Fresh water in a shallow dish must always be available. Many ackies will soak in their water dish, which supports hydration and shedding. Replace the water daily.`,
-      enrichment: `The deep substrate is the most important enrichment — ackies spend significant time excavating burrow systems that can extend 12 to 24 inches underground. Providing adequate substrate depth allows this natural behavior. Watching an ackie monitor engineer a complex burrow system is one of the most impressive behaviors in the reptile hobby.
+Supplementation schedule: calcium without D3 at every or every-other feeding, calcium with D3 twice weekly, and a reptile multivitamin once per week. Jackson's chameleons are sensitive to over-supplementation as much as under-supplementation. Follow this schedule precisely.`,
+      enrichment: `Dense, multi-level branching is the most important structural enrichment. Chameleons are almost entirely arboreal and spend their lives navigating through a three-dimensional network of branches and leaves. Horizontal branches at multiple heights, thin perching vines at the top (where they feel safest), and thick branches lower for basking create the complexity they need.
 
-Add rock structures (securely stacked so they cannot topple and crush the monitor), cork bark pieces at the surface for additional hiding and temperature regulation spots, and branches for climbing. Ackies are more terrestrial than truly arboreal but will use low branches and rock edges frequently.
+The dripper and misting system doubles as enrichment — chameleons investigate and drink droplets naturally and actively. Watching a chameleon track and hunt live prey is a major appeal of keeping them; the prey variety itself provides mental engagement.
 
-Foraging enrichment dramatically improves quality of life for intelligent monitor lizards. Hide insects in the substrate, under rocks, and inside cork bark. Vary feeding locations. Offer live insects that require pursuit. Ackies in enriched environments with foraging opportunities show dramatically more natural, active behavior than those fed in predictable ways.
+Handle minimally. Chameleons are not handling animals. Stress is a primary health concern — a chronically stressed chameleon will stop eating, develop immune suppression, and die. Many chameleons spend their entire lives in their enclosure without needing to be handled. When handling is necessary (for veterinary visits, enclosure cleaning), move slowly, allow the chameleon to walk onto your hand voluntarily, and keep sessions as brief as possible.
 
-Young ackies can be fast and defensive and may bite. Consistent, patient handling from a young age produces remarkably tame animals. Adults often become confident and genuinely interactive, approaching their keepers and exploring hands voluntarily.`,
-      health: `Inadequate basking temperature is the most common and most serious husbandry failure in ackie monitors. An ackie that cannot reach 130 to 150 degrees F at the basking surface cannot fully activate its immune system, cannot adequately digest food, and cannot thermoregulate its core body temperature. This leads to chronic immune suppression, poor growth, repeated infections, and a significantly shortened lifespan. Invest in high-quality, high-wattage bulbs and verify temperatures regularly.
+Jackson's chameleons are live-bearing (viviparous), unlike most chameleon species that lay eggs. A gravid female needs adequate nutrition and a suitable warm, humid hiding area. Breeding is not recommended without extensive experience.`,
+      health: `Chameleons are masters of concealing illness. By the time a chameleon shows obvious signs of sickness — color changes, sunken eyes, closed eyes during the day, gaping mouth, lethargy — it has usually been ill for some time and is severely compromised. Attentive daily observation of baseline behavior is essential. Know what your chameleon's normal colors, activity level, and feeding response look like.
 
-Metabolic Bone Disease (MBD) from inadequate UVB or calcium supplementation presents as weak, trembling limbs, rubber jaw, difficulty climbing, and lethargy. Strong UVB and consistent supplementation prevent it.
+Dehydration is the single most common cause of early death in pet chameleons. Sunken eyes (the most visible sign), dark coloration, and lethargy indicate dehydration. A chameleon that is not drinking needs immediate intervention: long misting sessions, paper towel soaks, and veterinary care if the animal does not rehydrate quickly. Maintain the dripper and misting schedule without gaps.
 
-Parasites — particularly pentastomids (tongue worms) in wild-caught animals — are a significant concern. Source captive-bred animals from reputable breeders whenever possible. Wild-caught ackies frequently carry heavy parasite loads that require veterinary treatment. Annual fecal exams are recommended for all monitors.
+Metabolic Bone Disease (MBD) from inadequate UVB or supplementation causes swollen limbs, deformities, and difficulty moving. Maintain proper UVB schedules, replace UVB bulbs on schedule, and follow supplementation protocols exactly.
 
-Respiratory infections and scale rot can occur if humidity and temperatures are incorrect. Always have a reptile veterinarian with monitor experience identified before acquiring an ackie. These are rewarding but high-maintenance animals that deserve expert veterinary care.`,
-      checklist: ["6x3x3 ft+ enclosure", "Deep substrate (12 inch+ sandy soil mix)", "High-wattage basking bulb (120 to 150 degrees F surface)", "Quality thermostat", "Strong desert UVB (T5 HO Arcadia Dragon 12%)", "Digital thermometer (IR gun recommended)", "Calcium w/D3 + multivitamin", "Large insect variety", "Cork bark and rock structures", "Water dish + humid microhabitat area"],
+Respiratory infections result from stagnant air and temperature fluctuations. The all-screen enclosure mandate is specifically to prevent this. Female Jackson's chameleons can develop reproductive problems (dystocia, retained offspring) that require veterinary intervention. Find a reptile vet with chameleon experience before you need one — do not wait for an emergency to identify your veterinary resource.`,
+      checklist: ["24x24x48\" all-screen enclosure", "Strong UVB lighting (T5 HO Arcadia 6% or 12%)", "Basking bulb (80 to 85 degrees F hot spot)", "Dripper system and automatic mister", "Live plants (pothos, ficus)", "Gut-loaded feeder insects", "Calcium w/D3 and without D3 supplements", "Multivitamin supplement", "Digital thermometer and hygrometer", "Reptile vet with chameleon experience"],
     },
     faqs: [
-      { q: "How hot does an ackie monitor's basking spot need to be?", a: "120 to 150 degrees F at the basking surface, measured with an infrared temperature gun. This is the most critical parameter in ackie monitor care and the most commonly failed. Without adequate basking temperatures, ackies cannot fully thermoregulate, digest food, or activate their immune systems — leading to chronic health problems. High-wattage halogen or flood bulbs achieve these temperatures effectively." },
-      { q: "Can ackie monitors be kept in pairs or groups?", a: "Yes — ackies often do well and sometimes prefer living in bonded pairs or trios when raised together from a young age. Cohab success depends on having adequate space (6x3x3 ft minimum for a pair), multiple basking sites, and deep substrate for individual burrowing. Monitor for aggression and be prepared to separate if conflict arises." },
-      { q: "What do ackie monitors eat?", a: "Primarily insects in captivity: large dubia roaches, crickets, superworms, hornworms, and silkworms are the staples. Adults can have occasional pinky or fuzzy mice as a protein supplement and quail or scrambled eggs periodically. Gut-load all insects 24 to 48 hours before feeding. Feed juveniles daily, adults 3 to 5 times per week." },
-      { q: "How big do ackie monitors get?", a: "Adults typically reach 24 to 28 inches total length — significantly smaller than most other monitor species, which is one reason ackies are popular. They are powerfully built for their size, with strong legs, sharp claws, and an active, energetic temperament. Their manageable size combined with their big personality makes them the most popular dwarf monitor in the hobby." },
-      { q: "Are ackie monitors good pets?", a: "Yes, for experienced keepers ready for their specific requirements. Ackies are intelligent, active, and become remarkably tame with patient, consistent handling from a young age — many seek out their keepers and explore hands and arms voluntarily. The key commitments are the extreme basking temperatures (verified with an IR gun), deep burrowing substrate, and a diverse insect-heavy diet." },
+      { q: "Are chameleons hard to keep?", a: "Chameleons are widely considered one of the most demanding reptiles in the hobby and are not recommended for first-time reptile keepers. They require very specific conditions: all-screen enclosures for ventilation, precise temperature gradients, high humidity with a wet-dry cycle, strong UVB lighting, live gut-loaded insects at every feeding, and a dripper or automatic misting system for hydration. They are also highly stress-sensitive — improper conditions or a high-traffic cage location cause rapid health decline. Experienced keepers find them deeply rewarding; beginners often experience significant losses." },
+      { q: "Why do chameleons change color?", a: "Chameleons change color primarily to communicate mood, social status, and reproductive readiness — not primarily for camouflage as commonly believed. Bright, vivid colors often signal excitement, territorial aggression, or a male displaying to a female. Dark, muted colors typically indicate stress, illness, or cold. The color change is achieved by manipulating nanocrystals within specialized skin cells called iridophores, which reflect different wavelengths of light depending on their arrangement." },
+      { q: "How do I get my chameleon to drink water?", a: "Chameleons rarely drink from standing water bowls — in the wild, they drink droplets from leaves after rain. Provide water by misting the enclosure 2 to 3 times daily so the chameleon can drink from leaves and cage walls. A dripper system that slowly keeps leaves wet is highly effective. Always use dechlorinated or filtered water. Signs of dehydration include sunken eyes, lethargy, and yellow-orange urates — the urate portion of droppings should be white, not yellow." },
+      { q: "How big do veiled chameleons get?", a: "Male veiled chameleons typically reach 18 to 24 inches total length and 140 to 200 grams — they are among the larger chameleon species kept in captivity. Females are noticeably smaller at 10 to 13 inches, but require more advanced care because they are prone to reproductive issues. Females produce infertile eggs even without a male and must have a deep laying box available at all times to prevent fatal egg-binding." },
+      { q: "How long do chameleons live?", a: "Captive-bred veiled chameleons live 5 to 8 years with optimal care, with males often outliving females (females that lay frequent clutches have significantly shortened lifespans). Jackson's chameleons live 5 to 10 years. Panther chameleons live 3 to 7 years. Wild-caught chameleons rarely survive long in captivity due to extreme capture stress. Regular access to a vet experienced with chameleons dramatically improves outcomes at any age." },
     ],
   },
   {
@@ -482,78 +550,12 @@ Impaction from moist substrate is possible if the sandy substrate is kept too we
     ],
   },
   {
-    id: "tegu",
-    name: "Argentine Black and White Tegu",
-    emoji: "🦎",
-    difficulty: "Advanced",
-    petType: "Lizards",
-    image: "/assets/guides/tegu.jpg",
-    tagline: "The dog-like mega-lizard that can learn its own name!",
-    funFact: "Tegus are one of the only reptiles known to have near-endothermic (warm-blooded) properties. During breeding season, their body temperature rises above ambient temperatures!",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    // Adult housing is often custom-built; setup range reflects that.
-    costs: {
-      setup: [
-        { item: "8x4x4 ft+ custom enclosure or room", low: 500, high: 1200 },
-        { item: "High-wattage basking setup", low: 40, high: 70 },
-        { item: "Strong desert UVB (T5 HO 12%+)", low: 80, high: 120 },
-        { item: "Substrate (4-6 in soil/sand mix)", low: 60, high: 120 },
-        { item: "Large water tub for soaking", low: 30, high: 60 },
-        { item: "Quality thermostat", low: 40, high: 70 },
-      ],
-      annual: [
-        { item: "Whole prey and varied diet (rats, eggs, protein)", low: 250, high: 450 },
-        { item: "Calcium and multivitamin supplements", low: 25, high: 35 },
-        { item: "UVB bulb replacement", low: 80, high: 120 },
-        { item: "Electricity (high-wattage basking)", low: 120, high: 220 },
-        { item: "Annual vet wellness check", low: 70, high: 120 },
-      ],
-    },
-    sections: {
-      housing: `Argentine black and white tegus are among the largest lizards kept as pets and require enclosures that reflect their impressive size. Adults typically reach 3.5 to 4.5 ft for males and 2.5 to 3.5 ft for females, with some males exceeding 5 ft. The minimum enclosure for an adult is 8x4x4 ft, and many dedicated keepers build entire rooms for their tegus — a converted bedroom or large wooden enclosure the size of a garden shed.
-
-A very hot basking spot of 100 to 110 degrees F or higher is required at the surface. Tegus are from the subtropical and tropical regions of South America and require intense heat for digestion and immune function. The ambient warm side should be 85 to 90 degrees F and the cool side 75 to 80 degrees F. Strong desert UVB (T5 HO Arcadia Dragon 12%) is mandatory.
-
-Substrate of 4 to 6 inches minimum is needed for natural burrowing behavior. A 50/50 mix of organic topsoil and play sand works well, as does a commercial reptile bedding mix. Tegus burrow extensively and need substrate they can actually dig into.
-
-Brumation — a winter dormancy period lasting several months — is a natural and necessary part of tegu biology. Beginning in autumn, tegus slow down, stop eating, and eventually become largely inactive. Provide a cool (55 to 65 degrees F), dark brumation space, or allow them to burrow in their enclosure. Do not try to prevent or interrupt brumation; forced wakefulness causes significant health problems.`,
-      diet: `Argentine tegus are true omnivores with a wide-ranging diet that changes with age. Juveniles and young adults eat primarily animal protein: whole prey items like appropriately sized rats and chicks, organ meats (heart, liver), lean ground turkey, and eggs. As tegus mature, plant matter becomes an increasingly important part of the diet — mature adults may be 40 to 60% plant-based in the warmer months.
-
-Whole prey items are ideal for the protein component: rats (frozen/thawed), quail eggs, raw whole chicken or turkey pieces, and shrimp provide nutritional variety. Eggs — especially raw scrambled or hard-boiled — are an excellent regular protein source. Avoid exclusively feeding one prey type.
-
-Plant matter includes dark leafy greens (collard, mustard, dandelion greens), squash, berries (in moderation), and seasonal fruits as treats. Do not over-supplement with fruit, which is high in sugar. Supplement all food with calcium w/D3 and a reptile multivitamin on a regular schedule.
-
-Never feed dog or cat food as a staple — the preservatives, artificial additives, and non-nutritional fillers are inappropriate for tegus despite the protein content. Fresh water must always be available in a large tub they can soak in.`,
-      enrichment: `Argentine tegus are often described as the most dog-like of all reptiles — and this is not hyperbole. Well-socialized adult tegus recognize their names, come when called, follow their keepers around the house, seek out physical contact, and form genuine bonds over time. They are some of the most cognitively sophisticated reptiles accessible to hobbyists.
-
-Provide supervised free-roaming time daily in a tegu-proofed area. Tegus explore confidently, investigate novel objects with their tongues, and interact with household pets (under supervision) and family members. Puzzle feeders, hiding food in different locations, introducing novel safe objects, and training sessions — where the tegu learns to touch a target stick for food rewards — are all excellent enrichment.
-
-Handling from a young age produces the most socialized adults. Juvenile tegus can be fast and defensive. Consistent calm handling sessions, even short ones, over weeks and months produce remarkable results. Adult tegus that have been consistently handled are generally very calm large animals.
-
-Brumation period enrichment means preparing an appropriate cool, dark space and respecting the natural dormancy. Do not disturb a brumating tegu unnecessarily. Check on the animal briefly every 1 to 2 weeks to confirm it is alive and healthy, and offer water occasionally, but do not force feeding or activity.`,
-      health: `Inadequate enclosure size is the most common welfare problem in tegus. A tegu kept in a small enclosure cannot properly thermoregulate, cannot exercise, and cannot express natural behavior — this leads to physical and psychological deterioration. If you cannot provide an 8x4x4 ft or larger adult setup, a tegu is not the right animal for your situation.
-
-Metabolic Bone Disease from inadequate UVB or calcium is less common in tegus than in some other species when husbandry is correct, but still possible. Strong UVB and consistent supplementation prevent it.
-
-Parasites — particularly internal parasites — are common in tegus, especially those sourced from unknown backgrounds or import chains. Annual fecal exams with a reptile vet are recommended. Tegus sourced from reputable captive breeders typically have fewer parasite issues.
-
-These are powerful animals. A tame adult tegu can still cause injury unintentionally — their claws and tail are strong. Approach with confidence, never fear, and never force interactions. A veterinarian with large lizard experience is an essential part of responsible tegu ownership. Annual wellness checks are strongly recommended for all adult tegus.`,
-      checklist: ["8x4x4 ft+ custom enclosure or room", "Very hot basking spot (100 to 110 degrees F+)", "Strong desert UVB (T5 HO 12%+)", "4 to 6 inch substrate (soil/sand mix)", "Large water tub for soaking", "Quality thermostat", "Whole prey and varied diet", "Calcium and multivitamin", "Enrichment objects and puzzle feeders", "Brumation space (cool, dark area)"],
-    },
-    faqs: [
-      { q: "Are tegus really like dogs?", a: "In many meaningful ways, yes. Well-socialized tegus recognize and respond to their names, come when called, follow their keepers around, seek physical contact, and form genuine bonds that deepen over years. They are widely regarded as the most dog-like reptile accessible to hobbyists. This intelligence also means they require enrichment, space, and interaction to thrive." },
-      { q: "What is brumation and do tegus need it?", a: "Brumation is a natural winter dormancy period lasting 3 to 5 months, typically beginning in autumn. Tegus slow dramatically, stop eating, and become largely inactive. This is normal and essential biology — do not attempt to prevent or interrupt it. Provide a cool (55 to 65 degrees F), dark space for brumation. Forced wakefulness during this period causes significant stress and health problems." },
-      { q: "How big do tegus get?", a: "Argentine black and white tegu males typically reach 3.5 to 4.5 feet, with some exceeding 5 feet. Females are 2.5 to 3.5 feet. They are powerfully muscled animals — an adult male tegu is a substantial animal requiring an 8x4x4 ft minimum enclosure, and many experienced keepers convert entire rooms to accommodate them properly." },
-      { q: "What do tegus eat?", a: "True omnivores with age-dependent ratios. Juveniles eat primarily animal protein: whole prey (rats, quail, chicks), organ meats, raw eggs, and lean ground turkey. As they mature, plant matter becomes increasingly important — adults may be 40 to 60% plant-based during the warmer months. Eggs are an excellent regular protein source at any age. Avoid dog or cat food as a staple." },
-      { q: "How long do tegus live?", a: "15 to 20 years with appropriate care, proper diet, adequate housing, and annual wellness veterinary checks. A tegu is a multi-decade commitment. Their cognitive sophistication and social bonding make them deeply rewarding animals — but only for keepers who can genuinely provide the space, time, and resources their long lives require." },
-    ],
-  },
-  {
     id: "veiled-chameleon",
     name: "Veiled Chameleon",
     emoji: "🦎",
     difficulty: "Intermediate",
     petType: "Lizards",
+    image: "/assets/guides/veiled-chameleon.jpg",
     tagline: "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!",
     funFact: "Veiled chameleons are remarkably drought-adapted for a chameleon. Native to the mountains of Yemen and Saudi Arabia, they tolerate wider temperature and humidity swings than most other chameleon species. Females are also famous for laying large clutches of infertile eggs even without ever having contact with a male.",
     // Rough starting ranges, not verified current pricing — needs a review pass.

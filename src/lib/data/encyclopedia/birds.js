@@ -1,44 +1,5 @@
 export const birdEncyclopedia = [
   {
-    id: "budgie", name: "Budgie / Parakeet", scientific: "Melopsittacus undulatus",
-    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "budgie", available: true, image: "/assets/guides/budgie.jpg",
-    bio: {
-      overview: "The budgerigar (budgie) is native to the semi-arid interior of Australia, where enormous nomadic flocks follow rainfall and seed availability across the outback. In the wild they are small, swift, and highly social — flocks of thousands are common. They are the third most popular pet in the world after dogs and cats, and the best-selling pet bird globally. With training, many budgies develop the ability to mimic speech — some hold records for the largest bird vocabulary.",
-      origin: "Interior of Australia",
-      habitat: "Open grassland, scrubland, and open woodland",
-      adultSize: "7 inches (18 cm); 1–1.4 oz",
-      wildDiet: "Grass seeds, berries, and plant matter",
-      wildLifespan: "5–8 years (up to 12–15 years in captivity)",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "cockatiel", name: "Cockatiel", scientific: "Nymphicus hollandicus",
-    category: "Birds", emoji: "🦜", difficulty: "Beginner", guideId: "cockatiel", available: true, image: "/assets/guides/cockatiel.jpg",
-    bio: {
-      overview: "Cockatiels are the smallest member of the cockatoo family and are endemic to Australia, where they inhabit open country and lightly wooded areas across the continent. They are highly nomadic, following water sources and seeding grasses. Cockatiels were the first parrot species to be widely bred in captivity and remain among the most popular pet birds worldwide, prized for their gentle temperament, whistling ability, and trainability.",
-      origin: "Australia",
-      habitat: "Open grassland, scrubland, and lightly wooded areas",
-      adultSize: "12–13 inches (30–33 cm) including tail; 2.5–3.5 oz",
-      wildDiet: "Grass seeds, grains, berries, and insects",
-      wildLifespan: "10–15 years (up to 20–25 years in captivity)",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "conure", name: "Green Cheek Conure", scientific: "Pyrrhura molinae",
-    category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "conure", available: true, image: "/assets/guides/conure.jpg",
-    bio: {
-      overview: "Green cheek conures are small parrots native to the forests of Bolivia, Brazil, Argentina, and Paraguay, where they live in noisy flocks in the forest canopy. They are among the quietest of the conure species — making them more apartment-friendly than larger parrots — and have a reputation for playfulness and deep affection. Unlike larger parrots, they bond closely with keepers without requiring as intensive a daily time commitment.",
-      origin: "South America (Bolivia, Brazil, Argentina, Paraguay)",
-      habitat: "Forest, woodland, and forest edges",
-      adultSize: "10 inches (25 cm) including tail; 2–2.5 oz",
-      wildDiet: "Seeds, fruits, berries, and plant matter",
-      wildLifespan: "10–15 years (up to 25–30 years in captivity)",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
     id: "african-grey", name: "African Grey Parrot", scientific: "Psittacus erithacus",
     category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "african-grey", available: true, image: "/assets/guides/african-grey.jpg",
     bio: {
@@ -52,16 +13,16 @@ export const birdEncyclopedia = [
     },
   },
   {
-    id: "lovebird", name: "Lovebird", scientific: "Agapornis spp.",
-    category: "Birds", emoji: "🐦", difficulty: "Intermediate", guideId: "lovebird", available: true, image: "/assets/guides/lovebird.jpg",
+    id: "budgie", name: "Budgie / Parakeet", scientific: "Melopsittacus undulatus",
+    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "budgie", available: true, image: "/assets/guides/budgie.jpg",
     bio: {
-      overview: "Lovebirds are a genus of nine small parrot species native to Africa and Madagascar. Their name comes from the strong pair bonds they form — bonded pairs spend hours preening each other and sitting pressed together. In captivity, a single lovebird deprived of a companion will often direct all its attachment behavior toward its human keeper — requiring significant daily interaction to thrive emotionally and prevent behavioral problems.",
-      origin: "Africa and Madagascar",
-      habitat: "Savanna, open woodland, and forest edge",
-      adultSize: "5–6.5 inches (13–17 cm); 1.5–2 oz",
-      wildDiet: "Seeds, grains, berries, grasses, and some insects",
-      wildLifespan: "5–15 years (up to 15–20 years in captivity)",
-      conservation: "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)",
+      overview: "The budgerigar (budgie) is native to the semi-arid interior of Australia, where enormous nomadic flocks follow rainfall and seed availability across the outback. In the wild they are small, swift, and highly social — flocks of thousands are common. They are the third most popular pet in the world after dogs and cats, and the best-selling pet bird globally. With training, many budgies develop the ability to mimic speech — some hold records for the largest bird vocabulary.",
+      origin: "Interior of Australia",
+      habitat: "Open grassland, scrubland, and open woodland",
+      adultSize: "7 inches (18 cm); 1–1.4 oz",
+      wildDiet: "Grass seeds, berries, and plant matter",
+      wildLifespan: "5–8 years (up to 12–15 years in captivity)",
+      conservation: "Least Concern (IUCN)",
     },
   },
   {
@@ -78,6 +39,19 @@ export const birdEncyclopedia = [
     },
   },
   {
+    id: "cockatiel", name: "Cockatiel", scientific: "Nymphicus hollandicus",
+    category: "Birds", emoji: "🦜", difficulty: "Beginner", guideId: "cockatiel", available: true, image: "/assets/guides/cockatiel.jpg",
+    bio: {
+      overview: "Cockatiels are the smallest member of the cockatoo family and are endemic to Australia, where they inhabit open country and lightly wooded areas across the continent. They are highly nomadic, following water sources and seeding grasses. Cockatiels were the first parrot species to be widely bred in captivity and remain among the most popular pet birds worldwide, prized for their gentle temperament, whistling ability, and trainability.",
+      origin: "Australia",
+      habitat: "Open grassland, scrubland, and lightly wooded areas",
+      adultSize: "12–13 inches (30–33 cm) including tail; 2.5–3.5 oz",
+      wildDiet: "Grass seeds, grains, berries, and insects",
+      wildLifespan: "10–15 years (up to 20–25 years in captivity)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "cockatoo", name: "Cockatoo", scientific: "Cacatua alba",
     category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "cockatoo", available: true, image: "/assets/guides/cockatoo.jpg",
     bio: {
@@ -88,6 +62,32 @@ export const birdEncyclopedia = [
       wildDiet: "Seeds, nuts, fruit, and insects",
       wildLifespan: "40–60 years (some individuals living considerably longer)",
       conservation: "Vulnerable (IUCN)",
+    },
+  },
+  {
+    id: "conure", name: "Green Cheek Conure", scientific: "Pyrrhura molinae",
+    category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "conure", available: true, image: "/assets/guides/conure.jpg",
+    bio: {
+      overview: "Green cheek conures are small parrots native to the forests of Bolivia, Brazil, Argentina, and Paraguay, where they live in noisy flocks in the forest canopy. They are among the quietest of the conure species — making them more apartment-friendly than larger parrots — and have a reputation for playfulness and deep affection. Unlike larger parrots, they bond closely with keepers without requiring as intensive a daily time commitment.",
+      origin: "South America (Bolivia, Brazil, Argentina, Paraguay)",
+      habitat: "Forest, woodland, and forest edges",
+      adultSize: "10 inches (25 cm) including tail; 2–2.5 oz",
+      wildDiet: "Seeds, fruits, berries, and plant matter",
+      wildLifespan: "10–15 years (up to 25–30 years in captivity)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "lovebird", name: "Lovebird", scientific: "Agapornis spp.",
+    category: "Birds", emoji: "🐦", difficulty: "Intermediate", guideId: "lovebird", available: true, image: "/assets/guides/lovebird.jpg",
+    bio: {
+      overview: "Lovebirds are a genus of nine small parrot species native to Africa and Madagascar. Their name comes from the strong pair bonds they form — bonded pairs spend hours preening each other and sitting pressed together. In captivity, a single lovebird deprived of a companion will often direct all its attachment behavior toward its human keeper — requiring significant daily interaction to thrive emotionally and prevent behavioral problems.",
+      origin: "Africa and Madagascar",
+      habitat: "Savanna, open woodland, and forest edge",
+      adultSize: "5–6.5 inches (13–17 cm); 1.5–2 oz",
+      wildDiet: "Seeds, grains, berries, grasses, and some insects",
+      wildLifespan: "5–15 years (up to 15–20 years in captivity)",
+      conservation: "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)",
     },
   },
 ];

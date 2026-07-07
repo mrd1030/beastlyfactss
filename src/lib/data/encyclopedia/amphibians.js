@@ -1,18 +1,5 @@
 export const amphibianEncyclopedia = [
   {
-    id: "pacman-frog", name: "Pac-Man Frog", scientific: "Ceratophrys ornata",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "pacman-frog", available: true, image: "/assets/guides/pacman-frog.jpg",
-    bio: {
-      overview: "The ornate horned frog — nicknamed the Pac-Man frog for its enormous, round, gaping mouth — is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pac-Man frogs will attempt to consume prey nearly as large as themselves — including other frogs, rodents, and small snakes.",
-      origin: "South America (Argentina, Brazil, Uruguay)",
-      habitat: "Grassland, tropical rainforest, and humid meadows",
-      adultSize: "3–5 inches (7–12 cm) body; 0.5–1.5 lbs",
-      wildDiet: "Insects, worms, mice, other frogs, and small vertebrates",
-      wildLifespan: "6–15 years",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
     id: "axolotl", name: "Axolotl", scientific: "Ambystoma mexicanum",
     category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "axolotl", available: true, image: "/assets/guides/axolotl.jpg",
     bio: {
@@ -23,19 +10,6 @@ export const amphibianEncyclopedia = [
       wildDiet: "Worms, mollusks, insects, small fish, and aquatic invertebrates",
       wildLifespan: "10–15 years",
       conservation: "Critically Endangered (IUCN)",
-    },
-  },
-  {
-    id: "whites-tree-frog", name: "White's Tree Frog", scientific: "Litoria caerulea",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "whites-tree-frog", available: true, image: "/assets/guides/whites-tree-frog.jpg",
-    bio: {
-      overview: "White's tree frog — also called the dumpy tree frog or Australian green tree frog — is a large, robust arboreal frog native to Australia and southern New Guinea. They are one of the most docile frog species, remarkably tolerant of handling compared to most amphibians, and have become the most popular pet frog worldwide. Their characteristic \"dopey\" expression comes from a large, overhanging parotoid gland above the eye. Their skin secretions contain compounds with antimicrobial and antiviral properties.",
-      origin: "Northern and eastern Australia; southern New Guinea",
-      habitat: "Forest, woodland, and near human habitation (attracted to lit areas at night)",
-      adultSize: "3–4.5 inches (7–11 cm)",
-      wildDiet: "Insects, moths, cockroaches, crickets, and occasionally small lizards",
-      wildLifespan: "7–20 years (up to 21 years recorded)",
-      conservation: "Least Concern (IUCN)",
     },
   },
   {
@@ -52,6 +26,19 @@ export const amphibianEncyclopedia = [
     },
   },
   {
+    id: "pacman-frog", name: "Pac-Man Frog", scientific: "Ceratophrys ornata",
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "pacman-frog", available: true, image: "/assets/guides/pacman-frog.jpg",
+    bio: {
+      overview: "The ornate horned frog — nicknamed the Pac-Man frog for its enormous, round, gaping mouth — is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pac-Man frogs will attempt to consume prey nearly as large as themselves — including other frogs, rodents, and small snakes.",
+      origin: "South America (Argentina, Brazil, Uruguay)",
+      habitat: "Grassland, tropical rainforest, and humid meadows",
+      adultSize: "3–5 inches (7–12 cm) body; 0.5–1.5 lbs",
+      wildDiet: "Insects, worms, mice, other frogs, and small vertebrates",
+      wildLifespan: "6–15 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "tiger-salamander", name: "Tiger Salamander", scientific: "Ambystoma tigrinum",
     category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "tiger-salamander", available: true, image: "/assets/guides/tiger-salamander.jpg",
     bio: {
@@ -61,6 +48,19 @@ export const amphibianEncyclopedia = [
       adultSize: "8–13 inches (20–33 cm)",
       wildDiet: "Worms, insects, slugs, frogs, small mice, and other salamanders",
       wildLifespan: "12–16 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "whites-tree-frog", name: "White's Tree Frog", scientific: "Litoria caerulea",
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "whites-tree-frog", available: true, image: "/assets/guides/whites-tree-frog.jpg",
+    bio: {
+      overview: "White's tree frog — also called the dumpy tree frog or Australian green tree frog — is a large, robust arboreal frog native to Australia and southern New Guinea. They are one of the most docile frog species, remarkably tolerant of handling compared to most amphibians, and have become the most popular pet frog worldwide. Their characteristic \"dopey\" expression comes from a large, overhanging parotoid gland above the eye. Their skin secretions contain compounds with antimicrobial and antiviral properties.",
+      origin: "Northern and eastern Australia; southern New Guinea",
+      habitat: "Forest, woodland, and near human habitation (attracted to lit areas at night)",
+      adultSize: "3–4.5 inches (7–11 cm)",
+      wildDiet: "Insects, moths, cockroaches, crickets, and occasionally small lizards",
+      wildLifespan: "7–20 years (up to 21 years recorded)",
       conservation: "Least Concern (IUCN)",
     },
   },

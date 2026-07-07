@@ -148,75 +148,52 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
     ],
   },
   {
-    id: "lovebird",
-    name: "Lovebird",
-    emoji: "❤️",
-    difficulty: "Intermediate",
+    id: "canary",
+    name: "Canary",
+    emoji: "🐦",
+    difficulty: "Beginner",
     petType: "Birds",
-    image: "/assets/guides/lovebird.jpg",
-    tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
-    funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
+    image: "/assets/guides/canary.jpg",
+    tagline: "The classic singing songbird that's happiest observed, not handled!",
+    funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "24x24x24 in+ cage (larger preferred)", low: 80, high: 150 },
-        { item: "Perches and swings", low: 20, high: 35 },
-        { item: "Shreddable toys", low: 20, high: 40 },
-        { item: "Sleep tent", low: 10, high: 20 },
+        { item: "Flight cage (24-30 in wide)", low: 60, high: 120 },
+        { item: "Perches of varied diameters", low: 15, high: 25 },
+        { item: "Shallow bath dish", low: 8, high: 15 },
+        { item: "Cuttlebone or mineral block", low: 5, high: 10 },
       ],
       annual: [
-        { item: "Small parrot pellets", low: 70, high: 110 },
-        { item: "Fresh vegetables", low: 80, high: 130 },
-        { item: "Toys (rotating)", low: 40, high: 70 },
-        { item: "Annual avian vet check + psittacosis testing", low: 70, high: 120 },
+        { item: "Seed mix or pellets", low: 50, high: 80 },
+        { item: "Fresh greens and vegetables", low: 50, high: 90 },
+        { item: "Egg food (molting/breeding season)", low: 15, high: 25 },
+        { item: "Annual avian vet check", low: 40, high: 70 },
       ],
     },
     sections: {
-      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 24x24x24 inches is required, though 30x24x30 inches or larger is preferred. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers — cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
-
-Provide multiple perches at different heights and diameters (1/2 to 3/4 inch), swings, and a variety of toys. Natural wood perches are preferred over dowels for foot health. Position the cage at eye level, away from the kitchen, drafts, and direct sunlight. Lovebirds are highly alert and feel most secure when positioned at human eye level with a wall behind the cage.
-
-Provide a sleep area — many lovebirds prefer a small sleeping tent or covered corner for nighttime, and benefit from 10 to 12 hours of covered darkness. Some lovebirds will enthusiastically shred fabric, so inspect sleeping tents regularly for loose threads.
-
-Lovebirds are highly social within their species. A bonded pair of lovebirds is happier and healthier than a solo bird, and bonded pairs often have less aggressive territorial behavior toward humans. Introducing a second lovebird requires a careful slow-introduction process.`,
-      diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of the diet. A seed-only diet causes the same nutritional deficiencies seen in other parrots: fatty liver, vitamin deficiencies, and shortened lifespan. Pellet transition from seeds is often challenging with lovebirds — they are stubborn — but persistence pays off.
-
-Fresh vegetables should be offered daily: bell peppers, leafy greens, broccoli, carrots, cooked sweet potato, and snap peas are all excellent choices. Lovebirds tend to be bolder about trying new foods than some other parrot species. Use the basket trick — weaving vegetables and herbs through the cage bars — to encourage foraging for fresh foods.
-
-Millet is a high-fat treat that lovebirds love intensely. Limit to a small piece 2 to 3 times per week. A seed mix can be offered as enrichment in a foraging toy rather than as the primary food source. Strictly avoid avocado, chocolate, caffeine, onion, garlic, and xylitol. Fresh water changed daily.`,
-      enrichment: `Lovebirds are nicknamed the "pocket parrot" — they are intensely bonded, affectionate, and active little birds with large personalities. Enrichment is not optional; without adequate stimulation, lovebirds become cage-bound, hormonal, territorial, and difficult.
-
-Shreddable toys are lovebird favorites: palm leaf mats, paper strips, thin cardboard tubes, and soft wood pieces allow them to display their natural nesting and foraging behaviors. Swings and ladders get heavy use. Provide foraging toys where food is hidden — this is a much more enriching way to offer seeds or pellets than in an open dish.
-
-Daily supervised out-of-cage time of at least 1 to 2 hours in a bird-safe space allows flying, exploring, and interaction with their keeper. Many lovebirds become remarkably affectionate and social with their primary human, seeking contact, playing peekaboo, and vocalizing extensively in response to interaction.
-
-Lovebirds can be territorial with other bird species and with other lovebirds of different sex unless properly bonded. House only with thoroughly bonded partners and never mix lovebirds with other parrot species in the same cage without extensive supervised introductions.`,
-      health: `Respiratory infections are common in lovebirds and progress rapidly. Signs include breathing with the tail bobbing, nasal discharge, fluffed feathers, and sitting low on a perch. Seek veterinary care promptly — birds mask illness and by the time symptoms are visible, the bird is usually significantly ill.
-
-Egg binding is a life-threatening emergency in female lovebirds. A hen unable to pass an egg develops rapidly worsening distress, sitting puffed on the cage floor, straining, and visibly distressed. This requires immediate emergency veterinary intervention. Minimize hormonal triggers (long daylight hours, nesting materials, excessive handling of the back) to reduce egg-laying stimulation in female lovebirds.
-
-Psittacosis (Chlamydiosis) is a bacterial infection that can spread to humans. Annual testing or monitoring for this disease is recommended. Any new lovebird should be tested or treated prophylactically.
-
-Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in other parrots. Annual avian veterinary wellness checks are strongly recommended, particularly blood panels for birds on seed-heavy diets.`,
+      housing: "A flight cage at least 24 to 30 inches wide is far better than a typical small cage, since canaries are active fliers that need horizontal space more than height. Provide multiple natural perches of varying diameter positioned so the bird can fly lengthwise across the cage. Position away from drafts, kitchen fumes (which are lethal to birds), and direct sun. Canaries do best kept singly or in a compatible pair — males housed together, especially during breeding season, will often fight. Cover the cage at night to provide a consistent 10 to 12 hours of uninterrupted darkness for sleep.",
+      diet: "A high-quality canary or finch seed mix can form a base, but a pelleted diet or seed heavily supplemented with fresh greens (dandelion, spinach, chickweed) and vegetables closes the nutritional gaps that come with a seed-only diet. Egg food — hard-boiled egg mixed with bread or a commercial egg food supplement — provides valuable protein, especially important during molting and breeding season. A cuttlebone or mineral block supplies calcium and trace minerals. Provide fresh water daily.",
+      enrichment: "Canaries are primarily an observation and listening bird rather than a hands-on interactive pet — most do not enjoy handling and are happiest simply watched and listened to. Provide a shallow bath dish, since canaries bathe enthusiastically and regularly. Natural light exposure supports healthy singing behavior and normal molt cycles. Swings and simple toys add modest enrichment, though canaries are far less toy-driven than parrots. A stable, calm, consistent daily routine matters more to their wellbeing than direct interaction ever will.",
+      health: "Mites, including scaly-leg mites, cause crusty growths on the legs and beak and are treatable with an avian-specific antiparasitic. Respiratory infections show as tail-bobbing with each breath, labored breathing, and fluffed feathers, and require urgent veterinary attention. Obesity from seed-heavy diets is common and preventable with a more balanced diet. Egg-binding can occur in females even without a male present, since a single hen can still lay infertile eggs — watch for straining, fluffed and lethargic behavior, and seek veterinary care immediately if suspected. Annual avian veterinary checkups are recommended.",
       checklist: [
-        "Minimum 24x24x24\" cage (larger preferred)",
-        "High-quality lovebird or small parrot pellets",
-        "Fresh vegetables and limited fruit",
-        "Multiple perches, swings, and ladders",
-        "Lots of shreddable toys (paper, cardboard)",
-        "Foraging toys and puzzle feeders",
-        "Millet sprays for treats",
-        "Safe chew toys (bird-safe wood)",
-        "Nail clippers",
-        "Avian veterinarian experienced with lovebirds"
+        "Flight cage at least 24–30 inches wide",
+        "Multiple perches of varying diameter",
+        "High-quality seed mix or pellets",
+        "Fresh greens and vegetables daily",
+        "Egg food during molting/breeding season",
+        "Cuttlebone or mineral block",
+        "Shallow bath dish",
+        "Cage cover for nighttime darkness",
+        "Avian veterinarian contact",
       ],
     },
     faqs: [
-      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true — solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (several hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
-      { q: "Can lovebirds learn to talk?", a: "Occasionally, but lovebirds are not known as talkers. Unlike budgies or African greys, speech is rare and the vocabulary stays very small when it does occur. What lovebirds excel at instead is vocalization, contact calling, and developing a strong interactive bond with their keeper. If talking ability is important to you, a budgie or a cockatiel (males) are more reliable choices. Lovebirds compensate with personality, affection, and playfulness." },
-      { q: "Do lovebirds bite?", a: "Yes — lovebirds have a strong beak for their size and will use it when frightened, territorial, or over-stimulated. Consistent calm handling from a young age, respecting the bird's signals (fluffing, lunging, eye pinning), and never reaching into the cage when the bird is in a territorial mood significantly reduces biting. Lovebirds that are handled regularly from a young age and bonded to a primary human are generally no worse than any other small parrot, and many are remarkably gentle with their person." },
-      { q: "What should lovebirds eat?", a: "60 to 70% of the diet should be high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries). Fresh vegetables daily — leafy greens, bell peppers, broccoli, carrot, and cooked sweet potato — make up the remainder. Limit seed mix to use as enrichment in foraging toys rather than as a dietary staple. Millet is a high-fat treat to be used sparingly. Seed-only diets cause fatty liver disease, vitamin deficiencies, and significantly shortened lifespan in lovebirds just as in all parrots." },
-      { q: "How long do lovebirds live?", a: "10 to 20 years with excellent care — a lifespan that surprises many keepers who assume small birds have short lives. The full 20-year potential requires a pellet-based diet, regular avian veterinary care, adequate enrichment and social contact, and minimizing hormonal stress (particularly in egg-laying females). Lovebirds rehomed in middle age after years of poor nutrition often have reduced lifespans. Starting with proper care from day one makes a measurable difference in long-term health." },
+      { q: "Do canaries need a companion?", a: "Not necessarily. Unlike flock parrots, many canaries thrive alone and are actually calmer and sing more without competition from another male in the room. A compatible pair can work, but males housed together frequently fight, especially during breeding season." },
+      { q: "Why won't my canary sing?", a: "A few possibilities: it may be a hen rather than a male (only males typically sing), it may be going through a molt (birds sing far less during this period), or it could simply be an individual quirk, since not every male canary sings constantly. Stress or illness can also suppress singing, so rule those out if the change is sudden." },
+      { q: "Can canaries be handled?", a: "Generally, no. Canaries are an observation bird that stresses easily with handling, and most are content simply being watched and listened to rather than physically interacted with." },
+      { q: "What do canaries eat?", a: "A quality seed mix or pellet diet as a base, with daily fresh greens and vegetables to fill nutritional gaps, plus egg food during breeding and molting season for extra protein." },
+      { q: "How long do canaries live?", a: "8 to 10 years is typical, with some canaries reaching 12 to 15 years under excellent care." },
     ],
   },
   {
@@ -295,6 +272,56 @@ Feather destructive behavior and chronic screaming indicate inadequate enrichmen
     ],
   },
   {
+    id: "cockatoo",
+    name: "Cockatoo",
+    emoji: "🦜",
+    difficulty: "Advanced",
+    petType: "Birds",
+    image: "/assets/guides/cockatoo.jpg",
+    tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
+    funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner — which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
+    // Rough starting ranges, not verified current pricing — needs a review pass.
+    costs: {
+      setup: [
+        { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
+        { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
+        { item: "Foraging toys", low: 50, high: 100 },
+        { item: "Cage-specific padlocks", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Large parrot pellets", low: 200, high: 350 },
+        { item: "Fresh vegetables, fruit, and nuts", low: 200, high: 350 },
+        { item: "Toys (rotating, heavy destruction rate)", low: 150, high: 300 },
+        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
+      ],
+    },
+    sections: {
+      housing: "Provide the largest cage that can reasonably fit in your home — a minimum of 3x2x4 feet, with larger strongly preferred, since cockatoos are large, powerful birds that need real room to climb, stretch, and flap. Cage bars must be heavy-gauge metal, since cockatoos have immensely strong beaks capable of bending weaker cages or working open standard latches; many owners add cage-specific padlocks for this reason. Position the cage in a social area of the home, since isolation is especially damaging to this species. Keep a constant supply of destructible wood toys available, since chewing is a critical behavioral outlet and supports beak health.",
+      diet: "A high-quality large parrot pellet should form 60 to 70% of the diet, supplemented daily with fresh vegetables, fruit, and a rotating variety of nuts (almonds and in-shell walnuts are excellent for foraging and enrichment). Seed-only diets cause the same fatty liver disease and nutritional deficiencies seen in smaller parrots, at greater scale given a cockatoo's size and long lifespan. Foraging-based feeding — food hidden in puzzle toys or wrapped in paper — is strongly recommended, both for nutritional enrichment and to occupy a bird that's otherwise prone to problem behaviors out of sheer boredom.",
+      enrichment: "This is the single most important factor in a cockatoo's long-term wellbeing. Cockatoos require hours of daily direct interaction and are widely considered unsuitable for owners who are away from home for long stretches without a plan for companionship. Without adequate attention, cockatoos are highly prone to feather-destructive behavior, self-mutilation, excessive screaming, and severe anxiety. Provide a large, rotating supply of destructible wood and foraging toys, daily supervised out-of-cage time, and consistent physical affection — most cockatoos crave cuddling and close physical contact more than almost any other parrot. A realistic, honest assessment of available daily time is essential before acquiring this species.",
+      health: "Feather-destructive behavior (plucking and self-mutilation) is extremely common in captive cockatoos and is very often behavioral or psychological — insufficient attention, boredom, or anxiety — rather than purely medical, though a vet should always rule out underlying illness or nutritional causes first. Screaming is a natural cockatoo vocalization but becomes excessive and distressing for the household when the bird's social needs aren't being met. Psittacine beak and feather disease (PBFD) is a serious viral concern in parrots, and screening new birds is recommended. Cockatoos can live 40 to 60 years or more, meaning many owners need a long-term care plan since the bird may well outlive them. Annual avian veterinary checkups are essential.",
+      checklist: [
+        "Large cage (3x2x4 ft minimum, heavy-gauge bars with secure locks)",
+        "High-quality large parrot pellets",
+        "Fresh vegetables, fruit, and nuts daily",
+        "Foraging toys",
+        "Constant supply of destructible wood chew toys",
+        "Hours of daily direct interaction",
+        "Social placement within the home",
+        "Cage-specific padlocks",
+        "Avian veterinarian contact",
+        "A realistic long-term care plan (40–60+ year lifespan)",
+      ],
+    },
+    faqs: [
+      { q: "Are cockatoos good pets?", a: "They can be deeply affectionate and rewarding companions, but they're widely regarded as one of the most demanding parrots to keep responsibly. They need hours of daily interaction, are prone to severe behavioral problems like screaming and feather plucking without it, and can live 40 to 60+ years — meaning the commitment often outlasts an owner's active caregiving years. They aren't recommended for first-time bird owners or households that can't offer near-daily direct attention." },
+      { q: "Why do cockatoos scream?", a: "Screaming is a natural, far-carrying flock-contact call used in the wild to locate other flock members. In captivity, it becomes excessive when a cockatoo's social and attention needs aren't being met, or as a learned behavior if screaming reliably gets a reaction from the owner." },
+      { q: "Why is my cockatoo plucking its feathers?", a: "Feather-destructive behavior is very often linked to insufficient social interaction, boredom, or anxiety, though a vet should always rule out underlying medical or nutritional causes first. It's one of the most common and serious welfare issues in captive cockatoos and is far easier to prevent than to reverse once it becomes established." },
+      { q: "How long do cockatoos live?", a: "40 to 60 years is typical, with some individuals living even longer. This exceptionally long lifespan means most people who acquire a cockatoo need a realistic plan for its care well into the future, potentially including rehoming arrangements later in life." },
+      { q: "How much attention do cockatoos need?", a: "More than almost any other commonly kept parrot. Cockatoos evolved to maintain near-constant physical contact with their flock, and captive birds often expect the same level of attention from their owner. Hours of daily direct interaction are typically necessary to prevent serious behavioral problems." },
+    ],
+  },
+  {
     id: "conure",
     name: "Green Cheek Conure",
     emoji: "🦜",
@@ -367,102 +394,75 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     ],
   },
   {
-    id: "canary",
-    name: "Canary",
-    emoji: "🐦",
-    difficulty: "Beginner",
+    id: "lovebird",
+    name: "Lovebird",
+    emoji: "❤️",
+    difficulty: "Intermediate",
     petType: "Birds",
-    image: "/assets/guides/canary.jpg",
-    tagline: "The classic singing songbird that's happiest observed, not handled!",
-    funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
+    image: "/assets/guides/lovebird.jpg",
+    tagline: "The feisty, affectionate little parrot that bonds deeply with its person!",
+    funFact: "Lovebirds mate for life in the wild and are famous for their strong pair bonds. They even feed each other and sit side-by-side for hours! This is where they got their name.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
     costs: {
       setup: [
-        { item: "Flight cage (24-30 in wide)", low: 60, high: 120 },
-        { item: "Perches of varied diameters", low: 15, high: 25 },
-        { item: "Shallow bath dish", low: 8, high: 15 },
-        { item: "Cuttlebone or mineral block", low: 5, high: 10 },
+        { item: "24x24x24 in+ cage (larger preferred)", low: 80, high: 150 },
+        { item: "Perches and swings", low: 20, high: 35 },
+        { item: "Shreddable toys", low: 20, high: 40 },
+        { item: "Sleep tent", low: 10, high: 20 },
       ],
       annual: [
-        { item: "Seed mix or pellets", low: 50, high: 80 },
-        { item: "Fresh greens and vegetables", low: 50, high: 90 },
-        { item: "Egg food (molting/breeding season)", low: 15, high: 25 },
-        { item: "Annual avian vet check", low: 40, high: 70 },
+        { item: "Small parrot pellets", low: 70, high: 110 },
+        { item: "Fresh vegetables", low: 80, high: 130 },
+        { item: "Toys (rotating)", low: 40, high: 70 },
+        { item: "Annual avian vet check + psittacosis testing", low: 70, high: 120 },
       ],
     },
     sections: {
-      housing: "A flight cage at least 24 to 30 inches wide is far better than a typical small cage, since canaries are active fliers that need horizontal space more than height. Provide multiple natural perches of varying diameter positioned so the bird can fly lengthwise across the cage. Position away from drafts, kitchen fumes (which are lethal to birds), and direct sun. Canaries do best kept singly or in a compatible pair — males housed together, especially during breeding season, will often fight. Cover the cage at night to provide a consistent 10 to 12 hours of uninterrupted darkness for sleep.",
-      diet: "A high-quality canary or finch seed mix can form a base, but a pelleted diet or seed heavily supplemented with fresh greens (dandelion, spinach, chickweed) and vegetables closes the nutritional gaps that come with a seed-only diet. Egg food — hard-boiled egg mixed with bread or a commercial egg food supplement — provides valuable protein, especially important during molting and breeding season. A cuttlebone or mineral block supplies calcium and trace minerals. Provide fresh water daily.",
-      enrichment: "Canaries are primarily an observation and listening bird rather than a hands-on interactive pet — most do not enjoy handling and are happiest simply watched and listened to. Provide a shallow bath dish, since canaries bathe enthusiastically and regularly. Natural light exposure supports healthy singing behavior and normal molt cycles. Swings and simple toys add modest enrichment, though canaries are far less toy-driven than parrots. A stable, calm, consistent daily routine matters more to their wellbeing than direct interaction ever will.",
-      health: "Mites, including scaly-leg mites, cause crusty growths on the legs and beak and are treatable with an avian-specific antiparasitic. Respiratory infections show as tail-bobbing with each breath, labored breathing, and fluffed feathers, and require urgent veterinary attention. Obesity from seed-heavy diets is common and preventable with a more balanced diet. Egg-binding can occur in females even without a male present, since a single hen can still lay infertile eggs — watch for straining, fluffed and lethargic behavior, and seek veterinary care immediately if suspected. Annual avian veterinary checkups are recommended.",
+      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 24x24x24 inches is required, though 30x24x30 inches or larger is preferred. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers — cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
+
+Provide multiple perches at different heights and diameters (1/2 to 3/4 inch), swings, and a variety of toys. Natural wood perches are preferred over dowels for foot health. Position the cage at eye level, away from the kitchen, drafts, and direct sunlight. Lovebirds are highly alert and feel most secure when positioned at human eye level with a wall behind the cage.
+
+Provide a sleep area — many lovebirds prefer a small sleeping tent or covered corner for nighttime, and benefit from 10 to 12 hours of covered darkness. Some lovebirds will enthusiastically shred fabric, so inspect sleeping tents regularly for loose threads.
+
+Lovebirds are highly social within their species. A bonded pair of lovebirds is happier and healthier than a solo bird, and bonded pairs often have less aggressive territorial behavior toward humans. Introducing a second lovebird requires a careful slow-introduction process.`,
+      diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of the diet. A seed-only diet causes the same nutritional deficiencies seen in other parrots: fatty liver, vitamin deficiencies, and shortened lifespan. Pellet transition from seeds is often challenging with lovebirds — they are stubborn — but persistence pays off.
+
+Fresh vegetables should be offered daily: bell peppers, leafy greens, broccoli, carrots, cooked sweet potato, and snap peas are all excellent choices. Lovebirds tend to be bolder about trying new foods than some other parrot species. Use the basket trick — weaving vegetables and herbs through the cage bars — to encourage foraging for fresh foods.
+
+Millet is a high-fat treat that lovebirds love intensely. Limit to a small piece 2 to 3 times per week. A seed mix can be offered as enrichment in a foraging toy rather than as the primary food source. Strictly avoid avocado, chocolate, caffeine, onion, garlic, and xylitol. Fresh water changed daily.`,
+      enrichment: `Lovebirds are nicknamed the "pocket parrot" — they are intensely bonded, affectionate, and active little birds with large personalities. Enrichment is not optional; without adequate stimulation, lovebirds become cage-bound, hormonal, territorial, and difficult.
+
+Shreddable toys are lovebird favorites: palm leaf mats, paper strips, thin cardboard tubes, and soft wood pieces allow them to display their natural nesting and foraging behaviors. Swings and ladders get heavy use. Provide foraging toys where food is hidden — this is a much more enriching way to offer seeds or pellets than in an open dish.
+
+Daily supervised out-of-cage time of at least 1 to 2 hours in a bird-safe space allows flying, exploring, and interaction with their keeper. Many lovebirds become remarkably affectionate and social with their primary human, seeking contact, playing peekaboo, and vocalizing extensively in response to interaction.
+
+Lovebirds can be territorial with other bird species and with other lovebirds of different sex unless properly bonded. House only with thoroughly bonded partners and never mix lovebirds with other parrot species in the same cage without extensive supervised introductions.`,
+      health: `Respiratory infections are common in lovebirds and progress rapidly. Signs include breathing with the tail bobbing, nasal discharge, fluffed feathers, and sitting low on a perch. Seek veterinary care promptly — birds mask illness and by the time symptoms are visible, the bird is usually significantly ill.
+
+Egg binding is a life-threatening emergency in female lovebirds. A hen unable to pass an egg develops rapidly worsening distress, sitting puffed on the cage floor, straining, and visibly distressed. This requires immediate emergency veterinary intervention. Minimize hormonal triggers (long daylight hours, nesting materials, excessive handling of the back) to reduce egg-laying stimulation in female lovebirds.
+
+Psittacosis (Chlamydiosis) is a bacterial infection that can spread to humans. Annual testing or monitoring for this disease is recommended. Any new lovebird should be tested or treated prophylactically.
+
+Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in other parrots. Annual avian veterinary wellness checks are strongly recommended, particularly blood panels for birds on seed-heavy diets.`,
       checklist: [
-        "Flight cage at least 24–30 inches wide",
-        "Multiple perches of varying diameter",
-        "High-quality seed mix or pellets",
-        "Fresh greens and vegetables daily",
-        "Egg food during molting/breeding season",
-        "Cuttlebone or mineral block",
-        "Shallow bath dish",
-        "Cage cover for nighttime darkness",
-        "Avian veterinarian contact",
+        "Minimum 24x24x24\" cage (larger preferred)",
+        "High-quality lovebird or small parrot pellets",
+        "Fresh vegetables and limited fruit",
+        "Multiple perches, swings, and ladders",
+        "Lots of shreddable toys (paper, cardboard)",
+        "Foraging toys and puzzle feeders",
+        "Millet sprays for treats",
+        "Safe chew toys (bird-safe wood)",
+        "Nail clippers",
+        "Avian veterinarian experienced with lovebirds"
       ],
     },
     faqs: [
-      { q: "Do canaries need a companion?", a: "Not necessarily. Unlike flock parrots, many canaries thrive alone and are actually calmer and sing more without competition from another male in the room. A compatible pair can work, but males housed together frequently fight, especially during breeding season." },
-      { q: "Why won't my canary sing?", a: "A few possibilities: it may be a hen rather than a male (only males typically sing), it may be going through a molt (birds sing far less during this period), or it could simply be an individual quirk, since not every male canary sings constantly. Stress or illness can also suppress singing, so rule those out if the change is sudden." },
-      { q: "Can canaries be handled?", a: "Generally, no. Canaries are an observation bird that stresses easily with handling, and most are content simply being watched and listened to rather than physically interacted with." },
-      { q: "What do canaries eat?", a: "A quality seed mix or pellet diet as a base, with daily fresh greens and vegetables to fill nutritional gaps, plus egg food during breeding and molting season for extra protein." },
-      { q: "How long do canaries live?", a: "8 to 10 years is typical, with some canaries reaching 12 to 15 years under excellent care." },
-    ],
-  },
-  {
-    id: "cockatoo",
-    name: "Cockatoo",
-    emoji: "🦜",
-    difficulty: "Advanced",
-    petType: "Birds",
-    image: "/assets/guides/cockatoo.jpg",
-    tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
-    funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner — which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
-    costs: {
-      setup: [
-        { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
-        { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
-        { item: "Foraging toys", low: 50, high: 100 },
-        { item: "Cage-specific padlocks", low: 15, high: 30 },
-      ],
-      annual: [
-        { item: "Large parrot pellets", low: 200, high: 350 },
-        { item: "Fresh vegetables, fruit, and nuts", low: 200, high: 350 },
-        { item: "Toys (rotating, heavy destruction rate)", low: 150, high: 300 },
-        { item: "Annual avian vet exam + bloodwork", low: 150, high: 300 },
-      ],
-    },
-    sections: {
-      housing: "Provide the largest cage that can reasonably fit in your home — a minimum of 3x2x4 feet, with larger strongly preferred, since cockatoos are large, powerful birds that need real room to climb, stretch, and flap. Cage bars must be heavy-gauge metal, since cockatoos have immensely strong beaks capable of bending weaker cages or working open standard latches; many owners add cage-specific padlocks for this reason. Position the cage in a social area of the home, since isolation is especially damaging to this species. Keep a constant supply of destructible wood toys available, since chewing is a critical behavioral outlet and supports beak health.",
-      diet: "A high-quality large parrot pellet should form 60 to 70% of the diet, supplemented daily with fresh vegetables, fruit, and a rotating variety of nuts (almonds and in-shell walnuts are excellent for foraging and enrichment). Seed-only diets cause the same fatty liver disease and nutritional deficiencies seen in smaller parrots, at greater scale given a cockatoo's size and long lifespan. Foraging-based feeding — food hidden in puzzle toys or wrapped in paper — is strongly recommended, both for nutritional enrichment and to occupy a bird that's otherwise prone to problem behaviors out of sheer boredom.",
-      enrichment: "This is the single most important factor in a cockatoo's long-term wellbeing. Cockatoos require hours of daily direct interaction and are widely considered unsuitable for owners who are away from home for long stretches without a plan for companionship. Without adequate attention, cockatoos are highly prone to feather-destructive behavior, self-mutilation, excessive screaming, and severe anxiety. Provide a large, rotating supply of destructible wood and foraging toys, daily supervised out-of-cage time, and consistent physical affection — most cockatoos crave cuddling and close physical contact more than almost any other parrot. A realistic, honest assessment of available daily time is essential before acquiring this species.",
-      health: "Feather-destructive behavior (plucking and self-mutilation) is extremely common in captive cockatoos and is very often behavioral or psychological — insufficient attention, boredom, or anxiety — rather than purely medical, though a vet should always rule out underlying illness or nutritional causes first. Screaming is a natural cockatoo vocalization but becomes excessive and distressing for the household when the bird's social needs aren't being met. Psittacine beak and feather disease (PBFD) is a serious viral concern in parrots, and screening new birds is recommended. Cockatoos can live 40 to 60 years or more, meaning many owners need a long-term care plan since the bird may well outlive them. Annual avian veterinary checkups are essential.",
-      checklist: [
-        "Large cage (3x2x4 ft minimum, heavy-gauge bars with secure locks)",
-        "High-quality large parrot pellets",
-        "Fresh vegetables, fruit, and nuts daily",
-        "Foraging toys",
-        "Constant supply of destructible wood chew toys",
-        "Hours of daily direct interaction",
-        "Social placement within the home",
-        "Cage-specific padlocks",
-        "Avian veterinarian contact",
-        "A realistic long-term care plan (40–60+ year lifespan)",
-      ],
-    },
-    faqs: [
-      { q: "Are cockatoos good pets?", a: "They can be deeply affectionate and rewarding companions, but they're widely regarded as one of the most demanding parrots to keep responsibly. They need hours of daily interaction, are prone to severe behavioral problems like screaming and feather plucking without it, and can live 40 to 60+ years — meaning the commitment often outlasts an owner's active caregiving years. They aren't recommended for first-time bird owners or households that can't offer near-daily direct attention." },
-      { q: "Why do cockatoos scream?", a: "Screaming is a natural, far-carrying flock-contact call used in the wild to locate other flock members. In captivity, it becomes excessive when a cockatoo's social and attention needs aren't being met, or as a learned behavior if screaming reliably gets a reaction from the owner." },
-      { q: "Why is my cockatoo plucking its feathers?", a: "Feather-destructive behavior is very often linked to insufficient social interaction, boredom, or anxiety, though a vet should always rule out underlying medical or nutritional causes first. It's one of the most common and serious welfare issues in captive cockatoos and is far easier to prevent than to reverse once it becomes established." },
-      { q: "How long do cockatoos live?", a: "40 to 60 years is typical, with some individuals living even longer. This exceptionally long lifespan means most people who acquire a cockatoo need a realistic plan for its care well into the future, potentially including rehoming arrangements later in life." },
-      { q: "How much attention do cockatoos need?", a: "More than almost any other commonly kept parrot. Cockatoos evolved to maintain near-constant physical contact with their flock, and captive birds often expect the same level of attention from their owner. Hours of daily direct interaction are typically necessary to prevent serious behavioral problems." },
+      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true — solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (several hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
+      { q: "Can lovebirds learn to talk?", a: "Occasionally, but lovebirds are not known as talkers. Unlike budgies or African greys, speech is rare and the vocabulary stays very small when it does occur. What lovebirds excel at instead is vocalization, contact calling, and developing a strong interactive bond with their keeper. If talking ability is important to you, a budgie or a cockatiel (males) are more reliable choices. Lovebirds compensate with personality, affection, and playfulness." },
+      { q: "Do lovebirds bite?", a: "Yes — lovebirds have a strong beak for their size and will use it when frightened, territorial, or over-stimulated. Consistent calm handling from a young age, respecting the bird's signals (fluffing, lunging, eye pinning), and never reaching into the cage when the bird is in a territorial mood significantly reduces biting. Lovebirds that are handled regularly from a young age and bonded to a primary human are generally no worse than any other small parrot, and many are remarkably gentle with their person." },
+      { q: "What should lovebirds eat?", a: "60 to 70% of the diet should be high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries). Fresh vegetables daily — leafy greens, bell peppers, broccoli, carrot, and cooked sweet potato — make up the remainder. Limit seed mix to use as enrichment in foraging toys rather than as a dietary staple. Millet is a high-fat treat to be used sparingly. Seed-only diets cause fatty liver disease, vitamin deficiencies, and significantly shortened lifespan in lovebirds just as in all parrots." },
+      { q: "How long do lovebirds live?", a: "10 to 20 years with excellent care — a lifespan that surprises many keepers who assume small birds have short lives. The full 20-year potential requires a pellet-based diet, regular avian veterinary care, adequate enrichment and social contact, and minimizing hormonal stress (particularly in egg-laying females). Lovebirds rehomed in middle age after years of poor nutrition often have reduced lifespans. Starting with proper care from day one makes a measurable difference in long-term health." },
     ],
   },
 ];
