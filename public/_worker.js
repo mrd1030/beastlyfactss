@@ -91,6 +91,13 @@ const ANIMAL_IMAGES = {
   'Capybara': '/assets/facts/capybara.jpg',
   'Sea Sponge': '/assets/facts/sea-sponge.jpg',
   'Pistol Shrimp': '/assets/facts/pistol-shrimp.jpg',
+  'Blobfish': '/assets/facts/blobfish.jpg',
+  'Bombardier Beetle': '/assets/facts/bombardier-beetle.jpg',
+  'Box Jellyfish': '/assets/facts/box-jellyfish.jpg',
+  'Cuban Tree Frog': '/assets/facts/cuban-tree-frog.jpg',
+  'Hagfish': '/assets/facts/hagfish.jpg',
+  'Hairy Frog': '/assets/facts/hairy-frog.jpg',
+  'Pen-tailed Tree Shrew': '/assets/facts/pen-tailed-tree-shrew.jpg',
 };
 
 function imageFor(animal) {
