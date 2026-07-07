@@ -36,6 +36,7 @@ const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
 const Guides = lazy(() => import('@/pages/Guides'));
 const FactFiles = lazy(() => import('@/pages/FactFiles'));
+const Chronicles = lazy(() => import('@/pages/Chronicles'));
 
 function RedirectGuideFilter() {
   const { guideFilter } = useParams();
@@ -86,6 +87,9 @@ const AuthenticatedApp = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/category/:catSlug" element={<Blog />} />
             <Route path="/blog/:slug" element={<Blog />} />
+            <Route path="/chronicles" element={<Chronicles />} />
+            <Route path="/chronicles/:seriesId" element={<Chronicles />} />
+            <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
             <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
             <Route path="/quiz/:tab" element={<Quiz />} />
             <Route path="/pack" element={<Pack />} />

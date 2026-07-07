@@ -32,6 +32,19 @@
 /blog/category/enclosures/ /blog/category/pet-care/ 301
 /blog/category/site-news /blog/welcome-to-beastlyfacts/ 301
 /blog/category/site-news/ /blog/welcome-to-beastlyfacts/ 301
+
+# Chronicles short stories moved out of the blog to their own section:
+# /chronicles/<series>/ is the landing list, /chronicles/<series>/<part>/ reads.
+/blog/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away /chronicles/dex/1/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away/ /chronicles/dex/1/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2 /chronicles/dex/2/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2/ /chronicles/dex/2/ 301
+/blog/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him /chronicles/otis/1/ 301
+/blog/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him/ /chronicles/otis/1/ 301
+/blog/category/short-story /chronicles/dex/ 301
+/blog/category/short-story/ /chronicles/dex/ 301
+/chronicles /chronicles/dex/ 301
+/chronicles/ /chronicles/dex/ 301
 /guides/domestic-shorthair /guides/cat-domestic-shorthair/ 301
 /guides/domestic-shorthair/ /guides/cat-domestic-shorthair/ 301
 /guides/african-grey-parrot /guides/african-grey/ 301

@@ -27,15 +27,13 @@ const components = {
     ),
   },
   block: {
-    h1: ({ children }) => <h2 className="text-4xl font-bold mt-12 mb-6 text-foreground">{children}</h2>,
-    h2: ({ children }) => <h2 className="text-3xl font-semibold mt-10 mb-5 text-foreground">{children}</h2>,
-    h3: ({ children }) => <h3 className="text-2xl font-semibold mt-8 mb-4 text-foreground">{children}</h3>,
-    normal: ({ children }) => <p className="mb-6 leading-relaxed text-muted-foreground">{children}</p>,
-  },
-
-  list: {
-    bullet: ({ children }) => <ul className="list-disc pl-6 mb-6 space-y-2 text-muted-foreground">{children}</ul>,
-    number: ({ children }) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-muted-foreground">{children}</ol>,
+    // Demote stray h1s to h2 (the page renders its own h1). No styling
+    // classes on any body element: explicit sizes/colors here used to
+    // override the surrounding `prose` styles and made Sanity posts look
+    // different from MDX ones (gray paragraphs, oversized headings).
+    // Paragraphs, h2/h3, lists, etc. now fall through to @portabletext's
+    // plain default tags, styled by `prose` exactly like MDX output.
+    h1: ({ children }) => <h2>{children}</h2>,
   },
 
   types: {
@@ -256,8 +254,11 @@ const components = {
 };
 
 export default function PortableTextRenderer({ content }) {
+  // Same prose classes Blog/Chronicles wrap MDX content in — Sanity and MDX
+  // posts must look identical. (Kept here too, not just at the call sites,
+  // because SplitPreview renders without a prose parent.)
   return (
-    <div className="prose prose-lg max-w-none">
+    <div className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
       <PortableText value={content} components={components} />
     </div>
   );

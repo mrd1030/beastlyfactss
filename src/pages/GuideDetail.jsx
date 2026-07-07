@@ -10,6 +10,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
+import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
@@ -529,7 +530,10 @@ export default function GuideDetail() {
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
                 <p className="text-xs text-muted-foreground font-body mb-2">There's a whole fiction series about a {guide.name.toLowerCase()}:</p>
-                <Link to={`/blog/${guide.relatedStory.slug}/`} className="group block">
+                <Link
+                  to={seriesForSlug(guide.relatedStory.slug) ? chroniclesPath(seriesForSlug(guide.relatedStory.slug).id) : `/blog/${guide.relatedStory.slug}/`}
+                  className="group block"
+                >
                   <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                     {guide.relatedStory.title}
                   </p>

@@ -41,6 +41,7 @@ export default function Footer() {
                 { to: '/quiz/personality/', label: 'Personality Quiz' },
                 { to: '/pack/', label: 'My Beast Pack' },
                 { to: '/blog/', label: 'Critter Digest' },
+                { to: '/chronicles/dex/', label: 'The Chronicles' },
               ]
             },
             {

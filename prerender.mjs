@@ -27,6 +27,13 @@ const ENCYCLOPEDIA_CATEGORIES = [
   'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
+// Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
+// Their stories render on /chronicles/<id>/<part>, not /blog/<slug> — the old
+// blog URLs 301 in public/_redirects.
+const CHRONICLES_PREFIXES = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
+const isChroniclesSlug = (slug) =>
+  Object.values(CHRONICLES_PREFIXES).some(prefix => slug.startsWith(prefix));
+
 // Reads slug from MDX frontmatter; falls back to filename if not set
 async function getMdxRoutes() {
   const contentDirs = ['content/blog', 'content/guides', 'content/fun-facts', 'content/short-story'];
@@ -38,9 +45,47 @@ async function getMdxRoutes() {
         const raw = await readFile(path.join(dir, file), 'utf-8');
         const match = raw.match(/^slug:\s*["']?([^"'\r\n]+)["']?/m);
         const slug = match ? match[1].trim() : file.replace('.mdx', '');
+        if (isChroniclesSlug(slug)) continue; // rendered via getChroniclesRoutes()
         routes.push(`/blog/${slug}`);
       }
     } catch {}
+  }
+  return routes;
+}
+
+// Chronicles part routes: /chronicles/<series> (part 1) plus /chronicles/<series>/<n>.
+// Parts = MDX short-story files + Sanity short-story posts, ordered by date —
+// must stay consistent with groupChronicles() in src/lib/chronicles.js.
+async function getChroniclesRoutes() {
+  const stories = [];
+  try {
+    const files = await readdir('content/short-story');
+    for (const file of files.filter(f => f.endsWith('.mdx'))) {
+      const raw = await readFile(path.join('content/short-story', file), 'utf-8');
+      const slugM = raw.match(/^slug:\s*["']?([^"'\r\n]+)["']?/m);
+      const dateM = raw.match(/^date:\s*["']?([^"'\r\n]+)["']?/m);
+      stories.push({
+        slug: slugM ? slugM[1].trim() : file.replace('.mdx', ''),
+        date: dateM ? dateM[1].trim() : '',
+      });
+    }
+  } catch {}
+  try {
+    const q = encodeURIComponent(
+      '*[_type == "post" && defined(slug.current) && "short-story" in categories[]->slug.current]{ "slug": slug.current, publishedAt }'
+    );
+    const res = await fetch(`https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${q}`);
+    const data = await res.json();
+    for (const p of data.result || []) stories.push({ slug: p.slug, date: p.publishedAt || '' });
+  } catch (err) {
+    console.warn('⚠️  Could not fetch Sanity chronicles posts:', err.message);
+  }
+
+  const routes = [];
+  for (const [id, prefix] of Object.entries(CHRONICLES_PREFIXES)) {
+    const partCount = stories.filter(s => s.slug.startsWith(prefix)).length;
+    routes.push(`/chronicles/${id}`); // landing list
+    for (let n = 1; n <= partCount; n++) routes.push(`/chronicles/${id}/${n}`);
   }
   return routes;
 }
@@ -109,8 +154,9 @@ const STATIC_ROUTES = [
 
 async function getSanityRoutes() {
   try {
+    // Short-story posts render on /chronicles/, not /blog/ — see getChroniclesRoutes()
     const postQuery = encodeURIComponent(
-      '*[_type == "post" && defined(slug.current)]{ "slug": slug.current }'
+      '*[_type == "post" && defined(slug.current) && !("short-story" in categories[]->slug.current)]{ "slug": slug.current }'
     );
     const catQuery = encodeURIComponent(
       '*[_type == "category" && defined(slug.current) && count(*[_type == "post" && !(_id in path("drafts.**")) && references(^._id)]) > 0]{ "slug": slug.current }'
@@ -125,7 +171,10 @@ async function getSanityRoutes() {
 
     const blogRoutes = (postData.result || []).map(p => `/blog/${p.slug}`);
     const categoryRoutes = (catData.result || []).map(c => `/category/${c.slug}`);
-    const blogCategoryRoutes = (catData.result || []).map(c => `/blog/category/${c.slug}`);
+    // /blog/category/short-story 301s to /chronicles/ in _redirects — don't prerender it
+    const blogCategoryRoutes = (catData.result || [])
+      .filter(c => c.slug !== 'short-story')
+      .map(c => `/blog/category/${c.slug}`);
 
     return [...blogRoutes, ...categoryRoutes, ...blogCategoryRoutes];
   } catch (err) {
@@ -231,8 +280,12 @@ async function main() {
   }
 
   console.log('🔍 Discovering dynamic routes from Sanity and MDX...');
-  const [dynamicRoutes, mdxRoutes] = await Promise.all([getSanityRoutes(), getMdxRoutes()]);
-  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes])];
+  const [dynamicRoutes, mdxRoutes, chroniclesRoutes] = await Promise.all([
+    getSanityRoutes(),
+    getMdxRoutes(),
+    getChroniclesRoutes(),
+  ]);
+  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes, ...chroniclesRoutes])];
   console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY}...`);
 
   const server = await preview({ preview: { port: PORT, open: false } });

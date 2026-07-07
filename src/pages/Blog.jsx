@@ -12,6 +12,7 @@ import groq from 'groq';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
+import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { truncateDescription } from '@/lib/utils/truncate';
 import * as MdxComponents from '@/components/mdx';
@@ -72,6 +73,15 @@ export default function Blog() {
     setPage(pageParam);
 
     if (postParam) {
+      // Short stories moved to their own Chronicles section — send any old
+      // /blog/<story-slug>/ deep link to the right series (the crawler-level
+      // 301s live in public/_redirects; this covers client-side navigation).
+      const storySeries = seriesForSlug(postParam);
+      if (storySeries) {
+        navigate(chroniclesPath(storySeries.id), { replace: true });
+        return;
+      }
+
       const allPostsList = [
         ...sanityPosts,
         ...localPosts.map(post => ({
@@ -103,8 +113,10 @@ export default function Blog() {
     }
   }, [location.search, routeSlug, catSlug, sanityPosts]);
 
+  // Chronicles short stories live on their own page (/chronicles/) — keep
+  // them out of the listing, category pills, and sidebars entirely.
   const allPosts = [
-    ...sanityPosts,
+    ...sanityPosts.filter(p => !isChroniclesPost(p)),
     ...localPosts.map(post => ({
       ...post,
       _id: post.id,
@@ -112,7 +124,7 @@ export default function Blog() {
       mainImage: null,
       categorySlug: null,
     })),
-    ...mdxPosts,
+    ...mdxPosts.filter(p => !isChroniclesPost(p)),
   ]
   .sort((a, b) => {
       const dateA = new Date(a.publishedAt || a.date || 0);
@@ -135,7 +147,7 @@ export default function Blog() {
   const extraPostCounts = new Map(); // counts for Sanity categories from local/MDX posts
   const extraCategoryMap = new Map(); // new categories only in local/MDX posts
 
-  [...localPosts, ...mdxPosts].forEach(post => {
+  [...localPosts, ...mdxPosts.filter(p => !isChroniclesPost(p))].forEach(post => {
     const cats = post.allCategories?.length ? post.allCategories
       : post.category ? [post.category] : [];
     cats.forEach(cat => {
@@ -149,10 +161,15 @@ export default function Blog() {
     });
   });
 
-  const enrichedSanityCategories = sanityCategories.map(c => ({
-    ...c,
-    count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),
-  }));
+  // "Short Story" stays a real Sanity category (it's how chronicle posts are
+  // tagged), but its pill shouldn't appear here now that the stories render
+  // on /chronicles/ instead of in the blog.
+  const enrichedSanityCategories = sanityCategories
+    .filter(c => c.slug !== 'short-story')
+    .map(c => ({
+      ...c,
+      count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),
+    }));
 
   const mdxCategories = Array.from(extraCategoryMap.values()).sort((a, b) => a.title.localeCompare(b.title));
 
@@ -323,6 +340,14 @@ export default function Blog() {
               <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam, ever. 🐾</p>
               <BeehiivSubscribe />
             </div>
+
+            <Link to="/chronicles/dex/" className="block bg-secondary/5 border border-secondary/20 rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
+              <p className="text-xs font-display font-bold text-secondary mb-1">📖 The Chronicles</p>
+              <p className="text-xs text-muted-foreground font-body leading-relaxed">
+                Short fiction from the Beastly Facts universe — follow Dex 🦎 and Otis 🐰 in their own series.
+              </p>
+              <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">Start reading →</span>
+            </Link>
 
             {(enrichedSanityCategories.filter(c => c.count > 0).length > 0 || mdxCategories.length > 0) && (
               <div className="bg-card border border-border rounded-2xl p-5">
