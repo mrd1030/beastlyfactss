@@ -28,16 +28,16 @@ export default function Categories() {
     <div className="min-h-screen">
       <Helmet>
         <title>Browse by Category | Beastly Facts</title>
-        <meta name="description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more. Find exactly what you're looking for." />
+        <meta name="description" content="Explore Beastly Facts articles and care guides by animal category - reptiles, dogs, cats, birds, exotic pets, and more. Find exactly what you're looking for." />
         <link rel="canonical" href="https://beastlyfacts.com/categories/" />
         <meta property="og:title" content="Browse by Category | Beastly Facts" />
-        <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more." />
+        <meta property="og:description" content="Explore Beastly Facts articles and care guides by animal category - reptiles, dogs, cats, birds, exotic pets, and more." />
         <meta property="og:url" content="https://beastlyfacts.com/categories/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — browse by category" />
+        <meta property="og:image:alt" content="Beastly Facts - browse by category" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Browse by Category | Beastly Facts" />
         <meta name="twitter:description" content="Explore Beastly Facts articles and care guides by animal category." />
@@ -46,7 +46,7 @@ export default function Categories() {
           "@context": "https://schema.org",
           "@type": "CollectionPage",
           "name": "Browse by Category | Beastly Facts",
-          "description": "Explore Beastly Facts articles and care guides by animal category — reptiles, dogs, cats, birds, exotic pets, and more.",
+          "description": "Explore Beastly Facts articles and care guides by animal category - reptiles, dogs, cats, birds, exotic pets, and more.",
           "url": "https://beastlyfacts.com/categories/",
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" }
         })}</script>

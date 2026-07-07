@@ -8,7 +8,7 @@ import { slugify } from '@/lib/utils/slugify';
 
 const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
 
-// Letters that have at least one term — computed once at module level
+// Letters that have at least one term - computed once at module level
 const LETTERS_WITH_TERMS = new Set(
   CATEGORIES.flatMap(c => c.terms.map(t => t.term[0].toUpperCase()))
 );
@@ -46,7 +46,7 @@ export default function Glossary() {
   const location = useLocation();
 
   // Arriving via a hash link (e.g. from an in-article glossary highlight)
-  // doesn't trigger the browser's native scroll-to-anchor behavior — that
+  // doesn't trigger the browser's native scroll-to-anchor behavior - that
   // only fires on a real page load, not a client-side route change, and
   // CSS :target doesn't re-evaluate on history.pushState() either, so the
   // scroll AND the "you're here" highlight both need to be done by hand.
@@ -69,7 +69,7 @@ export default function Glossary() {
         }, 2500);
       } else if (attempts < 20) {
         // The (lazy-loaded, always-unfiltered-by-default) term list may not
-        // have painted yet — retry briefly instead of guessing one delay.
+        // have painted yet - retry briefly instead of guessing one delay.
         attempts += 1;
         setTimeout(tryScroll, 50);
       }
@@ -119,7 +119,7 @@ export default function Glossary() {
   const activeResults = searchResults || letterResults;
   const isFiltered = activeResults !== null;
 
-  const DESCRIPTION = `Plain-English glossary of ${TOTAL_TERMS}+ exotic pet and reptile care terms — from husbandry and UVB to molting, brumation, and beyond. Essential reading for new keepers.`;
+  const DESCRIPTION = `Plain-English glossary of ${TOTAL_TERMS}+ exotic pet and reptile care terms - from husbandry and UVB to molting, brumation, and beyond. Essential reading for new keepers.`;
 
   return (
     <div className="min-h-screen">
@@ -149,7 +149,7 @@ export default function Glossary() {
               Reptile &amp; Exotic Pet Glossary
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              Plain-English definitions for {TOTAL_TERMS}+ care terms — from husbandry basics to species-specific jargon.
+              Plain-English definitions for {TOTAL_TERMS}+ care terms - from husbandry basics to species-specific jargon.
               Every entry links back to the guide where it matters most.
             </p>
           </motion.div>
@@ -158,7 +158,7 @@ export default function Glossary() {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
 
-        {/* A–Z letter filter */}
+        {/* A-Z letter filter */}
         <div
           className="flex gap-1 overflow-x-auto pb-1 mt-4 mb-4 scrollbar-hide"
           role="navigation"
@@ -208,7 +208,7 @@ export default function Glossary() {
           )}
         </div>
 
-        {/* Category jump nav — only when not filtered */}
+        {/* Category jump nav - only when not filtered */}
         {!isFiltered && (
           <div className="flex flex-wrap gap-2 mb-10">
             {CATEGORIES.map(cat => (
@@ -230,7 +230,7 @@ export default function Glossary() {
               <p className="text-sm text-muted-foreground font-body text-center py-16">
                 {activeLetter
                   ? `No terms starting with "${activeLetter}".`
-                  : `No terms matching “${query}” — try a shorter word.`}
+                  : `No terms matching “${query}” - try a shorter word.`}
               </p>
             ) : (
               <>
@@ -249,7 +249,7 @@ export default function Glossary() {
           </motion.div>
         )}
 
-        {/* All categories — only when not filtered */}
+        {/* All categories - only when not filtered */}
         {!isFiltered && CATEGORIES.map((cat, i) => (
           <motion.section
             key={cat.id}

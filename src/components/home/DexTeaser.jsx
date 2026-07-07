@@ -27,7 +27,7 @@ export default function DexTeaser() {
               Chronicles of Dex the Bearded Dragon
             </h2>
             <p className="text-sm text-muted-foreground font-body mb-6 leading-relaxed">
-              Meet Dex — a bearded dragon with opinions, ambitions, and a cricket problem. A charming, witty short story told entirely from his point of view.
+              Meet Dex - a bearded dragon with opinions, ambitions, and a cricket problem. A charming, witty short story told entirely from his point of view.
             </p>
             <Link to="/chronicles/dex/" className="w-fit">
               <motion.button

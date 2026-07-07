@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 
-// Sits above the fixed navbar (higher z-index) as a slim accent line —
-// the standard "how far through the article" indicator.
+// Sits above the fixed navbar (higher z-index) as a slim accent line - // the standard "how far through the article" indicator.
 export default function ReadingProgressBar() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 300, damping: 30, restDelta: 0.001 });

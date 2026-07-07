@@ -1,8 +1,8 @@
 export default {
   id: "critter-digest-spring-2026",
   slug: "critter-digest-spring-2026",
-  title: "Critter Digest — Spring 2026 Roundup",
-  excerpt: "Updates, care tips, and featured guides for spring — your quick newsletter-style roundup.",
+  title: "Critter Digest - Spring 2026 Roundup",
+  excerpt: "Updates, care tips, and featured guides for spring - your quick newsletter-style roundup.",
   category: "Care Tips",
   emoji: "📰",
   date: "2026-05-23",

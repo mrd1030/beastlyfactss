@@ -1,6 +1,6 @@
 # BeastlyFacts
 
-BeastlyFacts is a content site focused on honest, practical, and well-researched information about pets and animals — with a special focus on reptiles, rabbits, and small animals.
+BeastlyFacts is a content site focused on honest, practical, and well-researched information about pets and animals - with a special focus on reptiles, rabbits, and small animals.
 
 ## Tech Stack
 
@@ -30,8 +30,8 @@ BeastlyFacts is a content site focused on honest, practical, and well-researched
 
 We use **MDX templates** to keep content consistent and easy to create.
 
-- `templates/GUIDE_TEMPLATE.mdx` — For in-depth guides
-- `templates/FUN_FACT_TEMPLATE.mdx` — For shorter, fun fact style pages
+- `templates/GUIDE_TEMPLATE.mdx` - For in-depth guides
+- `templates/FUN_FACT_TEMPLATE.mdx` - For shorter, fun fact style pages
 
 See the [templates/README.md](./templates/README.md) for guidelines on frontmatter and how to use the MDX components.
 
@@ -39,12 +39,12 @@ See the [templates/README.md](./templates/README.md) for guidelines on frontmatt
 
 Located in `src/components/mdx/`:
 
-- `<Figure />` — Images with captions and alt text
-- `<FunFact />` — Highlighted fun fact callouts
-- `<ProsCons />` — Pros and Cons blocks
-- `<ComparisonTable />` — Clean comparison tables
-- `<AffiliateLink />` — Amazon / affiliate links
-- `<Sources />` — Sources and references section
+- `<Figure />` - Images with captions and alt text
+- `<FunFact />` - Highlighted fun fact callouts
+- `<ProsCons />` - Pros and Cons blocks
+- `<ComparisonTable />` - Clean comparison tables
+- `<AffiliateLink />` - Amazon / affiliate links
+- `<Sources />` - Sources and references section
 
 ## Getting Started
 

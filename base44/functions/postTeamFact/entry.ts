@@ -7,7 +7,7 @@ const teamFacts = [
   },
   {
     title: "Did You Know? 🌿",
-    body: "Our reptile care guides are written by experienced keepers with years of hands-on husbandry knowledge. We believe in education-first pet ownership — because a well-informed keeper means a thriving animal."
+    body: "Our reptile care guides are written by experienced keepers with years of hands-on husbandry knowledge. We believe in education-first pet ownership - because a well-informed keeper means a thriving animal."
   },
   {
     title: "Our Mission 🦎",
@@ -15,19 +15,19 @@ const teamFacts = [
   },
   {
     title: "The Critter Digest 📰",
-    body: "Our newsletter, The Critter Digest, goes out to thousands of reptile and exotic pet enthusiasts every week. Subscribe for free at beastlyfacts.com — in-depth care guides straight to your inbox!"
+    body: "Our newsletter, The Critter Digest, goes out to thousands of reptile and exotic pet enthusiasts every week. Subscribe for free at beastlyfacts.com - in-depth care guides straight to your inbox!"
   },
   {
     title: "Behind the Facts 🔬",
-    body: "Every animal fact on Beastly Facts is backed by scientific research. We cross-reference peer-reviewed studies, wildlife journals, and expert sources before publishing. Fun AND accurate — that's our standard."
+    body: "Every animal fact on Beastly Facts is backed by scientific research. We cross-reference peer-reviewed studies, wildlife journals, and expert sources before publishing. Fun AND accurate - that's our standard."
   },
   {
     title: "Reptile Keepers Unite 🐍",
-    body: "Our team includes bearded dragon, leopard gecko, ball python, and crested gecko keepers. We share husbandry tips from real experience — not just textbook knowledge. Passion meets practice at Beastly Facts."
+    body: "Our team includes bearded dragon, leopard gecko, ball python, and crested gecko keepers. We share husbandry tips from real experience - not just textbook knowledge. Passion meets practice at Beastly Facts."
   },
   {
     title: "Wildlife Advocacy 🌍",
-    body: "We're passionate advocates for wild animal welfare. Learning about animals creates empathy — and empathy drives conservation. That's why we make animal facts fun and accessible for everyone."
+    body: "We're passionate advocates for wild animal welfare. Learning about animals creates empathy - and empathy drives conservation. That's why we make animal facts fun and accessible for everyone."
   },
 ];
 

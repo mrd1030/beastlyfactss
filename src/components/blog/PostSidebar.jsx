@@ -99,7 +99,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       
       {/* Subscribe */}
       <div className="bg-card border border-border rounded-2xl p-5">
-        <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe — it's free</h3>
+        <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
         <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam. 🐾</p>
         <BeehiivSubscribe />
       </div>
@@ -148,7 +148,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         </div>
         <p className="text-xs font-display font-bold text-secondary mb-1">{displayFact.title}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">{displayFact.fact}</p>
-        <p className="text-xs text-muted-foreground/60 font-body mt-2 italic">— {displayFact.animal}</p>
+        <p className="text-xs text-muted-foreground/60 font-body mt-2 italic"> - {displayFact.animal}</p>
         <button
           onClick={() => toggleFavorite(displayFact.id)}
           className={`mt-3 w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl text-xs font-display font-bold border transition-all ${

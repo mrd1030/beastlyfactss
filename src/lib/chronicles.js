@@ -1,6 +1,6 @@
 import { mdxPosts } from '@/lib/mdxPosts';
 
-// Each series is identified by its slug prefix — story slugs are stable
+// Each series is identified by its slug prefix - story slugs are stable
 // ("chronicles-of-dex-...", "chronicles-of-otis-..."), so new parts published
 // in Sanity or dropped into content/short-story/ are picked up automatically
 // without touching this file. Adding a NEW character = add an entry here
@@ -12,7 +12,7 @@ export const CHRONICLES_SERIES = [
     character: 'Dex the Bearded Dragon',
     shortName: 'Dex',
     emoji: '🦎',
-    blurb: 'A bearded dragon with opinions, ambitions, and a cricket problem — told entirely from his point of view.',
+    blurb: 'A bearded dragon with opinions, ambitions, and a cricket problem - told entirely from his point of view.',
   },
   {
     id: 'otis',
@@ -20,7 +20,7 @@ export const CHRONICLES_SERIES = [
     character: 'Otis the Bunny',
     shortName: 'Otis',
     emoji: '🐰',
-    blurb: 'A house rabbit who is quite sure the garden — and everything in it — belongs to him.',
+    blurb: 'A house rabbit who is quite sure the garden - and everything in it - belongs to him.',
   },
 ];
 

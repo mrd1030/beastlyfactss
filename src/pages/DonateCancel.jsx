@@ -33,7 +33,7 @@ export default function DonateCancel() {
         </motion.div>
         <h1 className="font-display font-bold text-3xl text-foreground mb-3">Donation Cancelled</h1>
         <p className="text-muted-foreground font-body leading-relaxed mb-6">
-          No worries — your donation was cancelled. Feel free to try again whenever you're ready!
+          No worries - your donation was cancelled. Feel free to try again whenever you're ready!
         </p>
         <Link to="/">
           <Button variant="outline" className="w-full font-display font-bold text-lg">Back to Home</Button>

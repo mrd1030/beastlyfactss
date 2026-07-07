@@ -100,7 +100,7 @@ export default function Guides() {
     : `${activeFilter} Care Guides | Beastly Facts`;
 
   const pageDescription = activeFilter !== 'All'
-    ? `Explore all ${activeFilter} care guides on Beastly Facts — husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
+    ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
     : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.';
 
   const canonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
@@ -120,7 +120,7 @@ export default function Guides() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — exotic pet care guides" />
+        <meta property="og:image:alt" content="Beastly Facts - exotic pet care guides" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />

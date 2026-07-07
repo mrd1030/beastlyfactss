@@ -415,12 +415,12 @@ const TABS = [
 const TAB_META = {
   personality: {
     title: 'Which Critter Are You? | Beastly Facts Quiz',
-    description: 'Answer a few fun questions and discover which animal matches your personality — are you a loyal golden retriever, a mysterious ball python, or something wilder?',
+    description: 'Answer a few fun questions and discover which animal matches your personality - are you a loyal golden retriever, a mysterious ball python, or something wilder?',
     canonical: 'https://beastlyfacts.com/quiz/personality/',
   },
   trivia: {
     title: 'Animal Origins Trivia Quiz | Beastly Facts',
-    description: 'Test your knowledge of where animals and breeds come from — 15 questions with instant feedback and a final score. How well do you know the animal kingdom?',
+    description: 'Test your knowledge of where animals and breeds come from - 15 questions with instant feedback and a final score. How well do you know the animal kingdom?',
     canonical: 'https://beastlyfacts.com/quiz/trivia/',
   },
   knowledge: {
@@ -452,7 +452,7 @@ export default function Quiz() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — animal personality and trivia quizzes" />
+        <meta property="og:image:alt" content="Beastly Facts - animal personality and trivia quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
@@ -463,7 +463,7 @@ export default function Quiz() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Puzzle piece">🧩</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Quizzes</h1>
-            <p className="text-sm text-muted-foreground font-body">Personality quiz or knowledge trivia — pick your challenge!</p>
+            <p className="text-sm text-muted-foreground font-body">Personality quiz or knowledge trivia - pick your challenge!</p>
           </motion.div>
 
           {/* Tab switcher */}

@@ -40,7 +40,7 @@ export default function Terms() {
           </Section>
 
           <Section title="2. Use of Content">
-            <p>All content on BeastlyFacts.com — including animal facts, care guides, articles, images, and quizzes — is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with clear attribution to BeastlyFacts.com.</p>
+            <p>All content on BeastlyFacts.com - including animal facts, care guides, articles, images, and quizzes - is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with clear attribution to BeastlyFacts.com.</p>
             <p>You may not reproduce, republish, scrape, or redistribute the Site's content in bulk without prior written permission.</p>
           </Section>
 

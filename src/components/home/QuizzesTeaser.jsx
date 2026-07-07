@@ -47,7 +47,7 @@ export default function QuizzesTeaser() {
         >
           <span className="text-3xl mb-2 block">🧩</span>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-2">Test Yourself</h2>
-          <p className="text-sm text-muted-foreground font-body max-w-md mx-auto">Three ways to play — pick your challenge.</p>
+          <p className="text-sm text-muted-foreground font-body max-w-md mx-auto">Three ways to play - pick your challenge.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">

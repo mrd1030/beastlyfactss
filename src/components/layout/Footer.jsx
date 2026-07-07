@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Minimal Copyright - Removed Redundant Links */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[10px] text-muted-foreground font-body">
-            © {year} BeastlyFacts.com — No animals were harmed in the making of this website. 🐾
+            © {year} BeastlyFacts.com - No animals were harmed in the making of this website. 🐾
           </p>
           <p className="text-[10px] text-muted-foreground/60 font-body">
             For educational purposes only. Not a substitute for professional veterinary advice. Always consult a qualified pet, exotic, or reptile veterinarian.

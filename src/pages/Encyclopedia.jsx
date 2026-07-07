@@ -156,7 +156,7 @@ export default function Encyclopedia() {
     : (activeCategory === 'All' ? 'Encyclopedia & Care Guides | Beastly Facts' : `${activeCategory} Care Guides & Facts | Beastly Facts`);
   const encDescription = isGuides
     ? (activeFilter !== 'All'
-        ? `Explore all ${activeFilter} care guides on Beastly Facts — husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
+        ? `Explore all ${activeFilter} care guides on Beastly Facts - husbandry advice, feeding schedules, housing setups, and health tips for every keeper.`
         : 'Browse our complete library of reptile, bird, mammal, and exotic pet care guides on Beastly Facts. Evidence-based husbandry advice from experienced keepers.')
     : `Explore our detailed encyclopedia and care guides for ${activeCategory === 'All' ? 'all your pets' : activeCategory}. Everything you need to know about husbandry, health, and happiness.`;
   const encCanonical = `https://beastlyfacts.com${location.pathname.replace(/\/$/, '')}/`;
@@ -176,7 +176,7 @@ export default function Encyclopedia() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — encyclopedia and care guides" />
+        <meta property="og:image:alt" content="Beastly Facts - encyclopedia and care guides" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={encTitle} />
         <meta name="twitter:description" content={encDescription} />

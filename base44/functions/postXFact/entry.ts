@@ -1,10 +1,10 @@
 import { createClientFromRequest } from 'npm:@base44/sdk@0.8.31';
 
 const teamFacts = [
-  "🔬 Every animal fact on Beastly Facts is cross-referenced against peer-reviewed studies and wildlife journals. Fun AND accurate — that's our standard.\n\n🔗 beastlyfacts.com",
+  "🔬 Every animal fact on Beastly Facts is cross-referenced against peer-reviewed studies and wildlife journals. Fun AND accurate - that's our standard.\n\n🔗 beastlyfacts.com",
   "🦎 Our reptile care guides are written by experienced keepers with real hands-on husbandry knowledge. Education-first pet ownership = thriving animals.\n\nbeastlyfacts.com",
-  "🌍 Learning about animals creates empathy — and empathy drives conservation. That's why we make wildlife content fun and accessible for everyone.\n\nbeastlyfacts.com",
-  "📰 The Critter Digest newsletter is packed with reptile & exotic pet care guides. Subscribe free at beastlyfacts.com — straight to your inbox!",
+  "🌍 Learning about animals creates empathy - and empathy drives conservation. That's why we make wildlife content fun and accessible for everyone.\n\nbeastlyfacts.com",
+  "📰 The Critter Digest newsletter is packed with reptile & exotic pet care guides. Subscribe free at beastlyfacts.com - straight to your inbox!",
   "🐍 Our team includes beardie, leopard gecko, ball python, and crested gecko keepers. Passion meets practice at Beastly Facts.\n\nbeastlyfacts.com",
 ];
 
@@ -84,7 +84,7 @@ Deno.serve(async (req) => {
     }
 
     const note = newRefreshToken && newRefreshToken !== refreshToken
-      ? 'New refresh token issued — update X_REFRESH_TOKEN secret with: ' + newRefreshToken
+      ? 'New refresh token issued - update X_REFRESH_TOKEN secret with: ' + newRefreshToken
       : 'Refresh token unchanged';
 
     return Response.json({ success: true, tweet_id: data.data.id, preview: tweetText.slice(0, 80), note });

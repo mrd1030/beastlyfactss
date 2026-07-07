@@ -44,20 +44,20 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       const allComments = await base44.entities.BlogComment.filter({ post_id: postId, status: 'approved' });
       setComments(allComments.sort((a, b) => new Date(a.created_date) - new Date(b.created_date)));
     } catch {
-      // silent fail — localStorage state already applied above
+      // silent fail - localStorage state already applied above
     }
   };
 
   const handleLike = async () => {
     if (hasLiked) return;
-    // Optimistic update — responds immediately regardless of backend
+    // Optimistic update - responds immediately regardless of backend
     setHasLiked(true);
     setLikeCount(c => c + 1);
     localStorage.setItem(`bf_liked_${postId}`, '1');
     try {
       await base44.entities.BlogPostLike.create({ post_id: postId, session_key: sessionKey });
     } catch {
-      // silent — UI already updated, localStorage persists the liked state
+      // silent - UI already updated, localStorage persists the liked state
     }
   };
 
@@ -138,7 +138,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
 
         {/* Existing comments */}
         {comments.length === 0 ? (
-          <p className="text-sm text-muted-foreground font-body mb-6">No comments yet — be the first!</p>
+          <p className="text-sm text-muted-foreground font-body mb-6">No comments yet - be the first!</p>
         ) : (
           <div className="space-y-4 mb-8">
             <AnimatePresence>

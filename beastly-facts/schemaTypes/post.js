@@ -47,8 +47,8 @@ export default defineType({
       title: 'Excerpt',
       type: 'text',
       rows: 3,
-      description: 'Short summary — used as the meta description unless SEO Meta Description is set. Aim for 110-160 characters.',
-      validation: Rule => Rule.min(110).max(160).warning('Aim for 110-160 characters — Google truncates longer snippets and may rewrite shorter ones.'),
+      description: 'Short summary - used as the meta description unless SEO Meta Description is set. Aim for 110-160 characters.',
+      validation: Rule => Rule.min(110).max(160).warning('Aim for 110-160 characters - Google truncates longer snippets and may rewrite shorter ones.'),
     }),
     // --- NEW SEO FIELDS START HERE ---
     defineField({
@@ -101,7 +101,7 @@ export default defineType({
       type: 'array',
       of: [{ type: 'string' }],
       options: { layout: 'tags' },
-      description: 'Search keywords — the site search matches these in addition to the title and excerpt.',
+      description: 'Search keywords - the site search matches these in addition to the title and excerpt.',
     }),
     defineField({
       name: 'readTime',

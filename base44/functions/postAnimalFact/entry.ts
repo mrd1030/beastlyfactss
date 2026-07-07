@@ -34,7 +34,7 @@ Deno.serve(async (req) => {
     // Filter to unposted facts (Use allFacts instead of facts)
     let unposted = allFacts.filter(f => !postedIds.has(f.id));
 
-    // All facts have been posted — reset cycle
+    // All facts have been posted - reset cycle
     if (unposted.length === 0) {
       console.log('All facts have been posted. Resetting cycle...');
       for (const r of postedRecords) {

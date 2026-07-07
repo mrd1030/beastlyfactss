@@ -1,10 +1,9 @@
 // Amazon Associates product links, sourced from a manual research pass (see affiliate-product-checklist.md).
-// Only items with a real vetted affiliate link are listed here — most guides' cost items have no match yet,
+// Only items with a real vetted affiliate link are listed here - most guides' cost items have no match yet,
 // which is expected: this covers the first two research batches (climate control / water quality / hides,
 // and substrate). More batches will be added as links are found for the rest of the checklist.
 
-// `category` groups products for the standalone gear page (src/pages/Gear.jsx) —
-// it has no effect on the CostBuilder matching logic below, which keys off `covers`.
+// `category` groups products for the standalone gear page (src/pages/Gear.jsx) - // it has no effect on the CostBuilder matching logic below, which keys off `covers`.
 export const AFFILIATE_PRODUCTS = [
   {
     slug: "digital-thermometer-hygrometer-combo",
@@ -24,7 +23,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "uvb-arcadia-desert-12",
-    product: "UVB — Arcadia Desert 12% (ProT5 kit, 22\"/24W)",
+    product: "UVB - Arcadia Desert 12% (ProT5 kit, 22\"/24W)",
     category: "Heating & Lighting",
     link: "https://amzn.to/3TipZXE",
     image: "/assets/images/affiliate/product-3.jpg",
@@ -32,7 +31,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "uvb-arcadia-dragon-14",
-    product: "UVB — Arcadia Dragon 14% (ProT5 kit, 34\"/39W)",
+    product: "UVB - Arcadia Dragon 14% (ProT5 kit, 34\"/39W)",
     category: "Heating & Lighting",
     link: "https://amzn.to/4gUsut1",
     image: "/assets/images/affiliate/product-4.jpg",
@@ -40,7 +39,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "uvb-arcadia-forest-6",
-    product: "UVB — Arcadia Forest 6% (ProT5 kit, 36\"/39W)",
+    product: "UVB - Arcadia Forest 6% (ProT5 kit, 36\"/39W)",
     category: "Heating & Lighting",
     link: "https://amzn.to/3TiqeC4",
     image: "/assets/images/affiliate/product-5.jpg",
@@ -90,7 +89,7 @@ export const AFFILIATE_PRODUCTS = [
     slug: "shallow-water-dish",
     product: "Small/shallow water dish",
     category: "Water & Humidity Care",
-    link: "https://amzn.to/44hAzR9", // medium size — a reasonable default; small/large also available
+    link: "https://amzn.to/44hAzR9", // medium size - a reasonable default; small/large also available
     image: "/assets/images/affiliate/product-12.jpg",
     covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish"],
   },
@@ -193,7 +192,7 @@ export const GEAR_CATEGORY_ORDER = [
   "Hides & Enclosure Decor",
 ];
 
-// Exact (case-insensitive, whitespace-trimmed) lookup only — deliberately NOT a substring/fuzzy match.
+// Exact (case-insensitive, whitespace-trimmed) lookup only - deliberately NOT a substring/fuzzy match.
 // A prior bug on this site (Komodo Dragon facts appearing on the Bearded Dragon page) came from
 // word-overlap matching; cost items are short enough that exact-match coverage is worth the trade-off
 // of missing some near-duplicate phrasing rather than risking a wrong product on the wrong item.

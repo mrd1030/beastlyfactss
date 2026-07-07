@@ -6,7 +6,7 @@ export default function ScrollToTop() {
 
     useEffect(() => {
         // A hash means something on the page wants to scroll itself into view
-        // (e.g. the Glossary's own hash-target effect) — resetting to the top
+        // (e.g. the Glossary's own hash-target effect) - resetting to the top
         // here would win the race and undo that, since this component has no
         // way to know what the target position should be.
         if (hash) return;

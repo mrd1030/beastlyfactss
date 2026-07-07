@@ -33,9 +33,9 @@ export default function AnimalCompare({ animal }) {
     : encyclopediaAnimals.find(a => a.id === compareId) || humanReference;
 
   const handleShare = () => {
-    const text = `${animal.emoji} ${animal.name} vs ${compareAnimal.emoji} ${compareAnimal.name} — see how they stack up on Beastly Facts!`;
+    const text = `${animal.emoji} ${animal.name} vs ${compareAnimal.emoji} ${compareAnimal.name} - see how they stack up on Beastly Facts!`;
     if (navigator.share) {
-      navigator.share({ title: 'Animal Comparison — Beastly Facts', text, url: window.location.href });
+      navigator.share({ title: 'Animal Comparison - Beastly Facts', text, url: window.location.href });
     } else {
       navigator.clipboard.writeText(`${text} ${window.location.href}`);
     }
@@ -78,10 +78,10 @@ export default function AnimalCompare({ animal }) {
             <p className="text-xs font-display font-semibold text-muted-foreground mb-1.5">{field.label}</p>
             <div className="grid grid-cols-2 gap-2">
               <div className="bg-muted/50 rounded-lg px-2.5 py-2">
-                <p className="text-xs font-body text-foreground leading-snug">{animal.bio?.[field.key] || '—'}</p>
+                <p className="text-xs font-body text-foreground leading-snug">{animal.bio?.[field.key] || '-'}</p>
               </div>
               <div className="bg-muted/50 rounded-lg px-2.5 py-2">
-                <p className="text-xs font-body text-foreground leading-snug">{compareAnimal.bio?.[field.key] || '—'}</p>
+                <p className="text-xs font-body text-foreground leading-snug">{compareAnimal.bio?.[field.key] || '-'}</p>
               </div>
             </div>
           </div>

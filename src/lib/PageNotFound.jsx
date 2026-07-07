@@ -8,7 +8,7 @@ export default function PageNotFound() {
     const navigationType = useNavigationType();
     const pageName = location.pathname.substring(1);
     // 'PUSH' means this entry was reached by clicking something (a Link, a
-    // navigate() call) during the current session — i.e. a broken internal
+    // navigate() call) during the current session - i.e. a broken internal
     // link. Landing here directly (typed URL, bookmark, external link) is
     // reported as 'POP' on the very first render, so "Go Back" only shows
     // when it actually leads somewhere on the site.
@@ -22,7 +22,7 @@ export default function PageNotFound() {
             </Helmet>
             <div className="text-center max-w-md">
                 <span className="text-5xl block mb-4" role="img" aria-label="See-no-evil monkey">🙈</span>
-                <h1 className="font-display font-bold text-3xl text-foreground mb-2">404 — Page Not Found</h1>
+                <h1 className="font-display font-bold text-3xl text-foreground mb-2">404 - Page Not Found</h1>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
                     We couldn't find <span className="font-semibold text-foreground">"{pageName}"</span>.
                     It may have moved, or it never existed in the first place.

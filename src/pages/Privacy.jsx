@@ -42,10 +42,10 @@ export default function Privacy() {
           <Section title="1. Information We Collect">
             <p>BeastlyFacts.com collects minimal personal information to operate effectively:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong className="text-foreground">Newsletter Data</strong> — email address, collected only when you voluntarily subscribe.</li>
-              <li><strong className="text-foreground">Contact Information</strong> — name and message content provided via contact forms.</li>
-              <li><strong className="text-foreground">Usage & Analytics Data</strong> — we use Google Analytics to measure traffic. This includes IP addresses, browser information, and on-site interaction events.</li>
-              <li><strong className="text-foreground">User-Provided Data</strong> — with your consent, we may securely transmit hashed, first-party data to Google Analytics to improve conversion measurement and audience insights.</li>
+              <li><strong className="text-foreground">Newsletter Data</strong> - email address, collected only when you voluntarily subscribe.</li>
+              <li><strong className="text-foreground">Contact Information</strong> - name and message content provided via contact forms.</li>
+              <li><strong className="text-foreground">Usage & Analytics Data</strong> - we use Google Analytics to measure traffic. This includes IP addresses, browser information, and on-site interaction events.</li>
+              <li><strong className="text-foreground">User-Provided Data</strong> - with your consent, we may securely transmit hashed, first-party data to Google Analytics to improve conversion measurement and audience insights.</li>
             </ul>
             <p>We do not collect, store, or sell payment information. All payments are handled securely by Stripe.</p>
           </Section>
@@ -53,11 +53,11 @@ export default function Privacy() {
           <Section title="2. Cookies & Tracking Technologies">
             <p>This Site uses cookies and similar identifiers to improve your experience:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong className="text-foreground">Google Analytics</strong> — used to understand how visitors use the Site. You can opt-out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Analytics Opt-out Browser Add-on</a>.</li>
-              <li><strong className="text-foreground">Google AdSense & Third-Party Advertising</strong> — third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet.</li>
-              <li><strong className="text-foreground">Stripe</strong> — used for fraud prevention and secure payment processing on donation metrics.</li>
-              <li><strong className="text-foreground">Affiliate Tracking</strong> — third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
-              <li><strong className="text-foreground">Local Storage</strong> — used to save favorite facts, quiz results, and blog post like state locally in your browser (never sent to our servers).</li>
+              <li><strong className="text-foreground">Google Analytics</strong> - used to understand how visitors use the Site. You can opt-out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Analytics Opt-out Browser Add-on</a>.</li>
+              <li><strong className="text-foreground">Google AdSense & Third-Party Advertising</strong> - third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet.</li>
+              <li><strong className="text-foreground">Stripe</strong> - used for fraud prevention and secure payment processing on donation metrics.</li>
+              <li><strong className="text-foreground">Affiliate Tracking</strong> - third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
+              <li><strong className="text-foreground">Local Storage</strong> - used to save favorite facts, quiz results, and blog post like state locally in your browser (never sent to our servers).</li>
             </ul>
             <p className="mt-3">You can choose to opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">www.aboutads.info</a>.</p>
           </Section>
@@ -82,10 +82,10 @@ export default function Privacy() {
           <Section title="5. Third-Party Services">
             <p>BeastlyFacts.com uses third-party services, each governed by their own privacy policies:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong className="text-foreground">Google Analytics & AdSense</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
-              <li><strong className="text-foreground">Stripe</strong> — <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
-              <li><strong className="text-foreground">Beehiiv</strong> — <a href="https://www.beehiiv.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
-              <li><strong className="text-foreground">Amazon</strong> — <a href="https://www.amazon.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Notice</a></li>
+              <li><strong className="text-foreground">Google Analytics & AdSense</strong> - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">Stripe</strong> - <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">Beehiiv</strong> - <a href="https://www.beehiiv.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">Amazon</strong> - <a href="https://www.amazon.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Notice</a></li>
             </ul>
           </Section>
 

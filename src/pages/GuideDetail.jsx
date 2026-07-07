@@ -39,7 +39,7 @@ export default function GuideDetail() {
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
     const gName = guide.name.toLowerCase();
-    // Whole-name containment only — matching on individual shared words
+    // Whole-name containment only - matching on individual shared words
     // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
     return gName.includes(fAnimal) || fAnimal.includes(gName);
   }).slice(0, 3) : [];
@@ -117,7 +117,7 @@ export default function GuideDetail() {
     };
   }, [isPrintOpen]);
 
-  const formatRange = (r) => (r.low === r.high ? `$${r.low}` : `$${r.low}–$${r.high}`);
+  const formatRange = (r) => (r.low === r.high ? `$${r.low}` : `$${r.low}-$${r.high}`);
 
   const handlePrint = (options = {}) => {
     const sections = [
@@ -133,7 +133,7 @@ export default function GuideDetail() {
 
     const encyclopediaHTML = options.encyclopedia && hasEncyclopedia ? `
       <div class="section encyclopedia-section">
-        <h2>📚 ${encAnimal.name} — Encyclopedia Overview</h2>
+        <h2>📚 ${encAnimal.name} - Encyclopedia Overview</h2>
         ${encAnimal.bio.overview ? `<p class="overview-text">${encAnimal.bio.overview}</p>` : ''}
         <table class="quick-facts-table">
           ${[
@@ -163,7 +163,7 @@ export default function GuideDetail() {
             </table>
           `;
         }).join('')}
-        <p class="cost-note">Rough estimates — actual prices vary by region and retailer.</p>
+        <p class="cost-note">Rough estimates - actual prices vary by region and retailer.</p>
       </div>
     ` : '';
 
@@ -182,7 +182,7 @@ export default function GuideDetail() {
     const printHTML = `
       <html>
         <head>
-          <title>${guide.emoji} ${guide.name} — Care Guide</title>
+          <title>${guide.emoji} ${guide.name} - Care Guide</title>
           <style>
             @media print {
               .section {
@@ -301,7 +301,7 @@ export default function GuideDetail() {
   const ogImage = guide.image
     ? `https://beastlyfacts.com${guide.image}`
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
-  // og:image:width/height must match the actual image's real size — Helmet
+  // og:image:width/height must match the actual image's real size - Helmet
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every guide photo's real dimensions.
   const ogImageDims = (guide.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
@@ -309,7 +309,7 @@ export default function GuideDetail() {
   const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
   const guideDescription = truncateDescription(guide.tagline
     ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
-    : `Complete care guide for ${guide.name} — covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
+    : `Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
   const breadcrumbSchema = {
@@ -335,7 +335,7 @@ export default function GuideDetail() {
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content={String(ogImageDims.width)} />
         <meta property="og:image:height" content={String(ogImageDims.height)} />
-        <meta property="og:image:alt" content={`${guide.name} care guide — Beastly Facts`} />
+        <meta property="og:image:alt" content={`${guide.name} care guide - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={guideTitle} />
         <meta name="twitter:description" content={guideDescription} />
@@ -425,7 +425,7 @@ export default function GuideDetail() {
               <div className="rounded-2xl overflow-hidden aspect-video">
                 <img
                   src={guide.image}
-                  alt={`${guide.name} — ${guide.petType}`}
+                  alt={`${guide.name} - ${guide.petType}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -661,7 +661,7 @@ export default function GuideDetail() {
                       <BookMarked className="w-3.5 h-3.5" /> Encyclopedia Overview
                     </span>
                     <span className="text-xs text-muted-foreground block mt-0.5">
-                      Species overview &amp; quick facts — added to the top of the printout
+                      Species overview &amp; quick facts - added to the top of the printout
                     </span>
                   </span>
                 </label>

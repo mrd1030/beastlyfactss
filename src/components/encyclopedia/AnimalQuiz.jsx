@@ -13,7 +13,7 @@ export default function AnimalQuiz({ animal }) {
   const [finished, setFinished] = useState(false);
   const { recordQuizCompletion } = useFavoritesCtx();
 
-  // Not enough distractor data for a fair quiz on this animal — skip the section.
+  // Not enough distractor data for a fair quiz on this animal - skip the section.
   if (questions.length < 2) return null;
 
   const question = questions[index];
@@ -48,7 +48,7 @@ export default function AnimalQuiz({ animal }) {
   const handleShare = () => {
     const text = `I scored ${score}/${total} on the ${animal.name} quiz on Beastly Facts! 🧠 Think you can beat me?`;
     if (navigator.share) {
-      navigator.share({ title: `${animal.name} Quiz — Beastly Facts`, text, url: window.location.href });
+      navigator.share({ title: `${animal.name} Quiz - Beastly Facts`, text, url: window.location.href });
     } else {
       navigator.clipboard.writeText(`${text} ${window.location.href}`);
     }

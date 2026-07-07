@@ -13,7 +13,7 @@ export default function AchievementToast() {
     if (!currentAchievementToast) return;
     const timer = setTimeout(dismissCurrentToast, AUTO_DISMISS_MS);
     return () => clearTimeout(timer);
-    // Depend on the id only — dismissCurrentToast is a new reference every
+    // Depend on the id only - dismissCurrentToast is a new reference every
     // FavoritesProvider render, which would otherwise keep resetting the timer.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentAchievementToast?.id]);

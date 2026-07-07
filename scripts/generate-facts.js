@@ -132,6 +132,6 @@ function appendFacts(source, newFacts, startId) {
 
   console.log('\n✅  facts.js updated! New facts added:');
   factsWithIds.forEach(f => 
-    console.log(`   #${f.id} [${f.category}] ${f.emoji} ${f.title} — ${f.animal}`)
+    console.log(`   #${f.id} [${f.category}] ${f.emoji} ${f.title} - ${f.animal}`)
   );
 })();

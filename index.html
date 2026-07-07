@@ -6,19 +6,18 @@
     <link rel="apple-touch-icon" href="./src/assets/favicon.webp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Homepage fallback meta — for social bots (no JS) and Googlebot first-pass crawl.
+    <!-- Homepage fallback meta - for social bots (no JS) and Googlebot first-pass crawl.
          NO canonical here: react-helmet-async injects the correct one per-route.
          Two canonicals = Google ignores both. -->
     <title>Beastly Facts | Amazing Animal Trivia, Guides &amp; Fun Quizzes</title>
-    <!-- Open Graph — site-wide only; per-page og:url/title/description/type/image injected
-         by react-helmet-async. og:image (+width/height/alt) intentionally NOT duplicated here —
-         every page now sets its own via Helmet, and a static leftover here would sit alongside
+    <!-- Open Graph - site-wide only; per-page og:url/title/description/type/image injected
+         by react-helmet-async. og:image (+width/height/alt) intentionally NOT duplicated here - every page now sets its own via Helmet, and a static leftover here would sit alongside
          Helmet's per-page override as a second, stale og:image tag (same failure mode already
          fixed for meta name="description"). Crawlers reading the first of two conflicting
          og:image tags would get this generic one instead of the per-post image. -->
     <meta property="og:site_name" content="Beastly Facts" />
 
-    <!-- Twitter Card — twitter:card intentionally NOT duplicated here for the same
+    <!-- Twitter Card - twitter:card intentionally NOT duplicated here for the same
          reason as og:image above: every page now sets its own via Helmet (including
          Pack.jsx, which deliberately uses "summary" instead of "summary_large_image"),
          and a static leftover here would create a second, conflicting twitter:card tag. -->

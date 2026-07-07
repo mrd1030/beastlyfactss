@@ -8,21 +8,21 @@ const sections = [
     emoji: '🐍',
     heading: 'Reptile Facts That Will Blow Your Mind',
     items: [
-      'Ball pythons can go months without eating when they\'re in breeding season — and that\'s totally normal.',
+      'Ball pythons can go months without eating when they\'re in breeding season - and that\'s totally normal.',
       'Bearded dragons wave one arm as a submissive gesture to other dragons. It\'s their version of "no threat here!"',
-      'Leopard geckos store fat reserves in their thick tails — a skinny tail can signal poor health.',
+      'Leopard geckos store fat reserves in their thick tails - a skinny tail can signal poor health.',
       'Crested geckos were thought to be extinct until they were rediscovered in 1994 in New Caledonia.',
-      'Chameleons don\'t change color primarily for camouflage — they do it to communicate mood and temperature.',
+      'Chameleons don\'t change color primarily for camouflage - they do it to communicate mood and temperature.',
     ],
   },
   {
     emoji: '🐶',
     heading: 'Dog Behavior & Care Tips',
     items: [
-      'Dogs have three eyelids — a third one called a nictitating membrane helps protect and moisten the eye.',
+      'Dogs have three eyelids - a third one called a nictitating membrane helps protect and moisten the eye.',
       'A dog\'s nose print is as unique as a human fingerprint. No two are alike!',
       'Dogs dream just like humans do. Their REM sleep looks remarkably similar to ours.',
-      'Puppies are born completely blind and deaf — they rely entirely on smell and touch for their first two weeks.',
+      'Puppies are born completely blind and deaf - they rely entirely on smell and touch for their first two weeks.',
       'Regular mental stimulation is just as tiring for dogs as physical exercise. Puzzle feeders work wonders.',
     ],
   },
@@ -30,21 +30,21 @@ const sections = [
     emoji: '🐱',
     heading: 'Cat Behavior & Fun Facts',
     items: [
-      'Cats only meow at humans — not at other cats. They invented it specifically to communicate with us.',
-      'A cat\'s purr vibrates at 25–150 Hz, a frequency known to promote bone healing and reduce stress.',
-      'Cats have a specialized collarbone that lets them always land on their feet — it\'s called the "righting reflex."',
+      'Cats only meow at humans - not at other cats. They invented it specifically to communicate with us.',
+      'A cat\'s purr vibrates at 25-150 Hz, a frequency known to promote bone healing and reduce stress.',
+      'Cats have a specialized collarbone that lets them always land on their feet - it\'s called the "righting reflex."',
       'Adult cats are technically lactose intolerant, despite what cartoons suggest. Skip the milk bowl!',
-      'Cats spend up to 70% of their lives sleeping — they\'re crepuscular, most active at dawn and dusk.',
+      'Cats spend up to 70% of their lives sleeping - they\'re crepuscular, most active at dawn and dusk.',
     ],
   },
   {
     emoji: '🦜',
     heading: 'Bird & Exotic Pet Care Essentials',
     items: [
-      'Parrots need social interaction daily — isolation can cause feather plucking and behavioral issues.',
+      'Parrots need social interaction daily - isolation can cause feather plucking and behavioral issues.',
       'Rabbits are not low-maintenance pets. They need at least 3 hours of exercise outside their enclosure every day.',
       'Guinea pigs are highly social and should ideally be kept in pairs or small groups.',
-      'Tortoises can live for over 100 years — adopting one is genuinely a lifelong commitment.',
+      'Tortoises can live for over 100 years - adopting one is genuinely a lifelong commitment.',
       'Many exotic birds can mimic not just words but full sentences, tones, and even laughs.',
     ],
   },
@@ -60,7 +60,7 @@ export default function AnimalFacts() {
     <div className="min-h-screen">
       <Helmet>
         <title>Fun Animal Facts & Pet Care Tips | Beastly Facts</title>
-        <meta name="description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets. From ball pythons to cat behavior — your go-to knowledge hub." />
+        <meta name="description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets. From ball pythons to cat behavior - your go-to knowledge hub." />
         <link rel="canonical" href="https://beastlyfacts.com/animal-facts/" />
         <meta property="og:title" content="Fun Animal Facts & Pet Care Tips | Beastly Facts" />
         <meta property="og:description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets." />
@@ -69,7 +69,7 @@ export default function AnimalFacts() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — fun animal facts and pet care tips" />
+        <meta property="og:image:alt" content="Beastly Facts - fun animal facts and pet care tips" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fun Animal Facts & Pet Care Tips | Beastly Facts" />
         <meta name="twitter:description" content="Discover surprising animal facts and pet care tips for dogs, cats, reptiles, and exotic pets." />
@@ -83,8 +83,7 @@ export default function AnimalFacts() {
               Fun Animal Facts & Pet Care Tips
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-2xl leading-relaxed">
-              From surprising dog facts and cat behavior secrets to reptile care essentials and exotic pet trivia —
-              this is your go-to resource for learning cool, useful, and genuinely surprising things about animals.
+              From surprising dog facts and cat behavior secrets to reptile care essentials and exotic pet trivia - this is your go-to resource for learning cool, useful, and genuinely surprising things about animals.
               Whether you're a first-time pet owner or a seasoned keeper, there's always something new to discover.
             </p>
           </motion.div>

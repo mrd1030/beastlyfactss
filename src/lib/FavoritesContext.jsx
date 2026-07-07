@@ -15,7 +15,7 @@ export const ACHIEVEMENTS = [
 ];
 
 export function FavoritesProvider({ children }) {
-  // Single source of truth for the visit streak — Navbar reads it from this
+  // Single source of truth for the visit streak - Navbar reads it from this
   // context instead of calling useDailyStreak() a second time, since two
   // independent hook instances would race writing the same localStorage key.
   const { streak, recordVisit } = useDailyStreak();
@@ -74,7 +74,7 @@ export function FavoritesProvider({ children }) {
   };
 
   // Call once per quiz completion (personality result shown, trivia/knowledge
-  // finished, per-animal quiz finished) — independent of whether the user
+  // finished, per-animal quiz finished) - independent of whether the user
   // also chooses to save the result to their Pack.
   const recordQuizCompletion = () => {
     setQuizzesCompleted(prev => {
@@ -88,7 +88,7 @@ export function FavoritesProvider({ children }) {
   const unlockedAchievements = ACHIEVEMENTS.filter(a => a.check(achievementState));
 
   // Seeded once, on first-ever load, with whatever's already unlocked at that
-  // moment — so returning users aren't hit with a pile of toasts for things
+  // moment - so returning users aren't hit with a pile of toasts for things
   // they achieved before this feature existed. Deliberately NOT effect-driven:
   // an effect here raced with React 18 StrictMode's dev-only double-invoke
   // (the localStorage write leaked into a second "fresh" mount that then read

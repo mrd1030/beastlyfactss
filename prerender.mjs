@@ -28,7 +28,7 @@ const ENCYCLOPEDIA_CATEGORIES = [
 ];
 
 // Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
-// Their stories render on /chronicles/<id>/<part>, not /blog/<slug> — the old
+// Their stories render on /chronicles/<id>/<part>, not /blog/<slug> - the old
 // blog URLs 301 in public/_redirects.
 const CHRONICLES_PREFIXES = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
 const isChroniclesSlug = (slug) =>
@@ -54,8 +54,7 @@ async function getMdxRoutes() {
 }
 
 // Chronicles part routes: /chronicles/<series> (part 1) plus /chronicles/<series>/<n>.
-// Parts = MDX short-story files + Sanity short-story posts, ordered by date —
-// must stay consistent with groupChronicles() in src/lib/chronicles.js.
+// Parts = MDX short-story files + Sanity short-story posts, ordered by date - // must stay consistent with groupChronicles() in src/lib/chronicles.js.
 async function getChroniclesRoutes() {
   const stories = [];
   try {
@@ -126,7 +125,7 @@ const GUIDE_IDS = [
   'betta-fish','goldfish','koi','guppy','angelfish','corydoras-catfish','neon-tetra','oscar',
 ];
 
-// Static routes — must match App.jsx routes (excluding noindex/user-specific pages)
+// Static routes - must match App.jsx routes (excluding noindex/user-specific pages)
 const STATIC_ROUTES = [
   '/',
   '/facts',
@@ -155,7 +154,7 @@ const STATIC_ROUTES = [
 
 async function getSanityRoutes() {
   try {
-    // Short-story posts render on /chronicles/, not /blog/ — see getChroniclesRoutes()
+    // Short-story posts render on /chronicles/, not /blog/ - see getChroniclesRoutes()
     const postQuery = encodeURIComponent(
       '*[_type == "post" && defined(slug.current) && !("short-story" in categories[]->slug.current)]{ "slug": slug.current }'
     );
@@ -172,7 +171,7 @@ async function getSanityRoutes() {
 
     const blogRoutes = (postData.result || []).map(p => `/blog/${p.slug}`);
     const categoryRoutes = (catData.result || []).map(c => `/category/${c.slug}`);
-    // /blog/category/short-story 301s to /chronicles/ in _redirects — don't prerender it
+    // /blog/category/short-story 301s to /chronicles/ in _redirects - don't prerender it
     const blogCategoryRoutes = (catData.result || [])
       .filter(c => c.slug !== 'short-story')
       .map(c => `/blog/category/${c.slug}`);
@@ -191,7 +190,7 @@ async function renderRoute(page, route) {
   // networkidle0 fires when the JS chunk downloads, but react-helmet-async
   // may not have applied this route's <head> yet. Don't capture until the
   // canonical equals this route's production URL and a meta description is
-  // present (noindex pages are exempt — they opt out of SEO tags). Every
+  // present (noindex pages are exempt - they opt out of SEO tags). Every
   // route including '/' must pass. A timeout is a hard failure: capturing
   // early ships a generic <head> to production, which is worse than a
   // failed build. Timeouts are retried by renderWorker.
@@ -215,7 +214,7 @@ async function renderRoute(page, route) {
 }
 
 // A path guaranteed not to match any real route, so it always renders the
-// wildcard PageNotFound component — reusing the real app's styling/links
+// wildcard PageNotFound component - reusing the real app's styling/links
 // instead of hand-maintaining a separate static 404 page.
 const NOT_FOUND_PROBE_ROUTE = '/__prerender_404_probe__';
 
@@ -230,8 +229,7 @@ async function saveHtml(route, html) {
 }
 
 // 4 tabs, not 8: each tab parses the full JS bundle, and heavy pages
-// (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency —
-// their <head> never applies within the wait window and the build fails.
+// (/facts, /encyclopedia, /blog) get CPU-starved at higher concurrency - // their <head> never applies within the wait window and the build fails.
 const CONCURRENCY = 4;
 const MAX_ATTEMPTS = 4; // retries per route before failing the build
 
@@ -265,7 +263,7 @@ async function renderWorker(browser, routes, results) {
       }
     }
     if (!done) {
-      console.warn(`  ✗ ${route} — ${lastErr.message}`);
+      console.warn(`  ✗ ${route} - ${lastErr.message}`);
       results.failed++;
     }
   }
@@ -313,7 +311,7 @@ async function main() {
     await page.close();
     console.log('  ✓ 404.html');
   } catch (err) {
-    console.warn(`  ✗ 404.html — ${err.message}`);
+    console.warn(`  ✗ 404.html - ${err.message}`);
     results.failed++;
   }
 

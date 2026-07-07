@@ -1,14 +1,14 @@
-# Beastly Facts — Amazon Associates Product Checklist
+# Beastly Facts - Amazon Associates Product Checklist
 
-Generated from the Cost Builder data on each care guide page. Every item below is a real product mentioned in that guide's cost breakdown — check it off once you've found and linked a specific Amazon product for it.
+Generated from the Cost Builder data on each care guide page. Every item below is a real product mentioned in that guide's cost breakdown - check it off once you've found and linked a specific Amazon product for it.
 
-**How to use this:** Section 1 lists every *unique* item across the whole site, with how many guides use it — link the common ones (thermometers, water conditioner, etc.) once and reuse. Section 2 breaks the same items down per animal, matching what shows on that animal's actual guide page.
+**How to use this:** Section 1 lists every *unique* item across the whole site, with how many guides use it - link the common ones (thermometers, water conditioner, etc.) once and reuse. Section 2 breaks the same items down per animal, matching what shows on that animal's actual guide page.
 
 ---
 
 ## 1. Master Item List (467 unique items)
 
-Sorted by how many guides use it — the top of this list gives you the most reuse for the least linking effort.
+Sorted by how many guides use it - the top of this list gives you the most reuse for the least linking effort.
 
 - [ ] **Annual vet wellness check** _(used in 26 guides)_
 - [ ] **Digital thermometer and hygrometer** _(used in 19 guides)_

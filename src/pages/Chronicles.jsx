@@ -18,7 +18,7 @@ const STORY_QUERY = groq`*[_type == "post" && defined(slug.current) && "short-st
   _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, body
 }`;
 
-// Story titles all start with "Chronicles of <character>:" — the sidebar and
+// Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
 const episodeTitle = (title) => title?.replace(/^Chronicles of [^:]+:\s*/i, '') || title;
 
@@ -39,7 +39,7 @@ export default function Chronicles() {
     [sanityStories]
   );
 
-  // /chronicles/ has no content of its own — Dex is the flagship series, so
+  // /chronicles/ has no content of its own - Dex is the flagship series, so
   // it acts as the default tab (mirrored by a 301 in public/_redirects).
   if (!seriesId) return <Navigate to="/chronicles/dex/" replace />;
 
@@ -61,7 +61,7 @@ export default function Chronicles() {
     : `Chronicles of ${series.character} | Beastly Facts`;
   const pageDescription = truncateDescription(
     (isReader && (story?.seoDescription || story?.excerpt)) ||
-    `Chronicles of ${series.character} — ${series.blurb} Short fiction from the Beastly Facts universe.`
+    `Chronicles of ${series.character} - ${series.blurb} Short fiction from the Beastly Facts universe.`
   );
 
   return (
@@ -72,7 +72,7 @@ export default function Chronicles() {
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
         {/* A part index beyond what exists (stale link) renders a soft "not
-            yet written" state — keep those out of the index. */}
+            yet written" state - keep those out of the index. */}
         <meta name="robots" content={isReader && loaded && !story ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta property="og:description" content={pageDescription} />
@@ -81,7 +81,7 @@ export default function Chronicles() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={`Chronicles of ${series.character} — Beastly Facts`} />
+        <meta property="og:image:alt" content={`Chronicles of ${series.character} - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta name="twitter:description" content={pageDescription} />
@@ -97,7 +97,7 @@ export default function Chronicles() {
               The Chronicles
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              Short fiction from the Beastly Facts universe — each series told from the animal's point of view.
+              Short fiction from the Beastly Facts universe - each series told from the animal's point of view.
             </p>
           </motion.div>
 
@@ -167,7 +167,7 @@ export default function Chronicles() {
 }
 
 // Landing view: the series' stories listed as cards, newest-reader-friendly
-// order (Part 1 first — it's fiction, start at the beginning).
+// order (Part 1 first - it's fiction, start at the beginning).
 function SeriesLanding({ series, parts, loaded }) {
   return (
     <div>
@@ -182,7 +182,7 @@ function SeriesLanding({ series, parts, loaded }) {
         <div className="text-center py-16">
           <span className="text-4xl block mb-3 animate-pulse">{series.emoji}</span>
           <p className="text-sm text-muted-foreground font-body">
-            {loaded ? 'No stories here yet — check back soon!' : 'Fetching the stories…'}
+            {loaded ? 'No stories here yet - check back soon!' : 'Fetching the stories…'}
           </p>
         </div>
       ) : (
@@ -338,7 +338,7 @@ function StoryReader({ story, part }) {
 }
 
 // Sticky side nav: every story across both series, a route back to the main
-// blog, and the newsletter box — mirrors the Critter Digest's sidebar.
+// blog, and the newsletter box - mirrors the Critter Digest's sidebar.
 function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
   return (
     <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
@@ -369,7 +369,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
                           : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                       }`}
                     >
-                      Part {n} — {episodeTitle(p.title)}
+                      Part {n} - {episodeTitle(p.title)}
                     </Link>
                   );
                 })}
@@ -385,7 +385,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
       <Link to="/blog/" className="block bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
         <p className="text-xs font-display font-bold text-secondary mb-1">📰 The Critter Digest</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">
-          Care guides, husbandry deep-dives, and fun facts — the main Beastly Facts blog.
+          Care guides, husbandry deep-dives, and fun facts - the main Beastly Facts blog.
         </p>
         <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">
           Back to the Digest →
@@ -393,7 +393,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
       </Link>
 
       <div className="bg-card border border-border rounded-2xl p-6">
-        <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe — it's free</h3>
+        <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe - it's free</h3>
         <p className="text-xs text-muted-foreground font-body mb-4">New stories and articles straight to your inbox. No spam, ever. 🐾</p>
         <BeehiivSubscribe />
       </div>

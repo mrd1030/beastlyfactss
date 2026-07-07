@@ -7,7 +7,7 @@ import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER } from '@/lib/data/affiliatePro
 import { truncateDescription } from '@/lib/utils/truncate';
 
 const DESCRIPTION = truncateDescription(
-  `The exact heating, lighting, water quality, and substrate products we recommend across our reptile and amphibian care guides — real products, one shoppable list.`
+  `The exact heating, lighting, water quality, and substrate products we recommend across our reptile and amphibian care guides - real products, one shoppable list.`
 );
 
 function ProductCard({ product }) {
@@ -73,7 +73,7 @@ export default function Gear() {
               Recommended Gear
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              The exact products referenced in our care guides' Cost Builders — currently covering heating,
+              The exact products referenced in our care guides' Cost Builders - currently covering heating,
               lighting, water quality, and substrate for reptile and amphibian setups. We're working through
               dog, cat, bird, fish, and small-mammal gear next.
             </p>
@@ -95,7 +95,7 @@ export default function Gear() {
 
         <div className="mt-10 pt-6 border-t border-border">
           <p className="text-[11px] text-muted-foreground/70 font-body italic mb-4">
-            As an Amazon Associate, we earn from qualifying purchases through the links above — at no extra
+            As an Amazon Associate, we earn from qualifying purchases through the links above - at no extra
             cost to you. We only list products we'd actually recommend to our own pets' keepers.
           </p>
           <Link

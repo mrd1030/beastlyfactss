@@ -42,7 +42,7 @@ export default function Contact() {
     <div className="min-h-screen">
       <Helmet>
         <title>Contact Beastly Facts | Get in Touch</title>
-        <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team — we'd love to hear from you!" />
+        <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team - we'd love to hear from you!" />
         <link rel="canonical" href="https://beastlyfacts.com/contact/" />
         <meta property="og:title" content="Contact Beastly Facts" />
         <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
@@ -51,7 +51,7 @@ export default function Contact() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — get in touch" />
+        <meta property="og:image:alt" content="Beastly Facts - get in touch" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Beastly Facts" />
         <meta name="twitter:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
@@ -206,7 +206,7 @@ export default function Contact() {
         >
           <p className="font-display font-bold text-sm text-foreground mb-1">📬 Response time</p>
           <p className="text-xs text-muted-foreground font-body leading-relaxed">
-            This site is run by one person who also keeps real live animals — so responses may take a couple of days.
+            This site is run by one person who also keeps real live animals - so responses may take a couple of days.
             But every message gets read and appreciated. Whether you've spotted an error, want to suggest a new guide,
             or just want to chat about geckos, drop a line!
           </p>

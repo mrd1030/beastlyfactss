@@ -11,8 +11,8 @@ export default function FactFiles() {
   );
 
   const canonicalUrl = 'https://beastlyfacts.com/fact-files/';
-  const pageTitle = 'Fact Files — Deep-Dive Animal Facts | Beastly Facts';
-  const pageDescription = 'In-depth fact files on your favorite species — surprising, well-researched deep dives into reptiles, exotics, and more.';
+  const pageTitle = 'Fact Files - Deep-Dive Animal Facts | Beastly Facts';
+  const pageDescription = 'In-depth fact files on your favorite species - surprising, well-researched deep dives into reptiles, exotics, and more.';
 
   const itemListSchema = {
     "@context": "https://schema.org",
@@ -49,7 +49,7 @@ export default function FactFiles() {
           <span className="text-3xl mb-2 block">🗂️</span>
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Fact Files</h1>
           <p className="text-sm text-muted-foreground font-body max-w-lg">
-            Deep-dive fact files on your favorite species — the surprising, well-researched stuff that goes beyond a quick fact card.
+            Deep-dive fact files on your favorite species - the surprising, well-researched stuff that goes beyond a quick fact card.
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ export default function FactFiles() {
         {posts.length === 0 && (
           <div className="text-center py-20">
             <span className="text-4xl block mb-3">🔍</span>
-            <p className="text-sm text-muted-foreground font-body">No fact files yet — check back soon!</p>
+            <p className="text-sm text-muted-foreground font-body">No fact files yet - check back soon!</p>
           </div>
         )}
       </div>

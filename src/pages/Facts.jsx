@@ -203,8 +203,8 @@ export default function Facts() {
     ? 'Fun Animal Facts | Beastly Facts'
     : `${activeCategory} Facts | Beastly Facts`;
   const pageDescription = activeCategory === 'All'
-    ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts — from weird reptile behaviours to surprising dog science and wild animal trivia.'
-    : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts — curated, verified, and genuinely mind-blowing.`;
+    ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviours to surprising dog science and wild animal trivia.'
+    : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = 'https://beastlyfacts.com/facts/';
   const shouldNoindex = hasNoindexStateParams(location.search);
 
@@ -224,7 +224,7 @@ export default function Facts() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — animal facts collection" />
+        <meta property="og:image:alt" content="Beastly Facts - animal facts collection" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />

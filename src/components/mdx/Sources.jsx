@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Every article that uses this component already writes its own "## Sources"
-// heading in the markdown right before <Sources> — this used to also render
+// heading in the markdown right before <Sources> - this used to also render
 // its own heading, which doubled it up on the page (and in the ToC).
 export default function Sources({ children, className = '' }) {
   return (

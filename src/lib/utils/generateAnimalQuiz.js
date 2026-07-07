@@ -13,7 +13,7 @@ const FIELD_PROMPTS = {
   conservation: (a) => `What's the ${a.name}'s conservation status?`,
 };
 
-// Deterministic 32-bit string hash — used instead of Math.random() so the
+// Deterministic 32-bit string hash - used instead of Math.random() so the
 // question set and answer order are identical between the prerendered HTML
 // (puppeteer, build time) and the client hydration (browser, runtime).
 function hashString(str) {

@@ -94,7 +94,7 @@ export default function CategoryPage() {
 
   const categoryTitle = category?.title || slug;
   const categoryDescription = category?.description
-    || `Browse all ${categoryTitle} articles and care guides on Beastly Facts — expert tips, husbandry advice, and pet care essentials from experienced keepers.`;
+    || `Browse all ${categoryTitle} articles and care guides on Beastly Facts - expert tips, husbandry advice, and pet care essentials from experienced keepers.`;
   const canonicalUrl = `https://beastlyfacts.com/category/${slug}/`;
 
   const breadcrumbSchema = {
@@ -120,7 +120,7 @@ export default function CategoryPage() {
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content={`${categoryTitle} articles and care guides — Beastly Facts`} />
+        <meta property="og:image:alt" content={`${categoryTitle} articles and care guides - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${categoryTitle} Articles | Beastly Facts`} />
         <meta name="twitter:description" content={categoryDescription} />
@@ -190,7 +190,7 @@ export default function CategoryPage() {
           <div className="text-center py-16">
             <span className="text-4xl block mb-3" role="img" aria-label="File cabinet">🗂️</span>
             <p className="font-display font-bold text-foreground">No articles yet</p>
-            <p className="text-sm text-muted-foreground font-body mt-1">Check back soon — more content is on the way!</p>
+            <p className="text-sm text-muted-foreground font-body mt-1">Check back soon - more content is on the way!</p>
             <Link to="/blog/" className="text-secondary text-sm mt-4 block">← Back to Critter Digest</Link>
           </div>
         ) : (

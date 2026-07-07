@@ -142,7 +142,7 @@ export default {
     const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>BeastlyFacts — Daily Animal Fact</title>
+    <title>BeastlyFacts - Daily Animal Fact</title>
     <link>https://beastlyfacts.com/facts/</link>
     <description>A new wild animal fact, every day.</description>${itemsXml}
   </channel>

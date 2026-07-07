@@ -1,4 +1,4 @@
-// Shared source of truth for glossary terms — used by the Glossary page itself
+// Shared source of truth for glossary terms - used by the Glossary page itself
 // and by the in-article term highlighter (src/components/blog/GlossaryHighlighter.jsx),
 // so both always agree on what's a "known term" and what it links to.
 //
@@ -13,7 +13,7 @@ export const CATEGORIES = [
     terms: [
       { term: 'Husbandry', definition: 'The overall practice of caring for an animal: housing, diet, temperature, enrichment, and health monitoring, all together.' },
       { term: 'Enclosure', definition: 'The tank, terrarium, or cage an animal lives in.' },
-      { term: 'Substrate', definition: 'The material lining the bottom of an enclosure — sand, soil, reptile carpet, paper towel, and so on.', related: [
+      { term: 'Substrate', definition: 'The material lining the bottom of an enclosure - sand, soil, reptile carpet, paper towel, and so on.', related: [
         { label: 'Hognose Snake Care Guide', to: '/guides/hognose-snake/' },
         { label: 'Ackie Monitor Care Guide', to: '/guides/ackie-monitor/' },
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },
@@ -29,7 +29,7 @@ export const CATEGORIES = [
       { term: 'Photoperiod', definition: 'The daily light/dark cycle an animal is exposed to. Matching natural day length affects appetite, behavior, and breeding cycles.' },
       { term: 'Bioactive setup', definition: 'An enclosure stocked with live plants and a "cleanup crew" of invertebrates (springtails, isopods) that break down waste naturally, cutting down on manual cleaning.' },
       { term: 'Cohabitation', definition: 'Housing more than one animal in the same enclosure. Often discouraged for solitary species, where it causes stress or fighting.' },
-      { term: 'Morph', definition: 'A genetic color or pattern variation within a species — common talk in ball python and gecko keeping especially.' },
+      { term: 'Morph', definition: 'A genetic color or pattern variation within a species - common talk in ball python and gecko keeping especially.' },
       { term: 'Hide', definition: 'A small enclosed space (cave, log, box) where an animal can retreat to feel secure. Used across nearly every reptile and small mammal setup.' },
     ],
   },
@@ -46,7 +46,7 @@ export const CATEGORIES = [
         { label: 'Ackie Monitor Care Guide', to: '/guides/ackie-monitor/' },
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
       ] },
-      { term: 'Gut-loading', definition: 'Feeding nutritious food to feeder insects (crickets, dubia roaches) 24–48 hours before they\'re fed to a pet, so the pet absorbs those nutrients secondhand.', related: [
+      { term: 'Gut-loading', definition: 'Feeding nutritious food to feeder insects (crickets, dubia roaches) 24-48 hours before they\'re fed to a pet, so the pet absorbs those nutrients secondhand.', related: [
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },
         { label: "Jackson's Chameleon Care Guide", to: '/guides/chameleon/' },
         { label: "White's Tree Frog Care Guide", to: '/guides/whites-tree-frog/' },
@@ -60,13 +60,13 @@ export const CATEGORIES = [
         { label: 'Ball Python Care Guide', to: '/guides/ball-python/' },
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
       ] },
-      { term: 'Neoteny', definition: 'When an animal keeps its juvenile features into adulthood instead of fully maturing — like axolotls, which keep their gills and "baby face" for life.', related: [{ label: '10 Surprising Axolotl Facts', to: '/blog/10-surprising-axolotl-facts/' }] },
+      { term: 'Neoteny', definition: 'When an animal keeps its juvenile features into adulthood instead of fully maturing - like axolotls, which keep their gills and "baby face" for life.', related: [{ label: '10 Surprising Axolotl Facts', to: '/blog/10-surprising-axolotl-facts/' }] },
       { term: 'Impaction', definition: 'A blockage in the digestive tract, often from ingesting loose substrate. A common and largely preventable reptile emergency.', related: [
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
         { label: 'Axolotl Care Guide', to: '/guides/axolotl/' },
         { label: 'Uromastyx Care Guide', to: '/guides/uromastyx/' },
       ] },
-      { term: 'Metabolic Bone Disease (MBD)', definition: 'A serious but preventable condition from insufficient UVB or calcium, causing soft bones, tremors, and — if untreated — permanent deformities.', related: [
+      { term: 'Metabolic Bone Disease (MBD)', definition: 'A serious but preventable condition from insufficient UVB or calcium, causing soft bones, tremors, and - if untreated - permanent deformities.', related: [
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },
         { label: 'Crested Gecko Care Guide', to: '/guides/crested-gecko/' },
         { label: "Jackson's Chameleon Care Guide", to: '/guides/chameleon/' },
@@ -85,7 +85,7 @@ export const CATEGORIES = [
       { term: 'Plastron', definition: 'The bottom half of the shell, facing the ground or water below.', related: [{ label: 'Box Turtle Care Guide', to: '/guides/box-turtle/' }] },
       { term: 'Scute', definition: 'One of the individual plates that make up the outer layer of a shell, similar to how scales make up a snake\'s skin.', related: [{ label: 'Sulcata Tortoise Care Guide', to: '/guides/sulcata-tortoise/' }] },
       { term: 'Basking platform', definition: 'A dry area in or above an aquatic turtle\'s enclosure where it can climb out of the water to bask under heat and UVB. Essential for species like red-eared sliders, which need to fully dry off regularly to stay healthy.', related: [{ label: 'Red-Eared Slider Care Guide', to: '/guides/red-eared-slider/' }] },
-      { term: 'Pyramiding', definition: 'An abnormal, pyramid-like growth pattern in a tortoise\'s shell scutes. Usually caused by too much protein, too little humidity, or inconsistent UVB during growth — and almost entirely preventable with correct husbandry.', related: [{ label: 'Sulcata Tortoise Care Guide', to: '/guides/sulcata-tortoise/' }] },
+      { term: 'Pyramiding', definition: 'An abnormal, pyramid-like growth pattern in a tortoise\'s shell scutes. Usually caused by too much protein, too little humidity, or inconsistent UVB during growth - and almost entirely preventable with correct husbandry.', related: [{ label: 'Sulcata Tortoise Care Guide', to: '/guides/sulcata-tortoise/' }] },
       { term: 'Cycling', definition: 'Building up a colony of beneficial bacteria in an aquatic enclosure\'s filter before adding an animal, so waste gets safely broken down instead of building up as toxic ammonia.', related: [{ label: 'Red-Eared Slider Care Guide', to: '/guides/red-eared-slider/' }] },
       { term: 'Graze', definition: 'The natural feeding style of tortoises like Russian and Sulcata tortoises, which eat low to the ground on grasses and weeds rather than hunting live prey.', related: [{ label: 'Russian Tortoise Care Guide', to: '/guides/russian-tortoise/' }] },
       { term: 'Outdoor enclosure', definition: 'A larger, weatherproofed outdoor housing setup that big tortoise species like Sulcatas typically graduate to as adults, since they outgrow any reasonable indoor tank.', related: [{ label: 'Sulcata Tortoise Care Guide', to: '/guides/sulcata-tortoise/' }] },
@@ -98,7 +98,7 @@ export const CATEGORIES = [
     terms: [
       { term: 'Quarantine', definition: 'Keeping a newly acquired animal separate from existing pets for a set period, to watch for illness or parasites before introducing them.' },
       { term: 'Fecal exam', definition: 'A vet test that checks a stool sample for parasites. Recommended annually even for animals that seem perfectly healthy.' },
-      { term: 'Subclinical', definition: 'Describes an illness or parasite that\'s present in an animal without producing visible symptoms — the animal looks fine but is still affected.' },
+      { term: 'Subclinical', definition: 'Describes an illness or parasite that\'s present in an animal without producing visible symptoms - the animal looks fine but is still affected.' },
     ],
   },
   {
@@ -111,13 +111,13 @@ export const CATEGORIES = [
       { term: 'Fledging', definition: 'The stage when a young bird grows its flight feathers and learns to fly, typically just before or as it leaves the nest.', related: [{ label: 'Cockatiel Care Guide', to: '/guides/cockatiel/' }] },
       { term: 'Feather molt', definition: 'The process of shedding and regrowing feathers. A stressful, nutrient-demanding period that calls for extra care and a slightly adjusted diet.', related: [{ label: 'African Grey Parrot Care Guide', to: '/guides/african-grey/' }] },
       { term: 'Flight feathers', definition: 'The long, primary feathers on a bird\'s wings that provide lift and steering during flight.' },
-      { term: 'Wing clipping', definition: 'Trimming a pet bird\'s flight feathers to limit flight distance. A genuinely debated practice among bird keepers — worth understanding both sides before deciding.', related: [{ label: 'Budgie Care Guide', to: '/guides/budgie/' }] },
+      { term: 'Wing clipping', definition: 'Trimming a pet bird\'s flight feathers to limit flight distance. A genuinely debated practice among bird keepers - worth understanding both sides before deciding.', related: [{ label: 'Budgie Care Guide', to: '/guides/budgie/' }] },
       { term: 'Preening', definition: 'A bird\'s grooming behavior: using its beak to clean, align, and waterproof its feathers.' },
       { term: 'Preen gland', definition: 'The gland near the base of a bird\'s tail (also called the uropygial gland) that produces the oil used during preening.' },
       { term: 'Flock animal', definition: 'Describes species like budgies and cockatiels that are highly social by nature in the wild, and can develop stress or behavioral issues if kept alone without enough daily interaction.', related: [{ label: 'Lovebird Care Guide', to: '/guides/lovebird/' }] },
       { term: 'Foraging', definition: 'A bird\'s natural food-searching behavior. Many enrichment toys are built to encourage foraging instead of simply offering food in an open dish, which keeps a bird mentally engaged.' },
-      { term: 'Mimicry', definition: 'The ability of species like African Grey Parrots to copy sounds and human speech — closely tied to their intelligence and need for ongoing mental stimulation.', related: [{ label: 'African Grey Parrot Care Guide', to: '/guides/african-grey/' }] },
-      { term: 'Dewlap', definition: 'Loose skin under the chin or neck, seen in some reptiles and a few mammals — sometimes involved in temperature regulation or display.' },
+      { term: 'Mimicry', definition: 'The ability of species like African Grey Parrots to copy sounds and human speech - closely tied to their intelligence and need for ongoing mental stimulation.', related: [{ label: 'African Grey Parrot Care Guide', to: '/guides/african-grey/' }] },
+      { term: 'Dewlap', definition: 'Loose skin under the chin or neck, seen in some reptiles and a few mammals - sometimes involved in temperature regulation or display.' },
       { term: 'Self-sufficient', definition: 'BeastlyFacts\' shorthand for low-maintenance species, mostly invertebrates, that need minimal daily hands-on care once their setup is correctly built.' },
     ],
   },
@@ -134,7 +134,7 @@ export const CATEGORIES = [
       { term: 'Working / herding breed', definition: 'A breed group originally developed for a job like herding livestock, as with Border Collies. Often means very high exercise and mental stimulation needs in a pet setting.', related: [{ label: 'Border Collie Care Guide', to: '/guides/dog-border-collie/' }] },
       { term: 'Recall', definition: 'A dog\'s trained response to return to its owner when called. One of the most foundational obedience behaviors to teach early.' },
       { term: 'Bunting', definition: 'When a cat rubs or headbutts a person or object with its forehead, depositing scent from glands there. A sign of trust and affection, not aggression.', related: [{ label: 'Domestic Shorthair Care Guide', to: '/guides/cat-domestic-shorthair/' }] },
-      { term: 'Polydactyl', definition: 'Having extra toes — a genetic trait that shows up occasionally in certain cat lines, Maine Coons especially.', related: [{ label: 'Maine Coon Care Guide', to: '/guides/cat-maine-coon/' }] },
+      { term: 'Polydactyl', definition: 'Having extra toes - a genetic trait that shows up occasionally in certain cat lines, Maine Coons especially.', related: [{ label: 'Maine Coon Care Guide', to: '/guides/cat-maine-coon/' }] },
       { term: 'Litter box aversion', definition: 'When a cat starts avoiding its litter box. Usually points to a medical issue, stress, or dissatisfaction with the box or litter type itself rather than "bad behavior."' },
       { term: 'Resource guarding', definition: 'Defensive behavior (growling, snapping, blocking) around food, toys, or space, used to protect something the animal sees as valuable. Common in both dogs and cats and very manageable with the right approach.' },
     ],
@@ -145,14 +145,14 @@ export const CATEGORIES = [
     emoji: '🕷️',
     terms: [
       { term: 'Exoskeleton', definition: 'The hard external shell that supports and protects an invertebrate\'s body, doing the job a vertebrate\'s internal skeleton does.', related: [{ label: 'Tarantula Care Guide', to: '/guides/tarantula/' }] },
-      { term: 'Molting', definition: 'The process of shedding an old exoskeleton to grow a new, larger one underneath — since a hard shell can\'t stretch the way skin can.', related: [{ label: 'Emperor Scorpion Care Guide', to: '/guides/emperor-scorpion/' }] },
+      { term: 'Molting', definition: 'The process of shedding an old exoskeleton to grow a new, larger one underneath - since a hard shell can\'t stretch the way skin can.', related: [{ label: 'Emperor Scorpion Care Guide', to: '/guides/emperor-scorpion/' }] },
       { term: 'Instar', definition: 'A developmental stage between molts. An insect like a stick insect or praying mantis passes through several instars on its way to adulthood.', related: [{ label: 'Stick Insect Care Guide', to: '/guides/stick-insect/' }, { label: 'Praying Mantis Care Guide', to: '/guides/praying-mantis/' }] },
       { term: 'Ootheca', definition: 'The foam-like protective egg case a female praying mantis produces, usually stuck to a branch or enclosure wall.', related: [{ label: 'Praying Mantis Care Guide', to: '/guides/praying-mantis/' }] },
-      { term: 'Urticating hairs', definition: 'Tiny barbed hairs that New World tarantulas (species from the Americas) can kick off their abdomen as a defense — mildly irritating to skin and eyes, which is why handling needs care.', related: [{ label: 'Tarantula Care Guide', to: '/guides/tarantula/' }] },
+      { term: 'Urticating hairs', definition: 'Tiny barbed hairs that New World tarantulas (species from the Americas) can kick off their abdomen as a defense - mildly irritating to skin and eyes, which is why handling needs care.', related: [{ label: 'Tarantula Care Guide', to: '/guides/tarantula/' }] },
       { term: 'Pedipalps', definition: 'The small, leg-like appendages near a spider or scorpion\'s mouth, used for sensing food and surroundings.', related: [{ label: 'Emperor Scorpion Care Guide', to: '/guides/emperor-scorpion/' }] },
-      { term: 'Hemolymph', definition: 'The fluid that circulates nutrients through an invertebrate\'s body — the rough equivalent of blood, though it doesn\'t carry oxygen the same way vertebrate blood does.' },
+      { term: 'Hemolymph', definition: 'The fluid that circulates nutrients through an invertebrate\'s body - the rough equivalent of blood, though it doesn\'t carry oxygen the same way vertebrate blood does.' },
       { term: 'Communal setup', definition: 'Housing multiple invertebrates of the same species together. Works for some species (certain roaches, millipedes) but can turn deadly for solitary, cannibalistic ones like tarantulas.', related: [{ label: 'Hissing Cockroach Care Guide', to: '/guides/hissing-cockroach/' }, { label: 'Millipede Care Guide', to: '/guides/millipede/' }] },
-      { term: 'Humidity gradient', definition: 'A range of moisture levels across an enclosure, letting an animal move to its preferred zone — the invertebrate and amphibian equivalent of a thermal gradient.', related: [{ label: 'Millipede Care Guide', to: '/guides/millipede/' }] },
+      { term: 'Humidity gradient', definition: 'A range of moisture levels across an enclosure, letting an animal move to its preferred zone - the invertebrate and amphibian equivalent of a thermal gradient.', related: [{ label: 'Millipede Care Guide', to: '/guides/millipede/' }] },
       { term: 'Substrate depth', definition: 'How thick the substrate layer is in an enclosure. Burrowing species like emperor scorpions and many tarantulas need significantly deeper substrate than a non-burrowing species would.', related: [{ label: 'Emperor Scorpion Care Guide', to: '/guides/emperor-scorpion/' }] },
     ],
   },

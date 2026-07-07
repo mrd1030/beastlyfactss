@@ -8,19 +8,19 @@ export default function About() {
     <div className="min-h-screen">
       <Helmet>
         <title>About Beastly Facts | Animal Trivia, Care Guides & Quizzes</title>
-        <meta name="description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+        <meta name="description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
         <link rel="canonical" href="https://beastlyfacts.com/about/" />
         <meta property="og:title" content="About Beastly Facts" />
-        <meta property="og:description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+        <meta property="og:description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
         <meta property="og:url" content="https://beastlyfacts.com/about/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts — animal trivia, care guides and quizzes" />
+        <meta property="og:image:alt" content="Beastly Facts - animal trivia, care guides and quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Beastly Facts" />
-        <meta name="twitter:description" content="Learn about Beastly Facts — the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
+        <meta name="twitter:description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
@@ -54,7 +54,7 @@ export default function About() {
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
             BeastlyFacts is a fun, informative hub built for anyone who has ever fallen head-over-paws for an animal.
             Whether you're a reptile keeper who obsesses over thermostat gradients, a new dog owner Googling why your
-            pup eats grass, or just someone who finds animal trivia endlessly fascinating — this is your place.
+            pup eats grass, or just someone who finds animal trivia endlessly fascinating - this is your place.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
             The site is packed with hundreds of animal facts, in-depth care guides for reptiles and exotic pets,
@@ -73,13 +73,12 @@ export default function About() {
           <h2 className="font-display font-bold text-xl text-foreground mb-3">Who is BeastlyFacts for? 🏡</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
             This site is for pet parents, families, kids, and curious minds of all ages. If you share your home with
-            a bearded dragon, a ball python, a crested gecko, a cat, a dog, or a tank full of fish — there's
+            a bearded dragon, a ball python, a crested gecko, a cat, a dog, or a tank full of fish - there's
             something here for you. It's also great for people who don't (yet!) own pets but love learning cool,
             surprising facts about the animal kingdom.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
-            The care guides are written to be genuinely useful for beginners and intermediate keepers alike —
-            no gatekeeping, no overwhelming jargon. Just clear, evidence-based information that helps animals
+            The care guides are written to be genuinely useful for beginners and intermediate keepers alike - no gatekeeping, no overwhelming jargon. Just clear, evidence-based information that helps animals
             thrive and their owners feel confident.
           </p>
         </motion.section>
@@ -93,14 +92,14 @@ export default function About() {
           <h2 className="font-display font-bold text-xl text-foreground mb-3">Who built this? 👋</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
             BeastlyFacts is built and maintained by one person who genuinely loves learning about animals and
-            sharing that knowledge with fellow enthusiasts. No big editorial team, no corporate backing — just a
+            sharing that knowledge with fellow enthusiasts. No big editorial team, no corporate backing - just a
             passionate individual who started keeping reptiles, fell deep into the rabbit hole of animal biology and
             behaviour, and decided to turn that obsession into something useful and fun for everyone.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
             Every fact is researched, every care guide is written with real animals in mind, and the whole site
             is designed to feel like getting advice from a knowledgeable friend rather than reading a dry textbook.
-            If you've got questions, feedback, or just want to share a cool animal fact — reach out via the{' '}
+            If you've got questions, feedback, or just want to share a cool animal fact - reach out via the{' '}
             <Link to="/contact/" className="text-secondary font-semibold hover:underline">Contact page</Link>.
           </p>
         </motion.section>

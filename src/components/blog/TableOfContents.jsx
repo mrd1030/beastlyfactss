@@ -4,7 +4,7 @@ import { slugify } from '@/lib/utils/slugify';
 
 // Scans the already-rendered content DOM for headings instead of parsing
 // each content source (MDX component, Sanity portable text, raw string)
-// separately — works uniformly regardless of where the post came from.
+// separately - works uniformly regardless of where the post came from.
 export default function TableOfContents({ contentRef, watch, skipText }) {
   const [headings, setHeadings] = useState([]);
 
@@ -33,7 +33,7 @@ export default function TableOfContents({ contentRef, watch, skipText }) {
     setHeadings(list);
   }, [contentRef, watch, skipText]);
 
-  // Below this, it's not worth a nav card — e.g. fact-list articles that only
+  // Below this, it's not worth a nav card - e.g. fact-list articles that only
   // have the trailing Sources heading(s) and no real section structure.
   if (headings.length < 3) return null;
 

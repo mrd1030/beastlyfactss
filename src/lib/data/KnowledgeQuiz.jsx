@@ -29,7 +29,7 @@ const KnowledgeQuiz = () => {
       question: "Which animal has the strongest bite force in the world?",
       options: ["Lion", "Great White Shark", "Saltwater Crocodile", "Hippo"],
       correct: 2,
-      explanation: "The saltwater crocodile has the strongest bite force ever measured — over 3,700 pounds per square inch."
+      explanation: "The saltwater crocodile has the strongest bite force ever measured - over 3,700 pounds per square inch."
     },
     {
       question: "What is the fastest land animal on Earth?",
@@ -47,7 +47,7 @@ const KnowledgeQuiz = () => {
       question: "How long can a sloth hold its breath underwater?",
       options: ["Up to 10 minutes", "Up to 20 minutes", "Up to 40 minutes", "Up to 60 minutes"],
       correct: 2,
-      explanation: "Sloths can hold their breath for up to 40 minutes — longer than most marine mammals!"
+      explanation: "Sloths can hold their breath for up to 40 minutes - longer than most marine mammals!"
     },
     {
       question: "What color is an octopus's blood?",
@@ -103,7 +103,7 @@ const KnowledgeQuiz = () => {
   const handleSaveToPack = () => {
     saveQuizResult({
       type: 'knowledge-quiz',
-      title: `Beastly Facts Challenge — ${score}/${questions.length}`,
+      title: `Beastly Facts Challenge - ${score}/${questions.length}`,
       score,
       total: questions.length,
       date: new Date().toISOString(),

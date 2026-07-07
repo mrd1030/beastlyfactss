@@ -28,7 +28,7 @@ function getRelatedFacts(animal) {
   const nameLower = animal.name.toLowerCase();
   return facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
-    // Whole-name containment only — matching on individual shared words
+    // Whole-name containment only - matching on individual shared words
     // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
     return nameLower.includes(fAnimal) || fAnimal.includes(nameLower);
   }).slice(0, 3);
@@ -63,13 +63,13 @@ export default function EncyclopediaAnimal() {
   const ogImage = guide?.image
     ? `https://beastlyfacts.com${guide.image}`
     : 'https://beastlyfacts.com/assets/hero-1200.jpg';
-  // og:image:width/height must match the actual image's real size — Helmet
+  // og:image:width/height must match the actual image's real size - Helmet
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every animal photo's real dimensions.
   const ogImageDims = (guide?.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
-  const pageTitle = `${animal.name} — Encyclopedia | Beastly Facts`;
+  const pageTitle = `${animal.name} - Encyclopedia | Beastly Facts`;
   const pageDescription = truncateDescription(bio.overview
-    || `Learn about the ${animal.name} (${animal.scientific}) — natural habitat, wild diet, lifespan, size, and conservation status.`);
+    || `Learn about the ${animal.name} (${animal.scientific}) - natural habitat, wild diet, lifespan, size, and conservation status.`);
   const canonicalUrl = `https://beastlyfacts.com/encyclopedia/animal/${animal.id}/`;
 
   return (
@@ -85,7 +85,7 @@ export default function EncyclopediaAnimal() {
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content={String(ogImageDims.width)} />
         <meta property="og:image:height" content={String(ogImageDims.height)} />
-        <meta property="og:image:alt" content={`${animal.name} — Beastly Facts Encyclopedia`} />
+        <meta property="og:image:alt" content={`${animal.name} - Beastly Facts Encyclopedia`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
@@ -156,7 +156,7 @@ export default function EncyclopediaAnimal() {
               {bio.overview
                 ? <p className="text-sm font-body text-muted-foreground leading-relaxed">{bio.overview}</p>
                 : <p className="text-sm font-body text-muted-foreground italic leading-relaxed">
-                    Detailed overview coming soon. We're expanding the encyclopedia one animal at a time — check back!
+                    Detailed overview coming soon. We're expanding the encyclopedia one animal at a time - check back!
                   </p>
               }
             </div>

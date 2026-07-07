@@ -4,7 +4,7 @@ import { CATEGORIES } from '@/lib/data/glossaryTerms';
 import { slugify } from '@/lib/utils/slugify';
 
 // A term heading like "Shedding (ecdysis)" or "Metabolic Bone Disease (MBD)"
-// is really two matchable names for the same entry — split them so either
+// is really two matchable names for the same entry - split them so either
 // wording found in an article resolves to the right glossary anchor.
 function extractAliases(termHeading) {
   const parenMatch = termHeading.match(/^(.+?)\s*\(([^)]+)\)$/);
@@ -20,7 +20,7 @@ function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// Built once at module load — CATEGORIES is static data.
+// Built once at module load - CATEGORIES is static data.
 const ALIAS_MAP = new Map(); // lowercased alias -> { slug, definition, displayTerm }
 for (const cat of CATEGORIES) {
   for (const t of cat.terms) {
@@ -92,7 +92,7 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
 
     const usedSlugs = new Set();
 
-    // Snapshot text nodes before mutating — a live TreeWalker can skip or
+    // Snapshot text nodes before mutating - a live TreeWalker can skip or
     // reprocess nodes if the DOM changes underneath it mid-walk.
     const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
     const textNodes = [];

@@ -3,7 +3,7 @@ import { Calculator, ShoppingCart } from 'lucide-react';
 import { getAffiliateForItem } from '@/lib/data/affiliateProducts';
 
 function formatRange(r) {
-  return r.low === r.high ? `$${r.low}` : `$${r.low}–$${r.high}`;
+  return r.low === r.high ? `$${r.low}` : `$${r.low}-$${r.high}`;
 }
 
 function sumRange(items, checked) {
@@ -27,7 +27,7 @@ function ItemLabel({ text, textClassName }) {
         target="_blank"
         rel="noopener noreferrer sponsored"
         onClick={(e) => e.stopPropagation()}
-        title="Paid link — opens the product on Amazon"
+        title="Paid link - opens the product on Amazon"
         className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
       >
         {text}
@@ -69,7 +69,7 @@ function CostSection({ title, items, checked, onToggle }) {
               />
             </span>
             <span className="text-muted-foreground flex-shrink-0 whitespace-nowrap">
-              {item.low === item.high ? `$${item.low}` : `$${item.low}–$${item.high}`}
+              {item.low === item.high ? `$${item.low}` : `$${item.low}-$${item.high}`}
             </span>
           </label>
         ))}
@@ -117,8 +117,8 @@ export default function CostBuilder({ guide }) {
         </div>
       </div>
       <p className="text-[10px] text-muted-foreground/70 font-body mt-3 italic">
-        Rough estimates to help you plan — actual prices vary by region and retailer.
-        {hasAffiliateLinks && ' Underlined items are paid Amazon links — we may earn a commission at no extra cost to you.'}
+        Rough estimates to help you plan - actual prices vary by region and retailer.
+        {hasAffiliateLinks && ' Underlined items are paid Amazon links - we may earn a commission at no extra cost to you.'}
       </p>
     </div>
   );

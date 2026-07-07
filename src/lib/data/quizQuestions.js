@@ -1,7 +1,7 @@
 export const quizQuestions = [
   {
     id: 1,
-    question: "It's Saturday morning — what are you doing?",
+    question: "It's Saturday morning - what are you doing?",
     emoji: "🌅",
     options: [
       { text: "Sleeping in until noon 😴", scores: { cat: 2, python: 2 } },
@@ -91,7 +91,7 @@ export const quizResults = {
     name: "Cat",
     emoji: "🐱",
     title: "You're a Majestic Cat!",
-    description: "Independent, graceful, and secretly a huge softie. You value your alone time but when you love someone, you love HARD. You probably nap a lot and that's okay — you've earned it, royalty.",
+    description: "Independent, graceful, and secretly a huge softie. You value your alone time but when you love someone, you love HARD. You probably nap a lot and that's okay - you've earned it, royalty.",
     traits: ["Independent", "Elegant", "Curious", "Affectionate"],
     color: "bg-hotpink",
   },
@@ -123,7 +123,7 @@ export const quizResults = {
     name: "Ball Python",
     emoji: "🐍",
     title: "You're a Chill Ball Python!",
-    description: "Cool, calm, and totally unbothered. You don't need drama — you're content just vibing and being your authentic self. People are fascinated by you and your unique energy.",
+    description: "Cool, calm, and totally unbothered. You don't need drama - you're content just vibing and being your authentic self. People are fascinated by you and your unique energy.",
     traits: ["Calm", "Patient", "Unique", "Mysterious"],
     color: "bg-purple-600",
   },

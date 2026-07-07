@@ -4,7 +4,7 @@ import { client } from '@/lib/sanity';
 import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
-// Full post query — includes body so the article renders completely
+// Full post query - includes body so the article renders completely
 const FULL_POST_FIELDS = `
   _id, title, slug, excerpt, mainImage, publishedAt, readTime, body,
   "category": categories[0]->title,

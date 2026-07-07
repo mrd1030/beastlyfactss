@@ -27,7 +27,7 @@ Deno.serve(async (req) => {
       status: 'pending',
     });
 
-    // Try to send notification email (non-blocking — don't fail if email errors)
+    // Try to send notification email (non-blocking - don't fail if email errors)
     try {
       await base44.asServiceRole.integrations.Core.SendEmail({
         to: 'hello@beastlyfacts.com',

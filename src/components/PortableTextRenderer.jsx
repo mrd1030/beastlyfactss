@@ -254,7 +254,7 @@ const components = {
 };
 
 export default function PortableTextRenderer({ content }) {
-  // Same prose classes Blog/Chronicles wrap MDX content in — Sanity and MDX
+  // Same prose classes Blog/Chronicles wrap MDX content in - Sanity and MDX
   // posts must look identical. (Kept here too, not just at the call sites,
   // because SplitPreview renders without a prose parent.)
   return (

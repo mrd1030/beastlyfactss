@@ -73,7 +73,7 @@ export default function Blog() {
     setPage(pageParam);
 
     if (postParam) {
-      // Short stories moved to their own Chronicles section — send any old
+      // Short stories moved to their own Chronicles section - send any old
       // /blog/<story-slug>/ deep link to the right series (the crawler-level
       // 301s live in public/_redirects; this covers client-side navigation).
       const storySeries = seriesForSlug(postParam);
@@ -113,7 +113,7 @@ export default function Blog() {
     }
   }, [location.search, routeSlug, catSlug, sanityPosts]);
 
-  // Chronicles short stories live on their own page (/chronicles/) — keep
+  // Chronicles short stories live on their own page (/chronicles/) - keep
   // them out of the listing, category pills, and sidebars entirely.
   const allPosts = [
     ...sanityPosts.filter(p => !isChroniclesPost(p)),
@@ -239,8 +239,8 @@ export default function Blog() {
     ? `${catTitle} Articles | Beastly Facts`
     : 'The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts';
   const blogDescription = catTitle
-    ? `Browse all ${catTitle} articles on Beastly Facts — reptile care guides, exotic pet tips, and animal husbandry deep-dives from The Critter Digest.`
-    : 'Read the Critter Digest — in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
+    ? `Browse all ${catTitle} articles on Beastly Facts - reptile care guides, exotic pet tips, and animal husbandry deep-dives from The Critter Digest.`
+    : 'Read the Critter Digest - in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
   const blogCanonical = catSlug
     ? `https://beastlyfacts.com/blog/category/${catSlug}/`
     : 'https://beastlyfacts.com/blog/';
@@ -257,7 +257,7 @@ export default function Blog() {
         <meta property="og:url" content={blogCanonical} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
-        <meta property="og:image:alt" content="The Critter Digest — reptile and exotic pet care blog by Beastly Facts" />
+        <meta property="og:image:alt" content="The Critter Digest - reptile and exotic pet care blog by Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Critter Digest | Beastly Facts" />
         <meta name="twitter:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips." />
@@ -336,7 +336,7 @@ export default function Blog() {
 
           <div className="space-y-5">
             <div className="bg-card border border-border rounded-2xl p-6">
-              <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe — it's free</h3>
+              <h3 className="font-display font-bold text-base text-foreground mb-1">Subscribe - it's free</h3>
               <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam, ever. 🐾</p>
               <BeehiivSubscribe />
             </div>
@@ -344,7 +344,7 @@ export default function Blog() {
             <Link to="/chronicles/dex/" className="block bg-secondary/5 border border-secondary/20 rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
               <p className="text-xs font-display font-bold text-secondary mb-1">📖 The Chronicles</p>
               <p className="text-xs text-muted-foreground font-body leading-relaxed">
-                Short fiction from the Beastly Facts universe — follow Dex 🦎 and Otis 🐰 in their own series.
+                Short fiction from the Beastly Facts universe - follow Dex 🦎 and Otis 🐰 in their own series.
               </p>
               <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">Start reading →</span>
             </Link>
@@ -413,14 +413,14 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
   const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
-  // Truncated as a safety net — CMS fields (seoDescription/excerpt) are
+  // Truncated as a safety net - CMS fields (seoDescription/excerpt) are
   // hand-written and usually already a good length, but nothing upstream
   // enforces that, so a too-long field would otherwise ship straight to
   // the meta tag uncut.
-  const postDescription = truncateDescription(post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`);
+  const postDescription = truncateDescription(post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts - in-depth reptile and exotic pet care from the Critter Digest.`);
   const ogImageSource = post.seoImage || post.mainImage;
   // Sanity images are always cropped to exactly 1200x630 below, and the hero
-  // fallback is also 1200x630 — only a raw post.image asset has a real size
+  // fallback is also 1200x630 - only a raw post.image asset has a real size
   // that can differ, so og:image:width/height must be looked up per-image
   // rather than left at a fixed default (Helmet has no way to "unset" a tag,
   // so a wrong declared size would otherwise silently persist from whichever

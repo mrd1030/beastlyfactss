@@ -12,7 +12,7 @@ export const dogGuides = [
     sizeCategory: "All Sizes",
     tagline: "Everything every dog owner needs to know, regardless of breed.",
     funFact: "Dogs have a sense of smell that is 10,000 to 100,000 times more powerful than a human's. They can detect certain diseases, including cancer, diabetes, and epileptic seizures, through scent alone.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Properly sized crate", low: 50, high: 120 },
@@ -61,7 +61,7 @@ export const dogGuides = [
     sizeCategory: "Small",
     tagline: "Big personalities in a tiny package. Know their specific needs!",
     funFact: "Small dogs typically live significantly longer than large breeds. Chihuahuas and Dachshunds regularly reach 15 to 18 years, while Great Danes average only 7 to 10 years. The reason is not fully understood, but metabolic rate differences are thought to play a role.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Small crate + bed", low: 50, high: 100 },
@@ -107,7 +107,7 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The 'just right' size with its own unique needs.",
     funFact: "Medium-sized dogs (roughly 20 to 60 lbs) often show the most behavioral versatility. Studies show they tend to score higher on trainability assessments, possibly because they were historically bred for working roles that required responsiveness to human cues.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Crate or dog bed (full-stretch size)", low: 80, high: 150 },
@@ -153,7 +153,7 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "More dog to love, and more responsibility to match.",
     funFact: "Large and giant breed puppies must be fed specific large-breed puppy food that is lower in calcium and calories to prevent too-rapid bone growth, which can cause lifelong joint problems. Never feed giant breed puppies regular puppy food.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "XL crate (42-54 in)", low: 150, high: 300 },
@@ -202,7 +202,7 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "The world's most popular dog breed, and for good reason!",
     funFact: "Labs are famously food-motivated because many carry a mutation in the POMC gene, which regulates hunger signals. This means many Labs genuinely never feel full, making them highly trainable but also prone to obesity.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Large crate + bed", low: 120, high: 250 },
@@ -245,7 +245,7 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "Gentle, joyful, and endlessly loyal: the golden retriever.",
     funFact: "Goldens have an unusually high rate of cancer compared to other breeds: studies suggest up to 60% of Golden Retrievers will die from cancer. The Morris Animal Foundation is running the largest canine health study in history specifically to investigate this.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Large crate + bed", low: 120, high: 250 },
@@ -289,7 +289,7 @@ export const dogGuides = [
     sizeCategory: "Large",
     tagline: "One of the world's most versatile and intelligent working dogs.",
     funFact: "German Shepherds consistently rank among the top 3 most intelligent dog breeds. They are the most common breed used as police, military, search and rescue, and guide dogs due to their unmatched combination of intelligence, trainability, loyalty, and physical capability.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Large crate + bed", low: 120, high: 250 },
@@ -332,7 +332,7 @@ export const dogGuides = [
     sizeCategory: "Small",
     tagline: "Charming and adaptable, but needs informed, attentive ownership.",
     funFact: "French Bulldogs cannot reproduce naturally in most cases: their puppies' heads are too large to pass through the birth canal, so nearly all Frenchie litters are delivered by C-section. They also cannot swim due to their front-heavy build and must always wear a life jacket near water.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Small/medium crate + bed", low: 80, high: 150 },
@@ -376,7 +376,7 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The world's most intelligent dog breed, and the most demanding.",
     funFact: "A Border Collie named Chaser learned the names of 1,022 individual objects, the largest tested vocabulary of any non-human animal. Border Collies can learn a new command in under 5 repetitions and obey it correctly 95% of the time.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Medium crate + bed", low: 80, high: 150 },
@@ -419,7 +419,7 @@ export const dogGuides = [
     sizeCategory: "Medium",
     tagline: "The escape artist sled dog that needs a job and a secure fence.",
     funFact: "In 1925, a relay team of sled dogs (led most famously by Balto and Togo) ran 674 miles across Alaska in brutal winter conditions to deliver diphtheria antitoxin to the isolated town of Nome. Togo, a Siberian Husky, ran the longest and most dangerous leg, 261 miles.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Medium crate + bed", low: 80, high: 150 },

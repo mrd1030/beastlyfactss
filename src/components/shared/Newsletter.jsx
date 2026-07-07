@@ -24,7 +24,7 @@ export default function Newsletter() {
                                 Weekly Critter Digest
                             </h2>
                             <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
-                                Get a weekly roundup of verified animal facts, practical care tips, and short quiz challenges—delivered every Sunday. No spam, ever.
+                                Get a weekly roundup of verified animal facts, practical care tips, and short quiz challenges - delivered every Sunday. No spam, ever.
                             </p>
                             <div className="flex flex-col gap-2 mb-5">
                                 {[
@@ -52,7 +52,7 @@ export default function Newsletter() {
                         {/* Right: Subscribe form */}
                         <div className="bg-card border border-border rounded-2xl p-6">
                             <h3 className="font-display font-bold text-base text-foreground mb-1">
-                                Subscribe — it's free
+                                Subscribe - it's free
                             </h3>
                             <p className="text-xs text-muted-foreground font-body mb-4">
                                 New articles straight to your inbox. No spam, ever. 🐾

@@ -46,12 +46,12 @@ Use this for shorter, lighter "fun fact" style pages.
 
 These components are located in `src/components/mdx/`:
 
-- `<Figure />` — Images with captions
-- `<FunFact />` — Highlighted fun fact callouts
-- `<ProsCons />` — Pros and Cons side-by-side
-- `<ComparisonTable />` — Clean comparison tables
-- `<AffiliateLink />` — Affiliate / Amazon links
-- `<Sources />` — Sources section
+- `<Figure />` - Images with captions
+- `<FunFact />` - Highlighted fun fact callouts
+- `<ProsCons />` - Pros and Cons side-by-side
+- `<ComparisonTable />` - Clean comparison tables
+- `<AffiliateLink />` - Affiliate / Amazon links
+- `<Sources />` - Sources section
 
 ---
 

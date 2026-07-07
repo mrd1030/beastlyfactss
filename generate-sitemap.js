@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 function parseFrontmatter(content) {
-  // \r? — MDX files in this repo are a mix of LF and CRLF line endings;
+  // \r? - MDX files in this repo are a mix of LF and CRLF line endings;
   // an LF-only match silently drops frontmatter and the slug falls back
   // to the filename, putting wrong URLs in the sitemap.
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
@@ -39,8 +39,7 @@ function getMdxPosts() {
       const fm = parseFrontmatter(content);
       const slug = fm.slug || file.replace('.mdx', '');
       if (isChroniclesSlug(slug)) continue; // listed via getChroniclesPages()
-      // Only emit lastmod when the frontmatter carries a real date —
-      // a fabricated build-date lastmod is worse than none at all.
+      // Only emit lastmod when the frontmatter carries a real date - // a fabricated build-date lastmod is worse than none at all.
       const lastmod = fm.lastUpdated || fm.date || null;
       posts.push({ path: `/blog/${slug}/`, lastmod, changefreq: 'weekly', priority: '0.7' });
     }

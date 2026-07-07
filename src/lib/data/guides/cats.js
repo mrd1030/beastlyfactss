@@ -9,7 +9,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "Core care principles that apply to every cat, every breed.",
     funFact: "Cats spend approximately 30 to 50% of their waking hours grooming themselves. This is not just cleanliness: grooming regulates body temperature, stimulates circulation, distributes natural oils, and is a bonding behavior between cats.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Litter boxes (one per cat + one extra)", low: 30, high: 60 },
@@ -59,7 +59,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The most common cat in the world, and often the healthiest.",
     funFact: "Domestic shorthairs are not a breed: they are mixed-breed cats with no pedigree. This genetic diversity (hybrid vigor) tends to make them hardier and longer-lived than many purebred cats, often reaching 15 to 20 years.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
@@ -98,7 +98,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The gentle giant of the cat world, with a dog-like personality.",
     funFact: "Maine Coons are the largest domestic cat breed, with males reaching 18 to 25 lbs. They are known for a chirping, trilling vocalization instead of a typical meow, and many enjoy playing in water (unusual for cats).",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Sturdy large cat tree (rated 20+ lbs)", low: 100, high: 200 },
@@ -139,7 +139,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The vocal, social, opinionated cat that demands to be part of everything.",
     funFact: "Siamese cats are one of the oldest and most recognizable cat breeds in the world, believed to originate in ancient Thailand (then Siam). Their distinctive color-point pattern (darker face, ears, paws, and tail) is caused by a temperature-sensitive enzyme: cooler areas of the body produce more pigment.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
@@ -179,7 +179,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The floppy, gentle giant that goes limp when you pick them up.",
     funFact: "Ragdolls get their name from their distinctive tendency to go completely limp and relaxed when picked up. This trait appears to be genetic, as it is consistently present in the breed from kittenhood.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Litter boxes + cat tree + scratching posts", low: 100, high: 200 },
@@ -219,7 +219,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The wild-looking, highly athletic cat that needs an active owner.",
     funFact: "Bengal cats are a hybrid breed created by crossing domestic cats with the Asian Leopard Cat. Their striking spotted or marbled coat is a direct result of this wild ancestry. Early generation Bengals (F1 to F3) can be quite wild in behavior: pet Bengals are typically F4 generation or later.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Large sturdy multi-level cat furniture", low: 120, high: 250 },
@@ -262,7 +262,7 @@ export const catGuides = [
     sizeCategory: "All Sizes",
     tagline: "The luxurious, calm lap cat with significant grooming requirements.",
     funFact: "Persian cats have been selectively bred for their flat faces (brachycephaly) for over 100 years. The modern 'extreme' or 'peke-faced' Persian has a nose set so far back that it is level with the inner corners of the eyes, which causes significant health problems not present in traditional Persians.",
-    // Rough starting ranges, not verified current pricing — needs a review pass.
+    // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
         { item: "Litter boxes + low furniture/perches", low: 90, high: 180 },
