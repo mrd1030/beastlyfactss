@@ -99,6 +99,7 @@ export const CATEGORIES = [
       { term: 'Quarantine', definition: 'Keeping a newly acquired animal separate from existing pets for a set period, to watch for illness or parasites before introducing them.' },
       { term: 'Fecal exam', definition: 'A vet test that checks a stool sample for parasites. Recommended annually even for animals that seem perfectly healthy.' },
       { term: 'Subclinical', definition: 'Describes an illness or parasite that\'s present in an animal without producing visible symptoms - the animal looks fine but is still affected.' },
+      { term: 'Deslorelin implant', definition: 'A small, slow-release hormone implant used to treat adrenal gland disease in ferrets, offering a non-surgical alternative to adrenal gland removal.', related: [{ label: 'Ferret Adrenal Disease', to: '/blog/ferret-adrenal-disease-guide/' }] },
     ],
   },
   {
@@ -119,6 +120,10 @@ export const CATEGORIES = [
       { term: 'Mimicry', definition: 'The ability of species like African Grey Parrots to copy sounds and human speech - closely tied to their intelligence and need for ongoing mental stimulation.', related: [{ label: 'African Grey Parrot Care Guide', to: '/guides/african-grey/' }] },
       { term: 'Dewlap', definition: 'Loose skin under the chin or neck, seen in some reptiles and a few mammals - sometimes involved in temperature regulation or display.' },
       { term: 'Self-sufficient', definition: 'BeastlyFacts\' shorthand for low-maintenance species, mostly invertebrates, that need minimal daily hands-on care once their setup is correctly built.' },
+      { term: 'Hindgut fermenter', definition: 'An animal, like a rabbit, that digests fiber through bacterial fermentation in an enlarged section of the large intestine rather than in multiple stomach chambers. It\'s why a steady, near-constant flow of fiber matters so much for their gut health.', related: [{ label: 'Rabbit Care Guide', to: '/guides/rabbit/' }] },
+      { term: 'Cecotropes', definition: 'Soft, nutrient-rich droppings a rabbit produces and re-ingests directly, usually overnight - a normal and essential part of digestion, not a hygiene problem.', related: [{ label: 'Rabbit Care Guide', to: '/guides/rabbit/' }] },
+      { term: 'GI stasis', definition: 'A dangerous slowdown or stoppage of a rabbit\'s digestive tract, often triggered by low fiber intake, stress, dehydration, or pain elsewhere in the body. A genuine emergency, since a rabbit\'s gut needs near-constant movement to stay healthy.', related: [{ label: 'Rabbit Care Guide', to: '/guides/rabbit/' }, { label: 'Rabbit GI Stasis: The Silent Emergency', to: '/blog/rabbit-gi-stasis-guide/' }] },
+      { term: 'Adrenal disease (ferrets)', definition: 'A common hormonal condition in ferrets, especially those neutered very young, caused by overactive adrenal glands. Often shows up first as a symmetric hair-loss pattern rather than obvious illness.', related: [{ label: 'Ferret Care Guide', to: '/guides/ferret/' }, { label: 'Ferret Adrenal Disease', to: '/blog/ferret-adrenal-disease-guide/' }] },
     ],
   },
   {
@@ -154,6 +159,19 @@ export const CATEGORIES = [
       { term: 'Communal setup', definition: 'Housing multiple invertebrates of the same species together. Works for some species (certain roaches, millipedes) but can turn deadly for solitary, cannibalistic ones like tarantulas.', related: [{ label: 'Hissing Cockroach Care Guide', to: '/guides/hissing-cockroach/' }, { label: 'Millipede Care Guide', to: '/guides/millipede/' }] },
       { term: 'Humidity gradient', definition: 'A range of moisture levels across an enclosure, letting an animal move to its preferred zone - the invertebrate and amphibian equivalent of a thermal gradient.', related: [{ label: 'Millipede Care Guide', to: '/guides/millipede/' }] },
       { term: 'Substrate depth', definition: 'How thick the substrate layer is in an enclosure. Burrowing species like emperor scorpions and many tarantulas need significantly deeper substrate than a non-burrowing species would.', related: [{ label: 'Emperor Scorpion Care Guide', to: '/guides/emperor-scorpion/' }] },
+      { term: 'Premolt', definition: 'The vulnerable window leading up to a molt, when an invertebrate often stops eating, darkens or dulls in color, and becomes less active as it prepares to shed its old exoskeleton.', related: [{ label: 'Tarantula Care Guide', to: '/guides/tarantula/' }, { label: 'Invertebrate Molting 101', to: '/blog/invertebrate-molting-guide/' }] },
+      { term: 'Diapause', definition: 'A period of dormancy some invertebrate eggs enter, often triggered by cold temperatures, that delays hatching until conditions turn more favorable - relevant to praying mantis ootheca kept indoors.', related: [{ label: 'Praying Mantis Care Guide', to: '/guides/praying-mantis/' }] },
+      { term: 'Parthenogenesis', definition: 'Reproduction from an unfertilized egg, without a male. Seen occasionally in praying mantises and a few reptile species.', related: [{ label: 'Praying Mantis Care Guide', to: '/guides/praying-mantis/' }] },
+    ],
+  },
+  {
+    id: 'aquatic',
+    label: 'Aquatic Life',
+    emoji: '🐠',
+    terms: [
+      { term: 'Nitrogen cycle', definition: 'The biological process where beneficial bacteria convert toxic ammonia from fish waste into nitrite, then into far less harmful nitrate. A brand-new tank needs time to build up these bacteria before it can safely hold fish.', related: [{ label: 'Betta Fish Care Guide', to: '/guides/betta-fish/' }, { label: 'Goldfish Care Guide', to: '/guides/goldfish/' }] },
+      { term: 'Dechlorinator', definition: 'A water conditioner added to tap water to neutralize chlorine and chloramine before it\'s safe for fish or other water-dependent pets.', related: [{ label: 'Betta Fish Care Guide', to: '/guides/betta-fish/' }] },
+      { term: 'Stunting', definition: 'A once-common myth that a small bowl permanently caps a goldfish\'s size. In reality, cramped, poorly-filtered housing causes stress and organ damage, not a genuine size limit - a goldfish given proper space keeps growing toward its natural size.', related: [{ label: 'Goldfish Care Guide', to: '/guides/goldfish/' }] },
     ],
   },
 ];

@@ -6,6 +6,8 @@ import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calcula
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
+import { mdxPosts } from '@/lib/mdxPosts';
+import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CostBuilder from '@/components/guides/CostBuilder';
@@ -35,6 +37,10 @@ export default function GuideDetail() {
   const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
   const hasFaq = !!guide?.faqs?.length;
   const hasEncyclopedia = !!encAnimal?.bio;
+
+  const relatedArticles = guide
+    ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
+    : [];
 
   const relatedFacts = guide ? facts.filter(f => {
     const fAnimal = f.animal.toLowerCase();
@@ -522,6 +528,24 @@ export default function GuideDetail() {
                     Animal facts & overview <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
+              </div>
+            )}
+
+            {/* Related deep-dive articles */}
+            {relatedArticles.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                  📰 Deep Dive
+                </p>
+                <div className="space-y-3">
+                  {relatedArticles.map(article => (
+                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                      <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                        {article.emoji ? `${article.emoji} ` : ''}{article.title}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 

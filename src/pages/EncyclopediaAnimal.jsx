@@ -7,6 +7,8 @@ import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { mdxPosts } from '@/lib/mdxPosts';
+import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
@@ -58,6 +60,7 @@ export default function EncyclopediaAnimal() {
   }
 
   const relatedFacts = getRelatedFacts(animal);
+  const relatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
   const bio = animal.bio || {};
   const ogImage = guide?.image
@@ -225,6 +228,24 @@ export default function EncyclopediaAnimal() {
                     View full guide <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
+              </div>
+            )}
+
+            {/* Related deep-dive articles */}
+            {relatedArticles.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                  📰 Deep Dive
+                </p>
+                <div className="space-y-3">
+                  {relatedArticles.map(article => (
+                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                      <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                        {article.emoji ? `${article.emoji} ` : ''}{article.title}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 
