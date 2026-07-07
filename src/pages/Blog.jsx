@@ -13,6 +13,7 @@ import PortableTextRenderer from '@/components/PortableTextRenderer';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
+import { truncateDescription } from '@/lib/utils/truncate';
 import * as MdxComponents from '@/components/mdx';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
@@ -387,7 +388,11 @@ function PostView({ post, onBack, allPosts, onSelectPost }) {
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
   const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
-  const postDescription = post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`;
+  // Truncated as a safety net — CMS fields (seoDescription/excerpt) are
+  // hand-written and usually already a good length, but nothing upstream
+  // enforces that, so a too-long field would otherwise ship straight to
+  // the meta tag uncut.
+  const postDescription = truncateDescription(post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts — in-depth reptile and exotic pet care from the Critter Digest.`);
   const ogImageSource = post.seoImage || post.mainImage;
   // Sanity images are always cropped to exactly 1200x630 below, and the hero
   // fallback is also 1200x630 — only a raw post.image asset has a real size
