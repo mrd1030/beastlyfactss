@@ -300,6 +300,7 @@ Feather destructive behavior and chronic screaming indicate inadequate enrichmen
     emoji: "🦜",
     difficulty: "Intermediate",
     petType: "Birds",
+    image: "/assets/guides/conure.jpg",
     tagline: "The clownish, cuddly little conure that never stops entertaining!",
     funFact: "Green cheek conures are notorious for learning to hang upside down, play dead, and roll over on command. They're often called the 'class clown' of the parrot world and learn tricks faster than almost any other small parrot!",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -371,6 +372,7 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     emoji: "🐦",
     difficulty: "Beginner",
     petType: "Birds",
+    image: "/assets/guides/canary.jpg",
     tagline: "The classic singing songbird that's happiest observed, not handled!",
     funFact: "Only male canaries sing (with rare exceptions), and their song is directly tied to testosterone and daylight length. Centuries of selective breeding have produced distinct song 'breeds,' like the Roller canary, bred specifically for the complexity, tone, and softness of its song rather than for appearance.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -419,6 +421,7 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     emoji: "🦜",
     difficulty: "Advanced",
     petType: "Birds",
+    image: "/assets/guides/cockatoo.jpg",
     tagline: "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!",
     funFact: "Cockatoos are considered the most affection-dependent parrots in aviculture. In the wild they maintain near-constant physical contact with their flock and mate, and a captive cockatoo often expects the same level of contact from its owner — which is exactly why the species has one of the highest rates of severe feather-plucking and behavioral problems of any commonly kept parrot when that need isn't met.",
     // Rough starting ranges, not verified current pricing — needs a review pass.

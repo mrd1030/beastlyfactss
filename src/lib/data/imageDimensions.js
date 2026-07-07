@@ -17,11 +17,23 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/guides/angelfish.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/axolotl.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/ball-python.jpg": {
     "width": 1168,
     "height": 784
   },
   "/assets/guides/bearded-dragon.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/betta-fish.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -45,6 +57,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/canary.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/chinchilla.jpg": {
     "width": 1168,
     "height": 784
@@ -53,7 +69,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/guides/cockatoo.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/guides/conure.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/corn-snake.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/corydoras-catfish.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -61,15 +89,27 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/fire-belly-toad.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/gargoyle-gecko.jpg": {
     "width": 1280,
     "height": 720
+  },
+  "/assets/guides/goldfish.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/guides/green-anole.jpg": {
     "width": 1248,
     "height": 832
   },
   "/assets/guides/guinea-pig.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/guppy.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -80,6 +120,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/guides/hognose-snake.jpg": {
     "width": 1280,
     "height": 720
+  },
+  "/assets/guides/koi.jpg": {
+    "width": 1248,
+    "height": 832
   },
   "/assets/guides/leaf-tailed-gecko.jpg": {
     "width": 1168,
@@ -98,6 +142,18 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/guides/mourning-gecko.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/guides/neon-tetra.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/oscar.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/pacman-frog.jpg": {
     "width": 1280,
     "height": 720
   },
@@ -129,11 +185,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/guides/tiger-salamander.jpg": {
+    "width": 1280,
+    "height": 720
+  },
   "/assets/guides/tokay-gecko.jpg": {
     "width": 1280,
     "height": 720
   },
   "/assets/guides/uromastyx.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "/assets/guides/whites-tree-frog.jpg": {
     "width": 1280,
     "height": 720
   },

@@ -5,6 +5,7 @@ export const fishGuides = [
     emoji: "🐠",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/betta-fish.jpg",
     tagline: "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!",
     funFact: "Wild betta fish live in shallow rice paddies and slow-moving water that can run low on oxygen, so they evolved a labyrinth organ that lets them gulp air directly from the surface. Males also build floating bubble nests out of saliva-coated air bubbles to hold their eggs — a behavior captive males will still perform even without a female present.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -53,6 +54,7 @@ export const fishGuides = [
     emoji: "🐟",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/goldfish.jpg",
     tagline: "The pond classic that outgrows its reputation — and its bowl — in a hurry!",
     funFact: "Goldfish have real, months-long memories and can be trained to push levers, navigate mazes, and recognize shapes and colors — directly contradicting the popular '3-second memory' myth. They also grow to the size of their environment: a goldfish kept in a tiny bowl doesn't stay small because it's content, it's stunted, which is a sign of poor welfare rather than a convenient feature.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -99,6 +101,7 @@ export const fishGuides = [
     emoji: "🎏",
     difficulty: "Intermediate",
     petType: "Fish",
+    image: "/assets/guides/koi.jpg",
     tagline: "The living jewels of the pond world that can genuinely outlive their keepers!",
     funFact: "Koi are famously long-lived, with some individuals in Japan documented living well past 70 years and one famous fish, Hanako, claimed to have reached 226 years old (a figure that remains disputed among scientists but reflects just how extraordinarily long-lived the species genuinely can be). Koi also recognize individual people and will learn to approach a familiar keeper at the pond's edge for food.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -149,6 +152,7 @@ export const fishGuides = [
     emoji: "🐠",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/guppy.jpg",
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
     funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -195,6 +199,7 @@ export const fishGuides = [
     emoji: "🐠",
     difficulty: "Intermediate",
     petType: "Fish",
+    image: "/assets/guides/angelfish.jpg",
     tagline: "The elegant Amazonian cichlid that pairs for life and rules its corner of the tank!",
     funFact: "Angelfish are cichlids that often form long-term monogamous breeding pairs, and unlike most fish, both parents cooperatively guard their eggs and fry — fanning them with fresh water and defending the territory together. Their tall, laterally flattened body shape is a natural adaptation for slipping between roots and plant stems in flooded Amazon forest, effectively letting them disguise themselves as a drifting leaf.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -241,6 +246,7 @@ export const fishGuides = [
     emoji: "🐟",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/corydoras-catfish.jpg",
     tagline: "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!",
     funFact: "Corydoras catfish can breathe atmospheric air by gulping it at the surface and absorbing oxygen through their intestine — a backup adaptation for the low-oxygen waters they evolved in. This means an occasional dash to the surface for a quick gulp of air is completely normal behavior, not a sign of a sick or distressed fish.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -289,6 +295,7 @@ export const fishGuides = [
     emoji: "🐠",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment — it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -337,6 +344,7 @@ export const fishGuides = [
     emoji: "🐟",
     difficulty: "Intermediate",
     petType: "Fish",
+    image: "/assets/guides/oscar.jpg",
     tagline: "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!",
     funFact: "Oscars are sometimes nicknamed 'water dogs' because of how strongly they bond with and recognize individual keepers — learning to beg at the glass, follow a finger around the tank, and in some cases tolerate supervised hand-feeding, behavior that sets them apart from most other fish.",
     // Rough starting ranges, not verified current pricing — needs a review pass.

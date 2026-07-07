@@ -27,7 +27,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "conure", name: "Green Cheek Conure", scientific: "Pyrrhura molinae",
-    category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "conure", available: true,
+    category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "conure", available: true, image: "/assets/guides/conure.jpg",
     bio: {
       overview: "Green cheek conures are small parrots native to the forests of Bolivia, Brazil, Argentina, and Paraguay, where they live in noisy flocks in the forest canopy. They are among the quietest of the conure species — making them more apartment-friendly than larger parrots — and have a reputation for playfulness and deep affection. Unlike larger parrots, they bond closely with keepers without requiring as intensive a daily time commitment.",
       origin: "South America (Bolivia, Brazil, Argentina, Paraguay)",
@@ -66,7 +66,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "canary", name: "Canary", scientific: "Serinus canaria domestica",
-    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "canary", available: true,
+    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "canary", available: true, image: "/assets/guides/canary.jpg",
     bio: {
       overview: "The domestic canary descends from the wild Atlantic canary, native to the Canary Islands, Azores, and Madeira, and has been selectively bred since the 16th century into distinct song and appearance varieties. Only males typically sing, a behavior tied to testosterone and daylight length, and centuries of selective breeding have produced dedicated song breeds like the Roller canary. Unlike most popular pet birds, canaries are kept primarily to be heard and watched rather than handled.",
       origin: "Canary Islands, Azores, and Madeira",
@@ -79,7 +79,7 @@ export const birdEncyclopedia = [
   },
   {
     id: "cockatoo", name: "Cockatoo", scientific: "Cacatua alba",
-    category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "cockatoo", available: true,
+    category: "Birds", emoji: "🦜", difficulty: "Advanced", guideId: "cockatoo", available: true, image: "/assets/guides/cockatoo.jpg",
     bio: {
       overview: "The umbrella cockatoo, native to the tropical rainforests of Indonesia's Maluku Islands, is one of the most commonly kept cockatoo species and among the most affection-dependent parrots in aviculture. In the wild, cockatoos maintain near-constant physical contact with their flock and mate, a trait that carries directly into captivity as an intense need for daily interaction with their keeper. Habitat loss and historic capture for the pet trade have made wild populations increasingly rare.",
       origin: "Maluku Islands, Indonesia",

@@ -5,6 +5,7 @@ export const amphibianGuides = [
     emoji: "🐸",
     difficulty: "Beginner",
     petType: "Amphibians",
+    image: "/assets/guides/whites-tree-frog.jpg",
     tagline: "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!",
     funFact: "White's tree frogs are also called 'dumpy tree frogs' because they develop adorable fat rolls (parotoid glands and lipid ridges) as adults. These rolly features are a sign of a well-fed, healthy frog, not obesity!",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -63,6 +64,7 @@ Provide broad-leafed plants or quality artificial foliage at different heights, 
     emoji: "🐸",
     difficulty: "Beginner",
     petType: "Amphibians",
+    image: "/assets/guides/pacman-frog.jpg",
     tagline: "The round, grumpy ambush predator that is essentially all mouth!",
     funFact: "Pacman frogs (horned frogs, genus Ceratophrys) have an extraordinarily powerful bite for an amphibian. Their bite force relative to body size is comparable to some predatory dinosaurs. They will attempt to eat anything that moves near them, including other frogs, small mice, and keepers' fingers.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -121,6 +123,7 @@ Observe rather than handle. Pacman frogs are display animals — watching them h
     emoji: "🐸",
     difficulty: "Beginner",
     petType: "Amphibians",
+    image: "/assets/guides/fire-belly-toad.jpg",
     tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
     funFact: "When threatened, fire-bellied toads perform the Unkenreflex: they arch their backs and flip their limbs upward to display the bright red and black warning coloration on their bellies. This 'unken' pose is a classic example of aposematism, advertising: 'I am toxic, do not eat me!'",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -186,6 +189,7 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
     emoji: "🦎",
     difficulty: "Intermediate",
     petType: "Amphibians",
+    image: "/assets/guides/axolotl.jpg",
     tagline: "The 'forever larva' with feathery gills and superhero-level regeneration!",
     funFact: "Axolotls are neotenic, meaning they retain their larval (juvenile) features throughout their entire adult life and never undergo full metamorphosis. They keep their feathery external gills, tail fins, and aquatic lifestyle permanently. Scientists study them intensively because they can regenerate not just limbs but heart tissue, spinal cord sections, and parts of their brain with zero scarring.",
     // Rough starting ranges, not verified current pricing — needs a review pass.
@@ -239,6 +243,7 @@ Occasional variety with frozen bloodworms (thawed), brine shrimp, daphnia, or si
     emoji: "🐸",
     difficulty: "Intermediate",
     petType: "Amphibians",
+    image: "/assets/guides/tiger-salamander.jpg",
     tagline: "North America's largest land-dwelling salamander and a remarkably personable pet!",
     funFact: "Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.",
     // Rough starting ranges, not verified current pricing — needs a review pass.

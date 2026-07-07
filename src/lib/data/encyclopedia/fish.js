@@ -1,7 +1,7 @@
 export const fishEncyclopedia = [
   {
     id: "betta-fish", name: "Betta Fish", scientific: "Betta splendens",
-    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "betta-fish", available: true,
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "betta-fish", available: true, image: "/assets/guides/betta-fish.jpg",
     bio: {
       overview: "The betta fish, or Siamese fighting fish, is native to the shallow rice paddies, floodplains, and slow-moving waters of Southeast Asia. Males are famous for their flowing fins and vivid colors, developed through centuries of selective breeding, and for their intense aggression toward other male bettas — a trait that led to organized fighting matches in Thailand centuries ago and to their modern common name. In the wild, low-oxygen water pushed bettas to evolve a labyrinth organ that lets them breathe air directly from the surface.",
       origin: "Southeast Asia (Thailand, Cambodia, Vietnam)",
@@ -14,7 +14,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "goldfish", name: "Goldfish", scientific: "Carassius auratus",
-    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true,
+    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true, image: "/assets/guides/goldfish.jpg",
     bio: {
       overview: "The goldfish is one of the earliest domesticated fish, bred in China over a thousand years ago from a wild silver-gray carp relative for its color mutations. Selective breeding over centuries produced dozens of ornamental varieties, from the streamlined common and comet goldfish to elaborately finned fancy types like the oranda and ranchu. Goldfish grow to the size of their environment, and contrary to popular myth, they retain memories for months and can be trained to respond to cues and simple tasks.",
       origin: "China (domesticated from a wild carp relative)",
@@ -27,7 +27,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "koi", name: "Koi", scientific: "Cyprinus rubrofuscus",
-    category: "Fish", emoji: "🎏", difficulty: "Intermediate", guideId: "koi", available: true,
+    category: "Fish", emoji: "🎏", difficulty: "Intermediate", guideId: "koi", available: true, image: "/assets/guides/koi.jpg",
     bio: {
       overview: "Koi are ornamental varieties of the Amur carp, developed in Japan starting in the early 19th century from food carp that displayed unusual color mutations. Breeders selectively refined these mutations into today's dozens of recognized color patterns — kohaku, showa, and sanke among the most prized — which are still judged competitively at shows in Japan. Koi are exceptionally long-lived and develop genuine recognition of individual keepers, often gathering at a pond's edge when a familiar person approaches.",
       origin: "Japan (developed from Amur carp of East Asia)",
@@ -40,7 +40,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "guppy", name: "Guppy", scientific: "Poecilia reticulata",
-    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "guppy", available: true,
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "guppy", available: true, image: "/assets/guides/guppy.jpg",
     bio: {
       overview: "The guppy is a small, prolific livebearing fish native to the streams and rivers of northeastern South America and the Caribbean. Named after naturalist Robert John Lechmere Guppy, who submitted specimens to the British Museum in the 1860s, guppies have since become one of the most widely kept and selectively bred aquarium fish in the world, with countless color and finnage varieties developed by hobbyists. They have also been introduced globally as a natural mosquito-control agent, since they readily eat mosquito larvae.",
       origin: "Northeastern South America and the Caribbean (Venezuela, Trinidad, Guyana, Brazil)",
@@ -53,7 +53,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "angelfish", name: "Angelfish", scientific: "Pterophyllum scalare",
-    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "angelfish", available: true,
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "angelfish", available: true, image: "/assets/guides/angelfish.jpg",
     bio: {
       overview: "The freshwater angelfish is a cichlid native to the slow-moving tributaries and flooded forest of the Amazon Basin. Its tall, laterally compressed body is a natural adaptation for slipping between submerged roots and plant stems, effectively disguising it as a drifting leaf. Angelfish often form long-term monogamous breeding pairs and display cooperative biparental care of their eggs and fry, an unusually elaborate parenting behavior for a fish.",
       origin: "Amazon Basin (Peru, Colombia, Brazil, Guyana)",
@@ -66,7 +66,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Corydoras aeneus",
-    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true,
+    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true, image: "/assets/guides/corydoras-catfish.jpg",
     bio: {
       overview: "Corydoras catfish are small, armored, bottom-dwelling fish native to the rivers and streams of South America. They are obligate shoaling fish, meaning they need the company of their own species to feel secure and behave naturally, and they spend much of the day actively foraging through soft substrate with sensitive barbels around their mouth. A unique adaptation lets them gulp air at the surface and absorb oxygen through their intestine, a backup system for the low-oxygen waters they evolved in.",
       origin: "South America (Amazon Basin and surrounding river systems)",
@@ -79,7 +79,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "neon-tetra", name: "Neon Tetra", scientific: "Paracheirodon innesi",
-    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "neon-tetra", available: true,
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "neon-tetra", available: true, image: "/assets/guides/neon-tetra.jpg",
     bio: {
       overview: "The neon tetra is a small, brightly colored schooling fish native to the clearwater and blackwater streams of the western Amazon Basin. Its iridescent blue stripe is produced by light-reflecting cells called iridophores rather than pigment, and this stripe visibly dims while the fish sleeps at night — a natural nocturnal change. Neon tetras are intensely social and rely on large schools for both natural behavior and reduced individual stress.",
       origin: "Amazon Basin (Peru, Colombia, Brazil)",
@@ -92,7 +92,7 @@ export const fishEncyclopedia = [
   },
   {
     id: "oscar", name: "Oscar", scientific: "Astronotus ocellatus",
-    category: "Fish", emoji: "🐟", difficulty: "Intermediate", guideId: "oscar", available: true,
+    category: "Fish", emoji: "🐟", difficulty: "Intermediate", guideId: "oscar", available: true, image: "/assets/guides/oscar.jpg",
     bio: {
       overview: "The oscar is a large, predatory cichlid native to the Amazon Basin, prized in the aquarium hobby for its intelligence and strong bonds with individual keepers — behavior distinctive enough to have earned it the nickname 'water dog.' Oscars are naturally curious and active diggers, regularly rearranging substrate and decor in their environment. Outside their native range, oscars have also been widely introduced and established as an invasive species in warm-water systems around the world.",
       origin: "Amazon Basin (Peru, Colombia, Brazil)",

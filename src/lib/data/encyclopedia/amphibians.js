@@ -1,7 +1,7 @@
 export const amphibianEncyclopedia = [
   {
     id: "pacman-frog", name: "Pac-Man Frog", scientific: "Ceratophrys ornata",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "pacman-frog", available: true,
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "pacman-frog", available: true, image: "/assets/guides/pacman-frog.jpg",
     bio: {
       overview: "The ornate horned frog — nicknamed the Pac-Man frog for its enormous, round, gaping mouth — is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pac-Man frogs will attempt to consume prey nearly as large as themselves — including other frogs, rodents, and small snakes.",
       origin: "South America (Argentina, Brazil, Uruguay)",
@@ -14,7 +14,7 @@ export const amphibianEncyclopedia = [
   },
   {
     id: "axolotl", name: "Axolotl", scientific: "Ambystoma mexicanum",
-    category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "axolotl", available: true,
+    category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "axolotl", available: true, image: "/assets/guides/axolotl.jpg",
     bio: {
       overview: "The axolotl is a neotenic salamander — a species that retains larval features (gills, aquatic lifestyle) permanently throughout its adult life, never undergoing metamorphosis. Technically it remains a permanently juvenile form. Endemic to the lake complex of Xochimilco near Mexico City, the axolotl is Critically Endangered in the wild with fewer than 1,000 individuals estimated remaining. Millions are kept in captivity for biomedical research (their regenerative abilities are extraordinary) and as pets.",
       origin: "Lake Xochimilco, Mexico City, Mexico",
@@ -27,7 +27,7 @@ export const amphibianEncyclopedia = [
   },
   {
     id: "whites-tree-frog", name: "White's Tree Frog", scientific: "Litoria caerulea",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "whites-tree-frog", available: true,
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "whites-tree-frog", available: true, image: "/assets/guides/whites-tree-frog.jpg",
     bio: {
       overview: "White's tree frog — also called the dumpy tree frog or Australian green tree frog — is a large, robust arboreal frog native to Australia and southern New Guinea. They are one of the most docile frog species, remarkably tolerant of handling compared to most amphibians, and have become the most popular pet frog worldwide. Their characteristic \"dopey\" expression comes from a large, overhanging parotoid gland above the eye. Their skin secretions contain compounds with antimicrobial and antiviral properties.",
       origin: "Northern and eastern Australia; southern New Guinea",
@@ -40,7 +40,7 @@ export const amphibianEncyclopedia = [
   },
   {
     id: "fire-belly-toad", name: "Fire-Bellied Toad", scientific: "Bombina orientalis",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "fire-belly-toad", available: true,
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "fire-belly-toad", available: true, image: "/assets/guides/fire-belly-toad.jpg",
     bio: {
       overview: "The Oriental fire-bellied toad is native to northeastern China, Korea, and the Russian Far East, where it inhabits slow-moving streams and mountain ponds. Its vivid red and orange belly serves as aposematic warning coloration — signaling to predators that it is toxic. When threatened, it arches its back to display this warning coloration (the unken reflex). Fire-bellied toads produce skin secretions toxic enough to irritate mucous membranes and eyes.",
       origin: "Northeastern China, Korea, and Russian Far East",
@@ -53,7 +53,7 @@ export const amphibianEncyclopedia = [
   },
   {
     id: "tiger-salamander", name: "Tiger Salamander", scientific: "Ambystoma tigrinum",
-    category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "tiger-salamander", available: true,
+    category: "Amphibians", emoji: "🦎", difficulty: "Intermediate", guideId: "tiger-salamander", available: true, image: "/assets/guides/tiger-salamander.jpg",
     bio: {
       overview: "The tiger salamander is the largest land-dwelling salamander in North America, found across a vast range from Canada to Mexico. They are burrowing animals that spend most of their lives underground, emerging to breed in temporary and permanent ponds. In some lake environments, individuals remain permanently aquatic and sexually mature without fully metamorphosing — a neotenic phenomenon. Some of these neotenic populations were historically described as entirely separate species before genetic analysis revealed their true relationship.",
       origin: "North America (Canada to Mexico; widespread across the continent)",
