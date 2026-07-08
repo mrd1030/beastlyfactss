@@ -24,7 +24,7 @@ export const RELATED_ARTICLES = {
   'cat-universal': ['cat-hairball-vs-vomiting-guide'],
   'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
   'hamster': ['hamster-vs-guinea-pig-guide'],
-  'guinea-pig': ['hamster-vs-guinea-pig-guide'],
+  'guinea-pig': ['hamster-vs-guinea-pig-guide', 'guinea-pig-scurvy-vitamin-c-guide'],
   'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide'],
   'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide'],
 };

@@ -92,7 +92,11 @@ export default function CategoryPage() {
     );
   }
 
-  const categoryTitle = category?.title || slug;
+  // Sanity's category document doesn't always have a `title` set (confirmed missing
+  // for at least "dogs" and "reptiles" via an SEO crawl showing lowercase page titles) -
+  // title-case the raw slug instead of using it verbatim so this can't happen again.
+  const humanizeSlug = (s) => s.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const categoryTitle = category?.title || humanizeSlug(slug);
   const categoryDescription = category?.description
     || `Browse all ${categoryTitle} articles and care guides on Beastly Facts - expert tips, husbandry advice, and pet care essentials from experienced keepers.`;
   const canonicalUrl = `https://beastlyfacts.com/category/${slug}/`;

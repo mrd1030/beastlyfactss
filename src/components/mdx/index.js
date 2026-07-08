@@ -7,3 +7,4 @@ export { default as AffiliateLink } from './AffiliateLink';
 export { default as ProsCons } from './ProsCons';
 export { default as ComparisonTable } from './ComparisonTable';
 export { default as Sources } from './Sources';
+export { default as VetDisclaimer } from './VetDisclaimer';
