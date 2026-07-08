@@ -35,7 +35,11 @@ for (const dir of CONTENT_DIRS) {
     const slug = fm.slug || file.replace('.mdx', '');
     articles.push({
       slug,
-      title: fm.title || 'Untitled',
+      // Matches Blog.jsx's postTitle precedence (post.seoTitle || post.title) -
+      // otherwise the RSS title can disagree with what the live page's own
+      // <title>/og:title actually say, and different platforms end up
+      // showing two different titles for the same article.
+      title: fm.seoTitle || fm.title || 'Untitled',
       excerpt: fm.excerpt || fm.description || '',
       date: fm.date || fm.lastUpdated || null,
       image: fm.image || null,
