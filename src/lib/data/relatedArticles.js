@@ -23,4 +23,8 @@ export const RELATED_ARTICLES = {
   'dog-german-shepherd': ['dog-bloat-gdv-guide'],
   'cat-universal': ['cat-hairball-vs-vomiting-guide'],
   'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
+  'hamster': ['hamster-vs-guinea-pig-guide'],
+  'guinea-pig': ['hamster-vs-guinea-pig-guide'],
+  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide'],
+  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide'],
 };

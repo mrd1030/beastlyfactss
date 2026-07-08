@@ -222,6 +222,82 @@ GI stasis (slow gut motility) and bloat can be life-threatening. Signs include a
     ],
   },
   {
+    id: "hamster",
+    name: "Hamster",
+    emoji: "🌰",
+    difficulty: "Beginner",
+    petType: "Small Mammals",
+    image: "/assets/guides/hamster.jpg",
+    tagline: "The pouch-stuffing solo escape artist that needs way more space than the pet store box!",
+    funFact: "A hamster's cheek pouches can stretch back past its shoulders when fully packed with food, holding a volume close to the size of the hamster's own body.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "450+ sq in cage (bin, wire, or glass tank)", low: 30, high: 90 },
+        { item: "11-12 in solid exercise wheel", low: 15, high: 30 },
+        { item: "6+ inches of paper-based bedding", low: 20, high: 35 },
+        { item: "Hideout", low: 10, high: 15 },
+        { item: "Food and water dishes", low: 10, high: 15 },
+        { item: "Digital thermometer", low: 10, high: 15 },
+      ],
+      annual: [
+        { item: "Hamster pellets or lab blocks", low: 30, high: 50 },
+        { item: "Fresh vegetables (small amounts)", low: 20, high: 40 },
+        { item: "Bedding replacement", low: 60, high: 100 },
+        { item: "Chew toys and wood blocks", low: 15, high: 25 },
+        { item: "Annual vet wellness check (exotic)", low: 40, high: 80 },
+      ],
+    },
+    sections: {
+      housing: `Hamsters are sold in cages far too small for them almost universally, and fixing that is one of the most important things a new owner can do. The current minimum recommended floor space is 450 square inches (roughly a 30x20 inch footprint), with 600 to 800+ square inches strongly preferred - the small wire cages and plastic habitats sold as "starter kits" in most pet stores fall dramatically short of this and are one of the leading causes of hamster stress and premature death.
+
+Bar spacing matters as much as floor space. Syrian hamsters need bars no wider than 1/2 inch apart (they escape through surprisingly small gaps), and dwarf hamster species need even tighter spacing, around 3/8 inch. Bin cages (modified ventilated storage totes) and glass tanks are popular alternatives to wire specifically because they solve both the space and the escape-gap problem at once, and they hold bedding far better than wire does.
+
+Provide at least 6 inches of loose, dust-free bedding - not the thin layer often shown in pet store displays. Hamsters are natural burrowers that dig extensive tunnel systems in the wild, and a shallow bedding layer denies them one of their most important natural behaviors. Paper-based bedding or aspen shavings work well. Never use cedar or pine shavings, which contain aromatic oils that cause respiratory irritation.
+
+Keep the enclosure in a quiet area away from direct sunlight, drafts, and household noise, at a stable temperature between 65 and 75 degrees F. Hamsters can enter a dangerous cold-induced torpor below 40 to 45 degrees F that's sometimes mistaken for death - warming them gradually and contacting an exotic vet is the correct response, not assuming the worst.`,
+      diet: `A high-quality hamster-specific pellet or lab-block style food should make up the bulk of the diet, offered in small daily amounts (about 1 to 2 tablespoons for a Syrian hamster). Pellet or block-style food is preferable to seed mixes, since hamsters selectively eat the fatty seeds and leave the more nutritionally complete pieces behind - the same selective-eating problem seen in several other small pets.
+
+Fresh vegetables can be offered in small amounts a few times a week: small pieces of broccoli, carrot, cucumber, or leafy greens work well. Fruit should be given rarely and in tiny quantities due to sugar content. Introduce any new food gradually and remove uneaten fresh food within a few hours to prevent spoilage in the cage.
+
+Hamsters are famous for cheek-pouching - stuffing food into expandable cheek pouches to carry and cache it, sometimes visibly doubling the size of their head in the process. This is completely normal hoarding behavior, not overeating, and a hamster whose food seems to "disappear" is usually just storing it somewhere in the bedding, not actually eating everything at once.
+
+Fresh water in a properly positioned sipper bottle or heavy bowl must always be available. Check daily that the sipper tube isn't clogged - a surprisingly common and easily missed cause of dehydration in small rodents.`,
+      enrichment: `A solid-surface exercise wheel is not optional. Wild hamsters travel several miles a night foraging, and a wheel is the primary way a captive hamster replicates that need. The wheel must be large enough that the hamster's back stays flat while running - a common mistake is buying a wheel sized for body length rather than for a straight spine, which causes long-term back problems. For an adult Syrian hamster, 11 to 12 inches in diameter is the current minimum recommendation; dwarf species can use a slightly smaller 8 to 9 inch wheel.
+
+Deep bedding for burrowing, chew toys (untreated wood, cardboard, or hamster-safe chew blocks) to wear down continuously growing teeth, and a variety of tunnels and hideouts round out a well-enriched habitat. Rotating and rearranging enrichment items periodically keeps a naturally curious animal engaged.
+
+Supervised free-roam time in a hamster-proofed, escape-proof space (hamsters squeeze through remarkably small gaps and will chew through most household materials) provides valuable additional exercise and mental stimulation beyond the cage.
+
+Handle gently and consistently once the hamster has settled into a new home, ideally in the evening when hamsters are naturally active - they are crepuscular to nocturnal, and interacting with a sleeping hamster during the day is a common cause of defensive nipping, not aggression.`,
+      health: `Wet tail (proliferative ileitis) is the single most notorious and time-critical hamster illness - a bacterial intestinal infection causing sudden diarrhea, lethargy, and a wet, matted tail area, most common in young hamsters recently brought home and under stress. It can be fatal within 24 to 48 hours without treatment. Any hamster showing diarrhea and lethargy needs an exotic vet the same day, not a wait-and-see approach.
+
+Respiratory infections are common in hamsters kept in drafty conditions or bedded with cedar/pine shavings. Signs include labored breathing, nasal discharge, and lethargy - these need prompt veterinary attention, since a hamster's small size means illness progresses quickly.
+
+Overgrown teeth are a recurring risk since hamster incisors grow continuously throughout life. Adequate chew material usually keeps them worn down naturally; a hamster that is dropping food, drooling, or losing weight despite a normal appetite may have overgrown or misaligned teeth requiring a vet visit for trimming.
+
+Syrian hamsters are strictly solitary - housing two together, even littermates, will eventually result in serious fighting and injury as they reach maturity, regardless of how well they got along as babies. This is one of the most common and preventable mistakes new owners make, often from assuming hamsters are social like guinea pigs or rats. Some dwarf species (Campbell's, Winter White) can sometimes be kept in same-sex pairs from a young age, but this requires careful monitoring and isn't guaranteed to work even then.`,
+      checklist: [
+        "450+ sq in cage (bin, wire with tight bar spacing, or glass tank)",
+        "6+ inches of paper-based or aspen bedding",
+        "11 to 12 inch solid-surface exercise wheel",
+        "Hamster-specific pellets or lab blocks",
+        "Fresh vegetables in small amounts",
+        "Hideout and chew toys",
+        "Food and water dishes or sipper bottle",
+        "Digital thermometer",
+        "Exotic vet experienced with hamsters",
+      ],
+    },
+    faqs: [
+      { q: "Can I keep two hamsters together?", a: "Not if they're Syrian hamsters - Syrians are solitary and must be housed alone as adults; even littermates that got along as babies will eventually fight, sometimes fatally, once they reach maturity around 8 to 12 weeks old. Some dwarf species (Campbell's, Winter White) can occasionally be kept in same-sex pairs introduced young, but it's not guaranteed to work long-term and requires close monitoring, with a backup cage ready in case they need to be separated." },
+      { q: "What is wet tail and how serious is it?", a: "Wet tail is a bacterial intestinal infection causing sudden diarrhea, lethargy, and a wet, matted tail area, most common in young hamsters under stress shortly after coming home. It can be fatal within 24 to 48 hours without treatment, so any hamster showing diarrhea and lethargy needs an exotic vet the same day rather than a wait-and-see approach." },
+      { q: "How big of a cage does a hamster actually need?", a: "At least 450 square inches of unbroken floor space, with 600 to 800+ square inches strongly preferred - dramatically more than the small starter cages sold in most pet stores. Bin cages (modified ventilated storage totes) and large glass tanks are popular precisely because they hit this size requirement more affordably than most commercial wire cages." },
+      { q: "Why does my hamster stuff its cheeks so much?", a: "Cheek-pouching is completely normal hoarding behavior, not overeating. Wild hamsters cache food in burrows for later, and pet hamsters keep the same instinct, sometimes carrying so much food their head visibly doubles in size. A hamster whose food seems to disappear is usually just stashing it in the bedding somewhere, not eating everything at once." },
+      { q: "How long do hamsters live?", a: "Syrian hamsters typically live 2 to 3 years, and dwarf species (Campbell's, Winter White, Roborovski) often live a similar or slightly shorter 1.5 to 3 years. This is a notably short lifespan compared to most small pets, which is worth knowing upfront - a hamster is a real commitment for its size, just a shorter one than a rabbit or guinea pig." },
+    ],
+  },
+  {
     id: "hedgehog",
     name: "Hedgehog",
     emoji: "🦔",

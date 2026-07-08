@@ -13,6 +13,7 @@ import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
+import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 
 const sectionMeta = [
   { key: 'housing',    icon: '🏠', label: 'Housing & Setup' },
@@ -530,6 +531,13 @@ export default function GuideDetail() {
                 </Link>
               </div>
             )}
+
+            {/* Newsletter signup */}
+            <div className="bg-card border border-border rounded-2xl p-5">
+              <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
+              <p className="text-xs text-muted-foreground font-body mb-4">New care guides straight to your inbox. No spam. 🐾</p>
+              <BeehiivSubscribe />
+            </div>
 
             {/* Related deep-dive articles */}
             {relatedArticles.length > 0 && (
