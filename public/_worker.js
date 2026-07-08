@@ -1,6 +1,8 @@
+const POSTS_PER_DAY = 2; // bump this (e.g. 3, 4) for more posts/day - one new fact becomes visible per slot
 const DAY_MS = 86400000;
+const SLOT_MS = DAY_MS / POSTS_PER_DAY;
 const EPOCH = Date.UTC(2026, 0, 1);
-const WINDOW = 14;
+const WINDOW = 14 * POSTS_PER_DAY; // ~14 days of backlog regardless of cadence, so a slow Publer poll never misses one
 const FALLBACK_IMAGE = 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
 // Only exact, confirmed species matches - add more as real photos get sourced.
@@ -132,15 +134,15 @@ export default {
     const factsRes = await fetch(new URL('/facts.json', request.url));
     const { facts } = await factsRes.json();
 
-    const dayIndex = Math.floor((Date.now() - EPOCH) / DAY_MS);
+    const slotIndex = Math.floor((Date.now() - EPOCH) / SLOT_MS);
 
     const items = [];
     for (let i = 0; i < WINDOW; i++) {
-      const day = dayIndex - i;
-      const idx = ((day % facts.length) + facts.length) % facts.length;
+      const slot = slotIndex - i;
+      const idx = ((slot % facts.length) + facts.length) % facts.length;
       const fact = facts[idx];
-      const pubDate = new Date(EPOCH + day * DAY_MS);
-      items.push({ fact, pubDate, guid: `beastlyfacts-day-${day}-fact-${fact.id}` });
+      const pubDate = new Date(EPOCH + slot * SLOT_MS);
+      items.push({ fact, pubDate, guid: `beastlyfacts-slot-${slot}-fact-${fact.id}` });
     }
 
     const itemsXml = items
