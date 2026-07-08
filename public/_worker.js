@@ -226,7 +226,7 @@ async function buildArticlesFeed(request) {
         : FALLBACK_IMAGE;
       return `
     <item>
-      <title>${cdata(title)}</title>
+      <title>${cdata(excerpt ? `${title}. ${excerpt}` : title)}</title>
       <link>${link}</link>
       <guid isPermaLink="false">beastlyfacts-post-${slug}</guid>
       <pubDate>${new Date(date).toUTCString()}</pubDate>
