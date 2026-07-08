@@ -33,6 +33,38 @@
 /blog/category/site-news /blog/welcome-to-beastlyfacts/ 301
 /blog/category/site-news/ /blog/welcome-to-beastlyfacts/ 301
 
+# /category/X/ was a second, narrower "category hub" page (Sanity posts only) that
+# duplicated a subset of what /blog/category/X/ already shows (Sanity + MDX + local
+# posts combined) - retired in favor of the one full listing.
+/category/amphibians /blog/category/amphibians/ 301
+/category/amphibians/ /blog/category/amphibians/ 301
+/category/aquatic-life /blog/category/aquatic-life/ 301
+/category/aquatic-life/ /blog/category/aquatic-life/ 301
+/category/birds /blog/category/birds/ 301
+/category/birds/ /blog/category/birds/ 301
+/category/cats /blog/category/cats/ 301
+/category/cats/ /blog/category/cats/ 301
+/category/dogs /blog/category/dogs/ 301
+/category/dogs/ /blog/category/dogs/ 301
+/category/fun-facts /blog/category/fun-facts/ 301
+/category/fun-facts/ /blog/category/fun-facts/ 301
+/category/invertebrates /blog/category/invertebrates/ 301
+/category/invertebrates/ /blog/category/invertebrates/ 301
+/category/pet-care /blog/category/pet-care/ 301
+/category/pet-care/ /blog/category/pet-care/ 301
+/category/product-picks /blog/category/product-picks/ 301
+/category/product-picks/ /blog/category/product-picks/ 301
+/category/reptiles /blog/category/reptiles/ 301
+/category/reptiles/ /blog/category/reptiles/ 301
+/category/small-and-exotic-pets /blog/category/small-and-exotic-pets/ 301
+/category/small-and-exotic-pets/ /blog/category/small-and-exotic-pets/ 301
+/category/wild-animals /blog/category/wild-animals/ 301
+/category/wild-animals/ /blog/category/wild-animals/ 301
+/category/short-story /chronicles/dex/ 301
+/category/short-story/ /chronicles/dex/ 301
+/category/short-stories /chronicles/dex/ 301
+/category/short-stories/ /chronicles/dex/ 301
+
 # Chronicles short stories moved out of the blog to their own section:
 # /chronicles/<series>/ is the landing list, /chronicles/<series>/<part>/ reads.
 /blog/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away /chronicles/dex/1/ 301

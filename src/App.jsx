@@ -30,7 +30,6 @@ const DonateCancel = lazy(() => import('@/pages/DonateCancel'));
 const Terms = lazy(() => import('@/pages/Terms'));
 const Privacy = lazy(() => import('@/pages/Privacy'));
 const Categories = lazy(() => import('@/pages/Categories'));
-const CategoryPage = lazy(() => import('@/pages/CategoryPage'));
 const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
@@ -106,7 +105,6 @@ const AuthenticatedApp = () => {
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/categories" element={<Categories />} />
-            <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/search" element={<Search />} />
             <Route path="/glossary" element={<Glossary />} />
           </Route>

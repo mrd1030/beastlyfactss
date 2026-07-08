@@ -9,7 +9,7 @@ const CATEGORIES_QUERY = groq`*[_type == "category"] | order(title asc) {
 let cached = null;
 
 // One Sanity round-trip for the category list, shared by the Navbar and any
-// page that needs it (Blog, Search, CategoryPage). Consumers filter to
+// page that needs it (Blog, Search). Consumers filter to
 // `count > 0` where they only want non-empty categories. A failed fetch
 // clears the cache so the next caller retries instead of inheriting the error.
 export function fetchCategories() {

@@ -73,7 +73,7 @@ export default function Categories() {
               transition={{ delay: i * 0.04 }}
               whileHover={{ y: -3 }}
             >
-              <Link to={`/category/${cat.slug}/`}>
+              <Link to={cat.slug === 'short-stories' ? '/chronicles/dex/' : `/blog/category/${cat.slug}/`}>
                 <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
                   <div className="flex items-start justify-between mb-3">
                     <span className="text-3xl">{cat.emoji}</span>
