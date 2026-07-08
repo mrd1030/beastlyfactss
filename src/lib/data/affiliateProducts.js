@@ -220,7 +220,7 @@ export const AFFILIATE_PRODUCTS = [
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://amzn.to/4wa4x65",
-    image: null,
+    image: "/assets/images/affiliate/product-25.jpg", // same reference photo used for all 3 sizes, per user
     covers: ["Small crate + bed"],
   },
   {
@@ -229,7 +229,7 @@ export const AFFILIATE_PRODUCTS = [
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://amzn.to/4bynMO7", // also stands in for "Properly sized crate" (universal guide) as a reasonable default
-    image: null,
+    image: "/assets/images/affiliate/product-25.jpg",
     covers: ["Crate or dog bed (full-stretch size)", "Medium crate + bed", "Small/medium crate + bed", "Properly sized crate"],
   },
   {
@@ -342,12 +342,14 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "durable-chew-toys",
-    product: "Durable chew toys",
+    product: "Durable chew toys (KONG, dogs only)",
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://amzn.to/4wqKLCQ",
     image: "/assets/images/affiliate/product-37.jpg",
-    covers: ["Chew toys", "Durable chew toys (powerful chewers)"],
+    // "Chew toys" (rabbit/guinea pig/chinchilla) deliberately NOT covered here - a KONG-style
+    // dog chew is the wrong size/material for small mammals. Needs its own small-pet-safe link.
+    covers: ["Durable chew toys (powerful chewers)"],
   },
   {
     slug: "leash-harness-set",
@@ -407,12 +409,21 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "canister-filter",
-    product: "Canister filter",
+    product: "Canister filter (Fluval 107, up to 30 gal)",
     category: "Aquarium Equipment",
     retailer: "amazon",
-    link: "https://amzn.to/4eQAk5K", // rated up to 30 gal - fine for goldfish/oscar tanks, undersized for a 100+ gal turtle setup
+    link: "https://amzn.to/4eQAk5K",
     image: "/assets/images/affiliate/product-44.jpg",
-    covers: ["Canister filter (strong filtration)", "Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)"],
+    covers: ["Canister filter (strong filtration)"],
+  },
+  {
+    slug: "canister-filter-large",
+    product: "Canister filter (Fluval 407, up to 100 gal)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://amzn.to/4vNGY2v",
+    image: "/assets/images/affiliate/product-61.jpg",
+    covers: ["Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)"],
   },
   {
     slug: "tank-10-gallon",
@@ -555,12 +566,21 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "chinchilla-dust-bath-house",
-    product: "Chinchilla dust bath house + dust",
+    product: "Chinchilla dust bath house",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://amzn.to/4w2STJO",
     image: "/assets/images/affiliate/product-60.jpg",
-    covers: ["Dust bath house + chinchilla dust", "Chinchilla dust (ongoing)"],
+    covers: ["Dust bath house + chinchilla dust"],
+  },
+  {
+    slug: "chinchilla-dust",
+    product: "Chinchilla dust (Oxbow Poof)",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://amzn.to/4vgxhss",
+    image: "/assets/images/affiliate/product-62.jpg",
+    covers: ["Chinchilla dust (ongoing)"],
   },
 ];
 
