@@ -253,13 +253,25 @@ export const IMAGE_DIMENSIONS = {
     "width": 784,
     "height": 1168
   },
+  "/assets/images/ball-python-vs-corn-snake.jpg": {
+    "width": 1248,
+    "height": 832
+  },
   "/assets/images/bearded-dragon-vs-leopard-gecko.jpg": {
+    "width": 1600,
+    "height": 1067
+  },
+  "/assets/images/betta-fish-vs-goldfish.jpg": {
     "width": 1600,
     "height": 1067
   },
   "/assets/images/betta-fish-water-parameters.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/budgie-vs-cockatiel.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/bioactive-bearded-dragon.jpg": {
     "width": 1168,
@@ -360,6 +372,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/invertebrate-molting.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/leopard-gecko-vs-crested-gecko.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/leopard-gecko-temperature.jpg": {
     "width": 784,
