@@ -163,7 +163,7 @@ async function buildFactsFeed(request) {
     .map(
       ({ fact, pubDate, guid }) => `
     <item>
-      <title>${cdata(`${fact.animal}: ${fact.title}`)}</title>
+      <title>${cdata(`${fact.emoji} ${fact.animal}: ${fact.title}. ${fact.fact}`)}</title>
       <link>https://beastlyfacts.com/facts/</link>
       <guid isPermaLink="false">${guid}</guid>
       <pubDate>${pubDate.toUTCString()}</pubDate>
