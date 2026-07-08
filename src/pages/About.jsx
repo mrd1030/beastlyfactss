@@ -52,15 +52,16 @@ export default function About() {
         >
           <h2 className="font-display font-bold text-xl text-foreground mb-3">What is BeastlyFacts? 🐾</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
-            BeastlyFacts is a fun, informative hub built for anyone who has ever fallen head-over-paws for an animal.
-            Whether you're a reptile keeper who obsesses over thermostat gradients, a new dog owner Googling why your
-            pup eats grass, or just someone who finds animal trivia endlessly fascinating - this is your place.
+            BeastlyFacts is where I put everything I have learned from keeping reptiles and other pets, plus
+            a lot of animal trivia I just genuinely find interesting. If you have ever stayed up late reading
+            about thermostat gradients for a bearded dragon, or Googled why your dog is eating grass again, you
+            already get why this site exists.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
-            The site is packed with hundreds of animal facts, in-depth care guides for reptiles and exotic pets,
-            a growing encyclopedia of species profiles, a personality quiz that matches you to your spirit animal,
-            and a regularly updated blog called the Critter Digest covering everything from UVB lighting to ball python
-            feeding schedules. New content drops regularly, so there's always something fresh to discover.
+            There are hundreds of animal facts here, in-depth care guides for reptiles and exotic pets, a growing
+            encyclopedia of species profiles, a personality quiz that matches you to your spirit animal, and a
+            blog I call the Critter Digest covering everything from UVB lighting to ball python feeding schedules.
+            I add new stuff whenever I finish researching it properly, not on some fixed schedule.
           </p>
         </motion.section>
 
@@ -72,14 +73,15 @@ export default function About() {
         >
           <h2 className="font-display font-bold text-xl text-foreground mb-3">Who is BeastlyFacts for? 🏡</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
-            This site is for pet parents, families, kids, and curious minds of all ages. If you share your home with
-            a bearded dragon, a ball python, a crested gecko, a cat, a dog, or a tank full of fish - there's
-            something here for you. It's also great for people who don't (yet!) own pets but love learning cool,
-            surprising facts about the animal kingdom.
+            Honestly, anyone who shares their home with an animal and wants to do right by it. I write for bearded
+            dragon owners, ball python keepers, crested gecko people, cat and dog owners, and anyone with a tank
+            full of fish. It's also for people who don't own pets yet but like learning weird, surprising facts
+            about the animal kingdom.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
-            The care guides are written to be genuinely useful for beginners and intermediate keepers alike - no gatekeeping, no overwhelming jargon. Just clear, evidence-based information that helps animals
-            thrive and their owners feel confident.
+            I try to write the care guides so a beginner can actually use them, without talking down to anyone who
+            already knows the basics. No jargon for the sake of sounding smart, just information that helps you and
+            your animal.
           </p>
         </motion.section>
 
@@ -91,15 +93,14 @@ export default function About() {
         >
           <h2 className="font-display font-bold text-xl text-foreground mb-3">Who built this? 👋</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
-            BeastlyFacts is built and maintained by one person who genuinely loves learning about animals and
-            sharing that knowledge with fellow enthusiasts. No big editorial team, no corporate backing - just a
-            passionate individual who started keeping reptiles, fell deep into the rabbit hole of animal biology and
-            behaviour, and decided to turn that obsession into something useful and fun for everyone.
+            It's just me. My name is Mike, and I built and maintain this whole site myself. No editorial team, no
+            corporate backing - just someone who started keeping reptiles, got a little obsessed with animal biology
+            and behavior, and decided to turn that into something useful.
           </p>
           <p className="font-body text-sm text-muted-foreground leading-relaxed mt-3">
-            Every fact is researched, every care guide is written with real animals in mind, and the whole site
-            is designed to feel like getting advice from a knowledgeable friend rather than reading a dry textbook.
-            If you've got questions, feedback, or just want to share a cool animal fact - reach out via the{' '}
+            I research every fact and every care guide myself, combining real science with what I've actually
+            learned from keeping my own animals (my bearded dragon Dexter has taught me more than any book has).
+            If you've got questions, feedback, or a cool animal fact to share, reach out via the{' '}
             <Link to="/contact/" className="text-secondary font-semibold hover:underline">Contact page</Link>.
           </p>
         </motion.section>

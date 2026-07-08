@@ -17,4 +17,10 @@ export const RELATED_ARTICLES = {
   'rabbit': ['rabbit-gi-stasis-guide'],
   'ball-python': ['snake-brumation-guide'],
   'corn-snake': ['snake-brumation-guide'],
+  'dog-universal': ['dog-bloat-gdv-guide'],
+  'dog-large-breed': ['dog-bloat-gdv-guide'],
+  'dog-labrador': ['dog-bloat-gdv-guide'],
+  'dog-german-shepherd': ['dog-bloat-gdv-guide'],
+  'cat-universal': ['cat-hairball-vs-vomiting-guide'],
+  'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
 };

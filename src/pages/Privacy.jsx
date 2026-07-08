@@ -28,7 +28,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Padlock">🔒</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: June 29, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: July 7, 2026</p>
           </motion.div>
         </div>
       </div>

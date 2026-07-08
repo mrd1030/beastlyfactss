@@ -3,14 +3,25 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ShoppingCart, ChevronRight } from 'lucide-react';
-import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER } from '@/lib/data/affiliateProducts';
+import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, RETAILERS } from '@/lib/data/affiliateProducts';
 import { truncateDescription } from '@/lib/utils/truncate';
 
 const DESCRIPTION = truncateDescription(
-  `The exact heating, lighting, water quality, and substrate products we recommend across our reptile and amphibian care guides - real products, one shoppable list.`
+  `The exact products we recommend across our care guides - heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies - real products, one shoppable list.`
 );
 
+// Built from whichever retailers actually have products listed below, so the disclosure
+// never over- or under-claims a partnership - it just updates itself as products are added.
+function disclosureText() {
+  const used = [...new Set(AFFILIATE_PRODUCTS.map(p => p.retailer))].map(r => RETAILERS[r]?.programName || r);
+  const programs = used.length > 1
+    ? `${used.slice(0, -1).join(', ')} and ${used[used.length - 1]}`
+    : (used[0] || 'Amazon Associate');
+  return `As an ${programs}, we earn from qualifying purchases through the links above - at no extra cost to you. We only list products we'd actually recommend to our own pets' keepers.`;
+}
+
 function ProductCard({ product }) {
+  const retailerLabel = RETAILERS[product.retailer]?.label || 'Amazon';
   return (
     <a
       href={product.link}
@@ -32,7 +43,7 @@ function ProductCard({ product }) {
         </p>
         <div className="mt-auto pt-2 flex items-center gap-1 text-xs font-display font-semibold text-secondary">
           <ShoppingCart className="w-3.5 h-3.5 flex-shrink-0" />
-          Shop on Amazon
+          Shop on {retailerLabel}
         </div>
       </div>
     </a>
@@ -73,9 +84,12 @@ export default function Gear() {
               Recommended Gear
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              The exact products referenced in our care guides' Cost Builders - currently covering heating,
-              lighting, water quality, and substrate for reptile and amphibian setups. We're working through
-              dog, cat, bird, fish, and small-mammal gear next.
+              The exact products referenced in our care guides' Cost Builders - reptile and amphibian
+              heating, lighting, and substrate, plus enclosures, aquarium gear, and dog, cat, and
+              small-mammal supplies.
+            </p>
+            <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3 max-w-xl">
+              {disclosureText()}
             </p>
           </motion.div>
         </div>
@@ -95,8 +109,7 @@ export default function Gear() {
 
         <div className="mt-10 pt-6 border-t border-border">
           <p className="text-[11px] text-muted-foreground/70 font-body italic mb-4">
-            As an Amazon Associate, we earn from qualifying purchases through the links above - at no extra
-            cost to you. We only list products we'd actually recommend to our own pets' keepers.
+            {disclosureText()}
           </p>
           <Link
             to="/guides/"

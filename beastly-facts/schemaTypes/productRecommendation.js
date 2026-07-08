@@ -3,7 +3,7 @@ import { defineType, defineField } from 'sanity'
 
 export default defineType({
   name: 'productRecommendation',
-  title: 'Amazon Product Recommendation',
+  title: 'Product Recommendation',
   type: 'object',
   fields: [
     defineField({
@@ -14,7 +14,7 @@ export default defineType({
     }),
     defineField({
       name: 'asin',
-      title: 'Amazon ASIN',
+      title: 'Amazon ASIN (leave blank for non-Amazon retailers - use Full Affiliate URL below instead)',
       type: 'string',
     }),
     defineField({

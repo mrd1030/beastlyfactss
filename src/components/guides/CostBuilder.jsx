@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import { Calculator, ShoppingCart } from 'lucide-react';
-import { getAffiliateForItem } from '@/lib/data/affiliateProducts';
+import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
+
+// Joins retailer labels naturally: "Amazon", "Amazon and Chewy", "Amazon, Chewy and Impact".
+function joinLabels(labels) {
+  if (labels.length <= 1) return labels[0] || '';
+  return `${labels.slice(0, -1).join(', ')} and ${labels[labels.length - 1]}`;
+}
 
 function formatRange(r) {
   return r.low === r.high ? `$${r.low}` : `$${r.low}-$${r.high}`;
@@ -20,6 +26,8 @@ function ItemLabel({ text, textClassName }) {
     return <span className={textClassName}>{text}</span>;
   }
 
+  const retailerLabel = RETAILERS[product.retailer]?.label || 'Amazon';
+
   return (
     <span className="relative inline-flex items-center gap-1 group/aff min-w-0">
       <a
@@ -27,7 +35,7 @@ function ItemLabel({ text, textClassName }) {
         target="_blank"
         rel="noopener noreferrer sponsored"
         onClick={(e) => e.stopPropagation()}
-        title="Paid link - opens the product on Amazon"
+        title={`Paid link - opens the product on ${retailerLabel}`}
         className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
       >
         {text}
@@ -87,9 +95,11 @@ export default function CostBuilder({ guide }) {
 
   const setupTotal = sumRange(costs.setup, checkedSetup);
   const annualTotal = sumRange(costs.annual, checkedAnnual);
-  const hasAffiliateLinks = [...(costs.setup || []), ...(costs.annual || [])].some(
-    (i) => getAffiliateForItem(i.item)
-  );
+  const matchedProducts = [...(costs.setup || []), ...(costs.annual || [])]
+    .map((i) => getAffiliateForItem(i.item))
+    .filter(Boolean);
+  const hasAffiliateLinks = matchedProducts.length > 0;
+  const retailerLabels = joinLabels([...new Set(matchedProducts.map((p) => RETAILERS[p.retailer]?.label || 'Amazon'))]);
 
   const toggleSetup = (i) => setCheckedSetup(prev => prev.map((v, idx) => (idx === i ? !v : v)));
   const toggleAnnual = (i) => setCheckedAnnual(prev => prev.map((v, idx) => (idx === i ? !v : v)));
@@ -118,7 +128,7 @@ export default function CostBuilder({ guide }) {
       </div>
       <p className="text-[10px] text-muted-foreground/70 font-body mt-3 italic">
         Rough estimates to help you plan - actual prices vary by region and retailer.
-        {hasAffiliateLinks && ' Underlined items are paid Amazon links - we may earn a commission at no extra cost to you.'}
+        {hasAffiliateLinks && ` Underlined items are paid ${retailerLabels} links - we may earn a commission at no extra cost to you.`}
       </p>
     </div>
   );
