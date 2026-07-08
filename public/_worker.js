@@ -5,6 +5,10 @@ const EPOCH = Date.UTC(2026, 0, 1);
 const WINDOW = 14 * POSTS_PER_DAY; // ~14 days of backlog regardless of cadence, so a slow Publer poll never misses one
 const FALLBACK_IMAGE = 'https://beastlyfacts.com/assets/hero-1200.jpg';
 
+const SANITY_PROJECT = '7nqbs1gk';
+const SANITY_DATASET = 'production';
+const ARTICLES_WINDOW = 40; // most recent posts across MDX + Sanity combined
+
 // Only exact, confirmed species matches - add more as real photos get sourced.
 // Anything not listed here falls back to the branded hero image.
 const ANIMAL_IMAGES = {
@@ -129,25 +133,35 @@ function cdata(value) {
   return `<![CDATA[${String(value).replace(/]]>/g, ']]]]><![CDATA[>')}]]>`;
 }
 
-export default {
-  async fetch(request) {
-    const factsRes = await fetch(new URL('/facts.json', request.url));
-    const { facts } = await factsRes.json();
+function rssDocument(title, link, description, itemsXml) {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>${title}</title>
+    <link>${link}</link>
+    <description>${description}</description>${itemsXml}
+  </channel>
+</rss>`;
+}
 
-    const slotIndex = Math.floor((Date.now() - EPOCH) / SLOT_MS);
+async function buildFactsFeed(request) {
+  const factsRes = await fetch(new URL('/facts.json', request.url));
+  const { facts } = await factsRes.json();
 
-    const items = [];
-    for (let i = 0; i < WINDOW; i++) {
-      const slot = slotIndex - i;
-      const idx = ((slot % facts.length) + facts.length) % facts.length;
-      const fact = facts[idx];
-      const pubDate = new Date(EPOCH + slot * SLOT_MS);
-      items.push({ fact, pubDate, guid: `beastlyfacts-slot-${slot}-fact-${fact.id}` });
-    }
+  const slotIndex = Math.floor((Date.now() - EPOCH) / SLOT_MS);
 
-    const itemsXml = items
-      .map(
-        ({ fact, pubDate, guid }) => `
+  const items = [];
+  for (let i = 0; i < WINDOW; i++) {
+    const slot = slotIndex - i;
+    const idx = ((slot % facts.length) + facts.length) % facts.length;
+    const fact = facts[idx];
+    const pubDate = new Date(EPOCH + slot * SLOT_MS);
+    items.push({ fact, pubDate, guid: `beastlyfacts-slot-${slot}-fact-${fact.id}` });
+  }
+
+  const itemsXml = items
+    .map(
+      ({ fact, pubDate, guid }) => `
     <item>
       <title>${cdata(`${fact.animal}: ${fact.title}`)}</title>
       <link>https://beastlyfacts.com/facts/</link>
@@ -156,17 +170,86 @@ export default {
       <description>${cdata(`${fact.emoji} ${fact.fact}`)}</description>
       <enclosure url="${imageFor(fact.animal)}" type="image/jpeg" length="0" />
     </item>`
-      )
-      .join('');
+    )
+    .join('');
 
-    const rss = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-  <channel>
-    <title>BeastlyFacts - Daily Animal Fact</title>
-    <link>https://beastlyfacts.com/facts/</link>
-    <description>A new wild animal fact, every day.</description>${itemsXml}
-  </channel>
-</rss>`;
+  return rssDocument(
+    'BeastlyFacts - Daily Animal Fact',
+    'https://beastlyfacts.com/facts/',
+    'A new wild animal fact, every day.',
+    itemsXml
+  );
+}
+
+// Chronicles live at /chronicles/<id>/<part>/, not /blog/<slug>/ - excluded by
+// slug prefix, same convention as prerender.mjs/generate-sitemap.js.
+const SANITY_ARTICLES_QUERY = `*[_type == "post" && defined(slug.current) && !(slug.current match "chronicles-of-*")] | order(publishedAt desc) [0...${ARTICLES_WINDOW}]{
+  "slug": slug.current,
+  title,
+  seoTitle,
+  "excerpt": coalesce(seoDescription, excerpt),
+  publishedAt,
+  "image": coalesce(seoImage.asset->url, mainImage.asset->url)
+}`;
+
+async function fetchSanityArticles() {
+  try {
+    const url = `https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${encodeURIComponent(SANITY_ARTICLES_QUERY)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return (data.result || []).map(p => ({
+      slug: p.slug,
+      title: p.seoTitle || p.title,
+      excerpt: p.excerpt || '',
+      date: p.publishedAt,
+      image: p.image || null,
+    }));
+  } catch {
+    return []; // Sanity hiccup shouldn't take down the MDX half of the feed
+  }
+}
+
+async function buildArticlesFeed(request) {
+  const mdxRes = await fetch(new URL('/articles.json', request.url));
+  const { articles: mdxArticles } = await mdxRes.json();
+  const sanityArticles = await fetchSanityArticles();
+
+  const merged = [...mdxArticles, ...sanityArticles]
+    .filter(a => a.date)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, ARTICLES_WINDOW);
+
+  const itemsXml = merged
+    .map(({ slug, title, excerpt, date, image }) => {
+      const link = `https://beastlyfacts.com/blog/${slug}/`;
+      const imageUrl = image
+        ? (image.startsWith('http') ? image : `https://beastlyfacts.com${image}`)
+        : FALLBACK_IMAGE;
+      return `
+    <item>
+      <title>${cdata(title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="false">beastlyfacts-post-${slug}</guid>
+      <pubDate>${new Date(date).toUTCString()}</pubDate>
+      <description>${cdata(excerpt)}</description>
+      <enclosure url="${imageUrl}" type="image/jpeg" length="0" />
+    </item>`;
+    })
+    .join('');
+
+  return rssDocument(
+    'BeastlyFacts - Latest Articles',
+    'https://beastlyfacts.com/blog/',
+    'New care guides, fun facts articles, and blog posts from BeastlyFacts.',
+    itemsXml
+  );
+}
+
+export default {
+  async fetch(request) {
+    const { pathname } = new URL(request.url);
+    const rss =
+      pathname === '/articles.xml' ? await buildArticlesFeed(request) : await buildFactsFeed(request);
 
     return new Response(rss, {
       headers: { 'content-type': 'application/rss+xml; charset=utf-8' },
