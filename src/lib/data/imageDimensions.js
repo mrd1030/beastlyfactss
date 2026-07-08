@@ -117,6 +117,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1248,
     "height": 832
   },
+  "/assets/guides/hamster.jpg": {
+    "width": 1600,
+    "height": 1067
+  },
   "/assets/guides/guinea-pig.jpg": {
     "width": 1168,
     "height": 784
@@ -249,6 +253,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 784,
     "height": 1168
   },
+  "/assets/images/bearded-dragon-vs-leopard-gecko.jpg": {
+    "width": 1600,
+    "height": 1067
+  },
   "/assets/images/betta-fish-water-parameters.jpg": {
     "width": 1620,
     "height": 1080
@@ -340,6 +348,14 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/goldfish-tank-size.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/guinea-pig-scurvy.jpg": {
+    "width": 1600,
+    "height": 1067
+  },
+  "/assets/images/hamster-vs-guinea-pig.jpg": {
+    "width": 1600,
+    "height": 1067
   },
   "/assets/images/invertebrate-molting.jpg": {
     "width": 1620,

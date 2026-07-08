@@ -582,6 +582,15 @@ export const AFFILIATE_PRODUCTS = [
     image: "/assets/images/affiliate/product-62.jpg",
     covers: ["Chinchilla dust (ongoing)"],
   },
+  {
+    slug: "guinea-pig-vitamin-c-supplement",
+    product: "Vitamin C supplement (Oxbow Natural Science)",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://amzn.to/44CDAMd",
+    image: "/assets/images/affiliate/product-63.jpg",
+    covers: ["Vitamin C supplement (if needed)"],
+  },
 ];
 
 // Display order for category sections on the standalone gear page.

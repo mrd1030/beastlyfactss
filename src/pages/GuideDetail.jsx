@@ -314,9 +314,15 @@ export default function GuideDetail() {
   const ogImageDims = (guide.image && IMAGE_DIMENSIONS[guide.image]) || { width: 1200, height: 630 };
 
   const guideTitle = `${guide.name} Care Guide | Beastly Facts`;
-  const guideDescription = truncateDescription(guide.tagline
-    ? `${guide.tagline} Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`
-    : `Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
+  // The "for {name}" suffix must never get clipped by truncation, so trim the
+  // variable tagline to fit the remaining budget instead of truncating the
+  // whole concatenated string (which was cutting off the animal's name).
+  const guideDescription = guide.tagline
+    ? (() => {
+        const suffix = ` Full care guide covering housing, diet, enrichment, and health for ${guide.name}.`;
+        return `${truncateDescription(guide.tagline, 155 - suffix.length)}${suffix}`;
+      })()
+    : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`);
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
   const breadcrumbSchema = {
@@ -352,6 +358,7 @@ export default function GuideDetail() {
           "@type": "Article",
           "headline": guideTitle,
           "description": guideDescription,
+          "image": ogImage,
           "url": canonicalUrl,
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },

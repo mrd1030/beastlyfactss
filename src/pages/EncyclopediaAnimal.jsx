@@ -99,6 +99,7 @@ export default function EncyclopediaAnimal() {
           "@type": "Article",
           "headline": pageTitle,
           "description": pageDescription,
+          "image": ogImage,
           "url": canonicalUrl,
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },

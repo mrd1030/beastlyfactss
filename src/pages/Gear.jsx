@@ -7,7 +7,7 @@ import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, RETAILERS } from '@/lib/data/a
 import { truncateDescription } from '@/lib/utils/truncate';
 
 const DESCRIPTION = truncateDescription(
-  `The exact products we recommend across our care guides - heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies - real products, one shoppable list.`
+  `The exact products we recommend across our care guides: heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies.`
 );
 
 // Built from whichever retailers actually have products listed below, so the disclosure

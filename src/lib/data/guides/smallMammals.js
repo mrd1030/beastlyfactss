@@ -167,6 +167,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
         { item: "Grass hay (unlimited)", low: 120, high: 200 },
         { item: "Guinea pig pellets", low: 40, high: 70 },
         { item: "Fresh vegetables (especially bell peppers)", low: 150, high: 250 },
+        { item: "Vitamin C supplement (if needed)", low: 8, high: 15 },
         { item: "Bedding", low: 60, high: 100 },
         { item: "Annual vet wellness check", low: 50, high: 90 },
       ],

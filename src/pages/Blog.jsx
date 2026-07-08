@@ -255,7 +255,7 @@ export default function Blog() {
     ? `${catTitle} Articles | Beastly Facts`
     : 'The Critter Digest | Reptile & Exotic Pet Care Blog | Beastly Facts';
   const blogDescription = catTitle
-    ? `Browse all ${catTitle} articles on Beastly Facts - reptile care guides, exotic pet tips, and animal husbandry deep-dives from The Critter Digest.`
+    ? `Browse all ${catTitle} articles on Beastly Facts - care guides, pet tips, and animal husbandry deep-dives from The Critter Digest.`
     : 'Read the Critter Digest - in-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips from Beastly Facts. New articles every week.';
   const blogCanonical = catSlug
     ? `https://beastlyfacts.com/blog/category/${catSlug}/`

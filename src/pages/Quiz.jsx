@@ -424,7 +424,7 @@ const TAB_META = {
     canonical: 'https://beastlyfacts.com/quiz/trivia/',
   },
   knowledge: {
-    title: 'Beastly Facts Challenge | Animal Knowledge Quiz',
+    title: 'Animal Knowledge Quiz | Beastly Facts',
     description: 'Challenge yourself with multiple-choice animal questions, instant explanations, and a score. A quick, fun way to learn something new about the animal world.',
     canonical: 'https://beastlyfacts.com/quiz/knowledge/',
   },

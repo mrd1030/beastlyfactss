@@ -117,7 +117,7 @@ export default function CategoryPage() {
         <title>{categoryTitle} Articles & Care Guides | Beastly Facts</title>
         <meta name="description" content={categoryDescription} />
         <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:title" content={`${categoryTitle} Articles | Beastly Facts`} />
+        <meta property="og:title" content={`${categoryTitle} Articles & Care Guides | Beastly Facts`} />
         <meta property="og:description" content={categoryDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
@@ -126,7 +126,7 @@ export default function CategoryPage() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`${categoryTitle} articles and care guides - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${categoryTitle} Articles | Beastly Facts`} />
+        <meta name="twitter:title" content={`${categoryTitle} Articles & Care Guides | Beastly Facts`} />
         <meta name="twitter:description" content={categoryDescription} />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
