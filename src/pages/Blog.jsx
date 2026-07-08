@@ -161,11 +161,11 @@ export default function Blog() {
     });
   });
 
-  // "Short Story" stays a real Sanity category (it's how chronicle posts are
-  // tagged), but its pill shouldn't appear here now that the stories render
-  // on /chronicles/ instead of in the blog.
+  // "Short Stories" stays a real Sanity category (it's how chronicle posts used to be
+  // tagged, before chronicle detection moved to slug-prefix matching), but its pill
+  // shouldn't appear here now that the stories render on /chronicles/ instead of in the blog.
   const enrichedSanityCategories = sanityCategories
-    .filter(c => c.slug !== 'short-story')
+    .filter(c => c.slug !== 'short-stories')
     .map(c => ({
       ...c,
       count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),

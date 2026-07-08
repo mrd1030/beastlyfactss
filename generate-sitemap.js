@@ -293,15 +293,10 @@ async function generateSitemap() {
   // Category and static pages carry no lastmod: stamping them with the build
   // date on every deploy makes the signal meaningless, and omitting lastmod
   // is valid per the sitemap spec.
-  // short-story is excluded: /blog/category/short-story/ 301s to /chronicles/
-  const blogCategoryPages = categories.filter(c => c.slug !== 'short-story').map(c => ({
+  // short-stories is excluded: /blog/category/short-stories/ 301s to /chronicles/
+  // /category/X/ is excluded entirely: it 301s to /blog/category/X/ (retired duplicate route)
+  const blogCategoryPages = categories.filter(c => c.slug !== 'short-stories').map(c => ({
     path: `/blog/category/${c.slug}/`,
-    changefreq: 'weekly',
-    priority: '0.7',
-  }));
-
-  const categoryPages = categories.map(c => ({
-    path: `/category/${c.slug}/`,
     changefreq: 'weekly',
     priority: '0.7',
   }));
@@ -330,7 +325,7 @@ async function generateSitemap() {
     xml += `  </url>\n`;
   });
 
-  [...blogCategoryPages, ...categoryPages, ...blogPostPages, ...mdxPostPages, ...chroniclesPages].forEach(page => {
+  [...blogCategoryPages, ...blogPostPages, ...mdxPostPages, ...chroniclesPages].forEach(page => {
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${page.path}</loc>\n`;
     if (page.lastmod) xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
@@ -342,7 +337,7 @@ async function generateSitemap() {
   xml += `</urlset>`;
 
   fs.writeFileSync('./dist/sitemap.xml', xml);
-  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${categoryPages.length} category pages + ${blogPostPages.length} Sanity posts + ${mdxPostPages.length} MDX posts + ${chroniclesPages.length} chronicles`);
+  console.log(`Sitemap written: ${uniqueStatic.length} static + ${blogCategoryPages.length} blog categories + ${blogPostPages.length} Sanity posts + ${mdxPostPages.length} MDX posts + ${chroniclesPages.length} chronicles`);
 }
 
 generateSitemap().catch(err => {

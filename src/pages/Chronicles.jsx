@@ -14,7 +14,10 @@ import PostEngagement from '@/components/blog/PostEngagement';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 
-const STORY_QUERY = groq`*[_type == "post" && defined(slug.current) && "short-story" in categories[]->slug.current] | order(publishedAt asc) {
+// Matched by slug prefix, not category tag - a chronicles post is identified by its
+// stable "chronicles-of-<character>" slug (see src/lib/chronicles.js), so this can't
+// silently break if the "Short Stories" category gets renamed/re-slugged in Sanity.
+const STORY_QUERY = groq`*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"] | order(publishedAt asc) {
   _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, body
 }`;
 

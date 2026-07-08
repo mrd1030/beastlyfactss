@@ -70,8 +70,9 @@ async function getChroniclesRoutes() {
     }
   } catch {}
   try {
+    // Matched by slug prefix, not category tag - see getSanityRoutes() for why.
     const q = encodeURIComponent(
-      '*[_type == "post" && defined(slug.current) && "short-story" in categories[]->slug.current]{ "slug": slug.current, publishedAt }'
+      '*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"]{ "slug": slug.current, publishedAt }'
     );
     const res = await fetch(`https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${q}`);
     const data = await res.json();
@@ -154,9 +155,12 @@ const STATIC_ROUTES = [
 
 async function getSanityRoutes() {
   try {
-    // Short-story posts render on /chronicles/, not /blog/ - see getChroniclesRoutes()
+    // Short-story posts render on /chronicles/, not /blog/ - see getChroniclesRoutes().
+    // Excluded by slug prefix (not by category tag) so this can't silently break if the
+    // "Short Stories" category gets renamed/re-slugged in Sanity - the slug prefix is the
+    // one thing guaranteed stable (see CHRONICLES_PREFIXES / isChroniclesSlug above).
     const postQuery = encodeURIComponent(
-      '*[_type == "post" && defined(slug.current) && !("short-story" in categories[]->slug.current)]{ "slug": slug.current }'
+      '*[_type == "post" && defined(slug.current)]{ "slug": slug.current }'
     );
     const catQuery = encodeURIComponent(
       '*[_type == "category" && defined(slug.current) && count(*[_type == "post" && !(_id in path("drafts.**")) && references(^._id)]) > 0]{ "slug": slug.current }'
@@ -169,14 +173,16 @@ async function getSanityRoutes() {
 
     const [postData, catData] = await Promise.all([postRes.json(), catRes.json()]);
 
-    const blogRoutes = (postData.result || []).map(p => `/blog/${p.slug}`);
-    const categoryRoutes = (catData.result || []).map(c => `/category/${c.slug}`);
-    // /blog/category/short-story 301s to /chronicles/ in _redirects - don't prerender it
+    const blogRoutes = (postData.result || [])
+      .filter(p => !isChroniclesSlug(p.slug))
+      .map(p => `/blog/${p.slug}`);
+    // /category/X 301s to /blog/category/X in _redirects (retired duplicate route) - don't prerender it.
+    // /blog/category/short-stories 301s to /chronicles/ in _redirects - don't prerender it either.
     const blogCategoryRoutes = (catData.result || [])
-      .filter(c => c.slug !== 'short-story')
+      .filter(c => c.slug !== 'short-stories')
       .map(c => `/blog/category/${c.slug}`);
 
-    return [...blogRoutes, ...categoryRoutes, ...blogCategoryRoutes];
+    return [...blogRoutes, ...blogCategoryRoutes];
   } catch (err) {
     console.warn('⚠️  Could not fetch Sanity dynamic routes:', err.message);
     return [];
