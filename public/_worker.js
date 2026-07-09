@@ -9,6 +9,18 @@ const SANITY_PROJECT = '7nqbs1gk';
 const SANITY_DATASET = 'production';
 const ARTICLES_WINDOW = 40; // most recent posts across MDX + Sanity combined
 
+// Mirrors src/lib/utils/slugify.js exactly - must produce identical output,
+// since this is how /facts/:slug matches a fact by title on the frontend.
+function slugify(text) {
+  if (!text) return '';
+  return text.toString().toLowerCase()
+    .replace(/\s*&\s*|\s+and\s+/g, '-and-')
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 // Only exact, confirmed species matches - add more as real photos get sourced.
 // Anything not listed here falls back to the branded hero image.
 const ANIMAL_IMAGES = {
@@ -164,7 +176,7 @@ async function buildFactsFeed(request) {
       ({ fact, pubDate, guid }) => `
     <item>
       <title>${cdata(`${fact.emoji} ${fact.animal}: ${fact.title}. ${fact.fact}`)}</title>
-      <link>https://beastlyfacts.com/facts/?fact=${fact.id}</link>
+      <link>https://beastlyfacts.com/facts/${slugify(fact.title)}/</link>
       <guid isPermaLink="false">${guid}</guid>
       <pubDate>${pubDate.toUTCString()}</pubDate>
       <description>${cdata(`${fact.emoji} ${fact.fact}`)}</description>

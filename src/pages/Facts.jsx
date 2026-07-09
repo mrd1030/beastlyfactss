@@ -2,9 +2,10 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
+import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts'; 
 import FactCard from '@/components/shared/FactCard'; 
 import FactModal from '@/components/shared/FactModal'; 
@@ -25,16 +26,25 @@ function shuffleArray(arr) {
 export default function Facts() {
   const navigate = useNavigate();
   const location = useLocation();
+  const { slug } = useParams();
 
-  const [search, setSearch] = useState(''); 
-  const [activeCategory, setActiveCategory] = useState('All'); 
-  const [selectedFact, setSelectedFact] = useState(null); 
-  const [page, setPage] = useState(1); 
-  const [randomized, setRandomized] = useState(false); 
-  const [randomOrder, setRandomOrder] = useState([]); 
+  const [search, setSearch] = useState('');
+  const [activeCategory, setActiveCategory] = useState('All');
+  const [selectedFact, setSelectedFact] = useState(null);
+  const [page, setPage] = useState(1);
+  const [randomized, setRandomized] = useState(false);
+  const [randomOrder, setRandomOrder] = useState([]);
 
-  const allFacts = useMemo(() => facts.map((f, i) => ({ ...f, factNumber: i + 1 })), []); 
-  const allCategories = ['All', ...categories.map(c => c.name)]; 
+  const allFacts = useMemo(() => facts.map((f, i) => ({ ...f, factNumber: i + 1 })), []);
+  const allCategories = ['All', ...categories.map(c => c.name)];
+
+  // /facts/:slug is a direct link to one specific fact (used by the social
+  // feed - see public/_worker.js) - matched by slugified title since facts
+  // have no dedicated id-based permalink field.
+  const linkedFact = useMemo(() => {
+    if (!slug) return null;
+    return allFacts.find(f => slugify(f.title) === slug) || null;
+  }, [slug, allFacts]);
 
   // Central URL Synchronizer for SEO Parameters
   useEffect(() => {
@@ -50,6 +60,11 @@ export default function Facts() {
     }
     setPage(pageParam);
   }, [location.search, allCategories]);
+
+  // Auto-open the modal for a /facts/:slug direct link
+  useEffect(() => {
+    if (linkedFact) setSelectedFact(linkedFact);
+  }, [linkedFact]);
 
   const filtered = useMemo(() => {
     return allFacts.filter(f => {
@@ -199,14 +214,23 @@ export default function Facts() {
     );
   };
 
-  const pageTitle = activeCategory === 'All'
-    ? 'Fun Animal Facts | Beastly Facts'
-    : `${activeCategory} Facts | Beastly Facts`;
-  const pageDescription = activeCategory === 'All'
-    ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviours to surprising dog science and wild animal trivia.'
-    : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
-  const canonicalPath = 'https://beastlyfacts.com/facts/';
-  const shouldNoindex = hasNoindexStateParams(location.search);
+  const pageTitle = linkedFact
+    ? `${linkedFact.animal}: ${linkedFact.title} | Beastly Facts`
+    : activeCategory === 'All'
+      ? 'Fun Animal Facts | Beastly Facts'
+      : `${activeCategory} Facts | Beastly Facts`;
+  const pageDescription = linkedFact
+    ? truncateDescription(`${linkedFact.emoji} ${linkedFact.fact}`)
+    : activeCategory === 'All'
+      ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviours to surprising dog science and wild animal trivia.'
+      : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
+  const canonicalPath = linkedFact
+    ? `https://beastlyfacts.com/facts/${slugify(linkedFact.title)}/`
+    : 'https://beastlyfacts.com/facts/';
+  // Direct fact links aren't prerendered (Facts.jsx is already flagged CPU-heavy
+  // in prerender.mjs, and 173 more renders isn't worth it just for this) - noindex
+  // is the honest signal, same as this site's other client-JS-only routes.
+  const shouldNoindex = Boolean(linkedFact) || hasNoindexStateParams(location.search);
 
   return (
     <div className="min-h-screen">
