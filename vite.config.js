@@ -30,6 +30,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     sourcemap: 'hidden',
+    target: 'es2022',
     chunkSizeWarningLimit: 630,
     rollupOptions: {
       output: {
@@ -44,11 +45,7 @@ export default defineConfig({
             if (id.includes('stripe') || id.includes('@stripe')) {
               return 'stripe-vendor';
             }
-            // Keep heavy data charts separate
-            if (id.includes('recharts') || id.includes('d3')) {
-              return 'charts-vendor';
-            }
-            
+
             // Let React, Radix, and Framer Motion bundle together naturally into a single core vendor chunk
             return 'vendor';
           }

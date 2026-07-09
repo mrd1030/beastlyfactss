@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { facts } from '@/lib/data/facts';
 
 export default function HeroSection() {
   const dailyFact = facts[new Date().getDate() % facts.length];
   const [learned, setLearned] = useState(false);
 
-  const handleLearned = () => {
+  const handleLearned = async () => {
     setLearned(true);
+    const { default: confetti } = await import('canvas-confetti');
     confetti({
       particleCount: 100,
       spread: 70,
