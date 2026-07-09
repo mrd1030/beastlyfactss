@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { X, Heart, Share2 } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
+import { slugify } from '@/lib/utils/slugify';
 
 export default function FactModal({ fact, onClose }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
@@ -78,7 +79,7 @@ export default function FactModal({ fact, onClose }) {
 
   // Reusable share handler matching your FactCard behavior
   const handleShare = () => {
-    const factsPageUrl = window.location.origin + '/facts/';
+    const factsPageUrl = `${window.location.origin}/facts/${slugify(fact.title)}/`;
     
     if (navigator.share) {
       navigator.share({ 

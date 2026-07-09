@@ -61,10 +61,20 @@ export default function Facts() {
     setPage(pageParam);
   }, [location.search, allCategories]);
 
-  // Auto-open the modal for a /facts/:slug direct link
+  // The URL is the source of truth for which fact is open, in both
+  // directions: a direct /facts/:slug link opens the right modal, and
+  // clearing the slug (browser back, or handleCloseFact below) closes it.
   useEffect(() => {
-    if (linkedFact) setSelectedFact(linkedFact);
+    setSelectedFact(linkedFact);
   }, [linkedFact]);
+
+  const handleOpenFact = (fact) => {
+    navigate({ pathname: `/facts/${slugify(fact.title)}/`, search: location.search });
+  };
+
+  const handleCloseFact = () => {
+    navigate({ pathname: '/facts/', search: location.search });
+  };
 
   const filtered = useMemo(() => {
     return allFacts.filter(f => {
@@ -336,7 +346,7 @@ export default function Facts() {
               <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
                 #{fact.factNumber} 
               </span>
-              <FactCard fact={fact} index={i} onOpen={setSelectedFact} /> 
+              <FactCard fact={fact} index={i} onOpen={handleOpenFact} />
             </div>
           ))}
         </div>
@@ -356,7 +366,7 @@ export default function Facts() {
         </div>
       </div>
 
-      <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} /> 
+      <FactModal fact={selectedFact} onClose={handleCloseFact} /> 
     </div>
   );
 }

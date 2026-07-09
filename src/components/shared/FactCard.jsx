@@ -2,6 +2,7 @@ import React, { useState } from 'react'; // Added useState here
 import { motion } from 'framer-motion';
 import { Heart, Share2 } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { slugify } from '@/lib/utils/slugify';
 
 export default function FactCard({ fact, index = 0, onOpen }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
@@ -13,7 +14,7 @@ export default function FactCard({ fact, index = 0, onOpen }) {
 
   const handleShare = (e) => {
     e.stopPropagation();
-    const factsPageUrl = window.location.origin + '/facts/';
+    const factsPageUrl = `${window.location.origin}/facts/${slugify(fact.title)}/`;
     
     if (navigator.share) {
       navigator.share({ 
