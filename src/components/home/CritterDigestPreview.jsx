@@ -7,7 +7,6 @@ import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
-import { mdxPosts } from '@/lib/mdxPosts';
 
 const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id, title, slug, excerpt, mainImage, publishedAt, readTime,
@@ -17,6 +16,7 @@ const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(published
 
 export default function CritterDigestPreview() {
   const [sanityPosts, setSanityPosts] = useState([]);
+  const [mdxPosts, setMdxPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
@@ -27,6 +27,16 @@ export default function CritterDigestPreview() {
         setLoading(false);
       })
       .catch(() => setLoading(false));
+    // Fetched at runtime (same build artifact the RSS feed uses) rather than
+    // statically importing MDX modules - importing even just frontmatter via
+    // import.meta.glob still shares a module graph with the full-content
+    // glob used by Blog/GuideDetail/etc., and Rollup ended up bundling at
+    // least one article's full compiled content into this chunk anyway,
+    // pulling ~285KB of unrelated article text into the homepage's JS.
+    fetch('/articles.json')
+      .then(r => r.json())
+      .then(data => setMdxPosts(data.articles || []))
+      .catch(() => {});
   }, []);
 
   // Helper to safely get slug as string
@@ -50,8 +60,9 @@ export default function CritterDigestPreview() {
     })),
     ...mdxPosts.map(post => ({
       ...post,
-      _id: post._id || post.id,
-      slug: { current: getSlug(post) }
+      _id: post.slug,
+      publishedAt: post.date,
+      slug: { current: post.slug },
     })),
   ].sort((a, b) => {
     const dateA = new Date(a.publishedAt || a.date || 0);

@@ -43,6 +43,7 @@ for (const dir of CONTENT_DIRS) {
       excerpt: fm.excerpt || fm.description || '',
       date: fm.date || fm.lastUpdated || null,
       image: fm.image || null,
+      category: fm.category || null,
     });
   }
 }
