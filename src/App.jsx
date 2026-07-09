@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React, { lazy } from 'react';
 import { MotionConfig } from 'framer-motion';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
@@ -43,12 +43,6 @@ function RedirectGuideFilter() {
   return <Navigate to={`/guides/category/${guideFilter}/`} replace />;
 }
 
-const PageLoadingFallback = () => (
-  <div className="w-full min-h-[60vh] flex flex-col items-center justify-center">
-    <div className="w-6 h-6 border-2 border-primary/20 border-t-primary rounded-full animate-spin" />
-  </div>
-);
-
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
 
@@ -71,47 +65,45 @@ const AuthenticatedApp = () => {
   return (
     <>
       <AnalyticsTracker />
-      <Suspense fallback={<PageLoadingFallback />}>
-        <Routes>
-          <Route element={<AppLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/facts" element={<Facts />} />
-            <Route path="/facts/:slug" element={<Facts />} />
-            <Route path="/guides" element={<Guides />} />
-            <Route path="/guides/category/:category" element={<Guides />} />
-            <Route path="/guides/:id" element={<GuideDetail />} />
-            <Route path="/gear" element={<Gear />} />
-            <Route path="/encyclopedia" element={<Encyclopedia />} />
-            <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
-            <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />
-            <Route path="/encyclopedia/guides" element={<Navigate to="/guides/" replace />} />
-            <Route path="/encyclopedia/guides/:guideFilter" element={<RedirectGuideFilter />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/category/:catSlug" element={<Blog />} />
-            <Route path="/blog/:slug" element={<Blog />} />
-            <Route path="/chronicles" element={<Chronicles />} />
-            <Route path="/chronicles/:seriesId" element={<Chronicles />} />
-            <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
-            <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
-            <Route path="/quiz/:tab" element={<Quiz />} />
-            <Route path="/pack" element={<Pack />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/animal-facts" element={<AnimalFacts />} />
-            <Route path="/fact-files" element={<FactFiles />} />
-            <Route path="/trivia" element={<Navigate to="/quiz/trivia/" replace />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/donate/success" element={<DonateSuccess />} />
-            <Route path="/donate/cancel" element={<DonateCancel />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/glossary" element={<Glossary />} />
-          </Route>
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </Suspense>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/facts" element={<Facts />} />
+          <Route path="/facts/:slug" element={<Facts />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/guides/category/:category" element={<Guides />} />
+          <Route path="/guides/:id" element={<GuideDetail />} />
+          <Route path="/gear" element={<Gear />} />
+          <Route path="/encyclopedia" element={<Encyclopedia />} />
+          <Route path="/encyclopedia/animal/:id" element={<EncyclopediaAnimal />} />
+          <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />
+          <Route path="/encyclopedia/guides" element={<Navigate to="/guides/" replace />} />
+          <Route path="/encyclopedia/guides/:guideFilter" element={<RedirectGuideFilter />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/category/:catSlug" element={<Blog />} />
+          <Route path="/blog/:slug" element={<Blog />} />
+          <Route path="/chronicles" element={<Chronicles />} />
+          <Route path="/chronicles/:seriesId" element={<Chronicles />} />
+          <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
+          <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
+          <Route path="/quiz/:tab" element={<Quiz />} />
+          <Route path="/pack" element={<Pack />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/animal-facts" element={<AnimalFacts />} />
+          <Route path="/fact-files" element={<FactFiles />} />
+          <Route path="/trivia" element={<Navigate to="/quiz/trivia/" replace />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/donate/success" element={<DonateSuccess />} />
+          <Route path="/donate/cancel" element={<DonateCancel />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/glossary" element={<Glossary />} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </>
   );
 };

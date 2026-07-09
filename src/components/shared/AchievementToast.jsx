@@ -20,14 +20,14 @@ export default function AchievementToast() {
 
   return (
     <div className="fixed top-16 left-0 right-0 z-[70] flex justify-center px-4 pointer-events-none">
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         {currentAchievementToast && (
           <motion.div
             key={currentAchievementToast.id}
             initial={{ opacity: 0, y: -16, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -16, scale: 0.95 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+            transition={{ duration: 0.2 }}
             className="pointer-events-auto flex items-center gap-3 bg-card border border-border rounded-2xl shadow-xl px-4 py-3 max-w-sm"
           >
             <span className="text-2xl flex-shrink-0">{currentAchievementToast.emoji}</span>
