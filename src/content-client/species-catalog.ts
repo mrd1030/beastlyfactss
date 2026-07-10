@@ -64,6 +64,32 @@ export interface CatalogCareInfo {
   cleaningIntervalDays?: number | null;
 }
 
+export interface CatalogCostItem {
+  item: string;
+  low: number;
+  high: number;
+}
+
+export interface CatalogFaq {
+  q: string;
+  a: string;
+}
+
+/** The full care guide for a species — beastlyfactss's own real guide page
+ * content, bundled verbatim (prose sections, supply checklist, FAQs, and
+ * itemized setup/annual cost estimates). `faqs`/`costs` are genuinely
+ * absent for a few entries (e.g. the cat/dog breed guides have no FAQs in
+ * the source) — render conditionally, never fabricate. */
+export interface CatalogGuide {
+  housing: string;
+  diet: string;
+  enrichment: string;
+  health: string;
+  checklist: string[];
+  faqs?: CatalogFaq[];
+  costs?: { setup: CatalogCostItem[]; annual: CatalogCostItem[] };
+}
+
 export interface CatalogSpecies {
   id: string;
   name: string;
@@ -74,6 +100,7 @@ export interface CatalogSpecies {
   careInfo: CatalogCareInfo;
   facts: string[];
   quiz: CatalogQuizQuestion[];
+  guide?: CatalogGuide;
 }
 
 const CATALOG: CatalogSpecies[] = rawCatalog as CatalogSpecies[];

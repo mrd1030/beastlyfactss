@@ -9,10 +9,11 @@ import Animated, {
 } from 'react-native-reanimated';
 import { useEffect, useRef } from 'react';
 
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import type { ProvisionalEntry } from '@/content-client/types';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import type { UnlockMethod } from '@/db/types';
+import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
@@ -81,6 +82,7 @@ export function PackCard({
     ],
   }));
 
+  const theme = useTheme();
   const thumb = sanityImageUrl(entry.mainImage, 200);
   const showEmoji = !thumb && !!entry.emoji;
 
@@ -92,14 +94,14 @@ export function PackCard({
           pointerEvents={discovered ? 'none' : 'auto'}
           importantForAccessibility={discovered ? 'no-hide-descendants' : 'auto'}
           accessibilityElementsHidden={discovered}>
-          <ThemedView type="backgroundElement" style={styles.lockedCard}>
+          <View style={[styles.lockedCard, { borderColor: theme.hairline }]}>
             <ThemedText type="subtitle" style={styles.lockIcon}>
               🔒
             </ThemedText>
             <ThemedText type="small" themeColor="textSecondary" numberOfLines={2} style={styles.lockedTitle}>
               ???
             </ThemedText>
-          </ThemedView>
+          </View>
         </Animated.View>
 
         <Animated.View
@@ -146,29 +148,32 @@ const styles = StyleSheet.create({
   },
   lockedCard: {
     flex: 1,
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
+    borderWidth: 1.5,
+    borderStyle: 'dashed',
     alignItems: 'center',
     justifyContent: 'center',
     gap: Spacing.one,
-    opacity: 0.6,
+    opacity: 0.75,
   },
   lockIcon: {
-    fontSize: 28,
+    fontSize: 26,
     lineHeight: 32,
+    opacity: 0.55,
   },
   lockedTitle: {
     textAlign: 'center',
   },
   unlockedCard: {
     flex: 1,
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.one,
     gap: 4,
   },
   thumb: {
     width: '100%',
     height: PACK_CARD_SIZE - Spacing.two * 2,
-    borderRadius: Spacing.one,
+    borderRadius: Radius.sm,
   },
   emojiThumb: {
     alignItems: 'center',

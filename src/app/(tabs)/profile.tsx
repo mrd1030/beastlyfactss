@@ -4,10 +4,11 @@ import { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Eyebrow } from '@/components/eyebrow';
 import { AddPetCard, PetCard } from '@/components/pet-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { getAllSpecies } from '@/content-client/species-catalog';
 import { isDatabaseAvailable } from '@/db/client';
 import { getStreakState, listDiscoveredSpecies, listPets } from '@/db/helpers';
@@ -155,9 +156,7 @@ export default function ProfileScreen() {
             </ThemedView>
           </ThemedView>
 
-          <ThemedText type="smallBold" style={styles.sectionTitle}>
-            My Pets
-          </ThemedText>
+          <Eyebrow style={styles.sectionTitle}>My Pets</Eyebrow>
 
           {!isDatabaseAvailable && (
             <ThemedView type="backgroundElement" style={styles.infoBox}>
@@ -244,7 +243,7 @@ const styles = StyleSheet.create({
   },
   nameInputBox: {
     flex: 1,
-    borderRadius: Spacing.two,
+    borderRadius: Radius.pill,
     paddingHorizontal: Spacing.three,
   },
   nameInput: {
@@ -258,8 +257,9 @@ const styles = StyleSheet.create({
   },
   statBox: {
     flex: 1,
-    borderRadius: Spacing.two,
-    padding: Spacing.two,
+    borderRadius: Radius.md,
+    paddingVertical: Spacing.three,
+    paddingHorizontal: Spacing.two,
     alignItems: 'center',
     gap: 2,
   },
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.two,
   },
   infoBox: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.three,
   },
   petsRow: {

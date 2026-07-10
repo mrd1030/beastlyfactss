@@ -4,10 +4,11 @@ import { useCallback, useMemo } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Eyebrow } from '@/components/eyebrow';
 import { PackCard } from '@/components/pack-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { fetchCollectionEntries } from '@/content-client/queries';
 import { getAllCategories, getAllSpeciesAsEntries } from '@/content-client/species-catalog';
 import type { ProvisionalEntry } from '@/content-client/types';
@@ -153,7 +154,7 @@ export default function PackScreen() {
         )}
 
         {totalDiscovered === 0 && (
-          <ThemedView type="backgroundElement" style={styles.hintBanner}>
+          <ThemedView type="accentSoft" style={styles.hintBanner}>
             <ThemedText type="small">
               Nothing unlocked yet — read an entry to the end, or pass its quiz, to start filling this grid.
               Locked cards below link straight to an entry so you can do either.
@@ -171,7 +172,7 @@ export default function PackScreen() {
             return (
               <View key={section.key} style={styles.section}>
                 <View style={styles.sectionHeaderRow}>
-                  <ThemedText type="smallBold">{section.title}</ThemedText>
+                  <Eyebrow>{section.title}</Eyebrow>
                   <ThemedText type="small" themeColor="textSecondary">
                     {unlockedInSection}/{section.entries.length}
                   </ThemedText>
@@ -222,7 +223,7 @@ const styles = StyleSheet.create({
     lineHeight: 38,
   },
   streakBadge: {
-    borderRadius: 999,
+    borderRadius: Radius.pill,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.one,
   },
@@ -230,13 +231,13 @@ const styles = StyleSheet.create({
     marginTop: Spacing.two,
   },
   errorBox: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.three,
     gap: Spacing.one,
     marginTop: Spacing.two,
   },
   emptyState: {
-    borderRadius: Spacing.three,
+    borderRadius: Radius.lg,
     padding: Spacing.five,
     alignItems: 'center',
     gap: Spacing.two,
@@ -246,8 +247,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   hintBanner: {
-    borderRadius: Spacing.two,
-    padding: Spacing.two,
+    borderRadius: Radius.md,
+    padding: Spacing.three,
     marginTop: Spacing.two,
   },
   scroll: {

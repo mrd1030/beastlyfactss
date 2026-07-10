@@ -5,9 +5,11 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Switch } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Card } from '@/components/card';
+import { Eyebrow } from '@/components/eyebrow';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useThemePreference } from '@/contexts/theme-preference';
 import { resetAllLocalData } from '@/db/helpers';
 import { useTheme } from '@/hooks/use-theme';
@@ -82,80 +84,84 @@ export default function SettingsScreen() {
         </ThemedView>
 
         <ScrollView contentContainerStyle={styles.scrollContent}>
-          <ThemedText type="smallBold" style={styles.sectionTitle}>
-            Appearance
-          </ThemedText>
+          <Eyebrow style={styles.sectionTitle}>Appearance</Eyebrow>
           <ThemedView style={styles.segmentRow}>
             {THEME_OPTIONS.map((option) => {
               const selected = preference === option.value;
               return (
                 <Pressable key={option.value} onPress={() => setPreference(option.value)} style={styles.segmentItem}>
-                  <ThemedView type={selected ? 'backgroundSelected' : 'backgroundElement'} style={styles.segmentChip}>
-                    <ThemedText type="small">{option.label}</ThemedText>
+                  <ThemedView
+                    type="backgroundElement"
+                    style={[styles.segmentChip, selected && { backgroundColor: theme.accent }]}>
+                    <ThemedText type="smallBold" style={selected ? { color: theme.onAccent } : undefined}>
+                      {option.label}
+                    </ThemedText>
                   </ThemedView>
                 </Pressable>
               );
             })}
           </ThemedView>
 
-          <ThemedText type="smallBold" style={styles.sectionTitle}>
-            Notifications
-          </ThemedText>
-          <ThemedView type="backgroundElement" style={styles.settingRow}>
-            <ThemedText type="small">Daily fact & care reminders</ThemedText>
-            <Switch
-              value={profile?.notificationsEnabled ?? true}
-              onValueChange={handleToggleNotifications}
-              trackColor={{ true: theme.accent, false: theme.backgroundSelected }}
-            />
-          </ThemedView>
+          <Eyebrow style={styles.sectionTitle}>Notifications</Eyebrow>
+          <Card padded={false}>
+            <ThemedView style={[styles.settingRow, { backgroundColor: 'transparent' }]}>
+              <ThemedText type="small">Daily fact & care reminders</ThemedText>
+              <Switch
+                value={profile?.notificationsEnabled ?? true}
+                onValueChange={handleToggleNotifications}
+                trackColor={{ true: theme.accent, false: theme.backgroundSelected }}
+              />
+            </ThemedView>
+          </Card>
           {notifStatusNote && (
             <ThemedText type="small" themeColor="textSecondary" style={styles.notifNote}>
               {notifStatusNote}
             </ThemedText>
           )}
 
-          <ThemedText type="smallBold" style={styles.sectionTitle}>
-            Account
-          </ThemedText>
-          <Pressable onPress={handleResetIdentity}>
-            <ThemedView type="backgroundElement" style={styles.settingRow}>
-              <ThemedText type="small">Reset local profile (sign out)</ThemedText>
-              <ThemedText type="small" themeColor="textSecondary">
-                →
-              </ThemedText>
-            </ThemedView>
-          </Pressable>
-
-          {!confirmingDelete ? (
-            <Pressable onPress={() => setConfirmingDelete(true)}>
-              <ThemedView type="backgroundElement" style={[styles.settingRow, styles.dangerRow]}>
-                <ThemedText type="small" style={{ color: theme.danger }}>
-                  Delete all data
-                </ThemedText>
+          <Eyebrow style={styles.sectionTitle}>Account</Eyebrow>
+          <Card padded={false}>
+            <Pressable onPress={handleResetIdentity}>
+              <ThemedView style={[styles.settingRow, { backgroundColor: 'transparent' }]}>
+                <ThemedText type="small">Reset local profile (sign out)</ThemedText>
                 <ThemedText type="small" themeColor="textSecondary">
                   →
                 </ThemedText>
               </ThemedView>
             </Pressable>
-          ) : (
-            <ThemedView type="backgroundElement" style={styles.confirmDeleteBox}>
-              <ThemedText type="small">
-                Permanently delete every pet, care task, husbandry log, favorite, and discovered species on this
-                device? This cannot be undone.
-              </ThemedText>
-              <ThemedView style={styles.confirmDeleteActions}>
-                <Pressable onPress={() => setConfirmingDelete(false)} hitSlop={8}>
-                  <ThemedText type="link">Cancel</ThemedText>
-                </Pressable>
-                <Pressable onPress={handleDeleteAllData} disabled={deleting} hitSlop={8}>
-                  <ThemedText type="linkPrimary" style={{ color: theme.danger }}>
-                    {deleting ? 'Deleting…' : 'Delete everything'}
+
+            {!confirmingDelete ? (
+              <Pressable onPress={() => setConfirmingDelete(true)}>
+                <ThemedView
+                  style={[styles.settingRow, { backgroundColor: 'transparent', borderTopWidth: 1, borderTopColor: theme.hairline }]}>
+                  <ThemedText type="small" style={{ color: theme.danger }}>
+                    Delete all data
                   </ThemedText>
-                </Pressable>
+                  <ThemedText type="small" themeColor="textSecondary">
+                    →
+                  </ThemedText>
+                </ThemedView>
+              </Pressable>
+            ) : (
+              <ThemedView
+                style={[styles.confirmDeleteBox, { backgroundColor: 'transparent', borderTopWidth: 1, borderTopColor: theme.hairline }]}>
+                <ThemedText type="small">
+                  Permanently delete every pet, care task, husbandry log, favorite, and discovered species on this
+                  device? This cannot be undone.
+                </ThemedText>
+                <ThemedView style={[styles.confirmDeleteActions, { backgroundColor: 'transparent' }]}>
+                  <Pressable onPress={() => setConfirmingDelete(false)} hitSlop={8}>
+                    <ThemedText type="link">Cancel</ThemedText>
+                  </Pressable>
+                  <Pressable onPress={handleDeleteAllData} disabled={deleting} hitSlop={8}>
+                    <ThemedText type="linkPrimary" style={{ color: theme.danger }}>
+                      {deleting ? 'Deleting…' : 'Delete everything'}
+                    </ThemedText>
+                  </Pressable>
+                </ThemedView>
               </ThemedView>
-            </ThemedView>
-          )}
+            )}
+          </Card>
 
           <ThemedView style={styles.aboutBox}>
             <ThemedText type="small" themeColor="textSecondary">
@@ -205,7 +211,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   segmentChip: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.pill,
     paddingVertical: Spacing.two,
     alignItems: 'center',
   },
@@ -213,20 +219,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    borderRadius: Spacing.two,
     padding: Spacing.three,
-  },
-  dangerRow: {
-    marginTop: Spacing.two,
   },
   notifNote: {
     marginTop: Spacing.one,
   },
   confirmDeleteBox: {
-    borderRadius: Spacing.two,
     padding: Spacing.three,
     gap: Spacing.two,
-    marginTop: Spacing.two,
   },
   confirmDeleteActions: {
     flexDirection: 'row',

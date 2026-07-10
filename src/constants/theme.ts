@@ -28,6 +28,12 @@ export const Colors = {
     success: '#0F7A6C',
     danger: '#B8215A',
     warning: '#8A6210',
+    // Hairline card/divider borders — a low-alpha tint of `text`, so cards
+    // can read as outlined surfaces instead of flat filled slabs.
+    hairline: 'rgba(15, 58, 31, 0.14)',
+    // Text color for content sitting on an accent-filled surface (selected
+    // chips, primary buttons).
+    onAccent: '#FDF7EE',
   },
   dark: {
     text: '#F5ECDC',
@@ -40,10 +46,23 @@ export const Colors = {
     success: '#2BC9BB',
     danger: '#F0548A',
     warning: '#F2C94C',
+    hairline: 'rgba(245, 236, 220, 0.14)',
+    onAccent: '#231106',
   },
 } as const;
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
+
+/** Corner radii. The old habit of using Spacing.two (8) for every surface
+ * is what made the UI read as "blocky" — cards want lg, chips/inputs pill
+ * or md, small inline badges sm. */
+export const Radius = {
+  sm: 10,
+  md: 14,
+  lg: 20,
+  xl: 28,
+  pill: 999,
+} as const;
 
 export const Fonts = Platform.select({
   ios: {

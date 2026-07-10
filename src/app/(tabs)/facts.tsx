@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { FactCard } from '@/components/fact-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { getAllFactCategories, getAllFacts, getFactForSeed } from '@/content-client/facts-catalog';
 import { dayOfYear } from '@/lib/date';
 import { useTheme } from '@/hooks/use-theme';
@@ -48,12 +48,7 @@ export default function FactsScreen() {
           {allFacts.length} real animal facts, bundled from beastlyfactss&apos;s own facts library.
         </ThemedText>
 
-        <ThemedView type="backgroundSelected" style={styles.featuredCard}>
-          <ThemedText type="small" themeColor="textSecondary">
-            Fact of the day
-          </ThemedText>
-          <FactCard fact={featuredFact} />
-        </ThemedView>
+        <FactCard fact={featuredFact} featured />
 
         <ThemedView type="backgroundElement" style={styles.searchBox}>
           <TextInput
@@ -76,8 +71,12 @@ export default function FactsScreen() {
             const selected = activeCategory === item;
             return (
               <Pressable onPress={() => setActiveCategory(selected ? null : item)} style={styles.categoryChipWrap}>
-                <ThemedView type={selected ? 'backgroundSelected' : 'backgroundElement'} style={styles.categoryChip}>
-                  <ThemedText type="smallBold">{item}</ThemedText>
+                <ThemedView
+                  type="backgroundElement"
+                  style={[styles.categoryChip, selected && { backgroundColor: theme.accent }]}>
+                  <ThemedText type="smallBold" style={selected ? { color: theme.onAccent } : undefined}>
+                    {item}
+                  </ThemedText>
                 </ThemedView>
               </Pressable>
             );
@@ -118,17 +117,13 @@ const styles = StyleSheet.create({
     fontSize: 32,
     lineHeight: 38,
   },
-  featuredCard: {
-    borderRadius: Spacing.three,
-    padding: Spacing.two,
-  },
   searchBox: {
-    borderRadius: Spacing.two,
-    paddingHorizontal: Spacing.three,
+    borderRadius: Radius.pill,
+    paddingHorizontal: Spacing.four,
     marginTop: Spacing.one,
   },
   searchInput: {
-    height: 40,
+    height: 44,
     fontSize: 14,
   },
   categoryRow: {
@@ -144,7 +139,7 @@ const styles = StyleSheet.create({
   categoryChip: {
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
-    borderRadius: 999,
+    borderRadius: Radius.pill,
   },
   list: {
     flex: 1,

@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { DailyFactCard } from '@/components/daily-fact-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { fetchCategories, fetchRecentEntries } from '@/content-client/queries';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import { getAllSpeciesAsEntries } from '@/content-client/species-catalog';
@@ -80,7 +80,7 @@ export default function BrowseScreen() {
           Browse
         </ThemedText>
         <ThemedText type="small" themeColor="textSecondary">
-          Live from the same Sanity project beastlyfactss uses — read-only, nothing shared with that repo.
+          Stories, guides & discoveries from the BeastlyFacts crew.
         </ThemedText>
 
         {dailyFactPool.length > 0 && <DailyFactCard pool={dailyFactPool} onOpenEntry={openEntry} />}
@@ -119,9 +119,11 @@ export default function BrowseScreen() {
                 onPress={() => setActiveCategory(selected ? null : filterValue)}
                 style={{ marginRight: Spacing.two }}>
                 <ThemedView
-                  type={selected ? 'backgroundSelected' : 'backgroundElement'}
-                  style={styles.categoryChip}>
-                  <ThemedText type="smallBold">{item.title}</ThemedText>
+                  type="backgroundElement"
+                  style={[styles.categoryChip, selected && { backgroundColor: theme.accent }]}>
+                  <ThemedText type="smallBold" style={selected ? { color: theme.onAccent } : undefined}>
+                    {item.title}
+                  </ThemedText>
                 </ThemedView>
               </Pressable>
             );
@@ -203,15 +205,15 @@ const styles = StyleSheet.create({
     lineHeight: 38,
   },
   searchBox: {
-    borderRadius: Spacing.two,
-    paddingHorizontal: Spacing.three,
+    borderRadius: Radius.pill,
+    paddingHorizontal: Spacing.four,
   },
   searchInput: {
-    height: 40,
+    height: 44,
     fontSize: 14,
   },
   errorBox: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.three,
     gap: Spacing.one,
   },
@@ -224,7 +226,7 @@ const styles = StyleSheet.create({
   categoryChip: {
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
-    borderRadius: 999,
+    borderRadius: Radius.pill,
   },
   list: {
     flex: 1,
@@ -232,14 +234,14 @@ const styles = StyleSheet.create({
   entryCard: {
     flexDirection: 'row',
     gap: Spacing.three,
-    borderRadius: Spacing.two,
-    padding: Spacing.two,
+    borderRadius: Radius.lg,
+    padding: Spacing.three,
     alignItems: 'center',
   },
   entryThumb: {
     width: 56,
     height: 56,
-    borderRadius: Spacing.one,
+    borderRadius: Radius.md,
   },
   entryBody: {
     flex: 1,

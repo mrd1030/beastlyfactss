@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 
 import type { ProvisionalEntry } from '@/content-client/types';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { isDatabaseAvailable } from '@/db/client';
 import { getStreakState, logDailyFactView, recordActiveToday } from '@/db/helpers';
 import { pickDailyEntry, pickDailyFactText } from '@/lib/daily-fact';
@@ -89,7 +89,7 @@ export function DailyFactCard({
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         style={{ width: cardWidth }}>
-        <ThemedView type="backgroundElement" style={[styles.page, { width: cardWidth }]}>
+        <ThemedView type="accentSoft" style={[styles.page, { width: cardWidth }]}>
           <ThemedText type="small" themeColor="textSecondary">
             Fact of the day
           </ThemedText>
@@ -130,15 +130,15 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.one,
   },
   streakBadge: {
-    borderRadius: 999,
+    borderRadius: Radius.pill,
     paddingHorizontal: Spacing.two,
     paddingVertical: 2,
   },
   page: {
-    borderRadius: Spacing.two,
-    padding: Spacing.three,
+    borderRadius: Radius.lg,
+    padding: Spacing.four,
     gap: Spacing.one,
-    minHeight: 110,
+    minHeight: 120,
     justifyContent: 'center',
   },
 });

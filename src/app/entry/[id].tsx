@@ -4,12 +4,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Card } from '@/components/card';
 import { EntryQuiz } from '@/components/entry-quiz';
+import { GuideSections } from '@/components/guide-sections';
 import { PortableTextBody } from '@/components/portable-text-body';
 import { CareInfoSummary, FactsList } from '@/components/species-facts-body';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { fetchEntryDetail } from '@/content-client/queries';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import { getSpeciesById } from '@/content-client/species-catalog';
@@ -186,15 +188,24 @@ export default function EntryDetailScreen() {
             contentContainerStyle={styles.scrollContent}
             onScroll={handleScrollEnd}
             scrollEventThrottle={200}>
-            <ThemedText style={styles.catalogEmoji}>{catalogSpecies.emoji}</ThemedText>
-
-            <ThemedText type="title" style={styles.title}>
-              {catalogSpecies.name}
-            </ThemedText>
-
-            <ThemedText type="small" themeColor="textSecondary">
-              {catalogSpecies.petType} · {catalogSpecies.difficulty}
-            </ThemedText>
+            <ThemedView style={styles.heroRow}>
+              <ThemedView type="accentSoft" style={styles.heroEmojiBubble}>
+                <ThemedText style={styles.catalogEmoji}>{catalogSpecies.emoji}</ThemedText>
+              </ThemedView>
+              <ThemedView style={styles.heroText}>
+                <ThemedText type="title" style={styles.title}>
+                  {catalogSpecies.name}
+                </ThemedText>
+                <ThemedView style={styles.heroBadgeRow}>
+                  <ThemedView type="backgroundElement" style={styles.heroBadge}>
+                    <ThemedText type="small">{catalogSpecies.petType}</ThemedText>
+                  </ThemedView>
+                  <ThemedView type="backgroundElement" style={styles.heroBadge}>
+                    <ThemedText type="small">{catalogSpecies.difficulty}</ThemedText>
+                  </ThemedView>
+                </ThemedView>
+              </ThemedView>
+            </ThemedView>
 
             <ThemedText type="smallBold" style={styles.excerpt}>
               {catalogSpecies.tagline}
@@ -203,17 +214,19 @@ export default function EntryDetailScreen() {
             <CareInfoSummary careInfo={catalogSpecies.careInfo} />
             <FactsList facts={catalogSpecies.facts} />
 
+            {catalogSpecies.guide && <GuideSections guide={catalogSpecies.guide} />}
+
             {!isDiscovered && (
               <ThemedView style={styles.quizSection}>
                 {!showQuiz ? (
                   <Pressable onPress={() => setShowQuiz(true)}>
-                    <ThemedView type="backgroundElement" style={styles.quizPrompt}>
+                    <Card variant="soft">
                       <ThemedText type="smallBold">Not in your Pack yet</ThemedText>
-                      <ThemedText type="small" themeColor="textSecondary">
+                      <ThemedText type="small" themeColor="textSecondary" style={styles.quizHint}>
                         Keep reading to the end, or take a quick quiz to add this entry to your Pack now.
                       </ThemedText>
                       <ThemedText type="linkPrimary">Take the quiz →</ThemedText>
-                    </ThemedView>
+                    </Card>
                   </Pressable>
                 ) : (
                   <EntryQuiz
@@ -276,13 +289,13 @@ export default function EntryDetailScreen() {
               <ThemedView style={styles.quizSection}>
                 {!showQuiz ? (
                   <Pressable onPress={() => setShowQuiz(true)}>
-                    <ThemedView type="backgroundElement" style={styles.quizPrompt}>
+                    <Card variant="soft">
                       <ThemedText type="smallBold">Not in your Pack yet</ThemedText>
-                      <ThemedText type="small" themeColor="textSecondary">
+                      <ThemedText type="small" themeColor="textSecondary" style={styles.quizHint}>
                         Keep reading to the end, or take a quick quiz to add this entry to your Pack now.
                       </ThemedText>
                       <ThemedText type="linkPrimary">Take the quiz →</ThemedText>
-                    </ThemedView>
+                    </Card>
                   </Pressable>
                 ) : (
                   <EntryQuiz categoryTitle={entry.categoryTitle} quiz={entry.quiz} onPass={handleQuizPass} />
@@ -320,26 +333,23 @@ const styles = StyleSheet.create({
     gap: Spacing.two,
   },
   discoveredBadge: {
-    borderRadius: 999,
+    borderRadius: Radius.pill,
     paddingHorizontal: Spacing.two,
     paddingVertical: 2,
   },
   quizSection: {
     marginTop: Spacing.two,
   },
-  quizPrompt: {
-    borderRadius: Spacing.two,
-    padding: Spacing.three,
-    gap: Spacing.one,
-    alignItems: 'flex-start',
+  quizHint: {
+    marginVertical: Spacing.one,
   },
   errorBox: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.three,
     gap: Spacing.one,
   },
   offlineBanner: {
-    borderRadius: Spacing.two,
+    borderRadius: Radius.md,
     padding: Spacing.two,
     marginBottom: Spacing.two,
   },
@@ -353,15 +363,41 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 200,
-    borderRadius: Spacing.two,
+    borderRadius: Radius.lg,
   },
   title: {
     fontSize: 28,
     lineHeight: 34,
   },
+  heroRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.three,
+  },
+  heroEmojiBubble: {
+    width: 84,
+    height: 84,
+    borderRadius: Radius.xl,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  heroText: {
+    flex: 1,
+    gap: Spacing.one,
+  },
+  heroBadgeRow: {
+    flexDirection: 'row',
+    gap: Spacing.one,
+    flexWrap: 'wrap',
+  },
+  heroBadge: {
+    borderRadius: Radius.pill,
+    paddingHorizontal: Spacing.two,
+    paddingVertical: 2,
+  },
   catalogEmoji: {
-    fontSize: 56,
-    lineHeight: 64,
+    fontSize: 44,
+    lineHeight: 56,
   },
   excerpt: {
     marginBottom: Spacing.two,
