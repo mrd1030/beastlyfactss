@@ -28,9 +28,9 @@ export default function Newsletter() {
                             </p>
                             <div className="flex flex-col gap-2 mb-5">
                                 {[
-                                    "🦎 Quick reptile care wins for every home",
-                                    "☀️ UVB, heat, and habitat tips that actually work",
-                                    "🌿 Bioactive setup ideas and maintenance hacks",
+                                    "🐾 Practical care tips for dogs, cats, reptiles, birds & more",
+                                    "🏠 Tank, cage, and terrarium setup ideas that work",
+                                    "🥗 Diet and habitat tips tailored to each species",
                                     "🩺 Simple health checks for happier pets",
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-start gap-2 text-xs font-body text-muted-foreground">

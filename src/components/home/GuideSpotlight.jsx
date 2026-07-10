@@ -6,8 +6,14 @@ import { allGuides } from '@/lib/data/guides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 
 // One guide per pet type so the sample reflects the site's actual range
-// instead of whichever category happens to sit first in allGuides.
-const SAMPLE_PET_TYPES = ['Dog', 'Cat', 'Lizards', 'Small Mammals'];
+// instead of whichever category happens to sit first in allGuides. Covers
+// every petType used across src/lib/data/guides/* - add new categories here
+// as they're introduced so this list stays exhaustive.
+const SAMPLE_PET_TYPES = [
+  'Dog', 'Cat', 'Birds', 'Fish', 'Small Mammals',
+  'Lizards', 'Snakes', 'Geckos', 'Turtles & Tortoises',
+  'Invertebrates', 'Amphibians',
+];
 const featured = SAMPLE_PET_TYPES
   .map(petType => allGuides.find(g => g.petType === petType))
   .filter(Boolean);
@@ -36,7 +42,7 @@ export default function GuideSpotlight() {
           </Link>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {featured.map((guide, i) => {
             const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
             return (
@@ -50,9 +56,13 @@ export default function GuideSpotlight() {
               >
                 <Link to={`/guides/${guide.id}/`}>
                   <div className="bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
-                    <div className="flex items-start justify-between mb-3">
-                      <span className="text-3xl">{guide.emoji}</span>
-                      <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full ${diffClass}`}>
+                    <div className="flex items-start justify-between gap-x-2 gap-y-1 flex-wrap mb-3">
+                      <span className="text-3xl flex-shrink-0">{guide.emoji}</span>
+                      {/* flex-wrap on the row (not break-words on the badge): compound labels
+                          like "Intermediate/Advanced" have no space to wrap at, so at the 2-col
+                          mobile width the badge instead drops to its own full-width line rather
+                          than breaking mid-word or overflowing the card. */}
+                      <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full whitespace-nowrap ${diffClass}`}>
                         {guide.difficulty}
                       </span>
                     </div>

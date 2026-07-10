@@ -20,7 +20,7 @@ export default function EncyclopediaTeaser() {
               Animal Encyclopedia
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Care guides for {encyclopediaCategories.length} categories of reptiles, birds &amp; more
+              Animal profiles for {encyclopediaCategories.length} categories of reptiles, birds &amp; more
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
