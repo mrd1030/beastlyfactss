@@ -199,8 +199,22 @@ async function buildFactsFeed(request) {
 }
 
 // Chronicles live at /chronicles/<id>/<part>/, not /blog/<slug>/ - excluded by
-// slug prefix, same convention as prerender.mjs/generate-sitemap.js.
+// slug prefix, same convention as prerender.mjs/generate-sitemap.js. They're
+// fetched separately below (fetchSanityChronicles) and merged back into the feed.
 const SANITY_ARTICLES_QUERY = `*[_type == "post" && defined(slug.current) && !(slug.current match "chronicles-of-*")] | order(publishedAt desc) [0...${ARTICLES_WINDOW}]{
+  "slug": slug.current,
+  title,
+  seoTitle,
+  "excerpt": coalesce(seoDescription, excerpt),
+  publishedAt,
+  "image": coalesce(seoImage.asset->url, mainImage.asset->url)
+}`;
+
+// Mirrors CHRONICLES_SERIES in src/lib/chronicles.js / CHRONICLES_PREFIXES in
+// prerender.mjs & generate-sitemap.js - stories are matched by slug prefix.
+const CHRONICLES_PREFIXES = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
+
+const SANITY_CHRONICLES_QUERY = `*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"]{
   "slug": slug.current,
   title,
   seoTitle,
@@ -226,19 +240,76 @@ async function fetchSanityArticles() {
   }
 }
 
+async function fetchSanityChronicles() {
+  try {
+    const url = `https://${SANITY_PROJECT}.api.sanity.io/v2021-10-21/data/query/${SANITY_DATASET}?query=${encodeURIComponent(SANITY_CHRONICLES_QUERY)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    return (data.result || []).map(p => ({
+      slug: p.slug,
+      title: p.seoTitle || p.title,
+      excerpt: p.excerpt || '',
+      date: p.publishedAt,
+      image: p.image || null,
+    }));
+  } catch {
+    return [];
+  }
+}
+
+// Assigns each chronicle its live-site link by computing its 1-based position
+// within its series, sorted by date - mirrors groupChronicles() in
+// src/lib/chronicles.js so RSS links always match the part number the site itself
+// renders. Must run over the FULL cross-source list before any date-window slicing,
+// or a story could be numbered using only a partial set of its series' parts.
+function withChroniclesLinks(chronicles) {
+  // A story can briefly exist in both MDX and Sanity mid-migration - keep
+  // whichever copy appeared first (callers always spread MDX before Sanity).
+  const seenSlugs = new Set();
+  const deduped = chronicles.filter(s => {
+    if (seenSlugs.has(s.slug)) return false;
+    seenSlugs.add(s.slug);
+    return true;
+  });
+
+  const items = [];
+  for (const [id, prefix] of Object.entries(CHRONICLES_PREFIXES)) {
+    const seriesStories = deduped
+      .filter(s => s.slug.startsWith(prefix))
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
+    seriesStories.forEach((s, i) => {
+      items.push({
+        ...s,
+        link: `https://beastlyfacts.com/chronicles/${id}/${i + 1}/`,
+        guid: `beastlyfacts-chronicle-${s.slug}`,
+      });
+    });
+  }
+  return items;
+}
+
 async function buildArticlesFeed(request) {
   const mdxRes = await fetch(new URL('/articles.json', request.url));
-  const { articles: mdxArticles } = await mdxRes.json();
-  const sanityArticles = await fetchSanityArticles();
+  const { articles: mdxArticles, chronicles: mdxChronicles = [] } = await mdxRes.json();
+  const [sanityArticles, sanityChronicles] = await Promise.all([
+    fetchSanityArticles(),
+    fetchSanityChronicles(),
+  ]);
 
-  const merged = [...mdxArticles, ...sanityArticles]
+  const blogItems = [...mdxArticles, ...sanityArticles].map(a => ({
+    ...a,
+    link: `https://beastlyfacts.com/blog/${a.slug}/`,
+    guid: `beastlyfacts-post-${a.slug}`,
+  }));
+  const chronicleItems = withChroniclesLinks([...mdxChronicles, ...sanityChronicles]);
+
+  const merged = [...blogItems, ...chronicleItems]
     .filter(a => a.date)
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, ARTICLES_WINDOW);
 
   const itemsXml = merged
-    .map(({ slug, title, excerpt, date, image }) => {
-      const link = `https://beastlyfacts.com/blog/${slug}/`;
+    .map(({ title, excerpt, date, image, link, guid }) => {
       const imageUrl = image
         ? (image.startsWith('http') ? image : `https://beastlyfacts.com${image}`)
         : FALLBACK_IMAGE;
@@ -246,7 +317,7 @@ async function buildArticlesFeed(request) {
     <item>
       <title>${cdata(excerpt ? `${title}. ${excerpt}` : title)}</title>
       <link>${link}</link>
-      <guid isPermaLink="false">beastlyfacts-post-${slug}</guid>
+      <guid isPermaLink="false">${guid}</guid>
       <pubDate>${new Date(date).toUTCString()}</pubDate>
       <description>${cdata(excerpt)}</description>
       <enclosure url="${imageUrl}" type="image/jpeg" length="0" />
@@ -257,7 +328,7 @@ async function buildArticlesFeed(request) {
   return rssDocument(
     'BeastlyFacts - Latest Articles',
     'https://beastlyfacts.com/blog/',
-    'New care guides, fun facts articles, and blog posts from BeastlyFacts.',
+    'New care guides, fun facts articles, blog posts, and Chronicles episodes from BeastlyFacts.',
     itemsXml
   );
 }

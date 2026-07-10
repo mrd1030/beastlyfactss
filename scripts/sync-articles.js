@@ -18,7 +18,7 @@ function parseFrontmatter(content) {
 }
 
 // Same three MDX folders that render at /blog/<slug>/ (see getMdxRoutes() in
-// prerender.mjs). content/short-story is intentionally excluded - those
+// prerender.mjs). content/short-story is handled separately below - those
 // render at /chronicles/<id>/<part>/, not /blog/<slug>/.
 const CONTENT_DIRS = ['blog', 'guides', 'fun-facts'];
 
@@ -48,5 +48,29 @@ for (const dir of CONTENT_DIRS) {
   }
 }
 
-fs.writeFileSync('./public/articles.json', JSON.stringify({ articles }, null, 2));
-console.log(`Synced ${articles.length} MDX articles to public/articles.json`);
+// Chronicles (content/short-story) get their own array instead of joining
+// `articles` - they route to /chronicles/<id>/<part>/, not /blog/<slug>/, and
+// public/_worker.js computes that part number itself (mirrors groupChronicles()
+// in src/lib/chronicles.js: 1-based position within the series, sorted by date,
+// across MDX + Sanity combined) so it needs the raw slug/date, not a link.
+const chronicles = [];
+const storyDir = path.join('content', 'short-story');
+if (fs.existsSync(storyDir)) {
+  for (const file of fs.readdirSync(storyDir).filter(f => f.endsWith('.mdx'))) {
+    const raw = fs.readFileSync(path.join(storyDir, file), 'utf8');
+    const fm = parseFrontmatter(raw);
+    if (fm.status && fm.status !== 'published') continue;
+    if (fm.noIndex === 'true') continue;
+
+    chronicles.push({
+      slug: fm.slug || file.replace('.mdx', ''),
+      title: fm.seoTitle || fm.title || 'Untitled',
+      excerpt: fm.excerpt || fm.description || '',
+      date: fm.date || fm.lastUpdated || null,
+      image: fm.image || null,
+    });
+  }
+}
+
+fs.writeFileSync('./public/articles.json', JSON.stringify({ articles, chronicles }, null, 2));
+console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX chronicles to public/articles.json`);

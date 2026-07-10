@@ -40,8 +40,14 @@ export const mdxChroniclesPosts = mdxPosts.filter(isChroniclesPost);
 export function groupChronicles(posts) {
   const bySeries = {};
   for (const s of CHRONICLES_SERIES) bySeries[s.id] = [];
+  const seenSlugs = new Set();
   for (const post of posts) {
-    const series = seriesForSlug(postSlug(post));
+    const slug = postSlug(post);
+    // A story can briefly exist in both MDX and Sanity mid-migration - keep
+    // whichever copy appeared first (callers always spread MDX before Sanity).
+    if (seenSlugs.has(slug)) continue;
+    seenSlugs.add(slug);
+    const series = seriesForSlug(slug);
     if (series) bySeries[series.id].push(post);
   }
   for (const id of Object.keys(bySeries)) {

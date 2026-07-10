@@ -328,5 +328,56 @@
       "image": "/assets/images/fun-facts-rabbit.jpg",
       "category": "Fun Facts"
     }
+  ],
+  "chronicles": [
+    {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2",
+      "title": "Chronicles of Dex the Bearded Dragon: The Day Everything Changed (Part 2)",
+      "excerpt": "Dex is back. Part 2 of the bearded dragon chronicles brings new trouble, warmer basking spots, and one lizard who refuses to be ignored.",
+      "date": "2026-06-27T05:32:37.964Z",
+      "image": "/assets/images/dex/dex-chron2.jpg"
+    },
+    {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-glass-part-3",
+      "title": "Chronicles of Dex the Bearded Dragon: The Rival Beyond the Glass (Part 3)",
+      "excerpt": "Dex faces his oldest mystery, the orange shape beyond the glass in this humorous short story about rivalry, territory, and the unexpected.",
+      "date": "2026-07-07",
+      "image": "/assets/images/dex/dex-chron3.jpg"
+    },
+    {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
+      "title": "Chronicles of Dex the Bearded Dragon: The Sun, the Glass, and the Cricket That Got Away",
+      "excerpt": "Meet Dex: a bearded dragon with opinions, ambitions, and a cricket problem. This bearded dragon short story kicks off a charming, witty animal fiction series.",
+      "date": "2026-06-27",
+      "image": "/assets/images/dex/dex-chron1.jpg"
+    },
+    {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4",
+      "title": "Chronicles of Dex the Bearded Dragon: The Twelfth Day (Part 4)",
+      "excerpt": "Dex has settled into an eleven-day ritual with the cat beyond the glass, until the twelfth day arrives and the windowsill stays empty, in this quietly funny short story about routine, absence, and what a king starts counting on.",
+      "date": "2026-07-10",
+      "image": "/assets/images/dex/dex-chron4.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3",
+      "title": "Chronicles of Otis the Bunny: The Bark, the Gap, and the Matter of Proportion (Part 3)",
+      "excerpt": "Otis spends eleven days building a rival worthy of his fence line, then finds the gap in the boards and discovers the truth is a lot smaller than the legend he invented.",
+      "date": "2026-07-10",
+      "image": "/assets/images/otis/otis-chron2.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him",
+      "title": "Chronicles of Otis the Bunny: The Day He Decided the Garden Belonged to Him",
+      "excerpt": "Follow along in this Otis the bunny story — a charming short fiction about one determined rabbit navigating the big drama hiding in very small moments.",
+      "date": "2026-06-30",
+      "image": "/assets/images/otis/otis-chron3.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-garden-the-squirrel-and-the-matter-of-trespassing",
+      "title": "Chronicles of Otis the Bunny: The Garden, the Squirrel, and the Matter of Trespassing (Part 2)",
+      "excerpt": "A squirrel raids Otis's garden and gets away clean, leaving him to face an uncomfortable truth: there might be a whole world beyond his fence he's never once considered.",
+      "date": "2026-07-08",
+      "image": "/assets/images/otis/otis-chron1.jpg"
+    }
   ]
 }

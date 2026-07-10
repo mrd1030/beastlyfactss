@@ -58,9 +58,12 @@ function getChroniclesPages(sanityStorySlugs) {
       slugs.push(fm.slug || file.replace('.mdx', ''));
     }
   }
+  // A story can briefly exist in both MDX and Sanity mid-migration - count it once.
+  const dedupedSlugs = [...new Set(slugs)];
+
   const pages = [];
   for (const [id, prefix] of Object.entries(chroniclesPrefixes)) {
-    const partCount = slugs.filter(s => s.startsWith(prefix)).length;
+    const partCount = dedupedSlugs.filter(s => s.startsWith(prefix)).length;
     pages.push({ path: `/chronicles/${id}/`, changefreq: 'weekly', priority: '0.7' });
     for (let n = 1; n <= partCount; n++) {
       pages.push({ path: `/chronicles/${id}/${n}/`, changefreq: 'weekly', priority: '0.7' });

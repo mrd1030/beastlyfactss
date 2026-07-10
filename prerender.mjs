@@ -81,9 +81,12 @@ async function getChroniclesRoutes() {
     console.warn('⚠️  Could not fetch Sanity chronicles posts:', err.message);
   }
 
+  // A story can briefly exist in both MDX and Sanity mid-migration - count it once.
+  const dedupedSlugs = [...new Set(stories.map(s => s.slug))];
+
   const routes = [];
   for (const [id, prefix] of Object.entries(CHRONICLES_PREFIXES)) {
-    const partCount = stories.filter(s => s.slug.startsWith(prefix)).length;
+    const partCount = dedupedSlugs.filter(s => s.startsWith(prefix)).length;
     routes.push(`/chronicles/${id}`); // landing list
     for (let n = 1; n <= partCount; n++) routes.push(`/chronicles/${id}/${n}`);
   }
