@@ -134,6 +134,11 @@ const ANIMAL_IMAGES = {
   'Bat': '/assets/facts/bat.jpg',
   'Elephant Seal': '/assets/facts/elephant-seal.jpg',
   'Basenji': '/assets/facts/basenji.jpg',
+  'Alligator': '/assets/facts/american-alligator.jpg',
+  'Vulture': '/assets/facts/vulture.jpg',
+  'Dung Beetle': '/assets/facts/dung-beetle.jpg',
+  'Sperm Whale': '/assets/facts/sperm-whale.jpg',
+  'Vampire Bat': '/assets/facts/vampire-bat.jpg',
 };
 
 function imageFor(animal) {
