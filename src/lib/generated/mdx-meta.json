@@ -1,0 +1,1651 @@
+[
+  {
+    "path": "/content/blog/main-blog-post.mdx",
+    "slug": "welcome-to-beastlyfacts",
+    "title": "Welcome to BeastlyFacts - Why We're Here",
+    "seoTitle": null,
+    "excerpt": "Welcome to BeastlyFacts! Honest animal care guides, fun facts, and practical advice for reptile and small mammal owners.",
+    "date": "2026-06-01",
+    "category": "Site News",
+    "tags": [
+      "beastlyfacts",
+      "introduction"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/welcome-beastlyfacts.jpg",
+    "imageAlt": "BeastlyFacts logo with various happy pets",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/guides/ball-python-feeding-guide.mdx",
+    "slug": "ball-python-feeding-guide",
+    "title": "Ball Python Feeding: Everything You Need to Know",
+    "seoTitle": null,
+    "excerpt": "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal, and when to actually worry.",
+    "date": "2025-04-26",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Feeding",
+      "Behavior",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ball-python-feeding.jpg",
+    "imageAlt": "Ball python in a naturalistic enclosure with properly prepared frozen/thawed prey",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do I safely thaw frozen prey for my ball python?",
+        "a": "Seal the frozen rodent in a bag and submerge it in warm - not hot - water until it feels warm all the way through, usually 15 to 20 minutes for a medium rat. Never microwave prey: it heats unevenly, which can leave hot spots that burn a snake's mouth while the inside stays frozen."
+      },
+      {
+        "q": "Is frozen/thawed prey actually better than live prey?",
+        "a": "Yes. Live rodents can bite and seriously injure a snake, sometimes fatally, especially if the snake isn't hungry enough to strike immediately. Frozen/thawed removes that risk entirely and is the standard recommendation from reptile veterinarians."
+      },
+      {
+        "q": "Is it safe to handle my ball python right after it eats?",
+        "a": "No - wait at least 48 hours before handling. Handling too soon after a meal is one of the most common causes of regurgitation, which is stressful for the snake and nutritionally costly, and repeated episodes can lead to more serious digestive issues over time."
+      },
+      {
+        "q": "What size prey should I feed an adult ball python?",
+        "a": "Prey roughly the same width as the widest part of the snake's body - usually a medium rat for adults. Prey that's too large risks regurgitation; prey that's too small provides inadequate nutrition over time."
+      },
+      {
+        "q": "Should I feed my ball python inside or outside its enclosure?",
+        "a": "Inside is generally better. Moving a ball python to a separate feeding container was once common advice to avoid substrate ingestion, but it's now understood to add unnecessary stress and is linked to higher rates of food refusal in an already food-shy species. As long as loose substrate isn't a choking hazard, feeding in place is the better practice."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/ball-python-vs-corn-snake-guide.mdx",
+    "slug": "ball-python-vs-corn-snake-guide",
+    "title": "Ball Python vs. Corn Snake: Which Beginner Snake Fits You Better",
+    "seoTitle": "Ball Python vs. Corn Snake: Beginner Snake Guide",
+    "excerpt": "Ball python or corn snake? The real differences in feeding reliability, humidity needs, escape risk, and lifespan commitment - not just which one looks calmer at the pet store.",
+    "date": "2026-07-08",
+    "category": "Comparisons",
+    "tags": [
+      "Ball Python",
+      "Corn Snake",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ball-python-vs-corn-snake.jpg",
+    "imageAlt": "A ball python and a corn snake side by side for comparison",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which is easier to feed, a ball python or a corn snake?",
+        "a": "Corn snakes, by a wide margin. They're reliable, voracious eaters that rarely refuse a meal. Ball pythons are notorious for feeding strikes - going weeks or even months without eating, especially when stressed or newly acquired - which is unsettling for a first-time owner even though it's rarely actually dangerous."
+      },
+      {
+        "q": "Which snake is more likely to escape its enclosure?",
+        "a": "Corn snakes, easily. They're strong, persistent, and remarkably good at finding and exploiting any gap in a lid or door. Ball pythons are calmer and less driven to escape, though a loose enclosure is still a bad idea with either species."
+      },
+      {
+        "q": "Do ball pythons or corn snakes need higher humidity?",
+        "a": "Ball pythons need it higher - generally 50 to 60%, climbing toward 70% during a shed - since they come from humid West and Central African grasslands. Corn snakes are native to the drier central and eastern United States and do fine around 40 to 50%, closer to normal household humidity."
+      },
+      {
+        "q": "Which snake lives longer, a ball python or a corn snake?",
+        "a": "Ball pythons, often by a decade or more. A well-kept ball python commonly lives 20 to 30 years in captivity. Corn snakes typically live 15 to 20 years. Both are a genuine long-term commitment, but a ball python is the bigger one."
+      },
+      {
+        "q": "Which is calmer to handle, a ball python or a corn snake?",
+        "a": "Ball pythons, generally. Their entire defense strategy is to curl into a tight ball rather than bite or flee, which is exactly how they got their name. Corn snakes are also docile but more active and wriggly on the hand, and hatchlings will sometimes musk (release a smelly defensive secretion) when first handled."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bearded-dragon-vs-leopard-gecko-guide.mdx",
+    "slug": "bearded-dragon-vs-leopard-gecko-guide",
+    "title": "Bearded Dragon vs. Leopard Gecko: Which Beginner Reptile Should You Get",
+    "seoTitle": "Bearded Dragon vs. Leopard Gecko: Which to Get?",
+    "excerpt": "Both get recommended as the best beginner reptile. Here's the honest difference in cost, daily care, and commitment before you pick one.",
+    "date": "2026-07-08",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Leopard Gecko",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bearded-dragon-vs-leopard-gecko.jpg",
+    "imageAlt": "A bearded dragon and a leopard gecko side by side for comparison",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which is truly easier for a first-time reptile owner?",
+        "a": "Leopard geckos, on balance - a smaller enclosure, lower mandatory UVB requirement, and a simpler insect-only diet with no vegetables to manage. Bearded dragons aren't hard, but they demand more precisely: a bigger tank, mandatory strong UVB, and a mixed diet that changes ratio as they grow."
+      },
+      {
+        "q": "Which needs less daily feeding work?",
+        "a": "Leopard geckos. Adults typically eat every other day and the diet is just gut-loaded insects with calcium dusting - no chopping vegetables. Adult bearded dragons eat daily and need a genuine mix of vegetables and insects prepared regularly, which is more daily hands-on prep."
+      },
+      {
+        "q": "Which one will I actually see active during the day?",
+        "a": "Bearded dragons, clearly. They're diurnal and will bask, explore, and interact with you during normal daytime hours. Leopard geckos are crepuscular to nocturnal and are typically hiding and inactive for most of the day, becoming active at dusk."
+      },
+      {
+        "q": "Which lives longer, a bearded dragon or a leopard gecko?",
+        "a": "Leopard geckos, somewhat surprisingly given their smaller size - 15 to 20 years is common, sometimes more. Bearded dragons typically live 10 to 15 years. Both are a real long-term commitment, but the gecko is the longer one."
+      },
+      {
+        "q": "Can a bearded dragon and a leopard gecko be housed together?",
+        "a": "No. Different climate needs, different UVB requirements, different diets, and a size mismatch that puts the smaller leopard gecko at real risk. Reptiles of different species should essentially never share an enclosure regardless of apparent size compatibility."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/betta-fish-vs-goldfish-guide.mdx",
+    "slug": "betta-fish-vs-goldfish-guide",
+    "title": "Betta Fish vs. Goldfish: Which Beginner Fish Fits You Better",
+    "seoTitle": "Betta Fish vs. Goldfish: Beginner Fish Guide",
+    "excerpt": "Betta or goldfish? The real differences in tank size, temperature needs, social behavior, and lifespan - not just which one is cheaper at the pet store.",
+    "date": "2026-07-08",
+    "category": "Comparisons",
+    "tags": [
+      "Betta Fish",
+      "Goldfish",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-vs-goldfish.jpg",
+    "imageAlt": "A betta fish and a goldfish side by side for comparison",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can a betta fish or goldfish live in a small bowl?",
+        "a": "No, and this is one of the most damaging myths in the fishkeeping hobby. A betta needs a heated, filtered tank of at least 5 gallons. A goldfish needs far more - a single common goldfish can outgrow 20 gallons and keeps growing, while even a fancy goldfish needs at least 20 gallons on its own."
+      },
+      {
+        "q": "Do betta fish and goldfish need the same water temperature?",
+        "a": "No, and the requirements actually point in opposite directions. Betta fish are tropical and need heated water around 75 to 80 degrees F. Goldfish are coldwater fish that do best around 65 to 72 degrees F and can be stressed by a heater running too warm."
+      },
+      {
+        "q": "Can I keep two betta fish or two goldfish together?",
+        "a": "Male bettas cannot be kept together - they're known as Siamese fighting fish for a reason and will fight, often fatally. Goldfish are the opposite: they're social schooling fish that generally do best with same-species company rather than living alone."
+      },
+      {
+        "q": "Which lives longer, a betta fish or a goldfish?",
+        "a": "Goldfish, often dramatically so. A betta typically lives 2 to 4 years. A well-kept goldfish commonly lives 10 to 15 years, and some documented goldfish have lived 20 to 30 years or more - a genuinely long-term commitment most people don't expect from a fish."
+      },
+      {
+        "q": "Which fish needs stronger filtration, a betta or a goldfish?",
+        "a": "Goldfish, by a wide margin. They're notoriously heavy waste producers for their size and need considerably stronger filtration and more frequent water changes than a betta in a similarly sized tank."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/betta-fish-water-parameters-guide.mdx",
+    "slug": "betta-fish-water-parameters-guide",
+    "title": "Betta Fish Water Parameters: The Numbers That Actually Matter",
+    "seoTitle": "Betta Fish Water Parameters Guide",
+    "excerpt": "The betta water numbers that matter - temperature, pH, ammonia, nitrite, and nitrate targets - plus what to test, how often, and which are non-negotiable.",
+    "date": "2026-06-16",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Water Quality",
+      "Water Parameters",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-water-parameters.jpg",
+    "imageAlt": "Betta fish in a well-planted aquarium with a water test kit and thermometer nearby",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the single most important water parameter for a betta fish?",
+        "a": "Ammonia. It should read exactly 0 ppm in an established tank, with no exceptions - even a trace reading of 0.25 ppm causes measurable gill damage. Temperature matters enormously too, but ammonia is the one that turns into an emergency the fastest."
+      },
+      {
+        "q": "Do I still need to test water once my tank is established and stable?",
+        "a": "Yes, weekly at minimum. Established tanks can still spike if the filter gets disrupted, the bio-media is rinsed in tap water (which kills beneficial bacteria), or the tank becomes overstocked or overfed. A weekly test catches a developing problem before it becomes visible in the fish."
+      },
+      {
+        "q": "Can I use tap water straight from the faucet for a betta tank?",
+        "a": "Only after treating it with a dechlorinator rated for both chlorine and chloramine - many municipal water systems use chloramine specifically because it doesn't evaporate out like chlorine does, so a dechlorinator formulated only for chlorine won't fully neutralize it."
+      },
+      {
+        "q": "What usually causes an ammonia spike in a tank that was previously fine?",
+        "a": "The most common causes are overfeeding (uneaten food breaks down into ammonia), overcleaning the filter (rinsing bio-media under tap water kills the bacteria colony living on it), or a sudden increase in bioload, like adding another fish without re-cycling the tank first."
+      },
+      {
+        "q": "How often should I actually change the water?",
+        "a": "For most heated, filtered betta tanks, a 25 to 30 percent water change weekly is the standard baseline. Smaller tanks with less water volume to dilute waste may need more frequent partial changes to keep nitrate under control between full tests."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bioactive-setups-bearded-dragons.mdx",
+    "slug": "bioactive-setups-bearded-dragons",
+    "title": "Bioactive Setups for Bearded Dragons",
+    "seoTitle": null,
+    "excerpt": "A complete guide to building a self-sustaining bioactive terrarium for bearded dragons with live plants and a cleanup crew.",
+    "date": "2026-06-03",
+    "category": "Reptiles",
+    "tags": [
+      "bioactive",
+      "bearded-dragon",
+      "setup",
+      "enclosure",
+      "husbandry"
+    ],
+    "readTime": 15,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/bioactive-bearded-dragon.jpg",
+    "imageAlt": "Adult bearded dragon in a lush bioactive terrarium with live plants",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a bioactive setup safe for a baby bearded dragon?",
+        "a": "Most keepers wait until a dragon is a juvenile or older before moving to bioactive, since hatchlings are harder to monitor closely in a more naturalistic setup and their care needs change quickly in the first few months. A simpler substrate is usually easier to manage during that early stage."
+      },
+      {
+        "q": "How long before I can add my dragon to a new bioactive setup?",
+        "a": "Give the plants and cleanup crew a few weeks to a month to establish before introducing the dragon. Moving a dragon in too early means the isopods and springtails haven't built up enough of a population to keep pace with waste."
+      },
+      {
+        "q": "Do bioactive setups really need less cleaning?",
+        "a": "Yes, for full substrate changes - a healthy cleanup crew processes waste continuously, so you're not tearing down and replacing substrate nearly as often. You'll still want to spot clean as needed; bioactive reduces deep cleaning, not all maintenance."
+      },
+      {
+        "q": "Can I use bioactive substrate in any size enclosure?",
+        "a": "Bioactive works best in a 4x2x2 or larger enclosure, since the substrate needs real depth (4 to 6 inches minimum) for the cleanup crew and plant roots to function properly. Smaller enclosures don't have room for that depth without cutting into the dragon's usable floor space."
+      },
+      {
+        "q": "What happens if my cleanup crew dies off?",
+        "a": "Waste will start accumulating faster than it's processed, and you'll likely notice odor or mold developing. This usually points to a substrate that's too wet, too dry, or lacking enough organic material to sustain the isopods and springtails - check moisture levels first, then consider a fresh starter culture if the population doesn't recover."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/budgie-cere-color-guide.mdx",
+    "slug": "budgie-cere-color-guide",
+    "title": "Why Is My Budgie's Cere Changing Color? What It Actually Means",
+    "seoTitle": "Why Is My Budgie's Cere Changing Color?",
+    "excerpt": "What your budgie's cere color says about sex, age, and health - why a female's cere turns brown in breeding condition, and when a change means trouble.",
+    "date": "2026-06-19",
+    "category": "Birds",
+    "tags": [
+      "Budgie",
+      "Cere",
+      "Sexing",
+      "Health",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-cere-color.jpg",
+    "imageAlt": "Close-up of a budgerigar's cere showing its color and texture in natural light",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What color cere means my budgie is male?",
+        "a": "A blue or purple-blue cere is the standard indicator of an adult male budgie. Some color mutations produce slightly different shades, but blue-toned is the reliable pattern across most standard budgie colorations."
+      },
+      {
+        "q": "Why does my female budgie's cere look brown and crusty?",
+        "a": "This is a normal sign of breeding condition - hormonal changes cause the cere to thicken and develop a browner, sometimes crusty texture, especially with more daylight exposure or the presence of a mate or nesting material. It typically returns to a smoother, paler tan or white outside of breeding condition."
+      },
+      {
+        "q": "Can I tell a budgie's sex before it's fully grown?",
+        "a": "Not reliably. Juvenile budgies of both sexes usually have a pink or pale purple cere regardless of sex, and the adult blue-versus-brown distinction typically doesn't settle in until somewhere around 6 to 12 months of age."
+      },
+      {
+        "q": "Is a change in cere color always a health concern?",
+        "a": "No - in females, brown and crusty is a normal hormonal state, not automatically a problem. In males, however, a cere that turns brown, crusty, or scaly is more often a genuine warning sign, sometimes linked to conditions like scaly face mites or, less commonly, a cere tumor, and is worth an avian vet check."
+      },
+      {
+        "q": "Can diet or hormones affect cere color in adult budgies?",
+        "a": "Yes. Hormonal state is the main driver of cere changes in females specifically, and overall health and hormone balance can influence cere texture and color intensity in both sexes over time, which is part of why sudden or unusual changes are worth paying attention to."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/budgie-vs-cockatiel-guide.mdx",
+    "slug": "budgie-vs-cockatiel-guide",
+    "title": "Budgie vs. Cockatiel: Which Beginner Bird Fits You Better",
+    "seoTitle": "Budgie vs. Cockatiel: Beginner Bird Guide",
+    "excerpt": "Budgie or cockatiel? The real differences in noise, lifespan, talking ability, and how affectionate each one actually is - not just which one is smaller at the pet store.",
+    "date": "2026-07-08",
+    "category": "Comparisons",
+    "tags": [
+      "Budgie",
+      "Cockatiel",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-vs-cockatiel.jpg",
+    "imageAlt": "A budgie and a cockatiel side by side for comparison",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which bird talks better, a budgie or a cockatiel?",
+        "a": "Budgies, surprisingly. Despite being the smaller of the two, budgies are excellent mimics and can build large vocabularies of clearly spoken words. Cockatiels are better known for whistling melodies and tunes than for clear speech, though individual birds vary."
+      },
+      {
+        "q": "Which is louder, a budgie or a cockatiel?",
+        "a": "Cockatiels, generally. Their contact calls and attention-seeking screeches can be sudden and piercing, especially during a hormonal or territorial phase. Budgies chatter more constantly but at a softer, less startling volume overall."
+      },
+      {
+        "q": "Which bird is more affectionate, a budgie or a cockatiel?",
+        "a": "Cockatiels have the stronger reputation for one-on-one bonding - head scratches, cuddling, and seeking out a favorite person are classic cockatiel behavior. Budgies are social and energetic but tend to be more independently active than overtly cuddly."
+      },
+      {
+        "q": "Which lives longer, a budgie or a cockatiel?",
+        "a": "Cockatiels, usually by a decade or more. A well-kept budgie typically lives 5 to 10 years. A well-kept cockatiel commonly lives 15 to 25 years, which is a meaningfully bigger long-term commitment to weigh before choosing."
+      },
+      {
+        "q": "Which bird needs a bigger cage, budgie or cockatiel?",
+        "a": "Cockatiels do. They're roughly twice the length of a budgie and need proportionally larger cage dimensions and bar spacing. A cage sized for a budgie is too small for a cockatiel."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
+    "slug": "cat-hairball-vs-vomiting-guide",
+    "title": "Cat Hairballs vs. Vomiting: When It's Actually a Problem",
+    "seoTitle": "Cat Hairballs vs Vomiting: When to Worry",
+    "excerpt": "An occasional hairball is normal. Frequent vomiting isn't - here's how to tell the difference and what's actually driving it.",
+    "date": "2026-07-08",
+    "category": "Cats",
+    "tags": [
+      "Cat",
+      "Hairballs",
+      "Vomiting",
+      "Digestive Health",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cat-hairball-vomiting.jpg",
+    "imageAlt": "Fluffy cat perched on a sunny windowsill, paw raised against the glass",
+    "emoji": "🐱",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often is it normal for a cat to bring up a hairball?",
+        "a": "Roughly once every one to two weeks for a healthy shorthair cat is generally within normal range, and long-haired breeds may run a bit more often given how much more fur they swallow while grooming. More than once a week is a signal that something else is going on, not just a side effect of being a cat."
+      },
+      {
+        "q": "How can I tell a hairball apart from regular vomiting?",
+        "a": "A hairball is usually preceded by repeated retching or hacking, produces a compacted tube-shaped wad of fur, and the cat typically acts completely normal right after. True vomiting tends to bring up liquid or food, can recur multiple times in a short period, and is often paired with lethargy, appetite loss, or diarrhea - those accompanying signs are the real tell, not just the texture of what came up."
+      },
+      {
+        "q": "What actually causes frequent hairballs?",
+        "a": "Excess shedding or over-grooming from stress, allergies, or fleas is one common driver. Inadequate fiber to help fur pass through the gut normally is another. And sometimes frequent hairballs are a symptom of an underlying issue slowing gut motility overall, rather than a coincidence of simply being a cat that grooms a lot."
+      },
+      {
+        "q": "Do hairball remedies and special food actually work?",
+        "a": "Fiber-supplemented hairball diets and lubricant gels can genuinely help fur move through the gut, and they're reasonable to try. But they don't address an underlying cause like a food sensitivity or a thyroid issue - if frequency doesn't improve within a few weeks of consistent use, the remedy is masking a symptom rather than solving the actual problem."
+      },
+      {
+        "q": "When should frequent hairballs prompt a vet visit?",
+        "a": "More than once a week, any accompanying weight loss, appetite change, or diarrhea, or vomiting that produces no hairball at all - these combinations point toward inflammatory bowel disease, food sensitivities, or hyperthyroidism rather than normal grooming, and are worth bloodwork and an exam rather than another bag of hairball treats."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/chameleon-hydration-drippers-misters-fogging.mdx",
+    "slug": "chameleon-hydration-drippers-misters-fogging",
+    "title": "Chameleon Hydration: Drippers vs. Misters vs. Foggers Explained",
+    "seoTitle": "Chameleon Hydration: Drippers vs. Misters",
+    "excerpt": "Drippers, misters, and foggers compared for chameleon hydration - how each works, which fits your setup, and how to spot dehydration before it's serious.",
+    "date": "2026-06-20",
+    "category": "Reptiles",
+    "tags": [
+      "Chameleon",
+      "Hydration",
+      "Husbandry",
+      "Care Tips"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/chameleon-hydration.jpg",
+    "imageAlt": "Chameleon on a branch in a humid terrarium with visible misting droplets on leaves",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should a dripper run each day?",
+        "a": "20 to 30 minutes, once or twice a day, is typical for most species. Timing it for when the chameleon is naturally active (usually shortly after lights-on) makes it far more likely the animal notices the movement and drinks."
+      },
+      {
+        "q": "Can I just use a spray bottle instead of a misting system?",
+        "a": "You can, but consistency is the entire point of a hydration system, and manual misting is the first thing to slip on a busy day. A missed session or two matters more for a chameleon than for most reptiles, since they have no way to store water reserves the way some desert species can."
+      },
+      {
+        "q": "Do foggers replace the need for a dripper?",
+        "a": "No. A fogger raises ambient humidity and can help with shedding and respiratory health, but it produces very little actual drinkable water on leaf surfaces compared to a dripper or misting system. Most keepers use a fogger as a supplement for overnight humidity, not as the primary drinking source."
+      },
+      {
+        "q": "How do I know if my chameleon is drinking enough?",
+        "a": "Watch for tongue-flicking or lapping motion at leaves during misting or dripper sessions, and check urate color in droppings - it should be white, not yellow or orange. Sunken eyes are the clearest sign that intake has been insufficient for a while."
+      },
+      {
+        "q": "Is tap water safe for misting?",
+        "a": "Only after dechlorination. Chameleons absorb far more through drinking droplets directly than most reptiles do through skin contact, so use the same dechlorinated or reverse-osmosis water for misting and drippers that you'd use for any sensitive aquatic pet."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/cockatoo-screaming-feather-plucking-explained.mdx",
+    "slug": "cockatoo-screaming-feather-plucking-explained",
+    "title": "Why Cockatoos Scream and Pluck: The Behavior Behind the Headlines",
+    "seoTitle": "Why Cockatoos Scream and Pluck Feathers",
+    "excerpt": "Why cockatoos scream and pluck their feathers - the psychology behind these behaviors, what genuinely reduces them, and what makes them worse.",
+    "date": "2026-06-23",
+    "category": "Birds",
+    "tags": [
+      "Cockatoo",
+      "Behavior",
+      "Feather Plucking",
+      "Care Tips"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/cockatoo-feather-plucking.jpg",
+    "imageAlt": "Cockatoo perched calmly in an enriched aviary space, feathers and crest visible",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it normal for a cockatoo to scream at certain times of day?",
+        "a": "Brief bouts of loud contact calling around dawn and dusk are normal cockatoo behavior, mirroring when wild flocks are most vocal. What's not normal is prolonged, escalating screaming throughout the day, which usually signals unmet social or enrichment needs rather than a fixed daily habit."
+      },
+      {
+        "q": "Can feather plucking be reversed once it starts?",
+        "a": "Sometimes, especially if caught early and the underlying cause (medical, nutritional, or behavioral) is identified and addressed quickly. Established, long-term plucking is harder to fully reverse because the behavior itself can become self-soothing and habitual even after the original trigger is resolved."
+      },
+      {
+        "q": "Should I punish a cockatoo for screaming?",
+        "a": "No. Yelling back, covering the cage as punishment, or other negative reactions frequently reinforce the behavior rather than reducing it, since any reliable response to a scream can register to the bird as the call successfully working. Rewarding calm behavior tends to work far better than punishing loud behavior."
+      },
+      {
+        "q": "Do all cockatoo species scream and pluck equally?",
+        "a": "There's individual and some species variation in intensity, but the underlying drivers - high social needs, intelligence, and a strong evolutionary reliance on flock contact - are shared broadly across cockatoo species. No commonly kept cockatoo species should be assumed low-maintenance on this front."
+      },
+      {
+        "q": "How much daily attention actually prevents these problems?",
+        "a": "There's no universal number, but multiple hours of direct daily interaction, spread across the day rather than one long session, is the consistent theme in cases where cockatoos are well-adjusted. Households that can't offer this consistently tend to see screaming and plucking develop regardless of how well the cage and diet are set up."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/crested-gecko-humidity-guide.mdx",
+    "slug": "crested-gecko-humidity-guide",
+    "title": "Why Humidity Is Everything for Crested Geckos",
+    "seoTitle": null,
+    "excerpt": "Crested geckos need precise humidity to shed cleanly, stay hydrated, and thrive. Get it wrong and problems stack fast - here's exactly how to nail it.",
+    "date": "2025-05-10",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Humidity",
+      "Husbandry",
+      "Care Tips"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-humidity.jpg",
+    "imageAlt": "Crested gecko in a lush, humid tropical terrarium with visible mist and condensation",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What happens if humidity gets too high instead of too low?",
+        "a": "Consistently saturated conditions with no dry period encourage mold, bacterial growth, and respiratory issues - crested geckos need the wet-dry cycle, not constant sogginess. Good ventilation alongside misting prevents this."
+      },
+      {
+        "q": "Do crested geckos need a bioactive setup for good humidity?",
+        "a": "No, bioactive helps but isn't required. A well-planted enclosure with the right substrate and a consistent misting routine can hold proper humidity just as well; bioactive mainly reduces how often you need to intervene manually."
+      },
+      {
+        "q": "Do live plants help maintain humidity better than fake plants?",
+        "a": "Yes, to a meaningful degree. Live plants continuously release moisture through transpiration and their soil holds humidity longer than bare substrate, which smooths out the swings between mistings. Quality fake plants still hold surface moisture fine, just without that extra ongoing contribution."
+      },
+      {
+        "q": "Can I rely on an automatic mister alone?",
+        "a": "For most keepers, yes, once it's dialed in correctly - automatic mist systems remove the inconsistency of manual spraying. Check readings with a hygrometer for the first few weeks to confirm the timer settings are actually hitting your target range."
+      },
+      {
+        "q": "Is a hygrometer really necessary for a small enclosure?",
+        "a": "Yes. Small enclosures can swing between too dry and too saturated faster than larger ones, and it's genuinely difficult to judge humidity by eye. A digital hygrometer is inexpensive relative to how much it protects against shedding and respiratory problems."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/dog-bloat-gdv-guide.mdx",
+    "slug": "dog-bloat-gdv-guide",
+    "title": "Bloat in Dogs: The Emergency Every Large-Breed Owner Should Know",
+    "seoTitle": "Dog Bloat (GDV): Warning Signs to Know",
+    "excerpt": "Bloat can kill a healthy dog within hours - the early signs, which breeds are most at risk, and why this is always a drive-to-the-vet-now emergency.",
+    "date": "2026-07-08",
+    "category": "Dogs",
+    "tags": [
+      "Dog",
+      "Bloat",
+      "GDV",
+      "Health",
+      "Emergency",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/dog-bloat-gdv.jpg",
+    "imageAlt": "Large deep-chested dog resting calmly indoors after a meal",
+    "emoji": "🐶",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the difference between bloat and GDV?",
+        "a": "Bloat on its own just means the stomach has filled with gas, food, or fluid and distended - uncomfortable, but not always immediately fatal. GDV (gastric dilatation-volvulus) is what happens when that distended stomach also twists on itself, cutting off its own blood supply along with the spleen. Plain bloat can progress into GDV within hours, which is why both are treated as emergencies rather than waiting to see which one it is."
+      },
+      {
+        "q": "Which breeds are most at risk?",
+        "a": "Deep-chested large and giant breeds top the list: Great Danes, Standard Poodles, German Shepherds, Weimaraners, Saint Bernards, and Doberman Pinschers among them. Labradors and other moderately deep-chested large breeds carry some risk too, just less than the extreme cases. Chest depth relative to width matters more than raw body size."
+      },
+      {
+        "q": "Does raising food bowls prevent bloat?",
+        "a": "No, and this is one of the more persistent pieces of outdated advice still floating around. A widely cited Purdue University study actually found elevated bowls associated with higher bloat risk in at-risk breeds, not lower. Feeding from a normal, floor-level bowl is the current recommendation."
+      },
+      {
+        "q": "Can bloat happen without a big meal?",
+        "a": "Yes. Stress, eating too fast, and exercising right after a meal all play a role independent of how much food was actually eaten, and genetics matters too - dogs with a first-degree relative that bloated are at higher risk regardless of feeding habits."
+      },
+      {
+        "q": "Is preventive gastropexy surgery worth it for high-risk breeds?",
+        "a": "For many high-risk breeds, yes - vets often recommend it, sometimes performed at the same time as a spay or neuter to avoid a second anesthesia event. A gastropexy doesn't stop the stomach from filling with gas, but it tacks the stomach to the abdominal wall so it can't twist, which is the part that actually kills. That single change dramatically lowers the odds of a fatal outcome."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/ferret-adrenal-disease-guide.mdx",
+    "slug": "ferret-adrenal-disease-guide",
+    "title": "Ferret Adrenal Disease: The Hair Loss Pattern Owners Often Miss",
+    "seoTitle": "Ferret Adrenal Disease: Signs to Know",
+    "excerpt": "How to spot the telltale hair-loss pattern of ferret adrenal disease, why early spay and neuter age matters, and the treatment options that actually help.",
+    "date": "2026-06-24",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Adrenal Disease",
+      "Health",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-adrenal-disease.jpg",
+    "imageAlt": "Ferret in a cozy indoor habitat, alert and healthy",
+    "emoji": "🦡",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does ferret hair loss from adrenal disease actually look like?",
+        "a": "It's symmetrical, usually starting at the base of the tail and gradually moving up the back toward the head and shoulders. The underlying skin typically stays healthy - not scabby, red, or intensely itchy - which is one of the clues that separates it from mites or a skin infection."
+      },
+      {
+        "q": "Is adrenal disease curable in ferrets?",
+        "a": "It's treatable and often manageable long-term, but not always fully curable, especially if both adrenal glands are affected or if surgery isn't a safe option. Many ferrets live comfortably for years with appropriate medical management even without a full cure."
+      },
+      {
+        "q": "Does neutering age really affect adrenal disease risk?",
+        "a": "Research points to a strong association between very early spay or neuter (common in mass pet-trade ferrets) and higher rates of adrenal disease later in life, likely due to how removing gonads early disrupts the hormonal feedback loop. It's an association, not a guaranteed cause, but it's a widely discussed risk factor among exotic vets."
+      },
+      {
+        "q": "Can male and female ferrets both get adrenal disease?",
+        "a": "Yes, both sexes are affected. In spayed females, a hallmark additional sign is a swollen vulva, since the disease can cause the body to behave as if it's in a hormonal heat cycle even though the ovaries are gone."
+      },
+      {
+        "q": "Is surgery always necessary, or can it be managed with medication?",
+        "a": "Not always. Surgical removal of the affected adrenal gland can be curative when only one gland is involved and the ferret is a good surgical candidate, but implants like deslorelin are commonly used as medical management, especially for ferrets where surgery carries more risk or both glands are affected."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/goldfish-tank-size-bowl-myth.mdx",
+    "slug": "goldfish-tank-size-bowl-myth",
+    "title": "The Goldfish Bowl Myth: What the Research Actually Shows",
+    "seoTitle": "The Goldfish Bowl Myth Debunked",
+    "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
+    "date": "2026-06-26",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Tank Size",
+      "Myths",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-tank-size.jpg",
+    "imageAlt": "Goldfish swimming in a spacious, properly planted aquarium",
+    "emoji": "🐟",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can a goldfish live in a bowl even temporarily, like during a tank cycle?",
+        "a": "A few days in an emergency (like transporting the fish) is different from ongoing housing, but a bowl should never be the actual plan. Without filtration, ammonia builds up within a day or two even in a large bowl, so any temporary holding container still needs partial water changes every day."
+      },
+      {
+        "q": "How do I know if my current goldfish tank is too small?",
+        "a": "Test the water. If ammonia or nitrite ever reads above zero between water changes, or if you're doing water changes more than twice a week just to keep the fish alive, the tank is undersized for the bioload it's carrying - regardless of what the fish looks like."
+      },
+      {
+        "q": "Do goldfish need a filter, or is frequent water changing enough?",
+        "a": "A filter is not optional. Manual water changes alone can dilute ammonia, but they can't replace the beneficial bacteria colony that continuously processes waste between changes. Without a filter, water quality swings dramatically between change days even with a diligent schedule."
+      },
+      {
+        "q": "Can I keep a goldfish and a betta together?",
+        "a": "Not recommended. Goldfish need cooler water (65-72°F) than bettas (78-80°F), and goldfish are voracious fin-nippers that will target a betta's long fins. The temperature mismatch alone makes this pairing a poor fit for either species."
+      },
+      {
+        "q": "What's the real minimum tank size for two goldfish?",
+        "a": "For two fancy goldfish, aim for at least 30 gallons (the 20-gallon single-fish minimum plus 10 gallons for the second fish), with strong filtration rated above that volume. Two common or comet goldfish need a pond or a tank well over 60 gallons given their adult size."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/guinea-pig-scurvy-vitamin-c-guide.mdx",
+    "slug": "guinea-pig-scurvy-vitamin-c-guide",
+    "title": "Guinea Pig Scurvy: Why Vitamin C Isn't Optional",
+    "seoTitle": "Guinea Pig Scurvy: Vitamin C Guide",
+    "excerpt": "Guinea pigs can't make their own vitamin C, unlike almost every other small pet. Here's what scurvy actually looks like and why pellets alone aren't enough.",
+    "date": "2026-07-08",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Scurvy",
+      "Vitamin C",
+      "Health",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-scurvy.jpg",
+    "imageAlt": "Guinea pig eating a piece of fresh bell pepper",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much vitamin C does a guinea pig need each day?",
+        "a": "Around 10 to 30 milligrams daily for a healthy adult, rising to 30 to 50 milligrams for pregnant, ill, or growing guinea pigs. In practical terms, a quarter of a medium bell pepper covers a typical adult's daily need on its own, which is why fresh vegetables matter more than any single supplement."
+      },
+      {
+        "q": "Can scurvy be reversed once it starts?",
+        "a": "Often, yes, if caught early. Vet-guided vitamin C supplementation combined with correcting the diet typically resolves early to moderate cases within one to two weeks. Advanced cases with joint damage or significant weight loss take longer to recover from and may leave some lasting stiffness, which is exactly why catching it early matters so much."
+      },
+      {
+        "q": "Do vitamin C drops added to water work?",
+        "a": "Not reliably. Vitamin C degrades quickly once dissolved in water, especially with light exposure, often losing much of its potency within hours. Guinea pigs also drink variable amounts day to day, so dosing through water is inconsistent even before the degradation problem. Fresh vegetables are the dependable source, not water additives."
+      },
+      {
+        "q": "What's the single best food source of vitamin C for a guinea pig?",
+        "a": "Bell peppers, and red, yellow, or orange peppers contain meaningfully more vitamin C than green ones. A quarter of a medium pepper daily covers most of an adult guinea pig's requirement on its own. Dark leafy greens like kale, parsley, and cilantro are strong secondary sources to rotate in for variety."
+      },
+      {
+        "q": "Can a guinea pig get too much vitamin C?",
+        "a": "Excess vitamin C is water-soluble and mostly gets excreted rather than stored, so there's a wide safety margin with normal fresh-food feeding. The goal is consistent daily intake from real food, not maximizing a single dose - there's no benefit to overloading on vitamin C, and consistently very high supplemental doses have been loosely associated with kidney stone risk in some cases."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/hamster-vs-guinea-pig-guide.mdx",
+    "slug": "hamster-vs-guinea-pig-guide",
+    "title": "Hamster vs. Guinea Pig: Which Small Pet Is Actually Right for You",
+    "seoTitle": "Hamster vs. Guinea Pig: Which Is Right for You?",
+    "excerpt": "Hamster or guinea pig? The honest differences in space, social needs, lifespan, and daily care - not just which one looks cuter in the store.",
+    "date": "2026-07-08",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hamster",
+      "Guinea Pig",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-vs-guinea-pig.jpg",
+    "imageAlt": "A hamster and a guinea pig side by side for size comparison",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which is better for a young child, a hamster or a guinea pig?",
+        "a": "Guinea pigs, generally. They're awake more during normal daytime hours, tolerate gentle handling better, and rarely bite defensively the way a startled hamster can. Hamsters are nocturnal and are often asleep exactly when a child wants to play with them, which leads to grumpy, defensive animals and disappointed kids."
+      },
+      {
+        "q": "Which is cheaper to keep, a hamster or a guinea pig?",
+        "a": "Hamsters cost less up front and less per year - smaller cage, less food, no mandatory companion to buy. A guinea pig's ongoing costs run higher mainly because of daily fresh vegetables (for vitamin C) and because they should be kept in pairs, effectively doubling most recurring costs."
+      },
+      {
+        "q": "Can I keep a hamster and a guinea pig in the same cage?",
+        "a": "No. They have different dietary needs (guinea pigs require daily vitamin C, hamsters don't), different size requirements, and guinea pigs can seriously injure a hamster even without meaning to just by being much larger. They should always be housed separately."
+      },
+      {
+        "q": "Which lives longer, a hamster or a guinea pig?",
+        "a": "Guinea pigs, by a wide margin. A hamster typically lives 2 to 3 years; a guinea pig typically lives 4 to 8 years. If a shorter-term commitment is actually what you want (for example, easing a child into pet ownership), that cuts the other way - it isn't automatically a downside."
+      },
+      {
+        "q": "Is a guinea pig or a hamster more social with its owner?",
+        "a": "Guinea pigs, generally. They're highly vocal, food-motivated, and often visibly excited (\"popcorning\") when their owner approaches. Hamsters can become comfortable with handling but are naturally solitary and less inclined to seek out interaction the way a guinea pig does."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/invertebrate-molting-guide.mdx",
+    "slug": "invertebrate-molting-guide",
+    "title": "Invertebrate Molting 101: What's Normal Across Tarantulas, Hermit Crabs, and Jumping Spiders",
+    "seoTitle": "Invertebrate Molting 101: What's Normal",
+    "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
+    "date": "2026-06-28",
+    "category": "Invertebrates",
+    "tags": [
+      "Invertebrates",
+      "Molting",
+      "Tarantula",
+      "Hermit Crab",
+      "Jumping Spider",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/invertebrate-molting.jpg",
+    "imageAlt": "Tarantula on natural substrate beside a freshly shed exoskeleton",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do I know a molt failed versus is just taking a long time?",
+        "a": "Duration alone isn't the tell - a hermit crab buried for three weeks is normal, while a tarantula visibly stuck half in and half out of its old exoskeleton for hours, with no progress, is not. Look for active struggling that isn't resolving, rather than just going by the clock."
+      },
+      {
+        "q": "Should I increase humidity before an expected molt?",
+        "a": "Yes, for most species. Slightly elevated humidity during premolt helps the old exoskeleton separate cleanly from the new one underneath, which reduces the risk of a failed molt. Species-specific care guides typically note a premolt humidity bump for exactly this reason."
+      },
+      {
+        "q": "Can I speed up a molt that seems stalled?",
+        "a": "No, and attempting to should be avoided entirely. Physically assisting a molt without experience or training frequently causes fatal injury, since the new exoskeleton underneath is extremely fragile. If a molt genuinely appears to have failed, an exotic vet or a highly experienced keeper is the only appropriate intervention."
+      },
+      {
+        "q": "Do invertebrates eat their old exoskeleton?",
+        "a": "Many do, and it's normal, not a sign of a problem. The shed exoskeleton contains calcium and other nutrients, and species like tarantulas and some hermit crabs will consume all or part of it after a molt completes."
+      },
+      {
+        "q": "How long after a molt can I resume handling?",
+        "a": "Wait until the new exoskeleton has visibly hardened, which is typically 7 to 14 days for a tarantula and often shorter for smaller species like jumping spiders. A freshly molted invertebrate is soft, fragile, and easily injured by even gentle handling."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-temperature-guide.mdx",
+    "slug": "leopard-gecko-temperature-guide",
+    "title": "The Complete Leopard Gecko Temperature Guide",
+    "seoTitle": null,
+    "excerpt": "Leopard gecko temperatures made simple: warm hide 88-92°F, cool side 70-77°F, the right heating methods, and the common mistakes that cause illness.",
+    "date": "2025-05-03",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Temperature",
+      "Heating",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-temperature.jpg",
+    "imageAlt": "Leopard gecko basking on a warm hide under gentle heating in a desert terrarium",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does enclosure material (glass vs. PVC) change how I should set up heating?",
+        "a": "Somewhat. PVC and wood enclosures retain heat more efficiently than glass, so a heater on the same thermostat setting can run warmer inside a PVC enclosure than in an all-glass tank of the same size. Always verify actual surface temperature with a thermometer or IR gun rather than assuming a setting that worked in one enclosure type will translate directly to another."
+      },
+      {
+        "q": "Why does my leopard gecko need a cool side if it likes the warm hide?",
+        "a": "Without a cool zone, a gecko has no way to thermoregulate - moving between warm and cool areas is how it manages digestion and activity level throughout the day. A tank that's uniformly warm prevents this and causes chronic stress over time."
+      },
+      {
+        "q": "Is an infrared temperature gun really necessary, or will a stick-on thermometer work?",
+        "a": "Stick-on analog thermometers are notoriously inaccurate. An infrared temperature gun lets you check the actual surface temperature of the warm hide floor, which is what matters most, rather than estimating from ambient air readings alone."
+      },
+      {
+        "q": "Do leopard gecko temperature needs change at night?",
+        "a": "Yes - night temperatures can safely drop to around 65°F, mimicking natural desert cooling. If your home drops below that, a ceramic heat emitter on a thermostat (heat only, no light) maintains a safe minimum without disrupting the nocturnal schedule."
+      },
+      {
+        "q": "What's the biggest temperature mistake new keepers make?",
+        "a": "Using a heat source without a thermostat. Under-tank heaters and ceramic heat emitters can reach dangerous temperatures without one, and this is one of the most common causes of thermal burns in captive leopard geckos."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-vs-crested-gecko-guide.mdx",
+    "slug": "leopard-gecko-vs-crested-gecko-guide",
+    "title": "Leopard Gecko vs. Crested Gecko: Which Beginner Gecko Fits You Better",
+    "seoTitle": "Leopard Gecko vs. Crested Gecko: Beginner Guide",
+    "excerpt": "Leopard gecko or crested gecko? The real differences in diet, enclosure shape, heating needs, and tail regrowth - not just which one looks friendlier at the pet store.",
+    "date": "2026-07-08",
+    "category": "Comparisons",
+    "tags": [
+      "Leopard Gecko",
+      "Crested Gecko",
+      "Comparison",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-vs-crested-gecko.jpg",
+    "imageAlt": "A leopard gecko and a crested gecko side by side for comparison",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do I have to keep live insects for a crested gecko?",
+        "a": "No, and this is the single biggest reason people choose a crested gecko over a leopard gecko. Crested geckos thrive on a commercial powdered fruit-based diet mixed with water, with insects offered only occasionally as enrichment. Leopard geckos are strict insectivores and need live feeder insects as their actual diet, no substitute."
+      },
+      {
+        "q": "Which gecko needs supplemental heating, leopard or crested?",
+        "a": "Leopard geckos do - they need a warm belly-heat zone around 88 to 90 degrees F, usually from an under-tank heat mat. Crested geckos are unusual among pet reptiles in that they do best at normal room temperature, roughly 72 to 78 degrees F, and can actually become stressed or ill above about 80 degrees F."
+      },
+      {
+        "q": "Can a crested gecko regrow its tail if it drops it?",
+        "a": "No, and this is permanent. A crested gecko's dropped tail does not grow back, unlike many other lizards. A leopard gecko's tail does regenerate, though the regrown version is usually shorter and duller than the original. This makes gentle, low-stress handling more important with a crested gecko specifically."
+      },
+      {
+        "q": "Which is more likely to jump or escape during handling, leopard or crested gecko?",
+        "a": "Crested geckos, by a lot. They're arboreal and startlingly good jumpers with sticky toe pads that let them stick to glass, so a started crested gecko can go from your hand to across the room in an instant. Leopard geckos are ground-dwelling and calmer to hold, without the sudden leaping."
+      },
+      {
+        "q": "Which enclosure is easier to set up, leopard or crested gecko?",
+        "a": "Neither is objectively easier, but they're shaped completely differently. Leopard geckos need a wide, ground-level floor space with minimal climbing decor. Crested geckos need a tall, vertically oriented enclosure with branches and plants to climb, since they live in the trees rather than on the ground."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/praying-mantis-ootheca-guide.mdx",
+    "slug": "praying-mantis-ootheca-guide",
+    "title": "Praying Mantis Ootheca: What to Do If Your Mantis Lays Eggs",
+    "seoTitle": "Praying Mantis Ootheca: What to Do",
+    "excerpt": "What a praying mantis ootheca is, whether it can be fertile without a male, how to care for it, and what to do when dozens of nymphs hatch at once.",
+    "date": "2026-06-30",
+    "category": "Invertebrates",
+    "tags": [
+      "Praying Mantis",
+      "Ootheca",
+      "Breeding",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/praying-mantis-ootheca.jpg",
+    "imageAlt": "Praying mantis on a branch next to its foam-like ootheca egg case",
+    "emoji": "🦗",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do I need a male mantis for my female to lay an ootheca?",
+        "a": "No - an unmated female will often still produce an ootheca on her own schedule, similar to an unfertilized egg from a hen. Whether it's fertile depends on whether mating actually occurred, not on whether an ootheca was produced at all."
+      },
+      {
+        "q": "How long does it take an ootheca to hatch?",
+        "a": "It varies widely by species and temperature, ranging from a few weeks up to several months. Some species require a period of cold diapause (a temperature-triggered dormancy) before they'll hatch at all, so research your specific species before assuming a timeline."
+      },
+      {
+        "q": "Can I keep the ootheca in the same enclosure as the mother?",
+        "a": "Yes, this is generally safe - mantises don't guard or interact with their oothecae the way some other animals tend eggs. Just make sure the ootheca is securely attached to a stable surface and won't be disturbed by regular enclosure maintenance."
+      },
+      {
+        "q": "What do I do with dozens of newly hatched mantis nymphs?",
+        "a": "Separate them into individual containers as quickly as possible. Mantis nymphs are highly cannibalistic toward each other, and a shared enclosure after hatching can result in most of the brood being lost within hours if they aren't split up and fed promptly."
+      },
+      {
+        "q": "Can an ootheca dry out and fail to hatch?",
+        "a": "Yes, insufficient humidity is a common cause of failed hatches. Light misting appropriate to your species' normal humidity range, without soaking the ootheca directly, helps prevent this while it incubates."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/rabbit-gi-stasis-guide.mdx",
+    "slug": "rabbit-gi-stasis-guide",
+    "title": "Rabbit GI Stasis: The Silent Emergency Every Owner Should Recognize",
+    "seoTitle": "Rabbit GI Stasis: A Silent Emergency",
+    "excerpt": "Rabbit GI stasis can turn fatal within hours - the early warning signs, why unlimited hay matters so much, and when it becomes an emergency vet visit.",
+    "date": "2026-07-01",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "GI Stasis",
+      "Health",
+      "Emergency",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/rabbit-gi-stasis.jpg",
+    "imageAlt": "Healthy rabbit eating a large pile of fresh hay in a clean enclosure",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How quickly can GI stasis become fatal?",
+        "a": "It can turn life-threatening within 24 to 48 hours of onset. Gas builds up in a gut that's stopped moving, causing severe pain, and the longer it goes untreated the harder it becomes to reverse - this is why any rabbit that stops eating needs same-day veterinary attention, not a wait-and-see approach."
+      },
+      {
+        "q": "Can GI stasis happen even if my rabbit eats hay every day?",
+        "a": "Yes. Hay is the single biggest prevention factor, but it doesn't make a rabbit immune. Stress, dehydration, dental pain, or an unrelated illness can all trigger stasis even in a rabbit with an otherwise excellent diet."
+      },
+      {
+        "q": "Is GI stasis the same thing as bloat?",
+        "a": "They're related but not identical. GI stasis refers to the gut slowing or stopping movement generally, which often leads to gas accumulation. Severe gas buildup (bloat) is one dangerous consequence of stasis, but stasis can also present with reduced motility and minimal gas."
+      },
+      {
+        "q": "Can I treat GI stasis at home with pineapple juice or gas drops?",
+        "a": "No - these are outdated home remedies with no reliable evidence behind them, and relying on them wastes critical time. GI stasis needs veterinary treatment (fluids, pain control, motility medication, and addressing the underlying cause), not a kitchen-cabinet fix."
+      },
+      {
+        "q": "How can I tell if my rabbit's poop output is abnormal?",
+        "a": "Know your rabbit's normal output as a baseline. Watch for noticeably fewer droppings than usual, droppings that are smaller or oddly shaped, a string of droppings connected by fur or debris, or no droppings at all for several hours - any of these warrants immediate attention."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/reptile-shedding-complete-guide.mdx",
+    "slug": "reptile-shedding-complete-guide",
+    "title": "Understanding Reptile Shedding (Ecdysis)",
+    "seoTitle": null,
+    "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
+    "date": "2025-04-05",
+    "category": "Reptiles",
+    "tags": [
+      "Shedding",
+      "Health",
+      "Husbandry",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/reptile-shedding.jpg",
+    "imageAlt": "Healthy leopard gecko during a clean shed with perfect skin coming off",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it normal for my reptile to stop eating before a shed?",
+        "a": "Yes, this is common during the pre-shed (dyscratic) phase, which can last 5 to 14 days. Appetite typically returns to normal once the shed is complete."
+      },
+      {
+        "q": "How often should a healthy reptile shed?",
+        "a": "It varies widely by species, age, and growth rate - juveniles shed far more often than adults since they're growing faster. There's no universal schedule; focus on whether each shed comes off cleanly and completely rather than counting days between them."
+      },
+      {
+        "q": "Is it safe to help peel off shed skin myself?",
+        "a": "Only in limited, low-risk cases like gently removing loosened retained shed from toes after a warm soak. Never attempt to remove retained eye caps on snakes yourself - that requires a veterinarian."
+      },
+      {
+        "q": "Does low humidity always cause stuck shed?",
+        "a": "It's the most common cause, but not the only one. Missing rough surfaces to initiate the peel, nutritional deficiencies, and underlying health issues can all cause dysecdysis even when humidity looks adequate on paper."
+      },
+      {
+        "q": "How long should a soak be for helping with a stuck shed?",
+        "a": "15 to 20 minutes in shallow, warm water is typical, always supervised. This softens retained shed enough to gently assist its removal without stressing or injuring the animal."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/snake-brumation-guide.mdx",
+    "slug": "snake-brumation-guide",
+    "title": "Brumation in Pet Snakes: How to Safely Cool Down Ball Pythons and Corn Snakes",
+    "seoTitle": "Brumation in Pet Snakes Explained",
+    "excerpt": "What brumation is, why most pet snake keepers can safely skip it, and how to cool a ball python or corn snake properly if you plan to breed.",
+    "date": "2026-07-02",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Corn Snake",
+      "Brumation",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/snake-brumation.jpg",
+    "imageAlt": "Ball python coiled in a dim, cool terrarium hide during brumation",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do pet snakes need to brumate if I'm not breeding them?",
+        "a": "No. Brumation is primarily relevant for triggering reproductive cycling in breeding programs. A pet-only snake kept at stable, appropriate temperatures year-round doesn't need deliberate brumation, though many snakes naturally show reduced appetite and activity in cooler months regardless."
+      },
+      {
+        "q": "How is brumation different from hibernation?",
+        "a": "Hibernating mammals enter a deep, largely unresponsive state with dramatically reduced metabolic function. Brumating reptiles slow down significantly but remain capable of waking and moving if disturbed, and may surface briefly to drink even during the cooling period."
+      },
+      {
+        "q": "How much weight loss during brumation is safe?",
+        "a": "Most breeders consider up to roughly 10% of body weight an acceptable range over a full brumation cycle, though this varies by individual and species. Weighing the snake before starting and checking periodically during the cooling period is the standard way to monitor this."
+      },
+      {
+        "q": "Can brumating my snake go wrong?",
+        "a": "Yes - cooling an unhealthy, underweight, or parasite-carrying snake can be genuinely dangerous, which is why a vet check and a proper pre-brumation fast are standard practice beforehand. Warning signs to abort include excessive weight loss, respiratory symptoms, or lethargy beyond the expected slowdown."
+      },
+      {
+        "q": "How long should I fast my snake before starting brumation?",
+        "a": "Most keepers stop feeding 1 to 2 weeks before cooling begins, giving the snake enough time to fully digest its last meal. Cooling down with undigested food in the gut risks it rotting internally, since digestion slows dramatically along with everything else."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/uvb-lighting-complete-guide.mdx",
+    "slug": "uvb-lighting-complete-guide",
+    "title": "UVB Lighting: Why It Matters More Than You Think",
+    "seoTitle": null,
+    "excerpt": "Recent research has changed what we know about reptile UVB needs - including species once thought not to need it. Here's the updated picture.",
+    "date": "2025-04-12",
+    "category": "Reptiles",
+    "tags": [
+      "UVB",
+      "Lighting",
+      "Nutrition",
+      "Health",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/uvb-lighting.jpg",
+    "imageAlt": "Bearded dragon under a modern T5 UVB light fixture showing proper lighting gradient",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do nocturnal reptiles really need UVB if they're never active in daylight?",
+        "a": "Current research says yes, at a low level. Even nocturnal and crepuscular species receive incidental UV exposure at dawn and dusk in the wild, and low-output UVB (Zone 1) is now commonly recommended for species previously thought not to need it at all."
+      },
+      {
+        "q": "How do I know what Ferguson Zone my reptile needs?",
+        "a": "It's based on the species' natural basking behavior in the wild - shade-dwellers and crepuscular species sit in Zone 1 or 2 (low UV), while open baskers like bearded dragons and intense sun-seekers like ackie monitors sit in Zone 3 or 4 (moderate to high UV). Species-specific care guides typically state the appropriate zone directly."
+      },
+      {
+        "q": "How often do UVB bulbs actually need replacing?",
+        "a": "Every 12 months for most linear T5 HO bulbs, even if the visible light still looks bright. UV output degrades well before visible brightness noticeably drops, so relying on how the bulb looks is not a reliable way to judge it."
+      },
+      {
+        "q": "Can I provide too much UVB?",
+        "a": "Yes - without a proper gradient allowing the animal to move toward or away from the light, overexposure is possible and can cause harm. A gradient that lets the reptile self-regulate its own exposure is just as important as the bulb strength itself."
+      },
+      {
+        "q": "Is a compact UVB bulb as good as a linear T5 HO?",
+        "a": "Compact coil and dome UVB bulbs generally produce a less even gradient and can be associated with eye and skin irritation in some cases. Linear T5 HO fixtures from reputable brands are the current gold standard recommended by most reptile lighting researchers."
+      }
+    ]
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-ball-python-facts.mdx",
+    "slug": "10-surprising-ball-python-facts",
+    "title": "10 Surprising Ball Python Facts",
+    "seoTitle": null,
+    "excerpt": "From heat-sensing pits to 7,000 color morphs, these 10 ball python facts explain why they're the most popular pet snake in the world.",
+    "date": "2026-07-04",
+    "category": "Fun Facts",
+    "tags": [
+      "ball-python",
+      "fun-facts",
+      "reptiles",
+      "snakes"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-ball-python.jpg",
+    "imageAlt": "Cute illustration of a ball python wrapped gracefully",
+    "emoji": null,
+    "lastReviewed": "2026-07-04",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-bearded-dragon-facts.mdx",
+    "slug": "10-surprising-bearded-dragon-facts",
+    "title": "10 Surprising Bearded Dragon Facts",
+    "seoTitle": null,
+    "excerpt": "From UV-sensing eyes to third eyelids, these 10 bearded dragon facts will surprise even experienced reptile owners and enthusiasts.",
+    "date": "2026-06-05",
+    "category": "Fun Facts",
+    "tags": [
+      "bearded-dragon",
+      "fun-facts"
+    ],
+    "readTime": 8,
+    "difficulty": null,
+    "image": "/assets/images/fun-bearded-dragon-facts.jpg",
+    "imageAlt": "Colorful bearded dragon illustration with fun fact icons",
+    "emoji": null,
+    "lastReviewed": "2026-06-19",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-betta-fish-facts.mdx",
+    "slug": "10-surprising-betta-fish-facts",
+    "title": "10 Surprising Betta Fish Facts",
+    "seoTitle": null,
+    "excerpt": "From breathing air to bubble nests, these 10 betta fish facts reveal just how much personality is packed into such a small tank.",
+    "date": "2026-06-18",
+    "category": "Fun Facts",
+    "tags": [
+      "betta-fish",
+      "fun-facts",
+      "fish"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-betta-fish.jpg",
+    "imageAlt": "Vibrant illustration of a betta fish with flowing blue and red fins",
+    "emoji": null,
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-cockatoo-facts.mdx",
+    "slug": "10-surprising-cockatoo-facts",
+    "title": "10 Surprising Cockatoo Facts",
+    "seoTitle": null,
+    "excerpt": "From dancing to a beat to bending metal cage bars, these 10 cockatoo facts show why this parrot is as impressive as it is demanding.",
+    "date": "2026-06-22",
+    "category": "Fun Facts",
+    "tags": [
+      "cockatoo",
+      "fun-facts",
+      "birds"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-cockatoo.jpg",
+    "imageAlt": "Cute illustration of a cockatoo looking grand",
+    "emoji": null,
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-hermit-crab-facts.mdx",
+    "slug": "10-surprising-hermit-crab-facts",
+    "title": "10 Surprising Hermit Crab Facts",
+    "seoTitle": null,
+    "excerpt": "From decades-long lifespans to orderly shell-swapping queues, these 10 hermit crab facts go well beyond the beach-souvenir reputation.",
+    "date": "2026-06-27",
+    "category": "Fun Facts",
+    "tags": [
+      "hermit-crab",
+      "fun-facts",
+      "invertebrates"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-hermit-crab.jpg",
+    "imageAlt": "Cute illustration of a hermit crab with a grand shell",
+    "emoji": null,
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-leopard-gecko-facts.mdx",
+    "slug": "10-surprising-leopard-gecko-facts",
+    "title": "10 Surprising Leopard Gecko Facts",
+    "seoTitle": null,
+    "excerpt": "From squeaking when startled to storing fat in their tails, these 10 leopard gecko facts go beyond the basics most keepers already know.",
+    "date": "2026-06-29",
+    "category": "Fun Facts",
+    "tags": [
+      "leopard-gecko",
+      "fun-facts",
+      "reptiles"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-leopard-gecko.jpg",
+    "imageAlt": "Cute illustration of a smiling leopard gecko perched on a rock",
+    "emoji": null,
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-praying-mantis-facts.mdx",
+    "slug": "10-surprising-praying-mantis-facts",
+    "title": "10 Surprising Praying Mantis Facts",
+    "seoTitle": null,
+    "excerpt": "From five eyes to bat-detecting ears, these 10 praying mantis facts go well beyond the classic 'prayer pose' most people already know.",
+    "date": "2026-07-04",
+    "category": "Fun Facts",
+    "tags": [
+      "praying-mantis",
+      "fun-facts",
+      "invertebrates"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-praying-mantis.jpg",
+    "imageAlt": "Cute illustration of a praying mantis staring out",
+    "emoji": null,
+    "lastReviewed": "2026-07-04",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/10-surprising-tarantula-facts.mdx",
+    "slug": "10-surprising-tarantula-facts",
+    "title": "10 Surprising Tarantula Facts",
+    "seoTitle": null,
+    "excerpt": "From blue blood to decades-long lifespans, these 10 tarantula facts reveal why they're far less scary and far more fascinating than their reputation suggests.",
+    "date": "2026-07-03",
+    "category": "Fun Facts",
+    "tags": [
+      "tarantula",
+      "fun-facts",
+      "invertebrates"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-tarantula.jpg",
+    "imageAlt": "Cute illustration of a tarantula being boss",
+    "emoji": null,
+    "lastReviewed": "2026-07-01",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-axolotl.mdx",
+    "slug": "10-surprising-axolotl-facts",
+    "title": "10 Surprising Axolotl Facts",
+    "seoTitle": null,
+    "excerpt": "Ten quick axolotl facts most people don't know - from limb regeneration and forever-young biology to why these smiling salamanders never leave the water.",
+    "date": "2026-06-06",
+    "category": "Fun Facts",
+    "tags": [
+      "axolotl",
+      "fun-facts"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-axolotl.jpg",
+    "imageAlt": "Cute illustration of a smiling axolotl with feathery gills",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-boa-constrictor.mdx",
+    "slug": "10-surprising-boa-constrictor-facts",
+    "title": "10 Surprising Boa Constrictor Facts",
+    "seoTitle": null,
+    "excerpt": "Ten surprising boa constrictor facts - from heartbeat-syncing squeezes to live litters of 60 - and why they're the pet snake world's favorite.",
+    "date": "2026-07-05",
+    "category": "Fun Facts",
+    "tags": [
+      "boa-constrictor",
+      "fun-facts",
+      "snakes"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-boa-constrictor.jpg",
+    "imageAlt": "Illustration of a coiled boa constrictor on a branch in warm light",
+    "emoji": null,
+    "lastReviewed": "2026-07-05",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-cuttlefish.mdx",
+    "slug": "10-surprising-cuttlefish-facts",
+    "title": "10 Surprising Cuttlefish Facts",
+    "seoTitle": null,
+    "excerpt": "Cuttlefish can change their skin in milliseconds and have W-shaped pupils. Discover 10 remarkable facts about this intelligent cephalopod.",
+    "date": "2026-06-08",
+    "category": "Fun Facts",
+    "tags": [
+      "cuttlefish",
+      "fun-facts",
+      "marine-life"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-cuttlefish.jpg",
+    "imageAlt": "Vibrant illustration of a cuttlefish showing colorful patterns",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-golden-retriever.mdx",
+    "slug": "10-surprising-golden-retriever-facts",
+    "title": "10 Surprising Golden Retriever Facts",
+    "seoTitle": null,
+    "excerpt": "Beyond their friendly smiles, golden retrievers have surprising quirks and hidden talents. Discover 10 facts about this iconic family dog.",
+    "date": "2026-06-10",
+    "category": "Fun Facts",
+    "tags": [
+      "golden-retriever",
+      "fun-facts",
+      "dog"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-golden-retriever.jpg",
+    "imageAlt": "Friendly illustration of a golden retriever with a toy",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-humpback-whale.mdx",
+    "slug": "10-surprising-humpback-whale-facts",
+    "title": "10 Surprising Humpback Whale Facts",
+    "seoTitle": null,
+    "excerpt": "From haunting songs that travel thousands of miles to acrobatic breaches, these 10 humpback whale facts reveal the wonder of ocean life.",
+    "date": "2026-06-11",
+    "category": "Fun Facts",
+    "tags": [
+      "whale",
+      "fun-facts",
+      "marine-life"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-humpback-whale.jpg",
+    "imageAlt": "Illustration of a humpback whale breaching at sunset",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-octopus.mdx",
+    "slug": "10-surprising-octopus-facts",
+    "title": "10 Surprising Octopus Facts",
+    "seoTitle": null,
+    "excerpt": "Think you know octopuses? These 10 facts reveal their three hearts, blue blood, and remarkable problem-solving intelligence.",
+    "date": "2026-06-13",
+    "category": "Fun Facts",
+    "tags": [
+      "octopus",
+      "fun-facts",
+      "marine-life"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-octopus.jpg",
+    "imageAlt": "Vibrant illustration of a colorful octopus in a coral reef",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/fun-facts/fun-facts-rabbit.mdx",
+    "slug": "10-surprising-rabbit-facts",
+    "title": "10 Surprising Rabbit Facts",
+    "seoTitle": null,
+    "excerpt": "Ten surprising rabbit facts - from near-360-degree vision and teeth that never stop growing to binkies and why rabbits are smarter than they look.",
+    "date": "2026-06-15",
+    "category": "Fun Facts",
+    "tags": [
+      "rabbit",
+      "fun-facts"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/fun-facts-rabbit.jpg",
+    "imageAlt": "Playful illustration of a happy rabbit mid-binky",
+    "emoji": null,
+    "lastReviewed": "2026-06-26",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2",
+    "title": "Chronicles of Dex the Bearded Dragon: The Day Everything Changed (Part 2)",
+    "seoTitle": null,
+    "excerpt": "Dex is back. Part 2 of the bearded dragon chronicles brings new trouble, warmer basking spots, and one lizard who refuses to be ignored.",
+    "date": "2026-06-27T05:32:37.964Z",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles"
+    ],
+    "readTime": 3,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron2.jpg",
+    "imageAlt": "A bearded dragon chilling with his new friend the iguana",
+    "emoji": null,
+    "lastReviewed": "2026-06-27",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-gl.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-glass-part-3",
+    "title": "Chronicles of Dex the Bearded Dragon: The Rival Beyond the Glass (Part 3)",
+    "seoTitle": null,
+    "excerpt": "Dex faces his oldest mystery, the orange shape beyond the glass in this humorous short story about rivalry, territory, and the unexpected.",
+    "date": "2026-07-07",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "cats-and-reptiles",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles"
+    ],
+    "readTime": 3,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron3.jpg",
+    "imageAlt": "Bearded dragon confronts his reflection with fierce territorial intensity",
+    "emoji": null,
+    "lastReviewed": "2026-07-07",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-t.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
+    "title": "Chronicles of Dex the Bearded Dragon: The Sun, the Glass, and the Cricket That Got Away",
+    "seoTitle": null,
+    "excerpt": "Meet Dex: a bearded dragon with opinions, ambitions, and a cricket problem. This bearded dragon short story kicks off a charming, witty animal fiction series.",
+    "date": "2026-06-27",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon-short-story",
+      "animal-fiction",
+      "character-driven-stories",
+      "reptile-tales",
+      "short-fiction-series",
+      "funny-short-stories"
+    ],
+    "readTime": 4,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron1.jpg",
+    "imageAlt": "Bearded dragon basking regally under golden terrarium light, eyes commanding",
+    "emoji": null,
+    "lastReviewed": "2026-06-27",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4",
+    "title": "Chronicles of Dex the Bearded Dragon: The Twelfth Day (Part 4)",
+    "seoTitle": null,
+    "excerpt": "Dex has settled into an eleven-day ritual with the cat beyond the glass, until the twelfth day arrives and the windowsill stays empty, in this quietly funny short story about routine, absence, and what a king starts counting on.",
+    "date": "2026-07-10",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "cats-and-reptiles",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron4.jpg",
+    "imageAlt": "Bearded dragon watches an empty windowsill through terrarium glass with quiet longing",
+    "emoji": null,
+    "lastReviewed": "2026-07-10",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3",
+    "title": "Chronicles of Otis the Bunny: The Bark, the Gap, and the Matter of Proportion (Part 3)",
+    "seoTitle": null,
+    "excerpt": "Otis spends eleven days building a rival worthy of his fence line, then finds the gap in the boards and discovers the truth is a lot smaller than the legend he invented.",
+    "date": "2026-07-10",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "dogs-and-rabbits",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron2.jpg",
+    "imageAlt": "House rabbit pressing his nose to a gap in the fence, ears sharp with anticipation",
+    "emoji": null,
+    "lastReviewed": "2026-07-10",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him",
+    "title": "Chronicles of Otis the Bunny: The Day He Decided the Garden Belonged to Him",
+    "seoTitle": null,
+    "excerpt": "Follow along in this Otis the bunny story — a charming short fiction about one determined rabbit navigating the big drama hiding in very small moments.",
+    "date": "2026-06-30",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles"
+    ],
+    "readTime": 3,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron3.jpg",
+    "imageAlt": "A close-up portrait of a lop-eared rabbit sitting upright on a worn wooden floor, expression radiating imperious calm",
+    "emoji": null,
+    "lastReviewed": "2026-06-30",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-garden-the-squirrel.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-garden-the-squirrel-and-the-matter-of-trespassing",
+    "title": "Chronicles of Otis the Bunny: The Garden, the Squirrel, and the Matter of Trespassing (Part 2)",
+    "seoTitle": null,
+    "excerpt": "A squirrel raids Otis's garden and gets away clean, leaving him to face an uncomfortable truth: there might be a whole world beyond his fence he's never once considered.",
+    "date": "2026-07-08",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles"
+    ],
+    "readTime": 4,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron1.jpg",
+    "imageAlt": "House rabbit sitting alert and regal at the edge of a garden, surveying his territory",
+    "emoji": null,
+    "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": []
+  }
+]

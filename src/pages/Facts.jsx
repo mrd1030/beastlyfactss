@@ -26,7 +26,7 @@ function shuffleArray(arr) {
 export default function Facts() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { slug } = useParams();
+  const { slug, factCat } = useParams();
 
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
@@ -36,7 +36,7 @@ export default function Facts() {
   const [randomOrder, setRandomOrder] = useState([]);
 
   const allFacts = useMemo(() => facts.map((f, i) => ({ ...f, factNumber: i + 1 })), []);
-  const allCategories = ['All', ...categories.map(c => c.name)];
+  const allCategories = useMemo(() => ['All', ...categories.map(c => c.name)], []);
 
   // /facts/:slug is a direct link to one specific fact (used by the social
   // feed - see public/_worker.js) - matched by slugified title since facts
@@ -46,20 +46,36 @@ export default function Facts() {
     return allFacts.find(f => slugify(f.title) === slug) || null;
   }, [slug, allFacts]);
 
-  // Central URL Synchronizer for SEO Parameters
+  // Central URL synchronizer. /facts/category/:factCat is the canonical
+  // category URL; legacy ?category= links get replace-redirected onto it so
+  // old bookmarks and shares still land on the right filter.
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const catParam = params.get('category');
-    const pageParam = parseInt(params.get('page')) || 1;
+    if (slug) return; // a fact permalink is open - leave list state alone
 
-    if (catParam) {
-      const matchedCat = allCategories.find(c => slugify(c) === catParam);
-      setActiveCategory(matchedCat || 'All');
+    const params = new URLSearchParams(location.search);
+    const legacyCat = params.get('category');
+    if (legacyCat) {
+      params.delete('category');
+      const matched = allCategories.find(c => slugify(c) === legacyCat);
+      navigate({
+        pathname: matched && matched !== 'All' ? `/facts/category/${slugify(matched)}/` : '/facts/',
+        search: params.toString(),
+      }, { replace: true });
+      return;
+    }
+
+    if (factCat) {
+      const matchedCat = allCategories.find(c => slugify(c) === factCat);
+      if (!matchedCat || matchedCat === 'All') {
+        navigate('/facts/', { replace: true });
+        return;
+      }
+      setActiveCategory(matchedCat);
     } else {
       setActiveCategory('All');
     }
-    setPage(pageParam);
-  }, [location.search, allCategories]);
+    setPage(parseInt(params.get('page')) || 1);
+  }, [slug, factCat, location.search, allCategories, navigate]);
 
   // The URL is the source of truth for which fact is open, in both
   // directions: a direct /facts/:slug link opens the right modal, and
@@ -68,12 +84,17 @@ export default function Facts() {
     setSelectedFact(linkedFact);
   }, [linkedFact]);
 
+  // Fact permalinks are clean (/facts/<slug>/, no category or page carried
+  // along); the list URL the user came from rides in history state so closing
+  // the modal returns to the same filtered view.
   const handleOpenFact = (fact) => {
-    navigate({ pathname: `/facts/${slugify(fact.title)}/`, search: location.search });
+    navigate(`/facts/${slugify(fact.title)}/`, {
+      state: { from: `${location.pathname}${location.search}` },
+    });
   };
 
   const handleCloseFact = () => {
-    navigate({ pathname: '/facts/', search: location.search });
+    navigate(location.state?.from || '/facts/');
   };
 
   const filtered = useMemo(() => {
@@ -110,13 +131,9 @@ export default function Facts() {
   const paginated = displayFacts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE); 
 
   const handleCategoryChange = (cat) => {
-    const urlParams = new URLSearchParams();
-    if (slugify(cat) !== 'all') {
-      urlParams.set('category', slugify(cat));
-    }
     setRandomized(false);
     setRandomOrder([]);
-    navigate({ search: urlParams.toString() });
+    navigate(slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`);
   };
 
   const handleSearchChange = (e) => {
@@ -236,7 +253,9 @@ export default function Facts() {
       : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = linkedFact
     ? `https://beastlyfacts.com/facts/${slugify(linkedFact.title)}/`
-    : 'https://beastlyfacts.com/facts/';
+    : activeCategory === 'All'
+      ? 'https://beastlyfacts.com/facts/'
+      : `https://beastlyfacts.com/facts/category/${slugify(activeCategory)}/`;
   // Direct fact links aren't prerendered (Facts.jsx is already flagged CPU-heavy
   // in prerender.mjs, and 173 more renders isn't worth it just for this) - noindex
   // is the honest signal, same as this site's other client-JS-only routes.

@@ -115,6 +115,103 @@ export default defineType({
       type: 'datetime',
       initialValue: () => new Date().toISOString(),
     }),
+    // --- NEW MOBILE APP FIELDS START HERE ---
+    defineField({
+      name: 'facts',
+      title: 'Quick Facts',
+      type: 'array',
+      of: [{ type: 'string' }],
+      description: "Short standalone facts for the mobile app's daily fact card. One or two sentences each.",
+    }),
+    defineField({
+      name: 'careInfo',
+      title: 'Care Info',
+      type: 'object',
+      description: 'Optional husbandry/care details for the mobile app care-task reminders. Only relevant for posts about a pet/species that needs care - leave blank for Fun Facts, Product Picks, Short Stories, etc.',
+      fields: [
+        defineField({
+          name: 'feedingIntervalDays',
+          title: 'Feeding Interval (days)',
+          type: 'number',
+        }),
+        defineField({
+          name: 'temperatureRangeF',
+          title: 'Temperature Range (°F)',
+          type: 'object',
+          fields: [
+            defineField({ name: 'min', title: 'Min', type: 'number' }),
+            defineField({ name: 'max', title: 'Max', type: 'number' }),
+          ],
+        }),
+        defineField({
+          name: 'humidityRangePercent',
+          title: 'Humidity Range (%)',
+          type: 'object',
+          fields: [
+            defineField({ name: 'min', title: 'Min', type: 'number' }),
+            defineField({ name: 'max', title: 'Max', type: 'number' }),
+          ],
+        }),
+        defineField({
+          name: 'cleaningIntervalDays',
+          title: 'Cleaning / Enclosure Interval (days)',
+          type: 'number',
+        }),
+      ],
+    }),
+    defineField({
+      name: 'quiz',
+      title: 'Quiz Questions',
+      type: 'array',
+      description: 'Optional per-entry quiz questions for the mobile app quiz feature.',
+      of: [
+        {
+          type: 'object',
+          name: 'quizQuestion',
+          title: 'Quiz Question',
+          fields: [
+            defineField({
+              name: 'question',
+              title: 'Question',
+              type: 'string',
+            }),
+            defineField({
+              name: 'options',
+              title: 'Answer Options',
+              type: 'array',
+              of: [{ type: 'string' }],
+            }),
+            defineField({
+              name: 'correctIndex',
+              title: 'Correct Option Index',
+              type: 'number',
+              description: 'Zero-based index into Answer Options that is the correct answer (e.g. 0 = first option).',
+            }),
+          ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'rarityTier',
+      title: 'Rarity Tier',
+      type: 'string',
+      description: 'Reserved placeholder for a future mobile app polish pass (collectible rarity tiers). Currently unused - safe to leave blank.',
+      options: {
+        list: [
+          { title: 'Common', value: 'common' },
+          { title: 'Uncommon', value: 'uncommon' },
+          { title: 'Rare', value: 'rare' },
+          { title: 'Legendary', value: 'legendary' },
+        ],
+      },
+    }),
+    defineField({
+      name: 'artworkUrl',
+      title: 'Artwork URL',
+      type: 'url',
+      description: 'Reserved placeholder for a future mobile app polish pass (custom per-species card artwork). Currently unused - safe to leave blank.',
+    }),
+    // --- NEW MOBILE APP FIELDS END HERE ---
     defineField({
       name: 'body',
       title: 'Body',

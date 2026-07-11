@@ -331,7 +331,12 @@ function StoryReader({ story, part }) {
 
       <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
         {story.source === 'mdx' && story.content ? (
-          React.createElement(story.content, { components: MdxComponents })
+          // story.content is a React.lazy component (see mdxPosts.js); the
+          // [data-mdx-loading] marker tells prerender.mjs the story body
+          // hasn't rendered yet, so it never captures the fallback.
+          <React.Suspense fallback={<div data-mdx-loading className="py-12 text-center text-sm text-muted-foreground font-body">Loading story…</div>}>
+            {React.createElement(story.content, { components: MdxComponents })}
+          </React.Suspense>
         ) : story.body ? (
           <PortableTextRenderer content={story.body} />
         ) : null}

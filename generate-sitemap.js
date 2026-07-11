@@ -22,6 +22,37 @@ function parseFrontmatter(content) {
   return result;
 }
 
+// Mirrors slugify in src/lib/utils/slugify.js (incl. the "&"/"and" rule that
+// makes "Small & Exotic Pets" produce "small-and-exotic-pets").
+const slugifyCategory = (text) => text.toString().toLowerCase()
+  .replace(/\s*&\s*|\s+and\s+/g, '-and-')
+  .replace(/\s+/g, '-')
+  .replace(/[^a-z0-9-]/g, '')
+  .replace(/-+/g, '-')
+  .replace(/^-|-$/g, '');
+
+// Blog category slugs that exist only in MDX frontmatter (e.g. "Comparisons") -
+// Blog.jsx renders pills for these alongside Sanity-backed categories, and
+// prerender.mjs prerenders them (see getMdxCategoryRoutes there), so they
+// belong in the sitemap too. Excludes slugs already covered by Sanity plus
+// the two retired ones that 301 away (site-news, short-stories).
+function getMdxOnlyCategorySlugs(sanityCategorySlugs) {
+  const existing = new Set(sanityCategorySlugs);
+  const slugs = new Set();
+  for (const dir of ['blog', 'guides', 'fun-facts']) {
+    const dirPath = path.join(__dirname, 'content', dir);
+    if (!fs.existsSync(dirPath)) continue;
+    for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.mdx'))) {
+      const fm = parseFrontmatter(fs.readFileSync(path.join(dirPath, file), 'utf8'));
+      if (!fm.category) continue;
+      const slug = slugifyCategory(fm.category);
+      if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
+      if (!existing.has(slug)) slugs.add(slug);
+    }
+  }
+  return [...slugs];
+}
+
 // Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
 // Their stories live at /chronicles/<id>/<part>/, not /blog/<slug>/.
 const chroniclesPrefixes = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
@@ -88,6 +119,11 @@ const guideFilters = [
   'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
+// Fun-facts category slugs (mirrors `categories` in src/lib/data/facts.js, slugified)
+const factCategories = [
+  'birds', 'dogs-and-cats', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
+];
+
 const staticPages = [
   '/',
   '/about/',
@@ -110,6 +146,9 @@ const staticPages = [
 
   // Guide category filter pages
   ...guideFilters.map(s => `/guides/category/${s}/`),
+
+  // Fun-facts category pages
+  ...factCategories.map(s => `/facts/category/${s}/`),
 
   // Individual encyclopedia animal pages
   '/encyclopedia/animal/crested-gecko/',
@@ -303,6 +342,13 @@ async function generateSitemap() {
     changefreq: 'weekly',
     priority: '0.7',
   }));
+
+  // Categories that exist only in MDX frontmatter (e.g. Comparisons)
+  blogCategoryPages.push(...getMdxOnlyCategorySlugs(categories.map(c => c.slug)).map(slug => ({
+    path: `/blog/category/${slug}/`,
+    changefreq: 'weekly',
+    priority: '0.7',
+  })));
 
   const mdxPostPages = getMdxPosts();
 

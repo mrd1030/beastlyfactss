@@ -27,12 +27,54 @@ const ENCYCLOPEDIA_CATEGORIES = [
   'small-mammals', 'birds', 'dogs', 'cats', 'invertebrates', 'amphibians', 'fish',
 ];
 
+// Fun-facts category slugs (mirrors `categories` in src/lib/data/facts.js, slugified)
+const FACT_CATEGORIES = [
+  'birds', 'dogs-and-cats', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
+];
+
 // Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
 // Their stories render on /chronicles/<id>/<part>, not /blog/<slug> - the old
 // blog URLs 301 in public/_redirects.
 const CHRONICLES_PREFIXES = { dex: 'chronicles-of-dex', otis: 'chronicles-of-otis' };
 const isChroniclesSlug = (slug) =>
   Object.values(CHRONICLES_PREFIXES).some(prefix => slug.startsWith(prefix));
+
+// Mirrors slugify in src/lib/utils/slugify.js (incl. the "&"/"and" rule that
+// makes "Small & Exotic Pets" produce "small-and-exotic-pets").
+const slugifyCategory = (text) => text.toString().toLowerCase()
+  .replace(/\s*&\s*|\s+and\s+/g, '-and-')
+  .replace(/\s+/g, '-')
+  .replace(/[^a-z0-9-]/g, '')
+  .replace(/-+/g, '-')
+  .replace(/^-|-$/g, '');
+
+// Blog category pages for categories that exist only in MDX frontmatter
+// (e.g. "Comparisons") - Blog.jsx renders pills for these alongside the
+// Sanity-backed ones, so they need prerendered pages too or the pill links
+// 404 on a hard load. Sanity-backed category routes come from
+// getSanityRoutes(); pass them in so overlapping slugs aren't doubled.
+async function getMdxCategoryRoutes(existingRoutes) {
+  const existing = new Set(existingRoutes);
+  const routes = new Set();
+  // Not content/short-story: those posts render on /chronicles/, and their
+  // "Short Stories" category pill is filtered out of the blog UI anyway.
+  for (const dir of ['content/blog', 'content/guides', 'content/fun-facts']) {
+    try {
+      const files = await readdir(dir);
+      for (const file of files.filter(f => f.endsWith('.mdx'))) {
+        const raw = await readFile(path.join(dir, file), 'utf-8');
+        const match = raw.match(/^category:\s*["']?([^"'\r\n]+)["']?/m);
+        if (!match) continue;
+        const slug = slugifyCategory(match[1].trim());
+        // site-news 301s to the welcome post; short-stories 301s to /chronicles/
+        if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
+        const route = `/blog/category/${slug}`;
+        if (!existing.has(route)) routes.add(route);
+      }
+    } catch {}
+  }
+  return [...routes];
+}
 
 // Reads slug from MDX frontmatter; falls back to filename if not set
 async function getMdxRoutes() {
@@ -152,6 +194,7 @@ const STATIC_ROUTES = [
   '/privacy',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/guides/category/${s}`),
+  ...FACT_CATEGORIES.map(s => `/facts/category/${s}`),
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
@@ -208,6 +251,10 @@ async function renderRoute(page, route) {
     (expected) => {
       const robots = document.querySelector('meta[name="robots"]');
       if (robots && /noindex/i.test(robots.getAttribute('content') || '')) return true;
+      // MDX article bodies are lazy-loaded (see mdxPosts.js); the Suspense
+      // fallback carries [data-mdx-loading] - don't capture until it's gone,
+      // or the prerendered HTML ships without the article text.
+      if (document.querySelector('[data-mdx-loading]')) return false;
       const canonical = document.querySelector('link[rel="canonical"]');
       const description = document.querySelector('meta[name="description"]');
       return Boolean(
@@ -293,7 +340,8 @@ async function main() {
     getMdxRoutes(),
     getChroniclesRoutes(),
   ]);
-  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxRoutes, ...chroniclesRoutes])];
+  const mdxCategoryRoutes = await getMdxCategoryRoutes(dynamicRoutes);
+  const allRoutes = [...new Set([...STATIC_ROUTES, ...dynamicRoutes, ...mdxCategoryRoutes, ...mdxRoutes, ...chroniclesRoutes])];
   console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY}...`);
 
   const server = await preview({ preview: { port: PORT, open: false } });

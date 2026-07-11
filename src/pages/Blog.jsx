@@ -152,6 +152,10 @@ export default function Blog() {
       : post.category ? [post.category] : [];
     cats.forEach(cat => {
       const s = slugify(cat);
+      // 'site-news' was retired as a category - /blog/category/site-news/
+      // 301s to the welcome post itself (see public/_redirects), so don't
+      // render a pill that links straight into a redirect.
+      if (s === 'site-news') return;
       if (sanityCategorySlugs.has(s)) {
         extraPostCounts.set(s, (extraPostCounts.get(s) || 0) + 1);
       } else {
@@ -561,7 +565,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
 
             <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
-                React.createElement(post.content, { components: MdxComponents })
+                // post.content is a React.lazy component (see mdxPosts.js); the
+                // [data-mdx-loading] marker tells prerender.mjs the article body
+                // hasn't rendered yet, so it never captures the fallback.
+                <React.Suspense fallback={<div data-mdx-loading className="py-12 text-center text-sm text-muted-foreground font-body">Loading article…</div>}>
+                  {React.createElement(post.content, { components: MdxComponents })}
+                </React.Suspense>
               ) : post.body ? (
                 <PortableTextRenderer content={post.body} />
               ) : (
