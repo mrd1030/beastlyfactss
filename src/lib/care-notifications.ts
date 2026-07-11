@@ -1,12 +1,16 @@
-import * as Notifications from 'expo-notifications';
-import { Platform } from 'react-native';
-
 import { isDatabaseAvailable } from '@/db/client';
 import { listCareTasksForPet, listPets } from '@/db/helpers';
 import type { CareTask, Pet } from '@/db/types';
 
 import { addDays, localDateString } from './date';
 import { ensureNotificationPermission } from './notification-permission';
+import {
+  CARE_OVERDUE_CHANNEL_ID,
+  CARE_REMINDER_CATEGORY_ID,
+  CARE_REMINDER_CHANNEL_ID,
+  ensureNotificationInteractions,
+} from './notification-actions';
+import { getNotificationsModule, type NotificationsModule } from './notifications-runtime';
 
 /**
  * Local-only care-task reminders (feeding, cleaning, temp/humidity
@@ -44,6 +48,10 @@ function identifierFor(taskId: string, dateStr: string): string {
   return `${CARE_NOTIFICATION_PREFIX}${taskId}-${dateStr}`;
 }
 
+function effectiveDueDate(task: CareTask): string {
+  return task.snoozedUntilDate && task.snoozedUntilDate > task.nextDueDate ? task.snoozedUntilDate : task.nextDueDate;
+}
+
 /**
  * Every occurrence date ('YYYY-MM-DD') for `task` from its current
  * `nextDueDate` (fast-forwarded to today if already overdue) through the
@@ -52,7 +60,8 @@ function identifierFor(taskId: string, dateStr: string): string {
 function occurrencesInWindow(task: CareTask, todayStr: string, windowEndStr: string): string[] {
   const interval = Math.max(task.intervalDays, 1);
   const dates: string[] = [];
-  let cursor = task.nextDueDate < todayStr ? todayStr : task.nextDueDate;
+  const effectiveDue = effectiveDueDate(task);
+  let cursor = effectiveDue < todayStr ? todayStr : effectiveDue;
   for (let i = 0; i < MAX_OCCURRENCES_PER_TASK && cursor <= windowEndStr; i++) {
     dates.push(cursor);
     cursor = addDays(cursor, interval);
@@ -60,10 +69,10 @@ function occurrencesInWindow(task: CareTask, todayStr: string, windowEndStr: str
   return dates;
 }
 
-async function cancelAllCareNotifications(): Promise<void> {
-  const scheduled = await Notifications.getAllScheduledNotificationsAsync();
+async function cancelAllCareNotifications(notifications: NotificationsModule): Promise<void> {
+  const scheduled = await notifications.getAllScheduledNotificationsAsync();
   const toCancel = scheduled.filter((n) => n.identifier?.startsWith(CARE_NOTIFICATION_PREFIX));
-  await Promise.all(toCancel.map((n) => Notifications.cancelScheduledNotificationAsync(n.identifier)));
+  await Promise.all(toCancel.map((n) => notifications.cancelScheduledNotificationAsync(n.identifier)));
 }
 
 /**
@@ -75,13 +84,15 @@ async function cancelAllCareNotifications(): Promise<void> {
  * the window from current data. No-ops on web or without permission.
  */
 export async function refreshCareNotifications(pairs: PetTaskPair[]): Promise<void> {
-  if (Platform.OS === 'web') return;
-
   try {
-    const granted = await ensureNotificationPermission();
-    if (!granted) return;
+    const notifications = await getNotificationsModule();
+    if (!notifications) return;
 
-    await cancelAllCareNotifications();
+    const granted = await ensureNotificationPermission(notifications);
+    if (!granted) return;
+    await ensureNotificationInteractions(notifications);
+
+    await cancelAllCareNotifications(notifications);
 
     const today = localDateString();
     const windowEnd = addDays(today, WINDOW_DAYS);
@@ -93,13 +104,26 @@ export async function refreshCareNotifications(pairs: PetTaskPair[]): Promise<vo
         const fireDate = new Date(year, month - 1, day, REMINDER_HOUR, 0, 0);
         if (fireDate.getTime() <= Date.now()) continue; // never schedule in the past
 
-        await Notifications.scheduleNotificationAsync({
+        await notifications.scheduleNotificationAsync({
           identifier: identifierFor(task.id, dateStr),
           content: {
             title: `${pet.nickname}: ${taskLabel(task)}`,
-            body: `${taskLabel(task)} is due for ${pet.nickname} today.`,
+            body:
+              effectiveDueDate(task) < today
+                ? `${taskLabel(task)} is overdue for ${pet.nickname}. Open the reminder to mark it done or snooze it.`
+                : `${taskLabel(task)} is due for ${pet.nickname} today. Mark it done or snooze it from the reminder.`,
+            categoryIdentifier: CARE_REMINDER_CATEGORY_ID,
+            data: {
+              url: `/pet/${pet.id}`,
+              taskId: task.id,
+              petId: pet.id,
+            },
           },
-          trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: fireDate },
+          trigger: {
+            type: notifications.SchedulableTriggerInputTypes.DATE,
+            date: fireDate,
+            channelId: effectiveDueDate(task) < today ? CARE_OVERDUE_CHANNEL_ID : CARE_REMINDER_CHANNEL_ID,
+          },
         });
       }
     }
@@ -116,7 +140,7 @@ export async function refreshCareNotifications(pairs: PetTaskPair[]): Promise<vo
  * isn't available in this environment (see src/db/client.ts) or on web.
  */
 export async function refreshAllPetsCareNotifications(): Promise<void> {
-  if (!isDatabaseAvailable || Platform.OS === 'web') return;
+  if (!isDatabaseAvailable) return;
   try {
     const pets = await listPets();
     const pairs: PetTaskPair[] = [];
@@ -128,4 +152,36 @@ export async function refreshAllPetsCareNotifications(): Promise<void> {
   } catch (err) {
     console.warn('[care-notifications] Could not load pets/tasks to refresh reminders', err);
   }
+}
+
+export async function scheduleCareReminderPreview(kind: 'due' | 'overdue'): Promise<void> {
+  const notifications = await getNotificationsModule();
+  if (!notifications) {
+    return;
+  }
+
+  const granted = await ensureNotificationPermission(notifications);
+  if (!granted) {
+    return;
+  }
+  await ensureNotificationInteractions(notifications);
+
+  await notifications.scheduleNotificationAsync({
+    content: {
+      title: kind === 'overdue' ? 'Mango: Medication' : 'Mango: Feeding',
+      body:
+        kind === 'overdue'
+          ? 'Medication is overdue. Use the reminder actions to mark it done or snooze it.'
+          : 'Feeding is due today. Use the reminder actions to mark it done or snooze it.',
+      categoryIdentifier: CARE_REMINDER_CATEGORY_ID,
+      data: {
+        url: '/profile',
+      },
+    },
+    trigger: {
+      type: notifications.SchedulableTriggerInputTypes.TIME_INTERVAL,
+      seconds: 1,
+      channelId: kind === 'overdue' ? CARE_OVERDUE_CHANNEL_ID : CARE_REMINDER_CHANNEL_ID,
+    },
+  });
 }

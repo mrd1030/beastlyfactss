@@ -35,5 +35,5 @@ export function useFavorites() {
     [favoriteIds, queryClient]
   );
 
-  return { favoriteIds, toggleFavorite };
+  return { favorites: data ?? [], favoriteIds, toggleFavorite };
 }

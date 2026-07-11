@@ -13,8 +13,8 @@ export async function createPet(input: CreatePetInput): Promise<Pet> {
   return row as Pet;
 }
 
-export async function getPet(id: string): Promise<Pet | undefined> {
-  return requireDb().query.pets.findFirst({ where: eq(pets.id, id) });
+export async function getPet(id: string): Promise<Pet | null> {
+  return (await requireDb().query.pets.findFirst({ where: eq(pets.id, id) })) ?? null;
 }
 
 export async function listPets(): Promise<Pet[]> {

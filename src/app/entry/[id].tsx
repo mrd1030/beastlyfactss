@@ -12,6 +12,8 @@ import { CareInfoSummary, FactsList } from '@/components/species-facts-body';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { getEncyclopediaAnimalByGuideId } from '@/content-client/encyclopedia-catalog';
+import { getGuideImageResizeMode, getGuideImageSource } from '@/content-client/guide-image-map';
 import { fetchEntryDetail } from '@/content-client/queries';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import { getSpeciesById } from '@/content-client/species-catalog';
@@ -130,6 +132,8 @@ export default function EntryDetailScreen() {
 
   const isFavorited = !!id && favoriteIds.has(id);
   const thumb = liveEntry ? sanityImageUrl(liveEntry.mainImage, 600) : (cachedEntry?.imageUrl ?? null);
+  const catalogImage = catalogSpecies ? getGuideImageSource(catalogSpecies.id) : null;
+  const linkedEncyclopedia = catalogSpecies ? getEncyclopediaAnimalByGuideId(catalogSpecies.id) : undefined;
 
   // Bonus wiring beyond this stage's 5 requirements, using the discovery
   // helper the previous stage already built: reaching the end of an
@@ -188,10 +192,16 @@ export default function EntryDetailScreen() {
             contentContainerStyle={styles.scrollContent}
             onScroll={handleScrollEnd}
             scrollEventThrottle={200}>
+            {catalogImage && (
+              <Image source={catalogImage} style={styles.image} resizeMode={getGuideImageResizeMode(catalogSpecies.id)} />
+            )}
+
             <ThemedView style={styles.heroRow}>
-              <ThemedView type="accentSoft" style={styles.heroEmojiBubble}>
-                <ThemedText style={styles.catalogEmoji}>{catalogSpecies.emoji}</ThemedText>
-              </ThemedView>
+              {!catalogImage && (
+                <ThemedView type="accentSoft" style={styles.heroEmojiBubble}>
+                  <ThemedText style={styles.catalogEmoji}>{catalogSpecies.emoji}</ThemedText>
+                </ThemedView>
+              )}
               <ThemedView style={styles.heroText}>
                 <ThemedText type="title" style={styles.title}>
                   {catalogSpecies.name}
@@ -210,6 +220,19 @@ export default function EntryDetailScreen() {
             <ThemedText type="smallBold" style={styles.excerpt}>
               {catalogSpecies.tagline}
             </ThemedText>
+
+            {linkedEncyclopedia && (
+              <Card variant="soft" style={styles.linkedCard}>
+                <ThemedText type="smallBold">Linked encyclopedia</ThemedText>
+                <ThemedText type="small" themeColor="textSecondary">
+                  Want the natural-history side too? Open the encyclopedia profile for {linkedEncyclopedia.name}.
+                </ThemedText>
+                <Pressable
+                  onPress={() => router.replace({ pathname: '/encyclopedia/[id]', params: { id: linkedEncyclopedia.id } })}>
+                  <ThemedText type="linkPrimary">Open encyclopedia profile →</ThemedText>
+                </Pressable>
+              </Card>
+            )}
 
             <CareInfoSummary careInfo={catalogSpecies.careInfo} />
             <FactsList facts={catalogSpecies.facts} />
@@ -401,5 +424,8 @@ const styles = StyleSheet.create({
   },
   excerpt: {
     marginBottom: Spacing.two,
+  },
+  linkedCard: {
+    gap: Spacing.one,
   },
 });

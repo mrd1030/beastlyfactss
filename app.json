@@ -4,6 +4,7 @@
     "slug": "beastlyfactsapp",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#F4F7F2",
     "icon": "./assets/images/icon.png",
     "scheme": "beastlyfactsapp",
     "userInterfaceStyle": "automatic",
@@ -25,6 +26,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-system-ui",
       [
         "expo-splash-screen",
         {
@@ -39,6 +41,46 @@
         "expo-image-picker",
         {
           "photosPermission": "BeastlyFacts uses your photo library so you can add a picture of your pet."
+        }
+      ],
+      [
+        "expo-widgets",
+        {
+          "widgets": [
+            {
+              "name": "CareStatusWidget",
+              "displayName": "Pet Care Status",
+              "description": "Shows due care tasks and health watch updates at a glance.",
+              "supportedFamilies": ["systemSmall", "systemMedium"]
+            }
+          ]
+        }
+      ],
+      [
+        "react-native-android-widget",
+        {
+          "widgets": [
+            {
+              "name": "PetCareQuickWidget",
+              "label": "Pet Quick Checks",
+              "description": "Shows due care counts and the latest pet activity.",
+              "minWidth": "180dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 3,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal|vertical"
+            },
+            {
+              "name": "DailyFactQuickWidget",
+              "label": "Daily Fact",
+              "description": "Shows today’s animal fact and opens the fact feed.",
+              "minWidth": "180dp",
+              "minHeight": "110dp",
+              "targetCellWidth": 3,
+              "targetCellHeight": 2,
+              "resizeMode": "horizontal|vertical"
+            }
+          ]
         }
       ]
     ],

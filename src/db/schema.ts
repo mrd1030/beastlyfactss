@@ -65,6 +65,7 @@ export const careTasks = sqliteTable('care_tasks', {
   intervalDays: integer('interval_days').notNull(),
   nextDueDate: text('next_due_date').notNull(),
   lastCompletedDate: text('last_completed_date'),
+  snoozedUntilDate: text('snoozed_until_date'),
   label: text('label'),
   // 'auto' (generated from the linked species' careInfo/category defaults,
   // safe to wipe and regenerate on a species-link change) or 'custom' (user
@@ -73,14 +74,62 @@ export const careTasks = sqliteTable('care_tasks', {
   source: text('source').notNull().default('auto'),
 });
 
+export const medicationPlans = sqliteTable('medication_plans', {
+  id: text('id').primaryKey(),
+  petId: text('pet_id')
+    .notNull()
+    .references(() => pets.id, { onDelete: 'cascade' }),
+  taskId: text('task_id').notNull(),
+  medicationName: text('medication_name').notNull(),
+  dosage: text('dosage').notNull(),
+  instructions: text('instructions'),
+  stockRemaining: integer('stock_remaining'),
+  lowStockThreshold: integer('low_stock_threshold'),
+  createdAt: text('created_at').notNull(),
+  lastGivenAt: text('last_given_at'),
+});
+
+export const foodInventoryItems = sqliteTable('food_inventory_items', {
+  id: text('id').primaryKey(),
+  petId: text('pet_id')
+    .notNull()
+    .references(() => pets.id, { onDelete: 'cascade' }),
+  name: text('name').notNull(),
+  quantity: integer('quantity').notNull().default(0),
+  unit: text('unit').notNull().default('servings'),
+  lowStockThreshold: integer('low_stock_threshold').notNull().default(0),
+  notes: text('notes'),
+  updatedAt: text('updated_at').notNull(),
+  lastUsedAt: text('last_used_at'),
+});
+
+export const petRecords = sqliteTable('pet_records', {
+  id: text('id').primaryKey(),
+  petId: text('pet_id')
+    .notNull()
+    .references(() => pets.id, { onDelete: 'cascade' }),
+  title: text('title').notNull(),
+  recordType: text('record_type').notNull().default('note'),
+  note: text('note'),
+  photoUri: text('photo_uri'),
+  createdAt: text('created_at').notNull(),
+});
+
 // A freeform husbandry log note for a pet (e.g. shed, weigh-in, vet visit).
 export const husbandryLogEntries = sqliteTable('husbandry_log_entries', {
   id: text('id').primaryKey(),
   petId: text('pet_id')
     .notNull()
     .references(() => pets.id, { onDelete: 'cascade' }),
+  title: text('title'),
+  entryType: text('entry_type').notNull().default('note'),
   note: text('note').notNull(),
   timestamp: text('timestamp').notNull(),
+  actorName: text('actor_name'),
+  weightGrams: integer('weight_grams'),
+  taskId: text('task_id'),
+  symptomSeverity: text('symptom_severity'),
+  symptomContext: text('symptom_context'),
   photoUri: text('photo_uri'),
 });
 

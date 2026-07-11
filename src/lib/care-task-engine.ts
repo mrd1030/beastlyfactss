@@ -1,11 +1,65 @@
 import type { CareInfo } from '@/content-client/types';
-import { completeCareTask, createCareTask, deleteAutoCareTasksForPet } from '@/db/helpers';
+import { addHusbandryLogEntry, completeCareTask, createCareTask, deleteAutoCareTasksForPet, snoozeCareTask } from '@/db/helpers';
 import type { CareTask, Pet } from '@/db/types';
 
 import { resolveCareScheduleDefaults } from './care-schedule-defaults';
 import { addDays, localDateString } from './date';
 
 export type CareTaskType = 'feeding' | 'cleaning' | 'tempCheck' | 'humidityCheck';
+export type QuickCareActionId = 'feeding' | 'water' | 'medication' | 'cleaning' | 'environment';
+
+export const QUICK_CARE_ACTIONS: {
+  id: QuickCareActionId;
+  label: string;
+  title: string;
+  note: string;
+  entryType:
+    | 'feeding'
+    | 'water'
+    | 'medication'
+    | 'cleaning'
+    | 'check';
+  taskTypes?: string[];
+}[] = [
+  {
+    id: 'feeding',
+    label: 'Fed',
+    title: 'Feeding confirmed',
+    note: 'Confirmed a feeding.',
+    entryType: 'feeding',
+    taskTypes: ['feeding'],
+  },
+  {
+    id: 'water',
+    label: 'Water',
+    title: 'Water refreshed',
+    note: 'Refreshed or checked water.',
+    entryType: 'water',
+  },
+  {
+    id: 'medication',
+    label: 'Meds',
+    title: 'Medication given',
+    note: 'Confirmed medication was given.',
+    entryType: 'medication',
+  },
+  {
+    id: 'cleaning',
+    label: 'Cleaned',
+    title: 'Cleaning completed',
+    note: 'Completed a cleaning routine.',
+    entryType: 'cleaning',
+    taskTypes: ['cleaning'],
+  },
+  {
+    id: 'environment',
+    label: 'Env check',
+    title: 'Environment checked',
+    note: 'Checked the enclosure environment.',
+    entryType: 'check',
+    taskTypes: ['tempCheck', 'humidityCheck'],
+  },
+];
 
 interface CareTaskKindDef {
   taskType: CareTaskType;
@@ -105,6 +159,72 @@ export async function markCareTaskDone(task: CareTask): Promise<void> {
   const today = localDateString();
   const nextDue = addDays(today, task.intervalDays);
   await completeCareTask(task.id, today, nextDue);
+}
+
+export async function markCareTaskDoneAndLog(task: CareTask, actorName?: string | null): Promise<void> {
+  await markCareTaskDone(task);
+  await addHusbandryLogEntry({
+    petId: task.petId,
+    title: task.label ?? task.taskType,
+    entryType: 'task',
+    note: `Completed ${task.label ?? task.taskType}.`,
+    timestamp: new Date().toISOString(),
+    actorName: actorName ?? null,
+    weightGrams: null,
+    taskId: task.id,
+    symptomSeverity: null,
+    symptomContext: null,
+    photoUri: null,
+  });
+}
+
+export async function confirmQuickCareAction(
+  petId: string,
+  actionId: QuickCareActionId,
+  dueTasks: CareTask[] = [],
+  today: string = localDateString(),
+  actorName?: string | null
+): Promise<void> {
+  const action = QUICK_CARE_ACTIONS.find((item) => item.id === actionId);
+  if (!action) {
+    throw new Error(`Unknown quick care action: ${actionId}`);
+  }
+
+  const matchingTasks = dueTasks.filter(
+    (task) => task.petId === petId && task.nextDueDate <= today && action.taskTypes?.includes(task.taskType)
+  );
+
+  for (const task of matchingTasks) {
+    await markCareTaskDone(task);
+  }
+
+  await addHusbandryLogEntry({
+    petId,
+    title: action.title,
+    entryType: action.entryType,
+    note: action.note,
+    timestamp: new Date().toISOString(),
+    actorName: actorName ?? null,
+    weightGrams: null,
+    taskId: matchingTasks[0]?.id ?? null,
+    symptomSeverity: null,
+    symptomContext: null,
+    photoUri: null,
+  });
+}
+
+export function getEffectiveTaskDueDate(task: Pick<CareTask, 'nextDueDate' | 'snoozedUntilDate'>): string {
+  return task.snoozedUntilDate && task.snoozedUntilDate > task.nextDueDate ? task.snoozedUntilDate : task.nextDueDate;
+}
+
+export function isTaskDueSoon(task: Pick<CareTask, 'nextDueDate' | 'snoozedUntilDate'>, today: string = localDateString(), withinDays = 3): boolean {
+  const due = getEffectiveTaskDueDate(task);
+  return due > today && due <= addDays(today, withinDays);
+}
+
+export async function snoozeTaskByDays(task: CareTask, days = 1, today: string = localDateString()): Promise<void> {
+  const baseDate = getEffectiveTaskDueDate(task) > today ? getEffectiveTaskDueDate(task) : today;
+  await snoozeCareTask(task.id, addDays(baseDate, days));
 }
 
 /** Human-readable status for a task's due date relative to today, for the

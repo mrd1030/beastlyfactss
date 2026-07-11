@@ -11,9 +11,18 @@ async function ensureStreakRow(): Promise<StreakState> {
   });
   if (existing) return existing;
 
-  const row = { id: SINGLETON_STREAK_ID, currentStreak: 0, longestStreak: 0, lastActiveDate: null };
-  await db.insert(streakState).values(row);
-  return row as StreakState;
+  await db
+    .insert(streakState)
+    .values({ id: SINGLETON_STREAK_ID, currentStreak: 0, longestStreak: 0, lastActiveDate: null })
+    .onConflictDoNothing({ target: streakState.id });
+
+  const created = await db.query.streakState.findFirst({
+    where: eq(streakState.id, SINGLETON_STREAK_ID),
+  });
+  if (!created) {
+    throw new Error('Could not initialize streak state.');
+  }
+  return created;
 }
 
 export async function getStreakState(): Promise<StreakState> {

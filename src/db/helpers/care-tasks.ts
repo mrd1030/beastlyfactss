@@ -2,10 +2,25 @@ import { and, asc, eq, lte } from 'drizzle-orm';
 
 import { requireDb } from '../client';
 import { generateLocalId } from '../id';
-import { careTasks } from '../schema';
+import { careTasks, medicationPlans } from '../schema';
 import type { CareTask, NewCareTask } from '../types';
 
 export type CreateCareTaskInput = Omit<NewCareTask, 'id'>;
+
+function effectiveDueDate(task: CareTask): string {
+  return task.snoozedUntilDate && task.snoozedUntilDate > task.nextDueDate ? task.snoozedUntilDate : task.nextDueDate;
+}
+
+function sortTasksByEffectiveDue(tasks: CareTask[]): CareTask[] {
+  return [...tasks].sort((a, b) => {
+    const aDue = effectiveDueDate(a);
+    const bDue = effectiveDueDate(b);
+    if (aDue === bDue) {
+      return a.taskType.localeCompare(b.taskType);
+    }
+    return aDue < bDue ? -1 : 1;
+  });
+}
 
 export async function createCareTask(input: CreateCareTaskInput): Promise<CareTask> {
   const row: NewCareTask = { ...input, id: generateLocalId() };
@@ -18,20 +33,30 @@ export async function getCareTask(id: string): Promise<CareTask | undefined> {
 }
 
 export async function listCareTasksForPet(petId: string): Promise<CareTask[]> {
-  return requireDb()
+  const tasks = await requireDb()
     .select()
     .from(careTasks)
     .where(eq(careTasks.petId, petId))
     .orderBy(asc(careTasks.nextDueDate));
+  return sortTasksByEffectiveDue(tasks);
 }
 
 /** Tasks due on or before `onOrBeforeDate` (an ISO date string), across all pets. */
 export async function listDueCareTasks(onOrBeforeDate: string): Promise<CareTask[]> {
-  return requireDb()
+  const tasks = await requireDb()
     .select()
     .from(careTasks)
     .where(lte(careTasks.nextDueDate, onOrBeforeDate))
     .orderBy(asc(careTasks.nextDueDate));
+  return sortTasksByEffectiveDue(tasks.filter((task) => effectiveDueDate(task) <= onOrBeforeDate));
+}
+
+export async function listUpcomingCareTasks(startDate: string, onOrBeforeDate: string): Promise<CareTask[]> {
+  const tasks = await requireDb().select().from(careTasks).orderBy(asc(careTasks.nextDueDate));
+  return sortTasksByEffectiveDue(tasks.filter((task) => {
+    const due = effectiveDueDate(task);
+    return due >= startDate && due <= onOrBeforeDate;
+  }));
 }
 
 export async function updateCareTask(
@@ -45,11 +70,16 @@ export async function updateCareTask(
 export async function completeCareTask(id: string, completedDate: string, nextDueDate: string): Promise<void> {
   await requireDb()
     .update(careTasks)
-    .set({ lastCompletedDate: completedDate, nextDueDate })
+    .set({ lastCompletedDate: completedDate, nextDueDate, snoozedUntilDate: null })
     .where(eq(careTasks.id, id));
 }
 
+export async function snoozeCareTask(id: string, snoozedUntilDate: string): Promise<void> {
+  await requireDb().update(careTasks).set({ snoozedUntilDate }).where(eq(careTasks.id, id));
+}
+
 export async function deleteCareTask(id: string): Promise<void> {
+  await requireDb().delete(medicationPlans).where(eq(medicationPlans.taskId, id));
   await requireDb().delete(careTasks).where(eq(careTasks.id, id));
 }
 

@@ -1,4 +1,4 @@
-import { desc, eq } from 'drizzle-orm';
+import { and, asc, desc, eq, isNotNull } from 'drizzle-orm';
 
 import { requireDb } from '../client';
 import { generateLocalId } from '../id';
@@ -19,6 +19,18 @@ export async function listHusbandryLogForPet(petId: string): Promise<HusbandryLo
     .from(husbandryLogEntries)
     .where(eq(husbandryLogEntries.petId, petId))
     .orderBy(desc(husbandryLogEntries.timestamp));
+}
+
+export async function listRecentHusbandryLog(limit = 10): Promise<HusbandryLogEntry[]> {
+  return requireDb().select().from(husbandryLogEntries).orderBy(desc(husbandryLogEntries.timestamp)).limit(limit);
+}
+
+export async function listWeightLogForPet(petId: string): Promise<HusbandryLogEntry[]> {
+  return requireDb()
+    .select()
+    .from(husbandryLogEntries)
+    .where(and(eq(husbandryLogEntries.petId, petId), isNotNull(husbandryLogEntries.weightGrams)))
+    .orderBy(asc(husbandryLogEntries.timestamp));
 }
 
 export async function deleteHusbandryLogEntry(id: string): Promise<void> {

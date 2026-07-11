@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "axolotl",
     "name": "Axolotl",
@@ -1601,7 +1601,7 @@
     "id": "cat-universal",
     "name": "Cat Care: The Essentials",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Beginner",
     "tagline": "Core care principles that apply to every cat, every breed.",
     "careInfo": {
@@ -1725,7 +1725,7 @@
     "id": "cat-domestic-shorthair",
     "name": "Domestic Shorthair: Breed Quirks",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Beginner",
     "tagline": "The most common cat in the world, and often the healthiest.",
     "careInfo": {
@@ -1827,7 +1827,7 @@
     "id": "cat-maine-coon",
     "name": "Maine Coon: Breed Quirks",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Beginner",
     "tagline": "The gentle giant of the cat world, with a dog-like personality.",
     "careInfo": {
@@ -1942,7 +1942,7 @@
     "id": "cat-siamese",
     "name": "Siamese: Breed Quirks",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Intermediate",
     "tagline": "The vocal, social, opinionated cat that demands to be part of everything.",
     "careInfo": {
@@ -2042,7 +2042,7 @@
     "id": "cat-ragdoll",
     "name": "Ragdoll: Breed Quirks",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Beginner",
     "tagline": "The floppy, gentle giant that goes limp when you pick them up.",
     "careInfo": {
@@ -2142,7 +2142,7 @@
     "id": "cat-bengal",
     "name": "Bengal: Breed Quirks",
     "emoji": "🐈",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Advanced",
     "tagline": "The wild-looking, highly athletic cat that needs an active owner.",
     "careInfo": {
@@ -2248,7 +2248,7 @@
     "id": "cat-persian",
     "name": "Persian: Breed Quirks",
     "emoji": "🐱",
-    "petType": "Cat",
+    "petType": "Cats",
     "difficulty": "Intermediate",
     "tagline": "The luxurious, calm lap cat with significant grooming requirements.",
     "careInfo": {
@@ -2350,7 +2350,7 @@
     "id": "dog-universal",
     "name": "Dog Care: The Essentials",
     "emoji": "🐶",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Beginner",
     "tagline": "Everything every dog owner needs to know, regardless of breed.",
     "careInfo": {
@@ -2469,7 +2469,7 @@
     "id": "dog-small-breed",
     "name": "Small Breed Dogs",
     "emoji": "🐕",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Beginner",
     "tagline": "Big personalities in a tiny package. Know their specific needs!",
     "careInfo": {
@@ -2581,7 +2581,7 @@
     "id": "dog-medium-breed",
     "name": "Medium Breed Dogs",
     "emoji": "🐕",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Beginner",
     "tagline": "The 'just right' size with its own unique needs.",
     "careInfo": {
@@ -2693,7 +2693,7 @@
     "id": "dog-large-breed",
     "name": "Large and Giant Breed Dogs",
     "emoji": "🐕",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Intermediate",
     "tagline": "More dog to love, and more responsibility to match.",
     "careInfo": {
@@ -2812,7 +2812,7 @@
     "id": "dog-labrador",
     "name": "Labrador Retriever: Breed Quirks",
     "emoji": "🐶",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Beginner",
     "tagline": "The world's most popular dog breed, and for good reason!",
     "careInfo": {
@@ -2918,7 +2918,7 @@
     "id": "dog-golden-retriever",
     "name": "Golden Retriever: Breed Quirks",
     "emoji": "🐶",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Beginner",
     "tagline": "Gentle, joyful, and endlessly loyal: the golden retriever.",
     "careInfo": {
@@ -3030,7 +3030,7 @@
     "id": "dog-german-shepherd",
     "name": "German Shepherd: Breed Quirks",
     "emoji": "🐕",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Intermediate",
     "tagline": "One of the world's most versatile and intelligent working dogs.",
     "careInfo": {},
@@ -3132,7 +3132,7 @@
     "id": "dog-french-bulldog",
     "name": "French Bulldog: Breed Quirks",
     "emoji": "🐶",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Intermediate",
     "tagline": "Charming and adaptable, but needs informed, attentive ownership.",
     "careInfo": {
@@ -3244,7 +3244,7 @@
     "id": "dog-border-collie",
     "name": "Border Collie: Breed Quirks",
     "emoji": "🐕",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Advanced",
     "tagline": "The world's most intelligent dog breed, and the most demanding.",
     "careInfo": {
@@ -3351,7 +3351,7 @@
     "id": "dog-siberian-husky",
     "name": "Siberian Husky: Breed Quirks",
     "emoji": "🐺",
-    "petType": "Dog",
+    "petType": "Dogs",
     "difficulty": "Advanced",
     "tagline": "The escape artist sled dog that needs a job and a secure fence.",
     "careInfo": {

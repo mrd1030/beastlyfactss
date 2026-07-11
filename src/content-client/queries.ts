@@ -60,3 +60,14 @@ export async function fetchEntryDetail(id: string): Promise<EntryDetail | null> 
     { id }
   );
 }
+
+export async function fetchEntryDetailBySlug(slug: string): Promise<EntryDetail | null> {
+  return sanityClient.fetch(
+    `*[_type == "post" && slug.current == $slug][0] {
+      _id, title, "slug": slug.current, excerpt, animalType, publishedAt, mainImage, body, tags, readTime,
+      facts, careInfo, quiz, rarityTier, artworkUrl,
+      "categoryTitle": categories[0]->title
+    }`,
+    { slug }
+  );
+}

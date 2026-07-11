@@ -10,6 +10,7 @@ import Animated, {
 import { useEffect, useRef } from 'react';
 
 import { Radius, Spacing } from '@/constants/theme';
+import { getGuideImageResizeMode, getGuideImageSource } from '@/content-client/guide-image-map';
 import type { ProvisionalEntry } from '@/content-client/types';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import type { UnlockMethod } from '@/db/types';
@@ -84,6 +85,7 @@ export function PackCard({
 
   const theme = useTheme();
   const thumb = sanityImageUrl(entry.mainImage, 200);
+  const localThumb = thumb ? null : getGuideImageSource(entry.slug ?? entry._id);
   const showEmoji = !thumb && !!entry.emoji;
 
   return (
@@ -112,9 +114,11 @@ export function PackCard({
           <ThemedView type="backgroundSelected" style={styles.unlockedCard}>
             {thumb ? (
               <Image source={{ uri: thumb }} style={styles.thumb} />
+            ) : localThumb ? (
+            <Image source={localThumb} style={styles.thumb} resizeMode={getGuideImageResizeMode(entry.slug ?? entry._id)} />
             ) : (
-              <ThemedView type="backgroundElement" style={[styles.thumb, styles.emojiThumb]}>
-                {showEmoji && <ThemedText style={styles.emojiText}>{entry.emoji}</ThemedText>}
+            <ThemedView type="backgroundElement" style={[styles.thumb, styles.emojiThumb]}>
+              {showEmoji && <ThemedText style={styles.emojiText}>{entry.emoji}</ThemedText>}
               </ThemedView>
             )}
             <ThemedText type="small" numberOfLines={2} style={styles.unlockedTitle}>

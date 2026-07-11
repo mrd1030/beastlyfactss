@@ -9,7 +9,7 @@ import { getProfile, updateProfile, type ThemePreference } from '@/lib/profile-s
  * and read on mount; every themed surface in the app (Colors lookups, the
  * native tab bar, the navigation ThemeProvider) should read `colorScheme`
  * from here instead of calling react-native's `useColorScheme` directly, so
- * a manual choice on the Profile tab actually takes effect everywhere.
+ * a manual choice in Settings actually takes effect everywhere.
  */
 
 interface ThemePreferenceContextValue {

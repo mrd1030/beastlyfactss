@@ -4,8 +4,8 @@ import { requireDb } from '../client';
 import { discoveredSpecies } from '../schema';
 import type { DiscoveredSpecies, UnlockMethod } from '../types';
 
-export async function getDiscoveredSpecies(entryId: string): Promise<DiscoveredSpecies | undefined> {
-  return requireDb().query.discoveredSpecies.findFirst({ where: eq(discoveredSpecies.entryId, entryId) });
+export async function getDiscoveredSpecies(entryId: string): Promise<DiscoveredSpecies | null> {
+  return (await requireDb().query.discoveredSpecies.findFirst({ where: eq(discoveredSpecies.entryId, entryId) })) ?? null;
 }
 
 export async function listDiscoveredSpecies(): Promise<DiscoveredSpecies[]> {

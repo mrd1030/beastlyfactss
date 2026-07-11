@@ -17,7 +17,9 @@ import type { Pet } from '@/db/types';
 import { useTheme } from '@/hooks/use-theme';
 import { generateCareTasksForPet, regenerateCareTasksForPet } from '@/lib/care-task-engine';
 import { refreshAllPetsCareNotifications } from '@/lib/care-notifications';
+import { refreshCareStatusWidget } from '@/lib/care-widget';
 import { localDateString } from '@/lib/date';
+import { markHouseholdSyncDirty } from '@/lib/household-sync-store';
 import { pickPetPhoto } from '@/lib/pick-pet-photo';
 
 const DATE_FORMAT = /^\d{4}-\d{2}-\d{2}$/;
@@ -171,7 +173,9 @@ function PetFormBody({
         queryClient.invalidateQueries({ queryKey: ['careTasks', savedPetId] }),
         queryClient.invalidateQueries({ queryKey: ['discoveredSpecies'] }),
       ]);
+      await markHouseholdSyncDirty().catch(() => {});
       await refreshAllPetsCareNotifications().catch(() => {});
+      await refreshCareStatusWidget().catch(() => {});
 
       router.replace({ pathname: '/pet/[id]', params: { id: savedPetId } });
     } catch (err) {

@@ -12,8 +12,8 @@ export async function upsertCachedEntry(entry: NewCachedEntry): Promise<void> {
     .onConflictDoUpdate({ target: cachedEntries.sourceId, set: entry });
 }
 
-export async function getCachedEntry(sourceId: string): Promise<CachedEntry | undefined> {
-  return requireDb().query.cachedEntries.findFirst({ where: eq(cachedEntries.sourceId, sourceId) });
+export async function getCachedEntry(sourceId: string): Promise<CachedEntry | null> {
+  return (await requireDb().query.cachedEntries.findFirst({ where: eq(cachedEntries.sourceId, sourceId) })) ?? null;
 }
 
 export async function listCachedEntries(): Promise<CachedEntry[]> {

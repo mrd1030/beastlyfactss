@@ -23,9 +23,11 @@ export const sanityClient = createClient({
 export function sanityImageUrl(source: { asset?: { _ref?: string } } | null | undefined, width = 400) {
   const ref = source?.asset?._ref;
   if (!ref) return null;
-  // ref shape: image-<assetId>-<width>x<height>-<format>
+  // ref shape: image-<assetId>-<origWidth>x<origHeight>-<format>
   const match = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(ref);
   if (!match) return null;
-  const [, assetId, , , format] = match;
-  return `https://cdn.sanity.io/images/${SANITY_PROJECT_ID}/${SANITY_DATASET}/${assetId}-${width}x${width}.${format}?w=${width}`;
+  const [, assetId, origWidth, origHeight, format] = match;
+  // CDN filename must use the original dimensions from the ref, not the requested width.
+  // Sanity CDN resizes on the fly via query params.
+  return `https://cdn.sanity.io/images/${SANITY_PROJECT_ID}/${SANITY_DATASET}/${assetId}-${origWidth}x${origHeight}.${format}?w=${width}&auto=format&fit=max`;
 }

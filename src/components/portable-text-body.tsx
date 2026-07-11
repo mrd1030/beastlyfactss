@@ -1,18 +1,16 @@
-import { StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 
-import type { PortableTextBlock } from '@/content-client/types';
 import { Spacing } from '@/constants/theme';
+import { sanityImageUrl } from '@/content-client/sanityClient';
+import type { PortableTextBlock } from '@/content-client/types';
 
 import { ThemedText } from './themed-text';
 
 /**
  * Basic block-to-paragraph renderer for a Sanity portable-text `body`
- * array. Intentionally simple — normal paragraphs, headings, and list
- * items rendered as plain themed text blocks. Does not handle inline
- * marks (bold/italic/links) or embedded image/custom blocks; those are
- * skipped rather than crashing. This does not need to replicate the
- * website's full PortableTextRenderer, just be a reasonable offline-
- * friendly stand-in.
+ * array. Handles normal paragraphs, headings, list items, blockquotes,
+ * and embedded image blocks. Inline marks (bold/italic/links) are not
+ * differentiated — all spans are concatenated as plain text.
  */
 export function PortableTextBody({ blocks }: { blocks?: PortableTextBlock[] | null }) {
   if (!blocks || blocks.length === 0) {
@@ -26,12 +24,26 @@ export function PortableTextBody({ blocks }: { blocks?: PortableTextBlock[] | nu
   return (
     <View style={styles.container}>
       {blocks.map((block, index) => {
+        const key = block._key ?? `block-${index}`;
+
+        // Embedded image block from Sanity body
+        if (block._type === 'image') {
+          const url = sanityImageUrl(block as unknown as { asset?: { _ref?: string } }, 800);
+          if (!url) return null;
+          return (
+            <Image
+              key={key}
+              source={{ uri: url }}
+              style={styles.bodyImage}
+              resizeMode="contain"
+            />
+          );
+        }
+
         if (block._type !== 'block' || !block.children) return null;
 
         const text = block.children.map((span) => span.text).join('');
         if (!text.trim()) return null;
-
-        const key = block._key ?? `block-${index}`;
 
         if (block.listItem) {
           return (
@@ -90,5 +102,10 @@ const styles = StyleSheet.create({
   blockquote: {
     fontStyle: 'italic',
     paddingLeft: Spacing.two,
+  },
+  bodyImage: {
+    width: '100%',
+    height: 240,
+    borderRadius: 8,
   },
 });

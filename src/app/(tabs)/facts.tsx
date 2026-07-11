@@ -1,30 +1,32 @@
-import { useMemo, useState } from 'react';
-import { FlatList, Pressable, StyleSheet, TextInput } from 'react-native';
+import { useMemo, useRef, useState } from 'react';
+import { FlatList, Pressable, RefreshControl, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { FactCard } from '@/components/fact-card';
+import { PaginationRow } from '@/components/pagination-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
-import { getAllFactCategories, getAllFacts, getFactForSeed } from '@/content-client/facts-catalog';
-import { dayOfYear } from '@/lib/date';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing, getCategoryAccent } from '@/constants/theme';
+import { getAllFactCategories, getAllFacts } from '@/content-client/facts-catalog';
+import { useThemePreference } from '@/contexts/theme-preference';
+import { useFavorites } from '@/hooks/use-favorites';
+import { getFactFavoriteId } from '@/lib/favorite-keys';
 import { useTheme } from '@/hooks/use-theme';
 
-/**
- * Facts tab — full browse/search over the bundled real facts library
- * (src/content-client/facts-catalog.ts, ~178 real animal facts). This is
- * deliberately separate from the Daily Fact card on Browse: that card only
- * ever shows one fact at a time and gave no way to see the rest of the
- * library, which is the gap this tab exists to close.
- */
+const FACTS_PAGE_SIZE = 12;
+
 export default function FactsScreen() {
   const theme = useTheme();
+  const { colorScheme } = useThemePreference();
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
   const [searchText, setSearchText] = useState('');
+  const [page, setPage] = useState(0);
+  const [refreshing, setRefreshing] = useState(false);
+  const listRef = useRef<FlatList<ReturnType<typeof getAllFacts>[number]>>(null);
+  const { favoriteIds, toggleFavorite } = useFavorites();
 
   const allFacts = useMemo(() => getAllFacts(), []);
   const categories = useMemo(() => getAllFactCategories(), []);
-  const featuredFact = useMemo(() => getFactForSeed(dayOfYear()), []);
 
   const visibleFacts = useMemo(() => {
     const query = searchText.trim().toLowerCase();
@@ -38,61 +40,112 @@ export default function FactsScreen() {
     });
   }, [allFacts, activeCategory, searchText]);
 
+  const pageCount = Math.max(1, Math.ceil(visibleFacts.length / FACTS_PAGE_SIZE));
+  const currentPage = Math.min(page, pageCount - 1);
+  const paginatedFacts = visibleFacts.slice(currentPage * FACTS_PAGE_SIZE, (currentPage + 1) * FACTS_PAGE_SIZE);
+
+  const goToPage = (nextPage: number) => {
+    setPage(nextPage);
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
+  };
+
+  // Category switches restart the list from the top; typing in search must
+  // not, or the keyboard focus gets yanked around mid-word.
+  const selectCategory = (category: string | null) => {
+    setActiveCategory(category);
+    setPage(0);
+    listRef.current?.scrollToOffset({ offset: 0, animated: false });
+  };
+
+  const handleRefresh = async () => {
+    setRefreshing(true);
+    setActiveCategory(null);
+    setSearchText('');
+    setPage(0);
+    await Promise.resolve();
+    setRefreshing(false);
+  };
+
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedText type="title" style={styles.title}>
-          Facts
-        </ThemedText>
-        <ThemedText type="small" themeColor="textSecondary">
-          {allFacts.length} real animal facts, bundled from beastlyfactss&apos;s own facts library.
-        </ThemedText>
-
-        <FactCard fact={featuredFact} featured />
-
-        <ThemedView type="backgroundElement" style={styles.searchBox}>
-          <TextInput
-            value={searchText}
-            onChangeText={setSearchText}
-            placeholder="Search facts or animals…"
-            placeholderTextColor={theme.textSecondary}
-            style={[styles.searchInput, { color: theme.text }]}
-          />
-        </ThemedView>
-
         <FlatList
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          style={styles.categoryRow}
-          contentContainerStyle={styles.categoryRowContent}
-          data={categories}
-          keyExtractor={(item) => item}
-          renderItem={({ item }) => {
-            const selected = activeCategory === item;
-            return (
-              <Pressable onPress={() => setActiveCategory(selected ? null : item)} style={styles.categoryChipWrap}>
-                <ThemedView
-                  type="backgroundElement"
-                  style={[styles.categoryChip, selected && { backgroundColor: theme.accent }]}>
-                  <ThemedText type="smallBold" style={selected ? { color: theme.onAccent } : undefined}>
-                    {item}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-            );
-          }}
-        />
-
-        <FlatList
+          ref={listRef}
           style={styles.list}
-          contentContainerStyle={{ paddingBottom: BottomTabInset + Spacing.three, gap: Spacing.two }}
-          data={visibleFacts}
+          contentContainerStyle={styles.listContent}
+          data={paginatedFacts}
           keyExtractor={(item) => String(item.id)}
-          renderItem={({ item }) => <FactCard fact={item} />}
+          refreshControl={<RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />}
+          renderItem={({ item }) => (
+            <FactCard
+              fact={item}
+              saved={favoriteIds.has(getFactFavoriteId(item.id))}
+              onToggleSaved={() => toggleFavorite(getFactFavoriteId(item.id))}
+            />
+          )}
+          ListHeaderComponent={
+            <View style={styles.headerContent}>
+              <View>
+                <ThemedText type="title" style={styles.title}>
+                  Fun Facts
+                </ThemedText>
+                <ThemedText type="small" themeColor="textSecondary">
+                  {visibleFacts.length === allFacts.length
+                    ? `${allFacts.length} mind-blowing animal facts`
+                    : `${visibleFacts.length} of ${allFacts.length} facts`}
+                </ThemedText>
+              </View>
+
+              <ThemedView type="backgroundElement" style={styles.searchBox}>
+                <TextInput
+                  value={searchText}
+                  onChangeText={(value) => {
+                    setSearchText(value);
+                    setPage(0);
+                  }}
+                  placeholder="Search facts or animals…"
+                  placeholderTextColor={theme.textSecondary}
+                  style={[styles.searchInput, { color: theme.text }]}
+                />
+              </ThemedView>
+
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.categoryRowContent}
+                style={styles.categoryRow}>
+                {categories.map((item) => {
+                  const selected = activeCategory === item;
+                  const accent = getCategoryAccent(item, colorScheme);
+                  return (
+                    <Pressable
+                      key={item}
+                      onPress={() => selectCategory(selected ? null : item)}
+                      style={styles.categoryChipWrap}>
+                      <View
+                        style={[
+                          styles.categoryChip,
+                          { backgroundColor: selected ? accent.strong : accent.tint },
+                        ]}>
+                        <ThemedText type="smallBold" style={{ color: selected ? theme.onAccent : accent.strong }}>
+                          {item}
+                        </ThemedText>
+                      </View>
+                    </Pressable>
+                  );
+                })}
+              </ScrollView>
+            </View>
+          }
+          ListFooterComponent={<PaginationRow page={currentPage} pageCount={pageCount} onChange={goToPage} />}
           ListEmptyComponent={
-            <ThemedText type="small" themeColor="textSecondary">
-              No facts match that search.
-            </ThemedText>
+            <View style={styles.emptyState}>
+              <ThemedText style={styles.emptyEmoji}>🔍</ThemedText>
+              <ThemedText type="smallBold">No facts found!</ThemedText>
+              <ThemedText type="small" themeColor="textSecondary">
+                Try a different search or category.
+              </ThemedText>
+            </View>
           }
         />
       </SafeAreaView>
@@ -109,9 +162,19 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     maxWidth: MaxContentWidth,
-    paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
+  },
+  list: {
+    flex: 1,
+  },
+  listContent: {
+    paddingHorizontal: Spacing.three,
+    paddingBottom: BottomTabInset + Spacing.three,
     gap: Spacing.two,
+  },
+  headerContent: {
+    gap: Spacing.two,
+    marginBottom: Spacing.one,
   },
   title: {
     fontSize: 32,
@@ -141,7 +204,13 @@ const styles = StyleSheet.create({
     paddingVertical: Spacing.two,
     borderRadius: Radius.pill,
   },
-  list: {
-    flex: 1,
+  emptyState: {
+    alignItems: 'center',
+    gap: Spacing.one,
+    paddingVertical: Spacing.five,
+  },
+  emptyEmoji: {
+    fontSize: 32,
+    lineHeight: 40,
   },
 });

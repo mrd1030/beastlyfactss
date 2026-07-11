@@ -23,8 +23,8 @@ import rawCatalog from './species-catalog-data.json';
 export type PetCategory =
   | 'Amphibians'
   | 'Birds'
-  | 'Cat'
-  | 'Dog'
+  | 'Cats'
+  | 'Dogs'
   | 'Fish'
   | 'Geckos'
   | 'Invertebrates'
@@ -37,8 +37,8 @@ export type PetCategory =
 export const PET_CATEGORY_ORDER: PetCategory[] = [
   'Amphibians',
   'Birds',
-  'Cat',
-  'Dog',
+  'Cats',
+  'Dogs',
   'Fish',
   'Geckos',
   'Invertebrates',

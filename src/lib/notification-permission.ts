@@ -1,5 +1,5 @@
-import * as Notifications from 'expo-notifications';
-import { Platform } from 'react-native';
+import { getNotificationsModule, type NotificationsModule } from './notifications-runtime';
+import { ensureNotificationInteractions } from './notification-actions';
 
 /**
  * Shared local-notification setup for this app's two notification sources
@@ -16,10 +16,16 @@ let handlerConfigured = false;
 
 /** Configures how a foregrounded notification is presented. Safe to call
  * repeatedly — only takes effect once. */
-export function ensureNotificationHandler(): void {
-  if (handlerConfigured || Platform.OS === 'web') return;
+export async function ensureNotificationHandler(
+  notifications: NotificationsModule | null = null
+): Promise<void> {
+  if (handlerConfigured) return;
+
+  const resolvedNotifications = notifications ?? (await getNotificationsModule());
+  if (!resolvedNotifications) return;
+
   handlerConfigured = true;
-  Notifications.setNotificationHandler({
+  resolvedNotifications.setNotificationHandler({
     handleNotification: async () => ({
       shouldShowBanner: true,
       shouldShowList: true,
@@ -32,14 +38,20 @@ export function ensureNotificationHandler(): void {
 /** Ensures notification permission is granted, requesting it if needed and
  * possible. Returns false (never throws) on web, on denial, or if the
  * permission APIs aren't available in this environment. */
-export async function ensureNotificationPermission(): Promise<boolean> {
-  if (Platform.OS === 'web') return false;
+export async function ensureNotificationPermission(
+  notifications: NotificationsModule | null = null
+): Promise<boolean> {
   try {
-    ensureNotificationHandler();
-    const existing = await Notifications.getPermissionsAsync();
+    const resolvedNotifications = notifications ?? (await getNotificationsModule());
+    if (!resolvedNotifications) return false;
+
+    await ensureNotificationHandler(resolvedNotifications);
+    await ensureNotificationInteractions(resolvedNotifications);
+
+    const existing = await resolvedNotifications.getPermissionsAsync();
     let status = existing.status;
     if (status !== 'granted' && existing.canAskAgain) {
-      const requested = await Notifications.requestPermissionsAsync();
+      const requested = await resolvedNotifications.requestPermissionsAsync();
       status = requested.status;
     }
     return status === 'granted';
