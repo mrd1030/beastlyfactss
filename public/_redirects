@@ -105,14 +105,15 @@
 # an Ahrefs crawl. This broke canonical/title/og-tags sitewide.
 #
 # Static assets are always served correctly with no rule needed here at
-# all - every guide/encyclopedia/blog/static page is prerendered (see
-# prerender.mjs), so Cloudflare finds and serves the real file directly.
-# For the handful of routes with no static file (e.g. /donate/success,
-# /donate/cancel after a Stripe redirect, or /pack/), Cloudflare's
-# automatic 404.html handling serves a real 404 status - but since this is
-# a client-side-routed SPA, React Router reads the actual browser URL on
-# mount regardless of which HTML/status was initially served, so a real
-# visitor's JS still loads and renders the correct page either way. Only
-# a non-JS crawler hitting one of those exact few noindex routes would see
-# a 404 instead of a soft 200 - an acceptable trade for not breaking SEO
-# tags on every real, indexed page on the site.
+# all - every guide/encyclopedia/blog/static page (plus /pack, noindex but
+# prerendered anyway for a stable default-state file - see prerender.mjs)
+# is prerendered, so Cloudflare finds and serves the real file directly.
+# For the couple of routes with no stable default to prerender (e.g.
+# /donate/success, /donate/cancel depend on Stripe redirect query params),
+# Cloudflare's automatic 404.html handling serves a real 404 status - but
+# since this is a client-side-routed SPA, React Router reads the actual
+# browser URL on mount regardless of which HTML/status was initially
+# served, so a real visitor's JS still loads and renders the correct page
+# either way. Only a non-JS crawler hitting one of those exact couple of
+# noindex routes would see a 404 instead of a soft 200 - an acceptable
+# trade for not breaking SEO tags on every real, indexed page on the site.

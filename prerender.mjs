@@ -171,7 +171,16 @@ const GUIDE_IDS = [
   'betta-fish','goldfish','koi','guppy','angelfish','corydoras-catfish','neon-tetra','oscar',
 ];
 
-// Static routes - must match App.jsx routes (excluding noindex/user-specific pages)
+// Static routes - must match App.jsx routes. Excludes only the couple of
+// routes with no stable default to render (e.g. /donate/success, /donate/cancel
+// depend on Stripe redirect query params) - see the "no SPA-fallback" comment
+// in public/_redirects for what happens to those at request time. /pack is
+// noindex,follow but IS included: without a prerendered file, Cloudflare falls
+// through to a 404 for it, and a stale cached copy of that fallback (from
+// before this file's SPA-fallback rules were tightened up) kept getting served
+// with 200 status and long-dead JS/CSS hashes - see the Ahrefs "broken JS/CSS"
+// errors this fixed. Prerendering it gives it the same reliable per-deploy
+// static file every other route gets, sidestepping that whole failure mode.
 const STATIC_ROUTES = [
   '/',
   '/facts',
@@ -179,6 +188,7 @@ const STATIC_ROUTES = [
   '/encyclopedia',
   '/guides',
   '/gear',
+  '/pack',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
