@@ -74,6 +74,7 @@ export const CATEGORIES = [
         { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' },
       ] },
       { term: 'Dimorphism', definition: 'Visible physical differences between males and females of the same species (size, color, or certain features).' },
+      { term: 'Ferguson zone', definition: 'One of four categories (Zone 1 to Zone 4) used to match a reptile species\' natural UVB exposure to an appropriate bulb strength, based on research into how much sun each species basks in in the wild.', related: [{ label: 'UVB Lighting: Why It Matters More Than You Think', to: '/blog/uvb-lighting-complete-guide/' }, { label: 'Bearded Dragon Care Guide', to: '/guides/bearded-dragon/' }] },
     ],
   },
   {
@@ -124,6 +125,8 @@ export const CATEGORIES = [
       { term: 'Cecotropes', definition: 'Soft, nutrient-rich droppings a rabbit produces and re-ingests directly, usually overnight - a normal and essential part of digestion, not a hygiene problem.', related: [{ label: 'Rabbit Care Guide', to: '/guides/rabbit/' }] },
       { term: 'GI stasis', definition: 'A dangerous slowdown or stoppage of a rabbit\'s digestive tract, often triggered by low fiber intake, stress, dehydration, or pain elsewhere in the body. A genuine emergency, since a rabbit\'s gut needs near-constant movement to stay healthy.', related: [{ label: 'Rabbit Care Guide', to: '/guides/rabbit/' }, { label: 'Rabbit GI Stasis: The Silent Emergency', to: '/blog/rabbit-gi-stasis-guide/' }] },
       { term: 'Adrenal disease (ferrets)', definition: 'A common hormonal condition in ferrets, especially those neutered very young, caused by overactive adrenal glands. Often shows up first as a symmetric hair-loss pattern rather than obvious illness.', related: [{ label: 'Ferret Care Guide', to: '/guides/ferret/' }, { label: 'Ferret Adrenal Disease', to: '/blog/ferret-adrenal-disease-guide/' }] },
+      { term: 'Scurvy (Vitamin C deficiency)', definition: 'A disease from insufficient vitamin C, most notable in guinea pigs, one of the few animals besides humans that can\'t produce their own and must get it from diet every day.', related: [{ label: 'Guinea Pig Care Guide', to: '/guides/guinea-pig/' }, { label: 'Guinea Pig Scurvy: Why Vitamin C Isn\'t Optional', to: '/blog/guinea-pig-scurvy-vitamin-c-guide/' }] },
+      { term: 'Dust bath', definition: 'A chinchilla\'s natural way of cleaning its dense fur, rolling in a specific volcanic-ash dust instead of bathing in water, which would trap moisture against the skin and lead to fungal issues.', related: [{ label: 'Chinchilla Care Guide', to: '/guides/chinchilla/' }] },
     ],
   },
   {
@@ -142,6 +145,8 @@ export const CATEGORIES = [
       { term: 'Polydactyl', definition: 'Having extra toes - a genetic trait that shows up occasionally in certain cat lines, Maine Coons especially.', related: [{ label: 'Maine Coon Care Guide', to: '/guides/cat-maine-coon/' }] },
       { term: 'Litter box aversion', definition: 'When a cat starts avoiding its litter box. Usually points to a medical issue, stress, or dissatisfaction with the box or litter type itself rather than "bad behavior."' },
       { term: 'Resource guarding', definition: 'Defensive behavior (growling, snapping, blocking) around food, toys, or space, used to protect something the animal sees as valuable. Common in both dogs and cats and very manageable with the right approach.' },
+      { term: 'Bloat (GDV)', definition: 'A life-threatening emergency where the stomach fills with gas and can twist on itself, cutting off blood flow. Most common in large, deep-chested breeds, and always requires an immediate emergency vet visit.', related: [{ label: 'Bloat in Dogs: The Emergency Every Owner Should Know', to: '/blog/dog-bloat-gdv-guide/' }] },
+      { term: 'Hairball (trichobezoar)', definition: 'A clump of ingested fur that collects in a cat\'s stomach during self-grooming, usually passed by vomiting. An occasional hairball is normal; frequent ones can point to an underlying issue.', related: [{ label: 'Cat Hairballs vs Vomiting', to: '/blog/cat-hairball-vs-vomiting-guide/' }] },
     ],
   },
   {
@@ -172,6 +177,7 @@ export const CATEGORIES = [
       { term: 'Nitrogen cycle', definition: 'The biological process where beneficial bacteria convert toxic ammonia from fish waste into nitrite, then into far less harmful nitrate. A brand-new tank needs time to build up these bacteria before it can safely hold fish.', related: [{ label: 'Betta Fish Care Guide', to: '/guides/betta-fish/' }, { label: 'Goldfish Care Guide', to: '/guides/goldfish/' }] },
       { term: 'Dechlorinator', definition: 'A water conditioner added to tap water to neutralize chlorine and chloramine before it\'s safe for fish or other water-dependent pets.', related: [{ label: 'Betta Fish Care Guide', to: '/guides/betta-fish/' }] },
       { term: 'Stunting', definition: 'A once-common myth that a small bowl permanently caps a goldfish\'s size. In reality, cramped, poorly-filtered housing causes stress and organ damage, not a genuine size limit - a goldfish given proper space keeps growing toward its natural size.', related: [{ label: 'Goldfish Care Guide', to: '/guides/goldfish/' }] },
+      { term: 'GH/KH (water hardness)', definition: 'General hardness (GH) and carbonate hardness (KH): two measures of dissolved minerals in aquarium water that affect pH stability and how comfortable certain fish are, separate from temperature or the nitrogen cycle.', related: [{ label: 'Betta Fish Water Parameters: The Numbers That Actually Matter', to: '/blog/betta-fish-water-parameters-guide/' }] },
     ],
   },
 ];

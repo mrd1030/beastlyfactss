@@ -329,7 +329,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4wu57v1",
     image: "/assets/images/affiliate/product-35.jpg",
-    covers: ["Food and water bowls", "Food/water bowls", "Food/water bowls or cat fountain"],
+    covers: ["Food and water bowls", "Food/water bowls", "Food/water bowls or cat fountain", "Food and water dishes"],
   },
   {
     slug: "puzzle-feeder",
