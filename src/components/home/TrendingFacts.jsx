@@ -1,33 +1,23 @@
 import React, { useRef, useMemo } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useQuery } from '@tanstack/react-query';
-import { base44 } from '@/api/base44Client';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
 
 export default function TrendingFacts({ onOpenFact }) {
   const scrollRef = useRef(null);
 
-  const { data: dynamicFacts = [] } = useQuery({
-    queryKey: ['dynamicFacts'],
-    queryFn: () => base44.entities.DynamicFact.list('-created_date', 5),
-    staleTime: 1000 * 60 * 10,
-  });
-
-  // Show newest dynamic facts first, then fill with static facts rotated by day.
-  // This route is in prerender.mjs's STATIC_ROUTES, so a Math.random() shuffle
-  // here would bake one order into the static HTML and pick a different one
+  // Facts rotated by day (same idiom as HeroSection's daily fact) rather than
+  // Math.random(): this route is in prerender.mjs's STATIC_ROUTES, so a random
+  // shuffle would bake one order into the static HTML and pick a different one
   // the moment React hydrates client-side - visibly reordering the cards right
-  // after every load. A date-seeded rotation (same idiom as HeroSection's daily
-  // fact) still varies day to day but stays identical between prerender and hydration.
+  // after every load. A previous version also merged in "dynamic" facts fetched
+  // via Base44 here - that call never once returned data (auth on it is broken)
+  // and its own request handling was forcing this carousel to load scrolled to
+  // its far right edge. Removed rather than worked around; it wasn't providing anything.
   const trending = useMemo(() => {
-    const needed = Math.max(0, 8 - dynamicFacts.length);
-    const dynamicTitles = new Set(dynamicFacts.map(f => f.title));
-    const staticPool = facts.filter(f => !dynamicTitles.has(f.title));
-    const offset = staticPool.length ? new Date().getDate() % staticPool.length : 0;
-    const rotated = [...staticPool.slice(offset), ...staticPool.slice(0, offset)];
-    return [...dynamicFacts, ...rotated.slice(0, needed)].slice(0, 8);
-  }, [dynamicFacts]);
+    const offset = facts.length ? new Date().getDate() % facts.length : 0;
+    return [...facts.slice(offset), ...facts.slice(0, offset)].slice(0, 8);
+  }, []);
 
   const scroll = (dir) => {
     if (scrollRef.current) {
