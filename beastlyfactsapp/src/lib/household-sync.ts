@@ -1,4 +1,9 @@
-// Supabase is disabled — all cloud sync functions return 'not-configured'.
+// The Supabase client is live (see ./supabase.ts), but the actual sync
+// functions below are still stubs - restoring a pulled snapshot needs new
+// ID-preserving insert helpers that don't exist yet (today's createPet()
+// etc. always mint a fresh local ID, which would break every pet/task/log
+// relationship in someone else's data). Real push/pull logic is a separate,
+// deliberate next step - see PROJECT memory / chat history for context.
 import {
   clearHouseholdConnection,
 } from './household-sync-store';
@@ -20,6 +25,11 @@ type HouseholdSyncResult =
   | { status: 'pulled' | 'pushed' | 'joined' | 'created'; syncedAt: string; householdName: string }
   | { status: 'conflict'; remoteUpdatedAt: string; householdName: string };
 
+// Deliberately NOT tied to isSupabaseConfigured yet: the client can be live
+// while the sync functions below are still stubs (see file header). Settings
+// hides its whole create/join form behind this flag, so flipping it true
+// before real push/pull logic exists would show a form that does nothing.
+// Flip this once createRemoteHousehold/joinRemoteHousehold/etc. are real.
 export function isSupabaseReady(): boolean {
   return false;
 }

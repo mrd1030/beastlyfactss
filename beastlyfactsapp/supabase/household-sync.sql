@@ -12,9 +12,15 @@ alter table public.households enable row level security;
 
 revoke all on public.households from anon, authenticated;
 
+-- Supabase installs pgcrypto into the `extensions` schema, not `public` -
+-- every function below that needs gen_random_bytes()/gen_random_uuid()
+-- must include `extensions` in its search_path or those calls fail with
+-- "function gen_random_bytes(integer) does not exist" (confirmed live
+-- against this project - the very first deploy hit exactly this).
 create or replace function public.generate_household_invite_code()
 returns text
 language plpgsql
+set search_path = public, extensions
 as $$
 declare
   code text;
@@ -40,7 +46,7 @@ returns table (
 )
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   v_household public.households;
@@ -97,12 +103,19 @@ as $$
 declare
   v_household public.households;
 begin
-  update public.households
+  -- Table aliased and columns qualified (`h.snapshot`, `h.invite_code`) -
+  -- this function's own RETURNS TABLE names 3 of its output columns
+  -- identically to the real table columns (invite_code, updated_at,
+  -- snapshot), which PL/pgSQL treats as variables in scope alongside the
+  -- table's own columns. Bare `snapshot`/`invite_code` references are
+  -- genuinely ambiguous between the two and fail at call time - confirmed
+  -- live against this project ("column reference is ambiguous").
+  update public.households as h
   set
-    name = coalesce(nullif(trim(p_household_name), ''), name),
-    snapshot = coalesce(p_snapshot, snapshot),
+    name = coalesce(nullif(trim(p_household_name), ''), h.name),
+    snapshot = coalesce(p_snapshot, h.snapshot),
     updated_at = timezone('utc', now())
-  where invite_code = upper(trim(p_invite_code))
+  where h.invite_code = upper(trim(p_invite_code))
   returning * into v_household;
 
   if v_household.id is null then

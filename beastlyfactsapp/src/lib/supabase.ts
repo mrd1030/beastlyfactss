@@ -1,12 +1,22 @@
-// Supabase backend is disabled. This stub keeps the same exported interface
-// so nothing else in the app breaks at import time.
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createClient } from '@supabase/supabase-js';
 
-export const isSupabaseConfigured = false;
+const supabaseUrl = process.env.EXPO_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.EXPO_PUBLIC_SUPABASE_KEY;
 
-export const supabase = null;
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseKey);
 
-export function requireSupabase(): never {
-  throw new Error(
-    'Supabase is disabled. Enable it by installing the required packages and re-adding the real supabase.ts implementation.'
-  );
-}
+// AsyncStorage-backed session persistence (not cookies - this is React
+// Native, not a browser) so a signed-in session survives an app restart.
+// detectSessionInUrl is web-only OAuth-redirect behavior; off here since
+// there's no browser URL to inspect.
+export const supabase = isSupabaseConfigured
+  ? createClient(supabaseUrl!, supabaseKey!, {
+      auth: {
+        storage: AsyncStorage,
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: false,
+      },
+    })
+  : null;
