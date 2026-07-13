@@ -72,7 +72,7 @@ to source across those 25.
 - [ ] **Quality thermostat** (4 guides: Ackie Monitor, Argentine B&W Tegu, Savannah Monitor, Uromastyx) - generic wattage-rated controller, not species-shaped
 - [ ] **Toys (rotating)** (3 guides: Cockatiel, Green Cheek Conure, Lovebird) - "small parrot" toy multi-packs already cover all three
 - [ ] **Litter** (7 guides: universal Cat guide + Domestic Shorthair, Maine Coon, Siamese, Ragdoll, Bengal, Persian) - standard clumping litter
-- [ ] **Grass hay (unlimited)** (3 guides: Chinchilla, Guinea Pig, Rabbit) - same bagged Timothy/grass hay for all three (note: this is separate from the tortoise-specific "Bermuda, orchard, Timothy" blend mentioned in the Russian/Sulcata Tortoise guides, which is single-guide phrasing not covered in this pass - still worth its own tortoise-blend product)
+- [x] **Grass hay (unlimited)** (3 guides: Chinchilla, Guinea Pig, Rabbit) - same bagged Timothy/grass hay for all three - **linked** (Oxbow Western Timothy Hay, `timothy-hay-small-pets`) (note: this is separate from the tortoise-specific "Bermuda, orchard, Timothy" blend mentioned in the Russian/Sulcata Tortoise guides, which is single-guide phrasing not covered in this pass - still worth its own tortoise-blend product)
 - [ ] **Foraging and shreddable toys** (2 guides: Cockatiel, Green Cheek Conure) - same small-parrot toy category
 - [ ] **Small parrot pellets** (2 guides: Green Cheek Conure, Lovebird) - same small-parrot pellet tier (Zupreem/Harrison's-style)
 - [ ] **Carrier** (2 guides: Cat Care Essentials, Domestic Shorthair) - standard adult cat carrier

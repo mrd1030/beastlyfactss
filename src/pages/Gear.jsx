@@ -12,12 +12,14 @@ const DESCRIPTION = truncateDescription(
 
 // Built from whichever retailers actually have products listed below, so the disclosure
 // never over- or under-claims a partnership - it just updates itself as products are added.
-function disclosureText() {
+// `direction` says where the product links sit relative to this text: 'below' for the
+// copy shown before the product grid, 'above' for the copy shown after it.
+function disclosureText(direction = 'above') {
   const used = [...new Set(AFFILIATE_PRODUCTS.map(p => p.retailer))].map(r => RETAILERS[r]?.programName || r);
   const programs = used.length > 1
     ? `${used.slice(0, -1).join(', ')} and ${used[used.length - 1]}`
     : (used[0] || 'Amazon Associate');
-  return `As an ${programs}, we earn from qualifying purchases through the links above - at no extra cost to you. We only list products we'd actually recommend to our own pets' keepers.`;
+  return `As an ${programs}, we earn from qualifying purchases through the links ${direction} - at no extra cost to you. We only list products we'd actually recommend to our own pets' keepers.`;
 }
 
 function ProductCard({ product }) {
@@ -89,7 +91,7 @@ export default function Gear() {
               small-mammal supplies.
             </p>
             <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3 max-w-xl">
-              {disclosureText()}
+              {disclosureText('below')}
             </p>
           </motion.div>
         </div>

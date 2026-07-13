@@ -591,6 +591,35 @@ export const AFFILIATE_PRODUCTS = [
     image: "/assets/images/affiliate/product-63.jpg",
     covers: ["Vitamin C supplement (if needed)"],
   },
+
+  // --- Batch 7: species-aware gear gap pass (gear-product-variants-needed.md) ---
+  {
+    slug: "timothy-hay-small-pets",
+    product: "Timothy hay (Oxbow Western Timothy Hay, 90 oz)",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://amzn.to/4h9WW2u",
+    image: "/assets/images/affiliate/product-64.jpg",
+    covers: ["Grass hay (unlimited)"],
+  },
+  {
+    slug: "aquarium-chiller-axolotl",
+    product: "Aquarium chiller, 1/3 HP compressor (79 gal capacity)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://amzn.to/4wCcGzE",
+    image: "/assets/images/affiliate/product-65.jpg",
+    covers: ["Aquarium chiller (keeps water 60-68°F)"],
+  },
+  {
+    slug: "aquarium-chiller-fan-budget",
+    product: "Aquarium chiller fan (budget alternative)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://amzn.to/4wzLZvv",
+    image: "/assets/images/affiliate/product-66.jpg",
+    covers: [], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+  },
 ];
 
 // Display order for category sections on the standalone gear page.
