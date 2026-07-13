@@ -12,7 +12,7 @@
     "typecheck": "tsc -p ./jsconfig.json"
   },
   "dependencies": {
-    "@base44/sdk": "^0.8.37",
+    "@base44/sdk": "^0.8.38",
     "@base44/vite-plugin": "^1.0.30",
     "@mdx-js/rollup": "^3.1.1",
     "@portabletext/react": "^6.2.0",
