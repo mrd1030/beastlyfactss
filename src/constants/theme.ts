@@ -36,21 +36,25 @@ export const Colors = {
     // chips, primary buttons).
     onAccent: '#F6FFFB',
   },
-  // Dark mode mirrors light's warmth: charcoal with the same cream/sand
-  // undertone (not the old green-cast near-black), cream-tinted text, and
-  // the site's vivid accents which already read well on dark surfaces.
+  // Matches the site's actual dark mode exactly (beastlyfactss/src/index.css
+  // `.dark`: --background 150 30% 6%, --card 150 25% 10%, --muted 150 20% 14%,
+  // --foreground 34 40% 95%, --muted-foreground 34 20% 60%) - a dark FOREST
+  // GREEN family, not neutral charcoal. An earlier pass here deliberately
+  // moved away from a green-tinted dark background toward neutral charcoal,
+  // which was a mistake: that "green-cast" direction was actually correct,
+  // it just wasn't tuned to the site's specific hue/lightness values yet.
   dark: {
-    text: '#F2EEE4',
-    textSecondary: '#A9A399',
-    background: '#171512',
-    backgroundElement: '#221F1A',
-    backgroundSelected: '#2E2A22',
+    text: '#F7F3ED',
+    textSecondary: '#AD9C85',
+    background: '#0B140F',
+    backgroundElement: '#13201A',
+    backgroundSelected: '#1D2B24',
     accent: '#72D0A7',
     accentSoft: '#20302A',
     success: '#4FD3A1',
     danger: '#F37C97',
     warning: '#E5C15B',
-    hairline: 'rgba(242, 238, 228, 0.12)',
+    hairline: 'rgba(247, 243, 237, 0.12)',
     onAccent: '#0B231A',
   },
 } as const;

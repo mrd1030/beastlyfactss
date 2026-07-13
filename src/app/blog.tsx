@@ -4,10 +4,12 @@ import { useMemo, useRef, useState } from 'react';
 import { FlatList, Image, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
 import { PaginationRow } from '@/components/pagination-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { TwoToneTitle } from '@/components/two-tone-title';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { fetchCollectionEntries } from '@/content-client/queries';
 import { sanityImageUrl } from '@/content-client/sanityClient';
@@ -133,9 +135,10 @@ export default function BlogScreen() {
               <Pressable onPress={() => router.back()} hitSlop={8}>
                 <ThemedText type="linkPrimary">← Back</ThemedText>
               </Pressable>
-              <ThemedText type="title" style={styles.title}>
-                Blog
-              </ThemedText>
+              <View style={styles.titleRow}>
+                <TwoToneTitle first="Blo" second="g" style={styles.title} />
+                <AppMenu />
+              </View>
               {posts.length > 0 && (
                 <ThemedText type="small" themeColor="textSecondary">
                   {searchText.trim()
@@ -227,6 +230,12 @@ const styles = StyleSheet.create({
   headerContent: {
     gap: Spacing.two,
     marginBottom: Spacing.one,
+  },
+  titleRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    gap: Spacing.two,
   },
   title: {
     fontSize: 32,

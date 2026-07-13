@@ -1,4 +1,4 @@
-﻿import { Image, Pressable, StyleSheet, View } from 'react-native';
+import { Image, Pressable, StyleSheet, View } from 'react-native';
 
 import { Colors, Radius, Spacing } from '@/constants/theme';
 import { useThemePreference } from '@/contexts/theme-preference';

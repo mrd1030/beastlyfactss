@@ -4,7 +4,6 @@ import type { NotificationResponse } from 'expo-notifications';
 
 import { getCareTask } from '@/db/helpers';
 
-import { refreshAllPetsCareNotifications } from './care-notifications';
 import { markCareTaskDone, snoozeTaskByDays } from './care-task-engine';
 import { refreshCareStatusWidget } from './care-widget';
 import { getNotificationsModule, type NotificationsModule } from './notifications-runtime';
@@ -69,7 +68,14 @@ async function handleNotificationResponse(
     const task = await getCareTask(taskId);
     if (task) {
       await markCareTaskDone(task);
-      await refreshAllPetsCareNotifications().catch(() => {});
+      // Dynamic import (not a static one) breaks a require cycle: this
+      // module is imported by notification-permission.ts, which is imported
+      // by care-notifications.ts - a static top-level import back here would
+      // complete the loop and risk uninitialized bindings depending on load
+      // order. refreshAllPetsCareNotifications is only needed at call time.
+      await import('./care-notifications')
+        .then((mod) => mod.refreshAllPetsCareNotifications())
+        .catch(() => {});
       await refreshCareStatusWidget().catch(() => {});
       await queryClient.invalidateQueries();
     }
@@ -80,7 +86,14 @@ async function handleNotificationResponse(
     const task = await getCareTask(taskId);
     if (task) {
       await snoozeTaskByDays(task, 1);
-      await refreshAllPetsCareNotifications().catch(() => {});
+      // Dynamic import (not a static one) breaks a require cycle: this
+      // module is imported by notification-permission.ts, which is imported
+      // by care-notifications.ts - a static top-level import back here would
+      // complete the loop and risk uninitialized bindings depending on load
+      // order. refreshAllPetsCareNotifications is only needed at call time.
+      await import('./care-notifications')
+        .then((mod) => mod.refreshAllPetsCareNotifications())
+        .catch(() => {});
       await refreshCareStatusWidget().catch(() => {});
       await queryClient.invalidateQueries();
     }

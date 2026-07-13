@@ -1,4 +1,4 @@
-﻿// Supabase is disabled — all cloud sync functions return 'not-configured'.
+// Supabase is disabled — all cloud sync functions return 'not-configured'.
 import {
   clearHouseholdConnection,
 } from './household-sync-store';

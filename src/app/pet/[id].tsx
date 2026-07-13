@@ -35,7 +35,7 @@ import {
   markCareTaskDoneAndLog,
   snoozeTaskByDays,
 } from '@/lib/care-task-engine';
-import { addDays, localDateString } from '@/lib/date';
+import { localDateString } from '@/lib/date';
 import { markHouseholdSyncDirty } from '@/lib/household-sync-store';
 import { pickPetPhoto } from '@/lib/pick-pet-photo';
 
@@ -199,10 +199,7 @@ export default function PetDetailScreen() {
   );
   const overdueTasks = sortedTasks.filter((task) => getEffectiveTaskDueDate(task) < today);
   const dueTodayTasks = sortedTasks.filter((task) => getEffectiveTaskDueDate(task) === today);
-  const dueSoonTasks = sortedTasks.filter((task) => getEffectiveTaskDueDate(task) > today && getEffectiveTaskDueDate(task) <= addDays(today, 3));
-  const customTaskCount = sortedTasks.filter((task) => task.source === 'custom').length;
   const daysWithPet = pet?.acquiredDate ? getDaysSince(pet.acquiredDate) : null;
-  const latestLogEntry = log?.[0] ?? null;
   const latestSymptomEntry = log?.find((entry) => entry.entryType === 'symptom') ?? null;
   const weightEntries = useMemo(
     () =>
@@ -407,17 +404,17 @@ export default function PetDetailScreen() {
                 )}
               </View>
             </View>
-            <ThemedView type="backgroundElement" style={styles.caregiverBar}>
-              <View style={styles.caregiverText}>
+            {(careTeam?.caregivers.length ?? 0) > 1 && (
+              // Attribution only matters once a household actually has more
+              // than one caregiver - for the common solo-user case this was
+              // a permanent explainer bar with nothing useful to say.
+              <ThemedView type="backgroundElement" style={styles.caregiverBar}>
                 <ThemedText type="smallBold">Logging as {activeCaregiver?.name ?? 'Caregiver'}</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
-                  Shared-care actions and health notes will show who handled them.
-                </ThemedText>
-              </View>
-              <Pressable onPress={() => router.navigate('/settings')}>
-                <ThemedText type="linkPrimary">Care team</ThemedText>
-              </Pressable>
-            </ThemedView>
+                <Pressable onPress={() => router.navigate('/settings')}>
+                  <ThemedText type="linkPrimary">Switch</ThemedText>
+                </Pressable>
+              </ThemedView>
+            )}
             <View style={styles.quickActionsRow}>
               <Pressable onPress={() => setAddingTask((v) => !v)}>
                 <ThemedView type="backgroundSelected" style={styles.quickActionButton}>
@@ -459,97 +456,56 @@ export default function PetDetailScreen() {
             </View>
           </Card>
 
-          <View style={styles.dashboardGrid}>
-            <ThemedView type="backgroundElement" style={styles.dashboardCard}>
+          {/* One compact status card replaces what used to be 4 stat tiles
+              plus 3 separate prose cards - overdue/due-today counts and last
+              activity are already visible per-row in the task list and
+              timeline just below, so they don't need a second, summarized
+              copy up here too. */}
+          <Card variant="soft" style={styles.nextUpCard}>
+            <View style={styles.nextUpHeaderRow}>
               <ThemedText type="small" themeColor="textSecondary">
-                Due today
+                {overdueTasks.length > 0
+                  ? `${overdueTasks.length} overdue`
+                  : dueTodayTasks.length > 0
+                    ? `${dueTodayTasks.length} due today`
+                    : 'All caught up'}
               </ThemedText>
-              <ThemedText type="title" style={styles.dashboardValue}>
-                {dueTodayTasks.length}
-              </ThemedText>
-            </ThemedView>
-            <ThemedView type="backgroundElement" style={styles.dashboardCard}>
-              <ThemedText type="small" themeColor="textSecondary">
-                Overdue
-              </ThemedText>
-              <ThemedText type="title" style={[styles.dashboardValue, overdueTasks.length > 0 ? { color: theme.danger } : undefined]}>
-                {overdueTasks.length}
-              </ThemedText>
-            </ThemedView>
-            <ThemedView type="backgroundElement" style={styles.dashboardCard}>
-              <ThemedText type="small" themeColor="textSecondary">
-                Time together
-              </ThemedText>
-              <ThemedText type="smallBold">
-                {daysWithPet != null ? `${daysWithPet} day${daysWithPet === 1 ? '' : 's'}` : 'Not set'}
-              </ThemedText>
-            </ThemedView>
-            <ThemedView type="backgroundElement" style={styles.dashboardCard}>
-              <ThemedText type="small" themeColor="textSecondary">
-                Health watch
-              </ThemedText>
-              <ThemedText type="smallBold">
-                {latestSymptomEntry ? (latestSymptomEntry.symptomSeverity ?? 'watch').toUpperCase() : latestWeight?.weightGrams ? `${latestWeight.weightGrams} g` : 'No alerts'}
-              </ThemedText>
+              {daysWithPet != null && (
+                <ThemedText type="small" themeColor="textSecondary">
+                  {daysWithPet} day{daysWithPet === 1 ? '' : 's'} together
+                </ThemedText>
+              )}
+            </View>
+            {sortedTasks.length > 0 ? (
+              <>
+                <ThemedText type="smallBold">{sortedTasks[0].label ?? sortedTasks[0].taskType}</ThemedText>
+                <ThemedText
+                  type="small"
+                  style={{
+                    color:
+                      getEffectiveTaskDueDate(sortedTasks[0]) < today
+                        ? theme.danger
+                        : getEffectiveTaskDueDate(sortedTasks[0]) === today
+                          ? theme.warning
+                          : theme.textSecondary,
+                  }}>
+                  {describeDueStatus(getEffectiveTaskDueDate(sortedTasks[0]), today)}
+                </ThemedText>
+              </>
+            ) : (
+              <ThemedText type="smallBold">No care tasks yet</ThemedText>
+            )}
+            {(latestSymptomEntry || latestWeight?.weightGrams) && (
               <ThemedText type="small" themeColor="textSecondary">
                 {latestSymptomEntry
-                  ? new Date(latestSymptomEntry.timestamp).toLocaleDateString()
-                  : latestWeight?.weightGrams
-                    ? 'Latest weigh-in'
-                    : 'Nothing concerning logged'}
+                  ? `Health watch: ${(latestSymptomEntry.symptomSeverity ?? 'watch').toUpperCase()}`
+                  : `Latest weight: ${latestWeight!.weightGrams} g`}
               </ThemedText>
-            </ThemedView>
-          </View>
-
-          {sortedTasks.length > 0 && (
-            <Card variant="soft" style={styles.nextUpCard}>
-              <ThemedText type="small" themeColor="textSecondary">
-                Next up
-              </ThemedText>
-              <ThemedText type="smallBold">{sortedTasks[0].label ?? sortedTasks[0].taskType}</ThemedText>
-              <ThemedText
-                type="small"
-                style={{
-                  color:
-                    getEffectiveTaskDueDate(sortedTasks[0]) < today
-                      ? theme.danger
-                      : getEffectiveTaskDueDate(sortedTasks[0]) === today
-                        ? theme.warning
-                        : theme.textSecondary,
-                }}>
-                {describeDueStatus(getEffectiveTaskDueDate(sortedTasks[0]), today)}
-              </ThemedText>
-            </Card>
-          )}
-
-          <Card variant="filled" style={styles.snapshotCard}>
-            <ThemedText type="smallBold">Dashboard snapshot</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              {latestLogEntry
-                ? `Last activity: ${formatActivityTitle(latestLogEntry)} on ${new Date(latestLogEntry.timestamp).toLocaleDateString()}${latestLogEntry.actorName ? ` by ${latestLogEntry.actorName}` : ''}.`
-                : 'No activity logged yet.'}
-            </ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              {customTaskCount > 0
-                ? `${customTaskCount} custom task${customTaskCount === 1 ? '' : 's'} helping you stay on top of care.`
-                : 'Add a custom task for one-off care routines like medication or checkups.'}
-            </ThemedText>
-          </Card>
-
-          <Card variant="filled" style={styles.snapshotCard}>
-            <ThemedText type="smallBold">Reminder runway</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              {dueSoonTasks.length > 0
-                ? `${dueSoonTasks.length} task${dueSoonTasks.length === 1 ? '' : 's'} are coming up in the next three days.`
-                : 'No additional tasks are due in the next three days.'}
-            </ThemedText>
+            )}
           </Card>
 
           <Card variant="filled" style={styles.snapshotCard}>
             <ThemedText type="smallBold">One-tap care</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              Confirm common routines without filling out the full timeline form.
-            </ThemedText>
             <View style={styles.oneTapRow}>
               {QUICK_CARE_ACTIONS.map((action) => (
                 <Pressable key={action.id} onPress={() => handleQuickConfirm(action.id)}>
@@ -897,25 +853,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: Spacing.two,
   },
-  caregiverText: {
-    flex: 1,
-    gap: 2,
-  },
-  dashboardGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: Spacing.two,
-  },
-  dashboardCard: {
-    width: '48%',
-    borderRadius: Radius.md,
-    padding: Spacing.three,
-    gap: Spacing.one,
-  },
-  dashboardValue: {
-    fontSize: 24,
-    lineHeight: 28,
-  },
   profileRow: {
     flexDirection: 'row',
     gap: Spacing.three,
@@ -965,6 +902,12 @@ const styles = StyleSheet.create({
     padding: Spacing.three,
     gap: 2,
     marginTop: Spacing.two,
+  },
+  nextUpHeaderRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 2,
   },
   snapshotCard: {
     gap: Spacing.one,

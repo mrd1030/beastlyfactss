@@ -445,13 +445,6 @@ export default function PetCareToolsScreen() {
             </Pressable>
           </Card>
 
-          <Card variant="filled" style={styles.snapshotCard}>
-            <ThemedText type="smallBold">Widget status</ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              Expo SDK 57 only supports home widgets on iPhone. Android home widgets would need a separate native integration path.
-            </ThemedText>
-          </Card>
-
           <Collapsible title={`Medication planner (${(medicationPlans ?? []).length})`}>
             <View style={styles.sectionContent}>
               <ThemedText type="small" themeColor="textSecondary">

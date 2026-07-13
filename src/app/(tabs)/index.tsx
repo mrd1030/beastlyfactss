@@ -8,7 +8,8 @@ import { AppMenu } from '@/components/app-menu';
 import { FactCard } from '@/components/fact-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, Brand, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { TwoToneTitle } from '@/components/two-tone-title';
+import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { getFactForSeed } from '@/content-client/facts-catalog';
 import { useThemePreference } from '@/contexts/theme-preference';
 import { isDatabaseAvailable } from '@/db/client';
@@ -90,9 +91,7 @@ export default function HomeScreen() {
           {/* Wordmark header, mirroring the site's logo lockup */}
           <View style={styles.headerRow}>
             <View>
-              <ThemedText type="title">
-                Beastly<ThemedText type="title" style={{ color: Brand.orange }}>Facts</ThemedText>
-              </ThemedText>
+              <TwoToneTitle first="Beastly" second="Facts" />
               <ThemedText type="small" themeColor="textSecondary">
                 {new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' })}
               </ThemedText>

@@ -7,23 +7,28 @@ import { Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
+import { TwoToneTitle } from './two-tone-title';
 
 /** Every destination in the app, including the ones that don't fit on the
- * five-slot tab bar (Encyclopedia view, Blog, My Pack). */
+ * five-slot tab bar (Encyclopedia view, Blog, My Pack). `first`/`second`
+ * split each label the same way the page titles are two-toned (see
+ * two-tone-title.tsx), so the menu reads as one consistent brand treatment. */
 const MENU_ITEMS = [
-  { emoji: '🏠', label: 'Home', route: { pathname: '/' as const } },
-  { emoji: '🧠', label: 'Fun Facts', route: { pathname: '/facts' as const } },
-  { emoji: '📋', label: 'Care Guides', route: { pathname: '/guides' as const } },
-  { emoji: '📚', label: 'Encyclopedia', route: { pathname: '/guides' as const, params: { view: 'encyclopedia' } } },
-  { emoji: '📰', label: 'Blog', route: { pathname: '/blog' as const } },
-  { emoji: '⭐', label: 'My Pack', route: { pathname: '/explore' as const } },
-  { emoji: '🐾', label: 'Pets', route: { pathname: '/profile' as const } },
-  { emoji: '⚙️', label: 'Settings', route: { pathname: '/settings' as const } },
+  { emoji: '🏠', first: 'Hom', second: 'e', route: { pathname: '/' as const } },
+  { emoji: '🧠', first: 'Fun ', second: 'Facts', route: { pathname: '/facts' as const } },
+  { emoji: '📋', first: 'Care ', second: 'Guides', route: { pathname: '/guides' as const } },
+  { emoji: '📚', first: 'Encyclo', second: 'pedia', route: { pathname: '/guides' as const, params: { view: 'encyclopedia' } } },
+  { emoji: '📰', first: 'Blo', second: 'g', route: { pathname: '/blog' as const } },
+  { emoji: '⭐', first: 'My ', second: 'Pack', route: { pathname: '/explore' as const } },
+  { emoji: '🐾', first: 'Pet', second: 's', route: { pathname: '/profile' as const } },
+  { emoji: '⚙️', first: 'Sett', second: 'ings', route: { pathname: '/settings' as const } },
 ];
 
 /**
  * Hamburger menu listing every screen in the app. Rendered as a trigger
- * button (in Home's header) that opens a top-anchored dropdown sheet.
+ * button - every main screen places one in its own header row (see Home,
+ * Facts, Library, Pets, Settings) so it's reachable from anywhere, not
+ * just Home - that opens a top-anchored dropdown sheet.
  */
 export function AppMenu() {
   const [open, setOpen] = useState(false);
@@ -54,11 +59,11 @@ export function AppMenu() {
         <View style={[styles.sheet, { backgroundColor: theme.background, borderColor: theme.hairline }]}>
           {MENU_ITEMS.map((item) => (
             <Pressable
-              key={item.label}
+              key={item.first + item.second}
               onPress={() => navigate(item.route)}
               style={({ pressed }) => [styles.item, pressed && { backgroundColor: theme.backgroundElement }]}>
               <ThemedText style={styles.itemEmoji}>{item.emoji}</ThemedText>
-              <ThemedText type="smallBold">{item.label}</ThemedText>
+              <TwoToneTitle type="smallBold" first={item.first} second={item.second} />
             </Pressable>
           ))}
         </View>

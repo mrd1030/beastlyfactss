@@ -1,1 +1,1 @@
-﻿export { PersistentFooterNav } from './app-tabs-base';
+export { PersistentFooterNav } from './app-tabs-base';

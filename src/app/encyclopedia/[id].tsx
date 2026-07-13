@@ -3,8 +3,6 @@ import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Card } from '@/components/card';
-import { GuideSections } from '@/components/guide-sections';
-import { CareInfoSummary, FactsList } from '@/components/species-facts-body';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
@@ -135,21 +133,15 @@ export default function EncyclopediaDetailScreen() {
           </Card>
 
           {linkedGuide && (
-            <>
-              <Card variant="soft" style={styles.sectionCard}>
-                <ThemedText type="smallBold">Linked care guide</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
-                  This encyclopedia profile is paired with the in-app care guide for {linkedGuide.name}.
-                </ThemedText>
-                <Pressable onPress={() => router.replace({ pathname: '/entry/[id]', params: { id: linkedGuide.id } })}>
-                  <ThemedText type="linkPrimary">Open full care guide →</ThemedText>
-                </Pressable>
-              </Card>
-
-              <CareInfoSummary careInfo={linkedGuide.careInfo} />
-              <FactsList facts={linkedGuide.facts} />
-              {linkedGuide.guide && <GuideSections guide={linkedGuide.guide} />}
-            </>
+            <Card variant="soft" style={styles.sectionCard}>
+              <ThemedText type="smallBold">Linked care guide</ThemedText>
+              <ThemedText type="small" themeColor="textSecondary">
+                This encyclopedia profile is paired with the in-app care guide for {linkedGuide.name}.
+              </ThemedText>
+              <Pressable onPress={() => router.replace({ pathname: '/entry/[id]', params: { id: linkedGuide.id } })}>
+                <ThemedText type="linkPrimary">Open full care guide →</ThemedText>
+              </Pressable>
+            </Card>
           )}
 
           {animal.relatedStory && (

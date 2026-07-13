@@ -3,9 +3,12 @@ import { useMemo, useState } from 'react';
 import { FlatList, Image, Pressable, RefreshControl, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
+import { CategoryChips } from '@/components/category-chips';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { TwoToneTitle } from '@/components/two-tone-title';
 import { Collapsible } from '@/components/ui/collapsible';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import {
@@ -17,54 +20,13 @@ import {
     getGlossaryCategories,
     getGuideImageSourceForAnimal,
 } from '@/content-client/encyclopedia-catalog';
-import { getGuideImageResizeMode, getGuideImageSource } from '@/content-client/guide-image-map';
+import { getGuideImageSource } from '@/content-client/guide-image-map';
 import { getAllCategories, getAllSpeciesAsEntries } from '@/content-client/species-catalog';
 import type { ProvisionalEntry } from '@/content-client/types';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useTheme } from '@/hooks/use-theme';
 
 type LibraryView = 'guides' | 'encyclopedia';
-
-/**
- * Wrapped (not horizontally scrolled) category filter chips with an explicit
- * "All" chip and a ✕ on the active one - every category stays visible while
- * filtered, and clearing the filter doesn't require knowing the tap-again
- * gesture.
- */
-function CategoryChips({
-  options,
-  active,
-  onSelect,
-}: {
-  options: { key: string; label: string }[];
-  active: string | null;
-  onSelect: (key: string | null) => void;
-}) {
-  const theme = useTheme();
-
-  const chip = (key: string | null, label: string) => {
-    const selected = active === key;
-    return (
-      <Pressable key={key ?? '__all__'} onPress={() => onSelect(selected ? null : key)}>
-        <ThemedView
-          type="backgroundElement"
-          style={[styles.categoryChip, selected && { backgroundColor: theme.accent }]}>
-          <ThemedText type="smallBold" style={selected ? { color: theme.onAccent } : undefined}>
-            {label}
-            {selected && key !== null ? '  ✕' : ''}
-          </ThemedText>
-        </ThemedView>
-      </Pressable>
-    );
-  };
-
-  return (
-    <View style={styles.categoryWrap}>
-      {chip(null, '✨ All')}
-      {options.map((option) => chip(option.key, option.label))}
-    </View>
-  );
-}
 
 function LibraryToggle({ activeView }: { activeView: LibraryView }) {
   const router = useRouter();
@@ -186,9 +148,10 @@ function GuidesView() {
       }}
       ListHeaderComponent={
         <View style={styles.headerContent}>
-          <ThemedText type="title" style={styles.title}>
-            Library
-          </ThemedText>
+          <View style={styles.titleRow}>
+            <TwoToneTitle first="Lib" second="rary" style={styles.title} />
+            <AppMenu />
+          </View>
 
           <LibraryToggle activeView="guides" />
 
@@ -263,9 +226,10 @@ function EncyclopediaView() {
       contentContainerStyle={styles.encyclopediaContent}
       refreshControl={<RefreshControl refreshing={refreshing} onRefresh={handleRefresh} />}>
       <View style={styles.headerContent}>
-        <ThemedText type="title" style={styles.title}>
-          Encyclopedia
-        </ThemedText>
+        <View style={styles.titleRow}>
+          <TwoToneTitle first="Encyclo" second="pedia" style={styles.title} />
+          <AppMenu />
+        </View>
 
         <LibraryToggle activeView="encyclopedia" />
 
@@ -412,6 +376,12 @@ const styles = StyleSheet.create({
     gap: Spacing.three,
     marginBottom: Spacing.one,
   },
+  titleRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    gap: Spacing.two,
+  },
   title: {
     fontSize: 32,
     lineHeight: 38,
@@ -433,17 +403,6 @@ const styles = StyleSheet.create({
   searchInput: {
     height: 44,
     fontSize: 14,
-  },
-  categoryWrap: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: Spacing.two,
-    paddingVertical: Spacing.one,
-  },
-  categoryChip: {
-    borderRadius: Radius.pill,
-    paddingHorizontal: Spacing.three,
-    paddingVertical: Spacing.two,
   },
   resultHeader: {
     gap: Spacing.half,

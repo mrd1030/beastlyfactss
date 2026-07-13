@@ -4,12 +4,14 @@ import { useCallback, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
 import { Eyebrow } from '@/components/eyebrow';
 import { PackCard } from '@/components/pack-card';
 import { Collapsible } from '@/components/ui/collapsible';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { TwoToneTitle } from '@/components/two-tone-title';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { getEncyclopediaCategoryEmoji } from '@/content-client/encyclopedia-catalog';
 import { getFactById } from '@/content-client/facts-catalog';
@@ -20,6 +22,7 @@ import { isDatabaseAvailable } from '@/db/client';
 import { getStreakState, listCachedEntries, listDiscoveredSpecies } from '@/db/helpers';
 import type { DiscoveredSpecies, UnlockMethod } from '@/db/types';
 import { useFavorites } from '@/hooks/use-favorites';
+import { useTheme } from '@/hooks/use-theme';
 import { getFactFavoriteId, isFactFavoriteId, parseFactFavoriteId } from '@/lib/favorite-keys';
 
 const BLOG_SECTION_KEY = '__from_the_blog__';
@@ -50,6 +53,7 @@ function previewFromCachedEntry(entry: Awaited<ReturnType<typeof listCachedEntri
  */
 export default function PackScreen() {
   const router = useRouter();
+  const theme = useTheme();
   const queryClient = useQueryClient();
   const { favorites, toggleFavorite } = useFavorites();
   const [savedFilter, setSavedFilter] = useState<SavedFilter>('all');
@@ -191,9 +195,10 @@ export default function PackScreen() {
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
-          <ThemedText type="title" style={styles.title}>
-            Pack
-          </ThemedText>
+          <View style={styles.headerRow}>
+            <TwoToneTitle first="My " second="Pack" style={styles.title} />
+            <AppMenu />
+          </View>
           <View style={styles.summaryRow}>
             <ThemedView type="backgroundSelected" style={styles.summaryChip}>
               <ThemedText type="small">★ {savedEntries.length + savedFacts.length} saved</ThemedText>
@@ -220,8 +225,8 @@ export default function PackScreen() {
                   <Pressable key={key} onPress={() => setSavedFilter(key)}>
                     <ThemedView
                       type="backgroundElement"
-                      style={[styles.filterChip, selected && { backgroundColor: '#B85C12' }]}>
-                      <ThemedText type="small" style={selected ? styles.filterChipTextSelected : undefined}>
+                      style={[styles.filterChip, selected && { backgroundColor: theme.accent }]}>
+                      <ThemedText type="small" style={selected ? { color: theme.onAccent } : undefined}>
                         {label}
                       </ThemedText>
                     </ThemedView>
@@ -461,9 +466,6 @@ const styles = StyleSheet.create({
     borderRadius: Radius.pill,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.one,
-  },
-  filterChipTextSelected: {
-    color: '#FDF7EE',
   },
   emptyFilteredState: {
     borderRadius: Radius.md,

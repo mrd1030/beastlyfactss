@@ -3,12 +3,13 @@ import { useRouter } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
 import { Eyebrow } from '@/components/eyebrow';
 import { AddPetCard, PetCard } from '@/components/pet-card';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { Brand, BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { getAllSpecies } from '@/content-client/species-catalog';
 import { isDatabaseAvailable } from '@/db/client';
 import { listDueCareTasks, listPets, listRecentHusbandryLog, listUpcomingCareTasks } from '@/db/helpers';
@@ -20,6 +21,7 @@ import { getCareTeam } from '@/lib/care-team-store';
 import { refreshCareStatusWidget } from '@/lib/care-widget';
 import { addDays, localDateString } from '@/lib/date';
 import { markHouseholdSyncDirty } from '@/lib/household-sync-store';
+import { getProfile } from '@/lib/profile-store';
 
 /**
  * Pets tab — the day-to-day dashboard for care, reminders, activity, and
@@ -27,10 +29,9 @@ import { markHouseholdSyncDirty } from '@/lib/household-sync-store';
  * the separate Settings tab to keep this screen focused on pet care.
  */
 
-function getGreeting(name?: string): string {
+function getGreetingPeriod(): 'morning' | 'afternoon' | 'evening' {
   const hour = new Date().getHours();
-  const salutation = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening';
-  return name ? `${salutation}, ${name}` : salutation;
+  return hour < 12 ? 'morning' : hour < 17 ? 'afternoon' : 'evening';
 }
 
 export default function ProfileScreen() {
@@ -39,6 +40,7 @@ export default function ProfileScreen() {
   const queryClient = useQueryClient();
   const today = localDateString();
 
+  const { data: profile } = useQuery({ queryKey: ['profile'], queryFn: getProfile });
   const { data: pets } = useQuery({ queryKey: ['pets'], queryFn: listPets, enabled: isDatabaseAvailable });
   const { data: dueTasks } = useQuery({
     queryKey: ['careTasks', 'due', today],
@@ -114,12 +116,17 @@ export default function ProfileScreen() {
           <ThemedView style={styles.headerRow}>
             <View style={styles.greetingBlock}>
               <ThemedText type="title" style={styles.title}>
-                {getGreeting(activeCaregiver?.name)}
+                Good{' '}
+                <ThemedText type="title" style={{ color: Brand.orange }}>
+                  {getGreetingPeriod()}
+                </ThemedText>
+                {profile?.displayName ? `, ${profile.displayName}` : ''}
               </ThemedText>
               <ThemedText type="small" themeColor="textSecondary">
                 {new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' })}
               </ThemedText>
             </View>
+            <AppMenu />
           </ThemedView>
 
           {latestSymptom && (

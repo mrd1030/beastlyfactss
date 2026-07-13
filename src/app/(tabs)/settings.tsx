@@ -1,20 +1,22 @@
-import { version } from 'expo/package.json';
+import Constants from 'expo-constants';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
 import { Eyebrow } from '@/components/eyebrow';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
+import { TwoToneTitle } from '@/components/two-tone-title';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
 import { useThemePreference } from '@/contexts/theme-preference';
 import { resetAllLocalData } from '@/db/helpers';
 import { useTheme } from '@/hooks/use-theme';
 import { scheduleCareReminderPreview } from '@/lib/care-notifications';
-import { addCaregiver, clearCareTeam, getCareTeam, removeCaregiver, setActiveCaregiver } from '@/lib/care-team-store';
+import { addCaregiver, clearCareTeam, getCareTeam, removeCaregiver, setActiveCaregiver, syncSelfCaregiverName } from '@/lib/care-team-store';
 import { createRemoteHousehold, disconnectHousehold, isSupabaseReady, joinRemoteHousehold, pullConnectedHousehold, pushConnectedHousehold, syncConnectedHousehold } from '@/lib/household-sync';
 import { clearHouseholdConnection, getHouseholdConnection, markHouseholdSyncDirty } from '@/lib/household-sync-store';
 import { ensureNotificationPermission } from '@/lib/notification-permission';
@@ -70,10 +72,12 @@ export default function SettingsScreen() {
   };
 
   const saveName = async () => {
-    const trimmed = nameDraft.trim();
-    await updateProfile({ displayName: trimmed || 'Beast Keeper' });
+    const trimmed = nameDraft.trim() || 'Beast Keeper';
+    await updateProfile({ displayName: trimmed });
+    await syncSelfCaregiverName(trimmed);
     setEditingName(false);
     await queryClient.invalidateQueries({ queryKey: ['profile'] });
+    await queryClient.invalidateQueries({ queryKey: ['careTeam'] });
   };
 
   const handlePickAvatar = async () => {
@@ -97,8 +101,10 @@ export default function SettingsScreen() {
   };
 
   const handleResetIdentity = async () => {
-    await resetIdentity();
+    const fresh = await resetIdentity();
+    await syncSelfCaregiverName(fresh.displayName);
     queryClient.invalidateQueries({ queryKey: ['profile'] });
+    queryClient.invalidateQueries({ queryKey: ['careTeam'] });
   };
 
   const handleDeleteAllData = async () => {
@@ -150,7 +156,7 @@ export default function SettingsScreen() {
 
   const handleRefreshWidget = async () => {
     if (!widgetSupported && !androidWidgetSupported) {
-      setWidgetStatusNote('Home widget refresh is available in native builds, not Expo Go or the web preview.');
+      setWidgetStatusNote('Home widget refresh needs the full app installed on an iPhone or Android device.');
       return;
     }
 
@@ -172,7 +178,7 @@ export default function SettingsScreen() {
       if (result.status === 'conflict') {
         setSyncStatusNote('Remote changes were found since this device last synced. Pull latest or push this device to choose which version wins.');
       } else if (result.status === 'not-configured') {
-        setSyncStatusNote('Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY before turning on cloud sync.');
+        setSyncStatusNote('Cloud sync isn\'t available in this build yet.');
       } else if (result.status === 'database-unavailable') {
         setSyncStatusNote('Cloud sync needs the local device database, which is unavailable in this preview environment.');
       } else if (result.status === 'not-connected') {
@@ -232,13 +238,14 @@ export default function SettingsScreen() {
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={styles.scrollContent}>
-          <View style={styles.headerBlock}>
-            <ThemedText type="title" style={styles.title}>
-              Settings
-            </ThemedText>
-            <ThemedText type="small" themeColor="textSecondary">
-              Update your profile, appearance, reminders, and local app data.
-            </ThemedText>
+          <View style={styles.headerRow}>
+            <View style={styles.headerBlock}>
+              <TwoToneTitle first="Sett" second="ings" style={styles.title} />
+              <ThemedText type="small" themeColor="textSecondary">
+                Update your profile, appearance, reminders, and local app data.
+              </ThemedText>
+            </View>
+            <AppMenu />
           </View>
 
           <Eyebrow style={styles.sectionTitle}>Your profile</Eyebrow>
@@ -359,10 +366,9 @@ export default function SettingsScreen() {
             </ThemedText>
             {!supabaseReady ? (
               <ThemedText type="small" themeColor="textSecondary">
-                Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY, then run the SQL in supabase/household-sync.sql.
+                Cloud sync isn&apos;t available in this build yet.
               </ThemedText>
-            ) : null}
-            {householdConnection ? (
+            ) : householdConnection ? (
               <>
                 <ThemedText type="smallBold">{householdConnection.householdName}</ThemedText>
                 <ThemedText type="small" themeColor="textSecondary">
@@ -409,7 +415,7 @@ export default function SettingsScreen() {
                     style={[styles.nameInput, { color: theme.text }]}
                   />
                 </ThemedView>
-                <Pressable onPress={handleCreateHousehold} disabled={syncBusy || !supabaseReady}>
+                <Pressable onPress={handleCreateHousehold} disabled={syncBusy}>
                   <ThemedView type="backgroundSelected" style={styles.widgetButton}>
                     <ThemedText type="smallBold">{syncBusy ? 'Working…' : 'Create synced household'}</ThemedText>
                   </ThemedView>
@@ -424,7 +430,7 @@ export default function SettingsScreen() {
                     autoCapitalize="characters"
                   />
                 </ThemedView>
-                <Pressable onPress={handleJoinHousehold} disabled={syncBusy || !supabaseReady}>
+                <Pressable onPress={handleJoinHousehold} disabled={syncBusy}>
                   <ThemedView type="backgroundElement" style={styles.widgetButton}>
                     <ThemedText type="smallBold">Join household</ThemedText>
                   </ThemedView>
@@ -494,13 +500,13 @@ export default function SettingsScreen() {
             </ThemedText>
             <ThemedText type="small" themeColor="textSecondary">
               {widgetSupported
-                ? 'Available in iOS development or production builds. Add it from the home screen after installing a native build.'
-                : 'Unavailable here. Widgets need an iPhone native build and do not run inside Expo Go or on Android.'}
+                ? 'Add it from your home screen: touch and hold, tap the + button, then search for BeastlyFacts.'
+                : 'iPhone only, and requires the full app installed from the App Store rather than this preview.'}
             </ThemedText>
             <ThemedText type="small" themeColor="textSecondary">
               {androidWidgetSupported
-                ? 'Android quick-check and daily-fact widgets are available in Android native builds through a separate widget integration path.'
-                : 'Android quick-check and daily-fact widgets need a native Android build, not Expo Go.'}
+                ? 'Android quick-check and daily-fact widgets are also available - add them the same way from your home screen.'
+                : 'Android quick-check and daily-fact widgets are coming soon.'}
             </ThemedText>
             <Pressable onPress={handleRefreshWidget}>
               <ThemedView type="backgroundElement" style={styles.widgetButton}>
@@ -563,7 +569,7 @@ export default function SettingsScreen() {
 
           <ThemedView style={styles.aboutBox}>
             <ThemedText type="small" themeColor="textSecondary">
-              BeastlyFacts companion · v{version}
+              BeastlyFacts companion · v{Constants.expoConfig?.version ?? '1.0.0'}
             </ThemedText>
           </ThemedView>
         </ScrollView>
@@ -584,9 +590,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
   },
-  headerBlock: {
-    gap: Spacing.one,
+  headerRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    gap: Spacing.two,
     marginBottom: Spacing.one,
+  },
+  headerBlock: {
+    flex: 1,
+    gap: Spacing.one,
   },
   scrollContent: {
     paddingBottom: BottomTabInset + Spacing.five,
