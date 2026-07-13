@@ -9,7 +9,13 @@
     "category": "Site News",
     "tags": [
       "beastlyfacts",
-      "introduction"
+      "introduction",
+      "about-us",
+      "exotic-pet-care",
+      "reptile-care",
+      "small-pet-care",
+      "pet-owner-resources",
+      "site-news"
     ],
     "readTime": 7,
     "difficulty": null,
@@ -32,7 +38,11 @@
       "Ball Python",
       "Feeding",
       "Behavior",
-      "Care Tips"
+      "Care Tips",
+      "Snake Care",
+      "Reptile Diet",
+      "Frozen Thawed Prey",
+      "Feeding Schedule"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -76,7 +86,11 @@
       "Ball Python",
       "Corn Snake",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Beginner Snakes",
+      "Pet Snake",
+      "Snake Care",
+      "Reptile Comparison"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -120,7 +134,11 @@
       "Bearded Dragon",
       "Leopard Gecko",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Beginner Reptiles",
+      "Pet Lizard",
+      "Reptile Comparison",
+      "Lizard Care"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -164,7 +182,11 @@
       "Betta Fish",
       "Goldfish",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Beginner Fish",
+      "Aquarium Fish",
+      "Fish Care",
+      "Pet Fish"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -208,7 +230,11 @@
       "Betta Fish",
       "Water Quality",
       "Water Parameters",
-      "Care Tips"
+      "Care Tips",
+      "Aquarium Care",
+      "Fish Tank Setup",
+      "Water Testing",
+      "Freshwater Aquarium"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -253,7 +279,10 @@
       "bearded-dragon",
       "setup",
       "enclosure",
-      "husbandry"
+      "husbandry",
+      "terrarium",
+      "reptile-care",
+      "live-plants"
     ],
     "readTime": 15,
     "difficulty": "Intermediate",
@@ -298,7 +327,9 @@
       "Cere",
       "Sexing",
       "Health",
-      "Care Tips"
+      "Care Tips",
+      "Bird Health",
+      "Parakeet"
     ],
     "readTime": 5,
     "difficulty": "Beginner",
@@ -342,7 +373,11 @@
       "Budgie",
       "Cockatiel",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Beginner Birds",
+      "Pet Bird",
+      "Bird Comparison",
+      "Small Parrot"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -387,7 +422,9 @@
       "Hairballs",
       "Vomiting",
       "Digestive Health",
-      "Care Tips"
+      "Care Tips",
+      "Cat Health",
+      "Feline Care"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -431,7 +468,11 @@
       "Chameleon",
       "Hydration",
       "Husbandry",
-      "Care Tips"
+      "Care Tips",
+      "Dripper System",
+      "Misting System",
+      "Reptile Humidity",
+      "Chameleon Care"
     ],
     "readTime": 7,
     "difficulty": "Intermediate",
@@ -475,7 +516,11 @@
       "Cockatoo",
       "Behavior",
       "Feather Plucking",
-      "Care Tips"
+      "Care Tips",
+      "Parrot Behavior",
+      "Bird Health",
+      "Screaming",
+      "Pet Bird Care"
     ],
     "readTime": 7,
     "difficulty": "Advanced",
@@ -519,7 +564,11 @@
       "Crested Gecko",
       "Humidity",
       "Husbandry",
-      "Care Tips"
+      "Care Tips",
+      "Gecko Care",
+      "Terrarium Humidity",
+      "Reptile Enclosure",
+      "Arboreal Gecko"
     ],
     "readTime": 4,
     "difficulty": "Beginner",
@@ -565,7 +614,8 @@
       "GDV",
       "Health",
       "Emergency",
-      "Care Tips"
+      "Care Tips",
+      "Dog Health"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -609,7 +659,11 @@
       "Ferret",
       "Adrenal Disease",
       "Health",
-      "Care Tips"
+      "Care Tips",
+      "Ferret Health",
+      "Exotic Pet Health",
+      "Hormone Disorder",
+      "Small Mammal Care"
     ],
     "readTime": 6,
     "difficulty": "Intermediate",
@@ -653,7 +707,11 @@
       "Goldfish",
       "Tank Size",
       "Myths",
-      "Care Tips"
+      "Care Tips",
+      "Fish Bowl Myth",
+      "Aquarium Setup",
+      "Goldfish Care",
+      "Fish Tank Size"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -698,7 +756,9 @@
       "Scurvy",
       "Vitamin C",
       "Health",
-      "Care Tips"
+      "Care Tips",
+      "Guinea Pig Health",
+      "Small Mammal Care"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -742,7 +802,11 @@
       "Hamster",
       "Guinea Pig",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Small Mammal",
+      "Beginner Pet",
+      "Rodent Care",
+      "Pocket Pet"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -788,7 +852,8 @@
       "Tarantula",
       "Hermit Crab",
       "Jumping Spider",
-      "Care Tips"
+      "Care Tips",
+      "Exoskeleton"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -832,7 +897,11 @@
       "Leopard Gecko",
       "Temperature",
       "Heating",
-      "Care Tips"
+      "Care Tips",
+      "Thermal Gradient",
+      "Under Tank Heater",
+      "Reptile Heating",
+      "Gecko Care"
     ],
     "readTime": 5,
     "difficulty": "Beginner",
@@ -876,7 +945,11 @@
       "Leopard Gecko",
       "Crested Gecko",
       "Comparison",
-      "Care Tips"
+      "Care Tips",
+      "Beginner Gecko",
+      "Pet Gecko",
+      "Reptile Comparison",
+      "Gecko Care"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -920,7 +993,11 @@
       "Praying Mantis",
       "Ootheca",
       "Breeding",
-      "Care Tips"
+      "Care Tips",
+      "Mantis Eggs",
+      "Invertebrate Breeding",
+      "Insect Care",
+      "Mantis Care"
     ],
     "readTime": 5,
     "difficulty": "Beginner",
@@ -965,7 +1042,9 @@
       "GI Stasis",
       "Health",
       "Emergency",
-      "Care Tips"
+      "Care Tips",
+      "Rabbit Health",
+      "Digestive Health"
     ],
     "readTime": 6,
     "difficulty": "Beginner",
@@ -1009,7 +1088,11 @@
       "Shedding",
       "Health",
       "Husbandry",
-      "Care Tips"
+      "Care Tips",
+      "Reptile Shedding",
+      "Ecdysis",
+      "Reptile Care",
+      "Skin Health"
     ],
     "readTime": 5,
     "difficulty": "Beginner",
@@ -1053,7 +1136,11 @@
       "Ball Python",
       "Corn Snake",
       "Brumation",
-      "Care Tips"
+      "Care Tips",
+      "Snake Hibernation",
+      "Winter Care",
+      "Reptile Care",
+      "Snake Behavior"
     ],
     "readTime": 6,
     "difficulty": "Intermediate",
@@ -1098,7 +1185,9 @@
       "Lighting",
       "Nutrition",
       "Health",
-      "Care Tips"
+      "Care Tips",
+      "Reptile Lighting",
+      "Vitamin D3"
     ],
     "readTime": 5,
     "difficulty": "Intermediate",
@@ -1142,7 +1231,11 @@
       "ball-python",
       "fun-facts",
       "reptiles",
-      "snakes"
+      "snakes",
+      "pet-snakes",
+      "python-regius",
+      "exotic-pets",
+      "snake-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1163,7 +1256,13 @@
     "category": "Fun Facts",
     "tags": [
       "bearded-dragon",
-      "fun-facts"
+      "fun-facts",
+      "reptiles",
+      "lizards",
+      "pet-lizards",
+      "pogona",
+      "exotic-pets",
+      "reptile-facts"
     ],
     "readTime": 8,
     "difficulty": null,
@@ -1185,7 +1284,12 @@
     "tags": [
       "betta-fish",
       "fun-facts",
-      "fish"
+      "fish",
+      "aquarium-fish",
+      "siamese-fighting-fish",
+      "freshwater-fish",
+      "fish-facts",
+      "pet-fish"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1207,7 +1311,12 @@
     "tags": [
       "cockatoo",
       "fun-facts",
-      "birds"
+      "birds",
+      "parrots",
+      "pet-birds",
+      "exotic-birds",
+      "bird-facts",
+      "companion-birds"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1229,7 +1338,12 @@
     "tags": [
       "hermit-crab",
       "fun-facts",
-      "invertebrates"
+      "invertebrates",
+      "crustaceans",
+      "exotic-pets",
+      "pet-crabs",
+      "hermit-crab-facts",
+      "terrestrial-invertebrates"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1251,7 +1365,12 @@
     "tags": [
       "leopard-gecko",
       "fun-facts",
-      "reptiles"
+      "reptiles",
+      "geckos",
+      "pet-lizards",
+      "eublepharis-macularius",
+      "exotic-pets",
+      "gecko-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1273,7 +1392,12 @@
     "tags": [
       "praying-mantis",
       "fun-facts",
-      "invertebrates"
+      "invertebrates",
+      "insects",
+      "exotic-pets",
+      "pet-insects",
+      "mantis-facts",
+      "arthropods"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1295,7 +1419,12 @@
     "tags": [
       "tarantula",
       "fun-facts",
-      "invertebrates"
+      "invertebrates",
+      "spiders",
+      "arachnids",
+      "exotic-pets",
+      "pet-tarantulas",
+      "tarantula-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1316,7 +1445,13 @@
     "category": "Fun Facts",
     "tags": [
       "axolotl",
-      "fun-facts"
+      "fun-facts",
+      "amphibians",
+      "salamanders",
+      "aquatic-pets",
+      "exotic-pets",
+      "ambystoma-mexicanum",
+      "amphibian-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1338,7 +1473,12 @@
     "tags": [
       "boa-constrictor",
       "fun-facts",
-      "snakes"
+      "snakes",
+      "reptiles",
+      "pet-snakes",
+      "constrictors",
+      "exotic-pets",
+      "snake-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1360,7 +1500,12 @@
     "tags": [
       "cuttlefish",
       "fun-facts",
-      "marine-life"
+      "marine-life",
+      "cephalopods",
+      "ocean-animals",
+      "sea-creatures",
+      "invertebrates",
+      "animal-intelligence"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1382,7 +1527,12 @@
     "tags": [
       "golden-retriever",
       "fun-facts",
-      "dog"
+      "dog",
+      "dogs",
+      "dog-breeds",
+      "family-dogs",
+      "companion-animals",
+      "dog-facts"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1403,8 +1553,13 @@
     "category": "Fun Facts",
     "tags": [
       "whale",
+      "humpback-whale",
       "fun-facts",
-      "marine-life"
+      "marine-life",
+      "ocean-animals",
+      "marine-mammals",
+      "sea-creatures",
+      "whale-facts"
     ],
     "readTime": 6,
     "difficulty": null,
@@ -1426,7 +1581,12 @@
     "tags": [
       "octopus",
       "fun-facts",
-      "marine-life"
+      "marine-life",
+      "cephalopods",
+      "ocean-animals",
+      "invertebrates",
+      "animal-intelligence",
+      "sea-creatures"
     ],
     "readTime": 5,
     "difficulty": null,
@@ -1447,7 +1607,13 @@
     "category": "Fun Facts",
     "tags": [
       "rabbit",
-      "fun-facts"
+      "fun-facts",
+      "rabbits",
+      "small-mammals",
+      "pet-rabbits",
+      "house-rabbits",
+      "exotic-pets",
+      "rabbit-facts"
     ],
     "readTime": 5,
     "difficulty": null,
