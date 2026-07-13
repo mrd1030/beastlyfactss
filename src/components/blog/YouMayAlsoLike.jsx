@@ -6,7 +6,14 @@ import CompactPostCard from '@/components/shared/CompactPostCard';
 
 // Full post query - includes body so the article renders completely
 const FULL_POST_FIELDS = `
-  _id, title, slug, excerpt, mainImage, publishedAt, readTime, body,
+  _id, title, slug, excerpt, mainImage, publishedAt, readTime,
+  body[]{
+    ...,
+    _type == "productRecommendation" => {
+      ...,
+      productRef->{productName, category, retailer, affiliateUrl, imageUrl}
+    }
+  },
   "category": categories[0]->title,
   "categorySlug": categories[0]->slug.current,
   "allCategories": categories[]->title,

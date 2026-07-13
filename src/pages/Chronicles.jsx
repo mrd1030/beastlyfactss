@@ -18,7 +18,14 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 // stable "chronicles-of-<character>" slug (see src/lib/chronicles.js), so this can't
 // silently break if the "Short Stories" category gets renamed/re-slugged in Sanity.
 const STORY_QUERY = groq`*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"] | order(publishedAt asc) {
-  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, body
+  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime,
+  body[]{
+    ...,
+    _type == "productRecommendation" => {
+      ...,
+      productRef->{productName, category, retailer, affiliateUrl, imageUrl}
+    }
+  }
 }`;
 
 // Story titles all start with "Chronicles of <character>:" - the sidebar and

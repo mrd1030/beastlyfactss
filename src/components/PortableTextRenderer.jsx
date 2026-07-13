@@ -121,23 +121,40 @@ const components = {
 
 
     productRecommendation: ({ value }) => {
+      // Prefer the synced product reference (see product.js / scripts/sync-gear-to-sanity.js)
+      // when the editor picked one from the gear list - falls back to the
+      // manually-typed fields below for a one-off product not in that master file.
+      const product = value.productRef;
+      const productName = product?.productName || value.productName;
+      const retailerLabel = product?.retailer === 'chewy' ? 'Chewy' : 'Amazon';
       // FIX: Guard against rendering broken "undefined" links if data is missing in Sanity CMS
-      const finalUrl = value.affiliateUrl || (value.asin ? `https://www.amazon.com/dp/${value.asin}?tag=beastlyfacts-20` : '#');
+      const finalUrl =
+        product?.affiliateUrl ||
+        value.affiliateUrl ||
+        (value.asin ? `https://www.amazon.com/dp/${value.asin}?tag=beastlyfacts-20` : '#');
 
       return (
         <div className="my-10 border border-secondary/20 rounded-2xl p-6 bg-card shadow-sm">
           <div className="flex flex-col md:flex-row gap-6 items-start">
-            {value.image && (
+            {product?.imageUrl ? (
               <div className="w-full md:w-48 flex-shrink-0">
                 <img
-                  src={urlFor(value.image).width(400).url()}
-                  alt={value.productName || 'Product image'}
+                  src={product.imageUrl}
+                  alt={productName || 'Product image'}
                   className="rounded-xl object-contain w-full"
                 />
               </div>
-            )}
+            ) : value.image ? (
+              <div className="w-full md:w-48 flex-shrink-0">
+                <img
+                  src={urlFor(value.image).width(400).url()}
+                  alt={productName || 'Product image'}
+                  className="rounded-xl object-contain w-full"
+                />
+              </div>
+            ) : null}
             <div className="flex-1">
-              <h3 className="font-display font-bold text-xl text-foreground mb-1">{value.productName}</h3>
+              <h3 className="font-display font-bold text-xl text-foreground mb-1">{productName}</h3>
               {value.bestFor && (
                 <p className="text-secondary font-body text-sm font-semibold mb-3">{value.bestFor}</p>
               )}
@@ -154,7 +171,7 @@ const components = {
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-2.5 rounded-xl font-display font-semibold text-sm transition-all"
                 >
-                  Check Price on Amazon →
+                  Check Price on {retailerLabel} →
                 </a>
               )}
             </div>

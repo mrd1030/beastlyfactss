@@ -29,7 +29,14 @@ import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 const POSTS_PER_PAGE = 10;
 
 const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
-  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, animalType, body,
+  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, animalType,
+  body[]{
+    ...,
+    _type == "productRecommendation" => {
+      ...,
+      productRef->{productName, category, retailer, affiliateUrl, imageUrl}
+    }
+  },
   "category": categories[0]->title,
   "categorySlug": categories[0]->slug.current,
   "allCategories": categories[]->title,

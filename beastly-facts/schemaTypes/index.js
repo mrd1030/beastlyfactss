@@ -2,6 +2,7 @@
 import post from './post'
 import author from './author'
 import category from './category'
+import product from './product'
 import productRecommendation from './productRecommendation'
 import prosCons from './prosCons'
 import comparisonTable from './comparisonTable'
@@ -14,6 +15,7 @@ export const schemaTypes = [
   post,
   author,
   category,
+  product,
   productRecommendation,
   prosCons,
   comparisonTable,
