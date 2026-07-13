@@ -1,7 +1,7 @@
 import { isDatabaseAvailable } from '@/db/client';
 import { buildHouseholdDataSnapshot, replaceHouseholdDataSnapshot, type HouseholdDataSnapshot } from '@/db/helpers';
 
-import { type CareTeamState, getCareTeam, setCareTeamState } from './care-team-store';
+import { type CareTeamState, getCareTeam, mergeRemoteCareTeam, setCareTeamState } from './care-team-store';
 import {
   clearHouseholdConnection,
   getHouseholdConnection,
@@ -17,7 +17,7 @@ export interface HouseholdSnapshot extends HouseholdDataSnapshot {
 }
 
 type HouseholdSyncResult =
-  | { status: 'not-configured' | 'not-connected' | 'database-unavailable' | 'idle' }
+  | { status: 'not-configured' | 'not-connected' | 'not-signed-in' | 'database-unavailable' | 'idle' }
   | { status: 'pulled' | 'pushed' | 'joined' | 'created'; syncedAt: string; householdName: string }
   | { status: 'conflict'; remoteUpdatedAt: string; householdName: string };
 
@@ -38,27 +38,39 @@ async function buildFullSnapshot(): Promise<HouseholdSnapshot> {
   return { version: 1, exportedAt: new Date().toISOString(), careTeam, ...data };
 }
 
-/** Overwrites this device's household data (pets/tasks/meds/food/records/log
- * and the care team) with a remote snapshot. Used by both join and pull —
- * joining an existing household is expected to adopt its data wholesale,
- * the same way pulling the latest sync does. */
+/** Overwrites this device's household data (pets/tasks/meds/food/records/log)
+ * with a remote snapshot and reconciles (not overwrites - see
+ * mergeRemoteCareTeam) the care team. Used by both join and pull — joining
+ * an existing household is expected to adopt its data wholesale, the same
+ * way pulling the latest sync does. */
 async function applyRemoteSnapshot(snapshot: HouseholdSnapshot): Promise<void> {
   await replaceHouseholdDataSnapshot(snapshot);
-  await setCareTeamState(snapshot.careTeam);
+  const localTeam = await getCareTeam();
+  await setCareTeamState(mergeRemoteCareTeam(snapshot.careTeam, localTeam));
 }
 
-function guardResult(): HouseholdSyncResult | null {
+/** Every RPC below now requires a signed-in account (see
+ * supabase/household-sync.sql - create_household/join_household raise
+ * not_authenticated without one, and get_household_snapshot/
+ * upsert_household_snapshot both check household_members). Checking here
+ * first turns that into a clean status the UI already has copy for,
+ * instead of a raw Postgres exception. */
+async function guardResult(): Promise<HouseholdSyncResult | null> {
   if (!isSupabaseConfigured || !supabase) {
     return { status: 'not-configured' };
   }
   if (!isDatabaseAvailable) {
     return { status: 'database-unavailable' };
   }
+  const { data } = await supabase.auth.getSession();
+  if (!data.session) {
+    return { status: 'not-signed-in' };
+  }
   return null;
 }
 
 export async function createRemoteHousehold(householdName: string): Promise<HouseholdSyncResult> {
-  const guard = guardResult();
+  const guard = await guardResult();
   if (guard) return guard;
 
   const trimmedName = householdName.trim();
@@ -90,7 +102,7 @@ export async function createRemoteHousehold(householdName: string): Promise<Hous
 }
 
 export async function joinRemoteHousehold(inviteCode: string): Promise<HouseholdSyncResult> {
-  const guard = guardResult();
+  const guard = await guardResult();
   if (guard) return guard;
 
   const trimmedCode = inviteCode.trim().toUpperCase();
@@ -98,7 +110,7 @@ export async function joinRemoteHousehold(inviteCode: string): Promise<Household
     throw new Error('Enter an invite code first.');
   }
 
-  const { data, error } = await supabase!.rpc('get_household_snapshot', { p_invite_code: trimmedCode });
+  const { data, error } = await supabase!.rpc('join_household', { p_invite_code: trimmedCode });
   if (error) throw new Error(error.message);
   const row = (data as HouseholdRpcRow[] | null)?.[0];
   if (!row) throw new Error('No household was found for that invite code.');
@@ -120,7 +132,7 @@ export async function joinRemoteHousehold(inviteCode: string): Promise<Household
 }
 
 export async function pullConnectedHousehold(): Promise<HouseholdSyncResult> {
-  const guard = guardResult();
+  const guard = await guardResult();
   if (guard) return guard;
 
   const connection = await getHouseholdConnection();
@@ -140,7 +152,7 @@ export async function pullConnectedHousehold(): Promise<HouseholdSyncResult> {
 }
 
 export async function pushConnectedHousehold(): Promise<HouseholdSyncResult> {
-  const guard = guardResult();
+  const guard = await guardResult();
   if (guard) return guard;
 
   const connection = await getHouseholdConnection();
@@ -172,7 +184,7 @@ export async function pushConnectedHousehold(): Promise<HouseholdSyncResult> {
  *  - remote changed + local edits pending -> conflict (ask the user, don't
  *    silently pick a winner) */
 export async function syncConnectedHousehold(): Promise<HouseholdSyncResult> {
-  const guard = guardResult();
+  const guard = await guardResult();
   if (guard) return guard;
 
   const connection = await getHouseholdConnection();

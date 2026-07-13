@@ -101,6 +101,32 @@ export async function getActiveCaregiver(): Promise<Caregiver | null> {
   return team.caregivers.find((caregiver) => caregiver.id === team.activeCaregiverId) ?? team.caregivers[0] ?? null;
 }
 
+/** Reconciles a remote household's care-team roster with this device's own
+ * local state after a pull/join (see household-sync.ts's applyRemoteSnapshot).
+ * The remote snapshot's `isSelf` flag belongs to whichever device pushed it
+ * last - blindly overwriting local state with it would make THIS device
+ * show someone else as "you". Keeps this device's own self caregiver, folds
+ * in every other remote caregiver (stripped of their own isSelf claim), and
+ * drops a remote entry that happens to share this device's own self id
+ * (re-pulling data this same device already pushed). */
+export function mergeRemoteCareTeam(remote: CareTeamState, local: CareTeamState): CareTeamState {
+  const localSelf = local.caregivers.find((caregiver) => caregiver.isSelf) ?? null;
+  const others = remote.caregivers
+    .filter((caregiver) => caregiver.id !== localSelf?.id)
+    .map((caregiver) => ({ ...caregiver, isSelf: false }));
+
+  const caregivers = localSelf ? [localSelf, ...others] : others;
+  if (caregivers.length === 0) {
+    return { caregivers: [], activeCaregiverId: null };
+  }
+
+  const activeExists = caregivers.some((caregiver) => caregiver.id === local.activeCaregiverId);
+  return {
+    caregivers,
+    activeCaregiverId: activeExists ? local.activeCaregiverId : (localSelf?.id ?? caregivers[0].id),
+  };
+}
+
 /** Renames the self caregiver to match a profile display-name change (see
  * Settings' saveName/handleResetIdentity). Keeps the "Shared care mode"
  * chip list and every "Logging as X" / "actorName" attribution in sync

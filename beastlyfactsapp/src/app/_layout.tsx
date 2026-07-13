@@ -14,6 +14,7 @@ import { useEffect, type ReactNode } from 'react';
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import { PersistentFooterNav } from '@/components/app-tabs-base';
 import { Colors } from '@/constants/theme';
+import { AuthProvider } from '@/contexts/auth-context';
 import { ThemePreferenceProvider, useThemePreference } from '@/contexts/theme-preference';
 import { DatabaseProvider } from '@/db/provider';
 import { refreshAllPetsCareNotifications } from '@/lib/care-notifications';
@@ -49,28 +50,31 @@ export default function TabLayout() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemePreferenceProvider>
-        <DatabaseProvider>
-          <AppRuntimeEffects />
-          <NavigationThemeProvider>
-            <AnimatedSplashOverlay />
-            <View style={{ flex: 1 }}>
-              <Stack screenOptions={{ headerShown: false }}>
-                <Stack.Screen name="(tabs)" />
-                <Stack.Screen name="blog" />
-                <Stack.Screen name="entry/[id]" />
-                <Stack.Screen name="entry/slug/[slug]" />
-                <Stack.Screen name="encyclopedia/[id]" />
-                <Stack.Screen name="pet/[id]" />
-                <Stack.Screen name="pet/care-tools" />
-                <Stack.Screen name="pet/health-report" />
-                <Stack.Screen name="pet/form" />
-              </Stack>
-              <PersistentFooterNav />
-            </View>
-          </NavigationThemeProvider>
-        </DatabaseProvider>
-      </ThemePreferenceProvider>
+      <AuthProvider>
+        <ThemePreferenceProvider>
+          <DatabaseProvider>
+            <AppRuntimeEffects />
+            <NavigationThemeProvider>
+              <AnimatedSplashOverlay />
+              <View style={{ flex: 1 }}>
+                <Stack screenOptions={{ headerShown: false }}>
+                  <Stack.Screen name="(tabs)" />
+                  <Stack.Screen name="blog" />
+                  <Stack.Screen name="entry/[id]" />
+                  <Stack.Screen name="entry/slug/[slug]" />
+                  <Stack.Screen name="encyclopedia/[id]" />
+                  <Stack.Screen name="pet/[id]" />
+                  <Stack.Screen name="pet/care-tools" />
+                  <Stack.Screen name="pet/health-report" />
+                  <Stack.Screen name="pet/form" />
+                  <Stack.Screen name="pet/log" />
+                </Stack>
+                <PersistentFooterNav />
+              </View>
+            </NavigationThemeProvider>
+          </DatabaseProvider>
+        </ThemePreferenceProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }

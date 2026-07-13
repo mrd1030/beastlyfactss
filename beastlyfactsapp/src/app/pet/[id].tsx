@@ -5,6 +5,8 @@ import { Image, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Card } from '@/components/card';
+import { ConfirmDialog } from '@/components/confirm-dialog';
+import { HusbandryLogEntryCard } from '@/components/husbandry-log-entry';
 import { PetWeightChart } from '@/components/pet-weight-chart';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
@@ -21,7 +23,7 @@ import {
   listCareTasksForPet,
   listHusbandryLogForPet,
 } from '@/db/helpers';
-import type { CareTask, HusbandryLogEntry, HusbandryLogType, SymptomSeverity } from '@/db/types';
+import type { CareTask, HusbandryLogType, SymptomSeverity } from '@/db/types';
 import { useTheme } from '@/hooks/use-theme';
 import { refreshAllPetsCareNotifications } from '@/lib/care-notifications';
 import { getCareTeam } from '@/lib/care-team-store';
@@ -38,6 +40,11 @@ import {
 import { localDateString } from '@/lib/date';
 import { markHouseholdSyncDirty } from '@/lib/household-sync-store';
 import { pickPetPhoto } from '@/lib/pick-pet-photo';
+
+/** How many timeline entries render inline before "View full log" takes
+ * over - keeps this screen from growing unbounded as a pet's history
+ * accumulates (see app/pet/log.tsx for the paginated complete log). */
+const RECENT_LOG_PREVIEW_COUNT = 5;
 
 const LOG_PRESETS: {
   id: HusbandryLogType;
@@ -73,61 +80,6 @@ function formatChartDate(timestamp: string): string {
   return new Date(timestamp).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
 }
 
-function formatActivityTitle(entry: HusbandryLogEntry): string {
-  if (entry.title) return entry.title;
-  switch (entry.entryType as HusbandryLogType) {
-    case 'feeding':
-      return 'Feeding log';
-    case 'weight':
-      return 'Weight check';
-    case 'shed':
-      return 'Shed log';
-    case 'vet':
-      return 'Vet visit';
-    case 'symptom':
-      return 'Symptom log';
-    case 'medication':
-      return 'Medication given';
-    case 'cleaning':
-      return 'Cleaning completed';
-    case 'water':
-      return 'Water refreshed';
-    case 'check':
-      return 'Environment checked';
-    case 'task':
-      return 'Care task completed';
-    default:
-      return 'General note';
-  }
-}
-
-function getLogIcon(entryType: HusbandryLogType | string): string {
-  switch (entryType) {
-    case 'feeding':
-      return '🍽';
-    case 'weight':
-      return '⚖';
-    case 'shed':
-      return '🦎';
-    case 'vet':
-      return '🩺';
-    case 'symptom':
-      return '🚨';
-    case 'medication':
-      return '💊';
-    case 'cleaning':
-      return '🧼';
-    case 'water':
-      return '💧';
-    case 'check':
-      return '🌡️';
-    case 'task':
-      return '✅';
-    default:
-      return '📝';
-  }
-}
-
 /**
  * Pet detail screen — the "owned pet" half of My Pack. Shows the pet's
  * profile, its auto-generated care-task reminders (with a "mark done"
@@ -153,6 +105,9 @@ export default function PetDetailScreen() {
   const [logPhotoUri, setLogPhotoUri] = useState<string | null>(null);
   const [logError, setLogError] = useState<string | null>(null);
   const [timelineFilter, setTimelineFilter] = useState<'all' | 'symptoms' | 'meds' | 'weight' | 'vet' | 'care'>('all');
+  const [pendingConfirm, setPendingConfirm] = useState<
+    { kind: 'task'; task: CareTask } | { kind: 'quick'; actionId: string; label: string } | null
+  >(null);
 
   const { data: pet } = useQuery({
     queryKey: ['pet', id],
@@ -280,12 +235,8 @@ export default function PetDetailScreen() {
       setLogError('Enter the weight in grams for a weight log.');
       return;
     }
-    if (selectedPreset.id === 'symptom' && !trimmed && !logPhotoUri) {
-      setLogError('Add a symptom note or photo before saving.');
-      return;
-    }
-    if (!trimmed && !selectedPreset.requiresWeight && selectedPreset.id !== 'symptom') {
-      setLogError('Add a note before saving this log entry.');
+    if (!selectedPreset.requiresWeight && !trimmed && !logPhotoUri) {
+      setLogError('Add a note or photo before saving this log entry.');
       return;
     }
 
@@ -508,7 +459,9 @@ export default function PetDetailScreen() {
             <ThemedText type="smallBold">One-tap care</ThemedText>
             <View style={styles.oneTapRow}>
               {QUICK_CARE_ACTIONS.map((action) => (
-                <Pressable key={action.id} onPress={() => handleQuickConfirm(action.id)}>
+                <Pressable
+                  key={action.id}
+                  onPress={() => setPendingConfirm({ kind: 'quick', actionId: action.id, label: action.label })}>
                   <ThemedView type="backgroundSelected" style={styles.oneTapButton}>
                     <ThemedText type="smallBold">{action.label}</ThemedText>
                   </ThemedView>
@@ -590,7 +543,7 @@ export default function PetDetailScreen() {
                   </ThemedText>
                 </View>
                 <View style={styles.taskActions}>
-                  <Pressable onPress={() => handleMarkDone(task)}>
+                  <Pressable onPress={() => setPendingConfirm({ kind: 'task', task })}>
                     <ThemedView type="backgroundSelected" style={styles.markDoneButton}>
                       <ThemedText type="small">Mark done</ThemedText>
                     </ThemedView>
@@ -638,7 +591,7 @@ export default function PetDetailScreen() {
           </View>
           <ThemedView type="backgroundElement" style={styles.timelineSummaryCard}>
             <ThemedText type="small" themeColor="textSecondary">
-              {filteredLog.length} entries shown
+              {filteredLog.length} matching {filteredLog.length === 1 ? 'entry' : 'entries'}
               {latestSymptomEntry ? ` · latest symptom ${latestSymptomEntry.symptomSeverity ?? 'watch'}` : ''}
               {latestWeight?.weightGrams ? ` · latest weight ${latestWeight.weightGrams} g` : ''}
             </ThemedText>
@@ -709,21 +662,21 @@ export default function PetDetailScreen() {
                     style={[styles.contextInput, { color: theme.text }]}
                   />
                 </ThemedView>
-                <View style={styles.symptomPhotoRow}>
-                  <Pressable onPress={handlePickLogPhoto}>
-                    <ThemedView type="backgroundSelected" style={styles.photoActionButton}>
-                      <ThemedText type="small">{logPhotoUri ? 'Change photo' : 'Add photo'}</ThemedText>
-                    </ThemedView>
-                  </Pressable>
-                  {logPhotoUri && (
-                    <Pressable onPress={() => setLogPhotoUri(null)} hitSlop={8}>
-                      <ThemedText type="link">Remove photo</ThemedText>
-                    </Pressable>
-                  )}
-                </View>
-                {logPhotoUri && <Image source={{ uri: logPhotoUri }} style={styles.logPhotoPreview} />}
               </View>
             )}
+            <View style={styles.logPhotoRow}>
+              <Pressable onPress={handlePickLogPhoto}>
+                <ThemedView type="backgroundSelected" style={styles.photoActionButton}>
+                  <ThemedText type="small">{logPhotoUri ? 'Change photo' : 'Add photo'}</ThemedText>
+                </ThemedView>
+              </Pressable>
+              {logPhotoUri && (
+                <Pressable onPress={() => setLogPhotoUri(null)} hitSlop={8}>
+                  <ThemedText type="link">Remove photo</ThemedText>
+                </Pressable>
+              )}
+            </View>
+            {logPhotoUri && <Image source={{ uri: logPhotoUri }} style={styles.logPhotoPreview} />}
             <Pressable onPress={handleAddNote} disabled={!note.trim() && !selectedPreset.requiresWeight && !logPhotoUri}>
               <ThemedView
                 type={note.trim() || selectedPreset.requiresWeight || logPhotoUri ? 'backgroundSelected' : 'background'}
@@ -745,51 +698,16 @@ export default function PetDetailScreen() {
               No timeline entries match that filter yet.
             </ThemedText>
           )}
-          {filteredLog.map((entry) => (
-            <ThemedView key={entry.id} type="backgroundElement" style={styles.logRow}>
-              <View style={styles.logHeaderRow}>
-                <View style={styles.logTitleRow}>
-                  <ThemedText type="smallBold">
-                    {getLogIcon(entry.entryType)} {formatActivityTitle(entry)}
-                  </ThemedText>
-                  {entry.weightGrams != null && (
-                    <ThemedView type="backgroundSelected" style={styles.weightBadge}>
-                      <ThemedText type="small">{entry.weightGrams} g</ThemedText>
-                    </ThemedView>
-                  )}
-                </View>
-                <Pressable onPress={() => handleDeleteLog(entry.id)} hitSlop={8}>
-                  <ThemedText type="small" themeColor="textSecondary">
-                    ✕
-                  </ThemedText>
-                </Pressable>
-              </View>
-              <ThemedText type="small" themeColor="textSecondary">
-                {new Date(entry.timestamp).toLocaleString()}
-              </ThemedText>
-              {entry.actorName ? (
-                <ThemedText type="small" themeColor="textSecondary">
-                  Logged by {entry.actorName}
-                </ThemedText>
-              ) : null}
-              {(entry.symptomSeverity || entry.symptomContext) && (
-                <View style={styles.logMetaRow}>
-                  {entry.symptomSeverity && (
-                    <ThemedView type="backgroundSelected" style={styles.logBadge}>
-                      <ThemedText type="small">{entry.symptomSeverity}</ThemedText>
-                    </ThemedView>
-                  )}
-                  {entry.symptomContext && (
-                    <ThemedView type="backgroundSelected" style={styles.logBadge}>
-                      <ThemedText type="small">{entry.symptomContext}</ThemedText>
-                    </ThemedView>
-                  )}
-                </View>
-              )}
-              {entry.photoUri && <Image source={{ uri: entry.photoUri }} style={styles.timelinePhoto} />}
-              <ThemedText type="small">{entry.note}</ThemedText>
-            </ThemedView>
+          {filteredLog.slice(0, RECENT_LOG_PREVIEW_COUNT).map((entry) => (
+            <HusbandryLogEntryCard key={entry.id} entry={entry} onDelete={handleDeleteLog} />
           ))}
+          {(log?.length ?? 0) > 0 && (
+            <Pressable onPress={() => router.push({ pathname: '/pet/log', params: { petId: pet.id } })}>
+              <ThemedText type="linkPrimary" style={styles.viewFullLogLink}>
+                View full log ({log?.length ?? 0}) →
+              </ThemedText>
+            </Pressable>
+          )}
 
           <ThemedView style={styles.dangerZone}>
             {!confirmingDelete ? (
@@ -816,6 +734,29 @@ export default function PetDetailScreen() {
           </ThemedView>
         </ScrollView>
       </SafeAreaView>
+      <ConfirmDialog
+        visible={!!pendingConfirm}
+        title={
+          pendingConfirm?.kind === 'task'
+            ? `Mark "${pendingConfirm.task.label ?? pendingConfirm.task.taskType}" done?`
+            : pendingConfirm?.kind === 'quick'
+              ? `Log "${pendingConfirm.label}"?`
+              : ''
+        }
+        message={`This adds an entry to ${pet.nickname}'s timeline${pendingConfirm?.kind === 'task' ? ' and updates the due date.' : '.'}`}
+        confirmLabel="Confirm"
+        onCancel={() => setPendingConfirm(null)}
+        onConfirm={async () => {
+          const action = pendingConfirm;
+          setPendingConfirm(null);
+          if (!action) return;
+          if (action.kind === 'task') {
+            await handleMarkDone(action.task);
+          } else {
+            await handleQuickConfirm(action.actionId);
+          }
+        }}
+      />
     </ThemedView>
   );
 }
@@ -1035,10 +976,11 @@ const styles = StyleSheet.create({
     height: 40,
     fontSize: 14,
   },
-  symptomPhotoRow: {
+  logPhotoRow: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: Spacing.two,
+    marginTop: Spacing.one,
   },
   photoActionButton: {
     borderRadius: Radius.md,
@@ -1056,44 +998,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
   },
-  logRow: {
-    borderRadius: Radius.md,
-    padding: Spacing.two,
-    gap: Spacing.one,
-    marginBottom: Spacing.one,
-  },
-  logHeaderRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    gap: Spacing.two,
-  },
-  logTitleRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-    gap: Spacing.one,
-    flex: 1,
-  },
-  weightBadge: {
-    borderRadius: Radius.pill,
-    paddingHorizontal: Spacing.two,
-    paddingVertical: 2,
-  },
-  logMetaRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: Spacing.one,
-  },
-  logBadge: {
-    borderRadius: Radius.pill,
-    paddingHorizontal: Spacing.two,
-    paddingVertical: 2,
-  },
-  timelinePhoto: {
-    width: '100%',
-    height: 160,
-    borderRadius: Radius.md,
+  viewFullLogLink: {
+    marginTop: Spacing.one,
+    marginBottom: Spacing.two,
   },
   dangerZone: {
     marginTop: Spacing.four,

@@ -1,10 +1,12 @@
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { useState } from 'react';
+import { Image, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppMenu } from '@/components/app-menu';
 import { Card } from '@/components/card';
+import { ConfirmDialog } from '@/components/confirm-dialog';
 import { Eyebrow } from '@/components/eyebrow';
 import { AddPetCard, PetCard } from '@/components/pet-card';
 import { ThemedText } from '@/components/themed-text';
@@ -13,7 +15,7 @@ import { Brand, BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/const
 import { getAllSpecies } from '@/content-client/species-catalog';
 import { isDatabaseAvailable } from '@/db/client';
 import { listDueCareTasks, listPets, listRecentHusbandryLog, listUpcomingCareTasks } from '@/db/helpers';
-import type { HusbandryLogEntry } from '@/db/types';
+import type { CareTask, HusbandryLogEntry } from '@/db/types';
 import { useTheme } from '@/hooks/use-theme';
 import { refreshAllPetsCareNotifications } from '@/lib/care-notifications';
 import { QUICK_CARE_ACTIONS, confirmQuickCareAction, describeDueStatus, getEffectiveTaskDueDate, markCareTaskDoneAndLog } from '@/lib/care-task-engine';
@@ -39,6 +41,11 @@ export default function ProfileScreen() {
   const theme = useTheme();
   const queryClient = useQueryClient();
   const today = localDateString();
+  const [pendingConfirm, setPendingConfirm] = useState<
+    | { kind: 'task'; task: CareTask }
+    | { kind: 'quick'; petId: string; actionId: Parameters<typeof confirmQuickCareAction>[1]; label: string }
+    | null
+  >(null);
 
   const { data: profile } = useQuery({ queryKey: ['profile'], queryFn: getProfile });
   const { data: pets } = useQuery({ queryKey: ['pets'], queryFn: listPets, enabled: isDatabaseAvailable });
@@ -192,7 +199,7 @@ export default function ProfileScreen() {
                         {describeDueStatus(effectiveDueDate, today)}
                       </ThemedText>
                     </Pressable>
-                    <Pressable onPress={() => handleMarkDone(task.id)}>
+                    <Pressable onPress={() => setPendingConfirm({ kind: 'task', task })}>
                       <ThemedView type="backgroundElement" style={styles.quickDoneButton}>
                         <ThemedText type="smallBold">Done</ThemedText>
                       </ThemedView>
@@ -285,6 +292,13 @@ export default function ProfileScreen() {
                 return (
                   <Card key={pet.id} variant="filled" style={styles.dailyBoardCard}>
                     <View style={styles.dailyBoardHeader}>
+                      {pet.photoUri ? (
+                        <Image source={{ uri: pet.photoUri }} style={styles.dailyBoardPhoto} />
+                      ) : (
+                        <ThemedView type="backgroundElement" style={styles.dailyBoardPhotoPlaceholder}>
+                          <ThemedText>🐾</ThemedText>
+                        </ThemedView>
+                      )}
                       <View style={styles.dailyBoardTitleBlock}>
                         <ThemedText type="smallBold">{pet.nickname}</ThemedText>
                         <ThemedText type="small" themeColor="textSecondary">
@@ -330,7 +344,11 @@ export default function ProfileScreen() {
 
                     <View style={styles.petQuickActionsRow}>
                       {QUICK_CARE_ACTIONS.map((action) => (
-                        <Pressable key={`${pet.id}-${action.id}`} onPress={() => handleQuickCare(pet.id, action.id)}>
+                        <Pressable
+                          key={`${pet.id}-${action.id}`}
+                          onPress={() =>
+                            setPendingConfirm({ kind: 'quick', petId: pet.id, actionId: action.id, label: action.label })
+                          }>
                           <ThemedView type="backgroundSelected" style={styles.petQuickActionButton}>
                             <ThemedText type="smallBold">{action.label}</ThemedText>
                           </ThemedView>
@@ -379,6 +397,29 @@ export default function ProfileScreen() {
           )}
         </ScrollView>
       </SafeAreaView>
+      <ConfirmDialog
+        visible={!!pendingConfirm}
+        title={
+          pendingConfirm?.kind === 'task'
+            ? `Mark "${pendingConfirm.task.label ?? pendingConfirm.task.taskType}" done?`
+            : pendingConfirm?.kind === 'quick'
+              ? `Log "${pendingConfirm.label}" for ${petMap.get(pendingConfirm.petId)?.nickname ?? 'this pet'}?`
+              : ''
+        }
+        message={`This adds an entry to the care log${pendingConfirm?.kind === 'task' ? ' and updates the due date.' : '.'}`}
+        confirmLabel="Confirm"
+        onCancel={() => setPendingConfirm(null)}
+        onConfirm={async () => {
+          const action = pendingConfirm;
+          setPendingConfirm(null);
+          if (!action) return;
+          if (action.kind === 'task') {
+            await handleMarkDone(action.task.id);
+          } else {
+            await handleQuickCare(action.petId, action.actionId);
+          }
+        }}
+      />
     </ThemedView>
   );
 }
@@ -469,8 +510,20 @@ const styles = StyleSheet.create({
   dailyBoardHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-start',
+    alignItems: 'center',
     gap: Spacing.two,
+  },
+  dailyBoardPhoto: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+  },
+  dailyBoardPhotoPlaceholder: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   dailyBoardTitleBlock: {
     flex: 1,

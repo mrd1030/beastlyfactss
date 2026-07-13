@@ -12,9 +12,11 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { TwoToneTitle } from '@/components/two-tone-title';
 import { BottomTabInset, MaxContentWidth, Radius, Spacing } from '@/constants/theme';
+import { useAuth } from '@/contexts/auth-context';
 import { useThemePreference } from '@/contexts/theme-preference';
 import { resetAllLocalData } from '@/db/helpers';
 import { useTheme } from '@/hooks/use-theme';
+import { sendSignInCode, signOutOfAccount, verifySignInCode } from '@/lib/auth';
 import { scheduleCareReminderPreview } from '@/lib/care-notifications';
 import { addCaregiver, clearCareTeam, getCareTeam, removeCaregiver, setActiveCaregiver, syncSelfCaregiverName } from '@/lib/care-team-store';
 import { createRemoteHousehold, disconnectHousehold, isSupabaseReady, joinRemoteHousehold, pullConnectedHousehold, pushConnectedHousehold, syncConnectedHousehold } from '@/lib/household-sync';
@@ -33,15 +35,18 @@ const THEME_OPTIONS: { value: ThemePreference; label: string }[] = [
 ];
 
 /**
- * Settings tab — profile editing, appearance, notifications, and local
- * account/data controls. Everything here stays on-device only: there is
- * still no backend auth yet, so this is a local profile/preferences hub.
+ * Settings tab — profile editing, appearance, notifications, and account/
+ * data controls. Profile/preferences stay on-device only; a Supabase email
+ * account (see contexts/auth-context.tsx) is what makes the household-sync
+ * section below usable, since joining a household now requires being a
+ * signed-in, authorized member rather than just knowing its invite code.
  */
 export default function SettingsScreen() {
   const router = useRouter();
   const theme = useTheme();
   const queryClient = useQueryClient();
   const { preference, setPreference } = useThemePreference();
+  const { user } = useAuth();
 
   const [editingName, setEditingName] = useState(false);
   const [nameDraft, setNameDraft] = useState('');
@@ -55,6 +60,11 @@ export default function SettingsScreen() {
   const [inviteCodeDraft, setInviteCodeDraft] = useState('');
   const [syncStatusNote, setSyncStatusNote] = useState<string | null>(null);
   const [syncBusy, setSyncBusy] = useState(false);
+  const [emailDraft, setEmailDraft] = useState('');
+  const [codeDraft, setCodeDraft] = useState('');
+  const [codeSent, setCodeSent] = useState(false);
+  const [authBusy, setAuthBusy] = useState(false);
+  const [authError, setAuthError] = useState<string | null>(null);
   const widgetSupported = isWidgetsSupportedEnvironment();
   const androidWidgetSupported = isAndroidWidgetSupportedEnvironment();
   const supabaseReady = isSupabaseReady();
@@ -181,6 +191,8 @@ export default function SettingsScreen() {
         setSyncStatusNote('Cloud sync isn\'t available in this build yet.');
       } else if (result.status === 'database-unavailable') {
         setSyncStatusNote('Cloud sync needs the local device database, which is unavailable in this preview environment.');
+      } else if (result.status === 'not-signed-in') {
+        setSyncStatusNote('Sign in above first to use cloud sync.');
       } else if (result.status === 'not-connected') {
         setSyncStatusNote('Create or join a household first.');
       } else if (result.status === 'idle') {
@@ -195,6 +207,49 @@ export default function SettingsScreen() {
     } finally {
       setSyncBusy(false);
     }
+  };
+
+  const handleSendCode = async () => {
+    setAuthBusy(true);
+    setAuthError(null);
+    const result = await sendSignInCode(emailDraft);
+    if (result.status === 'sent') {
+      setCodeSent(true);
+    } else if (result.status === 'error') {
+      setAuthError(result.message);
+    } else {
+      setAuthError('Cloud sign-in isn\'t available in this build yet.');
+    }
+    setAuthBusy(false);
+  };
+
+  const handleVerifyCode = async () => {
+    setAuthBusy(true);
+    setAuthError(null);
+    const result = await verifySignInCode(emailDraft, codeDraft);
+    if (result.status === 'verified') {
+      setCodeDraft('');
+      setCodeSent(false);
+    } else if (result.status === 'error') {
+      setAuthError(result.message);
+    } else {
+      setAuthError('Cloud sign-in isn\'t available in this build yet.');
+    }
+    setAuthBusy(false);
+  };
+
+  const handleUseDifferentEmail = () => {
+    setCodeSent(false);
+    setCodeDraft('');
+    setAuthError(null);
+  };
+
+  const handleSignOut = async () => {
+    await signOutOfAccount();
+    setEmailDraft('');
+    setCodeDraft('');
+    setCodeSent(false);
+    await refreshSyncQueries();
   };
 
   const handleCreateHousehold = async () => {
@@ -358,6 +413,83 @@ export default function SettingsScreen() {
             </View>
           </Card>
 
+          <Eyebrow style={styles.sectionTitle}>Account</Eyebrow>
+          <Card variant="soft" style={styles.widgetCard}>
+            <ThemedText type="smallBold">Cloud account</ThemedText>
+            <ThemedText type="small" themeColor="textSecondary">
+              Sign in with your email so you can create or join a shared household below - this is what makes an
+              invite code actually authorize a device, instead of anyone who sees the code getting full access.
+            </ThemedText>
+            {!supabaseReady ? (
+              <ThemedText type="small" themeColor="textSecondary">
+                Cloud sign-in isn&apos;t available in this build yet.
+              </ThemedText>
+            ) : user ? (
+              <>
+                <ThemedText type="smallBold">{user.email}</ThemedText>
+                <Pressable onPress={handleSignOut}>
+                  <ThemedView type="backgroundElement" style={styles.widgetButton}>
+                    <ThemedText type="smallBold">Sign out</ThemedText>
+                  </ThemedView>
+                </Pressable>
+              </>
+            ) : codeSent ? (
+              <>
+                <ThemedText type="small" themeColor="textSecondary">
+                  Enter the 6-digit code sent to {emailDraft}.
+                </ThemedText>
+                <ThemedView type="backgroundElement" style={styles.nameInputBox}>
+                  <TextInput
+                    value={codeDraft}
+                    onChangeText={setCodeDraft}
+                    placeholder="6-digit code"
+                    placeholderTextColor={theme.textSecondary}
+                    style={[styles.nameInput, { color: theme.text }]}
+                    keyboardType="number-pad"
+                    autoFocus
+                  />
+                </ThemedView>
+                <View style={styles.profileActions}>
+                  <Pressable onPress={handleVerifyCode} disabled={authBusy}>
+                    <ThemedView type="backgroundSelected" style={styles.widgetButton}>
+                      <ThemedText type="smallBold">{authBusy ? 'Verifying…' : 'Verify code'}</ThemedText>
+                    </ThemedView>
+                  </Pressable>
+                  <Pressable onPress={handleUseDifferentEmail} disabled={authBusy}>
+                    <ThemedView type="backgroundElement" style={styles.widgetButton}>
+                      <ThemedText type="smallBold">Use a different email</ThemedText>
+                    </ThemedView>
+                  </Pressable>
+                </View>
+              </>
+            ) : (
+              <>
+                <ThemedView type="backgroundElement" style={styles.nameInputBox}>
+                  <TextInput
+                    value={emailDraft}
+                    onChangeText={setEmailDraft}
+                    placeholder="you@example.com"
+                    placeholderTextColor={theme.textSecondary}
+                    style={[styles.nameInput, { color: theme.text }]}
+                    keyboardType="email-address"
+                    autoCapitalize="none"
+                    autoCorrect={false}
+                  />
+                </ThemedView>
+                <Pressable onPress={handleSendCode} disabled={authBusy}>
+                  <ThemedView type="backgroundSelected" style={styles.widgetButton}>
+                    <ThemedText type="smallBold">{authBusy ? 'Sending…' : 'Send sign-in code'}</ThemedText>
+                  </ThemedView>
+                </Pressable>
+              </>
+            )}
+            {authError ? (
+              <ThemedText type="small" style={{ color: theme.danger }}>
+                {authError}
+              </ThemedText>
+            ) : null}
+          </Card>
+
           <Eyebrow style={styles.sectionTitle}>Household sync</Eyebrow>
           <Card variant="soft" style={styles.widgetCard}>
             <ThemedText type="smallBold">Supabase cloud household</ThemedText>
@@ -367,6 +499,10 @@ export default function SettingsScreen() {
             {!supabaseReady ? (
               <ThemedText type="small" themeColor="textSecondary">
                 Cloud sync isn&apos;t available in this build yet.
+              </ThemedText>
+            ) : !user ? (
+              <ThemedText type="small" themeColor="textSecondary">
+                Sign in above to enable cloud sync.
               </ThemedText>
             ) : householdConnection ? (
               <>
