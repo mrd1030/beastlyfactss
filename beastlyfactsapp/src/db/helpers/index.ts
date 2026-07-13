@@ -4,6 +4,7 @@ export * from './daily-fact-log';
 export * from './discovered-species';
 export * from './favorites';
 export * from './food-inventory';
+export * from './household-snapshot';
 export * from './husbandry-log';
 export * from './medication-plans';
 export * from './pets';
