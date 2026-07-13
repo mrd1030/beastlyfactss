@@ -51,7 +51,7 @@ async function run() {
       category: p.category,
       retailer: p.retailer,
       affiliateUrl: p.link,
-      imageUrl: p.image.startsWith('http') ? p.image : `${SITE_ORIGIN}${p.image}`,
+      imageUrl: p.image ? (p.image.startsWith('http') ? p.image : `${SITE_ORIGIN}${p.image}`) : undefined,
     });
   }
   await tx.commit();
