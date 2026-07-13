@@ -1,0 +1,1521 @@
+{
+  "animals": [
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "scientific": "Ambystoma mexicanum",
+      "category": "Amphibians",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "guideId": "axolotl",
+      "available": true,
+      "image": "/assets/guides/axolotl.jpg",
+      "bio": {
+        "overview": "The axolotl is a neotenic salamander - a species that retains larval features (gills, aquatic lifestyle) permanently throughout its adult life, never undergoing metamorphosis. Technically it remains a permanently juvenile form. Endemic to the lake complex of Xochimilco near Mexico City, the axolotl is Critically Endangered in the wild with fewer than 1,000 individuals estimated remaining. Millions are kept in captivity for biomedical research (their regenerative abilities are extraordinary) and as pets.",
+        "origin": "Lake Xochimilco, Mexico City, Mexico",
+        "habitat": "Freshwater lake and canal system",
+        "adultSize": "9-12 inches (23-30 cm)",
+        "wildDiet": "Worms, mollusks, insects, small fish, and aquatic invertebrates",
+        "wildLifespan": "10-15 years",
+        "conservation": "Critically Endangered (IUCN)"
+      }
+    },
+    {
+      "id": "fire-belly-toad",
+      "name": "Fire-Bellied Toad",
+      "scientific": "Bombina orientalis",
+      "category": "Amphibians",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "guideId": "fire-belly-toad",
+      "available": true,
+      "image": "/assets/guides/fire-belly-toad.jpg",
+      "bio": {
+        "overview": "The Oriental fire-bellied toad is native to northeastern China, Korea, and the Russian Far East, where it inhabits slow-moving streams and mountain ponds. Its vivid red and orange belly serves as aposematic warning coloration - signaling to predators that it is toxic. When threatened, it arches its back to display this warning coloration (the unken reflex). Fire-bellied toads produce skin secretions toxic enough to irritate mucous membranes and eyes.",
+        "origin": "Northeastern China, Korea, and Russian Far East",
+        "habitat": "Mountain streams, ponds, marshes, and wet meadows",
+        "adultSize": "1.5-2 inches (4-5 cm)",
+        "wildDiet": "Insects, worms, small crustaceans, and aquatic invertebrates",
+        "wildLifespan": "12-15 years (up to 20+ years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "pacman-frog",
+      "name": "Pac-Man Frog",
+      "scientific": "Ceratophrys ornata",
+      "category": "Amphibians",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "guideId": "pacman-frog",
+      "available": true,
+      "image": "/assets/guides/pacman-frog.jpg",
+      "bio": {
+        "overview": "The ornate horned frog - nicknamed the Pac-Man frog for its enormous, round, gaping mouth - is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pac-Man frogs will attempt to consume prey nearly as large as themselves - including other frogs, rodents, and small snakes.",
+        "origin": "South America (Argentina, Brazil, Uruguay)",
+        "habitat": "Grassland, tropical rainforest, and humid meadows",
+        "adultSize": "3-5 inches (7-12 cm) body; 0.5-1.5 lbs",
+        "wildDiet": "Insects, worms, mice, other frogs, and small vertebrates",
+        "wildLifespan": "6-15 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "tiger-salamander",
+      "name": "Tiger Salamander",
+      "scientific": "Ambystoma tigrinum",
+      "category": "Amphibians",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "guideId": "tiger-salamander",
+      "available": true,
+      "image": "/assets/guides/tiger-salamander.jpg",
+      "bio": {
+        "overview": "The tiger salamander is the largest land-dwelling salamander in North America, found across a vast range from Canada to Mexico. They are burrowing animals that spend most of their lives underground, emerging to breed in temporary and permanent ponds. In some lake environments, individuals remain permanently aquatic and sexually mature without fully metamorphosing - a neotenic phenomenon. Some of these neotenic populations were historically described as entirely separate species before genetic analysis revealed their true relationship.",
+        "origin": "North America (Canada to Mexico; widespread across the continent)",
+        "habitat": "Grassland, forest, and marshland; adjacent to breeding ponds",
+        "adultSize": "8-13 inches (20-33 cm)",
+        "wildDiet": "Worms, insects, slugs, frogs, small mice, and other salamanders",
+        "wildLifespan": "12-16 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "whites-tree-frog",
+      "name": "White's Tree Frog",
+      "scientific": "Litoria caerulea",
+      "category": "Amphibians",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "guideId": "whites-tree-frog",
+      "available": true,
+      "image": "/assets/guides/whites-tree-frog.jpg",
+      "bio": {
+        "overview": "White's tree frog - also called the dumpy tree frog or Australian green tree frog - is a large, robust arboreal frog native to Australia and southern New Guinea. They are one of the most docile frog species, remarkably tolerant of handling compared to most amphibians, and have become the most popular pet frog worldwide. Their characteristic \"dopey\" expression comes from a large, overhanging parotoid gland above the eye. Their skin secretions contain compounds with antimicrobial and antiviral properties.",
+        "origin": "Northern and eastern Australia; southern New Guinea",
+        "habitat": "Forest, woodland, and near human habitation (attracted to lit areas at night)",
+        "adultSize": "3-4.5 inches (7-11 cm)",
+        "wildDiet": "Insects, moths, cockroaches, crickets, and occasionally small lizards",
+        "wildLifespan": "7-20 years (up to 21 years recorded)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "african-grey",
+      "name": "African Grey Parrot",
+      "scientific": "Psittacus erithacus",
+      "category": "Birds",
+      "emoji": "🦜",
+      "difficulty": "Advanced",
+      "guideId": "african-grey",
+      "available": true,
+      "image": "/assets/guides/african-grey.jpg",
+      "bio": {
+        "overview": "The African grey parrot is widely regarded as the most intelligent parrot species and among the most cognitively sophisticated of all animals. Native to the dense equatorial forests of West and Central Africa, they live in large flocks and form long-term pair bonds. The research parrot Alex, studied by Dr. Irene Pepperberg for over 30 years, demonstrated a working vocabulary of over 150 words and the ability to understand concepts of color, shape, number, and \"same vs. different.\"",
+        "origin": "West and Central Africa (Ghana, Ivory Coast, Congo, Cameroon)",
+        "habitat": "Dense lowland forest and forest edges",
+        "adultSize": "13 inches (33 cm); 14-21 oz",
+        "wildDiet": "Seeds, nuts, fruits, and leafy vegetation",
+        "wildLifespan": "25-50 years (up to 60-80 years in captivity)",
+        "conservation": "Endangered (IUCN)"
+      }
+    },
+    {
+      "id": "budgie",
+      "name": "Budgie / Parakeet",
+      "scientific": "Melopsittacus undulatus",
+      "category": "Birds",
+      "emoji": "🐦",
+      "difficulty": "Beginner",
+      "guideId": "budgie",
+      "available": true,
+      "image": "/assets/guides/budgie.jpg",
+      "bio": {
+        "overview": "The budgerigar (budgie) is native to the semi-arid interior of Australia, where enormous nomadic flocks follow rainfall and seed availability across the outback. In the wild they are small, swift, and highly social - flocks of thousands are common. They are the third most popular pet in the world after dogs and cats, and the best-selling pet bird globally. With training, many budgies develop the ability to mimic speech - some hold records for the largest bird vocabulary.",
+        "origin": "Interior of Australia",
+        "habitat": "Open grassland, scrubland, and open woodland",
+        "adultSize": "7 inches (18 cm); 1-1.4 oz",
+        "wildDiet": "Grass seeds, berries, and plant matter",
+        "wildLifespan": "5-8 years (up to 12-15 years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "scientific": "Serinus canaria domestica",
+      "category": "Birds",
+      "emoji": "🐦",
+      "difficulty": "Beginner",
+      "guideId": "canary",
+      "available": true,
+      "image": "/assets/guides/canary.jpg",
+      "bio": {
+        "overview": "The domestic canary descends from the wild Atlantic canary, native to the Canary Islands, Azores, and Madeira, and has been selectively bred since the 16th century into distinct song and appearance varieties. Only males typically sing, a behavior tied to testosterone and daylight length, and centuries of selective breeding have produced dedicated song breeds like the Roller canary. Unlike most popular pet birds, canaries are kept primarily to be heard and watched rather than handled.",
+        "origin": "Canary Islands, Azores, and Madeira",
+        "habitat": "Woodland, scrubland, and gardens",
+        "adultSize": "4.5-5 inches (11-13 cm)",
+        "wildDiet": "Seeds, with insects taken for protein especially during breeding",
+        "wildLifespan": "8-10 years (up to 12-15 years in captivity)",
+        "conservation": "Least Concern (IUCN, wild ancestor)"
+      }
+    },
+    {
+      "id": "cockatiel",
+      "name": "Cockatiel",
+      "scientific": "Nymphicus hollandicus",
+      "category": "Birds",
+      "emoji": "🦜",
+      "difficulty": "Beginner",
+      "guideId": "cockatiel",
+      "available": true,
+      "image": "/assets/guides/cockatiel.jpg",
+      "bio": {
+        "overview": "Cockatiels are the smallest member of the cockatoo family and are endemic to Australia, where they inhabit open country and lightly wooded areas across the continent. They are highly nomadic, following water sources and seeding grasses. Cockatiels were the first parrot species to be widely bred in captivity and remain among the most popular pet birds worldwide, prized for their gentle temperament, whistling ability, and trainability.",
+        "origin": "Australia",
+        "habitat": "Open grassland, scrubland, and lightly wooded areas",
+        "adultSize": "12-13 inches (30-33 cm) including tail; 2.5-3.5 oz",
+        "wildDiet": "Grass seeds, grains, berries, and insects",
+        "wildLifespan": "10-15 years (up to 20-25 years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "cockatoo",
+      "name": "Cockatoo",
+      "scientific": "Cacatua alba",
+      "category": "Birds",
+      "emoji": "🦜",
+      "difficulty": "Advanced",
+      "guideId": "cockatoo",
+      "available": true,
+      "image": "/assets/guides/cockatoo.jpg",
+      "bio": {
+        "overview": "The umbrella cockatoo, native to the tropical rainforests of Indonesia's Maluku Islands, is one of the most commonly kept cockatoo species and among the most affection-dependent parrots in aviculture. In the wild, cockatoos maintain near-constant physical contact with their flock and mate, a trait that carries directly into captivity as an intense need for daily interaction with their keeper. Habitat loss and historic capture for the pet trade have made wild populations increasingly rare.",
+        "origin": "Maluku Islands, Indonesia",
+        "habitat": "Tropical lowland and hill rainforest",
+        "adultSize": "18 inches (46 cm); 1.1-1.7 lbs",
+        "wildDiet": "Seeds, nuts, fruit, and insects",
+        "wildLifespan": "40-60 years (some individuals living considerably longer)",
+        "conservation": "Vulnerable (IUCN)"
+      }
+    },
+    {
+      "id": "conure",
+      "name": "Green Cheek Conure",
+      "scientific": "Pyrrhura molinae",
+      "category": "Birds",
+      "emoji": "🦜",
+      "difficulty": "Intermediate",
+      "guideId": "conure",
+      "available": true,
+      "image": "/assets/guides/conure.jpg",
+      "bio": {
+        "overview": "Green cheek conures are small parrots native to the forests of Bolivia, Brazil, Argentina, and Paraguay, where they live in noisy flocks in the forest canopy. They are among the quietest of the conure species - making them more apartment-friendly than larger parrots - and have a reputation for playfulness and deep affection. Unlike larger parrots, they bond closely with keepers without requiring as intensive a daily time commitment.",
+        "origin": "South America (Bolivia, Brazil, Argentina, Paraguay)",
+        "habitat": "Forest, woodland, and forest edges",
+        "adultSize": "10 inches (25 cm) including tail; 2-2.5 oz",
+        "wildDiet": "Seeds, fruits, berries, and plant matter",
+        "wildLifespan": "10-15 years (up to 25-30 years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "lovebird",
+      "name": "Lovebird",
+      "scientific": "Agapornis spp.",
+      "category": "Birds",
+      "emoji": "🐦",
+      "difficulty": "Intermediate",
+      "guideId": "lovebird",
+      "available": true,
+      "image": "/assets/guides/lovebird.jpg",
+      "bio": {
+        "overview": "Lovebirds are a genus of nine small parrot species native to Africa and Madagascar. Their name comes from the strong pair bonds they form - bonded pairs spend hours preening each other and sitting pressed together. In captivity, a single lovebird deprived of a companion will often direct all its attachment behavior toward its human keeper - requiring significant daily interaction to thrive emotionally and prevent behavioral problems.",
+        "origin": "Africa and Madagascar",
+        "habitat": "Savanna, open woodland, and forest edge",
+        "adultSize": "5-6.5 inches (13-17 cm); 1.5-2 oz",
+        "wildDiet": "Seeds, grains, berries, grasses, and some insects",
+        "wildLifespan": "5-15 years (up to 15-20 years in captivity)",
+        "conservation": "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)"
+      }
+    },
+    {
+      "id": "domestic-shorthair",
+      "name": "Domestic Shorthair",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "guideId": "cat-domestic-shorthair",
+      "available": true,
+      "bio": {
+        "overview": "The domestic shorthair is not a specific breed but a mixed-breed cat with a short coat - the most common cat type in the world, accounting for the vast majority of the global domestic cat population estimated at 600 million. Descended from the African wildcat (Felis lybica), cats were first domesticated in the Fertile Crescent of the Middle East around 10,000 years ago, initially tolerated near grain stores for rodent control before becoming true companions.",
+        "origin": "Descended from African wildcat (Felis lybica); domesticated in the Fertile Crescent",
+        "habitat": "Fully domesticated; feral populations exist globally",
+        "adultSize": "9-10 inches at shoulder; 8-10 lbs (varies widely)",
+        "wildDiet": "(Ancestral) Small rodents, birds, insects, and lizards",
+        "wildLifespan": "12-18 years (indoor); 2-5 years (outdoor/feral)",
+        "conservation": "Not applicable (domesticated)"
+      }
+    },
+    {
+      "id": "maine-coon",
+      "name": "Maine Coon",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "guideId": "cat-maine-coon",
+      "available": true,
+      "bio": {
+        "overview": "The Maine Coon is North America's only native longhaired cat breed and one of the oldest natural breeds on the continent, believed to have descended from longhaired cats brought by Viking explorers or New England seafarers. They are among the largest domestic cat breeds - males regularly reach 15-25 lbs - and are known for their tufted ears, bushy raccoon-like tails, and dog-like personality, including following their owners around and responding to their name.",
+        "origin": "Breed origin: Maine, United States (natural landrace breed)",
+        "habitat": "Fully domesticated",
+        "adultSize": "10-16 inches at shoulder; 8-18 lbs (males up to 25 lbs)",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "12-15 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "siamese",
+      "name": "Siamese",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐱",
+      "difficulty": "Intermediate",
+      "guideId": "cat-siamese",
+      "available": true,
+      "bio": {
+        "overview": "The Siamese is one of the oldest and most recognized cat breeds in the world, originating in Thailand (formerly Siam) where they were treasured by royalty. Their striking pointed coloration - darker on the face, ears, paws, and tail - is a form of temperature-sensitive albinism: the enzyme producing dark pigment is only active in cooler extremities. Siamese are famously vocal, forming strong opinions and communicating them loudly to their keepers throughout the day.",
+        "origin": "Breed origin: Thailand (formerly Siam)",
+        "habitat": "Fully domesticated",
+        "adultSize": "11-14 inches at shoulder; 6-14 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "11-15 years (often 15-20 years with good care)",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "ragdoll",
+      "name": "Ragdoll",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "guideId": "cat-ragdoll",
+      "available": true,
+      "bio": {
+        "overview": "The ragdoll is a large, semi-longhaired breed developed in California in the 1960s by breeder Ann Baker, who selectively bred for an extremely docile temperament. The breed's name comes from its tendency to go completely limp when picked up - a trait that remains characteristic of well-bred ragdolls. They are among the most laid-back and people-oriented cat breeds, known for following owners from room to room and being exceptionally gentle with children.",
+        "origin": "Breed origin: Riverside, California, United States (1960s)",
+        "habitat": "Fully domesticated",
+        "adultSize": "9-11 inches at shoulder; 10-20 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "12-15 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "bengal",
+      "name": "Bengal",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐈",
+      "difficulty": "Advanced",
+      "guideId": "cat-bengal",
+      "available": true,
+      "bio": {
+        "overview": "The Bengal cat is a hybrid breed produced by crossing domestic cats with the Asian leopard cat (Prionailurus bengalensis), a small wild felid native to South and East Asia. The result is a striking, athletic cat with a wild spotted coat and a highly active temperament. Early-generation hybrids can be difficult to manage; F4 and later generations are fully domestic but retain their wild appearance and high energy, requiring extensive enrichment to prevent problem behaviors.",
+        "origin": "Breed origin: United States; hybrid with Asian leopard cat",
+        "habitat": "Fully domesticated",
+        "adultSize": "13-16 inches at shoulder; 8-15 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "12-16 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "persian",
+      "name": "Persian",
+      "scientific": "Felis catus",
+      "category": "Cats",
+      "emoji": "🐱",
+      "difficulty": "Intermediate",
+      "guideId": "cat-persian",
+      "available": true,
+      "bio": {
+        "overview": "Persians are one of the oldest recognized cat breeds, with a history tracing to the 1600s when longhaired cats from Persia (modern Iran) and Turkey were brought to Europe. Their dramatically flat faces, luxurious long coats, and calm, gentle temperament have made them perennially popular show and companion cats. Their flat facial structure, however, comes with significant health consequences: dental crowding, chronic eye drainage, and breathing difficulties are common.",
+        "origin": "Breed origin: Persia (modern Iran) and Turkey; popularized in Europe",
+        "habitat": "Fully domesticated",
+        "adultSize": "10-15 inches at shoulder; 7-12 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "10-15 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "labrador",
+      "name": "Labrador Retriever",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "guideId": "dog-labrador",
+      "available": true,
+      "bio": {
+        "overview": "The Labrador retriever has been the most popular dog breed in the United States for over 30 consecutive years. Originally bred in Newfoundland, Canada, to retrieve fish and waterfowl for fishermen, they were refined in England into the versatile working and companion dogs known today. Their exceptional trainability, gentle temperament, and strong retrieve drive make them the most common breed used as guide dogs, search-and-rescue dogs, and therapy animals worldwide.",
+        "origin": "Breed origin: Newfoundland, Canada; refined in England",
+        "habitat": "Fully domesticated",
+        "adultSize": "21.5-24.5 inches at shoulder; 55-80 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "10-12 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "golden-retriever",
+      "name": "Golden Retriever",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "guideId": "dog-golden-retriever",
+      "available": true,
+      "bio": {
+        "overview": "Golden retrievers were developed in Scotland in the mid-19th century by crossing flat-coated retrievers with Tweed water spaniels and other breeds to create an ideal hunting dog for Scotland's rugged terrain. Today they are beloved worldwide as gentle, trainable family companions and the most popular breed for therapy and assistance work after Labradors. Their famously tolerant temperament - patient with children and friendly with strangers - makes them iconic family dogs.",
+        "origin": "Breed origin: Scotland, United Kingdom",
+        "habitat": "Fully domesticated",
+        "adultSize": "21.5-24 inches at shoulder; 55-75 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "10-12 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "german-shepherd",
+      "name": "German Shepherd",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐕",
+      "difficulty": "Intermediate",
+      "guideId": "dog-german-shepherd",
+      "available": true,
+      "bio": {
+        "overview": "The German shepherd was developed in late 19th-century Germany by cavalry captain Max von Stephanitz, who sought to create the ideal herding and working dog through selective breeding. Their intelligence, trainability, and work drive made them the go-to military and police dog of the 20th century - they served in both World Wars and remain the most common police dog breed globally. The breed's extraordinary popularity has unfortunately created significant health challenges in poorly bred lines.",
+        "origin": "Breed origin: Germany",
+        "habitat": "Fully domesticated",
+        "adultSize": "22-26 inches at shoulder; 50-90 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "9-13 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "french-bulldog",
+      "name": "French Bulldog",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐶",
+      "difficulty": "Intermediate",
+      "guideId": "dog-french-bulldog",
+      "available": true,
+      "bio": {
+        "overview": "The French bulldog was developed in Paris in the mid-1800s by crossing English bulldogs brought by lace workers migrating to France with local Parisian dogs. Their compact size, bat-like ears, and minimal exercise requirements made them popular urban companions. They are now the most popular dog breed in the UK - a popularity that has unfortunately driven irresponsible breeding and severe health problems related to their brachycephalic (flat-faced) skull structure.",
+        "origin": "Breed origin: France (from English bulldog stock)",
+        "habitat": "Fully domesticated",
+        "adultSize": "11-13 inches at shoulder; under 28 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "10-12 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "border-collie",
+      "name": "Border Collie",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐕",
+      "difficulty": "Advanced",
+      "guideId": "dog-border-collie",
+      "available": true,
+      "bio": {
+        "overview": "The border collie is widely considered the most intelligent dog breed in the world, developed on the Anglo-Scottish border specifically for herding sheep using an intense \"eye\" (predatory stare) and crouching movement. A border collie named Chaser holds the record for the largest tested canine vocabulary - over 1,000 objects by name. Their extraordinary intelligence comes with a significant caveat: without adequate mental and physical stimulation, they become destructive and anxious.",
+        "origin": "Breed origin: Anglo-Scottish border region, United Kingdom",
+        "habitat": "Fully domesticated",
+        "adultSize": "18-22 inches at shoulder; 30-55 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "12-15 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "siberian-husky",
+      "name": "Siberian Husky",
+      "scientific": "Canis lupus familiaris",
+      "category": "Dogs",
+      "emoji": "🐺",
+      "difficulty": "Advanced",
+      "guideId": "dog-siberian-husky",
+      "available": true,
+      "bio": {
+        "overview": "Siberian huskies were bred by the Chukchi people of northeastern Siberia over thousands of years as endurance sled dogs capable of running 100+ miles per day in sub-zero conditions on minimal food. They were introduced to Alaska during the Nome Gold Rush and became famous when a husky named Balto led a relay team carrying diphtheria antitoxin to Nome in 1925. Their wolf-like appearance, striking blue eyes, and vocal howling make them one of the most recognizable breeds.",
+        "origin": "Breed origin: Northeastern Siberia; bred by the Chukchi people",
+        "habitat": "Fully domesticated",
+        "adultSize": "20-23.5 inches at shoulder; 35-60 lbs",
+        "wildDiet": "Fully domesticated",
+        "wildLifespan": "12-14 years",
+        "conservation": "Not applicable (domesticated breed)"
+      }
+    },
+    {
+      "id": "angelfish",
+      "name": "Angelfish",
+      "scientific": "Pterophyllum scalare",
+      "category": "Fish",
+      "emoji": "🐠",
+      "difficulty": "Intermediate",
+      "guideId": "angelfish",
+      "available": true,
+      "image": "/assets/guides/angelfish.jpg",
+      "bio": {
+        "overview": "The freshwater angelfish is a cichlid native to the slow-moving tributaries and flooded forest of the Amazon Basin. Its tall, laterally compressed body is a natural adaptation for slipping between submerged roots and plant stems, effectively disguising it as a drifting leaf. Angelfish often form long-term monogamous breeding pairs and display cooperative biparental care of their eggs and fry, an unusually elaborate parenting behavior for a fish.",
+        "origin": "Amazon Basin (Peru, Colombia, Brazil, Guyana)",
+        "habitat": "Slow-moving tributaries, flooded forest, and blackwater streams",
+        "adultSize": "6 inches (15 cm) body; 8-10 inches (20-25 cm) including fins",
+        "wildDiet": "Small insects, crustaceans, zooplankton, and occasionally small fish",
+        "wildLifespan": "10-12 years",
+        "conservation": "Not evaluated (widespread and common)"
+      }
+    },
+    {
+      "id": "betta-fish",
+      "name": "Betta Fish",
+      "scientific": "Betta splendens",
+      "category": "Fish",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "guideId": "betta-fish",
+      "available": true,
+      "image": "/assets/guides/betta-fish.jpg",
+      "bio": {
+        "overview": "The betta fish, or Siamese fighting fish, is native to the shallow rice paddies, floodplains, and slow-moving waters of Southeast Asia. Males are famous for their flowing fins and vivid colors, developed through centuries of selective breeding, and for their intense aggression toward other male bettas - a trait that led to organized fighting matches in Thailand centuries ago and to their modern common name. In the wild, low-oxygen water pushed bettas to evolve a labyrinth organ that lets them breathe air directly from the surface.",
+        "origin": "Southeast Asia (Thailand, Cambodia, Vietnam)",
+        "habitat": "Shallow rice paddies, floodplains, and slow-moving streams",
+        "adultSize": "2.5-3 inches (6-7.5 cm)",
+        "wildDiet": "Small insects and insect larvae taken from the water's surface",
+        "wildLifespan": "2-4 years (up to 5 in captivity with excellent care)",
+        "conservation": "Vulnerable (IUCN, wild populations)"
+      }
+    },
+    {
+      "id": "corydoras-catfish",
+      "name": "Corydoras Catfish",
+      "scientific": "Corydoras aeneus",
+      "category": "Fish",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "guideId": "corydoras-catfish",
+      "available": true,
+      "image": "/assets/guides/corydoras-catfish.jpg",
+      "bio": {
+        "overview": "Corydoras catfish are small, armored, bottom-dwelling fish native to the rivers and streams of South America. They are obligate shoaling fish, meaning they need the company of their own species to feel secure and behave naturally, and they spend much of the day actively foraging through soft substrate with sensitive barbels around their mouth. A unique adaptation lets them gulp air at the surface and absorb oxygen through their intestine, a backup system for the low-oxygen waters they evolved in.",
+        "origin": "South America (Amazon Basin and surrounding river systems)",
+        "habitat": "Slow-moving rivers, streams, and flooded forest with soft sediment",
+        "adultSize": "2-3 inches (5-7.5 cm)",
+        "wildDiet": "Insect larvae, worms, small crustaceans, and organic detritus",
+        "wildLifespan": "5-10 years; up to 15 years with excellent care",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "scientific": "Carassius auratus",
+      "category": "Fish",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "guideId": "goldfish",
+      "available": true,
+      "image": "/assets/guides/goldfish.jpg",
+      "bio": {
+        "overview": "The goldfish is one of the earliest domesticated fish, bred in China over a thousand years ago from a wild silver-gray carp relative for its color mutations. Selective breeding over centuries produced dozens of ornamental varieties, from the streamlined common and comet goldfish to elaborately finned fancy types like the oranda and ranchu. Goldfish grow to the size of their environment, and contrary to popular myth, they retain memories for months and can be trained to respond to cues and simple tasks.",
+        "origin": "China (domesticated from a wild carp relative)",
+        "habitat": "Slow-moving rivers, ponds, and lakes; entirely domesticated as a pet",
+        "adultSize": "4-12+ inches (10-30+ cm) depending on variety and space",
+        "wildDiet": "Omnivorous - plant matter, insects, crustaceans, and detritus",
+        "wildLifespan": "10-15 years typical; 20-30+ years in spacious, well-kept ponds",
+        "conservation": "Domesticated (not evaluated; wild ancestor Least Concern)"
+      }
+    },
+    {
+      "id": "guppy",
+      "name": "Guppy",
+      "scientific": "Poecilia reticulata",
+      "category": "Fish",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "guideId": "guppy",
+      "available": true,
+      "image": "/assets/guides/guppy.jpg",
+      "bio": {
+        "overview": "The guppy is a small, prolific livebearing fish native to the streams and rivers of northeastern South America and the Caribbean. Named after naturalist Robert John Lechmere Guppy, who submitted specimens to the British Museum in the 1860s, guppies have since become one of the most widely kept and selectively bred aquarium fish in the world, with countless color and finnage varieties developed by hobbyists. They have also been introduced globally as a natural mosquito-control agent, since they readily eat mosquito larvae.",
+        "origin": "Northeastern South America and the Caribbean (Venezuela, Trinidad, Guyana, Brazil)",
+        "habitat": "Freshwater streams, ditches, and slow-moving rivers",
+        "adultSize": "1-2.4 inches (2.5-6 cm); males smaller than females",
+        "wildDiet": "Mosquito larvae, algae, small invertebrates, and detritus",
+        "wildLifespan": "2-3 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "koi",
+      "name": "Koi",
+      "scientific": "Cyprinus rubrofuscus",
+      "category": "Fish",
+      "emoji": "🎏",
+      "difficulty": "Intermediate",
+      "guideId": "koi",
+      "available": true,
+      "image": "/assets/guides/koi.jpg",
+      "bio": {
+        "overview": "Koi are ornamental varieties of the Amur carp, developed in Japan starting in the early 19th century from food carp that displayed unusual color mutations. Breeders selectively refined these mutations into today's dozens of recognized color patterns - kohaku, showa, and sanke among the most prized - which are still judged competitively at shows in Japan. Koi are exceptionally long-lived and develop genuine recognition of individual keepers, often gathering at a pond's edge when a familiar person approaches.",
+        "origin": "Japan (developed from Amur carp of East Asia)",
+        "habitat": "Outdoor ponds and slow-moving freshwater systems; entirely domesticated as a pet",
+        "adultSize": "12-36 inches (30-90 cm) depending on pond size and variety",
+        "wildDiet": "Omnivorous bottom feeder - aquatic plants, insects, and crustaceans",
+        "wildLifespan": "25-35 years typical; some documented individuals far longer",
+        "conservation": "Domesticated (not evaluated; wild ancestor Least Concern)"
+      }
+    },
+    {
+      "id": "neon-tetra",
+      "name": "Neon Tetra",
+      "scientific": "Paracheirodon innesi",
+      "category": "Fish",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "guideId": "neon-tetra",
+      "available": true,
+      "image": "/assets/guides/neon-tetra.jpg",
+      "bio": {
+        "overview": "The neon tetra is a small, brightly colored schooling fish native to the clearwater and blackwater streams of the western Amazon Basin. Its iridescent blue stripe is produced by light-reflecting cells called iridophores rather than pigment, and this stripe visibly dims while the fish sleeps at night - a natural nocturnal change. Neon tetras are intensely social and rely on large schools for both natural behavior and reduced individual stress.",
+        "origin": "Amazon Basin (Peru, Colombia, Brazil)",
+        "habitat": "Clearwater and blackwater forest streams",
+        "adultSize": "1-1.5 inches (2.5-4 cm)",
+        "wildDiet": "Small insects, worms, crustaceans, and zooplankton",
+        "wildLifespan": "5-8 years",
+        "conservation": "Not evaluated (widespread and common)"
+      }
+    },
+    {
+      "id": "oscar",
+      "name": "Oscar",
+      "scientific": "Astronotus ocellatus",
+      "category": "Fish",
+      "emoji": "🐟",
+      "difficulty": "Intermediate",
+      "guideId": "oscar",
+      "available": true,
+      "image": "/assets/guides/oscar.jpg",
+      "bio": {
+        "overview": "The oscar is a large, predatory cichlid native to the Amazon Basin, prized in the aquarium hobby for its intelligence and strong bonds with individual keepers - behavior distinctive enough to have earned it the nickname 'water dog.' Oscars are naturally curious and active diggers, regularly rearranging substrate and decor in their environment. Outside their native range, oscars have also been widely introduced and established as an invasive species in warm-water systems around the world.",
+        "origin": "Amazon Basin (Peru, Colombia, Brazil)",
+        "habitat": "Slow-moving rivers, floodplains, and calm backwaters",
+        "adultSize": "10-14 inches (25-36 cm); up to 16 inches in optimal conditions",
+        "wildDiet": "Fish, insects, crustaceans, and worms",
+        "wildLifespan": "10-20 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "african-fat-tail",
+      "name": "African Fat-Tailed Gecko",
+      "scientific": "Hemitheconyx caudicinctus",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "guideId": "african-fat-tail",
+      "available": true,
+      "image": "/assets/guides/african-fat-tail.jpg",
+      "bio": {
+        "overview": "The African fat-tailed gecko hails from the arid savanna and scrubland of West Africa, where it shelters in rock crevices and termite mounds by day. Like the leopard gecko, it is a terrestrial species with true eyelids. Its thick tail stores fat reserves for use during food scarcity - a trait reflected in its name. They are generally calmer and more tolerant of handling than many other gecko species.",
+        "origin": "West Africa (Senegal to Cameroon)",
+        "habitat": "Arid savanna, dry forest, and rocky scrubland",
+        "adultSize": "7-9 inches (18-23 cm)",
+        "wildDiet": "Insects, worms, and small invertebrates",
+        "wildLifespan": "10-20 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "crested-gecko",
+      "name": "Crested Gecko",
+      "scientific": "Correlophus ciliatus",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "guideId": "crested-gecko",
+      "available": true,
+      "image": "/assets/guides/crested-gecko.jpg",
+      "bio": {
+        "overview": "Native to New Caledonia's southern islands, the crested gecko was thought extinct until rediscovered in 1994. These arboreal geckos have specialized toe pads and a prehensile tail that helps them navigate forest canopies. Their eyelash-like crests and vibrant color morphs have made them one of the most popular reptile pets worldwide.",
+        "origin": "New Caledonia (South Pacific islands)",
+        "habitat": "Tropical rainforest canopy and understory",
+        "adultSize": "7-9 inches (18-23 cm) including tail",
+        "wildDiet": "Fruit, nectar, pollen, and small invertebrates",
+        "wildLifespan": "10-20 years",
+        "conservation": "Vulnerable (IUCN)"
+      }
+    },
+    {
+      "id": "gargoyle-gecko",
+      "name": "Gargoyle Gecko",
+      "scientific": "Rhacodactylus auriculatus",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "guideId": "gargoyle-gecko",
+      "available": true,
+      "image": "/assets/guides/gargoyle-gecko.jpg",
+      "bio": {
+        "overview": "Endemic to southern New Caledonia, the gargoyle gecko takes its name from the bumpy protrusions on its head that resemble stone gargoyles. Like the crested gecko, it is an arboreal species adapted to humid forest environments. If threatened, it can drop and partially regenerate its tail - though the regrown version is smooth and bumpy, lacking the original pattern.",
+        "origin": "Southern New Caledonia",
+        "habitat": "Tropical and subtropical forest",
+        "adultSize": "7-9 inches (18-23 cm) including tail",
+        "wildDiet": "Fruit, nectar, small insects, and invertebrates",
+        "wildLifespan": "15-20 years",
+        "conservation": "Vulnerable (IUCN)"
+      }
+    },
+    {
+      "id": "leaf-tailed-gecko",
+      "name": "Leaf-Tailed Gecko",
+      "scientific": "Uroplatus spp.",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "guideId": "leaf-tailed-gecko",
+      "available": true,
+      "image": "/assets/guides/leaf-tailed-gecko.jpg",
+      "bio": {
+        "overview": "Madagascar's leaf-tailed geckos are masters of camouflage, with flattened bodies and leaf-like tails that make them virtually invisible against tree bark and fallen leaves. The genus contains over 15 species ranging from the massive Uroplatus fimbriatus to the tiny U. ebenaui. All are nocturnal ambush predators endemic to Madagascar's increasingly fragmented forests.",
+        "origin": "Madagascar",
+        "habitat": "Tropical rainforest and coastal forest",
+        "adultSize": "2.5-12 inches (6-30 cm) depending on species",
+        "wildDiet": "Insects, snails, and small invertebrates",
+        "wildLifespan": "5-10 years",
+        "conservation": "Ranges from Least Concern to Endangered depending on species (IUCN)"
+      }
+    },
+    {
+      "id": "leopard-gecko",
+      "name": "Leopard Gecko",
+      "scientific": "Eublepharis macularius",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "guideId": "leopard-gecko",
+      "available": true,
+      "image": "/assets/guides/leopard-gecko.jpg",
+      "bio": {
+        "overview": "Found across arid regions from Pakistan to northwestern India, leopard geckos are ground-dwelling lizards that shelter in rocky outcrops and dry grasslands by day. Unlike most geckos, they have true eyelids and lack toe pads, making them unable to climb glass. They are among the most widely kept reptile pets in the world, with over 100 recognized color morphs in captivity.",
+        "origin": "Pakistan, Afghanistan, Iran, India, Nepal",
+        "habitat": "Rocky desert, arid grassland, and dry scrubland",
+        "adultSize": "7-11 inches (18-28 cm)",
+        "wildDiet": "Insects, scorpions, small lizards, and worms",
+        "wildLifespan": "15-22 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "mourning-gecko",
+      "name": "Mourning Gecko",
+      "scientific": "Lepidodactylus lugubris",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "mourning-gecko",
+      "available": true,
+      "image": "/assets/guides/mourning-gecko.jpg",
+      "bio": {
+        "overview": "The mourning gecko holds a remarkable distinction: wild populations are almost entirely female and reproduce through parthenogenesis - producing fertile eggs without fertilization. Originally native to islands across the Indo-Pacific, they have colonized tropical coastlines worldwide by hitchhiking on cargo ships. They are tiny, fast, and thrive in communal setups, making them fascinating display animals.",
+        "origin": "Indo-Pacific islands; introduced worldwide in tropical regions",
+        "habitat": "Tropical coastal vegetation, forest edges, and human structures",
+        "adultSize": "3-4 inches (7-10 cm)",
+        "wildDiet": "Small invertebrates, fruit juice, and nectar",
+        "wildLifespan": "5-10 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "tokay-gecko",
+      "name": "Tokay Gecko",
+      "scientific": "Gekko gecko",
+      "category": "Geckos",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "guideId": "tokay-gecko",
+      "available": true,
+      "image": "/assets/guides/tokay-gecko.jpg",
+      "bio": {
+        "overview": "The tokay gecko is one of the largest gecko species, named for its distinctive \"to-kay!\" mating call audible from considerable distance. Native to Southeast Asia, they are highly territorial and notorious for their powerful bite. In parts of Asia they are considered good luck charms and natural pest controllers, consuming insects and small rodents from the walls of homes and temples.",
+        "origin": "South and Southeast Asia (India through Indonesia and Philippines)",
+        "habitat": "Tropical rainforest, rocky outcrops, and human structures",
+        "adultSize": "10-15 inches (25-38 cm)",
+        "wildDiet": "Insects, small mammals, birds, lizards, and eggs",
+        "wildLifespan": "10-15 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "emperor-scorpion",
+      "name": "Emperor Scorpion",
+      "scientific": "Pandinus imperator",
+      "category": "Invertebrates",
+      "emoji": "🦂",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "emperor-scorpion",
+      "available": true,
+      "image": "/assets/guides/emperor-scorpion.jpg",
+      "bio": {
+        "overview": "The emperor scorpion is one of the largest scorpion species in the world and the most widely kept scorpion as a pet. Native to the tropical rainforest and savanna of West Africa, they are surprisingly mild-mannered compared to many smaller species. Under UV light their exoskeleton fluoresces a vivid blue-green - a phenomenon related to compounds in the cuticle whose precise function is still debated. Their venom is relatively weak for their size.",
+        "origin": "West Africa (Senegal, Guinea-Bissau, Ghana, Nigeria, Togo, Benin)",
+        "habitat": "Tropical rainforest and savanna",
+        "adultSize": "7-8 inches (18-20 cm)",
+        "wildDiet": "Insects, worms, small lizards, and small mammals",
+        "wildLifespan": "5-8 years (up to 10 years in captivity)",
+        "conservation": "Appendix II (CITES)"
+      }
+    },
+    {
+      "id": "millipede",
+      "name": "Giant African Millipede",
+      "scientific": "Archispirostreptus gigas",
+      "category": "Invertebrates",
+      "emoji": "🐛",
+      "difficulty": "Self-Sufficient",
+      "guideId": "millipede",
+      "available": true,
+      "image": "/assets/guides/millipede.jpg",
+      "bio": {
+        "overview": "The giant African millipede is one of the largest millipede species on Earth, native to the subtropical and tropical forests of East Africa. Despite their fearsome appearance, they are completely harmless detritivores - feeding on decaying plant matter and playing a vital role in nutrient cycling. When threatened they coil into a tight spiral and may secrete mild chemical irritants from defensive glands. They are gentle, long-lived, and surprisingly personable as pets.",
+        "origin": "East Africa (Tanzania, Kenya, and surrounding countries)",
+        "habitat": "Subtropical and tropical forest floor and savanna",
+        "adultSize": "10-15 inches (25-38 cm)",
+        "wildDiet": "Decaying plant matter, leaf litter, fungi, and minerals from soil",
+        "wildLifespan": "5-10 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "hermit-crab",
+      "name": "Hermit Crab",
+      "scientific": "Coenobita clypeatus",
+      "category": "Invertebrates",
+      "emoji": "🦀",
+      "difficulty": "Intermediate",
+      "guideId": "hermit-crab",
+      "available": true,
+      "image": "/assets/guides/hermit-crab.jpg",
+      "bio": {
+        "overview": "The Caribbean hermit crab, also called the purple pincer hermit crab, is the most commonly kept pet land hermit crab, native to coastal regions of the Caribbean and the western Atlantic. Because they don't grow their own shells, hermit crabs spend their lives searching for, trying on, and trading empty snail shells as they grow - a behavior so structured that groups will form an orderly size-based queue to exchange shells when a larger one becomes available. Despite their reputation as a disposable beach-souvenir pet, they can live for decades with proper care.",
+        "origin": "Caribbean islands and coastal Central America and Florida",
+        "habitat": "Tropical coastal regions; land-dwelling but reliant on nearby fresh and marine water",
+        "adultSize": "Up to 4 inches (10 cm) across, including legs",
+        "wildDiet": "Decaying plant and animal matter, fruit, and organic debris (omnivorous scavenger)",
+        "wildLifespan": "20-30+ years in the wild",
+        "conservation": "Not evaluated; regional populations pressured by coastal development and the pet trade"
+      }
+    },
+    {
+      "id": "jumping-spider",
+      "name": "Jumping Spider",
+      "scientific": "Phidippus regius",
+      "category": "Invertebrates",
+      "emoji": "🕷️",
+      "difficulty": "Beginner",
+      "guideId": "jumping-spider",
+      "available": true,
+      "image": "/assets/guides/jumping-spider.jpg",
+      "bio": {
+        "overview": "The regal jumping spider is the most commonly kept pet jumping spider, native to scrubland, palmetto stands, and forest edges of the southeastern United States and the Caribbean. Unlike web-building spiders, jumping spiders are active visual hunters, using four pairs of eyes for nearly 360-degree awareness and sharp depth perception to stalk and pounce on prey. Many keepers describe their jumping spider as genuinely curious, often turning to track movement outside its enclosure.",
+        "origin": "Southeastern United States, Bahamas, and Caribbean islands",
+        "habitat": "Scrubland, palmetto stands, and forest edges",
+        "adultSize": "0.5-0.75 inches (1.3-1.9 cm); females larger than males",
+        "wildDiet": "Flies, moths, and other small insects, caught by active stalking and pouncing",
+        "wildLifespan": "1-2 years",
+        "conservation": "Not evaluated (widespread and common)"
+      }
+    },
+    {
+      "id": "hissing-cockroach",
+      "name": "Madagascar Hissing Cockroach",
+      "scientific": "Gromphadorhina portentosa",
+      "category": "Invertebrates",
+      "emoji": "🪳",
+      "difficulty": "Self-Sufficient",
+      "guideId": "hissing-cockroach",
+      "available": true,
+      "image": "/assets/guides/hissing-cockroach.jpg",
+      "bio": {
+        "overview": "The Madagascar hissing cockroach is one of the largest cockroach species in the world and the only known hissing insect that produces sound through modified spiracles (breathing pores) rather than wing rubbing. Endemic to Madagascar, they are detritivores that play an important ecological role in forest decomposition. Males display prominent pronotal horns used in shoving contests with rival males. In captivity they are odorless, wingless, and remarkably robust.",
+        "origin": "Madagascar",
+        "habitat": "Tropical forest floor; rotting logs and leaf litter",
+        "adultSize": "2-4 inches (5-10 cm)",
+        "wildDiet": "Decaying plant matter, leaf litter, and fruit",
+        "wildLifespan": "2-5 years",
+        "conservation": "Not formally assessed (IUCN); considered stable"
+      }
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Praying Mantis",
+      "scientific": "Various",
+      "category": "Invertebrates",
+      "emoji": "🦗",
+      "difficulty": "Self-Sufficient",
+      "guideId": "praying-mantis",
+      "available": true,
+      "image": "/assets/guides/praying-mantis.jpg",
+      "bio": {
+        "overview": "Praying mantises are ambush predators in the order Mantodea, with over 2,400 species found across tropical and temperate regions worldwide. They are famous for the iconic \"prayer\" posture of their spiked forelegs, held folded and ready to strike with lightning speed. Female mantises occasionally engage in sexual cannibalism - consuming the male during or after mating - though this occurs less frequently in the wild than in captivity.",
+        "origin": "Worldwide; most species tropical and subtropical",
+        "habitat": "Forest, grassland, shrubland, and gardens",
+        "adultSize": "0.5-6 inches (1-15 cm) depending on species",
+        "wildDiet": "Insects, spiders, small frogs, lizards, and hummingbirds (large species)",
+        "wildLifespan": "6-18 months (annual life cycle)",
+        "conservation": "Most species Least Concern; some poorly assessed"
+      }
+    },
+    {
+      "id": "stick-insect",
+      "name": "Stick Insect",
+      "scientific": "Phasmatodea",
+      "category": "Invertebrates",
+      "emoji": "🌿",
+      "difficulty": "Self-Sufficient",
+      "guideId": "stick-insect",
+      "available": true,
+      "image": "/assets/guides/stick-insect.jpg",
+      "bio": {
+        "overview": "Stick insects (phasmatids) are the world's greatest masters of camouflage, with over 3,000 species evolved to mimic twigs, leaves, and bark with remarkable precision. Some species can regenerate lost limbs between molts. Many reproduce through parthenogenesis - females produce viable eggs without fertilization. The longest known insect is Chan's megastick from Borneo, exceeding 22 inches in total body length including legs.",
+        "origin": "Worldwide, primarily tropical and subtropical regions",
+        "habitat": "Forest and woodland; highly variable by species",
+        "adultSize": "1-22 inches (2-55 cm) depending on species",
+        "wildDiet": "Leaves of various plants (highly species-specific)",
+        "wildLifespan": "6 months-2 years depending on species",
+        "conservation": "Varies; some island species Critically Endangered (IUCN)"
+      }
+    },
+    {
+      "id": "tarantula",
+      "name": "Tarantula",
+      "scientific": "Various",
+      "category": "Invertebrates",
+      "emoji": "🕷️",
+      "difficulty": "Beginner",
+      "guideId": "tarantula",
+      "available": true,
+      "image": "/assets/guides/tarantula.jpg",
+      "bio": {
+        "overview": "Tarantulas are the largest spiders on Earth, with over 900 recognized species found on every continent except Antarctica. New World species (Americas) are generally docile with mild venom; Old World species (Africa, Asia) are faster, more defensive, and pack a medically significant bite. All tarantulas are fascinating, low-maintenance pets that require minimal daily care and offer a unique window into spider behavior and biology.",
+        "origin": "Worldwide (tropics and subtropics); diverse origins by species",
+        "habitat": "Varies by species - desert, grassland, tropical rainforest, and arboreal canopy",
+        "adultSize": "2-12 inch leg span depending on species",
+        "wildDiet": "Insects, small lizards, frogs, mice, and birds (large species)",
+        "wildLifespan": "5-30 years; females live far longer than males",
+        "conservation": "Varies; many species listed in Appendix II (CITES); some Endangered"
+      }
+    },
+    {
+      "id": "ackie-monitor",
+      "name": "Ackie Monitor",
+      "scientific": "Varanus acanthurus",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "guideId": "ackie-monitor",
+      "available": true,
+      "image": "/assets/guides/ackie-monitor.jpg",
+      "bio": {
+        "overview": "The ackie monitor (ridge-tailed monitor) is a small, active monitor lizard native to the rocky arid regions of northwestern and central Australia. Despite being a \"dwarf\" member of the Varanus genus - which includes the massive Komodo dragon - ackies exhibit the same intelligence and prey drive as their larger relatives. They use their spiny, whip-like tails to wedge themselves into rock crevices when threatened.",
+        "origin": "Northwestern and central Australia",
+        "habitat": "Rocky desert, arid scrubland, and spinifex grassland",
+        "adultSize": "18-28 inches (45-70 cm) including tail",
+        "wildDiet": "Insects, spiders, scorpions, small lizards, and eggs",
+        "wildLifespan": "15-20 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "tegu",
+      "name": "Argentine Black & White Tegu",
+      "scientific": "Salvator merianae",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "guideId": "tegu",
+      "available": true,
+      "image": "/assets/guides/tegu.jpg",
+      "bio": {
+        "overview": "The Argentine black and white tegu is one of the largest lizards in South America, with intelligence rivaling that of monitor lizards. They are notable among reptiles for having near-endothermic (warm-blooded) properties during breeding season - their body temperature rises above ambient temperatures. In the wild they are powerful, opportunistic predators; well-socialized tegus in captivity can become remarkably dog-like companions.",
+        "origin": "South America (Argentina, Brazil, Paraguay, Uruguay)",
+        "habitat": "Tropical and subtropical forest, scrubland, and grassland",
+        "adultSize": "3-5 feet (90-150 cm)",
+        "wildDiet": "Omnivore - small mammals, eggs, birds, insects, fruits, and carrion",
+        "wildLifespan": "15-20 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "bearded-dragon",
+      "name": "Bearded Dragon",
+      "scientific": "Pogona vitticeps",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "bearded-dragon",
+      "available": true,
+      "image": "/assets/guides/bearded-dragon.jpg",
+      "relatedStory": {
+        "slug": "chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-the-cricket-that-got-away",
+        "title": "Chronicles of Dex: The Sun, the Glass, and the Cricket That Got Away"
+      },
+      "bio": {
+        "overview": "The inland bearded dragon is native to Australia's arid and semi-arid interior, where it basks on rocks and fence posts in open woodland and scrubland. They take their name from the expandable, spiny throat pouch - the \"beard\" - which darkens to black when threatened or excited. Among the most social of reptile pets, beardies are capable of forming genuine bonds with their keepers and are often described as having distinct personalities.",
+        "origin": "Australia (central and eastern interior)",
+        "habitat": "Arid woodland, scrubland, and rocky desert",
+        "adultSize": "18-24 inches (45-60 cm) including tail",
+        "wildDiet": "Omnivore - insects, vegetation, flowers, and small vertebrates",
+        "wildLifespan": "10-15 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "blue-tongue-skink",
+      "name": "Blue Tongue Skink",
+      "scientific": "Tiliqua spp.",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "blue-tongue-skink",
+      "available": true,
+      "image": "/assets/guides/blue-tongue-skink.jpg",
+      "bio": {
+        "overview": "Blue-tongued skinks are large, slow-moving lizards native to Australia and parts of Indonesia and New Guinea. Their shocking blue tongue, flashed at predators, serves as a startling warning display. They are ground-dwelling omnivores that consume a diverse wild diet of fruits, plants, snails, and carrion. Thick-bodied and docile by nature, their manageable temperament has made them highly popular as pets.",
+        "origin": "Australia, Indonesia, New Guinea",
+        "habitat": "Open woodland, grassland, and scrubland",
+        "adultSize": "17-24 inches (43-60 cm)",
+        "wildDiet": "Omnivore - berries, fruits, flowers, snails, insects, and carrion",
+        "wildLifespan": "15-20 years",
+        "conservation": "Varies by species; most Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "green-anole",
+      "name": "Green Anole",
+      "scientific": "Anolis carolinensis",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "green-anole",
+      "available": true,
+      "image": "/assets/guides/green-anole.jpg",
+      "bio": {
+        "overview": "The green anole is North America's only native anole and the most commonly kept anole species in captivity. Found throughout the American Southeast, it inhabits shrubs, trees, and garden vegetation. Males display an expandable pink throat fan (dewlap) in territorial and courtship displays. While capable of limited color change from vivid green to brown, they are not true chameleons - color change reflects mood and temperature rather than camouflage.",
+        "origin": "Southeastern United States and Caribbean",
+        "habitat": "Trees, shrubs, gardens, and forest edges",
+        "adultSize": "5-8 inches (13-20 cm) including tail",
+        "wildDiet": "Insects, spiders, and small invertebrates",
+        "wildLifespan": "3-7 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "chameleon-jackson",
+      "name": "Jackson's Chameleon",
+      "scientific": "Trioceros jacksonii",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "guideId": "chameleon",
+      "available": true,
+      "image": "/assets/guides/chameleon.jpg",
+      "bio": {
+        "overview": "Named for naturalist Frederick John Jackson, Jackson's chameleons are native to the highland forests of Kenya and Tanzania. Males are unmistakable - they sport three prominent horns, resembling a miniature Triceratops. Unlike most reptiles, Jackson's chameleons give birth to live young (viviparous) rather than laying eggs. They were introduced to Hawaii in the 1970s and have established feral populations there.",
+        "origin": "East Africa (Kenya, Tanzania); introduced to Hawaii",
+        "habitat": "Montane rainforest and cool highland forest",
+        "adultSize": "9-13 inches (23-33 cm)",
+        "wildDiet": "Insects, worms, snails, and small invertebrates",
+        "wildLifespan": "5-10 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "savannah-monitor",
+      "name": "Savannah Monitor",
+      "scientific": "Varanus exanthematicus",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "guideId": "savannah-monitor",
+      "available": true,
+      "image": "/assets/guides/savannah-monitor.jpg",
+      "bio": {
+        "overview": "The savannah monitor is a medium-to-large monitor lizard native to the sub-Saharan African savanna and semi-arid grasslands. In the wild they are highly active, covering considerable distances in search of prey and aestivating in burrows during the dry season. Despite a reputation for being tameable, savannah monitors in captivity frequently suffer from obesity and shortened lifespans due to improper high-fat diets.",
+        "origin": "Sub-Saharan Africa (Senegal to Sudan)",
+        "habitat": "Savanna, grassland, and semi-arid scrubland",
+        "adultSize": "2.5-4 feet (75-120 cm)",
+        "wildDiet": "Insects, snails, scorpions, frogs, small mammals, and eggs",
+        "wildLifespan": "10-20 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "uromastyx",
+      "name": "Uromastyx",
+      "scientific": "Uromastyx spp.",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "guideId": "uromastyx",
+      "available": true,
+      "image": "/assets/guides/uromastyx.jpg",
+      "bio": {
+        "overview": "Uromastyx - also called spiny-tailed lizards or dabb lizards - are robust, herbivorous lizards native to rocky desert and arid landscapes stretching from North Africa to the Middle East and South Asia. Their spiny, club-like tails are used as defensive weapons against predators. Highly adapted to extreme heat and drought, they obtain most of their water from plant matter and seeds. They are striking, underrated pets known for bold colors and a calm demeanor.",
+        "origin": "North Africa, Middle East, and South Asia",
+        "habitat": "Rocky desert, arid scrubland, and dry savanna",
+        "adultSize": "10-30 inches (25-75 cm) depending on species",
+        "wildDiet": "Seeds, leaves, flowers, grasses, and occasional insects",
+        "wildLifespan": "15-25 years",
+        "conservation": "Varies by species; many Near Threatened (IUCN)"
+      }
+    },
+    {
+      "id": "veiled-chameleon",
+      "name": "Veiled Chameleon",
+      "scientific": "Chamaeleo calyptratus",
+      "category": "Lizards",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "guideId": "veiled-chameleon",
+      "available": true,
+      "image": "/assets/guides/veiled-chameleon.jpg",
+      "bio": {
+        "overview": "The veiled chameleon is native to the mountainous valleys of Yemen and southwestern Saudi Arabia, where it tolerates wider swings in temperature and humidity than most other chameleon species - an adaptation to its relatively dry, variable habitat. Both sexes develop a tall, helmet-like casque on top of the head, more pronounced in males, which helps condense atmospheric moisture and plays a role in visual communication. Females can lay large clutches of infertile eggs even without ever mating.",
+        "origin": "Yemen and southwestern Saudi Arabia",
+        "habitat": "Mountain valleys, plateaus, and vegetation near water sources in an otherwise arid landscape",
+        "adultSize": "18-24 inches (46-61 cm) males; 10-14 inches (25-36 cm) females",
+        "wildDiet": "Insects, with some opportunistic feeding on leaves and flowers",
+        "wildLifespan": "5-8 years (males often longer than females)",
+        "conservation": "Not evaluated (widespread and common)"
+      }
+    },
+    {
+      "id": "chinchilla",
+      "name": "Chinchilla",
+      "scientific": "Chinchilla lanigera",
+      "category": "Small Mammals",
+      "emoji": "🐭",
+      "difficulty": "Intermediate/Advanced",
+      "guideId": "chinchilla",
+      "available": true,
+      "image": "/assets/guides/chinchilla.jpg",
+      "bio": {
+        "overview": "Chinchillas are native to the high-altitude Andes mountains of South America, where they inhabit rocky terrain at elevations up to 14,000 feet. In the wild they are critically endangered - their extraordinarily dense fur (up to 80 hairs per follicle, versus 2-3 for humans) has been prized for centuries and nearly led to their extinction. Most pet chinchillas descend from a founding population of just 13 animals brought to the United States in 1927.",
+        "origin": "Andes mountains of Chile (formerly also Bolivia, Peru, Argentina)",
+        "habitat": "Rocky, arid Andean mountains at high altitude",
+        "adultSize": "9-15 inches (23-38 cm); 1-2 lbs",
+        "wildDiet": "Grasses, seeds, leaves, bark, and insects",
+        "wildLifespan": "10-20 years",
+        "conservation": "Critically Endangered (IUCN)"
+      }
+    },
+    {
+      "id": "ferret",
+      "name": "Ferret",
+      "scientific": "Mustela putorius furo",
+      "category": "Small Mammals",
+      "emoji": "🦡",
+      "difficulty": "Intermediate",
+      "guideId": "ferret",
+      "available": true,
+      "image": "/assets/guides/ferret.jpg",
+      "bio": {
+        "overview": "Ferrets are fully domesticated descendants of the European polecat, bred by humans for at least 2,500 years - initially for hunting rabbits (a practice called ferreting). They belong to the Mustelidae family, making them relatives of otters, minks, and badgers. Highly social, playful, and mischievous, ferrets sleep up to 16-18 hours per day but are intensely active during their waking periods. They are obligate carnivores requiring high-protein diets.",
+        "origin": "Domesticated from the European polecat; origin in Europe",
+        "habitat": "Fully domesticated; no established wild population",
+        "adultSize": "13-16 inches (33-40 cm) body; males significantly larger",
+        "wildDiet": "(Ancestral polecat) Small mammals, birds, amphibians, and eggs",
+        "wildLifespan": "5-10 years",
+        "conservation": "Not assessed (domesticated); European polecat is Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "guinea-pig",
+      "name": "Guinea Pig",
+      "scientific": "Cavia porcellus",
+      "category": "Small Mammals",
+      "emoji": "🐹",
+      "difficulty": "Beginner",
+      "guideId": "guinea-pig",
+      "available": true,
+      "image": "/assets/guides/guinea-pig.jpg",
+      "bio": {
+        "overview": "Guinea pigs (cavies) have never been found in the wild - they are a fully domesticated species descended from South American wild cavies, selectively bred by Andean peoples for over 3,000 years as a food source and in religious ceremonies. Today they are one of the world's most popular small pet animals, valued for their vocal, social nature and gentle temperament. They use over 11 distinct vocalizations to communicate.",
+        "origin": "Domesticated from wild cavies of the Andes (Peru, Bolivia, Ecuador)",
+        "habitat": "Fully domesticated; no wild population",
+        "adultSize": "8-12 inches (20-30 cm); 1.5-2.6 lbs",
+        "wildDiet": "Grasses, hay, leafy plants, and vegetables",
+        "wildLifespan": "4-8 years",
+        "conservation": "Not assessed (fully domesticated species)"
+      }
+    },
+    {
+      "id": "hamster",
+      "name": "Hamster",
+      "scientific": "Mesocricetus auratus",
+      "category": "Small Mammals",
+      "emoji": "🌰",
+      "difficulty": "Beginner",
+      "guideId": "hamster",
+      "available": true,
+      "image": "/assets/guides/hamster.jpg",
+      "bio": {
+        "overview": "The Syrian hamster - the most common pet hamster species - was first brought into captivity from a single wild-caught female found near Aleppo, Syria in 1930; nearly every pet Syrian hamster alive today descends from that one litter. In the wild, Syrian hamsters are solitary burrowers that dig extensive tunnel systems and are fiercely territorial toward other hamsters, a trait that carries directly into captivity and is the reason Syrians must be housed alone as adults.",
+        "origin": "Northern Syria and southern Turkey",
+        "habitat": "Arid steppe and agricultural land, in extensive burrow systems",
+        "adultSize": "5-7 inches (13-18 cm); 4-7 oz",
+        "wildDiet": "Seeds, grains, grasses, and occasional insects",
+        "wildLifespan": "2-3 years",
+        "conservation": "Vulnerable (IUCN - wild Syrian hamster population)"
+      }
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog",
+      "scientific": "Atelerix albiventris",
+      "category": "Small Mammals",
+      "emoji": "🦔",
+      "difficulty": "Intermediate",
+      "guideId": "hedgehog",
+      "available": true,
+      "image": "/assets/guides/hedgehog.jpg",
+      "bio": {
+        "overview": "The African pygmy hedgehog - the species most commonly kept as a pet - is native to the arid savanna and grassland of central Africa. Wild hedgehogs are solitary, nocturnal insectivores that travel several miles each night in search of food. When threatened, they curl into a tight ball of interlocking spines that effectively deters most predators. Their spines are not barbed or poisonous - they are hollow, hardened hairs.",
+        "origin": "Central Africa (Senegal to Tanzania)",
+        "habitat": "Savanna, grassland, and dry woodland",
+        "adultSize": "5-9 inches (13-23 cm); 8-24 oz",
+        "wildDiet": "Insects, worms, snails, small vertebrates, eggs, and some plant matter",
+        "wildLifespan": "3-5 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "scientific": "Oryctolagus cuniculus",
+      "category": "Small Mammals",
+      "emoji": "🐰",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "rabbit",
+      "available": true,
+      "image": "/assets/guides/rabbit.jpg",
+      "bio": {
+        "overview": "The European rabbit is the ancestor of all domestic rabbit breeds - over 300 recognized worldwide. Originally native to the Iberian Peninsula, they were spread across Europe by the Romans and introduced globally by colonizers, becoming one of the world's most ecologically impactful invasive species in places like Australia. In the wild they live in large, complex underground warrens with strict social hierarchies.",
+        "origin": "Iberian Peninsula (Spain, Portugal); domesticated globally",
+        "habitat": "Grassland, meadow, farmland, and forest edge",
+        "adultSize": "Highly variable; 2.5-20+ lbs depending on breed",
+        "wildDiet": "Grasses, hay, herbs, root vegetables, and bark",
+        "wildLifespan": "5-12 years (wild); up to 12+ years in captivity",
+        "conservation": "Endangered (wild European rabbit, IUCN)"
+      }
+    },
+    {
+      "id": "sugar-glider",
+      "name": "Sugar Glider",
+      "scientific": "Petaurus breviceps",
+      "category": "Small Mammals",
+      "emoji": "🐿️",
+      "difficulty": "Advanced",
+      "guideId": "sugar-glider",
+      "available": true,
+      "image": "/assets/guides/sugar-glider.jpg",
+      "bio": {
+        "overview": "Sugar gliders are small marsupials native to Australia, New Guinea, and eastern Indonesia - more closely related to koalas and kangaroos than to flying squirrels, which they superficially resemble. They possess a membrane (patagium) stretching from wrist to ankle that allows them to glide up to 165 feet between trees. Highly social in the wild, they live in groups of 10-15 individuals and communicate through a range of calls, barks, and crabbing sounds.",
+        "origin": "Northern and eastern Australia, New Guinea, eastern Indonesia",
+        "habitat": "Tropical and temperate forest and woodland",
+        "adultSize": "5-6 inches (13-15 cm) body; 4-5.5 oz",
+        "wildDiet": "Nectar, pollen, tree sap, insects, and small vertebrates",
+        "wildLifespan": "3-9 years (up to 12-15 years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "ball-python",
+      "name": "Ball Python",
+      "scientific": "Python regius",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Intermediate",
+      "guideId": "ball-python",
+      "available": true,
+      "image": "/assets/guides/ball-python.jpg",
+      "bio": {
+        "overview": "The ball python - called the royal python in Europe - is native to the grasslands and open forests of sub-Saharan West and Central Africa. Its common name comes from its defensive behavior of coiling into a tight ball with its head protected in the center. They are the most popular pet snake in the world, with hundreds of color morphs developed through selective breeding. Wild populations face pressure from over-collection for the pet trade and habitat loss.",
+        "origin": "West and Central Africa (Senegal to Uganda)",
+        "habitat": "Grassland, open forest, and agricultural land",
+        "adultSize": "3-5 feet (90-150 cm); females significantly larger",
+        "wildDiet": "Small mammals, birds, and amphibians",
+        "wildLifespan": "20-30 years (up to 48 years recorded in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "boa-constrictor",
+      "name": "Boa Constrictor",
+      "scientific": "Boa spp.",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Intermediate/Advanced",
+      "guideId": "boa-constrictor",
+      "available": true,
+      "image": "/assets/guides/boa-constrictor.jpg",
+      "bio": {
+        "overview": "Boa constrictors are large, heavy-bodied snakes distributed from Mexico through Central and South America to Caribbean island populations. As ambush predators they use constriction to subdue prey - squeezing until the prey's circulatory system stops, rather than suffocating it as once thought. They are viviparous (live-bearing), with females giving birth to litters of up to 60 live young.",
+        "origin": "Mexico, Central America, South America, and Caribbean islands",
+        "habitat": "Tropical rainforest, dry forest, scrubland, and savanna",
+        "adultSize": "5-13 feet (1.5-4 m); females significantly larger",
+        "wildDiet": "Rodents, birds, bats, lizards, and small mammals",
+        "wildLifespan": "20-30 years",
+        "conservation": "Least Concern (IUCN); Appendix II (CITES)"
+      }
+    },
+    {
+      "id": "kingsnake",
+      "name": "California Kingsnake",
+      "scientific": "Lampropeltis californiae",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "guideId": "california-kingsnake",
+      "available": true,
+      "image": "/assets/guides/california-kingsnake.jpg",
+      "bio": {
+        "overview": "The California kingsnake is a non-venomous colubrid found throughout the western United States and northwestern Mexico. \"King\" snakes earned their name from their ability to kill and consume venomous rattlesnakes - they are immune to pit viper venom. Highly variable in pattern and coloration, they can mimic the banding of venomous coral snakes in some regions. Hardy and easy to care for, they are a popular beginner species.",
+        "origin": "Western United States and northwestern Mexico",
+        "habitat": "Desert, chaparral, woodland, grassland, and agricultural areas",
+        "adultSize": "2.5-4 feet (75-120 cm)",
+        "wildDiet": "Lizards, rodents, birds, eggs, and other snakes (including rattlesnakes)",
+        "wildLifespan": "10-15 years (up to 20+ years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "corn-snake",
+      "name": "Corn Snake",
+      "scientific": "Pantherophis guttatus",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "guideId": "corn-snake",
+      "available": true,
+      "image": "/assets/guides/corn-snake.jpg",
+      "bio": {
+        "overview": "Corn snakes are slender, medium-sized rat snakes native to the eastern United States. They are excellent climbers and highly active, often found in cornfields and farm buildings where rodent prey is abundant - hence the name. Docile, hardy, and available in a staggering array of captive-bred color morphs, they are widely considered the ideal beginner snake for new reptile keepers.",
+        "origin": "Eastern and central United States",
+        "habitat": "Pine forest, woodland, rocky hillside, and agricultural land",
+        "adultSize": "3.5-5 feet (107-152 cm)",
+        "wildDiet": "Mice, rats, birds, and lizards",
+        "wildLifespan": "10-15 years (up to 22 years in captivity)",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "hognose-snake",
+      "name": "Hognose Snake",
+      "scientific": "Heterodon spp.",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Intermediate",
+      "guideId": "hognose-snake",
+      "available": true,
+      "image": "/assets/guides/hognose-snake.jpg",
+      "bio": {
+        "overview": "Hognose snakes are famous for their dramatic bluffing behavior - they hiss loudly, flatten their heads cobra-like, and if that fails, roll over and play dead convincingly (complete with open mouth and lolling tongue). Native to North America, they have upturned snouts used to dig up buried toads - their primary wild prey. They are rear-fanged with mild venom effective on toads but harmless to humans in the vast majority of cases.",
+        "origin": "North America (eastern, western, and southern species)",
+        "habitat": "Sandy soil areas, prairies, woodland edges, and coastal plains",
+        "adultSize": "1.5-3.5 feet (45-107 cm) depending on species",
+        "wildDiet": "Toads, frogs, salamanders, and occasionally small rodents",
+        "wildLifespan": "10-18 years",
+        "conservation": "Least Concern (most species); some state-level protections"
+      }
+    },
+    {
+      "id": "milk-snake",
+      "name": "Milk Snake",
+      "scientific": "Lampropeltis triangulum",
+      "category": "Snakes",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "guideId": "milk-snake",
+      "available": true,
+      "image": "/assets/guides/milk-snake.jpg",
+      "bio": {
+        "overview": "Milk snakes are a widely distributed kingsnake species found from Canada through Central America. Their name comes from the folk myth that they slipped into barns to drink cow's milk - unfounded, but barn-dwelling rodents are certainly part of their diet. Many subspecies display vivid red, black, and yellow/white banding that mimics the venomous coral snake - a classic example of Batesian mimicry.",
+        "origin": "North and Central America (Canada to Ecuador)",
+        "habitat": "Rocky hillsides, woodland, grassland, farmland, and forest edges",
+        "adultSize": "2-4 feet (60-120 cm) depending on subspecies",
+        "wildDiet": "Rodents, lizards, birds, eggs, and other snakes",
+        "wildLifespan": "10-22 years",
+        "conservation": "Least Concern (IUCN)"
+      }
+    },
+    {
+      "id": "box-turtle",
+      "name": "Box Turtle",
+      "scientific": "Terrapene spp.",
+      "category": "Turtles & Tortoises",
+      "emoji": "🐢",
+      "difficulty": "Intermediate",
+      "guideId": "box-turtle",
+      "available": true,
+      "image": "/assets/guides/box-turtle.jpg",
+      "bio": {
+        "overview": "Box turtles are North America's most beloved native turtle, found from the eastern United States west to the Great Plains. Unlike their aquatic cousins, box turtles are largely terrestrial. Their hinged plastron (lower shell) closes so completely that no predator can reach the soft tissue inside - a unique adaptation in the turtle world. They can live over 100 years and have strong homing instincts, navigating back to precise territories across their lifetime.",
+        "origin": "North America (eastern and central United States, Mexico)",
+        "habitat": "Forest, meadow, grassland, and woodland edges",
+        "adultSize": "4.5-7 inches (11-18 cm)",
+        "wildDiet": "Omnivore - earthworms, insects, berries, mushrooms, and plants",
+        "wildLifespan": "50-100+ years",
+        "conservation": "Vulnerable (IUCN); threatened in many US states"
+      }
+    },
+    {
+      "id": "red-eared-slider",
+      "name": "Red-Eared Slider",
+      "scientific": "Trachemys scripta elegans",
+      "category": "Turtles & Tortoises",
+      "emoji": "🐢",
+      "difficulty": "Advanced",
+      "guideId": "red-eared-slider",
+      "available": true,
+      "image": "/assets/guides/red-eared-slider.jpg",
+      "bio": {
+        "overview": "The red-eared slider is one of the world's most widely recognized freshwater turtles, named for the distinctive red stripe behind each eye. Native to the Mississippi River valley, they have become one of the most invasive reptile species globally - released or escaped pets have established populations on every continent except Antarctica. In the wild they bask in large groups on logs and rocks, maintaining a clear social hierarchy.",
+        "origin": "Mississippi River valley and Gulf Coast (United States)",
+        "habitat": "Slow-moving freshwater - ponds, lakes, marshes, and rivers",
+        "adultSize": "5-12 inches (13-30 cm); females significantly larger",
+        "wildDiet": "Omnivore - aquatic plants, fish, insects, and carrion",
+        "wildLifespan": "20-40 years",
+        "conservation": "Least Concern (IUCN); invasive outside native range"
+      }
+    },
+    {
+      "id": "russian-tortoise",
+      "name": "Russian Tortoise",
+      "scientific": "Testudo horsfieldii",
+      "category": "Turtles & Tortoises",
+      "emoji": "🐢",
+      "difficulty": "Intermediate",
+      "guideId": "russian-tortoise",
+      "available": true,
+      "image": "/assets/guides/russian-tortoise.jpg",
+      "bio": {
+        "overview": "The Russian tortoise (also called Horsfield's tortoise) is a compact, hardy species native to the arid steppes and rocky desert from Kazakhstan to Pakistan and China. They are one of the world's most cold-tolerant tortoises, surviving extreme temperature swings by hibernating deep underground for months at a time. Among the smallest and hardiest of the commonly kept tortoise species, they have been popular pets for decades.",
+        "origin": "Central Asia (Kazakhstan, Uzbekistan, Iran, Pakistan, China)",
+        "habitat": "Semi-arid steppe, rocky desert, and dry scrubland",
+        "adultSize": "5-8 inches (13-20 cm)",
+        "wildDiet": "Grasses, leaves, flowers, and plant matter",
+        "wildLifespan": "40-80 years",
+        "conservation": "Vulnerable (IUCN)"
+      }
+    },
+    {
+      "id": "sulcata-tortoise",
+      "name": "Sulcata Tortoise",
+      "scientific": "Centrochelys sulcata",
+      "category": "Turtles & Tortoises",
+      "emoji": "🐢",
+      "difficulty": "Advanced",
+      "guideId": "sulcata-tortoise",
+      "available": true,
+      "image": "/assets/guides/sulcata-tortoise.jpg",
+      "bio": {
+        "overview": "The sulcata tortoise - also known as the African spurred tortoise - is the third-largest tortoise species on Earth. Native to the Sahara desert's southern fringe (the Sahel), they survive brutal conditions by digging burrows up to 10 feet deep to escape heat. A hatchling the size of a ping-pong ball will grow to potentially exceed 100 lbs - a commitment that must be made with full awareness of their adult size and 70-150+ year potential lifespan.",
+        "origin": "Sahel region of sub-Saharan Africa (Senegal to Ethiopia)",
+        "habitat": "Saharan desert edge, dry grassland, and savanna",
+        "adultSize": "2-3 feet (60-90 cm); 70-150+ lbs",
+        "wildDiet": "Grasses, hay, succulent plants, and cactus pads",
+        "wildLifespan": "70-150+ years",
+        "conservation": "Vulnerable (IUCN)"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Amphibians",
+      "emoji": "🐸",
+      "slug": "amphibians"
+    },
+    {
+      "name": "Birds",
+      "emoji": "🐦",
+      "slug": "birds"
+    },
+    {
+      "name": "Cats",
+      "emoji": "🐱",
+      "slug": "cats"
+    },
+    {
+      "name": "Dogs",
+      "emoji": "🐶",
+      "slug": "dogs"
+    },
+    {
+      "name": "Fish",
+      "emoji": "🐠",
+      "slug": "fish"
+    },
+    {
+      "name": "Geckos",
+      "emoji": "🦎",
+      "slug": "geckos"
+    },
+    {
+      "name": "Invertebrates",
+      "emoji": "🕷️",
+      "slug": "invertebrates"
+    },
+    {
+      "name": "Lizards",
+      "emoji": "🦎",
+      "slug": "lizards"
+    },
+    {
+      "name": "Small Mammals",
+      "emoji": "🦔",
+      "slug": "small-mammals"
+    },
+    {
+      "name": "Snakes",
+      "emoji": "🐍",
+      "slug": "snakes"
+    },
+    {
+      "name": "Turtles & Tortoises",
+      "emoji": "🐢",
+      "slug": "turtles-tortoises"
+    }
+  ],
+  "difficultyColor": {
+    "Self-Sufficient": "text-sky-600 bg-sky-50 dark:bg-sky-950 dark:text-sky-400",
+    "Beginner": "text-emerald-600 bg-emerald-50 dark:bg-emerald-950 dark:text-emerald-400",
+    "Beginner/Intermediate": "text-lime-600 bg-lime-50 dark:bg-lime-950 dark:text-lime-400",
+    "Intermediate": "text-amber-600 bg-amber-50 dark:bg-amber-950 dark:text-amber-400",
+    "Intermediate/Advanced": "text-orange-600 bg-orange-50 dark:bg-orange-950 dark:text-orange-400",
+    "Advanced": "text-red-600 bg-red-50 dark:bg-red-950 dark:text-red-400"
+  }
+}

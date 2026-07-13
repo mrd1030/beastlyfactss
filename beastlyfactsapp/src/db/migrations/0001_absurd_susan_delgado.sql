@@ -1,0 +1,1 @@
+ALTER TABLE `care_tasks` ADD `source` text DEFAULT 'auto' NOT NULL;
