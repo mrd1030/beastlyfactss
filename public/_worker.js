@@ -139,10 +139,87 @@ const ANIMAL_IMAGES = {
   'Dung Beetle': '/assets/facts/dung-beetle.jpg',
   'Sperm Whale': '/assets/facts/sperm-whale.jpg',
   'Vampire Bat': '/assets/facts/vampire-bat.jpg',
+  'Firefly': '/assets/facts/firefly.jpg',
+  'Quokka': '/assets/facts/quokka.jpg',
+  'Shoebill': '/assets/facts/shoebill.jpg',
+  'Leafy Sea Dragon': '/assets/facts/leafy-sea-dragon.jpg',
+  'Thorny Devil': '/assets/facts/thorny-devil.jpg',
+  'Glass Frog': '/assets/facts/glass-frog.jpg',
 };
 
-function imageFor(animal) {
-  const path = ANIMAL_IMAGES[animal];
+// Per-fact overrides, keyed by fact id - takes priority over ANIMAL_IMAGES.
+// Use this whenever two facts share the same animal, so each fact still gets
+// its own distinct photo instead of looking like duplicate content in the feed.
+const FACT_IMAGES = {
+  151: '/assets/facts/flamingo-2.jpg', // "The One-Leg Trick" - id 21 keeps flamingo.jpg
+  81: '/assets/facts/chameleon-2.jpg', // "Color-Changing Camouflage"
+  88: '/assets/facts/chameleon-3.jpg', // "Chameleon Color Change"
+  138: '/assets/facts/chameleon-4.jpg', // "Faster Than a Fighter Pilot"
+  63: '/assets/facts/dolphin-2.jpg', // "Mirror Test Passers"
+  79: '/assets/facts/dolphin-3.jpg', // "Secrets in the Sound"
+  105: '/assets/facts/dolphin-4.jpg', // "Glowing Oceans, No Joke!"
+  49: '/assets/facts/cat-2.jpg', // "Meow is Just for Us"
+  50: '/assets/facts/cat-3.jpg', // "Healing Purr"
+  51: '/assets/facts/cat-4.jpg', // "Always Landing Right"
+  52: '/assets/facts/cat-5.jpg', // "Lactose Intolerant Cats"
+  53: '/assets/facts/cat-6.jpg', // "70% of Life Asleep"
+  145: '/assets/facts/cat-7.jpg', // "Can't Taste Sugar"
+  148: '/assets/facts/cat-8.jpg', // "Built-In Measuring Tape"
+  45: '/assets/facts/dog-2.jpg', // "Unique Nose Prints"
+  46: '/assets/facts/dog-3.jpg', // "Dogs Dream Too"
+  47: '/assets/facts/dog-4.jpg', // "Born Blind and Deaf"
+  48: '/assets/facts/dog-5.jpg', // "Mental Fatigue is Real"
+  147: '/assets/facts/dog-6.jpg', // "A Nose Built Different"
+  83: '/assets/facts/octopus-2.jpg', // "Silent Signals"
+  95: '/assets/facts/octopus-3.jpg', // "Octopus Ink Defense"
+  102: '/assets/facts/octopus-4.jpg', // "Silent Swimmers"
+  54: '/assets/facts/parrot-2.jpg', // "Parrots Need Company"
+  58: '/assets/facts/parrot-3.jpg', // "Mimics Everything"
+  40: '/assets/facts/bearded-dragon-2.jpg', // "The Wave of Peace"
+  119: '/assets/facts/bearded-dragon-3.jpg', // "Temperature-Switch Dragons"
+  86: '/assets/facts/tardigrade-2.jpg', // "The Tardigrade Resilience"
+  166: '/assets/facts/tardigrade-3.jpg', // "The Radiation Shield Protein"
+  108: '/assets/facts/pangolin-2.jpg', // "Armored Squirrels"
+  167: '/assets/facts/pangolin-3.jpg', // "A Tongue Longer Than Its Body"
+  99: '/assets/facts/clownfish-2.jpg', // "Fluffy Fish Friends"
+  118: '/assets/facts/clownfish-3.jpg', // "Shrimp Anemone Alliance"
+  113: '/assets/facts/narwhal-2.jpg', // "Super Sneaky Narwhal"
+  109: '/assets/facts/cuttlefish-2.jpg', // "Underwater Fireworks"
+  163: '/assets/facts/starfish-2.jpg', // "Stomach on the Outside"
+  152: '/assets/facts/seahorse-2.jpg', // "No Stomach, No Problem"
+  161: '/assets/facts/mantis-shrimp-2.jpg', // "Married for Twenty Years"
+  171: '/assets/facts/hummingbird-2.jpg', // "Flying Backwards, Sleeping Like the Dead"
+  97: '/assets/facts/african-grey-parrot-2.jpg', // "Birds Can Count"
+  153: '/assets/facts/owl-2.jpg', // "Wings Built for Silence"
+  154: '/assets/facts/chicken-2.jpg', // "Never Forgets a Flockmate"
+  60: '/assets/facts/crow-2.jpg', // "Crow Tool Users"
+  164: '/assets/facts/komodo-dragon-2.jpg', // "A Bite That Won't Clot"
+  116: '/assets/facts/gecko-2.jpg', // "Climbing the Walls"
+  165: '/assets/facts/box-turtle-2.jpg', // "Sealed Shut Like a Box"
+  174: '/assets/facts/american-alligator-2.jpg', // "2,000 Teeth and Counting"
+  168: '/assets/facts/axolotl-2.jpg', // "Forever Young, Forever Underwater"
+  82: '/assets/facts/honeybee-2.jpg', // "The Tiny Yet Mighty"
+  91: '/assets/facts/leafcutter-ant-2.jpg', // "The Snack Time Ant"
+  92: '/assets/facts/sloth-2.jpg', // "Sloth Speedsters"
+  159: '/assets/facts/honey-badger-2.jpg', // "The Loose-Skin Escape Artist"
+  55: '/assets/facts/rabbit-2.jpg', // "Rabbits Need Exercise"
+  112: '/assets/facts/hedgehog-2.jpg', // "Cuddle Drones"
+  158: '/assets/facts/cheetah-2.jpg', // "Zero to Sixty in Seconds"
+  156: '/assets/facts/giraffe-2.jpg', // "Same Neck Bones as You"
+  157: '/assets/facts/koala-2.jpg', // "Fingerprints Like Ours"
+  173: '/assets/facts/capybara-2.jpg', // "Built-In Snorkel Mode"
+  172: '/assets/facts/red-panda-2.jpg', // "A Thumb That Isn't a Thumb"
+  160: '/assets/facts/sphynx-cat-2.jpg', // "Always Running Warm"
+  170: '/assets/facts/platypus-2.jpg', // "Milk Without Nipples"
+  76: '/assets/facts/elephant-2.jpg', // "Hear With Their Feet"
+  155: '/assets/facts/zebra-2.jpg', // "Stripes That Repel Flies"
+  162: '/assets/facts/sea-otter-2.jpg', // "A Million Hairs Per Inch"
+  169: '/assets/facts/wolf-2.jpg', // "The Alpha Wolf Myth"
+  150: '/assets/facts/guinea-pig-2.jpg', // "The Vitamin C Shortage"
+};
+
+function imageFor(fact) {
+  const path = FACT_IMAGES[fact.id] || ANIMAL_IMAGES[fact.animal];
   return path ? `https://beastlyfacts.com${path}` : FALLBACK_IMAGE;
 }
 
@@ -185,7 +262,7 @@ async function buildFactsFeed(request) {
       <guid isPermaLink="false">${guid}</guid>
       <pubDate>${pubDate.toUTCString()}</pubDate>
       <description>${cdata(`${fact.emoji} ${fact.fact}`)}</description>
-      <enclosure url="${imageFor(fact.animal)}" type="image/jpeg" length="0" />
+      <enclosure url="${imageFor(fact)}" type="image/jpeg" length="0" />
     </item>`
     )
     .join('');
