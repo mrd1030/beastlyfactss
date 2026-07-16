@@ -123,6 +123,22 @@ function App() {
     }
   };
 
+  // SEO: Sitewide Organization entity - kept in sync with the Article
+  // publisher.logo shape used on Blog/GuideDetail pages so it's the same
+  // image, not a second one to maintain.
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Beastly Facts",
+    "url": "https://beastlyfacts.com/",
+    "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" },
+    "sameAs": [
+      "https://www.pinterest.com/BeastlyFacts",
+      "https://x.com/beastly_facts",
+      "https://www.instagram.com/beastly.facts"
+    ]
+  };
+
   return (
     <AuthProvider>
       <FavoritesProvider>
@@ -134,6 +150,9 @@ function App() {
               <Helmet>
                 <script type="application/ld+json">
                   {JSON.stringify(structuredData)}
+                </script>
+                <script type="application/ld+json">
+                  {JSON.stringify(organizationSchema)}
                 </script>
               </Helmet>
 
