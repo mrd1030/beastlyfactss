@@ -9,11 +9,43 @@
       "category": "Site News"
     },
     {
+      "slug": "ball-python-cost-guide",
+      "title": "Ball Python Cost: Full Price Breakdown",
+      "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then genuinely low costs for the 20-30 years after.",
+      "date": "2026-07-16",
+      "image": "/assets/images/ball-python-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "ball-python-feeding-guide",
       "title": "Ball Python Feeding: Everything You Need to Know",
       "excerpt": "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal, and when to actually worry.",
       "date": "2025-04-26",
       "image": "/assets/images/ball-python-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ball-python-handling-guide",
+      "title": "How to Handle a Ball Python Correctly",
+      "excerpt": "Ball pythons are defensive as babies and mellow as adults, and most of what makes handling go well isn't grip or technique, it's timing.",
+      "date": "2026-07-16",
+      "image": "/assets/images/ball-python-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ball-python-health-issues-guide",
+      "title": "Ball Python Health Issues: Signs & Causes",
+      "excerpt": "Ball pythons are sensitive to husbandry mistakes in specific, predictable ways. Most of what shows up here traces back to temperature, humidity, or hygiene.",
+      "date": "2026-07-16",
+      "image": "/assets/images/ball-python-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ball-python-tank-setup-guide",
+      "title": "Ball Python Tank Setup Guide",
+      "excerpt": "Ball python husbandry has shifted toward bigger, more furnished enclosures. Here's what an adult setup actually needs, and why humidity deserves more attention than it gets.",
+      "date": "2026-07-16",
+      "image": "/assets/images/ball-python-tank-setup.jpg",
       "category": "Reptiles"
     },
     {
@@ -23,6 +55,38 @@
       "date": "2026-07-08",
       "image": "/assets/images/ball-python-vs-corn-snake.jpg",
       "category": "Comparisons"
+    },
+    {
+      "slug": "bearded-dragon-cost-guide",
+      "title": "Bearded Dragon Cost: Full Price Breakdown",
+      "excerpt": "What a bearded dragon actually costs: $400-800 to set up right, $50-108 a month after that, and the vet bills correct husbandry prevents.",
+      "date": "2026-07-16",
+      "image": "/assets/images/bearded-dragon-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "bearded-dragon-handling-guide",
+      "title": "How to Handle a Bearded Dragon Correctly",
+      "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early is what builds a dragon that actually enjoys it.",
+      "date": "2026-07-16",
+      "image": "/assets/images/bearded-dragon-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "bearded-dragon-health-issues-guide",
+      "title": "Bearded Dragon Health Issues: Signs & Causes",
+      "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD to yellow fungus disease, and when to call a vet.",
+      "date": "2026-07-16",
+      "image": "/assets/images/bearded-dragon-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "bearded-dragon-tank-setup-guide",
+      "title": "Bearded Dragon Tank Setup Guide",
+      "excerpt": "Bearded dragon husbandry has moved on from what old care sheets say. Bigger enclosures, stronger UVB, and more careful temperature gradients are now the standard.",
+      "date": "2026-07-16",
+      "image": "/assets/images/bearded-dragon-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "bearded-dragon-vs-leopard-gecko-guide",
@@ -151,6 +215,38 @@
       "date": "2026-06-28",
       "image": "/assets/images/invertebrate-molting.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "leopard-gecko-cost-guide",
+      "title": "Leopard Gecko Cost: Full Price Breakdown",
+      "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
+      "date": "2026-07-16",
+      "image": "/assets/images/leopard-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leopard-gecko-handling-guide",
+      "title": "How to Handle a Leopard Gecko Correctly",
+      "excerpt": "Leopard geckos tolerate handling well once settled, but their single biggest physical vulnerability, tail loss, is the one thing every owner needs to understand first.",
+      "date": "2026-07-16",
+      "image": "/assets/images/leopard-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leopard-gecko-health-issues-guide",
+      "title": "Leopard Gecko Health Issues: Signs & Causes",
+      "excerpt": "Leopard geckos are generally hardy, but stick tail disease has no cure and is easy to miss early. Here's what every owner should know how to recognize.",
+      "date": "2026-07-16",
+      "image": "/assets/images/leopard-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leopard-gecko-tank-setup-guide",
+      "title": "Leopard Gecko Tank Setup Guide",
+      "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
+      "date": "2026-07-16",
+      "image": "/assets/images/leopard-gecko-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "leopard-gecko-temperature-guide",
@@ -373,6 +469,13 @@
       "image": "/assets/images/dex/dex-chron4.jpg"
     },
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7",
+      "title": "Chronicles of Dex the Bearded Dragon: What the Glass Was For (Part 7)",
+      "excerpt": "When a window is left open a crack on a warm afternoon, Dex and Whiskey come closer to real contact than four years of glass-pressed friendship ever allowed, and Dex learns what the boundary between them was truly protecting all along.",
+      "date": "2026-07-16",
+      "image": "/assets/images/dex/dex-chron7.jpg"
+    },
+    {
       "slug": "chronicles-of-otis-the-bunny-first-flight-part-4",
       "title": "Chronicles of Otis the Bunny: First Flight (Part 4)",
       "excerpt": "Dozing in his hutch on a hot afternoon, Otis dreams that he can fly, rising above the only garden he's ever known to see its whole shape, and the neighborhood beyond it, for the first time.",
@@ -399,6 +502,13 @@
       "excerpt": "A squirrel raids Otis's garden and gets away clean, leaving him to face an uncomfortable truth: there might be a whole world beyond his fence he's never once considered.",
       "date": "2026-07-08",
       "image": "/assets/images/otis/otis-chron1.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6",
+      "title": "Chronicles of Otis the Bunny: The Guest in the House (Part 6)",
+      "excerpt": "When Mike agrees to pet-sit a friend's guinea pig, Otis has to share his prized sunny corner with a chattier, far more anxious houseguest than himself. It takes a piece of romaine lettuce to settle what territorial pacing alone could not.",
+      "date": "2026-07-16",
+      "image": "/assets/images/otis/otis-chron6.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5",

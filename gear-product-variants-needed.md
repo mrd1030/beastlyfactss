@@ -106,3 +106,49 @@ planned 8th "consistency review" pass was dropped after hitting a spend-limit er
 a prior attempt - each item above is a single independent agent's judgment rather than a
 cross-checked consensus, so treat "split" calls as a strong lead worth a quick gut-check
 rather than gospel, especially the finer 3-4 way splits.*
+
+---
+
+## Update (2026-07-16): gaps surfaced by the new cost/handling/health/tank-setup
+## article batch (bearded dragon, leopard gecko, ball python) - manual pass, not
+## the 7-agent workflow above
+
+- [ ] **Feeding tongs - Ball Python.** Not previously in this file's "Feeding tongs (used
+  in 7 guides)" split above (California Kingsnake, Corn Snake, Hognose Snake, Milk
+  Snake got the "long rubber-tipped tongs (10-12in)" bucket; Ball Python was missed
+  because the original pass scanned `costs.setup`/`costs.annual` line items only, and
+  ball python's tongs mention lives in prose (`sections.diet` in `snakes.js`, plus the
+  new `ball-python-handling-guide.mdx` and `ball-python-tank-setup-guide.mdx`), not a
+  cost-builder line. Same long rubber-tipped tongs category should cover it, a
+  heavy-bodied constrictor doesn't need a different grip than a kingsnake.
+- [ ] **Ceramic heat emitter (CHE), standalone.** Not tracked anywhere yet. Called out
+  by name across all three new tank-setup articles as the correct overnight/supplemental
+  heat source (instead of a light, so it doesn't disrupt the nocturnal cycle) for
+  Bearded Dragon, Leopard Gecko, and Ball Python alike. Distinct product from the
+  under-tank-heat-mat-thermostat-kit already linked, that one is belly heat, this is
+  radiant overhead heat with no light output.
+- [ ] **UVI meter / UV index radiometer (Solarmeter 6.5R or equivalent).** Net-new,
+  optional/prosumer tier. The new `bearded-dragon-tank-setup-guide.mdx` calls it out by
+  name as how serious keepers verify actual UVB output at the basking spot rather than
+  guessing from bulb specs. Lower priority than the items above, but a real, purchasable,
+  single-SKU product with no species variants needed.
+
+**Update (2026-07-16, same day): cost-builder lines fixed, sourcing still open.** Went
+back through Bearded Dragon, Leopard Gecko, and Ball Python's `costs.setup` arrays and
+added the missing lines so every gap above (and a couple more found in the process) now
+has somewhere in the cost builder to attach a link once sourced:
+- Bearded Dragon (`lizards.js`): added **"Thermostat"** ($40-80, still unlinked - the
+  linked `under-tank-heat-mat-thermostat-kit` is belly-heat shaped, wrong for an overhead
+  basking bulb, likely needs its own proportional/dimming-thermostat product rather than
+  reusing the "Quality thermostat" SKU flagged above) and **"Digital thermometer and
+  hygrometer"** ($15-30, this one already links correctly to `digital-thermometer-hygrometer-combo`).
+- Leopard Gecko (`geckos.js`): added **"Substrate (paper towel or tile)"** ($10-25,
+  correctly unlinked, not an affiliate-worthy SKU) and **"Feeding tongs"** ($5-10, same
+  gap as Ball Python below, still unlinked).
+- Ball Python (`snakes.js`): added **"Infrared thermometer gun"** ($15-30, links
+  correctly to `infrared-temp-gun`) and **"Feeding tongs"** ($5-10, still unlinked - its
+  own `checklist` array already listed tongs, the cost builder just hadn't caught up).
+- Also fixed a real broken match: Leopard Gecko's existing "Digital thermometer (IR gun
+  recommended)" line text didn't exactly match `infrared-temp-gun`'s covers list (one
+  word off from "...ideal/recommended"), so it was silently showing no link at all.
+  Added the exact phrase as an additional covers string to fix it.

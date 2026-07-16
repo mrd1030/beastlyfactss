@@ -30,7 +30,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4flGgUg",
     image: "/assets/images/affiliate/product-2.jpg",
-    covers: ["Digital thermometer (IR gun ideal/recommended)", "Infrared thermometer gun"],
+    covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Infrared thermometer gun"],
   },
   {
     slug: "uvb-arcadia-desert-12",

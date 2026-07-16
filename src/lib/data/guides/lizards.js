@@ -154,6 +154,8 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
         { item: "4x2x2 ft enclosure (PVC or wood/glass)", low: 200, high: 400 },
         { item: "T5 HO UVB fixture + bulb", low: 60, high: 100 },
         { item: "Basking bulb + fixture", low: 20, high: 40 },
+        { item: "Thermostat", low: 40, high: 80 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
         { item: "Infrared thermometer gun", low: 15, high: 30 },
         { item: "Substrate (tile or reptile carpet)", low: 20, high: 40 },
         { item: "Branches, hides, and decor", low: 30, high: 60 },

@@ -27,6 +27,48 @@
     "faqs": []
   },
   {
+    "path": "/content/guides/ball-python-cost-guide.mdx",
+    "slug": "ball-python-cost-guide",
+    "title": "How Much Does a Ball Python Really Cost?",
+    "seoTitle": "Ball Python Cost: Full Price Breakdown",
+    "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then genuinely low costs for the 20-30 years after.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ball-python-cost.jpg",
+    "imageAlt": "Ball python coiled in a fully equipped PVC enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a ball python itself cost?",
+        "a": "A standard or wild-type ball python runs $40 to $100. Common single-gene morphs land around $50 to $150, designer or rare morphs climb to $250 to $5,000 or more, and rescues or adoptions are often the cheapest route at $25 to $150."
+      },
+      {
+        "q": "Is a ball python expensive to keep long term?",
+        "a": "No, and this is one of its biggest selling points. After the first year, ongoing costs run $200 to $500 a year, and spread over a 20 to 30 year lifespan, that's one of the lowest per-year costs of any exotic pet."
+      },
+      {
+        "q": "Why does the enclosure material affect the price so much?",
+        "a": "PVC costs more than glass but holds humidity far better, which matters a lot for this species. A 40-gallon glass minimum runs $70 to $200, while a 4x2x2 ft PVC enclosure runs $100 to $450, the difference is worth it for how much easier PVC makes maintaining correct humidity."
+      },
+      {
+        "q": "What does routine vet care cost for a ball python?",
+        "a": "Budget $50 to $150 for an annual wellness exam, roughly $100 to $200 a year even in a healthy year. Sick or emergency visits run $100 to $500 or more, with imaging or surgery pushing that higher."
+      }
+    ]
+  },
+  {
     "path": "/content/guides/ball-python-feeding-guide.mdx",
     "slug": "ball-python-feeding-guide",
     "title": "Ball Python Feeding: Everything You Need to Know",
@@ -75,6 +117,132 @@
     ]
   },
   {
+    "path": "/content/guides/ball-python-handling-guide.mdx",
+    "slug": "ball-python-handling-guide",
+    "title": "How to Handle a Ball Python: Timing Matters More Than Technique",
+    "seoTitle": "How to Handle a Ball Python Correctly",
+    "excerpt": "Ball pythons are defensive as babies and mellow as adults, and most of what makes handling go well isn't grip or technique, it's timing.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Handling",
+      "Care Tips",
+      "Snake Behavior",
+      "Snake Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ball-python-handling.jpg",
+    "imageAlt": "Ball python being supported along both forearms during a handling session",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should I wait before handling a new ball python?",
+        "a": "One to two weeks, and don't start until it's eating regularly on a normal schedule. A snake still adjusting to a new enclosure and without an established feeding rhythm isn't ready to be picked up yet."
+      },
+      {
+        "q": "How long should I wait to handle after feeding?",
+        "a": "48 to 72 hours. Handling too soon after a meal is one of the most common causes of regurgitation in pet snakes, and regurgitation is hard on a snake's digestive system and can take time to recover from."
+      },
+      {
+        "q": "Can I handle my ball python while it's shedding?",
+        "a": "No. You'll know a shed cycle is starting when the eyes turn cloudy or blue, meaning the snake is functionally blind for a few days. A snake that can't see clearly is more defensive and more likely to bite out of startlement, so wait until the shed completes and the eyes clear."
+      },
+      {
+        "q": "Is ball python biting usually aggression?",
+        "a": "Rarely. It's typically a feeding response, the snake smells food on your hands, or a startled defensive reaction, not a temperament issue. Bites are minor, generally just a small skin break, treated with soap and water. Use tongs when feeding and avoid handling right after handling rodents."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/ball-python-health-issues-guide.mdx",
+    "slug": "ball-python-health-issues-guide",
+    "title": "Common Ball Python Health Issues and What Causes Them",
+    "seoTitle": "Ball Python Health Issues: Signs & Causes",
+    "excerpt": "Ball pythons are sensitive to husbandry mistakes in specific, predictable ways. Most of what shows up here traces back to temperature, humidity, or hygiene.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Health",
+      "Respiratory Infection",
+      "Reptile Illness",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ball-python-health-issues.jpg",
+    "imageAlt": "Ball python being examined by a reptile veterinarian",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the signature ball python illness?",
+        "a": "Respiratory infection, caused by temperatures running too low, incorrect humidity, a dirty enclosure, or ongoing stress. Vets typically see a seasonal spike each winter as enclosures cool down along with the weather outside, and it needs vet-prescribed antibiotics, not a wait-and-see approach."
+      },
+      {
+        "q": "Is it normal for a ball python to refuse food?",
+        "a": "Yes, ball pythons are famous for going on hunger strikes, and a healthy-looking snake in good body condition that refuses a meal or two isn't automatically an emergency. If husbandry checks out, it's often reasonable to offer food again in a couple of weeks before assuming something is wrong."
+      },
+      {
+        "q": "What causes scale rot in ball pythons?",
+        "a": "Damp, dirty substrate, excess moisture, or general poor hygiene in the enclosure. Look for discolored belly scales, blisters or sores, and a foul odor. Move the snake to a clean, dry enclosure and correct humidity immediately, anything spreading or blistering needs a vet."
+      },
+      {
+        "q": "How do thermal burns happen in ball python enclosures and how do I prevent them?",
+        "a": "They're caused by heat sources running without a thermostat, and they're entirely preventable. Every heat element in a ball python enclosure needs to be thermostat-controlled, no exceptions, and hot rocks should be skipped entirely."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/ball-python-tank-setup-guide.mdx",
+    "slug": "ball-python-tank-setup-guide",
+    "title": "Ball Python Tank Setup: Humidity Is the Detail That Makes or Breaks It",
+    "seoTitle": "Ball Python Tank Setup Guide",
+    "excerpt": "Ball python husbandry has shifted toward bigger, more furnished enclosures. Here's what an adult setup actually needs, and why humidity deserves more attention than it gets.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Ball Python",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ball-python-tank-setup.jpg",
+    "imageAlt": "Ball python enclosure with hides, clutter, and a large water bowl",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult ball python need?",
+        "a": "4x2x2 ft (roughly 120 gallons, about 8 square feet of floor space) is the current standard for an adult, replacing the old advice about keeping them in small tubs. Scale down for younger snakes: hatchlings do well in a 10-gallon, juveniles under 3 feet in a 36x18x18 inch setup."
+      },
+      {
+        "q": "Why is PVC recommended over glass for ball pythons?",
+        "a": "PVC holds humidity far more effectively than glass, and humidity is the detail that determines success with this species more than almost anything else. If you do use glass, cover three sides to help retain moisture."
+      },
+      {
+        "q": "What humidity level does a ball python actually need?",
+        "a": "Baseline 55 to 70%, raised to 70 to 80% specifically during shedding cycles. Too dry leads to bad sheds and higher respiratory infection risk, too wet without adequate ventilation swings the other way toward scale rot."
+      },
+      {
+        "q": "Why do ball pythons need so much clutter and cover?",
+        "a": "They're naturally shy, and an enclosure that feels too open and exposed causes chronic stress, which shows up as feeding refusal and general skittishness. Plants, branches, and leaf litter aren't just decoration for this species, they're part of what makes the snake feel secure enough to behave normally."
+      }
+    ]
+  },
+  {
     "path": "/content/guides/ball-python-vs-corn-snake-guide.mdx",
     "slug": "ball-python-vs-corn-snake-guide",
     "title": "Ball Python vs. Corn Snake: Which Beginner Snake Fits You Better",
@@ -119,6 +287,174 @@
       {
         "q": "Which is calmer to handle, a ball python or a corn snake?",
         "a": "Ball pythons, generally. Their entire defense strategy is to curl into a tight ball rather than bite or flee, which is exactly how they got their name. Corn snakes are also docile but more active and wriggly on the hand, and hatchlings will sometimes musk (release a smelly defensive secretion) when first handled."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bearded-dragon-cost-guide.mdx",
+    "slug": "bearded-dragon-cost-guide",
+    "title": "How Much Does a Bearded Dragon Really Cost?",
+    "seoTitle": "Bearded Dragon Cost: Full Price Breakdown",
+    "excerpt": "What a bearded dragon actually costs: $400-800 to set up right, $50-108 a month after that, and the vet bills correct husbandry prevents.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/bearded-dragon-cost.jpg",
+    "imageAlt": "Bearded dragon basking under a UVB light in a fully equipped enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a bearded dragon a cheap pet to own?",
+        "a": "The dragon itself is cheap, $40 to $100 for a standard morph. The equipment around it isn't optional and isn't cheap, so the honest answer is that the animal is affordable but the correct setup for it is a real expense, roughly $400 to $800 before the dragon even arrives."
+      },
+      {
+        "q": "What's the single most expensive part of bearded dragon ownership?",
+        "a": "Upfront, it's the enclosure and UVB fixture together, often $250 to $650 of the initial $400 to $800 budget. Long term, the real expense risk is an unbudgeted vet emergency like impaction surgery ($800 to $2,500), which correct husbandry mostly prevents in the first place."
+      },
+      {
+        "q": "Can I buy a smaller starter enclosure to save money at first?",
+        "a": "It doesn't actually save money. Bearded dragons reach adult size within a year or so, and a juvenile-sized enclosure gets outgrown fast. Buying the 4x2x2 ft adult minimum from day one costs the same or less than buying small now and buying again later."
+      },
+      {
+        "q": "How much should I set aside for a vet emergency?",
+        "a": "A few hundred dollars is a reasonable emergency fund. Impaction surgery runs $800 to $2,500 and metabolic bone disease treatment runs $200 to $500 or more, both of which are far more likely if the UVB and thermostat budget gets cut to save money upfront."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bearded-dragon-handling-guide.mdx",
+    "slug": "bearded-dragon-handling-guide",
+    "title": "How to Handle a Bearded Dragon Without Stressing It Out",
+    "seoTitle": "How to Handle a Bearded Dragon Correctly",
+    "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early is what builds a dragon that actually enjoys it.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Handling",
+      "Care Tips",
+      "Reptile Behavior",
+      "Lizard Care",
+      "Pet Bonding"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/bearded-dragon-handling.jpg",
+    "imageAlt": "Person gently holding a bearded dragon with a full underhand grip",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How soon can I handle a new bearded dragon?",
+        "a": "Wait 7 to 14 days before the first handling session so it can settle into the enclosure and learn where the food and basking spot are. Juveniles are more physically fragile than adults, so keep those early sessions especially short."
+      },
+      {
+        "q": "How often can I handle my bearded dragon?",
+        "a": "Once acclimated and eating normally, daily short sessions are fine and actually help build trust. Start at 5 to 10 minutes and increase gradually. Unlike some reptiles, there's no strict weekly cap, bearded dragons generally tolerate frequent, gentle interaction well."
+      },
+      {
+        "q": "What's the correct way to pick up a bearded dragon?",
+        "a": "Approach from the side or below, never straight down from above, which mimics a predator. Scoop from underneath, supporting the chest, belly, and all four feet so nothing is left dangling. An unsupported foot is what makes a calm dragon suddenly feel difficult to hold."
+      },
+      {
+        "q": "What does it mean if my bearded dragon's beard turns black?",
+        "a": "A darkening or black beard is a stress or agitation signal, along with body flattening, puffing up, open-mouth gaping, and arm-waving. None of these are dangerous on their own, but they mean the handling session is over."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bearded-dragon-health-issues-guide.mdx",
+    "slug": "bearded-dragon-health-issues-guide",
+    "title": "Common Bearded Dragon Health Issues and What Causes Them",
+    "seoTitle": "Bearded Dragon Health Issues: Signs & Causes",
+    "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD to yellow fungus disease, and when to call a vet.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Health",
+      "Metabolic Bone Disease",
+      "Reptile Illness",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/bearded-dragon-health-issues.jpg",
+    "imageAlt": "Veterinarian examining a bearded dragon on an exam table",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common health problem in pet bearded dragons?",
+        "a": "Metabolic bone disease (MBD) is the single most common serious illness, and it's almost always preventable. It's caused by calcium deficiency, inadequate or incorrect UVB exposure, or a diet too high in phosphorus relative to calcium, and it hits juveniles under two years old hardest."
+      },
+      {
+        "q": "How long can a bearded dragon go without pooping before it's a problem?",
+        "a": "If your dragon hasn't defecated in five or more days, it's time to see a vet. That combined with lethargy or hind-leg weakness points toward impaction, usually from loose substrate or prey that's too large to pass."
+      },
+      {
+        "q": "What does yellow fungus disease look like?",
+        "a": "Yellow, thickened, or crusty scales, a foul odor, and lesions that spread over time. It's contagious between animals and the prognosis ranges from guarded to grave, so it needs prompt, aggressive antifungal treatment from a vet the moment you notice it."
+      },
+      {
+        "q": "Is there a cure for atadenovirus (ADV) in bearded dragons?",
+        "a": "No. ADV causes fatal hepatitis and GI disease along with a distinctive neurological symptom called stargazing, where the dragon holds its head tilted up and back. There's no cure, only supportive care, which is why testing new dragons before introducing them to others matters."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/bearded-dragon-tank-setup-guide.mdx",
+    "slug": "bearded-dragon-tank-setup-guide",
+    "title": "Bearded Dragon Tank Setup: Temperature, UVB, and Everything Else",
+    "seoTitle": "Bearded Dragon Tank Setup Guide",
+    "excerpt": "Bearded dragon husbandry has moved on from what old care sheets say. Bigger enclosures, stronger UVB, and more careful temperature gradients are now the standard.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Tank Setup",
+      "UVB",
+      "Enclosure",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/bearded-dragon-tank-setup.jpg",
+    "imageAlt": "Fully furnished bearded dragon enclosure with basking platform and UVB lighting",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult bearded dragon need?",
+        "a": "4x2x2 ft, roughly 120 gallons, is the adult minimum, not an upgrade you'll get around to eventually. As a rule of thumb, enclosure length should be at least three times your dragon's total body length."
+      },
+      {
+        "q": "How hot does the basking spot need to be?",
+        "a": "95 to 110°F on the basking surface, measured with an infrared thermometer aimed at the actual surface rather than the air. Some sources push this as high as 108 to 113°F for adults, either range is workable if you aim for the middle and adjust based on how your dragon uses the space."
+      },
+      {
+        "q": "Do bearded dragons need UVB?",
+        "a": "Yes, and it's the one piece of equipment worth spending real money on. They need a linear T5 HO tube spanning about two-thirds of the enclosure, mounted 12 to 18 inches from the basking surface and never behind glass or plastic, which block UVB almost entirely."
+      },
+      {
+        "q": "What substrate is safest for a bearded dragon?",
+        "a": "Paper towel, newspaper, reptile carpet, or tile, especially for anyone new to keeping dragons. Avoid loose sand, including calcium sand, along with wood chips and gravel, all of which carry a real impaction risk if ingested."
       }
     ]
   },
@@ -882,6 +1218,174 @@
       {
         "q": "How long after a molt can I resume handling?",
         "a": "Wait until the new exoskeleton has visibly hardened, which is typically 7 to 14 days for a tarantula and often shorter for smaller species like jumping spiders. A freshly molted invertebrate is soft, fragile, and easily injured by even gentle handling."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-cost-guide.mdx",
+    "slug": "leopard-gecko-cost-guide",
+    "title": "How Much Does a Leopard Gecko Really Cost?",
+    "seoTitle": "Leopard Gecko Cost: Full Price Breakdown",
+    "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-cost.jpg",
+    "imageAlt": "Leopard gecko in a fully equipped terrarium with hides and a water dish",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a leopard gecko itself cost?",
+        "a": "A standard or wild-type gecko from a pet store runs $20 to $45. Reputable breeders often charge $50 to $150 even for basic morphs, popular morphs land around $75 to $300, and rare designer morphs can run $500 to $3,500 or more. Add $35 to $100 for live shipping if buying online."
+      },
+      {
+        "q": "Is a leopard gecko cheaper to keep than other reptiles?",
+        "a": "Generally yes. Setup runs $250 to $400, and ongoing costs of $20 to $50 a month are on the lower end for reptiles, it's genuinely possible to keep that closer to $100 a year if you breed your own feeders and buy supplies in bulk."
+      },
+      {
+        "q": "Do I need to budget for UVB even though it's optional?",
+        "a": "It's worth it even though not required. A low-level UVB fixture and bulb runs $20 to $50 upfront and about $45 to $80 a year to replace, and research shows even brief low-level exposure benefits vitamin D3 levels."
+      },
+      {
+        "q": "What should I budget for vet care?",
+        "a": "An annual wellness exam runs $85 to $105. That's the routine cost, what catches people off guard is that sick or emergency visits run $100 to $800 or more, and diagnostics or surgery push it higher, so a small emergency fund is worth having."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-handling-guide.mdx",
+    "slug": "leopard-gecko-handling-guide",
+    "title": "How to Handle a Leopard Gecko Safely",
+    "seoTitle": "How to Handle a Leopard Gecko Correctly",
+    "excerpt": "Leopard geckos tolerate handling well once settled, but their single biggest physical vulnerability, tail loss, is the one thing every owner needs to understand first.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Handling",
+      "Tail Loss",
+      "Care Tips",
+      "Gecko Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-handling.jpg",
+    "imageAlt": "Person letting a leopard gecko walk onto their open hand",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should I wait before handling a new leopard gecko?",
+        "a": "Wait one to two weeks, and use that time as a benchmark rather than a countdown: don't start until it stops fleeing or hiding when you approach and is eating normally. Young geckos under about 3 inches should wait until they reach roughly 6 inches before regular handling."
+      },
+      {
+        "q": "How often can leopard geckos be handled?",
+        "a": "Start with 5-minute sessions every other day once settled, and cap young geckos at a few short sessions a week. Unlike some reptiles, they don't need daily handling to be a well-adjusted pet."
+      },
+      {
+        "q": "Can a leopard gecko really drop its tail?",
+        "a": "Yes, this is called caudal autotomy, and it happens when a gecko is grabbed by the tail, badly frightened, handled roughly, or attacked by a cagemate. The tail stores fat and is roughly a quarter of the gecko's body mass, so losing it is a real physiological event, not just cosmetic."
+      },
+      {
+        "q": "What do I do if my gecko's tail drops?",
+        "a": "Move it to clean paper towel substrate immediately, keep the enclosure especially clean while it heals, avoid handling for 1 to 2 weeks, and watch the stump for swelling, discharge, discoloration, or a foul smell, any of which mean it's time for a vet. The tail regrows in 4 to 8 weeks but comes back shorter, thicker, and visually different."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-health-issues-guide.mdx",
+    "slug": "leopard-gecko-health-issues-guide",
+    "title": "Common Leopard Gecko Health Issues and What to Watch For",
+    "seoTitle": "Leopard Gecko Health Issues: Signs & Causes",
+    "excerpt": "Leopard geckos are generally hardy, but stick tail disease has no cure and is easy to miss early. Here's what every owner should know how to recognize.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Health",
+      "Cryptosporidiosis",
+      "Reptile Illness",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-health-issues.jpg",
+    "imageAlt": "Leopard gecko being examined closely for signs of illness",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is stick tail disease in leopard geckos?",
+        "a": "It's the common name for cryptosporidiosis, a severe and highly contagious parasite with no cure. Around half of captive leopard geckos may carry it, and it causes the tail to thin out to a stick shape along with emaciation and appetite loss. Symptomatic cases have a mortality rate around 50%."
+      },
+      {
+        "q": "How is cryptosporidiosis diagnosed and treated?",
+        "a": "Diagnosis is through a fecal PCR test, though false negatives happen, so a single clear test doesn't fully rule it out. The main treatment drug, paromomycin, manages the condition rather than curing it, and a gecko that doesn't respond within a month generally has a poor outlook."
+      },
+      {
+        "q": "Why do leopard geckos get metabolic bone disease if UVB is optional for them?",
+        "a": "MBD is common in leopard geckos partly because they're so often kept without UVB, adequate calcium supplementation, or adequate heat. Research suggests they rely heavily on UVB and correct basking temperature to process calcium properly, not diet supplementation alone, which is part of why low-level UVB is worth providing even though it's technically optional."
+      },
+      {
+        "q": "What causes shedding problems in leopard geckos?",
+        "a": "Low humidity or a vitamin A deficiency. Retained shed builds up around the eyes, toes, and tail tip, and left unaddressed it can constrict circulation badly enough to cause tissue death and lost digits. A dedicated humid hide prevents most of this before it starts."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-tank-setup-guide.mdx",
+    "slug": "leopard-gecko-tank-setup-guide",
+    "title": "Leopard Gecko Tank Setup: What Your Gecko Actually Needs",
+    "seoTitle": "Leopard Gecko Tank Setup Guide",
+    "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
+    "date": "2026-07-16",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-tank-setup.jpg",
+    "imageAlt": "Leopard gecko enclosure with warm hide, cool hide, and humid hide setup",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a leopard gecko need?",
+        "a": "36x18x18 inches, or a 20-gallon long, is the minimum for an adult, and bigger is always fine. Hatchlings can start in something as small as a 10-gallon while they're small. Leopard geckos are terrestrial, so floor space matters more than height."
+      },
+      {
+        "q": "Do leopard geckos need a heat mat or a heat lamp?",
+        "a": "A heat mat. Heat comes from an under-tank heat mat placed under the warm hide, always on a thermostat, since an unregulated mat is a real burn and fire risk. Skip overhead heat lamps as the primary source for this species."
+      },
+      {
+        "q": "What's the one setup detail people get wrong most often?",
+        "a": "Humidity. Keep the general enclosure at 30 to 40%, but separately provide a dedicated humid hide at 70 to 80% humidity. Raising humidity across the whole enclosure to hit that number instead just creates a respiratory infection risk."
+      },
+      {
+        "q": "How many hides does a leopard gecko actually need?",
+        "a": "Three, not one: a warm dry hide, a cool dry hide, and a humid hide lined with damp substrate on the cool or middle side. The humid hide specifically is what prevents most shedding problems in this species."
       }
     ]
   },
@@ -1789,6 +2293,34 @@
     "faqs": []
   },
   {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7",
+    "title": "Chronicles of Dex the Bearded Dragon: What the Glass Was For (Part 7)",
+    "seoTitle": null,
+    "excerpt": "When a window is left open a crack on a warm afternoon, Dex and Whiskey come closer to real contact than four years of glass-pressed friendship ever allowed, and Dex learns what the boundary between them was truly protecting all along.",
+    "date": "2026-07-16",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "safety-and-trust"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron7.jpg",
+    "imageAlt": "A bearded dragon watches through terrarium glass as an orange cat's paw presses against the screen lid from just inches away",
+    "emoji": null,
+    "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-first-flight-part-4.mdx",
     "slug": "chronicles-of-otis-the-bunny-first-flight-part-4",
     "title": "Chronicles of Otis the Bunny: First Flight (Part 4)",
@@ -1895,6 +2427,34 @@
     "imageAlt": "House rabbit sitting alert and regal at the edge of a garden, surveying his territory",
     "emoji": null,
     "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6",
+    "title": "Chronicles of Otis the Bunny: The Guest in the House (Part 6)",
+    "seoTitle": null,
+    "excerpt": "When Mike agrees to pet-sit a friend's guinea pig, Otis has to share his prized sunny corner with a chattier, far more anxious houseguest than himself. It takes a piece of romaine lettuce to settle what territorial pacing alone could not.",
+    "date": "2026-07-16",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "new-animal-friends"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron6.jpg",
+    "imageAlt": "A house rabbit lounging on a sunlit rug beside a wire guinea pig travel cage, both animals sharing the same patch of afternoon light",
+    "emoji": null,
+    "lastReviewed": "2026-07-16",
     "canonicalUrl": null,
     "faqs": []
   },

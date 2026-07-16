@@ -278,10 +278,12 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
       setup: [
         { item: "36x18x18 in enclosure", low: 120, high: 220 },
         { item: "Under-tank heater with thermostat", low: 40, high: 70 },
+        { item: "Substrate (paper towel or tile)", low: 10, high: 25 },
         { item: "3 hides (warm, cool, moist)", low: 20, high: 35 },
         { item: "Sphagnum moss for moist hide", low: 5, high: 10 },
         { item: "Digital thermometer (IR gun recommended)", low: 15, high: 30 },
         { item: "Shallow water dish", low: 8, high: 15 },
+        { item: "Feeding tongs", low: 5, high: 10 },
         { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
       ],
       annual: [

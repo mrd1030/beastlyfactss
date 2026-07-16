@@ -16,7 +16,7 @@ export const RELATED_ARTICLES = {
   'jumping-spider': ['invertebrate-molting-guide'],
   'praying-mantis': ['praying-mantis-ootheca-guide'],
   'rabbit': ['rabbit-gi-stasis-guide'],
-  'ball-python': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide'],
+  'ball-python': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide'],
   'corn-snake': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide'],
   'dog-universal': ['dog-bloat-gdv-guide'],
   'dog-large-breed': ['dog-bloat-gdv-guide'],
@@ -26,7 +26,7 @@ export const RELATED_ARTICLES = {
   'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
   'hamster': ['hamster-vs-guinea-pig-guide'],
   'guinea-pig': ['hamster-vs-guinea-pig-guide', 'guinea-pig-scurvy-vitamin-c-guide'],
-  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide'],
-  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide'],
+  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide', 'bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide'],
+  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide', 'leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide'],
   'crested-gecko': ['leopard-gecko-vs-crested-gecko-guide'],
 };

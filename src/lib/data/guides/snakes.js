@@ -16,9 +16,11 @@ export const snakeGuides = [
         { item: "Two snug hides", low: 15, high: 30 },
         { item: "Large soak-able water dish", low: 15, high: 25 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Infrared thermometer gun", low: 15, high: 30 },
         { item: "Coconut fiber or cypress mulch substrate", low: 20, high: 30 },
         { item: "Spray bottle", low: 5, high: 10 },
         { item: "Cork bark and branches", low: 20, high: 40 },
+        { item: "Feeding tongs", low: 5, high: 10 },
       ],
       annual: [
         { item: "Frozen/thawed rats or mice", low: 100, high: 180 },
