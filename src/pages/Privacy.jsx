@@ -28,7 +28,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Padlock">🔒</span>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: July 7, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: July 16, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -46,6 +46,7 @@ export default function Privacy() {
               <li><strong className="text-foreground">Contact Information</strong> - name and message content provided via contact forms.</li>
               <li><strong className="text-foreground">Usage & Analytics Data</strong> - we use Google Analytics to measure traffic. This includes IP addresses, browser information, and on-site interaction events.</li>
               <li><strong className="text-foreground">User-Provided Data</strong> - with your consent, we may securely transmit hashed, first-party data to Google Analytics to improve conversion measurement and audience insights.</li>
+              <li><strong className="text-foreground">Pinterest Advertising Data</strong> - we run advertising campaigns on Pinterest and use Pinterest's conversion tracking tools to measure ad performance. This may include browser information, device information, and information about how you interact with the Site after clicking or viewing a Pinterest ad.</li>
             </ul>
             <p>We do not collect, store, or sell payment information. All payments are handled securely by Stripe.</p>
           </Section>
@@ -55,11 +56,12 @@ export default function Privacy() {
             <ul className="list-disc pl-5 space-y-1">
               <li><strong className="text-foreground">Google Analytics</strong> - used to understand how visitors use the Site. You can opt-out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Analytics Opt-out Browser Add-on</a>.</li>
               <li><strong className="text-foreground">Google AdSense & Third-Party Advertising</strong> - third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and/or other sites on the Internet.</li>
+              <li><strong className="text-foreground">Pinterest Ads</strong> - we use the Pinterest tag to measure the performance of our Pinterest advertising campaigns and to build audiences for retargeting. Pinterest may set cookies on your browser to track conversions and ad interactions.</li>
               <li><strong className="text-foreground">Stripe</strong> - used for fraud prevention and secure payment processing on donation metrics.</li>
               <li><strong className="text-foreground">Affiliate Tracking</strong> - third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
               <li><strong className="text-foreground">Local Storage</strong> - used to save favorite facts, quiz results, and blog post like state locally in your browser (never sent to our servers).</li>
             </ul>
-            <p className="mt-3">You can choose to opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">www.aboutads.info</a>.</p>
+            <p className="mt-3">You can choose to opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Ads Settings</a>. You can manage Pinterest's use of your data for personalized ads in your <a href="https://www.pinterest.com/settings/privacy/" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Pinterest Privacy and Data Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">www.aboutads.info</a>.</p>
           </Section>
 
           <Section title="3. How We Use Your Information">
@@ -70,6 +72,7 @@ export default function Privacy() {
               <li>Improve site performance and analytics through enhanced measurement features.</li>
               <li>Process donations securely via Stripe.</li>
               <li>Serve personalized or non-personalized advertisements via Google AdSense.</li>
+              <li>Measure and improve the performance of our Pinterest advertising campaigns.</li>
               <li>Support site operations through affiliate marketing.</li>
             </ul>
             <p>We never sell, rent, or trade your personal information to third parties.</p>
@@ -83,6 +86,7 @@ export default function Privacy() {
             <p>BeastlyFacts.com uses third-party services, each governed by their own privacy policies:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li><strong className="text-foreground">Google Analytics & AdSense</strong> - <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
+              <li><strong className="text-foreground">Pinterest</strong> - <a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Stripe</strong> - <a href="https://stripe.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Beehiiv</strong> - <a href="https://www.beehiiv.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Policy</a></li>
               <li><strong className="text-foreground">Amazon</strong> - <a href="https://www.amazon.com/privacy" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Privacy Notice</a></li>
