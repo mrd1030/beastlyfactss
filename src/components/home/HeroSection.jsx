@@ -77,9 +77,9 @@ export default function HeroSection() {
             </div>
 
             <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4">
-              <span className="text-foreground">Curated animal facts, practical care advice,</span>
+              <span className="text-foreground">Curated animal facts</span>
               <br />
-              <span className="text-secondary">and playful quizzes</span>
+              <span className="text-secondary">and practical care advice</span>
               <br />
               <span className="text-foreground">for curious families and animal lovers.</span>
             </h1>
@@ -99,13 +99,13 @@ export default function HeroSection() {
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
               </Link>
-              <Link to="/quiz/personality/">
+              <Link to="/encyclopedia/">
                 <motion.button
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
                 >
-                  🎯 Play the Quiz
+                  📚 Browse the Encyclopedia
                 </motion.button>
               </Link>
             </div>
