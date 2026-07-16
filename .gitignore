@@ -40,3 +40,4 @@ dist-ssr
 # staged chronicle installments awaiting their scheduled release date
 content/_scheduled-short-story/
 public/assets/images/_scheduled/
+base44/.app.jsonc
