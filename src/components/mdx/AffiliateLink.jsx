@@ -15,13 +15,11 @@ export default function AffiliateLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer sponsored"
+      title={product || undefined}
       className={`group/aff relative inline-flex items-center gap-1 font-medium text-primary underline decoration-primary/30 underline-offset-2 hover:decoration-primary transition-colors ${className}`}
     >
       {children}
       <ShoppingCart className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" aria-hidden="true" />
-      {product && (
-        <span className="text-xs text-muted-foreground font-normal">({product})</span>
-      )}
       {matched?.image && (
         <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
           <img
