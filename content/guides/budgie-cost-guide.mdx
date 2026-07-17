@@ -29,7 +29,11 @@ status: "published"
 noIndex: false
 
 # === Affiliate & Monetization ===
-affiliate: false
+affiliate: true
+relatedProducts:
+  - "bird-cage-prevue-steel-flight-large"
+  - "bird-feeding-dishes-okllen-4pack"
+  - "bird-food-zupreem-fruitblend-parakeet-2lb"
 
 # === FAQs ===
 faqs:
@@ -45,6 +49,8 @@ faqs:
 
 # How Much Does a Budgie Really Cost?
 
+<AffiliateDisclosure />
+
 Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat care, which is the piece of the cost picture people most often miss. For the full care picture beyond budgeting, see our complete [Budgie care guide](/guides/budgie/).
 
 ## Upfront Setup: Roughly $175 to $475
@@ -53,8 +59,8 @@ Budgies are one of the more affordable pet birds to buy, but avian vet care is s
   headers={["Item", "Cost Range"]}
   rows={[
     ["The bird itself", "$20 - $80"],
-    ["Cage", "The single biggest line item"],
-    ["Perches, food and water dishes, toys", "Rounds out the setup"],
+    [<>Cage (<AffiliateLink href="https://amzn.to/4yJx5Fd" product="Prevue Steel Flight Cage">example pick</AffiliateLink>)</>, "The single biggest line item"],
+    [<>Perches, <AffiliateLink href="https://amzn.to/3Ref6FW" product="Feeding Dishes">food and water dishes</AffiliateLink>, toys</>, "Rounds out the setup"],
   ]}
 />
 
@@ -75,7 +81,7 @@ Budgies are prey animals that instinctively mask signs of illness, since looking
 <ComparisonTable
   headers={["Item", "Monthly Cost"]}
   rows={[
-    ["Food (pellet-forward diet + fresh vegetables)", "$5 - $15"],
+    [<><AffiliateLink href="https://amzn.to/4b0MGWt" product="ZuPreem FruitBlend Parakeet/Budgie Pellets">Food</AffiliateLink> (pellet-forward diet + fresh vegetables)</>, "$5 - $15"],
     ["Toy and perch replacement", "$10 - $30"],
     ["Annual exotic vet checkup (amortized)", "~$7"],
   ]}

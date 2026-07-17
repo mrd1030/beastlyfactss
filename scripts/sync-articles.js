@@ -107,6 +107,7 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       lastReviewed: fm.lastReviewed || null,
       canonicalUrl: fm.canonicalUrl || null,
       faqs: Array.isArray(fm.faqs) ? fm.faqs : [],
+      relatedProducts: Array.isArray(fm.relatedProducts) ? fm.relatedProducts : [],
     });
   }
 }

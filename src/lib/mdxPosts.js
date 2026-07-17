@@ -58,6 +58,7 @@ function toPost(meta) {
     lastReviewed: meta.lastReviewed,
     canonicalUrl: meta.canonicalUrl,
     faqs: meta.faqs,
+    relatedProducts: meta.relatedProducts || [],
   };
 }
 

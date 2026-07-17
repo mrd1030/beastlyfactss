@@ -25,6 +25,8 @@ import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
+import ProductCard from '@/components/shared/ProductCard';
+import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
 
 const POSTS_PER_PAGE = 10;
 
@@ -458,6 +460,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
       ? `https://beastlyfacts.com${post.image}`
       : 'https://beastlyfacts.com/assets/hero-1200.jpg';
   const ogImageDims = (!ogImageSource && post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
+  const relatedProducts = (post.relatedProducts || [])
+    .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
+    .filter(Boolean);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -608,6 +613,22 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
                     </div>
                   ))}
                 </div>
+              </div>
+            )}
+
+            {relatedProducts.length > 0 && (
+              <div className="mt-8">
+                <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                  🛒 Recommended Gear
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relatedProducts.map((product) => (
+                    <ProductCard key={product.slug} product={product} />
+                  ))}
+                </div>
+                <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3">
+                  As an Amazon Associate, we earn from qualifying purchases through the links above - at no extra cost to you.
+                </p>
               </div>
             )}
 

@@ -24,7 +24,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-19",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/ball-python-cost-guide.mdx",
@@ -66,6 +67,13 @@
         "q": "What does routine vet care cost for a ball python?",
         "a": "Budget $50 to $150 for an annual wellness exam, roughly $100 to $200 a year even in a healthy year. Sick or emergency visits run $100 to $500 or more, with imaging or surgery pushing that higher."
       }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "cypress-mulch-substrate",
+      "large-soakable-water-dish"
     ]
   },
   {
@@ -114,6 +122,10 @@
         "q": "Should I feed my ball python inside or outside its enclosure?",
         "a": "Inside is generally better. Moving a ball python to a separate feeding container was once common advice to avoid substrate ingestion, but it's now understood to add unnecessary stress and is linked to higher rates of food refusal in an already food-shy species. As long as loose substrate isn't a choking hazard, feeding in place is the better practice."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "cork-bark-round-hide"
     ]
   },
   {
@@ -156,7 +168,8 @@
         "q": "Is ball python biting usually aggression?",
         "a": "Rarely. It's typically a feeding response, the snake smells food on your hands, or a startled defensive reaction, not a temperament issue. Bites are minor, generally just a small skin break, treated with soap and water. Use tongs when feeding and avoid handling right after handling rodents."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/ball-python-health-issues-guide.mdx",
@@ -198,6 +211,12 @@
         "q": "How do thermal burns happen in ball python enclosures and how do I prevent them?",
         "a": "They're caused by heat sources running without a thermostat, and they're entirely preventable. Every heat element in a ball python enclosure needs to be thermostat-controlled, no exceptions, and hot rocks should be skipped entirely."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "under-tank-heat-mat-thermostat-kit",
+      "fine-mist-spray-bottle",
+      "sphagnum-moss"
     ]
   },
   {
@@ -240,6 +259,13 @@
         "q": "Why do ball pythons need so much clutter and cover?",
         "a": "They're naturally shy, and an enclosure that feels too open and exposed causes chronic stress, which shows up as feeding refusal and general skittishness. Plants, branches, and leaf litter aren't just decoration for this species, they're part of what makes the snake feel secure enough to behave normally."
       }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "cypress-mulch-substrate",
+      "sphagnum-moss"
     ]
   },
   {
@@ -288,6 +314,10 @@
         "q": "Which is calmer to handle, a ball python or a corn snake?",
         "a": "Ball pythons, generally. Their entire defense strategy is to curl into a tight ball rather than bite or flee, which is exactly how they got their name. Corn snakes are also docile but more active and wriggly on the hand, and hatchlings will sometimes musk (release a smelly defensive secretion) when first handled."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "fine-mist-spray-bottle"
     ]
   },
   {
@@ -330,6 +360,12 @@
         "q": "How much should I set aside for a vet emergency?",
         "a": "A few hundred dollars is a reasonable emergency fund. Impaction surgery runs $800 to $2,500 and metabolic bone disease treatment runs $200 to $500 or more, both of which are far more likely if the UVB and thermostat budget gets cut to save money upfront."
       }
+    ],
+    "relatedProducts": [
+      "arcadia-t5-uvb-36in-14pct-dragon",
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "infrared-temp-gun"
     ]
   },
   {
@@ -372,7 +408,8 @@
         "q": "What does it mean if my bearded dragon's beard turns black?",
         "a": "A darkening or black beard is a stress or agitation signal, along with body flattening, puffing up, open-mouth gaping, and arm-waving. None of these are dangerous on their own, but they mean the handling session is over."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/bearded-dragon-health-issues-guide.mdx",
@@ -414,6 +451,10 @@
         "q": "Is there a cure for atadenovirus (ADV) in bearded dragons?",
         "a": "No. ADV causes fatal hepatitis and GI disease along with a distinctive neurological symptom called stargazing, where the dragon holds its head tilted up and back. There's no cure, only supportive care, which is why testing new dragons before introducing them to others matters."
       }
+    ],
+    "relatedProducts": [
+      "arcadia-t5-uvb-36in-14pct-dragon",
+      "digital-thermometer-hygrometer-combo"
     ]
   },
   {
@@ -456,6 +497,13 @@
         "q": "What substrate is safest for a bearded dragon?",
         "a": "Paper towel, newspaper, reptile carpet, or tile, especially for anyone new to keeping dragons. Avoid loose sand, including calcium sand, along with wood chips and gravel, all of which carry a real impaction risk if ingested."
       }
+    ],
+    "relatedProducts": [
+      "arcadia-t5-uvb-36in-14pct-dragon",
+      "infrared-temp-gun",
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood",
+      "shallow-water-dish"
     ]
   },
   {
@@ -504,6 +552,12 @@
         "q": "Can a bearded dragon and a leopard gecko be housed together?",
         "a": "No. Different climate needs, different UVB requirements, different diets, and a size mismatch that puts the smaller leopard gecko at real risk. Reptiles of different species should essentially never share an enclosure regardless of apparent size compatibility."
       }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-dragon-14",
+      "uvb-arcadia-forest-6",
+      "pvc-enclosure-4x2x2",
+      "dubia-roaches-bag"
     ]
   },
   {
@@ -552,6 +606,12 @@
         "q": "Which fish needs stronger filtration, a betta or a goldfish?",
         "a": "Goldfish, by a wide margin. They're notoriously heavy waste producers for their size and need considerably stronger filtration and more frequent water changes than a betta in a similarly sized tank."
       }
+    ],
+    "relatedProducts": [
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "tank-20-gallon-long",
+      "canister-filter"
     ]
   },
   {
@@ -600,6 +660,11 @@
         "q": "How often should I actually change the water?",
         "a": "For most heated, filtered betta tanks, a 25 to 30 percent water change weekly is the standard baseline. Smaller tanks with less water volume to dilute waste may need more frequent partial changes to keep nitrate under control between full tests."
       }
+    ],
+    "relatedProducts": [
+      "api-freshwater-master-test-kit",
+      "api-tap-water-conditioner",
+      "submersible-aquarium-heater"
     ]
   },
   {
@@ -648,6 +713,13 @@
         "q": "What happens if my cleanup crew dies off?",
         "a": "Waste will start accumulating faster than it's processed, and you'll likely notice odor or mold developing. This usually points to a substrate that's too wet, too dry, or lacking enough organic material to sustain the isopods and springtails - check moisture levels first, then consider a fresh starter culture if the population doesn't recover."
       }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-desert-12",
+      "infrared-temp-gun",
+      "bioactive-substrate-mix",
+      "sphagnum-moss",
+      "fine-mist-spray-bottle"
     ]
   },
   {
@@ -695,7 +767,8 @@
         "q": "Can diet or hormones affect cere color in adult budgies?",
         "a": "Yes. Hormonal state is the main driver of cere changes in females specifically, and overall health and hormone balance can influence cere texture and color intensity in both sexes over time, which is part of why sudden or unusual changes are worth paying attention to."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/budgie-cost-guide.mdx",
@@ -737,6 +810,11 @@
         "q": "What are the ongoing monthly costs for a budgie?",
         "a": "Food runs $5 to $15 a month for a pellet-forward diet with fresh vegetables. Toy and perch replacement runs $10 to $30 a month, chewing and shredding toys is normal healthy behavior, not waste. Add an annual exotic vet checkup of $80 or more."
       }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-steel-flight-large",
+      "bird-feeding-dishes-okllen-4pack",
+      "bird-food-zupreem-fruitblend-parakeet-2lb"
     ]
   },
   {
@@ -779,6 +857,9 @@
         "q": "Why do hens sometimes bite harder than males?",
         "a": "Hens can be more territorial than males and tend to bite harder, especially during hormonal periods, this is normal and not a sign something's wrong. Never punish biting either way, punishment teaches fear rather than good behavior and undoes trust that can take a long time to rebuild."
       }
+    ],
+    "relatedProducts": [
+      "bird-treat-kaytee-spray-millet-7oz"
     ]
   },
   {
@@ -821,6 +902,10 @@
         "q": "What are the signs a budgie needs to see a vet the same day?",
         "a": "Fluffed-up feathers combined with sleeping during the day, tail-bobbing with each breath, open-mouth breathing, or sitting on the floor of the cage instead of perching. Because budgies mask illness so well, any of these should be seen within 24 hours, not after a few days of watching and waiting."
       }
+    ],
+    "relatedProducts": [
+      "bird-food-zupreem-fruitblend-parakeet-2lb",
+      "bird-cuttlebone-penn-plax-2ct"
     ]
   },
   {
@@ -863,6 +948,12 @@
         "q": "Can one budgie live alone happily?",
         "a": "Not well. Budgies are highly social flock birds by nature, and a single budgie needs substantial daily interaction from you to stay well-adjusted, or better, a companion budgie to socialize with. This is close to as important as diet or cage size for long-term wellbeing."
       }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-steel-flight-large",
+      "bird-perch-natural-wood-8pc-set",
+      "bird-feeding-dishes-okllen-4pack",
+      "bird-cuttlebone-penn-plax-2ct"
     ]
   },
   {
@@ -911,7 +1002,8 @@
         "q": "Which bird needs a bigger cage, budgie or cockatiel?",
         "a": "Cockatiels do. They're roughly twice the length of a budgie and need proportionally larger cage dimensions and bar spacing. A cage sized for a budgie is too small for a cockatiel."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -958,6 +1050,9 @@
         "q": "When should frequent hairballs prompt a vet visit?",
         "a": "More than once a week, any accompanying weight loss, appetite change, or diarrhea, or vomiting that produces no hairball at all - these combinations point toward inflammatory bowel disease, food sensitivities, or hyperthyroidism rather than normal grooming, and are worth bloodwork and an exam rather than another bag of hairball treats."
       }
+    ],
+    "relatedProducts": [
+      "deshedding-brush"
     ]
   },
   {
@@ -1006,6 +1101,10 @@
         "q": "Is tap water safe for misting?",
         "a": "Only after dechlorination. Chameleons absorb far more through drinking droplets directly than most reptiles do through skin contact, so use the same dechlorinated or reverse-osmosis water for misting and drippers that you'd use for any sensitive aquatic pet."
       }
+    ],
+    "relatedProducts": [
+      "automatic-misting-system-fogger",
+      "fine-mist-spray-bottle"
     ]
   },
   {
@@ -1054,7 +1153,8 @@
         "q": "How much daily attention actually prevents these problems?",
         "a": "There's no universal number, but multiple hours of direct daily interaction, spread across the day rather than one long session, is the consistent theme in cases where cockatoos are well-adjusted. Households that can't offer this consistently tend to see screaming and plucking develop regardless of how well the cage and diet are set up."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/corn-snake-cost-guide.mdx",
@@ -1096,6 +1196,11 @@
         "q": "What's the total cost over a corn snake's lifetime?",
         "a": "Corn snakes typically live 15 to 20 years, with the oldest verified individual reaching 32. Over a decade, total cost (setup plus all ongoing expenses) commonly lands between $800 and $2,000, making them one of the more affordable long-term reptile pets relative to lifespan."
       }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "under-tank-heat-mat-thermostat-kit",
+      "uvb-arcadia-forest-6"
     ]
   },
   {
@@ -1138,7 +1243,8 @@
         "q": "Is it normal for a corn snake to bite or musk when handled?",
         "a": "Bites are rare and minor, typically a startled or defensive reaction rather than genuine aggression, and easily treated with soap and water. Musking, a foul-smelling defensive secretion, is a stress signal, if you see it along with tight coiling or striking, it's time to end the session calmly."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/corn-snake-health-issues-guide.mdx",
@@ -1180,6 +1286,12 @@
         "q": "What neurological signs in a corn snake need immediate attention?",
         "a": "Star-gazing (holding the head tilted up and back) or corkscrewing movements are rare but serious, and warrant an immediate vet visit rather than waiting to see if they resolve."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "aspen-shavings-substrate",
+      "sphagnum-moss",
+      "shallow-water-dish"
     ]
   },
   {
@@ -1222,6 +1334,13 @@
         "q": "Does a corn snake need UVB?",
         "a": "Not required, corn snakes have been kept successfully for decades without it, but it's increasingly viewed as a beneficial addition for long-term health. If you add it, use a low-output T5 bulb targeting a UVI around 2.0 to 3.0."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "sphagnum-moss",
+      "aspen-shavings-substrate",
+      "large-soakable-water-dish"
     ]
   },
   {
@@ -1264,7 +1383,8 @@
         "q": "How long do crested geckos live, and how does that affect budgeting?",
         "a": "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s. This isn't a short-term pet, so the setup you buy now should be one you're comfortable maintaining for decades, not just the first year."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/crested-gecko-handling-guide.mdx",
@@ -1306,7 +1426,8 @@
         "q": "How often can a crested gecko be handled?",
         "a": "Start with sessions of just 1 to 2 minutes every other day. Build up gradually to around 15 minutes once your gecko is tame and comfortable, and keep total daily handling under about 20 minutes even then."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/crested-gecko-health-issues-guide.mdx",
@@ -1348,6 +1469,12 @@
         "q": "How often should I weigh my crested gecko?",
         "a": "Weekly. A gram scale is one of the most useful tools you can own for this species, weight change is often the earliest sign that something's off, well before other symptoms appear."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "uvb-arcadia-forest-6",
+      "fine-mist-spray-bottle",
+      "sphagnum-moss"
     ]
   },
   {
@@ -1396,6 +1523,13 @@
         "q": "Is a hygrometer really necessary for a small enclosure?",
         "a": "Yes. Small enclosures can swing between too dry and too saturated faster than larger ones, and it's genuinely difficult to judge humidity by eye. A digital hygrometer is inexpensive relative to how much it protects against shedding and respiratory problems."
       }
+    ],
+    "relatedProducts": [
+      "fine-mist-spray-bottle",
+      "live-terrarium-plants",
+      "artificial-terrarium-plants",
+      "bioactive-substrate-mix",
+      "digital-thermometer-hygrometer-combo"
     ]
   },
   {
@@ -1438,6 +1572,13 @@
         "q": "Does a crested gecko need UVB?",
         "a": "Not strictly required, since a complete diet powder already supplies vitamin D3, but low-level UVB is still a solid idea for overall health. If you add it, aim low, a 24-inch low-output T5 HO bulb around 5.0, targeting a UVI of 1.0 to 2.0."
       }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "digital-thermometer-hygrometer-combo",
+      "fine-mist-spray-bottle",
+      "shallow-water-dish",
+      "bioactive-substrate-mix"
     ]
   },
   {
@@ -1485,6 +1626,9 @@
         "q": "Is preventive gastropexy surgery worth it for high-risk breeds?",
         "a": "For many high-risk breeds, yes - vets often recommend it, sometimes performed at the same time as a spay or neuter to avoid a second anesthesia event. A gastropexy doesn't stop the stomach from filling with gas, but it tacks the stomach to the abdominal wall so it can't twist, which is the part that actually kills. That single change dramatically lowers the odds of a fatal outcome."
       }
+    ],
+    "relatedProducts": [
+      "licki-mat-dogs"
     ]
   },
   {
@@ -1533,7 +1677,8 @@
         "q": "Is surgery always necessary, or can it be managed with medication?",
         "a": "Not always. Surgical removal of the affected adrenal gland can be curative when only one gland is involved and the ferret is a good surgical candidate, but implants like deslorelin are commonly used as medical management, especially for ferrets where surgery carries more risk or both glands are affected."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/goldfish-tank-size-bowl-myth.mdx",
@@ -1581,6 +1726,11 @@
         "q": "What's the real minimum tank size for two goldfish?",
         "a": "For two fancy goldfish, aim for at least 30 gallons (the 20-gallon single-fish minimum plus 10 gallons for the second fish), with strong filtration rated above that volume. Two common or comet goldfish need a pond or a tank well over 60 gallons given their adult size."
       }
+    ],
+    "relatedProducts": [
+      "canister-filter",
+      "tank-20-gallon-long",
+      "api-tap-water-conditioner"
     ]
   },
   {
@@ -1628,6 +1778,10 @@
         "q": "Can a guinea pig get too much vitamin C?",
         "a": "Excess vitamin C is water-soluble and mostly gets excreted rather than stored, so there's a wide safety margin with normal fresh-food feeding. The goal is consistent daily intake from real food, not maximizing a single dose - there's no benefit to overloading on vitamin C, and consistently very high supplemental doses have been loosely associated with kidney stone risk in some cases."
       }
+    ],
+    "relatedProducts": [
+      "guinea-pig-vitamin-c-supplement",
+      "timothy-hay-small-pets"
     ]
   },
   {
@@ -1676,6 +1830,9 @@
         "q": "Is a guinea pig or a hamster more social with its owner?",
         "a": "Guinea pigs, generally. They're highly vocal, food-motivated, and often visibly excited (\"popcorning\") when their owner approaches. Hamsters can become comfortable with handling but are naturally solitary and less inclined to seek out interaction the way a guinea pig does."
       }
+    ],
+    "relatedProducts": [
+      "cc-cage-guinea-pig"
     ]
   },
   {
@@ -1723,6 +1880,10 @@
         "q": "How long after a molt can I resume handling?",
         "a": "Wait until the new exoskeleton has visibly hardened, which is typically 7 to 14 days for a tarantula and often shorter for smaller species like jumping spiders. A freshly molted invertebrate is soft, fragile, and easily injured by even gentle handling."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "dubia-roaches-bag"
     ]
   },
   {
@@ -1765,6 +1926,11 @@
         "q": "What should I budget for vet care?",
         "a": "An annual wellness exam runs $85 to $105. That's the routine cost, what catches people off guard is that sick or emergency visits run $100 to $800 or more, and diagnostics or surgery push it higher, so a small emergency fund is worth having."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "uvb-arcadia-desert-12",
+      "dubia-roach-colony-starter-kit"
     ]
   },
   {
@@ -1807,7 +1973,8 @@
         "q": "What do I do if my gecko's tail drops?",
         "a": "Move it to clean paper towel substrate immediately, keep the enclosure especially clean while it heals, avoid handling for 1 to 2 weeks, and watch the stump for swelling, discharge, discoloration, or a foul smell, any of which mean it's time for a vet. The tail regrows in 4 to 8 weeks but comes back shorter, thicker, and visually different."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/leopard-gecko-health-issues-guide.mdx",
@@ -1849,6 +2016,12 @@
         "q": "What causes shedding problems in leopard geckos?",
         "a": "Low humidity or a vitamin A deficiency. Retained shed builds up around the eyes, toes, and tail tip, and left unaddressed it can constrict circulation badly enough to cause tissue death and lost digits. A dedicated humid hide prevents most of this before it starts."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "uvb-arcadia-desert-12",
+      "digital-thermometer-hygrometer-combo",
+      "sphagnum-moss"
     ]
   },
   {
@@ -1891,6 +2064,12 @@
         "q": "How many hides does a leopard gecko actually need?",
         "a": "Three, not one: a warm dry hide, a cool dry hide, and a humid hide lined with damp substrate on the cool or middle side. The humid hide specifically is what prevents most shedding problems in this species."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "uvb-arcadia-desert-12",
+      "shallow-water-dish",
+      "cork-bark-round-hide"
     ]
   },
   {
@@ -1939,6 +2118,11 @@
         "q": "What's the biggest temperature mistake new keepers make?",
         "a": "Using a heat source without a thermostat. Under-tank heaters and ceramic heat emitters can reach dangerous temperatures without one, and this is one of the most common causes of thermal burns in captive leopard geckos."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "infrared-temp-gun",
+      "zoo-med-digital-thermometer-3pack"
     ]
   },
   {
@@ -1987,6 +2171,12 @@
         "q": "Which enclosure is easier to set up, leopard or crested gecko?",
         "a": "Neither is objectively easier, but they're shaped completely differently. Leopard geckos need a wide, ground-level floor space with minimal climbing decor. Crested geckos need a tall, vertically oriented enclosure with branches and plants to climb, since they live in the trees rather than on the ground."
       }
+    ],
+    "relatedProducts": [
+      "under-tank-heat-mat-thermostat-kit",
+      "dubia-roach-colony-starter-kit",
+      "glass-terrarium-18x18x24",
+      "climbing-branch-mopani-wood"
     ]
   },
   {
@@ -2035,6 +2225,10 @@
         "q": "Can an ootheca dry out and fail to hatch?",
         "a": "Yes, insufficient humidity is a common cause of failed hatches. Light misting appropriate to your species' normal humidity range, without soaking the ootheca directly, helps prevent this while it incubates."
       }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "fine-mist-spray-bottle"
     ]
   },
   {
@@ -2077,6 +2271,13 @@
         "q": "How much should I set aside for a rabbit vet emergency?",
         "a": "At least $500 to $1,000, kept separate from your routine budget. Rabbits need an exotic or rabbit-savvy vet, hide illness well, and a single serious issue like a GI stasis workup alone can exceed $1,500."
       }
+    ],
+    "relatedProducts": [
+      "litter-box",
+      "food-water-bowls",
+      "nail-clippers",
+      "timothy-hay-small-pets",
+      "small-pet-paper-bedding"
     ]
   },
   {
@@ -2124,6 +2325,9 @@
         "q": "How can I tell if my rabbit's poop output is abnormal?",
         "a": "Know your rabbit's normal output as a baseline. Watch for noticeably fewer droppings than usual, droppings that are smaller or oddly shaped, a string of droppings connected by fur or debris, or no droppings at all for several hours - any of these warrants immediate attention."
       }
+    ],
+    "relatedProducts": [
+      "timothy-hay-small-pets"
     ]
   },
   {
@@ -2166,7 +2370,8 @@
         "q": "Why won't my rabbit relax when I pick it up, even though it trusts me?",
         "a": "That's normal. Most rabbits are calmest with all four feet on the ground, and many never come to love being picked up even once they fully trust their owner. Build trust through floor-level interaction instead, sitting at the rabbit's level and letting it choose to approach."
       }
-    ]
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/rabbit-health-issues-guide.mdx",
@@ -2208,6 +2413,10 @@
         "q": "How common is uterine cancer in unspayed female rabbits?",
         "a": "Up to 80% of unspayed does aged 5 and older develop uterine cancer, with risk beginning to climb from around age two. This is one of the strongest arguments for spaying a female rabbit early, well before this becomes a concern."
       }
+    ],
+    "relatedProducts": [
+      "timothy-hay-small-pets",
+      "small-pet-paper-bedding"
     ]
   },
   {
@@ -2250,6 +2459,11 @@
         "q": "What should make up most of a rabbit's diet?",
         "a": "Hay, about 80 to 85% of the diet, unlimited access, not a side item. Fresh leafy greens come next, and pellets are the smallest piece, about 1/4 cup per 5 pounds of body weight. Fruit and carrots are treats only, not a diet staple."
       }
+    ],
+    "relatedProducts": [
+      "litter-box",
+      "small-pet-paper-bedding",
+      "timothy-hay-small-pets"
     ]
   },
   {
@@ -2298,6 +2512,11 @@
         "q": "How long should a soak be for helping with a stuck shed?",
         "a": "15 to 20 minutes in shallow, warm water is typical, always supervised. This softens retained shed enough to gently assist its removal without stressing or injuring the animal."
       }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood",
+      "shallow-water-dish"
     ]
   },
   {
@@ -2346,6 +2565,10 @@
         "q": "How long should I fast my snake before starting brumation?",
         "a": "Most keepers stop feeding 1 to 2 weeks before cooling begins, giving the snake enough time to fully digest its last meal. Cooling down with undigested food in the gut risks it rotting internally, since digestion slows dramatically along with everything else."
       }
+    ],
+    "relatedProducts": [
+      "shallow-water-dish",
+      "digital-thermometer-hygrometer-combo"
     ]
   },
   {
@@ -2393,6 +2616,11 @@
         "q": "Is a compact UVB bulb as good as a linear T5 HO?",
         "a": "Compact coil and dome UVB bulbs generally produce a less even gradient and can be associated with eye and skin irritation in some cases. Linear T5 HO fixtures from reputable brands are the current gold standard recommended by most reptile lighting researchers."
       }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-forest-6",
+      "uvb-arcadia-desert-12",
+      "uvb-arcadia-dragon-14"
     ]
   },
   {
@@ -2420,7 +2648,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-04",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-bearded-dragon-facts.mdx",
@@ -2447,7 +2676,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-19",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-betta-fish-facts.mdx",
@@ -2474,7 +2704,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-cockatoo-facts.mdx",
@@ -2501,7 +2732,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-hermit-crab-facts.mdx",
@@ -2528,7 +2760,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-leopard-gecko-facts.mdx",
@@ -2555,7 +2788,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-praying-mantis-facts.mdx",
@@ -2582,7 +2816,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-04",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/10-surprising-tarantula-facts.mdx",
@@ -2609,7 +2844,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-axolotl.mdx",
@@ -2636,7 +2872,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-boa-constrictor.mdx",
@@ -2663,7 +2900,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-05",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-cuttlefish.mdx",
@@ -2690,7 +2928,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-golden-retriever.mdx",
@@ -2717,7 +2956,11 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": [
+      "deshedding-brush",
+      "durable-chew-toys"
+    ]
   },
   {
     "path": "/content/fun-facts/fun-facts-humpback-whale.mdx",
@@ -2744,7 +2987,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-octopus.mdx",
@@ -2771,7 +3015,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/fun-facts/fun-facts-rabbit.mdx",
@@ -2798,7 +3043,11 @@
     "emoji": null,
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": [
+      "timothy-hay-small-pets",
+      "litter-box"
+    ]
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6.mdx",
@@ -2826,7 +3075,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-14",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2.mdx",
@@ -2853,7 +3103,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-27",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5.mdx",
@@ -2881,7 +3132,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-12",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-gl.mdx",
@@ -2909,7 +3161,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-07",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-t.mdx",
@@ -2934,7 +3187,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-27",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4.mdx",
@@ -2962,7 +3216,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-10",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7.mdx",
@@ -2990,7 +3245,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-16",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-first-flight-part-4.mdx",
@@ -3018,7 +3274,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-12",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3.mdx",
@@ -3046,7 +3303,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-10",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him.mdx",
@@ -3073,7 +3331,8 @@
     "emoji": null,
     "lastReviewed": "2026-06-30",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-garden-the-squirrel.mdx",
@@ -3100,7 +3359,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-08",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6.mdx",
@@ -3128,7 +3388,8 @@
     "emoji": null,
     "lastReviewed": "2026-07-16",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5.mdx",
@@ -3156,6 +3417,7 @@
     "emoji": null,
     "lastReviewed": "2026-07-14",
     "canonicalUrl": null,
-    "faqs": []
+    "faqs": [],
+    "relatedProducts": []
   }
 ]
