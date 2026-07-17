@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# Cloudflare-injected email obfuscation endpoint - 404s when crawled directly
+Disallow: /cdn-cgi/
 
 Sitemap: https://beastlyfacts.com/sitemap.xml

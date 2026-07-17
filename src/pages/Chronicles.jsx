@@ -66,8 +66,11 @@ export default function Chronicles() {
   const story = isReader ? parts[part - 1] || null : null;
 
   const canonicalUrl = `https://beastlyfacts.com${chroniclesPath(series.id, part)}`;
+  // Reader titles drop the "Chronicles of <character>:" prefix (it's restated
+  // in the suffix) - the full form pushed several titles past 100 chars,
+  // flagged by the Ahrefs 2026-07-16 audit.
   const pageTitle = isReader && story
-    ? `${story.seoTitle || story.title} | Beastly Facts`
+    ? `${episodeTitle(story.seoTitle || story.title)} | Chronicles of ${series.shortName}`
     : `Chronicles of ${series.character} | Beastly Facts`;
   const pageDescription = truncateDescription(
     (isReader && (story?.seoDescription || story?.excerpt)) ||

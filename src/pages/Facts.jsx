@@ -130,12 +130,6 @@ export default function Facts() {
   const totalPages = Math.ceil(displayFacts.length / PAGE_SIZE); 
   const paginated = displayFacts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE); 
 
-  const handleCategoryChange = (cat) => {
-    setRandomized(false);
-    setRandomOrder([]);
-    navigate(slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`);
-  };
-
   const handleSearchChange = (e) => {
     setSearch(e.target.value); 
     setPage(1); 
@@ -323,20 +317,23 @@ export default function Facts() {
             </button>
           </div>
 
-          {/* Category chips */}
+          {/* Category chips - real links (not buttons) so the category pages
+              are crawlable from /facts/ and from each other; the Ahrefs
+              2026-07-16 audit flagged them as having a single inlink. */}
           <div className="flex flex-wrap gap-2 mt-4">
             {allCategories.map(cat => (
-              <button
-                key={cat} 
-                onClick={() => handleCategoryChange(cat)}
+              <Link
+                key={cat}
+                to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
+                onClick={() => { setRandomized(false); setRandomOrder([]); }}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                   activeCategory === cat
-                    ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20' 
-                    : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30' 
+                    ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
+                    : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30'
                 }`}
               >
-                {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`} 
-              </button>
+                {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
+              </Link>
             ))}
           </div>
         </div>
