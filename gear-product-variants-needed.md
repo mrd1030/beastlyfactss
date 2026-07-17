@@ -152,3 +152,46 @@ has somewhere in the cost builder to attach a link once sourced:
   recommended)" line text didn't exactly match `infrared-temp-gun`'s covers list (one
   word off from "...ideal/recommended"), so it was silently showing no link at all.
   Added the exact phrase as an additional covers string to fix it.
+
+---
+
+## Update (2026-07-17): corn snake, budgie, rabbit, crested gecko batch + a
+## user-supplied affiliate search list (`affiliate-product-search-list.md`, now
+## saved at repo root - real product/brand names for 5 reptile species plus
+## rabbit and budgie, worth pulling up directly when actually sourcing links)
+
+**Specific product names now confirmed for two gaps already tracked above:**
+- The proportional/dimming thermostat gap (Bearded Dragon's and now also **Crested
+  Gecko's** new "Thermostat" cost-builder line, $30-35 for CG, still unlinked) has a
+  named product per the search list: **Herpstat 1** (premium) or **Vivarium
+  Electronics VE-200** (single-zone). Neither is the same SKU as the already-linked
+  `under-tank-heat-mat-thermostat-kit`, that one is an on/off controller sized for a
+  heat mat; a halogen basking bulb needs dimming/proportional control or it flickers.
+- The ceramic heat emitter gap (Bearded Dragon/Leopard Gecko/Ball Python, from
+  yesterday's addendum) has named products too: **Arcadia Deep Heat Projector**
+  (lightless heat, the community favorite per the search list) or **Zoo Med
+  ReptiCare** / **Exo Terra Heat Wave** CHEs as the more common starter-kit versions.
+
+**New gaps from this batch:**
+- [ ] **Cuttlebone or mineral block - Budgie.** New cost-builder line just added
+  ($5-12, `birds.js`), zero matches anywhere in `affiliateProducts.js`. Search list
+  suggests Prevue 5" cuttlebone or Penn-Plax E-Cuttlebone.
+- [ ] **Rabbit-appropriate carrier.** Not the same product as the "Carrier" already
+  tracked as shareable further up this file (that one's sized for a cat). Search list
+  suggests Sleepypod Mobile (crash-tested) for rabbits specifically.
+- [ ] **Hay feeder - Rabbit.** Mentioned in both `rabbit-cost-guide.mdx` and the
+  source research as part of upfront setup, priced vaguely ("the rest of your
+  budget") rather than with a specific number, so lower-confidence than the other
+  gaps here, but genuinely unlinked.
+
+**Confirmed already covered, no action needed:** budgie's 18x18x24 in cage already
+matches `bird-flight-cage-large`'s covers list exactly; rabbit's exercise pen already
+matches the same `cc-cage-guinea-pig` product used for guinea pigs ("Exercise pen or
+C&C condo" is in its covers list); UVB, substrate, and hide/cork-bark needs for both
+new reptile species (crested gecko, corn snake) map cleanly onto existing Arcadia/Zoo
+Med products already linked, no new SKUs needed there.
+
+**Not pursued, out of scope for now:** Zen Habitats High Humidity Panels
+(crested-gecko-specific accessory, narrow use case) and a HEPA air purifier (budgie
+environmental accessory, optional/nice-to-have) - both mentioned in the search list
+but low priority relative to the items above.

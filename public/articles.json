@@ -129,6 +129,38 @@
       "category": "Birds"
     },
     {
+      "slug": "budgie-cost-guide",
+      "title": "Budgie Cost: Full Price Breakdown",
+      "excerpt": "Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat care, which is the piece people most often miss.",
+      "date": "2026-07-17",
+      "image": "/assets/images/budgie-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "budgie-handling-guide",
+      "title": "How to Tame and Handle a Budgie",
+      "excerpt": "How you approach handling a budgie depends a lot on where it came from. A hand-raised bird may step up on day one; an untamed one needs a slower process that rewards patience.",
+      "date": "2026-07-17",
+      "image": "/assets/images/budgie-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "budgie-health-issues-guide",
+      "title": "Budgie Health Issues: Signs & Causes",
+      "excerpt": "Birds are prey animals that hide illness as a survival instinct. By the time a budgie looks visibly sick, it's often further along than a mammal would be at the same stage.",
+      "date": "2026-07-17",
+      "image": "/assets/images/budgie-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "budgie-tank-setup-guide",
+      "title": "Budgie Cage Setup Guide",
+      "excerpt": "Budgies are small, but their housing needs get underestimated more than almost any other part of their care. A few specific details matter more than overall size alone.",
+      "date": "2026-07-17",
+      "image": "/assets/images/budgie-tank-setup.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "budgie-vs-cockatiel-guide",
       "title": "Budgie vs. Cockatiel: Beginner Bird Guide",
       "excerpt": "Budgie or cockatiel? The real differences in noise, lifespan, talking ability, and how affectionate each one actually is - not just which one is smaller at the pet store.",
@@ -161,11 +193,75 @@
       "category": "Birds"
     },
     {
+      "slug": "corn-snake-cost-guide",
+      "title": "Corn Snake Cost: Full Price Breakdown",
+      "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
+      "date": "2026-07-17",
+      "image": "/assets/images/corn-snake-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "corn-snake-handling-guide",
+      "title": "How to Handle a Corn Snake Correctly",
+      "excerpt": "Corn snakes are docile and hardy as adults, but juveniles can be fast, wiggly, and genuinely defensive before they settle into the calmer temperament the species is known for.",
+      "date": "2026-07-17",
+      "image": "/assets/images/corn-snake-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "corn-snake-health-issues-guide",
+      "title": "Corn Snake Health Issues: Signs & Causes",
+      "excerpt": "Corn snakes are one of the hardier pet snakes, and nearly every health problem they develop traces back to husbandry rather than bad luck.",
+      "date": "2026-07-17",
+      "image": "/assets/images/corn-snake-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "corn-snake-tank-setup-guide",
+      "title": "Corn Snake Tank Setup Guide",
+      "excerpt": "Corn snakes are a genuinely forgiving species to set up correctly, with one non-negotiable exception: whatever heat source you choose, it needs a thermostat.",
+      "date": "2026-07-17",
+      "image": "/assets/images/corn-snake-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "crested-gecko-cost-guide",
+      "title": "Crested Gecko Cost: Full Price Breakdown",
+      "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
+      "date": "2026-07-17",
+      "image": "/assets/images/crested-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "crested-gecko-handling-guide",
+      "title": "How to Handle a Crested Gecko Correctly",
+      "excerpt": "Crested geckos are gentle and easy to handle once settled, but unlike leopard geckos, a dropped tail never grows back, which changes how carefully you should handle one.",
+      "date": "2026-07-17",
+      "image": "/assets/images/crested-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "crested-gecko-health-issues-guide",
+      "title": "Crested Gecko Health Issues: Signs & Causes",
+      "excerpt": "Nearly every crested gecko health problem traces back to calcium, humidity, and substrate choices. Get those right and most of this list never shows up.",
+      "date": "2026-07-17",
+      "image": "/assets/images/crested-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "crested-gecko-humidity-guide",
       "title": "Why Humidity Is Everything for Crested Geckos",
       "excerpt": "Crested geckos need precise humidity to shed cleanly, stay hydrated, and thrive. Get it wrong and problems stack fast - here's exactly how to nail it.",
       "date": "2025-05-10",
       "image": "/assets/images/crested-gecko-humidity.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "crested-gecko-tank-setup-guide",
+      "title": "Crested Gecko Tank Setup Guide",
+      "excerpt": "Crested geckos flip the usual reptile setup logic. Where most lizards need a hot basking spot, this species needs you to actively avoid overheating them.",
+      "date": "2026-07-17",
+      "image": "/assets/images/crested-gecko-tank-setup.jpg",
       "category": "Reptiles"
     },
     {
@@ -273,11 +369,43 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "rabbit-cost-guide",
+      "title": "Rabbit Cost: Full Price Breakdown",
+      "excerpt": "Rabbits have a reputation as a simple starter pet, but the real cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
+      "date": "2026-07-17",
+      "image": "/assets/images/rabbit-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "rabbit-gi-stasis-guide",
       "title": "Rabbit GI Stasis: A Silent Emergency",
       "excerpt": "Rabbit GI stasis can turn fatal within hours - the early warning signs, why unlimited hay matters so much, and when it becomes an emergency vet visit.",
       "date": "2026-07-01",
       "image": "/assets/images/rabbit-gi-stasis.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "rabbit-handling-guide",
+      "title": "How to Handle a Rabbit Safely",
+      "excerpt": "Rabbits are more physically fragile than most first-time owners expect. An unsupported or panicked rabbit can genuinely injure itself trying to escape your grip.",
+      "date": "2026-07-17",
+      "image": "/assets/images/rabbit-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "rabbit-health-issues-guide",
+      "title": "Rabbit Health Issues: Signs & Causes",
+      "excerpt": "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Here's what to watch for, from GI stasis to dental disease, and when it's a true emergency.",
+      "date": "2026-07-17",
+      "image": "/assets/images/rabbit-health-issues.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "rabbit-tank-setup-guide",
+      "title": "Rabbit Housing Setup Guide",
+      "excerpt": "Rabbit housing guidance has shifted substantially. The space rabbits actually need is much larger than what's traditionally been sold as a starter cage.",
+      "date": "2026-07-17",
+      "image": "/assets/images/rabbit-tank-setup.jpg",
       "category": "Small & Exotic Pets"
     },
     {

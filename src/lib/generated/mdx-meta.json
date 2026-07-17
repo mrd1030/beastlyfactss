@@ -698,6 +698,174 @@
     ]
   },
   {
+    "path": "/content/guides/budgie-cost-guide.mdx",
+    "slug": "budgie-cost-guide",
+    "title": "How Much Does a Budgie Really Cost?",
+    "seoTitle": "Budgie Cost: Full Price Breakdown",
+    "excerpt": "Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat care, which is the piece people most often miss.",
+    "date": "2026-07-17",
+    "category": "Birds",
+    "tags": [
+      "Budgie",
+      "Cost",
+      "Pet Ownership Cost",
+      "Avian Vet Care",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-cost.jpg",
+    "imageAlt": "Budgie perched in a fully equipped flight cage",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a budgie itself cost?",
+        "a": "$20 to $80. It's genuinely the cheapest part of ownership, the cage and long-term avian vet care are where the real budget goes."
+      },
+      {
+        "q": "What's the vet cost people most underestimate with budgies?",
+        "a": "Avian vets are harder to find and pricier than general small-animal vets. An initial well-bird exam runs $45 to $150, diagnostics add $50 to $300 or more, and emergency care can run $100 to $1,500 plus. Pet insurance is rarely available for budgies, so most owners self-insure with a dedicated emergency fund."
+      },
+      {
+        "q": "What should I budget for a starter setup?",
+        "a": "Most first-time owners land around $175 to $475 for a complete starter setup, with first-year totals (including the bird) commonly running $350 to $900 depending on cage quality."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a budgie?",
+        "a": "Food runs $5 to $15 a month for a pellet-forward diet with fresh vegetables. Toy and perch replacement runs $10 to $30 a month, chewing and shredding toys is normal healthy behavior, not waste. Add an annual exotic vet checkup of $80 or more."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/budgie-handling-guide.mdx",
+    "slug": "budgie-handling-guide",
+    "title": "How to Handle and Tame a Budgie",
+    "seoTitle": "How to Tame and Handle a Budgie",
+    "excerpt": "How you approach handling a budgie depends a lot on where it came from. A hand-raised bird may step up on day one; an untamed one needs a slower process that rewards patience.",
+    "date": "2026-07-17",
+    "category": "Birds",
+    "tags": [
+      "Budgie",
+      "Handling",
+      "Taming",
+      "Care Tips",
+      "Bird Behavior",
+      "Bird Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-handling.jpg",
+    "imageAlt": "Budgie stepping onto a person's finger inside its cage",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should I wait before taming a new budgie?",
+        "a": "Give it a week or two to adjust before attempting any taming. Position the cage near eye level and against a wall, movement happening above or behind a caged bird triggers a real predator-response fear that makes taming much harder."
+      },
+      {
+        "q": "What's the correct order for taming a budgie?",
+        "a": "Start with your hand resting inside the cage (not reaching for the bird) until it stops reacting. Then offer millet from your fingers. Only once it's comfortable taking food from your hand should you attempt step-up training by gently pressing a finger against its lower chest."
+      },
+      {
+        "q": "Should I try to establish dominance over my budgie?",
+        "a": "No, skip any advice about forcing handling or establishing dominance, it's outdated and counterproductive. Budgies are prey animals, and dominance-based handling just teaches them that hands are a threat."
+      },
+      {
+        "q": "Why do hens sometimes bite harder than males?",
+        "a": "Hens can be more territorial than males and tend to bite harder, especially during hormonal periods, this is normal and not a sign something's wrong. Never punish biting either way, punishment teaches fear rather than good behavior and undoes trust that can take a long time to rebuild."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/budgie-health-issues-guide.mdx",
+    "slug": "budgie-health-issues-guide",
+    "title": "Common Budgie Health Issues and Why Diet Drives Most of Them",
+    "seoTitle": "Budgie Health Issues: Signs & Causes",
+    "excerpt": "Birds are prey animals that hide illness as a survival instinct. By the time a budgie looks visibly sick, it's often further along than a mammal would be at the same stage.",
+    "date": "2026-07-17",
+    "category": "Birds",
+    "tags": [
+      "Budgie",
+      "Health",
+      "Fatty Liver Disease",
+      "Bird Illness",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-health-issues.jpg",
+    "imageAlt": "Budgie being examined by an avian veterinarian",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the biggest preventable health issue in pet budgies?",
+        "a": "Fatty liver disease (hepatic lipidosis) and obesity, driven almost entirely by all-seed diets. Seeds are calorie-dense and nutritionally incomplete, and this condition is serious enough that it can cause sudden death. A pellet-forward diet from the start prevents most of it."
+      },
+      {
+        "q": "What does scaly face and leg mites look like?",
+        "a": "Crusty, honeycomb-like buildup on the cere (the area above the beak), the beak itself, and the legs, caused by the mite Knemidocoptes pilae. It's treatable with ivermectin from an avian vet, but needs proper diagnosis rather than a home remedy."
+      },
+      {
+        "q": "Can a single female budgie get egg bound without a male present?",
+        "a": "Yes. Even a single hen with no male present can lay eggs, so egg binding, a life-threatening emergency, is a risk regardless of whether you're intentionally breeding. It's linked to calcium and vitamin D deficiency and to obesity."
+      },
+      {
+        "q": "What are the signs a budgie needs to see a vet the same day?",
+        "a": "Fluffed-up feathers combined with sleeping during the day, tail-bobbing with each breath, open-mouth breathing, or sitting on the floor of the cage instead of perching. Because budgies mask illness so well, any of these should be seen within 24 hours, not after a few days of watching and waiting."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/budgie-tank-setup-guide.mdx",
+    "slug": "budgie-tank-setup-guide",
+    "title": "Budgie Cage Setup: Width Over Height, and a Few Rules That Actually Matter",
+    "seoTitle": "Budgie Cage Setup Guide",
+    "excerpt": "Budgies are small, but their housing needs get underestimated more than almost any other part of their care. A few specific details matter more than overall size alone.",
+    "date": "2026-07-17",
+    "category": "Birds",
+    "tags": [
+      "Budgie",
+      "Cage Setup",
+      "Bar Spacing",
+      "Care Tips",
+      "Bird Care",
+      "Diet"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-tank-setup.jpg",
+    "imageAlt": "Budgie flight cage with varied perches and food dishes",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a budgie need?",
+        "a": "An absolute minimum for a single budgie is often cited around 18x18x18 inches, but a wider flight-style cage serves them far better, something closer to 30x18x18 inches for a pair. Prioritize width over height, budgies fly side to side rather than climbing vertically."
+      },
+      {
+        "q": "What bar spacing is safe for a budgie cage?",
+        "a": "Half an inch or less, non-negotiable. Wider spacing creates a real risk of a budgie squeezing through and escaping, or worse, getting its head caught while trying."
+      },
+      {
+        "q": "Should a budgie's diet be seeds or pellets?",
+        "a": "Pellets should make up roughly 60 to 80% of the diet, with fruits, vegetables, and greens covering another 20 to 25%, and seeds treated as an occasional extra. A seed-only diet is directly linked to malnutrition, obesity, and fatty liver disease."
+      },
+      {
+        "q": "Can one budgie live alone happily?",
+        "a": "Not well. Budgies are highly social flock birds by nature, and a single budgie needs substantial daily interaction from you to stay well-adjusted, or better, a companion budgie to socialize with. This is close to as important as diet or cage size for long-term wellbeing."
+      }
+    ]
+  },
+  {
     "path": "/content/guides/budgie-vs-cockatiel-guide.mdx",
     "slug": "budgie-vs-cockatiel-guide",
     "title": "Budgie vs. Cockatiel: Which Beginner Bird Fits You Better",
@@ -889,6 +1057,300 @@
     ]
   },
   {
+    "path": "/content/guides/corn-snake-cost-guide.mdx",
+    "slug": "corn-snake-cost-guide",
+    "title": "How Much Does a Corn Snake Really Cost?",
+    "seoTitle": "Corn Snake Cost: Full Price Breakdown",
+    "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Corn Snake",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-cost.jpg",
+    "imageAlt": "Corn snake in a fully equipped enclosure with hides and branches",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a corn snake itself cost?",
+        "a": "A normal morph runs $25 to $70. Rare or designer morphs climb into the hundreds or occasionally low thousands, but the animal itself is the cheap part of ownership either way."
+      },
+      {
+        "q": "Is a thermostat really necessary for a corn snake?",
+        "a": "Yes, genuinely non-optional. A heat mat running without one can reach around 120°F, hot enough to cause a serious burn. Budget $30 to $100 for a quality thermostat as part of your core setup, not an add-on."
+      },
+      {
+        "q": "What does a corn snake cost per year after the initial setup?",
+        "a": "Most owners land around $200 to $500 a year: frozen mice ($10-20 a month), substrate ($30-80 a year), electricity for the heat source ($60-180 a year), and an annual wellness exam ($50-150)."
+      },
+      {
+        "q": "What's the total cost over a corn snake's lifetime?",
+        "a": "Corn snakes typically live 15 to 20 years, with the oldest verified individual reaching 32. Over a decade, total cost (setup plus all ongoing expenses) commonly lands between $800 and $2,000, making them one of the more affordable long-term reptile pets relative to lifespan."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/corn-snake-handling-guide.mdx",
+    "slug": "corn-snake-handling-guide",
+    "title": "How to Handle a Corn Snake",
+    "seoTitle": "How to Handle a Corn Snake Correctly",
+    "excerpt": "Corn snakes are docile and hardy as adults, but juveniles can be fast, wiggly, and genuinely defensive before they settle into the calmer temperament the species is known for.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Corn Snake",
+      "Handling",
+      "Care Tips",
+      "Snake Behavior",
+      "Snake Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-handling.jpg",
+    "imageAlt": "Corn snake being gently supported across two hands",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How soon can I handle a new corn snake?",
+        "a": "Give it time to acclimate and eat successfully 3 to 4 times first, roughly one to two weeks at minimum. For hatchlings, start with sessions as short as 1 to 2 minutes once they've settled in."
+      },
+      {
+        "q": "How often can a corn snake be handled?",
+        "a": "Keep early sessions to 5 or 10 minutes, no more than a couple of times a week, building up gradually as your snake tolerates more."
+      },
+      {
+        "q": "How long should I wait to handle after feeding?",
+        "a": "48 to 72 hours. Handling too soon after a meal is one of the most common causes of regurgitation, and it's easy to avoid just by watching the calendar."
+      },
+      {
+        "q": "Is it normal for a corn snake to bite or musk when handled?",
+        "a": "Bites are rare and minor, typically a startled or defensive reaction rather than genuine aggression, and easily treated with soap and water. Musking, a foul-smelling defensive secretion, is a stress signal, if you see it along with tight coiling or striking, it's time to end the session calmly."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/corn-snake-health-issues-guide.mdx",
+    "slug": "corn-snake-health-issues-guide",
+    "title": "Common Corn Snake Health Issues and What Causes Them",
+    "seoTitle": "Corn Snake Health Issues: Signs & Causes",
+    "excerpt": "Corn snakes are one of the hardier pet snakes, and nearly every health problem they develop traces back to husbandry rather than bad luck.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Corn Snake",
+      "Health",
+      "Respiratory Infection",
+      "Reptile Illness",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-health-issues.jpg",
+    "imageAlt": "Corn snake being examined by a reptile veterinarian",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common health problem in corn snakes?",
+        "a": "Respiratory infection, usually bacterial and almost always secondary to an enclosure that's too cold or too damp. Watch for open-mouth breathing, wheezing or an audible clicking sound, mucus around the nose or mouth, and lethargy. This needs a reptile vet and prescription antibiotics, not a wait-and-see approach."
+      },
+      {
+        "q": "What causes scale rot in corn snakes?",
+        "a": "Damp or dirty substrate, or a water bowl that's been overflowing or sitting unchanged too long. Look for discolored belly scales (brown, yellow, or black), skin that looks soft, mushy, or blistered, and a foul smell. Fix the underlying husbandry issue and see a vet, especially if it's spreading."
+      },
+      {
+        "q": "How do I treat mites on a corn snake?",
+        "a": "Treating the snake alone isn't enough, the whole enclosure needs to be treated at the same time or the infestation just comes back. Look for tiny black or red specks moving on the scales or floating in the water bowl."
+      },
+      {
+        "q": "What neurological signs in a corn snake need immediate attention?",
+        "a": "Star-gazing (holding the head tilted up and back) or corkscrewing movements are rare but serious, and warrant an immediate vet visit rather than waiting to see if they resolve."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/corn-snake-tank-setup-guide.mdx",
+    "slug": "corn-snake-tank-setup-guide",
+    "title": "Corn Snake Tank Setup: Floor Space, a Mandatory Thermostat, and a Humidity Debate",
+    "seoTitle": "Corn Snake Tank Setup Guide",
+    "excerpt": "Corn snakes are a genuinely forgiving species to set up correctly, with one non-negotiable exception: whatever heat source you choose, it needs a thermostat.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Corn Snake",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Snake Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-tank-setup.jpg",
+    "imageAlt": "Corn snake enclosure with hides, water bowl, and climbing branches",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult corn snake need?",
+        "a": "A 40-gallon breeder (36x18x18 inches) is the adult minimum, with 4x2x2 feet (48x24x24 inches) as the preferred size for a fully grown adult. Corn snakes are terrestrial, so floor space matters more than height."
+      },
+      {
+        "q": "Is a thermostat really required for a corn snake enclosure?",
+        "a": "Yes, with zero exceptions. An unregulated heat mat can climb to around 120°F, hot enough to cause a serious burn. Place the thermostat probe where your snake actually spends time, inside the warm hide or on the substrate surface, not taped directly to the heat mat."
+      },
+      {
+        "q": "What humidity level does a corn snake need?",
+        "a": "Sources genuinely disagree, some recommend 65-75%, others cite 40-60% as sufficient, raised to 60-70% during shedding. Either range works in practice, what matters more is consistency and a dedicated humid hide with damp sphagnum moss during shed cycles."
+      },
+      {
+        "q": "Does a corn snake need UVB?",
+        "a": "Not required, corn snakes have been kept successfully for decades without it, but it's increasingly viewed as a beneficial addition for long-term health. If you add it, use a low-output T5 bulb targeting a UVI around 2.0 to 3.0."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/crested-gecko-cost-guide.mdx",
+    "slug": "crested-gecko-cost-guide",
+    "title": "How Much Does a Crested Gecko Really Cost?",
+    "seoTitle": "Crested Gecko Cost: Full Price Breakdown",
+    "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-cost.jpg",
+    "imageAlt": "Crested gecko in a fully equipped vertical arboreal enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a crested gecko itself cost?",
+        "a": "$50 to $200 for a normal morph, climbing toward $500 to $1,000+ for rare, sought-after morphs."
+      },
+      {
+        "q": "Does a crested gecko need expensive heating equipment?",
+        "a": "Not really, one of its budget advantages. Many rooms already sit in a crested gecko's comfortable range, so heating is often a light supplement (a 25-40 watt bulb, $20-40) rather than a heavy setup, and electricity costs stay minimal."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a crested gecko?",
+        "a": "Roughly $20 to $30 a month. A complete crested gecko diet powder runs about $20 per bag and typically lasts a single adult around three months, plus modest substrate replacement and minimal electricity."
+      },
+      {
+        "q": "How long do crested geckos live, and how does that affect budgeting?",
+        "a": "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s. This isn't a short-term pet, so the setup you buy now should be one you're comfortable maintaining for decades, not just the first year."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/crested-gecko-handling-guide.mdx",
+    "slug": "crested-gecko-handling-guide",
+    "title": "How to Handle a Crested Gecko (And Why Tail Loss Is Different Here)",
+    "seoTitle": "How to Handle a Crested Gecko Correctly",
+    "excerpt": "Crested geckos are gentle and easy to handle once settled, but unlike leopard geckos, a dropped tail never grows back, which changes how carefully you should handle one.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Handling",
+      "Tail Loss",
+      "Care Tips",
+      "Gecko Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-handling.jpg",
+    "imageAlt": "Crested gecko walking from one open hand to another",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How soon can I handle a new crested gecko?",
+        "a": "Don't handle a new arrival for about two weeks, letting it acclimate and start eating normally first. Wait until your gecko is a sub-adult or older juvenile, roughly 8 to 15 grams or about 4 to 5 inches and 6 months old, before regular handling begins."
+      },
+      {
+        "q": "Does a crested gecko's tail grow back if it drops?",
+        "a": "No, and this is the critical difference from species like leopard geckos. A crested gecko's tail does not grow back once dropped. The good news is a tailless gecko, often called a \"frog butt\" by keepers, lives a completely normal, healthy life."
+      },
+      {
+        "q": "What's the correct technique for picking up a crested gecko?",
+        "a": "Let the gecko walk onto your hand rather than grabbing it. A technique called \"treadmilling\" works well: cup your free hand in front of the gecko as it reaches the edge of the one it's on, and it hops hand to hand on its own."
+      },
+      {
+        "q": "How often can a crested gecko be handled?",
+        "a": "Start with sessions of just 1 to 2 minutes every other day. Build up gradually to around 15 minutes once your gecko is tame and comfortable, and keep total daily handling under about 20 minutes even then."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/crested-gecko-health-issues-guide.mdx",
+    "slug": "crested-gecko-health-issues-guide",
+    "title": "Common Crested Gecko Health Issues and What Causes Them",
+    "seoTitle": "Crested Gecko Health Issues: Signs & Causes",
+    "excerpt": "Nearly every crested gecko health problem traces back to calcium, humidity, and substrate choices. Get those right and most of this list never shows up.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Health",
+      "Metabolic Bone Disease",
+      "Reptile Illness",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-health-issues.jpg",
+    "imageAlt": "Crested gecko being weighed on a gram scale during a health check",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the first sign of metabolic bone disease in a crested gecko?",
+        "a": "A soft or rubbery lower jaw is often the first thing owners notice. Advanced signs include floppy or weak limbs, a visibly misaligned jaw, a kinked spine, tremors, and difficulty climbing. It's caused by a deficiency in calcium or vitamin D3, and prevention is straightforward: a complete diet powder, calcium supplementation, and low-level UVB."
+      },
+      {
+        "q": "What is floppy tail syndrome?",
+        "a": "The tail hangs over the gecko's head or sits at an odd angle relative to the body, typically from chronic upside-down resting against glass over time. It's sometimes associated with calcium or pelvic issues and is worth a vet visit to rule out an underlying problem."
+      },
+      {
+        "q": "What causes impaction in crested geckos?",
+        "a": "Usually loose substrate (sand or bark), prey that's too large, or shed skin that wasn't fully passed. Watch for no bowel movement for a week or more, a bloated abdomen, straining, and appetite loss. Using solid substrate like paper towel or tile for young geckos helps prevent it."
+      },
+      {
+        "q": "How often should I weigh my crested gecko?",
+        "a": "Weekly. A gram scale is one of the most useful tools you can own for this species, weight change is often the earliest sign that something's off, well before other symptoms appear."
+      }
+    ]
+  },
+  {
     "path": "/content/guides/crested-gecko-humidity-guide.mdx",
     "slug": "crested-gecko-humidity-guide",
     "title": "Why Humidity Is Everything for Crested Geckos",
@@ -933,6 +1395,48 @@
       {
         "q": "Is a hygrometer really necessary for a small enclosure?",
         "a": "Yes. Small enclosures can swing between too dry and too saturated faster than larger ones, and it's genuinely difficult to judge humidity by eye. A digital hygrometer is inexpensive relative to how much it protects against shedding and respiratory problems."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/crested-gecko-tank-setup-guide.mdx",
+    "slug": "crested-gecko-tank-setup-guide",
+    "title": "Crested Gecko Tank Setup: Vertical Space, Humidity, and a Hard Temperature Ceiling",
+    "seoTitle": "Crested Gecko Tank Setup Guide",
+    "excerpt": "Crested geckos flip the usual reptile setup logic. Where most lizards need a hot basking spot, this species needs you to actively avoid overheating them.",
+    "date": "2026-07-17",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Gecko Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-tank-setup.jpg",
+    "imageAlt": "Vertical crested gecko enclosure with branches, vines, and foliage",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a crested gecko need?",
+        "a": "18x18x24 inches is the minimum for one adult, and taller is genuinely better, a 2x2x2 foot enclosure is a common upgrade. Crested geckos are arboreal, so height matters more than floor space here."
+      },
+      {
+        "q": "What's the maximum safe temperature for a crested gecko enclosure?",
+        "a": "85°F, a hard ceiling with zero exceptions. Their native range in New Caledonia only reaches 79-85°F even in the hot season, and prolonged exposure above that risks fatal heat stroke. This is one of the few reptile species where too much heat is a bigger practical danger than too little."
+      },
+      {
+        "q": "What humidity does a crested gecko need?",
+        "a": "60 to 80%, with a daily swing: let it rise at night and drop to around 40 to 50% during the day. That swing prevents mold while still giving your gecko what it needs, maintained with a daily evening misting session."
+      },
+      {
+        "q": "Does a crested gecko need UVB?",
+        "a": "Not strictly required, since a complete diet powder already supplies vitamin D3, but low-level UVB is still a solid idea for overall health. If you add it, aim low, a 24-inch low-output T5 HO bulb around 5.0, targeting a UVI of 1.0 to 2.0."
       }
     ]
   },
@@ -1534,6 +2038,48 @@
     ]
   },
   {
+    "path": "/content/guides/rabbit-cost-guide.mdx",
+    "slug": "rabbit-cost-guide",
+    "title": "How Much Does a Rabbit Really Cost?",
+    "seoTitle": "Rabbit Cost: Full Price Breakdown",
+    "excerpt": "Rabbits have a reputation as a simple starter pet, but the real cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
+    "date": "2026-07-17",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "Cost",
+      "Pet Ownership Cost",
+      "Spay Neuter",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/rabbit-cost.jpg",
+    "imageAlt": "Rabbit in a fully equipped exercise pen with hay and dishes",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does it cost to set up for a new rabbit?",
+        "a": "Most collective initial supplies (exercise pen, litter box, dishes, nail clippers, hay feeder, and bunny-proofing) run $150 to $300, with fuller setups reaching $600."
+      },
+      {
+        "q": "Why is spay or neuter such a big line item?",
+        "a": "It's the cost new owners most often underestimate. Expect roughly $150 to $500 or more, a neuter typically runs $200 to $300, while a spay costs more since it's more invasive. Adoption fees, often just $25 to $100, frequently already include the spay/neuter plus an initial vet check, which can make adopting an already-altered rabbit the cheapest overall path."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a rabbit?",
+        "a": "Hay ($20-40), pellets ($5-15), fresh vegetables ($15-50), and litter ($15-25) typically total $60 to $100 a month. Add routine vet care and a realistic annual total lands around $500 to $800 after the first year."
+      },
+      {
+        "q": "How much should I set aside for a rabbit vet emergency?",
+        "a": "At least $500 to $1,000, kept separate from your routine budget. Rabbits need an exotic or rabbit-savvy vet, hide illness well, and a single serious issue like a GI stasis workup alone can exceed $1,500."
+      }
+    ]
+  },
+  {
     "path": "/content/guides/rabbit-gi-stasis-guide.mdx",
     "slug": "rabbit-gi-stasis-guide",
     "title": "Rabbit GI Stasis: The Silent Emergency Every Owner Should Recognize",
@@ -1577,6 +2123,132 @@
       {
         "q": "How can I tell if my rabbit's poop output is abnormal?",
         "a": "Know your rabbit's normal output as a baseline. Watch for noticeably fewer droppings than usual, droppings that are smaller or oddly shaped, a string of droppings connected by fur or debris, or no droppings at all for several hours - any of these warrants immediate attention."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/rabbit-handling-guide.mdx",
+    "slug": "rabbit-handling-guide",
+    "title": "How to Handle a Rabbit Without Hurting It",
+    "seoTitle": "How to Handle a Rabbit Safely",
+    "excerpt": "Rabbits are more physically fragile than most first-time owners expect. An unsupported or panicked rabbit can genuinely injure itself trying to escape your grip.",
+    "date": "2026-07-17",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "Handling",
+      "Care Tips",
+      "Small Mammal Care",
+      "Pet Bonding",
+      "Rabbit Behavior"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/rabbit-handling.jpg",
+    "imageAlt": "Rabbit being carried securely with full body support against a person",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does rabbit handling need so much support?",
+        "a": "A rabbit that struggles against an unsupported hold can fracture its own lumbar spine, the strength of its powerful hind legs works against it in exactly the wrong way if its body isn't fully supported. This is the single most important thing to get right with this species."
+      },
+      {
+        "q": "What's the correct way to pick up a rabbit?",
+        "a": "Support the chest with one hand (positioned just behind the front legs) and the hindquarters with the other, simultaneously. Hold the rabbit close against your body rather than out at arm's length, and never lift by the ears or rely on the scruff alone to support its weight."
+      },
+      {
+        "q": "Is 'trancing' a rabbit safe or calming?",
+        "a": "No. Trancing, flipping a rabbit onto its back, is often mistaken for calming, but research measuring rabbits in this position found significant increases in respiration, heart rate, and stress hormone levels. It's a fear response the animal can't escape, not relaxation."
+      },
+      {
+        "q": "Why won't my rabbit relax when I pick it up, even though it trusts me?",
+        "a": "That's normal. Most rabbits are calmest with all four feet on the ground, and many never come to love being picked up even once they fully trust their owner. Build trust through floor-level interaction instead, sitting at the rabbit's level and letting it choose to approach."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/rabbit-health-issues-guide.mdx",
+    "slug": "rabbit-health-issues-guide",
+    "title": "Common Rabbit Health Issues and Why You Need the Right Vet",
+    "seoTitle": "Rabbit Health Issues: Signs & Causes",
+    "excerpt": "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Here's what to watch for, from GI stasis to dental disease, and when it's a true emergency.",
+    "date": "2026-07-17",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "Health",
+      "GI Stasis",
+      "Small Mammal Illness",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/rabbit-health-issues.jpg",
+    "imageAlt": "Rabbit being examined by an exotic veterinarian",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common rabbit emergency?",
+        "a": "GI stasis, where a rabbit's gut slows down or stops entirely, allowing gas to build up. A rabbit that hasn't eaten or passed stool in 8 hours or more is an emergency, not a wait-and-see situation. See our dedicated GI stasis guide for the full picture."
+      },
+      {
+        "q": "Why do rabbits need dental checkups?",
+        "a": "Rabbit teeth grow continuously, as much as 4 to 5 inches a year, and overgrowth or molar spurs cause drooling, dropped food, and weight loss. Treatment often means a sedated trim, and the best prevention is a properly hay-based diet that wears teeth down naturally."
+      },
+      {
+        "q": "What is flystrike and why is it an emergency?",
+        "a": "Flies lay eggs on soiled or damp fur, and the maggots that hatch can kill a rabbit within 24 to 48 hours. It's a particular risk for rabbits kept outdoors or any rabbit with mobility issues or urine-soaked fur that isn't caught and cleaned promptly."
+      },
+      {
+        "q": "How common is uterine cancer in unspayed female rabbits?",
+        "a": "Up to 80% of unspayed does aged 5 and older develop uterine cancer, with risk beginning to climb from around age two. This is one of the strongest arguments for spaying a female rabbit early, well before this becomes a concern."
+      }
+    ]
+  },
+  {
+    "path": "/content/guides/rabbit-tank-setup-guide.mdx",
+    "slug": "rabbit-tank-setup-guide",
+    "title": "Rabbit Housing: Why the Old Pet-Store Cage Isn't Enough",
+    "seoTitle": "Rabbit Housing Setup Guide",
+    "excerpt": "Rabbit housing guidance has shifted substantially. The space rabbits actually need is much larger than what's traditionally been sold as a starter cage.",
+    "date": "2026-07-17",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "Housing",
+      "Litter Training",
+      "Care Tips",
+      "Small Mammal Care",
+      "Diet"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/rabbit-tank-setup.jpg",
+    "imageAlt": "Rabbit exercise pen setup with litter box, hay feeder, and hides",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much space does a rabbit actually need?",
+        "a": "The House Rabbit Society recommends at least 8 square feet of enclosure space combined with at least 24 square feet of exercise space for one to two rabbits, with 5+ hours a day to run and play. A large foldable metal exercise pen, 4x4 feet or bigger, is the realistic standard."
+      },
+      {
+        "q": "Should a rabbit live indoors or outdoors?",
+        "a": "Indoors is strongly the better choice. Indoor rabbits typically live 7 to 10 years, while outdoor rabbits average closer to 2, due to predators, extreme weather, and health problems that go unnoticed without daily close contact."
+      },
+      {
+        "q": "How do you litter train a rabbit?",
+        "a": "Put hay directly in or right over the litter box, since rabbits naturally tend to eliminate while they eat. Use a large, cat-litter-box-style container with paper-based or compressed wood-pellet litter, and avoid clumping cat litter and pine or cedar shavings entirely."
+      },
+      {
+        "q": "What should make up most of a rabbit's diet?",
+        "a": "Hay, about 80 to 85% of the diet, unlimited access, not a side item. Fresh leafy greens come next, and pellets are the smallest piece, about 1/4 cup per 5 pounds of body weight. Fruit and carrots are treats only, not a diet staple."
       }
     ]
   },

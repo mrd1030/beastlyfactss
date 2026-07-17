@@ -88,6 +88,8 @@ Annual avian veterinary exams including complete blood panel are essential. Find
         { item: "18x18x24 in cage (larger preferred)", low: 50, high: 100 },
         { item: "Perches of varied diameters", low: 15, high: 25 },
         { item: "Swings, ladders, and foraging toys", low: 20, high: 40 },
+        { item: "Food and water dishes", low: 10, high: 20 },
+        { item: "Cuttlebone or mineral block", low: 5, high: 12 },
         { item: "Nail clippers", low: 8, high: 12 },
       ],
       annual: [

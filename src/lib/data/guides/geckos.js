@@ -83,6 +83,8 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
       setup: [
         { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
         { item: "Low-output UVB (T5 HO, Zone 1)", low: 45, high: 80 },
+        { item: "Low-wattage heat bulb and fixture", low: 20, high: 40 },
+        { item: "Thermostat", low: 30, high: 35 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
         { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
         { item: "Cork bark tubes and branches", low: 20, high: 40 },
