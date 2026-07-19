@@ -145,6 +145,11 @@ const ANIMAL_IMAGES = {
   'Leafy Sea Dragon': '/assets/facts/leafy-sea-dragon.jpg',
   'Thorny Devil': '/assets/facts/thorny-devil.jpg',
   'Glass Frog': '/assets/facts/glass-frog.jpg',
+  'Meerkat': '/assets/facts/meerkat.jpg',
+  'Secretary Bird': '/assets/facts/secretary-bird.jpg',
+  'Vampire Squid': '/assets/facts/vampire-squid.jpg',
+  'Gharial': '/assets/facts/gharial.jpg',
+  'Aye-aye': '/assets/facts/aye-aye.jpg',
 };
 
 // Per-fact overrides, keyed by fact id - takes priority over ANIMAL_IMAGES.
@@ -216,6 +221,7 @@ const FACT_IMAGES = {
   162: '/assets/facts/sea-otter-2.jpg', // "A Million Hairs Per Inch"
   169: '/assets/facts/wolf-2.jpg', // "The Alpha Wolf Myth"
   150: '/assets/facts/guinea-pig-2.jpg', // "The Vitamin C Shortage"
+  98: '/assets/facts/wood-frog-2.jpg', // "Quacks Like a Duck, Hops Like a Frog"
 };
 
 function imageFor(fact) {
