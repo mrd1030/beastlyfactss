@@ -8,9 +8,12 @@ const DexTeaser = lazy(() => import('@/components/home/DexTeaser'));
 const GuideSpotlight = lazy(() => import('@/components/home/GuideSpotlight'));
 const Newsletter = lazy(() => import('@/components/shared/Newsletter'));
 import FactModal from '@/components/shared/FactModal';
+import ImageLightbox from '@/components/shared/ImageLightbox';
+import { imagePathFor } from '@/lib/data/factImages';
 
 export default function Home() {
   const [selectedFact, setSelectedFact] = useState(null);
+  const [imageFact, setImageFact] = useState(null);
 
   return (
     <main>
@@ -37,7 +40,7 @@ export default function Home() {
       <HeroSection />
 
       <Suspense fallback={null}>
-        <TrendingFacts onOpenFact={setSelectedFact} />
+        <TrendingFacts onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
         {/* Reference content: animal profiles + care guides, together */}
         <EncyclopediaTeaser />
         <GuideSpotlight />
@@ -46,7 +49,8 @@ export default function Home() {
         <DexTeaser />
         <Newsletter />
       </Suspense>
-      <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} />
+      <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
+      <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
     </main>
   );
 }

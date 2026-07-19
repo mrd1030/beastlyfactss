@@ -23,6 +23,9 @@ function slugify(text) {
 
 // Only exact, confirmed species matches - add more as real photos get sourced.
 // Anything not listed here falls back to the branded hero image.
+// Mirrored in src/lib/data/factImages.js for frontend use (gallery page, the
+// Image popup on fact cards, per-fact og:image tags) - this Worker file can't
+// import that module, so keep both in sync manually when adding a photo.
 const ANIMAL_IMAGES = {
   'Bearded Dragon': '/assets/guides/bearded-dragon.jpg',
   'Leopard Gecko': '/assets/guides/leopard-gecko.jpg',

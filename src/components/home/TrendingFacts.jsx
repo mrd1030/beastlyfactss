@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
 
-export default function TrendingFacts({ onOpenFact }) {
+export default function TrendingFacts({ onOpenFact, onOpenImage }) {
   const scrollRef = useRef(null);
 
   // Facts rotated by day (same idiom as HeroSection's daily fact) rather than
@@ -51,7 +51,7 @@ export default function TrendingFacts({ onOpenFact }) {
         >
           {trending.map((fact, i) => (
             <div key={fact.id || fact.title} className="min-w-[260px] max-w-[280px] snap-start flex-shrink-0">
-              <FactCard fact={fact} index={i} onOpen={onOpenFact} />
+              <FactCard fact={fact} index={i} onOpen={onOpenFact} onOpenImage={onOpenImage} />
             </div>
           ))}
         </div>

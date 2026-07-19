@@ -361,6 +361,7 @@ export default function Navbar() {
                   { to: '/encyclopedia/', emoji: '📚', label: 'Encyclopedia' },
                   { to: '/gear/', emoji: '🛒', label: 'Gear' },
                   { to: '/pack/', emoji: '🐾', label: 'My Pack' },
+                  { to: '/gallery/', emoji: '📸', label: 'Gallery' },
                   { to: '/about/', emoji: '🦁', label: 'About' },
                   { to: '/donate/', emoji: '❤️', label: 'Support Us' },
                   { to: '/contact/', emoji: '💌', label: 'Contact' },

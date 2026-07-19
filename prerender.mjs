@@ -197,6 +197,7 @@ const STATIC_ROUTES = [
   '/glossary',
   '/animal-facts',
   '/fact-files',
+  '/gallery',
   '/categories',
   '/search',
   '/donate',

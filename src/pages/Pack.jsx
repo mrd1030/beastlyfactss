@@ -4,15 +4,18 @@ import { motion } from 'framer-motion';
 import { Heart, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
+import { imagePathFor } from '@/lib/data/factImages';
 import { useFavoritesCtx, ACHIEVEMENTS } from '@/lib/FavoritesContext';
 import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
+import ImageLightbox from '@/components/shared/ImageLightbox';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
 
 
 export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
+  const [imageFact, setImageFact] = useState(null);
   const { savedQuizResults, removeQuizResult, unlockedAchievements, streak } = useFavoritesCtx();
   const savedFacts = facts.filter(f => favorites.includes(f.id));
   const [confirmingId, setConfirmingId] = useState(null);
@@ -165,7 +168,7 @@ export default function Pack() {
         {savedFacts.length > 0 ? (
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {savedFacts.map((fact, i) => (
-              <FactCard key={fact.id} fact={fact} index={i} onOpen={setSelectedFact} />
+              <FactCard key={fact.id} fact={fact} index={i} onOpen={setSelectedFact} onOpenImage={setImageFact} />
             ))}
           </div>
         ) : (
@@ -201,7 +204,8 @@ export default function Pack() {
         )}
       </div>
 
-      <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} />
+      <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
+      <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
 
       {/* Pack management section */}
       <div className="mt-16 pt-8 border-t border-border max-w-7xl mx-auto">

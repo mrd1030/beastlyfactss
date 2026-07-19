@@ -1,15 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react'; // Added useState here
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { X, Heart, Share2 } from 'lucide-react';
+import { X, Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { slugify } from '@/lib/utils/slugify';
+import { imagePathFor } from '@/lib/data/factImages';
 
-export default function FactModal({ fact, onClose }) {
+// onOpenImage is optional and handled by the parent page (not rendered here) -
+// same reason as FactCard: this modal animates scale/y via framer-motion, so a
+// `position: fixed` lightbox nested inside it would be confined to this
+// transformed element instead of covering the viewport.
+export default function FactModal({ fact, onClose, onOpenImage }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
   const [copied, setCopied] = useState(false); // State to track clipboard copy inside modal
   const modalRef = useRef(null);
+  const imagePath = imagePathFor(fact);
 
   // Exact match only (case-insensitive) - a "contains" match risks linking a fact to the
   // wrong animal (e.g. Komodo Dragon vs Bearded Dragon), so most facts just show no link at all.
@@ -168,14 +174,24 @@ export default function FactModal({ fact, onClose }) {
               <button
                 onClick={handleShare}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all focus:ring-2 focus:ring-secondary focus:outline-none ${
-                  copied 
-                    ? 'bg-secondary/10 text-secondary font-bold' 
+                  copied
+                    ? 'bg-secondary/10 text-secondary font-bold'
                     : 'bg-muted text-muted-foreground hover:bg-muted/80'
                 }`}
               >
                 <Share2 className="w-4 h-4" />
                 <span>{copied ? 'Copied!' : 'Share'}</span>
               </button>
+
+              {imagePath && onOpenImage && (
+                <button
+                  onClick={() => onOpenImage(fact)}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-muted text-muted-foreground hover:bg-muted/80 transition-all focus:ring-2 focus:ring-secondary focus:outline-none"
+                >
+                  <ImageIcon className="w-4 h-4" />
+                  <span>Image</span>
+                </button>
+              )}
             </div>
           </motion.div>
         </motion.div>

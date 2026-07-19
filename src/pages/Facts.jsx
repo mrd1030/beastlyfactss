@@ -6,9 +6,11 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from 'framer-motion';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
-import { facts, categories } from '@/lib/data/facts'; 
-import FactCard from '@/components/shared/FactCard'; 
-import FactModal from '@/components/shared/FactModal'; 
+import { facts, categories } from '@/lib/data/facts';
+import { imagePathFor, absoluteImageFor } from '@/lib/data/factImages';
+import FactCard from '@/components/shared/FactCard';
+import FactModal from '@/components/shared/FactModal';
+import ImageLightbox from '@/components/shared/ImageLightbox';
 
 // Reduced footprint size to instantly clear initial painting lag
 const PAGE_SIZE = 16; 
@@ -31,6 +33,7 @@ export default function Facts() {
   const [search, setSearch] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
   const [selectedFact, setSelectedFact] = useState(null);
+  const [imageFact, setImageFact] = useState(null);
   const [page, setPage] = useState(1);
   const [randomized, setRandomized] = useState(false);
   const [randomOrder, setRandomOrder] = useState([]);
@@ -250,6 +253,12 @@ export default function Facts() {
     : activeCategory === 'All'
       ? 'https://beastlyfacts.com/facts/'
       : `https://beastlyfacts.com/facts/category/${slugify(activeCategory)}/`;
+  // Real per-fact photo for the share preview when a specific fact is linked
+  // (see src/lib/data/factImages.js) - falls back to the generic hero otherwise,
+  // since a category/list page has no single representative photo.
+  const heroImage = 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  const factImage = linkedFact ? absoluteImageFor(linkedFact) : null;
+  const pageImage = factImage || heroImage;
   // Direct fact links aren't prerendered (Facts.jsx is already flagged CPU-heavy
   // in prerender.mjs, and 173 more renders isn't worth it just for this) - noindex
   // is the honest signal, same as this site's other client-JS-only routes.
@@ -268,14 +277,14 @@ export default function Facts() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalPath} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts - animal facts collection" />
+        <meta property="og:image" content={pageImage} />
+        {!factImage && <meta property="og:image:width" content="1200" />}
+        {!factImage && <meta property="og:image:height" content="630" />}
+        <meta property="og:image:alt" content={linkedFact ? `${linkedFact.animal} - ${linkedFact.title}` : 'Beastly Facts - animal facts collection'} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content={pageImage} />
       </Helmet>
       {/* Header */}
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
@@ -288,9 +297,14 @@ export default function Facts() {
             <p className="text-sm text-muted-foreground font-body max-w-lg">
               Mind-blowing facts that will make you say "wait, REALLY?!" 🤯
             </p>
-            <Link to="/fact-files/" className="inline-flex items-center gap-1 mt-2 text-xs font-display font-semibold text-secondary hover:underline">
-              Want deeper dives? Browse our Fact Files →
-            </Link>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
+              <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline">
+                Want deeper dives? Browse our Fact Files →
+              </Link>
+              <Link to="/gallery/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline">
+                📸 Browse the Photo Gallery →
+              </Link>
+            </div>
           </motion.div>
 
           {/* Search + Randomize */}
@@ -362,7 +376,7 @@ export default function Facts() {
               <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
                 #{fact.factNumber} 
               </span>
-              <FactCard fact={fact} index={i} onOpen={handleOpenFact} />
+              <FactCard fact={fact} index={i} onOpen={handleOpenFact} onOpenImage={setImageFact} />
             </div>
           ))}
         </div>
@@ -382,7 +396,8 @@ export default function Facts() {
         </div>
       </div>
 
-      <FactModal fact={selectedFact} onClose={handleCloseFact} /> 
+      <FactModal fact={selectedFact} onClose={handleCloseFact} onOpenImage={setImageFact} />
+      <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
     </div>
   );
 }

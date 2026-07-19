@@ -1,12 +1,19 @@
 import React, { useState } from 'react'; // Added useState here
 import { motion } from 'framer-motion';
-import { Heart, Share2 } from 'lucide-react';
+import { Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';
+import { imagePathFor } from '@/lib/data/factImages';
 
-export default function FactCard({ fact, index = 0, onOpen }) {
+// onOpenImage is optional and handled by the parent page (not rendered here) -
+// this card sits inside a framer-motion element with hover/viewport transforms,
+// and a `position: fixed` lightbox nested inside a transformed ancestor would be
+// confined to that ancestor instead of covering the viewport. Same reason
+// FactModal itself is always rendered at the page level, not inside the card.
+export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
   const [copied, setCopied] = useState(false); // State to track clipboard copy
+  const imagePath = imagePathFor(fact);
 
   // Support both static facts (fact.id) and dynamic/DB facts (fact._id)
   const factId = fact.id || fact._id;
@@ -98,6 +105,16 @@ export default function FactCard({ fact, index = 0, onOpen }) {
             <Share2 className="w-4 h-4" />
             <span>{copied ? 'Copied!' : 'Share'}</span>
           </button>
+
+          {imagePath && onOpenImage && (
+            <button
+              onClick={(e) => { e.stopPropagation(); onOpenImage(fact); }}
+              className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors focus:outline-none"
+            >
+              <ImageIcon className="w-4 h-4" />
+              <span>Image</span>
+            </button>
+          )}
         </div>
       </div>
     </motion.div>
