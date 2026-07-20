@@ -132,6 +132,7 @@ const staticPages = [
   '/facts/',
   '/animal-facts/',
   '/fact-files/',
+  '/gallery/',
   '/blog/',
   '/encyclopedia/',
   '/guides/',
