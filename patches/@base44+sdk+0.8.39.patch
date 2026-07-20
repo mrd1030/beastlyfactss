@@ -1,0 +1,44 @@
+diff --git a/node_modules/@base44/sdk/dist/modules/analytics.js b/node_modules/@base44/sdk/dist/modules/analytics.js
+index d6b1f4d..c76d138 100644
+--- a/node_modules/@base44/sdk/dist/modules/analytics.js
++++ b/node_modules/@base44/sdk/dist/modules/analytics.js
+@@ -1,5 +1,6 @@
+ import { getSharedInstance } from "../utils/sharedInstance.js";
+ import { generateUuid, isReactNative } from "../utils/common.js";
++import { getAccessToken } from "../utils/auth-utils.js";
+ export const USER_HEARTBEAT_EVENT_NAME = "__user_heartbeat_event__";
+ export const ANALYTICS_INITIALIZATION_EVENT_NAME = "__initialization_event__";
+ export const ANALYTICS_SESSION_DURATION_EVENT_NAME = "__session_duration_event__";
+@@ -230,16 +231,22 @@ async function getSessionContext(userAuthModule) {
+     if (!analyticsSharedState.sessionContext) {
+         if (!sessionContextPromise) {
+             const sessionId = getAnalyticsSessionId();
+-            sessionContextPromise = userAuthModule
+-                .me()
+-                .then((user) => ({
+-                user_id: user.id,
+-                session_id: sessionId,
+-            }))
+-                .catch(() => ({
+-                user_id: null,
+-                session_id: sessionId,
+-            }));
++            // Skip the User/me round trip entirely when there's no local token - it's
++            // guaranteed to 401 (base44 auth is token-only, no cookie fallback), and
++            // that failed request was showing up as console noise on every anonymous
++            // page view even though the .catch() below already handled it gracefully.
++            sessionContextPromise = getAccessToken()
++                ? userAuthModule
++                    .me()
++                    .then((user) => ({
++                    user_id: user.id,
++                    session_id: sessionId,
++                }))
++                    .catch(() => ({
++                    user_id: null,
++                    session_id: sessionId,
++                }))
++                : Promise.resolve({ user_id: null, session_id: sessionId });
+         }
+         analyticsSharedState.sessionContext = await sessionContextPromise;
+     }

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc -p ./jsconfig.json"
+    "typecheck": "tsc -p ./jsconfig.json",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@base44/sdk": "^0.8.39",
@@ -59,6 +60,7 @@
     "eslint-plugin-unused-imports": "^4.3.0",
     "globals": "^15.14.0",
     "node-fetch": "^3.3.2",
+    "patch-package": "^8.0.1",
     "postcss": "^8.5.3",
     "puppeteer": "^25.2.1",
     "tailwindcss": "^3.4.17",
