@@ -3,15 +3,15 @@
 // lets GuideDetail.jsx surface them as further reading instead of leaving
 // them discoverable only via the blog list/search.
 export const RELATED_ARTICLES = {
-  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-vs-goldfish-guide'],
+  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-vs-goldfish-guide', 'betta-fish-cost-guide', 'betta-fish-handling-guide', 'betta-fish-health-issues-guide', 'betta-fish-tank-setup-guide'],
   'budgie': ['budgie-cere-color-guide', 'budgie-vs-cockatiel-guide', 'budgie-cost-guide', 'budgie-handling-guide', 'budgie-health-issues-guide', 'budgie-tank-setup-guide'],
-  'cockatiel': ['budgie-vs-cockatiel-guide'],
+  'cockatiel': ['budgie-vs-cockatiel-guide', 'cockatiel-cost-guide', 'cockatiel-handling-guide', 'cockatiel-health-issues-guide', 'cockatiel-tank-setup-guide'],
   'veiled-chameleon': ['chameleon-hydration-drippers-misters-fogging'],
   'chameleon': ['chameleon-hydration-drippers-misters-fogging'],
   'cockatoo': ['cockatoo-screaming-feather-plucking-explained'],
   'ferret': ['ferret-adrenal-disease-guide'],
   'goldfish': ['goldfish-tank-size-bowl-myth', 'betta-fish-vs-goldfish-guide'],
-  'tarantula': ['invertebrate-molting-guide'],
+  'tarantula': ['invertebrate-molting-guide', 'tarantula-cost-guide', 'tarantula-handling-guide', 'tarantula-health-issues-guide', 'tarantula-tank-setup-guide'],
   'hermit-crab': ['invertebrate-molting-guide'],
   'jumping-spider': ['invertebrate-molting-guide'],
   'praying-mantis': ['praying-mantis-ootheca-guide'],

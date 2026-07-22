@@ -214,6 +214,7 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
       setup: [
         { item: "24x24x30 in cage (larger preferred)", low: 80, high: 160 },
         { item: "Perches of varied diameters", low: 20, high: 35 },
+        { item: "Food and water dishes", low: 10, high: 20 },
         { item: "Nightlight (prevents night frights)", low: 10, high: 15 },
         { item: "Cuttlebone and mineral block", low: 5, high: 10 },
         { item: "Foraging and shreddable toys", low: 20, high: 40 },

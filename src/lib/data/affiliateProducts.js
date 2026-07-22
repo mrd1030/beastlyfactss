@@ -1122,7 +1122,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4fbLrVy",
     image: "/assets/images/affiliate/product-113.jpg",
-    covers: ["Cuttlebone or mineral block"],
+    covers: ["Cuttlebone or mineral block", "Cuttlebone and mineral block"],
   },
   {
     slug: "bird-cuttlebone-prevue-5in",

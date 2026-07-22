@@ -195,3 +195,61 @@ Med products already linked, no new SKUs needed there.
 (crested-gecko-specific accessory, narrow use case) and a HEPA air purifier (budgie
 environmental accessory, optional/nice-to-have) - both mentioned in the search list
 but low priority relative to the items above.
+
+---
+
+## Update (2026-07-22): guinea pig, cockatiel, betta fish, tarantula batch
+
+**The 2026-07-17 "Cuttlebone or mineral block - Budgie" gap noted above is now stale/resolved** -
+`bird-cuttlebone-penn-plax-2ct` was added to `affiliateProducts.js` at some point after that
+note was written, with `covers: ["Cuttlebone or mineral block"]`, which matches Budgie's (and
+another bird guide's) exact "or" phrasing. While reviewing Cockatiel's cost builder for this
+batch, found the same product silently failing to match Cockatiel's line because its wording
+is "Cuttlebone **and** mineral block" (one word off, same class of bug as the earlier
+infrared-temp-gun fix). Fixed by adding "Cuttlebone and mineral block" as a second `covers`
+string on the same product, no new SKU needed, it's the same physical item either way.
+
+**Cost-builder lines added this batch:**
+- Cockatiel (`birds.js`): added **"Food and water dishes"** ($10-20), links correctly to
+  the already-linked `bird-feeding-dishes-okllen-4pack` (exact match, no gap).
+- Betta Fish (`fish.js`): added **"Substrate (sand or smooth gravel)"** ($10-20). **New
+  gap** - no aquarium sand/gravel product exists anywhere in `affiliateProducts.js` yet,
+  this is genuinely unlinked. Any basic aquarium sand or smooth gravel bag would cover it.
+
+**No changes needed:** Guinea Pig's and Tarantula's existing `costs.setup`/`costs.annual`
+arrays already matched everything in their new source articles one-for-one, nothing to add
+or fix for either species this round.
+
+**Full `getAffiliateForItem()` sweep of all four species' cost builders (ran every setup/
+annual line through the real matcher, not just the lines touched this batch):**
+
+Actionable gaps to actually search for on Amazon:
+- [ ] **Betta Fish - 5+ gallon tank.** No product sized this small exists yet, the
+  smallest linked tank (`tank-10-gallon`) is a 10 gal. A basic 5 gal all-in-one kit
+  (glass tank, hood/light, sometimes a filter bundled) is the target.
+- [ ] **Betta Fish - Substrate (sand or smooth gravel).** Noted above, still open.
+- [ ] **Cockatiel - Nightlight (prevents night frights).** Not tracked anywhere in
+  this file before, genuinely unlinked. A small plug-in nightlight or amber reptile-safe
+  bulb, nothing bird-specific required.
+- [ ] **Cockatiel - Toys (rotating).** This one was already flagged as "shareable" further
+  up this file (covers Cockatiel, Green Cheek Conure, and Lovebird with one small-parrot
+  toy multi-pack) but was never actually sourced/linked, still open.
+- [ ] **Guinea Pig - Chew toys.** Part of the earlier 3-way "Chew toys" split
+  (Chinchilla/Guinea Pig/Rabbit each need their own size), the Guinea Pig variant is
+  still unsourced.
+- [ ] **Guinea Pig - Water bottle and food dishes.** Genuinely unlinked, a basic small-pet
+  water bottle + dish combo would cover it.
+- [ ] **Tarantula - Feeding tongs.** Same pre-existing gap as the 2026-07-16 addendum
+  above (fine-tip precision tweezers, shared with Jumping Spider), still unsourced.
+- [ ] **Tarantula - Coconut fiber and peat substrate.** Distinct enough from the
+  already-linked `bioactive-substrate-mix` (a different blend/product line) that it
+  shouldn't just reuse that covers string without confirming they're the same product.
+- [ ] **Tarantula - Species-appropriate enclosure.** Lower priority, hard to pin to one
+  SKU since it genuinely varies by species (terrestrial vs. arboreal, leg span sizing),
+  worth knowing about but not a clean single Amazon search.
+
+**Confirmed correctly excluded, not gaps:** Guinea Pig pellets, Fresh vegetables
+(guinea pig + cockatiel), Annual vet wellness/avian checks, Betta pellets, and Tarantula's
+"Live feeder insects" and "Substrate replacement (infrequent)" lines - all perishable food,
+routine vet visits, or consumable restocks of a product already covered by its one-time
+setup line, matching the exclusion categories established earlier in this file.

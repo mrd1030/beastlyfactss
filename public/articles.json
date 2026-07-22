@@ -97,6 +97,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "betta-fish-cost-guide",
+      "title": "Betta Fish Cost: Full Price Breakdown",
+      "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
+      "date": "2026-07-22",
+      "image": "/assets/images/betta-fish-cost.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "betta-fish-handling-guide",
+      "title": "How to Handle a Betta Fish Safely",
+      "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
+      "date": "2026-07-22",
+      "image": "/assets/images/betta-fish-handling.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "betta-fish-health-issues-guide",
+      "title": "Betta Fish Health Issues: Signs & Causes",
+      "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's genuinely good news, since it means the first response to a sick betta is almost always the same starting point.",
+      "date": "2026-07-22",
+      "image": "/assets/images/betta-fish-health-issues.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "betta-fish-tank-setup-guide",
+      "title": "Betta Fish Tank Setup Guide",
+      "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what actually matters.",
+      "date": "2026-07-22",
+      "image": "/assets/images/betta-fish-tank-setup.jpg",
+      "category": "Aquatic Life"
+    },
+    {
       "slug": "betta-fish-vs-goldfish-guide",
       "title": "Betta Fish vs. Goldfish: Beginner Fish Guide",
       "excerpt": "Betta or goldfish? The real differences in tank size, temperature needs, social behavior, and lifespan - not just which one is cheaper at the pet store.",
@@ -183,6 +215,38 @@
       "date": "2026-06-20",
       "image": "/assets/images/chameleon-hydration.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "cockatiel-cost-guide",
+      "title": "Cockatiel Cost: Full Price Breakdown",
+      "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
+      "date": "2026-07-22",
+      "image": "/assets/images/cockatiel-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatiel-handling-guide",
+      "title": "How to Tame and Handle a Cockatiel",
+      "excerpt": "Taming a cockatiel is a trust-building process more than a technique, and it goes faster when you let the bird set the pace rather than rushing toward a step-up cue on day one.",
+      "date": "2026-07-22",
+      "image": "/assets/images/cockatiel-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatiel-health-issues-guide",
+      "title": "Cockatiel Health Issues: Signs & Causes",
+      "excerpt": "Birds hide illness as a survival instinct, which means a cockatiel that looks visibly sick is often further along than the same symptoms would suggest in a cat or dog.",
+      "date": "2026-07-22",
+      "image": "/assets/images/cockatiel-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatiel-tank-setup-guide",
+      "title": "Cockatiel Cage Setup Guide",
+      "excerpt": "A cockatiel's cage is the single biggest factor in its day-to-day wellbeing, and a few specific details, width, bar spacing, and placement, matter more than overall size alone.",
+      "date": "2026-07-22",
+      "image": "/assets/images/cockatiel-tank-setup.jpg",
+      "category": "Birds"
     },
     {
       "slug": "cockatoo-screaming-feather-plucking-explained",
@@ -289,11 +353,43 @@
       "category": "Aquatic Life"
     },
     {
+      "slug": "guinea-pig-cost-guide",
+      "title": "Guinea Pig Cost: Full Price Breakdown",
+      "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the real budgeting math here is really about caring for two, not one.",
+      "date": "2026-07-22",
+      "image": "/assets/images/guinea-pig-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "guinea-pig-handling-guide",
+      "title": "How to Handle a Guinea Pig Safely",
+      "excerpt": "Guinea pigs are prey animals, and being lifted off the ground is, to their instincts, exactly what a predator attack looks like. That doesn't mean they can't become comfortable with handling, it means the approach matters more than it would with a less nervous pet.",
+      "date": "2026-07-22",
+      "image": "/assets/images/guinea-pig-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "guinea-pig-health-issues-guide",
+      "title": "Guinea Pig Health Issues: Signs & Causes",
+      "excerpt": "Guinea pigs mask illness well, which means routine care matters more than it might seem to when everything looks fine. A handful of conditions come up often enough that every owner should be able to recognize them.",
+      "date": "2026-07-22",
+      "image": "/assets/images/guinea-pig-health-issues.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "guinea-pig-scurvy-vitamin-c-guide",
       "title": "Guinea Pig Scurvy: Vitamin C Guide",
       "excerpt": "Guinea pigs can't make their own vitamin C, unlike almost every other small pet. Here's what scurvy actually looks like and why pellets alone aren't enough.",
       "date": "2026-07-08",
       "image": "/assets/images/guinea-pig-scurvy.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "guinea-pig-tank-setup-guide",
+      "title": "Guinea Pig Cage Setup & Diet Guide",
+      "excerpt": "Guinea pig care is fairly forgiving once the basics are right, but there's one dietary detail that genuinely sets this species apart from almost every other small pet, and getting it wrong has real health consequences.",
+      "date": "2026-07-22",
+      "image": "/assets/images/guinea-pig-tank-setup.jpg",
       "category": "Small & Exotic Pets"
     },
     {
@@ -423,6 +519,38 @@
       "date": "2026-07-02",
       "image": "/assets/images/snake-brumation.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "tarantula-cost-guide",
+      "title": "Tarantula Cost: Full Price Breakdown",
+      "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to 20 years or more, which makes the low sticker price a bit misleading if you only look at year one.",
+      "date": "2026-07-22",
+      "image": "/assets/images/tarantula-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "tarantula-handling-guide",
+      "title": "Can You Handle a Tarantula Safely?",
+      "excerpt": "If you're hoping for a pet you can hold, a tarantula is probably the wrong choice. Handling carries real risk in both directions, a fall can be fatal to the spider, and its defenses can genuinely hurt you.",
+      "date": "2026-07-22",
+      "image": "/assets/images/tarantula-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "tarantula-health-issues-guide",
+      "title": "Tarantula Health Issues: Signs & Causes",
+      "excerpt": "Veterinary care for tarantulas is genuinely limited, so prevention through correct husbandry does most of the heavy lifting, and knowing what's normal versus what's actually wrong matters more than knowing what to do once something's gone wrong.",
+      "date": "2026-07-22",
+      "image": "/assets/images/tarantula-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "tarantula-tank-setup-guide",
+      "title": "Tarantula Enclosure Setup Guide",
+      "excerpt": "Tarantula enclosures are refreshingly simple compared to most exotic pets, no complex lighting, no elaborate temperature gradients, but enclosure shape and substrate depth matter quite a bit.",
+      "date": "2026-07-22",
+      "image": "/assets/images/tarantula-tank-setup.jpg",
+      "category": "Invertebrates"
     },
     {
       "slug": "uvb-lighting-complete-guide",
@@ -604,6 +732,13 @@
       "image": "/assets/images/dex/dex-chron4.jpg"
     },
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9",
+      "title": "Chronicles of Dex the Bearded Dragon: The Waiting Room (Part 9)",
+      "excerpt": "Dex is carried off in his travel tub for a checkup and lands in a vet's waiting room ruled by a loudly opinionated parrot and a magnificently put-upon chinchilla, in this ensemble comedy short story about dignity, chaos, and discovering the world is bigger than the glass.",
+      "date": "2026-07-20",
+      "image": "/assets/images/dex/dex-chron9.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7",
       "title": "Chronicles of Dex the Bearded Dragon: What the Glass Was For (Part 7)",
       "excerpt": "When a window is left open a crack on a warm afternoon, Dex and Whiskey come closer to real contact than four years of glass-pressed friendship ever allowed, and Dex learns what the boundary between them was truly protecting all along.",
@@ -637,6 +772,13 @@
       "excerpt": "A squirrel raids Otis's garden and gets away clean, leaving him to face an uncomfortable truth: there might be a whole world beyond his fence he's never once considered.",
       "date": "2026-07-08",
       "image": "/assets/images/otis/otis-chron1.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8",
+      "title": "Chronicles of Otis the Bunny: The Great Warren Expedition (Part 8)",
+      "excerpt": "Otis falls asleep under the hydrangea and wakes up leading a grand expedition across his own garden turned continent, over the Sea of the Undrained and up Mount Compostia, before opening his eyes to find how small his kingdom really is.",
+      "date": "2026-07-20",
+      "image": "/assets/images/otis/otis-chron8.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6",

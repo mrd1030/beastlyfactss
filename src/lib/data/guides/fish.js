@@ -61,6 +61,7 @@ export const fishGuides = [
         { item: "5+ gallon tank", low: 30, high: 60 },
         { item: "Aquarium heater", low: 15, high: 25 },
         { item: "Gentle/sponge filter", low: 15, high: 25 },
+        { item: "Substrate (sand or smooth gravel)", low: 10, high: 20 },
         { item: "Live or silk plants", low: 15, high: 25 },
         { item: "Water test kit", low: 15, high: 20 },
       ],

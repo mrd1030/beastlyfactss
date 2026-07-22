@@ -561,6 +561,192 @@
     ]
   },
   {
+    "path": "/content/guides/betta-fish-cost-guide.mdx",
+    "slug": "betta-fish-cost-guide",
+    "title": "How Much Does a Betta Fish Really Cost?",
+    "seoTitle": "Betta Fish Cost: Full Price Breakdown",
+    "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
+    "date": "2026-07-22",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-cost.jpg",
+    "imageAlt": "Betta fish in a small heated aquarium with a heater and filter visible",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a betta fish itself cost?",
+        "a": "$5 to $30 for most bettas, though rare varieties can run up to about $55. Males are typically priced higher than females, mostly down to their showier fins and color."
+      },
+      {
+        "q": "What does a proper betta tank setup cost?",
+        "a": "Plan on $100 to $300 for a full setup: tank, heater, filter, decor, water conditioner, and a basic test kit. How much you spend on the tank itself and the quality of the heater and filter is what moves you around in that range."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a betta?",
+        "a": "Around $20 to $30 a month covers food, water conditioner, and the modest electricity a heater and filter draw running continuously. Most owners spend $100 to $250 a year total, and food alone is often just $30 to $50 of that."
+      },
+      {
+        "q": "Do bettas need regular vet care?",
+        "a": "Rarely. Aquatic veterinarians exist for genuinely serious cases, but most betta health issues are resolved through water quality correction rather than veterinary treatment, which is part of what keeps this pet's lifetime cost relatively low."
+      }
+    ],
+    "relatedProducts": [
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner",
+      "water-test-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/betta-fish-handling-guide.mdx",
+    "slug": "betta-fish-handling-guide",
+    "title": "How to Handle a Betta Fish (Hint: You Mostly Don't)",
+    "seoTitle": "How to Handle a Betta Fish Safely",
+    "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
+    "date": "2026-07-22",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Handling",
+      "Fish Behavior",
+      "Water Quality",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-handling.jpg",
+    "imageAlt": "Betta fish being transferred with a net instead of bare hands",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I pick up my betta fish with my hands?",
+        "a": "No. A betta's protective slime coat is a genuine barrier against infection and parasites, and bare hands strip it away on contact. Move your betta with a net or a cup instead, never scoop it up by hand."
+      },
+      {
+        "q": "How do I introduce a new betta to its tank?",
+        "a": "Float the sealed bag in your tank for about 15 minutes so the water temperature can equalize gradually. Then net the fish out into the tank rather than pouring the bag's water in with it, since mixing store water into an established tank can introduce contaminants or throw off your water chemistry."
+      },
+      {
+        "q": "What does day-to-day betta handling actually look like?",
+        "a": "Net or cup transfers for water changes or moving to a new tank, avoiding tapping the glass since it startles the fish for no benefit, and keeping the tank away from constant foot traffic or vibration. Beyond that, it's really about observation, not direct interaction."
+      },
+      {
+        "q": "What are signs my betta is stressed?",
+        "a": "Lethargy, fins clamped tightly against the body, faded color, loss of appetite, hiding, and rapid gill movement. Almost all of these trace back to poor water quality or a temperature that's drifted out of range, not to anything you did by hand."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/betta-fish-health-issues-guide.mdx",
+    "slug": "betta-fish-health-issues-guide",
+    "title": "Common Betta Fish Health Issues (And Why Water Quality Comes First)",
+    "seoTitle": "Betta Fish Health Issues: Signs & Causes",
+    "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's genuinely good news, since it means the first response to a sick betta is almost always the same starting point.",
+    "date": "2026-07-22",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Health",
+      "Fin Rot",
+      "Fish Illness",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-health-issues.jpg",
+    "imageAlt": "Betta fish with frayed fins in a hospital tank during treatment",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is fin rot and how do I treat it?",
+        "a": "A bacterial infection that shows up as frayed, ragged, or discolored fins. Mild cases respond to clean water and aquarium salt, more advanced cases or ones that aren't improving need antibiotics."
+      },
+      {
+        "q": "How do I know if my betta has ich or velvet?",
+        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by gradually raising tank temperature along with a copper or formalin-based medication. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
+      },
+      {
+        "q": "What causes swim bladder disorder in bettas?",
+        "a": "Usually overfeeding, constipation, or infection, and it shows up as buoyancy problems like floating, sinking, or swimming at odd angles. Fasting the fish for 2 to 3 days often resolves mild cases, and offering a single cooked, de-shelled pea afterward can help things move along."
+      },
+      {
+        "q": "What should I do before reaching for medication?",
+        "a": "Test and correct water quality and temperature first. A huge share of betta illness resolves, or never happens in the first place, simply from keeping the tank properly heated, filtered, and on a consistent water-change schedule. Aquatic vets exist for serious or unclear cases, but they're the exception rather than the norm."
+      }
+    ],
+    "relatedProducts": [
+      "submersible-aquarium-heater",
+      "water-conditioner",
+      "water-test-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/betta-fish-tank-setup-guide.mdx",
+    "slug": "betta-fish-tank-setup-guide",
+    "title": "Betta Fish Tank Setup: Bigger, Warmer, and Cycled",
+    "seoTitle": "Betta Fish Tank Setup Guide",
+    "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what actually matters.",
+    "date": "2026-07-22",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Tank Setup",
+      "Tank Cycling",
+      "Heater and Filter",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-tank-setup.jpg",
+    "imageAlt": "Heated five gallon betta tank with a sponge filter, plants, and a hide",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does a betta fish need?",
+        "a": "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers."
+      },
+      {
+        "q": "What heater and filter does a betta tank need?",
+        "a": "A 15 to 25 watt adjustable heater sized for a small aquarium, targeting a stable 76 to 82°F with 78 to 80°F as the sweet spot. Pair it with a gentle, low-flow filter, sponge filters are the gold standard here since bettas have long, flowing fins that struggle against strong current."
+      },
+      {
+        "q": "How do I cycle a betta tank before adding the fish?",
+        "a": "Cycle the tank first to establish the beneficial bacteria colony that processes waste, rather than adding your betta to unestablished water. Always treat tap water with a dechlorinator or conditioner, test ammonia, nitrite, and nitrate periodically, and aim for a pH close to neutral, in the 6.5 to 7.8 range."
+      },
+      {
+        "q": "What and how often should I feed a betta?",
+        "a": "Two to 4 small, high-protein betta pellets once or twice a day, roughly matching what would fit in an amount the size of the fish's eye. Fast one day a week, and don't overfeed, it's the single most common mistake in betta keeping and leads directly to bloating, swim bladder problems, and fouled water."
+      }
+    ],
+    "relatedProducts": [
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner",
+      "water-test-kit"
+    ]
+  },
+  {
     "path": "/content/guides/betta-fish-vs-goldfish-guide.mdx",
     "slug": "betta-fish-vs-goldfish-guide",
     "title": "Betta Fish vs. Goldfish: Which Beginner Fish Fits You Better",
@@ -1106,6 +1292,195 @@
     "relatedProducts": [
       "automatic-misting-system-fogger",
       "fine-mist-spray-bottle"
+    ]
+  },
+  {
+    "path": "/content/guides/cockatiel-cost-guide.mdx",
+    "slug": "cockatiel-cost-guide",
+    "title": "How Much Does a Cockatiel Really Cost?",
+    "seoTitle": "Cockatiel Cost: Full Price Breakdown",
+    "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
+    "date": "2026-07-22",
+    "category": "Birds",
+    "tags": [
+      "Cockatiel",
+      "Cost",
+      "Pet Ownership Cost",
+      "Avian Vet Care",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-cost.jpg",
+    "imageAlt": "Cockatiel perched beside its cage and food dishes",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a cockatiel cost upfront?",
+        "a": "The bird itself runs $75 to $250 depending on color mutation, with normal grey typically the cheapest. A complete starter setup, cage, perches, dishes, and toys, brings most first-time owners to $320 to $860 total."
+      },
+      {
+        "q": "What's the vet cost people most underestimate with cockatiels?",
+        "a": "An initial or annual avian exam commonly runs $85 to $200, and that's before any fecal testing or bloodwork. Reproductive emergencies like egg binding can run $300 to $800 or more, and since avian vets are a specialized field that's harder to find, it's worth locating one before you actually need it."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a cockatiel?",
+        "a": "Food and supplies run about $24 to $63 a month for a pellet-based diet with fresh food, adding up to roughly $200 to $350 a year once toy replacement and cage upkeep are factored in."
+      },
+      {
+        "q": "Why does a cockatiel's cost add up more over time than the purchase price suggests?",
+        "a": "Cockatiels live 15 to 20 years, so this is a long-term financial commitment even though the entry cost is modest. The cage quality you invest in upfront and how seriously you take avian vet care matter far more to lifetime cost than the price of the bird itself."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "bird-perches",
+      "bird-feeding-dishes-okllen-4pack",
+      "bird-food-zupreem-fruitblend-cockatiel-2lb"
+    ]
+  },
+  {
+    "path": "/content/guides/cockatiel-handling-guide.mdx",
+    "slug": "cockatiel-handling-guide",
+    "title": "How to Handle and Tame a Cockatiel",
+    "seoTitle": "How to Tame and Handle a Cockatiel",
+    "excerpt": "Taming a cockatiel is a trust-building process more than a technique, and it goes faster when you let the bird set the pace rather than rushing toward a step-up cue on day one.",
+    "date": "2026-07-22",
+    "category": "Birds",
+    "tags": [
+      "Cockatiel",
+      "Handling",
+      "Taming",
+      "Care Tips",
+      "Bird Behavior",
+      "Bird Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-handling.jpg",
+    "imageAlt": "Cockatiel stepping onto a person's hand",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long should I wait before handling a new cockatiel?",
+        "a": "Give it 7 to 14 days to adjust before attempting any handling. Start by sitting near the cage and talking softly, offering treats through the bars, before progressing to your hand inside the cage."
+      },
+      {
+        "q": "What's the correct hand position for step-up training?",
+        "a": "Offer a flat palm with your fingers pointing down and your thumb tucked in, or use a handheld perch. Avoid a single upright finger, most cockatiels find it uncomfortable to grip and are more likely to bite it than step onto it."
+      },
+      {
+        "q": "What are signs my cockatiel is stressed during handling?",
+        "a": "Watch for hissing, a flattened or agitated crest, lunging, tail-flicking, fluffed feathers with rapid breathing, scrambling to the far side of the cage, or neck-stretching. If you see these, back off and try again later rather than pushing through."
+      },
+      {
+        "q": "Why shouldn't I chase a loose cockatiel to catch it?",
+        "a": "A panicked, exhausted bird can collapse or fly into a window hard enough to injure itself. Forcing the interaction also sets back the trust you've been building, which matters more for long-term handling than winning any one moment."
+      }
+    ],
+    "relatedProducts": [
+      "bird-treat-kaytee-spray-millet-7oz",
+      "bird-perches"
+    ]
+  },
+  {
+    "path": "/content/guides/cockatiel-health-issues-guide.mdx",
+    "slug": "cockatiel-health-issues-guide",
+    "title": "Common Cockatiel Health Issues (And Why the Kitchen Can Be Dangerous)",
+    "seoTitle": "Cockatiel Health Issues: Signs & Causes",
+    "excerpt": "Birds hide illness as a survival instinct, which means a cockatiel that looks visibly sick is often further along than the same symptoms would suggest in a cat or dog.",
+    "date": "2026-07-22",
+    "category": "Birds",
+    "tags": [
+      "Cockatiel",
+      "Health",
+      "Nutritional Disease",
+      "Reproductive Health",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-health-issues.jpg",
+    "imageAlt": "Cockatiel being examined by an avian veterinarian",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the most common preventable illness in cockatiels?",
+        "a": "Nutritional disease from a seed-only diet. Birds that eat mostly seeds, especially sunflower seeds and peanuts, are prone to hypovitaminosis A and calcium deficiency, and cockatiels are noted as especially prone to the calcium-related form."
+      },
+      {
+        "q": "What reproductive problems affect cockatiels?",
+        "a": "Chronic egg-laying, egg binding, soft or shell-less eggs, and oviduct prolapse are all common, even in single females with no male present. Egg binding specifically is a life-threatening emergency that needs immediate vet care, not a wait-and-see approach."
+      },
+      {
+        "q": "Why is overheated non-stick cookware so dangerous for cockatiels?",
+        "a": "The fumes are extremely dangerous, often fatal, to pet birds within minutes. Keeping birds out of the kitchen entirely and being careful with cookware is one of the most important preventable risks an owner can control."
+      },
+      {
+        "q": "What symptoms mean I should call an avian vet right away?",
+        "a": "Don't wait on discharge from the eyes, nose, or mouth, bleeding, changes in droppings, sitting on the cage floor instead of perching, persistently fluffed feathers, tail-bobbing or labored breathing, or any sudden change in appetite or behavior. Cockatiels hide illness so effectively that these signs usually mean the problem is already advanced."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-zupreem-fruitblend-cockatiel-2lb",
+      "bird-cuttlebone-penn-plax-2ct"
+    ]
+  },
+  {
+    "path": "/content/guides/cockatiel-tank-setup-guide.mdx",
+    "slug": "cockatiel-tank-setup-guide",
+    "title": "Cockatiel Cage Setup: Width, Safety, and the Diet Debate",
+    "seoTitle": "Cockatiel Cage Setup Guide",
+    "excerpt": "A cockatiel's cage is the single biggest factor in its day-to-day wellbeing, and a few specific details, width, bar spacing, and placement, matter more than overall size alone.",
+    "date": "2026-07-22",
+    "category": "Birds",
+    "tags": [
+      "Cockatiel",
+      "Cage Setup",
+      "Bar Spacing",
+      "Diet",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-tank-setup.jpg",
+    "imageAlt": "Cockatiel cage with varied perches and feeding dishes",
+    "emoji": "🦜",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a cockatiel need?",
+        "a": "Reference tables commonly list a minimum of about 20 by 20 by 30 inches for a single cockatiel, though many keepers aim closer to 24 by 24 by 30 inches for more comfortable movement. Prioritize width over height since cockatiels are horizontal flyers."
+      },
+      {
+        "q": "What bar spacing is safe for a cockatiel cage?",
+        "a": "Half an inch or smaller. Wider spacing creates a genuine and avoidable risk of head entrapment."
+      },
+      {
+        "q": "What's the ideal diet balance for a cockatiel?",
+        "a": "Pellets should make up 60 to 80% of the diet, fresh vegetables another 20 to 30%, and seeds 10% or less as an occasional treat rather than the foundation. A seed-only diet is directly linked to the nutritional diseases covered in our health issues guide."
+      },
+      {
+        "q": "Why is the kitchen dangerous for a pet cockatiel?",
+        "a": "Overheated non-stick or PTFE-coated cookware releases fumes that are rapidly fatal to birds, with documented cases of multiple birds dying within 30 minutes of exposure. The danger isn't limited to birds in the same room since the fumes travel, so keeping the cage away from the kitchen entirely is essential."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "bird-perches",
+      "bird-feeding-dishes-okllen-4pack",
+      "bird-cuttlebone-penn-plax-2ct",
+      "bird-food-zupreem-fruitblend-cockatiel-2lb"
     ]
   },
   {
@@ -1735,6 +2110,144 @@
     ]
   },
   {
+    "path": "/content/guides/guinea-pig-cost-guide.mdx",
+    "slug": "guinea-pig-cost-guide",
+    "title": "How Much Does a Guinea Pig Really Cost?",
+    "seoTitle": "Guinea Pig Cost: Full Price Breakdown",
+    "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the real budgeting math here is really about caring for two, not one.",
+    "date": "2026-07-22",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Cost",
+      "Pet Ownership Cost",
+      "Exotic Vet Care",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-cost.jpg",
+    "imageAlt": "Two guinea pigs sharing a properly sized cage with hay, dishes, and a hideout",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a guinea pig itself cost?",
+        "a": "$10 to $60 from a shelter, around $50 at most pet stores, and $100 or more for specialty breeds like Teddy, Abyssinian, or Silkie. The animal is genuinely the cheapest part of ownership, the cage and the fact that you need two are where the real budget goes."
+      },
+      {
+        "q": "Why does a guinea pig budget need to plan for two animals, not one?",
+        "a": "Guinea pigs are highly social and tend to become withdrawn or depressed when housed alone, so nearly every credible source recommends keeping them in pairs or small groups from the start. That roughly doubles food and vet-visit costs compared to what a single-guinea-pig budget might suggest, but it's not really optional if you want a guinea pig that's actually thriving."
+      },
+      {
+        "q": "What should I budget for a starter setup?",
+        "a": "Most first-time setups, including a properly sized cage, bedding, dishes, and a hideout, land around $100 to $250. The cage is the single biggest line item, and it's worth getting the size right the first time rather than upgrading later."
+      },
+      {
+        "q": "What are the ongoing monthly costs for guinea pigs?",
+        "a": "About $33 to $70 a month for one guinea pig, or $60 to $135 for a pair, which is the recommended minimum. For a pair, that typically breaks down to roughly $30 to $50 in pellets, $20 to $50 in fresh vegetables, and $40 to $60 in timothy hay."
+      }
+    ],
+    "relatedProducts": [
+      "cc-cage-guinea-pig",
+      "timothy-hay-small-pets",
+      "small-pet-hideout-igloo",
+      "small-pet-paper-bedding"
+    ]
+  },
+  {
+    "path": "/content/guides/guinea-pig-handling-guide.mdx",
+    "slug": "guinea-pig-handling-guide",
+    "title": "How to Handle a Guinea Pig Without Scaring It",
+    "seoTitle": "How to Handle a Guinea Pig Safely",
+    "excerpt": "Guinea pigs are prey animals, and being lifted off the ground is, to their instincts, exactly what a predator attack looks like. That doesn't mean they can't become comfortable with handling, it means the approach matters more than it would with a less nervous pet.",
+    "date": "2026-07-22",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Handling",
+      "Care Tips",
+      "Guinea Pig Behavior",
+      "Pet Bonding",
+      "Small Mammal Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-handling.jpg",
+    "imageAlt": "Guinea pig being held securely against a person's chest with both hands supporting its body",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the correct way to pick up a guinea pig?",
+        "a": "Approach from the side, never from above, which mimics a bird of prey swooping down. Slide one hand under the chest just behind the front legs, use your other hand to support the hindquarters at the same time, then bring the guinea pig in close against your chest so it feels supported rather than dangling."
+      },
+      {
+        "q": "Why does staying low to the ground matter so much when handling a guinea pig?",
+        "a": "A fall from even a modest height can be fatal for an animal this size. Sitting on the floor or a bed while you handle a guinea pig removes that risk entirely, and it's reason enough on its own to keep sessions close to the ground."
+      },
+      {
+        "q": "What are the signs a guinea pig is stressed during handling?",
+        "a": "Freezing in place, trying to hide or burrow away from you, high-pitched squeaking, and struggling to get free. If you see these, set the guinea pig back down gently rather than trying to push through the session."
+      },
+      {
+        "q": "Can young children handle a guinea pig on their own?",
+        "a": "No, young children should never carry a guinea pig unsupervised. The combination of a squirming animal and unsteady hands is a common way falls happen, and a fall can be fatal given how physically fragile guinea pigs are."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/guinea-pig-health-issues-guide.mdx",
+    "slug": "guinea-pig-health-issues-guide",
+    "title": "Common Guinea Pig Health Issues (And Why Vitamin C Matters So Much)",
+    "seoTitle": "Guinea Pig Health Issues: Signs & Causes",
+    "excerpt": "Guinea pigs mask illness well, which means routine care matters more than it might seem to when everything looks fine. A handful of conditions come up often enough that every owner should be able to recognize them.",
+    "date": "2026-07-22",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Health",
+      "Vitamin C Deficiency",
+      "Exotic Vet Care",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-health-issues.jpg",
+    "imageAlt": "Guinea pig being examined by an exotic veterinarian",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most urgent health issue in guinea pigs?",
+        "a": "Upper respiratory infection and GI stasis both need same-day attention. Guinea pigs are obligate nasal breathers, so a blocked nose from a respiratory infection is a genuine emergency, and a guinea pig that stops eating and passes very little or no stool needs urgent care since GI stasis can turn life-threatening quickly."
+      },
+      {
+        "q": "Why is vitamin C such a big deal for guinea pigs specifically?",
+        "a": "Guinea pigs, like humans, can't produce their own vitamin C, which makes deficiency a genuinely species-specific concern. It weakens the immune system, slows wound healing, and disrupts normal bone and tooth development, and it's almost entirely preventable through diet."
+      },
+      {
+        "q": "What are the signs of dental disease in guinea pigs?",
+        "a": "Drooling, weight loss, and unusually small droppings. Guinea pig molars can overgrow even when the front incisors look completely normal, which is part of why this condition catches owners off guard, and chronic cases sometimes need trimming under anesthesia every 4 to 6 weeks."
+      },
+      {
+        "q": "How often should a healthy-looking guinea pig see a vet?",
+        "a": "At least once a year for a wellness exam, even when nothing seems wrong. Guinea pigs hide illness well, so routine care catches problems long before they'd show up as obvious symptoms, and it's worth finding a cavy-savvy exotic vet before you actually need one."
+      }
+    ],
+    "relatedProducts": [
+      "guinea-pig-vitamin-c-supplement",
+      "timothy-hay-small-pets",
+      "small-pet-paper-bedding"
+    ]
+  },
+  {
     "path": "/content/guides/guinea-pig-scurvy-vitamin-c-guide.mdx",
     "slug": "guinea-pig-scurvy-vitamin-c-guide",
     "title": "Guinea Pig Scurvy: Why Vitamin C Isn't Optional",
@@ -1783,6 +2296,55 @@
     "relatedProducts": [
       "guinea-pig-vitamin-c-supplement",
       "timothy-hay-small-pets"
+    ]
+  },
+  {
+    "path": "/content/guides/guinea-pig-tank-setup-guide.mdx",
+    "slug": "guinea-pig-tank-setup-guide",
+    "title": "Guinea Pig Housing and Diet: Why Vitamin C Is Non-Negotiable",
+    "seoTitle": "Guinea Pig Cage Setup & Diet Guide",
+    "excerpt": "Guinea pig care is fairly forgiving once the basics are right, but there's one dietary detail that genuinely sets this species apart from almost every other small pet, and getting it wrong has real health consequences.",
+    "date": "2026-07-22",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Cage Setup",
+      "Diet",
+      "Vitamin C",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-tank-setup.jpg",
+    "imageAlt": "Guinea pig cage with hay rack, water bottle, and fresh vegetables laid out",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much space does a guinea pig need?",
+        "a": "About 7.5 square feet (roughly 30 by 36 inches) for one guinea pig, and 10.5 square feet for a pair, more if you keep a larger group. Bigger is always better here, guinea pigs are active and benefit from room to move."
+      },
+      {
+        "q": "What kind of cage and bedding work best for guinea pigs?",
+        "a": "A solid floor, not wire, since wire flooring is a common cause of bumblefoot. C&C cages, built from storage cubes and coroplast panels, are widely recommended by rescues for their combination of space and affordability. For bedding, paper-based bedding, kiln-dried pine, or fleece liners all work well, avoid cedar, raw pine, and sawdust."
+      },
+      {
+        "q": "Why is vitamin C such a big deal in a guinea pig's diet?",
+        "a": "Guinea pigs cannot synthesize their own vitamin C, unlike most other pets, which makes their diet meaningfully different from a rabbit's or a hamster's even though the basic hay-heavy structure looks similar. They need 10 to 50 milligrams a day depending on their condition, and the vitamin C in pellets degrades over time, so pellets should be used within 90 days of their manufacture date."
+      },
+      {
+        "q": "What should I avoid feeding a guinea pig?",
+        "a": "Alfalfa hay for adults, which is too high in calcium and appropriate only for very young guinea pigs, iceberg lettuce, which has essentially no nutritional value, and high-sugar fruit as anything more than an occasional treat. Also don't add vitamin C to the water, it changes the taste and often leads guinea pigs to drink less."
+      }
+    ],
+    "relatedProducts": [
+      "cc-cage-guinea-pig",
+      "digital-thermometer-hygrometer-combo",
+      "small-pet-paper-bedding",
+      "timothy-hay-small-pets",
+      "guinea-pig-vitamin-c-supplement"
     ]
   },
   {
@@ -2573,6 +3135,192 @@
     ]
   },
   {
+    "path": "/content/guides/tarantula-cost-guide.mdx",
+    "slug": "tarantula-cost-guide",
+    "title": "How Much Does a Tarantula Really Cost?",
+    "seoTitle": "Tarantula Cost: Full Price Breakdown",
+    "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to 20 years or more, which makes the low sticker price a bit misleading if you only look at year one.",
+    "date": "2026-07-22",
+    "category": "Invertebrates",
+    "tags": [
+      "Tarantula",
+      "Cost",
+      "Pet Ownership Cost",
+      "Exotic Pet Vet Care",
+      "Longevity",
+      "Invertebrate Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-cost.jpg",
+    "imageAlt": "Chilean rose hair tarantula beside its enclosure setup and feeding tongs",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a tarantula cost upfront?",
+        "a": "The spider itself runs $25 to $100 for common beginner species, a Chilean rose hair or curly hair typically lands at $20 to $50. Add the enclosure, substrate, hide, decor, and a water dish, and most first-time setups land in the $70 to $300 range before the spider itself."
+      },
+      {
+        "q": "What are the ongoing costs of keeping a tarantula?",
+        "a": "Feeding runs about $5 to $15 a month on crickets or dubia roaches, which adds up to roughly $60 to $180 a year depending on the size and appetite of your tarantula. There's no recurring supply or bedding cost anywhere close to what most pets need."
+      },
+      {
+        "q": "Do tarantulas need vet care or pet insurance?",
+        "a": "Not in any regular sense. There's no pet insurance for tarantulas, and veterinary care is genuinely rare, many areas simply don't have a vet equipped to treat one. A small emergency fund is worth having, but it's a much smaller consideration here than with most pets."
+      },
+      {
+        "q": "How long do I need to budget for a tarantula?",
+        "a": "Female Chilean rose hairs commonly live 15 to 20 years or more, while males typically live just 4 to 7 years. If you're getting a female, you're looking at a genuinely long-term commitment on a very small ongoing budget."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "shallow-water-dish",
+      "dubia-roaches-bag"
+    ]
+  },
+  {
+    "path": "/content/guides/tarantula-handling-guide.mdx",
+    "slug": "tarantula-handling-guide",
+    "title": "Should You Handle a Tarantula? Almost Always, No",
+    "seoTitle": "Can You Handle a Tarantula Safely?",
+    "excerpt": "If you're hoping for a pet you can hold, a tarantula is probably the wrong choice. Handling carries real risk in both directions, a fall can be fatal to the spider, and its defenses can genuinely hurt you.",
+    "date": "2026-07-22",
+    "category": "Invertebrates",
+    "tags": [
+      "Tarantula",
+      "Handling",
+      "Urticating Hairs",
+      "Invertebrate Behavior",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-handling.jpg",
+    "imageAlt": "Tarantula being gently guided with long tongs during enclosure maintenance",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you hold a tarantula?",
+        "a": "Mostly, no. Most tarantulas, including the Chilean rose hair, are best kept as strictly look, don't touch pets, since a fall can be fatal to the spider and its defenses can genuinely hurt you."
+      },
+      {
+        "q": "What happens if a tarantula falls?",
+        "a": "A fall from your hand, your shoulder, or even a couch cushion can rupture a tarantula's abdomen, which is often fatal. Even a short fall that wouldn't concern you for a moment with almost any other pet can be catastrophic for a tarantula's body, there's no real margin for error."
+      },
+      {
+        "q": "Are tarantula bites or urticating hairs dangerous?",
+        "a": "Bites are uncommon and rarely medically serious, they feel roughly like a hornet sting, but the bigger issue is the reflexive jerk or drop that often follows one. Urticating hairs deserve more respect, if they get into your eye, the injury can be serious enough to cause corneal damage and require an ophthalmologist."
+      },
+      {
+        "q": "Can you handle a tarantula during a molt?",
+        "a": "No, never. A molting tarantula has a fragile new exoskeleton for weeks afterward, and disturbing, handling, or feeding it during this period is one of the few absolute rules in tarantula keeping."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/tarantula-health-issues-guide.mdx",
+    "slug": "tarantula-health-issues-guide",
+    "title": "Common Tarantula Health Issues (Prevention Matters More Than Treatment)",
+    "seoTitle": "Tarantula Health Issues: Signs & Causes",
+    "excerpt": "Veterinary care for tarantulas is genuinely limited, so prevention through correct husbandry does most of the heavy lifting, and knowing what's normal versus what's actually wrong matters more than knowing what to do once something's gone wrong.",
+    "date": "2026-07-22",
+    "category": "Invertebrates",
+    "tags": [
+      "Tarantula",
+      "Health",
+      "Dehydration",
+      "Molting Complications",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-health-issues.jpg",
+    "imageAlt": "Tarantula near a shallow water dish showing healthy posture in its enclosure",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the most common health problem in pet tarantulas?",
+        "a": "Dehydration. Watch for a shriveled, wrinkled abdomen, lethargy, and what's sometimes called a death curl, the legs curling in tightly underneath the body. A shallow water dish and correct humidity prevent most cases, and mild dehydration often resolves quickly once conditions are corrected."
+      },
+      {
+        "q": "What should I do if my tarantula's molt looks stuck?",
+        "a": "A stuck or incomplete molt can be fatal, so the priority is prevention rather than treatment, proper humidity and never disturbing or feeding your tarantula during a molt. Once a molt completes normally, wait about a week for the new exoskeleton to fully harden before offering food again."
+      },
+      {
+        "q": "What does a tarantula injury or fall emergency look like?",
+        "a": "A ruptured abdomen or visible hemolymph leaking from an injury is a real emergency. Some keepers can stem a minor leak with a small amount of cornstarch, but anything beyond minor bleeding needs specialist attention if you can find it, and the outcome often depends on how quickly you act."
+      },
+      {
+        "q": "My tarantula stopped eating for weeks, is something wrong?",
+        "a": "Probably not, a tarantula that stops eating for weeks is very often just entering a pre-molt period, which is completely normal behavior. That said, if it refuses food for more than a month, or shows dehydration signs on top of the appetite loss, that combination is worth investigating further."
+      }
+    ],
+    "relatedProducts": [
+      "shallow-water-dish",
+      "digital-thermometer-hygrometer-combo",
+      "dubia-roaches-bag"
+    ]
+  },
+  {
+    "path": "/content/guides/tarantula-tank-setup-guide.mdx",
+    "slug": "tarantula-tank-setup-guide",
+    "title": "Tarantula Enclosure Setup: Shape, Substrate, and a Humidity Debate",
+    "seoTitle": "Tarantula Enclosure Setup Guide",
+    "excerpt": "Tarantula enclosures are refreshingly simple compared to most exotic pets, no complex lighting, no elaborate temperature gradients, but enclosure shape and substrate depth matter quite a bit.",
+    "date": "2026-07-22",
+    "category": "Invertebrates",
+    "tags": [
+      "Tarantula",
+      "Enclosure Setup",
+      "Substrate",
+      "Humidity",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-tank-setup.jpg",
+    "imageAlt": "Tarantula enclosure with substrate, cork bark hide, and water dish",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a pet tarantula need?",
+        "a": "A reasonable adult minimum is around 20 by 10 by 10 inches, or roughly a 10-gallon tank, sized to about three times the tarantula's leg span. Keep the overall height low, under about 12 inches, since falls are a genuine danger for most tarantulas."
+      },
+      {
+        "q": "Should a tarantula enclosure have a mesh lid?",
+        "a": "No. A tarantula's feet can get caught in mesh and cause real injury, acrylic with drilled ventilation holes is the better choice for a secure lid."
+      },
+      {
+        "q": "What humidity does a pet tarantula need?",
+        "a": "Sources genuinely disagree, some care guides recommend a moderate 40 to 60% for many commonly kept dry-adapted species, while others suggest 65 to 75%. In practice, a reliable water dish combined with lightly moistened substrate is more consistent than heavy misting, which raises mold risk without a clear benefit."
+      },
+      {
+        "q": "Can you house multiple tarantulas together?",
+        "a": "No. Most species are solitary and cannibalistic, so cohabitation isn't a workable setup regardless of enclosure size, house tarantulas singly."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "shallow-water-dish",
+      "fine-mist-spray-bottle",
+      "digital-thermometer-hygrometer-combo",
+      "dubia-roaches-bag"
+    ]
+  },
+  {
     "path": "/content/guides/uvb-lighting-complete-guide.mdx",
     "slug": "uvb-lighting-complete-guide",
     "title": "UVB Lighting: Why It Matters More Than You Think",
@@ -3250,6 +3998,35 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9",
+    "title": "Chronicles of Dex the Bearded Dragon: The Waiting Room (Part 9)",
+    "seoTitle": null,
+    "excerpt": "Dex is carried off in his travel tub for a checkup and lands in a vet's waiting room ruled by a loudly opinionated parrot and a magnificently put-upon chinchilla, in this ensemble comedy short story about dignity, chaos, and discovering the world is bigger than the glass.",
+    "date": "2026-07-20",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "new-animal-friends"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron9.jpg",
+    "imageAlt": "Bearded dragon watches regally from his travel tub as a squawking parrot holds court in a crowded vet waiting room",
+    "emoji": null,
+    "lastReviewed": "2026-07-20",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7.mdx",
     "slug": "chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7",
     "title": "Chronicles of Dex the Bearded Dragon: What the Glass Was For (Part 7)",
@@ -3388,6 +4165,35 @@
     "imageAlt": "House rabbit sitting alert and regal at the edge of a garden, surveying his territory",
     "emoji": null,
     "lastReviewed": "2026-07-08",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8",
+    "title": "Chronicles of Otis the Bunny: The Great Warren Expedition (Part 8)",
+    "seoTitle": null,
+    "excerpt": "Otis falls asleep under the hydrangea and wakes up leading a grand expedition across his own garden turned continent, over the Sea of the Undrained and up Mount Compostia, before opening his eyes to find how small his kingdom really is.",
+    "date": "2026-07-20",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "dream-sequence"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron8.jpg",
+    "imageAlt": "House rabbit dozing beneath the hydrangea, whiskers twitching as though lost in a vast and important dream",
+    "emoji": null,
+    "lastReviewed": "2026-07-20",
     "canonicalUrl": null,
     "faqs": [],
     "relatedProducts": []
