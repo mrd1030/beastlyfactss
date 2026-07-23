@@ -32,6 +32,11 @@ const FACT_CATEGORIES = [
   'birds', 'dogs-and-cats', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
 ];
 
+// Gear pet-type filter slugs (mirrors GEAR_PET_TYPES in src/lib/data/affiliateProducts.js)
+const GEAR_PET_TYPES = [
+  'reptiles-amphibians', 'birds', 'fish', 'dogs-cats', 'small-mammals',
+];
+
 // Chronicles series slug prefixes (mirrors CHRONICLES_SERIES in src/lib/chronicles.js).
 // Their stories render on /chronicles/<id>/<part>, not /blog/<slug> - the old
 // blog URLs 301 in public/_redirects.
@@ -206,6 +211,7 @@ const STATIC_ROUTES = [
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/guides/category/${s}`),
   ...FACT_CATEGORIES.map(s => `/facts/category/${s}`),
+  ...GEAR_PET_TYPES.map(s => `/gear/category/${s}`),
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];

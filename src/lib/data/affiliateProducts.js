@@ -22,6 +22,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3QHrM81",
     image: "/assets/images/affiliate/product-1.jpg",
     covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer"],
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "infrared-temp-gun",
@@ -31,6 +32,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4flGgUg",
     image: "/assets/images/affiliate/product-2.jpg",
     covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Infrared thermometer gun"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvb-arcadia-desert-12",
@@ -40,6 +42,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TipZXE",
     image: "/assets/images/affiliate/product-3.jpg",
     covers: ["Strong desert UVB (T5 HO Arcadia 12%/Desert)", "Strong UVB (T5 HO Arcadia 12%)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvb-arcadia-dragon-14",
@@ -49,6 +52,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4gUsut1",
     image: "/assets/images/affiliate/product-4.jpg",
     covers: ["Strong desert UVB (T5 HO Arcadia Dragon 12%)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvb-arcadia-forest-6",
@@ -58,6 +62,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TiqeC4",
     image: "/assets/images/affiliate/product-5.jpg",
     covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "basking-bulb-75w",
@@ -67,6 +72,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4bqzQAS",
     image: "/assets/images/affiliate/product-6.jpg",
     covers: ["Basking bulb", "Basking bulb replacement"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "basking-dome-fixture",
@@ -76,6 +82,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/44eEEFH",
     image: "/assets/images/affiliate/product-7.jpg",
     covers: ["Basking bulb + fixture", "Basking heat lamp"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "high-wattage-basking-bulb-250w",
@@ -85,6 +92,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vfa5L0",
     image: "/assets/images/affiliate/product-8.jpg",
     covers: ["High-wattage basking bulb + fixture"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "high-wattage-basking-fixture",
@@ -94,6 +102,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4ybRSRw",
     image: "/assets/images/affiliate/product-9.jpg",
     covers: ["High-wattage basking setup"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "under-tank-heat-mat-thermostat-kit",
@@ -103,6 +112,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/44hAxJ1",
     image: "/assets/images/affiliate/product-10.jpg",
     covers: ["Under-tank heater with/+ thermostat", "Heat mat with thermostat", "Heat source with thermostat", "Thermostat-controlled heat source", "Low-wattage heat lamp/mat with thermostat", "Under-tank heater with thermostat", "Under-tank heater + thermostat"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "shallow-water-dish",
@@ -112,6 +122,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/44hAzR9", // medium size - a reasonable default; small/large also available
     image: "/assets/images/affiliate/product-12.jpg",
     covers: ["Shallow water dish", "Small shallow water dish", "Small water dish", "Water dish"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "large-soakable-water-dish",
@@ -121,6 +132,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eKyN0W",
     image: "/assets/images/affiliate/product-14.jpg",
     covers: ["Soak-able water dish", "Large soak-able water dish", "Shallow soak dish", "Large water dish"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "fine-mist-spray-bottle",
@@ -130,6 +142,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vPKMjX",
     image: "/assets/images/affiliate/product-15.jpg",
     covers: ["Misting bottle", "Fine misting bottle", "Spray bottle", "Fine misting bottle or fogger"],
+    pets: ["birds", "reptiles-amphibians"],
   },
   {
     slug: "automatic-misting-system-fogger",
@@ -139,6 +152,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4fibBY2",
     image: "/assets/images/affiliate/product-16.jpg",
     covers: ["Automatic misting system", "Automatic mister", "Fine mist system", "Mist system or fogger"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cork-bark-round-hide",
@@ -148,6 +162,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3SKmfOx",
     image: "/assets/images/affiliate/product-17.jpg",
     covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "climbing-branch-mopani-wood",
@@ -157,6 +172,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3QQNV3L",
     image: "/assets/images/affiliate/product-18.jpg",
     covers: ["Branches and cork bark", "Climbing branches", "Sturdy climbing branches", "Branches for climbing/enrichment", "Cork bark and branches", "Branches for climbing"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "water-test-kit",
@@ -166,6 +182,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4p1T7yd",
     image: "/assets/images/affiliate/product-19.jpg",
     covers: ["Water test kit", "Water quality test kit"],
+    pets: ["reptiles-amphibians", "fish"],
   },
   {
     slug: "water-conditioner",
@@ -175,6 +192,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3Rg5gTT",
     image: "/assets/images/affiliate/product-20.jpg",
     covers: ["Water conditioner", "Dechlorinated/RO water treatment"],
+    pets: ["reptiles-amphibians", "fish"],
   },
   {
     slug: "bioactive-substrate-mix",
@@ -184,6 +202,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wqEOFU",
     image: "/assets/images/affiliate/product-21.jpg",
     covers: ["Coconut fiber or bioactive substrate", "Bioactive or coconut fiber substrate"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cypress-mulch-substrate",
@@ -193,6 +212,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vNgpe1",
     image: "/assets/images/affiliate/product-22.jpg",
     covers: ["Coconut fiber or cypress mulch substrate", "Cypress mulch or coconut fiber substrate", "Aspen or cypress mulch substrate"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "aspen-shavings-substrate",
@@ -202,6 +222,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TkxAVF",
     image: "/assets/images/affiliate/product-23.jpg",
     covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "sphagnum-moss",
@@ -211,6 +232,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4bpnvNm",
     image: "/assets/images/affiliate/product-24.jpg",
     covers: ["Sphagnum moss for moist hide", "Damp sphagnum moss for moist hide"],
+    pets: ["reptiles-amphibians"],
   },
 
   // --- Batch 3: Dog & Cat Gear ---
@@ -222,6 +244,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wa4x65",
     image: "/assets/images/affiliate/product-25.jpg", // same reference photo used for all 3 sizes, per user
     covers: ["Small crate + bed"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "wire-dog-crate-medium",
@@ -231,6 +254,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4bynMO7", // also stands in for "Properly sized crate" (universal guide) as a reasonable default
     image: "/assets/images/affiliate/product-25.jpg",
     covers: ["Crate or dog bed (full-stretch size)", "Medium crate + bed", "Small/medium crate + bed", "Properly sized crate"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "wire-dog-crate-large",
@@ -240,6 +264,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/44BQqKF",
     image: "/assets/images/affiliate/product-25.jpg",
     covers: ["Large crate + bed", "XL crate (42-54 in)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "crate-pad-bed",
@@ -248,7 +273,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3SO0uxm",
     image: "/assets/images/affiliate/product-26.jpg",
-    covers: [], // pairs with the crates above rather than matching its own cost-builder line
+    covers: [],
+    pets: ["dogs-cats"], // pairs with the crates above rather than matching its own cost-builder line
   },
   {
     slug: "collar-id-tag",
@@ -258,6 +284,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4veqa3P",
     image: "/assets/images/affiliate/product-27.jpg",
     covers: ["Collar with ID tag + microchip", "Collar ID tag + microchip"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "deshedding-brush",
@@ -267,6 +294,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vgvpQs",
     image: "/assets/images/affiliate/product-28.jpg",
     covers: ["Grooming supplies (heavy shedding coat)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "long-hair-grooming-brush",
@@ -276,6 +304,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4h1i8Yk",
     image: "/assets/images/affiliate/product-29.jpg",
     covers: ["Grooming tools (long coat)", "Grooming tools (long silky coat)", "Daily grooming tools (brushes, combs)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "nail-clippers",
@@ -285,6 +314,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vKAzFk",
     image: "/assets/images/affiliate/product-30.jpg",
     covers: ["Nail clippers", "Nail clippers + styptic powder"],
+    pets: ["birds", "small-mammals"],
   },
   {
     slug: "nail-clippers-electric",
@@ -293,7 +323,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4eYvi5W",
     image: "/assets/images/affiliate/product-31.jpg",
-    covers: [], // alternative to the manual clippers above, browsable only
+    covers: [],
+    pets: ["dogs-cats"], // alternative to the manual clippers above, browsable only
   },
   {
     slug: "styptic-powder",
@@ -302,7 +333,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3Rsgy7z",
     image: "/assets/images/affiliate/product-32.jpg",
-    covers: [], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
+    covers: [],
+    pets: ["dogs-cats"], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
   },
   {
     slug: "litter-box",
@@ -312,6 +344,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3SPggIn",
     image: "/assets/images/affiliate/product-33.jpg",
     covers: ["Litter box", "Litter box + litter", "Litter boxes (one per cat + one extra)"],
+    pets: ["small-mammals", "dogs-cats"],
   },
   {
     slug: "cat-tree-scratching-post",
@@ -321,6 +354,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vlaH1R",
     image: "/assets/images/affiliate/product-34.jpg",
     covers: ["Cat tree or vertical climbing space", "Large sturdy multi-level cat furniture"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "food-water-bowls",
@@ -330,6 +364,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wu57v1",
     image: "/assets/images/affiliate/product-35.jpg",
     covers: ["Food and water bowls", "Food/water bowls", "Food/water bowls or cat fountain"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "puzzle-feeder",
@@ -339,6 +374,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vg6egE",
     image: "/assets/images/affiliate/product-36.jpg",
     covers: ["Puzzle feeders", "Puzzle feeders and enrichment toys", "Puzzle feeders and interactive toys", "Small-sized puzzle feeders and toys", "Foraging and puzzle toys"],
+    pets: ["dogs-cats", "birds"],
   },
   {
     slug: "durable-chew-toys",
@@ -350,6 +386,7 @@ export const AFFILIATE_PRODUCTS = [
     // "Chew toys" (rabbit/guinea pig/chinchilla) deliberately NOT covered here - a KONG-style
     // dog chew is the wrong size/material for small mammals. Needs its own small-pet-safe link.
     covers: ["Durable chew toys (powerful chewers)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "leash-harness-set",
@@ -359,6 +396,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vTOcCj",
     image: "/assets/images/affiliate/product-40.jpg",
     covers: ["Leash", "Leash and harness", "Flat collar + harness + leash", "Harness (prevents tracheal strain)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "exercise-wheel-chinchilla",
@@ -368,6 +406,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4gmXgL1",
     image: "/assets/images/affiliate/product-38.jpg",
     covers: ["12-14 in solid exercise wheel"],
+    pets: ["small-mammals"],
   },
   {
     slug: "exercise-wheel-sugar-glider",
@@ -377,6 +416,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4aEAHhb",
     image: "/assets/images/affiliate/product-39.jpg",
     covers: ["Solid exercise wheel (glider-specific)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "small-pet-paper-bedding",
@@ -386,6 +426,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4voH9Ap",
     image: "/assets/images/affiliate/product-41.jpg",
     covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding"],
+    pets: ["small-mammals"],
   },
 
   // --- Batch 4: Aquarium ---
@@ -397,6 +438,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eQY1L5",
     image: "/assets/images/affiliate/product-42.jpg",
     covers: ["Aquarium heater", "Submersible water heater"],
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "sponge-filter",
@@ -406,6 +448,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3T8xyAd",
     image: "/assets/images/affiliate/product-43.jpg",
     covers: ["Gentle filter", "Gentle/sponge filter"],
+    pets: ["fish"],
   },
   {
     slug: "canister-filter",
@@ -415,6 +458,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eQAk5K",
     image: "/assets/images/affiliate/product-44.jpg",
     covers: ["Canister filter (strong filtration)"],
+    pets: ["fish"],
   },
   {
     slug: "canister-filter-large",
@@ -424,6 +468,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vNGY2v",
     image: "/assets/images/affiliate/product-61.jpg",
     covers: ["Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)"],
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "tank-10-gallon",
@@ -433,6 +478,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4pjiyeT",
     image: "/assets/images/affiliate/product-45.jpg",
     covers: ["10-20+ gallon tank", "10-20+ gallon tank (for a group)", "10+ gallon tank", "20+ gallon tank"],
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "tank-20-gallon-long",
@@ -442,6 +488,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eSbKl2",
     image: "/assets/images/affiliate/product-46.jpg",
     covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium"],
+    pets: ["reptiles-amphibians"],
   },
 
   // --- Batch 5: Enclosure Sizes ---
@@ -453,6 +500,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4f8WVcx",
     image: "/assets/images/affiliate/product-47.jpg",
     covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "pvc-enclosure-4x2x2-alt",
@@ -461,7 +509,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4f2g2oJ",
     image: "/assets/images/affiliate/product-48.jpg",
-    covers: [], // second option at the same size - browsable only
+    covers: [],
+    pets: ["reptiles-amphibians"], // second option at the same size - browsable only
   },
   {
     slug: "glass-terrarium-18x18x24",
@@ -471,6 +520,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vlb6Bp",
     image: "/assets/images/affiliate/product-49.jpg",
     covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium", "30x12x12 in or larger enclosure"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "bird-flight-cage-large",
@@ -480,6 +530,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wuT808", // not sized/gauged for cockatoos - they need a dedicated heavy-gauge, lockable cage instead
     image: "/assets/images/affiliate/product-50.jpg",
     covers: ["Flight cage (24-30 in wide)", "36x24x48 in cage (larger preferred)", "18x18x24 in cage (larger preferred)", "24x24x24 in+ cage (larger preferred)", "24x24x30 in cage (larger preferred)", "24x24x30 in+ cage (larger preferred)", "24x24x36 in aviary-style cage"],
+    pets: ["birds", "small-mammals"],
   },
   {
     slug: "tortoise-table",
@@ -489,6 +540,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3Rkp3S6",
     image: "/assets/images/affiliate/product-51.jpg",
     covers: ["Outdoor enclosure or large tortoise table", "Tortoise table or outdoor pen", "Indoor tortoise table (for hatchlings/juveniles)"],
+    pets: ["reptiles-amphibians"],
   },
 
   // --- Batch 6: Bird / Glider / Chinchilla + Plants & Fencing ---
@@ -500,6 +552,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4pbY2ge",
     image: "/assets/images/affiliate/product-52.jpg",
     covers: ["Perches of varied diameters", "Perches and swings", "Multiple textured perches"],
+    pets: ["birds"],
   },
   {
     slug: "sugar-glider-bonding-pouch",
@@ -509,6 +562,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eNZiCK",
     image: "/assets/images/affiliate/product-53.jpg",
     covers: ["Bonding pouch", "Multiple sleeping pouches", "Snuggle pouch or bird tent"],
+    pets: ["small-mammals", "birds"],
   },
   {
     slug: "small-pet-hideout-igloo",
@@ -518,6 +572,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3T761Pz",
     image: "/assets/images/affiliate/product-54.jpg",
     covers: ["Hideouts and tunnels", "Hideout/igloo", "Platforms and hideouts"],
+    pets: ["small-mammals"],
   },
   {
     slug: "driftwood",
@@ -527,6 +582,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eR0Z2l",
     image: "/assets/images/affiliate/product-55.jpg",
     covers: ["Driftwood and tall plants", "Driftwood and plant cover", "Heavy driftwood and rock (digging-proof)"],
+    pets: ["fish"],
   },
   {
     slug: "live-terrarium-plants",
@@ -536,6 +592,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4grZYPq",
     image: "/assets/images/affiliate/product-56.jpg",
     covers: ["Dense live plants", "Live plants (pothos, ficus)", "Live plants (pothos, ficus, bromeliads)", "Live plants (pothos, hibiscus, ficus)", "Dense live or silk plants", "Live or silk plants"],
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "artificial-terrarium-plants",
@@ -545,6 +602,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4gmXC4j",
     image: "/assets/images/affiliate/product-57.jpg",
     covers: ["Live or artificial plants", "Dense live or artificial plants", "Broad-leafed plants or artificial foliage", "Live or artificial plants + cork bark"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cc-cage-guinea-pig",
@@ -554,6 +612,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3SOqokx",
     image: "/assets/images/affiliate/product-58.jpg",
     covers: ["C&C cage (7.5 sq ft+)", "Exercise pen or C&C condo"],
+    pets: ["small-mammals"],
   },
   {
     slug: "escape-proof-fencing",
@@ -563,6 +622,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4aCGvb1",
     image: "/assets/images/affiliate/product-59.jpg",
     covers: ["Secure high walls (escape-proof)", "Escape-proof fencing (buried base)", "Outdoor enclosure materials + buried fencing"],
+    pets: ["reptiles-amphibians", "dogs-cats"],
   },
   {
     slug: "chinchilla-dust-bath-house",
@@ -572,6 +632,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4w2STJO",
     image: "/assets/images/affiliate/product-60.jpg",
     covers: ["Dust bath house + chinchilla dust"],
+    pets: ["small-mammals"],
   },
   {
     slug: "chinchilla-dust",
@@ -581,6 +642,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vgxhss",
     image: "/assets/images/affiliate/product-62.jpg",
     covers: ["Chinchilla dust (ongoing)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "guinea-pig-vitamin-c-supplement",
@@ -590,6 +652,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/44CDAMd",
     image: "/assets/images/affiliate/product-63.jpg",
     covers: ["Vitamin C supplement (if needed)"],
+    pets: ["small-mammals"],
   },
 
   // --- Batch 7: species-aware gear gap pass (gear-product-variants-needed.md) ---
@@ -601,6 +664,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4h9WW2u",
     image: "/assets/images/affiliate/product-64.jpg",
     covers: ["Grass hay (unlimited)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "aquarium-chiller-axolotl",
@@ -610,6 +674,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wCcGzE",
     image: "/assets/images/affiliate/product-65.jpg",
     covers: ["Aquarium chiller (keeps water 60-68°F)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "aquarium-chiller-fan-budget",
@@ -618,7 +683,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4wzLZvv",
     image: "/assets/images/affiliate/product-66.jpg",
-    covers: [], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+    covers: [],
+    pets: ["reptiles-amphibians"], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
   },
 
   // --- Batch 8: mined from existing Sanity blog post content (2026-07-13) - these
@@ -639,6 +705,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uiE7x7",
     image: "/assets/images/affiliate/product-67.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "chuckit-ultra-ball-2-pack",
@@ -648,6 +715,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4awvh7J",
     image: "/assets/images/affiliate/product-68.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "chuckit-ultra-ball-launcher-bundle",
@@ -657,6 +725,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4v20kQY",
     image: "/assets/images/affiliate/product-69.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "nina-ottosson-dog-tornado-puzzle-toy",
@@ -666,6 +735,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4g102oU",
     image: "/assets/images/affiliate/product-70.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "zippypaws-skinny-peltz-plush-toys",
@@ -675,6 +745,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vyLhyq",
     image: "/assets/images/affiliate/product-71.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "rundik-snuffle-mat-dogs",
@@ -684,6 +755,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4asLTx4",
     image: "/assets/images/affiliate/product-72.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "muddy-mat-door-mat",
@@ -693,6 +765,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uS2jaw",
     image: "/assets/images/affiliate/product-73.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "mammoth-flossy-chews-rope-tug",
@@ -702,6 +775,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/43A2N9z",
     image: "/assets/images/affiliate/product-74.jpg",
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "licki-mat-dogs",
@@ -711,6 +785,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4oaoQwW",
     image: null, // no source photo - was an inline text link, not a full Product Recommendation block
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "west-paw-zogoflex-toy",
@@ -720,6 +795,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4obD6W3",
     image: null,
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "nylabone-dura-chew",
@@ -729,6 +805,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eo77i3",
     image: null,
     covers: [],
+    pets: ["dogs-cats"],
   },
   {
     slug: "soft-pellets-axolotl",
@@ -738,6 +815,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4tR5M7U",
     image: "/assets/images/affiliate/product-75.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "api-tap-water-conditioner",
@@ -747,6 +825,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4tXcbib",
     image: "/assets/images/affiliate/product-76.jpg",
     covers: [],
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "paizoo-fish-tank-thermometer",
@@ -756,6 +835,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uwGHk2",
     image: "/assets/images/affiliate/product-77.jpg",
     covers: [],
+    pets: ["fish"],
   },
   {
     slug: "hide-cave-aquarium-decoration",
@@ -765,6 +845,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4dsuNBx",
     image: "/assets/images/affiliate/product-78.jpg",
     covers: [],
+    pets: ["fish"],
   },
   {
     slug: "arcadia-lumenize-prot5-36in-12pct",
@@ -774,6 +855,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uzKMns",
     image: "/assets/images/affiliate/product-79.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "arcadia-lumenize-prot5-24in-12pct",
@@ -783,6 +865,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4dOCulX",
     image: null,
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "arcadia-t5-uvb-36in-14pct-dragon",
@@ -792,6 +875,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/43AcIvA",
     image: "/assets/images/affiliate/product-80.jpg",
     covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "arcadia-t5-uvb-22-5in-12pct-desert",
@@ -801,6 +885,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4dEH5H9",
     image: null,
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "zoo-med-basking-spot-lamp-75w-2pack",
@@ -810,6 +895,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3RWkQnz",
     image: "/assets/images/affiliate/product-81.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "zoo-med-repti-basking-spot-lamp-100w",
@@ -819,6 +905,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/49zo7zk",
     image: null,
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "zoo-med-digital-thermometer-3pack",
@@ -828,6 +915,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vp7leJ",
     image: "/assets/images/affiliate/product-82.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "etekcity-infrared-thermometer-gun",
@@ -837,6 +925,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4dEII7J",
     image: "/assets/images/affiliate/product-83.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "bearded-dragon-hammock-triangle",
@@ -846,6 +935,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uGnQCX",
     image: "/assets/images/affiliate/product-84.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "bearded-dragon-hammock-seagrass-2pc",
@@ -855,6 +945,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3RvqNYC",
     image: "/assets/images/affiliate/product-85.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "dubia-roach-colony-starter-kit",
@@ -864,6 +955,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uGamHo",
     image: "/assets/images/affiliate/product-86.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "dubia-roaches-bag",
@@ -873,6 +965,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4uFr6hU",
     image: null,
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "api-freshwater-master-test-kit",
@@ -882,6 +975,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3SSRCGG",
     image: "/assets/images/affiliate/product-87.jpg",
     covers: [],
+    pets: ["fish", "reptiles-amphibians"],
   },
 
   // --- Batch 9: Bird gear (Rufus/Amazon research pass) --- covers: [] on all of
@@ -898,6 +992,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TFxuYR",
     image: "/assets/images/affiliate/product-88.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cage-prevue-wrought-iron-flight-5ft",
@@ -907,6 +1002,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4ymrwMJ",
     image: "/assets/images/affiliate/product-89.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cage-prevue-steel-flight-large",
@@ -916,6 +1012,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4yJx5Fd",
     image: "/assets/images/affiliate/product-90.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cage-yaheetech-61in-playtop",
@@ -925,6 +1022,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vxCxry",
     image: "/assets/images/affiliate/product-91.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cage-vision-m02-tall-medium",
@@ -934,6 +1032,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TadcGQ",
     image: "/assets/images/affiliate/product-92.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cage-prevue-flight-blue-black",
@@ -943,6 +1042,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3T7QNtN",
     image: "/assets/images/affiliate/product-93.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-perch-rope-bungee-23in",
@@ -952,6 +1052,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3T7QOhl",
     image: "/assets/images/affiliate/product-94.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-perch-rope-63in-2pack",
@@ -961,6 +1062,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4ypWNOD",
     image: "/assets/images/affiliate/product-95.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-perch-limio-6pc-set",
@@ -970,6 +1072,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3SX5MXx",
     image: "/assets/images/affiliate/product-96.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-perch-natural-wood-8pc-set",
@@ -979,6 +1082,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vteIkJ",
     image: "/assets/images/affiliate/product-97.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-perch-czwestc-8pc-apple-wood",
@@ -988,6 +1092,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TadpK8",
     image: "/assets/images/affiliate/product-98.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-feeding-bowls-motbach-3pack",
@@ -997,6 +1102,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/45cQKzq",
     image: "/assets/images/affiliate/product-99.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-feeding-cups-pinvnby-2pack",
@@ -1006,6 +1112,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4f8dIxB",
     image: "/assets/images/affiliate/product-100.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-feeding-dishes-okllen-4pack",
@@ -1015,6 +1122,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3Ref6FW",
     image: "/assets/images/affiliate/product-101.jpg",
     covers: ["Food and water dishes"],
+    pets: ["birds", "reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "bird-food-roudybush-daily-mini-44oz",
@@ -1024,6 +1132,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4fGIJJa",
     image: "/assets/images/affiliate/product-102.jpg",
     covers: ["Small parrot pellets"],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-roudybush-daily-small-22oz",
@@ -1033,6 +1142,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4gCK0lA",
     image: "/assets/images/affiliate/product-103.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-harrisons-high-potency-fine-1lb",
@@ -1042,6 +1152,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wGLzDI",
     image: "/assets/images/affiliate/product-104.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-harrisons-adult-lifetime-1lb",
@@ -1051,6 +1162,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TGbDAw",
     image: "/assets/images/affiliate/product-105.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-lafebers-premium-parrots-25lb",
@@ -1060,6 +1172,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vEqngK",
     image: "/assets/images/affiliate/product-106.jpg",
     covers: ["High-quality parrot pellets", "Large parrot pellets"],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-zupreem-fruitblend-parakeet-2lb",
@@ -1069,6 +1182,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4b0MGWt",
     image: "/assets/images/affiliate/product-107.jpg",
     covers: ["Budgie pellets or seed mix"],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-zupreem-fruitblend-cockatiel-2lb",
@@ -1078,6 +1192,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4566tQT",
     image: "/assets/images/affiliate/product-108.jpg",
     covers: ["Cockatiel pellets"],
+    pets: ["birds"],
   },
   {
     slug: "bird-food-lafebers-premium-canaries-1-25lb",
@@ -1087,6 +1202,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3TGbHAg",
     image: "/assets/images/affiliate/product-109.jpg",
     covers: ["Seed mix or pellets"],
+    pets: ["birds"],
   },
   {
     slug: "bird-treat-kaytee-spray-millet-7oz",
@@ -1096,6 +1212,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vEqqcq",
     image: "/assets/images/affiliate/product-110.jpg",
     covers: ["Millet sprays (treats)"],
+    pets: ["birds"],
   },
   {
     slug: "bird-treat-living-world-millet-spray-17-6oz",
@@ -1105,6 +1222,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4yGD4KS",
     image: "/assets/images/affiliate/product-111.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-treat-birds-love-millet-1lb",
@@ -1114,6 +1232,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3RdrF4j",
     image: "/assets/images/affiliate/product-112.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cuttlebone-penn-plax-2ct",
@@ -1123,6 +1242,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4fbLrVy",
     image: "/assets/images/affiliate/product-113.jpg",
     covers: ["Cuttlebone or mineral block", "Cuttlebone and mineral block"],
+    pets: ["birds"],
   },
   {
     slug: "bird-cuttlebone-prevue-5in",
@@ -1132,6 +1252,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4bqRogo",
     image: "/assets/images/affiliate/product-114.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-cuttlebone-double",
@@ -1141,6 +1262,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3QW3RSs",
     image: "/assets/images/affiliate/product-115.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-toy-bbjinronjy-sola-ball-2pc",
@@ -1150,6 +1272,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wMu5Wu",
     image: "/assets/images/affiliate/product-116.jpg",
     covers: ["Foraging and shreddable toys", "Shreddable toys"],
+    pets: ["birds"],
   },
   {
     slug: "bird-toy-rope-perch-bell",
@@ -1159,6 +1282,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/45a3irm",
     image: "/assets/images/affiliate/product-117.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-toy-kyouki-foraging-box",
@@ -1168,6 +1292,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4fFoJqn",
     image: "/assets/images/affiliate/product-118.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-toy-xlpeixin-rope-perch",
@@ -1177,6 +1302,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vDquJE",
     image: "/assets/images/affiliate/product-119.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "bird-toy-swing-sisal-large",
@@ -1186,6 +1312,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4yyqUnh",
     image: "/assets/images/affiliate/product-120.jpg",
     covers: [],
+    pets: ["birds"],
   },
   {
     slug: "air-purifier-levoit-core300-p",
@@ -1195,6 +1322,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4ynFpdm",
     image: "/assets/images/affiliate/product-121.jpg",
     covers: [],
+    pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   {
     slug: "air-purifier-levoit-vital-100s-p",
@@ -1204,6 +1332,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4fG1D2R",
     image: "/assets/images/affiliate/product-122.jpg",
     covers: [],
+    pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   {
     slug: "air-purifier-compact-1076sqft",
@@ -1213,6 +1342,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3T22mTm",
     image: "/assets/images/affiliate/product-123.jpg",
     covers: [],
+    pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   // --- Batch 10: reptile gap-fill pass (dimming thermostats, calcium, UVB,
   // crested gecko diet, hides) - sourced 2026-07-22 via Chrome/SiteStripe,
@@ -1230,6 +1360,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0GFD5T3H7?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-124.jpg",
     covers: ["Thermostat"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "dimming-thermostat-exo-terra-proportional",
@@ -1239,6 +1370,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B08R29S2WB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-125.jpg",
     covers: ["Quality thermostat"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "dimming-thermostat-reptizoo-pid",
@@ -1248,6 +1380,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0BGS517FT?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-126.jpg",
     covers: ["Under-tank heater with quality thermostat"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "calcium-miner-all-indoor-2pack",
@@ -1257,6 +1390,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B01IQMEZP4?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-127.jpg",
     covers: ["Calcium and multivitamin supplements"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "calcium-repashy-plus-6oz",
@@ -1266,6 +1400,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D7JWFV5W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-128.jpg",
     covers: ["Calcium w/D3 + multivitamin"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "calcium-repashy-plus-lod-3oz",
@@ -1275,6 +1410,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D82LT16W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-129.jpg",
     covers: ["Calcium w/ and w/o D3 + multivitamin"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "calcium-repashy-superfoods-plus-4oz",
@@ -1284,6 +1420,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D6SP118Q?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-130.jpg",
     covers: ["Calcium + D3 and multivitamin"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "calcium-arcadia-earthpro-revitalised3",
@@ -1293,6 +1430,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0884CJSPH?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-131.jpg",
     covers: ["Calcium w/D3 supplement", "Calcium (always-available dish)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvb-zoo-med-5-0-t5-ho-14in-hood",
@@ -1302,6 +1440,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00M9ONY1W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-132.jpg",
     covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-pangea-fruit-mix-treat-16oz",
@@ -1311,6 +1450,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B01NCJP6CR?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-133.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-pangea-watermelon-complete-8oz",
@@ -1320,6 +1460,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00KO450UC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-134.jpg",
     covers: ["Commercial crested gecko diet"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-pangea-papaya-8oz",
@@ -1329,6 +1470,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0140B8H2C?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-135.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-pangea-watermelon-2oz",
@@ -1338,6 +1480,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B019P10EEG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-136.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-repashy-classic-6oz",
@@ -1347,6 +1490,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0DBRSQ42K?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-137.jpg",
     covers: ["Commercial crested gecko diet (CGD)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-repashy-banana-6oz",
@@ -1356,6 +1500,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D7JTZ6MW?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-138.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-repashy-grubs-n-fruit-6oz",
@@ -1365,6 +1510,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D7JYJ99S?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-139.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "crested-gecko-diet-repashy-mrp-mango-superblend-12oz",
@@ -1374,6 +1520,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D84QQFP3?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-140.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "hide-exo-terra-reptile-cave-xl",
@@ -1383,6 +1530,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00SLM5GWQ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-141.jpg",
     covers: ["Multiple large hides"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "hide-exo-terra-gecko-cave-medium",
@@ -1392,6 +1540,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B008YDHDD2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-142.jpg",
     covers: ["3 hides (warm, cool, moist)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "hide-zoomed-habba-hut-medium",
@@ -1401,6 +1550,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B092HDK2S4?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-143.jpg",
     covers: ["Two snug hides"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "feeding-tongs-lasnten-long-rubber-tip",
@@ -1410,6 +1560,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0CBKD64LP?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-144.jpg",
     covers: ["Feeding tongs"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "ceramic-heat-emitter-zoo-med-repticare-150w",
@@ -1419,6 +1570,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0002AQCQO?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-145.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "thermostat-bn-link-on-off",
@@ -1428,6 +1580,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B01I15S6OM?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-146.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "enclosure-repti-zoo-36x18x18-50gal",
@@ -1437,6 +1590,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0CJB82285?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-147.jpg",
     covers: ["36x18x18 in enclosure"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvi-meter-solarmeter-6-5r",
@@ -1446,6 +1600,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B076GXJFJG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-148.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
 
   // --- Batch 11: broader gap-fill pass across reptile/small-mammal/bird/
@@ -1464,6 +1619,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B08DP3H5N9?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-149.jpg",
     covers: ["Calcium and multivitamin supplements (glider-specific)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "calcium-tortoise-turtle-herbivorous-sulcata",
@@ -1473,6 +1629,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0F79VJMKD?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-150.jpg",
     covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)", "Calcium supplements"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "feeding-tongs-entomology-forceps-fine-tip",
@@ -1482,6 +1639,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0DCJXXMCT?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-151.jpg",
     covers: ["Feeding tongs (fine-tip precision)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "feeding-tongs-short-soft-tip-4pack",
@@ -1491,6 +1649,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0FB3PRD2Y?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-152.jpg",
     covers: ["Feeding tongs (short, soft-tipped)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "substrate-zoo-med-reptisand-burrowing",
@@ -1500,6 +1659,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0002DIZKC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-153.jpg",
     covers: ["Sandy desert substrate", "Deep substrate (12 in+ sandy soil mix)", "12 in+ deep substrate (topsoil/sand mix)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "substrate-hermit-crab-flukers-sand-coco",
@@ -1509,6 +1669,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0B52DC9VB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-154.jpg",
     covers: ["Deep sand/coconut fiber substrate"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "substrate-tarantula-coconut-fiber-peat",
@@ -1518,6 +1679,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0CY23K32S?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-155.jpg",
     covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "uvb-zoo-med-reptisun-24in-high-output-hood",
@@ -1527,6 +1689,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0FF9GHCDC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-156.jpg",
     covers: ["Strong desert UVB (T5 HO 12%+)", "Strong UVB (Arcadia 12%, indoor setups)", "Strong UVB (T5 HO)"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "bulb-mega-ray-mercury-vapor-basking-combo",
@@ -1536,6 +1699,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00TRI4NPY?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-157.jpg",
     covers: [],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "enclosure-zoo-med-reptibreeze-24x24x48",
@@ -1545,6 +1709,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B001PHABI8?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-158.jpg",
     covers: ["24x24x48 in all-screen enclosure"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "soaking-tub-large-38in",
@@ -1554,6 +1719,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0FNVWJRQL?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-159.jpg",
     covers: ["Large water tub for soaking"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cork-bark-round-small",
@@ -1563,6 +1729,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00DDZ55D6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-160.jpg",
     covers: ["Cork bark slabs and flat stones"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cork-bark-round-medium",
@@ -1572,6 +1739,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B01F654UHM?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-161.jpg",
     covers: ["Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cork-bark-round-xl",
@@ -1581,6 +1749,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B001F9ANVG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-162.jpg",
     covers: ["Cork bark rounds and sturdy branches"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "cork-bark-bits-mini",
@@ -1590,6 +1759,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0C7D8XSJ9?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-163.jpg",
     covers: ["Cork bark tubes or egg cartons", "Thin branches and cork bark"],
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "chew-chinchilla-mineral-lava-blocks",
@@ -1599,6 +1769,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0F6V5ZZR6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-164.jpg",
     covers: ["Chew toys (mineral/pumice)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "chew-guinea-pig-natural-sticks",
@@ -1608,6 +1779,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0G41RJPZJ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-165.jpg",
     covers: ["Chew toys (smaller, softer)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "chew-rabbit-bamboo-sticks",
@@ -1617,6 +1789,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0FNM64GL1?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-166.jpg",
     covers: ["Chew toys (larger, tougher)"],
+    pets: ["small-mammals"],
   },
   {
     slug: "dental-kit-cat-virbac-cet",
@@ -1626,6 +1799,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00D1YH3P2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-167.jpg",
     covers: ["Dental hygiene routine (cat-formulated)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "dental-kit-dog-virbac-cet",
@@ -1635,6 +1809,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0GHDFXQDB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-168.jpg",
     covers: ["Dental hygiene routine (dog-formulated)"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "litter-cat-purina-tidy-cats-clumping",
@@ -1644,6 +1819,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0D2FYM5T3?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-169.jpg",
     covers: ["Litter"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "carrier-cat-petmate-hard-sided",
@@ -1653,6 +1829,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B006060VCU?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-170.jpg",
     covers: ["Carrier"],
+    pets: ["dogs-cats"],
   },
   {
     slug: "bird-toys-katumo-small-parrot-variety",
@@ -1662,6 +1839,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B095G51MZG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-171.jpg",
     covers: ["Toys (rotating)"],
+    pets: ["birds"],
   },
   {
     slug: "nightlight-amber-plug-in",
@@ -1671,6 +1849,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0B1C8Q5Z2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-172.jpg",
     covers: ["Nightlight (prevents night frights)"],
+    pets: ["birds"],
   },
   {
     slug: "betta-tank-5-gallon-starter-kit",
@@ -1680,6 +1859,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0F1SLXRMH?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-173.jpg",
     covers: ["5+ gallon tank"],
+    pets: ["fish"],
   },
   {
     slug: "betta-substrate-caribsea-freshwater-sand",
@@ -1689,6 +1869,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0DQQZ69J6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-174.jpg",
     covers: ["Substrate (sand or smooth gravel)"],
+    pets: ["fish"],
   },
   {
     slug: "rabbit-pellet-food-oxbow-garden-select",
@@ -1698,6 +1879,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B06XX68LM2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-175.jpg",
     covers: ["Rabbit pellets"],
+    pets: ["small-mammals"],
   },
   {
     slug: "rabbit-carrier-petsfit",
@@ -1707,6 +1889,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00EN63LLM?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-176.jpg",
     covers: [],
+    pets: ["small-mammals"],
   },
   {
     slug: "small-mammal-bowl-kaytee-vege-t-bowl",
@@ -1716,6 +1899,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B000TZ3SNC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-177.jpg",
     covers: ["Water bottle and food dishes"],
+    pets: ["small-mammals"],
   },
   {
     slug: "grooming-comb-hairbuster",
@@ -1725,6 +1909,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B06ZZXF81G?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-178.jpg",
     covers: [],
+    pets: ["small-mammals", "dogs-cats"],
   },
   {
     slug: "rabbit-litter-box-pinvnby",
@@ -1734,6 +1919,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B09F698GWQ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-179.jpg",
     covers: [],
+    pets: ["small-mammals"],
   },
   {
     slug: "small-mammal-play-pack-seagrass",
@@ -1743,6 +1929,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0F37K1Z91?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-180.jpg",
     covers: [],
+    pets: ["small-mammals"],
   },
   {
     slug: "rabbit-exercise-pen-midwest-folding-30in",
@@ -1752,6 +1939,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B000H8YTJI?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-181.jpg",
     covers: [],
+    pets: ["small-mammals"],
   },
 
 ];
@@ -1772,6 +1960,18 @@ export const GEAR_CATEGORY_ORDER = [
   "Air Purifiers",
 
 ];
+
+// Pet-type buckets for the /gear/category/:petType browse-by-pet filter.
+// A product can belong to more than one bucket (e.g. a water conditioner used
+// by both fish keepers and aquatic reptile/amphibian keepers).
+export const GEAR_PET_TYPES = [
+  { slug: "reptiles-amphibians", label: "Reptiles, Amphibians & Bugs", emoji: "🦎" },
+  { slug: "birds", label: "Birds", emoji: "🐦" },
+  { slug: "fish", label: "Fish & Aquatic", emoji: "🐠" },
+  { slug: "dogs-cats", label: "Dogs & Cats", emoji: "🐾" },
+  { slug: "small-mammals", label: "Small Mammals", emoji: "🦔" },
+];
+
 
 // Exact (case-insensitive, whitespace-trimmed) lookup only - deliberately NOT a substring/fuzzy match.
 // A prior bug on this site (Komodo Dragon facts appearing on the Bearded Dragon page) came from

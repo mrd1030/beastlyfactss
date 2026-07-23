@@ -124,6 +124,11 @@ const factCategories = [
   'birds', 'dogs-and-cats', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
 ];
 
+// Gear pet-type filter slugs (mirrors GEAR_PET_TYPES in src/lib/data/affiliateProducts.js)
+const gearPetTypes = [
+  'reptiles-amphibians', 'birds', 'fish', 'dogs-cats', 'small-mammals',
+];
+
 const staticPages = [
   '/',
   '/about/',
@@ -150,6 +155,9 @@ const staticPages = [
 
   // Fun-facts category pages
   ...factCategories.map(s => `/facts/category/${s}/`),
+
+  // Gear pet-type filter pages
+  ...gearPetTypes.map(s => `/gear/category/${s}/`),
 
   // Individual encyclopedia animal pages
   '/encyclopedia/animal/crested-gecko/',
@@ -366,8 +374,9 @@ async function generateSitemap() {
     const isGuideDetail = path.startsWith('/guides/') && !isGuideCat;
     const isEncAnimal = path.startsWith('/encyclopedia/animal/');
     const isEncCat = path.startsWith('/encyclopedia/category/');
+    const isGearCat = path.startsWith('/gear/category/');
     const changefreq = isHighFreq ? 'weekly' : (isGuideDetail || isEncAnimal) ? 'monthly' : 'weekly';
-    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
+    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat || isGearCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${path}</loc>\n`;
     xml += `    <changefreq>${changefreq}</changefreq>\n`;
