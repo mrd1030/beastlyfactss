@@ -793,6 +793,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "10-surprising-argentine-tegu-facts",
+      "title": "10 Surprising Argentine Tegu Facts",
+      "excerpt": "A lizard that can warm its own blood, learn its own name, and get litter-trained, these 10 facts explain why the Argentine tegu is one of the strangest, smartest reptiles you can keep.",
+      "date": "2026-07-20",
+      "image": "/assets/images/fun-facts-argentine-tegu.jpg",
+      "category": "Fun Facts"
+    },
+    {
       "slug": "10-surprising-ball-python-facts",
       "title": "10 Surprising Ball Python Facts",
       "excerpt": "From heat-sensing pits to 7,000 color morphs, these 10 ball python facts explain why they're the most popular pet snake in the world.",
@@ -825,11 +833,43 @@
       "category": "Fun Facts"
     },
     {
+      "slug": "10-surprising-emperor-scorpion-facts",
+      "title": "10 Surprising Emperor Scorpion Facts",
+      "excerpt": "A sting about as bad as a bee's, a glow-in-the-dark exoskeleton, and babies that ride around on mom's back, these 10 facts explain why the emperor scorpion is far gentler than it looks.",
+      "date": "2026-07-09",
+      "image": "/assets/images/fun-facts-emperor-scorpion.jpg",
+      "category": "Fun Facts"
+    },
+    {
+      "slug": "10-surprising-fire-bellied-toad-facts",
+      "title": "10 Surprising Fire-Bellied Toad Facts",
+      "excerpt": "A defensive pose with its own name, a real toxin that works like heart medication, and a belly pattern as unique as a fingerprint, these 10 facts explain what's actually behind that bright red belly.",
+      "date": "2026-07-18",
+      "image": "/assets/images/fun-facts-fire-bellied-toad.jpg",
+      "category": "Fun Facts"
+    },
+    {
+      "slug": "10-surprising-hedgehog-facts",
+      "title": "10 Surprising Hedgehog Facts",
+      "excerpt": "From spreading their own frothy spit on their spines to running miles on a wheel overnight, these 10 facts explain some of the strangest true hedgehog behavior.",
+      "date": "2026-07-14",
+      "image": "/assets/images/fun-facts-hedgehog.jpg",
+      "category": "Fun Facts"
+    },
+    {
       "slug": "10-surprising-hermit-crab-facts",
       "title": "10 Surprising Hermit Crab Facts",
       "excerpt": "From decades-long lifespans to orderly shell-swapping queues, these 10 hermit crab facts go well beyond the beach-souvenir reputation.",
       "date": "2026-06-27",
       "image": "/assets/images/fun-facts-hermit-crab.jpg",
+      "category": "Fun Facts"
+    },
+    {
+      "slug": "10-surprising-hissing-cockroach-facts",
+      "title": "10 Surprising Madagascar Hissing Cockroach Facts",
+      "excerpt": "From a hiss loud enough to hear across a room to giving birth to live young, these 10 facts explain why Madagascar hissing cockroaches are one of the most misunderstood pets in the hobby.",
+      "date": "2026-07-06",
+      "image": "/assets/images/fun-facts-hissing-cockroach.jpg",
       "category": "Fun Facts"
     },
     {
