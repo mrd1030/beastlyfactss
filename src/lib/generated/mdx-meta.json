@@ -413,6 +413,44 @@
     ]
   },
   {
+    "path": "/content/guides/ball-python-legal-guide.mdx",
+    "slug": "ball-python-legal-guide",
+    "title": "Is It Legal to Own a Ball Python? State-by-State Guide",
+    "seoTitle": "Is a Ball Python Legal in Your State? Full Guide",
+    "excerpt": "The federal python ban that shows up in Everglades news coverage never included ball pythons. They're legal almost everywhere, with two real exceptions: Hawaii's total snake ban, and New York City's ban on the entire python family.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Ball Python",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Snake Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/ball-python-legal.jpg",
+    "imageAlt": "Ball python coiled in its enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are ball pythons illegal because of the Everglades python problem?",
+        "a": "No. The federal 2012 rule that restricts invasive pythons names only four species: Burmese python, Northern African python, Southern African python, and yellow anaconda. Ball pythons were specifically considered during that rulemaking and left off, since they aren't established as an invasive species in the wild."
+      },
+      {
+        "q": "Can I own a ball python in New York City?",
+        "a": "No. NYC's health code bans the entire snake family Pythonidae by name, which includes ball pythons even though they aren't individually listed. This is a city-specific rule; it doesn't reflect state or federal law."
+      },
+      {
+        "q": "Is Florida cracking down on ball pythons the way it has on Burmese pythons?",
+        "a": "No. Florida's Reptiles of Concern list names the same large invasive species as federal law, Burmese and African pythons among them, and explicitly does not include ball pythons."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/ball-python-tank-setup-guide.mdx",
     "slug": "ball-python-tank-setup-guide",
     "title": "Ball Python Tank Setup: Humidity Is the Detail That Makes or Breaks It",
@@ -1102,6 +1140,44 @@
     ]
   },
   {
+    "path": "/content/guides/box-turtle-legal-guide.mdx",
+    "slug": "box-turtle-legal-guide",
+    "title": "Is It Legal to Own a Box Turtle? State-by-State Guide",
+    "seoTitle": "Is a Box Turtle Legal in Your State? Full Guide",
+    "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Box Turtle",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Turtle Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/box-turtle-legal.jpg",
+    "imageAlt": "Eastern box turtle on a forest floor",
+    "emoji": "🐢",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to keep a box turtle I found in my backyard?",
+        "a": "In most states, no, or only with a permit. Indiana, North Carolina, Connecticut, Texas, and West Virginia all restrict or ban taking a box turtle from the wild, with West Virginia going furthest by requiring even pre-owned turtles to be registered with the state."
+      },
+      {
+        "q": "If I buy a captive-bred box turtle, is ownership completely unrestricted?",
+        "a": "Not always. Florida caps possession at two box turtles per person regardless of where they came from, and a few states require you to carry proof of legal purchase. Missouri allows keeping up to five but never buying or selling one in-state."
+      },
+      {
+        "q": "Why are box turtles protected so heavily compared to other reptiles?",
+        "a": "Box turtles don't reach sexual maturity until 8 to 10 years old and lay only a handful of eggs per year, with few hatchlings surviving to adulthood. Wildlife agencies note that removing even a few adults from a wild population can suppress it for decades, if it recovers at all."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/budgie-cere-color-guide.mdx",
     "slug": "budgie-cere-color-guide",
     "title": "Why Is My Budgie's Cere Changing Color? What It Actually Means",
@@ -1628,6 +1704,44 @@
       "chew-chinchilla-mineral-lava-blocks",
       "digital-thermometer-hygrometer-combo"
     ]
+  },
+  {
+    "path": "/content/guides/chinchilla-legal-guide.mdx",
+    "slug": "chinchilla-legal-guide",
+    "title": "Is It Legal to Own a Chinchilla? State-by-State Guide",
+    "seoTitle": "Is a Chinchilla Legal in Your State? Full Guide",
+    "excerpt": "We couldn't find a single US state that actually bans pet chinchillas, despite blog posts claiming California and Texas do. The real legal story is a wild-population treaty that explicitly exempts domesticated pets.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Chinchilla",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/chinchilla-legal.jpg",
+    "imageAlt": "Pet chinchilla taking a dust bath",
+    "emoji": "🐭",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it illegal to own a chinchilla in California?",
+        "a": "No. California's restricted-species regulation explicitly names domesticated chinchillas as an exemption, alongside domesticated hamsters and guinea pigs. This directly contradicts a claim that circulates on several pet blogs."
+      },
+      {
+        "q": "Do I need a permit to own a chinchilla anywhere in the US?",
+        "a": "The only real permit requirement we found is Hawaii's, and it's a standard import permit and vet certificate required for bringing almost any non-native mammal into the state, not a chinchilla-specific restriction. No state requires a permit just to own one you already have."
+      },
+      {
+        "q": "Are chinchillas protected animals because of CITES?",
+        "a": "Wild chinchillas are listed on CITES Appendix I, the strictest international protection tier, because of historical fur-trade hunting. But the listing explicitly excludes the domesticated form, which is what every pet chinchilla in the US is descended from, so it has no practical effect on ownership."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/chinchilla-tank-setup-guide.mdx",
@@ -2443,6 +2557,82 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/ferret-legal-guide.mdx",
+    "slug": "ferret-legal-guide",
+    "title": "Is It Legal to Own a Ferret? State-by-State Guide",
+    "seoTitle": "Is a Ferret Legal in Your State? Full Guide",
+    "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State allows them.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Ferret",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/ferret-legal.jpg",
+    "imageAlt": "Pet ferret peeking out of a cardboard box",
+    "emoji": "🦡",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I get a permit to legally own a ferret in California?",
+        "a": "Not for ordinary pet ownership. California only issues permits for medical research, education, or licensed animal shelter transport - there's no path to a personal pet permit, even for owners who already had one before moving to the state."
+      },
+      {
+        "q": "What happens if I'm caught with a pet ferret in Hawaii?",
+        "a": "Hawaii treats this seriously because of its rabies-free status: penalties can include a fine of up to $200,000 and up to three years in jail, on top of the animal being confiscated. This is enforced, not just written on paper - Hawaii's Department of Agriculture has publicized cases of ferrets being seized from owners."
+      },
+      {
+        "q": "If ferrets are legal in New York State, can I bring mine into New York City?",
+        "a": "No. New York City's ban is separate from the state's - it's enforced under the NYC Health Code regardless of where you're visiting from or how long you're staying. The ban applies within all five boroughs; it doesn't apply once you're outside city limits in the rest of the state."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/giant-millipede-legal-guide.mdx",
+    "slug": "giant-millipede-legal-guide",
+    "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
+    "seoTitle": "Is a Giant African Millipede Legal in Your State? Full Guide",
+    "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Giant African Millipede",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Invertebrate Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/giant-millipede-legal.jpg",
+    "imageAlt": "Giant African millipede curled on bark",
+    "emoji": "🐛",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Were giant African millipedes banned from import in 2006?",
+        "a": "No. This is a widely repeated hobbyist forum claim, but we could not find it in any primary government document, including the exact Federal Register notice sometimes cited for it, which turned out to be an unrelated grape-import rule. The real, ongoing requirement is a standard USDA import permit that has applied for years."
+      },
+      {
+        "q": "Is their defensive secretion actually cyanide?",
+        "a": "No, that appears to be an overgeneralization from other millipede groups. A 1974 study of this specific species identified its defensive secretion as two benzoquinone compounds, which can irritate skin and eyes, not cyanide-based poisoning."
+      },
+      {
+        "q": "Can I legally own one in Florida?",
+        "a": "Yes, but only with a conditional permit and secure, locked, double-contained caging. Florida's invertebrate import guidelines name this species directly as requiring that permit."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/goldfish-cost-guide.mdx",
     "slug": "goldfish-cost-guide",
     "title": "How Much Does a Goldfish Really Cost?",
@@ -3162,6 +3352,44 @@
     ]
   },
   {
+    "path": "/content/guides/hognose-snake-legal-guide.mdx",
+    "slug": "hognose-snake-legal-guide",
+    "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
+    "seoTitle": "Is a Hognose Snake Legal in Your State? Full Guide",
+    "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The real restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Hognose Snake",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Snake Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/hognose-snake-legal.jpg",
+    "imageAlt": "Hognose snake with its distinctive upturned snout",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a hognose snake venomous, and does that make it illegal?",
+        "a": "Hognose snakes are mildly rear-fanged, meaning they produce a weak venom used mostly to subdue toads, but medical case reports describe bites as causing local swelling at worst, not a systemic reaction. Every state venomous-reptile law we checked, including Alabama, Kentucky, Louisiana, Arkansas, and Florida, specifically excludes the genus Heterodon by name."
+      },
+      {
+        "q": "Can I legally own a hognose snake in Georgia?",
+        "a": "No. Georgia's native-wildlife law bans keeping Eastern and Southern hognose snakes as pets regardless of whether the animal is wild-caught or captive-bred, which is a real exception to the otherwise permissive pattern in most states."
+      },
+      {
+        "q": "What changed with Colorado's 2026 rule?",
+        "a": "Colorado now allows captive-bred Western and Plains hognose snakes to be possessed, sold, and transported with documentation, effective May 1, 2026. Wild collection of any native Colorado hognose is now banned, and Eastern hognose is excluded from the new legalization entirely."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
     "slug": "invertebrate-molting-guide",
     "title": "Invertebrate Molting 101: What's Normal Across Tarantulas, Hermit Crabs, and Jumping Spiders",
@@ -3793,6 +4021,44 @@
     ]
   },
   {
+    "path": "/content/guides/red-eared-slider-legal-guide.mdx",
+    "slug": "red-eared-slider-legal-guide",
+    "title": "Is It Legal to Own a Red-Eared Slider? State-by-State Guide",
+    "seoTitle": "Is a Red-Eared Slider Legal in Your State? Full Guide",
+    "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The real restrictions come from state invasive-species laws, and Colorado just added a big one with a deadline one week away.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Red-Eared Slider",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Turtle Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/red-eared-slider-legal.jpg",
+    "imageAlt": "Red-eared slider turtle basking on a rock",
+    "emoji": "🐢",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does the federal 4-inch turtle rule mean it's illegal to own a red-eared slider?",
+        "a": "No. The 1975 FDA rule only bans selling turtles with a shell under 4 inches, to cut down on salmonella exposure in young kids. It has never applied to owning one, buying an adult-sized turtle, or keeping one you already have."
+      },
+      {
+        "q": "I have a red-eared slider in Colorado. Do I need to do anything?",
+        "a": "Yes, and soon. Colorado's new herpetofauna rule requires existing owners to file a CPW Legacy Report by July 30, 2026 to keep their turtle legally. If you already had one before the rule took effect on May 1, 2026, this paperwork is what protects you."
+      },
+      {
+        "q": "Can I release my red-eared slider into a pond if I can't keep it anymore?",
+        "a": "No, and this is illegal in essentially every state, not just the ones with slider-specific rules. Released pet sliders are one of the most invasive turtle species on the planet and outcompete native turtles. Surrender to a reptile rescue or a store with a turtle take-back program instead."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/reptile-shedding-complete-guide.mdx",
     "slug": "reptile-shedding-complete-guide",
     "title": "Understanding Reptile Shedding (Ecdysis)",
@@ -3896,6 +4162,82 @@
       "shallow-water-dish",
       "digital-thermometer-hygrometer-combo"
     ]
+  },
+  {
+    "path": "/content/guides/sugar-glider-legal-guide.mdx",
+    "slug": "sugar-glider-legal-guide",
+    "title": "Is It Legal to Own a Sugar Glider? State-by-State Guide",
+    "seoTitle": "Is a Sugar Glider Legal in Your State? Full Guide",
+    "excerpt": "Sugar gliders are illegal in California, Alaska, and Hawaii, and essentially unobtainable in Pennsylvania. Everywhere else they're generally legal, despite what several popular blog posts claim about Georgia, Massachusetts, and Wyoming.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Sugar Glider",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/sugar-glider-legal.jpg",
+    "imageAlt": "Sugar glider held gently in cupped hands",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are sugar gliders banned in California because they're an invasive species?",
+        "a": "Not quite. California's own regulatory text files marsupials, including sugar gliders, under a wild-population welfare category, not the detrimental/invasive category reserved for agricultural or ecological threats. The practical result is the same, a ban with no personal-pet permit path, but the stated reasoning is different from the invasive-species story often repeated online."
+      },
+      {
+        "q": "Is it true that sugar gliders are banned in Georgia?",
+        "a": "No, this is a common misconception. Georgia explicitly allows sugar gliders to be kept as pets without a license, as long as the owner has documentation showing the animal came from a USDA-inspected and regulated source."
+      },
+      {
+        "q": "Can I get a permit to own a sugar glider in Pennsylvania?",
+        "a": "Technically yes, but in practice almost never. Pennsylvania's Game Commission can issue possession permits, but they're rarely granted for pet sugar gliders. A bill to legalize ownership outright has been introduced multiple times since 2017 and remains stalled in committee."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-legal-guide.mdx",
+    "slug": "sulcata-tortoise-legal-guide",
+    "title": "Is It Legal to Own a Sulcata Tortoise? State-by-State Guide",
+    "seoTitle": "Is a Sulcata Tortoise Legal in Your State? Full Guide",
+    "excerpt": "No US state bans owning a sulcata tortoise. The real legal fact is a federal import ban dating to 2000, and the real practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
+    "date": "2026-07-23",
+    "category": "Legal",
+    "tags": [
+      "Sulcata Tortoise",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Tortoise Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/guides/sulcata-tortoise-legal.jpg",
+    "imageAlt": "Sulcata tortoise grazing outdoors",
+    "emoji": "🐢",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it illegal to own a sulcata tortoise?",
+        "a": "No state bans ownership outright. The one real federal restriction is on importing them into the country, which has been banned since 2000, but domestically captive-bred sulcatas can be bought, sold, and kept without a special permit in the large majority of states."
+      },
+      {
+        "q": "Why do so many people give up their sulcata tortoises?",
+        "a": "Size. Sulcatas can reach roughly 200 pounds and are the third-largest tortoise species in the world. A single Arizona sanctuary reports taking in around 1,250 surrendered sulcatas a year and referring another 1,000 elsewhere, largely from owners who didn't expect the animal to outgrow their yard."
+      },
+      {
+        "q": "Can I own a sulcata tortoise in California?",
+        "a": "Yes. Sulcata isn't on California's restricted-species list. The species people are actually thinking of is the native desert tortoise, which is a different, protected species that is illegal to keep as a pet in California."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/tarantula-cost-guide.mdx",

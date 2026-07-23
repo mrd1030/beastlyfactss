@@ -73,6 +73,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "ball-python-legal-guide",
+      "title": "Is a Ball Python Legal in Your State? Full Guide",
+      "excerpt": "The federal python ban that shows up in Everglades news coverage never included ball pythons. They're legal almost everywhere, with two real exceptions: Hawaii's total snake ban, and New York City's ban on the entire python family.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/ball-python-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "ball-python-tank-setup-guide",
       "title": "Ball Python Tank Setup Guide",
       "excerpt": "Ball python husbandry has shifted toward bigger, more furnished enclosures. Here's what an adult setup actually needs, and why humidity deserves more attention than it gets.",
@@ -185,6 +193,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "box-turtle-legal-guide",
+      "title": "Is a Box Turtle Legal in Your State? Full Guide",
+      "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/box-turtle-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "budgie-cere-color-guide",
       "title": "Why Is My Budgie's Cere Changing Color?",
       "excerpt": "What your budgie's cere color says about sex, age, and health - why a female's cere turns brown in breeding condition, and when a change means trouble.",
@@ -271,6 +287,14 @@
       "date": "2026-07-23",
       "image": "/assets/images/chinchilla-health-issues.jpg",
       "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "chinchilla-legal-guide",
+      "title": "Is a Chinchilla Legal in Your State? Full Guide",
+      "excerpt": "We couldn't find a single US state that actually bans pet chinchillas, despite blog posts claiming California and Texas do. The real legal story is a wild-population treaty that explicitly exempts domesticated pets.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/chinchilla-legal.jpg",
+      "category": "Legal"
     },
     {
       "slug": "chinchilla-tank-setup-guide",
@@ -409,6 +433,22 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "ferret-legal-guide",
+      "title": "Is a Ferret Legal in Your State? Full Guide",
+      "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State allows them.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/ferret-legal.jpg",
+      "category": "Legal"
+    },
+    {
+      "slug": "giant-millipede-legal-guide",
+      "title": "Is a Giant African Millipede Legal in Your State? Full Guide",
+      "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/giant-millipede-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "goldfish-cost-guide",
       "title": "Goldfish Cost: Full Price Breakdown",
       "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a genuinely large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
@@ -529,6 +569,14 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "hognose-snake-legal-guide",
+      "title": "Is a Hognose Snake Legal in Your State? Full Guide",
+      "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The real restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/hognose-snake-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "invertebrate-molting-guide",
       "title": "Invertebrate Molting 101: What's Normal",
       "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
@@ -633,6 +681,14 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "red-eared-slider-legal-guide",
+      "title": "Is a Red-Eared Slider Legal in Your State? Full Guide",
+      "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The real restrictions come from state invasive-species laws, and Colorado just added a big one with a deadline one week away.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/red-eared-slider-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "reptile-shedding-complete-guide",
       "title": "Understanding Reptile Shedding (Ecdysis)",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
@@ -647,6 +703,22 @@
       "date": "2026-07-02",
       "image": "/assets/images/snake-brumation.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "sugar-glider-legal-guide",
+      "title": "Is a Sugar Glider Legal in Your State? Full Guide",
+      "excerpt": "Sugar gliders are illegal in California, Alaska, and Hawaii, and essentially unobtainable in Pennsylvania. Everywhere else they're generally legal, despite what several popular blog posts claim about Georgia, Massachusetts, and Wyoming.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/sugar-glider-legal.jpg",
+      "category": "Legal"
+    },
+    {
+      "slug": "sulcata-tortoise-legal-guide",
+      "title": "Is a Sulcata Tortoise Legal in Your State? Full Guide",
+      "excerpt": "No US state bans owning a sulcata tortoise. The real legal fact is a federal import ban dating to 2000, and the real practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
+      "date": "2026-07-23",
+      "image": "/assets/guides/sulcata-tortoise-legal.jpg",
+      "category": "Legal"
     },
     {
       "slug": "tarantula-cost-guide",
