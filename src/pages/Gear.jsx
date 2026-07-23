@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Search, X } from 'lucide-react';
 import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, GEAR_PET_TYPES, RETAILERS } from '@/lib/data/affiliateProducts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import ProductCard from '@/components/shared/ProductCard';
@@ -32,15 +32,24 @@ export default function Gear() {
   const location = useLocation();
   const { petType } = useParams();
   const [activePetType, setActivePetType] = useState(() => resolvePetType(petType));
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     setActivePetType(resolvePetType(petType));
   }, [petType]);
 
   const activePet = GEAR_PET_TYPES.find(t => t.slug === activePetType);
-  const visibleProducts = activePetType
+  const petFilteredProducts = activePetType
     ? AFFILIATE_PRODUCTS.filter(p => p.pets.includes(activePetType))
     : AFFILIATE_PRODUCTS;
+
+  const trimmedQuery = searchQuery.trim().toLowerCase();
+  const visibleProducts = trimmedQuery
+    ? petFilteredProducts.filter(p => {
+        const haystack = [p.product, p.category, ...(p.covers || [])].join(' ').toLowerCase();
+        return haystack.includes(trimmedQuery);
+      })
+    : petFilteredProducts;
 
   const byCategory = GEAR_CATEGORY_ORDER.map(category => ({
     category,
@@ -97,7 +106,29 @@ export default function Gear() {
             </p>
           </motion.div>
 
-          <div className="flex flex-wrap gap-2 mt-5">
+          <div className="relative mt-5 max-w-sm">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={activePet ? `Search ${activePet.label.toLowerCase()} gear...` : 'Search all gear...'}
+              aria-label="Search gear"
+              className="w-full pl-9 pr-9 py-2 rounded-full text-sm font-body bg-card border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/40 focus:border-secondary/40 transition-all"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                aria-label="Clear search"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-3">
             <Link
               to="/gear/"
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
@@ -129,7 +160,18 @@ export default function Gear() {
         {byCategory.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
-            <p className="font-display font-bold text-foreground">No gear found for this filter yet</p>
+            <p className="font-display font-bold text-foreground">
+              {trimmedQuery ? `No gear matches "${searchQuery.trim()}"` : 'No gear found for this filter yet'}
+            </p>
+            {trimmedQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="mt-3 text-sm font-display font-semibold text-secondary hover:underline"
+              >
+                Clear search
+              </button>
+            )}
           </div>
         ) : (
           byCategory.map(({ category, products }) => (
