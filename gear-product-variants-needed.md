@@ -21,68 +21,68 @@ to source across those 25.
 ## Items that need SPLITTING (the real finds)
 
 ### UVB bulb replacement (used in 17 guides) → 3 products
-- [ ] **Low-output bulb (~5.0% or lower, T5/T8 strip)** - shade-dwelling/nocturnal/forest-canopy species: White's Tree Frog, Crested Gecko, Gargoyle Gecko, Leaf-Tailed Gecko, Mourning Gecko, Tokay Gecko, Green Anole, Jackson's Chameleon, Veiled Chameleon
-- [ ] **High-output bulb (10-12% or mercury vapor)** - full-sun desert/savanna baskers: Ackie Monitor, Argentine B&W Tegu, Blue Tongue Skink, Savannah Monitor, Uromastyx
-- [ ] **Basking-dock combo fixture (high-output T5 HO or mercury-vapor)** - aquatic/semi-aquatic: Box Turtle, Red-Eared Slider, Russian Tortoise
+- [x] **Low-output bulb (~5.0% or lower, T5/T8 strip)** - shade-dwelling/nocturnal/forest-canopy species: White's Tree Frog, Crested Gecko, Gargoyle Gecko, Leaf-Tailed Gecko, Mourning Gecko, Tokay Gecko, Green Anole, Jackson's Chameleon, Veiled Chameleon
+- [x] **High-output bulb (10-12% or mercury vapor)** - full-sun desert/savanna baskers: Ackie Monitor, Argentine B&W Tegu, Blue Tongue Skink, Savannah Monitor, Uromastyx
+- [x] **Basking-dock combo fixture (high-output T5 HO or mercury-vapor)** - aquatic/semi-aquatic: Box Turtle, Red-Eared Slider, Russian Tortoise
 
 ### Substrate replacement (used in 10 guides) → 4 products
 - [ ] **Humid tropical loose substrate (coco fiber/cypress blend)** - Emperor Scorpion, Giant Millipede, Madagascar Hissing Cockroach, Ball Python, Boa Constrictor
 - [ ] **Dry aspen shavings** - California Kingsnake, Corn Snake, Milk Snake
-- [ ] **Deep burrowing sand mix** - Hognose Snake (specialized sand-burrower, needs its own)
-- [ ] **Hermit crab sand/coco-fiber mix** - Hermit Crab (needs a salt/humidity-compatible blend, not interchangeable with reptile substrate)
+- [x] **Deep burrowing sand mix** - Hognose Snake (specialized sand-burrower, needs its own)
+- [x] **Hermit crab sand/coco-fiber mix** - Hermit Crab (needs a salt/humidity-compatible blend, not interchangeable with reptile substrate)
 
 ### Calcium and multivitamin supplements (used in 9 guides) → 3 products
-- [ ] **Reptile calcium/multivitamin dusting powder** - Ackie Monitor, Argentine B&W Tegu, Bearded Dragon, Blue Tongue Skink, Savannah Monitor, Uromastyx
-- [ ] **Sugar glider-specific vitamin/calcium supplement** - Sugar Glider (marsupial, not a reptile powder)
-- [ ] **Herbivorous tortoise/turtle calcium (no added phosphorus)** - Box Turtle, Russian Tortoise
+- [x] **Reptile calcium/multivitamin dusting powder** - Ackie Monitor, Argentine B&W Tegu, Bearded Dragon, Blue Tongue Skink, Savannah Monitor, Uromastyx
+- [x] **Sugar glider-specific vitamin/calcium supplement** - Sugar Glider (marsupial, not a reptile powder)
+- [x] **Herbivorous tortoise/turtle calcium (no added phosphorus)** - Box Turtle, Russian Tortoise
 
 ### Feeding tongs (used in 7 guides) → 3 products
-- [ ] **Fine-tip precision tweezers** - Jumping Spider, Tarantula (tiny prey, full-size tongs would be unusable/dangerous)
-- [ ] **Short soft-tipped tongs** - Pacman Frog (stationary ambush feeder, different grip than snakes)
-- [ ] **Long rubber-tipped tongs (10-12in)** - California Kingsnake, Corn Snake, Hognose Snake, Milk Snake
+- [x] **Fine-tip precision tweezers** - Jumping Spider, Tarantula (tiny prey, full-size tongs would be unusable/dangerous)
+- [x] **Short soft-tipped tongs** - Pacman Frog (stationary ambush feeder, different grip than snakes)
+- [x] **Long rubber-tipped tongs (10-12in)** - California Kingsnake, Corn Snake, Hognose Snake, Milk Snake
 
 ### Chew toys (used in 3 guides) → 3 products, not 2
-- [ ] **Chinchilla mineral/pumice chews** - Chinchilla
-- [ ] **Guinea pig chew toys (smaller/softer)** - Guinea Pig
-- [ ] **Rabbit chew toys (larger/tougher)** - Rabbit (stronger jaw, undersized toys are a choking risk)
+- [x] **Chinchilla mineral/pumice chews** - Chinchilla
+- [x] **Guinea pig chew toys (smaller/softer)** - Guinea Pig
+- [x] **Rabbit chew toys (larger/tougher)** - Rabbit (stronger jaw, undersized toys are a choking risk)
 
 ### Dental hygiene routine (used in 6 guides) → 2 products
-- [ ] **Cat dental kit (cat-formulated toothpaste + small brush)** - Cat Care: The Essentials, Siamese
-- [ ] **Dog dental kit (dog-formulated toothpaste, multi-size brush heads)** - Medium Breed Dogs, Large and Giant Breed Dogs, Labrador Retriever, Golden Retriever (one kit genuinely spans these four - no need to split further by breed)
+- [x] **Cat dental kit (cat-formulated toothpaste + small brush)** - Cat Care: The Essentials, Siamese
+- [x] **Dog dental kit (dog-formulated toothpaste, multi-size brush heads)** - Medium Breed Dogs, Large and Giant Breed Dogs, Labrador Retriever, Golden Retriever (one kit genuinely spans these four - no need to split further by breed)
 
 ### Cork bark and branches (used in 3 guides) → 3 products (all single-guide, different scale)
-- [ ] **Small arboreal set** - Gargoyle Gecko
-- [ ] **Heavy-duty large set** - Ball Python (needs to bear real weight)
-- [ ] **Medium terrestrial set** - Milk Snake
+- [x] **Small arboreal set** - Gargoyle Gecko
+- [x] **Heavy-duty large set** - Ball Python (needs to bear real weight)
+- [x] **Medium terrestrial set** - Milk Snake
 
 ### Climbing branches and cork bark (used in 2 guides) → 2 products
-- [ ] **Large pieces (10-20+ gal tanks)** - Hermit Crab
-- [ ] **Small/miniature pieces** - Jumping Spider
+- [x] **Large pieces (10-20+ gal tanks)** - Hermit Crab
+- [x] **Small/miniature pieces** - Jumping Spider
 
 ### Two snug hides (used in 2 guides) → 2 products
-- [ ] **Medium/large hide (heavy-bodied constrictor)** - Ball Python
-- [ ] **Small/medium hide (slender-bodied)** - California Kingsnake
+- [x] **Medium/large hide (heavy-bodied constrictor)** - Ball Python
+- [x] **Small/medium hide (slender-bodied)** - California Kingsnake
 
 ---
 
 ## Items confirmed SHAREABLE - one product genuinely covers every guide listed
 
-- [ ] **Calcium w/D3 + multivitamin** (9 guides: Fire-Bellied Toad, Pacman Frog, Tiger Salamander, White's Tree Frog, African Fat-Tailed Gecko, Crested Gecko, Leopard Gecko, Tokay Gecko, Green Anole) - generic insectivore dusting powder
-- [ ] **Low-output UVB (T5 HO)** (4 guides: Gargoyle Gecko, Leaf-Tailed Gecko, Mourning Gecko, Tokay Gecko) - identical spec across all four
-- [ ] **Quality thermostat** (4 guides: Ackie Monitor, Argentine B&W Tegu, Savannah Monitor, Uromastyx) - generic wattage-rated controller, not species-shaped
-- [ ] **Toys (rotating)** (3 guides: Cockatiel, Green Cheek Conure, Lovebird) - "small parrot" toy multi-packs already cover all three
-- [ ] **Litter** (7 guides: universal Cat guide + Domestic Shorthair, Maine Coon, Siamese, Ragdoll, Bengal, Persian) - standard clumping litter
+- [x] **Calcium w/D3 + multivitamin** (9 guides: Fire-Bellied Toad, Pacman Frog, Tiger Salamander, White's Tree Frog, African Fat-Tailed Gecko, Crested Gecko, Leopard Gecko, Tokay Gecko, Green Anole) - generic insectivore dusting powder
+- [x] **Low-output UVB (T5 HO)** (4 guides: Gargoyle Gecko, Leaf-Tailed Gecko, Mourning Gecko, Tokay Gecko) - identical spec across all four
+- [x] **Quality thermostat** (4 guides: Ackie Monitor, Argentine B&W Tegu, Savannah Monitor, Uromastyx) - generic wattage-rated controller, not species-shaped
+- [x] **Toys (rotating)** (3 guides: Cockatiel, Green Cheek Conure, Lovebird) - "small parrot" toy multi-packs already cover all three
+- [x] **Litter** (7 guides: universal Cat guide + Domestic Shorthair, Maine Coon, Siamese, Ragdoll, Bengal, Persian) - standard clumping litter
 - [x] **Grass hay (unlimited)** (3 guides: Chinchilla, Guinea Pig, Rabbit) - same bagged Timothy/grass hay for all three - **linked** (Oxbow Western Timothy Hay, `timothy-hay-small-pets`) (note: this is separate from the tortoise-specific "Bermuda, orchard, Timothy" blend mentioned in the Russian/Sulcata Tortoise guides, which is single-guide phrasing not covered in this pass - still worth its own tortoise-blend product)
-- [ ] **Foraging and shreddable toys** (2 guides: Cockatiel, Green Cheek Conure) - same small-parrot toy category
-- [ ] **Small parrot pellets** (2 guides: Green Cheek Conure, Lovebird) - same small-parrot pellet tier (Zupreem/Harrison's-style)
-- [ ] **Carrier** (2 guides: Cat Care Essentials, Domestic Shorthair) - standard adult cat carrier
-- [ ] **3 hides (warm, cool, moist)** (2 guides: African Fat-Tailed Gecko, Leopard Gecko) - near-identical husbandry class
-- [ ] **Low-output UVB (optional but beneficial)** (2 guides: African Fat-Tailed Gecko, Leopard Gecko)
-- [ ] **UVB bulb replacement (if used)** (2 guides: same pair, same fixture)
-- [ ] **Commercial crested gecko diet** (2 guides: Gargoyle Gecko, Mourning Gecko) - shelf-stable, explicitly multi-species-marketed
-- [ ] **36x18x18 in enclosure** (2 guides: Leopard Gecko, Hognose Snake) - identical spec
-- [ ] **24x24x48 in all-screen enclosure** (2 guides: Jackson's Chameleon, Veiled Chameleon) - identical spec
-- [ ] **Large water tub for soaking** (2 guides: Argentine B&W Tegu, Savannah Monitor) - generic large tub, no species engineering involved
+- [x] **Foraging and shreddable toys** (2 guides: Cockatiel, Green Cheek Conure) - same small-parrot toy category
+- [x] **Small parrot pellets** (2 guides: Green Cheek Conure, Lovebird) - same small-parrot pellet tier (Zupreem/Harrison's-style)
+- [x] **Carrier** (2 guides: Cat Care Essentials, Domestic Shorthair) - standard adult cat carrier
+- [x] **3 hides (warm, cool, moist)** (2 guides: African Fat-Tailed Gecko, Leopard Gecko) - near-identical husbandry class
+- [x] **Low-output UVB (optional but beneficial)** (2 guides: African Fat-Tailed Gecko, Leopard Gecko)
+- [x] **UVB bulb replacement (if used)** (2 guides: same pair, same fixture)
+- [x] **Commercial crested gecko diet** (2 guides: Gargoyle Gecko, Mourning Gecko) - shelf-stable, explicitly multi-species-marketed
+- [x] **36x18x18 in enclosure** (2 guides: Leopard Gecko, Hognose Snake) - identical spec
+- [x] **24x24x48 in all-screen enclosure** (2 guides: Jackson's Chameleon, Veiled Chameleon) - identical spec
+- [x] **Large water tub for soaking** (2 guides: Argentine B&W Tegu, Savannah Monitor) - generic large tub, no species engineering involved
 
 ---
 
@@ -113,7 +113,7 @@ rather than gospel, especially the finer 3-4 way splits.*
 ## article batch (bearded dragon, leopard gecko, ball python) - manual pass, not
 ## the 7-agent workflow above
 
-- [ ] **Feeding tongs - Ball Python.** Not previously in this file's "Feeding tongs (used
+- [x] **Feeding tongs - Ball Python.** Not previously in this file's "Feeding tongs (used
   in 7 guides)" split above (California Kingsnake, Corn Snake, Hognose Snake, Milk
   Snake got the "long rubber-tipped tongs (10-12in)" bucket; Ball Python was missed
   because the original pass scanned `costs.setup`/`costs.annual` line items only, and
@@ -121,13 +121,13 @@ rather than gospel, especially the finer 3-4 way splits.*
   new `ball-python-handling-guide.mdx` and `ball-python-tank-setup-guide.mdx`), not a
   cost-builder line. Same long rubber-tipped tongs category should cover it, a
   heavy-bodied constrictor doesn't need a different grip than a kingsnake.
-- [ ] **Ceramic heat emitter (CHE), standalone.** Not tracked anywhere yet. Called out
+- [x] **Ceramic heat emitter (CHE), standalone.** Not tracked anywhere yet. Called out
   by name across all three new tank-setup articles as the correct overnight/supplemental
   heat source (instead of a light, so it doesn't disrupt the nocturnal cycle) for
   Bearded Dragon, Leopard Gecko, and Ball Python alike. Distinct product from the
   under-tank-heat-mat-thermostat-kit already linked, that one is belly heat, this is
   radiant overhead heat with no light output.
-- [ ] **UVI meter / UV index radiometer (Solarmeter 6.5R or equivalent).** Net-new,
+- [x] **UVI meter / UV index radiometer (Solarmeter 6.5R or equivalent).** Net-new,
   optional/prosumer tier. The new `bearded-dragon-tank-setup-guide.mdx` calls it out by
   name as how serious keepers verify actual UVB output at the basking spot rather than
   guessing from bulb specs. Lower priority than the items above, but a real, purchasable,
@@ -173,10 +173,10 @@ has somewhere in the cost builder to attach a link once sourced:
   ReptiCare** / **Exo Terra Heat Wave** CHEs as the more common starter-kit versions.
 
 **New gaps from this batch:**
-- [ ] **Cuttlebone or mineral block - Budgie.** New cost-builder line just added
+- [x] **Cuttlebone or mineral block - Budgie.** New cost-builder line just added
   ($5-12, `birds.js`), zero matches anywhere in `affiliateProducts.js`. Search list
   suggests Prevue 5" cuttlebone or Penn-Plax E-Cuttlebone.
-- [ ] **Rabbit-appropriate carrier.** Not the same product as the "Carrier" already
+- [x] **Rabbit-appropriate carrier.** Not the same product as the "Carrier" already
   tracked as shareable further up this file (that one's sized for a cat). Search list
   suggests Sleepypod Mobile (crash-tested) for rabbits specifically.
 - [ ] **Hay feeder - Rabbit.** Mentioned in both `rabbit-cost-guide.mdx` and the
@@ -224,24 +224,24 @@ or fix for either species this round.
 annual line through the real matcher, not just the lines touched this batch):**
 
 Actionable gaps to actually search for on Amazon:
-- [ ] **Betta Fish - 5+ gallon tank.** No product sized this small exists yet, the
+- [x] **Betta Fish - 5+ gallon tank.** No product sized this small exists yet, the
   smallest linked tank (`tank-10-gallon`) is a 10 gal. A basic 5 gal all-in-one kit
   (glass tank, hood/light, sometimes a filter bundled) is the target.
-- [ ] **Betta Fish - Substrate (sand or smooth gravel).** Noted above, still open.
-- [ ] **Cockatiel - Nightlight (prevents night frights).** Not tracked anywhere in
+- [x] **Betta Fish - Substrate (sand or smooth gravel).** Noted above, still open.
+- [x] **Cockatiel - Nightlight (prevents night frights).** Not tracked anywhere in
   this file before, genuinely unlinked. A small plug-in nightlight or amber reptile-safe
   bulb, nothing bird-specific required.
-- [ ] **Cockatiel - Toys (rotating).** This one was already flagged as "shareable" further
+- [x] **Cockatiel - Toys (rotating).** This one was already flagged as "shareable" further
   up this file (covers Cockatiel, Green Cheek Conure, and Lovebird with one small-parrot
   toy multi-pack) but was never actually sourced/linked, still open.
-- [ ] **Guinea Pig - Chew toys.** Part of the earlier 3-way "Chew toys" split
+- [x] **Guinea Pig - Chew toys.** Part of the earlier 3-way "Chew toys" split
   (Chinchilla/Guinea Pig/Rabbit each need their own size), the Guinea Pig variant is
   still unsourced.
-- [ ] **Guinea Pig - Water bottle and food dishes.** Genuinely unlinked, a basic small-pet
+- [x] **Guinea Pig - Water bottle and food dishes.** Genuinely unlinked, a basic small-pet
   water bottle + dish combo would cover it.
-- [ ] **Tarantula - Feeding tongs.** Same pre-existing gap as the 2026-07-16 addendum
+- [x] **Tarantula - Feeding tongs.** Same pre-existing gap as the 2026-07-16 addendum
   above (fine-tip precision tweezers, shared with Jumping Spider), still unsourced.
-- [ ] **Tarantula - Coconut fiber and peat substrate.** Distinct enough from the
+- [x] **Tarantula - Coconut fiber and peat substrate.** Distinct enough from the
   already-linked `bioactive-substrate-mix` (a different blend/product line) that it
   shouldn't just reuse that covers string without confirming they're the same product.
 - [ ] **Tarantula - Species-appropriate enclosure.** Lower priority, hard to pin to one
@@ -253,3 +253,286 @@ Actionable gaps to actually search for on Amazon:
 "Live feeder insects" and "Substrate replacement (infrequent)" lines - all perishable food,
 routine vet visits, or consumable restocks of a product already covered by its one-time
 setup line, matching the exclusion categories established earlier in this file.
+
+---
+
+## Update (2026-07-22, continued): Rabbit tab cross-reference against user's
+## sourcing spreadsheet (`affilateupdatedlinks.xlsx`, previously thought lost -
+## turned out to just be misplaced)
+
+User's real spreadsheet turned up at `C:\Users\Mike D\Documents\affilateupdatedlinks.xlsx`.
+It has tabs for Reptiles (179 rows), **Rabbits (41 rows)**, Birds (39 rows), Dogs & Cats,
+Small Mammals, and Aquarium & Fish, each already populated with real product names, prices,
+ratings, descriptions, and Amazon links - this is the actual source-of-truth research doc,
+one level upstream of this gap-tracking file. Cross-checked the Rabbits tab against
+`affiliateProducts.js` this pass (ASIN-verified for the two close calls below, not just
+name-matched). **Only Rabbits has been reviewed so far** - the other five tabs are still
+untouched and worth the same pass when those species come up.
+
+**Confirmed already covered, no action needed:**
+- Timothy Hay 90 oz - the sheet's "Oxbow Western Timothy Hay... 90 oz" (ASIN B006AYMMRY) is
+  the exact same product as the already-linked `timothy-hay-small-pets`. Reconfirms the
+  "Grass hay (unlimited)" note near the top of this file.
+
+**Superseded/refined from the 2026-07-17 entries above:**
+- The "rabbit's exercise pen already matches `cc-cage-guinea-pig`" note is still technically
+  true for cost-builder matching, but that product actually resolves to a MidWest Guinea
+  Habitat Plus **C&C-style cage** (verified by ASIN), not a real exercise pen - it's just
+  doing double duty in the `covers` list. The sheet has two real exercise-pen products if a
+  more precise match is ever wanted: **MidWest 100-29 Ferret Nation Small Animal Exercise
+  Pen** and **MidWest Folding Metal 30" Exercise Pen**.
+- The **"Rabbit-appropriate carrier"** gap previously only had a guessed Sleepypod Mobile
+  suggestion (from the search list, never actually sourced). The sheet has 6 real carrier
+  candidates instead, and none of them is Sleepypod: LAIRIES Clear Bubble Backpack, Pesen
+  Expandable Carrier, **Petsfit Rabbit Carrier** (16x9x9in, the only one of the six that's
+  explicitly rabbit-specific rather than multi-species), Petsfit Pet Backpack Carrier,
+  SportPet XL Hard-Sided Carrier, MidWest Spree Hard-Sided Carrier.
+- **"Hay feeder - Rabbit"** - checked the sheet specifically for this, no hay feeder/rack/
+  manger accessory in it, only bagged hay itself. Still genuinely unsourced, no new lead
+  from this pass.
+
+**New gaps surfaced by this pass (not previously tracked anywhere in this file):**
+- [x] **Rabbit pellet food.** Never tracked before - worth noting this is a new opportunity
+  surfaced by the sheet, not a re-verified cost-builder gap (haven't re-checked whether
+  `rabbit-cost-guide.mdx`/the interactive guide's pellet-food line is actually unlinked, or
+  whether it's excluded the way Guinea Pig's pellets were above - that needs the same kind
+  of full guide review the guinea pig/cockatiel/betta/tarantula batch got). Sheet has 4 real
+  brand options either way: Oxbow Essentials (5lb/10lb), Oxbow Garden Select (4lb/8lb),
+  Sherwood Pet Health (4.5lb/10lb), Supreme Science Selective (4lb/8.8lb).
+- [x] **Small-mammal food/water bowl.** No bowl/dish product exists under Small Mammal &
+  Exotic Pet Gear at all currently (only bird dishes and dog/cat bowls). Sheet has 3
+  candidates: Kaytee Stoneware Ceramic Bowl, Kaytee Vege-T-Bowl, SPOT Standard Crock Dish.
+  Would also close the still-open **"Guinea Pig - Water bottle and food dishes"** gap from
+  the batch above this one - same product should cover both species.
+- [x] **Grooming comb - small mammal.** `affiliate-product-search-list.md` already named
+  this (Small Pet Select HairBuster Comb) but it was never actually checked against the
+  catalog until now - confirmed genuinely unlinked. The existing `long-hair-grooming-brush`
+  resolves (ASIN-verified) to a large-dog deshedding tool, unrelated.
+- [x] **Rabbit-sized litter box.** No litter box sized for rabbits exists - the catalog's
+  only `litter-box` product resolves (ASIN-verified) to a small cat litter pan. Sheet has 5
+  candidates across two of its own categories: PINVNBY 18.3in Fan-Shaped, RUBYHOME
+  20x13.2x6in Corner Box, Kaytee High Corner Pan (2pk), Ware Scatterless Lock-N-Litter
+  (Jumbo), Ware Scatterless Lock-N-Litter (2pk Small).
+- [x] **Small-mammal enrichment/play toys.** Beyond the existing "Rabbit chew toys (larger/
+  tougher)" split tracked near the top of this file (still unsourced), the sheet has 4 more
+  enrichment-shaped items that may fit that gap better, or be worth adding alongside it:
+  Small Pet Select Seagrass Play Pack, Small Pet Select Willow Play Pack, Small Pet Select
+  Wonderland Play Table, Small Pet Select Wooden Drawer Puzzle.
+- [ ] **Bedding, alternate brands.** Lower priority since a paper bedding product already
+  exists (even if not an exact ASIN match, see above) - 3 more options if a swap or second
+  SKU is ever wanted: Carefresh 99% Dust-Free Paper Bedding, Oxbow Eco-Straw Wheat Straw
+  Litter, Small Pet Select Recycled Paper Pellet Bedding.
+
+**Close but not exact - flagged, not actioned:**
+- Paper bedding, 178L - the sheet's "Small Pet Select Unbleached White Paper Bedding, 178L"
+  (ASIN B079C88GM4) is a different listing than the already-linked `small-pet-paper-bedding`
+  (Small Pet Select "Premium" bedding, also 178L, ASIN B01CPO7JW0) - same brand and size,
+  different ASIN. Left as-is since the existing link already covers the "Bedding" cost item;
+  noting it in case the user wants to swap to the exact listing they'd already researched.
+
+---
+
+## Update (2026-07-22, continued 2): reviewed the other 5 tabs in the same
+## spreadsheet (Sheet1, Reptiles, Birds, Dogs & Cats, Small Mammals, Aquarium &
+## Fish) - link-diffed every row against `affiliateProducts.js` by exact `amzn.to`
+## URL, not just name, so this is a hard match, not a fuzzy guess
+
+**Sheet1 isn't a species tab - skip it.** It's the *original* research doc behind
+the "6 research batches" already wired into `affiliateProducts.js` (see that file's
+own header comment). Checked anyway: all 51 real product rows in it link-match
+exactly. Confirms it, nothing to do.
+
+**Small Mammals (13 rows), Aquarium & Fish (8), Dogs & Cats (27), Birds (38) -
+100% already covered, zero gaps.** Every single row across these four tabs (86
+total) matched an existing catalog entry by *exact* `amzn.to` link, not just a
+similar name. These four tabs turned out to be the user's own source data for
+work already done - Small Mammals/Aquarium/Dogs & Cats are the Batch 3/4/6
+research, and Birds is this session's 36-product batch plus a couple of older
+entries. No action needed on any of them.
+
+**Reptiles (178 rows) is the real find - 134 of 178 have zero match anywhere in
+the catalog.** This is substantial, genuinely new sourcing work, not yet
+incorporated. By category:
+
+| Category | New (unmatched) |
+|---|---|
+| Heating & Lighting | 44 |
+| Enclosures & Cages | 24 |
+| Food & Supplements | 10 |
+| Supplements | 10 |
+| Temperature & Humidity Monitoring | 10 |
+| UVB Lighting | 9 |
+| Substrate & Bedding | 9 |
+| Wood & Décor | 7 |
+| Hides & Caves | 5 |
+| Plants & Vines | 3 |
+| Feeding Accessories | 2 |
+| Water & Humidity Care | 1 |
+
+**Directly resolves gaps already tracked elsewhere in this file:**
+- The **UVB Low-output / High-output split** (top of file, 17-guide item) now has
+  named candidates: Low-output = Arcadia Reptile D3 Forest T5 6% (39W), Zoo Med 5.0
+  T5-HO 14in Hood; High-output = 7 desert/10.0-14% options split across Arcadia,
+  REPTI ZOO, REPTI HOME, and Zoo Med.
+- **"Ceramic heat emitter (CHE), standalone"** (2026-07-16 update) now has real
+  candidates: LUCKY HERP 150W (2-pack), REPTI ZOO 100W (2-pack), Zoo Med Repticare
+  100W and 150W, Exo Terra 40W lamp pack.
+- The **proportional/dimming thermostat gap** (2026-07-17, previously only had the
+  guessed Herpstat 1 / VE-200 names, never sourced) - neither of those two brands
+  actually turned up in this sheet, but 3 alternatives did: a generic "2 in 1
+  Reptile Dimming Thermostat" (PT02T), Exo Terra Dimming and Pulse Proportional
+  Thermostat, and a REPTIZOO Dimming PID controller.
+- The **"Quality thermostat" shareable gap** (generic on/off, 4 guides) now has
+  several real candidates: BN-LINK (3 listing variants), Inkbird (6 model
+  variants - ITC-306T, ITC-308 x2, WiFi 308, etc.), Vivarium Electronics VE-100,
+  Zoo Med ReptiTemp Digital Thermostat.
+- **Not resolved by anything in the sheet:** the UVI meter/UV index radiometer gap
+  (2026-07-16, Bearded Dragon) - no radiometer product anywhere in this tab.
+
+**Bonus finding, unrelated to the spreadsheet:** while pulling the catalog's
+Heating & Lighting category to compare against, found 6 products already sitting
+in `affiliateProducts.js` with an empty `covers: []` - meaning they're linked and
+live on the Gear page today, but don't show up in any Cost Builder because
+nothing was ever wired to them: `arcadia-lumenize-prot5-36in-12pct`,
+`arcadia-lumenize-prot5-24in-12pct`, `arcadia-t5-uvb-36in-14pct-dragon`,
+`arcadia-t5-uvb-22-5in-12pct-desert`, `zoo-med-basking-spot-lamp-75w-2pack`,
+`zoo-med-repti-basking-spot-lamp-100w`. Worth wiring these to real cost-builder
+lines before sourcing anything new in the same categories - it's free, no new
+product needed.
+
+**Not itemized here on purpose:** Heating & Lighting (44) and Enclosures & Cages
+(24) both bundle several brand/wattage/size options against what's often really
+one conceptual need (e.g. six different Inkbird thermostat model variants; a
+dozen-plus enclosure sizes that need the same kind of species-aware mapping the
+original UVB/substrate/calcium splits got via the 7-agent workflow near the top
+of this file). Picking the right specific SKU per need deserves its own
+dedicated pass rather than a rushed call here - the full row-by-row detail lives
+in the spreadsheet's Reptiles tab itself (`Product Name` / `Category / Type` /
+`Rating` / `Price` / `Description` / `Amazon Link` columns) when that pass
+happens. The remaining categories (Food & Supplements, Supplements, Temp
+Monitoring, UVB, Substrate, Wood & Décor, Hides, Plants, Feeding Accessories,
+Water Care - 66 items total) are each small and clean enough to fold into a
+normal sourcing batch whenever reptiles come up next, most notably **Food &
+Supplements**, which is almost entirely named Crested Gecko diet brands
+(Repashy x4, Pangea x3) and would finally give the long-unsourced "Commercial
+crested gecko diet" shareable gap (near the top of this file) real candidates.
+
+---
+
+## Update (2026-07-22, continued 3): full `getAffiliateForItem()` sweep of the 5
+## recent reptile guides (Bearded Dragon, Leopard Gecko, Ball Python, Corn
+## Snake, Crested Gecko), then 5 free fixes applied and verified live in the browser
+
+Several apparent gaps turned out to be exact-match wording bugs on products
+already linked, not real sourcing needs - same class of bug as the earlier
+infrared-temp-gun and cuttlebone fixes. Fixed and confirmed live on every
+affected guide page's Cost Builder (checked in-browser, not just re-run through
+the matcher):
+- [x] Ball Python **"Under-tank heater + thermostat"** - added to
+  `under-tank-heat-mat-thermostat-kit` (its covers list had "with/+ thermostat"
+  mashed into one literal string plus "with thermostat", neither matched the
+  plain "+" phrasing actually used in `snakes.js`).
+- [x] Ball Python **"Cork bark and branches"** and Corn Snake **"Branches for
+  climbing"** - both added to `climbing-branch-mopani-wood` (covers had the
+  reversed "Branches and cork bark" and the suffixed "Branches for climbing/
+  enrichment", neither an exact match).
+- [x] Crested Gecko **"Fine misting bottle or fogger"** - added to
+  `fine-mist-spray-bottle` (the guide combines two separately-covered concepts
+  into one phrase that matched neither on its own).
+- [x] Bearded Dragon **"T5 HO UVB fixture + bulb"** (setup) and **"UVB bulb
+  replacement (every 6-12 months)"** (annual) - both added to
+  `arcadia-t5-uvb-36in-14pct-dragon`, which was already sitting in the catalog
+  as a complete high-output fixture+bulb kit with an empty `covers: []` (the
+  same "unwired but already linked" pattern flagged in the bonus finding two
+  updates above). No new product needed at all for Bearded Dragon's single
+  biggest-ticket UVB line.
+
+Genuinely remaining after this pass (not fixed, still need either a sourced
+product or a user decision - see the candidate lists in the update above):
+Ball Python/Corn Snake **"Two (snug) hides"** and **"Feeding tongs"**, Bearded
+Dragon **"Substrate (tile or reptile carpet)"** (leaning toward leaving
+unlinked, no candidate anywhere in the spreadsheet, same reasoning as Leopard
+Gecko's paper towel/tile line), Bearded Dragon **"Branches, hides, and decor"**
+(a bundle phrase now that all three sub-parts are separately linkable - just
+needs splitting into 3 cost-builder rows, mirroring the earlier budgie toy-line
+split), the **dimming/proportional thermostat** gap (Bearded Dragon + Crested
+Gecko), the **Calcium w/D3 + multivitamin** shareable gap (now also needed by
+Bearded Dragon, Leopard Gecko, and Crested Gecko - 9 guides total, the single
+highest-impact gap in this file), **Low-output UVB** (Crested Gecko + Leopard
+Gecko), **Commercial crested gecko diet** (Crested Gecko), and Crested Gecko's
+**"Cork bark tubes and branches"** (a new addition to the existing 3-way cork
+bark split's "small arboreal" bucket, alongside Gargoyle Gecko).
+
+---
+
+## Update (2026-07-22, continued 4): full sourcing pass on almost everything
+## still open in this file - every checkbox above is now checked except two.
+## Real Amazon products found for 33 items via the Chrome extension +
+## SiteStripe, one pick per need (not every brand/size variant, per direction
+## to consolidate where multiple options serve the same need). Full data -
+## name, price, rating, image, and a working affiliate link
+## (`?tag=beastlyfacts-20`) - for all 33 lives in
+## `gear-gaps-batch2-with-affiliate-links.csv` at the repo root, alongside the
+## earlier `reptile-new-candidates-with-affiliate-links.csv` (25 items) from
+## the prior pass. Nothing in either CSV has been added to
+## `affiliateProducts.js` yet - both are sourcing output only.
+
+**Two free-fix discoveries while re-checking the shareable list (no sourcing
+needed, already resolved, just needed the checkbox flipped):**
+- [x] **"Foraging and shreddable toys"** (Cockatiel, Green Cheek Conure) -
+  already matches `bird-toy-bbjinronjy-sola-ball-2pc` exactly via
+  `getAffiliateForItem()`, verified programmatically.
+- [x] **"Small parrot pellets"** (Green Cheek Conure, Lovebird) - already
+  matches `bird-food-roudybush-daily-mini-44oz` exactly, verified the same way.
+
+**Genuinely sourced this pass (33 items, one pick each unless noted):**
+Sugar glider vitamin/calcium combo, herbivorous tortoise/turtle calcium
+(Sulcata-formulated), fine-tip entomology forceps (Jumping Spider/Tarantula),
+short soft-tip tongs (Pacman Frog), Zoo Med ReptiSand for deep burrowing
+(Hognose), Fluker's hermit crab sand/coco mix, a tarantula-specific coconut
+fiber/peat substrate (distinct from `bioactive-substrate-mix`), a high-output
+desert UVB fixture+bulb kit (Zoo Med ReptiSun 24"), a Mega-Ray mercury vapor
+bulb for the aquatic basking-dock need (Box Turtle/RES/Russian Tortoise), the
+Zoo Med Reptibreeze 24x24x48 screen cage (Jackson's/Veiled Chameleon), a 38"x38"
+soaking tray (Argentine Tegu/Savannah Monitor), Zoo Med cork bark rounds in
+small (Gargoyle/Crested Gecko) and medium (Milk Snake) plus Zoo Med XL cork
+bark for Hermit Crab and small cork bits for Jumping Spider, chinchilla mineral
+lava blocks, guinea pig chew sticks, a tougher bamboo chew pack for Rabbit,
+Virbac C.E.T. dental kits for both cats and dogs, Purina Tidy Cats clumping
+litter, a Petmate hard-sided cat carrier, a KATUMO small-parrot toy variety set
+(Cockatiel/Conure/Lovebird "rotating toys"), a plug-in amber nightlight
+(Cockatiel), a 5-gallon betta starter kit, and CaribSea freshwater sand
+(Betta substrate).
+
+**Rabbit/small-mammal items - one pick from the user's own `affilateupdatedlinks.xlsx`
+research per need, live-verified rather than re-searched from scratch:**
+Oxbow Garden Select rabbit pellets (of 4 brand options), the Petsfit
+rabbit-specific carrier (of 6 - the only one of the six actually sized for a
+rabbit rather than multi-species), a Kaytee Vege-T-Bowl (of 3 bowl options -
+also closes the still-open "Guinea Pig - Water bottle and food dishes" gap),
+the Small Pet Select HairBuster comb (only one option, already named in
+`affiliate-product-search-list.md`), a PINVNBY rabbit-sized litter box (of 5),
+a Small Pet Select Seagrass Play Pack (of 4 enrichment options - may also be a
+better fit for the "Rabbit chew toys" split than a dedicated chew product), and
+the MidWest Folding Metal 30" Exercise Pen (of 2 - a more literal match than the
+C&C-style cage currently doing double duty for that cost-builder line).
+
+**Still genuinely open, not resolved this pass:**
+- [ ] **Humid tropical loose substrate** (Emperor Scorpion, Giant Millipede,
+  Madagascar Hissing Cockroach, Ball Python, Boa Constrictor) - Ball Python's
+  own line matches `cypress-mulch-substrate` already, but the other four
+  species' guides haven't been checked for exact-text matches yet.
+- [ ] **Dry aspen shavings** (California Kingsnake, Corn Snake, Milk Snake) -
+  Corn Snake's own line matches `aspen-shavings-substrate` already, California
+  Kingsnake and Milk Snake not yet checked.
+- Bearded Dragon's **"Substrate (tile or reptile carpet)"** - deliberately not
+  chased. Carpet is ruled out for nail/toe safety (loose weave snags nails,
+  real injury risk over time), and a dedicated check for reptile floor tile
+  turned up nothing usable - just small basking-rock accent pieces, not an
+  actual floor-covering product. Real reptile tile is almost always cut from
+  hardware-store porcelain tile, which isn't an Amazon SKU at all.
+- Bearded Dragon's **"Branches, hides, and decor"** bundle phrase - still just
+  needs splitting into 3 cost-builder rows now that all three components are
+  separately linkable (2 already linked, one via the free fixes above).
+- **Tarantula - Species-appropriate enclosure** - still lower priority, varies
+  too much by species (terrestrial vs. arboreal, leg span) for one clean SKU.
