@@ -1,99 +1,126 @@
 ---
 # === Basic Information ===
 title: "Your Guide Title Here"
+seoTitle: "Shorter Version for Search Results"
 slug: "your-guide-slug-here"
 date: "2026-06-19"
 lastUpdated: "2026-06-19"
 lastReviewed: "2026-06-19"
 
 # === Organization ===
-category: "Reptile Care"
-tags: ["tag1", "tag2", "tag3"]
-difficulty: "Intermediate"     # Beginner | Intermediate | Advanced
+# Real category values in use site-wide (pick one, don't invent a new one
+# unless you're deliberately starting a new content-type category the way
+# "Comparisons", "Legal", and "Roundups" were added):
+# Reptiles | Amphibians | Aquatic Life | Birds | Small & Exotic Pets |
+# Invertebrates | Cats | Dogs | Comparisons | Legal | Roundups
+category: "Reptiles"
+tags: ["Species Name", "Cost", "Care Tips", "Pet Ownership Cost"]
+difficulty: "Intermediate"     # Beginner | Intermediate | Beginner/Intermediate | Intermediate/Advanced | Advanced | Self-Sufficient
+emoji: "🦎"
 
 # === SEO & Descriptions ===
-excerpt: "A short, compelling summary of this guide (1-2 sentences)."
+excerpt: "A short, compelling summary of this guide (1-2 sentences). Shows in blog listing cards."
 description: "A longer SEO description (150-160 characters recommended). This appears in search results."
 canonicalUrl: ""
 readingTime: 8                 # Estimated reading time in minutes
 
 # === Featured Image ===
+# Convention: /assets/images/<slug>.jpg is what the large majority of existing
+# guides use (e.g. axolotl-cost-guide.mdx -> /assets/images/axolotl-cost.jpg).
+# A few standalone series (the legal-to-own batch, roundup articles) instead
+# reuse /assets/guides/<species>.jpg or a dedicated /assets/guides/<slug>.jpg -
+# match whatever sibling articles in the same series are already doing.
 image: "/assets/images/your-image.jpg"
 imageAlt: "Descriptive alt text for accessibility and SEO"
 
 # === Author & Publishing ===
 author: "Mike"
-status: "published"
+status: "published"            # Use "draft" until the article (and its image) is ready to go live
 noIndex: false                 # Set to true only for pages you don't want in search results
 
 # === Affiliate & Monetization ===
-affiliate: false
+affiliate: false                # Set true if this article contains AffiliateLink usage - see below
+# relatedProducts is optional metadata (not currently read by any script, but
+# kept for reference/consistency) listing the affiliateProducts.js slugs this
+# article links to inline - only add it when affiliate: true.
+# relatedProducts:
+#   - "some-product-slug"
+#   - "another-product-slug"
+
+# === FAQs ===
+# Every real guide has 2-4 of these. They render as an accordion and are the
+# easiest lever for matching real search queries (see templates/RESEARCH_BRIEF_TEMPLATE.md).
+faqs:
+  - q: "A real question someone would actually search for?"
+    a: "A direct, specific answer. Two to three sentences, not a restatement of the question."
+  - q: "A second real question?"
+    a: "Another direct answer."
 ---
 
 # Your Guide Title Here
 
-Intro paragraph goes here. Keep it engaging and tell the reader what they'll learn.
+<!-- If affiliate: true, this MUST be the first thing after the H1 - every one of the
+     67 existing affiliate articles on the site pairs affiliate: true with this line. -->
+<AffiliateDisclosure />
 
-<Figure 
-  src="/assets/images/your-image.jpg"
-  alt="Descriptive alt text"
-  caption="Optional caption for the image"
-/>
+Intro paragraph goes here. Keep it engaging, tell the reader what they'll learn, and
+link to the species' main care guide the way real articles do: "For everything else
+about keeping one, see our full [Species care guide](/guides/species-slug/)."
 
 ## Section Heading
 
 Write your content here. Use normal markdown headings, lists, and paragraphs.
+No em dashes or en dashes anywhere on this site, use a comma or period instead.
 
 ### Subsection
 
 More detailed content...
 
-## Pros and Cons
-
-<ProsCons 
-  pros={[
-    "First pro point",
-    "Second pro point",
-    "Third pro point"
-  ]} 
-  cons={[
-    "First con point",
-    "Second con point"
-  ]} 
-/>
-
 ## Comparison Table Example
 
-<ComparisonTable 
-  headers={["Feature", "Option A", "Option B"]}
+<ComparisonTable
+  headers={["Item", "Cost Range"]}
   rows={[
-    ["Humidity Control", "Excellent", "Good"],
-    ["Cost", "$$$", "$$"],
-    ["Weight", "Heavy", "Light"],
+    ["The animal itself", "$30 - $100"],
+    [<AffiliateLink href="https://amzn.to/exampleLink" product="Product Name">Enclosure</AffiliateLink>, "$50 - $150"],
   ]}
 />
+
+<!-- AffiliateLink also works fine inline in regular prose, not just inside a table cell:
+     the <AffiliateLink href="..." product="Product Name">Product Name</AffiliateLink> is a genuinely
+     great pick. -->
 
 ## Fun Fact
 
 <FunFact>
   This is a great place to drop an interesting or surprising fact related to the topic.
+  Most real guides use exactly one of these per article, not one per section.
 </FunFact>
 
-## Recommended Products
+<!-- Situational components, only include the ones that actually apply:
+     <VetDisclaimer />   - used on 20+ guides, put right after the H1 (before or instead of
+                           AffiliateDisclosure) on anything discussing a medical/health condition.
+     <LegalDisclaimer /> - same placement, for anything discussing legality/regulations
+                           (see the "Is It Legal to Own a ___" article series).
+     <ProsCons />        - exists in src/components/mdx/ but isn't actually used by any
+                           current article; skip it unless it's genuinely the best fit.
+     <Figure />          - exists but isn't used by any current article either. The
+                           frontmatter `image` field alone handles the hero image;
+                           don't add a second image via <Figure> unless you have a
+                           real reason to. -->
 
-Here’s an example affiliate link:
+## The Real Takeaway
 
-<AffiliateLink 
-  href="https://amazon.com/your-product-link" 
-  product="Product Name"
->
-  Product Name on Amazon
-</AffiliateLink>
+Close with a direct, practical summary. Real articles often end with a cross-link to a
+related deep-dive ("more on that in our [Species handling guide](/blog/species-handling-guide/)")
+and/or a pointer to the broader category ("Browse the rest of our [Category care guides](/guides/category/category-slug/)")
+or the species' [encyclopedia profile](/encyclopedia/animal/species-slug/).
+
+---
 
 ## Sources & Further Reading
 
 <Sources>
-- [Example Research Source](https://example.com/research-paper)
-- [Another Useful Website](https://example.com)
-- Research paper or book title
+- [Real Source Name](https://example.com/real-source)
+- [Another Real Source](https://example.com/another-source)
 </Sources>
