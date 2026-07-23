@@ -88,6 +88,9 @@ export const catGuides = [
         "Weight monitoring (indoor obesity prevention)",
       ],
     },
+    faqs: [
+      { q: "Is tabby a breed of cat?", a: "No - tabby describes a coat pattern (the classic swirls, stripes, or spots, plus the \"M\" marking on the forehead), not a breed. It's the most common pattern in domestic shorthairs, since it's the ancestral wild-type coat that shows up whenever a cat has no specific pedigree, but plenty of recognized breeds also carry tabby patterns, including Maine Coons and Bengals. A tabby-patterned cat with no papers is a Domestic Shorthair; a tabby-patterned cat with Maine Coon or Bengal parentage and registration is that breed with a tabby coat." },
+    ],
   },
   {
     id: "cat-maine-coon",

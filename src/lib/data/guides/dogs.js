@@ -141,6 +141,9 @@ export const dogGuides = [
         "Socialization and obedience training",
       ],
     },
+    faqs: [
+      { q: "What size counts as a medium breed dog, exactly?", a: "There's no single official cutoff, but roughly 20 to 60 lbs at adult weight is the range most trainers, vets, and breed clubs use for \"medium.\" Below that is generally considered small, and above it starts sliding into large (60 to 100 lbs) and giant (100+ lbs) territory. The line is blurrier than it sounds - a 55 lb Border Collie and a 65 lb Labrador are both commonly called medium in everyday use, since build and activity level matter as much as the number on the scale." },
+    ],
   },
 
   // ── LARGE BREED GUIDE ────────────────────────────────────────────────────
