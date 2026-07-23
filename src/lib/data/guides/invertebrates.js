@@ -63,7 +63,7 @@ If housing multiple individuals, watch carefully for cannibalism. Emperor scorpi
   },
   {
     id: "millipede",
-    name: "Giant Millipede",
+    name: "Giant African Millipede",
     emoji: "🐛",
     difficulty: "Self-Sufficient",
     petType: "Invertebrates",

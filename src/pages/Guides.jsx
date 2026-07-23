@@ -36,10 +36,10 @@ const subtypes = {
   Snakes: ['Ball Python', 'Boa Constrictor', 'California Kingsnake', 'Corn Snake', 'Hognose Snake', 'Milk Snake'],
   'Turtles & Tortoises': ['Box Turtle', 'Red-Eared Slider', 'Russian Tortoise', 'Sulcata Tortoise'],
   'Small Mammals': ['Chinchilla', 'Ferret', 'Guinea Pig', 'Hedgehog', 'Rabbit', 'Sugar Glider'],
-  Birds: ['African Grey Parrot', 'Budgie', 'Canary', 'Cockatiel', 'Cockatoo', 'Green Cheek Conure', 'Lovebird'],
+  Birds: ['African Grey Parrot', 'Budgie / Parakeet', 'Canary', 'Cockatiel', 'Cockatoo', 'Green Cheek Conure', 'Lovebird'],
   Dogs: ['Labrador Retriever', 'Golden Retriever', 'German Shepherd', 'French Bulldog', 'Border Collie', 'Siberian Husky'],
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
-  Invertebrates: ['Emperor Scorpion', 'Giant Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
+  Invertebrates: ['Emperor Scorpion', 'Giant African Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
   Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
   Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
 };

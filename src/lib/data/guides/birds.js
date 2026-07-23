@@ -75,7 +75,7 @@ Annual avian veterinary exams including complete blood panel are essential. Find
   },
   {
     id: "budgie",
-    name: "Budgie",
+    name: "Budgie / Parakeet",
     emoji: "🐦",
     difficulty: "Beginner",
     petType: "Birds",

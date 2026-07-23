@@ -26,10 +26,10 @@ export const amphibianEncyclopedia = [
     },
   },
   {
-    id: "pacman-frog", name: "Pac-Man Frog", scientific: "Ceratophrys ornata",
+    id: "pacman-frog", name: "Pacman Frog", scientific: "Ceratophrys ornata",
     category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "pacman-frog", available: true, image: "/assets/guides/pacman-frog.jpg",
     bio: {
-      overview: "The ornate horned frog - nicknamed the Pac-Man frog for its enormous, round, gaping mouth - is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pac-Man frogs will attempt to consume prey nearly as large as themselves - including other frogs, rodents, and small snakes.",
+      overview: "The ornate horned frog - nicknamed the Pacman frog for its enormous, round, gaping mouth - is native to the grasslands and rainforests of South America. They are ambush predators that bury themselves in soil or leaf litter and wait, motionless, for prey to enter range of their enormous mouth. Despite their sluggish lifestyle, Pacman frogs will attempt to consume prey nearly as large as themselves - including other frogs, rodents, and small snakes.",
       origin: "South America (Argentina, Brazil, Uruguay)",
       habitat: "Grassland, tropical rainforest, and humid meadows",
       adultSize: "3-5 inches (7-12 cm) body; 0.5-1.5 lbs",
