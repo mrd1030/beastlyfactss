@@ -27,6 +27,9 @@ Use this for shorter, lighter "fun fact" style pages.
 - Lighter frontmatter schema
 - Examples of `Figure` and `FunFact` components
 
+### `RESEARCH_BRIEF_TEMPLATE.md`
+Use this *before* `GUIDE_TEMPLATE.mdx` when starting a new species' cost / handling / health-issues / tank-setup deep-dive batch. It's a copy-pasteable research prompt, not an article template, run it in whatever research tool you're using outside Claude Code, then bring the results back to fill in the actual articles.
+
 ---
 
 ## Frontmatter Guidelines
