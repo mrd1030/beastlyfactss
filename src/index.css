@@ -103,6 +103,16 @@ html, body {
   padding-top: env(safe-area-inset-top);
 }
 
+/* Utility: hide the scrollbar on an internally-scrolling element (e.g. the
+   sticky blog post sidebar) while keeping it scrollable via mouse/touch/keys */
+.custom-scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* old Edge/IE */
+}
+.custom-scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, new Edge */
+}
+
 /* Utility: suppress text selection on interactive UI only */
 .no-select {
   user-select: none;
