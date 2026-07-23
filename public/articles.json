@@ -441,6 +441,22 @@
       "category": "Legal"
     },
     {
+      "slug": "five-beginner-reptiles-overview",
+      "title": "5 Best Beginner Reptiles, and Why Each One Works",
+      "excerpt": "Bearded dragon, leopard gecko, ball python, crested gecko, corn snake, five reptiles that earn their beginner reputation honestly, each for a slightly different reason.",
+      "date": "2026-07-12",
+      "image": "/assets/guides/five-beginner-reptiles-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "four-unusual-pets-overview",
+      "title": "4 Unusual Pets That Aren't What You'd Expect",
+      "excerpt": "An axolotl, a goldfish, a chinchilla, and a hermit crab, four pets that each break at least one assumption people bring to them, and each rewards getting that one detail right.",
+      "date": "2026-07-21",
+      "image": "/assets/guides/four-unusual-pets-overview.jpg",
+      "category": "Roundups"
+    },
+    {
       "slug": "giant-millipede-legal-guide",
       "title": "Is a Giant African Millipede Legal in Your State? Full Guide",
       "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
@@ -487,6 +503,14 @@
       "date": "2026-06-26",
       "image": "/assets/images/goldfish-tank-size.jpg",
       "category": "Aquatic Life"
+    },
+    {
+      "slug": "guinea-pig-cockatiel-betta-tarantula-overview",
+      "title": "Guinea Pig, Cockatiel, Betta & Tarantula: One Key Rule Each",
+      "excerpt": "A rodent, a bird, a fish, and a spider, four pets that don't have much in common except that each comes with a single piece of information that matters more than everything else in its care.",
+      "date": "2026-07-17",
+      "image": "/assets/guides/guinea-pig-cockatiel-betta-tarantula-overview.jpg",
+      "category": "Roundups"
     },
     {
       "slug": "guinea-pig-cost-guide",
@@ -639,6 +663,14 @@
       "date": "2026-06-30",
       "image": "/assets/images/praying-mantis-ootheca.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "rabbit-budgie-overview",
+      "title": "Rabbit vs Budgie: Both Need More Space Than You'd Think",
+      "excerpt": "Rabbits and budgies are two of the most commonly kept pets outside of cats and dogs, and both are, more often than not, housed in something significantly smaller than they actually need.",
+      "date": "2026-07-13",
+      "image": "/assets/guides/rabbit-budgie-overview.jpg",
+      "category": "Roundups"
     },
     {
       "slug": "rabbit-cost-guide",

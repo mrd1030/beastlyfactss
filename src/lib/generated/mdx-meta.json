@@ -2595,6 +2595,81 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/five-beginner-reptiles-overview.mdx",
+    "slug": "five-beginner-reptiles-overview",
+    "title": "Five Reptiles That Actually Make Sense for Beginners",
+    "seoTitle": "5 Best Beginner Reptiles, and Why Each One Works",
+    "excerpt": "Bearded dragon, leopard gecko, ball python, crested gecko, corn snake, five reptiles that earn their beginner reputation honestly, each for a slightly different reason.",
+    "date": "2026-07-12",
+    "category": "Roundups",
+    "tags": [
+      "Bearded Dragon",
+      "Leopard Gecko",
+      "Ball Python",
+      "Crested Gecko",
+      "Corn Snake",
+      "Beginner Reptiles",
+      "Pet Roundup"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/five-beginner-reptiles-overview.jpg",
+    "imageAlt": "Grid of a bearded dragon, leopard gecko, ball python, crested gecko, and corn snake",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the single easiest reptile on this list for a total beginner?",
+        "a": "Leopard geckos are usually the most forgiving: no strict UVB requirement, a fairly wide tolerable temperature range, and a calm temperament. Corn snakes are a close second for the same reasons, minus the tail-dropping consideration geckos come with."
+      },
+      {
+        "q": "Do all five of these reptiles need UVB lighting?",
+        "a": "No. Bearded dragons need strong, specific UVB to stay healthy, and it matters for leopard and crested geckos too, though less strictly. Ball pythons and corn snakes don't have the same UVB dependency, though many keepers still provide low-level UVB as a general wellness measure."
+      },
+      {
+        "q": "Which of these reptiles tolerates handling best?",
+        "a": "Bearded dragons are the most consistently social of the five, many genuinely seem to enjoy daily handling once settled. Ball pythons and corn snakes both handle well too; the main thing to know with either gecko is to never grab the tail."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/four-unusual-pets-overview.mdx",
+    "slug": "four-unusual-pets-overview",
+    "title": "Four Pets That Break the Usual Mold",
+    "seoTitle": "4 Unusual Pets That Aren't What You'd Expect",
+    "excerpt": "An axolotl, a goldfish, a chinchilla, and a hermit crab, four pets that each break at least one assumption people bring to them, and each rewards getting that one detail right.",
+    "date": "2026-07-21",
+    "category": "Roundups",
+    "tags": [
+      "Axolotl",
+      "Goldfish",
+      "Chinchilla",
+      "Hermit Crab",
+      "Unusual Pets",
+      "Pet Roundup"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/four-unusual-pets-overview.jpg",
+    "imageAlt": "Grid of an axolotl, goldfish, chinchilla, and hermit crab",
+    "emoji": "🐾",
+    "lastReviewed": "2026-07-21",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are any of these four pets a good fit for a first-time exotic pet owner?",
+        "a": "All four are approachable once you know their one non-negotiable rule, cold water for the axolotl, real tank size for the goldfish, dust instead of water for the chinchilla, and humidity control for the hermit crab. None of them need daily handling, which makes them lower-pressure than a lot of first exotic pets."
+      },
+      {
+        "q": "Which of these four needs the least hands-on care?",
+        "a": "The axolotl and the hermit crab are both largely hands-off, watch-don't-touch pets once their enclosure is set up correctly. The chinchilla and goldfish fall somewhere in between: neither needs constant handling, but both benefit from routine attention to their specific care needs."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/giant-millipede-legal-guide.mdx",
     "slug": "giant-millipede-legal-guide",
     "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
@@ -2871,6 +2946,45 @@
       "tank-20-gallon-long",
       "api-tap-water-conditioner"
     ]
+  },
+  {
+    "path": "/content/guides/guinea-pig-cockatiel-betta-tarantula-overview.mdx",
+    "slug": "guinea-pig-cockatiel-betta-tarantula-overview",
+    "title": "Four Pets With One Rule Each Worth Knowing First",
+    "seoTitle": "Guinea Pig, Cockatiel, Betta & Tarantula: One Key Rule Each",
+    "excerpt": "A rodent, a bird, a fish, and a spider, four pets that don't have much in common except that each comes with a single piece of information that matters more than everything else in its care.",
+    "date": "2026-07-17",
+    "category": "Roundups",
+    "tags": [
+      "Guinea Pig",
+      "Cockatiel",
+      "Betta Fish",
+      "Tarantula",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/guinea-pig-cockatiel-betta-tarantula-overview.jpg",
+    "imageAlt": "Grid of a guinea pig, cockatiel, betta fish, and tarantula",
+    "emoji": "🔑",
+    "lastReviewed": "2026-07-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which of these four pets is the most dangerous to get wrong?",
+        "a": "The cockatiel, without much competition. Overheated non-stick cookware releases fumes that are rapidly fatal to birds, and it can happen fast in a kitchen the bird isn't even in the room with, if the air carries. The other three risks (scurvy, an undersized tank, a fall) are serious but slower-moving and easier to catch in time."
+      },
+      {
+        "q": "Can a tarantula actually be handled safely?",
+        "a": "Most keepers don't recommend it. A fall can be fatal to the spider even from a short height, and a bite or a brush with its urticating hairs is unpleasant for the handler. Tarantulas are best kept as observation pets, admired from just outside the glass rather than held."
+      },
+      {
+        "q": "Do guinea pigs really need a cage mate?",
+        "a": "Yes, guinea pigs are highly social and shouldn't be kept alone. It's one of the most commonly skipped parts of guinea pig care, and it quietly doubles most of the numbers in a typical care budget."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/guinea-pig-cost-guide.mdx",
@@ -3784,6 +3898,44 @@
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
     ]
+  },
+  {
+    "path": "/content/guides/rabbit-budgie-overview.mdx",
+    "slug": "rabbit-budgie-overview",
+    "title": "Rabbit and Budgie: Two Classic Pets, Almost Always Kept Too Small",
+    "seoTitle": "Rabbit vs Budgie: Both Need More Space Than You'd Think",
+    "excerpt": "Rabbits and budgies are two of the most commonly kept pets outside of cats and dogs, and both are, more often than not, housed in something significantly smaller than they actually need.",
+    "date": "2026-07-13",
+    "category": "Roundups",
+    "tags": [
+      "Rabbit",
+      "Budgie",
+      "Housing",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 3,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/rabbit-budgie-overview.jpg",
+    "imageAlt": "Side by side of a rabbit in a grassy pen and a budgie on a wide perch",
+    "emoji": "📏",
+    "lastReviewed": "2026-07-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a standard pet-store rabbit hutch big enough?",
+        "a": "Usually not. The traditional wire hutch is considerably smaller than current welfare recommendations, which call for enough room to take at least three full hops and stand up fully on hind legs without the ears touching the top."
+      },
+      {
+        "q": "Why do budgies need a wider cage instead of just a taller one?",
+        "a": "Budgies fly side to side rather than straight up, so width matters more than height for genuine flight room. A cage that's tall but narrow still leaves a budgie with nowhere to actually fly."
+      },
+      {
+        "q": "Do rabbits and budgies need a specialized vet?",
+        "a": "Yes for both. Rabbits need a rabbit-savvy exotic vet rather than a standard small-animal clinic, and birds need an avian vet, a genuinely specialized field distinct from general small-animal or exotic-pet practice."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/rabbit-cost-guide.mdx",
