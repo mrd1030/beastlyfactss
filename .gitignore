@@ -41,3 +41,6 @@ dist-ssr
 content/_scheduled-short-story/
 public/assets/images/_scheduled/
 base44/.app.jsonc
+
+# regenerated keyword-research output, not source
+tools/keyword-finder/keyword-ideas.csv
