@@ -324,7 +324,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eYvi5W",
     image: "/assets/images/affiliate/product-31.jpg",
     covers: [], // alternative to the manual clippers above, browsable only
-    pets: ["dogs-cats"],
+    pets: ["dogs-cats", "small-mammals"], // grinders are commonly marketed for rabbits/guinea pigs too, not just dogs/cats
   },
   {
     slug: "styptic-powder",
@@ -334,7 +334,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3Rsgy7z",
     image: "/assets/images/affiliate/product-32.jpg",
     covers: [], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
-    pets: ["dogs-cats"],
+    pets: ["dogs-cats", "small-mammals", "birds"], // same standard nail-trim companion across guinea pig/rabbit and bird nail care, not just dogs/cats
   },
   {
     slug: "litter-box",
@@ -834,8 +834,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4uwGHk2",
     image: "/assets/images/affiliate/product-77.jpg",
-    covers: [],
-    pets: ["fish"],
+    covers: [], // submersible tank thermometers are interchangeable hardware between fish tanks and aquatic reptile/amphibian tanks
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "hide-cave-aquarium-decoration",
@@ -844,8 +844,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4dsuNBx",
     image: "/assets/images/affiliate/product-78.jpg",
-    covers: [],
-    pets: ["fish"],
+    covers: [], // resin hide caves are common in both fish tanks and aquatic reptile/amphibian tanks (turtle, axolotl)
+    pets: ["fish", "reptiles-amphibians"],
   },
   {
     slug: "arcadia-lumenize-prot5-36in-12pct",
@@ -924,8 +924,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4dEII7J",
     image: "/assets/images/affiliate/product-83.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"],
+    covers: [], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "bearded-dragon-hammock-triangle",
@@ -954,8 +954,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4uGamHo",
     image: "/assets/images/affiliate/product-86.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"],
+    covers: [], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "dubia-roaches-bag",
@@ -964,8 +964,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4uFr6hU",
     image: null,
-    covers: [],
-    pets: ["reptiles-amphibians"],
+    covers: [], // hedgehogs and sugar gliders eat feeder roaches as a real dietary staple too, not just reptiles/amphibians
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "api-freshwater-master-test-kit",
@@ -1101,8 +1101,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/45cQKzq",
     image: "/assets/images/affiliate/product-99.jpg",
-    covers: [],
-    pets: ["birds"],
+    covers: [], // clip-on cage bowls work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
+    pets: ["birds", "small-mammals"],
   },
   {
     slug: "bird-feeding-cups-pinvnby-2pack",
@@ -1111,8 +1111,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4f8dIxB",
     image: "/assets/images/affiliate/product-100.jpg",
-    covers: [],
-    pets: ["birds"],
+    covers: [], // clip-on cage cups work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
+    pets: ["birds", "small-mammals"],
   },
   {
     slug: "bird-feeding-dishes-okllen-4pack",
@@ -1579,8 +1579,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01I15S6OM?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-146.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"],
+    covers: [], // genuinely multi-purpose per its own listing (brooder/greenhouse/incubator use) - also fits hedgehog/sugar glider heat mat setups
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "enclosure-repti-zoo-36x18x18-50gal",
@@ -1599,8 +1599,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B076GXJFJG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-148.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"],
+    covers: [], // some parrot keepers provide UVB lighting too (birds.js references "Full-spectrum UVB light") and would want to verify output the same way
+    pets: ["reptiles-amphibians", "birds"],
   },
 
   // --- Batch 11: broader gap-fill pass across reptile/small-mammal/bird/
@@ -1938,8 +1938,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000H8YTJI?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-181.jpg",
-    covers: [],
-    pets: ["small-mammals"],
+    covers: [], // this is literally a dog/puppy exercise pen repurposed for rabbits here - a dog owner would recognize and want it too
+    pets: ["small-mammals", "dogs-cats"],
   },
 
 ];
