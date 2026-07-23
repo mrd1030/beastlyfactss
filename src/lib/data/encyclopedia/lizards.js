@@ -13,7 +13,7 @@ export const lizardEncyclopedia = [
     },
   },
   {
-    id: "tegu", name: "Argentine Black & White Tegu", scientific: "Salvator merianae",
+    id: "tegu", name: "Argentine Black and White Tegu", scientific: "Salvator merianae",
     category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "tegu", available: true, image: "/assets/guides/tegu.jpg",
     bio: {
       overview: "The Argentine black and white tegu is one of the largest lizards in South America, with intelligence rivaling that of monitor lizards. They are notable among reptiles for having near-endothermic (warm-blooded) properties during breeding season - their body temperature rises above ambient temperatures. In the wild they are powerful, opportunistic predators; well-socialized tegus in captivity can become remarkably dog-like companions.",
