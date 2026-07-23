@@ -607,3 +607,69 @@ resolve to their correct, distinct products. Spot-verified live in-browser
 (dev server restarted first - Vite doesn't HMR this data file) on Crested
 Gecko, Betta Fish, a cat guide, and a dog guide: every link's actual `href`
 matches the intended product's ASIN.
+
+---
+
+## Update (2026-07-23): axolotl, goldfish, chinchilla, hermit crab CSV research
+## pass (user-supplied product names, verified live on Amazon one by one via
+## Chrome, then downloaded real product images and wired into the catalog)
+
+**3 genuine previously-unlinked gaps, now filled:**
+- [x] **Chinchilla "24x24x48 in multi-level cage"** - had zero product before.
+  Now linked to `chinchilla-cage-midwest-critter-nation-double` (Critter
+  Nation by MidWest Homes for Pets Double Unit, $319.99, 4.6 stars/6.1K
+  ratings, ASIN B001NJ0DAY).
+- [x] **Hermit Crab "Marine salt mix (saltwater pool)"** - had zero product
+  before. Now linked to `marine-salt-instant-ocean` (Instant Ocean Sea Salt
+  50 Gallons, $22.37, 4.8 stars/8.4K ratings, ASIN B000255NKA).
+- [x] **Hermit Crab "Spare shells (2-3 per crab)"** - had zero product
+  before. Now linked to `hermit-crab-shells-natural-12pk` (12pc natural sea
+  conch shells, mixed sizes 1.6-3.2in, $13.99, ASIN B0CGM3P8SK).
+
+**11 more added as browsable-only alternates/upgrades** (deliberately left
+`covers: []` since something already auto-links on that cost-builder line -
+these exist for the Gear page and for AffiliateLink mentions inside article
+prose, not to silently override an existing working match):
+- `aquarium-chiller-jbj-arctica-titanium` (JBJ Arctica Titanium, 1/10 HP,
+  $759.90) - the CSV's named "gold standard", pricier than the already-linked
+  generic Fitnet chiller.
+- `aquarium-chiller-iceprobe-thermoelectric` (IceProbe, $189.99) - budget/
+  small-tank alternate.
+- `axolotl-pellets-invert-aquatics` (3 oz, $9.99, 4.5 stars/3.3K) - named
+  brand alternate to the generic soft-pellets-axolotl already linked.
+- `seachem-prime-fresh-saltwater-500ml` ($16.62, 4.8 stars/43.1K) - named
+  brand alternate to the generic water-conditioner, notable for covering
+  both fresh and marine water in one product.
+- `canister-filter-fluval-fx6` ($389.99) - bigger tier than the already-
+  linked Fluval 407.
+- `hob-filter-aquaclear-70` ($~50-90) - a hang-on-back filter, a genuinely
+  different filter type from the canister filters already linked.
+- `goldfish-pellets-hikari-gold` (11 lb, $111.99) and
+  `goldfish-gel-food-repashy-super-gold` (12 oz, $32.99) - the goldfish
+  pellet/food cost-builder line is a bundled perishable-food phrase,
+  correctly left unlinked per the established exclusion pattern, so these
+  stay browsable-only.
+- `chinchilla-pellets-oxbow-essentials` (10 lb, $18.22) and
+  `chinchilla-pellets-mazuri` (2.5 lb, $12.79, 4.8 stars/410) - same
+  reasoning, "Chinchilla pellets" is the excluded perishable-food line.
+- `substrate-zoo-med-eco-earth-coconut-fiber` (8 qt 2-pack, $30.99, 4.7
+  stars/2K) - this is the plain coconut-fiber component of hermit crab's 5:1
+  sand:coco mix; the already-linked Fluker's product is the premixed blend,
+  so this is a distinct but overlapping alternate, not a duplicate.
+
+**2 items from the CSV were not real, purchasable Amazon products** -
+verified by direct Amazon search returning nothing relevant (not just a low
+ranking, completely unrelated results):
+- **Chin Spin 15in wheel by Quality Cage Co.** - a real, well-regarded
+  specialty chinchilla wheel, but sold direct from the manufacturer's own
+  site, not on Amazon. The existing generic `exercise-wheel-chinchilla`
+  stays the only linked option.
+- **Hermie's Kitchen hermit crab food** - same situation, appears to be a
+  small direct-to-consumer brand with no Amazon presence.
+
+All 14 new entries' product images were downloaded directly from each
+Amazon listing's own main image (via the real product ASIN, not a guess)
+and saved as `product-182.jpg` through `product-195.jpg`, matching the
+existing sequential local-image convention. Catalog is now 202 products
+total (was 188), regression-checked via `getAffiliateForItem` for the 3
+newly-filled gaps, all resolving correctly.

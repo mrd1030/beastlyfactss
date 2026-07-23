@@ -15,6 +15,7 @@ export const smallMammalGuides = [
         { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
         { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
         { item: "Platforms and hideouts", low: 30, high: 60 },
+        { item: "Water bottle and food dishes", low: 10, high: 20 },
         { item: "Chew toys (mineral/pumice)", low: 15, high: 30 },
         { item: "Digital thermometer", low: 15, high: 25 },
       ],

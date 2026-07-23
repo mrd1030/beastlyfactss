@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Calculator, ShoppingCart } from 'lucide-react';
-import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
+import { Calculator, ShoppingCart, ChevronDown } from 'lucide-react';
+import { getAffiliateForItem, getAlternatesForItem, RETAILERS } from '@/lib/data/affiliateProducts';
 
 // Joins retailer labels naturally: "Amazon", "Amazon and Chewy", "Amazon, Chewy and Impact".
 function joinLabels(labels) {
@@ -20,6 +20,7 @@ function sumRange(items, checked) {
 }
 
 function ItemLabel({ text, textClassName }) {
+  const [showAlts, setShowAlts] = useState(false);
   const product = getAffiliateForItem(text);
 
   if (!product) {
@@ -27,27 +28,61 @@ function ItemLabel({ text, textClassName }) {
   }
 
   const retailerLabel = RETAILERS[product.retailer]?.label || 'Amazon';
+  const alternates = getAlternatesForItem(text);
 
   return (
-    <span className="relative inline-flex items-center gap-1 group/aff min-w-0">
-      <a
-        href={product.link}
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-        onClick={(e) => e.stopPropagation()}
-        title={`Paid link - opens the product on ${retailerLabel}`}
-        className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
-      >
-        {text}
-      </a>
-      <ShoppingCart className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" aria-hidden="true" />
-      {product.image && (
-        <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
-          <img
-            src={product.image}
-            alt={product.product}
-            className="w-24 h-24 object-cover rounded-lg border border-border shadow-lg bg-white"
-          />
+    <span className="relative inline-flex flex-col items-start gap-1 min-w-0">
+      <span className="relative inline-flex items-center gap-1 group/aff min-w-0">
+        <a
+          href={product.link}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          onClick={(e) => e.stopPropagation()}
+          title={`Paid link - opens the product on ${retailerLabel}`}
+          className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
+        >
+          {text}
+        </a>
+        <ShoppingCart className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" aria-hidden="true" />
+        {product.image && (
+          <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
+            <img
+              src={product.image}
+              alt={product.product}
+              className="w-24 h-24 object-cover rounded-lg border border-border shadow-lg bg-white"
+            />
+          </span>
+        )}
+        {alternates.length > 0 && (
+          <button
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              e.preventDefault();
+              setShowAlts((v) => !v);
+            }}
+            title="See similar products"
+            className="inline-flex items-center gap-0.5 text-[10px] text-muted-foreground/70 hover:text-secondary transition-colors flex-shrink-0"
+          >
+            +{alternates.length} more
+            <ChevronDown className={`w-2.5 h-2.5 transition-transform ${showAlts ? 'rotate-180' : ''}`} aria-hidden="true" />
+          </button>
+        )}
+      </span>
+      {showAlts && alternates.length > 0 && (
+        <span className="flex flex-col gap-1 pl-1 border-l-2 border-border ml-0.5" onClick={(e) => e.stopPropagation()}>
+          {alternates.map((alt) => (
+            <a
+              key={alt.slug}
+              href={alt.link}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              title={`Paid link - opens the product on ${RETAILERS[alt.retailer]?.label || 'Amazon'}`}
+              className="text-[10px] text-muted-foreground hover:text-secondary underline decoration-dotted decoration-current/40 underline-offset-2 pl-2 truncate max-w-[220px]"
+            >
+              {alt.product}
+            </a>
+          ))}
         </span>
       )}
     </span>

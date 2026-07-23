@@ -160,6 +160,7 @@ export const fishGuides = [
         { item: "20+ gallon tank", low: 80, high: 180 },
         { item: "Canister filter (strong filtration)", low: 60, high: 120 },
         { item: "Smooth gravel or sand substrate", low: 15, high: 25 },
+        { item: "Water test kit", low: 15, high: 20 },
       ],
       annual: [
         { item: "Goldfish pellets + blanched vegetables", low: 50, high: 90 },

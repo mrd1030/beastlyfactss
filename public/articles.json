@@ -9,6 +9,38 @@
       "category": "Site News"
     },
     {
+      "slug": "axolotl-cost-guide",
+      "title": "Axolotl Cost: Full Price Breakdown",
+      "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what actually determines your budget.",
+      "date": "2026-07-23",
+      "image": "/assets/images/axolotl-cost.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "axolotl-handling-guide",
+      "title": "Axolotl Handling: What to Know",
+      "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
+      "date": "2026-07-23",
+      "image": "/assets/images/axolotl-handling.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "axolotl-health-issues-guide",
+      "title": "Axolotl Health Issues: Signs & Causes",
+      "excerpt": "Axolotls are hardy in the right conditions and surprisingly fragile outside them. A large share of what goes wrong traces back to water that's too warm, which makes temperature control the single most important thing to get right.",
+      "date": "2026-07-23",
+      "image": "/assets/images/axolotl-health-issues.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "axolotl-tank-setup-guide",
+      "title": "Axolotl Tank Setup Guide",
+      "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a genuinely manageable pet.",
+      "date": "2026-07-23",
+      "image": "/assets/images/axolotl-tank-setup.jpg",
+      "category": "Amphibians"
+    },
+    {
       "slug": "ball-python-cost-guide",
       "title": "Ball Python Cost: Full Price Breakdown",
       "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then genuinely low costs for the 20-30 years after.",
@@ -217,6 +249,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "chinchilla-cost-guide",
+      "title": "Chinchilla Cost: Full Price Breakdown",
+      "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself isn't the expensive part, the cage, the exercise wheel, and keeping the room the right temperature are where the real budget goes.",
+      "date": "2026-07-23",
+      "image": "/assets/images/chinchilla-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "chinchilla-handling-guide",
+      "title": "How to Handle a Chinchilla Safely",
+      "excerpt": "Chinchillas are a genuine handling pet, unlike some of the more hands-off species out there, but they come with two specific physical quirks worth understanding before you pick one up for the first time.",
+      "date": "2026-07-23",
+      "image": "/assets/images/chinchilla-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "chinchilla-health-issues-guide",
+      "title": "Chinchilla Health Issues: Signs & Causes",
+      "excerpt": "Chinchillas hide illness well and can decline quickly once something is genuinely wrong, which makes knowing the warning signs, and one specific environmental risk, especially important with this species.",
+      "date": "2026-07-23",
+      "image": "/assets/images/chinchilla-health-issues.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "chinchilla-tank-setup-guide",
+      "title": "Chinchilla Cage & Housing Setup Guide",
+      "excerpt": "Chinchilla care has a few rules that genuinely surprise new owners, especially around bathing. Get the cage, the temperature, and the dust bath right, and the rest of this species' care is fairly manageable.",
+      "date": "2026-07-23",
+      "image": "/assets/images/chinchilla-tank-setup.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "cockatiel-cost-guide",
       "title": "Cockatiel Cost: Full Price Breakdown",
       "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
@@ -345,6 +409,38 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "goldfish-cost-guide",
+      "title": "Goldfish Cost: Full Price Breakdown",
+      "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a genuinely large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
+      "date": "2026-07-23",
+      "image": "/assets/images/goldfish-cost.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "goldfish-handling-guide",
+      "title": "How to Handle a Goldfish Safely",
+      "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
+      "date": "2026-07-23",
+      "image": "/assets/images/goldfish-handling.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "goldfish-health-issues-guide",
+      "title": "Goldfish Health Issues: Signs & Causes",
+      "excerpt": "Goldfish are hardier than their reputation suggests when kept in the right conditions, but a handful of issues come up often enough to be worth knowing before they show up in your own tank.",
+      "date": "2026-07-23",
+      "image": "/assets/images/goldfish-health-issues.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "goldfish-tank-setup-guide",
+      "title": "Goldfish Tank Setup Guide",
+      "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you actually need is bigger than most people expect for what looks like a small, simple fish.",
+      "date": "2026-07-23",
+      "image": "/assets/images/goldfish-tank-setup.jpg",
+      "category": "Aquatic Life"
+    },
+    {
       "slug": "goldfish-tank-size-bowl-myth",
       "title": "The Goldfish Bowl Myth Debunked",
       "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
@@ -399,6 +495,38 @@
       "date": "2026-07-08",
       "image": "/assets/images/hamster-vs-guinea-pig.jpg",
       "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hermit-crab-cost-guide",
+      "title": "Hermit Crab Cost: Full Price Breakdown",
+      "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
+      "date": "2026-07-23",
+      "image": "/assets/images/hermit-crab-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "hermit-crab-handling-guide",
+      "title": "How to Handle a Hermit Crab Safely",
+      "excerpt": "Hermit crabs are prey animals, and they're not really a pet built for regular handling the way a guinea pig or a chinchilla is. Minimal, gentle, purposeful handling is the right approach here, not casual daily interaction.",
+      "date": "2026-07-23",
+      "image": "/assets/images/hermit-crab-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "hermit-crab-health-issues-guide",
+      "title": "Hermit Crab Health Issues: Signs & Causes",
+      "excerpt": "Here's the thing to understand upfront about hermit crab health: there's essentially no practical veterinary care available for this species, similar to the situation with pet tarantulas. That reshapes everything about how to approach their wellbeing, husbandry and prevention do nearly all of the work.",
+      "date": "2026-07-23",
+      "image": "/assets/images/hermit-crab-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "hermit-crab-tank-setup-guide",
+      "title": "Hermit Crab Enclosure Setup Guide",
+      "excerpt": "Hermit crab care is genuinely different from most small-pet setups, this is a species that needs both land and water access, and its most important requirement, humidity, is the one first-time owners most often get wrong.",
+      "date": "2026-07-23",
+      "image": "/assets/images/hermit-crab-tank-setup.jpg",
+      "category": "Invertebrates"
     },
     {
       "slug": "invertebrate-molting-guide",

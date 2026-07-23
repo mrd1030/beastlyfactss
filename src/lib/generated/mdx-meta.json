@@ -28,6 +28,199 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/axolotl-cost-guide.mdx",
+    "slug": "axolotl-cost-guide",
+    "title": "How Much Does an Axolotl Really Cost?",
+    "seoTitle": "Axolotl Cost: Full Price Breakdown",
+    "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what actually determines your budget.",
+    "date": "2026-07-23",
+    "category": "Amphibians",
+    "tags": [
+      "Axolotl",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Aquarium Chiller",
+      "Amphibian Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/axolotl-cost.jpg",
+    "imageAlt": "Axolotl in a chilled aquarium tank with a sponge filter and fine sand substrate",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does an axolotl itself cost?",
+        "a": "$30 to $100 for a standard morph, with rarer colors like mosaic or GFP pushing the price higher still. The axolotl itself is actually one of the smaller costs, the tank and chiller matter more to your total budget."
+      },
+      {
+        "q": "What does a full axolotl setup cost, including a chiller?",
+        "a": "Plan on $200 to $500 for a basic setup, or $450 to $900 once you factor in a proper chiller and a fully cycled filter. The chiller is the single item that does the most to separate the low and high ends of that range."
+      },
+      {
+        "q": "What are the ongoing monthly costs for an axolotl?",
+        "a": "Around $15 to $45 a month, with food (nightcrawlers) running $5 to $15 of that. The rest goes to water conditioner, filter media, and the electricity a chiller draws, which varies a lot by climate and season."
+      },
+      {
+        "q": "Why is a chiller considered a non-negotiable cost for axolotls?",
+        "a": "Axolotls need water between 60 and 68°F, and most homes run warmer than that for part of the year. Without a chiller you can't reliably keep the water in a safe range, which makes it part of the real cost of keeping this species responsibly rather than an optional upgrade."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "sponge-filter",
+      "aquarium-chiller-axolotl",
+      "aquarium-chiller-jbj-arctica-titanium",
+      "water-conditioner",
+      "digital-thermometer-hygrometer-combo",
+      "water-test-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/axolotl-handling-guide.mdx",
+    "slug": "axolotl-handling-guide",
+    "title": "Should You Handle an Axolotl? Only When You Truly Have To",
+    "seoTitle": "Axolotl Handling: What to Know",
+    "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
+    "date": "2026-07-23",
+    "category": "Amphibians",
+    "tags": [
+      "Axolotl",
+      "Handling",
+      "Gills and Skin",
+      "Acclimation",
+      "Care Tips",
+      "Amphibian Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/axolotl-handling.jpg",
+    "imageAlt": "Axolotl being gently guided into a submerged container instead of being lifted by hand",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I pick up my axolotl with my hands?",
+        "a": "Only when genuinely necessary, and even then a submerged container is safer than bare hands. Axolotls have scaleless, sensitive skin and delicate external gills with no robust slime layer like a fish has to protect against damage or infection at the point of contact."
+      },
+      {
+        "q": "How do I safely move an axolotl when I have to?",
+        "a": "Guide it into a submerged container while it's still underwater rather than lifting it out or scooping it into a net. Keep it in water at all times, air exposure and physical pressure are real risks given how much of an axolotl's skeleton is cartilage rather than bone."
+      },
+      {
+        "q": "How do I introduce a new axolotl to its tank without handling it?",
+        "a": "Use drip-matching: slowly introduce your tank's water into the bag or container the axolotl arrived in so temperature and water chemistry shift gradually. This settles the animal in without any direct handling at all."
+      },
+      {
+        "q": "Why are axolotls so much more fragile than fish?",
+        "a": "Their skin is scaleless and lacks the protective slime coat fish rely on, their external gills are delicate feathery structures that can snag or tear, and their skeleton is largely cartilage rather than solid bone. All of that adds up to an animal that's easy to injure without meaning to."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/axolotl-health-issues-guide.mdx",
+    "slug": "axolotl-health-issues-guide",
+    "title": "Common Axolotl Health Issues (Most Trace Back to Temperature)",
+    "seoTitle": "Axolotl Health Issues: Signs & Causes",
+    "excerpt": "Axolotls are hardy in the right conditions and surprisingly fragile outside them. A large share of what goes wrong traces back to water that's too warm, which makes temperature control the single most important thing to get right.",
+    "date": "2026-07-23",
+    "category": "Amphibians",
+    "tags": [
+      "Axolotl",
+      "Health",
+      "Temperature Stress",
+      "Fungal Infection",
+      "Care Tips",
+      "Amphibian Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/axolotl-health-issues.jpg",
+    "imageAlt": "Axolotl with healthy pink gills resting near the substrate in a cool tank",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does a fungal infection look like on an axolotl?",
+        "a": "A white or grey, cotton-like growth on the gills or body, usually triggered by warm water, poor water quality, stress, or an existing injury. Treatment starts with correcting water quality and cooling the tank, with salt baths sometimes helping, though severe cases need a vet-prescribed antifungal."
+      },
+      {
+        "q": "What is heat stress in axolotls and how serious is it?",
+        "a": "It's the condition most axolotl health problems trace back to. Watch for curled or forward-facing gill tips, appetite loss, floating, and pale patches, extended exposure above roughly 72°F suppresses the immune system, and temperatures above about 75°F can be fatal, so dropping the water temperature immediately is the priority."
+      },
+      {
+        "q": "What causes impaction in axolotls?",
+        "a": "Ingesting gravel or substrate too large to pass through the digestive system. Signs include bloating, floating instead of resting on the bottom, appetite loss, and an absence of waste, mild cases sometimes resolve with fasting and cooler water, but severe cases can need surgery. It's almost entirely preventable with fine sand or a bare-bottom tank."
+      },
+      {
+        "q": "When should I take my axolotl to a vet?",
+        "a": "Find an aquatic or exotic-amphibian vet before you need one, since general small-animal clinics often aren't equipped for this species. See one promptly for fungal growth that hasn't improved within 48 hours, suspected impaction, red streaking or open wounds, or appetite loss lasting 5 days or more."
+      }
+    ],
+    "relatedProducts": [
+      "aquarium-chiller-axolotl",
+      "water-conditioner",
+      "water-test-kit",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/axolotl-tank-setup-guide.mdx",
+    "slug": "axolotl-tank-setup-guide",
+    "title": "Axolotl Tank Setup: Cold Water and No Gravel",
+    "seoTitle": "Axolotl Tank Setup Guide",
+    "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a genuinely manageable pet.",
+    "date": "2026-07-23",
+    "category": "Amphibians",
+    "tags": [
+      "Axolotl",
+      "Tank Setup",
+      "Water Temperature",
+      "Substrate",
+      "Care Tips",
+      "Amphibian Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/axolotl-tank-setup.jpg",
+    "imageAlt": "Axolotl tank setup with fine sand substrate, a chiller, and a sponge filter",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does an axolotl need?",
+        "a": "A 20-gallon long tank is the minimum for one axolotl, with a 40-gallon breeder better if you're keeping two. Floor space matters more than height since this is a bottom-dwelling species, and a secure lid matters too, axolotls can climb out given the chance."
+      },
+      {
+        "q": "What temperature should axolotl water be kept at?",
+        "a": "Between 60 and 68°F. Don't use a heater, plan for a chiller or, in cooler climates, fan-based cooling instead. Above 72°F starts to cause chronic stress, and temperatures in the mid-70s can be fatal."
+      },
+      {
+        "q": "What substrate is safe for an axolotl tank?",
+        "a": "Fine sand with grains under 1mm, or no substrate at all. Never use gravel or small rocks, axolotls are opportunistic eaters that will ingest loose substrate along with their food, and anything larger than fine sand carries a real impaction risk."
+      },
+      {
+        "q": "What do axolotls eat?",
+        "a": "Earthworms or nightcrawlers are the nutritionally complete staple, cut into smaller pieces for juveniles. Sinking pellets work as a supplement and bloodworms make a good occasional treat. Adults eat every 2 to 3 days, juveniles need food daily."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "aquarium-chiller-axolotl",
+      "aquarium-chiller-jbj-arctica-titanium",
+      "digital-thermometer-hygrometer-combo",
+      "water-test-kit",
+      "sponge-filter",
+      "soft-pellets-axolotl"
+    ]
+  },
+  {
     "path": "/content/guides/ball-python-cost-guide.mdx",
     "slug": "ball-python-cost-guide",
     "title": "How Much Does a Ball Python Really Cost?",
@@ -1295,6 +1488,199 @@
     ]
   },
   {
+    "path": "/content/guides/chinchilla-cost-guide.mdx",
+    "slug": "chinchilla-cost-guide",
+    "title": "How Much Does a Chinchilla Really Cost?",
+    "seoTitle": "Chinchilla Cost: Full Price Breakdown",
+    "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself isn't the expensive part, the cage, the exercise wheel, and keeping the room the right temperature are where the real budget goes.",
+    "date": "2026-07-23",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Chinchilla",
+      "Cost",
+      "Pet Ownership Cost",
+      "Cage Setup Cost",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate/Advanced",
+    "image": "/assets/images/chinchilla-cost.jpg",
+    "imageAlt": "Chinchilla sitting beside its cage, exercise wheel, and dust bath house",
+    "emoji": "🐭",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a chinchilla cost upfront?",
+        "a": "Plan on $455 to $1,225 for a complete setup: the chinchilla itself ($75 to $175 from a rescue, $150 to $700 or more from a breeder), a proper multi-level cage with solid floors ($150 to $400 or more), a dust bath house and dust, a solid exercise wheel, and the smaller extras like ledges, hides, a water bottle, and bedding."
+      },
+      {
+        "q": "What are the monthly costs of owning a chinchilla?",
+        "a": "Around $30 to $85 a month covers pellets and hay, dust replacement every 2 to 3 months, bedding, chews and toys, plus an annual exotic vet checkup that averages $50 to $100 or more. Most of that is genuinely necessary upkeep rather than optional extras."
+      },
+      {
+        "q": "Why does a chinchilla's room need to stay cool?",
+        "a": "Chinchillas are highly heat-sensitive, and depending on your climate, keeping their room in a safe range during warmer months can mean running air conditioning specifically for them. It's not always a direct line item on a supply list, but it's a real ongoing cost worth planning for."
+      },
+      {
+        "q": "Is a chinchilla an expensive pet long term?",
+        "a": "Not by exotic-pet standards, but chinchillas can live well over a decade, so the cage and wheel you buy should be built to last rather than something you'll want to replace later. Spending more upfront on solid equipment tends to be cheaper over the animal's full lifetime than buying budget gear and upgrading."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-cage-midwest-critter-nation-double",
+      "chinchilla-dust-bath-house",
+      "exercise-wheel-chinchilla",
+      "chinchilla-dust",
+      "timothy-hay-small-pets",
+      "small-pet-paper-bedding",
+      "small-pet-hideout-igloo",
+      "small-mammal-bowl-kaytee-vege-t-bowl"
+    ]
+  },
+  {
+    "path": "/content/guides/chinchilla-handling-guide.mdx",
+    "slug": "chinchilla-handling-guide",
+    "title": "How to Handle a Chinchilla (And What Fur Slip Actually Means)",
+    "seoTitle": "How to Handle a Chinchilla Safely",
+    "excerpt": "Chinchillas are a genuine handling pet, unlike some of the more hands-off species out there, but they come with two specific physical quirks worth understanding before you pick one up for the first time.",
+    "date": "2026-07-23",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Chinchilla",
+      "Handling",
+      "Fur Slip",
+      "Bonding",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Intermediate/Advanced",
+    "image": "/assets/images/chinchilla-handling.jpg",
+    "imageAlt": "Person cradling a chinchilla securely with both hands",
+    "emoji": "🐭",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the correct way to pick up a chinchilla?",
+        "a": "Support the body fully with both hands, cradling the chinchilla against your chest, sometimes called a football hold. If you need a firmer grip for a moment, grasping gently at the base of the tail while supporting the body with your other hand is accepted, but never lift by the tail tip itself."
+      },
+      {
+        "q": "What is fur slip in chinchillas?",
+        "a": "It's a protective defense mechanism where a grabbed, mishandled, or overexcited chinchilla releases a large patch of fur all at once, revealing smooth skin underneath. It's not painful and not an injury in the traditional sense, but the fur can take several months to grow back, and it often regrows a slightly different shade."
+      },
+      {
+        "q": "Why are chinchillas prone to injury when handled roughly?",
+        "a": "They have long hind limbs and a genuinely delicate skeleton, so fractures happen more easily than their size and energy level would suggest. Never let a chinchilla leap or jump from any real height, and if children are handling one, have them sit on the floor first to remove the fall risk almost entirely."
+      },
+      {
+        "q": "How long should a handling session with a chinchilla last?",
+        "a": "Keep it calm and reasonably short. Many chinchillas don't love prolonged restraint even once they're comfortable with handling, so reading your individual chinchilla's tolerance and stopping before it becomes stressed builds more trust over time than pushing for a longer session."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/chinchilla-health-issues-guide.mdx",
+    "slug": "chinchilla-health-issues-guide",
+    "title": "Common Chinchilla Health Issues (Heat Is the Hidden Danger)",
+    "seoTitle": "Chinchilla Health Issues: Signs & Causes",
+    "excerpt": "Chinchillas hide illness well and can decline quickly once something is genuinely wrong, which makes knowing the warning signs, and one specific environmental risk, especially important with this species.",
+    "date": "2026-07-23",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Chinchilla",
+      "Health",
+      "Heat Stroke",
+      "Dental Disease",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate/Advanced",
+    "image": "/assets/images/chinchilla-health-issues.jpg",
+    "imageAlt": "Chinchilla in a cool, well-ventilated enclosure showing alert, healthy posture",
+    "emoji": "🐭",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the most common chronic health issue in pet chinchillas?",
+        "a": "Dental disease. Chinchilla teeth grow continuously, and without enough coarse hay to grind them down, spikes or impacted roots can develop. Watch for drooling, a wet chin, dropped food, reduced appetite, and weight loss, and expect an exotic vet's oral exam and often skull X-rays under sedation to diagnose it fully."
+      },
+      {
+        "q": "How do I know if my chinchilla is at risk of heat stroke?",
+        "a": "Use the 150 rule: add the room temperature in Fahrenheit to the humidity percentage, and treat a combined total over 150 as dangerous. Watch for lethargy, drooling, panting, bright red mucous membranes, and collapse in severe cases, this is a genuine emergency with real risk of organ failure or death."
+      },
+      {
+        "q": "Is ringworm in chinchillas contagious to humans?",
+        "a": "Yes. Ringworm is a transmissible skin fungus that can spread between chinchillas and, in some cases, to people handling an infected animal, so it's worth knowing about even though it's primarily a husbandry-related skin issue."
+      },
+      {
+        "q": "When should I take my chinchilla to the vet?",
+        "a": "See a vet promptly for drooling, changes in appetite or stool, diarrhea, any respiratory signs, or any indication of heat stress. Because chinchillas mask illness so effectively and can decline fast once symptoms become visible, err toward calling sooner rather than waiting to see if things improve."
+      }
+    ],
+    "relatedProducts": [
+      "timothy-hay-small-pets",
+      "chew-chinchilla-mineral-lava-blocks",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/chinchilla-tank-setup-guide.mdx",
+    "slug": "chinchilla-tank-setup-guide",
+    "title": "Chinchilla Housing: Dust Baths, Not Water, and a Cool Room",
+    "seoTitle": "Chinchilla Cage & Housing Setup Guide",
+    "excerpt": "Chinchilla care has a few rules that genuinely surprise new owners, especially around bathing. Get the cage, the temperature, and the dust bath right, and the rest of this species' care is fairly manageable.",
+    "date": "2026-07-23",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Chinchilla",
+      "Cage Setup",
+      "Dust Bath",
+      "Temperature",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate/Advanced",
+    "image": "/assets/images/chinchilla-tank-setup.jpg",
+    "imageAlt": "Chinchilla multi-level metal cage with solid shelves, a wheel, and a dust bath house",
+    "emoji": "🐭",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a chinchilla need?",
+        "a": "A reasonable minimum is around 24 by 24 by 36 inches, tall and multi-level with solid, non-wire floors and shelves. Bigger is genuinely better for a species this active, and metal construction beats plastic since chinchillas chew constantly and ingested plastic can cause a fatal blockage."
+      },
+      {
+        "q": "Can chinchillas take water baths?",
+        "a": "No. Their fur is extremely dense, among the densest of any mammal, and trapped moisture in a coat that thick promotes fungal growth rather than washing anything away. There's no safe way to bathe a chinchilla in water the way you might a dog, dust baths are the only option."
+      },
+      {
+        "q": "How often should I give my chinchilla a dust bath?",
+        "a": "Two to three times a week, some owners go daily, for about 10 to 30 minutes at a time using roughly 1 to 2 inches of dust in a shallow container. Remove the dust container afterward so it doesn't become a permanent fixture in the cage."
+      },
+      {
+        "q": "What temperature should a chinchilla's room be?",
+        "a": "Ideally 50 to 68°F, kept cool, dry, and out of direct sun and drafts. Apply the 150 rule as a check: add the Fahrenheit temperature to the humidity percentage, and treat a combined total over 150 as dangerous territory."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-cage-midwest-critter-nation-double",
+      "digital-thermometer-hygrometer-combo",
+      "chinchilla-dust",
+      "chinchilla-dust-bath-house",
+      "timothy-hay-small-pets",
+      "small-pet-paper-bedding",
+      "exercise-wheel-chinchilla"
+    ]
+  },
+  {
     "path": "/content/guides/cockatiel-cost-guide.mdx",
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
@@ -2057,6 +2443,193 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/goldfish-cost-guide.mdx",
+    "slug": "goldfish-cost-guide",
+    "title": "How Much Does a Goldfish Really Cost?",
+    "seoTitle": "Goldfish Cost: Full Price Breakdown",
+    "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a genuinely large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
+    "date": "2026-07-23",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-cost.jpg",
+    "imageAlt": "Goldfish in a large planted aquarium with visible filtration equipment",
+    "emoji": "🐟",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a goldfish cost?",
+        "a": "The fish itself often costs less than $10, even for fancy varieties, which rarely push the price much past that. The real cost of goldfish keeping isn't the fish, it's the tank and filtration it needs to actually thrive."
+      },
+      {
+        "q": "What does a proper goldfish tank setup cost?",
+        "a": "A complete setup, tank, filtration, optional heater, substrate, dechlorinator, decor, and a test kit, typically runs $150 to $400. Filtration is the part worth budgeting extra for since goldfish produce far more waste than most fish their size."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a goldfish?",
+        "a": "Around $10 to $30 a month covers quality pellets, occasional gel or frozen food, and periodic water treatments. It's a genuinely low ongoing cost pet once the tank and filtration are set up correctly from the start."
+      },
+      {
+        "q": "Why do goldfish have a reputation for being a cheap, disposable pet?",
+        "a": "Because they've long been sold alongside setups that are genuinely too small for them. A bowl or tiny tank looks cheap upfront but leads to a fish that struggles and often dies early, which isn't actually cheaper in any meaningful sense, it's just a worse outcome sold at a lower initial price."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "canister-filter-large",
+      "betta-substrate-caribsea-freshwater-sand",
+      "water-conditioner",
+      "water-test-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/goldfish-handling-guide.mdx",
+    "slug": "goldfish-handling-guide",
+    "title": "How to \"Handle\" a Goldfish (Net and Cup, Not Hands)",
+    "seoTitle": "How to Handle a Goldfish Safely",
+    "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
+    "date": "2026-07-23",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Handling",
+      "Fish Behavior",
+      "Slime Coat",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-handling.jpg",
+    "imageAlt": "Goldfish being guided into a container of tank water instead of being lifted by hand",
+    "emoji": "🐟",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I pick up my goldfish with my hands?",
+        "a": "You shouldn't, at least not routinely. A goldfish's protective slime coat is a genuine physical barrier against disease, and bare hands strip it away on contact, leaving the fish more vulnerable to infection for a day or two afterward."
+      },
+      {
+        "q": "How long does it take a goldfish's slime coat to heal after handling?",
+        "a": "About 24 to 48 hours. During that window the fish is meaningfully more vulnerable to infection than usual, which is why even a single instance of unnecessary handling isn't as harmless as it might look."
+      },
+      {
+        "q": "What's the right way to move a goldfish?",
+        "a": "Guide it into a container of tank water rather than lifting it out directly, that's the gentlest option and avoids the slime-coat issue almost entirely. If you need a net, wet it first and choose a soft rubber net over a knotted nylon one, which can catch on fins and scales."
+      },
+      {
+        "q": "What if I have no choice but to use my bare hands?",
+        "a": "Wet them first and keep well clear of the gills and eyes, both are especially sensitive. Whatever method you use, minimize the time the fish spends out of water, every second counts more than it might seem to."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/goldfish-health-issues-guide.mdx",
+    "slug": "goldfish-health-issues-guide",
+    "title": "Common Goldfish Health Issues (And What Actually Prevents Them)",
+    "seoTitle": "Goldfish Health Issues: Signs & Causes",
+    "excerpt": "Goldfish are hardier than their reputation suggests when kept in the right conditions, but a handful of issues come up often enough to be worth knowing before they show up in your own tank.",
+    "date": "2026-07-23",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Health",
+      "Ich",
+      "Swim Bladder Disorder",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-health-issues.jpg",
+    "imageAlt": "Goldfish in a clean, well filtered tank showing healthy color and fins",
+    "emoji": "🐟",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the most common health problem in pet goldfish?",
+        "a": "Ich, or white spot disease, caused by the parasite Ichthyophthirius multifiliis. Look for tiny white spots resembling grains of salt across the body and fins, along with flashing against tank surfaces and clamped fins. It's one of the more treatable common ailments with the right medication."
+      },
+      {
+        "q": "What causes swim bladder disorder in goldfish?",
+        "a": "Buoyancy problems, floating at the surface, sinking to the bottom, or swimming at odd angles, are often linked to constipation, diet, or simply the unusual body shape of fancy goldfish varieties. A short fast followed by a single cooked, de-shelled pea is a common first response."
+      },
+      {
+        "q": "Is dropsy in goldfish treatable?",
+        "a": "Rarely, and the outlook is generally poor. Dropsy shows up as a swollen belly with scales that stand out in a pinecone-like pattern, and it's usually a visible symptom of organ or kidney failure rather than a standalone disease."
+      },
+      {
+        "q": "When should I take a sick goldfish to a vet?",
+        "a": "For persistent loss of buoyancy, severe fin damage, visible ulcers, ongoing lethargy or appetite refusal, or when an over-the-counter treatment isn't working. Most goldfish health issues are prevented rather than treated, through consistent water quality, quarantining new fish, and appropriate feeding."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit",
+      "water-conditioner"
+    ]
+  },
+  {
+    "path": "/content/guides/goldfish-tank-setup-guide.mdx",
+    "slug": "goldfish-tank-setup-guide",
+    "title": "Goldfish Tank Setup: Bigger Than You Think, Filtered More Than You'd Guess",
+    "seoTitle": "Goldfish Tank Setup Guide",
+    "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you actually need is bigger than most people expect for what looks like a small, simple fish.",
+    "date": "2026-07-23",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Tank Setup",
+      "Tank Size",
+      "Filtration",
+      "Care Tips",
+      "Aquarium Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-tank-setup.jpg",
+    "imageAlt": "Large goldfish tank with visible filtration equipment and open swimming space",
+    "emoji": "🐟",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does a goldfish need?",
+        "a": "Plan for roughly 20 gallons for a single fancy goldfish, with at least 10 additional gallons for each fish after that. Single-tail varieties like comets and commons need considerably more room, a minimum of about 30 gallons for one and 40-plus gallons for each additional fish, and are genuinely better suited to a pond than an indoor tank long term."
+      },
+      {
+        "q": "How much filtration does a goldfish tank actually need?",
+        "a": "Filtration should process your total tank volume at least 4 times an hour, and ideally 5 to 10 times, since goldfish are unusually heavy waste producers for their size. Running two filters is common practice among experienced keepers rather than overkill."
+      },
+      {
+        "q": "What water parameters should I keep for goldfish?",
+        "a": "Goldfish are a coldwater species, comfortable in the 65 to 75°F range with no heater strictly required. Keep ammonia and nitrite at 0 and nitrate under roughly 20 ppm, and do weekly water changes of 25 to 50%, always treating new water with a dechlorinator first."
+      },
+      {
+        "q": "What should I feed a goldfish?",
+        "a": "A balanced diet of quality pellets as the base, plus vegetables and occasional protein. For fancy varieties specifically, sinking pellets or gel-based foods reduce the swim bladder issues that can come with their rounder body shape, and avoiding overfeeding cuts down on the waste load your filtration has to handle."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "canister-filter",
+      "canister-filter-large",
+      "water-conditioner",
+      "water-test-kit"
+    ]
+  },
+  {
     "path": "/content/guides/goldfish-tank-size-bowl-myth.mdx",
     "slug": "goldfish-tank-size-bowl-myth",
     "title": "The Goldfish Bowl Myth: What the Research Actually Shows",
@@ -2396,6 +2969,196 @@
     ],
     "relatedProducts": [
       "cc-cage-guinea-pig"
+    ]
+  },
+  {
+    "path": "/content/guides/hermit-crab-cost-guide.mdx",
+    "slug": "hermit-crab-cost-guide",
+    "title": "How Much Does a Hermit Crab Really Cost?",
+    "seoTitle": "Hermit Crab Cost: Full Price Breakdown",
+    "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
+    "date": "2026-07-23",
+    "category": "Invertebrates",
+    "tags": [
+      "Hermit Crab",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hermit-crab-cost.jpg",
+    "imageAlt": "Hermit crabs climbing over extra shells and substrate in a humidity-sealed tank",
+    "emoji": "🦀",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a hermit crab itself cost?",
+        "a": "Usually just $3 to $40 per crab, the smallest line item in the whole budget. Keep at least two, hermit crabs are social and don't do well in isolation, so budgeting for a single crab isn't really an option if you want to keep them properly."
+      },
+      {
+        "q": "What does a proper hermit crab setup cost?",
+        "a": "Plan on $130 to $450 for a full setup: tank, substrate, heat mat, thermometer/hygrometer, extra shells, dishes, and marine salt. Tank size and how many crabs you're starting with are what move you around in that range."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a hermit crab?",
+        "a": "Around $10 to $30 a month, mostly food and general supplies. This is a genuinely low-cost pet to maintain once the initial setup is built, most of the real expense is front-loaded into getting the tank right the first time."
+      },
+      {
+        "q": "Why is 'cheap boardwalk crab' a misleading way to think about hermit crab cost?",
+        "a": "Because the low price of the crab itself hides what actually determines whether it thrives: the tank, substrate depth, humidity control, and multiple spare shells. Skipping that real setup to save money is a common reason boardwalk-shop crabs don't survive long, and it doesn't change the fact that a well-kept hermit crab can live 10 to 20 years or more."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "digital-thermometer-hygrometer-combo",
+      "substrate-hermit-crab-flukers-sand-coco",
+      "large-soakable-water-dish",
+      "hermit-crab-shells-natural-12pk",
+      "marine-salt-instant-ocean"
+    ]
+  },
+  {
+    "path": "/content/guides/hermit-crab-handling-guide.mdx",
+    "slug": "hermit-crab-handling-guide",
+    "title": "How to Handle a Hermit Crab (Minimally, and On Its Terms)",
+    "seoTitle": "How to Handle a Hermit Crab Safely",
+    "excerpt": "Hermit crabs are prey animals, and they're not really a pet built for regular handling the way a guinea pig or a chinchilla is. Minimal, gentle, purposeful handling is the right approach here, not casual daily interaction.",
+    "date": "2026-07-23",
+    "category": "Invertebrates",
+    "tags": [
+      "Hermit Crab",
+      "Handling",
+      "Crab Behavior",
+      "Molting",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hermit-crab-handling.jpg",
+    "imageAlt": "Hermit crab resting calmly on an open flat palm",
+    "emoji": "🦀",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I handle my hermit crab the way I would a guinea pig or hamster?",
+        "a": "Not really. Hermit crabs are prey animals, and they're better suited to minimal, gentle, purposeful handling rather than casual daily interaction. When you do handle one, let it sit on a flat open palm and lift from the shell rather than the legs or claws."
+      },
+      {
+        "q": "When should I never handle my hermit crab?",
+        "a": "Never handle a crab that's molting, has recently changed shells, or is buried in the substrate. Molting crabs are extremely vulnerable, and disturbing one during this time can be fatal, it's one of the clearest rules in hermit crab care."
+      },
+      {
+        "q": "What are signs my hermit crab is stressed?",
+        "a": "Retreating deep into the shell for an extended period, staying unusually still after handling, dropping a limb, increased pinching, refusing food, constantly trying to escape when handled, or burying and staying hidden. Most of these settle once the crab feels secure again."
+      },
+      {
+        "q": "How long can a stressed or molting hermit crab stay buried?",
+        "a": "A newly disturbed or newly arrived crab commonly stays buried for days, sometimes over a week, while it settles in, and that's normal. A molting crab can stay buried for several weeks up to around three months and shouldn't be dug up no matter how long it's been, the real warning signs of a genuine problem are a strong rotten odor or a body that's gone limp or fallen out of the shell."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hermit-crab-health-issues-guide.mdx",
+    "slug": "hermit-crab-health-issues-guide",
+    "title": "Common Hermit Crab Health Issues (There's Almost No Vet Care, So Prevention Is Everything)",
+    "seoTitle": "Hermit Crab Health Issues: Signs & Causes",
+    "excerpt": "Here's the thing to understand upfront about hermit crab health: there's essentially no practical veterinary care available for this species, similar to the situation with pet tarantulas. That reshapes everything about how to approach their wellbeing, husbandry and prevention do nearly all of the work.",
+    "date": "2026-07-23",
+    "category": "Invertebrates",
+    "tags": [
+      "Hermit Crab",
+      "Health",
+      "Post-Purchase Stress",
+      "Molting Complications",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hermit-crab-health-issues.jpg",
+    "imageAlt": "Hermit crab showing healthy posture near its water dishes and substrate",
+    "emoji": "🦀",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the leading cause of death in pet hermit crabs?",
+        "a": "Post-purchase stress, since every pet hermit crab is wild-caught rather than captive-bred and goes through real shock from capture, shipping, and a new environment. Watch for lethargy, burrowing, refusing food, and rapid loss of multiple limbs, and know that a crab generally isn't past the risk period until it has molted once successfully in your care."
+      },
+      {
+        "q": "Does a hermit crab regrow a lost limb?",
+        "a": "Yes. Limb loss can come from stress, fights with cage-mates, mites, or poor conditions, but lost limbs regenerate over successive molts, first appearing as small buds before growing back to full size."
+      },
+      {
+        "q": "What does dehydration look like in a hermit crab?",
+        "a": "An ashy appearance, lethargy, and an inability to fully retract into the shell. Hermit crabs breathe through modified gills that must stay moist to work properly, so this traces directly back to low humidity in the enclosure."
+      },
+      {
+        "q": "What causes a bad or interrupted molt?",
+        "a": "Inadequate humidity, substrate that's too shallow or dry, or a crab being disturbed while molting. It's frequently fatal, which is exactly why a buried crab needs to be left completely alone regardless of how long it stays hidden."
+      }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "large-soakable-water-dish",
+      "substrate-hermit-crab-flukers-sand-coco"
+    ]
+  },
+  {
+    "path": "/content/guides/hermit-crab-tank-setup-guide.mdx",
+    "slug": "hermit-crab-tank-setup-guide",
+    "title": "Hermit Crab Enclosure Setup: Humidity, Deep Substrate, and Extra Shells",
+    "seoTitle": "Hermit Crab Enclosure Setup Guide",
+    "excerpt": "Hermit crab care is genuinely different from most small-pet setups, this is a species that needs both land and water access, and its most important requirement, humidity, is the one first-time owners most often get wrong.",
+    "date": "2026-07-23",
+    "category": "Invertebrates",
+    "tags": [
+      "Hermit Crab",
+      "Tank Setup",
+      "Humidity",
+      "Substrate",
+      "Care Tips",
+      "Invertebrate Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hermit-crab-tank-setup.jpg",
+    "imageAlt": "Hermit crab enclosure with deep substrate, water dishes, and extra shells",
+    "emoji": "🦀",
+    "lastReviewed": "2026-07-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does a hermit crab need?",
+        "a": "Roughly 10 gallons for 2 to 3 small crabs, more for larger crabs or bigger groups. The lid needs to seal in humidity, glass or acrylic works best, and a screen lid should be partly covered with plastic wrap or tape to help retain moisture."
+      },
+      {
+        "q": "What humidity level do hermit crabs need?",
+        "a": "75 to 85% relative humidity, monitored with a hygrometer. This isn't optional, hermit crabs breathe through modified gills that must stay moist to function, and inadequate humidity leads directly to dehydration and gill suffocation."
+      },
+      {
+        "q": "What substrate depth do hermit crabs need?",
+        "a": "At least 6 inches, or about 3 times the height of your largest crab, using a play sand and coconut fiber mix at roughly a 5:1 ratio. Depth matters because hermit crabs burrow to molt and need genuine room to do it."
+      },
+      {
+        "q": "Why does a hermit crab enclosure need two water dishes?",
+        "a": "One dish holds dechlorinated fresh water and the other holds marine saltwater made from an aquarium salt mix, never table salt. Both need to be deep enough to fully submerge in but easy to climb out of, since hermit crabs can and do drown if they can't exit."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "digital-thermometer-hygrometer-combo",
+      "substrate-hermit-crab-flukers-sand-coco",
+      "large-soakable-water-dish",
+      "marine-salt-instant-ocean",
+      "hermit-crab-shells-natural-12pk"
     ]
   },
   {

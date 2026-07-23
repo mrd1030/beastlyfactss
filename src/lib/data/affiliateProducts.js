@@ -192,6 +192,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3Rg5gTT",
     image: "/assets/images/affiliate/product-20.jpg",
     covers: ["Water conditioner", "Dechlorinated/RO water treatment"],
+    altGroup: "water-conditioner",
     pets: ["reptiles-amphibians", "fish"],
   },
   {
@@ -314,6 +315,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vKAzFk",
     image: "/assets/images/affiliate/product-30.jpg",
     covers: ["Nail clippers", "Nail clippers + styptic powder"],
+    altGroup: "nail-clippers",
     pets: ["birds", "small-mammals"],
   },
   {
@@ -324,6 +326,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eYvi5W",
     image: "/assets/images/affiliate/product-31.jpg",
     covers: [], // alternative to the manual clippers above, browsable only
+    altGroup: "nail-clippers",
     pets: ["dogs-cats", "small-mammals"], // grinders are commonly marketed for rabbits/guinea pigs too, not just dogs/cats
   },
   {
@@ -458,6 +461,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4eQAk5K",
     image: "/assets/images/affiliate/product-44.jpg",
     covers: ["Canister filter (strong filtration)"],
+    altGroup: "goldfish-filtration",
     pets: ["fish"],
   },
   {
@@ -468,6 +472,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4vNGY2v",
     image: "/assets/images/affiliate/product-61.jpg",
     covers: ["Heavy-duty canister filter", "Powerful canister filter (2-3x tank volume)"],
+    altGroup: "goldfish-filtration",
     pets: ["fish", "reptiles-amphibians"],
   },
   {
@@ -500,6 +505,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4f8WVcx",
     image: "/assets/images/affiliate/product-47.jpg",
     covers: ["4x2x2 ft enclosure (PVC or wood/glass)", "4x2x2 ft enclosure", "4x2x2 ft+ enclosure", "4x2x2 ft escape-proof enclosure", "4x2x2 ft PVC or wood enclosure", "3x1.5x1.5 ft to 4x2x2 ft enclosure"],
+    altGroup: "pvc-enclosure-4x2x2",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -510,6 +516,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4f2g2oJ",
     image: "/assets/images/affiliate/product-48.jpg",
     covers: [], // second option at the same size - browsable only
+    altGroup: "pvc-enclosure-4x2x2",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -674,6 +681,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wCcGzE",
     image: "/assets/images/affiliate/product-65.jpg",
     covers: ["Aquarium chiller (keeps water 60-68°F)"],
+    altGroup: "axolotl-chiller",
     pets: ["reptiles-amphibians", "fish"],
   },
   {
@@ -684,6 +692,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wzLZvv",
     image: "/assets/images/affiliate/product-66.jpg",
     covers: [], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+    altGroup: "axolotl-chiller",
     pets: ["reptiles-amphibians", "fish"],
   },
 
@@ -1669,6 +1678,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0B52DC9VB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-154.jpg",
     covers: ["Deep sand/coconut fiber substrate"],
+    altGroup: "hermit-crab-substrate",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1868,7 +1878,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DQQZ69J6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-174.jpg",
-    covers: ["Substrate (sand or smooth gravel)"],
+    covers: ["Substrate (sand or smooth gravel)", "Smooth gravel or sand substrate"],
     pets: ["fish"],
   },
   {
@@ -1942,6 +1952,154 @@ export const AFFILIATE_PRODUCTS = [
     pets: ["small-mammals", "dogs-cats"],
   },
 
+  // --- Batch 10: axolotl/goldfish/chinchilla/hermit crab research pass (user-supplied CSV, verified live on Amazon) ---
+  {
+    slug: "aquarium-chiller-jbj-arctica-titanium",
+    product: "JBJ Aquarium Arctica Titanium Chiller, 1/10 HP",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B001EM1E8U?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-182.jpg",
+    covers: [], // premium/"gold standard" alternate to the already-linked Fitnet chiller - browsable only, don't override that match
+    altGroup: "axolotl-chiller",
+    pets: ["reptiles-amphibians", "fish"],
+  },
+  {
+    slug: "aquarium-chiller-iceprobe-thermoelectric",
+    product: "IceProbe Thermoelectric Aquarium Chiller",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B001JSVLBO?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-183.jpg",
+    covers: [], // budget/small-tank alternate, browsable only
+    altGroup: "axolotl-chiller",
+    pets: ["reptiles-amphibians", "fish"],
+  },
+  {
+    slug: "axolotl-pellets-invert-aquatics",
+    product: "Invert Aquatics Soft Pellets for Axolotls (3 oz)",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07GLVS8KQ?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-184.jpg",
+    covers: [], // alternate to the already-linked generic soft-pellets-axolotl, browsable only
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "seachem-prime-fresh-saltwater-500ml",
+    product: "Seachem Prime Fresh and Saltwater Conditioner, 500 ml",
+    category: "Water & Humidity Care",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00025694O?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-185.jpg",
+    covers: [], // alternate to the already-linked generic water-conditioner, covers fresh AND marine so it's relevant to hermit crab too
+    altGroup: "water-conditioner",
+    pets: ["reptiles-amphibians", "fish"],
+  },
+  {
+    slug: "canister-filter-fluval-fx6",
+    product: "Fluval FX6 High Performance Aquarium Filter (up to 400 gal)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00BJQ50HC?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-186.jpg",
+    covers: [], // bigger tier than the already-linked Fluval 107 (canister-filter), browsable only
+    altGroup: "goldfish-filtration",
+    pets: ["fish"],
+  },
+  {
+    slug: "hob-filter-aquaclear-70",
+    product: "AquaClear 70 Power Filter (40-70 gal)",
+    category: "Aquarium Equipment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B000260FUW?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-187.jpg",
+    covers: [], // hang-on-back filter, a distinct filter type from the canister filters already linked - browsable only
+    altGroup: "goldfish-filtration",
+    pets: ["fish"],
+  },
+  {
+    slug: "goldfish-pellets-hikari-gold",
+    product: "Hikari Gold Fancy Goldfish Pellets, 11 lb Mini",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0006G7OEI?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-188.jpg",
+    covers: [], // "Goldfish pellets + blanched vegetables" is a bundled/perishable cost-builder phrase, correctly not auto-linked
+    pets: ["fish"],
+  },
+  {
+    slug: "goldfish-gel-food-repashy-super-gold",
+    product: "Repashy Super Gold Goldfish and Koi Gel Food (12 oz)",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0D81YL5SD?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-189.jpg",
+    covers: [],
+    pets: ["fish"],
+  },
+  {
+    slug: "chinchilla-cage-midwest-critter-nation-double",
+    product: "Critter Nation by MidWest Homes for Pets Double Unit Cage",
+    category: "Enclosures & Cages",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B001NJ0DAY?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-190.jpg",
+    covers: ["24x24x48 in multi-level cage"], // real gap filled - no cage product existed for this line before
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "chinchilla-pellets-oxbow-essentials",
+    product: "Oxbow Essentials Chinchilla Food, 10 lb",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B007SYZCOA?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-191.jpg",
+    covers: [], // "Chinchilla pellets" cost-builder line is perishable-adjacent food, correctly not auto-linked
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "chinchilla-pellets-mazuri",
+    product: "Mazuri Chinchilla Diet, 2.5 lb",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B01CF6Y35Y?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-192.jpg",
+    covers: [],
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "substrate-zoo-med-eco-earth-coconut-fiber",
+    product: "Zoo Med Eco Earth Loose Coconut Fiber Substrate (8 qt, 2-pack)",
+    category: "Substrate",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B01CN8ZRYA?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-193.jpg",
+    covers: [], // the plain coconut-fiber half of hermit crab's 5:1 sand/coco mix - the already-linked Fluker's product is the premixed blend, browsable only
+    altGroup: "hermit-crab-substrate",
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "marine-salt-instant-ocean",
+    product: "Instant Ocean Sea Salt (50 Gallons)",
+    category: "Water & Humidity Care",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B000255NKA?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-194.jpg",
+    covers: ["Marine salt mix (saltwater pool)"], // real gap filled - hermit crab's saltwater pool line had no product before
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "hermit-crab-shells-natural-12pk",
+    product: "12PCS Natural Hermit Crab Shells, Assorted Sizes 1.6-3.2 in",
+    category: "Decor & Enrichment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0CGM3P8SK?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-195.jpg",
+    covers: ["Spare shells (2-3 per crab)"], // real gap filled - hermit crab's spare shells line had no product before
+    pets: ["reptiles-amphibians"],
+  },
+
 ];
 
 // Display order for category sections on the standalone gear page.
@@ -1987,4 +2145,16 @@ for (const p of AFFILIATE_PRODUCTS) {
 export function getAffiliateForItem(itemText) {
   if (!itemText) return null;
   return COVERS_INDEX.get(itemText.trim().toLowerCase()) || null;
+}
+
+// Returns other products that are genuine functional alternatives to the one a cost-builder
+// line already links to (different brand/tier/style of the same thing - a different chiller,
+// a bigger filter, a different water conditioner). Deliberately opt-in via `altGroup` rather than
+// same-category/same-pets, since a shared category (e.g. "Aquarium Equipment") holds many products
+// that aren't substitutes for each other at all (a tank and a heater are not "alternatives").
+// Returns [] (not the primary itself) when there's no match or no group.
+export function getAlternatesForItem(itemText) {
+  const primary = getAffiliateForItem(itemText);
+  if (!primary || !primary.altGroup) return [];
+  return AFFILIATE_PRODUCTS.filter((p) => p.altGroup === primary.altGroup && p.slug !== primary.slug);
 }

@@ -128,8 +128,10 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     costs: {
       setup: [
         { item: "10-20+ gallon tank (for a group)", low: 60, high: 120 },
+        { item: "Heat mat (side-mounted)", low: 10, high: 20 },
         { item: "Hygrometer and thermometer", low: 15, high: 25 },
         { item: "Deep sand/coconut fiber substrate", low: 20, high: 40 },
+        { item: "Large soak-able water dish", low: 10, high: 15 },
         { item: "Spare shells (2-3 per crab)", low: 15, high: 30 },
         { item: "Climbing branches and cork bark", low: 15, high: 30 },
       ],
