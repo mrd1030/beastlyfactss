@@ -273,8 +273,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3SO0uxm",
     image: "/assets/images/affiliate/product-26.jpg",
-    covers: [],
-    pets: ["dogs-cats"], // pairs with the crates above rather than matching its own cost-builder line
+    covers: [], // pairs with the crates above rather than matching its own cost-builder line
+    pets: ["dogs-cats"],
   },
   {
     slug: "collar-id-tag",
@@ -323,8 +323,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4eYvi5W",
     image: "/assets/images/affiliate/product-31.jpg",
-    covers: [],
-    pets: ["dogs-cats"], // alternative to the manual clippers above, browsable only
+    covers: [], // alternative to the manual clippers above, browsable only
+    pets: ["dogs-cats"],
   },
   {
     slug: "styptic-powder",
@@ -333,8 +333,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3Rsgy7z",
     image: "/assets/images/affiliate/product-32.jpg",
-    covers: [],
-    pets: ["dogs-cats"], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
+    covers: [], // pairs with the nail clippers above for the combined "+ styptic powder" cost-builder line
+    pets: ["dogs-cats"],
   },
   {
     slug: "litter-box",
@@ -509,8 +509,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4f2g2oJ",
     image: "/assets/images/affiliate/product-48.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"], // second option at the same size - browsable only
+    covers: [], // second option at the same size - browsable only
+    pets: ["reptiles-amphibians"],
   },
   {
     slug: "glass-terrarium-18x18x24",
@@ -674,7 +674,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/4wCcGzE",
     image: "/assets/images/affiliate/product-65.jpg",
     covers: ["Aquarium chiller (keeps water 60-68°F)"],
-    pets: ["reptiles-amphibians"],
+    pets: ["reptiles-amphibians", "fish"],
   },
   {
     slug: "aquarium-chiller-fan-budget",
@@ -683,8 +683,8 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4wzLZvv",
     image: "/assets/images/affiliate/product-66.jpg",
-    covers: [],
-    pets: ["reptiles-amphibians"], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+    covers: [], // cheaper fan-based alternative to the compressor chiller above - browsable only, same pattern as pvc-enclosure-4x2x2-alt
+    pets: ["reptiles-amphibians", "fish"],
   },
 
   // --- Batch 8: mined from existing Sanity blog post content (2026-07-13) - these
