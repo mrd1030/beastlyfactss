@@ -1229,7 +1229,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0GFD5T3H7?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-124.jpg",
-    covers: [],
+    covers: ["Thermostat"],
   },
   {
     slug: "dimming-thermostat-exo-terra-proportional",
@@ -1238,7 +1238,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08R29S2WB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-125.jpg",
-    covers: [],
+    covers: ["Quality thermostat"],
   },
   {
     slug: "dimming-thermostat-reptizoo-pid",
@@ -1247,7 +1247,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0BGS517FT?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-126.jpg",
-    covers: [],
+    covers: ["Under-tank heater with quality thermostat"],
   },
   {
     slug: "calcium-miner-all-indoor-2pack",
@@ -1256,7 +1256,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01IQMEZP4?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-127.jpg",
-    covers: [],
+    covers: ["Calcium and multivitamin supplements"],
   },
   {
     slug: "calcium-repashy-plus-6oz",
@@ -1265,7 +1265,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D7JWFV5W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-128.jpg",
-    covers: [],
+    covers: ["Calcium w/D3 + multivitamin"],
   },
   {
     slug: "calcium-repashy-plus-lod-3oz",
@@ -1274,7 +1274,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D82LT16W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-129.jpg",
-    covers: [],
+    covers: ["Calcium w/ and w/o D3 + multivitamin"],
   },
   {
     slug: "calcium-repashy-superfoods-plus-4oz",
@@ -1283,7 +1283,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D6SP118Q?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-130.jpg",
-    covers: [],
+    covers: ["Calcium + D3 and multivitamin"],
   },
   {
     slug: "calcium-arcadia-earthpro-revitalised3",
@@ -1292,7 +1292,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0884CJSPH?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-131.jpg",
-    covers: [],
+    covers: ["Calcium w/D3 supplement", "Calcium (always-available dish)"],
   },
   {
     slug: "uvb-zoo-med-5-0-t5-ho-14in-hood",
@@ -1301,7 +1301,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00M9ONY1W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-132.jpg",
-    covers: [],
+    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)"],
   },
   {
     slug: "crested-gecko-diet-pangea-fruit-mix-treat-16oz",
@@ -1319,7 +1319,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00KO450UC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-134.jpg",
-    covers: [],
+    covers: ["Commercial crested gecko diet"],
   },
   {
     slug: "crested-gecko-diet-pangea-papaya-8oz",
@@ -1346,7 +1346,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DBRSQ42K?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-137.jpg",
-    covers: [],
+    covers: ["Commercial crested gecko diet (CGD)"],
   },
   {
     slug: "crested-gecko-diet-repashy-banana-6oz",
@@ -1382,7 +1382,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00SLM5GWQ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-141.jpg",
-    covers: [],
+    covers: ["Multiple large hides"],
   },
   {
     slug: "hide-exo-terra-gecko-cave-medium",
@@ -1391,7 +1391,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B008YDHDD2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-142.jpg",
-    covers: [],
+    covers: ["3 hides (warm, cool, moist)"],
   },
   {
     slug: "hide-zoomed-habba-hut-medium",
@@ -1400,7 +1400,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B092HDK2S4?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-143.jpg",
-    covers: [],
+    covers: ["Two snug hides"],
   },
   {
     slug: "feeding-tongs-lasnten-long-rubber-tip",
@@ -1409,7 +1409,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CBKD64LP?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-144.jpg",
-    covers: [],
+    covers: ["Feeding tongs"],
   },
   {
     slug: "ceramic-heat-emitter-zoo-med-repticare-150w",
@@ -1436,7 +1436,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CJB82285?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-147.jpg",
-    covers: [],
+    covers: ["36x18x18 in enclosure"],
   },
   {
     slug: "uvi-meter-solarmeter-6-5r",
@@ -1463,7 +1463,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08DP3H5N9?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-149.jpg",
-    covers: [],
+    covers: ["Calcium and multivitamin supplements (glider-specific)"],
   },
   {
     slug: "calcium-tortoise-turtle-herbivorous-sulcata",
@@ -1472,7 +1472,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F79VJMKD?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-150.jpg",
-    covers: [],
+    covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)", "Calcium supplements"],
   },
   {
     slug: "feeding-tongs-entomology-forceps-fine-tip",
@@ -1481,7 +1481,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DCJXXMCT?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-151.jpg",
-    covers: [],
+    covers: ["Feeding tongs (fine-tip precision)"],
   },
   {
     slug: "feeding-tongs-short-soft-tip-4pack",
@@ -1490,7 +1490,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FB3PRD2Y?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-152.jpg",
-    covers: [],
+    covers: ["Feeding tongs (short, soft-tipped)"],
   },
   {
     slug: "substrate-zoo-med-reptisand-burrowing",
@@ -1499,7 +1499,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002DIZKC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-153.jpg",
-    covers: [],
+    covers: ["Sandy desert substrate", "Deep substrate (12 in+ sandy soil mix)", "12 in+ deep substrate (topsoil/sand mix)"],
   },
   {
     slug: "substrate-hermit-crab-flukers-sand-coco",
@@ -1508,7 +1508,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0B52DC9VB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-154.jpg",
-    covers: [],
+    covers: ["Deep sand/coconut fiber substrate"],
   },
   {
     slug: "substrate-tarantula-coconut-fiber-peat",
@@ -1517,7 +1517,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CY23K32S?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-155.jpg",
-    covers: [],
+    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate"],
   },
   {
     slug: "uvb-zoo-med-reptisun-24in-high-output-hood",
@@ -1526,7 +1526,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FF9GHCDC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-156.jpg",
-    covers: [],
+    covers: ["Strong desert UVB (T5 HO 12%+)", "Strong UVB (Arcadia 12%, indoor setups)", "Strong UVB (T5 HO)"],
   },
   {
     slug: "bulb-mega-ray-mercury-vapor-basking-combo",
@@ -1544,7 +1544,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B001PHABI8?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-158.jpg",
-    covers: [],
+    covers: ["24x24x48 in all-screen enclosure"],
   },
   {
     slug: "soaking-tub-large-38in",
@@ -1553,7 +1553,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FNVWJRQL?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-159.jpg",
-    covers: [],
+    covers: ["Large water tub for soaking"],
   },
   {
     slug: "cork-bark-round-small",
@@ -1562,7 +1562,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00DDZ55D6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-160.jpg",
-    covers: [],
+    covers: ["Cork bark slabs and flat stones"],
   },
   {
     slug: "cork-bark-round-medium",
@@ -1571,7 +1571,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01F654UHM?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-161.jpg",
-    covers: [],
+    covers: ["Cork bark tubes and branches", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures"],
   },
   {
     slug: "cork-bark-round-xl",
@@ -1580,7 +1580,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B001F9ANVG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-162.jpg",
-    covers: [],
+    covers: ["Cork bark rounds and sturdy branches"],
   },
   {
     slug: "cork-bark-bits-mini",
@@ -1589,7 +1589,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0C7D8XSJ9?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-163.jpg",
-    covers: [],
+    covers: ["Cork bark tubes or egg cartons", "Thin branches and cork bark"],
   },
   {
     slug: "chew-chinchilla-mineral-lava-blocks",
@@ -1598,7 +1598,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F6V5ZZR6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-164.jpg",
-    covers: [],
+    covers: ["Chew toys (mineral/pumice)"],
   },
   {
     slug: "chew-guinea-pig-natural-sticks",
@@ -1607,7 +1607,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0G41RJPZJ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-165.jpg",
-    covers: [],
+    covers: ["Chew toys (smaller, softer)"],
   },
   {
     slug: "chew-rabbit-bamboo-sticks",
@@ -1616,7 +1616,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FNM64GL1?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-166.jpg",
-    covers: [],
+    covers: ["Chew toys (larger, tougher)"],
   },
   {
     slug: "dental-kit-cat-virbac-cet",
@@ -1625,7 +1625,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00D1YH3P2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-167.jpg",
-    covers: [],
+    covers: ["Dental hygiene routine (cat-formulated)"],
   },
   {
     slug: "dental-kit-dog-virbac-cet",
@@ -1634,7 +1634,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0GHDFXQDB?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-168.jpg",
-    covers: [],
+    covers: ["Dental hygiene routine (dog-formulated)"],
   },
   {
     slug: "litter-cat-purina-tidy-cats-clumping",
@@ -1643,7 +1643,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D2FYM5T3?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-169.jpg",
-    covers: [],
+    covers: ["Litter"],
   },
   {
     slug: "carrier-cat-petmate-hard-sided",
@@ -1652,7 +1652,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B006060VCU?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-170.jpg",
-    covers: [],
+    covers: ["Carrier"],
   },
   {
     slug: "bird-toys-katumo-small-parrot-variety",
@@ -1661,7 +1661,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B095G51MZG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-171.jpg",
-    covers: [],
+    covers: ["Toys (rotating)"],
   },
   {
     slug: "nightlight-amber-plug-in",
@@ -1670,7 +1670,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0B1C8Q5Z2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-172.jpg",
-    covers: [],
+    covers: ["Nightlight (prevents night frights)"],
   },
   {
     slug: "betta-tank-5-gallon-starter-kit",
@@ -1679,7 +1679,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F1SLXRMH?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-173.jpg",
-    covers: [],
+    covers: ["5+ gallon tank"],
   },
   {
     slug: "betta-substrate-caribsea-freshwater-sand",
@@ -1688,7 +1688,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DQQZ69J6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-174.jpg",
-    covers: [],
+    covers: ["Substrate (sand or smooth gravel)"],
   },
   {
     slug: "rabbit-pellet-food-oxbow-garden-select",
@@ -1697,7 +1697,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B06XX68LM2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-175.jpg",
-    covers: [],
+    covers: ["Rabbit pellets"],
   },
   {
     slug: "rabbit-carrier-petsfit",
@@ -1715,7 +1715,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000TZ3SNC?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-177.jpg",
-    covers: [],
+    covers: ["Water bottle and food dishes"],
   },
   {
     slug: "grooming-comb-hairbuster",

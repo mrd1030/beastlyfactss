@@ -19,7 +19,7 @@ export const turtleGuides = [
       ],
       annual: [
         { item: "Earthworms, insects, and produce", low: 100, high: 180 },
-        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
+        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 15, high: 25 },
         { item: "UVB bulb replacement", low: 60, high: 100 },
         { item: "Electricity (heat and lighting)", low: 50, high: 90 },
         { item: "Annual vet wellness check", low: 60, high: 100 },
@@ -153,7 +153,7 @@ Metabolic bone disease from inadequate UVB causes soft shell and skeletal deform
       annual: [
         { item: "Dark leafy greens and edible weeds", low: 100, high: 200 },
         { item: "Grass hay (unlimited access)", low: 40, high: 80 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 20, high: 30 },
         { item: "UVB bulb replacement", low: 60, high: 100 },
         { item: "Electricity (heat and lighting)", low: 60, high: 100 },
         { item: "Annual vet wellness check", low: 60, high: 100 },

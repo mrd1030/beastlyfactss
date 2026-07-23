@@ -536,3 +536,74 @@ C&C-style cage currently doing double duty for that cost-builder line).
   separately linkable (2 already linked, one via the free fixes above).
 - **Tarantula - Species-appropriate enclosure** - still lower priority, varies
   too much by species (terrestrial vs. arboreal, leg span) for one clean SKU.
+
+---
+
+## Update (2026-07-22, continued 5): all 58 new products wired into the Cost
+## Builder via `covers[]`, after a 7th real per-animal collision was caught
+## and fixed first.
+
+Before wiring, re-verified every guide file's actual `item:` cost-builder text
+(not the paraphrased descriptions above) against both the 58 new products and
+the *existing* 71 covers entries already in `affiliateProducts.js`, to avoid
+two failure modes: a wrong-species match, or silently overriding an
+already-correct existing product. Caught one of each:
+
+- [x] **7th real collision: "Foraging toys"** shared byte-for-byte between
+  Budgie ($10-$20 range) and Cockatoo ($50-$100 range, "heavy-gauge cage",
+  "Destructible wood chew toys") in `birds.js`. Wiring the sourced
+  small-parrot-only toy variety pack to this text would have put unsafe,
+  too-small toys on the Cockatoo page (choking hazard for a large, powerful
+  beak). Fixed by disambiguating both lines: Budgie -> `"Foraging toys
+  (small/budgie-sized)"`, Cockatoo -> `"Foraging toys (large parrot,
+  heavy-duty)"`. Left both unwired for now (no large-parrot-durable toy was
+  sourced this pass).
+- [x] **6th collision (found right at the compaction boundary, fixed first
+  this session): "Dental hygiene routine"** shared identically across 2 cat
+  guides and 4 dog guides. Fixed with `(cat-formulated)` /
+  `(dog-formulated)` suffixes, matching the original gap description's
+  wording.
+- [x] **Near-miss caught, no fix needed: "Food and water dishes"** is shared
+  identically between Budgie/Cockatiel-type birds and Hamster/Rabbit in
+  `smallMammals.js`, all four currently resolving to
+  `bird-feeding-dishes-okllen-4pack`. Checked the actual product - it's
+  generic detachable stainless dishes that clip onto any wire-cage bar, not
+  bird-specific despite the slug name - so this one's fine as-is. Left it
+  alone rather than overriding a working match with the new
+  `small-mammal-bowl-kaytee-vege-t-bowl` product (which got
+  `"Water bottle and food dishes"`, Guinea Pig, instead - a genuinely
+  distinct, previously-unclaimed text).
+
+**Wiring result: 43 of 58 new products got `covers[]` entries; 15 stayed
+`covers: []` on purpose** because no safe exact-match text remained for them
+without either stretching a species-inappropriate match or overriding an
+already-correct existing product:
+- 6 of the 8 crested gecko diet flavors - only 2 distinct exact-match texts
+  exist across all gecko guides (`"Commercial crested gecko diet (CGD)"` and
+  `"Commercial crested gecko diet"`), so only 2 of the 8 sourced products can
+  ever be reached from a guide page. The other 6 (Pangea Fruit Mix Treat,
+  Watermelon 2oz, Papaya 8oz, Repashy Banana, Grubs 'N' Fruit, MRP Mango
+  Superblend) remain browsable on the standalone Gear page only.
+- `thermostat-bn-link-on-off` (generic on/off) and `ceramic-heat-emitter-zoo-med-repticare-150w` -
+  every heat-mat/CHE-adjacent line in the guides is either already claimed by
+  the existing `under-tank-heat-mat-thermostat-kit` bundle or pairs with a
+  basking bulb (dimming territory, covered by the 3 new dimming thermostats
+  instead).
+- `uvi-meter-solarmeter-6-5r` and `bulb-mega-ray-mercury-vapor-basking-combo` -
+  optional/upgrade-tier items with no corresponding required cost-builder line.
+- `rabbit-carrier-petsfit`, `grooming-comb-hairbuster`,
+  `small-mammal-play-pack-seagrass` - no matching guide text exists at all.
+- `rabbit-litter-box-pinvnby` and `rabbit-exercise-pen-midwest-folding-30in` -
+  matching text exists (`"Litter box + litter"`, `"Exercise pen or C&C
+  condo"`) but is already correctly served by existing generic products
+  (`litter-box`, `cc-cage-guinea-pig`); wiring these would have silently
+  replaced working links with no real improvement.
+
+**Full regression run after wiring:** 188 products, 0 duplicate slugs, 0
+covers-text collisions catalog-wide (checked programmatically, not just the
+new 58 against each other but the new 58 against all 130 pre-existing
+entries too), all 5 prior free-fixes and all 7 disambiguated collisions still
+resolve to their correct, distinct products. Spot-verified live in-browser
+(dev server restarted first - Vite doesn't HMR this data file) on Crested
+Gecko, Betta Fish, a cat guide, and a dog guide: every link's actual `href`
+matches the intended product's ASIN.

@@ -15,7 +15,7 @@ export const smallMammalGuides = [
         { item: "12-14 in solid exercise wheel", low: 50, high: 90 },
         { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
         { item: "Platforms and hideouts", low: 30, high: 60 },
-        { item: "Chew toys", low: 15, high: 30 },
+        { item: "Chew toys (mineral/pumice)", low: 15, high: 30 },
         { item: "Digital thermometer", low: 15, high: 25 },
       ],
       annual: [
@@ -158,7 +158,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
       setup: [
         { item: "C&C cage (7.5 sq ft+)", low: 80, high: 180 },
         { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys", low: 15, high: 25 },
+        { item: "Chew toys (smaller, softer)", low: 15, high: 25 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
         { item: "Nail clippers + styptic powder", low: 10, high: 15 },
         { item: "Water bottle and food dishes", low: 10, high: 20 },
@@ -389,7 +389,7 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
         { item: "Exercise pen or C&C condo", low: 60, high: 150 },
         { item: "Litter box + litter", low: 15, high: 25 },
         { item: "Hideouts and tunnels", low: 20, high: 40 },
-        { item: "Chew toys", low: 15, high: 30 },
+        { item: "Chew toys (larger, tougher)", low: 15, high: 30 },
         { item: "Food and water dishes", low: 10, high: 20 },
         { item: "Nail clippers + styptic powder", low: 10, high: 15 },
         { item: "Spay/neuter", low: 150, high: 400 },
@@ -474,7 +474,7 @@ Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's 
       annual: [
         { item: "Commercial sugar glider diet (BML/TPG)", low: 200, high: 350 },
         { item: "Fresh fruits, vegetables, and insects", low: 100, high: 180 },
-        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "Calcium and multivitamin supplements (glider-specific)", low: 20, high: 30 },
         { item: "Electricity (heat, temp-sensitive)", low: 60, high: 100 },
         { item: "Annual vet wellness check (exotic)", low: 70, high: 120 },
       ],

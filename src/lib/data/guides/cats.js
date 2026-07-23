@@ -24,7 +24,7 @@ export const catGuides = [
         { item: "Litter", low: 150, high: 250 },
         { item: "Monthly flea prevention", low: 100, high: 180 },
         { item: "Annual wellness vet exam", low: 150, high: 300 },
-        { item: "Dental hygiene routine", low: 20, high: 40 },
+        { item: "Dental hygiene routine (cat-formulated)", low: 20, high: 40 },
       ],
     },
     sections: {
@@ -150,7 +150,7 @@ export const catGuides = [
         { item: "Complete wet and dry cat food", low: 350, high: 600 },
         { item: "Litter", low: 150, high: 250 },
         { item: "Annual wellness exam with bloodwork (from age 7)", low: 150, high: 300 },
-        { item: "Dental hygiene routine", low: 20, high: 40 },
+        { item: "Dental hygiene routine (cat-formulated)", low: 20, high: 40 },
       ],
     },
     sections: {

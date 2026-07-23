@@ -178,8 +178,8 @@ Their enrichment needs are simple: fresh substrate, fresh food, and the right co
     costs: {
       setup: [
         { item: "Small tall enclosure (5x5x8 in or similar)", low: 15, high: 30 },
-        { item: "Climbing branches and cork bark", low: 10, high: 20 },
-        { item: "Feeding tongs", low: 8, high: 15 },
+        { item: "Climbing branches and cork bark (miniature)", low: 10, high: 20 },
+        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
       ],
       annual: [
         { item: "Live feeder insects (crickets, fruit flies)", low: 20, high: 40 },
@@ -409,7 +409,7 @@ After each molt, inspect the insect carefully. Missing limbs or deformed antenna
         { item: "Coconut fiber and peat substrate", low: 10, high: 20 },
         { item: "Cork bark hide", low: 10, high: 20 },
         { item: "Small water dish", low: 5, high: 10 },
-        { item: "Feeding tongs", low: 8, high: 15 },
+        { item: "Feeding tongs (fine-tip precision)", low: 8, high: 15 },
         { item: "Digital thermometer", low: 10, high: 15 },
       ],
       annual: [

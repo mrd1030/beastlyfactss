@@ -89,7 +89,7 @@ Annual avian veterinary exams including complete blood panel are essential. Find
         { item: "Perches of varied diameters", low: 15, high: 25 },
         { item: "Swing", low: 6, high: 12 },
         { item: "Ladder", low: 4, high: 8 },
-        { item: "Foraging toys", low: 10, high: 20 },
+        { item: "Foraging toys (small/budgie-sized)", low: 10, high: 20 },
         { item: "Food and water dishes", low: 10, high: 20 },
         { item: "Cuttlebone or mineral block", low: 5, high: 12 },
         { item: "Nail clippers", low: 8, high: 12 },
@@ -290,7 +290,7 @@ Feather destructive behavior and chronic screaming indicate inadequate enrichmen
       setup: [
         { item: "3x2x4 ft heavy-gauge cage with locks", low: 500, high: 1200 },
         { item: "Destructible wood chew toys (initial supply)", low: 60, high: 120 },
-        { item: "Foraging toys", low: 50, high: 100 },
+        { item: "Foraging toys (large parrot, heavy-duty)", low: 50, high: 100 },
         { item: "Cage-specific padlocks", low: 15, high: 30 },
       ],
       annual: [

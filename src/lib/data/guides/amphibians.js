@@ -136,7 +136,7 @@ Chytrid fungus (Bd) quarantine protocols apply to all new animals: quarantine an
         { item: "Low-wattage heat lamp/mat with thermostat", low: 30, high: 55 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
         { item: "Small shallow water dish", low: 5, high: 10 },
-        { item: "Feeding tongs", low: 8, high: 15 },
+        { item: "Feeding tongs (short, soft-tipped)", low: 8, high: 15 },
       ],
       annual: [
         { item: "Gut-loaded live insects (dubia, crickets, earthworms)", low: 70, high: 130 },

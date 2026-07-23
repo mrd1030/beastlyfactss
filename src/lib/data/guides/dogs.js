@@ -120,7 +120,7 @@ export const dogGuides = [
         { item: "Medium/adult breed dog food", low: 350, high: 550 },
         { item: "Heartworm, flea, and tick prevention", low: 200, high: 300 },
         { item: "Annual wellness vet exam", low: 150, high: 300 },
-        { item: "Dental hygiene routine", low: 25, high: 40 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 25, high: 40 },
       ],
     },
     sections: {
@@ -167,7 +167,7 @@ export const dogGuides = [
         { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
         { item: "Annual vet exam + hip/joint screening", low: 200, high: 400 },
         { item: "Joint supplements (glucosamine/chondroitin)", low: 100, high: 200 },
-        { item: "Dental hygiene routine", low: 30, high: 50 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 30, high: 50 },
       ],
     },
     sections: {
@@ -214,7 +214,7 @@ export const dogGuides = [
         { item: "Large breed dog food (precise portioning)", low: 450, high: 750 },
         { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
         { item: "Annual wellness exam with weight monitoring", low: 150, high: 300 },
-        { item: "Dental hygiene routine", low: 25, high: 40 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 25, high: 40 },
       ],
     },
     sections: {
@@ -258,7 +258,7 @@ export const dogGuides = [
         { item: "Fish oil / omega-3 supplement", low: 30, high: 60 },
         { item: "Heartworm, flea, and tick prevention", low: 250, high: 400 },
         { item: "Annual exam + cancer screening bloodwork (age 5+)", low: 200, high: 400 },
-        { item: "Dental hygiene routine", low: 25, high: 40 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 25, high: 40 },
       ],
     },
     sections: {
