@@ -262,9 +262,9 @@ export default function Navbar() {
             key="mobile-menu"
             {...dropdownAnimation}
             ref={menuRef}
-            className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden md:absolute md:top-[57px] md:right-4 md:w-80 md:rounded-2xl md:border md:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:md:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
+            className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden sm:absolute sm:top-[57px] sm:right-4 sm:w-80 sm:rounded-2xl sm:border sm:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:sm:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
-            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_env(safe-area-inset-top))] md:max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_env(safe-area-inset-top))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
