@@ -1,0 +1,41 @@
+{
+  "name": "Post Animal Fact Reel - Midday (6pm EST) (Copy)",
+  "description": "Auto-posts an AI-generated Reel of an animal fact to Instagram every day at 6pm EST (22:00 UTC). Uses GenerateVideo to create a short cinematic clip with AI disclosure label.",
+  "trigger": {
+    "condition": null,
+    "config": {
+      "trigger_type": "scheduled",
+      "events": [],
+      "schedule_mode": "recurring",
+      "cron_expression": "0 17 * * *",
+      "one_time_date": null,
+      "timezone": "UTC",
+      "interval_value": null,
+      "interval_unit": null,
+      "interval_anchor": null,
+      "ends_type": "never",
+      "ends_on_date": null,
+      "ends_after_count": null
+    }
+  },
+  "definition": {
+    "document": {
+      "dsl": "1.0.0",
+      "name": "post_animal_fact_reel_midday_6pm_est_copy",
+      "version": "1.0",
+      "namespace": "base44"
+    },
+    "do": [
+      {
+        "run_function": {
+          "call": "invoke_backend_function",
+          "with": {
+            "function_name": "postAnimalFactReel",
+            "args": {}
+          },
+          "then": "end"
+        }
+      }
+    ]
+  }
+}
