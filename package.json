@@ -13,7 +13,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
-    "@base44/sdk": "^0.8.39",
+    "@base44/sdk": "^0.8.40",
     "@base44/vite-plugin": "^1.0.30",
     "@mdx-js/rollup": "^3.1.1",
     "@portabletext/react": "^6.2.0",
