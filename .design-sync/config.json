@@ -1,0 +1,9 @@
+{
+  "pkg": "beastlyfacts",
+  "globalName": "BeastlyFacts",
+  "projectId": "92ed4131-c1c1-404e-a689-4355f127242e",
+  "shape": "package",
+  "cssEntry": "src/index.css",
+  "extraFonts": [".design-sync/fonts.css"],
+  "readmeHeader": ".design-sync/conventions.md"
+}

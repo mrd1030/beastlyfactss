@@ -44,3 +44,12 @@ base44/.app.jsonc
 
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv
+
+# design-sync (claude.ai/design) — staged converter scripts, build output, and
+# machine state; .design-sync/config.json, NOTES.md, conventions.md, previews/,
+# overrides/, fonts.css, and tokens-entry.mjs ARE committed (the durable set)
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
