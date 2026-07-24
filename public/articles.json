@@ -9,6 +9,38 @@
       "category": "Site News"
     },
     {
+      "slug": "african-fat-tail-cost-guide",
+      "title": "African Fat-Tailed Gecko Cost: Full Price Breakdown",
+      "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
+      "date": "2026-07-26",
+      "image": "/assets/images/african-fat-tail-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "african-fat-tail-handling-guide",
+      "title": "How to Handle an African Fat-Tailed Gecko Correctly",
+      "excerpt": "African fat-tailed geckos are among the calmest, most genuinely handleable pet geckos available, often described as even more docile than their close cousin, the leopard gecko.",
+      "date": "2026-07-26",
+      "image": "/assets/images/african-fat-tail-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "african-fat-tail-health-issues-guide",
+      "title": "African Fat-Tailed Gecko Health Issues: Signs & Causes",
+      "excerpt": "Fat-tailed geckos are hardy when their two biggest needs, heat and humidity, are actually met. Nearly every common issue traces back to one of those two things.",
+      "date": "2026-07-26",
+      "image": "/assets/images/african-fat-tail-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "african-fat-tail-tank-setup-guide",
+      "title": "African Fat-Tailed Gecko Tank Setup Guide",
+      "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
+      "date": "2026-07-26",
+      "image": "/assets/images/african-fat-tail-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "axolotl-cost-guide",
       "title": "Axolotl Cost: Full Price Breakdown",
       "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what actually determines your budget.",
@@ -457,6 +489,46 @@
       "category": "Roundups"
     },
     {
+      "slug": "gargoyle-gecko-cost-guide",
+      "title": "Gargoyle Gecko Cost: Full Price Breakdown",
+      "excerpt": "Gargoyle geckos sit at an interesting price point: genuinely affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
+      "date": "2026-07-24",
+      "image": "/assets/images/gargoyle-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "gargoyle-gecko-handling-guide",
+      "title": "Gargoyle Gecko Handling: Complete Guide",
+      "excerpt": "Gargoyle geckos are docile and slow-moving as adults, genuinely one of the calmer arboreal geckos to handle, though juveniles are a different story entirely.",
+      "date": "2026-07-24",
+      "image": "/assets/images/gargoyle-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "gargoyle-gecko-health-issues-guide",
+      "title": "Gargoyle Gecko Health Issues: Signs & Causes",
+      "excerpt": "Gargoyle gecko health problems overwhelmingly come down to two husbandry errors: an enclosure that's too wet, or one that doesn't give the gecko enough hiding spots.",
+      "date": "2026-07-24",
+      "image": "/assets/images/gargoyle-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "gargoyle-gecko-tank-setup-guide",
+      "title": "Gargoyle Gecko Tank Setup Guide",
+      "excerpt": "Most reptile care is about adding warmth. Gargoyle gecko care is mostly about not overdoing it, this is a cool-climate species that does fine at room temperature.",
+      "date": "2026-07-24",
+      "image": "/assets/images/gargoyle-gecko-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "gargoyle-mourning-african-fat-tail-gecko-overview",
+      "title": "Gargoyle vs Mourning vs African Fat-Tailed Gecko",
+      "excerpt": "Gargoyle, mourning, and African fat-tailed geckos barely share a care sheet. One needs to stay cool, one needs belly heat, one you'll never touch, one you'll hold daily, one digs while the other two climb.",
+      "date": "2026-07-27",
+      "image": "/assets/guides/gargoyle-mourning-african-fat-tail-gecko-overview.jpg",
+      "category": "Roundups"
+    },
+    {
       "slug": "giant-millipede-legal-guide",
       "title": "Is a Giant African Millipede Legal in Your State? Full Guide",
       "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
@@ -655,6 +727,38 @@
       "date": "2026-07-09",
       "image": "/assets/images/leopard-gecko-vs-crested-gecko.jpg",
       "category": "Comparisons"
+    },
+    {
+      "slug": "mourning-gecko-cost-guide",
+      "title": "Mourning Gecko Cost: Full Price Breakdown",
+      "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
+      "date": "2026-07-25",
+      "image": "/assets/images/mourning-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "mourning-gecko-handling-guide",
+      "title": "Mourning Gecko Handling: What to Actually Expect",
+      "excerpt": "Mourning geckos are consistently described the same way across every serious care source: this is a look-but-don't-touch pet, not a handling species.",
+      "date": "2026-07-25",
+      "image": "/assets/images/mourning-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "mourning-gecko-health-issues-guide",
+      "title": "Mourning Gecko Health Issues: Signs & Causes",
+      "excerpt": "Mourning geckos are hardy in a properly humid, planted enclosure, but one biological fact shapes its health risks more than anything else: every animal is female, and every mature female lays eggs regularly, with or without a mate present.",
+      "date": "2026-07-25",
+      "image": "/assets/images/mourning-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "mourning-gecko-tank-setup-guide",
+      "title": "Mourning Gecko Tank Setup Guide",
+      "excerpt": "Mourning gecko setups look more like a miniature planted terrarium than a typical reptile tank, this is a display colony, not a single-animal enclosure.",
+      "date": "2026-07-25",
+      "image": "/assets/images/mourning-gecko-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "praying-mantis-ootheca-guide",

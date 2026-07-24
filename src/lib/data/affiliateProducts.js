@@ -22,6 +22,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://amzn.to/3QHrM81",
     image: "/assets/images/affiliate/product-1.jpg",
     covers: ["Digital thermometer and hygrometer", "Hygrometer and thermometer", "Thermometer and hygrometer", "Digital hygrometer", "Digital thermometer"],
+    altGroup: "thermometer-hygrometer-combo",
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -31,7 +32,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4flGgUg",
     image: "/assets/images/affiliate/product-2.jpg",
-    covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Infrared thermometer gun"],
+    covers: ["Digital thermometer (IR gun ideal/recommended)", "Digital thermometer (IR gun recommended)", "Digital thermometer (IR gun ideal)", "Infrared thermometer gun"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -141,7 +142,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4vPKMjX",
     image: "/assets/images/affiliate/product-15.jpg",
-    covers: ["Misting bottle", "Fine misting bottle", "Spray bottle", "Fine misting bottle or fogger"],
+    covers: ["Misting bottle", "Fine misting bottle", "Spray bottle", "Fine misting bottle or fogger", "Fine mist system or manual misting bottle"],
     pets: ["birds", "reptiles-amphibians"],
   },
   {
@@ -492,7 +493,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4eSbKl2",
     image: "/assets/images/affiliate/product-46.jpg",
-    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium"],
+    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure"],
     pets: ["reptiles-amphibians"],
   },
 
@@ -526,7 +527,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4vlb6Bp",
     image: "/assets/images/affiliate/product-49.jpg",
-    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium", "30x12x12 in or larger enclosure"],
+    covers: ["18x18x24 in arboreal enclosure", "18x18x24 in planted vivarium", "18x18x24 in tall planted enclosure", "18x18x24 in+ arboreal terrarium"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1389,6 +1390,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0BGS517FT?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-126.jpg",
     covers: ["Under-tank heater with quality thermostat"],
+    altGroup: "reptile-heat-mat-thermostat",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1449,6 +1451,7 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B00M9ONY1W?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-132.jpg",
     covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)"],
+    altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2097,6 +2100,40 @@ export const AFFILIATE_PRODUCTS = [
     link: "https://www.amazon.com/dp/B0CGM3P8SK?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-195.jpg",
     covers: ["Spare shells (2-3 per crab)"], // real gap filled - hermit crab's spare shells line had no product before
+    pets: ["reptiles-amphibians"],
+  },
+  // --- Batch 7: gargoyle/mourning/african-fat-tail gecko gear-list crosscheck alternates ---
+  {
+    slug: "uvb-arcadia-shadedweller-7-12in",
+    product: "Arcadia T5 UVB Reptile Light Fixture Kit 12\" Long 8 Watts 7% UVB ShadeDweller",
+    category: "Heating & Lighting",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B003ZG8E8G?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-196.jpg",
+    covers: [], // alternate only - user's gear-list research specifically named this kit for gargoyle gecko UVB
+    altGroup: "low-output-uvb-t5",
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "thermometer-hygrometer-exo-terra-led-bundle",
+    product: "Exo Terra LED Thermometer and Hygrometer Bundle for Reptile Terrariums",
+    category: "Temperature & Humidity Monitoring",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07MTPKDG5?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-197.jpg",
+    covers: [], // alternate only - literal Exo Terra "Combometer"-style bundle named in gear-list research
+    altGroup: "thermometer-hygrometer-combo",
+    pets: ["reptiles-amphibians", "small-mammals"],
+  },
+  {
+    slug: "thermostat-inkbird-heat-mat-ipt-2ch",
+    product: "Inkbird WiFi Heat Mat Reptile Thermostat Controller, IPT-2CH (2 Probes, 2 Outlets)",
+    category: "Heating & Lighting",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B08Y5JDYFY?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-198.jpg",
+    covers: [], // alternate only - user's gear-list research named Inkbird specifically for African fat-tail's heat mat thermostat
+    altGroup: "reptile-heat-mat-thermostat",
     pets: ["reptiles-amphibians"],
   },
 
