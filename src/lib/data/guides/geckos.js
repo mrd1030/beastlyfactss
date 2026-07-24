@@ -373,7 +373,7 @@ Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A
 
 Mourning geckos are extraordinary escape artists. Their tiny size and sticky toe pads allow them to escape through gaps that seem impossibly small - any gap wider than a few millimeters is a potential exit. Inspect every seal, seam, and ventilation gap before introducing the geckos. Stainless steel mesh lids with secure magnets or latches are preferable to screen lids that can warp over time.
 
-Maintain daytime temperatures of 72 to 80 degrees F and nighttime drops to 65 to 72 degrees F. Humidity should stay at 70 to 80%, maintained through regular misting or an automatic fogger combined with the natural transpiration of live plants. They originate from Pacific island environments and are adapted to warm, humid conditions.
+Maintain a daytime ambient temperature of 70 to 80 degrees F with a warm basking spot up to 85 degrees F, dropping to 65 to 72 degrees F at night. Keep relative humidity between 60 and 80%, with brief peaks up to 90% via daily mistings, then let the enclosure dry slightly afterward to prevent mold and respiratory issues. They originate from Pacific island environments and are adapted to warm, humid conditions.
 
 Low-output UVB lighting (T5 HO 5 to 6%) on a 12-hour cycle benefits the colony by supporting calcium metabolism and natural circadian rhythm. Live plants also require adequate lighting - a grow light or full-spectrum LED works well for the plants alongside the UVB.`,
       diet: `Commercial crested gecko diet (CGD) is the primary dietary staple, offered every 2 to 3 days in a small raised dish. Remove and replace after 48 hours to prevent fermentation. Pangea and Repashy both make small-gecko-appropriate formulas that mourning geckos eat readily.
@@ -392,7 +392,7 @@ Mourning geckos are a display animal. Their appeal is watching them interact wit
 Because they are parthenogenetic (all-female, self-reproducing), colonies will naturally grow if conditions are good. Keep this in mind when selecting colony size. Eggs laid in the enclosure will hatch, and nymphs will establish themselves in the colony. Population management may eventually be necessary.`,
       health: `Calcium deficiency is the most common nutritional concern, particularly for egg-laying females. Ensure calcium supplementation is consistent and a calcium dish is always available. An under-supplemented female mourning gecko laying regular clutches will show signs of MBD relatively quickly: weakness, difficulty climbing, and eventually skeletal deformities.
 
-Stuck shed, particularly on the toes and around the eye caps, occurs when humidity is insufficient. Consistent high humidity (70 to 80%) and misting prevent most shedding problems. If stuck shed is observed, gently introduce the gecko to a small, shallow pool of lukewarm water for a few minutes to soften it.
+Stuck shed, particularly on the toes and around the eye caps, occurs when humidity is insufficient. Consistent humidity (60 to 80%, with daily misting peaks up to 90%) prevents most shedding problems. If stuck shed is observed, gently introduce the gecko to a small, shallow pool of lukewarm water for a few minutes to soften it.
 
 Monitor colony reproductive rate in optimal conditions, mourning gecko populations can grow quickly. Overcrowding causes stress, increased aggression, and resource competition. Maintain an appropriate colony size for the enclosure space.
 
@@ -404,7 +404,7 @@ Escape prevention is critical not only for the geckos' welfare but also for your
       { q: "Are mourning geckos parthenogenetic?", a: "Yes - every individual is female, and they reproduce by producing fertile, unfertilized eggs that are genetic clones of the mother. No males exist in the wild. A colony in optimal conditions will grow over time as eggs hatch inside the vivarium, so plan for population management eventually." },
       { q: "How big do mourning geckos get?", a: "Adults reach just 3 to 4 inches total length and weigh 4 to 8 grams. This small size means appropriately tiny prey - melanogaster fruit flies, bean beetles, pinhead crickets - and a tight, escape-proof enclosure with no gaps wider than a couple of millimeters." },
       { q: "What do mourning geckos eat?", a: "Commercial crested gecko diet (CGD) is the nutritional foundation, offered every 2 to 3 days. Supplement with tiny live insects 1 to 2 times per week: melanogaster fruit flies, pinhead crickets, and bean beetles are appropriate for adults. A calcium dish available at all times is critical for egg-laying females." },
-      { q: "How long do mourning geckos live?", a: "With appropriate humidity, calcium supplementation, and live insects in the diet, mourning geckos typically live 6 to 10 years in captivity. Egg-laying females have higher calcium demands; consistent supplementation is important for their long-term health." },
+      { q: "How long do mourning geckos live?", a: "With appropriate humidity, calcium supplementation, and live insects in the diet, mourning geckos typically live 10 to 15 years in captivity. Egg-laying females have higher calcium demands; consistent supplementation is important for their long-term health." },
     ],
   },
   {
