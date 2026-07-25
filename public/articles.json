@@ -177,6 +177,14 @@
       "category": "Aquatic Life"
     },
     {
+      "slug": "betta-fish-feeding-guide",
+      "title": "Betta Fish Feeding Guide: Schedule and Diet",
+      "excerpt": "How much to actually feed a betta (less than you'd think), what belongs in the bowl, and the real reasons a betta goes off food, from picky eating to something water-quality related.",
+      "date": "2026-07-24",
+      "image": "/assets/images/betta-fish-feeding.jpg",
+      "category": "Aquatic Life"
+    },
+    {
       "slug": "betta-fish-handling-guide",
       "title": "How to Handle a Betta Fish Safely",
       "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
@@ -465,6 +473,14 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "ferret-feeding-guide",
+      "title": "Ferret Feeding Guide: Schedule and Diet",
+      "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food is a same-day concern, not a wait-and-see one.",
+      "date": "2026-07-24",
+      "image": "/assets/images/ferret-feeding.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "ferret-legal-guide",
       "title": "Is a Ferret Legal in Your State? Full Guide",
       "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State allows them.",
@@ -686,6 +702,14 @@
       "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
       "date": "2026-07-06",
       "image": "/assets/images/leopard-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leopard-gecko-feeding-guide",
+      "title": "Leopard Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "How often to feed a leopard gecko by age, what they actually eat, and the real reasons they refuse food, from a normal shed to something worth a vet visit.",
+      "date": "2026-07-24",
+      "image": "/assets/images/leopard-gecko-feeding.jpg",
       "category": "Reptiles"
     },
     {

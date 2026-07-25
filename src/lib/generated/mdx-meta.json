@@ -1040,6 +1040,58 @@
     ]
   },
   {
+    "path": "/content/guides/betta-fish-feeding-guide.mdx",
+    "slug": "betta-fish-feeding-guide",
+    "title": "Betta Fish Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Betta Fish Feeding Guide: Schedule and Diet",
+    "excerpt": "How much to actually feed a betta (less than you'd think), what belongs in the bowl, and the real reasons a betta goes off food, from picky eating to something water-quality related.",
+    "date": "2026-07-24",
+    "category": "Aquatic Life",
+    "tags": [
+      "Betta Fish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-feeding.jpg",
+    "imageAlt": "Betta fish approaching floating pellets at the water's surface",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-24",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my betta fish?",
+        "a": "Once or twice a day is the range most sources agree on, though a couple recommend up to three smaller meals spaced further apart. There's no single settled number, so pick a schedule you can stick to consistently and watch your fish's body condition rather than chasing an exact figure."
+      },
+      {
+        "q": "How much should I actually feed a betta?",
+        "a": "Less than most new owners expect. A betta's stomach is roughly the size of its own eyeball, so 2 to 4 pellets per meal, or whatever it clears in about a minute, is the usual guidance. Overfeeding, not underfeeding, is the far more common mistake."
+      },
+      {
+        "q": "Do bettas need a fasting day?",
+        "a": "Most sources that cover digestive health recommend one fasting day a week with no food at all. It helps prevent the bloating and constipation that overfeeding tends to cause."
+      },
+      {
+        "q": "Why won't my betta eat?",
+        "a": "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious."
+      },
+      {
+        "q": "How long can a betta go without eating?",
+        "a": "A healthy adult can physically survive up to about two weeks, but that's an emergency ceiling, not a target. Most vet-reviewed guidance says to start actively investigating around 5 to 7 days of refused food, sooner if you notice a swollen belly, clamped fins, or lethargy."
+      },
+      {
+        "q": "What foods should never go in a betta's bowl?",
+        "a": "Bread, onion, garlic, salt, sugary foods, processed meats like hot dogs or lunch meat, citrus, and dairy. General tropical flakes and goldfish pellets aren't appropriate as a primary diet either, a betta is an obligate carnivore and needs a betta-specific high-protein pellet."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/betta-fish-handling-guide.mdx",
     "slug": "betta-fish-handling-guide",
     "title": "How to Handle a Betta Fish (Hint: You Mostly Don't)",
@@ -2757,6 +2809,58 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/ferret-feeding-guide.mdx",
+    "slug": "ferret-feeding-guide",
+    "title": "Ferret Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Ferret Feeding Guide: Schedule and Diet",
+    "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food is a same-day concern, not a wait-and-see one.",
+    "date": "2026-07-24",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-feeding.jpg",
+    "imageAlt": "Ferret eating from a bowl of high-protein kibble",
+    "emoji": "🦡",
+    "lastReviewed": "2026-07-24",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my ferret?",
+        "a": "Most healthy adults do best free-fed, meaning high-quality kibble available around the clock rather than one or two set meals. Ferrets naturally want to eat roughly every 4 to 6 hours, food passes through their gut in as little as 3 to 4 hours, one of the fastest transit times of any common pet mammal."
+      },
+      {
+        "q": "What should a ferret's diet actually look like?",
+        "a": "A high-quality, ferret-specific dry kibble as the base, roughly 32 to 40% protein, and animal fat, though exactly how much fat is genuinely disputed between sources. Ferrets are obligate carnivores with a short digestive tract that can't process plant matter, so this isn't a diet you can substitute vegetables or grains into."
+      },
+      {
+        "q": "Can ferrets eat fruits or vegetables?",
+        "a": "Mostly no. Most veterinary and manufacturer sources say to avoid produce entirely, since ferrets can't digest plant matter well and it risks diarrhea or blood sugar swings. One veterinary clinic's own client handout does allow a small amount as an occasional treat, so this is a genuine point of disagreement, when in doubt, leave it out."
+      },
+      {
+        "q": "Why has my ferret stopped eating?",
+        "a": "It could be something as ordinary as stress from a new environment or dislike of a new food brand. But because ferrets have such fast gut transit and small body reserves, appetite loss in this species deserves faster attention than it would in a cat or dog, dental pain, a swallowed foreign object, and insulinoma are all real possibilities."
+      },
+      {
+        "q": "How long can a ferret safely go without eating?",
+        "a": "Not long. Sources describe dangerous blood sugar drops developing within a single day in a healthy adult, faster in young, senior, or already sick ferrets. This is treated as a same-day veterinary concern, not something to monitor for a few days first."
+      },
+      {
+        "q": "Is chocolate actually dangerous for ferrets?",
+        "a": "Yes, it's called out specifically as fatal. Sugary treats more broadly are also risky since they can trigger blood sugar swings tied to insulinoma, a common condition in the species."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/ferret-legal-guide.mdx",
     "slug": "ferret-legal-guide",
     "title": "Is It Legal to Own a Ferret? State-by-State Guide",
@@ -4047,6 +4151,61 @@
       "under-tank-heat-mat-thermostat-kit",
       "uvb-arcadia-desert-12",
       "dubia-roach-colony-starter-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/leopard-gecko-feeding-guide.mdx",
+    "slug": "leopard-gecko-feeding-guide",
+    "title": "Leopard Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Leopard Gecko Feeding Guide: Schedule and Diet",
+    "excerpt": "How often to feed a leopard gecko by age, what they actually eat, and the real reasons they refuse food, from a normal shed to something worth a vet visit.",
+    "date": "2026-07-24",
+    "category": "Reptiles",
+    "tags": [
+      "Leopard Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-feeding.jpg",
+    "imageAlt": "Leopard gecko eating a gut-loaded cricket dusted with calcium powder",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-24",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my leopard gecko?",
+        "a": "It depends on age. Hatchlings and young geckos generally eat daily, juveniles every 1 to 2 days, and adults every 2 to 4 days once the tail has thickened to about the width of the neck. Sources vary on the exact adult number, some say every other day, some say every 5 days, so treat it as a range and let the gecko's body condition guide you rather than a fixed calendar."
+      },
+      {
+        "q": "What do leopard geckos eat?",
+        "a": "Commercially raised insects only, never wild-caught. Crickets are the usual staple, alongside dubia roaches, mealworms, superworms, and black soldier fly larvae. Waxworms and superworms are fine as occasional treats but shouldn't be a daily staple, they're high in fat."
+      },
+      {
+        "q": "Do I really need to gut-load and dust the insects?",
+        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for a day or two before offering them, and dust with calcium before most feedings, alternating in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure."
+      },
+      {
+        "q": "Why has my leopard gecko stopped eating?",
+        "a": "Most of the time it's normal: a shed cycle, brumation in cooler months, a recent move, or just a temperature that's a little too low for proper digestion. Check the warm side of the enclosure first, that's the single most common fixable cause. It only becomes a concern if it's paired with visible weight loss, a thinning tail, lethargy, or it drags on for weeks with no improvement."
+      },
+      {
+        "q": "How long can a leopard gecko go without eating?",
+        "a": "Longer than most owners expect, thanks to fat reserves stored in the tail. A healthy adult with a plump tail can typically go a couple of weeks without much concern, and some sources put the outer edge closer to a month. The tail itself is the best gauge: if it's visibly thinning, that's the signal to stop waiting and see a reptile vet."
+      },
+      {
+        "q": "Can leopard geckos eat fruits or vegetables?",
+        "a": "No. They're obligate insectivores, unlike some other pet gecko species, and their bodies aren't built to digest produce. Keep the diet to appropriately sized feeder insects."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-arcadia-earthpro-revitalised3",
+      "feeding-tongs-entomology-forceps-fine-tip"
     ]
   },
   {
