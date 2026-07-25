@@ -2095,6 +2095,61 @@
     ]
   },
   {
+    "path": "/content/guides/cockatiel-feeding-guide.mdx",
+    "slug": "cockatiel-feeding-guide",
+    "title": "Cockatiel Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Cockatiel Feeding Guide: Schedule and Diet",
+    "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food actually belongs in there, and the real reasons a cockatiel goes off food.",
+    "date": "2026-07-25",
+    "category": "Birds",
+    "tags": [
+      "Cockatiel",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-feeding.jpg",
+    "imageAlt": "Cockatiel eating from a bowl of formulated pellets and fresh vegetables",
+    "emoji": "🐦",
+    "lastReviewed": "2026-07-25",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my cockatiel?",
+        "a": "Cockatiels aren't fed on a set meal schedule the way a dog or cat is. Their fast metabolism means they eat throughout the day, so the base pellet bowl should be topped up in the morning when they're hungriest and never allowed to sit empty."
+      },
+      {
+        "q": "Should a cockatiel's diet be mostly seeds or pellets?",
+        "a": "Pellets. A formulated pellet diet making up roughly 75 to 80% of intake is the figure most veterinary sources point to, with fresh vegetables and fruit filling another 20 to 25% and seeds kept to a small minority. All-seed diets are a well-documented cause of malnutrition in pet cockatiels."
+      },
+      {
+        "q": "What foods are actually toxic to cockatiels?",
+        "a": "Avocado has the strongest, most consistent warning across veterinary and manufacturer sources alike. Onion, chocolate, caffeine, and alcohol are also flagged as genuinely toxic, not just foods to limit."
+      },
+      {
+        "q": "Do cockatiels need grit to digest their food?",
+        "a": "No. Cockatiels hull seeds before swallowing them, so unlike some other bird groups, they don't need grit. Overconsuming grit is actually a real risk, particularly in a sick bird, and can cause a dangerous gastrointestinal blockage."
+      },
+      {
+        "q": "Why has my cockatiel stopped eating?",
+        "a": "It's often something manageable, resistance to switching from seeds to pellets, heavy molting, or a new environment. But because cockatiels are small with a fast metabolism, appetite loss paired with any sign of illness, listlessness, nasal discharge, tail bobbing, deserves a same-day or next-day call to an avian vet rather than a wait-and-see approach."
+      },
+      {
+        "q": "Is egg binding related to diet?",
+        "a": "Yes, directly. A laying hen pulls calcium from her own bones to build eggshells, so a calcium-poor, seed-heavy diet feeds straight into the risk. Egg binding is a genuine emergency, a small bird can die within hours of becoming egg-bound."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-zupreem-fruitblend-cockatiel-2lb",
+      "bird-feeding-dishes-okllen-4pack"
+    ]
+  },
+  {
     "path": "/content/guides/cockatiel-handling-guide.mdx",
     "slug": "cockatiel-handling-guide",
     "title": "How to Handle and Tame a Cockatiel",
@@ -2536,6 +2591,59 @@
       "under-tank-heat-mat-thermostat-kit",
       "uvb-arcadia-forest-6"
     ]
+  },
+  {
+    "path": "/content/guides/corn-snake-feeding-guide.mdx",
+    "slug": "corn-snake-feeding-guide",
+    "title": "Corn Snake Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Corn Snake Feeding Guide: Schedule and Diet",
+    "excerpt": "How often to feed a corn snake by age and weight, why frozen/thawed beats live prey, and the honest range of reasons corn snakes go off food, from a normal shed to brumation.",
+    "date": "2026-07-25",
+    "category": "Reptiles",
+    "tags": [
+      "Corn Snake",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Snake Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Frozen Thawed Prey"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-feeding.jpg",
+    "imageAlt": "Corn snake investigating a properly thawed mouse in its enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-07-25",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my corn snake?",
+        "a": "It depends heavily on age and weight, not just age alone. Hatchlings under about 3 months eat every 5 to 7 days, working down to every 14 to 21 days for a fully mature adult. A vet-content source gives more frequent numbers across the board, every other day for babies, every 1 to 2 weeks for adults, so there's real disagreement here, but the specialist reptile-care consensus is the more frequent, evenly-converged figure worth following."
+      },
+      {
+        "q": "Is frozen/thawed prey actually better than live prey?",
+        "a": "Yes, and by a wide margin. Live rodents can bite, scratch, or claw a snake that isn't hungry enough to strike immediately, sometimes causing serious infection. Frozen/thawed removes that risk entirely and is the standard recommendation across every source consulted."
+      },
+      {
+        "q": "Does my corn snake need calcium or vitamin supplements?",
+        "a": "Generally no. A normal whole-prey diet, bones and organs included, provides complete nutrition for a corn snake, unlike insect-eating reptiles. Some sources recommend light dusting for hatchlings specifically on pinky mice, tapering off once the snake moves to larger prey, but over-supplementing calcium can itself cause problems."
+      },
+      {
+        "q": "Why has my corn snake stopped eating?",
+        "a": "Most commonly it's shedding, brumation, or, in males especially, breeding-season restlessness, all normal. It becomes a concern when it's paired with weight loss, lethargy, respiratory signs, or when the enclosure's warm side isn't actually warm enough for the snake to digest food safely."
+      },
+      {
+        "q": "How long can a corn snake go without eating?",
+        "a": "Longer than most owners expect for a healthy adult, commonly cited at 2 to 3 months thanks to a slow reptile metabolism. Sources genuinely disagree on the exact threshold for concern though, one vet-content source recommends calling a vet after missing just a couple of feedings, while reptile-specialist sources say refusal isn't unusual until it passes 1 to 2 months outside of a planned brumation. Babies have far less reserve, a week without eating is worth taking seriously in a hatchling."
+      },
+      {
+        "q": "Can I feed my corn snake anything besides mice?",
+        "a": "Whole prey variety is fine if you want it, young rats, quail, quail eggs, or day-old chicks are all mentioned across sources, though mice remain the default staple in the pet trade. Skip meat scraps, cooked food, and insects entirely, none of that is appropriate for this species."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/corn-snake-handling-guide.mdx",
@@ -6112,6 +6220,61 @@
       "cork-bark-round-hide",
       "shallow-water-dish",
       "dubia-roaches-bag"
+    ]
+  },
+  {
+    "path": "/content/guides/tarantula-feeding-guide.mdx",
+    "slug": "tarantula-feeding-guide",
+    "title": "Tarantula Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Tarantula Feeding Guide: Schedule and Diet",
+    "excerpt": "A tarantula going weeks without eating usually isn't a problem, it's premolt. Here's the real feeding schedule, what they eat, and when a fast actually is a red flag.",
+    "date": "2026-07-25",
+    "category": "Invertebrates",
+    "tags": [
+      "Tarantula",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Premolt"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-feeding.jpg",
+    "imageAlt": "Tarantula feeding on a cricket inside its enclosure",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-25",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my tarantula?",
+        "a": "It depends heavily on life stage and species. Slings eat every 2 to 3 days, juveniles roughly every week to two weeks, and adults every 1 to 2 weeks, sometimes far less for a slow-metabolism species. There's no single agreed number for any stage, treat abdomen size and appetite as the real guide, not a fixed calendar."
+      },
+      {
+        "q": "Should I dust feeder insects with calcium for my tarantula?",
+        "a": "No. Tarantulas are invertebrates with no bones, and hobbyist consensus is that calcium dusting isn't appropriate for them the way it is for reptiles, with anecdotal reports linking it to bad molts. One source is careful to note there's no strong scientific evidence it actually causes harm, so treat this as a precautionary hobby-wide practice rather than a proven fact, but the guidance across care sites is consistent: skip it."
+      },
+      {
+        "q": "Why has my tarantula stopped eating?",
+        "a": "Almost always premolt. A darkening, plumping abdomen and lethargy alongside appetite loss are the classic signs a molt is coming, and it can take weeks to months. This is completely normal biology for a tarantula in a way it wouldn't be for most other pets."
+      },
+      {
+        "q": "How long can a tarantula go without eating?",
+        "a": "Much longer than most owners expect. Adults can safely fast for weeks to several months during premolt. The one sourced concern threshold is for juveniles specifically, refusing food for more than 6 to 8 weeks alongside weight loss or lethargy is worth a vet consult."
+      },
+      {
+        "q": "Is it true tarantulas can go over a year without eating?",
+        "a": "There are documented outlier cases, including lab observations of tarantulas surviving roughly two years without food. That's an extreme, not a keeping benchmark, don't use it as a reason to stop paying attention to your own tarantula's condition."
+      },
+      {
+        "q": "What's the bigger warning sign, not eating or something else?",
+        "a": "Dehydration, not hunger. A shrunken, shriveled abdomen along with uncoordinated legs or an inability to lift the body is the real emergency sign, and it can be fatal within days without a fix, immediate access to a shallow water dish. Check water access first whenever a tarantula stops eating."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-entomology-forceps-fine-tip"
     ]
   },
   {
