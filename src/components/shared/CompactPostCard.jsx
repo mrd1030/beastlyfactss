@@ -3,7 +3,7 @@ import { Clock, Calendar } from 'lucide-react';
 import SanityImage from '@/components/SanityImage';
 
 export default function CompactPostCard({ post, onClick }) {
-  const date = post.publishedAt
+  const date = post.publishedAt && new Date(post.publishedAt) <= new Date()
     ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
     : '';
 

@@ -538,9 +538,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
                 {post.category || 'Article'}
               </span>
-              <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                <Clock className="w-3 h-3" /> {new Date(post.publishedAt).toLocaleDateString()}
-              </span>
+              {post.publishedAt && new Date(post.publishedAt) <= new Date() && (
+                <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                  <Clock className="w-3 h-3" /> {new Date(post.publishedAt).toLocaleDateString()}
+                </span>
+              )}
               {post.readTime && (
                 <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
                   <Clock className="w-3 h-3" /> {post.readTime} min read
