@@ -385,6 +385,38 @@
       "category": "Birds"
     },
     {
+      "slug": "conure-cost-guide",
+      "title": "Green Cheek Conure Cost: Full Price Breakdown",
+      "excerpt": "Green cheek conures sit at a moderate price point for a parrot, but color mutations and the wrong sales channel can both push that number up considerably, and a 20 to 25 year lifespan makes this a genuinely long-term investment.",
+      "date": "2026-07-29",
+      "image": "/assets/images/conure-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "conure-handling-guide",
+      "title": "How to Handle a Green Cheek Conure Correctly",
+      "excerpt": "Green cheek conures are affectionate, playful, and genuinely comical birds that form strong bonds with their people, but reading their beak language correctly is the real key to a good relationship.",
+      "date": "2026-07-29",
+      "image": "/assets/images/conure-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "conure-health-issues-guide",
+      "title": "Green Cheek Conure Health Issues: Signs & Causes",
+      "excerpt": "Most green cheek conure health problems trace back to diet, environment, or a lack of mental stimulation rather than pure genetics. Get those three things right and this is a genuinely resilient bird.",
+      "date": "2026-07-29",
+      "image": "/assets/images/conure-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "conure-tank-setup-guide",
+      "title": "Green Cheek Conure Cage Setup Guide",
+      "excerpt": "A conure's cage needs to support a genuinely active, intelligent bird, not just contain one, and a few details around size, lighting, and placement matter more than people expect.",
+      "date": "2026-07-29",
+      "image": "/assets/images/conure-tank-setup.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "corn-snake-cost-guide",
       "title": "Corn Snake Cost: Full Price Breakdown",
       "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
@@ -463,6 +495,38 @@
       "date": "2026-07-09",
       "image": "/assets/images/dog-bloat-gdv.jpg",
       "category": "Dogs"
+    },
+    {
+      "slug": "emperor-scorpion-cost-guide",
+      "title": "Emperor Scorpion Cost: Full Price Breakdown",
+      "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary invertebrate reputation doesn't come with a scary price tag.",
+      "date": "2026-07-31",
+      "image": "/assets/images/emperor-scorpion-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "emperor-scorpion-handling-guide",
+      "title": "Can You Handle an Emperor Scorpion Safely?",
+      "excerpt": "Emperor scorpions have a reputation for being one of the more docile, beginner-friendly scorpion species, and that reputation is earned. None of that makes them a species built for regular handling.",
+      "date": "2026-07-31",
+      "image": "/assets/images/emperor-scorpion-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "emperor-scorpion-health-issues-guide",
+      "title": "Emperor Scorpion Health Issues: Signs & Causes",
+      "excerpt": "Emperor scorpions are genuinely hardy when humidity and substrate depth are right, and most problems trace directly back to one of those two things being off.",
+      "date": "2026-07-31",
+      "image": "/assets/images/emperor-scorpion-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "emperor-scorpion-tank-setup-guide",
+      "title": "Emperor Scorpion Enclosure Setup Guide",
+      "excerpt": "Emperor scorpion husbandry is genuinely simple once you internalize two priorities: substrate depth for burrowing, and humidity that stays consistently high.",
+      "date": "2026-07-31",
+      "image": "/assets/images/emperor-scorpion-tank-setup.jpg",
+      "category": "Invertebrates"
     },
     {
       "slug": "ferret-adrenal-disease-guide",
@@ -697,6 +761,46 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "koi-conure-slider-scorpion-overview",
+      "title": "Koi, Conure, Red-Eared Slider & Emperor Scorpion Myths",
+      "excerpt": "A pond fish, a parrot, a turtle, and a scorpion, each one gets sold on an assumption that turns out to be backwards once you actually look at the animal.",
+      "date": "2026-08-01",
+      "image": "/assets/guides/koi-conure-slider-scorpion-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "koi-cost-guide",
+      "title": "Koi Fish Cost: Full Price Breakdown",
+      "excerpt": "The fish itself is often the smallest number in the whole equation. Koi ownership is really pond ownership, and that's where the real budget lives.",
+      "date": "2026-07-28",
+      "image": "/assets/images/koi-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "koi-handling-guide",
+      "title": "How to Handle Koi Fish Safely",
+      "excerpt": "Koi are social, hardy, and genuinely food motivated, but this isn't a fish you pick up and hold. Physical handling carries real risk, both to the fish and to you.",
+      "date": "2026-07-28",
+      "image": "/assets/images/koi-handling.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "koi-health-issues-guide",
+      "title": "Koi Health Issues: Signs & Causes",
+      "excerpt": "Across koi keeping resources, one theme repeats constantly: poor water quality is behind most health problems. Get that right and most of this list never shows up.",
+      "date": "2026-07-28",
+      "image": "/assets/images/koi-health-issues.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "koi-tank-setup-guide",
+      "title": "Koi Pond Setup Guide",
+      "excerpt": "Koi husbandry is really water management at scale. Get the volume, filtration, and depth right, and koi are genuinely hardy, low-drama fish.",
+      "date": "2026-07-28",
+      "image": "/assets/images/koi-tank-setup.jpg",
+      "category": "Fish"
+    },
+    {
       "slug": "leopard-gecko-cost-guide",
       "title": "Leopard Gecko Cost: Full Price Breakdown",
       "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
@@ -841,12 +945,44 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "red-eared-slider-cost-guide",
+      "title": "Red-Eared Slider Cost: Full Price Breakdown",
+      "excerpt": "Red-eared sliders are sold cheap and small, which is exactly what makes their real cost so easy to underestimate. The animal itself is genuinely inexpensive. What it grows into is not.",
+      "date": "2026-07-30",
+      "image": "/assets/images/red-eared-slider-cost.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "red-eared-slider-handling-guide",
+      "title": "How to Handle a Red-Eared Slider Safely",
+      "excerpt": "Red-eared sliders are curious and food-motivated, many learn to recognize their keeper, but recognition isn't affection in the way it is with a mammal, and treating it that way misreads what this species actually wants.",
+      "date": "2026-07-30",
+      "image": "/assets/images/red-eared-slider-handling.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "red-eared-slider-health-issues-guide",
+      "title": "Red-Eared Slider Health Issues: Signs & Causes",
+      "excerpt": "Most problems in captive red-eared sliders trace back to one of three husbandry failures: inadequate UVB, poor water quality, or an unbalanced diet.",
+      "date": "2026-07-30",
+      "image": "/assets/images/red-eared-slider-health-issues.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
       "slug": "red-eared-slider-legal-guide",
       "title": "Is a Red-Eared Slider Legal in Your State? Full Guide",
       "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The real restrictions come from state invasive-species laws, and Colorado just added a big one with a deadline one week away.",
       "date": "2026-07-22",
       "image": "/assets/guides/red-eared-slider-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "red-eared-slider-tank-setup-guide",
+      "title": "Red-Eared Slider Tank Setup Guide",
+      "excerpt": "The setup that suits a quarter-sized hatchling looks nothing like what an adult red-eared slider actually needs, and the gap between the two is where most first-time keepers get caught out.",
+      "date": "2026-07-30",
+      "image": "/assets/images/red-eared-slider-tank-setup.jpg",
+      "category": "Turtles & Tortoises"
     },
     {
       "slug": "reptile-shedding-complete-guide",
