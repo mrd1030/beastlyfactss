@@ -385,6 +385,14 @@
       "category": "Birds"
     },
     {
+      "slug": "cockatiel-feeding-guide",
+      "title": "Cockatiel Feeding Guide: Schedule and Diet",
+      "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food actually belongs in there, and the real reasons a cockatiel goes off food.",
+      "date": "2026-07-25",
+      "image": "/assets/images/cockatiel-feeding.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "cockatiel-handling-guide",
       "title": "How to Tame and Handle a Cockatiel",
       "excerpt": "Taming a cockatiel is a trust-building process more than a technique, and it goes faster when you let the bird set the pace rather than rushing toward a step-up cue on day one.",
@@ -454,6 +462,14 @@
       "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
       "date": "2026-07-11",
       "image": "/assets/images/corn-snake-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "corn-snake-feeding-guide",
+      "title": "Corn Snake Feeding Guide: Schedule and Diet",
+      "excerpt": "How often to feed a corn snake by age and weight, why frozen/thawed beats live prey, and the honest range of reasons corn snakes go off food, from a normal shed to brumation.",
+      "date": "2026-07-25",
+      "image": "/assets/images/corn-snake-feeding.jpg",
       "category": "Reptiles"
     },
     {
@@ -1190,6 +1206,14 @@
       "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to 20 years or more, which makes the low sticker price a bit misleading if you only look at year one.",
       "date": "2026-07-17",
       "image": "/assets/images/tarantula-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "tarantula-feeding-guide",
+      "title": "Tarantula Feeding Guide: Schedule and Diet",
+      "excerpt": "A tarantula going weeks without eating usually isn't a problem, it's premolt. Here's the real feeding schedule, what they eat, and when a fast actually is a red flag.",
+      "date": "2026-07-25",
+      "image": "/assets/images/tarantula-feeding.jpg",
       "category": "Invertebrates"
     },
     {
