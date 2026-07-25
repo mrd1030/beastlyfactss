@@ -37,7 +37,7 @@ export default function Home() {
       </Helmet>
 
       
-      <HeroSection />
+      <HeroSection onOpenFact={setSelectedFact} />
 
       <Suspense fallback={null}>
         <TrendingFacts onOpenFact={setSelectedFact} onOpenImage={setImageFact} />

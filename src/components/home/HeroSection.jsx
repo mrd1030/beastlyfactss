@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
+import { truncateDescription } from '@/lib/utils/truncate';
 
-export default function HeroSection() {
+export default function HeroSection({ onOpenFact }) {
   const dailyFact = facts[new Date().getDate() % facts.length];
   const [learned, setLearned] = useState(false);
 
@@ -127,7 +128,14 @@ export default function HeroSection() {
               <span className="font-display font-bold text-xs text-secondary">DAILY FACT</span>
             </div>
             <p className="text-sm text-foreground font-body leading-relaxed">
-              {dailyFact.emoji} <strong>{dailyFact.title}:</strong> {dailyFact.fact.slice(0, 120)}...
+              {dailyFact.emoji} <strong>{dailyFact.title}:</strong> {truncateDescription(dailyFact.fact, 120)}{' '}
+              <button
+                onClick={() => onOpenFact?.(dailyFact)}
+                className="inline-flex align-text-bottom text-secondary hover:text-secondary/80 transition-colors p-2 -m-2"
+                aria-label={`Read the full fact about ${dailyFact.animal}`}
+              >
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
             </p>
             {!learned ? (
               <button
