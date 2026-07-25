@@ -62,7 +62,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3TiqeC4",
     image: "/assets/images/affiliate/product-5.jpg",
-    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)"],
+    covers: ["Strong UVB (T5 HO Arcadia 6-12%)", "UVB (T5 HO Arcadia 6-12%)", "Moderate UVB (T5 HO Arcadia 6%)", "Strong UVB (T5 HO Arcadia 6% or 12%)"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -152,7 +152,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4fibBY2",
     image: "/assets/images/affiliate/product-16.jpg",
-    covers: ["Automatic misting system", "Automatic mister", "Fine mist system", "Mist system or fogger"],
+    covers: ["Automatic misting system", "Automatic mister", "Fine mist system", "Mist system or fogger", "Dripper system and automatic mister"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -162,7 +162,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3SKmfOx",
     image: "/assets/images/affiliate/product-17.jpg",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -429,7 +429,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/4voH9Ap",
     image: "/assets/images/affiliate/product-41.jpg",
-    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding"],
+    covers: ["Bedding (paper-based or fleece)", "Bedding", "Bedding and litter", "Litter/bedding", "6+ inches of paper-based bedding", "Bedding replacement"],
     pets: ["small-mammals"],
   },
 
@@ -579,7 +579,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://amzn.to/3T761Pz",
     image: "/assets/images/affiliate/product-54.jpg",
-    covers: ["Hideouts and tunnels", "Hideout/igloo", "Platforms and hideouts"],
+    covers: ["Hideouts and tunnels", "Hideout/igloo", "Platforms and hideouts", "Hideout"],
     pets: ["small-mammals"],
   },
   {
@@ -1691,7 +1691,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CY23K32S?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-155.jpg",
-    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate"],
+    covers: ["Moist substrate (coconut fiber + topsoil)", "Coconut fiber and peat substrate", "Coconut fiber + topsoil substrate", "Deep coconut fiber or topsoil substrate"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1791,7 +1791,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0G41RJPZJ?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-165.jpg",
-    covers: ["Chew toys (smaller, softer)"],
+    covers: ["Chew toys (smaller, softer)", "Chew toys and wood blocks"],
     pets: ["small-mammals"],
   },
   {
@@ -1941,7 +1941,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F37K1Z91?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-180.jpg",
-    covers: [],
+    covers: ["Toys, tunnels, and dig boxes"],
     pets: ["small-mammals"],
   },
   {
@@ -2048,7 +2048,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B001NJ0DAY?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-190.jpg",
-    covers: ["24x24x48 in multi-level cage"], // real gap filled - no cage product existed for this line before
+    covers: ["24x24x48 in multi-level cage", "3x2x2 ft multi-level cage"], // Critter Nation and Ferret Nation are the same MidWest cage line under different branding
     pets: ["small-mammals"],
   },
   {
@@ -2234,7 +2234,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B09MQBB6CP?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-208.jpg",
-    covers: ["10-20 gallon enclosure with secure lid"],
+    covers: ["10-20 gallon enclosure with secure lid", "10-20 gallon terrarium"],
     pets: ["reptiles-amphibians"],
   },
   {
@@ -2246,6 +2246,58 @@ export const AFFILIATE_PRODUCTS = [
     image: "/assets/images/affiliate/product-209.jpg",
     covers: ["UV/black light (optional)"],
     pets: ["reptiles-amphibians"],
+  },
+
+  // --- Batch 9: veiled chameleon / ferret / hognose snake / hamster / blue tongue skink / white's tree frog / pacman frog ---
+  {
+    slug: "ferret-hammock-niteangel-nap-sack",
+    product: "Niteangel Hanging Hammock Nap Sack Swing Bag Pet Sleeper for Ferret Rat Sugar Glider and Other Small Animals",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07N658NL6?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-210.jpg",
+    covers: ["Fleece hammocks and sleep sacks"],
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "ferret-food-marshall-premium-diet",
+    product: "Marshall Premium Ferret Diet Dry Food",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00FQEAX2U?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-211.jpg",
+    covers: ["High-quality ferret kibble or raw diet"],
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "hamster-cage-prevue-528-universal",
+    product: "Prevue Pet Products Universal Small Animal Home (Model 528)",
+    category: "Enclosures & Cages",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B074FH47MQ?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-212.jpg",
+    covers: ["450+ sq in cage (bin, wire, or glass tank)"],
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "hamster-wheel-niteangel-super-silent-10in",
+    product: "Niteangel Super-Silent Hamster Exercise Wheel, 10 inch",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B08FC8JG1B?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-213.jpg",
+    covers: ["11-12 in solid exercise wheel"],
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "hamster-food-oxbow-garden-select",
+    product: "Oxbow Garden Select Hamster & Gerbil Food, Non-GMO Pellets, 1.5 lb",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B06XY8RHVB?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-214.jpg",
+    covers: ["Hamster pellets or lab blocks"],
+    pets: ["small-mammals"],
   },
 
 ];

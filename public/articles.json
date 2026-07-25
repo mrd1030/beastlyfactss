@@ -233,6 +233,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "blue-tongue-skink-cost-guide",
+      "title": "Blue-Tongued Skink Cost: Full Price Breakdown",
+      "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern versus Indonesian, and that gap matters more here than with almost any other reptile.",
+      "date": "2026-08-07",
+      "image": "/assets/images/blue-tongue-skink-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "blue-tongue-skink-handling-guide",
+      "title": "How to Handle a Blue-Tongued Skink Safely",
+      "excerpt": "Blue-tongued skinks are among the most docile, personable lizards kept as pets, genuinely curious and tolerant of handling once they're settled, but how fast a skink gets there depends heavily on where it came from.",
+      "date": "2026-08-07",
+      "image": "/assets/images/blue-tongue-skink-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "blue-tongue-skink-health-issues-guide",
+      "title": "Blue-Tongued Skink Health Issues: Signs & Causes",
+      "excerpt": "Most blue-tongued skink health problems trace back to one of two things: incorrect UVB or temperature, or for Indonesian skinks specifically, an untreated parasite load from before they ever reached you.",
+      "date": "2026-08-07",
+      "image": "/assets/images/blue-tongue-skink-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "blue-tongue-skink-tank-setup-guide",
+      "title": "Blue-Tongued Skink Tank Setup Guide",
+      "excerpt": "Enclosure size and lighting are nearly identical between Northern and Indonesian blue-tongued skinks. Temperature and humidity are where they genuinely diverge, and getting that split right matters more than almost anything else.",
+      "date": "2026-08-07",
+      "image": "/assets/images/blue-tongue-skink-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "box-turtle-legal-guide",
       "title": "Is a Box Turtle Legal in Your State? Full Guide",
       "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
@@ -537,11 +569,35 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "ferret-cost-guide",
+      "title": "Ferret Cost: Full Price Breakdown",
+      "excerpt": "Ferrets are moderately priced to buy, but they're genuinely the most expensive long-term pet on this site, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
+      "date": "2026-08-03",
+      "image": "/assets/images/ferret-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "ferret-feeding-guide",
       "title": "Ferret Feeding Guide: Schedule and Diet",
       "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food is a same-day concern, not a wait-and-see one.",
       "date": "2026-07-24",
       "image": "/assets/images/ferret-feeding.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "ferret-handling-guide",
+      "title": "How to Handle a Ferret Correctly",
+      "excerpt": "Ferrets are playful, curious, and intensely social, genuinely one of the more interactive pets on this site once socialized. The catch is that they explore the world with their mouths.",
+      "date": "2026-08-03",
+      "image": "/assets/images/ferret-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "ferret-health-issues-guide",
+      "title": "Ferret Health Issues: Signs & Causes",
+      "excerpt": "Ferrets are genuinely healthy and low-maintenance as young adults. The real story with this species is what happens starting around age 2 to 3, when chronic endocrine disease becomes common enough that budgeting for it is realism, not pessimism.",
+      "date": "2026-08-03",
+      "image": "/assets/images/ferret-health-issues.jpg",
       "category": "Small & Exotic Pets"
     },
     {
@@ -551,6 +607,14 @@
       "date": "2026-07-22",
       "image": "/assets/guides/ferret-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "ferret-tank-setup-guide",
+      "title": "Ferret Cage Setup Guide",
+      "excerpt": "A ferret's cage matters, but it's genuinely only part of what this species needs. Ferret-proofing the room they play in is just as essential, and it's the part first-time owners most often underestimate.",
+      "date": "2026-08-03",
+      "image": "/assets/images/ferret-tank-setup.jpg",
+      "category": "Small & Exotic Pets"
     },
     {
       "slug": "five-beginner-reptiles-overview",
@@ -705,6 +769,46 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "hamster-cost-guide",
+      "title": "Hamster Cost: Full Price Breakdown",
+      "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
+      "date": "2026-08-06",
+      "image": "/assets/images/hamster-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hamster-handling-guide",
+      "title": "How to Handle a Hamster Safely",
+      "excerpt": "Hamster temperament varies more by species than most people expect. A Syrian and a Roborovski, both sold under the same 'hamster' label, can be genuinely different pets to hold.",
+      "date": "2026-08-06",
+      "image": "/assets/images/hamster-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hamster-health-issues-guide",
+      "title": "Hamster Health Issues: Signs & Causes",
+      "excerpt": "Hamsters are hardy for their size, but their short lifespan means health issues can progress fast. Knowing the warning signs, especially for the single most dangerous one, matters more here than with most pets.",
+      "date": "2026-08-06",
+      "image": "/assets/images/hamster-health-issues.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hamster-skink-whitestreefrog-pacmanfrog-overview",
+      "title": "Hamster, Blue-Tongued Skink, White's Tree Frog & Pacman Frog",
+      "excerpt": "A cheap animal with an expensive setup. A lizard whose whole care plan depends on where it was born. And two frogs that turn out to be near-opposites of each other.",
+      "date": "2026-08-10",
+      "image": "/assets/guides/hamster-skink-whitestreefrog-pacmanfrog-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "hamster-tank-setup-guide",
+      "title": "Hamster Enclosure Setup Guide",
+      "excerpt": "Hamster housing standards have shifted significantly in recent years, and the small wire cages sold as 'hamster starter kits' fall well short of current welfare recommendations. Getting size and bedding depth right is most of what matters here.",
+      "date": "2026-08-06",
+      "image": "/assets/images/hamster-tank-setup.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
       "slug": "hamster-vs-guinea-pig-guide",
       "title": "Hamster vs. Guinea Pig: Which Is Right for You?",
       "excerpt": "Hamster or guinea pig? The honest differences in space, social needs, lifespan, and daily care - not just which one looks cuter in the store.",
@@ -745,12 +849,44 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "hognose-snake-cost-guide",
+      "title": "Hognose Snake Cost: Full Price Breakdown",
+      "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
+      "date": "2026-08-04",
+      "image": "/assets/images/hognose-snake-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "hognose-snake-handling-guide",
+      "title": "How to Handle a Hognose Snake Correctly",
+      "excerpt": "Western hognose snakes have built their reputation on a dramatic defensive display that looks alarming and means almost the opposite of what it appears to. Understanding that display is the whole key to handling this species well.",
+      "date": "2026-08-04",
+      "image": "/assets/images/hognose-snake-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "hognose-snake-health-issues-guide",
+      "title": "Hognose Snake Health Issues: Signs & Causes",
+      "excerpt": "Western hognoses are hardy snakes, and most of what shows up on this list traces back to substrate, humidity, or feeding habits, all fully within an owner's control.",
+      "date": "2026-08-04",
+      "image": "/assets/images/hognose-snake-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "hognose-snake-legal-guide",
       "title": "Is a Hognose Snake Legal in Your State? Full Guide",
       "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The real restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
       "date": "2026-07-22",
       "image": "/assets/guides/hognose-snake-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "hognose-snake-tank-setup-guide",
+      "title": "Hognose Snake Tank Setup Guide",
+      "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
+      "date": "2026-08-04",
+      "image": "/assets/images/hognose-snake-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "invertebrate-molting-guide",
@@ -887,6 +1023,38 @@
       "date": "2026-07-25",
       "image": "/assets/images/mourning-gecko-tank-setup.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "pacman-frog-cost-guide",
+      "title": "Pacman Frog Cost: Full Price Breakdown",
+      "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and genuinely cheap to set up. The real financial risk isn't routine cost, it's a preventable vet bill.",
+      "date": "2026-08-09",
+      "image": "/assets/images/pacman-frog-cost.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "pacman-frog-handling-guide",
+      "title": "Pacman Frog Handling: Why It Should Stay Minimal",
+      "excerpt": "Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves near their face. That's exactly why this isn't a species built for regular handling.",
+      "date": "2026-08-09",
+      "image": "/assets/images/pacman-frog-handling.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "pacman-frog-health-issues-guide",
+      "title": "Pacman Frog Health Issues: Signs & Causes",
+      "excerpt": "Pacman frogs are hardy, but obesity and impaction, both directly tied to how they're fed and housed, account for the vast majority of health issues in this species.",
+      "date": "2026-08-09",
+      "image": "/assets/images/pacman-frog-health-issues.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "pacman-frog-tank-setup-guide",
+      "title": "Pacman Frog Tank Setup Guide",
+      "excerpt": "Pacman frogs are genuinely easy to house correctly, they're sedentary burrowers that don't need much space. The setup mistakes that actually cause problems for this species are specific and avoidable.",
+      "date": "2026-08-09",
+      "image": "/assets/images/pacman-frog-tank-setup.jpg",
+      "category": "Amphibians"
     },
     {
       "slug": "praying-mantis-ootheca-guide",
@@ -1055,6 +1223,78 @@
       "date": "2025-04-12",
       "image": "/assets/images/uvb-lighting.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "veiled-chameleon-cost-guide",
+      "title": "Veiled Chameleon Cost: Full Price Breakdown",
+      "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the real cost shows up.",
+      "date": "2026-08-02",
+      "image": "/assets/images/veiled-chameleon-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "veiled-chameleon-ferret-hognose-overview",
+      "title": "Veiled Chameleon, Ferret & Hognose Snake Compared",
+      "excerpt": "A hissing chameleon, a nipping ferret, and a cobra-hooding snake all look like the thing to worry about. In every case, the real risk is something quieter.",
+      "date": "2026-08-05",
+      "image": "/assets/guides/veiled-chameleon-ferret-hognose-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "veiled-chameleon-handling-guide",
+      "title": "How to Handle a Veiled Chameleon Correctly",
+      "excerpt": "Veiled chameleons are solitary, territorial display animals, and this is genuinely one of the less handleable pet reptiles. Knowing that upfront saves both of you a lot of stress.",
+      "date": "2026-08-02",
+      "image": "/assets/images/veiled-chameleon-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "veiled-chameleon-health-issues-guide",
+      "title": "Veiled Chameleon Health Issues: Signs & Causes",
+      "excerpt": "Veiled chameleons are hardy by chameleon standards, but a handful of conditions come up often enough, and one is specific to females and genuinely urgent, that every owner should recognize the signs.",
+      "date": "2026-08-02",
+      "image": "/assets/images/veiled-chameleon-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "veiled-chameleon-tank-setup-guide",
+      "title": "Veiled Chameleon Tank Setup Guide",
+      "excerpt": "Veiled chameleon husbandry has a reputation for being demanding, and it earns that honestly. Get the enclosure, misting, and lighting right, and this is a genuinely rewarding species to keep.",
+      "date": "2026-08-02",
+      "image": "/assets/images/veiled-chameleon-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "whites-tree-frog-cost-guide",
+      "title": "White's Tree Frog Cost: Full Price Breakdown",
+      "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
+      "date": "2026-08-08",
+      "image": "/assets/images/whites-tree-frog-cost.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "whites-tree-frog-handling-guide",
+      "title": "How to Handle a White's Tree Frog Safely",
+      "excerpt": "White's tree frogs are unusually handleable for an amphibian, docile, slow-moving, and known for their calm, almost smiling expression. But the risk here runs in a direction people don't expect: it's not the frog hurting you, it's you accidentally hurting the frog.",
+      "date": "2026-08-08",
+      "image": "/assets/images/whites-tree-frog-handling.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "whites-tree-frog-health-issues-guide",
+      "title": "White's Tree Frog Health Issues: Signs & Causes",
+      "excerpt": "White's tree frogs are hardy for an amphibian, but they have one health issue that shows up more in this species than almost any other pet frog, driven by the same enthusiastic-eater trait that makes them so satisfying to feed.",
+      "date": "2026-08-08",
+      "image": "/assets/images/whites-tree-frog-health-issues.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "whites-tree-frog-tank-setup-guide",
+      "title": "White's Tree Frog Tank Setup Guide",
+      "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
+      "date": "2026-08-08",
+      "image": "/assets/images/whites-tree-frog-tank-setup.jpg",
+      "category": "Amphibians"
     },
     {
       "slug": "10-surprising-argentine-tegu-facts",

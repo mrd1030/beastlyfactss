@@ -1392,6 +1392,212 @@
     ]
   },
   {
+    "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
+    "slug": "blue-tongue-skink-cost-guide",
+    "title": "How Much Does a Blue-Tongued Skink Really Cost?",
+    "seoTitle": "Blue-Tongued Skink Cost: Full Price Breakdown",
+    "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern versus Indonesian, and that gap matters more here than with almost any other reptile.",
+    "date": "2026-08-07",
+    "category": "Reptiles",
+    "tags": [
+      "Blue-Tongued Skink",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/blue-tongue-skink-cost.jpg",
+    "imageAlt": "Northern and Indonesian blue-tongued skinks illustrating the price and care difference between the two types",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a blue-tongued skink itself cost?",
+        "a": "Northern (Australian) skinks run $150 to $250 for babies through adults, with high-color or rare morphs reaching $400 to $700. Indonesian skinks are cheaper, generally $100 to $250, but almost all of that price gap comes down to Australia's export laws, not quality."
+      },
+      {
+        "q": "Why are Northern skinks so much more expensive than Indonesian skinks?",
+        "a": "Australia's export laws make it extremely difficult to bring wild Northern skinks out of the country, so nearly all Northerns in the US pet trade are captive-bred, which costs more to produce but results in tamer, healthier animals. Indonesia has no such restriction, and most Indonesian skinks sold in the US are still wild-caught."
+      },
+      {
+        "q": "Is the cheaper Indonesian skink actually the better budget choice?",
+        "a": "Not usually. Wild-caught Indonesian skinks frequently need a fecal exam and deworming treatment right after purchase, an added cost that Northern buyers typically skip entirely, plus a longer taming process. For a first-time keeper, a captive-bred Northern often works out to a comparable total cost with meaningfully lower risk."
+      },
+      {
+        "q": "What does the upfront setup cost?",
+        "a": "Roughly $400 to $800 for a 4x2x2 ft enclosure (PVC preferred for humidity control), UVB lighting, a heat source and thermostat, substrate, hides, and a water dish. Total initial investment, animal plus setup, commonly lands between $550 and $1,400 depending on which type you choose."
+      },
+      {
+        "q": "How long do blue-tongued skinks live, and how does that affect budgeting?",
+        "a": "15 to 20 years is the commonly cited average, with well-documented cases living past 30. PetMD notes reports of individuals living more than 32 years, so this is a multi-decade commitment regardless of which type you choose."
+      }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "uvb-arcadia-forest-6",
+      "basking-dome-fixture",
+      "digital-thermometer-hygrometer-combo",
+      "calcium-miner-all-indoor-2pack"
+    ]
+  },
+  {
+    "path": "/content/guides/blue-tongue-skink-handling-guide.mdx",
+    "slug": "blue-tongue-skink-handling-guide",
+    "title": "How to Handle a Blue-Tongued Skink",
+    "seoTitle": "How to Handle a Blue-Tongued Skink Safely",
+    "excerpt": "Blue-tongued skinks are among the most docile, personable lizards kept as pets, genuinely curious and tolerant of handling once they're settled, but how fast a skink gets there depends heavily on where it came from.",
+    "date": "2026-08-07",
+    "category": "Reptiles",
+    "tags": [
+      "Blue-Tongued Skink",
+      "Handling",
+      "Reptile Behavior",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/blue-tongue-skink-handling.jpg",
+    "imageAlt": "Blue-tongued skink calmly resting across an owner's open hands",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are blue-tongued skinks easy to handle?",
+        "a": "Yes, generally. They're among the most docile, personable lizards kept as pets, genuinely curious and tolerant of regular handling once they're settled in. How quickly a skink reaches that point depends heavily on whether it's captive-bred or wild-caught."
+      },
+      {
+        "q": "What does it mean when a blue-tongued skink shows its blue tongue?",
+        "a": "It's a bluff display, not a real threat. When startled, a skink hisses, flattens its body, and opens its mouth to flash the bright blue tongue that gives the species its name, meant to look more dramatic than it is. Bites happen occasionally when a skink feels genuinely scared, but they're the exception, not the norm, for a settled animal."
+      },
+      {
+        "q": "Are Indonesian skinks harder to handle than Northern skinks?",
+        "a": "Generally yes. Captive-bred Northerns, raised around people from birth, tend to be noticeably calmer and easier to tame. Wild-caught Indonesians arrive with zero prior human contact and are understandably more defensive and skittish at first. Tanimbar Indonesians in particular have a reputation for being feistier than other Indonesian lines."
+      },
+      {
+        "q": "How soon can I handle a new blue-tongued skink?",
+        "a": "Leave it alone for 2 to 3 weeks first, giving it time to settle into its enclosure and start eating normally. Build trust gradually through food-based interaction rather than jumping straight to handling. For a genuinely feisty wild-caught animal, light gloves during early sessions aren't a bad idea while trust develops."
+      },
+      {
+        "q": "What handling mistakes do first-time owners make?",
+        "a": "Handling too soon, before the skink has acclimated. Petting or touching the head repeatedly, many skinks become defensive specifically when the head is touched. And mistaking a food-motivated lunge, they're enthusiastic, food-driven eaters, for actual aggression."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/blue-tongue-skink-health-issues-guide.mdx",
+    "slug": "blue-tongue-skink-health-issues-guide",
+    "title": "Common Blue-Tongued Skink Health Issues and What Causes Them",
+    "seoTitle": "Blue-Tongued Skink Health Issues: Signs & Causes",
+    "excerpt": "Most blue-tongued skink health problems trace back to one of two things: incorrect UVB or temperature, or for Indonesian skinks specifically, an untreated parasite load from before they ever reached you.",
+    "date": "2026-08-07",
+    "category": "Reptiles",
+    "tags": [
+      "Blue-Tongued Skink",
+      "Health",
+      "Parasites",
+      "Reptile Illness",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/blue-tongue-skink-health-issues.jpg",
+    "imageAlt": "Blue-tongued skink undergoing a vet exam to check for signs of illness",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the first sign of metabolic bone disease in a blue-tongued skink?",
+        "a": "A soft or rubbery jaw is often the first thing owners notice, followed by a kinked spine, tremors, and difficulty walking in more advanced cases. It's caused by inadequate UVB and or calcium. This is a vet situation always, and advanced cases are irreversible, which is exactly why UVB and calcium supplementation matter from day one."
+      },
+      {
+        "q": "Why do Indonesian blue-tongued skinks get parasites so often?",
+        "a": "Because most Indonesian skinks sold in the US pet trade are wild-caught, and wild-caught animals commonly carry parasite loads picked up before import. A peer-reviewed study of reptile fecal samples found parasite presence in over 93% of animals tested. Northern skinks, being almost universally captive-bred, carry far lower parasite risk by comparison."
+      },
+      {
+        "q": "What treatment do wild-caught skinks need for parasites?",
+        "a": "A vet fecal exam and appropriate deworming, fenbendazole for roundworms and pinworms, praziquantel for tapeworms and flukes. If you've acquired a wild-caught or unspecified-origin skink, this isn't optional preventive care, it's close to a certainty worth budgeting for upfront."
+      },
+      {
+        "q": "What causes respiratory infection in blue-tongued skinks?",
+        "a": "Incorrect temperature or humidity, or excess dust in the enclosure. Watch for nasal or oral discharge, bubbling, open-mouth breathing, and wheezing. Early cases often resolve once temperature and humidity are corrected, advanced cases need a vet and antibiotics."
+      },
+      {
+        "q": "What's the difference between retained shed and scale rot?",
+        "a": "Retained shed on the toes or tail comes from humidity that's too low. Scale rot on the belly comes from the opposite problem, substrate that's too damp. Both are manageable once humidity is corrected, and a vet visit is warranted if either progresses to infection."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-forest-6",
+      "calcium-miner-all-indoor-2pack",
+      "digital-thermometer-hygrometer-combo",
+      "substrate-tarantula-coconut-fiber-peat",
+      "large-soakable-water-dish"
+    ]
+  },
+  {
+    "path": "/content/guides/blue-tongue-skink-tank-setup-guide.mdx",
+    "slug": "blue-tongue-skink-tank-setup-guide",
+    "title": "Blue-Tongued Skink Tank Setup: Northern vs. Indonesian, the Difference That Actually Matters",
+    "seoTitle": "Blue-Tongued Skink Tank Setup Guide",
+    "excerpt": "Enclosure size and lighting are nearly identical between Northern and Indonesian blue-tongued skinks. Temperature and humidity are where they genuinely diverge, and getting that split right matters more than almost anything else.",
+    "date": "2026-08-07",
+    "category": "Reptiles",
+    "tags": [
+      "Blue-Tongued Skink",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/blue-tongue-skink-tank-setup.jpg",
+    "imageAlt": "Blue-tongued skink enclosure with basking area, hide, and moisture-retentive substrate",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a blue-tongued skink need?",
+        "a": "4x2x2 feet minimum, roughly 8 square feet of floor space, for either Northern or Indonesian skinks. Bigger is always better. Front-opening PVC enclosures are preferred over glass since they hold humidity more effectively, which matters more for Indonesian skinks specifically."
+      },
+      {
+        "q": "Do Northern and Indonesian skinks need different temperatures?",
+        "a": "Yes, slightly. Northern basking surface should run 105 to 115°F, Indonesian basking surface a bit cooler at 100 to 105°F. Both need a cool side of 70 to 80°F and nighttime temperatures staying above roughly 70°F."
+      },
+      {
+        "q": "What's the biggest care difference between Northern and Indonesian skinks?",
+        "a": "Humidity, by far. Northerns need relatively low humidity, around 40%, while Indonesians need considerably more, 60 to 80%. Standard low-humidity setups that work fine for a Northern will run too dry for an Indonesian."
+      },
+      {
+        "q": "Does a blue-tongued skink need UVB?",
+        "a": "Yes, this species needs UVB to thrive, not just survive. Use a T5 HO bulb in the 10.0 to 12% range spanning at least half the enclosure on the warm side, replaced every 12 months regardless of whether it still visibly lights up, and keep the skink no closer than about 10 inches from the bulb."
+      },
+      {
+        "q": "Do I need to quarantine a new blue-tongued skink?",
+        "a": "If it's an Indonesian skink, or any skink of uncertain origin, yes. Quarantine and a fecal test before treating it as a healthy, established animal isn't optional extra caution, it's a standard part of responsible setup for a likely wild-caught animal."
+      }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "uvb-arcadia-forest-6",
+      "basking-dome-fixture",
+      "substrate-tarantula-coconut-fiber-peat",
+      "large-soakable-water-dish",
+      "cork-bark-round-hide"
+    ]
+  },
+  {
     "path": "/content/guides/box-turtle-legal-guide.mdx",
     "slug": "box-turtle-legal-guide",
     "title": "Is It Legal to Own a Box Turtle? State-by-State Guide",
@@ -3223,6 +3429,60 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/ferret-cost-guide.mdx",
+    "slug": "ferret-cost-guide",
+    "title": "How Much Does a Ferret Really Cost?",
+    "seoTitle": "Ferret Cost: Full Price Breakdown",
+    "excerpt": "Ferrets are moderately priced to buy, but they're genuinely the most expensive long-term pet on this site, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
+    "date": "2026-08-03",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Cost",
+      "Pet Ownership Cost",
+      "Exotic Vet Care",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-cost.jpg",
+    "imageAlt": "Ferret sitting next to its cage and everyday supplies",
+    "emoji": "🦡",
+    "lastReviewed": "2026-08-03",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a ferret itself cost?",
+        "a": "$75 to $400 depending on where you get one. Shelter or rescue adoption is usually the best value at $50 to $150, and often includes an animal that's already altered, vaccinated, and vet-checked. Pet store ferrets, typically already spayed, neutered, and descented, run $200 to $400. Reputable private breeders run $150 to $400 or more."
+      },
+      {
+        "q": "Are ferrets legal everywhere?",
+        "a": "No. Ferrets are banned statewide in California and Hawaii, and restricted in some cities and counties beyond that. Check your local laws before you fall in love with one, our full ferret legal guide covers the state-by-state details."
+      },
+      {
+        "q": "What's the biggest long-term cost of owning a ferret?",
+        "a": "Not day-to-day care, it's a genuinely high rate of chronic endocrine disease that shows up starting in middle age. Lifetime veterinary cost is commonly estimated at $3,000 to $8,000 or more, and that's a realistic planning number, not a worst-case scenario."
+      },
+      {
+        "q": "How much does a ferret cost per month?",
+        "a": "Roughly $50 to $60 a month for a pair. High-protein ferret-specific food and litter are the main recurring costs, and toys and enrichment items need regular replacing since ferrets are enthusiastic chewers and diggers."
+      },
+      {
+        "q": "How long do ferrets live, and how does that affect budgeting?",
+        "a": "5 to 9 years on average in the US today. Older sources sometimes cite 10 to 15 years, but that reflects a healthier population than what's typical for US pet ferrets now, largely because of how common the endocrine diseases covered in our health issues guide have become."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-cage-midwest-critter-nation-double",
+      "ferret-hammock-niteangel-nap-sack",
+      "litter-box",
+      "small-mammal-play-pack-seagrass",
+      "ferret-food-marshall-premium-diet",
+      "small-pet-paper-bedding"
+    ]
+  },
+  {
     "path": "/content/guides/ferret-feeding-guide.mdx",
     "slug": "ferret-feeding-guide",
     "title": "Ferret Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -3275,6 +3535,103 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/ferret-handling-guide.mdx",
+    "slug": "ferret-handling-guide",
+    "title": "How to Handle a Ferret",
+    "seoTitle": "How to Handle a Ferret Correctly",
+    "excerpt": "Ferrets are playful, curious, and intensely social, genuinely one of the more interactive pets on this site once socialized. The catch is that they explore the world with their mouths.",
+    "date": "2026-08-03",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Handling",
+      "Nipping",
+      "Ferret Behavior",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-handling.jpg",
+    "imageAlt": "Person gently holding a ferret during a supervised play session",
+    "emoji": "🦡",
+    "lastReviewed": "2026-08-03",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why do ferrets nip?",
+        "a": "Nipping is a natural ferret behavior, most common in young ferrets, especially males around 3 to 4 months old, particularly if they spent more time around other ferrets than people early on. Ferret skin is considerably tougher than human skin, so a kit genuinely doesn't understand that a bite comfortable to another ferret is too hard for a person. Most nipping comes from play, teething, fear, or overstimulation, not real aggression."
+      },
+      {
+        "q": "Should I flick or pop a ferret's nose to stop nipping?",
+        "a": "No. That's old advice, and it actually increases fear-based biting rather than reducing it. Counterintuitively, a nipping kit usually needs more gentle, consistent handling, not less, to learn appropriate bite pressure. Redirect to a toy, use a calm vocal cue, and stay patient."
+      },
+      {
+        "q": "Can a ferret actually be deaf?",
+        "a": "Yes. Many white, blaze, and panda-patterned ferrets are congenitally deaf due to the genetics behind those coat patterns. A deaf ferret can seem to be ignoring cues or nipping without warning when it's really just unable to hear you coming, worth factoring in if you notice a pattern that doesn't match typical nipping behavior."
+      },
+      {
+        "q": "Are ferrets good pets for young children?",
+        "a": "Not recommended. Given the real potential to bite, especially in young or under-socialized ferrets, this species generally isn't a good fit for households with very young children."
+      },
+      {
+        "q": "How much daily playtime does a ferret need?",
+        "a": "Several hours of supervised out-of-cage time is a real need, not a bonus. Ferrets sleep around 18 hours a day but are intensely active and genuinely mischievous during their waking hours, closer in energy to a kitten that never quite grows out of the phase."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/ferret-health-issues-guide.mdx",
+    "slug": "ferret-health-issues-guide",
+    "title": "Common Ferret Health Issues (And Why Middle Age Is the Real Turning Point)",
+    "seoTitle": "Ferret Health Issues: Signs & Causes",
+    "excerpt": "Ferrets are genuinely healthy and low-maintenance as young adults. The real story with this species is what happens starting around age 2 to 3, when chronic endocrine disease becomes common enough that budgeting for it is realism, not pessimism.",
+    "date": "2026-08-03",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Health",
+      "Adrenal Disease",
+      "Insulinoma",
+      "Exotic Pet Health",
+      "Small Mammal Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-health-issues.jpg",
+    "imageAlt": "Ferret undergoing a wellness check with an exotic veterinarian",
+    "emoji": "🦡",
+    "lastReviewed": "2026-08-03",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How common is adrenal disease in ferrets?",
+        "a": "Estimates vary widely across studies, from under 1% to as high as a quarter of the population, with one frequently cited figure suggesting around 70% of US pet ferrets were affected as of 2003. The exact number is genuinely debated, but the consistent message is the same: this is not a rare condition in this species."
+      },
+      {
+        "q": "Does neutering age cause ferret adrenal disease?",
+        "a": "It's genuinely debated. Early spay and neuter, common in the US pet trade, is a well-supported risk factor tied to disrupting the hormonal feedback loop to the pituitary gland. But a study of Dutch ferrets neutered later, between 12 and 18 months, still found the disease, with a gap between neutering and diagnosis nearly identical to US ferrets neutered at just a few weeks old. Neutering itself, combined with prolonged indoor light exposure and genetics, appears to matter more than the exact age at neutering."
+      },
+      {
+        "q": "What is insulinoma and how common is it in ferrets?",
+        "a": "A tumor of the insulin-producing cells in the pancreas. Per veterinary sources, it's the single most common tumor type diagnosed in ferrets, making up roughly a quarter of all ferret tumors, and it typically starts showing up around age 2 to 3."
+      },
+      {
+        "q": "What ferret health issues count as a real emergency?",
+        "a": "A urinary blockage in males from an adrenal-related enlarged prostate, a sudden collapse or seizure from insulinoma, and a GI blockage from swallowed rubber or foam are all genuine emergencies that need immediate veterinary care, not a wait-and-see approach."
+      },
+      {
+        "q": "Is canine distemper preventable in ferrets?",
+        "a": "Yes, entirely, through vaccination. It's nearly always fatal in ferrets otherwise, and there's no good reason to skip it."
+      }
+    ],
+    "relatedProducts": [
+      "small-mammal-play-pack-seagrass",
+      "ferret-food-marshall-premium-diet"
+    ]
+  },
+  {
     "path": "/content/guides/ferret-legal-guide.mdx",
     "slug": "ferret-legal-guide",
     "title": "Is It Legal to Own a Ferret? State-by-State Guide",
@@ -3311,6 +3668,59 @@
       }
     ],
     "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/ferret-tank-setup-guide.mdx",
+    "slug": "ferret-tank-setup-guide",
+    "title": "Ferret Cage Setup (And Why the Cage Is Only Half the Job)",
+    "seoTitle": "Ferret Cage Setup Guide",
+    "excerpt": "A ferret's cage matters, but it's genuinely only part of what this species needs. Ferret-proofing the room they play in is just as essential, and it's the part first-time owners most often underestimate.",
+    "date": "2026-08-03",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Ferret",
+      "Cage Setup",
+      "Enclosure",
+      "Ferret Proofing",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-tank-setup.jpg",
+    "imageAlt": "Multi-level ferret cage with hammocks, ramps, and a litter box",
+    "emoji": "🦡",
+    "lastReviewed": "2026-08-03",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a ferret need?",
+        "a": "At least 30 inches long by 24 inches wide by 48 inches tall for a pair, adding roughly 4 additional square feet of floor space for each ferret beyond that. A double-unit style multi-level cage with solid levels connected by a covered ramp is the most consistently recommended setup among experienced owners and exotic vets. Bar spacing needs to be one inch or less."
+      },
+      {
+        "q": "Do ferrets need a heat lamp?",
+        "a": "No, if anything the opposite is true. Ferrets regulate their body temperature poorly and are genuinely heat-sensitive. Keep the room in the 50 to 75°F range, and treat anything above about 80 to 85°F as a real heatstroke risk. No supplemental heat source is needed indoors."
+      },
+      {
+        "q": "What bedding and litter should I use?",
+        "a": "Washable fabric hammocks and sleep sacks work well for sleeping areas. Use a corner litter box with non-clumping, dust-free litter, paper or pelleted options are good choices. Avoid cedar and pine shavings entirely, both irritate the respiratory system, and skip clumping clay litter as well."
+      },
+      {
+        "q": "Is the cage enough, or does a ferret need more than that?",
+        "a": "The cage is only half the job. Ferrets need several hours of supervised out-of-cage play daily, and the room they play in needs real preparation: blocking every gap larger than about one inch, securing cabinets and low openings, and removing any rubber or foam items they could chew and swallow."
+      },
+      {
+        "q": "Should I set up a cage for one ferret or two?",
+        "a": "Ferrets are genuinely social animals and tend to do better in pairs or small groups than kept alone. It's worth factoring into your setup planning from the start rather than adding a second ferret later as an afterthought."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-cage-midwest-critter-nation-double",
+      "ferret-hammock-niteangel-nap-sack",
+      "litter-box",
+      "small-pet-paper-bedding",
+      "small-mammal-play-pack-seagrass"
+    ]
   },
   {
     "path": "/content/guides/five-beginner-reptiles-overview.mdx",
@@ -4191,6 +4601,257 @@
     ]
   },
   {
+    "path": "/content/guides/hamster-cost-guide.mdx",
+    "slug": "hamster-cost-guide",
+    "title": "How Much Does a Hamster Really Cost?",
+    "seoTitle": "Hamster Cost: Full Price Breakdown",
+    "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
+    "date": "2026-08-06",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hamster",
+      "Cost",
+      "Pet Ownership Cost",
+      "Small Mammal Care",
+      "Care Tips",
+      "Rodent Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-cost.jpg",
+    "imageAlt": "Hamster sitting beside its cage next to a small stack of coins",
+    "emoji": "🌰",
+    "lastReviewed": "2026-08-06",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a hamster itself cost?",
+        "a": "Syrian (golden or teddy bear) hamsters typically run $15 to $25 at pet stores. Dwarf species, Winter White, Campbell's, Roborovski, and Chinese, run roughly $8 to $30, with Roborovski and Chinese often at the higher end. Rescue or adoption is usually $5 to $15."
+      },
+      {
+        "q": "What does a full hamster setup cost upfront?",
+        "a": "Roughly $150 to $350, covering an enclosure, deep bedding, a solid wheel, and smaller extras like a hideout, water bottle, food dish, sand bath, chew items, and a carrier. A humane setup costs meaningfully more than the animal itself, which is exactly backwards from what the cheap sticker price suggests."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a hamster?",
+        "a": "About $15 to $50 a month. Food runs $5 to $12, and bedding plus sand bath refills are the bigger recurring cost at $15 to $30 a month, since deep bedding needs regular replacing to stay clean and dust free."
+      },
+      {
+        "q": "How much does hamster vet care cost?",
+        "a": "A routine exam runs $40 to $80. Emergency care, most urgently for wet tail, can run $100 to $800 depending on severity. Wet tail is a same-day emergency, not a wait-and-see situation."
+      },
+      {
+        "q": "How does a hamster's short lifespan affect the cost math?",
+        "a": "A large veterinary study found a median age at death of just 1.75 years, with a range extending to about 3.65 years. Syrians tend toward the higher end, roughly 2 to 3 years, dwarf species often 1.5 to 2.5 years. That's less time to spread the setup cost across, but also less long-term expense overall."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-cage-prevue-528-universal",
+      "hamster-wheel-niteangel-super-silent-10in",
+      "small-pet-paper-bedding",
+      "small-pet-hideout-igloo",
+      "bird-feeding-dishes-okllen-4pack",
+      "digital-thermometer-hygrometer-combo",
+      "hamster-food-oxbow-garden-select",
+      "chew-guinea-pig-natural-sticks"
+    ]
+  },
+  {
+    "path": "/content/guides/hamster-handling-guide.mdx",
+    "slug": "hamster-handling-guide",
+    "title": "How to Handle a Hamster (And Why the Species Matters More Than You'd Think)",
+    "seoTitle": "How to Handle a Hamster Safely",
+    "excerpt": "Hamster temperament varies more by species than most people expect. A Syrian and a Roborovski, both sold under the same 'hamster' label, can be genuinely different pets to hold.",
+    "date": "2026-08-06",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hamster",
+      "Handling",
+      "Hamster Behavior",
+      "Care Tips",
+      "Small Mammal Care",
+      "Rodent Care"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-handling.jpg",
+    "imageAlt": "Person letting a Syrian hamster walk onto their open hand",
+    "emoji": "🌰",
+    "lastReviewed": "2026-08-06",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Which hamster species is easiest to handle?",
+        "a": "Syrians. They're the largest hamster species, the easiest to tame, and generally the least likely to nip once they've settled in. They're also strictly solitary and must be housed alone."
+      },
+      {
+        "q": "Are dwarf hamsters harder to handle than Syrians?",
+        "a": "Generally yes. Winter White, Campbell's, and Chinese dwarf hamsters are quicker and more easily startled than Syrians, with a real chance of nipping when they feel unhappy or cornered. Roborovski dwarfs take this further, they're the fastest and least suited to regular handling of any commonly kept hamster."
+      },
+      {
+        "q": "Why do hamsters bite when picked up?",
+        "a": "Usually not aggression, a startled, disoriented animal defending itself. Hamsters are nocturnal, and waking one abruptly, especially by reaching in during the day while it's asleep, is one of the most reliable ways to get bitten."
+      },
+      {
+        "q": "What's the correct way to pick up a hamster?",
+        "a": "Scoop from below with both hands cupped rather than grabbing from above, and stay low or over a soft surface. Hamsters are quick and can jump or fall."
+      },
+      {
+        "q": "Can two Syrian hamsters be housed together so they have a friend?",
+        "a": "No. Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hamster-health-issues-guide.mdx",
+    "slug": "hamster-health-issues-guide",
+    "title": "Common Hamster Health Issues (Wet Tail Is the One to Know)",
+    "seoTitle": "Hamster Health Issues: Signs & Causes",
+    "excerpt": "Hamsters are hardy for their size, but their short lifespan means health issues can progress fast. Knowing the warning signs, especially for the single most dangerous one, matters more here than with most pets.",
+    "date": "2026-08-06",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hamster",
+      "Health",
+      "Wet Tail",
+      "Exotic Vet Care",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-health-issues.jpg",
+    "imageAlt": "Hamster being examined by an exotic veterinarian",
+    "emoji": "🌰",
+    "lastReviewed": "2026-08-06",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is wet tail and why is it so dangerous?",
+        "a": "Wet tail (proliferative ileitis) is a bacterial condition tied to stress that a large veterinary study found to be both the most common diagnosed condition and the leading specific cause of death in pet hamsters, present in roughly 7 to 8% of hamsters studied. It hits young Syrians between 3 and 10 weeks old hardest and can be fatal within 24 to 48 hours without treatment, making it a same-day emergency, not a wait-and-see situation."
+      },
+      {
+        "q": "What are the signs of wet tail?",
+        "a": "Watery diarrhea, a wet or matted rear end, lethargy, and a hunched posture. It's typically triggered by stress, transport, overcrowding, poor hygiene, or a sudden diet change."
+      },
+      {
+        "q": "What causes overgrown incisors in hamsters?",
+        "a": "Hamster teeth grow continuously, so a lack of appropriate chew items, or less commonly a genetic or jaw issue, leads to overgrowth. Watch for dropped food, drooling, and weight loss, and see a vet for trimming."
+      },
+      {
+        "q": "Are tumors common in hamsters?",
+        "a": "Yes, especially in older hamsters and particularly females, and they can grow quickly given how fast a hamster's metabolism runs. Tumors are one of the more frequent causes of death in aging hamsters and always warrant a vet visit."
+      },
+      {
+        "q": "Is diabetes a concern for all hamster species?",
+        "a": "It's more common in dwarf species. Watch for excessive drinking and urination alongside weight loss. It's manageable with a vet-guided low-sugar diet, and avoiding sugary treats, honey sticks, and fruit-heavy diets as a matter of course helps prevent it."
+      }
+    ],
+    "relatedProducts": [
+      "small-pet-paper-bedding",
+      "chew-guinea-pig-natural-sticks",
+      "hamster-food-oxbow-garden-select",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/hamster-skink-whitestreefrog-pacmanfrog-overview.mdx",
+    "slug": "hamster-skink-whitestreefrog-pacmanfrog-overview",
+    "title": "Four Pets, Four Different Lessons",
+    "seoTitle": "Hamster, Blue-Tongued Skink, White's Tree Frog & Pacman Frog",
+    "excerpt": "A cheap animal with an expensive setup. A lizard whose whole care plan depends on where it was born. And two frogs that turn out to be near-opposites of each other.",
+    "date": "2026-08-10",
+    "category": "Roundups",
+    "tags": [
+      "Hamster",
+      "Blue-Tongued Skink",
+      "White's Tree Frog",
+      "Pacman Frog",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/hamster-skink-whitestreefrog-pacmanfrog-overview.jpg",
+    "imageAlt": "Hamster, blue-tongued skink, White's tree frog, and Pacman frog shown side by side",
+    "emoji": "🎓",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does a $15 to $30 hamster need a setup that costs so much more?",
+        "a": "Current welfare guidance calls for hundreds of square inches of unbroken floor space and 6 or more inches of bedding depth for burrowing, far more than the small wire starter kits sold alongside most hamsters actually provide. The animal is genuinely cheap. Housing it correctly is where the real budget goes."
+      },
+      {
+        "q": "What's the difference between a Northern and an Indonesian blue-tongued skink?",
+        "a": "They're sold under the same common name but come from opposite ends of the pet trade. Northern (Australian) blue-tongued skinks are almost universally captive-bred, calmer, and pricier. Indonesian skinks are cheaper but usually wild-caught, and commonly arrive carrying parasites that need treating right after purchase, an added cost Northern buyers typically skip."
+      },
+      {
+        "q": "Can White's tree frogs really be handled, unlike most frogs?",
+        "a": "Yes, they're one of the few amphibian species genuinely tolerant of careful, occasional handling, provided you use clean, chemical-free, slightly damp hands or lightly wetted gloves. Amphibian skin is permeable and absorbs whatever it touches, so technique matters more here than the handling itself."
+      },
+      {
+        "q": "Why should you never handle a Pacman frog the way you might a White's tree frog?",
+        "a": "Pacman frogs are ambush predators built to strike reflexively at anything that moves near their face, including fingers, and they genuinely cannot always tell a finger from prey. They're fed with tongs only, never by hand, which is the exact opposite of White's tree frog and a big part of why the general don't-handle-amphibians rule exists in the first place."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hamster-tank-setup-guide.mdx",
+    "slug": "hamster-tank-setup-guide",
+    "title": "Hamster Enclosure Setup: Bigger and Deeper Than the Starter Kit Suggests",
+    "seoTitle": "Hamster Enclosure Setup Guide",
+    "excerpt": "Hamster housing standards have shifted significantly in recent years, and the small wire cages sold as 'hamster starter kits' fall well short of current welfare recommendations. Getting size and bedding depth right is most of what matters here.",
+    "date": "2026-08-06",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hamster",
+      "Tank Setup",
+      "Enclosure",
+      "Bedding",
+      "Care Tips",
+      "Small Mammal Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-tank-setup.jpg",
+    "imageAlt": "Hamster enclosure with deep bedding, a solid exercise wheel, a hideout, and a sand bath",
+    "emoji": "🌰",
+    "lastReviewed": "2026-08-06",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a hamster need?",
+        "a": "Current welfare guidance calls for roughly 700 to 775 square inches of unbroken floor space for a Syrian and around 600 square inches for dwarf species, with more always being better. A 40-gallon breeder tank works well for dwarfs, Syrians do better in something larger still, a 75-gallon tank or equivalent."
+      },
+      {
+        "q": "How deep should hamster bedding be?",
+        "a": "At least 6 inches of dust-free, paper-based bedding or aspen shavings, and this isn't decorative, it's a genuine welfare requirement. Veterinary guidance specifically notes that bedding depths of roughly 15 to 30 inches enhance welfare for Syrian hamsters by supporting natural burrowing behavior. Avoid cedar and pine entirely, the aromatic oils in both irritate the respiratory system."
+      },
+      {
+        "q": "What temperature should a hamster's room be?",
+        "a": "65 to 75°F, kept stable. Below 60°F risks torpor, a hibernation-like state that can be dangerous, above 80°F risks heat stress. No supplemental heat source is needed in a normal indoor environment."
+      },
+      {
+        "q": "Does a hamster need a special wheel?",
+        "a": "A solid-surface wheel with no rungs is essential, wire wheels cause foot injuries. Syrians need at least an 8 to 11 inch wheel, dwarfs 6 to 8 inches. A wheel that's too small forces an unnatural, arched running posture that isn't great for the spine over time."
+      },
+      {
+        "q": "Do hamsters really need a sand bath?",
+        "a": "Yes, a dust-free, non-clumping sand bath is a genuine species essential, not an optional extra. Hamsters use it to manage coat and skin oils the way a bird uses a dust bath, and skipping it isn't a minor omission."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-cage-prevue-528-universal",
+      "hamster-wheel-niteangel-super-silent-10in",
+      "small-pet-paper-bedding",
+      "small-pet-hideout-igloo",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
     "path": "/content/guides/hamster-vs-guinea-pig-guide.mdx",
     "slug": "hamster-vs-guinea-pig-guide",
     "title": "Hamster vs. Guinea Pig: Which Small Pet Is Actually Right for You",
@@ -4432,6 +5093,157 @@
     ]
   },
   {
+    "path": "/content/guides/hognose-snake-cost-guide.mdx",
+    "slug": "hognose-snake-cost-guide",
+    "title": "How Much Does a Western Hognose Snake Really Cost?",
+    "seoTitle": "Hognose Snake Cost: Full Price Breakdown",
+    "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
+    "date": "2026-08-04",
+    "category": "Reptiles",
+    "tags": [
+      "Hognose Snake",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Snake Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hognose-snake-cost.jpg",
+    "imageAlt": "Western hognose snake in a dry, deep-substrate enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-04",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a Western hognose snake itself cost?",
+        "a": "Normal, wild-type animals run $50 to $100. Albino morphs run $150 to $200, anaconda morphs $175 to $500, and rarer combinations, coral or snow morphs among them, can exceed $1,000. Females typically cost $50 to $200 more than males, since they grow larger and are valued for breeding."
+      },
+      {
+        "q": "What does the upfront setup cost for a hognose snake?",
+        "a": "Roughly $200 to $500. That covers a PVC or glass enclosure sized around 2x2x2 feet or 36x18x18 inches, a halogen basking bulb with a thermostat or dimmer, a digital thermometer and hygrometer, deep loose substrate for burrowing, hides, and a water bowl."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a hognose snake?",
+        "a": "Genuinely low, roughly $10 to $25 a month. Frozen and thawed rodents, fed infrequently since hognoses don't eat as often as some other snakes, plus occasional substrate replacement, make up nearly the entire monthly cost."
+      },
+      {
+        "q": "What do vet visits cost for a hognose snake?",
+        "a": "A routine reptile wellness exam runs roughly $50 to $100, with a fecal test around $25 to $50. Radiographs, if needed, run $100 to $250 per view. Treating a respiratory infection or, less commonly, an impaction can run into the hundreds."
+      },
+      {
+        "q": "How long do hognose snakes live, and how does that affect the total cost?",
+        "a": "10 to 15 years is the commonly cited range, with 15 to 20 years genuinely achievable under excellent husbandry. That's a long commitment for a snake that stays small and costs little to maintain day to day, worth keeping in mind even though the monthly numbers look modest."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "under-tank-heat-mat-thermostat-kit",
+      "cork-bark-round-hide",
+      "digital-thermometer-hygrometer-combo",
+      "aspen-shavings-substrate"
+    ]
+  },
+  {
+    "path": "/content/guides/hognose-snake-handling-guide.mdx",
+    "slug": "hognose-snake-handling-guide",
+    "title": "How to Handle a Western Hognose Snake (And Why the Drama Is Mostly Bluff)",
+    "seoTitle": "How to Handle a Hognose Snake Correctly",
+    "excerpt": "Western hognose snakes have built their reputation on a dramatic defensive display that looks alarming and means almost the opposite of what it appears to. Understanding that display is the whole key to handling this species well.",
+    "date": "2026-08-04",
+    "category": "Reptiles",
+    "tags": [
+      "Hognose Snake",
+      "Handling",
+      "Snake Behavior",
+      "Defensive Behavior",
+      "Snake Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hognose-snake-handling.jpg",
+    "imageAlt": "Western hognose snake with its neck flattened into a defensive hood display",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-04",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does my hognose snake flatten its neck and hiss at me?",
+        "a": "It's putting on the 'puff adder' act, inflating its body, flattening its neck into a cobra-like hood, hissing loudly, and making closed-mouth mock strikes that don't actually make contact. This is all bluff. A hognose putting on this full display is doing everything possible to avoid actually biting you."
+      },
+      {
+        "q": "Is it true that hognose snakes play dead?",
+        "a": "Yes. If the hood-and-hiss act doesn't work, some hognoses escalate to rolling onto their back, mouth open, tongue out, sometimes releasing musk. Flip one back over mid-performance and it will often roll itself belly-up again. It's a hardwired defensive response, not a sign of illness."
+      },
+      {
+        "q": "Are Western hognose snakes dangerous to handle?",
+        "a": "No. They're rear-fanged and mildly venomous, but that venom isn't considered medically significant to a healthy person. A documented bite case in the scientific literature caused local swelling and bruising with no wider health effects, and researchers concluded hognoses shouldn't be considered dangerous, just handled thoughtfully."
+      },
+      {
+        "q": "What actually causes a hognose snake to bite?",
+        "a": "Real bites are rare and typically tied to a feeding response, the snake mistaking a hand for food, rather than defense. Wash your hands before handling to remove any prey scent, and avoid handling right after your snake has eaten."
+      },
+      {
+        "q": "How does hognose temperament compare to a corn snake or ball python?",
+        "a": "Care-wise, hognoses are closer to a corn snake, active and suited to a dry, arid setup, than to a ball python. Temperament-wise, a stressed ball python curls into a tight ball, while a stressed hognose puts on the hood-and-hiss show instead, different strategies, similarly harmless."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hognose-snake-health-issues-guide.mdx",
+    "slug": "hognose-snake-health-issues-guide",
+    "title": "Common Western Hognose Snake Health Issues",
+    "seoTitle": "Hognose Snake Health Issues: Signs & Causes",
+    "excerpt": "Western hognoses are hardy snakes, and most of what shows up on this list traces back to substrate, humidity, or feeding habits, all fully within an owner's control.",
+    "date": "2026-08-04",
+    "category": "Reptiles",
+    "tags": [
+      "Hognose Snake",
+      "Health",
+      "Respiratory Infection",
+      "Reptile Illness",
+      "Snake Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hognose-snake-health-issues.jpg",
+    "imageAlt": "Western hognose snake being examined for signs of illness",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-04",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What are the signs of a respiratory infection in a hognose snake?",
+        "a": "Open-mouth breathing, wheezing, drooling or visible mucus, and lethargy. This comes from humidity running too high, temperatures too cool, or poor ventilation, this species genuinely prefers a dry setup, and dampness is more of a problem here than for many other snakes. Always see a vet, this needs antibiotics and won't resolve on its own."
+      },
+      {
+        "q": "Why are hognose snakes prone to impaction?",
+        "a": "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Watch for a failure to pass waste, bloating, and lethargy, and see a vet if it doesn't resolve within a reasonable window."
+      },
+      {
+        "q": "Can a hognose snake become obese?",
+        "a": "Yes, and it's a quieter but genuinely serious risk in captivity, where snakes get less activity than they would in the wild and are sometimes fed too much or too often for their enclosure size. It's a real contributor to shortened lifespans in this species. Match feeding frequency and portion size to your snake's actual adult size, not the schedule that suited it as a fast-growing juvenile."
+      },
+      {
+        "q": "What is scale rot and what causes it in hognose snakes?",
+        "a": "Also called blister disease. It's caused by damp, dirty substrate, and shows up as discolored or blistered belly scales. Prevention is straightforward: keep the substrate dry and clean, which lines up directly with what this species needs anyway. See a vet if it progresses beyond mild discoloration."
+      },
+      {
+        "q": "Do hognose snakes get mites or internal parasites?",
+        "a": "Both are possible, and both are treatable. Periodic fecal checks, especially for a newly acquired snake, catch parasites before they become a bigger issue."
+      }
+    ],
+    "relatedProducts": [
+      "digital-thermometer-hygrometer-combo",
+      "aspen-shavings-substrate",
+      "under-tank-heat-mat-thermostat-kit",
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ]
+  },
+  {
     "path": "/content/guides/hognose-snake-legal-guide.mdx",
     "slug": "hognose-snake-legal-guide",
     "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
@@ -4468,6 +5280,59 @@
       }
     ],
     "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hognose-snake-tank-setup-guide.mdx",
+    "slug": "hognose-snake-tank-setup-guide",
+    "title": "Western Hognose Snake Tank Setup: Dry, Deep, and Built for Burrowing",
+    "seoTitle": "Hognose Snake Tank Setup Guide",
+    "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
+    "date": "2026-08-04",
+    "category": "Reptiles",
+    "tags": [
+      "Hognose Snake",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Snake Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hognose-snake-tank-setup.jpg",
+    "imageAlt": "Western hognose snake enclosure with deep substrate, basking bulb, and hides",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-04",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a Western hognose snake need?",
+        "a": "A useful rule of thumb is roughly one square foot of floor space per foot of snake length. Adult males need a 20-gallon-equivalent minimum (around 30x13x13 inches); females grow noticeably larger and need a 40-gallon-equivalent minimum (36x18x16 inches). A 2x2x2 foot PVC enclosure works well as an adult setup for either sex. Floor space matters more than height, this is a ground-dwelling, burrowing species, not a climber."
+      },
+      {
+        "q": "What temperature does a hognose snake enclosure need?",
+        "a": "A basking area around 90 to 95°F on one end, a cool side at 70 to 75°F, and a night temperature around 75 to 78°F. The commonly recommended heat source is a low-wattage halogen basking bulb over the substrate on a thermostat or dimmer, rather than a heat mat or ceramic heat emitter as the primary source."
+      },
+      {
+        "q": "How humid should a hognose snake enclosure be?",
+        "a": "30 to 50% ambient humidity, genuinely on the dry side compared to many other pet snakes. Don't mist the whole enclosure to raise humidity, instead provide one dedicated humid hide for shedding, and only add moisture there as needed."
+      },
+      {
+        "q": "What substrate should I use for a hognose snake?",
+        "a": "3 to 6 inches of loose, dry, diggable substrate. A soil and sand mix works well, roughly 70% soil-based substrate to 30% reptile-safe sand is a common ratio. This is a fossorial species that genuinely uses substrate depth, not just decoration, so keep it deep and keep it dry."
+      },
+      {
+        "q": "Does a hognose snake need UVB lighting?",
+        "a": "It isn't strictly required by every source, but hognoses are active during the day, unlike many pet snakes, and a low-output linear T5 bulb spanning part of the enclosure is increasingly recommended for this diurnal species, alongside a normal 12-hour light and dark cycle."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "under-tank-heat-mat-thermostat-kit",
+      "aspen-shavings-substrate",
+      "cork-bark-round-hide",
+      "digital-thermometer-hygrometer-combo"
+    ]
   },
   {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
@@ -5316,6 +6181,211 @@
       "bioactive-substrate-mix",
       "cork-bark-round-medium",
       "fine-mist-spray-bottle"
+    ]
+  },
+  {
+    "path": "/content/guides/pacman-frog-cost-guide.mdx",
+    "slug": "pacman-frog-cost-guide",
+    "title": "How Much Does a Pacman Frog Really Cost?",
+    "seoTitle": "Pacman Frog Cost: Full Price Breakdown",
+    "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and genuinely cheap to set up. The real financial risk isn't routine cost, it's a preventable vet bill.",
+    "date": "2026-08-09",
+    "category": "Amphibians",
+    "tags": [
+      "Pacman Frog",
+      "Cost",
+      "Amphibian Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Frog Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pacman-frog-cost.jpg",
+    "imageAlt": "Pacman frog sitting in a simple terrarium setup with coconut fiber substrate",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a Pacman frog itself cost?",
+        "a": "$15 to $100. Standard morphs, green and albino varieties, typically run $20 to $30. Unique morphs like strawberry, mint, patternless, or apricot run higher, roughly $65 to $100."
+      },
+      {
+        "q": "How much does a full Pacman frog setup cost to start?",
+        "a": "Roughly $100 to $225 for the frog and everything it needs, a modest terrarium, heat mat and thermostat, thermometer and hygrometer, low-level lighting, and a hide. This is one of the more affordable full setups among the exotic pets covered on this site, since the species is sedentary and doesn't need much floor space."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a Pacman frog?",
+        "a": "Low. Feeder insects and occasional supplements make up nearly the entire monthly cost, electricity for a small heat mat is minimal, and substrate only needs changing every couple of months."
+      },
+      {
+        "q": "What does a Pacman frog vet visit cost?",
+        "a": "An exotic or amphibian-experienced vet exam commonly runs $50 to $150, with a dedicated exotic emergency fee often starting around $250 at specialty hospitals. Impaction is the condition most likely to require a costly emergency visit for this species."
+      },
+      {
+        "q": "How long do Pacman frogs live, and how does that affect budgeting?",
+        "a": "6 to 10 years is the most commonly cited range, though some sources suggest 10 to 15 years is achievable with excellent care. That's a genuine multi-year commitment for an animal that spends most of its life buried and waiting."
+      }
+    ],
+    "relatedProducts": [
+      "scorpion-enclosure-10gal-invertebrate",
+      "substrate-tarantula-coconut-fiber-peat",
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "feeding-tongs-short-soft-tip-4pack"
+    ]
+  },
+  {
+    "path": "/content/guides/pacman-frog-handling-guide.mdx",
+    "slug": "pacman-frog-handling-guide",
+    "title": "Should You Handle a Pacman Frog? Rarely, and Carefully",
+    "seoTitle": "Pacman Frog Handling: Why It Should Stay Minimal",
+    "excerpt": "Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves near their face. That's exactly why this isn't a species built for regular handling.",
+    "date": "2026-08-09",
+    "category": "Amphibians",
+    "tags": [
+      "Pacman Frog",
+      "Handling",
+      "Bite Risk",
+      "Care Tips",
+      "Frog Care",
+      "Amphibian Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pacman-frog-handling.jpg",
+    "imageAlt": "Pacman frog sitting motionless and buried in substrate, illustrating why handling stays minimal",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you handle a Pacman frog?",
+        "a": "Rarely, and only when necessary. Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves close enough to eat, not out of aggression, but because their entire biology is built around striking at movement. This is fundamentally a display animal, best appreciated for its appearance and dramatic feeding response rather than for interaction."
+      },
+      {
+        "q": "How do you safely pick up a Pacman frog when you have to?",
+        "a": "Keep sessions brief and infrequent. Support the frog gently from underneath, or grasp it gently but firmly around the base of the rear legs, and be ready for a sudden jump, Pacman frogs leap without much regard for the distance or surface below them. Wash your hands thoroughly before and after."
+      },
+      {
+        "q": "Why should you never hand-feed a Pacman frog?",
+        "a": "This is the single most important rule with this species. A Pacman frog genuinely cannot always distinguish a finger from prey, and the bite that follows a feeding mistake is a real, painful injury, not a minor nip. Always feed with forceps, tongs, or by dropping food into a dish."
+      },
+      {
+        "q": "What are the most common first-timer mistakes with Pacman frogs?",
+        "a": "Hand-feeding, by far the most common way people get bitten. Housing two together, Pacman frogs are cannibalistic and will eat a cage-mate given the chance, this species always goes one per enclosure. And handling for enjoyment or bonding, which isn't really what this animal offers or needs."
+      },
+      {
+        "q": "How does handling a Pacman frog compare to handling a White's tree frog?",
+        "a": "They're essentially opposite cases. White's tree frogs are calm, docile, and genuinely tolerant of careful handling, one of the few amphibian species suited to it at all. Pacman frogs are the reason the general don't-handle-amphibians rule exists in the first place."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/pacman-frog-health-issues-guide.mdx",
+    "slug": "pacman-frog-health-issues-guide",
+    "title": "Common Pacman Frog Health Issues and What Causes Them",
+    "seoTitle": "Pacman Frog Health Issues: Signs & Causes",
+    "excerpt": "Pacman frogs are hardy, but obesity and impaction, both directly tied to how they're fed and housed, account for the vast majority of health issues in this species.",
+    "date": "2026-08-09",
+    "category": "Amphibians",
+    "tags": [
+      "Pacman Frog",
+      "Health",
+      "Impaction",
+      "Obesity",
+      "Care Tips",
+      "Frog Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pacman-frog-health-issues.jpg",
+    "imageAlt": "Pacman frog on coco fiber substrate, the substrate choice directly tied to impaction risk",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common health issue in Pacman frogs?",
+        "a": "Obesity. Pacman frogs are, in a very real sense, programmed to eat whenever the opportunity presents itself, and they don't self-regulate the way some other pets do. Adults should eat roughly once a week, not on the more frequent schedule appropriate for a growing juvenile. Overfeeding, especially with fatty prey like pinky mice as a dietary staple, is the direct cause."
+      },
+      {
+        "q": "What causes impaction in Pacman frogs, and is it serious?",
+        "a": "Yes, it can be fatal. Pacman frogs strike explosively at prey and frequently ingest whatever is on the ground around it, loose substrate, sand-coated feeders, or prey that's simply too large to pass safely. Signs include a hard lump in the belly, bloating, and refusal to move. Mild cases sometimes resolve with warm soaks, but a blockage that doesn't pass needs a vet."
+      },
+      {
+        "q": "How do you prevent impaction in a Pacman frog?",
+        "a": "Use fine coco fiber rather than gravel or coarse bark, and feed in a separate dish rather than directly on the substrate. Both meaningfully reduce the chance of accidental ingestion, which is the direct cause of this species' most dangerous health problem."
+      },
+      {
+        "q": "What does metabolic bone disease look like in a Pacman frog?",
+        "a": "A droopy jaw, bowed legs, and twitching, caused by missing calcium supplementation or UVB. This needs a vet, and it's fully preventable with proper supplementation from the start."
+      },
+      {
+        "q": "What are the signs of red-leg or a bacterial infection in a Pacman frog?",
+        "a": "Red spots on the belly or thighs, cloudy eyes, and lethargy. This is an emergency, quarantine and get to a vet promptly. It's usually tied to a dirty enclosure, dirty water, or general stress, and shows up more often in new or young frogs whose immune systems haven't fully settled."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-tarantula-coconut-fiber-peat",
+      "feeding-tongs-short-soft-tip-4pack",
+      "calcium-repashy-plus-6oz",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/pacman-frog-tank-setup-guide.mdx",
+    "slug": "pacman-frog-tank-setup-guide",
+    "title": "Pacman Frog Tank Setup: Small Footprint, One Big Rule About Substrate",
+    "seoTitle": "Pacman Frog Tank Setup Guide",
+    "excerpt": "Pacman frogs are genuinely easy to house correctly, they're sedentary burrowers that don't need much space. The setup mistakes that actually cause problems for this species are specific and avoidable.",
+    "date": "2026-08-09",
+    "category": "Amphibians",
+    "tags": [
+      "Pacman Frog",
+      "Tank Setup",
+      "Enclosure",
+      "Substrate",
+      "Care Tips",
+      "Frog Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pacman-frog-tank-setup.jpg",
+    "imageAlt": "Pacman frog terrarium with deep coco fiber substrate, shallow water dish, and simple hide",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a Pacman frog need?",
+        "a": "A 10 to 20 gallon terrarium works well for an adult, since this species spends the overwhelming majority of its time buried and motionless rather than moving around. Some specialist sources recommend a 24x18x18 inch enclosure as ideal, but floor space matters far more than height here, this isn't a climbing species. Always house one frog per enclosure, Pacman frogs are cannibalistic."
+      },
+      {
+        "q": "What temperature and humidity does a Pacman frog need?",
+        "a": "Daytime around 75 to 85°F, with a slightly warmer basking area near 83°F, dropping to 65 to 75°F at night. Humidity should stay in the 60 to 80% range, maintained through moisture-retentive substrate and daily misting."
+      },
+      {
+        "q": "What substrate is safe for a Pacman frog?",
+        "a": "3 to 4 inches of coco fiber or coco husk, kept moist enough for burrowing. Avoid gravel, rocks, bark chips, and charcoal entirely, they're abrasive to a Pacman frog's delicate skin and a real cause of impaction, since this species swallows whatever's nearby when it strikes at prey."
+      },
+      {
+        "q": "Can you put a heat mat under a Pacman frog's tank?",
+        "a": "No, never place a heat mat under the tank. Pacman frogs burrow to the substrate floor, and a mat positioned underneath risks burning a frog that's buried directly on top of it. Use a side-mounted under-tank heat mat on a thermostat instead, or a low-wattage overhead bulb."
+      },
+      {
+        "q": "Does a Pacman frog need UVB lighting?",
+        "a": "No special lighting is required. A standard 12-hour light, 12-hour dark cycle using a basic LED works fine. Low-level UVB is optional and can support vitamin D synthesis, but isn't necessary if the diet is properly supplemented."
+      }
+    ],
+    "relatedProducts": [
+      "scorpion-enclosure-10gal-invertebrate",
+      "substrate-tarantula-coconut-fiber-peat",
+      "under-tank-heat-mat-thermostat-kit",
+      "digital-thermometer-hygrometer-combo",
+      "shallow-water-dish"
     ]
   },
   {
@@ -6303,6 +7373,460 @@
       "uvb-arcadia-forest-6",
       "uvb-arcadia-desert-12",
       "uvb-arcadia-dragon-14"
+    ]
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-cost-guide.mdx",
+    "slug": "veiled-chameleon-cost-guide",
+    "title": "How Much Does a Veiled Chameleon Really Cost?",
+    "seoTitle": "Veiled Chameleon Cost: Full Price Breakdown",
+    "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the real cost shows up.",
+    "date": "2026-08-02",
+    "category": "Reptiles",
+    "tags": [
+      "Veiled Chameleon",
+      "Cost",
+      "Pet Ownership Cost",
+      "Reptile Care",
+      "Care Tips",
+      "Chameleon Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-cost.jpg",
+    "imageAlt": "Veiled chameleon perched in a fully planted screen enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a veiled chameleon itself cost?",
+        "a": "$20 to $100 for a captive-bred juvenile. Unlike geckos or ball pythons, veiled chameleons don't have a large morph market, hypomelanistic and hypermelanistic color mutations exist and cost more, but selection is genuinely limited. Females sometimes cost less than males."
+      },
+      {
+        "q": "What does the upfront setup cost?",
+        "a": "Roughly $400 to $800 for a tall screen or hybrid enclosure sized for an adult, T5 HO UVB fixture, basking bulb, a misting system or dripper, live plants, and drainage. Experienced keepers commonly report around $500 for a complete single-animal setup, with elaborate builds reaching $1,200 or more."
+      },
+      {
+        "q": "What are the ongoing monthly costs?",
+        "a": "Roughly $30 to $60 a month, covering feeder insects like crickets, dubia roaches, and silkworms, calcium and multivitamin supplements, and occasional plant or substrate replacement."
+      },
+      {
+        "q": "How much should I budget for vet care?",
+        "a": "A routine exotic exam runs $50 to $100, with a fecal test adding $25 to $50. Egg-binding in females is the real emergency risk, medical management runs $200 to $400, and surgery can run $800 to $1,500 or more."
+      },
+      {
+        "q": "Do males and females cost the same to keep long term?",
+        "a": "No, and this changes the whole budgeting picture. Males commonly live 6 to 8 years, while females typically live just 2 to 6 years, often not past 2 to 3, due to the physical toll of producing egg clutches, which happens even without a male present. Spaying can meaningfully extend a female's life."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-zoo-med-reptibreeze-24x24x48",
+      "uvb-arcadia-forest-6",
+      "basking-bulb-75w",
+      "automatic-misting-system-fogger",
+      "live-terrarium-plants",
+      "calcium-repashy-plus-lod-3oz"
+    ]
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-ferret-hognose-overview.mdx",
+    "slug": "veiled-chameleon-ferret-hognose-overview",
+    "title": "Three Pets Whose Drama Isn't the Real Story",
+    "seoTitle": "Veiled Chameleon, Ferret & Hognose Snake Compared",
+    "excerpt": "A hissing chameleon, a nipping ferret, and a cobra-hooding snake all look like the thing to worry about. In every case, the real risk is something quieter.",
+    "date": "2026-08-05",
+    "category": "Roundups",
+    "tags": [
+      "Veiled Chameleon",
+      "Ferret",
+      "Hognose Snake",
+      "Pet Roundup",
+      "Beginner Pets",
+      "Care Tips"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/veiled-chameleon-ferret-hognose-overview.jpg",
+    "imageAlt": "Veiled chameleon, ferret, and Western hognose snake shown side by side",
+    "emoji": "🎪",
+    "lastReviewed": "2026-08-05",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a veiled chameleon's hissing and gaping a sign of aggression?",
+        "a": "No, it's fear, not aggression. Veiled chameleons are solitary, territorial animals that display defensively when they feel threatened, hissing, gaping, inflating the body, and darkening color are all stress signals. Treating the display as a warning to back off, rather than a challenge, gets far better results than pushing through it."
+      },
+      {
+        "q": "Why do ferrets nip, and does it mean they're aggressive?",
+        "a": "Almost never. Nipping is a natural ferret behavior most common in young ferrets, especially males around 3 to 4 months old, and it's usually play, teething, fear, or overstimulation rather than real aggression. Ferret skin is tougher than human skin, so a kit genuinely doesn't understand that a bite comfortable to another ferret is too hard for a person."
+      },
+      {
+        "q": "Are hognose snakes actually dangerous?",
+        "a": "No. Their entire defensive act, hooding, hissing, mock striking, and even playing dead, is bluff meant to avoid a confrontation, not start one. They are rear-fanged and mildly venomous, but that venom is not considered medically significant to a healthy person, and genuine aggression in this species is close to unheard of."
+      },
+      {
+        "q": "What's the real risk with each of these three pets, if it's not the drama?",
+        "a": "A female veiled chameleon's much shorter lifespan from the toll of laying eggs, a ferret's high rate of costly endocrine disease starting around age 2 to 3, and, for a hognose, nothing especially dramatic at all, it's genuinely one of the lower-drama snakes to actually own once you understand the bluff."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-handling-guide.mdx",
+    "slug": "veiled-chameleon-handling-guide",
+    "title": "How to Handle a Veiled Chameleon (Carefully, and Not Often)",
+    "seoTitle": "How to Handle a Veiled Chameleon Correctly",
+    "excerpt": "Veiled chameleons are solitary, territorial display animals, and this is genuinely one of the less handleable pet reptiles. Knowing that upfront saves both of you a lot of stress.",
+    "date": "2026-08-02",
+    "category": "Reptiles",
+    "tags": [
+      "Veiled Chameleon",
+      "Handling",
+      "Reptile Behavior",
+      "Care Tips",
+      "Chameleon Care",
+      "Reptile Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-handling.jpg",
+    "imageAlt": "Veiled chameleon calmly climbing onto an open, upturned palm",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do veiled chameleons like to be handled?",
+        "a": "Generally, no. Veiled chameleons are solitary and territorial, and exotic vets are direct that they don't tolerate handling well, sudden changes to their environment cause real stress. Many are cage aggressive, displaying defensively when you reach into the enclosure even if they calm down once actually out."
+      },
+      {
+        "q": "What do hissing and gaping mean?",
+        "a": "Hissing, gaping (mouth held open), inflating or flattening the body, and darkening color are stress and defense signals, not necessarily anger. A darkened, gaping chameleon is frightened, and treating the display as a warning to back off, not a challenge, gets better results. Biting happens when a chameleon feels genuinely provoked."
+      },
+      {
+        "q": "What's the correct way to handle a veiled chameleon?",
+        "a": "Approach slowly from below with your palm open and let the chameleon choose to climb onto your hand rather than grabbing from above, which reads as a predator attack. Hand-feeding is a genuinely effective way to build tolerance over time, and sessions should stay infrequent."
+      },
+      {
+        "q": "Are veiled chameleons more defensive than other pet chameleons?",
+        "a": "Yes. Veiled chameleons are widely considered more territorial and defensive than panther or Jackson's chameleons, which keepers describe as somewhat more tolerant of occasional handling. Veileds make up for it by being one of the hardiest, most beginner-friendly chameleon species on the husbandry side."
+      },
+      {
+        "q": "What's the most common first-timer mistake?",
+        "a": "Grabbing from above instead of offering a hand from below or the side, handling frequently just because the chameleon looks interesting to hold, and misreading a stressed, gaping animal as angry rather than scared. Chameleons are prey animals that mask sickness well, so subtle changes matter."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-health-issues-guide.mdx",
+    "slug": "veiled-chameleon-health-issues-guide",
+    "title": "Common Veiled Chameleon Health Issues and What Causes Them",
+    "seoTitle": "Veiled Chameleon Health Issues: Signs & Causes",
+    "excerpt": "Veiled chameleons are hardy by chameleon standards, but a handful of conditions come up often enough, and one is specific to females and genuinely urgent, that every owner should recognize the signs.",
+    "date": "2026-08-02",
+    "category": "Reptiles",
+    "tags": [
+      "Veiled Chameleon",
+      "Health",
+      "Egg Binding",
+      "Reptile Illness",
+      "Care Tips",
+      "Chameleon Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-health-issues.jpg",
+    "imageAlt": "Veiled chameleon at an exotic vet exam being checked for early signs of illness",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the first sign of metabolic bone disease in a veiled chameleon?",
+        "a": "A soft or bendable 'rubber jaw' is often the earliest sign. Advanced signs include curved or broken limbs, tremors, and an inability to grip branches or properly shoot the tongue to catch food. It comes from inadequate UVB and/or a calcium and vitamin D3 imbalance, and damage caught early is only partly reversible."
+      },
+      {
+        "q": "What is egg-binding and why is it an emergency?",
+        "a": "Egg-binding (dystocia) is when a female can't pass her egg clutch. Females produce clutches whether or not a male is present, so every female owner needs to recognize the signs: restlessness, digging without producing eggs, straining, lethargy, and swelling. It can kill within 24 hours, and severe cases often require surgery."
+      },
+      {
+        "q": "What do sky-blue spots on a female's flanks mean?",
+        "a": "They're a normal sign after a female has successfully laid her eggs, worth knowing so you don't mistake healthy post-laying color for illness."
+      },
+      {
+        "q": "What are the signs of eye problems or respiratory infection?",
+        "a": "Eye problems, the second most commonly reported issue in this species, range from minor discharge to turret abscesses and infections, often linked to vitamin A deficiency. Respiratory infection shows up as wheezing, gaping, and visible mucus, usually from temperatures running too cool or humidity that's off. Both need a vet."
+      },
+      {
+        "q": "Why is dehydration such a serious risk for veiled chameleons?",
+        "a": "Veiled chameleons only recognize moving water droplets as drinkable, they don't reliably use a standing water dish, so inadequate misting leads directly to chronic dehydration and, over time, kidney disease, a leading cause of death in this species."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-forest-6",
+      "calcium-repashy-plus-lod-3oz",
+      "automatic-misting-system-fogger",
+      "basking-bulb-75w"
+    ]
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-tank-setup-guide.mdx",
+    "slug": "veiled-chameleon-tank-setup-guide",
+    "title": "Veiled Chameleon Tank Setup: The Dripper Isn't Optional",
+    "seoTitle": "Veiled Chameleon Tank Setup Guide",
+    "excerpt": "Veiled chameleon husbandry has a reputation for being demanding, and it earns that honestly. Get the enclosure, misting, and lighting right, and this is a genuinely rewarding species to keep.",
+    "date": "2026-08-02",
+    "category": "Reptiles",
+    "tags": [
+      "Veiled Chameleon",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Chameleon Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-tank-setup.jpg",
+    "imageAlt": "Veiled chameleon enclosure with live plants, dripper system, and linear UVB fixture",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult veiled chameleon need?",
+        "a": "2 feet by 2 feet by 4 feet (24x24x48 inches) is the practical minimum, bigger, 4x2x4 feet, is better if you have the space. Veiled chameleons reach adult size in just 6 to 8 months, so plan and budget for the adult enclosure from the start rather than treating it as a future upgrade."
+      },
+      {
+        "q": "Why can't I just use a water dish?",
+        "a": "Veiled chameleons do not recognize standing water as something to drink. They only respond to moving droplets on leaves and branches, so a water dish alone will not keep your chameleon hydrated no matter how often you refill it. A dripper or misting system is genuinely essential, not an accessory."
+      },
+      {
+        "q": "What temperature and humidity does a veiled chameleon need?",
+        "a": "A basking spot around 85°F for females and juveniles, up to 90 to 95°F for adult males, with ambient temperature 72 to 80°F and a beneficial night drop to 55 to 65°F. Humidity is moderate, raised through morning and evening misting plus a dripper or overnight cool-mist humidifier using distilled water."
+      },
+      {
+        "q": "What UVB setup does this species need?",
+        "a": "A linear T5 HO UVB tube (ReptiSun 5.0 or Arcadia 6% are commonly recommended), spanning the enclosure, with the basking branch roughly 6 to 9 inches below it. Replace the bulb every 6 to 12 months regardless of whether it still visibly lights up, and skip compact or coil-style UVB bulbs entirely."
+      },
+      {
+        "q": "Do I need an egg-laying bin even without a male present?",
+        "a": "Yes. Even a female with no male present will produce eggs, and without somewhere appropriate to lay them, she's at real risk of egg-binding. Keep a moist sand or soil bin, roughly 5 to 10 inches deep, permanently available, not something you set up only once she shows signs of needing it."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-zoo-med-reptibreeze-24x24x48",
+      "uvb-arcadia-forest-6",
+      "basking-bulb-75w",
+      "automatic-misting-system-fogger",
+      "live-terrarium-plants"
+    ]
+  },
+  {
+    "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
+    "slug": "whites-tree-frog-cost-guide",
+    "title": "How Much Does a White's Tree Frog Really Cost?",
+    "seoTitle": "White's Tree Frog Cost: Full Price Breakdown",
+    "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
+    "date": "2026-08-08",
+    "category": "Amphibians",
+    "tags": [
+      "White's Tree Frog",
+      "Cost",
+      "Amphibian Care",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Frog Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/whites-tree-frog-cost.jpg",
+    "imageAlt": "White's tree frog perched on a branch inside a fully equipped arboreal terrarium",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a White's tree frog itself cost?",
+        "a": "$20 to $60 for a standard animal, with blue and other designer color morphs commanding a bit more. Captive-bred animals are widely available and are the better choice over wild-caught."
+      },
+      {
+        "q": "What does a full White's tree frog setup cost upfront?",
+        "a": "Roughly $200 to $400 or more, covering an 18x18x24 inch vertical terrarium, a heat source, a low-level UVB fixture, substrate, and climbing branches and decor."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a White's tree frog?",
+        "a": "Roughly $20 to $60 a month, covering feeder insects, supplements, substrate, and modest electricity. This isn't a species with heavy recurring expenses once the enclosure is built."
+      },
+      {
+        "q": "How much does veterinary care cost for a White's tree frog?",
+        "a": "An exotic or amphibian-experienced vet exam commonly runs $50 to $150. A dedicated exotic emergency visit fee alone often starts around $250 at specialty hospitals, before any treatment. Amphibian veterinary care has real limitations, so correct husbandry does more work here than treatment ever will."
+      },
+      {
+        "q": "How long do White's tree frogs live, and how does that affect budgeting?",
+        "a": "The Smithsonian's National Zoo lists an average lifespan of about 16 years, with one individual recorded living 21 years in human care. Other sources cite a slightly more conservative 10 to 15-plus years. Either way, budget for well over a decade of ongoing care, not just the first year's setup."
+      }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "uvb-zoo-med-5-0-t5-ho-14in-hood",
+      "digital-thermometer-hygrometer-combo",
+      "calcium-repashy-plus-6oz",
+      "water-conditioner"
+    ]
+  },
+  {
+    "path": "/content/guides/whites-tree-frog-handling-guide.mdx",
+    "slug": "whites-tree-frog-handling-guide",
+    "title": "How to Handle a White's Tree Frog",
+    "seoTitle": "How to Handle a White's Tree Frog Safely",
+    "excerpt": "White's tree frogs are unusually handleable for an amphibian, docile, slow-moving, and known for their calm, almost smiling expression. But the risk here runs in a direction people don't expect: it's not the frog hurting you, it's you accidentally hurting the frog.",
+    "date": "2026-08-08",
+    "category": "Amphibians",
+    "tags": [
+      "White's Tree Frog",
+      "Handling",
+      "Amphibian Care",
+      "Frog Behavior",
+      "Care Tips",
+      "Salmonella"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/whites-tree-frog-handling.jpg",
+    "imageAlt": "Person gently holding a White's tree frog with clean, water-rinsed hands",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it safe to handle a White's tree frog?",
+        "a": "Yes, more so than the great majority of frog and toad species kept as pets. They're docile, slow-moving, and genuinely tolerate handling well once they're used to it. The real risk isn't the frog hurting you, it's accidentally harming the frog through chemical exposure on your hands."
+      },
+      {
+        "q": "Why can't I just wash my hands with soap before handling?",
+        "a": "Amphibian skin is permeable and absorbs whatever it comes into contact with, including oils, lotions, and soap residue. This is a genuine route for harm, not a minor sensitivity. Wash with plain water only, or wear powder-free nitrile gloves lightly wetted with dechlorinated water."
+      },
+      {
+        "q": "How often and how long can I handle a White's tree frog?",
+        "a": "Keep sessions to roughly 5 to 15 minutes, and don't handle more than about twice a week. Wash your hands again afterward, since amphibians can carry Salmonella just like reptiles."
+      },
+      {
+        "q": "What's the biggest first-timer mistake with this species?",
+        "a": "Handling with lotioned or chemical-exposed hands, by far the most common and most damaging mistake. If you've recently used lotion, cleaning chemicals, or had a manicure, wetted gloves are the safer option regardless of how well you've washed."
+      },
+      {
+        "q": "Are all pet frogs okay to handle like this?",
+        "a": "No, and White's tree frog is very much the exception. Pacman frogs, another amphibian covered on this site, are the opposite case entirely: an ambush predator that strikes reflexively at anything finger-shaped and should never be handled by hand."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/whites-tree-frog-health-issues-guide.mdx",
+    "slug": "whites-tree-frog-health-issues-guide",
+    "title": "Common White's Tree Frog Health Issues (Obesity Is the Signature Risk)",
+    "seoTitle": "White's Tree Frog Health Issues: Signs & Causes",
+    "excerpt": "White's tree frogs are hardy for an amphibian, but they have one health issue that shows up more in this species than almost any other pet frog, driven by the same enthusiastic-eater trait that makes them so satisfying to feed.",
+    "date": "2026-08-08",
+    "category": "Amphibians",
+    "tags": [
+      "White's Tree Frog",
+      "Health",
+      "Obesity",
+      "Amphibian Illness",
+      "Chytrid Fungus",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/whites-tree-frog-health-issues.jpg",
+    "imageAlt": "White's tree frog with visible fat deposits being examined for signs of obesity",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why do White's tree frogs get obese so often?",
+        "a": "It's a genuinely notorious tendency in the species, driven by an enthusiastic-eater trait combined with overfeeding, especially fatty feeders like waxworms and superworms. Fat deposits build up visibly over the tympanum and in the armpit area, and sustained obesity raises the risk of hepatic lipidosis, a serious fatty liver condition."
+      },
+      {
+        "q": "How do I prevent obesity in a White's tree frog?",
+        "a": "Limit high-fat feeders like waxworms and superworms to once a week at most, and keep adult feeding to roughly 3 to 4 appropriately sized insects, 2 to 3 times a week, rather than free-feeding. Advanced cases with liver involvement need a vet."
+      },
+      {
+        "q": "What is chytridiomycosis and why is it an emergency?",
+        "a": "A fungal disease that spreads through introduced or contaminated animals and water, causing lethargy, weight loss, and, without treatment, death. Quarantine any new or suspect animal immediately and get to a vet right away, since treatment options are limited once it takes hold."
+      },
+      {
+        "q": "What causes red-leg syndrome?",
+        "a": "A bacterial infection, typically Aeromonas, showing up as redness on the belly and legs, lethargy, and loss of appetite. It's usually traced back to a dirty or poorly ventilated enclosure, exactly the kind of environment that's fully within an owner's control, and it needs a vet."
+      },
+      {
+        "q": "What's the pattern behind most White's tree frog health problems?",
+        "a": "Overfeeding, especially with fatty feeder insects, is directly responsible for the obesity that defines this species' most common health problem. A dirty or under-ventilated enclosure leads to both red-leg and general bacterial infections. Skipping quarantine on a new frog is how chytrid fungus gets introduced. All three are entirely preventable."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-zoo-med-5-0-t5-ho-14in-hood",
+      "calcium-repashy-plus-6oz",
+      "water-conditioner",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/whites-tree-frog-tank-setup-guide.mdx",
+    "slug": "whites-tree-frog-tank-setup-guide",
+    "title": "White's Tree Frog Tank Setup: What Your Frog Actually Needs",
+    "seoTitle": "White's Tree Frog Tank Setup Guide",
+    "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
+    "date": "2026-08-08",
+    "category": "Amphibians",
+    "tags": [
+      "White's Tree Frog",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity",
+      "Care Tips",
+      "Amphibian Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/whites-tree-frog-tank-setup.jpg",
+    "imageAlt": "White's tree frog enclosure with climbing branches, broad leaves, and a misted glass front",
+    "emoji": "🐸",
+    "lastReviewed": "2026-08-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a White's tree frog need?",
+        "a": "18 inches long by 18 inches wide by 24 inches tall is the standard minimum for one adult, sized for a vertical, arboreal species. A 20-gallon-equivalent volume is comfortable for a single frog, and 24x18x24 inches works well for a small group of two to four."
+      },
+      {
+        "q": "What temperature range does a White's tree frog need?",
+        "a": "A gradient with the cool side around 70 to 75°F, a basking area around 80 to 85°F, dropping into the mid-70s at night. A low-wattage bulb or a side-mounted heat mat provides the warmth, this species doesn't need intense heat, just a gentle, reliable gradient."
+      },
+      {
+        "q": "What humidity level is actually correct for a White's tree frog?",
+        "a": "A baseline around 50 to 60%, with misting spikes up to 70 to 80% once or twice daily, then letting it drop back down between mistings. Constant, unbroken high humidity is directly linked to bacterial and red-leg issues, so resist the instinct to keep things perpetually damp."
+      },
+      {
+        "q": "Does a White's tree frog need UVB lighting?",
+        "a": "Low-level UVB is recommended. This species survives without it but genuinely does better with it. A low-output T5 bulb in the 5 to 7% range works well, positioned so the basking branch sits at least 6 inches below the fixture, and replaced every 9 to 12 months regardless of whether it still visibly lights up."
+      },
+      {
+        "q": "What substrate is safe for a White's tree frog?",
+        "a": "Coarse orchid bark, coco fiber or coco husk, or a bioactive soil mix, kept lightly moist rather than soggy. Avoid fine, loose substrate that's easy to accidentally ingest during feeding."
+      }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "artificial-terrarium-plants",
+      "cork-bark-round-medium",
+      "uvb-zoo-med-5-0-t5-ho-14in-hood",
+      "water-conditioner"
     ]
   },
   {
