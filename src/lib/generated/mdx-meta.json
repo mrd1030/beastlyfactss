@@ -4192,6 +4192,59 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/golden-retriever-feeding-guide.mdx",
+    "slug": "golden-retriever-feeding-guide",
+    "title": "Golden Retriever Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Golden Retriever Feeding Guide: Schedule and Diet",
+    "excerpt": "Goldens are famously food-motivated, which makes portion control and slow feeding matter more than the schedule itself. Here's a real feeding routine and how to read a Golden that's actually off food.",
+    "date": "2026-07-26",
+    "category": "Dogs",
+    "tags": [
+      "Golden Retriever",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Dog Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Bloat"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/golden-retriever-feeding.jpg",
+    "imageAlt": "Golden Retriever eating from a slow-feeder bowl of kibble",
+    "emoji": "🐶",
+    "lastReviewed": "2026-07-26",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my Golden Retriever?",
+        "a": "Puppies under a year old do best on 3 to 4 smaller meals a day on a large-breed puppy formula, that formula matters specifically for Goldens since it's built to slow growth and protect developing joints. Adults move to twice-daily feeding, morning and evening, on a large-breed adult formula."
+      },
+      {
+        "q": "How much food should I actually feed?",
+        "a": "There's no single universal cup-per-day figure, every source defers to a vet or a kitchen scale based on your dog's individual weight, activity level, and body condition rather than the bag's generic guidelines. Check for a visible waist and palpable ribs monthly, Goldens are genuinely prone to weight gain."
+      },
+      {
+        "q": "Is it true Golden Retrievers are just wired to want food more?",
+        "a": "There's real data behind the reputation. A large 2025 survey of over 50,000 dogs found sporting breeds like Goldens and Labradors score highest for food motivation. A specific gene mutation that hard-wires constant hunger has been confirmed in Labradors and Flat-Coated Retrievers, but not, as of the research available, in Golden Retrievers specifically, so the food-obsessed reputation is real, the exact genetic cause in Goldens isn't fully pinned down yet."
+      },
+      {
+        "q": "Why has my Golden Retriever stopped eating?",
+        "a": "Most commonly it's something ordinary, illness or fever, a medication side effect, stress from a move or an absent owner, or a food that's gone stale or just isn't preferred anymore. It becomes a real concern when it's paired with vomiting, diarrhea, lethargy, or oral pain that makes chewing difficult."
+      },
+      {
+        "q": "Are Golden Retrievers at high risk for bloat?",
+        "a": "Not as high as giant breeds like Great Danes or Saint Bernards, which sit at the top of documented bloat-risk rankings. That said, the general precautions still matter for any deep-chested dog, avoid one large fast meal, use a slow-feeder bowl, and skip vigorous exercise right after eating."
+      },
+      {
+        "q": "How long can a dog safely go without eating?",
+        "a": "One sourced guideline puts it at roughly two days if there are no other symptoms, but seek care within 8 to 12 hours if refusal is paired with vomiting or diarrhea. Any marked, sustained change in eating habits is worth a vet visit regardless of the exact hour count."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/goldfish-cost-guide.mdx",
     "slug": "goldfish-cost-guide",
     "title": "How Much Does a Goldfish Really Cost?",
@@ -4238,6 +4291,61 @@
       "betta-substrate-caribsea-freshwater-sand",
       "water-conditioner",
       "water-test-kit"
+    ]
+  },
+  {
+    "path": "/content/guides/goldfish-feeding-guide.mdx",
+    "slug": "goldfish-feeding-guide",
+    "title": "Goldfish Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Goldfish Feeding Guide: Schedule and Diet",
+    "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to actually feed, and how to read appetite loss.",
+    "date": "2026-07-26",
+    "category": "Aquatic Life",
+    "tags": [
+      "Goldfish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Pond Fish"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-feeding.jpg",
+    "imageAlt": "Fancy goldfish eating a sinking pellet near the bottom of a well-planted tank",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-26",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my goldfish?",
+        "a": "Sources genuinely disagree, one veterinary charity's own goldfish page says once a day, while its general fish page says two to three times, and other sources describe one to two times daily as standard. Treat one to two small meals a day as the safe range rather than a fixed rule, and split into two feedings if you can, goldfish have no stomach to store a large single meal in."
+      },
+      {
+        "q": "How much should I feed at each meal?",
+        "a": "Less than it looks like you need. The consistent principle across sources, even though the exact minute count varies, is only what's eaten in roughly 30 seconds to 2 minutes. Remove anything left over, uneaten food is one of the fastest ways to crash water quality."
+      },
+      {
+        "q": "Should I feed pellets or flakes?",
+        "a": "Pellets, ideally sinking ones for fancy round-bodied varieties. Flakes lose a large share of certain vitamins within about 30 seconds of hitting the water, and floating food makes round-bodied goldfish prone to gulping air at the surface, which is linked to swim bladder trouble."
+      },
+      {
+        "q": "Do I need to stop feeding my pond goldfish in winter?",
+        "a": "Yes, scale it down with water temperature. A normal diet is fine above roughly 50°F, switch to a reduced, more digestible formula between about 39 and 50°F, and stop feeding entirely once it drops further, the fish's metabolism slows into dormancy and uneaten food just fouls the water."
+      },
+      {
+        "q": "Why has my goldfish stopped eating?",
+        "a": "Water quality problems are the single most commonly cited cause, ammonia or nitrite spikes especially in a newer tank. Overfeeding-driven constipation, stress from tank mates or a small enclosure, and early disease are the other common culprits. Seasonal pond dormancy and spawning behavior can also reduce appetite normally."
+      },
+      {
+        "q": "How long can a goldfish survive without eating?",
+        "a": "A healthy adult in a mature, well-maintained tank can typically go up to about a week to 10 days without real concern, and outright survivability is commonly cited around 1 to 2 weeks thanks to a slow cold-water metabolism, though that's an upper bound, not a target. The bigger trigger to actually worry is 24 to 48 hours of refusal combined with lethargy, clamped fins, pineconing scales, or abnormal floating or sinking."
+      }
+    ],
+    "relatedProducts": [
+      "goldfish-pellets-hikari-gold"
     ]
   },
   {
@@ -4516,6 +4624,62 @@
       "timothy-hay-small-pets",
       "small-pet-hideout-igloo",
       "small-pet-paper-bedding"
+    ]
+  },
+  {
+    "path": "/content/guides/guinea-pig-feeding-guide.mdx",
+    "slug": "guinea-pig-feeding-guide",
+    "title": "Guinea Pig Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Guinea Pig Feeding Guide: Schedule and Diet",
+    "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not a wait-and-see approach.",
+    "date": "2026-07-26",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Guinea Pig",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Vitamin C"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-feeding.jpg",
+    "imageAlt": "Guinea pig eating fresh hay and bell pepper next to a water bottle",
+    "emoji": "🐹",
+    "lastReviewed": "2026-07-26",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much hay does a guinea pig actually need?",
+        "a": "Unlimited, always available. Sources put hay at 70 to 80% of the diet, and it's not just filler, the constant chewing wears down teeth that never stop growing, and the fiber keeps digestion moving. A guinea pig should never run out."
+      },
+      {
+        "q": "Do guinea pigs really need vitamin C every single day?",
+        "a": "Yes, without exception. Guinea pigs can't synthesize or store vitamin C, so a daily source is mandatory, fortified pellets, vitamin C rich vegetables, and often a direct supplement. It should never go in the water bottle, it degrades fast in water and can make a picky drinker drink less."
+      },
+      {
+        "q": "Can adult guinea pigs eat alfalfa hay?",
+        "a": "Generally no, that's for babies, juveniles, pregnant or nursing sows, and sick or senior animals, whose extra protein and calcium needs justify it. One source says avoid it outright for healthy adults, another allows it as an occasional treat, but grass hay, timothy, orchard, or oat, should be the adult staple."
+      },
+      {
+        "q": "Why has my guinea pig stopped eating?",
+        "a": "Dental disease is the single most commonly cited cause, overgrown molars at the back of the mouth are painful and easy for owners to miss. GI stasis, stress from a new environment, an unfamiliar food, and vitamin C deficiency are other real possibilities."
+      },
+      {
+        "q": "How long can a guinea pig safely go without eating?",
+        "a": "Not long at all, this is one of the shortest safe windows of any common pet. Sources put the point to call a vet at 8 to 12 hours without eating or producing droppings, and once GI stasis actually sets in, it can become life-threatening within 24 to 48 hours."
+      },
+      {
+        "q": "What foods are genuinely dangerous for guinea pigs?",
+        "a": "Avocado, chocolate, onions and garlic, rhubarb, raw potato and unripe tomato, mushrooms, and fruit pits are all named specifically as toxic. High-starch or high-fat treats like nuts, seeds, and bread aren't toxic but cause real problems, guinea pigs will pick them over healthy hay and pellets, leading to nutrient gaps and obesity."
+      }
+    ],
+    "relatedProducts": [
+      "timothy-hay-small-pets",
+      "guinea-pig-vitamin-c-supplement"
     ]
   },
   {

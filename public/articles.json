@@ -697,11 +697,27 @@
       "category": "Legal"
     },
     {
+      "slug": "golden-retriever-feeding-guide",
+      "title": "Golden Retriever Feeding Guide: Schedule and Diet",
+      "excerpt": "Goldens are famously food-motivated, which makes portion control and slow feeding matter more than the schedule itself. Here's a real feeding routine and how to read a Golden that's actually off food.",
+      "date": "2026-07-26",
+      "image": "/assets/images/golden-retriever-feeding.jpg",
+      "category": "Dogs"
+    },
+    {
       "slug": "goldfish-cost-guide",
       "title": "Goldfish Cost: Full Price Breakdown",
       "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a genuinely large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
       "date": "2026-07-20",
       "image": "/assets/images/goldfish-cost.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "goldfish-feeding-guide",
+      "title": "Goldfish Feeding Guide: Schedule and Diet",
+      "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to actually feed, and how to read appetite loss.",
+      "date": "2026-07-26",
+      "image": "/assets/images/goldfish-feeding.jpg",
       "category": "Aquatic Life"
     },
     {
@@ -750,6 +766,14 @@
       "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the real budgeting math here is really about caring for two, not one.",
       "date": "2026-07-16",
       "image": "/assets/images/guinea-pig-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "guinea-pig-feeding-guide",
+      "title": "Guinea Pig Feeding Guide: Schedule and Diet",
+      "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not a wait-and-see approach.",
+      "date": "2026-07-26",
+      "image": "/assets/images/guinea-pig-feeding.jpg",
       "category": "Small & Exotic Pets"
     },
     {
