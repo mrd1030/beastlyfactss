@@ -32,6 +32,8 @@ const guideFilters = [
   { label: 'Turtles & Tortoises', emoji: '🐢' },
 ];
 
+const toSlug = (label) => label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+
 const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles & Tortoises', 'Small Mammals', 'Birds', 'Invertebrates', 'Amphibians', 'Fish']);
 
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
@@ -60,17 +62,13 @@ export default function Encyclopedia() {
 
   const resolveEncCat = (slug) => {
     if (!slug) return 'All';
-    const found = encyclopediaCategories.find(c =>
-      c.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-') === slug.toLowerCase()
-    );
+    const found = encyclopediaCategories.find(c => toSlug(c.name) === slug.toLowerCase());
     return found ? found.name : 'All';
   };
 
   const resolveGuideFilter = (slug) => {
     if (!slug) return 'All';
-    const found = guideFilters.find(f =>
-      f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-').replace(/ /g, '-') === slug.toLowerCase()
-    );
+    const found = guideFilters.find(f => toSlug(f.label) === slug.toLowerCase());
     return found ? found.label : 'All';
   };
 
@@ -207,7 +205,13 @@ export default function Encyclopedia() {
             {TABS.map(tab => (
               <button
                 key={tab.id}
-                onClick={() => navigate(tab.id === 'guides' ? '/guides/' : '/encyclopedia/')}
+                onClick={() => {
+                  const destination = tab.id === 'guides'
+                    ? (activeCategory === 'All' ? '/guides/' : `/guides/category/${toSlug(activeCategory)}/`)
+                    : (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`);
+
+                  navigate(destination, { state: { returnTo: destination } });
+                }}
                 className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
                   activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
@@ -228,6 +232,7 @@ export default function Encyclopedia() {
           grouped={grouped}
           navigate={navigate}
           onOpenLegend={() => setIsLegendOpen(true)}
+          currentListPath={activeCategory === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeCategory)}/`}
         />
       ) : (
         <GuidesTab
@@ -240,6 +245,7 @@ export default function Encyclopedia() {
           filteredGuides={filteredGuides}
           onOpenLegend={() => setIsLegendOpen(true)}
           navigate={navigate}
+          currentListPath={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
         />
       )}
 
@@ -268,7 +274,7 @@ export default function Encyclopedia() {
   );
 }
 
-function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate, onOpenLegend }) {
+function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate, onOpenLegend, currentListPath }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -317,7 +323,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
-                <AnimalRow key={animal.id} animal={animal} onOpenLegend={onOpenLegend} />
+                <AnimalRow key={animal.id} animal={animal} onOpenLegend={onOpenLegend} returnTo={currentListPath} />
               ))}
             </div>
           </motion.div>
@@ -335,7 +341,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
   );
 } 
 
-function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, navigate }) {
+function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, navigate, currentListPath }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -398,7 +404,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredGuides.map((guide, i) => (
-              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={onOpenLegend} />
+              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={onOpenLegend} returnTo={currentListPath} />
             ))}
           </div>
         )}
@@ -407,12 +413,12 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
   );
 }
 
-function AnimalRow({ animal, onOpenLegend }) {
+function AnimalRow({ animal, onOpenLegend, returnTo }) {
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
 
   if (animal.available) {
     return (
-      <Link to={`/encyclopedia/animal/${animal.id}/`}>
+      <Link to={`/encyclopedia/animal/${animal.id}/`} state={{ returnTo }}>
         <motion.div whileHover={{ x: 3 }}
           className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
           <div className="flex items-center gap-3 min-w-0">
@@ -463,13 +469,13 @@ function AnimalRow({ animal, onOpenLegend }) {
   );
 }
 
-function GuideCard({ guide, index, onOpenLegend }) {
+function GuideCard({ guide, index, onOpenLegend, returnTo }) {
   const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
   const isBreedQuirk = guide.name.includes('Breed Quirks') || guide.name.includes(':');
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}/`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
+      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           {guide.image && (
             <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">

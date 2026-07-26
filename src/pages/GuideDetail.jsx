@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useParams, Link } from 'react-router-dom';
+import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calculator, HelpCircle, BookMarked } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
@@ -23,6 +23,8 @@ const sectionMeta = [
 ];
 
 export default function GuideDetail() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { id } = useParams();
   const guide = allGuides.find(g => g.id === id);
   const encAnimal = encyclopediaAnimals.find(a => a.guideId === id);
@@ -37,6 +39,20 @@ export default function GuideDetail() {
   const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
   const hasFaq = !!guide?.faqs?.length;
   const hasEncyclopedia = !!encAnimal?.bio;
+
+  const handleBack = () => {
+    const returnTo = location.state?.returnTo;
+    if (returnTo) {
+      navigate(returnTo);
+      return;
+    }
+
+    if (window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+    navigate('/guides/');
+  };
 
   const relatedArticles = guide
     ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
@@ -394,12 +410,13 @@ export default function GuideDetail() {
       )}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
-        <Link
-          to="/guides/"
+        <button
+          type="button"
+          onClick={handleBack}
           className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Guides
-        </Link>
+        </button>
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
@@ -530,7 +547,7 @@ export default function GuideDetail() {
                 <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📚 Encyclopedia
                 </p>
-                <Link to={`/encyclopedia/animal/${encAnimal.id}/`} className="group block">
+                <Link to={`/encyclopedia/animal/${encAnimal.id}/`} state={{ returnTo: location.state?.returnTo || '/guides/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-2xl flex-shrink-0">{encAnimal.emoji}</span>
                     <div>

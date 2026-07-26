@@ -30,6 +30,8 @@ const directMatchCategories = new Set(['Geckos', 'Lizards', 'Snakes', 'Turtles &
 
 const dogSizes = ['All Sizes', 'Small', 'Medium', 'Large'];
 
+const toSlug = (label) => label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
+
 const subtypes = {
   Geckos: ['African Fat-Tailed Gecko', 'Crested Gecko', 'Gargoyle Gecko', 'Leaf-Tailed Gecko', 'Leopard Gecko', 'Mourning Gecko', 'Tokay Gecko'],
   Lizards: ['Ackie Monitor', 'Argentine Black and White Tegu', 'Bearded Dragon', 'Blue Tongue Skink', 'Green Anole', "Jackson's Chameleon", 'Savannah Monitor', 'Uromastyx', 'Veiled Chameleon'],
@@ -46,9 +48,7 @@ const subtypes = {
 
 const resolveFilter = (slug) => {
   if (!slug) return 'All';
-  return guideFilters.find(f =>
-    f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-') === slug.toLowerCase()
-  )?.label ?? 'All';
+  return guideFilters.find(f => toSlug(f.label) === slug.toLowerCase())?.label ?? 'All';
 };
 
 export default function Guides() {
@@ -154,7 +154,13 @@ export default function Guides() {
             ].map(tab => (
               <button
                 key={tab.id}
-                onClick={() => navigate(tab.id === 'encyclopedia' ? '/encyclopedia/' : '/guides/')}
+                onClick={() => {
+                  const destination = tab.id === 'encyclopedia'
+                    ? (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`)
+                    : '/guides/';
+
+                  navigate(destination, { state: { returnTo: destination } });
+                }}
                 className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
                   tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
@@ -243,7 +249,7 @@ export default function Guides() {
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredGuides.map((guide, i) => (
-              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={() => setIsLegendOpen(true)} />
+              <GuideCard key={guide.id} guide={guide} index={i} onOpenLegend={() => setIsLegendOpen(true)} returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`} />
             ))}
           </div>
         )}
@@ -273,13 +279,13 @@ export default function Guides() {
   );
 }
 
-function GuideCard({ guide, index, onOpenLegend }) {
+function GuideCard({ guide, index, onOpenLegend, returnTo }) {
   const diffClass = difficultyColor[guide.difficulty] || 'text-muted-foreground bg-muted';
   const isBreedQuirk = guide.name.includes('Breed Quirks') || guide.name.includes(':');
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}/`} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
+      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           {guide.image && (
             <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">

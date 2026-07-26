@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useParams, Link } from 'react-router-dom';
+import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
@@ -38,9 +38,25 @@ function getRelatedFacts(animal) {
 }
 
 export default function EncyclopediaAnimal() {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { id } = useParams();
   const animal = encyclopediaAnimals.find(a => a.id === id);
   const guide = animal?.guideId ? allGuides.find(g => g.id === animal.guideId) : null;
+
+  const handleBack = () => {
+    const returnTo = location.state?.returnTo;
+    if (returnTo) {
+      navigate(returnTo);
+      return;
+    }
+
+    if (window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+    navigate('/encyclopedia/');
+  };
 
   if (!animal) {
     return (
@@ -109,12 +125,13 @@ export default function EncyclopediaAnimal() {
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         {/* Back */}
-        <Link
-          to="/encyclopedia/"
+        <button
+          type="button"
+          onClick={handleBack}
           className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
-        </Link>
+        </button>
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
@@ -216,7 +233,7 @@ export default function EncyclopediaAnimal() {
                 <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📖 Care Guide
                 </p>
-                <Link to={`/guides/${guide.id}/`} className="group block">
+                <Link to={`/guides/${guide.id}/`} state={{ returnTo: location.state?.returnTo || '/encyclopedia/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
                     <div>
