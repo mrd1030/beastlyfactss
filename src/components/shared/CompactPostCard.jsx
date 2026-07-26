@@ -1,6 +1,7 @@
 import React from 'react';
 import { Clock, Calendar } from 'lucide-react';
 import SanityImage from '@/components/SanityImage';
+import LocalImage from '@/components/shared/LocalImage';
 
 export default function CompactPostCard({ post, onClick }) {
   const date = post.publishedAt && new Date(post.publishedAt) <= new Date()
@@ -28,7 +29,7 @@ export default function CompactPostCard({ post, onClick }) {
         </div>
       ) : post.image ? (
         <div className="w-20 h-14 flex-shrink-0 overflow-hidden rounded-lg">
-          <img
+          <LocalImage
             src={post.image}
             alt={post.imageAlt || post.title}
             className="w-full h-full object-cover"

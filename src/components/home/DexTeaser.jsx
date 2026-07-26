@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { BookOpen, ArrowRight } from 'lucide-react';
 import { CHRONICLES_SERIES, chroniclesPath } from '@/lib/chronicles';
+import LocalImage from '@/components/shared/LocalImage';
 
 // Alt text mirrors each series' own hero-image frontmatter (imageAlt) so this
 // teaser and the story's own page describe the same photo the same way.
@@ -41,7 +42,7 @@ export default function DexTeaser() {
               className="bg-card border border-border rounded-2xl overflow-hidden flex items-center gap-4 p-4"
             >
               <div className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0 rounded-xl overflow-hidden">
-                <img
+                <LocalImage
                   src={`/assets/images/${series.id}/${series.id}-chron1.jpg`}
                   alt={HERO_ALT[series.id] || `${series.character} - Beastly Facts fiction series`}
                   className="w-full h-full object-cover"

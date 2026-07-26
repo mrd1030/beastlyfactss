@@ -10,6 +10,7 @@ import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import { base44 } from '@/api/base44Client';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
+import LocalImage from '@/components/shared/LocalImage';
 
 const guideFilters = [
   { label: 'All', emoji: '🐾' },
@@ -289,7 +290,7 @@ function GuideCard({ guide, index, onOpenLegend, returnTo }) {
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           {guide.image && (
             <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">
-              <img src={guide.image} alt={guide.name} className="w-full h-full object-cover" loading="lazy" />
+              <LocalImage src={guide.image} alt={guide.name} className="w-full h-full object-cover" loading="lazy" />
             </div>
           )}
           <div className="flex items-start justify-between mb-3">

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Clock, ChevronRight } from 'lucide-react';
 import { getMdxPostsByCategory } from '@/lib/mdxPosts';
+import LocalImage from '@/components/shared/LocalImage';
 
 export default function FactFiles() {
   const posts = [...getMdxPostsByCategory('Fun Facts')].sort(
@@ -69,7 +70,7 @@ export default function FactFiles() {
               >
                 {post.image && (
                   <div className="aspect-video overflow-hidden">
-                    <img src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
+                    <LocalImage src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                 )}
                 <div className="p-4">

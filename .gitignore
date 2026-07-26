@@ -53,3 +53,7 @@ ds-bundle/
 .design-sync/.cache/
 .design-sync/learnings/
 .design-sync/node_modules
+
+# generated local image thumbnails
+public/assets/**/*-thumb.jpg
+public/assets/**/*-thumb.webp

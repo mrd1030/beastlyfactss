@@ -13,6 +13,7 @@ import SanityImage from '@/components/SanityImage';
 import PostEngagement from '@/components/blog/PostEngagement';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
+import LocalImage from '@/components/shared/LocalImage';
 
 // Matched by slug prefix, not category tag - a chronicles post is identified by its
 // stable "chronicles-of-<character>" slug (see src/lib/chronicles.js), so this can't
@@ -220,7 +221,7 @@ function StoryCard({ story, seriesId, part, index }) {
           {story.mainImage ? (
             <SanityImage image={story.mainImage} alt={story.title} width={300} className="w-full h-full object-cover" />
           ) : story.image ? (
-            <img src={story.image} alt={story.imageAlt || story.title} className="w-full h-full object-cover" loading="lazy" />
+            <LocalImage src={story.image} alt={story.imageAlt || story.title} className="w-full h-full object-cover" loading="lazy" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-2xl">📖</div>
           )}

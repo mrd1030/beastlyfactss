@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 import { RETAILERS } from '@/lib/data/affiliateProducts';
+import LocalImage from '@/components/shared/LocalImage';
 
 export default function ProductCard({ product, className = '' }) {
   const retailerLabel = RETAILERS[product.retailer]?.label || 'Amazon';
@@ -12,7 +13,7 @@ export default function ProductCard({ product, className = '' }) {
       className={`group flex gap-3 bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all ${className}`}
     >
       {product.image && (
-        <img
+        <LocalImage
           src={product.image}
           alt={product.product}
           className="w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"

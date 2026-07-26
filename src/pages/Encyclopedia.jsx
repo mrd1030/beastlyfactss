@@ -10,6 +10,7 @@ import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { base44 } from '@/api/base44Client';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
+import LocalImage from '@/components/shared/LocalImage';
 
 // Tabs
 const TABS = [
@@ -423,7 +424,7 @@ function AnimalRow({ animal, onOpenLegend, returnTo }) {
           className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer">
           <div className="flex items-center gap-3 min-w-0">
             {animal.image ? (
-              <img src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover flex-shrink-0" />
+              <LocalImage src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover flex-shrink-0" />
             ) : (
               <span className="text-xl flex-shrink-0">{animal.emoji}</span>
             )}
@@ -450,7 +451,7 @@ function AnimalRow({ animal, onOpenLegend, returnTo }) {
     <div className="flex items-center justify-between bg-card/50 border border-border/50 rounded-xl px-4 py-3 opacity-60">
       <div className="flex items-center gap-3 min-w-0">
         {animal.image ? (
-          <img src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover grayscale flex-shrink-0" />
+          <LocalImage src={animal.image} alt={animal.name} loading="lazy" className="w-10 h-10 rounded-lg object-cover grayscale flex-shrink-0" />
         ) : (
           <span className="text-xl flex-shrink-0 grayscale">{animal.emoji}</span>
         )}
@@ -479,7 +480,7 @@ function GuideCard({ guide, index, onOpenLegend, returnTo }) {
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           {guide.image && (
             <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">
-              <img
+              <LocalImage
                 src={guide.image}
                 alt={guide.name}
                 className="w-full h-full object-cover"
