@@ -1,7 +1,7 @@
 export const dogEncyclopedia = [
   {
     id: "labrador", name: "Labrador Retriever", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐶", difficulty: "Beginner", guideId: "dog-labrador", available: true,
+    category: "Dogs", emoji: "🐶", difficulty: "Beginner", guideId: "dog-labrador", available: true, image: "/assets/guides/dog-labrador-retriever.jpg",
     bio: {
       overview: "The Labrador retriever has been the most popular dog breed in the United States for over 30 consecutive years. Originally bred in Newfoundland, Canada, to retrieve fish and waterfowl for fishermen, they were refined in England into the versatile working and companion dogs known today. Their exceptional trainability, gentle temperament, and strong retrieve drive make them the most common breed used as guide dogs, search-and-rescue dogs, and therapy animals worldwide.",
       origin: "Breed origin: Newfoundland, Canada; refined in England",
@@ -14,7 +14,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "golden-retriever", name: "Golden Retriever", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐶", difficulty: "Beginner", guideId: "dog-golden-retriever", available: true,
+    category: "Dogs", emoji: "🐶", difficulty: "Beginner", guideId: "dog-golden-retriever", available: true, image: "/assets/guides/dog-golden-retriever.jpg",
     bio: {
       overview: "Golden retrievers were developed in Scotland in the mid-19th century by crossing flat-coated retrievers with Tweed water spaniels and other breeds to create an ideal hunting dog for Scotland's rugged terrain. Today they are beloved worldwide as gentle, trainable family companions and the most popular breed for therapy and assistance work after Labradors. Their famously tolerant temperament - patient with children and friendly with strangers - makes them iconic family dogs.",
       origin: "Breed origin: Scotland, United Kingdom",
@@ -27,7 +27,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "german-shepherd", name: "German Shepherd", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐕", difficulty: "Intermediate", guideId: "dog-german-shepherd", available: true,
+    category: "Dogs", emoji: "🐕", difficulty: "Intermediate", guideId: "dog-german-shepherd", available: true, image: "/assets/guides/dog-german-shepherd.jpg",
     bio: {
       overview: "The German shepherd was developed in late 19th-century Germany by cavalry captain Max von Stephanitz, who sought to create the ideal herding and working dog through selective breeding. Their intelligence, trainability, and work drive made them the go-to military and police dog of the 20th century - they served in both World Wars and remain the most common police dog breed globally. The breed's extraordinary popularity has unfortunately created significant health challenges in poorly bred lines.",
       origin: "Breed origin: Germany",
@@ -40,7 +40,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "french-bulldog", name: "French Bulldog", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐶", difficulty: "Intermediate", guideId: "dog-french-bulldog", available: true,
+    category: "Dogs", emoji: "🐶", difficulty: "Intermediate", guideId: "dog-french-bulldog", available: true, image: "/assets/guides/dog-french-bulldog.jpg",
     bio: {
       overview: "The French bulldog was developed in Paris in the mid-1800s by crossing English bulldogs brought by lace workers migrating to France with local Parisian dogs. Their compact size, bat-like ears, and minimal exercise requirements made them popular urban companions. They are now the most popular dog breed in the UK - a popularity that has unfortunately driven irresponsible breeding and severe health problems related to their brachycephalic (flat-faced) skull structure.",
       origin: "Breed origin: France (from English bulldog stock)",
@@ -53,7 +53,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "border-collie", name: "Border Collie", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐕", difficulty: "Advanced", guideId: "dog-border-collie", available: true,
+    category: "Dogs", emoji: "🐕", difficulty: "Advanced", guideId: "dog-border-collie", available: true, image: "/assets/guides/dog-border-collie.jpg",
     bio: {
       overview: "The border collie is widely considered the most intelligent dog breed in the world, developed on the Anglo-Scottish border specifically for herding sheep using an intense \"eye\" (predatory stare) and crouching movement. A border collie named Chaser holds the record for the largest tested canine vocabulary - over 1,000 objects by name. Their extraordinary intelligence comes with a significant caveat: without adequate mental and physical stimulation, they become destructive and anxious.",
       origin: "Breed origin: Anglo-Scottish border region, United Kingdom",
@@ -66,7 +66,7 @@ export const dogEncyclopedia = [
   },
   {
     id: "siberian-husky", name: "Siberian Husky", scientific: "Canis lupus familiaris",
-    category: "Dogs", emoji: "🐺", difficulty: "Advanced", guideId: "dog-siberian-husky", available: true,
+    category: "Dogs", emoji: "🐺", difficulty: "Advanced", guideId: "dog-siberian-husky", available: true, image: "/assets/guides/dog-siberian-husky.jpg", 
     bio: {
       overview: "Siberian huskies were bred by the Chukchi people of northeastern Siberia over thousands of years as endurance sled dogs capable of running 100+ miles per day in sub-zero conditions on minimal food. They were introduced to Alaska during the Nome Gold Rush and became famous when a husky named Balto led a relay team carrying diphtheria antitoxin to Nome in 1925. Their wolf-like appearance, striking blue eyes, and vocal howling make them one of the most recognizable breeds.",
       origin: "Breed origin: Northeastern Siberia; bred by the Chukchi people",
