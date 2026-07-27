@@ -2,7 +2,7 @@ import Constants from 'expo-constants';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AppMenu } from '@/components/app-menu';
@@ -292,7 +292,10 @@ export default function SettingsScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ScrollView contentContainerStyle={styles.scrollContent}>
+        <KeyboardAvoidingView
+          style={styles.keyboardAvoiding}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <ScrollView contentContainerStyle={styles.scrollContent} keyboardShouldPersistTaps="handled">
           <View style={styles.headerRow}>
             <View style={styles.headerBlock}>
               <TwoToneTitle first="Sett" second="ings" style={styles.title} />
@@ -708,7 +711,8 @@ export default function SettingsScreen() {
               BeastlyFacts companion · v{Constants.expoConfig?.version ?? '1.0.0'}
             </ThemedText>
           </ThemedView>
-        </ScrollView>
+          </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
     </ThemedView>
   );
@@ -725,6 +729,9 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
+  },
+  keyboardAvoiding: {
+    flex: 1,
   },
   headerRow: {
     flexDirection: 'row',

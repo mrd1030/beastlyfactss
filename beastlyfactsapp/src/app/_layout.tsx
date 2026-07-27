@@ -105,15 +105,23 @@ function AppRuntimeEffects() {
   // after DatabaseProvider has completed migrations and actually mounted its
   // children, so we do not query tables before they exist.
   useEffect(() => {
-    refreshAllPetsCareNotifications().catch(() => {});
-    refreshCareStatusWidget().catch(() => {});
+    refreshAllPetsCareNotifications().catch((error) => {
+      console.warn('[app-runtime] Failed to refresh care notifications', error);
+    });
+    refreshCareStatusWidget().catch((error) => {
+      console.warn('[app-runtime] Failed to refresh care widget', error);
+    });
     syncConnectedHousehold()
       .then((result) => {
         if (result.status === 'pulled' || result.status === 'joined') {
-          queryClient.invalidateQueries().catch(() => {});
+          queryClient.invalidateQueries().catch((error) => {
+            console.warn('[app-runtime] Failed to invalidate queries after household sync', error);
+          });
         }
       })
-      .catch(() => {});
+      .catch((error) => {
+        console.warn('[app-runtime] Failed to sync connected household', error);
+      });
   }, [queryClient]);
 
   useEffect(() => {
@@ -123,7 +131,9 @@ function AppRuntimeEffects() {
       .then((dispose) => {
         cleanup = dispose;
       })
-      .catch(() => {});
+      .catch((error) => {
+        console.warn('[app-runtime] Failed to observe notification responses', error);
+      });
 
     return () => cleanup();
   }, [queryClient]);

@@ -99,20 +99,32 @@ export default function ProfileScreen() {
     const task = (dueTasks ?? []).find((item) => item.id === taskId);
     if (!task) return;
     await markCareTaskDoneAndLog(task, activeCaregiver?.name);
-    await markHouseholdSyncDirty().catch(() => {});
+    await markHouseholdSyncDirty().catch((error) => {
+      console.warn('[pets] Failed to mark household sync as dirty after task completion', error);
+    });
     await queryClient.invalidateQueries({ queryKey: ['careTasks'] });
     await queryClient.invalidateQueries({ queryKey: ['husbandryLog'] });
-    await refreshAllPetsCareNotifications().catch(() => {});
-    await refreshCareStatusWidget().catch(() => {});
+    await refreshAllPetsCareNotifications().catch((error) => {
+      console.warn('[pets] Failed to refresh care notifications after task completion', error);
+    });
+    await refreshCareStatusWidget().catch((error) => {
+      console.warn('[pets] Failed to refresh care widget after task completion', error);
+    });
   };
 
   const handleQuickCare = async (petId: string, actionId: Parameters<typeof confirmQuickCareAction>[1]) => {
     await confirmQuickCareAction(petId, actionId, [...(dueTasks ?? []), ...(dueSoonTasks ?? [])], today, activeCaregiver?.name);
-    await markHouseholdSyncDirty().catch(() => {});
+    await markHouseholdSyncDirty().catch((error) => {
+      console.warn('[pets] Failed to mark household sync as dirty after quick care action', error);
+    });
     await queryClient.invalidateQueries({ queryKey: ['careTasks'] });
     await queryClient.invalidateQueries({ queryKey: ['husbandryLog'] });
-    await refreshAllPetsCareNotifications().catch(() => {});
-    await refreshCareStatusWidget().catch(() => {});
+    await refreshAllPetsCareNotifications().catch((error) => {
+      console.warn('[pets] Failed to refresh care notifications after quick care action', error);
+    });
+    await refreshCareStatusWidget().catch((error) => {
+      console.warn('[pets] Failed to refresh care widget after quick care action', error);
+    });
   };
 
   return (

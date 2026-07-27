@@ -273,7 +273,12 @@ export default function PackScreen() {
                         <ThemedText type="smallBold" style={styles.savedCardTitle}>
                           {entry.title}
                         </ThemedText>
-                        <Pressable onPress={() => toggleFavorite(entry._id)} hitSlop={8}>
+                        <Pressable
+                          onPress={(event) => {
+                            event.stopPropagation();
+                            toggleFavorite(entry._id);
+                          }}
+                          hitSlop={8}>
                           <ThemedText type="linkPrimary">★ Saved</ThemedText>
                         </Pressable>
                       </View>

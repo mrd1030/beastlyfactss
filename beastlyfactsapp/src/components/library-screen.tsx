@@ -121,7 +121,12 @@ function GuidesView() {
                   <ThemedText type="smallBold" numberOfLines={2} style={styles.entryTitle}>
                     {item.title}
                   </ThemedText>
-                  <Pressable onPress={() => toggleFavorite(item._id)} hitSlop={8}>
+                  <Pressable
+                    onPress={(event) => {
+                      event.stopPropagation();
+                      toggleFavorite(item._id);
+                    }}
+                    hitSlop={8}>
                     <ThemedText type="linkPrimary">{isSaved ? '★ Saved' : '☆ Save'}</ThemedText>
                   </Pressable>
                 </View>

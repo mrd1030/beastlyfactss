@@ -1,7 +1,7 @@
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, TextInput } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, TextInput } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SpeciesPicker } from '@/components/species-picker';
@@ -173,9 +173,15 @@ function PetFormBody({
         queryClient.invalidateQueries({ queryKey: ['careTasks', savedPetId] }),
         queryClient.invalidateQueries({ queryKey: ['discoveredSpecies'] }),
       ]);
-      await markHouseholdSyncDirty().catch(() => {});
-      await refreshAllPetsCareNotifications().catch(() => {});
-      await refreshCareStatusWidget().catch(() => {});
+      await markHouseholdSyncDirty().catch((error) => {
+        console.warn('[pet-form] Failed to mark household sync as dirty', error);
+      });
+      await refreshAllPetsCareNotifications().catch((error) => {
+        console.warn('[pet-form] Failed to refresh care notifications', error);
+      });
+      await refreshCareStatusWidget().catch((error) => {
+        console.warn('[pet-form] Failed to refresh care widget', error);
+      });
 
       router.replace({ pathname: '/pet/[id]', params: { id: savedPetId } });
     } catch (err) {
@@ -189,27 +195,30 @@ function PetFormBody({
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.headerRow}>
-          <Pressable onPress={() => router.back()} hitSlop={8}>
-            <ThemedText type="linkPrimary">← Cancel</ThemedText>
-          </Pressable>
-          <ThemedText type="smallBold">{isEditing ? 'Edit pet' : 'Add pet'}</ThemedText>
-          <ThemedView style={{ width: 60 }} />
-        </ThemedView>
+        <KeyboardAvoidingView
+          style={styles.keyboardAvoiding}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <ThemedView style={styles.headerRow}>
+            <Pressable onPress={() => router.back()} hitSlop={8}>
+              <ThemedText type="linkPrimary">← Cancel</ThemedText>
+            </Pressable>
+            <ThemedText type="smallBold">{isEditing ? 'Edit pet' : 'Add pet'}</ThemedText>
+            <ThemedView style={{ width: 60 }} />
+          </ThemedView>
 
-        <ScrollView contentContainerStyle={styles.scrollContent}>
-          <Pressable onPress={handlePickPhoto} style={styles.photoPicker}>
-            {photoUri ? (
-              <Image source={{ uri: photoUri }} style={styles.photo} />
-            ) : (
-              <ThemedView type="backgroundElement" style={styles.photoPlaceholder}>
-                <ThemedText type="subtitle">🐾</ThemedText>
-              </ThemedView>
-            )}
-            <ThemedText type="linkPrimary" style={styles.photoLabel}>
-              {photoUri ? 'Change photo' : 'Add a photo'}
-            </ThemedText>
-          </Pressable>
+          <ScrollView contentContainerStyle={styles.scrollContent} keyboardShouldPersistTaps="handled">
+            <Pressable onPress={handlePickPhoto} style={styles.photoPicker}>
+              {photoUri ? (
+                <Image source={{ uri: photoUri }} style={styles.photo} />
+              ) : (
+                <ThemedView type="backgroundElement" style={styles.photoPlaceholder}>
+                  <ThemedText type="subtitle">🐾</ThemedText>
+                </ThemedView>
+              )}
+              <ThemedText type="linkPrimary" style={styles.photoLabel}>
+                {photoUri ? 'Change photo' : 'Add a photo'}
+              </ThemedText>
+            </Pressable>
 
           <ThemedText type="smallBold" style={styles.fieldLabel}>
             Nickname
@@ -258,12 +267,13 @@ function PetFormBody({
             </ThemedView>
           )}
 
-          <Pressable onPress={handleSave} disabled={saving} style={styles.saveButtonWrapper}>
-            <ThemedView type="backgroundSelected" style={styles.saveButton}>
-              <ThemedText type="smallBold">{saving ? 'Saving…' : isEditing ? 'Save changes' : 'Add pet'}</ThemedText>
-            </ThemedView>
-          </Pressable>
-        </ScrollView>
+            <Pressable onPress={handleSave} disabled={saving} style={styles.saveButtonWrapper}>
+              <ThemedView type="backgroundSelected" style={styles.saveButton}>
+                <ThemedText type="smallBold">{saving ? 'Saving…' : isEditing ? 'Save changes' : 'Add pet'}</ThemedText>
+              </ThemedView>
+            </Pressable>
+          </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
     </ThemedView>
   );
@@ -280,6 +290,9 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
+  },
+  keyboardAvoiding: {
+    flex: 1,
   },
   headerRow: {
     flexDirection: 'row',
