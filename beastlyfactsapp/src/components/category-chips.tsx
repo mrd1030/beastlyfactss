@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { Radius, Spacing } from '@/constants/theme';
+import { MinTouchTarget, Radius, Spacing } from '@/constants/theme';
+import { getCategoryChipAccessibility } from '@/lib/accessibility';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
@@ -25,8 +26,14 @@ export function CategoryChips({
 
   const chip = (key: string | null, label: string) => {
     const selected = active === key;
+    const accessibility = getCategoryChipAccessibility(selected, label);
     return (
-      <Pressable key={key ?? '__all__'} onPress={() => onSelect(selected ? null : key)}>
+      <Pressable
+        key={key ?? '__all__'}
+        onPress={() => onSelect(selected ? null : key)}
+        accessibilityRole="button"
+        accessibilityState={{ selected: accessibility.selected }}
+        accessibilityLabel={accessibility.label}>
         <ThemedView
           type="backgroundElement"
           style={[styles.categoryChip, selected && { backgroundColor: theme.accent }]}>
@@ -58,5 +65,7 @@ const styles = StyleSheet.create({
     borderRadius: Radius.pill,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
+    minHeight: MinTouchTarget,
+    justifyContent: 'center',
   },
 });

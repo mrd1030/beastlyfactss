@@ -3,7 +3,7 @@ import { useRouter } from 'expo-router';
 import { useState } from 'react';
 import { Modal, Pressable, StyleSheet, View } from 'react-native';
 
-import { Radius, Spacing } from '@/constants/theme';
+import { MinTouchTarget, Radius, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
@@ -53,14 +53,20 @@ export function AppMenu() {
       </Pressable>
 
       <Modal visible={open} transparent animationType="fade" onRequestClose={() => setOpen(false)}>
-        <Pressable style={styles.backdrop} onPress={() => setOpen(false)}>
+        <Pressable style={styles.backdrop} onPress={() => setOpen(false)} accessibilityRole="button" accessibilityLabel="Close menu">
           <View />
         </Pressable>
-        <View style={[styles.sheet, { backgroundColor: theme.background, borderColor: theme.hairline }]}>
+        <View
+          accessibilityViewIsModal
+          accessibilityRole="menu"
+          accessibilityLabel="App navigation menu"
+          style={[styles.sheet, { backgroundColor: theme.background, borderColor: theme.hairline }]}>
           {MENU_ITEMS.map((item) => (
             <Pressable
               key={item.first + item.second}
               onPress={() => navigate(item.route)}
+              accessibilityRole="menuitem"
+              accessibilityLabel={`${item.first}${item.second}`.replace(/\s+/g, ' ').trim()}
               style={({ pressed }) => [styles.item, pressed && { backgroundColor: theme.backgroundElement }]}>
               <ThemedText style={styles.itemEmoji}>{item.emoji}</ThemedText>
               <TwoToneTitle type="smallBold" first={item.first} second={item.second} />
@@ -74,8 +80,8 @@ export function AppMenu() {
 
 const styles = StyleSheet.create({
   trigger: {
-    width: 40,
-    height: 40,
+    width: MinTouchTarget,
+    height: MinTouchTarget,
     borderRadius: Radius.md,
     alignItems: 'center',
     justifyContent: 'center',

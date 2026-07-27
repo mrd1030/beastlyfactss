@@ -4,6 +4,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 import { Radius, Spacing, getCategoryAccent } from '@/constants/theme';
 import type { CatalogFact } from '@/content-client/facts-catalog';
 import { useThemePreference } from '@/contexts/theme-preference';
+import { getFactSaveAccessibility } from '@/lib/accessibility';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
@@ -26,9 +27,15 @@ export function FactCard({
   const theme = useTheme();
   const { colorScheme } = useThemePreference();
   const accent = getCategoryAccent(fact.category, colorScheme);
+  const saveAccessibility = getFactSaveAccessibility(saved, fact.title);
 
   const saveButton = onToggleSaved ? (
-    <Pressable onPress={onToggleSaved} hitSlop={10}>
+    <Pressable
+      onPress={onToggleSaved}
+      hitSlop={10}
+      accessibilityRole="button"
+      accessibilityLabel={saveAccessibility.label}
+      accessibilityState={{ selected: saveAccessibility.selected }}>
       <Ionicons name={saved ? 'bookmark' : 'bookmark-outline'} size={20} color={accent.strong} />
     </Pressable>
   ) : null;

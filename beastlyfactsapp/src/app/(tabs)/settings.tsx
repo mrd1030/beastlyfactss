@@ -21,11 +21,15 @@ import { scheduleCareReminderPreview } from '@/lib/care-notifications';
 import { addCaregiver, clearCareTeam, getCareTeam, removeCaregiver, setActiveCaregiver, syncSelfCaregiverName } from '@/lib/care-team-store';
 import { createRemoteHousehold, disconnectHousehold, isSupabaseReady, joinRemoteHousehold, pullConnectedHousehold, pushConnectedHousehold, syncConnectedHousehold } from '@/lib/household-sync';
 import { clearHouseholdConnection, getHouseholdConnection, markHouseholdSyncDirty } from '@/lib/household-sync-store';
+import { enqueueSyncAction, listQueuedSyncActions } from '@/lib/offline-sync-queue';
 import { ensureNotificationPermission } from '@/lib/notification-permission';
 import { pickPetPhoto } from '@/lib/pick-pet-photo';
 import { clearProfile, getProfile, resetIdentity, updateProfile, type ThemePreference } from '@/lib/profile-store';
+import { getRemoteConfig } from '@/lib/remote-config';
+import { getSyncStatusMessage, type SyncActionStatus } from '@/lib/sync-status';
 import { isAndroidWidgetSupportedEnvironment } from '@/lib/android-widget-runtime';
 import { refreshCareStatusWidget } from '@/lib/care-widget';
+import { t } from '@/lib/i18n';
 import { isWidgetsSupportedEnvironment } from '@/lib/widgets-runtime';
 
 const THEME_OPTIONS: { value: ThemePreference; label: string }[] = [
@@ -75,6 +79,7 @@ export default function SettingsScreen() {
     queryKey: ['householdSyncConnection'],
     queryFn: getHouseholdConnection,
   });
+  const { data: queuedSyncActions } = useQuery({ queryKey: ['offlineSyncQueue'], queryFn: listQueuedSyncActions });
 
   const startEditingName = () => {
     setNameDraft(profile?.displayName ?? '');
@@ -178,32 +183,28 @@ export default function SettingsScreen() {
     await queryClient.invalidateQueries();
     await queryClient.invalidateQueries({ queryKey: ['householdSyncConnection'] });
     await queryClient.invalidateQueries({ queryKey: ['careTeam'] });
+    await queryClient.invalidateQueries({ queryKey: ['offlineSyncQueue'] });
   };
 
-  const runSyncAction = async (action: () => Promise<{ status: string }>) => {
+  const runSyncAction = async (
+    action: () => Promise<{ status: SyncActionStatus }>,
+    queueableAction?: 'syncNow' | 'pullLatest' | 'pushDevice'
+  ) => {
     setSyncBusy(true);
     setSyncStatusNote(null);
     try {
       const result = await action();
-      if (result.status === 'conflict') {
-        setSyncStatusNote('Remote changes were found since this device last synced. Pull latest or push this device to choose which version wins.');
-      } else if (result.status === 'not-configured') {
-        setSyncStatusNote('Cloud sync isn\'t available in this build yet.');
-      } else if (result.status === 'database-unavailable') {
-        setSyncStatusNote('Cloud sync needs the local device database, which is unavailable in this preview environment.');
-      } else if (result.status === 'not-signed-in') {
-        setSyncStatusNote('Sign in above first to use cloud sync.');
-      } else if (result.status === 'not-connected') {
-        setSyncStatusNote('Create or join a household first.');
-      } else if (result.status === 'idle') {
-        setSyncStatusNote('Everything is already up to date.');
-      } else {
-        setSyncStatusNote('Household sync completed.');
-      }
+      setSyncStatusNote(getSyncStatusMessage(result.status));
       await refreshSyncQueries();
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Cloud sync could not finish.';
-      setSyncStatusNote(message);
+      if (queueableAction && getRemoteConfig().featureFlags.advancedSyncQueue) {
+        await enqueueSyncAction(queueableAction);
+        await queryClient.invalidateQueries({ queryKey: ['offlineSyncQueue'] });
+        setSyncStatusNote(`${message} ${t('syncQueued')}`);
+      } else {
+        setSyncStatusNote(message);
+      }
     } finally {
       setSyncBusy(false);
     }
@@ -261,15 +262,15 @@ export default function SettingsScreen() {
   };
 
   const handleSyncNow = async () => {
-    await runSyncAction(syncConnectedHousehold);
+    await runSyncAction(syncConnectedHousehold, 'syncNow');
   };
 
   const handlePullLatest = async () => {
-    await runSyncAction(pullConnectedHousehold);
+    await runSyncAction(pullConnectedHousehold, 'pullLatest');
   };
 
   const handlePushDevice = async () => {
-    await runSyncAction(pushConnectedHousehold);
+    await runSyncAction(pushConnectedHousehold, 'pushDevice');
   };
 
   const handleDisconnectHousehold = async () => {
@@ -281,7 +282,7 @@ export default function SettingsScreen() {
   const handlePreviewReminder = async (kind: 'due' | 'overdue') => {
     const granted = await ensureNotificationPermission();
     if (!granted) {
-      setNotifStatusNote('Notifications are enabled in-app, but the OS permission is still off or unavailable here.');
+      setNotifStatusNote(t('notifPermissionOff'));
       return;
     }
 
@@ -581,6 +582,11 @@ export default function SettingsScreen() {
                 {syncStatusNote}
               </ThemedText>
             ) : null}
+            {!!queuedSyncActions?.length && (
+              <ThemedText type="small" themeColor="textSecondary">
+                {queuedSyncActions.length} sync action{queuedSyncActions.length === 1 ? '' : 's'} queued for retry.
+              </ThemedText>
+            )}
           </Card>
 
           <Eyebrow style={styles.sectionTitle}>Care team</Eyebrow>

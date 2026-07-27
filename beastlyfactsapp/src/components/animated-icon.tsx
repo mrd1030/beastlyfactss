@@ -5,12 +5,15 @@ import { Dimensions, StyleSheet, View } from 'react-native';
 import Animated, { Easing, Keyframe } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
 
+import { useReducedMotion } from '@/hooks/use-reduced-motion';
+
 const INITIAL_SCALE_FACTOR = Dimensions.get('screen').height / 90;
 const DURATION = 600;
 
 export function AnimatedSplashOverlay() {
   const [animate, setAnimate] = useState(false);
   const [visible, setVisible] = useState(true);
+  const reducedMotion = useReducedMotion();
 
   if (!visible) return null;
 
@@ -37,7 +40,9 @@ export function AnimatedSplashOverlay() {
 
   return animate ? (
     <Animated.View
-      entering={splashKeyframe.duration(DURATION).withCallback((finished) => {
+      entering={(reducedMotion ? new Keyframe({ 0: { opacity: 1 }, 100: { opacity: 0 } }) : splashKeyframe)
+        .duration(DURATION)
+        .withCallback((finished) => {
         'worklet';
         if (finished) {
           scheduleOnRN(setVisible, false);
@@ -96,14 +101,16 @@ const glowKeyframe = new Keyframe({
 });
 
 export function AnimatedIcon() {
+  const reducedMotion = useReducedMotion();
+
   return (
     <View style={styles.iconContainer}>
-      <Animated.View entering={glowKeyframe.duration(60 * 1000 * 4)} style={styles.glow}>
+      <Animated.View entering={reducedMotion ? undefined : glowKeyframe.duration(60 * 1000 * 4)} style={styles.glow}>
         <Image style={styles.glow} source={require('@/assets/images/logo-glow.png')} />
       </Animated.View>
 
-      <Animated.View entering={keyframe.duration(DURATION)} style={styles.background} />
-      <Animated.View style={styles.imageContainer} entering={logoKeyframe.duration(DURATION)}>
+      <Animated.View entering={reducedMotion ? undefined : keyframe.duration(DURATION)} style={styles.background} />
+      <Animated.View style={styles.imageContainer} entering={reducedMotion ? undefined : logoKeyframe.duration(DURATION)}>
         <Image style={styles.image} source={require('@/assets/images/expo-logo.png')} />
       </Animated.View>
     </View>

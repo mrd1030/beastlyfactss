@@ -21,6 +21,9 @@ import { refreshAllPetsCareNotifications } from '@/lib/care-notifications';
 import { refreshCareStatusWidget } from '@/lib/care-widget';
 import { syncConnectedHousehold } from '@/lib/household-sync';
 import { observeNotificationResponses } from '@/lib/notification-actions';
+import { startBackgroundRefreshLoop } from '@/lib/background-refresh';
+import { loadRemoteConfig } from '@/lib/remote-config';
+import { trackError, trackEvent } from '@/lib/telemetry';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -105,11 +108,18 @@ function AppRuntimeEffects() {
   // after DatabaseProvider has completed migrations and actually mounted its
   // children, so we do not query tables before they exist.
   useEffect(() => {
+    loadRemoteConfig();
+    void trackEvent('app_runtime_ready');
+  }, []);
+
+  useEffect(() => {
     refreshAllPetsCareNotifications().catch((error) => {
       console.warn('[app-runtime] Failed to refresh care notifications', error);
+      void trackError('refresh_care_notifications', error);
     });
     refreshCareStatusWidget().catch((error) => {
       console.warn('[app-runtime] Failed to refresh care widget', error);
+      void trackError('refresh_care_widget', error);
     });
     syncConnectedHousehold()
       .then((result) => {
@@ -121,6 +131,7 @@ function AppRuntimeEffects() {
       })
       .catch((error) => {
         console.warn('[app-runtime] Failed to sync connected household', error);
+        void trackError('sync_connected_household', error);
       });
   }, [queryClient]);
 
@@ -133,10 +144,16 @@ function AppRuntimeEffects() {
       })
       .catch((error) => {
         console.warn('[app-runtime] Failed to observe notification responses', error);
+        void trackError('observe_notification_responses', error);
       });
 
     return () => cleanup();
   }, [queryClient]);
+
+  useEffect(() => {
+    const stop = startBackgroundRefreshLoop();
+    return () => stop();
+  }, []);
 
   return null;
 }

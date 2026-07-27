@@ -158,6 +158,8 @@ export const Spacing = {
   six: 64,
 } as const;
 
+export const MinTouchTarget = 44;
+
 // Web's tab bar (app-tabs.web.tsx) is a fixed-position bar pinned to the
 // bottom of the viewport, not a real OS tab bar — its rendered height
 // (padding + inner content) was measured in-browser at 78px, so scrollable

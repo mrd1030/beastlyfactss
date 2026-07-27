@@ -6,6 +6,7 @@ import { useTheme } from '@/hooks/use-theme';
 export type ThemedTextProps = TextProps & {
   type?: 'default' | 'title' | 'small' | 'smallBold' | 'subtitle' | 'link' | 'linkPrimary' | 'code';
   themeColor?: ThemeColor;
+  maxFontSizeMultiplier?: number;
 };
 
 /**
@@ -14,11 +15,19 @@ export type ThemedTextProps = TextProps & {
  * per-weight (see AppFonts) - do not add `fontWeight` on top of them, that
  * causes faux-bold on Android.
  */
-export function ThemedText({ style, type = 'default', themeColor, ...rest }: ThemedTextProps) {
+export function ThemedText({
+  style,
+  type = 'default',
+  themeColor,
+  maxFontSizeMultiplier = 2,
+  ...rest
+}: ThemedTextProps) {
   const theme = useTheme();
 
   return (
     <Text
+      allowFontScaling
+      maxFontSizeMultiplier={maxFontSizeMultiplier}
       style={[
         { color: type === 'linkPrimary' ? theme.accent : theme[themeColor ?? 'text'] },
         type === 'default' && styles.default,
