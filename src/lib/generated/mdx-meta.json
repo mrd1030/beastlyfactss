@@ -800,6 +800,62 @@
     ]
   },
   {
+    "path": "/content/guides/bearded-dragon-feeding-guide.mdx",
+    "slug": "bearded-dragon-feeding-guide",
+    "title": "Bearded Dragon Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Bearded Dragon Feeding Guide: Schedule and Diet",
+    "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that actually needs a vet.",
+    "date": "2026-07-27",
+    "category": "Reptiles",
+    "tags": [
+      "Bearded Dragon",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Brumation"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bearded-dragon-feeding.jpg",
+    "imageAlt": "Bearded dragon eating chopped leafy greens and a calcium-dusted cricket",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-27",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my bearded dragon?",
+        "a": "It depends heavily on age. Hatchlings eat multiple times a day, mostly insects, dropping to twice daily by a few months old, then once daily or every other day as adults once growth stops. Vet sources give broader ranges than enthusiast sites' specific numbers, treat the vet ranges as the more reliable floor and ceiling."
+      },
+      {
+        "q": "What's the right ratio of insects to vegetables?",
+        "a": "It flips as the dragon grows up. Juveniles eat mostly insects with vegetables introduced alongside, adults flip toward mostly plant matter with insects offered just a few times a week. Sources differ on the exact percentages, but every one agrees on the direction, more bugs when young, more greens as an adult, and it mirrors a real dietary shift documented in wild bearded dragons too."
+      },
+      {
+        "q": "Do I really need to gut-load and dust feeder insects?",
+        "a": "Yes, both matter and aren't interchangeable. Gut-load insects on a calcium-rich diet for a day or two before feeding, then dust with calcium powder, daily on food is common guidance, with calcium plus D3 a couple times a week. UVB lighting is essential too, without it, a dragon can't actually use the calcium it's getting."
+      },
+      {
+        "q": "Why has my bearded dragon stopped eating?",
+        "a": "Often it's brumation, a shed, or, in females, a gravid cycle before laying, all normal. It becomes a real concern when the enclosure's temperature isn't actually letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen."
+      },
+      {
+        "q": "How long can a bearded dragon go without eating?",
+        "a": "There's real tension in the sourcing here. One veterinary teaching hospital treats even 1 to 2 days of refusal in an adult as a reason to seek care, while a separate DVM-reviewed source says healthy adults can physiologically fast 1 to 2 weeks. Both can be true at once, a short refusal is worth watching, but true fasting tolerance runs longer, babies and juveniles have far less room to wait either way."
+      },
+      {
+        "q": "What foods are actually dangerous for bearded dragons?",
+        "a": "Avocado, rhubarb, onion and garlic, and any wild-caught insects, especially fireflies, which are genuinely toxic. Dog food, cat food, and rabbit food are also inappropriate despite sometimes being suggested online, they aren't nutritionally balanced for this species."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-superfoods-plus-4oz",
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ]
+  },
+  {
     "path": "/content/guides/bearded-dragon-handling-guide.mdx",
     "slug": "bearded-dragon-handling-guide",
     "title": "How to Handle a Bearded Dragon Without Stressing It Out",
@@ -6252,6 +6308,58 @@
     ]
   },
   {
+    "path": "/content/guides/madagascar-hissing-cockroach-feeding-guide.mdx",
+    "slug": "madagascar-hissing-cockroach-feeding-guide",
+    "title": "Madagascar Hissing Cockroach Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Hissing Cockroach Feeding Guide: Schedule and Diet",
+    "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe produce, and how to tell normal nocturnal habits from real trouble.",
+    "date": "2026-07-27",
+    "category": "Invertebrates",
+    "tags": [
+      "Madagascar Hissing Cockroach",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/madagascar-hissing-cockroach-feeding.jpg",
+    "imageAlt": "Madagascar hissing cockroach feeding on dry dog food and apple slices",
+    "emoji": "🪲",
+    "lastReviewed": "2026-07-27",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do you actually feed a pet Madagascar hissing cockroach?",
+        "a": "High-quality dry dog food is the most consistently recommended staple, oddly enough, it has a better nutritional profile for hissers than cat or bird food, though those work as substitutes. Add fresh produce, romaine lettuce, apple, banana, carrots, a few times a week."
+      },
+      {
+        "q": "How often should I feed my hisser colony?",
+        "a": "Sources genuinely disagree. Pet-industry care sheets recommend keeping dry food available almost constantly, topped with fresh produce two to three times a week. An academic extension fact sheet instead describes a sparser weekly ration for a small pet colony. Both are legitimate, this is a real difference in approach, not just phrasing."
+      },
+      {
+        "q": "Do hissing cockroaches need a lot of protein?",
+        "a": "No, the opposite. Their ancestral diet of decaying plant matter and overripe fruit is naturally low in protein, and keepers describe them as evolutionarily protein-sparing. Dry dog food and produce should make up the bulk of the diet rather than something protein-heavy."
+      },
+      {
+        "q": "Why has my hissing cockroach stopped eating?",
+        "a": "Often it's simply that they're nocturnal and light-averse, so you're not witnessing the feeding that's genuinely happening after dark. An approaching molt, a recent move, or a cool enclosure are other normal explanations. It's worth real concern when it's paired with inactivity, a dull exoskeleton, or failure to hiss when handled."
+      },
+      {
+        "q": "How long can a hissing cockroach go without food?",
+        "a": "The one figure available, roughly a week, comes from a single lower-authority source with no independent corroboration, so treat it as a rough benchmark rather than a settled fact. There's no strong veterinary-sourced guidance on this specific question."
+      },
+      {
+        "q": "Is it dangerous to underfeed a hisser colony?",
+        "a": "Yes, more than it might seem. Underfed colonies are more prone to cannibalizing weaker or freshly molted colony-mates, who are pale, soft, and defenseless for a few hours after shedding. Feeding the colony adequately isn't just about individual nutrition, it protects the group."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/mourning-gecko-cost-guide.mdx",
     "slug": "mourning-gecko-cost-guide",
     "title": "How Much Does a Mourning Gecko Really Cost?",
@@ -6797,6 +6905,62 @@
       "nail-clippers",
       "timothy-hay-small-pets",
       "small-pet-paper-bedding"
+    ]
+  },
+  {
+    "path": "/content/guides/rabbit-feeding-guide.mdx",
+    "slug": "rabbit-feeding-guide",
+    "title": "Rabbit Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Rabbit Feeding Guide: Schedule and Diet",
+    "excerpt": "Unlimited hay, measured pellets, and why a rabbit that skips even a single meal needs same-day attention. Here's a real feeding schedule and how to read a rabbit that's stopped eating.",
+    "date": "2026-07-27",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Rabbit",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "GI Stasis"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/rabbit-feeding.jpg",
+    "imageAlt": "Rabbit eating fresh hay and leafy greens",
+    "emoji": "🐰",
+    "lastReviewed": "2026-07-27",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much hay does a rabbit actually need?",
+        "a": "Unlimited, always available, sources put it at 80 to 85% of an adult's diet. It's not optional filler, hay keeps the gut moving and wears down teeth that grow continuously throughout a rabbit's life."
+      },
+      {
+        "q": "How much pellet food and vegetables should I feed?",
+        "a": "It scales with body weight rather than one fixed number, roughly 1/8 to 1/4 cup of high-fiber pellets and 1 to 4 cups of chopped vegetables per several pounds of body weight, depending on the source. The exact figures vary enough between sources that checking with a rabbit-savvy vet for your specific rabbit is the honest answer, not a single number."
+      },
+      {
+        "q": "Can adult rabbits eat alfalfa hay?",
+        "a": "Generally no, alfalfa's extra calcium and calories are meant for babies, juveniles, pregnant or nursing does, and underweight seniors. Healthy adults should eat grass hay, timothy, orchard, oat, or brome, as their staple, alfalfa can contribute to obesity and bladder problems if fed regularly."
+      },
+      {
+        "q": "Why has my rabbit stopped eating?",
+        "a": "Dental disease is one of the most frequently cited causes, overgrown teeth or spurs can make chewing painful and are easy to miss until appetite loss shows up. Stress from an environmental change, an abrupt diet switch, and pain from an unrelated illness are other common triggers."
+      },
+      {
+        "q": "How long can a rabbit safely go without eating?",
+        "a": "Not long, this is one of the shortest safe windows of any common pet. Sources range from 3 to 12 hours as the point to treat it as urgent, and all agree that fasting beyond about 24 hours risks a genuine, life-threatening emergency. Don't wait through a full day hoping it resolves on its own."
+      },
+      {
+        "q": "What foods are actually dangerous for rabbits?",
+        "a": "Avocado, chocolate, onions and other allium vegetables, and rhubarb are all named as toxic. Iceberg lettuce isn't toxic but has little nutritional value. Commercial yogurt drops marketed as rabbit treats are specifically called out as inappropriate too, despite being sold for that purpose."
+      }
+    ],
+    "relatedProducts": [
+      "rabbit-pellet-food-oxbow-garden-select",
+      "timothy-hay-small-pets"
     ]
   },
   {

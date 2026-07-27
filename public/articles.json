@@ -137,6 +137,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "bearded-dragon-feeding-guide",
+      "title": "Bearded Dragon Feeding Guide: Schedule and Diet",
+      "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that actually needs a vet.",
+      "date": "2026-07-27",
+      "image": "/assets/images/bearded-dragon-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "bearded-dragon-handling-guide",
       "title": "How to Handle a Bearded Dragon Correctly",
       "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early is what builds a dragon that actually enjoys it.",
@@ -1033,6 +1041,14 @@
       "category": "Comparisons"
     },
     {
+      "slug": "madagascar-hissing-cockroach-feeding-guide",
+      "title": "Hissing Cockroach Feeding Guide: Schedule and Diet",
+      "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe produce, and how to tell normal nocturnal habits from real trouble.",
+      "date": "2026-07-27",
+      "image": "/assets/images/madagascar-hissing-cockroach-feeding.jpg",
+      "category": "Invertebrates"
+    },
+    {
       "slug": "mourning-gecko-cost-guide",
       "title": "Mourning Gecko Cost: Full Price Breakdown",
       "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
@@ -1118,6 +1134,14 @@
       "excerpt": "Rabbits have a reputation as a simple starter pet, but the real cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
       "date": "2026-07-13",
       "image": "/assets/images/rabbit-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "rabbit-feeding-guide",
+      "title": "Rabbit Feeding Guide: Schedule and Diet",
+      "excerpt": "Unlimited hay, measured pellets, and why a rabbit that skips even a single meal needs same-day attention. Here's a real feeding schedule and how to read a rabbit that's stopped eating.",
+      "date": "2026-07-27",
+      "image": "/assets/images/rabbit-feeding.jpg",
       "category": "Small & Exotic Pets"
     },
     {
