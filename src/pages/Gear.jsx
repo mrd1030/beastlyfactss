@@ -6,6 +6,7 @@ import { ChevronRight, Search, X } from 'lucide-react';
 import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, GEAR_PET_TYPES, RETAILERS } from '@/lib/data/affiliateProducts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import ProductCard from '@/components/shared/ProductCard';
+import ProductModal from '@/components/shared/ProductModal';
 
 const DESCRIPTION = truncateDescription(
   `The exact products we recommend across our care guides: heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies.`
@@ -33,6 +34,7 @@ export default function Gear() {
   const { petType } = useParams();
   const [activePetType, setActivePetType] = useState(() => resolvePetType(petType));
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     setActivePetType(resolvePetType(petType));
@@ -179,7 +181,7 @@ export default function Gear() {
               <h2 className="font-display font-bold text-lg text-foreground mb-3">{category}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {products.map(product => (
-                  <ProductCard key={product.slug} product={product} />
+                  <ProductCard key={product.slug} product={product} onSelect={setSelectedProduct} />
                 ))}
               </div>
             </div>
@@ -198,6 +200,7 @@ export default function Gear() {
           </Link>
         </div>
       </div>
+      <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </div>
   );
 }

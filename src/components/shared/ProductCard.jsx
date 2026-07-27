@@ -3,15 +3,11 @@ import { ShoppingCart } from 'lucide-react';
 import { RETAILERS } from '@/lib/data/affiliateProducts';
 import LocalImage from '@/components/shared/LocalImage';
 
-export default function ProductCard({ product, className = '' }) {
+export default function ProductCard({ product, onSelect, className = '' }) {
   const retailerLabel = RETAILERS[product.retailer]?.label || 'Amazon';
-  return (
-    <a
-      href={product.link}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      className={`group flex gap-3 bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all ${className}`}
-    >
+  const sharedClassName = `group flex gap-3 bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all ${className}`;
+  const content = (
+    <>
       {product.image && (
         <LocalImage
           src={product.image}
@@ -26,9 +22,32 @@ export default function ProductCard({ product, className = '' }) {
         </p>
         <div className="mt-auto pt-2 flex items-center gap-1 text-xs font-display font-semibold text-secondary">
           <ShoppingCart className="w-3.5 h-3.5 flex-shrink-0" />
-          Shop on {retailerLabel}
+          {onSelect ? `See on ${retailerLabel}` : `Shop on ${retailerLabel}`}
         </div>
       </div>
+    </>
+  );
+
+  if (onSelect) {
+    return (
+      <button
+        type="button"
+        onClick={() => onSelect(product)}
+        className={`${sharedClassName} text-left w-full`}
+      >
+        {content}
+      </button>
+    );
+  }
+
+  return (
+    <a
+      href={product.link}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      className={sharedClassName}
+    >
+      {content}
     </a>
   );
 }
