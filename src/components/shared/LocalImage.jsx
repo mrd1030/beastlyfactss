@@ -13,11 +13,7 @@ export default function LocalImage({
   const [thumbFailed, setThumbFailed] = useState(false);
   const isLocalAsset = typeof src === 'string' && src.startsWith('/assets/');
 
-  if (!isLocalAsset) {
-    return <img src={src} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />;
-  }
-
-  if (fullSize) {
+  if (!isLocalAsset || fullSize) {
     return <img src={src} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />;
   }
 
