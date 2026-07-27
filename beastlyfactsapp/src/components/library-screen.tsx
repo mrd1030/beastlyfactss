@@ -24,6 +24,7 @@ import { getGuideImageSource } from '@/content-client/guide-image-map';
 import { getAllCategories, getAllSpeciesAsEntries } from '@/content-client/species-catalog';
 import type { ProvisionalEntry } from '@/content-client/types';
 import { useFavorites } from '@/hooks/use-favorites';
+import { getFactSaveAccessibility } from '@/lib/accessibility';
 import { useTheme } from '@/hooks/use-theme';
 
 type LibraryView = 'guides' | 'encyclopedia';
@@ -126,7 +127,10 @@ function GuidesView() {
                       event.stopPropagation();
                       toggleFavorite(item._id);
                     }}
-                    hitSlop={8}>
+                    hitSlop={8}
+                    accessibilityRole="button"
+                    accessibilityLabel={getFactSaveAccessibility(isSaved, item.title).label}
+                    accessibilityState={{ selected: isSaved }}>
                     <ThemedText type="linkPrimary">{isSaved ? '★ Saved' : '☆ Save'}</ThemedText>
                   </Pressable>
                 </View>

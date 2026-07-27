@@ -68,6 +68,8 @@ Implemented foundations:
 - Remote config / feature flag bootstrap (`src/lib/remote-config.ts`).
 - i18n-ready translation utility (`src/lib/i18n.ts`).
 
+`app.json` `expo.extra.remoteConfig` values are baseline defaults; runtime loading in `src/lib/remote-config.ts` applies these and supports environment-specific overrides through Expo config injection.
+
 ## Development
 
 ```bash
@@ -79,10 +81,10 @@ npm run start
 
 Jest coverage thresholds are enforced in `jest.config.js`:
 
-- Branches: 65%
-- Functions: 70%
-- Lines: 70%
-- Statements: 70%
+- Branches: 64%
+- Functions: 85%
+- Lines: 85%
+- Statements: 80%
 
 ## Accessibility regression checklist
 

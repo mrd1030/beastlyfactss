@@ -110,7 +110,7 @@
           "telemetryEnabled": true,
           "backgroundRefreshEnabled": true
         },
-        "releaseChannel": "staged",
+        "releaseChannel": "stable",
         "minSupportedVersion": "1.0.0"
       }
     }

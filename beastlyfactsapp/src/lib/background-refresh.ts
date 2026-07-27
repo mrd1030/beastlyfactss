@@ -8,6 +8,8 @@ import { syncConnectedHousehold, pullConnectedHousehold, pushConnectedHousehold 
 import type { SyncActionStatus } from './sync-status';
 import { trackError } from './telemetry';
 
+// Ten-minute cadence balances battery impact while keeping notification
+// schedules, widget snapshots, and queued sync retries reasonably fresh.
 const REFRESH_INTERVAL_MS = 10 * 60 * 1000;
 
 type RunnerResult = { status: SyncActionStatus };

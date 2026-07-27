@@ -8,5 +8,6 @@ const dictionaries = {
 export type TranslationKey = keyof (typeof dictionaries)['en'];
 
 export function t(key: TranslationKey, locale: keyof typeof dictionaries = 'en'): string {
-  return dictionaries[locale][key] ?? dictionaries.en[key] ?? key;
+  if (locale === 'en') return dictionaries.en[key];
+  return dictionaries[locale][key] ?? dictionaries.en[key];
 }

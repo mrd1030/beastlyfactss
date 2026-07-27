@@ -28,7 +28,7 @@ describe('facts utils', () => {
   it('shuffles deterministically with custom random', () => {
     const randomValues = [0.1, 0.9, 0.4];
     let index = 0;
-    const shuffled = shuffleArray([1, 2, 3, 4], () => randomValues[index++ % randomValues.length]!);
+    const shuffled = shuffleArray([1, 2, 3, 4], () => randomValues[index++ % randomValues.length] ?? 0);
     expect(shuffled).toEqual([2, 4, 3, 1]);
   });
 });

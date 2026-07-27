@@ -23,6 +23,7 @@ import { getStreakState, listCachedEntries, listDiscoveredSpecies } from '@/db/h
 import type { DiscoveredSpecies, UnlockMethod } from '@/db/types';
 import { useFavorites } from '@/hooks/use-favorites';
 import { useTheme } from '@/hooks/use-theme';
+import { getFactSaveAccessibility } from '@/lib/accessibility';
 import { getFactFavoriteId, isFactFavoriteId, parseFactFavoriteId } from '@/lib/favorite-keys';
 
 const BLOG_SECTION_KEY = '__from_the_blog__';
@@ -254,7 +255,12 @@ export default function PackScreen() {
                       <ThemedText type="smallBold" style={styles.savedCardTitle}>
                         {fact.emoji} {fact.title}
                       </ThemedText>
-                      <Pressable onPress={() => toggleFavorite(getFactFavoriteId(fact.id))} hitSlop={8}>
+                      <Pressable
+                        onPress={() => toggleFavorite(getFactFavoriteId(fact.id))}
+                        hitSlop={8}
+                        accessibilityRole="button"
+                        accessibilityLabel={getFactSaveAccessibility(true, fact.title).label}
+                        accessibilityState={{ selected: true }}>
                         <ThemedText type="linkPrimary">★ Saved</ThemedText>
                       </Pressable>
                     </View>
@@ -278,7 +284,10 @@ export default function PackScreen() {
                             event.stopPropagation();
                             toggleFavorite(entry._id);
                           }}
-                          hitSlop={8}>
+                          hitSlop={8}
+                          accessibilityRole="button"
+                          accessibilityLabel={getFactSaveAccessibility(true, entry.title).label}
+                          accessibilityState={{ selected: true }}>
                           <ThemedText type="linkPrimary">★ Saved</ThemedText>
                         </Pressable>
                       </View>

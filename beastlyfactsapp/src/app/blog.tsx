@@ -16,6 +16,7 @@ import { sanityImageUrl } from '@/content-client/sanityClient';
 import { getAllSpeciesAsEntries } from '@/content-client/species-catalog';
 import type { ProvisionalEntry } from '@/content-client/types';
 import { useFavorites } from '@/hooks/use-favorites';
+import { getFactSaveAccessibility } from '@/lib/accessibility';
 import { useTheme } from '@/hooks/use-theme';
 
 const BLOG_PAGE_SIZE = 10;
@@ -96,6 +97,7 @@ export default function BlogScreen() {
           renderItem={({ item }) => {
             const thumb = sanityImageUrl(item.mainImage, 800);
             const isSaved = favoriteIds.has(item._id);
+            const saveAccessibility = getFactSaveAccessibility(isSaved, item.title);
             return (
               <Pressable onPress={() => openEntry(item)}>
                 <Card variant="filled" style={styles.entryCard}>
@@ -116,7 +118,10 @@ export default function BlogScreen() {
                           event.stopPropagation();
                           toggleFavorite(item._id);
                         }}
-                        hitSlop={8}>
+                        hitSlop={8}
+                        accessibilityRole="button"
+                        accessibilityLabel={saveAccessibility.label}
+                        accessibilityState={{ selected: saveAccessibility.selected }}>
                         <ThemedText type="linkPrimary">{isSaved ? '★ Saved' : '☆ Save'}</ThemedText>
                       </Pressable>
                     </View>

@@ -10,6 +10,7 @@ export type QueuedSyncAction = {
 };
 
 const STORAGE_KEY = 'beastlyfacts.sync-queue.v1';
+const MAX_QUEUE_SIZE = 50;
 
 async function readQueue(): Promise<QueuedSyncAction[]> {
   try {
@@ -37,7 +38,7 @@ export async function enqueueSyncAction(action: QueuedSyncAction['action']): Pro
     queuedAt: new Date().toISOString(),
     attempts: 0,
   });
-  await writeQueue(queue.slice(-50));
+  await writeQueue(queue.slice(-MAX_QUEUE_SIZE));
 }
 
 export async function clearQueuedSyncActions(): Promise<void> {
@@ -66,6 +67,6 @@ export async function flushQueuedSyncActions(
     }
   }
 
-  await writeQueue(pending.slice(-50));
+  await writeQueue(pending.slice(-MAX_QUEUE_SIZE));
   return completed;
 }
