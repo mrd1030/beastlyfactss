@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ShoppingCart } from 'lucide-react';
+import { X, ShoppingCart, Star } from 'lucide-react';
 import { RETAILERS } from '@/lib/data/affiliateProducts';
 import LocalImage from '@/components/shared/LocalImage';
 
@@ -95,8 +95,9 @@ export default function ProductModal({ product, onClose }) {
               <LocalImage
                 src={product.image}
                 alt={product.product}
-                className="w-32 h-32 object-cover rounded-2xl border border-border bg-white"
+                className="w-full max-h-56 object-contain rounded-2xl border border-border bg-white"
                 loading="eager"
+                fullSize
               />
             </div>
           )}
@@ -105,9 +106,30 @@ export default function ProductModal({ product, onClose }) {
             {product.category}
           </span>
 
-          <h2 className="font-display font-bold text-lg mt-3 mb-4 text-foreground leading-snug">
+          <h2 className="font-display font-bold text-lg mt-3 mb-2 text-foreground leading-snug">
             {product.product}
           </h2>
+
+          {(product.rating != null || product.price) && (
+            <div className="flex items-center gap-3 mb-3">
+              {product.rating != null && (
+                <span className="flex items-center gap-1 text-sm font-body text-amber-500">
+                  <Star className="w-4 h-4 fill-amber-500" />
+                  <span className="font-semibold">{product.rating.toFixed(1)}</span>
+                  <span className="text-muted-foreground text-xs">/ 5</span>
+                </span>
+              )}
+              {product.price && (
+                <span className="text-sm font-body font-semibold text-foreground">{product.price}</span>
+              )}
+            </div>
+          )}
+
+          {product.description && (
+            <p className="text-sm font-body text-muted-foreground mb-4 leading-relaxed">
+              {product.description}
+            </p>
+          )}
 
           <a
             href={product.link}
