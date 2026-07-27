@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function LocalImage({
   src,
@@ -9,6 +9,7 @@ export default function LocalImage({
   height,
   ...props
 }) {
+  const [thumbFailed, setThumbFailed] = useState(false);
   const isLocalAsset = typeof src === 'string' && src.startsWith('/assets/');
 
   if (!isLocalAsset) {
@@ -21,11 +22,24 @@ export default function LocalImage({
   const thumbWebp = `${base}-thumb.webp`;
   const thumbJpg = `${base}-thumb.jpg`;
 
+  if (thumbFailed) {
+    return <img src={src} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />;
+  }
+
   return (
     <picture>
       <source srcSet={thumbWebp} type="image/webp" />
       <source srcSet={thumbJpg} type="image/jpeg" />
-      <img src={thumbJpg} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />
+      <img
+        src={thumbJpg}
+        alt={alt}
+        className={className}
+        loading={loading}
+        width={width}
+        height={height}
+        onError={() => setThumbFailed(true)}
+        {...props}
+      />
     </picture>
   );
 }
