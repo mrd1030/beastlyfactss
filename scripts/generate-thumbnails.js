@@ -13,23 +13,34 @@ const assetDirs = [
 
 const supported = new Set(['.jpg', '.jpeg', '.png']);
 
+// Recursively collect all image files under a directory tree.
+function collectImages(dir, results = []) {
+  if (!fs.existsSync(dir)) return results;
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      collectImages(full, results);
+    } else if (supported.has(path.extname(entry.name).toLowerCase())) {
+      results.push(full);
+    }
+  }
+  return results;
+}
+
 async function generateThumbs() {
   let count = 0;
 
   for (const dir of assetDirs) {
-    if (!fs.existsSync(dir)) continue;
+    const files = collectImages(dir);
 
-    const files = fs.readdirSync(dir).filter((file) => supported.has(path.extname(file).toLowerCase()));
-
-    for (const file of files) {
-      const ext = path.extname(file);
-      const baseName = path.basename(file, ext);
+    for (const input of files) {
+      const ext = path.extname(input);
+      const baseName = path.basename(input, ext);
       if (baseName.endsWith('-thumb')) continue;
 
-      const input = path.join(dir, file);
-      const base = file.replace(ext, '');
-      const webpOut = path.join(dir, `${base}-thumb.webp`);
-      const jpgOut = path.join(dir, `${base}-thumb.jpg`);
+      const base = input.replace(new RegExp(`\\${ext}$`, 'i'), '');
+      const webpOut = `${base}-thumb.webp`;
+      const jpgOut = `${base}-thumb.jpg`;
 
       if (fs.existsSync(webpOut) && fs.existsSync(jpgOut)) continue;
 
@@ -46,7 +57,7 @@ async function generateThumbs() {
 
         count += 1;
       } catch (error) {
-        console.warn(`Skipping ${file}: ${error.message}`);
+        console.warn(`Skipping ${path.basename(input)}: ${error.message}`);
       }
     }
   }

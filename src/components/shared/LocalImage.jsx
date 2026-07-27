@@ -25,7 +25,16 @@ export default function LocalImage({
     <picture>
       <source srcSet={thumbWebp} type="image/webp" />
       <source srcSet={thumbJpg} type="image/jpeg" />
-      <img src={thumbJpg} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />
+      <img
+        src={thumbJpg}
+        alt={alt}
+        className={className}
+        loading={loading}
+        width={width}
+        height={height}
+        onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = src; }}
+        {...props}
+      />
     </picture>
   );
 }
