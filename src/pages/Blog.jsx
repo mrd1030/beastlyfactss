@@ -26,6 +26,7 @@ import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 import ProductCard from '@/components/shared/ProductCard';
+import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
 
 const POSTS_PER_PAGE = 10;
@@ -437,6 +438,7 @@ function AuthorBio() {
 
 function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts, onSelectPost }) {
   const [openFaq, setOpenFaq] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
@@ -625,7 +627,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {relatedProducts.map((product) => (
-                    <ProductCard key={product.slug} product={product} />
+                    <ProductCard key={product.slug} product={product} onSelect={setSelectedProduct} />
                   ))}
                 </div>
                 <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3">
@@ -657,6 +659,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
           </div>
         </div>
       </div>
+      <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </motion.div>
   );
 }
