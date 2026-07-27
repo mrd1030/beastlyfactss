@@ -1,7 +1,7 @@
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Image, Pressable, ScrollView, Share, StyleSheet, TextInput, View } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, Share, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Card } from '@/components/card';
@@ -149,7 +149,9 @@ export default function PetCareToolsScreen() {
   });
 
   const refreshCareData = async () => {
-    await markHouseholdSyncDirty().catch(() => {});
+    await markHouseholdSyncDirty().catch((error) => {
+      console.warn('[care-tools] Failed to mark household sync as dirty', error);
+    });
     await Promise.all([
       queryClient.invalidateQueries({ queryKey: ['careTasks', petId] }),
       queryClient.invalidateQueries({ queryKey: ['careTasks'] }),
@@ -159,8 +161,12 @@ export default function PetCareToolsScreen() {
       queryClient.invalidateQueries({ queryKey: ['foodInventory', petId] }),
       queryClient.invalidateQueries({ queryKey: ['petRecords', petId] }),
     ]);
-    await refreshAllPetsCareNotifications().catch(() => {});
-    await refreshCareStatusWidget().catch(() => {});
+    await refreshAllPetsCareNotifications().catch((error) => {
+      console.warn('[care-tools] Failed to refresh care notifications', error);
+    });
+    await refreshCareStatusWidget().catch((error) => {
+      console.warn('[care-tools] Failed to refresh care widget', error);
+    });
   };
 
   const handleAddMedicationPlan = async () => {
@@ -394,13 +400,16 @@ export default function PetCareToolsScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.headerRow}>
-          <Pressable onPress={() => router.back()} hitSlop={8}>
-            <ThemedText type="linkPrimary">← Back</ThemedText>
-          </Pressable>
-        </ThemedView>
+        <KeyboardAvoidingView
+          style={styles.keyboardAvoiding}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <ThemedView style={styles.headerRow}>
+            <Pressable onPress={() => router.back()} hitSlop={8}>
+              <ThemedText type="linkPrimary">← Back</ThemedText>
+            </Pressable>
+          </ThemedView>
 
-        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <ScrollView contentContainerStyle={styles.scrollContent} keyboardShouldPersistTaps="handled">
           <Card variant="soft" style={styles.heroCard}>
             <ThemedText type="title" style={styles.title}>
               {pet.nickname}&apos;s care tools
@@ -782,7 +791,8 @@ export default function PetCareToolsScreen() {
               ))}
             </View>
           </Collapsible>
-        </ScrollView>
+          </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
     </ThemedView>
   );
@@ -799,6 +809,9 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
+  },
+  keyboardAvoiding: {
+    flex: 1,
   },
   headerRow: {
     flexDirection: 'row',

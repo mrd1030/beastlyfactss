@@ -36,22 +36,24 @@ export function ConfirmDialog({
 
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={onCancel}>
-      <Pressable style={styles.backdrop} onPress={onCancel}>
+      <Pressable style={styles.backdrop} onPress={onCancel} accessibilityRole="button" accessibilityLabel="Dismiss dialog">
         <Pressable onPress={(e) => e.stopPropagation()} style={styles.cardWrapper}>
-          <ThemedView type="backgroundElement" style={styles.card}>
-            <ThemedText type="smallBold">{title}</ThemedText>
+          <ThemedView type="backgroundElement" style={styles.card} accessibilityViewIsModal accessibilityRole="alert">
+            <ThemedText type="smallBold" accessibilityRole="header">
+              {title}
+            </ThemedText>
             {message ? (
               <ThemedText type="small" themeColor="textSecondary">
                 {message}
               </ThemedText>
             ) : null}
             <View style={styles.actions}>
-              <Pressable onPress={onCancel} hitSlop={8}>
+              <Pressable onPress={onCancel} hitSlop={8} accessibilityRole="button" accessibilityLabel={cancelLabel}>
                 <ThemedView type="backgroundSelected" style={styles.button}>
                   <ThemedText type="smallBold">{cancelLabel}</ThemedText>
                 </ThemedView>
               </Pressable>
-              <Pressable onPress={onConfirm} hitSlop={8}>
+              <Pressable onPress={onConfirm} hitSlop={8} accessibilityRole="button" accessibilityLabel={confirmLabel}>
                 <ThemedView type="background" style={[styles.button, { backgroundColor: theme.accent }]}>
                   <ThemedText type="smallBold" style={{ color: theme.onAccent }}>
                     {confirmLabel}

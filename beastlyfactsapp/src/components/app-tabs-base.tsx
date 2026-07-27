@@ -5,7 +5,7 @@ import { Pressable, StyleSheet, View } from 'react-native';
 
 import { ThemedText } from './themed-text';
 
-import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, MinTouchTarget, Spacing } from '@/constants/theme';
 import { useThemePreference } from '@/contexts/theme-preference';
 
 type IconName = keyof typeof Ionicons.glyphMap;
@@ -64,7 +64,12 @@ function FooterButton({
   const colors = Colors[colorScheme];
 
   return (
-    <Pressable onPress={onPress} style={({ pressed }) => [styles.tabButton, pressed && styles.pressed]}>
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="tab"
+      accessibilityLabel={label}
+      accessibilityState={{ selected: isFocused }}
+      style={({ pressed }) => [styles.tabButton, pressed && styles.pressed]}>
       <View style={[styles.iconWrap, isFocused && { backgroundColor: colors.backgroundSelected }]}>
         <Ionicons
           name={isFocused ? activeIcon : icon}
@@ -108,6 +113,8 @@ function FooterContainer({ children }: { children: ReactNode }) {
 
   return (
     <View
+      accessibilityRole="tablist"
+      accessibilityLabel="Primary navigation"
       style={[
         styles.tabListContainer,
         { backgroundColor: colors.background, borderTopColor: colors.backgroundElement },
@@ -135,7 +142,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: Spacing.half,
-    minHeight: 52,
+    minHeight: MinTouchTarget + 8,
   },
   pressed: {
     opacity: 0.7,

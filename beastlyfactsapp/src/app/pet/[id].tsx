@@ -1,7 +1,7 @@
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useMemo, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { Image, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Card } from '@/components/card';
@@ -316,16 +316,19 @@ export default function PetDetailScreen() {
   return (
     <ThemedView style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
-        <ThemedView style={styles.headerRow}>
-          <Pressable onPress={() => router.back()} hitSlop={8}>
-            <ThemedText type="linkPrimary">← Back</ThemedText>
-          </Pressable>
-          <Pressable onPress={() => router.push({ pathname: '/pet/form', params: { petId: pet.id } })} hitSlop={8}>
-            <ThemedText type="linkPrimary">Edit</ThemedText>
-          </Pressable>
-        </ThemedView>
+        <KeyboardAvoidingView
+          style={styles.keyboardAvoiding}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+          <ThemedView style={styles.headerRow}>
+            <Pressable onPress={() => router.back()} hitSlop={8}>
+              <ThemedText type="linkPrimary">← Back</ThemedText>
+            </Pressable>
+            <Pressable onPress={() => router.push({ pathname: '/pet/form', params: { petId: pet.id } })} hitSlop={8}>
+              <ThemedText type="linkPrimary">Edit</ThemedText>
+            </Pressable>
+          </ThemedView>
 
-        <ScrollView contentContainerStyle={styles.scrollContent}>
+          <ScrollView contentContainerStyle={styles.scrollContent} keyboardShouldPersistTaps="handled">
           <Card variant="soft" style={styles.heroCard}>
             <View style={styles.profileRow}>
               {pet.photoUri ? (
@@ -732,7 +735,8 @@ export default function PetDetailScreen() {
               </ThemedView>
             )}
           </ThemedView>
-        </ScrollView>
+          </ScrollView>
+        </KeyboardAvoidingView>
       </SafeAreaView>
       <ConfirmDialog
         visible={!!pendingConfirm}
@@ -772,6 +776,9 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
     paddingHorizontal: Spacing.three,
     paddingTop: Spacing.three,
+  },
+  keyboardAvoiding: {
+    flex: 1,
   },
   headerRow: {
     flexDirection: 'row',

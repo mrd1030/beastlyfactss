@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, View } from 'react-native';
 
-import { Radius, Spacing } from '@/constants/theme';
+import { MinTouchTarget, Radius, Spacing } from '@/constants/theme';
+import { getPaginationAccessibility } from '@/lib/accessibility';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
@@ -23,10 +24,16 @@ export function PaginationRow({
 
   const atStart = page === 0;
   const atEnd = page >= pageCount - 1;
+  const accessibility = getPaginationAccessibility(atStart, atEnd);
 
   return (
     <View style={styles.row}>
-      <Pressable disabled={atStart} onPress={() => onChange(Math.max(0, page - 1))}>
+      <Pressable
+        disabled={atStart}
+        onPress={() => onChange(Math.max(0, page - 1))}
+        accessibilityRole="button"
+        accessibilityLabel="Previous page"
+        accessibilityState={{ disabled: accessibility.previousDisabled }}>
         <ThemedView type="backgroundElement" style={[styles.button, atStart && styles.disabled]}>
           <ThemedText type="smallBold" themeColor={atStart ? 'textSecondary' : 'text'}>
             ← Prev
@@ -40,7 +47,12 @@ export function PaginationRow({
         </ThemedText>
       </View>
 
-      <Pressable disabled={atEnd} onPress={() => onChange(Math.min(pageCount - 1, page + 1))}>
+      <Pressable
+        disabled={atEnd}
+        onPress={() => onChange(Math.min(pageCount - 1, page + 1))}
+        accessibilityRole="button"
+        accessibilityLabel="Next page"
+        accessibilityState={{ disabled: accessibility.nextDisabled }}>
         <ThemedView type="backgroundElement" style={[styles.button, atEnd && styles.disabled]}>
           <ThemedText type="smallBold" themeColor={atEnd ? 'textSecondary' : 'text'}>
             Next →
@@ -61,6 +73,7 @@ const styles = StyleSheet.create({
   },
   button: {
     minWidth: 96,
+    minHeight: MinTouchTarget,
     borderRadius: Radius.pill,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,

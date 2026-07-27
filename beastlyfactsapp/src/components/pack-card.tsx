@@ -14,6 +14,7 @@ import { getGuideImageResizeMode, getGuideImageSource } from '@/content-client/g
 import type { ProvisionalEntry } from '@/content-client/types';
 import { sanityImageUrl } from '@/content-client/sanityClient';
 import type { UnlockMethod } from '@/db/types';
+import { useReducedMotion } from '@/hooks/use-reduced-motion';
 import { useTheme } from '@/hooks/use-theme';
 
 import { ThemedText } from './themed-text';
@@ -54,18 +55,19 @@ export function PackCard({
 }) {
   const flip = useSharedValue(discovered ? 1 : 0);
   const wasDiscoveredRef = useRef(discovered);
+  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (!wasDiscoveredRef.current && discovered) {
       // Locked -> unlocked transition: play the reveal once.
-      flip.value = withTiming(1, { duration: FLIP_DURATION, easing: Easing.out(Easing.cubic) });
+      flip.value = reducedMotion ? 1 : withTiming(1, { duration: FLIP_DURATION, easing: Easing.out(Easing.cubic) });
     } else {
       // Either already discovered on mount, or (shouldn't normally
       // happen) went back to locked — snap without animating.
       flip.value = discovered ? 1 : 0;
     }
     wasDiscoveredRef.current = discovered;
-  }, [discovered, flip]);
+  }, [discovered, flip, reducedMotion]);
 
   const frontStyle = useAnimatedStyle(() => ({
     opacity: interpolate(flip.value, [0, 0.5, 0.5001, 1], [1, 1, 0, 0], Extrapolation.CLAMP),
@@ -89,7 +91,12 @@ export function PackCard({
   const showEmoji = !thumb && !!entry.emoji;
 
   return (
-    <Pressable onPress={onPress} style={styles.wrapper}>
+    <Pressable
+      onPress={onPress}
+      style={styles.wrapper}
+      accessibilityRole="button"
+      accessibilityLabel={discovered ? `Open ${entry.title}` : 'Locked collection card'}
+      accessibilityHint={discovered ? 'Opens entry details.' : 'Read or complete quiz to unlock this card.'}>
       <View style={styles.stack}>
         <Animated.View
           style={[styles.face, frontStyle]}

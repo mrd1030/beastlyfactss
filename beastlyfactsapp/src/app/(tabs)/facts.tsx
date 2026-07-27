@@ -8,25 +8,15 @@ import { PaginationRow } from '@/components/pagination-row';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { TwoToneTitle } from '@/components/two-tone-title';
-import { BottomTabInset, MaxContentWidth, Radius, Spacing, getCategoryAccent } from '@/constants/theme';
+import { BottomTabInset, MaxContentWidth, MinTouchTarget, Radius, Spacing, getCategoryAccent } from '@/constants/theme';
 import { getAllFactCategories, getAllFacts } from '@/content-client/facts-catalog';
 import { useThemePreference } from '@/contexts/theme-preference';
 import { useFavorites } from '@/hooks/use-favorites';
 import { getFactFavoriteId } from '@/lib/favorite-keys';
+import { filterFacts, orderFacts, paginateFacts, shuffleArray } from '@/lib/facts-utils';
 import { useTheme } from '@/hooks/use-theme';
 
 const FACTS_PAGE_SIZE = 12;
-
-/** Fisher-Yates - unbiased and the standard choice, matching the site's own
- * facts-page shuffle (beastlyfactss/src/pages/Facts.jsx). */
-function shuffleArray<T>(items: T[]): T[] {
-  const shuffled = [...items];
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-  return shuffled;
-}
 
 export default function FactsScreen() {
   const theme = useTheme();
@@ -44,29 +34,20 @@ export default function FactsScreen() {
   const categories = useMemo(() => getAllFactCategories(), []);
 
   const visibleFacts = useMemo(() => {
-    const query = searchText.trim().toLowerCase();
-    return allFacts.filter((fact) => {
-      if (activeCategory && fact.category !== activeCategory) return false;
-      if (query) {
-        const haystack = `${fact.title} ${fact.animal} ${fact.fact}`.toLowerCase();
-        if (!haystack.includes(query)) return false;
-      }
-      return true;
-    });
+    return filterFacts(allFacts, activeCategory, searchText);
   }, [allFacts, activeCategory, searchText]);
 
   // Random order is a snapshot of ids, established once when the shuffle
   // toggles on, so pagination doesn't reshuffle every page turn - it's re-
   // filtered against whatever category/search currently applies.
   const displayFacts = useMemo(() => {
-    if (!randomized || randomOrderIds.length === 0) return visibleFacts;
-    const byId = new Map(visibleFacts.map((fact) => [fact.id, fact]));
-    return randomOrderIds.filter((id) => byId.has(id)).map((id) => byId.get(id)!);
+    return orderFacts(visibleFacts, randomized, randomOrderIds);
   }, [visibleFacts, randomized, randomOrderIds]);
 
-  const pageCount = Math.max(1, Math.ceil(displayFacts.length / FACTS_PAGE_SIZE));
-  const currentPage = Math.min(page, pageCount - 1);
-  const paginatedFacts = displayFacts.slice(currentPage * FACTS_PAGE_SIZE, (currentPage + 1) * FACTS_PAGE_SIZE);
+  const { pageCount, currentPage, factsPage: paginatedFacts } = useMemo(
+    () => paginateFacts(displayFacts, page, FACTS_PAGE_SIZE),
+    [displayFacts, page]
+  );
 
   const goToPage = (nextPage: number) => {
     setPage(nextPage);
@@ -154,9 +135,14 @@ export default function FactsScreen() {
                     placeholder="Search facts or animals…"
                     placeholderTextColor={theme.textSecondary}
                     style={[styles.searchInput, { color: theme.text }]}
+                    accessibilityLabel="Search facts"
+                    returnKeyType="search"
                   />
                 </ThemedView>
-                <Pressable onPress={handleRandomize} accessibilityLabel="Shuffle facts">
+                <Pressable
+                  onPress={handleRandomize}
+                  accessibilityRole="button"
+                  accessibilityLabel={randomized ? 'Disable shuffled facts order' : 'Shuffle facts'}>
                   <ThemedView
                     type={randomized ? 'backgroundSelected' : 'backgroundElement'}
                     style={[styles.randomizeButton, randomized && { borderColor: theme.accent, borderWidth: 1 }]}>
@@ -166,7 +152,11 @@ export default function FactsScreen() {
               </View>
 
               <View style={styles.categoryWrap}>
-                <Pressable onPress={() => selectCategory(null)}>
+                <Pressable
+                  onPress={() => selectCategory(null)}
+                  accessibilityRole="button"
+                  accessibilityLabel="Show all fact categories"
+                  accessibilityState={{ selected: activeCategory === null }}>
                   <View
                     style={[
                       styles.categoryChip,
@@ -181,7 +171,12 @@ export default function FactsScreen() {
                   const selected = activeCategory === item;
                   const accent = getCategoryAccent(item, colorScheme);
                   return (
-                    <Pressable key={item} onPress={() => selectCategory(selected ? null : item)}>
+                    <Pressable
+                      key={item}
+                      onPress={() => selectCategory(selected ? null : item)}
+                      accessibilityRole="button"
+                      accessibilityLabel={`${selected ? 'Clear' : 'Filter by'} ${item} category`}
+                      accessibilityState={{ selected }}>
                       <View
                         style={[
                           styles.categoryChip,
@@ -289,6 +284,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
     borderRadius: Radius.pill,
+    minHeight: MinTouchTarget,
+    justifyContent: 'center',
   },
   emptyState: {
     alignItems: 'center',

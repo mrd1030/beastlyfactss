@@ -1,56 +1,91 @@
-# Welcome to your Expo app 👋
+# beastlyfactsapp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Mobile app for BeastlyFacts (Expo SDK 57).
 
-## Get started
+## Scope lock
 
-1. Install dependencies
+This implementation is scoped to:
 
-   ```bash
-   npm install
-   ```
+- `/home/runner/work/beastlyfactss/beastlyfactss/beastlyfactsapp`
 
-2. Start the app
+Critical paths prioritized:
 
-   ```bash
-   npx expo start
-   ```
+- Home (`src/app/(tabs)/index.tsx`)
+- Facts (`src/app/(tabs)/facts.tsx`)
+- Library/Guides (`src/components/library-screen.tsx`)
+- Pets (`src/app/(tabs)/profile.tsx`)
+- Settings (`src/app/(tabs)/settings.tsx`)
+- Entry (`src/app/entry/[id].tsx`)
+- Encyclopedia (`src/app/encyclopedia/[id].tsx`)
 
-In the output, you'll find options to open the app in a
+## Acceptance criteria
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Accessibility
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Interactive controls expose role/label/state semantics.
+- Modal and collapsible surfaces expose dialog/expanded semantics.
+- Text scales with dynamic type (font scaling enabled with max multiplier).
+- Reduced-motion users receive reduced animation behavior.
+- Accessibility smoke tests run in CI.
 
-## Get a fresh project
+### Quality gates
 
-When you're ready, run:
+Required commands:
 
 ```bash
-npm run reset-project
+npm run lint
+npm run typecheck
+npm run test:coverage
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Composite gate:
 
-### Other setup steps
+```bash
+npm run quality
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+CI workflows:
 
-## Learn more
+- `.github/workflows/beastlyfactsapp-quality.yml`
+- `.github/workflows/beastlyfactsapp-codeql.yml`
 
-To learn more about developing your project with Expo, look at the following resources:
+> Branch protection/status-check enforcement is configured in GitHub repository settings; set these workflows as required checks for `main`.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Mobile friendliness
 
-## Join the community
+- Touchable controls maintain accessible tap targets and semantic labels.
+- Core scroll/list screens preserve safe-area and bottom inset behavior.
+- UI text remains readable under scaled fonts.
 
-Join our community of developers creating universal apps.
+### Advanced functions
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Implemented foundations:
+
+- Universal/deep link config in `app.json`.
+- Offline sync queue (`src/lib/offline-sync-queue.ts`).
+- Background refresh loop (`src/lib/background-refresh.ts`).
+- Runtime telemetry abstraction (`src/lib/telemetry.ts`).
+- Remote config / feature flag bootstrap (`src/lib/remote-config.ts`).
+- i18n-ready translation utility (`src/lib/i18n.ts`).
+
+`app.json` `expo.extra.remoteConfig` values are baseline defaults; runtime loading in `src/lib/remote-config.ts` applies these and supports environment-specific overrides through Expo config injection.
+
+## Development
+
+```bash
+npm install
+npm run start
+```
+
+## Test coverage targets
+
+Jest coverage thresholds are enforced in `jest.config.js`:
+
+- Branches: 64%
+- Functions: 85%
+- Lines: 85%
+- Statements: 80%
+
+## Accessibility regression checklist
+
+See `/home/runner/work/beastlyfactss/beastlyfactss/beastlyfactsapp/docs/accessibility-regression-checklist.md`.
