@@ -38,7 +38,7 @@ async function generateThumbs() {
       const baseName = path.basename(input, ext);
       if (baseName.endsWith('-thumb')) continue;
 
-      const base = input.replace(new RegExp(`\\${ext}$`, 'i'), '');
+      const base = input.slice(0, -ext.length);
       const webpOut = `${base}-thumb.webp`;
       const jpgOut = `${base}-thumb.jpg`;
 
