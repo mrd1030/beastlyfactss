@@ -4,6 +4,13 @@ export default defineType({
     name: 'category',
     title: 'Category',
     type: 'document',
+    orderings: [
+        {
+            title: 'Title A-Z',
+            name: 'titleAsc',
+            by: [{ field: 'title', direction: 'asc' }],
+        },
+    ],
     fields: [
         defineField({
             name: 'title',

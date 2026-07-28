@@ -111,10 +111,11 @@ export default function Search() {
     return sort === 'newest' ? db - da : da - db;
   });
 
-  // Guides/encyclopedia/glossary live in static data, not Sanity, so they need
-  // their own client-side match - the query above only ever searches blog posts.
+  // Guides/encyclopedia/glossary/MDX articles live in static data, not Sanity,
+  // so they need their own client-side match - the query above only ever
+  // searches Sanity-native blog posts, never the 200+ MDX articles at /blog/.
   const localResults = useMemo(() => searchLocalContent(query), [query]);
-  const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
+  const localResultsFlat = [...localResults.articles, ...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
 
   return (
     <div className="min-h-screen">
@@ -169,7 +170,7 @@ export default function Search() {
         {query.trim() && localResultsFlat.length > 0 && (
           <div className="mb-6">
             <p className="text-sm font-body text-muted-foreground mb-3">
-              {localResultsFlat.length} guide{localResultsFlat.length !== 1 ? 's' : ''} & reference match{localResultsFlat.length !== 1 ? 'es' : ''} for "{query}"
+              {localResultsFlat.length} article{localResultsFlat.length !== 1 ? 's' : ''}, guide{localResultsFlat.length !== 1 ? 's' : ''} & reference match{localResultsFlat.length !== 1 ? 'es' : ''} for "{query}"
             </p>
             <div className="space-y-2">
               {localResultsFlat.map(result => (

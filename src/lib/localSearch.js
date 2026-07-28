@@ -1,8 +1,11 @@
-// Client-side search over the site's static data (guides, encyclopedia, glossary) -
-// these aren't in Sanity, so Search.jsx's Sanity query alone never surfaces them.
+// Client-side search over the site's static data (guides, encyclopedia, glossary,
+// and MDX blog/guide articles) - none of these are in Sanity, so Search.jsx's
+// Sanity query alone never surfaces them.
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { CATEGORIES as GLOSSARY_CATEGORIES } from '@/lib/data/glossaryTerms';
+import { mdxPosts } from '@/lib/mdxPosts';
+import { isChroniclesPost } from '@/lib/chronicles';
 import { slugify } from '@/lib/utils/slugify';
 
 const MAX_PER_TYPE = 6;
@@ -13,7 +16,7 @@ function matches(text, q) {
 
 export function searchLocalContent(query) {
   const q = query.trim().toLowerCase();
-  if (!q) return { guides: [], encyclopedia: [], glossary: [] };
+  if (!q) return { guides: [], encyclopedia: [], glossary: [], articles: [] };
 
   const guides = allGuides
     .filter(g => matches(g.name, q) || matches(g.tagline, q) || matches(g.petType, q))
@@ -56,5 +59,18 @@ export function searchLocalContent(query) {
     });
   });
 
-  return { guides, encyclopedia, glossary };
+  const articles = mdxPosts
+    .filter(p => !isChroniclesPost(p))
+    .filter(p => matches(p.title, q) || matches(p.excerpt, q) || (p.tags || []).some(t => matches(t, q)))
+    .slice(0, MAX_PER_TYPE)
+    .map(p => ({
+      key: `article-${p._id}`,
+      type: 'Article',
+      emoji: p.emoji || '📰',
+      title: p.title,
+      subtitle: p.excerpt,
+      to: `/blog/${p.slug.current}/`,
+    }));
+
+  return { guides, encyclopedia, glossary, articles };
 }

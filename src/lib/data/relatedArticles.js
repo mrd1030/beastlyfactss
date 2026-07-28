@@ -16,7 +16,7 @@ export const RELATED_ARTICLES = {
   'axolotl': ['axolotl-cost-guide', 'axolotl-handling-guide', 'axolotl-health-issues-guide', 'axolotl-tank-setup-guide'],
   'chinchilla': ['chinchilla-cost-guide', 'chinchilla-handling-guide', 'chinchilla-health-issues-guide', 'chinchilla-tank-setup-guide'],
   'jumping-spider': ['invertebrate-molting-guide'],
-  'praying-mantis': ['praying-mantis-ootheca-guide'],
+  'praying-mantis': ['praying-mantis-ootheca-guide', 'praying-mantis-cost-guide', 'praying-mantis-handling-guide', 'praying-mantis-health-issues-guide', 'praying-mantis-tank-setup-guide'],
   'rabbit': ['rabbit-gi-stasis-guide', 'rabbit-cost-guide', 'rabbit-handling-guide', 'rabbit-health-issues-guide', 'rabbit-tank-setup-guide'],
   'ball-python': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide'],
   'corn-snake': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide', 'corn-snake-cost-guide', 'corn-snake-handling-guide', 'corn-snake-health-issues-guide', 'corn-snake-tank-setup-guide'],
@@ -46,4 +46,7 @@ export const RELATED_ARTICLES = {
   'hedgehog': ['hedgehog-cost-guide', 'hedgehog-handling-guide', 'hedgehog-health-issues-guide', 'hedgehog-tank-setup-guide'],
   'lovebird': ['lovebird-cost-guide', 'lovebird-handling-guide', 'lovebird-health-issues-guide', 'lovebird-tank-setup-guide'],
   'guppy': ['guppy-cost-guide', 'guppy-handling-guide', 'guppy-health-issues-guide', 'guppy-tank-setup-guide'],
+  'boa-constrictor': ['boa-constrictor-cost-guide', 'boa-constrictor-handling-guide', 'boa-constrictor-health-issues-guide', 'boa-constrictor-tank-setup-guide'],
+  'sugar-glider': ['sugar-glider-cost-guide', 'sugar-glider-handling-guide', 'sugar-glider-health-issues-guide', 'sugar-glider-tank-setup-guide'],
+  'neon-tetra': ['neon-tetra-cost-guide', 'neon-tetra-handling-guide', 'neon-tetra-health-issues-guide', 'neon-tetra-tank-setup-guide'],
 };

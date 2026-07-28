@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ChevronDown, Clock } from 'lucide-react';
+import { ArrowLeft, ChevronDown, Clock, Search as SearchIcon, X } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { client } from '@/lib/sanity';
 import { fetchCategories } from '@/lib/sanityCategories';
@@ -50,6 +50,7 @@ export default function Blog() {
   const [sanityPosts, setSanityPosts] = useState([]);
   const [sanityCategories, setSanityCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
+  const [search, setSearch] = useState('');
   const [selectedPost, setSelectedPost] = useState(null);
   const [page, setPage] = useState(1);
   const [fetchError, setFetchError] = useState(false);
@@ -123,6 +124,12 @@ export default function Blog() {
     }
   }, [location.search, routeSlug, catSlug, sanityPosts]);
 
+  // Free-text filtering is client-side only (not URL-synced) - reset back to
+  // page 1 whenever the query changes so a stale deep page doesn't render empty.
+  useEffect(() => {
+    setPage(1);
+  }, [search]);
+
   // Chronicles short stories live on their own page (/chronicles/) - keep
   // them out of the listing, category pills, and sidebars entirely.
   const allPosts = [
@@ -143,13 +150,21 @@ export default function Blog() {
     });
 
 
+  const searchQuery = search.trim().toLowerCase();
+
   const filtered = allPosts.filter(p => {
-    if (slugify(activeCategory) === 'all') return true;
-    const lowerActive = slugify(activeCategory);
-    if (p.allCategories && Array.isArray(p.allCategories)) {
-      return p.allCategories.some(cat => slugify(cat) === lowerActive);
+    if (slugify(activeCategory) !== 'all') {
+      const lowerActive = slugify(activeCategory);
+      const inCategory = p.allCategories && Array.isArray(p.allCategories)
+        ? p.allCategories.some(cat => slugify(cat) === lowerActive)
+        : p.category && slugify(p.category) === lowerActive;
+      if (!inCategory) return false;
     }
-    return p.category && slugify(p.category) === lowerActive;
+    if (searchQuery) {
+      const haystack = `${p.title || ''} ${p.excerpt || ''}`.toLowerCase();
+      if (!haystack.includes(searchQuery)) return false;
+    }
+    return true;
   });
 
   // Count non-Sanity posts per category slug
@@ -305,7 +320,23 @@ export default function Blog() {
             </p>
           </motion.div>
 
-          <div className="flex flex-wrap gap-2 mt-5">
+          <div className="relative max-w-sm mt-5">
+            <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search articles by title..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full bg-card border border-border rounded-xl pl-10 pr-9 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
+            />
+            {search && (
+              <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
+                <X className="w-4 h-4 text-muted-foreground hover:text-foreground" />
+              </button>
+            )}
+          </div>
+
+          <div className="flex flex-wrap gap-2 mt-4">
             <Link
               to="/blog/"
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
@@ -349,6 +380,13 @@ export default function Blog() {
                   <CompactPostCard post={post} onClick={() => handleSelectPost(post)} />
                 </motion.div>
               ))}
+              {filtered.length === 0 && (
+                <div className="text-center py-12">
+                  <span className="text-3xl block mb-2">😿</span>
+                  <p className="font-display font-bold text-foreground text-sm">No articles found</p>
+                  <p className="text-xs text-muted-foreground font-body mt-1">Try a different search term or category.</p>
+                </div>
+              )}
             </div>
 
             {totalPages > 1 && (
