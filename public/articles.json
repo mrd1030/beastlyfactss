@@ -9,6 +9,46 @@
       "category": "Site News"
     },
     {
+      "slug": "ackie-milksnake-mhc-angelfish-overview",
+      "title": "Ackie Monitor, Milk Snake, Hissing Cockroach & Angelfish Compared",
+      "excerpt": "Look at each of these for the first time and you'd guess wrong about what you're actually getting.",
+      "date": "2026-08-27",
+      "image": "/assets/guides/ackie-milksnake-mhc-angelfish-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "ackie-monitor-cost-guide",
+      "title": "Ackie Monitor Cost: Full Price Breakdown",
+      "excerpt": "Ackie monitors are a genuine step up in investment from most beginner lizards, both in what the animal costs and in what it takes to house one properly.",
+      "date": "2026-08-27",
+      "image": "/assets/images/ackie-monitor-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ackie-monitor-handling-guide",
+      "title": "How to Handle an Ackie Monitor Safely",
+      "excerpt": "Ackie monitors are a genuinely different kind of lizard to interact with compared to the sit-and-bask species already covered on this site, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
+      "date": "2026-08-27",
+      "image": "/assets/images/ackie-monitor-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ackie-monitor-health-issues-guide",
+      "title": "Ackie Monitor Health Issues: Signs & Causes",
+      "excerpt": "Ackie monitors are hardy animals, and the health issues that do show up trace back almost entirely to a small number of preventable husbandry gaps.",
+      "date": "2026-08-27",
+      "image": "/assets/images/ackie-monitor-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "ackie-monitor-tank-setup-guide",
+      "title": "Ackie Monitor Enclosure Setup Guide",
+      "excerpt": "Ackie monitor husbandry runs hotter and bigger than most reptile setups, and getting comfortable with those numbers upfront is really the key to keeping this species well.",
+      "date": "2026-08-27",
+      "image": "/assets/images/ackie-monitor-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "african-fat-tail-cost-guide",
       "title": "African Fat-Tailed Gecko Cost: Full Price Breakdown",
       "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
@@ -39,6 +79,38 @@
       "date": "2026-07-26",
       "image": "/assets/images/african-fat-tail-tank-setup.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "angelfish-cost-guide",
+      "title": "Angelfish Cost: Full Price Breakdown",
+      "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
+      "date": "2026-08-27",
+      "image": "/assets/images/angelfish-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "angelfish-handling-guide",
+      "title": "Angelfish Behavior: Territoriality & Tank Mates",
+      "excerpt": "Angelfish are an observation fish, not a hands-on pet, but there's a genuinely important behavioral fact to understand before stocking a community tank with them: this is a cichlid, and it doesn't stay peaceful forever.",
+      "date": "2026-08-27",
+      "image": "/assets/images/angelfish-handling.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "angelfish-health-issues-guide",
+      "title": "Angelfish Health Issues: Signs & Causes",
+      "excerpt": "Angelfish are hardy in a properly sized, well-maintained tank, and most health problems trace back to water quality and stress, a pattern that holds true across nearly every fish covered on this site.",
+      "date": "2026-08-27",
+      "image": "/assets/images/angelfish-health-issues.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "angelfish-tank-setup-guide",
+      "title": "Angelfish Tank Setup Guide",
+      "excerpt": "Angelfish have an unusual body shape for a community fish, tall and laterally flattened, and that shape drives nearly every decision in setting up their tank correctly.",
+      "date": "2026-08-27",
+      "image": "/assets/images/angelfish-tank-setup.jpg",
+      "category": "Fish"
     },
     {
       "slug": "axolotl-cost-guide",
@@ -1201,12 +1273,76 @@
       "category": "Birds"
     },
     {
+      "slug": "madagascar-hissing-cockroach-cost-guide",
+      "title": "Madagascar Hissing Cockroach Cost: Full Price Breakdown",
+      "excerpt": "Madagascar hissing cockroaches are genuinely the most affordable pet on this entire site, both to buy and to keep, and the tradeoff is a display and observation pet rather than a handling-focused one.",
+      "date": "2026-08-27",
+      "image": "/assets/images/madagascar-hissing-cockroach-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
       "slug": "madagascar-hissing-cockroach-feeding-guide",
       "title": "Hissing Cockroach Feeding Guide: Schedule and Diet",
       "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe produce, and how to tell normal nocturnal habits from real trouble.",
       "date": "2026-07-27",
       "image": "/assets/images/madagascar-hissing-cockroach-feeding.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "madagascar-hissing-cockroach-handling-guide",
+      "title": "Madagascar Hissing Cockroach Handling & Hiss Guide",
+      "excerpt": "Madagascar hissing cockroaches are docile for an insect, genuinely more so than most people expect, but this is fundamentally a display and observation pet, not a handling-focused one.",
+      "date": "2026-08-27",
+      "image": "/assets/images/madagascar-hissing-cockroach-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "madagascar-hissing-cockroach-health-issues-guide",
+      "title": "Madagascar Hissing Cockroach Health Issues: Signs & Causes",
+      "excerpt": "This species is genuinely hardy, and nearly everything that goes wrong traces back to humidity or basic enclosure hygiene, both easy to get right once you know what to watch for.",
+      "date": "2026-08-27",
+      "image": "/assets/images/madagascar-hissing-cockroach-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "madagascar-hissing-cockroach-tank-setup-guide",
+      "title": "Madagascar Hissing Cockroach Enclosure Setup Guide",
+      "excerpt": "This is genuinely one of the simpler enclosures on this entire site to set up correctly, with one specific detail that matters more than anything else: keeping them from climbing out.",
+      "date": "2026-08-27",
+      "image": "/assets/images/madagascar-hissing-cockroach-tank-setup.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "milk-snake-cost-guide",
+      "title": "Milk Snake Cost: Full Price Breakdown",
+      "excerpt": "Milk snakes span a wide price range by subspecies and morph, $60 to $500 for the animal itself, but even the high end stays genuinely affordable next to many other pet reptiles.",
+      "date": "2026-08-27",
+      "image": "/assets/images/milk-snake-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "milk-snake-handling-guide",
+      "title": "How to Handle a Milk Snake Correctly",
+      "excerpt": "Milk snakes are docile overall and generally tolerate handling well, but they run a bit muskier and flightier than the corn snake, especially while young, plus one firm rule about never housing two together.",
+      "date": "2026-08-27",
+      "image": "/assets/images/milk-snake-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "milk-snake-health-issues-guide",
+      "title": "Milk Snake Health Issues: Signs & Causes",
+      "excerpt": "Milk snakes are hardy, and most of what shows up on this list traces back to enclosure moisture and temperature, both fully within an owner's control.",
+      "date": "2026-08-27",
+      "image": "/assets/images/milk-snake-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "milk-snake-tank-setup-guide",
+      "title": "Milk Snake Tank Setup Guide",
+      "excerpt": "Milk snake care closely mirrors the corn snake's, familiar territory if you've kept one before, with a couple of details specific to this species worth getting right.",
+      "date": "2026-08-27",
+      "image": "/assets/images/milk-snake-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "mourning-gecko-cost-guide",

@@ -49,4 +49,8 @@ export const RELATED_ARTICLES = {
   'boa-constrictor': ['boa-constrictor-cost-guide', 'boa-constrictor-handling-guide', 'boa-constrictor-health-issues-guide', 'boa-constrictor-tank-setup-guide'],
   'sugar-glider': ['sugar-glider-cost-guide', 'sugar-glider-handling-guide', 'sugar-glider-health-issues-guide', 'sugar-glider-tank-setup-guide'],
   'neon-tetra': ['neon-tetra-cost-guide', 'neon-tetra-handling-guide', 'neon-tetra-health-issues-guide', 'neon-tetra-tank-setup-guide'],
+  'ackie-monitor': ['ackie-monitor-cost-guide', 'ackie-monitor-handling-guide', 'ackie-monitor-health-issues-guide', 'ackie-monitor-tank-setup-guide'],
+  'milk-snake': ['milk-snake-cost-guide', 'milk-snake-handling-guide', 'milk-snake-health-issues-guide', 'milk-snake-tank-setup-guide'],
+  'madagascar-hissing-cockroach': ['madagascar-hissing-cockroach-feeding-guide', 'madagascar-hissing-cockroach-cost-guide', 'madagascar-hissing-cockroach-handling-guide', 'madagascar-hissing-cockroach-health-issues-guide', 'madagascar-hissing-cockroach-tank-setup-guide'],
+  'angelfish': ['angelfish-cost-guide', 'angelfish-handling-guide', 'angelfish-health-issues-guide', 'angelfish-tank-setup-guide'],
 };
