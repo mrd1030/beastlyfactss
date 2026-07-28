@@ -4929,6 +4929,212 @@
     ]
   },
   {
+    "path": "/content/guides/guppy-cost-guide.mdx",
+    "slug": "guppy-cost-guide",
+    "title": "How Much Does Guppy Ownership Really Cost?",
+    "seoTitle": "Guppy Fish Cost: Full Price Breakdown",
+    "excerpt": "Guppies are about as affordable as pets get on this entire site, cheap to buy and cheap to keep. The cost most new owners forget to budget for isn't money, it's more guppies than they planned on.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "tags": [
+      "Guppy",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-cost.jpg",
+    "imageAlt": "Colorful guppies swimming in a small planted freshwater aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a guppy fish cost?",
+        "a": "Standard, wild-type guppies run $2 to $5 each. Fancy varieties with more elaborate color and fin patterns run $10 to $20 per pair. Rare selectively-bred strains, Purple Moscow, 24k Gold, Dragon, and Koi patterns among them, can run $25 and up, occasionally reaching hundreds of dollars from specialty breeders."
+      },
+      {
+        "q": "What does a basic guppy tank setup cost?",
+        "a": "A basic 10-gallon starter kit, tank, filter, heater, water conditioner, and substrate, commonly runs $30 to $100 depending on the brand and size you choose."
+      },
+      {
+        "q": "What are the ongoing costs of keeping guppies?",
+        "a": "Genuinely low. Food, water conditioner, occasional filter media replacement, and a small amount of electricity for the heater and filter make up the entire monthly cost, one of the cheapest pets to maintain covered on this site. Vet visits are rare, most health issues get managed with over-the-counter medication and water quality correction rather than a clinic visit."
+      },
+      {
+        "q": "How long do guppies live?",
+        "a": "2 to 3 years on average, up to 4 or 5 with excellent care. Female fertility drops off after around age 2, which matters if you're planning around a breeding population rather than just a display tank."
+      },
+      {
+        "q": "What's the cost new guppy owners usually forget to plan for?",
+        "a": "More guppies than they started with. A female guppy can store sperm from a single mating for 5 to 10 months and produce up to around 8 separate broods from it without a male present again. Put males and females in the same tank with no plan, and you'll have far more fish within months, which means more tank space, more filtration, and more of every cost above."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "live-terrarium-plants",
+      "guppy-food-hikari-tropical-fancy-guppy",
+      "water-conditioner"
+    ]
+  },
+  {
+    "path": "/content/guides/guppy-handling-guide.mdx",
+    "slug": "guppy-handling-guide",
+    "title": "Guppies Aren't Handled, But They Do Need a Population Plan",
+    "seoTitle": "How to Handle Guppy Fish (and Manage Breeding)",
+    "excerpt": "Guppies are an observation and enjoyment pet, not a hands-on one. The real thing every guppy owner needs to understand isn't handling technique, it's breeding behavior.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "tags": [
+      "Guppy",
+      "Handling",
+      "Fish Behavior",
+      "Breeding",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-handling.jpg",
+    "imageAlt": "A small net gently guiding a guppy during a tank transfer instead of using bare hands",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do you handle guppies the way you'd handle a hamster or a bird?",
+        "a": "No. Guppies are an observation and enjoyment pet, not a hands-on one. If you need to move one, guide it with a net rather than touching it directly, physical contact isn't part of normal guppy care."
+      },
+      {
+        "q": "How do guppies actually breed?",
+        "a": "Guppies are livebearers, females give birth to free-swimming young directly rather than laying eggs. A female can store sperm from a single mating for 5 to 10 months and produce multiple separate broods, commonly cited as up to 8, from that one encounter, without a male present again. Fry survival tends to be high in a typical community tank."
+      },
+      {
+        "q": "How do I manage guppy population if I don't want constant breeding?",
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly one male to two or three females reduces females getting harassed too heavily by mating attempts."
+      },
+      {
+        "q": "What's the most common guppy-keeping mistake?",
+        "a": "Buying a mixed-sex group with no population plan at all, by far the most common mistake. Not cycling the tank before adding fish, which leads to ammonia stress right from the start, and adding too many fish too quickly rather than stocking gradually, round out the list."
+      },
+      {
+        "q": "Can guppies live with betta fish or goldfish?",
+        "a": "Not safely with either. Betta fish are territorial and fin-nipping, a real risk to a guppy's tail, while goldfish are a cold-water species that grows large and needs 20-plus gallons, a temperature and size mismatch for a small tropical fish like the guppy."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/guppy-health-issues-guide.mdx",
+    "slug": "guppy-health-issues-guide",
+    "title": "Common Guppy Health Issues (Water Quality Is the Root of Almost Everything)",
+    "seoTitle": "Guppy Health Issues: Signs & Causes",
+    "excerpt": "Nearly everything on this list connects back to one root cause: water quality. Guppies are hardy fish, but stressed, poorly maintained water opens the door to every condition below.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "tags": [
+      "Guppy",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-health-issues.jpg",
+    "imageAlt": "Close-up of a guppy in a well-maintained aquarium showing healthy fins and coloring",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the most common cause of guppy health problems?",
+        "a": "Water quality. Guppies are hardy fish, but stressed, poorly maintained water, whether that's ammonia buildup, temperature swings, or overcrowding, opens the door to nearly every condition covered here."
+      },
+      {
+        "q": "What is ich and how do you treat it in guppies?",
+        "a": "Small white spots resembling grains of salt across the body and fins, along with flashing, rapid breathing, and lethargy. Caused by stress, often from temperature swings or poor water quality. Treat by gradually raising the tank temperature to around 82°F alongside a commercial ich medication. Guppies don't tolerate aggressive salt treatment well, a common home remedy for other fish, so stick to medication rather than heavy salting."
+      },
+      {
+        "q": "What is velvet and is it contagious?",
+        "a": "A fine, gold or rust-colored dusty coating on the body, along with clamped fins and scratching against decor, caused by poor water conditions or low temperature. Treat with a copper-based medication, raise the temperature slightly, and dim the tank lights during treatment. It's contagious between fish, so quarantine affected individuals if possible."
+      },
+      {
+        "q": "What is dropsy and can it be treated?",
+        "a": "Bloating combined with scales that raise into a pinecone-like pattern. It's a visible sign of advanced internal or organ failure, usually from a systemic bacterial infection that's gone unaddressed for some time. This is the hardest condition on this list to treat successfully, and it often carries a poor outlook by the time it's visibly obvious."
+      },
+      {
+        "q": "How do I prevent most guppy health issues in the first place?",
+        "a": "A properly cycled tank, consistent temperature, and regular partial water changes prevent far more than any medication does after the fact. Quarantining new fish for 2 to 3 weeks before adding them to an established tank catches most problems before they spread."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner"
+    ]
+  },
+  {
+    "path": "/content/guides/guppy-tank-setup-guide.mdx",
+    "slug": "guppy-tank-setup-guide",
+    "title": "Guppy Tank Setup: Warm Water, Gentle Filtration, and a Plan for Fry",
+    "seoTitle": "Guppy Tank Setup Guide",
+    "excerpt": "Guppies are genuinely one of the more forgiving fish to house well. A warm, cycled tank with gentle filtration covers most of what this species needs.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "tags": [
+      "Guppy",
+      "Tank Setup",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-tank-setup.jpg",
+    "imageAlt": "A planted 10-gallon guppy tank with gentle sponge filtration and warm lighting",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does a guppy need?",
+        "a": "5 gallons works as a bare minimum for a small trio, but 10 gallons is the more practical beginner starting point for a group of 5 or 6. Given how readily guppies breed, a 20-gallon tank is a better long-term choice if you're not actively separating males and females."
+      },
+      {
+        "q": "What temperature do guppies need?",
+        "a": "A genuinely tropical species, comfortable in the 72 to 82°F range, with 76 to 78°F as a solid target. A heater is necessary unless your room stays consistently warm year-round, budget roughly 3 to 5 watts per gallon, so a 25 to 50 watt heater for a 10-gallon tank."
+      },
+      {
+        "q": "What water chemistry do guppies need?",
+        "a": "A pH of 7.0 or above and moderately hard water, with good calcium and magnesium content. If your tap water runs soft, a mineral supplement, a wonder shell or similar product, can help buffer it into a more suitable range."
+      },
+      {
+        "q": "What kind of filtration is best for a guppy tank?",
+        "a": "Keep the flow gentle. A sponge filter works well and is genuinely the safer choice if you're allowing breeding, since it won't pull fry into strong current. A hang-on-back filter with adjustable flow also works well for a non-breeding setup. Strong, powerful filtration built for larger or messier fish isn't necessary here and can actually stress guppies."
+      },
+      {
+        "q": "Do I need to cycle a guppy tank before adding fish?",
+        "a": "Yes. Establishing the beneficial bacteria colony that processes waste takes 2 to 4 weeks with a fishless cycle, or can be shortened somewhat with a bottled bacteria product. Skipping this step is one of the most common beginner mistakes in the hobby generally, not just with guppies."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "live-terrarium-plants",
+      "water-conditioner"
+    ]
+  },
+  {
     "path": "/content/guides/hamster-cost-guide.mdx",
     "slug": "hamster-cost-guide",
     "title": "How Much Does a Hamster Really Cost?",
@@ -5228,6 +5434,215 @@
     ],
     "relatedProducts": [
       "cc-cage-guinea-pig"
+    ]
+  },
+  {
+    "path": "/content/guides/hedgehog-cost-guide.mdx",
+    "slug": "hedgehog-cost-guide",
+    "title": "How Much Does a Hedgehog Really Cost?",
+    "seoTitle": "Hedgehog Cost: Full Price Breakdown",
+    "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal. Several states and cities ban or restrict ownership outright, and that has to be settled before a single dollar gets budgeted.",
+    "date": "2026-08-12",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hedgehog",
+      "Cost",
+      "Pet Ownership Cost",
+      "Exotic Pet Law",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-cost.jpg",
+    "imageAlt": "Hedgehog sitting next to its cage and everyday supplies",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a hedgehog cost to buy?",
+        "a": "$100 to $300. Breeder babies typically run $150 to $250, rescue adults $100 to $175. Unusual, very dark, or very light coloring costs somewhat more than common gray or brown, but this isn't a species with dramatic morph-driven pricing."
+      },
+      {
+        "q": "Are hedgehogs legal everywhere?",
+        "a": "No, and this matters more than almost any other factor on this page. They're banned outright in California, Georgia, Hawaii, and Washington D.C. Pennsylvania and Maine restrict ownership under specific conditions, and New Jersey and Wisconsin require a permit. Legality also varies by city within otherwise-legal states, New York City bans them even though the rest of New York State allows ownership."
+      },
+      {
+        "q": "What does a hedgehog setup cost upfront?",
+        "a": "Roughly $200 to $400, covering a cage, a solid exercise wheel, heating equipment, bedding, bowls, and hides. The wheel and the heat source aren't optional extras for this species, both are genuinely essential."
+      },
+      {
+        "q": "How much does a hedgehog cost per month?",
+        "a": "About $20 to $40 a month, mostly food, bedding, and occasional insects, with heating electricity adding more during colder months. This species needs consistent warmth year round, which is a real recurring cost, not a one-time setup expense."
+      },
+      {
+        "q": "How long do hedgehogs live, and how does that affect budgeting?",
+        "a": "3 to 6 years typically, with some individuals reaching 8 to 10 years under excellent care. Age 5 is generally considered senior for a hedgehog, which is worth keeping in mind when budgeting for the age-related vet costs covered in our health issues guide."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-cage-prevue-528-universal",
+      "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+      "small-pet-hideout-igloo",
+      "digital-thermometer-hygrometer-combo",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "nail-clippers",
+      "hedgehog-food-iams-proactive-health-chicken-3.5lb",
+      "small-pet-paper-bedding"
+    ]
+  },
+  {
+    "path": "/content/guides/hedgehog-handling-guide.mdx",
+    "slug": "hedgehog-handling-guide",
+    "title": "How to Handle a Hedgehog",
+    "seoTitle": "How to Handle a Hedgehog Correctly",
+    "excerpt": "Hedgehogs are solitary, nocturnal, and defensive by default, and understanding their first-contact reflexes matters more with this species than with almost any other small pet.",
+    "date": "2026-08-12",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hedgehog",
+      "Handling",
+      "Hedgehog Behavior",
+      "Self-Anointing",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-handling.jpg",
+    "imageAlt": "Person gently cupping a hedgehog in two hands during a handling session",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does my hedgehog huff, click, or ball up when I pick it up?",
+        "a": "These are all normal defensive reflexes, not aggression, and not a sign you're doing anything wrong. A hedgehog carries around 5,000 to 7,000 quills, and while they're smooth and unbarbed, unlike a porcupine's, so they don't embed in skin, a balled-up hedgehog full of raised quills can still genuinely poke and hurt bare hands."
+      },
+      {
+        "q": "What's the correct way to pick up a hedgehog?",
+        "a": "Scoop from underneath and the sides using flat or cupped hands, like a shovel rather than a grip, and let the ball unroll on its own timeline. Never force a ball open, it's both ineffective and a real welfare issue, teaching the hedgehog that handling means being restrained against its will."
+      },
+      {
+        "q": "What is self-anointing, and should I be worried about it?",
+        "a": "Hedgehogs foam at the mouth and spread saliva over their own quills when they encounter a new or interesting smell. It looks alarming the first time you see it, but it's completely normal behavior, not a seizure or a sign of poisoning. If your hedgehog self-anoints after contact with something that could be irritating, wash your hands before touching your own eyes or mouth."
+      },
+      {
+        "q": "What is quilling, and does it change how my hedgehog behaves?",
+        "a": "Between 2 and 6 months old, hedgehogs shed their baby quills and grow adult ones, and they're often grumpier and ball up more during this period. It's temporary, typically resolving within about a month, and not a sign of a training setback."
+      },
+      {
+        "q": "Are hedgehogs as cuddly as hamsters or guinea pigs?",
+        "a": "Not really, despite often being marketed alongside them as similar small mammals. Their environmental needs, especially strict temperature control, are closer to a reptile's than a typical pocket pet's, and they're genuinely less cuddly, tolerating handling rather than seeking it out."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/hedgehog-health-issues-guide.mdx",
+    "slug": "hedgehog-health-issues-guide",
+    "title": "Common Hedgehog Health Issues (And Why Wobbly Hedgehog Syndrome Isn't as Common as You've Heard)",
+    "seoTitle": "Hedgehog Health Issues: Signs & Causes",
+    "excerpt": "Hedgehogs face a mix of genetic, husbandry-related, and age-related conditions, and one of them, a specific neurological disease, is worth understanding clearly since it's often misrepresented in how commonly it actually occurs.",
+    "date": "2026-08-12",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hedgehog",
+      "Health",
+      "Wobbly Hedgehog Syndrome",
+      "Exotic Pet Health",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-health-issues.jpg",
+    "imageAlt": "Hedgehog undergoing a wellness check with an exotic veterinarian",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How common is Wobbly Hedgehog Syndrome, really?",
+        "a": "Older figures suggested roughly 10% of captive hedgehogs are affected, but a more recent 20-year veterinary study across multiple US institutions found a considerably lower confirmed rate, closer to 3%, with the average age of onset around 3.3 years. It's real and serious when it happens, but less common than the older, more widely repeated number implies."
+      },
+      {
+        "q": "Is there a cure for Wobbly Hedgehog Syndrome?",
+        "a": "No. It's a progressive, currently incurable neurodegenerative disease, genetic in origin, that typically progresses to full paralysis over 9 to 15 months. There's only supportive care, and it can't currently be prevented beyond avoiding breeding from affected lines."
+      },
+      {
+        "q": "What causes obesity and fatty liver in hedgehogs, and how is it treated?",
+        "a": "Overfeeding, particularly free-choice cat food, combined with insufficient exercise. Watch for a hedgehog that can't fully curl into a ball anymore or struggles to walk or use its wheel. It's manageable at home through measured feeding and a proper exercise wheel, but weight loss needs to happen gradually, rapid loss can trigger the fatty liver problem it's meant to prevent."
+      },
+      {
+        "q": "Are mites and ringworm contagious in hedgehogs?",
+        "a": "Mites are most commonly introduced by a new hedgehog that wasn't properly quarantined, quarantining any new arrival for at least two weeks is the real prevention. Ringworm is zoonotic and can spread to people, so take handling precautions if you suspect it, and see a vet for both."
+      },
+      {
+        "q": "Why does enclosure temperature matter so much for hedgehog health?",
+        "a": "A cold enclosure doesn't just risk respiratory infection, it risks something more immediately dangerous: hedgehogs kept below roughly 72°F can attempt to hibernate, and this can be fatal. It's arguably the single most important husbandry fact for this species."
+      }
+    ],
+    "relatedProducts": [
+      "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+      "hedgehog-food-iams-proactive-health-chicken-3.5lb",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/hedgehog-tank-setup-guide.mdx",
+    "slug": "hedgehog-tank-setup-guide",
+    "title": "Hedgehog Enclosure Setup: Temperature Is the Non-Negotiable Part",
+    "seoTitle": "Hedgehog Enclosure Setup Guide",
+    "excerpt": "Hedgehog housing is fairly straightforward once you understand one hard rule: this species cannot tolerate a cold enclosure, and getting temperature wrong isn't a minor mistake, it's genuinely dangerous.",
+    "date": "2026-08-12",
+    "category": "Small & Exotic Pets",
+    "tags": [
+      "Hedgehog",
+      "Tank Setup",
+      "Enclosure",
+      "Temperature",
+      "Small Mammal Care",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-tank-setup.jpg",
+    "imageAlt": "Hedgehog enclosure with solid flooring, a heat emitter, hideout, and exercise wheel",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a hedgehog need?",
+        "a": "A minimum of 4 square feet of solid floor space, and bigger is fine as long as you fill roughly three-quarters of it with hides and enrichment items. The floor must be solid, never wire, wire flooring catches limbs and causes real injuries."
+      },
+      {
+        "q": "What temperature does a hedgehog enclosure need to stay at?",
+        "a": "75 to 80°F ideally, with a workable range of 72 to 90°F. Below about 72°F, hedgehogs can attempt to hibernate, a genuinely dangerous, potentially fatal response in a species not built to survive it safely in captivity. Avoid light-emitting heat bulbs specifically, they disrupt the day and night cycle and can actually contribute to triggering hibernation attempts."
+      },
+      {
+        "q": "What humidity level is right for a hedgehog?",
+        "a": "Keep it on the low side, under 40% is preferred. If your home runs very dry, below about 30%, a humidifier bringing the room to 40 to 60% helps prevent itchy, flaky skin."
+      },
+      {
+        "q": "Does a hedgehog really need an exercise wheel?",
+        "a": "Yes, a large, solid-surface exercise wheel, 10.5 to 12 inches in diameter, is essential, not optional. Hedgehogs run genuinely long distances every night in the wild, and a wheel is how that need gets met in captivity. Avoid wire or mesh wheels entirely, they cause serious foot and leg injuries."
+      },
+      {
+        "q": "What bedding is safe for a hedgehog enclosure?",
+        "a": "Recycled paper bedding, aspen shavings, or fleece liners all work well, with 3 to 4 inches of depth in areas where your hedgehog can burrow. Avoid rough, dusty, or scented bedding, and skip anything with loose fibers or frayed fabric, both can trap toes and limbs."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-cage-prevue-528-universal",
+      "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "digital-thermometer-hygrometer-combo",
+      "small-pet-paper-bedding",
+      "small-pet-hideout-igloo"
     ]
   },
   {
@@ -6305,6 +6720,210 @@
       "dubia-roach-colony-starter-kit",
       "glass-terrarium-18x18x24",
       "climbing-branch-mopani-wood"
+    ]
+  },
+  {
+    "path": "/content/guides/lovebird-cost-guide.mdx",
+    "slug": "lovebird-cost-guide",
+    "title": "How Much Does a Lovebird Really Cost?",
+    "seoTitle": "Lovebird Cost: Full Price Breakdown",
+    "excerpt": "Lovebirds are one of the more affordable parrots to buy, but the name suggests something gentler than what you actually get, and the biggest cost decision isn't a price tag at all, it's whether you buy one bird or two.",
+    "date": "2026-08-13",
+    "category": "Birds",
+    "tags": [
+      "Lovebird",
+      "Cost",
+      "Pet Ownership Cost",
+      "Avian Vet Care",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/lovebird-cost.jpg",
+    "imageAlt": "Peach-faced lovebird perched beside its cage with food dishes and toys",
+    "emoji": "❤️",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a lovebird cost to buy?",
+        "a": "Common peach-faced or Fischer's lovebirds run $50 to $150. Rare color mutations, lutino, blue, pied, and combinations, run $200 to $400 or more, with exceptional individuals reaching $1,000. Adoption typically runs $20 to $100. Hand-raised birds cost more than parent-raised ones and are generally the better choice if you want a tame, interactive pet."
+      },
+      {
+        "q": "What does a full lovebird setup cost upfront?",
+        "a": "Roughly $300, covering a quality cage ($80 to $200 for stainless or powder-coated), a cage cover, bowls, toys, varied perches, and a bath option. Avoid cages in the $30 to $50 range entirely, cheap cages rust, and a rusting cage introduces a genuine zinc toxicity risk."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a lovebird?",
+        "a": "Roughly $70 to $125 a month. Quality pellet food runs $20 to $30, fresh produce $10 to $15, plus toys, lovebirds are aggressive chewers and go through them quickly, and an amortized share of annual vet care."
+      },
+      {
+        "q": "How much does avian vet care cost for a lovebird?",
+        "a": "A routine avian checkup runs $25 to $50, recommended once or twice a year, adding up to a couple hundred dollars annually. Emergencies, egg-binding or an injury, can run into the thousands, an emergency fund is genuinely worth having for this species."
+      },
+      {
+        "q": "Should I get one lovebird or two?",
+        "a": "This is the cost decision that matters most. A single, hand-raised lovebird bonds to you and becomes tame and interactive, but needs roughly two hours of daily interaction. A bonded pair bonds to each other instead, largely ignoring you, entertaining to watch but rarely tame. If you can't commit meaningful daily time, two birds that keep each other company is the more humane choice, even though it changes the relationship you'll actually have."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "bird-perches",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-food-roudybush-daily-mini-44oz",
+      "bird-toys-katumo-small-parrot-variety"
+    ]
+  },
+  {
+    "path": "/content/guides/lovebird-handling-guide.mdx",
+    "slug": "lovebird-handling-guide",
+    "title": "How to Handle a Lovebird (And Why the Name Is Misleading)",
+    "seoTitle": "How to Handle a Lovebird Correctly",
+    "excerpt": "The name suggests a sweet, gentle pet. The reality is more complicated, lovebirds are affectionate and bold, but genuinely known for being nippy and territorial, and the single biggest factor in how tame yours becomes is whether you keep one bird or two.",
+    "date": "2026-08-13",
+    "category": "Birds",
+    "tags": [
+      "Lovebird",
+      "Handling",
+      "Bird Behavior",
+      "Bonding",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/lovebird-handling.jpg",
+    "imageAlt": "Peach-faced lovebird perched on a person's hand",
+    "emoji": "❤️",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are lovebirds actually aggressive despite the name?",
+        "a": "Yes, genuinely. Veterinary sources are direct about this: despite the name, lovebirds can be very territorial and aggressive when they feel frightened or threatened, especially females and especially during hormonal periods. A small lovebird will readily chase a much larger bird, or even the family dog or cat, out of its space."
+      },
+      {
+        "q": "Should I get one lovebird or two?",
+        "a": "This is the single decision that changes everything about handling. One hand-raised lovebird bonds closely to its person, becomes tame and interactive, and needs roughly two hours of daily interaction. A bonded pair bonds to each other instead, largely ignores its keeper, and is closer to keeping a pair of finches, entertaining but rarely tame. If you can't offer consistent daily time, two birds is the kinder choice."
+      },
+      {
+        "q": "What triggers aggression in a pet lovebird?",
+        "a": "Providing a nest box, a happy hut, or a mirror triggers hormonal, territorial behavior and can lead to chronic egg-laying even without a mate present. Reaching into the cage of an already-defensive bird is a reliable way to get bitten."
+      },
+      {
+        "q": "How do I manage a cage-aggressive lovebird?",
+        "a": "Remove nest-like objects, use exterior food dishes so you don't need to reach into the cage, and move the bird to a neutral room, aggression often eases away from the cage itself. Stick-training rather than reaching in with your hand is a safer, more effective long-term approach."
+      },
+      {
+        "q": "How do lovebirds compare to budgies and cockatiels for handling?",
+        "a": "Lovebirds are more aggressive and beakier for their size than either species, and unlike budgies, should never be housed with other bird species. They're also more dedicated chewers, worth keeping in mind when choosing toys, anything with small parts or loose material isn't a good fit."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/lovebird-health-issues-guide.mdx",
+    "slug": "lovebird-health-issues-guide",
+    "title": "Common Lovebird Health Issues and What Causes Them",
+    "seoTitle": "Lovebird Health Issues: Signs & Causes",
+    "excerpt": "Lovebirds hide illness well, a survival instinct that means by the time symptoms are obvious, a problem is often more advanced than it would be in a more expressive pet. A handful of conditions come up often enough to know in advance.",
+    "date": "2026-08-13",
+    "category": "Birds",
+    "tags": [
+      "Lovebird",
+      "Health",
+      "Egg Binding",
+      "Avian Illness",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/lovebird-health-issues.jpg",
+    "imageAlt": "Peach-faced lovebird being examined by an avian veterinarian",
+    "emoji": "❤️",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is Psittacine Beak and Feather Disease (PBFD) in lovebirds?",
+        "a": "A virus lovebirds are particularly susceptible to, attacking feather and beak cells along with the immune system. Watch for feather deformities, feather loss, and abnormalities in the beak. It's often fatal, has no cure, and is highly contagious between birds, testing any new bird before introducing it to an existing one is genuinely important prevention."
+      },
+      {
+        "q": "Why do lovebirds lay eggs even without a male present, and why is that dangerous?",
+        "a": "A hen can lay eggs regularly with no male present at all, and an all-seed diet, low in calcium and vitamin D, makes this worse and raises the risk of egg-binding. Watch for straining, lethargy, and visible abdominal swelling. Egg-binding can turn fatal quickly, this is an emergency, don't wait to see if it resolves."
+      },
+      {
+        "q": "How can I prevent egg-binding in a pet lovebird?",
+        "a": "A pelleted diet with proper calcium, consistent access to 12 hours of darkness, and avoiding nest boxes or mirrors meaningfully reduce how often this becomes a problem in the first place. Prevention matters more than treatment here."
+      },
+      {
+        "q": "What causes feather plucking in lovebirds?",
+        "a": "It's a symptom, not a single disease, with both behavioral and medical causes. Boredom, insufficient sleep, sexual frustration, or a too-small cage can all trigger it behaviorally. Medical causes, including certain infections, mites, or a vitamin A deficiency, need to be ruled out first by a vet before assuming it's purely behavioral."
+      },
+      {
+        "q": "When is a lovebird health issue an emergency?",
+        "a": "Because lovebirds mask symptoms so effectively, any sudden change, lethargy, appetite loss, fluffed feathers held constantly, or a shift in normal behavior, is worth a prompt vet visit rather than a wait-and-see approach. Egg-binding, breathing difficulty, and severe lethargy all mean an immediate trip to an avian vet."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-roudybush-daily-mini-44oz",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-toys-katumo-small-parrot-variety",
+      "bird-flight-cage-large"
+    ]
+  },
+  {
+    "path": "/content/guides/lovebird-tank-setup-guide.mdx",
+    "slug": "lovebird-tank-setup-guide",
+    "title": "Lovebird Cage Setup: What Your Bird Actually Needs",
+    "seoTitle": "Lovebird Cage Setup Guide",
+    "excerpt": "Lovebird housing has a few specific safety details that matter more than they might seem to at first glance, bar spacing especially. Get those right, along with size and material, and the rest of the setup is fairly straightforward.",
+    "date": "2026-08-13",
+    "category": "Birds",
+    "tags": [
+      "Lovebird",
+      "Cage Setup",
+      "Enclosure",
+      "Bar Spacing",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/lovebird-tank-setup.jpg",
+    "imageAlt": "Lovebird cage with varied perches and chew toys",
+    "emoji": "❤️",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a lovebird need?",
+        "a": "Minimum 18 inches long by 18 inches wide by 24 inches tall for a single bird, or 24 by 18 by 24 inches for a pair. Bigger is always better, and horizontal, longer cages suit this species well since lovebirds fly side to side rather than climbing vertically."
+      },
+      {
+        "q": "How wide can the bar spacing be on a lovebird cage?",
+        "a": "Between three-eighths and five-eighths of an inch, with half an inch being ideal. This isn't a minor preference, wider spacing lets a lovebird trap its head between bars, which can be fatal. Skip round cages entirely, they don't provide safe corners and can cause disorientation."
+      },
+      {
+        "q": "What cage material is safe for a lovebird?",
+        "a": "Powder-coated or stainless steel only. Avoid homemade cages, cages with wood components, or galvanized wire, all carry a real risk of zinc or other toxic exposure if chewed, and lovebirds chew constantly."
+      },
+      {
+        "q": "Does a lovebird's cage need special lighting?",
+        "a": "Indoor birds benefit from supplemental UV exposure to properly synthesize vitamin D3 for calcium absorption, since window glass filters out the UV wavelengths that matter. An avian-specific UVB lamp is worth adding if your bird doesn't get regular safe outdoor time."
+      },
+      {
+        "q": "Should I put a nest box or happy hut in my lovebird's cage?",
+        "a": "No, not unless you're actually breeding. Adding nest-like furnishings, including happy huts, is one of the most common and most avoidable triggers for hormonal aggression and chronic egg-laying in this species."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "bird-perches",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-toys-katumo-small-parrot-variety"
     ]
   },
   {
@@ -7536,6 +8155,201 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/sulcata-hedgehog-lovebird-guppy-overview.mdx",
+    "slug": "sulcata-hedgehog-lovebird-guppy-overview",
+    "title": "Four Pets Decided Before You Ever Set Up the Tank",
+    "seoTitle": "Sulcata Tortoise, Hedgehog, Lovebird & Guppy Compared",
+    "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
+    "date": "2026-08-15",
+    "category": "Roundups",
+    "tags": [
+      "Sulcata Tortoise",
+      "Hedgehog",
+      "Lovebird",
+      "Guppy",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/sulcata-hedgehog-lovebird-guppy-overview.jpg",
+    "imageAlt": "Sulcata tortoise, hedgehog, lovebird, and guppy shown side by side",
+    "emoji": "🧭",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does a sulcata tortoise's outdoor space matter more than its enclosure at purchase?",
+        "a": "Because a hatchling grows fast. Sulcatas reach 80 to 110 pounds and can live 70 to 100 years, and within 5 to 10 years an indoor setup simply stops working. The real decision isn't what tank to buy today, it's whether you'll have real outdoor space and a multi-decade plan within just a few years."
+      },
+      {
+        "q": "Is it actually true that hedgehogs are illegal in some places?",
+        "a": "Yes. Hedgehogs are banned outright in California, Georgia, Hawaii, and Washington D.C., restricted in Pennsylvania and Maine, and require a permit in New Jersey and Wisconsin. Legality can also vary by city within an otherwise legal state, New York City bans them even though the rest of New York State allows ownership."
+      },
+      {
+        "q": "Does it really matter whether you get one lovebird or two?",
+        "a": "It changes the entire relationship. A single, hand-raised lovebird bonds to you and becomes tame and interactive, but needs real daily time, roughly two hours. A bonded pair bonds to each other instead and largely ignores you. Neither choice is wrong, but they're genuinely different pets."
+      },
+      {
+        "q": "How fast can a guppy population actually grow if I don't plan for it?",
+        "a": "Faster than most new owners expect. A female guppy can store sperm for 5 to 10 months after a single mating and produce up to about 8 separate broods from it without a male present again. A tank stocked with no population plan rarely stays the size it started at."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-cost-guide.mdx",
+    "slug": "sulcata-tortoise-cost-guide",
+    "title": "How Much Does a Sulcata Tortoise Really Cost?",
+    "seoTitle": "Sulcata Tortoise Cost: Full Price Breakdown",
+    "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
+    "date": "2026-08-11",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Sulcata Tortoise",
+      "Cost",
+      "Tortoise Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Tortoise Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-cost.jpg",
+    "imageAlt": "Sulcata tortoise hatchling beside an outdoor enclosure under construction",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a sulcata tortoise itself cost?",
+        "a": "Captive-bred hatchlings run $100 to $300 from breeders, with in-demand breeders charging up to $500. Juveniles run $300 to $600 or more. Adults are frequently surrendered once owners realize what they've taken on, and many rescues place adults for free or a modest $100 to $400 adoption fee, often the most sensible way to bring one home if you have the space."
+      },
+      {
+        "q": "What does the initial setup cost?",
+        "a": "An indoor juvenile setup, basking and UVB lighting, substrate, and an enclosure or tortoise table, runs a few hundred dollars. That's the cheap phase, and it doesn't last. A basic outdoor enclosure can easily reach $1,000, and a proper heated shelter for cold nights or winters adds another $1,000 or more on top of that."
+      },
+      {
+        "q": "What does a sulcata tortoise cost to feed and maintain day to day?",
+        "a": "Genuinely low. Food, grasses, hay, and appropriate greens, is cheap, especially if your tortoise can graze outdoors. Winter heating electricity is the main recurring expense once you're housing an adult outdoors in anything but a warm climate."
+      },
+      {
+        "q": "Are vet bills expensive for a sulcata tortoise?",
+        "a": "Routine care from an exotic or reptile vet is a modest expense. Emergencies, a shell fracture or respiratory infection, need immediate attention and can be costly, and transporting an 80-plus pound adult to a vet is its own logistical challenge worth planning for in advance."
+      },
+      {
+        "q": "How long do sulcata tortoises live, and why does that matter for budgeting?",
+        "a": "Commonly 70 to 100 years, with some estimates reaching further still. This tortoise may genuinely outlive you. Exotic vet organizations recommend arranging a permanent caretaker or sanctuary placement as part of your own long-term planning, not as a distant hypothetical."
+      }
+    ],
+    "relatedProducts": [
+      "tortoise-table",
+      "escape-proof-fencing",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "uvb-zoo-med-reptisun-24in-high-output-hood",
+      "calcium-tortoise-turtle-herbivorous-sulcata"
+    ]
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-handling-guide.mdx",
+    "slug": "sulcata-tortoise-handling-guide",
+    "title": "How to Handle a Sulcata Tortoise (While You Still Can)",
+    "seoTitle": "How to Handle a Sulcata Tortoise Safely",
+    "excerpt": "Sulcata tortoises are personable and curious, but real handling, picking the animal up, is only practical while it's still a juvenile. After that, the relationship changes shape entirely.",
+    "date": "2026-08-11",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Sulcata Tortoise",
+      "Handling",
+      "Tortoise Behavior",
+      "Care Tips",
+      "Tortoise Care",
+      "Reptile Behavior"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-handling.jpg",
+    "imageAlt": "Person hand-feeding a juvenile sulcata tortoise low to the ground",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you pick up an adult sulcata tortoise?",
+        "a": "Not comfortably or safely. An adult sulcata weighs 80 to 110 pounds, and males can reach 200. Interacting with an adult means spending time in its space, hand-feeding, and letting it approach and investigate you, not picking it up the way you might a smaller tortoise."
+      },
+      {
+        "q": "How do you safely pick up a juvenile sulcata tortoise?",
+        "a": "Keep it low to the ground. Sulcatas push off powerfully with their strong legs, and a fall, even a short one, risks cracking the shell. Never flip a tortoise onto its back."
+      },
+      {
+        "q": "What's the biggest mistake new sulcata owners make?",
+        "a": "Underestimating adult size when choosing an enclosure or planning long-term space. This is the single biggest reason sulcatas end up surrendered to rescues, and growth in the first 5 to 10 years is rapid, so a young tortoise's manageable size is not representative of what's coming."
+      },
+      {
+        "q": "Can you house two sulcata tortoises together?",
+        "a": "Not two mature males. They're territorial, and adult males will fight, causing real shell injuries and chronic stress. This is a common and avoidable mistake."
+      },
+      {
+        "q": "Is digging and ramming normal sulcata behavior?",
+        "a": "Yes. Sulcatas are strong, dedicated burrowers, expect extensive digging and tunneling wherever they're housed. They also ram and bulldoze objects, and sometimes each other, as a dominance display, this is normal behavior, not aggression directed at you."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-health-issues-guide.mdx",
+    "slug": "sulcata-tortoise-health-issues-guide",
+    "title": "Common Sulcata Tortoise Health Issues and What Causes Them",
+    "seoTitle": "Sulcata Tortoise Health Issues: Signs & Causes",
+    "excerpt": "Sulcata tortoises are hardy animals, and most of what shows up on this list traces back to a small number of husbandry factors, several of which are genuinely debated even among specialists.",
+    "date": "2026-08-11",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Sulcata Tortoise",
+      "Health",
+      "Shell Pyramiding",
+      "Shell Rot",
+      "Tortoise Illness",
+      "Care Tips"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-health-issues.jpg",
+    "imageAlt": "Sulcata tortoise shell being examined for signs of pyramiding",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What causes shell pyramiding in sulcata tortoises?",
+        "a": "It's genuinely debated. One well-known study found low humidity during growth was the key driver, with dietary protein playing only a minor role. A separate study found that supplemental night heat and faster growth rates caused pyramiding even when humidity stayed constant. Either way, humid hides for growing tortoises and a properly paced diet are your best defense, and it's permanent once it happens."
+      },
+      {
+        "q": "What is shell rot and how serious is it?",
+        "a": "A bacterial or fungal infection causing discoloration, a foul smell, loose scutes, and sometimes visible fluid, usually from substrate that's too wet or general poor hygiene. Left unaddressed it can become systemic, causing lethargy and appetite loss. Always see a vet."
+      },
+      {
+        "q": "What causes metabolic bone disease in sulcata tortoises?",
+        "a": "Insufficient UVB combined with inadequate calcium intake, resulting in a soft or deformed shell. It's preventable with proper UVB lighting and diet, and a vet visit is warranted if you suspect it."
+      },
+      {
+        "q": "Is a respiratory infection an emergency in a sulcata tortoise?",
+        "a": "Treat it as one. It's usually caused by cold, damp conditions, and it needs veterinary treatment, it won't resolve on its own."
+      },
+      {
+        "q": "What outdoor hazards should I watch for with a sulcata tortoise?",
+        "a": "Escape through digging, so fencing needs to be buried at least 12 inches deep, overheating on concrete in direct sun with no shade available, and yard chemicals, fertilizers, pesticides, and snail bait are all toxic and worth eliminating entirely from any area your tortoise has access to."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-zoo-med-reptisun-24in-high-output-hood",
+      "calcium-tortoise-turtle-herbivorous-sulcata",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "escape-proof-fencing"
+    ]
+  },
+  {
     "path": "/content/guides/sulcata-tortoise-legal-guide.mdx",
     "slug": "sulcata-tortoise-legal-guide",
     "title": "Is It Legal to Own a Sulcata Tortoise? State-by-State Guide",
@@ -7572,6 +8386,59 @@
       }
     ],
     "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-tank-setup-guide.mdx",
+    "slug": "sulcata-tortoise-tank-setup-guide",
+    "title": "Sulcata Tortoise Enclosure Setup: Indoor Is Temporary, Outdoor Is the Goal",
+    "seoTitle": "Sulcata Tortoise Enclosure Setup Guide",
+    "excerpt": "Sulcata housing needs change dramatically as the animal grows, and the single most important thing to understand upfront is that indoor housing is a phase, not a permanent solution.",
+    "date": "2026-08-11",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Sulcata Tortoise",
+      "Enclosure Setup",
+      "Outdoor Housing",
+      "UVB",
+      "Tortoise Care",
+      "Care Tips"
+    ],
+    "readTime": 8,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-tank-setup.jpg",
+    "imageAlt": "Outdoor sulcata tortoise enclosure with heated shelter and buried fencing",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How big of an enclosure does a sulcata tortoise need?",
+        "a": "A juvenile under 10 inches needs roughly 7 feet by 3.5 feet by 2.5 feet of indoor space. An adult housed indoors long-term would need an absolute minimum around 8 feet by 8 feet, and realistically, indoor-only housing simply doesn't work well for a full-grown sulcata. Outdoor space should provide at least 80 to 100 square feet per tortoise, ideally several hundred."
+      },
+      {
+        "q": "What temperature does a sulcata tortoise enclosure need?",
+        "a": "Basking area 95 to 105°F, ambient 80 to 90°F, cool side 75 to 85°F, never sustained below 70°F. Outdoor shelters need lightless heat if nighttime temperatures drop below 50°F, set to maintain 70 to 75°F, and in regions with genuinely cold winters the shelter needs to stay heated to at least 55 to 60°F to allow safe brumation, or winter housing needs to move indoors for the season."
+      },
+      {
+        "q": "Does humidity matter for a sulcata tortoise?",
+        "a": "Yes, and it depends on age. Adults do best in a dry, well-ventilated environment. Hatchlings and juveniles need humid hides, roughly 70% humidity, to support proper shell growth and reduce pyramiding risk, the same way wild sulcatas use humid burrow microclimates even in an otherwise arid habitat."
+      },
+      {
+        "q": "What substrate works best for a sulcata tortoise?",
+        "a": "A diggable mix works best, organic topsoil and play sand at roughly 60/40, coconut fiber, or cypress mulch. Depth matters, 6 inches for juveniles, up to 24 inches for adults who genuinely dig and burrow. Keep it dry rather than wet, dampness is a direct path to shell rot."
+      },
+      {
+        "q": "When does a sulcata tortoise need to move outdoors?",
+        "a": "Sooner than most new owners expect. Sulcatas grow rapidly for their first 5 to 10 years, which means outdoor housing becomes necessary within just a few years of bringing home a hatchling, not a someday consideration. If you can't provide meaningful outdoor space within that timeframe, this is genuinely the wrong species, not just a harder version of the right one."
+      }
+    ],
+    "relatedProducts": [
+      "tortoise-table",
+      "escape-proof-fencing",
+      "ceramic-heat-emitter-zoo-med-repticare-150w",
+      "uvb-zoo-med-reptisun-24in-high-output-hood",
+      "basking-bulb-75w"
+    ]
   },
   {
     "path": "/content/guides/tarantula-cost-guide.mdx",
@@ -8963,6 +9830,35 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10",
+    "title": "Chronicles of Dex the Bearded Dragon: The Great Molt (Part 10)",
+    "seoTitle": null,
+    "excerpt": "Dex begins shedding his skin for the first time and treats the whole ordinary process like the retirement of an old administration, enduring an itch he refuses to name and a private worry about who he'll be underneath, until Mike helps loosen one stubborn patch near a toe and a brighter, cleaner dragon emerges on the other side.",
+    "date": "2026-07-27",
+    "category": "Short Stories",
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "molting"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron10.jpg",
+    "imageAlt": "Bearded dragon rubs against a basking rock as dull, papery old skin peels away to reveal brighter gold scales underneath",
+    "emoji": null,
+    "lastReviewed": "2026-07-27",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5.mdx",
     "slug": "chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5",
     "title": "Chronicles of Dex the Bearded Dragon: The Pirate of the Sand Sea (Part 5)",
@@ -9330,6 +10226,35 @@
     "imageAlt": "A house rabbit lounging on a sunlit rug beside a wire guinea pig travel cage, both animals sharing the same patch of afternoon light",
     "emoji": null,
     "lastReviewed": "2026-07-16",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10",
+    "title": "Chronicles of Otis the Bunny: The Moon Made of Clover (Part 10)",
+    "seoTitle": null,
+    "excerpt": "After a heavy dinner and a long afternoon guarding the garden, Otis falls asleep and dreams his way to the moon, where he discovers, to his enormous satisfaction, that the whole surface is made of unfenced clover, the best he has ever tasted.",
+    "date": "2026-07-27",
+    "category": "Short Stories",
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "dream-sequence"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron10.jpg",
+    "imageAlt": "A house rabbit sitting amid an endless field of moonlit clover, with dignified elder rabbits scattered across the silver green landscape under a starry sky.",
+    "emoji": null,
+    "lastReviewed": "2026-07-27",
     "canonicalUrl": null,
     "faqs": [],
     "relatedProducts": []

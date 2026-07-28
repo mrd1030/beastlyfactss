@@ -817,6 +817,38 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "guppy-cost-guide",
+      "title": "Guppy Fish Cost: Full Price Breakdown",
+      "excerpt": "Guppies are about as affordable as pets get on this entire site, cheap to buy and cheap to keep. The cost most new owners forget to budget for isn't money, it's more guppies than they planned on.",
+      "date": "2026-08-14",
+      "image": "/assets/images/guppy-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "guppy-handling-guide",
+      "title": "How to Handle Guppy Fish (and Manage Breeding)",
+      "excerpt": "Guppies are an observation and enjoyment pet, not a hands-on one. The real thing every guppy owner needs to understand isn't handling technique, it's breeding behavior.",
+      "date": "2026-08-14",
+      "image": "/assets/images/guppy-handling.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "guppy-health-issues-guide",
+      "title": "Guppy Health Issues: Signs & Causes",
+      "excerpt": "Nearly everything on this list connects back to one root cause: water quality. Guppies are hardy fish, but stressed, poorly maintained water opens the door to every condition below.",
+      "date": "2026-08-14",
+      "image": "/assets/images/guppy-health-issues.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "guppy-tank-setup-guide",
+      "title": "Guppy Tank Setup Guide",
+      "excerpt": "Guppies are genuinely one of the more forgiving fish to house well. A warm, cycled tank with gentle filtration covers most of what this species needs.",
+      "date": "2026-08-14",
+      "image": "/assets/images/guppy-tank-setup.jpg",
+      "category": "Fish"
+    },
+    {
       "slug": "hamster-cost-guide",
       "title": "Hamster Cost: Full Price Breakdown",
       "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
@@ -862,6 +894,38 @@
       "excerpt": "Hamster or guinea pig? The honest differences in space, social needs, lifespan, and daily care - not just which one looks cuter in the store.",
       "date": "2026-07-09",
       "image": "/assets/images/hamster-vs-guinea-pig.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hedgehog-cost-guide",
+      "title": "Hedgehog Cost: Full Price Breakdown",
+      "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal. Several states and cities ban or restrict ownership outright, and that has to be settled before a single dollar gets budgeted.",
+      "date": "2026-08-12",
+      "image": "/assets/images/hedgehog-cost.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hedgehog-handling-guide",
+      "title": "How to Handle a Hedgehog Correctly",
+      "excerpt": "Hedgehogs are solitary, nocturnal, and defensive by default, and understanding their first-contact reflexes matters more with this species than with almost any other small pet.",
+      "date": "2026-08-12",
+      "image": "/assets/images/hedgehog-handling.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hedgehog-health-issues-guide",
+      "title": "Hedgehog Health Issues: Signs & Causes",
+      "excerpt": "Hedgehogs face a mix of genetic, husbandry-related, and age-related conditions, and one of them, a specific neurological disease, is worth understanding clearly since it's often misrepresented in how commonly it actually occurs.",
+      "date": "2026-08-12",
+      "image": "/assets/images/hedgehog-health-issues.jpg",
+      "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "hedgehog-tank-setup-guide",
+      "title": "Hedgehog Enclosure Setup Guide",
+      "excerpt": "Hedgehog housing is fairly straightforward once you understand one hard rule: this species cannot tolerate a cold enclosure, and getting temperature wrong isn't a minor mistake, it's genuinely dangerous.",
+      "date": "2026-08-12",
+      "image": "/assets/images/hedgehog-tank-setup.jpg",
       "category": "Small & Exotic Pets"
     },
     {
@@ -1039,6 +1103,38 @@
       "date": "2026-07-09",
       "image": "/assets/images/leopard-gecko-vs-crested-gecko.jpg",
       "category": "Comparisons"
+    },
+    {
+      "slug": "lovebird-cost-guide",
+      "title": "Lovebird Cost: Full Price Breakdown",
+      "excerpt": "Lovebirds are one of the more affordable parrots to buy, but the name suggests something gentler than what you actually get, and the biggest cost decision isn't a price tag at all, it's whether you buy one bird or two.",
+      "date": "2026-08-13",
+      "image": "/assets/images/lovebird-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "lovebird-handling-guide",
+      "title": "How to Handle a Lovebird Correctly",
+      "excerpt": "The name suggests a sweet, gentle pet. The reality is more complicated, lovebirds are affectionate and bold, but genuinely known for being nippy and territorial, and the single biggest factor in how tame yours becomes is whether you keep one bird or two.",
+      "date": "2026-08-13",
+      "image": "/assets/images/lovebird-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "lovebird-health-issues-guide",
+      "title": "Lovebird Health Issues: Signs & Causes",
+      "excerpt": "Lovebirds hide illness well, a survival instinct that means by the time symptoms are obvious, a problem is often more advanced than it would be in a more expressive pet. A handful of conditions come up often enough to know in advance.",
+      "date": "2026-08-13",
+      "image": "/assets/images/lovebird-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "lovebird-tank-setup-guide",
+      "title": "Lovebird Cage Setup Guide",
+      "excerpt": "Lovebird housing has a few specific safety details that matter more than they might seem to at first glance, bar spacing especially. Get those right, along with size and material, and the rest of the setup is fairly straightforward.",
+      "date": "2026-08-13",
+      "image": "/assets/images/lovebird-tank-setup.jpg",
+      "category": "Birds"
     },
     {
       "slug": "madagascar-hissing-cockroach-feeding-guide",
@@ -1241,12 +1337,52 @@
       "category": "Legal"
     },
     {
+      "slug": "sulcata-hedgehog-lovebird-guppy-overview",
+      "title": "Sulcata Tortoise, Hedgehog, Lovebird & Guppy Compared",
+      "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
+      "date": "2026-08-15",
+      "image": "/assets/guides/sulcata-hedgehog-lovebird-guppy-overview.jpg",
+      "category": "Roundups"
+    },
+    {
+      "slug": "sulcata-tortoise-cost-guide",
+      "title": "Sulcata Tortoise Cost: Full Price Breakdown",
+      "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
+      "date": "2026-08-11",
+      "image": "/assets/images/sulcata-tortoise-cost.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "sulcata-tortoise-handling-guide",
+      "title": "How to Handle a Sulcata Tortoise Safely",
+      "excerpt": "Sulcata tortoises are personable and curious, but real handling, picking the animal up, is only practical while it's still a juvenile. After that, the relationship changes shape entirely.",
+      "date": "2026-08-11",
+      "image": "/assets/images/sulcata-tortoise-handling.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "sulcata-tortoise-health-issues-guide",
+      "title": "Sulcata Tortoise Health Issues: Signs & Causes",
+      "excerpt": "Sulcata tortoises are hardy animals, and most of what shows up on this list traces back to a small number of husbandry factors, several of which are genuinely debated even among specialists.",
+      "date": "2026-08-11",
+      "image": "/assets/images/sulcata-tortoise-health-issues.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
       "slug": "sulcata-tortoise-legal-guide",
       "title": "Is a Sulcata Tortoise Legal in Your State? Full Guide",
       "excerpt": "No US state bans owning a sulcata tortoise. The real legal fact is a federal import ban dating to 2000, and the real practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
       "date": "2026-07-23",
       "image": "/assets/guides/sulcata-tortoise-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "sulcata-tortoise-tank-setup-guide",
+      "title": "Sulcata Tortoise Enclosure Setup Guide",
+      "excerpt": "Sulcata housing needs change dramatically as the animal grows, and the single most important thing to understand upfront is that indoor housing is a phase, not a permanent solution.",
+      "date": "2026-08-11",
+      "image": "/assets/images/sulcata-tortoise-tank-setup.jpg",
+      "category": "Turtles & Tortoises"
     },
     {
       "slug": "tarantula-cost-guide",
@@ -1552,6 +1688,13 @@
       "image": "/assets/images/dex/dex-chron8.jpg"
     },
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10",
+      "title": "Chronicles of Dex the Bearded Dragon: The Great Molt (Part 10)",
+      "excerpt": "Dex begins shedding his skin for the first time and treats the whole ordinary process like the retirement of an old administration, enduring an itch he refuses to name and a private worry about who he'll be underneath, until Mike helps loosen one stubborn patch near a toe and a brighter, cleaner dragon emerges on the other side.",
+      "date": "2026-07-27",
+      "image": "/assets/images/dex/dex-chron10.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5",
       "title": "Chronicles of Dex the Bearded Dragon: The Pirate of the Sand Sea (Part 5)",
       "excerpt": "A long soak sends Dex into a dream where he commands a ship across a golden sand sea, in this swashbuckling short story about rivalry, command, and the one line even a pirate king won't cross.",
@@ -1641,6 +1784,13 @@
       "excerpt": "When Katie agrees to pet-sit a friend's guinea pig, Otis has to share his prized sunny corner with a chattier, far more anxious houseguest than himself. It takes a piece of romaine lettuce to settle what territorial pacing alone could not.",
       "date": "2026-07-16",
       "image": "/assets/images/otis/otis-chron6.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10",
+      "title": "Chronicles of Otis the Bunny: The Moon Made of Clover (Part 10)",
+      "excerpt": "After a heavy dinner and a long afternoon guarding the garden, Otis falls asleep and dreams his way to the moon, where he discovers, to his enormous satisfaction, that the whole surface is made of unfenced clover, the best he has ever tasted.",
+      "date": "2026-07-27",
+      "image": "/assets/images/otis/otis-chron10.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-night-of-the-owl-part-7",

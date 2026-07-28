@@ -42,4 +42,8 @@ export const RELATED_ARTICLES = {
   'blue-tongue-skink': ['blue-tongue-skink-cost-guide', 'blue-tongue-skink-handling-guide', 'blue-tongue-skink-health-issues-guide', 'blue-tongue-skink-tank-setup-guide'],
   'whites-tree-frog': ['whites-tree-frog-cost-guide', 'whites-tree-frog-handling-guide', 'whites-tree-frog-health-issues-guide', 'whites-tree-frog-tank-setup-guide'],
   'pacman-frog': ['pacman-frog-cost-guide', 'pacman-frog-handling-guide', 'pacman-frog-health-issues-guide', 'pacman-frog-tank-setup-guide'],
+  'sulcata-tortoise': ['sulcata-tortoise-legal-guide', 'sulcata-tortoise-cost-guide', 'sulcata-tortoise-handling-guide', 'sulcata-tortoise-health-issues-guide', 'sulcata-tortoise-tank-setup-guide'],
+  'hedgehog': ['hedgehog-cost-guide', 'hedgehog-handling-guide', 'hedgehog-health-issues-guide', 'hedgehog-tank-setup-guide'],
+  'lovebird': ['lovebird-cost-guide', 'lovebird-handling-guide', 'lovebird-health-issues-guide', 'lovebird-tank-setup-guide'],
+  'guppy': ['guppy-cost-guide', 'guppy-handling-guide', 'guppy-health-issues-guide', 'guppy-tank-setup-guide'],
 };
