@@ -153,6 +153,12 @@ const ANIMAL_IMAGES = {
   'Vampire Squid': '/assets/facts/vampire-squid.jpg',
   'Gharial': '/assets/facts/gharial.jpg',
   'Aye-aye': '/assets/facts/aye-aye.jpg',
+  'Toco Toucan': '/assets/facts/toco-toucan.jpg',
+  'Beagle': '/assets/facts/beagle.jpg',
+  'Red Fox': '/assets/facts/red-fox.jpg',
+  'Giant Manta Ray': '/assets/facts/giant-manta-ray.jpg',
+  'Frilled-necked Lizard': '/assets/facts/frilled-necked-lizard.jpg',
+  'Slow Loris': '/assets/facts/slow-loris.jpg',
 };
 
 // Per-fact overrides, keyed by fact id - takes priority over ANIMAL_IMAGES.
