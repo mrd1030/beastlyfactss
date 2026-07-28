@@ -264,7 +264,7 @@ export default function Navbar() {
             ref={menuRef}
             className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden sm:absolute sm:top-[57px] sm:right-4 sm:w-80 sm:rounded-2xl sm:border sm:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:sm:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
-            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_env(safe-area-inset-top))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_var(--safe-area-inset-top))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },

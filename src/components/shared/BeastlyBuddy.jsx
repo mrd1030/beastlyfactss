@@ -108,7 +108,7 @@ export default function BeastlyBuddy() {
   };
 
   return (
-    <div className={`fixed right-4 z-50 transition-all duration-300 ${footerVisible ? 'bottom-[calc(env(safe-area-inset-bottom,0px)+14rem)] md:bottom-16' : 'bottom-20 md:bottom-16'}`}>
+    <div className={`fixed right-4 z-50 transition-all duration-300 ${footerVisible ? 'bottom-[calc(var(--safe-area-inset-bottom,0px)+14rem)] md:bottom-16' : 'bottom-20 md:bottom-16'}`}>
       <AnimatePresence>
         {open && (
           <motion.div

@@ -18,7 +18,7 @@ export default function BottomTabs() {
     /* md:hidden = only visible on mobile */
     <nav
       className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-t border-border no-select"
-      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+      style={{ paddingBottom: 'var(--safe-area-inset-bottom)' }}
       aria-label="Mobile navigation"
     >
       <div className="flex items-stretch h-14">

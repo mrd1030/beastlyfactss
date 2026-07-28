@@ -98,9 +98,29 @@ html, body {
   overscroll-behavior: none;
 }
 
-/* Safe area support for navbar */
+/* Safe-area insets, gated to installed/standalone PWA contexts only. A normal
+   browser tab always has its own address bar occupying the true unsafe area,
+   so page content never needs extra padding there - but some Android Chrome
+   builds report a non-zero env(safe-area-inset-top) even in a plain tab
+   (without viewport-fit=cover), which pushed the fixed navbar down and left a
+   blank gap above it. Defaulting these to 0px and only picking up the real
+   env() value in standalone display mode fixes that while preserving the
+   intended notch/gesture-bar spacing for anyone who adds the site to their
+   home screen. */
+:root {
+  --safe-area-inset-top: 0px;
+  --safe-area-inset-bottom: 0px;
+}
+
+@media (display-mode: standalone), (display-mode: fullscreen) {
+  :root {
+    --safe-area-inset-top: env(safe-area-inset-top, 0px);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
 .navbar-safe-top {
-  padding-top: env(safe-area-inset-top);
+  padding-top: var(--safe-area-inset-top);
 }
 
 /* Utility: hide the scrollbar on an internally-scrolling element (e.g. the
