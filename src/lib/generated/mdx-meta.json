@@ -4465,6 +4465,60 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/german-shepherd-feeding-guide.mdx",
+    "slug": "german-shepherd-feeding-guide",
+    "title": "German Shepherd Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "German Shepherd Feeding Guide: Schedule and Diet",
+    "excerpt": "A slow-maturing large breed with a genuine, breed-linked digestive condition to know about. Here's a real feeding schedule and the one appetite change that isn't what it looks like.",
+    "date": "2026-07-28",
+    "category": "Dogs",
+    "tags": [
+      "German Shepherd",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Dog Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Bloat",
+      "EPI"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/german-shepherd-feeding.jpg",
+    "imageAlt": "German Shepherd eating from a raised feeding bowl",
+    "emoji": "🐕",
+    "lastReviewed": "2026-07-28",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my German Shepherd?",
+        "a": "Puppies start at 4 meals a day from 6 to 12 weeks, dropping to 3 by 3 to 6 months and 2 by 6 to 12 months. As a large breed that can take 15 to 24 months to finish growing, growth-formula feeding and portion caution should extend well past the 12-month mark small breeds follow. Adults do well on 2 meals a day, and there's a real safety reason for that split, not just habit."
+      },
+      {
+        "q": "Why does feeding twice a day matter for this breed specifically?",
+        "a": "Research cited by AKC found dogs fed twice a day have roughly half the bloat risk of dogs fed once daily. German Shepherds are a deep-chested breed commonly flagged for elevated bloat risk, so the twice-daily split isn't just convenience, it's a real risk-reduction habit."
+      },
+      {
+        "q": "How much food should I actually feed?",
+        "a": "There's no single universal cups-per-day figure, both AKC and VCA say to use the specific food's own feeding chart based on weight and life stage, have a vet calculate calories from activity level, and adjust by body condition rather than a fixed number. Breed calculators publish illustrative ranges, but treat those as rough estimates, not settled figures."
+      },
+      {
+        "q": "Why has my German Shepherd stopped eating?",
+        "a": "Often it's something ordinary, owner absence, a disliked new food batch, or a short illness that resolves in a couple of days. It becomes a real concern with dental pain, systemic illness, or a new medication's side effects. One breed-specific condition, EPI, actually shows up as increased appetite with progressive weight loss, not appetite loss, worth knowing about."
+      },
+      {
+        "q": "What is Exocrine Pancreatic Insufficiency and why does it matter for this breed?",
+        "a": "EPI is suspected to be an inherited condition in German Shepherds specifically. Affected dogs often eat with increased, sometimes ravenous appetite, yet still lose weight progressively over months and develop bulky, greasy stools, because the pancreas isn't producing enough digestive enzymes to absorb nutrients from what they're eating. A dog eating plenty and still wasting away is the actual red flag here, not refusing food."
+      },
+      {
+        "q": "How long can a dog safely go without eating?",
+        "a": "For an otherwise normal adult with no other symptoms, a couple of days generally isn't alarming. That window shrinks to 8 to 12 hours if vomiting or diarrhea is also present. Separately and urgently: a bloated abdomen with restlessness and unproductive attempts to vomit after eating is never a wait-and-see situation, it can progress to shock within an hour or two."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/giant-millipede-legal-guide.mdx",
     "slug": "giant-millipede-legal-guide",
     "title": "Is It Legal to Own a Giant African Millipede? State-by-State Guide",
@@ -6384,6 +6438,59 @@
     ]
   },
   {
+    "path": "/content/guides/jumping-spider-feeding-guide.mdx",
+    "slug": "jumping-spider-feeding-guide",
+    "title": "Jumping Spider Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Jumping Spider Feeding Guide: Schedule and Diet",
+    "excerpt": "Let the abdomen do the talking. Here's a real feeding schedule by life stage, safe prey, and how to tell normal premolt fasting from a jumping spider that actually needs help.",
+    "date": "2026-07-28",
+    "category": "Invertebrates",
+    "tags": [
+      "Jumping Spider",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Molting"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/jumping-spider-feeding.jpg",
+    "imageAlt": "Jumping spider eating a fruit fly on a leaf inside its enclosure",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-07-28",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my jumping spider?",
+        "a": "It depends on life stage and varies a fair amount even among adults, spiderlings eat every 1 to 2 days, tapering to roughly every 2 to 5 days by adulthood, sources genuinely differ here. The real guide is the abdomen, shrunken or wrinkled means feed, plump and noticeably wider than the cephalothorax means skip the next meal."
+      },
+      {
+        "q": "What should I actually feed a jumping spider?",
+        "a": "Flightless fruit flies for slings and small juveniles, moving up to pinhead crickets, houseflies, and small roach nymphs for juveniles through adults. Flies are a favorite low-risk staple, they can't bite back or burrow into substrate."
+      },
+      {
+        "q": "What should I never feed a jumping spider?",
+        "a": "Ants, repeatedly named as the single thing to avoid, they can bite or spray formic acid, and jumping spiders show an instinctive fear response to them. Hard-shelled beetles, pill bugs, fireflies, and any prey larger than the spider's own body are also flagged as unsafe."
+      },
+      {
+        "q": "Why has my jumping spider stopped eating?",
+        "a": "Most commonly it's premolt fasting, which can last anywhere from a few days to several weeks depending on the spider's size. Post-molt recovery, breeding behavior, and simple prey pickiness are other normal explanations. Real concern shows up as a shrunken, raisin-like abdomen paired with lethargy."
+      },
+      {
+        "q": "How long can a jumping spider go without eating?",
+        "a": "Longer than most people expect, a healthy adult can typically go 2 to 3 weeks without concern, and older adults are anecdotally reported tolerating a month or more, especially around a molt or egg-guarding. There's no true veterinary source for this specific number though, it's hobbyist-reported, not clinically established."
+      },
+      {
+        "q": "Do jumping spiders need calcium supplements?",
+        "a": "No, that's not standard practice for this species the way it is for reptiles. Gut-loading feeder insects on a nutritious diet before offering them is the actual supplementation method used here."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/koi-conure-slider-scorpion-overview.mdx",
     "slug": "koi-conure-slider-scorpion-overview",
     "title": "Four Pets People Get Wrong Before They Even Bring One Home",
@@ -6477,6 +6584,61 @@
       "pond-aerator-aquascape-pond-air-2",
       "pond-netting-alpinereach-15x20",
       "koi-pellets-kaytee-kois-choice"
+    ]
+  },
+  {
+    "path": "/content/guides/koi-feeding-guide.mdx",
+    "slug": "koi-feeding-guide",
+    "title": "Koi Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Koi Feeding Guide: Schedule and Diet",
+    "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the real seasonal schedule, what to feed, and why stopping feeding in cold water can save a koi's life.",
+    "date": "2026-07-28",
+    "category": "Aquatic Life",
+    "tags": [
+      "Koi",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Pond Fish",
+      "Feeding Schedule",
+      "Not Eating",
+      "Cold Water"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/koi-feeding.jpg",
+    "imageAlt": "Koi rising to the pond surface to feed on floating pellets",
+    "emoji": "🎏",
+    "lastReviewed": "2026-07-28",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my koi?",
+        "a": "It depends entirely on water temperature, not the season by name. Roughly, stop below 48 to 50°F, feed sparingly once or twice a day between 50 and 68°F, and 2 to 4 times a day in the 68 to 86°F growth range. Above about 86 to 90°F, cut back again, heat stress impairs digestion too."
+      },
+      {
+        "q": "Why do I need to stop feeding koi in cold water?",
+        "a": "Koi have no true stomach, food passes straight into the intestine. If a koi enters cold-water torpor with food still in its gut, undigested material can let harmful bacteria cross the intestinal wall into the bloodstream. Stopping feeding before it gets that cold isn't just a rule of thumb, it's the actual reason koi ponds get into trouble in winter."
+      },
+      {
+        "q": "How much should I feed at each meal?",
+        "a": "The traditional 5-minute rule, only offer what's cleaned up in 3 to 5 minutes, is the most repeated guidance, though at least one koi-specific source argues keepers who rely on it tend to overfeed. A body-weight-based approach, roughly 1 to 4% of body weight a day depending on temperature and size, is the more precise alternative if you want it."
+      },
+      {
+        "q": "Should I feed a different food in spring and fall?",
+        "a": "Yes. A lower-protein wheat-germ formula is easier to digest at low metabolic rates and is the right choice in the 50 to 64°F range. Save the higher-protein warm-season growth and color formula for consistently warmer water above roughly 60 to 64°F."
+      },
+      {
+        "q": "Why has my koi stopped eating?",
+        "a": "In cold water, this is completely normal, koi enter a hibernation-like torpor below about 48 to 50°F and live off stored fat until spring. In warm water, poor water quality is the most common concerning cause, especially if multiple fish stop eating at once, that's a signal to test the water immediately."
+      },
+      {
+        "q": "How long can a koi go without eating?",
+        "a": "In winter, weeks to months is by design and not a red flag. In warm water, koi can go roughly two weeks without dedicated feeding since they forage naturally in the pond, so a few days of reduced eating isn't automatically an emergency. What is concerning: appetite loss lasting more than a few days in warm water, especially paired with sluggishness, color loss, or visible sores."
+      }
+    ],
+    "relatedProducts": [
+      "goldfish-gel-food-repashy-super-gold"
     ]
   },
   {
