@@ -53,4 +53,8 @@ export const RELATED_ARTICLES = {
   'milk-snake': ['milk-snake-cost-guide', 'milk-snake-handling-guide', 'milk-snake-health-issues-guide', 'milk-snake-tank-setup-guide'],
   'madagascar-hissing-cockroach': ['madagascar-hissing-cockroach-feeding-guide', 'madagascar-hissing-cockroach-cost-guide', 'madagascar-hissing-cockroach-handling-guide', 'madagascar-hissing-cockroach-health-issues-guide', 'madagascar-hissing-cockroach-tank-setup-guide'],
   'angelfish': ['angelfish-cost-guide', 'angelfish-handling-guide', 'angelfish-health-issues-guide', 'angelfish-tank-setup-guide'],
+  'uromastyx': ['uromastyx-cost-guide', 'uromastyx-handling-guide', 'uromastyx-health-issues-guide', 'uromastyx-tank-setup-guide'],
+  'tokay-gecko': ['tokay-gecko-cost-guide', 'tokay-gecko-handling-guide', 'tokay-gecko-health-issues-guide', 'tokay-gecko-tank-setup-guide'],
+  'african-grey-parrot': ['african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide'],
+  'jumping-spider': ['jumping-spider-feeding-guide', 'jumping-spider-cost-guide', 'jumping-spider-handling-guide', 'jumping-spider-health-issues-guide', 'jumping-spider-tank-setup-guide'],
 };

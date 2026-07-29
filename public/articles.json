@@ -81,6 +81,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "african-grey-parrot-cost-guide",
+      "title": "African Grey Parrot Cost: Full Price Breakdown",
+      "excerpt": "African grey parrots are genuinely one of the most expensive pets covered on this site, and the purchase price is really just the entry fee for a decades-long commitment.",
+      "date": "2026-08-30",
+      "image": "/assets/images/african-grey-parrot-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "african-grey-parrot-handling-guide",
+      "title": "How to Handle an African Grey Parrot Safely",
+      "excerpt": "African grey parrots are highly intelligent, sensitive, and social, and they need a genuine daily time investment to stay well-adjusted, this isn't a bird that thrives on occasional attention.",
+      "date": "2026-08-30",
+      "image": "/assets/images/african-grey-parrot-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "african-grey-parrot-health-issues-guide",
+      "title": "African Grey Parrot Health Issues: Signs & Causes",
+      "excerpt": "African greys face a mix of nutritional, behavioral, and infectious health risks, and this species is genuinely more prone to a couple of specific conditions than the smaller parrots already covered on this site.",
+      "date": "2026-08-30",
+      "image": "/assets/images/african-grey-parrot-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "african-grey-parrot-tank-setup-guide",
+      "title": "African Grey Parrot Cage Setup Guide",
+      "excerpt": "An African grey's cage needs to support a genuinely large, intelligent, long-lived bird, and getting the size and placement right matters as much as anything else in this species' care.",
+      "date": "2026-08-30",
+      "image": "/assets/images/african-grey-parrot-tank-setup.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "angelfish-cost-guide",
       "title": "Angelfish Cost: Full Price Breakdown",
       "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
@@ -1129,11 +1161,43 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "jumping-spider-cost-guide",
+      "title": "Jumping Spider Cost: Full Price Breakdown",
+      "excerpt": "Jumping spiders, the regal jumping spider especially, are one of the most affordable and low space pets on this entire site, genuinely accessible even on a tight budget.",
+      "date": "2026-08-31",
+      "image": "/assets/images/jumping-spider-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
       "slug": "jumping-spider-feeding-guide",
       "title": "Jumping Spider Feeding Guide: Schedule and Diet",
       "excerpt": "Let the abdomen do the talking. Here's a real feeding schedule by life stage, safe prey, and how to tell normal premolt fasting from a jumping spider that actually needs help.",
       "date": "2026-07-28",
       "image": "/assets/images/jumping-spider-feeding.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "jumping-spider-handling-guide",
+      "title": "How to Safely Handle a Jumping Spider",
+      "excerpt": "Jumping spiders are genuinely different from most spiders kept as pets, and that difference starts with how they actually hunt.",
+      "date": "2026-08-31",
+      "image": "/assets/images/jumping-spider-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "jumping-spider-health-issues-guide",
+      "title": "Jumping Spider Health Issues: Signs & Causes",
+      "excerpt": "Jumping spiders are genuinely hardy when humidity stays consistent, and the large majority of health problems in this species trace back to that one factor.",
+      "date": "2026-08-31",
+      "image": "/assets/images/jumping-spider-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "jumping-spider-tank-setup-guide",
+      "title": "Jumping Spider Enclosure Setup Guide",
+      "excerpt": "Jumping spider setups are small, inexpensive, and genuinely simple once you understand the one factor that matters most: keeping humidity consistent.",
+      "date": "2026-08-31",
+      "image": "/assets/images/jumping-spider-tank-setup.jpg",
       "category": "Invertebrates"
     },
     {
@@ -1719,6 +1783,78 @@
       "date": "2026-07-17",
       "image": "/assets/images/tarantula-tank-setup.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "tokay-gecko-cost-guide",
+      "title": "Tokay Gecko Cost: Full Price Breakdown",
+      "excerpt": "Tokay geckos have a wide price range that reflects a real quality divide in this species: wild-caught animals are cheap and come with real downsides, while captive-bred animals cost more and are the meaningfully better choice.",
+      "date": "2026-08-29",
+      "image": "/assets/images/tokay-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "tokay-gecko-handling-guide",
+      "title": "Tokay Gecko Handling: What to Actually Expect",
+      "excerpt": "Every other gecko covered on this site, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm to genuinely display-only. The tokay gecko breaks that pattern entirely.",
+      "date": "2026-08-29",
+      "image": "/assets/images/tokay-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "tokay-gecko-health-issues-guide",
+      "title": "Tokay Gecko Health Issues: Signs & Causes",
+      "excerpt": "Tokay geckos are generally hardy, and most issues trace back to temperature, humidity, or, for wild-caught animals specifically, parasites picked up before the gecko ever reached you.",
+      "date": "2026-08-29",
+      "image": "/assets/images/tokay-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "tokay-gecko-tank-setup-guide",
+      "title": "Tokay Gecko Enclosure Setup Guide",
+      "excerpt": "Tokay gecko care runs warm and genuinely humid, closer to a rainforest setup than the arid conditions many other geckos on this site prefer.",
+      "date": "2026-08-29",
+      "image": "/assets/images/tokay-gecko-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "uromastyx-cost-guide",
+      "title": "Uromastyx Cost: Full Price Breakdown",
+      "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the real upfront cost to $500-900, driven by just how hot and specialized this species' enclosure needs to be.",
+      "date": "2026-08-28",
+      "image": "/assets/images/uromastyx-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "uromastyx-handling-guide",
+      "title": "How to Handle a Uromastyx Safely",
+      "excerpt": "Uromastyx are generally calm, tameable lizards once settled in, but one body part sets their handling apart from almost every other pet lizard: the tail.",
+      "date": "2026-08-28",
+      "image": "/assets/images/uromastyx-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "uromastyx-health-issues-guide",
+      "title": "Uromastyx Health Issues: Signs & Causes",
+      "excerpt": "Uromastyx are hardy desert specialists, and most health problems in captivity trace directly back to getting this species' unusually specific heat, humidity, or dietary needs wrong.",
+      "date": "2026-08-28",
+      "image": "/assets/images/uromastyx-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "uromastyx-tank-setup-guide",
+      "title": "Uromastyx Enclosure Setup Guide",
+      "excerpt": "Uromastyx husbandry pushes further into extreme heat and low humidity than almost any other commonly kept reptile, and getting comfortable with those numbers is the key to keeping this species well.",
+      "date": "2026-08-28",
+      "image": "/assets/images/uromastyx-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "uromastyx-tokay-africangrey-jumpingspider-overview",
+      "title": "Uromastyx, Tokay Gecko, African Grey Parrot & Jumping Spider Compared",
+      "excerpt": "Each of these four breaks the pattern its own category set: a lizard that won't eat meat, a gecko that isn't calm, a bird that might outlive you, and a spider that hunts by sight.",
+      "date": "2026-09-01",
+      "image": "/assets/guides/uromastyx-tokay-africangrey-jumpingspider-overview.jpg",
+      "category": "Roundups"
     },
     {
       "slug": "uvb-lighting-complete-guide",
