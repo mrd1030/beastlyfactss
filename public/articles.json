@@ -753,6 +753,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "crested-gecko-feeding-guide",
+      "title": "Crested Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "Why powdered crested gecko diet, not live insects, should be the actual staple, and how to tell a picky eater from a gecko that genuinely needs help.",
+      "date": "2026-07-29",
+      "image": "/assets/images/crested-gecko-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "crested-gecko-handling-guide",
       "title": "How to Handle a Crested Gecko Correctly",
       "excerpt": "Crested geckos are gentle and easy to handle once settled, but unlike leopard geckos, a dropped tail never grows back, which changes how carefully you should handle one.",
@@ -1649,6 +1657,14 @@
       "category": "Amphibians"
     },
     {
+      "slug": "pacman-frog-feeding-guide",
+      "title": "Pacman Frog Feeding Guide: Schedule and Diet",
+      "excerpt": "Pacman frogs will genuinely eat until they're sick, so portion control matters more than the schedule. Here's how much is too much, what to feed, and when a long fast is actually normal.",
+      "date": "2026-07-29",
+      "image": "/assets/images/pacman-frog-feeding.jpg",
+      "category": "Amphibians"
+    },
+    {
       "slug": "pacman-frog-handling-guide",
       "title": "Pacman Frog Handling: Why It Should Stay Minimal",
       "excerpt": "Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves near their face. That's exactly why this isn't a species built for regular handling.",
@@ -1775,6 +1791,14 @@
       "date": "2026-07-30",
       "image": "/assets/images/red-eared-slider-cost.jpg",
       "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "red-eared-slider-feeding-guide",
+      "title": "Red-Eared Slider Feeding Guide: Schedule and Diet",
+      "excerpt": "Why a red-eared slider can only eat while submerged, how the protein-to-plant ratio shifts as they grow, and how to tell brumation from real trouble.",
+      "date": "2026-07-29",
+      "image": "/assets/images/red-eared-slider-feeding.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "red-eared-slider-handling-guide",

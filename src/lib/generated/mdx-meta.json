@@ -4666,6 +4666,62 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/crested-gecko-feeding-guide.mdx",
+    "slug": "crested-gecko-feeding-guide",
+    "title": "Crested Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Crested Gecko Feeding Guide: Schedule and Diet",
+    "excerpt": "Why powdered crested gecko diet, not live insects, should be the actual staple, and how to tell a picky eater from a gecko that genuinely needs help.",
+    "date": "2026-07-29",
+    "category": "Reptiles",
+    "tags": [
+      "Crested Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "CGD"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-feeding.jpg",
+    "imageAlt": "Crested gecko licking powdered crested gecko diet from a small dish",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-29",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my crested gecko?",
+        "a": "Hatchlings and juveniles get commercial crested gecko diet (CGD) daily, with live insects added once or twice a week mostly for enrichment. Adults move to CGD every 2 to 3 days, with live insects offered about once a week."
+      },
+      {
+        "q": "Should I feed live insects or powdered CGD?",
+        "a": "CGD should be the actual nutritional foundation, insects are a supplemental extra, not the base diet. Introducing insects before a gecko is reliably eating CGD is a real mistake, geckos can learn to hold out for insects and refuse the complete diet, risking malnutrition."
+      },
+      {
+        "q": "Why is my crested gecko refusing its food?",
+        "a": "Often it's simple pickiness, cresties are notably fussier than most keepers expect, and may reject one flavor or texture while readily eating another. Rotating 2 to 3 CGD brands or flavors is the standard fix, one brand's watermelon flavor is specifically called out as unusually well accepted by picky eaters."
+      },
+      {
+        "q": "Do crested geckos brumate?",
+        "a": "No, and they shouldn't be put through a deliberate cooling cycle the way some temperate reptiles are. That said, keepers do report cresties eating and moving less in winter months due to internal seasonal rhythms, even with stable husbandry."
+      },
+      {
+        "q": "How long can a crested gecko go without eating?",
+        "a": "A healthy, good-weight adult can typically go about 2 to 3 weeks without real concern, though a vet consult is worth considering after the second week, especially with visible weight loss. Juveniles have far less reserve and shouldn't be given that same grace period. Water matters even more, a crested gecko can only go about 3 days without it."
+      },
+      {
+        "q": "What foods are actually dangerous for crested geckos?",
+        "a": "Avocado, citrus fruits, rhubarb, and any wild-caught insects. Fireflies are genuinely toxic and should never be fed. Onion, garlic, and eggplant are also flagged as unsafe."
+      }
+    ],
+    "relatedProducts": [
+      "crested-gecko-diet-pangea-watermelon-complete-8oz",
+      "calcium-repashy-plus-lod-3oz"
+    ]
+  },
+  {
     "path": "/content/guides/crested-gecko-handling-guide.mdx",
     "slug": "crested-gecko-handling-guide",
     "title": "How to Handle a Crested Gecko (And Why Tail Loss Is Different Here)",
@@ -10262,6 +10318,58 @@
     ]
   },
   {
+    "path": "/content/guides/pacman-frog-feeding-guide.mdx",
+    "slug": "pacman-frog-feeding-guide",
+    "title": "Pacman Frog Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Pacman Frog Feeding Guide: Schedule and Diet",
+    "excerpt": "Pacman frogs will genuinely eat until they're sick, so portion control matters more than the schedule. Here's how much is too much, what to feed, and when a long fast is actually normal.",
+    "date": "2026-07-29",
+    "category": "Amphibians",
+    "tags": [
+      "Pacman Frog",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pacman-frog-feeding.jpg",
+    "imageAlt": "Pacman frog striking at a cricket held with feeding tongs",
+    "emoji": "🐸",
+    "lastReviewed": "2026-07-29",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my Pacman frog?",
+        "a": "Juveniles eat daily or every 1 to 2 days. Adults are less settled across sources, roughly 1 to 3 times a week depending on where you look. Body condition matters more than hitting an exact number, these frogs are highly food-motivated and will keep eating well past full if you let them."
+      },
+      {
+        "q": "How do I know if I'm overfeeding my Pacman frog?",
+        "a": "Watch body shape, not the calendar. A healthy frog looks round but not visibly bloated. These frogs are notorious for obesity and fatty liver disease from overfeeding, since they don't have a natural stop signal the way some pets do."
+      },
+      {
+        "q": "Can I feed my Pacman frog with my fingers?",
+        "a": "No, always use feeding tongs. Pacman frogs have a genuinely strong bite, with both vomerine and maxillary teeth, and letting them associate fingers with food is a bad habit for both of you."
+      },
+      {
+        "q": "Why has my Pacman frog stopped eating?",
+        "a": "Temperature or humidity out of range is one of the most common causes. Stress from a move, shedding, and simple pickiness about unfamiliar prey are other normal explanations. Aestivation, a heat or drought response where the frog seals itself in a mucus cocoon, can also happen in captivity, but should never be allowed in frogs under about a year old."
+      },
+      {
+        "q": "How long can a Pacman frog go without eating?",
+        "a": "Longer than most pets, thanks to large fat reserves. Hobbyist sources commonly cite 2 to 4 weeks as typical for a healthy adult, up to about 6 weeks in some cases, though this isn't backed by a veterinary source, treat it as rough consensus. Juveniles have far less reserve, about a week is the point to start paying closer attention."
+      },
+      {
+        "q": "What's the actual danger sign if my frog isn't eating?",
+        "a": "Weight loss, not the fast itself. A frog that stays active, alert, and hydrated with normal feces is generally fine even while skipping meals. Rapid or visible weight loss, roughly 10% over a couple of weeks, lethargy, or a frog under a year old that appears to be going dormant are all reasons to see an exotics vet."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/pacman-frog-handling-guide.mdx",
     "slug": "pacman-frog-handling-guide",
     "title": "Should You Handle a Pacman Frog? Rarely, and Carefully",
@@ -11050,6 +11158,60 @@
       "turtle-basking-platform-turtle-topper-large",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "turtle-pellets-mazuri-aquatic"
+    ]
+  },
+  {
+    "path": "/content/guides/red-eared-slider-feeding-guide.mdx",
+    "slug": "red-eared-slider-feeding-guide",
+    "title": "Red-Eared Slider Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Red-Eared Slider Feeding Guide: Schedule and Diet",
+    "excerpt": "Why a red-eared slider can only eat while submerged, how the protein-to-plant ratio shifts as they grow, and how to tell brumation from real trouble.",
+    "date": "2026-07-29",
+    "category": "Reptiles",
+    "tags": [
+      "Red-Eared Slider",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Turtle Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/red-eared-slider-feeding.jpg",
+    "imageAlt": "Red-eared slider eating floating pellets while submerged in water",
+    "emoji": "🐢",
+    "lastReviewed": "2026-07-29",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my red-eared slider?",
+        "a": "Juveniles eat daily, adults every 2 to 3 days rather than daily. Offer only what the turtle can finish in about 15 to 20 minutes, then remove anything left over, sliders will happily overeat given the chance."
+      },
+      {
+        "q": "What ratio of protein to plants should an adult slider eat?",
+        "a": "Sources genuinely disagree on the exact percentage, ranging from roughly half protein/half plant to as little as a quarter protein. What's consistent across every source is the direction: young, growing turtles need proportionally more protein, and the ratio should shift toward vegetables and greens as they mature."
+      },
+      {
+        "q": "Why does my turtle only eat in the water?",
+        "a": "It's not a choice, it's anatomy. Red-eared sliders have no salivary glands, so they physically can't swallow on land, water does the job saliva does for land animals. Always offer food in the water, never on the basking dock."
+      },
+      {
+        "q": "Why has my red-eared slider stopped eating?",
+        "a": "Water or basking temperature that's too low is one of the most common, fixable causes, digestion essentially stops below about 72°F. Stress from a tank change, brumation in cooler months, and a gravid female nearing egg-laying are other normal explanations. It's concerning when paired with respiratory symptoms, swollen eyes, or abnormal floating."
+      },
+      {
+        "q": "How long can a red-eared slider go without eating?",
+        "a": "Outside of brumation, sources converge around roughly 2 to 3 weeks of total refusal as the point to see a vet, sooner if warning signs appear. Indoor sliders kept at stable warm temperatures often don't fully brumate, so sudden refusal in a consistently warm tank is more likely something else than seasonal dormancy."
+      },
+      {
+        "q": "What foods are actually dangerous for red-eared sliders?",
+        "a": "Avocado, onion, and rhubarb are flagged as potentially toxic. Dairy should be avoided entirely, turtles can't digest lactose, and raw grocery-store meat or anything wild-caught carries real parasite and contamination risk."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-tortoise-turtle-herbivorous-sulcata"
     ]
   },
   {
