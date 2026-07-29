@@ -2,11 +2,10 @@ import React from 'react';
 import { Clock, Calendar } from 'lucide-react';
 import SanityImage from '@/components/SanityImage';
 import LocalImage from '@/components/shared/LocalImage';
+import { getDisplayDate } from '@/lib/utils/date';
 
 export default function CompactPostCard({ post, onClick }) {
-  const date = post.publishedAt && new Date(post.publishedAt) <= new Date()
-    ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-    : '';
+  const date = getDisplayDate(post.publishedAt);
 
   const category = post.category || post.animalType || 'Article';
   const slug = post.slug?.current || post._id || post.id;

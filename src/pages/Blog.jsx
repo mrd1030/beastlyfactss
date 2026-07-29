@@ -15,6 +15,7 @@ import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
@@ -511,8 +512,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
     "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
-    "datePublished": post.publishedAt || '',
-    "dateModified": post._updatedAt || post.publishedAt || '',
+    "datePublished": getDisplayIsoDate(post.publishedAt),
+    "dateModified": post._updatedAt || getDisplayIsoDate(post.publishedAt),
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
     "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
@@ -555,7 +556,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
         <meta property="og:image:width" content={String(ogImageDims.width)} />
         <meta property="og:image:height" content={String(ogImageDims.height)} />
         <meta property="og:image:alt" content={post.title} />
-        {post.publishedAt && <meta property="article:published_time" content={post.publishedAt} />}
+        {getDisplayIsoDate(post.publishedAt) && <meta property="article:published_time" content={getDisplayIsoDate(post.publishedAt)} />}
         {post.category && <meta property="article:section" content={post.category} />}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.seoTitle || post.title} />
@@ -578,9 +579,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
                 {post.category || 'Article'}
               </span>
-              {post.publishedAt && new Date(post.publishedAt) <= new Date() && (
+              {getDisplayDate(post.publishedAt) && (
                 <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> {new Date(post.publishedAt).toLocaleDateString()}
+                  <Clock className="w-3 h-3" /> {getDisplayDate(post.publishedAt)}
                 </span>
               )}
               {post.readTime && (

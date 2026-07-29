@@ -7,6 +7,7 @@ import groq from 'groq';
 import { client } from '@/lib/sanity';
 import { CHRONICLES_SERIES, mdxChroniclesPosts, groupChronicles, chroniclesPath } from '@/lib/chronicles';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { getDisplayDate } from '@/lib/utils/date';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import * as MdxComponents from '@/components/mdx';
 import SanityImage from '@/components/SanityImage';
@@ -231,9 +232,11 @@ function StoryCard({ story, seriesId, part, index }) {
             <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
               Part {part}
             </span>
-            <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-              <Clock className="w-3 h-3" /> {new Date(story.publishedAt).toLocaleDateString()}
-            </span>
+            {getDisplayDate(story.publishedAt) && (
+              <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+                <Clock className="w-3 h-3" /> {getDisplayDate(story.publishedAt)}
+              </span>
+            )}
             {story.readTime && (
               <span className="text-xs text-muted-foreground font-body">{story.readTime} min read</span>
             )}
@@ -316,9 +319,11 @@ function StoryReader({ story, part }) {
         <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
           Part {part}
         </span>
-        <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-          <Clock className="w-3 h-3" /> {new Date(story.publishedAt).toLocaleDateString()}
-        </span>
+        {getDisplayDate(story.publishedAt) && (
+          <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
+            <Clock className="w-3 h-3" /> {getDisplayDate(story.publishedAt)}
+          </span>
+        )}
         {story.readTime && (
           <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
             <BookOpen className="w-3 h-3" /> {story.readTime} min read
