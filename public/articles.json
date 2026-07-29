@@ -417,12 +417,44 @@
       "category": "Roundups"
     },
     {
+      "slug": "box-turtle-cost-guide",
+      "title": "Box Turtle Cost, Legal Sourcing, and Lifespan Guide",
+      "excerpt": "Box turtles come with a genuinely important sourcing consideration that affects both cost and legality, worth understanding before anything else, on top of a lighting and heating setup that dominates the upfront budget.",
+      "date": "2026-09-09",
+      "image": "/assets/images/box-turtle-cost.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "box-turtle-handling-guide",
+      "title": "How to Handle a Box Turtle Safely",
+      "excerpt": "Box turtles are shy and genuinely better observed than handled, though with patience, they can become surprisingly personable animals that recognize feeding time and approach their keeper.",
+      "date": "2026-09-09",
+      "image": "/assets/images/box-turtle-handling.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "box-turtle-health-issues-guide",
+      "title": "Box Turtle Health Issues: Signs and Causes",
+      "excerpt": "Box turtles are genuinely good at hiding illness, which makes knowing the warning signs, and understanding how a few of these conditions connect to each other, especially worthwhile with this species.",
+      "date": "2026-09-09",
+      "image": "/assets/images/box-turtle-health-issues.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
       "slug": "box-turtle-legal-guide",
       "title": "Is a Box Turtle Legal in Your State? Full Guide",
       "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
       "date": "2026-07-23",
       "image": "/assets/guides/box-turtle-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "box-turtle-tank-setup-guide",
+      "title": "Box Turtle Enclosure Setup Guide",
+      "excerpt": "A box turtle enclosure needs to genuinely support both the land-dwelling and water-access sides of this species' semi-terrestrial life, floor space, burrowing depth, and a real basking setup all matter here.",
+      "date": "2026-09-09",
+      "image": "/assets/images/box-turtle-tank-setup.jpg",
+      "category": "Turtles & Tortoises"
     },
     {
       "slug": "budgie-cere-color-guide",
@@ -471,6 +503,38 @@
       "date": "2026-07-08",
       "image": "/assets/images/budgie-vs-cockatiel.jpg",
       "category": "Comparisons"
+    },
+    {
+      "slug": "california-kingsnake-cost-guide",
+      "title": "California Kingsnake Cost: Full Price Breakdown",
+      "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment more modest than a 20-plus year lifespan might suggest.",
+      "date": "2026-09-08",
+      "image": "/assets/images/california-kingsnake-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "california-kingsnake-handling-guide",
+      "title": "California Kingsnake Handling Guide",
+      "excerpt": "California kingsnakes are docile and easy to handle, but they carry one absolute housing rule that comes straight from what this snake eats in the wild.",
+      "date": "2026-09-08",
+      "image": "/assets/images/california-kingsnake-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "california-kingsnake-health-issues-guide",
+      "title": "California Kingsnake Health Issues: Signs & Causes",
+      "excerpt": "California kingsnakes are genuinely hardy, and the overwhelming majority of health problems in this species trace back to husbandry errors rather than any inherent fragility.",
+      "date": "2026-09-08",
+      "image": "/assets/images/california-kingsnake-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "california-kingsnake-tank-setup-guide",
+      "title": "California Kingsnake Tank Setup Guide",
+      "excerpt": "California kingsnake husbandry is genuinely straightforward, with two non-negotiable security requirements: a tightly clamped lid, and never housing this species with or near another snake.",
+      "date": "2026-09-08",
+      "image": "/assets/images/california-kingsnake-tank-setup.jpg",
+      "category": "Reptiles"
     },
     {
       "slug": "cat-hairball-vs-vomiting-guide",
@@ -1281,6 +1345,46 @@
       "category": "Fish"
     },
     {
+      "slug": "leaf-tailed-gecko-cost-guide",
+      "title": "Leaf-Tailed Gecko Cost: Full Price Breakdown",
+      "excerpt": "Leaf-tailed geckos are genuinely the most expensive gecko covered on this site, and the price reflects both their striking camouflage and the real skill involved in breeding them successfully.",
+      "date": "2026-09-07",
+      "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leaf-tailed-gecko-handling-guide",
+      "title": "Leaf-Tailed Gecko Handling: What to Expect",
+      "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
+      "date": "2026-09-07",
+      "image": "/assets/images/leaf-tailed-gecko-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leaf-tailed-gecko-health-issues-guide",
+      "title": "Leaf-Tailed Gecko Health Issues: Signs & Causes",
+      "excerpt": "Leaf-tailed geckos are genuinely delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile on this site.",
+      "date": "2026-09-07",
+      "image": "/assets/images/leaf-tailed-gecko-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leaf-tailed-gecko-tank-setup-guide",
+      "title": "Leaf-Tailed Gecko Enclosure Setup Guide",
+      "excerpt": "Leaf-tailed gecko care flips a lot of typical reptile assumptions. This species wants to stay cool, not warm, and humidity management is genuinely the central skill in keeping one healthy.",
+      "date": "2026-09-07",
+      "image": "/assets/images/leaf-tailed-gecko-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "leaftailedgecko-kingsnake-boxturtle-oscar-overview",
+      "title": "Leaf-Tailed Gecko, California Kingsnake, Box Turtle & Oscar Fish Compared",
+      "excerpt": "A leaf-tailed gecko, a California kingsnake, a box turtle, and an oscar fish, none of the four make much sense on their own, each is best understood by comparing it to an animal already covered on this site.",
+      "date": "2026-09-11",
+      "image": "/assets/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.jpg",
+      "category": "Roundups"
+    },
+    {
       "slug": "leopard-gecko-cost-guide",
       "title": "Leopard Gecko Cost: Full Price Breakdown",
       "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
@@ -1502,6 +1606,38 @@
       "excerpt": "Neon tetras come from soft, dim, tannin-stained blackwater streams, and the closer your tank setup gets to that origin, the better this fish looks and behaves.",
       "date": "2026-08-20",
       "image": "/assets/images/neon-tetra-tank-setup.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "oscar-fish-cost-guide",
+      "title": "Oscar Fish Cost: Full Price Breakdown",
+      "excerpt": "Oscars are cheap to buy and genuinely expensive to house properly. The tank and filtration, not the fish, are where this species' real budget goes.",
+      "date": "2026-09-10",
+      "image": "/assets/images/oscar-fish-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "oscar-fish-handling-guide",
+      "title": "Oscar Fish Behavior and Handling Guide",
+      "excerpt": "Every other fish on this site is an observation animal built around feeding and water care. Oscars are genuinely different, intelligent enough to recognize their keeper and develop real individual personality.",
+      "date": "2026-09-10",
+      "image": "/assets/images/oscar-fish-handling.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "oscar-fish-health-issues-guide",
+      "title": "Oscar Fish Health Issues: Signs and Causes",
+      "excerpt": "Oscars are hardy fish in a properly sized, well-filtered tank, and one condition in particular is common enough, and specific enough, that every oscar owner should recognize it immediately.",
+      "date": "2026-09-10",
+      "image": "/assets/images/oscar-fish-health-issues.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "oscar-fish-tank-setup-guide",
+      "title": "Oscar Fish Tank Setup Guide",
+      "excerpt": "Oscars are the largest, messiest fish covered here, and the setup needs to genuinely reflect that from day one, not grow into it gradually.",
+      "date": "2026-09-10",
+      "image": "/assets/images/oscar-fish-tank-setup.jpg",
       "category": "Fish"
     },
     {

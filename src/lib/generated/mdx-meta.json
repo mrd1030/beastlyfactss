@@ -2584,6 +2584,164 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/box-turtle-cost-guide.mdx",
+    "slug": "box-turtle-cost-guide",
+    "title": "How Much Does a Box Turtle Really Cost? (And a Legal Note on Where They Come From)",
+    "seoTitle": "Box Turtle Cost, Legal Sourcing, and Lifespan Guide",
+    "excerpt": "Box turtles come with a genuinely important sourcing consideration that affects both cost and legality, worth understanding before anything else, on top of a lighting and heating setup that dominates the upfront budget.",
+    "date": "2026-09-09",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Box Turtle",
+      "Turtle Care",
+      "Legal",
+      "Care Tips",
+      "Cost",
+      "CITES"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/box-turtle-cost.jpg",
+    "imageAlt": "Eastern box turtle on forest substrate with its shell partly closed, beside enclosure setup gear",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to collect a box turtle from the wild?",
+        "a": "In most of their native US range, no, or only with heavy restriction. Several states prohibit wild collection entirely, with fines running into the thousands of dollars per animal. Both major box turtle species groups are also CITES Appendix II listed, and wild populations are generally declining. For the full state-by-state breakdown, see our dedicated Box Turtle legal guide."
+      },
+      {
+        "q": "How much does the turtle itself cost?",
+        "a": "It varies significantly by species. Chinese box turtles are the rarest and most expensive, while common eastern, three-toed, and ornate box turtles are more widely available and affordable. Always buy captive-bred with clear documentation, and prefer well-started young turtles over fragile true hatchlings."
+      },
+      {
+        "q": "What does the upfront setup cost?",
+        "a": "Roughly $345 to $453 for a large enclosure, T5 HO UVB fixture and bulb, basking bulb and dome, deep substrate, and a water dish. The lighting and heating equipment genuinely dominates this budget, and neither piece is optional for this species."
+      },
+      {
+        "q": "What are the ongoing costs like?",
+        "a": "Moderate. A varied omnivore diet of leafy greens, vegetables, fruit, insects, and earthworms, plus calcium and vitamin supplements and periodic substrate refreshing, makes up the ongoing cost, reasonable relative to the setup investment."
+      },
+      {
+        "q": "What do vet visits typically cost?",
+        "a": "A routine exotic exam runs $60 to $135. Emergency visits start around $150 and can reach $500 or more with treatment. Baytril, a prescription antibiotic, is the standard treatment for the respiratory infections covered in our health issues guide."
+      },
+      {
+        "q": "How long do box turtles live, and why does that matter for budgeting?",
+        "a": "30 to 40-plus years in captivity, with wild box turtles averaging around 50 years. This is genuinely a multi-decade, potentially lifelong commitment, worth weighing as seriously as the legal sourcing question."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "uvb-arcadia-forest-6",
+      "substrate-tarantula-coconut-fiber-peat",
+      "large-soakable-water-dish"
+    ]
+  },
+  {
+    "path": "/content/guides/box-turtle-handling-guide.mdx",
+    "slug": "box-turtle-handling-guide",
+    "title": "How to Handle a Box Turtle",
+    "seoTitle": "How to Handle a Box Turtle Safely",
+    "excerpt": "Box turtles are shy and genuinely better observed than handled, though with patience, they can become surprisingly personable animals that recognize feeding time and approach their keeper.",
+    "date": "2026-09-09",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Box Turtle",
+      "Turtle Care",
+      "Legal",
+      "Care Tips",
+      "Handling",
+      "Turtle Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/box-turtle-handling.jpg",
+    "imageAlt": "Eastern box turtle being gently supported in two cupped hands with its shell partly closed",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are box turtles good pets to handle regularly?",
+        "a": "Not really, they're docile and sometimes shy, and best suited to limited handling rather than frequent physical interaction. Many box turtles do learn to associate their keeper with food, though, and will approach or even feed directly from your hand."
+      },
+      {
+        "q": "Why does a box turtle seal itself completely inside its shell?",
+        "a": "A box turtle's hinged plastron, the bottom shell, lets it close itself in fully when threatened. A turtle that retracts completely and holds tight is actually showing a sign of good health and normal defensive instinct, not something to worry about."
+      },
+      {
+        "q": "What's the right way to pick up a box turtle?",
+        "a": "Support the full body with both hands, keep sessions short, and never drop, shake, or flip a box turtle upside down, this causes real stress and can interfere with normal breathing. Wash your hands before and after, and supervise children closely."
+      },
+      {
+        "q": "How can you tell normal shyness apart from a sick box turtle?",
+        "a": "A box turtle that's hiding occasionally and otherwise active and eating is behaving typically. Excessive hiding combined with lethargy and reduced appetite is a genuine red flag worth a vet visit, not something to write off as this species just being naturally shy."
+      },
+      {
+        "q": "Is a box turtle aquatic like a red-eared slider?",
+        "a": "No. Box turtles are semi-terrestrial, spending most of their time on dry land unlike the fully aquatic red-eared slider, but unlike a fully terrestrial tortoise, they genuinely need regular access to shallow water for soaking and hydration."
+      },
+      {
+        "q": "Can a box turtle learn to recognize its owner?",
+        "a": "Yes, many box turtles do come to associate their keeper with food specifically, and will approach or even feed directly from your hand. This is really the ideal relationship to build with this species, interaction on the turtle's terms."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/box-turtle-health-issues-guide.mdx",
+    "slug": "box-turtle-health-issues-guide",
+    "title": "Common Box Turtle Health Issues",
+    "seoTitle": "Box Turtle Health Issues: Signs and Causes",
+    "excerpt": "Box turtles are genuinely good at hiding illness, which makes knowing the warning signs, and understanding how a few of these conditions connect to each other, especially worthwhile with this species.",
+    "date": "2026-09-09",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Box Turtle",
+      "Turtle Care",
+      "Legal",
+      "Care Tips",
+      "Health",
+      "Metabolic Bone Disease"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/box-turtle-health-issues.jpg",
+    "imageAlt": "Eastern box turtle undergoing a vet exam to check its shell and eyes",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What causes metabolic bone disease in box turtles?",
+        "a": "A calcium and phosphorus imbalance, inadequate UVB, or poor overall diet. Watch for a misshapen shell, deformed legs, and slow or stunted growth. Always see a vet, and treat correct UVB and calcium as essential from the very start."
+      },
+      {
+        "q": "What causes vitamin A deficiency, and why does it matter beyond the eyes?",
+        "a": "A poor diet, too much iceberg lettuce, an all-meat diet, or low-quality commercial food, none of which provide adequate vitamin A. See a vet, and note the connection worth knowing: this deficiency often sets the stage for respiratory infection, treating one without addressing the other doesn't fully solve the problem."
+      },
+      {
+        "q": "What are the signs of a respiratory infection in a box turtle?",
+        "a": "Nasal discharge, mucus bubbles, wheezing, open-mouth breathing, and lethargy. Frequently secondary to vitamin A deficiency, and caused by an enclosure that's too cold, too dry, or poorly ventilated. Always see a vet, this will not resolve without antibiotic treatment."
+      },
+      {
+        "q": "What causes shell rot in box turtles?",
+        "a": "Unsanitary, overly damp conditions or physical trauma, showing up as discolored patches on the shell with a foul odor. See a vet."
+      },
+      {
+        "q": "Do box turtles get internal parasites?",
+        "a": "Yes, often found incidentally on a routine fecal exam even without obvious symptoms. Heavier loads cause diarrhea and weight loss. A vet is required for diagnosis and treatment."
+      },
+      {
+        "q": "Why do annual checkups matter for a box turtle that seems healthy?",
+        "a": "Because box turtles hide illness so effectively, an annual wellness exam with a reptile-experienced vet is genuinely worth doing even when your turtle seems completely healthy, catching a developing problem early, especially the vitamin A and respiratory infection combination, makes a real difference in outcome."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/box-turtle-legal-guide.mdx",
     "slug": "box-turtle-legal-guide",
     "title": "Is It Legal to Own a Box Turtle? State-by-State Guide",
@@ -2620,6 +2778,64 @@
       }
     ],
     "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/box-turtle-tank-setup-guide.mdx",
+    "slug": "box-turtle-tank-setup-guide",
+    "title": "Box Turtle Enclosure Setup: Land, Water, and Real Space Requirements",
+    "seoTitle": "Box Turtle Enclosure Setup Guide",
+    "excerpt": "A box turtle enclosure needs to genuinely support both the land-dwelling and water-access sides of this species' semi-terrestrial life, floor space, burrowing depth, and a real basking setup all matter here.",
+    "date": "2026-09-09",
+    "category": "Turtles & Tortoises",
+    "tags": [
+      "Box Turtle",
+      "Turtle Care",
+      "Legal",
+      "Care Tips",
+      "Enclosure Setup",
+      "UVB"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/box-turtle-tank-setup.jpg",
+    "imageAlt": "Box turtle enclosure with a basking light, deep burrowable substrate, and a soaking dish",
+    "emoji": "🐢",
+    "lastReviewed": "2026-09-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a box turtle need?",
+        "a": "36 by 18 inches is a workable minimum, but larger is considerably better, closer to 5.5 feet by 3 feet for an eastern box turtle, or around 4 feet by 2 feet for the somewhat smaller ornate box turtle. Floor space matters far more than height, this is a ground-dwelling, burrowing species."
+      },
+      {
+        "q": "What temperature does a box turtle enclosure need?",
+        "a": "A clear warm basking zone with a gradient down to a cooler area, using an indoor heat source. This species shouldn't be kept outdoors once temperatures drop below about 70°F."
+      },
+      {
+        "q": "How humid should a box turtle enclosure be?",
+        "a": "Relatively humid, 60 to 80%. Mist daily and provide a shallow water dish large enough for your turtle to genuinely soak in. Hatchlings and young turtles dehydrate especially easily and need consistently moist substrate, not just an occasional misting."
+      },
+      {
+        "q": "What substrate is safe for a box turtle?",
+        "a": "Wood chips or a topsoil and coconut fiber mix, at least 2 to 3 inches deep to support burrowing. Avoid gravel, sand, additive-laden potting soil, crushed walnut shells, and cat litter entirely, all carry real impaction risk."
+      },
+      {
+        "q": "What UVB setup does a box turtle need?",
+        "a": "A T5 HO bulb, 6% strength or the equivalent Zoo Med ReptiSun 5.0 T5 HO, in a reflective fixture, targeting a basking-area UV index of 3.0 to 4.0. Run a longer photoperiod in summer, around 14 hours, tapering to about 10 hours in winter."
+      },
+      {
+        "q": "Does a box turtle enclosure need both land and water?",
+        "a": "Yes, genuinely non-negotiable for this species, a dry-only or water-only setup doesn't match how box turtles actually live. A 4 to 5 inch opaque barrier along the front glass also helps curb the stress-driven pacing that clear-walled enclosures can cause."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-repti-zoo-36x18x18-50gal",
+      "uvb-arcadia-forest-6",
+      "basking-bulb-75w",
+      "basking-dome-fixture",
+      "substrate-tarantula-coconut-fiber-peat",
+      "large-soakable-water-dish"
+    ]
   },
   {
     "path": "/content/guides/budgie-cere-color-guide.mdx",
@@ -2904,6 +3120,220 @@
       }
     ],
     "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/california-kingsnake-cost-guide.mdx",
+    "slug": "california-kingsnake-cost-guide",
+    "title": "How Much Does a California Kingsnake Really Cost?",
+    "seoTitle": "California Kingsnake Cost: Full Price Breakdown",
+    "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment more modest than a 20-plus year lifespan might suggest.",
+    "date": "2026-09-08",
+    "category": "Reptiles",
+    "tags": [
+      "California Kingsnake",
+      "Snake Care",
+      "Reptile Care",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-cost.jpg",
+    "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a California kingsnake itself cost?",
+        "a": "Wild-type banded babies start as low as $45. Morphs push the price higher, albino runs $100 to $220, banana $150 to $250, aberrant or hypo patterns $60 to $150, and high-white or lavender lines $200 to $300. Choosing a morph is purely an aesthetic decision, it doesn't meaningfully affect care one way or another."
+      },
+      {
+        "q": "What does a full upfront setup cost?",
+        "a": "Roughly $200 to $500, covering a 48x24x24 inch front-opening enclosure for an adult, an under-tank heat pad, overhead heat source, or both, plus a thermostat, aspen substrate, two hides, a water bowl, and a genuinely secure, tightly fitting lid."
+      },
+      {
+        "q": "What are the ongoing monthly costs?",
+        "a": "Roughly $15 to $30 a month. One appropriately sized rodent a week, plus substrate and modest electricity, make this one of the cheapest reptiles on this site to feed on an ongoing basis."
+      },
+      {
+        "q": "How much does vet care cost for a California kingsnake?",
+        "a": "A routine exotic exam runs $50 to $135. Emergency visits start around $150 and can reach $500 or more once treatment and diagnostics are added in."
+      },
+      {
+        "q": "How long do California kingsnakes live, and what's the lifetime cost?",
+        "a": "20 years or more is achievable with good care, with some individuals surpassing that. Paired with genuinely low day-to-day costs, the total lifetime investment ends up more modest than the years alone might suggest."
+      },
+      {
+        "q": "Is there a cost consideration for this species beyond money?",
+        "a": "Yes. California kingsnakes are ophiophagous, meaning they eat other snakes, and that instinct doesn't turn off in captivity. If you're planning to keep multiple reptiles, this species needs to be housed completely separately, never even near another snake's enclosure in a way that allows contact."
+      }
+    ],
+    "relatedProducts": [
+      "milk-snake-vivarium-wooden-48x24x24",
+      "under-tank-heat-mat-thermostat-kit",
+      "aspen-shavings-substrate",
+      "shallow-water-dish"
+    ]
+  },
+  {
+    "path": "/content/guides/california-kingsnake-handling-guide.mdx",
+    "slug": "california-kingsnake-handling-guide",
+    "title": "How to Handle a California Kingsnake (And Why It Must Live Alone)",
+    "seoTitle": "California Kingsnake Handling Guide",
+    "excerpt": "California kingsnakes are docile and easy to handle, but they carry one absolute housing rule that comes straight from what this snake eats in the wild.",
+    "date": "2026-09-08",
+    "category": "Reptiles",
+    "tags": [
+      "California Kingsnake",
+      "Snake Care",
+      "Reptile Care",
+      "Handling",
+      "Snake Behavior",
+      "Reptile Behavior"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-handling.jpg",
+    "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are California kingsnakes good for beginners?",
+        "a": "Yes. They're calm and tolerant of regular handling once settled, which is exactly why this species is a classic beginner snake. Young kingsnakes can deliver quick, pin-prick defensive bites, but this settles with consistent, gentle handling over time."
+      },
+      {
+        "q": "How should I approach a California kingsnake?",
+        "a": "Hand-over-hand rather than grabbing. Skip handling within 48 hours of feeding or during a shed cycle, when cloudy eyes make a snake more defensive and jumpier than usual."
+      },
+      {
+        "q": "Why do California kingsnakes need to be housed alone?",
+        "a": "In the wild, California kingsnakes eat other snakes, including venomous species like copperheads, cottonmouths, and rattlesnakes. That instinct doesn't turn off in captivity, so this species must never be housed with, or allowed contact with, another snake of any kind."
+      },
+      {
+        "q": "Are California kingsnakes really resistant to venom?",
+        "a": "They carry real resistance to some pit viper venom, research on serum from this genus found meaningful resistance to rattlesnake venom specifically. That resistance isn't universal, though, kingsnakes have little to no protection against the neurotoxic venom of coral snakes, and the exact degree of resistance varies by population."
+      },
+      {
+        "q": "What mistakes do first-time kingsnake owners make?",
+        "a": "Assuming a docile temperament means safe cohabitation with another snake (it doesn't, this species will eat a cage-mate), handling too soon after feeding, and underestimating this species as an escape artist, where a loose lid is a real risk."
+      },
+      {
+        "q": "How does a California kingsnake compare to a corn snake?",
+        "a": "Both are hardy, easy-to-handle beginner colubrids. The real difference is diet, corn snakes aren't dedicated snake-eaters, which is exactly why the kingsnake's absolute solo-housing rule doesn't apply in the same way to its corn snake cousin."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/california-kingsnake-health-issues-guide.mdx",
+    "slug": "california-kingsnake-health-issues-guide",
+    "title": "Common California Kingsnake Health Issues",
+    "seoTitle": "California Kingsnake Health Issues: Signs & Causes",
+    "excerpt": "California kingsnakes are genuinely hardy, and the overwhelming majority of health problems in this species trace back to husbandry errors rather than any inherent fragility.",
+    "date": "2026-09-08",
+    "category": "Reptiles",
+    "tags": [
+      "California Kingsnake",
+      "Snake Care",
+      "Reptile Care",
+      "Health",
+      "Reptile Illness",
+      "Husbandry"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-health-issues.jpg",
+    "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What causes respiratory infection in California kingsnakes?",
+        "a": "Temperatures running too low, excess humidity, or unsanitary conditions. Watch for wheezing, open-mouth breathing, nasal mucus, and lethargy. Early cases sometimes resolve once parameters are corrected, advanced cases need a vet for antibiotics."
+      },
+      {
+        "q": "What is scale rot and what causes it?",
+        "a": "Discolored, uneven, or damaged scales, sometimes with swelling and a foul odor, caused by dirty or damp substrate and general poor hygiene. It's manageable at home if caught early through improved cleaning and substrate management, see a vet if it progresses."
+      },
+      {
+        "q": "How do I know if my kingsnake has mites?",
+        "a": "Tiny black or red specks moving around the eyes and vent. A useful early clue is excessive soaking in the water bowl, which is often a sign of mites before you spot them directly. Treat immediately, mites can become genuinely life-threatening if left unaddressed, and treatment needs to cover both the snake and a full enclosure cleaning."
+      },
+      {
+        "q": "How serious is mouth rot in a California kingsnake?",
+        "a": "Always see a vet. Mouth rot, or infectious stomatitis, shows up as cheesy or yellowish material around the gums along with swelling, and it can become life-threatening if untreated."
+      },
+      {
+        "q": "What causes shedding problems in California kingsnakes?",
+        "a": "Retained skin from humidity running too low. It's manageable at home with a humid hide lined with damp sphagnum moss."
+      },
+      {
+        "q": "Are California kingsnakes prone to health problems?",
+        "a": "Not inherently. The vast majority of health problems in captive kingsnakes trace directly to incorrect temperatures, inadequate humidity, dirty conditions, or improper feeding, not genetic susceptibility. Getting the basics right prevents nearly everything on this list before it starts."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/california-kingsnake-tank-setup-guide.mdx",
+    "slug": "california-kingsnake-tank-setup-guide",
+    "title": "California Kingsnake Enclosure Setup",
+    "seoTitle": "California Kingsnake Tank Setup Guide",
+    "excerpt": "California kingsnake husbandry is genuinely straightforward, with two non-negotiable security requirements: a tightly clamped lid, and never housing this species with or near another snake.",
+    "date": "2026-09-08",
+    "category": "Reptiles",
+    "tags": [
+      "California Kingsnake",
+      "Snake Care",
+      "Reptile Care",
+      "Tank Setup",
+      "Enclosure",
+      "Substrate"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-tank-setup.jpg",
+    "imageAlt": "California kingsnake with banded pattern coiled on aspen substrate",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult California kingsnake need?",
+        "a": "A 20-gallon tank works for a hatchling or young snake, but the ideal adult enclosure is 48 inches long by 24 inches wide by 24 inches tall. As a general guide, enclosure length should be at least two-thirds of your snake's body length, these are active snakes that genuinely use the space they're given."
+      },
+      {
+        "q": "What temperature does a California kingsnake enclosure need?",
+        "a": "Basking or warm side 85 to 90°F, cool side 70 to 80°F. An under-tank heat pad, overhead heat source, or both work well, always run through a thermostat."
+      },
+      {
+        "q": "What humidity does a California kingsnake need?",
+        "a": "Keep it relatively low, 40 to 60%. A well-ventilated enclosure and a water bowl that isn't overfilled both help maintain this range without extra effort."
+      },
+      {
+        "q": "What substrate is best for a California kingsnake?",
+        "a": "Aspen shavings are the classic, well-supported choice, supporting natural burrowing behavior. Cypress mulch, sani-chips, or a commercial forest-floor product also work. Avoid pine and cedar entirely, both release aromatic oils that irritate the respiratory system, and skip sand or any chemically treated substrate."
+      },
+      {
+        "q": "Does a California kingsnake need UVB lighting?",
+        "a": "No strict requirement if your snake gets a natural light cycle from the room it's kept in, though low-level UVB offers some benefit and is worth adding if convenient."
+      },
+      {
+        "q": "What are the two most important security requirements for this species?",
+        "a": "California kingsnakes are genuinely accomplished escape artists, so a tightly clamped, secure lid isn't optional. The second requirement isn't about the lid at all: never house a kingsnake with or near another snake, since this species retains a real cannibalistic drive."
+      }
+    ],
+    "relatedProducts": [
+      "milk-snake-vivarium-wooden-48x24x24",
+      "under-tank-heat-mat-thermostat-kit",
+      "aspen-shavings-substrate",
+      "cork-bark-round-hide"
+    ]
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -7882,6 +8312,271 @@
     ]
   },
   {
+    "path": "/content/guides/leaf-tailed-gecko-cost-guide.mdx",
+    "slug": "leaf-tailed-gecko-cost-guide",
+    "title": "How Much Does a Leaf-Tailed Gecko Really Cost?",
+    "seoTitle": "Leaf-Tailed Gecko Cost: Full Price Breakdown",
+    "excerpt": "Leaf-tailed geckos are genuinely the most expensive gecko covered on this site, and the price reflects both their striking camouflage and the real skill involved in breeding them successfully.",
+    "date": "2026-09-07",
+    "category": "Reptiles",
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Gecko Care",
+      "Reptile Care",
+      "Cost",
+      "Exotic Pets",
+      "Pet Ownership Cost"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
+    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark, the priciest gecko species covered on this site",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a leaf-tailed gecko cost?",
+        "a": "$250 to $800 or more, depending on species. Satanic leaf-tailed geckos, the smallest and most dramatically leaf-mimicking species, commonly run $750 to $800. Larger species cost less per animal, Henkel's leaf-tailed geckos run roughly $290 to $500, mossy leaf-tailed around $250, and giant leaf-tailed around $350."
+      },
+      {
+        "q": "Are there color morphs for leaf-tailed geckos?",
+        "a": "Not really. Pricing is driven by species and whether the animal is captive-bred or wild-caught, not selectively bred color genetics. Natural variation, including bark mimics, dead-leaf mimics, and lichen-covered patterns, exists across the group, but there's no real morph market."
+      },
+      {
+        "q": "What does the upfront setup cost for a leaf-tailed gecko?",
+        "a": "Roughly $300 to $600, covering a tall vertical bioactive terrarium, a misting system, low-output UVB and fixture, live plants and moisture-retentive substrate, a digital hygrometer and thermometer, and a magnetic feeding ledge."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a leaf-tailed gecko?",
+        "a": "Roughly $20 to $40 a month, covering live insects such as crickets, dubia roaches, and silkworms, calcium and multivitamin supplements, and modest electricity for misting equipment and lighting."
+      },
+      {
+        "q": "How much do vet visits cost for a leaf-tailed gecko?",
+        "a": "A routine exotic exam runs $60 to $135, with a fecal test adding $15 to $35. Emergency visits start around $150 to $300 for the exam alone, and a serious case with diagnostics and treatment can reach $500 to $1,500."
+      },
+      {
+        "q": "How long do leaf-tailed geckos live, and does that affect the price?",
+        "a": "5 to 15 years in captivity. Wild-caught individuals consistently live shorter lives than captive-bred ones, one more reason captive-bred is strongly worth the higher price for this species specifically."
+      }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "automatic-misting-system-fogger",
+      "leaf-tailed-gecko-magnetic-feeding-ledge",
+      "digital-thermometer-hygrometer-combo"
+    ]
+  },
+  {
+    "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
+    "slug": "leaf-tailed-gecko-handling-guide",
+    "title": "Should You Handle a Leaf-Tailed Gecko? Almost Never",
+    "seoTitle": "Leaf-Tailed Gecko Handling: What to Expect",
+    "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
+    "date": "2026-09-07",
+    "category": "Reptiles",
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Gecko Care",
+      "Reptile Care",
+      "Handling",
+      "Reptile Behavior",
+      "Exotic Pets"
+    ],
+    "readTime": 5,
+    "difficulty": "Advanced",
+    "image": "/assets/images/leaf-tailed-gecko-handling.jpg",
+    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark, remaining still rather than tolerating handling",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Should I handle my leaf-tailed gecko?",
+        "a": "Almost never. Specialist breeders describe leaf-tailed geckos as display animals, not handling pets, and recommend limiting handling to genuine necessity, no more than about once a week even then."
+      },
+      {
+        "q": "How can I tell if my leaf-tailed gecko is stressed by handling?",
+        "a": "A stressed gecko shows constant motion, sometimes leaping, gaping the mouth, arching the body, curling the tail, and in some cases even producing a distress scream. If you see this, the interaction needs to end immediately."
+      },
+      {
+        "q": "Do leaf-tailed geckos bite?",
+        "a": "They can, but their jaws are weak, and even the largest species is unlikely to break human skin. The real risk with this species runs toward the gecko's stress levels, not toward your hands."
+      },
+      {
+        "q": "Do leaf-tailed geckos drop their tails when handled?",
+        "a": "Yes, under stress. The satanic leaf-tailed gecko does not regenerate its tail at all, while several other species regrow theirs imperfectly."
+      },
+      {
+        "q": "Is a leaf-tailed gecko a good choice if I want a handleable pet?",
+        "a": "No. This is the most advanced-keeper gecko covered on this site, best enjoyed as a striking, living piece of camouflage art you observe rather than one you interact with physically."
+      },
+      {
+        "q": "How does the leaf-tailed gecko compare to other geckos on this site?",
+        "a": "Every other gecko here ranges from genuinely handleable, such as the crested, leopard, gargoyle, and African fat-tailed, to defensive but tolerant of occasional interaction, such as the tokay. The leaf-tailed gecko sits in a category of its own, neither handleable nor simply defensive, just genuinely fragile."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/leaf-tailed-gecko-health-issues-guide.mdx",
+    "slug": "leaf-tailed-gecko-health-issues-guide",
+    "title": "Common Leaf-Tailed Gecko Health Issues",
+    "seoTitle": "Leaf-Tailed Gecko Health Issues: Signs & Causes",
+    "excerpt": "Leaf-tailed geckos are genuinely delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile on this site.",
+    "date": "2026-09-07",
+    "category": "Reptiles",
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Gecko Care",
+      "Reptile Care",
+      "Health",
+      "Reptile Illness",
+      "Dehydration"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/leaf-tailed-gecko-health-issues.jpg",
+    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark, showing sunken eyes and dull skin from dehydration",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What's the biggest health risk for a leaf-tailed gecko?",
+        "a": "Dehydration. Specialist breeders describe it as a genuine fast killer of this species, and it's manageable at home if caught early but demands a prompt vet visit if the gecko doesn't respond to increased humidity and misting."
+      },
+      {
+        "q": "What are the signs of dehydration in a leaf-tailed gecko?",
+        "a": "Sunken or dull eyes, wrinkled or loose-looking skin, lethargy, difficulty shedding properly, and appetite loss."
+      },
+      {
+        "q": "What causes metabolic bone disease in leaf-tailed geckos?",
+        "a": "Calcium deficiency, inadequate UVB or vitamin D3, and a poor calcium-to-phosphorus ratio in the diet. Watch for limb weakness or tremors, a soft rubber jaw, bone deformities, and fractures that can occur from even gentle handling. Always see a vet immediately."
+      },
+      {
+        "q": "What causes respiratory infection in leaf-tailed geckos?",
+        "a": "Poor ventilation, temperatures running too low, or humidity that's mismanaged. Watch for wheezing or clicking sounds, open-mouth breathing, mucus, and lethargy. This always needs a vet and prescription antibiotics."
+      },
+      {
+        "q": "Are internal parasites common in leaf-tailed geckos?",
+        "a": "Yes, especially in wild-caught imports. Watch for weight loss, diarrhea, regurgitation, and lethargy. A vet is required for diagnosis and treatment, though for a freshly imported gecko, waiting 1 to 2 months to let it acclimate before starting treatment is often the safer approach, discuss timing with your vet."
+      },
+      {
+        "q": "Does a dropped tail need vet care?",
+        "a": "Usually not. It's manageable at home by minimizing handling and disturbance. See a vet only if the site where the tail dropped shows swelling, redness, discharge, or a foul odor."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/leaf-tailed-gecko-tank-setup-guide.mdx",
+    "slug": "leaf-tailed-gecko-tank-setup-guide",
+    "title": "Leaf-Tailed Gecko Enclosure Setup: Cool, Genuinely Humid, and Precisely Misted",
+    "seoTitle": "Leaf-Tailed Gecko Enclosure Setup Guide",
+    "excerpt": "Leaf-tailed gecko care flips a lot of typical reptile assumptions. This species wants to stay cool, not warm, and humidity management is genuinely the central skill in keeping one healthy.",
+    "date": "2026-09-07",
+    "category": "Reptiles",
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Gecko Care",
+      "Reptile Care",
+      "Tank Setup",
+      "Enclosure",
+      "Humidity"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/leaf-tailed-gecko-tank-setup.jpg",
+    "imageAlt": "Satanic leaf-tailed gecko camouflaged against bark inside a tall, densely planted, misted terrarium",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a leaf-tailed gecko need?",
+        "a": "Smaller species do fine in 12x12x18 inches, with 18x18x18 better. The satanic leaf-tailed gecko, the smallest commonly kept species, does well in an 18x18x24 inch enclosure as an adult, and larger species like Henkel's need considerably more room. This is a vertical, arboreal species, so height matters more than floor space."
+      },
+      {
+        "q": "What temperature does a leaf-tailed gecko need?",
+        "a": "Ambient temperature around 68 to 75F, with a night drop to around 64 to 68F. A basking heat source is generally not needed and can actually be dangerous for this species, the opposite setup priority from most reptiles on this site."
+      },
+      {
+        "q": "How humid should a leaf-tailed gecko enclosure be?",
+        "a": "60 to 80% for most species, though the satanic leaf-tailed gecko specifically needs 90 to 100% overnight and dehydrates extremely easily if that's not met."
+      },
+      {
+        "q": "What substrate is best for a leaf-tailed gecko?",
+        "a": "A moisture-retentive bioactive mix or coconut husk substrate, which supports both the humidity this species needs and some light burrowing behavior."
+      },
+      {
+        "q": "Does a leaf-tailed gecko need UVB?",
+        "a": "Low-output UVB, in the 2.0 to 5.0 range, is increasingly recommended for long-term health, though not definitively required. Avoid high-output basking-style UVB entirely, run a standard 12-hour photoperiod on a timer instead."
+      },
+      {
+        "q": "Why should I use tap water instead of distilled water for misting?",
+        "a": "Tap water contains minerals genuinely important to this gecko's health. Use ordinary tap water for misting and drinking rather than distilled, softened, or heavily filtered water."
+      }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "automatic-misting-system-fogger",
+      "uvb-arcadia-forest-6",
+      "leaf-tailed-gecko-magnetic-feeding-ledge"
+    ]
+  },
+  {
+    "path": "/content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx",
+    "slug": "leaftailedgecko-kingsnake-boxturtle-oscar-overview",
+    "title": "Four Pets You Only Really Understand by Comparison",
+    "seoTitle": "Leaf-Tailed Gecko, California Kingsnake, Box Turtle & Oscar Fish Compared",
+    "excerpt": "A leaf-tailed gecko, a California kingsnake, a box turtle, and an oscar fish, none of the four make much sense on their own, each is best understood by comparing it to an animal already covered on this site.",
+    "date": "2026-09-11",
+    "category": "Roundups",
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "California Kingsnake",
+      "Box Turtle",
+      "Oscar Fish",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.jpg",
+    "imageAlt": "Leaf-tailed gecko, California kingsnake, box turtle, and oscar fish shown side by side",
+    "emoji": "⚖️",
+    "lastReviewed": "2026-09-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What makes the leaf-tailed gecko so different from every other gecko covered on this site?",
+        "a": "Every other gecko here, the crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from genuinely handleable to defensively tolerant, and even the tokay gecko is only guarding itself with a bite. The leaf-tailed gecko is the exception, a genuinely fragile, advanced-keeper species that stresses from handling itself, not from being handled poorly."
+      },
+      {
+        "q": "Why does a California kingsnake need to be housed completely alone?",
+        "a": "Kingsnakes are ophiophagous, meaning they eat other snakes, including venomous species, and they carry real documented resistance to some of that venom. That instinct doesn't turn off in captivity, so this species can never be housed with, or allowed contact with, another snake of any kind, a rule that doesn't apply to an equally docile species like the corn snake, since corn snakes aren't dedicated snake eaters."
+      },
+      {
+        "q": "Is a box turtle more like a red-eared slider or a tortoise?",
+        "a": "Neither, exactly. Box turtles sit between the two, land dwelling like a tortoise but genuinely needing regular access to shallow water for soaking, unlike a tortoise, and omnivorous where tortoises are strict herbivores. Understanding this species means understanding both of the species it isn't."
+      },
+      {
+        "q": "Do oscar fish really recognize the people who keep them?",
+        "a": "Yes, and it's what sets them apart from every other fish covered on this site. Betta, goldfish, koi, guppy, angelfish, and neon tetra are all observation animals, relationships built through water quality and feeding alone. Oscars recognize their keeper, greet at the glass, and develop real individual personality, genuinely unusual behavior for a fish."
+      },
+      {
+        "q": "Is the California kingsnake's venom resistance actually documented, or is that just a reputation?",
+        "a": "It's documented, not just reputation. Research on serum from the kingsnake genus found meaningful resistance to rattlesnake venom specifically. That resistance isn't universal, though, kingsnakes have little to no protection against the neurotoxic venom of coral snakes, and the exact degree varies by population."
+      },
+      {
+        "q": "What do these four pets actually have in common?",
+        "a": "Each one only makes sense by comparison. The gecko is defined by how unlike its handleable cousins it is, the kingsnake by what it eats rather than its own temperament, the box turtle by sitting between two relatives it isn't, and the oscar by being the one fish here that's genuinely aware of its keeper."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/leopard-gecko-cost-guide.mdx",
     "slug": "leopard-gecko-cost-guide",
     "title": "How Much Does a Leopard Gecko Really Cost?",
@@ -9302,6 +9997,215 @@
       "neon-tetra-food-hikari-micro-pellets",
       "water-conditioner",
       "driftwood"
+    ]
+  },
+  {
+    "path": "/content/guides/oscar-fish-cost-guide.mdx",
+    "slug": "oscar-fish-cost-guide",
+    "title": "How Much Does Oscar Fish Ownership Really Cost?",
+    "seoTitle": "Oscar Fish Cost: Full Price Breakdown",
+    "excerpt": "Oscars are cheap to buy and genuinely expensive to house properly. The tank and filtration, not the fish, are where this species' real budget goes.",
+    "date": "2026-09-10",
+    "category": "Fish",
+    "tags": [
+      "Oscar Fish",
+      "Fish Care",
+      "Aquarium Care",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-cost.jpg",
+    "imageAlt": "Tiger oscar fish swimming in a heavily filtered aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-09-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does an oscar fish cost?",
+        "a": "Common juvenile oscars, tiger and standard varieties, run $7 to $35, often clustering toward the lower end for small 1- to 2-inch juveniles. Specialty color and finnage varieties, albino, longfin, super red, and short-body oscars among them, often exceed $100. Larger, already-grown specimens run $99 and up, and breeding pairs run $200 to $500."
+      },
+      {
+        "q": "How much does an oscar tank setup cost upfront?",
+        "a": "A 55-gallon starter setup, often treated as the practical entry point, has been estimated at around $560 as a genuinely low-end build. That figure undersells what oscars actually need, though, and total costs easily exceed $1,000 once you factor in premium filtration and the 75-gallon-plus tank this species will eventually require."
+      },
+      {
+        "q": "What are the ongoing monthly costs of keeping an oscar?",
+        "a": "Roughly $35 to $40 a month. Food, water conditioner, and the electricity to run a heater and heavy-duty filtration continuously add up to more than most smaller community fish need, driven by the equipment this species requires."
+      },
+      {
+        "q": "Do oscars need regular vet visits?",
+        "a": "Not usually. Aquatic vets are specialized and uncommon, and an exam runs around $235 when one is available. In practice, most oscar health issues are managed at home with medication and water quality correction rather than professional visits."
+      },
+      {
+        "q": "How long do oscars live?",
+        "a": "10 to 15 years typically, with well-kept individuals occasionally reaching close to 20. One aquarium retailer puts it plainly: an oscar can live as long as a dog, a genuinely long-term commitment for a fish."
+      },
+      {
+        "q": "What's the biggest cost mistake new oscar owners make?",
+        "a": "Buying a small starter tank instead of the adult-size setup from day one. A 2-inch juvenile oscar reaches 12 inches or more within its first year, and replacing an undersized tank with a proper 75-gallon-plus setup shortly after is a common, costly mistake that's also disruptive for the fish."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-canister-filter-fluval-fx4",
+      "oscar-fish-hikari-cichlid-gold-pellets",
+      "submersible-aquarium-heater"
+    ]
+  },
+  {
+    "path": "/content/guides/oscar-fish-handling-guide.mdx",
+    "slug": "oscar-fish-handling-guide",
+    "title": "Oscar Fish Aren't Handled, But They're the Closest Thing to a Pet Dog in Your Tank",
+    "seoTitle": "Oscar Fish Behavior and Handling Guide",
+    "excerpt": "Every other fish on this site is an observation animal built around feeding and water care. Oscars are genuinely different, intelligent enough to recognize their keeper and develop real individual personality.",
+    "date": "2026-09-10",
+    "category": "Fish",
+    "tags": [
+      "Oscar Fish",
+      "Fish Care",
+      "Aquarium Care",
+      "Fish Behavior",
+      "Handling",
+      "Fish Personality"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-handling.jpg",
+    "imageAlt": "Tiger oscar fish swimming toward the glass in a heavily filtered aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-09-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you handle an oscar fish like a pet?",
+        "a": "Not physically. Despite their reputation, oscars aren't a hands-on pet the way a dog is, the relationship lives entirely at the glass and through feeding, not through touch. What sets them apart is a level of apparent awareness and individual personality no other fish on this site offers."
+      },
+      {
+        "q": "Why are oscars called water puppies?",
+        "a": "Because they're intelligent enough to recognize their specific keeper, swim to the front of the tank in greeting, and can even be trained to eat directly from your hand. Owners consistently describe them developing real individual personalities, distinctive enough that some retailers and keepers call them water puppies for exactly this reason."
+      },
+      {
+        "q": "Do oscars actually have moods?",
+        "a": "Yes, genuinely. Oscars can sulk at the bottom of the tank after a water change or after their decor gets rearranged, something they clearly notice and react to. They also rearrange decor themselves using their mouths, and some individuals are known to play dead briefly, a normal quirk that can look alarming the first time you see it."
+      },
+      {
+        "q": "Are oscars dangerous to other fish?",
+        "a": "They're genuinely predatory, not just assertive. A useful rule of thumb from experienced keepers: if something fits in an oscar's mouth, it will eventually end up there. Best to pair them with large, tough tank mates, severums or big plecos among them, in a genuinely large tank, or keep them alone entirely."
+      },
+      {
+        "q": "What mistakes do first-time oscar owners make?",
+        "a": "Assuming oscar behavior will resemble any other community fish they've kept, underestimating how much this species notices and reacts to changes in its environment, and choosing small tank mates that end up as an unplanned meal."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/oscar-fish-health-issues-guide.mdx",
+    "slug": "oscar-fish-health-issues-guide",
+    "title": "Common Oscar Fish Health Issues (Hole-in-the-Head Is the One to Know)",
+    "seoTitle": "Oscar Fish Health Issues: Signs and Causes",
+    "excerpt": "Oscars are hardy fish in a properly sized, well-filtered tank, and one condition in particular is common enough, and specific enough, that every oscar owner should recognize it immediately.",
+    "date": "2026-09-10",
+    "category": "Fish",
+    "tags": [
+      "Oscar Fish",
+      "Fish Care",
+      "Aquarium Care",
+      "Health",
+      "Water Quality",
+      "Hole-in-the-Head Disease"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-health-issues.jpg",
+    "imageAlt": "Tiger oscar fish swimming in a heavily filtered, well-maintained aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-09-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is hole-in-the-head disease in oscars?",
+        "a": "The signature oscar health issue, common enough in this species to warrant its own name in the hobby. Watch for small pitted lesions or holes developing on the head and along the lateral line, appetite and weight loss, lethargy, and stringy white feces."
+      },
+      {
+        "q": "What causes hole-in-the-head disease?",
+        "a": "Poor water quality, especially elevated nitrates, nutritional gaps, and in some cases prolonged use of activated carbon filter media have all been linked to this condition. Caught early, it's genuinely treatable at home with a near-zero fatality rate."
+      },
+      {
+        "q": "How do you treat hole-in-the-head disease at home?",
+        "a": "Correcting water quality, addressing nitrate levels specifically, adjusting diet, and treating with metronidazole if a parasite is involved all form part of the standard response."
+      },
+      {
+        "q": "What other health issues are common in oscars?",
+        "a": "Ich (white spot disease), triggered by temperature swings or stress, fin and tail rot from poor water quality, popeye from bacterial infection or water issues, and dropsy, which signals serious internal illness and often carries a poor outlook by the time it's visibly obvious."
+      },
+      {
+        "q": "Do oscar health issues usually need a vet?",
+        "a": "Not always. Ich and fin rot are typically manageable at home with standard commercial treatments and water quality correction. Popeye warrants a vet if one's available. Dropsy often carries a poor outlook regardless."
+      },
+      {
+        "q": "What's the single biggest thing that prevents oscar health problems?",
+        "a": "Water quality. Poor water quality, elevated nitrates especially, is the common thread running through nearly every condition on this list, hole-in-the-head disease most directly of all. Weekly water changes and heavy-duty filtration are the primary defense."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-hikari-cichlid-gold-pellets"
+    ]
+  },
+  {
+    "path": "/content/guides/oscar-fish-tank-setup-guide.mdx",
+    "slug": "oscar-fish-tank-setup-guide",
+    "title": "Oscar Fish Tank Setup: Bigger and More Filtered Than Any Other Fish on This Site",
+    "seoTitle": "Oscar Fish Tank Setup Guide",
+    "excerpt": "Oscars are the largest, messiest fish covered here, and the setup needs to genuinely reflect that from day one, not grow into it gradually.",
+    "date": "2026-09-10",
+    "category": "Fish",
+    "tags": [
+      "Oscar Fish",
+      "Fish Care",
+      "Aquarium Care",
+      "Tank Setup",
+      "Filtration",
+      "Canister Filter"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-tank-setup.jpg",
+    "imageAlt": "Tiger oscar fish swimming in a large, heavily filtered aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-09-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank does an oscar need?",
+        "a": "75 gallons is the widely recommended minimum for a single adult, with 100 to 125-plus gallons for a pair or small group. A 2-inch juvenile oscar reaches 12 inches or more within its first year, so it's worth building for the adult size from the start rather than upgrading later."
+      },
+      {
+        "q": "What temperature do oscars need?",
+        "a": "74 to 81°F, kept stable. A reliable heater is required, ideally one with a built-in thermometer for easy monitoring, this is a genuinely tropical species with no cold tolerance."
+      },
+      {
+        "q": "What kind of filtration does an oscar tank need?",
+        "a": "Heavy-duty. Oscars produce an enormous amount of waste relative to their size, and canister filters are the standard choice, sized to handle roughly 4 to 5 times the tank's total volume per hour. Many keepers run a large canister filter alongside a secondary hang-on-back unit for redundancy."
+      },
+      {
+        "q": "What substrate is best for an oscar tank?",
+        "a": "Sand, which oscars genuinely enjoy sifting through, or smooth, pea-sized or larger gravel both work well. Avoid sharp or coarse substrate, which can injure this fish's mouth given how much it interacts with the tank floor."
+      },
+      {
+        "q": "What water changes does an oscar tank need?",
+        "a": "Weekly water changes of 25 to 30% are mandatory, not optional, this connects directly to preventing hole-in-the-head disease. Water chemistry itself is fairly flexible, a pH range of 6 to 8 and soft to moderately hard water both suit this species well."
+      },
+      {
+        "q": "What non-obvious setup mistakes do oscar owners make?",
+        "a": "Loose or light decor that gets toppled by a fish that rearranges its tank with its mouth, a lid that isn't secure enough to stop a capable jumper, and using feeder goldfish as a food source, which is a real disease vector and nutritionally inadequate as a dietary staple."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-canister-filter-fluval-fx4",
+      "submersible-aquarium-heater"
     ]
   },
   {
