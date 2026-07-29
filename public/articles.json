@@ -569,11 +569,43 @@
       "category": "Birds"
     },
     {
+      "slug": "cockatoo-cost-guide",
+      "title": "Cockatoo Cost: Full Price Breakdown",
+      "excerpt": "Cockatoos are a genuinely serious financial and emotional commitment, and the purchase price is really just the smallest part of a decision that plays out over decades.",
+      "date": "2026-09-04",
+      "image": "/assets/images/cockatoo-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatoo-handling-guide",
+      "title": "How to Handle a Cockatoo Safely",
+      "excerpt": "Cockatoos are extremely social, intelligent, and deeply bonded to their people, genuinely affectionate as babies. That same intensity is also exactly what makes this species one of the most difficult parrots to keep long-term.",
+      "date": "2026-09-04",
+      "image": "/assets/images/cockatoo-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatoo-health-issues-guide",
+      "title": "Cockatoo Health Issues: Signs & Causes",
+      "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and this is genuinely one of the few species on this site where the behavioral issue is common enough to belong right alongside the medical ones.",
+      "date": "2026-09-04",
+      "image": "/assets/images/cockatoo-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "cockatoo-screaming-feather-plucking-explained",
       "title": "Why Cockatoos Scream and Pluck Feathers",
       "excerpt": "Why cockatoos scream and pluck their feathers - the psychology behind these behaviors, what genuinely reduces them, and what makes them worse.",
       "date": "2026-06-23",
       "image": "/assets/images/cockatoo-feather-plucking.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "cockatoo-tank-setup-guide",
+      "title": "Cockatoo Cage Setup Guide",
+      "excerpt": "A cockatoo's cage needs to genuinely support a large, powerful, intelligent, and emotionally demanding bird, and getting the size, material, and daily enrichment right matters as much as anything else in this species' care.",
+      "date": "2026-09-04",
+      "image": "/assets/images/cockatoo-tank-setup.jpg",
       "category": "Birds"
     },
     {
@@ -1649,12 +1681,116 @@
       "category": "Reptiles"
     },
     {
+      "slug": "russian-tortoise-cost-guide",
+      "title": "Russian Tortoise Cost: Full Price Breakdown",
+      "excerpt": "Russian tortoises are genuinely one of the more approachable tortoises to own, both in price and, unlike the sulcata already covered on this site, in the fact that this species can live its entire life indoors.",
+      "date": "2026-09-03",
+      "image": "/assets/images/russian-tortoise-cost.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "russian-tortoise-handling-guide",
+      "title": "How to Handle a Russian Tortoise Safely",
+      "excerpt": "Russian tortoises are hardy and generally tolerant, but like most tortoises, this isn't really a species built for regular handling, it's better understood as an observation pet with occasional, careful interaction.",
+      "date": "2026-09-03",
+      "image": "/assets/images/russian-tortoise-handling.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "russian-tortoise-health-issues-guide",
+      "title": "Russian Tortoise Health Issues: Signs & Causes",
+      "excerpt": "Russian tortoises are hardy, and most health problems trace back to a handful of husbandry basics, temperature, humidity, and diet, that are genuinely within an owner's control.",
+      "date": "2026-09-03",
+      "image": "/assets/images/russian-tortoise-health-issues.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "russian-tortoise-tank-setup-guide",
+      "title": "Russian Tortoise Enclosure Setup Guide",
+      "excerpt": "Russian tortoise care is genuinely manageable indoors for this species' entire life, and getting the enclosure type, temperature, and humidity right is most of what it takes to keep one thriving.",
+      "date": "2026-09-03",
+      "image": "/assets/images/russian-tortoise-tank-setup.jpg",
+      "category": "Turtles & Tortoises"
+    },
+    {
+      "slug": "savannah-monitor-cost-guide",
+      "title": "Savannah Monitor Cost: Full Price Breakdown",
+      "excerpt": "Savannah monitors are cheap to buy, and that low price is part of a genuine problem with how this species gets marketed and, too often, cared for.",
+      "date": "2026-09-02",
+      "image": "/assets/images/savannah-monitor-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "savannah-monitor-handling-guide",
+      "title": "How to Handle a Savannah Monitor Safely",
+      "excerpt": "Savannah monitors get marketed alongside the ackie monitor as a similarly approachable species. They aren't really comparable once you account for size, and that difference should shape how you think about handling from the start.",
+      "date": "2026-09-02",
+      "image": "/assets/images/savannah-monitor-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "savannah-monitor-health-issues-guide",
+      "title": "Savannah Monitor Health Issues: Signs & Causes",
+      "excerpt": "Nearly everything on this list traces back to one root cause more than any other pet reptile covered on this site: a genuine mismatch between how much this species gets fed in captivity and how much it would actually eat and burn off in the wild.",
+      "date": "2026-09-02",
+      "image": "/assets/images/savannah-monitor-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "savannah-monitor-tank-setup-guide",
+      "title": "Savannah Monitor Enclosure Setup Guide",
+      "excerpt": "A savannah monitor enclosure needs to genuinely support this species' size, digging instincts, and thermoregulation needs, cutting corners on any of these is really what leads to the health and behavioral problems covered elsewhere in this series.",
+      "date": "2026-09-02",
+      "image": "/assets/images/savannah-monitor-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "savannah-russiantortoise-cockatoo-stickinsect-overview",
+      "title": "Savannah Monitor, Russian Tortoise, Cockatoo & Stick Insect Compared",
+      "excerpt": "A cheap lizard, a surprisingly easy tortoise, a heavily surrendered bird, and a legally complicated insect: four new pets, and four details the price tag and the pet store never bring up.",
+      "date": "2026-09-06",
+      "image": "/assets/guides/savannah-russiantortoise-cockatoo-stickinsect-overview.jpg",
+      "category": "Roundups"
+    },
+    {
       "slug": "snake-brumation-guide",
       "title": "Brumation in Pet Snakes Explained",
       "excerpt": "What brumation is, why most pet snake keepers can safely skip it, and how to cool a ball python or corn snake properly if you plan to breed.",
       "date": "2026-07-02",
       "image": "/assets/images/snake-brumation.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "stick-insect-cost-guide",
+      "title": "Stick Insect Cost: Price Breakdown & Legal Notes",
+      "excerpt": "Stick insects are genuinely one of the cheapest pets covered on this site, but before any cost discussion, there's a legal detail worth understanding clearly, since it affects whether you can responsibly keep one at all.",
+      "date": "2026-09-05",
+      "image": "/assets/images/stick-insect-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "stick-insect-handling-guide",
+      "title": "How to Handle a Stick Insect Safely",
+      "excerpt": "Stick insects are docile, slow, and genuinely low-drama to keep, relying entirely on camouflage and stillness rather than any real defense. This makes them one of the gentler invertebrates on this site to interact with.",
+      "date": "2026-09-05",
+      "image": "/assets/images/stick-insect-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "stick-insect-health-issues-guide",
+      "title": "Stick Insect Health Issues: Signs & Causes",
+      "excerpt": "Stick insects are genuinely hardy, and nearly everything that goes wrong traces back to one of two opposite mistakes: an enclosure too dry, or one too wet. Getting that balance right is most of what this species' health actually depends on.",
+      "date": "2026-09-05",
+      "image": "/assets/images/stick-insect-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "stick-insect-tank-setup-guide",
+      "title": "Stick Insect Enclosure Setup Guide",
+      "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is genuinely one of the more forgiving pets on this site to house well.",
+      "date": "2026-09-05",
+      "image": "/assets/images/stick-insect-tank-setup.jpg",
+      "category": "Invertebrates"
     },
     {
       "slug": "sugar-glider-cost-guide",

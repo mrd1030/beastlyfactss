@@ -57,4 +57,8 @@ export const RELATED_ARTICLES = {
   'tokay-gecko': ['tokay-gecko-cost-guide', 'tokay-gecko-handling-guide', 'tokay-gecko-health-issues-guide', 'tokay-gecko-tank-setup-guide'],
   'african-grey-parrot': ['african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide'],
   'jumping-spider': ['jumping-spider-feeding-guide', 'jumping-spider-cost-guide', 'jumping-spider-handling-guide', 'jumping-spider-health-issues-guide', 'jumping-spider-tank-setup-guide'],
+  'savannah-monitor': ['savannah-monitor-cost-guide', 'savannah-monitor-handling-guide', 'savannah-monitor-health-issues-guide', 'savannah-monitor-tank-setup-guide'],
+  'russian-tortoise': ['russian-tortoise-cost-guide', 'russian-tortoise-handling-guide', 'russian-tortoise-health-issues-guide', 'russian-tortoise-tank-setup-guide'],
+  'cockatoo': ['cockatoo-cost-guide', 'cockatoo-handling-guide', 'cockatoo-health-issues-guide', 'cockatoo-tank-setup-guide', 'cockatoo-screaming-feather-plucking-explained'],
+  'stick-insect': ['stick-insect-cost-guide', 'stick-insect-handling-guide', 'stick-insect-health-issues-guide', 'stick-insect-tank-setup-guide'],
 };
