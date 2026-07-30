@@ -75,6 +75,12 @@ export default function EncyclopediaTeaser() {
             </motion.div>
           ))}
         </div>
+
+        <div className="text-center mt-5 sm:hidden">
+          <Link to="/encyclopedia/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
+            Browse all animals <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </div>
     </section>
   );

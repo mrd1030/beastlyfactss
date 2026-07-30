@@ -64,6 +64,12 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
             </div>
           ))}
         </div>
+
+        <div className="text-center mt-5 sm:hidden">
+          <Link to="/facts/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
+            Browse all facts <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
       </div>
     </section>
   );
