@@ -11,7 +11,6 @@
 // which is exactly how ~330KB of compiled article text previously ended up
 // in the shared bundle that Home, Blog, GuideDetail, etc. all loaded.
 
-import { lazy } from 'react';
 import mdxMeta from './generated/mdx-meta.json';
 
 // Lazy loaders keyed by content path - the only reference to MDX modules in
@@ -23,9 +22,45 @@ const contentLoaders = {
   ...import.meta.glob('/content/short-story/*.mdx'),
 };
 
-function toPost(meta) {
-  const loader = contentLoaders[meta.path];
+// Resolved MDX article/story components, keyed by slug - populated by
+// preloadMdxBySlug() before hydrateRoot runs (see routePreload.js), NOT via
+// React.lazy(). React.lazy()'s own factory call throws a brand-new,
+// unsettled promise the first time IT calls it, even if the underlying
+// module was already fetched by a separate import() call - confirmed
+// directly (the identical issue, for Home's sections, is documented in
+// homePreload.js). MdxArticleBody (used by Blog.jsx/Chronicles.jsx) reads
+// this cache synchronously instead of suspending, so nothing throws during
+// hydration, and no <Suspense> boundary is needed either - confirmed
+// separately (AppLayout.jsx's comment) that ANY <Suspense> boundary fails to
+// hydrate against this app's prerendered HTML regardless of whether its
+// content ever actually suspends.
+const mdxComponentCache = {};
+const mdxPreloadPromises = {};
 
+function loaderForSlug(slug) {
+  const meta = mdxMeta.find(m => m.slug === slug);
+  return meta ? contentLoaders[meta.path] : null;
+}
+
+// Memoized per slug - safe to call again from MdxArticleBody's own effect
+// (client-side navigation to an article whose chunk wasn't preloaded at
+// boot) without kicking off a second import() for the same module.
+export function preloadMdxBySlug(slug) {
+  if (!slug) return Promise.resolve();
+  if (mdxPreloadPromises[slug]) return mdxPreloadPromises[slug];
+  const loader = loaderForSlug(slug);
+  if (!loader) return Promise.resolve();
+  mdxPreloadPromises[slug] = loader().then((mod) => {
+    mdxComponentCache[slug] = mod.default;
+  });
+  return mdxPreloadPromises[slug];
+}
+
+export function getMdxComponent(slug) {
+  return mdxComponentCache[slug] || null;
+}
+
+function toPost(meta) {
   return {
     // Core fields
     _id: meta.slug,
@@ -46,11 +81,9 @@ function toPost(meta) {
     image: meta.image,
     imageAlt: meta.imageAlt,
 
-    // Content: a React.lazy component - the article body downloads only when
-    // this is actually rendered. Render sites wrap it in <Suspense> with a
-    // [data-mdx-loading] fallback (prerender.mjs waits for that marker to
-    // clear so captured HTML always contains the full article).
-    content: loader ? lazy(loader) : null,
+    // Marker only - not a component. Renderers look the real component up
+    // by slug via getMdxComponent()/MdxArticleBody, not through this field.
+    content: contentLoaders[meta.path] ? true : null,
     source: 'mdx',
 
     // Optional extra fields
@@ -70,16 +103,4 @@ export function getMdxPostsByCategory(category) {
   return mdxPosts.filter(post =>
     post.category?.toLowerCase() === category.toLowerCase()
   );
-}
-
-// Raw (unwrapped) loader for a given slug - used by main.jsx to preload an
-// article's MDX chunk BEFORE hydrateRoot runs, so the client's first render
-// pass already has the module available instead of suspending (which would
-// mismatch the prerendered HTML's fully-resolved content). `lazy()` wraps a
-// loader in a React component type that isn't itself callable/awaitable, so
-// this looks the raw function up directly rather than going through
-// `mdxPosts` (whose `.content` is already the wrapped component).
-export function findMdxLoaderBySlug(slug) {
-  const meta = mdxMeta.find(m => m.slug === slug);
-  return meta ? contentLoaders[meta.path] : null;
 }

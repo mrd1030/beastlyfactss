@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';

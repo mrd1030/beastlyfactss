@@ -9,6 +9,17 @@ export default function TableOfContents({ contentRef, watch, skipText }) {
   const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
+    // Skipped during prerendering: this effect populates `headings` (which
+    // gates whether the whole component renders at all, via the
+    // `headings.length < 3` check below) and also mutates heading elements
+    // directly (id, scrollMarginTop). If it settles before prerender.mjs
+    // captures the page, the static HTML shows the full TOC card - but a
+    // real client's hydration-time first render always starts at
+    // headings=[] (this effect hasn't run yet), which returns null instead -
+    // a whole-component structural mismatch, not just a style difference.
+    // Same class of issue as CategoryBrowse's/CritterDigestPreview's
+    // fetch-driven state before their fixes.
+    if (window.__IS_PRERENDER__) return;
     const container = contentRef.current;
     if (!container) { setHeadings([]); return; }
 

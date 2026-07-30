@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { truncateDescription } from '@/lib/utils/truncate';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts';
@@ -223,7 +223,7 @@ export default function Facts() {
         </div>
 
         <span className="sm:hidden text-xs font-display font-bold px-2 text-muted-foreground">
-          {page} / {totalPages}
+          {`${page} / ${totalPages}`}
         </span>
 
         <button
@@ -358,9 +358,9 @@ export default function Facts() {
         {/* Status Text + Upper Page Controller */}
         <div className="flex flex-col items-center text-center gap-3 mb-6">
           <p className="text-xs text-muted-foreground font-body">
-            {displayFacts.length} facts found 
-            {randomized && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>} 
-            {totalPages > 1 && ` · Page ${page} of ${totalPages}`} 
+            {`${displayFacts.length} facts found`}
+            {randomized && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
+            {totalPages > 1 && <span>{` · Page ${page} of ${totalPages}`}</span>}
           </p>
           
           {/* 🌟 Fully Centered, Safe-Width Upper Pagination Row */}
@@ -374,7 +374,7 @@ export default function Facts() {
           {paginated.map((fact, i) => (
             <div key={fact.id || fact.factNumber} className="relative">
               <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
-                #{fact.factNumber} 
+                {`#${fact.factNumber}`}
               </span>
               <FactCard fact={fact} index={i} onOpen={handleOpenFact} onOpenImage={setImageFact} />
             </div>

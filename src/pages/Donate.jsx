@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Heart, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';

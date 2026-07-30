@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; // Added useState here
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';

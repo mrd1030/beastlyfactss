@@ -162,8 +162,7 @@ export default function CostBuilder({ guide }) {
         </div>
       </div>
       <p className="text-[10px] text-muted-foreground/70 font-body mt-3 italic">
-        Rough estimates to help you plan - actual prices vary by region and retailer.
-        {hasAffiliateLinks && ` Underlined items are paid ${retailerLabels} links - we may earn a commission at no extra cost to you.`}
+        {`Rough estimates to help you plan - actual prices vary by region and retailer.${hasAffiliateLinks ? ` Underlined items are paid ${retailerLabels} links - we may earn a commission at no extra cost to you.` : ''}`}
       </p>
     </div>
   );

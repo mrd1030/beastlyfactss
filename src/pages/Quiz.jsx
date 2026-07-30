@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
@@ -132,7 +132,7 @@ function PersonalityQuiz() {
           </motion.span>
           <h2 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">Which Critter Are You?</h2>
           <p className="text-sm text-muted-foreground font-body mb-8 max-w-md mx-auto leading-relaxed">
-            Answer {totalQ} fun questions and discover which animal matches your personality! 🐾 Are you a loyal golden retriever or a mysterious ball python?
+            {`Answer ${totalQ} fun questions and discover which animal matches your personality! 🐾 Are you a loyal golden retriever or a mysterious ball python?`}
           </p>
           <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep(1)}
             className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-8 rounded-xl inline-flex items-center gap-2 shadow-lg shadow-secondary/20">
@@ -147,7 +147,7 @@ function PersonalityQuiz() {
     <div className="max-w-lg mx-auto py-8">
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-xs font-display font-bold text-muted-foreground">Question {step} of {totalQ}</span>
+          <span className="text-xs font-display font-bold text-muted-foreground">{`Question ${step} of ${totalQ}`}</span>
           <span className="text-xs font-display font-bold text-secondary">{Math.round(progress)}%</span>
         </div>
         <div className="h-2 bg-muted rounded-full overflow-hidden">
@@ -242,7 +242,7 @@ function TriviaQuizSection() {
           <span className="text-6xl block mb-4">🌍</span>
           <h2 className="font-display font-bold text-3xl text-foreground mb-3">Animal Origins Trivia</h2>
           <p className="text-sm text-muted-foreground font-body mb-6 leading-relaxed">
-            Test your knowledge of where animals and breeds come from! {TRIVIA_TOTAL} questions, instant feedback, and a final score.
+            {`Test your knowledge of where animals and breeds come from! ${TRIVIA_TOTAL} questions, instant feedback, and a final score.`}
           </p>
           <div className="flex items-center justify-center gap-6 mb-8 text-sm font-body text-muted-foreground">
             {[['❓', `${TRIVIA_TOTAL} Questions`], ['⚡', 'Instant Feedback'], ['🏆', 'Final Score']].map(([e, l]) => (
@@ -272,7 +272,7 @@ function TriviaQuizSection() {
           <div className="bg-card border border-border rounded-3xl p-8 mb-6">
             <p className="text-sm text-muted-foreground font-body mb-2">Your score</p>
             <p className="font-display font-bold text-6xl text-foreground">
-              {score}<span className="text-2xl text-muted-foreground">/{TRIVIA_TOTAL}</span>
+              {score}<span className="text-2xl text-muted-foreground">{`/${TRIVIA_TOTAL}`}</span>
             </p>
             <div className="w-full bg-muted rounded-full h-3 mt-4">
               <motion.div className="bg-secondary h-3 rounded-full" initial={{ width: 0 }}
@@ -306,7 +306,7 @@ function TriviaQuizSection() {
   return (
     <div className="max-w-xl mx-auto py-8">
       <div className="flex items-center justify-between mb-3">
-        <span className="text-xs font-body text-muted-foreground">Question {currentIndex + 1} of {TRIVIA_TOTAL}</span>
+        <span className="text-xs font-body text-muted-foreground">{`Question ${currentIndex + 1} of ${TRIVIA_TOTAL}`}</span>
         <span className="text-xs font-display font-bold text-secondary">{score} pts</span>
       </div>
       <div className="w-full bg-muted rounded-full h-2 mb-8">

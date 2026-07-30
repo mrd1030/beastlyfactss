@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, Layers, BookOpen, Compass, Heart } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 
 const tabs = [
   { to: '/',             label: 'Home',    icon: Home },

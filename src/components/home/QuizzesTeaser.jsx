@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 

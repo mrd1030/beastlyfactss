@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { BookOpen, ArrowRight } from 'lucide-react';
 import { CHRONICLES_SERIES, chroniclesPath } from '@/lib/chronicles';
@@ -51,7 +51,7 @@ export default function DexTeaser() {
               </div>
               <div className="flex flex-col flex-1 min-w-0">
                 <h3 className="font-display font-bold text-base sm:text-lg text-foreground mb-1 leading-tight">
-                  {series.emoji} Chronicles of {series.character}
+                  {`${series.emoji} Chronicles of ${series.character}`}
                 </h3>
                 <p className="text-sm text-muted-foreground font-body mb-3 leading-relaxed">
                   {series.blurb}

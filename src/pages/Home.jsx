@@ -1,17 +1,31 @@
-import React, { useState, lazy, Suspense } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/home/HeroSection';
-const CategoryBrowse = lazy(() => import('@/components/home/CategoryBrowse'));
-const TrendingFacts = lazy(() => import('@/components/home/TrendingFacts'));
-const FactsToGuidesBanner = lazy(() => import('@/components/home/FactsToGuidesBanner'));
-const EncyclopediaTeaser = lazy(() => import('@/components/home/EncyclopediaTeaser'));
-const CritterDigestPreview = lazy(() => import('@/components/home/CritterDigestPreview'));
-const DexTeaser = lazy(() => import('@/components/home/DexTeaser'));
-const GuideSpotlight = lazy(() => import('@/components/home/GuideSpotlight'));
-const Newsletter = lazy(() => import('@/components/shared/Newsletter'));
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import { imagePathFor } from '@/lib/data/factImages';
+import { getHomeChild, preloadHomeChildren } from '@/lib/homePreload';
+
+// Renders one of Home's 8 preloaded sections. NOT React.lazy()+Suspense:
+// that always suspended on hydration's first render even after preloading
+// (see homePreload.js for why) - this instead reads a synchronous cache
+// that's already populated by the time hydration runs for a fresh page
+// load. The only case where the cache can still be empty on first render is
+// client-side navigation TO "/" from another page (no hydration involved,
+// so no mismatch risk) - preloadHomeChildren() is memoized, so calling it
+// again here just resolves once the modules land and re-renders normally.
+function HomeChild({ name, ...props }) {
+  const [, setTick] = useState(0);
+  const Comp = getHomeChild(name);
+
+  useEffect(() => {
+    if (Comp) return;
+    preloadHomeChildren().then(() => setTick((n) => n + 1));
+  }, [Comp]);
+
+  if (!Comp) return null;
+  return <Comp {...props} />;
+}
 
 export default function Home() {
   const [selectedFact, setSelectedFact] = useState(null);
@@ -41,18 +55,16 @@ export default function Home() {
       
       <HeroSection onOpenFact={setSelectedFact} />
 
-      <Suspense fallback={null}>
-        <TrendingFacts onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
-        <FactsToGuidesBanner />
-        <CategoryBrowse />
-        {/* Reference content: animal profiles + care guides, together */}
-        <EncyclopediaTeaser />
-        <GuideSpotlight />
-        {/* Editorial content: articles + fiction, together */}
-        <CritterDigestPreview />
-        <DexTeaser />
-        <Newsletter />
-      </Suspense>
+      <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
+      <HomeChild name="FactsToGuidesBanner" />
+      <HomeChild name="CategoryBrowse" />
+      {/* Reference content: animal profiles + care guides, together */}
+      <HomeChild name="EncyclopediaTeaser" />
+      <HomeChild name="GuideSpotlight" />
+      {/* Editorial content: articles + fiction, together */}
+      <HomeChild name="CritterDigestPreview" />
+      <HomeChild name="DexTeaser" />
+      <HomeChild name="Newsletter" />
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
       <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
     </main>

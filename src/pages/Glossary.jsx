@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link, useLocation } from 'react-router-dom';
 import { Search, X } from 'lucide-react';
 import { CATEGORIES, TOTAL_TERMS } from '@/lib/data/glossaryTerms';
@@ -18,7 +18,7 @@ function TermCard({ term, showCategory, catEmoji, catLabel }) {
     <div id={slugify(term.term)} className="border-b border-border pb-4 last:border-0 scroll-mt-24 rounded-lg transition-colors duration-500">
       {showCategory && (
         <span className="text-[10px] font-body text-muted-foreground uppercase tracking-wider">
-          {catEmoji} {catLabel}
+          {`${catEmoji} ${catLabel}`}
         </span>
       )}
       <h3 className="font-display font-bold text-base text-foreground mt-0.5">{term.term}</h3>
@@ -217,7 +217,7 @@ export default function Glossary() {
                 href={`#${cat.id}`}
                 className="text-xs font-body font-medium px-3 py-1.5 rounded-full bg-muted hover:bg-primary/10 hover:text-primary transition-colors"
               >
-                {cat.emoji} {cat.label}
+                {`${cat.emoji} ${cat.label}`}
               </a>
             ))}
           </div>

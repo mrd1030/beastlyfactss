@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Heart, Share2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
@@ -56,7 +56,7 @@ export default function Pack() {
             <h2 className="font-display font-bold text-xl text-foreground">🏆 Achievements</h2>
             {streak >= 2 && (
               <span className="text-xs font-display font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
-                🔥 {streak}-day streak
+                {`🔥 ${streak}-day streak`}
               </span>
             )}
           </div>
@@ -156,7 +156,7 @@ export default function Pack() {
               </button>
 
               <span className="text-[10px] text-muted-foreground">
-                Saved {new Date(qr.savedAt).toLocaleDateString()}
+                {`Saved ${new Date(qr.savedAt).toLocaleDateString()}`}
               </span>
             </div>
           </div>

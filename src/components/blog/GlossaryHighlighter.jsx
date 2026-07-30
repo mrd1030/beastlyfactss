@@ -87,6 +87,17 @@ export default function GlossaryHighlighter({ contentRef, watch }) {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Skipped during prerendering: this effect directly mutates the DOM
+    // (splitting text nodes to wrap glossary terms in links), which can
+    // settle before prerender.mjs captures the page, baking the
+    // glossary-highlighted markup into the static HTML. A real client's
+    // hydration-time first render always shows the original, unmodified
+    // MDX/Sanity text (this effect hasn't run yet), so the prerendered
+    // version mismatches - a text-node-split structural mismatch, not just
+    // a style difference. Same class of issue as BeastlyBuddy's
+    // footerVisible/BottomTabs' tabWidth, just DOM-mutation-driven instead
+    // of state-driven.
+    if (window.__IS_PRERENDER__) return;
     const container = contentRef.current;
     if (!container || !MATCH_REGEX) return;
 

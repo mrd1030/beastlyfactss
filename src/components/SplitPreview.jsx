@@ -86,7 +86,7 @@ export default function SplitPreview(props) {
               transition: 'color 0.15s',
             }}
           >
-            {isDark ? '☀️' : '🌙'} {isDark ? 'Light mode' : 'Dark mode'}
+            {`${isDark ? '☀️' : '🌙'} ${isDark ? 'Light mode' : 'Dark mode'}`}
           </button>
         </div>
 

@@ -289,6 +289,36 @@ async function renderRoute(page, route) {
     expectedCanonical
   );
 
+  // Normalize every inline style attribute to React's own serialization
+  // format before capturing HTML. The browser's native cssText format is
+  // "key: value; key2: value2;" (space after the colon, trailing
+  // semicolon) - but React computes its OWN hydration-comparison string
+  // from the style object prop as "key:value;key2:value2" (no spaces, no
+  // trailing semicolon). Same value, different text, and React's hydration
+  // check is a literal string comparison - confirmed directly (multiple
+  // times, on both framer-motion-managed and completely plain <div
+  // style={...}> elements) that this mismatches on every single build
+  // regardless of the actual value, since normal SSR via react-dom/server
+  // doesn't hit this (both sides use React's own serializer) but this app's
+  // "server" HTML comes from a real browser's live DOM instead. Rewriting
+  // every element's style attribute here, from the parsed CSSStyleDeclaration
+  // (not string-splitting cssText, which would break on values containing
+  // ";" like url() data URIs), makes the captured HTML byte-for-byte match
+  // what a real client's hydration-critical render expects.
+  await page.evaluate(() => {
+    document.querySelectorAll('[style]').forEach((el) => {
+      const style = el.style;
+      const parts = [];
+      for (let i = 0; i < style.length; i++) {
+        const prop = style[i];
+        const value = style.getPropertyValue(prop);
+        const priority = style.getPropertyPriority(prop);
+        parts.push(`${prop}:${value}${priority ? ' !important' : ''}`);
+      }
+      el.setAttribute('style', parts.join(';'));
+    });
+  });
+
   return page.content();
 }
 

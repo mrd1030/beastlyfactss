@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'; // Added useState here
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { X, Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -139,7 +139,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
             </div>
 
             <span className="text-xs font-display font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full">
-              {fact.category} • {fact.animal}
+              {`${fact.category} • ${fact.animal}`}
             </span>
 
             <h2 className="font-display font-bold text-xl mt-3 mb-3 text-foreground">
@@ -155,7 +155,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
                 to={`/encyclopedia/animal/${encyclopediaMatch.id}/`}
                 className="inline-block text-xs text-muted-foreground hover:text-foreground underline decoration-dotted underline-offset-2 mt-3 font-body"
               >
-                Curious about {encyclopediaMatch.name}? Full animal profile →
+                {`Curious about ${encyclopediaMatch.name}? Full animal profile →`}
               </Link>
             )}
 

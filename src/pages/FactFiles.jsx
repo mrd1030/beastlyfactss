@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Clock, ChevronRight } from 'lucide-react';
 import { getMdxPostsByCategory } from '@/lib/mdxPosts';
 import LocalImage from '@/components/shared/LocalImage';
@@ -82,7 +82,7 @@ export default function FactFiles() {
                   </p>
                   <div className="flex items-center justify-between text-xs font-display font-semibold text-muted-foreground">
                     {post.readTime && (
-                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {post.readTime} min read</span>
+                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{`${post.readTime} min read`}</span>
                     )}
                     <span className="flex items-center gap-1 text-secondary group-hover:gap-1.5 transition-all ml-auto">
                       Read <ChevronRight className="w-3.5 h-3.5" />

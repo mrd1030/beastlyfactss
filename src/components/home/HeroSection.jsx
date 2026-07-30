@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
@@ -132,7 +132,9 @@ export default function HeroSection({ onOpenFact }) {
               <span className="font-display font-bold text-xs text-secondary">DAILY FACT</span>
             </div>
             <p className="text-sm text-foreground font-body leading-relaxed">
-              {dailyFact.emoji} <strong>{dailyFact.title}:</strong> {truncateDescription(dailyFact.fact, 120)}{' '}
+              {`${dailyFact.emoji} `}
+              <strong>{`${dailyFact.title}:`}</strong>
+              {` ${truncateDescription(dailyFact.fact, 120)} `}
               <button
                 onClick={() => onOpenFact?.(dailyFact)}
                 className="inline-flex align-text-bottom text-secondary hover:text-secondary/80 transition-colors p-2 -m-2"

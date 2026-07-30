@@ -45,6 +45,17 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
 
   // 2. Shuffle both buckets and combine them on the client-side
   useEffect(() => {
+    // Skipped during prerendering: this effect (Math.random() shuffling
+    // included) can settle before prerender.mjs captures the page, baking
+    // the real sidebar into the static HTML - but a real client's
+    // hydration-time first render always starts at the useState defaults
+    // (the "Loading..." skeleton below), so the prerendered version
+    // mismatches. Same class of issue as CategoryBrowse's old Math.random()
+    // shuffle and CritterDigestPreview's fetch-driven state before their
+    // fixes - the "Loading Guard" comment below shows this was already a
+    // known concern, just solved backwards (it prevented a CRASH, not the
+    // mismatch itself).
+    if (window.__IS_PRERENDER__) return;
     // Shuffle the matching category posts
     const shuffledMatches = [...matches].sort(() => 0.5 - Math.random());
     
@@ -127,7 +138,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
                       <div className="flex items-center gap-2">
                         {post.readTime && (
                           <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                            <Clock className="w-3 h-3" /> {post.readTime} min read
+                            <Clock className="w-3 h-3" />{`${post.readTime} min read`}
                           </span>
                         )}
                       </div>
@@ -148,7 +159,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         </div>
         <p className="text-xs font-display font-bold text-secondary mb-1">{displayFact.title}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">{displayFact.fact}</p>
-        <p className="text-xs text-muted-foreground/60 font-body mt-2 italic"> - {displayFact.animal}</p>
+        <p className="text-xs text-muted-foreground/60 font-body mt-2 italic">{` - ${displayFact.animal}`}</p>
         <button
           onClick={() => toggleFavorite(displayFact.id)}
           className={`mt-3 w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl text-xs font-display font-bold border transition-all ${

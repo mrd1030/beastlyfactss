@@ -54,7 +54,7 @@ export default function AnimalCompare({ animal }) {
           {groups.map(({ category, animals }) => (
             <optgroup key={category} label={category}>
               {animals.map(a => (
-                <option key={a.id} value={a.id}>{a.emoji} vs {a.name}</option>
+                <option key={a.id} value={a.id}>{`${a.emoji} vs ${a.name}`}</option>
               ))}
             </optgroup>
           ))}

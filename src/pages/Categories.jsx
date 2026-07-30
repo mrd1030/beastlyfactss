@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { CATEGORIES } from '@/lib/data/categories';
 
 // The three lists below are hardcoded mirrors (same convention as prerender.mjs

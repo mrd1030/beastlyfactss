@@ -111,7 +111,7 @@ const components = {
                       rel="noopener noreferrer"
                       className="text-secondary font-display font-semibold hover:underline inline-flex items-center gap-1"
                     >
-                      {moreText || 'Explore more'} →
+                      {`${moreText || 'Explore more'} →`}
                     </a>
                   </div>
                 )}
@@ -171,7 +171,7 @@ const components = {
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-2.5 rounded-xl font-display font-semibold text-sm transition-all"
                 >
-                  Check Price on {retailerLabel} →
+                  {`Check Price on ${retailerLabel} →`}
                 </a>
               )}
             </div>

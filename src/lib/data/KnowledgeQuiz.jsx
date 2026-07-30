@@ -140,8 +140,8 @@ const KnowledgeQuiz = () => {
 
             <div className="mb-6">
               <div className="flex justify-between text-sm mb-1 text-muted-foreground">
-                <span>Question {currentQuestion + 1} of {questions.length}</span>
-                <span>Score: {score}</span>
+                <span>{`Question ${currentQuestion + 1} of ${questions.length}`}</span>
+                <span>{`Score: ${score}`}</span>
               </div>
               <div className="w-full bg-muted rounded-full h-2 mb-3">
                 <div className="h-full bg-secondary rounded-full transition-all duration-500" style={{ width: `${progress}%` }} />
@@ -187,7 +187,7 @@ const KnowledgeQuiz = () => {
                     : 'bg-amber-50 border-amber-200 dark:bg-amber-950 dark:border-amber-800'
                 }`}>
                   <p className="text-sm font-body text-foreground leading-relaxed">
-                    {selectedAnswer === currentQ.correct ? '✅ Correct!' : '❌ Not quite!'} {currentQ.explanation}
+                    {`${selectedAnswer === currentQ.correct ? '✅ Correct!' : '❌ Not quite!'} ${currentQ.explanation}`}
                   </p>
                 </div>
               )}
@@ -210,8 +210,8 @@ const KnowledgeQuiz = () => {
 
             <div className="bg-muted rounded-3xl p-6 mb-6">
               <p className="text-sm text-muted-foreground mb-2">Final score</p>
-              <p className="font-display font-bold text-5xl text-foreground">{score}<span className="text-2xl text-muted-foreground">/{questions.length}</span></p>
-              <p className="text-xs text-muted-foreground mt-2">{Math.round((score / questions.length) * 100)}% correct</p>
+              <p className="font-display font-bold text-5xl text-foreground">{score}<span className="text-2xl text-muted-foreground">{`/${questions.length}`}</span></p>
+              <p className="text-xs text-muted-foreground mt-2">{`${Math.round((score / questions.length) * 100)}% correct`}</p>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

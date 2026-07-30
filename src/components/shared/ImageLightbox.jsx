@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X } from 'lucide-react';
 
 // Simple full-size photo popup for a fact - opened from the "Image" action on
@@ -60,7 +60,7 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
               />
               <div className="px-4 py-3 bg-card">
                 <p className="text-xs font-display font-semibold text-muted-foreground">
-                  {fact.category} • {fact.animal}
+                  {`${fact.category} • ${fact.animal}`}
                 </p>
                 <p className="font-display font-bold text-sm text-foreground mt-0.5">
                   {fact.title}

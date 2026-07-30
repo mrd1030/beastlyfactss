@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Search as SearchIcon, X } from 'lucide-react';
 import { client } from '@/lib/sanity';
 import { fetchCategories } from '@/lib/sanityCategories';
@@ -170,7 +170,7 @@ export default function Search() {
         {query.trim() && localResultsFlat.length > 0 && (
           <div className="mb-6">
             <p className="text-sm font-body text-muted-foreground mb-3">
-              {localResultsFlat.length} article{localResultsFlat.length !== 1 ? 's' : ''}, guide{localResultsFlat.length !== 1 ? 's' : ''} & reference match{localResultsFlat.length !== 1 ? 'es' : ''} for "{query}"
+              {`${localResultsFlat.length} article${localResultsFlat.length !== 1 ? 's' : ''}, guide${localResultsFlat.length !== 1 ? 's' : ''} & reference match${localResultsFlat.length !== 1 ? 'es' : ''} for "${query}"`}
             </p>
             <div className="space-y-2">
               {localResultsFlat.map(result => (
@@ -195,7 +195,7 @@ export default function Search() {
                 onClick={() => setActiveCategory(activeCategory === c.slug ? '' : c.slug)}
                 className={`text-xs font-display font-semibold px-3 py-1 rounded-full transition-all flex items-center gap-1 ${activeCategory === c.slug ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
               >
-                {c.emoji} {c.label}
+                {`${c.emoji} ${c.label}`}
               </button>
             ))}
           </div>
@@ -256,7 +256,7 @@ export default function Search() {
                     to={`/blog/category/${cleanSlug}/`}
                     className="text-xs font-display font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1"
                   >
-                    {c.emoji} {c.label}
+                    {`${c.emoji} ${c.label}`}
                   </Link>
                 );
               })}

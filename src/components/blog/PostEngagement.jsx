@@ -4,7 +4,7 @@ import { base44 } from '@/api/base44Client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 
 // Generates/retrieves a stable anonymous session key for this browser
 function getSessionKey() {
@@ -30,6 +30,13 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const sessionKey = getSessionKey();
 
   useEffect(() => {
+    // Skipped during prerendering: reads localStorage and (via loadData)
+    // fetches like/comment counts, both of which can settle before
+    // prerender.mjs captures the page, baking non-default values into the
+    // static HTML that a real client's hydration-time first render (which
+    // always starts at the useState defaults) can't match. Same class of
+    // issue as useLocalStorage.js's deferred reads.
+    if (window.__IS_PRERENDER__) return;
     if (localStorage.getItem(`bf_liked_${postId}`)) setHasLiked(true);
     loadData();
   }, [postId]);
@@ -111,7 +118,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           }`}
         >
           <Heart className={`w-4 h-4 ${hasLiked ? 'fill-hotpink text-hotpink' : ''}`} />
-          {likeCount > 0 ? likeCount : ''} {hasLiked ? 'Liked!' : 'Like'}
+          {`${likeCount > 0 ? `${likeCount} ` : ''}${hasLiked ? 'Liked!' : 'Like'}`}
         </button>
 
         <button
@@ -125,7 +132,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         {comments.length > 0 && (
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-body ml-auto">
             <MessageCircle className="w-3.5 h-3.5" />
-            {comments.length} {comments.length === 1 ? 'comment' : 'comments'}
+            {`${comments.length} ${comments.length === 1 ? 'comment' : 'comments'}`}
           </div>
         )}
       </div>

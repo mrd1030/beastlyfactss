@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { CheckCircle2, XCircle, RotateCcw, Share2 } from 'lucide-react';
 import { generateAnimalQuiz } from '@/lib/utils/generateAnimalQuiz';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -61,7 +61,7 @@ export default function AnimalQuiz({ animal }) {
       {finished ? (
         <div className="text-center py-2">
           <p className="font-display font-bold text-3xl text-foreground mb-1">
-            {score}<span className="text-lg text-muted-foreground">/{total}</span>
+            {score}<span className="text-lg text-muted-foreground">{`/${total}`}</span>
           </p>
           <p className="text-xs text-muted-foreground font-body mb-5">
             {score === total ? 'Perfect score! 🏆' : score / total >= 0.5 ? "Solid! You were paying attention. 🐾" : 'Worth a re-read above! 📖'}
@@ -80,8 +80,8 @@ export default function AnimalQuiz({ animal }) {
       ) : (
         <>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-display font-bold text-muted-foreground">Question {index + 1} of {total}</span>
-            <span className="text-xs font-display font-bold text-secondary">{score} pts</span>
+            <span className="text-xs font-display font-bold text-muted-foreground">{`Question ${index + 1} of ${total}`}</span>
+            <span className="text-xs font-display font-bold text-secondary">{`${score} pts`}</span>
           </div>
           <div className="w-full bg-muted rounded-full h-1.5 mb-4">
             <motion.div className="bg-secondary h-1.5 rounded-full"

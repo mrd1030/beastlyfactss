@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { client } from '@/lib/sanity';
@@ -20,17 +20,19 @@ const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(published
 }`;
 
 export default function CritterDigestPreview() {
-  // Starts empty and merges in via a normal effect-driven update after mount,
-  // same as before - but this is no longer gated behind a loading skeleton
-  // (see below), so on the rare case prerender.mjs's capture caught this
-  // fetch already resolved, the only possible mismatch is which specific
-  // posts appear in an already-correctly-shaped list, not a structural
-  // skeleton-vs-real swap - the kind of leaf-level content difference React
-  // can patch locally instead of discarding the whole page over.
+  // Starts empty and merges in via a normal effect-driven update after mount.
+  // Skipped during prerendering: prerender.mjs's networkidle0 wait means this
+  // fetch always resolves before capture, so the static HTML would show
+  // sanityPosts merged into the sorted, sliced top-5 list - not just
+  // different text, but a genuinely different SET of posts (different keys,
+  // links, images) than a real client's hydration-time first render, which
+  // always starts at sanityPosts=[]. That's a structural mismatch (confirmed
+  // via a direct hydration test), not a patchable leaf-level difference.
   const [sanityPosts, setSanityPosts] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
     client.fetch(QUERY)
       .then(data => setSanityPosts(data))
       .catch(() => {});

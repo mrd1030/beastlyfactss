@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
@@ -147,7 +147,7 @@ export default function EncyclopediaAnimal() {
                   {animal.category}
                 </span>
                 <span className={`text-xs font-display font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
-                  {animal.difficulty} care
+                  {`${animal.difficulty} care`}
                 </span>
               </div>
             </div>
@@ -209,7 +209,7 @@ export default function EncyclopediaAnimal() {
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
                     <div key={fact.id} className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
-                      <p className="text-xs font-display font-bold text-secondary mb-1">{fact.emoji} {fact.title}</p>
+                      <p className="text-xs font-display font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
                       <p className="text-sm font-body text-foreground leading-relaxed">{fact.fact}</p>
                     </div>
                   ))}
@@ -267,7 +267,7 @@ export default function EncyclopediaAnimal() {
                   {relatedArticles.map(article => (
                     <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
                       <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {article.emoji ? `${article.emoji} ` : ''}{article.title}
+                        {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>
                     </Link>
                   ))}
@@ -287,7 +287,7 @@ export default function EncyclopediaAnimal() {
             {animal.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
-                <p className="text-xs text-muted-foreground font-body mb-2">There's a whole fiction series about a {animal.name.toLowerCase()}:</p>
+                <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${animal.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(animal.relatedStory.slug) ? chroniclesPath(seriesForSlug(animal.relatedStory.slug).id) : `/blog/${animal.relatedStory.slug}/`}
                   className="group block"
@@ -310,7 +310,7 @@ export default function EncyclopediaAnimal() {
                   className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <BookOpen className="w-4 h-4 flex-shrink-0" />
-                  All {animal.category}
+                  {`All ${animal.category}`}
                   <ChevronRight className="w-3.5 h-3.5 ml-auto" />
                 </Link>
                 <Link

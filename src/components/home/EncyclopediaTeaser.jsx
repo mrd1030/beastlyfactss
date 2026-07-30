@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { encyclopediaCategories, encyclopediaAnimals } from '@/lib/data/encyclopedia';
@@ -26,7 +26,7 @@ export default function EncyclopediaTeaser() {
               Animal Encyclopedia
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Animal profiles for {encyclopediaCategories.length} categories of reptiles, birds &amp; more
+              {`Animal profiles for ${encyclopediaCategories.length} categories of reptiles, birds & more`}
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
@@ -67,7 +67,7 @@ export default function EncyclopediaTeaser() {
                       {cat.name}
                     </p>
                     <p className="text-xs text-muted-foreground font-body">
-                      {cat.count} animal profile{cat.count !== 1 ? 's' : ''}
+                      {`${cat.count} animal profile${cat.count !== 1 ? 's' : ''}`}
                     </p>
                   </div>
                 </div>

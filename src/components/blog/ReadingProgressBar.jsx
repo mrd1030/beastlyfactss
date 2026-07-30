@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring } from '@/lib/motion-safe';
 
 // Sits above the fixed navbar (higher z-index) as a slim accent line - the standard "how far through the article" indicator.
 export default function ReadingProgressBar() {

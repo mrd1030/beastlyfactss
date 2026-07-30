@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { client } from '@/lib/sanity';
 import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';

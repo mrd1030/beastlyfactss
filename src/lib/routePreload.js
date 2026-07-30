@@ -55,19 +55,6 @@ const ROUTE_PRELOADS = [
   [p => pathIs(p, '/glossary'), () => import('@/pages/Glossary')],
 ];
 
-// Home itself is a static (non-lazy) import in App.jsx, but it still renders
-// these 8 lazy children behind its own internal <Suspense fallback={null}>.
-const HOME_CHILD_PRELOADS = [
-  () => import('@/components/home/TrendingFacts'),
-  () => import('@/components/home/FactsToGuidesBanner'),
-  () => import('@/components/home/CategoryBrowse'),
-  () => import('@/components/home/EncyclopediaTeaser'),
-  () => import('@/components/home/GuideSpotlight'),
-  () => import('@/components/home/CritterDigestPreview'),
-  () => import('@/components/home/DexTeaser'),
-  () => import('@/components/shared/Newsletter'),
-];
-
 // Preloads whatever the current URL needs. Never throws - a failed/slow
 // preload just means hydration falls back to React's normal (safe, if
 // imperfect) mismatch recovery for that one page, same as before this existed.
@@ -76,24 +63,50 @@ export async function preloadForCurrentRoute() {
   const jobs = [];
 
   if (pathname === '/') {
-    jobs.push(...HOME_CHILD_PRELOADS.map(load => load()));
+    // Home's 8 internal sections - see homePreload.js for why these go
+    // through a plain cache instead of React.lazy().
+    const { preloadHomeChildren } = await import('@/lib/homePreload');
+    jobs.push(preloadHomeChildren());
   } else {
     const match = ROUTE_PRELOADS.find(([test]) => test(pathname));
     if (match) jobs.push(match[1]());
 
     // Blog post detail (not the /blog or /blog/category/:x listing views)
-    // renders its MDX body through a SEPARATE lazy()-per-article loader
-    // (see mdxPosts.js) - preload that specific article's chunk too.
+    // renders its MDX body via MdxArticleBody (see mdxPosts.js) - preload
+    // that specific article's chunk too, by its exact slug from the URL.
     if (pathname.startsWith('/blog/') && !pathname.startsWith('/blog/category/')) {
       const slug = pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
       if (slug) {
         jobs.push(
-          import('@/lib/mdxPosts').then(({ findMdxLoaderBySlug }) => {
-            const loader = findMdxLoaderBySlug(slug);
-            return loader ? loader() : null;
-          })
+          import('@/lib/mdxPosts').then(({ preloadMdxBySlug }) => preloadMdxBySlug(slug))
         );
       }
+    }
+
+    // Chronicles reader (/chronicles/:seriesId/:part) doesn't carry a slug
+    // directly in the URL - the specific story is found by sorted position
+    // among that series' MDX + Sanity-fetched parts, and Sanity's aren't
+    // available synchronously here. Rather than guess the position (wrong
+    // guess = hydration mismatch, same class of bug this preloading exists
+    // to prevent), preload EVERY MDX part of the matching series - bounded
+    // and small (a handful of episodes per character), so whichever one the
+    // URL actually resolves to is always already cached.
+    const chroniclesMatch = pathname.match(/^\/chronicles\/([^/]+)\/(\d+)\/?$/);
+    if (chroniclesMatch) {
+      const seriesId = chroniclesMatch[1];
+      jobs.push(
+        Promise.all([
+          import('@/lib/chroniclesPosts'),
+          import('@/lib/chronicles'),
+          import('@/lib/mdxPosts'),
+        ]).then(([{ mdxChroniclesPosts }, { seriesForSlug }, { preloadMdxBySlug }]) =>
+          Promise.allSettled(
+            mdxChroniclesPosts
+              .filter(post => seriesForSlug(post.slug.current)?.id === seriesId)
+              .map(post => preloadMdxBySlug(post.slug.current))
+          )
+        )
+      );
     }
   }
 

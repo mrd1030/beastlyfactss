@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
 import FactModal from '@/components/shared/FactModal';
@@ -94,7 +94,7 @@ export default function Gallery() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
         <p className="text-xs text-muted-foreground font-body text-center mb-6">
-          {filtered.length} photos {totalPages > 1 && `· Page ${page} of ${totalPages}`}
+          {`${filtered.length} photos${totalPages > 1 ? ` · Page ${page} of ${totalPages}` : ''}`}
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">

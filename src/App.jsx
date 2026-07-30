@@ -1,5 +1,5 @@
 import React, { lazy } from 'react';
-import { MotionConfig } from 'framer-motion';
+import { MotionConfig } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { QueryClientProvider } from '@tanstack/react-query';

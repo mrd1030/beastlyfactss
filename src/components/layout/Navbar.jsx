@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -233,7 +233,7 @@ export default function Navbar() {
                 title={`${streak}-day visit streak! Keep it up 🔥`}
                 className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-xs px-2 py-1 rounded-full cursor-default"
               >
-                🔥 {streak}
+                {`🔥 ${streak}`}
               </motion.div>
             )}
             <button

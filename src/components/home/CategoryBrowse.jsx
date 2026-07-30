@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Search as SearchIcon } from 'lucide-react';
 import { slugify } from '@/lib/utils/slugify';
@@ -140,8 +140,7 @@ export default function CategoryBrowse() {
                     : 'bg-card border-border text-foreground hover:border-secondary/40'
                 }`}
               >
-                <span aria-hidden="true">{meta?.emoji}</span>
-                {label}
+                <span aria-hidden="true">{meta?.emoji}</span>{label}
               </button>
             );
           })}
@@ -182,7 +181,7 @@ export default function CategoryBrowse() {
           >
             <div className="flex items-center justify-between mb-3">
               <h3 className="font-display font-bold text-sm text-foreground flex items-center gap-1.5">
-                <span aria-hidden="true">{selectedMeta?.emoji}</span> {selected}
+                <span aria-hidden="true">{selectedMeta?.emoji}</span>{selected}
               </h3>
               <Link
                 to={`/blog/category/${selectedSlug}/`}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calculator, HelpCircle, BookMarked } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
@@ -459,8 +459,8 @@ export default function GuideDetail() {
             {/* Fun fact */}
             <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
               <p className="text-sm font-body text-foreground">
-                <span className="font-display font-bold text-secondary">🤓 Did you know?</span>{' '}
-                {guide.funFact}
+                <span className="font-display font-bold text-secondary">🤓 Did you know?</span>
+                {` ${guide.funFact}`}
               </p>
             </div>
 
@@ -480,7 +480,7 @@ export default function GuideDetail() {
             {sectionMeta.map(({ key, icon, label }) => (
               <div key={key} className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-                  {icon} {label}
+                  {`${icon} ${label}`}
                 </h2>
                 <div className="text-sm text-muted-foreground font-body leading-relaxed space-y-3">
                   {guide.sections[key].split('\n\n').map((para, i) => (
@@ -581,7 +581,7 @@ export default function GuideDetail() {
                   {relatedArticles.map(article => (
                     <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
                       <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {article.emoji ? `${article.emoji} ` : ''}{article.title}
+                        {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>
                     </Link>
                   ))}
@@ -593,7 +593,7 @@ export default function GuideDetail() {
             {guide.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
                 <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
-                <p className="text-xs text-muted-foreground font-body mb-2">There's a whole fiction series about a {guide.name.toLowerCase()}:</p>
+                <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${guide.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(guide.relatedStory.slug) ? chroniclesPath(seriesForSlug(guide.relatedStory.slug).id) : `/blog/${guide.relatedStory.slug}/`}
                   className="group block"
@@ -614,7 +614,7 @@ export default function GuideDetail() {
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
                     <div key={fact.id} className="bg-secondary/5 border border-secondary/20 rounded-xl px-3 py-2.5">
-                      <p className="text-xs font-display font-bold text-secondary mb-1">{fact.emoji} {fact.title}</p>
+                      <p className="text-xs font-display font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
                       <p className="text-xs font-body text-foreground leading-relaxed">{fact.fact}</p>
                     </div>
                   ))}

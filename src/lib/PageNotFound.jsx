@@ -24,7 +24,7 @@ export default function PageNotFound() {
                 <span className="text-5xl block mb-4" role="img" aria-label="See-no-evil monkey">🙈</span>
                 <h1 className="font-display font-bold text-3xl text-foreground mb-2">404 - Page Not Found</h1>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
-                    We couldn't find <span className="font-semibold text-foreground">"{pageName}"</span>.
+                    We couldn't find <span className="font-semibold text-foreground">{`"${pageName}"`}</span>.
                     It may have moved, or it never existed in the first place.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

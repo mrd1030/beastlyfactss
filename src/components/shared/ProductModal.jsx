@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X, ShoppingCart, Star } from 'lucide-react';
 import { RETAILERS } from '@/lib/data/affiliateProducts';
 import LocalImage from '@/components/shared/LocalImage';
@@ -138,7 +138,7 @@ export default function ProductModal({ product, onClose }) {
             className="inline-flex items-center gap-2 w-full justify-center px-5 py-3 rounded-full bg-secondary text-secondary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity focus:ring-2 focus:ring-secondary focus:outline-none"
           >
             <ShoppingCart className="w-4 h-4 flex-shrink-0" />
-            See on {retailerLabel}
+            {`See on ${retailerLabel}`}
           </a>
         </motion.div>
       </motion.div>

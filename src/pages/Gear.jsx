@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useLocation, useParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ChevronRight, Search, X } from 'lucide-react';
 import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, GEAR_PET_TYPES, RETAILERS } from '@/lib/data/affiliateProducts';
 import { truncateDescription } from '@/lib/utils/truncate';

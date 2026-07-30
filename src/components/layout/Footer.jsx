@@ -10,13 +10,13 @@ export default function Footer() {
     <footer className="bg-card border-t border-border mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-28 md:pb-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          
+
           {/* Brand Column - Prominent */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-    <Link 
-      to="/" 
-      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} 
+    <Link
+      to="/"
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       className="flex items-center gap-2 flex-shrink-0"
     >
       <Logo />
@@ -83,7 +83,7 @@ export default function Footer() {
         {/* Minimal Copyright - Removed Redundant Links */}
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[10px] text-muted-foreground font-body">
-            © {year} BeastlyFacts.com - No animals were harmed in the making of this website. 🐾
+            {`© ${year} BeastlyFacts.com - No animals were harmed in the making of this website. 🐾`}
           </p>
           <p className="text-[10px] text-muted-foreground font-body">
             For educational purposes only. Not a substitute for professional veterinary advice. Always consult a qualified pet, exotic, or reptile veterinarian.

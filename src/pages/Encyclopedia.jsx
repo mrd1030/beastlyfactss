@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { Search, ChevronRight, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
@@ -309,7 +309,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
                   activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {cat.emoji} {cat.name}
+                {`${cat.emoji} ${cat.name}`}
               </Link>
             );
           })}

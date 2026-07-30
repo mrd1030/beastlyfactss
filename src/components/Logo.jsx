@@ -1,6 +1,6 @@
 // src/components/Logo.jsx
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 
 export default function Logo({ className = "text-xl" }) {
   return (

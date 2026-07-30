@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -33,7 +33,7 @@ export default function AchievementToast() {
             <span className="text-2xl flex-shrink-0">{currentAchievementToast.emoji}</span>
             <div className="min-w-0">
               <p className="font-display font-bold text-sm text-foreground leading-tight">
-                Achievement unlocked: {currentAchievementToast.title}
+                {`Achievement unlocked: ${currentAchievementToast.title}`}
               </p>
               <Link
                 to="/pack"

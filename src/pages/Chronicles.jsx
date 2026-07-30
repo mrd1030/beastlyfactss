@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ArrowRight, BookOpen, Clock } from 'lucide-react';
 import groq from 'groq';
 import { client } from '@/lib/sanity';
@@ -11,6 +11,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { getDisplayDate } from '@/lib/utils/date';
 import PortableTextRenderer from '@/components/PortableTextRenderer';
 import * as MdxComponents from '@/components/mdx';
+import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import SanityImage from '@/components/SanityImage';
 import PostEngagement from '@/components/blog/PostEngagement';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
@@ -128,7 +129,7 @@ export default function Chronicles() {
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
-                <span>{s.emoji}</span> {s.shortName}
+                <span>{s.emoji}</span>{s.shortName}
               </Link>
             ))}
           </div>
@@ -150,10 +151,10 @@ export default function Chronicles() {
                 <span className="text-4xl block mb-3">🪶</span>
                 <p className="font-display font-bold text-foreground mb-1">This part hasn't been written yet</p>
                 <p className="text-sm text-muted-foreground font-body mb-4">
-                  {series.shortName} is still working on it. Check back soon!
+                  {`${series.shortName} is still working on it. Check back soon!`}
                 </p>
                 <Link to={chroniclesPath(series.id)} className="text-sm font-display font-semibold text-secondary hover:underline">
-                  All {series.shortName} stories →
+                  {`All ${series.shortName} stories →`}
                 </Link>
               </div>
             ) : (
@@ -162,7 +163,7 @@ export default function Chronicles() {
                   to={chroniclesPath(series.id)}
                   className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
                 >
-                  <ArrowLeft className="w-4 h-4" /> All {series.shortName} stories
+                  <ArrowLeft className="w-4 h-4" />{`All ${series.shortName} stories`}
                 </Link>
                 <StoryReader key={story._id || story.slug?.current} story={story} part={part} />
                 <PartPager seriesId={series.id} parts={parts} current={part} className="mt-10" />
@@ -189,7 +190,7 @@ function SeriesLanding({ series, parts, loaded }) {
     <div>
       <div className="mb-6">
         <h2 className="font-display font-bold text-xl text-foreground">
-          {series.emoji} Chronicles of {series.character}
+          {`${series.emoji} Chronicles of ${series.character}`}
         </h2>
         <p className="text-sm text-muted-foreground font-body mt-1">{series.blurb}</p>
       </div>
@@ -231,15 +232,15 @@ function StoryCard({ story, seriesId, part, index }) {
         <div className="min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-1">
             <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
-              Part {part}
+              {`Part ${part}`}
             </span>
             {getDisplayDate(story.publishedAt) && (
               <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                <Clock className="w-3 h-3" /> {getDisplayDate(story.publishedAt)}
+                <Clock className="w-3 h-3" />{getDisplayDate(story.publishedAt)}
               </span>
             )}
             {story.readTime && (
-              <span className="text-xs text-muted-foreground font-body">{story.readTime} min read</span>
+              <span className="text-xs text-muted-foreground font-body">{`${story.readTime} min read`}</span>
             )}
           </div>
           <h3 className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors leading-snug">
@@ -269,7 +270,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
           to={chroniclesPath(seriesId, prev)}
           className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
         >
-          <ArrowLeft className="w-3.5 h-3.5" /> Part {prev}
+          <ArrowLeft className="w-3.5 h-3.5" />{`Part ${prev}`}
         </Link>
       ) : <span className="w-20" />}
 
@@ -298,7 +299,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
           to={chroniclesPath(seriesId, next)}
           className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
         >
-          Part {next} <ArrowRight className="w-3.5 h-3.5" />
+          {`Part ${next}`}<ArrowRight className="w-3.5 h-3.5" />
         </Link>
       ) : <span className="w-20" />}
     </div>
@@ -318,16 +319,16 @@ function StoryReader({ story, part }) {
     <motion.article initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
       <div className="flex items-center gap-2 mb-3 flex-wrap">
         <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
-          Part {part}
+          {`Part ${part}`}
         </span>
         {getDisplayDate(story.publishedAt) && (
           <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-            <Clock className="w-3 h-3" /> {getDisplayDate(story.publishedAt)}
+            <Clock className="w-3 h-3" />{getDisplayDate(story.publishedAt)}
           </span>
         )}
         {story.readTime && (
           <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-            <BookOpen className="w-3 h-3" /> {story.readTime} min read
+            <BookOpen className="w-3 h-3" />{`${story.readTime} min read`}
           </span>
         )}
       </div>
@@ -348,12 +349,7 @@ function StoryReader({ story, part }) {
 
       <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
         {story.source === 'mdx' && story.content ? (
-          // story.content is a React.lazy component (see mdxPosts.js); the
-          // [data-mdx-loading] marker tells prerender.mjs the story body
-          // hasn't rendered yet, so it never captures the fallback.
-          <React.Suspense fallback={<div data-mdx-loading className="py-12 text-center text-sm text-muted-foreground font-body">Loading story…</div>}>
-            {React.createElement(story.content, { components: MdxComponents })}
-          </React.Suspense>
+          <MdxArticleBody slug={story.slug.current} components={MdxComponents} loadingLabel="Loading story…" />
         ) : story.body ? (
           <PortableTextRenderer content={story.body} />
         ) : null}
@@ -378,7 +374,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
                   s.id === activeSeriesId && !activePart ? 'text-accent' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
-                {s.emoji} {s.shortName}
+                {`${s.emoji} ${s.shortName}`}
               </Link>
               <div className="mt-1.5 space-y-1">
                 {(bySeries[s.id] || []).map((p, i) => {
@@ -394,7 +390,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
                           : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                       }`}
                     >
-                      Part {n} - {episodeTitle(p.title)}
+                      {`Part ${n} - ${episodeTitle(p.title)}`}
                     </Link>
                   );
                 })}

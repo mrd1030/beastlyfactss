@@ -24,7 +24,6 @@ export default defineConfig({
     },
   },
 
-
   // ... rest of your config (build, server, etc.)
   build: {
     outDir: 'dist',

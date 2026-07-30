@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trash2, AlertTriangle } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function ClearPackDialog() {

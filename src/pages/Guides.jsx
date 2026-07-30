@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ChevronRight, Info, Search } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';

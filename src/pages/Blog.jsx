@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Search as SearchIcon, X } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { client } from '@/lib/sanity';
@@ -17,6 +17,7 @@ import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
+import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
@@ -31,6 +32,43 @@ import ProductModal from '@/components/shared/ProductModal';
 import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
 
 const POSTS_PER_PAGE = 10;
+
+// Finds a post by slug among the statically-available sources (MDX + local)
+// only - NOT Sanity, which requires a network fetch and can't be known
+// synchronously. Used to compute `selectedPost`'s initial state directly
+// instead of waiting for an effect: `routeSlug` is available synchronously
+// via useParams() on the very first render, and mdxPosts/localPosts are
+// static imports, so there's no reason a statically-sourced post should
+// wait for anything. Before this, `selectedPost` always started `null`
+// (only ever set inside a useEffect), which mismatched prerender.mjs's
+// fully-settled capture - React's hydration-critical first render would try
+// to show the blog LISTING view while the prerendered HTML already showed
+// the POST DETAIL view for that URL, a structural mismatch severe enough to
+// discard and rebuild the whole page (confirmed directly on an MDX post).
+// Sanity-sourced individual posts still have this residual mismatch, since
+// their data genuinely isn't available before the fetch resolves - same
+// known limitation as Chronicles' Sanity-sourced stories.
+function findStaticPost(postParam) {
+  if (!postParam) return null;
+  const allStatic = [
+    ...localPosts.map(post => ({
+      ...post,
+      _id: post.id,
+      publishedAt: post.date,
+      mainImage: null,
+      categorySlug: null,
+    })),
+    ...mdxPosts,
+  ];
+  const match = allStatic.find(p => p.slug?.current === postParam || p._id === postParam);
+  if (!match) return null;
+  return {
+    ...match,
+    _id: match._id || match.id,
+    publishedAt: match.publishedAt || match.date,
+    mainImage: match.mainImage || null,
+  };
+}
 
 const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, animalType,
@@ -48,20 +86,24 @@ const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order
 }`;
 
 export default function Blog() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { slug: routeSlug, catSlug } = useParams();
+
   const [sanityPosts, setSanityPosts] = useState([]);
   const [sanityCategories, setSanityCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
   // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
   // search box) pre-fills the filter on first render, not just live typing.
   const [search, setSearch] = useState(() => new URLSearchParams(window.location.search).get('search') || '');
-  const [selectedPost, setSelectedPost] = useState(null);
+  // Lazy init from statically-available posts - see findStaticPost's comment.
+  const [selectedPost, setSelectedPost] = useState(() => {
+    const postParam = routeSlug || new URLSearchParams(window.location.search).get('post');
+    return findStaticPost(postParam);
+  });
   const [page, setPage] = useState(1);
   const [fetchError, setFetchError] = useState(false);
   const listRef = useRef(null);
-
-  const navigate = useNavigate();
-  const location = useLocation();
-  const { slug: routeSlug, catSlug } = useParams();
 
   useEffect(() => {
     const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
@@ -402,7 +444,7 @@ export default function Blog() {
                 <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
                   Previous
                 </button>
-                <span className="text-sm text-muted-foreground">Page {page} of {totalPages}</span>
+                <span className="text-sm text-muted-foreground">{`Page ${page} of ${totalPages}`}</span>
                 <button onClick={() => handlePageChange(page + 1)} disabled={page === totalPages} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
                   Next
                 </button>
@@ -577,7 +619,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
             <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6">
-              <ArrowLeft className="w-4 h-4" /> {backLabel}
+              <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
 
             <span className="text-5xl block mb-4">{post.emoji || '🦎'}</span>
@@ -588,12 +630,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               </span>
               {getDisplayDate(post.publishedAt) && (
                 <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> {getDisplayDate(post.publishedAt)}
+                  <Clock className="w-3 h-3" />{getDisplayDate(post.publishedAt)}
                 </span>
               )}
               {post.readTime && (
                 <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> {post.readTime} min read
+                  <Clock className="w-3 h-3" />{`${post.readTime} min read`}
                 </span>
               )}
             </div>
@@ -627,12 +669,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
 
             <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
-                // post.content is a React.lazy component (see mdxPosts.js); the
-                // [data-mdx-loading] marker tells prerender.mjs the article body
-                // hasn't rendered yet, so it never captures the fallback.
-                <React.Suspense fallback={<div data-mdx-loading className="py-12 text-center text-sm text-muted-foreground font-body">Loading article…</div>}>
-                  {React.createElement(post.content, { components: MdxComponents })}
-                </React.Suspense>
+                <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
               ) : post.body ? (
                 <PortableTextRenderer content={post.body} />
               ) : (

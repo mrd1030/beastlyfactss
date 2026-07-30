@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from '@/lib/motion-safe';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
