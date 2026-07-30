@@ -78,6 +78,20 @@ for (const { file, fm } of readDir('short-story')) {
 fs.writeFileSync('./public/articles.json', JSON.stringify({ articles, chronicles }, null, 2));
 console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX chronicles to public/articles.json`);
 
+// Same data, also written into src/ so CategoryBrowse.jsx/CritterDigestPreview.jsx
+// can statically import it instead of fetch()-ing public/articles.json at
+// runtime. Those components used to start with loading:true and populate via
+// this same fetch in a useEffect - harmless for plain client rendering, but
+// prerender.mjs's networkidle0 wait means the static HTML always captures the
+// post-fetch (loading:false, real content) state, which a real client's
+// hydration-time first render can never match (it always starts at the
+// useState default) - a structural mismatch severe enough that React gives up
+// hydrating and re-renders the whole page. A static import resolves
+// synchronously on both sides, so there's no fetch-timing race to mismatch.
+fs.mkdirSync('./src/lib/generated', { recursive: true });
+fs.writeFileSync('./src/lib/generated/articles-index.json', JSON.stringify({ articles, chronicles }, null, 2));
+console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX chronicles to src/lib/generated/articles-index.json`);
+
 // --- App metadata module -----------------------------------------------
 // src/lib/mdxPosts.js builds its post list from this file instead of an
 // eager import.meta.glob, so list/preview views ship only metadata and the

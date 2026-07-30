@@ -1,10 +1,19 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Search as SearchIcon } from 'lucide-react';
 import { slugify } from '@/lib/utils/slugify';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
+// Statically imported, not fetch('/articles.json') in a useEffect like
+// before: that always started with loading:true, and prerender.mjs's
+// networkidle0 wait meant the static HTML always captured the post-fetch
+// (loading:false, real content) state - a real client's hydration-time first
+// render can never match that (it always starts at the useState default),
+// which was severe enough to make React discard hydration and re-render the
+// whole page. A static import resolves synchronously and identically on
+// both sides, so there's no fetch-timing race left to mismatch.
+import articlesIndex from '@/lib/generated/articles-index.json';
 
 // Only categories with a real, browsable body of MDX content - several slugs
 // defined in categories.js (aquatic-life, comparisons, pet-care, product-picks,
@@ -48,10 +57,7 @@ function hashString(str) {
 }
 
 export default function CategoryBrowse() {
-  const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState(FRONT_LABEL);
-  const [preview, setPreview] = useState([]);
   const [searchInput, setSearchInput] = useState('');
   const navigate = useNavigate();
 
@@ -59,20 +65,11 @@ export default function CategoryBrowse() {
   // once per mount so the row doesn't reshuffle on unrelated re-renders.
   const order = useMemo(() => [FRONT_LABEL, ...seededShuffle(MIDDLE_LABELS, new Date().getDate()), BACK_LABEL], []);
 
-  useEffect(() => {
-    fetch('/articles.json')
-      .then(r => r.json())
-      .then(data => setArticles(data.articles || []))
-      .catch(() => {})
-      .finally(() => setLoading(false));
-  }, []);
-
-  useEffect(() => {
-    if (loading) return;
-    const pool = articles.filter(a => a.category === selected);
+  const preview = useMemo(() => {
+    const pool = articlesIndex.articles.filter(a => a.category === selected);
     const seed = new Date().getDate() + hashString(selected);
-    setPreview(seededShuffle(pool, seed).slice(0, 6));
-  }, [selected, articles, loading]);
+    return seededShuffle(pool, seed).slice(0, 6);
+  }, [selected]);
 
   const handleSelect = (label) => setSelected(label);
 
@@ -195,29 +192,15 @@ export default function CategoryBrowse() {
               </Link>
             </div>
 
-            {loading ? (
-              // Matches the real grid's shape (grid sm:grid-cols-2, 6 cards) rather
-              // than a mismatched single-column stack - the server always ships the
-              // resolved real content (prerender.mjs waits for the fetch to settle),
-              // so a client visitor briefly sees this skeleton before the fetch
-              // resolves; keeping its shape close to the real layout minimizes the
-              // reflow when it swaps in, rather than eliminating a structural mismatch.
-              <div className="grid sm:grid-cols-2 gap-3">
-                {[...Array(6)].map((_, i) => (
-                  <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />
-                ))}
-              </div>
-            ) : (
-              <div className="grid sm:grid-cols-2 gap-3">
-                {preview.map((post) => (
-                  <CompactPostCard
-                    key={post.slug}
-                    post={{ ...post, publishedAt: post.date, slug: { current: post.slug } }}
-                    onClick={() => navigate(`/blog/${post.slug}/`)}
-                  />
-                ))}
-              </div>
-            )}
+            <div className="grid sm:grid-cols-2 gap-3">
+              {preview.map((post) => (
+                <CompactPostCard
+                  key={post.slug}
+                  post={{ ...post, publishedAt: post.date, slug: { current: post.slug } }}
+                  onClick={() => navigate(`/blog/${post.slug}/`)}
+                />
+              ))}
+            </div>
           </motion.div>
         </AnimatePresence>
       </div>

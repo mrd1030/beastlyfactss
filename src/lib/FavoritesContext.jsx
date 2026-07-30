@@ -18,32 +18,69 @@ export function FavoritesProvider({ children }) {
   // Single source of truth for the visit streak - Navbar reads it from this
   // context instead of calling useDailyStreak() a second time, since two
   // independent hook instances would race writing the same localStorage key.
-  const { streak, recordVisit } = useDailyStreak();
-  useEffect(() => { recordVisit(); }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  const { streak, recordVisit, loaded: streakLoaded } = useDailyStreak();
+  // Waits for the real stored streak to load first (see recordVisit's own
+  // guard) - firing this on every mount regardless would see the default
+  // {count:0, lastDate:null} and reset every returning visitor's streak to 1.
+  // Also skipped entirely during prerendering (prerender.mjs sets this flag) -
+  // recordVisit() always WRITES a new value even starting from "no prior
+  // visit", and its timing relative to prerender.mjs's own capture-readiness
+  // wait is an unrelated race; skipping it keeps captured HTML pinned to the
+  // same default state every real client's first hydration pass also starts
+  // from, rather than racing to sometimes bake the post-write value in.
+  useEffect(() => {
+    if (streakLoaded && !window.__IS_PRERENDER__) recordVisit();
+  }, [streakLoaded]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const [favorites, setFavorites] = useState(() => {
-    try {
-      const item = localStorage.getItem('beastly-favorites');
-      return item ? JSON.parse(item) : [];
-    } catch { return []; }
-  });
-
-  const [savedQuizResults, setSavedQuizResults] = useState(() => {
-    try {
-      const item = localStorage.getItem('beastly-quiz-results');
-      return item ? JSON.parse(item) : [];
-    } catch { return []; }
-  });
-
-  const [quizzesCompleted, setQuizzesCompleted] = useState(() => {
-    try { return parseInt(localStorage.getItem('beastly-quizzes-completed') || '0', 10) || 0; } catch { return 0; }
-  });
+  // These three all start at their empty/zero default on every render (server
+  // or client) and pick up the real stored value in an effect after mount -
+  // see useLocalStorage.js's comment for why: prerender.mjs's puppeteer
+  // profile always has empty localStorage, so a returning visitor's real
+  // favorites/quiz history would otherwise differ from the server's default
+  // on the very first client render, a structural hydration mismatch (these
+  // feed unlockedAchievements/currentAchievementToast, which AchievementToast
+  // renders above AppLayout's Suspense boundary) severe enough to make React
+  // discard and re-render the whole page client-side instead of hydrating it.
+  const [favorites, setFavorites] = useState([]);
+  const [savedQuizResults, setSavedQuizResults] = useState([]);
+  const [quizzesCompleted, setQuizzesCompleted] = useState(0);
+  const isFirstFavoritesWrite = React.useRef(true);
+  const isFirstQuizResultsWrite = React.useRef(true);
 
   useEffect(() => {
+    try {
+      const item = localStorage.getItem('beastly-favorites');
+      if (item !== null) setFavorites(JSON.parse(item));
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    try {
+      const item = localStorage.getItem('beastly-quiz-results');
+      if (item !== null) setSavedQuizResults(JSON.parse(item));
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    try {
+      const stored = parseInt(localStorage.getItem('beastly-quizzes-completed') || '0', 10) || 0;
+      if (stored > 0) setQuizzesCompleted(stored);
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    if (isFirstFavoritesWrite.current) {
+      isFirstFavoritesWrite.current = false;
+      return;
+    }
     try { localStorage.setItem('beastly-favorites', JSON.stringify(favorites)); } catch {}
   }, [favorites]);
 
   useEffect(() => {
+    if (isFirstQuizResultsWrite.current) {
+      isFirstQuizResultsWrite.current = false;
+      return;
+    }
     try { localStorage.setItem('beastly-quiz-results', JSON.stringify(savedQuizResults)); } catch {}
   }, [savedQuizResults]);
 

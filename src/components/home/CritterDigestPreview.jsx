@@ -7,6 +7,11 @@ import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
+// Statically imported, not fetch('/articles.json') - see CategoryBrowse.jsx's
+// identical fix for why: a fetch-populated, loading-gated skeleton always
+// mismatches a real client's hydration-time first render, since
+// prerender.mjs's capture always reflects the post-fetch state.
+import articlesIndex from '@/lib/generated/articles-index.json';
 
 const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
   _id, title, slug, excerpt, mainImage, publishedAt, readTime,
@@ -15,27 +20,19 @@ const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(published
 }`;
 
 export default function CritterDigestPreview() {
+  // Starts empty and merges in via a normal effect-driven update after mount,
+  // same as before - but this is no longer gated behind a loading skeleton
+  // (see below), so on the rare case prerender.mjs's capture caught this
+  // fetch already resolved, the only possible mismatch is which specific
+  // posts appear in an already-correctly-shaped list, not a structural
+  // skeleton-vs-real swap - the kind of leaf-level content difference React
+  // can patch locally instead of discarding the whole page over.
   const [sanityPosts, setSanityPosts] = useState([]);
-  const [mdxPosts, setMdxPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     client.fetch(QUERY)
-      .then(data => {
-        setSanityPosts(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-    // Fetched at runtime (same build artifact the RSS feed uses) rather than
-    // statically importing MDX modules - importing even just frontmatter via
-    // import.meta.glob still shares a module graph with the full-content
-    // glob used by Blog/GuideDetail/etc., and Rollup ended up bundling at
-    // least one article's full compiled content into this chunk anyway,
-    // pulling ~285KB of unrelated article text into the homepage's JS.
-    fetch('/articles.json')
-      .then(r => r.json())
-      .then(data => setMdxPosts(data.articles || []))
+      .then(data => setSanityPosts(data))
       .catch(() => {});
   }, []);
 
@@ -58,7 +55,7 @@ export default function CritterDigestPreview() {
       categorySlug: null,
       slug: { current: getSlug(post) }   // normalize to same shape as Sanity
     })),
-    ...mdxPosts.map(post => ({
+    ...articlesIndex.articles.map(post => ({
       ...post,
       _id: post.slug,
       publishedAt: post.date,
@@ -95,34 +92,26 @@ export default function CritterDigestPreview() {
           </Link>
         </motion.div>
 
-        {loading ? (
-          <div className="space-y-3">
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />
-            ))}
-          </div>
-        ) : (
-          <div className="space-y-3">
-            {previewPosts.map((post, i) => {
-              const postSlug = getSlug(post);
+        <div className="space-y-3">
+          {previewPosts.map((post, i) => {
+            const postSlug = getSlug(post);
 
-              return (
-                <motion.div
-                  key={post._id || post.id}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.04 }}
-                >
-                  <CompactPostCard
-                    post={post}
-                    onClick={() => navigate(`/blog/${postSlug}/`)}
-                  />
-                </motion.div>
-              );
-            })}
-          </div>
-        )}
+            return (
+              <motion.div
+                key={post._id || post.id}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.04 }}
+              >
+                <CompactPostCard
+                  post={post}
+                  onClick={() => navigate(`/blog/${postSlug}/`)}
+                />
+              </motion.div>
+            );
+          })}
+        </div>
 
         <div className="text-center mt-6">
           <Link

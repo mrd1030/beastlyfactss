@@ -323,6 +323,31 @@ async function renderWorker(browser, routes, results) {
     for (let attempt = 1; attempt <= MAX_ATTEMPTS && !done; attempt++) {
       if (attempt > 1) await new Promise(r => setTimeout(r, RETRY_BACKOFF_MS * attempt));
       const page = await browser.newPage();
+      // All 600+ routes render through ONE browser instance sharing the same
+      // origin, so localStorage persists across every page.newPage() call in
+      // this loop unless explicitly cleared. That didn't matter before, but
+      // now that main.jsx defers reading localStorage-backed state (dark
+      // mode, visit streak, favorites - see useLocalStorage.js) to an effect
+      // instead of a hydration-mismatching lazy useState initializer, that
+      // same effect also runs during prerendering (a real browser, not SSR)
+      // and writes real values (e.g. recordVisit() incrementing the streak)
+      // that would otherwise leak into every subsequently-rendered page,
+      // making prerendered output non-deterministic and no longer matching
+      // the fresh-visitor baseline hydration needs to reproduce.
+      await page.evaluateOnNewDocument(() => {
+        try { localStorage.clear(); sessionStorage.clear(); } catch {}
+        // Read effects (dark mode/favorites/streak - see useLocalStorage.js)
+        // are harmless to run against the now-guaranteed-empty localStorage
+        // above, but recordVisit() (FavoritesContext.jsx) unconditionally
+        // WRITES a new streak value even on a "no prior visit" start, and
+        // its exact timing relative to prerender.mjs's own wait condition
+        // (Helmet's meta tags settling) is an unrelated race - capturing
+        // mid-write would bake a value into the static HTML that doesn't
+        // match the real client's guaranteed-default first render either
+        // way. Skipping it during prerendering keeps captured HTML at the
+        // same default state hydration will always start from.
+        window.__IS_PRERENDER__ = true;
+      });
       await page.setRequestInterception(true);
       page.on('request', req => {
         const u = req.url();
@@ -391,6 +416,10 @@ async function main() {
   // page, so it always matches the live PageNotFound component/styling.
   try {
     const page = await browser.newPage();
+    await page.evaluateOnNewDocument(() => {
+      try { localStorage.clear(); sessionStorage.clear(); } catch {}
+      window.__IS_PRERENDER__ = true;
+    });
     const html = await renderRoute(page, NOT_FOUND_PROBE_ROUTE);
     await writeFile(path.join(DIST, '404.html'), html, 'utf-8');
     await page.close();

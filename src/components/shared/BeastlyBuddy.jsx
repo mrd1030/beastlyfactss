@@ -23,6 +23,14 @@ export default function BeastlyBuddy() {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    // Skipped during prerendering: this effect can fire (and change what
+    // renders) before prerender.mjs captures the page - e.g. on a short
+    // page where the footer is already in view - baking a non-default
+    // footerVisible into the static HTML that won't match a real client's
+    // hydration-time first render, which always starts at the useState(false)
+    // default. Same class of issue as the localStorage-backed state in
+    // useLocalStorage.js/FavoritesContext.jsx, just effect-driven instead.
+    if (window.__IS_PRERENDER__) return;
     const footer = document.getElementById('site-footer');
     if (!footer) return;
     const observer = new IntersectionObserver(

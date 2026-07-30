@@ -71,3 +71,15 @@ export function getMdxPostsByCategory(category) {
     post.category?.toLowerCase() === category.toLowerCase()
   );
 }
+
+// Raw (unwrapped) loader for a given slug - used by main.jsx to preload an
+// article's MDX chunk BEFORE hydrateRoot runs, so the client's first render
+// pass already has the module available instead of suspending (which would
+// mismatch the prerendered HTML's fully-resolved content). `lazy()` wraps a
+// loader in a React component type that isn't itself callable/awaitable, so
+// this looks the raw function up directly rather than going through
+// `mdxPosts` (whose `.content` is already the wrapped component).
+export function findMdxLoaderBySlug(slug) {
+  const meta = mdxMeta.find(m => m.slug === slug);
+  return meta ? contentLoaders[meta.path] : null;
+}

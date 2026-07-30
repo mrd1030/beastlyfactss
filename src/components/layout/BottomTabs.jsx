@@ -23,6 +23,15 @@ export default function BottomTabs() {
   // reliably-animated value, so the indicator's position is computed in
   // pixels from the actual rendered row width instead.
   useEffect(() => {
+    // Skipped during prerendering: this effect measures real layout and can
+    // settle (tabWidth > 0) before prerender.mjs captures the page, baking
+    // the sliding indicator <motion.div> into the static HTML. A real
+    // client's hydration-time first render always starts at tabWidth=0 (the
+    // useState default), which hides that div entirely (tabWidth > 0 gates
+    // it) - a structural mismatch, not just a style difference. Same class
+    // of issue as BeastlyBuddy's footerVisible/useLocalStorage's deferred
+    // reads, just driven by ResizeObserver instead.
+    if (window.__IS_PRERENDER__) return;
     const el = rowRef.current;
     if (!el) return;
     const update = () => setTabWidth(el.offsetWidth / tabs.length);
