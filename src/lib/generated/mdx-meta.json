@@ -2542,6 +2542,61 @@
     ]
   },
   {
+    "path": "/content/guides/blue-tongue-skink-feeding-guide.mdx",
+    "slug": "blue-tongue-skink-feeding-guide",
+    "title": "Blue Tongue Skink Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Blue Tongue Skink Feeding Guide: Schedule and Diet",
+    "excerpt": "Vets and pet-industry care sheets genuinely disagree on how often to feed an adult blue tongue skink, by a factor of up to 7x. Here's the real range and why it exists.",
+    "date": "2026-07-30",
+    "category": "Reptiles",
+    "tags": [
+      "Blue Tongue Skink",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Brumation"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/blue-tongue-skink-feeding.jpg",
+    "imageAlt": "Blue tongue skink eating a mix of vegetables and protein from a shallow dish",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-30",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my blue tongue skink?",
+        "a": "Babies eat daily, juveniles 3 to 4 times a week. Adults are where sources genuinely diverge, veterinary sources say every 1 to 3 days, while several widely used pet-industry care sheets say only once or twice a week is enough. That's roughly a 3 to 7 times difference, not a rounding gap, so treat it as a real range and let body condition guide you."
+      },
+      {
+        "q": "Is a blue tongue skink's diet mostly meat or mostly vegetables?",
+        "a": "It flips with age. Young skinks under about 12 months eat protein-heavy, roughly 70 to 80% animal matter. Mature adults shift toward plant-heavy, roughly 40 to 60% protein and 45 to 60% greens and vegetables, with a small fruit allowance."
+      },
+      {
+        "q": "What's a safe portion size?",
+        "a": "Roughly one meal about the size of the skink's own skull, or about 1 to 2 tablespoons for an adult. Feeder insects should be no larger than the space between the skink's eyes."
+      },
+      {
+        "q": "Why has my blue tongue skink stopped eating?",
+        "a": "Brumation is the biggest normal cause, a seasonal slowdown lasting a few months where the skink largely stops eating and drinking. Shedding, acclimation stress after a new home, and dietary boredom from a repetitive rotation are other normal explanations. Insufficient basking temperature or UVB is a common fixable cause that looks like illness but isn't."
+      },
+      {
+        "q": "How long can a blue tongue skink go without eating?",
+        "a": "Short dips of days up to a few weeks are unremarkable in an otherwise active adult. During genuine brumation, going without food for up to about 3 months is expected if temperatures are managed correctly. Outside brumation season, refusal lasting more than a few weeks with no clear explanation, or any weight loss in the 7 to 10% range, is the point to see a vet."
+      },
+      {
+        "q": "What foods are actually dangerous for blue tongue skinks?",
+        "a": "Avocado, onion and garlic, rhubarb, fireflies, monarch butterflies, and citrus fruits are all named specifically. Nightshade foliage like eggplant and tomato leaves should also be avoided, and spinach, beet greens, and Swiss chard should be limited rather than fed as a daily staple, they bind calcium."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-superfoods-plus-4oz"
+    ]
+  },
+  {
     "path": "/content/guides/blue-tongue-skink-handling-guide.mdx",
     "slug": "blue-tongue-skink-handling-guide",
     "title": "How to Handle a Blue-Tongued Skink",
@@ -6752,6 +6807,62 @@
     "relatedProducts": [
       "glass-terrarium-18x18x24",
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
+      "crested-gecko-diet-pangea-watermelon-complete-8oz",
+      "calcium-repashy-superfoods-plus-4oz"
+    ]
+  },
+  {
+    "path": "/content/guides/gargoyle-gecko-feeding-guide.mdx",
+    "slug": "gargoyle-gecko-feeding-guide",
+    "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Gargoyle Gecko Feeding Guide: Schedule and Diet",
+    "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
+    "date": "2026-07-30",
+    "category": "Reptiles",
+    "tags": [
+      "Gargoyle Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "CGD"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/gargoyle-gecko-feeding.jpg",
+    "imageAlt": "Gargoyle gecko licking powdered crested gecko diet from a feeding ledge",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-30",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my gargoyle gecko?",
+        "a": "Hatchlings and juveniles get fresh commercial gecko diet daily, adults every 2 to 3 days, though one detailed care sheet breaks life stages out differently and lands on every other day for full adults. For live insects specifically, most sources say weekly for adults, though one specialist source recommends as little as twice a month, citing obesity risk, a real disagreement worth knowing."
+      },
+      {
+        "q": "Do gargoyle geckos really need live insects, or is powder enough?",
+        "a": "Unlike crested geckos, insects are described as a required supplement here, not optional enrichment. Gargoyle geckos are unusually carnivorous for their gecko family, wild individuals are documented preying on other lizards, even young crested geckos, alongside insects."
+      },
+      {
+        "q": "What's the right ratio for mixing powdered gecko diet?",
+        "a": "Roughly 2 to 3 parts water to 1 part powder, mixed to a ketchup-like consistency, offered in a small cup or on a feeding ledge since gargoyles are arboreal climbers. Rotate 3 or more brands or flavors for variety and to head off pickiness."
+      },
+      {
+        "q": "Why has my gargoyle gecko stopped eating?",
+        "a": "Shedding, breeding season, and stress from a new environment are all normal explanations. A mild seasonal winter slowdown, lighter than true brumation, is also normal and doesn't need deliberate cooling. An enclosure that's too cool for proper digestion is a common fixable cause."
+      },
+      {
+        "q": "How long can a gargoyle gecko go without eating?",
+        "a": "A healthy, well-hydrated adult can reportedly go up to 2 to 3 weeks. Juveniles are more vulnerable and shouldn't go past about 4 to 5 days given their growth needs. Water is more time-critical than food, don't let a gecko go more than 2 to 3 days without water access regardless of appetite."
+      },
+      {
+        "q": "What foods are actually dangerous for gargoyle geckos?",
+        "a": "Avocado, citrus fruits, starfruit, and rhubarb are all flagged, rhubarb specifically as potentially lethal. Garlic, onion, eggplant, and dairy should also be avoided, geckos are lactose intolerant."
+      }
+    ],
+    "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
       "calcium-repashy-superfoods-plus-4oz"
     ]
@@ -15357,6 +15468,61 @@
       "uromastyx-halogen-flood-bulb-100w",
       "substrate-zoo-med-reptisand-burrowing",
       "uromastyx-uro-grit-seed-pollen-supplement"
+    ]
+  },
+  {
+    "path": "/content/guides/uromastyx-feeding-guide.mdx",
+    "slug": "uromastyx-feeding-guide",
+    "title": "Uromastyx Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Uromastyx Feeding Guide: Schedule and Diet",
+    "excerpt": "Uromastyx digest through hindgut fermentation, meaning heat isn't just for comfort, it's what actually breaks down their food. Here's a real feeding schedule and why a cool enclosure can cause weight loss even when they're eating.",
+    "date": "2026-07-30",
+    "category": "Reptiles",
+    "tags": [
+      "Uromastyx",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Herbivore"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/uromastyx-feeding.jpg",
+    "imageAlt": "Uromastyx eating chopped dark leafy greens and squash under a basking light",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-30",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my Uromastyx?",
+        "a": "Babies and juveniles get fresh greens daily. Adults are fed less often, but sources disagree meaningfully, anywhere from 4 to 5 times a week down to 2 to 4 times a week, with overfeeding described as a real, common risk in this species, not just a hypothetical one."
+      },
+      {
+        "q": "Are Uromastyx strictly herbivores?",
+        "a": "Mostly, and this is genuinely debated. Some traditional care sheets allow small amounts of mealworms occasionally, but the experienced-keeper community argues for treating them as strict herbivores, citing wild-diet studies where insects made up only about 1 to 6% of stomach contents, likely eaten by accident. Treat insects as optional at best, not a required part of the diet."
+      },
+      {
+        "q": "When should I put food in the enclosure?",
+        "a": "About 1 to 2 hours after the basking light comes on, so the animal is already warm enough to actually digest what it eats, then leave it out for daytime grazing. Some keepers pull the dish 2 to 3 hours before lights-out."
+      },
+      {
+        "q": "Why has my Uromastyx stopped eating?",
+        "a": "Brumation is the big normal cause, a seasonal winter slowdown lasting roughly 1 to 2 months. Shedding, a recent move, and dietary boredom from the same few vegetables on repeat are other normal explanations. An enclosure that isn't hot enough is a common concerning cause that's actually a fixable husbandry problem, not illness."
+      },
+      {
+        "q": "How long can a Uromastyx go without eating?",
+        "a": "Acclimation fasting of 1 to 2 weeks and brumation dips of 1 to 2 months are both considered normal. Outside of an obvious brumation, shedding, or acclimation context, appetite loss persisting beyond about a week is the point to see a reptile-experienced vet, sooner if the animal is losing 5 to 10% of its body weight."
+      },
+      {
+        "q": "What foods are actually dangerous for Uromastyx?",
+        "a": "Spinach is specifically linked to bladder stones in this species. Avocado is toxic, and citrus, tomatoes, corn, potatoes, and bananas all work against the calcium-to-phosphorus ratio this species needs or cause other real problems. Sunflower seeds are too high in fat, and frozen greens fed long-term are linked to a thiamine deficiency that can mimic metabolic bone disease."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-arcadia-earthpro-revitalised3"
     ]
   },
   {
