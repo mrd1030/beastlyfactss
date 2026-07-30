@@ -145,6 +145,46 @@
       "category": "Fish"
     },
     {
+      "slug": "argentine-tegu-cost-guide",
+      "title": "Argentine Tegu Cost: Full Price Breakdown",
+      "excerpt": "Argentine tegus are one of the more expensive lizards on this site to set up properly, a direct consequence of just how large this species actually grows.",
+      "date": "2026-09-18",
+      "image": "/assets/images/argentine-tegu-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "argentine-tegu-handling-guide",
+      "title": "Argentine Tegu Handling Guide",
+      "excerpt": "Argentine tegus have a genuine reputation as the most intelligent, most tameable lizard commonly kept as a pet, and unlike most reptile friendly claims, this one holds up consistently.",
+      "date": "2026-09-18",
+      "image": "/assets/images/argentine-tegu-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "argentine-tegu-health-issues-guide",
+      "title": "Argentine Tegu Health Issues: Signs & Causes",
+      "excerpt": "Argentine tegus are hardy animals when housed properly, and the issues that do show up trace back to a fairly small set of preventable husbandry gaps, several tied directly to this species' large size.",
+      "date": "2026-09-18",
+      "image": "/assets/images/argentine-tegu-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "argentine-tegu-legal-guide",
+      "title": "Argentine Tegu Legal Guide: Florida Ban & Permits",
+      "excerpt": "Argentine tegus aren't federally restricted and most states don't touch them, but Florida is the real exception. Since 2021 they've been on the state's Prohibited species list, and the window to grandfather one in has already closed.",
+      "date": "2026-09-22",
+      "image": "/assets/guides/argentine-tegu-legal.jpg",
+      "category": "Legal"
+    },
+    {
+      "slug": "argentine-tegu-tank-setup-guide",
+      "title": "Argentine Tegu Enclosure Setup Guide",
+      "excerpt": "Argentine tegu husbandry operates at a genuinely different scale than every other lizard covered on this site, this is a big bodied, high energy animal, and the setup needs to reflect that from the start.",
+      "date": "2026-09-18",
+      "image": "/assets/images/argentine-tegu-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "axolotl-cost-guide",
       "title": "Axolotl Cost: Full Price Breakdown",
       "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what actually determines your budget.",
@@ -537,6 +577,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "canary-cost-guide",
+      "title": "Canary Cost: Full Price Breakdown",
+      "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the real cost decision here isn't about money at all.",
+      "date": "2026-09-13",
+      "image": "/assets/images/canary-cost.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "canary-handling-guide",
+      "title": "Canary Handling: Why This Bird Isn't Hands-On",
+      "excerpt": "Every other bird covered on this site, budgie, cockatiel, green-cheeked conure, lovebird, African grey, cockatoo, can potentially be hand-tamed to some degree. Canaries break that pattern entirely, and it's worth understanding why before you bring one home expecting a different kind of pet.",
+      "date": "2026-09-13",
+      "image": "/assets/images/canary-handling.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "canary-health-issues-guide",
+      "title": "Canary Health Issues: Signs & Causes",
+      "excerpt": "Canaries face a handful of conditions genuinely common enough in this species to know before they show up, several of them mite-related and easy to overlook until song or breathing is already affected.",
+      "date": "2026-09-13",
+      "image": "/assets/images/canary-health-issues.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "canary-tank-setup-guide",
+      "title": "Canary Cage Setup Guide",
+      "excerpt": "Canary cage setup is genuinely simple, and the one detail that trips up first-time owners is choosing a tall, narrow parrot-style cage when this species actually needs the opposite shape entirely.",
+      "date": "2026-09-13",
+      "image": "/assets/images/canary-tank-setup.jpg",
+      "category": "Birds"
+    },
+    {
       "slug": "cat-hairball-vs-vomiting-guide",
       "title": "Cat Hairballs vs Vomiting: When to Worry",
       "excerpt": "An occasional hairball is normal. Frequent vomiting isn't - here's how to tell the difference and what's actually driving it.",
@@ -745,6 +817,38 @@
       "category": "Reptiles"
     },
     {
+      "slug": "corydoras-catfish-cost-guide",
+      "title": "Corydoras Catfish Cost: Full Price Breakdown",
+      "excerpt": "Corydoras catfish are genuinely inexpensive on their own, but the real budgeting consideration isn't the individual fish, it's that you need to buy a whole school, not one or two.",
+      "date": "2026-09-15",
+      "image": "/assets/images/corydoras-catfish-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "corydoras-catfish-handling-guide",
+      "title": "Corydoras Catfish Behavior and Handling Guide",
+      "excerpt": "Corydoras catfish are an observation animal, not a hands-on one. What actually matters with this species is its role in a tank, and that role is a very different one from a centerpiece fish like the oscar.",
+      "date": "2026-09-15",
+      "image": "/assets/images/corydoras-catfish-handling.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "corydoras-catfish-health-issues-guide",
+      "title": "Corydoras Catfish Health Issues: Signs & Causes",
+      "excerpt": "Corydoras catfish are genuinely sensitive to two things above all else, substrate texture and water quality, and understanding that connection explains most of what shows up on this list.",
+      "date": "2026-09-15",
+      "image": "/assets/images/corydoras-catfish-health-issues.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "corydoras-catfish-tank-setup-guide",
+      "title": "Corydoras Catfish Tank Setup Guide",
+      "excerpt": "Corydoras catfish are genuinely easy to house well once you get one specific decision right, what's on the bottom of the tank. Everything else about this species' care is fairly standard community-fish practice.",
+      "date": "2026-09-15",
+      "image": "/assets/images/corydoras-catfish-tank-setup.jpg",
+      "category": "Fish"
+    },
+    {
       "slug": "crested-gecko-cost-guide",
       "title": "Crested Gecko Cost: Full Price Breakdown",
       "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
@@ -833,6 +937,14 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "exotic-pet-legal-hub",
+      "title": "Exotic Pet Laws Guide: Every Species We Cover",
+      "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide on this site.",
+      "date": "2026-09-23",
+      "image": "/assets/guides/exotic-pet-legal-hub.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "ferret-adrenal-disease-guide",
       "title": "Ferret Adrenal Disease: Signs to Know",
       "excerpt": "How to spot the telltale hair-loss pattern of ferret adrenal disease, why early spay and neuter age matters, and the treatment options that actually help.",
@@ -887,6 +999,38 @@
       "date": "2026-08-03",
       "image": "/assets/images/ferret-tank-setup.jpg",
       "category": "Small & Exotic Pets"
+    },
+    {
+      "slug": "fire-bellied-toad-cost-guide",
+      "title": "Fire-Bellied Toad Cost: Full Price Breakdown",
+      "excerpt": "Fire-bellied toads are genuinely inexpensive, and the setup cost here goes toward something a bit different than most amphibians on this site, real aquatic filtration, not just humidity control.",
+      "date": "2026-09-19",
+      "image": "/assets/images/fire-bellied-toad-cost.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "fire-bellied-toad-handling-guide",
+      "title": "Fire-Bellied Toad Handling: What the Toxin Means",
+      "excerpt": "Fire-bellied toads are display animals, and there's a real, specific safety reason behind that recommendation, not just general amphibian caution.",
+      "date": "2026-09-19",
+      "image": "/assets/images/fire-bellied-toad-handling.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "fire-bellied-toad-health-issues-guide",
+      "title": "Fire-Bellied Toad Health Issues: Signs & Causes",
+      "excerpt": "Fire-bellied toads are a semi-aquatic species, and that single fact shapes nearly every health issue on this list, this is genuinely more like keeping a small aquarium than a typical terrestrial amphibian.",
+      "date": "2026-09-19",
+      "image": "/assets/images/fire-bellied-toad-health-issues.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "fire-bellied-toad-tank-setup-guide",
+      "title": "Fire-Bellied Toad Tank Setup Guide",
+      "excerpt": "Fire-bellied toads need a genuinely different kind of setup than most amphibians on this site, real aquatic filtration matters here in a way it doesn't for a more purely terrestrial species.",
+      "date": "2026-09-19",
+      "image": "/assets/images/fire-bellied-toad-tank-setup.jpg",
+      "category": "Amphibians"
     },
     {
       "slug": "five-beginner-reptiles-overview",
@@ -953,12 +1097,44 @@
       "category": "Dogs"
     },
     {
+      "slug": "giant-millipede-cost-guide",
+      "title": "Giant Millipede Cost: Full Price Breakdown",
+      "excerpt": "Giant African millipedes are genuinely inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
+      "date": "2026-09-14",
+      "image": "/assets/images/giant-millipede-cost.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "giant-millipede-handling-guide",
+      "title": "Can You Handle a Giant Millipede Safely?",
+      "excerpt": "Giant African millipedes are docile, slow-moving, and completely non-aggressive, genuinely one of the safest invertebrates for a keeper of any experience level to handle. The real risk here runs in a direction you might not expect.",
+      "date": "2026-09-14",
+      "image": "/assets/images/giant-millipede-handling.jpg",
+      "category": "Invertebrates"
+    },
+    {
+      "slug": "giant-millipede-health-issues-guide",
+      "title": "Giant Millipede Health Issues: Signs & Causes",
+      "excerpt": "Giant millipedes are hardy, and nearly every serious issue in this species traces back to substrate moisture, either too little or, in a couple of specific cases, conditions that stay too consistently wet.",
+      "date": "2026-09-14",
+      "image": "/assets/images/giant-millipede-health-issues.jpg",
+      "category": "Invertebrates"
+    },
+    {
       "slug": "giant-millipede-legal-guide",
       "title": "Is a Giant African Millipede Legal in Your State? Full Guide",
       "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
       "date": "2026-07-23",
       "image": "/assets/guides/giant-millipede-legal.jpg",
       "category": "Legal"
+    },
+    {
+      "slug": "giant-millipede-tank-setup-guide",
+      "title": "Giant Millipede Enclosure Setup Guide",
+      "excerpt": "Giant millipede care comes down almost entirely to one thing done well, deep, correctly moist organic substrate. Get that right and this is a genuinely low-maintenance pet to keep long-term.",
+      "date": "2026-09-14",
+      "image": "/assets/images/giant-millipede-tank-setup.jpg",
+      "category": "Invertebrates"
     },
     {
       "slug": "golden-retriever-feeding-guide",
@@ -1015,6 +1191,46 @@
       "date": "2026-06-26",
       "image": "/assets/images/goldfish-tank-size.jpg",
       "category": "Fish"
+    },
+    {
+      "slug": "green-anole-cost-guide",
+      "title": "Green Anole Cost: Full Price Breakdown",
+      "excerpt": "Green anoles are genuinely one of the cheapest reptiles you can buy, and that low price is exactly why this species is so often underestimated and under-housed.",
+      "date": "2026-09-17",
+      "image": "/assets/images/green-anole-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "green-anole-handling-guide",
+      "title": "How to Handle a Green Anole Safely",
+      "excerpt": "Green anoles are genuinely delicate compared to the larger lizards already covered on this site, and that size difference should shape how you think about handling this species from the start.",
+      "date": "2026-09-17",
+      "image": "/assets/images/green-anole-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "green-anole-health-issues-guide",
+      "title": "Green Anole Health Issues: Signs & Causes",
+      "excerpt": "Green anoles are small enough that health problems can progress fast, which makes recognizing the early signs genuinely important with this species.",
+      "date": "2026-09-17",
+      "image": "/assets/images/green-anole-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "green-anole-tank-setup-guide",
+      "title": "Green Anole Enclosure Setup Guide",
+      "excerpt": "Green anoles need genuinely more setup investment than their small size and low price suggest, tropical humidity, real UVB, and careful heat placement all matter here.",
+      "date": "2026-09-17",
+      "image": "/assets/images/green-anole-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "greenanole-tegu-firebelliedtoad-tigersalamander-overview",
+      "title": "Green Anole, Argentine Tegu, Fire-Bellied Toad & Tiger Salamander Compared",
+      "excerpt": "A tiny lizard, a four-foot lizard, a bright little amphibian, and a burrowing salamander all get judged by their size. In every case, that first impression is the wrong one to trust.",
+      "date": "2026-09-21",
+      "image": "/assets/guides/greenanole-tegu-firebelliedtoad-tigersalamander-overview.jpg",
+      "category": "Roundups"
     },
     {
       "slug": "guinea-pig-cockatiel-betta-tarantula-overview",
@@ -1263,6 +1479,46 @@
       "date": "2026-06-28",
       "image": "/assets/images/invertebrate-molting.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "jacksons-chameleon-cost-guide",
+      "title": "Jackson's Chameleon Cost: Full Price Breakdown",
+      "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon already covered on this site, but the two species diverge in some genuinely important ways worth understanding before you buy.",
+      "date": "2026-09-12",
+      "image": "/assets/images/jacksons-chameleon-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "jacksons-chameleon-handling-guide",
+      "title": "How to Handle a Jackson's Chameleon Correctly",
+      "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, genuinely more laid-back than the veiled chameleon already covered on this site, but docile for a chameleon still means minimal handling.",
+      "date": "2026-09-12",
+      "image": "/assets/images/jacksons-chameleon-handling.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "jacksons-chameleon-health-issues-guide",
+      "title": "Jackson's Chameleon Health Issues: Signs & Causes",
+      "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon already covered on this site, with a couple of details specific to this species worth knowing.",
+      "date": "2026-09-12",
+      "image": "/assets/images/jacksons-chameleon-health-issues.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "jacksons-chameleon-tank-setup-guide",
+      "title": "Jackson's Chameleon Tank Setup Guide",
+      "excerpt": "Jackson's chameleon husbandry looks similar to the veiled chameleon's on paper, tall screen enclosure, misting, UVB, but the actual temperature numbers run meaningfully cooler.",
+      "date": "2026-09-12",
+      "image": "/assets/images/jacksons-chameleon-tank-setup.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "jacksonschameleon-canary-millipede-corydoras-overview",
+      "title": "Jackson's Chameleon, Canary, Giant Millipede & Corydoras Compared",
+      "excerpt": "Every category on this site has its showstopper, the veiled chameleon, the talking parrot, the tarantula everyone recognizes, the oscar with a personality. These four are the quieter relatives standing just behind that spotlight, and each one holds up fine on its own terms.",
+      "date": "2026-09-16",
+      "image": "/assets/guides/jacksonschameleon-canary-millipede-corydoras-overview.jpg",
+      "category": "Roundups"
     },
     {
       "slug": "jumping-spider-cost-guide",
@@ -2079,6 +2335,38 @@
       "date": "2026-07-17",
       "image": "/assets/images/tarantula-tank-setup.jpg",
       "category": "Invertebrates"
+    },
+    {
+      "slug": "tiger-salamander-cost-guide",
+      "title": "Tiger Salamander Cost: Full Price Breakdown",
+      "excerpt": "Tiger salamanders are genuinely affordable, and the real budgeting story with this species is more about longevity than any single expensive line item.",
+      "date": "2026-09-20",
+      "image": "/assets/images/tiger-salamander-cost.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "tiger-salamander-handling-guide",
+      "title": "Tiger Salamander Handling: What to Know",
+      "excerpt": "Tiger salamanders are genuinely more outgoing than a lot of amphibians, but that personality doesn't translate into a handling relationship, and understanding why comes down to biology, not temperament.",
+      "date": "2026-09-20",
+      "image": "/assets/images/tiger-salamander-handling.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "tiger-salamander-health-issues-guide",
+      "title": "Tiger Salamander Health Issues: Signs & Causes",
+      "excerpt": "Tiger salamanders are hardy, and the issues that do show up trace back to feeding practices and substrate choice more than anything else, this species is an opportunistic eater in a way that genuinely shapes its health risks.",
+      "date": "2026-09-20",
+      "image": "/assets/images/tiger-salamander-health-issues.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "tiger-salamander-tank-setup-guide",
+      "title": "Tiger Salamander Tank Setup Guide",
+      "excerpt": "Tiger salamander husbandry is genuinely straightforward once you accept the central fact about this species: it's built to burrow, and the setup needs to support that, not fight against it.",
+      "date": "2026-09-20",
+      "image": "/assets/images/tiger-salamander-tank-setup.jpg",
+      "category": "Amphibians"
     },
     {
       "slug": "tokay-gecko-cost-guide",

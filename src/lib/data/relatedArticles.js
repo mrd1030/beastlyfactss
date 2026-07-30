@@ -65,4 +65,11 @@ export const RELATED_ARTICLES = {
   'california-kingsnake': ['california-kingsnake-cost-guide', 'california-kingsnake-handling-guide', 'california-kingsnake-health-issues-guide', 'california-kingsnake-tank-setup-guide'],
   'box-turtle': ['box-turtle-legal-guide', 'box-turtle-cost-guide', 'box-turtle-handling-guide', 'box-turtle-health-issues-guide', 'box-turtle-tank-setup-guide'],
   'oscar': ['oscar-fish-cost-guide', 'oscar-fish-handling-guide', 'oscar-fish-health-issues-guide', 'oscar-fish-tank-setup-guide'],
+  'canary': ['canary-cost-guide', 'canary-handling-guide', 'canary-health-issues-guide', 'canary-tank-setup-guide'],
+  'millipede': ['giant-millipede-cost-guide', 'giant-millipede-handling-guide', 'giant-millipede-health-issues-guide', 'giant-millipede-tank-setup-guide'],
+  'corydoras-catfish': ['corydoras-catfish-cost-guide', 'corydoras-catfish-handling-guide', 'corydoras-catfish-health-issues-guide', 'corydoras-catfish-tank-setup-guide'],
+  'green-anole': ['green-anole-cost-guide', 'green-anole-handling-guide', 'green-anole-health-issues-guide', 'green-anole-tank-setup-guide'],
+  'tegu': ['argentine-tegu-legal-guide', 'argentine-tegu-cost-guide', 'argentine-tegu-handling-guide', 'argentine-tegu-health-issues-guide', 'argentine-tegu-tank-setup-guide'],
+  'fire-belly-toad': ['fire-bellied-toad-cost-guide', 'fire-bellied-toad-handling-guide', 'fire-bellied-toad-health-issues-guide', 'fire-bellied-toad-tank-setup-guide'],
+  'tiger-salamander': ['tiger-salamander-cost-guide', 'tiger-salamander-handling-guide', 'tiger-salamander-health-issues-guide', 'tiger-salamander-tank-setup-guide'],
 };
