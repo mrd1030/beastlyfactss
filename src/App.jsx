@@ -12,9 +12,18 @@ import AppLayout from '@/components/layout/AppLayout';
 import AnalyticsTracker from '@/components/AnalyticsTracker';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import PageNotFound from './lib/PageNotFound';
-
-// Lazy Loaded Pages
-const Home = lazy(() => import('@/pages/Home'));
+// Home is NOT lazy-loaded like the other pages below: its own module (~3KB
+// gzipped) is tiny, but it's rendered inside AppLayout's <Suspense>, and every
+// homepage load has to wait for a lazy Home chunk to arrive over the network
+// before Suspense can resolve - during that wait, the fallback spinner
+// replaces the already-painted prerendered Hero content, which then pops back
+// in once the chunk loads. A real production Lighthouse run (not reproducible
+// on localhost, where the chunk loads too fast to ever paint the gap) measured
+// this as a 0.54 CLS hit - by far the dominant layout-shift culprit, bigger
+// than the earlier Footer-outside-Suspense bug this same mechanism caused.
+// Keeping Home available synchronously means the initial commit never
+// suspends for the homepage, so there's no gap for Hero to disappear into.
+import Home from '@/pages/Home';
 const Facts = lazy(() => import('@/pages/Facts'));
 const Quiz = lazy(() => import('@/pages/Quiz'));
 const Pack = lazy(() => import('@/pages/Pack'));
