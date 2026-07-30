@@ -5,8 +5,10 @@ import { motion } from 'framer-motion';
 import { ChevronRight, Search, X } from 'lucide-react';
 import { AFFILIATE_PRODUCTS, GEAR_CATEGORY_ORDER, GEAR_PET_TYPES, RETAILERS } from '@/lib/data/affiliateProducts';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { slugify } from '@/lib/utils/slugify';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
+import GearCategoryNav from '@/components/shared/GearCategoryNav';
 
 const DESCRIPTION = truncateDescription(
   `The exact products we recommend across our care guides: heating, lighting, substrate, enclosures, aquarium gear, and dog, cat, and small-mammal supplies.`
@@ -155,49 +157,66 @@ export default function Gear() {
               </Link>
             ))}
           </div>
+
+          <div className="lg:hidden mt-4">
+            <GearCategoryNav categories={byCategory.map(({ category, products }) => ({ category, count: products.length }))} />
+          </div>
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
-        {byCategory.length === 0 ? (
-          <div className="text-center py-16">
-            <span className="text-4xl block mb-3">🔍</span>
-            <p className="font-display font-bold text-foreground">
-              {trimmedQuery ? `No gear matches "${searchQuery.trim()}"` : 'No gear found for this filter yet'}
-            </p>
-            {trimmedQuery && (
-              <button
-                type="button"
-                onClick={() => setSearchQuery('')}
-                className="mt-3 text-sm font-display font-semibold text-secondary hover:underline"
-              >
-                Clear search
-              </button>
-            )}
-          </div>
-        ) : (
-          byCategory.map(({ category, products }) => (
-            <div key={category} className="mb-8 last:mb-0">
-              <h2 className="font-display font-bold text-lg text-foreground mb-3">{category}</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {products.map(product => (
-                  <ProductCard key={product.slug} product={product} onSelect={setSelectedProduct} />
-                ))}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+          <div className="lg:col-span-2">
+            {byCategory.length === 0 ? (
+              <div className="text-center py-16">
+                <span className="text-4xl block mb-3">🔍</span>
+                <p className="font-display font-bold text-foreground">
+                  {trimmedQuery ? `No gear matches "${searchQuery.trim()}"` : 'No gear found for this filter yet'}
+                </p>
+                {trimmedQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery('')}
+                    className="mt-3 text-sm font-display font-semibold text-secondary hover:underline"
+                  >
+                    Clear search
+                  </button>
+                )}
               </div>
-            </div>
-          ))
-        )}
+            ) : (
+              byCategory.map(({ category, products }) => (
+                <div
+                  key={category}
+                  id={slugify(category)}
+                  style={{ scrollMarginTop: 'calc(56px + var(--safe-area-inset-top, 0px) + 16px)' }}
+                  className="mb-8 last:mb-0"
+                >
+                  <h2 className="font-display font-bold text-lg text-foreground mb-3">{category}</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {products.map(product => (
+                      <ProductCard key={product.slug} product={product} onSelect={setSelectedProduct} />
+                    ))}
+                  </div>
+                </div>
+              ))
+            )}
 
-        <div className="mt-10 pt-6 border-t border-border">
-          <p className="text-[11px] text-muted-foreground/70 font-body italic mb-4">
-            {disclosureText()}
-          </p>
-          <Link
-            to="/guides/"
-            className="inline-flex items-center gap-1 text-sm font-display font-semibold text-secondary hover:underline"
-          >
-            Browse care guides <ChevronRight className="w-3.5 h-3.5" />
-          </Link>
+            <div className="mt-10 pt-6 border-t border-border">
+              <p className="text-[11px] text-muted-foreground/70 font-body italic mb-4">
+                {disclosureText()}
+              </p>
+              <Link
+                to="/guides/"
+                className="inline-flex items-center gap-1 text-sm font-display font-semibold text-secondary hover:underline"
+              >
+                Browse care guides <ChevronRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="hidden lg:block lg:sticky lg:top-16 self-start">
+            <GearCategoryNav categories={byCategory.map(({ category, products }) => ({ category, count: products.length }))} />
+          </div>
         </div>
       </div>
       <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />

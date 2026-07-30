@@ -13,7 +13,7 @@ export const CATEGORIES = [
     terms: [
       { term: 'Husbandry', definition: 'The overall practice of caring for an animal: housing, diet, temperature, enrichment, and health monitoring, all together.' },
       { term: 'Enclosure', definition: 'The tank, terrarium, or cage an animal lives in.' },
-      { term: 'Substrate', definition: 'The material lining the bottom of an enclosure - sand, soil, reptile carpet, paper towel, and so on.', related: [
+      { term: 'Substrate', definition: 'The material lining the bottom of an enclosure - sand, soil, paper towel, and so on.', related: [
         { label: 'Hognose Snake Care Guide', to: '/guides/hognose-snake/' },
         { label: 'Ackie Monitor Care Guide', to: '/guides/ackie-monitor/' },
         { label: 'Leopard Gecko Care Guide', to: '/guides/leopard-gecko/' },

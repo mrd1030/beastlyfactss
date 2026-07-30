@@ -158,7 +158,7 @@ These are powerful animals. A tame adult tegu can still cause injury unintention
         { item: "Thermostat", low: 40, high: 80 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 30 },
         { item: "Infrared thermometer gun", low: 15, high: 30 },
-        { item: "Substrate (tile or reptile carpet)", low: 20, high: 40 },
+        { item: "Substrate (tile)", low: 20, high: 40 },
         { item: "Branches, hides, and decor", low: 30, high: 60 },
         { item: "Food and water dishes", low: 10, high: 20 },
       ],
@@ -179,7 +179,7 @@ The basking spot is the most critical element of a bearded dragon setup. A surfa
 
 A strong full-spectrum desert UVB light is non-negotiable. Use a T5 HO UVB bulb - the Arcadia Dragon 12% or Zoo Med T5 HO Reptisun 10.0 are current industry standards. Bearded dragons need intense UVB for vitamin D3 synthesis and calcium metabolism. Compact or coil UVB bulbs are inadequate. Replace UVB bulbs every 6 to 12 months even if they still appear to emit light, as UV output degrades before visible light does.
 
-Substrate should be easy to clean and safe if accidentally ingested. Reptile carpet, ceramic tile, or paper towels work well for juveniles. Adults can be kept on a sand-soil mix (ReptiSand or a DIY 50/50 topsoil and playsand) if the enclosure is set up correctly and the dragon is well-fed. Loose calcium sand should be avoided entirely.`,
+Substrate should be easy to clean and safe if accidentally ingested. Ceramic tile or paper towels work well for juveniles. Adults can be kept on a sand-soil mix (ReptiSand or a DIY 50/50 topsoil and playsand) if the enclosure is set up correctly and the dragon is well-fed. Loose calcium sand should be avoided entirely.`,
       diet: `Bearded dragons are omnivores with age-dependent dietary requirements. Juveniles (under 12 months) should eat approximately 70 to 80% live insects and 20 to 30% leafy greens and vegetables. As they approach adulthood, the ratio flips: adults thrive on 70 to 80% leafy greens and vegetables with 20 to 30% insects. This shift mirrors their natural dietary habits in the wild.
 
 Staple insect feeders include dubia roaches (the gold standard), black soldier fly larvae (BSFL/CalciWorms), and crickets. Mealworms can be offered occasionally as a treat. Waxworms should be strictly limited - they are extremely high in fat and act like candy. Hornworms are excellent for hydration and variety. Always gut-load insects 24 to 48 hours before feeding, and dust with calcium w/D3 at every juvenile feeding and 3 to 4 times per week for adults.
@@ -196,12 +196,12 @@ Bearded dragons have been observed enjoying watching television, following the m
 Shedding is a natural process that should not require intervention when husbandry is correct. Ensure adequate hydration through bathing during shed periods. Juvenile bearded dragons shed frequently (every few weeks) as they grow rapidly. Adults shed less often. Never peel or force shed off - this damages the underlying skin.`,
       health: `Metabolic Bone Disease (MBD) is the most common serious health problem in bearded dragons and is entirely preventable. It results from inadequate UVB lighting, insufficient calcium supplementation, or both. Early signs include leg trembling, difficulty walking, soft or rubbery jaw, lethargy, and loss of appetite. Advanced MBD causes permanent skeletal deformities. Invest in quality UVB lighting and maintain a consistent supplementation schedule.
 
-Impaction occurs when a bearded dragon ingests substrate material that forms a blockage in the intestinal tract. Loose particulate substrates (especially calcium sand) are the primary cause. Signs include straining to defecate, a hard swollen abdomen, lethargy, and hind leg weakness. Treatment requires veterinary intervention. Using tile, carpet, or paper substrate for juveniles eliminates this risk.
+Impaction occurs when a bearded dragon ingests substrate material that forms a blockage in the intestinal tract. Loose particulate substrates (especially calcium sand) are the primary cause. Signs include straining to defecate, a hard swollen abdomen, lethargy, and hind leg weakness. Treatment requires veterinary intervention. Using tile or paper substrate for juveniles eliminates this risk.
 
 Parasites - particularly pinworms and coccidia - are very common in bearded dragons, including those from reputable breeders. Annual fecal exams are strongly recommended even for apparently healthy animals. Many parasitic infections are subclinical (the dragon appears healthy) but cause chronic stress on the immune system.
 
 Yellow Fungal Disease (CANV, caused by Nannizziopsis guarroi) is a serious and often fatal fungal infection that presents as yellow, discolored, necrotic skin lesions. Any unusual skin lesion warrants immediate veterinary assessment. Adenovirus (Atadenovirus) is a common and poorly understood viral infection that can cause neurological symptoms, failure to thrive, and immunosuppression. Annual wellness visits with a reptile-experienced veterinarian are essential.`,
-      checklist: ["4x2x2 ft enclosure", "High-output desert UVB (T5 HO)", "Powerful basking bulb (100 to 115 degrees F)", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 + multivitamin", "Ceramic food and water dishes", "Juvenile insects (dubia, BSFL, crickets)", "Leafy greens daily", "Reptile carpet or tile substrate", "Branches and hides for enrichment"],
+      checklist: ["4x2x2 ft enclosure", "High-output desert UVB (T5 HO)", "Powerful basking bulb (100 to 115 degrees F)", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 + multivitamin", "Ceramic food and water dishes", "Juvenile insects (dubia, BSFL, crickets)", "Leafy greens daily", "Tile substrate", "Branches and hides for enrichment"],
     },
     faqs: [
       { q: "How big do bearded dragons get?", a: "Adult bearded dragons (Pogona vitticeps) reach 16 to 24 inches total length and 300 to 500 grams, with males typically larger than females. Most reach adult size by 12 to 18 months, though they continue filling out through their second year." },

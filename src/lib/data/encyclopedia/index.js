@@ -25,17 +25,17 @@ export const encyclopediaAnimals = [
 ];
 
 export const encyclopediaCategories = [
-  { name: "Amphibians", emoji: "🐸", slug: "amphibians" },
-  { name: "Birds", emoji: "🐦", slug: "birds" },
-  { name: "Cats", emoji: "🐱", slug: "cats" },
-  { name: "Dogs", emoji: "🐶", slug: "dogs" },
-  { name: "Fish", emoji: "🐠", slug: "fish" },
-  { name: "Geckos", emoji: "🦎", slug: "geckos" },
-  { name: "Invertebrates", emoji: "🕷️", slug: "invertebrates" },
-  { name: "Lizards", emoji: "🦎", slug: "lizards" },
-  { name: "Small Mammals", emoji: "🦔", slug: "small-mammals" },
-  { name: "Snakes", emoji: "🐍", slug: "snakes" },
-  { name: "Turtles & Tortoises", emoji: "🐢", slug: "turtles-tortoises" },
+  { name: "Amphibians", emoji: "🐸", slug: "amphibians", image: "/assets/encyclopedia/amphibians-category.jpg" },
+  { name: "Birds", emoji: "🐦", slug: "birds", image: "/assets/encyclopedia/birds-category.jpg" },
+  { name: "Cats", emoji: "🐱", slug: "cats", image: "/assets/encyclopedia/cats-category.jpg" },
+  { name: "Dogs", emoji: "🐶", slug: "dogs", image: "/assets/encyclopedia/dogs-category.jpg" },
+  { name: "Fish", emoji: "🐠", slug: "fish", image: "/assets/encyclopedia/fish-category.jpg" },
+  { name: "Geckos", emoji: "🦎", slug: "geckos", image: "/assets/encyclopedia/geckos-category.jpg" },
+  { name: "Invertebrates", emoji: "🕷️", slug: "invertebrates", image: "/assets/encyclopedia/invertebrates-category.jpg" },
+  { name: "Lizards", emoji: "🦎", slug: "lizards", image: "/assets/encyclopedia/lizards-category.jpg" },
+  { name: "Small Mammals", emoji: "🦔", slug: "small-mammals", image: "/assets/encyclopedia/small-mammals-category.jpg" },
+  { name: "Snakes", emoji: "🐍", slug: "snakes", image: "/assets/encyclopedia/snakes-category.jpg" },
+  { name: "Turtles & Tortoises", emoji: "🐢", slug: "turtles-tortoises", image: "/assets/encyclopedia/turtles-tortoises-category.jpg" },
 ];
 
 export const difficultyColor = {

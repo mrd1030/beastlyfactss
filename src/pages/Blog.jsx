@@ -51,7 +51,9 @@ export default function Blog() {
   const [sanityPosts, setSanityPosts] = useState([]);
   const [sanityCategories, setSanityCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
-  const [search, setSearch] = useState('');
+  // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
+  // search box) pre-fills the filter on first render, not just live typing.
+  const [search, setSearch] = useState(() => new URLSearchParams(window.location.search).get('search') || '');
   const [selectedPost, setSelectedPost] = useState(null);
   const [page, setPage] = useState(1);
   const [fetchError, setFetchError] = useState(false);
@@ -328,6 +330,11 @@ export default function Blog() {
               placeholder="Search articles by title..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && search.trim() && import.meta.env.MODE === 'production' && window.gtag) {
+                  window.gtag('event', 'search', { search_term: search.trim() });
+                }
+              }}
               className="w-full bg-card border border-border rounded-xl pl-10 pr-9 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
             />
             {search && (

@@ -74,7 +74,7 @@ export default function ProductModal({ product, onClose }) {
           initial={{ scale: 0.9, opacity: 0, y: 20 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.9, opacity: 0, y: 20 }}
-          className="bg-card rounded-3xl p-6 sm:p-8 max-w-sm w-full shadow-2xl border border-border"
+          className="bg-card rounded-3xl p-6 sm:p-8 max-w-sm w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-border"
           onClick={(e) => e.stopPropagation()}
           role="dialog"
           aria-modal="true"

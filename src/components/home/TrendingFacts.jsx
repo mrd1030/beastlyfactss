@@ -1,5 +1,6 @@
 import React, { useRef, useMemo } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
 
@@ -15,7 +16,10 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
   // and its own request handling was forcing this carousel to load scrolled to
   // its far right edge. Removed rather than worked around; it wasn't providing anything.
   const trending = useMemo(() => {
-    const offset = facts.length ? new Date().getDate() % facts.length : 0;
+    if (!facts.length) return [];
+    // +1 so this row's first card never matches HeroSection's dailyFact, which
+    // uses the same day-of-month rotation on the same array.
+    const offset = (new Date().getDate() % facts.length + 1) % facts.length;
     return [...facts.slice(offset), ...facts.slice(0, offset)].slice(0, 8);
   }, []);
 
@@ -26,7 +30,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6">
+    <section className="pt-8 pb-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -34,19 +38,24 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
             <h2 className="font-display font-bold text-2xl text-foreground">Trending Facts</h2>
             <p className="text-sm text-muted-foreground font-body mt-1">The wildest facts everyone's talking about</p>
           </div>
-          <div className="hidden sm:flex gap-2">
-            <button onClick={() => scroll(-1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll left">
-              <ChevronLeft className="w-4 h-4" />
-            </button>
-            <button onClick={() => scroll(1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll right">
-              <ChevronRight className="w-4 h-4" />
-            </button>
+          <div className="hidden sm:flex items-center gap-4">
+            <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
+              Browse all <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+            <div className="flex gap-2">
+              <button onClick={() => scroll(-1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll left">
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button onClick={() => scroll(1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll right">
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </div>
 
         <div
           ref={scrollRef}
-          className="flex justify-start gap-4 overflow-x-auto pb-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
+          className="flex justify-start gap-4 overflow-x-auto overflow-y-hidden py-4 -mx-4 px-4 snap-x snap-mandatory scrollbar-hide"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', alignItems: 'flex-start' }}
         >
           {trending.map((fact, i) => (

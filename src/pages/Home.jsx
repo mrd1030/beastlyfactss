@@ -1,7 +1,9 @@
 import React, { useState, lazy, Suspense } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/home/HeroSection';
+const CategoryBrowse = lazy(() => import('@/components/home/CategoryBrowse'));
 const TrendingFacts = lazy(() => import('@/components/home/TrendingFacts'));
+const FactsToGuidesBanner = lazy(() => import('@/components/home/FactsToGuidesBanner'));
 const EncyclopediaTeaser = lazy(() => import('@/components/home/EncyclopediaTeaser'));
 const CritterDigestPreview = lazy(() => import('@/components/home/CritterDigestPreview'));
 const DexTeaser = lazy(() => import('@/components/home/DexTeaser'));
@@ -41,6 +43,8 @@ export default function Home() {
 
       <Suspense fallback={null}>
         <TrendingFacts onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
+        <FactsToGuidesBanner />
+        <CategoryBrowse />
         {/* Reference content: animal profiles + care guides, together */}
         <EncyclopediaTeaser />
         <GuideSpotlight />

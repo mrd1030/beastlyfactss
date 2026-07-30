@@ -36,7 +36,7 @@ export const RELATED_ARTICLES = {
   'african-fat-tail': ['african-fat-tail-cost-guide', 'african-fat-tail-handling-guide', 'african-fat-tail-health-issues-guide', 'african-fat-tail-tank-setup-guide'],
   'koi': ['koi-cost-guide', 'koi-handling-guide', 'koi-health-issues-guide', 'koi-tank-setup-guide', 'koi-feeding-guide'],
   'conure': ['conure-cost-guide', 'conure-handling-guide', 'conure-health-issues-guide', 'conure-tank-setup-guide'],
-  'red-eared-slider': ['red-eared-slider-legal-guide', 'red-eared-slider-cost-guide', 'red-eared-slider-handling-guide', 'red-eared-slider-health-issues-guide', 'red-eared-slider-tank-setup-guide'],
+  'red-eared-slider': ['red-eared-slider-legal-guide', 'red-eared-slider-cost-guide', 'red-eared-slider-handling-guide', 'red-eared-slider-health-issues-guide', 'red-eared-slider-tank-setup-guide', 'red-eared-slider-feeding-guide'],
   'emperor-scorpion': ['emperor-scorpion-cost-guide', 'emperor-scorpion-handling-guide', 'emperor-scorpion-health-issues-guide', 'emperor-scorpion-tank-setup-guide'],
   'hognose-snake': ['hognose-snake-legal-guide', 'hognose-snake-cost-guide', 'hognose-snake-handling-guide', 'hognose-snake-health-issues-guide', 'hognose-snake-tank-setup-guide'],
   'blue-tongue-skink': ['blue-tongue-skink-cost-guide', 'blue-tongue-skink-handling-guide', 'blue-tongue-skink-health-issues-guide', 'blue-tongue-skink-tank-setup-guide'],

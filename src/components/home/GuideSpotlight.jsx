@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
 import { difficultyColor } from '@/lib/data/encyclopedia';
+import LocalImage from '@/components/shared/LocalImage';
 
 // One guide per pet type so the sample reflects the site's actual range
 // instead of whichever category happens to sit first in allGuides. Covers
@@ -52,28 +53,43 @@ export default function GuideSpotlight() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.07 }}
-                whileHover={{ y: -3 }}
               >
                 <Link to={`/guides/${guide.id}/`}>
-                  <div className="bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
-                    <div className="flex items-start justify-between gap-x-2 gap-y-1 flex-wrap mb-3">
-                      <span className="text-3xl flex-shrink-0">{guide.emoji}</span>
-                      {/* flex-wrap on the row (not break-words on the badge): compound labels
-                          like "Intermediate/Advanced" have no space to wrap at, so at the 2-col
-                          mobile width the badge instead drops to its own full-width line rather
-                          than breaking mid-word or overflowing the card. */}
-                      <span className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full whitespace-nowrap ${diffClass}`}>
+                  <div className="bg-card border border-border rounded-2xl overflow-hidden hover:border-secondary/40 hover:shadow-md transition-all duration-200 group h-full flex flex-col">
+                    <div className="aspect-[4/3] w-full overflow-hidden relative bg-muted">
+                      {guide.image ? (
+                        <LocalImage
+                          src={guide.image}
+                          alt={guide.name}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          width={320}
+                          height={240}
+                          fullSize
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-4xl">
+                          {guide.emoji}
+                        </div>
+                      )}
+                      <span className={`absolute top-2 left-2 text-xs font-display font-semibold px-2 py-0.5 rounded-full whitespace-nowrap bg-card/90 backdrop-blur-sm shadow-sm ${diffClass}`}>
                         {guide.difficulty}
                       </span>
                     </div>
-                    <h3 className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors mb-1">
-                      {guide.name}
-                    </h3>
-                    <p className="text-xs text-muted-foreground font-body leading-relaxed flex-1">
-                      {guide.tagline}
-                    </p>
-                    <div className="flex items-center gap-0.5 mt-3 text-xs font-display font-semibold text-secondary">
-                      Read guide <ChevronRight className="w-3 h-3" />
+                    <div className="p-4 flex flex-col flex-1">
+                      <h3 className="text-base font-display font-bold leading-snug text-foreground group-hover:text-secondary transition-colors mb-1 line-clamp-1">
+                        {guide.name}
+                      </h3>
+                      <p className="text-xs text-muted-foreground font-body leading-relaxed line-clamp-2 flex-1">
+                        {guide.tagline}
+                      </p>
+                      <div className="flex items-center justify-between mt-3 pt-3 border-t border-border/60">
+                        <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+                          {guide.petType}
+                        </span>
+                        <span className="flex items-center gap-0.5 text-xs font-display font-semibold text-secondary">
+                          Read guide <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </Link>

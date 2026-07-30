@@ -532,7 +532,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "small-pet-paper-bedding",
     product: "Small-pet paper bedding",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Substrate",
     retailer: "amazon",
     link: "https://amzn.to/4voH9Ap",
     image: "/assets/images/affiliate/product-41.jpg",
@@ -776,7 +776,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "cc-cage-guinea-pig",
     product: "C&C cage (guinea pig)",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Enclosures & Cages",
     retailer: "amazon",
     link: "https://amzn.to/3SOqokx",
     image: "/assets/images/affiliate/product-58.jpg",
@@ -789,7 +789,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "escape-proof-fencing",
     product: "Escape-proof outdoor fencing",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Enclosures & Cages",
     retailer: "amazon",
     link: "https://amzn.to/4aCGvb1",
     image: "/assets/images/affiliate/product-59.jpg",
@@ -828,7 +828,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "guinea-pig-vitamin-c-supplement",
     product: "Vitamin C supplement (Oxbow Natural Science)",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Food & Treats",
     retailer: "amazon",
     link: "https://amzn.to/44CDAMd",
     image: "/assets/images/affiliate/product-63.jpg",
@@ -843,7 +843,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "timothy-hay-small-pets",
     product: "Timothy hay (Oxbow Western Timothy Hay, 90 oz)",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Food & Treats",
     retailer: "amazon",
     link: "https://amzn.to/4h9WW2u",
     image: "/assets/images/affiliate/product-64.jpg",
@@ -1038,7 +1038,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "soft-pellets-axolotl",
     product: "Soft Sinking Pellets for Axolotls",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Food & Treats",
     retailer: "amazon",
     link: "https://amzn.to/4tR5M7U",
     image: "/assets/images/affiliate/product-75.jpg",
@@ -2017,7 +2017,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "uvi-meter-solarmeter-6-5r",
     product: "Solarmeter Model 6.5R Reptile UV Index Meter, Handheld Digital Radiometer for Measuring Ultraviolet Light, Measures 280-400 nm with Range from 0-199.9 UV Index, Made in USA, ABS Polymer, Black",
-    category: "Temperature & Humidity Monitoring",
+    category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B076GXJFJG?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-148.jpg",
@@ -2039,7 +2039,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "calcium-sugar-glider-vitamin-combo",
     product: "Exotic Nutrition Sugar Glider Vitamin Combo Pack - Powder Multivitamin & Powder Calcium Supplement for Pet Sugar Gliders",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08DP3H5N9?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-149.jpg",
@@ -2352,7 +2352,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "betta-substrate-caribsea-freshwater-sand",
     product: "CaribSea Super Naturals Aquascape Sunset Gold - 10 lb - Natural Substrate for Freshwater Aquariums, Perfect for Aquascaping & Creating Vibrant Landscapes",
-    category: "Aquarium Equipment",
+    category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DQQZ69J6?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-174.jpg",
@@ -2365,7 +2365,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "rabbit-pellet-food-oxbow-garden-select",
     product: "Oxbow Garden Select Adult Rabbit Food, High-Fiber Rabbit Pellets, USA, 4 lb",
-    category: "Small Mammal & Exotic Pet Gear",
+    category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B06XX68LM2?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-175.jpg",
@@ -3022,7 +3022,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "petroleum-jelly-amazon-basics",
     product: "Amazon Basics Petroleum Jelly, Skin Protectant, 7.5 oz",
-    category: "Decor & Enrichment",
+    category: "Enclosures & Cages",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B09HHH2Z9Y?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-226.jpg",
@@ -3048,7 +3048,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "angelfish-medication-seachem-metroplex",
     product: "Seachem MetroPlex Metronidazole",
-    category: "Food & Treats",
+    category: "Water & Humidity Care",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01M5LEDRA?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-228.jpg",
@@ -3100,7 +3100,7 @@ export const AFFILIATE_PRODUCTS = [
   {
     slug: "african-grey-parrot-digital-gram-scale",
     product: "W.C. Redmon Deluxe Digital Aviary Scale with Perch",
-    category: "Temperature & Humidity Monitoring",
+    category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000WP6LRY?tag=beastlyfacts-20",
     image: "/assets/images/affiliate/product-232.jpg",
