@@ -105,6 +105,14 @@
       "category": "Birds"
     },
     {
+      "slug": "african-grey-parrot-legal-guide",
+      "title": "African Grey Parrot Legal Guide: CITES & Ownership",
+      "excerpt": "African grey parrots hold the strictest CITES protection level there is, Appendix I, since 2017. That sounds like an ownership ban. It isn't, and understanding why comes down to one exemption written specifically for captive breeding.",
+      "date": "2026-09-24",
+      "image": "/assets/guides/african-grey-parrot-legal.jpg",
+      "category": "Legal"
+    },
+    {
       "slug": "african-grey-parrot-tank-setup-guide",
       "title": "African Grey Parrot Cage Setup Guide",
       "excerpt": "An African grey's cage needs to support a genuinely large, intelligent, long-lived bird, and getting the size and placement right matters as much as anything else in this species' care.",
@@ -207,6 +215,14 @@
       "date": "2026-07-18",
       "image": "/assets/images/axolotl-health-issues.jpg",
       "category": "Amphibians"
+    },
+    {
+      "slug": "axolotl-legal-guide",
+      "title": "Axolotl Legal Guide: Banned States & 2021 Virginia Update",
+      "excerpt": "Axolotls are genuinely banned in a handful of states, California among them, but Virginia isn't one of them anymore. A 2021 rule change legalized them there, and a lot of hobbyist sites still haven't caught up.",
+      "date": "2026-09-25",
+      "image": "/assets/guides/axolotl-legal.jpg",
+      "category": "Legal"
     },
     {
       "slug": "axolotl-tank-setup-guide",
@@ -439,6 +455,14 @@
       "date": "2026-08-20",
       "image": "/assets/images/boa-constrictor-health-issues.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "boa-constrictor-legal-guide",
+      "title": "Boa Constrictor Legal Guide: State Bans & Permits",
+      "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey subspecies split, are where the real rules live.",
+      "date": "2026-09-27",
+      "image": "/assets/guides/boa-constrictor-legal.jpg",
+      "category": "Legal"
     },
     {
       "slug": "boa-constrictor-tank-setup-guide",
@@ -2359,6 +2383,14 @@
       "date": "2026-09-20",
       "image": "/assets/images/tiger-salamander-health-issues.jpg",
       "category": "Amphibians"
+    },
+    {
+      "slug": "tiger-salamander-legal-guide",
+      "title": "Tiger Salamander Legal Guide: Federal, Bait & State Rules",
+      "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species actually sits under three separate, unrelated legal regimes, and only one of them has anything to do with owning a pet.",
+      "date": "2026-09-26",
+      "image": "/assets/guides/tiger-salamander-legal.jpg",
+      "category": "Legal"
     },
     {
       "slug": "tiger-salamander-tank-setup-guide",

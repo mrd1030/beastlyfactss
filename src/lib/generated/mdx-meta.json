@@ -636,6 +636,56 @@
     ]
   },
   {
+    "path": "/content/guides/african-grey-parrot-legal-guide.mdx",
+    "slug": "african-grey-parrot-legal-guide",
+    "title": "Is It Legal to Own an African Grey Parrot? CITES Appendix I Explained",
+    "seoTitle": "African Grey Parrot Legal Guide: CITES & Ownership",
+    "excerpt": "African grey parrots hold the strictest CITES protection level there is, Appendix I, since 2017. That sounds like an ownership ban. It isn't, and understanding why comes down to one exemption written specifically for captive breeding.",
+    "date": "2026-09-24",
+    "category": "Legal",
+    "tags": [
+      "African Grey Parrot",
+      "Legal",
+      "CITES",
+      "Exotic Pet Laws",
+      "Bird Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/african-grey-parrot-legal.jpg",
+    "imageAlt": "African grey parrot perched calmly, representing its captive-bred legal status",
+    "emoji": "🦜",
+    "lastReviewed": "2026-09-24",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it illegal to own an African grey parrot in the US?",
+        "a": "No. Owning a captive-bred African grey is legal under federal law, and effectively every grey sold legally in the US today is domestically captive-bred. No US state imposes a species-specific ban on private ownership."
+      },
+      {
+        "q": "What does the CITES Appendix I listing actually restrict?",
+        "a": "International commercial trade in wild-caught birds. CoP17 voted on October 2, 2016 to move the African grey from Appendix II to Appendix I, effective January 2, 2017, in response to a documented population collapse driven by pet-trade trapping. It does not touch domestic ownership of a bird you already legally have."
+      },
+      {
+        "q": "How can captive-bred African greys still be sold if the species is Appendix I?",
+        "a": "A specific exemption. Under CITES Article VII(4) and the US implementing regulation 50 CFR 23.46, an Appendix I specimen bred in captivity for commercial purposes at an operation registered with the CITES Secretariat can be traded internationally under the lighter Appendix II rules, with an export permit and individual documentation. This exemption is exactly why captive-bred greys remain legally tradable despite the Appendix I listing."
+      },
+      {
+        "q": "What documentation should I look for when buying one?",
+        "a": "A CITES certificate and closed-ring, meaning indelible, identification on the bird, both tied to a registered captive-breeding operation. Buying from a breeder who can provide this provenance documentation is the practical way to confirm you're getting a legitimately captive-bred bird, not a laundered wild-caught one, a concern conservation groups have specifically raised about this exemption."
+      },
+      {
+        "q": "Has the US ever restricted importing wild African greys?",
+        "a": "Yes, since 1992, well before the CITES uplisting. The Wild Bird Conservation Act banned commercial import of wild-caught African greys into the US. A 2019 to 2020 application by a Florida breeder to import 4,000 greys, roughly half wild-caught, drew strong opposition from major conservation and welfare organizations and was not approved."
+      },
+      {
+        "q": "Does a CITES Appendix I listing mean a species is generally illegal to own?",
+        "a": "No, and this is worth understanding for any exotic pet, not just this one. A CITES listing governs international trade, not domestic possession. Whether you can own a given species comes down to federal import law and your own state's rules, not the CITES appendix number alone."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/african-grey-parrot-tank-setup-guide.mdx",
     "slug": "african-grey-parrot-tank-setup-guide",
     "title": "African Grey Parrot Cage Setup: Size, Placement, and Enrichment Done Right",
@@ -1309,6 +1359,56 @@
       "water-test-kit",
       "digital-thermometer-hygrometer-combo"
     ]
+  },
+  {
+    "path": "/content/guides/axolotl-legal-guide.mdx",
+    "slug": "axolotl-legal-guide",
+    "title": "Is It Legal to Own an Axolotl? State-by-State Guide (Virginia Myth Corrected)",
+    "seoTitle": "Axolotl Legal Guide: Banned States & 2021 Virginia Update",
+    "excerpt": "Axolotls are genuinely banned in a handful of states, California among them, but Virginia isn't one of them anymore. A 2021 rule change legalized them there, and a lot of hobbyist sites still haven't caught up.",
+    "date": "2026-09-25",
+    "category": "Legal",
+    "tags": [
+      "Axolotl",
+      "Legal",
+      "Exotic Pet Laws",
+      "Amphibian Care",
+      "State Laws"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/axolotl-legal.jpg",
+    "imageAlt": "Pink axolotl in a planted aquarium, representing its state-by-state legal status",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-25",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own an axolotl in Virginia?",
+        "a": "Yes, and this corrects a widely repeated mistake. As of August 1, 2021, the Virginia Department of Wildlife Resources confirms it is legal to import, export, sell, and possess axolotls in Virginia, no permit required. Many hobbyist sites still incorrectly list Virginia as banned."
+      },
+      {
+        "q": "Which states actually ban axolotls?",
+        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey effectively bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC also reportedly bans them under its prohibited-animals rules."
+      },
+      {
+        "q": "Why is California so strict about axolotls specifically?",
+        "a": "Axolotls belong to genus Ambystoma, the same genus as California's native tiger salamander, which is federally threatened. California's regulation classifies the entire nonnative Ambystoma group as a detrimental restricted species, driven by hybridization risk with the native population, not a conservation concern about axolotls themselves."
+      },
+      {
+        "q": "Does the 2025 federal salamander rule affect axolotl ownership?",
+        "a": "Not directly. A federal rule effective January 10, 2025 added genus Ambystoma, which includes axolotls, to the list of injurious wildlife under the Lacey Act. That listing restricts importation and shipment to Hawaii, DC, Puerto Rico, and US territories. It does not restrict ownership, breeding, or interstate sale within the continental United States, according to USFWS's own FAQ on the rule."
+      },
+      {
+        "q": "What about New Mexico?",
+        "a": "New Mexico allows possession in some cases but restricts importing axolotls from other states, more of an import-control issue than an outright pet ban."
+      },
+      {
+        "q": "Why do bans on this species exist at all if axolotls aren't endangered?",
+        "a": "The restrictions that exist are ecological, not conservation-driven. Regulators are concerned about hybridization with native Ambystoma salamanders, the risk of invasive establishment if released, and disease transmission, particularly the chytrid fungus. California's detrimental-species framing captures this concern directly."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/axolotl-tank-setup-guide.mdx",
@@ -2746,6 +2846,56 @@
       "cypress-mulch-substrate",
       "ceramic-heat-emitter-zoo-med-repticare-150w"
     ]
+  },
+  {
+    "path": "/content/guides/boa-constrictor-legal-guide.mdx",
+    "slug": "boa-constrictor-legal-guide",
+    "title": "Is It Legal to Own a Boa Constrictor? Federal Withdrawal and State Rules",
+    "seoTitle": "Boa Constrictor Legal Guide: State Bans & Permits",
+    "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey subspecies split, are where the real rules live.",
+    "date": "2026-09-27",
+    "category": "Legal",
+    "tags": [
+      "Boa Constrictor",
+      "Legal",
+      "Exotic Pet Laws",
+      "Snake Care",
+      "State Laws"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/boa-constrictor-legal.jpg",
+    "imageAlt": "Boa constrictor coiled, representing its legal status across US states",
+    "emoji": "🐍",
+    "lastReviewed": "2026-09-27",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is the boa constrictor listed as federally injurious wildlife?",
+        "a": "No, and this is a common point of confusion. FWS proposed listing it alongside 8 other large constrictors in 2010, but affirmatively withdrew the boa constrictor from that list in a March 2015 rule that did list four other species instead. The boa constrictor remains not federally listed as of 2026."
+      },
+      {
+        "q": "Why did the federal government withdraw the boa constrictor specifically?",
+        "a": "FWS's own reasoning, stated in its 2015 rule: although the species can be damaging to US wildlife, its circumstances, meaning widespread private ownership and domestic breeding already established across the country, made import and interstate transport prohibitions less effective as a tool. FWS opted for a cooperative approach with states and the pet industry instead."
+      },
+      {
+        "q": "Where is it actually illegal to own a boa constrictor?",
+        "a": "Hawaii bans all snakes outright, a felony-level restriction. New York City bans the whole family Boidae at the municipal level, snakes are otherwise legal in most of New York State. Everywhere else, it comes down to permits rather than outright bans in a few states."
+      },
+      {
+        "q": "What's the New Jersey subspecies split?",
+        "a": "The single most important nuance for buyers. New Jersey requires a permit for Boa constrictor imperator, the common red-tail or Colombian boa that dominates the pet trade, and for B. c. ortonii, while the true B. c. constrictor subspecies is on the state's exempt list. Most pet-trade boas are imperator, meaning most New Jersey owners do need a permit."
+      },
+      {
+        "q": "Do Louisiana or other states have length-based restrictions?",
+        "a": "Louisiana requires a permit specifically for constrictor snakes over 8 feet, naming genus Boa directly. Most other states either don't regulate boas at all (New York State, Connecticut, Ohio, Texas) or exempt the family entirely except for a few named large species (Massachusetts)."
+      },
+      {
+        "q": "Is Florida's rule on boa constrictors settled?",
+        "a": "Not fully confirmed. Secondary sources report post-2020 Florida rule changes adding some boa species to permit or microchip requirements, but this hasn't been verified against a primary FWC source. If you're in Florida, check the current FWC Prohibited and Conditional species lists directly before relying on any secondhand summary, including this one."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/boa-constrictor-tank-setup-guide.mdx",
@@ -5892,7 +6042,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-09-23",
+    "lastReviewed": "2026-09-27",
     "canonicalUrl": null,
     "faqs": [
       {
@@ -14834,6 +14984,56 @@
       {
         "q": "Are parasites common in pet tiger salamanders?",
         "a": "Often carried by wild-caught feeders or wild-origin animals. A vet fecal exam is worth doing for peace of mind, especially given how commonly wild-caught stock shows up in this species' trade."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/tiger-salamander-legal-guide.mdx",
+    "slug": "tiger-salamander-legal-guide",
+    "title": "Is It Legal to Own a Tiger Salamander? Three Separate Rules Explained",
+    "seoTitle": "Tiger Salamander Legal Guide: Federal, Bait & State Rules",
+    "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species actually sits under three separate, unrelated legal regimes, and only one of them has anything to do with owning a pet.",
+    "date": "2026-09-26",
+    "category": "Legal",
+    "tags": [
+      "Tiger Salamander",
+      "Legal",
+      "Exotic Pet Laws",
+      "Amphibian Care",
+      "Lacey Act"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/tiger-salamander-legal.jpg",
+    "imageAlt": "Tiger salamander with yellow and black blotched pattern, representing its legal status",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-26",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Did the 2025 federal rule ban owning a pet tiger salamander?",
+        "a": "No. USFWS's own FAQ on the rule states plainly that the injurious-wildlife listing does not affect ownership and does not regulate the breeding, sale, purchase, or possession of listed species. Existing owners need to do nothing."
+      },
+      {
+        "q": "What does the federal rule actually restrict, then?",
+        "a": "Importing tiger salamanders into the US, and shipping them across what's called the shipment clause, between the continental US and Hawaii, Washington DC, Puerto Rico, or US territories. That's the entire practical effect."
+      },
+      {
+        "q": "Can I still legally ship or sell a tiger salamander to someone in another continental state?",
+        "a": "Yes. A 2017 D.C. Circuit ruling, USARK v. Zinke, held that the relevant Lacey Act provision doesn't reach interstate transport within the 49 continental states. Salamanders can be sold, traded, or purchased across state lines as long as they aren't crossing an international border or a shipment-clause line, subject to whatever your own state separately requires."
+      },
+      {
+        "q": "Are the bait-shop rules for tiger salamanders the same as pet ownership rules?",
+        "a": "No, and conflating them is a common mistake. States like Arizona, New Mexico, and California regulate tiger salamander larvae sold as fishing bait for disease and invasive-species reasons entirely separate from pet-keeping law. A study found ranaviruses in bait salamanders across Arizona, Colorado, and New Mexico, with a meaningful share of anglers releasing unused bait into fishing waters."
+      },
+      {
+        "q": "Is there a state where tiger salamanders are protected as native wildlife?",
+        "a": "Yes. The eastern tiger salamander is listed as state-endangered in New Jersey, meaning taking or possessing the wild native population there is independently prohibited under state endangered-species law, a third regime distinct from both the federal rule and bait regulations."
+      },
+      {
+        "q": "So is it actually legal to own a pet tiger salamander?",
+        "a": "In the vast majority of the country, yes. The federal listing, the bait-trade rules, and native-species protections are three separate things, and none of them amount to a general pet-ownership ban. Always check your own state's exotic-pet rules directly, since this guide covers the federal and cross-state pattern, not every state's individual statute."
       }
     ],
     "relatedProducts": []
