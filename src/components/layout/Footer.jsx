@@ -47,7 +47,7 @@ export default function Footer() {
             {
               title: "Encyclopedia",
               links: [
-                { to: '/encyclopedia/', label: 'Browse All' },
+                { to: '/encyclopedia/', label: 'Browse all animals' },
                 { to: '/guides/', label: 'Care Guides' },
                 { to: '/gear/', label: 'Recommended Gear' },
                 { to: '/categories/', label: 'All Categories' },

@@ -1,24 +1,18 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isLoadingAuth, setIsLoadingAuth] = useState(true);
+  // Starts false, not true: there's no real async check below yet (just a
+  // synchronous stub), so starting this true forced every client hydration to
+  // render a spinner-only tree first, then discard and rebuild the entire app
+  // a moment later - a full-tree remount on every single page load, and the
+  // root cause of an 8.5s mobile LCP and 0.908 desktop CLS. If real async
+  // login is added later, flip this back to true then.
+  const [isLoadingAuth, setIsLoadingAuth] = useState(false);
   const [authError, setAuthError] = useState(null);
-
-  // For now, we'll simulate a simple auth state
-  // You can expand this later when you add real login (Google, email, etc.)
-  useEffect(() => {
-    // Simulate checking if user is logged in
-    const checkAuth = () => {
-      setIsLoadingAuth(false);
-      setIsAuthenticated(false);
-    };
-
-    checkAuth();
-  }, []);
 
   const logout = () => {
     setUser(null);

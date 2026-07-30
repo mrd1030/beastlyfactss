@@ -50,7 +50,7 @@ async function generateThumbs() {
     for (const input of files) {
       const ext = path.extname(input);
       const baseName = path.basename(input, ext);
-      if (baseName.endsWith('-thumb') || baseName.endsWith('-card')) continue;
+      if (baseName.endsWith('-thumb') || baseName.endsWith('-card') || baseName.endsWith('-card@2x')) continue;
 
       const base = input.slice(0, -ext.length);
       const webpOut = `${base}-thumb.webp`;
@@ -75,24 +75,52 @@ async function generateThumbs() {
       }
 
       if (wantsCardVariant) {
-        const cardWebpOut = `${base}-card.webp`;
-        const cardJpgOut = `${base}-card.jpg`;
+        // Two tiers, not one: PageSpeed flagged the single 640x480 file as
+        // ~2-2.5x oversized for its actual ~315x236 (mobile) / ~274x206
+        // (desktop) display slot on DPR-1 screens - every visitor downloaded
+        // the sharp version whether their screen needed it or not. Now a
+        // 320x240 "-card" file is the 1x default (matches the real slot at
+        // DPR-1), and the original 640x480 becomes the "-card@2x" file,
+        // served via a 1x/2x density descriptor in LocalImage.jsx so only
+        // high-DPI screens pay for the larger download.
+        const card1xWebpOut = `${base}-card.webp`;
+        const card1xJpgOut = `${base}-card.jpg`;
+        const card2xWebpOut = `${base}-card@2x.webp`;
+        const card2xJpgOut = `${base}-card@2x.jpg`;
 
-        if (!(fs.existsSync(cardWebpOut) && fs.existsSync(cardJpgOut))) {
+        if (!(fs.existsSync(card1xWebpOut) && fs.existsSync(card1xJpgOut))) {
+          try {
+            await sharp(input)
+              .resize(320, 240, { fit: 'cover', withoutEnlargement: true })
+              .webp({ quality: 82 })
+              .toFile(card1xWebpOut);
+
+            await sharp(input)
+              .resize(320, 240, { fit: 'cover', withoutEnlargement: true })
+              .jpeg({ quality: 84 })
+              .toFile(card1xJpgOut);
+
+            count += 1;
+          } catch (error) {
+            console.warn(`Skipping ${path.basename(input)} (card 1x variant): ${error.message}`);
+          }
+        }
+
+        if (!(fs.existsSync(card2xWebpOut) && fs.existsSync(card2xJpgOut))) {
           try {
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
               .webp({ quality: 82 })
-              .toFile(cardWebpOut);
+              .toFile(card2xWebpOut);
 
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
               .jpeg({ quality: 84 })
-              .toFile(cardJpgOut);
+              .toFile(card2xJpgOut);
 
             count += 1;
           } catch (error) {
-            console.warn(`Skipping ${path.basename(input)} (card variant): ${error.message}`);
+            console.warn(`Skipping ${path.basename(input)} (card 2x variant): ${error.message}`);
           }
         }
       }

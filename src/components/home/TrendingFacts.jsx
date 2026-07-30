@@ -40,7 +40,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
           </div>
           <div className="hidden sm:flex items-center gap-4">
             <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
-              Browse all <ArrowRight className="w-3.5 h-3.5" />
+              Browse all facts <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <div className="flex gap-2">
               <button onClick={() => scroll(-1)} className="p-2 rounded-full bg-muted hover:bg-muted/80 transition-colors" aria-label="Scroll left">

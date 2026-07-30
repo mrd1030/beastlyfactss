@@ -16,13 +16,35 @@ const FRONT_LABEL = 'Reptiles';
 const BACK_LABEL = 'Legal';
 const MIDDLE_LABELS = ['Fish', 'Invertebrates', 'Small & Exotic Pets', 'Birds', 'Amphibians', 'Roundups', 'Turtles & Tortoises'];
 
-function shuffle(arr) {
+// Deterministic, not Math.random(): prerender.mjs captures whatever order
+// this produces at build time and ships it as static HTML, but a real
+// visitor's browser re-runs this component fresh on hydration - if the order
+// depends on Math.random(), the client's first render can't match what the
+// server sent, which is a genuine hydration mismatch (not just cosmetic
+// randomness), forcing React to discard and re-render the mismatched DOM.
+// Seeding by day-of-month means the same calendar day produces the same
+// order everywhere, matching the pattern HeroSection.jsx already uses for
+// its daily fact (`facts[new Date().getDate() % facts.length]`).
+function seededShuffle(arr, seed) {
   const a = [...arr];
+  let s = seed || 1;
+  const nextRandom = () => {
+    s = (s * 1103515245 + 12345) & 0x7fffffff;
+    return s / 0x7fffffff;
+  };
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(nextRandom() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+// Simple deterministic string hash, used to vary the preview-article seed
+// per category while keeping it stable for a given category+day pair.
+function hashString(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) & 0x7fffffff;
+  return h;
 }
 
 export default function CategoryBrowse() {
@@ -35,7 +57,7 @@ export default function CategoryBrowse() {
 
   // Reptiles pinned first, Legal pinned last, the rest shuffled - computed
   // once per mount so the row doesn't reshuffle on unrelated re-renders.
-  const order = useMemo(() => [FRONT_LABEL, ...shuffle(MIDDLE_LABELS), BACK_LABEL], []);
+  const order = useMemo(() => [FRONT_LABEL, ...seededShuffle(MIDDLE_LABELS, new Date().getDate()), BACK_LABEL], []);
 
   useEffect(() => {
     fetch('/articles.json')
@@ -48,7 +70,8 @@ export default function CategoryBrowse() {
   useEffect(() => {
     if (loading) return;
     const pool = articles.filter(a => a.category === selected);
-    setPreview(shuffle(pool).slice(0, 6));
+    const seed = new Date().getDate() + hashString(selected);
+    setPreview(seededShuffle(pool, seed).slice(0, 6));
   }, [selected, articles, loading]);
 
   const handleSelect = (label) => setSelected(label);
@@ -144,10 +167,9 @@ export default function CategoryBrowse() {
 
           <Link
             to="/blog/"
-            aria-label="More articles"
             className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-all"
           >
-            More <ArrowRight className="w-3.5 h-3.5" />
+            More Articles <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
@@ -174,8 +196,14 @@ export default function CategoryBrowse() {
             </div>
 
             {loading ? (
-              <div className="space-y-3">
-                {[...Array(4)].map((_, i) => (
+              // Matches the real grid's shape (grid sm:grid-cols-2, 6 cards) rather
+              // than a mismatched single-column stack - the server always ships the
+              // resolved real content (prerender.mjs waits for the fetch to settle),
+              // so a client visitor briefly sees this skeleton before the fetch
+              // resolves; keeping its shape close to the real layout minimizes the
+              // reflow when it swaps in, rather than eliminating a structural mismatch.
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[...Array(6)].map((_, i) => (
                   <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />
                 ))}
               </div>

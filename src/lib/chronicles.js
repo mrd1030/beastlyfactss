@@ -1,5 +1,3 @@
-import { mdxPosts } from '@/lib/mdxPosts';
-
 // Each series is identified by its slug prefix - story slugs are stable
 // ("chronicles-of-dex-...", "chronicles-of-otis-..."), so new parts published
 // in Sanity or dropped into content/short-story/ are picked up automatically
@@ -31,30 +29,9 @@ export const seriesForSlug = (slug) =>
 
 export const isChroniclesPost = (post) => Boolean(seriesForSlug(postSlug(post)));
 
-// MDX-sourced chronicle parts (Sanity-sourced ones are fetched at runtime by
-// the Chronicles page and merged with these).
-export const mdxChroniclesPosts = mdxPosts.filter(isChroniclesPost);
-
-// Group a combined post list into { [seriesId]: [part1, part2, ...] },
-// ordered by publish date so part numbers stay stable as new parts release.
-export function groupChronicles(posts) {
-  const bySeries = {};
-  for (const s of CHRONICLES_SERIES) bySeries[s.id] = [];
-  const seenSlugs = new Set();
-  for (const post of posts) {
-    const slug = postSlug(post);
-    // A story can briefly exist in both MDX and Sanity mid-migration - keep
-    // whichever copy appeared first (callers always spread MDX before Sanity).
-    if (seenSlugs.has(slug)) continue;
-    seenSlugs.add(slug);
-    const series = seriesForSlug(slug);
-    if (series) bySeries[series.id].push(post);
-  }
-  for (const id of Object.keys(bySeries)) {
-    bySeries[id].sort((a, b) => new Date(a.publishedAt || a.date || 0) - new Date(b.publishedAt || b.date || 0));
-  }
-  return bySeries;
-}
+// mdxChroniclesPosts / groupChronicles moved to chroniclesPosts.js - they need
+// mdxPosts.js (and its ~925KB mdx-meta.json), so only the Chronicles listing
+// page should pull those in. Everything in this file stays mdxPosts-free.
 
 // Canonical site paths: the series root is a landing page listing all parts;
 // individual stories read at /chronicles/<series>/<part>/.

@@ -5,6 +5,12 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
 
+// A single animated element, not <Link><motion.button>...</motion.button></Link> -
+// nesting a <button> inside an <a> is invalid HTML content-model nesting, and
+// Lighthouse's touch-target audit was flagging both as two overlapping,
+// zero-spacing tap targets occupying the same box.
+const MotionLink = motion(Link);
+
 export default function HeroSection({ onOpenFact }) {
   const dailyFact = facts[new Date().getDate() % facts.length];
   const [learned, setLearned] = useState(false);
@@ -90,25 +96,23 @@ export default function HeroSection({ onOpenFact }) {
 </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-4">
-              <Link to="/facts/">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
-                >
-                  🧠 Start with Verified Facts
-                  <ArrowRight className="w-4 h-4" />
-                </motion.button>
-              </Link>
-              <Link to="/encyclopedia/">
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
-                >
-                  📚 Browse the Encyclopedia
-                </motion.button>
-              </Link>
+              <MotionLink
+                to="/facts/"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
+              >
+                🧠 Start with Verified Facts
+                <ArrowRight className="w-4 h-4" />
+              </MotionLink>
+              <MotionLink
+                to="/encyclopedia/"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
+              >
+                📚 Browse the Encyclopedia
+              </MotionLink>
             </div>
 
             <p className="text-xs text-muted-foreground font-body max-w-md mx-auto text-center leading-relaxed">

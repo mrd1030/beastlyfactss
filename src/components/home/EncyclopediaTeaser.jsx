@@ -30,7 +30,7 @@ export default function EncyclopediaTeaser() {
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
-            Browse all <ArrowRight className="w-3.5 h-3.5" />
+            Browse all animals <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
 
