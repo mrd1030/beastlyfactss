@@ -85,7 +85,7 @@ export default function Footer() {
           <p className="text-[10px] text-muted-foreground font-body">
             © {year} BeastlyFacts.com - No animals were harmed in the making of this website. 🐾
           </p>
-          <p className="text-[10px] text-muted-foreground/60 font-body">
+          <p className="text-[10px] text-muted-foreground font-body">
             For educational purposes only. Not a substitute for professional veterinary advice. Always consult a qualified pet, exotic, or reptile veterinarian.
           </p>
         </div>

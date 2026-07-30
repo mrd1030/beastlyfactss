@@ -53,7 +53,7 @@ export default function EncyclopediaTeaser() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         width={320}
                         height={240}
-                        fullSize
+                        variant="card"
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-4xl">{cat.emoji}</div>

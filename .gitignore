@@ -54,3 +54,5 @@ ds-bundle/
 # generated local image thumbnails
 public/assets/**/*-thumb.jpg
 public/assets/**/*-thumb.webp
+public/assets/**/*-card.jpg
+public/assets/**/*-card.webp

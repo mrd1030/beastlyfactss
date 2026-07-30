@@ -56,7 +56,7 @@ export default function DexTeaser() {
                 <p className="text-sm text-muted-foreground font-body mb-3 leading-relaxed">
                   {series.blurb}
                 </p>
-                <Link to={chroniclesPath(series.id)} className="w-fit">
+                <Link to={chroniclesPath(series.id)} className="w-fit" aria-label={`Read the Chronicles of ${series.character}`}>
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}

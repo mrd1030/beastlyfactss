@@ -8,6 +8,7 @@ export default function LocalImage({
   width,
   height,
   fullSize = false,
+  variant,
   ...props
 }) {
   const [thumbFailed, setThumbFailed] = useState(false);
@@ -20,8 +21,13 @@ export default function LocalImage({
   const match = src.match(/\.(jpg|jpeg|png|webp)$/i);
   const ext = match?.[1]?.toLowerCase() || 'jpg';
   const base = src.replace(new RegExp(`\\.${ext}$`, 'i'), '');
-  const thumbWebp = `${base}-thumb.webp`;
-  const thumbJpg = `${base}-thumb.jpg`;
+  // 'card' = a larger 640x480 variant for ~320-380px photo-led cards
+  // (GuideSpotlight/EncyclopediaTeaser) - the default -thumb tier is a
+  // 240x240 square meant for small icon-sized slots and visibly blurs when
+  // upscaled to a 4:3 card that size.
+  const suffix = variant === 'card' ? '-card' : '-thumb';
+  const thumbWebp = `${base}${suffix}.webp`;
+  const thumbJpg = `${base}${suffix}.jpg`;
 
   if (thumbFailed) {
     return <img src={src} alt={alt} className={className} loading={loading} width={width} height={height} {...props} />;

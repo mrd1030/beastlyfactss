@@ -3,10 +3,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Metric-matched fallback faces for Fredoka/Nunito, which load async (see
+   the deferred stylesheet trick in index.html) - without these, the page
+   first paints with the browser's default sans-serif, then reflows when the
+   real webfont swaps in, since sans-serif's glyph widths/line metrics don't
+   match Fredoka/Nunito's. That reflow was the single largest contributor to
+   this site's Cumulative Layout Shift (0.176 of 0.195 total, mostly visible
+   in the footer). These faces alias to the same local Arial the fallback
+   would've used anyway, but with ascent/descent/line-gap/width overridden to
+   match the real font's actual metrics (computed directly from the Fredoka/
+   Nunito v17/v32 regular-weight font files vs the local Arial.ttf, not
+   guessed) - so the fallback already occupies the space the real font will,
+   and swapping in the real font causes little to no visible shift. */
+@font-face {
+  font-family: 'Fredoka Fallback';
+  src: local('Arial');
+  ascent-override: 93.76%;
+  descent-override: 22.72%;
+  line-gap-override: 0%;
+  size-adjust: 103.88%;
+}
+@font-face {
+  font-family: 'Nunito Fallback';
+  src: local('Arial');
+  ascent-override: 97.51%;
+  descent-override: 34.05%;
+  line-gap-override: 0%;
+  size-adjust: 103.68%;
+}
+
 @layer base {
   :root {
-    --font-display: 'Fredoka', sans-serif;
-    --font-body: 'Nunito', sans-serif;
+    --font-display: 'Fredoka', 'Fredoka Fallback', sans-serif;
+    --font-body: 'Nunito', 'Nunito Fallback', sans-serif;
 
     --background: 34 55% 96%;
     --foreground: 150 40% 10%;

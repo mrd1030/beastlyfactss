@@ -144,6 +144,7 @@ export default function CategoryBrowse() {
 
           <Link
             to="/blog/"
+            aria-label="More articles"
             className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-all"
           >
             More <ArrowRight className="w-3.5 h-3.5" />
