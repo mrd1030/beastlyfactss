@@ -10,6 +10,14 @@
 /blog/leopard-gecko-temps/ /blog/leopard-gecko-temperature-guide/ 301
 /blog/category/small-exotic-pets /blog/category/small-and-exotic-pets/ 301
 /blog/category/small-exotic-pets/ /blog/category/small-and-exotic-pets/ 301
+# product-picks was a Sanity-only category page. Sanity allowed several
+# categories per post and this was always a secondary one (5 posts carried it
+# alongside a primary like Pet Care or Birds); MDX has a single category field,
+# so those posts kept their primary and this listing page no longer generates.
+# Pointed at /gear/, the site's actual product-recommendation destination,
+# rather than left to 404.
+/blog/category/product-picks /gear/ 301
+/blog/category/product-picks/ /gear/ 301
 /blog/category/bird-care /blog/category/birds/ 301
 /blog/category/bird-care/ /blog/category/birds/ 301
 /blog/category/reptile-care /blog/category/reptiles/ 301

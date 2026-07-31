@@ -57,6 +57,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "african-fat-tail-feeding-guide",
+      "title": "African Fat-Tailed Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to actually tell that from real trouble.",
+      "date": "2026-07-31",
+      "image": "/assets/images/african-fat-tail-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "african-fat-tail-handling-guide",
       "title": "How to Handle an African Fat-Tailed Gecko Correctly",
       "excerpt": "African fat-tailed geckos are among the calmest, most genuinely handleable pet geckos available, often described as even more docile than their close cousin, the leopard gecko.",
@@ -121,11 +129,27 @@
       "category": "Birds"
     },
     {
+      "slug": "alpha-wolf-myth-what-the-research-actually-says",
+      "title": "The Alpha Wolf Myth: What the Research Says",
+      "excerpt": "The alpha wolf came from unrelated wolves in a zoo pen. Wild packs are just families, and the biologist who spread the idea spent decades taking it back.",
+      "date": "2026-08-13",
+      "image": "/assets/images/alpha-wolf-myth-what-the-research-actually-says.jpg",
+      "category": "Wild Animals"
+    },
+    {
       "slug": "angelfish-cost-guide",
       "title": "Angelfish Cost: Full Price Breakdown",
       "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
       "date": "2026-08-27",
       "image": "/assets/images/angelfish-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "angelfish-feeding-guide",
+      "title": "Angelfish Feeding Guide: Schedule and Diet",
+      "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
+      "date": "2026-07-31",
+      "image": "/assets/images/angelfish-feeding.jpg",
       "category": "Fish"
     },
     {
@@ -929,6 +953,22 @@
       "category": "Reptiles"
     },
     {
+      "slug": "crows-are-smarter-than-you-think-and-they-probably-already-know-it",
+      "title": "How Smart Are Crows? Crow Intelligence Explained",
+      "excerpt": "Crows recognize human faces, make their own tools, and hold grudges for generations. The science of crow intelligence is wilder than you think.",
+      "date": "2026-06-10",
+      "image": "/assets/images/crows-are-smarter-than-you-think-and-they-probably-already-know-it-0.png",
+      "category": "Fun Facts"
+    },
+    {
+      "slug": "do-dolphins-have-names-what-the-research-shows",
+      "title": "Do Dolphins Have Names? The Real Science",
+      "excerpt": "Bottlenose dolphins really do use something like names for each other. The research behind that claim is narrower, and more interesting, than the headline.",
+      "date": "2026-08-02",
+      "image": "/assets/images/do-dolphins-have-names-what-the-research-shows.jpg",
+      "category": "Aquatic Life"
+    },
+    {
       "slug": "dog-bloat-gdv-guide",
       "title": "Dog Bloat (GDV): Warning Signs to Know",
       "excerpt": "Bloat can kill a healthy dog within hours - the early signs, which breeds are most at risk, and why this is always a drive-to-the-vet-now emergency.",
@@ -1441,6 +1481,14 @@
       "category": "Small & Exotic Pets"
     },
     {
+      "slug": "hedgehogs-are-lactose-intolerant-despite-what-cartoons-show",
+      "title": "Do Hedgehogs Eat Dairy? Nope!",
+      "excerpt": "Hedgehogs are lactose intolerant — milk and cheese can cause serious digestive problems. Learn why dairy is dangerous for hedgehogs despite popular myth.",
+      "date": "2026-06-08",
+      "image": "/assets/images/hedgehogs-are-lactose-intolerant-despite-what-cartoons-show-0.png",
+      "category": "Pet Care"
+    },
+    {
       "slug": "hermit-crab-cost-guide",
       "title": "Hermit Crab Cost: Full Price Breakdown",
       "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
@@ -1511,6 +1559,30 @@
       "date": "2026-08-04",
       "image": "/assets/images/hognose-snake-tank-setup.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "honey-badgers-the-toughest-little-troublemakers-on-the-planet",
+      "title": "Honey Badger: The World's Most Fearless Animal",
+      "excerpt": "Meet the honey badger: Guinness World Records' most fearless animal, a venomous-snake-eating genius that punches way above its weight.",
+      "date": "2026-06-10",
+      "image": "/assets/images/honey-badgers-the-toughest-little-troublemakers-on-the-planet-0.png",
+      "category": "Fun Facts"
+    },
+    {
+      "slug": "how-dangerous-are-sharks-really",
+      "title": "How Dangerous Are Sharks? The Real Numbers",
+      "excerpt": "There were 65 unprovoked shark bites worldwide in 2025. In the same period, people killed roughly 80 million sharks. Here is what the data actually shows.",
+      "date": "2026-07-31",
+      "image": "/assets/images/how-dangerous-are-sharks-really.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "immortal-jellyfish-turritopsis-dohrnii-explained",
+      "title": "The Immortal Jellyfish: What It Actually Does",
+      "excerpt": "Turritopsis dohrnii really can reverse its life cycle and turn back into a polyp. What it cannot do is survive being eaten, and most of them are.",
+      "date": "2026-08-01",
+      "image": "/assets/images/immortal-jellyfish-turritopsis-dohrnii-explained.jpg",
+      "category": "Aquatic Life"
     },
     {
       "slug": "invertebrate-molting-guide",
@@ -1817,6 +1889,14 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "mantis-shrimp-16-color-vision-punch-power",
+      "title": "Mantis Shrimp: Vision & Punch Power",
+      "excerpt": "Mantis shrimp punch faster than a bullet and see colors humans can't imagine. The wild science behind their vision, strike, and love lives.",
+      "date": "2026-06-10",
+      "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.png",
+      "category": "Fun Facts"
+    },
+    {
       "slug": "milk-snake-cost-guide",
       "title": "Milk Snake Cost: Full Price Breakdown",
       "excerpt": "Milk snakes span a wide price range by subspecies and morph, $60 to $500 for the animal itself, but even the high end stays genuinely affordable next to many other pet reptiles.",
@@ -1857,6 +1937,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "mourning-gecko-feeding-guide",
+      "title": "Mourning Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own. Here's a real feeding schedule and why the numbers vary so much between care sheets.",
+      "date": "2026-07-31",
+      "image": "/assets/images/mourning-gecko-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "mourning-gecko-handling-guide",
       "title": "Mourning Gecko Handling: What to Actually Expect",
       "excerpt": "Mourning geckos are consistently described the same way across every serious care source: this is a look-but-don't-touch pet, not a handling species.",
@@ -1879,6 +1967,14 @@
       "date": "2026-07-25",
       "image": "/assets/images/mourning-gecko-tank-setup.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "narwhal-facts-the-real-unicorn-of-the-sea",
+      "title": "Narwhal Facts: The Truth Behind the Unicorn of the Sea",
+      "excerpt": "Narwhals are real, and they are stranger than fiction. Discover the Arctic whale behind the unicorn legend, its mysterious tusk, and more wild facts.",
+      "date": "2026-07-30",
+      "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg",
+      "category": "Aquatic Life"
     },
     {
       "slug": "neon-tetra-cost-guide",
@@ -1983,6 +2079,14 @@
       "date": "2026-08-09",
       "image": "/assets/images/pacman-frog-tank-setup.jpg",
       "category": "Amphibians"
+    },
+    {
+      "slug": "pangolins-the-most-trafficked-mammal-nobody-knows",
+      "title": "Pangolin Facts: The Most Trafficked Mammal",
+      "excerpt": "The pangolin has no teeth, a tongue anchored near its pelvis, and a stomach full of stones. It is also the most trafficked wild mammal on Earth.",
+      "date": "2026-08-01",
+      "image": "/assets/images/pangolins-the-most-trafficked-mammal-nobody-knows.jpg",
+      "category": "Wild Animals"
     },
     {
       "slug": "praying-mantis-cost-guide",
@@ -2209,6 +2313,14 @@
       "category": "Roundups"
     },
     {
+      "slug": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
+      "title": "10 Mind-Blowing Shark Facts You Won't Believe",
+      "excerpt": "Sharks predate trees by 65 million years, and that is just the start. Dive into 10 jaw-dropping shark facts that will change how you see the ocean.",
+      "date": "2026-07-31",
+      "image": "/assets/images/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind-0.jpg",
+      "category": "Aquatic Life"
+    },
+    {
       "slug": "snake-brumation-guide",
       "title": "Brumation in Pet Snakes Explained",
       "excerpt": "What brumation is, why most pet snake keepers can safely skip it, and how to cool a ball python or corn snake properly if you plan to breed.",
@@ -2377,6 +2489,46 @@
       "category": "Invertebrates"
     },
     {
+      "slug": "tardigrades-the-toughest-creatures-on-earth-and-in-space",
+      "title": "Tardigrades: The Nearly Indestructible Water Bears",
+      "excerpt": "Meet the tardigrade: a microscopic, eight-legged animal that has survived space, radiation, and very likely every mass extinction in Earth's history. Nature's ultimate survivor.",
+      "date": "2026-07-31",
+      "image": "/assets/images/tardigrades-the-toughest-creatures-on-earth-and-in-space-0.png",
+      "category": "Wild Animals"
+    },
+    {
+      "slug": "the-best-dog-toys-for-big-and-small-dogs-a-2026-guide",
+      "title": "Best Dog Toys for Big and Small Dogs",
+      "excerpt": "Size really matters with dog toys. Our 2026 guide picks the best toys for big and small dogs. Durability, safety, and mental stimulation.",
+      "date": "2026-06-04",
+      "image": "/assets/images/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide-0.jpg",
+      "category": "Pet Care"
+    },
+    {
+      "slug": "the-incredible-axolotl-nature-s-smiling-salamander",
+      "title": "Axolotl Care Guide: Nature's Smiling Salamander",
+      "excerpt": "Meet the axolotl — the smiling 'walking fish' that regenerates its own limbs and stays a baby forever. Why scientists adore this salamander.",
+      "date": "2026-05-23",
+      "image": "/assets/images/the-incredible-axolotl-nature-s-smiling-salamander-0.png",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "the-octopus-has-three-hearts-and-uses-all-of-them",
+      "title": "The Octopus With Three Hearts & Blue Blood",
+      "excerpt": "Did you know octopuses have three hearts and blue blood? These creatures are here to remind us nature is far stranger and more wonderful than we ever imagined.",
+      "date": "2026-06-08",
+      "image": "/assets/images/the-octopus-has-three-hearts-and-uses-all-of-them-0.png",
+      "category": "Wild Animals"
+    },
+    {
+      "slug": "the-platypus-natures-most-wonderfully-bizarre-mammal",
+      "title": "Platypus Facts: Nature's Bizarre Mammal",
+      "excerpt": "Egg-laying, venomous, and able to sense electricity; the platypus breaks every mammal rule. Meet nature's most wonderfully weird animal.",
+      "date": "2026-06-10",
+      "image": "/assets/images/the-platypus-natures-most-wonderfully-bizarre-mammal-0.png",
+      "category": "Fun Facts"
+    },
+    {
       "slug": "tiger-salamander-cost-guide",
       "title": "Tiger Salamander Cost: Full Price Breakdown",
       "excerpt": "Tiger salamanders are genuinely affordable, and the real budgeting story with this species is more about longevity than any single expensive line item.",
@@ -2447,6 +2599,14 @@
       "date": "2026-08-29",
       "image": "/assets/images/tokay-gecko-tank-setup.jpg",
       "category": "Reptiles"
+    },
+    {
+      "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
+      "title": "Ultimate Birdwatching Guide for Beginners (2026)",
+      "excerpt": "Ready to start birdwatching? This complete 2026 short guide covers the best locations, peak seasons, some gear, and tips.",
+      "date": "2026-06-01",
+      "image": "/assets/images/ultimate-birdwatching-guide-best-places-times-tips-2026-0.png",
+      "category": "Birds"
     },
     {
       "slug": "uromastyx-cost-guide",
@@ -2545,6 +2705,22 @@
       "category": "Reptiles"
     },
     {
+      "slug": "weirdest-creatures-deep-sea-facts-that-will-blow-your-mind",
+      "title": "Deep Sea Creatures: Anglerfish, Giant Squid & More",
+      "excerpt": "Dive into the ocean's darkest depths and meet the strangest animals on Earth, from glowing jellyfish to anglerfish with a shocking secret.",
+      "date": "2026-07-30",
+      "image": "/assets/images/weirdest-creatures-deep-sea-facts-that-will-blow-your-mind-0.jpg",
+      "category": "Aquatic Life"
+    },
+    {
+      "slug": "when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you",
+      "title": "Anxious Pet Behavior: What Pacing & Hiding Really Mean",
+      "excerpt": "Pacing, hiding, and other anxious pet habits are messages. Learn why pets develop anxiety and what actually helps them feel safe again.",
+      "date": "2026-06-27",
+      "image": "/assets/images/when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you-0.jpg",
+      "category": "Pet Care"
+    },
+    {
       "slug": "whites-tree-frog-cost-guide",
       "title": "White's Tree Frog Cost: Full Price Breakdown",
       "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
@@ -2575,6 +2751,70 @@
       "date": "2026-08-08",
       "image": "/assets/images/whites-tree-frog-tank-setup.jpg",
       "category": "Amphibians"
+    },
+    {
+      "slug": "why-axolotls-need-cold-clean-water",
+      "title": "Axolotl Water Quality: Keep It Cold and Clean",
+      "excerpt": "Axolotls are fully aquatic animals whose water is literally their entire world, making water quality the most important factor in their care.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-axolotls-need-cold-clean-water-0.jpg",
+      "category": "Amphibians"
+    },
+    {
+      "slug": "why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly",
+      "title": "Do Bearded Dragons Need UVB Lighting?",
+      "excerpt": "UVB lighting is not optional for bearded dragons, it's the difference between thriving and suffering. Why UVB matters and how to get it right.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly-0.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "why-cats-need-mental-enrichment-and-how-boredom-can-break-them",
+      "title": "Why Cats Need Mental Enrichment to Stay Happy",
+      "excerpt": "Cats are natural hunters who need more than food and naps to thrive. Discover how mental enrichment keeps your cat happy, healthy, and out of trouble.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-cats-need-mental-enrichment-and-how-boredom-can-break-them-0.jpg",
+      "category": "Cats"
+    },
+    {
+      "slug": "why-parrots-need-social-interaction-and-what-loneliness-does-to-them",
+      "title": "Why Parrots Need Social Interaction",
+      "excerpt": "Parrots are flock animals that need daily social time to stay healthy. What loneliness does to a parrot, and how to keep yours thriving.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-parrots-need-social-interaction-and-what-loneliness-does-to-them-0.jpg",
+      "category": "Birds"
+    },
+    {
+      "slug": "why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it",
+      "title": "Why Rabbits Need Unlimited Hay for Healthy Teeth",
+      "excerpt": "Hay is the most critical food in a rabbit's diet, it keeps ever-growing teeth worn down and digestion moving. What happens without it isn't pretty.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it-0.jpg",
+      "category": "Pet Care"
+    },
+    {
+      "slug": "why-wombats-produce-cube-shaped-droppings",
+      "title": "Why Wombat Droppings Are Cube Shaped: The Science",
+      "excerpt": "Wombat droppings really are cubes, and the popular explanation is wrong. There is no square sphincter. The real answer took a CT scanner and dissections.",
+      "date": "2026-08-02",
+      "image": "/assets/images/why-wombats-produce-cube-shaped-droppings.jpg",
+      "category": "Wild Animals"
+    },
+    {
+      "slug": "why-your-dog-needs-daily-exercise",
+      "title": "Why Dogs Need Daily Exercise (And What Happens If Not)",
+      "excerpt": "Find out why your dog needs daily exercise and what happens when they don't get enough. Learn tips to keep your dog healthy, happy, and well-behaved.",
+      "date": "2026-06-16",
+      "image": "/assets/images/why-your-dog-needs-daily-exercise-0.png",
+      "category": "Dogs"
+    },
+    {
+      "slug": "wolverine-facts-the-toughest-animal-pound-for-pound",
+      "title": "Wolverine Facts: The Toughest Animal Pound for Pound",
+      "excerpt": "Meet the wolverine: a ferocious, fearless mustelid that defends kills aggressively and can displace cougars. Discover the wild facts that make Gulo gulo one of the toughest animals on the planet.",
+      "date": "2026-07-31",
+      "image": "/assets/images/wolverine-facts-the-toughest-animal-pound-for-pound-0.png",
+      "category": "Wild Animals"
     },
     {
       "slug": "10-surprising-argentine-tegu-facts",

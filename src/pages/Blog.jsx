@@ -5,11 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ChevronDown, Clock, Search as SearchIcon, X } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
-import { client } from '@/lib/sanity';
-import { fetchCategories } from '@/lib/sanityCategories';
-import { urlFor } from '@/lib/sanityImage';
-import groq from 'groq';
-import PortableTextRenderer from '@/components/PortableTextRenderer';
+import { getCategoryBySlug } from '@/lib/data/categories';
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -24,7 +20,6 @@ import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
 import GlossaryHighlighter from '@/components/blog/GlossaryHighlighter';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
-import SanityImage from '@/components/SanityImage';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 import ProductCard from '@/components/shared/ProductCard';
@@ -33,21 +28,17 @@ import { AFFILIATE_PRODUCTS } from '@/lib/data/affiliateProducts';
 
 const POSTS_PER_PAGE = 10;
 
-// Finds a post by slug among the statically-available sources (MDX + local)
-// only - NOT Sanity, which requires a network fetch and can't be known
-// synchronously. Used to compute `selectedPost`'s initial state directly
-// instead of waiting for an effect: `routeSlug` is available synchronously
-// via useParams() on the very first render, and mdxPosts/localPosts are
-// static imports, so there's no reason a statically-sourced post should
+// Finds a post by slug among the statically-available sources (MDX + local),
+// which is now every source this page has. Used to compute `selectedPost`'s
+// initial state directly instead of waiting for an effect: `routeSlug` is
+// available synchronously via useParams() on the very first render, and
+// mdxPosts/localPosts are static imports, so there's no reason a post should
 // wait for anything. Before this, `selectedPost` always started `null`
 // (only ever set inside a useEffect), which mismatched prerender.mjs's
 // fully-settled capture - React's hydration-critical first render would try
 // to show the blog LISTING view while the prerendered HTML already showed
 // the POST DETAIL view for that URL, a structural mismatch severe enough to
 // discard and rebuild the whole page (confirmed directly on an MDX post).
-// Sanity-sourced individual posts still have this residual mismatch, since
-// their data genuinely isn't available before the fetch resolves - same
-// known limitation as Chronicles' Sanity-sourced stories.
 function findStaticPost(postParam) {
   if (!postParam) return null;
   const allStatic = [
@@ -55,8 +46,6 @@ function findStaticPost(postParam) {
       ...post,
       _id: post.id,
       publishedAt: post.date,
-      mainImage: null,
-      categorySlug: null,
     })),
     ...mdxPosts,
   ];
@@ -66,32 +55,14 @@ function findStaticPost(postParam) {
     ...match,
     _id: match._id || match.id,
     publishedAt: match.publishedAt || match.date,
-    mainImage: match.mainImage || null,
   };
 }
-
-const ALL_POSTS_QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
-  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime, animalType,
-  body[]{
-    ...,
-    _type == "productRecommendation" => {
-      ...,
-      productRef->{productName, category, retailer, affiliateUrl, imageUrl}
-    }
-  },
-  "category": categories[0]->title,
-  "categorySlug": categories[0]->slug.current,
-  "allCategories": categories[]->title,
-  "allCategorySlugs": categories[]->slug.current
-}`;
 
 export default function Blog() {
   const navigate = useNavigate();
   const location = useLocation();
   const { slug: routeSlug, catSlug } = useParams();
 
-  const [sanityPosts, setSanityPosts] = useState([]);
-  const [sanityCategories, setSanityCategories] = useState([]);
   const [activeCategory, setActiveCategory] = useState('All');
   // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
   // search box) pre-fills the filter on first render, not just live typing.
@@ -103,30 +74,6 @@ export default function Blog() {
   });
   const [page, setPage] = useState(1);
   const listRef = useRef(null);
-
-  // Sanity supplies a small minority of posts here (order of a few dozen)
-  // against several hundred local/MDX posts that are already statically
-  // available with no fetch at all - allPosts below merges sanityPosts in
-  // as a supplement, and already works fine with it empty. A failed or slow
-  // Sanity fetch used to null out the whole page behind a full "couldn't
-  // load articles" error, taking down browsing of every MDX post over a
-  // hiccup in a data source most of the page doesn't depend on. Just log it
-  // and let the page render with whatever's available instead.
-  useEffect(() => {
-    const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
-    Promise.race([
-      Promise.all([
-        client.fetch(ALL_POSTS_QUERY),
-        fetchCategories(),
-      ]),
-      timeout,
-    ]).then(([posts, cats]) => {
-      setSanityPosts(posts);
-      setSanityCategories(cats);
-    }).catch((err) => {
-      console.error('Failed to fetch Sanity posts/categories:', err);
-    });
-  }, []);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(location.search);
@@ -147,36 +94,13 @@ export default function Blog() {
         return;
       }
 
-      const allPostsList = [
-        ...sanityPosts,
-        ...localPosts.map(post => ({
-          ...post,
-          _id: post.id,
-          publishedAt: post.date,
-          mainImage: null,
-          categorySlug: null,
-        })),
-        ...mdxPosts,
-      ];
-
-      const match = allPostsList.find(p => 
-        p.slug?.current === postParam || p._id === postParam
-      );
-
-      if (match) {
-        setSelectedPost({
-          ...match,
-          _id: match._id || match.id,
-          publishedAt: match.publishedAt || match.date,
-          mainImage: match.mainImage || null,
-        });
-      } else {
-        setSelectedPost(null);
-      }
+      // Same static lookup the lazy useState init above uses - every post the
+      // blog can show is a static import now, so there's nothing to wait for.
+      setSelectedPost(findStaticPost(postParam));
     } else {
       setSelectedPost(null);
     }
-  }, [location.search, routeSlug, catSlug, sanityPosts]);
+  }, [location.search, routeSlug, catSlug]);
 
   // Free-text filtering is client-side only (not URL-synced) - reset back to
   // page 1 whenever the query changes so a stale deep page doesn't render empty.
@@ -187,13 +111,10 @@ export default function Blog() {
   // Chronicles short stories live on their own page (/chronicles/) - keep
   // them out of the listing, category pills, and sidebars entirely.
   const allPosts = [
-    ...sanityPosts.filter(p => !isChroniclesPost(p)),
     ...localPosts.map(post => ({
       ...post,
       _id: post.id,
       publishedAt: post.date,
-      mainImage: null,
-      categorySlug: null,
     })),
     ...mdxPosts.filter(p => !isChroniclesPost(p)),
   ]
@@ -221,10 +142,11 @@ export default function Blog() {
     return true;
   });
 
-  // Count non-Sanity posts per category slug
-  const sanityCategorySlugs = new Set(sanityCategories.map(c => slugify(c.title)));
-  const extraPostCounts = new Map(); // counts for Sanity categories from local/MDX posts
-  const extraCategoryMap = new Map(); // new categories only in local/MDX posts
+  // Category pills are derived straight from the posts that exist, so a pill
+  // only ever appears for a category that actually has something to browse.
+  // Display titles come from categories.js when the slug is a known category
+  // (the site-wide canonical label), falling back to the post's own string.
+  const categoryMap = new Map();
 
   [...localPosts, ...mdxPosts.filter(p => !isChroniclesPost(p))].forEach(post => {
     const cats = post.allCategories?.length ? post.allCategories
@@ -233,28 +155,19 @@ export default function Blog() {
       const s = slugify(cat);
       // 'site-news' was retired as a category - /blog/category/site-news/
       // 301s to the welcome post itself (see public/_redirects), so don't
-      // render a pill that links straight into a redirect.
-      if (s === 'site-news') return;
-      if (sanityCategorySlugs.has(s)) {
-        extraPostCounts.set(s, (extraPostCounts.get(s) || 0) + 1);
-      } else {
-        if (!extraCategoryMap.has(s)) extraCategoryMap.set(s, { title: cat, slug: s, count: 0 });
-        extraCategoryMap.get(s).count += 1;
+      // render a pill that links straight into a redirect. 'short-stories'
+      // is how chronicle posts used to be tagged (before chronicle detection
+      // moved to slug-prefix matching) and shouldn't get a pill either, now
+      // that those stories render on /chronicles/ instead of in the blog.
+      if (s === 'site-news' || s === 'short-stories') return;
+      if (!categoryMap.has(s)) {
+        categoryMap.set(s, { title: getCategoryBySlug(s)?.label || cat, slug: s, count: 0 });
       }
+      categoryMap.get(s).count += 1;
     });
   });
 
-  // "Short Stories" stays a real Sanity category (it's how chronicle posts used to be
-  // tagged, before chronicle detection moved to slug-prefix matching), but its pill
-  // shouldn't appear here now that the stories render on /chronicles/ instead of in the blog.
-  const enrichedSanityCategories = sanityCategories
-    .filter(c => c.slug !== 'short-stories')
-    .map(c => ({
-      ...c,
-      count: c.count + (extraPostCounts.get(slugify(c.title)) || 0),
-    }));
-
-  const mdxCategories = Array.from(extraCategoryMap.values()).sort((a, b) => a.title.localeCompare(b.title));
+  const categories = Array.from(categoryMap.values()).sort((a, b) => a.title.localeCompare(b.title));
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
   const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
@@ -389,18 +302,7 @@ export default function Blog() {
             >
               All
             </Link>
-            {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
-              <Link
-                key={cat._id}
-                to={`/blog/category/${cat.slug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
-                  slugify(activeCategory) === slugify(cat.title) ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {cat.title} <span className="opacity-60">({cat.count})</span>
-              </Link>
-            ))}
-            {mdxCategories.map(cat => (
+            {categories.map(cat => (
               <Link
                 key={cat.slug}
                 to={`/blog/category/${cat.slug}/`}
@@ -461,17 +363,11 @@ export default function Blog() {
               <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">Start reading →</span>
             </Link>
 
-            {(enrichedSanityCategories.filter(c => c.count > 0).length > 0 || mdxCategories.length > 0) && (
+            {categories.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
-                  {enrichedSanityCategories.filter(c => c.count > 0).map(cat => (
-                    <Link key={cat._id} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
-                      <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
-                      <span className="text-muted-foreground">{cat.count}</span>
-                    </Link>
-                  ))}
-                  {mdxCategories.map(cat => (
+                  {categories.map(cat => (
                     <Link key={cat.slug} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="text-foreground group-hover:text-secondary transition-colors font-semibold">{cat.title}</span>
                       <span className="text-muted-foreground">{cat.count}</span>
@@ -537,26 +433,22 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
   }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
-  // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
+  // Dedicated frontmatter SEO fields win; excerpt/title/image are the fallbacks.
   const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
-  // Truncated as a safety net - CMS fields (seoDescription/excerpt) are
-  // hand-written and usually already a good length, but nothing upstream
+  // Truncated as a safety net - frontmatter fields (seoDescription/excerpt)
+  // are hand-written and usually already a good length, but nothing upstream
   // enforces that, so a too-long field would otherwise ship straight to
   // the meta tag uncut.
   const postDescription = truncateDescription(post.seoDescription || post.excerpt || `Read ${post.title} on Beastly Facts - in-depth reptile and exotic pet care from the Critter Digest.`);
-  const ogImageSource = post.seoImage || post.mainImage;
-  // Sanity images are always cropped to exactly 1200x630 below, and the hero
-  // fallback is also 1200x630 - only a raw post.image asset has a real size
-  // that can differ, so og:image:width/height must be looked up per-image
-  // rather than left at a fixed default (Helmet has no way to "unset" a tag,
-  // so a wrong declared size would otherwise silently persist from whichever
-  // page rendered last).
-  const ogImage = ogImageSource
-    ? urlFor(ogImageSource).width(1200).height(630).fit('crop').url()
-    : post.image
-      ? `https://beastlyfacts.com${post.image}`
-      : 'https://beastlyfacts.com/assets/hero-1200.jpg';
-  const ogImageDims = (!ogImageSource && post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
+  // The hero fallback is exactly 1200x630, but a real post.image asset has
+  // its own size, so og:image:width/height must be looked up per-image rather
+  // than left at a fixed default (Helmet has no way to "unset" a tag, so a
+  // wrong declared size would otherwise silently persist from whichever page
+  // rendered last).
+  const ogImage = post.image
+    ? `https://beastlyfacts.com${post.image}`
+    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  const ogImageDims = (post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
   const relatedProducts = (post.relatedProducts || [])
     .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
     .filter(Boolean);
@@ -573,7 +465,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
     // defaults hidden and upgrades post-mount to dodge the same hydration
     // hazard - see the displayDate state above.
     "datePublished": displayDate ? post.publishedAt : '',
-    "dateModified": post._updatedAt || (displayDate ? post.publishedAt : ''),
+    "dateModified": displayDate ? post.publishedAt : '',
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
     "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
@@ -657,17 +549,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               {post.excerpt}
             </p>
 
-            {/* Featured Image using SanityImage */}
-            {post.mainImage ? (
-              <div className="mb-10">
-                <SanityImage
-                  image={post.mainImage}
-                  alt={post.title}
-                  width={1200}
-                  className="w-full rounded-2xl shadow-lg"
-                />
-              </div>
-            ) : post.image ? (
+            {/* Featured image */}
+            {post.image ? (
               <div className="mb-10">
                 <img
                   src={post.image}
@@ -681,8 +564,6 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
             <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
-              ) : post.body ? (
-                <PortableTextRenderer content={post.body} />
               ) : (
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
@@ -734,9 +615,14 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
 
             <PostEngagement postId={post._id || post.id} postTitle={post.title} postSlug={post.slug?.current || post.id} />
 
-            {post.body && (
-              <YouMayAlsoLike currentPostId={post._id} categorySlug={post.categorySlug} onSelectPost={onSelectPost} />
-            )}
+            {/* Not gated on post.body any more: that was a Sanity-only field,
+                so gating on it after the MDX migration would have silently
+                dropped this section from every post on the site. */}
+            <YouMayAlsoLike
+              currentPostId={post._id || post.id}
+              categorySlug={post.categorySlug || post.category}
+              onSelectPost={onSelectPost}
+            />
           </div>
 
           <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">

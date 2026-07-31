@@ -1,13 +1,12 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useNavigate } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { Search as SearchIcon, X } from 'lucide-react';
-import { client } from '@/lib/sanity';
-import { fetchCategories } from '@/lib/sanityCategories';
-import groq from 'groq';
 import { CATEGORIES } from '@/lib/data/categories';
+import { mdxPosts } from '@/lib/mdxPosts';
+import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { base44 } from '@/api/base44Client';
 import { searchLocalContent } from '@/lib/localSearch';
@@ -40,67 +39,61 @@ function LocalResultRow({ result }) {
   );
 }
 
-const SEARCH_QUERY = groq`*[_type == "post" && defined(slug.current) && (
-  title match $q ||
-  excerpt match $q ||
-  $q in tags
-)] | order(publishedAt desc) {
-  _id, title, slug, excerpt, mainImage, publishedAt, readTime,
-  "category": categories[0]->title,
-  "categorySlug": categories[0]->slug.current,
-  "tags": tags
-}`;
+// Blog posts are MDX-only now, so the searchable set is a static import that
+// resolves synchronously and identically on both sides of hydration - no
+// fetch, no loading state, no empty first render to mismatch against.
+// Chronicles stories are excluded here for the same reason Blog.jsx and
+// localSearch.js exclude them: they read at /chronicles/, not in the blog.
+const searchablePosts = mdxPosts.filter(p => !isChroniclesPost(p));
 
+const matchesQuery = (post, q) =>
+  [post.title, post.excerpt, ...(post.tags || [])]
+    .some(text => typeof text === 'string' && text.toLowerCase().includes(q));
+
+// "Short Stories" is a real category on MDX posts, but /blog/category/short-stories/
+// 301s to /chronicles/ (see public/_redirects, mirrored in prerender.mjs), so
+// it isn't a blog category anyone should be sent to browse.
+const BROWSE_CATEGORIES = CATEGORIES.filter(c => c.slug !== 'short-stories');
 
 export default function Search() {
   const navigate = useNavigate();
   const urlParams = new URLSearchParams(window.location.search);
   const [query, setQuery] = useState(urlParams.get('q') || '');
-  const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [sort, setSort] = useState('relevance');
   const [activeCategory, setActiveCategory] = useState('');
-  const [sanityCategories, setSanityCategories] = useState([]);
+  // Sticky once a real query has been entered, exactly like the ref it
+  // replaces - but as state, since results are derived during render now and
+  // nothing else re-renders this component when the flag flips.
+  const [hasSearched, setHasSearched] = useState(Boolean(urlParams.get('q')));
   const debounceRef = useRef(null);
-  const hasSearched = useRef(false);
 
-  const runSearch = useCallback((q) => {
-    if (!q.trim()) { setResults([]); setLoading(false); return; }
-    setLoading(true);
-    client.fetch(SEARCH_QUERY, { q: `*${q}*` })
-      .then(data => { setResults(data); setLoading(false); })
-      .catch(() => setLoading(false));
-  }, []);
-
-  // Load Sanity categories on mount
-  useEffect(() => {
-    fetchCategories().then(cats => setSanityCategories(cats.filter(c => c.count > 0))).catch(() => {});
-  }, []);
-
-  // Run on mount if ?q= param present
-  useEffect(() => {
-    if (query) { runSearch(query); hasSearched.current = true; }
-  }, []);
+  // Newest-first to match the old `| order(publishedAt desc)` query, so the
+  // default "relevance" sort (deliberately a no-op) keeps the same ordering.
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return [];
+    return searchablePosts
+      .filter(p => matchesQuery(p, q))
+      .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+  }, [query]);
 
   const handleInput = (val) => {
     setQuery(val);
+    if (val.trim()) setHasSearched(true);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       const url = new URL(window.location);
       if (val) url.searchParams.set('q', val); else url.searchParams.delete('q');
       window.history.replaceState({}, '', url);
-      runSearch(val);
       if (val.trim()) {
         base44.analytics.track({ eventName: 'search_performed', properties: { query: val } });
-        hasSearched.current = true;
       }
     }, 400);
   };
 
   // Safe matching internally using slugify
   const filtered = results.filter(p =>
-    !activeCategory || 
-    slugify(p.categorySlug) === slugify(activeCategory) || 
+    !activeCategory ||
     slugify(p.category) === slugify(activeCategory) ||
     (p.tags || []).some(t => slugify(t) === slugify(activeCategory))
   );
@@ -111,11 +104,14 @@ export default function Search() {
     return sort === 'newest' ? db - da : da - db;
   });
 
-  // Guides/encyclopedia/glossary/MDX articles live in static data, not Sanity,
-  // so they need their own client-side match - the query above only ever
-  // searches Sanity-native blog posts, never the 200+ MDX articles at /blog/.
+  // Care guides, encyclopedia entries and glossary terms aren't blog posts, so
+  // they get their own compact match list above the article results.
+  // localResults.articles is deliberately NOT spread in: it searches the same
+  // MDX posts `results` already covers (capped at 6, without images, dates,
+  // category filtering or sorting), so including it would list every article
+  // match twice.
   const localResults = useMemo(() => searchLocalContent(query), [query]);
-  const localResultsFlat = [...localResults.articles, ...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
+  const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
 
   return (
     <div className="min-h-screen">
@@ -156,7 +152,7 @@ export default function Search() {
                 className="w-full bg-card border border-border rounded-2xl pl-12 pr-12 py-3.5 text-base font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground shadow-sm"
               />
               {query && (
-                <button onClick={() => { setQuery(''); setResults([]); }} className="absolute right-4 top-1/2 -translate-y-2 p-2 -m-2">
+                <button onClick={() => setQuery('')} className="absolute right-4 top-1/2 -translate-y-2 p-2 -m-2">
                   <X className="w-4 h-4 text-muted-foreground hover:text-foreground" />
                 </button>
               )}
@@ -170,7 +166,7 @@ export default function Search() {
         {query.trim() && localResultsFlat.length > 0 && (
           <div className="mb-6">
             <p className="text-sm font-body text-muted-foreground mb-3">
-              {`${localResultsFlat.length} article${localResultsFlat.length !== 1 ? 's' : ''}, guide${localResultsFlat.length !== 1 ? 's' : ''} & reference match${localResultsFlat.length !== 1 ? 'es' : ''} for "${query}"`}
+              {`${localResultsFlat.length} guide${localResultsFlat.length !== 1 ? 's' : ''} & reference match${localResultsFlat.length !== 1 ? 'es' : ''} for "${query}"`}
             </p>
             <div className="space-y-2">
               {localResultsFlat.map(result => (
@@ -189,7 +185,7 @@ export default function Search() {
             >
               All
             </button>
-            {CATEGORIES.filter(c => results.some(r => slugify(r.categorySlug) === slugify(c.slug) || slugify(r.category) === slugify(c.slug) || (r.tags || []).some(t => slugify(t) === slugify(c.slug)))).map(c => (
+            {CATEGORIES.filter(c => results.some(r => slugify(r.category) === slugify(c.slug) || (r.tags || []).some(t => slugify(t) === slugify(c.slug)))).map(c => (
               <button
                 key={c.slug}
                 onClick={() => setActiveCategory(activeCategory === c.slug ? '' : c.slug)}
@@ -202,10 +198,10 @@ export default function Search() {
         )}
 
         {/* Sort + count */}
-        {hasSearched.current && query && (
+        {hasSearched && query && (
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm font-body text-muted-foreground">
-              {loading ? 'Searching…' : `${sorted.length} result${sorted.length !== 1 ? 's' : ''} for "${query}"`}
+              {`${sorted.length} result${sorted.length !== 1 ? 's' : ''} for "${query}"`}
             </p>
             {results.length > 1 && (
               <div className="flex gap-2">
@@ -220,15 +216,8 @@ export default function Search() {
           </div>
         )}
 
-        {/* Loading */}
-        {loading && (
-          <div className="space-y-3">
-            {[...Array(4)].map((_, i) => <div key={i} className="h-20 bg-muted rounded-xl animate-pulse" />)}
-          </div>
-        )}
-
         {/* Results */}
-        {!loading && sorted.length > 0 && (
+        {sorted.length > 0 && (
           <div className="space-y-3">
             {sorted.map((post, i) => (
               <motion.div key={post._id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
@@ -242,7 +231,7 @@ export default function Search() {
         )}
 
         {/* Empty state */}
-        {!loading && hasSearched.current && query && sorted.length === 0 && localResultsFlat.length === 0 && (
+        {hasSearched && query && sorted.length === 0 && localResultsFlat.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">😔</span>
             <p className="font-display font-bold text-foreground text-lg">No results found</p>
@@ -265,28 +254,20 @@ export default function Search() {
         )}
 
         {/* Pre-search state - Browse popular categories */}
-        {!loading && !hasSearched.current && (
+        {!hasSearched && (
           <div className="py-8">
             <p className="text-sm font-body text-muted-foreground mb-4">Browse popular categories:</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {(sanityCategories.length > 0 ? sanityCategories : CATEGORIES).map(c => {
-                const local = CATEGORIES.find(lc => lc.slug === c.slug || lc.label?.toLowerCase() === c.title?.toLowerCase());
-                const emoji = local?.emoji || '🐾';
-                const label = c.title || local?.label || c.slug;
-                
-                const cleanSlug = slugify(c.slug || label);
-
-                return (
-                  <Link 
-                    key={c.slug || label} 
-                    to={`/blog/category/${cleanSlug}/`}
-                    className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
-                  >
-                    <span className="text-xl">{emoji}</span>
-                    <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{label}</span>
-                  </Link>
-                );
-              })}
+              {BROWSE_CATEGORIES.map(c => (
+                <Link
+                  key={c.slug}
+                  to={`/blog/category/${c.slug}/`}
+                  className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
+                >
+                  <span className="text-xl">{c.emoji}</span>
+                  <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{c.label}</span>
+                </Link>
+              ))}
             </div>
           </div>
         )}

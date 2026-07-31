@@ -36,15 +36,6 @@ export default defineConfig({
         // Targeted chunking to prevent circular dependency loops 🎯
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            // Keep Sanity separate (it's heavy and only used on content pages).
-            // @sanity/eventsource's own dependency (event-source-polyfill) hoists
-            // to top-level node_modules, so its id has no "sanity" substring and
-            // must be matched explicitly - otherwise it silently falls through to
-            // the generic 'vendor' chunk below and ships on every single page,
-            // even though nothing here ever calls Sanity's realtime .listen() API.
-            if (id.includes('sanity') || id.includes('@sanity') || id.includes('portabletext') || id.includes('event-source-polyfill')) {
-              return 'sanity-vendor';
-            }
             // Keep Stripe separate (only used for packs/donations)
             if (id.includes('stripe') || id.includes('@stripe')) {
               return 'stripe-vendor';

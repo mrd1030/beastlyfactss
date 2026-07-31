@@ -58,3 +58,7 @@ public/assets/**/*-card.jpg
 public/assets/**/*-card.webp
 public/assets/**/*-card@2x.jpg
 public/assets/**/*-card@2x.webp
+
+# Sanity CMS, migrated to MDX (see _sanity-archive/scripts/sanity-to-mdx.mjs).
+# Kept locally as a rollback path, not tracked.
+_sanity-archive/

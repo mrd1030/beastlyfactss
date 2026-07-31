@@ -1,57 +1,31 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft, ArrowRight, BookOpen, Clock } from 'lucide-react';
-import groq from 'groq';
-import { client } from '@/lib/sanity';
 import { CHRONICLES_SERIES, chroniclesPath } from '@/lib/chronicles';
 import { mdxChroniclesPosts, groupChronicles } from '@/lib/chroniclesPosts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { getDisplayDate } from '@/lib/utils/date';
-import PortableTextRenderer from '@/components/PortableTextRenderer';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
-import SanityImage from '@/components/SanityImage';
 import PostEngagement from '@/components/blog/PostEngagement';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import LocalImage from '@/components/shared/LocalImage';
 
-// Matched by slug prefix, not category tag - a chronicles post is identified by its
-// stable "chronicles-of-<character>" slug (see src/lib/chronicles.js), so this can't
-// silently break if the "Short Stories" category gets renamed/re-slugged in Sanity.
-const STORY_QUERY = groq`*[_type == "post" && defined(slug.current) && slug.current match "chronicles-of-*"] | order(publishedAt asc) {
-  _id, title, slug, excerpt, seoTitle, seoDescription, seoImage, mainImage, publishedAt, readTime,
-  body[]{
-    ...,
-    _type == "productRecommendation" => {
-      ...,
-      productRef->{productName, category, retailer, affiliateUrl, imageUrl}
-    }
-  }
-}`;
-
 // Story titles all start with "Chronicles of <character>:" - the sidebar and
 // cards drop that prefix so the episode name is what stands out.
 const episodeTitle = (title) => title?.replace(/^Chronicles of [^:]+:\s*/i, '') || title;
 
+// Every chronicle part is an MDX file now, so the grouping is fully static -
+// computed once at module scope instead of per render. Parts are matched by
+// slug prefix, not category tag: a chronicles post is identified by its stable
+// "chronicles-of-<character>" slug (see src/lib/chronicles.js).
+const bySeries = groupChronicles(mdxChroniclesPosts);
+
 export default function Chronicles() {
   const { seriesId, part: partParam } = useParams();
-  const [sanityStories, setSanityStories] = useState([]);
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    client.fetch(STORY_QUERY)
-      .then(posts => setSanityStories(posts || []))
-      .catch(() => {})
-      .finally(() => setLoaded(true));
-  }, []);
-
-  const bySeries = useMemo(
-    () => groupChronicles([...mdxChroniclesPosts, ...sanityStories]),
-    [sanityStories]
-  );
 
   // /chronicles/ has no content of its own - Dex is the flagship series, so
   // it acts as the default tab (mirrored by a 301 in public/_redirects).
@@ -90,7 +64,7 @@ export default function Chronicles() {
         <link rel="canonical" href={canonicalUrl} />
         {/* A part index beyond what exists (stale link) renders a soft "not
             yet written" state - keep those out of the index. */}
-        <meta name="robots" content={isReader && loaded && !story ? 'noindex,follow' : 'index,follow'} />
+        <meta name="robots" content={isReader && !story ? 'noindex,follow' : 'index,follow'} />
         <meta property="og:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -140,12 +114,7 @@ export default function Chronicles() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
             {!isReader ? (
-              <SeriesLanding series={series} parts={parts} loaded={loaded} />
-            ) : !loaded && !story ? (
-              <div className="text-center py-20">
-                <span className="text-4xl block mb-3 animate-pulse">{series.emoji}</span>
-                <p className="text-sm text-muted-foreground font-body">Fetching the story…</p>
-              </div>
+              <SeriesLanding series={series} parts={parts} />
             ) : !story ? (
               <div className="text-center py-20">
                 <span className="text-4xl block mb-3">🪶</span>
@@ -185,7 +154,7 @@ export default function Chronicles() {
 
 // Landing view: the series' stories listed as cards, newest-reader-friendly
 // order (Part 1 first - it's fiction, start at the beginning).
-function SeriesLanding({ series, parts, loaded }) {
+function SeriesLanding({ series, parts }) {
   return (
     <div>
       <div className="mb-6">
@@ -197,9 +166,9 @@ function SeriesLanding({ series, parts, loaded }) {
 
       {parts.length === 0 ? (
         <div className="text-center py-16">
-          <span className="text-4xl block mb-3 animate-pulse">{series.emoji}</span>
+          <span className="text-4xl block mb-3">{series.emoji}</span>
           <p className="text-sm text-muted-foreground font-body">
-            {loaded ? 'No stories here yet - check back soon!' : 'Fetching the stories…'}
+            No stories here yet - check back soon!
           </p>
         </div>
       ) : (
@@ -237,9 +206,7 @@ function StoryCard({ story, seriesId, part, index }) {
         className="flex gap-4 items-start bg-card border border-border rounded-2xl p-4 hover:border-secondary/40 hover:shadow-md transition-all group"
       >
         <div className="w-24 h-16 sm:w-32 sm:h-20 flex-shrink-0 overflow-hidden rounded-lg bg-muted">
-          {story.mainImage ? (
-            <SanityImage image={story.mainImage} alt={story.title} width={300} className="w-full h-full object-cover" />
-          ) : story.image ? (
+          {story.image ? (
             <LocalImage src={story.image} alt={story.imageAlt || story.title} className="w-full h-full object-cover" loading="lazy" />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-2xl">📖</div>
@@ -361,21 +328,15 @@ function StoryReader({ story, part }) {
         {story.title}
       </h2>
 
-      {story.mainImage ? (
-        <div className="mb-8">
-          <SanityImage image={story.mainImage} alt={story.title} width={1200} className="w-full rounded-2xl shadow-lg" />
-        </div>
-      ) : story.image ? (
+      {story.image ? (
         <div className="mb-8">
           <img src={story.image} alt={story.imageAlt || story.title} className="w-full rounded-2xl shadow-lg" loading="lazy" />
         </div>
       ) : null}
 
       <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
-        {story.source === 'mdx' && story.content ? (
+        {story.content ? (
           <MdxArticleBody slug={story.slug.current} components={MdxComponents} loadingLabel="Loading story…" />
-        ) : story.body ? (
-          <PortableTextRenderer content={story.body} />
         ) : null}
       </div>
     </motion.article>

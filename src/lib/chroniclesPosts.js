@@ -12,8 +12,9 @@ import { CHRONICLES_SERIES, seriesForSlug, isChroniclesPost } from '@/lib/chroni
 
 const postSlug = (post) => post?.slug?.current || post?.slug || post?._id || post?.id;
 
-// MDX-sourced chronicle parts (Sanity-sourced ones are fetched at runtime by
-// the Chronicles page and merged with these).
+// Every chronicle part, all MDX. (Chronicles used to also be fetchable from
+// Sanity at runtime and merged in here; Sanity has since been removed and its
+// content migrated to MDX, so this is now the single source.)
 export const mdxChroniclesPosts = mdxPosts.filter(isChroniclesPost);
 
 // Group a combined post list into { [seriesId]: [part1, part2, ...] },
@@ -24,8 +25,9 @@ export function groupChronicles(posts) {
   const seenSlugs = new Set();
   for (const post of posts) {
     const slug = postSlug(post);
-    // A story can briefly exist in both MDX and Sanity mid-migration - keep
-    // whichever copy appeared first (callers always spread MDX before Sanity).
+    // Defensive dedupe by slug: everything is MDX now, so duplicates would
+    // mean two files claiming the same slug. Keep the first and skip the rest
+    // rather than rendering a part twice.
     if (seenSlugs.has(slug)) continue;
     seenSlugs.add(slug);
     const series = seriesForSlug(slug);

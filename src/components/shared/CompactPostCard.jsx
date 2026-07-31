@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Clock, Calendar } from 'lucide-react';
-import SanityImage from '@/components/SanityImage';
 import LocalImage from '@/components/shared/LocalImage';
 import { getDisplayDate } from '@/lib/utils/date';
 
@@ -31,16 +30,7 @@ export default function CompactPostCard({ post, onClick }) {
       className="flex items-start gap-3 bg-card border border-border rounded-xl p-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
     >
       {/* Image */}
-      {post.mainImage ? (
-        <div className="w-20 h-14 flex-shrink-0 overflow-hidden rounded-lg">
-          <SanityImage 
-            image={post.mainImage} 
-            alt={post.title}
-            width={160}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ) : post.image ? (
+      {post.image ? (
         <div className="w-20 h-14 flex-shrink-0 overflow-hidden rounded-lg">
           <LocalImage
             src={post.image}

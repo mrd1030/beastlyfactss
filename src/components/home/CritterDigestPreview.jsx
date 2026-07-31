@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { client } from '@/lib/sanity';
-import groq from 'groq';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 
 import { blogPosts as localPosts } from '@/lib/data/newsletters';
@@ -13,30 +11,8 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 // prerender.mjs's capture always reflects the post-fetch state.
 import articlesIndex from '@/lib/generated/articles-index.json';
 
-const QUERY = groq`*[_type == "post" && defined(slug.current)] | order(publishedAt desc) {
-  _id, title, slug, excerpt, mainImage, publishedAt, readTime,
-  "category": categories[0]->title,
-  "categorySlug": categories[0]->slug.current
-}`;
-
 export default function CritterDigestPreview() {
-  // Starts empty and merges in via a normal effect-driven update after mount.
-  // Skipped during prerendering: prerender.mjs's networkidle0 wait means this
-  // fetch always resolves before capture, so the static HTML would show
-  // sanityPosts merged into the sorted, sliced top-5 list - not just
-  // different text, but a genuinely different SET of posts (different keys,
-  // links, images) than a real client's hydration-time first render, which
-  // always starts at sanityPosts=[]. That's a structural mismatch (confirmed
-  // via a direct hydration test), not a patchable leaf-level difference.
-  const [sanityPosts, setSanityPosts] = useState([]);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (window.__IS_PRERENDER__) return;
-    client.fetch(QUERY)
-      .then(data => setSanityPosts(data))
-      .catch(() => {});
-  }, []);
 
   // Helper to safely get slug as string
   const getSlug = (post) => {
@@ -46,16 +22,20 @@ export default function CritterDigestPreview() {
     return post._id || post.id || '';
   };
 
-  // Merge, normalize, and sort
+  // Merge, normalize, and sort. Every source here is a static import, so this
+  // list is identical during prerendering and at hydration time. (It used to
+  // also merge in effect-fetched CMS posts, which made the prerendered top-5 a
+  // genuinely different SET of posts - different keys, links, images - than a
+  // real client's hydration-time first render, which always started from an
+  // empty array. That structural mismatch is gone with the fetch.)
   const allPosts = [
-    ...sanityPosts,
     ...localPosts.map(post => ({
       ...post,
       _id: post.id || post._id,
       publishedAt: post.date,
       mainImage: null,
       categorySlug: null,
-      slug: { current: getSlug(post) }   // normalize to same shape as Sanity
+      slug: { current: getSlug(post) }   // normalize to the { current } shape the cards expect
     })),
     ...articlesIndex.articles.map(post => ({
       ...post,

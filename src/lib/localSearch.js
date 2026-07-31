@@ -1,6 +1,7 @@
-// Client-side search over the site's static data (guides, encyclopedia, glossary,
-// and MDX blog/guide articles) - none of these are in Sanity, so Search.jsx's
-// Sanity query alone never surfaces them.
+// Client-side search over the site's non-article static data (care guides,
+// encyclopedia entries, glossary terms). Blog/guide articles are searched
+// separately in Search.jsx straight from mdxPosts, so they are deliberately
+// not duplicated here.
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { CATEGORIES as GLOSSARY_CATEGORIES } from '@/lib/data/glossaryTerms';

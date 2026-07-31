@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Menu, X, Moon, Sun, ChevronDown, Instagram, Search } from 'lucide-react';
 import { useDarkMode } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
-import { fetchCategories } from '@/lib/sanityCategories';
+import { CATEGORIES } from '@/lib/data/categories';
 import MobileBackButton from './MobileBackButton';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
@@ -29,14 +29,12 @@ const getSecondaryLinkClass = (isActive) => {
   }`;
 };
 
-// Helper function to turn category names into clean synchronized hyphens
-const slugify = (text) => {
-  if (!text) return '';
-  return text
-    .toLowerCase()
-    .replace(/ & /g, '-')
-    .replace(/ /g, '-');
-};
+// Critter Digest categories come straight from the local taxonomy - the whole
+// navbar mounts on every page, so it must not pull in the MDX metadata module
+// (src/lib/generated/mdx-meta.json is ~1MB) just to count posts per category.
+// "Short Stories" is dropped because /blog/category/short-stories/ 301s to
+// /chronicles/ (public/_redirects, mirrored in prerender.mjs).
+const DIGEST_CATEGORIES = CATEGORIES.filter(c => c.slug !== 'short-stories');
 
 function XLogo({ className }) {
   return (
@@ -85,16 +83,11 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [digestOpen, setDigestOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [navCategories, setNavCategories] = useState([]);
   const location = useLocation();
   const navigate = useNavigate();
-  
+
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
-
-  useEffect(() => {
-    fetchCategories().then(cats => setNavCategories(cats.filter(c => c.count > 0))).catch(() => {});
-  }, []);
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 20);
@@ -302,14 +295,14 @@ export default function Navbar() {
                     <Link to="/blog/" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
                       All Articles
                     </Link>
-                    {navCategories.map(cat => (
+                    {DIGEST_CATEGORIES.map(cat => (
                       <Link
-                        key={cat._id}
+                        key={cat.slug}
                         to={`/blog/category/${cat.slug}/`}
-                        onClick={handleMenuNav} 
+                        onClick={handleMenuNav}
                         className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
                       >
-                        {cat.title}
+                        {cat.label}
                       </Link>
                     ))}
                   </div>
