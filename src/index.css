@@ -3,33 +3,80 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Metric-matched fallback faces for Fredoka/Nunito, which load async (see
-   the deferred stylesheet trick in index.html) - without these, the page
-   first paints with the browser's default sans-serif, then reflows when the
-   real webfont swaps in, since sans-serif's glyph widths/line metrics don't
-   match Fredoka/Nunito's. That reflow was the single largest contributor to
-   this site's Cumulative Layout Shift (0.176 of 0.195 total, mostly visible
-   in the footer). These faces alias to the same local Arial the fallback
-   would've used anyway, but with ascent/descent/line-gap/width overridden to
-   match the real font's actual metrics (computed directly from the Fredoka/
-   Nunito v17/v32 regular-weight font files vs the local Arial.ttf, not
-   guessed) - so the fallback already occupies the space the real font will,
-   and swapping in the real font causes little to no visible shift. */
+/* Fredoka/Nunito, self-hosted (public/fonts/*.woff2, both variable fonts
+   covering their whole weight range in one file each) and preloaded in
+   index.html for the specific weights the hero renders above the fold.
+   font-display: optional means a visitor either gets the real font on first
+   paint with no swap at all (the preload almost always wins the ~100ms
+   window a same-origin file gets), or - only if they somehow miss that
+   window - keeps the metric-matched fallback below for the rest of this
+   page view rather than swapping late and shifting the layout. Previously
+   loaded from Google Fonts with display:swap (always swaps, correct font,
+   but the swap itself was the site's #1 CLS contributor - up to 0.85 on
+   desktop, concentrated entirely in the hero) or display:optional without
+   preloading (no shift, but silently stuck on the fallback for effectively
+   every visitor, since nothing was racing to win the window in time). */
+@font-face {
+  font-family: 'Fredoka';
+  src: url('/fonts/fredoka-var.woff2') format('woff2-variations'), url('/fonts/fredoka-var.woff2') format('woff2');
+  font-weight: 300 700;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/nunito-var.woff2') format('woff2-variations'), url('/fonts/nunito-var.woff2') format('woff2');
+  font-weight: 200 1000;
+  font-display: optional;
+}
+
+/* Metric-matched fallback faces, for the rare page view that misses the
+   preload window above. These alias to local Arial/Arial Bold, with
+   ascent/descent/size-adjust overridden to match Fredoka/Nunito's ACTUAL
+   metrics - computed and empirically verified (via real Canvas measureText
+   comparisons against the real font files, not estimated) separately per
+   weight bucket, not reused from one weight for all of them. That distinction
+   matters: a single generic override tuned against the regular (400) weight
+   file measurably under/over-fits a bold (600/700) heading, since bold
+   glyphs widen by a different amount in Fredoka/Nunito than they do in
+   Arial - the previous single-override version of this file left exactly
+   that gap, which was the real reason the "metric-matched" fallback still
+   produced a large shift on the hero heading (font-bold/700) even though it
+   looked correct for regular-weight body text. */
 @font-face {
   font-family: 'Fredoka Fallback';
   src: local('Arial');
-  ascent-override: 93.76%;
-  descent-override: 22.72%;
+  font-weight: 300 500;
+  ascent-override: 96.67%;
+  descent-override: 23.42%;
   line-gap-override: 0%;
-  size-adjust: 103.88%;
+  size-adjust: 100.76%;
+}
+@font-face {
+  font-family: 'Fredoka Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT'), local('Arial');
+  font-weight: 501 700;
+  ascent-override: 102.56%;
+  descent-override: 24.85%;
+  line-gap-override: 0%;
+  size-adjust: 94.96%;
 }
 @font-face {
   font-family: 'Nunito Fallback';
   src: local('Arial');
-  ascent-override: 97.51%;
-  descent-override: 34.05%;
+  font-weight: 200 500;
+  ascent-override: 100.61%;
+  descent-override: 35.13%;
   line-gap-override: 0%;
-  size-adjust: 103.68%;
+  size-adjust: 100.49%;
+}
+@font-face {
+  font-family: 'Nunito Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT'), local('Arial');
+  font-weight: 501 1000;
+  ascent-override: 103.36%;
+  descent-override: 36.09%;
+  line-gap-override: 0%;
+  size-adjust: 97.81%;
 }
 
 @layer base {
