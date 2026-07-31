@@ -57,6 +57,14 @@
       "category": "Reptiles"
     },
     {
+      "slug": "african-fat-tail-feeding-guide",
+      "title": "African Fat-Tailed Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to actually tell that from real trouble.",
+      "date": "2026-07-31",
+      "image": "/assets/images/african-fat-tail-feeding.jpg",
+      "category": "Reptiles"
+    },
+    {
       "slug": "african-fat-tail-handling-guide",
       "title": "How to Handle an African Fat-Tailed Gecko Correctly",
       "excerpt": "African fat-tailed geckos are among the calmest, most genuinely handleable pet geckos available, often described as even more docile than their close cousin, the leopard gecko.",
@@ -126,6 +134,14 @@
       "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
       "date": "2026-08-27",
       "image": "/assets/images/angelfish-cost.jpg",
+      "category": "Fish"
+    },
+    {
+      "slug": "angelfish-feeding-guide",
+      "title": "Angelfish Feeding Guide: Schedule and Diet",
+      "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
+      "date": "2026-07-31",
+      "image": "/assets/images/angelfish-feeding.jpg",
       "category": "Fish"
     },
     {
@@ -1854,6 +1870,14 @@
       "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
       "date": "2026-07-25",
       "image": "/assets/images/mourning-gecko-cost.jpg",
+      "category": "Reptiles"
+    },
+    {
+      "slug": "mourning-gecko-feeding-guide",
+      "title": "Mourning Gecko Feeding Guide: Schedule and Diet",
+      "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own. Here's a real feeding schedule and why the numbers vary so much between care sheets.",
+      "date": "2026-07-31",
+      "image": "/assets/images/mourning-gecko-feeding.jpg",
       "category": "Reptiles"
     },
     {

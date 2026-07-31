@@ -322,6 +322,61 @@
     ]
   },
   {
+    "path": "/content/guides/african-fat-tail-feeding-guide.mdx",
+    "slug": "african-fat-tail-feeding-guide",
+    "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "African Fat-Tailed Gecko Feeding Guide: Schedule and Diet",
+    "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to actually tell that from real trouble.",
+    "date": "2026-07-31",
+    "category": "Reptiles",
+    "tags": [
+      "African Fat-Tailed Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/african-fat-tail-feeding.jpg",
+    "imageAlt": "African fat-tailed gecko eating a gut-loaded cricket",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-31",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my African fat-tailed gecko?",
+        "a": "Hatchlings eat daily. Beyond that, sources genuinely disagree, some treat juveniles as needing daily feeding distinct from adults, others lump juveniles and adults together at about 3 times a week. Adult frequency itself ranges from 3 times a week to a condition-based schedule where a gecko with a visibly fat tail eats only every 5 days. Let tail thickness guide you more than any single number."
+      },
+      {
+        "q": "How much should I feed at each meal?",
+        "a": "Roughly 2 appropriately sized bugs per inch of the gecko's body length, or simply as much as it eats in about 15 minutes. Prey should be no wider than the space between the gecko's eyes."
+      },
+      {
+        "q": "How often should I dust with calcium?",
+        "a": "Most hobbyist care sheets say every feeding with plain, phosphorus-free calcium. One veterinary clinic source is slightly less strict, at least 3 times a week. A calcium and D3 combo is generally used just once or twice a week on top of that."
+      },
+      {
+        "q": "Why has my African fat-tailed gecko stopped eating?",
+        "a": "A seasonal appetite drop in fall and winter is common in adults, juveniles typically keep eating normally through it. Breeding season in females, shedding, and stress from a new environment are other normal explanations. An enclosure that isn't warm enough can trigger a false brumation response even outside the normal season."
+      },
+      {
+        "q": "How long can this species safely go without eating?",
+        "a": "No source gives one universal number, and that's honest, the tail's fat reserve, which can hold close to half the gecko's body mass, lets healthy adults fast for weeks to even several months without harm. What matters is tail thickness and behavior, not a day count, a tail that's genuinely thinner than the neck, not just less plump, is the real warning sign."
+      },
+      {
+        "q": "What insects should never be fed to this species?",
+        "a": "Ladybugs, fireflies, monarch butterflies, box elder bugs, centipedes, bees, and wasps are all specifically flagged by an exotics vet source, generally because they're wild-caught or contain toxins. Only feed captive-bred, farmed insects, never wild-caught ones."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-6oz",
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ]
+  },
+  {
     "path": "/content/guides/african-fat-tail-handling-guide.mdx",
     "slug": "african-fat-tail-handling-guide",
     "title": "How to Handle an African Fat-Tailed Gecko",
@@ -796,6 +851,58 @@
       "angelfish-tank-tetra-55-gallon",
       "angelfish-medication-seachem-metroplex"
     ]
+  },
+  {
+    "path": "/content/guides/angelfish-feeding-guide.mdx",
+    "slug": "angelfish-feeding-guide",
+    "title": "Angelfish Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Angelfish Feeding Guide: Schedule and Diet",
+    "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
+    "date": "2026-07-31",
+    "category": "Fish",
+    "tags": [
+      "Angelfish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/angelfish-feeding.jpg",
+    "imageAlt": "Angelfish feeding on flakes near the water's surface",
+    "emoji": "🐠",
+    "lastReviewed": "2026-07-31",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my angelfish?",
+        "a": "Adults once or twice a day, offering only a pinch of food at a time and letting them clear it within 2 to 5 minutes before removing anything left over. Juveniles eat more often, 2 to 3 times a day, to support faster growth."
+      },
+      {
+        "q": "What should the bulk of an angelfish's diet be?",
+        "a": "A high-quality flake, generally preferred over pellets for this species, with regular protein supplementation at least twice a week, bloodworms, brine shrimp, daphnia, and mysis shrimp are all good options."
+      },
+      {
+        "q": "Is tubifex worm safe to feed?",
+        "a": "Only from a reputable cultured or commercial source, never wild-collected. Wild tubifex and blackworms carry real parasite and disease risk, commercially cultured or frozen versions are treated as fine by the same sources that warn against wild ones."
+      },
+      {
+        "q": "Why has my angelfish stopped eating?",
+        "a": "New-tank stress is the most common normal cause, expect refusal for the first 2 to 4 days after a move. Poor water quality, territorial stress from tankmates, and simple pickiness about an unfamiliar food are other explanations. A sunken belly despite normal eating can actually signal a stomach parasite common in this fish's family."
+      },
+      {
+        "q": "How long can an angelfish go without eating?",
+        "a": "Sources genuinely blur two different numbers here, survival capability versus a responsible recommended maximum. One guide says they can survive up to two weeks but recommends one week as the real maximum, others put the generally-fine window around 7 to 10 days. Refusal beyond about 4 to 5 days, or any refusal paired with a sunken belly, is worth acting on."
+      },
+      {
+        "q": "Why is a sunken belly a warning sign even if my angelfish is still eating?",
+        "a": "A specific stomach parasite common in cichlids, the family angelfish belong to, can cause a fish to keep eating voraciously while still losing significant weight and developing a sunken belly. Appetite alone isn't a reliable health check for this species."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/angelfish-handling-guide.mdx",
@@ -11664,6 +11771,62 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "bioactive-substrate-mix",
       "crested-gecko-diet-pangea-watermelon-complete-8oz"
+    ]
+  },
+  {
+    "path": "/content/guides/mourning-gecko-feeding-guide.mdx",
+    "slug": "mourning-gecko-feeding-guide",
+    "title": "Mourning Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Mourning Gecko Feeding Guide: Schedule and Diet",
+    "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own. Here's a real feeding schedule and why the numbers vary so much between care sheets.",
+    "date": "2026-07-31",
+    "category": "Reptiles",
+    "tags": [
+      "Mourning Gecko",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Parthenogenesis"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/mourning-gecko-feeding.jpg",
+    "imageAlt": "Mourning gecko licking powdered gecko diet from a wall-mounted feeding cup",
+    "emoji": "🦎",
+    "lastReviewed": "2026-07-31",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my mourning gecko?",
+        "a": "This is genuinely inconsistent across care sheets, some recommend keeping powdered gecko diet essentially always available, others say 2 to 4 times a week on a set rotation, and one retailer's own care sheet even builds in 2 fasting days a week. Insects land anywhere from once to three times weekly depending on the source. Treat it as a real range, not one settled number."
+      },
+      {
+        "q": "Why does a single pet mourning gecko still need consistent calcium?",
+        "a": "Because every mourning gecko is female and reproduces by parthenogenesis, a lone pet with no companion at all still lays a pair of eggs roughly every 4 to 6 weeks, year-round. Egg production never really pauses, so calcium demand is constant rather than seasonal, even for an unbred gecko."
+      },
+      {
+        "q": "Is powdered diet alone nutritionally enough long-term?",
+        "a": "Most retail sources treat it as a workable staple, but at least one independent care sheet is more cautious, saying it's hard to say for certain it's adequate long-term on its own, especially for growing juveniles. Pairing it with regular gut-loaded, calcium-dusted insects is the safer approach either way."
+      },
+      {
+        "q": "Why has my mourning gecko stopped eating?",
+        "a": "Stress from being freshly brought home is the single most commonly cited reason, give a new gecko several days to about a week of quiet before expecting normal feeding. Shedding and ongoing egg production in females are other normal explanations. A cold room is a real, fixable cause, this species isn't meant to be deliberately cooled the way some other reptiles are."
+      },
+      {
+        "q": "How long can a mourning gecko go without eating?",
+        "a": "A short dip of a few days, especially right after a move or around a shed, is normal. Appetite loss stretching beyond about a week is the point to check husbandry first, temperature, humidity, prey size, then see a reptile-experienced vet if it doesn't resolve."
+      },
+      {
+        "q": "What foods are actually dangerous for mourning geckos?",
+        "a": "Wild-caught insects, for pesticide and parasite risk, and citrus fruit are specifically flagged. Don't offer prey wider than the gecko's own head, and skip baby food and unsupplemented feeder-only diets, neither provides adequate long-term nutrition."
+      }
+    ],
+    "relatedProducts": [
+      "crested-gecko-diet-pangea-watermelon-complete-8oz",
+      "calcium-repashy-superfoods-plus-4oz"
     ]
   },
   {
