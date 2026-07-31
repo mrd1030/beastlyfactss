@@ -207,7 +207,7 @@ export default function Gear() {
               </p>
               <Link
                 to="/guides/"
-                className="inline-flex items-center gap-1 text-sm font-display font-semibold text-secondary hover:underline"
+                className="inline-flex items-center gap-1 text-sm font-display font-semibold text-secondary hover:underline p-2 -m-2"
               >
                 Browse care guides <ChevronRight className="w-3.5 h-3.5" />
               </Link>

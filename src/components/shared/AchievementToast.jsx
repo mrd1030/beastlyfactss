@@ -38,7 +38,7 @@ export default function AchievementToast() {
               <Link
                 to="/pack"
                 onClick={dismissCurrentToast}
-                className="text-xs font-body text-secondary hover:underline"
+                className="text-xs font-body text-secondary hover:underline inline-block p-1.5 -m-1.5"
               >
                 Check out your pack! →
               </Link>

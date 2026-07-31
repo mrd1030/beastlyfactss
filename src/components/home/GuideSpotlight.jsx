@@ -38,7 +38,7 @@ export default function GuideSpotlight() {
               Detailed, research-backed guides for pets
             </p>
           </div>
-          <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
+          <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             All guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
@@ -99,7 +99,7 @@ export default function GuideSpotlight() {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/guides/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
+          <Link to="/guides/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2">
             All care guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

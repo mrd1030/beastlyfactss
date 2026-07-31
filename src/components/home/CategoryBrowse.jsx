@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight, Search as SearchIcon } from 'lucide-react';
@@ -61,15 +61,30 @@ export default function CategoryBrowse() {
   const [searchInput, setSearchInput] = useState('');
   const navigate = useNavigate();
 
-  // Reptiles pinned first, Legal pinned last, the rest shuffled - computed
-  // once per mount so the row doesn't reshuffle on unrelated re-renders.
-  const order = useMemo(() => [FRONT_LABEL, ...seededShuffle(MIDDLE_LABELS, new Date().getDate()), BACK_LABEL], []);
+  // Fixed on the hydration-critical first render, not new Date().getDate()
+  // computed inline: prerender.mjs bakes in whatever day it happens to build
+  // on, and this page isn't rebuilt daily, so a real visitor hydrating on a
+  // later day than the last deploy would derive a different seed than what's
+  // baked into the static HTML - reshuffling both the category chip order and
+  // the preview articles, a structural mismatch severe enough to make React
+  // discard hydration and re-render the whole root (see HeroSection.jsx's
+  // dailyFact for the same fix, same reasoning). Upgraded to the real day
+  // right after mount, skipped during prerendering itself.
+  const [daySeed, setDaySeed] = useState(1);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDaySeed(new Date().getDate());
+  }, []);
+
+  // Reptiles pinned first, Legal pinned last, the rest shuffled - recomputed
+  // only when daySeed upgrades post-mount, not on unrelated re-renders.
+  const order = useMemo(() => [FRONT_LABEL, ...seededShuffle(MIDDLE_LABELS, daySeed), BACK_LABEL], [daySeed]);
 
   const preview = useMemo(() => {
     const pool = articlesIndex.articles.filter(a => a.category === selected);
-    const seed = new Date().getDate() + hashString(selected);
+    const seed = daySeed + hashString(selected);
     return seededShuffle(pool, seed).slice(0, 6);
-  }, [selected]);
+  }, [selected, daySeed]);
 
   const handleSelect = (label) => setSelected(label);
 
@@ -185,7 +200,7 @@ export default function CategoryBrowse() {
               </h3>
               <Link
                 to={`/blog/category/${selectedSlug}/`}
-                className="flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0"
+                className="flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
               >
                 View More <ArrowRight className="w-3.5 h-3.5" />
               </Link>

@@ -70,7 +70,7 @@ export default function BeehiivSubscribe() {
           <div className="bg-card border border-border rounded-3xl p-8 max-w-sm w-full text-center relative">
             <button
               onClick={() => setSuccess(false)}
-              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
+              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground p-2 -m-2"
             >
               <X className="w-5 h-5" />
             </button>

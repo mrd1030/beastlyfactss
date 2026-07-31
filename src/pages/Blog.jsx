@@ -15,7 +15,7 @@ import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { truncateDescription } from '@/lib/utils/truncate';
-import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
+import { getDisplayDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
@@ -102,9 +102,16 @@ export default function Blog() {
     return findStaticPost(postParam);
   });
   const [page, setPage] = useState(1);
-  const [fetchError, setFetchError] = useState(false);
   const listRef = useRef(null);
 
+  // Sanity supplies a small minority of posts here (order of a few dozen)
+  // against several hundred local/MDX posts that are already statically
+  // available with no fetch at all - allPosts below merges sanityPosts in
+  // as a supplement, and already works fine with it empty. A failed or slow
+  // Sanity fetch used to null out the whole page behind a full "couldn't
+  // load articles" error, taking down browsing of every MDX post over a
+  // hiccup in a data source most of the page doesn't depend on. Just log it
+  // and let the page render with whatever's available instead.
   useEffect(() => {
     const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000));
     Promise.race([
@@ -116,7 +123,9 @@ export default function Blog() {
     ]).then(([posts, cats]) => {
       setSanityPosts(posts);
       setSanityCategories(cats);
-    }).catch(() => setFetchError(true));
+    }).catch((err) => {
+      console.error('Failed to fetch Sanity posts/categories:', err);
+    });
   }, []);
 
   useEffect(() => {
@@ -306,21 +315,6 @@ export default function Blog() {
     );
   }
 
-  if (fetchError) {
-    return (
-      <div className="min-h-screen flex items-center justify-center px-4">
-        <div className="text-center">
-          <span className="text-4xl mb-3 block">😿</span>
-          <h2 className="font-display font-bold text-xl text-foreground mb-2">Couldn't load articles</h2>
-          <p className="text-sm text-muted-foreground font-body mb-4">Something went wrong fetching the blog. Please try again.</p>
-          <button onClick={() => window.location.reload()} className="text-sm font-display font-semibold text-secondary hover:underline">
-            Refresh
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   const shouldNoindex = hasNoindexStateParams(location.search);
   const catTitle = catSlug
     ? catSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
@@ -380,7 +374,7 @@ export default function Blog() {
               className="w-full bg-card border border-border rounded-xl pl-10 pr-9 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
             />
             {search && (
-              <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2">
+              <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-2 p-2 -m-2">
                 <X className="w-4 h-4 text-muted-foreground hover:text-foreground" />
               </button>
             )}
@@ -528,6 +522,19 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
   const [openFaq, setOpenFaq] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
+  // getDisplayDate() compares publishedAt against the live "now" clock, so a
+  // future-scheduled post's own permalink page prerenders with the date span
+  // hidden - once the real world catches up to that date without a redeploy,
+  // a real visitor's hydration-time render would compute a shown span where
+  // prerendered HTML has none, a structural mismatch (same class of bug fixed
+  // in HeroSection.jsx/TrendingFacts.jsx/CategoryBrowse.jsx). Default to
+  // hidden (matching what a prerender pass always captures, since the effect
+  // below is a no-op there) and reveal post-mount for real clients only.
+  const [displayDate, setDisplayDate] = useState('');
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDisplayDate(getDisplayDate(post.publishedAt));
+  }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated CMS SEO fields win; excerpt/title/mainImage are the fallbacks.
@@ -561,8 +568,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
     "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
-    "datePublished": getDisplayIsoDate(post.publishedAt),
-    "dateModified": post._updatedAt || getDisplayIsoDate(post.publishedAt),
+    // Derived from displayDate (not a direct getDisplayIsoDate() call) so this
+    // stays consistent with the visible date span below, which already
+    // defaults hidden and upgrades post-mount to dodge the same hydration
+    // hazard - see the displayDate state above.
+    "datePublished": displayDate ? post.publishedAt : '',
+    "dateModified": post._updatedAt || (displayDate ? post.publishedAt : ''),
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
     "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
@@ -605,7 +616,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
         <meta property="og:image:width" content={String(ogImageDims.width)} />
         <meta property="og:image:height" content={String(ogImageDims.height)} />
         <meta property="og:image:alt" content={post.title} />
-        {getDisplayIsoDate(post.publishedAt) && <meta property="article:published_time" content={getDisplayIsoDate(post.publishedAt)} />}
+        {displayDate && <meta property="article:published_time" content={post.publishedAt} />}
         {post.category && <meta property="article:section" content={post.category} />}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={post.seoTitle || post.title} />
@@ -618,7 +629,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6">
+            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
 
@@ -628,9 +639,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
                 {post.category || 'Article'}
               </span>
-              {getDisplayDate(post.publishedAt) && (
+              {displayDate && (
                 <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                  <Clock className="w-3 h-3" />{getDisplayDate(post.publishedAt)}
+                  <Clock className="w-3 h-3" />{displayDate}
                 </span>
               )}
               {post.readTime && (

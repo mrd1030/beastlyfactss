@@ -150,7 +150,7 @@ export default function Categories() {
               </div>
               <Link
                 to={section.viewAll.to}
-                className="text-xs font-display font-semibold text-secondary hover:underline whitespace-nowrap flex-shrink-0"
+                className="text-xs font-display font-semibold text-secondary hover:underline whitespace-nowrap flex-shrink-0 p-2 -m-2"
               >
                 {section.viewAll.label} →
               </Link>

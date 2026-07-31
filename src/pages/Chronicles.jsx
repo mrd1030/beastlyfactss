@@ -161,7 +161,7 @@ export default function Chronicles() {
               <>
                 <Link
                   to={chroniclesPath(series.id)}
-                  className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
+                  className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
                 >
                   <ArrowLeft className="w-4 h-4" />{`All ${series.shortName} stories`}
                 </Link>
@@ -214,6 +214,22 @@ function SeriesLanding({ series, parts, loaded }) {
 }
 
 function StoryCard({ story, seriesId, part, index }) {
+  // getDisplayDate() compares story.publishedAt against the real-world clock
+  // (to keep staged/future-dated chronicles parts invisible until their
+  // date arrives - see src/lib/utils/date.js). Computing that inline during
+  // render is the same class of bug as the Home page's date-driven state:
+  // prerender.mjs bakes in whatever "now" resolves to at build time, but a
+  // real visitor hydrating on a later day - after a staged part's date has
+  // passed - would compute a non-empty date where prerender captured ''
+  // (or vice versa), a hydration mismatch. Default to hidden on the
+  // hydration-critical first render (matches prerender's own first paint),
+  // then upgrade to the real value right after mount on real clients only.
+  const [displayDate, setDisplayDate] = useState('');
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDisplayDate(getDisplayDate(story.publishedAt));
+  }, [story.publishedAt]);
+
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.05 }}>
       <Link
@@ -234,9 +250,9 @@ function StoryCard({ story, seriesId, part, index }) {
             <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
               {`Part ${part}`}
             </span>
-            {getDisplayDate(story.publishedAt) && (
+            {displayDate && (
               <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-                <Clock className="w-3 h-3" />{getDisplayDate(story.publishedAt)}
+                <Clock className="w-3 h-3" />{displayDate}
               </span>
             )}
             {story.readTime && (
@@ -315,15 +331,23 @@ function StoryReader({ story, part }) {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [story]);
 
+  // Same prerender/hydration hazard as StoryCard's date badge above - see
+  // that comment. Default hidden, upgrade post-mount on real clients only.
+  const [displayDate, setDisplayDate] = useState('');
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDisplayDate(getDisplayDate(story.publishedAt));
+  }, [story.publishedAt]);
+
   return (
     <motion.article initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
       <div className="flex items-center gap-2 mb-3 flex-wrap">
         <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
           {`Part ${part}`}
         </span>
-        {getDisplayDate(story.publishedAt) && (
+        {displayDate && (
           <span className="text-xs text-muted-foreground font-body flex items-center gap-1">
-            <Clock className="w-3 h-3" />{getDisplayDate(story.publishedAt)}
+            <Clock className="w-3 h-3" />{displayDate}
           </span>
         )}
         {story.readTime && (

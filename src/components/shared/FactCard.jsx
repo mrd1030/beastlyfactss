@@ -83,7 +83,7 @@ export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
         <div className="flex items-center gap-4 mt-4 pt-3 border-t border-border">
           <button
             onClick={(e) => { e.stopPropagation(); toggleFavorite(factId); }}
-            className="flex items-center gap-1.5 text-xs font-semibold transition-colors focus:outline-none"
+            className="flex items-center gap-1.5 text-xs font-semibold transition-colors focus:outline-none p-2 -m-2"
           >
             <motion.div
               whileTap={{ scale: 1.4, rotate: 15 }}
@@ -95,10 +95,10 @@ export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
               {fav ? 'Saved!' : 'Save'}
             </span>
           </button>
-          
+
           <button
             onClick={handleShare}
-            className={`flex items-center gap-1.5 text-xs font-semibold transition-colors focus:outline-none ${
+            className={`flex items-center gap-1.5 text-xs font-semibold transition-colors focus:outline-none p-2 -m-2 ${
               copied ? 'text-secondary font-bold' : 'text-muted-foreground hover:text-foreground'
             }`}
           >
@@ -109,7 +109,7 @@ export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
           {imagePath && onOpenImage && (
             <button
               onClick={(e) => { e.stopPropagation(); onOpenImage(fact); }}
-              className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors focus:outline-none"
+              className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors focus:outline-none p-2 -m-2"
             >
               <ImageIcon className="w-4 h-4" />
               <span>Image</span>

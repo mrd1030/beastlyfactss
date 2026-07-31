@@ -156,7 +156,7 @@ export default function Search() {
                 className="w-full bg-card border border-border rounded-2xl pl-12 pr-12 py-3.5 text-base font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground shadow-sm"
               />
               {query && (
-                <button onClick={() => { setQuery(''); setResults([]); }} className="absolute right-4 top-1/2 -translate-y-1/2">
+                <button onClick={() => { setQuery(''); setResults([]); }} className="absolute right-4 top-1/2 -translate-y-2 p-2 -m-2">
                   <X className="w-4 h-4 text-muted-foreground hover:text-foreground" />
                 </button>
               )}

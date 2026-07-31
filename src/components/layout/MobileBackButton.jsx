@@ -17,7 +17,7 @@ export default function MobileBackButton({ pageTitle }) {
     <button
       onClick={() => navigate(-1)}
       aria-label="Go back"
-      className="flex items-center gap-1 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors no-select"
+      className="flex items-center gap-1 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors no-select p-2 -m-2"
     >
       <ChevronLeft className="w-5 h-5" />
       Back

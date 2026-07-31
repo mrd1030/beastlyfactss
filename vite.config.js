@@ -28,7 +28,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    sourcemap: 'hidden',
+    sourcemap: true,
     target: 'es2022',
     chunkSizeWarningLimit: 630,
     rollupOptions: {
@@ -43,6 +43,20 @@ export default defineConfig({
             // Keep Stripe separate (only used for packs/donations)
             if (id.includes('stripe') || id.includes('@stripe')) {
               return 'stripe-vendor';
+            }
+            // Keep the Base44 SDK separate - only reached via dynamic import()
+            // (BeastlyBuddy's analytics calls, plus a few already-lazy routes),
+            // so it must live outside the always-eager vendor chunk or those
+            // dynamic imports never actually defer anything.
+            if (id.includes('@base44')) {
+              return 'base44-vendor';
+            }
+            // Keep canvas-confetti separate - it's only ever needed on-demand
+            // (Quiz completion, Hero easter egg), both already reached via
+            // dynamic import() at their call sites. Left in 'vendor' it would
+            // ship on every single page load regardless.
+            if (id.includes('canvas-confetti')) {
+              return 'confetti-vendor';
             }
 
             // Let React, Radix, and Framer Motion bundle together naturally into a single core vendor chunk

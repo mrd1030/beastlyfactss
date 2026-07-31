@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { ArrowRight, RotateCcw, Share2, CheckCircle2, XCircle, Trophy, ChevronRight } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { quizQuestions, quizResults } from '@/lib/data/quizQuestions';
 import { triviaQuestions } from '@/lib/data/triviaQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
@@ -40,7 +39,12 @@ function PersonalityQuiz() {
       setResult(quizResult);
       setShowResult(true);
       recordQuizCompletion();
-      confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D', '#0F3A1F'] });
+      // Dynamic import (mirrors HeroSection's confetti trigger): canvas-confetti
+      // lives in its own manualChunk (vite.config.js) specifically so this stays
+      // an on-demand fetch instead of shipping on every page via 'vendor'.
+      import('canvas-confetti').then(({ default: confetti }) => {
+        confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D', '#0F3A1F'] });
+      });
     } else {
       setStep(step + 1);
     }
@@ -151,8 +155,8 @@ function PersonalityQuiz() {
           <span className="text-xs font-display font-bold text-secondary">{Math.round(progress)}%</span>
         </div>
         <div className="h-2 bg-muted rounded-full overflow-hidden">
-          <motion.div className="h-full bg-gradient-to-r from-secondary to-accent rounded-full"
-            initial={{ width: 0 }} animate={{ width: `${progress}%` }} transition={{ duration: 0.3 }} />
+          <motion.div className="h-full w-full bg-gradient-to-r from-secondary to-accent rounded-full origin-left"
+            initial={{ scaleX: 0 }} animate={{ scaleX: progress / 100 }} transition={{ duration: 0.3 }} />
         </div>
         <div className="flex gap-1 mt-2">
           {Array.from({ length: totalQ }).map((_, i) => (
@@ -274,9 +278,9 @@ function TriviaQuizSection() {
             <p className="font-display font-bold text-6xl text-foreground">
               {score}<span className="text-2xl text-muted-foreground">{`/${TRIVIA_TOTAL}`}</span>
             </p>
-            <div className="w-full bg-muted rounded-full h-3 mt-4">
-              <motion.div className="bg-secondary h-3 rounded-full" initial={{ width: 0 }}
-                animate={{ width: `${(score / TRIVIA_TOTAL) * 100}%` }} transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }} />
+            <div className="w-full bg-muted rounded-full h-3 mt-4 overflow-hidden">
+              <motion.div className="bg-secondary h-3 w-full rounded-full origin-left" initial={{ scaleX: 0 }}
+                animate={{ scaleX: score / TRIVIA_TOTAL }} transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }} />
             </div>
             <p className="text-xs text-muted-foreground font-body mt-2">{Math.round((score / TRIVIA_TOTAL) * 100)}% correct</p>
           </div>
@@ -309,9 +313,9 @@ function TriviaQuizSection() {
         <span className="text-xs font-body text-muted-foreground">{`Question ${currentIndex + 1} of ${TRIVIA_TOTAL}`}</span>
         <span className="text-xs font-display font-bold text-secondary">{score} pts</span>
       </div>
-      <div className="w-full bg-muted rounded-full h-2 mb-8">
-        <motion.div className="bg-secondary h-2 rounded-full"
-          animate={{ width: `${(currentIndex / TRIVIA_TOTAL) * 100}%` }} transition={{ duration: 0.4 }} />
+      <div className="w-full bg-muted rounded-full h-2 mb-8 overflow-hidden">
+        <motion.div className="bg-secondary h-2 w-full rounded-full origin-left"
+          animate={{ scaleX: currentIndex / TRIVIA_TOTAL }} transition={{ duration: 0.4 }} />
       </div>
 
       <AnimatePresence mode="wait" custom={direction}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
@@ -12,7 +12,22 @@ import { truncateDescription } from '@/lib/utils/truncate';
 const MotionLink = motion(Link);
 
 export default function HeroSection({ onOpenFact }) {
-  const dailyFact = facts[new Date().getDate() % facts.length];
+  // facts[0] on the hydration-critical first render, not
+  // facts[new Date().getDate() % facts.length] computed inline: prerender.mjs
+  // bakes in whatever "today" resolves to at build/deploy time, but this page
+  // isn't rebuilt daily - any real visitor hydrating on a later calendar day
+  // than the last deploy would compute a different index than what's in the
+  // static HTML, a genuine text mismatch (React error #418/#423) that was
+  // forcing a full client re-render (and the large layout shift that comes
+  // with it) on every day but the one the site happened to be built on.
+  // Deferring the real day-based pick to a post-mount effect (skipped during
+  // prerendering, same as this app's other date/random-driven state) matches
+  // prerendered HTML exactly on first paint, then upgrades right after.
+  const [dailyFact, setDailyFact] = useState(() => facts[0]);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDailyFact(facts[new Date().getDate() % facts.length]);
+  }, []);
   const [learned, setLearned] = useState(false);
 
   const handleLearned = async () => {

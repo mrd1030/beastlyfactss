@@ -298,10 +298,10 @@ export default function Facts() {
               Mind-blowing facts that will make you say "wait, REALLY?!" 🤯
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
-              <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline">
+              <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline p-1.5 -m-1.5">
                 Want deeper dives? Browse our Fact Files →
               </Link>
-              <Link to="/gallery/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline">
+              <Link to="/gallery/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline p-1.5 -m-1.5">
                 📸 Browse the Photo Gallery →
               </Link>
             </div>

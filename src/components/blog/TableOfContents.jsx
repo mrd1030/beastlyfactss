@@ -24,22 +24,32 @@ export default function TableOfContents({ contentRef, watch, skipText }) {
     if (!container) { setHeadings([]); return; }
 
     const nodes = [...container.querySelectorAll('h2, h3')];
+    // Read every heading's text FIRST, in its own pass, before any of the
+    // id/style writes below. `innerText` forces a synchronous layout read -
+    // doing that read for node N+1 interleaved with the id/style write for
+    // node N (as a single filter().map() chain over the live nodes used to)
+    // meant each write invalidated layout right before the next node's read,
+    // forcing a synchronous reflow once per heading. Batching all the reads
+    // up front, then all the writes after, means layout only needs to
+    // settle once (for the reads) and once again after (for the writes),
+    // instead of ping-ponging per node.
+    const entries = nodes
+      .map(node => ({ node, text: node.innerText?.trim() || '' }))
+      .filter(({ text }) => text && text !== skipText);
+
     const seenIds = new Set();
-    const list = nodes
-      .filter(node => node.innerText?.trim() && node.innerText.trim() !== skipText)
-      .map(node => {
-        const text = node.innerText.trim();
-        let id = node.id || slugify(text) || 'section';
-        let unique = id;
-        let i = 2;
-        while (seenIds.has(unique)) unique = `${id}-${i++}`;
-        seenIds.add(unique);
-        if (!node.id) node.id = unique;
-        // Clears the fixed navbar (+ reading progress bar, which overlaps it) plus
-        // a little breathing room, so a jumped-to heading isn't flush against the top.
-        node.style.scrollMarginTop = 'calc(56px + var(--safe-area-inset-top, 0px) + 16px)';
-        return { id: unique, text, level: node.tagName === 'H3' ? 3 : 2 };
-      });
+    const list = entries.map(({ node, text }) => {
+      let id = node.id || slugify(text) || 'section';
+      let unique = id;
+      let i = 2;
+      while (seenIds.has(unique)) unique = `${id}-${i++}`;
+      seenIds.add(unique);
+      if (!node.id) node.id = unique;
+      // Clears the fixed navbar (+ reading progress bar, which overlaps it) plus
+      // a little breathing room, so a jumped-to heading isn't flush against the top.
+      node.style.scrollMarginTop = 'calc(56px + var(--safe-area-inset-top, 0px) + 16px)';
+      return { id: unique, text, level: node.tagName === 'H3' ? 3 : 2 };
+    });
 
     setHeadings(list);
   }, [contentRef, watch, skipText]);

@@ -3,7 +3,17 @@ import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
-import { base44 } from '@/api/base44Client';
+
+// Dynamically imported (see calls below) instead of a static top-level import:
+// BeastlyBuddy renders unconditionally on every single page (via AppLayout),
+// and @base44/sdk lives in its own manualChunk (vite.config.js) specifically
+// so it's only fetched once a visitor actually interacts with this widget,
+// not forced into the always-eager vendor bundle on every page load.
+const trackEvent = (eventName, properties) => {
+  import('@/api/base44Client').then(({ base44 }) => {
+    base44.analytics.track(properties ? { eventName, properties } : { eventName });
+  });
+};
 
 const greetings = [
   "Hey there, animal friend! 🐾 Want a fun fact?",
@@ -64,7 +74,7 @@ export default function BeastlyBuddy() {
         triggerRef.current && !triggerRef.current.contains(event.target)
       ) {
         setOpen(false);
-        base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+        trackEvent('beastly_buddy_closed');
       }
     };
 
@@ -73,7 +83,7 @@ export default function BeastlyBuddy() {
       if (event.key === 'Escape') {
         setOpen(false);
         triggerRef.current?.focus();
-        base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+        trackEvent('beastly_buddy_closed');
         return;
       }
 
@@ -112,7 +122,7 @@ export default function BeastlyBuddy() {
   const getRandomFact = () => {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
     setCurrentFact(randomFact);
-    base44.analytics.track({ eventName: 'beastly_buddy_random_fact', properties: { animal: randomFact.animal, category: randomFact.category } });
+    trackEvent('beastly_buddy_random_fact', { animal: randomFact.animal, category: randomFact.category });
   };
 
   return (
@@ -159,7 +169,7 @@ export default function BeastlyBuddy() {
                   <button
                     onClick={() => {
                       toggleFavorite(currentFact.id);
-                      base44.analytics.track({ eventName: 'beastly_buddy_favorite_toggled', properties: { animal: currentFact.animal, favorited: !isFavorite(currentFact.id) } });
+                      trackEvent('beastly_buddy_favorite_toggled', { animal: currentFact.animal, favorited: !isFavorite(currentFact.id) });
                     }}
                     className={`px-3 py-2 rounded-xl transition-all ${isFavorite(currentFact.id) ? 'bg-pink-100 dark:bg-pink-950' : 'bg-muted hover:bg-muted/80'}`}
                     aria-label={isFavorite(currentFact.id) ? "Remove fact from favorites" : "Save fact to favorites"}
@@ -180,9 +190,9 @@ export default function BeastlyBuddy() {
           setOpen(opening);
           if (opening) {
             setCurrentFact(null);
-            base44.analytics.track({ eventName: 'beastly_buddy_opened' });
+            trackEvent('beastly_buddy_opened');
           } else {
-            base44.analytics.track({ eventName: 'beastly_buddy_closed' });
+            trackEvent('beastly_buddy_closed');
           }
         }}
         whileHover={{ scale: 1.1 }}

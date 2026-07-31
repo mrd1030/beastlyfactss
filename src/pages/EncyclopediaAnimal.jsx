@@ -128,7 +128,7 @@ export default function EncyclopediaAnimal() {
         <button
           type="button"
           onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors mb-6"
+          className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
         </button>
@@ -216,7 +216,7 @@ export default function EncyclopediaAnimal() {
                 </div>
                 <Link
                   to="/facts/"
-                  className="inline-flex items-center gap-1 mt-4 text-xs font-display font-semibold text-secondary hover:underline"
+                  className="inline-flex items-center gap-1 mt-2 text-xs font-display font-semibold text-secondary hover:underline p-2 -mx-2 -mb-2"
                 >
                   Browse all animal facts <ChevronRight className="w-3.5 h-3.5" />
                 </Link>

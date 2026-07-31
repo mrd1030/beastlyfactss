@@ -2,8 +2,6 @@ import React, { lazy } from 'react';
 import { MotionConfig } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
-import { QueryClientProvider } from '@tanstack/react-query';
-import { queryClientInstance } from '@/lib/query-client';
 import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
@@ -154,26 +152,24 @@ function App() {
   return (
     <AuthProvider>
       <FavoritesProvider>
-        <QueryClientProvider client={queryClientInstance}>
-          {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
-          <MotionConfig reducedMotion="user">
-            <Router>
-              {/* Inject SEO Data */}
-              <Helmet>
-                <script type="application/ld+json">
-                  {JSON.stringify(structuredData)}
-                </script>
-                <script type="application/ld+json">
-                  {JSON.stringify(organizationSchema)}
-                </script>
-              </Helmet>
+        {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
+        <MotionConfig reducedMotion="user">
+          <Router>
+            {/* Inject SEO Data */}
+            <Helmet>
+              <script type="application/ld+json">
+                {JSON.stringify(structuredData)}
+              </script>
+              <script type="application/ld+json">
+                {JSON.stringify(organizationSchema)}
+              </script>
+            </Helmet>
 
-              <AuthenticatedApp />
-              <ScrollToTop />
-            </Router>
-            <Toaster />
-          </MotionConfig>
-        </QueryClientProvider>
+            <AuthenticatedApp />
+            <ScrollToTop />
+          </Router>
+          <Toaster />
+        </MotionConfig>
       </FavoritesProvider>
     </AuthProvider>
   );

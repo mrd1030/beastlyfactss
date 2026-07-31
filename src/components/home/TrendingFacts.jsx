@@ -1,8 +1,13 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import FactCard from '../shared/FactCard';
+
+function rotate(offset) {
+  if (!facts.length) return [];
+  return [...facts.slice(offset), ...facts.slice(0, offset)].slice(0, 8);
+}
 
 export default function TrendingFacts({ onOpenFact, onOpenImage }) {
   const scrollRef = useRef(null);
@@ -15,12 +20,23 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
   // via Base44 here - that call never once returned data (auth on it is broken)
   // and its own request handling was forcing this carousel to load scrolled to
   // its far right edge. Removed rather than worked around; it wasn't providing anything.
-  const trending = useMemo(() => {
-    if (!facts.length) return [];
-    // +1 so this row's first card never matches HeroSection's dailyFact, which
-    // uses the same day-of-month rotation on the same array.
+  //
+  // The day-of-month rotation itself still isn't safe to compute inline
+  // during render, though: prerender.mjs bakes in whatever day it happens to
+  // build on, and this page isn't rebuilt daily, so a real visitor hydrating
+  // on a later day than the last deploy would compute a different offset than
+  // what's in the static HTML - a full 8-card reorder mismatch, exactly the
+  // kind of thing that makes React discard hydration and re-render the whole
+  // root (see HeroSection.jsx's dailyFact for the same fix, same reasoning).
+  // +1 on the real offset so this row's first card never matches
+  // HeroSection's dailyFact, which uses the same day-of-month rotation on the
+  // same array; the fixed default offset (1) mirrors that same intent for the
+  // pre-hydration render without needing "today".
+  const [trending, setTrending] = useState(() => rotate(1));
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
     const offset = (new Date().getDate() % facts.length + 1) % facts.length;
-    return [...facts.slice(offset), ...facts.slice(0, offset)].slice(0, 8);
+    setTrending(rotate(offset));
   }, []);
 
   const scroll = (dir) => {
@@ -39,7 +55,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
             <p className="text-sm text-muted-foreground font-body mt-1">The wildest facts everyone's talking about</p>
           </div>
           <div className="hidden sm:flex items-center gap-4">
-            <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0">
+            <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
               Browse all facts <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <div className="flex gap-2">
@@ -66,7 +82,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/facts/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary">
+          <Link to="/facts/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2">
             Browse all facts <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
