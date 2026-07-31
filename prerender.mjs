@@ -75,11 +75,15 @@ function getMdxRoutes(meta) {
 function getMdxCategoryRoutes(meta) {
   const routes = new Set();
   for (const post of meta) {
-    if (!post.category) continue;
-    const slug = slugifyCategory(post.category);
-    // site-news 301s to the welcome post; short-stories 301s to /chronicles/
-    if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
-    routes.add(`/blog/category/${slug}`);
+    // Every category the post is filed under, not just the primary one, so a
+    // post tagged both Aquatic Life and Wild Animals prerenders under each.
+    const cats = (post.categories?.length ? post.categories : [post.category]).filter(Boolean);
+    for (const cat of cats) {
+      const slug = slugifyCategory(cat);
+      // site-news 301s to the welcome post; short-stories 301s to /chronicles/
+      if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
+      routes.add(`/blog/category/${slug}`);
+    }
   }
   return [...routes];
 }

@@ -71,8 +71,14 @@ function toPost(meta) {
     publishedAt: meta.date || new Date().toISOString(),
 
     // Metadata
+    // `category` is the single primary one; `allCategories` is every category
+    // this post should be listed under. Blog.jsx already filters and counts on
+    // allCategories (it dates from Sanity, which allowed several per post), so
+    // supporting a `categories` frontmatter array needed nothing downstream.
     category: meta.category,
-    allCategories: meta.category ? [meta.category] : [],
+    allCategories: Array.isArray(meta.categories) && meta.categories.length
+      ? meta.categories
+      : (meta.category ? [meta.category] : []),
     tags: meta.tags,
     readTime: meta.readTime,
     difficulty: meta.difficulty,

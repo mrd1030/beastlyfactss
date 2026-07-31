@@ -53,6 +53,12 @@ for (const dir of CONTENT_DIRS) {
       date: fm.date || fm.lastUpdated || null,
       image: fm.image || null,
       category: fm.category || null,
+      // Full category list so the homepage browser can show a post under every
+      // category it belongs to, not only its primary one. Falls back to
+      // [category] for the vast majority of posts that declare just one.
+      categories: Array.isArray(fm.categories) && fm.categories.length
+        ? [...new Set([fm.category, ...fm.categories].filter(Boolean))]
+        : (fm.category ? [fm.category] : []),
     });
   }
 }
@@ -111,7 +117,15 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       seoTitle: fm.seoTitle || null,
       excerpt: fm.excerpt || fm.description || '',
       date: fm.date || fm.lastUpdated || null,
+      // `category` stays the single primary one (used for the card label and
+      // the article's own breadcrumb). `categories` is the full list a post
+      // should appear under, so a piece can be both Aquatic Life and Wild
+      // Animals without picking one. Optional in frontmatter: when it is
+      // absent this is just [category], which is how every older post behaves.
       category: fm.category || 'General',
+      categories: Array.isArray(fm.categories) && fm.categories.length
+        ? [...new Set([fm.category, ...fm.categories].filter(Boolean))]
+        : (fm.category ? [fm.category] : []),
       tags: Array.isArray(fm.tags) ? fm.tags : [],
       readTime: fm.readingTime || fm.readTime || null,
       difficulty: fm.difficulty || null,

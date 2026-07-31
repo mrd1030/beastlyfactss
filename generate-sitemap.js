@@ -45,10 +45,13 @@ const slugifyCategory = (text) => text.toString().toLowerCase()
 function getCategorySlugs() {
   const slugs = new Set();
   for (const post of mdxMeta) {
-    if (!post.category) continue;
-    const slug = slugifyCategory(post.category);
-    if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
-    slugs.add(slug);
+    // All categories the post is filed under, not just the primary one.
+    const cats = (post.categories?.length ? post.categories : [post.category]).filter(Boolean);
+    for (const cat of cats) {
+      const slug = slugifyCategory(cat);
+      if (!slug || slug === 'site-news' || slug === 'short-stories') continue;
+      slugs.add(slug);
+    }
   }
   return [...slugs];
 }

@@ -16,15 +16,19 @@ import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
 // both sides, so there's no fetch-timing race left to mismatch.
 import articlesIndex from '@/lib/generated/articles-index.json';
 
-// Only categories with a real, browsable body of MDX content - several slugs
-// defined in categories.js (aquatic-life, comparisons, pet-care, product-picks,
-// wild-animals, cats, dogs, site-news) currently have 0-4 articles and would
-// look sparse or broken showing "random picks" from an almost-empty pool.
-// Fun Facts and Short Stories are excluded too since they already have their
-// own dedicated homepage sections (TrendingFacts, DexTeaser).
+// Only categories with enough MDX content to fill this browser's 6-article
+// preview without looking sparse. Still excluded for that reason: comparisons,
+// pet-care, cats, dogs (2 to 4 articles each), product-picks (now a redirect to
+// /gear/), and site-news. Fun Facts and Short Stories are excluded for a
+// different reason: they already have dedicated homepage sections
+// (TrendingFacts, DexTeaser).
+//
+// Wild Animals and Aquatic Life were previously excluded as near-empty. That
+// stopped being true once the Sanity content moved into MDX, and posts can now
+// carry several categories, so they sit here on the same >=6 rule as the rest.
 const FRONT_LABEL = 'Reptiles';
 const BACK_LABEL = 'Legal';
-const MIDDLE_LABELS = ['Fish', 'Invertebrates', 'Small & Exotic Pets', 'Birds', 'Amphibians', 'Roundups', 'Turtles & Tortoises'];
+const MIDDLE_LABELS = ['Fish', 'Invertebrates', 'Small & Exotic Pets', 'Birds', 'Amphibians', 'Wild Animals', 'Aquatic Life', 'Roundups', 'Turtles & Tortoises'];
 
 export default function CategoryBrowse() {
   const [selected, setSelected] = useState(FRONT_LABEL);
@@ -51,7 +55,11 @@ export default function CategoryBrowse() {
   const order = useMemo(() => [FRONT_LABEL, ...seededShuffle(MIDDLE_LABELS, daySeed), BACK_LABEL], [daySeed]);
 
   const preview = useMemo(() => {
-    const pool = articlesIndex.articles.filter(a => a.category === selected);
+    // Matches against every category a post is filed under, so a piece tagged
+    // both Aquatic Life and Wild Animals shows up under either chip.
+    const pool = articlesIndex.articles.filter(a =>
+      (a.categories?.length ? a.categories : [a.category]).includes(selected)
+    );
     const seed = daySeed + hashString(selected);
     return seededShuffle(pool, seed).slice(0, 6);
   }, [selected, daySeed]);

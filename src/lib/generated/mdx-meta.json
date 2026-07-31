@@ -7,6 +7,9 @@
     "excerpt": "Welcome to BeastlyFacts! Honest animal care guides, fun facts, and practical advice for reptile and small mammal owners.",
     "date": "2026-06-01",
     "category": "Site News",
+    "categories": [
+      "Site News"
+    ],
     "tags": [
       "beastlyfacts",
       "introduction",
@@ -35,6 +38,9 @@
     "excerpt": "Look at each of these for the first time and you'd guess wrong about what you're actually getting: ackie monitor, milk snake, hissing cockroach, and angelfish.",
     "date": "2026-08-27",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Ackie Monitor",
       "Milk Snake",
@@ -78,6 +84,9 @@
     "excerpt": "Ackie monitors are a genuine step up in investment from most beginner lizards, both in what the animal costs and in what it takes to house one properly.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ackie Monitor",
       "Cost",
@@ -131,6 +140,9 @@
     "excerpt": "Ackie monitors are a genuinely different kind of lizard to interact with compared to the sit-and-bask species already covered on this site, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ackie Monitor",
       "Handling",
@@ -177,6 +189,9 @@
     "excerpt": "Ackie monitors are hardy animals, and the health issues that do show up trace back almost entirely to a small number of preventable husbandry gaps.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ackie Monitor",
       "Health",
@@ -228,6 +243,9 @@
     "excerpt": "Ackie monitor husbandry runs hotter and bigger than most reptile setups, and getting comfortable with those numbers upfront is really the key to keeping this species well.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ackie Monitor",
       "Tank Setup",
@@ -281,6 +299,9 @@
     "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher, but the ongoing bills stay modest.",
     "date": "2026-07-26",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "African Fat-Tailed Gecko",
       "Cost",
@@ -329,6 +350,9 @@
     "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to actually tell that from real trouble.",
     "date": "2026-07-31",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "African Fat-Tailed Gecko",
       "Feeding",
@@ -384,6 +408,9 @@
     "excerpt": "African fat-tailed geckos are among the calmest, most genuinely handleable pet geckos available, often described as even more docile than their close cousin, the leopard gecko.",
     "date": "2026-07-26",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "African Fat-Tailed Gecko",
       "Handling",
@@ -427,6 +454,9 @@
     "excerpt": "Fat-tailed geckos are hardy when their two biggest needs, heat and humidity, are actually met. Nearly every common issue traces back to one of those two things.",
     "date": "2026-07-26",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "African Fat-Tailed Gecko",
       "Health",
@@ -480,6 +510,9 @@
     "excerpt": "Unlike most of the geckos commonly kept as pets, fat-tailed geckos are ground-dwellers and burrowers, not climbers, and the whole setup should reflect that.",
     "date": "2026-07-26",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "African Fat-Tailed Gecko",
       "Tank Setup",
@@ -536,6 +569,9 @@
     "excerpt": "African grey parrots are genuinely one of the most expensive pets covered on this site, and the purchase price is really just the entry fee for a decades-long commitment.",
     "date": "2026-08-30",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "African Grey Parrot",
       "Cost",
@@ -593,6 +629,9 @@
     "excerpt": "African grey parrots are highly intelligent, sensitive, and social, and they need a genuine daily time investment to stay well-adjusted, this isn't a bird that thrives on occasional attention.",
     "date": "2026-08-30",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "African Grey Parrot",
       "Handling",
@@ -644,6 +683,9 @@
     "excerpt": "African greys face a mix of nutritional, behavioral, and infectious health risks, and this species is genuinely more prone to a couple of specific conditions than the smaller parrots already covered on this site.",
     "date": "2026-08-30",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "African Grey Parrot",
       "Health",
@@ -698,6 +740,9 @@
     "excerpt": "African grey parrots hold the strictest CITES protection level there is, Appendix I, since 2017. That sounds like an ownership ban. It isn't, and understanding why comes down to one exemption written specifically for captive breeding.",
     "date": "2026-09-24",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "African Grey Parrot",
       "Legal",
@@ -748,6 +793,9 @@
     "excerpt": "An African grey's cage needs to support a genuinely large, intelligent, long-lived bird, and getting the size and placement right matters as much as anything else in this species' care.",
     "date": "2026-08-30",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "African Grey Parrot",
       "Cage Setup",
@@ -802,6 +850,9 @@
     "excerpt": "The alpha wolf came from unrelated wolves in a zoo pen. Wild packs are just families, and the biologist who spread the idea spent decades taking it back.",
     "date": "2026-08-13",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Wolves",
       "Wild Animals",
@@ -828,6 +879,9 @@
     "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget goes with this species.",
     "date": "2026-08-27",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Angelfish",
       "Cost",
@@ -886,6 +940,9 @@
     "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
     "date": "2026-07-31",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Angelfish",
       "Feeding",
@@ -938,6 +995,9 @@
     "excerpt": "Angelfish are an observation fish, not a hands-on pet, but there's a genuinely important behavioral fact to understand before stocking a community tank with them: this is a cichlid, and it doesn't stay peaceful forever.",
     "date": "2026-08-27",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Angelfish",
       "Handling",
@@ -985,6 +1045,9 @@
     "excerpt": "Angelfish are hardy in a properly sized, well-maintained tank, and most health problems trace back to water quality and stress, a pattern that holds true across nearly every fish covered on this site.",
     "date": "2026-08-27",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Angelfish",
       "Health",
@@ -1036,6 +1099,9 @@
     "excerpt": "Angelfish have an unusual body shape for a community fish, tall and laterally flattened, and that shape drives nearly every decision in setting up their tank correctly.",
     "date": "2026-08-27",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Angelfish",
       "Tank Setup",
@@ -1093,6 +1159,9 @@
     "excerpt": "Argentine tegus are one of the more expensive lizards on this site to set up properly, a direct consequence of just how large this species actually grows.",
     "date": "2026-09-18",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Argentine Tegu",
       "Tegu Care",
@@ -1150,6 +1219,9 @@
     "excerpt": "Argentine tegus have a genuine reputation as the most intelligent, most tameable lizard commonly kept as a pet, and unlike most reptile friendly claims, this one holds up consistently.",
     "date": "2026-09-18",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Argentine Tegu",
       "Tegu Care",
@@ -1201,6 +1273,9 @@
     "excerpt": "Argentine tegus are hardy animals when housed properly, and the issues that do show up trace back to a fairly small set of preventable husbandry gaps, several tied directly to this species' large size.",
     "date": "2026-09-18",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Argentine Tegu",
       "Tegu Care",
@@ -1252,6 +1327,9 @@
     "excerpt": "Argentine tegus aren't federally restricted and most states don't touch them, but Florida is the real exception. Since 2021 they've been on the state's Prohibited species list, and the window to grandfather one in has already closed.",
     "date": "2026-09-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Argentine Tegu",
       "Legal",
@@ -1302,6 +1380,9 @@
     "excerpt": "Argentine tegu husbandry operates at a genuinely different scale than every other lizard covered on this site, this is a big bodied, high energy animal, and the setup needs to reflect that from the start.",
     "date": "2026-09-18",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Argentine Tegu",
       "Tegu Care",
@@ -1359,6 +1440,9 @@
     "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't obvious until you get into the specifics: keeping the water cold enough is what actually determines your budget.",
     "date": "2026-07-18",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Axolotl",
       "Cost",
@@ -1410,6 +1494,9 @@
     "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
     "date": "2026-07-18",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Axolotl",
       "Handling",
@@ -1453,6 +1540,9 @@
     "excerpt": "Axolotls are hardy in the right conditions and surprisingly fragile outside them. A large share of what goes wrong traces back to water that's too warm, which makes temperature control the single most important thing to get right.",
     "date": "2026-07-18",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Axolotl",
       "Health",
@@ -1501,6 +1591,9 @@
     "excerpt": "Axolotls are genuinely banned in a handful of states, California among them, but Virginia isn't one of them anymore. A 2021 rule change legalized them there, and a lot of hobbyist sites still haven't caught up.",
     "date": "2026-09-25",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Axolotl",
       "Legal",
@@ -1551,6 +1644,9 @@
     "excerpt": "Axolotl husbandry comes down to a short list of rules that matter a lot: keep the water cold, skip the gravel, and don't overthink the rest. Get those two things right and this is a genuinely manageable pet.",
     "date": "2026-07-18",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Axolotl",
       "Tank Setup",
@@ -1602,6 +1698,9 @@
     "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then genuinely low costs for the 20-30 years after.",
     "date": "2026-07-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Cost",
@@ -1651,6 +1750,9 @@
     "excerpt": "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal, and when to actually worry.",
     "date": "2025-04-26",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Feeding",
@@ -1703,6 +1805,9 @@
     "excerpt": "Ball pythons are defensive as babies and mellow as adults, and most of what makes handling go well isn't grip or technique, it's timing.",
     "date": "2026-07-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Handling",
@@ -1746,6 +1851,9 @@
     "excerpt": "Ball pythons are sensitive to husbandry mistakes in specific, predictable ways. Most of what shows up here traces back to temperature, humidity, or hygiene.",
     "date": "2026-07-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Health",
@@ -1794,6 +1902,9 @@
     "excerpt": "The federal python ban that shows up in Everglades news coverage never included ball pythons. They're legal almost everywhere, with two real exceptions: Hawaii's total snake ban, and New York City's ban on the entire python family.",
     "date": "2026-07-23",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Ball Python",
       "Legal",
@@ -1832,6 +1943,9 @@
     "excerpt": "Ball python husbandry has shifted toward bigger, more furnished enclosures. Here's what an adult setup actually needs, and why humidity deserves more attention than it gets.",
     "date": "2026-07-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Tank Setup",
@@ -1881,6 +1995,9 @@
     "excerpt": "Ball python or corn snake? The real differences in feeding reliability, humidity needs, escape risk, and lifespan commitment - not just which one looks calmer at the pet store.",
     "date": "2026-07-08",
     "category": "Comparisons",
+    "categories": [
+      "Comparisons"
+    ],
     "tags": [
       "Ball Python",
       "Corn Snake",
@@ -1933,6 +2050,9 @@
     "excerpt": "What a bearded dragon actually costs: $400-800 to set up right, $50-108 a month after that, and the vet bills correct husbandry prevents.",
     "date": "2026-07-05",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Cost",
@@ -1981,6 +2101,9 @@
     "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that actually needs a vet.",
     "date": "2026-07-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Feeding",
@@ -2037,6 +2160,9 @@
     "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early is what builds a dragon that actually enjoys it.",
     "date": "2026-07-05",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Handling",
@@ -2080,6 +2206,9 @@
     "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD to yellow fungus disease, and when to call a vet.",
     "date": "2026-07-05",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Health",
@@ -2126,6 +2255,9 @@
     "excerpt": "Bearded dragon husbandry has moved on from what old care sheets say. Bigger enclosures, stronger UVB, and more careful temperature gradients are now the standard.",
     "date": "2026-07-05",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Tank Setup",
@@ -2175,6 +2307,9 @@
     "excerpt": "Both get recommended as the best beginner reptile. Here's the honest difference in cost, daily care, and commitment before you pick one.",
     "date": "2026-07-08",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Bearded Dragon",
       "Leopard Gecko",
@@ -2229,6 +2364,9 @@
     "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth correcting. A proper setup costs more than the bowl-and-fish combo suggests, but it's still one of the more affordable pets you can keep once it's built.",
     "date": "2026-07-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Cost",
@@ -2277,6 +2415,9 @@
     "excerpt": "How much to actually feed a betta (less than you'd think), what belongs in the bowl, and the real reasons a betta goes off food, from picky eating to something water-quality related.",
     "date": "2026-07-24",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Feeding",
@@ -2329,6 +2470,9 @@
     "excerpt": "Betta fish are not a hands-on pet in the way a guinea pig or a bearded dragon is. The honest answer to how you handle a betta is almost always: you don't, at least not with bare hands.",
     "date": "2026-07-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Handling",
@@ -2372,6 +2516,9 @@
     "excerpt": "Almost every common betta illness traces back to one of two things: water quality or water temperature. That's genuinely good news, since it means the first response to a sick betta is almost always the same starting point.",
     "date": "2026-07-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Health",
@@ -2419,6 +2566,9 @@
     "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what actually matters.",
     "date": "2026-07-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Tank Setup",
@@ -2467,6 +2617,9 @@
     "excerpt": "Betta or goldfish? The real differences in tank size, temperature needs, social behavior, and lifespan - not just which one is cheaper at the pet store.",
     "date": "2026-07-08",
     "category": "Comparisons",
+    "categories": [
+      "Comparisons"
+    ],
     "tags": [
       "Betta Fish",
       "Goldfish",
@@ -2521,6 +2674,9 @@
     "excerpt": "The betta water numbers that matter - temperature, pH, ammonia, nitrite, and nitrate targets - plus what to test, how often, and which are non-negotiable.",
     "date": "2026-06-16",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Betta Fish",
       "Water Quality",
@@ -2574,6 +2730,9 @@
     "excerpt": "A complete guide to building a self-sustaining bioactive terrarium for bearded dragons with live plants and a cleanup crew.",
     "date": "2026-06-03",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "bioactive",
       "bearded-dragon",
@@ -2629,6 +2788,9 @@
     "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern versus Indonesian, and that gap matters more here than with almost any other reptile.",
     "date": "2026-08-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Blue-Tongued Skink",
       "Cost",
@@ -2682,6 +2844,9 @@
     "excerpt": "Vets and pet-industry care sheets genuinely disagree on how often to feed an adult blue tongue skink, by a factor of up to 7x. Here's the real range and why it exists.",
     "date": "2026-07-30",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Blue Tongue Skink",
       "Feeding",
@@ -2737,6 +2902,9 @@
     "excerpt": "Blue-tongued skinks are among the most docile, personable lizards kept as pets, genuinely curious and tolerant of handling once they're settled, but how fast a skink gets there depends heavily on where it came from.",
     "date": "2026-08-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Blue-Tongued Skink",
       "Handling",
@@ -2783,6 +2951,9 @@
     "excerpt": "Most blue-tongued skink health problems trace back to one of two things: incorrect UVB or temperature, or for Indonesian skinks specifically, an untreated parasite load from before they ever reached you.",
     "date": "2026-08-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Blue-Tongued Skink",
       "Health",
@@ -2836,6 +3007,9 @@
     "excerpt": "Enclosure size and lighting are nearly identical between Northern and Indonesian blue-tongued skinks. Temperature and humidity are where they genuinely diverge, and getting that split right matters more than almost anything else.",
     "date": "2026-08-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Blue-Tongued Skink",
       "Tank Setup",
@@ -2890,6 +3064,9 @@
     "excerpt": "Boa constrictors are genuinely affordable at the entry level, and most of what's sold as a boa in the pet trade is a specific type worth understanding before you buy, since it affects both price and what you're actually getting.",
     "date": "2026-08-20",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Boa Constrictor",
       "Cost",
@@ -2944,6 +3121,9 @@
     "excerpt": "Captive-bred boas are generally docile, and the real handling story with this species isn't temperament, it's size, and getting the safety rules right matters more here than with almost any other pet reptile on this site.",
     "date": "2026-08-20",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Boa Constrictor",
       "Handling",
@@ -2991,6 +3171,9 @@
     "excerpt": "Boa constrictors are hardy snakes when kept correctly, and most of what shows up on this list traces back to temperature, humidity, or the source you bought from.",
     "date": "2026-08-20",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Boa Constrictor",
       "Health",
@@ -3043,6 +3226,9 @@
     "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and one very specific New Jersey subspecies split, are where the real rules live.",
     "date": "2026-09-27",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Boa Constrictor",
       "Legal",
@@ -3093,6 +3279,9 @@
     "excerpt": "Boa constrictor housing scales up significantly as the snake grows, and building for the adult size from a reasonably early point saves you from repeated upgrades.",
     "date": "2026-08-20",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Boa Constrictor",
       "Tank Setup",
@@ -3148,6 +3337,9 @@
     "excerpt": "Ask how many you need and each of these gives you a completely different answer, and getting that number wrong is the single biggest mistake you can make with any of them.",
     "date": "2026-08-20",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Boa Constrictor",
       "Sugar Glider",
@@ -3195,6 +3387,9 @@
     "excerpt": "Box turtles come with a genuinely important sourcing consideration that affects both cost and legality, worth understanding before anything else, on top of a lighting and heating setup that dominates the upfront budget.",
     "date": "2026-09-09",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Box Turtle",
       "Turtle Care",
@@ -3251,6 +3446,9 @@
     "excerpt": "Box turtles are shy and genuinely better observed than handled, though with patience, they can become surprisingly personable animals that recognize feeding time and approach their keeper.",
     "date": "2026-09-09",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Box Turtle",
       "Turtle Care",
@@ -3302,6 +3500,9 @@
     "excerpt": "Box turtles are genuinely good at hiding illness, which makes knowing the warning signs, and understanding how a few of these conditions connect to each other, especially worthwhile with this species.",
     "date": "2026-09-09",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Box Turtle",
       "Turtle Care",
@@ -3353,6 +3554,9 @@
     "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
     "date": "2026-07-23",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Box Turtle",
       "Legal",
@@ -3391,6 +3595,9 @@
     "excerpt": "A box turtle enclosure needs to genuinely support both the land-dwelling and water-access sides of this species' semi-terrestrial life, floor space, burrowing depth, and a real basking setup all matter here.",
     "date": "2026-09-09",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Box Turtle",
       "Turtle Care",
@@ -3449,6 +3656,9 @@
     "excerpt": "What your budgie's cere color says about sex, age, and health - why a female's cere turns brown in breeding condition, and when a change means trouble.",
     "date": "2026-06-19",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Budgie",
       "Cere",
@@ -3497,6 +3707,9 @@
     "excerpt": "Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat care, which is the piece people most often miss.",
     "date": "2026-07-10",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Budgie",
       "Cost",
@@ -3545,6 +3758,9 @@
     "excerpt": "How you approach handling a budgie depends a lot on where it came from. A hand-raised bird may step up on day one; an untamed one needs a slower process that rewards patience.",
     "date": "2026-07-10",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Budgie",
       "Handling",
@@ -3590,6 +3806,9 @@
     "excerpt": "Birds are prey animals that hide illness as a survival instinct. By the time a budgie looks visibly sick, it's often further along than a mammal would be at the same stage.",
     "date": "2026-07-10",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Budgie",
       "Health",
@@ -3636,6 +3855,9 @@
     "excerpt": "Budgies are small, but their housing needs get underestimated more than almost any other part of their care. A few specific details matter more than overall size alone.",
     "date": "2026-07-10",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Budgie",
       "Cage Setup",
@@ -3684,6 +3906,9 @@
     "excerpt": "Budgie or cockatiel? The real differences in noise, lifespan, talking ability, and how affectionate each one actually is - not just which one is smaller at the pet store.",
     "date": "2026-07-08",
     "category": "Comparisons",
+    "categories": [
+      "Comparisons"
+    ],
     "tags": [
       "Budgie",
       "Cockatiel",
@@ -3733,6 +3958,9 @@
     "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment more modest than a 20-plus year lifespan might suggest.",
     "date": "2026-09-08",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "California Kingsnake",
       "Snake Care",
@@ -3789,6 +4017,9 @@
     "excerpt": "California kingsnakes are docile and easy to handle, but they carry one absolute housing rule that comes straight from what this snake eats in the wild.",
     "date": "2026-09-08",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "California Kingsnake",
       "Snake Care",
@@ -3840,6 +4071,9 @@
     "excerpt": "California kingsnakes are genuinely hardy, and the overwhelming majority of health problems in this species trace back to husbandry errors rather than any inherent fragility.",
     "date": "2026-09-08",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "California Kingsnake",
       "Snake Care",
@@ -3891,6 +4125,9 @@
     "excerpt": "California kingsnake husbandry is genuinely straightforward, with two non-negotiable security requirements: a tightly clamped lid, and never housing this species with or near another snake.",
     "date": "2026-09-08",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "California Kingsnake",
       "Snake Care",
@@ -3947,6 +4184,9 @@
     "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the real cost decision here isn't about money at all.",
     "date": "2026-09-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Canary",
       "Bird Care",
@@ -4003,6 +4243,9 @@
     "excerpt": "Every other bird covered on this site, budgie, cockatiel, green-cheeked conure, lovebird, African grey, cockatoo, can potentially be hand-tamed to some degree. Canaries break that pattern entirely, and it's worth understanding why before you bring one home expecting a different kind of pet.",
     "date": "2026-09-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Canary",
       "Bird Care",
@@ -4054,6 +4297,9 @@
     "excerpt": "Canaries face a handful of conditions genuinely common enough in this species to know before they show up, several of them mite-related and easy to overlook until song or breathing is already affected.",
     "date": "2026-09-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Canary",
       "Bird Care",
@@ -4105,6 +4351,9 @@
     "excerpt": "Canary cage setup is genuinely simple, and the one detail that trips up first-time owners is choosing a tall, narrow parrot-style cage when this species actually needs the opposite shape entirely.",
     "date": "2026-09-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Canary",
       "Bird Care",
@@ -4160,6 +4409,9 @@
     "excerpt": "An occasional hairball is normal. Frequent vomiting isn't - here's how to tell the difference and what's actually driving it.",
     "date": "2026-07-08",
     "category": "Cats",
+    "categories": [
+      "Cats"
+    ],
     "tags": [
       "Cat",
       "Hairballs",
@@ -4210,6 +4462,9 @@
     "excerpt": "Drippers, misters, and foggers compared for chameleon hydration - how each works, which fits your setup, and how to spot dehydration before it's serious.",
     "date": "2026-06-20",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Chameleon",
       "Hydration",
@@ -4262,6 +4517,9 @@
     "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself isn't the expensive part, the cage, the exercise wheel, and keeping the room the right temperature are where the real budget goes.",
     "date": "2026-07-19",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Chinchilla",
       "Cost",
@@ -4314,6 +4572,9 @@
     "excerpt": "Chinchillas are a genuine handling pet, unlike some of the more hands-off species out there, but they come with two specific physical quirks worth understanding before you pick one up for the first time.",
     "date": "2026-07-19",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Chinchilla",
       "Handling",
@@ -4357,6 +4618,9 @@
     "excerpt": "Chinchillas hide illness well and can decline quickly once something is genuinely wrong, which makes knowing the warning signs, and one specific environmental risk, especially important with this species.",
     "date": "2026-07-19",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Chinchilla",
       "Health",
@@ -4404,6 +4668,9 @@
     "excerpt": "We couldn't find a single US state that actually bans pet chinchillas, despite blog posts claiming California and Texas do. The real legal story is a wild-population treaty that explicitly exempts domesticated pets.",
     "date": "2026-07-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Chinchilla",
       "Legal",
@@ -4442,6 +4709,9 @@
     "excerpt": "Chinchilla care has a few rules that genuinely surprise new owners, especially around bathing. Get the cage, the temperature, and the dust bath right, and the rest of this species' care is fairly manageable.",
     "date": "2026-07-19",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Chinchilla",
       "Cage Setup",
@@ -4493,6 +4763,9 @@
     "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A 15 to 20 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
     "date": "2026-07-15",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatiel",
       "Cost",
@@ -4541,6 +4814,9 @@
     "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food actually belongs in there, and the real reasons a cockatiel goes off food.",
     "date": "2026-07-25",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatiel",
       "Feeding",
@@ -4596,6 +4872,9 @@
     "excerpt": "Taming a cockatiel is a trust-building process more than a technique, and it goes faster when you let the bird set the pace rather than rushing toward a step-up cue on day one.",
     "date": "2026-07-15",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatiel",
       "Handling",
@@ -4642,6 +4921,9 @@
     "excerpt": "Birds hide illness as a survival instinct, which means a cockatiel that looks visibly sick is often further along than the same symptoms would suggest in a cat or dog.",
     "date": "2026-07-15",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatiel",
       "Health",
@@ -4688,6 +4970,9 @@
     "excerpt": "A cockatiel's cage is the single biggest factor in its day-to-day wellbeing, and a few specific details, width, bar spacing, and placement, matter more than overall size alone.",
     "date": "2026-07-15",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatiel",
       "Cage Setup",
@@ -4737,6 +5022,9 @@
     "excerpt": "Cockatoos are a genuinely serious financial and emotional commitment, and the purchase price is really just the smallest part of a decision that plays out over decades.",
     "date": "2026-09-04",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatoo",
       "Cost",
@@ -4793,6 +5081,9 @@
     "excerpt": "Cockatoos are extremely social, intelligent, and deeply bonded to their people, genuinely affectionate as babies. That same intensity is also exactly what makes this species one of the most difficult parrots to keep long-term.",
     "date": "2026-09-04",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatoo",
       "Handling",
@@ -4839,6 +5130,9 @@
     "excerpt": "Cockatoo health problems split fairly evenly between physical and behavioral, and this is genuinely one of the few species on this site where the behavioral issue is common enough to belong right alongside the medical ones.",
     "date": "2026-09-04",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatoo",
       "Health",
@@ -4893,6 +5187,9 @@
     "excerpt": "Why cockatoos scream and pluck their feathers - the psychology behind these behaviors, what genuinely reduces them, and what makes them worse.",
     "date": "2026-06-23",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatoo",
       "Behavior",
@@ -4942,6 +5239,9 @@
     "excerpt": "A cockatoo's cage needs to genuinely support a large, powerful, intelligent, and emotionally demanding bird, and getting the size, material, and daily enrichment right matters as much as anything else in this species' care.",
     "date": "2026-09-04",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Cockatoo",
       "Tank Setup",
@@ -5001,6 +5301,9 @@
     "excerpt": "Green cheek conures sit at a moderate price point for a parrot, but color mutations and the wrong sales channel can both push that number up considerably, and a 20 to 25 year lifespan makes this a genuinely long-term investment.",
     "date": "2026-07-29",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Green Cheek Conure",
       "Cost",
@@ -5054,6 +5357,9 @@
     "excerpt": "Green cheek conures are affectionate, playful, and genuinely comical birds that form strong bonds with their people, but reading their beak language correctly is the real key to a good relationship.",
     "date": "2026-07-29",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Green Cheek Conure",
       "Handling",
@@ -5101,6 +5407,9 @@
     "excerpt": "Most green cheek conure health problems trace back to diet, environment, or a lack of mental stimulation rather than pure genetics. Get those three things right and this is a genuinely resilient bird.",
     "date": "2026-07-29",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Green Cheek Conure",
       "Health",
@@ -5154,6 +5463,9 @@
     "excerpt": "A conure's cage needs to support a genuinely active, intelligent bird, not just contain one, and a few details around size, lighting, and placement matter more than people expect.",
     "date": "2026-07-29",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Green Cheek Conure",
       "Cage Setup",
@@ -5207,6 +5519,9 @@
     "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs for the two decades after.",
     "date": "2026-07-11",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Corn Snake",
       "Cost",
@@ -5254,6 +5569,9 @@
     "excerpt": "How often to feed a corn snake by age and weight, why frozen/thawed beats live prey, and the honest range of reasons corn snakes go off food, from a normal shed to brumation.",
     "date": "2026-07-25",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Corn Snake",
       "Feeding",
@@ -5307,6 +5625,9 @@
     "excerpt": "Corn snakes are docile and hardy as adults, but juveniles can be fast, wiggly, and genuinely defensive before they settle into the calmer temperament the species is known for.",
     "date": "2026-07-11",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Corn Snake",
       "Handling",
@@ -5350,6 +5671,9 @@
     "excerpt": "Corn snakes are one of the hardier pet snakes, and nearly every health problem they develop traces back to husbandry rather than bad luck.",
     "date": "2026-07-11",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Corn Snake",
       "Health",
@@ -5398,6 +5722,9 @@
     "excerpt": "Corn snakes are a genuinely forgiving species to set up correctly, with one non-negotiable exception: whatever heat source you choose, it needs a thermostat.",
     "date": "2026-07-11",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Corn Snake",
       "Tank Setup",
@@ -5447,6 +5774,9 @@
     "excerpt": "Corydoras catfish are genuinely inexpensive on their own, but the real budgeting consideration isn't the individual fish, it's that you need to buy a whole school, not one or two.",
     "date": "2026-09-15",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Corydoras Catfish",
       "Fish Care",
@@ -5505,6 +5835,9 @@
     "excerpt": "Corydoras catfish are an observation animal, not a hands-on one. What actually matters with this species is its role in a tank, and that role is a very different one from a centerpiece fish like the oscar.",
     "date": "2026-09-15",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Corydoras Catfish",
       "Fish Care",
@@ -5556,6 +5889,9 @@
     "excerpt": "Corydoras catfish are genuinely sensitive to two things above all else, substrate texture and water quality, and understanding that connection explains most of what shows up on this list.",
     "date": "2026-09-15",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Corydoras Catfish",
       "Fish Care",
@@ -5609,6 +5945,9 @@
     "excerpt": "Corydoras catfish are genuinely easy to house well once you get one specific decision right, what's on the bottom of the tank. Everything else about this species' care is fairly standard community-fish practice.",
     "date": "2026-09-15",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Corydoras Catfish",
       "Fish Care",
@@ -5666,6 +6005,9 @@
     "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
     "date": "2026-07-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Cost",
@@ -5709,6 +6051,9 @@
     "excerpt": "Why powdered crested gecko diet, not live insects, should be the actual staple, and how to tell a picky eater from a gecko that genuinely needs help.",
     "date": "2026-07-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Feeding",
@@ -5765,6 +6110,9 @@
     "excerpt": "Crested geckos are gentle and easy to handle once settled, but unlike leopard geckos, a dropped tail never grows back, which changes how carefully you should handle one.",
     "date": "2026-07-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Handling",
@@ -5808,6 +6156,9 @@
     "excerpt": "Nearly every crested gecko health problem traces back to calcium, humidity, and substrate choices. Get those right and most of this list never shows up.",
     "date": "2026-07-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Health",
@@ -5856,6 +6207,9 @@
     "excerpt": "Crested geckos need precise humidity to shed cleanly, stay hydrated, and thrive. Get it wrong and problems stack fast - here's exactly how to nail it.",
     "date": "2025-05-10",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Humidity",
@@ -5911,6 +6265,9 @@
     "excerpt": "Crested geckos flip the usual reptile setup logic. Where most lizards need a hot basking spot, this species needs you to actively avoid overheating them.",
     "date": "2026-07-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Crested Gecko",
       "Tank Setup",
@@ -5960,6 +6317,9 @@
     "excerpt": "Crows recognize human faces, make their own tools, and hold grudges for generations. The science of crow intelligence is wilder than you think.",
     "date": "2026-06-10",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "Fun Facts",
       "Birds"
@@ -5982,6 +6342,10 @@
     "excerpt": "Bottlenose dolphins really do use something like names for each other. The research behind that claim is narrower, and more interesting, than the headline.",
     "date": "2026-08-02",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life",
+      "Wild Animals"
+    ],
     "tags": [
       "Dolphins",
       "Ocean",
@@ -6008,6 +6372,9 @@
     "excerpt": "Bloat can kill a healthy dog within hours - the early signs, which breeds are most at risk, and why this is always a drive-to-the-vet-now emergency.",
     "date": "2026-07-09",
     "category": "Dogs",
+    "categories": [
+      "Dogs"
+    ],
     "tags": [
       "Dog",
       "Bloat",
@@ -6058,6 +6425,9 @@
     "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary invertebrate reputation doesn't come with a scary price tag.",
     "date": "2026-07-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Emperor Scorpion",
       "Cost",
@@ -6112,6 +6482,9 @@
     "excerpt": "Emperor scorpions have a reputation for being one of the more docile, beginner-friendly scorpion species, and that reputation is earned. None of that makes them a species built for regular handling.",
     "date": "2026-07-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Emperor Scorpion",
       "Handling",
@@ -6159,6 +6532,9 @@
     "excerpt": "Emperor scorpions are genuinely hardy when humidity and substrate depth are right, and most problems trace directly back to one of those two things being off.",
     "date": "2026-07-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Emperor Scorpion",
       "Health",
@@ -6212,6 +6588,9 @@
     "excerpt": "Emperor scorpion husbandry is genuinely simple once you internalize two priorities: substrate depth for burrowing, and humidity that stays consistently high.",
     "date": "2026-07-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Emperor Scorpion",
       "Enclosure Setup",
@@ -6266,6 +6645,9 @@
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide on this site.",
     "date": "2026-09-23",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Exotic Pet Laws",
       "Legal",
@@ -6316,6 +6698,9 @@
     "excerpt": "How to spot the telltale hair-loss pattern of ferret adrenal disease, why early spay and neuter age matters, and the treatment options that actually help.",
     "date": "2026-06-24",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Adrenal Disease",
@@ -6365,6 +6750,9 @@
     "excerpt": "Ferrets are moderately priced to buy, but they're genuinely the most expensive long-term pet on this site, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
     "date": "2026-08-03",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Cost",
@@ -6419,6 +6807,9 @@
     "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food is a same-day concern, not a wait-and-see one.",
     "date": "2026-07-24",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Feeding",
@@ -6471,6 +6862,9 @@
     "excerpt": "Ferrets are playful, curious, and intensely social, genuinely one of the more interactive pets on this site once socialized. The catch is that they explore the world with their mouths.",
     "date": "2026-08-03",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Handling",
@@ -6518,6 +6912,9 @@
     "excerpt": "Ferrets are genuinely healthy and low-maintenance as young adults. The real story with this species is what happens starting around age 2 to 3, when chronic endocrine disease becomes common enough that budgeting for it is realism, not pessimism.",
     "date": "2026-08-03",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Health",
@@ -6568,6 +6965,9 @@
     "excerpt": "Ferrets are legal pets almost everywhere in the US, with two real exceptions: California and Hawaii ban them outright, and New York City bans them locally even though the rest of New York State allows them.",
     "date": "2026-07-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Ferret",
       "Legal",
@@ -6606,6 +7006,9 @@
     "excerpt": "A ferret's cage matters, but it's genuinely only part of what this species needs. Ferret-proofing the room they play in is just as essential, and it's the part first-time owners most often underestimate.",
     "date": "2026-08-03",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Ferret",
       "Cage Setup",
@@ -6659,6 +7062,9 @@
     "excerpt": "Fire-bellied toads are genuinely inexpensive, and the setup cost here goes toward something a bit different than most amphibians on this site, real aquatic filtration, not just humidity control.",
     "date": "2026-09-19",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Fire-Bellied Toad",
       "Amphibian Care",
@@ -6715,6 +7121,9 @@
     "excerpt": "Fire-bellied toads are display animals, and there's a real, specific safety reason behind that recommendation, not just general amphibian caution.",
     "date": "2026-09-19",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Fire-Bellied Toad",
       "Amphibian Care",
@@ -6766,6 +7175,9 @@
     "excerpt": "Fire-bellied toads are a semi-aquatic species, and that single fact shapes nearly every health issue on this list, this is genuinely more like keeping a small aquarium than a typical terrestrial amphibian.",
     "date": "2026-09-19",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Fire-Bellied Toad",
       "Amphibian Care",
@@ -6817,6 +7229,9 @@
     "excerpt": "Fire-bellied toads need a genuinely different kind of setup than most amphibians on this site, real aquatic filtration matters here in a way it doesn't for a more purely terrestrial species.",
     "date": "2026-09-19",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Fire-Bellied Toad",
       "Amphibian Care",
@@ -6873,6 +7288,9 @@
     "excerpt": "Bearded dragon, leopard gecko, ball python, crested gecko, corn snake, five reptiles that earn their beginner reputation honestly, each for a slightly different reason.",
     "date": "2026-07-12",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Bearded Dragon",
       "Leopard Gecko",
@@ -6913,6 +7331,9 @@
     "excerpt": "An axolotl, a goldfish, a chinchilla, and a hermit crab, four pets that each break at least one assumption people bring to them, and each rewards getting that one detail right.",
     "date": "2026-07-21",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Axolotl",
       "Goldfish",
@@ -6948,6 +7369,9 @@
     "excerpt": "Gargoyle geckos sit at an interesting price point: genuinely affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
     "date": "2026-07-24",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Cost",
@@ -7000,6 +7424,9 @@
     "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
     "date": "2026-07-30",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Feeding",
@@ -7056,6 +7483,9 @@
     "excerpt": "Gargoyle geckos are docile and slow-moving as adults, genuinely one of the calmer arboreal geckos to handle, though juveniles are a different story entirely.",
     "date": "2026-07-24",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Handling",
@@ -7103,6 +7533,9 @@
     "excerpt": "Gargoyle gecko health problems overwhelmingly come down to two husbandry errors: an enclosure that's too wet, or one that doesn't give the gecko enough hiding spots.",
     "date": "2026-07-24",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Health",
@@ -7155,6 +7588,9 @@
     "excerpt": "Most reptile care is about adding warmth. Gargoyle gecko care is mostly about not overdoing it, this is a cool-climate species that does fine at room temperature.",
     "date": "2026-07-24",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Tank Setup",
@@ -7209,6 +7645,9 @@
     "excerpt": "Gargoyle, mourning, and African fat-tailed geckos barely share a care sheet. One needs to stay cool, one needs belly heat, one you'll never touch, one you'll hold daily, one digs while the other two climb.",
     "date": "2026-07-27",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Gargoyle Gecko",
       "Mourning Gecko",
@@ -7252,6 +7691,9 @@
     "excerpt": "A slow-maturing large breed with a genuine, breed-linked digestive condition to know about. Here's a real feeding schedule and the one appetite change that isn't what it looks like.",
     "date": "2026-07-28",
     "category": "Dogs",
+    "categories": [
+      "Dogs"
+    ],
     "tags": [
       "German Shepherd",
       "Feeding",
@@ -7306,6 +7748,9 @@
     "excerpt": "Giant African millipedes are genuinely inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
     "date": "2026-09-14",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Giant Millipede",
       "Invertebrate Care",
@@ -7362,6 +7807,9 @@
     "excerpt": "Giant African millipedes are docile, slow-moving, and completely non-aggressive, genuinely one of the safest invertebrates for a keeper of any experience level to handle. The real risk here runs in a direction you might not expect.",
     "date": "2026-09-14",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Giant Millipede",
       "Invertebrate Care",
@@ -7413,6 +7861,9 @@
     "excerpt": "Giant millipedes are hardy, and nearly every serious issue in this species traces back to substrate moisture, either too little or, in a couple of specific cases, conditions that stay too consistently wet.",
     "date": "2026-09-14",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Giant Millipede",
       "Invertebrate Care",
@@ -7464,6 +7915,9 @@
     "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real rule is a standing USDA import permit, plus real state variation from Florida's named permit to Oregon's outright approval.",
     "date": "2026-07-23",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Giant African Millipede",
       "Legal",
@@ -7502,6 +7956,9 @@
     "excerpt": "Giant millipede care comes down almost entirely to one thing done well, deep, correctly moist organic substrate. Get that right and this is a genuinely low-maintenance pet to keep long-term.",
     "date": "2026-09-14",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Giant Millipede",
       "Invertebrate Care",
@@ -7559,6 +8016,9 @@
     "excerpt": "Goldens are famously food-motivated, which makes portion control and slow feeding matter more than the schedule itself. Here's a real feeding routine and how to read a Golden that's actually off food.",
     "date": "2026-07-26",
     "category": "Dogs",
+    "categories": [
+      "Dogs"
+    ],
     "tags": [
       "Golden Retriever",
       "Feeding",
@@ -7612,6 +8072,9 @@
     "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but proper goldfish keeping requires a genuinely large tank and serious filtration, exactly the part the classic fish-in-a-bowl image leaves out entirely.",
     "date": "2026-07-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Cost",
@@ -7661,6 +8124,9 @@
     "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to actually feed, and how to read appetite loss.",
     "date": "2026-07-26",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Feeding",
@@ -7716,6 +8182,9 @@
     "excerpt": "Like most fish, goldfish should not be routinely picked up by hand. This isn't an overcautious rule, their protective slime coat is a genuine, physical barrier against disease, and bare hands remove it on contact.",
     "date": "2026-07-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Handling",
@@ -7759,6 +8228,9 @@
     "excerpt": "Goldfish are hardier than their reputation suggests when kept in the right conditions, but a handful of issues come up often enough to be worth knowing before they show up in your own tank.",
     "date": "2026-07-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Health",
@@ -7805,6 +8277,9 @@
     "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you actually need is bigger than most people expect for what looks like a small, simple fish.",
     "date": "2026-07-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Tank Setup",
@@ -7854,6 +8329,9 @@
     "excerpt": "Why the goldfish bowl and 3-second-memory myths are wrong, what undersized tanks really do to goldfish, and the true space requirements by variety.",
     "date": "2026-06-26",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Goldfish",
       "Tank Size",
@@ -7907,6 +8385,9 @@
     "excerpt": "Green anoles are genuinely one of the cheapest reptiles you can buy, and that low price is exactly why this species is so often underestimated and under-housed.",
     "date": "2026-09-17",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Green Anole",
       "Anole Care",
@@ -7965,6 +8446,9 @@
     "excerpt": "Green anoles are genuinely delicate compared to the larger lizards already covered on this site, and that size difference should shape how you think about handling this species from the start.",
     "date": "2026-09-17",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Green Anole",
       "Anole Care",
@@ -8016,6 +8500,9 @@
     "excerpt": "Green anoles are small enough that health problems can progress fast, which makes recognizing the early signs genuinely important with this species.",
     "date": "2026-09-17",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Green Anole",
       "Anole Care",
@@ -8067,6 +8554,9 @@
     "excerpt": "Green anoles need genuinely more setup investment than their small size and low price suggest, tropical humidity, real UVB, and careful heat placement all matter here.",
     "date": "2026-09-17",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Green Anole",
       "Anole Care",
@@ -8125,6 +8615,9 @@
     "excerpt": "A tiny lizard, a four-foot lizard, a bright little amphibian, and a burrowing salamander all get judged by their size. In every case, that first impression is the wrong one to trust.",
     "date": "2026-09-21",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Green Anole",
       "Argentine Tegu",
@@ -8176,6 +8669,9 @@
     "excerpt": "A rodent, a bird, a fish, and a spider, four pets that don't have much in common except that each comes with a single piece of information that matters more than everything else in its care.",
     "date": "2026-07-17",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Guinea Pig",
       "Cockatiel",
@@ -8215,6 +8711,9 @@
     "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs are social animals that need a same-species companion, so most of the real budgeting math here is really about caring for two, not one.",
     "date": "2026-07-16",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Cost",
@@ -8263,6 +8762,9 @@
     "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not a wait-and-see approach.",
     "date": "2026-07-26",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Feeding",
@@ -8319,6 +8821,9 @@
     "excerpt": "Guinea pigs are prey animals, and being lifted off the ground is, to their instincts, exactly what a predator attack looks like. That doesn't mean they can't become comfortable with handling, it means the approach matters more than it would with a less nervous pet.",
     "date": "2026-07-16",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Handling",
@@ -8362,6 +8867,9 @@
     "excerpt": "Guinea pigs mask illness well, which means routine care matters more than it might seem to when everything looks fine. A handful of conditions come up often enough that every owner should be able to recognize them.",
     "date": "2026-07-16",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Health",
@@ -8409,6 +8917,9 @@
     "excerpt": "Guinea pigs can't make their own vitamin C, unlike almost every other small pet. Here's what scurvy actually looks like and why pellets alone aren't enough.",
     "date": "2026-07-09",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Scurvy",
@@ -8460,6 +8971,9 @@
     "excerpt": "Guinea pig care is fairly forgiving once the basics are right, but there's one dietary detail that genuinely sets this species apart from almost every other small pet, and getting it wrong has real health consequences.",
     "date": "2026-07-16",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Guinea Pig",
       "Cage Setup",
@@ -8509,6 +9023,9 @@
     "excerpt": "Guppies are about as affordable as pets get on this entire site, cheap to buy and cheap to keep. The cost most new owners forget to budget for isn't money, it's more guppies than they planned on.",
     "date": "2026-08-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Guppy",
       "Cost",
@@ -8563,6 +9080,9 @@
     "excerpt": "Guppies are an observation and enjoyment pet, not a hands-on one. The real thing every guppy owner needs to understand isn't handling technique, it's breeding behavior.",
     "date": "2026-08-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Guppy",
       "Handling",
@@ -8610,6 +9130,9 @@
     "excerpt": "Nearly everything on this list connects back to one root cause: water quality. Guppies are hardy fish, but stressed, poorly maintained water opens the door to every condition below.",
     "date": "2026-08-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Guppy",
       "Health",
@@ -8662,6 +9185,9 @@
     "excerpt": "Guppies are genuinely one of the more forgiving fish to house well. A warm, cycled tank with gentle filtration covers most of what this species needs.",
     "date": "2026-08-14",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Guppy",
       "Tank Setup",
@@ -8715,6 +9241,9 @@
     "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
     "date": "2026-08-06",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hamster",
       "Cost",
@@ -8771,6 +9300,9 @@
     "excerpt": "Hamster temperament varies more by species than most people expect. A Syrian and a Roborovski, both sold under the same 'hamster' label, can be genuinely different pets to hold.",
     "date": "2026-08-06",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hamster",
       "Handling",
@@ -8818,6 +9350,9 @@
     "excerpt": "Hamsters are hardy for their size, but their short lifespan means health issues can progress fast. Knowing the warning signs, especially for the single most dangerous one, matters more here than with most pets.",
     "date": "2026-08-06",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hamster",
       "Health",
@@ -8870,6 +9405,9 @@
     "excerpt": "A cheap animal with an expensive setup. A lizard whose whole care plan depends on where it was born. And two frogs that turn out to be near-opposites of each other.",
     "date": "2026-08-10",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Hamster",
       "Blue-Tongued Skink",
@@ -8913,6 +9451,9 @@
     "excerpt": "Hamster housing standards have shifted significantly in recent years, and the small wire cages sold as 'hamster starter kits' fall well short of current welfare recommendations. Getting size and bedding depth right is most of what matters here.",
     "date": "2026-08-06",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hamster",
       "Tank Setup",
@@ -8966,6 +9507,9 @@
     "excerpt": "Hamster or guinea pig? The honest differences in space, social needs, lifespan, and daily care - not just which one looks cuter in the store.",
     "date": "2026-07-09",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hamster",
       "Guinea Pig",
@@ -9017,6 +9561,9 @@
     "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal. Several states and cities ban or restrict ownership outright, and that has to be settled before a single dollar gets budgeted.",
     "date": "2026-08-12",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hedgehog",
       "Cost",
@@ -9073,6 +9620,9 @@
     "excerpt": "Hedgehogs are solitary, nocturnal, and defensive by default, and understanding their first-contact reflexes matters more with this species than with almost any other small pet.",
     "date": "2026-08-12",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hedgehog",
       "Handling",
@@ -9120,6 +9670,9 @@
     "excerpt": "Hedgehogs face a mix of genetic, husbandry-related, and age-related conditions, and one of them, a specific neurological disease, is worth understanding clearly since it's often misrepresented in how commonly it actually occurs.",
     "date": "2026-08-12",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hedgehog",
       "Health",
@@ -9172,6 +9725,9 @@
     "excerpt": "Hedgehog housing is fairly straightforward once you understand one hard rule: this species cannot tolerate a cold enclosure, and getting temperature wrong isn't a minor mistake, it's genuinely dangerous.",
     "date": "2026-08-12",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Hedgehog",
       "Tank Setup",
@@ -9226,6 +9782,9 @@
     "excerpt": "Hedgehogs are lactose intolerant — milk and cheese can cause serious digestive problems. Learn why dairy is dangerous for hedgehogs despite popular myth.",
     "date": "2026-06-08",
     "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
     "tags": [
       "Pet Care",
       "Small & Exotic Pets",
@@ -9250,6 +9809,9 @@
     "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
     "date": "2026-07-21",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Hermit Crab",
       "Cost",
@@ -9300,6 +9862,9 @@
     "excerpt": "Hermit crabs are prey animals, and they're not really a pet built for regular handling the way a guinea pig or a chinchilla is. Minimal, gentle, purposeful handling is the right approach here, not casual daily interaction.",
     "date": "2026-07-21",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Hermit Crab",
       "Handling",
@@ -9343,6 +9908,9 @@
     "excerpt": "Here's the thing to understand upfront about hermit crab health: there's essentially no practical veterinary care available for this species, similar to the situation with pet tarantulas. That reshapes everything about how to approach their wellbeing, husbandry and prevention do nearly all of the work.",
     "date": "2026-07-21",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Hermit Crab",
       "Health",
@@ -9390,6 +9958,9 @@
     "excerpt": "Hermit crab care is genuinely different from most small-pet setups, this is a species that needs both land and water access, and its most important requirement, humidity, is the one first-time owners most often get wrong.",
     "date": "2026-07-21",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Hermit Crab",
       "Tank Setup",
@@ -9440,6 +10011,9 @@
     "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
     "date": "2026-08-04",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Hognose Snake",
       "Cost",
@@ -9492,6 +10066,9 @@
     "excerpt": "Western hognose snakes have built their reputation on a dramatic defensive display that looks alarming and means almost the opposite of what it appears to. Understanding that display is the whole key to handling this species well.",
     "date": "2026-08-04",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Hognose Snake",
       "Handling",
@@ -9539,6 +10116,9 @@
     "excerpt": "Western hognoses are hardy snakes, and most of what shows up on this list traces back to substrate, humidity, or feeding habits, all fully within an owner's control.",
     "date": "2026-08-04",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Hognose Snake",
       "Health",
@@ -9591,6 +10171,9 @@
     "excerpt": "Hognose snakes are mildly rear-fanged, but that doesn't make them a regulated venomous species anywhere we checked. The real restriction to watch for is Georgia, which bans keeping native hognose as pets regardless of captive-bred origin.",
     "date": "2026-07-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Hognose Snake",
       "Legal",
@@ -9629,6 +10212,9 @@
     "excerpt": "Western hognose care comes down to a fairly short list of priorities: keep it dry, keep the substrate deep enough to burrow in, and get the heat source right.",
     "date": "2026-08-04",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Hognose Snake",
       "Tank Setup",
@@ -9682,6 +10268,9 @@
     "excerpt": "Meet the honey badger: Guinness World Records' most fearless animal, a venomous-snake-eating genius that punches way above its weight.",
     "date": "2026-06-10",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "Fun Facts",
       "Wild Animals"
@@ -9704,6 +10293,10 @@
     "excerpt": "There were 65 unprovoked shark bites worldwide in 2025. In the same period, people killed roughly 80 million sharks. Here is what the data actually shows.",
     "date": "2026-07-31",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life",
+      "Wild Animals"
+    ],
     "tags": [
       "Sharks",
       "Ocean",
@@ -9730,6 +10323,10 @@
     "excerpt": "Turritopsis dohrnii really can reverse its life cycle and turn back into a polyp. What it cannot do is survive being eaten, and most of them are.",
     "date": "2026-08-01",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life",
+      "Wild Animals"
+    ],
     "tags": [
       "Jellyfish",
       "Ocean",
@@ -9756,6 +10353,9 @@
     "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
     "date": "2026-06-28",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Invertebrates",
       "Molting",
@@ -9807,6 +10407,9 @@
     "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon already covered on this site, but the two species diverge in some genuinely important ways worth understanding before you buy.",
     "date": "2026-09-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Jackson's Chameleon",
       "Chameleon Care",
@@ -9865,6 +10468,9 @@
     "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, genuinely more laid-back than the veiled chameleon already covered on this site, but docile for a chameleon still means minimal handling.",
     "date": "2026-09-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Jackson's Chameleon",
       "Chameleon Care",
@@ -9916,6 +10522,9 @@
     "excerpt": "Jackson's chameleons face many of the same core reptile health risks as the veiled chameleon already covered on this site, with a couple of details specific to this species worth knowing.",
     "date": "2026-09-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Jackson's Chameleon",
       "Chameleon Care",
@@ -9967,6 +10576,9 @@
     "excerpt": "Jackson's chameleon husbandry looks similar to the veiled chameleon's on paper, tall screen enclosure, misting, UVB, but the actual temperature numbers run meaningfully cooler.",
     "date": "2026-09-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Jackson's Chameleon",
       "Chameleon Care",
@@ -10021,6 +10633,9 @@
     "excerpt": "Every category on this site has its showstopper, the veiled chameleon, the talking parrot, the tarantula everyone recognizes, the oscar with a personality. These four are the quieter relatives standing just behind that spotlight, and each one holds up fine on its own terms.",
     "date": "2026-09-16",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Jackson's Chameleon",
       "Canary",
@@ -10072,6 +10687,9 @@
     "excerpt": "Jumping spiders, the regal jumping spider especially, are one of the most affordable and low space pets on this entire site, genuinely accessible even on a tight budget.",
     "date": "2026-08-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Jumping Spider",
       "Cost",
@@ -10124,6 +10742,9 @@
     "excerpt": "Let the abdomen do the talking. Here's a real feeding schedule by life stage, safe prey, and how to tell normal premolt fasting from a jumping spider that actually needs help.",
     "date": "2026-07-28",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Jumping Spider",
       "Feeding",
@@ -10177,6 +10798,9 @@
     "excerpt": "Jumping spiders are genuinely different from most spiders kept as pets, and that difference starts with how they actually hunt.",
     "date": "2026-08-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Jumping Spider",
       "Handling",
@@ -10223,6 +10847,9 @@
     "excerpt": "Jumping spiders are genuinely hardy when humidity stays consistent, and the large majority of health problems in this species trace back to that one factor.",
     "date": "2026-08-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Jumping Spider",
       "Health",
@@ -10273,6 +10900,9 @@
     "excerpt": "Jumping spider setups are small, inexpensive, and genuinely simple once you understand the one factor that matters most: keeping humidity consistent.",
     "date": "2026-08-31",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Jumping Spider",
       "Tank Setup",
@@ -10325,6 +10955,9 @@
     "excerpt": "A pond fish, a parrot, a turtle, and a scorpion, each one gets sold on an assumption that turns out to be backwards once you actually look at the animal.",
     "date": "2026-08-01",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Koi",
       "Green Cheek Conure",
@@ -10368,6 +11001,9 @@
     "excerpt": "The fish itself is often the smallest number in the whole equation. Koi ownership is really pond ownership, and that's where the real budget lives.",
     "date": "2026-07-28",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Koi",
       "Cost",
@@ -10421,6 +11057,9 @@
     "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the real seasonal schedule, what to feed, and why stopping feeding in cold water can save a koi's life.",
     "date": "2026-07-28",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Koi",
       "Feeding",
@@ -10476,6 +11115,9 @@
     "excerpt": "Koi are social, hardy, and genuinely food motivated, but this isn't a fish you pick up and hold. Physical handling carries real risk, both to the fish and to you.",
     "date": "2026-07-28",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Koi",
       "Handling",
@@ -10523,6 +11165,9 @@
     "excerpt": "Across koi keeping resources, one theme repeats constantly: poor water quality is behind most health problems. Get that right and most of this list never shows up.",
     "date": "2026-07-28",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Koi",
       "Health",
@@ -10574,6 +11219,9 @@
     "excerpt": "Koi husbandry is really water management at scale. Get the volume, filtration, and depth right, and koi are genuinely hardy, low-drama fish.",
     "date": "2026-07-28",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Koi",
       "Pond Setup",
@@ -10626,6 +11274,9 @@
     "excerpt": "Leaf-tailed geckos are genuinely the most expensive gecko covered on this site, and the price reflects both their striking camouflage and the real skill involved in breeding them successfully.",
     "date": "2026-09-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leaf-Tailed Gecko",
       "Gecko Care",
@@ -10682,6 +11333,9 @@
     "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
     "date": "2026-09-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leaf-Tailed Gecko",
       "Gecko Care",
@@ -10733,6 +11387,9 @@
     "excerpt": "Leaf-tailed geckos are genuinely delicate, and dehydration specifically deserves more attention with this species than with almost any other reptile on this site.",
     "date": "2026-09-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leaf-Tailed Gecko",
       "Gecko Care",
@@ -10784,6 +11441,9 @@
     "excerpt": "Leaf-tailed gecko care flips a lot of typical reptile assumptions. This species wants to stay cool, not warm, and humidity management is genuinely the central skill in keeping one healthy.",
     "date": "2026-09-07",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leaf-Tailed Gecko",
       "Gecko Care",
@@ -10840,6 +11500,9 @@
     "excerpt": "A leaf-tailed gecko, a California kingsnake, a box turtle, and an oscar fish, none of the four make much sense on their own, each is best understood by comparing it to an animal already covered on this site.",
     "date": "2026-09-11",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Leaf-Tailed Gecko",
       "California Kingsnake",
@@ -10891,6 +11554,9 @@
     "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month after that.",
     "date": "2026-07-06",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Cost",
@@ -10938,6 +11604,9 @@
     "excerpt": "How often to feed a leopard gecko by age, what they actually eat, and the real reasons they refuse food, from a normal shed to something worth a vet visit.",
     "date": "2026-07-24",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Feeding",
@@ -10993,6 +11662,9 @@
     "excerpt": "Leopard geckos tolerate handling well once settled, but their single biggest physical vulnerability, tail loss, is the one thing every owner needs to understand first.",
     "date": "2026-07-06",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Handling",
@@ -11036,6 +11708,9 @@
     "excerpt": "Leopard geckos are generally hardy, but stick tail disease has no cure and is easy to miss early. Here's what every owner should know how to recognize.",
     "date": "2026-07-06",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Health",
@@ -11084,6 +11759,9 @@
     "excerpt": "Leopard geckos have a reputation for being low-maintenance, and mostly they are, but a few details around humidity and heat placement matter more than the simplicity suggests.",
     "date": "2026-07-06",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Tank Setup",
@@ -11132,6 +11810,9 @@
     "excerpt": "Leopard gecko temperatures made simple: warm hide 88-92°F, cool side 70-77°F, the right heating methods, and the common mistakes that cause illness.",
     "date": "2025-05-03",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Leopard Gecko",
       "Temperature",
@@ -11185,6 +11866,9 @@
     "excerpt": "Leopard gecko or crested gecko? The real differences in diet, enclosure shape, heating needs, and tail regrowth - not just which one looks friendlier at the pet store.",
     "date": "2026-07-09",
     "category": "Comparisons",
+    "categories": [
+      "Comparisons"
+    ],
     "tags": [
       "Leopard Gecko",
       "Crested Gecko",
@@ -11239,6 +11923,9 @@
     "excerpt": "Lovebirds are one of the more affordable parrots to buy, but the name suggests something gentler than what you actually get, and the biggest cost decision isn't a price tag at all, it's whether you buy one bird or two.",
     "date": "2026-08-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Lovebird",
       "Cost",
@@ -11292,6 +11979,9 @@
     "excerpt": "The name suggests a sweet, gentle pet. The reality is more complicated, lovebirds are affectionate and bold, but genuinely known for being nippy and territorial, and the single biggest factor in how tame yours becomes is whether you keep one bird or two.",
     "date": "2026-08-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Lovebird",
       "Handling",
@@ -11339,6 +12029,9 @@
     "excerpt": "Lovebirds hide illness well, a survival instinct that means by the time symptoms are obvious, a problem is often more advanced than it would be in a more expressive pet. A handful of conditions come up often enough to know in advance.",
     "date": "2026-08-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Lovebird",
       "Health",
@@ -11391,6 +12084,9 @@
     "excerpt": "Lovebird housing has a few specific safety details that matter more than they might seem to at first glance, bar spacing especially. Get those right, along with size and material, and the rest of the setup is fairly straightforward.",
     "date": "2026-08-13",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Lovebird",
       "Cage Setup",
@@ -11443,6 +12139,9 @@
     "excerpt": "Madagascar hissing cockroaches are genuinely the most affordable pet on this entire site, both to buy and to keep, and the tradeoff is a display and observation pet rather than a handling-focused one.",
     "date": "2026-08-27",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Madagascar Hissing Cockroach",
       "Cost",
@@ -11496,6 +12195,9 @@
     "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe produce, and how to tell normal nocturnal habits from real trouble.",
     "date": "2026-07-27",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Madagascar Hissing Cockroach",
       "Feeding",
@@ -11548,6 +12250,9 @@
     "excerpt": "Madagascar hissing cockroaches are docile for an insect, genuinely more so than most people expect, but this is fundamentally a display and observation pet, not a handling-focused one.",
     "date": "2026-08-27",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Madagascar Hissing Cockroach",
       "Handling",
@@ -11595,6 +12300,9 @@
     "excerpt": "This species is genuinely hardy, and nearly everything that goes wrong traces back to humidity or basic enclosure hygiene, both easy to get right once you know what to watch for.",
     "date": "2026-08-27",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Madagascar Hissing Cockroach",
       "Health",
@@ -11645,6 +12353,9 @@
     "excerpt": "This is genuinely one of the simpler enclosures on this entire site to set up correctly, with one specific detail that matters more than anything else: keeping them from climbing out.",
     "date": "2026-08-27",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Madagascar Hissing Cockroach",
       "Enclosure Setup",
@@ -11698,6 +12409,9 @@
     "excerpt": "Mantis shrimp punch faster than a bullet and see colors humans can't imagine. The wild science behind their vision, strike, and love lives.",
     "date": "2026-06-10",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "Fun Facts",
       "Wild Animals",
@@ -11722,6 +12436,9 @@
     "excerpt": "Milk snakes span a wide price range by subspecies and morph, $60 to $500 for the animal itself, but even the high end stays genuinely affordable next to many other pet reptiles.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Milk Snake",
       "Cost",
@@ -11775,6 +12492,9 @@
     "excerpt": "Milk snakes are docile overall and generally tolerate handling well, but they run a bit muskier and flightier than the corn snake, especially while young, plus one firm rule about never housing two together.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Milk Snake",
       "Handling",
@@ -11822,6 +12542,9 @@
     "excerpt": "Milk snakes are hardy, and most of what shows up on this list traces back to enclosure moisture and temperature, both fully within an owner's control.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Milk Snake",
       "Health",
@@ -11872,6 +12595,9 @@
     "excerpt": "Milk snake care closely mirrors the corn snake's, familiar territory if you've kept one before, with a couple of details specific to this species worth getting right.",
     "date": "2026-08-27",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Milk Snake",
       "Tank Setup",
@@ -11925,6 +12651,9 @@
     "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
     "date": "2026-07-25",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Mourning Gecko",
       "Cost",
@@ -11977,6 +12706,9 @@
     "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own. Here's a real feeding schedule and why the numbers vary so much between care sheets.",
     "date": "2026-07-31",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Mourning Gecko",
       "Feeding",
@@ -12033,6 +12765,9 @@
     "excerpt": "Mourning geckos are consistently described the same way across every serious care source: this is a look-but-don't-touch pet, not a handling species.",
     "date": "2026-07-25",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Mourning Gecko",
       "Handling",
@@ -12080,6 +12815,9 @@
     "excerpt": "Mourning geckos are hardy in a properly humid, planted enclosure, but one biological fact shapes its health risks more than anything else: every animal is female, and every mature female lays eggs regularly, with or without a mate present.",
     "date": "2026-07-25",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Mourning Gecko",
       "Health",
@@ -12132,6 +12870,9 @@
     "excerpt": "Mourning gecko setups look more like a miniature planted terrarium than a typical reptile tank, this is a display colony, not a single-animal enclosure.",
     "date": "2026-07-25",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Mourning Gecko",
       "Tank Setup",
@@ -12185,6 +12926,9 @@
     "excerpt": "Narwhals are real, and they are stranger than fiction. Discover the Arctic whale behind the unicorn legend, its mysterious tusk, and more wild facts.",
     "date": "2026-07-30",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life"
+    ],
     "tags": [
       "Aquatic Life",
       "Wild Animals",
@@ -12208,6 +12952,9 @@
     "excerpt": "Neon tetras are genuinely one of the most affordable fish you can keep, cheap individually and cheap as a group. The real cost planning here starts with buying several at once, not just one.",
     "date": "2026-08-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Neon Tetra",
       "Cost",
@@ -12263,6 +13010,9 @@
     "excerpt": "Neon tetras are an observation pet, not a hands-on one. The real welfare consideration with this species isn't handling technique at all, it's group size, and getting that number right changes everything.",
     "date": "2026-08-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Neon Tetra",
       "Handling",
@@ -12310,6 +13060,9 @@
     "excerpt": "Most neon tetra health problems are treatable and trace back to water quality. One, though, is genuinely different, incurable, and named after this species specifically.",
     "date": "2026-08-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Neon Tetra",
       "Health",
@@ -12362,6 +13115,9 @@
     "excerpt": "Neon tetras come from soft, dim, tannin-stained blackwater streams, and the closer your tank setup gets to that origin, the better this fish looks and behaves.",
     "date": "2026-08-20",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Neon Tetra",
       "Tank Setup",
@@ -12417,6 +13173,9 @@
     "excerpt": "Oscars are cheap to buy and genuinely expensive to house properly. The tank and filtration, not the fish, are where this species' real budget goes.",
     "date": "2026-09-10",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Oscar Fish",
       "Fish Care",
@@ -12472,6 +13231,9 @@
     "excerpt": "Every other fish on this site is an observation animal built around feeding and water care. Oscars are genuinely different, intelligent enough to recognize their keeper and develop real individual personality.",
     "date": "2026-09-10",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Oscar Fish",
       "Fish Care",
@@ -12519,6 +13281,9 @@
     "excerpt": "Oscars are hardy fish in a properly sized, well-filtered tank, and one condition in particular is common enough, and specific enough, that every oscar owner should recognize it immediately.",
     "date": "2026-09-10",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Oscar Fish",
       "Fish Care",
@@ -12572,6 +13337,9 @@
     "excerpt": "Oscars are the largest, messiest fish covered here, and the setup needs to genuinely reflect that from day one, not grow into it gradually.",
     "date": "2026-09-10",
     "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
     "tags": [
       "Oscar Fish",
       "Fish Care",
@@ -12626,6 +13394,9 @@
     "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and genuinely cheap to set up. The real financial risk isn't routine cost, it's a preventable vet bill.",
     "date": "2026-08-09",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Pacman Frog",
       "Cost",
@@ -12679,6 +13450,9 @@
     "excerpt": "Pacman frogs will genuinely eat until they're sick, so portion control matters more than the schedule. Here's how much is too much, what to feed, and when a long fast is actually normal.",
     "date": "2026-07-29",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Pacman Frog",
       "Feeding",
@@ -12731,6 +13505,9 @@
     "excerpt": "Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves near their face. That's exactly why this isn't a species built for regular handling.",
     "date": "2026-08-09",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Pacman Frog",
       "Handling",
@@ -12778,6 +13555,9 @@
     "excerpt": "Pacman frogs are hardy, but obesity and impaction, both directly tied to how they're fed and housed, account for the vast majority of health issues in this species.",
     "date": "2026-08-09",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Pacman Frog",
       "Health",
@@ -12830,6 +13610,9 @@
     "excerpt": "Pacman frogs are genuinely easy to house correctly, they're sedentary burrowers that don't need much space. The setup mistakes that actually cause problems for this species are specific and avoidable.",
     "date": "2026-08-09",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Pacman Frog",
       "Tank Setup",
@@ -12883,6 +13666,9 @@
     "excerpt": "The pangolin has no teeth, a tongue anchored near its pelvis, and a stomach full of stones. It is also the most trafficked wild mammal on Earth.",
     "date": "2026-08-01",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Pangolins",
       "Wild Animals",
@@ -12909,6 +13695,9 @@
     "excerpt": "Praying mantises are one of the most affordable exotic pets available, genuinely cheap to buy and cheap to keep, with one important caveat about how long you'll actually have one.",
     "date": "2026-08-20",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Praying Mantis",
       "Cost",
@@ -12962,6 +13751,9 @@
     "excerpt": "Praying mantises are calm around people and rarely bite, some can even be tamed to walk across your hands. That's still not a reason to handle one often, this is a genuinely fragile animal.",
     "date": "2026-08-20",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Praying Mantis",
       "Handling",
@@ -13009,6 +13801,9 @@
     "excerpt": "Praying mantis health comes down almost entirely to two things: humidity and undisturbed molting. Get those right, and this is a genuinely low-maintenance pet for the short time you'll have it.",
     "date": "2026-08-20",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Praying Mantis",
       "Health",
@@ -13061,6 +13856,9 @@
     "excerpt": "What a praying mantis ootheca is, whether it can be fertile without a male, how to care for it, and what to do when dozens of nymphs hatch at once.",
     "date": "2026-06-30",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Praying Mantis",
       "Ootheca",
@@ -13113,6 +13911,9 @@
     "excerpt": "Mantis enclosures are small, cheap, and simple to set up correctly, once you understand why height matters more than any other dimension for this species.",
     "date": "2026-08-20",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Praying Mantis",
       "Enclosure Setup",
@@ -13166,6 +13967,9 @@
     "excerpt": "Rabbits and budgies are two of the most commonly kept pets outside of cats and dogs, and both are, more often than not, housed in something significantly smaller than they actually need.",
     "date": "2026-07-13",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Rabbit",
       "Budgie",
@@ -13204,6 +14008,9 @@
     "excerpt": "Rabbits have a reputation as a simple starter pet, but the real cost picture is bigger than the low adoption fee suggests, especially once spay/neuter is factored in.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "Cost",
@@ -13253,6 +14060,9 @@
     "excerpt": "Unlimited hay, measured pellets, and why a rabbit that skips even a single meal needs same-day attention. Here's a real feeding schedule and how to read a rabbit that's stopped eating.",
     "date": "2026-07-27",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "Feeding",
@@ -13309,6 +14119,9 @@
     "excerpt": "Rabbit GI stasis can turn fatal within hours - the early warning signs, why unlimited hay matters so much, and when it becomes an emergency vet visit.",
     "date": "2026-07-01",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "GI Stasis",
@@ -13359,6 +14172,9 @@
     "excerpt": "Rabbits are more physically fragile than most first-time owners expect. An unsupported or panicked rabbit can genuinely injure itself trying to escape your grip.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "Handling",
@@ -13402,6 +14218,9 @@
     "excerpt": "Rabbits need a rabbit-savvy exotic vet, not a standard small-animal clinic. Here's what to watch for, from GI stasis to dental disease, and when it's a true emergency.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "Health",
@@ -13448,6 +14267,9 @@
     "excerpt": "Rabbit housing guidance has shifted substantially. The space rabbits actually need is much larger than what's traditionally been sold as a starter cage.",
     "date": "2026-07-13",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Rabbit",
       "Housing",
@@ -13495,6 +14317,9 @@
     "excerpt": "Red-eared sliders are sold cheap and small, which is exactly what makes their real cost so easy to underestimate. The animal itself is genuinely inexpensive. What it grows into is not.",
     "date": "2026-07-30",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Cost",
@@ -13548,6 +14373,9 @@
     "excerpt": "Why a red-eared slider can only eat while submerged, how the protein-to-plant ratio shifts as they grow, and how to tell brumation from real trouble.",
     "date": "2026-07-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Feeding",
@@ -13602,6 +14430,9 @@
     "excerpt": "Red-eared sliders are curious and food-motivated, many learn to recognize their keeper, but recognition isn't affection in the way it is with a mammal, and treating it that way misreads what this species actually wants.",
     "date": "2026-07-30",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Handling",
@@ -13649,6 +14480,9 @@
     "excerpt": "Most problems in captive red-eared sliders trace back to one of three husbandry failures: inadequate UVB, poor water quality, or an unbalanced diet.",
     "date": "2026-07-30",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Health",
@@ -13701,6 +14535,9 @@
     "excerpt": "There's no federal ban on owning a red-eared slider, only a 1975 rule against selling tiny ones. The real restrictions come from state invasive-species laws, and Colorado just added a big one with a deadline one week away.",
     "date": "2026-07-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Legal",
@@ -13739,6 +14576,9 @@
     "excerpt": "The setup that suits a quarter-sized hatchling looks nothing like what an adult red-eared slider actually needs, and the gap between the two is where most first-time keepers get caught out.",
     "date": "2026-07-30",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Red-Eared Slider",
       "Tank Setup",
@@ -13792,6 +14632,9 @@
     "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
     "date": "2025-04-05",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Shedding",
       "Health",
@@ -13845,6 +14688,9 @@
     "excerpt": "Russian tortoises are genuinely one of the more approachable tortoises to own, both in price and, unlike the sulcata already covered on this site, in the fact that this species can live its entire life indoors.",
     "date": "2026-09-03",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Russian Tortoise",
       "Cost",
@@ -13902,6 +14748,9 @@
     "excerpt": "Russian tortoises are hardy and generally tolerant, but like most tortoises, this isn't really a species built for regular handling, it's better understood as an observation pet with occasional, careful interaction.",
     "date": "2026-09-03",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Russian Tortoise",
       "Handling",
@@ -13953,6 +14802,9 @@
     "excerpt": "Russian tortoises are hardy, and most health problems trace back to a handful of husbandry basics, temperature, humidity, and diet, that are genuinely within an owner's control.",
     "date": "2026-09-03",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Russian Tortoise",
       "Health",
@@ -14003,6 +14855,9 @@
     "excerpt": "Russian tortoise care is genuinely manageable indoors for this species' entire life, and getting the enclosure type, temperature, and humidity right is most of what it takes to keep one thriving.",
     "date": "2026-09-03",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Russian Tortoise",
       "Enclosure Setup",
@@ -14060,6 +14915,9 @@
     "excerpt": "Savannah monitors are cheap to buy, and that low price is part of a genuine problem with how this species gets marketed and, too often, cared for.",
     "date": "2026-09-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Savannah Monitor",
       "Cost",
@@ -14117,6 +14975,9 @@
     "excerpt": "Savannah monitors get marketed alongside the ackie monitor as a similarly approachable species. They aren't really comparable once you account for size, and that difference should shape how you think about handling from the start.",
     "date": "2026-09-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Savannah Monitor",
       "Handling",
@@ -14167,6 +15028,9 @@
     "excerpt": "Nearly everything on this list traces back to one root cause more than any other pet reptile covered on this site: a genuine mismatch between how much this species gets fed in captivity and how much it would actually eat and burn off in the wild.",
     "date": "2026-09-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Savannah Monitor",
       "Health",
@@ -14221,6 +15085,9 @@
     "excerpt": "A savannah monitor enclosure needs to genuinely support this species' size, digging instincts, and thermoregulation needs, cutting corners on any of these is really what leads to the health and behavioral problems covered elsewhere in this series.",
     "date": "2026-09-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Savannah Monitor",
       "Tank Setup",
@@ -14278,6 +15145,9 @@
     "excerpt": "A cheap lizard, a surprisingly easy tortoise, a heavily surrendered bird, and a legally complicated insect: four new pets, and four details the price tag and the pet store never bring up.",
     "date": "2026-09-06",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Savannah Monitor",
       "Russian Tortoise",
@@ -14329,6 +15199,9 @@
     "excerpt": "Sharks predate trees by 65 million years, and that is just the start. Dive into 10 jaw-dropping shark facts that will change how you see the ocean.",
     "date": "2026-07-31",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life"
+    ],
     "tags": [
       "Aquatic Life",
       "Wild Animals",
@@ -14352,6 +15225,9 @@
     "excerpt": "What brumation is, why most pet snake keepers can safely skip it, and how to cool a ball python or corn snake properly if you plan to breed.",
     "date": "2026-07-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Ball Python",
       "Corn Snake",
@@ -14404,6 +15280,9 @@
     "excerpt": "Stick insects are genuinely one of the cheapest pets covered on this site, but before any cost discussion, there's a legal detail worth understanding clearly, since it affects whether you can responsibly keep one at all.",
     "date": "2026-09-05",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Stick Insect",
       "Cost",
@@ -14459,6 +15338,9 @@
     "excerpt": "Stick insects are docile, slow, and genuinely low-drama to keep, relying entirely on camouflage and stillness rather than any real defense. This makes them one of the gentler invertebrates on this site to interact with.",
     "date": "2026-09-05",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Stick Insect",
       "Handling",
@@ -14506,6 +15388,9 @@
     "excerpt": "Stick insects are genuinely hardy, and nearly everything that goes wrong traces back to one of two opposite mistakes: an enclosure too dry, or one too wet. Getting that balance right is most of what this species' health actually depends on.",
     "date": "2026-09-05",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Stick Insect",
       "Health",
@@ -14556,6 +15441,9 @@
     "excerpt": "Stick insect care is refreshingly simple once the enclosure height and humidity balance are right, this is genuinely one of the more forgiving pets on this site to house well.",
     "date": "2026-09-05",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Stick Insect",
       "Tank Setup",
@@ -14612,6 +15500,9 @@
     "excerpt": "Sugar gliders are illegal in several US states, and that has to be settled before cost even enters the conversation. Once it's settled, budget for a pair from day one, not just a single glider.",
     "date": "2026-08-20",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Sugar Glider",
       "Cost",
@@ -14665,6 +15556,9 @@
     "excerpt": "Sugar gliders bond through scent, not quick physical familiarity, which makes their handling process genuinely different from almost every other small pet on this site.",
     "date": "2026-08-20",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Sugar Glider",
       "Handling",
@@ -14712,6 +15606,9 @@
     "excerpt": "Sugar glider health comes down to nutrition more than nearly any other factor. Get the diet right and this is a genuinely hardy exotic pet. Get it wrong, and problems can appear with alarming suddenness.",
     "date": "2026-08-20",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Sugar Glider",
       "Health",
@@ -14761,6 +15658,9 @@
     "excerpt": "Sugar gliders are illegal in California, Alaska, and Hawaii, and essentially unobtainable in Pennsylvania. Everywhere else they're generally legal, despite what several popular blog posts claim about Georgia, Massachusetts, and Wyoming.",
     "date": "2026-07-22",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Sugar Glider",
       "Legal",
@@ -14799,6 +15699,9 @@
     "excerpt": "Sugar gliders are arboreal, and their housing needs reflect that directly, height matters far more here than floor space does, the opposite priority from a lot of small mammal setups.",
     "date": "2026-08-20",
     "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
     "tags": [
       "Sugar Glider",
       "Tank Setup",
@@ -14852,6 +15755,9 @@
     "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
     "date": "2026-08-15",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Hedgehog",
@@ -14895,6 +15801,9 @@
     "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
     "date": "2026-08-11",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Cost",
@@ -14948,6 +15857,9 @@
     "excerpt": "Sulcata tortoises are personable and curious, but real handling, picking the animal up, is only practical while it's still a juvenile. After that, the relationship changes shape entirely.",
     "date": "2026-08-11",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Handling",
@@ -14995,6 +15907,9 @@
     "excerpt": "Sulcata tortoises are hardy animals, and most of what shows up on this list traces back to a small number of husbandry factors, several of which are genuinely debated even among specialists.",
     "date": "2026-08-11",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Health",
@@ -15047,6 +15962,9 @@
     "excerpt": "No US state bans owning a sulcata tortoise. The real legal fact is a federal import ban dating to 2000, and the real practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
     "date": "2026-07-23",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Legal",
@@ -15085,6 +16003,9 @@
     "excerpt": "Sulcata housing needs change dramatically as the animal grows, and the single most important thing to understand upfront is that indoor housing is a phase, not a permanent solution.",
     "date": "2026-08-11",
     "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
     "tags": [
       "Sulcata Tortoise",
       "Enclosure Setup",
@@ -15138,6 +16059,9 @@
     "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to 20 years or more, which makes the low sticker price a bit misleading if you only look at year one.",
     "date": "2026-07-17",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Tarantula",
       "Cost",
@@ -15185,6 +16109,9 @@
     "excerpt": "A tarantula going weeks without eating usually isn't a problem, it's premolt. Here's the real feeding schedule, what they eat, and when a fast actually is a red flag.",
     "date": "2026-07-25",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Tarantula",
       "Feeding",
@@ -15240,6 +16167,9 @@
     "excerpt": "If you're hoping for a pet you can hold, a tarantula is probably the wrong choice. Handling carries real risk in both directions, a fall can be fatal to the spider, and its defenses can genuinely hurt you.",
     "date": "2026-07-17",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Tarantula",
       "Handling",
@@ -15283,6 +16213,9 @@
     "excerpt": "Veterinary care for tarantulas is genuinely limited, so prevention through correct husbandry does most of the heavy lifting, and knowing what's normal versus what's actually wrong matters more than knowing what to do once something's gone wrong.",
     "date": "2026-07-17",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Tarantula",
       "Health",
@@ -15330,6 +16263,9 @@
     "excerpt": "Tarantula enclosures are refreshingly simple compared to most exotic pets, no complex lighting, no elaborate temperature gradients, but enclosure shape and substrate depth matter quite a bit.",
     "date": "2026-07-17",
     "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
     "tags": [
       "Tarantula",
       "Enclosure Setup",
@@ -15379,6 +16315,9 @@
     "excerpt": "Meet the tardigrade: a microscopic, eight-legged animal that has survived space, radiation, and very likely every mass extinction in Earth's history. Nature's ultimate survivor.",
     "date": "2026-07-31",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Wild Animals",
       "Fun Facts",
@@ -15402,6 +16341,9 @@
     "excerpt": "Size really matters with dog toys. Our 2026 guide picks the best toys for big and small dogs. Durability, safety, and mental stimulation.",
     "date": "2026-06-04",
     "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
     "tags": [
       "Pet Care",
       "Product Picks",
@@ -15435,6 +16377,9 @@
     "excerpt": "Meet the axolotl — the smiling 'walking fish' that regenerates its own limbs and stays a baby forever. Why scientists adore this salamander.",
     "date": "2026-05-23",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life"
+    ],
     "tags": [
       "Aquatic Life",
       "Pet Care",
@@ -15466,6 +16411,9 @@
     "excerpt": "Did you know octopuses have three hearts and blue blood? These creatures are here to remind us nature is far stranger and more wonderful than we ever imagined.",
     "date": "2026-06-08",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Wild Animals",
       "Aquatic Life",
@@ -15492,6 +16440,9 @@
     "excerpt": "Egg-laying, venomous, and able to sense electricity; the platypus breaks every mammal rule. Meet nature's most wonderfully weird animal.",
     "date": "2026-06-10",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "Fun Facts",
       "Wild Animals"
@@ -15514,6 +16465,9 @@
     "excerpt": "Tiger salamanders are genuinely affordable, and the real budgeting story with this species is more about longevity than any single expensive line item.",
     "date": "2026-09-20",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Tiger Salamander",
       "Salamander Care",
@@ -15571,6 +16525,9 @@
     "excerpt": "Tiger salamanders are genuinely more outgoing than a lot of amphibians, but that personality doesn't translate into a handling relationship, and understanding why comes down to biology, not temperament.",
     "date": "2026-09-20",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Tiger Salamander",
       "Salamander Care",
@@ -15622,6 +16579,9 @@
     "excerpt": "Tiger salamanders are hardy, and the issues that do show up trace back to feeding practices and substrate choice more than anything else, this species is an opportunistic eater in a way that genuinely shapes its health risks.",
     "date": "2026-09-20",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Tiger Salamander",
       "Salamander Care",
@@ -15673,6 +16633,9 @@
     "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It isn't one. The species actually sits under three separate, unrelated legal regimes, and only one of them has anything to do with owning a pet.",
     "date": "2026-09-26",
     "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
     "tags": [
       "Tiger Salamander",
       "Legal",
@@ -15723,6 +16686,9 @@
     "excerpt": "Tiger salamander husbandry is genuinely straightforward once you accept the central fact about this species: it's built to burrow, and the setup needs to support that, not fight against it.",
     "date": "2026-09-20",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Tiger Salamander",
       "Salamander Care",
@@ -15779,6 +16745,9 @@
     "excerpt": "Tokay geckos have a wide price range that reflects a real quality divide in this species: wild-caught animals are cheap and come with real downsides, while captive-bred animals cost more and are the meaningfully better choice.",
     "date": "2026-08-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Tokay Gecko",
       "Cost",
@@ -15836,6 +16805,9 @@
     "excerpt": "Every other gecko covered on this site, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm to genuinely display-only. The tokay gecko breaks that pattern entirely.",
     "date": "2026-08-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Tokay Gecko",
       "Handling",
@@ -15882,6 +16854,9 @@
     "excerpt": "Tokay geckos are generally hardy, and most issues trace back to temperature, humidity, or, for wild-caught animals specifically, parasites picked up before the gecko ever reached you.",
     "date": "2026-08-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Tokay Gecko",
       "Health",
@@ -15932,6 +16907,9 @@
     "excerpt": "Tokay gecko care runs warm and genuinely humid, closer to a rainforest setup than the arid conditions many other geckos on this site prefer.",
     "date": "2026-08-29",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Tokay Gecko",
       "Tank Setup",
@@ -15987,6 +16965,9 @@
     "excerpt": "Ready to start birdwatching? This complete 2026 short guide covers the best locations, peak seasons, some gear, and tips.",
     "date": "2026-06-01",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Birds",
       "Wild Animals",
@@ -16010,6 +16991,9 @@
     "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the real upfront cost to $500-900, driven by just how hot and specialized this species' enclosure needs to be.",
     "date": "2026-08-28",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Uromastyx",
       "Cost",
@@ -16067,6 +17051,9 @@
     "excerpt": "Uromastyx digest through hindgut fermentation, meaning heat isn't just for comfort, it's what actually breaks down their food. Here's a real feeding schedule and why a cool enclosure can cause weight loss even when they're eating.",
     "date": "2026-07-30",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Uromastyx",
       "Feeding",
@@ -16122,6 +17109,9 @@
     "excerpt": "Uromastyx are generally calm, tameable lizards once settled in, but one body part sets their handling apart from almost every other pet lizard: the tail.",
     "date": "2026-08-28",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Uromastyx",
       "Handling",
@@ -16168,6 +17158,9 @@
     "excerpt": "Uromastyx are hardy desert specialists, and most health problems in captivity trace directly back to getting this species' unusually specific heat, humidity, or dietary needs wrong.",
     "date": "2026-08-28",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Uromastyx",
       "Health",
@@ -16218,6 +17211,9 @@
     "excerpt": "Uromastyx husbandry pushes further into extreme heat and low humidity than almost any other commonly kept reptile, and getting comfortable with those numbers is the key to keeping this species well.",
     "date": "2026-08-28",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Uromastyx",
       "Tank Setup",
@@ -16275,6 +17271,9 @@
     "excerpt": "Each of these four breaks the pattern its own category set: a lizard that won't eat meat, a gecko that isn't calm, a bird that might outlive you, and a spider that hunts by sight.",
     "date": "2026-09-01",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Uromastyx",
       "Tokay Gecko",
@@ -16326,6 +17325,9 @@
     "excerpt": "Recent research has changed what we know about reptile UVB needs - including species once thought not to need it. Here's the updated picture.",
     "date": "2025-04-12",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "UVB",
       "Lighting",
@@ -16378,6 +17380,9 @@
     "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the real cost shows up.",
     "date": "2026-08-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Veiled Chameleon",
       "Cost",
@@ -16432,6 +17437,9 @@
     "excerpt": "A hissing chameleon, a nipping ferret, and a cobra-hooding snake all look like the thing to worry about. In every case, the real risk is something quieter.",
     "date": "2026-08-05",
     "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
     "tags": [
       "Veiled Chameleon",
       "Ferret",
@@ -16475,6 +17483,9 @@
     "excerpt": "Veiled chameleons are solitary, territorial display animals, and this is genuinely one of the less handleable pet reptiles. Knowing that upfront saves both of you a lot of stress.",
     "date": "2026-08-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Veiled Chameleon",
       "Handling",
@@ -16522,6 +17533,9 @@
     "excerpt": "Veiled chameleons are hardy by chameleon standards, but a handful of conditions come up often enough, and one is specific to females and genuinely urgent, that every owner should recognize the signs.",
     "date": "2026-08-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Veiled Chameleon",
       "Health",
@@ -16574,6 +17588,9 @@
     "excerpt": "Veiled chameleon husbandry has a reputation for being demanding, and it earns that honestly. Get the enclosure, misting, and lighting right, and this is a genuinely rewarding species to keep.",
     "date": "2026-08-02",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Veiled Chameleon",
       "Tank Setup",
@@ -16627,6 +17644,9 @@
     "excerpt": "Dive into the ocean's darkest depths and meet the strangest animals on Earth, from glowing jellyfish to anglerfish with a shocking secret.",
     "date": "2026-07-30",
     "category": "Aquatic Life",
+    "categories": [
+      "Aquatic Life"
+    ],
     "tags": [
       "Aquatic Life",
       "Wild Animals",
@@ -16650,6 +17670,9 @@
     "excerpt": "Pacing, hiding, and other anxious pet habits are messages. Learn why pets develop anxiety and what actually helps them feel safe again.",
     "date": "2026-06-27",
     "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
     "tags": [
       "Pet Care",
       "Fun Facts"
@@ -16672,6 +17695,9 @@
     "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more affordable and forgiving amphibians to keep, both to buy and to maintain long term.",
     "date": "2026-08-08",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "White's Tree Frog",
       "Cost",
@@ -16725,6 +17751,9 @@
     "excerpt": "White's tree frogs are unusually handleable for an amphibian, docile, slow-moving, and known for their calm, almost smiling expression. But the risk here runs in a direction people don't expect: it's not the frog hurting you, it's you accidentally hurting the frog.",
     "date": "2026-08-08",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "White's Tree Frog",
       "Handling",
@@ -16772,6 +17801,9 @@
     "excerpt": "White's tree frogs are hardy for an amphibian, but they have one health issue that shows up more in this species than almost any other pet frog, driven by the same enthusiastic-eater trait that makes them so satisfying to feed.",
     "date": "2026-08-08",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "White's Tree Frog",
       "Health",
@@ -16824,6 +17856,9 @@
     "excerpt": "White's tree frogs are a forgiving amphibian to set up correctly once you understand the one detail that trips up a lot of first-time keepers: humidity that's too constantly high causes more problems than humidity that dips a bit low between mistings.",
     "date": "2026-08-08",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "White's Tree Frog",
       "Tank Setup",
@@ -16877,6 +17912,9 @@
     "excerpt": "Axolotls are fully aquatic animals whose water is literally their entire world, making water quality the most important factor in their care.",
     "date": "2026-06-16",
     "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
     "tags": [
       "Amphibians",
       "Pet Care",
@@ -16901,6 +17939,9 @@
     "excerpt": "UVB lighting is not optional for bearded dragons, it's the difference between thriving and suffering. Why UVB matters and how to get it right.",
     "date": "2026-06-16",
     "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
     "tags": [
       "Reptiles",
       "Pet Care",
@@ -16925,6 +17966,9 @@
     "excerpt": "Cats are natural hunters who need more than food and naps to thrive. Discover how mental enrichment keeps your cat happy, healthy, and out of trouble.",
     "date": "2026-06-16",
     "category": "Cats",
+    "categories": [
+      "Cats"
+    ],
     "tags": [
       "Cats",
       "Pet Care",
@@ -16948,6 +17992,9 @@
     "excerpt": "Parrots are flock animals that need daily social time to stay healthy. What loneliness does to a parrot, and how to keep yours thriving.",
     "date": "2026-06-16",
     "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
     "tags": [
       "Birds",
       "Pet Care",
@@ -16971,6 +18018,9 @@
     "excerpt": "Hay is the most critical food in a rabbit's diet, it keeps ever-growing teeth worn down and digestion moving. What happens without it isn't pretty.",
     "date": "2026-06-16",
     "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
     "tags": [
       "Pet Care",
       "Small & Exotic Pets",
@@ -16994,6 +18044,9 @@
     "excerpt": "Wombat droppings really are cubes, and the popular explanation is wrong. There is no square sphincter. The real answer took a CT scanner and dissections.",
     "date": "2026-08-02",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Wombats",
       "Wild Animals",
@@ -17020,6 +18073,9 @@
     "excerpt": "Find out why your dog needs daily exercise and what happens when they don't get enough. Learn tips to keep your dog healthy, happy, and well-behaved.",
     "date": "2026-06-16",
     "category": "Dogs",
+    "categories": [
+      "Dogs"
+    ],
     "tags": [
       "Dogs",
       "Pet Care",
@@ -17045,6 +18101,9 @@
     "excerpt": "Meet the wolverine: a ferocious, fearless mustelid that defends kills aggressively and can displace cougars. Discover the wild facts that make Gulo gulo one of the toughest animals on the planet.",
     "date": "2026-07-31",
     "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
     "tags": [
       "Wild Animals",
       "Fun Facts"
@@ -17067,6 +18126,9 @@
     "excerpt": "A lizard that can warm its own blood, learn its own name, and get litter-trained, these 10 facts explain why the Argentine tegu is one of the strangest, smartest reptiles you can keep.",
     "date": "2026-07-20",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "argentine-tegu",
       "fun-facts",
@@ -17093,6 +18155,9 @@
     "excerpt": "From heat-sensing pits to 7,000 color morphs, these 10 ball python facts explain why they're the most popular pet snake in the world.",
     "date": "2026-07-04",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "ball-python",
       "fun-facts",
@@ -17121,6 +18186,9 @@
     "excerpt": "From UV-sensing eyes to third eyelids, these 10 bearded dragon facts will surprise even experienced reptile owners and enthusiasts.",
     "date": "2026-06-05",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "bearded-dragon",
       "fun-facts",
@@ -17149,6 +18217,9 @@
     "excerpt": "From breathing air to bubble nests, these 10 betta fish facts reveal just how much personality is packed into such a small tank.",
     "date": "2026-06-18",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "betta-fish",
       "fun-facts",
@@ -17177,6 +18248,9 @@
     "excerpt": "From dancing to a beat to bending metal cage bars, these 10 cockatoo facts show why this parrot is as impressive as it is demanding.",
     "date": "2026-06-22",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "cockatoo",
       "fun-facts",
@@ -17205,6 +18279,9 @@
     "excerpt": "A sting about as bad as a bee's, a glow-in-the-dark exoskeleton, and babies that ride around on mom's back, these 10 facts explain why the emperor scorpion is far gentler than it looks.",
     "date": "2026-07-09",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "emperor-scorpion",
       "fun-facts",
@@ -17232,6 +18309,9 @@
     "excerpt": "A defensive pose with its own name, a real toxin that works like heart medication, and a belly pattern as unique as a fingerprint, these 10 facts explain what's actually behind that bright red belly.",
     "date": "2026-07-18",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "fire-bellied-toad",
       "fun-facts",
@@ -17258,6 +18338,9 @@
     "excerpt": "From spreading their own frothy spit on their spines to running miles on a wheel overnight, these 10 facts explain some of the strangest true hedgehog behavior.",
     "date": "2026-07-14",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "hedgehog",
       "fun-facts",
@@ -17283,6 +18366,9 @@
     "excerpt": "From decades-long lifespans to orderly shell-swapping queues, these 10 hermit crab facts go well beyond the beach-souvenir reputation.",
     "date": "2026-06-27",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "hermit-crab",
       "fun-facts",
@@ -17311,6 +18397,9 @@
     "excerpt": "From a hiss loud enough to hear across a room to giving birth to live young, these 10 facts explain why Madagascar hissing cockroaches are one of the most misunderstood pets in the hobby.",
     "date": "2026-07-06",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "hissing-cockroach",
       "fun-facts",
@@ -17337,6 +18426,9 @@
     "excerpt": "From squeaking when startled to storing fat in their tails, these 10 leopard gecko facts go beyond the basics most keepers already know.",
     "date": "2026-06-29",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "leopard-gecko",
       "fun-facts",
@@ -17365,6 +18457,9 @@
     "excerpt": "From five eyes to bat-detecting ears, these 10 praying mantis facts go well beyond the classic 'prayer pose' most people already know.",
     "date": "2026-07-04",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "praying-mantis",
       "fun-facts",
@@ -17393,6 +18488,9 @@
     "excerpt": "From blue blood to decades-long lifespans, these 10 tarantula facts reveal why they're far less scary and far more fascinating than their reputation suggests.",
     "date": "2026-07-03",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "tarantula",
       "fun-facts",
@@ -17421,6 +18519,9 @@
     "excerpt": "Ten quick axolotl facts most people don't know - from limb regeneration and forever-young biology to why these smiling salamanders never leave the water.",
     "date": "2026-06-06",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "axolotl",
       "fun-facts",
@@ -17449,6 +18550,9 @@
     "excerpt": "Ten surprising boa constrictor facts - from heartbeat-syncing squeezes to live litters of 60 - and why they're the pet snake world's favorite.",
     "date": "2026-07-05",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "boa-constrictor",
       "fun-facts",
@@ -17477,6 +18581,9 @@
     "excerpt": "Cuttlefish can change their skin in milliseconds and have W-shaped pupils. Discover 10 remarkable facts about this intelligent cephalopod.",
     "date": "2026-06-08",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "cuttlefish",
       "fun-facts",
@@ -17505,6 +18612,9 @@
     "excerpt": "Beyond their friendly smiles, golden retrievers have surprising quirks and hidden talents. Discover 10 facts about this iconic family dog.",
     "date": "2026-06-10",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "golden-retriever",
       "fun-facts",
@@ -17536,6 +18646,9 @@
     "excerpt": "From haunting songs that travel thousands of miles to acrobatic breaches, these 10 humpback whale facts reveal the wonder of ocean life.",
     "date": "2026-06-11",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "whale",
       "humpback-whale",
@@ -17564,6 +18677,9 @@
     "excerpt": "Think you know octopuses? These 10 facts reveal their three hearts, blue blood, and remarkable problem-solving intelligence.",
     "date": "2026-06-13",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "octopus",
       "fun-facts",
@@ -17592,6 +18708,9 @@
     "excerpt": "Ten surprising rabbit facts - from near-360-degree vision and teeth that never stop growing to binkies and why rabbits are smarter than they look.",
     "date": "2026-06-15",
     "category": "Fun Facts",
+    "categories": [
+      "Fun Facts"
+    ],
     "tags": [
       "rabbit",
       "fun-facts",
@@ -17623,6 +18742,9 @@
     "excerpt": "Mike sets up Dex's first outdoor sun pen, and the bearded dragon meets real wind, real grass, and one supremely unimpressed blue jay, in this funny, humbling short story about just how big the world turns out to be.",
     "date": "2026-07-14",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17652,6 +18774,9 @@
     "excerpt": "Dex is back. Part 2 of the bearded dragon chronicles brings new trouble, warmer basking spots, and one lizard who refuses to be ignored.",
     "date": "2026-06-27T05:32:37.964Z",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17680,6 +18805,9 @@
     "excerpt": "Dex dozes on his basking rock and dreams he has sprouted wings, leaving the ground for the first time to see his whole small kingdom, terrarium, house, yard, and neighborhood, laid out in miniature below him, in this wondrous short story about flight, perspective, and home.",
     "date": "2026-07-18",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17709,6 +18837,9 @@
     "excerpt": "Dex begins shedding his skin for the first time and treats the whole ordinary process like the retirement of an old administration, enduring an itch he refuses to name and a private worry about who he'll be underneath, until Mike helps loosen one stubborn patch near a toe and a brighter, cleaner dragon emerges on the other side.",
     "date": "2026-07-27",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17738,6 +18869,9 @@
     "excerpt": "A long soak sends Dex into a dream where he commands a ship across a golden sand sea, in this swashbuckling short story about rivalry, command, and the one line even a pirate king won't cross.",
     "date": "2026-07-12",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17767,6 +18901,9 @@
     "excerpt": "Dex faces his oldest mystery, the orange shape beyond the glass in this humorous short story about rivalry, territory, and the unexpected.",
     "date": "2026-07-07",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17796,6 +18933,9 @@
     "excerpt": "Meet Dex: a bearded dragon with opinions, ambitions, and a cricket problem. This bearded dragon short story kicks off a charming, witty animal fiction series.",
     "date": "2026-06-27",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon-short-story",
       "animal-fiction",
@@ -17822,6 +18962,9 @@
     "excerpt": "Dex has settled into an eleven-day ritual with the cat beyond the glass, until the twelfth day arrives and the windowsill stays empty, in this quietly funny short story about routine, absence, and what a king starts counting on.",
     "date": "2026-07-10",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17851,6 +18994,9 @@
     "excerpt": "Dex is carried off in his travel tub for a checkup and lands in a vet's waiting room ruled by a loudly opinionated parrot and a magnificently put-upon chinchilla, in this ensemble comedy short story about dignity, chaos, and discovering the world is bigger than the glass.",
     "date": "2026-07-20",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17880,6 +19026,9 @@
     "excerpt": "When a window is left open a crack on a warm afternoon, Dex and Whiskey come closer to real contact than four years of glass-pressed friendship ever allowed, and Dex learns what the boundary between them was truly protecting all along.",
     "date": "2026-07-16",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "bearded-dragon",
       "short-story",
@@ -17909,6 +19058,9 @@
     "excerpt": "Dozing in his hutch on a hot afternoon, Otis dreams that he can fly, rising above the only garden he's ever known to see its whole shape, and the neighborhood beyond it, for the first time.",
     "date": "2026-07-12",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -17938,6 +19090,9 @@
     "excerpt": "Otis spends eleven days building a rival worthy of his fence line, then finds the gap in the boards and discovers the truth is a lot smaller than the legend he invented.",
     "date": "2026-07-10",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -17967,6 +19122,9 @@
     "excerpt": "Katie dresses Otis in a flower crown for the neighborhood spring fair, and the house rabbit spends the whole afternoon torn between righteous indignation and undisguised delight at the attention.",
     "date": "2026-07-24",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -17996,6 +19154,9 @@
     "excerpt": "Follow along in this Otis the bunny story — a charming short fiction about one determined rabbit navigating the big drama hiding in very small moments.",
     "date": "2026-06-30",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18024,6 +19185,9 @@
     "excerpt": "A squirrel raids Otis's garden and gets away clean, leaving him to face an uncomfortable truth: there might be a whole world beyond his fence he's never once considered.",
     "date": "2026-07-08",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18052,6 +19216,9 @@
     "excerpt": "Otis falls asleep under the hydrangea and wakes up leading a grand expedition across his own garden turned continent, over the Sea of the Undrained and up Mount Compostia, before opening his eyes to find how small his kingdom really is.",
     "date": "2026-07-20",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18081,6 +19248,9 @@
     "excerpt": "When Katie agrees to pet-sit a friend's guinea pig, Otis has to share his prized sunny corner with a chattier, far more anxious houseguest than himself. It takes a piece of romaine lettuce to settle what territorial pacing alone could not.",
     "date": "2026-07-16",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18110,6 +19280,9 @@
     "excerpt": "After a heavy dinner and a long afternoon guarding the garden, Otis falls asleep and dreams his way to the moon, where he discovers, to his enormous satisfaction, that the whole surface is made of unfenced clover, the best he has ever tasted.",
     "date": "2026-07-27",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18139,6 +19312,9 @@
     "excerpt": "Otis stays out past his usual hour and finally meets a danger unlike the dog, the squirrel, or the cottontail before it: a real owl, low and silent over the grass, teaching him in under two seconds that the sky is not entirely his.",
     "date": "2026-07-18",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
@@ -18168,6 +19344,9 @@
     "excerpt": "Katie drives Otis to a friend's backyard farm for the first time, where he meets a hen with just as much confidence about her turf as he has about his, and learns the world beyond his fence is bigger, and considerably more crowded with self-important small animals, than he thought.",
     "date": "2026-07-14",
     "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
     "tags": [
       "rabbit",
       "short-story",
