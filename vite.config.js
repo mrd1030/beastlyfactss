@@ -36,8 +36,13 @@ export default defineConfig({
         // Targeted chunking to prevent circular dependency loops 🎯
         manualChunks(id) {
           if (id.includes('node_modules')) {
-            // Keep Sanity separate (it's heavy and only used on content pages)
-            if (id.includes('sanity') || id.includes('@sanity') || id.includes('portabletext')) {
+            // Keep Sanity separate (it's heavy and only used on content pages).
+            // @sanity/eventsource's own dependency (event-source-polyfill) hoists
+            // to top-level node_modules, so its id has no "sanity" substring and
+            // must be matched explicitly - otherwise it silently falls through to
+            // the generic 'vendor' chunk below and ships on every single page,
+            // even though nothing here ever calls Sanity's realtime .listen() API.
+            if (id.includes('sanity') || id.includes('@sanity') || id.includes('portabletext') || id.includes('event-source-polyfill')) {
               return 'sanity-vendor';
             }
             // Keep Stripe separate (only used for packs/donations)
@@ -48,7 +53,11 @@ export default defineConfig({
             // (BeastlyBuddy's analytics calls, plus a few already-lazy routes),
             // so it must live outside the always-eager vendor chunk or those
             // dynamic imports never actually defer anything.
-            if (id.includes('@base44')) {
+            // socket.io-client/engine.io-client (base44's realtime transport,
+            // used only by its agents/rooms API, which nothing in this app
+            // calls) hoist to top-level node_modules the same way - match them
+            // explicitly too, or they leak into the eager 'vendor' chunk.
+            if (id.includes('@base44') || id.includes('socket.io') || id.includes('engine.io')) {
               return 'base44-vendor';
             }
             // Keep canvas-confetti separate - it's only ever needed on-demand

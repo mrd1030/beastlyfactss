@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { encyclopediaCategories, encyclopediaAnimals } from '@/lib/data/encyclopedia';
+import { seededShuffle } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
+
+const PREVIEW_COUNT = 8;
 
 const categoryPreview = encyclopediaCategories.map(cat => ({
   ...cat,
   count: encyclopediaAnimals.filter(a => a.category === cat.name).length,
 }));
 
+// A rotating subset, not the full category list: every category rendered a
+// 640x480 "card" image up front (loading="lazy" or not - Lighthouse's mobile
+// run still counted them all), which was most of this homepage's "Improve
+// image delivery" flag. Capped to PREVIEW_COUNT and rotated by day (same
+// seeded-shuffle idiom as CategoryBrowse.jsx/HeroSection.jsx) rather than a
+// fixed slice, so this stays a changing preview - not a static, permanently-
+// identical-every-visit subset - while /encyclopedia/ still has the full grid.
+// Fixed default (first PREVIEW_COUNT, unshuffled) on the hydration-critical
+// first render, upgraded to the real day's rotation in an effect: shuffling
+// by new Date().getDate() inline here would reintroduce the exact hydration
+// mismatch bug (React errors #418/#423) already fixed elsewhere on this page.
+function defaultPreview() {
+  return categoryPreview.slice(0, PREVIEW_COUNT);
+}
+
 export default function EncyclopediaTeaser() {
+  const [visibleCategories, setVisibleCategories] = useState(defaultPreview);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const seed = new Date().getDate();
+    setVisibleCategories(seededShuffle(categoryPreview, seed).slice(0, PREVIEW_COUNT));
+  }, []);
+
   return (
     <section className="py-10 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
@@ -35,7 +60,7 @@ export default function EncyclopediaTeaser() {
         </motion.div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {categoryPreview.map((cat, i) => (
+          {visibleCategories.map((cat, i) => (
             <motion.div
               key={cat.name}
               initial={{ opacity: 0, scale: 0.95 }}

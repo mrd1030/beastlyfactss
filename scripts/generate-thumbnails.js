@@ -60,12 +60,12 @@ async function generateThumbs() {
         try {
           await sharp(input)
             .resize(240, 240, { fit: 'cover', withoutEnlargement: true })
-            .webp({ quality: 80 })
+            .webp({ quality: 74 })
             .toFile(webpOut);
 
           await sharp(input)
             .resize(240, 240, { fit: 'cover', withoutEnlargement: true })
-            .jpeg({ quality: 82 })
+            .jpeg({ quality: 76 })
             .toFile(jpgOut);
 
           count += 1;
@@ -92,12 +92,12 @@ async function generateThumbs() {
           try {
             await sharp(input)
               .resize(320, 240, { fit: 'cover', withoutEnlargement: true })
-              .webp({ quality: 82 })
+              .webp({ quality: 76 })
               .toFile(card1xWebpOut);
 
             await sharp(input)
               .resize(320, 240, { fit: 'cover', withoutEnlargement: true })
-              .jpeg({ quality: 84 })
+              .jpeg({ quality: 78 })
               .toFile(card1xJpgOut);
 
             count += 1;
@@ -110,12 +110,12 @@ async function generateThumbs() {
           try {
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
-              .webp({ quality: 82 })
+              .webp({ quality: 76 })
               .toFile(card2xWebpOut);
 
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
-              .jpeg({ quality: 84 })
+              .jpeg({ quality: 78 })
               .toFile(card2xJpgOut);
 
             count += 1;

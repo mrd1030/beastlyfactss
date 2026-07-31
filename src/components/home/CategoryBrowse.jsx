@@ -5,6 +5,7 @@ import { ArrowRight, Search as SearchIcon } from 'lucide-react';
 import { slugify } from '@/lib/utils/slugify';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
+import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
 // Statically imported, not fetch('/articles.json') in a useEffect like
 // before: that always started with loading:true, and prerender.mjs's
 // networkidle0 wait meant the static HTML always captured the post-fetch
@@ -24,37 +25,6 @@ import articlesIndex from '@/lib/generated/articles-index.json';
 const FRONT_LABEL = 'Reptiles';
 const BACK_LABEL = 'Legal';
 const MIDDLE_LABELS = ['Fish', 'Invertebrates', 'Small & Exotic Pets', 'Birds', 'Amphibians', 'Roundups', 'Turtles & Tortoises'];
-
-// Deterministic, not Math.random(): prerender.mjs captures whatever order
-// this produces at build time and ships it as static HTML, but a real
-// visitor's browser re-runs this component fresh on hydration - if the order
-// depends on Math.random(), the client's first render can't match what the
-// server sent, which is a genuine hydration mismatch (not just cosmetic
-// randomness), forcing React to discard and re-render the mismatched DOM.
-// Seeding by day-of-month means the same calendar day produces the same
-// order everywhere, matching the pattern HeroSection.jsx already uses for
-// its daily fact (`facts[new Date().getDate() % facts.length]`).
-function seededShuffle(arr, seed) {
-  const a = [...arr];
-  let s = seed || 1;
-  const nextRandom = () => {
-    s = (s * 1103515245 + 12345) & 0x7fffffff;
-    return s / 0x7fffffff;
-  };
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(nextRandom() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
-// Simple deterministic string hash, used to vary the preview-article seed
-// per category while keeping it stable for a given category+day pair.
-function hashString(str) {
-  let h = 0;
-  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) & 0x7fffffff;
-  return h;
-}
 
 export default function CategoryBrowse() {
   const [selected, setSelected] = useState(FRONT_LABEL);
@@ -149,7 +119,7 @@ export default function CategoryBrowse() {
                 key={label}
                 type="button"
                 onClick={() => handleSelect(label)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-display font-semibold border transition-all ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-display font-semibold border transition-colors ${
                   isActive
                     ? 'bg-secondary text-secondary-foreground border-secondary'
                     : 'bg-card border-border text-foreground hover:border-secondary/40'
@@ -165,20 +135,20 @@ export default function CategoryBrowse() {
               visually marked with an arrow to signal the difference. */}
           <Link
             to="/guides/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-all"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             Guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
             to="/encyclopedia/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-all"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             Encyclopedia <ArrowRight className="w-3.5 h-3.5" />
           </Link>
 
           <Link
             to="/blog/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-all"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             More Articles <ArrowRight className="w-3.5 h-3.5" />
           </Link>

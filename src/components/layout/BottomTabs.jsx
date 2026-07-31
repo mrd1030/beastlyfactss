@@ -35,10 +35,20 @@ export default function BottomTabs() {
     const el = rowRef.current;
     if (!el) return;
     const update = () => setTabWidth(el.offsetWidth / tabs.length);
-    update();
+    // Deferred to rAF rather than called synchronously here: Navbar mounts
+    // before this component (see AppLayout.jsx) and its useDarkMode effect
+    // writes document.documentElement.classList on mount. React fires every
+    // component's useEffect for one commit in a single synchronous flush, so
+    // an immediate offsetWidth read here forced the browser to synchronously
+    // recompute the style/layout that write had just invalidated - a forced
+    // reflow on every page load. rAF lets that flush settle naturally first.
+    const rafId = requestAnimationFrame(update);
     const ro = new ResizeObserver(update);
     ro.observe(el);
-    return () => ro.disconnect();
+    return () => {
+      cancelAnimationFrame(rafId);
+      ro.disconnect();
+    };
   }, []);
 
   // Mark active: exact for home; for others match the section with or without
