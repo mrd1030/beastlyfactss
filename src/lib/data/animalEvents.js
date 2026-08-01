@@ -1,11 +1,20 @@
 // Annual animal awareness days, used to surface a matching article on the
 // homepage while the event is topical.
 //
-// VERIFY BEFORE RELYING ON THESE DATES. They are the widely-published fixed
-// dates for each observance, but several of these days are promoted by more
-// than one organisation on more than one date, and nothing here has been
-// checked against a primary source the way the legal guides were. Correcting a
-// date is a one-line edit and needs no code change.
+// Dates checked 2026-08-01 against a compiled 2026 calendar (World Animal
+// Protection, National Today, National Day Calendar, Awareness Days). Every
+// fixed date below was confirmed. Shark Week was corrected from a guessed
+// 12-19 July to its real 26 July - 1 August run.
+//
+// Two exceptions are NOT from that source and are the commonly cited dates:
+// International Cat Day (8 Aug) and International Dog Day (26 Aug). That
+// calendar is wildlife-focused and lists neither. Worth a check before leaning
+// on them.
+//
+// Some observances float (a given weekday of a month) and are therefore
+// declared per-year, exactly like a multi-day run. Where start equals end the
+// resolver treats it as a single day, not a run. RE-CHECK FLOATING DATES EACH
+// YEAR: an unlisted year simply goes dormant rather than showing a wrong one.
 //
 // Fixed-date events use `month` + `day`. Events that move each year (Shark Week
 // is scheduled by Discovery and shifts annually) use `ranges`, keyed by year,
@@ -146,12 +155,108 @@ export const ANIMAL_EVENTS = [
     blurb: 'The whole reptile shelf, all at once.',
   },
   {
+    id: 'world-pangolin-day', name: 'World Pangolin Day', emoji: '🦔',
+    ranges: { 2026: { start: '02-21', end: '02-21' } },
+    animals: ['Pangolin'],
+    categories: ['Wild Animals'],
+    blurb: 'The most trafficked wild mammal almost nobody can name.',
+  },
+  {
+    id: 'world-parrot-day', name: 'World Parrot Day', emoji: '🦜',
+    month: 5, day: 31,
+    animals: ['Parrot', 'African Grey Parrot', 'Cockatoo', 'Lovebird'],
+    categories: ['Birds'],
+    blurb: 'Loud, long-lived, and smarter than the cage suggests.',
+  },
+  {
+    id: 'world-sea-turtle-day', name: 'World Sea Turtle Day', emoji: '🐢',
+    month: 6, day: 16,
+    animals: ['Turtle', 'Sea Turtle', 'Box Turtle'],
+    categories: ['Turtles & Tortoises', 'Aquatic Life'],
+    blurb: 'Older than most of what shares the ocean with them.',
+  },
+  {
+    id: 'world-croc-day', name: 'World Croc Day', emoji: '🐊',
+    month: 6, day: 17,
+    animals: ['Crocodile', 'Alligator', 'Caiman'],
+    categories: ['Reptiles'],
+    blurb: 'Survivors of everything that killed the dinosaurs.',
+  },
+  {
+    id: 'world-giraffe-day', name: 'World Giraffe Day', emoji: '🦒',
+    month: 6, day: 21,
+    animals: ['Giraffe'],
+    categories: ['Wild Animals'],
+    blurb: 'The tallest animal alive, and the blood pressure to match.',
+  },
+  {
+    id: 'shark-awareness-day', name: 'Shark Awareness Day', emoji: '🦈',
+    month: 7, day: 14,
+    animals: ['Shark'],
+    categories: ['Aquatic Life'],
+    blurb: 'The numbers are nothing like the reputation.',
+  },
+  {
+    id: 'international-wolf-day', name: 'International Wolf Day', emoji: '🐺',
+    month: 8, day: 13,
+    animals: ['Wolf'],
+    categories: ['Wild Animals'],
+    blurb: 'The alpha wolf was a captive-study artefact, not a wild fact.',
+  },
+  {
+    id: 'national-honey-bee-day', name: 'National Honey Bee Day', emoji: '🐝',
+    month: 8, day: 15,
+    animals: ['Bee', 'Honeybee'],
+    categories: ['Invertebrates'],
+    blurb: 'They vote on where to live, and the vote is a dance.',
+  },
+  {
+    id: 'world-dolphin-day', name: 'World Dolphin Day', emoji: '🐬',
+    month: 9, day: 12,
+    animals: ['Dolphin'],
+    categories: ['Aquatic Life'],
+    blurb: 'They use names. Actual names, for each other.',
+  },
+  {
+    id: 'international-rabbit-day', name: 'International Rabbit Day', emoji: '🐰',
+    ranges: { 2026: { start: '09-26', end: '09-26' } },
+    animals: ['Rabbit'],
+    categories: ['Small & Exotic Pets'],
+    blurb: 'Not a starter pet, whatever the pet shop implied.',
+  },
+  {
+    id: 'international-wombat-day', name: 'International Wombat Day', emoji: '🐨',
+    month: 10, day: 22,
+    animals: ['Wombat'],
+    categories: ['Wild Animals'],
+    blurb: 'Yes, the droppings really are cubes. Here is how.',
+  },
+  {
+    id: 'national-axolotl-day', name: 'National Axolotl Day', emoji: '🦎',
+    month: 11, day: 12,
+    animals: ['Axolotl'],
+    categories: ['Amphibians'],
+    blurb: 'Permanently juvenile, endlessly regenerating, nearly extinct in the wild.',
+  },
+  {
+    id: 'international-tiger-day', name: 'International Tiger Day', emoji: '🐅',
+    month: 7, day: 29,
+    animals: ['Tiger'],
+    // 'tiger' is a whole word in 'Tiger Salamander', so the amphibian guides
+    // matched Tiger Day. It is a modifier there, not the animal.
+    exclude: ['Tiger Salamander'],
+    categories: ['Wild Animals'],
+    blurb: 'Every wild tiger left could fit in a single small town.',
+  },
+  {
     // Discovery schedules this and it moves every year, so there is no formula
     // to derive it from. Add each year as it is announced; an unlisted year
-    // simply never matches rather than showing a wrong window.
+    // simply never matches rather than showing a wrong window. The 2026 run is
+    // 26 July to 1 August, which puts International Tiger Day (29 July) inside
+    // it - the exact-date tier keeps that day for the tiger.
     id: 'shark-week', name: 'Shark Week', emoji: '🦈',
     ranges: {
-      2026: { start: '07-12', end: '07-19' },
+      2026: { start: '07-26', end: '08-01' },
     },
     animals: ['Shark'],
     categories: ['Aquatic Life'],

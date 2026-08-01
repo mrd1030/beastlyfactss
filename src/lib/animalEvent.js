@@ -30,6 +30,20 @@ function activeWindow(event, now) {
     const [em, ed] = range.end.split('-').map(Number);
     const start = utcDay(year, sm, sd);
     const end = utcDay(year, em, ed);
+
+    // Floating single-day observances (World Pangolin Day is the third
+    // Saturday, so it moves every year) are declared per-year the same way a
+    // multi-day run is, but they are still a DAY. Giving them a centre puts
+    // them in the exact-date tier, so they behave like a fixed date rather
+    // than being treated as a run that can outrank its neighbours. Without
+    // this, "third Saturday of February" would quietly outrank a real
+    // fixed-date event sitting next to it.
+    if (start === end) {
+      const from = start - EVENT_WINDOW_DAYS * DAY_MS;
+      const to = start + EVENT_WINDOW_DAYS * DAY_MS;
+      return now.getTime() >= from && now.getTime() <= to ? { start: from, end: to, centre: start } : null;
+    }
+
     // `end` is that date's midnight, so add a day to cover it fully. Strictly
     // less than, or the following midnight would still count as inside and a
     // run ending the 19th would light up on the 20th.
@@ -61,24 +75,32 @@ const DAY_TIER_EXACT = 0;
 const DAY_TIER_RANGE = 1;
 const DAY_TIER_NEAR = 2;
 
-export function getActiveEvent(now = new Date()) {
+// Every event running today, best first. Returning the ranked list rather than
+// only the winner matters because several events have no article yet: if the
+// top-ranked one is dormant, the caller falls through to the next instead of
+// blanking a day another live event was covering anyway.
+export function getActiveEvents(now = new Date()) {
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
 
-  let best = null;
-  for (const event of ANIMAL_EVENTS) {
-    const window = activeWindow(event, now);
-    if (!window) continue;
+  return ANIMAL_EVENTS
+    .map((event) => {
+      const window = activeWindow(event, now);
+      if (!window) return null;
+      return {
+        event,
+        tier: window.centre === today ? DAY_TIER_EXACT
+          : event.ranges ? DAY_TIER_RANGE
+            : DAY_TIER_NEAR,
+        distance: Math.abs((window.centre ?? window.start) - now.getTime()),
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.tier - b.tier || a.distance - b.distance)
+    .map((entry) => entry.event);
+}
 
-    const tier = window.centre === today ? DAY_TIER_EXACT
-      : event.ranges ? DAY_TIER_RANGE
-        : DAY_TIER_NEAR;
-    const distance = Math.abs((window.centre ?? window.start) - now.getTime());
-
-    if (!best || tier < best.tier || (tier === best.tier && distance < best.distance)) {
-      best = { event, tier, distance };
-    }
-  }
-  return best?.event ?? null;
+export function getActiveEvent(now = new Date()) {
+  return getActiveEvents(now)[0] ?? null;
 }
 
 // Multi-animal recap posts ("Green Anole, Tegu, Toad & Salamander") match an
@@ -105,8 +127,18 @@ export function getEventArticle(event, articles) {
   const rank = (a, b) => (isRoundup(a) - isRoundup(b)) || String(b.date).localeCompare(String(a.date));
 
   if (event.animals?.length) {
+    // `exclude` covers the case matchesAnimal cannot: an animal name appearing
+    // as a MODIFIER rather than the head of a compound. "Tiger Salamander"
+    // contains the whole word "tiger", so International Tiger Day matched the
+    // salamander care guides. matchesAnimal is right to allow it in general -
+    // "Corn Snake" should match "Snake" - and it is verified across 151
+    // encyclopedia and guide pages, so the narrow fix belongs here rather than
+    // in the shared matcher.
+    const excluded = (article) =>
+      event.exclude?.some((name) => matchesAnimal(article.title, name));
     const matches = articles
-      .filter((article) => event.animals.some((animal) => matchesAnimal(article.title, animal)))
+      .filter((article) => !excluded(article)
+        && event.animals.some((animal) => matchesAnimal(article.title, animal)))
       .sort(rank);
     return matches[0] ?? null;
   }
@@ -121,8 +153,9 @@ export function getEventArticle(event, articles) {
 // Convenience for the component: null when there is nothing to show, which is
 // most of the year.
 export function getFeaturedEvent(articles, now = new Date()) {
-  const event = getActiveEvent(now);
-  if (!event) return null;
-  const article = getEventArticle(event, articles);
-  return article ? { event, article } : null;
+  for (const event of getActiveEvents(now)) {
+    const article = getEventArticle(event, articles);
+    if (article) return { event, article };
+  }
+  return null;
 }
