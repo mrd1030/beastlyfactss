@@ -4565,6 +4565,65 @@
     ]
   },
   {
+    "path": "/content/guides/chinchilla-feeding-guide.mdx",
+    "slug": "chinchilla-feeding-guide",
+    "title": "Chinchilla Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Chinchilla Feeding Guide: Schedule and Diet",
+    "excerpt": "Chinchillas re-eat a special dropping overnight to run food through the gut a second time, a required part of digestion, not a gross habit. Here's the real feeding schedule and why appetite loss moves fast in this species.",
+    "date": "2026-08-01",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Chinchilla",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "GI Stasis"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/chinchilla-feeding.jpg",
+    "imageAlt": "Chinchilla eating hay and a pellet from a small dish",
+    "emoji": "🐹",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much pelleted food does a chinchilla need?",
+        "a": "About 1 to 2 tablespoons a day, this is one of the more genuinely consensus numbers in exotic pet feeding, independently stated by multiple veterinary organizations. Hay, not pellets, is the real bulk of the diet, unlimited and always available."
+      },
+      {
+        "q": "Can I feed my chinchilla a seed and grain mix?",
+        "a": "No, avoid loose muesli-style mixes. Chinchillas will selectively eat the tasty, high-fat pieces and leave the rest, unbalancing the whole diet. A plain, chinchilla-specific pellet is the better choice."
+      },
+      {
+        "q": "Why does my chinchilla eat its own droppings?",
+        "a": "This is normal and necessary, not illness. Chinchillas are hindgut fermenters that produce a distinct soft dropping called a cecotrope, mostly overnight, and eat it to send food through the gut a second time. Their small intestine only captures part of the nutrients from their very fibrous diet on the first pass, and a chinchilla prevented from doing this can actually become nutrient deficient."
+      },
+      {
+        "q": "Why has my chinchilla stopped eating?",
+        "a": "Dental disease is cited as the single most common cause, continuously growing teeth that overgrow or develop spurs make chewing painful. Heat stress is another major concern, chinchillas can't sweat or pant effectively and reduced appetite is often an early warning sign before more severe symptoms. A sudden food or hay brand change can also trigger digestive upset."
+      },
+      {
+        "q": "How long can a chinchilla safely go without eating?",
+        "a": "Multiple sources converge on the same window, a chinchilla not eating for more than 12 to 24 hours should be seen the same day, not just monitored at home. Droppings matter just as much as food intake, a complete stop in fecal output for more than about 12 hours is treated as needing immediate attention."
+      },
+      {
+        "q": "Are apples and carrots safe treats?",
+        "a": "This is genuinely disputed. One major veterinary charity advises avoiding apple, carrot, grapes, and banana entirely, citing digestive upset from sugar and moisture content, while other veterinary and university sources list small weekly amounts of apple or carrot as standard, acceptable treats. Worth knowing both positions exist rather than treating either as settled."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-pellets-oxbow-essentials",
+      "timothy-hay-small-pets"
+    ]
+  },
+  {
     "path": "/content/guides/chinchilla-handling-guide.mdx",
     "slug": "chinchilla-handling-guide",
     "title": "How to Handle a Chinchilla (And What Fur Slip Actually Means)",
@@ -9132,6 +9191,61 @@
     ]
   },
   {
+    "path": "/content/guides/guppy-feeding-guide.mdx",
+    "slug": "guppy-feeding-guide",
+    "title": "Guppy Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Guppy Feeding Guide: Schedule and Diet",
+    "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the real risk here. Here's a real schedule, what to feed, and when refusal actually matters.",
+    "date": "2026-08-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Guppy",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-feeding.jpg",
+    "imageAlt": "Colorful guppy feeding on flakes at the water's surface",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my guppy?",
+        "a": "Adults land somewhere between once and three times a day depending on the source, there's no single agreed number. What every source agrees on is the portion rule, only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger."
+      },
+      {
+        "q": "What should guppy fry eat?",
+        "a": "Something far finer than flake at first, infusoria or liquid fry food for the first few days, their mouths are too small for anything else. Move to newly hatched baby brine shrimp and microworms as they grow past about one to two weeks, and feed them far more often than adults, some sources say every 2 to 3 hours in the earliest days."
+      },
+      {
+        "q": "Can I feed guppies goldfish food?",
+        "a": "No, it's specifically flagged as nutritionally mismatched, goldfish food has a different, lower-protein profile than what guppies actually need. Use a flake or small pellet formulated for tropical community fish instead."
+      },
+      {
+        "q": "Why has my guppy stopped eating?",
+        "a": "For a female close to giving birth, this is often completely normal, reduced stomach capacity and a shift in focus toward finding a place to deliver. Stress from a new tank, tank cleaning, or an imbalanced male-to-female ratio, and poor water quality or cold water are other common explanations."
+      },
+      {
+        "q": "How long can a guppy safely go without eating?",
+        "a": "Sources genuinely disagree here, worth knowing rather than picking a side. A vet-affiliated source recommends contacting a vet if decreased appetite lasts more than a single day, while hobbyist consensus is looser, framing a skipped meal or even a full day as not inherently concerning if the fish otherwise looks and acts normal."
+      },
+      {
+        "q": "What symptoms alongside not eating actually mean trouble?",
+        "a": "Lethargy, hiding, gasping at the surface, clamped or discolored fins, cloudy eyes, white spots, or a swollen pinecone-like body. Any of these paired with appetite loss is a signal to test water parameters immediately rather than wait it out."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/guppy-handling-guide.mdx",
     "slug": "guppy-handling-guide",
     "title": "Guppies Aren't Handled, But They Do Need a Population Plan",
@@ -9380,6 +9494,62 @@
       "hamster-food-oxbow-garden-select",
       "chew-guinea-pig-natural-sticks"
     ]
+  },
+  {
+    "path": "/content/guides/hamster-feeding-guide.mdx",
+    "slug": "hamster-feeding-guide",
+    "title": "Hamster Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Hamster Feeding Guide: Schedule and Diet",
+    "excerpt": "A hamster's cheek pouches can hold roughly a fifth of its own body weight in food, which is exactly why you might not see it eat for a day and it still be completely fine.",
+    "date": "2026-08-01",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Hamster",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Cheek Pouches"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-feeding.jpg",
+    "imageAlt": "Hamster eating pellets and fresh vegetables from a small dish",
+    "emoji": "🐹",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Should I leave food out all the time or feed on a schedule?",
+        "a": "Sources genuinely disagree, some vet sources say pelleted food should stay continuously available since hamsters rarely overeat and naturally hoard surplus, others describe twice-daily measured feedings instead. Both approaches show up in real guidance, pick one and stay consistent with fresh water always available either way."
+      },
+      {
+        "q": "Should I feed pellets or a seed mix?",
+        "a": "Pellets, or a properly formulated seed mixture, not a loose muesli-style mix on its own. Hamsters will selectively eat the sugary, fatty bits from a mix and leave the fiber-rich pieces behind, which is linked to dental problems and obesity."
+      },
+      {
+        "q": "Why has my hamster stopped eating?",
+        "a": "Dental problems, overgrown or broken teeth, are cited as the single most common cause, hamster incisors grow continuously and pain makes chewing something they avoid even when hungry. Stress from a new environment, cold-induced torpor below about 65°F, and simple pickiness in a mixed-food bowl are other common explanations."
+      },
+      {
+        "q": "Is it normal not to see my hamster eat for a whole day?",
+        "a": "Often yes, and this is an important nuance. Hamsters hoard food in cheek pouches and cache it around the enclosure, so you may not witness eating for a day or more even though they're fine and quietly working through a stash. That's different from a hamster visibly refusing available fresh food while showing other symptoms, that's the real concern."
+      },
+      {
+        "q": "How long can a hamster safely go without eating?",
+        "a": "With genuinely no food access, a healthy adult shouldn't go more than about 24 hours, and beyond 48 hours is considered life-threatening given how fast a hamster's metabolism runs. That's a different situation from a hamster relying on a pre-existing hoard, which can look like several days without visible eating and still be fine."
+      },
+      {
+        "q": "What foods are actually dangerous for hamsters?",
+        "a": "Grapes and rhubarb are explicitly flagged as poisonous to rodents. Raw onion and garlic, chocolate, bitter almonds, raw kidney beans, raw potato, eggplant, and avocado are all named as unsafe. Citrus is a genuinely disputed item, some sources avoid it outright, others say it's fine occasionally for Syrians, with extra caution for diabetes-prone dwarf breeds."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/hamster-handling-guide.mdx",

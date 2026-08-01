@@ -1,9 +1,6 @@
 {
   "description": "Ordered publish queue for the diet/feeding-guide article series. The daily publish routine takes the next 3 filenames off the FRONT of this array, moves each corresponding .mdx file from this directory into content/guides/, sets date/lastUpdated/lastReviewed to the publish day, regenerates public/articles.json and src/lib/generated/mdx-meta.json via scripts/sync-articles.js, removes the published filenames from this array, commits, and pushes.",
   "pending": [
-    "guppy-feeding-guide.mdx",
-    "hamster-feeding-guide.mdx",
-    "chinchilla-feeding-guide.mdx",
     "hedgehog-feeding-guide.mdx",
     "french-bulldog-feeding-guide.mdx"
   ]
