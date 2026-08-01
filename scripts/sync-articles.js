@@ -94,8 +94,27 @@ console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX c
 // useState default) - a structural mismatch severe enough that React gives up
 // hydrating and re-renders the whole page. A static import resolves
 // synchronously on both sides, so there's no fetch-timing race to mismatch.
+// The bundled copy carries SHORTER excerpts than public/articles.json above.
+// This file is statically imported by CategoryBrowse/CritterDigestPreview, so
+// every byte of it is fetched on the homepage before the hero image can win
+// bandwidth, and on a throttled mobile connection that directly delays LCP.
+// Excerpts were 42% of the file (68 KB of 163 KB) while the only thing that
+// renders them, CompactPostCard, clamps to two lines of text-xs - about 85
+// characters. Anything past ~120 is downloaded and then thrown away by CSS.
+// public/articles.json keeps the full text, since RSS and the Worker's
+// og:description do use all of it.
+const CARD_EXCERPT_CHARS = 120;
+const trimForCard = (text) => {
+  if (!text || text.length <= CARD_EXCERPT_CHARS) return text || '';
+  // cut on a word boundary so the string stays readable if the clamp ever grows
+  const cut = text.slice(0, CARD_EXCERPT_CHARS);
+  const lastSpace = cut.lastIndexOf(' ');
+  return (lastSpace > 60 ? cut.slice(0, lastSpace) : cut).trim();
+};
+const bundledArticles = articles.map(a => ({ ...a, excerpt: trimForCard(a.excerpt) }));
+
 fs.mkdirSync('./src/lib/generated', { recursive: true });
-fs.writeFileSync('./src/lib/generated/articles-index.json', JSON.stringify({ articles, chronicles }, null, 2));
+fs.writeFileSync('./src/lib/generated/articles-index.json', JSON.stringify({ articles: bundledArticles, chronicles }, null, 2));
 console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX chronicles to src/lib/generated/articles-index.json`);
 
 // --- App metadata module -----------------------------------------------

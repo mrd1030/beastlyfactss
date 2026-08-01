@@ -72,12 +72,19 @@ export default function HeroSection({ onOpenFact }) {
         <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
       </div>
 
-      {/* Floating emojis */}
+      {/* Floating emojis - purely decorative.
+          `top` is in vh, not %, deliberately. A percentage resolves against the
+          section's own measured height, so any late change to the hero's
+          content height repositioned all five of these and they registered as
+          a layout shift, despite being decoration nobody is reading. vh is tied
+          to the viewport instead, which cannot change mid-load, so they land in
+          their final position on first paint. The section is min-h-screen, so
+          20vh and 20% are the same place whenever the content fits. */}
       {['🦋', '🐾', '🌿', '✨', '🦜'].map((emoji, i) => (
         <motion.span
           key={i}
           className="absolute text-2xl opacity-40 pointer-events-none hidden sm:block"
-          style={{ left: `${15 + i * 18}%`, top: `${20 + i * 10}%` }}
+          style={{ left: `${15 + i * 18}%`, top: `${20 + i * 10}vh` }}
           animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
           transition={{ repeat: Infinity, duration: 3 + i, delay: i * 0.3, ease: 'easeInOut' }}
         >
