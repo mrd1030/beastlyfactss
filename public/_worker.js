@@ -269,13 +269,12 @@ const FACT_IMAGES = {
   230: '/assets/facts/dung-beetle-3.jpg', // "Forty Seconds Versus Two Minutes"
   231: '/assets/facts/dung-beetle-4.jpg', // "Tested in a Planetarium"
   232: '/assets/facts/hagfish-2.jpg', // "Seven Times Its Own Volume"
-  233: '/assets/facts/hagfish-3.jpg', // "It Knots Itself Clean"
-  234: '/assets/facts/slow-loris-2.jpg', // "Venom in Two Parts"
-  235: '/assets/facts/slow-loris-3.jpg', // "Built Like the Cat Allergen"
-  236: '/assets/facts/slow-loris-4.jpg', // "Teeth Removed With Pliers"
-  237: '/assets/facts/chicken-3.jpg', // "The Brain Stem Sits Low"
-  238: '/assets/facts/chicken-4.jpg', // "Killed by a Missing Syringe"
-  239: '/assets/facts/chicken-5.jpg', // "Running Headless Is Real"
+  233: '/assets/facts/slow-loris-2.jpg', // "Venom in Two Parts"
+  234: '/assets/facts/slow-loris-3.jpg', // "Built Like the Cat Allergen"
+  235: '/assets/facts/slow-loris-4.jpg', // "Teeth Removed With Pliers"
+  236: '/assets/facts/chicken-3.jpg', // "The Brain Stem Sits Low"
+  237: '/assets/facts/chicken-4.jpg', // "Killed by a Missing Syringe"
+  238: '/assets/facts/chicken-5.jpg', // "Running Headless Is Real"
 };
 
 function imageFor(fact) {
