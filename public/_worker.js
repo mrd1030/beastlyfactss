@@ -165,6 +165,16 @@ const ANIMAL_IMAGES = {
 // Use this whenever two facts share the same animal, so each fact still gets
 // its own distinct photo instead of looking like duplicate content in the feed.
 const FACT_IMAGES = {
+  247: '/assets/facts/penguin-2.jpg', // "Emperors Rarely Reunite"
+  248: '/assets/facts/penguin-3.jpg', // "Sixty Five Days Without Food"
+  249: '/assets/facts/crocodile.jpg', // "Closer to Birds Than Lizards"
+  250: '/assets/facts/crocodile-2.jpg', // "Barely Eating Saved Them"
+  251: '/assets/facts/tiger.jpg', // "A Species That Fits in a Town"
+  252: '/assets/facts/tiger-2.jpg', // "Striped to the Skin"
+  253: '/assets/facts/rhino.jpg', // "Horn Is Not Bone or Ivory"
+  254: '/assets/facts/rhino-2.jpg', // "It Grows Back"
+  255: '/assets/facts/sloth-3.jpg', // "The Weekly Trip That Kills Them"
+  256: '/assets/facts/sloth-4.jpg', // "The Fur Is an Ecosystem"
   239: '/assets/facts/cat-9.jpg',
   240: '/assets/facts/cat-10.jpg',
   241: '/assets/facts/lion.jpg',

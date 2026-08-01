@@ -145,6 +145,16 @@ const ANIMAL_IMAGES = {
 // Same purpose as public/_worker.js's copy: whenever two facts share an animal,
 // this points the extra facts at their own distinct photo.
 const FACT_IMAGES = {
+  247: '/assets/facts/penguin-2.jpg',
+  248: '/assets/facts/penguin-3.jpg',
+  249: '/assets/facts/crocodile.jpg',
+  250: '/assets/facts/crocodile-2.jpg',
+  251: '/assets/facts/tiger.jpg',
+  252: '/assets/facts/tiger-2.jpg',
+  253: '/assets/facts/rhino.jpg',
+  254: '/assets/facts/rhino-2.jpg',
+  255: '/assets/facts/sloth-3.jpg',
+  256: '/assets/facts/sloth-4.jpg',
   239: '/assets/facts/cat-9.jpg',
   240: '/assets/facts/cat-10.jpg',
   241: '/assets/facts/lion.jpg',
