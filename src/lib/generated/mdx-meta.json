@@ -4455,6 +4455,35 @@
     ]
   },
   {
+    "path": "/content/guides/cats-invented-the-meow-for-humans.mdx",
+    "slug": "cats-invented-the-meow-for-humans",
+    "title": "Cats Invented the Meow for Humans, and Barely Use It on Each Other",
+    "seoTitle": "Why Cats Meow at Humans But Not Other Cats",
+    "excerpt": "Adult cats almost never meow at other adult cats. The meow is aimed at us, it changed shape during domestication, and your cat has a version of it built specifically for you.",
+    "date": "2026-08-01",
+    "category": "Cats",
+    "categories": [
+      "Cats"
+    ],
+    "tags": [
+      "Cats",
+      "Cat Behavior",
+      "Animal Communication",
+      "Domestication",
+      "Animal Science",
+      "Fun Facts"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": null,
+    "imageAlt": "A domestic cat looking directly up at the camera with its mouth open mid-meow",
+    "emoji": "🐱",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/chameleon-hydration-drippers-misters-fogging.mdx",
     "slug": "chameleon-hydration-drippers-misters-fogging",
     "title": "Chameleon Hydration: Drippers vs. Misters vs. Foggers Explained",
@@ -6502,6 +6531,35 @@
     "imageAlt": "A black dung beetle standing on top of a ball of dung on dry African ground",
     "emoji": "🪲",
     "lastReviewed": "2026-07-21",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
+    "path": "/content/guides/elephants-talk-below-human-hearing.mdx",
+    "slug": "elephants-talk-below-human-hearing",
+    "title": "Elephants Talk Below the Range of Human Hearing, and Listen With Their Feet",
+    "seoTitle": "Elephant Infrasound: How Elephants Communicate Over Kilometres",
+    "excerpt": "Elephants produce calls too low for people to hear, carrying for kilometres across open country. Some of that signal travels through the ground, and elephants pick it up through their feet.",
+    "date": "2026-08-01",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Elephants",
+      "Wild Animals",
+      "Africa",
+      "Animal Communication",
+      "Animal Science",
+      "Fun Facts"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": null,
+    "imageAlt": "An African elephant standing still on dry ground with its trunk lowered and ears held out",
+    "emoji": "🐘",
+    "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
     "relatedProducts": []
@@ -10575,6 +10633,35 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/how-honeybees-vote-on-a-new-home.mdx",
+    "slug": "how-honeybees-vote-on-a-new-home",
+    "title": "Honeybees Vote on Where to Live, and the Losing Side Gets Head-Butted Into Silence",
+    "seoTitle": "How Honeybee Swarms Choose a New Home: The Real Process",
+    "excerpt": "A swarm hanging off a branch is running a decision process. Scouts campaign by dancing, rivals are silenced by a head-butt and a beep, and the result is usually the best cavity available.",
+    "date": "2026-08-01",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Bees",
+      "Honeybees",
+      "Invertebrates",
+      "Animal Behavior",
+      "Animal Science",
+      "Fun Facts"
+    ],
+    "readTime": 8,
+    "difficulty": null,
+    "image": null,
+    "imageAlt": "A dense cluster of honeybees hanging from a tree branch in a swarm",
+    "emoji": "🐝",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx",
     "slug": "immortal-jellyfish-turritopsis-dohrnii-explained",
     "title": "The Immortal Jellyfish Is Real, But It Does Not Live Forever",
@@ -12173,6 +12260,35 @@
       "glass-terrarium-18x18x24",
       "climbing-branch-mopani-wood"
     ]
+  },
+  {
+    "path": "/content/guides/lions-are-the-only-social-cat.mdx",
+    "slug": "lions-are-the-only-social-cat",
+    "title": "Lions Are the Only Cat That Lives in Groups, and the Pride Belongs to the Females",
+    "seoTitle": "Why Lions Live in Prides: The Females Own the Territory",
+    "excerpt": "Every other big cat lives alone. Lions do not, and the reason is not teamwork on the hunt. The pride is a group of related females holding ground, and the males are temporary.",
+    "date": "2026-08-01",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Lions",
+      "Big Cats",
+      "Wild Animals",
+      "Africa",
+      "Animal Behavior",
+      "Animal Science"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": null,
+    "imageAlt": "A group of lionesses resting together on open savanna grassland at dusk",
+    "emoji": "🦁",
+    "lastReviewed": "2026-08-01",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/lovebird-cost-guide.mdx",
