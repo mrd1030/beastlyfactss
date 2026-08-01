@@ -3293,6 +3293,50 @@ export const AFFILIATE_PRODUCTS = [
     pets: ["reptiles-amphibians"],
   },
 
+  // --- Batch 12: gut-loading feeder insects ---
+  {
+    slug: "gutload-flukers-cricket-quencher-calcium-3pack",
+    product: "Fluker's 16-Ounce Cricket Quencher Calcium Fortified (3 Pack)",
+    category: "Food & Supplements",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B07L8MC1QZ?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-247.jpg",
+    rating: 4.9,
+    price: "$20–$25",
+    description: "Water-gel crystals that keep feeder insects hydrated without the drowning risk of an open water dish, with calcium added so the water source doubles as part of the gut-load. Crickets dehydrate fast in a keeper, and a dehydrated cricket eats less of whatever dry diet you put in with it.",
+    covers: ["Cricket water gel (calcium fortified)"],
+    altGroup: "cricket-gutload",
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "gutload-flukers-orange-cube-cricket-diet-12oz",
+    product: "Fluker's Orange Cube Complete Cricket Diet, Gut Load Food for Feeder Insects and Live Crickets, 12 oz",
+    category: "Food & Supplements",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B000634JJE?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-248.jpg",
+    rating: 4.6,
+    price: "$8–$10",
+    description: "Gel cubes that supply food and moisture in one, so a cricket keeper needs a single item instead of a dry diet plus a separate water source. Convenient for holding feeders, though a dedicated high-calcium diet does more for the calcium to phosphorus ratio in the 24 to 72 hours before feeding out.",
+    covers: ["Cricket gut-load cubes"],
+    altGroup: "cricket-gutload",
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "gutload-flukers-high-calcium-dubia-roach-diet-7oz",
+    product: "Fluker's High Calcium Dubia Roach Diet, Can Be Used as a Gut-Loading Food or Bedding, 7 oz",
+    category: "Food & Supplements",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B08BTKWF15?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-249.jpg",
+    rating: 4.6,
+    price: "$5–$8",
+    description: "A dry gut-load formulated to push feeder insects toward a positive calcium to phosphorus ratio, which is the specific problem with crickets and roaches: they are naturally far heavier in phosphorus than calcium. Doubles as roach colony bedding, so a dubia bin is gut-loading continuously.",
+    covers: ["High-calcium gut-load diet"],
+    altGroup: "cricket-gutload",
+    pets: ["reptiles-amphibians"],
+  },
+
 ];
 
 // Display order for category sections on the standalone gear page.
