@@ -30,7 +30,10 @@ function activeWindow(event, now) {
     const [em, ed] = range.end.split('-').map(Number);
     const start = utcDay(year, sm, sd);
     const end = utcDay(year, em, ed);
-    return now.getTime() >= start && now.getTime() <= end + DAY_MS ? { start, end } : null;
+    // `end` is that date's midnight, so add a day to cover it fully. Strictly
+    // less than, or the following midnight would still count as inside and a
+    // run ending the 19th would light up on the 20th.
+    return now.getTime() >= start && now.getTime() < end + DAY_MS ? { start, end } : null;
   }
 
   for (const y of [year - 1, year, year + 1]) {
@@ -42,17 +45,38 @@ function activeWindow(event, now) {
   return null;
 }
 
-// If two events overlap, the one whose centre is nearest wins, so the band
-// switches over cleanly mid-window rather than sticking on whichever was
-// declared first. August has three observances inside eight days, so this is
-// not hypothetical.
+// Overlap resolution, in three tiers. August packs four observances into ten
+// days and Shark Week straddles World Snake Day, so this is not hypothetical.
+//
+// Tier 0, a fixed-date event on its ACTUAL date. Nothing displaces a day from
+// the day it is named after.
+// Tier 1, a multi-day run such as Shark Week. It outranks the single days
+// around it, because a week-long event reduced to a couple of days by a
+// neighbour is backwards, but tier 0 means it never erases one either: before
+// this, Shark Week kept 3 of its 8 days; now it keeps 7 and World Snake Day
+// still owns July 16.
+// Tier 2, everything else, nearest date first, so the band hands over cleanly
+// mid-window instead of sticking on whichever event was declared first.
+const DAY_TIER_EXACT = 0;
+const DAY_TIER_RANGE = 1;
+const DAY_TIER_NEAR = 2;
+
 export function getActiveEvent(now = new Date()) {
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+
   let best = null;
   for (const event of ANIMAL_EVENTS) {
     const window = activeWindow(event, now);
     if (!window) continue;
+
+    const tier = window.centre === today ? DAY_TIER_EXACT
+      : event.ranges ? DAY_TIER_RANGE
+        : DAY_TIER_NEAR;
     const distance = Math.abs((window.centre ?? window.start) - now.getTime());
-    if (!best || distance < best.distance) best = { event, distance };
+
+    if (!best || tier < best.tier || (tier === best.tier && distance < best.distance)) {
+      best = { event, tier, distance };
+    }
   }
   return best?.event ?? null;
 }
