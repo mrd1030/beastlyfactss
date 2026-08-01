@@ -56,9 +56,26 @@ async function run() {
     const [result] = await new PurgeCSS().purge({
       content: [{ raw: html, extension: 'html' }],
       css: [{ raw: fullCss }],
+      // PurgeCSS's built-in extractor tokenises on word characters, so a
+      // Tailwind variant like `lg:text-6xl` is split into `lg` and `text-6xl`.
+      // The unprefixed rule survives and the responsive one is dropped, which
+      // is not cosmetic: the homepage <h1> is `text-4xl sm:text-5xl
+      // lg:text-6xl`, so a desktop first paint rendered it at 36px, then
+      // jumped to 60px when the deferred sheet landed. That grew the hero from
+      // 541px to 716px, and because the section is `min-h-screen flex
+      // items-center` the whole block re-centred and moved up 87px: a 0.54
+      // desktop CLS on its own. This extractor keeps whole class tokens
+      // instead, including colons, slashes and arbitrary-value brackets.
+      defaultExtractor: (content) => content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
       safelist: {
         standard: [/^dark$/],
-        greedy: [/^(hover|focus|focus-visible|focus-within|active|disabled|checked|group-hover|group-focus|peer-checked|peer-focus|dark):/],
+        greedy: [
+          /^(hover|focus|focus-visible|focus-within|active|disabled|checked|group-hover|group-focus|peer-checked|peer-focus|dark):/,
+          // Responsive variants, for the same reason as above. Belt and braces
+          // alongside the extractor: above-the-fold layout must not depend on
+          // the deferred sheet arriving.
+          /^(sm|md|lg|xl|2xl):/,
+        ],
       },
       keyframes: true,
       variables: true,
