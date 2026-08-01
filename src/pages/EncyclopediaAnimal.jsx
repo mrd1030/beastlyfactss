@@ -6,6 +6,7 @@ import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
+import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
@@ -25,16 +26,6 @@ function BioField({ label, value }) {
       }
     </div>
   );
-}
-
-function getRelatedFacts(animal) {
-  const nameLower = animal.name.toLowerCase();
-  return facts.filter(f => {
-    const fAnimal = f.animal.toLowerCase();
-    // Whole-name containment only - matching on individual shared words
-    // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
-    return nameLower.includes(fAnimal) || fAnimal.includes(nameLower);
-  }).slice(0, 3);
 }
 
 export default function EncyclopediaAnimal() {
@@ -76,7 +67,7 @@ export default function EncyclopediaAnimal() {
     );
   }
 
-  const relatedFacts = getRelatedFacts(animal);
+  const relatedFacts = getRelatedFacts(animal.name, facts);
   const relatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
   const bio = animal.bio || {};

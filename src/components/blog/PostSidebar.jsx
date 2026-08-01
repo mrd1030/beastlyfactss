@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
+import { matchesAnimal } from '@/lib/utils/matchAnimal';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
@@ -77,30 +78,26 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
     return <div className="space-y-5 animate-pulse opacity-50">Loading...</div>;
   }
 
-// Smart icon guesser using your imported 'facts' data
+  // Picks a post's emoji by finding a fact about the same animal.
+  //
+  // Uses matchesAnimal rather than a substring test. The substring version this
+  // replaces searched full post titles, where any word merely containing an
+  // animal name counted: "Educational Enrichment for Your Gecko" matched Cat on
+  // "eduCATional" and rendered a cat emoji on a gecko post. Only one live post
+  // changes as a result of this fix, but the trap resets with every new title.
   const getPostIcon = (post) => {
-    // 1. If you explicitly set an emoji in the CMS, always use that first!
+    // An explicitly set emoji always wins.
     if (post.emoji) return post.emoji;
 
-    // 2. Grab the text strings we want to search through, safely converted to lowercase
-    const postTitle = (post.title || '').toLowerCase();
-    const postCategory = (post.category?.title || post.category || '').toLowerCase();
-    const postAnimal = (post.animalType?.title || post.animalType || '').toLowerCase();
+    const postCategory = post.category?.title || post.category || '';
+    const postAnimal = post.animalType?.title || post.animalType || '';
 
-    // 3. Look through your imported 'facts' array for a match
-    const matchedFact = facts.find((fact) => {
-      // Assuming your fact objects have an 'animal' property (e.g., animal: 'Honey Badger')
-      const factAnimalName = (fact.animal || '').toLowerCase();
-      
-      // If the fact's animal name shows up in the post's title, category, or animalType, it's a match!
-      return (
-        postTitle.includes(factAnimalName) || 
-        postCategory.includes(factAnimalName) || 
-        postAnimal.includes(factAnimalName)
-      );
-    });
+    const matchedFact = facts.find((fact) =>
+      matchesAnimal(post.title || '', fact.animal) ||
+      matchesAnimal(postCategory, fact.animal) ||
+      matchesAnimal(postAnimal, fact.animal)
+    );
 
-    // 4. Return the emoji from the matched fact, or fallback to a paw print if nothing matches
     return matchedFact?.emoji || '🐾';
   };
 

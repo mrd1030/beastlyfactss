@@ -6,6 +6,7 @@ import { ArrowLeft, Printer, Check, ChevronRight, ChevronDown, BookOpen, Calcula
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
+import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
 import { truncateDescription } from '@/lib/utils/truncate';
@@ -58,13 +59,7 @@ export default function GuideDetail() {
     ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
 
-  const relatedFacts = guide ? facts.filter(f => {
-    const fAnimal = f.animal.toLowerCase();
-    const gName = guide.name.toLowerCase();
-    // Whole-name containment only - matching on individual shared words
-    // (e.g. "dragon") false-matched Komodo Dragon facts onto Bearded Dragon.
-    return gName.includes(fAnimal) || fAnimal.includes(gName);
-  }).slice(0, 3) : [];
+  const relatedFacts = guide ? getRelatedFacts(guide.name, facts) : [];
 
   // Modal keyboard handling: Escape closes, Tab is trapped inside, and focus
   // returns to the trigger button on close.
