@@ -165,6 +165,14 @@ const ANIMAL_IMAGES = {
 // Use this whenever two facts share the same animal, so each fact still gets
 // its own distinct photo instead of looking like duplicate content in the feed.
 const FACT_IMAGES = {
+  239: '/assets/facts/cat-9.jpg',
+  240: '/assets/facts/cat-10.jpg',
+  241: '/assets/facts/lion.jpg',
+  242: '/assets/facts/lion-2.jpg',
+  243: '/assets/facts/elephant-3.jpg',
+  244: '/assets/facts/elephant-4.jpg',
+  245: '/assets/facts/honeybee-3.jpg',
+  246: '/assets/facts/honeybee-4.jpg',
   151: '/assets/facts/flamingo-2.jpg', // "The One-Leg Trick" - id 21 keeps flamingo.jpg
   81: '/assets/facts/chameleon-2.jpg', // "Color-Changing Camouflage"
   88: '/assets/facts/chameleon-3.jpg', // "Chameleon Color Change"
