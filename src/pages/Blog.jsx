@@ -12,7 +12,7 @@ import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicle
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
-import { getDisplayDate } from '@/lib/utils/date';
+import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
@@ -456,6 +456,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
     .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
     .filter(Boolean);
 
+  const isoPublished = getDisplayIsoDate(post.publishedAt);
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -463,12 +465,21 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
     "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
-    // Derived from displayDate (not a direct getDisplayIsoDate() call) so this
-    // stays consistent with the visible date span below, which already
-    // defaults hidden and upgrades post-mount to dodge the same hydration
-    // hazard - see the displayDate state above.
-    "datePublished": displayDate ? post.publishedAt : '',
-    "dateModified": displayDate ? post.publishedAt : '',
+    // Computed during render, NOT derived from the displayDate state. That
+    // state is deliberately empty during prerendering (see the effect above,
+    // which returns early on __IS_PRERENDER__ to avoid a hydration mismatch on
+    // the visible date span), and wiring the schema to it meant every one of
+    // the ~380 prerendered article pages shipped datePublished:"" - not just
+    // future-dated ones. An empty string is not a valid Article date, so the
+    // site was emitting no publish-date signal at all in its structured data.
+    //
+    // The hydration hazard does not apply here: react-helmet-async writes head
+    // tags through its own side effects rather than through the body tree React
+    // reconciles at hydration, so a head-only difference cannot produce the
+    // mismatch the span had. Spreading rather than assigning keeps the keys out
+    // entirely when there is no publishable date, since omitting a field is
+    // valid where an empty one is not.
+    ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastReviewed || isoPublished }),
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
     "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
