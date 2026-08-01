@@ -101,11 +101,16 @@ export default function HeroSection({ onOpenFact }) {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 mt-28 w-full flex justify-center">
         <div className="max-w-2xl h-full flex flex-col items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          {/* Deliberately NOT animated in, same reasoning as the daily fact
+              card below. framer-motion does not emit its styles into the
+              prerendered HTML, so this block ships as a bare <div> and only
+              gets its opacity/transform once framer hydrates. Removing the
+              entrance animation from the fact card took desktop CLS from 0.291
+              to 0.121, and this is the last motion wrapper left inside the
+              element PageSpeed still names as the sole shift culprit. It is
+              above the fold and already in the HTML, so it should just be
+              visible. */}
+          <div>
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-display font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
@@ -146,7 +151,7 @@ export default function HeroSection({ onOpenFact }) {
             <p className="text-xs text-muted-foreground font-body max-w-md mx-auto text-center leading-relaxed">
               Updated weekly with reviewed animal facts, practical pet care tips, and quiz challenges that help you learn faster.
             </p>
-          </motion.div>
+          </div>
 
           {/* Daily Fact - deliberately NOT animated in.
               Lighthouse flagged this exact element under "avoid non-composited
