@@ -62,3 +62,9 @@ public/assets/**/*-card@2x.webp
 # Sanity CMS, migrated to MDX (see _sanity-archive/scripts/sanity-to-mdx.mjs).
 # Kept locally as a rollback path, not tracked.
 _sanity-archive/
+
+# beastlyfactsapp is its own project and lives at ../../beastlyfactsapp. This
+# nested copy is a local working copy only - it had drifted out of sync with
+# the real one (their facts-catalog-data.json differed), so tracking it here
+# meant two sources of truth for the same app. Kept on disk, not tracked.
+beastlyfactsapp/
