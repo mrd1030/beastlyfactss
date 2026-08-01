@@ -262,6 +262,20 @@ const FACT_IMAGES = {
   223: '/assets/facts/wood-frog-4.jpg', // "Two Antifreezes, Two Schedules"
   224: '/assets/facts/wood-frog-5.jpg', // "It Restarts From the Middle"
   225: '/assets/facts/wood-frog-6.jpg', // "The Only Frog Above the Arctic Circle"
+  226: '/assets/facts/seahorse-3.jpg', // "A Placenta Made of Skin"
+  227: '/assets/facts/seahorse-4.jpg', // "He Broke His Immune System First"
+  228: '/assets/facts/seahorse-5.jpg', // "Seawater Comes In With the Eggs"
+  229: '/assets/facts/dung-beetle-2.jpg', // "The Dance Before the Roll"
+  230: '/assets/facts/dung-beetle-3.jpg', // "Forty Seconds Versus Two Minutes"
+  231: '/assets/facts/dung-beetle-4.jpg', // "Tested in a Planetarium"
+  232: '/assets/facts/hagfish-2.jpg', // "Seven Times Its Own Volume"
+  233: '/assets/facts/hagfish-3.jpg', // "It Knots Itself Clean"
+  234: '/assets/facts/slow-loris-2.jpg', // "Venom in Two Parts"
+  235: '/assets/facts/slow-loris-3.jpg', // "Built Like the Cat Allergen"
+  236: '/assets/facts/slow-loris-4.jpg', // "Teeth Removed With Pliers"
+  237: '/assets/facts/chicken-3.jpg', // "The Brain Stem Sits Low"
+  238: '/assets/facts/chicken-4.jpg', // "Killed by a Missing Syringe"
+  239: '/assets/facts/chicken-5.jpg', // "Running Headless Is Real"
 };
 
 function imageFor(fact) {

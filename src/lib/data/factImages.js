@@ -242,6 +242,20 @@ const FACT_IMAGES = {
   223: '/assets/facts/wood-frog-4.jpg',
   224: '/assets/facts/wood-frog-5.jpg',
   225: '/assets/facts/wood-frog-6.jpg',
+  226: '/assets/facts/seahorse-3.jpg',
+  227: '/assets/facts/seahorse-4.jpg',
+  228: '/assets/facts/seahorse-5.jpg',
+  229: '/assets/facts/dung-beetle-2.jpg',
+  230: '/assets/facts/dung-beetle-3.jpg',
+  231: '/assets/facts/dung-beetle-4.jpg',
+  232: '/assets/facts/hagfish-2.jpg',
+  233: '/assets/facts/hagfish-3.jpg',
+  234: '/assets/facts/slow-loris-2.jpg',
+  235: '/assets/facts/slow-loris-3.jpg',
+  236: '/assets/facts/slow-loris-4.jpg',
+  237: '/assets/facts/chicken-3.jpg',
+  238: '/assets/facts/chicken-4.jpg',
+  239: '/assets/facts/chicken-5.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
