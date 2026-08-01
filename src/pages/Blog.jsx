@@ -10,7 +10,7 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
-import { trackEvent } from '@/lib/analytics';
+import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { getDisplayDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
@@ -279,11 +279,13 @@ export default function Blog() {
               type="text"
               placeholder="Search articles by title..."
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              // Reported on a typing pause, not only on Enter. This box filters
+              // results live, so most people never press Enter and their search
+              // went unrecorded. Enter still reports immediately for anyone who
+              // does press it; trackSearch dedupes so it cannot double-count.
+              onChange={(e) => { setSearch(e.target.value); trackSearch(e.target.value); }}
               onKeyDown={(e) => {
-                if (e.key === 'Enter' && search.trim()) {
-                  trackEvent('search', { search_term: search.trim() });
-                }
+                if (e.key === 'Enter') trackSearch(e.currentTarget.value, { immediate: true });
               }}
               className="w-full bg-card border border-border rounded-xl pl-10 pr-9 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
             />

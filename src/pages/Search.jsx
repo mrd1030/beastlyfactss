@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { Search as SearchIcon, X } from 'lucide-react';
+import { trackSearch } from '@/lib/analytics';
 import { CATEGORIES } from '@/lib/data/categories';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
@@ -80,6 +81,12 @@ export default function Search() {
   const handleInput = (val) => {
     setQuery(val);
     if (val.trim()) setHasSearched(true);
+    // GA4, alongside the base44 call in the debounce below. This page reported
+    // only to base44 before, so nothing a visitor searched here ever reached
+    // Google Analytics - and this is the site's dedicated search page.
+    // trackSearch debounces and dedupes on its own, so it is safe to call on
+    // every keystroke rather than nesting it inside the timeout below.
+    trackSearch(val);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
       const url = new URL(window.location);

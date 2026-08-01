@@ -24,3 +24,38 @@ export function trackEvent(event, params = {}) {
   if (!Array.isArray(window.dataLayer)) return;
   window.dataLayer.push({ event, ...params });
 }
+
+// Search reporting, debounced.
+//
+// Only the homepage search is a real form submit. /blog/ and /search/ filter
+// results live as you type, so there is no submit to hang an event on, and
+// users have no reason to press Enter - /search/ reported nothing at all and
+// /blog/ only reported when someone happened to hit Enter. Firing on every
+// keystroke instead would report "a", "ax", "axo", "axol"... as separate
+// searches, which is worse than no data.
+//
+// So: wait for a pause in typing and report what they settled on. MIN_CHARS
+// drops single letters and stray keystrokes. `lastTracked` stops the same term
+// being reported twice when someone edits and returns to it, or when a page
+// re-renders with the query already in state.
+const SEARCH_DEBOUNCE_MS = 900;
+const MIN_CHARS = 3;
+let searchTimer = null;
+let lastTracked = '';
+
+export function trackSearch(term, { immediate = false } = {}) {
+  const q = (term || '').trim();
+  clearTimeout(searchTimer);
+  if (q.length < MIN_CHARS) return;
+
+  const fire = () => {
+    if (q === lastTracked) return;
+    lastTracked = q;
+    trackEvent('search', { search_term: q });
+  };
+
+  // immediate for a real submit (homepage form, Enter key), where the user has
+  // clearly finished; debounced for live-filtering inputs.
+  if (immediate) fire();
+  else searchTimer = setTimeout(fire, SEARCH_DEBOUNCE_MS);
+}
