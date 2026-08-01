@@ -19,9 +19,15 @@ const assetDirs = [
 // upscale blur at that size) - PageSpeed flagged that as ~460KB of oversized
 // images. 640x480 gives a sharp result at that display size without paying
 // for a 1168x784 original.
+// images/ joined this list when the homepage gained the FeaturedEvent band,
+// which shows an ARTICLE image in a card the same way. Without a -card tier
+// LocalImage falls back to the full original, so that band was requesting a
+// 1168x784 file for a 176px slot - the same regression the note above
+// describes, arriving by a different route.
 const CARD_VARIANT_DIRS = new Set([
   path.join(rootDir, 'public/assets/guides'),
   path.join(rootDir, 'public/assets/encyclopedia'),
+  path.join(rootDir, 'public/assets/images'),
 ]);
 
 const supported = new Set(['.jpg', '.jpeg', '.png']);

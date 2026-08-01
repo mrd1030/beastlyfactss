@@ -18,6 +18,7 @@
 // when a route needs it) - this only changes HOW the already-fetched module
 // gets handed to React, not whether it's fetched separately.
 const modules = {
+  FeaturedEvent: () => import('@/components/home/FeaturedEvent'),
   TrendingFacts: () => import('@/components/home/TrendingFacts'),
   FactsToGuidesBanner: () => import('@/components/home/FactsToGuidesBanner'),
   CategoryBrowse: () => import('@/components/home/CategoryBrowse'),

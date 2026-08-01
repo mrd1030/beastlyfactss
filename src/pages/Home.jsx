@@ -55,6 +55,7 @@ export default function Home() {
       
       <HeroSection onOpenFact={setSelectedFact} />
 
+      <HomeChild name="FeaturedEvent" />
       <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
       <HomeChild name="FactsToGuidesBanner" />
       <HomeChild name="CategoryBrowse" />
