@@ -7,7 +7,6 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
-import AnalyticsTracker from '@/components/AnalyticsTracker';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import PageNotFound from './lib/PageNotFound';
 // Home is NOT lazy-loaded like the other pages below: its own module (~3KB
@@ -72,7 +71,13 @@ const AuthenticatedApp = () => {
 
   return (
     <>
-      <AnalyticsTracker />
+      {/* No <AnalyticsTracker /> here on purpose. It called
+          window.gtag('config', ...) on every route change, which never ran
+          (this site loads only the GTM container, so window.gtag is undefined)
+          and would have double-counted every pageview if it ever did: GA4's
+          Enhanced Measurement already reports SPA route changes through its own
+          history listener inside gtag.js. Pageviews are GA4's job, not the
+          app's. See src/lib/analytics.js for how custom events reach GTM. */}
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />

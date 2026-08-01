@@ -6,6 +6,7 @@ import { slugify } from '@/lib/utils/slugify';
 import { getCategoryBySlug } from '@/lib/data/categories';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
+import { trackEvent } from '@/lib/analytics';
 // Statically imported, not fetch('/articles.json') in a useEffect like
 // before: that always started with loading:true, and prerender.mjs's
 // networkidle0 wait meant the static HTML always captured the post-fetch
@@ -69,9 +70,7 @@ export default function CategoryBrowse() {
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     const q = searchInput.trim();
-    if (import.meta.env.MODE === 'production' && window.gtag && q) {
-      window.gtag('event', 'search', { search_term: q });
-    }
+    if (q) trackEvent('search', { search_term: q });
     navigate(q ? `/blog/?search=${encodeURIComponent(q)}` : '/blog/');
   };
 
