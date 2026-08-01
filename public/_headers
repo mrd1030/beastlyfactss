@@ -4,7 +4,20 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Cross-Origin-Opener-Policy: same-origin
+  # Was `same-origin`, which broke Google Tag Assistant. Tag Assistant opens the
+  # site in a popup and talks to it through window.opener; COOP `same-origin`
+  # puts that popup in its own browsing context group, so the opener handle goes
+  # null and Tag Assistant reports "the window was closed before a connection
+  # could be established" / "page is not tagged". Note `same-origin-allow-popups`
+  # does NOT fix this: that governs popups this page opens, not how this page
+  # behaves when something else opens it. `unsafe-none` is the browser default.
+  #
+  # What this gives up: cross-origin isolation, which this site never used (no
+  # SharedArrayBuffer, no high-resolution timers) and which mainly hardens
+  # against cross-window XS-Leaks. Clickjacking protection is unaffected, that
+  # is X-Frame-Options: DENY above and it stays. Restore `same-origin` here if
+  # GTM debugging is finished and the isolation is wanted back.
+  Cross-Origin-Opener-Policy: unsafe-none
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*.js
