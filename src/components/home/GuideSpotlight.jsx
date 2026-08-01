@@ -2,12 +2,19 @@ import React from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
-import { allGuides } from '@/lib/data/guides';
+// The build-time card index, NOT the `allGuides` barrel this used to import.
+// That barrel re-exports the full text of all 78 guides - sections, FAQs, cost
+// tables - which bundled to 507 KB, and this component renders 11 cards from
+// seven scalar fields. Importing it put half a megabyte of guide prose in the
+// homepage's entry graph, where it competed with the document and the hero
+// image for bandwidth on mobile. See scripts/generate-guides-index.js; the
+// slim index is 23 KB and carries the same records in the same order.
+import guidesIndex from '@/lib/generated/guides-index.json';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import LocalImage from '@/components/shared/LocalImage';
 
 // One guide per pet type so the sample reflects the site's actual range
-// instead of whichever category happens to sit first in allGuides. Covers
+// instead of whichever category happens to sit first in the index. Covers
 // every petType used across src/lib/data/guides/* - add new categories here
 // as they're introduced so this list stays exhaustive.
 const SAMPLE_PET_TYPES = [
@@ -16,7 +23,7 @@ const SAMPLE_PET_TYPES = [
   'Invertebrates', 'Amphibians',
 ];
 const featured = SAMPLE_PET_TYPES
-  .map(petType => allGuides.find(g => g.petType === petType))
+  .map(petType => guidesIndex.guides.find(g => g.petType === petType))
   .filter(Boolean);
 
 export default function GuideSpotlight() {

@@ -1,0 +1,706 @@
+{
+  "guides": [
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "petType": "Amphibians",
+      "image": "/assets/guides/axolotl.jpg",
+      "tagline": "The 'forever larva' with feathery gills and superhero-level regeneration!"
+    },
+    {
+      "id": "fire-belly-toad",
+      "name": "Fire-Bellied Toad",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "petType": "Amphibians",
+      "image": "/assets/guides/fire-belly-toad.jpg",
+      "tagline": "The vivid red and black toad that warns predators of its mild toxicity!"
+    },
+    {
+      "id": "pacman-frog",
+      "name": "Pacman Frog",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "petType": "Amphibians",
+      "image": "/assets/guides/pacman-frog.jpg",
+      "tagline": "The round, grumpy ambush predator that is essentially all mouth!"
+    },
+    {
+      "id": "tiger-salamander",
+      "name": "Tiger Salamander",
+      "emoji": "🐸",
+      "difficulty": "Intermediate",
+      "petType": "Amphibians",
+      "image": "/assets/guides/tiger-salamander.jpg",
+      "tagline": "North America's largest land-dwelling salamander and a remarkably personable pet!"
+    },
+    {
+      "id": "whites-tree-frog",
+      "name": "White's Tree Frog",
+      "emoji": "🐸",
+      "difficulty": "Beginner",
+      "petType": "Amphibians",
+      "image": "/assets/guides/whites-tree-frog.jpg",
+      "tagline": "The chubby, chilled-out tree frog with a permanent smile and incredible tolerability!"
+    },
+    {
+      "id": "african-grey",
+      "name": "African Grey Parrot",
+      "emoji": "🦜",
+      "difficulty": "Advanced",
+      "petType": "Birds",
+      "image": "/assets/guides/african-grey.jpg",
+      "tagline": "The genius of the parrot world, one of the most intelligent animals on Earth!"
+    },
+    {
+      "id": "budgie",
+      "name": "Budgie / Parakeet",
+      "emoji": "🐦",
+      "difficulty": "Beginner",
+      "petType": "Birds",
+      "image": "/assets/guides/budgie.jpg",
+      "tagline": "The cheerful, chatty little parakeet that's perfect for first-time bird owners!"
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "emoji": "🐦",
+      "difficulty": "Beginner",
+      "petType": "Birds",
+      "image": "/assets/guides/canary.jpg",
+      "tagline": "The classic singing songbird that's happiest observed, not handled!"
+    },
+    {
+      "id": "cockatiel",
+      "name": "Cockatiel",
+      "emoji": "🦜",
+      "difficulty": "Beginner",
+      "petType": "Birds",
+      "image": "/assets/guides/cockatiel.jpg",
+      "tagline": "The whistling, crested charmer that's the perfect first parrot!"
+    },
+    {
+      "id": "cockatoo",
+      "name": "Cockatoo",
+      "emoji": "🦜",
+      "difficulty": "Advanced",
+      "petType": "Birds",
+      "image": "/assets/guides/cockatoo.jpg",
+      "tagline": "The affectionate, screaming, decades-long commitment of a parrot that bonds almost too well!"
+    },
+    {
+      "id": "conure",
+      "name": "Green Cheek Conure",
+      "emoji": "🦜",
+      "difficulty": "Intermediate",
+      "petType": "Birds",
+      "image": "/assets/guides/conure.jpg",
+      "tagline": "The clownish, cuddly little conure that never stops entertaining!"
+    },
+    {
+      "id": "lovebird",
+      "name": "Lovebird",
+      "emoji": "❤️",
+      "difficulty": "Intermediate",
+      "petType": "Birds",
+      "image": "/assets/guides/lovebird.jpg",
+      "tagline": "The feisty, affectionate little parrot that bonds deeply with its person!"
+    },
+    {
+      "id": "cat-universal",
+      "name": "Cat Care: The Essentials",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-essentials.jpg",
+      "tagline": "Core care principles that apply to every cat, every breed."
+    },
+    {
+      "id": "cat-domestic-shorthair",
+      "name": "Domestic Shorthair: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-domestic-shorthair.jpg",
+      "tagline": "The most common cat in the world, and often the healthiest."
+    },
+    {
+      "id": "cat-maine-coon",
+      "name": "Maine Coon: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-maine-coon.jpg",
+      "tagline": "The gentle giant of the cat world, with a dog-like personality."
+    },
+    {
+      "id": "cat-siamese",
+      "name": "Siamese: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Intermediate",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-siamese.jpg",
+      "tagline": "The vocal, social, opinionated cat that demands to be part of everything."
+    },
+    {
+      "id": "cat-ragdoll",
+      "name": "Ragdoll: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-ragdoll.jpg",
+      "tagline": "The floppy, gentle giant that goes limp when you pick them up."
+    },
+    {
+      "id": "cat-bengal",
+      "name": "Bengal: Breed Quirks",
+      "emoji": "🐈",
+      "difficulty": "Advanced",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-bengal.jpg",
+      "tagline": "The wild-looking, highly athletic cat that needs an active owner."
+    },
+    {
+      "id": "cat-persian",
+      "name": "Persian: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Intermediate",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-persian.jpg",
+      "tagline": "The luxurious, calm lap cat with significant grooming requirements."
+    },
+    {
+      "id": "dog-universal",
+      "name": "Dog Care: The Essentials",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-care-essentials.jpg",
+      "tagline": "Everything every dog owner needs to know, regardless of breed."
+    },
+    {
+      "id": "dog-small-breed",
+      "name": "Small Breed Dogs",
+      "emoji": "🐕",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-small.jpg",
+      "tagline": "Big personalities in a tiny package. Know their specific needs!"
+    },
+    {
+      "id": "dog-medium-breed",
+      "name": "Medium Breed Dogs",
+      "emoji": "🐕",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-medium.jpg",
+      "tagline": "The 'just right' size with its own unique needs."
+    },
+    {
+      "id": "dog-large-breed",
+      "name": "Large and Giant Breed Dogs",
+      "emoji": "🐕",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-large.jpg",
+      "tagline": "More dog to love, and more responsibility to match."
+    },
+    {
+      "id": "dog-labrador",
+      "name": "Labrador Retriever: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-labrador-retriever.jpg",
+      "tagline": "The world's most popular dog breed, and for good reason!"
+    },
+    {
+      "id": "dog-golden-retriever",
+      "name": "Golden Retriever: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-golden-retriever.jpg",
+      "tagline": "Gentle, joyful, and endlessly loyal: the golden retriever."
+    },
+    {
+      "id": "dog-german-shepherd",
+      "name": "German Shepherd: Breed Quirks",
+      "emoji": "🐕",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-german-shepherd.jpg",
+      "tagline": "One of the world's most versatile and intelligent working dogs."
+    },
+    {
+      "id": "dog-french-bulldog",
+      "name": "French Bulldog: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-french-bulldog.jpg",
+      "tagline": "Charming and adaptable, but needs informed, attentive ownership."
+    },
+    {
+      "id": "dog-border-collie",
+      "name": "Border Collie: Breed Quirks",
+      "emoji": "🐕",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-border-collie.jpg",
+      "tagline": "The world's most intelligent dog breed, and the most demanding."
+    },
+    {
+      "id": "dog-siberian-husky",
+      "name": "Siberian Husky: Breed Quirks",
+      "emoji": "🐺",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-siberian-husky.jpg",
+      "tagline": "The escape artist sled dog that needs a job and a secure fence."
+    },
+    {
+      "id": "angelfish",
+      "name": "Angelfish",
+      "emoji": "🐠",
+      "difficulty": "Intermediate",
+      "petType": "Fish",
+      "image": "/assets/guides/angelfish.jpg",
+      "tagline": "The elegant Amazonian cichlid that pairs for life and rules its corner of the tank!"
+    },
+    {
+      "id": "betta-fish",
+      "name": "Betta Fish",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/betta-fish.jpg",
+      "tagline": "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!"
+    },
+    {
+      "id": "corydoras-catfish",
+      "name": "Corydoras Catfish",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/corydoras-catfish.jpg",
+      "tagline": "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!"
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/goldfish.jpg",
+      "tagline": "The pond classic that outgrows its reputation - and its bowl - in a hurry!"
+    },
+    {
+      "id": "guppy",
+      "name": "Guppy",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/guppy.jpg",
+      "tagline": "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!"
+    },
+    {
+      "id": "koi",
+      "name": "Koi",
+      "emoji": "🎏",
+      "difficulty": "Intermediate",
+      "petType": "Fish",
+      "image": "/assets/guides/koi.jpg",
+      "tagline": "The living jewels of the pond world that can genuinely outlive their keepers!"
+    },
+    {
+      "id": "neon-tetra",
+      "name": "Neon Tetra",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/neon-tetra.jpg",
+      "tagline": "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!"
+    },
+    {
+      "id": "oscar",
+      "name": "Oscar",
+      "emoji": "🐟",
+      "difficulty": "Intermediate",
+      "petType": "Fish",
+      "image": "/assets/guides/oscar.jpg",
+      "tagline": "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!"
+    },
+    {
+      "id": "african-fat-tail",
+      "name": "African Fat-Tailed Gecko",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "petType": "Geckos",
+      "image": "/assets/guides/african-fat-tail.jpg",
+      "tagline": "The calm, velvety cousin of the leopard gecko: gentle as can be!"
+    },
+    {
+      "id": "crested-gecko",
+      "name": "Crested Gecko",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "petType": "Geckos",
+      "image": "/assets/guides/crested-gecko.jpg",
+      "tagline": "The velvety, fan-fringed gecko that needs no heat lamp!"
+    },
+    {
+      "id": "gargoyle-gecko",
+      "name": "Gargoyle Gecko",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "petType": "Geckos",
+      "image": "/assets/guides/gargoyle-gecko.jpg",
+      "tagline": "The stocky, grippy gecko with a face only a reptile lover could adore!"
+    },
+    {
+      "id": "leaf-tailed-gecko",
+      "name": "Leaf-Tailed Gecko",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Geckos",
+      "image": "/assets/guides/leaf-tailed-gecko.jpg",
+      "tagline": "Nature's ultimate camouflage artist, hiding in plain sight!"
+    },
+    {
+      "id": "leopard-gecko",
+      "name": "Leopard Gecko",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "petType": "Geckos",
+      "image": "/assets/guides/leopard-gecko.jpg",
+      "tagline": "The smiling gecko that's perfect for first-time reptile parents!"
+    },
+    {
+      "id": "mourning-gecko",
+      "name": "Mourning Gecko",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Geckos",
+      "image": "/assets/guides/mourning-gecko.jpg",
+      "tagline": "Tiny, all-female, and endlessly fascinating: a colony in a planted vivarium!"
+    },
+    {
+      "id": "tokay-gecko",
+      "name": "Tokay Gecko",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "petType": "Geckos",
+      "image": "/assets/guides/tokay-gecko.jpg",
+      "tagline": "The jewel-toned, loud-voiced gecko that's not for the faint of heart!"
+    },
+    {
+      "id": "emperor-scorpion",
+      "name": "Emperor Scorpion",
+      "emoji": "🦂",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/emperor-scorpion.jpg",
+      "tagline": "One of the largest scorpions in the world, and one of the least venomous pet scorpions!"
+    },
+    {
+      "id": "millipede",
+      "name": "Giant African Millipede",
+      "emoji": "🐛",
+      "difficulty": "Self-Sufficient",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/millipede.jpg",
+      "tagline": "The gentle detritivore that works as a living composting machine!"
+    },
+    {
+      "id": "hermit-crab",
+      "name": "Hermit Crab",
+      "emoji": "🦀",
+      "difficulty": "Intermediate",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/hermit-crab.jpg",
+      "tagline": "The shell-swapping beach scavenger whose 'easy starter pet' reputation badly undersells what it actually needs!"
+    },
+    {
+      "id": "jumping-spider",
+      "name": "Jumping Spider",
+      "emoji": "🕷️",
+      "difficulty": "Beginner",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/jumping-spider.jpg",
+      "tagline": "The tiny, curious-eyed hunter that watches you back and needs barely any space at all!"
+    },
+    {
+      "id": "hissing-cockroach",
+      "name": "Madagascar Hissing Cockroach",
+      "emoji": "🪲",
+      "difficulty": "Self-Sufficient",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/hissing-cockroach.jpg",
+      "tagline": "Calm, armored, surprisingly clean - and yes, it hisses!"
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Praying Mantis",
+      "emoji": "🦗",
+      "difficulty": "Self-Sufficient",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/praying-mantis.jpg",
+      "tagline": "Nature's most impressive ambush predator, in a palm-sized package!"
+    },
+    {
+      "id": "stick-insect",
+      "name": "Stick Insect",
+      "emoji": "🌿",
+      "difficulty": "Self-Sufficient",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/stick-insect.jpg",
+      "tagline": "The master of disguise that is literally a twig with legs!"
+    },
+    {
+      "id": "tarantula",
+      "name": "Tarantula",
+      "emoji": "🕷️",
+      "difficulty": "Beginner",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/tarantula.jpg",
+      "tagline": "The misunderstood gentle giant of the spider world, a surprisingly low-maintenance pet!"
+    },
+    {
+      "id": "ackie-monitor",
+      "name": "Ackie Monitor",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Lizards",
+      "image": "/assets/guides/ackie-monitor.jpg",
+      "tagline": "The miniature Komodo dragon with a huge personality!"
+    },
+    {
+      "id": "tegu",
+      "name": "Argentine Black and White Tegu",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Lizards",
+      "image": "/assets/guides/tegu.jpg",
+      "tagline": "The dog-like mega-lizard that can learn its own name!"
+    },
+    {
+      "id": "bearded-dragon",
+      "name": "Bearded Dragon",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Lizards",
+      "image": "/assets/guides/bearded-dragon.jpg",
+      "tagline": "The chill, cuddly lizard that changes color with its mood!"
+    },
+    {
+      "id": "blue-tongue-skink",
+      "name": "Blue Tongue Skink",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Lizards",
+      "image": "/assets/guides/blue-tongue-skink.jpg",
+      "tagline": "The chunky, blue-tongued charmer who loves a good meal!"
+    },
+    {
+      "id": "green-anole",
+      "name": "Green Anole",
+      "emoji": "🦎",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Lizards",
+      "image": "/assets/guides/green-anole.jpg",
+      "tagline": "America's tiny chameleon: the little green lizard that turns brown with its mood!"
+    },
+    {
+      "id": "chameleon",
+      "name": "Jackson's Chameleon",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Lizards",
+      "image": "/assets/guides/chameleon.jpg",
+      "tagline": "The horned, color-shifting dinosaur of the reptile world!"
+    },
+    {
+      "id": "savannah-monitor",
+      "name": "Savannah Monitor",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Lizards",
+      "image": "/assets/guides/savannah-monitor.jpg",
+      "tagline": "The powerful, intelligent monitor that needs serious space and a serious keeper!"
+    },
+    {
+      "id": "uromastyx",
+      "name": "Uromastyx",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "petType": "Lizards",
+      "image": "/assets/guides/uromastyx.jpg",
+      "tagline": "The colorful, seed-eating desert dragon that thrives on extreme heat!"
+    },
+    {
+      "id": "veiled-chameleon",
+      "name": "Veiled Chameleon",
+      "emoji": "🦎",
+      "difficulty": "Intermediate",
+      "petType": "Lizards",
+      "image": "/assets/guides/veiled-chameleon.jpg",
+      "tagline": "The Arabian casque-crowned climber often called the most forgiving chameleon to start with!"
+    },
+    {
+      "id": "chinchilla",
+      "name": "Chinchilla",
+      "emoji": "🐭",
+      "difficulty": "Intermediate/Advanced",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/chinchilla.jpg",
+      "tagline": "The incredibly soft, high-jumping rodent that needs dust baths!"
+    },
+    {
+      "id": "ferret",
+      "name": "Ferret",
+      "emoji": "🦡",
+      "difficulty": "Intermediate",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/ferret.jpg",
+      "tagline": "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!"
+    },
+    {
+      "id": "guinea-pig",
+      "name": "Guinea Pig",
+      "emoji": "🐹",
+      "difficulty": "Beginner",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/guinea-pig.jpg",
+      "tagline": "The vocal, social little veggie lover that needs a friend!"
+    },
+    {
+      "id": "hamster",
+      "name": "Hamster",
+      "emoji": "🌰",
+      "difficulty": "Beginner",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/hamster.jpg",
+      "tagline": "The pouch-stuffing solo escape artist that needs way more space than the pet store box!"
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog",
+      "emoji": "🦔",
+      "difficulty": "Intermediate",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/hedgehog.jpg",
+      "tagline": "The spiky little explorer that runs on a wheel all night!"
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "emoji": "🐰",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/rabbit.jpg",
+      "tagline": "The gentle, litter-trainable companion that loves to binky!"
+    },
+    {
+      "id": "sugar-glider",
+      "name": "Sugar Glider",
+      "emoji": "🐿️",
+      "difficulty": "Advanced",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/sugar-glider.jpg",
+      "tagline": "The tiny, gliding, social marsupial that needs a colony and lots of enrichment!"
+    },
+    {
+      "id": "ball-python",
+      "name": "Ball Python",
+      "emoji": "🐍",
+      "difficulty": "Intermediate",
+      "petType": "Snakes",
+      "image": "/assets/guides/ball-python.jpg",
+      "tagline": "The gentle noodle that curls into a perfect ball when shy!"
+    },
+    {
+      "id": "boa-constrictor",
+      "name": "Boa Constrictor",
+      "emoji": "🐍",
+      "difficulty": "Intermediate/Advanced",
+      "petType": "Snakes",
+      "image": "/assets/guides/boa-constrictor.jpg",
+      "tagline": "The powerful, graceful heavyweight of the pet snake world!"
+    },
+    {
+      "id": "california-kingsnake",
+      "name": "California Kingsnake",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "petType": "Snakes",
+      "image": "/assets/guides/california-kingsnake.jpg",
+      "tagline": "The boldly banded beginner snake that becomes a gem with handling!"
+    },
+    {
+      "id": "corn-snake",
+      "name": "Corn Snake",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "petType": "Snakes",
+      "image": "/assets/guides/corn-snake.jpg",
+      "tagline": "The curious, colorful beginner snake that never stops exploring!"
+    },
+    {
+      "id": "hognose-snake",
+      "name": "Hognose Snake",
+      "emoji": "🐍",
+      "difficulty": "Intermediate",
+      "petType": "Snakes",
+      "image": "/assets/guides/hognose-snake.jpg",
+      "tagline": "The drama queen of snakes: all bluff and zero bite!"
+    },
+    {
+      "id": "milk-snake",
+      "name": "Milk Snake",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "petType": "Snakes",
+      "image": "/assets/guides/milk-snake.jpg",
+      "tagline": "The brilliantly banded mimic that wears venomous colors with no venom required!"
+    },
+    {
+      "id": "box-turtle",
+      "name": "Box Turtle",
+      "emoji": "🐢",
+      "difficulty": "Intermediate",
+      "petType": "Turtles & Tortoises",
+      "image": "/assets/guides/box-turtle.jpg",
+      "tagline": "The self-closing, woodland wanderer that can live for over 100 years!"
+    },
+    {
+      "id": "red-eared-slider",
+      "name": "Red-Eared Slider",
+      "emoji": "🐢",
+      "difficulty": "Advanced",
+      "petType": "Turtles & Tortoises",
+      "image": "/assets/guides/red-eared-slider.jpg",
+      "tagline": "The iconic pet turtle that grows much larger than the pet store suggests!"
+    },
+    {
+      "id": "russian-tortoise",
+      "name": "Russian Tortoise",
+      "emoji": "🐢",
+      "difficulty": "Intermediate",
+      "petType": "Turtles & Tortoises",
+      "image": "/assets/guides/russian-tortoise.jpg",
+      "tagline": "The compact, hardy tortoise that can live over 50 years with proper care!"
+    },
+    {
+      "id": "sulcata-tortoise",
+      "name": "Sulcata Tortoise",
+      "emoji": "🐢",
+      "difficulty": "Advanced",
+      "petType": "Turtles & Tortoises",
+      "image": "/assets/guides/sulcata-tortoise.jpg",
+      "tagline": "The third-largest tortoise: a lifetime commitment that may outlive you!"
+    }
+  ]
+}

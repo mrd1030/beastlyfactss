@@ -261,9 +261,34 @@ async function renderRoute(page, route) {
   // src, so the inline loader snippet and the <noscript> iframe both survive
   // untouched: GTM still loads exactly once for real visitors, via the snippet
   // that was always meant to do it.
-  return html.replace(
-    /<script\b[^>]*\bsrc="https?:\/\/(?:www\.)?googletagmanager\.com\/[^"]*"[^>]*>\s*<\/script>/gi,
-    ''
+  return (
+    html
+      .replace(
+        /<script\b[^>]*\bsrc="https?:\/\/(?:www\.)?googletagmanager\.com\/[^"]*"[^>]*>\s*<\/script>/gi,
+        ''
+      )
+      // Same class of problem, different injector: Vite's __vitePreload helper
+      // appends <link rel="modulepreload"> to the head at runtime every time a
+      // dynamic import fires, so page.content() bakes the whole lazily-loaded
+      // component tree into the static head as eager, High-priority preloads.
+      // The homepage built ONE modulepreload and shipped eighteen, pinning
+      // 1,077 KB of JS ahead of the document body. On Slow 4G that JS contends
+      // with the remaining ~160 KB of HTML, the hero image preload and both
+      // font preloads for the same pipe, which is why a prerendered page with
+      // inlined critical CSS still measured FCP 3.9s and 2,630 ms of LCP
+      // "element render delay" - the hero bytes had arrived at 170 ms and were
+      // waiting on the main thread.
+      //
+      // Vite's own build-time preload is kept: it writes
+      // `<link rel="modulepreload" crossorigin href=...>` with no `as`, while
+      // the helper sets `link.as = 'script'` on everything it injects. Matching
+      // on as="script" removes exactly the runtime-injected set and leaves the
+      // entry's real preload alone. These chunks are still fetched normally by
+      // the dynamic imports that wanted them, just after first paint instead of
+      // ahead of it.
+      .replace(/<link\b[^>]*>\s*/gi, (tag) =>
+        /\brel="modulepreload"/i.test(tag) && /\bas="script"/i.test(tag) ? '' : tag
+      )
   );
 }
 
@@ -367,7 +392,16 @@ async function main() {
   const mdxCategoryRoutes = getMdxCategoryRoutes(mdxMeta);
   const mdxRoutes = getMdxRoutes(mdxMeta);
   const chroniclesRoutes = getChroniclesRoutes(mdxMeta);
-  const allRoutes = [...new Set([...STATIC_ROUTES, ...mdxCategoryRoutes, ...mdxRoutes, ...chroniclesRoutes])];
+  const discovered = [...new Set([...STATIC_ROUTES, ...mdxCategoryRoutes, ...mdxRoutes, ...chroniclesRoutes])];
+
+  // Local escape hatch: PRERENDER_ONLY takes a comma-separated list of exact
+  // routes so a single page can be re-rendered in seconds instead of waiting
+  // out all ~600. Purely for verifying head/markup changes by hand - unset in
+  // CI, where the full set always renders.
+  const only = process.env.PRERENDER_ONLY?.split(',').map(r => r.trim()).filter(Boolean);
+  const allRoutes = only?.length ? discovered.filter(r => only.includes(r)) : discovered;
+  if (only?.length) console.log(`⚠️  PRERENDER_ONLY set - rendering ${allRoutes.length} of ${discovered.length} routes`);
+
   console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY}...`);
 
   const server = await preview({ preview: { port: PORT, open: false } });
