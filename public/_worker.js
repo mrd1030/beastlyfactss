@@ -246,6 +246,22 @@ const FACT_IMAGES = {
   169: '/assets/facts/wolf-2.jpg', // "The Alpha Wolf Myth"
   150: '/assets/facts/guinea-pig-2.jpg', // "The Vitamin C Shortage"
   98: '/assets/facts/wood-frog-2.jpg', // "Quacks Like a Duck, Hops Like a Frog"
+  210: '/assets/facts/giraffe-3.jpg', // "They Hum After Dark"
+  211: '/assets/facts/giraffe-4.jpg', // "Four Giraffes, Not One"
+  212: '/assets/facts/giraffe-5.jpg', // "Drinking Is Harder Than It Looks"
+  213: '/assets/facts/giraffe-6.jpg', // "The Eighth Neck Bone"
+  214: '/assets/facts/naked-mole-rat-2.jpg', // "A Queen Ruling by Smell"
+  215: '/assets/facts/naked-mole-rat-3.jpg', // "Eighteen Minutes, No Oxygen"
+  216: '/assets/facts/naked-mole-rat-4.jpg', // "Every Colony Has an Accent"
+  217: '/assets/facts/naked-mole-rat-5.jpg', // "The Only Animal That Ignores Acid"
+  218: '/assets/facts/clownfish-4.jpg', // "Shrinking to Survive a Heatwave"
+  219: '/assets/facts/clownfish-5.jpg', // "The Queue Nobody Jumps"
+  220: '/assets/facts/clownfish-6.jpg', // "Not Immune, Just Unsalted"
+  221: '/assets/facts/clownfish-7.jpg', // "Thirty Years in One Anemone"
+  222: '/assets/facts/wood-frog-3.jpg', // "Alaska Rewrote the Limit"
+  223: '/assets/facts/wood-frog-4.jpg', // "Two Antifreezes, Two Schedules"
+  224: '/assets/facts/wood-frog-5.jpg', // "It Restarts From the Middle"
+  225: '/assets/facts/wood-frog-6.jpg', // "The Only Frog Above the Arctic Circle"
 };
 
 function imageFor(fact) {
