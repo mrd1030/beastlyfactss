@@ -73,23 +73,29 @@ export default function HeroSection({ onOpenFact }) {
       </div>
 
       {/* Floating emojis - purely decorative.
-          `top` is in vh, not %, deliberately. A percentage resolves against the
-          section's own measured height, so any late change to the hero's
-          content height repositioned all five of these and they registered as
-          a layout shift, despite being decoration nobody is reading. vh is tied
-          to the viewport instead, which cannot change mid-load, so they land in
-          their final position on first paint. The section is min-h-screen, so
-          20vh and 20% are the same place whenever the content fits. */}
+          The position lives on a PLAIN span, not on the motion.span, because
+          framer-motion does not emit its `style` prop into the prerendered
+          HTML. When it was a motion.span the markup shipped with no left/top at
+          all, so all five stacked at the same spot on first paint and only
+          jumped to their real positions once framer hydrated (on mobile, after
+          the vendor chunk lands several seconds in). That was a measurable
+          layout shift caused entirely by decoration nobody is reading. Static
+          markup carries the position now, and the inner motion.span only
+          animates transforms, which cannot affect layout. */}
       {['🦋', '🐾', '🌿', '✨', '🦜'].map((emoji, i) => (
-        <motion.span
+        <span
           key={i}
-          className="absolute text-2xl opacity-40 pointer-events-none hidden sm:block"
+          className="absolute hidden sm:block pointer-events-none"
           style={{ left: `${15 + i * 18}%`, top: `${20 + i * 10}vh` }}
-          animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
-          transition={{ repeat: Infinity, duration: 3 + i, delay: i * 0.3, ease: 'easeInOut' }}
         >
-          {emoji}
-        </motion.span>
+          <motion.span
+            className="block text-2xl opacity-40"
+            animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
+            transition={{ repeat: Infinity, duration: 3 + i, delay: i * 0.3, ease: 'easeInOut' }}
+          >
+            {emoji}
+          </motion.span>
+        </span>
       ))}
 
       {/* Content */}
@@ -142,13 +148,14 @@ export default function HeroSection({ onOpenFact }) {
             </p>
           </motion.div>
 
-          {/* Daily Fact */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-            className="bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg"
-          >
+          {/* Daily Fact - deliberately NOT animated in.
+              Lighthouse flagged this exact element under "avoid non-composited
+              animations" ("Effect has unsupported timing parameters", the
+              delay), and a non-composited animation runs on the main thread and
+              can feed CLS. It is also above the fold, so a 0.3s delay meant
+              prerendered content sat invisible waiting for framer to hydrate.
+              The markup is already in the HTML; it should simply be visible. */}
+          <div className="bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-display font-bold text-xs text-secondary">DAILY FACT</span>
@@ -181,7 +188,7 @@ export default function HeroSection({ onOpenFact }) {
                 🎉 +1 Brain Cell!
               </motion.span>
             )}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
