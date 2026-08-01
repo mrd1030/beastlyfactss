@@ -56,16 +56,21 @@ async function generateThumbs() {
       const webpOut = `${base}-thumb.webp`;
       const jpgOut = `${base}-thumb.jpg`;
 
+      // 240x240 renders into slots as small as 80x56, so like the -card@2x
+      // variant this is always drawn well below its native size. PageSpeed
+      // flagged several of these individually ("increasing the image
+      // compression factor could improve this image's download size"), which is
+      // what q68 addresses.
       if (!(fs.existsSync(webpOut) && fs.existsSync(jpgOut))) {
         try {
           await sharp(input)
             .resize(240, 240, { fit: 'cover', withoutEnlargement: true })
-            .webp({ quality: 74 })
+            .webp({ quality: 68 })
             .toFile(webpOut);
 
           await sharp(input)
             .resize(240, 240, { fit: 'cover', withoutEnlargement: true })
-            .jpeg({ quality: 76 })
+            .jpeg({ quality: 70 })
             .toFile(jpgOut);
 
           count += 1;
@@ -106,16 +111,23 @@ async function generateThumbs() {
           }
         }
 
+        // Lower quality than the 1x variant on purpose. This file is only ever
+        // served to high-DPI screens, where its 640x480 is displayed in a slot
+        // about 315x236 CSS px, so every compression artifact is drawn at half
+        // size and is correspondingly harder to see. PageSpeed flagged these as
+        // the single biggest image cost on the homepage (around 298 KiB across
+        // the encyclopedia cards alone), and dropping to q68 sheds roughly 29%
+        // of that with no visible difference at the size they actually render.
         if (!(fs.existsSync(card2xWebpOut) && fs.existsSync(card2xJpgOut))) {
           try {
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
-              .webp({ quality: 76 })
+              .webp({ quality: 68 })
               .toFile(card2xWebpOut);
 
             await sharp(input)
               .resize(640, 480, { fit: 'cover', withoutEnlargement: true })
-              .jpeg({ quality: 78 })
+              .jpeg({ quality: 70 })
               .toFile(card2xJpgOut);
 
             count += 1;
