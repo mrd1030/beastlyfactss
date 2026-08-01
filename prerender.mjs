@@ -246,7 +246,25 @@ async function renderRoute(page, route) {
     });
   });
 
-  return page.content();
+  const html = await page.content();
+
+  // Strip <script src> tags that Google Tag Manager's own loader snippet
+  // injected while this page was being rendered. page.content() serialises the
+  // live DOM, so anything a third-party script appended gets baked into the
+  // static file - and index.html still contains the snippet that appends it
+  // again at request time. The result is GTM loading twice on every prerendered
+  // page (three times on some, where the render settled after more than one
+  // injection), which PageSpeed measured as /gtm.js listed repeatedly at 116 KiB
+  // each and counted toward "reduce unused JavaScript".
+  //
+  // Only tags pointing at googletagmanager.com are removed, and only ones with a
+  // src, so the inline loader snippet and the <noscript> iframe both survive
+  // untouched: GTM still loads exactly once for real visitors, via the snippet
+  // that was always meant to do it.
+  return html.replace(
+    /<script\b[^>]*\bsrc="https?:\/\/(?:www\.)?googletagmanager\.com\/[^"]*"[^>]*>\s*<\/script>/gi,
+    ''
+  );
 }
 
 // A path guaranteed not to match any real route, so it always renders the
