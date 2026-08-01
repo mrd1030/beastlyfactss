@@ -2,6 +2,33 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { parse as parseYaml } from 'yaml';
 
+import { facts } from '../src/lib/data/facts.js';
+import { CATEGORIES } from '../src/lib/data/categories.js';
+import { matchesAnimal } from '../src/lib/utils/matchAnimal.js';
+
+// Emoji for a post that sets none in frontmatter. Tries the animal the post is
+// actually about, then the category, then a neutral paw.
+//
+// matchesAnimal is the same head-noun matcher the encyclopedia and guide pages
+// use, so this cannot regress into the substring behaviour that put cat facts
+// on the Sulcata Tortoise page - an "Educational Enrichment" title does not
+// resolve to a cat here either.
+function derivedEmoji(fm) {
+  const title = fm.title || '';
+  const matched = facts.find((fact) => matchesAnimal(title, fact.animal));
+  if (matched?.emoji) return matched.emoji;
+
+  const categories = Array.isArray(fm.categories) && fm.categories.length
+    ? [fm.category, ...fm.categories].filter(Boolean)
+    : [fm.category].filter(Boolean);
+  for (const label of categories) {
+    const hit = CATEGORIES.find((c) => c.label === label);
+    if (hit?.emoji) return hit.emoji;
+  }
+
+  return '🐾';
+}
+
 // Real YAML parse (unlike the scalar-only line parser in generate-sitemap.js)
 // because the app metadata below needs arrays and nested objects intact -
 // tags: [...] and faqs: [{q, a}, ...] in particular.
@@ -150,7 +177,14 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       difficulty: fm.difficulty || null,
       image: fm.image || null,
       imageAlt: fm.imageAlt || fm.title || '',
-      emoji: fm.emoji || null,
+      // Resolved here rather than at render time. 83 of 401 posts set no emoji
+      // in frontmatter, and Blog.jsx used to fall back to a hardcoded gecko for
+      // all of them - so the dolphin, shark, octopus and birdwatching articles
+      // all led with a lizard. Deriving it needs facts.js, which is 197 KB and
+      // is NOT otherwise in the Blog chunk, so doing this in the browser would
+      // have dragged the whole fact database into a route that never uses it.
+      // Frontmatter still wins whenever it is set.
+      emoji: fm.emoji || derivedEmoji(fm),
       lastReviewed: fm.lastReviewed || null,
       canonicalUrl: fm.canonicalUrl || null,
       faqs: Array.isArray(fm.faqs) ? fm.faqs : [],

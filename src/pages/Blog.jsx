@@ -528,7 +528,13 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
 
-            <span className="text-5xl block mb-4">{post.emoji || '🦎'}</span>
+            {/* Was `post.emoji || '🦎'`. 83 posts set no emoji in frontmatter,
+                so the dolphin, shark, octopus and birdwatching articles all
+                opened with a lizard. sync-articles.js now derives one at build
+                time (animal, then category, then paw) and every post has one,
+                making this fallback unreachable - kept neutral rather than
+                reptile-specific in case a post ever slips through. */}
+            <span className="text-5xl block mb-4">{post.emoji || '🐾'}</span>
 
             <div className="flex items-center gap-2 mb-3 flex-wrap">
               <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
