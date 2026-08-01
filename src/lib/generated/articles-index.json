@@ -929,7 +929,7 @@
       "title": "Why Cats Meow at Humans But Not Other Cats",
       "excerpt": "Adult cats almost never meow at other adult cats. The meow is aimed at us, it changed shape during domestication, and",
       "date": "2026-08-01",
-      "image": null,
+      "image": "/assets/images/cats-invented-the-meow-for-humans.jpg",
       "category": "Cats",
       "categories": [
         "Cats"
@@ -952,6 +952,17 @@
       "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself",
       "date": "2026-07-19",
       "image": "/assets/images/chinchilla-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "chinchilla-feeding-guide",
+      "title": "Chinchilla Feeding Guide: Schedule and Diet",
+      "excerpt": "Chinchillas re-eat a special dropping overnight to run food through the gut a second time, a required part of",
+      "date": "2026-08-01",
+      "image": "/assets/images/chinchilla-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -1371,7 +1382,7 @@
       "title": "Elephant Infrasound: How Elephants Communicate Over Kilometres",
       "excerpt": "Elephants produce calls too low for people to hear, carrying for kilometres across open country. Some of that signal",
       "date": "2026-08-01",
-      "image": null,
+      "image": "/assets/images/elephants-talk-below-human-hearing.jpg",
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
@@ -1939,6 +1950,17 @@
       ]
     },
     {
+      "slug": "guppy-feeding-guide",
+      "title": "Guppy Feeding Guide: Schedule and Diet",
+      "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the real risk here. Here's a real",
+      "date": "2026-08-01",
+      "image": "/assets/images/guppy-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
       "slug": "guppy-handling-guide",
       "title": "How to Handle Guppy Fish (and Manage Breeding)",
       "excerpt": "Guppies are an observation and enjoyment pet, not a hands-on one. The real thing every guppy owner needs to understand",
@@ -1989,6 +2011,17 @@
       "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost",
       "date": "2026-07-14",
       "image": "/assets/images/hamster-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "hamster-feeding-guide",
+      "title": "Hamster Feeding Guide: Schedule and Diet",
+      "excerpt": "A hamster's cheek pouches can hold roughly a fifth of its own body weight in food, which is exactly why you might not",
+      "date": "2026-08-01",
+      "image": "/assets/images/hamster-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -2231,7 +2264,7 @@
       "title": "How Honeybee Swarms Choose a New Home: The Real Process",
       "excerpt": "A swarm hanging off a branch is running a decision process. Scouts campaign by dancing, rivals are silenced by a",
       "date": "2026-08-01",
-      "image": null,
+      "image": "/assets/images/how-honeybees-vote-on-a-new-home.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
@@ -2573,7 +2606,7 @@
       "title": "Why Lions Live in Prides: The Females Own the Territory",
       "excerpt": "Every other big cat lives alone. Lions do not, and the reason is not teamwork on the hunt. The pride is a group of",
       "date": "2026-08-01",
-      "image": null,
+      "image": "/assets/images/lions-are-the-only-social-cat.jpg",
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
