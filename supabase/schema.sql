@@ -207,7 +207,174 @@ grant insert on public.blog_comments to anon, authenticated;
 --
 -- Run these from the SQL editor or the Table editor while signed in to the
 -- dashboard, which uses the service role and bypasses RLS. No admin UI is
--- shipped in the site itself, so there is no admin surface to attack.
+-- shipped in the site itself, so there is no admin surface to attack. That is
+-- deliberate: an approve/reject route on a public site would be the single
+-- largest attack surface in this design, and moderation happens rarely enough
+-- that the dashboard is no hardship.
+
+-- ---------------------------------------------------------------------------
+-- New-comment notification (replaces base44's SendEmail)
+-- ---------------------------------------------------------------------------
+-- Pushes to ntfy.sh on insert, which needs no account, no API key and no
+-- domain: the topic name is itself the secret, so it lives in Vault rather
+-- than inline here. Subscribe by adding that topic in the ntfy app.
 --
--- Optional: to get the email notification the old function sent, add a Database
--- Webhook (Dashboard -> Database -> Webhooks) on insert to blog_comments.
+-- pg_net posts asynchronously, so the reader's insert never waits on the
+-- network. The exception handler matters just as much: this trigger runs
+-- inside the insert's transaction, so anything it raised would roll the
+-- comment back. A failed notification must never cost a real comment.
+--
+-- To change where alerts go, update the secret rather than this function:
+--   select vault.update_secret(
+--     (select id from vault.secrets where name = 'ntfy_comment_topic'),
+--     'new-topic-name'
+--   );
+-- To stop them: drop trigger blog_comments_notify on public.blog_comments;
+create extension if not exists pg_net;
+
+do $vault$
+begin
+  if not exists (select 1 from vault.secrets where name = 'ntfy_comment_topic') then
+    perform vault.create_secret(
+      'CHANGE-ME-set-your-own-unguessable-topic',
+      'ntfy_comment_topic',
+      'ntfy.sh topic that new blog comment alerts are published to'
+    );
+  end if;
+end
+$vault$;
+
+-- Per-comment moderation token. This is what the notification's Approve and
+-- Reject buttons carry, rather than a key. The obvious implementation puts a
+-- privileged key in the push payload, which then sits on the phone and passes
+-- through ntfy's servers; a token instead affects exactly one comment and stops
+-- working the moment it is used.
+alter table public.blog_comments
+  add column if not exists moderation_token uuid;
+
+-- Forced server-side, never taken from the request. Without this an attacker
+-- could insert a comment carrying a token they chose and immediately approve
+-- it, which would make the whole moderation step decorative. status is pinned
+-- here too, belt and braces with the insert policy's with check.
+create or replace function public.set_comment_moderation_token()
+returns trigger
+language plpgsql
+set search_path = public, extensions
+as $fn$
+begin
+  new.moderation_token := gen_random_uuid();
+  new.status := 'pending';
+  return new;
+end
+$fn$;
+
+drop trigger if exists blog_comments_set_token on public.blog_comments;
+create trigger blog_comments_set_token
+  before insert on public.blog_comments
+  for each row
+  execute function public.set_comment_moderation_token();
+
+-- Single-use: the token is cleared on use, so a replayed tap does nothing.
+-- Returns a short string because ntfy shows the response body in a toast.
+create or replace function public.moderate_comment(p_token uuid, p_decision text)
+returns text
+language plpgsql
+security definer
+set search_path = public, extensions
+as $fn$
+declare
+  updated_title text;
+begin
+  if p_decision not in ('approved', 'rejected') then
+    return 'Invalid decision';
+  end if;
+
+  update public.blog_comments
+     set status = p_decision,
+         moderation_token = null
+   where moderation_token = p_token
+   returning coalesce(nullif(post_title, ''), post_id) into updated_title;
+
+  if updated_title is null then
+    return 'Already handled or expired';
+  end if;
+
+  return case p_decision
+    when 'approved' then 'Approved, now live on ' || updated_title
+    else 'Rejected'
+  end;
+end
+$fn$;
+
+revoke all on function public.moderate_comment(uuid, text) from public, anon, authenticated;
+grant execute on function public.moderate_comment(uuid, text) to anon;
+
+create or replace function public.notify_new_comment()
+returns trigger
+language plpgsql
+security definer
+set search_path = public, extensions, vault, net
+as $fn$
+declare
+  topic text;
+  api_url text := 'https://ipqqeofzlwvfnunduuru.supabase.co/rest/v1/rpc/moderate_comment';
+  -- The publishable key, which is public by design and already in the site
+  -- bundle. It is not what authorises the decision: the per-comment token is.
+  api_key text := 'sb_publishable_1TIAo_Nad3LtMO_O6LaU-A_wy0ZoyD4';
+  action_headers jsonb;
+begin
+  select decrypted_secret into topic
+  from vault.decrypted_secrets
+  where name = 'ntfy_comment_topic';
+
+  if topic is null or topic = '' then
+    return new;
+  end if;
+
+  action_headers := jsonb_build_object(
+    'apikey', api_key,
+    'Authorization', 'Bearer ' || api_key,
+    'Content-Type', 'application/json'
+  );
+
+  perform net.http_post(
+    url := 'https://ntfy.sh',
+    body := jsonb_build_object(
+      'topic', topic,
+      'title', 'New comment: ' || coalesce(nullif(new.post_title, ''), new.post_id),
+      -- author_email is deliberately not included: it is not needed to decide
+      -- whether to approve, and a phone notification is a poor place for it.
+      'message', new.author_name || ' wrote:' || chr(10) || chr(10)
+                 || left(new.content, 400)
+                 || chr(10) || chr(10) || 'id: ' || new.id::text,
+      'tags', jsonb_build_array('speech_balloon'),
+      'priority', 3,
+      'click', 'https://beastlyfacts.com/blog/' || new.post_id || '/',
+      'actions', jsonb_build_array(
+        jsonb_build_object(
+          'action', 'http', 'label', 'Approve', 'method', 'POST',
+          'url', api_url, 'headers', action_headers, 'clear', true,
+          'body', jsonb_build_object('p_token', new.moderation_token, 'p_decision', 'approved')::text
+        ),
+        jsonb_build_object(
+          'action', 'http', 'label', 'Reject', 'method', 'POST',
+          'url', api_url, 'headers', action_headers, 'clear', true,
+          'body', jsonb_build_object('p_token', new.moderation_token, 'p_decision', 'rejected')::text
+        )
+      )
+    ),
+    headers := jsonb_build_object('Content-Type', 'application/json')
+  );
+
+  return new;
+exception
+  when others then
+    return new;
+end
+$fn$;
+
+drop trigger if exists blog_comments_notify on public.blog_comments;
+create trigger blog_comments_notify
+  after insert on public.blog_comments
+  for each row
+  execute function public.notify_new_comment();
