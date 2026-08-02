@@ -113,6 +113,16 @@ create view public.public_blog_comments
   from public.blog_comments
   where status = 'approved';
 
+-- The revoke is load-bearing, not tidying. Supabase grants anon and
+-- authenticated full privileges on new objects in the public schema, and this
+-- view is a simple single-table select, which Postgres treats as automatically
+-- updatable (information_schema.views reports is_updatable = YES). Combined with
+-- security_invoker = off, which makes the view run as its owner and therefore
+-- skip RLS on blog_comments, the default grants would let anyone holding the
+-- publishable key UPDATE or DELETE approved comments, or INSERT one that is
+-- already approved, straight through the view. Revoking first and granting only
+-- select is what makes the view genuinely read-only.
+revoke all on public.public_blog_comments from anon, authenticated;
 grant select on public.public_blog_comments to anon, authenticated;
 
 -- ---------------------------------------------------------------------------
