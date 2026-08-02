@@ -172,6 +172,32 @@ revoke all on public.public_blog_comments from anon, authenticated;
 grant select on public.public_blog_comments to anon, authenticated;
 
 -- ---------------------------------------------------------------------------
+-- Least-privilege grants on the base tables
+-- ---------------------------------------------------------------------------
+-- Supabase grants anon and authenticated everything on new tables in the public
+-- schema, including TRUNCATE. RLS is not a complete backstop for that: it filters
+-- SELECT, INSERT, UPDATE and DELETE, but TRUNCATE is a table-level operation that
+-- RLS does not gate at all, so it rests solely on the grant. PostgREST exposes no
+-- TRUNCATE verb, so this is not reachable over the REST API today - but it is a
+-- privilege nothing needs, sitting one surface change away from mattering.
+--
+-- Cutting the grants to exactly what the site uses also means a mistake in a
+-- policy can no longer become a data-loss bug on its own. This matches the
+-- pattern the app already uses on households/household_members in this same
+-- database, which revoke everything and expose only security-definer RPCs.
+--
+-- blog_comments gets INSERT only: reads go through public_blog_comments, and
+-- supabase-js sends Prefer: return=minimal unless .select() is chained, so the
+-- insert needs no read privilege of its own.
+revoke all on public.blog_post_likes from anon, authenticated;
+revoke all on public.blog_post_shares from anon, authenticated;
+revoke all on public.blog_comments from anon, authenticated;
+
+grant select, insert on public.blog_post_likes to anon, authenticated;
+grant select, insert on public.blog_post_shares to anon, authenticated;
+grant insert on public.blog_comments to anon, authenticated;
+
+-- ---------------------------------------------------------------------------
 -- Moderating
 -- ---------------------------------------------------------------------------
 -- Approve:  update public.blog_comments set status = 'approved' where id = '...';
