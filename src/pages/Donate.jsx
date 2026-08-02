@@ -8,12 +8,28 @@ import {
   DONATION_AMOUNTS,
   getDonationLink,
   hasAnyDonationLink,
+  isDonationEnabled,
 } from '@/lib/data/donationLinks';
 
 export default function Donate() {
   const [amount, setAmount] = useState('');
   const [donationType, setDonationType] = useState('');
   const donationsConfigured = hasAnyDonationLink();
+
+  // Not every amount exists for every type: the custom-amount Payment Link is
+  // one-time only. Rather than let someone pick Custom + Monthly and then fail,
+  // the unavailable option is disabled, and picking one side clears the other if
+  // the pair no longer works. Reading availability off the link table means this
+  // stays correct on its own if a link is later added or removed.
+  const selectAmount = (val) => {
+    setAmount(val);
+    if (donationType && !isDonationEnabled(donationType, val)) setDonationType('');
+  };
+
+  const selectType = (val) => {
+    setDonationType(val);
+    if (amount && !isDonationEnabled(val, amount)) setAmount('');
+  };
 
   // Refs for arrow key navigation
   const amountContainerRef = useRef(null);
@@ -80,26 +96,32 @@ export default function Donate() {
               ref={amountContainerRef} 
               onKeyDown={(e) => handleKeyDown(e, amountContainerRef)}
             >
-              {DONATION_AMOUNTS.map((val) => (
-                <button
-                  key={val}
-                  type="button"
-                  onClick={() => setAmount(val)}
-                  className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 ${
-                    amount === val 
-                      ? 'border-primary bg-primary/10 text-foreground' 
-                      : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
-                  }`}
-                >
-                  <span className="font-display text-2xl font-bold">{val === 'custom' ? 'Custom' : `$${val}`}</span>
-                </button>
-              ))}
+              {DONATION_AMOUNTS.map((val) => {
+                const unavailable = donationType && !isDonationEnabled(donationType, val);
+                return (
+                  <button
+                    key={val}
+                    type="button"
+                    onClick={() => selectAmount(val)}
+                    disabled={unavailable}
+                    aria-disabled={unavailable || undefined}
+                    title={unavailable ? 'Not available for monthly donations' : undefined}
+                    className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-40 disabled:cursor-not-allowed ${
+                      amount === val
+                        ? 'border-primary bg-primary/10 text-foreground'
+                        : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
+                    }`}
+                  >
+                    <span className="font-display text-2xl font-bold">{val === 'custom' ? 'Custom' : `$${val}`}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
           {amount === 'custom' && (
             <p className="text-sm text-muted-foreground font-body">
-              You will enter the amount on the next page, on Stripe's secure checkout.
+              You will set the amount on the next page, at Stripe's secure checkout. It starts at $5, and there is a "Change amount" option there. Custom amounts are one-time only.
             </p>
           )}
 
@@ -114,20 +136,26 @@ export default function Donate() {
               {[
                 { value: 'one-time', label: 'One-time' },
                 { value: 'monthly', label: 'Monthly' }
-              ].map(({ value, label }) => (
-                <button
-                  key={value}
-                  type="button"
-                  onClick={() => setDonationType(value)}
-                  className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 ${
-                    donationType === value 
-                      ? 'border-primary bg-primary/10 text-foreground' 
-                      : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
-                  }`}
-                >
-                  <span className="font-display text-base font-bold">{label}</span>
-                </button>
-              ))}
+              ].map(({ value, label }) => {
+                const unavailable = amount && !isDonationEnabled(value, amount);
+                return (
+                  <button
+                    key={value}
+                    type="button"
+                    onClick={() => selectType(value)}
+                    disabled={unavailable}
+                    aria-disabled={unavailable || undefined}
+                    title={unavailable ? 'Not available for a custom amount' : undefined}
+                    className={`flex flex-col items-center justify-center rounded-xl border-2 p-4 transition-all duration-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:opacity-40 disabled:cursor-not-allowed ${
+                      donationType === value
+                        ? 'border-primary bg-primary/10 text-foreground'
+                        : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
+                    }`}
+                  >
+                    <span className="font-display text-base font-bold">{label}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
