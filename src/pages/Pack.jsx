@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2 } from 'lucide-react';
+import { Heart, Share2, ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -20,6 +20,16 @@ export default function Pack() {
   const { savedQuizResults, removeQuizResult, unlockedAchievements, streak } = useFavoritesCtx();
   const savedFacts = facts.filter(f => favorites.includes(f.id));
   const [confirmingId, setConfirmingId] = useState(null);
+
+  // Results are no longer capped, so a long-standing collection could otherwise
+  // push everything below it off the page. One full row is shown by default and
+  // the rest collapse behind a toggle.
+  const QUIZ_PREVIEW_COUNT = 6;
+  const [showAllQuizzes, setShowAllQuizzes] = useState(false);
+  const hiddenQuizCount = savedQuizResults.length - QUIZ_PREVIEW_COUNT;
+  const visibleQuizResults = showAllQuizzes
+    ? savedQuizResults
+    : savedQuizResults.slice(0, QUIZ_PREVIEW_COUNT);
 
   return (
     <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
@@ -85,11 +95,16 @@ export default function Pack() {
 {/* Saved Quiz Results */}
 {savedQuizResults.length > 0 && (
   <div className="mt-10 mb-8">
-    <h2 className="font-display font-bold text-xl text-foreground mb-4">🧩 Saved Quiz Results</h2>
+    <div className="flex items-baseline gap-2 mb-4">
+      <h2 className="font-display font-bold text-xl text-foreground">🧩 Saved Quiz Results</h2>
+      <span className="text-sm text-muted-foreground font-body tabular-nums">
+        {savedQuizResults.length}
+      </span>
+    </div>
     {/* Tighter and denser than the fact grid: these are meant to read as a
         shelf of small collectible cards, so more of them fit per row. */}
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-      {savedQuizResults.map((qr) => {
+      {visibleQuizResults.map((qr) => {
         const isAnimalCard = qr.type === 'animal-quiz';
 
         const handleShareQuiz = () => {
@@ -183,6 +198,18 @@ export default function Pack() {
         );
       })}
     </div>
+
+    {hiddenQuizCount > 0 && (
+      <button
+        onClick={() => setShowAllQuizzes(v => !v)}
+        aria-expanded={showAllQuizzes}
+        className="mt-4 w-full flex items-center justify-center gap-1.5 text-xs font-display font-bold py-2.5 rounded-xl border border-border bg-card hover:bg-accent text-foreground transition-colors"
+      >
+        {showAllQuizzes
+          ? <>Show fewer <ChevronUp className="w-3.5 h-3.5" /></>
+          : <>{`Show all ${savedQuizResults.length} cards`} <ChevronDown className="w-3.5 h-3.5" /></>}
+      </button>
+    )}
   </div>
 )}
         {savedFacts.length > 0 ? (

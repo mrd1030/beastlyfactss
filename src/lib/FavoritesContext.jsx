@@ -81,7 +81,27 @@ export function FavoritesProvider({ children }) {
       isFirstQuizResultsWrite.current = false;
       return;
     }
-    try { localStorage.setItem('beastly-quiz-results', JSON.stringify(savedQuizResults)); } catch {}
+    try {
+      localStorage.setItem('beastly-quiz-results', JSON.stringify(savedQuizResults));
+    } catch {
+      // The list is no longer capped, so it can in principle outgrow the
+      // storage quota. A bare catch here would mean every save from that point
+      // on silently did nothing, which is worse than losing the oldest few:
+      // the user would keep pressing Save to Pack and keep seeing it confirm.
+      // Drop the oldest results until it fits, then reflect that back into
+      // state so what is on screen matches what actually persisted.
+      let trimmed = savedQuizResults;
+      while (trimmed.length > 1) {
+        trimmed = trimmed.slice(0, Math.floor(trimmed.length / 2));
+        try {
+          localStorage.setItem('beastly-quiz-results', JSON.stringify(trimmed));
+          setSavedQuizResults(trimmed);
+          return;
+        } catch {
+          // still too big - halve again
+        }
+      }
+    }
   }, [savedQuizResults]);
 
   const toggleFavorite = (factId) => {
@@ -103,7 +123,12 @@ export function FavoritesProvider({ children }) {
       savedAt: new Date().toISOString(),
       id: `quiz-${Date.now()}`
     };
-    setSavedQuizResults(prev => [newResult, ...prev].slice(0, 20));
+    // Deliberately uncapped. Animal-quiz cards are naturally bounded by the
+    // number of encyclopedia animals (retaking one replaces its card rather
+    // than adding a second), and losing a card someone earned to make room for
+    // a newer one is the wrong trade. The persistence effect above handles the
+    // storage quota if a collection ever does get large enough to hit it.
+    setSavedQuizResults(prev => [newResult, ...prev]);
   };
 
   const removeQuizResult = (id) => {
