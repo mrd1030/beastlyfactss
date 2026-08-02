@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { motion } from '@/lib/motion-safe';
-import { CheckCircle2, XCircle, RotateCcw, Share2 } from 'lucide-react';
+import { CheckCircle2, XCircle, RotateCcw, Share2, Check, Layers } from 'lucide-react';
 import { generateAnimalQuiz } from '@/lib/utils/generateAnimalQuiz';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
@@ -11,7 +11,8 @@ export default function AnimalQuiz({ animal }) {
   const [answered, setAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
-  const { recordQuizCompletion } = useFavoritesCtx();
+  const [justSaved, setJustSaved] = useState(false);
+  const { recordQuizCompletion, saveQuizResult, savedQuizResults, removeQuizResult } = useFavoritesCtx();
 
   // Not enough distractor data for a fair quiz on this animal - skip the section.
   if (questions.length < 2) return null;
@@ -26,10 +27,30 @@ export default function AnimalQuiz({ animal }) {
     if (i === question.correctIndex) setScore(s => s + 1);
   };
 
+  // Dynamically imported for the same reason the Quiz page does it: confetti is
+  // only ever needed at this one moment, and vite.config keeps it out of the
+  // eager vendor chunk so it costs nothing on pages that never finish a quiz.
+  const celebrate = async (finalScore) => {
+    try {
+      const { default: confetti } = await import('canvas-confetti');
+      const perfect = finalScore === total;
+      confetti({
+        particleCount: perfect ? 160 : 90,
+        spread: perfect ? 100 : 70,
+        origin: { y: 0.7 },
+        colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'],
+      });
+    } catch {
+      // canvas-confetti falls back to the main thread when its blob worker is
+      // blocked, but a failed import should never break the results screen.
+    }
+  };
+
   const handleNext = () => {
     if (index + 1 >= total) {
       setFinished(true);
       recordQuizCompletion();
+      celebrate(score);
     } else {
       setIndex(i => i + 1);
       setSelected(null);
@@ -43,6 +64,33 @@ export default function AnimalQuiz({ animal }) {
     setAnswered(false);
     setScore(0);
     setFinished(false);
+    setJustSaved(false);
+  };
+
+  // One card per animal rather than one per attempt: retaking the same quiz
+  // updates the card instead of stacking near-identical copies, which matters
+  // because the Pack only keeps the 20 most recent results and would otherwise
+  // push out other animals. Both updates are functional, so React batching them
+  // composes correctly.
+  const handleSaveToPack = () => {
+    const existing = savedQuizResults.find(
+      (r) => r.type === 'animal-quiz' && r.animalId === animal.id
+    );
+    if (existing) removeQuizResult(existing.id);
+
+    saveQuizResult({
+      type: 'animal-quiz',
+      animalId: animal.id,
+      animalName: animal.name,
+      animalImage: animal.image,
+      animalEmoji: animal.emoji,
+      animalCategory: animal.category,
+      title: `${animal.name} Quiz`,
+      score,
+      total,
+    });
+    setJustSaved(true);
+    setTimeout(() => setJustSaved(false), 2200);
   };
 
   const handleShare = () => {
@@ -66,7 +114,18 @@ export default function AnimalQuiz({ animal }) {
           <p className="text-xs text-muted-foreground font-body mb-5">
             {score === total ? 'Perfect score! 🏆' : score / total >= 0.5 ? "Solid! You were paying attention. 🐾" : 'Worth a re-read above! 📖'}
           </p>
-          <div className="flex justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
+            <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSaveToPack}
+              disabled={justSaved}
+              className={`font-display font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5 transition-colors ${
+                justSaved
+                  ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 cursor-default'
+                  : 'bg-primary text-primary-foreground'
+              }`}>
+              {justSaved
+                ? <><Check className="w-3.5 h-3.5" /> Saved to Pack</>
+                : <><Layers className="w-3.5 h-3.5" /> Save to Pack</>}
+            </motion.button>
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
               className="bg-secondary text-secondary-foreground font-display font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5">
               <Share2 className="w-3.5 h-3.5" /> Share

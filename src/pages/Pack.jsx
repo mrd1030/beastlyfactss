@@ -10,6 +10,7 @@ import FactCard from '@/components/shared/FactCard';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
+import QuizTradingCard from '@/components/pack/QuizTradingCard';
 
 
 export default function Pack() {
@@ -85,28 +86,32 @@ export default function Pack() {
 {savedQuizResults.length > 0 && (
   <div className="mt-10 mb-8">
     <h2 className="font-display font-bold text-xl text-foreground mb-4">🧩 Saved Quiz Results</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {/* Tighter and denser than the fact grid: these are meant to read as a
+        shelf of small collectible cards, so more of them fit per row. */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
       {savedQuizResults.map((qr) => {
+        const isAnimalCard = qr.type === 'animal-quiz';
+
         const handleShareQuiz = () => {
-          const text = `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
-          
+          // An animal card has a score and a page worth linking to; the
+          // personality result has neither, so they get different wording.
+          const text = isAnimalCard
+            ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
+            : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
+          const url = isAnimalCard
+            ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`
+            : `${window.location.origin}/quiz/`;
+
           if (navigator.share) {
-            navigator.share({
-              title: qr.title,
-              text: text,
-            });
+            navigator.share({ title: qr.title, text, url }).catch(() => {});
           } else {
-            navigator.clipboard.writeText(text);
-            // Optional: you can add a small toast here later if you want
+            navigator.clipboard.writeText(`${text} ${url}`);
           }
         };
-
-        return (
-          <div key={qr.id} className="bg-card border border-border rounded-2xl p-5 relative">
-            {/* Remove button */}
-            {/* Remove button with confirmation */}
-{/* Remove Button + Styled Confirmation */}
-<div className="absolute top-3 right-3">
+        // Shared by both card shapes so the confirmation behaves identically
+        // whichever one is on screen.
+        const removeSlot = (
+<div className="absolute top-3 right-3 z-10">
   {!confirmingId || confirmingId !== qr.id ? (
     <button 
       onClick={() => setConfirmingId(qr.id)}
@@ -141,7 +146,22 @@ export default function Pack() {
     </div>
   )}
 </div>
+        );
 
+        if (isAnimalCard) {
+          return (
+            <QuizTradingCard
+              key={qr.id}
+              result={qr}
+              onShare={handleShareQuiz}
+              removeSlot={removeSlot}
+            />
+          );
+        }
+
+        return (
+          <div key={qr.id} className="bg-card border border-border rounded-2xl p-5 relative">
+            {removeSlot}
             <span className="text-4xl block mb-2">{qr.emoji}</span>
             <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{qr.description}</p>
