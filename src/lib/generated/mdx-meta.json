@@ -7596,6 +7596,62 @@
     "relatedProducts": []
   },
   {
+    "path": "/content/guides/french-bulldog-feeding-guide.mdx",
+    "slug": "french-bulldog-feeding-guide",
+    "title": "French Bulldog Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "French Bulldog Feeding Guide: Schedule and Diet",
+    "excerpt": "A French Bulldog's legendary gas is often less about diet and more about how the breed is built to breathe. Here's a real feeding schedule and why airway anatomy matters at the food bowl.",
+    "date": "2026-08-02",
+    "category": "Dogs",
+    "categories": [
+      "Dogs"
+    ],
+    "tags": [
+      "French Bulldog",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Dog Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "BOAS"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/french-bulldog-feeding.jpg",
+    "imageAlt": "French Bulldog eating from a slow-feeder bowl",
+    "emoji": "🐶",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my French Bulldog?",
+        "a": "Puppies eat 3 to 4 meals a day on a consistent schedule using a food labeled specifically for puppies, not an all-life-stages formula. Adults are where sources diverge, one says twice daily, another recommends 2 to 3 times, arguing smaller, more frequent meals lower perceived bloat risk versus one large daily meal."
+      },
+      {
+        "q": "Why does my French Bulldog need a slow-feeder bowl?",
+        "a": "Because of their short muzzle and airway anatomy, Frenchies tend to gulp air while eating, called aerophagia. A slow-feeder or sectioned bowl, plus smaller, more frequent portions, cuts down on that air-gulping, and it's a big part of why this breed is so notoriously gassy."
+      },
+      {
+        "q": "How much food should I actually feed?",
+        "a": "No source gives one fixed breed-wide cup or gram amount, and treat any site that claims otherwise with caution. The right amount depends on the specific food's calorie density and your dog's weight and body condition, use the feeding chart on the bag or a vet-calculated target as your starting point."
+      },
+      {
+        "q": "Why has my French Bulldog stopped eating?",
+        "a": "Teething in puppies, hot weather, and stress from a new home or routine change are all normal explanations. Dental pain and GI disease are common concerning causes. This breed specifically can show reduced appetite or regurgitation as a symptom of airway obstruction syndrome, one study found 93% of affected Frenchies also had GI signs that improved after corrective airway surgery."
+      },
+      {
+        "q": "How long can a French Bulldog puppy safely go without eating?",
+        "a": "Two independent veterinarian sources converge on 12 hours as the real limit for puppies, who lack the fat reserves adults have, small breeds like this one carry extra hypoglycemia risk. A hospital-affiliated source is more cautious about giving any fixed number at all, preferring to say any change in eating pattern warrants a vet call rather than waiting out a specific hour count."
+      },
+      {
+        "q": "What foods are actually dangerous for French Bulldogs?",
+        "a": "Chocolate, macadamia nuts, garlic, xylitol, and almonds are all named specifically. Beyond outright toxicity, broccoli, cabbage, beans, dairy, and soy are flagged as foods to limit for this breed in particular, they compound the gas and GI sensitivity already common with airway syndrome."
+      }
+    ],
+    "relatedProducts": []
+  },
+  {
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
     "slug": "gargoyle-gecko-cost-guide",
     "title": "How Much Does a Gargoyle Gecko Really Cost?",
@@ -10052,6 +10108,61 @@
       "hedgehog-food-iams-proactive-health-chicken-3.5lb",
       "small-pet-paper-bedding"
     ]
+  },
+  {
+    "path": "/content/guides/hedgehog-feeding-guide.mdx",
+    "slug": "hedgehog-feeding-guide",
+    "title": "Hedgehog Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Hedgehog Feeding Guide: Schedule and Diet",
+    "excerpt": "Hedgehogs hide illness until they're genuinely sick, which is exactly why a full day of not eating deserves faster action here than in most pets.",
+    "date": "2026-08-02",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Hedgehog",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-feeding.jpg",
+    "imageAlt": "Hedgehog eating kibble and a mealworm from a small dish at night",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When should I feed my hedgehog?",
+        "a": "Once daily, in the evening. Hedgehogs are nocturnal, and every source agrees evening feeding matches their natural activity pattern. Fresh water should stay available around the clock."
+      },
+      {
+        "q": "How much food should I actually give?",
+        "a": "This is genuinely disputed, even within the same publisher's own content, figures range from 3 to 4 teaspoons a day up to 1 to 3 tablespoons, nearly a 2 to 3 times spread. The more clinically oriented guidance skips a single fixed number entirely and instead says roughly 2 to 3 teaspoons of protein plus 1 to 2 teaspoons of produce, adjusted to body condition rather than a flat quantity."
+      },
+      {
+        "q": "Should insects be a big part of the diet?",
+        "a": "No, they're a supplement, not the daily centerpiece, roughly 2 to 4 times a week depending on the source. A high-quality hedgehog kibble or reduced-calorie cat food should be the actual daily base."
+      },
+      {
+        "q": "Why has my hedgehog stopped eating?",
+        "a": "Stress after a move is common and usually resolves within a couple of days, check fecal output rather than the bowl to confirm a shy new hedgehog is actually eating. Cold stress is a real concern too, this species can't safely hibernate, and a room that's too cool can trigger a dangerous torpor state that suppresses appetite."
+      },
+      {
+        "q": "How long can a hedgehog go without eating?",
+        "a": "Multiple sources converge on roughly 24 hours as the outer limit before a vet visit is warranted. For a newly acquired hedgehog still adjusting, breeders are a bit more lenient, around 2 nights, before recommending a call for help, since some initial stress-related refusal is expected."
+      },
+      {
+        "q": "What foods are actually dangerous for hedgehogs?",
+        "a": "Avocado is toxic. Raw meat, raw eggs, and dairy all cause real problems, dairy specifically triggers digestive upset. Nuts, seeds, and hard raw vegetables like uncooked carrot are choking hazards, cook vegetables before offering them."
+      }
+    ],
+    "relatedProducts": []
   },
   {
     "path": "/content/guides/hedgehog-handling-guide.mdx",
