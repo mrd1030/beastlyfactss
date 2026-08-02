@@ -72,12 +72,20 @@ function readLastUpdated(post) {
   return parseFrontmatter(fs.readFileSync(filePath, 'utf8')).lastUpdated || null;
 }
 
+// A post's date can be set ahead as a release date (see hasReachedPublishDate in
+// public/_worker.js). The page itself stays in the sitemap either way, since it is
+// deployed and we want it crawled, but a <lastmod> in the future is a bad signal:
+// it claims the page changed on a day that has not happened. Drop it until then.
+const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' });
+const notInFuture = (date) => (date && String(date).slice(0, 10) <= today ? date : null);
+
 function getMdxPosts() {
   // Short stories live on /chronicles/, not /blog/ (old URLs 301 in _redirects)
   return mdxMeta.filter(post => !isChroniclesSlug(post.slug)).map(post => ({
     path: `/blog/${post.slug}/`,
-    // Only emit lastmod when the frontmatter carries a real date - a fabricated build-date lastmod is worse than none at all.
-    lastmod: readLastUpdated(post) || post.date || null,
+    // Only emit lastmod when the frontmatter carries a real, already-reached date - a
+    // fabricated build-date lastmod is worse than none at all, and so is a future one.
+    lastmod: notInFuture(readLastUpdated(post)) || notInFuture(post.date) || null,
     changefreq: 'weekly',
     priority: '0.7',
   }));

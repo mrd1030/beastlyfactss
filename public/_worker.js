@@ -442,6 +442,27 @@ function withChroniclesLinks(chronicles) {
   return items;
 }
 
+// A post's frontmatter date doubles as a release date: the article can sit in the
+// repo, deployed and crawlable, while staying out of this feed until the day it is
+// meant to go out. That matters because Publer auto-posts whatever is new here, so
+// an ungated feed would fire every scheduled article to social the moment it merges.
+//
+// Compared as calendar dates in SITE_TIMEZONE rather than as timestamps: an article
+// dated 2026-08-02 should appear when it is the 2nd where the site's audience is, not
+// at 00:00 UTC, which is still the evening of the 1st in the US. en-CA formatting is
+// used only because it yields a sortable YYYY-MM-DD, which ISO date strings compare
+// against directly.
+const SITE_TIMEZONE = 'America/New_York';
+
+function todayInSiteZone() {
+  return new Date().toLocaleDateString('en-CA', { timeZone: SITE_TIMEZONE });
+}
+
+function hasReachedPublishDate(dateValue, today = todayInSiteZone()) {
+  if (!dateValue) return false;
+  return String(dateValue).slice(0, 10) <= today;
+}
+
 async function buildArticlesFeed(request) {
   const mdxRes = await fetch(new URL('/articles.json', request.url));
   const { articles: mdxArticles, chronicles: mdxChronicles = [] } = await mdxRes.json();
@@ -459,6 +480,7 @@ async function buildArticlesFeed(request) {
 
   const merged = [...blogItems, ...chronicleItems]
     .filter(a => a.date)
+    .filter(a => hasReachedPublishDate(a.date))
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, ARTICLES_WINDOW);
 
