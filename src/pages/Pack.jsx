@@ -11,13 +11,15 @@ import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import ClearPackDialog from '@/components/layout/ClearPackDialog';
 import QuizTradingCard from '@/components/pack/QuizTradingCard';
+import AchievementDialog from '@/components/pack/AchievementDialog';
 
 
 export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
-  const { savedQuizResults, removeQuizResult, unlockedAchievements, streak } = useFavoritesCtx();
+  const { savedQuizResults, removeQuizResult, unlockedAchievements, streak, achievementState } = useFavoritesCtx();
+  const [openAchievement, setOpenAchievement] = useState(null);
   const savedFacts = facts.filter(f => favorites.includes(f.id));
   const [confirmingId, setConfirmingId] = useState(null);
 
@@ -75,18 +77,20 @@ export default function Pack() {
             {ACHIEVEMENTS.map(a => {
               const unlocked = unlockedAchievements.some(u => u.id === a.id);
               return (
-                <div
+                <button
                   key={a.id}
-                  title={a.description}
-                  className={`text-center rounded-2xl p-3 border transition-all ${
+                  type="button"
+                  onClick={() => setOpenAchievement(a)}
+                  aria-label={`${a.title}, ${unlocked ? 'earned' : 'locked'}. Tap for details.`}
+                  className={`text-center rounded-2xl p-3 border transition-all hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary ${
                     unlocked
                       ? 'bg-secondary/5 border-secondary/30'
-                      : 'bg-muted/40 border-border opacity-40 grayscale'
+                      : 'bg-muted/40 border-border opacity-40 grayscale hover:opacity-60'
                   }`}
                 >
                   <span className="text-2xl block mb-1">{a.emoji}</span>
                   <p className="text-[11px] font-display font-bold text-foreground leading-tight">{a.title}</p>
-                </div>
+                </button>
               );
             })}
           </div>
@@ -253,6 +257,12 @@ export default function Pack() {
 
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
       <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
+      <AchievementDialog
+        achievement={openAchievement}
+        unlocked={openAchievement ? unlockedAchievements.some(u => u.id === openAchievement.id) : false}
+        state={achievementState}
+        onClose={() => setOpenAchievement(null)}
+      />
 
       {/* Pack management section */}
       <div className="mt-16 pt-8 border-t border-border max-w-7xl mx-auto">

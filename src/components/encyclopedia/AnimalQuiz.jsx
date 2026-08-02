@@ -142,9 +142,15 @@ export default function AnimalQuiz({ animal }) {
             <span className="text-xs font-display font-bold text-muted-foreground">{`Question ${index + 1} of ${total}`}</span>
             <span className="text-xs font-display font-bold text-secondary">{`${score} pts`}</span>
           </div>
+          {/* Width, not a motion scaleX transform. motion-safe's wrapper drops
+              `animate` on an instance's first render, which left this bar
+              rendering completely full on question 1 of 4 - it read as a
+              finished quiz before a single answer. */}
           <div className="w-full bg-muted rounded-full h-1.5 mb-4 overflow-hidden">
-            <motion.div className="bg-secondary h-1.5 w-full rounded-full origin-left"
-              animate={{ scaleX: index / total }} transition={{ duration: 0.3 }} />
+            <div
+              className="bg-secondary h-1.5 rounded-full transition-[width] duration-300 ease-out"
+              style={{ width: `${(index / total) * 100}%` }}
+            />
           </div>
 
           <motion.div key={question.id} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2 }}>

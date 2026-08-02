@@ -3,15 +3,20 @@ import { useDailyStreak } from '@/lib/hooks/useLocalStorage';
 
 const FavoritesContext = createContext(null);
 
+// `description` is what you did, past tense, shown once the badge is earned.
+// `hint` is what to do, shown while it is still locked - restating the goal in
+// past tense reads as though you have already done it. `target`/`current` drive
+// a real progress readout, so a locked badge can say how far along you are
+// rather than just what the goal is.
 export const ACHIEVEMENTS = [
-  { id: 'first-fact', emoji: '❤️', title: 'First Fact', description: 'Saved your first fact', check: (s) => s.favoritesCount >= 1 },
-  { id: 'fact-collector', emoji: '📚', title: 'Fact Collector', description: 'Saved 10 facts', check: (s) => s.favoritesCount >= 10 },
-  { id: 'fact-fanatic', emoji: '🏆', title: 'Fact Fanatic', description: 'Saved 25 facts', check: (s) => s.favoritesCount >= 25 },
-  { id: 'quiz-taker', emoji: '🧩', title: 'Quiz Taker', description: 'Completed your first quiz', check: (s) => s.quizzesCompleted >= 1 },
-  { id: 'quiz-explorer', emoji: '🔎', title: 'Quiz Explorer', description: 'Completed 5 quizzes', check: (s) => s.quizzesCompleted >= 5 },
-  { id: 'quiz-master', emoji: '🎓', title: 'Quiz Master', description: 'Completed 10 quizzes', check: (s) => s.quizzesCompleted >= 10 },
-  { id: 'streak-3', emoji: '🔥', title: 'On a Roll', description: '3-day visit streak', check: (s) => s.streakCount >= 3 },
-  { id: 'streak-7', emoji: '⚡', title: 'Week-Long Wildling', description: '7-day visit streak', check: (s) => s.streakCount >= 7 },
+  { id: 'first-fact', emoji: '❤️', title: 'First Fact', description: 'Saved your first fact', hint: 'Tap the heart on any fact to save it to your Pack.', target: 1, current: (s) => s.favoritesCount, unit: 'fact saved', check: (s) => s.favoritesCount >= 1 },
+  { id: 'fact-collector', emoji: '📚', title: 'Fact Collector', description: 'Saved 10 facts', hint: 'Save 10 facts to your Pack.', target: 10, current: (s) => s.favoritesCount, unit: 'facts saved', check: (s) => s.favoritesCount >= 10 },
+  { id: 'fact-fanatic', emoji: '🏆', title: 'Fact Fanatic', description: 'Saved 25 facts', hint: 'Save 25 facts to your Pack.', target: 25, current: (s) => s.favoritesCount, unit: 'facts saved', check: (s) => s.favoritesCount >= 25 },
+  { id: 'quiz-taker', emoji: '🧩', title: 'Quiz Taker', description: 'Completed your first quiz', hint: 'Finish any quiz, including the Test Yourself quiz on an encyclopedia animal.', target: 1, current: (s) => s.quizzesCompleted, unit: 'quiz completed', check: (s) => s.quizzesCompleted >= 1 },
+  { id: 'quiz-explorer', emoji: '🔎', title: 'Quiz Explorer', description: 'Completed 5 quizzes', hint: 'Finish 5 quizzes.', target: 5, current: (s) => s.quizzesCompleted, unit: 'quizzes completed', check: (s) => s.quizzesCompleted >= 5 },
+  { id: 'quiz-master', emoji: '🎓', title: 'Quiz Master', description: 'Completed 10 quizzes', hint: 'Finish 10 quizzes.', target: 10, current: (s) => s.quizzesCompleted, unit: 'quizzes completed', check: (s) => s.quizzesCompleted >= 10 },
+  { id: 'streak-3', emoji: '🔥', title: 'On a Roll', description: '3-day visit streak', hint: 'Visit Beastly Facts on 3 days in a row.', target: 3, current: (s) => s.streakCount, unit: 'day streak', check: (s) => s.streakCount >= 3 },
+  { id: 'streak-7', emoji: '⚡', title: 'Week-Long Wildling', description: '7-day visit streak', hint: 'Visit Beastly Facts on 7 days in a row.', target: 7, current: (s) => s.streakCount, unit: 'day streak', check: (s) => s.streakCount >= 7 },
 ];
 
 export function FavoritesProvider({ children }) {
@@ -192,6 +197,9 @@ export function FavoritesProvider({ children }) {
       recordQuizCompletion,
       streak,
       unlockedAchievements,
+      // Exposed so the Pack can show how far along a locked badge is, rather
+      // than only whether it is earned.
+      achievementState,
       currentAchievementToast,
       dismissCurrentToast,
     }}>
