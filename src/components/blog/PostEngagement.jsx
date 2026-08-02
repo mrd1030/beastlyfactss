@@ -6,6 +6,31 @@ import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 
+// AppLayout swaps <RoutedContent /> for <Suspense><RoutedContent /></Suspense>
+// once its `ready` flag flips just after mount, which React treats as a
+// different element at that position and so unmounts and remounts the whole
+// routed page. Every route on this site therefore mounts twice on a fresh load,
+// and without this cache that meant ten Supabase requests per article view
+// instead of five, on a free tier.
+//
+// Keyed by post and short-lived: a remount lands within milliseconds and reuses
+// the in-flight promise, while anything later than the window refetches, so
+// counts never go stale in a way a reader would notice. Invalidated outright
+// after a like or share, since those change the number.
+const engagementCache = new Map();
+const ENGAGEMENT_CACHE_MS = 5000;
+
+function readEngagement(postId, load) {
+  const hit = engagementCache.get(postId);
+  if (hit && Date.now() - hit.at < ENGAGEMENT_CACHE_MS) return hit.promise;
+  const promise = load().catch((err) => {
+    engagementCache.delete(postId); // never cache a failure
+    throw err;
+  });
+  engagementCache.set(postId, { at: Date.now(), promise });
+  return promise;
+}
+
 // Generates/retrieves a stable anonymous session key for this browser
 function getSessionKey() {
   let key = localStorage.getItem('bf_session_key');
@@ -44,15 +69,43 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     loadData();
   }, [postId]);
 
+  // Pure fetch, no state writes: this runs once per post even when two mounts
+  // ask for it, so it must not assume it belongs to the mount that triggered it.
+  // The five reads go out together rather than in sequence - none depends on
+  // another, and awaiting them one at a time was costing about a second of
+  // stacked latency before anything appeared.
+  const fetchEngagement = async () => {
+    const [likes, ownLike, shares, ownShare, approved] = await Promise.all([
+      supabase.from('blog_post_likes').select('id', { count: 'exact', head: true }).eq('post_id', postId),
+      supabase.from('blog_post_likes').select('id').eq('post_id', postId).eq('session_key', sessionKey).maybeSingle(),
+      supabase.from('blog_post_shares').select('id', { count: 'exact', head: true }).eq('post_id', postId),
+      supabase.from('blog_post_shares').select('id').eq('post_id', postId).eq('session_key', sessionKey).maybeSingle(),
+      // Reads the view, not the table: it exposes approved comments only and
+      // omits author_email entirely. created_date is aliased so the markup
+      // below is unchanged from the base44 version.
+      supabase
+        .from('public_blog_comments')
+        .select('id, author_name, content, created_date:created_at')
+        .eq('post_id', postId)
+        .order('created_at', { ascending: true }),
+    ]);
+    return {
+      likeCount: likes.count,
+      likedInDb: Boolean(ownLike.data),
+      shareCount: shares.count,
+      sharedInDb: Boolean(ownShare.data),
+      comments: approved.data,
+    };
+  };
+
   const loadData = async () => {
     if (!isSupabaseConfigured) return; // like state already restored from localStorage
     try {
-      // head:true asks for the count without transferring any rows.
-      const { count } = await supabase
-        .from('blog_post_likes')
-        .select('id', { count: 'exact', head: true })
-        .eq('post_id', postId);
-      if (typeof count === 'number') setLikeCount(count);
+      const data = await readEngagement(postId, fetchEngagement);
+
+      if (typeof data.likeCount === 'number') setLikeCount(data.likeCount);
+      if (typeof data.shareCount === 'number') setShareCount(data.shareCount);
+      if (data.comments) setComments(data.comments);
 
       // Reconcile the liked flag against the database instead of trusting
       // localStorage outright. localStorage is only a first-paint guess: it can
@@ -61,46 +114,16 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       // likes table during setup stranded every post this browser had liked.
       // The unique (post_id, session_key) constraint makes the row the real
       // record of whether this device liked, so let it win in both directions.
-      const { data: ownLike } = await supabase
-        .from('blog_post_likes')
-        .select('id')
-        .eq('post_id', postId)
-        .eq('session_key', sessionKey)
-        .maybeSingle();
-      const likedInDb = Boolean(ownLike);
-      setHasLiked(likedInDb);
-      if (likedInDb) localStorage.setItem(`bf_liked_${postId}`, '1');
+      setHasLiked(data.likedInDb);
+      if (data.likedInDb) localStorage.setItem(`bf_liked_${postId}`, '1');
       else localStorage.removeItem(`bf_liked_${postId}`);
 
-      const { count: shares } = await supabase
-        .from('blog_post_shares')
-        .select('id', { count: 'exact', head: true })
-        .eq('post_id', postId);
-      if (typeof shares === 'number') setShareCount(shares);
-
-      // Same reconciliation as likes: the row is the record of whether this
+      // Same reconciliation for shares: the row is the record of whether this
       // device already counted, so a stale flag cannot suppress a real share
       // and a wiped localStorage cannot cause a double count.
-      const { data: ownShare } = await supabase
-        .from('blog_post_shares')
-        .select('id')
-        .eq('post_id', postId)
-        .eq('session_key', sessionKey)
-        .maybeSingle();
-      const sharedInDb = Boolean(ownShare);
-      setHasShared(sharedInDb);
-      if (sharedInDb) localStorage.setItem(`bf_shared_${postId}`, '1');
+      setHasShared(data.sharedInDb);
+      if (data.sharedInDb) localStorage.setItem(`bf_shared_${postId}`, '1');
       else localStorage.removeItem(`bf_shared_${postId}`);
-
-      // Reads the view, not the table: it exposes approved comments only and
-      // omits author_email entirely. created_date is aliased so the markup
-      // below is unchanged from the base44 version.
-      const { data: approved } = await supabase
-        .from('public_blog_comments')
-        .select('id, author_name, content, created_date:created_at')
-        .eq('post_id', postId)
-        .order('created_at', { ascending: true });
-      if (approved) setComments(approved);
     } catch {
       // silent fail - localStorage state already applied above
     }
@@ -112,6 +135,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     setHasLiked(true);
     setLikeCount(c => c + 1);
     localStorage.setItem(`bf_liked_${postId}`, '1');
+    engagementCache.delete(postId); // the count just changed
     if (!isSupabaseConfigured) return;
     try {
       // A duplicate hits the (post_id, session_key) unique constraint and errors,
@@ -134,6 +158,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     setHasShared(true);
     setShareCount((c) => c + 1);
     localStorage.setItem(`bf_shared_${postId}`, '1');
+    engagementCache.delete(postId); // the count just changed
     if (!isSupabaseConfigured) return;
     try {
       // A repeat from the same device hits the (post_id, session_key) unique

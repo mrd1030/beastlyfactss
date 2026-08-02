@@ -50,15 +50,41 @@ export default function Donate() {
     }
   };
 
-  // Stripe hosts the payment page, so this is a plain navigation rather than a
-  // fetch. Nothing is submitted from here and no key is needed in the client.
+  // Stripe hosts the payment page, so this hands off rather than submitting
+  // anything. Nothing is posted from here and no key is needed in the client.
+  //
+  // Opened in a popup so the reader keeps their place on the site instead of
+  // the tab navigating away entirely. window.open has to be called straight off
+  // the click: put an await in front of it and the browser stops treating it as
+  // user-initiated and blocks it.
   const handleDonate = () => {
     const link = getDonationLink(donationType, amount);
     if (!link) {
       toast.error('That option is not available yet. Please try another amount.');
       return;
     }
-    window.location.href = link;
+
+    const width = 460;
+    const height = 760;
+    // Centre on the screen the browser is actually on, not the primary one, so
+    // this lands correctly for anyone running more than one monitor.
+    const left = Math.max(0, (window.screen.availWidth - width) / 2 + (window.screenX || 0));
+    const top = Math.max(0, (window.screen.availHeight - height) / 2 + (window.screenY || 0));
+
+    const popup = window.open(
+      link,
+      'beastlyfacts-donate',
+      `popup=yes,width=${width},height=${height},left=${Math.round(left)},top=${Math.round(top)},scrollbars=yes,resizable=yes`
+    );
+
+    // Blocked, or opened into a browser that ignores popups entirely (common on
+    // mobile). Falling back to a normal navigation means the donation still
+    // goes through rather than the button appearing to do nothing.
+    if (!popup || popup.closed || typeof popup.closed === 'undefined') {
+      window.location.href = link;
+      return;
+    }
+    popup.focus();
   };
 
   const donateLabel = amount === 'custom'
