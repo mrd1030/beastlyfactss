@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Share2, MessageCircle, Send, Check } from 'lucide-react';
-import { base44 } from '@/api/base44Client';
+import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
@@ -42,14 +42,24 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   }, [postId]);
 
   const loadData = async () => {
-    const locallyLiked = !!localStorage.getItem(`bf_liked_${postId}`);
+    if (!isSupabaseConfigured) return; // like state already restored from localStorage
     try {
-      const likes = await base44.entities.BlogPostLike.filter({ post_id: postId });
-      setLikeCount(likes.length);
-      setHasLiked(locallyLiked || likes.some(l => l.session_key === sessionKey));
+      // head:true asks for the count without transferring any rows.
+      const { count } = await supabase
+        .from('blog_post_likes')
+        .select('id', { count: 'exact', head: true })
+        .eq('post_id', postId);
+      if (typeof count === 'number') setLikeCount(count);
 
-      const allComments = await base44.entities.BlogComment.filter({ post_id: postId, status: 'approved' });
-      setComments(allComments.sort((a, b) => new Date(a.created_date) - new Date(b.created_date)));
+      // Reads the view, not the table: it exposes approved comments only and
+      // omits author_email entirely. created_date is aliased so the markup
+      // below is unchanged from the base44 version.
+      const { data: approved } = await supabase
+        .from('public_blog_comments')
+        .select('id, author_name, content, created_date:created_at')
+        .eq('post_id', postId)
+        .order('created_at', { ascending: true });
+      if (approved) setComments(approved);
     } catch {
       // silent fail - localStorage state already applied above
     }
@@ -61,8 +71,14 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     setHasLiked(true);
     setLikeCount(c => c + 1);
     localStorage.setItem(`bf_liked_${postId}`, '1');
+    if (!isSupabaseConfigured) return;
     try {
-      await base44.entities.BlogPostLike.create({ post_id: postId, session_key: sessionKey });
+      // A duplicate hits the (post_id, session_key) unique constraint and errors,
+      // which is the intended outcome and needs no handling: the optimistic UI
+      // above already reflects the like, and the count is correct either way.
+      await supabase
+        .from('blog_post_likes')
+        .insert({ post_id: postId, session_key: sessionKey });
     } catch {
       // silent - UI already updated, localStorage persists the liked state
     }
@@ -84,21 +100,36 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const handleSubmitComment = async (e) => {
     e.preventDefault();
     if (!name.trim() || !commentText.trim()) return;
+    if (!isSupabaseConfigured) {
+      toast.error('Comments are unavailable right now. Please try again later.');
+      return;
+    }
     setSubmitting(true);
     try {
-      await base44.functions.invoke('submitBlogComment', {
+      // status is omitted on purpose: the column defaults to 'pending' and the
+      // insert policy only accepts 'pending', so a comment cannot arrive
+      // pre-approved even if this request were tampered with.
+      const { error } = await supabase.from('blog_comments').insert({
         post_id: postId,
-        post_title: postTitle,
-        author_name: name,
-        author_email: email,
-        content: commentText,
+        post_title: postTitle || '',
+        author_name: name.trim(),
+        author_email: email.trim(),
+        content: commentText.trim(),
       });
+      if (error) throw error;
       setSubmitted(true);
       setName('');
       setEmail('');
       setCommentText('');
-    } catch (e) {
-      toast.error(e.message || 'Failed to submit comment');
+    } catch (err) {
+      // The length and link-count CHECK constraints surface here. Postgres
+      // constraint text is not something to show a reader, so map it.
+      const isConstraint = /violates check constraint|blog_comments_/i.test(err?.message || '');
+      toast.error(
+        isConstraint
+          ? 'That comment looks too short, too long, or has too many links.'
+          : err?.message || 'Failed to submit comment'
+      );
     } finally {
       setSubmitting(false);
     }

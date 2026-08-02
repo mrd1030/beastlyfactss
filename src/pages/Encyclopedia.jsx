@@ -8,9 +8,9 @@ import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
-import { base44 } from '@/api/base44Client';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import LocalImage from '@/components/shared/LocalImage';
+import { trackEvent } from '@/lib/analytics';
 
 // Tabs
 const TABS = [
@@ -355,7 +355,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
                 navigate(f.label === 'All' ? '/encyclopedia/guides/' : `/encyclopedia/guides/${slug}/`);
                 setDogSize('All Sizes'); setActiveSubtype(null);
-                base44.analytics.track({ eventName: 'guides_category_filter_clicked', properties: { category: f.label } });
+                trackEvent('guides_category_filter_clicked', { category: f.label });
               }}
               className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
                 activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -387,7 +387,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
               All
             </button>
             {subtypes[activeFilter].map(sub => (
-              <button key={sub} onClick={() => { const next = activeSubtype === sub ? null : sub; setActiveSubtype(next); if (next) base44.analytics.track({ eventName: 'guides_subtype_filter_clicked', properties: { subtype: sub, category: activeFilter } }); }}
+              <button key={sub} onClick={() => { const next = activeSubtype === sub ? null : sub; setActiveSubtype(next); if (next) trackEvent('guides_subtype_filter_clicked', { subtype: sub, category: activeFilter }); }}
                 className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === sub ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
                 {sub}
               </button>
@@ -476,7 +476,7 @@ function GuideCard({ guide, index, onOpenLegend, returnTo }) {
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: Math.min(index * 0.03, 0.4) }} whileHover={{ y: -3 }}>
-      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => base44.analytics.track({ eventName: 'guide_card_clicked', properties: { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty } })}>
+      <Link to={`/guides/${guide.id}/`} state={{ returnTo }} onClick={() => trackEvent('guide_card_clicked', { guide_id: guide.id, guide_name: guide.name, pet_type: guide.petType, difficulty: guide.difficulty })}>
         <div className="bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 hover:shadow-md transition-all group h-full flex flex-col">
           {guide.image && (
             <div className="-mx-5 -mt-5 rounded-t-2xl overflow-hidden mb-4 aspect-video">

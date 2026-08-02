@@ -1,18 +1,19 @@
 import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from '@/lib/motion-safe';
-import { Heart, Loader2 } from 'lucide-react';
+import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
-import { base44 } from '@/api/base44Client';
+import {
+  DONATION_AMOUNTS,
+  getDonationLink,
+  hasAnyDonationLink,
+} from '@/lib/data/donationLinks';
 
 export default function Donate() {
   const [amount, setAmount] = useState('');
-  const [customAmount, setCustomAmount] = useState('');
   const [donationType, setDonationType] = useState('');
-  const [loading, setLoading] = useState(false);
+  const donationsConfigured = hasAnyDonationLink();
 
   // Refs for arrow key navigation
   const amountContainerRef = useRef(null);
@@ -33,27 +34,19 @@ export default function Donate() {
     }
   };
 
-  const handleDonate = async () => {
-    setLoading(true);
-    const { loadStripe } = await import('@stripe/stripe-js');
-    const stripe = await loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY);
-    if (!stripe) { toast.error('Stripe failed to load.'); setLoading(false); return; }
-
-    const finalAmount = amount === 'custom' ? { custom: customAmount } : amount;
-    const res = await base44.functions.invoke('createStripeCheckoutSession', { amount: finalAmount, type: donationType });
-    const data = res.data;
-
-    if (data.sessionId) {
-      const { error } = await stripe.redirectToCheckout({ sessionId: data.sessionId });
-      if (error) toast.error(`Error: ${error.message}`);
-    } else {
-      toast.error(data.error || 'Failed to create checkout session.');
+  // Stripe hosts the payment page, so this is a plain navigation rather than a
+  // fetch. Nothing is submitted from here and no key is needed in the client.
+  const handleDonate = () => {
+    const link = getDonationLink(donationType, amount);
+    if (!link) {
+      toast.error('That option is not available yet. Please try another amount.');
+      return;
     }
-    setLoading(false);
+    window.location.href = link;
   };
 
-  const donateLabel = amount === 'custom' 
-    ? (customAmount ? `Donate $${customAmount}` : 'Donate') 
+  const donateLabel = amount === 'custom'
+    ? 'Choose an amount'
     : amount ? `Donate $${amount}` : 'Donate';
 
   return (
@@ -87,7 +80,7 @@ export default function Donate() {
               ref={amountContainerRef} 
               onKeyDown={(e) => handleKeyDown(e, amountContainerRef)}
             >
-              {['1', '5', '10', 'custom'].map((val) => (
+              {DONATION_AMOUNTS.map((val) => (
                 <button
                   key={val}
                   type="button"
@@ -105,16 +98,9 @@ export default function Donate() {
           </div>
 
           {amount === 'custom' && (
-            <Input
-              type="number"
-              min="1"
-              step="0.01"
-              placeholder="Enter custom amount ($)"
-              value={customAmount}
-              onChange={(e) => setCustomAmount(e.target.value)}
-              autoFocus
-              className="focus-visible:ring-4 focus-visible:ring-primary"
-            />
+            <p className="text-sm text-muted-foreground font-body">
+              You will enter the amount on the next page, on Stripe's secure checkout.
+            </p>
           )}
 
           {/* Type Section */}
@@ -148,12 +134,18 @@ export default function Donate() {
           {/* Donate Button */}
           <Button
             onClick={handleDonate}
-            disabled={loading || !amount || !donationType || (amount === 'custom' && (!customAmount || parseFloat(customAmount) <= 0))}
+            disabled={!donationsConfigured || !amount || !donationType}
             className="w-full font-display font-bold text-lg py-6 focus-visible:ring-4 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
-            {loading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Heart className="mr-2 h-4 w-4 fill-white" />}
+            <Heart className="mr-2 h-4 w-4 fill-white" />
             {donateLabel}
           </Button>
+
+          {!donationsConfigured && (
+            <p className="text-sm text-center text-muted-foreground font-body">
+              Donations are being set up and will be back shortly. Thank you for wanting to help.
+            </p>
+          )}
 
             
           <div className="flex items-start gap-3 bg-accent/10 border border-accent/20 rounded-xl p-3">

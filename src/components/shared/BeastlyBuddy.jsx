@@ -3,17 +3,13 @@ import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { trackEvent } from '@/lib/analytics';
 
-// Dynamically imported (see calls below) instead of a static top-level import:
-// BeastlyBuddy renders unconditionally on every single page (via AppLayout),
-// and @base44/sdk lives in its own manualChunk (vite.config.js) specifically
-// so it's only fetched once a visitor actually interacts with this widget,
-// not forced into the always-eager vendor bundle on every page load.
-const trackEvent = (eventName, properties) => {
-  import('@/api/base44Client').then(({ base44 }) => {
-    base44.analytics.track(properties ? { eventName, properties } : { eventName });
-  });
-};
+// Previously this lazily imported @base44/sdk so its chunk was only fetched once
+// a visitor actually opened this widget - BeastlyBuddy renders on every page via
+// AppLayout, so a static import would have forced the SDK into the eager bundle.
+// trackEvent now just pushes to the GTM dataLayer, which index.html already
+// loads, so there is no chunk to defer and no dynamic import needed.
 
 const greetings = [
   "Hey there, animal friend! 🐾 Want a fun fact?",

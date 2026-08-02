@@ -40,16 +40,11 @@ export default defineConfig({
             if (id.includes('stripe') || id.includes('@stripe')) {
               return 'stripe-vendor';
             }
-            // Keep the Base44 SDK separate - only reached via dynamic import()
-            // (BeastlyBuddy's analytics calls, plus a few already-lazy routes),
-            // so it must live outside the always-eager vendor chunk or those
-            // dynamic imports never actually defer anything.
-            // socket.io-client/engine.io-client (base44's realtime transport,
-            // used only by its agents/rooms API, which nothing in this app
-            // calls) hoist to top-level node_modules the same way - match them
-            // explicitly too, or they leak into the eager 'vendor' chunk.
-            if (id.includes('@base44') || id.includes('socket.io') || id.includes('engine.io')) {
-              return 'base44-vendor';
+            // Keep the Supabase client separate. It backs blog likes and
+            // comments, which only exist on /blog/ and /chronicles/ post pages,
+            // so there is no reason for it to ship with the homepage.
+            if (id.includes('@supabase')) {
+              return 'supabase-vendor';
             }
             // Keep canvas-confetti separate - it's only ever needed on-demand
             // (Quiz completion, Hero easter egg), both already reached via

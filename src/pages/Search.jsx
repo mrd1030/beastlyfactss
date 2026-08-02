@@ -4,12 +4,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { Search as SearchIcon, X } from 'lucide-react';
-import { trackSearch } from '@/lib/analytics';
+import { trackSearch, trackEvent } from '@/lib/analytics';
 import { CATEGORIES } from '@/lib/data/categories';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
-import { base44 } from '@/api/base44Client';
 import { searchLocalContent } from '@/lib/localSearch';
 
 function LocalResultRow({ result }) {
@@ -81,11 +80,10 @@ export default function Search() {
   const handleInput = (val) => {
     setQuery(val);
     if (val.trim()) setHasSearched(true);
-    // GA4, alongside the base44 call in the debounce below. This page reported
-    // only to base44 before, so nothing a visitor searched here ever reached
-    // Google Analytics - and this is the site's dedicated search page.
     // trackSearch debounces and dedupes on its own, so it is safe to call on
-    // every keystroke rather than nesting it inside the timeout below.
+    // every keystroke rather than nesting it inside the timeout below. It
+    // reports `search`; the debounced `search_performed` below is a separate,
+    // coarser event kept from when this page reported to base44 instead of GA4.
     trackSearch(val);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
@@ -93,7 +91,7 @@ export default function Search() {
       if (val) url.searchParams.set('q', val); else url.searchParams.delete('q');
       window.history.replaceState({}, '', url);
       if (val.trim()) {
-        base44.analytics.track({ eventName: 'search_performed', properties: { query: val } });
+        trackEvent('search_performed', { query: val });
       }
     }, 400);
   };
