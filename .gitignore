@@ -37,8 +37,6 @@ dist-ssr
 !.env.example
 .claude/
 
-base44/.app.jsonc
-
 # regenerated keyword-research output, not source
 tools/keyword-finder/keyword-ideas.csv
 
