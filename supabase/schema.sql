@@ -56,6 +56,41 @@ create policy "anyone can like"
 -- to clear someone else's likes.
 
 -- ---------------------------------------------------------------------------
+-- Shares
+-- ---------------------------------------------------------------------------
+-- Deliberately no unique constraint, unlike likes: "times shared" means share
+-- events, and sharing the same post twice is a real thing a person does. The
+-- trade is that this table is append-only per action and could be inflated by
+-- someone posting in a loop. session_key is stored so that if a count ever looks
+-- wrong, the rows can be grouped to see whether it came from one device.
+create table if not exists public.blog_post_shares (
+  id          uuid primary key default gen_random_uuid(),
+  post_id     text not null,
+  session_key text not null,
+  created_at  timestamptz not null default now()
+);
+
+create index if not exists blog_post_shares_post_id_idx
+  on public.blog_post_shares (post_id);
+
+alter table public.blog_post_shares enable row level security;
+
+drop policy if exists "anyone can read shares" on public.blog_post_shares;
+create policy "anyone can read shares"
+  on public.blog_post_shares for select
+  to anon, authenticated
+  using (true);
+
+drop policy if exists "anyone can share" on public.blog_post_shares;
+create policy "anyone can share"
+  on public.blog_post_shares for insert
+  to anon, authenticated
+  with check (
+    length(post_id) between 1 and 200
+    and length(session_key) between 8 and 100
+  );
+
+-- ---------------------------------------------------------------------------
 -- Comments
 -- ---------------------------------------------------------------------------
 create table if not exists public.blog_comments (

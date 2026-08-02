@@ -20,6 +20,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [likeCount, setLikeCount] = useState(0);
   const [hasLiked, setHasLiked] = useState(false);
   const [shared, setShared] = useState(false);
+  const [shareCount, setShareCount] = useState(0);
   const [comments, setComments] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -50,6 +51,30 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         .select('id', { count: 'exact', head: true })
         .eq('post_id', postId);
       if (typeof count === 'number') setLikeCount(count);
+
+      // Reconcile the liked flag against the database instead of trusting
+      // localStorage outright. localStorage is only a first-paint guess: it can
+      // say "liked" when no row exists, which leaves the button permanently
+      // disabled with nothing behind it. That is not hypothetical - clearing the
+      // likes table during setup stranded every post this browser had liked.
+      // The unique (post_id, session_key) constraint makes the row the real
+      // record of whether this device liked, so let it win in both directions.
+      const { data: ownLike } = await supabase
+        .from('blog_post_likes')
+        .select('id')
+        .eq('post_id', postId)
+        .eq('session_key', sessionKey)
+        .maybeSingle();
+      const likedInDb = Boolean(ownLike);
+      setHasLiked(likedInDb);
+      if (likedInDb) localStorage.setItem(`bf_liked_${postId}`, '1');
+      else localStorage.removeItem(`bf_liked_${postId}`);
+
+      const { count: shares } = await supabase
+        .from('blog_post_shares')
+        .select('id', { count: 'exact', head: true })
+        .eq('post_id', postId);
+      if (typeof shares === 'number') setShareCount(shares);
 
       // Reads the view, not the table: it exposes approved comments only and
       // omits author_email entirely. created_date is aliased so the markup
@@ -84,16 +109,37 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     }
   };
 
+  // Counted per share action rather than per person, so the same reader sharing
+  // twice counts twice. That is what "times shared" means.
+  const recordShare = async () => {
+    setShareCount((c) => c + 1);
+    if (!isSupabaseConfigured) return;
+    try {
+      await supabase
+        .from('blog_post_shares')
+        .insert({ post_id: postId, session_key: sessionKey });
+    } catch {
+      // silent - the count shown is optimistic either way
+    }
+  };
+
   const handleShare = async () => {
     const url = `https://beastlyfacts.com/blog/${postSlug || postId}/`;
     if (navigator.share) {
+      // navigator.share rejects with AbortError when the reader dismisses the
+      // sheet without picking anything. Recording only after it resolves keeps
+      // an abandoned share out of the count.
       try {
         await navigator.share({ title: postTitle, url });
-      } catch {}
+        recordShare();
+      } catch {
+        // cancelled or unsupported target - deliberately not counted
+      }
     } else {
       await navigator.clipboard.writeText(url);
       setShared(true);
       setTimeout(() => setShared(false), 2000);
+      recordShare();
     }
   };
 
@@ -160,10 +206,23 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           {shared ? 'Copied!' : 'Share'}
         </button>
 
-        {comments.length > 0 && (
-          <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-body ml-auto">
-            <MessageCircle className="w-3.5 h-3.5" />
-            {`${comments.length} ${comments.length === 1 ? 'comment' : 'comments'}`}
+        {/* Counts live here rather than inside the buttons: the buttons are
+            actions, and "3 Share" does not read as English the way the Like
+            button's "3 Liked!" just about gets away with. */}
+        {(shareCount > 0 || comments.length > 0) && (
+          <div className="flex items-center gap-3 text-xs text-muted-foreground font-body ml-auto">
+            {shareCount > 0 && (
+              <span className="flex items-center gap-1.5">
+                <Share2 className="w-3.5 h-3.5" />
+                {`${shareCount} ${shareCount === 1 ? 'share' : 'shares'}`}
+              </span>
+            )}
+            {comments.length > 0 && (
+              <span className="flex items-center gap-1.5">
+                <MessageCircle className="w-3.5 h-3.5" />
+                {`${comments.length} ${comments.length === 1 ? 'comment' : 'comments'}`}
+              </span>
+            )}
           </div>
         )}
       </div>
