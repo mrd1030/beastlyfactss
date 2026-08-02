@@ -58,17 +58,28 @@ create policy "anyone can like"
 -- ---------------------------------------------------------------------------
 -- Shares
 -- ---------------------------------------------------------------------------
--- Deliberately no unique constraint, unlike likes: "times shared" means share
--- events, and sharing the same post twice is a real thing a person does. The
--- trade is that this table is append-only per action and could be inflated by
--- someone posting in a loop. session_key is stored so that if a count ever looks
--- wrong, the rows can be grouped to see whether it came from one device.
+-- One row per reader per post, same shape as likes. This started out without a
+-- unique constraint, on the reasoning that "times shared" should count share
+-- events. In practice that just meant the number climbed on every click of the
+-- button, which makes it a click counter rather than a measure of reach, and
+-- leaves the table open to being inflated by holding down one button. Counting
+-- distinct readers is both the more meaningful number and the bounded one.
 create table if not exists public.blog_post_shares (
   id          uuid primary key default gen_random_uuid(),
   post_id     text not null,
   session_key text not null,
-  created_at  timestamptz not null default now()
+  created_at  timestamptz not null default now(),
+  unique (post_id, session_key)
 );
+
+-- The unique above only applies to a fresh install, since create table if not
+-- exists leaves an existing table alone. This adds it to one already deployed.
+-- Safe to re-run; it will fail only if duplicate rows exist, in which case
+-- delete them first and run again.
+alter table public.blog_post_shares
+  drop constraint if exists blog_post_shares_post_id_session_key_key;
+alter table public.blog_post_shares
+  add constraint blog_post_shares_post_id_session_key_key unique (post_id, session_key);
 
 create index if not exists blog_post_shares_post_id_idx
   on public.blog_post_shares (post_id);

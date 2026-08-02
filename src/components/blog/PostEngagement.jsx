@@ -21,6 +21,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [hasLiked, setHasLiked] = useState(false);
   const [shared, setShared] = useState(false);
   const [shareCount, setShareCount] = useState(0);
+  const [hasShared, setHasShared] = useState(false);
   const [comments, setComments] = useState([]);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -39,6 +40,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     // issue as useLocalStorage.js's deferred reads.
     if (window.__IS_PRERENDER__) return;
     if (localStorage.getItem(`bf_liked_${postId}`)) setHasLiked(true);
+    if (localStorage.getItem(`bf_shared_${postId}`)) setHasShared(true);
     loadData();
   }, [postId]);
 
@@ -76,6 +78,20 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         .eq('post_id', postId);
       if (typeof shares === 'number') setShareCount(shares);
 
+      // Same reconciliation as likes: the row is the record of whether this
+      // device already counted, so a stale flag cannot suppress a real share
+      // and a wiped localStorage cannot cause a double count.
+      const { data: ownShare } = await supabase
+        .from('blog_post_shares')
+        .select('id')
+        .eq('post_id', postId)
+        .eq('session_key', sessionKey)
+        .maybeSingle();
+      const sharedInDb = Boolean(ownShare);
+      setHasShared(sharedInDb);
+      if (sharedInDb) localStorage.setItem(`bf_shared_${postId}`, '1');
+      else localStorage.removeItem(`bf_shared_${postId}`);
+
       // Reads the view, not the table: it exposes approved comments only and
       // omits author_email entirely. created_date is aliased so the markup
       // below is unchanged from the base44 version.
@@ -109,12 +125,19 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     }
   };
 
-  // Counted per share action rather than per person, so the same reader sharing
-  // twice counts twice. That is what "times shared" means.
+  // Counted once per reader, not once per click. The button still works every
+  // time it is pressed - sharing again is allowed - it just stops moving the
+  // number, so the count measures how many people passed the post on rather
+  // than how many times the button was pressed.
   const recordShare = async () => {
+    if (hasShared) return;
+    setHasShared(true);
     setShareCount((c) => c + 1);
+    localStorage.setItem(`bf_shared_${postId}`, '1');
     if (!isSupabaseConfigured) return;
     try {
+      // A repeat from the same device hits the (post_id, session_key) unique
+      // constraint and errors, which is the intended outcome.
       await supabase
         .from('blog_post_shares')
         .insert({ post_id: postId, session_key: sessionKey });
@@ -123,24 +146,43 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     }
   };
 
+  const copyLink = async (url) => {
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      // clipboard can be blocked or missing; the visual confirmation below
+      // would then be a lie, so say nothing rather than claim it copied
+      return false;
+    }
+    setShared(true);
+    setTimeout(() => setShared(false), 2000);
+    return true;
+  };
+
   const handleShare = async () => {
     const url = `https://beastlyfacts.com/blog/${postSlug || postId}/`;
+
+    // navigator.share must be called synchronously off the click: awaiting
+    // anything first spends the transient user activation it requires, and the
+    // call then rejects with NotAllowedError.
     if (navigator.share) {
-      // navigator.share rejects with AbortError when the reader dismisses the
-      // sheet without picking anything. Recording only after it resolves keeps
-      // an abandoned share out of the count.
       try {
         await navigator.share({ title: postTitle, url });
         recordShare();
-      } catch {
-        // cancelled or unsupported target - deliberately not counted
+        return;
+      } catch (err) {
+        // AbortError means the reader opened the sheet and backed out. That is
+        // a deliberate no, so leave it alone: no count, no clipboard surprise.
+        if (err?.name === 'AbortError') return;
+        // Anything else is the share sheet failing, not the reader declining:
+        // no activation, a permissions policy, an OS-level failure, or a
+        // target that rejected the payload. Previously this branch did nothing
+        // at all, so the button looked broken. Fall through to the copy path
+        // so the reader still ends up with the link.
       }
-    } else {
-      await navigator.clipboard.writeText(url);
-      setShared(true);
-      setTimeout(() => setShared(false), 2000);
-      recordShare();
     }
+
+    if (await copyLink(url)) recordShare();
   };
 
   const handleSubmitComment = async (e) => {
