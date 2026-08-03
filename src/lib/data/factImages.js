@@ -172,6 +172,8 @@ const FACT_IMAGES = {
   271: '/assets/facts/orangutan.jpg',
   272: '/assets/facts/sawfish.jpg',
   273: '/assets/facts/mudskipper.jpg',
+  274: '/assets/facts/wolverine.jpg',
+  275: '/assets/facts/wolverine-2.jpg',
   239: '/assets/facts/cat-9.jpg',
   240: '/assets/facts/cat-10.jpg',
   241: '/assets/facts/lion.jpg',

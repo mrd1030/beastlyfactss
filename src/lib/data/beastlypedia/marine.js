@@ -94,19 +94,21 @@ export const marineBeastfiles = [
       'Because it sleeps half a brain at a time, one eye stays open and it keeps swimming throughout.',
       'Some populations carry sea sponges on their beaks as foraging tools, a behavior passed from mother to calf.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/dolphin-hero.jpg',
     heroAlt:
       'A bottlenose dolphin breaking the surface of open blue water with its beak and melon clear of the waterline',
     secondaryImage: '/assets/facts/dolphin.jpg',
     secondaryAlt: 'A bottlenose dolphin swimming just below the surface seen from the side',
     relatedFiles: ['do-dolphins-have-names-what-the-research-shows'],
-    draft: true,
   },
   {
     id: 'clownfish',
     name: 'Clownfish',
-    scientific: 'Amphiprion ocellaris',
-    alsoKnownAs: ['Anemonefish', 'False Percula Clownfish'],
+    // Genus level, not ocellaris. The profile is generic (the sex change and
+    // the anemone partnership hold across Amphiprion) and the hero photo is a
+    // banded species that is plainly not the bright orange three-band ocellaris.
+    scientific: 'Amphiprion',
+    alsoKnownAs: ['Anemonefish'],
     tagline: 'Every clownfish is born male, and the largest one becomes female.',
     habitat: 'Ocean',
     group: 'Marine Life',
@@ -128,12 +130,11 @@ export const marineBeastfiles = [
       'A clownfish that loses its anemone rarely lasts long in open water.',
       'The mucus coat is partly acquired, and a fish will brush against a new anemone repeatedly before moving in.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/clownfish-hero.jpg',
     heroAlt: 'A clownfish nestled among the tentacles of a sea anemone on a tropical reef',
     secondaryImage: '/assets/facts/clownfish.jpg',
     secondaryAlt: 'A clownfish showing its orange body and white bands edged in black',
     relatedFiles: ['what-finding-nemo-got-wrong-about-clownfish'],
-    draft: true,
   },
   {
     id: 'immortal-jellyfish',
@@ -161,13 +162,12 @@ export const marineBeastfiles = [
       'It is a few millimetres across, so most of what kills it never notices it did.',
       'A reverted polyp can bud off new medusae that are genetically identical to the original.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/immortal-jellyfish-hero.jpg',
     heroAlt:
       'A tiny transparent immortal jellyfish photographed against dark water, its red stomach visible through the bell',
     secondaryImage: '/assets/facts/jellyfish.jpg',
     secondaryAlt: 'A translucent jellyfish drifting in dark water with tentacles trailing',
     relatedFiles: ['immortal-jellyfish-turritopsis-dohrnii-explained'],
-    draft: true,
   },
   {
     id: 'seahorse',
@@ -194,47 +194,12 @@ export const marineBeastfiles = [
       'Some species pair for a season and greet each other every morning with a colour change.',
       'The dwarf seahorse moves so slowly it holds a record as the slowest fish measured.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/seahorse-hero.jpg',
     heroAlt:
       'A seahorse gripping a strand of seagrass with its tail in clear shallow water',
     secondaryImage: '/assets/facts/seahorse.jpg',
     secondaryAlt: 'A seahorse in profile showing its curled tail and tubular snout',
     relatedFiles: ['seahorse-male-pregnancy-how-it-works'],
-    draft: true,
-  },
-  {
-    id: 'hagfish',
-    name: 'Hagfish',
-    scientific: 'Myxinidae',
-    alsoKnownAs: ['Slime Eel'],
-    tagline: 'A teaspoon of its slime becomes twenty litres in half a second.',
-    habitat: 'Ocean',
-    group: 'Marine Life',
-    overview:
-      'The hagfish is an eel-shaped scavenger with a skull and no jaw, no vertebrae and no paired fins, and it produces the most effective defense in the ocean. Threatened, it releases a small amount of material from glands along its body which, on contact with seawater, expands into litres of fibrous slime within about half a second. A shark that bites a hagfish gets its gills clogged and lets go. The hagfish then ties its own body into a knot and slides the knot down itself to scrape the slime off, which also lets it tear food from a carcass by bracing against its own body.',
-    origin:
-      'Cold ocean floor worldwide, mostly between a few dozen and a few thousand metres down, burrowing in soft sediment and gathering at carcasses.',
-    notableTraits: [
-      'Slime that expands to thousands of times its volume in under a second',
-      'Ties itself in a knot to clean off and to feed',
-      'A skull but no vertebrae, and no jaws',
-      'Can absorb nutrients through its skin',
-      'Survives hours in water with almost no oxygen',
-    ],
-    conservation:
-      'Most species are unassessed. Some are fished commercially, largely for skin sold as eel leather, and their slow reproduction makes local populations easy to deplete.',
-    funFacts: [
-      'The slime is threaded through with protein fibres finer than spider silk, which is why it is being studied as a material.',
-      'It feeds on carcasses on the seafloor and can go months between meals.',
-      'A truck carrying hagfish crashed in Oregon in 2017 and the road had to be washed down with seawater.',
-    ],
-    heroImage: null,
-    heroAlt:
-      'A hagfish on a dark seafloor, its pale eel-shaped body curved against the sediment',
-    secondaryImage: '/assets/facts/hagfish.jpg',
-    secondaryAlt: 'Close view of a hagfish showing its jawless mouth and barbels',
-    relatedFiles: ['hagfish-slime-how-it-works'],
-    draft: true,
   },
   {
     id: 'shark',
@@ -264,7 +229,7 @@ export const marineBeastfiles = [
       'Greenland sharks are estimated to live for centuries, which would make them the longest-lived vertebrates known.',
       'The number of people killed by sharks each year is consistently in the single digits worldwide.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/shark-hero.jpg',
     heroAlt:
       'A shark cruising through open blue water seen from the side, with light rippling across its back',
     secondaryImage: '/assets/facts/shark.jpg',
@@ -273,7 +238,6 @@ export const marineBeastfiles = [
       'how-dangerous-are-sharks-really',
       'sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind',
     ],
-    draft: true,
   },
   {
     id: 'octopus',
@@ -301,7 +265,7 @@ export const marineBeastfiles = [
       'Most species are semelparous: they breed once and die, and the female starves guarding her eggs.',
       'A severed arm keeps reacting to stimuli for a while, because the neurons to run it are already in the arm.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/octopus-hero.jpg',
     heroAlt:
       'An octopus on a rocky seabed with its arms curled beneath it and skin textured to match the rock',
     secondaryImage: '/assets/facts/octopus-2.jpg',
@@ -310,7 +274,6 @@ export const marineBeastfiles = [
       'the-octopus-has-three-hearts-and-uses-all-of-them',
       '10-surprising-octopus-facts',
     ],
-    draft: true,
   },
   {
     id: 'mantis-shrimp',
@@ -338,13 +301,12 @@ export const marineBeastfiles = [
       'It is the only animal known to detect circularly polarised light.',
       'The 2014 work that overturned the colour claim is a good reminder that more receptors does not mean better vision.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/mantis-shrimp-hero.jpg',
     heroAlt:
       'A peacock mantis shrimp at the mouth of its burrow on a reef, its green and orange shell and stalked eyes visible',
     secondaryImage: '/assets/facts/mantis-shrimp.jpg',
     secondaryAlt: 'Close view of a mantis shrimp showing its stalked eyes and raptorial clubs',
     relatedFiles: ['mantis-shrimp-16-color-vision-punch-power'],
-    draft: true,
   },
   {
     id: 'cuttlefish',
@@ -372,13 +334,12 @@ export const marineBeastfiles = [
       'Smaller males have been recorded showing female colouring on one side to slip past a larger rival.',
       'It has eight arms and two longer feeding tentacles it fires out to catch prey.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/cuttlefish-hero.jpg',
     heroAlt:
       'A cuttlefish hovering above sand with its arms held forward and a rippling pattern across its skin',
     secondaryImage: '/assets/facts/cuttlefish-2.jpg',
     secondaryAlt: 'Close view of a cuttlefish showing its W-shaped pupil and fin skirt',
     relatedFiles: ['10-surprising-cuttlefish-facts'],
-    draft: true,
   },
   {
     id: 'humpback-whale',
@@ -405,12 +366,11 @@ export const marineBeastfiles = [
       'Only males sing, and nobody is certain what the song is for.',
       'Bubble-net feeding is learned, and different groups do it differently.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/humpback-whale-hero.jpg',
     heroAlt:
       'A humpback whale breaching clear of the ocean surface with water streaming from its long pectoral fin',
     secondaryImage: '/assets/facts/humpback-whale.jpg',
     secondaryAlt: 'A humpback whale tail fluke raised above the water before a dive',
     relatedFiles: ['10-surprising-humpback-whale-facts'],
-    draft: true,
   },
 ];

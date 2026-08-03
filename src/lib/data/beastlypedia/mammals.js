@@ -186,46 +186,12 @@ export const mammalBeastfiles = [
       'It has seven neck vertebrae, exactly as many as you do. They are just very long.',
       'A giraffe can go longer without water than a camel of the same size.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/giraffe-hero.jpg',
     heroAlt:
       'An adult giraffe standing in profile on open savanna with its neck raised and acacia trees behind',
     secondaryImage: '/assets/facts/giraffe.jpg',
     secondaryAlt: 'A giraffe head and neck in profile against a pale sky',
     relatedFiles: ['giraffe-heart-myth-what-the-research-shows'],
-    draft: true,
-  },
-  {
-    id: 'naked-mole-rat',
-    name: 'Naked Mole Rat',
-    scientific: 'Heterocephalus glaber',
-    tagline: 'A mammal that lives like a termite and breaks most of the rules for mammals.',
-    habitat: 'Grassland',
-    group: 'Mammals',
-    overview:
-      'The naked mole rat is a small, hairless, more or less blind rodent that lives underground in East Africa in colonies of dozens to hundreds, and it violates a remarkable number of things mammals are supposed to do. It is eusocial: a single breeding queen suppresses reproduction in everyone else, and the rest dig, forage and defend, which is a structure otherwise seen in ants and termites. It barely regulates its own body temperature. It appears not to age in the usual way, since its risk of dying does not climb with time the way other mammals do. Deprived of oxygen it switches to running on fructose, and survives for many minutes with none at all.',
-    origin:
-      'Arid and semi-arid grassland and scrub in East Africa, chiefly Kenya, Ethiopia and Somalia, in extensive tunnel systems dug for tubers.',
-    notableTraits: [
-      'Eusocial, with one breeding queen and a sterile workforce',
-      'Does not regulate its body temperature like other mammals',
-      'Risk of death does not rise with age',
-      'Switches to fructose metabolism without oxygen',
-      'Almost never develops cancer',
-    ],
-    conservation:
-      'Least Concern. The species is widespread across its range and lives underground, which insulates it from most of the pressures that affect surface mammals.',
-    funFacts: [
-      'The queen suppresses breeding in the entire colony, and a worker can become fertile within weeks of her death.',
-      'It is effectively insensitive to certain kinds of pain, including acid, which is a defense against the carbon dioxide in a crowded burrow.',
-      'It can live past thirty, where a mouse of similar size gets three or four years.',
-    ],
-    heroImage: null,
-    heroAlt:
-      'A naked mole rat in a soil tunnel, its wrinkled pink hairless skin and large protruding incisors visible',
-    secondaryImage: '/assets/facts/naked-mole-rat.jpg',
-    secondaryAlt: 'Close view of a naked mole rat showing its incisors and loose pink skin',
-    relatedFiles: ['naked-mole-rat-breaks-the-rules-for-mammals'],
-    draft: true,
   },
   {
     id: 'slow-loris',
@@ -254,13 +220,12 @@ export const mammalBeastfiles = [
       'The videos of lorises raising their arms are usually not enjoyment; that posture is how it reaches the venom gland.',
       'It is one of very few mammals where venom appears to be used against its own species.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/slow-loris-hero.jpg',
     heroAlt:
       'A slow loris gripping a branch at night in rainforest, its large round eyes reflecting the light',
     secondaryImage: '/assets/facts/slow-loris.jpg',
     secondaryAlt: 'A slow loris clinging to a branch showing its large forward-facing eyes',
     relatedFiles: ['slow-loris-the-only-venomous-primate'],
-    draft: true,
   },
   {
     id: 'african-elephant',
@@ -288,13 +253,12 @@ export const mammalBeastfiles = [
       'The trunk has no bone at all, and it can both uproot a tree and pick up a single seed.',
       'Elephants return to the bones of dead relatives and handle them, which nothing has fully explained.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/african-elephant-hero.jpg',
     heroAlt:
       'An African elephant standing on open savanna at golden hour with its ears spread and trunk lowered',
     secondaryImage: '/assets/facts/elephant.jpg',
     secondaryAlt: 'An African elephant in profile showing its trunk and large ear',
     relatedFiles: ['elephants-talk-below-human-hearing'],
-    draft: true,
   },
   {
     id: 'sloth',
@@ -322,13 +286,12 @@ export const mammalBeastfiles = [
       'Moths live in the fur and lay their eggs in the dung during that trip.',
       'Wild sloths look green because of algae growing in grooves along each hair.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/sloth-hero.jpg',
     heroAlt:
       'A three-toed sloth hanging beneath a branch in rainforest canopy with its long curved claws hooked over the wood',
     secondaryImage: '/assets/facts/sloth.jpg',
     secondaryAlt: 'A three-toed sloth clinging to a tree trunk, face toward the camera',
     relatedFiles: ['why-a-sloth-climbs-down-to-defecate'],
-    draft: true,
   },
   {
     id: 'gray-wolf',
@@ -356,13 +319,12 @@ export const mammalBeastfiles = [
       'Pups are raised by the whole pack, not only the parents.',
       'Wolves rarely fight for rank in the wild; there is nothing to fight over in a family.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/gray-wolf-hero.jpg',
     heroAlt:
       'A grey wolf standing in snow at the edge of conifer forest, looking directly toward the camera',
     secondaryImage: '/assets/facts/wolf.jpg',
     secondaryAlt: 'A grey wolf in profile with thick winter coat',
     relatedFiles: ['alpha-wolf-myth-what-the-research-actually-says'],
-    draft: true,
   },
   {
     id: 'lion',
@@ -389,13 +351,12 @@ export const mammalBeastfiles = [
       'The mane seems to signal condition to other lions rather than shield the neck in fights.',
       'A male coalition that takes over a pride will usually kill the cubs of the previous males.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/lion-hero.jpg',
     heroAlt:
       'A male lion lying on open savanna grass at golden hour, mane full, looking into the distance',
     secondaryImage: '/assets/facts/lion.jpg',
     secondaryAlt: 'A lion in profile showing its full mane',
     relatedFiles: ['lions-are-the-only-social-cat'],
-    draft: true,
   },
   {
     id: 'tiger',
@@ -422,13 +383,12 @@ export const mammalBeastfiles = [
       'More tigers live in captivity in some countries than exist in the wild worldwide.',
       'Unlike most cats it swims readily and will cross rivers to hunt.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/tiger-hero.jpg',
     heroAlt:
       'A wild tiger walking through tall grass at the edge of forest, striped flank catching the light',
     secondaryImage: '/assets/facts/tiger.jpg',
     secondaryAlt: 'A tiger facing the camera showing its striped face and white ruff',
     relatedFiles: ['every-wild-tiger-would-fit-in-a-small-town'],
-    draft: true,
   },
   {
     id: 'rhinoceros',
@@ -458,13 +418,12 @@ export const mammalBeastfiles = [
       'Dehorning works as a deterrent but does not stop poaching outright.',
       'The northern white rhino is down to two females, both unable to carry a pregnancy.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/rhinoceros-hero.jpg',
     heroAlt:
       'A rhinoceros standing in open grassland in profile, its horn and heavy folded skin clearly visible',
     secondaryImage: '/assets/facts/rhino.jpg',
     secondaryAlt: 'A rhinoceros head in profile showing the horn and small eye',
     relatedFiles: ['a-rhino-horn-is-made-of-keratin'],
-    draft: true,
   },
   {
     id: 'wombat',
@@ -492,13 +451,12 @@ export const mammalBeastfiles = [
       'Its pouch opens backwards, so it does not fill with dirt while digging.',
       'It can block a burrow with its rump and crush a predator against the roof.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/wombat-hero.jpg',
     heroAlt:
       'A wombat standing at the entrance to its burrow on grassy ground, stocky body and broad nose visible',
     secondaryImage: '/assets/facts/wombat.jpg',
     secondaryAlt: 'A wombat grazing on grass, seen from the side',
     relatedFiles: ['why-wombats-produce-cube-shaped-droppings'],
-    draft: true,
   },
   {
     id: 'honey-badger',
@@ -596,12 +554,7 @@ export const mammalBeastfiles = [
     heroImage: null,
     heroAlt:
       'A wolverine moving across deep snow in boreal forest, its dark coat and pale flank stripe visible',
-    // Borrows wolverine.jpg, the photo for fact 274, once that image exists.
-    // Left null rather than pointed at a missing file so the reference check
-    // stays honest. Facts 274 and 275 are written and live; they carry no
-    // FACT_IMAGES entry yet for the same reason, so they render with their
-    // emoji until their photos land. See BEASTLYPEDIA_IMAGES.md.
-    secondaryImage: null,
+    secondaryImage: '/assets/facts/wolverine.jpg',
     secondaryAlt: 'A wolverine in profile on snow showing its dense dark coat and pale flank stripe',
     relatedFiles: ['wolverine-facts-the-toughest-animal-pound-for-pound'],
     draft: true,

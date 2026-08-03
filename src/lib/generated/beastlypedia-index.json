@@ -1,21 +1,40 @@
 {
   "ids": [
+    "african-elephant",
     "axolotl",
     "aye-aye",
     "blue-poison-dart-frog",
     "capybara",
+    "clownfish",
+    "crow",
+    "cuttlefish",
+    "dolphin",
     "fennec-fox",
     "gaboon-viper",
+    "giraffe",
     "glass-frog",
+    "gray-wolf",
     "green-anaconda",
+    "humpback-whale",
+    "immortal-jellyfish",
     "leafy-sea-dragon",
+    "lion",
     "manta-ray",
+    "mantis-shrimp",
     "narwhal",
+    "octopus",
     "pangolin",
     "panther-chameleon",
+    "rhinoceros",
+    "seahorse",
+    "shark",
     "shoebill",
+    "sloth",
+    "slow-loris",
     "thorny-devil",
-    "victoria-crowned-pigeon"
+    "tiger",
+    "victoria-crowned-pigeon",
+    "wombat"
   ],
   "groupSlugs": [
     "mammals",
@@ -145,6 +164,206 @@
         "animal": "Aye-aye",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/aye-aye.jpg"
+      }
+    ],
+    "giraffe": [
+      {
+        "title": "The Big Heart Myth",
+        "fact": "For decades, giraffe hearts were said to weigh up to 25 pounds (11 kg), but that figure traces back to a likely-flawed 1955 measurement. More recent research shows their heart is actually a normal size for their body weight, working overtime instead: giraffe blood pressure runs roughly twice that of humans, just to get blood all the way up their 6-foot neck.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe.jpg"
+      },
+      {
+        "title": "Same Neck Bones as You",
+        "fact": "A giraffe's towering neck contains exactly seven vertebrae, the same number found in a human neck, just enormously stretched out. In the wild they also get by on remarkably little sleep, one tracking study recording as little as 10 minutes a night, taken in a couple of short bursts; giraffes in zoos, with no predators to worry about, sleep several hours more.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe-2.jpg"
+      },
+      {
+        "title": "They Hum After Dark",
+        "fact": "Giraffes were long thought to be nearly silent. Then researchers recorded over 947 hours of audio across three European zoos and found sustained, harmonic humming that happens only at night, averaging 92 Hz. That detail quietly kills a popular claim: 92 Hz is not infrasound, it sits well inside human hearing. They were audible all along. Nobody had listened for 947 hours.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe-3.jpg"
+      },
+      {
+        "title": "Four Giraffes, Not One",
+        "fact": "For over a century every giraffe was filed under one species. Genetic work in 2016 found four deeply distinct lineages that do not interbreed in the wild, separated by differences comparable to those between polar and brown bears. In August 2025 the IUCN formally recognized all four: northern, reticulated, Masai and southern giraffe.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe-4.jpg"
+      },
+      {
+        "title": "Drinking Is Harder Than It Looks",
+        "fact": "When a giraffe lowers its head to drink, roughly 1.4 litres of blood, about 5% of its total supply, pools in the neck veins and the heart rate drops. The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon. The new proposal: swallowing itself squeezes the neck veins and pumps the blood home.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe-5.jpg"
+      },
+      {
+        "title": "The Eighth Neck Bone",
+        "fact": "Giraffes have seven neck vertebrae, the same as you. The part that gets left out is that anatomists have argued for decades over whether seven is the honest count. The current view is that the first thoracic vertebra has been functionally converted into a neck bone: it still carries ribs, so it is technically not cervical, but it moves with the neck and is built like one.",
+        "animal": "Giraffe",
+        "category": "Mammals",
+        "image": "/assets/facts/giraffe-6.jpg"
+      }
+    ],
+    "slow-loris": [
+      {
+        "title": "The Only Venomous Primate",
+        "fact": "Slow lorises are the only primates known to be venomous. They lick a gland on the inside of their elbow and mix its secretion with their saliva, then deliver it through a bite that can trigger dangerous allergic reactions, even anaphylactic shock, in humans.",
+        "animal": "Slow Loris",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/slow-loris.jpg"
+      },
+      {
+        "title": "Venom in Two Parts",
+        "fact": "A slow loris cannot bite venomously without arming itself first. It has a gland on the inside of its upper arm that secretes an oily exudate, harmless alone, and it raises its arms overhead to lick that gland and mix the secretion with saliva. Only the combination is venomous. That arms-up pose people find adorable is the loading action.",
+        "animal": "Slow Loris",
+        "category": "Mammals",
+        "image": "/assets/facts/slow-loris-2.jpg"
+      },
+      {
+        "title": "Built Like the Cat Allergen",
+        "fact": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponised. Much of the damage is done by the victim's own immune response.",
+        "animal": "Slow Loris",
+        "category": "Mammals",
+        "image": "/assets/facts/slow-loris-3.jpg"
+      },
+      {
+        "title": "Teeth Removed With Pliers",
+        "fact": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anaesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released.",
+        "animal": "Slow Loris",
+        "category": "Mammals",
+        "image": "/assets/facts/slow-loris-4.jpg"
+      }
+    ],
+    "african-elephant": [
+      {
+        "title": "Elephants Mourn",
+        "fact": "Elephants hold funerals for their dead. They'll gently touch the bones of deceased family members with their trunks and stand vigil for hours. They've even been seen crying.",
+        "animal": "Elephant",
+        "category": "Mammals",
+        "image": "/assets/facts/elephant.jpg"
+      },
+      {
+        "title": "Hear With Their Feet",
+        "fact": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialised receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away.",
+        "animal": "Elephant",
+        "category": "Mammals",
+        "image": "/assets/facts/elephant-2.jpg"
+      },
+      {
+        "title": "Calls Below Human Hearing",
+        "fact": "Elephant rumbles drop to around 14 Hz, below the roughly 20 Hz floor of human hearing, so what people standing nearby actually hear is only the upper harmonics. Low frequencies bend around obstacles and lose energy slowly, letting these calls carry for kilometres. At dusk, temperature inversions channel the sound rather than letting it escape upward, and calling activity peaks.",
+        "animal": "Elephant",
+        "category": "Mammals",
+        "image": "/assets/facts/elephant-3.jpg"
+      },
+      {
+        "title": "Listening Through Their Feet",
+        "fact": "A loud rumble does not only move air, it couples into the ground as a surface wave that outruns the airborne version. Elephant feet are packed with Pacinian corpuscles, the receptors mammals use to sense vibration, and there is a bone conduction path up the leg to the middle ear. Played ground-only signals, elephants freeze, lean forward and lift a foot.",
+        "animal": "Elephant",
+        "category": "Mammals",
+        "image": "/assets/facts/elephant-4.jpg"
+      }
+    ],
+    "sloth": [
+      {
+        "title": "Breath-Holding Sloths",
+        "fact": "Sloths can hold their breath underwater for up to 40 minutes, longer than dolphins! They slow their heart rate to just one-third of normal to conserve oxygen.",
+        "animal": "Sloth",
+        "category": "Mammals",
+        "image": "/assets/facts/sloth.jpg"
+      },
+      {
+        "title": "The Weekly Trip That Kills Them",
+        "fact": "A three-toed sloth climbs all the way down to the forest floor about once a week to defecate, then climbs back. On the ground it cannot walk and drags itself by its front claws. A very large share of sloth predation deaths, on the order of half, happens during these trips, which it makes roughly fifty times a year.",
+        "animal": "Sloth",
+        "category": "Mammals",
+        "image": "/assets/facts/sloth-3.jpg"
+      },
+      {
+        "title": "The Fur Is an Ecosystem",
+        "fact": "Sloth hair has grooves that trap moisture and grow algae found almost nowhere else, which tints wild sloths green. Moths live in the coat too, and lay their eggs in the dung during the weekly descent. One proposal is that the moths fertilise the algae and the sloth eats some of it, supplementing a poor leaf diet. It is contested but nothing better has replaced it.",
+        "animal": "Sloth",
+        "category": "Mammals",
+        "image": "/assets/facts/sloth-4.jpg"
+      }
+    ],
+    "gray-wolf": [
+      {
+        "title": "The River Story, Revisited",
+        "fact": "When wolves returned to Yellowstone in 1995, elk behavior changed and some vegetation recovered, a real ecological effect called a trophic cascade. But the popular claim that wolves single-handedly reshaped the park's rivers has been challenged by a 2025 scientific re-analysis, which found the original evidence was overstated and relied on flawed methodology.",
+        "animal": "Wolf",
+        "category": "Mammals",
+        "image": "/assets/facts/wolf.jpg"
+      },
+      {
+        "title": "The Alpha Wolf Myth",
+        "fact": "The famous 'alpha wolf' idea traces back to 1930s and 1940s zoo studies of unrelated wolves penned together, which triggered artificial power struggles, and a bestselling 1970 book carried it into the mainstream. Decades later, the same biologist who coined the term studied wild wolf packs and found they're simply family units, a breeding pair and their pups, not a rank ladder fought over. He spent years afterward trying to get the myth retracted.",
+        "animal": "Wolf",
+        "category": "Mammals",
+        "image": "/assets/facts/wolf-2.jpg"
+      }
+    ],
+    "lion": [
+      {
+        "title": "The Pride Belongs to the Females",
+        "fact": "Lions are the only social cat out of roughly forty species, and the group is built on related females who often stay in their birth pride for life. Males are not part of that lineage. They arrive as a coalition, hold the pride for perhaps two or three years, then get driven out by a stronger group. A lioness may spend fifteen years on ground the males only lease.",
+        "animal": "Lion",
+        "category": "Mammals",
+        "image": "/assets/facts/lion.jpg"
+      },
+      {
+        "title": "Group Hunting Is Not the Reason",
+        "fact": "The obvious explanation for lion prides is cooperative hunting, and decades of Serengeti data do not support it: food per lion does not reliably improve with group size, because a kill split more ways feeds each one less. What group size does track is territory quality. The best ground, river confluences where prey must come to drink, can only be held by numbers.",
+        "animal": "Lion",
+        "category": "Mammals",
+        "image": "/assets/facts/lion-2.jpg"
+      }
+    ],
+    "tiger": [
+      {
+        "title": "A Species That Fits in a Town",
+        "fact": "Around 5,500 tigers remain in the wild, across thirteen countries, for the entire species. A century ago the estimate was near 100,000. They have lost roughly 93 to 95 percent of their historic range, and three subspecies are already gone: the Bali, Caspian and Javan tigers.",
+        "animal": "Tiger",
+        "category": "Mammals",
+        "image": "/assets/facts/tiger.jpg"
+      },
+      {
+        "title": "Striped to the Skin",
+        "fact": "Tiger stripes are not only in the fur. The pattern is in the skin underneath, so a shaved tiger is still striped. Every tiger's arrangement is unique, which is genuinely useful: camera trap surveys identify individual animals by stripe pattern the way you would use a fingerprint, and much of what we know about remaining numbers comes from exactly that.",
+        "animal": "Tiger",
+        "category": "Mammals",
+        "image": "/assets/facts/tiger-2.jpg"
+      }
+    ],
+    "rhinoceros": [
+      {
+        "title": "Horn Is Not Bone or Ivory",
+        "fact": "A rhino horn has no bony core at all. It grows from the skin and is compacted keratin the whole way through, the same protein as fingernails, hair and hooves. That makes it structurally closer to an enormous callus than to a cow's horn, which is a bony core in a keratin sheath.",
+        "animal": "Rhino",
+        "category": "Mammals",
+        "image": "/assets/facts/rhino.jpg"
+      },
+      {
+        "title": "It Grows Back",
+        "fact": "Because there is no bone in it and it grows continuously from the base, a rhino horn regrows after being cut above the growth plate. That is what makes dehorning possible as an anti-poaching measure, repeated every couple of years. It is not a clean fix: dehorned rhinos are still killed, and the horn is used for defense and in disputes.",
+        "animal": "Rhino",
+        "category": "Mammals",
+        "image": "/assets/facts/rhino-2.jpg"
+      }
+    ],
+    "wombat": [
+      {
+        "title": "Wombat Cube Poop",
+        "fact": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes, and a very dry gut lets the corners hold. The cubes sit on rocks and logs without rolling off, where they work as scent messages carrying identity and breeding status. Despite the common claim, wombats are not territorial.",
+        "animal": "Wombat",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/wombat.jpg"
       }
     ],
     "thorny-devil": [
@@ -289,6 +508,22 @@
         "image": "/assets/facts/victoria-crowned-pigeon-3.jpg"
       }
     ],
+    "crow": [
+      {
+        "title": "Crow Detectives",
+        "fact": "Crows can recognize individual human faces for years and will teach other crows who is 'friend' or 'foe.' They've been known to bring gifts to people who feed them, from shiny buttons to earrings!",
+        "animal": "Crow",
+        "category": "Birds",
+        "image": "/assets/facts/crow.jpg"
+      },
+      {
+        "title": "Crow Tool Users",
+        "fact": "New Caledonian crows craft hooked tools from twigs and leaves to extract grubs from bark, and they pass these techniques on to their young, making it a form of animal culture.",
+        "animal": "Crow",
+        "category": "Birds",
+        "image": "/assets/facts/crow-2.jpg"
+      }
+    ],
     "manta-ray": [
       {
         "title": "Ocean's Biggest Brain",
@@ -305,6 +540,283 @@
         "animal": "Leafy Sea Dragon",
         "category": "Ocean",
         "image": "/assets/facts/leafy-sea-dragon.jpg"
+      }
+    ],
+    "dolphin": [
+      {
+        "title": "Dolphin Name Tags",
+        "fact": "Each dolphin develops its own unique signature whistle, essentially a name! They use these to call out to specific friends. Dolphins can remember these 'names' for over 20 years.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin.jpg"
+      },
+      {
+        "title": "Mirror Test Passers",
+        "fact": "Dolphins are one of only a handful of animals that pass the mirror self-recognition test, placing them alongside humans, great apes, and elephants as animals with a sense of self-awareness.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-2.jpg"
+      },
+      {
+        "title": "Secrets in the Sound",
+        "fact": "Dolphins communicate using unique signature whistles that function like names! Each dolphin develops its own distinct whistle, allowing them to identify and call one another, much like how we use names to socialize.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-3.jpg"
+      },
+      {
+        "title": "Glowing Oceans, No Joke!",
+        "fact": "Dolphins do not glow, but they can look like they do. Some plankton, mainly single-celled dinoflagellates, flash blue-green when the water around them is disturbed. A dolphin cutting through a bloom of them at night sets off that light as it goes, outlining its whole body in a glowing trail.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-4.jpg"
+      },
+      {
+        "title": "Names on a Watchlist",
+        "fact": "In a 2026 Shark Bay study, researchers played 17 female dolphins the signature whistles of 11 adult males and watched the response by drone. Females likely to be fertile swam away from the whistles of males known for aggressively herding females, going on each male's track record across the population, not just their own encounters with him.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-5.jpg"
+      },
+      {
+        "title": "Half the Conversation",
+        "fact": "A dolphin's signature whistle is not something it is born with. Calves learn theirs during the first year of life, and once the pattern is set it stays stable for decades. Signature whistles also make up around half of everything a freely interacting dolphin whistles, so identity is most of the conversation.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-6.jpg"
+      },
+      {
+        "title": "The Deliberately Imperfect Copy",
+        "fact": "When one dolphin copies another's signature whistle, it never copies it exactly. Researchers found copies differed from the original in an average of 4.4 acoustic features, which keeps a copy audibly a copy rather than an impersonation. Copying is also rare, and happens almost entirely between very close companions.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-7.jpg"
+      },
+      {
+        "title": "Your Name in Someone Else's Voice",
+        "fact": "Off the coast of Scotland, researchers rebuilt wild dolphins' signature whistles synthetically, stripping out every trace of the original animal's voice, then played them back. Eight of 12 dolphins called back on hearing their own whistle, and none responded to whistles that were not theirs. The identity is in the shape of the sound, not in who says it.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-8.jpg"
+      },
+      {
+        "title": "Mirror Babies",
+        "fact": "Two dolphin calves at the National Aquarium in Baltimore were tracked at a mirror over three years. One began showing self-directed behavior at 5.5 months old, earlier than human children usually manage (about 12 to 15 months) and much earlier than chimpanzees. What mirror behavior proves about self-awareness is still genuinely debated.",
+        "animal": "Dolphin",
+        "category": "Ocean",
+        "image": "/assets/facts/dolphin-9.jpg"
+      }
+    ],
+    "clownfish": [
+      {
+        "title": "Born Male, Die Female",
+        "fact": "All clownfish are born male. When the dominant female of a group dies, the largest male changes sex to become female permanently. Finding Nemo got it backwards!",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish.jpg"
+      },
+      {
+        "title": "Fluffy Fish Friends",
+        "fact": "Clownfish have a unique symbiotic relationship with sea anemones, providing each other with protection and food. The clownfish's mucus coating allows them to thrive among the anemone's stinging tentacles without harm!",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-2.jpg"
+      },
+      {
+        "title": "Shrimp Anemone Alliance",
+        "fact": "Clownfish and sea anemones share one of nature's most iconic partnerships. The clownfish gets shelter and protection from the anemone's stinging tentacles, while the anemone benefits from the clownfish cleaning parasites off its tentacles.",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-3.jpg"
+      },
+      {
+        "title": "Shrinking to Survive a Heatwave",
+        "fact": "During a marine heatwave that ran 4C above average, researchers measuring 134 clownfish found they got shorter. Not thinner, shorter, reabsorbing their own tissue. Around three quarters of the dominant fish shrank at least once, and a single shrinking event raised survival odds by 78%. Every fish that shrank more than once survived.",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-4.jpg"
+      },
+      {
+        "title": "The Queue Nobody Jumps",
+        "fact": "A clownfish group is a strict size ladder: breeding female on top, breeding male below her, then non-breeders in descending size. The small ones form a near-perfect queue where nobody leaves and nobody fights, because crossing open reef means being eaten and challenging a bigger fish means losing. They even limit their own growth to stay unthreatening. The wait can last decades.",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-5.jpg"
+      },
+      {
+        "title": "Not Immune, Just Unsalted",
+        "fact": "The old explanation was that clownfish coat themselves in anemone slime as a disguise. Research published in 2025 found something more precise: anemone stinging cells are triggered by sugars called sialic acids, and clownfish keep those at normal levels internally while holding them extremely low in their skin mucus alone. They are not wearing a disguise, they removed the trigger.",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-6.jpg"
+      },
+      {
+        "title": "Thirty Years in One Anemone",
+        "fact": "A clownfish is small enough to sit in your palm, and the oldest females are estimated to live around 30 years, roughly twice the longevity estimated for any other coral reef damselfish. That is why the waiting game works: when a rank-four fish queues for a breeding slot, it may genuinely be queuing for decades.",
+        "animal": "Clownfish",
+        "category": "Ocean",
+        "image": "/assets/facts/clownfish-7.jpg"
+      }
+    ],
+    "immortal-jellyfish": [
+      {
+        "title": "Immortal Jellyfish",
+        "fact": "The Turritopsis dohrnii jellyfish is biologically immortal! When it gets old or stressed, it can revert its cells back to a younger state, essentially hitting the reset button on aging.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish.jpg"
+      },
+      {
+        "title": "Famous Under the Wrong Name",
+        "fact": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that made it famous. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish-2.jpg"
+      },
+      {
+        "title": "A 72-Hour Rebuild",
+        "fact": "The reset is not instant. A stressed or dying Turritopsis dohrnii settles onto a surface, collapses its bell into a small blob called a cyst, and within 24 to 72 hours rebuilds itself as a juvenile polyp. That polyp then buds off brand new jellyfish.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish-3.jpg"
+      },
+      {
+        "title": "Cells That Switch Careers",
+        "fact": "The immortal jellyfish rebuilds itself through transdifferentiation, where a fully mature cell converts straight into a different mature cell type, such as muscle becoming nerve. One researcher described the scale of it as a butterfly going back to being a caterpillar.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish-4.jpg"
+      },
+      {
+        "title": "Smaller Than a Pinky Nail",
+        "fact": "For all its fame, Turritopsis dohrnii is easy to miss. A fully grown adult is only about 4.5 mm across, roughly the size of a human pinky nail, with a bright red stomach glowing through a nearly transparent bell ringed by dozens of white tentacles.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish-5.jpg"
+      },
+      {
+        "title": "A Silent Worldwide Invasion",
+        "fact": "When researchers compared immortal jellyfish collected from Spain, Italy, Japan, Panama, and Florida, the genetic sequences came back identical, a sign they had spread across the planet recently. They are thought to hitchhike in the ballast water of cargo ships. One scientist called it a worldwide silent invasion.",
+        "animal": "Jellyfish",
+        "category": "Ocean",
+        "image": "/assets/facts/jellyfish-6.jpg"
+      }
+    ],
+    "seahorse": [
+      {
+        "title": "Dads Give Birth",
+        "fact": "Seahorses are the only animals where the male gives birth! The female deposits eggs into the male's pouch, where he fertilizes and carries them until they hatch.",
+        "animal": "Seahorse",
+        "category": "Ocean",
+        "image": "/assets/facts/seahorse.jpg"
+      },
+      {
+        "title": "No Stomach, No Problem",
+        "fact": "Seahorses have no stomach at all, so food passes through them so quickly that they must graze almost constantly, some species eating thousands of tiny shrimp a day just to survive. They're also famously bad swimmers, fluttering a tiny dorsal fin up to 35 times a second just to inch forward.",
+        "animal": "Seahorse",
+        "category": "Ocean",
+        "image": "/assets/facts/seahorse-2.jpg"
+      },
+      {
+        "title": "A Placenta Made of Skin",
+        "fact": "The male seahorse does not just carry eggs, he gestates them. The pouch seals shut, the embryos become embedded in his tissue, and the heavily vascularised wall handles gas exchange and feeding like a placenta. The difference is what it is built from: a mammal's placenta grows from embryonic tissue, a seahorse's is converted skin.",
+        "animal": "Seahorse",
+        "category": "Ocean",
+        "image": "/assets/facts/seahorse-3.jpg"
+      },
+      {
+        "title": "He Broke His Immune System First",
+        "fact": "Carrying young means carrying tissue your immune system reads as foreign. Seahorses solved it by demolition rather than regulation: they lost their spleen, their MHC II pathway was lost or rearranged, and three Toll-like receptors conserved across the other vertebrates are simply gone. A vertebrate missing all that should be defenseless.",
+        "animal": "Seahorse",
+        "category": "Ocean",
+        "image": "/assets/facts/seahorse-4.jpg"
+      },
+      {
+        "title": "Seawater Comes In With the Eggs",
+        "fact": "When a female transfers her eggs, non-sterile seawater goes into the pouch with them, which then seals: a warm, nutrient-rich, enclosed space inside an animal that has just dismantled much of its immunity. The fix is chemical, not cellular. Hepcidin and lysozyme run high inside the pouch, handling bacteria the missing immune hardware no longer can.",
+        "animal": "Seahorse",
+        "category": "Ocean",
+        "image": "/assets/facts/seahorse-5.jpg"
+      }
+    ],
+    "shark": [
+      {
+        "title": "Electric Sense",
+        "fact": "Sharks have special jelly-filled pores called ampullae of Lorenzini that detect the tiny electrical fields produced by other animals' heartbeats. They can sense a heartbeat from over a meter away!",
+        "animal": "Shark",
+        "category": "Ocean",
+        "image": "/assets/facts/shark.jpg"
+      }
+    ],
+    "octopus": [
+      {
+        "title": "Three Hearts of Love",
+        "fact": "Octopuses have three hearts. Two pump blood to the gills, and one pumps it to the rest of the body. When they swim, the heart that delivers blood to the body actually stops beating, which is why they prefer crawling!",
+        "animal": "Octopus",
+        "category": "Ocean",
+        "image": "/assets/images/fun-facts-octopus.jpg"
+      },
+      {
+        "title": "Silent Signals",
+        "fact": "Octopuses have an extraordinary ability to communicate through color and texture! They can rapidly change their skin color and pattern to send signals to each other or confuse predators, making them masters of disguise.",
+        "animal": "Octopus",
+        "category": "Ocean",
+        "image": "/assets/facts/octopus-2.jpg"
+      },
+      {
+        "title": "Octopus Ink Defense",
+        "fact": "Did you know that octopuses have a unique defense mechanism in the form of ink? When threatened, they can release a cloud of ink that not only obscures their escape but can also temporarily impair a predator's sense of smell!",
+        "animal": "Octopus",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/octopus-3.jpg"
+      },
+      {
+        "title": "Silent Swimmers",
+        "fact": "Octopuses have three hearts and blue blood, giving them a unique physiological edge in deep ocean environments. When they swim, one heart pumps blood to their body, while the other two focus on their gills!",
+        "animal": "Octopus",
+        "category": "Ocean",
+        "image": "/assets/facts/octopus-4.jpg"
+      }
+    ],
+    "mantis-shrimp": [
+      {
+        "title": "Mantis Shrimp Vision",
+        "fact": "Mantis shrimp have 16 types of color receptors (humans have just 3). They can see ultraviolet AND polarized light. They also punch with the force of a bullet!",
+        "animal": "Mantis Shrimp",
+        "category": "Ocean",
+        "image": "/assets/facts/mantis-shrimp.jpg"
+      },
+      {
+        "title": "Married for Twenty Years",
+        "fact": "Despite their fearsome punch, some mantis shrimp species are surprisingly devoted partners. Pairs like Lysiosquillina maculata mate for life, sharing the same burrow together for up to 20 years.",
+        "animal": "Mantis Shrimp",
+        "category": "Ocean",
+        "image": "/assets/facts/mantis-shrimp-2.jpg"
+      }
+    ],
+    "cuttlefish": [
+      {
+        "title": "Hypnotic Skin",
+        "fact": "Cuttlefish hypnotize prey by rippling hypnotic patterns across their skin at high speed. The dazzling light show freezes crabs and shrimp in place just long enough to strike.",
+        "animal": "Cuttlefish",
+        "category": "Ocean",
+        "image": "/assets/images/fun-facts-cuttlefish.jpg"
+      },
+      {
+        "title": "Underwater Fireworks",
+        "fact": "Cuttlefish can change color and texture in the blink of an eye, using specialized skin cells called chromatophores. This makes them not only masters of camouflage but also mesmerizing underwater performers!",
+        "animal": "Cuttlefish",
+        "category": "Ocean",
+        "image": "/assets/facts/cuttlefish-2.jpg"
+      }
+    ],
+    "humpback-whale": [
+      {
+        "title": "Sharks Can Be Chatty",
+        "fact": "Humpback Whales are not just majestic giants; they're also the singers of the sea! Males produce complex songs that can last for 20 minutes and can be heard over vast distances, possibly for mating purposes or simply to communicate with their fellow swimmers.",
+        "animal": "Humpback Whale",
+        "category": "Ocean",
+        "image": "/assets/facts/humpback-whale.jpg"
       }
     ]
   }

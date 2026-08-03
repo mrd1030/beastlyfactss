@@ -3,7 +3,6 @@ import { reptileBeastfiles } from './reptiles.js';
 import { amphibianBeastfiles } from './amphibians.js';
 import { birdBeastfiles } from './birds.js';
 import { marineBeastfiles } from './marine.js';
-import { otherBeastfiles } from './other.js';
 
 // Beastlypedia is the wild-animal counterpart to the Encyclopedia: educational
 // profiles with no care advice and no difficulty rating. Kept as plain data
@@ -18,7 +17,6 @@ const allBeastfiles = [
   ...amphibianBeastfiles,
   ...birdBeastfiles,
   ...marineBeastfiles,
-  ...otherBeastfiles,
 ];
 
 // draft: true keeps a finished-but-unillustrated Beastfile out of the site
@@ -26,8 +24,8 @@ const allBeastfiles = [
 //
 // That placeholder exists for the case where one entry of sixteen is briefly
 // waiting on a photo. It does not survive at scale: the Route A batch in
-// BEASTLYPEDIA_ARTICLES.md writes 26 entries whose prose is done long before
-// their heroes are, and 26 placeholders on the index reads as a broken section,
+// BEASTLYPEDIA_ARTICLES.md writes 23 entries whose prose is done long before
+// their heroes are, and 23 placeholders on the index reads as a broken section,
 // not an honest one. The prose can therefore land in git, reviewed and in
 // order, while each entry publishes the moment its hero image arrives.
 //

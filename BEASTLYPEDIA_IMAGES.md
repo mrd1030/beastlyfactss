@@ -1,19 +1,19 @@
 # Beastlypedia image checklist
 
-## Status: original 16 Beastfiles complete. 26 Route A heroes now open.
+## Status: original 16 Beastfiles complete. 23 Route A heroes now open.
 
 All 22 images for the original sixteen are delivered and installed, including
 the three heroes listed as outstanding below.
 
-**The live queue is now the Route A batch at the bottom of this file: 26 hero
-images, one per new Beastfile.** Those 26 Beastfiles are written and committed,
+**The live queue is now the Route A batch at the bottom of this file: 23 hero
+images, one per new Beastfile.** Those 23 Beastfiles are written and committed,
 carrying `draft: true`, which keeps them off the site until their hero lands.
 Nothing renders as a placeholder. Drop in a hero, set `heroImage` and remove
 `draft`, and that file publishes with its article link, its fun facts and its
 secondary photo already attached.
 
-Only the wolverine needs a secondary as well, because it is the one animal with
-no facts and therefore no fact photo to borrow.
+Every one of them borrows an existing fact photo for its secondary, so there
+are no secondaries left to make.
 
 <details>
 <summary>Historical: the original 22 (all delivered)</summary>
@@ -177,9 +177,9 @@ Secondary reuses an existing fact photo, listed with each.
 
 ---
 
-## Route A: 26 new Beastfile heroes
+## Route A: 23 new Beastfile heroes
 
-These 26 Beastfiles are written and committed carrying `draft: true`, so none
+These 23 Beastfiles are written and committed carrying `draft: true`, so none
 of them is on the site yet. Each one publishes the moment its hero lands, and
 arrives with its article link, its linked fun facts and its secondary photo
 already attached.
@@ -190,9 +190,9 @@ crops hard top and bottom on wide screens. Real-photograph style, natural
 light, shallow depth of field, no text, no watermark, single animal.
 
 Secondaries are already handled: every one of these borrows an existing fact
-photo, except the wolverine.
+photo.
 
-### Marine Life (10)
+### Marine Life (9)
 
 **Bottlenose Dolphin** `dolphin-hero.jpg`
 - A bottlenose dolphin breaking the surface of open blue water, beak and melon clear of the waterline, spray around it.
@@ -209,10 +209,6 @@ photo, except the wolverine.
 **Seahorse** `seahorse-hero.jpg`
 - A seahorse gripping a strand of seagrass with its curled tail in clear shallow water, body upright.
 - *Accuracy:* The tail must be curled around something, that is the fact. Upright posture, tubular snout, bony ridged body.
-
-**Hagfish** `hagfish-hero.jpg`
-- A hagfish on dark seafloor sediment, pale eel-shaped body curved across the mud, cold low light.
-- *Accuracy:* Jawless, barbels around the mouth, no real fins. Not an eel, and not a lamprey with a round sucker disc.
 
 **Sharks** `shark-hero.jpg`
 - A shark cruising through open blue water in profile, light rippling across its back, full body in frame.
@@ -234,15 +230,11 @@ photo, except the wolverine.
 - A humpback whale breaching clear of the ocean surface, water streaming off its very long pectoral fin.
 - *Accuracy:* Megaptera novaeangliae. Extremely long white pectoral fins and a knobbly head. Not a blue or sperm whale.
 
-### Mammals (13)
+### Mammals (12)
 
 **Giraffe** `giraffe-hero.jpg`
 - An adult giraffe in profile on open savanna, neck raised, acacia trees behind, warm low light.
 - *Accuracy:* Full neck in frame. Keep the head well inside the top of the crop, this is the easiest one in the batch to decapitate.
-
-**Naked Mole Rat** `naked-mole-rat-hero.jpg`
-- A naked mole rat in a soil tunnel, wrinkled pink hairless skin, large protruding incisors, tiny eyes.
-- *Accuracy:* Hairless and pink with buck teeth outside the lips. Not a mole, and not a shaved rodent that still shows fur.
 
 **Slow Loris** `slow-loris-hero.jpg`
 - A slow loris gripping a branch at night in rainforest, huge round eyes reflecting the light, hands wrapped around the wood.
@@ -299,12 +291,6 @@ photo, except the wolverine.
 **Crow** `crow-hero.jpg`
 - A crow perched on a bare branch against an overcast sky, glossy black plumage and heavy bill.
 - *Accuracy:* All black including bill and legs. Not a magpie, not a jackdaw with a pale eye, not a raven with a wedge-shaped tail.
-
-### Other (1)
-
-**Tardigrade** `tardigrade-hero.jpg`
-- A tardigrade under high magnification, plump segmented body and eight clawed legs.
-- *Accuracy:* Eight legs ending in claws, barrel body, blunt head. A stylised electron-microscope look is fine here, since nobody sees one unaided.
 
 ### Installing one
 

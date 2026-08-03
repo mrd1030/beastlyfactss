@@ -126,12 +126,11 @@ export const birdBeastfiles = [
       'Some have been recorded dropping nuts onto pedestrian crossings and waiting for the lights.',
       'New Caledonian crows make hooked tools from twigs, shaping them rather than just picking them up.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/crow-hero.jpg',
     heroAlt:
       'A crow perched on a bare branch against an overcast sky, its glossy black plumage and heavy bill visible',
     secondaryImage: '/assets/facts/crow.jpg',
     secondaryAlt: 'A crow in profile showing its glossy black feathers and thick bill',
     relatedFiles: ['crows-are-smarter-than-you-think-and-they-probably-already-know-it'],
-    draft: true,
   },
 ];

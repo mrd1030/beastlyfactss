@@ -40,6 +40,78 @@
     "heroAlt": "An aye-aye clinging to a branch at night, its huge orange eyes reflecting the light"
   },
   {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "tagline": "The famous oversized heart is a myth. What is actually going on is stranger.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/giraffe-hero.jpg",
+    "heroAlt": "An adult giraffe standing in profile on open savanna with its neck raised and acacia trees behind"
+  },
+  {
+    "id": "slow-loris",
+    "name": "Slow Loris",
+    "tagline": "The only venomous primate, and the reason is a gland in its elbow.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/slow-loris-hero.jpg",
+    "heroAlt": "A slow loris gripping a branch at night in rainforest, its large round eyes reflecting the light"
+  },
+  {
+    "id": "african-elephant",
+    "name": "African Elephant",
+    "tagline": "Most of an elephant herd’s conversation happens below what you can hear.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/african-elephant-hero.jpg",
+    "heroAlt": "An African elephant standing on open savanna at golden hour with its ears spread and trunk lowered"
+  },
+  {
+    "id": "sloth",
+    "name": "Three-Toed Sloth",
+    "tagline": "It climbs all the way down once a week to defecate, and it often dies doing it.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/sloth-hero.jpg",
+    "heroAlt": "A three-toed sloth hanging beneath a branch in rainforest canopy with its long curved claws hooked over the wood"
+  },
+  {
+    "id": "gray-wolf",
+    "name": "Gray Wolf",
+    "tagline": "There is no alpha wolf. The researcher who popularised the idea spent years retracting it.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/gray-wolf-hero.jpg",
+    "heroAlt": "A grey wolf standing in snow at the edge of conifer forest, looking directly toward the camera"
+  },
+  {
+    "id": "lion",
+    "name": "Lion",
+    "tagline": "The only cat that lives in a group, and the females run it.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/lion-hero.jpg",
+    "heroAlt": "A male lion lying on open savanna grass at golden hour, mane full, looking into the distance"
+  },
+  {
+    "id": "tiger",
+    "name": "Tiger",
+    "tagline": "Every wild tiger left would fit inside one small town.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/tiger-hero.jpg",
+    "heroAlt": "A wild tiger walking through tall grass at the edge of forest, striped flank catching the light"
+  },
+  {
+    "id": "rhinoceros",
+    "name": "Rhinoceros",
+    "tagline": "The horn is not ivory and not bone. It is the same protein as your fingernails.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/rhinoceros-hero.jpg",
+    "heroAlt": "A rhinoceros standing in open grassland in profile, its horn and heavy folded skin clearly visible"
+  },
+  {
+    "id": "wombat",
+    "name": "Wombat",
+    "tagline": "The only animal that produces cube-shaped droppings, and it does it on purpose.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/wombat-hero.jpg",
+    "heroAlt": "A wombat standing at the entrance to its burrow on grassy ground, stocky body and broad nose visible"
+  },
+  {
     "id": "thorny-devil",
     "name": "Thorny Devil",
     "tagline": "A desert lizard that drinks through its skin.",
@@ -112,6 +184,14 @@
     "heroAlt": "A Victoria crowned pigeon walking on a rainforest floor showing its blue-grey plumage and lacy crest"
   },
   {
+    "id": "crow",
+    "name": "Crow",
+    "tagline": "It remembers your face, holds a grudge, and tells other crows about you.",
+    "group": "Birds",
+    "heroImage": "/assets/beastlypedia/crow-hero.jpg",
+    "heroAlt": "A crow perched on a bare branch against an overcast sky, its glossy black plumage and heavy bill visible"
+  },
+  {
     "id": "manta-ray",
     "name": "Giant Manta Ray",
     "tagline": "Seven metres across, filter-feeding, and one of the few fish to pass a mirror test.",
@@ -126,5 +206,77 @@
     "group": "Marine Life",
     "heroImage": "/assets/beastlypedia/leafy-sea-dragon-hero.jpg",
     "heroAlt": "A leafy sea dragon among kelp with leaf-shaped appendages along its gold and green body"
+  },
+  {
+    "id": "dolphin",
+    "name": "Bottlenose Dolphin",
+    "tagline": "Every dolphin invents a name for itself and answers to it for life.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/dolphin-hero.jpg",
+    "heroAlt": "A bottlenose dolphin breaking the surface of open blue water with its beak and melon clear of the waterline"
+  },
+  {
+    "id": "clownfish",
+    "name": "Clownfish",
+    "tagline": "Every clownfish is born male, and the largest one becomes female.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/clownfish-hero.jpg",
+    "heroAlt": "A clownfish nestled among the tentacles of a sea anemone on a tropical reef"
+  },
+  {
+    "id": "immortal-jellyfish",
+    "name": "Immortal Jellyfish",
+    "tagline": "It can run its own life cycle backwards, which is not the same as not dying.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/immortal-jellyfish-hero.jpg",
+    "heroAlt": "A tiny transparent immortal jellyfish photographed against dark water, its red stomach visible through the bell"
+  },
+  {
+    "id": "seahorse",
+    "name": "Seahorse",
+    "tagline": "The male gets pregnant, and it is a real pregnancy, not just carrying eggs.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/seahorse-hero.jpg",
+    "heroAlt": "A seahorse gripping a strand of seagrass with its tail in clear shallow water"
+  },
+  {
+    "id": "shark",
+    "name": "Sharks",
+    "tagline": "Older than trees, older than Saturn’s rings, and barely a threat to anyone.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/shark-hero.jpg",
+    "heroAlt": "A shark cruising through open blue water seen from the side, with light rippling across its back"
+  },
+  {
+    "id": "octopus",
+    "name": "Octopus",
+    "tagline": "Three hearts, blue blood, and most of its neurons outside its head.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/octopus-hero.jpg",
+    "heroAlt": "An octopus on a rocky seabed with its arms curled beneath it and skin textured to match the rock"
+  },
+  {
+    "id": "mantis-shrimp",
+    "name": "Mantis Shrimp",
+    "tagline": "The famous eyes are real. The famous conclusion about them is wrong.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/mantis-shrimp-hero.jpg",
+    "heroAlt": "A peacock mantis shrimp at the mouth of its burrow on a reef, its green and orange shell and stalked eyes visible"
+  },
+  {
+    "id": "cuttlefish",
+    "name": "Cuttlefish",
+    "tagline": "It puts on the best colour display in the ocean and probably cannot see colour.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/cuttlefish-hero.jpg",
+    "heroAlt": "A cuttlefish hovering above sand with its arms held forward and a rippling pattern across its skin"
+  },
+  {
+    "id": "humpback-whale",
+    "name": "Humpback Whale",
+    "tagline": "Every male in an ocean sings the same song, and the song changes together.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/humpback-whale-hero.jpg",
+    "heroAlt": "A humpback whale breaching clear of the ocean surface with water streaming from its long pectoral fin"
   }
 ]

@@ -8,24 +8,23 @@ close that, and they cost very different amounts.
 
 | | Route A: files for articles you have | Route B: articles for files you have |
 |---|---|---|
-| Count | 26 animals | 13 animals |
+| Count | 23 animals | 13 animals |
 | New writing | ~15 lines of Beastfile prose each | a researched 7 minute article each |
 | New images | 1 hero each | 1 hero each |
 | Arrives with | article, facts and a secondary photo already in place | nothing, the Beastfile already exists |
 
-Route A also fixes the shallower problem: 25 of the 26 land with linked Fun
-Facts and a secondary image on day one, because the facts and photos already
-exist. Only the wolverine has no facts.
+Route A also fixes the shallower problem: all 23 land with linked Fun Facts
+and a secondary image on day one, because the facts and photos already exist.
 
 Route B is still worth doing eventually. It is the only thing that fills the
 thirteen existing Beastfiles.
 
 ---
 
-## Route A: 26 animals with an article but no Beastfile
+## Route A: 23 animals with an article but no Beastfile
 
-Every one already has a published article, and all but the wolverine already
-have facts with photos. Creating the Beastfile links both directions at once and
+Every one already has a published article and facts with photos already in
+place. Creating the Beastfile links both directions at once and
 needs only a hero image.
 
 The secondary image can reuse a fact photo, which these all have. **The hero
@@ -37,18 +36,16 @@ up on the card, the profile and the fact feed.
 | Animal | Group | Article slug | Facts |
 |---|---|---|---|
 | Giraffe | Mammals | `giraffe-heart-myth-what-the-research-shows` | 6 |
-| Naked Mole Rat | Mammals | `naked-mole-rat-breaks-the-rules-for-mammals` | 5 |
 | Slow Loris | Mammals | `slow-loris-the-only-venomous-primate` | 4 |
 | Elephant | Mammals | `elephants-talk-below-human-hearing` | 4 |
 | Sloth | Mammals | `why-a-sloth-climbs-down-to-defecate` | 3 |
-| Tardigrade | Other | `tardigrades-the-toughest-creatures-on-earth-and-in-space` | 3 |
 | Wolf | Mammals | `alpha-wolf-myth-what-the-research-actually-says` | 2 |
 | Lion | Mammals | `lions-are-the-only-social-cat` | 2 |
 | Tiger | Mammals | `every-wild-tiger-would-fit-in-a-small-town` | 2 |
 | Rhino | Mammals | `a-rhino-horn-is-made-of-keratin` | 2 |
 | Penguin | Birds | `penguins-do-not-mate-for-life` | 2 |
 | Wombat | Mammals | `why-wombats-produce-cube-shaped-droppings` | 1 |
-| Wolverine | Mammals | `wolverine-facts-the-toughest-animal-pound-for-pound` | **0** |
+| Wolverine | Mammals | `wolverine-facts-the-toughest-animal-pound-for-pound` | 2 |
 
 ### From Aquatic Life
 
@@ -58,7 +55,6 @@ up on the card, the profile and the fact feed.
 | Clownfish | Marine Life | `what-finding-nemo-got-wrong-about-clownfish` | 7 |
 | Immortal Jellyfish | Marine Life | `immortal-jellyfish-turritopsis-dohrnii-explained` | 6 |
 | Seahorse | Marine Life | `seahorse-male-pregnancy-how-it-works` | 5 |
-| Hagfish | Marine Life | `hagfish-slime-how-it-works` | 2 |
 | Shark | Marine Life | `how-dangerous-are-sharks-really` plus `sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind` | 1 |
 
 ### From Fun Facts
@@ -79,9 +75,8 @@ up on the card, the profile and the fact feed.
   arrives with a full row rather than a lone card.
 - **Immortal Jellyfish needs `factAnimal: 'Jellyfish'`**, which is how the facts
   are filed. Every other name matches as written.
-- **Wolverine has no facts.** Its Beastfile would fall back to authored
-  `funFacts`, plain text with nothing to open, like the Gaboon viper. Either
-  write it three facts with photos first, or put it last.
+- **Wolverine had no facts**, so two were written for it (274 and 275). Its
+  photos are still outstanding, listed with the hero prompts.
 - Dolphin and humpback whale go under **Marine Life, not Mammals**, even though
   they are mammals. The group maps to the `Ocean` fact category, which is where
   their facts live.
