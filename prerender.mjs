@@ -161,6 +161,27 @@ const BEASTLYPEDIA = JSON.parse(
   await readFile('src/lib/generated/beastlypedia-index.json', 'utf8')
 );
 
+// Every fact gets its own URL, because every fact card and modal offers a Share
+// button that produces one. Without a file at that path Cloudflare had nothing
+// to serve, fell through to 404.html, and the SPA re-routed from there: a real
+// 404 status on a link people are actively sharing, and a visible flash of the
+// 404 page before the fact appeared.
+//
+// A wildcard 200 rewrite in _redirects is NOT the fix. See the long note at the
+// bottom of public/_redirects: Pages applies those rules before checking for a
+// matching static asset, so an earlier "/guides/* / 200" style rule silently
+// served the homepage HTML in place of dozens of already-prerendered pages and
+// broke canonical and og tags sitewide.
+//
+// These pages are noindex,follow already (Facts.jsx sets that whenever a fact
+// is deep-linked), so prerendering them adds no thin duplicate content and they
+// stay out of the sitemap. What it does add is a real 200 and, because social
+// crawlers do not run JS, the per-fact og:image that Facts.jsx has always
+// computed but never got to emit into a static file.
+const { facts } = await import('./src/lib/data/facts.js');
+const { slugify } = await import('./src/lib/utils/slugify.js');
+const FACT_SLUGS = [...new Set(facts.map((f) => slugify(f.title)).filter(Boolean))];
+
 const STATIC_ROUTES = [
   '/',
   '/facts',
@@ -191,6 +212,7 @@ const STATIC_ROUTES = [
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...BEASTLYPEDIA.groupSlugs.map(s => `/beastlypedia/group/${s}`),
   ...BEASTLYPEDIA.ids.map(id => `/beastlypedia/${id}`),
+  ...FACT_SLUGS.map(s => `/facts/${s}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
 
