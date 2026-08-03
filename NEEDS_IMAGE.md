@@ -2,14 +2,20 @@
 
 Notes on animal facts that were drafted but did NOT make it into `src/lib/data/facts.js` because a verified photo couldn't be secured. These are FYI only, not added to the live data.
 
-Nothing pending right now. The 2026-07-27 batch (Toco Toucan, Beagle, Red Fox, Giant Manta Ray, Frilled-necked Lizard, Slow Loris) was completed on 2026-07-27 using photos the site owner sourced directly and added to `facts.js`/`_worker.js`/`factImages.js`.
+Nothing pending right now.
 
-## 2026-08-03 run: 5 facts drafted, awaiting images
+## Completed
 
-Ready for the site owner to generate photos and add to facts.js.
+**2026-08-03: Kiwi, Greyhound, Orangutan, Sawfish, Mudskipper.** Drafted and
+published the same day as ids 269 to 273, using photos the site owner sourced
+directly. Each fact got its own photo in `public/assets/facts/`, with
+`FACT_IMAGES` entries added to both `factImages.js` and `public/_worker.js`.
 
-1. **Kiwi** (Birds) - The Impossible Egg. A kiwi egg can weigh up to a fifth of the mother's body weight, the largest egg to body ratio of any bird alive, dwarfing even the ostrich, whose egg is only about 2% of her weight. Kiwis are also the only birds with nostrils at the very tip of their beak, letting them sniff out worms and grubs hidden underground. Visual hook: a kiwi's long beak with nostrils visible right at the tip, standing beside an oversized egg nearly its own size.
-2. **Greyhound** (Dogs & Cats) - The Sprinting Specialist. Greyhounds can reach speeds up to 45 miles per hour in short sprints, making them the fastest dog breed on the planet. Unlike bloodhounds and other scent hounds, they're sighthounds built to chase fast-moving targets by eyesight rather than tracking a trail nose down. Visual hook: a greyhound at full stretch mid-sprint, body low and streamlined, all four legs off the ground.
-3. **Orangutan** (Mammals) - The Biggest Tree Dweller. An orangutan's arm span can stretch up to 7 feet across, wider than the animal is tall, and they spend more than 95% of their time up in the canopy, making them the largest tree-dwelling animals on Earth. Shoulder and hip joints that rotate more freely than a human's let them swing and climb with total confidence, high above the forest floor. Visual hook: an orangutan reaching between branches with arms fully extended, canopy stretching out below.
-4. **Sawfish** (Ocean) - The Living Metal Detector. Despite their shark-like shape, sawfish are actually rays. Their long, tooth-studded snout, called a rostrum, is packed with thousands of electroreceptor pores that pick up the faint electrical fields given off by other animals, letting a sawfish find prey buried in sand or mud without ever seeing it. Visual hook: a sawfish's long toothed rostrum in close-up, swiping through sandy shallows.
-5. **Mudskipper** (Weird & Wonderful) - The Fish That Walks. Mudskippers can leave the water entirely and survive out in the open air for hours, breathing through their moist skin and the lining of their mouth and throat, a trick called cutaneous respiration that can supply up to 60% of the oxygen they need on land. They prop themselves up on their front fins like little arms to hop across mudflats and even climb mangrove roots, as long as their skin stays wet. Visual hook: a mudskipper propped up on its fins on wet mud, bulging eyes and mangrove roots in the background.
+**2026-07-27: Toco Toucan, Beagle, Red Fox, Giant Manta Ray, Frilled-necked
+Lizard, Slow Loris.** Completed the same day, same route.
+
+## Related
+
+Beastlypedia has its own separate gap list in `BEASTLYPEDIA_FACT_GAPS.md`, for
+facts that are blocked on photos *and* tied to a specific Beastfile page. Three
+Gaboon viper facts are outstanding there.
