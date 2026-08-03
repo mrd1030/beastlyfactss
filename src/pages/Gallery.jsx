@@ -1,8 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
+import { Heart, Share2, Check } from 'lucide-react';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { slugify } from '@/lib/utils/slugify';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -13,6 +16,30 @@ export default function Gallery() {
   const [page, setPage] = useState(1);
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
+  const { toggleFavorite, isFavorite } = useFavoritesCtx();
+  const [copiedId, setCopiedId] = useState(null);
+
+  // Same handler FactCard uses, including the URL it builds. Sharing an image
+  // shares its fact page, and that page's og:image is this exact photo (see
+  // Facts.jsx, which resolves og:image through absoluteImageFor), so the
+  // preview shows the picture rather than the generic hero.
+  const handleShare = (e, fact) => {
+    e.stopPropagation();
+    const factsPageUrl = `${window.location.origin}/facts/${slugify(fact.title)}/`;
+    const factId = fact.id || fact._id;
+
+    if (navigator.share) {
+      navigator.share({
+        title: fact.title,
+        text: `${fact.emoji || '🐾'} ${fact.fact}`,
+        url: factsPageUrl,
+      }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(`${fact.emoji || '🐾'} ${fact.fact} ${factsPageUrl}`);
+      setCopiedId(factId);
+      setTimeout(() => setCopiedId(null), 2000);
+    }
+  };
 
   const allCategories = useMemo(() => ['All', ...categories.map(c => c.name)], []);
 
@@ -98,35 +125,77 @@ export default function Gallery() {
         </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
-          {paginated.map(({ fact, imagePath }, i) => (
-            <motion.button
-              key={fact.id || fact._id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: (i % PAGE_SIZE) * 0.02, duration: 0.3 }}
-              onClick={() => setSelectedFact(fact)}
-              className="group relative aspect-square rounded-xl overflow-hidden bg-muted border border-border/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
-              aria-label={`${fact.animal}: ${fact.title}`}
-            >
-              <img
-                src={imagePath}
-                alt={`${fact.animal} - ${fact.title}`}
-                loading="lazy"
-                className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                <div className="text-left">
-                  <p className="text-[10px] font-display font-bold uppercase tracking-wider text-white/70">
-                    {fact.category}
-                  </p>
-                  <p className="text-xs font-display font-bold text-white leading-tight mt-0.5">
-                    {fact.title}
-                  </p>
+          {/* A div, not a button, because the save and share controls are
+              themselves buttons and nesting interactive elements is invalid and
+              breaks keyboard behaviour. The tile itself is a button filling the
+              square, with the actions as siblings stacked above it. */}
+          {paginated.map(({ fact, imagePath }, i) => {
+            const factId = fact.id || fact._id;
+            const fav = isFavorite(factId);
+            return (
+              <motion.div
+                key={factId}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: (i % PAGE_SIZE) * 0.02, duration: 0.3 }}
+                className="group relative aspect-square rounded-xl overflow-hidden bg-muted border border-border/60"
+              >
+                <button
+                  type="button"
+                  onClick={() => setSelectedFact(fact)}
+                  className="absolute inset-0 w-full h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-xl"
+                  aria-label={`${fact.animal}: ${fact.title}`}
+                >
+                  <img
+                    src={imagePath}
+                    alt={`${fact.animal} - ${fact.title}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-300 ease-out group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                    <div className="text-left">
+                      <p className="text-[10px] font-display font-bold uppercase tracking-wider text-white/70">
+                        {fact.category}
+                      </p>
+                      <p className="text-xs font-display font-bold text-white leading-tight mt-0.5">
+                        {fact.title}
+                      </p>
+                    </div>
+                  </div>
+                </button>
+
+                {/* group-focus-within keeps these reachable by keyboard, where
+                    there is no hover to reveal them. A saved fact stays visible
+                    so the state is readable without hovering every tile. */}
+                <div
+                  className={`absolute top-2 right-2 z-10 flex gap-1.5 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100 ${
+                    fav ? 'opacity-100' : 'opacity-0'
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={(e) => { e.stopPropagation(); toggleFavorite(factId); }}
+                    className="p-1.5 rounded-full bg-black/55 backdrop-blur-sm text-white hover:bg-black/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 transition-colors"
+                    aria-label={fav ? `Remove ${fact.title} from your Pack` : `Save ${fact.title} to your Pack`}
+                    aria-pressed={fav}
+                  >
+                    <Heart className={`w-3.5 h-3.5 ${fav ? 'fill-secondary text-secondary' : ''}`} />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={(e) => handleShare(e, fact)}
+                    className="p-1.5 rounded-full bg-black/55 backdrop-blur-sm text-white hover:bg-black/75 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/60 transition-colors"
+                    aria-label={`Share ${fact.title}`}
+                  >
+                    {copiedId === factId
+                      ? <Check className="w-3.5 h-3.5 text-secondary" />
+                      : <Share2 className="w-3.5 h-3.5" />}
+                  </button>
                 </div>
-              </div>
-            </motion.button>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
 
         {filtered.length === 0 && (

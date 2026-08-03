@@ -75,6 +75,23 @@ const payload = {
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`);
 
+// Reverse of factsFor: which Beastfile, if any, covers a given fact's animal.
+// FactModal uses it to offer "Full animal profile" on a wild-animal fact, the
+// way it already does for pet species via the Encyclopedia.
+//
+// Its own file, and only three fields, because FactModal is imported by Home,
+// Facts, Gallery and Pack. The full index is 56KB and the data modules 94KB;
+// neither belongs in four route chunks to resolve one optional link.
+//
+// Keyed on the same normalised animal name used for matching above, so
+// "Aye-Aye" and "Aye-aye" resolve identically here too.
+const animalMapPath = path.join(process.cwd(), 'src/lib/generated/beastlypedia-animal-map.json');
+const animalMap = {};
+for (const b of beastfiles) {
+  animalMap[normalise(b.factAnimal || b.name)] = { id: b.id, name: b.name };
+}
+fs.writeFileSync(animalMapPath, `${JSON.stringify(animalMap, null, 2)}\n`);
+
 // Separate, deliberately tiny file for the homepage teaser. The beastlypedia
 // data modules come to about 40KB, nearly all of it overview/origin/
 // conservation prose the teaser never renders, and the homepage is the page

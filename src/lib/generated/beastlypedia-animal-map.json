@@ -1,0 +1,158 @@
+{
+  "pangolin": {
+    "id": "pangolin",
+    "name": "Pangolin"
+  },
+  "fennec fox": {
+    "id": "fennec-fox",
+    "name": "Fennec Fox"
+  },
+  "capybara": {
+    "id": "capybara",
+    "name": "Capybara"
+  },
+  "narwhal": {
+    "id": "narwhal",
+    "name": "Narwhal"
+  },
+  "aye-aye": {
+    "id": "aye-aye",
+    "name": "Aye-Aye"
+  },
+  "giraffe": {
+    "id": "giraffe",
+    "name": "Giraffe"
+  },
+  "slow loris": {
+    "id": "slow-loris",
+    "name": "Slow Loris"
+  },
+  "elephant": {
+    "id": "african-elephant",
+    "name": "African Elephant"
+  },
+  "sloth": {
+    "id": "sloth",
+    "name": "Three-Toed Sloth"
+  },
+  "wolf": {
+    "id": "gray-wolf",
+    "name": "Gray Wolf"
+  },
+  "lion": {
+    "id": "lion",
+    "name": "Lion"
+  },
+  "tiger": {
+    "id": "tiger",
+    "name": "Tiger"
+  },
+  "rhino": {
+    "id": "rhinoceros",
+    "name": "Rhinoceros"
+  },
+  "wombat": {
+    "id": "wombat",
+    "name": "Wombat"
+  },
+  "honey badger": {
+    "id": "honey-badger",
+    "name": "Honey Badger"
+  },
+  "platypus": {
+    "id": "platypus",
+    "name": "Platypus"
+  },
+  "wolverine": {
+    "id": "wolverine",
+    "name": "Wolverine"
+  },
+  "thorny devil": {
+    "id": "thorny-devil",
+    "name": "Thorny Devil"
+  },
+  "chameleon": {
+    "id": "panther-chameleon",
+    "name": "Panther Chameleon"
+  },
+  "gaboon viper": {
+    "id": "gaboon-viper",
+    "name": "Gaboon Viper"
+  },
+  "green anaconda": {
+    "id": "green-anaconda",
+    "name": "Green Anaconda"
+  },
+  "glass frog": {
+    "id": "glass-frog",
+    "name": "Glass Frog"
+  },
+  "blue poison dart frog": {
+    "id": "blue-poison-dart-frog",
+    "name": "Blue Poison Dart Frog"
+  },
+  "axolotl": {
+    "id": "axolotl",
+    "name": "Axolotl"
+  },
+  "shoebill": {
+    "id": "shoebill",
+    "name": "Shoebill"
+  },
+  "victoria crowned pigeon": {
+    "id": "victoria-crowned-pigeon",
+    "name": "Victoria Crowned Pigeon"
+  },
+  "penguin": {
+    "id": "emperor-penguin",
+    "name": "Emperor Penguin"
+  },
+  "crow": {
+    "id": "crow",
+    "name": "Crow"
+  },
+  "giant manta ray": {
+    "id": "manta-ray",
+    "name": "Giant Manta Ray"
+  },
+  "leafy sea dragon": {
+    "id": "leafy-sea-dragon",
+    "name": "Leafy Sea Dragon"
+  },
+  "dolphin": {
+    "id": "dolphin",
+    "name": "Bottlenose Dolphin"
+  },
+  "clownfish": {
+    "id": "clownfish",
+    "name": "Clownfish"
+  },
+  "jellyfish": {
+    "id": "immortal-jellyfish",
+    "name": "Immortal Jellyfish"
+  },
+  "seahorse": {
+    "id": "seahorse",
+    "name": "Seahorse"
+  },
+  "shark": {
+    "id": "shark",
+    "name": "Sharks"
+  },
+  "octopus": {
+    "id": "octopus",
+    "name": "Octopus"
+  },
+  "mantis shrimp": {
+    "id": "mantis-shrimp",
+    "name": "Mantis Shrimp"
+  },
+  "cuttlefish": {
+    "id": "cuttlefish",
+    "name": "Cuttlefish"
+  },
+  "humpback whale": {
+    "id": "humpback-whale",
+    "name": "Humpback Whale"
+  }
+}

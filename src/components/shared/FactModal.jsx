@@ -6,6 +6,12 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
+// 2.8KB of {normalised animal name -> {id, name}}, built by
+// scripts/generate-beastlypedia-index.js. Not the beastfile data itself, which
+// is 94KB, and not the full index at 56KB: this component is imported by Home,
+// Facts, Gallery and Pack, and none of them should carry that to render one
+// optional link.
+import beastlypediaAnimals from '@/lib/generated/beastlypedia-animal-map.json';
 
 // onOpenImage is optional and handled by the parent page (not rendered here) -
 // same reason as FactCard: this modal animates scale/y via framer-motion, so a
@@ -19,9 +25,25 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
 
   // Exact match only (case-insensitive) - a "contains" match risks linking a fact to the
   // wrong animal (e.g. Komodo Dragon vs Bearded Dragon), so most facts just show no link at all.
-  const encyclopediaMatch = fact?.animal
-    ? encyclopediaAnimals.find(a => a.name.toLowerCase() === fact.animal.toLowerCase())
+  //
+  // Two sources, checked in that order. The Encyclopedia covers species kept as
+  // pets; Beastlypedia covers wild ones. Before the second lookup existed, an
+  // axolotl fact offered a profile link and an elephant or sloth fact did not,
+  // purely because the elephant is not a pet.
+  //
+  // Encyclopedia wins a tie so husbandry stays the destination for anything
+  // someone might actually keep. Only the axolotl is currently in both.
+  const animalKey = fact?.animal ? fact.animal.trim().toLowerCase().replace(/\s+/g, ' ') : '';
+  const encyclopediaMatch = animalKey
+    ? encyclopediaAnimals.find(a => a.name.toLowerCase() === animalKey)
     : null;
+  const beastfileMatch = !encyclopediaMatch && animalKey ? beastlypediaAnimals[animalKey] : null;
+
+  const profileLink = encyclopediaMatch
+    ? { to: `/encyclopedia/animal/${encyclopediaMatch.id}/`, name: encyclopediaMatch.name }
+    : beastfileMatch
+      ? { to: `/beastlypedia/${beastfileMatch.id}/`, name: beastfileMatch.name }
+      : null;
 
   useEffect(() => {
     if (!fact) return;
@@ -150,12 +172,12 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
               {fact.fact}
             </p>
 
-            {encyclopediaMatch && (
+            {profileLink && (
               <Link
-                to={`/encyclopedia/animal/${encyclopediaMatch.id}/`}
+                to={profileLink.to}
                 className="inline-block text-xs text-muted-foreground hover:text-foreground underline decoration-dotted underline-offset-2 mt-3 font-body"
               >
-                {`Curious about ${encyclopediaMatch.name}? Full animal profile →`}
+                {`Curious about ${profileLink.name}? Full animal profile →`}
               </Link>
             )}
 
