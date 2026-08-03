@@ -138,16 +138,19 @@ export default function HeroSection({ onOpenFact }) {
                 Start with Verified Facts
                 <ArrowRight className="w-4 h-4" />
               </MotionLink>
-              {/* dark:text-secondary because muted-foreground on the dark card
-                  is too low-contrast to read as a second call to action next to
-                  the solid orange one. Light mode already has the contrast. */}
+              {/* Only the destination word goes orange, and only in dark mode,
+                  where muted-foreground on the dark card is too quiet to read
+                  as a second call to action. Light mode already has the
+                  contrast. No flex on this one any more: with the emoji gone it
+                  is plain text, and an anonymous flex item would swallow the
+                  space before the span. */}
               <MotionLink
                 to="/encyclopedia/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-card/80 border border-border text-muted-foreground dark:text-secondary font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center"
+                className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl"
               >
-                Browse the Encyclopedia
+                Browse the <span className="dark:text-secondary">Encyclopedia</span>
               </MotionLink>
             </div>
 
