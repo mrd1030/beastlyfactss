@@ -108,10 +108,15 @@ for (const a of articles.filter(x => x.dir === 'guides')) {
     }
   }
 }
+// A species is covered if ANY relatedArticles entry already lists its guides - the
+// key is the structured guide `id` (see GuideDetail.jsx), which often differs from
+// the article slug prefix ('oscar' vs 'oscar-fish', 'tegu' vs 'argentine-tegu').
+// Matching on key alone reports those as missing when they are already wired up.
+const coveredSlugs = new Set(Object.values(relatedArticles).flat());
 const missingFromRelatedArticles = [...bySpecies.entries()]
   .filter(([, suffixes]) => suffixes.size === 4)
   .map(([species]) => species)
-  .filter(species => !(species in relatedArticles));
+  .filter(species => !SUFFIXES.some(suffix => coveredSlugs.has(species + suffix)));
 
 // Stale relatedArticles.js entries: listed slug has no corresponding file.
 const staleRelatedArticles = [];
