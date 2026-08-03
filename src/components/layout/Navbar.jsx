@@ -71,6 +71,7 @@ function ThreadsLogo({ className }) {
 const primaryLinks = [
   { to: '/', label: 'Home' },
   { to: '/encyclopedia/', label: 'Encyclopedia' },
+  { to: '/beastlypedia/', label: 'Beastlypedia' },
   { to: '/guides/', label: 'Guides' },
   { to: '/facts/', label: 'Facts' },
   { to: '/blog/', label: 'Critter Digest' },
@@ -190,7 +191,12 @@ export default function Navbar() {
             </div>
           )}
 
-          <div className="hidden md:flex items-center gap-0.5">
+          {/* lg, not md. Adding Beastlypedia made this a seven-link row, which
+              no longer fits beside the search, donate, streak, theme and menu
+              controls between 768px and 1023px - measured overflowing the
+              viewport at 885px. Nothing becomes unreachable: the menu button is
+              present at every width and its drawer lists every section. */}
+          <div className="hidden lg:flex items-center gap-0.5">
             {primaryLinks.map(link => {
               const isActive = link.to === '/blog/' ? isDigest : link.to === '/guides/' ? isGuidesSection : location.pathname === link.to;
               return (
@@ -352,6 +358,7 @@ export default function Navbar() {
               <div className="grid grid-cols-2 gap-1.5 pt-2 mt-2 border-t border-border/60">
                 {[
                   { to: '/encyclopedia/', emoji: '📚', label: 'Encyclopedia' },
+                  { to: '/beastlypedia/', emoji: '🐾', label: 'Beastlypedia' },
                   { to: '/gear/', emoji: '🛒', label: 'Gear' },
                   { to: '/pack/', emoji: '🐾', label: 'My Pack' },
                   { to: '/gallery/', emoji: '📸', label: 'Gallery' },

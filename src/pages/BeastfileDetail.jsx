@@ -1,0 +1,234 @@
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { useParams, Link } from 'react-router-dom';
+import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft } from 'lucide-react';
+import { getBeastfile } from '@/lib/data/beastlypedia';
+import { truncateDescription } from '@/lib/utils/truncate';
+import LocalImage from '@/components/shared/LocalImage';
+
+const SITE = 'https://beastlyfacts.com';
+
+function Section({ icon: Icon, title, children }) {
+  return (
+    <section className="mb-6">
+      <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+        {Icon && <Icon className="w-4 h-4 text-secondary" />}
+        {title}
+      </h2>
+      {children}
+    </section>
+  );
+}
+
+export default function BeastfileDetail() {
+  const { slug } = useParams();
+  const beastfile = getBeastfile(slug);
+
+  if (!beastfile) {
+    return (
+      <div className="min-h-screen flex items-center justify-center px-4">
+        <Helmet>
+          <title>Beastfile Not Found | Beastly Facts</title>
+          <meta name="robots" content="noindex" />
+        </Helmet>
+        <div className="text-center">
+          <span className="text-4xl block mb-3">🔍</span>
+          <h1 className="font-display font-bold text-xl text-foreground mb-2">Beastfile not found</h1>
+          <Link
+            to="/beastlypedia/"
+            className="text-secondary text-sm font-display font-semibold hover:underline"
+          >
+            Back to Beastlypedia
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  const {
+    id, name, scientific, alsoKnownAs, tagline, habitat, group,
+    overview, origin, notableTraits, conservation, funFacts,
+    heroImage, heroAlt, secondaryImage, secondaryAlt, encyclopediaId,
+  } = beastfile;
+
+  const canonical = `${SITE}/beastlypedia/${id}/`;
+  // The scientific name is kept out of the title on purpose. With it, longer
+  // names blow past 70 characters once " | Beastlypedia | BeastlyFacts" is
+  // appended - "Blue Poison Dart Frog (Dendrobates tinctorius azureus)" alone
+  // is 54. It appears in the H1 block and the description instead.
+  const title = `${name} | Beastlypedia | BeastlyFacts`;
+  const description = truncateDescription(`${tagline} ${overview}`);
+  // Falls back to the secondary image, then the site hero. A null heroImage
+  // would otherwise emit og:image="https://beastlyfacts.com" and every share of
+  // an unfinished Beastfile would unfurl blank.
+  const shareImage = `${SITE}${heroImage || secondaryImage || '/assets/hero-1200.jpg'}`;
+
+  // schema.org has no Animal type. Thing is the honest choice; the binomial
+  // goes in alternateName, which is what a Taxon extension would map to anyway.
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Thing',
+    name,
+    alternateName: [scientific, ...(alsoKnownAs || [])],
+    description: tagline,
+    image: shareImage,
+    url: canonical,
+  };
+
+  return (
+    <div className="min-h-screen pb-16">
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={shareImage} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={shareImage} />
+        <script type="application/ld+json">{JSON.stringify(schema)}</script>
+      </Helmet>
+
+      <div className="w-full">
+        {heroImage ? (
+          <LocalImage
+            src={heroImage}
+            alt={heroAlt || name}
+            className="w-full h-56 sm:h-80 lg:h-[26rem] object-cover"
+          />
+        ) : (
+          <div className="w-full h-56 sm:h-80 lg:h-[26rem] bg-muted flex flex-col items-center justify-center gap-2 border-b-2 border-dashed border-border">
+            <span className="text-4xl">📷</span>
+            <span className="text-xs font-display font-bold uppercase tracking-wider text-muted-foreground">
+              Hero image pending
+            </span>
+          </div>
+        )}
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <Link
+          to="/beastlypedia/"
+          className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors mt-5"
+        >
+          <ArrowLeft className="w-3.5 h-3.5" /> Beastlypedia
+        </Link>
+
+        <header className="mt-3 mb-6">
+          <p className="text-[11px] font-display font-bold uppercase tracking-wider text-secondary mb-1">
+            {`Beastfile · ${group}`}
+          </p>
+          <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground leading-tight">
+            {name}
+          </h1>
+          <p className="text-sm text-muted-foreground font-body italic mt-1">{scientific}</p>
+          {alsoKnownAs?.length > 0 && (
+            <p className="text-xs text-muted-foreground font-body mt-1">
+              {`Also known as ${alsoKnownAs.join(', ')}`}
+            </p>
+          )}
+          <p className="text-base text-foreground font-body mt-3 leading-relaxed border-l-4 border-secondary pl-4 italic">
+            {tagline}
+          </p>
+        </header>
+
+        <Section title="Overview">
+          <p className="text-sm text-muted-foreground font-body leading-relaxed">{overview}</p>
+        </Section>
+
+        {/* Desktop puts the portrait beside the field sections; below lg it
+            stacks into the mobile order without any change of content. */}
+        <div className="lg:flex lg:gap-8 lg:items-start">
+          {secondaryImage && (
+            <div className="lg:w-2/5 lg:flex-shrink-0 mb-6 lg:mb-0">
+              {/* No variant on purpose. Secondary images are portrait by
+                  preference, and every generated tier is a `cover` crop to a
+                  landscape or square box, which would cut the subject. This
+                  serves the uncropped original; a portrait tier in
+                  generate-thumbnails.js is the proper fix and is worth doing
+                  before this section carries 15 entries. */}
+              <img
+                src={secondaryImage}
+                alt={secondaryAlt || name}
+                className="w-full rounded-2xl"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          )}
+
+          <div className="lg:flex-1">
+            <Section icon={Globe2} title="Origin">
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">{origin}</p>
+            </Section>
+
+            <Section icon={MapPin} title="Habitat">
+              <span className="inline-block text-xs font-display font-bold px-3 py-1.5 rounded-full bg-muted text-foreground">
+                {habitat}
+              </span>
+            </Section>
+
+            {notableTraits?.length > 0 && (
+              <Section icon={Sparkles} title="Notable Traits">
+                <ul className="space-y-1.5">
+                  {notableTraits.map((t, i) => (
+                    <li
+                      key={i}
+                      className="text-sm text-muted-foreground font-body leading-relaxed flex gap-2"
+                    >
+                      <span className="text-secondary flex-shrink-0">•</span>
+                      <span>{t}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Section>
+            )}
+
+            <Section icon={ShieldAlert} title="Conservation">
+              <p className="text-sm text-muted-foreground font-body leading-relaxed">
+                {conservation}
+              </p>
+            </Section>
+          </div>
+        </div>
+
+        {funFacts?.length > 0 && (
+          <div className="mt-4 bg-card border border-border rounded-2xl p-5">
+            <h2 className="font-display font-bold text-base text-foreground mb-3">🤯 Fun Facts</h2>
+            <ul className="space-y-2.5">
+              {funFacts.map((f, i) => (
+                <li
+                  key={i}
+                  className="text-sm text-muted-foreground font-body leading-relaxed flex gap-2.5"
+                >
+                  <span className="text-secondary font-display font-bold flex-shrink-0">
+                    {i + 1}
+                  </span>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {encyclopediaId && (
+          <div className="mt-6 bg-secondary/5 border border-secondary/20 rounded-2xl p-4">
+            <p className="text-sm text-foreground font-body">
+              {`Kept as a pet? `}
+              <Link
+                to={`/encyclopedia/animal/${encyclopediaId}/`}
+                className="text-secondary font-display font-semibold hover:underline"
+              >
+                {`See the ${name} care entry in the Encyclopedia`}
+              </Link>
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

@@ -39,6 +39,8 @@ const Categories = lazy(() => import('@/pages/Categories'));
 const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
+const Beastlypedia = lazy(() => import('@/pages/Beastlypedia'));
+const BeastfileDetail = lazy(() => import('@/pages/BeastfileDetail'));
 const Guides = lazy(() => import('@/pages/Guides'));
 const Gear = lazy(() => import('@/pages/Gear'));
 const FactFiles = lazy(() => import('@/pages/FactFiles'));
@@ -94,6 +96,13 @@ const AuthenticatedApp = () => {
           <Route path="/encyclopedia/category/:encCat" element={<Encyclopedia />} />
           <Route path="/encyclopedia/guides" element={<Navigate to="/guides/" replace />} />
           <Route path="/encyclopedia/guides/:guideFilter" element={<RedirectGuideFilter />} />
+          {/* Beastlypedia: wild animal profiles, a sibling of Encyclopedia
+              rather than a child of it. The group route comes before the slug
+              route so /beastlypedia/group/mammals/ is not read as a Beastfile
+              whose id happens to be "group". */}
+          <Route path="/beastlypedia" element={<Beastlypedia />} />
+          <Route path="/beastlypedia/group/:groupSlug" element={<Beastlypedia />} />
+          <Route path="/beastlypedia/:slug" element={<BeastfileDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/category/:catSlug" element={<Blog />} />
           <Route path="/blog/:slug" element={<Blog />} />

@@ -28,6 +28,15 @@ const CARD_VARIANT_DIRS = new Set([
   path.join(rootDir, 'public/assets/guides'),
   path.join(rootDir, 'public/assets/encyclopedia'),
   path.join(rootDir, 'public/assets/images'),
+  // Beastlypedia hero images are photo-led cards on the index, so they need the
+  // larger -card tier. Without this entry variant="card" silently falls back to
+  // serving the full-size original.
+  path.join(rootDir, 'public/assets/beastlypedia'),
+  // Deliberately NOT facts/. A Beastfile's secondary image may reuse a fact
+  // photo and is portrait by preference, but every tier here is a `cover` crop
+  // to a landscape or square box (320x240 and 240x240) - running a portrait
+  // photo through either would cut the animal's head off. Beastfile secondaries
+  // therefore use the uncropped original until a portrait tier exists.
 ]);
 
 const supported = new Set(['.jpg', '.jpeg', '.png']);
