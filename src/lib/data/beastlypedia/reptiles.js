@@ -53,13 +53,7 @@ export const reptileBeastfiles = [
       'The spiny lump behind its head is a decoy: it tucks the real head down and offers the false one instead.',
       'Despite the name and the armour, it is entirely harmless and has no venom.',
     ],
-    // null until a dedicated hero exists. Deliberately not pointed at
-    // /assets/facts/thorny-devil.jpg: that photo is the secondary image below,
-    // and the hero has to be its own picture or the same image appears twice on
-    // this page and again on the card. A null hero renders a visible "image
-    // pending" block, so an unfinished Beastfile cannot quietly ship looking
-    // finished. Target path once shot: /assets/beastlypedia/thorny-devil-hero.jpg
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/thorny-devil-hero.jpg',
     heroAlt:
       'A thorny devil lizard walking across red desert sand, its conical spines catching the low sunlight',
     secondaryImage: '/assets/facts/thorny-devil.jpg',
@@ -69,6 +63,10 @@ export const reptileBeastfiles = [
   },
   {
     id: 'panther-chameleon',
+    // The fact database has generic 'Chameleon' entries rather than
+    // species-level ones. They are biologically true of panther chameleons, so
+    // linking them is deliberate, but note the fact pages say Chameleon.
+    factAnimal: 'Chameleon',
     name: 'Panther Chameleon',
     scientific: 'Furcifer pardalis',
     tagline: 'Colour that signals mood, not background, in a different palette per valley.',
@@ -126,9 +124,7 @@ export const reptileBeastfiles = [
       'Its camouflage is so effective that the main danger to people is stepping on one that was in plain view.',
       'It moves in a straight line, caterpillar-style, rather than the side-to-side motion of most snakes.',
     ],
-    // Pending: the first hero was rejected in review; the snake was coiled into
-    // a perfect circle, which read as artificial.
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/gaboon-viper-hero.jpg',
     heroAlt:
       'A Gaboon viper resting in rainforest leaf litter, its geometric pattern blending into dead leaves',
     secondaryImage: '/assets/beastlypedia/gaboon-viper-secondary.jpg',

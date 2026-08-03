@@ -5,6 +5,10 @@ import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
 import { truncateDescription } from '@/lib/utils/truncate';
+// Built by scripts/generate-beastlypedia-index.js. Holds only the title, text
+// and slug of each matching fact, so the route does not pull in the 197KB
+// facts.js barrel to render a handful of strings.
+import beastlypediaIndex from '@/lib/generated/beastlypedia-index.json';
 
 const SITE = 'https://beastlyfacts.com';
 
@@ -50,6 +54,10 @@ export default function BeastfileDetail() {
     overview, origin, notableTraits, conservation, funFacts,
     heroImage, heroAlt, secondaryImage, secondaryAlt, encyclopediaId, relatedFiles,
   } = beastfile;
+
+  // Real facts from the database, already published at /facts/<slug>/. Where an
+  // animal has none yet, the authored funFacts below stand in.
+  const linkedFacts = beastlypediaIndex.factsFor?.[id] || [];
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
   // The scientific name is kept out of the title on purpose. With it, longer
@@ -214,22 +222,53 @@ export default function BeastfileDetail() {
 
         {/* bg-muted rather than bg-card below: this sits inside the file block
             now, and a card on a card just reads as a rendering mistake. */}
-        {funFacts?.length > 0 && (
+        {(linkedFacts.length > 0 || funFacts?.length > 0) && (
           <div className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
             <h2 className="font-display font-bold text-base text-foreground mb-3">🤯 Fun Facts</h2>
-            <ul className="space-y-2.5">
-              {funFacts.map((f, i) => (
-                <li
-                  key={i}
-                  className="text-sm text-muted-foreground font-body leading-relaxed flex gap-2.5"
-                >
-                  <span className="text-secondary font-display font-bold flex-shrink-0">
-                    {i + 1}
-                  </span>
-                  <span>{f}</span>
-                </li>
-              ))}
-            </ul>
+
+            {linkedFacts.length > 0 ? (
+              // The real entries from the fact database, each linking to its own
+              // page. Writing these a second time in the Beastfile would mean two
+              // versions of the same claim drifting apart, and would waste the
+              // internal link.
+              <ul className="space-y-2">
+                {linkedFacts.map((f, i) => (
+                  <li key={f.slug}>
+                    <Link
+                      to={`/facts/${f.slug}/`}
+                      className="group flex gap-2.5 rounded-xl -mx-2 px-2 py-1.5 hover:bg-background/60 transition-colors"
+                    >
+                      <span className="text-secondary font-display font-bold flex-shrink-0">
+                        {i + 1}
+                      </span>
+                      <span>
+                        <span className="block font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
+                          {f.title}
+                        </span>
+                        <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
+                          {f.fact}
+                        </span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              // Fallback for animals the fact database does not cover yet.
+              <ul className="space-y-2.5">
+                {funFacts.map((f, i) => (
+                  <li
+                    key={i}
+                    className="text-sm text-muted-foreground font-body leading-relaxed flex gap-2.5"
+                  >
+                    <span className="text-secondary font-display font-bold flex-shrink-0">
+                      {i + 1}
+                    </span>
+                    <span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         )}
 

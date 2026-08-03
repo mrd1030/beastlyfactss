@@ -155,9 +155,7 @@ export const mammalBeastfiles = [
       'The middle finger has a ball-and-socket joint, so it rotates almost freely while probing.',
       'Its incisors grow continuously, which is why early naturalists filed it among the rodents.',
     ],
-    // Pending: the first hero was rejected in review for an anatomically wrong
-    // extra finger. Renders the "image pending" block until replaced.
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/aye-aye-hero.jpg',
     heroAlt: 'An aye-aye clinging to a branch at night, its huge orange eyes reflecting the light',
     secondaryImage: '/assets/facts/aye-aye.jpg',
     secondaryAlt: 'An aye-aye in darkness showing its large bare ears and coarse black fur',

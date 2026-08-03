@@ -41,8 +41,11 @@ export default function RelatedFiles({ slugs }) {
 
   if (posts.length === 0) return null;
 
+  // bg-muted panel, matching Fun Facts. CompactPostCard is bg-card, and so is
+  // the Beastfile block this sits inside, so on the default surface the cards
+  // are the same colour as their background and only the hairline border shows.
   return (
-    <section className="mt-8">
+    <section className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
       <h2 className="font-display font-bold text-base text-foreground mb-3">📁 Related Files</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {posts.map((post) => (

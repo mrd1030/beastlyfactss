@@ -2,6 +2,8 @@
 export const marineBeastfiles = [
   {
     id: 'manta-ray',
+    // facts.js files these under the full common name.
+    factAnimal: 'Giant Manta Ray',
     name: 'Giant Manta Ray',
     scientific: 'Mobula birostris',
     alsoKnownAs: ['Oceanic Manta', 'Devil Ray'],
