@@ -20,6 +20,7 @@
 const modules = {
   FeaturedEvent: () => import('@/components/home/FeaturedEvent'),
   TrendingFacts: () => import('@/components/home/TrendingFacts'),
+  FactPhotoStrip: () => import('@/components/home/FactPhotoStrip'),
   FactsToGuidesBanner: () => import('@/components/home/FactsToGuidesBanner'),
   CategoryBrowse: () => import('@/components/home/CategoryBrowse'),
   BeastlypediaTeaser: () => import('@/components/home/BeastlypediaTeaser'),

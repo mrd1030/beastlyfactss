@@ -154,8 +154,11 @@ const GUIDE_IDS = [
 // Beastlypedia is going from 1 entry to 15, and a hand-copied list would drift
 // silently: the page would still render for a visitor while never getting
 // prerendered or listed in the sitemap.
+// await readFile, not fs.readFileSync: this file only imports fs/promises, so
+// there is no `fs` binding here and the sync call threw at module load, taking
+// the whole prerender step (and therefore `npm run build`) down with it.
 const BEASTLYPEDIA = JSON.parse(
-  fs.readFileSync('src/lib/generated/beastlypedia-index.json', 'utf8')
+  await readFile('src/lib/generated/beastlypedia-index.json', 'utf8')
 );
 
 const STATIC_ROUTES = [

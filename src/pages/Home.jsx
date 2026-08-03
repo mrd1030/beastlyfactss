@@ -57,6 +57,10 @@ export default function Home() {
 
       <HomeChild name="FeaturedEvent" />
       <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
+      {/* Directly under the fact cards: the strip continues the same rotation
+          they use, and gives /gallery/ a real entry point. It had exactly one
+          inbound link site-wide, on the Facts page. */}
+      <HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} />
       <HomeChild name="FactsToGuidesBanner" />
       <HomeChild name="CategoryBrowse" />
       {/* Reference content: animal profiles + care guides, together.
