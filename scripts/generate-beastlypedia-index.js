@@ -58,6 +58,10 @@ for (const b of beastfiles) {
   const found = factsByAnimal.get(normalise(animal)) || [];
   if (found.length === 0) continue;
   factsFor[b.id] = found.map((f) => ({
+    // The real fact id, so the lightbox opened from a Beastfile can offer Save
+    // to Pack. Favourites are keyed by fact id and beastlyfactsapp reads the
+    // same ids, so a synthetic one here would corrupt a user's saved list.
+    id: f.id,
     title: f.title,
     fact: f.fact,
     animal: f.animal,

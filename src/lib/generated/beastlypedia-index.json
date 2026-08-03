@@ -50,6 +50,7 @@
   "factsFor": {
     "pangolin": [
       {
+        "id": 32,
         "title": "Walking Pinecones",
         "fact": "Pangolins are the only mammals covered in scales! When threatened, they roll into a tight ball, making them look like living pinecones.",
         "animal": "Pangolin",
@@ -57,6 +58,7 @@
         "image": "/assets/facts/pangolin.jpg"
       },
       {
+        "id": 108,
         "title": "Armored Squirrels",
         "fact": "Pangolins are the only mammals covered in scales, making them look like real-life armadillos! When threatened, they can curl up into a tight ball, using these scales as armor against predators.",
         "animal": "Pangolin",
@@ -64,6 +66,7 @@
         "image": "/assets/facts/pangolin-2.jpg"
       },
       {
+        "id": 167,
         "title": "A Tongue Longer Than Its Body",
         "fact": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that can stretch longer than their own head and body combined, anchored all the way back near their pelvis, to slurp up ants and termites by the thousands.",
         "animal": "Pangolin",
@@ -71,6 +74,7 @@
         "image": "/assets/facts/pangolin-3.jpg"
       },
       {
+        "id": 195,
         "title": "The Stomach That Chews",
         "fact": "Pangolins have no teeth, so the stomach does the chewing instead. Its far end is thick and muscular, lined with hard keratin spines pointing inward, and it usually holds small stones the pangolin has swallowed. Together they grind whole insects apart much the way a bird's gizzard does.",
         "animal": "Pangolin",
@@ -78,6 +82,7 @@
         "image": "/assets/facts/pangolin-4.jpg"
       },
       {
+        "id": 196,
         "title": "70 Million Insects a Year",
         "fact": "One adult pangolin can eat more than 70 million insects in a single year, almost all of them ants and termites. All that digging turns over organic matter and aerates the soil, and the burrows they abandon get taken over by other animals looking for shelter.",
         "animal": "Pangolin",
@@ -85,6 +90,7 @@
         "image": "/assets/facts/pangolin-5.jpg"
       },
       {
+        "id": 197,
         "title": "Armor Written Into the Genome",
         "fact": "When researchers sequenced pangolin genomes in 2016, they found broken copies of tooth-building genes still sitting in the DNA but no longer read. They also found that a gene tied to the skin's ability to fight disease has stopped working, which hints that pangolins came to lean on their scales for protection instead.",
         "animal": "Pangolin",
@@ -92,6 +98,7 @@
         "image": "/assets/facts/pangolin-6.jpg"
       },
       {
+        "id": 198,
         "title": "Scales With a Return Address",
         "fact": "Asian and African pangolins have been on separate evolutionary paths for at least 23 million years. A Smithsonian-led team used that deep split to build a genetic family tree covering all eight species, giving investigators markers that can trace a seized scale back to the species it came from.",
         "animal": "Pangolin",
@@ -99,6 +106,7 @@
         "image": "/assets/facts/pangolin-7.jpg"
       },
       {
+        "id": 199,
         "title": "Fingernails, Basically",
         "fact": "Pangolin scales are keratin, the same protein your fingernails and hair are made of. That has done nothing to slow demand: when the IUCN reviewed seizures logged between 2016 and 2024, scales made up 99 percent of every confiscated pangolin part.",
         "animal": "Pangolin",
@@ -108,6 +116,7 @@
     ],
     "fennec-fox": [
       {
+        "id": 257,
         "title": "Ears That Work as Radiators",
         "fact": "A fennec's ears run to about 15 centimetres on an animal that weighs under two kilograms, the largest ears relative to body size of any carnivore. They are not only for listening. They carry a dense network of shallow blood vessels, and the fox dumps heat through them into the air, which lets it hold its temperature down without panting away water it cannot spare. The hearing is real too: a fennec can track insects and small rodents moving under the sand and dig straight down onto them.",
         "animal": "Fennec Fox",
@@ -115,6 +124,7 @@
         "image": "/assets/facts/fennec-fox.jpg"
       },
       {
+        "id": 258,
         "title": "It Can Live Without Drinking",
         "fact": "A fennec can go its whole life without drinking free water. It takes moisture from what it eats, and its kidneys concentrate urine far enough to keep the loss on the other side very small. Burrowing does the rest, since the air down in the den stays cooler and far more humid than the surface. Given water a fennec will drink it, but in most of its range there is nothing to drink.",
         "animal": "Fennec Fox",
@@ -122,6 +132,7 @@
         "image": "/assets/facts/fennec-fox-2.jpg"
       },
       {
+        "id": 259,
         "title": "Fur on the Soles of Its Feet",
         "fact": "The undersides of a fennec's feet are covered in thick fur, right over the pads. It works as insulation on sand hot enough to burn an unprotected foot, and it spreads the animal's weight so it can move across a loose surface without sinking. The same feet dig fast. A fennec can put itself out of sight underground in a few seconds, and dens often run several metres with more than one way out.",
         "animal": "Fennec Fox",
@@ -131,6 +142,7 @@
     ],
     "capybara": [
       {
+        "id": 24,
         "title": "The Chillest Animal",
         "fact": "Capybaras are so relaxed they often let other animals sit on them: birds, monkeys, even caimans! They're the largest rodents in the world and native to South America.",
         "animal": "Capybara",
@@ -138,6 +150,7 @@
         "image": "/assets/facts/capybara.jpg"
       },
       {
+        "id": 173,
         "title": "Built-In Snorkel Mode",
         "fact": "Capybaras can hold their breath underwater for up to 5 minutes to hide from jaguars and caimans. Their eyes, ears, and nostrils sit high on their head, like a hippo's, so they can stay almost fully submerged and still see, hear, and breathe.",
         "animal": "Capybara",
@@ -147,6 +160,7 @@
     ],
     "narwhal": [
       {
+        "id": 26,
         "title": "Unicorn of the Sea",
         "fact": "Narwhals have a long spiral tusk (up to 10 feet!) that is actually a tooth. Scientists believe they use it to sense water temperature and salinity.",
         "animal": "Narwhal",
@@ -154,6 +168,7 @@
         "image": "/assets/facts/narwhal.jpg"
       },
       {
+        "id": 113,
         "title": "Super Sneaky Narwhal",
         "fact": "Narwhals are often called the unicorns of the sea, thanks to their long, spiral tusks that can grow up to 10 feet long! Surprisingly, this tusk is actually an elongated tooth, and scientists believe it can detect changes in the environment, helping these mystical creatures navigate the frigid Arctic waters.",
         "animal": "Narwhal",
@@ -163,6 +178,7 @@
     ],
     "aye-aye": [
       {
+        "id": 188,
         "title": "The Finger That Finds Grubs",
         "fact": "An aye-aye's middle finger is thin, skeletal, and double-jointed, built to tap on tree bark up to eight times a second and listen for hollow spots where grubs are hiding. Once it finds one, that same finger reaches in and hooks the grub out, a foraging trick found nowhere else in the animal kingdom.",
         "animal": "Aye-aye",
@@ -172,6 +188,7 @@
     ],
     "giraffe": [
       {
+        "id": 34,
         "title": "The Big Heart Myth",
         "fact": "For decades, giraffe hearts were said to weigh up to 25 pounds (11 kg), but that figure traces back to a likely-flawed 1955 measurement. More recent research shows their heart is actually a normal size for their body weight, working overtime instead: giraffe blood pressure runs roughly twice that of humans, just to get blood all the way up their 6-foot neck.",
         "animal": "Giraffe",
@@ -179,6 +196,7 @@
         "image": "/assets/facts/giraffe.jpg"
       },
       {
+        "id": 156,
         "title": "Same Neck Bones as You",
         "fact": "A giraffe's towering neck contains exactly seven vertebrae, the same number found in a human neck, just enormously stretched out. In the wild they also get by on remarkably little sleep, one tracking study recording as little as 10 minutes a night, taken in a couple of short bursts; giraffes in zoos, with no predators to worry about, sleep several hours more.",
         "animal": "Giraffe",
@@ -186,6 +204,7 @@
         "image": "/assets/facts/giraffe-2.jpg"
       },
       {
+        "id": 210,
         "title": "They Hum After Dark",
         "fact": "Giraffes were long thought to be nearly silent. Then researchers recorded over 947 hours of audio across three European zoos and found sustained, harmonic humming that happens only at night, averaging 92 Hz. That detail quietly kills a popular claim: 92 Hz is not infrasound, it sits well inside human hearing. They were audible all along. Nobody had listened for 947 hours.",
         "animal": "Giraffe",
@@ -193,6 +212,7 @@
         "image": "/assets/facts/giraffe-3.jpg"
       },
       {
+        "id": 211,
         "title": "Four Giraffes, Not One",
         "fact": "For over a century every giraffe was filed under one species. Genetic work in 2016 found four deeply distinct lineages that do not interbreed in the wild, separated by differences comparable to those between polar and brown bears. In August 2025 the IUCN formally recognized all four: northern, reticulated, Masai and southern giraffe.",
         "animal": "Giraffe",
@@ -200,6 +220,7 @@
         "image": "/assets/facts/giraffe-4.jpg"
       },
       {
+        "id": 212,
         "title": "Drinking Is Harder Than It Looks",
         "fact": "When a giraffe lowers its head to drink, roughly 1.4 litres of blood, about 5% of its total supply, pools in the neck veins and the heart rate drops. The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon. The new proposal: swallowing itself squeezes the neck veins and pumps the blood home.",
         "animal": "Giraffe",
@@ -207,6 +228,7 @@
         "image": "/assets/facts/giraffe-5.jpg"
       },
       {
+        "id": 213,
         "title": "The Eighth Neck Bone",
         "fact": "Giraffes have seven neck vertebrae, the same as you. The part that gets left out is that anatomists have argued for decades over whether seven is the honest count. The current view is that the first thoracic vertebra has been functionally converted into a neck bone: it still carries ribs, so it is technically not cervical, but it moves with the neck and is built like one.",
         "animal": "Giraffe",
@@ -216,6 +238,7 @@
     ],
     "slow-loris": [
       {
+        "id": 194,
         "title": "The Only Venomous Primate",
         "fact": "Slow lorises are the only primates known to be venomous. They lick a gland on the inside of their elbow and mix its secretion with their saliva, then deliver it through a bite that can trigger dangerous allergic reactions, even anaphylactic shock, in humans.",
         "animal": "Slow Loris",
@@ -223,6 +246,7 @@
         "image": "/assets/facts/slow-loris.jpg"
       },
       {
+        "id": 233,
         "title": "Venom in Two Parts",
         "fact": "A slow loris cannot bite venomously without arming itself first. It has a gland on the inside of its upper arm that secretes an oily exudate, harmless alone, and it raises its arms overhead to lick that gland and mix the secretion with saliva. Only the combination is venomous. That arms-up pose people find adorable is the loading action.",
         "animal": "Slow Loris",
@@ -230,6 +254,7 @@
         "image": "/assets/facts/slow-loris-2.jpg"
       },
       {
+        "id": 234,
         "title": "Built Like the Cat Allergen",
         "fact": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponised. Much of the damage is done by the victim's own immune response.",
         "animal": "Slow Loris",
@@ -237,6 +262,7 @@
         "image": "/assets/facts/slow-loris-3.jpg"
       },
       {
+        "id": 235,
         "title": "Teeth Removed With Pliers",
         "fact": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anaesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released.",
         "animal": "Slow Loris",
@@ -246,6 +272,7 @@
     ],
     "african-elephant": [
       {
+        "id": 13,
         "title": "Elephants Mourn",
         "fact": "Elephants hold funerals for their dead. They'll gently touch the bones of deceased family members with their trunks and stand vigil for hours. They've even been seen crying.",
         "animal": "Elephant",
@@ -253,6 +280,7 @@
         "image": "/assets/facts/elephant.jpg"
       },
       {
+        "id": 76,
         "title": "Hear With Their Feet",
         "fact": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialised receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away.",
         "animal": "Elephant",
@@ -260,6 +288,7 @@
         "image": "/assets/facts/elephant-2.jpg"
       },
       {
+        "id": 243,
         "title": "Calls Below Human Hearing",
         "fact": "Elephant rumbles drop to around 14 Hz, below the roughly 20 Hz floor of human hearing, so what people standing nearby actually hear is only the upper harmonics. Low frequencies bend around obstacles and lose energy slowly, letting these calls carry for kilometres. At dusk, temperature inversions channel the sound rather than letting it escape upward, and calling activity peaks.",
         "animal": "Elephant",
@@ -267,6 +296,7 @@
         "image": "/assets/facts/elephant-3.jpg"
       },
       {
+        "id": 244,
         "title": "Listening Through Their Feet",
         "fact": "A loud rumble does not only move air, it couples into the ground as a surface wave that outruns the airborne version. Elephant feet are packed with Pacinian corpuscles, the receptors mammals use to sense vibration, and there is a bone conduction path up the leg to the middle ear. Played ground-only signals, elephants freeze, lean forward and lift a foot.",
         "animal": "Elephant",
@@ -276,6 +306,7 @@
     ],
     "sloth": [
       {
+        "id": 20,
         "title": "Breath-Holding Sloths",
         "fact": "Sloths can hold their breath underwater for up to 40 minutes, longer than dolphins! They slow their heart rate to just one-third of normal to conserve oxygen.",
         "animal": "Sloth",
@@ -283,6 +314,7 @@
         "image": "/assets/facts/sloth.jpg"
       },
       {
+        "id": 255,
         "title": "The Weekly Trip That Kills Them",
         "fact": "A three-toed sloth climbs all the way down to the forest floor about once a week to defecate, then climbs back. On the ground it cannot walk and drags itself by its front claws. A very large share of sloth predation deaths, on the order of half, happens during these trips, which it makes roughly fifty times a year.",
         "animal": "Sloth",
@@ -290,6 +322,7 @@
         "image": "/assets/facts/sloth-3.jpg"
       },
       {
+        "id": 256,
         "title": "The Fur Is an Ecosystem",
         "fact": "Sloth hair has grooves that trap moisture and grow algae found almost nowhere else, which tints wild sloths green. Moths live in the coat too, and lay their eggs in the dung during the weekly descent. One proposal is that the moths fertilise the algae and the sloth eats some of it, supplementing a poor leaf diet. It is contested but nothing better has replaced it.",
         "animal": "Sloth",
@@ -299,6 +332,7 @@
     ],
     "gray-wolf": [
       {
+        "id": 67,
         "title": "The River Story, Revisited",
         "fact": "When wolves returned to Yellowstone in 1995, elk behavior changed and some vegetation recovered, a real ecological effect called a trophic cascade. But the popular claim that wolves single-handedly reshaped the park's rivers has been challenged by a 2025 scientific re-analysis, which found the original evidence was overstated and relied on flawed methodology.",
         "animal": "Wolf",
@@ -306,6 +340,7 @@
         "image": "/assets/facts/wolf.jpg"
       },
       {
+        "id": 169,
         "title": "The Alpha Wolf Myth",
         "fact": "The famous 'alpha wolf' idea traces back to 1930s and 1940s zoo studies of unrelated wolves penned together, which triggered artificial power struggles, and a bestselling 1970 book carried it into the mainstream. Decades later, the same biologist who coined the term studied wild wolf packs and found they're simply family units, a breeding pair and their pups, not a rank ladder fought over. He spent years afterward trying to get the myth retracted.",
         "animal": "Wolf",
@@ -315,6 +350,7 @@
     ],
     "lion": [
       {
+        "id": 241,
         "title": "The Pride Belongs to the Females",
         "fact": "Lions are the only social cat out of roughly forty species, and the group is built on related females who often stay in their birth pride for life. Males are not part of that lineage. They arrive as a coalition, hold the pride for perhaps two or three years, then get driven out by a stronger group. A lioness may spend fifteen years on ground the males only lease.",
         "animal": "Lion",
@@ -322,6 +358,7 @@
         "image": "/assets/facts/lion.jpg"
       },
       {
+        "id": 242,
         "title": "Group Hunting Is Not the Reason",
         "fact": "The obvious explanation for lion prides is cooperative hunting, and decades of Serengeti data do not support it: food per lion does not reliably improve with group size, because a kill split more ways feeds each one less. What group size does track is territory quality. The best ground, river confluences where prey must come to drink, can only be held by numbers.",
         "animal": "Lion",
@@ -331,6 +368,7 @@
     ],
     "tiger": [
       {
+        "id": 251,
         "title": "A Species That Fits in a Town",
         "fact": "Around 5,500 tigers remain in the wild, across thirteen countries, for the entire species. A century ago the estimate was near 100,000. They have lost roughly 93 to 95 percent of their historic range, and three subspecies are already gone: the Bali, Caspian and Javan tigers.",
         "animal": "Tiger",
@@ -338,6 +376,7 @@
         "image": "/assets/facts/tiger.jpg"
       },
       {
+        "id": 252,
         "title": "Striped to the Skin",
         "fact": "Tiger stripes are not only in the fur. The pattern is in the skin underneath, so a shaved tiger is still striped. Every tiger's arrangement is unique, which is genuinely useful: camera trap surveys identify individual animals by stripe pattern the way you would use a fingerprint, and much of what we know about remaining numbers comes from exactly that.",
         "animal": "Tiger",
@@ -347,6 +386,7 @@
     ],
     "rhinoceros": [
       {
+        "id": 253,
         "title": "Horn Is Not Bone or Ivory",
         "fact": "A rhino horn has no bony core at all. It grows from the skin and is compacted keratin the whole way through, the same protein as fingernails, hair and hooves. That makes it structurally closer to an enormous callus than to a cow's horn, which is a bony core in a keratin sheath.",
         "animal": "Rhino",
@@ -354,6 +394,7 @@
         "image": "/assets/facts/rhino.jpg"
       },
       {
+        "id": 254,
         "title": "It Grows Back",
         "fact": "Because there is no bone in it and it grows continuously from the base, a rhino horn regrows after being cut above the growth plate. That is what makes dehorning possible as an anti-poaching measure, repeated every couple of years. It is not a clean fix: dehorned rhinos are still killed, and the horn is used for defense and in disputes.",
         "animal": "Rhino",
@@ -363,6 +404,7 @@
     ],
     "wombat": [
       {
+        "id": 15,
         "title": "Wombat Cube Poop",
         "fact": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes, and a very dry gut lets the corners hold. The cubes sit on rocks and logs without rolling off, where they work as scent messages carrying identity and breeding status. Despite the common claim, wombats are not territorial.",
         "animal": "Wombat",
@@ -372,6 +414,7 @@
     ],
     "honey-badger": [
       {
+        "id": 70,
         "title": "Snake Venom? No Thanks",
         "fact": "Honey badgers are nearly immune to snake venom. They've been filmed getting bitten by cobras, going limp for a few minutes, then waking up and continuing to eat the snake.",
         "animal": "Honey Badger",
@@ -379,6 +422,7 @@
         "image": "/assets/facts/honey-badger.jpg"
       },
       {
+        "id": 159,
         "title": "The Loose-Skin Escape Artist",
         "fact": "A honey badger's skin is so thick and loose that it can twist almost freely inside it, letting the animal spin around and bite an attacker even while pinned by the scruff of its neck. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet.",
         "animal": "Honey Badger",
@@ -388,6 +432,7 @@
     ],
     "platypus": [
       {
+        "id": 23,
         "title": "Egg-Laying Mammal",
         "fact": "The platypus is one of the few mammals that lays eggs! It also has a venomous spur on its hind legs and can detect electric fields with its bill.",
         "animal": "Platypus",
@@ -395,6 +440,7 @@
         "image": "/assets/facts/platypus.jpg"
       },
       {
+        "id": 170,
         "title": "Milk Without Nipples",
         "fact": "Platypuses don't have nipples. Instead, mothers sweat milk through specialized patches of skin on their belly, and it pools into little grooves for the babies to lap up. It's one of several oddities that come from being a mammal that also lays eggs.",
         "animal": "Platypus",
@@ -404,6 +450,7 @@
     ],
     "wolverine": [
       {
+        "id": 274,
         "title": "The Molar That Turns Sideways",
         "fact": "A wolverine has an upper molar set roughly 90 degrees inward, turning the back of its jaw into a shearing tool. That rotation is the difference between finding a carcass frozen solid in midwinter and being able to eat one. It lets an animal of about 15 kilograms open bone and take marrow that other scavengers walk away from, which is most of how a wolverine gets through a northern winter.",
         "animal": "Wolverine",
@@ -411,6 +458,7 @@
         "image": "/assets/facts/wolverine.jpg"
       },
       {
+        "id": 275,
         "title": "It Takes Food From Animals Twice Its Size",
         "fact": "A wolverine weighs somewhere around 12 to 18 kilograms, about the same as a medium dog, and there are repeated accounts of one driving wolves and even bears off a carcass. It is not routine and it does not always work. What makes it possible at all is that a wolverine is built far heavier than its size suggests, with a thick hide, long claws and no apparent reverse gear, and a larger animal often decides the meal is not worth the trouble.",
         "animal": "Wolverine",
@@ -420,6 +468,7 @@
     ],
     "thorny-devil": [
       {
+        "id": 182,
         "title": "Drinks Through Its Skin",
         "fact": "Thorny devils never need to drink with their mouths. Grooves between their spiky scales pull water in by capillary action from any damp surface, including morning dew, channeling it straight to their mouth. When threatened, they also tuck their real head down and present a fake spiked 'head' on the back of their neck instead.",
         "animal": "Thorny Devil",
@@ -429,6 +478,7 @@
     ],
     "panther-chameleon": [
       {
+        "id": 43,
         "title": "Color Means Communication",
         "fact": "Chameleons don't change color primarily for camouflage. They do it to communicate mood and temperature. Color changes signal stress, excitement, readiness to mate, and more.",
         "animal": "Chameleon",
@@ -436,6 +486,7 @@
         "image": "/assets/facts/chameleon.jpg"
       },
       {
+        "id": 81,
         "title": "Color-Changing Camouflage",
         "fact": "Chameleons are famous for their ability to change color, but did you know it's primarily a way to communicate? They alter their hues depending on their mood and social signals, rather than just blending into their surroundings!",
         "animal": "Chameleon",
@@ -443,6 +494,7 @@
         "image": "/assets/facts/chameleon-2.jpg"
       },
       {
+        "id": 88,
         "title": "Chameleon Color Change",
         "fact": "Chameleons are famous for their color-changing abilities, but it's not just for camouflage! They change colors in response to mood, temperature, and even social signals, making them masters of both disguise and emotion!",
         "animal": "Chameleon",
@@ -450,6 +502,7 @@
         "image": "/assets/facts/chameleon-3.jpg"
       },
       {
+        "id": 138,
         "title": "Faster Than a Fighter Pilot",
         "fact": "A chameleon's tongue accelerates fast enough to briefly pull more G-force than a human fighter pilot can withstand. It can strike a full body-length away and snap back with its prey in a fraction of a second.",
         "animal": "Chameleon",
@@ -459,6 +512,7 @@
     ],
     "green-anaconda": [
       {
+        "id": 260,
         "title": "Heaviest, Not Longest",
         "fact": "The green anaconda is the heaviest snake alive and routinely gets called the biggest, which is only half right. Reticulated pythons grow longer, past seven metres, but an anaconda is built on a completely different scale of thickness and can pass 100 kilograms where a python of similar length is nowhere near it. Reliable measurements are rarer than the stories suggest. Claims above nine metres have circulated for over a century without one being confirmed.",
         "animal": "Green Anaconda",
@@ -466,6 +520,7 @@
         "image": "/assets/facts/green-anaconda.jpg"
       },
       {
+        "id": 261,
         "title": "Constriction Is About Blood, Not Bones",
         "fact": "The old description of constriction is that the snake crushes its prey or suffocates it. Measurements on constricting snakes point somewhere else: the pressure a large constrictor applies is enough to stop blood circulating, and circulatory arrest kills far faster than suffocation would. The snake tightens as its prey breathes out, so each exhalation gives away a little more room and never gets it back.",
         "animal": "Green Anaconda",
@@ -473,6 +528,7 @@
         "image": "/assets/facts/green-anaconda-2.jpg"
       },
       {
+        "id": 262,
         "title": "It Gives Birth, It Does Not Lay Eggs",
         "fact": "Anacondas are viviparous. Females carry their young internally and give birth to live snakes, often twenty to forty at a time, each already around half a metre long and able to swim and hunt immediately. There is no parental care after that. Females are also far larger than males, which is unusual enough among snakes to be worth saying plainly: a big female can be several times the weight of any male she breeds with.",
         "animal": "Green Anaconda",
@@ -482,6 +538,7 @@
     ],
     "glass-frog": [
       {
+        "id": 183,
         "title": "See-Through Bellies",
         "fact": "Some glass frogs have skin on their underside so transparent you can watch their heart beating and blood moving through their organs. While they sleep, they pack nearly all their red blood cells into their liver, making themselves even harder for predators to spot against a leaf.",
         "animal": "Glass Frog",
@@ -491,6 +548,7 @@
     ],
     "blue-poison-dart-frog": [
       {
+        "id": 263,
         "title": "It Is Not a Separate Species",
         "fact": "The blue poison dart frog is one of the most photographed frogs on Earth and it is not its own species. It is a color morph of Dendrobates tinctorius, a widespread South American frog whose populations look startlingly different from one patch of forest to the next. The blue form comes from isolated forest islands in southern Suriname, cut off in savannah, and the name azureus it was given as a species is now treated as one of those local forms rather than a species boundary.",
         "animal": "Blue Poison Dart Frog",
@@ -498,6 +556,7 @@
         "image": "/assets/facts/blue-poison-dart-frog.jpg"
       },
       {
+        "id": 264,
         "title": "Captive Ones Are Harmless",
         "fact": "These frogs do not make their toxins. They accumulate them from what they eat in the wild, mainly mites and ants carrying alkaloids of their own, and concentrate the compounds in glands in the skin. Take that diet away and the toxicity goes with it. Captive-bred frogs raised on fruit flies and springtails are effectively non-toxic, which is why keeping one is possible at all and why a wild-caught animal is a completely different proposition.",
         "animal": "Blue Poison Dart Frog",
@@ -505,6 +564,7 @@
         "image": "/assets/facts/blue-poison-dart-frog-2.jpg"
       },
       {
+        "id": 265,
         "title": "The Poison Dart Name Is Borrowed",
         "fact": "Around 170 species get called poison dart frogs and only three were ever used that way, all in the genus Phyllobates, in a small area of western Colombia. Hunters wiped a dart tip across a frog's back and the coating stayed effective for months. Every other species picked the name up by association, this one included, and no hunter has ever tipped a dart with it.",
         "animal": "Blue Poison Dart Frog",
@@ -514,6 +574,7 @@
     ],
     "axolotl": [
       {
+        "id": 14,
         "title": "Axolotl Superpowers",
         "fact": "Axolotls can regenerate entire limbs, their heart, spinal cord, and even parts of their brain with zero scarring! Scientists study them hoping to unlock regeneration secrets for humans.",
         "animal": "Axolotl",
@@ -521,6 +582,7 @@
         "image": "/assets/images/fun-facts-axolotl.jpg"
       },
       {
+        "id": 168,
         "title": "Forever Young, Forever Underwater",
         "fact": "Axolotls never grow up in the usual salamander sense. Thanks to a trait called neoteny, they keep their feathery gills and stay fully aquatic for their entire lives, reaching adulthood without ever setting foot on land. Sadly, the wild population now survives in just one place, a shrinking canal system near Mexico City.",
         "animal": "Axolotl",
@@ -530,6 +592,7 @@
     ],
     "shoebill": [
       {
+        "id": 180,
         "title": "The Statue That Hunts",
         "fact": "Shoebills can stand completely motionless for hours while hunting, then explode into a violent strike so fast it can snap a lungfish or baby crocodile in half. Their clog-shaped bill has sharp edges specifically for slicing through tough prey.",
         "animal": "Shoebill",
@@ -539,6 +602,7 @@
     ],
     "victoria-crowned-pigeon": [
       {
+        "id": 266,
         "title": "A Pigeon the Size of a Turkey",
         "fact": "The Victoria crowned pigeon is the largest pigeon in the world, around 75 centimetres long and up to roughly 2.5 kilograms, which is to say a pigeon you would notice from across a field. It is blue-grey with a maroon breast, a deep red eye, and a fan of crest feathers standing upright on its head. It spends nearly all of its time walking the forest floor of northern New Guinea, and flies up mainly to roost or to get away from something.",
         "animal": "Victoria Crowned Pigeon",
@@ -546,6 +610,7 @@
         "image": "/assets/facts/victoria-crowned-pigeon.jpg"
       },
       {
+        "id": 267,
         "title": "The Crest Is Lace, Not Spikes",
         "fact": "Up close the crown is not the stiff fan it looks like at a distance. Each feather in it has a bare shaft for most of its length and opens into a small triangular tip of white barbs at the end, so the whole crest reads as an open mesh with a dotted white edge. Two other crowned pigeon species carry their own versions, and the white tips are the quickest way to tell this one apart from them.",
         "animal": "Victoria Crowned Pigeon",
@@ -553,6 +618,7 @@
         "image": "/assets/facts/victoria-crowned-pigeon-2.jpg"
       },
       {
+        "id": 268,
         "title": "Both Parents Make Milk",
         "fact": "Pigeons feed their chicks on crop milk, a thick protein and fat rich secretion produced by cells lining the crop, and both the male and the female make it. It is not milk in any mammalian sense and contains no lactose, but it does the same job, and a crowned pigeon chick lives on nothing else for its first days. Pairs usually raise a single chick, and both birds sit the egg, the male through the day and the female overnight.",
         "animal": "Victoria Crowned Pigeon",
@@ -562,6 +628,7 @@
     ],
     "emperor-penguin": [
       {
+        "id": 247,
         "title": "Emperors Rarely Reunite",
         "fact": "The lifelong penguin romance is mostly myth. Emperor penguins pair with the same partner in consecutive seasons only about 15 percent of the time. Gentoos, by contrast, can exceed 90 percent. The difference is not devotion, it is whether the species builds a nest: a fixed spot gives two birds somewhere to find each other again.",
         "animal": "Penguin",
@@ -569,6 +636,7 @@
         "image": "/assets/facts/penguin-2.jpg"
       },
       {
+        "id": 248,
         "title": "Sixty Five Days Without Food",
         "fact": "A male emperor penguin incubates the egg balanced on his feet through the Antarctic winter, standing in temperatures below minus 40 Celsius in winds over 100 mph, without eating for roughly 65 days. He can lose close to half his body weight. The colony huddle rotates, so birds on the freezing outer edge slowly work their way back to the middle.",
         "animal": "Penguin",
@@ -578,6 +646,7 @@
     ],
     "crow": [
       {
+        "id": 10,
         "title": "Crow Detectives",
         "fact": "Crows can recognize individual human faces for years and will teach other crows who is 'friend' or 'foe.' They've been known to bring gifts to people who feed them, from shiny buttons to earrings!",
         "animal": "Crow",
@@ -585,6 +654,7 @@
         "image": "/assets/facts/crow.jpg"
       },
       {
+        "id": 60,
         "title": "Crow Tool Users",
         "fact": "New Caledonian crows craft hooked tools from twigs and leaves to extract grubs from bark, and they pass these techniques on to their young, making it a form of animal culture.",
         "animal": "Crow",
@@ -594,6 +664,7 @@
     ],
     "manta-ray": [
       {
+        "id": 192,
         "title": "Ocean's Biggest Brain",
         "fact": "Giant manta rays have the largest brain relative to body size of any fish, rivaling the ratios seen in some mammals. In mirror tests, they spend far more time in front of a real mirror than a blank panel and repeatedly perform unusual movements like blowing bubbles while watching themselves, behavior researchers think hints at some level of self-awareness.",
         "animal": "Giant Manta Ray",
@@ -603,6 +674,7 @@
     ],
     "leafy-sea-dragon": [
       {
+        "id": 181,
         "title": "Leaves That Learned to Swim",
         "fact": "Leafy sea dragons are covered in leaf-shaped skin flaps that serve purely as camouflage. They actually swim using nearly invisible fins on their neck and back, so from a distance they look like drifting seaweed rather than a fish at all.",
         "animal": "Leafy Sea Dragon",
@@ -612,6 +684,7 @@
     ],
     "dolphin": [
       {
+        "id": 7,
         "title": "Dolphin Name Tags",
         "fact": "Each dolphin develops its own unique signature whistle, essentially a name! They use these to call out to specific friends. Dolphins can remember these 'names' for over 20 years.",
         "animal": "Dolphin",
@@ -619,6 +692,7 @@
         "image": "/assets/facts/dolphin.jpg"
       },
       {
+        "id": 63,
         "title": "Mirror Test Passers",
         "fact": "Dolphins are one of only a handful of animals that pass the mirror self-recognition test, placing them alongside humans, great apes, and elephants as animals with a sense of self-awareness.",
         "animal": "Dolphin",
@@ -626,6 +700,7 @@
         "image": "/assets/facts/dolphin-2.jpg"
       },
       {
+        "id": 79,
         "title": "Secrets in the Sound",
         "fact": "Dolphins communicate using unique signature whistles that function like names! Each dolphin develops its own distinct whistle, allowing them to identify and call one another, much like how we use names to socialize.",
         "animal": "Dolphin",
@@ -633,6 +708,7 @@
         "image": "/assets/facts/dolphin-3.jpg"
       },
       {
+        "id": 105,
         "title": "Glowing Oceans, No Joke!",
         "fact": "Dolphins do not glow, but they can look like they do. Some plankton, mainly single-celled dinoflagellates, flash blue-green when the water around them is disturbed. A dolphin cutting through a bloom of them at night sets off that light as it goes, outlining its whole body in a glowing trail.",
         "animal": "Dolphin",
@@ -640,6 +716,7 @@
         "image": "/assets/facts/dolphin-4.jpg"
       },
       {
+        "id": 205,
         "title": "Names on a Watchlist",
         "fact": "In a 2026 Shark Bay study, researchers played 17 female dolphins the signature whistles of 11 adult males and watched the response by drone. Females likely to be fertile swam away from the whistles of males known for aggressively herding females, going on each male's track record across the population, not just their own encounters with him.",
         "animal": "Dolphin",
@@ -647,6 +724,7 @@
         "image": "/assets/facts/dolphin-5.jpg"
       },
       {
+        "id": 206,
         "title": "Half the Conversation",
         "fact": "A dolphin's signature whistle is not something it is born with. Calves learn theirs during the first year of life, and once the pattern is set it stays stable for decades. Signature whistles also make up around half of everything a freely interacting dolphin whistles, so identity is most of the conversation.",
         "animal": "Dolphin",
@@ -654,6 +732,7 @@
         "image": "/assets/facts/dolphin-6.jpg"
       },
       {
+        "id": 207,
         "title": "The Deliberately Imperfect Copy",
         "fact": "When one dolphin copies another's signature whistle, it never copies it exactly. Researchers found copies differed from the original in an average of 4.4 acoustic features, which keeps a copy audibly a copy rather than an impersonation. Copying is also rare, and happens almost entirely between very close companions.",
         "animal": "Dolphin",
@@ -661,6 +740,7 @@
         "image": "/assets/facts/dolphin-7.jpg"
       },
       {
+        "id": 208,
         "title": "Your Name in Someone Else's Voice",
         "fact": "Off the coast of Scotland, researchers rebuilt wild dolphins' signature whistles synthetically, stripping out every trace of the original animal's voice, then played them back. Eight of 12 dolphins called back on hearing their own whistle, and none responded to whistles that were not theirs. The identity is in the shape of the sound, not in who says it.",
         "animal": "Dolphin",
@@ -668,6 +748,7 @@
         "image": "/assets/facts/dolphin-8.jpg"
       },
       {
+        "id": 209,
         "title": "Mirror Babies",
         "fact": "Two dolphin calves at the National Aquarium in Baltimore were tracked at a mirror over three years. One began showing self-directed behavior at 5.5 months old, earlier than human children usually manage (about 12 to 15 months) and much earlier than chimpanzees. What mirror behavior proves about self-awareness is still genuinely debated.",
         "animal": "Dolphin",
@@ -677,6 +758,7 @@
     ],
     "clownfish": [
       {
+        "id": 69,
         "title": "Born Male, Die Female",
         "fact": "All clownfish are born male. When the dominant female of a group dies, the largest male changes sex to become female permanently. Finding Nemo got it backwards!",
         "animal": "Clownfish",
@@ -684,6 +766,7 @@
         "image": "/assets/facts/clownfish.jpg"
       },
       {
+        "id": 99,
         "title": "Fluffy Fish Friends",
         "fact": "Clownfish have a unique symbiotic relationship with sea anemones, providing each other with protection and food. The clownfish's mucus coating allows them to thrive among the anemone's stinging tentacles without harm!",
         "animal": "Clownfish",
@@ -691,6 +774,7 @@
         "image": "/assets/facts/clownfish-2.jpg"
       },
       {
+        "id": 118,
         "title": "Shrimp Anemone Alliance",
         "fact": "Clownfish and sea anemones share one of nature's most iconic partnerships. The clownfish gets shelter and protection from the anemone's stinging tentacles, while the anemone benefits from the clownfish cleaning parasites off its tentacles.",
         "animal": "Clownfish",
@@ -698,6 +782,7 @@
         "image": "/assets/facts/clownfish-3.jpg"
       },
       {
+        "id": 218,
         "title": "Shrinking to Survive a Heatwave",
         "fact": "During a marine heatwave that ran 4C above average, researchers measuring 134 clownfish found they got shorter. Not thinner, shorter, reabsorbing their own tissue. Around three quarters of the dominant fish shrank at least once, and a single shrinking event raised survival odds by 78%. Every fish that shrank more than once survived.",
         "animal": "Clownfish",
@@ -705,6 +790,7 @@
         "image": "/assets/facts/clownfish-4.jpg"
       },
       {
+        "id": 219,
         "title": "The Queue Nobody Jumps",
         "fact": "A clownfish group is a strict size ladder: breeding female on top, breeding male below her, then non-breeders in descending size. The small ones form a near-perfect queue where nobody leaves and nobody fights, because crossing open reef means being eaten and challenging a bigger fish means losing. They even limit their own growth to stay unthreatening. The wait can last decades.",
         "animal": "Clownfish",
@@ -712,6 +798,7 @@
         "image": "/assets/facts/clownfish-5.jpg"
       },
       {
+        "id": 220,
         "title": "Not Immune, Just Unsalted",
         "fact": "The old explanation was that clownfish coat themselves in anemone slime as a disguise. Research published in 2025 found something more precise: anemone stinging cells are triggered by sugars called sialic acids, and clownfish keep those at normal levels internally while holding them extremely low in their skin mucus alone. They are not wearing a disguise, they removed the trigger.",
         "animal": "Clownfish",
@@ -719,6 +806,7 @@
         "image": "/assets/facts/clownfish-6.jpg"
       },
       {
+        "id": 221,
         "title": "Thirty Years in One Anemone",
         "fact": "A clownfish is small enough to sit in your palm, and the oldest females are estimated to live around 30 years, roughly twice the longevity estimated for any other coral reef damselfish. That is why the waiting game works: when a rank-four fish queues for a breeding slot, it may genuinely be queuing for decades.",
         "animal": "Clownfish",
@@ -728,6 +816,7 @@
     ],
     "immortal-jellyfish": [
       {
+        "id": 11,
         "title": "Immortal Jellyfish",
         "fact": "The Turritopsis dohrnii jellyfish is biologically immortal! When it gets old or stressed, it can revert its cells back to a younger state, essentially hitting the reset button on aging.",
         "animal": "Jellyfish",
@@ -735,6 +824,7 @@
         "image": "/assets/facts/jellyfish.jpg"
       },
       {
+        "id": 200,
         "title": "Famous Under the Wrong Name",
         "fact": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that made it famous. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii.",
         "animal": "Jellyfish",
@@ -742,6 +832,7 @@
         "image": "/assets/facts/jellyfish-2.jpg"
       },
       {
+        "id": 201,
         "title": "A 72-Hour Rebuild",
         "fact": "The reset is not instant. A stressed or dying Turritopsis dohrnii settles onto a surface, collapses its bell into a small blob called a cyst, and within 24 to 72 hours rebuilds itself as a juvenile polyp. That polyp then buds off brand new jellyfish.",
         "animal": "Jellyfish",
@@ -749,6 +840,7 @@
         "image": "/assets/facts/jellyfish-3.jpg"
       },
       {
+        "id": 202,
         "title": "Cells That Switch Careers",
         "fact": "The immortal jellyfish rebuilds itself through transdifferentiation, where a fully mature cell converts straight into a different mature cell type, such as muscle becoming nerve. One researcher described the scale of it as a butterfly going back to being a caterpillar.",
         "animal": "Jellyfish",
@@ -756,6 +848,7 @@
         "image": "/assets/facts/jellyfish-4.jpg"
       },
       {
+        "id": 203,
         "title": "Smaller Than a Pinky Nail",
         "fact": "For all its fame, Turritopsis dohrnii is easy to miss. A fully grown adult is only about 4.5 mm across, roughly the size of a human pinky nail, with a bright red stomach glowing through a nearly transparent bell ringed by dozens of white tentacles.",
         "animal": "Jellyfish",
@@ -763,6 +856,7 @@
         "image": "/assets/facts/jellyfish-5.jpg"
       },
       {
+        "id": 204,
         "title": "A Silent Worldwide Invasion",
         "fact": "When researchers compared immortal jellyfish collected from Spain, Italy, Japan, Panama, and Florida, the genetic sequences came back identical, a sign they had spread across the planet recently. They are thought to hitchhike in the ballast water of cargo ships. One scientist called it a worldwide silent invasion.",
         "animal": "Jellyfish",
@@ -772,6 +866,7 @@
     ],
     "seahorse": [
       {
+        "id": 22,
         "title": "Dads Give Birth",
         "fact": "Seahorses are the only animals where the male gives birth! The female deposits eggs into the male's pouch, where he fertilizes and carries them until they hatch.",
         "animal": "Seahorse",
@@ -779,6 +874,7 @@
         "image": "/assets/facts/seahorse.jpg"
       },
       {
+        "id": 152,
         "title": "No Stomach, No Problem",
         "fact": "Seahorses have no stomach at all, so food passes through them so quickly that they must graze almost constantly, some species eating thousands of tiny shrimp a day just to survive. They're also famously bad swimmers, fluttering a tiny dorsal fin up to 35 times a second just to inch forward.",
         "animal": "Seahorse",
@@ -786,6 +882,7 @@
         "image": "/assets/facts/seahorse-2.jpg"
       },
       {
+        "id": 226,
         "title": "A Placenta Made of Skin",
         "fact": "The male seahorse does not just carry eggs, he gestates them. The pouch seals shut, the embryos become embedded in his tissue, and the heavily vascularised wall handles gas exchange and feeding like a placenta. The difference is what it is built from: a mammal's placenta grows from embryonic tissue, a seahorse's is converted skin.",
         "animal": "Seahorse",
@@ -793,6 +890,7 @@
         "image": "/assets/facts/seahorse-3.jpg"
       },
       {
+        "id": 227,
         "title": "He Broke His Immune System First",
         "fact": "Carrying young means carrying tissue your immune system reads as foreign. Seahorses solved it by demolition rather than regulation: they lost their spleen, their MHC II pathway was lost or rearranged, and three Toll-like receptors conserved across the other vertebrates are simply gone. A vertebrate missing all that should be defenseless.",
         "animal": "Seahorse",
@@ -800,6 +898,7 @@
         "image": "/assets/facts/seahorse-4.jpg"
       },
       {
+        "id": 228,
         "title": "Seawater Comes In With the Eggs",
         "fact": "When a female transfers her eggs, non-sterile seawater goes into the pouch with them, which then seals: a warm, nutrient-rich, enclosed space inside an animal that has just dismantled much of its immunity. The fix is chemical, not cellular. Hepcidin and lysozyme run high inside the pouch, handling bacteria the missing immune hardware no longer can.",
         "animal": "Seahorse",
@@ -809,6 +908,7 @@
     ],
     "shark": [
       {
+        "id": 59,
         "title": "Electric Sense",
         "fact": "Sharks have special jelly-filled pores called ampullae of Lorenzini that detect the tiny electrical fields produced by other animals' heartbeats. They can sense a heartbeat from over a meter away!",
         "animal": "Shark",
@@ -818,6 +918,7 @@
     ],
     "octopus": [
       {
+        "id": 1,
         "title": "Three Hearts of Love",
         "fact": "Octopuses have three hearts. Two pump blood to the gills, and one pumps it to the rest of the body. When they swim, the heart that delivers blood to the body actually stops beating, which is why they prefer crawling!",
         "animal": "Octopus",
@@ -825,6 +926,7 @@
         "image": "/assets/images/fun-facts-octopus.jpg"
       },
       {
+        "id": 83,
         "title": "Silent Signals",
         "fact": "Octopuses have an extraordinary ability to communicate through color and texture! They can rapidly change their skin color and pattern to send signals to each other or confuse predators, making them masters of disguise.",
         "animal": "Octopus",
@@ -832,6 +934,7 @@
         "image": "/assets/facts/octopus-2.jpg"
       },
       {
+        "id": 95,
         "title": "Octopus Ink Defense",
         "fact": "Did you know that octopuses have a unique defense mechanism in the form of ink? When threatened, they can release a cloud of ink that not only obscures their escape but can also temporarily impair a predator's sense of smell!",
         "animal": "Octopus",
@@ -839,6 +942,7 @@
         "image": "/assets/facts/octopus-3.jpg"
       },
       {
+        "id": 102,
         "title": "Silent Swimmers",
         "fact": "Octopuses have three hearts and blue blood, giving them a unique physiological edge in deep ocean environments. When they swim, one heart pumps blood to their body, while the other two focus on their gills!",
         "animal": "Octopus",
@@ -848,6 +952,7 @@
     ],
     "mantis-shrimp": [
       {
+        "id": 12,
         "title": "Mantis Shrimp Vision",
         "fact": "Mantis shrimp have 16 types of color receptors (humans have just 3). They can see ultraviolet AND polarized light. They also punch with the force of a bullet!",
         "animal": "Mantis Shrimp",
@@ -855,6 +960,7 @@
         "image": "/assets/facts/mantis-shrimp.jpg"
       },
       {
+        "id": 161,
         "title": "Married for Twenty Years",
         "fact": "Despite their fearsome punch, some mantis shrimp species are surprisingly devoted partners. Pairs like Lysiosquillina maculata mate for life, sharing the same burrow together for up to 20 years.",
         "animal": "Mantis Shrimp",
@@ -864,6 +970,7 @@
     ],
     "cuttlefish": [
       {
+        "id": 72,
         "title": "Hypnotic Skin",
         "fact": "Cuttlefish hypnotize prey by rippling hypnotic patterns across their skin at high speed. The dazzling light show freezes crabs and shrimp in place just long enough to strike.",
         "animal": "Cuttlefish",
@@ -871,6 +978,7 @@
         "image": "/assets/images/fun-facts-cuttlefish.jpg"
       },
       {
+        "id": 109,
         "title": "Underwater Fireworks",
         "fact": "Cuttlefish can change color and texture in the blink of an eye, using specialized skin cells called chromatophores. This makes them not only masters of camouflage but also mesmerizing underwater performers!",
         "animal": "Cuttlefish",
@@ -880,6 +988,7 @@
     ],
     "humpback-whale": [
       {
+        "id": 87,
         "title": "Sharks Can Be Chatty",
         "fact": "Humpback Whales are not just majestic giants; they're also the singers of the sea! Males produce complex songs that can last for 20 minutes and can be heard over vast distances, possibly for mating purposes or simply to communicate with their fellow swimmers.",
         "animal": "Humpback Whale",

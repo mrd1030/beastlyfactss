@@ -1,11 +1,41 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { X } from 'lucide-react';
+import { X, Heart, Share2, Check } from 'lucide-react';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { slugify } from '@/lib/utils/slugify';
 
-// Simple full-size photo popup for a fact - opened from the "Image" action on
-// FactCard/FactModal, and from gallery thumbnails. Deliberately lighter than
-// FactModal (no focus trap, no Save/Share) since its only job is showing the photo.
+// Full-size photo popup for a fact - opened from the "Image" action on
+// FactCard/FactModal, from gallery tiles, and from a Beastfile's fun facts.
+// Still lighter than FactModal (no focus trap) but it carries Save and Share,
+// because this is where someone actually looking at a photo decides to keep or
+// send it, and the alternative was closing it to reach the tile's controls.
+//
+// Share sends the fact's own page rather than the raw image file. That page
+// carries this photo as its og:image (Facts.jsx resolves it through
+// absoluteImageFor), so the preview shows the picture and the link still lands
+// somewhere readable.
 export default function ImageLightbox({ fact, imagePath, onClose }) {
+  const { toggleFavorite, isFavorite } = useFavoritesCtx();
+  const [copied, setCopied] = useState(false);
+
+  // Beastfile fun facts arrive from a generated payload; every other caller
+  // passes a full fact. Both carry the real fact id, which is what favourites
+  // are keyed by, but guard anyway rather than write a bad key.
+  const factId = fact?.id || fact?._id || null;
+  const fav = factId ? isFavorite(factId) : false;
+
+  const handleShare = () => {
+    if (!fact) return;
+    const url = `${window.location.origin}/facts/${slugify(fact.title)}/`;
+    if (navigator.share) {
+      navigator.share({ title: fact.title, text: `${fact.emoji || '🐾'} ${fact.fact}`, url }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(`${fact.emoji || '🐾'} ${fact.fact} ${url}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
   useEffect(() => {
     if (!fact) return;
 
@@ -58,13 +88,36 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
                 alt={`${fact.animal} - ${fact.title}`}
                 className="w-full max-h-[80vh] object-contain bg-muted"
               />
-              <div className="px-4 py-3 bg-card">
-                <p className="text-xs font-display font-semibold text-muted-foreground">
-                  {`${fact.category} • ${fact.animal}`}
-                </p>
-                <p className="font-display font-bold text-sm text-foreground mt-0.5">
-                  {fact.title}
-                </p>
+              <div className="px-4 py-3 bg-card flex items-end justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-xs font-display font-semibold text-muted-foreground">
+                    {`${fact.category} • ${fact.animal}`}
+                  </p>
+                  <p className="font-display font-bold text-sm text-foreground mt-0.5">
+                    {fact.title}
+                  </p>
+                </div>
+                <div className="flex items-center gap-1 flex-shrink-0">
+                  {factId && (
+                    <button
+                      onClick={() => toggleFavorite(factId)}
+                      className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
+                      aria-label={fav ? `Remove ${fact.title} from your Pack` : `Save ${fact.title} to your Pack`}
+                      aria-pressed={fav}
+                    >
+                      <Heart className={`w-4 h-4 ${fav ? 'fill-secondary text-secondary' : ''}`} />
+                      <span className="hidden sm:inline">{fav ? 'Saved' : 'Save'}</span>
+                    </button>
+                  )}
+                  <button
+                    onClick={handleShare}
+                    className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
+                    aria-label={`Share ${fact.title}`}
+                  >
+                    {copied ? <Check className="w-4 h-4 text-secondary" /> : <Share2 className="w-4 h-4" />}
+                    <span className="hidden sm:inline">{copied ? 'Copied!' : 'Share'}</span>
+                  </button>
+                </div>
               </div>
             </div>
           </motion.div>
