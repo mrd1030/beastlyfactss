@@ -517,13 +517,12 @@ export const mammalBeastfiles = [
       'The venom will not kill a person but the pain is severe and can last for weeks.',
       'It has ten sex chromosomes, where most mammals manage with two.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/platypus-hero.jpg',
     heroAlt:
       'A platypus swimming at the surface of a still river, its bill and dense brown fur visible',
     secondaryImage: '/assets/facts/platypus.jpg',
     secondaryAlt: 'A platypus on a riverbank showing its bill and webbed forefeet',
     relatedFiles: ['the-platypus-natures-most-wonderfully-bizarre-mammal'],
-    draft: true,
   },
   {
     id: 'wolverine',
@@ -551,12 +550,11 @@ export const mammalBeastfiles = [
       'It caches food in snow, which works as a natural refrigerator through the winter.',
       'Its fur resists frost build-up, which is why it was traditionally used to trim parka hoods.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/wolverine-hero.jpg',
     heroAlt:
       'A wolverine moving across deep snow in boreal forest, its dark coat and pale flank stripe visible',
     secondaryImage: '/assets/facts/wolverine.jpg',
     secondaryAlt: 'A wolverine in profile on snow showing its dense dark coat and pale flank stripe',
     relatedFiles: ['wolverine-facts-the-toughest-animal-pound-for-pound'],
-    draft: true,
   },
 ];

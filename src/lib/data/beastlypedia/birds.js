@@ -92,13 +92,12 @@ export const birdBeastfiles = [
       'The huddle moves in slow waves, so no bird stays on the cold edge for long.',
       'Males can lose close to half their body weight over the incubation fast.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/emperor-penguin-hero.jpg',
     heroAlt:
       'An emperor penguin standing on Antarctic sea ice in low light, its orange ear patches and pale bill visible',
     secondaryImage: '/assets/facts/penguin-2.jpg',
     secondaryAlt: 'An emperor penguin in profile on ice',
     relatedFiles: ['penguins-do-not-mate-for-life'],
-    draft: true,
   },
   {
     id: 'crow',

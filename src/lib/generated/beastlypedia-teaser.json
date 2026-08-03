@@ -112,6 +112,22 @@
     "heroAlt": "A wombat standing at the entrance to its burrow on grassy ground, stocky body and broad nose visible"
   },
   {
+    "id": "platypus",
+    "name": "Platypus",
+    "tagline": "Lays eggs, detects electricity, has venom, and glows under ultraviolet light.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/platypus-hero.jpg",
+    "heroAlt": "A platypus swimming at the surface of a still river, its bill and dense brown fur visible"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "tagline": "Thirty pounds of animal that drives bears off kills and crushes frozen bone.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/wolverine-hero.jpg",
+    "heroAlt": "A wolverine moving across deep snow in boreal forest, its dark coat and pale flank stripe visible"
+  },
+  {
     "id": "thorny-devil",
     "name": "Thorny Devil",
     "tagline": "A desert lizard that drinks through its skin.",
@@ -182,6 +198,14 @@
     "group": "Birds",
     "heroImage": "/assets/beastlypedia/victoria-crowned-pigeon-hero.jpg",
     "heroAlt": "A Victoria crowned pigeon walking on a rainforest floor showing its blue-grey plumage and lacy crest"
+  },
+  {
+    "id": "emperor-penguin",
+    "name": "Emperor Penguin",
+    "tagline": "Penguins do not mate for life, and the huddle is a moving machine.",
+    "group": "Birds",
+    "heroImage": "/assets/beastlypedia/emperor-penguin-hero.jpg",
+    "heroAlt": "An emperor penguin standing on Antarctic sea ice in low light, its orange ear patches and pale bill visible"
   },
   {
     "id": "crow",

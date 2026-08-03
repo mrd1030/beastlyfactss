@@ -9,6 +9,7 @@
     "crow",
     "cuttlefish",
     "dolphin",
+    "emperor-penguin",
     "fennec-fox",
     "gaboon-viper",
     "giraffe",
@@ -25,6 +26,7 @@
     "octopus",
     "pangolin",
     "panther-chameleon",
+    "platypus",
     "rhinoceros",
     "seahorse",
     "shark",
@@ -34,6 +36,7 @@
     "thorny-devil",
     "tiger",
     "victoria-crowned-pigeon",
+    "wolverine",
     "wombat"
   ],
   "groupSlugs": [
@@ -366,6 +369,38 @@
         "image": "/assets/facts/wombat.jpg"
       }
     ],
+    "platypus": [
+      {
+        "title": "Egg-Laying Mammal",
+        "fact": "The platypus is one of the few mammals that lays eggs! It also has a venomous spur on its hind legs and can detect electric fields with its bill.",
+        "animal": "Platypus",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/platypus.jpg"
+      },
+      {
+        "title": "Milk Without Nipples",
+        "fact": "Platypuses don't have nipples. Instead, mothers sweat milk through specialized patches of skin on their belly, and it pools into little grooves for the babies to lap up. It's one of several oddities that come from being a mammal that also lays eggs.",
+        "animal": "Platypus",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/platypus-2.jpg"
+      }
+    ],
+    "wolverine": [
+      {
+        "title": "The Molar That Turns Sideways",
+        "fact": "A wolverine has an upper molar set roughly 90 degrees inward, turning the back of its jaw into a shearing tool. That rotation is the difference between finding a carcass frozen solid in midwinter and being able to eat one. It lets an animal of about 15 kilograms open bone and take marrow that other scavengers walk away from, which is most of how a wolverine gets through a northern winter.",
+        "animal": "Wolverine",
+        "category": "Mammals",
+        "image": "/assets/facts/wolverine.jpg"
+      },
+      {
+        "title": "It Takes Food From Animals Twice Its Size",
+        "fact": "A wolverine weighs somewhere around 12 to 18 kilograms, about the same as a medium dog, and there are repeated accounts of one driving wolves and even bears off a carcass. It is not routine and it does not always work. What makes it possible at all is that a wolverine is built far heavier than its size suggests, with a thick hide, long claws and no apparent reverse gear, and a larger animal often decides the meal is not worth the trouble.",
+        "animal": "Wolverine",
+        "category": "Mammals",
+        "image": "/assets/facts/wolverine-2.jpg"
+      }
+    ],
     "thorny-devil": [
       {
         "title": "Drinks Through Its Skin",
@@ -506,6 +541,22 @@
         "animal": "Victoria Crowned Pigeon",
         "category": "Birds",
         "image": "/assets/facts/victoria-crowned-pigeon-3.jpg"
+      }
+    ],
+    "emperor-penguin": [
+      {
+        "title": "Emperors Rarely Reunite",
+        "fact": "The lifelong penguin romance is mostly myth. Emperor penguins pair with the same partner in consecutive seasons only about 15 percent of the time. Gentoos, by contrast, can exceed 90 percent. The difference is not devotion, it is whether the species builds a nest: a fixed spot gives two birds somewhere to find each other again.",
+        "animal": "Penguin",
+        "category": "Birds",
+        "image": "/assets/facts/penguin-2.jpg"
+      },
+      {
+        "title": "Sixty Five Days Without Food",
+        "fact": "A male emperor penguin incubates the egg balanced on his feet through the Antarctic winter, standing in temperatures below minus 40 Celsius in winds over 100 mph, without eating for roughly 65 days. He can lose close to half his body weight. The colony huddle rotates, so birds on the freezing outer edge slowly work their way back to the middle.",
+        "animal": "Penguin",
+        "category": "Birds",
+        "image": "/assets/facts/penguin-3.jpg"
       }
     ],
     "crow": [
