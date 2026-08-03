@@ -6,7 +6,7 @@ import ImageLightbox from '@/components/shared/ImageLightbox';
 import { imagePathFor } from '@/lib/data/factImages';
 import { getHomeChild, preloadHomeChildren } from '@/lib/homePreload';
 
-// Renders one of Home's 8 preloaded sections. NOT React.lazy()+Suspense:
+// Renders one of Home's preloaded sections. NOT React.lazy()+Suspense:
 // that always suspended on hydration's first render even after preloading
 // (see homePreload.js for why) - this instead reads a synchronous cache
 // that's already populated by the time hydration runs for a fresh page
@@ -59,7 +59,12 @@ export default function Home() {
       <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
       <HomeChild name="FactsToGuidesBanner" />
       <HomeChild name="CategoryBrowse" />
-      {/* Reference content: animal profiles + care guides, together */}
+      {/* Reference content: animal profiles + care guides, together.
+          Beastlypedia leads it because the wild-animal thread runs unbroken
+          from TrendingFacts through CategoryBrowse into here, and the fact
+          database is mostly wild animals. The handover to pet care happens
+          once, at EncyclopediaTeaser, instead of twice. */}
+      <HomeChild name="BeastlypediaTeaser" />
       <HomeChild name="EncyclopediaTeaser" />
       <HomeChild name="GuideSpotlight" />
       {/* Editorial content: articles + fiction, together */}

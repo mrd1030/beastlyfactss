@@ -1,4 +1,4 @@
-// Home's 8 internal sections used to be React.lazy()-loaded, preloaded via
+// Home's internal sections used to be React.lazy()-loaded, preloaded via
 // routePreload.js's import() calls before hydrateRoot() runs. That still
 // caused a hydration mismatch: React.lazy()'s own factory function returns a
 // BRAND NEW promise the first time IT calls it (during Home's first render),
@@ -6,7 +6,7 @@
 // browser - and React throws that promise to suspend regardless of how fast
 // it will resolve. Confirmed directly via a MutationObserver snapshot of the
 // true hydration-critical DOM: Home's own <Suspense fallback={null}> showed
-// nothing at all (all 8 sections missing) while the prerendered HTML had
+// nothing at all (every section missing) while the prerendered HTML had
 // them fully rendered - a structural mismatch, not a timing coincidence.
 //
 // The fix: don't use React.lazy() for these at all. Preload into this plain
@@ -22,6 +22,7 @@ const modules = {
   TrendingFacts: () => import('@/components/home/TrendingFacts'),
   FactsToGuidesBanner: () => import('@/components/home/FactsToGuidesBanner'),
   CategoryBrowse: () => import('@/components/home/CategoryBrowse'),
+  BeastlypediaTeaser: () => import('@/components/home/BeastlypediaTeaser'),
   EncyclopediaTeaser: () => import('@/components/home/EncyclopediaTeaser'),
   GuideSpotlight: () => import('@/components/home/GuideSpotlight'),
   CritterDigestPreview: () => import('@/components/home/CritterDigestPreview'),

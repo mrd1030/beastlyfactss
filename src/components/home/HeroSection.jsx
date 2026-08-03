@@ -135,16 +135,19 @@ export default function HeroSection({ onOpenFact }) {
                 whileTap={{ scale: 0.97 }}
                 className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
               >
-                🧠 Start with Verified Facts
+                Start with Verified Facts
                 <ArrowRight className="w-4 h-4" />
               </MotionLink>
+              {/* dark:text-secondary because muted-foreground on the dark card
+                  is too low-contrast to read as a second call to action next to
+                  the solid orange one. Light mode already has the contrast. */}
               <MotionLink
                 to="/encyclopedia/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2"
+                className="bg-card/80 border border-border text-muted-foreground dark:text-secondary font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center"
               >
-                📚 Browse the Encyclopedia
+                Browse the Encyclopedia
               </MotionLink>
             </div>
 

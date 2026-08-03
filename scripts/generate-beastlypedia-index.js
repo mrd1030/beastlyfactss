@@ -75,6 +75,22 @@ const payload = {
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(payload, null, 2)}\n`);
 
+// Separate, deliberately tiny file for the homepage teaser. The beastlypedia
+// data modules come to about 40KB, nearly all of it overview/origin/
+// conservation prose the teaser never renders, and the homepage is the page
+// least able to afford dead weight. A separate file rather than another key on
+// the index above, so the homepage does not also pull in factsFor.
+const teaserPath = path.join(process.cwd(), 'src/lib/generated/beastlypedia-teaser.json');
+const teaser = beastfiles.map((b) => ({
+  id: b.id,
+  name: b.name,
+  tagline: b.tagline,
+  group: b.group,
+  heroImage: b.heroImage,
+  heroAlt: b.heroAlt,
+}));
+fs.writeFileSync(teaserPath, `${JSON.stringify(teaser, null, 2)}\n`);
+
 const withFacts = Object.keys(factsFor).length;
 const totalFacts = Object.values(factsFor).reduce((n, l) => n + l.length, 0);
 console.log(

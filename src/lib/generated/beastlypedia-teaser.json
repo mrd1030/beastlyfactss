@@ -1,0 +1,130 @@
+[
+  {
+    "id": "pangolin",
+    "name": "Pangolin",
+    "tagline": "The only mammal covered in scales, and the most trafficked one on Earth.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/pangolin-hero.jpg",
+    "heroAlt": "A pangolin walking across dry ground at dusk, its overlapping keratin scales catching the low light"
+  },
+  {
+    "id": "fennec-fox",
+    "name": "Fennec Fox",
+    "tagline": "The smallest fox alive, built almost entirely around its ears.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/fennec-fox-hero.jpg",
+    "heroAlt": "A fennec fox on pale desert sand at golden hour with its enormous ears held upright"
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "tagline": "The largest rodent on Earth, and improbably calm about everything.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/capybara-hero.jpg",
+    "heroAlt": "A capybara at the edge of a river in soft morning light with reeds behind it"
+  },
+  {
+    "id": "narwhal",
+    "name": "Narwhal",
+    "tagline": "An Arctic whale whose tusk is really a tooth grown through its lip.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/narwhal-hero.jpg",
+    "heroAlt": "A narwhal at the surface among Arctic sea ice with its long spiral tusk clear of the water"
+  },
+  {
+    "id": "aye-aye",
+    "name": "Aye-Aye",
+    "tagline": "A nocturnal lemur that hunts grubs by tapping on wood and listening.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/aye-aye-hero.jpg",
+    "heroAlt": "An aye-aye clinging to a branch at night, its huge orange eyes reflecting the light"
+  },
+  {
+    "id": "thorny-devil",
+    "name": "Thorny Devil",
+    "tagline": "A desert lizard that drinks through its skin.",
+    "group": "Reptiles",
+    "heroImage": "/assets/beastlypedia/thorny-devil-hero.jpg",
+    "heroAlt": "A thorny devil lizard walking across red desert sand, its conical spines catching the low sunlight"
+  },
+  {
+    "id": "panther-chameleon",
+    "name": "Panther Chameleon",
+    "tagline": "Colour that signals mood, not background, in a different palette per valley.",
+    "group": "Reptiles",
+    "heroImage": "/assets/beastlypedia/panther-chameleon-hero.jpg",
+    "heroAlt": "A male panther chameleon gripping a branch in Madagascan foliage, banded in turquoise and red"
+  },
+  {
+    "id": "gaboon-viper",
+    "name": "Gaboon Viper",
+    "tagline": "The longest fangs of any snake, on an animal you will walk straight past.",
+    "group": "Reptiles",
+    "heroImage": "/assets/beastlypedia/gaboon-viper-hero.jpg",
+    "heroAlt": "A Gaboon viper resting in rainforest leaf litter, its geometric pattern blending into dead leaves"
+  },
+  {
+    "id": "green-anaconda",
+    "name": "Green Anaconda",
+    "tagline": "The heaviest snake alive, and almost helpless out of water.",
+    "group": "Reptiles",
+    "heroImage": "/assets/beastlypedia/green-anaconda-hero.jpg",
+    "heroAlt": "A green anaconda partly submerged at the edge of a tropical river with only its head above water"
+  },
+  {
+    "id": "glass-frog",
+    "name": "Glass Frog",
+    "tagline": "You can watch its heart beat through its own skin.",
+    "group": "Amphibians",
+    "heroImage": "/assets/beastlypedia/glass-frog-hero.jpg",
+    "heroAlt": "A glass frog on a backlit green leaf with its translucent underside showing internal organs"
+  },
+  {
+    "id": "blue-poison-dart-frog",
+    "name": "Blue Poison Dart Frog",
+    "tagline": "Bright enough to be a warning, and only toxic because of what it eats.",
+    "group": "Amphibians",
+    "heroImage": "/assets/beastlypedia/blue-poison-dart-frog-hero.jpg",
+    "heroAlt": "A blue poison dart frog on a wet dark leaf, its cobalt skin marked with black spots"
+  },
+  {
+    "id": "axolotl",
+    "name": "Axolotl",
+    "tagline": "A salamander that never grows up, and regrows almost anything.",
+    "group": "Amphibians",
+    "heroImage": "/assets/beastlypedia/axolotl-hero.jpg",
+    "heroAlt": "An axolotl in clear freshwater with its feathery external gills fanned out"
+  },
+  {
+    "id": "shoebill",
+    "name": "Shoebill",
+    "tagline": "A metre-tall bird that hunts by standing perfectly still for hours.",
+    "group": "Birds",
+    "heroImage": "/assets/beastlypedia/shoebill-hero.jpg",
+    "heroAlt": "A shoebill standing among African wetland reeds with its enormous shoe-shaped bill in profile"
+  },
+  {
+    "id": "victoria-crowned-pigeon",
+    "name": "Victoria Crowned Pigeon",
+    "tagline": "A turkey-sized pigeon wearing a crown of lace.",
+    "group": "Birds",
+    "heroImage": "/assets/beastlypedia/victoria-crowned-pigeon-hero.jpg",
+    "heroAlt": "A Victoria crowned pigeon walking on a rainforest floor showing its blue-grey plumage and lacy crest"
+  },
+  {
+    "id": "manta-ray",
+    "name": "Giant Manta Ray",
+    "tagline": "Seven metres across, filter-feeding, and one of the few fish to pass a mirror test.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/manta-ray-hero.jpg",
+    "heroAlt": "A giant manta ray gliding through open blue water seen from below with sunlight above"
+  },
+  {
+    "id": "leafy-sea-dragon",
+    "name": "Leafy Sea Dragon",
+    "tagline": "A relative of the seahorse pretending, very convincingly, to be seaweed.",
+    "group": "Marine Life",
+    "heroImage": "/assets/beastlypedia/leafy-sea-dragon-hero.jpg",
+    "heroAlt": "A leafy sea dragon among kelp with leaf-shaped appendages along its gold and green body"
+  }
+]
