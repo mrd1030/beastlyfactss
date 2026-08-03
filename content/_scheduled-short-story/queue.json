@@ -1,8 +1,6 @@
 {
   "description": "Ordered release queue for Chronicles of Dex/Otis. The weekly publish routine takes the next 2 filenames (one pair: matching Dex+Otis part numbers) per run, releasing every Monday. Keep entries paired and in ascending part order - the routine takes strictly the first 2, it doesn't re-sort or match part numbers itself.",
   "pending": [
-    "chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11.mdx",
-    "chronicles-of-otis-the-bunny-the-day-at-the-park-part-11.mdx",
     "chronicles-of-dex-the-bearded-dragon-the-guest-tank-part-12.mdx",
     "chronicles-of-otis-the-bunny-the-foster-part-12.mdx",
     "chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13.mdx",

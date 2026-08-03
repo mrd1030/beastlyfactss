@@ -1621,6 +1621,17 @@
       ]
     },
     {
+      "slug": "french-bulldog-feeding-guide",
+      "title": "French Bulldog Feeding Guide: Schedule and Diet",
+      "excerpt": "A French Bulldog's legendary gas is often less about diet and more about how the breed is built to breathe. Here's a",
+      "date": "2026-08-02",
+      "image": "/assets/images/french-bulldog-feeding.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs"
+      ]
+    },
+    {
       "slug": "gargoyle-gecko-cost-guide",
       "title": "Gargoyle Gecko Cost: Full Price Breakdown",
       "excerpt": "Gargoyle geckos sit at an interesting price point: genuinely affordable for a common reticulated animal, but morphs and",
@@ -2135,6 +2146,17 @@
       "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal.",
       "date": "2026-07-19",
       "image": "/assets/images/hedgehog-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "hedgehog-feeding-guide",
+      "title": "Hedgehog Feeding Guide: Schedule and Diet",
+      "excerpt": "Hedgehogs hide illness until they're genuinely sick, which is exactly why a full day of not eating deserves faster",
+      "date": "2026-08-02",
+      "image": "/assets/images/hedgehog-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -4377,6 +4399,13 @@
       "image": "/assets/images/dex/dex-chron10.jpg"
     },
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11",
+      "title": "Chronicles of Dex the Bearded Dragon: The Night He Breathed Fire (Part 11)",
+      "excerpt": "In a single vivid dream, Dex trades his terrarium for a mountain kingdom, becoming a true fire-breathing dragon of legend who hoards treasure and guards a grateful village, only to wake on his basking rock without so much as a wisp of smoke to show for it.",
+      "date": "2026-08-03",
+      "image": "/assets/images/dex/dex-chron11.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5",
       "title": "Chronicles of Dex the Bearded Dragon: The Pirate of the Sand Sea (Part 5)",
       "excerpt": "A long soak sends Dex into a dream where he commands a ship across a golden sand sea, in this swashbuckling short story about rivalry, command, and the one line even a pirate king won't cross.",
@@ -4438,6 +4467,13 @@
       "excerpt": "Katie dresses Otis in a flower crown for the neighborhood spring fair, and the house rabbit spends the whole afternoon torn between righteous indignation and undisguised delight at the attention.",
       "date": "2026-07-24",
       "image": "/assets/images/otis/otis-chron9.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-day-at-the-park-part-11",
+      "title": "Chronicles of Otis the Bunny: The Day at the Park (Part 11)",
+      "excerpt": "Katie takes Otis to a public park for the first time, where a parade of off-leash dogs, many times his size and thrilled to meet him, forces the self-assured rabbit to figure out what territorial confidence even means in the open grass.",
+      "date": "2026-08-03",
+      "image": "/assets/images/otis/otis-chron11.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him",
