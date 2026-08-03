@@ -11,7 +11,7 @@ export const marineBeastfiles = [
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'The giant manta is the largest ray in the world, reaching around seven metres across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funnelling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behaviour consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
+      'The giant manta is the largest ray in the world, reaching around seven metres across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funnelling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behavior consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
     origin:
       'Tropical, subtropical and warm temperate waters worldwide, mostly offshore and oceanic, gathering at coastal cleaning stations and seasonal feeding grounds.',
     notableTraits: [

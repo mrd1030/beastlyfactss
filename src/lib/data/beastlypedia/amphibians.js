@@ -41,7 +41,7 @@ export const amphibianBeastfiles = [
     habitat: 'Rainforest',
     group: 'Amphibians',
     overview:
-      'This is a small cobalt-blue frog, spotted with black, from a handful of forest islands in southern Suriname. The colour is aposematic: it advertises toxicity rather than hiding it, and predators learn to leave it alone. The important detail is that the toxicity is borrowed. Poison dart frogs do not manufacture their alkaloid defences from scratch; they sequester them from a diet of mites, ants and other small arthropods. Raised on captive-bred insects, they are effectively harmless, which is why frogs in collections carry no danger at all.',
+      'This is a small cobalt-blue frog, spotted with black, from a handful of forest islands in southern Suriname. The color is aposematic: it advertises toxicity rather than hiding it, and predators learn to leave it alone. The important detail is that the toxicity is borrowed. Poison dart frogs do not manufacture their alkaloid defenses from scratch; they sequester them from a diet of mites, ants and other small arthropods. Raised on captive-bred insects, they are effectively harmless, which is why frogs in collections carry no danger at all.',
     origin:
       'The Sipaliwini savannah of southern Suriname, in small patches of rainforest surrounded by open grassland, effectively isolated from one another.',
     notableTraits: [
@@ -82,12 +82,12 @@ export const amphibianBeastfiles = [
       'Regrows limbs, spinal cord, jaw and parts of the heart and brain',
       'Regenerates with little or no scar tissue',
       'Breathes through gills, skin and simple lungs',
-      'Wild colour is dark and mottled; the familiar pink is a captive variant',
+      'Wild color is dark and mottled; the familiar pink is a captive variant',
     ],
     conservation:
       'Critically Endangered in the wild, with surveys finding very few remaining individuals, driven by urban expansion, water quality and introduced fish. The species is nonetheless extremely common in captivity, which makes its status easy to misread.',
     funFacts: [
-      'The pale pink axolotl everyone recognises is a captive-bred variant. Wild ones are dark, mottled and much harder to see.',
+      'The pale pink axolotl everyone recognizes is a captive-bred variant. Wild ones are dark, mottled and much harder to see.',
       'It can regrow the same limb repeatedly without the result degrading.',
       'Injected with the right hormone it can be forced to metamorphose into a land salamander, which does not happen naturally.',
     ],

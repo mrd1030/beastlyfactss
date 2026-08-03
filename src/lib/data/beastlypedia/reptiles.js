@@ -43,7 +43,7 @@ export const reptileBeastfiles = [
       'Skin channels move water to the mouth by capillary action',
       'Eats ants almost exclusively, thousands per day',
       'A false head on the back of the neck to present to predators',
-      'Changes colour with temperature, paler when hot',
+      'Changes color with temperature, paler when hot',
       'Rocking gait that disguises its outline as it moves',
     ],
     conservation:
@@ -69,19 +69,19 @@ export const reptileBeastfiles = [
     factAnimal: 'Chameleon',
     name: 'Panther Chameleon',
     scientific: 'Furcifer pardalis',
-    tagline: 'Colour that signals mood, not background, in a different palette per valley.',
+    tagline: 'Color that signals mood, not background, in a different palette per valley.',
     habitat: 'Rainforest',
     group: 'Reptiles',
     overview:
-      'The panther chameleon is the one people picture when they picture a chameleon: a stocky Madagascan lizard in bands of turquoise, red and green, with independently swivelling turret eyes and a tongue it fires at prey. The colour change is widely misunderstood. It is not camouflage matching a background. Chameleons shift colour mainly to signal mood, temperature and readiness to breed, and they do it by rearranging nanocrystals in a layer of skin cells to change which wavelengths reflect, rather than by shuffling pigment. Males from different parts of Madagascar carry strikingly different colour schemes, known as locales.',
+      'The panther chameleon is the one people picture when they picture a chameleon: a stocky Madagascan lizard in bands of turquoise, red and green, with independently swivelling turret eyes and a tongue it fires at prey. The color change is widely misunderstood. It is not camouflage matching a background. Chameleons shift color mainly to signal mood, temperature and readiness to breed, and they do it by rearranging nanocrystals in a layer of skin cells to change which wavelengths reflect, rather than by shuffling pigment. Males from different parts of Madagascar carry strikingly different color schemes, known as locales.',
     origin:
       'Endemic to northern and eastern Madagascar, in coastal lowland forest, scrub and edge habitat, including trees around cultivated land.',
     notableTraits: [
-      'Colour signals mood and temperature, not background matching',
-      'Changes colour by tuning nanocrystals in the skin, not by moving pigment',
+      'Color signals mood and temperature, not background matching',
+      'Changes color by tuning nanocrystals in the skin, not by moving pigment',
       'Eyes rotate independently for near-360 degree vision',
       'A projectile tongue that can exceed its own body length',
-      'Distinct regional colour forms, called locales',
+      'Distinct regional color forms, called locales',
     ],
     conservation:
       'Least Concern, and unusually adaptable for a Madagascan reptile: it tolerates disturbed and edge habitat well. It is collected for the international pet trade, which is regulated by export quota.',
