@@ -145,16 +145,19 @@ export default function BeastfileDetail() {
         <div className="lg:flex lg:gap-8 lg:items-start">
           {secondaryImage && (
             <div className="lg:w-2/5 lg:flex-shrink-0 mb-6 lg:mb-0">
-              {/* No variant on purpose. Secondary images are portrait by
-                  preference, and every generated tier is a `cover` crop to a
-                  landscape or square box, which would cut the subject. This
-                  serves the uncropped original; a portrait tier in
-                  generate-thumbnails.js is the proper fix and is worth doing
-                  before this section carries 15 entries. */}
+              {/* Cropped by CSS rather than by a generated variant: landscape
+                  on mobile where it sits full width between blocks of text, and
+                  portrait on desktop where it stands beside the field sections
+                  and a wide image would leave the column short.
+                  object-cover crops from the centre of the full-size original,
+                  so a source of either orientation works. The generated -card
+                  tier is deliberately not used here - it is already a cover crop
+                  to a fixed landscape box, and cropping a crop would cut the
+                  subject twice. */}
               <img
                 src={secondaryImage}
                 alt={secondaryAlt || name}
-                className="w-full rounded-2xl"
+                className="w-full rounded-2xl object-cover aspect-[16/10] lg:aspect-[3/4]"
                 loading="lazy"
                 decoding="async"
               />
