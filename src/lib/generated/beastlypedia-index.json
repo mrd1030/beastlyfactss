@@ -16,6 +16,7 @@
     "glass-frog",
     "gray-wolf",
     "green-anaconda",
+    "honey-badger",
     "humpback-whale",
     "immortal-jellyfish",
     "leafy-sea-dragon",
@@ -367,6 +368,22 @@
         "animal": "Wombat",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/wombat.jpg"
+      }
+    ],
+    "honey-badger": [
+      {
+        "title": "Snake Venom? No Thanks",
+        "fact": "Honey badgers are nearly immune to snake venom. They've been filmed getting bitten by cobras, going limp for a few minutes, then waking up and continuing to eat the snake.",
+        "animal": "Honey Badger",
+        "category": "Mammals",
+        "image": "/assets/facts/honey-badger.jpg"
+      },
+      {
+        "title": "The Loose-Skin Escape Artist",
+        "fact": "A honey badger's skin is so thick and loose that it can twist almost freely inside it, letting the animal spin around and bite an attacker even while pinned by the scruff of its neck. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet.",
+        "animal": "Honey Badger",
+        "category": "Mammals",
+        "image": "/assets/facts/honey-badger-2.jpg"
       }
     ],
     "platypus": [

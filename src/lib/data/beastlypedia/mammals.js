@@ -484,13 +484,12 @@ export const mammalBeastfiles = [
       'The loose skin is the actual trick: a predator gets a grip on hide, not on badger.',
       'One studied individual repeatedly stacked objects to escape an enclosure.',
     ],
-    heroImage: null,
+    heroImage: '/assets/beastlypedia/honey-badger-hero.jpg',
     heroAlt:
       'A honey badger walking across dry ground, its black body and broad white back stripe clearly visible',
     secondaryImage: '/assets/facts/honey-badger.jpg',
     secondaryAlt: 'A honey badger in profile showing its pale back stripe and heavy claws',
     relatedFiles: ['honey-badgers-the-toughest-little-troublemakers-on-the-planet'],
-    draft: true,
   },
   {
     id: 'platypus',

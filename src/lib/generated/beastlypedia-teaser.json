@@ -112,6 +112,14 @@
     "heroAlt": "A wombat standing at the entrance to its burrow on grassy ground, stocky body and broad nose visible"
   },
   {
+    "id": "honey-badger",
+    "name": "Honey Badger",
+    "tagline": "Loose skin, a bad attitude, and genuine resistance to cobra venom.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/honey-badger-hero.jpg",
+    "heroAlt": "A honey badger walking across dry ground, its black body and broad white back stripe clearly visible"
+  },
+  {
     "id": "platypus",
     "name": "Platypus",
     "tagline": "Lays eggs, detects electricity, has venom, and glows under ultraviolet light.",
