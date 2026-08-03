@@ -1,53 +1,126 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { slugify } from '@/lib/utils/slugify';
+import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
+import buildStamp from '@/lib/generated/build-stamp.json';
 
-// 4, matching what the old Sanity-backed version rendered (it sliced the
-// fetched results to 4). The selection logic below can produce more, so this
-// keeps the visible card count unchanged by the migration.
+// 4, matching what the old Sanity-backed version rendered.
 const RELATED_LIMIT = 4;
 
-// Sorted once at module load from a static import (mdx-meta.json), so the
-// order is byte-identical during prerendering and at hydration time. Every
-// entry carries a real `date`, so nothing here falls back to a live clock.
-const postsByDateDesc = [...mdxPosts].sort(
-  (a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0)
-);
+// Matches the worker's gate in public/_worker.js so a post appears here on the
+// same day it appears in the feed.
+const SITE_TIMEZONE = 'America/New_York';
 
 const idOf = (post) => post._id || post.slug?.current || post.id;
+const dayOf = (post) => String(post.publishedAt || '').slice(0, 10);
+
+// MDX posts carry `allCategories`; older shapes carry a single `category` or a
+// `categorySlug`. Everything is compared through slugify, the same way
+// Search.jsx reconciles the two.
+function categorySlugsOf(post) {
+  const list = post.allCategories?.length
+    ? post.allCategories
+    : (post.category ? [post.category] : []);
+  const out = new Set(list.map(slugify));
+  if (post.categorySlug) out.add(slugify(post.categorySlug));
+  return out;
+}
+
+function tagsOf(post) {
+  return new Set((post.tags || []).map((t) => String(t).toLowerCase()));
+}
+
+// Three tiers, each shuffled, filled in order until there are four:
+//   1. same category
+//   2. shares at least one tag, most shared tags first
+//   3. anything else
+//
+// Tier 2 is what makes "similar" mean something beyond the category. It is
+// shuffled before it is sorted by shared-tag count, and Array.sort is stable,
+// so posts of equal similarity stay in random order rather than always
+// resolving to the same ones.
+function selectRelated({ currentPostId, categorySlug, cutoff, seed }) {
+  const current = mdxPosts.find((p) => idOf(p) === currentPostId);
+
+  const pool = mdxPosts.filter(
+    (p) => idOf(p) !== currentPostId && dayOf(p) <= cutoff
+  );
+
+  const wantedCats = categorySlug
+    ? new Set([slugify(categorySlug)])
+    : categorySlugsOf(current || {});
+  const wantedTags = tagsOf(current || {});
+
+  const sameCategory = [];
+  const sharesTag = [];
+  const rest = [];
+
+  for (const p of pool) {
+    if ([...categorySlugsOf(p)].some((c) => wantedCats.has(c))) {
+      sameCategory.push(p);
+      continue;
+    }
+    let shared = 0;
+    for (const t of tagsOf(p)) if (wantedTags.has(t)) shared++;
+    if (shared > 0) sharesTag.push({ post: p, shared });
+    else rest.push(p);
+  }
+
+  const picked = [];
+  const take = (list) => {
+    for (const p of list) {
+      if (picked.length >= RELATED_LIMIT) return;
+      picked.push(p);
+    }
+  };
+
+  take(seededShuffle(sameCategory, seed));
+  if (picked.length < RELATED_LIMIT) {
+    take(
+      seededShuffle(sharesTag, seed + 1)
+        .sort((a, b) => b.shared - a.shared)
+        .map((x) => x.post)
+    );
+  }
+  if (picked.length < RELATED_LIMIT) take(seededShuffle(rest, seed + 2));
+
+  return picked;
+}
 
 export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost }) {
+  // Two passes on purpose.
+  //
+  // The first render has to be byte-identical between prerender.mjs's capture
+  // and hydration, so it uses a seed derived from the post id (stable, and
+  // different per article) and the build date from build-stamp.json rather than
+  // a live clock. Calling Math.random() or new Date() during that render is the
+  // exact thing that produced React #418/#423 elsewhere on this site.
+  //
+  // After mount, neither constraint applies: a real random seed goes in, so the
+  // selection differs on every visit, and the real date replaces the build date
+  // so a post published since the last deploy is included and one that has not
+  // reached its date yet is dropped.
+  const [runtime, setRuntime] = useState(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.__IS_PRERENDER__) return;
+    setRuntime({
+      seed: Math.floor(Math.random() * 0x7fffffff),
+      cutoff: new Date().toLocaleDateString('en-CA', { timeZone: SITE_TIMEZONE }),
+    });
+  }, [currentPostId]);
+
   const related = useMemo(() => {
     if (!currentPostId) return [];
-
-    const candidates = postsByDateDesc.filter(p => idOf(p) !== currentPostId);
-
-    // The caller only has a categorySlug for posts that carry one; MDX posts
-    // carry a human-readable `category` instead, so fall back to the current
-    // post's own category. Matching goes through slugify on both sides, the
-    // same way Search.jsx reconciles the two shapes.
-    const currentPost = postsByDateDesc.find(p => idOf(p) === currentPostId);
-    const wanted = slugify(categorySlug || currentPost?.category || '');
-
-    const sameCategory = wanted
-      ? candidates.filter(
-          p => slugify(p.categorySlug) === wanted || slugify(p.category) === wanted
-        ).slice(0, RELATED_LIMIT)
-      : [];
-
-    if (sameCategory.length >= RELATED_LIMIT) return sameCategory;
-
-    // Top up with the most recent posts from any category, mirroring the old
-    // fallback query that ran whenever the category match came up short.
-    const picked = new Set(sameCategory.map(idOf));
-    const filler = candidates
-      .filter(p => !picked.has(idOf(p)))
-      .slice(0, RELATED_LIMIT - sameCategory.length);
-
-    return [...sameCategory, ...filler];
-  }, [currentPostId, categorySlug]);
+    return selectRelated({
+      currentPostId,
+      categorySlug,
+      cutoff: runtime?.cutoff ?? buildStamp.generatedAt,
+      seed: runtime?.seed ?? hashString(String(currentPostId)),
+    });
+  }, [currentPostId, categorySlug, runtime]);
 
   if (related.length === 0) return null;
 
@@ -64,7 +137,7 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
       <div className="space-y-3">
         {related.map((post, i) => (
           <motion.div
-            key={post._id}
+            key={idOf(post)}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.05 }}

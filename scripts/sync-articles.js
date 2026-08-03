@@ -196,3 +196,19 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
 fs.mkdirSync('./src/lib/generated', { recursive: true });
 fs.writeFileSync('./src/lib/generated/mdx-meta.json', JSON.stringify(mdxMeta, null, 2));
 console.log(`Synced ${mdxMeta.length} MDX post metadata entries to src/lib/generated/mdx-meta.json`);
+
+// The build date, as a bundle constant, for anything that has to hide
+// future-dated posts before hydration finishes.
+//
+// A component cannot call new Date() during its first render to do that: at
+// prerender the module runs at build time and at a real visit it runs later, so
+// the two disagree the moment a post crosses its publish date between deploy
+// and visit, which is a genuine hydration mismatch. This value is baked into
+// the bundle, so it is identical in both, and the real clock is only consulted
+// after mount. See YouMayAlsoLike.jsx.
+//
+// Its own file rather than a key on mdx-meta.json, which is a bare array that
+// several consumers index directly.
+const stamp = { generatedAt: new Date().toLocaleDateString('en-CA', { timeZone: 'America/New_York' }) };
+fs.writeFileSync('./src/lib/generated/build-stamp.json', `${JSON.stringify(stamp, null, 2)}\n`);
+console.log(`Build stamp: ${stamp.generatedAt}`);
