@@ -83,6 +83,29 @@
         "image": "/assets/facts/pangolin-8.jpg"
       }
     ],
+    "fennec-fox": [
+      {
+        "title": "Ears That Work as Radiators",
+        "fact": "A fennec's ears run to about 15 centimetres on an animal that weighs under two kilograms, the largest ears relative to body size of any carnivore. They are not only for listening. They carry a dense network of shallow blood vessels, and the fox dumps heat through them into the air, which lets it hold its temperature down without panting away water it cannot spare. The hearing is real too: a fennec can track insects and small rodents moving under the sand and dig straight down onto them.",
+        "animal": "Fennec Fox",
+        "category": "Mammals",
+        "image": "/assets/facts/fennec-fox.jpg"
+      },
+      {
+        "title": "It Can Live Without Drinking",
+        "fact": "A fennec can go its whole life without drinking free water. It takes moisture from what it eats, and its kidneys concentrate urine far enough to keep the loss on the other side very small. Burrowing does the rest, since the air down in the den stays cooler and far more humid than the surface. Given water a fennec will drink it, but in most of its range there is nothing to drink.",
+        "animal": "Fennec Fox",
+        "category": "Mammals",
+        "image": "/assets/facts/fennec-fox-2.jpg"
+      },
+      {
+        "title": "Fur on the Soles of Its Feet",
+        "fact": "The undersides of a fennec's feet are covered in thick fur, right over the pads. It works as insulation on sand hot enough to burn an unprotected foot, and it spreads the animal's weight so it can move across a loose surface without sinking. The same feet dig fast. A fennec can put itself out of sight underground in a few seconds, and dens often run several metres with more than one way out.",
+        "animal": "Fennec Fox",
+        "category": "Mammals",
+        "image": "/assets/facts/fennec-fox-3.jpg"
+      }
+    ],
     "capybara": [
       {
         "title": "The Chillest Animal",
@@ -163,6 +186,29 @@
         "image": "/assets/facts/chameleon-4.jpg"
       }
     ],
+    "green-anaconda": [
+      {
+        "title": "Heaviest, Not Longest",
+        "fact": "The green anaconda is the heaviest snake alive and routinely gets called the biggest, which is only half right. Reticulated pythons grow longer, past seven metres, but an anaconda is built on a completely different scale of thickness and can pass 100 kilograms where a python of similar length is nowhere near it. Reliable measurements are rarer than the stories suggest. Claims above nine metres have circulated for over a century without one being confirmed.",
+        "animal": "Green Anaconda",
+        "category": "Reptiles",
+        "image": "/assets/facts/green-anaconda.jpg"
+      },
+      {
+        "title": "Constriction Is About Blood, Not Bones",
+        "fact": "The old description of constriction is that the snake crushes its prey or suffocates it. Measurements on constricting snakes point somewhere else: the pressure a large constrictor applies is enough to stop blood circulating, and circulatory arrest kills far faster than suffocation would. The snake tightens as its prey breathes out, so each exhalation gives away a little more room and never gets it back.",
+        "animal": "Green Anaconda",
+        "category": "Reptiles",
+        "image": "/assets/facts/green-anaconda-2.jpg"
+      },
+      {
+        "title": "It Gives Birth, It Does Not Lay Eggs",
+        "fact": "Anacondas are viviparous. Females carry their young internally and give birth to live snakes, often twenty to forty at a time, each already around half a metre long and able to swim and hunt immediately. There is no parental care after that. Females are also far larger than males, which is unusual enough among snakes to be worth saying plainly: a big female can be several times the weight of any male she breeds with.",
+        "animal": "Green Anaconda",
+        "category": "Reptiles",
+        "image": "/assets/facts/green-anaconda-3.jpg"
+      }
+    ],
     "glass-frog": [
       {
         "title": "See-Through Bellies",
@@ -170,6 +216,29 @@
         "animal": "Glass Frog",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/glass-frog.jpg"
+      }
+    ],
+    "blue-poison-dart-frog": [
+      {
+        "title": "It Is Not a Separate Species",
+        "fact": "The blue poison dart frog is one of the most photographed frogs on Earth and it is not its own species. It is a colour morph of Dendrobates tinctorius, a widespread South American frog whose populations look startlingly different from one patch of forest to the next. The blue form comes from isolated forest islands in southern Suriname, cut off in savannah, and the name azureus it was given as a species is now treated as one of those local forms rather than a species boundary.",
+        "animal": "Blue Poison Dart Frog",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/blue-poison-dart-frog.jpg"
+      },
+      {
+        "title": "Captive Ones Are Harmless",
+        "fact": "These frogs do not make their toxins. They accumulate them from what they eat in the wild, mainly mites and ants carrying alkaloids of their own, and concentrate the compounds in glands in the skin. Take that diet away and the toxicity goes with it. Captive-bred frogs raised on fruit flies and springtails are effectively non-toxic, which is why keeping one is possible at all and why a wild-caught animal is a completely different proposition.",
+        "animal": "Blue Poison Dart Frog",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/blue-poison-dart-frog-2.jpg"
+      },
+      {
+        "title": "The Poison Dart Name Is Borrowed",
+        "fact": "Around 170 species get called poison dart frogs and only three were ever used that way, all in the genus Phyllobates, in a small area of western Colombia. Hunters wiped a dart tip across a frog's back and the coating stayed effective for months. Everything else in the family inherited the name by association, including this one, which has never had anything to do with a dart.",
+        "animal": "Blue Poison Dart Frog",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/blue-poison-dart-frog-3.jpg"
       }
     ],
     "axolotl": [
@@ -195,6 +264,29 @@
         "animal": "Shoebill",
         "category": "Birds",
         "image": "/assets/facts/shoebill.jpg"
+      }
+    ],
+    "victoria-crowned-pigeon": [
+      {
+        "title": "A Pigeon the Size of a Turkey",
+        "fact": "The Victoria crowned pigeon is the largest pigeon in the world, around 75 centimetres long and up to roughly 2.5 kilograms, which is to say a pigeon you would notice from across a field. It is blue-grey with a maroon breast, a deep red eye, and a fan of crest feathers standing upright on its head. It spends nearly all of its time walking the forest floor of northern New Guinea, and flies up mainly to roost or to get away from something.",
+        "animal": "Victoria Crowned Pigeon",
+        "category": "Birds",
+        "image": "/assets/facts/victoria-crowned-pigeon.jpg"
+      },
+      {
+        "title": "The Crest Is Lace, Not Spikes",
+        "fact": "Up close the crown is not the stiff fan it looks like at a distance. Each feather in it has a bare shaft for most of its length and opens into a small triangular tip of white barbs at the end, so the whole crest reads as an open mesh with a dotted white edge. Two other crowned pigeon species carry their own versions, and the white tips are the quickest way to tell this one apart from them.",
+        "animal": "Victoria Crowned Pigeon",
+        "category": "Birds",
+        "image": "/assets/facts/victoria-crowned-pigeon-2.jpg"
+      },
+      {
+        "title": "Both Parents Make Milk",
+        "fact": "Pigeons feed their chicks on crop milk, a thick protein and fat rich secretion produced by cells lining the crop, and both the male and the female make it. It is not milk in any mammalian sense and contains no lactose, but it does the same job, and a crowned pigeon chick lives on nothing else for its first days. Pairs usually raise a single chick, and both birds sit the egg, the male through the day and the female overnight.",
+        "animal": "Victoria Crowned Pigeon",
+        "category": "Birds",
+        "image": "/assets/facts/victoria-crowned-pigeon-3.jpg"
       }
     ],
     "manta-ray": [

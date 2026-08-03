@@ -247,30 +247,42 @@ export default function BeastfileDetail() {
                       <button
                         type="button"
                         onClick={() => setPhotoFact(f)}
-                        className="group w-full text-left flex gap-3 rounded-xl -mx-2 px-2 py-2 hover:bg-background/60 focus:bg-background/60 focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-colors"
+                        className="group w-full text-left flex gap-3 sm:gap-4 rounded-xl -mx-2 px-2 py-2 hover:bg-background/60 focus:bg-background/60 focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-colors"
                         aria-label={`Show the photo for ${f.title}`}
                       >
-                        <LocalImage
-                          src={f.image}
-                          alt=""
-                          className="w-12 h-12 rounded-lg object-cover flex-shrink-0 border border-border/60"
-                          width={48}
-                          height={48}
-                        />
-                        <span className="min-w-0">
-                          <span className="flex items-center gap-1.5 font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
-                            {f.title}
-                            <ImageIcon className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity" />
+                        {/* 80/96px off the 240px -thumb tier, so it still
+                            downscales rather than stretching. A card tier would
+                            frame these better but /assets/facts holds 257
+                            originals against the 36 used here, which is about a
+                            thousand generated files for the other 221. */}
+                        <span className="relative flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden border border-border/60">
+                          <LocalImage
+                            src={f.image}
+                            alt=""
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            width={96}
+                            height={96}
+                          />
+                          {/* Fixed black rather than a theme token: this sits on
+                              a photo, and bg-foreground would invert to a pale
+                              wash in dark mode. */}
+                          <span className="absolute inset-0 flex items-center justify-center bg-black/45 opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity">
+                            <ImageIcon className="w-5 h-5 text-white" />
                           </span>
-                          <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <span className="block font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
+                            {f.title}
+                          </span>
+                          <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-1">
                             {f.fact}
                           </span>
                         </span>
                       </button>
                     ) : (
                       // No photo resolved, so there is nothing to open.
-                      <div className="flex gap-3 px-2 py-2">
-                        <span className="w-12 flex-shrink-0 text-secondary font-display font-bold text-center">
+                      <div className="flex gap-3 sm:gap-4 px-2 py-2">
+                        <span className="w-20 sm:w-24 flex-shrink-0 text-secondary font-display font-bold text-center">
                           {i + 1}
                         </span>
                         <span className="min-w-0">

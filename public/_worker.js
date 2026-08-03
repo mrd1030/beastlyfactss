@@ -175,6 +175,18 @@ const FACT_IMAGES = {
   254: '/assets/facts/rhino-2.jpg', // "It Grows Back"
   255: '/assets/facts/sloth-3.jpg', // "The Weekly Trip That Kills Them"
   256: '/assets/facts/sloth-4.jpg', // "The Fur Is an Ecosystem"
+  257: '/assets/facts/fennec-fox.jpg',
+  258: '/assets/facts/fennec-fox-2.jpg',
+  259: '/assets/facts/fennec-fox-3.jpg',
+  260: '/assets/facts/green-anaconda.jpg',
+  261: '/assets/facts/green-anaconda-2.jpg',
+  262: '/assets/facts/green-anaconda-3.jpg',
+  263: '/assets/facts/blue-poison-dart-frog.jpg',
+  264: '/assets/facts/blue-poison-dart-frog-2.jpg',
+  265: '/assets/facts/blue-poison-dart-frog-3.jpg',
+  266: '/assets/facts/victoria-crowned-pigeon.jpg',
+  267: '/assets/facts/victoria-crowned-pigeon-2.jpg',
+  268: '/assets/facts/victoria-crowned-pigeon-3.jpg',
   239: '/assets/facts/cat-9.jpg',
   240: '/assets/facts/cat-10.jpg',
   241: '/assets/facts/lion.jpg',

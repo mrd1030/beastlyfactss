@@ -1,14 +1,18 @@
 # Beastlypedia fact gaps
 
 Beastfile pages pull their Fun Facts straight from the fact database, and each
-one opens its photo in a lightbox when clicked. Eleven of the sixteen Beastfiles
-have real facts to pull. **Five do not**, so those pages currently fall back to
-the short `funFacts` strings written into the Beastfile data, which are plain
-text with no photo behind them.
+one opens its photo in a lightbox when clicked. Fifteen of the sixteen
+Beastfiles have real facts to pull.
 
-This file holds finished replacements: fifteen facts written to database
-standard, three per animal, each waiting only on a photo. Once the photos exist
-they get promoted into `facts.js` and stop being a fallback.
+**One does not: the Gaboon viper.** That page falls back to the short `funFacts`
+strings written into the Beastfile data, which are plain text with no photo
+behind them.
+
+Twelve of the original fifteen facts here shipped on 2026-08-03 as ids 257 to
+268, covering the fennec fox, green anaconda, blue poison dart frog and Victoria
+crowned pigeon. Only the three viper facts are still waiting, held back because
+usable reference photos of the species are hard to come by: the nasal horns are
+the identifying feature and generated images keep getting them wrong.
 
 The photo is not optional here. It is the entire interaction, and a promoted
 fact whose image never lands renders as dead text in a list where every
