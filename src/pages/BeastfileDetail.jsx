@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
-import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft } from 'lucide-react';
+import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
+import ImageLightbox from '@/components/shared/ImageLightbox';
+import LocalImage from '@/components/shared/LocalImage';
 import { truncateDescription } from '@/lib/utils/truncate';
 // Built by scripts/generate-beastlypedia-index.js. Holds only the title, text
 // and slug of each matching fact, so the route does not pull in the 197KB
@@ -27,6 +29,9 @@ function Section({ icon: Icon, title, children }) {
 export default function BeastfileDetail() {
   const { slug } = useParams();
   const beastfile = getBeastfile(slug);
+  // Declared above the not-found return: hooks cannot sit after a conditional
+  // exit. Holds the fact whose photo is open, or null.
+  const [photoFact, setPhotoFact] = useState(null);
 
   if (!beastfile) {
     return (
@@ -55,8 +60,8 @@ export default function BeastfileDetail() {
     heroImage, heroAlt, secondaryImage, secondaryAlt, encyclopediaId, relatedFiles,
   } = beastfile;
 
-  // Real facts from the database, already published at /facts/<slug>/. Where an
-  // animal has none yet, the authored funFacts below stand in.
+  // Real facts from the database. Where an animal has none yet, the authored
+  // funFacts below stand in.
   const linkedFacts = beastlypediaIndex.factsFor?.[id] || [];
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
@@ -227,29 +232,57 @@ export default function BeastfileDetail() {
             <h2 className="font-display font-bold text-base text-foreground mb-3">🤯 Fun Facts</h2>
 
             {linkedFacts.length > 0 ? (
-              // The real entries from the fact database, each linking to its own
-              // page. Writing these a second time in the Beastfile would mean two
-              // versions of the same claim drifting apart, and would waste the
-              // internal link.
-              <ul className="space-y-2">
+              // The real entries from the fact database. Writing these a second
+              // time in the Beastfile would mean two versions of the same claim
+              // drifting apart.
+              //
+              // Clicking one opens its photo rather than navigating to the fact
+              // page. Sending a reader out of the Beastfile mid-read to see a
+              // sentence they have already finished reading is a worse trade
+              // than showing them the picture in place.
+              <ul className="space-y-1">
                 {linkedFacts.map((f, i) => (
-                  <li key={f.slug}>
-                    <Link
-                      to={`/facts/${f.slug}/`}
-                      className="group flex gap-2.5 rounded-xl -mx-2 px-2 py-1.5 hover:bg-background/60 transition-colors"
-                    >
-                      <span className="text-secondary font-display font-bold flex-shrink-0">
-                        {i + 1}
-                      </span>
-                      <span>
-                        <span className="block font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
-                          {f.title}
+                  <li key={f.title}>
+                    {f.image ? (
+                      <button
+                        type="button"
+                        onClick={() => setPhotoFact(f)}
+                        className="group w-full text-left flex gap-3 rounded-xl -mx-2 px-2 py-2 hover:bg-background/60 focus:bg-background/60 focus:outline-none focus:ring-2 focus:ring-secondary/50 transition-colors"
+                        aria-label={`Show the photo for ${f.title}`}
+                      >
+                        <LocalImage
+                          src={f.image}
+                          alt=""
+                          className="w-12 h-12 rounded-lg object-cover flex-shrink-0 border border-border/60"
+                          width={48}
+                          height={48}
+                        />
+                        <span className="min-w-0">
+                          <span className="flex items-center gap-1.5 font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
+                            {f.title}
+                            <ImageIcon className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity" />
+                          </span>
+                          <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
+                            {f.fact}
+                          </span>
                         </span>
-                        <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
-                          {f.fact}
+                      </button>
+                    ) : (
+                      // No photo resolved, so there is nothing to open.
+                      <div className="flex gap-3 px-2 py-2">
+                        <span className="w-12 flex-shrink-0 text-secondary font-display font-bold text-center">
+                          {i + 1}
                         </span>
-                      </span>
-                    </Link>
+                        <span className="min-w-0">
+                          <span className="block font-display font-bold text-sm text-foreground">
+                            {f.title}
+                          </span>
+                          <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
+                            {f.fact}
+                          </span>
+                        </span>
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -290,6 +323,16 @@ export default function BeastfileDetail() {
           </div>
         </article>
       </div>
+
+      {/* Rendered at page level, outside the file block, for the same reason
+          FactCard hands its image action up to the parent: a position: fixed
+          overlay nested inside a transformed ancestor is confined to that
+          ancestor instead of covering the viewport. */}
+      <ImageLightbox
+        fact={photoFact}
+        imagePath={photoFact?.image}
+        onClose={() => setPhotoFact(null)}
+      />
     </div>
   );
 }

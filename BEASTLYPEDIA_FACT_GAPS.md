@@ -1,16 +1,19 @@
 # Beastlypedia fact gaps
 
-Beastfile pages pull their Fun Facts straight from the fact database and link
-each one to its own `/facts/<slug>/` page. Eleven of the sixteen Beastfiles have
-real facts to pull. **Five do not**, so those pages currently fall back to the
-short `funFacts` strings written into the Beastfile data, which link nowhere.
+Beastfile pages pull their Fun Facts straight from the fact database, and each
+one opens its photo in a lightbox when clicked. Eleven of the sixteen Beastfiles
+have real facts to pull. **Five do not**, so those pages currently fall back to
+the short `funFacts` strings written into the Beastfile data, which are plain
+text with no photo behind them.
 
 This file holds finished replacements: fifteen facts written to database
 standard, three per animal, each waiting only on a photo. Once the photos exist
 they get promoted into `facts.js` and stop being a fallback.
 
-Every new fact needs its **own** photo. No reuse, including from the Beastfile
-hero or secondary images already on disk.
+The photo is not optional here. It is the entire interaction, and a promoted
+fact whose image never lands renders as dead text in a list where every
+neighbour opens a picture. Every new fact needs its **own** photo, with no
+reuse, including from the Beastfile hero or secondary images already on disk.
 
 ---
 

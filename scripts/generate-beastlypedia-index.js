@@ -15,7 +15,7 @@ import path from 'node:path';
 
 import { beastfiles, beastfileGroups } from '../src/lib/data/beastlypedia/index.js';
 import { facts } from '../src/lib/data/facts.js';
-import { slugify } from '../src/lib/utils/slugify.js';
+import { imagePathFor } from '../src/lib/data/factImages.js';
 
 const outPath = path.join(process.cwd(), 'src/lib/generated/beastlypedia-index.json');
 
@@ -26,18 +26,19 @@ const populatedGroupSlugs = beastfileGroups
   .map((g) => g.slug);
 
 // A Beastfile's fun facts come from the existing fact database rather than
-// being written twice, so the wording stays in one place and each one can link
-// to its own /facts/ page.
+// being written twice, so the wording stays in one place and each one can open
+// its own photo.
 //
 // Resolved here rather than imported at runtime because facts.js is around
 // 197KB of prose. Pulling it into the Beastfile route just to read a handful of
 // strings is the same mistake GuideSpotlight made with the 507KB guides barrel.
-// This emits only what the page renders: title, text and the slug the fact page
-// is served from.
+// This emits only what the page renders, which is the four fields ImageLightbox
+// reads plus the fact text itself.
 //
-// The slug must match what Facts.jsx builds, which is slugify(fact.title). If
-// that ever changes, these links break silently, so it is derived from the same
-// helper rather than hand-built.
+// image comes from imagePathFor, the same resolver FactCard uses, so a fact
+// with no photo of its own still picks up the animal-level fallback. It can
+// still come back null, and the page renders those as plain text with nothing
+// to open.
 // Matched case-insensitively. facts.js has 136 distinct animal names entered by
 // hand over a long stretch, so capitalisation drifts: the Beastfile says
 // "Aye-Aye" and fact 188 says "Aye-aye". An exact match silently dropped that
@@ -59,7 +60,9 @@ for (const b of beastfiles) {
   factsFor[b.id] = found.map((f) => ({
     title: f.title,
     fact: f.fact,
-    slug: slugify(f.title),
+    animal: f.animal,
+    category: f.category,
+    image: imagePathFor(f),
   }));
 }
 
@@ -82,3 +85,11 @@ console.log(
 // authored funFacts, which is fine, but a typo in factAnimal looks identical.
 const noFacts = beastfiles.filter((b) => !factsFor[b.id]).map((b) => b.id);
 if (noFacts.length) console.log(`  no fact matches (using authored funFacts): ${noFacts.join(', ')}`);
+
+// Same reasoning for photos. A fact with no image still renders, it just has
+// nothing to open, so it is worth seeing rather than discovering by clicking.
+const noImage = Object.values(factsFor)
+  .flat()
+  .filter((f) => !f.image)
+  .map((f) => f.title);
+if (noImage.length) console.log(`  no photo (renders as plain text): ${noImage.join(', ')}`);

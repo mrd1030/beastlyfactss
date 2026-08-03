@@ -29,142 +29,190 @@
       {
         "title": "Walking Pinecones",
         "fact": "Pangolins are the only mammals covered in scales! When threatened, they roll into a tight ball, making them look like living pinecones.",
-        "slug": "walking-pinecones"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin.jpg"
       },
       {
         "title": "Armored Squirrels",
         "fact": "Pangolins are the only mammals covered in scales, making them look like real-life armadillos! When threatened, they can curl up into a tight ball, using these scales as armor against predators.",
-        "slug": "armored-squirrels"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-2.jpg"
       },
       {
         "title": "A Tongue Longer Than Its Body",
         "fact": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that can stretch longer than their own head and body combined, anchored all the way back near their pelvis, to slurp up ants and termites by the thousands.",
-        "slug": "a-tongue-longer-than-its-body"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-3.jpg"
       },
       {
         "title": "The Stomach That Chews",
         "fact": "Pangolins have no teeth, so the stomach does the chewing instead. Its far end is thick and muscular, lined with hard keratin spines pointing inward, and it usually holds small stones the pangolin has swallowed. Together they grind whole insects apart much the way a bird's gizzard does.",
-        "slug": "the-stomach-that-chews"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-4.jpg"
       },
       {
         "title": "70 Million Insects a Year",
         "fact": "One adult pangolin can eat more than 70 million insects in a single year, almost all of them ants and termites. All that digging turns over organic matter and aerates the soil, and the burrows they abandon get taken over by other animals looking for shelter.",
-        "slug": "70-million-insects-a-year"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-5.jpg"
       },
       {
         "title": "Armor Written Into the Genome",
         "fact": "When researchers sequenced pangolin genomes in 2016, they found broken copies of tooth-building genes still sitting in the DNA but no longer read. They also found that a gene tied to the skin's ability to fight disease has stopped working, which hints that pangolins came to lean on their scales for protection instead.",
-        "slug": "armor-written-into-the-genome"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-6.jpg"
       },
       {
         "title": "Scales With a Return Address",
         "fact": "Asian and African pangolins have been on separate evolutionary paths for at least 23 million years. A Smithsonian-led team used that deep split to build a genetic family tree covering all eight species, giving investigators markers that can trace a seized scale back to the species it came from.",
-        "slug": "scales-with-a-return-address"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-7.jpg"
       },
       {
         "title": "Fingernails, Basically",
         "fact": "Pangolin scales are keratin, the same protein your fingernails and hair are made of. That has done nothing to slow demand: when the IUCN reviewed seizures logged between 2016 and 2024, scales made up 99 percent of every confiscated pangolin part.",
-        "slug": "fingernails-basically"
+        "animal": "Pangolin",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/pangolin-8.jpg"
       }
     ],
     "capybara": [
       {
         "title": "The Chillest Animal",
         "fact": "Capybaras are so relaxed they often let other animals sit on them: birds, monkeys, even caimans! They're the largest rodents in the world and native to South America.",
-        "slug": "the-chillest-animal"
+        "animal": "Capybara",
+        "category": "Mammals",
+        "image": "/assets/facts/capybara.jpg"
       },
       {
         "title": "Built-In Snorkel Mode",
         "fact": "Capybaras can hold their breath underwater for up to 5 minutes to hide from jaguars and caimans. Their eyes, ears, and nostrils sit high on their head, like a hippo's, so they can stay almost fully submerged and still see, hear, and breathe.",
-        "slug": "built-in-snorkel-mode"
+        "animal": "Capybara",
+        "category": "Mammals",
+        "image": "/assets/facts/capybara-2.jpg"
       }
     ],
     "narwhal": [
       {
         "title": "Unicorn of the Sea",
         "fact": "Narwhals have a long spiral tusk (up to 10 feet!) that is actually a tooth. Scientists believe they use it to sense water temperature and salinity.",
-        "slug": "unicorn-of-the-sea"
+        "animal": "Narwhal",
+        "category": "Ocean",
+        "image": "/assets/facts/narwhal.jpg"
       },
       {
         "title": "Super Sneaky Narwhal",
         "fact": "Narwhals are often called the unicorns of the sea, thanks to their long, spiral tusks that can grow up to 10 feet long! Surprisingly, this tusk is actually an elongated tooth, and scientists believe it can detect changes in the environment, helping these mystical creatures navigate the frigid Arctic waters.",
-        "slug": "super-sneaky-narwhal"
+        "animal": "Narwhal",
+        "category": "Ocean",
+        "image": "/assets/facts/narwhal-2.jpg"
       }
     ],
     "aye-aye": [
       {
         "title": "The Finger That Finds Grubs",
         "fact": "An aye-aye's middle finger is thin, skeletal, and double-jointed, built to tap on tree bark up to eight times a second and listen for hollow spots where grubs are hiding. Once it finds one, that same finger reaches in and hooks the grub out, a foraging trick found nowhere else in the animal kingdom.",
-        "slug": "the-finger-that-finds-grubs"
+        "animal": "Aye-aye",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/aye-aye.jpg"
       }
     ],
     "thorny-devil": [
       {
         "title": "Drinks Through Its Skin",
         "fact": "Thorny devils never need to drink with their mouths. Grooves between their spiky scales pull water in by capillary action from any damp surface, including morning dew, channeling it straight to their mouth. When threatened, they also tuck their real head down and present a fake spiked 'head' on the back of their neck instead.",
-        "slug": "drinks-through-its-skin"
+        "animal": "Thorny Devil",
+        "category": "Reptiles",
+        "image": "/assets/facts/thorny-devil.jpg"
       }
     ],
     "panther-chameleon": [
       {
         "title": "Color Means Communication",
         "fact": "Chameleons don't change color primarily for camouflage. They do it to communicate mood and temperature. Color changes signal stress, excitement, readiness to mate, and more.",
-        "slug": "color-means-communication"
+        "animal": "Chameleon",
+        "category": "Reptiles",
+        "image": "/assets/facts/chameleon.jpg"
       },
       {
         "title": "Color-Changing Camouflage",
         "fact": "Chameleons are famous for their ability to change color, but did you know it's primarily a way to communicate? They alter their hues depending on their mood and social signals, rather than just blending into their surroundings!",
-        "slug": "color-changing-camouflage"
+        "animal": "Chameleon",
+        "category": "Reptiles",
+        "image": "/assets/facts/chameleon-2.jpg"
       },
       {
         "title": "Chameleon Color Change",
         "fact": "Chameleons are famous for their color-changing abilities, but it's not just for camouflage! They change colors in response to mood, temperature, and even social signals, making them masters of both disguise and emotion!",
-        "slug": "chameleon-color-change"
+        "animal": "Chameleon",
+        "category": "Reptiles",
+        "image": "/assets/facts/chameleon-3.jpg"
       },
       {
         "title": "Faster Than a Fighter Pilot",
         "fact": "A chameleon's tongue accelerates fast enough to briefly pull more G-force than a human fighter pilot can withstand. It can strike a full body-length away and snap back with its prey in a fraction of a second.",
-        "slug": "faster-than-a-fighter-pilot"
+        "animal": "Chameleon",
+        "category": "Reptiles",
+        "image": "/assets/facts/chameleon-4.jpg"
       }
     ],
     "glass-frog": [
       {
         "title": "See-Through Bellies",
         "fact": "Some glass frogs have skin on their underside so transparent you can watch their heart beating and blood moving through their organs. While they sleep, they pack nearly all their red blood cells into their liver, making themselves even harder for predators to spot against a leaf.",
-        "slug": "see-through-bellies"
+        "animal": "Glass Frog",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/glass-frog.jpg"
       }
     ],
     "axolotl": [
       {
         "title": "Axolotl Superpowers",
         "fact": "Axolotls can regenerate entire limbs, their heart, spinal cord, and even parts of their brain with zero scarring! Scientists study them hoping to unlock regeneration secrets for humans.",
-        "slug": "axolotl-superpowers"
+        "animal": "Axolotl",
+        "category": "Weird & Wonderful",
+        "image": "/assets/images/fun-facts-axolotl.jpg"
       },
       {
         "title": "Forever Young, Forever Underwater",
         "fact": "Axolotls never grow up in the usual salamander sense. Thanks to a trait called neoteny, they keep their feathery gills and stay fully aquatic for their entire lives, reaching adulthood without ever setting foot on land. Sadly, the wild population now survives in just one place, a shrinking canal system near Mexico City.",
-        "slug": "forever-young-forever-underwater"
+        "animal": "Axolotl",
+        "category": "Weird & Wonderful",
+        "image": "/assets/facts/axolotl-2.jpg"
       }
     ],
     "shoebill": [
       {
         "title": "The Statue That Hunts",
         "fact": "Shoebills can stand completely motionless for hours while hunting, then explode into a violent strike so fast it can snap a lungfish or baby crocodile in half. Their clog-shaped bill has sharp edges specifically for slicing through tough prey.",
-        "slug": "the-statue-that-hunts"
+        "animal": "Shoebill",
+        "category": "Birds",
+        "image": "/assets/facts/shoebill.jpg"
       }
     ],
     "manta-ray": [
       {
         "title": "Ocean's Biggest Brain",
         "fact": "Giant manta rays have the largest brain relative to body size of any fish, rivaling the ratios seen in some mammals. In mirror tests, they spend far more time in front of a real mirror than a blank panel and repeatedly perform unusual movements like blowing bubbles while watching themselves, behavior researchers think hints at some level of self-awareness.",
-        "slug": "oceans-biggest-brain"
+        "animal": "Giant Manta Ray",
+        "category": "Ocean",
+        "image": "/assets/facts/giant-manta-ray.jpg"
       }
     ],
     "leafy-sea-dragon": [
       {
         "title": "Leaves That Learned to Swim",
         "fact": "Leafy sea dragons are covered in leaf-shaped skin flaps that serve purely as camouflage. They actually swim using nearly invisible fins on their neck and back, so from a distance they look like drifting seaweed rather than a fish at all.",
-        "slug": "leaves-that-learned-to-swim"
+        "animal": "Leafy Sea Dragon",
+        "category": "Ocean",
+        "image": "/assets/facts/leafy-sea-dragon.jpg"
       }
     ]
   }
