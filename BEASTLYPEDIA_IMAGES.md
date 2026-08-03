@@ -287,7 +287,8 @@ photo, except the wolverine.
 **Wolverine** `wolverine-hero.jpg`
 - A wolverine moving across deep snow in boreal forest, dark coat and pale flank stripe visible, low winter light.
 - *Accuracy:* Gulo gulo. Bear-like build on a small frame, with a pale stripe along each flank meeting at the rump. Not a badger, not a small bear.
-- **Also needs a secondary**, portrait 1000 x 1500, because it has no fact photo to borrow.
+- **Also needs 2 fact photos**, landscape, since facts 274 and 275 were written for it and are live without images. `wolverine.jpg` and `wolverine-2.jpg` into `public/assets/facts/`. The Beastfile secondary then borrows `wolverine.jpg`, so no separate secondary is needed.
+- Once those exist, add to FACT_IMAGES in **both** `factImages.js` and `public/_worker.js`: `274: '/assets/facts/wolverine.jpg',` and `275: '/assets/facts/wolverine-2.jpg',`
 
 ### Birds (2)
 

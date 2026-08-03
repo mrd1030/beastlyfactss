@@ -596,13 +596,14 @@ export const mammalBeastfiles = [
     heroImage: null,
     heroAlt:
       'A wolverine moving across deep snow in boreal forest, its dark coat and pale flank stripe visible',
+    // Borrows wolverine.jpg, the photo for fact 274, once that image exists.
+    // Left null rather than pointed at a missing file so the reference check
+    // stays honest. Facts 274 and 275 are written and live; they carry no
+    // FACT_IMAGES entry yet for the same reason, so they render with their
+    // emoji until their photos land. See BEASTLYPEDIA_IMAGES.md.
     secondaryImage: null,
-    secondaryAlt: '',
+    secondaryAlt: 'A wolverine in profile on snow showing its dense dark coat and pale flank stripe',
     relatedFiles: ['wolverine-facts-the-toughest-animal-pound-for-pound'],
-    // The only Route A animal with no facts in facts.js, so it has no fact photo
-    // to borrow for the secondary and its Fun Facts would fall back to the
-    // authored strings above. Needs three facts with photos before publishing,
-    // or it ships thinner than every other file. See BEASTLYPEDIA_ARTICLES.md.
     draft: true,
   },
 ];
