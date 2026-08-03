@@ -5,11 +5,16 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
+// Two separate lists, and both need the directory. assetDirs decides what gets
+// scanned at all; CARD_VARIANT_DIRS below only decides which of those also get
+// the larger -card tier. Adding a directory to the second without the first
+// generates nothing and reports success.
 const assetDirs = [
   path.join(rootDir, 'public/assets/images'),
   path.join(rootDir, 'public/assets/guides'),
   path.join(rootDir, 'public/assets/facts'),
   path.join(rootDir, 'public/assets/encyclopedia'),
+  path.join(rootDir, 'public/assets/beastlypedia'),
 ];
 
 // guides/ and encyclopedia/ also get a larger, non-square "-card" variant -

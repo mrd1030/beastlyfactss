@@ -1,5 +1,22 @@
 # Beastlypedia image checklist
 
+## Status: 19 of 22 delivered and installed
+
+All 19 checked before install: correct orientation, and the six
+species-confusion risks below all came back accurate (the panther chameleon is
+properly banded with no veiled casque, the anaconda has the right oval blotches,
+the dart frog is *azureus*).
+
+**Still needed, 3 heroes:**
+
+- `aye-aye-hero.jpg`
+- `thorny-devil-hero.jpg`
+- `gaboon-viper-hero.jpg`
+
+Prompts for all three are in the sections below. All six new secondaries are
+done.
+
+
 Every Beastfile needs two images.
 
 **Hero** — landscape, **always a new image**, never a fact photo. Lands at
