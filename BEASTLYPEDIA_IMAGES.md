@@ -1,6 +1,24 @@
 # Beastlypedia image checklist
 
-## Status: 19 of 22 delivered and installed
+## Status: original 16 Beastfiles complete. 26 Route A heroes now open.
+
+All 22 images for the original sixteen are delivered and installed, including
+the three heroes listed as outstanding below.
+
+**The live queue is now the Route A batch at the bottom of this file: 26 hero
+images, one per new Beastfile.** Those 26 Beastfiles are written and committed,
+carrying `draft: true`, which keeps them off the site until their hero lands.
+Nothing renders as a placeholder. Drop in a hero, set `heroImage` and remove
+`draft`, and that file publishes with its article link, its fun facts and its
+secondary photo already attached.
+
+Only the wolverine needs a secondary as well, because it is the one animal with
+no facts and therefore no fact photo to borrow.
+
+<details>
+<summary>Historical: the original 22 (all delivered)</summary>
+
+### Status at the time: 19 of 22 delivered and installed
 
 All 19 checked before install: correct orientation, and the six
 species-confusion risks below all came back accurate (the panther chameleon is
@@ -154,3 +172,142 @@ Secondary reuses an existing fact photo, listed with each.
    "image pending" block so nothing ships looking finished by accident).
 3. Run `node scripts/generate-thumbnails.js` — `assets/beastlypedia` is already in
    `CARD_VARIANT_DIRS`, so the index cards get their `-card` tier automatically.
+
+</details>
+
+---
+
+## Route A: 26 new Beastfile heroes
+
+These 26 Beastfiles are written and committed carrying `draft: true`, so none
+of them is on the site yet. Each one publishes the moment its hero lands, and
+arrives with its article link, its linked fun facts and its secondary photo
+already attached.
+
+Hero spec is the same as above: **landscape 1600 x 900**, always a new image,
+never a fact photo. Keep the animal centred with headroom, since the banner
+crops hard top and bottom on wide screens. Real-photograph style, natural
+light, shallow depth of field, no text, no watermark, single animal.
+
+Secondaries are already handled: every one of these borrows an existing fact
+photo, except the wolverine.
+
+### Marine Life (10)
+
+**Bottlenose Dolphin** `dolphin-hero.jpg`
+- A bottlenose dolphin breaking the surface of open blue water, beak and melon clear of the waterline, spray around it.
+- *Accuracy:* Tursiops truncatus. Blunt short beak and a curved dorsal fin. Not a common dolphin with hourglass flank markings, and not an orca.
+
+**Clownfish** `clownfish-hero.jpg`
+- A clownfish among the tentacles of a sea anemone on a tropical reef, orange body and white bands sharp against the anemone.
+- *Accuracy:* Amphiprion ocellaris. Three white bands edged in black. The anemone tentacles must surround it, that relationship is the whole point.
+
+**Immortal Jellyfish** `immortal-jellyfish-hero.jpg`
+- A tiny transparent jellyfish against dark water, bell backlit, red stomach visible inside, fine tentacles trailing.
+- *Accuracy:* Turritopsis dohrnii is about four millimetres across. Bell-shaped and transparent with a bright red gut. Not a moon jelly, not a big trailing sea nettle.
+
+**Seahorse** `seahorse-hero.jpg`
+- A seahorse gripping a strand of seagrass with its curled tail in clear shallow water, body upright.
+- *Accuracy:* The tail must be curled around something, that is the fact. Upright posture, tubular snout, bony ridged body.
+
+**Hagfish** `hagfish-hero.jpg`
+- A hagfish on dark seafloor sediment, pale eel-shaped body curved across the mud, cold low light.
+- *Accuracy:* Jawless, barbels around the mouth, no real fins. Not an eel, and not a lamprey with a round sucker disc.
+
+**Sharks** `shark-hero.jpg`
+- A shark cruising through open blue water in profile, light rippling across its back, full body in frame.
+- *Accuracy:* Any recognisable shark, ideally not a great white breaching. Calm and cruising suits an article about how little danger they actually pose.
+
+**Octopus** `octopus-hero.jpg`
+- An octopus on a rocky seabed, arms curled beneath it, skin textured and coloured to match the rock.
+- *Accuracy:* Octopus vulgaris. Eight arms, horizontal slit pupil, bulbous mantle. Not a squid or cuttlefish: no fin skirt, no long feeding tentacles.
+
+**Mantis Shrimp** `mantis-shrimp-hero.jpg`
+- A peacock mantis shrimp at the mouth of its burrow on a reef, green and orange shell, stalked eyes raised.
+- *Accuracy:* Odontodactylus scyllarus. Independently mobile stalked eyes and folded raptorial clubs. Not a true shrimp or prawn.
+
+**Cuttlefish** `cuttlefish-hero.jpg`
+- A cuttlefish hovering above sand with arms held forward, a rippling pattern moving across its skin, fin skirt undulating.
+- *Accuracy:* Sepia officinalis. W-shaped pupil and a fin running the full length of the body. Not a squid, not an octopus.
+
+**Humpback Whale** `humpback-whale-hero.jpg`
+- A humpback whale breaching clear of the ocean surface, water streaming off its very long pectoral fin.
+- *Accuracy:* Megaptera novaeangliae. Extremely long white pectoral fins and a knobbly head. Not a blue or sperm whale.
+
+### Mammals (13)
+
+**Giraffe** `giraffe-hero.jpg`
+- An adult giraffe in profile on open savanna, neck raised, acacia trees behind, warm low light.
+- *Accuracy:* Full neck in frame. Keep the head well inside the top of the crop, this is the easiest one in the batch to decapitate.
+
+**Naked Mole Rat** `naked-mole-rat-hero.jpg`
+- A naked mole rat in a soil tunnel, wrinkled pink hairless skin, large protruding incisors, tiny eyes.
+- *Accuracy:* Hairless and pink with buck teeth outside the lips. Not a mole, and not a shaved rodent that still shows fur.
+
+**Slow Loris** `slow-loris-hero.jpg`
+- A slow loris gripping a branch at night in rainforest, huge round eyes reflecting the light, hands wrapped around the wood.
+- *Accuracy:* Nycticebus. Enormous forward-facing eyes, short round face, almost no tail. Not a bushbaby, not a tarsier.
+
+**African Elephant** `african-elephant-hero.jpg`
+- An African elephant on open savanna at golden hour, ears spread, trunk lowered, full body in profile.
+- *Accuracy:* African, not Asian: large fan-shaped ears and a dipped back. Both sexes can carry tusks.
+
+**Three-Toed Sloth** `sloth-hero.jpg`
+- A three-toed sloth hanging beneath a rainforest branch, long curved claws hooked over the wood, face toward the camera.
+- *Accuracy:* Bradypus. Three claws on the front limb and the dark mask around the eyes. Not a two-toed sloth.
+
+**Gray Wolf** `gray-wolf-hero.jpg`
+- A grey wolf standing in snow at the edge of conifer forest, looking toward the camera, thick winter coat.
+- *Accuracy:* Canis lupus. Long legs, broad muzzle, heavy ruff. Not a husky and not a German shepherd.
+
+**Lion** `lion-hero.jpg`
+- A male lion lying on open savanna grass at golden hour, full mane, looking into the distance.
+- *Accuracy:* Adult male with a full mane, in savanna rather than an enclosure.
+
+**Tiger** `tiger-hero.jpg`
+- A wild tiger walking through tall grass at the forest edge, striped flank catching the light, full body in frame.
+- *Accuracy:* Panthera tigris. Orange with black stripes and a white ruff. Not a white tiger.
+
+**Rhinoceros** `rhinoceros-hero.jpg`
+- A rhinoceros standing in open grassland in profile, horn and heavy folded skin clearly visible.
+- *Accuracy:* Any African species. The horn must be prominent and intact, it is the subject of the article.
+
+**Wombat** `wombat-hero.jpg`
+- A wombat at the entrance to its burrow on grassy ground, stocky body and broad bare nose visible.
+- *Accuracy:* Vombatus ursinus. Stocky, short-legged, bare leathery nose. Not a badger and not a quokka.
+
+**Honey Badger** `honey-badger-hero.jpg`
+- A honey badger walking across dry ground, black body and broad pale back stripe clearly visible.
+- *Accuracy:* Mellivora capensis. Black below with a wide pale mantle from crown to tail. Not an American or European badger with a striped face.
+
+**Platypus** `platypus-hero.jpg`
+- A platypus swimming at the surface of a still river, bill and dense brown fur visible, ripples spreading.
+- *Accuracy:* Ornithorhynchus anatinus. Duck-like bill, flat paddle tail, webbed forefeet. Not an otter, not a beaver.
+
+**Wolverine** `wolverine-hero.jpg`
+- A wolverine moving across deep snow in boreal forest, dark coat and pale flank stripe visible, low winter light.
+- *Accuracy:* Gulo gulo. Bear-like build on a small frame, with a pale stripe along each flank meeting at the rump. Not a badger, not a small bear.
+- **Also needs a secondary**, portrait 1000 x 1500, because it has no fact photo to borrow.
+
+### Birds (2)
+
+**Emperor Penguin** `emperor-penguin-hero.jpg`
+- An emperor penguin standing on Antarctic sea ice in low light, orange ear patches and pale bill visible.
+- *Accuracy:* Aptenodytes forsteri. The tallest penguin, with orange-yellow ear patches that bleed into the chest. Not a king penguin, whose orange is sharply defined.
+
+**Crow** `crow-hero.jpg`
+- A crow perched on a bare branch against an overcast sky, glossy black plumage and heavy bill.
+- *Accuracy:* All black including bill and legs. Not a magpie, not a jackdaw with a pale eye, not a raven with a wedge-shaped tail.
+
+### Other (1)
+
+**Tardigrade** `tardigrade-hero.jpg`
+- A tardigrade under high magnification, plump segmented body and eight clawed legs.
+- *Accuracy:* Eight legs ending in claws, barrel body, blunt head. A stylised electron-microscope look is fine here, since nobody sees one unaided.
+
+### Installing one
+
+1. Save as `public/assets/beastlypedia/<id>-hero.jpg`.
+2. In the Beastfile: set `heroImage` to that path, then delete the `draft: true` line.
+3. `node scripts/generate-thumbnails.js`
+4. `node scripts/generate-beastlypedia-index.js`

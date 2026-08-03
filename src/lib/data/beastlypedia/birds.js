@@ -66,4 +66,72 @@ export const birdBeastfiles = [
       'Close portrait of a Victoria crowned pigeon showing its lace-tipped crest and red eye',
     relatedFiles: [],
   },
+  {
+    id: 'emperor-penguin',
+    factAnimal: 'Penguin',
+    name: 'Emperor Penguin',
+    scientific: 'Aptenodytes forsteri',
+    tagline: 'Penguins do not mate for life, and the huddle is a moving machine.',
+    habitat: 'Arctic',
+    group: 'Birds',
+    overview:
+      'Emperor penguins breed through the Antarctic winter, on sea ice, in the dark, which is a set of conditions nothing else attempts. The male incubates a single egg on his feet under a fold of skin for around two months without eating, losing a large fraction of his body weight while the female is at sea feeding. The huddle they form is not a static scrum: it moves in slow waves as birds on the windward edge shuffle toward the middle, so exposure gets shared out. The lifelong-devotion story is the one thing here that is not true. Most pairs re-pair with someone else the following season.',
+    origin:
+      'Antarctic coastal sea ice, breeding in colonies on fast ice attached to the continent and feeding in the surrounding Southern Ocean.',
+    notableTraits: [
+      'Breeds through the Antarctic winter on sea ice',
+      'The male incubates the egg on his feet for around two months',
+      'Huddles rotate so exposure is shared',
+      'Dives deeper than any other bird',
+      'Most pairs change partners between seasons',
+    ],
+    conservation:
+      'Near Threatened and directly exposed to sea ice loss. The species breeds on fast ice, so ice that forms late or breaks up early can wipe out a colony’s entire season.',
+    funFacts: [
+      'Mating for life is largely a myth here; the great majority of pairs re-pair the next season.',
+      'The huddle moves in slow waves, so no bird stays on the cold edge for long.',
+      'Males can lose close to half their body weight over the incubation fast.',
+    ],
+    heroImage: null,
+    heroAlt:
+      'An emperor penguin standing on Antarctic sea ice in low light, its orange ear patches and pale bill visible',
+    secondaryImage: '/assets/facts/penguin-2.jpg',
+    secondaryAlt: 'An emperor penguin in profile on ice',
+    relatedFiles: ['penguins-do-not-mate-for-life'],
+    draft: true,
+  },
+  {
+    id: 'crow',
+    name: 'Crow',
+    scientific: 'Corvus',
+    alsoKnownAs: ['Carrion Crow', 'American Crow'],
+    tagline: 'It remembers your face, holds a grudge, and tells other crows about you.',
+    habitat: 'Forest',
+    group: 'Birds',
+    overview:
+      'Crows recognise individual human faces and remember them for years. In the experiments that established this, researchers wearing a particular mask trapped and released crows; birds later scolded that mask on sight, including birds that had never been caught, which means the information spread socially. They make and modify tools, solve multi-step puzzles that require doing something useless-looking first, and drop hard-shelled food onto roads for cars to crack. Several species gather around a dead crow in a way that looks ceremonial and appears to be about learning what killed it.',
+    origin:
+      'Almost everywhere. Forest, farmland, coast and city across Europe, Asia, Africa, the Americas and Australia, with cities suiting them particularly well.',
+    notableTraits: [
+      'Recognises and remembers individual human faces',
+      'Passes information about specific people to other crows',
+      'Makes and modifies tools',
+      'Solves puzzles requiring several steps in order',
+      'Gathers around dead crows, apparently to learn the danger',
+    ],
+    conservation:
+      'Least Concern for most species and increasing in many places. Crows adapt to human landscapes better than almost any other bird, which is why they are one of very few animals doing well out of urbanisation.',
+    funFacts: [
+      'Crows that were never trapped will still scold the mask, so the grudge is being passed on.',
+      'Some have been recorded dropping nuts onto pedestrian crossings and waiting for the lights.',
+      'New Caledonian crows make hooked tools from twigs, shaping them rather than just picking them up.',
+    ],
+    heroImage: null,
+    heroAlt:
+      'A crow perched on a bare branch against an overcast sky, its glossy black plumage and heavy bill visible',
+    secondaryImage: '/assets/facts/crow.jpg',
+    secondaryAlt: 'A crow in profile showing its glossy black feathers and thick bill',
+    relatedFiles: ['crows-are-smarter-than-you-think-and-they-probably-already-know-it'],
+    draft: true,
+  },
 ];
