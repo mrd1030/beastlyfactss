@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
+import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
 import { truncateDescription } from '@/lib/utils/truncate';
-import LocalImage from '@/components/shared/LocalImage';
 
 const SITE = 'https://beastlyfacts.com';
 
@@ -48,7 +48,7 @@ export default function BeastfileDetail() {
   const {
     id, name, scientific, alsoKnownAs, tagline, habitat, group,
     overview, origin, notableTraits, conservation, funFacts,
-    heroImage, heroAlt, secondaryImage, secondaryAlt, encyclopediaId,
+    heroImage, heroAlt, secondaryImage, secondaryAlt, encyclopediaId, relatedFiles,
   } = beastfile;
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
@@ -93,32 +93,45 @@ export default function BeastfileDetail() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      <div className="w-full">
-        {heroImage ? (
-          <LocalImage
-            src={heroImage}
-            alt={heroAlt || name}
-            className="w-full h-56 sm:h-80 lg:h-[26rem] object-cover"
-          />
-        ) : (
-          <div className="w-full h-56 sm:h-80 lg:h-[26rem] bg-muted flex flex-col items-center justify-center gap-2 border-b-2 border-dashed border-border">
-            <span className="text-4xl">📷</span>
-            <span className="text-xs font-display font-bold uppercase tracking-wider text-muted-foreground">
-              Hero image pending
-            </span>
-          </div>
-        )}
-      </div>
-
-      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6">
         <Link
           to="/beastlypedia/"
-          className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors mt-5"
+          className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors mb-3"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Beastlypedia
         </Link>
 
-        <header className="mt-3 mb-6">
+        {/* The whole entry sits inside one bordered block, so it reads as a
+            physical file rather than a page that happens to be about an animal.
+            It also fixes the hero: full-bleed meant the banner grew with the
+            viewport while the image did not, so on a wide monitor a fixed-height
+            strip was cropping away more than half the picture. Bounded by the
+            same max-width as the text, the crop is now a constant and modest
+            one at any window size. */}
+        <article className="bg-card border border-border rounded-3xl overflow-hidden shadow-lg">
+          {heroImage ? (
+            // Plain img with the full-size original, not LocalImage. LocalImage
+            // defaults to the -thumb tier, a 240x240 SQUARE crop, which was
+            // being blown up over 4x here and cropped a second time. Even
+            // -card@2x at 640x480 is too small for this width.
+            <img
+              src={heroImage}
+              alt={heroAlt || name}
+              className="w-full aspect-[3/2] sm:aspect-[16/9] object-cover"
+              fetchPriority="high"
+              decoding="async"
+            />
+          ) : (
+            <div className="w-full aspect-[3/2] sm:aspect-[16/9] bg-muted flex flex-col items-center justify-center gap-2 border-b-2 border-dashed border-border">
+              <span className="text-4xl">📷</span>
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-muted-foreground">
+                Hero image pending
+              </span>
+            </div>
+          )}
+
+          <div className="p-5 sm:p-8">
+        <header className="mb-6">
           <p className="text-[11px] font-display font-bold uppercase tracking-wider text-secondary mb-1">
             {`Beastfile · ${group}`}
           </p>
@@ -199,8 +212,10 @@ export default function BeastfileDetail() {
           </div>
         </div>
 
+        {/* bg-muted rather than bg-card below: this sits inside the file block
+            now, and a card on a card just reads as a rendering mistake. */}
         {funFacts?.length > 0 && (
-          <div className="mt-4 bg-card border border-border rounded-2xl p-5">
+          <div className="mt-4 bg-muted/50 border border-border/60 rounded-2xl p-5">
             <h2 className="font-display font-bold text-base text-foreground mb-3">🤯 Fun Facts</h2>
             <ul className="space-y-2.5">
               {funFacts.map((f, i) => (
@@ -218,6 +233,8 @@ export default function BeastfileDetail() {
           </div>
         )}
 
+        <RelatedFiles slugs={relatedFiles} />
+
         {encyclopediaId && (
           <div className="mt-6 bg-secondary/5 border border-secondary/20 rounded-2xl p-4">
             <p className="text-sm text-foreground font-body">
@@ -231,6 +248,8 @@ export default function BeastfileDetail() {
             </p>
           </div>
         )}
+          </div>
+        </article>
       </div>
     </div>
   );

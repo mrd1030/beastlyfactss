@@ -1,8 +1,27 @@
 {
   "ids": [
-    "thorny-devil"
+    "axolotl",
+    "aye-aye",
+    "blue-poison-dart-frog",
+    "capybara",
+    "fennec-fox",
+    "gaboon-viper",
+    "glass-frog",
+    "green-anaconda",
+    "leafy-sea-dragon",
+    "manta-ray",
+    "narwhal",
+    "pangolin",
+    "panther-chameleon",
+    "shoebill",
+    "thorny-devil",
+    "victoria-crowned-pigeon"
   ],
   "groupSlugs": [
-    "reptiles"
+    "mammals",
+    "reptiles",
+    "amphibians",
+    "birds",
+    "marine-life"
   ]
 }
