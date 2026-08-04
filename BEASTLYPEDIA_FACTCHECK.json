@@ -309,7 +309,15 @@
           "problem": "Minor, but the tense implies a live record. The title comes from the 2002 edition of the Guinness Book of World Records, per SANBI. It is not a currently listed Guinness record - there is no active entry on guinnessworldrecords.com.",
           "suggestedFix": "'...a reputation so wild that the 2002 Guinness Book of World Records named it the most fearless animal in the world.' Same effect, and it survives a fact-check."
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Vanderhaar, J.M. & Hwang, Y.T. 2003. Mellivora capensis. Mammalian Species 721:1-8](https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf)",
+        "- [Do Linh San, E., Begg, C., Begg, K. & Abramov, A.V. 2016. Mellivora capensis. The IUCN Red List of Threatened Species 2016: e.T41629A45210107](https://the-eis.com/elibrary/sites/default/files/downloads/literature/Mellivora%20capensis_The%20IUCN%20Red%20List%20of%20Threatened%20Species%202016.pdf)",
+        "- [Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2003. Sexual and seasonal variation in the diet and foraging behaviour of a sexually dimorphic carnivore, the honey badger (Mellivora capensis). Journal of Zoology 260:301-316](https://honeybadger.com/pdfs/diet.pdf)",
+        "- [Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2005. Life-history variables of an atypical mustelid, the honey badger Mellivora capensis. Journal of Zoology 265:17-22](https://honeybadger.com/pdfs/life-history.pdf)",
+        "- [South African National Biodiversity Institute (SANBI), Animal of the Week: Honey Badger (Mellivora capensis)](https://www.sanbi.org/animal-of-the-week/honey-badger/)"
+      ],
+      "proposedSourceCount": 10
     },
     {
       "slug": "the-octopus-has-three-hearts-and-uses-all-of-them",
@@ -689,7 +697,15 @@
           "suggestedFix": "Change to: 'the mimic octopus (Thaumoctopus mimicus), first filmed by scientists off Sulawesi and Bali in the late 1990s, described in the literature in 2001 and formally named in 2005'",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1088805/"
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Carls-Diamante, S. (2022). Where is it like to be an octopus? Frontiers in Systems Neuroscience, 16:840022. doi:10.3389/fnsys.2022.840022](https://pmc.ncbi.nlm.nih.gov/articles/PMC8988249/)",
+        "- [Wells, M. J., Duthie, G. G., Houlihan, D. F., Smith, P. J. S., & Wells, J. (1987). Blood flow and pressure changes in exercising octopuses (Octopus vulgaris). Journal of Experimental Biology, 131(1), 175-187.](https://journals.biologists.com/jeb/article/131/1/175/5279/Blood-Flow-and-Pressure-Changes-in-Exercising)",
+        "- [Norman, M. D., Finn, J., & Tregenza, T. (2001). Dynamic mimicry in an Indo-Malayan octopus. Proceedings of the Royal Society B, 268(1478), 1755-1758. doi:10.1098/rspb.2001.1708](https://pmc.ncbi.nlm.nih.gov/articles/PMC1088805/)",
+        "- [Oellermann, M., Lieb, B., Portner, H.-O., Semmens, J. M., & Mark, F. C. (2015). Blue blood on ice: modulated blood oxygen transport facilitates cold compensation and eurythermy in an Antarctic octopod. Frontiers in Zoology, 12:6. doi:10.1186/s12983-015-0097-x](https://pmc.ncbi.nlm.nih.gov/articles/PMC4403823/)",
+        "- [How, M. J., Norman, M. D., Finn, J., Chung, W.-S., & Marshall, N. J. (2017). Dynamic skin patterns in cephalopods. Frontiers in Physiology, 8:393. doi:10.3389/fphys.2017.00393](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00393/full)"
+      ],
+      "proposedSourceCount": 23
     },
     {
       "slug": "wolverine-facts-the-toughest-animal-pound-for-pound",
@@ -893,7 +909,15 @@
           "sourceUrl": "https://home.nps.gov/articles/wolverine.htm"
         }
       ],
-      "sourcesBlock": "- [Interspecific killing of wolverines by one wolf pack, Ecology and Evolution 13(12):e10758 (Young, Saalfeld, Brandt, Smith, Spivey & Stantorf, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10701184/)\n- [The bioclimatic envelope of the wolverine (Gulo gulo): do climatic constraints limit its geographic distribution?, Canadian Journal of Zoology 88:233-246 (Copeland, McKelvey, Aubry, Landa, Persson, Inman, Krebs, Lofroth, Golden, Squires, Magoun, Schwartz, Wilmot, Copeland, Yates, Kojola & May, 2010)](https://research.fs.usda.gov/treesearch/34712)\n- [The wolverine's niche: linking reproductive chronology, caching, competition, and climate, Journal of Mammalogy 93(3):634-644 (Inman, Magoun, Persson & Mattisson, 2012)](https://academic.oup.com/jmammal/article-abstract/93/3/634/834407)\n- [Refrigeration or anti-theft? Food-caching behavior of wolverines (Gulo gulo) in Scandinavia, Behavioral Ecology and Sociobiology 74:52 (van der Veen, Mattisson, Zimmermann, Odden & Persson, 2020)](https://link.springer.com/article/10.1007/s00265-020-2823-4)\n- [Space use and territoriality of wolverines (Gulo gulo) in northern Scandinavia, European Journal of Wildlife Research 56:49-57 (Persson, Wedholm & Segerström, 2010)](https://link.springer.com/article/10.1007/s10344-009-0290-3)\n- [Volatile compounds from anal glands of the wolverine, Gulo gulo, Journal of Chemical Ecology 31(9):2111-2117 (Wood, Terwilliger & Copeland, 2005)](https://link.springer.com/article/10.1007/s10886-005-6080-9)\n- [Long-term dietary shifts in a generalist predator, the wolverine (Gulo gulo), Frontiers in Ecology and Evolution 11:1284901 (Massé, Hiltunen, Lansink, Holmala, Isomursu, Kojola, Aspi & Welker, 2023)](https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2023.1284901/full)\n- [Influence of heterospecifics on mesocarnivore behaviour at shared scavenging opportunities in the Canadian Rocky Mountains, Scientific Reports 13:11026 (Bell, Fisher, Darimont, Hart & Bone, 2023)](https://www.nature.com/articles/s41598-023-34911-4)\n- [Trophic facilitation or limitation? Comparative effects of pumas and black bears on the scavenger community, PLOS ONE 9(7):e102257 (Allen, Elbroch, Wilmers & Wittmer, 2014)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0102257)\n- [Wolverine (Gulo gulo) longevity, ageing and life history, AnAge: The Animal Ageing and Longevity Database, Build 15, maximum longevity 19.5 years in captivity (record sourced to Weigl, 2005)](https://genomics.senescence.info/species/entry.php?species=Gulo_gulo)\n- [Wolverine Species Profile, Alaska Department of Fish and Game (ADF&G)](https://www.adfg.alaska.gov/index.cfm?adfg=wolverine.main)\n- [Wolverine Species Profile, printer edition, Alaska Department of Fish and Game (ADF&G)](https://www.adfg.alaska.gov/index.cfm?adfg=wolverine.printerfriendly)\n- [Wolverines: Behind the Myth, Alaska Fish and Wildlife News, Alaska Department of Fish and Game (Woodford, 2014)](https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=692)\n- [North American wolverine receives federal protection as a threatened species under the Endangered Species Act, U.S. Fish and Wildlife Service news release (USFWS, 2023)](https://www.fws.gov/press-release/2023-11/north-american-wolverine-receives-federal-protection-threatened-species-under)\n- [Wolverine, National Park Service species article (National Park Service)](https://home.nps.gov/articles/wolverine.htm)\n- [Wolverine, Yellowstone National Park (National Park Service)](https://www.nps.gov/yell/learn/nature/wolverine.htm)\n- [Gulo gulo (wolverine), Animal Diversity Web (University of Michigan Museum of Zoology)](https://animaldiversity.org/accounts/Gulo_gulo/)\n- [General Wolverine Characteristics, The Wolverine Foundation](https://wolverinefoundation.org/general-characteristics)\n- [Wolverine Reproduction, The Wolverine Foundation](https://wolverinefoundation.org/reproduction)\n- [Spatial Use, The Wolverine Foundation](https://wolverinefoundation.org/spatial-use)\n- [Wolverine (Gulo gulo), Encyclopedia of Puget Sound, compiled for Washington Department of Fish and Wildlife (Stinson et al., 2013)](https://www.eopugetsound.org/articles/wolverine-gulo-gulo)"
+      "sourcesBlock": "- [Interspecific killing of wolverines by one wolf pack, Ecology and Evolution 13(12):e10758 (Young, Saalfeld, Brandt, Smith, Spivey & Stantorf, 2023)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10701184/)\n- [The bioclimatic envelope of the wolverine (Gulo gulo): do climatic constraints limit its geographic distribution?, Canadian Journal of Zoology 88:233-246 (Copeland, McKelvey, Aubry, Landa, Persson, Inman, Krebs, Lofroth, Golden, Squires, Magoun, Schwartz, Wilmot, Copeland, Yates, Kojola & May, 2010)](https://research.fs.usda.gov/treesearch/34712)\n- [The wolverine's niche: linking reproductive chronology, caching, competition, and climate, Journal of Mammalogy 93(3):634-644 (Inman, Magoun, Persson & Mattisson, 2012)](https://academic.oup.com/jmammal/article-abstract/93/3/634/834407)\n- [Refrigeration or anti-theft? Food-caching behavior of wolverines (Gulo gulo) in Scandinavia, Behavioral Ecology and Sociobiology 74:52 (van der Veen, Mattisson, Zimmermann, Odden & Persson, 2020)](https://link.springer.com/article/10.1007/s00265-020-2823-4)\n- [Space use and territoriality of wolverines (Gulo gulo) in northern Scandinavia, European Journal of Wildlife Research 56:49-57 (Persson, Wedholm & Segerström, 2010)](https://link.springer.com/article/10.1007/s10344-009-0290-3)\n- [Volatile compounds from anal glands of the wolverine, Gulo gulo, Journal of Chemical Ecology 31(9):2111-2117 (Wood, Terwilliger & Copeland, 2005)](https://link.springer.com/article/10.1007/s10886-005-6080-9)\n- [Long-term dietary shifts in a generalist predator, the wolverine (Gulo gulo), Frontiers in Ecology and Evolution 11:1284901 (Massé, Hiltunen, Lansink, Holmala, Isomursu, Kojola, Aspi & Welker, 2023)](https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2023.1284901/full)\n- [Influence of heterospecifics on mesocarnivore behaviour at shared scavenging opportunities in the Canadian Rocky Mountains, Scientific Reports 13:11026 (Bell, Fisher, Darimont, Hart & Bone, 2023)](https://www.nature.com/articles/s41598-023-34911-4)\n- [Trophic facilitation or limitation? Comparative effects of pumas and black bears on the scavenger community, PLOS ONE 9(7):e102257 (Allen, Elbroch, Wilmers & Wittmer, 2014)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0102257)\n- [Wolverine (Gulo gulo) longevity, ageing and life history, AnAge: The Animal Ageing and Longevity Database, Build 15, maximum longevity 19.5 years in captivity (record sourced to Weigl, 2005)](https://genomics.senescence.info/species/entry.php?species=Gulo_gulo)\n- [Wolverine Species Profile, Alaska Department of Fish and Game (ADF&G)](https://www.adfg.alaska.gov/index.cfm?adfg=wolverine.main)\n- [Wolverine Species Profile, printer edition, Alaska Department of Fish and Game (ADF&G)](https://www.adfg.alaska.gov/index.cfm?adfg=wolverine.printerfriendly)\n- [Wolverines: Behind the Myth, Alaska Fish and Wildlife News, Alaska Department of Fish and Game (Woodford, 2014)](https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=692)\n- [North American wolverine receives federal protection as a threatened species under the Endangered Species Act, U.S. Fish and Wildlife Service news release (USFWS, 2023)](https://www.fws.gov/press-release/2023-11/north-american-wolverine-receives-federal-protection-threatened-species-under)\n- [Wolverine, National Park Service species article (National Park Service)](https://home.nps.gov/articles/wolverine.htm)\n- [Wolverine, Yellowstone National Park (National Park Service)](https://www.nps.gov/yell/learn/nature/wolverine.htm)\n- [Gulo gulo (wolverine), Animal Diversity Web (University of Michigan Museum of Zoology)](https://animaldiversity.org/accounts/Gulo_gulo/)\n- [General Wolverine Characteristics, The Wolverine Foundation](https://wolverinefoundation.org/general-characteristics)\n- [Wolverine Reproduction, The Wolverine Foundation](https://wolverinefoundation.org/reproduction)\n- [Spatial Use, The Wolverine Foundation](https://wolverinefoundation.org/spatial-use)\n- [Wolverine (Gulo gulo), Encyclopedia of Puget Sound, compiled for Washington Department of Fish and Wildlife (Stinson et al., 2013)](https://www.eopugetsound.org/articles/wolverine-gulo-gulo)",
+      "curatedSources": [
+        "- [Wolverine Species Profile. Alaska Department of Fish and Game](https://www.adfg.alaska.gov/index.cfm?adfg=wolverine.main)",
+        "- [Woodford, R. (2014). Wolverines: Behind the Myth. Alaska Fish and Wildlife News, Alaska Department of Fish and Game, December 2014](https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=692)",
+        "- [Wolverine. National Park Service species article (nps.gov/articles/wolverine.htm)](https://home.nps.gov/articles/wolverine.htm)",
+        "- [General Wolverine Characteristics. The Wolverine Foundation](https://wolverinefoundation.org/general-characteristics)",
+        "- [Persson, J., Wedholm, P. & Segerström, P. (2010). Space use and territoriality of wolverines (Gulo gulo) in northern Scandinavia. European Journal of Wildlife Research 56:49-57. doi:10.1007/s10344-009-0290-3](https://link.springer.com/article/10.1007/s10344-009-0290-3)"
+      ],
+      "proposedSourceCount": 14
     },
     {
       "slug": "the-platypus-natures-most-wonderfully-bizarre-mammal",
@@ -1188,7 +1212,15 @@
           "suggestedFix": "Change to: 'This makes the platypus's sex-determination system one of the most complex in the animal kingdom. One of the chromosomes in the chain shares genes with the bird Z chromosome while the largest X shares genes with the human X, which is why the platypus has long been treated as a bridge between how birds and mammals sort out sex. More recent genome work suggests the arrangement began as an ancestral ring of chromosomes that fused and swapped pieces, so the picture is messier than a simple stepping stone.'",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15502814/"
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Bino, G., Kingsford, R.T., Archer, M., et al. (2019). The platypus: evolutionary history, biology, and an uncertain future. Journal of Mammalogy 100(2):308-327. DOI: 10.1093/jmammal/gyz058](https://academic.oup.com/jmammal/article/100/2/308/5477503)",
+        "- [Whittington, C.M., Papenfuss, A.T., Locke, D.P., et al. (2010). Novel venom gene discovery in the platypus. Genome Biology 11(9):R95. DOI: 10.1186/gb-2010-11-9-r95](https://pmc.ncbi.nlm.nih.gov/articles/PMC2965387/)",
+        "- [Castro, L.F.C., Goncalves, O., Mazan, S., Tay, B.-H., Venkatesh, B., Wilson, J.M. (2014). Recurrent gene loss correlates with the evolution of stomach phenotypes in gnathostome history. Proceedings of the Royal Society B 281(1775):20132669. DOI: 10.1098/rspb.2013.2669](https://pubmed.ncbi.nlm.nih.gov/24307675/)",
+        "- [Grutzner, F., Rens, W., Tsend-Ayush, E., El-Mogharbel, N., O'Brien, P.C.M., Jones, R.C., Ferguson-Smith, M.A., Marshall Graves, J.A. (2004). In the platypus a meiotic chain of ten sex chromosomes shares genes with the bird Z and mammal X chromosomes. Nature 432(7019):913-917. DOI: 10.1038/nature03021](https://pubmed.ncbi.nlm.nih.gov/15502814/)",
+        "- [ASM Mammal Diversity Database v2.5, American Society of Mammalogists Biodiversity Committee, released 28 July 2026](https://www.mammaldiversity.org/)"
+      ],
+      "proposedSourceCount": 19
     },
     {
       "slug": "narwhal-facts-the-real-unicorn-of-the-sea",
@@ -1493,7 +1525,15 @@
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24639076/",
           "suggestedFix": "Replace with: \"This makes it a sensory organ. Researchers fitted live narwhals with a sleeve over the tusk and alternated salt and fresh water against it, and the whales' heart rates changed measurably. Salinity is the one stimulus confirmed so far. The same anatomy suggests the tusk could also register temperature and pressure, though that has not yet been tested on a live animal.\""
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Garde E, Heide-Jørgensen MP. Tusk anomalies in narwhals (Monodon monoceros) from Greenland. Polar Research 41:8343 (2022). DOI 10.33265/polar.v41.8343](https://polarresearch.net/index.php/polar/article/view/8343)",
+        "- [Breed GA, Matthews CJD, Marcoux M, Higdon JW, LeBlanc B, Petersen SD, Orr J, Reinhart NR, Ferguson SH. Sustained disruption of narwhal habitat use and behavior in the presence of Arctic killer whales. Proceedings of the National Academy of Sciences 114(10):2628-2633 (2017). DOI 10.1073/pnas.1611707114](https://pmc.ncbi.nlm.nih.gov/articles/PMC5347589/)",
+        "- [Biello D. Narwhal Found to Have a Trick Up Its Tusk. Scientific American, 14 December 2005](https://www.scientificamerican.com/article/narwhal-found-to-have-a-t/)",
+        "- [Nweeia MT, Eichmiller FC, Hauschka PV, Donahue GA, Orr JR, Ferguson SH, Watt CA, Mead JG, Potter CW, Dietz R, Giuseppetti AA, Black SR, Trachtenberg AJ, Kuo WP. Sensory ability in the narwhal tooth organ system. The Anatomical Record 297(4):599-617 (2014). DOI 10.1002/ar.22886](https://pubmed.ncbi.nlm.nih.gov/24639076/)",
+        "- [O'Corry-Crowe G, Ghazal M, Gillespie M, Galvin P, Harasimo J, Storrie L, Watt CA. Use of tusks by narwhals, Monodon monoceros, in foraging, exploratory, and play behavior. Frontiers in Marine Science 12:1518605 (2025). DOI 10.3389/fmars.2025.1518605](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2025.1518605/full)"
+      ],
+      "proposedSourceCount": 24
     },
     {
       "slug": "tardigrades-the-toughest-creatures-on-earth-and-in-space",
@@ -1859,7 +1899,15 @@
           "suggestedFix": "You can find tardigrades in the Himalayas, on the deep-sea floor thousands of metres down, in hot springs, in Antarctic ice, and in the moss growing on the wall outside your window.",
           "sourceUrl": "https://www.guinnessworldrecords.com/news/2019/3/tardigrades-are-these-the-worlds-toughest-animals-564195"
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Jonsson KI (2019). Radiation tolerance in tardigrades: current knowledge and potential applications in medicine. Cancers 11(9):1333. doi:10.3390/cancers11091333](https://pmc.ncbi.nlm.nih.gov/articles/PMC6770827/)",
+        "- [Mapalo MA, Wolfe JM & Ortega-Hernandez J (2024). Cretaceous amber inclusions illuminate the evolutionary origin of tardigrades. Communications Biology 7:953. doi:10.1038/s42003-024-06643-2](https://pmc.ncbi.nlm.nih.gov/articles/PMC11303527/)",
+        "- [National Institute of Polar Research (2016). Animals revived after being in a frozen state for over 30 years. Press release accompanying Tsujimoto, Imura & Kanda, Cryobiology 72(1):78-81](https://www.nipr.ac.jp/english/news/20160217.html)",
+        "- [Palka L (2024). Could tardigrades have colonized the Moon? The Conversation, 26 February 2024 (author: Maitre de conferences, Museum national d'histoire naturelle, Paris)](https://theconversation.com/could-tardigrades-have-colonized-the-moon-224396)",
+        "- [Guidetti R, Bonifacio A, Altiero T, Bertolani R & Rebecchi L (2015). Distribution of calcium and chitin in the tardigrade feeding apparatus in relation to its function and morphology. Integrative and Comparative Biology 55(2):241-252. doi:10.1093/icb/icv008](https://academic.oup.com/icb/article/55/2/241/745734)"
+      ],
+      "proposedSourceCount": 24
     },
     {
       "slug": "the-incredible-axolotl-nature-s-smiling-salamander",
@@ -1983,7 +2031,15 @@
           "sourceUrl": "https://ambystoma.uky.edu/education1/guide-to-axolotl-husbandry",
           "suggestedFix": "Replace with: \"make sure you have a tank of at least 20 gallons, the usual hobbyist recommendation, and cold water (around 60 to 64°F, never above about 72°F). The volume is not magic. Research colonies house adults in as little as half a gallon of water each, but they change that water every day or two. In a home tank the extra volume is what keeps ammonia from spiking between water changes.\""
         }
-      ]
+      ],
+      "curatedSources": [
+        "- [Ambystoma Genetic Stock Center, University of Kentucky. Guide to Axolotl Husbandry (accessed 2026)](https://ambystoma.uky.edu/education1/guide-to-axolotl-husbandry)",
+        "- [Page RB, Voss SR, Samuels AK, Smith JJ, Putta S, Beachy CK. 2008. Effect of thyroid hormone concentration on the transcriptional response underlying induced metamorphosis in the Mexican axolotl (Ambystoma). BMC Genomics 9:78. doi:10.1186/1471-2164-9-78](https://pmc.ncbi.nlm.nih.gov/articles/PMC2262897/)",
+        "- [IUCN SSC Amphibian Specialist Group. 2020. Ambystoma mexicanum. The IUCN Red List of Threatened Species 2020: e.T1095A53947343. Assessed 23 October 2019](https://www.iucnredlist.org/species/1095/53947343)",
+        "- [Joven A, Elewa A, Simon A. 2019. Model systems for regeneration: salamanders. Development 146(14):dev167700. doi:10.1242/dev.167700](https://journals.biologists.com/dev/article/146/14/dev167700/48915/Model-systems-for-regeneration-salamanders)",
+        "- [Merriam-Webster. \"Axolotl.\" Merriam-Webster.com Dictionary (accessed 2026)](https://www.merriam-webster.com/dictionary/axolotl)"
+      ],
+      "proposedSourceCount": 8
     }
   ],
   "verify": [
@@ -2601,5 +2657,10 @@
       }
     ],
     "limits": "Establishes that no URL was fabricated and that two load-bearing corrections are accurate word for word. Does NOT individually re-check every one of the ~30 corrections proposed for these three articles. Confidence is high, not exhaustive. The four 403s are publisher bot-blocks (OUP, Company of Biologists), not missing pages, so they remain unconfirmed either way."
+  },
+  "curationRule": {
+    "cap": 5,
+    "rationale": "Site median is 2 sources per article; 175 of 350 have exactly 2 and only 10 exceed 6. The agents proposed 8 to 30 because the prompt asked for a source behind every load-bearing claim, which produces a research bibliography rather than a reading-list. The full set stays here as working notes; only the curated few belong in the article.",
+    "ranking": "Sources behind a correction first, since those are the ones the article got wrong and a reader may want to check. Then sources backing the most claims. Cap at 5."
   }
 }
