@@ -7,10 +7,13 @@ import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
 import { truncateDescription } from '@/lib/utils/truncate';
-// Built by scripts/generate-beastlypedia-index.js. Holds only the title, text
-// and slug of each matching fact, so the route does not pull in the 197KB
-// facts.js barrel to render a handful of strings.
-import beastlypediaIndex from '@/lib/generated/beastlypedia-index.json';
+// Built by scripts/generate-beastlypedia-index.js: this Beastfile's fun facts
+// and its related article cards, both already resolved.
+//
+// Resolving them at build time keeps two large modules off this route. facts.js
+// is 197KB, and RelatedFiles used to import the 182KB articles index to render
+// one or two cards. Neither is imported here now.
+import beastlypediaContent from '@/lib/generated/beastlypedia-content.json';
 
 const SITE = 'https://beastlyfacts.com';
 
@@ -62,7 +65,11 @@ export default function BeastfileDetail() {
 
   // Real facts from the database. Where an animal has none yet, the authored
   // funFacts below stand in.
-  const linkedFacts = beastlypediaIndex.factsFor?.[id] || [];
+  const content = beastlypediaContent[id];
+  // animal is hoisted, since every fact matched to a Beastfile shares it. Put it
+  // back on each fact so ImageLightbox can caption the photo.
+  const linkedFacts = (content?.facts || []).map((f) => ({ ...f, animal: content.animal }));
+  const relatedPosts = content?.related || [];
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
   // The scientific name is kept out of the title on purpose. With it, longer
@@ -317,7 +324,7 @@ export default function BeastfileDetail() {
           </div>
         )}
 
-        <RelatedFiles slugs={relatedFiles} />
+        <RelatedFiles posts={relatedPosts} />
 
         {encyclopediaId && (
           <div className="mt-6 bg-secondary/5 border border-secondary/20 rounded-2xl p-4">
