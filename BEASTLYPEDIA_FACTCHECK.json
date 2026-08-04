@@ -47,17 +47,21 @@
         },
         {
           "claim": "Lions, leopards, and hyenas have all learned the hard way that getting a grip on a honey badger does not mean you have won the fight",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Do Linh San, E., Begg, C., Begg, K. & Abramov, A.V. 2016. Mellivora capensis. The IUCN Red List of Threatened Species 2016: e.T41629A45210107",
           "sourceUrl": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Mellivora%20capensis_The%20IUCN%20Red%20List%20of%20Threatened%20Species%202016.pdf",
-          "note": "IUCN states the reverse: 'Large carnivores such as Lion (Panthera leo) and Leopard (Panthera pardus) prey on Honey Badger adults and cubs, while cubs are also killed by Black-backed Jackals.' Begg et al. 2005 recorded two cases where a mother and cub were killed together by large predators, and the remains of a young male in a hyaena den. Adult annual mortality was 34%."
+          "note": "IUCN states the reverse: 'Large carnivores such as Lion (Panthera leo) and Leopard (Panthera pardus) prey on Honey Badger adults and cubs, while cubs are also killed by Black-backed Jackals.' Begg et al. 2005 recorded two cases where a mother and cub were killed together by large predators, and the remains of a young male in a hyaena den. Adult annual mortality was 34%.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The skin is tough enough to resist bee stings, porcupine quills, and even machete blows in some documented cases",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Vanderhaar, J.M. & Hwang, Y.T. 2003. Mellivora capensis. Mammalian Species 721:1-8",
           "sourceUrl": "https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf",
-          "note": "The species account says skin is 'impervious to stings of bees, fangs of snakes, and teeth of dogs,' but sources it to Blumenbach 1825 and Stevenson-Hamilton 1947 - century-old anecdote, not measurement. Porcupine quills are claimed in secondary literature citing Rosevear 1974. I found no source at all for machete blows; that appears to be internet folklore."
+          "note": "The species account says skin is 'impervious to stings of bees, fangs of snakes, and teeth of dogs,' but sources it to Blumenbach 1825 and Stevenson-Hamilton 1947 - century-old anecdote, not measurement. Porcupine quills are claimed in secondary literature citing Rosevear 1974. I found no source at all for machete blows; that appears to be internet folklore.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They regularly hunt and eat venomous snakes, including cobras and puff adders",
@@ -68,24 +72,30 @@
         },
         {
           "claim": "Their diet includes mambas",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceCitation": "Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2003. Journal of Zoology 260:301-316",
           "sourceUrl": "https://honeybadger.com/pdfs/diet.pdf",
-          "note": "The only detailed prey list in the literature (59 species, southern Kalahari) records mole snake, Cape cobra, puff adder, horned adder, sand snakes, quill-snouted snake and juvenile African rock python, but no mamba. Mambas are outside the Kalahari study area so this is plausible but undocumented."
+          "note": "The only detailed prey list in the literature (59 species, southern Kalahari) records mole snake, Cape cobra, puff adder, horned adder, sand snakes, quill-snouted snake and juvenile African rock python, but no mamba. Mambas are outside the Kalahari study area so this is plausible but undocumented.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "After being bitten, a honey badger might collapse, go limp, and appear dead for a short time. Then it wakes up, shakes it off, and goes right back to eating the snake",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Begg, C. & Begg, K., The Honey Badger Research Project (Mellivora capensis)",
           "sourceUrl": "https://www.honeybadger.com/",
-          "note": "The Beggs' own field record is that a honey badger bitten on the face by a puff adder 'showed signs of severe pain but recovered fully within five hours.' That is hours of serious envenomation, not a brief nap. The site also hedges the biology: honey badgers 'do appear to have some immunity to snake venoms.'"
+          "note": "The Beggs' own field record is that a honey badger bitten on the face by a puff adder 'showed signs of severe pain but recovered fully within five hours.' That is hours of serious envenomation, not a brief nap. The site also hedges the biology: honey badgers 'do appear to have some immunity to snake venoms.'",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Researchers believe this resistance comes from genetic mutations in the honey badger's nicotinic acetylcholine receptors, the same type of adaptation seen in other venom-resistant animals like mongooses",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Drabeck, D.H., Dean, A.M. & Jansa, S.A. 2015. Why the honey badger don't care: Convergent evolution of venom-targeted nicotinic acetylcholine receptors in mammals that survive venomous snake bites. Toxicon 99:68-72",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/25796346/",
-          "note": "Three problems. (1) The paper identifies hedgehogs and pigs as sharing the honey badger's specific amino-acid replacement; mongooses modify the same receptor by a different route (glycosylation). (2) The receptor targeted is the binding site for elapid alpha-neurotoxins - cobras and mambas. It does not explain surviving puff adder bites, since puff adders are vipers with cytotoxic venom acting by a completely different mechanism. The article presents one mechanism as covering both. (3) The resistance was inferred from phylogenetic sequence analysis, not functionally tested."
+          "note": "Three problems. (1) The paper identifies hedgehogs and pigs as sharing the honey badger's specific amino-acid replacement; mongooses modify the same receptor by a different route (glycosylation). (2) The receptor targeted is the binding site for elapid alpha-neurotoxins - cobras and mambas. It does not explain surviving puff adder bites, since puff adders are vipers with cytotoxic venom acting by a completely different mechanism. The article presents one mechanism as covering both. (3) The resistance was inferred from phylogenetic sequence analysis, not functionally tested.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Honey badgers will tear into active beehives with zero hesitation, enduring thousands of stings to get to the larvae and honey inside. The bees sting. The honey badger does not care",
@@ -96,10 +106,12 @@
         },
         {
           "claim": "They are opportunistic and relentless foragers, covering up to 25 miles a day in search of food",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Vanderhaar, J.M. & Hwang, Y.T. 2003. Mellivora capensis. Mammalian Species 721:1-8",
           "sourceUrl": "https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf",
-          "note": "The highest figure in the literature is ca. 27 km/day (about 17 miles) for males and ca. 10 km/day for females (Kruuk & Mills 1983). 25 miles is 40 km, which no source supports. Begg et al. 2003 further dispute the framing, finding both sexes are short-distance foragers when actually hunting, and that long-distance walking by males is mostly social (latrine checking, searching for females), yielding under 10% of intake."
+          "note": "The highest figure in the literature is ca. 27 km/day (about 17 miles) for males and ca. 10 km/day for females (Kruuk & Mills 1983). 25 miles is 40 km, which no source supports. Begg et al. 2003 further dispute the framing, finding both sexes are short-distance foragers when actually hunting, and that long-distance walking by males is mostly social (latrine checking, searching for females), yielding under 10% of intake.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Their powerful claws can be over an inch long",
@@ -110,10 +122,12 @@
         },
         {
           "claim": "Their jaws are strong enough to crush bone and even turtle shells",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceCitation": "Vanderhaar, J.M. & Hwang, Y.T. 2003. Mellivora capensis. Mammalian Species 721:1-8",
           "sourceUrl": "https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf",
-          "note": "No published bite-force measurement for Mellivora capensis exists that I could locate; the figures circulating online (216.9 N / 160 psi) trace only to content-farm aggregators. The species account also describes a different mechanism for shells: 'carapaces of turtles... are peeled away to expose the softer inner parts,' i.e. worked open with claws rather than crushed in the jaws."
+          "note": "No published bite-force measurement for Mellivora capensis exists that I could locate; the figures circulating online (216.9 N / 160 psi) trace only to content-farm aggregators. The species account also describes a different mechanism for shells: 'carapaces of turtles... are peeled away to expose the softer inner parts,' i.e. worked open with claws rather than crushed in the jaws.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The greater honeyguide actively seeks out a honey badger, calls to get its attention, and leads it to a beehive; a genuine mutualistic relationship, one of the few well-documented examples of interspecies cooperation involving a wild bird and a wild mammal, observed and documented for centuries",
@@ -152,10 +166,12 @@
         },
         {
           "claim": "This kind of flexible, innovative problem-solving is associated with high cognitive ability; in captivity they have been observed using tools, manipulating latches, and demonstrating creative intelligence",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Earth Touch News Network, 'It's time to figure out just how smart honey badgers really are'",
           "sourceUrl": "https://www.earthtouchnews.com/natural-world/animal-behaviour/its-time-to-figure-out-just-how-smart-honey-badgers-really-are/",
-          "note": "'There are simply no studies of honey badger cognition anywhere in the scientific literature,' and the reputation for intelligence 'is based solely on anecdote, not scientific study.' Cambridge primatologist William McGrew on the Stoffel footage: 'Either honey badgers have been under-estimated, or this is a one-off genius honey badger, or it is a hoax,' and recommended someone actually run problem-solving tasks. The article presents an untested reputation as established finding."
+          "note": "'There are simply no studies of honey badger cognition anywhere in the scientific literature,' and the reputation for intelligence 'is based solely on anecdote, not scientific study.' Cambridge primatologist William McGrew on the Stoffel footage: 'Either honey badgers have been under-estimated, or this is a one-off genius honey badger, or it is a hoax,' and recommended someone actually run problem-solving tasks. The article presents an untested reputation as established finding.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Honey badgers have relatively large brains for their body size",
@@ -173,17 +189,21 @@
         },
         {
           "claim": "There are documented cases of honey badgers driving lions, leopards, and even small groups of wild dogs away from kills",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Do Linh San, E., Begg, C., Begg, K. & Abramov, A.V. 2016. Mellivora capensis. The IUCN Red List of Threatened Species 2016: e.T41629A45210107",
           "sourceUrl": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Mellivora%20capensis_The%20IUCN%20Red%20List%20of%20Threatened%20Species%202016.pdf",
-          "note": "IUCN supports the general behaviour - they 'may pirate food from other carnivores and will also scavenge from the kills of larger animals' - but names no species. I found no primary documentation of honey badgers displacing lions, leopards or wild dog packs specifically. The named list should be softened to the sourced generality."
+          "note": "IUCN supports the general behaviour - they 'may pirate food from other carnivores and will also scavenge from the kills of larger animals' - but names no species. I found no primary documentation of honey badgers displacing lions, leopards or wild dog packs specifically. The named list should be softened to the sourced generality.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They are remarkably fast and agile, able to climb trees and swim when needed",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Vanderhaar, J.M. & Hwang, Y.T. 2003. Mellivora capensis. Mammalian Species 721:1-8",
           "sourceUrl": "https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf",
-          "note": "Climbing and swimming are both supported ('Honey badgers are good swimmers and chase turtles underwater'; they ascend hollow trees and raid raptor nests). But speed is directly contradicted: 'Owing to the thickset form, stocky feet, and sharp and long foreclaws, honey badgers cannot run quickly. Their swinging trot or gallop is comparable with that of bears... a slow, rather bow-legged lumber, which they can maintain for hours.' They are enduring, not fast."
+          "note": "Climbing and swimming are both supported ('Honey badgers are good swimmers and chase turtles underwater'; they ascend hollow trees and raid raptor nests). But speed is directly contradicted: 'Owing to the thickset form, stocky feet, and sharp and long foreclaws, honey badgers cannot run quickly. Their swinging trot or gallop is comparable with that of bears... a slow, rather bow-legged lumber, which they can maintain for hours.' They are enduring, not fast.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Females give birth to one or two cubs at a time",
@@ -194,10 +214,12 @@
         },
         {
           "claim": "Cubs stay with their mothers for about a year and a half to two years",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2005. Journal of Zoology 265:17-22",
           "sourceUrl": "https://honeybadger.com/pdfs/life-history.pdf",
-          "note": "Independence occurs at 12-16 months (n=7, full range 12-22 months). Mean age at independence was 14.2 months for males and 14.6 months for females. 'A year and a half to two years' describes the top of the range as if it were typical."
+          "note": "Independence occurs at 12-16 months (n=7, full range 12-22 months). Mean age at independence was 14.2 months for males and 14.6 months for females. 'A year and a half to two years' describes the top of the range as if it were typical.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Honey badgers are largely solitary animals, coming together mainly to mate, and den in burrows they dug themselves or took from another animal",
@@ -222,24 +244,30 @@
         },
         {
           "claim": "They are not currently considered endangered, though habitat loss and persecution by farmers pose localized threats",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Do Linh San, E., Begg, C., Begg, K. & Abramov, A.V. 2016. Mellivora capensis. The IUCN Red List of Threatened Species 2016: e.T41629A45210107",
           "sourceUrl": "https://the-eis.com/elibrary/sites/default/files/downloads/literature/Mellivora%20capensis_The%20IUCN%20Red%20List%20of%20Threatened%20Species%202016.pdf",
-          "note": "Least Concern is correct, but the assessment records 'Current Population Trend: Decreasing' and warns that 'clearly identifiable threats are operating, and known to be resulting in localised declines.' It also notes 'evidence to suggest they have gone locally extinct in many areas through poisoning.' The dominant threat is direct persecution by beekeepers and small-livestock farmers using steel-jaw traps and poison, plus non-selective jackal and caracal control - not habitat loss, which the article lists first."
+          "note": "Least Concern is correct, but the assessment records 'Current Population Trend: Decreasing' and warns that 'clearly identifiable threats are operating, and known to be resulting in localised declines.' It also notes 'evidence to suggest they have gone locally extinct in many areas through poisoning.' The dominant threat is direct persecution by beekeepers and small-livestock farmers using steel-jaw traps and poison, plus non-selective jackal and caracal control - not habitat loss, which the article lists first.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Their digging aerates soil and creates burrows that other animals use",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceCitation": "",
           "sourceUrl": "",
-          "note": "I found no study documenting honey badgers as ecosystem engineers or quantifying secondary use of their burrows. It is plausible by analogy with aardvarks and other diggers, but nothing in the primary literature supports it for this species. Either drop it or attribute it as a general property of burrowing carnivores."
+          "note": "I found no study documenting honey badgers as ecosystem engineers or quantifying secondary use of their burrows. It is plausible by analogy with aardvarks and other diggers, but nothing in the primary literature supports it for this species. Either drop it or attribute it as a general property of burrowing carnivores.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Their predation on snakes keeps snake populations in check",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceCitation": "Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2003. Journal of Zoology 260:301-316",
           "sourceUrl": "https://honeybadger.com/pdfs/diet.pdf",
-          "note": "Snakes are confirmed as a major diet component by biomass, but no study has tested whether honey badger predation regulates snake population size. IUCN also notes honey badgers occur at low densities across most of their range (0.03 adults/km2 in the Kgalagadi), which makes strong top-down control unlikely. This is an inference, not a finding."
+          "note": "Snakes are confirmed as a major diet component by biomass, but no study has tested whether honey badger predation regulates snake population size. IUCN also notes honey badgers occur at low densities across most of their range (0.03 adults/km2 in the Kgalagadi), which makes strong top-down control unlikely. This is an inference, not a finding.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         }
       ],
       "sourcesBlock": "- [Do honey badgers and greater honeyguide birds cooperate to access bees' nests? Ecological evidence and honey-hunter accounts, Journal of Zoology 321:22-32 (van der Wal, Afan, Anyawire, Begg, Begg, et al., 2023)](https://par.nsf.gov/servlets/purl/10426781)\n- [Why the honey badger don't care: Convergent evolution of venom-targeted nicotinic acetylcholine receptors in mammals that survive venomous snake bites, Toxicon 99:68-72 (Drabeck, Dean & Jansa, 2015)](https://pubmed.ncbi.nlm.nih.gov/25796346/)\n- [Sexual and seasonal variation in the diet and foraging behaviour of a sexually dimorphic carnivore, the honey badger (Mellivora capensis), Journal of Zoology 260:301-316 (Begg, Begg, Du Toit & Mills, 2003)](https://honeybadger.com/pdfs/diet.pdf)\n- [Life-history variables of an atypical mustelid, the honey badger Mellivora capensis, Journal of Zoology 265:17-22 (Begg, Begg, Du Toit & Mills, 2005)](https://honeybadger.com/pdfs/life-history.pdf)\n- [Mellivora capensis, Mammalian Species 721:1-8 (Vanderhaar & Hwang, 2003)](https://www.science.smith.edu/departments/Biology/VHAYSSEN/msi/pdf/721_Mellivora_capensis.pdf)\n- [Mellivora capensis, The IUCN Red List of Threatened Species 2016: e.T41629A45210107 (Do Linh San, Begg, Begg & Abramov, 2016)](https://the-eis.com/elibrary/sites/default/files/downloads/literature/Mellivora%20capensis_The%20IUCN%20Red%20List%20of%20Threatened%20Species%202016.pdf)\n- [Reciprocal signaling in honeyguide-human mutualism, Science 353:387-389 (Spottiswoode, Begg & Begg, 2016)](https://pubmed.ncbi.nlm.nih.gov/27463674/)\n- [Animal of the Week: Honey Badger (Mellivora capensis), South African National Biodiversity Institute (SANBI)](https://www.sanbi.org/animal-of-the-week/honey-badger/)\n- [The Honey Badger Research Project (Mellivora capensis), Begg & Begg](https://www.honeybadger.com/)\n- [Birds and the badgers, University of Cambridge Research Stories (van der Wal & Spottiswoode, 2023)](https://www.cam.ac.uk/stories/birds-and-the-badgers)\n- [It's time to figure out just how smart honey badgers really are, Earth Touch News Network](https://www.earthtouchnews.com/natural-world/animal-behaviour/its-time-to-figure-out-just-how-smart-honey-badgers-really-are/)",
@@ -373,24 +401,30 @@
         },
         {
           "claim": "Octopuses can change color and texture in milliseconds, and the entire transformation, color and texture together, can happen in under one second.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00393/full",
           "sourceCitation": "How, M. J., Norman, M. D., Finn, J., Chung, W.-S., & Marshall, N. J. (2017). Dynamic skin patterns in cephalopods. Frontiers in Physiology, 8:393. doi:10.3389/fphys.2017.00393",
-          "note": "The color half is roughly right but slower than 'milliseconds' implies: chromatic pulses in Octopus laqueus last 0.55 +/- 0.11 s, and the fastest component documented anywhere in the review is a cuttlefish hunting display element at '<0.25 s.' I found no measurement showing an octopus completing a combined color-plus-texture change in under one second."
+          "note": "The color half is roughly right but slower than 'milliseconds' implies: chromatic pulses in Octopus laqueus last 0.55 +/- 0.11 s, and the fastest component documented anywhere in the review is a cuttlefish hunting display element at '<0.25 s.' I found no measurement showing an octopus completing a combined color-plus-texture change in under one second.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Papillae are tiny muscular bumps that can be raised or flattened in fractions of a second.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/23378271/",
           "sourceCitation": "Allen, J. J., Bell, G. R. R., Kuzirian, A. M., & Hanlon, R. T. (2013). Cuttlefish skin papilla morphology suggests a muscular hydrostatic function for rapid changeability. Journal of Morphology, 274(6), 645-656. doi:10.1002/jmor.20121",
-          "note": "Allen et al. establish the anatomy (concentric dermal erector muscles acting as a muscular hydrostat, built for 'rapid changeability') but deliberately do not quantify the speed. Widely repeated figures like 'one-fifth of a second' trace to press coverage, not to a number in this paper."
+          "note": "Allen et al. establish the anatomy (concentric dermal erector muscles acting as a muscular hydrostat, built for 'rapid changeability') but deliberately do not quantify the speed. Widely repeated figures like 'one-fifth of a second' trace to press coverage, not to a number in this paper.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The mimic octopus (Thaumoctopus mimicus) was discovered off the coast of Indonesia in 1998.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1088805/",
           "sourceCitation": "Norman, M. D., Finn, J., & Tregenza, T. (2001). Dynamic mimicry in an Indo-Malayan octopus. Proceedings of the Royal Society B, 268(1478), 1755-1758. doi:10.1098/rspb.2001.1708",
-          "note": "The 2001 paper places the work in Sulawesi and Bali and calls the animal 'new to science,' but gives no discovery year I could verify. Separately, the binomial is anachronistic in this sentence: Thaumoctopus mimicus was not erected until Norman & Hochberg (2005) in Molluscan Research, four years after the behavioral paper. Safest fix is 'first filmed by scientists off Indonesia in the late 1990s and formally named in 2005.'"
+          "note": "The 2001 paper places the work in Sulawesi and Bali and calls the animal 'new to science,' but gives no discovery year I could verify. Separately, the binomial is anachronistic in this sentence: Thaumoctopus mimicus was not erected until Norman & Hochberg (2005) in Molluscan Research, four years after the behavioral paper. Safest fix is 'first filmed by scientists off Indonesia in the late 1990s and formally named in 2005.'",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The mimic octopus impersonates a venomous flatfish, a lionfish, and a banded sea snake.",
@@ -422,10 +456,12 @@
         },
         {
           "claim": "They have nine brains: one central brain and one mini-brain in each of their eight arms.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8988249/",
           "sourceCitation": "Carls-Diamante, S. (2022). Where is it like to be an octopus? Frontiers in Systems Neuroscience, 16:840022. doi:10.3389/fnsys.2022.840022",
-          "note": "An octopus has one brain (45-50 million neurons) plus an arm nervous system of axial nerve cords and ganglia. The arms are not brains and no source in the peer-reviewed literature describes them as such. 'Nine brains' is popular shorthand that this site's primary-source standard should not repeat as anatomy."
+          "note": "An octopus has one brain (45-50 million neurons) plus an arm nervous system of axial nerve cords and ganglia. The arms are not brains and no source in the peer-reviewed literature describes them as such. 'Nine brains' is popular shorthand that this site's primary-source standard should not repeat as anatomy.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "A severed octopus arm can still respond to stimuli and attempt to pass food toward where the mouth used to be.",
@@ -443,31 +479,39 @@
         },
         {
           "claim": "Octopuses in laboratory settings have learned to open childproof jars to retrieve food inside.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0152048",
           "sourceCitation": "Richter, J. N., Hochner, B., & Kuba, M. J. (2016). Pull or push? Octopuses solve a puzzle problem. PLoS ONE, 11(3), e0152048. doi:10.1371/journal.pone.0152048",
-          "note": "The published record covers jars 'closed by a rubber plug' (Fiorito et al.), L-shaped puzzle containers (Richter et al.), and screw-on test tube caps (Jarmoluk & Pelled 2025). 'Childproof' is a popular embellishment I could find in no peer-reviewed source."
+          "note": "The published record covers jars 'closed by a rubber plug' (Fiorito et al.), L-shaped puzzle containers (Richter et al.), and screw-on test tube caps (Jarmoluk & Pelled 2025). 'Childproof' is a popular embellishment I could find in no peer-reviewed source.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They navigate complex mazes, remember the correct route, and improve their performance over repeated trials.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0152048",
           "sourceCitation": "Richter, J. N., Hochner, B., & Kuba, M. J. (2016). Pull or push? Octopuses solve a puzzle problem. PLoS ONE, 11(3), e0152048. doi:10.1371/journal.pone.0152048",
-          "note": "The learning half is solidly supported: all seven octopuses solved a five-level container task, and 'at the onset of each new level the performance of the animals dropped... However, they adapted quickly.' The maze claim is a different experimental paradigm and I could not verify it from any source I opened. Octopus maze literature does exist, so this is a sourcing gap rather than a known error."
+          "note": "The learning half is solidly supported: all seven octopuses solved a five-level container task, and 'at the onset of each new level the performance of the animals dropped... However, they adapted quickly.' The maze claim is a different experimental paradigm and I could not verify it from any source I opened. Octopus maze literature does exist, so this is a sourcing gap rather than a known error.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They recognize individual human faces.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/20563906/",
           "sourceCitation": "Anderson, R. C., Mather, J. A., Monette, M. Q., & Zimsen, S. R. M. (2010). Octopuses (Enteroctopus dofleini) recognize individual humans. Journal of Applied Animal Welfare Science, 13(3), 261-272. doi:10.1080/10888705.2010.483892",
-          "note": "The study is 'recognize individual humans,' not faces. Eight octopuses were exposed for two weeks to one person who fed them and one who touched them with a bristly stick; they then differed significantly in eyebar body pattern, arm reaching, funnel direction and (in the four larger animals) respiration rate. Nothing in the design isolates facial features from body, motion, or other visual cues."
+          "note": "The study is 'recognize individual humans,' not faces. Eight octopuses were exposed for two weeks to one person who fed them and one who touched them with a bristly stick; they then differed significantly in eyebar body pattern, arm reaching, funnel direction and (in the four larger animals) respiration rate. Nothing in the design isolates facial features from body, motion, or other visual cues.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "One octopus at a New Zealand aquarium was notorious for squirting water at a particular staff member.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.scientificamerican.com/article/the-mind-of-an-octopus/",
           "sourceCitation": "Godfrey-Smith, P. (2017). The Mind of an Octopus. Scientific American Mind, 28(1), 62.",
-          "note": "It was a university laboratory, not an aquarium: 'At the University of Otago in New Zealand, this game became so expensive that the octopus had to be released back to the wild.' The animal 'took a dislike to one member of the staff, for no obvious reason' and delivered 'a half-gallon jet of water down the back of her neck.' This is an anecdote reported by a philosopher of science, not a study."
+          "note": "It was a university laboratory, not an aquarium: 'At the University of Otago in New Zealand, this game became so expensive that the octopus had to be released back to the wild.' The animal 'took a dislike to one member of the staff, for no obvious reason' and delivered 'a half-gallon jet of water down the back of her neck.' This is an anecdote reported by a philosopher of science, not a study.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Veined octopuses (Amphioctopus marginatus) collect discarded coconut shell halves, carry them considerable distances, and assemble them into a portable shelter.",
@@ -506,10 +550,12 @@
         },
         {
           "claim": "They can taste with their suckers, which are lined with chemoreceptors that detect flavor and texture simultaneously.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7605239/",
           "sourceCitation": "van Giesen, L., Kilian, P. B., Allard, C. A. H., & Bellono, N. W. (2020). Molecular basis of chemotactile sensation in octopus. Cell, 183(3), 594-604.e14. doi:10.1016/j.cell.2020.09.008",
-          "note": "The 'taste by touch' framing is exactly right, but the mechanism is misattributed. Chemical and mechanical signals are handled by two separate cell populations, not by chemoreceptors doing both: 'distinct chemo- and mechanosensory cells exhibit specific receptor expression and electrical activities.' Chemotactile receptors respond to terpenoids; touch runs through a NompC-type mechanoreceptor."
+          "note": "The 'taste by touch' framing is exactly right, but the mechanism is misattributed. Chemical and mechanical signals are handled by two separate cell populations, not by chemoreceptors doing both: 'distinct chemo- and mechanosensory cells exhibit specific receptor expression and electrical activities.' Chemotactile receptors respond to terpenoids; touch runs through a NompC-type mechanoreceptor.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Most octopus species survive only one to two years.",
@@ -520,10 +566,12 @@
         },
         {
           "claim": "Octopuses are semelparous, meaning they reproduce once and then die.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2021.753483/full",
           "sourceCitation": "Grearson, A. G., et al. (2021). The lesser Pacific striped octopus, Octopus chierchiae: an emerging laboratory model. Frontiers in Marine Science, 8:753483. doi:10.3389/fmars.2021.753483",
-          "note": "True of most species, not all. The paper is explicit both ways: 'Most octopus species are semelparous and die after one reproductive event,' but 'Unlike most octopus species, O. chierchiae is iteroparous,' laying successive clutches roughly every 30-90 days."
+          "note": "True of most species, not all. The paper is explicit both ways: 'Most octopus species are semelparous and die after one reproductive event,' but 'Unlike most octopus species, O. chierchiae is iteroparous,' laying successive clutches roughly every 30-90 days.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "After mating, the male wanders off and dies within weeks.",
@@ -562,24 +610,30 @@
         },
         {
           "claim": "The blue-ringed octopus's tetrodotoxin can kill a human within minutes and has no known antidote.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://dan.org/health-medicine/health-resources/diseases-conditions/blue-ringed-octopus/",
           "sourceCitation": "Divers Alert Network. Blue-Ringed Octopus (health resource page).",
-          "note": "'No antidote' is correct: 'There is no antivenom available,' and treatment is 'symptomatic and supportive.' 'Within minutes' is not. Symptoms start within minutes, but 'Death may occur as early as 20 minutes or as late as 24 hours after exposure; it usually occurs within the first 4 to 8 hours.' The lethal dose figure (about half a milligram for an adult) and TTX's potency relative to cyanide are both confirmed."
+          "note": "'No antidote' is correct: 'There is no antivenom available,' and treatment is 'symptomatic and supportive.' 'Within minutes' is not. Symptoms start within minutes, but 'Death may occur as early as 20 minutes or as late as 24 hours after exposure; it usually occurs within the first 4 to 8 hours.' The lethal dose figure (about half a milligram for an adult) and TTX's potency relative to cyanide are both confirmed.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The Kraken of Norse mythology was almost certainly inspired by encounters with giant squid and octopuses.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.scielo.br/j/hcsm/a/3f7pGvQSBQNC4kkC8MXsbQQ/?lang=en",
           "sourceCitation": "Salvador, R. B., & Tomotani, B. M. (2014). The Kraken: when myth encounters science. Historia, Ciencias, Saude-Manguinhos, 21(3), 971-994. doi:10.1590/S0104-59702014000300010",
-          "note": "The scholarship points at squid only: 'Today we know the legends of this monster were based on sightings of giant squids.' The paper traces the identification to Steenstrup's 1853 description of Architeuthis dux and notes that even sea serpent legends resolve to Architeuthis. Octopuses are not implicated. Since this is an octopus article, the 'and octopuses' is the tempting addition to make and the one the source does not support."
+          "note": "The scholarship points at squid only: 'Today we know the legends of this monster were based on sightings of giant squids.' The paper traces the identification to Steenstrup's 1853 description of Architeuthis dux and notes that even sea serpent legends resolve to Architeuthis. Octopuses are not implicated. Since this is an octopus article, the 'and octopuses' is the tempting addition to make and the one the source does not support.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The octopus has no skeleton and can squeeze through any opening large enough to fit its beak, the only hard part of its body.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://www.nationalgeographic.com/animals/article/160414-inky-octopus-escapes-intelligence",
           "sourceCitation": "Malik, W. (2016, April 14). Inky's Daring Escape Shows How Smart Octopuses Are. National Geographic.",
-          "note": "The soft-body half is uncontroversial: octopuses 'can squeeze through small openings because of their soft, boneless bodies.' The specific beak-as-limiting-aperture rule is repeated everywhere in popular writing and I could find no primary source that tests or quantifies it. The chitin composition of the beak is likewise unsourced here. Recommend softening to the boneless-body claim unless a primary source turns up."
+          "note": "The soft-body half is uncontroversial: octopuses 'can squeeze through small openings because of their soft, boneless bodies.' The specific beak-as-limiting-aperture rule is repeated everywhere in popular writing and I could find no primary source that tests or quantifies it. The chitin composition of the beak is likewise unsourced here. Recommend softening to the boneless-body claim unless a primary source turns up.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Octopuses are escape artists that slip out of tanks, cross the floor, and find their way back to the ocean.",
@@ -590,17 +644,21 @@
         },
         {
           "claim": "Octopuses collect and carefully arrange rocks outside their dens, a behavior resembling decorating a home.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "",
           "sourceCitation": "",
-          "note": "I could not open a primary source. The originating study is almost certainly Mather, J. A. (1994), 'Home' choice and modification by juvenile Octopus vulgaris (Mollusca: Cephalopoda): specialized intelligence and tool use?, Journal of Zoology 233:359-368, which reports juveniles selecting den sites and modifying them by removing rocks and sand and bringing in items to partly block the aperture. That is functional den modification rather than decoration, so the 'decorating a home' framing likely overstates it even if the underlying behavior checks out."
+          "note": "I could not open a primary source. The originating study is almost certainly Mather, J. A. (1994), 'Home' choice and modification by juvenile Octopus vulgaris (Mollusca: Cephalopoda): specialized intelligence and tool use?, Journal of Zoology 233:359-368, which reports juveniles selecting den sites and modifying them by removing rocks and sand and bringing in items to partly block the aperture. That is functional den modification rather than decoration, so the 'decorating a home' framing likely overstates it even if the underlying behavior checks out.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The octopus's last common ancestor with vertebrates was a simple flatworm-like creature.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "",
           "sourceCitation": "",
-          "note": "I could not verify this from any source I opened; the relevant review (Roth, G. 2015, Convergent evolution of complex brains and high intelligence, Phil. Trans. R. Soc. B 370:20150049) was blocked at the publisher. Divergence estimates in the 550-600 million year range and an early bilaterian ancestor are widely cited, but 'flatworm-like' is a specific morphological claim about an unfossilized ancestor. Recommend softening to 'an early bilaterian ancestor more than half a billion years ago.'"
+          "note": "I could not verify this from any source I opened; the relevant review (Roth, G. 2015, Convergent evolution of complex brains and high intelligence, Phil. Trans. R. Soc. B 370:20150049) was blocked at the publisher. Divergence estimates in the 550-600 million year range and an early bilaterian ancestor are widely cited, but 'flatworm-like' is a specific morphological claim about an unfossilized ancestor. Recommend softening to 'an early bilaterian ancestor more than half a billion years ago.'",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The 2020 Netflix documentary 'My Octopus Teacher,' documenting Craig Foster's year with a wild octopus in a South African kelp forest, won an Academy Award.",
@@ -611,10 +669,12 @@
         },
         {
           "claim": "The octopus has a brain that wraps around its throat.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "",
           "sourceCitation": "",
-          "note": "Not checked against a primary source. The octopus brain is a ring of fused ganglia around the esophagus, so this is very likely correct, but it is a specific anatomical claim and should carry a citation before publication under a primary-source standard."
+          "note": "Not checked against a primary source. The octopus brain is a ring of fused ganglia around the esophagus, so this is very likely correct, but it is a specific anatomical claim and should carry a citation before publication under a primary-source standard.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         }
       ],
       "sourcesBlock": "- [Blood flow and pressure changes in exercising octopuses (Octopus vulgaris), Journal of Experimental Biology 131:175-187 (Wells, Duthie, Houlihan, Smith & Wells, 1987)](https://journals.biologists.com/jeb/article/131/1/175/5279/Blood-Flow-and-Pressure-Changes-in-Exercising)\n- [Nervous control of the heartbeat in octopus, Journal of Experimental Biology 85:111-128 (Wells, 1980)](https://pubmed.ncbi.nlm.nih.gov/7373208/)\n- [Blue blood on ice: modulated blood oxygen transport facilitates cold compensation and eurythermy in an Antarctic octopod, Frontiers in Zoology 12:6 (Oellermann, Lieb, Portner, Semmens & Mark, 2015)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4403823/)\n- [Dynamic mimicry in an Indo-Malayan octopus, Proceedings of the Royal Society B 268:1755-1758 (Norman, Finn & Tregenza, 2001)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1088805/)\n- [Where is it like to be an octopus?, Frontiers in Systems Neuroscience 16:840022 (Carls-Diamante, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8988249/)\n- [An embodied view of octopus neurobiology, Current Biology 22:R887-R892 (Hochner, 2012)](https://pubmed.ncbi.nlm.nih.gov/23098601/)\n- [Octopuses (Enteroctopus dofleini) recognize individual humans, Journal of Applied Animal Welfare Science 13:261-272 (Anderson, Mather, Monette & Zimsen, 2010)](https://pubmed.ncbi.nlm.nih.gov/20563906/)\n- [Dynamic skin patterns in cephalopods, Frontiers in Physiology 8:393 (How, Norman, Finn, Chung & Marshall, 2017)](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00393/full)\n- [Cuttlefish skin papilla morphology suggests a muscular hydrostatic function for rapid changeability, Journal of Morphology 274:645-656 (Allen, Bell, Kuzirian & Hanlon, 2013)](https://pubmed.ncbi.nlm.nih.gov/23378271/)\n- [Molecular basis of chemotactile sensation in octopus, Cell 183:594-604 (van Giesen, Kilian, Allard & Bellono, 2020)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7605239/)\n- [Multiple optic gland signaling pathways implicated in octopus maternal behaviors and death, Journal of Experimental Biology 221:jeb185751 (Wang & Ragsdale, 2018)](https://journals.biologists.com/jeb/article/221/19/jeb185751/33815/Multiple-optic-gland-signaling-pathways-implicated)\n- [Cephalopod ink: production, chemistry, functions and applications, Marine Drugs 12:2700-2730 (Derby, 2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4052311/)\n- [Defensive tool use in a coconut-carrying octopus, Current Biology 19:R1069-R1070 (Finn, Tregenza & Norman, 2009)](https://pubmed.ncbi.nlm.nih.gov/20064403/)\n- [Pull or push? Octopuses solve a puzzle problem, PLoS ONE 11:e0152048 (Richter, Hochner & Kuba, 2016)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0152048)\n- [Evidence of play behavior in captive California two-spot octopuses, Octopus bimaculoides, PLOS ONE 20:e0326379 (Jarmoluk & Pelled, 2025)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0326379)\n- [The lesser Pacific striped octopus, Octopus chierchiae: an emerging laboratory model, Frontiers in Marine Science 8:753483 (Grearson et al., 2021)](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2021.753483/full)\n- [The Kraken: when myth encounters science, Historia Ciencias Saude-Manguinhos 21:971-994 (Salvador & Tomotani, 2014)](https://www.scielo.br/j/hcsm/a/3f7pGvQSBQNC4kkC8MXsbQQ/?lang=en)\n- [The Mind of an Octopus, Scientific American Mind 28:62 (Godfrey-Smith, 2017)](https://www.scientificamerican.com/article/the-mind-of-an-octopus/)\n- [Giant Pacific Octopus (Enteroctopus dofleini) Species Profile (Alaska Department of Fish and Game)](https://www.adfg.alaska.gov/index.cfm?adfg=giantpacificoctopus.printerfriendly)\n- [Giant Pacific Octopus (Enteroctopus dofleini) species page (Monterey Bay Aquarium)](https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus)\n- [Blue-Ringed Octopus, health resource on tetrodotoxin envenomation (Divers Alert Network)](https://dan.org/health-medicine/health-resources/diseases-conditions/blue-ringed-octopus/)\n- [Inky's Daring Escape Shows How Smart Octopuses Are, National Geographic (Malik, 2016)](https://www.nationalgeographic.com/animals/article/160414-inky-octopus-escapes-intelligence)\n- [My Octopus Teacher is the 2021 Oscar Winner for Documentary (Feature), 93rd Academy Awards (Academy of Motion Picture Arts and Sciences, 2021)](https://abc.com/news/37cdb8ff-1cda-4aab-89dc-086e7dcc32b3/category/3590742)",
@@ -712,10 +772,12 @@
       "claims": [
         {
           "claim": "An animal the size of a medium dog that will aggressively defend a carcass against animals many times its size, drag a full-grown caribou through deep snow, and range hundreds of miles without rest.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://home.nps.gov/articles/wolverine.htm",
           "sourceCitation": "Wolverine. National Park Service species article (nps.gov/articles/wolverine.htm)",
-          "note": "NPS confirms wolverines are \"capable of capturing and killing prey that is much larger than themselves such as a moose or caribou,\" but ADF&G's species profile says killing large prey is rare, and NPS says that \"more often than killing, wolverines will scavenge carcasses of animals killed by other predators, drag them away from the kill sites, and cache them.\" Nothing in the literature documents a wolverine dragging an intact adult caribou. What is documented is dragging portions of carcasses away to cache them."
+          "note": "NPS confirms wolverines are \"capable of capturing and killing prey that is much larger than themselves such as a moose or caribou,\" but ADF&G's species profile says killing large prey is rare, and NPS says that \"more often than killing, wolverines will scavenge carcasses of animals killed by other predators, drag them away from the kill sites, and cache them.\" Nothing in the literature documents a wolverine dragging an intact adult caribou. What is documented is dragging portions of carcasses away to cache them.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The wolverine (Gulo gulo) is the largest land-dwelling member of the weasel family.",
@@ -733,10 +795,12 @@
         },
         {
           "claim": "Wolverines have been documented displacing cougars from their kills (stated twice in the body, and again in the excerpt and meta description).",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://animaldiversity.org/accounts/Gulo_gulo/",
           "sourceCitation": "Gulo gulo (wolverine). Animal Diversity Web, University of Michigan Museum of Zoology",
-          "note": "This is the article's single most repeated claim and I could not find a primary source for it. Animal Diversity Web says wolverines \"have been reported to drive bears, cougars, and even packs of wolves from their kills\" but gives no citation for it, and that uncited sentence appears to be the origin of the claim across the popular web. Searches of the puma kill-site literature turned up nothing: Allen et al. 2014 (PLOS ONE 9:e102257) camera-monitored 58 puma kills and logged 20 scavenger species with no wolverine, and Elbroch & Wittmer 2012 (Biol. Lett. 8:776-779) does not mention wolverines. Bell et al. 2023 (Sci. Rep. 13:11026) found wolverines reduced their scavenging rate in lynx high-use areas, i.e. fine-scale avoidance of a competitor, not dominance. ADF&G states flatly that wolverines \"will not attack a larger predator, like a wolf or a bear.\""
+          "note": "This is the article's single most repeated claim and I could not find a primary source for it. Animal Diversity Web says wolverines \"have been reported to drive bears, cougars, and even packs of wolves from their kills\" but gives no citation for it, and that uncited sentence appears to be the origin of the claim across the popular web. Searches of the puma kill-site literature turned up nothing: Allen et al. 2014 (PLOS ONE 9:e102257) camera-monitored 58 puma kills and logged 20 scavenger species with no wolverine, and Elbroch & Wittmer 2012 (Biol. Lett. 8:776-779) does not mention wolverines. Bell et al. 2023 (Sci. Rep. 13:11026) found wolverines reduced their scavenging rate in lynx high-use areas, i.e. fine-scale avoidance of a competitor, not dominance. ADF&G states flatly that wolverines \"will not attack a larger predator, like a wolf or a bear.\"",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Wolves and bears are genuine predators of wolverines.",
@@ -775,17 +839,21 @@
         },
         {
           "claim": "One of the largest territories of any land mammal relative to body size.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://www.eopugetsound.org/articles/wolverine-gulo-gulo",
           "sourceCitation": "Stinson, D. et al. (2013). Wolverine (Gulo gulo). Encyclopedia of Puget Sound / Washington Department of Fish and Wildlife",
-          "note": "The underlying observation is real: Inman et al. 2012 (J. Wildl. Manage. 76:778-792) recorded GYE home ranges of 303 km2 for females and 797 km2 for males and described them as large relative to body size. But no source I found ranks the wolverine against all land mammals on that metric, so the superlative is unsupported as written."
+          "note": "The underlying observation is real: Inman et al. 2012 (J. Wildl. Manage. 76:778-792) recorded GYE home ranges of 303 km2 for females and 797 km2 for males and described them as large relative to body size. But no source I found ranks the wolverine against all land mammals on that metric, so the superlative is unsupported as written.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They mark every inch of that range with a pungent musk secreted from glands near the base of the tail.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://wolverinefoundation.org/general-characteristics",
           "sourceCitation": "General Wolverine Characteristics. The Wolverine Foundation",
-          "note": "Wrong mechanism. The Wolverine Foundation: \"Although wolverines have well developed anal musk glands, musking appears to be used primarily as a fear-defense mechanism\" and \"chemical communication is accomplished via scentmarking with urine and abdominal rubbing.\" ADF&G's Behind the Myth lists three gland sets: \"a ventral gland near the belly button, anal glands, and they also have little scent glands on the bottom of the pads of their feet.\" So the anal glands near the tail base are the defensive ones, and routine territorial marking is mostly urine plus belly rubbing."
+          "note": "Wrong mechanism. The Wolverine Foundation: \"Although wolverines have well developed anal musk glands, musking appears to be used primarily as a fear-defense mechanism\" and \"chemical communication is accomplished via scentmarking with urine and abdominal rubbing.\" ADF&G's Behind the Myth lists three gland sets: \"a ventral gland near the belly button, anal glands, and they also have little scent glands on the bottom of the pads of their feet.\" So the anal glands near the tail base are the defensive ones, and routine territorial marking is mostly urine plus belly rubbing.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "This scent-marking system is so effective that other wolverines, predators, and even experienced trappers can detect it from a considerable distance.",
@@ -796,10 +864,12 @@
         },
         {
           "claim": "Wolverines can smell prey buried under up to 20 feet of snow. That is not a typo.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://www.adfg.alaska.gov/index.cfm?adfg=wildlifenews.view_article&articles_id=692",
           "sourceCitation": "Woodford, R. (2014). Wolverines: Behind the Myth. Alaska Fish and Wildlife News, Alaska Department of Fish and Game",
-          "note": "No primary source exists for the 20 foot figure. It traces to a PBS Nature web page for the film Wolverine: Chasing the Phantom (pbs.org, 2010), which asserts it without citation, and every popular repetition traces back there. A USDA Forest Service Science Findings piece gives 6 feet instead, and other popular sources give 2 metres, so the number is not even stable. The defensible version is ADF&G biologist Howard Golden's: \"a really good nose, they can smell food over long distances or buried well under the snow,\" with no depth attached. Note also that the paragraph slides from smelling prey to excavating carcasses, and 20 feet of settled snowpack is deeper than almost any documented wolverine dig."
+          "note": "No primary source exists for the 20 foot figure. It traces to a PBS Nature web page for the film Wolverine: Chasing the Phantom (pbs.org, 2010), which asserts it without citation, and every popular repetition traces back there. A USDA Forest Service Science Findings piece gives 6 feet instead, and other popular sources give 2 metres, so the number is not even stable. The defensible version is ADF&G biologist Howard Golden's: \"a really good nose, they can smell food over long distances or buried well under the snow,\" with no depth attached. Note also that the paragraph slides from smelling prey to excavating carcasses, and 20 feet of settled snowpack is deeper than almost any documented wolverine dig.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The fur is uniquely structured to resist frost and moisture; ice and snow do not cling to it the way they do to other animal coats. Indigenous peoples of the Arctic have long prized wolverine fur for lining the hoods of parkas for exactly this reason.",
@@ -831,10 +901,12 @@
         },
         {
           "claim": "Wolverines have semi-retractable claws, similar in concept to a cat's, which give them exceptional grip on ice and rock.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://wolverinefoundation.org/general-characteristics",
           "sourceCitation": "General Wolverine Characteristics. The Wolverine Foundation",
-          "note": "Contested, and the article states it as settled. ADF&G does say wolverines have \"curved, semi-retractile claws,\" but The Wolverine Foundation, written by wolverine biologists, corrects this directly: \"while biomechanics of the toes may suggest the claws are semi-retractile, anatomically they are clearly fixed.\" The cat comparison is the part that is clearly wrong. Nothing sources the \"exceptional grip on ice\" attribution to the claws specifically."
+          "note": "Contested, and the article states it as settled. ADF&G does say wolverines have \"curved, semi-retractile claws,\" but The Wolverine Foundation, written by wolverine biologists, corrects this directly: \"while biomechanics of the toes may suggest the claws are semi-retractile, anatomically they are clearly fixed.\" The cat comparison is the part that is clearly wrong. Nothing sources the \"exceptional grip on ice\" attribution to the claws specifically.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Despite their fierce reputation, wolverines are solitary animals. Adults come together only briefly to mate, and males play no role in raising young.",
@@ -1085,10 +1157,12 @@
         },
         {
           "claim": "It typically hunts at dawn and dusk; platypuses are most active at dawn and dusk.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Bino, G., et al. (2019). The platypus: evolutionary history, biology, and an uncertain future. Journal of Mammalogy 100(2):308-327. DOI: 10.1093/jmammal/gyz058",
           "sourceUrl": "https://academic.oup.com/jmammal/article/100/2/308/5477503",
-          "note": "Bino et al. describe the platypus as 'predominantly nocturnal,' with 'some foraging occurs during daylight, particularly in winter or during lactation.' The Australian Museum says 'largely' active 'during twilight and in the night.' Crepuscular is part of the picture, not the whole of it. This matters because the article leans on 'most active at dawn and dusk' a second time as the rationale for the biofluorescence hypothesis, and the article's own closing paragraph calls them 'nocturnal,' contradicting itself."
+          "note": "Bino et al. describe the platypus as 'predominantly nocturnal,' with 'some foraging occurs during daylight, particularly in winter or during lactation.' The Australian Museum says 'largely' active 'during twilight and in the night.' Crepuscular is part of the picture, not the whole of it. This matters because the article leans on 'most active at dawn and dusk' a second time as the rationale for the biofluorescence hypothesis, and the article's own closing paragraph calls them 'nocturnal,' contradicting itself.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The platypus has no stomach. Not a small stomach, not a simplified stomach. No stomach at all. Food travels from the esophagus directly into the intestine.",
@@ -1120,10 +1194,12 @@
         },
         {
           "claim": "One leading hypothesis is that the glow plays a role in communication or camouflage in low-light conditions, since platypuses are most active at dawn and dusk when UV light is relatively more prominent.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Travouillon, K.J., Cooper, C., Bouzin, J.T., Umbrello, L.S., Lewis, S.W. (2023). All-a-glow: spectral characteristics confirm widespread fluorescence for mammals. Royal Society Open Science 10(10):230325. DOI: 10.1098/rsos.230325",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10548093/",
-          "note": "Later work substantially undercuts the adaptive framing. Travouillon et al. examined 146 specimens across 125 species, 79 families and all 27 living mammal orders, and found fluorescence in essentially all of them, concluding it is 'a ubiquitous property of unpigmented fur and skin' driven by tryptophan metabolite fluorophores masked by melanin in darker fur. They also compared preserved and frozen platypus specimens and found both preservation methods produced 'higher intensity fluorescence compared with the frozen specimen,' and specifically argued platypus ventral fluorescence is unlikely to be functional because platypuses 'hunt for aquatic prey underwater with their eyes closed.' The article's own 'possible byproduct with no function' alternative is now the better-supported reading."
+          "note": "Later work substantially undercuts the adaptive framing. Travouillon et al. examined 146 specimens across 125 species, 79 families and all 27 living mammal orders, and found fluorescence in essentially all of them, concluding it is 'a ubiquitous property of unpigmented fur and skin' driven by tryptophan metabolite fluorophores masked by melanin in darker fur. They also compared preserved and frozen platypus specimens and found both preservation methods produced 'higher intensity fluorescence compared with the frozen specimen,' and specifically argued platypus ventral fluorescence is unlikely to be functional because platypuses 'hunt for aquatic prey underwater with their eyes closed.' The article's own 'possible byproduct with no function' alternative is now the better-supported reading.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Male platypuses have ten sex chromosomes (five X and five Y); females have ten X chromosomes.",
@@ -1134,10 +1210,12 @@
         },
         {
           "claim": "The platypus sex-determination system is thought to be an intermediate step between the sex chromosome systems of reptiles and those of other mammals.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceCitation": "Grutzner, F., et al. (2004). In the platypus a meiotic chain of ten sex chromosomes shares genes with the bird Z and mammal X chromosomes. Nature 432(7019):913-917. DOI: 10.1038/nature03021",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/15502814/",
-          "note": "The homology is specifically to the BIRD Z chromosome, not to reptiles generally: the largest X is homologous to the human X and another chromosome in the chain is homologous to the avian Z. Saying 'reptiles' is imprecise. Also, Zhou et al. 2021 (Nature 592:756-762) has since refined the story, showing the complex arose from an ancestral chromosome RING configuration via fusions and reciprocal translocations, which complicates the neat 'intermediate step' framing."
+          "note": "The homology is specifically to the BIRD Z chromosome, not to reptiles generally: the largest X is homologous to the human X and another chromosome in the chain is homologous to the avian Z. Saying 'reptiles' is imprecise. Also, Zhou et al. 2021 (Nature 592:756-762) has since refined the story, showing the complex arose from an ancestral chromosome RING configuration via fusions and reciprocal translocations, which complicates the neat 'intermediate step' framing.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The platypus genome shares genes with mammals, reptiles, and birds, and sequencing it was a landmark moment.",
@@ -1262,17 +1340,21 @@
         },
         {
           "claim": "The narwhal tusk is packed with up to 10 million nerve endings that connect to the outside world through tiny pores in the surface.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.scientificamerican.com/article/narwhal-found-to-have-a-t/",
           "sourceCitation": "Biello D. Narwhal Found to Have a Trick Up Its Tusk. Scientific American, 14 December 2005",
-          "note": "The 10 million figure exists but describes tubules, not nerve endings. Scientific American reporting Nweeia's 2005 announcement says 'as many as 10 million tiny nerves reaching from its surface to the central core.' The published anatomy (Nweeia et al. 2009, Smithsonian at the Poles) describes a dentinal tubule network with lumena about 2 micrometres across, spaced 10 to 20 micrometres apart, running from the pulp through to orifices on the cementum surface. The nerves sit in the pulp; the tubules carry fluid movement to them. There is no published count of 10 million nerve endings."
+          "note": "The 10 million figure exists but describes tubules, not nerve endings. Scientific American reporting Nweeia's 2005 announcement says 'as many as 10 million tiny nerves reaching from its surface to the central core.' The published anatomy (Nweeia et al. 2009, Smithsonian at the Poles) describes a dentinal tubule network with lumena about 2 micrometres across, spaced 10 to 20 micrometres apart, running from the pulp through to orifices on the cementum surface. The nerves sit in the pulp; the tubules carry fluid movement to them. There is no published count of 10 million nerve endings.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The tusk is a hydrodynamic sensory organ: fluid movement within the dentinal tubules lets it register changes in water salinity, temperature and pressure.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24639076/",
           "sourceCitation": "Nweeia MT, Eichmiller FC, Hauschka PV, Donahue GA, Orr JR, Ferguson SH, Watt CA, Mead JG, Potter CW, Dietz R, Giuseppetti AA, Black SR, Trachtenberg AJ, Kuo WP. Sensory ability in the narwhal tooth organ system. The Anatomical Record 297(4):599-617 (2014). DOI 10.1002/ar.22886",
-          "note": "The mechanism is right (ocean water enters through cementum channels into patent dentinal tubules, signalling pulpal nerves via the maxillary division of the fifth cranial nerve, consistent with Brännström's hydrodynamic theory). But only salinity has been demonstrated in a live animal: the in vivo test showed 'significant changes in heart rate when alternating solutions of high-salt and fresh water are exposed to the external tusk surface.' Temperature and pressure detection remain hypothesised (Nweeia et al. 2009). The article presents all three as established."
+          "note": "The mechanism is right (ocean water enters through cementum channels into patent dentinal tubules, signalling pulpal nerves via the maxillary division of the fifth cranial nerve, consistent with Brännström's hydrodynamic theory). But only salinity has been demonstrated in a live animal: the in vivo test showed 'significant changes in heart rate when alternating solutions of high-salt and fresh water are exposed to the external tusk surface.' Temperature and pressure detection remain hypothesised (Nweeia et al. 2009). The article presents all three as established.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Narwhals have been observed using their tusks to stun Arctic cod by slapping them with quick, precise strikes before eating them.",
@@ -1290,10 +1372,12 @@
         },
         {
           "claim": "The narwhal tusk has no enamel coating, which means it is actually flexible, and it can bend up to 30 centimeters without breaking.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/2256815/",
           "sourceCitation": "Brear K, Currey JD, Pond CM, Ramsay MA. The mechanical properties of the dentine and cement of the tusk of the narwhal Monodon monoceros compared with those of other mineralized tissues. Archives of Oral Biology 35(8):615-621 (1990). DOI 10.1016/0003-9969(90)90027-8",
-          "note": "Three separate problems. (1) The no-enamel part is correct: Nweeia et al. 2009 state 'the tubules in the narwhal tusk are not protected by an overlying layer of enamel.' (2) The causal link is wrong. Missing enamel is what makes the tusk sensory, not flexible. Flexibility comes from the tissue itself: Brear et al. found narwhal dentine 'considerably softer and less mineralized than human and cattle dentine,' with low Young's moduli, low yield stresses and high ultimate strains, closer to reindeer antler than to normal dentine. (3) The 30 cm figure is inverted. The source claim (Scientific American 2005, quoting Nweeia) is that an eight-foot tusk 'can yield at least a foot in any direction without breaking,' i.e. at least 30 cm, not up to 30 cm. The published measurements are flexural strength of 94.6 MPa at mid-tusk and 165 MPa near the base (Nweeia et al. 2009), with no bend-distance figure."
+          "note": "Three separate problems. (1) The no-enamel part is correct: Nweeia et al. 2009 state 'the tubules in the narwhal tusk are not protected by an overlying layer of enamel.' (2) The causal link is wrong. Missing enamel is what makes the tusk sensory, not flexible. Flexibility comes from the tissue itself: Brear et al. found narwhal dentine 'considerably softer and less mineralized than human and cattle dentine,' with low Young's moduli, low yield stresses and high ultimate strains, closer to reindeer antler than to normal dentine. (3) The 30 cm figure is inverted. The source claim (Scientific American 2005, quoting Nweeia) is that an eight-foot tusk 'can yield at least a foot in any direction without breaking,' i.e. at least 30 cm, not up to 30 cm. The published measurements are flexural strength of 94.6 MPa at mid-tusk and 165 MPa near the base (Nweeia et al. 2009), with no bend-distance figure.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Narwhals live in Arctic waters of Canada, Greenland, Norway and Russia.",
@@ -1304,17 +1388,21 @@
         },
         {
           "claim": "Rather than avoiding the ice, narwhals actively seek it out, navigating narrow leads and cracks to find food and shelter from predators like orcas.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5347589/",
           "sourceCitation": "Breed GA, Matthews CJD, Marcoux M, Higdon JW, LeBlanc B, Petersen SD, Orr J, Reinhart NR, Ferguson SH. Sustained disruption of narwhal habitat use and behavior in the presence of Arctic killer whales. Proceedings of the National Academy of Sciences 114(10):2628-2633 (2017). DOI 10.1073/pnas.1611707114",
-          "note": "The ice-seeking half is fine: Heide-Jørgensen et al. 2015 found narwhals 'choose specific wintering grounds over deep water in the dense pack ice,' and Laidre et al. 2008 rate them the most specialised Arctic cetacean, overwintering in offshore ice-covered habitat. The orca-refuge half is not what the killer-whale study found. When killer whales were within about 100 km, 'narwhal were almost entirely constrained to a narrow band of water directly adjacent to shore,' i.e. they fled to shallow coastal water, not into ice. The paper reports no evidence of narwhals seeking ice when threatened."
+          "note": "The ice-seeking half is fine: Heide-Jørgensen et al. 2015 found narwhals 'choose specific wintering grounds over deep water in the dense pack ice,' and Laidre et al. 2008 rate them the most specialised Arctic cetacean, overwintering in offshore ice-covered habitat. The orca-refuge half is not what the killer-whale study found. When killer whales were within about 100 km, 'narwhal were almost entirely constrained to a narrow band of water directly adjacent to shore,' i.e. they fled to shallow coastal water, not into ice. The paper reports no evidence of narwhals seeking ice when threatened.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They regularly plunge to depths of 1,500 meters (nearly a mile) and have been recorded going even deeper.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0330928",
           "sourceCitation": "Hornby CA, Togunov RR, McClintock BT, Watt CA. Behavioural analysis of multi-year satellite telemetry data provides insight into narwhal (Monodon monoceros) winter prey selection in Baffin Bay. PLOS ONE 20(9):e0330928 (2025). DOI 10.1371/journal.pone.0330928",
-          "note": "'Regularly' is wrong. Weighted mean winter dive depth was 207 plus or minus 99 m, with maximum dives exceeding 1,400 m, and the authors describe dives 'possibly beyond 1500-1800 m (which we only see occasionally in the winter).' Heide-Jørgensen et al. 2015 recorded a January average daily maximum of 1,064 m (sd 323) with a single maximum of 1,600 m. NOAA gives 3,937 ft (1,200 m). So 1,500 m sits at the extreme end, not the routine end, and 1,600 m is the deepest figure I could find in a primary source."
+          "note": "'Regularly' is wrong. Weighted mean winter dive depth was 207 plus or minus 99 m, with maximum dives exceeding 1,400 m, and the authors describe dives 'possibly beyond 1500-1800 m (which we only see occasionally in the winter).' Heide-Jørgensen et al. 2015 recorded a January average daily maximum of 1,064 m (sd 323) with a single maximum of 1,600 m. NOAA gives 3,937 ft (1,200 m). So 1,500 m sits at the extreme end, not the routine end, and 1,600 m is the deepest figure I could find in a primary source.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "In winter, narwhals make dives past 800 meters up to 25 times a day.",
@@ -1360,10 +1448,12 @@
         },
         {
           "claim": "The word 'narwhal' comes from Old Norse nar ('corpse') plus hvalr ('whale'), because the mottled skin resembled a drowned sailor.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.etymonline.com/word/narwhal",
           "sourceCitation": "Harper D. narwhal. Online Etymology Dictionary",
-          "note": "This is the standard dictionary derivation but it is genuinely disputed, and the article states it flatly. Etymonline gives Old Norse nahvalr, 'corpse-whale,' from the 'whitish color, resembling that of dead bodies,' then notes the Germanic linguist Winfred P. Lehmann argued this is folk etymology and that nahvalr was a West Norse term meaning 'whale distinguished by a long, narrow projection,' i.e. named for the tusk. Also, the Old Norse element is nár, and the compound is náhvalr."
+          "note": "This is the standard dictionary derivation but it is genuinely disputed, and the article states it flatly. Etymonline gives Old Norse nahvalr, 'corpse-whale,' from the 'whitish color, resembling that of dead bodies,' then notes the Germanic linguist Winfred P. Lehmann argued this is folk etymology and that nahvalr was a West Norse term meaning 'whale distinguished by a long, narrow projection,' i.e. named for the tusk. Also, the Old Norse element is nár, and the compound is náhvalr.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Young narwhals are born a uniform dark gray or brownish colour, lighten with age into a mottled pattern, and very old narwhals can appear almost entirely white.",
@@ -1381,10 +1471,12 @@
         },
         {
           "claim": "Queen Elizabeth I of England received a narwhal tusk valued at the equivalent of a castle.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.nationalgeographic.com/science/article/the-mystery-of-the-sea-unicorn",
           "sourceCitation": "Zimmer C. The Mystery of the Sea Unicorn. National Geographic, 18 March 2014",
-          "note": "The sources hedge this and disagree on the mechanism. National Geographic writes that Elizabeth 'was said to have paid 10,000 pounds for a unicorn horn, the price of a castle' (note 'was said to'), and separately that Martin Frobisher in 1577 'presented the horn to Queen Elizabeth, who commanded that it be kept with the crown jewels.' So one account has her paying and one has her receiving. This should be presented as a traditional account, not a fact."
+          "note": "The sources hedge this and disagree on the mechanism. National Geographic writes that Elizabeth 'was said to have paid 10,000 pounds for a unicorn horn, the price of a castle' (note 'was said to'), and separately that Martin Frobisher in 1577 'presented the horn to Queen Elizabeth, who commanded that it be kept with the crown jewels.' So one account has her paying and one has her receiving. This should be presented as a traditional account, not a fact.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Alicorn was believed to detect poison in food and drink, cure illness and protect the owner, and cups were carved from it for royalty.",
@@ -1402,10 +1494,12 @@
         },
         {
           "claim": "The Inuit knew what the tusks were, but the secret was kept by Norse and later Danish traders who controlled the supply.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://www.journal18.org/16-cold/narwhal-ivory-as-the-arctic-colonial-speciality-of-the-kingdom-of-denmark-norway/",
           "sourceCitation": "Grimes K. Narwhal Ivory as the Arctic Colonial Speciality of the Kingdom of Denmark-Norway. Journal18: a journal of eighteenth-century art and culture, Issue 16 (Cold), Fall 2023",
-          "note": "The controlled-supply half is well documented: Grimes treats narwhal ivory as the territorial speciality of Denmark-Norway, held through dominion over Iceland and the Faroes, and the Danish Royal House says the same. The deliberate-secret framing traces to popular retellings (National Geographic writes that Vikings sold the tusks 'never revealing their origin'). I found no primary historical source establishing an organised, maintained secret, so I would soften rather than cite this."
+          "note": "The controlled-supply half is well documented: Grimes treats narwhal ivory as the territorial speciality of Denmark-Norway, held through dominion over Iceland and the Faroes, and the Danish Royal House says the same. The deliberate-secret framing traces to popular retellings (National Geographic writes that Vikings sold the tusks 'never revealing their origin'). I found no primary historical source establishing an organised, maintained secret, so I would soften rather than cite this.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The Throne Chair of Denmark, made in the 1600s, was constructed almost entirely from narwhal tusks and is on display at Rosenborg Castle in Copenhagen.",
@@ -1416,10 +1510,12 @@
         },
         {
           "claim": "The Throne Chair of Denmark was believed to protect the king from evil and poison.",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://www.kongehuset.dk/en/menu/news/the-history-behind-the-anointing-throne",
           "sourceCitation": "The Danish Monarchy (Kongehuset). The history behind the anointing throne",
-          "note": "None of the three official or academic sources on the chair says this. The Danish Royal House only notes 'it was said that the throne was made of unicorn horn, but in reality' it was narwhal tusk. Grimes (2023) explains its meaning in terms of divinely ordained royal authority: 'the soon-to-be king sat upon the throne, clutching the ivory arms, and only then received his divinely ordained authority as king.' The poison and evil claim looks like the general alicorn belief transplanted onto this specific object."
+          "note": "None of the three official or academic sources on the chair says this. The Danish Royal House only notes 'it was said that the throne was made of unicorn horn, but in reality' it was narwhal tusk. Grimes (2023) explains its meaning in terms of divinely ordained royal authority: 'the soon-to-be king sat upon the throne, clutching the ivory arms, and only then received his divinely ordained authority as king.' The poison and evil claim looks like the general alicorn belief transplanted onto this specific object.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Narwhals and belugas are the only two living members of the family Monodontidae.",
@@ -1437,10 +1533,12 @@
         },
         {
           "claim": "Narwhals can live close to 100 years, with some individuals reaching around 115, determined through aspartic acid racemization of the eye lens.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://academic.oup.com/jmammal/article-abstract/88/1/49/927563",
           "sourceCitation": "Garde E, Heide-Jørgensen MP, Hansen SH, Nachman G, Forchhammer MC. Age-Specific Growth and Remarkable Longevity in Narwhals (Monodon monoceros) from West Greenland as Estimated by Aspartic Acid Racemization. Journal of Mammalogy 88(1):49-58 (2007). DOI 10.1644/06-MAMM-A-056R.1",
-          "note": "The method is described correctly and the 115 figure is real, but it is one animal, not a norm. From 75 narwhals sampled in West Greenland, 'the maximum estimated age was a 115-year-old (plus or minus 10 SE) female.' That is a single extreme estimate with a wide error bar. NOAA's species page says narwhals 'live to at least 25 years old, and may live up to 50 years.' Garde et al. 2024 (Biology Letters 20:20240350) further show that age estimates for older narwhals carry real uncertainty: one whale aged 70 years by growth-layer counting came out at 55 by radiocarbon. Saying they 'can live close to 100 years' presents an outlier as typical."
+          "note": "The method is described correctly and the 115 figure is real, but it is one animal, not a norm. From 75 narwhals sampled in West Greenland, 'the maximum estimated age was a 115-year-old (plus or minus 10 SE) female.' That is a single extreme estimate with a wide error bar. NOAA's species page says narwhals 'live to at least 25 years old, and may live up to 50 years.' Garde et al. 2024 (Biology Letters 20:20240350) further show that age estimates for older narwhals carry real uncertainty: one whale aged 70 years by growth-layer counting came out at 55 by radiocarbon. Saying they 'can live close to 100 years' presents an outlier as typical.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Narwhals are considered one of the most vulnerable Arctic mammals to climate change.",
@@ -1561,10 +1659,12 @@
         },
         {
           "claim": "Their mouth is a remarkable structure called a stylet, a hollow, needle-like tube they use to pierce plant cells or prey and suck out the contents",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://academic.oup.com/icb/article/55/2/241/745734",
           "sourceCitation": "Guidetti R, Bonifacio A, Altiero T, Bertolani R & Rebecchi L (2015). Distribution of calcium and chitin in the tardigrade feeding apparatus in relation to its function and morphology. Integrative and Comparative Biology 55(2):241-252. doi:10.1093/icb/icv008",
-          "note": "The feeding apparatus has four parts: buccal ring, buccal tube, stylet system (two piercing stylets in stylet coats plus two supports), and the sucking pharynx lining. The stylets are solid, made 'exclusively of aragonite' (calcium carbonate), and are not the mouth. The hollow tube is the buccal tube, a separate structure. The article conflates the two."
+          "note": "The feeding apparatus has four parts: buccal ring, buccal tube, stylet system (two piercing stylets in stylet coats plus two supports), and the sucking pharynx lining. The stylets are solid, made 'exclusively of aragonite' (calcium carbonate), and are not the mouth. The hollow tube is the buccal tube, a separate structure. The article conflates the two.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "There are around 1,500 described species of tardigrade",
@@ -1575,10 +1675,12 @@
         },
         {
           "claim": "You can find tardigrades in the Himalayas, in deep ocean trenches, in hot springs, in Antarctic ice, and in moss",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.guinnessworldrecords.com/news/2019/3/tardigrades-are-these-the-worlds-toughest-animals-564195",
           "sourceCitation": "Guinness World Records (2019). Tardigrades: are these the world's toughest animals?",
-          "note": "Hot springs, volcano interiors, Antarctic ice and moss are all documented (GWR; ADW: 'from the Arctic to the Antarctic, including great depths and altitudes'). 'Deep ocean trenches' is the weak link: published marine tardigrade collections top out around 4,700-5,400 m, which is abyssal, not hadal trench depth. Say 'the deep sea' rather than 'deep ocean trenches'."
+          "note": "Hot springs, volcano interiors, Antarctic ice and moss are all documented (GWR; ADW: 'from the Arctic to the Antarctic, including great depths and altitudes'). 'Deep ocean trenches' is the weak link: published marine tardigrade collections top out around 4,700-5,400 m, which is abyssal, not hadal trench depth. Say 'the deep sea' rather than 'deep ocean trenches'.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The protective work in the tun state is done primarily by CAHS proteins, which form a gel-like matrix that physically stabilizes cell structures during desiccation",
@@ -1589,17 +1691,21 @@
         },
         {
           "claim": "A sugar called trehalose is also present, but research by Boothby (2017) and Yagi-Utsumi (2021) has established it as a minor cosolute rather than the main protective agent",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9526748/",
           "sourceCitation": "Nguyen K, KC S, Gonzalez T, Tapia H & Boothby TC (2022). Trehalose and tardigrade CAHS proteins work synergistically to promote desiccation tolerance. Communications Biology 5:1046. doi:10.1038/s42003-022-04015-2",
-          "note": "Two problems. First, mis-citation: Yagi-Utsumi 2021 does not test trehalose, it only notes CAHS function appears distinct from trehalose. Second, Boothby's own later work reverses the 'minor' framing: trehalose is present at only ~0.0019% but is a 'synergistic cosolute' whose presence is required for robust CAHS-mediated protection. CAHS proteins expressed alone 'provide little protection'. Trehalose is scarce, not unimportant."
+          "note": "Two problems. First, mis-citation: Yagi-Utsumi 2021 does not test trehalose, it only notes CAHS function appears distinct from trehalose. Second, Boothby's own later work reverses the 'minor' framing: trehalose is present at only ~0.0019% but is a 'synergistic cosolute' whose presence is required for robust CAHS-mediated protection. CAHS proteins expressed alone 'provide little protection'. Trehalose is scarce, not unimportant.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "A tardigrade in the tun state can remain in this suspended animation for decades",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0270386",
           "sourceCitation": "Roszkowska M, Goldyn B, Wojciechowska D, Ksiezkiewicz Z, Fialkowska E, Pluskota M, Kmita H & Kaczmarek L (2023). How long can tardigrades survive in the anhydrobiotic state? A search for tardigrade anhydrobiosis patterns. PLOS ONE 18(1):e0270386. doi:10.1371/journal.pone.0270386",
-          "note": "Under controlled laboratory desiccation, survival held above 80% to 120 days but collapsed to 1-6% at 240 days for two of four species tested. The authors explicitly note that anecdotal 20-plus-year reports 'were not conducted in strict laboratory conditions'. The decades-long records come from frozen (cryobiotic) storage, not dry tuns at room temperature. The two states should not be blurred."
+          "note": "Under controlled laboratory desiccation, survival held above 80% to 120 days but collapsed to 1-6% at 240 days for two of four species tested. The authors explicitly note that anecdotal 20-plus-year reports 'were not conducted in strict laboratory conditions'. The decades-long records come from frozen (cryobiotic) storage, not dry tuns at room temperature. The two states should not be blurred.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Scientists have successfully revived tardigrades that had been frozen at -20 degrees C for 30 years",
@@ -1722,10 +1828,12 @@
         },
         {
           "claim": "Scientists in Japan revived tardigrades in 2016 that had been frozen since 1983, and the animals went on to reproduce normally",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://www.nipr.ac.jp/english/news/20160217.html",
           "sourceCitation": "National Institute of Polar Research (2016). Animals revived after being in a frozen state for over 30 years; and Tsujimoto M, Imura S & Kanda H (2016). Cryobiology 72(1):78-81",
-          "note": "Two errors. The revival was in May 2014; 2016 is the publication year. And reproduction was not normal: the surviving adult took about two weeks to crawl and feed, laid 19 eggs of which 14 hatched, and its first egg needed 19 days versus a 9.5-day median. Only the hatchling from the revived egg developed without apparent defects."
+          "note": "Two errors. The revival was in May 2014; 2016 is the publication year. And reproduction was not normal: the surviving adult took about two weeks to crawl and feed, laid 19 eggs of which 14 hatched, and its first egg needed 19 days versus a 9.5-day median. Only the hatchling from the revived egg developed without apparent defects.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Tardigrades almost certainly survived all five mass extinctions, but the fossil record offers only indirect support; only a handful of body fossils are known and the oldest unambiguously modern-looking specimens date to the Cretaceous",
@@ -1736,17 +1844,21 @@
         },
         {
           "claim": "They have been on Earth for at least 530 million years",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11303527/",
           "sourceCitation": "Mapalo MA, Wolfe JM & Ortega-Hernandez J (2024). Cretaceous amber inclusions illuminate the evolutionary origin of tardigrades. Communications Biology 7:953. doi:10.1038/s42003-024-06643-2",
-          "note": "The current best molecular estimate for crown-group Tardigrada is a mean of about 499 Ma with a 95% HPD spanning 613.66-380.5 Ma. Older studies gave Precambrian dates of 627-691 Ma. A flat 'at least 530 million years' presents a wide, contested confidence interval as a hard floor, and 530 Ma is not any published point estimate."
+          "note": "The current best molecular estimate for crown-group Tardigrada is a mean of about 499 Ma with a 95% HPD spanning 613.66-380.5 Ma. Older studies gave Precambrian dates of 627-691 Ma. A flat 'at least 530 million years' presents a wide, contested confidence interval as a hard floor, and 530 Ma is not any published point estimate.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The only scenarios that might finally do them in are the sun expanding into a red giant, or a nearby gamma-ray burst powerful enough to strip away Earth's atmosphere entirely",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5511186/",
           "sourceCitation": "Sloan D, Alves Batista R & Loeb A (2017). The Resilience of Life to Astrophysical Events. Scientific Reports 7:5419. doi:10.1038/s41598-017-05796-x",
-          "note": "The mechanism is wrong. Sloan et al. define total sterilisation as boiling the oceans, not stripping the atmosphere. And they do not treat a gamma-ray burst as a live threat: a GRB would have to occur within about 40 light years, at an estimated probability of ~3.2 x 10^-10 per billion years, and supernovae would need to be within 0.04 parsecs. Their finding is that all three astrophysical sources are effectively negligible, leaving stellar evolution as the endpoint."
+          "note": "The mechanism is wrong. Sloan et al. define total sterilisation as boiling the oceans, not stripping the atmosphere. And they do not treat a gamma-ray burst as a live threat: a GRB would have to occur within about 40 light years, at an estimated probability of ~3.2 x 10^-10 per billion years, and supernovae would need to be within 0.04 parsecs. Their finding is that all three astrophysical sources are effectively negligible, leaving stellar evolution as the endpoint.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "In April 2019 the Israeli spacecraft Beresheet crashed into the moon's Sea of Serenity, carrying dehydrated tardigrades sent by the Arch Mission Foundation",
@@ -1764,10 +1876,12 @@
         },
         {
           "claim": "Beresheet's impact exceeded both thresholds. The tardigrades almost certainly did not survive.",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://theconversation.com/could-tardigrades-have-colonized-the-moon-224396",
           "sourceCitation": "Palka L (2024). Could tardigrades have colonized the Moon? The Conversation, 26 February 2024 (author: Maitre de conferences, Museum national d'histoire naturelle, Paris)",
-          "note": "This is an inference, not a finding of the cited paper: Traspas & Burchell never mention Beresheet, the Moon, or the Arch Mission. On the numbers it is genuinely marginal. Palka gives Beresheet at about 3,000 km/h (~833 m/s) at 150 m altitude, which is below the 901 m/s lethal threshold, and concludes the tardigrades 'might have endured the impact itself'. The defensible argument is the one Burchell made in press interviews, that a metal spacecraft frame striking rock generates shock pressure far above 1.14 GPa. The article should either attribute that reasoning correctly or soften to 'probably did not survive'."
+          "note": "This is an inference, not a finding of the cited paper: Traspas & Burchell never mention Beresheet, the Moon, or the Arch Mission. On the numbers it is genuinely marginal. Palka gives Beresheet at about 3,000 km/h (~833 m/s) at 150 m altitude, which is below the 901 m/s lethal threshold, and concludes the tardigrades 'might have endured the impact itself'. The defensible argument is the one Burchell made in press interviews, that a metal spacecraft frame striking rock generates shock pressure far above 1.14 GPa. The article should either attribute that reasoning correctly or soften to 'probably did not survive'.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "The idea that tardigrades could colonize the moon is wrong",
@@ -1813,10 +1927,12 @@
         },
         {
           "claim": "It has conquered every environment on the planet, survived every catastrophe in Earth's history, traveled to space, and may currently be sitting on the surface of the moon",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11303527/",
           "sourceCitation": "Mapalo MA, Wolfe JM & Ortega-Hernandez J (2024). Cretaceous amber inclusions illuminate the evolutionary origin of tardigrades. Communications Biology 7:953. doi:10.1038/s42003-024-06643-2",
-          "note": "The closing paragraph reverts to the flat claim the article had carefully hedged two sections earlier. With four amber body fossils, none older than the Turonian, there is no fossil documentation of tardigrades through any mass extinction. The conclusion should match the body of the article."
+          "note": "The closing paragraph reverts to the flat claim the article had carefully hedged two sections earlier. With four amber body fossils, none older than the Turonian, there is no fossil documentation of tardigrades through any mass extinction. The conclusion should match the body of the article.",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         }
       ],
       "sourcesBlock": "- [Tardigrades survive exposure to space in low Earth orbit, Current Biology 18:R729-R731 (Jönsson, Rabbow, Schill, Harms-Ringdahl & Rettberg, 2008)](https://pubmed.ncbi.nlm.nih.gov/18786368/)\n- [Radiation tolerance in tardigrades: current knowledge and potential applications in medicine, Cancers 11:1333 (Jönsson, 2019)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6770827/)\n- [Radiation tolerance in the tardigrade Milnesium tardigradum, International Journal of Radiation Biology 82:843-848 (Horikawa, Sakashita, Katagiri et al., 2006)](https://pubmed.ncbi.nlm.nih.gov/17178624/)\n- [Extremotolerant tardigrade genome and improved radiotolerance of human cultured cells by tardigrade-unique protein, Nature Communications 7:12808 (Hashimoto, Horikawa, Saito et al., 2016)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5034306/)\n- [The tardigrade damage suppressor protein binds to nucleosomes and protects DNA from hydroxyl radicals, eLife 8:e47682 (Chavez, Cruz-Becerra, Fei, Kassavetis & Kadonaga, 2019)](https://elifesciences.org/articles/47682)\n- [Thermotolerance experiments on active and desiccated states of Ramazzottius varieornatus emphasize that tardigrades are sensitive to high temperatures, Scientific Reports 10:94 (Neves, Hvidepil, Sørensen-Hygum, Stuart & Møbjerg, 2020)](https://pmc.ncbi.nlm.nih.gov/articles/PMC6952461/)\n- [Recovery and reproduction of an Antarctic tardigrade retrieved from a moss sample frozen for over 30 years, Cryobiology 72:78-81 (Tsujimoto, Imura & Kanda, 2016)](https://pubmed.ncbi.nlm.nih.gov/26724522/)\n- [Animals revived after being in a frozen state for over 30 years, National Institute of Polar Research news release (Tsujimoto, Imura & Kanda, 2016)](https://www.nipr.ac.jp/english/news/20160217.html)\n- [Tardigrades use intrinsically disordered proteins to survive desiccation, Molecular Cell 65:975-984 (Boothby, Tapia, Brozena et al., 2017)](https://pubmed.ncbi.nlm.nih.gov/28306513/)\n- [Desiccation-induced fibrous condensation of CAHS protein from an anhydrobiotic tardigrade, Scientific Reports 11:21328 (Yagi-Utsumi, Aoki, Watanabe et al., 2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8569203/)\n- [Trehalose and tardigrade CAHS proteins work synergistically to promote desiccation tolerance, Communications Biology 5:1046 (Nguyen, KC, Gonzalez, Tapia & Boothby, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9526748/)\n- [How long can tardigrades survive in the anhydrobiotic state? A search for tardigrade anhydrobiosis patterns, PLOS ONE 18:e0270386 (Roszkowska, Gołdyn, Wojciechowska et al., 2023)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0270386)\n- [Tardigrade survival limits in high-speed impacts: implications for panspermia and collection of samples from plumes emitted by ice worlds, Astrobiology 21:845-852 (Traspas & Burchell, 2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8262385/)\n- [Cretaceous amber inclusions illuminate the evolutionary origin of tardigrades, Communications Biology 7:953 (Mapalo, Wolfe & Ortega-Hernández, 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11303527/)\n- [The resilience of life to astrophysical events, Scientific Reports 7:5419 (Sloan, Alves Batista & Loeb, 2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5511186/)\n- [High hydrostatic pressure tolerance of tardigrades, High Pressure Bioscience and Biotechnology 1:157-160 (Horikawa, Kawai, Koseki, Iwata, Okuda & Yamamoto, 2007)](https://www.jstage.jst.go.jp/article/hpbb/1/1/1_1_157/_article/-char/en)\n- [Tardigrades in space research: past and future, Origins of Life and Evolution of Biospheres 47:545-553 (Erdmann & Kaczmarek, 2016)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5705745/)\n- [Distribution of calcium and chitin in the tardigrade feeding apparatus in relation to its function and morphology, Integrative and Comparative Biology 55:241-252 (Guidetti, Bonifacio, Altiero, Bertolani & Rebecchi, 2015)](https://academic.oup.com/icb/article/55/2/241/745734)\n- [Gastrointestinal acute radiation syndrome: current knowledge and perspectives, Cell Death Discovery 11:235 (Freeman, 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12078527/)\n- [Flooded paddy soils exhibit higher tardigrade diversity than adjacent upland soils, Zoological Journal of the Linnean Society zlag086 (He, Hu, Lin et al., 2026)](https://academic.oup.com/zoolinnean/advance-article/doi/10.1093/zoolinnean/zlag086/8710957)\n- [Tardigrada (water bears), Animal Diversity Web (University of Michigan Museum of Zoology, accessed 2026)](https://animaldiversity.org/accounts/Tardigrada/)\n- [Milnesium tardigradum, Animal Diversity Web (University of Michigan Museum of Zoology, accessed 2026)](https://animaldiversity.org/accounts/Milnesium_tardigradum/)\n- [World List of Tardigrada, World Register of Marine Species (Guidetti, McInnes & Kristensen, 2026)](https://www.marinespecies.org/tardigrada/)\n- [LRO spots Beresheet impact site, NASA Goddard (NASA, 2019)](https://www.nasa.gov/feature/goddard/2019/lro-beresheet-impact-site-spotted)\n- [Lift-off for Foton microgravity mission, ESA press release (European Space Agency, 2007)](https://www.esa.int/Newsroom/Press_Releases/Lift-off_for_Foton_microgravity_mission)\n- [Could tardigrades have colonized the Moon?, The Conversation (Palka, 2024)](https://theconversation.com/could-tardigrades-have-colonized-the-moon-224396)\n- [Did these tardigrades survive crash-landing on the moon?, EarthSky (Byrd, 2019)](https://earthsky.org/human-world/tardigrades-lunar-library-beresheet-spacecraft-crash-moon/)\n- [Tardigrades: are these the world's toughest animals?, Guinness World Records (Guinness World Records, 2019)](https://www.guinnessworldrecords.com/news/2019/3/tardigrades-are-these-the-worlds-toughest-animals-564195)\n- [Among the moss piglets: the first image of a tardigrade (1773), The Public Domain Review (Public Domain Review)](https://publicdomainreview.org/collection/tardigrade/)\n- ['Water bears' able to survive exposure to vacuum of space, ScienceDaily (ScienceDaily, 2008)](https://www.sciencedaily.com/releases/2008/09/080908135906.htm)",
@@ -1935,10 +2051,12 @@
         },
         {
           "claim": "A salamander that never grows up - it stays in its cute larval form for its entire life",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2262897/",
           "sourceCitation": "Page RB, Voss SR, Samuels AK, Smith JJ, Putta S, Beachy CK. 2008. Effect of thyroid hormone concentration on the transcriptional response underlying induced metamorphosis in the Mexican axolotl (Ambystoma). BMC Genomics 9:78. doi:10.1186/1471-2164-9-78",
-          "note": "Two problems. (1) \"Never\" is too absolute: Page et al. 2008 state \"A. mexicanum can be induced to undergo anatomical metamorphosis by administering TH and endocrine factors that function upstream of TH synthesis\" - the animal's tissues stay fully responsive to thyroid hormone, it is the HPT axis that is underactive. Merriam-Webster likewise says axolotls \"ordinarily live and breed in the larval form without metamorphosing.\" (2) \"Never grows up\" conflates morphology with maturity: Joven et al. 2019 describe it as \"a fully aquatic paedomorphic animal, meaning that it retains larval features, such as external gills, throughout its entire life span\" - it reaches full adult size and breeds normally. The correct word is paedomorphosis, not \"stays a baby.\""
+          "note": "Two problems. (1) \"Never\" is too absolute: Page et al. 2008 state \"A. mexicanum can be induced to undergo anatomical metamorphosis by administering TH and endocrine factors that function upstream of TH synthesis\" - the animal's tissues stay fully responsive to thyroid hormone, it is the HPT axis that is underactive. Merriam-Webster likewise says axolotls \"ordinarily live and breed in the larval form without metamorphosing.\" (2) \"Never grows up\" conflates morphology with maturity: Joven et al. 2019 describe it as \"a fully aquatic paedomorphic animal, meaning that it retains larval features, such as external gills, throughout its entire life span\" - it reaches full adult size and breeds normally. The correct word is paedomorphosis, not \"stays a baby.\"",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "They can regenerate entire limbs",
@@ -1991,10 +2109,12 @@
         },
         {
           "claim": "Make sure you have a proper 20+ gallon tank",
-          "status": "unverifiable",
+          "status": "resolved",
           "sourceUrl": "https://ambystoma.uky.edu/education1/guide-to-axolotl-husbandry",
           "sourceCitation": "Ambystoma Genetic Stock Center, University of Kentucky. Guide to Axolotl Husbandry (accessed 2026)",
-          "note": "No primary or institutional source states 20 gallons. The nearest authoritative figure runs the other way: the NIH-funded Ambystoma Genetic Stock Center gives \"a half gallon (2 liters) of water per axolotl\" as an adult minimum and says \"two adults in a ten-gallon aquarium\" works well, but pairs that with water changes \"at least every other day.\" 20 gallons is a reasonable hobbyist convention for a filtered home tank, not a sourced requirement, and should be presented as such."
+          "note": "No primary or institutional source states 20 gallons. The nearest authoritative figure runs the other way: the NIH-funded Ambystoma Genetic Stock Center gives \"a half gallon (2 liters) of water per axolotl\" as an adult minimum and says \"two adults in a ten-gallon aquarium\" works well, but pairs that with water changes \"at least every other day.\" 20 gallons is a reasonable hobbyist convention for a filtered home tank, not a sourced requirement, and should be presented as such.",
+          "wasStatus": "unverifiable",
+          "resolved": "2026-08-04"
         },
         {
           "claim": "Cold water (around 60 to 64°F)",
@@ -2005,10 +2125,12 @@
         },
         {
           "claim": "Small changes in water temperature, pH, or ammonia levels can cause serious stress or illness",
-          "status": "overstated",
+          "status": "resolved",
           "sourceUrl": "https://ambystoma.uky.edu/education1/guide-to-axolotl-husbandry",
           "sourceCitation": "Ambystoma Genetic Stock Center, University of Kentucky. Guide to Axolotl Husbandry (accessed 2026)",
-          "note": "The direction is right but \"small changes\" is not what the source describes. AGSC accepts a pH anywhere \"between about 6.5 and 8\" and runs its colony across 15-18°C, so small fluctuations inside those bands are not the hazard. The named risks are ammonia and nitrite accumulation (hence \"a biological filter that can convert ammonia and nitrites\" plus daily to every-other-day water changes) and sustained warmth above about 22°C. AGSC also adds a hazard the article misses entirely: \"Never house them in extremely soft or distilled water. They need hard water to help them maintain the integrity of their skin.\" Note the pH interaction: \"if pH is at the high end of this range, monitor ammonia carefully because its toxicity will be greater than at neutral pH.\""
+          "note": "The direction is right but \"small changes\" is not what the source describes. AGSC accepts a pH anywhere \"between about 6.5 and 8\" and runs its colony across 15-18°C, so small fluctuations inside those bands are not the hazard. The named risks are ammonia and nitrite accumulation (hence \"a biological filter that can convert ammonia and nitrites\" plus daily to every-other-day water changes) and sustained warmth above about 22°C. AGSC also adds a hazard the article misses entirely: \"Never house them in extremely soft or distilled water. They need hard water to help them maintain the integrity of their skin.\" Note the pH interaction: \"if pH is at the high end of this range, monitor ammonia carefully because its toxicity will be greater than at neutral pH.\"",
+          "wasStatus": "overstated",
+          "resolved": "2026-08-04"
         }
       ],
       "sourcesBlock": "- [Ambystoma mexicanum (Axolotl), The IUCN Red List of Threatened Species 2020:e.T1095A53947343 (IUCN SSC Amphibian Specialist Group, 2020)](https://www.iucnredlist.org/species/1095/53947343)\n- [Model systems for regeneration: salamanders, Development 146:dev167700 (Joven, Elewa & Simon, 2019)](https://journals.biologists.com/dev/article/146/14/dev167700/48915/Model-systems-for-regeneration-salamanders)\n- [Adult axolotls can regenerate original neuronal diversity in response to brain injury, eLife 5:e13998 (Amamoto, Lopez Huerta, Takahashi, Dai, Grant, Fu & Arlotta, 2016)](https://elifesciences.org/articles/13998)\n- [The Molecular and Cellular Choreography of Appendage Regeneration, Cell 165:1598-1608 (Tanaka, 2016)](https://pubmed.ncbi.nlm.nih.gov/27315477/)\n- [Effect of thyroid hormone concentration on the transcriptional response underlying induced metamorphosis in the Mexican axolotl, BMC Genomics 9:78 (Page, Voss, Samuels, Smith, Putta & Beachy, 2008)](https://pmc.ncbi.nlm.nih.gov/articles/PMC2262897/)\n- [Identification of Mutant Genes and Introgressed Tiger Salamander DNA in the Laboratory Axolotl, Ambystoma mexicanum, Scientific Reports 7:6 (Woodcock, Vaughn-Wolfe, Elias, Verrelli, Khan, Prudic, Toubarro & Voss, 2017)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5428337/)\n- [Tyrp1 is the mendelian determinant of the Axolotl (Ambystoma mexicanum) copper mutant, Scientific Reports 14:22399 (Cecil, Strohl, Thomas, Schwartz, Timoshevskaya, Smith & Voss, 2024)](https://pmc.ncbi.nlm.nih.gov/articles/PMC11436669/)\n- [A germline GFP transgenic axolotl and its use to track cell fate, Developmental Biology 290:386-397 (Sobkow, Epperlein, Herklotz, Straube & Tanaka, 2006)](https://pubmed.ncbi.nlm.nih.gov/16387293/)\n- [Movement ecology of captive-bred axolotls in restored and artificial wetlands, PLoS ONE 20:e0314257 (Ramos, Mena, Schneider & Zambrano, 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12043180/)\n- [Guide to Axolotl Husbandry, Ambystoma Genetic Stock Center, University of Kentucky (AGSC, accessed 2026)](https://ambystoma.uky.edu/education1/guide-to-axolotl-husbandry)\n- [Axolotl, Merriam-Webster.com Dictionary (Merriam-Webster, accessed 2026)](https://www.merriam-webster.com/dictionary/axolotl)",
@@ -2662,5 +2784,19 @@
     "cap": 5,
     "rationale": "Site median is 2 sources per article; 175 of 350 have exactly 2 and only 10 exceed 6. The agents proposed 8 to 30 because the prompt asked for a source behind every load-bearing claim, which produces a research bibliography rather than a reading-list. The full set stays here as working notes; only the curated few belong in the article.",
     "ranking": "Sources behind a correction first, since those are the ones the article got wrong and a reader may want to check. Then sources backing the most claims. Cap at 5."
+  },
+  "resolutionPass": {
+    "date": "2026-08-04",
+    "claims": 61,
+    "articles": [
+      "honey-badgers-the-toughest-little-troublemakers-on-the-planet",
+      "the-octopus-has-three-hearts-and-uses-all-of-them",
+      "wolverine-facts-the-toughest-animal-pound-for-pound",
+      "the-platypus-natures-most-wonderfully-bizarre-mammal",
+      "narwhal-facts-the-real-unicorn-of-the-sea",
+      "tardigrades-the-toughest-creatures-on-earth-and-in-space",
+      "the-incredible-axolotl-nature-s-smiling-salamander"
+    ],
+    "approach": "Overstated claims rewritten to what the source actually supports, keeping the correction visible in the prose rather than quietly deleting the claim. Unverifiable claims either softened to the sourced generality or stated as unsourced, with the reason given. Source blocks left at the 5-cap; new citations added only where an edit introduced a genuinely new sourcing need."
   }
 }
