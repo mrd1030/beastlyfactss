@@ -67,3 +67,4 @@ _sanity-archive/
 # meant two sources of truth for the same app. Kept on disk, not tracked.
 beastlyfactsapp/
 internal-link-audit.json
+.workflow-salvage.json
