@@ -14,6 +14,7 @@ import puppeteer from 'puppeteer';
 import { preview } from 'vite';
 import { mkdir, writeFile, readFile } from 'fs/promises';
 import path from 'path';
+import { cpus } from 'os';
 
 const DIST = './dist';
 const PORT = 4173;
@@ -216,15 +217,67 @@ const STATIC_ROUTES = [
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
 
-// 45s, not 30s: the Cloudflare Pages build runner is shared/contended, and
-// with 600 routes across 4 concurrent tabs even a routine CPU-scheduling
-// hiccup can push a page past a tight deadline (many routes already need
-// 2-4 attempts to pass under the old 30s timeout - see MAX_ATTEMPTS below).
-const NAV_TIMEOUT_MS = 45000;
+// Per-attempt deadlines, escalating. A flat 45s was the single biggest cost in
+// the build that hit Cloudflare's 20-minute limit: of 7,388 worker-seconds,
+// about 3,250 (44%) were spent waiting out timeouts. 49 routes timed out once
+// and then passed on the retry, so most of that was a contention blip being
+// waited out at full price, and 4 routes burned 225s each failing five times.
+//
+// Failing the first attempt fast and escalating gets the retry (which usually
+// works) started sooner, while still leaving a generous ceiling for pages that
+// are genuinely slow rather than merely unlucky.
+// Two classes of page, an order of magnitude apart in cost, so one deadline
+// cannot serve both. Leaf pages (a single post, fact, beastfile or guide) render
+// in well under a second locally; the listing pages render the entire post or
+// fact collection and are the ones that time out.
+//
+// Giving leaves a tight first deadline gets a retry started sooner when the
+// runner blips. Giving listings a tight one just guarantees a wasted attempt,
+// which is what measuring showed: at 20s the big listings failed attempt 1 on
+// every run, and even at 30s several still did.
+const LEAF_PATTERNS = [
+  /^\/blog\/[^/]+$/, /^\/facts\/[^/]+$/, /^\/beastlypedia\/[^/]+$/,
+  /^\/guides\/[^/]+$/, /^\/encyclopedia\/animal\/[^/]+$/, /^\/chronicles\/[^/]+(\/\d+)?$/,
+];
+const isLeaf = (route) =>
+  LEAF_PATTERNS.some(p => p.test(route)) &&
+  !/^\/(blog|facts|guides|encyclopedia|gear)\/category\//.test(route);
 
-async function renderRoute(page, route) {
+// Deliberately generous. Tightening these looked attractive (a failed attempt
+// is pure waste) but could not be measured honestly: identical runs of the same
+// 36 routes on this machine came in anywhere between 12s and 53s depending on
+// background load, and every "improvement" from a shorter deadline was inside
+// that noise. Cloudflare's runner is ~5x slower per route again, so a deadline
+// tuned to a quiet local machine would fail there constantly.
+//
+// The speedup therefore comes from the structural fixes (page reuse, dropping
+// networkidle0, the shared queue, spacing the heavy pages) rather than from
+// racing the clock. ROUTE_BUDGET_MS below caps the damage a hopeless route can
+// do, and the global budget in main() is what actually guarantees the build
+// finishes.
+const LEAF_TIMEOUTS_MS = [45000, 60000, 60000, 60000, 60000];
+const HEAVY_TIMEOUTS_MS = [60000, 75000, 90000, 90000, 90000];
+const timeoutsFor = (route) => (isLeaf(route) ? LEAF_TIMEOUTS_MS : HEAVY_TIMEOUTS_MS);
+
+// Hard ceiling on everything one route may consume across all its attempts.
+// Without it a hopeless route costs the sum of every timeout above (215s) and
+// blocks its whole bucket while doing it.
+const ROUTE_BUDGET_MS = 120000;
+
+// networkidle0 requires 500ms with zero in-flight connections. This app loads
+// its route chunk, then that chunk's lazy imports, in waves, so the idle window
+// keeps resetting and the wait routinely costs seconds per route on top of the
+// real work. 'load' fires once the initial document's subresources are done and
+// lets the waitForFunction below do the actual gating, which is what decides
+// whether the capture is safe anyway.
+//
+// Overridable because this is the setting most likely to need backing out if a
+// capture ever turns up incomplete.
+const WAIT_UNTIL = process.env.PRERENDER_WAIT_UNTIL || 'load';
+
+async function renderRoute(page, route, timeoutMs) {
   const url = `${BASE_URL}${route}`;
-  await page.goto(url, { waitUntil: 'networkidle0', timeout: NAV_TIMEOUT_MS });
+  await page.goto(url, { waitUntil: WAIT_UNTIL, timeout: timeoutMs });
 
   // networkidle0 fires when the JS chunk downloads, but react-helmet-async
   // may not have applied this route's <head> yet. Don't capture until the
@@ -249,7 +302,7 @@ async function renderRoute(page, route) {
         description && description.getAttribute('content')
       );
     },
-    { timeout: NAV_TIMEOUT_MS },
+    { timeout: timeoutMs },
     expectedCanonical
   );
 
@@ -366,13 +419,18 @@ const MAX_ATTEMPTS = 5; // retries per route before giving up on it
 // re-contending with the same 3 other buckets that are also mid-render.
 const RETRY_BACKOFF_MS = 1500;
 
-async function renderWorker(browser, routes, results) {
-  for (const route of routes) {
-    let lastErr = null;
-    let done = false;
-    for (let attempt = 1; attempt <= MAX_ATTEMPTS && !done; attempt++) {
-      if (attempt > 1) await new Promise(r => setTimeout(r, RETRY_BACKOFF_MS * attempt));
-      const page = await browser.newPage();
+// One page per worker, reused across that worker's whole bucket, instead of a
+// fresh page per route. Creating a page meant re-enabling request interception
+// and re-parsing the entire JS bundle from a cold cache for every one of the
+// ~964 routes; navigating an existing page keeps Chromium's compiled-code and
+// HTTP caches warm across routes in the same bucket.
+//
+// The localStorage isolation this replaced a fresh page for is unaffected:
+// evaluateOnNewDocument registers once and re-runs on every document, so each
+// navigation still starts from cleared storage. A page is only thrown away and
+// rebuilt after a failed attempt, where it may be wedged mid-navigation.
+async function makePage(browser) {
+  const page = await browser.newPage();
       // All 600+ routes render through ONE browser instance sharing the same
       // origin, so localStorage persists across every page.newPage() call in
       // this loop unless explicitly cleared. That didn't matter before, but
@@ -398,34 +456,66 @@ async function renderWorker(browser, routes, results) {
         // same default state hydration will always start from.
         window.__IS_PRERENDER__ = true;
       });
-      await page.setRequestInterception(true);
-      page.on('request', req => {
-        const u = req.url();
-        if (u.includes('googletagmanager') || u.includes('google-analytics') ||
-            u.includes('pagead') || u.includes('fundingchoices') ||
-            u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
-          req.abort();
-        } else {
-          req.continue();
-        }
-      });
+  await page.setRequestInterception(true);
+  page.on('request', req => {
+    const u = req.url();
+    if (u.includes('googletagmanager') || u.includes('google-analytics') ||
+        u.includes('pagead') || u.includes('fundingchoices') ||
+        u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
+      req.abort();
+    } else {
+      req.continue();
+    }
+  });
+  return page;
+}
+
+async function renderWorker(browser, nextRoute, results, deadline) {
+  let page = await makePage(browser);
+  for (let route = nextRoute(); route; route = nextRoute()) {
+    // Out of time: fall back to the plain SPA shell for everything left. The
+    // page still returns 200 and still works for a visitor, it just ships
+    // without this route's prerendered <head> and body. That is a worse page
+    // than a real render and a far better outcome than the whole build being
+    // killed at the 20-minute mark, which is what happened on 4 August and took
+    // every other route's update down with it.
+    if (Date.now() > deadline) {
+      await saveHtml(route, results.shell);
+      results.shelled.push(route);
+      continue;
+    }
+
+    const routeStarted = Date.now();
+    let lastErr = null;
+    let done = false;
+    for (let attempt = 1; attempt <= MAX_ATTEMPTS && !done; attempt++) {
+      if (attempt > 1) {
+        if (Date.now() - routeStarted > ROUTE_BUDGET_MS) break;
+        await new Promise(r => setTimeout(r, RETRY_BACKOFF_MS * attempt));
+      }
+      const timeouts = timeoutsFor(route);
+      const timeoutMs = timeouts[Math.min(attempt - 1, timeouts.length - 1)];
       try {
-        const html = await renderRoute(page, route);
+        const html = await renderRoute(page, route, timeoutMs);
         await saveHtml(route, html);
         console.log(`  ✓ ${route}${attempt > 1 ? ` (attempt ${attempt})` : ''}`);
         results.passed++;
         done = true;
       } catch (err) {
         lastErr = err;
-      } finally {
-        await page.close();
+        // The page may be wedged mid-navigation after a timeout, so retries get
+        // a clean one rather than inheriting whatever state broke this attempt.
+        try { await page.close(); } catch {}
+        page = await makePage(browser);
       }
     }
     if (!done) {
-      console.warn(`  ✗ ${route} - ${lastErr.message}`);
+      console.warn(`  ✗ ${route} - ${lastErr?.message ?? 'route budget exceeded'}`);
+      await saveHtml(route, results.shell);
       results.failed++;
     }
   }
+  await page.close();
 }
 
 async function main() {
@@ -449,10 +539,25 @@ async function main() {
   // out all ~600. Purely for verifying head/markup changes by hand - unset in
   // CI, where the full set always renders.
   const only = process.env.PRERENDER_ONLY?.split(',').map(r => r.trim()).filter(Boolean);
-  const allRoutes = only?.length ? discovered.filter(r => only.includes(r)) : discovered;
-  if (only?.length) console.log(`⚠️  PRERENDER_ONLY set - rendering ${allRoutes.length} of ${discovered.length} routes`);
+  const selected = only?.length ? discovered.filter(r => only.includes(r)) : discovered;
+  if (only?.length) console.log(`⚠️  PRERENDER_ONLY set - rendering ${selected.length} of ${discovered.length} routes`);
 
-  console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY}...`);
+  // Render in priority order so that if the budget below ever runs out, what
+  // gets dropped is the least valuable thing. /facts/<slug> pages are last
+  // because Facts.jsx marks every deep-linked fact noindex,follow: they exist
+  // to give shared links a 200 and an og:image, not to rank, and they are 275
+  // of the ~964 routes.
+  const isLowPriority = (r) => /^\/facts\/[^/]+$/.test(r) && !r.startsWith('/facts/category/');
+  const allRoutes = [...selected].sort((a, b) => isLowPriority(a) - isLowPriority(b));
+
+  // Cloudflare Pages kills the whole build at 20 minutes and everything before
+  // this step (install, thumbnails, vite build) has already spent 3 to 4 of
+  // them. Stopping at 13 leaves room for the sitemap and critical-CSS steps
+  // that still have to run afterwards.
+  const BUDGET_MS = Number(process.env.PRERENDER_BUDGET_MS) || 13 * 60 * 1000;
+  const deadline = Date.now() + BUDGET_MS;
+
+  console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY} on ${cpus().length} cpu(s), ${Math.round(BUDGET_MS / 60000)} min budget...`);
 
   const server = await preview({ preview: { port: PORT, open: false } });
   const browser = await puppeteer.launch({
@@ -460,24 +565,54 @@ async function main() {
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
   });
 
-  // Split routes into CONCURRENCY buckets and run in parallel
-  const results = { passed: 0, failed: 0 };
-  const buckets = Array.from({ length: CONCURRENCY }, (_, i) =>
-    allRoutes.filter((_, j) => j % CONCURRENCY === i)
+  // Read before rendering anything: route '/' writes over dist/index.html, so
+  // after the first worker touches it this is no longer the untouched shell.
+  //
+  // This assumes dist came straight from `vite build`, which is guaranteed in
+  // the build chain where the two run back to back. Re-running prerender by
+  // hand over an already-prerendered dist would pick up the rendered homepage
+  // instead, so the fallback would carry the homepage's head. Only matters if
+  // the budget actually runs out during such a re-run.
+  const shell = await readFile(path.join(DIST, 'index.html'), 'utf-8');
+
+  // A shared queue, not CONCURRENCY fixed buckets. Static bucketing gave every
+  // worker a fixed slice up front, so a worker that drew slow routes ground on
+  // while others sat idle, and nothing could rebalance. Workers now pull the
+  // next route whenever they free up.
+  //
+  // Order matters as much as the queue. The heavy listing pages are adjacent in
+  // the route array, so round-robin bucketing handed one to all four workers at
+  // the same moment and they starved each other. That is what the retries in
+  // local runs were: /facts, /blog, /beastlypedia and /encyclopedia all
+  // rendering at once. Spacing them evenly through the light routes keeps at
+  // most one in flight at a time.
+  const heavy = allRoutes.filter(r => !isLeaf(r));
+  const light = allRoutes.filter(r => isLeaf(r));
+  const stride = heavy.length ? Math.max(1, Math.floor(light.length / heavy.length)) : 0;
+  const queue = [];
+  let h = 0;
+  for (let i = 0; i < light.length; i++) {
+    if (stride && i % stride === 0 && h < heavy.length) queue.push(heavy[h++]);
+    queue.push(light[i]);
+  }
+  while (h < heavy.length) queue.push(heavy[h++]);
+
+  const results = { passed: 0, failed: 0, shelled: [], shell };
+  const startedAt = Date.now();
+  let cursor = 0;
+  const nextRoute = () => queue[cursor++];
+  await Promise.all(
+    Array.from({ length: CONCURRENCY }, () => renderWorker(browser, nextRoute, results, deadline))
   );
-  await Promise.all(buckets.map(bucket => renderWorker(browser, bucket, results)));
+  console.log(`\n⏱️  Rendered in ${Math.round((Date.now() - startedAt) / 1000)}s`);
 
   // Cloudflare Pages serves a literal 404.html (with a real 404 status) for
   // any request that doesn't match a static asset or an explicit _redirects
   // rule. Generate it from the actual app instead of hand-writing a separate
   // page, so it always matches the live PageNotFound component/styling.
   try {
-    const page = await browser.newPage();
-    await page.evaluateOnNewDocument(() => {
-      try { localStorage.clear(); sessionStorage.clear(); } catch {}
-      window.__IS_PRERENDER__ = true;
-    });
-    const html = await renderRoute(page, NOT_FOUND_PROBE_ROUTE);
+    const page = await makePage(browser);
+    const html = await renderRoute(page, NOT_FOUND_PROBE_ROUTE, HEAVY_TIMEOUTS_MS.at(-1));
     await writeFile(path.join(DIST, '404.html'), html, 'utf-8');
     await page.close();
     console.log('  ✓ 404.html');
@@ -489,7 +624,22 @@ async function main() {
   await browser.close();
   server.httpServer.close();
 
-  console.log(`\n🎉 Prerender complete: ${results.passed} succeeded, ${results.failed} failed.`);
+  console.log(
+    `\n🎉 Prerender complete: ${results.passed} succeeded, ${results.failed} failed` +
+    `${results.shelled.length ? `, ${results.shelled.length} shipped as SPA shell (out of time)` : ''}.`
+  );
+
+  // Never let this pass silently. A shelled route looks fine to a visitor and
+  // is invisible in the deploy, so without a loud log the budget could start
+  // eating pages every build and nobody would notice until traffic moved.
+  if (results.shelled.length) {
+    console.warn(
+      `⚠️  Ran out of the ${Math.round(BUDGET_MS / 60000)} min prerender budget with ${results.shelled.length} route(s) left. ` +
+      `They were written as the plain SPA shell so they still return 200, but they carry no prerendered head or body.`
+    );
+    console.warn(`   First few: ${results.shelled.slice(0, 5).join(', ')}`);
+    console.warn('   Fix by raising PRERENDER_BUDGET_MS if the 20 min Cloudflare limit allows, or by cutting route count.');
+  }
 
   // A route that fails prerendering doesn't 404 - it just falls back to the
   // plain client-rendered SPA shell (see the "no SPA-fallback" comment on
@@ -499,7 +649,13 @@ async function main() {
   // build runner where isolated timeouts are expected occasionally even
   // after 5 retries. Only hard-fail when failures are widespread enough to
   // suggest a real, systemic problem worth blocking the deploy over.
-  const FAILURE_THRESHOLD = 3;
+  // Proportional, with a floor. A flat 3 was set when this rendered ~600 routes
+  // and a failure meant no file at all; there are now 964 and a failed route
+  // gets the SPA shell written for it, so it still returns 200 and still works.
+  // The 4 August build had exactly 4 contention timeouts, which under the old
+  // flat threshold would have failed the deploy on top of the timeout that
+  // actually killed it. 1% is still low enough to catch anything systemic.
+  const FAILURE_THRESHOLD = Math.max(5, Math.ceil(allRoutes.length * 0.01));
   if (results.failed > FAILURE_THRESHOLD) {
     console.error(`❌ ${results.failed} routes failed prerendering (threshold: ${FAILURE_THRESHOLD}) - failing build.`);
     process.exit(1);
