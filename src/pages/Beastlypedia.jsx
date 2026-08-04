@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useParams, useNavigate } from 'react-router-dom';
 import { beastfiles, beastfileGroups } from '@/lib/data/beastlypedia';
 import BeastfileCard from '@/components/beastlypedia/BeastfileCard';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 
 const CANONICAL = 'https://beastlyfacts.com/beastlypedia/';
 const DESCRIPTION =
@@ -71,17 +72,25 @@ export default function Beastlypedia() {
       </Helmet>
 
       <div className="max-w-6xl mx-auto">
-        <header className="text-center mb-8">
+        {/* Left-aligned, matching Facts, Guides, Encyclopedia, Fact Files and
+            the rest. This was the only centered page header on the site. Home
+            is deliberately different and stays that way. */}
+        <header className="mb-8">
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
             Beastlypedia
           </h1>
-          <p className="text-sm text-muted-foreground font-body max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm text-muted-foreground font-body max-w-xl leading-relaxed">
             Wild animal profiles. How they live, where they are found, and what makes each one
             strange. No care sheets, no difficulty ratings, just the animals.
           </p>
+          {/* Beastlypedia and Fact Files cover the same animals from opposite
+              ends: a profile of the animal here, the claim people get wrong
+              about it there. Fact Files already links back to this page, so
+              this closes the loop rather than adding a one-way link. */}
+          <CrossLinkCta to="/fact-files/" label="See the claims about these animals, checked" />
         </header>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-5">
+        <div className="flex flex-wrap gap-2 mb-5">
           <button
             type="button"
             onClick={() => selectGroup('All')}
@@ -109,7 +118,7 @@ export default function Beastlypedia() {
           ))}
         </div>
 
-        <div className="max-w-sm mx-auto mb-10">
+        <div className="max-w-sm mb-10">
           <input
             type="search"
             value={query}

@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // One pagination control for Blog, Facts and Gallery.
@@ -78,9 +79,28 @@ function scrollListIntoView(ref) {
  *                                 scrolling would just jerk the page.
  */
 export default function Pagination({ page, totalPages, onChange, scrollTo, className = '' }) {
+  const location = useLocation();
   const items = useMemo(() => pageItems(page, totalPages), [page, totalPages]);
 
   if (totalPages <= 1) return null;
+
+  // Every page control is a real <a href>, not a bare button.
+  //
+  // These were buttons, which meant a crawler had no way to reach page 2 of
+  // anything: /facts/ alone is 18 pages. The items themselves are in the
+  // sitemap so nothing was unreachable, but no internal link pointed past the
+  // first page of any listing.
+  //
+  // Every consumer (Blog, Facts, Gallery, Fact Files) reads ?page back off the
+  // URL on mount and on history moves, so the href and the click handler
+  // always land on the same view.
+  const hrefFor = (p) => {
+    const params = new URLSearchParams(location.search);
+    if (p > 1) params.set('page', String(p));
+    else params.delete('page');
+    const qs = params.toString();
+    return qs ? `${location.pathname}?${qs}` : location.pathname;
+  };
 
   const go = (p) => {
     if (p < 1 || p > totalPages || p === page) return;
@@ -88,6 +108,15 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
     // After the new page renders. rAF alone fires before the list has been
     // painted at its new height, which lands the scroll short.
     requestAnimationFrame(() => setTimeout(() => scrollListIntoView(scrollTo), 0));
+  };
+
+  // Let the browser handle anything that is not a plain left click, so
+  // middle-click and cmd/ctrl-click still open a page in a new tab. Otherwise
+  // take over and keep the existing in-place navigation.
+  const clickHandler = (p) => (e) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    go(p);
   };
 
   // Slightly larger on phones, where these are thumb targets rather than
@@ -107,15 +136,23 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
       aria-label="Pagination"
       className={`flex items-center justify-center gap-2 bg-card border border-border/60 p-1.5 rounded-xl shadow-sm max-w-max mx-auto ${className}`}
     >
-      <button
-        type="button"
-        onClick={() => go(page - 1)}
-        disabled={page === 1}
-        className={arrowClass}
-        aria-label="Previous page"
-      >
-        <ChevronLeft className="w-4 h-4" />
-      </button>
+      {/* At the ends there is no page to go to, so there is no href either.
+          A disabled link is not a thing: it renders as a span instead. */}
+      {page === 1 ? (
+        <span className={`${arrowClass} opacity-40`} aria-hidden="true">
+          <ChevronLeft className="w-4 h-4" />
+        </span>
+      ) : (
+        <a
+          href={hrefFor(page - 1)}
+          onClick={clickHandler(page - 1)}
+          rel="prev"
+          className={arrowClass}
+          aria-label="Previous page"
+        >
+          <ChevronLeft className="w-4 h-4" />
+        </a>
+      )}
 
       {/* Numbers on every screen. I first hid them below sm on the assumption
           that five numbers, two ellipses and two arrows would not fit; measured
@@ -125,16 +162,16 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
       <div className="flex items-center gap-0.5 sm:gap-1">
         {items.map((item) =>
           typeof item === 'number' ? (
-            <button
-              type="button"
+            <a
               key={item}
-              onClick={() => go(item)}
-              className={numberClass(item)}
+              href={hrefFor(item)}
+              onClick={clickHandler(item)}
+              className={`${numberClass(item)} flex items-center justify-center`}
               aria-current={item === page ? 'page' : undefined}
               aria-label={`Page ${item}`}
             >
               {item}
-            </button>
+            </a>
           ) : (
             <span key={item.key} aria-hidden="true" className="text-muted-foreground text-xs px-0.5">
               …
@@ -143,15 +180,21 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
         )}
       </div>
 
-      <button
-        type="button"
-        onClick={() => go(page + 1)}
-        disabled={page === totalPages}
-        className={arrowClass}
-        aria-label="Next page"
-      >
-        <ChevronRight className="w-4 h-4" />
-      </button>
+      {page === totalPages ? (
+        <span className={`${arrowClass} opacity-40`} aria-hidden="true">
+          <ChevronRight className="w-4 h-4" />
+        </span>
+      ) : (
+        <a
+          href={hrefFor(page + 1)}
+          onClick={clickHandler(page + 1)}
+          rel="next"
+          className={arrowClass}
+          aria-label="Next page"
+        >
+          <ChevronRight className="w-4 h-4" />
+        </a>
+      )}
     </nav>
   );
 }

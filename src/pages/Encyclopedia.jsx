@@ -9,6 +9,7 @@ import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import LocalImage from '@/components/shared/LocalImage';
 import { trackEvent } from '@/lib/analytics';
 
@@ -201,6 +202,10 @@ export default function Encyclopedia() {
             <p className="text-sm text-muted-foreground font-body mt-1">
               Deep-dive profiles and care guides for reptiles, birds, mammals, and more.
             </p>
+            {/* The pet-care side of the site had no link to the wild-animal
+                side at all. The Encyclopedia/Care Guides tabs below only ever
+                pointed at each other. */}
+            <CrossLinkCta to="/beastlypedia/" label="Looking for wild animals instead?" />
           </motion.div>
           <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => (

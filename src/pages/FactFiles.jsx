@@ -1,6 +1,6 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { Search } from 'lucide-react';
 import { mdxPosts } from '@/lib/mdxPosts';
@@ -33,10 +33,28 @@ const GROUPS = (() => {
 })();
 
 export default function FactFiles() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [search, setSearch] = useState('');
   const [group, setGroup] = useState('All');
   const [page, setPage] = useState(1);
   const listRef = useRef(null);
+
+  // Page lives in the URL, the way Blog, Facts and Gallery already do it.
+  // It was component state, which meant pages 2 and 3 had no address at all:
+  // nothing to crawl, nothing to link to, and nothing to bookmark or send
+  // to anyone.
+  useEffect(() => {
+    const p = parseInt(new URLSearchParams(location.search).get('page'), 10);
+    setPage(Number.isFinite(p) && p > 0 ? p : 1);
+  }, [location.search]);
+
+  const setPageParam = (newPage) => {
+    const params = new URLSearchParams(location.search);
+    if (newPage > 1) params.set('page', String(newPage));
+    else params.delete('page');
+    navigate({ search: params.toString() });
+  };
 
   const query = search.trim().toLowerCase();
 
@@ -66,7 +84,10 @@ export default function FactFiles() {
   );
   const totalSources = ALL_FILES.reduce((n, p) => n + p.sourceCount, 0);
 
-  const reset = (fn) => { fn(); setPage(1); };
+  // Changing the filter or the search drops you back to page 1, and that has
+  // to clear ?page too or the URL would keep claiming a page the new result
+  // set may not have.
+  const reset = (fn) => { fn(); setPageParam(1); };
 
   const canonicalUrl = 'https://beastlyfacts.com/fact-files/';
   const pageTitle = 'Fact Files - Wild Animal Claims, Checked | Beastly Facts';
@@ -153,7 +174,7 @@ export default function FactFiles() {
                 </div>
 
                 <div className="mt-10">
-                  <Pagination page={safePage} totalPages={totalPages} onChange={setPage} scrollTo={listRef} />
+                  <Pagination page={safePage} totalPages={totalPages} onChange={setPageParam} scrollTo={listRef} />
                 </div>
               </>
             ) : (
@@ -224,17 +245,28 @@ export default function FactFiles() {
               </ul>
             </div>
 
+            {/* The rest of the wild-animal side of the site. Both are the same
+                animals at a different length: a one-screen profile, or a single
+                fact. Facts already links here, so this reciprocates. */}
             <div className="rounded-xl border border-border bg-card p-4">
               <h2 className="mb-1 font-display text-sm font-bold text-foreground">Wild animals, in short</h2>
               <p className="mb-3 font-body text-xs leading-relaxed text-muted-foreground">
                 The same animals as one-screen profiles rather than long reads.
               </p>
-              <Link
-                to="/beastlypedia/"
-                className="font-body text-xs font-semibold text-secondary hover:underline"
-              >
-                Browse Beastlypedia →
-              </Link>
+              <div className="flex flex-col gap-1.5">
+                <Link
+                  to="/beastlypedia/"
+                  className="font-body text-xs font-semibold text-secondary hover:underline"
+                >
+                  Browse Beastlypedia →
+                </Link>
+                <Link
+                  to="/facts/"
+                  className="font-body text-xs font-semibold text-secondary hover:underline"
+                >
+                  Browse all animal facts →
+                </Link>
+              </div>
             </div>
           </aside>
         </div>
