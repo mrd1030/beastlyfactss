@@ -88,33 +88,44 @@ export default function FactFileRow({ entry }) {
             </div>
           </div>
 
-          {/* Holds the column open for the polaroid, which is positioned over
-              this gap rather than sitting in it - it overhangs the top edge and
-              would otherwise stretch the row. */}
+          {/* The polaroid. White frame with a black keyline, and a second
+              keyline round the photo, so it reads as a print rather than a
+              rounded thumbnail. Stays white in dark mode because that is the
+              point of the object.
+
+              It changes job at sm. Below that it is an ordinary flex child,
+              sitting beside the text at a smaller size: the row only has 375px
+              to work with, and the overhanging version would lie across the
+              words. From sm up it goes absolute, hangs off the top edge of the
+              file and tilts on hover, which is the effect worth having when
+              there is room for it. The spacer below reserves that column so
+              the text stops before it.
+
+              One element rather than a copy per breakpoint, so the photo is in
+              the markup once. It used to be sm:block only, which is why Fact
+              Files had no pictures at all on a phone. */}
+          <div className="pointer-events-none flex-shrink-0 rotate-[2deg] rounded-[2px] border border-black/80 bg-white p-1.5 pb-4 shadow-lg shadow-black/40 transition-transform duration-300 ease-out sm:absolute sm:right-4 sm:top-1 sm:p-2 sm:pb-6 motion-safe:sm:group-hover:-translate-y-1 motion-safe:sm:group-hover:rotate-[-3deg]">
+            {image ? (
+              <LocalImage
+                src={image}
+                alt={imageAlt || animal}
+                variant="card"
+                className="h-16 w-16 border-[1.5px] border-black/80 object-cover sm:h-24 sm:w-24"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex h-16 w-16 items-center justify-center border-[1.5px] border-black/80 bg-neutral-200 sm:h-24 sm:w-24">
+                <span className="px-1 text-center font-body text-[9px] font-bold uppercase tracking-wider text-neutral-500">
+                  No photo
+                </span>
+              </div>
+            )}
+          </div>
+
+          {/* Holds the column open for the polaroid on sm and up, where it is
+              positioned over this gap rather than sitting in it. */}
           <div className="hidden w-28 flex-shrink-0 sm:block" />
         </div>
-      </div>
-
-      {/* The polaroid. White frame with a black keyline, and a second keyline
-          round the photo, so it reads as a print rather than a rounded
-          thumbnail. Stays white in dark mode because that is the point of the
-          object. */}
-      <div className="pointer-events-none absolute right-4 top-1 hidden rotate-[2deg] rounded-[2px] border border-black/80 bg-white p-2 pb-6 shadow-lg shadow-black/40 transition-transform duration-300 ease-out motion-safe:group-hover:-translate-y-1 motion-safe:group-hover:rotate-[-3deg] sm:block">
-        {image ? (
-          <LocalImage
-            src={image}
-            alt={imageAlt || animal}
-            variant="card"
-            className="h-24 w-24 border-[1.5px] border-black/80 object-cover"
-            loading="lazy"
-          />
-        ) : (
-          <div className="flex h-24 w-24 items-center justify-center border-[1.5px] border-black/80 bg-neutral-200">
-            <span className="px-2 text-center font-body text-[9px] font-bold uppercase tracking-wider text-neutral-500">
-              No photo
-            </span>
-          </div>
-        )}
       </div>
     </Link>
   );
