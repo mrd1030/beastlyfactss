@@ -90,15 +90,17 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
     requestAnimationFrame(() => setTimeout(() => scrollListIntoView(scrollTo), 0));
   };
 
+  // Slightly larger on phones, where these are thumb targets rather than
+  // pointer targets, and back to 32px from sm up to match the surrounding UI.
   const numberClass = (p) =>
-    `w-8 h-8 rounded-lg text-xs font-display font-bold transition-all ${
+    `w-9 h-9 sm:w-8 sm:h-8 rounded-lg text-xs font-display font-bold transition-all ${
       p === page
         ? 'bg-secondary text-secondary-foreground shadow-sm'
         : 'bg-transparent border border-transparent text-muted-foreground hover:border-border hover:text-foreground'
     }`;
 
   const arrowClass =
-    'flex items-center justify-center w-8 h-8 rounded-lg bg-muted/60 border border-border/50 text-muted-foreground disabled:opacity-40 disabled:cursor-not-allowed hover:text-foreground hover:border-secondary/40 transition-all';
+    'flex items-center justify-center w-9 h-9 sm:w-8 sm:h-8 rounded-lg bg-muted/60 border border-border/50 text-muted-foreground disabled:opacity-40 disabled:cursor-not-allowed hover:text-foreground hover:border-secondary/40 transition-all';
 
   return (
     <nav
@@ -115,11 +117,12 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
         <ChevronLeft className="w-4 h-4" />
       </button>
 
-      {/* Numbers are desktop-only. Five numbers plus two ellipses plus the two
-          arrows is nine targets, which is unusable at 375px, so small screens
-          get the count instead. display:none also keeps them out of the tab
-          order rather than leaving invisible focus stops. */}
-      <div className="hidden sm:flex items-center gap-1">
+      {/* Numbers on every screen. I first hid them below sm on the assumption
+          that five numbers, two ellipses and two arrows would not fit; measured
+          at 375px they come to roughly 330px including gaps and padding, so
+          they fit with room to spare and the phone layout was just wasting it
+          on a bare "7 / 40". */}
+      <div className="flex items-center gap-0.5 sm:gap-1">
         {items.map((item) =>
           typeof item === 'number' ? (
             <button
@@ -139,10 +142,6 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
           )
         )}
       </div>
-
-      <span className="sm:hidden text-xs font-display font-bold px-2 text-muted-foreground">
-        {`${page} / ${totalPages}`}
-      </span>
 
       <button
         type="button"

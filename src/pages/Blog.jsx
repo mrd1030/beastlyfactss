@@ -106,7 +106,18 @@ export default function Blog() {
 
   // Free-text filtering is client-side only (not URL-synced) - reset back to
   // page 1 whenever the query changes so a stale deep page doesn't render empty.
+  //
+  // Skips its own first run. `search` starts empty, so on mount this fired
+  // immediately after the effect above had just read ?page= from the URL, and
+  // stomped it back to 1. Opening /blog/?page=7 landed you on page 1 with the
+  // URL still claiming 7. Nothing here should react to the initial value, only
+  // to the user actually typing.
+  const searchSettled = useRef(false);
   useEffect(() => {
+    if (!searchSettled.current) {
+      searchSettled.current = true;
+      return;
+    }
     setPage(1);
   }, [search]);
 

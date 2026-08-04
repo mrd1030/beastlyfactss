@@ -263,7 +263,16 @@ export default function Navbar() {
             ref={menuRef}
             className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden sm:absolute sm:top-[57px] sm:right-4 sm:w-80 sm:rounded-2xl sm:border sm:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:sm:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
           >
-            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_var(--safe-area-inset-top))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
+            {/* The height budget subtracts BOTH bars, not just the header.
+                BottomTabs is fixed at bottom-0 with h-14 and the same z-50, so
+                anything the menu laid out in that last 3.5rem was rendered
+                underneath it: the social row at the end of the list could not
+                be reached or tapped on a phone.
+
+                Only the base value needs it. From sm up the panel is an
+                absolutely positioned dropdown capped at 70vh, which ends well
+                clear of the bar. */}
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
               <div className="space-y-1">
                 {[
                   { to: '/', label: 'Home' },
