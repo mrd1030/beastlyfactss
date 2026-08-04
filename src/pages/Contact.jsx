@@ -84,7 +84,7 @@ export default function Contact() {
             <Mail className="w-5 h-5 text-secondary" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">Email Us</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Email Us</p>
             <p className="text-sm text-muted-foreground font-body">hello@beastlyfacts.com</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">We read every message 🐾</p>
           </div>
@@ -104,7 +104,7 @@ export default function Contact() {
             <Instagram className="w-5 h-5 text-hotpink" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-hotpink transition-colors">Instagram</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-hotpink transition-colors">Instagram</p>
             <p className="text-sm text-muted-foreground font-body">@beastly.facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Daily animal facts & behind-the-scenes 🦎</p>
           </div>
@@ -124,7 +124,7 @@ export default function Contact() {
             <XLogo className="w-5 h-5 text-foreground" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">X</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">X</p>
             <p className="text-sm text-muted-foreground font-body">@beastly_facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts & wildlife content 🐾</p>
           </div>
@@ -144,7 +144,7 @@ export default function Contact() {
             <PinterestLogo className="w-5 h-5 text-red-600" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">Pinterest</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Pinterest</p>
             <p className="text-sm text-muted-foreground font-body">@BeastlyFacts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Animal boards & reptile inspiration 📌</p>
           </div>
@@ -164,7 +164,7 @@ export default function Contact() {
             <FacebookLogo className="w-5 h-5 text-blue-600" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">Facebook</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Facebook</p>
             <p className="text-sm text-muted-foreground font-body">Beastly Facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Community updates & animal facts 🦁</p>
           </div>
@@ -184,7 +184,7 @@ export default function Contact() {
             <ThreadsLogo className="w-5 h-5 text-foreground" />
           </div>
           <div>
-            <p className="font-display font-bold text-base text-foreground group-hover:text-secondary transition-colors">Threads</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Threads</p>
             <p className="text-sm text-muted-foreground font-body">@Beastly.Facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Quick takes & animal trivia 🐾</p>
           </div>
@@ -195,7 +195,7 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
         >
-          <DonateButton className="w-full font-display font-bold" />
+          <DonateButton className="w-full font-body font-bold" />
         </motion.div>
 
         <motion.div
@@ -204,7 +204,7 @@ export default function Contact() {
           transition={{ delay: 0.2 }}
           className="bg-primary/5 border border-primary/10 rounded-2xl p-6"
         >
-          <p className="font-display font-bold text-sm text-foreground mb-1">📬 Response time</p>
+          <p className="font-body font-bold text-sm text-foreground mb-1">📬 Response time</p>
           <p className="text-xs text-muted-foreground font-body leading-relaxed">
             This site is run by one person who also keeps real live animals - so responses may take a couple of days.
             But every message gets read and appreciated. Whether you've spotted an error, want to suggest a new guide,

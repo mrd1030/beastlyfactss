@@ -178,7 +178,7 @@ export default function Donate() {
                         : 'border-muted bg-popover text-muted-foreground hover:bg-accent'
                     }`}
                   >
-                    <span className="font-display text-base font-bold">{label}</span>
+                    <span className="font-body text-base font-bold">{label}</span>
                   </button>
                 );
               })}

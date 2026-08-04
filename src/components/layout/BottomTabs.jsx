@@ -99,7 +99,7 @@ export default function BottomTabs() {
                 strokeWidth={active ? 2.2 : 1.8}
               />
               <span
-                className={`text-[10px] font-display font-semibold transition-colors ${
+                className={`text-[10px] font-body font-semibold transition-colors ${
                   active ? 'text-secondary' : 'text-muted-foreground'
                 }`}
               >

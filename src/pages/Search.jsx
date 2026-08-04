@@ -22,7 +22,7 @@ function LocalResultRow({ result }) {
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 mb-0.5 flex-wrap">
-          <span className="text-[10px] font-display font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-1.5 py-0.5 rounded-full">
+          <span className="text-[10px] font-body font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-1.5 py-0.5 rounded-full">
             {result.type}
           </span>
         </div>
@@ -186,7 +186,7 @@ export default function Search() {
           <div className="flex flex-wrap gap-2 mb-4">
             <button
               onClick={() => setActiveCategory('')}
-              className={`text-xs font-display font-semibold px-3 py-1 rounded-full transition-all ${!activeCategory ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
+              className={`text-xs font-body font-semibold px-3 py-1 rounded-full transition-all ${!activeCategory ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
             >
               All
             </button>
@@ -194,7 +194,7 @@ export default function Search() {
               <button
                 key={c.slug}
                 onClick={() => setActiveCategory(activeCategory === c.slug ? '' : c.slug)}
-                className={`text-xs font-display font-semibold px-3 py-1 rounded-full transition-all flex items-center gap-1 ${activeCategory === c.slug ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
+                className={`text-xs font-body font-semibold px-3 py-1 rounded-full transition-all flex items-center gap-1 ${activeCategory === c.slug ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
               >
                 {`${c.emoji} ${c.label}`}
               </button>
@@ -212,7 +212,7 @@ export default function Search() {
               <div className="flex gap-2">
                 {['relevance', 'newest', 'oldest'].map(s => (
                   <button key={s} onClick={() => setSort(s)}
-                    className={`text-xs font-display font-semibold px-2.5 py-1 rounded-full transition-all ${sort === s ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
+                    className={`text-xs font-body font-semibold px-2.5 py-1 rounded-full transition-all ${sort === s ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
                     {s.charAt(0).toUpperCase() + s.slice(1)}
                   </button>
                 ))}
@@ -248,7 +248,7 @@ export default function Search() {
                   <Link 
                     key={c.slug} 
                     to={`/blog/category/${cleanSlug}/`}
-                    className="text-xs font-display font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1"
+                    className="text-xs font-body font-semibold px-3 py-1.5 rounded-full bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/40 transition-all flex items-center gap-1"
                   >
                     {`${c.emoji} ${c.label}`}
                   </Link>
@@ -270,7 +270,7 @@ export default function Search() {
                   className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
                 >
                   <span className="text-xl">{c.emoji}</span>
-                  <span className="text-sm font-display font-semibold text-foreground group-hover:text-secondary transition-colors">{c.label}</span>
+                  <span className="text-sm font-body font-semibold text-foreground group-hover:text-secondary transition-colors">{c.label}</span>
                 </Link>
               ))}
             </div>

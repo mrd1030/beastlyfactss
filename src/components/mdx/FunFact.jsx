@@ -9,7 +9,7 @@ export default function FunFact({ children, className = '' }) {
           <Lightbulb className="h-4 w-4" />
         </div>
         <div className="flex-1">
-          <div className="mb-1 text-xs font-display font-bold uppercase tracking-wider text-secondary">
+          <div className="mb-1 text-xs font-body font-bold uppercase tracking-wider text-secondary">
             Fun Fact
           </div>
           <div className="text-foreground font-body text-[15px] leading-relaxed">

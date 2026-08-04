@@ -24,7 +24,7 @@ const MODES = [
 ];
 
 const pill = (active) =>
-  `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-display font-semibold border transition-all ${
+  `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-body font-semibold border transition-all ${
     active
       ? 'bg-secondary text-secondary-foreground border-secondary shadow-md shadow-secondary/20'
       : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'

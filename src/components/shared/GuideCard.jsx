@@ -34,7 +34,7 @@ export default function GuideCard({ guide, index = 0, onOpenLegend }) {
 {/* Clickable Badge */}
       <button 
         onClick={(e) => { e.preventDefault(); onOpenLegend(); }}
-        className={`text-xs font-display font-semibold px-2.5 py-1 rounded-full ${difficultyColor[guide.difficulty]}`}
+        className={`text-xs font-body font-semibold px-2.5 py-1 rounded-full ${difficultyColor[guide.difficulty]}`}
       >
         {guide.difficulty}
       </button>

@@ -32,7 +32,7 @@ export default function AchievementToast() {
           >
             <span className="text-2xl flex-shrink-0">{currentAchievementToast.emoji}</span>
             <div className="min-w-0">
-              <p className="font-display font-bold text-sm text-foreground leading-tight">
+              <p className="font-body font-bold text-sm text-foreground leading-tight">
                 {`Achievement unlocked: ${currentAchievementToast.title}`}
               </p>
               <Link

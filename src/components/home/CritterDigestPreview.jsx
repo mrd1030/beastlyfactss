@@ -69,7 +69,7 @@ export default function CritterDigestPreview() {
               Care guides, deep-dives, and more from our blog
             </p>
           </div>
-          <Link to="/blog/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
+          <Link to="/blog/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             View all articles <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
@@ -98,7 +98,7 @@ export default function CritterDigestPreview() {
         <div className="text-center mt-6">
           <Link
             to="/blog/"
-            className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-secondary hover:underline p-2 -m-2"
+            className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"
           >
             View all articles <ArrowRight className="w-3.5 h-3.5" />
           </Link>

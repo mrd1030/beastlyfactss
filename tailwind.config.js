@@ -156,8 +156,11 @@ module.exports = {
               width: '100%',
             },
             th: {
-              fontFamily: ['var(--font-display)', 'sans-serif'],
-              fontWeight: '600',
+              // Body font, not display: the table sets 0.9rem, so these render
+              // at ~14px and Fredoka closes up at that size. The prose headings
+              // above keep the display face because they are all 1.1rem and up.
+              fontFamily: ['var(--font-body)', 'sans-serif'],
+              fontWeight: '700',
               backgroundColor: 'hsl(var(--muted))',
             },
           },

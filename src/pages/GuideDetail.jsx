@@ -305,7 +305,7 @@ export default function GuideDetail() {
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Guide not found</h2>
-          <Link to="/guides/" className="text-secondary text-sm font-display font-semibold hover:underline">
+          <Link to="/guides/" className="text-secondary text-sm font-body font-semibold hover:underline">
             Browse all guides →
           </Link>
         </div>
@@ -408,7 +408,7 @@ export default function GuideDetail() {
         <button
           type="button"
           onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
+          className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Guides
         </button>
@@ -427,7 +427,7 @@ export default function GuideDetail() {
                   <button
                     ref={legendTriggerRef}
                     onClick={() => setIsLegendOpen(true)}
-                    className={`text-xs font-display font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
+                    className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
                   >
                     {guide.difficulty}
                   </button>
@@ -437,7 +437,7 @@ export default function GuideDetail() {
             <button
               ref={printTriggerRef}
               onClick={() => setIsPrintOpen(true)}
-              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
+              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
             >
               <Printer className="w-3.5 h-3.5" /> Print Checklist
             </button>
@@ -454,7 +454,7 @@ export default function GuideDetail() {
             {/* Fun fact */}
             <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
               <p className="text-sm font-body text-foreground">
-                <span className="font-display font-bold text-secondary">🤓 Did you know?</span>
+                <span className="font-body font-bold text-secondary">🤓 Did you know?</span>
                 {` ${guide.funFact}`}
               </p>
             </div>
@@ -513,7 +513,7 @@ export default function GuideDetail() {
                   {guide.faqs.map((faq, i) => (
                     <details key={i} name={`faq-${guide.id}`} className="group border border-border/60 rounded-xl overflow-hidden">
                       <summary className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                        <span className="font-display font-semibold text-sm text-foreground">{faq.q}</span>
+                        <span className="font-body font-semibold text-sm text-foreground">{faq.q}</span>
                         <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 group-open:rotate-180" />
                       </summary>
                       <div className="px-4 pb-3 text-sm text-muted-foreground font-body leading-relaxed border-t border-border/40">
@@ -526,7 +526,7 @@ export default function GuideDetail() {
             )}
 
             {/* Back to browse */}
-            <div className="flex items-center gap-2 text-sm font-display font-semibold text-muted-foreground">
+            <div className="flex items-center gap-2 text-sm font-body font-semibold text-muted-foreground">
               <Link to="/encyclopedia/" className="hover:text-secondary transition-colors flex items-center gap-1 p-2 -m-2">
                 Browse all animals <ChevronRight className="w-3.5 h-3.5" />
               </Link>
@@ -539,20 +539,20 @@ export default function GuideDetail() {
             {/* Encyclopedia link */}
             {encAnimal && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📚 Encyclopedia
                 </p>
                 <Link to={`/encyclopedia/animal/${encAnimal.id}/`} state={{ returnTo: location.state?.returnTo || '/guides/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-2xl flex-shrink-0">{encAnimal.emoji}</span>
                     <div>
-                      <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
+                      <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {encAnimal.name}
                       </p>
                       <p className="text-xs text-muted-foreground font-body italic mt-0.5">{encAnimal.scientific}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-display font-semibold text-secondary">
+                  <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
                     Animal facts & overview <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
@@ -569,13 +569,13 @@ export default function GuideDetail() {
             {/* Related deep-dive articles */}
             {relatedArticles.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📰 Deep Dive
                 </p>
                 <div className="space-y-3">
                   {relatedArticles.map(article => (
                     <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
-                      <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>
                     </Link>
@@ -587,13 +587,13 @@ export default function GuideDetail() {
             {/* Related short story */}
             {guide.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
+                <p className="text-xs font-body font-bold text-secondary mb-2">📖 Short Story</p>
                 <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${guide.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(guide.relatedStory.slug) ? chroniclesPath(seriesForSlug(guide.relatedStory.slug).id) : `/blog/${guide.relatedStory.slug}/`}
                   className="group block"
                 >
-                  <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                  <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                     {guide.relatedStory.title}
                   </p>
                 </Link>
@@ -603,20 +603,20 @@ export default function GuideDetail() {
             {/* Related fun facts */}
             {relatedFacts.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   🤩 Fun Facts
                 </p>
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
                     <div key={fact.id} className="bg-secondary/5 border border-secondary/20 rounded-xl px-3 py-2.5">
-                      <p className="text-xs font-display font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
+                      <p className="text-xs font-body font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
                       <p className="text-xs font-body text-foreground leading-relaxed">{fact.fact}</p>
                     </div>
                   ))}
                 </div>
                 <Link
                   to="/facts/"
-                  className="inline-flex items-center gap-1 mt-1 text-xs font-display font-semibold text-secondary hover:underline p-2 -mx-2 -mb-2"
+                  className="inline-flex items-center gap-1 mt-1 text-xs font-body font-semibold text-secondary hover:underline p-2 -mx-2 -mb-2"
                 >
                   All animal facts <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
@@ -625,13 +625,13 @@ export default function GuideDetail() {
 
             {/* Explore more */}
             <div className="bg-card border border-border rounded-2xl p-5">
-              <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+              <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                 Explore More
               </p>
               <div className="space-y-2">
                 <Link
                   to="/guides/"
-                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <BookOpen className="w-4 h-4 flex-shrink-0" />
                   All Care Guides
@@ -639,7 +639,7 @@ export default function GuideDetail() {
                 </Link>
                 <Link
                   to="/facts/"
-                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <span className="text-base">🤩</span>
                   Animal Fun Facts
@@ -647,7 +647,7 @@ export default function GuideDetail() {
                 </Link>
                 <Link
                   to="/gear/"
-                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <span className="text-base">🛒</span>
                   Recommended Gear
@@ -677,7 +677,7 @@ export default function GuideDetail() {
             <DifficultyLegend />
             <button
               onClick={() => setIsLegendOpen(false)}
-              className="mt-4 w-full bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-display font-semibold transition-colors hover:opacity-90"
+              className="mt-4 w-full bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-body font-semibold transition-colors hover:opacity-90"
             >
               Close Window
             </button>
@@ -716,7 +716,7 @@ export default function GuideDetail() {
                     className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
                   />
                   <span>
-                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
                       <BookMarked className="w-3.5 h-3.5" /> Encyclopedia Overview
                     </span>
                     <span className="text-xs text-muted-foreground block mt-0.5">
@@ -734,7 +734,7 @@ export default function GuideDetail() {
                     className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
                   />
                   <span>
-                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
                       <Calculator className="w-3.5 h-3.5" /> Cost Builder
                     </span>
                     <span className="text-xs text-muted-foreground block mt-0.5">
@@ -752,7 +752,7 @@ export default function GuideDetail() {
                     className="accent-secondary w-4 h-4 mt-0.5 flex-shrink-0"
                   />
                   <span>
-                    <span className="font-display font-semibold text-foreground flex items-center gap-1.5">
+                    <span className="font-body font-semibold text-foreground flex items-center gap-1.5">
                       <HelpCircle className="w-3.5 h-3.5" /> FAQ
                     </span>
                     <span className="text-xs text-muted-foreground block mt-0.5">
@@ -766,13 +766,13 @@ export default function GuideDetail() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setIsPrintOpen(false)}
-                className="flex-1 border border-border text-foreground px-4 py-2 rounded-xl font-display font-semibold text-sm transition-colors hover:bg-muted"
+                className="flex-1 border border-border text-foreground px-4 py-2 rounded-xl font-body font-semibold text-sm transition-colors hover:bg-muted"
               >
                 Cancel
               </button>
               <button
                 onClick={() => { handlePrint(printOptions); setIsPrintOpen(false); }}
-                className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-display font-semibold text-sm transition-colors hover:opacity-90"
+                className="flex-1 bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-body font-semibold text-sm transition-colors hover:opacity-90"
               >
                 Print
               </button>

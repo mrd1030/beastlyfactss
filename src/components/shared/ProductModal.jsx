@@ -102,7 +102,7 @@ export default function ProductModal({ product, onClose }) {
             </div>
           )}
 
-          <span className="text-xs font-display font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full">
+          <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full">
             {product.category}
           </span>
 
@@ -135,7 +135,7 @@ export default function ProductModal({ product, onClose }) {
             href={product.link}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="inline-flex items-center gap-2 w-full justify-center px-5 py-3 rounded-full bg-secondary text-secondary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity focus:ring-2 focus:ring-secondary focus:outline-none"
+            className="inline-flex items-center gap-2 w-full justify-center px-5 py-3 rounded-full bg-secondary text-secondary-foreground font-body font-semibold text-sm hover:opacity-90 transition-opacity focus:ring-2 focus:ring-secondary focus:outline-none"
           >
             <ShoppingCart className="w-4 h-4 flex-shrink-0" />
             {`See on ${retailerLabel}`}

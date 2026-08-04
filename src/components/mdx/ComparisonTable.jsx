@@ -15,7 +15,7 @@ export default function ComparisonTable({
             {headers.map((header, index) => (
               <th 
                 key={index} 
-                className="px-4 py-3 text-left font-display font-semibold text-foreground"
+                className="px-4 py-3 text-left font-body font-semibold text-foreground"
               >
                 {header}
               </th>

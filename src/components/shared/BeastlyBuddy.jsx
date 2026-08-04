@@ -143,7 +143,7 @@ export default function BeastlyBuddy() {
                 <p className="text-sm font-body text-foreground mb-3">{greeting}</p>
                 <button
                   onClick={getRandomFact}
-                  className="w-full bg-secondary text-secondary-foreground font-display font-bold text-sm py-2 rounded-xl hover:opacity-90 transition-opacity"
+                  className="w-full bg-secondary text-secondary-foreground font-body font-bold text-sm py-2 rounded-xl hover:opacity-90 transition-opacity"
                 >
                   🎲 Random Fact!
                 </button>
@@ -158,7 +158,7 @@ export default function BeastlyBuddy() {
                 <div className="flex gap-2">
                   <button
                     onClick={getRandomFact}
-                    className="flex-1 bg-secondary text-secondary-foreground font-display font-bold text-sm py-2 rounded-xl hover:opacity-90 transition-opacity"
+                    className="flex-1 bg-secondary text-secondary-foreground font-body font-bold text-sm py-2 rounded-xl hover:opacity-90 transition-opacity"
                   >
                     🎲 Another!
                   </button>

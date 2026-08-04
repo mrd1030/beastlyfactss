@@ -54,7 +54,7 @@ export default function FactFileRow({ entry }) {
       <span style={{ clipPath: TAB_CUT }} className="block w-fit bg-border p-px transition-colors group-hover:bg-secondary/40">
         <span
           style={{ clipPath: TAB_CUT }}
-          className="block bg-card pb-1 pl-4 pr-[30px] pt-1.5 font-display text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground transition-colors group-hover:bg-muted/60 group-hover:text-secondary group-focus-visible:bg-muted/60"
+          className="block bg-card pb-1 pl-4 pr-[30px] pt-1.5 font-body text-[10px] font-bold uppercase tracking-[0.14em] text-muted-foreground transition-colors group-hover:bg-muted/60 group-hover:text-secondary group-focus-visible:bg-muted/60"
         >
           {animal}
         </span>
@@ -68,11 +68,11 @@ export default function FactFileRow({ entry }) {
             <p className="font-body text-xs leading-snug text-muted-foreground line-through decoration-secondary/50">
               {myth}
             </p>
-            <p className="mt-1.5 font-display text-sm font-bold leading-snug text-foreground transition-colors group-hover:text-secondary sm:text-base">
+            <p className="mt-1.5 font-body text-sm font-bold leading-snug text-foreground transition-colors group-hover:text-secondary sm:text-base">
               {truth}
             </p>
 
-            <div className="mt-3 flex items-center justify-between gap-3 font-display text-xs font-semibold">
+            <div className="mt-3 flex items-center justify-between gap-3 font-body text-xs font-semibold">
               {sources > 0 ? (
                 <span className="flex items-center gap-1.5 text-muted-foreground">
                   <BookOpen className="h-3.5 w-3.5" />
@@ -110,7 +110,7 @@ export default function FactFileRow({ entry }) {
           />
         ) : (
           <div className="flex h-24 w-24 items-center justify-center border-[1.5px] border-black/80 bg-neutral-200">
-            <span className="px-2 text-center font-display text-[9px] font-bold uppercase tracking-wider text-neutral-500">
+            <span className="px-2 text-center font-body text-[9px] font-bold uppercase tracking-wider text-neutral-500">
               No photo
             </span>
           </div>

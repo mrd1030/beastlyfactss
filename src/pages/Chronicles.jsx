@@ -97,7 +97,7 @@ export default function Chronicles() {
               <Link
                 key={s.id}
                 to={chroniclesPath(s.id)}
-                className={`px-4 py-2 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-4 py-2 rounded-full text-xs font-body font-semibold transition-all flex items-center gap-1.5 ${
                   s.id === series.id
                     ? 'bg-accent text-accent-foreground'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -118,11 +118,11 @@ export default function Chronicles() {
             ) : !story ? (
               <div className="text-center py-20">
                 <span className="text-4xl block mb-3">🪶</span>
-                <p className="font-display font-bold text-foreground mb-1">This part hasn't been written yet</p>
+                <p className="font-body font-bold text-foreground mb-1">This part hasn't been written yet</p>
                 <p className="text-sm text-muted-foreground font-body mb-4">
                   {`${series.shortName} is still working on it. Check back soon!`}
                 </p>
-                <Link to={chroniclesPath(series.id)} className="text-sm font-display font-semibold text-secondary hover:underline">
+                <Link to={chroniclesPath(series.id)} className="text-sm font-body font-semibold text-secondary hover:underline">
                   {`All ${series.shortName} stories →`}
                 </Link>
               </div>
@@ -130,7 +130,7 @@ export default function Chronicles() {
               <>
                 <Link
                   to={chroniclesPath(series.id)}
-                  className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
+                  className="flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
                 >
                   <ArrowLeft className="w-4 h-4" />{`All ${series.shortName} stories`}
                 </Link>
@@ -214,7 +214,7 @@ function StoryCard({ story, seriesId, part, index }) {
         </div>
         <div className="min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-1">
-            <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+            <span className="text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
               {`Part ${part}`}
             </span>
             {displayDate && (
@@ -232,7 +232,7 @@ function StoryCard({ story, seriesId, part, index }) {
           {story.excerpt && (
             <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed line-clamp-2">{story.excerpt}</p>
           )}
-          <span className="inline-flex items-center gap-1 mt-2 text-xs font-display font-semibold text-secondary">
+          <span className="inline-flex items-center gap-1 mt-2 text-xs font-body font-semibold text-secondary">
             Read this part <ArrowRight className="w-3.5 h-3.5" />
           </span>
         </div>
@@ -251,7 +251,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
       {prev ? (
         <Link
           to={chroniclesPath(seriesId, prev)}
-          className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
+          className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />{`Part ${prev}`}
         </Link>
@@ -265,7 +265,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
               key={p._id || p.slug?.current || n}
               to={chroniclesPath(seriesId, n)}
               title={p.title}
-              className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-display font-bold transition-colors ${
+              className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-body font-bold transition-colors ${
                 n === current
                   ? 'bg-accent text-accent-foreground'
                   : 'bg-muted text-muted-foreground hover:bg-accent/10 hover:text-accent'
@@ -280,7 +280,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
       {next ? (
         <Link
           to={chroniclesPath(seriesId, next)}
-          className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
+          className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-card border border-border px-3 py-2 rounded-xl transition-colors"
         >
           {`Part ${next}`}<ArrowRight className="w-3.5 h-3.5" />
         </Link>
@@ -309,7 +309,7 @@ function StoryReader({ story, part }) {
   return (
     <motion.article initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
       <div className="flex items-center gap-2 mb-3 flex-wrap">
-        <span className="text-xs font-display font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+        <span className="text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
           {`Part ${part}`}
         </span>
         {displayDate && (
@@ -355,7 +355,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
             <div key={s.id}>
               <Link
                 to={chroniclesPath(s.id)}
-                className={`text-xs font-display font-bold uppercase tracking-wide transition-colors ${
+                className={`text-xs font-body font-bold uppercase tracking-wide transition-colors ${
                   s.id === activeSeriesId && !activePart ? 'text-accent' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -389,11 +389,11 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
       </div>
 
       <Link to="/blog/" className="block bg-card border border-border rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
-        <p className="text-xs font-display font-bold text-secondary mb-1">📰 The Critter Digest</p>
+        <p className="text-xs font-body font-bold text-secondary mb-1">📰 The Critter Digest</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">
           Care guides, husbandry deep-dives, and fun facts - the main Beastly Facts blog.
         </p>
-        <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">
+        <span className="inline-block mt-2 text-xs font-body font-semibold text-secondary group-hover:underline">
           Back to the Digest →
         </span>
       </Link>

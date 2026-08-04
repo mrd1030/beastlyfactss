@@ -57,7 +57,7 @@ export default function ShareButton({
       aria-label={`Share ${title}`}
       className={
         className ||
-        'flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-2 rounded-xl border border-border bg-card hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50'
+        'flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-2 rounded-xl border border-border bg-card hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50'
       }
     >
       {copied ? <Check className="w-4 h-4 text-secondary" /> : <Share2 className="w-4 h-4" />}

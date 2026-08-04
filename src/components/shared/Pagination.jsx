@@ -93,7 +93,7 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
   // Slightly larger on phones, where these are thumb targets rather than
   // pointer targets, and back to 32px from sm up to match the surrounding UI.
   const numberClass = (p) =>
-    `w-9 h-9 sm:w-8 sm:h-8 rounded-lg text-xs font-display font-bold transition-all ${
+    `w-9 h-9 sm:w-8 sm:h-8 rounded-lg text-xs font-body font-bold transition-all ${
       p === page
         ? 'bg-secondary text-secondary-foreground shadow-sm'
         : 'bg-transparent border border-transparent text-muted-foreground hover:border-border hover:text-foreground'

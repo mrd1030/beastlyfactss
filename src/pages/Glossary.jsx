@@ -173,7 +173,7 @@ export default function Glossary() {
                 onClick={() => hasTerms && handleLetterClick(letter)}
                 aria-pressed={isActive}
                 aria-disabled={!hasTerms}
-                className={`flex-shrink-0 w-8 h-8 rounded-lg text-sm font-display font-bold transition-colors ${
+                className={`flex-shrink-0 w-8 h-8 rounded-lg text-sm font-body font-bold transition-colors ${
                   isActive
                     ? 'bg-primary text-primary-foreground'
                     : hasTerms

@@ -42,7 +42,7 @@ export default function Newsletter() {
                             <Link to="/blog/">
                                 <motion.button
                                     whileHover={{ x: 3 }}
-                                    className="inline-flex items-center gap-1.5 text-sm font-display font-bold text-secondary hover:underline p-2 -m-2"
+                                    className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"
                                 >
                                     Browse all articles <ArrowRight className="w-3.5 h-3.5" />
                                 </motion.button>

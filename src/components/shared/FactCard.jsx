@@ -68,7 +68,7 @@ export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
           {/* Header */}
           <div className="flex items-center justify-between mb-3">
             <span className="text-3xl">{fact.emoji || '🐾'}</span>
-            <span className={`text-[10px] font-display font-bold uppercase tracking-wider bg-muted px-2 py-0.5 rounded-full ${CATEGORY_TEXT[fact.category] || 'text-muted-foreground'}`}>
+            <span className={`text-[10px] font-body font-bold uppercase tracking-wider bg-muted px-2 py-0.5 rounded-full ${CATEGORY_TEXT[fact.category] || 'text-muted-foreground'}`}>
               {fact.category}
             </span>
           </div>

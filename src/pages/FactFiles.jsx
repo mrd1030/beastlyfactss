@@ -158,13 +158,13 @@ export default function FactFiles() {
               </>
             ) : (
               <div className="py-16 text-center">
-                <p className="font-display font-bold text-foreground">No files match "{search}"</p>
+                <p className="font-body font-bold text-foreground">No files match "{search}"</p>
                 <p className="mt-1 font-body text-sm text-muted-foreground">
                   Try a different term, or{' '}
                   <button
                     type="button"
                     onClick={() => reset(() => { setSearch(''); setGroup('All'); })}
-                    className="font-display font-semibold text-secondary hover:underline"
+                    className="font-body font-semibold text-secondary hover:underline"
                   >
                     clear the filters
                   </button>
@@ -184,7 +184,7 @@ export default function FactFiles() {
                     type="button"
                     onClick={() => reset(() => setGroup(name))}
                     aria-pressed={group === name}
-                    className={`rounded-full px-3 py-1.5 font-display text-xs font-semibold transition-all ${
+                    className={`rounded-full px-3 py-1.5 font-body text-xs font-semibold transition-all ${
                       group === name
                         ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
                         : 'border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-foreground'
@@ -215,7 +215,7 @@ export default function FactFiles() {
                       className="flex items-start justify-between gap-2 font-body text-xs text-muted-foreground hover:text-secondary"
                     >
                       <span className="line-clamp-2">{p.title}</span>
-                      <span className="flex-shrink-0 font-display font-semibold text-secondary">
+                      <span className="flex-shrink-0 font-body font-semibold text-secondary">
                         {p.sourceCount}
                       </span>
                     </Link>
@@ -231,7 +231,7 @@ export default function FactFiles() {
               </p>
               <Link
                 to="/beastlypedia/"
-                className="font-display text-xs font-semibold text-secondary hover:underline"
+                className="font-body text-xs font-semibold text-secondary hover:underline"
               >
                 Browse Beastlypedia →
               </Link>

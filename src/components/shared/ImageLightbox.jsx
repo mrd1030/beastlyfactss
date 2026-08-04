@@ -90,10 +90,10 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
               />
               <div className="px-4 py-3 bg-card flex items-end justify-between gap-3">
                 <div className="min-w-0">
-                  <p className="text-xs font-display font-semibold text-muted-foreground">
+                  <p className="text-xs font-body font-semibold text-muted-foreground">
                     {`${fact.category} • ${fact.animal}`}
                   </p>
-                  <p className="font-display font-bold text-sm text-foreground mt-0.5">
+                  <p className="font-body font-bold text-sm text-foreground mt-0.5">
                     {fact.title}
                   </p>
                 </div>
@@ -101,7 +101,7 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
                   {factId && (
                     <button
                       onClick={() => toggleFavorite(factId)}
-                      className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
+                      className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
                       aria-label={fav ? `Remove ${fact.title} from your Pack` : `Save ${fact.title} to your Pack`}
                       aria-pressed={fav}
                     >
@@ -111,7 +111,7 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
                   )}
                   <button
                     onClick={handleShare}
-                    className="flex items-center gap-1.5 text-xs font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
+                    className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -m-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 rounded-lg"
                     aria-label={`Share ${fact.title}`}
                   >
                     {copied ? <Check className="w-4 h-4 text-secondary" /> : <Share2 className="w-4 h-4" />}

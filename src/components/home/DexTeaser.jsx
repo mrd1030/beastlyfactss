@@ -60,7 +60,7 @@ export default function DexTeaser() {
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground font-display font-bold text-sm py-2.5 px-5 rounded-xl shadow-lg shadow-secondary/20"
+                    className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm py-2.5 px-5 rounded-xl shadow-lg shadow-secondary/20"
                   >
                     <BookOpen className="w-4 h-4" /> Read the Chronicles <ArrowRight className="w-4 h-4" />
                   </motion.button>

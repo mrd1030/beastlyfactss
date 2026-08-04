@@ -50,7 +50,7 @@ export default function BeastfileDetail() {
           <h1 className="font-display font-bold text-xl text-foreground mb-2">Beastfile not found</h1>
           <Link
             to="/beastlypedia/"
-            className="text-secondary text-sm font-display font-semibold hover:underline"
+            className="text-secondary text-sm font-body font-semibold hover:underline"
           >
             Back to Beastlypedia
           </Link>
@@ -119,7 +119,7 @@ export default function BeastfileDetail() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6">
         <Link
           to="/beastlypedia/"
-          className="inline-flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors mb-3"
+          className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors mb-3"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Beastlypedia
         </Link>
@@ -147,7 +147,7 @@ export default function BeastfileDetail() {
           ) : (
             <div className="w-full aspect-[3/2] sm:aspect-[16/9] bg-muted flex flex-col items-center justify-center gap-2 border-b-2 border-dashed border-border">
               <span className="text-4xl">📷</span>
-              <span className="text-xs font-display font-bold uppercase tracking-wider text-muted-foreground">
+              <span className="text-xs font-body font-bold uppercase tracking-wider text-muted-foreground">
                 Hero image pending
               </span>
             </div>
@@ -160,14 +160,14 @@ export default function BeastfileDetail() {
               and decides to pass it on, and the page's og:image is already the
               hero, so an unfurled link previews properly. */}
           <div className="flex items-start justify-between gap-4">
-            <p className="text-[11px] font-display font-bold uppercase tracking-wider text-secondary mb-1">
+            <p className="text-[11px] font-body font-bold uppercase tracking-wider text-secondary mb-1">
               {`Beastfile · ${group}`}
             </p>
             <ShareButton
               title={name}
               text={`${name}: ${tagline}`}
               url={`/beastlypedia/${id}/`}
-              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
             />
           </div>
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground leading-tight">
@@ -218,7 +218,7 @@ export default function BeastfileDetail() {
             </Section>
 
             <Section icon={MapPin} title="Habitat">
-              <span className="inline-block text-xs font-display font-bold px-3 py-1.5 rounded-full bg-muted text-foreground">
+              <span className="inline-block text-xs font-body font-bold px-3 py-1.5 rounded-full bg-muted text-foreground">
                 {habitat}
               </span>
             </Section>
@@ -293,7 +293,7 @@ export default function BeastfileDetail() {
                           </span>
                         </span>
                         <span className="min-w-0 flex-1">
-                          <span className="block font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
+                          <span className="block font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors">
                             {f.title}
                           </span>
                           <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-1">
@@ -304,11 +304,11 @@ export default function BeastfileDetail() {
                     ) : (
                       // No photo resolved, so there is nothing to open.
                       <div className="flex gap-3 sm:gap-4 px-2 py-2">
-                        <span className="w-20 sm:w-24 flex-shrink-0 text-secondary font-display font-bold text-center">
+                        <span className="w-20 sm:w-24 flex-shrink-0 text-secondary font-body font-bold text-center">
                           {i + 1}
                         </span>
                         <span className="min-w-0">
-                          <span className="block font-display font-bold text-sm text-foreground">
+                          <span className="block font-body font-bold text-sm text-foreground">
                             {f.title}
                           </span>
                           <span className="block text-sm text-muted-foreground font-body leading-relaxed mt-0.5">
@@ -328,7 +328,7 @@ export default function BeastfileDetail() {
                     key={i}
                     className="text-sm text-muted-foreground font-body leading-relaxed flex gap-2.5"
                   >
-                    <span className="text-secondary font-display font-bold flex-shrink-0">
+                    <span className="text-secondary font-body font-bold flex-shrink-0">
                       {i + 1}
                     </span>
                     <span>{f}</span>
@@ -349,7 +349,7 @@ export default function BeastfileDetail() {
               {`Kept as a pet? `}
               <Link
                 to={`/encyclopedia/animal/${encyclopediaId}/`}
-                className="text-secondary font-display font-semibold hover:underline"
+                className="text-secondary font-body font-semibold hover:underline"
               >
                 {`See the ${name} care entry in the Encyclopedia`}
               </Link>

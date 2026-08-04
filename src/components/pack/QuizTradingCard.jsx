@@ -62,10 +62,10 @@ export default function QuizTradingCard({ result, onShare, removeSlot }) {
         {removeSlot}
 
         <div className="flex items-center justify-between gap-1 mb-1.5 pr-5">
-          <span className="text-[8px] font-display font-bold uppercase tracking-wider text-muted-foreground truncate">
+          <span className="text-[8px] font-body font-bold uppercase tracking-wider text-muted-foreground truncate">
             {animalCategory || 'Encyclopedia'}
           </span>
-          <span className={`text-[8px] font-display font-bold px-1.5 py-0.5 rounded-full flex-shrink-0 ${tier.badge}`}>
+          <span className={`text-[8px] font-body font-bold px-1.5 py-0.5 rounded-full flex-shrink-0 ${tier.badge}`}>
             {tier.label}
           </span>
         </div>
@@ -99,7 +99,7 @@ export default function QuizTradingCard({ result, onShare, removeSlot }) {
 
         <p className="text-center mt-0.5 mb-2">
           <span className="font-display font-bold text-lg text-foreground tabular-nums">{score}</span>
-          <span className="font-display font-bold text-[11px] text-muted-foreground tabular-nums">{`/${total}`}</span>
+          <span className="font-body font-bold text-[11px] text-muted-foreground tabular-nums">{`/${total}`}</span>
         </p>
 
         {/* Stacked rather than side by side: at this width two buttons in a row
@@ -108,13 +108,13 @@ export default function QuizTradingCard({ result, onShare, removeSlot }) {
         <div className="flex flex-col gap-1 mt-auto">
           <button
             onClick={onShare}
-            className="flex items-center justify-center gap-1 text-[10px] font-display font-bold px-1.5 py-1.5 rounded-md bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+            className="flex items-center justify-center gap-1 text-[10px] font-body font-bold px-1.5 py-1.5 rounded-md bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
           >
             <Share2 className="w-3 h-3" /> Share
           </button>
           <Link
             to={`/encyclopedia/animal/${animalId}/`}
-            className="flex items-center justify-center gap-1 text-[10px] font-display font-bold px-1.5 py-1.5 rounded-md bg-muted hover:bg-accent text-foreground transition-colors"
+            className="flex items-center justify-center gap-1 text-[10px] font-body font-bold px-1.5 py-1.5 rounded-md bg-muted hover:bg-accent text-foreground transition-colors"
           >
             <RotateCcw className="w-3 h-3" /> Retake
           </Link>

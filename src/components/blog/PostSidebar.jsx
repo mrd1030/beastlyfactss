@@ -154,12 +154,12 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         <div className="text-center mb-3">
           <span className="text-3xl">{displayFact.emoji}</span>
         </div>
-        <p className="text-xs font-display font-bold text-secondary mb-1">{displayFact.title}</p>
+        <p className="text-xs font-body font-bold text-secondary mb-1">{displayFact.title}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed">{displayFact.fact}</p>
         <p className="text-xs text-muted-foreground/60 font-body mt-2 italic">{` - ${displayFact.animal}`}</p>
         <button
           onClick={() => toggleFavorite(displayFact.id)}
-          className={`mt-3 w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl text-xs font-display font-bold border transition-all ${
+          className={`mt-3 w-full flex items-center justify-center gap-1.5 py-1.5 rounded-xl text-xs font-body font-bold border transition-all ${
             isFavorite(displayFact.id)
               ? 'bg-hotpink/10 text-hotpink border-hotpink/30'
               : 'bg-muted text-muted-foreground border-border hover:text-hotpink hover:border-hotpink/30'

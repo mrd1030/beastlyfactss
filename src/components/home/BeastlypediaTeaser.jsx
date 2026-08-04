@@ -50,7 +50,7 @@ export default function BeastlypediaTeaser() {
           </div>
           <Link
             to="/beastlypedia/"
-            className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
+            className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
           >
             Open all files <ArrowRight className="w-3.5 h-3.5" />
           </Link>
@@ -76,12 +76,12 @@ export default function BeastlypediaTeaser() {
                       height={240}
                       variant="card"
                     />
-                    <span className="absolute bottom-2 left-2 text-[10px] font-display font-bold uppercase tracking-wide text-white bg-black/55 backdrop-blur-sm px-2 py-0.5 rounded-full">
+                    <span className="absolute bottom-2 left-2 text-[10px] font-body font-bold uppercase tracking-wide text-white bg-black/55 backdrop-blur-sm px-2 py-0.5 rounded-full">
                       {b.group}
                     </span>
                   </div>
                   <div className="p-3 flex flex-col flex-1">
-                    <p className="text-base font-display font-bold text-foreground group-hover:text-secondary transition-colors mb-0.5">
+                    <p className="text-base font-body font-bold text-foreground group-hover:text-secondary transition-colors mb-0.5">
                       {b.name}
                     </p>
                     <p className="text-xs text-muted-foreground font-body line-clamp-2">
@@ -97,7 +97,7 @@ export default function BeastlypediaTeaser() {
         <div className="text-center mt-5 sm:hidden">
           <Link
             to="/beastlypedia/"
-            className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2"
+            className="inline-flex items-center gap-1 text-sm font-body font-bold text-secondary p-2 -m-2"
           >
             Open all files <ArrowRight className="w-3.5 h-3.5" />
           </Link>

@@ -150,7 +150,7 @@ export default function Categories() {
               </div>
               <Link
                 to={section.viewAll.to}
-                className="text-xs font-display font-semibold text-secondary hover:underline whitespace-nowrap flex-shrink-0 p-2 -m-2"
+                className="text-xs font-body font-semibold text-secondary hover:underline whitespace-nowrap flex-shrink-0 p-2 -m-2"
               >
                 {section.viewAll.label} →
               </Link>
@@ -169,7 +169,7 @@ export default function Categories() {
                     <div className="bg-card border border-border rounded-xl p-3.5 hover:border-secondary/40 hover:shadow-md transition-all group h-full">
                       <div className="flex items-center gap-2.5">
                         <span className="text-xl flex-shrink-0">{item.emoji}</span>
-                        <span className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-tight">
+                        <span className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-tight">
                           {item.label}
                         </span>
                       </div>

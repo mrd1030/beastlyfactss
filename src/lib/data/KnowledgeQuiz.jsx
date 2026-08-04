@@ -196,7 +196,7 @@ const KnowledgeQuiz = () => {
             {showExplanation && (
               <button
                 onClick={handleNext}
-                className="w-full bg-secondary text-secondary-foreground font-display font-bold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2"
+                className="w-full bg-secondary text-secondary-foreground font-body font-bold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2"
               >
                 {currentQuestion + 1 >= questions.length ? '🏁 View Results' : 'Next Question'}
               </button>
@@ -217,19 +217,19 @@ const KnowledgeQuiz = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <button
                 onClick={handleShare}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-display font-bold text-sm px-6 py-3 rounded-2xl"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl"
               >
                 <Share2 className="w-4 h-4" /> Share Score
               </button>
               <button
                 onClick={handleSaveToPack}
-                className={`w-full sm:w-auto px-6 py-3 rounded-2xl font-display font-bold text-sm transition-all ${justSaved ? 'bg-emerald-500 text-white' : 'bg-card border border-border text-foreground hover:bg-secondary/10'}`}
+                className={`w-full sm:w-auto px-6 py-3 rounded-2xl font-body font-bold text-sm transition-all ${justSaved ? 'bg-emerald-500 text-white' : 'bg-card border border-border text-foreground hover:bg-secondary/10'}`}
               >
                 {justSaved ? '✓ Saved!' : '❤️ Save to Your Pack'}
               </button>
               <button
                 onClick={resetQuiz}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-display font-bold text-sm px-6 py-3 rounded-2xl"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-border bg-card text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl"
               >
                 <RotateCcw className="w-4 h-4" /> Retake Quiz
               </button>

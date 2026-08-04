@@ -65,7 +65,7 @@ export default function AchievementDialog({ achievement, unlocked, state, onClos
             <h3 className="font-display font-bold text-lg text-foreground">{achievement.title}</h3>
 
             <span
-              className={`inline-flex items-center gap-1 text-[10px] font-display font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mt-1.5 mb-3 ${
+              className={`inline-flex items-center gap-1 text-[10px] font-body font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mt-1.5 mb-3 ${
                 unlocked
                   ? 'bg-secondary/15 text-secondary'
                   : 'bg-muted text-muted-foreground'

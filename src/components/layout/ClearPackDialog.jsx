@@ -32,7 +32,7 @@ export default function ClearPackDialog() {
       {/* Trigger button */}
       <button
         onClick={() => setOpen(true)}
-        className="no-select flex items-center gap-2 px-4 py-2.5 rounded-xl bg-destructive/10 text-destructive font-display font-semibold text-sm hover:bg-destructive/20 transition-colors"
+        className="no-select flex items-center gap-2 px-4 py-2.5 rounded-xl bg-destructive/10 text-destructive font-body font-semibold text-sm hover:bg-destructive/20 transition-colors"
       >
         <Trash2 className="w-4 h-4" />
         Clear Your Pack
@@ -77,7 +77,7 @@ export default function ClearPackDialog() {
                     All your favorite facts will be permanently removed from your pack. You can always save them again later.
                   </p>
 
-                  <label className="block text-xs font-display font-semibold text-muted-foreground mb-1.5">
+                  <label className="block text-xs font-body font-semibold text-muted-foreground mb-1.5">
                     Type <span className="text-destructive font-bold">CLEAR</span> to confirm
                   </label>
                   <input
@@ -92,14 +92,14 @@ export default function ClearPackDialog() {
                   <div className="flex gap-2">
                     <button
                       onClick={handleClose}
-                      className="no-select flex-1 py-2.5 rounded-xl border border-border text-sm font-display font-semibold text-muted-foreground hover:bg-muted transition-colors"
+                      className="no-select flex-1 py-2.5 rounded-xl border border-border text-sm font-body font-semibold text-muted-foreground hover:bg-muted transition-colors"
                     >
                       Cancel
                     </button>
                     <button
                       onClick={handleClear}
                       disabled={!isConfirmed || clearing}
-                      className="no-select flex-1 py-2.5 rounded-xl bg-destructive text-destructive-foreground text-sm font-display font-semibold disabled:opacity-40 hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
+                      className="no-select flex-1 py-2.5 rounded-xl bg-destructive text-destructive-foreground text-sm font-body font-semibold disabled:opacity-40 hover:opacity-90 transition-opacity flex items-center justify-center gap-2"
                     >
                       {clearing ? (
                         <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />

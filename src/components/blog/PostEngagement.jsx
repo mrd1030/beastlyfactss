@@ -255,7 +255,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         <button
           onClick={handleLike}
           disabled={hasLiked}
-          className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-display font-semibold text-sm ${
+          className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all font-body font-semibold text-sm ${
             hasLiked
               ? 'bg-hotpink/10 border-hotpink/30 text-hotpink cursor-default'
               : 'bg-card border-border text-muted-foreground hover:border-hotpink/40 hover:text-hotpink'
@@ -267,7 +267,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
 
         <button
           onClick={handleShare}
-          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-secondary transition-all font-display font-semibold text-sm"
+          className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-secondary transition-all font-body font-semibold text-sm"
         >
           {shared ? <Check className="w-4 h-4 text-accent" /> : <Share2 className="w-4 h-4" />}
           {shared ? 'Copied!' : 'Share'}
@@ -314,7 +314,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                   className="bg-muted/40 rounded-2xl p-4"
                 >
                   <div className="flex items-center gap-2 mb-1.5">
-                    <span className="font-display font-bold text-sm text-foreground">{c.author_name}</span>
+                    <span className="font-body font-bold text-sm text-foreground">{c.author_name}</span>
                     <span className="text-xs text-muted-foreground font-body">
                       {new Date(c.created_date).toLocaleDateString()}
                     </span>
@@ -330,7 +330,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         {submitted ? (
           <div className="bg-accent/10 border border-accent/20 rounded-2xl p-5 text-center">
             <span className="text-2xl block mb-2">🐾</span>
-            <p className="font-display font-bold text-sm text-foreground">Thanks for your comment!</p>
+            <p className="font-body font-bold text-sm text-foreground">Thanks for your comment!</p>
             <p className="text-xs text-muted-foreground font-body mt-1">It'll show up once approved.</p>
             <button onClick={() => setSubmitted(false)} className="text-xs text-secondary mt-3 underline font-body">
               Leave another comment
@@ -338,7 +338,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           </div>
         ) : (
           <form onSubmit={handleSubmitComment} className="space-y-3 bg-card border border-border rounded-2xl p-5">
-            <p className="font-display font-bold text-sm text-foreground">Leave a comment</p>
+            <p className="font-body font-bold text-sm text-foreground">Leave a comment</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <Input
                 placeholder="Your name *"
@@ -366,7 +366,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
             <Button
               type="submit"
               disabled={submitting || !name.trim() || !commentText.trim()}
-              className="font-display font-bold"
+              className="font-body font-bold"
             >
               {submitting ? 'Submitting...' : <><Send className="w-4 h-4 mr-1.5" /> Submit Comment</>}
             </Button>

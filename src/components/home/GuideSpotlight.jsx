@@ -45,7 +45,7 @@ export default function GuideSpotlight() {
               Detailed, research-backed guides for pets
             </p>
           </div>
-          <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
+          <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             All guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
@@ -78,7 +78,7 @@ export default function GuideSpotlight() {
                           {guide.emoji}
                         </div>
                       )}
-                      <span className={`absolute top-2 left-2 text-xs font-display font-semibold px-2 py-0.5 rounded-full whitespace-nowrap bg-card/90 backdrop-blur-sm shadow-sm ${diffClass}`}>
+                      <span className={`absolute top-2 left-2 text-xs font-body font-semibold px-2 py-0.5 rounded-full whitespace-nowrap bg-card/90 backdrop-blur-sm shadow-sm ${diffClass}`}>
                         {guide.difficulty}
                       </span>
                     </div>
@@ -93,7 +93,7 @@ export default function GuideSpotlight() {
                         <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
                           {guide.petType}
                         </span>
-                        <span className="flex items-center gap-0.5 text-xs font-display font-semibold text-secondary">
+                        <span className="flex items-center gap-0.5 text-xs font-body font-semibold text-secondary">
                           Read guide <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                         </span>
                       </div>
@@ -106,7 +106,7 @@ export default function GuideSpotlight() {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/guides/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2">
+          <Link to="/guides/" className="inline-flex items-center gap-1 text-sm font-body font-bold text-secondary p-2 -m-2">
             All care guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

@@ -160,7 +160,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
               </button>
             </div>
 
-            <span className="text-xs font-display font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full">
+            <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-full">
               {`${fact.category} • ${fact.animal}`}
             </span>
 

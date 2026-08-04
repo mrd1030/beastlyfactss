@@ -308,7 +308,7 @@ export default function Blog() {
           <div className="flex flex-wrap gap-2 mt-4">
             <Link
               to="/blog/"
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+              className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
                 slugify(activeCategory) === 'all' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
@@ -318,7 +318,7 @@ export default function Blog() {
               <Link
                 key={cat.slug}
                 to={`/blog/category/${cat.slug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
                   slugify(activeCategory) === cat.slug ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -346,7 +346,7 @@ export default function Blog() {
               {filtered.length === 0 && (
                 <div className="text-center py-12">
                   <span className="text-3xl block mb-2">😿</span>
-                  <p className="font-display font-bold text-foreground text-sm">No articles found</p>
+                  <p className="font-body font-bold text-foreground text-sm">No articles found</p>
                   <p className="text-xs text-muted-foreground font-body mt-1">Try a different search term or category.</p>
                 </div>
               )}
@@ -370,11 +370,11 @@ export default function Blog() {
             </div>
 
             <Link to="/chronicles/dex/" className="block bg-secondary/5 border border-secondary/20 rounded-2xl p-5 hover:border-secondary/40 transition-colors group">
-              <p className="text-xs font-display font-bold text-secondary mb-1">📖 The Chronicles</p>
+              <p className="text-xs font-body font-bold text-secondary mb-1">📖 The Chronicles</p>
               <p className="text-xs text-muted-foreground font-body leading-relaxed">
                 Short fiction from the Beastly Facts universe - follow Dex 🦎 and Otis 🐰 in their own series.
               </p>
-              <span className="inline-block mt-2 text-xs font-display font-semibold text-secondary group-hover:underline">Start reading →</span>
+              <span className="inline-block mt-2 text-xs font-body font-semibold text-secondary group-hover:underline">Start reading →</span>
             </Link>
 
             {categories.length > 0 && (
@@ -416,11 +416,11 @@ function AuthorBio() {
         🦎
       </div>
       <div>
-        <p className="font-display font-bold text-sm text-foreground mb-1">Written by Mike</p>
+        <p className="font-body font-bold text-sm text-foreground mb-1">Written by Mike</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
           Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.
         </p>
-        <Link to="/about/" className="text-xs font-display font-semibold text-secondary hover:underline">
+        <Link to="/about/" className="text-xs font-body font-semibold text-secondary hover:underline">
           More about Mike →
         </Link>
       </div>
@@ -546,7 +546,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2">
-            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
+            <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
 
@@ -564,7 +564,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
             <span className="text-5xl block mb-4">{post.emoji || '🐾'}</span>
 
             <div className="flex items-center gap-2 mb-3 flex-wrap">
-              <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+              <span className="text-xs font-body font-semibold text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
                 {post.category || 'Article'}
               </span>
               {displayDate && (
@@ -634,7 +634,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
                         className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors"
                       >
-                        <span className="font-display font-semibold text-sm text-foreground">{faq.q}</span>
+                        <span className="font-body font-semibold text-sm text-foreground">{faq.q}</span>
                         <ChevronDown className={`w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`} />
                       </button>
                       {openFaq === i && (

@@ -135,7 +135,7 @@ export default function Gear() {
           <div className="flex flex-wrap gap-2 mt-3">
             <Link
               to="/gear/"
-              className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all flex items-center gap-1.5 ${
                 !activePetType
                   ? 'bg-accent text-accent-foreground'
                   : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -147,7 +147,7 @@ export default function Gear() {
               <Link
                 key={t.slug}
                 to={`/gear/category/${t.slug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all flex items-center gap-1.5 ${
                   activePetType === t.slug
                     ? 'bg-accent text-accent-foreground'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -170,14 +170,14 @@ export default function Gear() {
             {byCategory.length === 0 ? (
               <div className="text-center py-16">
                 <span className="text-4xl block mb-3">🔍</span>
-                <p className="font-display font-bold text-foreground">
+                <p className="font-body font-bold text-foreground">
                   {trimmedQuery ? `No gear matches "${searchQuery.trim()}"` : 'No gear found for this filter yet'}
                 </p>
                 {trimmedQuery && (
                   <button
                     type="button"
                     onClick={() => setSearchQuery('')}
-                    className="mt-3 text-sm font-display font-semibold text-secondary hover:underline"
+                    className="mt-3 text-sm font-body font-semibold text-secondary hover:underline"
                   >
                     Clear search
                   </button>
@@ -207,7 +207,7 @@ export default function Gear() {
               </p>
               <Link
                 to="/guides/"
-                className="inline-flex items-center gap-1 text-sm font-display font-semibold text-secondary hover:underline p-2 -m-2"
+                className="inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary hover:underline p-2 -m-2"
               >
                 Browse care guides <ChevronRight className="w-3.5 h-3.5" />
               </Link>

@@ -117,7 +117,7 @@ export default function AnimalQuiz({ animal }) {
           <div className="flex flex-wrap justify-center gap-2">
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSaveToPack}
               disabled={justSaved}
-              className={`font-display font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5 transition-colors ${
+              className={`font-body font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5 transition-colors ${
                 justSaved
                   ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 cursor-default'
                   : 'bg-primary text-primary-foreground'
@@ -127,11 +127,11 @@ export default function AnimalQuiz({ animal }) {
                 : <><Layers className="w-3.5 h-3.5" /> Save to Pack</>}
             </motion.button>
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
-              className="bg-secondary text-secondary-foreground font-display font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5">
+              className="bg-secondary text-secondary-foreground font-body font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5">
               <Share2 className="w-3.5 h-3.5" /> Share
             </motion.button>
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
-              className="bg-muted text-foreground font-display font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5">
+              className="bg-muted text-foreground font-body font-bold text-xs py-2.5 px-4 rounded-xl flex items-center gap-1.5">
               <RotateCcw className="w-3.5 h-3.5" /> Retake
             </motion.button>
           </div>
@@ -139,8 +139,8 @@ export default function AnimalQuiz({ animal }) {
       ) : (
         <>
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-display font-bold text-muted-foreground">{`Question ${index + 1} of ${total}`}</span>
-            <span className="text-xs font-display font-bold text-secondary">{`${score} pts`}</span>
+            <span className="text-xs font-body font-bold text-muted-foreground">{`Question ${index + 1} of ${total}`}</span>
+            <span className="text-xs font-body font-bold text-secondary">{`${score} pts`}</span>
           </div>
           {/* Width, not a motion scaleX transform. motion-safe's wrapper drops
               `animate` on an instance's first render, which left this bar
@@ -154,7 +154,7 @@ export default function AnimalQuiz({ animal }) {
           </div>
 
           <motion.div key={question.id} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.2 }}>
-            <p className="text-sm font-display font-bold text-foreground mb-3">{question.question}</p>
+            <p className="text-sm font-body font-bold text-foreground mb-3">{question.question}</p>
             <div className="space-y-2 mb-3">
               {question.options.map((opt, i) => {
                 let style = 'bg-background border-border text-foreground hover:border-secondary/40';
@@ -177,7 +177,7 @@ export default function AnimalQuiz({ animal }) {
 
             {answered && (
               <motion.button initial={{ opacity: 0 }} animate={{ opacity: 1 }} onClick={handleNext}
-                className="w-full bg-secondary text-secondary-foreground font-display font-bold text-xs py-2.5 rounded-xl">
+                className="w-full bg-secondary text-secondary-foreground font-body font-bold text-xs py-2.5 rounded-xl">
                 {index + 1 >= total ? 'See Score' : 'Next Question'}
               </motion.button>
             )}

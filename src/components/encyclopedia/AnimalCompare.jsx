@@ -48,7 +48,7 @@ export default function AnimalCompare({ animal }) {
         <select
           value={compareId}
           onChange={(e) => setCompareId(e.target.value)}
-          className="text-xs font-display font-semibold bg-muted border border-border rounded-lg px-2.5 py-1.5 text-foreground max-w-[55%]"
+          className="text-xs font-body font-semibold bg-muted border border-border rounded-lg px-2.5 py-1.5 text-foreground max-w-[55%]"
         >
           <option value="human">🧑 vs Human</option>
           {groups.map(({ category, animals }) => (
@@ -64,18 +64,18 @@ export default function AnimalCompare({ animal }) {
       <div className="grid grid-cols-2 gap-3 mb-4">
         <div className="text-center">
           <span className="text-3xl block mb-1">{animal.emoji}</span>
-          <p className="font-display font-bold text-sm text-foreground leading-snug">{animal.name}</p>
+          <p className="font-body font-bold text-sm text-foreground leading-snug">{animal.name}</p>
         </div>
         <div className="text-center">
           <span className="text-3xl block mb-1">{compareAnimal.emoji}</span>
-          <p className="font-display font-bold text-sm text-foreground leading-snug">{compareAnimal.name}</p>
+          <p className="font-body font-bold text-sm text-foreground leading-snug">{compareAnimal.name}</p>
         </div>
       </div>
 
       <div className="space-y-3 mb-4">
         {FIELDS.map(field => (
           <div key={field.key}>
-            <p className="text-xs font-display font-semibold text-muted-foreground mb-1.5">{field.label}</p>
+            <p className="text-xs font-body font-semibold text-muted-foreground mb-1.5">{field.label}</p>
             <div className="grid grid-cols-2 gap-2">
               <div className="bg-muted/50 rounded-lg px-2.5 py-2">
                 <p className="text-xs font-body text-foreground leading-snug">{animal.bio?.[field.key] || '-'}</p>
@@ -89,7 +89,7 @@ export default function AnimalCompare({ animal }) {
       </div>
 
       <button onClick={handleShare}
-        className="w-full bg-muted text-foreground font-display font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:bg-muted/70 transition-colors">
+        className="w-full bg-muted text-foreground font-body font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 hover:bg-muted/70 transition-colors">
         <Share2 className="w-3.5 h-3.5" /> Share this comparison
       </button>
     </div>

@@ -9,7 +9,7 @@ export default function AffiliateDisclosure({ children, className = '' }) {
           <Tag className="h-4 w-4" />
         </div>
         <div className="flex-1">
-          <div className="mb-1 text-xs font-display font-bold uppercase tracking-wider text-muted-foreground">
+          <div className="mb-1 text-xs font-body font-bold uppercase tracking-wider text-muted-foreground">
             Affiliate Disclosure
           </div>
           <div className="text-foreground font-body text-[15px] leading-relaxed">

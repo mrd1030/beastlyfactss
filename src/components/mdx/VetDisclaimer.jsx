@@ -9,7 +9,7 @@ export default function VetDisclaimer({ children, className = '' }) {
           <Stethoscope className="h-4 w-4" />
         </div>
         <div className="flex-1">
-          <div className="mb-1 text-xs font-display font-bold uppercase tracking-wider text-destructive">
+          <div className="mb-1 text-xs font-body font-bold uppercase tracking-wider text-destructive">
             Not Veterinary Advice
           </div>
           <div className="text-foreground font-body text-[15px] leading-relaxed">

@@ -26,7 +26,7 @@ export default function Footer() {
               Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
             </p>
             <div className="mt-4">
-              <DonateButton className="w-full font-display font-bold" />
+              <DonateButton className="w-full font-body font-bold" />
             </div>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
             }
           ].map((section) => (
             <div key={section.title}>
-              <h4 className="font-display font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-4">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-4">
                 {section.title}
               </h4>
               <nav className="flex flex-col gap-2.5">

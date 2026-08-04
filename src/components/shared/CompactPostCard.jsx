@@ -50,7 +50,7 @@ export default function CompactPostCard({ post, onClick }) {
       {/* Content */}
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-1.5 mb-1 flex-wrap">
-          <span className="text-xs font-display font-semibold text-secondary bg-secondary/10 px-1.5 py-0.5 rounded-full">
+          <span className="text-xs font-body font-semibold text-secondary bg-secondary/10 px-1.5 py-0.5 rounded-full">
             {category}
           </span>
         </div>

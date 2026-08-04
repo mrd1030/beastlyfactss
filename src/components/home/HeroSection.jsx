@@ -111,7 +111,7 @@ export default function HeroSection({ onOpenFact }) {
               above the fold and already in the HTML, so it should just be
               visible. */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-display font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
+            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
             </div>
@@ -133,7 +133,7 @@ export default function HeroSection({ onOpenFact }) {
                 to="/facts/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
+                className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
               >
                 Start with Verified Facts
                 <ArrowRight className="w-4 h-4" />
@@ -148,7 +148,7 @@ export default function HeroSection({ onOpenFact }) {
                 to="/encyclopedia/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-card/80 border border-border text-muted-foreground font-display font-bold text-sm py-3 px-6 rounded-xl"
+                className="bg-card/80 border border-border text-muted-foreground font-body font-bold text-sm py-3 px-6 rounded-xl"
               >
                 Browse the <span className="dark:text-secondary">Encyclopedia</span>
               </MotionLink>
@@ -169,7 +169,7 @@ export default function HeroSection({ onOpenFact }) {
           <div className="bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
-              <span className="font-display font-bold text-xs text-secondary">DAILY FACT</span>
+              <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
             </div>
             <p className="text-sm text-foreground font-body leading-relaxed">
               {`${dailyFact.emoji} `}
@@ -186,7 +186,7 @@ export default function HeroSection({ onOpenFact }) {
             {!learned ? (
               <button
                 onClick={handleLearned}
-                className="mt-3 text-xs font-display font-bold text-secondary hover:text-secondary/80 transition-colors"
+                className="mt-3 text-xs font-body font-bold text-secondary hover:text-secondary/80 transition-colors"
               >
                 ✨ I Learned Something!
               </button>
@@ -194,7 +194,7 @@ export default function HeroSection({ onOpenFact }) {
               <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                className="inline-block mt-3 text-xs font-display font-bold text-teal"
+                className="inline-block mt-3 text-xs font-body font-bold text-teal"
               >
                 🎉 +1 Brain Cell!
               </motion.span>

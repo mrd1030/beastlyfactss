@@ -85,7 +85,7 @@ export default function Beastlypedia() {
           <button
             type="button"
             onClick={() => selectGroup('All')}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-display font-bold border transition-colors ${
+            className={`px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
               activeGroup === 'All'
                 ? 'bg-secondary text-secondary-foreground border-secondary'
                 : 'bg-card text-muted-foreground border-border hover:border-secondary/40'
@@ -98,7 +98,7 @@ export default function Beastlypedia() {
               key={g.slug}
               type="button"
               onClick={() => selectGroup(g)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-display font-bold border transition-colors ${
+              className={`px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
                 activeGroup === g.name
                   ? 'bg-secondary text-secondary-foreground border-secondary'
                   : 'bg-card text-muted-foreground border-border hover:border-secondary/40'

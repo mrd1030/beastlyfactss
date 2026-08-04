@@ -162,7 +162,7 @@ export default function Guides() {
 
                   navigate(destination, { state: { returnTo: destination } });
                 }}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold transition-all ${
+                className={`flex-1 py-2 px-3 rounded-xl text-xs font-body font-bold transition-all ${
                   tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
@@ -196,7 +196,7 @@ export default function Guides() {
                   setActiveSubtype(null);
                   trackEvent('guides_category_filter_clicked', { category: f.label });
                 }}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all flex items-center gap-1.5 ${
                   activeFilter === f.label
                     ? 'bg-accent text-accent-foreground'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
@@ -213,7 +213,7 @@ export default function Guides() {
             <span className="text-xs font-body text-muted-foreground self-center pr-1">Size:</span>
             {dogSizes.map(s => (
               <button key={s} onClick={() => { setDogSize(s); setActiveSubtype(null); }}
-                className={`px-3 py-1 rounded-full text-xs font-display font-semibold transition-all ${dogSize === s ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
+                className={`px-3 py-1 rounded-full text-xs font-body font-semibold transition-all ${dogSize === s ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}>
                 {s}
               </button>
             ))}
@@ -245,7 +245,7 @@ export default function Guides() {
         {filteredGuides.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span>
-            <p className="font-display font-bold text-foreground">No guides found</p>
+            <p className="font-body font-bold text-foreground">No guides found</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -269,7 +269,7 @@ export default function Guides() {
             <DifficultyLegend />
             <button
               onClick={() => setIsLegendOpen(false)}
-              className="mt-4 w-full bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-display font-semibold transition-colors hover:opacity-90"
+              className="mt-4 w-full bg-secondary text-secondary-foreground px-4 py-2 rounded-xl font-body font-semibold transition-colors hover:opacity-90"
             >
               Close Window
             </button>
@@ -296,13 +296,13 @@ function GuideCard({ guide, index, onOpenLegend, returnTo }) {
           <div className="flex items-start justify-between mb-3">
             <span className="text-3xl">{guide.emoji}</span>
             <div className="flex items-center gap-1.5 flex-wrap justify-end">
-              {isBreedQuirk && <span className="text-xs font-display font-semibold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">Breed Quirks</span>}
+              {isBreedQuirk && <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-secondary/10 text-secondary">Breed Quirks</span>}
               {guide.sizeCategory && guide.sizeCategory !== 'All Sizes' && (
-                <span className="text-xs font-display font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{guide.sizeCategory}</span>
+                <span className="text-xs font-body font-semibold px-2 py-0.5 rounded-full bg-muted text-muted-foreground">{guide.sizeCategory}</span>
               )}
               <button
                 onClick={(e) => { e.preventDefault(); e.stopPropagation(); onOpenLegend(); }}
-                className={`text-xs font-display font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
+                className={`text-xs font-body font-semibold px-2 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
               >
                 {guide.difficulty}
               </button>
@@ -311,7 +311,7 @@ function GuideCard({ guide, index, onOpenLegend, returnTo }) {
           <h3 className="font-display font-bold text-base text-foreground mb-1 group-hover:text-secondary transition-colors">{guide.name}</h3>
           <p className="text-xs text-muted-foreground font-body mb-2">{guide.petType}</p>
           <p className="text-xs text-muted-foreground font-body leading-relaxed flex-1">{guide.tagline}</p>
-          <div className="flex items-center gap-1 mt-4 text-xs font-display font-semibold text-secondary">
+          <div className="flex items-center gap-1 mt-4 text-xs font-body font-semibold text-secondary">
             View full guide <ChevronRight className="w-3.5 h-3.5" />
           </div>
         </div>

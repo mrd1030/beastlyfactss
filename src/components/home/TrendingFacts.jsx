@@ -55,7 +55,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
             <p className="text-sm text-muted-foreground font-body mt-1">The wildest facts everyone's talking about</p>
           </div>
           <div className="hidden sm:flex items-center gap-4">
-            <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
+            <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
               Browse all facts <ArrowRight className="w-3.5 h-3.5" />
             </Link>
             <div className="flex gap-2">
@@ -82,7 +82,7 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/facts/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2">
+          <Link to="/facts/" className="inline-flex items-center gap-1 text-sm font-body font-bold text-secondary p-2 -m-2">
             Browse all facts <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

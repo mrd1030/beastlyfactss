@@ -44,10 +44,10 @@ export default function MoreBeastfiles({ ids }) {
               )}
             </div>
             <div className="p-2.5 flex-1">
-              <p className="text-[10px] font-display font-bold uppercase tracking-wide text-secondary">
+              <p className="text-[10px] font-body font-bold uppercase tracking-wide text-secondary">
                 {b.group}
               </p>
-              <p className="font-display font-bold text-sm text-foreground leading-snug group-hover:text-secondary transition-colors">
+              <p className="font-body font-bold text-sm text-foreground leading-snug group-hover:text-secondary transition-colors">
                 {b.name}
               </p>
               <p className="text-[11px] text-muted-foreground font-body leading-snug mt-0.5 line-clamp-2">

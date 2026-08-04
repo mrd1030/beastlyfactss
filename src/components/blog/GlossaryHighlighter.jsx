@@ -61,7 +61,7 @@ function buildHighlightNode(matchedText, info, navigate) {
   tooltip.setAttribute('role', 'tooltip');
   tooltip.className = 'pointer-events-none absolute left-0 bottom-full mb-1.5 z-20 hidden group-hover/gloss:block group-focus-within/gloss:block w-64 max-w-[80vw]';
   tooltip.innerHTML = `<span class="block bg-card border border-border rounded-xl shadow-lg px-3 py-2 text-xs leading-relaxed text-muted-foreground text-left">` +
-    `<span class="block font-display font-bold text-foreground mb-0.5">${escapeHtml(info.displayTerm)}</span>` +
+    `<span class="block font-body font-bold text-foreground mb-0.5">${escapeHtml(info.displayTerm)}</span>` +
     `${escapeHtml(info.definition)}` +
     `<span class="block mt-1 text-[10px] font-semibold text-secondary">View in Glossary →</span>` +
     `</span>`;

@@ -31,20 +31,20 @@ export default function PageNotFound() {
                     {cameFromSite && (
                         <button
                             onClick={() => navigate(-1)}
-                            className="flex items-center gap-1.5 border border-border text-foreground px-5 py-2.5 rounded-xl font-display font-semibold text-sm transition-colors hover:bg-muted"
+                            className="flex items-center gap-1.5 border border-border text-foreground px-5 py-2.5 rounded-xl font-body font-semibold text-sm transition-colors hover:bg-muted"
                         >
                             <ArrowLeft className="w-4 h-4" /> Go Back
                         </button>
                     )}
                     <Link
                         to="/"
-                        className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-xl font-display font-semibold text-sm transition-opacity hover:opacity-90"
+                        className="bg-secondary text-secondary-foreground px-5 py-2.5 rounded-xl font-body font-semibold text-sm transition-opacity hover:opacity-90"
                     >
                         Go Home
                     </Link>
                     <Link
                         to="/encyclopedia/"
-                        className="text-sm font-display font-semibold text-secondary hover:underline"
+                        className="text-sm font-body font-semibold text-secondary hover:underline"
                     >
                         Browse the Encyclopedia →
                     </Link>

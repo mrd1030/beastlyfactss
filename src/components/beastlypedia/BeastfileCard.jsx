@@ -37,7 +37,7 @@ export default function BeastfileCard({ beastfile }) {
           // looking finished when its hero has not been shot yet.
           <div className="w-full aspect-[4/3] bg-muted flex flex-col items-center justify-center gap-1 border-2 border-dashed border-border">
             <span className="text-2xl">📷</span>
-            <span className="text-[10px] font-display font-bold uppercase tracking-wider text-muted-foreground">
+            <span className="text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground">
               Hero image pending
             </span>
           </div>
@@ -51,7 +51,7 @@ export default function BeastfileCard({ beastfile }) {
       </p>
 
       {habitat && (
-        <span className="inline-flex items-center gap-1 mt-3 text-[10px] font-display font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-muted text-muted-foreground">
+        <span className="inline-flex items-center gap-1 mt-3 text-[10px] font-body font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-muted text-muted-foreground">
           <MapPin className="w-3 h-3" />
           {habitat}
         </span>

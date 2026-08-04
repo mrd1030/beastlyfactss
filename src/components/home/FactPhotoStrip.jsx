@@ -62,7 +62,7 @@ export default function FactPhotoStrip({ onOpenFact }) {
           <div className="hidden sm:flex items-center gap-4">
             <Link
               to="/gallery/"
-              className="flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
+              className="flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
             >
               Open the gallery <ArrowRight className="w-3.5 h-3.5" />
             </Link>
@@ -109,7 +109,7 @@ export default function FactPhotoStrip({ onOpenFact }) {
                 {/* Fixed black, not a theme token: this sits on a photo, and
                     bg-foreground would invert to a pale wash in dark mode. */}
                 <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-2 pt-6 pb-1.5">
-                  <span className="block text-[11px] font-display font-bold text-white truncate">
+                  <span className="block text-[11px] font-body font-bold text-white truncate">
                     {fact.animal}
                   </span>
                 </span>
@@ -124,7 +124,7 @@ export default function FactPhotoStrip({ onOpenFact }) {
         <div className="text-center mt-4 sm:hidden">
           <Link
             to="/gallery/"
-            className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2"
+            className="inline-flex items-center gap-1 text-sm font-body font-bold text-secondary p-2 -m-2"
           >
             Open the gallery <ArrowRight className="w-3.5 h-3.5" />
           </Link>

@@ -51,7 +51,7 @@ export default function FeaturedEvent() {
           )}
 
           <div className="min-w-0 flex-1">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-display font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-0.5 rounded-full mb-2">
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-body font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-0.5 rounded-full mb-2">
               <span aria-hidden="true">{event.emoji}</span>{event.name}
             </span>
             <h2 className="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-secondary transition-colors line-clamp-2">
@@ -62,7 +62,7 @@ export default function FeaturedEvent() {
                 {event.blurb}
               </p>
             )}
-            <span className="inline-flex items-center gap-1 mt-2 text-xs font-display font-bold text-secondary">
+            <span className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary">
               Read it <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
             </span>
           </div>

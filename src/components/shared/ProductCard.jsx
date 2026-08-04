@@ -17,7 +17,7 @@ export default function ProductCard({ product, onSelect, className = '' }) {
         />
       )}
       <div className="min-w-0 flex flex-col">
-        <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
+        <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
           {product.product}
         </p>
         {(product.rating != null || product.price) && (
@@ -33,7 +33,7 @@ export default function ProductCard({ product, onSelect, className = '' }) {
             )}
           </div>
         )}
-        <div className="mt-auto pt-2 flex items-center gap-1 text-xs font-display font-semibold text-secondary">
+        <div className="mt-auto pt-2 flex items-center gap-1 text-xs font-body font-semibold text-secondary">
           <ShoppingCart className="w-3.5 h-3.5 flex-shrink-0" />
           {onSelect ? `See on ${retailerLabel}` : `Shop on ${retailerLabel}`}
         </div>

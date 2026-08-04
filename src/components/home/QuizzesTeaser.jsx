@@ -64,7 +64,7 @@ export default function QuizzesTeaser() {
                   <span className="text-4xl mb-3 block">{quiz.emoji}</span>
                   <h3 className={`font-display font-bold text-lg ${quiz.fg} mb-2 leading-snug`}>{quiz.title}</h3>
                   <p className={`text-xs ${quiz.fgMuted} font-body mb-4 leading-relaxed flex-1`}>{quiz.description}</p>
-                  <span className={`inline-flex items-center gap-1.5 text-sm font-display font-bold ${quiz.fg}`}>
+                  <span className={`inline-flex items-center gap-1.5 text-sm font-body font-bold ${quiz.fg}`}>
                     Play now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>

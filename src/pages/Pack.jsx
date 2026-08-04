@@ -68,7 +68,7 @@ export default function Pack() {
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-display font-bold text-xl text-foreground">🏆 Achievements</h2>
             {streak >= 2 && (
-              <span className="text-xs font-display font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
+              <span className="text-xs font-body font-bold text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
                 {`🔥 ${streak}-day streak`}
               </span>
             )}
@@ -89,7 +89,7 @@ export default function Pack() {
                   }`}
                 >
                   <span className="text-2xl block mb-1">{a.emoji}</span>
-                  <p className="text-[11px] font-display font-bold text-foreground leading-tight">{a.title}</p>
+                  <p className="text-[11px] font-body font-bold text-foreground leading-tight">{a.title}</p>
                 </button>
               );
             })}
@@ -189,7 +189,7 @@ export default function Pack() {
               {/* Share Button */}
               <button
                 onClick={handleShareQuiz}
-                className="flex items-center gap-1.5 text-xs font-display font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+                className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
               >
                 <Share2 className="w-3.5 h-3.5" /> Share
               </button>
@@ -207,7 +207,7 @@ export default function Pack() {
       <button
         onClick={() => setShowAllQuizzes(v => !v)}
         aria-expanded={showAllQuizzes}
-        className="mt-4 w-full flex items-center justify-center gap-1.5 text-xs font-display font-bold py-2.5 rounded-xl border border-border bg-card hover:bg-accent text-foreground transition-colors"
+        className="mt-4 w-full flex items-center justify-center gap-1.5 text-xs font-body font-bold py-2.5 rounded-xl border border-border bg-card hover:bg-accent text-foreground transition-colors"
       >
         {showAllQuizzes
           ? <>Show fewer <ChevronUp className="w-3.5 h-3.5" /></>
@@ -245,7 +245,7 @@ export default function Pack() {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl inline-flex items-center gap-2"
+                className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-6 rounded-xl inline-flex items-center gap-2"
               >
                 <Heart className="w-4 h-4" />
                 Browse Facts

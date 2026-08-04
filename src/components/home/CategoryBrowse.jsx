@@ -126,7 +126,7 @@ export default function CategoryBrowse() {
                 key={label}
                 type="button"
                 onClick={() => handleSelect(label)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-display font-semibold border transition-colors ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-body font-semibold border transition-colors ${
                   isActive
                     ? 'bg-secondary text-secondary-foreground border-secondary'
                     : 'bg-card border-border text-foreground hover:border-secondary/40'
@@ -142,20 +142,20 @@ export default function CategoryBrowse() {
               visually marked with an arrow to signal the difference. */}
           <Link
             to="/guides/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-body font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             Guides <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
             to="/encyclopedia/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-body font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             Encyclopedia <ArrowRight className="w-3.5 h-3.5" />
           </Link>
 
           <Link
             to="/blog/"
-            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-display font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
+            className="flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-body font-semibold border border-dashed border-border text-muted-foreground hover:text-secondary hover:border-secondary/40 transition-colors"
           >
             More Articles <ArrowRight className="w-3.5 h-3.5" />
           </Link>
@@ -177,7 +177,7 @@ export default function CategoryBrowse() {
               </h3>
               <Link
                 to={`/blog/category/${selectedSlug}/`}
-                className="flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
+                className="flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2"
               >
                 View More <ArrowRight className="w-3.5 h-3.5" />
               </Link>

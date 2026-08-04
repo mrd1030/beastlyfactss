@@ -19,7 +19,7 @@ import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 function BioField({ label, value }) {
   return (
     <div className="bg-muted/50 rounded-xl p-3">
-      <p className="text-xs font-display font-semibold text-muted-foreground mb-1">{label}</p>
+      <p className="text-xs font-body font-semibold text-muted-foreground mb-1">{label}</p>
       {value
         ? <p className="text-sm font-body text-foreground">{value}</p>
         : <p className="text-sm font-body text-muted-foreground italic">Coming soon</p>
@@ -59,7 +59,7 @@ export default function EncyclopediaAnimal() {
         <div className="text-center">
           <span className="text-4xl block mb-3">🔍</span>
           <h2 className="font-display font-bold text-xl text-foreground mb-2">Animal not found</h2>
-          <Link to="/encyclopedia/" className="text-secondary text-sm font-display font-semibold hover:underline">
+          <Link to="/encyclopedia/" className="text-secondary text-sm font-body font-semibold hover:underline">
             Browse the encyclopedia →
           </Link>
         </div>
@@ -119,7 +119,7 @@ export default function EncyclopediaAnimal() {
         <button
           type="button"
           onClick={handleBack}
-          className="inline-flex items-center gap-1.5 text-sm font-display font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
+          className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4"
         >
           <ArrowLeft className="w-4 h-4" /> Back to Encyclopedia
         </button>
@@ -134,10 +134,10 @@ export default function EncyclopediaAnimal() {
               </h1>
               <p className="text-sm text-muted-foreground font-body italic mt-0.5">{animal.scientific}</p>
               <div className="flex items-center gap-2 mt-2">
-                <span className="text-xs font-display font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
+                <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
                   {animal.category}
                 </span>
-                <span className={`text-xs font-display font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
+                <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
                   {`${animal.difficulty} care`}
                 </span>
               </div>
@@ -200,14 +200,14 @@ export default function EncyclopediaAnimal() {
                 <div className="space-y-3">
                   {relatedFacts.map(fact => (
                     <div key={fact.id} className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
-                      <p className="text-xs font-display font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
+                      <p className="text-xs font-body font-bold text-secondary mb-1">{`${fact.emoji} ${fact.title}`}</p>
                       <p className="text-sm font-body text-foreground leading-relaxed">{fact.fact}</p>
                     </div>
                   ))}
                 </div>
                 <Link
                   to="/facts/"
-                  className="inline-flex items-center gap-1 mt-2 text-xs font-display font-semibold text-secondary hover:underline p-2 -mx-2 -mb-2"
+                  className="inline-flex items-center gap-1 mt-2 text-xs font-body font-semibold text-secondary hover:underline p-2 -mx-2 -mb-2"
                 >
                   Browse all animal facts <ChevronRight className="w-3.5 h-3.5" />
                 </Link>
@@ -221,20 +221,20 @@ export default function EncyclopediaAnimal() {
             {/* Guide CTA */}
             {guide && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📖 Care Guide
                 </p>
                 <Link to={`/guides/${guide.id}/`} state={{ returnTo: location.state?.returnTo || '/encyclopedia/' }} className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
                     <div>
-                      <p className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
+                      <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {guide.name} Care Guide
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed">{guide.tagline}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-display font-semibold text-secondary">
+                  <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
                     View full guide <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
@@ -251,13 +251,13 @@ export default function EncyclopediaAnimal() {
             {/* Related deep-dive articles */}
             {relatedArticles.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                   📰 Deep Dive
                 </p>
                 <div className="space-y-3">
                   {relatedArticles.map(article => (
                     <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
-                      <p className="text-xs font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>
                     </Link>
@@ -269,7 +269,7 @@ export default function EncyclopediaAnimal() {
             {/* Did you know */}
             {guide?.funFact && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-display font-bold text-secondary mb-2">🤓 Did You Know?</p>
+                <p className="text-xs font-body font-bold text-secondary mb-2">🤓 Did You Know?</p>
                 <p className="text-sm font-body text-foreground leading-relaxed">{guide.funFact}</p>
               </div>
             )}
@@ -277,13 +277,13 @@ export default function EncyclopediaAnimal() {
             {/* Related short story */}
             {animal.relatedStory && (
               <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
-                <p className="text-xs font-display font-bold text-secondary mb-2">📖 Short Story</p>
+                <p className="text-xs font-body font-bold text-secondary mb-2">📖 Short Story</p>
                 <p className="text-xs text-muted-foreground font-body mb-2">{`There's a whole fiction series about a ${animal.name.toLowerCase()}:`}</p>
                 <Link
                   to={seriesForSlug(animal.relatedStory.slug) ? chroniclesPath(seriesForSlug(animal.relatedStory.slug).id) : `/blog/${animal.relatedStory.slug}/`}
                   className="group block"
                 >
-                  <p className="text-sm font-display font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                  <p className="text-sm font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                     {animal.relatedStory.title}
                   </p>
                 </Link>
@@ -292,13 +292,13 @@ export default function EncyclopediaAnimal() {
 
             {/* Explore more */}
             <div className="bg-card border border-border rounded-2xl p-5">
-              <p className="text-xs font-display font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+              <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                 Explore More
               </p>
               <div className="space-y-2">
                 <Link
                   to={`/encyclopedia/category/${animal.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}/`}
-                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <BookOpen className="w-4 h-4 flex-shrink-0" />
                   {`All ${animal.category}`}
@@ -306,7 +306,7 @@ export default function EncyclopediaAnimal() {
                 </Link>
                 <Link
                   to="/facts/"
-                  className="flex items-center gap-2 text-sm font-display font-semibold text-foreground hover:text-secondary transition-colors py-1"
+                  className="flex items-center gap-2 text-sm font-body font-semibold text-foreground hover:text-secondary transition-colors py-1"
                 >
                   <span className="text-base">🤩</span>
                   Animal Fun Facts

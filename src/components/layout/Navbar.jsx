@@ -187,7 +187,7 @@ export default function Navbar() {
 
           {isChildRoute && (
             <div className="md:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none">
-              <span className="font-display font-bold text-sm text-foreground">Care Guide</span>
+              <span className="font-body font-bold text-sm text-foreground">Care Guide</span>
             </div>
           )}
 
@@ -224,13 +224,13 @@ export default function Navbar() {
             >
               <Search className="w-4 h-4 text-muted-foreground" />
             </button>
-            <DonateButton className="hidden md:flex h-8 text-xs px-3 font-display font-bold" />
+            <DonateButton className="hidden md:flex h-8 text-xs px-3 font-body font-bold" />
             {streak > 0 && (
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 title={`${streak}-day visit streak! Keep it up 🔥`}
-                className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-display font-bold text-xs px-2 py-1 rounded-full cursor-default"
+                className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-body font-bold text-xs px-2 py-1 rounded-full cursor-default"
               >
                 {`🔥 ${streak}`}
               </motion.div>
@@ -389,27 +389,27 @@ export default function Navbar() {
 
               <div className="grid grid-cols-2 gap-1.5 pt-3 mt-2 border-t border-border/60">
                 <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink text-xs font-display font-bold"
+                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink text-xs font-body font-bold"
                 >
                   <Instagram className="w-3.5 h-3.5" /> Instagram
                 </a>
                 <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-display font-bold"
+                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold"
                 >
                   <XLogo className="w-3.5 h-3.5" /> X
                 </a>
                 <a href="https://www.pinterest.com/beastlyfacts/" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-red-500/10 text-red-600 text-xs font-display font-bold"
+                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-red-500/10 text-red-600 text-xs font-body font-bold"
                 >
                   <PinterestLogo className="w-3.5 h-3.5" /> Pinterest
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61590767090597" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-blue-500/10 text-blue-600 text-xs font-display font-bold"
+                  className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-blue-500/10 text-blue-600 text-xs font-body font-bold"
                 >
                   <FacebookLogo className="w-3.5 h-3.5" /> Facebook
                 </a>
                 <a href="https://www.threads.net/@Beastly.Facts" target="_blank" rel="noopener noreferrer"
-                  className="col-span-2 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-display font-bold"
+                  className="col-span-2 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold"
                 >
                   <ThreadsLogo className="w-3.5 h-3.5" /> Threads
                 </a>

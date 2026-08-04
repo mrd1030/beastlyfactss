@@ -268,7 +268,7 @@ export default function Facts() {
               Mind-blowing facts that will make you say "wait, REALLY?!" 🤯
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
-              <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline p-1.5 -m-1.5">
+              <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline p-1.5 -m-1.5">
                 Want deeper dives? Browse our Fact Files →
               </Link>
             </div>
@@ -301,7 +301,7 @@ export default function Facts() {
                 key={cat}
                 to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
                 onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
                   activeCategory === cat
                     ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30'
@@ -335,7 +335,7 @@ export default function Facts() {
         <div ref={listRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {paginated.map((fact, i) => (
             <div key={fact.id || fact.factNumber} className="relative">
-              <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
+              <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-body font-bold px-1.5 py-0.5 rounded-md">
                 {`#${fact.factNumber}`}
               </span>
               <FactCard fact={fact} index={i} onOpen={handleOpenFact} onOpenImage={setImageFact} />
@@ -347,7 +347,7 @@ export default function Facts() {
         {displayFacts.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🔍</span> 
-            <p className="font-display font-bold text-foreground">No facts found!</p> 
+            <p className="font-body font-bold text-foreground">No facts found!</p> 
             <p className="text-sm text-muted-foreground font-body mt-1">Try a different search or category.</p> 
           </div>
         )}

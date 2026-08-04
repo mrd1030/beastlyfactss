@@ -54,7 +54,7 @@ export default function EncyclopediaTeaser() {
               {`Animal profiles for ${encyclopediaCategories.length} categories of reptiles, birds & more`}
             </p>
           </div>
-          <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
+          <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
             Browse all animals <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </motion.div>
@@ -88,7 +88,7 @@ export default function EncyclopediaTeaser() {
                     </span>
                   </div>
                   <div className="p-3 flex flex-col flex-1">
-                    <p className="text-base font-display font-bold text-foreground group-hover:text-secondary transition-colors mb-0.5">
+                    <p className="text-base font-body font-bold text-foreground group-hover:text-secondary transition-colors mb-0.5">
                       {cat.name}
                     </p>
                     <p className="text-xs text-muted-foreground font-body">
@@ -102,7 +102,7 @@ export default function EncyclopediaTeaser() {
         </div>
 
         <div className="text-center mt-5 sm:hidden">
-          <Link to="/encyclopedia/" className="inline-flex items-center gap-1 text-sm font-display font-bold text-secondary p-2 -m-2">
+          <Link to="/encyclopedia/" className="inline-flex items-center gap-1 text-sm font-body font-bold text-secondary p-2 -m-2">
             Browse all animals <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

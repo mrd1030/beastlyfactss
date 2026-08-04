@@ -228,7 +228,7 @@ export default function Gallery() {
               <button
                 key={cat}
                 onClick={() => handleCategoryChange(cat)}
-                className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
+                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
                   activeCategory === cat
                     ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30'
@@ -283,10 +283,10 @@ export default function Gallery() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
                     <div className="text-left">
-                      <p className="text-[10px] font-display font-bold uppercase tracking-wider text-white/70">
+                      <p className="text-[10px] font-body font-bold uppercase tracking-wider text-white/70">
                         {fact.category}
                       </p>
-                      <p className="text-xs font-display font-bold text-white leading-tight mt-0.5">
+                      <p className="text-xs font-body font-bold text-white leading-tight mt-0.5">
                         {fact.title}
                       </p>
                     </div>
@@ -331,7 +331,7 @@ export default function Gallery() {
             <span className="text-4xl block mb-3">{search ? '🔍' : '📷'}</span>
             {search ? (
               <>
-                <p className="font-display font-bold text-foreground">
+                <p className="font-body font-bold text-foreground">
                   {matchesIgnoringCategory > 0
                     ? `No ${activeCategory} photos match "${search}"`
                     : `No photos match "${search}"`}
@@ -345,7 +345,7 @@ export default function Gallery() {
                       <button
                         type="button"
                         onClick={() => handleCategoryChange('All')}
-                        className="font-display font-semibold text-secondary hover:underline"
+                        className="font-body font-semibold text-secondary hover:underline"
                       >
                         Search all categories →
                       </button>
@@ -356,14 +356,14 @@ export default function Gallery() {
                     // anyone can currently hit.
                     <>
                       Some matching facts have no photo yet.{' '}
-                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-display font-semibold text-secondary hover:underline">
+                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-body font-semibold text-secondary hover:underline">
                         Search all facts instead →
                       </Link>
                     </>
                   ) : (
                     <>
                       Nothing matches that yet.{' '}
-                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-display font-semibold text-secondary hover:underline">
+                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-body font-semibold text-secondary hover:underline">
                         Try searching all facts →
                       </Link>
                     </>
@@ -371,7 +371,7 @@ export default function Gallery() {
                 </p>
               </>
             ) : (
-              <p className="font-display font-bold text-foreground">No photos in this category yet!</p>
+              <p className="font-body font-bold text-foreground">No photos in this category yet!</p>
             )}
           </div>
         )}

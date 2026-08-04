@@ -93,7 +93,7 @@ function PersonalityQuiz() {
           </p>
           <div className="flex flex-wrap justify-center gap-2 mb-8">
             {result.traits.map(trait => (
-              <span key={trait} className="bg-secondary/10 text-secondary font-display font-semibold text-xs px-3 py-1.5 rounded-full">
+              <span key={trait} className="bg-secondary/10 text-secondary font-body font-semibold text-xs px-3 py-1.5 rounded-full">
                 {trait}
               </span>
             ))}
@@ -102,7 +102,7 @@ function PersonalityQuiz() {
           {/* UPDATED: Added Save to Pack button */}
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
-              className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
+              className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
               <Share2 className="w-4 h-4" /> Share Result
             </motion.button>
 
@@ -110,13 +110,13 @@ function PersonalityQuiz() {
               whileHover={{ scale: 1.03 }} 
               whileTap={{ scale: 0.97 }} 
               onClick={handleSaveToPack}
-              className={`font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 transition-all
+              className={`font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 transition-all
                 ${justSaved ? 'bg-emerald-500 text-white' : 'bg-card border border-border text-foreground hover:bg-secondary/10'}`}>
               {justSaved ? '✓ Saved!' : '❤️ Save to Beast Pack'}
             </motion.button>
 
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={restart}
-              className="bg-card border border-border text-foreground font-display font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
+              className="bg-card border border-border text-foreground font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2">
               <RotateCcw className="w-4 h-4" /> Retake
             </motion.button>
           </div>
@@ -139,7 +139,7 @@ function PersonalityQuiz() {
             {`Answer ${totalQ} fun questions and discover which animal matches your personality! 🐾 Are you a loyal golden retriever or a mysterious ball python?`}
           </p>
           <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep(1)}
-            className="bg-secondary text-secondary-foreground font-display font-bold text-sm py-3 px-8 rounded-xl inline-flex items-center gap-2 shadow-lg shadow-secondary/20">
+            className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-8 rounded-xl inline-flex items-center gap-2 shadow-lg shadow-secondary/20">
             Let's Go! <ArrowRight className="w-4 h-4" />
           </motion.button>
         </motion.div>
@@ -151,8 +151,8 @@ function PersonalityQuiz() {
     <div className="max-w-lg mx-auto py-8">
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
-          <span className="text-xs font-display font-bold text-muted-foreground">{`Question ${step} of ${totalQ}`}</span>
-          <span className="text-xs font-display font-bold text-secondary">{Math.round(progress)}%</span>
+          <span className="text-xs font-body font-bold text-muted-foreground">{`Question ${step} of ${totalQ}`}</span>
+          <span className="text-xs font-body font-bold text-secondary">{Math.round(progress)}%</span>
         </div>
         <div className="h-2 bg-muted rounded-full overflow-hidden">
           <motion.div className="h-full w-full bg-gradient-to-r from-secondary to-accent rounded-full origin-left"
@@ -257,7 +257,7 @@ function TriviaQuizSection() {
             ))}
           </div>
           <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep('quiz')}
-            className="bg-secondary text-secondary-foreground font-display font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
+            className="bg-secondary text-secondary-foreground font-body font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
             Start Quiz 🚀
           </motion.button>
         </motion.div>
@@ -294,11 +294,11 @@ function TriviaQuizSection() {
                   navigator.clipboard.writeText(text + ' ' + window.location.href);
                 }
               }}
-              className="bg-secondary text-secondary-foreground font-display font-bold text-sm px-6 py-3 rounded-2xl flex items-center gap-2">
+              className="bg-secondary text-secondary-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center gap-2">
               <Share2 className="w-4 h-4" /> Share Score
             </motion.button>
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
-              className="bg-card border border-border text-foreground font-display font-bold text-sm px-6 py-3 rounded-2xl flex items-center gap-2">
+              className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center gap-2">
               <RotateCcw className="w-4 h-4" /> Play Again
             </motion.button>
           </div>
@@ -311,7 +311,7 @@ function TriviaQuizSection() {
     <div className="max-w-xl mx-auto py-8">
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs font-body text-muted-foreground">{`Question ${currentIndex + 1} of ${TRIVIA_TOTAL}`}</span>
-        <span className="text-xs font-display font-bold text-secondary">{score} pts</span>
+        <span className="text-xs font-body font-bold text-secondary">{score} pts</span>
       </div>
       <div className="w-full bg-muted rounded-full h-2 mb-8 overflow-hidden">
         <motion.div className="bg-secondary h-2 w-full rounded-full origin-left"
@@ -350,14 +350,14 @@ function TriviaQuizSection() {
             {answered && (
               <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="overflow-hidden">
                 <div className={`rounded-2xl p-4 mb-6 border ${selected === question.correct ? 'bg-emerald-50 border-emerald-200 dark:bg-emerald-950 dark:border-emerald-800' : 'bg-amber-50 border-amber-200 dark:bg-amber-950 dark:border-amber-800'}`}>
-                  <p className="text-xs font-display font-bold text-muted-foreground mb-1">
+                  <p className="text-xs font-body font-bold text-muted-foreground mb-1">
                     {selected === question.correct ? '✅ Correct!' : '❌ Not quite!'}
                   </p>
                   <p className="text-sm font-body text-foreground leading-relaxed">{question.fact}</p>
                 </div>
                 <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
                   whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={handleNext}
-                  className="w-full bg-secondary text-secondary-foreground font-display font-bold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2">
+                  className="w-full bg-secondary text-secondary-foreground font-body font-bold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2">
                   {currentIndex + 1 >= TRIVIA_TOTAL ? '🏆 See Results' : 'Next Question'} <ChevronRight className="w-4 h-4" />
                 </motion.button>
               </motion.div>
@@ -400,7 +400,7 @@ const KnowledgeQuizTab = () => {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={() => setStarted(true)}
-            className="inline-flex items-center justify-center rounded-2xl bg-secondary px-8 py-3 text-sm font-display font-bold text-secondary-foreground shadow-lg shadow-secondary/20 transition-colors"
+            className="inline-flex items-center justify-center rounded-2xl bg-secondary px-8 py-3 text-sm font-body font-bold text-secondary-foreground shadow-lg shadow-secondary/20 transition-colors"
           >
             Start the Knowledge Quiz
           </motion.button>
@@ -476,7 +476,7 @@ export default function Quiz() {
               <Link
                 key={tab.id}
                 to={`/quiz/${tab.id}/`}
-                className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold transition-all text-center ${
+                className={`flex-1 py-2.5 px-3 rounded-xl text-xs font-body font-bold transition-all text-center ${
                   activeTab === tab.id
                     ? 'bg-card shadow-sm text-foreground'
                     : 'text-muted-foreground hover:text-foreground'

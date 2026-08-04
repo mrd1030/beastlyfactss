@@ -15,7 +15,7 @@ export default function CrossLinkCta({ to, label }) {
   return (
     <Link
       to={to}
-      className="group mt-4 inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2.5 font-display text-sm font-semibold text-foreground transition-all hover:border-secondary/50 hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+      className="group mt-4 inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2.5 font-body text-sm font-semibold text-foreground transition-all hover:border-secondary/50 hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
     >
       {label}
       <ArrowRight className="h-3.5 w-3.5 text-secondary transition-transform group-hover:translate-x-0.5" />
