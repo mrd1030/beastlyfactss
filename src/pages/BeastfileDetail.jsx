@@ -278,9 +278,16 @@ export default function BeastfileDetail() {
                             originals against the 36 used here, which is about a
                             thousand generated files for the other 221. */}
                         <span className="relative flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 rounded-xl overflow-hidden border border-border/60">
+                          {/* Described, not alt="". The button already carries
+                              an aria-label, which is why this was empty, but
+                              these are photographs of the animal rather than
+                              decoration: they belong in image search, and an
+                              audit counts an empty alt as a missing one. Same
+                              wording as Gallery and ImageLightbox use for the
+                              very same photo. */}
                           <LocalImage
                             src={f.image}
-                            alt=""
+                            alt={`${f.animal} - ${f.title}`}
                             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                             width={96}
                             height={96}
