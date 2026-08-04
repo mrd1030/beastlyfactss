@@ -54,8 +54,17 @@
 /category/cats/ /blog/category/cats/ 301
 /category/dogs /blog/category/dogs/ 301
 /category/dogs/ /blog/category/dogs/ 301
-/category/fun-facts /blog/category/fun-facts/ 301
-/category/fun-facts/ /blog/category/fun-facts/ 301
+# The Fun Facts category was retired: it held 20 short per-species listicles
+# and 4 long wild animal features, and both moved somewhere that fits. Nothing
+# is left in it, so /blog/category/fun-facts/ is no longer generated and would
+# 404. These two lines used to point straight at it.
+# Fact Files is the successor for the browsing intent - it is where the four
+# substantial ones went. No article URL changed, so only the category page
+# itself needs redirecting.
+/category/fun-facts /fact-files/ 301
+/category/fun-facts/ /fact-files/ 301
+/blog/category/fun-facts /fact-files/ 301
+/blog/category/fun-facts/ /fact-files/ 301
 /category/invertebrates /blog/category/invertebrates/ 301
 /category/invertebrates/ /blog/category/invertebrates/ 301
 /category/pet-care /blog/category/pet-care/ 301

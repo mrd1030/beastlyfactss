@@ -130,7 +130,9 @@ export const ANIMAL_EVENTS = [
     id: 'world-animal-day', name: 'World Animal Day', emoji: '🐾',
     month: 10, day: 4,
     animals: [],
-    categories: ['Wild Animals', 'Fun Facts'],
+    // 'Fun Facts' dropped when that category was retired - it now matches
+    // nothing, and the four features that were in it moved to Wild Animals.
+    categories: ['Wild Animals'],
     blurb: 'Every animal gets a turn today.',
   },
   {
