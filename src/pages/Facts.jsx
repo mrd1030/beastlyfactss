@@ -2,6 +2,7 @@ import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react'
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
+import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from '@/lib/motion-safe';
 import { Search, Shuffle } from 'lucide-react';
@@ -41,7 +42,29 @@ export default function Facts() {
   const [randomized, setRandomized] = useState(false);
   const [randomOrder, setRandomOrder] = useState([]);
 
+  // factNumber is assigned from the canonical file order BEFORE any shuffling,
+  // so the "#26" on a card means the same fact tomorrow as it does today.
   const allFacts = useMemo(() => facts.map((f, i) => ({ ...f, factNumber: i + 1 })), []);
+
+  // The default order rotates daily rather than being random per page load.
+  // Math.random() here would be a real bug, not just a preference: /facts/ is
+  // prerendered, so the static HTML would carry one order and the client would
+  // hydrate a different one - the structural mismatch seededShuffle.js was
+  // written to avoid. Seeding by the day keeps prerender and client agreeing,
+  // keeps ?page= stable while you are browsing, and still gives a repeat
+  // visitor a different first screen tomorrow.
+  //
+  // Seed starts fixed and upgrades after mount, the same as CategoryBrowse.jsx:
+  // this page is not rebuilt daily, so deriving the real day during the
+  // hydration-critical first render would mismatch whatever day the last
+  // deploy happened to build on.
+  const [daySeed, setDaySeed] = useState(1);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDaySeed(new Date().getDate());
+  }, []);
+
+  const dailyFacts = useMemo(() => seededShuffle(allFacts, daySeed), [allFacts, daySeed]);
   const allCategories = useMemo(() => ['All', ...categories.map(c => c.name)], []);
 
   // /facts/:slug is a direct link to one specific fact (used by the social
@@ -119,7 +142,7 @@ export default function Facts() {
   };
 
   const filtered = useMemo(() => {
-    return allFacts.filter(f => {
+    return dailyFacts.filter(f => {
       const matchesCategory = activeCategory === 'All' || f.category === activeCategory; 
       const matchesSearch = !search ||
         f.title.toLowerCase().includes(search.toLowerCase()) || 
@@ -127,7 +150,7 @@ export default function Facts() {
         f.fact.toLowerCase().includes(search.toLowerCase()); 
       return matchesCategory && matchesSearch; 
     });
-  }, [allFacts, search, activeCategory]);
+  }, [dailyFacts, search, activeCategory]);
 
   const displayFacts = useMemo(() => {
     if (randomized && randomOrder.length > 0) { 
