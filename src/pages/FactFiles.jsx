@@ -138,16 +138,28 @@ export default function FactFiles() {
               first screen entirely on a phone, where the sidebar stacks under
               the whole list. Up here they sit where /facts/ and /gallery/ put
               the same kind of link. */}
-          <div className="flex flex-wrap items-center gap-2">
-            <CrossLinkCta to="/beastlypedia/" label="Browse Beastlypedia" />
-            <CrossLinkCta to="/facts/" label="Browse all animal facts" />
+          <div className="mt-4 flex flex-wrap items-center gap-2">
+            <CrossLinkCta to="/beastlypedia/" label="Browse Beastlypedia" className="" />
+            <CrossLinkCta to="/facts/" label="Browse all animal facts" className="" />
           </div>
         </motion.div>
 
         {/* Same 2/3 + 1/3 split the Critter Digest listing uses, so the two read
-            as siblings. The rows carry the difference. */}
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+            as siblings. The rows carry the difference.
+
+            Three grid children rather than main + aside, because the group
+            filter has to sit in a different place at each breakpoint: above the
+            list on a phone, where a sidebar stacks underneath and a filter you
+            cannot reach until you have scrolled the whole list is useless, but
+            still top of the right column on desktop. One element, placed
+            explicitly, rather than a hidden duplicate at each breakpoint.
+
+            The third row is the trick that makes it work. The list is far taller
+            than the two sidebar panels, and a spanning item hands its leftover
+            height to the rows it spans, which would have pushed the lower panel
+            halfway down the page. The empty 1fr row soaks that up instead. */}
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:gap-y-6">
+          <div className="order-2 lg:order-none lg:col-span-2 lg:col-start-1 lg:row-span-3 lg:row-start-1">
             <div className="relative mb-5 max-w-md">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <input
@@ -205,28 +217,31 @@ export default function FactFiles() {
             )}
           </div>
 
-          <aside className="space-y-6">
-            <div className="rounded-xl border border-border bg-card p-4">
-              <h2 className="mb-3 font-display text-sm font-bold text-foreground">Browse by group</h2>
-              <div className="flex flex-wrap gap-2">
-                {[['All', ALL_FILES.length], ...GROUPS].map(([name, count]) => (
-                  <button
-                    key={name}
-                    type="button"
-                    onClick={() => reset(() => setGroup(name))}
-                    aria-pressed={group === name}
-                    className={`rounded-full px-3 py-1.5 font-body text-xs font-semibold transition-all ${
-                      group === name
-                        ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
-                        : 'border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-foreground'
-                    }`}
-                  >
-                    {name} <span className="opacity-60">{count}</span>
-                  </button>
-                ))}
-              </div>
+          {/* First on a phone, top of the right column on desktop. */}
+          <div className="order-1 rounded-xl border border-border bg-card p-4 lg:order-none lg:col-start-3 lg:row-start-1">
+            <h2 className="mb-3 font-display text-sm font-bold text-foreground">Browse by group</h2>
+            <div className="flex flex-wrap gap-2">
+              {[['All', ALL_FILES.length], ...GROUPS].map(([name, count]) => (
+                <button
+                  key={name}
+                  type="button"
+                  onClick={() => reset(() => setGroup(name))}
+                  aria-pressed={group === name}
+                  className={`rounded-full px-3 py-1.5 font-body text-xs font-semibold transition-all ${
+                    group === name
+                      ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
+                      : 'border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-foreground'
+                  }`}
+                >
+                  {name} <span className="opacity-60">{count}</span>
+                </button>
+              ))}
             </div>
+          </div>
 
+          {/* Reference material, not a control: stays below the list on a
+              phone, under the group filter on desktop. */}
+          <aside className="order-3 space-y-6 lg:order-none lg:col-start-3 lg:row-start-2">
             <div className="rounded-xl border border-border bg-card p-4">
               <h2 className="mb-1 font-display text-sm font-bold text-foreground">What these are</h2>
               <p className="font-body text-xs leading-relaxed text-muted-foreground">
