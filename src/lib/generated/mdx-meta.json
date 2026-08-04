@@ -28,7 +28,12 @@
     "lastReviewed": "2026-06-19",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/a-rhino-horn-is-made-of-keratin.mdx",
@@ -57,7 +62,12 @@
     "lastReviewed": "2026-08-05",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Rhino",
+    "myth": "Rhino horn is ivory, like an elephant tusk.",
+    "truth": "It is compacted keratin, the same protein as fingernails, and the medicine trade built on it is selling people their own hair.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/ackie-milksnake-mhc-angelfish-overview.mdx",
@@ -103,7 +113,12 @@
         "a": "No. Angelfish are cichlids, and an adult will eat small fish like neon tetras and guppies once it reaches roughly 3 inches, even fish it was raised alongside as a juvenile. Peaceful coexistence at a young age predicts nothing about what happens once the fish matures."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/ackie-monitor-cost-guide.mdx",
@@ -159,7 +174,12 @@
       "high-wattage-basking-bulb-250w",
       "ackie-enclosure-reptile-habitats-48x24x48-pvc",
       "ackie-substrate-bio-dude-terra-sahara-36qt"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ackie-monitor-handling-guide.mdx",
@@ -208,7 +228,12 @@
         "a": "Not because the temperament itself is difficult, tame ackies are genuinely interactive, but because the husbandry demands that come with supporting an active, intelligent predator, real space, enrichment, and specific heat and burrowing needs, are considerably higher than a beginner reptile setup."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ackie-monitor-health-issues-guide.mdx",
@@ -262,7 +287,12 @@
       "infrared-temp-gun",
       "uvb-arcadia-desert-12",
       "high-wattage-basking-bulb-250w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ackie-monitor-tank-setup-guide.mdx",
@@ -318,7 +348,12 @@
       "high-wattage-basking-bulb-250w",
       "ackie-enclosure-reptile-habitats-48x24x48-pvc",
       "ackie-substrate-bio-dude-terra-sahara-36qt"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
@@ -369,7 +404,12 @@
       "dimming-thermostat-reptizoo-pid",
       "hide-exo-terra-gecko-cave-medium",
       "calcium-repashy-plus-6oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-fat-tail-feeding-guide.mdx",
@@ -427,7 +467,12 @@
     "relatedProducts": [
       "calcium-repashy-plus-6oz",
       "feeding-tongs-lasnten-long-rubber-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/african-fat-tail-handling-guide.mdx",
@@ -473,7 +518,12 @@
         "a": "Yes. Like most geckos, a fat-tail will drop its tail if grabbed roughly or badly frightened, so never grab or restrain the tail. The regrown tail comes back looking different, smoother and more bulbous than the original, but it does regrow."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-fat-tail-health-issues-guide.mdx",
@@ -529,7 +579,12 @@
       "dimming-thermostat-reptizoo-pid",
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "calcium-repashy-plus-6oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-fat-tail-tank-setup-guide.mdx",
@@ -588,7 +643,12 @@
       "infrared-temp-gun",
       "shallow-water-dish",
       "uvb-zoo-med-5-0-t5-ho-14in-hood"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/african-grey-parrot-cost-guide.mdx",
@@ -648,7 +708,12 @@
       "bird-food-roudybush-daily-mini-44oz",
       "bird-perches",
       "african-grey-parrot-digital-gram-scale"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-grey-parrot-handling-guide.mdx",
@@ -702,7 +767,12 @@
         "a": "African greys are considerably more cognitively demanding and more prone to stress-driven feather plucking specifically. Smaller parrots like budgies, cockatiels, and conures are generally more forgiving of an owner's schedule and less likely to develop this particular issue."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-grey-parrot-health-issues-guide.mdx",
@@ -759,7 +829,12 @@
     "relatedProducts": [
       "bird-food-harrisons-high-potency-fine-1lb",
       "african-grey-parrot-digital-gram-scale"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/african-grey-parrot-legal-guide.mdx",
@@ -812,7 +887,12 @@
         "a": "No, and this is worth understanding for any exotic pet, not just this one. A CITES listing governs international trade, not domestic possession. Whether you can own a given species comes down to federal import law and your own state's rules, not the CITES appendix number alone."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/african-grey-parrot-tank-setup-guide.mdx",
@@ -869,7 +949,12 @@
       "bird-flight-cage-large",
       "bird-perches",
       "bird-toy-kyouki-foraging-box"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/alpha-wolf-myth-what-the-research-actually-says.mdx",
@@ -898,7 +983,12 @@
     "lastReviewed": "2026-07-19",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Wolf",
+    "myth": "Wolf packs are ruled by an alpha that fought its way to the top.",
+    "truth": "A wild pack is a family, and the parents lead it. The alpha came from unrelated wolves forced together in a zoo pen.",
+    "sourceCount": 11
   },
   {
     "path": "/content/guides/angelfish-cost-guide.mdx",
@@ -959,7 +1049,12 @@
       "submersible-aquarium-heater",
       "angelfish-tank-tetra-55-gallon",
       "angelfish-medication-seachem-metroplex"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/angelfish-feeding-guide.mdx",
@@ -1014,7 +1109,12 @@
         "a": "A specific stomach parasite common in cichlids, the family angelfish belong to, can cause a fish to keep eating voraciously while still losing significant weight and developing a sunken belly. Appetite alone isn't a reliable health check for this species."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/angelfish-handling-guide.mdx",
@@ -1064,7 +1164,12 @@
         "a": "Assuming a young angelfish's peaceful behavior will hold steady as it grows, housing them with nano fish, dwarf shrimp, or other small easily-eaten tankmates, adding angelfish early in a new community tank instead of introducing them last, and keeping them in strong current, which this relatively weak-swimming species doesn't handle well."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/angelfish-health-issues-guide.mdx",
@@ -1118,7 +1223,12 @@
       "water-test-kit",
       "submersible-aquarium-heater",
       "angelfish-medication-seachem-metroplex"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/angelfish-tank-setup-guide.mdx",
@@ -1178,7 +1288,12 @@
       "water-test-kit",
       "submersible-aquarium-heater",
       "angelfish-tank-tetra-55-gallon"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/argentine-tegu-cost-guide.mdx",
@@ -1238,7 +1353,12 @@
       "argentine-tegu-thermostat-heavy-duty",
       "automatic-misting-system-fogger",
       "substrate-tarantula-coconut-fiber-peat"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/argentine-tegu-handling-guide.mdx",
@@ -1292,7 +1412,12 @@
         "a": "No, Colombian tegus generally don't brumate the way Argentine tegus do, worth knowing if you're comparing the two species."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/argentine-tegu-health-issues-guide.mdx",
@@ -1346,7 +1471,12 @@
         "a": "Weak UVB and calcium cause MBD, poor temperature or humidity control causes respiratory infection, and continuing a juvenile feeding schedule into adulthood causes the obesity that's genuinely common in this species. Getting the large scale setup right and adjusting diet as your tegu matures both matter more here than with almost any smaller lizard on this site."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/argentine-tegu-legal-guide.mdx",
@@ -1399,7 +1529,12 @@
         "a": "Yes, indirectly. With Florida's commercial breeding pipeline now closed off and the acquisition ban in place, prospective Florida owners have no legal path to a new pet tegu. Elsewhere, sourcing follows the same captive-bred-is-better guidance covered in our cost guide."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/argentine-tegu-tank-setup-guide.mdx",
@@ -1459,7 +1594,12 @@
       "argentine-tegu-thermostat-heavy-duty",
       "automatic-misting-system-fogger",
       "substrate-tarantula-coconut-fiber-peat"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/axolotl-cost-guide.mdx",
@@ -1513,7 +1653,12 @@
       "water-conditioner",
       "digital-thermometer-hygrometer-combo",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/axolotl-handling-guide.mdx",
@@ -1559,7 +1704,12 @@
         "a": "Their skin is scaleless and lacks the protective slime coat fish rely on, their external gills are delicate feathery structures that can snag or tear, and their skeleton is largely cartilage rather than solid bone. All of that adds up to an animal that's easy to injure without meaning to."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/axolotl-health-issues-guide.mdx",
@@ -1610,7 +1760,12 @@
       "water-conditioner",
       "water-test-kit",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/axolotl-legal-guide.mdx",
@@ -1663,7 +1818,12 @@
         "a": "The restrictions that exist are ecological, not conservation-driven. Regulators are concerned about hybridization with native Ambystoma salamanders, the risk of invasive establishment if released, and disease transmission, particularly the chytrid fungus. California's detrimental-species framing captures this concern directly."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/axolotl-tank-setup-guide.mdx",
@@ -1717,7 +1877,12 @@
       "water-test-kit",
       "sponge-filter",
       "soft-pellets-axolotl"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ball-python-cost-guide.mdx",
@@ -1769,7 +1934,12 @@
       "digital-thermometer-hygrometer-combo",
       "cypress-mulch-substrate",
       "large-soakable-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ball-python-feeding-guide.mdx",
@@ -1824,7 +1994,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "cork-bark-round-hide"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ball-python-handling-guide.mdx",
@@ -1870,7 +2045,12 @@
         "a": "Rarely. It's typically a feeding response, the snake smells food on your hands, or a startled defensive reaction, not a temperament issue. Bites are minor, generally just a small skin break, treated with soap and water. Use tongs when feeding and avoid handling right after handling rodents."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/ball-python-health-issues-guide.mdx",
@@ -1921,7 +2101,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "fine-mist-spray-bottle",
       "sphagnum-moss"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/ball-python-legal-guide.mdx",
@@ -1962,7 +2147,12 @@
         "a": "No. Florida's Reptiles of Concern list names the same large invasive species as federal law, Burmese and African pythons among them, and explicitly does not include ball pythons."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ball-python-tank-setup-guide.mdx",
@@ -2014,7 +2204,12 @@
       "digital-thermometer-hygrometer-combo",
       "cypress-mulch-substrate",
       "sphagnum-moss"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ball-python-vs-corn-snake-guide.mdx",
@@ -2069,7 +2264,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/bearded-dragon-cost-guide.mdx",
@@ -2120,7 +2320,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo",
       "infrared-temp-gun"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/bearded-dragon-feeding-guide.mdx",
@@ -2179,7 +2384,12 @@
     "relatedProducts": [
       "calcium-repashy-superfoods-plus-4oz",
       "feeding-tongs-lasnten-long-rubber-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/bearded-dragon-handling-guide.mdx",
@@ -2225,7 +2435,12 @@
         "a": "A darkening or black beard is a stress or agitation signal, along with body flattening, puffing up, open-mouth gaping, and arm-waving. None of these are dangerous on their own, but they mean the handling session is over."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/bearded-dragon-health-issues-guide.mdx",
@@ -2274,7 +2489,12 @@
     "relatedProducts": [
       "arcadia-t5-uvb-36in-14pct-dragon",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/bearded-dragon-tank-setup-guide.mdx",
@@ -2326,7 +2546,12 @@
       "cork-bark-round-hide",
       "climbing-branch-mopani-wood",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/bearded-dragon-vs-leopard-gecko-guide.mdx",
@@ -2383,7 +2608,12 @@
       "uvb-arcadia-forest-6",
       "pvc-enclosure-4x2x2",
       "dubia-roaches-bag"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/betta-fish-cost-guide.mdx",
@@ -2434,7 +2664,12 @@
       "sponge-filter",
       "water-conditioner",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/betta-fish-feeding-guide.mdx",
@@ -2489,7 +2724,12 @@
         "a": "Bread, onion, garlic, salt, sugary foods, processed meats like hot dogs or lunch meat, citrus, and dairy. General tropical flakes and goldfish pellets aren't appropriate as a primary diet either, a betta is an obligate carnivore and needs a betta-specific high-protein pellet."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/betta-fish-handling-guide.mdx",
@@ -2535,7 +2775,12 @@
         "a": "Lethargy, fins clamped tightly against the body, faded color, loss of appetite, hiding, and rapid gill movement. Almost all of these trace back to poor water quality or a temperature that's drifted out of range, not to anything you did by hand."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/betta-fish-health-issues-guide.mdx",
@@ -2585,7 +2830,12 @@
       "submersible-aquarium-heater",
       "water-conditioner",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/betta-fish-tank-setup-guide.mdx",
@@ -2636,7 +2886,12 @@
       "sponge-filter",
       "water-conditioner",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/betta-fish-vs-goldfish-guide.mdx",
@@ -2693,7 +2948,12 @@
       "sponge-filter",
       "tank-20-gallon-long",
       "canister-filter"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/betta-fish-water-parameters-guide.mdx",
@@ -2749,7 +3009,12 @@
       "water-test-kit",
       "api-tap-water-conditioner",
       "submersible-aquarium-heater"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/bioactive-setups-bearded-dragons.mdx",
@@ -2807,7 +3072,12 @@
       "bioactive-substrate-mix",
       "sphagnum-moss",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
@@ -2863,7 +3133,12 @@
       "basking-dome-fixture",
       "digital-thermometer-hygrometer-combo",
       "calcium-miner-all-indoor-2pack"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/blue-tongue-skink-feeding-guide.mdx",
@@ -2921,7 +3196,12 @@
     ],
     "relatedProducts": [
       "calcium-repashy-superfoods-plus-4oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/blue-tongue-skink-handling-guide.mdx",
@@ -2970,7 +3250,12 @@
         "a": "Handling too soon, before the skink has acclimated. Petting or touching the head repeatedly, many skinks become defensive specifically when the head is touched. And mistaking a food-motivated lunge, they're enthusiastic, food-driven eaters, for actual aggression."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/blue-tongue-skink-health-issues-guide.mdx",
@@ -3026,7 +3311,12 @@
       "digital-thermometer-hygrometer-combo",
       "substrate-tarantula-coconut-fiber-peat",
       "large-soakable-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/blue-tongue-skink-tank-setup-guide.mdx",
@@ -3083,7 +3373,12 @@
       "substrate-tarantula-coconut-fiber-peat",
       "large-soakable-water-dish",
       "cork-bark-round-hide"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/boa-constrictor-cost-guide.mdx",
@@ -3140,7 +3435,12 @@
       "large-soakable-water-dish",
       "cypress-mulch-substrate",
       "thermometer-hygrometer-exo-terra-led-bundle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/boa-constrictor-handling-guide.mdx",
@@ -3190,7 +3490,12 @@
         "a": "Keepers sometimes describe a boa as a large ball python that actually eats reliably. Compared to ball pythons, boas are bigger, more food-motivated, and confident, and need meaningfully more enclosure space as adults, which is exactly why they're generally classed as an intermediate snake rather than a true beginner one, even though their temperament is often calm."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/boa-constrictor-health-issues-guide.mdx",
@@ -3245,7 +3550,12 @@
       "thermometer-hygrometer-exo-terra-led-bundle",
       "cypress-mulch-substrate",
       "ceramic-heat-emitter-zoo-med-repticare-150w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/boa-constrictor-legal-guide.mdx",
@@ -3298,7 +3608,12 @@
         "a": "Not fully confirmed. Secondary sources report post-2020 Florida rule changes adding some boa species to permit or microchip requirements, but this hasn't been verified against a primary FWC source. If you're in Florida, check the current FWC Prohibited and Conditional species lists directly before relying on any secondhand summary, including this one."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/boa-constrictor-tank-setup-guide.mdx",
@@ -3356,7 +3671,12 @@
       "large-soakable-water-dish",
       "cypress-mulch-substrate",
       "thermometer-hygrometer-exo-terra-led-bundle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/boa-glider-mantis-tetra-overview.mdx",
@@ -3406,7 +3726,12 @@
         "a": "The praying mantis, by a wide margin. Most commonly kept species live just 6 to 12 months total, genuinely closer in commitment length to a garden project than to any of the other three pets here, several of which are measured in decades or years rather than months."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/box-turtle-cost-guide.mdx",
@@ -3465,7 +3790,12 @@
       "uvb-arcadia-forest-6",
       "substrate-tarantula-coconut-fiber-peat",
       "large-soakable-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/box-turtle-handling-guide.mdx",
@@ -3519,7 +3849,12 @@
         "a": "Yes, many box turtles do come to associate their keeper with food specifically, and will approach or even feed directly from your hand. This is really the ideal relationship to build with this species, interaction on the turtle's terms."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/box-turtle-health-issues-guide.mdx",
@@ -3573,7 +3908,12 @@
         "a": "Because box turtles hide illness so effectively, an annual wellness exam with a reptile-experienced vet is genuinely worth doing even when your turtle seems completely healthy, catching a developing problem early, especially the vitamin A and respiratory infection combination, makes a real difference in outcome."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/box-turtle-legal-guide.mdx",
@@ -3614,7 +3954,12 @@
         "a": "Box turtles don't reach sexual maturity until 8 to 10 years old and lay only a handful of eggs per year, with few hatchlings surviving to adulthood. Wildlife agencies note that removing even a few adults from a wild population can suppress it for decades, if it recovers at all."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/box-turtle-tank-setup-guide.mdx",
@@ -3675,7 +4020,12 @@
       "basking-dome-fixture",
       "substrate-tarantula-coconut-fiber-peat",
       "large-soakable-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/budgie-cere-color-guide.mdx",
@@ -3726,7 +4076,12 @@
         "a": "Yes. Hormonal state is the main driver of cere changes in females specifically, and overall health and hormone balance can influence cere texture and color intensity in both sexes over time, which is part of why sudden or unusual changes are worth paying attention to."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/budgie-cost-guide.mdx",
@@ -3777,7 +4132,12 @@
       "bird-perches",
       "bird-feeding-dishes-okllen-4pack",
       "bird-food-zupreem-fruitblend-parakeet-2lb"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/budgie-handling-guide.mdx",
@@ -3825,7 +4185,12 @@
     ],
     "relatedProducts": [
       "bird-treat-kaytee-spray-millet-7oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/budgie-health-issues-guide.mdx",
@@ -3874,7 +4239,12 @@
     "relatedProducts": [
       "bird-food-zupreem-fruitblend-parakeet-2lb",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/budgie-tank-setup-guide.mdx",
@@ -3925,7 +4295,12 @@
       "bird-perches",
       "bird-feeding-dishes-okllen-4pack",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/budgie-vs-cockatiel-guide.mdx",
@@ -3977,7 +4352,12 @@
         "a": "Cockatiels do. They're roughly twice the length of a budgie and need proportionally larger cage dimensions and bar spacing. A cage sized for a budgie is too small for a cockatiel."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/california-kingsnake-cost-guide.mdx",
@@ -4036,7 +4416,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "aspen-shavings-substrate",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/california-kingsnake-handling-guide.mdx",
@@ -4090,7 +4475,12 @@
         "a": "Both are hardy, easy-to-handle beginner colubrids. The real difference is diet, corn snakes aren't dedicated snake-eaters, which is exactly why the kingsnake's absolute solo-housing rule doesn't apply in the same way to its corn snake cousin."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/california-kingsnake-health-issues-guide.mdx",
@@ -4144,7 +4534,12 @@
         "a": "Not inherently. The vast majority of health problems in captive kingsnakes trace directly to incorrect temperatures, inadequate humidity, dirty conditions, or improper feeding, not genetic susceptibility. Getting the basics right prevents nearly everything on this list before it starts."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/california-kingsnake-tank-setup-guide.mdx",
@@ -4203,7 +4598,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "aspen-shavings-substrate",
       "cork-bark-round-hide"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/canary-cost-guide.mdx",
@@ -4262,7 +4662,12 @@
       "bird-perches",
       "bird-cuttlebone-penn-plax-2ct",
       "canary-shallow-bird-bath"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/canary-handling-guide.mdx",
@@ -4316,7 +4721,12 @@
         "a": "Proximity and observation rather than direct handling. Canaries enjoy being near the family and included in the household's daily rhythm, but they dislike constant commotion and direct handling attempts."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/canary-health-issues-guide.mdx",
@@ -4370,7 +4780,12 @@
         "a": "A canary that stops singing, shows fluffed or dull feathers, or becomes generally lethargic is signaling something's wrong, well before more specific symptoms might appear. Given how many of this species' issues trace back to mites and air quality, both genuinely preventable, paying attention to these early, general signs matters more than waiting for a specific symptom to confirm what's going on."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/canary-tank-setup-guide.mdx",
@@ -4428,7 +4843,12 @@
       "bird-flight-cage-large",
       "bird-perches",
       "canary-shallow-bird-bath"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -4481,7 +4901,12 @@
     ],
     "relatedProducts": [
       "deshedding-brush"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cats-invented-the-meow-for-humans.mdx",
@@ -4510,7 +4935,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/chameleon-hydration-drippers-misters-fogging.mdx",
@@ -4565,7 +4995,12 @@
     "relatedProducts": [
       "automatic-misting-system-fogger",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/chameleons-do-not-change-color-to-match-their-background.mdx",
@@ -4598,7 +5033,12 @@
     "lastReviewed": "2026-08-08",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Chameleon",
+    "myth": "Chameleons change colour to blend into their surroundings.",
+    "truth": "Put one on a chessboard and nothing happens. The colour signals mood and temperature, not the background.",
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/chinchilla-cost-guide.mdx",
@@ -4653,7 +5093,12 @@
       "small-pet-paper-bedding",
       "small-pet-hideout-igloo",
       "small-mammal-bowl-kaytee-vege-t-bowl"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/chinchilla-feeding-guide.mdx",
@@ -4712,7 +5157,12 @@
     "relatedProducts": [
       "chinchilla-pellets-oxbow-essentials",
       "timothy-hay-small-pets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/chinchilla-handling-guide.mdx",
@@ -4758,7 +5208,12 @@
         "a": "Keep it calm and reasonably short. Many chinchillas don't love prolonged restraint even once they're comfortable with handling, so reading your individual chinchilla's tolerance and stopping before it becomes stressed builds more trust over time than pushing for a longer session."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/chinchilla-health-issues-guide.mdx",
@@ -4808,7 +5263,12 @@
       "timothy-hay-small-pets",
       "chew-chinchilla-mineral-lava-blocks",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/chinchilla-legal-guide.mdx",
@@ -4849,7 +5309,12 @@
         "a": "Wild chinchillas are listed on CITES Appendix I, the strictest international protection tier, because of historical fur-trade hunting. But the listing explicitly excludes the domesticated form, which is what every pet chinchilla in the US is descended from, so it has no practical effect on ownership."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/chinchilla-tank-setup-guide.mdx",
@@ -4903,7 +5368,12 @@
       "timothy-hay-small-pets",
       "small-pet-paper-bedding",
       "exercise-wheel-chinchilla"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatiel-cost-guide.mdx",
@@ -4954,7 +5424,12 @@
       "bird-perches",
       "bird-feeding-dishes-okllen-4pack",
       "bird-food-zupreem-fruitblend-cockatiel-2lb"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatiel-feeding-guide.mdx",
@@ -5012,7 +5487,12 @@
     "relatedProducts": [
       "bird-food-zupreem-fruitblend-cockatiel-2lb",
       "bird-feeding-dishes-okllen-4pack"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/cockatiel-handling-guide.mdx",
@@ -5061,7 +5541,12 @@
     "relatedProducts": [
       "bird-treat-kaytee-spray-millet-7oz",
       "bird-perches"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatiel-health-issues-guide.mdx",
@@ -5110,7 +5595,12 @@
     "relatedProducts": [
       "bird-food-zupreem-fruitblend-cockatiel-2lb",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatiel-tank-setup-guide.mdx",
@@ -5162,7 +5652,12 @@
       "bird-feeding-dishes-okllen-4pack",
       "bird-cuttlebone-penn-plax-2ct",
       "bird-food-zupreem-fruitblend-cockatiel-2lb"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatoo-cost-guide.mdx",
@@ -5221,7 +5716,12 @@
       "cockatoo-cage-prevue-hendryx-large",
       "cockatoo-foraging-toys-large-parrot",
       "air-purifier-levoit-core300-p"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/cockatoo-handling-guide.mdx",
@@ -5270,7 +5770,12 @@
         "a": "Macaws are demanding too, and often have a stronger raw bite force, but cockatoos are generally considered needier, louder, and more prone specifically to separation anxiety and feather-destructive behavior. The cockatiel, technically a small cockatoo, is the clear exception, genuinely one of the easier pet birds to keep well."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/cockatoo-health-issues-guide.mdx",
@@ -5327,7 +5832,12 @@
     "relatedProducts": [
       "bird-food-harrisons-high-potency-fine-1lb",
       "cockatoo-foraging-toys-large-parrot"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/cockatoo-screaming-feather-plucking-explained.mdx",
@@ -5379,7 +5889,12 @@
         "a": "There's no universal number, but multiple hours of direct daily interaction, spread across the day rather than one long session, is the consistent theme in cases where cockatoos are well-adjusted. Households that can't offer this consistently tend to see screaming and plucking develop regardless of how well the cage and diet are set up."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cockatoo-tank-setup-guide.mdx",
@@ -5441,7 +5956,12 @@
       "bird-food-harrisons-high-potency-fine-1lb",
       "bird-food-roudybush-daily-mini-44oz",
       "bird-food-lafebers-premium-parrots-25lb"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/constriction-does-not-crush-or-suffocate.mdx",
@@ -5474,7 +5994,12 @@
     "lastReviewed": "2026-08-09",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Boa Constrictor",
+    "myth": "Constrictors crush their prey, or slowly suffocate it.",
+    "truth": "Neither. Pressure readings taken inside the coils show blood flow stops first, and the animal faints within seconds.",
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/conure-cost-guide.mdx",
@@ -5530,7 +6055,12 @@
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "sugar-glider-bonding-pouch",
       "bird-food-roudybush-daily-mini-44oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/conure-handling-guide.mdx",
@@ -5580,7 +6110,12 @@
         "a": "Often, yes, with proper introduction. They're similar in size and care needs to other Pyrrhura conures, like the maroon-bellied conure, and can typically be housed together once introduced correctly."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/conure-health-issues-guide.mdx",
@@ -5636,7 +6171,12 @@
       "bird-toys-katumo-small-parrot-variety",
       "sugar-glider-bonding-pouch",
       "bird-flight-cage-large"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/conure-tank-setup-guide.mdx",
@@ -5692,7 +6232,12 @@
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-toys-katumo-small-parrot-variety",
       "sugar-glider-bonding-pouch"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corn-snake-cost-guide.mdx",
@@ -5742,7 +6287,12 @@
       "pvc-enclosure-4x2x2",
       "under-tank-heat-mat-thermostat-kit",
       "uvb-arcadia-forest-6"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/corn-snake-feeding-guide.mdx",
@@ -5798,7 +6348,12 @@
         "a": "Whole prey variety is fine if you want it, young rats, quail, quail eggs, or day-old chicks are all mentioned across sources, though mice remain the default staple in the pet trade. Skip meat scraps, cooked food, and insects entirely, none of that is appropriate for this species."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/corn-snake-handling-guide.mdx",
@@ -5844,7 +6399,12 @@
         "a": "Bites are rare and minor, typically a startled or defensive reaction rather than genuine aggression, and easily treated with soap and water. Musking, a foul-smelling defensive secretion, is a stress signal, if you see it along with tight coiling or striking, it's time to end the session calmly."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corn-snake-health-issues-guide.mdx",
@@ -5895,7 +6455,12 @@
       "aspen-shavings-substrate",
       "sphagnum-moss",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/corn-snake-tank-setup-guide.mdx",
@@ -5947,7 +6512,12 @@
       "sphagnum-moss",
       "aspen-shavings-substrate",
       "large-soakable-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corydoras-catfish-cost-guide.mdx",
@@ -6008,7 +6578,12 @@
       "betta-substrate-caribsea-freshwater-sand",
       "water-test-kit",
       "corydoras-hikari-sinking-wafers"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corydoras-catfish-handling-guide.mdx",
@@ -6062,7 +6637,12 @@
         "a": "The oscar is a large, intelligent, assertive centerpiece fish that dominates a tank and needs to be planned around. Corydoras catfish are the opposite, small, peaceful, bottom dwelling fish that belong in a community setup as a supporting presence rather than the main attraction."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corydoras-catfish-health-issues-guide.mdx",
@@ -6118,7 +6698,12 @@
     ],
     "relatedProducts": [
       "corydoras-hikari-sinking-wafers"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/corydoras-catfish-tank-setup-guide.mdx",
@@ -6178,7 +6763,12 @@
       "submersible-aquarium-heater",
       "betta-substrate-caribsea-freshwater-sand",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/crested-gecko-cost-guide.mdx",
@@ -6224,7 +6814,12 @@
         "a": "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s. This isn't a short-term pet, so the setup you buy now should be one you're comfortable maintaining for decades, not just the first year."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/crested-gecko-feeding-guide.mdx",
@@ -6283,7 +6878,12 @@
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
       "calcium-repashy-plus-lod-3oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/crested-gecko-handling-guide.mdx",
@@ -6329,7 +6929,12 @@
         "a": "Start with sessions of just 1 to 2 minutes every other day. Build up gradually to around 15 minutes once your gecko is tame and comfortable, and keep total daily handling under about 20 minutes even then."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/crested-gecko-health-issues-guide.mdx",
@@ -6380,7 +6985,12 @@
       "uvb-arcadia-forest-6",
       "fine-mist-spray-bottle",
       "sphagnum-moss"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/crested-gecko-humidity-guide.mdx",
@@ -6438,7 +7048,12 @@
       "artificial-terrarium-plants",
       "bioactive-substrate-mix",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/crested-gecko-tank-setup-guide.mdx",
@@ -6490,7 +7105,12 @@
       "fine-mist-spray-bottle",
       "shallow-water-dish",
       "bioactive-substrate-mix"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/crocodiles-survived-what-killed-the-dinosaurs.mdx",
@@ -6520,7 +7140,12 @@
     "lastReviewed": "2026-08-03",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Crocodile",
+    "myth": "Crocodiles survived the asteroid by never changing.",
+    "truth": "They changed a great deal. What carried them through was being small, aquatic, and able to go a long time without eating.",
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/crows-are-smarter-than-you-think-and-they-probably-already-know-it.mdx",
@@ -6545,7 +7170,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Crow",
+    "myth": "Betty the crow bending a wire into a hook was the clearest case of invention in any animal.",
+    "truth": "Wild New Caledonian crows bend twigs using the same motion. She applied a species-typical move to an unfamiliar material.",
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/do-dolphins-have-names-what-the-research-shows.mdx",
@@ -6575,7 +7205,12 @@
     "lastReviewed": "2026-07-20",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Dolphin",
+    "myth": "Dolphins call each other by name.",
+    "truth": "Each one invents a signature whistle and answers to it. Calling that a name overstates a narrower and stranger finding.",
+    "sourceCount": 11
   },
   {
     "path": "/content/guides/dog-bloat-gdv-guide.mdx",
@@ -6628,7 +7263,12 @@
     ],
     "relatedProducts": [
       "licki-mat-dogs"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/dung-beetles-navigate-by-the-milky-way.mdx",
@@ -6658,7 +7298,12 @@
     "lastReviewed": "2026-07-21",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Dung Beetle",
+    "myth": "A dung beetle rolling in a straight line is just going straight.",
+    "truth": "It steers by the Milky Way. Proving it took cardboard visors, a planetarium in Johannesburg, and a lot of patience.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/elephants-talk-below-human-hearing.mdx",
@@ -6687,7 +7332,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Elephant",
+    "myth": "Elephants are fairly quiet animals between trumpets.",
+    "truth": "They are calling constantly, below human hearing, and part of the signal travels through the ground into the feet of the herd.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/emperor-scorpion-cost-guide.mdx",
@@ -6744,7 +7394,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo",
       "uv-blacklight-uvbeast-v3"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/emperor-scorpion-handling-guide.mdx",
@@ -6794,7 +7449,12 @@
         "a": "Handling frequently enough to stress the animal or risk a fall, underestimating how much force those pincers can generate, and housing multiple scorpions without enough space and hides, which can lead to aggression or cannibalism, particularly around molting time."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/emperor-scorpion-health-issues-guide.mdx",
@@ -6850,7 +7510,12 @@
       "cork-bark-round-small",
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/emperor-scorpion-tank-setup-guide.mdx",
@@ -6907,7 +7572,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo",
       "uv-blacklight-uvbeast-v3"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/every-wild-tiger-would-fit-in-a-small-town.mdx",
@@ -6935,7 +7605,12 @@
     "lastReviewed": "2026-08-04",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Tiger",
+    "myth": "Tiger numbers are rising, so tigers are recovering.",
+    "truth": "The entire wild population is a few thousand animals across thirteen countries. More may live in private American hands than in the wild.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/exotic-pet-legal-hub.mdx",
@@ -6988,7 +7663,12 @@
         "a": "Start with your state's fish and wildlife, game, or natural resources agency website, and read the actual statute or administrative code, not a summary. The Animal Legal & Historical Center's state map is the best single starting point for finding the right agency and statute citations. Then check your city or county code too, since local ordinances frequently add restrictions state law doesn't."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6
   },
   {
     "path": "/content/guides/ferret-adrenal-disease-guide.mdx",
@@ -7040,7 +7720,12 @@
         "a": "Not always. Surgical removal of the affected adrenal gland can be curative when only one gland is involved and the ferret is a good surgical candidate, but implants like deslorelin are commonly used as medical management, especially for ferrets where surgery carries more risk or both glands are affected."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ferret-cost-guide.mdx",
@@ -7097,7 +7782,12 @@
       "small-mammal-play-pack-seagrass",
       "ferret-food-marshall-premium-diet",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ferret-feeding-guide.mdx",
@@ -7152,7 +7842,12 @@
         "a": "Yes, it's called out specifically as fatal. Sugary treats more broadly are also risky since they can trigger blood sugar swings tied to insulinoma, a common condition in the species."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/ferret-handling-guide.mdx",
@@ -7202,7 +7897,12 @@
         "a": "Several hours of supervised out-of-cage time is a real need, not a bonus. Ferrets sleep around 18 hours a day but are intensely active and genuinely mischievous during their waking hours, closer in energy to a kitten that never quite grows out of the phase."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/ferret-health-issues-guide.mdx",
@@ -7255,7 +7955,12 @@
     "relatedProducts": [
       "small-mammal-play-pack-seagrass",
       "ferret-food-marshall-premium-diet"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/ferret-legal-guide.mdx",
@@ -7296,7 +8001,12 @@
         "a": "No. New York City's ban is separate from the state's - it's enforced under the NYC Health Code regardless of where you're visiting from or how long you're staying. The ban applies within all five boroughs; it doesn't apply once you're outside city limits in the rest of the state."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/ferret-tank-setup-guide.mdx",
@@ -7352,7 +8062,12 @@
       "litter-box",
       "small-pet-paper-bedding",
       "small-mammal-play-pack-seagrass"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/fire-bellied-toad-cost-guide.mdx",
@@ -7411,7 +8126,12 @@
       "sponge-filter",
       "water-conditioner",
       "substrate-tarantula-coconut-fiber-peat"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/fire-bellied-toad-handling-guide.mdx",
@@ -7465,7 +8185,12 @@
         "a": "No. Their skin toxins can genuinely harm tankmates that aren't the same species, so they should only ever be housed with their own kind."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/fire-bellied-toad-health-issues-guide.mdx",
@@ -7519,7 +8244,12 @@
         "a": "Nearly everything serious on this list, red leg syndrome most of all, traces directly back to water quality. Dirty, unfiltered, or poorly conditioned water is this species' single biggest health risk, more so than temperature or general humidity."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/fire-bellied-toad-tank-setup-guide.mdx",
@@ -7578,7 +8308,12 @@
       "sponge-filter",
       "water-conditioner",
       "substrate-tarantula-coconut-fiber-peat"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/five-beginner-reptiles-overview.mdx",
@@ -7621,7 +8356,12 @@
         "a": "Bearded dragons are the most consistently social of the five, many genuinely seem to enjoy daily handling once settled. Ball pythons and corn snakes both handle well too; the main thing to know with either gecko is to never grab the tail."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/four-unusual-pets-overview.mdx",
@@ -7659,7 +8399,12 @@
         "a": "The axolotl and the hermit crab are both largely hands-off, watch-don't-touch pets once their enclosure is set up correctly. The chinchilla and goldfish fall somewhere in between: neither needs constant handling, but both benefit from routine attention to their specific care needs."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/french-bulldog-feeding-guide.mdx",
@@ -7715,7 +8460,12 @@
         "a": "Chocolate, macadamia nuts, garlic, xylitol, and almonds are all named specifically. Beyond outright toxicity, broccoli, cabbage, beans, dairy, and soy are flagged as foods to limit for this breed in particular, they compound the gas and GI sensitivity already common with airway syndrome."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
@@ -7770,7 +8520,12 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
       "calcium-repashy-superfoods-plus-4oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/gargoyle-gecko-feeding-guide.mdx",
@@ -7829,7 +8584,12 @@
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
       "calcium-repashy-superfoods-plus-4oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/gargoyle-gecko-handling-guide.mdx",
@@ -7879,7 +8639,12 @@
         "a": "No. They're territorial and can be cannibalistic toward hatchlings, and mating itself can be rough enough to cause tail loss. House gargoyle geckos singly, and always wash your hands before and after handling."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/gargoyle-gecko-health-issues-guide.mdx",
@@ -7934,7 +8699,12 @@
       "fine-mist-spray-bottle",
       "climbing-branch-mopani-wood",
       "calcium-repashy-superfoods-plus-4oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/gargoyle-gecko-tank-setup-guide.mdx",
@@ -7991,7 +8761,12 @@
       "bioactive-substrate-mix",
       "climbing-branch-mopani-wood",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/gargoyle-mourning-african-fat-tail-gecko-overview.mdx",
@@ -8037,7 +8812,12 @@
         "a": "Not really, and that's the point of comparing them. \"Gecko\" describes a huge, wildly varied group, not a single care plan. The temperature range, humidity, handling tolerance, and even the substrate that's correct for one of these three would be actively wrong for another."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/german-shepherd-feeding-guide.mdx",
@@ -8094,7 +8874,12 @@
         "a": "For an otherwise normal adult with no other symptoms, a couple of days generally isn't alarming. That window shrinks to 8 to 12 hours if vomiting or diarrhea is also present. Separately and urgently: a bloated abdomen with restlessness and unproductive attempts to vomit after eating is never a wait-and-see situation, it can progress to shock within an hour or two."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/giant-millipede-cost-guide.mdx",
@@ -8153,7 +8938,12 @@
       "giant-millipede-organic-topsoil-substrate",
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
@@ -8207,7 +8997,12 @@
         "a": "It's arguably the most genuinely safe invertebrate to handle, no venom, no bite, no sting, just a mild-smelling secretion as its worst-case defense. The tradeoff is fragility rather than danger, this animal needs to be handled carefully specifically to protect it, not you."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/giant-millipede-health-issues-guide.mdx",
@@ -8261,7 +9056,12 @@
         "a": "Low humidity causes both dehydration and failed molts, which account for most serious problems in this species. Excess wetness combined with poor airflow invites mite overgrowth and necrotic lesions instead. Balanced humidity, more than anything else, is the real key to this species' health."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/giant-millipede-legal-guide.mdx",
@@ -8302,7 +9102,12 @@
         "a": "Yes, but only with a conditional permit and secure, locked, double-contained caging. Florida's invertebrate import guidelines name this species directly as requiring that permit."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/giant-millipede-tank-setup-guide.mdx",
@@ -8362,7 +9167,12 @@
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/giraffe-heart-myth-what-the-research-shows.mdx",
@@ -8391,7 +9201,12 @@
     "lastReviewed": "2026-07-23",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Giraffe",
+    "myth": "A giraffe has a 25 pound heart to pump blood up that neck.",
+    "truth": "It weighs about 11 pounds, ordinary for the body size. The extreme part is the blood pressure, roughly twice a human.",
+    "sourceCount": 10
   },
   {
     "path": "/content/guides/golden-retriever-feeding-guide.mdx",
@@ -8447,7 +9262,12 @@
         "a": "One sourced guideline puts it at roughly two days if there are no other symptoms, but seek care within 8 to 12 hours if refusal is paired with vomiting or diarrhea. Any marked, sustained change in eating habits is worth a vet visit regardless of the exact hour count."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/goldfish-cost-guide.mdx",
@@ -8499,7 +9319,12 @@
       "betta-substrate-caribsea-freshwater-sand",
       "water-conditioner",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/goldfish-feeding-guide.mdx",
@@ -8557,7 +9382,12 @@
     ],
     "relatedProducts": [
       "goldfish-pellets-hikari-gold"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/goldfish-handling-guide.mdx",
@@ -8603,7 +9433,12 @@
         "a": "Wet them first and keep well clear of the gills and eyes, both are especially sensitive. Whatever method you use, minimize the time the fish spends out of water, every second counts more than it might seem to."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/goldfish-health-issues-guide.mdx",
@@ -8652,7 +9487,12 @@
     "relatedProducts": [
       "water-test-kit",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/goldfish-tank-setup-guide.mdx",
@@ -8704,7 +9544,12 @@
       "canister-filter-large",
       "water-conditioner",
       "water-test-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/goldfish-tank-size-bowl-myth.mdx",
@@ -8760,7 +9605,12 @@
       "canister-filter",
       "tank-20-gallon-long",
       "api-tap-water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/green-anole-cost-guide.mdx",
@@ -8821,7 +9671,12 @@
       "uvb-arcadia-forest-6",
       "substrate-tarantula-coconut-fiber-peat",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/green-anole-handling-guide.mdx",
@@ -8875,7 +9730,12 @@
         "a": "The brown anole is an invasive species from Cuba, always brown, more ground-dwelling, and has a red-orange throat fan, while the native green anole can actually turn green, tends to perch higher, and has a pink to red throat fan. Care needs are nearly identical between the two, the real difference is mostly about which one you're actually looking at."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/green-anole-health-issues-guide.mdx",
@@ -8929,7 +9789,12 @@
         "a": "Weak UVB and calcium cause MBD, arguably the most dangerous issue given how quickly it can progress in such a small animal. A cold or overly wet enclosure causes respiratory infection. Low humidity causes stuck shed. And insufficient misting causes dehydration. Nearly everything connects directly back to the setup, this is a species where getting the basics right matters more than it might seem to for something this small."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/green-anole-tank-setup-guide.mdx",
@@ -8990,7 +9855,12 @@
       "uvb-arcadia-forest-6",
       "substrate-tarantula-coconut-fiber-peat",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/greenanole-tegu-firebelliedtoad-tigersalamander-overview.mdx",
@@ -9044,7 +9914,12 @@
         "a": "None of them can be judged by size or first impression. The small one needs more care than it looks like it should, the large one is gentler than it looks, the cute one is riskier to touch than it looks, and the quiet one outlives what its appearance suggests by a decade or more."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/guinea-pig-cockatiel-betta-tarantula-overview.mdx",
@@ -9086,7 +9961,12 @@
         "a": "Yes, guinea pigs are highly social and shouldn't be kept alone. It's one of the most commonly skipped parts of guinea pig care, and it quietly doubles most of the numbers in a typical care budget."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/guinea-pig-cost-guide.mdx",
@@ -9137,7 +10017,12 @@
       "timothy-hay-small-pets",
       "small-pet-hideout-igloo",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/guinea-pig-feeding-guide.mdx",
@@ -9196,7 +10081,12 @@
     "relatedProducts": [
       "timothy-hay-small-pets",
       "guinea-pig-vitamin-c-supplement"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/guinea-pig-handling-guide.mdx",
@@ -9242,7 +10132,12 @@
         "a": "No, young children should never carry a guinea pig unsupervised. The combination of a squirming animal and unsteady hands is a common way falls happen, and a fall can be fatal given how physically fragile guinea pigs are."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/guinea-pig-health-issues-guide.mdx",
@@ -9292,7 +10187,12 @@
       "guinea-pig-vitamin-c-supplement",
       "timothy-hay-small-pets",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/guinea-pig-scurvy-vitamin-c-guide.mdx",
@@ -9346,7 +10246,12 @@
     "relatedProducts": [
       "guinea-pig-vitamin-c-supplement",
       "timothy-hay-small-pets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/guinea-pig-tank-setup-guide.mdx",
@@ -9398,7 +10303,12 @@
       "small-pet-paper-bedding",
       "timothy-hay-small-pets",
       "guinea-pig-vitamin-c-supplement"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/guppy-cost-guide.mdx",
@@ -9455,7 +10365,12 @@
       "live-terrarium-plants",
       "guppy-food-hikari-tropical-fancy-guppy",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/guppy-feeding-guide.mdx",
@@ -9510,7 +10425,12 @@
         "a": "Lethargy, hiding, gasping at the surface, clamped or discolored fins, cloudy eyes, white spots, or a swollen pinecone-like body. Any of these paired with appetite loss is a signal to test water parameters immediately rather than wait it out."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/guppy-handling-guide.mdx",
@@ -9560,7 +10480,12 @@
         "a": "Not safely with either. Betta fish are territorial and fin-nipping, a real risk to a guppy's tail, while goldfish are a cold-water species that grows large and needs 20-plus gallons, a temperature and size mismatch for a small tropical fish like the guppy."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/guppy-health-issues-guide.mdx",
@@ -9615,7 +10540,12 @@
       "submersible-aquarium-heater",
       "sponge-filter",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/guppy-tank-setup-guide.mdx",
@@ -9671,7 +10601,12 @@
       "sponge-filter",
       "live-terrarium-plants",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/gut-loading-feeder-insects-guide.mdx",
@@ -9708,7 +10643,12 @@
       "gutload-flukers-cricket-quencher-calcium-3pack",
       "gutload-flukers-orange-cube-cricket-diet-12oz",
       "calcium-repashy-plus-6oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/hagfish-slime-how-it-works.mdx",
@@ -9738,7 +10678,12 @@
     "lastReviewed": "2026-07-24",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Hagfish",
+    "myth": "A hagfish produces a litre of slime.",
+    "truth": "It produces a teaspoon of protein and thread. The rest of that litre is seawater, recruited in 400 milliseconds.",
+    "sourceCount": 7
   },
   {
     "path": "/content/guides/hamster-cost-guide.mdx",
@@ -9797,7 +10742,12 @@
       "digital-thermometer-hygrometer-combo",
       "hamster-food-oxbow-garden-select",
       "chew-guinea-pig-natural-sticks"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hamster-feeding-guide.mdx",
@@ -9853,7 +10803,12 @@
         "a": "Grapes and rhubarb are explicitly flagged as poisonous to rodents. Raw onion and garlic, chocolate, bitter almonds, raw kidney beans, raw potato, eggplant, and avocado are all named as unsafe. Citrus is a genuinely disputed item, some sources avoid it outright, others say it's fine occasionally for Syrians, with extra caution for diabetes-prone dwarf breeds."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/hamster-handling-guide.mdx",
@@ -9903,7 +10858,12 @@
         "a": "No. Syrian hamsters are strictly solitary, and housing two together leads to fighting. This is one of the most common and preventable hamster-owner mistakes there is."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hamster-health-issues-guide.mdx",
@@ -9958,7 +10918,12 @@
       "chew-guinea-pig-natural-sticks",
       "hamster-food-oxbow-garden-select",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hamster-skink-whitestreefrog-pacmanfrog-overview.mdx",
@@ -10004,7 +10969,12 @@
         "a": "Pacman frogs are ambush predators built to strike reflexively at anything that moves near their face, including fingers, and they genuinely cannot always tell a finger from prey. They're fed with tongs only, never by hand, which is the exact opposite of White's tree frog and a big part of why the general don't-handle-amphibians rule exists in the first place."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/hamster-tank-setup-guide.mdx",
@@ -10060,7 +11030,12 @@
       "small-pet-paper-bedding",
       "small-pet-hideout-igloo",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hamster-vs-guinea-pig-guide.mdx",
@@ -10114,7 +11089,12 @@
     ],
     "relatedProducts": [
       "cc-cage-guinea-pig"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hedgehog-cost-guide.mdx",
@@ -10173,7 +11153,12 @@
       "nail-clippers",
       "hedgehog-food-iams-proactive-health-chicken-3.5lb",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hedgehog-feeding-guide.mdx",
@@ -10228,7 +11213,12 @@
         "a": "Avocado is toxic. Raw meat, raw eggs, and dairy all cause real problems, dairy specifically triggers digestive upset. Nuts, seeds, and hard raw vegetables like uncooked carrot are choking hazards, cook vegetables before offering them."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/hedgehog-handling-guide.mdx",
@@ -10278,7 +11268,12 @@
         "a": "Not really, despite often being marketed alongside them as similar small mammals. Their environmental needs, especially strict temperature control, are closer to a reptile's than a typical pocket pet's, and they're genuinely less cuddly, tolerating handling rather than seeking it out."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/hedgehog-health-issues-guide.mdx",
@@ -10333,7 +11328,12 @@
       "hedgehog-food-iams-proactive-health-chicken-3.5lb",
       "ceramic-heat-emitter-zoo-med-repticare-150w",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hedgehog-tank-setup-guide.mdx",
@@ -10390,7 +11390,12 @@
       "digital-thermometer-hygrometer-combo",
       "small-pet-paper-bedding",
       "small-pet-hideout-igloo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/hedgehogs-are-lactose-intolerant-despite-what-cartoons-show.mdx",
@@ -10417,7 +11422,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/hermit-crab-cost-guide.mdx",
@@ -10470,7 +11480,12 @@
       "large-soakable-water-dish",
       "hermit-crab-shells-natural-12pk",
       "marine-salt-instant-ocean"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hermit-crab-handling-guide.mdx",
@@ -10516,7 +11531,12 @@
         "a": "A newly disturbed or newly arrived crab commonly stays buried for days, sometimes over a week, while it settles in, and that's normal. A molting crab can stay buried for several weeks up to around three months and shouldn't be dug up no matter how long it's been, the real warning signs of a genuine problem are a strong rotten odor or a body that's gone limp or fallen out of the shell."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hermit-crab-health-issues-guide.mdx",
@@ -10566,7 +11586,12 @@
       "digital-thermometer-hygrometer-combo",
       "large-soakable-water-dish",
       "substrate-hermit-crab-flukers-sand-coco"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hermit-crab-tank-setup-guide.mdx",
@@ -10619,7 +11644,12 @@
       "large-soakable-water-dish",
       "marine-salt-instant-ocean",
       "hermit-crab-shells-natural-12pk"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hognose-snake-cost-guide.mdx",
@@ -10674,7 +11704,12 @@
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo",
       "aspen-shavings-substrate"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/hognose-snake-handling-guide.mdx",
@@ -10724,7 +11759,12 @@
         "a": "Care-wise, hognoses are closer to a corn snake, active and suited to a dry, arid setup, than to a ball python. Temperament-wise, a stressed ball python curls into a tight ball, while a stressed hognose puts on the hood-and-hiss show instead, different strategies, similarly harmless."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/hognose-snake-health-issues-guide.mdx",
@@ -10779,7 +11819,12 @@
       "aspen-shavings-substrate",
       "under-tank-heat-mat-thermostat-kit",
       "feeding-tongs-lasnten-long-rubber-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/hognose-snake-legal-guide.mdx",
@@ -10820,7 +11865,12 @@
         "a": "Colorado now allows captive-bred Western and Plains hognose snakes to be possessed, sold, and transported with documentation, effective May 1, 2026. Wild collection of any native Colorado hognose is now banned, and Eastern hognose is excluded from the new legalization entirely."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/hognose-snake-tank-setup-guide.mdx",
@@ -10876,7 +11926,12 @@
       "aspen-shavings-substrate",
       "cork-bark-round-hide",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/honey-badgers-the-toughest-little-troublemakers-on-the-planet.mdx",
@@ -10901,7 +11956,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Honey Badger",
+    "myth": "The honey badger is officially the world most fearless animal, and nothing can touch it.",
+    "truth": "That was a 2002 print edition of Guinness. Lions and leopards prey on them, and adult annual mortality runs at 34 percent.",
+    "sourceCount": 6
   },
   {
     "path": "/content/guides/how-a-glass-frog-hides-its-own-blood.mdx",
@@ -10933,7 +11993,12 @@
     "lastReviewed": "2026-08-10",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Glass Frog",
+    "myth": "A glass frog is see-through because there is nothing much inside it.",
+    "truth": "It packs 89 percent of its red blood cells into its liver to sleep. Blood that concentrated should clot, and somehow does not.",
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/how-dangerous-are-sharks-really.mdx",
@@ -10963,7 +12028,12 @@
     "lastReviewed": "2026-07-31",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Shark",
+    "myth": "Sharks are one of the more dangerous animals to humans.",
+    "truth": "There were 65 unprovoked bites worldwide in 2025. Over the same period people killed roughly 80 million sharks.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/how-honeybees-vote-on-a-new-home.mdx",
@@ -10992,7 +12062,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx",
@@ -11022,7 +12097,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Immortal Jellyfish",
+    "myth": "The immortal jellyfish lives forever.",
+    "truth": "It can reverse its life cycle back to a polyp, which is not the same as not dying. Most get eaten long before they get the chance.",
+    "sourceCount": 14
   },
   {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
@@ -11076,7 +12156,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "dubia-roaches-bag"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/jacksons-chameleon-cost-guide.mdx",
@@ -11137,7 +12222,12 @@
       "automatic-misting-system-fogger",
       "live-terrarium-plants",
       "calcium-repashy-plus-6oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jacksons-chameleon-handling-guide.mdx",
@@ -11191,7 +12281,12 @@
         "a": "Jackson's chameleons are generally calmer and more tolerant of occasional handling than the more assertive veiled chameleon, though both should be handled minimally overall. The bigger practical difference is climate, not temperament, Jackson's chameleons need a meaningfully cooler setup."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jacksons-chameleon-health-issues-guide.mdx",
@@ -11245,7 +12340,12 @@
         "a": "Insufficient misting causes the dehydration that's the single most common issue in this species. Weak UVB and calcium cause MBD. Overfeeding and dehydration together drive gout. Oversupplementing vitamin A or D can cause edema. Getting hydration and supplementation calibrated correctly, not just present, prevents most of what's on this list."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jacksons-chameleon-tank-setup-guide.mdx",
@@ -11302,7 +12402,12 @@
       "dimming-thermostat-exo-terra-proportional",
       "automatic-misting-system-fogger",
       "live-terrarium-plants"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jacksonschameleon-canary-millipede-corydoras-overview.mdx",
@@ -11356,7 +12461,12 @@
         "a": "None of them are trying to outshine the flashier species in their category, and none of them need to. A cooler, live bearing chameleon, a bird bred for song rather than touch, a harmless plant eating invertebrate, and a schooling fish content to stay in the background. Each one rewards attention precisely because it isn't demanding it."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/jumping-spider-cost-guide.mdx",
@@ -11411,7 +12521,12 @@
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "digital-thermometer-hygrometer-combo",
       "jumping-spider-fruit-fly-culture-starter"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jumping-spider-feeding-guide.mdx",
@@ -11467,7 +12582,12 @@
         "a": "No, that's not standard practice for this species the way it is for reptiles. Gut-loading feeder insects on a nutritious diet before offering them is the actual supplementation method used here."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/jumping-spider-handling-guide.mdx",
@@ -11516,7 +12636,12 @@
         "a": "Yes, but only for draglines and a small retreat, not for trapping food the way a web-building spider does."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jumping-spider-health-issues-guide.mdx",
@@ -11569,7 +12694,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/jumping-spider-tank-setup-guide.mdx",
@@ -11624,7 +12754,12 @@
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "fine-mist-spray-bottle",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/koi-conure-slider-scorpion-overview.mdx",
@@ -11670,7 +12805,12 @@
         "a": "Mostly the lifespan. A koi bought as a few inches of color can live 25 to 50 years, and the pond, filtration, and aeration it needs scale up with its size, not the size it was at the pet store. It's genuinely more of an infrastructure project than a typical pet purchase."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/koi-cost-guide.mdx",
@@ -11726,7 +12866,12 @@
       "pond-aerator-aquascape-pond-air-2",
       "pond-netting-alpinereach-15x20",
       "koi-pellets-kaytee-kois-choice"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/koi-feeding-guide.mdx",
@@ -11784,7 +12929,12 @@
     ],
     "relatedProducts": [
       "goldfish-gel-food-repashy-super-gold"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/koi-handling-guide.mdx",
@@ -11834,7 +12984,12 @@
         "a": "Over-handling or rough netting, which strips the slime coat and opens the door to secondary infections. Other common mistakes include handling with dry hands, forcing restraint on a fish that's trying to get away, skipping quarantine for new arrivals, and letting water quality slide, which makes fish skittish or unusually aggressive at feeding time."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/koi-health-issues-guide.mdx",
@@ -11888,7 +13043,12 @@
       "water-test-kit",
       "pond-beneficial-bacteria-aquascape",
       "pond-filter-totalpond-uv-clarifier"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/koi-tank-setup-guide.mdx",
@@ -11943,7 +13103,12 @@
       "pond-filter-totalpond-uv-clarifier",
       "pond-aerator-aquascape-pond-air-2",
       "pond-netting-alpinereach-15x20"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-cost-guide.mdx",
@@ -12002,7 +13167,12 @@
       "automatic-misting-system-fogger",
       "leaf-tailed-gecko-magnetic-feeding-ledge",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
@@ -12056,7 +13226,12 @@
         "a": "Every other gecko here ranges from genuinely handleable, such as the crested, leopard, gargoyle, and African fat-tailed, to defensive but tolerant of occasional interaction, such as the tokay. The leaf-tailed gecko sits in a category of its own, neither handleable nor simply defensive, just genuinely fragile."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-health-issues-guide.mdx",
@@ -12110,7 +13285,12 @@
         "a": "Usually not. It's manageable at home by minimizing handling and disturbance. See a vet only if the site where the tail dropped shows swelling, redness, discharge, or a foul odor."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-tank-setup-guide.mdx",
@@ -12169,7 +13349,12 @@
       "automatic-misting-system-fogger",
       "uvb-arcadia-forest-6",
       "leaf-tailed-gecko-magnetic-feeding-ledge"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx",
@@ -12223,7 +13408,12 @@
         "a": "Each one only makes sense by comparison. The gecko is defined by how unlike its handleable cousins it is, the kingsnake by what it eats rather than its own temperament, the box turtle by sitting between two relatives it isn't, and the oscar by being the one fish here that's genuinely aware of its keeper."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/leopard-gecko-cost-guide.mdx",
@@ -12273,7 +13463,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "uvb-arcadia-desert-12",
       "dubia-roach-colony-starter-kit"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leopard-gecko-feeding-guide.mdx",
@@ -12331,7 +13526,12 @@
     "relatedProducts": [
       "calcium-arcadia-earthpro-revitalised3",
       "feeding-tongs-entomology-forceps-fine-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/leopard-gecko-handling-guide.mdx",
@@ -12377,7 +13577,12 @@
         "a": "Move it to clean paper towel substrate immediately, keep the enclosure especially clean while it heals, avoid handling for 1 to 2 weeks, and watch the stump for swelling, discharge, discoloration, or a foul smell, any of which mean it's time for a vet. The tail regrows in 4 to 8 weeks but comes back shorter, thicker, and visually different."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leopard-gecko-health-issues-guide.mdx",
@@ -12428,7 +13633,12 @@
       "uvb-arcadia-desert-12",
       "digital-thermometer-hygrometer-combo",
       "sphagnum-moss"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/leopard-gecko-tank-setup-guide.mdx",
@@ -12479,7 +13689,12 @@
       "uvb-arcadia-desert-12",
       "shallow-water-dish",
       "cork-bark-round-hide"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/leopard-gecko-temperature-guide.mdx",
@@ -12535,7 +13750,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "infrared-temp-gun",
       "zoo-med-digital-thermometer-3pack"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/leopard-gecko-vs-crested-gecko-guide.mdx",
@@ -12592,7 +13812,12 @@
       "dubia-roach-colony-starter-kit",
       "glass-terrarium-18x18x24",
       "climbing-branch-mopani-wood"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/lions-are-the-only-social-cat.mdx",
@@ -12621,7 +13846,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Lion",
+    "myth": "Lions live in prides so they can hunt together.",
+    "truth": "Cooperative hunting is not what holds a pride together. Related females holding ground worth having is.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/lovebird-cost-guide.mdx",
@@ -12677,7 +13907,12 @@
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-food-roudybush-daily-mini-44oz",
       "bird-toys-katumo-small-parrot-variety"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/lovebird-handling-guide.mdx",
@@ -12727,7 +13962,12 @@
         "a": "Lovebirds are more aggressive and beakier for their size than either species, and unlike budgies, should never be housed with other bird species. They're also more dedicated chewers, worth keeping in mind when choosing toys, anything with small parts or loose material isn't a good fit."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/lovebird-health-issues-guide.mdx",
@@ -12782,7 +14022,12 @@
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-toys-katumo-small-parrot-variety",
       "bird-flight-cage-large"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/lovebird-tank-setup-guide.mdx",
@@ -12837,7 +14082,12 @@
       "bird-perches",
       "bird-toy-bbjinronjy-sola-ball-2pc",
       "bird-toys-katumo-small-parrot-variety"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-cost-guide.mdx",
@@ -12893,7 +14143,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "petroleum-jelly-amazon-basics"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-feeding-guide.mdx",
@@ -12948,7 +14203,12 @@
         "a": "Yes, more than it might seem. Underfed colonies are more prone to cannibalizing weaker or freshly molted colony-mates, who are pale, soft, and defenseless for a few hours after shedding. Feeding the colony adequately isn't just about individual nutrition, it protects the group."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-handling-guide.mdx",
@@ -12998,7 +14258,12 @@
         "a": "Pulling a roach off a surface instead of letting it release its grip naturally, handling too roughly or too frequently, and skipping an escape barrier around the enclosure, they're genuinely capable climbers."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-health-issues-guide.mdx",
@@ -13051,7 +14316,12 @@
     "relatedProducts": [
       "under-tank-heat-mat-thermostat-kit",
       "substrate-zoo-med-eco-earth-coconut-fiber"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-tank-setup-guide.mdx",
@@ -13107,7 +14377,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "petroleum-jelly-amazon-basics"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/mantis-shrimp-16-color-vision-punch-power.mdx",
@@ -13134,7 +14409,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Mantis Shrimp",
+    "myth": "Sixteen colour receptors means the mantis shrimp sees colours we cannot imagine.",
+    "truth": "It discriminates colour worse than we do. The receptors work as a fast lookup, not as a richer picture.",
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/mike-the-headless-chicken-explained.mdx",
@@ -13163,7 +14443,12 @@
     "lastReviewed": "2026-07-25",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/milk-snake-cost-guide.mdx",
@@ -13219,7 +14504,12 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "milk-snake-vivarium-wooden-48x24x24",
       "milk-snake-halogen-bulb-exo-terra-sun-glo-50w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
@@ -13269,7 +14559,12 @@
         "a": "Housing two milk snakes together, thinking their calm temperament makes cohabitation safe. It doesn't. Handling mid-shed and leaving an enclosure insecurely closed are the other two mistakes worth watching for."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/milk-snake-health-issues-guide.mdx",
@@ -13322,7 +14617,12 @@
     "relatedProducts": [
       "cypress-mulch-substrate",
       "sphagnum-moss"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/milk-snake-tank-setup-guide.mdx",
@@ -13378,7 +14678,12 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "milk-snake-vivarium-wooden-48x24x24",
       "milk-snake-halogen-bulb-exo-terra-sun-glo-50w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/mourning-gecko-cost-guide.mdx",
@@ -13433,7 +14738,12 @@
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "bioactive-substrate-mix",
       "crested-gecko-diet-pangea-watermelon-complete-8oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/mourning-gecko-feeding-guide.mdx",
@@ -13492,7 +14802,12 @@
     "relatedProducts": [
       "crested-gecko-diet-pangea-watermelon-complete-8oz",
       "calcium-repashy-superfoods-plus-4oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/mourning-gecko-handling-guide.mdx",
@@ -13542,7 +14857,12 @@
         "a": "Because they genuinely are easy in terms of care difficulty, low-maintenance, hardy, and inexpensive. The confusion comes from lumping them in with crested and gargoyle geckos, which tolerate gentle handling reasonably well. Mourning geckos genuinely don't, so 'easy care' shouldn't be read as 'handleable.'"
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/mourning-gecko-health-issues-guide.mdx",
@@ -13597,7 +14917,12 @@
       "calcium-arcadia-earthpro-revitalised3",
       "fine-mist-spray-bottle",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/mourning-gecko-tank-setup-guide.mdx",
@@ -13653,7 +14978,12 @@
       "bioactive-substrate-mix",
       "cork-bark-round-hide",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/naked-mole-rat-breaks-the-rules-for-mammals.mdx",
@@ -13682,7 +15012,12 @@
     "lastReviewed": "2026-07-26",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Naked Mole Rat",
+    "myth": "Naked mole rats cannot get cancer.",
+    "truth": "They do get it. What is genuinely strange is that their risk of dying does not rise with age, which was thought impossible for a mammal.",
+    "sourceCount": 13
   },
   {
     "path": "/content/guides/narwhal-facts-the-real-unicorn-of-the-sea.mdx",
@@ -13708,7 +15043,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Narwhal",
+    "myth": "The narwhal tusk is a horn.",
+    "truth": "It is a tooth, grown out through the lip, threaded with ten million channels that let the animal taste the sea through it.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/neon-tetra-cost-guide.mdx",
@@ -13766,7 +15106,12 @@
       "neon-tetra-food-hikari-micro-pellets",
       "water-conditioner",
       "driftwood"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/neon-tetra-handling-guide.mdx",
@@ -13816,7 +15161,12 @@
         "a": "The two fish look superficially similar in a beginner's mental shopping list, small, colorful, community-friendly, but their care needs diverge in a genuinely important way. Guppies are hardy livebearers, tolerant of harder, more alkaline water, and they breed readily without much intervention. Neon tetras are egg-scattering fish that need soft, acidic, and genuinely stable water to thrive, and they're more sensitive to water quality swings than guppies are."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/neon-tetra-health-issues-guide.mdx",
@@ -13871,7 +15221,12 @@
       "submersible-aquarium-heater",
       "sponge-filter",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/neon-tetra-tank-setup-guide.mdx",
@@ -13929,7 +15284,12 @@
       "neon-tetra-food-hikari-micro-pellets",
       "water-conditioner",
       "driftwood"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/oscar-fish-cost-guide.mdx",
@@ -13987,7 +15347,12 @@
       "oscar-fish-canister-filter-fluval-fx4",
       "oscar-fish-hikari-cichlid-gold-pellets",
       "submersible-aquarium-heater"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/oscar-fish-handling-guide.mdx",
@@ -14037,7 +15402,12 @@
         "a": "Assuming oscar behavior will resemble any other community fish they've kept, underestimating how much this species notices and reacts to changes in its environment, and choosing small tank mates that end up as an unplanned meal."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/oscar-fish-health-issues-guide.mdx",
@@ -14093,7 +15463,12 @@
     ],
     "relatedProducts": [
       "oscar-fish-hikari-cichlid-gold-pellets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/oscar-fish-tank-setup-guide.mdx",
@@ -14150,7 +15525,12 @@
     "relatedProducts": [
       "oscar-fish-canister-filter-fluval-fx4",
       "submersible-aquarium-heater"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/pacman-frog-cost-guide.mdx",
@@ -14206,7 +15586,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo",
       "feeding-tongs-short-soft-tip-4pack"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/pacman-frog-feeding-guide.mdx",
@@ -14261,7 +15646,12 @@
         "a": "Weight loss, not the fast itself. A frog that stays active, alert, and hydrated with normal feces is generally fine even while skipping meals. Rapid or visible weight loss, roughly 10% over a couple of weeks, lethargy, or a frog under a year old that appears to be going dormant are all reasons to see an exotics vet."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/pacman-frog-handling-guide.mdx",
@@ -14311,7 +15701,12 @@
         "a": "They're essentially opposite cases. White's tree frogs are calm, docile, and genuinely tolerant of careful handling, one of the few amphibian species suited to it at all. Pacman frogs are the reason the general don't-handle-amphibians rule exists in the first place."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/pacman-frog-health-issues-guide.mdx",
@@ -14366,7 +15761,12 @@
       "feeding-tongs-short-soft-tip-4pack",
       "calcium-repashy-plus-6oz",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/pacman-frog-tank-setup-guide.mdx",
@@ -14422,7 +15822,12 @@
       "under-tank-heat-mat-thermostat-kit",
       "digital-thermometer-hygrometer-combo",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/pangolins-the-most-trafficked-mammal-nobody-knows.mdx",
@@ -14451,7 +15856,12 @@
     "lastReviewed": "2026-08-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Pangolin",
+    "myth": "Pangolin scales are worth taking.",
+    "truth": "They are keratin, the same as fingernails. That belief has made the pangolin the most trafficked wild mammal on Earth.",
+    "sourceCount": 14
   },
   {
     "path": "/content/guides/penguins-do-not-mate-for-life.mdx",
@@ -14481,7 +15891,12 @@
     "lastReviewed": "2026-08-02",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Penguin",
+    "myth": "Penguins mate for life.",
+    "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/praying-mantis-cost-guide.mdx",
@@ -14537,7 +15952,12 @@
       "climbing-branch-mopani-wood",
       "fine-mist-spray-bottle",
       "feeding-tongs-entomology-forceps-fine-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
@@ -14587,7 +16007,12 @@
         "a": "The comparison only goes so far. Stick insects are herbivores that can often be kept together in groups without issue. Mantises are predatory and cannibalistic, and that single difference is really the whole story behind why they're always kept alone."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/praying-mantis-health-issues-guide.mdx",
@@ -14642,7 +16067,12 @@
       "climbing-branch-mopani-wood",
       "fine-mist-spray-bottle",
       "feeding-tongs-entomology-forceps-fine-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/praying-mantis-ootheca-guide.mdx",
@@ -14697,7 +16127,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/praying-mantis-tank-setup-guide.mdx",
@@ -14753,7 +16188,12 @@
       "climbing-branch-mopani-wood",
       "fine-mist-spray-bottle",
       "feeding-tongs-entomology-forceps-fine-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/rabbit-budgie-overview.mdx",
@@ -14794,7 +16234,12 @@
         "a": "Yes for both. Rabbits need a rabbit-savvy exotic vet rather than a standard small-animal clinic, and birds need an avian vet, a genuinely specialized field distinct from general small-animal or exotic-pet practice."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/rabbit-cost-guide.mdx",
@@ -14846,7 +16291,12 @@
       "nail-clippers",
       "timothy-hay-small-pets",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/rabbit-feeding-guide.mdx",
@@ -14905,7 +16355,12 @@
     "relatedProducts": [
       "rabbit-pellet-food-oxbow-garden-select",
       "timothy-hay-small-pets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/rabbit-gi-stasis-guide.mdx",
@@ -14958,7 +16413,12 @@
     ],
     "relatedProducts": [
       "timothy-hay-small-pets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/rabbit-handling-guide.mdx",
@@ -15004,7 +16464,12 @@
         "a": "That's normal. Most rabbits are calmest with all four feet on the ground, and many never come to love being picked up even once they fully trust their owner. Build trust through floor-level interaction instead, sitting at the rabbit's level and letting it choose to approach."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/rabbit-health-issues-guide.mdx",
@@ -15053,7 +16518,12 @@
     "relatedProducts": [
       "timothy-hay-small-pets",
       "small-pet-paper-bedding"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/rabbit-tank-setup-guide.mdx",
@@ -15103,7 +16573,12 @@
       "litter-box",
       "small-pet-paper-bedding",
       "timothy-hay-small-pets"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/red-eared-slider-cost-guide.mdx",
@@ -15159,7 +16634,12 @@
       "turtle-basking-platform-turtle-topper-large",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "turtle-pellets-mazuri-aquatic"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/red-eared-slider-feeding-guide.mdx",
@@ -15216,7 +16696,12 @@
     ],
     "relatedProducts": [
       "calcium-tortoise-turtle-herbivorous-sulcata"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/red-eared-slider-handling-guide.mdx",
@@ -15266,7 +16751,12 @@
         "a": "You can, but only with enough space and basking spots for each turtle. Housing multiple sliders in a cramped setup leads to aggression, stacking, and injuries between animals."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/red-eared-slider-health-issues-guide.mdx",
@@ -15321,7 +16811,12 @@
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "canister-filter-large",
       "turtle-pellets-mazuri-aquatic"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/red-eared-slider-legal-guide.mdx",
@@ -15362,7 +16857,12 @@
         "a": "No, and this is illegal in essentially every state, not just the ones with slider-specific rules. Released pet sliders are one of the most invasive turtle species on the planet and outcompete native turtles. Surrender to a reptile rescue or a store with a turtle take-back program instead."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/red-eared-slider-tank-setup-guide.mdx",
@@ -15418,7 +16918,12 @@
       "turtle-basking-platform-turtle-topper-large",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "basking-dome-fixture"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/reptile-shedding-complete-guide.mdx",
@@ -15474,7 +16979,12 @@
       "cork-bark-round-hide",
       "climbing-branch-mopani-wood",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/russian-tortoise-cost-guide.mdx",
@@ -15534,7 +17044,12 @@
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "substrate-tarantula-coconut-fiber-peat",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/russian-tortoise-handling-guide.mdx",
@@ -15588,7 +17103,12 @@
         "a": "The Russian tortoise stays small and can be maintained indoors for its entire multi-decade life, while the sulcata is a genuine giant that must have outdoor space as it grows and simply cannot be kept indoors long-term."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/russian-tortoise-health-issues-guide.mdx",
@@ -15641,7 +17161,12 @@
     "relatedProducts": [
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "bird-cuttlebone-penn-plax-2ct"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/russian-tortoise-tank-setup-guide.mdx",
@@ -15701,7 +17226,12 @@
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "substrate-tarantula-coconut-fiber-peat",
       "uvi-meter-solarmeter-6-5r"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/savannah-monitor-cost-guide.mdx",
@@ -15761,7 +17291,12 @@
       "uvb-arcadia-desert-12",
       "ackie-substrate-bio-dude-terra-sahara-36qt",
       "etekcity-infrared-thermometer-gun"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",
@@ -15814,7 +17349,12 @@
         "a": "Often, yes. As adults grow, routine tasks like nail trims may genuinely require two or three people experienced with reptile restraint, not something to attempt solo with an animal this size and strength."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/savannah-monitor-health-issues-guide.mdx",
@@ -15871,7 +17411,12 @@
     "relatedProducts": [
       "uvb-arcadia-desert-12",
       "etekcity-infrared-thermometer-gun"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/savannah-monitor-tank-setup-guide.mdx",
@@ -15931,7 +17476,12 @@
       "uvb-arcadia-desert-12",
       "ackie-substrate-bio-dude-terra-sahara-36qt",
       "etekcity-infrared-thermometer-gun"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/savannah-russiantortoise-cockatoo-stickinsect-overview.mdx",
@@ -15985,7 +17535,12 @@
         "a": "Three hide a real cost, financial, behavioral, or legal, behind an easy first impression. The fourth, the Russian tortoise, hides a genuine advantage behind the common assumption that every tortoise eventually needs a yard."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/seahorse-male-pregnancy-how-it-works.mdx",
@@ -16015,7 +17570,12 @@
     "lastReviewed": "2026-07-27",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Seahorse",
+    "myth": "The male seahorse just carries the eggs.",
+    "truth": "He grows a placenta and feeds the embryos, and had to dismantle part of his own immune system to stop his body rejecting them.",
+    "sourceCount": 7
   },
   {
     "path": "/content/guides/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind.mdx",
@@ -16041,7 +17601,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Shark",
+    "myth": "Sharks have been around a very long time.",
+    "truth": "Longer than trees. Shark-like scales turn up around 450 million years ago; the first forests are 385.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/slow-loris-the-only-venomous-primate.mdx",
@@ -16070,7 +17635,12 @@
     "lastReviewed": "2026-07-28",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Slow Loris",
+    "myth": "No primate is venomous.",
+    "truth": "The slow loris mixes venom from a gland on its own arm into its saliva. In one clinical series, 43 percent of people bitten needed hospital care.",
+    "sourceCount": 9
   },
   {
     "path": "/content/guides/snake-brumation-guide.mdx",
@@ -16125,7 +17695,12 @@
     "relatedProducts": [
       "shallow-water-dish",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/stick-insect-cost-guide.mdx",
@@ -16183,7 +17758,12 @@
       "mantis-enclosure-exo-terra-nano-tall",
       "substrate-tarantula-coconut-fiber-peat",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
@@ -16233,7 +17813,12 @@
         "a": "Grabbing by a leg instead of the body, providing an enclosure too short for a proper molt, leaving an open water dish that can drown nymphs (mist for hydration instead), and feeding the wrong host plant for your specific species."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/stick-insect-health-issues-guide.mdx",
@@ -16286,7 +17871,12 @@
     "relatedProducts": [
       "digital-thermometer-hygrometer-combo",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/stick-insect-tank-setup-guide.mdx",
@@ -16345,7 +17935,12 @@
       "substrate-tarantula-coconut-fiber-peat",
       "fine-mist-spray-bottle",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sugar-glider-cost-guide.mdx",
@@ -16401,7 +17996,12 @@
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "sugar-glider-diet-exotic-nutrition-glider-complete",
       "small-pet-hideout-igloo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/sugar-glider-handling-guide.mdx",
@@ -16451,7 +18051,12 @@
         "a": "Almost entirely. Sugar gliders are arboreal marsupials capable of gliding across a room, and their bonding process is scent-based and pouch-centered rather than built around the gradual hand-feeding and short handling sessions most small mammals are tamed with. Approaching a glider with hamster-taming expectations tends to be frustrating for both of you."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sugar-glider-health-issues-guide.mdx",
@@ -16503,7 +18108,12 @@
     ],
     "relatedProducts": [
       "sugar-glider-diet-exotic-nutrition-glider-complete"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sugar-glider-legal-guide.mdx",
@@ -16544,7 +18154,12 @@
         "a": "Technically yes, but in practice almost never. Pennsylvania's Game Commission can issue possession permits, but they're rarely granted for pet sugar gliders. A bill to legalize ownership outright has been introduced multiple times since 2017 and remains stalled in committee."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/sugar-glider-tank-setup-guide.mdx",
@@ -16600,7 +18215,12 @@
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "sugar-glider-diet-exotic-nutrition-glider-complete",
       "small-pet-hideout-igloo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sulcata-hedgehog-lovebird-guppy-overview.mdx",
@@ -16646,7 +18266,12 @@
         "a": "Faster than most new owners expect. A female guppy can store sperm for 5 to 10 months after a single mating and produce up to about 8 separate broods from it without a male present again. A tank stocked with no population plan rarely stays the size it started at."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/sulcata-tortoise-cost-guide.mdx",
@@ -16702,7 +18327,12 @@
       "ceramic-heat-emitter-zoo-med-repticare-150w",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "calcium-tortoise-turtle-herbivorous-sulcata"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sulcata-tortoise-handling-guide.mdx",
@@ -16752,7 +18382,12 @@
         "a": "Yes. Sulcatas are strong, dedicated burrowers, expect extensive digging and tunneling wherever they're housed. They also ram and bulldoze objects, and sometimes each other, as a dominance display, this is normal behavior, not aggression directed at you."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/sulcata-tortoise-health-issues-guide.mdx",
@@ -16807,7 +18442,12 @@
       "calcium-tortoise-turtle-herbivorous-sulcata",
       "ceramic-heat-emitter-zoo-med-repticare-150w",
       "escape-proof-fencing"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/sulcata-tortoise-legal-guide.mdx",
@@ -16848,7 +18488,12 @@
         "a": "Yes. Sulcata isn't on California's restricted-species list. The species people are actually thinking of is the native desert tortoise, which is a different, protected species that is illegal to keep as a pet in California."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/sulcata-tortoise-tank-setup-guide.mdx",
@@ -16904,7 +18549,12 @@
       "ceramic-heat-emitter-zoo-med-repticare-150w",
       "uvb-zoo-med-reptisun-24in-high-output-hood",
       "basking-bulb-75w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tarantula-cost-guide.mdx",
@@ -16954,7 +18604,12 @@
       "cork-bark-round-hide",
       "shallow-water-dish",
       "dubia-roaches-bag"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/tarantula-feeding-guide.mdx",
@@ -17012,7 +18667,12 @@
     ],
     "relatedProducts": [
       "feeding-tongs-entomology-forceps-fine-tip"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/tarantula-handling-guide.mdx",
@@ -17058,7 +18718,12 @@
         "a": "No, never. A molting tarantula has a fragile new exoskeleton for weeks afterward, and disturbing, handling, or feeding it during this period is one of the few absolute rules in tarantula keeping."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tarantula-health-issues-guide.mdx",
@@ -17108,7 +18773,12 @@
       "shallow-water-dish",
       "digital-thermometer-hygrometer-combo",
       "dubia-roaches-bag"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/tarantula-tank-setup-guide.mdx",
@@ -17160,7 +18830,12 @@
       "fine-mist-spray-bottle",
       "digital-thermometer-hygrometer-combo",
       "dubia-roaches-bag"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tardigrades-the-toughest-creatures-on-earth-and-in-space.mdx",
@@ -17186,7 +18861,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Tardigrade",
+    "myth": "A tardigrade can survive anything, indefinitely.",
+    "truth": "Dried ones collapse past about 120 days. Every multi-decade survival on record was frozen, and the two states get confused constantly.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx",
@@ -17222,7 +18902,12 @@
       "rundik-snuffle-mat-dogs",
       "muddy-mat-door-mat",
       "mammoth-flossy-chews-rope-tug"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/the-incredible-axolotl-nature-s-smiling-salamander.mdx",
@@ -17256,7 +18941,12 @@
       "api-tap-water-conditioner",
       "paizoo-fish-tank-thermometer",
       "hide-cave-aquarium-decoration"
-    ]
+    ],
+    "factFile": true,
+    "animal": "Axolotl",
+    "myth": "The axolotl never grows up.",
+    "truth": "It reaches full adult size and breeds. The word is paedomorphosis, and the right hormone pushes it through metamorphosis anyway.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/the-octopus-has-three-hearts-and-uses-all-of-them.mdx",
@@ -17285,7 +18975,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Octopus",
+    "myth": "An octopus has nine brains, one in each arm.",
+    "truth": "It has one, a ring around its throat, plus a nerve cord running down every arm. That is remarkable enough without the upgrade.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/the-platypus-natures-most-wonderfully-bizarre-mammal.mdx",
@@ -17310,7 +19005,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Platypus",
+    "myth": "The platypus glows under UV light, and it must be for something.",
+    "truth": "So does nearly every mammal. It is a property of unpigmented fur, and this one hunts underwater with its eyes shut.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/tiger-salamander-cost-guide.mdx",
@@ -17370,7 +19070,12 @@
       "api-tap-water-conditioner",
       "shallow-water-dish",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tiger-salamander-handling-guide.mdx",
@@ -17424,7 +19129,12 @@
         "a": "More outgoing than a lot of amphibians, yes, they'll learn feeding routines and emerge from their burrow when they sense you nearby. But that personality doesn't translate into tolerance for regular handling."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tiger-salamander-health-issues-guide.mdx",
@@ -17478,7 +19188,12 @@
         "a": "Often carried by wild-caught feeders or wild-origin animals. A vet fecal exam is worth doing for peace of mind, especially given how commonly wild-caught stock shows up in this species' trade."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tiger-salamander-legal-guide.mdx",
@@ -17531,7 +19246,12 @@
         "a": "In the vast majority of the country, yes. The federal listing, the bait-trade rules, and native-species protections are three separate things, and none of them amount to a general pet-ownership ban. Always check your own state's exotic-pet rules directly, since this guide covers the federal and cross-state pattern, not every state's individual statute."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/tiger-salamander-tank-setup-guide.mdx",
@@ -17590,7 +19310,12 @@
       "substrate-tarantula-coconut-fiber-peat",
       "api-tap-water-conditioner",
       "shallow-water-dish"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tokay-gecko-cost-guide.mdx",
@@ -17650,7 +19375,12 @@
       "dimming-thermostat-exo-terra-proportional",
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",
@@ -17699,7 +19429,12 @@
         "a": "No. This is best suited to keepers with some prior reptile experience who are comfortable with an advanced, non-handleable pet, not a first reptile."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tokay-gecko-health-issues-guide.mdx",
@@ -17752,7 +19487,12 @@
     "relatedProducts": [
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/tokay-gecko-tank-setup-guide.mdx",
@@ -17810,7 +19550,12 @@
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "sphagnum-moss",
       "fine-mist-spray-bottle"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",
@@ -17836,7 +19581,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/uromastyx-cost-guide.mdx",
@@ -17896,7 +19646,12 @@
       "uromastyx-halogen-flood-bulb-100w",
       "substrate-zoo-med-reptisand-burrowing",
       "uromastyx-uro-grit-seed-pollen-supplement"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/uromastyx-feeding-guide.mdx",
@@ -17954,7 +19709,12 @@
     ],
     "relatedProducts": [
       "calcium-arcadia-earthpro-revitalised3"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/uromastyx-handling-guide.mdx",
@@ -18003,7 +19763,12 @@
         "a": "Rushing the taming process before the animal has genuinely settled, reaching in from above instead of the side or below, keeping the enclosure damp (which stresses this arid-adapted species), and underestimating how firm a defensive bite can be, uromastyx have strong jaws built for tough plant material."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/uromastyx-health-issues-guide.mdx",
@@ -18056,7 +19821,12 @@
     "relatedProducts": [
       "arcadia-t5-uvb-36in-14pct-dragon",
       "substrate-zoo-med-reptisand-burrowing"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/uromastyx-tank-setup-guide.mdx",
@@ -18116,7 +19886,12 @@
       "uromastyx-halogen-flood-bulb-100w",
       "substrate-zoo-med-reptisand-burrowing",
       "uvi-meter-solarmeter-6-5r"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/uromastyx-tokay-africangrey-jumpingspider-overview.mdx",
@@ -18170,7 +19945,12 @@
         "a": "No. Every invertebrate covered on this site relies on senses other than sharp vision, but jumping spiders hunt visually, tracking and stalking prey with genuinely good eyesight rather than waiting in a web."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/uvb-lighting-complete-guide.mdx",
@@ -18225,7 +20005,12 @@
       "uvb-arcadia-forest-6",
       "uvb-arcadia-desert-12",
       "arcadia-t5-uvb-36in-14pct-dragon"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/veiled-chameleon-cost-guide.mdx",
@@ -18282,7 +20067,12 @@
       "automatic-misting-system-fogger",
       "live-terrarium-plants",
       "calcium-repashy-plus-lod-3oz"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/veiled-chameleon-ferret-hognose-overview.mdx",
@@ -18328,7 +20118,12 @@
         "a": "A female veiled chameleon's much shorter lifespan from the toll of laying eggs, a ferret's high rate of costly endocrine disease starting around age 2 to 3, and, for a hognose, nothing especially dramatic at all, it's genuinely one of the lower-drama snakes to actually own once you understand the bluff."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/guides/veiled-chameleon-handling-guide.mdx",
@@ -18378,7 +20173,12 @@
         "a": "Grabbing from above instead of offering a hand from below or the side, handling frequently just because the chameleon looks interesting to hold, and misreading a stressed, gaping animal as angry rather than scared. Chameleons are prey animals that mask sickness well, so subtle changes matter."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/veiled-chameleon-health-issues-guide.mdx",
@@ -18433,7 +20233,12 @@
       "calcium-repashy-plus-lod-3oz",
       "automatic-misting-system-fogger",
       "basking-bulb-75w"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/veiled-chameleon-tank-setup-guide.mdx",
@@ -18489,7 +20294,12 @@
       "basking-bulb-75w",
       "automatic-misting-system-fogger",
       "live-terrarium-plants"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/weirdest-creatures-deep-sea-facts-that-will-blow-your-mind.mdx",
@@ -18515,7 +20325,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Deep Sea",
+    "myth": "Bioluminescence is a rare trick of the deep.",
+    "truth": "Three quarters of the animals counted in Monterey Bay make their own light, and the ratio barely shifts from the surface to 4,000 metres.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/what-finding-nemo-got-wrong-about-clownfish.mdx",
@@ -18545,7 +20360,12 @@
     "lastReviewed": "2026-07-29",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Clownfish",
+    "myth": "Marlin raises Nemo alone after Coral dies.",
+    "truth": "Every clownfish is born male. Marlin would have become female and paired with his own son.",
+    "sourceCount": 10
   },
   {
     "path": "/content/guides/when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you.mdx",
@@ -18570,7 +20390,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
@@ -18626,7 +20451,12 @@
       "digital-thermometer-hygrometer-combo",
       "calcium-repashy-plus-6oz",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/whites-tree-frog-handling-guide.mdx",
@@ -18676,7 +20506,12 @@
         "a": "No, and White's tree frog is very much the exception. Pacman frogs, another amphibian covered on this site, are the opposite case entirely: an ambush predator that strikes reflexively at anything finger-shaped and should never be handled by hand."
       }
     ],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/whites-tree-frog-health-issues-guide.mdx",
@@ -18731,7 +20566,12 @@
       "calcium-repashy-plus-6oz",
       "water-conditioner",
       "digital-thermometer-hygrometer-combo"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/whites-tree-frog-tank-setup-guide.mdx",
@@ -18787,7 +20627,12 @@
       "cork-bark-round-hide",
       "uvb-zoo-med-5-0-t5-ho-14in-hood",
       "water-conditioner"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/why-a-sloth-climbs-down-to-defecate.mdx",
@@ -18816,7 +20661,12 @@
     "lastReviewed": "2026-08-06",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Sloth",
+    "myth": "Sloths are too lazy to leave their tree.",
+    "truth": "One climbs all the way down once a week to defecate, and a large share of all sloth deaths happen during that trip.",
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/why-axolotls-need-cold-clean-water.mdx",
@@ -18843,7 +20693,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly.mdx",
@@ -18870,7 +20725,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/why-cats-need-mental-enrichment-and-how-boredom-can-break-them.mdx",
@@ -18896,7 +20756,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/why-parrots-need-social-interaction-and-what-loneliness-does-to-them.mdx",
@@ -18922,7 +20787,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it.mdx",
@@ -18948,7 +20818,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/why-wombats-produce-cube-shaped-droppings.mdx",
@@ -18977,7 +20852,12 @@
     "lastReviewed": "2026-07-30",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Wombat",
+    "myth": "A wombat has a square sphincter.",
+    "truth": "There is no such thing. The cube is shaped much further up, by stiff and stretchy bands in the intestine wall.",
+    "sourceCount": 10
   },
   {
     "path": "/content/guides/why-your-dog-needs-daily-exercise.mdx",
@@ -19005,7 +20885,12 @@
     "faqs": [],
     "relatedProducts": [
       "chuckit-ultra-ball-2-pack"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/wolverine-facts-the-toughest-animal-pound-for-pound.mdx",
@@ -19030,7 +20915,12 @@
     "lastReviewed": null,
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Wolverine",
+    "myth": "A wolverine will drive a bear, a cougar or a wolf pack off a kill.",
+    "truth": "That traces to one uncited sentence on a reference site. A camera study of 58 puma kills logged 20 scavenger species and no wolverine.",
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/wood-frog-freezes-solid-and-survives.mdx",
@@ -19060,7 +20950,12 @@
     "lastReviewed": "2026-07-31",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Wood Frog",
+    "myth": "Frozen solid means dead.",
+    "truth": "Two thirds of a wood frog turns to ice and its heart stops for weeks. Alaskan ones come back from minus 16 Celsius.",
+    "sourceCount": 10
   },
   {
     "path": "/content/fun-facts/10-surprising-argentine-tegu-facts.mdx",
@@ -19089,7 +20984,12 @@
     "lastReviewed": "2026-07-20",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-ball-python-facts.mdx",
@@ -19120,7 +21020,12 @@
     "lastReviewed": "2026-07-04",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-bearded-dragon-facts.mdx",
@@ -19151,7 +21056,12 @@
     "lastReviewed": "2026-06-19",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/10-surprising-betta-fish-facts.mdx",
@@ -19182,7 +21092,12 @@
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-cockatoo-facts.mdx",
@@ -19213,7 +21128,12 @@
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-emperor-scorpion-facts.mdx",
@@ -19243,7 +21163,12 @@
     "lastReviewed": "2026-07-09",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-fire-bellied-toad-facts.mdx",
@@ -19272,7 +21197,12 @@
     "lastReviewed": "2026-07-18",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-hedgehog-facts.mdx",
@@ -19300,7 +21230,12 @@
     "lastReviewed": "2026-07-14",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-hermit-crab-facts.mdx",
@@ -19331,7 +21266,12 @@
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-hissing-cockroach-facts.mdx",
@@ -19360,7 +21300,12 @@
     "lastReviewed": "2026-07-06",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-leopard-gecko-facts.mdx",
@@ -19391,7 +21336,12 @@
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-praying-mantis-facts.mdx",
@@ -19422,7 +21372,12 @@
     "lastReviewed": "2026-07-04",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/10-surprising-tarantula-facts.mdx",
@@ -19453,7 +21408,12 @@
     "lastReviewed": "2026-07-01",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/fun-facts/fun-facts-axolotl.mdx",
@@ -19484,7 +21444,12 @@
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-boa-constrictor.mdx",
@@ -19515,7 +21480,12 @@
     "lastReviewed": "2026-07-05",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-cuttlefish.mdx",
@@ -19546,7 +21516,12 @@
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-golden-retriever.mdx",
@@ -19580,7 +21555,12 @@
     "relatedProducts": [
       "deshedding-brush",
       "durable-chew-toys"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-humpback-whale.mdx",
@@ -19611,7 +21591,12 @@
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-octopus.mdx",
@@ -19642,7 +21627,12 @@
     "lastReviewed": "2026-06-26",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/fun-facts/fun-facts-rabbit.mdx",
@@ -19676,7 +21666,12 @@
     "relatedProducts": [
       "timothy-hay-small-pets",
       "litter-box"
-    ]
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6.mdx",
@@ -19708,7 +21703,12 @@
     "lastReviewed": "2026-07-14",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2.mdx",
@@ -19739,7 +21739,12 @@
     "lastReviewed": "2026-06-27",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-dragon-who-flew-part-8.mdx",
@@ -19771,7 +21776,12 @@
     "lastReviewed": "2026-07-18",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10.mdx",
@@ -19803,7 +21813,12 @@
     "lastReviewed": "2026-07-27",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11.mdx",
@@ -19835,7 +21850,12 @@
     "lastReviewed": "2026-08-03",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5.mdx",
@@ -19867,7 +21887,12 @@
     "lastReviewed": "2026-07-12",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-gl.mdx",
@@ -19899,7 +21924,12 @@
     "lastReviewed": "2026-07-07",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-t.mdx",
@@ -19928,7 +21958,12 @@
     "lastReviewed": "2026-06-27",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4.mdx",
@@ -19960,7 +21995,12 @@
     "lastReviewed": "2026-07-10",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9.mdx",
@@ -19992,7 +22032,12 @@
     "lastReviewed": "2026-07-20",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7.mdx",
@@ -20024,7 +22069,12 @@
     "lastReviewed": "2026-07-16",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-first-flight-part-4.mdx",
@@ -20056,7 +22106,12 @@
     "lastReviewed": "2026-07-12",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3.mdx",
@@ -20088,7 +22143,12 @@
     "lastReviewed": "2026-07-10",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-costume-part-9.mdx",
@@ -20120,7 +22180,12 @@
     "lastReviewed": "2026-07-24",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-at-the-park-part-11.mdx",
@@ -20152,7 +22217,12 @@
     "lastReviewed": "2026-08-03",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him.mdx",
@@ -20183,7 +22253,12 @@
     "lastReviewed": "2026-06-30",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-garden-the-squirrel.mdx",
@@ -20214,7 +22289,12 @@
     "lastReviewed": "2026-07-08",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8.mdx",
@@ -20246,7 +22326,12 @@
     "lastReviewed": "2026-07-20",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6.mdx",
@@ -20278,7 +22363,12 @@
     "lastReviewed": "2026-07-16",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10.mdx",
@@ -20310,7 +22400,12 @@
     "lastReviewed": "2026-07-27",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-night-of-the-owl-part-7.mdx",
@@ -20342,7 +22437,12 @@
     "lastReviewed": "2026-07-18",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5.mdx",
@@ -20374,6 +22474,11 @@
     "lastReviewed": "2026-07-14",
     "canonicalUrl": null,
     "faqs": [],
-    "relatedProducts": []
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
   }
 ]

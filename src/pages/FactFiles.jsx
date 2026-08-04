@@ -1,37 +1,96 @@
-import React from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { Clock, ChevronRight } from 'lucide-react';
-import { getMdxPostsByCategory } from '@/lib/mdxPosts';
-import LocalImage from '@/components/shared/LocalImage';
+import { Search } from 'lucide-react';
+import { mdxPosts } from '@/lib/mdxPosts';
+import FactFileRow from '@/components/shared/FactFileRow';
+import Pagination from '@/components/shared/Pagination';
+
+const PAGE_SIZE = 12;
+
+// Membership is the `factFile` frontmatter flag, not a category.
+//
+// Deriving it from "Wild Animals" would have been easier to author and wrong:
+// /blog/category/wild-animals/ is generated automatically from that category,
+// so both pages would list the same set and this one would be a duplicate of a
+// page the site already produces for free. A flag keeps the collection
+// deliberate and unmirrored.
+const ALL_FILES = mdxPosts
+  .filter(p => p.factFile && p.myth && p.truth)
+  .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+
+// The groups these actually fall into, counted from the posts themselves so a
+// filter never appears for a group with nothing behind it.
+const GROUPS = (() => {
+  const counts = new Map();
+  for (const p of ALL_FILES) {
+    for (const c of p.allCategories?.length ? p.allCategories : [p.category]) {
+      if (c) counts.set(c, (counts.get(c) || 0) + 1);
+    }
+  }
+  return [...counts.entries()].sort((a, b) => b[1] - a[1]);
+})();
 
 export default function FactFiles() {
-  const posts = [...getMdxPostsByCategory('Fun Facts')].sort(
-    (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
+  const [search, setSearch] = useState('');
+  const [group, setGroup] = useState('All');
+  const [page, setPage] = useState(1);
+  const listRef = useRef(null);
+
+  const query = search.trim().toLowerCase();
+
+  const filtered = useMemo(() => {
+    return ALL_FILES.filter(p => {
+      const inGroup =
+        group === 'All' ||
+        (p.allCategories?.length ? p.allCategories : [p.category]).includes(group);
+      // Searches the correction and the claim as well as the title, because
+      // what someone remembers is usually the fact, not the headline.
+      const matches =
+        !query ||
+        p.title.toLowerCase().includes(query) ||
+        (p.myth || '').toLowerCase().includes(query) ||
+        (p.truth || '').toLowerCase().includes(query);
+      return inGroup && matches;
+    });
+  }, [group, query]);
+
+  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
+  const paginated = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
+
+  const mostSourced = useMemo(
+    () => [...ALL_FILES].sort((a, b) => b.sourceCount - a.sourceCount).slice(0, 4),
+    []
   );
+  const totalSources = ALL_FILES.reduce((n, p) => n + p.sourceCount, 0);
+
+  const reset = (fn) => { fn(); setPage(1); };
 
   const canonicalUrl = 'https://beastlyfacts.com/fact-files/';
-  const pageTitle = 'Fact Files - Deep-Dive Animal Facts | Beastly Facts';
-  const pageDescription = 'In-depth fact files on your favorite species - surprising, well-researched deep dives into reptiles, exotics, and more.';
+  const pageTitle = 'Fact Files - Wild Animal Claims, Checked | Beastly Facts';
+  const pageDescription =
+    'Wild animal features fact-checked against primary sources. Each one shows the claim it overturns, what replaced it, and how many sources back it.';
 
   const itemListSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": posts.map((post, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "url": `https://beastlyfacts.com/blog/${post.slug.current}/`,
-      "name": post.title,
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: ALL_FILES.map((post, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://beastlyfacts.com/blog/${post.slug.current}/`,
+      name: post.title,
     })),
   };
 
   return (
-    <div className="min-h-screen pt-12 px-4 sm:px-6 pb-16">
+    <div className="min-h-screen px-4 pb-16 pt-12 sm:px-6">
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={canonicalUrl} />
+        <meta name="robots" content="index,follow" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
@@ -45,69 +104,140 @@ export default function FactFiles() {
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
 
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <span className="text-3xl mb-2 block">🗂️</span>
-          <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Fact Files</h1>
-          <p className="text-sm text-muted-foreground font-body max-w-lg">
-            Deep-dive fact files on your favorite species - the surprising, well-researched stuff that goes beyond a quick fact card.
+          <h1 className="mb-2 font-display text-3xl font-bold text-foreground sm:text-4xl">Fact Files</h1>
+          <p className="max-w-xl font-body text-sm text-muted-foreground">
+            Wild animal features, checked against primary sources. Each one opens with the claim it
+            overturns and what the evidence actually says.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {posts.map((post, i) => (
-            <motion.div
-              key={post._id}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: (i % 6) * 0.05 }}
-            >
-              <Link
-                to={`/blog/${post.slug.current}/`}
-                state={{ from: 'fact-files' }}
-                className="group block h-full bg-card border border-border rounded-2xl overflow-hidden hover:border-secondary/50 hover:shadow-md hover:shadow-secondary/10 transition-all"
-              >
-                {post.image && (
-                  <div className="aspect-video overflow-hidden">
-                    {/* variant="card" matters here. Without it LocalImage serves
-                        the -thumb tier, which is a 240x240 square meant for
-                        icon-sized slots, and these are ~300-380px wide 16:9
-                        cards - so it was being upscaled roughly 1.5x and
-                        cropped, which is why this page looked so much worse
-                        than the rest of the site. The -card tier is 640x480
-                        with a 2x companion, and public/assets/images is already
-                        in CARD_VARIANT_DIRS so the files exist. */}
-                    <LocalImage src={post.image} alt={post.imageAlt || post.title} variant="card" className="w-full h-full object-cover" loading="lazy" />
-                  </div>
-                )}
-                <div className="p-4">
-                  <h2 className="font-display font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug mb-2">
-                    {post.title}
-                  </h2>
-                  <p className="text-xs text-muted-foreground font-body leading-relaxed line-clamp-3 mb-3">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-xs font-display font-semibold text-muted-foreground">
-                    {post.readTime && (
-                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" />{`${post.readTime} min read`}</span>
-                    )}
-                    <span className="flex items-center gap-1 text-secondary group-hover:gap-1.5 transition-all ml-auto">
-                      Read <ChevronRight className="w-3.5 h-3.5" />
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
+        {/* Same 2/3 + 1/3 split the Critter Digest listing uses, so the two read
+            as siblings. The rows carry the difference. */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="lg:col-span-2">
+            <div className="relative mb-5 max-w-md">
+              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search claims and corrections..."
+                value={search}
+                onChange={e => reset(() => setSearch(e.target.value))}
+                className="w-full rounded-xl border border-border bg-card py-2.5 pl-10 pr-4 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-secondary/50"
+              />
+            </div>
 
-        {posts.length === 0 && (
-          <div className="text-center py-20">
-            <span className="text-4xl block mb-3">🔍</span>
-            <p className="text-sm text-muted-foreground font-body">No fact files yet - check back soon!</p>
+            <p className="mb-4 font-body text-xs text-muted-foreground">
+              {`${filtered.length} ${filtered.length === 1 ? 'file' : 'files'}`}
+              {totalPages > 1 && ` · Page ${safePage} of ${totalPages}`}
+            </p>
+
+            {filtered.length > 0 ? (
+              <>
+                <div ref={listRef} className="space-y-5">
+                  {paginated.map(post => (
+                    <FactFileRow
+                      key={post._id}
+                      entry={{
+                        slug: post.slug.current,
+                        animal: post.animal || post.category,
+                        myth: post.myth,
+                        truth: post.truth,
+                        sources: post.sourceCount,
+                        image: post.image,
+                        imageAlt: post.imageAlt,
+                      }}
+                    />
+                  ))}
+                </div>
+
+                <div className="mt-10">
+                  <Pagination page={safePage} totalPages={totalPages} onChange={setPage} scrollTo={listRef} />
+                </div>
+              </>
+            ) : (
+              <div className="py-16 text-center">
+                <p className="font-display font-bold text-foreground">No files match "{search}"</p>
+                <p className="mt-1 font-body text-sm text-muted-foreground">
+                  Try a different term, or{' '}
+                  <button
+                    type="button"
+                    onClick={() => reset(() => { setSearch(''); setGroup('All'); })}
+                    className="font-display font-semibold text-secondary hover:underline"
+                  >
+                    clear the filters
+                  </button>
+                  .
+                </p>
+              </div>
+            )}
           </div>
-        )}
+
+          <aside className="space-y-6">
+            <div className="rounded-xl border border-border bg-card p-4">
+              <h2 className="mb-3 font-display text-sm font-bold text-foreground">Browse by group</h2>
+              <div className="flex flex-wrap gap-2">
+                {[['All', ALL_FILES.length], ...GROUPS].map(([name, count]) => (
+                  <button
+                    key={name}
+                    type="button"
+                    onClick={() => reset(() => setGroup(name))}
+                    aria-pressed={group === name}
+                    className={`rounded-full px-3 py-1.5 font-display text-xs font-semibold transition-all ${
+                      group === name
+                        ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
+                        : 'border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-foreground'
+                    }`}
+                  >
+                    {name} <span className="opacity-60">{count}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card p-4">
+              <h2 className="mb-1 font-display text-sm font-bold text-foreground">What these are</h2>
+              <p className="font-body text-xs leading-relaxed text-muted-foreground">
+                {ALL_FILES.length} wild animal features, checked against {totalSources} primary
+                sources between them. Each lists the claim it corrects and what backs the
+                correction.
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card p-4">
+              <h2 className="mb-3 font-display text-sm font-bold text-foreground">Most sourced</h2>
+              <ul className="space-y-2">
+                {mostSourced.map(p => (
+                  <li key={p._id}>
+                    <Link
+                      to={`/blog/${p.slug.current}/`}
+                      className="flex items-start justify-between gap-2 font-body text-xs text-muted-foreground hover:text-secondary"
+                    >
+                      <span className="line-clamp-2">{p.title}</span>
+                      <span className="flex-shrink-0 font-display font-semibold text-secondary">
+                        {p.sourceCount}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded-xl border border-border bg-card p-4">
+              <h2 className="mb-1 font-display text-sm font-bold text-foreground">Wild animals, in short</h2>
+              <p className="mb-3 font-body text-xs leading-relaxed text-muted-foreground">
+                The same animals as one-screen profiles rather than long reads.
+              </p>
+              <Link
+                to="/beastlypedia/"
+                className="font-display text-xs font-semibold text-secondary hover:underline"
+              >
+                Browse Beastlypedia →
+              </Link>
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
   );

@@ -98,6 +98,17 @@ function toPost(meta) {
     canonicalUrl: meta.canonicalUrl,
     faqs: meta.faqs,
     relatedProducts: meta.relatedProducts || [],
+
+    // Fact Files. `factFile` is an explicit frontmatter flag rather than a
+    // category, so /fact-files/ never mirrors an auto-generated
+    // /blog/category/<x>/ page. myth and truth are the claim the article
+    // overturns and what replaced it; sourceCount is counted from the real
+    // <Sources> list at sync time, so it cannot go stale.
+    factFile: Boolean(meta.factFile),
+    animal: meta.animal || null,
+    myth: meta.myth || null,
+    truth: meta.truth || null,
+    sourceCount: meta.sourceCount || 0,
   };
 }
 

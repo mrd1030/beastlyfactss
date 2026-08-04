@@ -47,6 +47,14 @@ function parseFrontmatter(content) {
 const isTruthyFlag = (v) => v === true || v === 'true';
 const isUnpublished = (fm) => Boolean(fm.status && fm.status !== 'published');
 
+// Number of entries in the article's <Sources> list. Derived, never authored:
+// a frontmatter number would silently go stale the moment a source moved.
+function countSources(body = '') {
+  const block = body.match(/<Sources>([\s\S]*?)<\/Sources>/);
+  if (!block) return 0;
+  return (block[1].match(/^\s*-\s+/gm) || []).length;
+}
+
 function readDir(dir) {
   const dirPath = path.join('content', dir);
   if (!fs.existsSync(dirPath)) return [];
@@ -54,7 +62,10 @@ function readDir(dir) {
     .filter(f => f.endsWith('.mdx'))
     .map(file => {
       const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
-      return { dir, file, fm: parseFrontmatter(raw) };
+      // body as well as frontmatter: the Fact Files source count is counted
+      // from the real <Sources> list rather than declared in frontmatter, so
+      // it cannot drift when a source is added or removed.
+      return { dir, file, fm: parseFrontmatter(raw), body: raw.replace(/^---[\s\S]*?\r?\n---\r?\n/, '') };
     });
 }
 
@@ -153,7 +164,7 @@ console.log(`Synced ${articles.length} MDX articles + ${chronicles.length} MDX c
 // they just stay out of the RSS metadata above); unpublished ones are.
 const mdxMeta = [];
 for (const dir of [...CONTENT_DIRS, 'short-story']) {
-  for (const { file, fm } of readDir(dir)) {
+  for (const { file, fm, body } of readDir(dir)) {
     if (isUnpublished(fm)) continue;
 
     mdxMeta.push({
@@ -189,6 +200,21 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       canonicalUrl: fm.canonicalUrl || null,
       faqs: Array.isArray(fm.faqs) ? fm.faqs : [],
       relatedProducts: Array.isArray(fm.relatedProducts) ? fm.relatedProducts : [],
+      // Fact Files membership is an explicit frontmatter flag, not a category.
+      // Deriving it from "Wild Animals" would have been tidier to author but
+      // wrong: /blog/category/wild-animals/ is generated automatically from
+      // that same category, so the two pages would list an identical set and
+      // Fact Files would be a duplicate of a page that already exists for free.
+      // A flag keeps membership deliberate and unmirrored.
+      factFile: isTruthyFlag(fm.factFile),
+      // The beast the file is about, for the folder tab. Not the category:
+      // every tab read "WILD ANIMALS" when it was fed that.
+      animal: fm.animal || null,
+      // The claim the article overturns, and what replaced it. This pairing is
+      // the entire reason the page is not just a filtered blog listing.
+      myth: fm.myth || null,
+      truth: fm.truth || null,
+      sourceCount: countSources(body),
     });
   }
 }
