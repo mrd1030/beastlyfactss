@@ -1,14 +1,15 @@
-import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import React, { useState, useMemo, useCallback, useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
 import { slugify } from '@/lib/utils/slugify';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from '@/lib/motion-safe';
-import { Search, ChevronLeft, ChevronRight, Shuffle } from 'lucide-react';
+import { Search, Shuffle } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor, absoluteImageFor } from '@/lib/data/factImages';
 import FactCard from '@/components/shared/FactCard';
+import Pagination from '@/components/shared/Pagination';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 
@@ -35,6 +36,7 @@ export default function Facts() {
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
   const [page, setPage] = useState(1);
+  const listRef = useRef(null);
   const [randomized, setRandomized] = useState(false);
   const [randomOrder, setRandomOrder] = useState([]);
 
@@ -131,7 +133,11 @@ export default function Facts() {
   }, [randomized, filtered]);
 
   const totalPages = Math.ceil(displayFacts.length / PAGE_SIZE); 
-  const paginated = displayFacts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE); 
+  // Clamped, because page comes from ?page= and nothing stops a stale or
+  // hand-edited link asking for a page past the end. Unclamped that renders
+  // an empty list with no page highlighted rather than the last page.
+  const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
+  const paginated = displayFacts.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value); 
@@ -148,94 +154,6 @@ export default function Facts() {
       urlParams.delete('page');
     }
     navigate({ search: urlParams.toString() });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // 🌟 Clean Sliding Page Window Logic (Max 5 buttons visible)
-  const visiblePages = useMemo(() => {
-    const maxVisible = 5;
-    let start = Math.max(1, page - Math.floor(maxVisible / 2));
-    let end = Math.min(totalPages, start + maxVisible - 1);
-
-    if (end - start + 1 < maxVisible) {
-      start = Math.max(1, end - maxVisible + 1);
-    }
-
-    const pages = [];
-    for (let i = start; i <= end; i++) {
-      pages.push(i);
-    }
-    return pages;
-  }, [page, totalPages]);
-
-  // 🌟 Centered & Compact Pagination Component
-  const renderPagination = () => {
-    if (totalPages <= 1) return null;
-    return (
-      <div className="flex items-center justify-center gap-2 bg-card border border-border/60 p-1.5 rounded-xl shadow-sm max-w-max mx-auto">
-        <button
-          onClick={() => handlePageChange(page - 1)}
-          disabled={page === 1}
-          className="flex items-center justify-center w-8 h-8 rounded-lg bg-muted/60 border border-border/50 text-muted-foreground disabled:opacity-40 hover:text-foreground hover:border-secondary/40 transition-all"
-          aria-label="Previous page"
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </button>
-
-        <div className="hidden sm:flex items-center gap-1">
-          {visiblePages[0] > 1 && (
-            <>
-              <button
-                onClick={() => handlePageChange(1)}
-                className="w-8 h-8 rounded-lg text-xs font-display font-bold text-muted-foreground hover:border-border border border-transparent transition-all"
-              >
-                1
-              </button>
-              {visiblePages[0] > 2 && <span className="text-muted-foreground text-xs px-0.5">...</span>}
-            </>
-          )}
-
-          {visiblePages.map(p => (
-            <button
-              key={p}
-              onClick={() => handlePageChange(p)}
-              className={`w-8 h-8 rounded-lg text-xs font-display font-bold transition-all ${
-                p === page
-                  ? 'bg-secondary text-secondary-foreground shadow-sm'
-                  : 'bg-transparent border border-transparent text-muted-foreground hover:border-border'
-              }`}
-            >
-              {p}
-            </button>
-          ))}
-
-          {visiblePages[visiblePages.length - 1] < totalPages && (
-            <>
-              {visiblePages[visiblePages.length - 1] < totalPages - 1 && <span className="text-muted-foreground text-xs px-0.5">...</span>}
-              <button
-                onClick={() => handlePageChange(totalPages)}
-                className="w-8 h-8 rounded-lg text-xs font-display font-bold text-muted-foreground hover:border-border border border-transparent transition-all"
-              >
-                {totalPages}
-              </button>
-            </>
-          )}
-        </div>
-
-        <span className="sm:hidden text-xs font-display font-bold px-2 text-muted-foreground">
-          {`${page} / ${totalPages}`}
-        </span>
-
-        <button
-          onClick={() => handlePageChange(page + 1)}
-          disabled={page === totalPages}
-          className="flex items-center justify-center w-8 h-8 rounded-lg bg-muted/60 border border-border/50 text-muted-foreground disabled:opacity-40 hover:text-foreground hover:border-secondary/40 transition-all"
-          aria-label="Next page"
-        >
-          <ChevronRight className="w-4 h-4" />
-        </button>
-      </div>
-    );
   };
 
   const pageTitle = linkedFact
@@ -360,17 +278,17 @@ export default function Facts() {
           <p className="text-xs text-muted-foreground font-body">
             {`${displayFacts.length} facts found`}
             {randomized && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
-            {totalPages > 1 && <span>{` · Page ${page} of ${totalPages}`}</span>}
+            {totalPages > 1 && <span>{` · Page ${safePage} of ${totalPages}`}</span>}
           </p>
           
           {/* 🌟 Fully Centered, Safe-Width Upper Pagination Row */}
           <div className="w-full">
-            {renderPagination()}
+            <Pagination page={safePage} totalPages={totalPages} onChange={handlePageChange} />
           </div>
         </div>
 
         {/* Fact Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div ref={listRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {paginated.map((fact, i) => (
             <div key={fact.id || fact.factNumber} className="relative">
               <span className="absolute top-2 left-2 z-10 bg-primary/80 text-primary-foreground text-xs font-display font-bold px-1.5 py-0.5 rounded-md">
@@ -392,7 +310,7 @@ export default function Facts() {
 
         {/* Lower Pagination Row */}
         <div className="mt-10">
-          {renderPagination()}
+          <Pagination page={safePage} totalPages={totalPages} onChange={handlePageChange} scrollTo={listRef} />
         </div>
       </div>
 

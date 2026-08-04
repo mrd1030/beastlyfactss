@@ -22,6 +22,7 @@ import TableOfContents from '@/components/blog/TableOfContents';
 import GlossaryHighlighter from '@/components/blog/GlossaryHighlighter';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import CompactPostCard from '@/components/shared/CompactPostCard';
+import Pagination from '@/components/shared/Pagination';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
@@ -171,7 +172,11 @@ export default function Blog() {
   const categories = Array.from(categoryMap.values()).sort((a, b) => a.title.localeCompare(b.title));
 
   const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
-  const paginated = filtered.slice((page - 1) * POSTS_PER_PAGE, page * POSTS_PER_PAGE);
+  // Clamped, because page comes from ?page= and nothing stops a stale or
+  // hand-edited link asking for a page past the end. Unclamped that renders
+  // an empty list with no page highlighted rather than the last page.
+  const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
+  const paginated = filtered.slice((safePage - 1) * POSTS_PER_PAGE, safePage * POSTS_PER_PAGE);
 
   // Fact Files links to posts with router state flagging where they came from,
   // so the post view can send readers back there instead of always to the blog.
@@ -208,13 +213,6 @@ export default function Blog() {
     const urlParams = new URLSearchParams();
     if (newPage > 1) urlParams.set('page', newPage.toString());
     navigate({ pathname: catPath, search: urlParams.toString() });
-
-    setTimeout(() => {
-      if (listRef.current) {
-        const top = listRef.current.getBoundingClientRect().top + window.scrollY - 80;
-        window.scrollTo({ top, behavior: 'smooth' });
-      }
-    }, 50);
   };
 
   if (selectedPost) {
@@ -323,6 +321,11 @@ export default function Blog() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
+            {/* No scrollTo: this sits above the list already. */}
+            <div className="mb-4">
+              <Pagination page={safePage} totalPages={totalPages} onChange={handlePageChange} />
+            </div>
+
             <div ref={listRef} className="space-y-3 mb-6">
               {paginated.map((post, i) => (
                 <motion.div key={post._id} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.04 }}>
@@ -338,17 +341,14 @@ export default function Blog() {
               )}
             </div>
 
-            {totalPages > 1 && (
-              <div className="flex items-center justify-between mt-6">
-                <button onClick={() => handlePageChange(page - 1)} disabled={page === 1} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
-                  Previous
-                </button>
-                <span className="text-sm text-muted-foreground">{`Page ${page} of ${totalPages}`}</span>
-                <button onClick={() => handlePageChange(page + 1)} disabled={page === totalPages} className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-display font-semibold bg-card border border-border text-muted-foreground hover:text-foreground disabled:opacity-40">
-                  Next
-                </button>
+            <div className="mt-6">
+                <Pagination
+                  page={safePage}
+                  totalPages={totalPages}
+                  onChange={handlePageChange}
+                  scrollTo={listRef}
+                />
               </div>
-            )}
           </div>
 
           <div className="space-y-5">

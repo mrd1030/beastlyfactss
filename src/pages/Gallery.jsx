@@ -1,5 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { Heart, Share2, Check } from 'lucide-react';
 import { facts, categories } from '@/lib/data/facts';
@@ -8,12 +9,23 @@ import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
+import Pagination from '@/components/shared/Pagination';
 
 const PAGE_SIZE = 30;
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const listRef = useRef(null);
   const [page, setPage] = useState(1);
+
+  // Read ?page= back on mount and on any history move, so back and forward
+  // return to the page you were on rather than silently resetting to 1.
+  useEffect(() => {
+    const p = parseInt(new URLSearchParams(location.search).get('page'), 10);
+    setPage(Number.isFinite(p) && p > 0 ? p : 1);
+  }, [location.search]);
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
   const { toggleFavorite, isFavorite } = useFavoritesCtx();
@@ -56,18 +68,28 @@ export default function Gallery() {
   }, [withPhotos, activeCategory]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  // Clamped, because page comes from ?page= and nothing stops a stale or
+  // hand-edited link asking for a page past the end. Unclamped that renders
+  // an empty list with no page highlighted rather than the last page.
+  const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
+  const paginated = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
+
+  const setPageParam = (newPage) => {
+    const params = new URLSearchParams(location.search);
+    if (newPage > 1) params.set('page', String(newPage));
+    else params.delete('page');
+    navigate({ search: params.toString() }, { replace: false });
+  };
 
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat);
-    setPage(1);
+    setPageParam(1);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handlePageChange = (newPage) => {
-    setPage(newPage);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  // No scrolling here. Pagination handles it, and only for the copy below
+  // the grid, since the one above it is already at the top.
+  const handlePageChange = (newPage) => setPageParam(newPage);
 
   return (
     <div className="min-h-screen">
@@ -120,11 +142,17 @@ export default function Gallery() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
-        <p className="text-xs text-muted-foreground font-body text-center mb-6">
-          {`${filtered.length} photos${totalPages > 1 ? ` · Page ${page} of ${totalPages}` : ''}`}
+        <p className="text-xs text-muted-foreground font-body text-center mb-4">
+          {`${filtered.length} photos${totalPages > 1 ? ` · Page ${safePage} of ${totalPages}` : ''}`}
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+        {/* No scrollTo on this one: it sits above the grid, so you are already
+            where a scroll would put you. */}
+        <div className="mb-6">
+          <Pagination page={safePage} totalPages={totalPages} onChange={handlePageChange} />
+        </div>
+
+        <div ref={listRef} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
           {/* A div, not a button, because the save and share controls are
               themselves buttons and nesting interactive elements is invalid and
               breaks keyboard behaviour. The tile itself is a button filling the
@@ -205,23 +233,14 @@ export default function Gallery() {
           </div>
         )}
 
-        {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-2 mt-10">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map(p => (
-              <button
-                key={p}
-                onClick={() => handlePageChange(p)}
-                className={`w-8 h-8 rounded-lg text-xs font-display font-bold transition-all ${
-                  p === page
-                    ? 'bg-secondary text-secondary-foreground shadow-sm'
-                    : 'bg-card border border-border text-muted-foreground hover:border-secondary/40'
-                }`}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className="mt-10">
+          <Pagination
+            page={safePage}
+            totalPages={totalPages}
+            onChange={handlePageChange}
+            scrollTo={listRef}
+          />
+        </div>
       </div>
 
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
