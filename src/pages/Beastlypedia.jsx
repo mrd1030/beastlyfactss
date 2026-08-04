@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { beastfiles, beastfileGroups } from '@/lib/data/beastlypedia';
 import BeastfileCard from '@/components/beastlypedia/BeastfileCard';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
@@ -11,8 +11,6 @@ const DESCRIPTION =
 
 export default function Beastlypedia() {
   const { groupSlug } = useParams();
-  const navigate = useNavigate();
-
   const activeGroup = useMemo(() => {
     if (!groupSlug) return 'All';
     return beastfileGroups.find((g) => g.slug === groupSlug)?.name || 'All';
@@ -40,11 +38,23 @@ export default function Beastlypedia() {
     return beastfileGroups.filter((g) => counts.has(g.name));
   }, []);
 
-  const selectGroup = (group) => {
-    // URL-driven so a filtered view is linkable and prerenderable, matching
-    // how /encyclopedia/category/ and /guides/category/ already behave.
-    navigate(group === 'All' ? '/beastlypedia/' : `/beastlypedia/group/${group.slug}/`);
-  };
+  // URL-driven so a filtered view is linkable and prerenderable, matching how
+  // /encyclopedia/category/ and /guides/category/ already behave.
+  //
+  // These are real links rather than buttons calling navigate(), which is what
+  // they were. Every one of these group pages is prerendered and in the
+  // sitemap, but with no anchor pointing at them a crawler could only reach
+  // them from the sitemap, and no internal link weight flowed through. Facts
+  // already renders its category pills this way.
+  const groupPath = (group) =>
+    group === 'All' ? '/beastlypedia/' : `/beastlypedia/group/${group.slug}/`;
+
+  const pillClass = (isActive) =>
+    `px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
+      isActive
+        ? 'bg-secondary text-secondary-foreground border-secondary'
+        : 'bg-card text-muted-foreground border-border hover:border-secondary/40'
+    }`;
 
   const canonical = activeGroup === 'All' ? CANONICAL : `${CANONICAL}group/${groupSlug}/`;
   const title =
@@ -91,30 +101,17 @@ export default function Beastlypedia() {
         </header>
 
         <div className="flex flex-wrap gap-2 mb-5">
-          <button
-            type="button"
-            onClick={() => selectGroup('All')}
-            className={`px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
-              activeGroup === 'All'
-                ? 'bg-secondary text-secondary-foreground border-secondary'
-                : 'bg-card text-muted-foreground border-border hover:border-secondary/40'
-            }`}
-          >
+          <Link to={groupPath('All')} className={pillClass(activeGroup === 'All')}>
             All
-          </button>
+          </Link>
           {populatedGroups.map((g) => (
-            <button
+            <Link
               key={g.slug}
-              type="button"
-              onClick={() => selectGroup(g)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
-                activeGroup === g.name
-                  ? 'bg-secondary text-secondary-foreground border-secondary'
-                  : 'bg-card text-muted-foreground border-border hover:border-secondary/40'
-              }`}
+              to={groupPath(g)}
+              className={pillClass(activeGroup === g.name)}
             >
               {`${g.emoji} ${g.name}`}
-            </button>
+            </Link>
           ))}
         </div>
 

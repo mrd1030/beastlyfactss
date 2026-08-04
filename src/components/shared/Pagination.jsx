@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useLocation } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { isPlainLeftClick } from '@/lib/utils/linkClick';
 
 // One pagination control for Blog, Facts and Gallery.
 //
@@ -114,7 +115,7 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
   // middle-click and cmd/ctrl-click still open a page in a new tab. Otherwise
   // take over and keep the existing in-place navigation.
   const clickHandler = (p) => (e) => {
-    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    if (!isPlainLeftClick(e)) return;
     e.preventDefault();
     go(p);
   };

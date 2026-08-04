@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Clock, Calendar } from 'lucide-react';
 import LocalImage from '@/components/shared/LocalImage';
 import { getDisplayDate } from '@/lib/utils/date';
+import { isPlainLeftClick } from '@/lib/utils/linkClick';
 
 export default function CompactPostCard({ post, onClick }) {
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
@@ -23,10 +24,13 @@ export default function CompactPostCard({ post, onClick }) {
   const category = post.category || post.animalType || 'Article';
   const slug = post.slug?.current || post._id || post.id;
 
+  // The onClick below only takes over a plain left click. It used to
+  // preventDefault every click, so cmd/ctrl clicking an article card did
+  // nothing at all.
   return (
     <a
       href={`/blog/${slug}/`}
-      onClick={e => { e.preventDefault(); onClick?.(e); }}
+      onClick={e => { if (!isPlainLeftClick(e)) return; e.preventDefault(); onClick?.(e); }}
       className="flex items-start gap-3 bg-card border border-border rounded-xl p-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
     >
       {/* Image */}

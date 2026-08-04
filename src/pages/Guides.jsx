@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
-import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
+import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ChevronRight, Info, Search } from 'lucide-react';
 import { allGuides } from '@/lib/data/guides';
@@ -53,7 +53,6 @@ const resolveFilter = (slug) => {
 };
 
 export default function Guides() {
-  const navigate = useNavigate();
   const location = useLocation();
   const { category } = useParams();
 
@@ -152,23 +151,24 @@ export default function Guides() {
             {[
               { id: 'encyclopedia', label: '📚 Encyclopedia' },
               { id: 'guides', label: '📖 Care Guides' },
-            ].map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  const destination = tab.id === 'encyclopedia'
-                    ? (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`)
-                    : '/guides/';
+            ].map(tab => {
+              const destination = tab.id === 'encyclopedia'
+                ? (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`)
+                : '/guides/';
 
-                  navigate(destination, { state: { returnTo: destination } });
-                }}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-body font-bold transition-all ${
-                  tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+              return (
+                <Link
+                  key={tab.id}
+                  to={destination}
+                  state={{ returnTo: destination }}
+                  className={`flex-1 py-2 px-3 rounded-xl text-center text-xs font-body font-bold transition-all ${
+                    tab.id === 'guides' ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  {tab.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { hasNoindexStateParams } from '@/lib/seo/queryRobots';
-import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
+import { useLocation, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { Search, ChevronRight, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
@@ -55,7 +55,6 @@ const subtypes = {
 };
 
 export default function Encyclopedia() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   const { encCat, guideFilter } = useParams();
@@ -207,24 +206,29 @@ export default function Encyclopedia() {
                 pointed at each other. */}
             <CrossLinkCta to="/beastlypedia/" label="Looking for wild animals instead?" />
           </motion.div>
+          {/* Links, not buttons calling navigate(). Both destinations are
+              prerendered and in the sitemap, but with no anchor a crawler had
+              to find them there rather than by following a link, and no
+              internal weight passed between the two halves of this page. */}
           <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
-            {TABS.map(tab => (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  const destination = tab.id === 'guides'
-                    ? (activeCategory === 'All' ? '/guides/' : `/guides/category/${toSlug(activeCategory)}/`)
-                    : (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`);
+            {TABS.map(tab => {
+              const destination = tab.id === 'guides'
+                ? (activeCategory === 'All' ? '/guides/' : `/guides/category/${toSlug(activeCategory)}/`)
+                : (activeFilter === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeFilter)}/`);
 
-                  navigate(destination, { state: { returnTo: destination } });
-                }}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-body font-bold transition-all ${
-                  activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+              return (
+                <Link
+                  key={tab.id}
+                  to={destination}
+                  state={{ returnTo: destination }}
+                  className={`flex-1 py-2 px-3 rounded-xl text-center text-xs font-body font-bold transition-all ${
+                    activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  {tab.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -236,7 +240,6 @@ export default function Encyclopedia() {
           activeCategory={activeCategory}
           setActiveCategory={setActiveCategory}
           grouped={grouped}
-          navigate={navigate}
           onOpenLegend={() => setIsLegendOpen(true)}
           currentListPath={activeCategory === 'All' ? '/encyclopedia/' : `/encyclopedia/category/${toSlug(activeCategory)}/`}
         />
@@ -250,7 +253,6 @@ export default function Encyclopedia() {
           setActiveSubtype={setActiveSubtype}
           filteredGuides={filteredGuides}
           onOpenLegend={() => setIsLegendOpen(true)}
-          navigate={navigate}
           currentListPath={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
         />
       )}
@@ -280,7 +282,7 @@ export default function Encyclopedia() {
   );
 }
 
-function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, navigate, onOpenLegend, currentListPath }) {
+function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory, grouped, onOpenLegend, currentListPath }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
@@ -347,18 +349,21 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
   );
 } 
 
-function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, navigate, currentListPath }) {
+function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeSubtype, setActiveSubtype, filteredGuides, onOpenLegend, currentListPath }) {
   return (
     <div>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-4">
         {/* Category filter */}
         <div className="flex flex-wrap gap-2 mb-3">
+          {/* Straight to /guides/category/, which is the prerendered page in
+              the sitemap. These pointed at /encyclopedia/guides/<slug>/, which
+              only exists to 301 here (see _redirects), so every filter click
+              spent a redirect hop and any crawler following one would too. */}
           {guideFilters.map(f => (
-            <button
+            <Link
               key={f.label}
+              to={f.label === 'All' ? '/guides/' : `/guides/category/${toSlug(f.label)}/`}
               onClick={() => {
-                const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
-                navigate(f.label === 'All' ? '/encyclopedia/guides/' : `/encyclopedia/guides/${slug}/`);
                 setDogSize('All Sizes'); setActiveSubtype(null);
                 trackEvent('guides_category_filter_clicked', { category: f.label });
               }}
@@ -367,7 +372,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
               }`}
             >
               <span>{f.emoji}</span> {f.label}
-            </button>
+            </Link>
           ))}
         </div>
 
