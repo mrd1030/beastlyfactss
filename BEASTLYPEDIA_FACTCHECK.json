@@ -2839,5 +2839,61 @@
       "date": "2026-07-31",
       "note": "Corrected in an earlier commit and left flagged. Each was verified absent from the article text on 2026-08-04 by searching for a distinctive fragment of its original wording before being ticked off."
     }
+  },
+  "soloVerificationRound2": {
+    "date": "2026-08-04",
+    "method": "Solo, deliberately cheap. Read each article, picked the claims most likely to be wrong (specific numbers, superlatives, famous anecdotes), and ran 9 targeted searches plus 1 fetch. No agent fan-out.",
+    "articles": [
+      {
+        "slug": "crows-are-smarter-than-you-think-and-they-probably-already-know-it",
+        "corrected": [
+          "Betty the wire-bending crow presented as spontaneous innovation. Rutz et al. 2016 showed wild NC crows bend twig tools with the same motor sequence, so it was a species-typical behaviour applied to a new material.",
+          "Japanese crows timing nut collection to pedestrian signals. Nut-dropping is documented in Sendai and Hakodate, but Hakodate birds drop at random, intentionality is disputed, and one paper failed to find the behaviour in American crows at all.",
+          "Thousands of cached items remembered for months. That is Clark nutcracker territory, not crows.",
+          "Cache-protection stated as requiring theory of mind. Softened: the most contested interpretation in the field.",
+          "Aesop task stated as causal understanding. Softened to the that/why distinction later studies are careful about."
+        ],
+        "confirmed": [
+          "Marzluff mask study",
+          "Swift crow funerals",
+          "scrub jay episodic-like memory",
+          "magpie mirror test",
+          "pallium as neocortex analogue"
+        ]
+      },
+      {
+        "slug": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
+        "corrected": [
+          "Up to 50,000 teeth stated flatly. Published estimates run about 20,000 to 50,000 depending on species and source.",
+          "Ordovician scales treated as unambiguously shark. Whether they are true sharks or close relatives in the cartilaginous lineage is still debated."
+        ],
+        "confirmed": [
+          "450 Mya scales vs 385 Mya Archaeopteris",
+          "Greenland shark 392 plus or minus 120, maturity 156 plus or minus 22",
+          "whale shark 18.8 m",
+          "Oeffner and Lauder found no consistent speed gain from Speedo fabric, verified directly against the abstract because a search snippet appeared to contradict it",
+          "Kelly 2022 shark sleep"
+        ]
+      },
+      {
+        "slug": "weirdest-creatures-deep-sea-facts-that-will-blow-your-mind",
+        "corrected": [
+          "Bioluminescence called the most common form of communication on Earth, more common than sound or colour. Not a finding; removed.",
+          "76 percent of all animals in the deep ocean. The figure is Monterey Bay, animals over 1 cm, 350,000 counted across 240 ROV dives, and the ratio held from surface to 4,000 m."
+        ],
+        "confirmed": [
+          "eight males fused to one Cryptopsaras couesii female",
+          "dumbo octopus 6,957 m Java Trench",
+          "barreleye rotating eyes, MBARI 2009",
+          "GFP and aequorin in the crystal jelly"
+        ]
+      }
+    ],
+    "sourcesAdded": {
+      "crows": 3,
+      "sharks": 5,
+      "deepSea": 4,
+      "note": "All 12 URLs came from this session searches, none reconstructed from memory. Reachability checked: 5 returned 200 and 7 returned 403, all of the 403s being publisher domains that block curl rather than dead links."
+    }
   }
 }
