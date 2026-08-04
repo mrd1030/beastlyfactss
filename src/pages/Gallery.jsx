@@ -11,12 +11,16 @@ import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import Pagination from '@/components/shared/Pagination';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
+import FactOrderControl from '@/components/shared/FactOrderControl';
+import { seededShuffle } from '@/lib/utils/seededShuffle';
 
 const PAGE_SIZE = 30;
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [search, setSearch] = useState('');
+  const [order, setOrder] = useState('daily');
+  const [randomOrder, setRandomOrder] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
   const listRef = useRef(null);
@@ -59,10 +63,29 @@ export default function Gallery() {
 
   // Only facts with a real, dedicated photo - a newly added fact without one
   // yet shouldn't show up here as a broken/generic thumbnail.
+  //
+  // factNumber comes off the canonical file position, before any filtering or
+  // shuffling, so "Numbered" here means the same sequence as the numbers shown
+  // on the cards over on /facts/.
   const withPhotos = useMemo(
-    () => facts.map(f => ({ fact: f, imagePath: imagePathFor(f) })).filter(f => f.imagePath),
+    () => facts
+      .map((f, i) => ({ fact: f, factNumber: i + 1, imagePath: imagePathFor(f) }))
+      .filter(f => f.imagePath),
     []
   );
+
+  // Same day-seeded rotation as /facts/, and for the same reason: /gallery/ is
+  // prerendered, so a Math.random() order would leave the static HTML and the
+  // hydrating client disagreeing. See the note on seededShuffle.js. The seed
+  // starts fixed and upgrades after mount because this page is not rebuilt
+  // daily.
+  const [daySeed, setDaySeed] = useState(1);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setDaySeed(new Date().getDate());
+  }, []);
+
+  const dailyPhotos = useMemo(() => seededShuffle(withPhotos, daySeed), [withPhotos, daySeed]);
 
   // Same three fields Facts.jsx searches (title, animal, fact text), so a term
   // that finds something on one page finds the same fact on the other.
@@ -75,10 +98,36 @@ export default function Gallery() {
   const query = search.trim().toLowerCase();
 
   const filtered = useMemo(() => {
-    return withPhotos.filter(({ fact }) =>
+    return dailyPhotos.filter(({ fact }) =>
       (activeCategory === 'All' || fact.category === activeCategory) && matchesSearch(fact, query)
     );
-  }, [withPhotos, activeCategory, query]);
+  }, [dailyPhotos, activeCategory, query]);
+
+  const displayPhotos = useMemo(() => {
+    if (order === 'numeric') return [...filtered].sort((a, b) => a.factNumber - b.factNumber);
+    if (order === 'random' && randomOrder.length > 0) {
+      const keep = new Set(filtered.map(p => p.factNumber));
+      return randomOrder.filter(p => keep.has(p.factNumber));
+    }
+    return filtered; // 'daily' - filtered already comes off the daily order
+  }, [filtered, order, randomOrder]);
+
+  const handleRandomize = () => {
+    const a = [...filtered];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    setRandomOrder(a);
+    setOrder('random');
+    setPageParam(1);
+  };
+
+  const handleOrderChange = (next) => {
+    setOrder(next);
+    setRandomOrder([]);
+    setPageParam(1);
+  };
 
   // Why an empty result is empty, so the message can name the real cause. The
   // category filter is nearly always it: every fact currently has a photo, so
@@ -93,12 +142,12 @@ export default function Gallery() {
     [query]
   );
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+  const totalPages = Math.ceil(displayPhotos.length / PAGE_SIZE);
   // Clamped, because page comes from ?page= and nothing stops a stale or
   // hand-edited link asking for a page past the end. Unclamped that renders
   // an empty list with no page highlighted rather than the last page.
   const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
-  const paginated = filtered.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
+  const paginated = displayPhotos.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
   const setPageParam = (newPage) => {
     const params = new URLSearchParams(location.search);
@@ -172,7 +221,9 @@ export default function Gallery() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 mt-6">
+          <FactOrderControl order={order} onChange={handleOrderChange} onRandomize={handleRandomize} className="mt-4" />
+
+          <div className="flex flex-wrap gap-2 mt-4">
             {allCategories.map(cat => (
               <button
                 key={cat}
@@ -192,7 +243,7 @@ export default function Gallery() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
         <p className="text-xs text-muted-foreground font-body text-center mb-4">
-          {`${filtered.length} photos${totalPages > 1 ? ` · Page ${safePage} of ${totalPages}` : ''}`}
+          {`${displayPhotos.length} photos${totalPages > 1 ? ` · Page ${safePage} of ${totalPages}` : ''}`}
         </p>
 
         {/* No scrollTo on this one: it sits above the grid, so you are already
@@ -275,7 +326,7 @@ export default function Gallery() {
           })}
         </div>
 
-        {filtered.length === 0 && (
+        {displayPhotos.length === 0 && (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">{search ? '🔍' : '📷'}</span>
             {search ? (

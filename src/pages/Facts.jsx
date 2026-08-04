@@ -5,12 +5,13 @@ import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from '@/lib/motion-safe';
-import { Search, Shuffle, Sparkles, ListOrdered } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor, absoluteImageFor } from '@/lib/data/factImages';
 import FactCard from '@/components/shared/FactCard';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
+import FactOrderControl from '@/components/shared/FactOrderControl';
 import Pagination from '@/components/shared/Pagination';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
@@ -289,42 +290,7 @@ export default function Facts() {
             </div>
           </div>
 
-          {/* Order. Its own row rather than sharing the one above, since three
-              controls plus the search box do not fit beside each other on a
-              phone. Random is a button and not a third state of a toggle
-              because pressing it again should reshuffle. */}
-          <div className="flex flex-wrap gap-2 mt-3" role="group" aria-label="Sort facts">
-            {[
-              { key: 'daily', label: "Today's mix", Icon: Sparkles },
-              { key: 'numeric', label: 'Numbered', Icon: ListOrdered },
-            ].map(({ key, label, Icon }) => (
-              <button
-                key={key}
-                type="button"
-                onClick={() => handleOrderChange(key)}
-                aria-pressed={order === key}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-display font-semibold border transition-all ${
-                  order === key
-                    ? 'bg-secondary text-secondary-foreground border-secondary shadow-md shadow-secondary/20'
-                    : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'
-                }`}
-              >
-                <Icon className="w-3.5 h-3.5" /> {label}
-              </button>
-            ))}
-            <button
-              type="button"
-              onClick={handleRandomize}
-              aria-pressed={order === 'random'}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-display font-semibold border transition-all ${
-                order === 'random'
-                  ? 'bg-secondary text-secondary-foreground border-secondary shadow-md shadow-secondary/20'
-                  : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'
-              }`}
-            >
-              <Shuffle className="w-3.5 h-3.5" /> {order === 'random' ? 'Shuffle again' : 'Random'}
-            </button>
-          </div>
+          <FactOrderControl order={order} onChange={handleOrderChange} onRandomize={handleRandomize} />
 
           {/* Category chips - real links (not buttons) so the category pages
               are crawlable from /facts/ and from each other; the Ahrefs
