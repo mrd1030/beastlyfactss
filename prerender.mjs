@@ -561,11 +561,22 @@ async function main() {
   // tier, so ordering is left to the heavy/light interleave below.
   const allRoutes = selected;
 
-  // Cloudflare Pages kills the whole build at 20 minutes and everything before
-  // this step (install, thumbnails, vite build) has already spent 3 to 4 of
-  // them. Stopping at 13 leaves room for the sitemap and critical-CSS steps
-  // that still have to run afterwards.
-  const BUDGET_MS = Number(process.env.PRERENDER_BUDGET_MS) || 13 * 60 * 1000;
+  // A safety net for a hung prerender, not a target. It should essentially
+  // never fire.
+  //
+  // It was 13 minutes, set from Cloudflare's documented 20 minute build
+  // timeout. That was wrong in practice: the 4 August build that got killed had
+  // been running `npm run build` for 34 minutes at the point of termination
+  // (14:51:59 to 15:26:02 in its log), so this project is not being cut off at
+  // 20. The docs still say 20 for every plan, so treat ~34 as observed rather
+  // than promised, and keep real margin under it.
+  //
+  // 25 leaves roughly 4 minutes of headroom under that observed cutoff once the
+  // ~4.5 minutes of install, thumbnails, vite build, sitemap and critical CSS
+  // are counted, and is more than three times what the step actually uses:
+  // after the fact routes moved off it, a full run is 455s. The old 13 was
+  // tight enough to shell 39 pages on a build that had time to spare.
+  const BUDGET_MS = Number(process.env.PRERENDER_BUDGET_MS) || 25 * 60 * 1000;
   const deadline = Date.now() + BUDGET_MS;
 
   console.log(`📄 Prerendering ${allRoutes.length} routes with concurrency ${CONCURRENCY} on ${cpus().length} cpu(s), ${Math.round(BUDGET_MS / 60000)} min budget...`);
