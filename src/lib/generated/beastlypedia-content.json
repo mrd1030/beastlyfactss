@@ -69,6 +69,12 @@
         "publishedAt": "2026-08-01",
         "image": "/assets/images/pangolins-the-most-trafficked-mammal-nobody-knows.jpg"
       }
+    ],
+    "siblings": [
+      "fennec-fox",
+      "capybara",
+      "narwhal",
+      "aye-aye"
     ]
   },
   "fennec-fox": {
@@ -96,7 +102,13 @@
         "image": "/assets/facts/fennec-fox-3.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "capybara",
+      "narwhal",
+      "aye-aye",
+      "giraffe"
+    ]
   },
   "capybara": {
     "animal": "Capybara",
@@ -116,7 +128,13 @@
         "image": "/assets/facts/capybara-2.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "narwhal",
+      "aye-aye",
+      "giraffe",
+      "slow-loris"
+    ]
   },
   "narwhal": {
     "animal": "Narwhal",
@@ -146,6 +164,12 @@
         "publishedAt": "2026-07-30",
         "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg"
       }
+    ],
+    "siblings": [
+      "aye-aye",
+      "giraffe",
+      "slow-loris",
+      "african-elephant"
     ]
   },
   "aye-aye": {
@@ -159,7 +183,13 @@
         "image": "/assets/facts/aye-aye.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "giraffe",
+      "slow-loris",
+      "african-elephant",
+      "sloth"
+    ]
   },
   "giraffe": {
     "animal": "Giraffe",
@@ -217,6 +247,12 @@
         "publishedAt": "2026-07-23",
         "image": "/assets/images/giraffe-heart-myth-what-the-research-shows.jpg"
       }
+    ],
+    "siblings": [
+      "slow-loris",
+      "african-elephant",
+      "sloth",
+      "gray-wolf"
     ]
   },
   "slow-loris": {
@@ -261,6 +297,12 @@
         "publishedAt": "2026-07-28",
         "image": "/assets/images/slow-loris-the-only-venomous-primate.jpg"
       }
+    ],
+    "siblings": [
+      "african-elephant",
+      "sloth",
+      "gray-wolf",
+      "lion"
     ]
   },
   "african-elephant": {
@@ -305,6 +347,12 @@
         "publishedAt": "2026-08-01",
         "image": "/assets/images/elephants-talk-below-human-hearing.jpg"
       }
+    ],
+    "siblings": [
+      "sloth",
+      "gray-wolf",
+      "lion",
+      "tiger"
     ]
   },
   "sloth": {
@@ -342,6 +390,12 @@
         "publishedAt": "2026-08-06",
         "image": "/assets/images/why-a-sloth-climbs-down-to-defecate.jpg"
       }
+    ],
+    "siblings": [
+      "gray-wolf",
+      "lion",
+      "tiger",
+      "rhinoceros"
     ]
   },
   "gray-wolf": {
@@ -372,6 +426,12 @@
         "publishedAt": "2026-07-19",
         "image": "/assets/images/alpha-wolf-myth-what-the-research-actually-says.jpg"
       }
+    ],
+    "siblings": [
+      "lion",
+      "tiger",
+      "rhinoceros",
+      "wombat"
     ]
   },
   "lion": {
@@ -402,6 +462,12 @@
         "publishedAt": "2026-08-01",
         "image": "/assets/images/lions-are-the-only-social-cat.jpg"
       }
+    ],
+    "siblings": [
+      "tiger",
+      "rhinoceros",
+      "wombat",
+      "honey-badger"
     ]
   },
   "tiger": {
@@ -432,6 +498,12 @@
         "publishedAt": "2026-08-04",
         "image": "/assets/images/every-wild-tiger-would-fit-in-a-small-town.jpg"
       }
+    ],
+    "siblings": [
+      "rhinoceros",
+      "wombat",
+      "honey-badger",
+      "platypus"
     ]
   },
   "rhinoceros": {
@@ -462,6 +534,12 @@
         "publishedAt": "2026-08-05",
         "image": "/assets/images/a-rhino-horn-is-made-of-keratin.jpg"
       }
+    ],
+    "siblings": [
+      "wombat",
+      "honey-badger",
+      "platypus",
+      "wolverine"
     ]
   },
   "wombat": {
@@ -485,6 +563,12 @@
         "publishedAt": "2026-07-30",
         "image": "/assets/images/why-wombats-produce-cube-shaped-droppings.jpg"
       }
+    ],
+    "siblings": [
+      "honey-badger",
+      "platypus",
+      "wolverine",
+      "pangolin"
     ]
   },
   "honey-badger": {
@@ -515,6 +599,12 @@
         "publishedAt": "2026-06-10",
         "image": "/assets/images/honey-badgers-the-toughest-little-troublemakers-on-the-planet-0.jpg"
       }
+    ],
+    "siblings": [
+      "platypus",
+      "wolverine",
+      "pangolin",
+      "fennec-fox"
     ]
   },
   "platypus": {
@@ -545,6 +635,12 @@
         "publishedAt": "2026-06-10",
         "image": "/assets/images/the-platypus-natures-most-wonderfully-bizarre-mammal-0.jpg"
       }
+    ],
+    "siblings": [
+      "wolverine",
+      "pangolin",
+      "fennec-fox",
+      "capybara"
     ]
   },
   "wolverine": {
@@ -575,6 +671,12 @@
         "publishedAt": "2026-07-31",
         "image": "/assets/images/wolverine-facts-the-toughest-animal-pound-for-pound-0.jpg"
       }
+    ],
+    "siblings": [
+      "pangolin",
+      "fennec-fox",
+      "capybara",
+      "narwhal"
     ]
   },
   "thorny-devil": {
@@ -588,7 +690,13 @@
         "image": "/assets/facts/thorny-devil.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "green-anaconda",
+      "panther-chameleon",
+      "gaboon-viper",
+      "fennec-fox"
+    ]
   },
   "panther-chameleon": {
     "animal": "Chameleon",
@@ -622,7 +730,23 @@
         "image": "/assets/facts/chameleon-4.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "thorny-devil",
+      "gaboon-viper",
+      "green-anaconda",
+      "aye-aye"
+    ]
+  },
+  "gaboon-viper": {
+    "facts": [],
+    "related": [],
+    "siblings": [
+      "panther-chameleon",
+      "green-anaconda",
+      "thorny-devil",
+      "slow-loris"
+    ]
   },
   "green-anaconda": {
     "animal": "Green Anaconda",
@@ -649,7 +773,13 @@
         "image": "/assets/facts/green-anaconda-3.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "gaboon-viper",
+      "thorny-devil",
+      "panther-chameleon",
+      "capybara"
+    ]
   },
   "glass-frog": {
     "animal": "Glass Frog",
@@ -662,7 +792,13 @@
         "image": "/assets/facts/glass-frog.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "axolotl",
+      "blue-poison-dart-frog",
+      "panther-chameleon",
+      "gaboon-viper"
+    ]
   },
   "blue-poison-dart-frog": {
     "animal": "Blue Poison Dart Frog",
@@ -689,7 +825,13 @@
         "image": "/assets/facts/blue-poison-dart-frog-3.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "glass-frog",
+      "axolotl",
+      "gaboon-viper",
+      "victoria-crowned-pigeon"
+    ]
   },
   "axolotl": {
     "animal": "Axolotl",
@@ -728,6 +870,12 @@
         "publishedAt": "2026-06-06",
         "image": "/assets/images/fun-facts-axolotl.jpg"
       }
+    ],
+    "siblings": [
+      "blue-poison-dart-frog",
+      "glass-frog",
+      "platypus",
+      "crow"
     ]
   },
   "shoebill": {
@@ -741,7 +889,13 @@
         "image": "/assets/facts/shoebill.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "victoria-crowned-pigeon",
+      "emperor-penguin",
+      "crow",
+      "capybara"
+    ]
   },
   "victoria-crowned-pigeon": {
     "animal": "Victoria Crowned Pigeon",
@@ -768,7 +922,13 @@
         "image": "/assets/facts/victoria-crowned-pigeon-3.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "emperor-penguin",
+      "crow",
+      "shoebill",
+      "gaboon-viper"
+    ]
   },
   "emperor-penguin": {
     "animal": "Penguin",
@@ -798,6 +958,12 @@
         "publishedAt": "2026-08-02",
         "image": "/assets/images/penguins-do-not-mate-for-life.jpg"
       }
+    ],
+    "siblings": [
+      "crow",
+      "shoebill",
+      "victoria-crowned-pigeon",
+      "narwhal"
     ]
   },
   "crow": {
@@ -828,6 +994,12 @@
         "publishedAt": "2026-06-10",
         "image": "/assets/images/crows-are-smarter-than-you-think-and-they-probably-already-know-it-0.jpg"
       }
+    ],
+    "siblings": [
+      "shoebill",
+      "victoria-crowned-pigeon",
+      "emperor-penguin",
+      "wombat"
     ]
   },
   "manta-ray": {
@@ -841,7 +1013,13 @@
         "image": "/assets/facts/giant-manta-ray.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "cuttlefish",
+      "humpback-whale",
+      "leafy-sea-dragon",
+      "dolphin"
+    ]
   },
   "leafy-sea-dragon": {
     "animal": "Leafy Sea Dragon",
@@ -854,7 +1032,13 @@
         "image": "/assets/facts/leafy-sea-dragon.jpg"
       }
     ],
-    "related": []
+    "related": [],
+    "siblings": [
+      "humpback-whale",
+      "manta-ray",
+      "dolphin",
+      "clownfish"
+    ]
   },
   "dolphin": {
     "animal": "Dolphin",
@@ -933,6 +1117,12 @@
         "publishedAt": "2026-07-20",
         "image": "/assets/images/do-dolphins-have-names-what-the-research-shows.jpg"
       }
+    ],
+    "siblings": [
+      "manta-ray",
+      "leafy-sea-dragon",
+      "clownfish",
+      "immortal-jellyfish"
     ]
   },
   "clownfish": {
@@ -998,6 +1188,12 @@
         "publishedAt": "2026-07-29",
         "image": "/assets/images/what-finding-nemo-got-wrong-about-clownfish.jpg"
       }
+    ],
+    "siblings": [
+      "leafy-sea-dragon",
+      "dolphin",
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "immortal-jellyfish": {
@@ -1056,6 +1252,12 @@
         "publishedAt": "2026-08-01",
         "image": "/assets/images/immortal-jellyfish-turritopsis-dohrnii-explained.jpg"
       }
+    ],
+    "siblings": [
+      "dolphin",
+      "clownfish",
+      "seahorse",
+      "shark"
     ]
   },
   "seahorse": {
@@ -1107,6 +1309,12 @@
         "publishedAt": "2026-07-27",
         "image": "/assets/images/seahorse-male-pregnancy-how-it-works.jpg"
       }
+    ],
+    "siblings": [
+      "clownfish",
+      "immortal-jellyfish",
+      "shark",
+      "octopus"
     ]
   },
   "shark": {
@@ -1139,6 +1347,12 @@
         "publishedAt": "2026-07-31",
         "image": "/assets/images/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind-0.jpg"
       }
+    ],
+    "siblings": [
+      "immortal-jellyfish",
+      "seahorse",
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "octopus": {
@@ -1192,6 +1406,12 @@
         "publishedAt": "2026-06-13",
         "image": "/assets/images/fun-facts-octopus.jpg"
       }
+    ],
+    "siblings": [
+      "seahorse",
+      "shark",
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "mantis-shrimp": {
@@ -1222,6 +1442,12 @@
         "publishedAt": "2026-06-10",
         "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.jpg"
       }
+    ],
+    "siblings": [
+      "shark",
+      "octopus",
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "cuttlefish": {
@@ -1252,6 +1478,12 @@
         "publishedAt": "2026-06-08",
         "image": "/assets/images/fun-facts-cuttlefish.jpg"
       }
+    ],
+    "siblings": [
+      "octopus",
+      "mantis-shrimp",
+      "humpback-whale",
+      "manta-ray"
     ]
   },
   "humpback-whale": {
@@ -1275,6 +1507,12 @@
         "publishedAt": "2026-06-11",
         "image": "/assets/images/fun-facts-humpback-whale.jpg"
       }
+    ],
+    "siblings": [
+      "mantis-shrimp",
+      "cuttlefish",
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   }
 }

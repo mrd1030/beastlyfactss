@@ -92,9 +92,48 @@ function toCard(a) {
   };
 }
 
+// Four sibling Beastfiles per page.
+//
+// The link audit found 38 of 39 Beastfile detail pages carrying fewer than
+// three crawlable links, 13 of them carrying none at all. The fun facts are
+// buttons that open a photo, so they contribute nothing, and Related Files was
+// the only content link a Beastfile had, which meant a Beastfile with no
+// article had literally zero. This gives every one of them four, from data that
+// already exists, with no new writing and no new images.
+//
+// Same group first, then same habitat, then anything. Rotated by the entry's
+// own position rather than taking the first four every time: without that,
+// every mammal would point at the same four mammals, which concentrates link
+// equity on a handful of pages and leaves the rest as good as orphaned.
+const RELATED_BEASTFILES = 4;
+
+function pickSiblings(current, index) {
+  const others = beastfiles.filter((b) => b.id !== current.id);
+  const rotate = (list) => {
+    if (list.length === 0) return [];
+    const at = index % list.length;
+    return [...list.slice(at), ...list.slice(0, at)];
+  };
+
+  const tiers = [
+    rotate(others.filter((b) => b.group === current.group)),
+    rotate(others.filter((b) => b.group !== current.group && b.habitat === current.habitat)),
+    rotate(others.filter((b) => b.group !== current.group && b.habitat !== current.habitat)),
+  ];
+
+  const picked = [];
+  for (const tier of tiers) {
+    for (const b of tier) {
+      if (picked.length >= RELATED_BEASTFILES) break;
+      if (!picked.includes(b.id)) picked.push(b.id);
+    }
+  }
+  return picked;
+}
+
 const contentFor = {};
 const missingArticles = [];
-for (const b of beastfiles) {
+for (const [bIndex, b] of beastfiles.entries()) {
   const animal = b.factAnimal || b.name;
   const found = factsByAnimal.get(normalise(animal)) || [];
 
@@ -109,8 +148,12 @@ for (const b of beastfiles) {
     related.push(toCard(a));
   }
 
-  if (found.length === 0 && related.length === 0) continue;
-
+  // Every Beastfile gets an entry now, including one with no facts and no
+  // article. That used to be skipped, which was fine when the entry only held
+  // page content, but siblings are the whole point for exactly those pages: the
+  // Gaboon viper has neither facts nor an article and was the emptiest page on
+  // the site, so skipping it would have left the one page that needed links
+  // most as the only one without them.
   contentFor[b.id] = {
     // Hoisted: every fact matched to a Beastfile shares its animal by
     // definition. category is NOT hoisted, because it genuinely varies within
@@ -128,6 +171,10 @@ for (const b of beastfiles) {
       image: imagePathFor(f),
     })),
     related,
+    // Ids only. BeastfileDetail resolves them against the teaser payload it
+    // already has, rather than duplicating every name, tagline and image path
+    // four more times across the file.
+    siblings: pickSiblings(b, bIndex),
   };
 }
 

@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
+import MoreBeastfiles from '@/components/beastlypedia/MoreBeastfiles';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
 import { truncateDescription } from '@/lib/utils/truncate';
@@ -70,6 +71,7 @@ export default function BeastfileDetail() {
   // back on each fact so ImageLightbox can caption the photo.
   const linkedFacts = (content?.facts || []).map((f) => ({ ...f, animal: content.animal }));
   const relatedPosts = content?.related || [];
+  const siblingIds = content?.siblings || [];
 
   const canonical = `${SITE}/beastlypedia/${id}/`;
   // The scientific name is kept out of the title on purpose. With it, longer
@@ -325,6 +327,8 @@ export default function BeastfileDetail() {
         )}
 
         <RelatedFiles posts={relatedPosts} />
+
+        <MoreBeastfiles ids={siblingIds} />
 
         {encyclopediaId && (
           <div className="mt-6 bg-secondary/5 border border-secondary/20 rounded-2xl p-4">
