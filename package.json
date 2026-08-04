@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/generate-thumbnails.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && vite",
-    "build": "node scripts/generate-thumbnails.js && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && vite build && node prerender.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
+    "build": "node scripts/check-internal-links.mjs && node scripts/generate-thumbnails.js && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && vite build && node prerender.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
     "preview": "vite preview",
     "check:sources": "node scripts/check-source-links.mjs",
     "lint": "eslint . --quiet",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc -p ./jsconfig.json",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "check:links": "node scripts/check-internal-links.mjs"
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.1.1",
