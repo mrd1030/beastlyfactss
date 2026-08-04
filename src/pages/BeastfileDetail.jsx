@@ -5,6 +5,7 @@ import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } 
 import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
 import MoreBeastfiles from '@/components/beastlypedia/MoreBeastfiles';
+import ShareButton from '@/components/shared/ShareButton';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
 import { truncateDescription } from '@/lib/utils/truncate';
@@ -154,9 +155,21 @@ export default function BeastfileDetail() {
 
           <div className="p-5 sm:p-8">
         <header className="mb-6">
-          <p className="text-[11px] font-display font-bold uppercase tracking-wider text-secondary mb-1">
-            {`Beastfile · ${group}`}
-          </p>
+          {/* The share control sits on the title row rather than at the foot of
+              the page: this is the point where someone knows what the page is
+              and decides to pass it on, and the page's og:image is already the
+              hero, so an unfurled link previews properly. */}
+          <div className="flex items-start justify-between gap-4">
+            <p className="text-[11px] font-display font-bold uppercase tracking-wider text-secondary mb-1">
+              {`Beastfile · ${group}`}
+            </p>
+            <ShareButton
+              title={name}
+              text={`${name}: ${tagline}`}
+              url={`/beastlypedia/${id}/`}
+              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-display font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+            />
+          </div>
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground leading-tight">
             {name}
           </h1>
