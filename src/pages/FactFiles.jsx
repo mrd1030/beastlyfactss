@@ -70,7 +70,15 @@ export default function FactFiles() {
               >
                 {post.image && (
                   <div className="aspect-video overflow-hidden">
-                    <LocalImage src={post.image} alt={post.imageAlt || post.title} className="w-full h-full object-cover" loading="lazy" />
+                    {/* variant="card" matters here. Without it LocalImage serves
+                        the -thumb tier, which is a 240x240 square meant for
+                        icon-sized slots, and these are ~300-380px wide 16:9
+                        cards - so it was being upscaled roughly 1.5x and
+                        cropped, which is why this page looked so much worse
+                        than the rest of the site. The -card tier is 640x480
+                        with a 2x companion, and public/assets/images is already
+                        in CARD_VARIANT_DIRS so the files exist. */}
+                    <LocalImage src={post.image} alt={post.imageAlt || post.title} variant="card" className="w-full h-full object-cover" loading="lazy" />
                   </div>
                 )}
                 <div className="p-4">

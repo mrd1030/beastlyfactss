@@ -143,7 +143,7 @@
   {"id":141,"title":"The Flying Dragon","emoji":"🦎","animal":"Draco Lizard","category":"Reptiles","fact":"Draco lizards have rib bones that extend into wing-like flaps of skin, letting them glide as far as 60 meters between trees without ever flapping a single limb.","image":"🦎"},
   {"id":142,"title":"Fastest Eater Alive","emoji":"🐾","animal":"Star-Nosed Mole","category":"Weird & Wonderful","fact":"The star-nosed mole's nose has 22 fleshy tentacles packed with over 25,000 sensory receptors. It can identify and eat food in about 120 milliseconds, the fastest eating speed recorded in any mammal.","image":"🐾"},
   {"id":143,"title":"Built-In Sonar","emoji":"🦇","animal":"Bat","category":"Mammals","fact":"Bats are the only mammals capable of true, sustained flight. Many species navigate in total darkness using echolocation, firing off up to 200 calls per second and reading the echoes to build a live map of their surroundings.","image":"🦇"},
-  {"id":144,"title":"Two-Hour Breath Holders","emoji":"🦭","animal":"Elephant Seal","category":"Mammals","fact":"Elephant seals can dive over 2,000 meters deep and hold their breath for up to two hours, longer than almost any other mammal, by collapsing their lungs and slowing their heart to just a few beats per minute.","image":"🦭"},
+  {"id":144,"title":"Two-Hour Breath Holders","emoji":"🦭","animal":"Elephant Seal","category":"Ocean","fact":"Elephant seals can dive over 2,000 meters deep and hold their breath for up to two hours, longer than almost any other mammal, by collapsing their lungs and slowing their heart to just a few beats per minute.","image":"🦭"},
   {"id":145,"title":"Can't Taste Sugar","emoji":"🐱","animal":"Cat","category":"Dogs & Cats","fact":"Cats are one of the only mammals that physically cannot taste sweetness. A mutation disabled their sugar taste receptor long ago, so that slice of cake means nothing to your cat, no matter how much they beg.","image":"🐱"},
   {"id":146,"title":"The Dog That Doesn't Bark","emoji":"🐶","animal":"Basenji","category":"Dogs & Cats","fact":"Basenjis have an unusually shaped larynx that keeps them from barking like other dogs. Instead they make a yodel-like sound nicknamed the 'baroo,' earning them the nickname 'the barkless dog.'","image":"🐶"},
   {"id":147,"title":"A Nose Built Different","emoji":"🐶","animal":"Dog","category":"Dogs & Cats","fact":"A dog's sense of smell is estimated to be 10,000 to 100,000 times more sensitive than a human's. Their wet nose actually helps by trapping scent chemicals so they can be analyzed more effectively.","image":"🐶"},
@@ -280,32 +280,38 @@
   {
     "name": "Birds",
     "emoji": "🦜",
-    "color": "bg-teal"
+    "color": "bg-teal",
+    "textColor": "text-cyan-800 dark:text-cyan-300"
   },
   {
     "name": "Dogs & Cats",
     "emoji": "🐾",
-    "color": "bg-amber-500"
+    "color": "bg-amber-500",
+    "textColor": "text-amber-800 dark:text-amber-300"
   },
   {
     "name": "Mammals",
     "emoji": "🦁",
-    "color": "bg-orange"
+    "color": "bg-orange",
+    "textColor": "text-rose-700 dark:text-rose-300"
   },
   {
     "name": "Ocean",
     "emoji": "🐬",
-    "color": "bg-blue-500"
+    "color": "bg-blue-500",
+    "textColor": "text-blue-700 dark:text-blue-300"
   },
   {
     "name": "Reptiles",
     "emoji": "🦎",
-    "color": "bg-forest"
+    "color": "bg-forest",
+    "textColor": "text-emerald-700 dark:text-emerald-300"
   },
   {
     "name": "Weird & Wonderful",
     "emoji": "🦄",
-    "color": "bg-hotpink"
+    "color": "bg-hotpink",
+    "textColor": "text-fuchsia-700 dark:text-fuchsia-300"
   }
 ]
 }

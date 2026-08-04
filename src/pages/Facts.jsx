@@ -9,6 +9,7 @@ import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor, absoluteImageFor } from '@/lib/data/factImages';
 import FactCard from '@/components/shared/FactCard';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import Pagination from '@/components/shared/Pagination';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
@@ -88,6 +89,21 @@ export default function Facts() {
   useEffect(() => {
     setSelectedFact(linkedFact);
   }, [linkedFact]);
+
+  // Apply ?search= once, so the gallery's "search all facts instead" link lands
+  // with the term already in the box.
+  //
+  // Mount only, on purpose. Paginating rewrites location.search without
+  // carrying the term, so re-reading it on every change would empty the box the
+  // moment you clicked page 2. And the initial state stays '' to match the
+  // prerendered HTML, with the term applied after mount, rather than seeding
+  // useState from the URL and hydrating against markup that was rendered
+  // without it.
+  useEffect(() => {
+    const initial = new URLSearchParams(window.location.search).get('search');
+    if (initial) setSearch(initial);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Fact permalinks are clean (/facts/<slug>/, no category or page carried
   // along); the list URL the user came from rides in history state so closing
@@ -219,11 +235,10 @@ export default function Facts() {
               <Link to="/fact-files/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline p-1.5 -m-1.5">
                 Want deeper dives? Browse our Fact Files →
               </Link>
-              <Link to="/gallery/" className="inline-flex items-center gap-1 text-xs font-display font-semibold text-secondary hover:underline p-1.5 -m-1.5">
-                📸 Browse the Photo Gallery →
-              </Link>
             </div>
           </motion.div>
+
+          <CrossLinkCta to="/gallery/" label="Browse the photo gallery" />
 
           {/* Search + Randomize */}
           <div className="flex gap-2 mt-6 max-w-md">

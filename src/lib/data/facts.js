@@ -143,7 +143,7 @@ export const facts = [
   { id: 141, title: "The Flying Dragon", emoji: "🦎", animal: "Draco Lizard", category: "Reptiles", fact: "Draco lizards have rib bones that extend into wing-like flaps of skin, letting them glide as far as 60 meters between trees without ever flapping a single limb.", image: "🦎" },
   { id: 142, title: "Fastest Eater Alive", emoji: "🐾", animal: "Star-Nosed Mole", category: "Weird & Wonderful", fact: "The star-nosed mole's nose has 22 fleshy tentacles packed with over 25,000 sensory receptors. It can identify and eat food in about 120 milliseconds, the fastest eating speed recorded in any mammal.", image: "🐾" },
   { id: 143, title: "Built-In Sonar", emoji: "🦇", animal: "Bat", category: "Mammals", fact: "Bats are the only mammals capable of true, sustained flight. Many species navigate in total darkness using echolocation, firing off up to 200 calls per second and reading the echoes to build a live map of their surroundings.", image: "🦇" },
-  { id: 144, title: "Two-Hour Breath Holders", emoji: "🦭", animal: "Elephant Seal", category: "Mammals", fact: "Elephant seals can dive over 2,000 meters deep and hold their breath for up to two hours, longer than almost any other mammal, by collapsing their lungs and slowing their heart to just a few beats per minute.", image: "🦭" },
+  { id: 144, title: "Two-Hour Breath Holders", emoji: "🦭", animal: "Elephant Seal", category: "Ocean", fact: "Elephant seals can dive over 2,000 meters deep and hold their breath for up to two hours, longer than almost any other mammal, by collapsing their lungs and slowing their heart to just a few beats per minute.", image: "🦭" },
   { id: 145, title: "Can't Taste Sugar", emoji: "🐱", animal: "Cat", category: "Dogs & Cats", fact: "Cats are one of the only mammals that physically cannot taste sweetness. A mutation disabled their sugar taste receptor long ago, so that slice of cake means nothing to your cat, no matter how much they beg.", image: "🐱" },
   { id: 146, title: "The Dog That Doesn't Bark", emoji: "🐶", animal: "Basenji", category: "Dogs & Cats", fact: "Basenjis have an unusually shaped larynx that keeps them from barking like other dogs. Instead they make a yodel-like sound nicknamed the 'baroo,' earning them the nickname 'the barkless dog.'", image: "🐶" },
   { id: 147, title: "A Nose Built Different", emoji: "🐶", animal: "Dog", category: "Dogs & Cats", fact: "A dog's sense of smell is estimated to be 10,000 to 100,000 times more sensitive than a human's. Their wet nose actually helps by trapping scent chemicals so they can be analyzed more effectively.", image: "🐶" },
@@ -277,11 +277,28 @@ export const facts = [
   { id: 275, title: "It Takes Food From Animals Twice Its Size", emoji: "🦡", animal: "Wolverine", category: "Mammals", fact: "A wolverine weighs somewhere around 12 to 18 kilograms, about the same as a medium dog, and there are repeated accounts of one driving wolves and even bears off a carcass. It is not routine and it does not always work. What makes it possible at all is that a wolverine is built far heavier than its size suggests, with a thick hide, long claws and no apparent reverse gear, and a larger animal often decides the meal is not worth the trouble.", image: "🦡" },
 ];
 
+// `textColor` follows DifficultyLegend.jsx: the category colour applied to the
+// label text itself, with a light/dark pair so it stays readable on both
+// grounds. 700/300 rather than the legend's 500/400 because this lands on 10px
+// uppercase text, and amber-500 on a light background is about 2:1 - well under
+// the 4.5:1 WCAG wants for small text. The -700 shades clear it in light mode
+// and -300 clears it against the dark card.
+//
+// Written as complete literal class strings, not built by interpolation, or
+// Tailwind's scanner never sees them and drops them from the stylesheet.
+//
+// Note which palettes these use. tailwind.config.js defines `orange` and `teal`
+// as flat single values (#FF8C42 / #00B8A9), which replaces Tailwind's built-in
+// scales for those two names outright - so text-orange-300 and text-teal-700
+// do not exist and silently fall back to inherited colour. Mammals and Birds
+// rendered plain white here until they were moved onto rose and cyan, which
+// still have full scales. The `color` field above keeps using bg-orange and
+// bg-teal because a flat value is exactly what those need.
 export const categories = [
-  { name: "Birds", emoji: "🦜", color: "bg-teal" },
-  { name: "Dogs & Cats", emoji: "🐾", color: "bg-amber-500" },
-  { name: "Mammals", emoji: "🦁", color: "bg-orange" },
-  { name: "Ocean", emoji: "🐬", color: "bg-blue-500" },
-  { name: "Reptiles", emoji: "🦎", color: "bg-forest" },
-  { name: "Weird & Wonderful", emoji: "🦄", color: "bg-hotpink" },
+  { name: "Birds", emoji: "🦜", color: "bg-teal", textColor: "text-cyan-800 dark:text-cyan-300" },
+  { name: "Dogs & Cats", emoji: "🐾", color: "bg-amber-500", textColor: "text-amber-800 dark:text-amber-300" },
+  { name: "Mammals", emoji: "🦁", color: "bg-orange", textColor: "text-rose-700 dark:text-rose-300" },
+  { name: "Ocean", emoji: "🐬", color: "bg-blue-500", textColor: "text-blue-700 dark:text-blue-300" },
+  { name: "Reptiles", emoji: "🦎", color: "bg-forest", textColor: "text-emerald-700 dark:text-emerald-300" },
+  { name: "Weird & Wonderful", emoji: "🦄", color: "bg-hotpink", textColor: "text-fuchsia-700 dark:text-fuchsia-300" },
 ];

@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, Check } from 'lucide-react';
+import { Heart, Share2, Check, Search } from 'lucide-react';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
@@ -10,11 +10,13 @@ import { slugify } from '@/lib/utils/slugify';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import Pagination from '@/components/shared/Pagination';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 
 const PAGE_SIZE = 30;
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
+  const [search, setSearch] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
   const listRef = useRef(null);
@@ -62,10 +64,34 @@ export default function Gallery() {
     []
   );
 
+  // Same three fields Facts.jsx searches (title, animal, fact text), so a term
+  // that finds something on one page finds the same fact on the other.
+  const matchesSearch = (fact, q) =>
+    !q ||
+    fact.title.toLowerCase().includes(q) ||
+    fact.animal.toLowerCase().includes(q) ||
+    fact.fact.toLowerCase().includes(q);
+
+  const query = search.trim().toLowerCase();
+
   const filtered = useMemo(() => {
-    if (activeCategory === 'All') return withPhotos;
-    return withPhotos.filter(({ fact }) => fact.category === activeCategory);
-  }, [withPhotos, activeCategory]);
+    return withPhotos.filter(({ fact }) =>
+      (activeCategory === 'All' || fact.category === activeCategory) && matchesSearch(fact, query)
+    );
+  }, [withPhotos, activeCategory, query]);
+
+  // Why an empty result is empty, so the message can name the real cause. The
+  // category filter is nearly always it: every fact currently has a photo, so
+  // "no photo yet" was describing a state that does not exist while the actual
+  // reason (a category pill still selected) went unmentioned.
+  const matchesIgnoringCategory = useMemo(
+    () => (query ? withPhotos.filter(({ fact }) => matchesSearch(fact, query)).length : 0),
+    [withPhotos, query]
+  );
+  const matchesWithoutPhotos = useMemo(
+    () => (query ? facts.filter(f => matchesSearch(f, query)).length : 0),
+    [query]
+  );
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   // Clamped, because page comes from ?page= and nothing stops a stale or
@@ -85,6 +111,13 @@ export default function Gallery() {
     setActiveCategory(cat);
     setPageParam(1);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Back to page 1 on every keystroke: without it, typing while on page 4 of a
+  // wide result set drops you onto an empty page of a much shorter one.
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+    setPageParam(1);
   };
 
   // No scrolling here. Pagination handles it, and only for the copy below
@@ -122,6 +155,22 @@ export default function Gallery() {
               Every real animal photo behind our facts, in one place. Hover to preview, click to read the fact.
             </p>
           </motion.div>
+
+          <CrossLinkCta to="/facts/" label="Browse all facts as cards" />
+
+          {/* Search */}
+          <div className="mt-6 max-w-md">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search photos..."
+                value={search}
+                onChange={handleSearchChange}
+                className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
+              />
+            </div>
+          </div>
 
           <div className="flex flex-wrap gap-2 mt-6">
             {allCategories.map(cat => (
@@ -228,8 +277,51 @@ export default function Gallery() {
 
         {filtered.length === 0 && (
           <div className="text-center py-16">
-            <span className="text-4xl block mb-3">📷</span>
-            <p className="font-display font-bold text-foreground">No photos in this category yet!</p>
+            <span className="text-4xl block mb-3">{search ? '🔍' : '📷'}</span>
+            {search ? (
+              <>
+                <p className="font-display font-bold text-foreground">
+                  {matchesIgnoringCategory > 0
+                    ? `No ${activeCategory} photos match "${search}"`
+                    : `No photos match "${search}"`}
+                </p>
+                <p className="mt-1 font-body text-sm text-muted-foreground">
+                  {matchesIgnoringCategory > 0 ? (
+                    // The commonest case by far: the term does match, just not
+                    // inside the category still selected above.
+                    <>
+                      {`${matchesIgnoringCategory} ${matchesIgnoringCategory === 1 ? 'photo matches' : 'photos match'} in other categories. `}
+                      <button
+                        type="button"
+                        onClick={() => handleCategoryChange('All')}
+                        className="font-display font-semibold text-secondary hover:underline"
+                      >
+                        Search all categories →
+                      </button>
+                    </>
+                  ) : matchesWithoutPhotos > 0 ? (
+                    // Only reachable once a fact exists without a photo. None do
+                    // today, so this is a graceful fallback rather than a state
+                    // anyone can currently hit.
+                    <>
+                      Some matching facts have no photo yet.{' '}
+                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-display font-semibold text-secondary hover:underline">
+                        Search all facts instead →
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      Nothing matches that yet.{' '}
+                      <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-display font-semibold text-secondary hover:underline">
+                        Try searching all facts →
+                      </Link>
+                    </>
+                  )}
+                </p>
+              </>
+            ) : (
+              <p className="font-display font-bold text-foreground">No photos in this category yet!</p>
+            )}
           </div>
         )}
 

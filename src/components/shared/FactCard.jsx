@@ -4,6 +4,11 @@ import { Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
+import { categories } from '@/lib/data/facts';
+
+// Colour the label itself, the same way DifficultyLegend.jsx colours its tiers.
+// See the note on `categories` in facts.js for why these are 700/300 pairs.
+const CATEGORY_TEXT = Object.fromEntries(categories.map(c => [c.name, c.textColor]));
 
 // onOpenImage is optional and handled by the parent page (not rendered here) -
 // this card sits inside a framer-motion element with hover/viewport transforms,
@@ -63,7 +68,7 @@ export default function FactCard({ fact, index = 0, onOpen, onOpenImage }) {
           {/* Header */}
           <div className="flex items-center justify-between mb-3">
             <span className="text-3xl">{fact.emoji || '🐾'}</span>
-            <span className="text-[10px] font-display font-bold uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+            <span className={`text-[10px] font-display font-bold uppercase tracking-wider bg-muted px-2 py-0.5 rounded-full ${CATEGORY_TEXT[fact.category] || 'text-muted-foreground'}`}>
               {fact.category}
             </span>
           </div>
