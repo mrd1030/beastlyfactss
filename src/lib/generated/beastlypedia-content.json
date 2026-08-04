@@ -730,7 +730,17 @@
         "image": "/assets/facts/chameleon-4.jpg"
       }
     ],
-    "related": [],
+    "related": [
+      {
+        "id": "chameleons-do-not-change-color-to-match-their-background",
+        "slug": "chameleons-do-not-change-color-to-match-their-background",
+        "title": "Chameleons Do Not Change Color to Match Anything",
+        "excerpt": "Put a chameleon on a chessboard and nothing happens. They shift color to signal mood and temperature, not to match a",
+        "category": "Wild Animals",
+        "publishedAt": "2026-08-08",
+        "image": "/assets/images/chameleons-do-not-change-color-to-match-their-background.jpg"
+      }
+    ],
     "siblings": [
       "thorny-devil",
       "gaboon-viper",
@@ -773,7 +783,17 @@
         "image": "/assets/facts/green-anaconda-3.jpg"
       }
     ],
-    "related": [],
+    "related": [
+      {
+        "id": "constriction-does-not-crush-or-suffocate",
+        "slug": "constriction-does-not-crush-or-suffocate",
+        "title": "What Constriction Actually Does to Prey",
+        "excerpt": "Constrictors do not crush bones and they do not slowly suffocate anything. Measurements taken inside the coils show it",
+        "category": "Wild Animals",
+        "publishedAt": "2026-08-09",
+        "image": "/assets/images/constriction-does-not-crush-or-suffocate.jpg"
+      }
+    ],
     "siblings": [
       "gaboon-viper",
       "thorny-devil",
@@ -792,7 +812,17 @@
         "image": "/assets/facts/glass-frog.jpg"
       }
     ],
-    "related": [],
+    "related": [
+      {
+        "id": "how-a-glass-frog-hides-its-own-blood",
+        "slug": "how-a-glass-frog-hides-its-own-blood",
+        "title": "How Glass Frogs Hide Their Blood to Turn Clear",
+        "excerpt": "A sleeping glass frog packs about 89 percent of its red blood cells into its liver, which is what makes it clear. Blood",
+        "category": "Wild Animals",
+        "publishedAt": "2026-08-10",
+        "image": "/assets/images/how-a-glass-frog-hides-its-own-blood.jpg"
+      }
+    ],
     "siblings": [
       "axolotl",
       "blue-poison-dart-frog",

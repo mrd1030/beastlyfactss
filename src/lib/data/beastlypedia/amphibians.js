@@ -30,7 +30,7 @@ export const amphibianBeastfiles = [
       'A glass frog on a backlit green leaf with its translucent underside showing internal organs',
     secondaryImage: '/assets/facts/glass-frog.jpg',
     secondaryAlt: 'A glass frog resting on a wet leaf, its translucent skin catching the light',
-    relatedFiles: [],
+    relatedFiles: ['how-a-glass-frog-hides-its-own-blood'],
   },
   {
     id: 'blue-poison-dart-frog',

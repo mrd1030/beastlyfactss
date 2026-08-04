@@ -96,7 +96,7 @@ export const reptileBeastfiles = [
     secondaryImage: '/assets/beastlypedia/panther-chameleon-secondary.jpg',
     secondaryAlt:
       'Close view of a panther chameleon showing its turret eye and the ridge along its head',
-    relatedFiles: [],
+    relatedFiles: ['chameleons-do-not-change-color-to-match-their-background'],
   },
   {
     id: 'gaboon-viper',
@@ -164,6 +164,6 @@ export const reptileBeastfiles = [
     secondaryImage: '/assets/beastlypedia/green-anaconda-secondary.jpg',
     secondaryAlt:
       'A green anaconda coiled among wetland vegetation showing its olive skin and black oval blotches',
-    relatedFiles: [],
+    relatedFiles: ['constriction-does-not-crush-or-suffocate'],
   },
 ];
