@@ -99,10 +99,12 @@
         },
         {
           "claim": "Honey badgers will tear into active beehives with zero hesitation, enduring thousands of stings to get to the larvae and honey inside. The bees sting. The honey badger does not care",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2003. Journal of Zoology 260:301-316",
           "sourceUrl": "https://honeybadger.com/pdfs/diet.pdf",
-          "note": "The only quantified field observation says the opposite. Two honey badgers were watched breaking into 13 bee hives over 37 visits, and 'On 61% of the visits the swarm's defence was sufficient to chase off the honey badgers.' Separately, study animals were 'twice observed to unsuccessfully attempt to break into bee hives.' The bees win the majority of encounters."
+          "note": "The only quantified field observation says the opposite. Two honey badgers were watched breaking into 13 bee hives over 37 visits, and 'On 61% of the visits the swarm's defence was sufficient to chase off the honey badgers.' Separately, study animals were 'twice observed to unsuccessfully attempt to break into bee hives.' The bees win the majority of encounters.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "They are opportunistic and relentless foragers, covering up to 25 miles a day in search of food",
@@ -131,10 +133,12 @@
         },
         {
           "claim": "The greater honeyguide actively seeks out a honey badger, calls to get its attention, and leads it to a beehive; a genuine mutualistic relationship, one of the few well-documented examples of interspecies cooperation involving a wild bird and a wild mammal, observed and documented for centuries",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "van der Wal, J.E.M. et al. 2023. Do honey badgers and greater honeyguide birds cooperate to access bees' nests? Ecological evidence and honey-hunter accounts. Journal of Zoology 321:22-32",
           "sourceUrl": "https://par.nsf.gov/servlets/purl/10426781",
-          "note": "This is the article's biggest error. The definitive review, by 25 authors including the Beggs and Spottiswoode, drawing on the published literature, the authors' own fieldwork on both species, and 394 honey-hunter interviews across nine African countries, concludes: 'We find that the scientific evidence relies on incomplete and second-hand accounts and does not convincingly indicate that the two species cooperate.' The famous footage everyone has seen, from the 1974 film 'Animals Are Beautiful People,' 'was in fact entirely staged using a tame badger trained to follow a taxidermic model of a bird on a fishing line.' Lead author van der Wal: 'we've been guided to bees' nests by honeyguide birds thousands of times, but none of us have ever seen a bird and a badger interact.' The 2003 Mammalian Species account had already noted that a complete observation of the sequence 'does not exist.' The honest version is that the interaction may occur but is highly localized or extremely hard to observe, and remains unproven."
+          "note": "This is the article's biggest error. The definitive review, by 25 authors including the Beggs and Spottiswoode, drawing on the published literature, the authors' own fieldwork on both species, and 394 honey-hunter interviews across nine African countries, concludes: 'We find that the scientific evidence relies on incomplete and second-hand accounts and does not convincingly indicate that the two species cooperate.' The famous footage everyone has seen, from the 1974 film 'Animals Are Beautiful People,' 'was in fact entirely staged using a tame badger trained to follow a taxidermic model of a bird on a fishing line.' Lead author van der Wal: 'we've been guided to bees' nests by honeyguide birds thousands of times, but none of us have ever seen a bird and a badger interact.' The 2003 Mammalian Species account had already noted that a complete observation of the sequence 'does not exist.' The honest version is that the interaction may occur but is highly localized or extremely hard to observe, and remains unproven.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "In some parts of Africa, people have learned to follow the honeyguide to find wild honey",
@@ -207,10 +211,12 @@
         },
         {
           "claim": "Females give birth to one or two cubs at a time",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "Begg, C.M., Begg, K.S., Du Toit, J.T. & Mills, M.G.L. 2005. Life-history variables of an atypical mustelid, the honey badger Mellivora capensis. Journal of Zoology 265:17-22",
           "sourceUrl": "https://honeybadger.com/pdfs/life-history.pdf",
-          "note": "The species has 'the unusually small litter size of one cub.' Across 18 observed cases, only ever a single cub was seen with a female, and mothers were never observed moving more than one cub between dens. The paper explicitly rejects the older field-guide figures: it 'provides no evidence for the reported litter sizes of 1-4 cubs (mean = 2.5).' IUCN concurs: 'Small litter size (generally one cub).'"
+          "note": "The species has 'the unusually small litter size of one cub.' Across 18 observed cases, only ever a single cub was seen with a female, and mothers were never observed moving more than one cub between dens. The paper explicitly rejects the older field-guide figures: it 'provides no evidence for the reported litter sizes of 1-4 cubs (mean = 2.5).' IUCN concurs: 'Small litter size (generally one cub).'",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Cubs stay with their mothers for about a year and a half to two years",
@@ -366,10 +372,12 @@
         },
         {
           "claim": "The heart stops because the muscular effort of jet propulsion compresses the heart and disrupts its rhythm.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://journals.biologists.com/jeb/article/131/1/175/5279/Blood-Flow-and-Pressure-Changes-in-Exercising",
           "sourceCitation": "Wells, M. J., Duthie, G. G., Houlihan, D. F., Smith, P. J. S., & Wells, J. (1987). Blood flow and pressure changes in exercising octopuses (Octopus vulgaris). Journal of Experimental Biology, 131(1), 175-187.",
-          "note": "The mechanism is different. Wells et al. attribute the arrest to mantle pressure blocking venous return: 'the venous system is incapable of returning blood against the gradients produced by the rise in mean mantle pressure.' The heart stops because there is no blood arriving to pump, not because it is physically squeezed out of rhythm."
+          "note": "The mechanism is different. Wells et al. attribute the arrest to mantle pressure blocking venous return: 'the venous system is incapable of returning blood against the gradients produced by the rise in mean mantle pressure.' The heart stops because there is no blood arriving to pump, not because it is physically squeezed out of rhythm.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "The resulting oxygen deficit is why octopuses prefer crawling to swimming.",
@@ -387,10 +395,12 @@
         },
         {
           "claim": "Hemocyanin is less efficient than hemoglobin at body temperature but performs significantly better in cold, low-oxygen environments, exactly the deep chilly waters where many octopuses live.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4403823/",
           "sourceCitation": "Oellermann, M., Lieb, B., Portner, H.-O., Semmens, J. M., & Mark, F. C. (2015). Blue blood on ice: modulated blood oxygen transport facilitates cold compensation and eurythermy in an Antarctic octopod. Frontiers in Zoology, 12:6. doi:10.1186/s12983-015-0097-x",
-          "note": "This is backwards. Cold makes hemocyanin bind oxygen so tightly it cannot release it: at 0 C the Antarctic octopod Pareledone charcoti's hemocyanin would release 'only 16.3% of its bound oxygen,' whereas warming to 10 C lets it release 'most of the bound oxygen.' Cold is a problem the animal must compensate for, not an advantage. P. charcoti copes by carrying 40-46% more hemocyanin-bound oxygen than warmer-water relatives and by leaning on physically dissolved oxygen for 42% of tissue supply."
+          "note": "This is backwards. Cold makes hemocyanin bind oxygen so tightly it cannot release it: at 0 C the Antarctic octopod Pareledone charcoti's hemocyanin would release 'only 16.3% of its bound oxygen,' whereas warming to 10 C lets it release 'most of the bound oxygen.' Cold is a problem the animal must compensate for, not an advantage. P. charcoti copes by carrying 40-46% more hemocyanin-bound oxygen than warmer-water relatives and by leaning on physically dissolved oxygen for 42% of tissue supply.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "The skin contains three cell types working together: chromatophores (pigment sacs under muscular control), iridophores (structural light reflectors), and leucophores (broad light scatterers).",
@@ -603,10 +613,12 @@
         },
         {
           "claim": "Octopus ink contains tyrosinase, which dulls a predator's sense of smell and buys the octopus time to escape.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4052311/",
           "sourceCitation": "Derby, C. D. (2014). Cephalopod ink: production, chemistry, functions and applications. Marine Drugs, 12(5), 2700-2730. doi:10.3390/md12052700",
-          "note": "The definitive review kills this one. Ink 'has been proposed as an aversive deterrent or as a disruptor of predators' chemical senses,' but Derby immediately adds: 'To date, there are no reports of experimental tests of cephalopod ink as an inactivator or disruptor of the chemical senses.' The only tyrosinase-linked predator effect discussed is speculation that quinones produced via tyrosinase might act as feeding deterrents, which concerns taste and palatability, not smell. Tyrosinase is genuinely present in ink; the smell-dulling function is not established."
+          "note": "The definitive review kills this one. Ink 'has been proposed as an aversive deterrent or as a disruptor of predators' chemical senses,' but Derby immediately adds: 'To date, there are no reports of experimental tests of cephalopod ink as an inactivator or disruptor of the chemical senses.' The only tyrosinase-linked predator effect discussed is speculation that quinones produced via tyrosinase might act as feeding deterrents, which concerns taste and palatability, not smell. Tyrosinase is genuinely present in ink; the smell-dulling function is not established.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "The blue-ringed octopus's tetrodotoxin can kill a human within minutes and has no known antidote.",
@@ -857,10 +869,12 @@
         },
         {
           "claim": "This scent-marking system is so effective that other wolverines, predators, and even experienced trappers can detect it from a considerable distance.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://link.springer.com/article/10.1007/s10886-005-6080-9",
           "sourceCitation": "Wood, W.F., Terwilliger, M.N. & Copeland, J.P. (2005). Volatile compounds from anal glands of the wolverine, Gulo gulo. Journal of Chemical Ecology 31(9):2111-2117. doi:10.1007/s10886-005-6080-9",
-          "note": "The one chemical analysis of wolverine anal gland secretion found that \"the pungent thietanes and dithiolanes found in other mustelids were absent.\" The dominant compounds were short-chain fatty acids, phenylacetic acid, alpha-tocopherol and cholesterol. In other words wolverine musk is notably less pungent than that of skunks, mink and weasels, which is the opposite of what the sentence implies. The \"trappers can smell it from a distance\" detail has no source at all."
+          "note": "The one chemical analysis of wolverine anal gland secretion found that \"the pungent thietanes and dithiolanes found in other mustelids were absent.\" The dominant compounds were short-chain fatty acids, phenylacetic acid, alpha-tocopherol and cholesterol. In other words wolverine musk is notably less pungent than that of skunks, mink and weasels, which is the opposite of what the sentence implies. The \"trappers can smell it from a distance\" detail has no source at all.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Wolverines can smell prey buried under up to 20 feet of snow. That is not a typo.",
@@ -910,10 +924,12 @@
         },
         {
           "claim": "Despite their fierce reputation, wolverines are solitary animals. Adults come together only briefly to mate, and males play no role in raising young.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://home.nps.gov/articles/wolverine.htm",
           "sourceCitation": "Wolverine. National Park Service species article (nps.gov/articles/wolverine.htm)",
-          "note": "The first half is right, the second half is the article's clearest factual error. NPS: \"There is some evidence that males may play some role in brood-rearing, particularly after young reach 8 months of age.\" Copeland et al. 2017, \"Social ethology of the wolverine\" in Biology and Conservation of Musteloids (Macdonald, Newman & Harrington eds., Oxford University Press, pp. 389-398), proposes an ethological model revealing an intricate social organisation that \"supports social behaviour that underpins offspring development,\" drawing on Glacier National Park telemetry showing adult males travelling with juvenile offspring. ADF&G also pushes back on the framing: \"the 'bad tempered loner' stereotype gives the impression they are downright antisocial.\" (Note: I confirmed the Copeland chapter's existence and abstract wording through search results and the OUP catalogue listing, but the OUP chapter page itself is paywalled and I could not read the full text, so I have not included it in the sources block.)"
+          "note": "The first half is right, the second half is the article's clearest factual error. NPS: \"There is some evidence that males may play some role in brood-rearing, particularly after young reach 8 months of age.\" Copeland et al. 2017, \"Social ethology of the wolverine\" in Biology and Conservation of Musteloids (Macdonald, Newman & Harrington eds., Oxford University Press, pp. 389-398), proposes an ethological model revealing an intricate social organisation that \"supports social behaviour that underpins offspring development,\" drawing on Glacier National Park telemetry showing adult males travelling with juvenile offspring. ADF&G also pushes back on the framing: \"the 'bad tempered loner' stereotype gives the impression they are downright antisocial.\" (Note: I confirmed the Copeland chapter's existence and abstract wording through search results and the OUP catalogue listing, but the OUP chapter page itself is paywalled and I could not read the full text, so I have not included it in the sources block.)",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "A typical litter contains just two or three kits, born in late winter inside a snow den that the mother excavates herself.",
@@ -1010,10 +1026,12 @@
         },
         {
           "claim": "Out of roughly 5,500 mammal species on the planet, just five lay eggs.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "ASM Mammal Diversity Database v2.5, American Society of Mammalogists Biodiversity Committee, released 28 July 2026",
           "sourceUrl": "https://www.mammaldiversity.org/",
-          "note": "The current authoritative count is 6,904 total mammal species, of which 6,791 are extant (6,774 living wild plus 17 domestic) and 113 recently extinct. 5,500 is closer to the Wilson and Reeder (2005) figure and is roughly 20% too low. The 'five out of thousands' point still stands, but the number needs updating to about 6,800."
+          "note": "The current authoritative count is 6,904 total mammal species, of which 6,791 are extant (6,774 living wild plus 17 domestic) and 113 recently extinct. 5,500 is closer to the Wilson and Reeder (2005) figure and is roughly 20% too low. The 'five out of thousands' point still stands, but the number needs updating to about 6,800.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "A female platypus lays one to three leathery, soft-shelled eggs and incubates them by curling around them in a burrow for about ten days.",
@@ -1087,10 +1105,12 @@
         },
         {
           "claim": "Researchers have found the venom contains over 80 different compounds, some of which are unique to the platypus and have no equivalent in any other venomous animal.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "Whittington, C.M., Papenfuss, A.T., Locke, D.P., Mardis, E.R., Wilson, R.K., Abubucker, S., Mitreva, M., Wong, E.S.W., Hsu, A.L., Kuchel, P.W., Belov, K., Warren, W.C. (2010). Novel venom gene discovery in the platypus. Genome Biology 11(9):R95. DOI: 10.1186/gb-2010-11-9-r95",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2965387/",
-          "note": "Two errors. First, the 83 figure refers to predicted venom GENES/transcripts from a venom gland cDNA library, not confirmed compounds isolated from venom. Second, the paper's headline conclusion is the opposite of 'no equivalent in any other venomous animal': the 83 genes fall into 13 toxin families 'homologous to known toxins from a wide range of vertebrates (fish, reptiles, insectivores) and invertebrates (spiders, sea anemones, starfish),' which the authors present as evidence of convergent evolution."
+          "note": "Two errors. First, the 83 figure refers to predicted venom GENES/transcripts from a venom gland cDNA library, not confirmed compounds isolated from venom. Second, the paper's headline conclusion is the opposite of 'no equivalent in any other venomous animal': the 83 genes fall into 13 toxin families 'homologous to known toxins from a wide range of vertebrates (fish, reptiles, insectivores) and invertebrates (spiders, sea anemones, starfish),' which the authors present as evidence of convergent evolution.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Spurs are present in both males and females as juveniles, but females lose theirs as they grow up.",
@@ -1166,10 +1186,12 @@
         },
         {
           "claim": "The platypus has no stomach. Not a small stomach, not a simplified stomach. No stomach at all. Food travels from the esophagus directly into the intestine.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "Dann, J., Qu, Z., Shearwin-Whyatt, L., van der Ploeg, R., Grutzner, F. (2024). Pseudogenization of NK3 homeobox 2 (Nkx3.2) in monotremes provides insight into unique gastric anatomy and physiology. Open Biology 14(7):240071. DOI: 10.1098/rsob.240071",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11285752/",
-          "note": "Directly contradicted. The paper states: 'The platypus stomach is small, amorphic, glandless and it lacks a pyloric sphincter, making it notably hard to distinguish from the oesophagus and intestines,' and describes monotremes as having 'truncated and aglandular antral stomachs.' What the platypus lacks is gastric glands, hydrochloric acid secretion, pepsinogens and (in the platypus specifically) a pylorus, not the organ itself. Bino et al. 2019 agree: 'Gastric glands and the genes involved in gastric function are absent.' The article's emphatic triple denial is the single biggest factual error in the piece."
+          "note": "Directly contradicted. The paper states: 'The platypus stomach is small, amorphic, glandless and it lacks a pyloric sphincter, making it notably hard to distinguish from the oesophagus and intestines,' and describes monotremes as having 'truncated and aglandular antral stomachs.' What the platypus lacks is gastric glands, hydrochloric acid secretion, pepsinogens and (in the platypus specifically) a pylorus, not the organ itself. Bino et al. 2019 agree: 'Gastric glands and the genes involved in gastric function are absent.' The article's emphatic triple denial is the single biggest factual error in the piece.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "The lack of a stomach is shared with a handful of other animals including lungfish and some species of carp.",
@@ -1180,10 +1202,12 @@
         },
         {
           "claim": "The absence of a stomach is thought to be an ancient, ancestral condition rather than a recent adaptation, and the platypus may simply never have needed one.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceCitation": "Castro, L.F.C., Goncalves, O., Mazan, S., Tay, B.-H., Venkatesh, B., Wilson, J.M. (2014). Recurrent gene loss correlates with the evolution of stomach phenotypes in gnathostome history. Proceedings of the Royal Society B 281(1775):20132669. DOI: 10.1098/rspb.2013.2669",
           "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/24307675/",
-          "note": "Reversed. Castro et al. describe 'the stomach, a hallmark of gnathostome evolution' as an ancestral innovation, and stomach loss as repeated derived LOSSES: 'relaxation of purifying selection in pepsinogen genes and possibly proton pump genes in response to dietary changes led to the numerous independent events of stomach loss.' The genetic evidence is pseudogenised and deleted gastric genes, which only exist if the ancestor had a working stomach. So the platypus lineage did have one and lost it; it did not 'never need one.'"
+          "note": "Reversed. Castro et al. describe 'the stomach, a hallmark of gnathostome evolution' as an ancestral innovation, and stomach loss as repeated derived LOSSES: 'relaxation of purifying selection in pepsinogen genes and possibly proton pump genes in response to dietary changes led to the numerous independent events of stomach loss.' The genetic evidence is pseudogenised and deleted gastric genes, which only exist if the ancestor had a working stomach. So the platypus lineage did have one and lost it; it did not 'never need one.'",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Researchers discovered in 2020 that platypus fur is biofluorescent, glowing blue-green under UV light, and the platypus was the first monotreme found to have this property.",
@@ -1319,10 +1343,12 @@
         },
         {
           "claim": "Around 15% of females develop a tusk.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://polarresearch.net/index.php/polar/article/view/8343",
           "sourceCitation": "Garde E, Heide-Jørgensen MP. Tusk anomalies in narwhals (Monodon monoceros) from Greenland. Polar Research 41:8343 (2022). DOI 10.33265/polar.v41.8343",
-          "note": "Off by roughly a factor of ten. Direct sampling of 173 narwhals from Greenland hunts found tusked females at 1.5% of females, tuskless males at 2.8% of males, and double-tusked males at 0.9%. Louis et al. 2025 (Ecology and Evolution 15:e72376) use the same 1.5% figure and note Hay (1984) found similar frequencies in Canada. The 15% number traces to Roberge and Dunn (1990), a Canadian government technical report, and is repeated in Nweeia et al.'s 2009 Smithsonian chapter, but no direct-sample study supports it."
+          "note": "Off by roughly a factor of ten. Direct sampling of 173 narwhals from Greenland hunts found tusked females at 1.5% of females, tuskless males at 2.8% of males, and double-tusked males at 0.9%. Louis et al. 2025 (Ecology and Evolution 15:e72376) use the same 1.5% figure and note Hay (1984) found similar frequencies in Canada. The 15% number traces to Roberge and Dunn (1990), a Canadian government technical report, and is repeated in Nweeia et al.'s 2009 Smithsonian chapter, but no direct-sample study supports it.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Occasionally a male narwhal will grow two tusks, though this is quite rare.",
@@ -1358,10 +1384,12 @@
         },
         {
           "claim": "Narwhals have been observed using their tusks to stun Arctic cod by slapping them with quick, precise strikes before eating them.",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2025.1518605/full",
           "sourceCitation": "O'Corry-Crowe G, Ghazal M, Gillespie M, Galvin P, Harasimo J, Storrie L, Watt CA. Use of tusks by narwhals, Monodon monoceros, in foraging, exploratory, and play behavior. Frontiers in Marine Science 12:1518605 (2025). DOI 10.3389/fmars.2025.1518605",
-          "note": "Wrong fish. The only peer-reviewed documentation of narwhals striking prey with tusks is of Arctic char (Salvelinus alpinus), filmed by drone in Creswell Bay, Somerset Island, Nunavut on 4 and 6 August 2022, with hits 'of sufficient force to incapacitate, stun, and possibly kill the fish.' The Arctic cod version comes from a 2017 Fisheries and Oceans Canada drone-footage press release that was never published as a study."
+          "note": "Wrong fish. The only peer-reviewed documentation of narwhals striking prey with tusks is of Arctic char (Salvelinus alpinus), filmed by drone in Creswell Bay, Somerset Island, Nunavut on 4 and 6 August 2022, with hits 'of sufficient force to incapacitate, stun, and possibly kill the fish.' The Arctic cod version comes from a 2017 Fisheries and Oceans Canada drone-footage press release that was never published as a study.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Narwhals use their tusks in social sparring called 'tusking,' which is less about fighting and more about establishing social rank.",
@@ -1716,17 +1744,21 @@
         },
         {
           "claim": "They simply added water, and the animals woke up, stretched their stubby legs, and went about their business as if nothing had happened",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://www.nipr.ac.jp/english/news/20160217.html",
           "sourceCitation": "National Institute of Polar Research (2016). Animals revived after being in a frozen state for over 30 years. Press release accompanying Tsujimoto, Imura & Kanda, Cryobiology 72(1):78-81",
-          "note": "The paper's own framing is the opposite: 'The long recovery times of the revived tardigrades observed is suggestive of the requirement for repair of damage accrued over 30 years.' One of the two adults showed initial movement but died 20 days after rehydration. The survivor took about two weeks to crawl and feed, and its first egg took 19 days to hatch versus a 9.5-day median."
+          "note": "The paper's own framing is the opposite: 'The long recovery times of the revived tardigrades observed is suggestive of the requirement for repair of damage accrued over 30 years.' One of the two adults showed initial movement but died 20 days after rehydration. The survivor took about two weeks to crawl and feed, and its first egg took 19 days to hatch versus a 9.5-day median.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "In 2007, the European Space Agency launched the FOTON-M3 mission",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://www.esa.int/Newsroom/Press_Releases/Lift-off_for_Foton_microgravity_mission",
           "sourceCitation": "European Space Agency (2007). Lift-off for Foton microgravity mission. ESA press release, 14 September 2007",
-          "note": "Foton-M3 was a Russian-owned spacecraft launched on a Russian Soyuz-U from Baikonur Cosmodrome on 14 September 2007. ESA supplied the payload, including the Biopan-6 exposure facility that carried the tardigrades. ESA did not launch the mission."
+          "note": "Foton-M3 was a Russian-owned spacecraft launched on a Russian Soyuz-U from Baikonur Cosmodrome on 14 September 2007. ESA supplied the payload, including the Biopan-6 exposure facility that carried the tardigrades. ESA did not launch the mission.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Researchers exposed desiccated tardigrades to the full vacuum of open space, complete with cosmic radiation and ultraviolet radiation from the sun, for ten days",
@@ -1744,10 +1776,12 @@
         },
         {
           "claim": "Only three specimens of Milnesium tardigradum survived unfiltered solar radiation, and the survivors went on to reproduce normally after rehydration back on Earth",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6770827/",
           "sourceCitation": "Jonsson KI (2019). Radiation tolerance in tardigrades: current knowledge and potential applications in medicine. Cancers 11(9):1333. doi:10.3390/cancers11091333",
-          "note": "The 'three specimens' figure comes from the initial short-term count in the 2008 letter. Jonsson's own later review states flatly that 'no animals of the two species survived the full UV spectrum'; the TARDIS project reported that the few UV-ALL animals that twitched back to life died within days. The animals that survived and reproduced were the 12% of M. tardigradum exposed to the narrower UVA+B spectrum, and the project reported their reproductive output was reduced relative to Earth controls. The article attaches the reproduction result to the wrong group and overstates 'normally'."
+          "note": "The 'three specimens' figure comes from the initial short-term count in the 2008 letter. Jonsson's own later review states flatly that 'no animals of the two species survived the full UV spectrum'; the TARDIS project reported that the few UV-ALL animals that twitched back to life died within days. The animals that survived and reproduced were the 12% of M. tardigradum exposed to the narrower UVA+B spectrum, and the project reported their reproductive output was reduced relative to Earth controls. The article attaches the reproduction result to the wrong group and overstates 'normally'.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "It was the first confirmed instance of any animal surviving direct exposure to the vacuum of open space",
@@ -1793,10 +1827,12 @@
         },
         {
           "claim": "This protein physically wraps around the tardigrade's DNA like a protective shield, preventing radiation from breaking the strands apart",
-          "status": "wrong",
+          "status": "resolved",
           "sourceUrl": "https://elifesciences.org/articles/47682",
           "sourceCitation": "Chavez C, Cruz-Becerra G, Fei J, Kassavetis GA & Kadonaga JT (2019). The tardigrade damage suppressor protein binds to nucleosomes and protects DNA from hydroxyl radicals. eLife 8:e47682. doi:10.7554/eLife.47682",
-          "note": "Dsup does not wrap around DNA. It is a nucleosome-binding protein that preferentially binds nucleosomal chromatin over free DNA and shields it from hydroxyl radicals; a conserved region resembles the nucleosome-binding domain of vertebrate HMGN proteins. Hashimoto 2016 describes it forming large DNA-Dsup complexes, not a wrapping. In a nucleosome it is DNA that wraps around protein, so the image is backwards."
+          "note": "Dsup does not wrap around DNA. It is a nucleosome-binding protein that preferentially binds nucleosomal chromatin over free DNA and shields it from hydroxyl radicals; a conserved region resembles the nucleosome-binding domain of vertebrate HMGN proteins. Hashimoto 2016 describes it forming large DNA-Dsup complexes, not a wrapping. In a nucleosome it is DNA that wraps around protein, so the image is backwards.",
+          "wasStatus": "wrong",
+          "resolved": "2026-07-31"
         },
         {
           "claim": "Researchers transferred the Dsup gene into human cells, where it reduced radiation-induced DNA damage by around 40%",
@@ -2797,6 +2833,11 @@
       "tardigrades-the-toughest-creatures-on-earth-and-in-space",
       "the-incredible-axolotl-nature-s-smiling-salamander"
     ],
-    "approach": "Overstated claims rewritten to what the source actually supports, keeping the correction visible in the prose rather than quietly deleting the claim. Unverifiable claims either softened to the sourced generality or stated as unsourced, with the reason given. Source blocks left at the 5-cap; new citations added only where an edit introduced a genuinely new sourcing need."
+    "approach": "Overstated claims rewritten to what the source actually supports, keeping the correction visible in the prose rather than quietly deleting the claim. Unverifiable claims either softened to the sourced generality or stated as unsourced, with the reason given. Source blocks left at the 5-cap; new citations added only where an edit introduced a genuinely new sourcing need.",
+    "wrongClaims": {
+      "claims": 18,
+      "date": "2026-07-31",
+      "note": "Corrected in an earlier commit and left flagged. Each was verified absent from the article text on 2026-08-04 by searching for a distinctive fragment of its original wording before being ticked off."
+    }
   }
 }
