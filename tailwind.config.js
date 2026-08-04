@@ -54,13 +54,30 @@ module.exports = {
               marginBottom: '1rem',
               marginTop: '0',
             },
+            // Section markers, not just bigger text.
+            //
+            // --tw-prose-headings is the same --foreground as the body, so an h2
+            // was distinguished only by size and weight. Scrolling a long
+            // article on a phone, that reads as one continuous slab with nothing
+            // to anchor to.
+            //
+            // The fix is a rule rather than a colour. Recolouring headings to
+            // --secondary was the obvious move and is wrong: that orange is
+            // hsl(24 100% 63%), which lands around 2.2:1 on the light-mode
+            // background and fails even the 3:1 large-text minimum. The bar
+            // carries the accent instead and the text keeps full contrast.
+            //
+            // Same device the Beastfile tagline uses, so it reads as the site's
+            // idiom rather than a new one.
             h2: {
               fontFamily: ['var(--font-display)', 'sans-serif'],
               fontWeight: '700',
               fontSize: '1.5rem',
               lineHeight: '1.3',
-              marginTop: '2rem',
+              marginTop: '2.5rem',
               marginBottom: '0.75rem',
+              paddingLeft: '0.75rem',
+              borderLeft: '3px solid hsl(var(--secondary))',
             },
             h3: {
               fontFamily: ['var(--font-display)', 'sans-serif'],
