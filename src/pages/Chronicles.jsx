@@ -334,7 +334,7 @@ function StoryReader({ story, part }) {
         </div>
       ) : null}
 
-      <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
+      <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
         {story.content ? (
           <MdxArticleBody slug={story.slug.current} components={MdxComponents} loadingLabel="Loading story…" />
         ) : null}

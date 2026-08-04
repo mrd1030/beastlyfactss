@@ -550,6 +550,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
 
+            {/* The whole article sits in one block, from the title down, rather
+                than the body alone - the header floating outside it was what
+                made the page feel like it was spilling. */}
+            <div className="rounded-2xl border border-border bg-card p-5 sm:p-8">
+
             {/* Was `post.emoji || '🦎'`. 83 posts set no emoji in frontmatter,
                 so the dolphin, shark, octopus and birdwatching articles all
                 opened with a lizard. sync-articles.js now derives one at build
@@ -592,12 +597,29 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               </div>
             ) : null}
 
-            <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-none dark:prose-invert font-body">
+            {/* The article sits in a block of its own rather than running loose
+                on the page background, so the column has edges instead of
+                spilling.
+
+                The width replaces max-w-none, which was overriding Tailwind
+                Typography's own limit and letting lines run to 89 characters.
+                Comfortable is 45 to 75; past that the eye starts losing the
+                return sweep to the next line, which reads as text going blurry
+                rather than as text being too wide. Nothing was wrong with the
+                size or the contrast - measured at 16px, 15:1 in light and 17:1
+                in dark.
+
+                Set in rem, not ch, because ch measures the "0" glyph. Nunito's
+                zero is 9.6px at this size while its average letter is 7.35px,
+                so an apparently sensible max-w-[68ch] still produced 89
+                characters. 37rem is 592px, about 80. */}
+            <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
               ) : (
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
+              </div>
             </div>
 
             {post.faqs?.length > 0 && (
