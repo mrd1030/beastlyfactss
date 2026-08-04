@@ -179,9 +179,14 @@ const BEASTLYPEDIA = JSON.parse(
 // stay out of the sitemap. What it does add is a real 200 and, because social
 // crawlers do not run JS, the per-fact og:image that Facts.jsx has always
 // computed but never got to emit into a static file.
-const { facts } = await import('./src/lib/data/facts.js');
-const { slugify } = await import('./src/lib/utils/slugify.js');
-const FACT_SLUGS = [...new Set(facts.map((f) => slugify(f.title)).filter(Boolean))];
+// Not prerendered any more. scripts/generate-fact-pages.mjs writes these
+// straight from the built shell with each fact's head tags stamped in, which
+// gives the two things that actually mattered (a real 200 instead of a 404, and
+// an og:image social crawlers can see without running JS) for none of the cost.
+// They were 281 of 964 routes and the most expendable third of the prerender:
+// every one is noindex,follow, so no body ever needed to be static.
+//
+// That step runs between `vite build` and this one - see package.json.
 
 const STATIC_ROUTES = [
   '/',
@@ -213,7 +218,6 @@ const STATIC_ROUTES = [
   ...ENCYCLOPEDIA_ANIMAL_IDS.map(id => `/encyclopedia/animal/${id}`),
   ...BEASTLYPEDIA.groupSlugs.map(s => `/beastlypedia/group/${s}`),
   ...BEASTLYPEDIA.ids.map(id => `/beastlypedia/${id}`),
-  ...FACT_SLUGS.map(s => `/facts/${s}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
 ];
 
@@ -260,9 +264,17 @@ const HEAVY_TIMEOUTS_MS = [60000, 75000, 90000, 90000, 90000];
 const timeoutsFor = (route) => (isLeaf(route) ? LEAF_TIMEOUTS_MS : HEAVY_TIMEOUTS_MS);
 
 // Hard ceiling on everything one route may consume across all its attempts.
-// Without it a hopeless route costs the sum of every timeout above (215s) and
-// blocks its whole bucket while doing it.
-const ROUTE_BUDGET_MS = 120000;
+// Without it a hopeless route costs the sum of every timeout above and blocks
+// its whole bucket while doing it.
+//
+// 200s, raised from 120s once the 275 fact routes moved off this step and freed
+// roughly 3 minutes of budget. At 120s a heavy route got exactly two 60s
+// attempts; every full run since has shelled about two pages, always different
+// ones, which is contention rather than anything wrong with those pages. They
+// used to be expendable noindex facts and are now encyclopedia and beastfile
+// pages that do get indexed, so buying them a third attempt is worth some of
+// the reclaimed time.
+const ROUTE_BUDGET_MS = 200000;
 
 // networkidle0 requires 500ms with zero in-flight connections. This app loads
 // its route chunk, then that chunk's lazy imports, in waves, so the idle window
@@ -542,13 +554,12 @@ async function main() {
   const selected = only?.length ? discovered.filter(r => only.includes(r)) : discovered;
   if (only?.length) console.log(`⚠️  PRERENDER_ONLY set - rendering ${selected.length} of ${discovered.length} routes`);
 
-  // Render in priority order so that if the budget below ever runs out, what
-  // gets dropped is the least valuable thing. /facts/<slug> pages are last
-  // because Facts.jsx marks every deep-linked fact noindex,follow: they exist
-  // to give shared links a 200 and an og:image, not to rank, and they are 275
-  // of the ~964 routes.
-  const isLowPriority = (r) => /^\/facts\/[^/]+$/.test(r) && !r.startsWith('/facts/category/');
-  const allRoutes = [...selected].sort((a, b) => isLowPriority(a) - isLowPriority(b));
+  // No priority sort any more. It existed to push the 281 noindex /facts/<slug>
+  // routes to the back so the budget would eat those first; they are now
+  // generated without a browser by scripts/generate-fact-pages.mjs and never
+  // reach this list. What is left is all indexable, with no clearly expendable
+  // tier, so ordering is left to the heavy/light interleave below.
+  const allRoutes = selected;
 
   // Cloudflare Pages kills the whole build at 20 minutes and everything before
   // this step (install, thumbnails, vite build) has already spent 3 to 4 of
