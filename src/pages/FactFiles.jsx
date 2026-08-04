@@ -5,6 +5,7 @@ import { motion } from '@/lib/motion-safe';
 import { Search } from 'lucide-react';
 import { mdxPosts } from '@/lib/mdxPosts';
 import FactFileRow from '@/components/shared/FactFileRow';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import Pagination from '@/components/shared/Pagination';
 
 const PAGE_SIZE = 12;
@@ -132,6 +133,15 @@ export default function FactFiles() {
             Wild animal features, checked against primary sources. Each one opens with the claim it
             overturns and what the evidence actually says.
           </p>
+          {/* The other two ways into the same wild animals. These were a
+              sidebar card, which put them below three other panels and off the
+              first screen entirely on a phone, where the sidebar stacks under
+              the whole list. Up here they sit where /facts/ and /gallery/ put
+              the same kind of link. */}
+          <div className="flex flex-wrap items-center gap-2">
+            <CrossLinkCta to="/beastlypedia/" label="Browse Beastlypedia" />
+            <CrossLinkCta to="/facts/" label="Browse all animal facts" />
+          </div>
         </motion.div>
 
         {/* Same 2/3 + 1/3 split the Critter Digest listing uses, so the two read
@@ -245,29 +255,6 @@ export default function FactFiles() {
               </ul>
             </div>
 
-            {/* The rest of the wild-animal side of the site. Both are the same
-                animals at a different length: a one-screen profile, or a single
-                fact. Facts already links here, so this reciprocates. */}
-            <div className="rounded-xl border border-border bg-card p-4">
-              <h2 className="mb-1 font-display text-sm font-bold text-foreground">Wild animals, in short</h2>
-              <p className="mb-3 font-body text-xs leading-relaxed text-muted-foreground">
-                The same animals as one-screen profiles rather than long reads.
-              </p>
-              <div className="flex flex-col gap-1.5">
-                <Link
-                  to="/beastlypedia/"
-                  className="font-body text-xs font-semibold text-secondary hover:underline"
-                >
-                  Browse Beastlypedia →
-                </Link>
-                <Link
-                  to="/facts/"
-                  className="font-body text-xs font-semibold text-secondary hover:underline"
-                >
-                  Browse all animal facts →
-                </Link>
-              </div>
-            </div>
           </aside>
         </div>
       </div>
