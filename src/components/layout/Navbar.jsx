@@ -313,7 +313,10 @@ export default function Navbar() {
                     {DIGEST_CATEGORIES.map(cat => (
                       <Link
                         key={cat.slug}
-                        to={`/blog/category/${cat.slug}/`}
+                        // cat.to covers the categories whose own route is only
+                        // a 301. This menu is on every page, so linking at a
+                        // redirect here would do it site-wide.
+                        to={cat.to || `/blog/category/${cat.slug}/`}
                         onClick={handleMenuNav}
                         className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
                       >

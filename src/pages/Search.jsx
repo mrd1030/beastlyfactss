@@ -266,7 +266,9 @@ export default function Search() {
               {BROWSE_CATEGORIES.map(c => (
                 <Link
                   key={c.slug}
-                  to={`/blog/category/${c.slug}/`}
+                  // c.to for the categories whose route is only a 301. Same
+                  // reason as the Navbar menu. See categories.js.
+                  to={c.to || `/blog/category/${c.slug}/`}
                   className="flex items-center gap-2 bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group"
                 >
                   <span className="text-xl">{c.emoji}</span>

@@ -70,7 +70,9 @@ const SECTIONS = [
       emoji: c.emoji,
       label: c.label,
       description: c.description,
-      to: c.slug === 'short-stories' ? '/chronicles/dex/' : `/blog/category/${c.slug}/`,
+      // c.to is set for the categories whose /blog/category/ route only 301s
+      // somewhere else, so this never links at a redirect. See categories.js.
+      to: c.to || `/blog/category/${c.slug}/`,
     })),
   },
   {
