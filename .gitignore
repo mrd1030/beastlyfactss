@@ -66,3 +66,4 @@ _sanity-archive/
 # the real one (their facts-catalog-data.json differed), so tracking it here
 # meant two sources of truth for the same app. Kept on disk, not tracked.
 beastlyfactsapp/
+internal-link-audit.json
