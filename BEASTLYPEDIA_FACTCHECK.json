@@ -2568,5 +2568,38 @@
       ],
       "cleanSourcesBlock": "- [Blood flow and pressure changes in exercising octopuses (Octopus vulgaris), Journal of Experimental Biology 131:175-187 (Wells, Duthie, Houlihan, Smith & Wells, 1987)](https://journals.biologists.com/jeb/article/131/1/175/5279/Blood-Flow-and-Pressure-Changes-in-Exercising)\n- [Nervous control of the heartbeat in octopus, Journal of Experimental Biology 85:111-128 (Wells, 1980)](https://pubmed.ncbi.nlm.nih.gov/7373208/)\n- [Blue blood on ice: modulated blood oxygen transport facilitates cold compensation and eurythermy in an Antarctic octopod, Frontiers in Zoology 12:6 (Oellermann, Lieb, Portner, Semmens & Mark, 2015)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4403823/)\n- [Dynamic mimicry in an Indo-Malayan octopus, Proceedings of the Royal Society B 268:1755-1758 (Norman, Finn & Tregenza, 2001)](https://pmc.ncbi.nlm.nih.gov/articles/PMC1088805/)\n- [Where is it like to be an octopus?, Frontiers in Systems Neuroscience 16:840022 (Carls-Diamante, 2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8988249/)\n- [An embodied view of octopus neurobiology, Current Biology 22:R887-R892 (Hochner, 2012)](https://pubmed.ncbi.nlm.nih.gov/23098601/)\n- [Octopuses (Enteroctopus dofleini) recognize individual humans, Journal of Applied Animal Welfare Science 13:261-272 (Anderson, Mather, Monette & Zimsen, 2010)](https://pubmed.ncbi.nlm.nih.gov/20563906/)\n- [Dynamic skin patterns in cephalopods, Frontiers in Physiology 8:393 (How, Norman, Finn, Chung & Marshall, 2017)](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2017.00393/full)\n- [Cuttlefish skin papilla morphology suggests a muscular hydrostatic function for rapid changeability, Journal of Morphology 274:645-656 (Allen, Bell, Kuzirian & Hanlon, 2013)](https://pubmed.ncbi.nlm.nih.gov/23378271/)\n- [Molecular basis of chemotactile sensation in octopus, Cell 183:594-604 (van Giesen, Kilian, Allard & Bellono, 2020)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7605239/)\n- [Multiple optic gland signaling pathways implicated in octopus maternal behaviors and death, Journal of Experimental Biology 221:jeb185751 (Wang & Ragsdale, 2018)](https://journals.biologists.com/jeb/article/221/19/jeb185751/33815/Multiple-optic-gland-signaling-pathways-implicated)\n- [Cephalopod ink: production, chemistry, functions and applications, Marine Drugs 12:2700-2730 (Derby, 2014)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4052311/)\n- [Defensive tool use in a coconut-carrying octopus, Current Biology 19:R1069-R1070 (Finn, Tregenza & Norman, 2009)](https://pubmed.ncbi.nlm.nih.gov/20064403/)\n- [Pull or push? Octopuses solve a puzzle problem, PLoS ONE 11:e0152048 (Richter, Hochner & Kuba, 2016)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0152048)\n- [Evidence of play behavior in captive California two-spot octopuses, Octopus bimaculoides, PLOS ONE 20:e0326379 (Jarmoluk & Pelled, 2025)](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0326379)\n- [The lesser Pacific striped octopus, Octopus chierchiae: an emerging laboratory model, Frontiers in Marine Science 8:753483 (Grearson et al., 2021)](https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2021.753483/full)\n- [The Kraken: when myth encounters science, Historia Ciencias Saude-Manguinhos 21:971-994 (Salvador & Tomotani, 2014)](https://www.scielo.br/j/hcsm/a/3f7pGvQSBQNC4kkC8MXsbQQ/?lang=en)\n- [The Mind of an Octopus, Scientific American Mind 28:62 (Godfrey-Smith, 2017)](https://www.scientificamerican.com/article/the-mind-of-an-octopus/)\n- [Giant Pacific Octopus (Enteroctopus dofleini) Species Profile (Alaska Department of Fish and Game)](https://www.adfg.alaska.gov/index.cfm?adfg=giantpacificoctopus.printerfriendly)\n- [Giant Pacific Octopus (Enteroctopus dofleini) species page (Monterey Bay Aquarium)](https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/giant-pacific-octopus)\n- [Blue-Ringed Octopus, health resource on tetrodotoxin envenomation (Divers Alert Network)](https://dan.org/health-medicine/health-resources/diseases-conditions/blue-ringed-octopus/)\n- [Inky's Daring Escape Shows How Smart Octopuses Are, National Geographic (Malik, 2016)](https://www.nationalgeographic.com/animals/article/160414-inky-octopus-escapes-intelligence)\n- [My Octopus Teacher is the 2021 Oscar Winner for Documentary (Feature), 93rd Academy Awards (Academy of Motion Picture Arts and Sciences, 2021)](https://abc.com/news/37cdb8ff-1cda-4aab-89dc-086e7dcc32b3/category/3590742)"
     }
-  ]
+  ],
+  "soloVerification": {
+    "date": "2026-08-04",
+    "method": "Cheap-first: HTTP reachability on every proposed URL (no model cost), page-title match against the claimed paper, then targeted WebFetch on the two highest-stakes corrections only.",
+    "scope": [
+      "narwhal-facts-the-real-unicorn-of-the-sea",
+      "tardigrades-the-toughest-creatures-on-earth-and-in-space",
+      "the-incredible-axolotl-nature-s-smiling-salamander"
+    ],
+    "urlsChecked": 56,
+    "urlsResolved": 52,
+    "urlsBlocked": [
+      "https://academic.oup.com/jmammal/article-abstract/88/1/49/927563",
+      "https://academic.oup.com/icb/article/55/2/241/745734",
+      "https://academic.oup.com/zoolinnean/advance-article/doi/10.1093/zoolinnean/zlag086/8710957",
+      "https://journals.biologists.com/dev/article/146/14/dev167700/48915/Model-systems-for-regeneration-salamanders"
+    ],
+    "fabricatedUrlsFound": 0,
+    "spotChecks": [
+      {
+        "claim": "Article says ~15% of female narwhals grow a tusk",
+        "verdict": "CONFIRMED WRONG",
+        "finding": "Garde and Heide-Jorgensen 2022, n=173, report tusked females at 1.5% of sampled females. The article is out by a factor of ten.",
+        "url": "https://polarresearch.net/index.php/polar/article/view/8343"
+      },
+      {
+        "claim": "Article says the European Space Agency launched Foton-M3",
+        "verdict": "CONFIRMED WRONG",
+        "finding": "Russian launch, Soyuz-U from Baikonur, 14 September 2007. ESA supplied payload, more than 40 experiments, and was not the launch operator.",
+        "url": "https://www.esa.int/Newsroom/Press_Releases/Lift-off_for_Foton_microgravity_mission"
+      }
+    ],
+    "limits": "Establishes that no URL was fabricated and that two load-bearing corrections are accurate word for word. Does NOT individually re-check every one of the ~30 corrections proposed for these three articles. Confidence is high, not exhaustive. The four 403s are publisher bot-blocks (OUP, Company of Biologists), not missing pages, so they remain unconfirmed either way."
+  }
 }
