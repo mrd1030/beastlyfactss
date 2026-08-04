@@ -5,7 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { motion } from '@/lib/motion-safe';
-import { Search, Shuffle } from 'lucide-react';
+import { Search, Shuffle, Sparkles, ListOrdered } from 'lucide-react';
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom';
 import { facts, categories } from '@/lib/data/facts';
 import { imagePathFor, absoluteImageFor } from '@/lib/data/factImages';
@@ -39,7 +39,13 @@ export default function Facts() {
   const [imageFact, setImageFact] = useState(null);
   const [page, setPage] = useState(1);
   const listRef = useRef(null);
-  const [randomized, setRandomized] = useState(false);
+  // 'daily'   - seeded shuffle that rotates once a day (the default)
+  // 'numeric' - by fact number, so #1 to #275 in order
+  // 'random'  - a true shuffle, reshuffled on every click of the button
+  //
+  // This replaced a `randomized` boolean, which could only express two of the
+  // three and had no way to say "leave it in numbered order".
+  const [order, setOrder] = useState('daily');
   const [randomOrder, setRandomOrder] = useState([]);
 
   // factNumber is assigned from the canonical file order BEFORE any shuffling,
@@ -153,23 +159,29 @@ export default function Facts() {
   }, [dailyFacts, search, activeCategory]);
 
   const displayFacts = useMemo(() => {
-    if (randomized && randomOrder.length > 0) { 
-      const ids = new Set(filtered.map(f => f.id || f.factNumber)); 
-      return randomOrder.filter(f => ids.has(f.id || f.factNumber)); 
+    if (order === 'numeric') {
+      return [...filtered].sort((a, b) => a.factNumber - b.factNumber);
     }
-    return filtered; 
-  }, [filtered, randomized, randomOrder]);
+    if (order === 'random' && randomOrder.length > 0) {
+      const ids = new Set(filtered.map(f => f.id || f.factNumber));
+      return randomOrder.filter(f => ids.has(f.id || f.factNumber));
+    }
+    return filtered; // 'daily' - `filtered` already comes off the daily order
+  }, [filtered, order, randomOrder]);
 
+  // Clicking Random while already on Random reshuffles rather than toggling
+  // off, since there is now an explicit way back to either other order.
   const handleRandomize = useCallback(() => {
-    if (!randomized) { 
-      setRandomOrder(shuffleArray(filtered)); 
-      setRandomized(true); 
-    } else {
-      setRandomized(false); 
-      setRandomOrder([]); 
-    }
-    setPage(1); 
-  }, [randomized, filtered]);
+    setRandomOrder(shuffleArray(filtered));
+    setOrder('random');
+    setPage(1);
+  }, [filtered]);
+
+  const handleOrderChange = useCallback((next) => {
+    setOrder(next);
+    setRandomOrder([]);
+    setPage(1);
+  }, []);
 
   const totalPages = Math.ceil(displayFacts.length / PAGE_SIZE); 
   // Clamped, because page comes from ?page= and nothing stops a stale or
@@ -181,7 +193,7 @@ export default function Facts() {
   const handleSearchChange = (e) => {
     setSearch(e.target.value); 
     setPage(1); 
-    setRandomized(false); 
+    setOrder(o => (o === 'random' ? 'daily' : o)); 
     setRandomOrder([]); 
   };
 
@@ -275,15 +287,42 @@ export default function Facts() {
                 className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground" 
               />
             </div>
+          </div>
+
+          {/* Order. Its own row rather than sharing the one above, since three
+              controls plus the search box do not fit beside each other on a
+              phone. Random is a button and not a third state of a toggle
+              because pressing it again should reshuffle. */}
+          <div className="flex flex-wrap gap-2 mt-3" role="group" aria-label="Sort facts">
+            {[
+              { key: 'daily', label: "Today's mix", Icon: Sparkles },
+              { key: 'numeric', label: 'Numbered', Icon: ListOrdered },
+            ].map(({ key, label, Icon }) => (
+              <button
+                key={key}
+                type="button"
+                onClick={() => handleOrderChange(key)}
+                aria-pressed={order === key}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-display font-semibold border transition-all ${
+                  order === key
+                    ? 'bg-secondary text-secondary-foreground border-secondary shadow-md shadow-secondary/20'
+                    : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'
+                }`}
+              >
+                <Icon className="w-3.5 h-3.5" /> {label}
+              </button>
+            ))}
             <button
+              type="button"
               onClick={handleRandomize}
-              className={`flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-xs font-display font-bold border transition-all flex-shrink-0 ${
-                randomized
-                  ? 'bg-secondary text-secondary-foreground border-secondary' 
-                  : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40' 
+              aria-pressed={order === 'random'}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-display font-semibold border transition-all ${
+                order === 'random'
+                  ? 'bg-secondary text-secondary-foreground border-secondary shadow-md shadow-secondary/20'
+                  : 'bg-card border-border text-muted-foreground hover:text-foreground hover:border-secondary/40'
               }`}
             >
-              <Shuffle className="w-3.5 h-3.5" /> Randomize 
+              <Shuffle className="w-3.5 h-3.5" /> {order === 'random' ? 'Shuffle again' : 'Random'}
             </button>
           </div>
 
@@ -295,7 +334,7 @@ export default function Facts() {
               <Link
                 key={cat}
                 to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
-                onClick={() => { setRandomized(false); setRandomOrder([]); }}
+                onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
                 className={`px-3 py-1.5 rounded-full text-xs font-display font-semibold transition-all ${
                   activeCategory === cat
                     ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
@@ -315,7 +354,8 @@ export default function Facts() {
         <div className="flex flex-col items-center text-center gap-3 mb-6">
           <p className="text-xs text-muted-foreground font-body">
             {`${displayFacts.length} facts found`}
-            {randomized && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
+            {order === 'random' && <span className="ml-1 text-secondary font-semibold">· randomized 🎲</span>}
+            {order === 'numeric' && <span className="ml-1 text-secondary font-semibold">· numbered</span>}
             {totalPages > 1 && <span>{` · Page ${safePage} of ${totalPages}`}</span>}
           </p>
           
