@@ -332,6 +332,27 @@ export default function Blog() {
             )}
           </div>
 
+          {/* The Legal category has a real hub page with an interactive map, and
+              the written hub article sits partway down this feed where nobody
+              finds it. Surfacing the destination above the list is the point. */}
+          {slugify(activeCategory) === 'legal' && (
+            <Link
+              to="/exotic-pet-laws/"
+              className="mt-5 flex items-start gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4 transition-colors hover:border-primary/60"
+            >
+              <span className="text-xl leading-none" role="img" aria-label="Scales of justice">⚖️</span>
+              <span>
+                <span className="block font-display font-bold text-sm text-foreground">
+                  Start with the interactive map
+                </span>
+                <span className="block text-xs font-body text-muted-foreground leading-relaxed mt-0.5">
+                  28 animals across all 50 states and DC. Pick a species and the states that restrict it light
+                  up, each one quoting the regulation it came from.
+                </span>
+              </span>
+            </Link>
+          )}
+
           <div className="flex flex-wrap gap-2 mt-4">
             <Link
               to="/blog/"

@@ -52,6 +52,7 @@ export default function Footer() {
                 { to: '/gear/', label: 'Recommended Gear' },
                 { to: '/categories/', label: 'All Categories' },
                 { to: '/glossary/', label: 'Glossary' },
+                { to: '/exotic-pet-laws/', label: 'Exotic Pet Laws' },
               ]
             },
             {

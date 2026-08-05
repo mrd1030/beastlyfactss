@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import LEGAL from '@/lib/data/legalStatus.json';
+import MDX_META from '@/lib/generated/mdx-meta.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -14,6 +15,23 @@ const SITE = 'https://beastlyfacts.com';
 const DEFAULT_ANIMAL = 'serval';
 
 const ANIMAL_IDS = Object.keys(LEGAL.animals);
+
+// Every article in the Legal category, read from the generated metadata rather
+// than a hand-kept list. This page is the hub for the category: the written hub
+// article sits at number 17 of 20 in the category feed, where nobody finds it.
+// mdx-meta is keyed by index rather than by slug, so the slug comes from the
+// record itself.
+const LEGAL_GUIDES = Object.values(MDX_META)
+  .filter((m) => m.category === 'Legal' && m.slug !== 'exotic-pet-legal-hub')
+  .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+
+// Maps a legal guide back to the animal it covers, so a guide can link straight
+// to that animal's map rather than to the hub.
+const GUIDE_TO_ANIMAL = Object.fromEntries(
+  Object.entries(LEGAL.animals)
+    .filter(([, a]) => a.article)
+    .map(([id, a]) => [a.article.replace(/^\/blog\/|\/$/g, ''), id]),
+);
 
 // Order matters here: the list doubles as the page's navigation, so it runs
 // most-restricted first rather than alphabetically. An animal nobody can keep
@@ -421,6 +439,52 @@ export default function ExoticPetLaws() {
               .
             </p>
           )}
+        </section>
+
+        {/* The written legal guides. This page is the hub for the Legal category,
+            so the index lives here rather than only inside one article that sits
+            partway down the category feed where nobody finds it. */}
+        <section className="mt-14">
+          <h2 className="font-display font-bold text-2xl text-foreground mb-1">Every legal guide we have written</h2>
+          <p className="text-sm font-body text-muted-foreground mb-5">
+            The map answers where. These answer why, including the states that get reported wrongly and the
+            federal rules that sound like bans and are not.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {LEGAL_GUIDES.map((g) => {
+              const animalId = GUIDE_TO_ANIMAL[g.slug];
+              return (
+                <div key={g.slug} className="rounded-lg border border-border bg-card p-4">
+                  <h3 className="font-display font-bold text-base text-foreground mb-1">
+                    <Link to={`/blog/${g.slug}/`} className="hover:text-primary transition-colors">
+                      {g.title}
+                    </Link>
+                  </h3>
+                  {g.excerpt && (
+                    <p className="text-xs font-body text-muted-foreground leading-relaxed line-clamp-3">
+                      {g.excerpt}
+                    </p>
+                  )}
+                  {animalId && (
+                    <Link
+                      to={`/exotic-pet-laws/${animalId}/`}
+                      className="mt-2 inline-block text-xs font-body text-primary hover:underline"
+                    >
+                      See it on the map →
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <p className="mt-5 text-sm font-body text-foreground">
+            For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are
+            structured, start with{' '}
+            <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
+              the written hub
+            </Link>
+            .
+          </p>
         </section>
 
         <section className="mt-12 rounded-xl border border-border bg-muted/30 p-5">
