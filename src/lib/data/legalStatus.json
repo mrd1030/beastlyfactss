@@ -59,10 +59,13 @@
       "OR",
       "WA",
       "OH",
-      "TX"
+      "TX",
+      "MI",
+      "IL",
+      "MN"
     ],
-    "remaining": 32,
-    "note": "Statuses are complete for the 19 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 29,
+    "note": "Statuses are complete for the 22 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -140,6 +143,18 @@
     },
     "TX": {
       "name": "Texas",
+      "level": "state"
+    },
+    "MI": {
+      "name": "Michigan",
+      "level": "state"
+    },
+    "IL": {
+      "name": "Illinois",
+      "level": "state"
+    },
+    "MN": {
+      "name": "Minnesota",
       "level": "state"
     }
   },
@@ -255,6 +270,21 @@
       "title": "Tex. Health & Safety Code § 822.101(4) and § 822.103, Dangerous Wild Animals",
       "url": "https://www.animallaw.info/statute/tx-dangerous-subchapter-e-dangerous-wild-animals",
       "note": "A closed species list. § 822.103: 'a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal issued by an animal registration agency', plus liability insurance of at least $100,000 per occurrence and caging standards."
+    },
+    "mi-large-carnivore": {
+      "title": "Mich. Comp. Laws ch. 287, Large Carnivore Act and Wolf-dog Cross Act",
+      "url": "https://www.animallaw.info/statute/mi-exotic-pets-chapter-287-animal-industry-large-carnivore-act",
+      "note": "Michigan splits this across three bodies of law: the Large Carnivore Act, the Wolf-dog Cross Act, and Part 413 of the Natural Resources and Environmental Protection Act. Penalties run to misdemeanour charges, fines up to $2,000 per animal and forfeiture."
+    },
+    "il-720-48-10": {
+      "title": "720 ILCS 5/48-10, Dangerous animals",
+      "url": "https://www.animallaw.info/statute/il-exotic-pets-548-10-dangerous-animals",
+      "note": "A closed species list plus a blanket bar on primates. Exemptions: lawful primate possession before 1 January 2011 if registered, and a single service capuchin for a permanently disabled person with severe mobility impairment. Illinois is a home rule state, so municipal ordinances matter here more than most."
+    },
+    "mn-346-155": {
+      "title": "Minn. Stat. § 346.155, Possessing regulated animals",
+      "url": "https://www.animallaw.info/statute/mn-exotic-pet-346155-possessing-regulated-animals",
+      "note": "'Regulated animal' is all members of Felidae except the domestic cat, all bears, and all non-human primates, plus any hybrid or cross between a listed animal and a domestic animal and all subsequent generations. Possession is unlawful unless held on or before 1 January 2005 in compliance with the federal Animal Welfare Act. A knowing violation is a gross misdemeanour: up to two years imprisonment or a $5,000 fine."
     }
   },
   "animals": {
@@ -398,6 +428,24 @@
           "note": "Not on the list. Texas requires no state permit for an animal that is not listed, not endangered and not native wildlife.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "note": "Outside all three bodies of law; kept as an ordinary pet.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "note": "Only Felidae, bears and primates are regulated.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -506,6 +554,23 @@
           "note": "Legal statewide, though some cities restrict ferrets by ordinance.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "MI": {
+          "status": "conditional",
+          "sourceId": "mi-large-carnivore",
+          "note": "Keeping one is unrestricted, but breeding needs a permit, with an exemption for hobby breeders holding up to four ferrets aged six months or more, or a litter under five months kept temporarily for recreational purposes.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -619,6 +684,22 @@
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -668,6 +749,12 @@
           "cite": "7:25-4.4(a)2",
           "quote": "Hamster - Mesocricetus auratus",
           "verifiedOn": "2026-08-04"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -708,6 +795,12 @@
           "cite": "7:25-4.4(a)2",
           "quote": "Gerbil - Meriones mongolinensis",
           "verifiedOn": "2026-08-04"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -799,6 +892,12 @@
           "status": "conditional",
           "sourceId": "ny-11-0103",
           "note": "Felidae hybrids are wild animals except registered hybrids with no wild felid ancestry for five or more generations, so an F5 or later Bengal qualifies. NYC bans all wild-cat hybrids regardless.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "note": "The definition expressly reaches 'any hybrid or cross between an animal listed as prohibited and a domestic animal and offspring from all subsequent generations', so unlike New York there is no generation at which a Bengal falls out.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1279,6 +1378,16 @@
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1365,6 +1474,16 @@
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1447,6 +1566,18 @@
           "note": "The canids listed are the coyote and jackal only.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "note": "The canids listed are the wolf and coyote only.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "note": "Canidae is absent from the definition entirely.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1539,6 +1670,29 @@
           "verifiedOn": "2026-08-04",
           "localOverride": true,
           "permitFor": "personal"
+        },
+        "MI": {
+          "status": "banned",
+          "sourceId": "mi-large-carnivore",
+          "note": "Large Carnivore Act covers lions, tigers, cougars, cheetahs, leopards, jaguars, panthers and hybrids, plus bears, except under narrow exemptions.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi, bear, hyena, wolf or coyote",
+          "note": "The serval is NOT on the Illinois list, despite several secondary sources saying it is. Read the statute rather than the summaries here.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "banned",
+          "sourceId": "mn-346-155",
+          "grandfathered": {
+            "before": "2005-01-01",
+            "detail": "Only if possessed on or before 1 January 2005 and brought into Animal Welfare Act compliance."
+          },
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1610,6 +1764,22 @@
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "verifiedOn": "2026-08-04"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1647,6 +1817,12 @@
           "sourceId": "nj-7-25-4-4",
           "quote": "Guinea pig - Cavia porcellus",
           "verifiedOn": "2026-08-04"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1795,6 +1971,12 @@
           "verifiedOn": "2026-08-04",
           "localOverride": true,
           "permitFor": "personal"
+        },
+        "MI": {
+          "status": "legal",
+          "sourceId": "mi-large-carnivore",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     }
