@@ -53,10 +53,31 @@ export default function ExoticPetLaws() {
   const isIndex = !animalId;
 
   const [selectedState, setSelectedState] = React.useState(null);
+  const mapRef = React.useRef(null);
+  const firstRender = React.useRef(true);
 
   // Reset the pinned state whenever the animal changes, otherwise you keep a
   // detail card for a jurisdiction that has nothing to say about the new one.
   React.useEffect(() => setSelectedState(null), [activeId]);
+
+  // The picker sits below the map, which on a phone means it can be a screen
+  // and a half further down. Changing animal from there would otherwise repaint
+  // a map the reader cannot see. Only scrolls when the map is actually out of
+  // view, so nothing jumps on desktop where both are on screen at once, and
+  // never on first load.
+  React.useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    const el = mapRef.current;
+    if (!el) return;
+    const { top, bottom } = el.getBoundingClientRect();
+    const offScreen = bottom < 0 || top > window.innerHeight;
+    if (!offScreen) return;
+    const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+  }, [activeId]);
 
   const statuses = animal.jurisdictions;
 
@@ -160,34 +181,9 @@ export default function ExoticPetLaws() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-        {/* Animal picker */}
-        <div className="mb-8">
-          <h2 className="font-display font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">
-            Choose an animal
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {ANIMALS_BY_INTEREST.map((id) => {
-              const isActive = id === activeId;
-              return (
-                <Link
-                  key={id}
-                  to={`/exotic-pet-laws/${id}/`}
-                  className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
-                    isActive
-                      ? 'bg-primary text-primary-foreground border-primary font-semibold'
-                      : 'border-border text-foreground hover:border-primary/50 hover:text-primary'
-                  }`}
-                >
-                  {LEGAL.animals[id].name}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-
         <div className="grid gap-6 lg:grid-cols-[1fr,18rem] items-start">
           {/* Map */}
-          <div className="rounded-xl border border-border bg-card p-3 sm:p-5">
+          <div ref={mapRef} className="scroll-mt-20 rounded-xl border border-border bg-card p-3 sm:p-5">
             <LegalStatusMap
               statuses={statuses}
               selected={selectedState}
@@ -306,6 +302,31 @@ export default function ExoticPetLaws() {
                 )}
               </div>
             )}
+          </div>
+        </div>
+
+        {/* Animal picker, deliberately below the map */}
+        <div className="mt-8">
+          <h2 className="font-display font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">
+            Choose an animal
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {ANIMALS_BY_INTEREST.map((id) => {
+              const isActive = id === activeId;
+              return (
+                <Link
+                  key={id}
+                  to={`/exotic-pet-laws/${id}/`}
+                  className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground border-primary font-semibold'
+                      : 'border-border text-foreground hover:border-primary/50 hover:text-primary'
+                  }`}
+                >
+                  {LEGAL.animals[id].name}
+                </Link>
+              );
+            })}
           </div>
         </div>
 
