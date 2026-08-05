@@ -210,9 +210,15 @@ export default function ExoticPetLaws() {
             </p>
           </div>
 
-          {/* Legend and detail */}
-          <div className="space-y-4">
-            <div className="rounded-xl border border-border bg-card p-4">
+          {/* Legend and detail.
+              The order flips by breakpoint on purpose. On a phone everything is
+              one column, so whatever sits first is what appears directly under
+              the map, and after tapping a state that should be the answer rather
+              than the key. On desktop the two sit in a sidebar beside the map and
+              both are visible at once, so the key stays put and the detail card
+              appears under it instead of shoving it down on every click. */}
+          <div className="flex flex-col gap-4">
+            <div className="order-2 lg:order-1 rounded-xl border border-border bg-card p-4">
               <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colours mean</h2>
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
@@ -246,7 +252,7 @@ export default function ExoticPetLaws() {
             </div>
 
             {detail && (
-              <div className="rounded-xl border border-border bg-card p-4">
+              <div className="order-1 lg:order-2 rounded-xl border border-border bg-card p-4">
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <h2 className="font-display font-bold text-base text-foreground">
                     {jurisdictionName(detail.code)}
