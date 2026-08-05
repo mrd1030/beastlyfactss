@@ -65,10 +65,12 @@
       "MN",
       "NV",
       "VA",
-      "MD"
+      "MD",
+      "NM",
+      "VT"
     ],
-    "remaining": 26,
-    "note": "Statuses are complete for the 25 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 24,
+    "note": "Statuses are complete for the 27 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -170,6 +172,14 @@
     },
     "MD": {
       "name": "Maryland",
+      "level": "state"
+    },
+    "NM": {
+      "name": "New Mexico",
+      "level": "state"
+    },
+    "VT": {
+      "name": "Vermont",
       "level": "state"
     }
   },
@@ -315,6 +325,21 @@
       "title": "Md. Code, Criminal Law § 10-621, Importing, selling or possessing certain animals",
       "url": "https://www.animallaw.info/statute/md-exotic-pets-subtitle-6-crimes-relating-animals",
       "note": "Misdemeanour: a fine up to $1,000 for an individual, $10,000 otherwise, and the animal may be seized immediately with costs falling on the keeper unless the seizure proves unjustified. Counties and municipalities may be stricter. Note COMAR 15.11.16.01, which is titled List of Prohibited Animals, is an agriculture rule about feral swine only and is not the exotic pet provision."
+    },
+    "nm-19-35-7": {
+      "title": "N.M. Admin. Code 19.35.7, Importation of Live Non-domesticated Animals, Birds and Fish",
+      "url": "https://www.srca.nm.gov/parts/title19/19.035.0007.html",
+      "note": "Four groups. Group I is semi-domesticated and needs no importation permit; Group IV is 'dangerous, invasive, undesirable, state or federal listed threatened, endangered, a furbearer or any other species of concern' and is barred to the general public, allowed only for scientific study, restoration, zoological display, temporary events, service animals or qualified experts. The operative default: 'Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.' The group assignments themselves live in a separate Director's Species Importation List, roughly 27 pages, which I could not obtain."
+    },
+    "vt-reg-881": {
+      "title": "Vermont Regulation 881 (12-021 Code Vt. R.), Governing the Importation and Possession of Wild Animals, with 10 V.S.A. § 4709",
+      "url": "https://www.law.cornell.edu/regulations/vermont/12-021-Code-Vt-R-12-010-021-X",
+      "note": "Closed list. § 4709 bars bringing in, transporting or possessing any live wild bird or animal without authorisation. Reg 881: 'the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity, except for bona fide scientific or educational purposes' unless the species is designated domestic, a domestic pet, or unrestricted. The Unrestricted Wild Animals List is maintained separately on the department website and was not obtainable."
+    },
+    "vt-20-3541": {
+      "title": "Vt. Stat. Ann. tit. 20, § 3541(3), definition of ferret",
+      "url": "https://legislature.vermont.gov/statutes/section/10appendix/001/00018",
+      "note": "Ferrets were legalised in 1989 and are defined as a domestic pet alongside dogs and cats, limited to 'the European ferret Mustela putorious furo'."
     }
   },
   "animals": {
@@ -497,6 +522,18 @@
           "sourceId": "md-10-621",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "The framework is verified but the Director's Species Importation List is not, so the group assignment is unknown. Note the default cuts toward prohibition: anything not on the list is Group IV. Do not present New Mexico as legal without that list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-reg-881",
+          "note": "Vermont is a closed-list state and the Unrestricted Wild Animals List is held on the department website rather than in the regulation. Without it the group cannot be determined, and the default is that a permit is needed and is issued only for scientific or educational purposes.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -643,6 +680,19 @@
           "sourceId": "md-10-621",
           "note": "Mustelids are absent; only skunk and raccoon are named among small carnivores.",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Group assignment unknown; unlisted defaults to Group IV.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "legal",
+          "sourceId": "vt-20-3541",
+          "quote": "'Ferret' meaning only the European ferret Mustela putorious furo",
+          "note": "Classed as a domestic pet, so outside the wild animal permit regime entirely.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -791,6 +841,18 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Group assignment unknown; unlisted defaults to Group IV.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-reg-881",
+          "note": "Same gap. Secondary sources openly disagree on whether Vermont requires a permit for sugar gliders, which is itself a reason not to assert one.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1527,6 +1589,17 @@
           "sourceId": "md-10-621",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Native to New Mexico and possibly a furbearer or species of concern, either of which would put it in Group IV, but the list was not read.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-reg-881",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1641,6 +1714,17 @@
           "sourceId": "md-10-621",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Group assignment unknown.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-reg-881",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1751,6 +1835,12 @@
           "quote": "fox, skunk, raccoon, or bear",
           "note": "Caught by the bare word 'fox', with no genus qualifier and no exception for the fennec.",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Group assignment unknown.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1889,6 +1979,12 @@
           "quote": "member of the cat family other than the domestic cat",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Likely Group IV as a dangerous species, but the list was not read, so this is not asserted.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1994,6 +2090,18 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "Group assignment unknown; unlisted defaults to Group IV.",
+          "verifiedOn": "2026-08-04"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-reg-881",
+          "note": "Not resolvable without the Unrestricted list.",
           "verifiedOn": "2026-08-04"
         }
       }
