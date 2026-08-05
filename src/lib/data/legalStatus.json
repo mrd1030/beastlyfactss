@@ -67,10 +67,12 @@
       "VA",
       "MD",
       "NM",
-      "VT"
+      "VT",
+      "UT",
+      "DE"
     ],
-    "remaining": 24,
-    "note": "Statuses are complete for the 27 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 22,
+    "note": "Statuses are complete for the 29 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -180,6 +182,14 @@
     },
     "VT": {
       "name": "Vermont",
+      "level": "state"
+    },
+    "UT": {
+      "name": "Utah",
+      "level": "state"
+    },
+    "DE": {
+      "name": "Delaware",
       "level": "state"
     }
   },
@@ -340,6 +350,16 @@
       "title": "Vt. Stat. Ann. tit. 20, § 3541(3), definition of ferret",
       "url": "https://legislature.vermont.gov/statutes/section/10appendix/001/00018",
       "note": "Ferrets were legalised in 1989 and are defined as a domestic pet alongside dogs and cats, limited to 'the European ferret Mustela putorious furo'."
+    },
+    "ut-r657-3": {
+      "title": "Utah Admin. Code R657-3 / R657-3b, Collection, Importation, Transportation and Possession of Animals",
+      "url": "https://www.animallaw.info/administrative/ut-wildlife-possession-r657-3-collection-importation-transportation-and-possession",
+      "note": "Three tiers: noncontrolled needs no certificate of registration, controlled and prohibited both do. Species assignments are in Table 3b-1 on the division's Certificates of Registration page. A reclassification from noncontrolled to controlled or prohibited allows a COR for continued possession of an animal already held."
+    },
+    "de-3900": {
+      "title": "7 Del. Admin. Code 3900, Wildlife, exotic animal provisions",
+      "url": "https://regulations.delaware.gov/AdminCode/title7/3900",
+      "note": "An exotic animal is 'ecologically foreign to Delaware, but allowed for possession, sale, and exhibition if a permit has been issued by the Department', covering live wild mammals, hybrids of wild mammals, and live reptiles not native to the state. A prohibited sublist sits on top, barred to everyone outside parks, zoos, aquariums, museums and research facilities. Administered by the State Veterinarian."
     }
   },
   "animals": {
@@ -534,6 +554,20 @@
           "sourceId": "vt-reg-881",
           "note": "Vermont is a closed-list state and the Unrestricted Wild Animals List is held on the department website rather than in the regulation. Without it the group cannot be determined, and the default is that a permit is needed and is issued only for scientific or educational purposes.",
           "verifiedOn": "2026-08-04"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3",
+          "quote": "Hedgehogs (Erinaceidae) except white bellied hedgehogs are controlled for collection, importation and possession",
+          "note": "White-bellied hedgehog is another common name for Atelerix albiventris, the pet species, so the exception is precisely the animal people keep. Every other hedgehog needs a certificate of registration. Same drafting pattern as Arizona, which exempts genus Atelerix by name.",
+          "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-3900",
+          "note": "Not on the prohibited sublist, but a non-native live wild mammal, so it falls in the exotic animal permit regime.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -694,6 +728,12 @@
           "quote": "'Ferret' meaning only the European ferret Mustela putorious furo",
           "note": "Classed as a domestic pet, so outside the wild animal permit regime entirely.",
           "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "unclear",
+          "sourceId": "de-3900",
+          "note": "The regime covers live wild mammals. A domesticated ferret is arguably not one, and Delaware does not say either way in the text read.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -853,6 +893,19 @@
           "status": "unclear",
           "sourceId": "vt-reg-881",
           "note": "Same gap. Secondary sources openly disagree on whether Vermont requires a permit for sugar gliders, which is itself a reason not to assert one.",
+          "verifiedOn": "2026-08-04"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3",
+          "quote": "Sugar glider (Petaurus breviceps) is noncontrolled for collection, importation or possession",
+          "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-3900",
+          "note": "The prohibited list names kangaroos and wallabies but not gliders, so it falls to the general exotic animal permit rather than the ban.",
+          "permitFor": "personal",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1315,6 +1368,13 @@
           "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-3900",
+          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
+          "note": "The prohibited list names pythons as a group with no size or species qualifier, so it reaches the ball python. Unusual: most states that restrict pythons name only the large constrictors.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1397,6 +1457,12 @@
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "DE": {
+          "status": "unclear",
+          "sourceId": "de-3900",
+          "note": "The list names pythons and anacondas but not Boidae generally, and the anaconda is a boid, so whether the boa constrictor is caught is not resolvable from the list as written.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1600,6 +1666,12 @@
           "status": "unclear",
           "sourceId": "vt-reg-881",
           "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-3900",
+          "quote": "wild rodents",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1724,6 +1796,12 @@
         "VT": {
           "status": "unclear",
           "sourceId": "vt-reg-881",
+          "verifiedOn": "2026-08-04"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-3900",
+          "quote": "wild rodents",
           "verifiedOn": "2026-08-04"
         }
       }
