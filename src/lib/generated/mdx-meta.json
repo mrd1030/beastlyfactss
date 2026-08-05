@@ -11336,6 +11336,39 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/hedgehog-legal-guide.mdx",
+    "slug": "hedgehog-legal-guide",
+    "title": "Is It Legal to Own a Hedgehog? State-by-State Guide",
+    "seoTitle": "Are Hedgehogs Legal in Your State? The Real Answer",
+    "excerpt": "Six places in the US will not let you keep a hedgehog, and almost every list of them gets the reasons wrong. Pennsylvania has no law against hedgehogs at all. Hawaii never names the pet species. Maine, widely reported as a permit state, does not require one.",
+    "date": "2026-08-11",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Hedgehog",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership",
+      "Small Mammals"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/hedgehog-legal.jpg",
+    "imageAlt": "African pygmy hedgehog walking toward the camera on a pale surface",
+    "emoji": "🦔",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/hedgehog-tank-setup-guide.mdx",
     "slug": "hedgehog-tank-setup-guide",
     "title": "Hedgehog Enclosure Setup: Temperature Is the Non-Negotiable Part",
