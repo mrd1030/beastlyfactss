@@ -69,10 +69,12 @@
       "NM",
       "VT",
       "UT",
-      "DE"
+      "DE",
+      "TN",
+      "NC"
     ],
-    "remaining": 22,
-    "note": "Statuses are complete for the 29 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 20,
+    "note": "Statuses are complete for the 31 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -190,6 +192,14 @@
     },
     "DE": {
       "name": "Delaware",
+      "level": "state"
+    },
+    "TN": {
+      "name": "Tennessee",
+      "level": "state"
+    },
+    "NC": {
+      "name": "North Carolina",
       "level": "state"
     }
   },
@@ -360,6 +370,16 @@
       "title": "7 Del. Admin. Code 3900, Wildlife, exotic animal provisions",
       "url": "https://regulations.delaware.gov/AdminCode/title7/3900",
       "note": "An exotic animal is 'ecologically foreign to Delaware, but allowed for possession, sale, and exhibition if a permit has been issued by the Department', covering live wild mammals, hybrids of wild mammals, and live reptiles not native to the state. A prohibited sublist sits on top, barred to everyone outside parks, zoos, aquariums, museums and research facilities. Administered by the State Veterinarian."
+    },
+    "tn-70-4-403": {
+      "title": "Tenn. Code Ann. § 70-4-403, Classifications of wildlife",
+      "url": "https://www.animallaw.info/statute/tn-exotic-pet-part-4-exotic-animals",
+      "note": "Three classes. Class I is 'all species inherently dangerous to humans such as wolves, bears, lions and poisonous snakes', possessable only by zoos, circuses and commercial propagators. Class II is 'native species, except those listed in other classes'. Class III is everything else and needs no wildlife permit, only whatever the Department of Agriculture requires. The catch-all sitting at Class III rather than Class II is what makes Tennessee permissive."
+    },
+    "nc-no-state-rule": {
+      "title": "North Carolina: no single state exotic pet statute; N.C. Wildlife Resources Commission import restrictions plus local ordinances",
+      "url": "https://legalclarity.org/what-exotic-pets-are-legal-in-north-carolina/",
+      "note": "SECONDARY SOURCE, flagged deliberately. North Carolina has no one statute to cite: legality falls out of state import restrictions, wildlife regulations, reptile-specific criminal statutes and county or city ordinances. That absence is itself hard to evidence from a primary source, so these entries are held at unclear rather than recorded as legal. Local rules matter more here than in almost any other state: at least one county has moved to ban the whole of Mustelidae and the whole order Marsupialia, which would take in ferrets and sugar gliders."
     }
   },
   "animals": {
@@ -568,6 +588,19 @@
           "note": "Not on the prohibited sublist, but a non-native live wild mammal, so it falls in the exotic animal permit regime.",
           "permitFor": "personal",
           "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "note": "Not named, so it falls to the Class III catch-all of species not listed in another class, which needs no wildlife permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-no-state-rule",
+          "note": "No state-level restriction found, but only from secondary sources. Needs the WRC import rules read directly before this is called legal.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -733,6 +766,19 @@
           "status": "unclear",
           "sourceId": "de-3900",
           "note": "The regime covers live wild mammals. A domesticated ferret is arguably not one, and Delaware does not say either way in the text read.",
+          "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "quote": "Ferrets and chinchillas",
+          "note": "Named in Class III, so no wildlife permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-no-state-rule",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
@@ -907,6 +953,18 @@
           "note": "The prohibited list names kangaroos and wallabies but not gliders, so it falls to the general exotic animal permit rather than the ban.",
           "permitFor": "personal",
           "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "note": "Class III catch-all.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-no-state-rule",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -962,6 +1020,12 @@
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1008,6 +1072,12 @@
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1803,6 +1873,12 @@
           "sourceId": "de-3900",
           "quote": "wild rodents",
           "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "note": "Class III catch-all; not a native species, so Class II does not apply.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1919,6 +1995,12 @@
           "status": "unclear",
           "sourceId": "nm-19-35-7",
           "note": "Group assignment unknown.",
+          "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "unclear",
+          "sourceId": "tn-70-4-403",
+          "note": "Same open-ended Class I definition.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2063,6 +2145,12 @@
           "sourceId": "nm-19-35-7",
           "note": "Likely Group IV as a dangerous species, but the list was not read, so this is not asserted.",
           "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "unclear",
+          "sourceId": "tn-70-4-403",
+          "note": "Class I is defined by example rather than by list, 'inherently dangerous to humans such as wolves, bears, lions', so whether a serval is caught turns on a judgement the statute does not make. Not resolvable from the text.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2181,6 +2269,18 @@
           "sourceId": "vt-reg-881",
           "note": "Not resolvable without the Unrestricted list.",
           "verifiedOn": "2026-08-04"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "quote": "Ferrets and chinchillas",
+          "verifiedOn": "2026-08-04"
+        },
+        "NC": {
+          "status": "unclear",
+          "sourceId": "nc-no-state-rule",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2224,6 +2324,12 @@
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
