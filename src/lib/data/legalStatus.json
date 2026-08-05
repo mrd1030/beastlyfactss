@@ -108,7 +108,8 @@
     },
     "HI": {
       "name": "Hawaii",
-      "level": "state"
+      "level": "state",
+      "scope": "HAR chapter 4-71: the prohibited list at § 4-71-6, the conditionally approved list, and the restricted list at § 4-71-6.5. Hawaii runs an inverted rule, so an animal on none of the three is barred by default rather than unregulated."
     },
     "PA": {
       "name": "Pennsylvania",
@@ -646,6 +647,11 @@
       "title": "166 NAC 8, Nebraska Game and Parks Commission, Keeping Wildlife in Captivity",
       "url": "https://rules.nebraska.gov",
       "note": "Browse to Game and Parks Commission, Title 166 Wildlife Regulations, Chapter 8. Two lists that must not be conflated. § 001.01B lists the native wild birds and mammals that may be held under a Captive Wildlife Permit. § 001.08A is a separate closed list of wildlife that may be imported into the state, and a non-native animal missing from it cannot lawfully be brought in."
+    },
+    "hi-conditional": {
+      "title": "Hawaii Administrative Rules, List of Conditionally Approved Animals (Hawaii Department of Agriculture official PDF)",
+      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf",
+      "note": "The list that matters most for pet keepers and the one almost never quoted. Conditional approval means importation and possession are allowed subject to the conditions the Board of Agriculture sets, unlike the restricted list, which is research and exhibition only."
     }
   },
   "animals": {
@@ -2675,6 +2681,14 @@
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
           "verifiedOn": "2026-08-04"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals as defined in this chapter at any stage of development is prohibited except for those animals on the lists",
+          "note": "Chamaeleo calyptratus appears on no Hawaii list. The only chameleons named anywhere are Chamaeleo chamaeleon and Furcifer oustaleti, both on the restricted list for research and exhibition only. Veiled chameleons are established in the wild on Maui and Oahu, which is exactly the outcome the default rule exists to prevent.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2847,6 +2861,14 @@
           "sourceId": "ok-800-25-25-3",
           "cite": "§ 800:25-25-3(c)",
           "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
+        },
+        "HI": {
+          "status": "conditional",
+          "sourceId": "hi-conditional",
+          "cite": "List of Conditionally Approved Animals, Family Testudinidae",
+          "quote": "FAMILY Testudinidae ... Testudo (all species in genus)",
+          "note": "A genuine surprise given how much Hawaii bans. The whole genus Testudo is conditionally approved, so Testudo horsfieldii may be imported and kept subject to the conditions the Department of Agriculture attaches, rather than being barred by the default rule the way most exotics are.",
           "verifiedOn": "2026-08-04"
         }
       }
