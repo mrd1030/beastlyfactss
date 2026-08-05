@@ -28,6 +28,8 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
 const TIMEOUT_MS = 15000;
+// Second and final attempt for anything that times out or errors on the first.
+const RETRY_TIMEOUT_MS = 45000;
 const CONCURRENCY = 6;
 
 // A real browser UA: many publishers 403 anything that looks scripted.
@@ -67,17 +69,31 @@ function fetchPosts() {
   return posts;
 }
 
+async function attempt(url, timeoutMs) {
+  const res = await fetch(url, {
+    method: 'GET',
+    redirect: 'follow',
+    signal: AbortSignal.timeout(timeoutMs),
+    headers: { 'User-Agent': UA },
+  });
+  return { status: res.status, finalUrl: res.url };
+}
+
+// Retries once, slowly, before calling a link dead. Six requests run at a time,
+// so a genuinely slow host can blow the normal timeout while being perfectly
+// alive: a 950KB PDF on a university server took 30 seconds unloaded and was
+// reported broken three runs running. False positives are worse here than a
+// slow check, because they train you to skim the BROKEN list, which is the one
+// list that has to be trusted.
 async function checkOne(link) {
   try {
-    const res = await fetch(link.url, {
-      method: 'GET',
-      redirect: 'follow',
-      signal: AbortSignal.timeout(TIMEOUT_MS),
-      headers: { 'User-Agent': UA },
-    });
-    return { ...link, status: res.status, finalUrl: res.url };
-  } catch (err) {
-    return { ...link, status: 'ERR', error: err.message.slice(0, 60) };
+    return { ...link, ...(await attempt(link.url, TIMEOUT_MS)) };
+  } catch {
+    try {
+      return { ...link, ...(await attempt(link.url, RETRY_TIMEOUT_MS)) };
+    } catch (err) {
+      return { ...link, status: 'ERR', error: err.message.slice(0, 60) };
+    }
   }
 }
 

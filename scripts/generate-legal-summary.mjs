@@ -19,7 +19,11 @@ const root = process.cwd();
 const legal = JSON.parse(
   fs.readFileSync(path.join(root, 'src/lib/data/legalStatus.json'), 'utf8'),
 );
+const mdxMeta = JSON.parse(
+  fs.readFileSync(path.join(root, 'src/lib/generated/mdx-meta.json'), 'utf8'),
+);
 const outPath = path.join(root, 'src/lib/generated/legal-summary.json');
+const guidesPath = path.join(root, 'src/lib/generated/legal-guides.json');
 
 // Keyed by encyclopediaId, because that is what the encyclopedia route has in
 // hand. The two id sets do not always match: every cat is cat-<breed> in the
@@ -40,12 +44,22 @@ const summary = Object.fromEntries(
     ]),
 );
 
+// The hub's index of legal guides, sorted the way it renders. Same reasoning
+// as above: the map page filtered this out of mdx-meta.json, which is ~1MB of
+// metadata for all 426 articles, to end up with twenty titles and slugs.
+const guides = mdxMeta
+  .filter((m) => m.category === 'Legal' && m.slug !== 'exotic-pet-legal-hub')
+  .map((m) => ({ slug: m.slug, title: m.title }))
+  .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(summary, null, 2)}\n`);
+fs.writeFileSync(guidesPath, `${JSON.stringify(guides, null, 2)}\n`);
 
 const count = Object.keys(summary).length;
 const bytes = fs.statSync(outPath).size;
 console.log(`Legal summary: ${count} animals, ${bytes} bytes.`);
+console.log(`Legal guide index: ${guides.length} guides, ${fs.statSync(guidesPath).size} bytes.`);
 
 // An animal with a legal guide but no encyclopediaId never shows the card, which
 // is a silent miss rather than a broken page, so it is worth seeing.

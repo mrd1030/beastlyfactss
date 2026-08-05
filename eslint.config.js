@@ -5,13 +5,28 @@ import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginUnusedImports from "eslint-plugin-unused-imports";
 
 export default [
+  // Vendored, generated, and deliberately out-of-scope code. This has to be a
+  // top-level ignores block rather than the `ignores` key on the config below:
+  // a config's own ignores only removes files from that config, it does not
+  // stop ESLint reading them. So these files were still being parsed with no
+  // rules registered, and every stray eslint-disable comment inside them was
+  // reported as referring to an undefined rule. ds-bundle/_vendor/react.js
+  // carries 58 such comments for React's internal ruleset and accounted for 32
+  // of the 35 errors on its own.
+  {
+    ignores: [
+      "ds-bundle/**",
+      "dist/**",
+      "src/lib/**",
+      "src/components/ui/**",
+    ],
+  },
   {
     files: [
       "src/components/**/*.{js,mjs,cjs,jsx}",
       "src/pages/**/*.{js,mjs,cjs,jsx}",
       "src/Layout.jsx",
     ],
-    ignores: ["src/lib/**/*", "src/components/ui/**/*"],
     ...pluginJs.configs.recommended,
     ...pluginReact.configs.flat.recommended,
     languageOptions: {

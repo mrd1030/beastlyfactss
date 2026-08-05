@@ -4,7 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
 import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
-import MDX_META from '@/lib/generated/mdx-meta.json';
+import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -17,14 +17,13 @@ const DEFAULT_ANIMAL = 'serval';
 
 const ANIMAL_IDS = Object.keys(LEGAL.animals);
 
-// Every article in the Legal category, read from the generated metadata rather
-// than a hand-kept list. This page is the hub for the category: the written hub
-// article sits at number 17 of 20 in the category feed, where nobody finds it.
-// mdx-meta is keyed by index rather than by slug, so the slug comes from the
-// record itself.
-const LEGAL_GUIDES = Object.values(MDX_META)
-  .filter((m) => m.category === 'Legal' && m.slug !== 'exotic-pet-legal-hub')
-  .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+// Every article in the Legal category, filtered and sorted at build time by
+// scripts/generate-legal-summary.mjs rather than here. This page is the hub for
+// the category: the written hub article sits at number 17 of 20 in the category
+// feed, where nobody finds it. Filtering it out of mdx-meta.json at runtime
+// meant importing ~1MB of metadata for all 426 articles to end up with
+// nineteen titles and slugs, and mdx-meta is a chunk this route needs for
+// nothing else.
 
 // Maps a legal guide back to the animal it covers, so a guide can link straight
 // to that animal's map rather than to the hub.
