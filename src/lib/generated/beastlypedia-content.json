@@ -67,7 +67,12 @@
         "excerpt": "The pangolin has no teeth, a tongue anchored near its pelvis, and a stomach full of stones. It is also the most",
         "category": "Wild Animals",
         "publishedAt": "2026-08-01",
-        "image": "/assets/images/pangolins-the-most-trafficked-mammal-nobody-knows.jpg"
+        "image": "/assets/images/pangolins-the-most-trafficked-mammal-nobody-knows.jpg",
+        "imageAlt": "A pangolin walking across dry ground, its overlapping brown keratin scales clearly visible along its back and tail",
+        "animal": "Pangolin",
+        "myth": "Pangolin scales are worth taking.",
+        "truth": "They are keratin, the same as fingernails. That belief has made the pangolin the most trafficked wild mammal on Earth.",
+        "sourceCount": 14
       }
     ],
     "siblings": [
@@ -162,7 +167,12 @@
         "excerpt": "Narwhals are real, and they are stranger than fiction. Discover the Arctic whale behind the unicorn legend, its",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-30",
-        "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg"
+        "image": "/assets/images/narwhal-facts-the-real-unicorn-of-the-sea-0.jpg",
+        "imageAlt": "A narwhal swimming beneath Arctic sea ice, showing its mottled grey skin and the single long spiraled tusk extending from the side of its upper jaw",
+        "animal": "Narwhal",
+        "myth": "The narwhal tusk is a horn.",
+        "truth": "It is a tooth, grown out through the lip, threaded with ten million channels that let the animal taste the sea through it.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -245,7 +255,12 @@
         "excerpt": "The giraffe's 25 pound heart is one of the most repeated animal facts going, and it is wrong. Measured properly, the",
         "category": "Wild Animals",
         "publishedAt": "2026-07-23",
-        "image": "/assets/images/giraffe-heart-myth-what-the-research-shows.jpg"
+        "image": "/assets/images/giraffe-heart-myth-what-the-research-shows.jpg",
+        "imageAlt": "An adult giraffe standing in profile on open savanna, its long neck raised, with acacia trees behind it",
+        "animal": "Giraffe",
+        "myth": "A giraffe has a 25 pound heart to pump blood up that neck.",
+        "truth": "It weighs about 11 pounds, ordinary for the body size. The extreme part is the blood pressure, roughly twice a human.",
+        "sourceCount": 10
       }
     ],
     "siblings": [
@@ -295,7 +310,12 @@
         "excerpt": "A primate that mixes venom from a gland on its own arm into its saliva, delivered through a comb of teeth. In one",
         "category": "Wild Animals",
         "publishedAt": "2026-07-28",
-        "image": "/assets/images/slow-loris-the-only-venomous-primate.jpg"
+        "image": "/assets/images/slow-loris-the-only-venomous-primate.jpg",
+        "imageAlt": "A slow loris gripping a branch at night, showing its large forward-facing eyes and dense brown fur",
+        "animal": "Slow Loris",
+        "myth": "No primate is venomous.",
+        "truth": "The slow loris mixes venom from a gland on its own arm into its saliva. In one clinical series, 43 percent of people bitten needed hospital care.",
+        "sourceCount": 9
       }
     ],
     "siblings": [
@@ -345,7 +365,12 @@
         "excerpt": "Elephants produce calls too low for people to hear, carrying for kilometres across open country. Some of that signal",
         "category": "Wild Animals",
         "publishedAt": "2026-08-01",
-        "image": "/assets/images/elephants-talk-below-human-hearing.jpg"
+        "image": "/assets/images/elephants-talk-below-human-hearing.jpg",
+        "imageAlt": "An African elephant standing side-on in dust and low light, its feet planted on dry cracked ground",
+        "animal": "Elephant",
+        "myth": "Elephants are fairly quiet animals between trumpets.",
+        "truth": "They are calling constantly, below human hearing, and part of the signal travels through the ground into the feet of the herd.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -388,7 +413,12 @@
         "excerpt": "A three-toed sloth makes a weekly trip to the forest floor to defecate, and a large share of sloth deaths happen during",
         "category": "Wild Animals",
         "publishedAt": "2026-08-06",
-        "image": "/assets/images/why-a-sloth-climbs-down-to-defecate.jpg"
+        "image": "/assets/images/why-a-sloth-climbs-down-to-defecate.jpg",
+        "imageAlt": "A three-toed sloth hanging from a branch in rainforest canopy, its claws hooked over the limb",
+        "animal": "Sloth",
+        "myth": "Sloths are too lazy to leave their tree.",
+        "truth": "One climbs all the way down once a week to defecate, and a large share of all sloth deaths happen during that trip.",
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -424,7 +454,12 @@
         "excerpt": "The alpha wolf came from unrelated wolves in a zoo pen. Wild packs are just families, and the biologist who spread the",
         "category": "Wild Animals",
         "publishedAt": "2026-07-19",
-        "image": "/assets/images/alpha-wolf-myth-what-the-research-actually-says.jpg"
+        "image": "/assets/images/alpha-wolf-myth-what-the-research-actually-says.jpg",
+        "imageAlt": "A gray wolf standing in snow with two pups nearby, showing a wolf pack as a family group rather than a ranked hierarchy",
+        "animal": "Wolf",
+        "myth": "Wolf packs are ruled by an alpha that fought its way to the top.",
+        "truth": "A wild pack is a family, and the parents lead it. The alpha came from unrelated wolves forced together in a zoo pen.",
+        "sourceCount": 11
       }
     ],
     "siblings": [
@@ -460,7 +495,12 @@
         "excerpt": "Every other big cat lives alone. Lions do not, and the reason is not teamwork on the hunt. The pride is a group of",
         "category": "Wild Animals",
         "publishedAt": "2026-08-01",
-        "image": "/assets/images/lions-are-the-only-social-cat.jpg"
+        "image": "/assets/images/lions-are-the-only-social-cat.jpg",
+        "imageAlt": "Three lionesses resting together in dry savanna grass at golden hour, with acacia trees behind them",
+        "animal": "Lion",
+        "myth": "Lions live in prides so they can hunt together.",
+        "truth": "Cooperative hunting is not what holds a pride together. Related females holding ground worth having is.",
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -496,7 +536,12 @@
         "excerpt": "The entire wild population of the largest cat on Earth is a few thousand animals across thirteen countries. The number",
         "category": "Wild Animals",
         "publishedAt": "2026-08-04",
-        "image": "/assets/images/every-wild-tiger-would-fit-in-a-small-town.jpg"
+        "image": "/assets/images/every-wild-tiger-would-fit-in-a-small-town.jpg",
+        "imageAlt": "A Bengal tiger walking toward the camera through tall dry grass, looking directly ahead",
+        "animal": "Tiger",
+        "myth": "Tiger numbers are rising, so tigers are recovering.",
+        "truth": "The entire wild population is a few thousand animals across thirteen countries. More may live in private American hands than in the wild.",
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -532,7 +577,12 @@
         "excerpt": "Rhino horn is not bone, not ivory, and not a true horn. It is compacted keratin, the protein in fingernails and hair,",
         "category": "Wild Animals",
         "publishedAt": "2026-08-05",
-        "image": "/assets/images/a-rhino-horn-is-made-of-keratin.jpg"
+        "image": "/assets/images/a-rhino-horn-is-made-of-keratin.jpg",
+        "imageAlt": "A white rhinoceros in profile on dry grassland with its front horn lit and clearly visible",
+        "animal": "Rhino",
+        "myth": "Rhino horn is ivory, like an elephant tusk.",
+        "truth": "It is compacted keratin, the same protein as fingernails, and the medicine trade built on it is selling people their own hair.",
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -561,7 +611,12 @@
         "excerpt": "Wombat droppings really are cubes, and the popular explanation is wrong. There is no square sphincter. The real answer",
         "category": "Wild Animals",
         "publishedAt": "2026-07-30",
-        "image": "/assets/images/why-wombats-produce-cube-shaped-droppings.jpg"
+        "image": "/assets/images/why-wombats-produce-cube-shaped-droppings.jpg",
+        "imageAlt": "A bare-nosed wombat standing on grass in daylight, showing its stocky body, short legs and broad bare nose",
+        "animal": "Wombat",
+        "myth": "A wombat has a square sphincter.",
+        "truth": "There is no such thing. The cube is shaped much further up, by stiff and stretchy bands in the intestine wall.",
+        "sourceCount": 10
       }
     ],
     "siblings": [
@@ -595,9 +650,14 @@
         "slug": "honey-badgers-the-toughest-little-troublemakers-on-the-planet",
         "title": "Honey Badger: The World's Most Fearless Animal",
         "excerpt": "The 2002 Guinness Book called it the world's most fearless animal. We checked which of the honey badger's famous claims",
-        "category": "Fun Facts",
+        "category": "Wild Animals",
         "publishedAt": "2026-06-10",
-        "image": "/assets/images/honey-badgers-the-toughest-little-troublemakers-on-the-planet-0.jpg"
+        "image": "/assets/images/honey-badgers-the-toughest-little-troublemakers-on-the-planet-0.jpg",
+        "imageAlt": "A honey badger foraging in the African savanna, showing its distinctive black and white markings",
+        "animal": "Honey Badger",
+        "myth": "The honey badger is officially the world most fearless animal, and nothing can touch it.",
+        "truth": "That was a 2002 print edition of Guinness. Lions and leopards prey on them, and adult annual mortality runs at 34 percent.",
+        "sourceCount": 6
       }
     ],
     "siblings": [
@@ -631,9 +691,14 @@
         "slug": "the-platypus-natures-most-wonderfully-bizarre-mammal",
         "title": "Platypus Facts: Nature's Bizarre Mammal",
         "excerpt": "Egg-laying, venomous, and able to sense electricity; the platypus breaks every mammal rule. Meet nature's most",
-        "category": "Fun Facts",
+        "category": "Wild Animals",
         "publishedAt": "2026-06-10",
-        "image": "/assets/images/the-platypus-natures-most-wonderfully-bizarre-mammal-0.jpg"
+        "image": "/assets/images/the-platypus-natures-most-wonderfully-bizarre-mammal-0.jpg",
+        "imageAlt": "A platypus swimming underwater in a clear Australian freshwater stream, its distinctive bill and webbed feet visible",
+        "animal": "Platypus",
+        "myth": "The platypus glows under UV light, and it must be for something.",
+        "truth": "So does nearly every mammal. It is a property of unpigmented fur, and this one hunts underwater with its eyes shut.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -669,7 +734,12 @@
         "excerpt": "Meet the wolverine: a ferocious, fearless mustelid that defends carcasses against far larger animals. We checked which",
         "category": "Wild Animals",
         "publishedAt": "2026-07-31",
-        "image": "/assets/images/wolverine-facts-the-toughest-animal-pound-for-pound-0.jpg"
+        "image": "/assets/images/wolverine-facts-the-toughest-animal-pound-for-pound-0.jpg",
+        "imageAlt": "A wolverine (Gulo gulo) in the wild, showing its thick dark fur, golden side stripes, and powerful muscular build on rocky terrain",
+        "animal": "Wolverine",
+        "myth": "A wolverine will drive a bear, a cougar or a wolf pack off a kill.",
+        "truth": "That traces to one uncited sentence on a reference site. A camera study of 58 puma kills logged 20 scavenger species and no wolverine.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -738,7 +808,12 @@
         "excerpt": "Put a chameleon on a chessboard and nothing happens. They shift color to signal mood and temperature, not to match a",
         "category": "Wild Animals",
         "publishedAt": "2026-08-08",
-        "image": "/assets/images/chameleons-do-not-change-color-to-match-their-background.jpg"
+        "image": "/assets/images/chameleons-do-not-change-color-to-match-their-background.jpg",
+        "imageAlt": "A male panther chameleon on a branch in Madagascan foliage, banded in turquoise, red and green",
+        "animal": "Chameleon",
+        "myth": "Chameleons change colour to blend into their surroundings.",
+        "truth": "Put one on a chessboard and nothing happens. The colour signals mood and temperature, not the background.",
+        "sourceCount": 1
       }
     ],
     "siblings": [
@@ -791,7 +866,12 @@
         "excerpt": "Constrictors do not crush bones and they do not slowly suffocate anything. Measurements taken inside the coils show it",
         "category": "Wild Animals",
         "publishedAt": "2026-08-09",
-        "image": "/assets/images/constriction-does-not-crush-or-suffocate.jpg"
+        "image": "/assets/images/constriction-does-not-crush-or-suffocate.jpg",
+        "imageAlt": "A green anaconda partly submerged at the edge of a tropical river, thick olive body marked with black oval blotches",
+        "animal": "Boa Constrictor",
+        "myth": "Constrictors crush their prey, or slowly suffocate it.",
+        "truth": "Neither. Pressure readings taken inside the coils show blood flow stops first, and the animal faints within seconds.",
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -820,7 +900,12 @@
         "excerpt": "A sleeping glass frog packs about 89 percent of its red blood cells into its liver, which is what makes it clear. Blood",
         "category": "Wild Animals",
         "publishedAt": "2026-08-10",
-        "image": "/assets/images/how-a-glass-frog-hides-its-own-blood.jpg"
+        "image": "/assets/images/how-a-glass-frog-hides-its-own-blood.jpg",
+        "imageAlt": "A glass frog gripping a green stem, its translucent belly showing the internal organs through the skin",
+        "animal": "Glass Frog",
+        "myth": "A glass frog is see-through because there is nothing much inside it.",
+        "truth": "It packs 89 percent of its red blood cells into its liver to sleep. Blood that concentrated should clot, and somehow does not.",
+        "sourceCount": 2
       }
     ],
     "siblings": [
@@ -889,16 +974,12 @@
         "excerpt": "Meet the axolotl, the smiling 'walking fish' that regenerates its own limbs and stays a baby forever. Why scientists",
         "category": "Aquatic Life",
         "publishedAt": "2026-05-23",
-        "image": "/assets/images/the-incredible-axolotl-nature-s-smiling-salamander-0.jpg"
-      },
-      {
-        "id": "10-surprising-axolotl-facts",
-        "slug": "10-surprising-axolotl-facts",
-        "title": "10 Surprising Axolotl Facts",
-        "excerpt": "Ten quick axolotl facts most people don't know - from limb regeneration and forever-young biology to why these smiling",
-        "category": "Fun Facts",
-        "publishedAt": "2026-06-06",
-        "image": "/assets/images/fun-facts-axolotl.jpg"
+        "image": "/assets/images/the-incredible-axolotl-nature-s-smiling-salamander-0.jpg",
+        "imageAlt": "A cute pink axolotl with feathery gills swimming in clear water",
+        "animal": "Axolotl",
+        "myth": "The axolotl never grows up.",
+        "truth": "It reaches full adult size and breeds. The word is paedomorphosis, and the right hormone pushes it through metamorphosis anyway.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -986,7 +1067,12 @@
         "excerpt": "The lifelong penguin romance is mostly a myth, and the numbers vary enormously by species. What predicts loyalty is not",
         "category": "Wild Animals",
         "publishedAt": "2026-08-02",
-        "image": "/assets/images/penguins-do-not-mate-for-life.jpg"
+        "image": "/assets/images/penguins-do-not-mate-for-life.jpg",
+        "imageAlt": "Two king penguins standing face to face on ice, with a dense colony of others out of focus behind them",
+        "animal": "Penguin",
+        "myth": "Penguins mate for life.",
+        "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
+        "sourceCount": 4
       }
     ],
     "siblings": [
@@ -1020,9 +1106,14 @@
         "slug": "crows-are-smarter-than-you-think-and-they-probably-already-know-it",
         "title": "How Smart Are Crows? Crow Intelligence Explained",
         "excerpt": "Crows recognize human faces, make their own tools, and hold grudges for generations. The science of crow intelligence",
-        "category": "Fun Facts",
+        "category": "Wild Animals",
         "publishedAt": "2026-06-10",
-        "image": "/assets/images/crows-are-smarter-than-you-think-and-they-probably-already-know-it-0.jpg"
+        "image": "/assets/images/crows-are-smarter-than-you-think-and-they-probably-already-know-it-0.jpg",
+        "imageAlt": "A close-up portrait of an American crow (Corvus brachyrhynchos) perched on a branch, its glossy black feathers and sharp intelligent eyes in sharp focus against a softly blurred background",
+        "animal": "Crow",
+        "myth": "Betty the crow bending a wire into a hook was the clearest case of invention in any animal.",
+        "truth": "Wild New Caledonian crows bend twigs using the same motion. She applied a species-typical move to an unfamiliar material.",
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -1145,7 +1236,12 @@
         "excerpt": "Bottlenose dolphins really do use something like names for each other. The research behind that claim is narrower, and",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-20",
-        "image": "/assets/images/do-dolphins-have-names-what-the-research-shows.jpg"
+        "image": "/assets/images/do-dolphins-have-names-what-the-research-shows.jpg",
+        "imageAlt": "A bottlenose dolphin swimming just below the surface in clear blue water, photographed from the side in daylight",
+        "animal": "Dolphin",
+        "myth": "Dolphins call each other by name.",
+        "truth": "Each one invents a signature whistle and answers to it. Calling that a name overstates a narrower and stranger finding.",
+        "sourceCount": 11
       }
     ],
     "siblings": [
@@ -1216,7 +1312,12 @@
         "excerpt": "Every clownfish is born male. When the female of a group dies, the breeding male becomes her. That one fact rewrites",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-29",
-        "image": "/assets/images/what-finding-nemo-got-wrong-about-clownfish.jpg"
+        "image": "/assets/images/what-finding-nemo-got-wrong-about-clownfish.jpg",
+        "imageAlt": "An orange clownfish with white bands nestled among the tentacles of a sea anemone on a coral reef",
+        "animal": "Clownfish",
+        "myth": "Marlin raises Nemo alone after Coral dies.",
+        "truth": "Every clownfish is born male. Marlin would have become female and paired with his own son.",
+        "sourceCount": 10
       }
     ],
     "siblings": [
@@ -1280,7 +1381,12 @@
         "excerpt": "Turritopsis dohrnii really can reverse its life cycle and turn back into a polyp. What it cannot do is survive being",
         "category": "Aquatic Life",
         "publishedAt": "2026-08-01",
-        "image": "/assets/images/immortal-jellyfish-turritopsis-dohrnii-explained.jpg"
+        "image": "/assets/images/immortal-jellyfish-turritopsis-dohrnii-explained.jpg",
+        "imageAlt": "A tiny transparent Turritopsis dohrnii jellyfish with a bright red stomach and fine trailing tentacles, photographed against dark water",
+        "animal": "Immortal Jellyfish",
+        "myth": "The immortal jellyfish lives forever.",
+        "truth": "It can reverse its life cycle back to a polyp, which is not the same as not dying. Most get eaten long before they get the chance.",
+        "sourceCount": 14
       }
     ],
     "siblings": [
@@ -1337,7 +1443,12 @@
         "excerpt": "The male seahorse does not just carry eggs. He grows a placenta, feeds the embryos, and had to dismantle part of his",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-27",
-        "image": "/assets/images/seahorse-male-pregnancy-how-it-works.jpg"
+        "image": "/assets/images/seahorse-male-pregnancy-how-it-works.jpg",
+        "imageAlt": "A seahorse with its tail curled around a piece of seagrass, seen in profile against blue water",
+        "animal": "Seahorse",
+        "myth": "The male seahorse just carries the eggs.",
+        "truth": "He grows a placenta and feeds the embryos, and had to dismantle part of his own immune system to stop his body rejecting them.",
+        "sourceCount": 7
       }
     ],
     "siblings": [
@@ -1366,7 +1477,12 @@
         "excerpt": "There were 65 unprovoked shark bites worldwide in 2025. In the same period, people killed roughly 80 million sharks.",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-31",
-        "image": "/assets/images/how-dangerous-are-sharks-really.jpg"
+        "image": "/assets/images/how-dangerous-are-sharks-really.jpg",
+        "imageAlt": "A blacktip reef shark swimming calmly through clear blue water, seen from the side in bright daylight",
+        "animal": "Shark",
+        "myth": "Sharks are one of the more dangerous animals to humans.",
+        "truth": "There were 65 unprovoked bites worldwide in 2025. Over the same period people killed roughly 80 million sharks.",
+        "sourceCount": 5
       },
       {
         "id": "sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind",
@@ -1375,7 +1491,12 @@
         "excerpt": "Sharks predate trees by 65 million years, and that is just the start. Dive into 10 jaw-dropping shark facts that will",
         "category": "Aquatic Life",
         "publishedAt": "2026-07-31",
-        "image": "/assets/images/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind-0.jpg"
+        "image": "/assets/images/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind-0.jpg",
+        "imageAlt": "A great white shark swimming powerfully through clear blue ocean water, showcasing its massive size and streamlined form",
+        "animal": "Shark",
+        "myth": "Sharks have been around a very long time.",
+        "truth": "Longer than trees. Shark-like scales turn up around 450 million years ago; the first forests are 385.",
+        "sourceCount": 5
       }
     ],
     "siblings": [
@@ -1425,14 +1546,19 @@
         "excerpt": "Did you know octopuses have three hearts and blue blood? These creatures are here to remind us nature is far stranger",
         "category": "Wild Animals",
         "publishedAt": "2026-06-08",
-        "image": "/assets/images/the-octopus-has-three-hearts-and-uses-all-of-them-0.jpg"
+        "image": "/assets/images/the-octopus-has-three-hearts-and-uses-all-of-them-0.jpg",
+        "imageAlt": "A vibrant octopus gliding through colorful coral reef waters, its iridescent purple and teal arms spread wide in the deep blue ocean",
+        "animal": "Octopus",
+        "myth": "An octopus has nine brains, one in each arm.",
+        "truth": "It has one, a ring around its throat, plus a nerve cord running down every arm. That is remarkable enough without the upgrade.",
+        "sourceCount": 5
       },
       {
         "id": "10-surprising-octopus-facts",
         "slug": "10-surprising-octopus-facts",
         "title": "10 Surprising Octopus Facts",
         "excerpt": "Think you know octopuses? These 10 facts reveal their three hearts, blue blood, and remarkable problem-solving",
-        "category": "Fun Facts",
+        "category": "Aquatic Life",
         "publishedAt": "2026-06-13",
         "image": "/assets/images/fun-facts-octopus.jpg"
       }
@@ -1468,9 +1594,14 @@
         "slug": "mantis-shrimp-16-color-vision-punch-power",
         "title": "Mantis Shrimp: Vision & Punch Power",
         "excerpt": "Mantis shrimp punch faster than a bullet and see colors humans can't imagine. The wild science behind their vision,",
-        "category": "Fun Facts",
+        "category": "Wild Animals",
         "publishedAt": "2026-06-10",
-        "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.jpg"
+        "image": "/assets/images/mantis-shrimp-16-color-vision-punch-power-0.jpg",
+        "imageAlt": "A colorful peacock mantis shrimp with vivid iridescent colors perched on a coral reef",
+        "animal": "Mantis Shrimp",
+        "myth": "Sixteen colour receptors means the mantis shrimp sees colours we cannot imagine.",
+        "truth": "It discriminates colour worse than we do. The receptors work as a fast lookup, not as a richer picture.",
+        "sourceCount": 3
       }
     ],
     "siblings": [
@@ -1504,7 +1635,7 @@
         "slug": "10-surprising-cuttlefish-facts",
         "title": "10 Surprising Cuttlefish Facts",
         "excerpt": "Cuttlefish can change their skin in milliseconds and have W-shaped pupils. Discover 10 remarkable facts about this",
-        "category": "Fun Facts",
+        "category": "Aquatic Life",
         "publishedAt": "2026-06-08",
         "image": "/assets/images/fun-facts-cuttlefish.jpg"
       }
@@ -1533,7 +1664,7 @@
         "slug": "10-surprising-humpback-whale-facts",
         "title": "10 Surprising Humpback Whale Facts",
         "excerpt": "From haunting songs that travel thousands of miles to acrobatic breaches, these 10 humpback whale facts reveal the",
-        "category": "Fun Facts",
+        "category": "Aquatic Life",
         "publishedAt": "2026-06-11",
         "image": "/assets/images/fun-facts-humpback-whale.jpg"
       }

@@ -36,17 +36,22 @@ import LocalImage from '@/components/shared/LocalImage';
 // thing separating a card from the page.
 const TAB_CUT = 'polygon(0 0, calc(100% - 22px) 0, 100% 100%, 0 100%)';
 
-export default function FactFileRow({ entry }) {
+// `state` is what makes the article's back button say "Back to Fact Files" and
+// return here rather than to the blog listing - Blog.jsx reads state.from.
+// Without it the reader gets dropped into a Critter Digest they never came
+// from.
+//
+// It is a prop because these rows are drawn in three places now. The default
+// suits the Fact Files listing and the related rows under an article. A
+// Beastfile passes its own, so a reader who opened the article from there gets
+// sent back to that animal instead.
+export default function FactFileRow({ entry, state = { from: 'fact-files' } }) {
   const { slug, myth, truth, animal, sources, image, imageAlt } = entry;
 
-  // state.from is what makes the article's back button say "Back to Fact Files"
-  // and return here rather than to the blog listing - Blog.jsx reads it as
-  // `cameFromFactFiles`. Without it the reader gets dropped into a Critter
-  // Digest they never came from.
   return (
     <Link
       to={`/blog/${slug}/`}
-      state={{ from: 'fact-files' }}
+      state={state}
       className="group relative block focus:outline-none"
     >
       {/* w-fit: the tab is only as wide as the name it carries. The extra right

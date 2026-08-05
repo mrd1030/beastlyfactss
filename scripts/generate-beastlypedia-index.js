@@ -76,6 +76,16 @@ const articleList = Array.isArray(articlesRaw)
   : articlesRaw.articles || Object.values(articlesRaw)[0] || [];
 const articleBySlug = new Map(articleList.map((a) => [a.slug, a]));
 
+// The Fact File fields live in mdx-meta.json, not in articles-index.json.
+// sync-articles.js writes it earlier in the same `npm run build` chain, so it
+// is always current here. Related articles that are Fact Files render on the
+// Beastfile as the same folder row the Fact Files listing uses, which needs
+// the claim, the correction and the source count.
+const mdxMeta = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'src/lib/generated/mdx-meta.json'), 'utf8')
+);
+const metaBySlug = new Map(mdxMeta.map((m) => [m.slug, m]));
+
 // Only what CompactPostCard reads. id and publishedAt are the names it expects;
 // the index stores those as slug and date.
 function toCard(a) {
@@ -89,6 +99,28 @@ function toCard(a) {
     image: a.image,
     imageAlt: a.imageAlt,
     readTime: a.readTime,
+  };
+}
+
+// A related article, plus the Fact File fields when it is one.
+//
+// Most of them are: 28 of the 32 related articles across Beastlypedia are Fact
+// Files, and those render as the folder row with the polaroid. The other four
+// are the "10 surprising X facts" listicles, which have no claim to correct, so
+// myth and truth stay undefined and RelatedFiles falls back to a card for them.
+// That is why the fields are spread conditionally rather than always written:
+// an undefined myth is the signal.
+function toRelated(a) {
+  const meta = metaBySlug.get(a.slug);
+  const card = toCard(a);
+  if (!meta?.myth || !meta?.truth) return card;
+  return {
+    ...card,
+    imageAlt: card.imageAlt || meta.imageAlt,
+    animal: meta.animal || a.category,
+    myth: meta.myth,
+    truth: meta.truth,
+    sourceCount: meta.sourceCount || 0,
   };
 }
 
@@ -145,7 +177,7 @@ for (const [bIndex, b] of beastfiles.entries()) {
       missingArticles.push(`${b.id} -> ${slug} (care category ${a.category}, excluded)`);
       continue;
     }
-    related.push(toCard(a));
+    related.push(toRelated(a));
   }
 
   // Every Beastfile gets an entry now, including one with no facts and no
