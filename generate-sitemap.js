@@ -168,7 +168,14 @@ const staticPages = [
   // One page per animal in the legal matrix. Read from the dataset for the same
   // reason prerender.mjs does: a hand-copied list goes stale the moment a new
   // species is researched, and then the page exists but never gets indexed.
-  ...Object.keys(legalStatus.animals).map(id => `/exotic-pet-laws/${id}/`),
+  //
+  // Animals with no restriction in any jurisdiction are left out. Their page is
+  // an all-grey map and a single sentence, so it carries noindex, and listing a
+  // noindexed URL in the sitemap is a contradiction. Derived from the same data
+  // the page uses, so the two cannot drift apart.
+  ...Object.entries(legalStatus.animals)
+    .filter(([, a]) => Object.values(a.jurisdictions).some(e => e.status !== 'legal'))
+    .map(([id]) => `/exotic-pet-laws/${id}/`),
 
   // Encyclopedia categories
   ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}/`),

@@ -165,6 +165,12 @@ export default function ExoticPetLaws() {
     ? `An interactive map of US exotic pet law covering ${ANIMAL_IDS.length} animals across all ${stateCount} states and DC, every entry quoting the statute or regulation itself.`
     : `Every US state where the ${inSentence(animal.name)} is banned, needs a permit or comes with conditions, each entry citing the regulation directly. ${counts.banned} bans, ${counts.permit} permit states.`;
 
+  // An animal with no restriction anywhere has no page of its own worth
+  // indexing: an all-grey map and one honest sentence. It stays selectable on
+  // the hub and fully rendered for anyone who lands on it, but it is kept out
+  // of the index and out of the sitemap rather than shipped as a thin page.
+  const nothingToReport = restricted.length === 0;
+
   const canonical = isIndex ? `${SITE}/exotic-pet-laws/` : `${SITE}/exotic-pet-laws/${activeId}/`;
 
   return (
@@ -172,6 +178,7 @@ export default function ExoticPetLaws() {
       <Helmet>
         <title>{`${title} | Beastly Facts`}</title>
         <meta name="description" content={description} />
+        <meta name="robots" content={nothingToReport ? 'noindex,follow' : 'index,follow'} />
         <link rel="canonical" href={canonical} />
         <meta property="og:title" content={`${title} | Beastly Facts`} />
         <meta property="og:description" content={description} />
@@ -205,8 +212,17 @@ export default function ExoticPetLaws() {
                 <>
                   {animal.scientific ? <em>{animal.scientific}</em> : null}
                   {animal.scientific ? '. ' : ''}
-                  Restricted in {restricted.length} of the {Object.keys(statuses).length} jurisdictions
-                  checked. Every entry quotes the rule it comes from.
+                  {nothingToReport ? (
+                    <>
+                      Nothing in any of the {Object.keys(statuses).length} jurisdictions we checked restricts
+                      this animal, which is why the map below is blank. That is the answer rather than a gap.
+                    </>
+                  ) : (
+                    <>
+                      Restricted in {restricted.length} of the {Object.keys(statuses).length} jurisdictions
+                      checked. Every entry quotes the rule it comes from.
+                    </>
+                  )}
                 </>
               )}
             </p>
