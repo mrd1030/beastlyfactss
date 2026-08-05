@@ -1,0 +1,122 @@
+{
+  "hedgehog": {
+    "id": "hedgehog",
+    "restricted": 11,
+    "checked": 51
+  },
+  "ferret": {
+    "id": "ferret",
+    "restricted": 11,
+    "checked": 47
+  },
+  "sugar-glider": {
+    "id": "sugar-glider",
+    "restricted": 11,
+    "checked": 50
+  },
+  "hamster": {
+    "id": "hamster",
+    "restricted": 1,
+    "checked": 33
+  },
+  "bengal": {
+    "id": "bengal-cat",
+    "restricted": 12,
+    "checked": 32
+  },
+  "veiled-chameleon": {
+    "id": "veiled-chameleon",
+    "restricted": 3,
+    "checked": 36
+  },
+  "russian-tortoise": {
+    "id": "russian-tortoise",
+    "restricted": 2,
+    "checked": 31
+  },
+  "ball-python": {
+    "id": "ball-python",
+    "restricted": 4,
+    "checked": 36
+  },
+  "boa-constrictor": {
+    "id": "boa-constrictor",
+    "restricted": 6,
+    "checked": 36
+  },
+  "tarantula": {
+    "id": "tarantula",
+    "restricted": 8,
+    "checked": 25
+  },
+  "emperor-scorpion": {
+    "id": "emperor-scorpion",
+    "restricted": 7,
+    "checked": 25
+  },
+  "tegu": {
+    "id": "argentine-tegu",
+    "restricted": 7,
+    "checked": 30
+  },
+  "savannah-monitor": {
+    "id": "savannah-monitor",
+    "restricted": 6,
+    "checked": 28
+  },
+  "chinchilla": {
+    "id": "chinchilla",
+    "restricted": 4,
+    "checked": 41
+  },
+  "guinea-pig": {
+    "id": "guinea-pig",
+    "restricted": 1,
+    "checked": 33
+  },
+  "tokay-gecko": {
+    "id": "tokay-gecko",
+    "restricted": 2,
+    "checked": 29
+  },
+  "tiger-salamander": {
+    "id": "tiger-salamander",
+    "restricted": 12,
+    "checked": 26
+  },
+  "axolotl": {
+    "id": "axolotl",
+    "restricted": 7,
+    "checked": 25
+  },
+  "box-turtle": {
+    "id": "box-turtle",
+    "restricted": 8,
+    "checked": 25
+  },
+  "red-eared-slider": {
+    "id": "red-eared-slider",
+    "restricted": 7,
+    "checked": 25
+  },
+  "sulcata-tortoise": {
+    "id": "sulcata-tortoise",
+    "restricted": 2,
+    "checked": 26
+  },
+  "hognose-snake": {
+    "id": "hognose-snake",
+    "restricted": 2,
+    "checked": 26
+  },
+  "african-grey": {
+    "id": "african-grey-parrot",
+    "restricted": 2,
+    "checked": 26
+  },
+  "millipede": {
+    "id": "giant-millipede",
+    "restricted": 6,
+    "checked": 25
+  }
+}
