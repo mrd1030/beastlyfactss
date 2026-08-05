@@ -2,26 +2,42 @@
   "_readme": [
     "Per-animal, per-jurisdiction legal status, for the legal hub and its US map.",
     "",
-    "STATUS VALUES, which are the map's colour buckets:",
+    "STATUS VALUES, which are the map colour buckets:",
     "  banned      cannot be kept as a pet, no permit route exists",
     "  permit      legal, but a permit or licence is required first",
     "  conditional legal without a permit only if a stated condition is met",
-    "  legal       expressly allowed by name in the jurisdiction's own rules",
-    "  (absent)    no state-level rule found. The map leaves these uncoloured.",
+    "  restricted  on a restricted list, permit regime applies but pet keeping is not clearly ruled out",
+    "  legal       expressly allowed by name in the jurisdiction own rules",
+    "  unclear     the rule is genuinely ambiguous for this animal. Render grey,",
+    "              never as legal. Used where a definition arguably reaches an",
+    "              animal but does not name it, e.g. Texas ends its list with",
+    "              \"or any hybrid of an animal listed in this subdivision\" and",
+    "              the Asian leopard cat behind the Bengal is not itself listed.",
+    "  (absent)    not researched, OR researched and no rule found. Which one is",
+    "              decided by coverage.researched, never by the absence itself.",
     "",
-    "'absent' is deliberately not a value. A missing entry means not yet",
-    "researched OR researched and found to have no rule, and those must not be",
-    "conflated: see coverage.researched below for which jurisdictions have",
-    "actually been read. Only claim 'no restriction' for a jurisdiction listed",
-    "there.",
+    "PER-ENTRY FIELDS beyond status:",
+    "  sourceId      required, keys into `sources`",
+    "  cite          the section number",
+    "  quote         the operative wording, verbatim, where short enough",
+    "  note          anything a reader needs that the quote does not carry",
+    "  grandfathered { before, detail } if existing owners are exempt. \"Banned\"",
+    "                and \"banned unless you already had one\" are different answers",
+    "                to the question being asked.",
+    "  localOverride true where the state says in terms that cities or counties",
+    "                may prohibit what the state allows. Without this the map",
+    "                tells someone in a city with its own ordinance the wrong thing.",
+    "  permitFor     \"personal\" or \"commercial-exhibition-research\". New Jersey",
+    "                issues a hobbyist permit; California only research, exhibition",
+    "                and pre-1992 animal care. Both read as \"permit\" and mean",
+    "                opposite things.",
+    "  verifiedOn    ISO date the source was actually read. Exotic pet law moves.",
     "",
-    "Every entry carries a sourceId into `sources` plus the citation and, where",
-    "short enough, the operative wording. Primary sources only: the regulation,",
-    "statute or the enforcing agency's own page. Never a secondary summary.",
+    "Primary sources only: the regulation, the statute, or the enforcing agency",
+    "own page. Never a secondary summary.",
     "",
-    "NYC is a separate jurisdiction from NY because its Health Code is stricter",
-    "than state law and covers 8 million people. Same principle would apply to",
-    "any other city rule worth mapping."
+    "NYC is separate from NY because its Health Code is stricter than state law",
+    "and covers eight million people. The same applies to any city rule worth mapping."
   ],
   "coverage": {
     "researched": [
@@ -252,110 +268,136 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(D)",
-          "quote": "Order Insectivora-Shrews, Moles, Hedgehogs, etc. All species (D)"
+          "quote": "Order Insectivora-Shrews, Moles, Hedgehogs, etc. All species (D)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "banned",
           "sourceId": "ga-dnr-exotics",
           "cite": "R. 391-4-8-.05(1)(a)",
           "quote": "Order Erinaceopmorpha (hedgehogs): All species",
-          "note": "Rule says licence required; DNR states listed species may not be held as pets, and hedgehogs have no carve-out."
+          "note": "Rule says licence required; DNR states listed species may not be held as pets, and hedgehogs have no carve-out.",
+          "verifiedOn": "2026-08-04"
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
           "cite": "§ 4-71-6",
           "quote": "The introduction into Hawaii of live animals or live non-domestic animals ... is prohibited except for those animals on the lists",
-          "note": "Not named. Barred by the default rule. The only hedgehog Hawaii names is Hemiechinus auritis, not the pet species."
+          "note": "Not named. Barred by the default rule. The only hedgehog Hawaii names is Hemiechinus auritis, not the pet species.",
+          "verifiedOn": "2026-08-04"
         },
         "PA": {
           "status": "banned",
           "sourceId": "pa-memo-44994",
           "cite": "34 Pa.C.S. § 2961 as applied",
-          "note": "No statute names hedgehogs. Game Commission interpretation. Legislation to reverse it has been introduced every session since 2017."
+          "note": "No statute names hedgehogs. Game Commission interpretation. Legislation to reverse it has been introduced every session since 2017.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)",
-          "note": "Closed list permits 'domesticated rodents and rabbits'. Hedgehogs are Eulipotyphla, not rodents, so no category fits."
+          "note": "Closed list permits 'domesticated rodents and rabbits'. Hedgehogs are Eulipotyphla, not rodents, so no category fits.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
           "cite": "161.01(b)",
-          "quote": "Insectivorous mammals (Insectivora): All aardvark, anteater, shrew, otter shrew, gymnure, desman, tenrec, mole and hedgehog."
+          "quote": "Insectivorous mammals (Insectivora): All aardvark, anteater, shrew, otter shrew, gymnure, desman, tenrec, mole and hedgehog.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
           "cite": "N.J.A.C. 7:25-4.5",
-          "note": "Absent from the 4.4 exempt list, so 4.5 requires a permit."
+          "note": "Absent from the 4.4 exempt list, so 4.5 requires a permit.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Atelerix albiventris  Four-toed Hedgehog, African Pygmy Hedgehog",
-          "note": "Commonly misreported as a permit state."
+          "note": "Commonly misreported as a permit state.",
+          "verifiedOn": "2026-08-04"
         },
         "WI": {
           "status": "legal",
           "sourceId": "wi-169",
-          "note": "Not a designated harmful wild animal; Ch. 169 licensing does not reach it. Commonly misreported as a permit state."
+          "note": "Not a designated harmful wild animal; Ch. 169 licensing does not reach it. Commonly misreported as a permit state.",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "note": "No mammal entry covers hedgehogs; the 2021 rule is reptile-focused."
+          "note": "No mammal entry covers hedgehogs; the 2021 rule is reptile-focused.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Not within the closed definition of wild animal. Legal statewide, but banned in New York City under its own Health Code."
+          "note": "Not within the closed definition of wild animal. Legal statewide, but banned in New York City under its own Health Code.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "note": "Outside the four listed families."
+          "note": "Outside the four listed families.",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
           "quote": "Four-toed (African pygmy) hedgehog (Erinaceus albiventris)",
-          "note": "Named on the exemption list. The regulation uses the older genus Erinaceus; current nomenclature is Atelerix albiventris."
+          "note": "Named on the exemption list. The regulation uses the older genus Erinaceus; current nomenclature is Atelerix albiventris.",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
           "cite": "§ 1103(B)",
           "quote": "African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris)",
-          "note": "On the unregulated wildlife list, so no state licence."
+          "note": "On the unregulated wildlife list, so no state licence.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AZ": {
           "status": "legal",
           "sourceId": "az-r12-4-406",
           "quote": "All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted.",
-          "note": "Arizona restricts hedgehogs as an order and then exempts the pet genus by name, so the African pygmy is legal and the European is not."
+          "note": "Arizona restricts hedgehogs as an order and then exempts the pet genus by name, so the African pygmy is legal and the European is not.",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "legal",
           "sourceId": "or-609-305",
-          "note": "Outside the statutory definition of exotic animal."
+          "note": "Outside the statutory definition of exotic animal.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
-          "note": "Not within the enumerated definition."
+          "note": "Not within the enumerated definition.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
-          "note": "On neither list, so no state permit."
+          "note": "On neither list, so no state permit.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "note": "Not on the list. Texas requires no state permit for an animal that is not listed, not endangered and not native wildlife."
+          "note": "Not on the list. Texas requires no state permit for an animal that is not listed, not endangered and not native wildlife.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -370,78 +412,100 @@
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(5)",
           "quote": "Family Mustelidae-All species (D)",
-          "note": "Exceptions are otters only."
+          "note": "Exceptions are otters only.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "conditional",
           "sourceId": "ga-391-4-8-05",
           "quote": "European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit",
-          "note": "Condition: neutered before seven months and vaccinated against rabies."
+          "note": "Condition: neutered before seven months and vaccinated against rabies.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(F)",
-          "quote": "Ferrets"
+          "quote": "Ferrets",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
           "cite": "161.01(b)",
-          "quote": "All fur bearing mammals of the family Mustelidae, including ... stoat and ferret."
+          "quote": "All fur bearing mammals of the family Mustelidae, including ... stoat and ferret.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
           "cite": "N.J.A.C. 7:25-4.5",
-          "note": "Not on the exempt list."
+          "note": "Not on the exempt list.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
-          "quote": "Mustela putorius furo  Domestic Ferret"
+          "quote": "Mustela putorius furo  Domestic Ferret",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Mustelidae is absent from the definition. NYC bans it separately."
+          "note": "Mustelidae is absent from the definition. NYC bans it separately.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "conditional",
           "sourceId": "ma-131-77",
-          "note": "Treated as a domestic animal under 321 CMR 9.02, but M.G.L. c. 131 § 77 requires it to be surgically neutered or spayed and incapable of breeding."
+          "note": "Treated as a domestic animal under 321 CMR 9.02, but M.G.L. c. 131 § 77 requires it to be surgically neutered or spayed and incapable of breeding.",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "Domesticated races of European ferret (Mustela putorius)"
+          "quote": "Domesticated races of European ferret (Mustela putorius)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AZ": {
           "status": "legal",
           "sourceId": "az-r12-4-406",
-          "note": "No Mustelidae entry in the restricted mammal list."
+          "note": "No Mustelidae entry in the restricted mammal list.",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "legal",
           "sourceId": "or-609-305",
-          "note": "Mustelidae is not in the definition."
+          "note": "Mustelidae is not in the definition.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "note": "Legal statewide, though some cities restrict ferrets by ordinance."
+          "note": "Legal statewide, though some cities restrict ferrets by ordinance.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -455,82 +519,106 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(C)",
-          "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)"
+          "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "conditional",
           "sourceId": "ga-391-4-8-05",
-          "quote": "Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit if the owner thereof possesses valid documentation that the animal originated from a source inspected and regulated by the United States Department of Agriculture"
+          "quote": "Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit if the owner thereof possesses valid documentation that the animal originated from a source inspected and regulated by the United States Department of Agriculture",
+          "verifiedOn": "2026-08-04"
         },
         "PA": {
           "status": "banned",
           "sourceId": "pa-memo-44994",
-          "note": "Named alongside hedgehogs in memo 44994 as banned by Game Commission interpretation."
+          "note": "Named alongside hedgehogs in memo 44994 as banned by Game Commission interpretation.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
-          "note": "A marsupial, so the 'domesticated rodents and rabbits' category does not reach it."
+          "note": "A marsupial, so the 'domesticated rodents and rabbits' category does not reach it.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All marsupials, including ... numbat and pigmy, sugar and greater glider."
+          "quote": "All marsupials, including ... numbat and pigmy, sugar and greater glider.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
-          "cite": "N.J.A.C. 7:25-4.5"
+          "cite": "N.J.A.C. 7:25-4.5",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
-          "quote": "Petaurus breviceps  Sugar Glider"
+          "quote": "Petaurus breviceps  Sugar Glider",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited"
+          "sourceId": "fl-prohibited",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Marsupials are not in the definition. NYC bans it separately."
+          "note": "Marsupials are not in the definition. NYC bans it separately.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Sugar Glider (Petaurus breviceps)"
+          "quote": "Sugar Glider (Petaurus breviceps)",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "Sugar Gliders (Petaurus breviceps)"
+          "quote": "Sugar Gliders (Petaurus breviceps)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AZ": {
           "status": "legal",
           "sourceId": "az-r12-4-406",
-          "note": "The only marsupial entry is 'All species of the genus Didelphis. Common name: American opossums.'"
+          "note": "The only marsupial entry is 'All species of the genus Didelphis. Common name: American opossums.'",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "legal",
           "sourceId": "or-609-305",
-          "note": "Marsupials are not in the definition."
+          "note": "Marsupials are not in the definition.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101"
+          "sourceId": "tx-822-101",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -543,36 +631,43 @@
           "status": "legal",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)(b)",
-          "quote": "Domesticated races of golden hamsters of the species Mesocricetus auratus and domesticated races of dwarf hamsters of the Genus Phodopus are not restricted"
+          "quote": "Domesticated races of golden hamsters of the species Mesocricetus auratus and domesticated races of dwarf hamsters of the Genus Phodopus are not restricted",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Rodentia entry excepts Genus Mesocricetus."
+          "note": "Rodentia entry excepts Genus Mesocricetus.",
+          "verifiedOn": "2026-08-04"
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6-5",
           "cite": "Part A",
           "quote": "Mesocricetus auratus",
-          "note": "Part A is research and exhibition only, so no pet keeping."
+          "note": "Part A is research and exhibition only, so no pet keeping.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(C)",
-          "quote": "Domesticated rodents and rabbits"
+          "quote": "Domesticated rodents and rabbits",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "note": "The rodent prohibition reaches only large rodents; hamsters are not named."
+          "note": "The rodent prohibition reaches only large rodents; hamsters are not named.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
           "cite": "7:25-4.4(a)2",
-          "quote": "Hamster - Mesocricetus auratus"
+          "quote": "Hamster - Mesocricetus auratus",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -584,29 +679,35 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)",
-          "note": "Order Rodentia is restricted (D) and gerbils are not among the five exceptions, though the order's own heading names them."
+          "note": "Order Rodentia is restricted (D) and gerbils are not among the five exceptions, though the order's own heading names them.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Rodentia entry excepts Genera Gerbillus and Meriones."
+          "note": "Rodentia entry excepts Genera Gerbillus and Meriones.",
+          "verifiedOn": "2026-08-04"
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6-5",
           "cite": "Part A",
-          "quote": "Gerbillus gerbillus / Meriones unguiculatus"
+          "quote": "Gerbillus gerbillus / Meriones unguiculatus",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
-          "cite": "§ 8-1808(j)(1)(C)"
+          "cite": "§ 8-1808(j)(1)(C)",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
           "cite": "7:25-4.4(a)2",
-          "quote": "Gerbil - Meriones mongolinensis"
+          "quote": "Gerbil - Meriones mongolinensis",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -618,42 +719,53 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(1)(M)",
-          "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)"
+          "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Absent from the bird list."
+          "note": "Absent from the bird list.",
+          "verifiedOn": "2026-08-04"
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
-          "quote": "Myiopsitta monachus  parakeet, monk (quaker)"
+          "quote": "Myiopsitta monachus  parakeet, monk (quaker)",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "note": "Bird entry covers predatory or large birds only. NY State is a separate question."
+          "note": "Bird entry covers predatory or large birds only. NY State is a separate question.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
-          "note": "Not among the nine exempt birds."
+          "note": "Not among the nine exempt birds.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "permit",
           "sourceId": "me-unrestricted",
-          "note": "Expressly carved out of the unrestricted list: 'Except for: Myiopsitta monachus'."
+          "note": "Expressly carved out of the unrestricted list: 'Except for: Myiopsitta monachus'.",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Psittacidae (parrots and their allies)"
+          "quote": "Psittacidae (parrots and their allies)",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "All Psitticine birds"
+          "quote": "All Psitticine birds",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -665,24 +777,29 @@
           "status": "legal",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(1)(b)",
-          "quote": "Domestic cats and hybrids of domestic cats are not restricted"
+          "quote": "Domestic cats and hybrids of domestic cats are not restricted",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(B)",
           "quote": "Domestic cats, excluding hybrids with ocelots or margays",
-          "note": "The Bengal derives from the Asian leopard cat, which is neither."
+          "note": "The Bengal derives from the Asian leopard cat, which is neither.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All cats other than domesticated cats (Felis catus), including ... any hybrid offspring of a wild cat and domesticated cat."
+          "quote": "All cats other than domesticated cats (Felis catus), including ... any hybrid offspring of a wild cat and domesticated cat.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "conditional",
           "sourceId": "ny-11-0103",
-          "note": "Felidae hybrids are wild animals except registered hybrids with no wild felid ancestry for five or more generations, so an F5 or later Bengal qualifies. NYC bans all wild-cat hybrids regardless."
+          "note": "Felidae hybrids are wild animals except registered hybrids with no wild felid ancestry for five or more generations, so an F5 or later Bengal qualifies. NYC bans all wild-cat hybrids regardless.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -695,71 +812,91 @@
           "status": "legal",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(7)",
-          "note": "The reptile list covers crocodilians, snapping turtles, venomous snakes and the Gila monster only."
+          "note": "The reptile list covers crocodilians, snapping turtles, venomous snakes and the Gila monster only.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Reptile list names two pythons, the Argentine tegu and the Nile monitor only."
+          "note": "Reptile list names two pythons, the Argentine tegu and the Nile monitor only.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(E)",
           "quote": "Non-venomous snakes, fish, and turtles",
-          "note": "Lizards are absent from the permitted list entirely."
+          "note": "Lizards are absent from the permitted list entirely.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "note": "Chamaeleonidae absent from the reptile entry."
+          "note": "Chamaeleonidae absent from the reptile entry.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4"
+          "sourceId": "nj-7-25-4-4",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
-          "quote": "Chamaeleo calyptratus"
+          "quote": "Chamaeleo calyptratus",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "note": "Not on the prohibited list."
+          "note": "Not on the prohibited list.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
-          "sourceId": "ny-11-0103"
+          "sourceId": "ny-11-0103",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
           "quote": "All true Chameleons (Chamaelenoidae)",
-          "note": "Except species categorically nonexempt under endangered species protections."
+          "note": "Except species categorically nonexempt under endangered species protections.",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "All non-native tropical and subtropical species of lizards ... Chamaeleonidae (chameleons)"
+          "quote": "All non-native tropical and subtropical species of lizards ... Chamaeleonidae (chameleons)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305"
+          "sourceId": "or-609-305",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
-          "note": "Varanidae covers water and crocodile monitors only; no chameleons."
+          "note": "Varanidae covers water and crocodile monitors only; no chameleons.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
-          "note": "The only lizard listed is the Komodo dragon."
+          "note": "The only lizard listed is the Komodo dragon.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -771,36 +908,45 @@
         "CA": {
           "status": "legal",
           "sourceId": "ca-671",
-          "note": "Only Chelydridae among turtles."
+          "note": "Only Chelydridae among turtles.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Testudines list names only Pelomedusa subrufa and Pelodiscus sinensis."
+          "note": "Testudines list names only Pelomedusa subrufa and Pelodiscus sinensis.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(E)",
-          "note": "Statute says 'turtles'; a tortoise is Testudines, so this is defensible rather than express."
+          "note": "Statute says 'turtles'; a tortoise is Testudines, so this is defensible rather than express.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
-          "sourceId": "nyc-161-01"
+          "sourceId": "nyc-161-01",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
-          "sourceId": "nj-7-25-4-4"
+          "sourceId": "nj-7-25-4-4",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Testudo horsfieldii",
-          "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca."
+          "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
-          "sourceId": "ny-11-0103"
+          "sourceId": "ny-11-0103",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -813,65 +959,82 @@
         "CA": {
           "status": "legal",
           "sourceId": "ca-671",
-          "note": "Restricted snakes are venomous families plus boomslang, twig snakes and Nerodia."
+          "note": "Restricted snakes are venomous families plus boomslang, twig snakes and Nerodia.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
           "quote": "Serpentes (all species)",
-          "note": "All snakes prohibited."
+          "note": "All snakes prohibited.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
           "cite": "§ 8-1808(j)(1)(E)",
-          "quote": "Non-venomous snakes"
+          "quote": "Non-venomous snakes",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
           "quote": "any member of the family Pythonidae, including but not limited to the African rock python, Indian or Burmese python, Amethystine or scrub python",
-          "note": "'Any member' catches the ball python though it is not named."
+          "note": "'Any member' catches the ball python though it is not named.",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
-          "note": "Not exempt, unlike the boa constrictor."
+          "note": "Not exempt, unlike the boa constrictor.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "note": "Python regius is not on the prohibited list, unlike the large pythons."
+          "note": "Python regius is not on the prohibited list, unlike the large pythons.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Python regius is not among them."
+          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Python regius is not among them.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
           "quote": "All species of boas and pythons (family Boidae)",
-          "note": "Except African rock python, reticulated python and anacondas."
+          "note": "Except African rock python, reticulated python and anacondas.",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "legal",
           "sourceId": "or-609-305",
-          "note": "Only Crocodylia among reptiles."
+          "note": "Only Crocodylia among reptiles.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
-          "note": "Listed snakes are venomous families plus the boomslang."
+          "note": "Listed snakes are venomous families plus the boomslang.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
-          "note": "Restricted constrictors are the anacondas plus reticulated, Indian, Burmese, North and South African rock and amethystine pythons. Python regius is not among them."
+          "note": "Restricted constrictors are the anacondas plus reticulated, Indian, Burmese, North and South African rock and amethystine pythons. Python regius is not among them.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -883,60 +1046,77 @@
       "jurisdictions": {
         "CA": {
           "status": "legal",
-          "sourceId": "ca-671"
+          "sourceId": "ca-671",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
-          "quote": "Serpentes (all species)"
+          "quote": "Serpentes (all species)",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda"
+          "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
           "cite": "7:25-4.4(a)3",
           "quote": "Boa constrictor - Constrictor constrictor",
-          "note": "New Jersey exempts the boa and requires a permit for the ball python, the reverse of most states."
+          "note": "New Jersey exempts the boa and requires a permit for the ball python, the reverse of most states.",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "note": "Not on the prohibited list."
+          "note": "Not on the prohibited list.",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Boidae is not named."
+          "note": "Boidae is not named.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "All species of boas and pythons (family Boidae)"
+          "quote": "All species of boas and pythons (family Boidae)",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)"
+          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305"
+          "sourceId": "or-609-305",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -947,7 +1127,8 @@
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All venomous spiders, including, but not limited to, tarantula, black widow and solifugid"
+          "quote": "All venomous spiders, including, but not limited to, tarantula, black widow and solifugid",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -959,7 +1140,8 @@
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "scorpion; all venomous arthropods"
+          "quote": "scorpion; all venomous arthropods",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -973,18 +1155,25 @@
           "status": "restricted",
           "sourceId": "ga-391-4-8-05",
           "quote": "Salvator merianae (Argentine black-and-white tegu)",
-          "note": "Reptiles on the list are limited to scientific, educational or public exhibition purposes, but may be held as pets if possessed before the rule's effective date."
+          "note": "Reptiles on the list are limited to scientific, educational or public exhibition purposes, but may be held as pets if possessed before the rule's effective date.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "any member of the family Teiidae, including, but not limited to the golden, common, or black and white tegu"
+          "quote": "any member of the family Teiidae, including, but not limited to the golden, common, or black and white tegu",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
           "quote": "genera Salvator and Tupinambis, all species",
-          "note": "Grandfathered personal permit if possessed before 29 April 2021 and applied for by October 2021, for the life of that animal. Commercial breeding ended 30 June 2024."
+          "note": "Grandfathered personal permit if possessed before 29 April 2021 and applied for by October 2021, for the life of that animal. Commercial breeding ended 30 June 2024.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2021-04-29",
+            "detail": "Personal, non-transferable, no-cost permit if applied for by October 2021, valid for that animal life."
+          }
         }
       }
     },
@@ -996,7 +1185,8 @@
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor"
+          "quote": "any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1007,65 +1197,88 @@
         "CA": {
           "status": "banned",
           "sourceId": "ca-671",
-          "cite": "§ 671(c)(2)(J)(1)"
+          "cite": "§ 671(c)(2)(J)(1)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "permit",
           "sourceId": "ga-391-4-8-05",
-          "note": "Cynomys is not among the excepted rodent genera."
+          "note": "Cynomys is not among the excepted rodent genera.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "commercial-exhibition-research"
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
-          "note": "A rodent, but not a domesticated one."
+          "note": "A rodent, but not a domesticated one.",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara"
+          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited"
+          "sourceId": "fl-prohibited",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
-          "sourceId": "ny-11-0103"
+          "sourceId": "ny-11-0103",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "permit",
           "sourceId": "ma-321-9-01",
-          "note": "Absent from the exemption list, so a permit is required."
+          "note": "Absent from the exemption list, so a permit is required.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "CO": {
           "status": "permit",
           "sourceId": "co-w11",
-          "note": "Absent from the unregulated list, so it falls back to licensing. Colorado has native prairie dogs, which is likely why."
+          "note": "Absent from the unregulated list, so it falls back to licensing. Colorado has native prairie dogs, which is likely why.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         },
         "AZ": {
           "status": "restricted",
           "sourceId": "az-r12-4-406",
-          "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks."
+          "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks.",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "legal",
-          "sourceId": "or-609-305"
+          "sourceId": "or-609-305",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101"
+          "sourceId": "tx-822-101",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1076,60 +1289,82 @@
         "CA": {
           "status": "banned",
           "sourceId": "ca-671",
-          "cite": "§ 671(c)(2)(J)(1)"
+          "cite": "§ 671(c)(2)(J)(1)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "permit",
-          "sourceId": "ga-391-4-8-05"
+          "sourceId": "ga-391-4-8-05",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "commercial-exhibition-research"
         },
         "DC": {
           "status": "banned",
-          "sourceId": "dc-8-1808"
+          "sourceId": "dc-8-1808",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara"
+          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited"
+          "sourceId": "fl-prohibited",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "note": "Rodentia is outside the definition."
+          "note": "Rodentia is outside the definition.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "legal",
-          "sourceId": "ct-26-40a"
+          "sourceId": "ct-26-40a",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "permit",
           "sourceId": "ma-321-9-01",
-          "note": "Absent from the exemption list."
+          "note": "Absent from the exemption list.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "CO": {
           "status": "permit",
           "sourceId": "co-w11",
-          "note": "Absent from the unregulated list."
+          "note": "Absent from the unregulated list.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         },
         "OR": {
           "status": "legal",
           "sourceId": "or-609-305",
-          "note": "Rodents are outside the definition."
+          "note": "Rodents are outside the definition.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
-          "sourceId": "tx-822-101"
+          "sourceId": "tx-822-101",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1141,57 +1376,77 @@
           "status": "restricted",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(2)",
-          "quote": "Family Canidae-All species (W)"
+          "quote": "Family Canidae-All species (W)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "banned",
           "sourceId": "ga-dnr-exotics",
-          "note": "Order Carnivora, all species; only the ferret is excepted."
+          "note": "Order Carnivora, all species; only the ferret is excepted.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "banned",
-          "sourceId": "dc-8-1808"
+          "sourceId": "dc-8-1808",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All dogs other than domesticated dogs (Canis familiaris), including ... dhole, fennec, raccoon dog"
+          "quote": "All dogs other than domesticated dogs (Canis familiaris), including ... dhole, fennec, raccoon dog",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
           "quote": "(with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda))",
-          "note": "Expressly carved out of the Canidae entry. Legal statewide, banned in NYC."
+          "note": "Expressly carved out of the Canidae entry. Legal statewide, banned in NYC.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "banned",
           "sourceId": "ct-26-40a",
-          "quote": "The canidae, including, but not limited to, the wolf, and coyote"
+          "quote": "The canidae, including, but not limited to, the wolf, and coyote",
+          "verifiedOn": "2026-08-04"
         },
         "AZ": {
           "status": "restricted",
           "sourceId": "az-r12-4-406",
-          "quote": "All species of the order Carnivora"
+          "quote": "All species of the order Carnivora",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "banned",
           "sourceId": "or-609-305",
-          "note": "Non-wolf, non-indigenous Canidae, with the same closed permit route."
+          "note": "Non-wolf, non-indigenous Canidae, with the same closed permit route.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2009-01-01",
+            "detail": "ODA permits had to pre-date the 2009 Act."
+          },
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
-          "note": "The Canidae entry covers wolves only."
+          "note": "The Canidae entry covers wolves only.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
-          "note": "The canid entries are gray wolves and African wild dogs only."
+          "note": "The canid entries are gray wolves and African wild dogs only.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
-          "note": "The canids listed are the coyote and jackal only."
+          "note": "The canids listed are the coyote and jackal only.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1203,57 +1458,87 @@
           "status": "restricted",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(K)(1)",
-          "quote": "Family Felidae-All species (W)"
+          "quote": "Family Felidae-All species (W)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "banned",
-          "sourceId": "ga-dnr-exotics"
+          "sourceId": "ga-dnr-exotics",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "banned",
-          "sourceId": "dc-8-1808"
+          "sourceId": "dc-8-1808",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "All cats other than domesticated cats (Felis catus), including ... serval, caracal"
+          "quote": "All cats other than domesticated cats (Felis catus), including ... serval, caracal",
+          "verifiedOn": "2026-08-04"
         },
         "NY": {
           "status": "banned",
           "sourceId": "ny-11-0103",
-          "note": "Felidae, with no applicable exception."
+          "note": "Felidae, with no applicable exception.",
+          "verifiedOn": "2026-08-04"
         },
         "CT": {
           "status": "banned",
           "sourceId": "ct-26-40a",
-          "quote": "The felidae, including, but not limited to, the lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat"
+          "quote": "The felidae, including, but not limited to, the lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2010-10-01",
+            "detail": "Primates under 35 lb imported before this date are exempt; the statute grandfathers by date generally."
+          }
         },
         "AZ": {
           "status": "restricted",
           "sourceId": "az-r12-4-406",
-          "quote": "All species of the order Carnivora"
+          "quote": "All species of the order Carnivora",
+          "verifiedOn": "2026-08-04"
         },
         "OR": {
           "status": "banned",
           "sourceId": "or-609-305",
-          "note": "Non-indigenous Felidae. Permits had to pre-date the 2009 Act, so there is no route for a new animal."
+          "note": "Non-indigenous Felidae. Permits had to pre-date the 2009 Act, so there is no route for a new animal.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2009-01-01",
+            "detail": "ODA permits had to pre-date the 2009 Act, so no new permit is available."
+          },
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
-          "note": "The Felidae entry names eight big cats and the serval is not among them, so Washington is unusually permissive here."
+          "note": "The Felidae entry names eight big cats and the serval is not among them, so Washington is unusually permissive here.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2007-07-22",
+            "detail": "Lawful possession before 22 July 2007 is grandfathered."
+          },
+          "localOverride": true
         },
         "OH": {
           "status": "permit",
           "sourceId": "oh-935-01",
           "quote": "Servals, excluding hybrids with domestic cats commonly known as savannah cats",
-          "note": "The serval itself is a dangerous wild animal; savannah cat hybrids are expressly carved out."
+          "note": "The serval itself is a dangerous wild animal; savannah cat hybrids are expressly carved out.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         },
         "TX": {
           "status": "permit",
           "sourceId": "tx-822-101",
           "quote": "a lion; a tiger; an ocelot; a cougar; a leopard; a cheetah; a jaguar; a bobcat; a lynx; a serval; a caracal; a hyena; a bear; a coyote; a jackal; a baboon; a chimpanzee; an orangutan; a gorilla; or any hybrid",
-          "note": "Certificate of registration plus $100,000 liability insurance."
+          "note": "Certificate of registration plus $100,000 liability insurance.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         }
       }
     },
@@ -1267,49 +1552,64 @@
           "status": "legal",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)(e)",
-          "quote": "Domesticated races of chinchillas of the species Chinchilla laniger are not restricted"
+          "quote": "Domesticated races of chinchillas of the species Chinchilla laniger are not restricted",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Genus Chinchilla excepted from Rodentia."
+          "note": "Genus Chinchilla excepted from Rodentia.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
-          "cite": "§ 8-1808(j)(1)(C)"
+          "cite": "§ 8-1808(j)(1)(C)",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
-          "sourceId": "nyc-161-01"
+          "sourceId": "nyc-161-01",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
-          "note": "Not on the exempt list, unlike the hamster and gerbil."
+          "note": "Not on the exempt list, unlike the hamster and gerbil.",
+          "verifiedOn": "2026-08-04",
+          "permitFor": "personal"
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
-          "quote": "Chinchilla lanigera"
+          "quote": "Chinchilla lanigera",
+          "verifiedOn": "2026-08-04"
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Chinchilla (Chinchilla spp.) derived from captive stock"
+          "quote": "Chinchilla (Chinchilla spp.) derived from captive stock",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "Domesticated races of chinchillas (Chinchilla laniger)"
+          "quote": "Domesticated races of chinchillas (Chinchilla laniger)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "WA": {
           "status": "legal",
-          "sourceId": "wa-rcw-16-30"
+          "sourceId": "wa-rcw-16-30",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01"
+          "sourceId": "oh-935-01",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1322,25 +1622,31 @@
           "status": "legal",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(2)(J)(1)(d)",
-          "quote": "Domesticated races of guinea pigs of the species Cavia porcellus are not restricted"
+          "quote": "Domesticated races of guinea pigs of the species Cavia porcellus are not restricted",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "GA": {
           "status": "legal",
           "sourceId": "ga-391-4-8-05",
-          "note": "Genus Cavia excepted."
+          "note": "Genus Cavia excepted.",
+          "verifiedOn": "2026-08-04"
         },
         "DC": {
           "status": "legal",
-          "sourceId": "dc-8-1808"
+          "sourceId": "dc-8-1808",
+          "verifiedOn": "2026-08-04"
         },
         "NYC": {
           "status": "legal",
-          "sourceId": "nyc-161-01"
+          "sourceId": "nyc-161-01",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Guinea pig - Cavia porcellus"
+          "quote": "Guinea pig - Cavia porcellus",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1351,18 +1657,25 @@
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "any member of the family Iguanidae, including the green or common iguana"
+          "quote": "any member of the family Iguanidae, including the green or common iguana",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Common iguana - Iguana iguana"
+          "quote": "Common iguana - Iguana iguana",
+          "verifiedOn": "2026-08-04"
         },
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
           "quote": "Iguana iguana",
-          "note": "Same grandfather permit route as the tegu."
+          "note": "Same grandfather permit route as the tegu.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2021-04-29",
+            "detail": "Same grandfathered personal permit route as the tegu."
+          }
         }
       }
     },
@@ -1374,17 +1687,21 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(7)(B)",
-          "quote": "Family Chelyridae-Snapping Turtles: All species (D)"
+          "quote": "Family Chelyridae-Snapping Turtles: All species (D)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "NYC": {
           "status": "banned",
           "sourceId": "nyc-161-01",
-          "quote": "all members of the family Chelydridae, including snapping turtle and alligator snapping turtle"
+          "quote": "all members of the family Chelydridae, including snapping turtle and alligator snapping turtle",
+          "verifiedOn": "2026-08-04"
         },
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Snapping turtles - Chelydra serpentina"
+          "quote": "Snapping turtles - Chelydra serpentina",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1396,7 +1713,8 @@
         "NJ": {
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
-          "quote": "Tokay gecko - Gekko gecko"
+          "quote": "Tokay gecko - Gekko gecko",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1410,7 +1728,9 @@
           "status": "banned",
           "sourceId": "ca-671",
           "cite": "§ 671(c)(3)(C)(1)",
-          "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)"
+          "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         }
       }
     },
@@ -1422,7 +1742,8 @@
           "status": "banned",
           "sourceId": "fl-prohibited",
           "quote": "Varanus niloticus",
-          "note": "Grandfathered for holders of a valid reptile of concern licence."
+          "note": "Grandfathered for holders of a valid reptile of concern licence.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1434,17 +1755,26 @@
           "status": "banned",
           "sourceId": "fl-prohibited",
           "quote": "Python molurus",
-          "note": "Grandfathered for personal use by reptile of concern licence holders before 1 July 2010, for the life of the animal."
+          "note": "Grandfathered for personal use by reptile of concern licence holders before 1 July 2010, for the life of the animal.",
+          "verifiedOn": "2026-08-04",
+          "grandfathered": {
+            "before": "2010-07-01",
+            "detail": "Personal use by reptile of concern licence holders, for the life of the animal."
+          }
         },
         "NY": {
           "status": "banned",
           "sourceId": "ny-11-0103",
-          "quote": "Burmese Python (Python m. bivittatus)"
+          "quote": "Burmese Python (Python m. bivittatus)",
+          "verifiedOn": "2026-08-04"
         },
         "OH": {
           "status": "permit",
           "sourceId": "oh-935-01",
-          "note": "A restricted snake, so it needs a permit rather than being outright banned."
+          "note": "A restricted snake, so it needs a permit rather than being outright banned.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         }
       }
     },
@@ -1455,12 +1785,16 @@
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
-          "quote": "Degu (Octodon degus)"
+          "quote": "Degu (Octodon degus)",
+          "verifiedOn": "2026-08-04"
         },
         "CO": {
           "status": "permit",
           "sourceId": "co-w11",
-          "note": "Absent from the unregulated list."
+          "note": "Absent from the unregulated list.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true,
+          "permitFor": "personal"
         }
       }
     }
