@@ -113,7 +113,8 @@
     },
     "PA": {
       "name": "Pennsylvania",
-      "level": "state"
+      "level": "state",
+      "scope": "34 Pa.C.S. § 2961, the Game and Wildlife Code definition of exotic wildlife, as the Game Commission applies it."
     },
     "DC": {
       "name": "District of Columbia",
@@ -223,7 +224,8 @@
     },
     "NC": {
       "name": "North Carolina",
-      "level": "state"
+      "level": "state",
+      "scope": "N.C. Gen. Stat. § 14-417, the only statewide statute regulating exotic animal possession, and § 153A-131, which delegates the rest to counties. There is no statewide exotic pet permit scheme to read."
     },
     "AR": {
       "name": "Arkansas",
@@ -348,17 +350,8 @@
     },
     "hi-4-71-6-5": {
       "title": "Hawaii Administrative Rules § 4-71-6.5, List of Restricted Animals, Part A (research and exhibition)",
-      "url": "https://research.hawaii.edu/orc/wp-content/uploads/sites/7/2021/12/restricted_animals.pdf"
-    },
-    "pa-2961": {
-      "title": "34 Pa.C.S. § 2961, definition of exotic wildlife",
-      "url": "https://www.animallaw.info/statute/pa-exotic-pets-subchapter-d-permits-relating-wildlife-chapter-147-special-permits-subchapter",
-      "note": "Names only bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and crossbreeds. The hedgehog and sugar glider bans rest on 'includes, but is not limited to'."
-    },
-    "pa-memo-44994": {
-      "title": "Pennsylvania House co-sponsorship memo 44994, Rep. David Zimmerman, 14 January 2025",
-      "url": "https://www.palegis.us/house/co-sponsorship/memo?memoID=44994",
-      "note": "Confirms the mechanism: hedgehogs and sugar gliders 'are banned from ownership as pets through the Game Commission's regulations and their interpretation of Title 34.'"
+      "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71RA.pdf",
+      "note": "Part A animals may be brought in by a university or a licensed exhibitor under permit and may not be kept as pets. Part B, published separately as AR-71RB, is the private and commercial use list and was checked as well: it runs to hoofed stock, giraffes, otters, seals, macropods and three named parrots, and contains none of the animals in this dataset."
     },
     "dc-8-1808": {
       "title": "D.C. Code § 8-1808(j), Prohibited conduct",
@@ -366,8 +359,9 @@
       "note": "Closed list. Seven permitted categories; everything else is barred as a household pet."
     },
     "nyc-161-01": {
-      "title": "NYC Health Code Article 161.01(b), list of animals illegal to keep as pets",
-      "url": "https://empirejustice.org/wp-content/uploads/2019/01/List-of-animals-illegal-to-keep-as-pets-in-NYC-12.14.pdf"
+      "title": "New York City Health Code Article 161, Animals (NYC Department of Health official PDF)",
+      "url": "https://www.nyc.gov/assets/doh/downloads/pdf/about/healthcode/health-code-article161.pdf",
+      "note": "§ 161.01 is the list of animals that may not be kept in the five boroughs. It binds regardless of what New York State allows, which is why the city and the state answer differently for several species."
     },
     "nj-7-25-4-4": {
       "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
@@ -498,11 +492,6 @@
       "title": "Tenn. Code Ann. § 70-4-403, Classifications of wildlife",
       "url": "https://www.animallaw.info/statute/tn-exotic-pet-part-4-exotic-animals",
       "note": "Three classes. Class I is 'all species inherently dangerous to humans such as wolves, bears, lions and poisonous snakes', possessable only by zoos, circuses and commercial propagators. Class II is 'native species, except those listed in other classes'. Class III is everything else and needs no wildlife permit, only whatever the Department of Agriculture requires. The catch-all sitting at Class III rather than Class II is what makes Tennessee permissive."
-    },
-    "nc-no-state-rule": {
-      "title": "North Carolina: no single state exotic pet statute; N.C. Wildlife Resources Commission import restrictions plus local ordinances",
-      "url": "https://legalclarity.org/what-exotic-pets-are-legal-in-north-carolina/",
-      "note": "SECONDARY SOURCE, flagged deliberately. North Carolina has no one statute to cite: legality falls out of state import restrictions, wildlife regulations, reptile-specific criminal statutes and county or city ordinances. That absence is itself hard to evidence from a primary source, so these entries are held at unclear rather than recorded as legal. Local rules matter more here than in almost any other state: at least one county has moved to ban the whole of Mustelidae and the whole order Marsupialia, which would take in ferrets and sugar gliders."
     },
     "ar-unrestricted": {
       "title": "Arkansas Game and Fish Commission, Unrestricted Captive Wildlife Species List",
@@ -653,6 +642,21 @@
       "title": "Hawaii Administrative Rules, List of Conditionally Approved Animals (Hawaii Department of Agriculture official PDF)",
       "url": "https://dab.hawaii.gov/pi/files/2012/12/AR-71C.pdf",
       "note": "The list that matters most for pet keepers and the one almost never quoted. Conditional approval means importation and possession are allowed subject to the conditions the Board of Agriculture sets, unlike the restricted list, which is research and exhibition only."
+    },
+    "nc-153a-131": {
+      "title": "N.C. Gen. Stat. § 153A-131, Possession or harboring of dangerous animals",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_153A/GS_153A-131.html",
+      "note": "The reason North Carolina looks unregulated from the state house and is anything but on the ground. A county may by ordinance regulate, restrict or prohibit possession of animals dangerous to persons or property, and many have. Your county code is the operative law here, not the General Statutes."
+    },
+    "nc-14-417": {
+      "title": "N.C. Gen. Stat. § 14-417, Regulation of ownership or use of venomous reptiles",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-417.html",
+      "note": "North Carolina's entire statewide exotic animal statute, and it reaches venomous reptiles only. It does not ban them either: it requires an escape-proof, bite-proof, lockable enclosure, a label reading Venomous Reptile Inside naming the species and the right antivenin, a written bite protocol kept in sight, and immediate notice to law enforcement on an escape. Nothing else in the General Statutes restricts keeping an exotic animal."
+    },
+    "pa-2961": {
+      "title": "34 Pa.C.S. § 2961, Game and Wildlife Code, exotic wildlife definition",
+      "url": "https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=34&div=0&chpt=29",
+      "note": "The definition names bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and their crossbreeds, and none of the animals in this dataset. The entire prohibition rests on four words earlier in the sentence, includes, but is not limited to, which the Game Commission reads as reaching small exotic mammals. That is an agency interpretation of a definition rather than anything a legislature wrote about these species, which is why bills to reverse it keep being introduced."
     }
   },
   "animals": {
@@ -688,9 +692,10 @@
         },
         "PA": {
           "status": "banned",
-          "sourceId": "pa-memo-44994",
-          "cite": "34 Pa.C.S. § 2961 as applied",
-          "note": "No statute names hedgehogs. Game Commission interpretation. Legislation to reverse it has been introduced every session since 2017.",
+          "sourceId": "pa-2961",
+          "cite": "34 Pa.C.S. § 2961",
+          "quote": "all bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and any crossbreed of these animals which have similar characteristics in appearance or features",
+          "note": "No hedgehog appears in the definition, or anything resembling one. The ban is the Game Commission's reading of includes, but is not limited to. House co-sponsorship memo 44994, filed by Rep. David Zimmerman in January 2025 to legalise hedgehogs and sugar gliders, describes it the same way: they are banned through the Commission's regulations and their interpretation of Title 34. Versions of that bill have been introduced every session since 2017 without passing.",
           "verifiedOn": "2026-08-04"
         },
         "DC": {
@@ -870,11 +875,13 @@
           "verifiedOn": "2026-08-04"
         },
         "NC": {
-          "status": "unclear",
-          "sourceId": "nc-no-state-rule",
-          "note": "No state-level restriction found, but only from secondary sources. Needs the WRC import rules read directly before this is called legal.",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+          "note": "Previously recorded as unclear on the strength of a secondary source, which was wrong on both counts. North Carolina's only statewide exotic animal statute covers venomous reptiles, so it does not reach a hedgehog, and § 153A-131 leaves everything else to county ordinance. Legal at state level, worth checking your county.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AR": {
           "status": "legal",
@@ -1200,10 +1207,13 @@
           "verifiedOn": "2026-08-04"
         },
         "NC": {
-          "status": "unclear",
-          "sourceId": "nc-no-state-rule",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide rule reaches the ferret. North Carolina's only exotic animal statute, § 14-417, is limited to venomous reptiles, and everything else is left to county ordinance. Check your county before assuming yes.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AR": {
           "status": "legal",
@@ -1380,8 +1390,10 @@
         },
         "PA": {
           "status": "banned",
-          "sourceId": "pa-memo-44994",
-          "note": "Named alongside hedgehogs in memo 44994 as banned by Game Commission interpretation.",
+          "sourceId": "pa-2961",
+          "cite": "34 Pa.C.S. § 2961",
+          "quote": "all bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and any crossbreed of these animals which have similar characteristics in appearance or features",
+          "note": "Same agency interpretation as the hedgehog, and the same pending bill covers both. A marsupial has nothing in common with any animal the definition names.",
           "verifiedOn": "2026-08-04"
         },
         "DC": {
@@ -1538,10 +1550,13 @@
           "verifiedOn": "2026-08-04"
         },
         "NC": {
-          "status": "unclear",
-          "sourceId": "nc-no-state-rule",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide rule reaches the sugar glider. The state statute covers venomous reptiles only, so the question is entirely a county one.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AR": {
           "status": "legal",
@@ -5020,10 +5035,13 @@
           "verifiedOn": "2026-08-04"
         },
         "NC": {
-          "status": "unclear",
-          "sourceId": "nc-no-state-rule",
-          "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "nc-153a-131",
+          "cite": "§ 153A-131",
+          "quote": "A county may by ordinance regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property.",
+          "note": "No statewide rule reaches the chinchilla, and it is a hard animal to characterise as dangerous to persons or property, so a county ordinance is unlikely to catch it either.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
         },
         "AR": {
           "status": "legal",
