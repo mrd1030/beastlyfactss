@@ -71,10 +71,11 @@
       "UT",
       "DE",
       "TN",
-      "NC"
+      "NC",
+      "AR"
     ],
-    "remaining": 20,
-    "note": "Statuses are complete for the 31 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 19,
+    "note": "Statuses are complete for the 32 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -200,6 +201,10 @@
     },
     "NC": {
       "name": "North Carolina",
+      "level": "state"
+    },
+    "AR": {
+      "name": "Arkansas",
       "level": "state"
     }
   },
@@ -380,6 +385,11 @@
       "title": "North Carolina: no single state exotic pet statute; N.C. Wildlife Resources Commission import restrictions plus local ordinances",
       "url": "https://legalclarity.org/what-exotic-pets-are-legal-in-north-carolina/",
       "note": "SECONDARY SOURCE, flagged deliberately. North Carolina has no one statute to cite: legality falls out of state import restrictions, wildlife regulations, reptile-specific criminal statutes and county or city ordinances. That absence is itself hard to evidence from a primary source, so these entries are held at unclear rather than recorded as legal. Local rules matter more here than in almost any other state: at least one county has moved to ban the whole of Mustelidae and the whole order Marsupialia, which would take in ferrets and sugar gliders."
+    },
+    "ar-unrestricted": {
+      "title": "Arkansas Game and Fish Commission, Unrestricted Captive Wildlife Species List",
+      "url": "https://www.agfc.com/wp-content/uploads/2023/04/221112_4CP-Unrestricted-Captive-Wildlife-Species-List-.pdf",
+      "note": "Species that may be held in captivity without a permit, named individually with binomials. One of the cleanest primary sources of any state for this purpose."
     }
   },
   "animals": {
@@ -601,6 +611,12 @@
           "note": "No state-level restriction found, but only from secondary sources. Needs the WRC import rules read directly before this is called legal.",
           "localOverride": true,
           "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Four-toed or African Pygmy Hedgehog (Atelerix albiventris)",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -779,6 +795,12 @@
           "status": "unclear",
           "sourceId": "nc-no-state-rule",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "European Domestic Ferret (Mustela putorius)",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -964,6 +986,12 @@
           "status": "unclear",
           "sourceId": "nc-no-state-rule",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Sugar Glider (Petaurus)",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1293,6 +1321,12 @@
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
           "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Veiled Chameleon (Chamaeleo calyptratus)",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1445,6 +1479,12 @@
           "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
           "note": "The prohibited list names pythons as a group with no size or species qualifier, so it reaches the ball python. Unusual: most states that restrict pythons name only the large constrictors.",
           "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Ball Python (Python regius)",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1532,6 +1572,12 @@
           "status": "unclear",
           "sourceId": "de-3900",
           "note": "The list names pythons and anacondas but not Boidae generally, and the anaconda is a boid, so whether the boa constrictor is caught is not resolvable from the list as written.",
+          "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Boa Constrictors (Genus Boa)",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2280,6 +2326,12 @@
           "status": "unclear",
           "sourceId": "nc-no-state-rule",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "quote": "Long-tailed Chinchilla (Chinchilla lanigera)",
           "verifiedOn": "2026-08-04"
         }
       }
