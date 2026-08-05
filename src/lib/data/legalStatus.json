@@ -812,7 +812,10 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "Illinois works from a closed species list plus a blanket bar on primates. It names large cats, and no insectivore appears anywhere in it. Illinois is a home rule state, so a municipal ordinance is the layer that actually decides this."
         },
         "MN": {
           "status": "legal",
@@ -840,7 +843,10 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Crim. Law § 10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "Maryland's list names the cat family, several primates, and this short group of rabies vector species. An insectivore is none of them. Counties and municipalities may be stricter than the state here."
         },
         "NM": {
           "status": "unclear",
@@ -1093,7 +1099,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "Connecticut's potentially dangerous animal list runs to four families: cats, dogs, bears and great apes. Mustelids appear nowhere in it, so the ferret is untouched by the statute."
         },
         "MA": {
           "status": "conditional",
@@ -1125,13 +1134,19 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "The definition is enumerated rather than general. Felidae is limited to eight big cats and Canidae to wolves excluding wolf hybrids, and no mustelid appears at all."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "quote": "Servals, excluding hybrids with domestic cats commonly known as savannah cats",
+          "note": "Ohio runs two enumerated lists, dangerous wild animals and restricted snakes, and an animal on neither needs no state permit. The dangerous list names specific carnivores such as the serval; the domestic ferret is not among them."
         },
         "TX": {
           "status": "legal",
@@ -1150,12 +1165,18 @@
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "Absent from the closed list. Being a home rule state, Illinois leaves the real decision to your municipality."
         },
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "The regulated animal definition is cats, bears and non-human primates. No mustelid appears in it."
         },
         "NV": {
           "status": "legal",
@@ -1419,12 +1440,16 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Petaurus breviceps  Sugar Glider",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Species List",
+          "note": "Maine publishes a list of species needing no importation, exhibition or possession permit, and the sugar glider is on it by binomial. An express clearance rather than an inference."
         },
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Ch. 68-5, F.A.C.",
+          "note": "Florida's prohibited list is sixteen high-risk reptiles, added in February 2021. It contains no mammal, so the sugar glider is outside it. Florida separately classes some mammals as Class I, II or III wildlife; the sugar glider is not among them."
         },
         "NY": {
           "status": "legal",
@@ -1435,20 +1460,27 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "Four families, none of them marsupial. The statute has nothing to say about a sugar glider."
         },
         "MA": {
           "status": "legal",
           "sourceId": "ma-321-9-01",
           "quote": "Sugar Glider (Petaurus breviceps)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "321 CMR 9.01",
+          "note": "Massachusetts publishes a closed exemption list of wild vertebrates that may be kept without a permit, and the sugar glider is named on it. Anything not exempt needs a permit, so the listing is what makes this a yes."
         },
         "CO": {
           "status": "legal",
           "sourceId": "co-w11",
-          "quote": "Sugar Gliders (Petaurus breviceps)",
+          "quote": "No license is required for the private possession or purchase of animals, which are included on the unregulated wildlife list or the domestic animal list.",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Ch. W-11",
+          "note": "Named on Colorado's unregulated wildlife list. Unregulated is not the same as unmonitored: importation rules and local ordinances still apply."
         },
         "AZ": {
           "status": "legal",
@@ -1467,35 +1499,51 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "The enumerated definition covers big cats, wolves, bears, primates, elephants, rhinos, hippos, crocodilians and venomous snakes. No marsupial is named."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "note": "On neither the dangerous wild animal list nor the restricted snake list, so no Ohio Department of Agriculture permit applies. Marsupials appear nowhere in either."
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Health & Safety Code § 822.101",
+          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
+          "note": "Texas registers by closed species list: lions, tigers, ocelots, cougars, leopards, cheetahs, jaguars, bobcats, lynxes, servals, caracals, hyenas, bears, coyotes, jackals, baboons, chimpanzees, orangutans, gorillas and any hybrid. No marsupial appears, so no certificate is required."
         },
         "MI": {
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "Michigan splits this across the Large Carnivore Act, the Wolf-dog Cross Act and Part 413 of the Natural Resources and Environmental Protection Act. A large carnivore means a big cat or a bear, so a marsupial is outside all three."
         },
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "No marsupial appears on the closed list. Check your municipal code, which in a home rule state can be stricter than the statute."
         },
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "The regulated animal definition is cats, bears and non-human primates. No marsupial appears in it."
         },
         "NV": {
           "status": "legal",
@@ -1516,7 +1564,10 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Crim. Law § 10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "No marsupial appears on the list. Counties and municipalities may be stricter than the state."
         },
         "NM": {
           "status": "unclear",
@@ -1562,7 +1613,9 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Sugar Glider (Petaurus)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Arkansas names permitted species individually with binomials rather than listing what is banned, so this is an express clearance rather than an inference from silence. No permit is needed to hold one."
         },
         "ID": {
           "status": "legal",
@@ -1755,7 +1808,9 @@
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "None of Michigan's three relevant acts reaches a domesticated rodent. The Large Carnivore Act is about big cats and bears."
         },
         "TN": {
           "status": "legal",
@@ -1932,7 +1987,9 @@
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "None of Michigan's three relevant acts reaches a domesticated rodent."
         },
         "TN": {
           "status": "legal",
@@ -2121,7 +2178,9 @@
           "sourceId": "co-w11",
           "quote": "All Psitticine birds",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Ch. W-11",
+          "note": "Colorado clears the whole parrot group on its unregulated wildlife list without carving out the monk parakeet, which most states that mention the species do."
         },
         "VA": {
           "status": "conditional",
@@ -2519,13 +2578,18 @@
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
           "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "permitFor": "personal",
+          "cite": "N.J.A.C. 7:25-4.4, 4.5",
+          "quote": "any other exotic species not exempted",
+          "note": "New Jersey exempts a closed list of species from permitting and then requires a permit for anything else. The veiled chameleon is not exempted, so a personal possession permit from Fish and Wildlife applies before the animal arrives."
         },
         "ME": {
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Chamaeleo calyptratus",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Species List",
+          "note": "Named by binomial on the unrestricted list, so no permit of any kind applies."
         },
         "FL": {
           "status": "legal",
@@ -2536,12 +2600,18 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "ECL § 11-0103(6)(e)",
+          "quote": "includes and is limited to",
+          "note": "New York's wild animal definition is closed by those five words. Among reptiles it reaches venomous species, named large pythons and monitors, and crocodilians. A chameleon is none of those. Note that New York City bans separately and more broadly."
         },
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The list is entirely mammalian. Connecticut restricts no reptile under this section."
         },
         "MA": {
           "status": "legal",
@@ -2561,7 +2631,9 @@
           "status": "legal",
           "sourceId": "or-609-305",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORS § 609.305",
+          "note": "Oregon's exotic animal definition is closed: non-indigenous cats other than the domestic cat, non-human primates, non-wolf non-indigenous canids other than the domestic dog, bears other than the black bear, and crocodilians. The only reptiles in it are crocodilians."
         },
         "WA": {
           "status": "legal",
@@ -2588,7 +2660,9 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Veiled Chameleon (Chamaeleo calyptratus)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Named individually on the unrestricted list, so no permit is required."
         },
         "ID": {
           "status": "legal",
@@ -2751,13 +2825,18 @@
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Health Code § 161.01",
+          "note": "The city bans all members of Chelydridae, the snapping turtles, and turtles under four inches, but no tortoise. Testudo horsfieldii is outside the prohibition."
         },
         "NJ": {
           "status": "permit",
           "sourceId": "nj-7-25-4-4",
           "verifiedOn": "2026-08-04",
-          "permitFor": "personal"
+          "permitFor": "personal",
+          "cite": "N.J.A.C. 7:25-4.4, 4.5",
+          "quote": "any other exotic species not exempted",
+          "note": "Not on the exempt list, so the catch-all permit provision applies. This is the only permit requirement for a Russian tortoise anywhere in the country."
         },
         "ME": {
           "status": "legal",
@@ -2769,7 +2848,10 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "ECL § 11-0103(6)(e)",
+          "quote": "includes and is limited to",
+          "note": "No tortoise appears in the closed definition, which among reptiles covers venomous species, named large pythons and monitors, and crocodilians."
         },
         "ID": {
           "status": "legal",
@@ -2961,7 +3043,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The list is entirely mammalian, so Connecticut applies no length or species test to constrictors here."
         },
         "MA": {
           "status": "legal",
@@ -3009,7 +3094,9 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Ball Python (Python regius)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Named individually on the unrestricted list. Arkansas clears the species rather than the family, so a python not on the list is a different question."
         },
         "ID": {
           "status": "legal",
@@ -3158,13 +3245,17 @@
           "status": "legal",
           "sourceId": "ca-671",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "§ 671",
+          "note": "California's restricted list covers named constrictors, chiefly the giant pythons and anacondas, and Boa constrictor is not among them. The order Squamata is not restricted as a whole the way order Rodentia is."
         },
         "HI": {
           "status": "banned",
           "sourceId": "hi-4-71-6",
           "quote": "Serpentes (all species)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 4-71-6",
+          "note": "Hawaii bans the entire snake suborder by name, which is unusually blunt even for Hawaii and reflects having no native snakes to protect. There is no permit route for a pet."
         },
         "NYC": {
           "status": "banned",
@@ -3195,7 +3286,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The list is entirely mammalian. Unlike Ohio and Louisiana, Connecticut sets no constrictor size limit in this statute."
         },
         "MA": {
           "status": "legal",
@@ -3214,19 +3308,26 @@
           "status": "legal",
           "sourceId": "or-609-305",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORS § 609.305",
+          "note": "The only reptiles in Oregon's closed definition are crocodilians, so no constrictor is covered at any length."
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "The reptile half of the definition reaches crocodilians and venomous snakes. Constrictors are absent, at any length."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "note": "Ohio's restricted snake list is constrictors of twelve feet or more plus the venomous families. A boa constrictor under twelve feet falls outside it, which makes length rather than species the test here."
         },
         "DE": {
           "status": "unclear",
@@ -3238,7 +3339,9 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Boa Constrictors (Genus Boa)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Cleared by genus, which covers every Boa in the pet trade."
         },
         "ID": {
           "status": "legal",
@@ -3788,17 +3891,25 @@
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Ch. 68-5, F.A.C.",
+          "note": "The prohibited list is reptiles only, and the prairie dog is not on Florida's captive wildlife class lists either."
         },
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "ECL § 11-0103(6)(e)",
+          "quote": "includes and is limited to",
+          "note": "The closed definition runs to primates, cats and their hybrids, canids, bears, some reptiles and crocodilians. No rodent is in it."
         },
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "No rodent appears on the list. The four families named are cats, dogs, bears and great apes."
         },
         "MA": {
           "status": "permit",
@@ -3825,35 +3936,51 @@
           "status": "legal",
           "sourceId": "or-609-305",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORS § 609.305",
+          "note": "The closed definition covers cats, primates, canids, bears and crocodilians. No rodent appears in it."
         },
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "No rodent appears in the enumerated definition."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "note": "No rodent appears on either Ohio list."
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Health & Safety Code § 822.101",
+          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
+          "note": "No rodent appears on the dangerous wild animal list. Texas counties and municipalities can still be stricter, and several are."
         },
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "No rodent appears on the closed list."
         },
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
         },
         "NV": {
           "status": "unclear",
@@ -3875,7 +4002,10 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Crim. Law § 10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "No rodent appears on the list. Counties and municipalities may be stricter than the state."
         },
         "NM": {
           "status": "unclear",
@@ -3886,13 +4016,18 @@
         "VT": {
           "status": "unclear",
           "sourceId": "vt-reg-881",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "10 V.S.A. § 4709, Reg. 881",
+          "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
+          "note": "Vermont bars bringing in, transporting or possessing any live wild bird or animal without authorisation, and the regulation then says the Commissioner shall not issue a permit for keeping a wild animal in captivity. Whether a captive bred prairie dog counts as a wild animal for that purpose is not settled in the text, which is why this reads unclear rather than banned."
         },
         "DE": {
           "status": "banned",
           "sourceId": "de-3900",
           "quote": "wild rodents",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "7 Del. Admin. Code § 3900",
+          "note": "Delaware's exotic animal rules reach live wild mammals and their hybrids, and wild rodents are named. A permit exists in principle for exotic animals, but not for pet keeping."
         },
         "ID": {
           "status": "permit",
@@ -4031,12 +4166,17 @@
           "status": "permit",
           "sourceId": "ga-391-4-8-05",
           "verifiedOn": "2026-08-04",
-          "permitFor": "commercial-exhibition-research"
+          "permitFor": "commercial-exhibition-research",
+          "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+          "note": "Georgia requires a wild animal licence for listed species, and the rodent entry on that list reaches the capybara. The Department of Natural Resources states on its own exotics page that listed species may not be held as pets, so in practice the licence is not a route for a pet."
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 8-1808(j)",
+          "quote": "no person shall keep any living member of the animal kingdom as a household pet except",
+          "note": "DC works from a closed list of seven permitted categories, one of which is domesticated rodents and rabbits. A capybara is a rodent but not a domesticated one, so it fits no category and is barred by default rather than by name."
         },
         "NYC": {
           "status": "banned",
@@ -4047,7 +4187,9 @@
         "FL": {
           "status": "legal",
           "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Ch. 68-5, F.A.C.",
+          "note": "The prohibited list is reptiles only. Capybaras are kept in Florida under the state's captive wildlife framework rather than barred by this rule."
         },
         "NY": {
           "status": "legal",
@@ -4058,7 +4200,10 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "No rodent appears on the list, so size is not the test here the way it is in states that regulate by weight."
         },
         "MA": {
           "status": "permit",
@@ -4086,29 +4231,43 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "No rodent appears in the enumerated definition."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "note": "No rodent appears on either Ohio list, so the capybara's size does not bring it in the way a snake's length would."
         },
         "TX": {
           "status": "legal",
           "sourceId": "tx-822-101",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Health & Safety Code § 822.101",
+          "quote": "a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal",
+          "note": "No rodent appears on the dangerous wild animal list, which is drawn by species rather than by size."
         },
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "No rodent appears on the closed list, so the capybara's size does not bring it in."
         },
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
         },
         "NV": {
           "status": "unclear",
@@ -4128,7 +4287,10 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Crim. Law § 10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "No rodent appears on the list, so Maryland's thirty pound weight test applies to cat hybrids rather than to size generally."
         },
         "NM": {
           "status": "unclear",
@@ -4139,13 +4301,18 @@
         "VT": {
           "status": "unclear",
           "sourceId": "vt-reg-881",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "10 V.S.A. § 4709, Reg. 881",
+          "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
+          "note": "Same unresolved question as the prairie dog. The prohibition is broad and the permit route is closed by the regulation, but the text does not say whether captive bred stock of a non-native species is inside or outside it. Ask Fish and Wildlife rather than assuming."
         },
         "DE": {
           "status": "banned",
           "sourceId": "de-3900",
           "quote": "wild rodents",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "7 Del. Admin. Code § 3900",
+          "note": "Caught by the same wild rodent wording as the prairie dog. Nothing in the rule carves out captive bred stock."
         },
         "TN": {
           "status": "legal",
@@ -4318,7 +4485,10 @@
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 8-1808(j)",
+          "quote": "no person shall keep any living member of the animal kingdom as a household pet except",
+          "note": "None of the seven permitted categories covers a wild canid. DC bans by omission from a closed list, so nothing has to name the fennec fox."
         },
         "NYC": {
           "status": "banned",
@@ -4602,12 +4772,17 @@
         "GA": {
           "status": "banned",
           "sourceId": "ga-dnr-exotics",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+          "note": "On the wild animal licence list under the cat family. Georgia DNR's position is that listed species may not be held as pets, and unlike the ferret and the sugar glider the serval has no carve-out written into the rule."
         },
         "DC": {
           "status": "banned",
           "sourceId": "dc-8-1808",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 8-1808(j)",
+          "quote": "no person shall keep any living member of the animal kingdom as a household pet except",
+          "note": "The permitted list covers domesticated dogs and cats. A serval is neither, and there is no permit route in the section."
         },
         "NYC": {
           "status": "banned",
@@ -4698,7 +4873,10 @@
             "before": "2005-01-01",
             "detail": "Only if possessed on or before 1 January 2005 and brought into Animal Welfare Act compliance."
           },
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "Minnesota bans the cat family wholesale with a single exception for Felis catus, so the serval is caught by the same words that catch a tiger. Possession has been unlawful since 2005 unless the animal was already held on 1 January of that year in compliance with the federal Animal Welfare Act."
         },
         "NV": {
           "status": "banned",
@@ -4939,7 +5117,9 @@
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Health Code § 161.01",
+          "note": "The rodent prohibition in the city list reaches large rodents such as the capybara and the prairie dog. The chinchilla is not among them."
         },
         "NJ": {
           "status": "permit",
@@ -4952,7 +5132,9 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Chinchilla lanigera",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Species List",
+          "note": "Named by binomial on the unrestricted list."
         },
         "MA": {
           "status": "legal",
@@ -4971,29 +5153,42 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "RCW 16.30.010",
+          "quote": "A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal",
+          "note": "No rodent appears in the enumerated definition."
         },
         "OH": {
           "status": "legal",
           "sourceId": "oh-935-01",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "ORC § 935.01",
+          "note": "No rodent appears on either Ohio list."
         },
         "MI": {
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "None of Michigan's three relevant acts reaches a rodent, domesticated or otherwise."
         },
         "IL": {
           "status": "legal",
           "sourceId": "il-720-48-10",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "720 ILCS 585/0.1",
+          "quote": "a lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, lynx, bobcat, jaguarundi",
+          "note": "No rodent appears on the closed list."
         },
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "The regulated animal definition is cats, bears and non-human primates. No rodent appears in it."
         },
         "NV": {
           "status": "legal",
@@ -5014,7 +5209,10 @@
           "status": "legal",
           "sourceId": "md-10-621",
           "localOverride": true,
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Crim. Law § 10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "No rodent appears on the list."
         },
         "NM": {
           "status": "unclear",
@@ -5032,7 +5230,9 @@
           "status": "legal",
           "sourceId": "tn-70-4-403",
           "quote": "Ferrets and chinchillas",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 70-4-403",
+          "note": "Tennessee sorts wildlife into five classes and then names the ferret and the chinchilla together as animals needing no permit at all, rather than leaving them to be inferred from a class definition."
         },
         "NC": {
           "status": "legal",
@@ -5047,7 +5247,9 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "Long-tailed Chinchilla (Chinchilla lanigera)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Named by binomial on the unrestricted list, so no permit is needed."
         },
         "ID": {
           "status": "legal",
@@ -5211,12 +5413,17 @@
         "DC": {
           "status": "legal",
           "sourceId": "dc-8-1808",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "§ 8-1808(j)(1)(C)",
+          "quote": "Domesticated rodents and rabbits",
+          "note": "One of the seven permitted categories, and the guinea pig is squarely inside it. The same sentence is why a hamster is fine in DC and a hedgehog is not, since a hedgehog is not a rodent."
         },
         "NYC": {
           "status": "legal",
           "sourceId": "nyc-161-01",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "Health Code § 161.01",
+          "note": "Not on the city's prohibited list. Article 161 elsewhere refers to the hamster and similar small pets as animals whose possession is not prohibited."
         },
         "NJ": {
           "status": "legal",
@@ -5228,7 +5435,9 @@
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "None of Michigan's three relevant acts reaches a domesticated rodent."
         },
         "TN": {
           "status": "legal",
@@ -6137,7 +6346,9 @@
           "status": "legal",
           "sourceId": "ma-321-9-01",
           "quote": "Degu (Octodon degus)",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-08-04",
+          "cite": "321 CMR 9.01",
+          "note": "Named on the exemption list by binomial. The criteria for getting on it include posing no significant ecological risk if released and needing no more care than a common domestic animal."
         },
         "CO": {
           "status": "permit",
@@ -6151,7 +6362,9 @@
           "status": "legal",
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
-          "localOverride": true
+          "localOverride": true,
+          "cite": "Large Carnivore Act, MCL 287.1101",
+          "note": "None of Michigan's three relevant acts reaches a rodent. Worth knowing because Colorado does require a permit for a degu, so the two states differ."
         },
         "ID": {
           "status": "permit",
