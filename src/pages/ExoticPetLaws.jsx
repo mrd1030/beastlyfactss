@@ -1,0 +1,415 @@
+import React, { useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Link, useParams } from 'react-router-dom';
+import { motion } from '@/lib/motion-safe';
+import LEGAL from '@/lib/data/legalStatus.json';
+import { STATE_NAMES } from '@/lib/data/usStatePaths';
+import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
+
+const SITE = 'https://beastlyfacts.com';
+
+// The serval is the default because it is the most restricted animal in the
+// dataset and uses all five buckets, so the page that gets prerendered at
+// /exotic-pet-laws/ shows the map doing something rather than sitting blank.
+const DEFAULT_ANIMAL = 'serval';
+
+const ANIMAL_IDS = Object.keys(LEGAL.animals);
+
+// Order matters here: the list doubles as the page's navigation, so it runs
+// most-restricted first rather than alphabetically. An animal nobody can keep
+// anywhere is more useful at the top than a guinea pig with no rules at all.
+const ANIMALS_BY_INTEREST = [...ANIMAL_IDS].sort((a, b) => {
+  const restricted = (id) =>
+    Object.values(LEGAL.animals[id].jurisdictions).filter((e) => e.status !== 'legal').length;
+  return restricted(b) - restricted(a) || LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name);
+});
+
+function statusRank(status) {
+  return { banned: 0, permit: 1, conditional: 2, restricted: 3, unclear: 4 }[status] ?? 5;
+}
+
+function BucketPill({ bucketKey, children }) {
+  const b = STATUS_BUCKETS[bucketKey];
+  const isNone = b.key === 'none';
+  return (
+    <span
+      className="inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-body font-semibold border"
+      style={
+        isNone
+          ? { borderColor: 'hsl(var(--border))', color: 'hsl(var(--muted-foreground))' }
+          : { background: b.key === 'unclear' ? '#CBD5E1' : b.fill, color: b.text, borderColor: 'transparent' }
+      }
+    >
+      {children ?? b.label}
+    </span>
+  );
+}
+
+export default function ExoticPetLaws() {
+  const { animalId } = useParams();
+
+  const activeId = LEGAL.animals[animalId] ? animalId : DEFAULT_ANIMAL;
+  const animal = LEGAL.animals[activeId];
+  const isIndex = !animalId;
+
+  const [selectedState, setSelectedState] = React.useState(null);
+
+  // Reset the pinned state whenever the animal changes, otherwise you keep a
+  // detail card for a jurisdiction that has nothing to say about the new one.
+  React.useEffect(() => setSelectedState(null), [activeId]);
+
+  const statuses = animal.jurisdictions;
+
+  const restricted = useMemo(
+    () =>
+      Object.entries(statuses)
+        .filter(([, e]) => e.status !== 'legal')
+        .sort(
+          ([ca, a], [cb, b]) =>
+            statusRank(a.status) - statusRank(b.status) ||
+            (STATE_NAMES[ca] || ca).localeCompare(STATE_NAMES[cb] || cb),
+        ),
+    [statuses],
+  );
+
+  const counts = useMemo(() => {
+    const c = { banned: 0, permit: 0, conditions: 0, unclear: 0 };
+    for (const e of Object.values(statuses)) {
+      const b = bucketFor(e.status);
+      if (b !== 'none') c[b] += 1;
+    }
+    return c;
+  }, [statuses]);
+
+  // researched includes DC, which is not a state, so the two are counted
+  // separately rather than reporting "51 states" at anyone.
+  const researchedCount = LEGAL.coverage.researched.filter(
+    (c) => LEGAL.jurisdictions[c]?.level !== 'city',
+  ).length;
+  const stateCount = researchedCount - (LEGAL.coverage.researched.includes('DC') ? 1 : 0);
+
+  const jurisdictionName = (code) =>
+    LEGAL.jurisdictions[code]?.name || STATE_NAMES[code] || code;
+
+  // City jurisdictions have no shape on a state map, so their restrictions
+  // count toward the legend totals but never appear as a colour. Without
+  // saying so, "Banned (3)" over two red states reads as a bug.
+  const cityEntries = Object.entries(statuses).filter(
+    ([code, e]) => e.status !== 'legal' && LEGAL.jurisdictions[code]?.level === 'city',
+  );
+
+  const detail = selectedState
+    ? { code: selectedState, entry: statuses[selectedState] }
+    : null;
+
+  const title = isIndex
+    ? 'Exotic Pet Laws by State: An Interactive US Map'
+    : `Where Is the ${animal.name} Legal? Interactive State Map`;
+
+  const description = isIndex
+    ? `An interactive map of US exotic pet law covering ${ANIMAL_IDS.length} animals across all ${stateCount} states and DC, every entry quoting the statute or regulation itself.`
+    : `Every US state where the ${animal.name.toLowerCase()} is banned, needs a permit or comes with conditions, each entry citing the regulation directly. ${counts.banned} bans, ${counts.permit} permit states.`;
+
+  const canonical = isIndex ? `${SITE}/exotic-pet-laws/` : `${SITE}/exotic-pet-laws/${activeId}/`;
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>{`${title} | Beastly Facts`}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={`${title} | Beastly Facts`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Interactive map of United States exotic pet laws" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
+        <meta name="twitter:title" content={`${title} | Beastly Facts`} />
+        <meta name="twitter:description" content={description} />
+      </Helmet>
+
+      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
+        <div className="max-w-5xl mx-auto">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
+              {isIndex ? 'Exotic pet laws, state by state' : `Where is the ${animal.name.toLowerCase()} legal?`}
+            </h1>
+            <p className="text-muted-foreground font-body leading-relaxed max-w-3xl">
+              {isIndex ? (
+                <>
+                  Pick an animal and the map shows where it is restricted. Every entry below was read from
+                  the statute or the regulation itself, never from a summary of one, and each carries the
+                  citation so you can check it. {ANIMAL_IDS.length} animals across all {stateCount} states
+                  and the District of Columbia, plus New York City, which has its own Health Code.
+                </>
+              ) : (
+                <>
+                  {animal.scientific ? <em>{animal.scientific}</em> : null}
+                  {animal.scientific ? '. ' : ''}
+                  Restricted in {restricted.length} of the {Object.keys(statuses).length} jurisdictions
+                  checked. Every entry quotes the rule it comes from.
+                </>
+              )}
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+        {/* Animal picker */}
+        <div className="mb-8">
+          <h2 className="font-display font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">
+            Choose an animal
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {ANIMALS_BY_INTEREST.map((id) => {
+              const isActive = id === activeId;
+              return (
+                <Link
+                  key={id}
+                  to={`/exotic-pet-laws/${id}/`}
+                  className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
+                    isActive
+                      ? 'bg-primary text-primary-foreground border-primary font-semibold'
+                      : 'border-border text-foreground hover:border-primary/50 hover:text-primary'
+                  }`}
+                >
+                  {LEGAL.animals[id].name}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-[1fr,18rem] items-start">
+          {/* Map */}
+          <div className="rounded-xl border border-border bg-card p-3 sm:p-5">
+            <LegalStatusMap
+              statuses={statuses}
+              selected={selectedState}
+              onSelect={(code) => setSelectedState((prev) => (prev === code ? null : code))}
+              animalName={animal.name.toLowerCase()}
+            />
+            <p className="mt-3 text-[11px] font-body text-muted-foreground">
+              Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are
+              drawn out of position so they can be clicked.
+              {cityEntries.length > 0 && (
+                <>
+                  {' '}
+                  The counts include{' '}
+                  {cityEntries.map(([code], i) => (
+                    <React.Fragment key={code}>
+                      {i > 0 ? ' and ' : ''}
+                      {jurisdictionName(code)}
+                    </React.Fragment>
+                  ))}
+                  , which {cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding
+                  state and so cannot be shaded on a state map. Listed in full below.
+                </>
+              )}
+            </p>
+          </div>
+
+          {/* Legend and detail */}
+          <div className="space-y-4">
+            <div className="rounded-xl border border-border bg-card p-4">
+              <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colours mean</h2>
+              <ul className="space-y-2.5">
+                {BUCKET_ORDER.map((key) => {
+                  const b = STATUS_BUCKETS[key];
+                  const n = key === 'none' ? null : counts[key];
+                  return (
+                    <li key={key} className="flex gap-2.5 text-xs font-body">
+                      <span
+                        className="mt-0.5 h-3.5 w-3.5 shrink-0 rounded-sm border"
+                        style={{
+                          background:
+                            key === 'none'
+                              ? 'hsl(var(--muted))'
+                              : key === 'unclear'
+                                ? 'repeating-linear-gradient(45deg,#CBD5E1 0 3px,#64748B 3px 5px)'
+                                : b.fill,
+                          borderColor: 'hsl(var(--border))',
+                        }}
+                      />
+                      <span>
+                        <span className="font-semibold text-foreground">
+                          {b.label}
+                          {n ? ` (${n})` : ''}
+                        </span>
+                        <span className="block text-muted-foreground leading-snug">{b.blurb}</span>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+
+            {detail && (
+              <div className="rounded-xl border border-border bg-card p-4">
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <h2 className="font-display font-bold text-base text-foreground">
+                    {jurisdictionName(detail.code)}
+                  </h2>
+                  <BucketPill bucketKey={bucketFor(detail.entry?.status)} />
+                </div>
+                {detail.entry ? (
+                  <>
+                    {detail.entry.cite && (
+                      <p className="text-xs font-body font-semibold text-foreground">{detail.entry.cite}</p>
+                    )}
+                    {detail.entry.quote && (
+                      <blockquote className="mt-2 border-l-2 border-primary/40 pl-3 text-xs font-body italic text-muted-foreground leading-relaxed">
+                        {detail.entry.quote}
+                      </blockquote>
+                    )}
+                    {detail.entry.note && (
+                      <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                        {detail.entry.note}
+                      </p>
+                    )}
+                    {detail.entry.grandfathered && (
+                      <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                        <span className="font-semibold text-foreground">Existing owners: </span>
+                        {detail.entry.grandfathered.detail}
+                      </p>
+                    )}
+                    {detail.entry.localOverride && (
+                      <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                        This state allows cities and counties to prohibit what state law permits, so check
+                        your local ordinance too.
+                      </p>
+                    )}
+                    {LEGAL.sources[detail.entry.sourceId] && (
+                      <a
+                        href={LEGAL.sources[detail.entry.sourceId].url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-block text-xs font-body text-primary hover:underline"
+                      >
+                        {LEGAL.sources[detail.entry.sourceId].title} →
+                      </a>
+                    )}
+                  </>
+                ) : (
+                  <p className="text-xs font-body text-muted-foreground leading-relaxed">
+                    Nothing in {LEGAL.jurisdictions[detail.code]?.scope ? 'the body of law we read for this state' : 'the rules we checked'} restricts
+                    the {animal.name.toLowerCase()} here.
+                    {LEGAL.jurisdictions[detail.code]?.scope
+                      ? ` Scope checked: ${LEGAL.jurisdictions[detail.code].scope}`
+                      : ''}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* The map has no text for a crawler or a screen reader to work with, so
+            the same information is written out here in full. */}
+        <section className="mt-12">
+          <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+            Every restriction on the {animal.name.toLowerCase()}
+          </h2>
+          <p className="text-sm font-body text-muted-foreground mb-5">
+            {restricted.length === 0
+              ? `Nothing in the ${Object.keys(statuses).length} jurisdictions checked restricts this animal.`
+              : `${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked restrict this animal in some way. The rest had no rule we could find.`}
+          </p>
+
+          <div className="space-y-3">
+            {restricted.map(([code, entry]) => (
+              <div key={code} className="rounded-lg border border-border bg-card p-4">
+                <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                  <h3 className="font-display font-bold text-base text-foreground">
+                    {jurisdictionName(code)}
+                  </h3>
+                  <BucketPill bucketKey={bucketFor(entry.status)} />
+                  {entry.cite && (
+                    <span className="text-xs font-body text-muted-foreground">{entry.cite}</span>
+                  )}
+                </div>
+                {entry.quote && (
+                  <blockquote className="border-l-2 border-primary/40 pl-3 text-sm font-body italic text-muted-foreground leading-relaxed">
+                    {entry.quote}
+                  </blockquote>
+                )}
+                {entry.note && (
+                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">{entry.note}</p>
+                )}
+                {entry.grandfathered && (
+                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
+                    <span className="font-semibold text-foreground">Existing owners: </span>
+                    {entry.grandfathered.detail}
+                  </p>
+                )}
+                {LEGAL.sources[entry.sourceId] && (
+                  <a
+                    href={LEGAL.sources[entry.sourceId].url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-xs font-body text-primary hover:underline"
+                  >
+                    {LEGAL.sources[entry.sourceId].title} →
+                  </a>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {animal.article && (
+            <p className="mt-6 text-sm font-body text-foreground">
+              For the full write-up, including the states that get reported wrongly,{' '}
+              <Link to={animal.article} className="text-primary font-semibold hover:underline">
+                read the {animal.name.toLowerCase()} legal guide
+              </Link>
+              .
+            </p>
+          )}
+          {animal.encyclopediaId && (
+            <p className="mt-1.5 text-sm font-body text-foreground">
+              Past the legal question?{' '}
+              <Link
+                to={`/encyclopedia/animal/${animal.encyclopediaId}/`}
+                className="text-primary font-semibold hover:underline"
+              >
+                See the {animal.name.toLowerCase()} profile
+              </Link>
+              .
+            </p>
+          )}
+        </section>
+
+        <section className="mt-12 rounded-xl border border-border bg-muted/30 p-5">
+          <h2 className="font-display font-bold text-lg text-foreground mb-2">How to read this</h2>
+          <div className="space-y-2.5 text-sm font-body text-muted-foreground leading-relaxed">
+            <p>
+              A state with no colour is one where nothing in the law we read restricts that animal. That is
+              not the same as a guarantee: it means no restriction was found in the specific body of law
+              checked for that state, which is recorded alongside each jurisdiction. Cities and counties
+              regularly ban animals their state allows, and several states say so in their own rules.
+            </p>
+            <p>
+              Hatched grey means the rule genuinely does not resolve. Usually a definition arguably reaches
+              the animal without naming it, and the honest answer is to ask the agency rather than to guess.
+              Those entries are marked unclear on purpose rather than being rounded to a yes or a no.
+            </p>
+            <p>
+              Every entry links to the regulation it came from. None of this is legal advice, laws change
+              without much notice, and the agency that issues the permit is always the last word. For the
+              federal layer and how state schemes are structured, see the{' '}
+              <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
+                exotic pet legal hub
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}

@@ -38,6 +38,7 @@ const Privacy = lazy(() => import('@/pages/Privacy'));
 const Categories = lazy(() => import('@/pages/Categories'));
 const Search = lazy(() => import('@/pages/Search'));
 const Glossary = lazy(() => import('@/pages/Glossary'));
+const ExoticPetLaws = lazy(() => import('@/pages/ExoticPetLaws'));
 const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
 const Beastlypedia = lazy(() => import('@/pages/Beastlypedia'));
 const BeastfileDetail = lazy(() => import('@/pages/BeastfileDetail'));
@@ -126,6 +127,8 @@ const AuthenticatedApp = () => {
           <Route path="/categories" element={<Categories />} />
           <Route path="/search" element={<Search />} />
           <Route path="/glossary" element={<Glossary />} />
+          <Route path="/exotic-pet-laws" element={<ExoticPetLaws />} />
+          <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

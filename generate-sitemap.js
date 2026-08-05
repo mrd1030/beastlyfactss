@@ -19,6 +19,13 @@ const beastlypedia = JSON.parse(
   fs.readFileSync(path.join(__dirname, 'src/lib/generated/beastlypedia-index.json'), 'utf8')
 );
 
+// The legal matrix, read by prerender.mjs from this same file, for the same
+// reason as the two above: a hand-copied species list goes stale the moment a
+// new animal is researched, and then the page exists but is never indexed.
+const legalStatus = JSON.parse(
+  fs.readFileSync(path.join(__dirname, 'src/lib/data/legalStatus.json'), 'utf8')
+);
+
 function parseFrontmatter(content) {
   // \r? - MDX files in this repo are a mix of LF and CRLF line endings;
   // an LF-only match silently drops frontmatter and the slug falls back
@@ -156,6 +163,12 @@ const staticPages = [
   '/quiz/trivia/',
   '/quiz/knowledge/',
   '/glossary/',
+  '/exotic-pet-laws/',
+
+  // One page per animal in the legal matrix. Read from the dataset for the same
+  // reason prerender.mjs does: a hand-copied list goes stale the moment a new
+  // species is researched, and then the page exists but never gets indexed.
+  ...Object.keys(legalStatus.animals).map(id => `/exotic-pet-laws/${id}/`),
 
   // Encyclopedia categories
   ...encyclopediaCategories.map(s => `/encyclopedia/category/${s}/`),

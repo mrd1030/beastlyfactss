@@ -1867,7 +1867,8 @@
           "note": "Absent from the importation list, but that list covers wildlife and the golden hamster is a domesticated animal rather than a wild mammal under Neb. Rev. Stat. 37-246. The guinea pig appears on the list even so, which makes the list less than perfectly consistent.",
           "verifiedOn": "2026-08-04"
         }
-      }
+      },
+      "article": "/blog/hamster-legal-guide/"
     },
     "gerbil": {
       "name": "Gerbil",
@@ -2452,7 +2453,9 @@
           "note": "The only cats in the chapter are Nebraska's two native ones, and both are marked for commercial purposes only. A domestic cat is not a wild mammal.",
           "verifiedOn": "2026-08-04"
         }
-      }
+      },
+      "article": "/blog/bengal-cat-legal-guide/",
+      "scientific": "Felis catus x Prionailurus bengalensis"
     },
     "veiled-chameleon": {
       "name": "Veiled chameleon",
@@ -2690,7 +2693,8 @@
           "note": "Chamaeleo calyptratus appears on no Hawaii list. The only chameleons named anywhere are Chamaeleo chamaeleon and Furcifer oustaleti, both on the restricted list for research and exhibition only. Veiled chameleons are established in the wild on Maui and Oahu, which is exactly the outcome the default rule exists to prevent.",
           "verifiedOn": "2026-08-04"
         }
-      }
+      },
+      "article": "/blog/veiled-chameleon-legal-guide/"
     },
     "russian-tortoise": {
       "name": "Russian tortoise",
@@ -2871,7 +2875,8 @@
           "note": "A genuine surprise given how much Hawaii bans. The whole genus Testudo is conditionally approved, so Testudo horsfieldii may be imported and kept subject to the conditions the Department of Agriculture attaches, rather than being barred by the default rule the way most exotics are.",
           "verifiedOn": "2026-08-04"
         }
-      }
+      },
+      "article": "/blog/russian-tortoise-legal-guide/"
     },
     "ball-python": {
       "name": "Ball python",
@@ -3373,7 +3378,8 @@
           "verifiedOn": "2026-08-04",
           "localOverride": true
         }
-      }
+      },
+      "scientific": "Theraphosidae"
     },
     "emperor-scorpion": {
       "name": "Emperor scorpion",

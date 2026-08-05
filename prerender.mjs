@@ -13,6 +13,7 @@
 import puppeteer from 'puppeteer';
 import { preview } from 'vite';
 import { mkdir, writeFile, readFile } from 'fs/promises';
+import { readFileSync } from 'fs';
 import path from 'path';
 import { cpus } from 'os';
 
@@ -103,6 +104,13 @@ function getChroniclesRoutes(meta) {
   }
   return routes;
 }
+
+// Read straight from the dataset rather than hand-copying a list. This one
+// grows every time a species is researched, and a stale copy here would mean a
+// page that exists, renders and is linked but never gets prerendered.
+const LEGAL_ANIMAL_IDS = Object.keys(
+  JSON.parse(readFileSync(new URL('./src/lib/data/legalStatus.json', import.meta.url), 'utf8')).animals,
+);
 
 // All encyclopedia animal IDs (mirrors encyclopediaAnimals in encyclopedia.js)
 const ENCYCLOPEDIA_ANIMAL_IDS = [
@@ -219,6 +227,8 @@ const STATIC_ROUTES = [
   ...BEASTLYPEDIA.groupSlugs.map(s => `/beastlypedia/group/${s}`),
   ...BEASTLYPEDIA.ids.map(id => `/beastlypedia/${id}`),
   ...GUIDE_IDS.map(id => `/guides/${id}`),
+  '/exotic-pet-laws',
+  ...LEGAL_ANIMAL_IDS.map(id => `/exotic-pet-laws/${id}`),
 ];
 
 // Per-attempt deadlines, escalating. A flat 45s was the single biggest cost in
