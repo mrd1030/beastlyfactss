@@ -72,10 +72,18 @@
       "DE",
       "TN",
       "NC",
-      "AR"
+      "AR",
+      "ID",
+      "IA",
+      "KY",
+      "RI",
+      "NH",
+      "MO",
+      "KS",
+      "SC"
     ],
-    "remaining": 19,
-    "note": "Statuses are complete for the 32 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 12,
+    "note": "Statuses are complete for the 40 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -206,6 +214,42 @@
     "AR": {
       "name": "Arkansas",
       "level": "state"
+    },
+    "ID": {
+      "name": "Idaho",
+      "level": "state"
+    },
+    "IA": {
+      "name": "Iowa",
+      "level": "state"
+    },
+    "KY": {
+      "name": "Kentucky",
+      "level": "state"
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "level": "state"
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "level": "state",
+      "scope": "Fis 800, the Fish and Game Department rules on importation and possession of wildlife, which is the whole framework: non-controlled, prohibited and controlled lists for both importation and possession."
+    },
+    "MO": {
+      "name": "Missouri",
+      "level": "state",
+      "scope": "RSMo § 578.023, the dangerous wild animal registration statute, and 3 CSR 10-9, the Wildlife Code chapter on confined wildlife. Between them these are the two places Missouri restricts keeping an animal."
+    },
+    "KS": {
+      "name": "Kansas",
+      "level": "state",
+      "scope": "K.S.A. 32-1301 and following, the Dangerous Regulated Animals Act, which is the state's only exotic pet statute. Native wildlife possession is handled separately under KAR 115-20 and was not read for this entry."
+    },
+    "SC": {
+      "name": "South Carolina",
+      "level": "state",
+      "scope": "S.C. Code Title 47 Chapter 2, the large wild cat, non-native bear and great ape ban, and Title 50 Chapter 16, the wildlife importation permit chapter. Native game and furbearer harvest rules elsewhere in Title 50 were not read."
     }
   },
   "sources": {
@@ -390,6 +434,66 @@
       "title": "Arkansas Game and Fish Commission, Unrestricted Captive Wildlife Species List",
       "url": "https://www.agfc.com/wp-content/uploads/2023/04/221112_4CP-Unrestricted-Captive-Wildlife-Species-List-.pdf",
       "note": "Species that may be held in captivity without a permit, named individually with binomials. One of the cleanest primary sources of any state for this purpose."
+    },
+    "id-020427": {
+      "title": "IDAPA 02.04.27, Idaho Department of Agriculture, Rules Governing Deleterious Exotic Animals",
+      "url": "https://adminrules.idaho.gov/rules/current/02/020427.pdf",
+      "note": "Section 100.01 bars possession of a deleterious exotic animal without a possession permit from the Administrator. Sections 401 to 412 are the list itself, by taxon."
+    },
+    "id-130110": {
+      "title": "IDAPA 13.01.10, Idaho Department of Fish and Game, Rules Governing Importation, Possession, Release, Sale, or Salvage of Wildlife",
+      "url": "https://adminrules.idaho.gov/rules/current/13/130110.pdf",
+      "note": "Section 010.06 defines conventional pets, which sit outside the wildlife permit regime. Unusually explicit: it names ferrets, hedgehogs and sugar gliders in the rule text."
+    },
+    "ia-717F": {
+      "title": "Iowa Code Chapter 717F, Dangerous Wild Animals",
+      "url": "https://www.legis.iowa.gov/docs/code/717F.pdf",
+      "note": "§ 717F.3 bars owning, possessing, breeding or importing a dangerous wild animal. § 717F.1(5) defines the class by family and order rather than by species name, so the boundaries are read off the taxonomy. § 717F.4 grandfathers animals already owned on 1 July 2007."
+    },
+    "ia-481A": {
+      "title": "Iowa Code Chapter 481A, Wildlife Conservation",
+      "url": "https://www.legis.iowa.gov/docs/code/481A.pdf",
+      "note": "The native wildlife side. § 481A.67 governs taking turtles."
+    },
+    "ky-301-2-082": {
+      "title": "301 KAR 2:082, Transportation and holding of live exotic wildlife",
+      "url": "https://apps.legislature.ky.gov/law/kar/titles/301/002/082/",
+      "note": "Three lists. Section 4(1) is prohibited species, injurious to native ecosystems. Section 4(2) is inherently dangerous exotic wildlife. Section 7 is the permit-exempt list. Anything on none of the three may be possessed, but a transportation permit is needed to bring it into the state. KRS 65.877, cited in the regulation itself, lets local governments prohibit inherently dangerous wildlife outright."
+    },
+    "ri-250-40-05-3": {
+      "title": "250-RICR-40-05-3, Rules and Regulations Governing the Importation and Possession of Wild Animals",
+      "url": "https://rules.sos.ri.gov/regulations/part/250-40-05-3",
+      "note": "One of the most species-specific schemes in the country. § 3.6 defines domestic animals, § 3.7 sets general prohibitions, § 3.9 governs permits, and § 3.17 is the long exempt list of animals that need no exotic animal possession permit. Anything not domestic, not native and not on the § 3.17 list needs a permit."
+    },
+    "nh-fis800": {
+      "title": "New Hampshire Code of Administrative Rules, Fis 800, Importation and Possession of Wildlife",
+      "url": "https://www.gencourt.state.nh.us/rules/state_agencies/fis800.html",
+      "note": "Fis 804.02 is the non-controlled possession list, needing no permit. Fis 804.05 is the controlled table, and the number beside each species is the permittee category allowed to hold it. Category 1 is an individual, category 5 is an exhibitor, so a species marked 5 alone cannot be kept by a private person at all."
+    },
+    "mo-578-023": {
+      "title": "Missouri Revised Statutes § 578.023, Keeping a dangerous wild animal",
+      "url": "https://revisor.mo.gov/main/OneSection.aspx?section=578.023",
+      "note": "Missouri does not ban these animals. It requires that they be registered with the local law enforcement agency in the county where they are kept. Failure to register is the offence."
+    },
+    "mo-3csr10-9": {
+      "title": "3 CSR 10-9, Missouri Wildlife Code: Confined Wildlife",
+      "url": "https://www.sos.mo.gov/adrules/csr/current/3csr/3c10-9.pdf",
+      "note": "Class I is native Missouri mammals, reptiles and amphibians plus birds native to the continental United States. Class II is the venomous natives, mountain lion, wolf and black bear. Class III is cervids. An animal that is none of these is outside the Wildlife Code entirely."
+    },
+    "ks-32-1301": {
+      "title": "K.S.A. 32-1301, Dangerous regulated animals; definitions",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_013_0001.html",
+      "note": "Kansas restricts three things and nothing else. The definition is short enough to read in full, which is what makes it useful: everything outside it is untouched by the Act."
+    },
+    "sc-47-2": {
+      "title": "S.C. Code Title 47, Chapter 2, Large Wild Cats, Non-Native Bears and Great Apes",
+      "url": "https://www.scstatehouse.gov/code/t47c002.php",
+      "note": "The 2018 Act. It is narrow on purpose: genus Panthera, non-native bears, great apes, and hybrids of those. Anyone in lawful possession before 1 January 2018 could register with the local animal control authority and keep the animal for its life."
+    },
+    "sc-50-16": {
+      "title": "S.C. Code Title 50, Chapter 16, Importation and Possession of Wildlife",
+      "url": "https://www.scstatehouse.gov/code/t50c016.php",
+      "note": "§ 50-16-20 requires a permit to bring in certain groups of live wildlife, chiefly furbearers, cervids, pigs, bovids, coyote, bear and turkey. § 50-16-60 then exempts a named list of pet trade animals from even that."
     }
   },
   "animals": {
@@ -617,6 +721,58 @@
           "sourceId": "ar-unrestricted",
           "quote": "Four-toed or African Pygmy Hedgehog (Atelerix albiventris)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "Conventional Pets. Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho: dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders.",
+          "note": "The deleterious exotic animal list reaches only the European hedgehog, Erinaceus europaeus, not the African pygmy hedgehog kept as a pet.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither the prohibited nor the inherently dangerous list. Not on the Section 7 permit-exempt list either, so a transportation permit is required to bring one in from out of state, but possession itself is unrestricted.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(6)(a)(1)",
+          "quote": "Four-toed (African pygmy) Hedgehog (Erinaceus albiventris) (Atelerix pruneri),",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(l)",
+          "quote": "African pigmy hedgehog;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "Class I wildlife shall include birds... native to the continental United States, and those species of mammals... and nonvenomous reptiles and amphibians native to Missouri.",
+          "note": "Not native to Missouri, so not Class I, and not on the § 578.023 list either. Missouri regulates confined wildlife, and an African pygmy hedgehog is neither.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal, which is the only state level restriction on keeping an exotic pet in Kansas.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "Not a furbearer, cervid, pig, peccary, bovid, coyote, bear or turkey, so no import permit is needed, and Chapter 47-2 reaches only big cats, bears and great apes.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -801,6 +957,59 @@
           "status": "legal",
           "sourceId": "ar-unrestricted",
           "quote": "European Domestic Ferret (Mustela putorius)",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list. The regulation reaches exotic wildlife, defined as species that have never naturally existed in the wild in Kentucky.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(6)(a)(11)",
+          "quote": "Ferret (Mustela putorius). Note: Possession of a ferret does not require obtaining an exotic animal possession permit. Possession of a ferret does require a ferret possession permit issued through the Division of Fish & Wildlife.",
+          "permitFor": "personal",
+          "note": "Rhode Island is the state that most people miss on ferrets: they are not banned, but they carry their own dedicated permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(g)",
+          "quote": "Ferrets, domesticated (Mustela putorius furo);",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not Missouri wildlife and not on the dangerous wild animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "unclear",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "quote": "Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "note": "The domestic ferret is not named, but the list is expressly not exhaustive and it does name mink and weasel, the ferret's closest relatives. Ferrets are also absent from the § 50-16-60 pet trade exemption list, which names hamsters, guinea pigs and gerbils. Worth a call to DNR before importing one.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -993,6 +1202,57 @@
           "sourceId": "ar-unrestricted",
           "quote": "Sugar Glider (Petaurus)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-poultry birds, hedgehogs, tenrecs, and sugar gliders",
+          "note": "The marsupial entry on the deleterious exotic animal list is the brush tailed possum only.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list. A transportation permit covers bringing one into the state.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(6)(a)(10)",
+          "quote": "Sugar Glider (Petaurus breviceps),",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(m)",
+          "quote": "Sugar glider (Petaurus breviceps);",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not Missouri wildlife and not on the dangerous wild animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "Outside every group named in the import permit provision.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1054,6 +1314,44 @@
           "sourceId": "tn-70-4-403",
           "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians",
+          "note": "A rodent, and not among the rodents named on the deleterious exotic animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 7(17)",
+          "quote": "Hamster (Mesocricetus spp.);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(n)",
+          "quote": "Domestic Hamster derived from (Mesocricetus auratus) and (Phodopus sp.),",
+          "note": "Listed as a domestic animal, and separately as an exempt exotic at § 3.17(A)(6)(a)(9) for captive bred pet trade species.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(d)",
+          "quote": "Hamsters, domesticated (Cricetus cricetus);",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...13. hamsters",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1105,6 +1403,43 @@
           "status": "legal",
           "sourceId": "tn-70-4-403",
           "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "dogs, cats ferrets, rabbits, rodents, non-venomous or non-dangerous reptiles and amphibians",
+          "note": "A rodent, and not among the rodents named on the deleterious exotic animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 7(14)",
+          "quote": "Gerbil (Meriones unguiculatus);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(y)",
+          "quote": "Mongolian Gerbil (Meriones unguiculatus),",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(b)",
+          "quote": "Gerbils, domesticated;",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...5. gerbils",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1171,6 +1506,55 @@
           "quote": "Myiopsitta monachus",
           "permitFor": "personal",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians, non-poultry birds, hedgehogs, tenrecs, and sugar gliders",
+          "note": "The only bird on the deleterious exotic animal list is the mute swan.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(1)(q)",
+          "quote": "Monk or Quaker parakeet (Myiopsitta monachus);",
+          "note": "The permit-exempt list confirms the exclusion: it clears parrots, lovebirds, budgerigars, macaws and parakeets except the monk parakeet.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(5)(b)(9)",
+          "quote": "Psittacidae (Parrots and their allies) except for Myiopsitta monachus (Monk Parakeet), which requires a permit,",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(6)(c)",
+          "quote": "Parrots (Psittaciformes);",
+          "note": "Listed by order rather than species, and no monk parakeet exception appears anywhere in Fis 800.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "Class I wildlife shall include birds (including ring-necked pheasants and gray partridge) native to the continental United States",
+          "note": "Myiopsitta monachus is South American. Naturalised colonies exist in the United States but the species is not native to it.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "6. shell parakeets 7. love birds 8. cockatiels 9. parrots",
+          "note": "The only bird needing a permit under § 50-16-20 is turkey of the genus Meleagris. South Carolina makes no monk parakeet exception, unlike most states that name the species.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1218,6 +1602,71 @@
           "quote": "hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds",
           "note": "Maryland draws the line by weight rather than by generation. A Bengal under 30 lb is outside the prohibition, which most Bengals are.",
           "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-020427",
+          "cite": "§ 404",
+          "quote": "Geoffroy's Cat (Felis geoffroyi). Margay (Felis wiedii). Ocelot (Felis pardalis). Serval (Felis serval).",
+          "note": "The small felidae list is these four. The Asian leopard cat behind the Bengal, Prionailurus bengalensis, is not on it, and cats are conventional pets under IDAPA 13.01.10.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "conditional",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(b)(2)(a)",
+          "quote": "The bengal must be the fourth or later filial generation of offspring with the first filial generation being the offspring of a domestic cat and an Asian leopard cat, and each subsequent generation being the offspring of a domestic cat.",
+          "note": "F4 and later are carved out of the definition. F1 to F3 are dangerous wild animals and are banned.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "quote": "Lions, jaguars, leopards, or tigers (Genus Panthera); Lynx (Genus Lynx);",
+          "note": "Prionailurus bengalensis appears on neither list, and the hybrid clause in Section 4(2)(v) reaches only hybrids of species in that subsection.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "unclear",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(e)",
+          "quote": "Domestic Cat (Felis catus) excluding hybrids with wild felines,",
+          "note": "An F1 cross is plainly excluded from the domestic animal list and then caught by the § 3.9(B) bar on permits for Carnivora hybrids. A late generation Bengal is the offspring of two domestic cats, so on the § 3.6(A)(13) definition of hybrid it arguably is not one. The regulation sets no filial generation cut off the way Iowa and New York do. Ask the Division of Agriculture before buying.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "5   Tiger; Golden Tabby, Siberian, White Siberian, Bengal   Panthera tigeris",
+          "note": "The only Bengal in the controlled table is the tiger colour morph. Neither Prionailurus bengalensis nor domestic cat hybrids appear, and domestic cats are not wildlife under these rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi",
+          "note": "The statute names species and says nothing about hybrids or filial generations.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(1)",
+          "quote": "Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof;",
+          "note": "The hybrid clause attaches to those six species. Leopard here means Panthera pardus, not the Asian leopard cat behind the Bengal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2)(a)",
+          "quote": "Family Felidae, Genus panthera—all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "The hybrid clause in § 47-2-10(2) attaches to those animals. The Asian leopard cat is Prionailurus, not Panthera.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1327,6 +1776,56 @@
           "sourceId": "ar-unrestricted",
           "quote": "Veiled Chameleon (Chamaeleo calyptratus)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "The only lizards restricted are gila monsters and beaded lizards, the Komodo dragon, and nothing else.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(J)",
+          "quote": "Old World Chameleons (Chameleonidae) may be kept without an exotic animal possession permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I, and not a deadly or dangerous reptile.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1376,6 +1875,57 @@
         "NY": {
           "status": "legal",
           "sourceId": "ny-11-0103",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(a)(1)",
+          "quote": "All exotic species of turtles may be kept without an exotic animal possession permit, except endangered species.",
+          "note": "The three exceptions are the Chaco tortoise, the genus Gopherus and the pancake tortoise. Testudo horsfieldii is none of them.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1485,6 +2035,67 @@
           "sourceId": "ar-unrestricted",
           "quote": "Ball Python (Python regius)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+          "note": "Python regius is a henophidian but is not one of the three the statute limits itself to.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Only venomous snakes are inherently dangerous here. Constrictors are not listed at any size.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(A)",
+          "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any deadly or dangerous reptile over eight feet long",
+          "note": "Python regius tops out well under the eight foot line and is not venomous.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "note": "The snake restriction turns on venom alone, so constrictors of any size sit outside it.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1579,6 +2190,66 @@
           "sourceId": "ar-unrestricted",
           "quote": "Boa Constrictors (Genus Boa)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+          "note": "Anaconda means Eunectes. Boa constrictor is a different genus and is outside the definition.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(A)",
+          "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+          "note": "Boa constrictor is not one of the five exceptions. The emerald tree boa is.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any deadly or dangerous reptile over eight feet long... unless he or she has registered such animals with the local law enforcement agency in the county in which the animal is kept",
+          "note": "A large female Boa constrictor can pass eight feet, which brings the registration duty into play. A smaller animal does not.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1590,6 +2261,15 @@
           "status": "banned",
           "sourceId": "nyc-161-01",
           "quote": "All venomous spiders, including, but not limited to, tarantula, black widow and solifugid",
+          "verifiedOn": "2026-08-04"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.8(G)",
+          "quote": "Nothing in this Part shall prohibit any person from possession of exotic animals or native animals of the class Insecta unless the animals of that class appear on the list of prohibited insects",
+          "permitFor": "personal",
+          "note": "The blanket invertebrate exemption is written for the class Insecta. Spiders are Arachnida, so on the literal wording they stay inside the definition of exotic animal at § 3.6(A)(9), which covers any invertebrate that is not domestic, native or exempt.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1603,6 +2283,15 @@
           "status": "banned",
           "sourceId": "nyc-161-01",
           "quote": "scorpion; all venomous arthropods",
+          "verifiedOn": "2026-08-04"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.8(G)",
+          "quote": "Nothing in this Part shall prohibit any person from possession of exotic animals or native animals of the class Insecta unless the animals of that class appear on the list of prohibited insects",
+          "permitFor": "personal",
+          "note": "Same gap as the tarantula. Scorpions are arachnids, not insects.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1636,6 +2325,65 @@
             "before": "2021-04-29",
             "detail": "Personal, non-transferable, no-cost permit if applied for by October 2021, valid for that animal life."
           }
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)",
+          "quote": "A member of the order squamata which is any of the following:",
+          "note": "Teiidae is not one of the enumerated squamate families. Notable because Florida bans this species outright.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list, unlike Florida where the species is banned outright.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(C)",
+          "quote": "All Teiids (Teiidae) may be kept without an exotic animal possession permit except for the following: Brown Water Teiids (Neusticurus spp.), Dicrodon spp., Earless Teiids (Bachia spp.), Rough Teiids (Echinosaura spp.), Snake Teiids (Ophiognomon spp.), Spectacled Teiids (Gymnophthalmus spp.), Worm Teiids (Scolacosaurus spp.).",
+          "note": "Salvator merianae is a teiid and is not among the seven exceptions.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1648,6 +2396,66 @@
           "status": "banned",
           "sourceId": "nyc-161-01",
           "quote": "any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(a)",
+          "quote": "A member of the family varanidae, which are limited to water monitors and crocodile monitors.",
+          "note": "Varanus exanthematicus is neither.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(m)",
+          "quote": "Komodo dragon (Varanus komodoensis);",
+          "note": "The only monitor on the inherently dangerous list is the Komodo dragon.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(1)",
+          "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1788,6 +2596,54 @@
           "sourceId": "de-3900",
           "quote": "wild rodents",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "§ 410.07",
+          "quote": "Prairie Dogs (Cynomys).",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(1)(u)",
+          "quote": "Prairie dog (Cynomys spp.);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.9(B)",
+          "quote": "no person shall be allowed to import, or possess any animals defined as exotic wild animals or native wild animals without first obtaining a permit from the Department",
+          "permitFor": "personal",
+          "note": "Absent from the § 3.17 exempt mammal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "5   Prairie Dog   Cynamys, spp.",
+          "note": "Exhibitor only. New Hampshire is one of the stricter states on prairie dogs.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "Class I wildlife shall include birds (including ring-necked pheasants and gray partridge) native to the continental United States, and those species of mammals (except bison and those listed in 3 CSR 10-9.240 and 3 CSR 10-9.250) and nonvenomous reptiles and amphibians native to Missouri.",
+          "permitFor": "personal",
+          "note": "The black-tailed prairie dog is native to Missouri, which puts it in Class I. Permits are issued only for species on the Approved Confined Wildlife Species List in 3 CSR 10-9.105.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "A rodent, and not a furbearer as the statute uses the word.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1925,6 +2781,59 @@
           "sourceId": "tn-70-4-403",
           "note": "Class III catch-all; not a native species, so Class II does not apply.",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "§ 410.08",
+          "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
+          "note": "Hydrochoerus hydrochaeris is a South American rodent and is not excepted.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list. A transportation permit is required to import one.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.9(B)",
+          "quote": "no person shall be allowed to import, or possess any animals defined as exotic wild animals or native wild animals without first obtaining a permit from the Department",
+          "permitFor": "personal",
+          "note": "Not domestic, not native, and not on the § 3.17 exempt list, so the general permit requirement applies. Private ownership permits are available for animals outside the order Carnivora.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "unclear",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02, Fis 804.05",
+          "note": "On neither the non-controlled list nor the controlled table. The Patagonian cavy is listed but the capybara is not, so there is no category that authorises a permit and no exemption either. Ask Fish and Game rather than assuming the silence means yes.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "A South American rodent, so not Missouri wildlife, and rodents are absent from the § 578.023 list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "A rodent, and rodents appear nowhere in the list of wildlife needing an import permit.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2047,6 +2956,75 @@
           "status": "unclear",
           "sourceId": "tn-70-4-403",
           "note": "Same open-ended Class I definition.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "§ 402.01",
+          "quote": "All Non-native Canidae Species.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(1)",
+          "quote": "A member of the family canidae of the order carnivora, including but not limited to wolves, coyotes, and jackals. However, a dangerous wild animal does not include a domestic dog.",
+          "note": "Vulpes zerda is a canid, and the only exception written into the paragraph is the domestic dog.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "Registration by 31 December 2007 was the only way in. No new route exists."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "banned",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(1)(j)",
+          "quote": "Fox (Genus Cerdocyon, Genus Lycalopex, Genus Otocyon, Genus Urocyon, and Genus Vulpes);",
+          "note": "Vulpes zerda falls in the last genus named. The section bars importing, transporting into Kentucky, and possessing.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.9(B)",
+          "quote": "no permits shall be granted by the Department to a private person authorizing the import, and/or possession of any exotic wild animals of the order Carnivora, or hybrids thereof, for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine",
+          "note": "Same closed door as the serval. Fennec foxes are canids with no licensed rabies vaccine.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "5   Fox, Gray; Fenec",
+          "note": "Exhibitor only, same as the serval. The table pairs the two common names under one row.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile",
+          "note": "Wolves and coyotes are named but foxes are not. Missouri's own red and gray foxes are separately barred from importation under 3 CSR 10-9, which does not reach the fennec.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+          "note": "No canid appears anywhere in the definition.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "permit",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "quote": "a furbearer, a member of the family Cervidae, a nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), Bovidae (bison, mountain goat, mountain sheep), coyote, bear, or turkey (genus Meleagris). Furbearer includes, but is not limited to, red and gray fox, raccoon, opossum, muskrat, mink, skunk, otter, bobcat, weasel, and beaver;",
+          "permitFor": "personal",
+          "note": "The furbearer list is open ended and names fox. Bringing one into South Carolina needs a Department of Natural Resources permit.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2197,6 +3175,74 @@
           "sourceId": "tn-70-4-403",
           "note": "Class I is defined by example rather than by list, 'inherently dangerous to humans such as wolves, bears, lions', so whether a serval is caught turns on a judgement the statute does not make. Not resolvable from the text.",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "§ 404.04",
+          "quote": "Serval (Felis serval).",
+          "note": "Listed under small felidae. Only the large felidae and primate lists carry the extra requirement that the facility be AZA accredited.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "banned",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(3)",
+          "quote": "A member of the family felidae of the order carnivora, including but not limited to lions, tigers, cougars, leopards, cheetahs, ocelots, and servals. However, a dangerous wild animal does not include a domestic cat.",
+          "grandfathered": {
+            "before": "2007-07-01",
+            "detail": "An owner in possession on 1 July 2007 could keep the animal after implanting an electronic identification device within sixty days and registering with the department by 31 December 2007. No new route exists."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)",
+          "quote": "Lions, jaguars, leopards, or tigers (Genus Panthera); Lynx (Genus Lynx);",
+          "note": "The inherently dangerous list names Panthera, Lynx, cheetah, clouded leopard and snow leopard. Leptailurus serval is on neither that list nor the prohibited list, so possession is lawful, though a transportation permit is needed to bring one into the state and a city or county may prohibit it under KRS 65.877.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.9(B)",
+          "quote": "no permits shall be granted by the Department to a private person authorizing the import, and/or possession of any exotic wild animals of the order Carnivora, or hybrids thereof, for which there is no USDA conditionally licensed or unconditionally licensed rabies vaccine",
+          "note": "There is no USDA licensed rabies vaccine for servals, so the permit route is closed to private owners. § 3.7(A) restricts possession to researchers, USDA licensed exhibitors and AZA facilities.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "5   Serval, African",
+          "note": "The permittee category is 5, exhibitor, with no category 1. A private individual cannot be issued a possession permit for one.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "if he or she keeps any lion, tiger, leopard, ocelot, jaguar, cheetah, margay, mountain lion, Canada lynx, bobcat, jaguarundi, hyena, wolf, bear, nonhuman primate, coyote, any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long",
+          "note": "The cat list runs to eleven species and the serval is not one of them. Nor is it Missouri wildlife, so 3 CSR 10-9 does not reach it either.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+          "note": "Six cats by name, all of them large. Leptailurus serval is none of them, which makes Kansas one of the few states where a serval is not regulated at state level.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-47-2",
+          "cite": "§ 47-2-10(2)(a)",
+          "quote": "Family Felidae, Genus panthera—all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;",
+          "note": "The ban is drawn at one genus. Leptailurus serval is outside it, and a serval is not a South Carolina furbearer, so the § 50-16-20 import permit does not apply either.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2333,6 +3379,57 @@
           "sourceId": "ar-unrestricted",
           "quote": "Long-tailed Chinchilla (Chinchilla lanigera)",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-020427",
+          "cite": "§ 410.08",
+          "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 7(6)",
+          "quote": "Chinchilla (Chinchilla laniger);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(6)(a)(2)",
+          "quote": "Chinchilla (Chinchilla spp.) derived from captive stock,",
+          "note": "The exemption is written for captive stock only.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(a)",
+          "quote": "Chinchillas, domesticated, (Chinchilla spp);",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not Missouri wildlife and not on the dangerous wild animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "Outside every group named in the import permit provision.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2382,6 +3479,42 @@
           "sourceId": "tn-70-4-403",
           "quote": "Rodents--Gerbils, hamsters, guinea pigs, rats, mice, squirrels and chipmunks",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-020427",
+          "cite": "§ 410.08",
+          "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 7(16)",
+          "quote": "Guinea pig (Cavia porcellus);",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.6(A)(5)(u)",
+          "quote": "Guinea Pig (Cavia porcellus),",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(c)",
+          "quote": "Guinea pigs, domesticated;",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...14. guinea pigs",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2411,6 +3544,64 @@
             "before": "2021-04-29",
             "detail": "Same grandfathered personal permit route as the tegu."
           }
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)",
+          "quote": "A member of the order squamata which is any of the following:",
+          "note": "The subparagraphs that follow are an exhaustive list of squamate families: varanidae, atractaspidae, helodermatidae, the venomous snake families, and superfamily henophidia. Iguanidae is not among them.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(G)",
+          "quote": "The following Iguanid Lizards (Iguanidae) may be kept without an exotic animal possession permit: Basilisks (Basiliscus spp.), Collared and Leopard Lizards (Crotaphytus spp.), Common or Green Iguanas (Iguana i. iguana)",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri and not over the eight foot line in § 578.023.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2437,6 +3628,48 @@
           "sourceId": "nj-7-25-4-4",
           "quote": "Snapping turtles - Chelydra serpentina",
           "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "Snapping turtles are not native to Idaho, so the carve out for native wildlife captured from the wild does not apply.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "restricted",
+          "sourceId": "ia-481A",
+          "cite": "§ 481A.67",
+          "quote": "It is unlawful for a person, except as otherwise expressly provided, to take, capture, or kill fish, frogs, or turtles except during the open season established by the commission.",
+          "note": "Chelydra serpentina is native here and taking one from the wild falls under the licence, season and possession limit rules. Subsection 2 exempts snapping turtles from the noncommercial season only, not from the rest.",
+          "verifiedOn": "2026-08-04"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(a)(2)",
+          "quote": "The possession of native turtles is restricted to those institutions identified within § 3.7(C) of this Part... Turtles considered native to Rhode Island and which possession as pets is prohibited include the following: ...Snapping Turtle (Chelydra serpentina),",
+          "note": "Possession is limited to the Department, USFWS, AZA zoos, research institutions and USDA licensed exhibitors.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "permit",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "1,5   Snapping turtle   Chelydra serpentina",
+          "permitFor": "personal",
+          "note": "Category 1 is an individual, so unlike the serval this one is open to a private keeper who holds a permit to possess wildlife.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "those species of mammals... and nonvenomous reptiles and amphibians native to Missouri",
+          "permitFor": "personal",
+          "note": "Chelydra serpentina is a native nonvenomous reptile and so falls in Class I.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2449,6 +3682,56 @@
           "status": "legal",
           "sourceId": "nj-7-25-4-4",
           "quote": "Tokay gecko - Gekko gecko",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(2)(F)",
+          "quote": "All Gekkos (Gekkonidae) may be kept without an exotic animal possession permit except the Big Bend Gekko (Coleonyx reticulatus).",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2466,6 +3749,46 @@
           "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "ID": {
+          "status": "conditional",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "Privately owned companion animals not intended for research or resale that are not native wildlife captured from the wild in Idaho",
+          "note": "Captive bred stock is a conventional pet. Ambystoma mavortium is native to Idaho, so one taken from the wild in the state is wildlife and falls outside the definition.",
+          "verifiedOn": "2026-08-04"
+        },
+        "RI": {
+          "status": "conditional",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.7(H)",
+          "quote": "All persons other than a bona fide researcher, or a licensed pet shops and their transportation agents are prohibited from possessing any species of exotic amphibians unless they are kept indoors as pets in a manner that will prevent their escape or liberation into the wild. Keeping of these animals in any type of outdoor enclosure is prohibited.",
+          "note": "Rhode Island's native amphibian list does not include the tiger salamander, so it is an exotic amphibian: keepable, but indoors only, and only a pet shop or researcher may import one.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(2)",
+          "quote": "Amphibians, exotic;",
+          "note": "The controlled table covers the four Ambystoma species native to New Hampshire. The tiger salamander is not one of them, so it counts as an exotic amphibian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "those species of mammals... and nonvenomous reptiles and amphibians native to Missouri",
+          "permitFor": "personal",
+          "note": "Ambystoma tigrinum is native to Missouri, which puts it in Class I rather than outside the Wildlife Code.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "16. amphibians.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2478,6 +3801,60 @@
           "sourceId": "fl-prohibited",
           "quote": "Varanus niloticus",
           "note": "Grandfathered for holders of a valid reptile of concern licence.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "Same undefined non-dangerous qualifier. A two metre monitor with a serious bite sits on the line.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "unclear",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(a)",
+          "quote": "A member of the family varanidae, which are limited to water monitors and crocodile monitors.",
+          "note": "Water monitor usually means Varanus salvator, but Varanus niloticus is commonly called the African water monitor and the statute gives no binomial. Do not read this as permission.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(m)",
+          "quote": "Komodo dragon (Varanus komodoensis);",
+          "note": "Named by species rather than by family, so Varanus niloticus is outside it.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(1)",
+          "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only snakes are named among the reptiles, and only venomous ones.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2510,6 +3887,71 @@
           "verifiedOn": "2026-08-04",
           "localOverride": true,
           "permitFor": "personal"
+        },
+        "ID": {
+          "status": "unclear",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "Non-dangerous is not defined anywhere in the rule. A Burmese python is non-venomous, which on the literal wording is enough, but a giant constrictor is exactly the animal the qualifier appears aimed at. Ask Idaho Fish and Game before relying on this.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+          "note": "Worth flagging to readers: Iowa bans the reticulated python and the African rock python but the Burmese python, Python bivittatus, is not named and so is not a dangerous wild animal here.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Kentucky regulates snakes by venom, not by size, so the giant constrictors are untouched by this regulation.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(A)",
+          "quote": "except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+          "note": "The exception list names the reticulated and African rock pythons but not Python bivittatus, so the Burmese python stays permit free.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "New Hampshire draws its reptile line at crocodilians and venom, not at size.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "conditional",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any deadly, dangerous, or poisonous reptile, or any deadly or dangerous reptile over eight feet long, in any place other than a properly maintained zoological park, circus, scientific, or educational institution, research laboratory, veterinary hospital, or animal refuge, unless he or she has registered such animals with the local law enforcement agency in the county in which the animal is kept",
+          "note": "Not banned, but an adult Burmese python comfortably passes eight feet, at which point it must be registered with the county law enforcement agency. There is no state permit and no fee, just the registration.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "note": "Kansas sets no length limit on constrictors, unlike Missouri next door.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "note": "Written as a single word covering the whole class, with no carve out for giant constrictors.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2536,6 +3978,58 @@
           "sourceId": "mi-large-carnivore",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "ID": {
+          "status": "permit",
+          "sourceId": "id-020427",
+          "cite": "§ 410.08",
+          "quote": "South American Rodents. All South American rodents except guinea pigs and chinchillas.",
+          "note": "Octodon degus is a Chilean rodent and is not one of the two exceptions, so it is a deleterious exotic animal needing a possession permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither restricted list. Kentucky bans prairie dogs and the Gambian pouched rat by name, so the rodent list is specific rather than general.",
+          "verifiedOn": "2026-08-04",
+          "localOverride": true
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(6)(a)(3)",
+          "quote": "Degu (Octodon degus),",
+          "verifiedOn": "2026-08-04"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(7)(r)",
+          "quote": "Degaus (Octodon degus);",
+          "note": "Spelled Degaus in the rule as filed.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not Missouri wildlife and not on the dangerous wild animal list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Outside the definition of a dangerous regulated animal.",
+          "verifiedOn": "2026-08-04"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-20(A)(1)",
+          "note": "Outside every group named in the import permit provision.",
+          "verifiedOn": "2026-08-04"
         }
       }
     }
