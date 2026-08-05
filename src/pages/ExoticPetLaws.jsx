@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
+import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import MDX_META from '@/lib/generated/mdx-meta.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
@@ -194,8 +195,23 @@ export default function ExoticPetLaws() {
         <meta name="twitter:description" content={description} />
       </Helmet>
 
-      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
+      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-6 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
+          {/* A real link rather than history.back(). Most arrivals here come
+              cold from search, where there is nothing to go back to, and on a
+              phone the map fills the screen with no other way out. An animal
+              page goes up to the hub, the hub goes up to the Legal category. */}
+          {/* py-3 with a matching negative margin: the row looks the same size as
+              the Beastfile back link but gives a 44px tap target. The first
+              version was 32px, under the minimum for a thumb. */}
+          <Link
+            to={isIndex ? '/blog/category/legal/' : '/exotic-pet-laws/'}
+            className="inline-flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-primary transition-colors mb-3 py-3 -my-2 pr-3 -mr-3"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            {isIndex ? 'Legal guides' : 'All animals'}
+          </Link>
+
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
               {isIndex ? 'Exotic pet laws, state by state' : `Where is the ${inSentence(animal.name)} legal?`}

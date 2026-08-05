@@ -15,6 +15,17 @@ import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
+import LEGAL from '@/lib/data/legalStatus.json';
+
+// encyclopedia id -> the id the legal map uses, so a profile can link straight
+// to its own pre-selected map rather than dropping the reader on the hub and
+// making them find the animal again. The two id sets do not always match: every
+// cat is cat-<breed> in the guides and plain <breed> in the encyclopedia.
+const LEGAL_BY_ENCYCLOPEDIA_ID = Object.fromEntries(
+  Object.entries(LEGAL.animals)
+    .filter(([, a]) => a.encyclopediaId)
+    .map(([id, a]) => [a.encyclopediaId, { id, restricted: Object.values(a.jurisdictions).filter((e) => e.status !== 'legal').length }]),
+);
 
 function BioField({ label, value }) {
   return (
@@ -34,6 +45,7 @@ export default function EncyclopediaAnimal() {
   const { id } = useParams();
   const animal = encyclopediaAnimals.find(a => a.id === id);
   const guide = animal?.guideId ? allGuides.find(g => g.id === animal.guideId) : null;
+  const legal = animal ? LEGAL_BY_ENCYCLOPEDIA_ID[animal.id] : null;
 
   const handleBack = () => {
     const returnTo = location.state?.returnTo;
@@ -236,6 +248,30 @@ export default function EncyclopediaAnimal() {
                   </div>
                   <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
                     View full guide <ChevronRight className="w-3.5 h-3.5" />
+                  </div>
+                </Link>
+              </div>
+            )}
+
+            {/* Legal status. Links to this animal's own map page rather than the
+                hub, so the map arrives already showing the species the reader
+                was looking at. */}
+            {legal && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                  ⚖️ Where it is legal
+                </p>
+                <Link to={`/exotic-pet-laws/${legal.id}/`} className="group block">
+                  <p className="text-xs text-muted-foreground font-body leading-relaxed mb-3">
+                    {/* No "the {name}" construction on purpose. Names here run
+                        from Bengal to Ball Python, and lowercasing them gave
+                        "the bengal" while leaving them gave "the Ball Python". */}
+                    {legal.restricted > 0
+                      ? `${legal.restricted} US jurisdictions restrict this species, from outright bans to permits. Every one quotes the rule it comes from.`
+                      : 'Nothing in the jurisdictions we checked restricts this species, and the map shows what was read to say so.'}
+                  </p>
+                  <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
+                    See the state map <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
               </div>
