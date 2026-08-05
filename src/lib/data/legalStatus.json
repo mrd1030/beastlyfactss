@@ -36,10 +36,15 @@
       "WI",
       "FL",
       "NY",
-      "CT"
+      "CT",
+      "MA",
+      "CO",
+      "AZ",
+      "OR",
+      "WA"
     ],
-    "remaining": 39,
-    "note": "Statuses are complete for the 12 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 34,
+    "note": "Statuses are complete for the 17 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -89,6 +94,26 @@
     },
     "CT": {
       "name": "Connecticut",
+      "level": "state"
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "level": "state"
+    },
+    "CO": {
+      "name": "Colorado",
+      "level": "state"
+    },
+    "AZ": {
+      "name": "Arizona",
+      "level": "state"
+    },
+    "OR": {
+      "name": "Oregon",
+      "level": "state"
+    },
+    "WA": {
+      "name": "Washington",
       "level": "state"
     }
   },
@@ -164,6 +189,36 @@
       "title": "Conn. Gen. Stat. § 26-40a, Possession of potentially dangerous animal",
       "url": "https://www.animallaw.info/statute/ct-exotic-pets-%C2%A7-26-40a-possession-potentially-dangerous-animal-chapter-490-fisheries-and",
       "note": "Potentially dangerous animals are 'the felidae... the canidae... the ursidae... and the hominidae', or any hybrid. Narrow: no rodents, marsupials, mustelids or insectivores. Civil penalty up to $2,000 per offence and a class A misdemeanour for a wilful violation."
+    },
+    "ma-321-9-01": {
+      "title": "321 CMR 9.01, Exemption List",
+      "url": "https://www.law.cornell.edu/regulations/massachusetts/321-CMR-9-01",
+      "note": "A closed exemption list of wild vertebrates that may be imported, sold or possessed without a permit. Anything not exempt needs one. Criteria include no significant ecological risk if released and care no more demanding than a common domesticated pet."
+    },
+    "ma-131-77": {
+      "title": "M.G.L. c. 131 § 77, and 321 CMR 9.02 List of Domestic Animals",
+      "url": "https://www.law.cornell.edu/regulations/massachusetts/321-CMR-9-02",
+      "note": "Ferrets are handled as domestic animals under 9.02 rather than on the 9.01 exemption list."
+    },
+    "co-w11": {
+      "title": "Colorado 2 CCR 406-11, Chapter W-11, Wildlife Parks and Unregulated Wildlife, § 1103(B)",
+      "url": "https://www.animallaw.info/administrative/co-exotic-pets-and-wildlife-chapter-11-wildlife-parks-and-unregulated-wildlife",
+      "note": "'No license is required for the private possession or purchase of animals, which are included on the unregulated wildlife list or the domestic animal list.' Unregulated does not mean unmonitored: importation rules and local ordinances still apply."
+    },
+    "az-r12-4-406": {
+      "title": "Ariz. Admin. Code R12-4-406, Restricted Live Wildlife",
+      "url": "https://www.animallaw.info/administrative/az-exotic-wildlife-article-4-live-wildlife",
+      "note": "Restricted wildlife requires the applicable federal licences and permits, an appropriate special licence, or a lawful exemption."
+    },
+    "or-609-305": {
+      "title": "Or. Rev. Stat. § 609.305, 'Exotic animal' defined, with § 609.341 permit requirement",
+      "url": "https://oregon.public.law/statutes/ors_609.305",
+      "note": "A closed definition: non-indigenous Felidae except the domestic cat, nonhuman primates, non-wolf non-indigenous Canidae except the domestic dog, bears other than the black bear, and Crocodylia. § 609.341 bars keeping one without an ODA permit, and permits had to pre-date the 2009 Act, so the practical answer for a listed animal is no. Cities and counties may prohibit exotic animals by ordinance on top of this."
+    },
+    "wa-rcw-16-30": {
+      "title": "Wash. Rev. Code ch. 16.30, Dangerous Wild Animals, § 16.30.010(2) and § 16.30.030",
+      "url": "https://apps.leg.wa.gov/rcw/default.aspx?cite=16.30&full=true",
+      "note": "An enumerated definition. Felidae is limited to lions, tigers, captive-bred cougars, jaguars, cheetahs, leopards, snow leopards and clouded leopards; Canidae to wolves excluding wolf-hybrids. § 16.30.030: 'A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal', grandfathering lawful possession before 22 July 2007."
     }
   },
   "animals": {
@@ -242,6 +297,35 @@
           "status": "legal",
           "sourceId": "ct-26-40a",
           "note": "Outside the four listed families."
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "Four-toed (African pygmy) hedgehog (Erinaceus albiventris)",
+          "note": "Named on the exemption list. The regulation uses the older genus Erinaceus; current nomenclature is Atelerix albiventris."
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "cite": "§ 1103(B)",
+          "quote": "African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris)",
+          "note": "On the unregulated wildlife list, so no state licence."
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "quote": "All species of the order Erinaceomorpha. Common names include: European hedgehogs, gymnures, and moonrats. Except members of the genus Atelerix, which are not restricted.",
+          "note": "Arizona restricts hedgehogs as an order and then exempts the pet genus by name, so the African pygmy is legal and the European is not."
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "note": "Outside the statutory definition of exotic animal."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "note": "Not within the enumerated definition."
         }
       }
     },
@@ -295,6 +379,30 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "conditional",
+          "sourceId": "ma-131-77",
+          "note": "Treated as a domestic animal under 321 CMR 9.02, but M.G.L. c. 131 § 77 requires it to be surgically neutered or spayed and incapable of breeding."
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "Domesticated races of European ferret (Mustela putorius)"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "note": "No Mustelidae entry in the restricted mammal list."
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "note": "Mustelidae is not in the definition."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -352,6 +460,30 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "Sugar Glider (Petaurus breviceps)"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "Sugar Gliders (Petaurus breviceps)"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "note": "The only marsupial entry is 'All species of the genus Didelphis. Common name: American opossums.'"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "note": "Marsupials are not in the definition."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -465,6 +597,16 @@
           "status": "permit",
           "sourceId": "me-unrestricted",
           "note": "Expressly carved out of the unrestricted list: 'Except for: Myiopsitta monachus'."
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "Psittacidae (parrots and their allies)"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "All Psitticine birds"
         }
       }
     },
@@ -546,6 +688,26 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "All true Chameleons (Chamaelenoidae)",
+          "note": "Except species categorically nonexempt under endangered species protections."
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "All non-native tropical and subtropical species of lizards ... Chamaeleonidae (chameleons)"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "note": "Varanidae covers water and crocodile monitors only; no chameleons."
         }
       }
     },
@@ -637,6 +799,22 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "All species of boas and pythons (family Boidae)",
+          "note": "Except African rock python, reticulated python and anacondas."
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "note": "Only Crocodylia among reptiles."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "note": "Listed snakes are venomous families plus the boomslang."
         }
       }
     },
@@ -680,6 +858,24 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "All species of boas and pythons (family Boidae)"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -778,6 +974,29 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "note": "Absent from the exemption list, so a permit is required."
+        },
+        "CO": {
+          "status": "permit",
+          "sourceId": "co-w11",
+          "note": "Absent from the unregulated list, so it falls back to licensing. Colorado has native prairie dogs, which is likely why."
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks."
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -815,6 +1034,25 @@
         "CT": {
           "status": "legal",
           "sourceId": "ct-26-40a"
+        },
+        "MA": {
+          "status": "permit",
+          "sourceId": "ma-321-9-01",
+          "note": "Absent from the exemption list."
+        },
+        "CO": {
+          "status": "permit",
+          "sourceId": "co-w11",
+          "note": "Absent from the unregulated list."
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "note": "Rodents are outside the definition."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -852,6 +1090,21 @@
           "status": "banned",
           "sourceId": "ct-26-40a",
           "quote": "The canidae, including, but not limited to, the wolf, and coyote"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "quote": "All species of the order Carnivora"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "note": "Non-wolf, non-indigenous Canidae, with the same closed permit route."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "note": "The Canidae entry covers wolves only."
         }
       }
     },
@@ -887,6 +1140,21 @@
           "status": "banned",
           "sourceId": "ct-26-40a",
           "quote": "The felidae, including, but not limited to, the lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat"
+        },
+        "AZ": {
+          "status": "restricted",
+          "sourceId": "az-r12-4-406",
+          "quote": "All species of the order Carnivora"
+        },
+        "OR": {
+          "status": "banned",
+          "sourceId": "or-609-305",
+          "note": "Non-indigenous Felidae. Permits had to pre-date the 2009 Act, so there is no route for a new animal."
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "note": "The Felidae entry names eight big cats and the serval is not among them, so Washington is unusually permissive here."
         }
       }
     },
@@ -925,6 +1193,20 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Chinchilla lanigera"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "Chinchilla (Chinchilla spp.) derived from captive stock"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "Domesticated races of chinchillas (Chinchilla laniger)"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30"
         }
       }
     },
@@ -1055,6 +1337,22 @@
           "status": "banned",
           "sourceId": "ny-11-0103",
           "quote": "Burmese Python (Python m. bivittatus)"
+        }
+      }
+    },
+    "degu": {
+      "name": "Degu",
+      "scientific": "Octodon degus",
+      "jurisdictions": {
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "Degu (Octodon degus)"
+        },
+        "CO": {
+          "status": "permit",
+          "sourceId": "co-w11",
+          "note": "Absent from the unregulated list."
         }
       }
     }
