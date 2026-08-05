@@ -286,6 +286,12 @@ export default function ExoticPetLaws() {
                         your local ordinance too.
                       </p>
                     )}
+                    {LEGAL.sources[detail.entry.sourceId]?.note && (
+                      <p className="mt-2 text-xs font-body text-muted-foreground leading-relaxed">
+                        <span className="font-semibold text-foreground">How this rule works: </span>
+                        {LEGAL.sources[detail.entry.sourceId].note}
+                      </p>
+                    )}
                     {LEGAL.sources[detail.entry.sourceId] && (
                       <a
                         href={LEGAL.sources[detail.entry.sourceId].url}
@@ -372,6 +378,12 @@ export default function ExoticPetLaws() {
                   <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
                     <span className="font-semibold text-foreground">Existing owners: </span>
                     {entry.grandfathered.detail}
+                  </p>
+                )}
+                {LEGAL.sources[entry.sourceId]?.note && (
+                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
+                    <span className="font-semibold text-foreground">How this rule works: </span>
+                    {LEGAL.sources[entry.sourceId].note}
                   </p>
                 )}
                 {LEGAL.sources[entry.sourceId] && (

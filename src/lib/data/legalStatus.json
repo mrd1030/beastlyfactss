@@ -194,7 +194,8 @@
     },
     "VA": {
       "name": "Virginia",
-      "level": "state"
+      "level": "state",
+      "scope": "4VAC15-30-40, the Department of Wildlife Resources rule on importing, possessing and selling nonnative exotic animals. Its subsection A table is the operative list; anything absent from it needs no permit under this section."
     },
     "MD": {
       "name": "Maryland",
@@ -461,7 +462,7 @@
     "va-4vac15-30-40": {
       "title": "4 Va. Admin. Code § 15-30-40, Importation requirements, possession, and sale of nonnative (exotic) animals",
       "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/",
-      "note": "A special permit is required for animals the board 'finds and declares to be predatory or undesirable within the meaning and intent of § 29.1-542', on the basis that introducing them would harm Virginia's native fish and wildlife."
+      "note": "Virginia permits by table. Subsection A requires a special permit from the department for every animal listed in it, on the ground that the board has declared the species predatory or undesirable because releasing it would harm Virginia's native fish and wildlife. Subsection B grandfathers asterisked animals held before 1 July 1992 if they were declared in writing by 1 January 1993, renewable every five years and not transferable. Subsection C then carves the monk parakeet back out."
     },
     "md-10-621": {
       "title": "Md. Code, Criminal Law § 10-621, Importing, selling or possessing certain animals",
@@ -826,7 +827,8 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
-          "note": "Erinaceidae is absent from the permit table.",
+          "cite": "§ 15-30-40(A)",
+          "note": "The permit table works family by family and Erinaceidae appears nowhere in it, so no special permit applies.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -1159,8 +1161,9 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
-          "quote": "Mustela putorius furo (Ferret)",
-          "note": "Expressly excepted from the Mustelidae entry, so no permit.",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Mustelidae   All Species   (except Mustela putorius furo)   Weasels, Badgers, Skunks and Otters   Ferret",
+          "note": "Virginia restricts the entire weasel family and then writes the domestic ferret straight back out of it by binomial. One of the clearest ferret carve-outs in any state table.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -1493,6 +1496,8 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "Petaurus is absent from the permit table. The marsupial entries there are other genera.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -2104,10 +2109,15 @@
           "localOverride": true
         },
         "VA": {
-          "status": "permit",
+          "status": "conditional",
           "sourceId": "va-4vac15-30-40",
-          "quote": "Myiopsitta monachus",
-          "permitFor": "personal",
+          "cite": "§ 15-30-40(A), (C)",
+          "quote": "Exception for certain monk parakeets. No permit is required for monk parakeets (quakers) that have been captive bred and are closed-banded with a seamless band.",
+          "note": "Virginia lists Myiopsitta monachus in the subsection A permit table and then writes an exception for the birds people actually buy. A captive bred quaker wearing a seamless closed band needs no permit. A wild caught bird, or one with an open band that could have been fitted later, does. The band is the whole test, so keep the paperwork that came with the bird.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "An asterisked animal held before 1 July 1992 could be kept if declared to the department in writing by 1 January 1993. That declaration works as a possession-only permit, renews every five years and cannot be transferred."
+          },
           "verifiedOn": "2026-08-04"
         },
         "ID": {
@@ -2555,6 +2565,8 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "Chamaeleonidae is absent from the permit table.",
           "verifiedOn": "2026-08-04"
         },
         "AR": {
@@ -3838,8 +3850,10 @@
         "VA": {
           "status": "permit",
           "sourceId": "va-4vac15-30-40",
-          "quote": "Cynomys spp.",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Sciuridae   Cynomys spp.   Prairie dogs",
           "permitFor": "personal",
+          "note": "Listed by genus in the squirrel family section of the permit table, so every prairie dog species is covered.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -4091,6 +4105,8 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "Absent from the permit table despite being a rodent, because the table lists the rodents Virginia considers a release risk rather than the order as a whole.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -4680,8 +4696,14 @@
         "VA": {
           "status": "permit",
           "sourceId": "va-4vac15-30-40",
-          "note": "Caught by the blanket Felidae entry in the table.",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Felidae   All Species   Cats*",
           "permitFor": "personal",
+          "note": "The table restricts the whole cat family by name rather than listing species, so the serval is caught by the same line as a lion. A special permit is required to import, possess or sell one.",
+          "grandfathered": {
+            "before": "1992-07-01",
+            "detail": "Cats carry the asterisk, so an animal held before 1 July 1992 and declared in writing by 1 January 1993 may be kept under a possession-only permit that renews every five years and cannot be transferred."
+          },
           "verifiedOn": "2026-08-04"
         },
         "MD": {
@@ -4969,6 +4991,8 @@
         "VA": {
           "status": "legal",
           "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "The rodent section of the table names the prairie dog and a handful of ground squirrels. Chinchilla lanigera is not among them.",
           "verifiedOn": "2026-08-04"
         },
         "MD": {
