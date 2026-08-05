@@ -42,6 +42,22 @@ const ANIMALS_BY_INTEREST = [...ANIMAL_IDS].sort((a, b) => {
   return restricted(b) - restricted(a) || LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name);
 });
 
+// Several of the 28 names lead with a proper noun. A blanket .toLowerCase()
+// turned those into "the bengal cat" mid-sentence and "Where Is the Bengal cat
+// Legal?" in the title, so the name is only lowered when its first word is not
+// one.
+//
+// A Set lookup on the first word rather than a regex prefix. The regex version
+// of this silently never matched: editing it through a shell heredoc left a
+// literal backspace character where \b was meant, so it required a backspace
+// after "Bengal" and every name fell through to toLowerCase().
+const PROPER_FIRST_WORDS = new Set([
+  'Bengal', 'Russian', 'Argentine', 'Nile', 'Burmese', 'Quaker', 'African', 'Asian', 'American',
+]);
+function inSentence(name) {
+  return PROPER_FIRST_WORDS.has(name.split(' ')[0]) ? name : name.toLowerCase();
+}
+
 function statusRank(status) {
   return { banned: 0, permit: 1, conditional: 2, restricted: 3, unclear: 4 }[status] ?? 5;
 }
@@ -143,11 +159,11 @@ export default function ExoticPetLaws() {
 
   const title = isIndex
     ? 'Exotic Pet Laws by State: An Interactive US Map'
-    : `Where Is the ${animal.name} Legal? Interactive State Map`;
+    : `${animal.name} Laws by State: Where It Is Banned or Restricted`;
 
   const description = isIndex
     ? `An interactive map of US exotic pet law covering ${ANIMAL_IDS.length} animals across all ${stateCount} states and DC, every entry quoting the statute or regulation itself.`
-    : `Every US state where the ${animal.name.toLowerCase()} is banned, needs a permit or comes with conditions, each entry citing the regulation directly. ${counts.banned} bans, ${counts.permit} permit states.`;
+    : `Every US state where the ${inSentence(animal.name)} is banned, needs a permit or comes with conditions, each entry citing the regulation directly. ${counts.banned} bans, ${counts.permit} permit states.`;
 
   const canonical = isIndex ? `${SITE}/exotic-pet-laws/` : `${SITE}/exotic-pet-laws/${activeId}/`;
 
@@ -175,7 +191,7 @@ export default function ExoticPetLaws() {
         <div className="max-w-5xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
-              {isIndex ? 'Exotic pet laws, state by state' : `Where is the ${animal.name.toLowerCase()} legal?`}
+              {isIndex ? 'Exotic pet laws, state by state' : `Where is the ${inSentence(animal.name)} legal?`}
             </h1>
             <p className="text-muted-foreground font-body leading-relaxed max-w-3xl">
               {isIndex ? (
@@ -206,7 +222,7 @@ export default function ExoticPetLaws() {
               statuses={statuses}
               selected={selectedState}
               onSelect={(code) => setSelectedState((prev) => (prev === code ? null : code))}
-              animalName={animal.name.toLowerCase()}
+              animalName={inSentence(animal.name)}
             />
             <p className="mt-3 text-[11px] font-body text-muted-foreground">
               Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are
@@ -324,7 +340,7 @@ export default function ExoticPetLaws() {
                 ) : (
                   <p className="text-xs font-body text-muted-foreground leading-relaxed">
                     Nothing in {LEGAL.jurisdictions[detail.code]?.scope ? 'the body of law we read for this state' : 'the rules we checked'} restricts
-                    the {animal.name.toLowerCase()} here.
+                    the {inSentence(animal.name)} here.
                     {LEGAL.jurisdictions[detail.code]?.scope
                       ? ` Scope checked: ${LEGAL.jurisdictions[detail.code].scope}`
                       : ''}
@@ -364,7 +380,7 @@ export default function ExoticPetLaws() {
             the same information is written out here in full. */}
         <section className="mt-12">
           <h2 className="font-display font-bold text-2xl text-foreground mb-1">
-            Every restriction on the {animal.name.toLowerCase()}
+            Every restriction on the {inSentence(animal.name)}
           </h2>
           <p className="text-sm font-body text-muted-foreground mb-5">
             {restricted.length === 0
@@ -422,7 +438,7 @@ export default function ExoticPetLaws() {
             <p className="mt-6 text-sm font-body text-foreground">
               For the full write-up, including the states that get reported wrongly,{' '}
               <Link to={animal.article} className="text-primary font-semibold hover:underline">
-                read the {animal.name.toLowerCase()} legal guide
+                read the {inSentence(animal.name)} legal guide
               </Link>
               .
             </p>
@@ -434,7 +450,7 @@ export default function ExoticPetLaws() {
                 to={`/encyclopedia/animal/${animal.encyclopediaId}/`}
                 className="text-primary font-semibold hover:underline"
               >
-                See the {animal.name.toLowerCase()} profile
+                See the {inSentence(animal.name)} profile
               </Link>
               .
             </p>
