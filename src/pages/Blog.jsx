@@ -254,7 +254,11 @@ export default function Blog() {
         post={selectedPost}
         onBack={handleBack}
         backLabel={backLabel}
-        factFilesMode={cameFromFactFiles}
+        // Both wild-animal entrances get the folder rows, not just Fact Files.
+        // A reader who arrived from a Beastfile is on the same side of the
+        // site, and the Beastfile itself now shows these rows too, so blog
+        // cards at the foot of the article were the odd one out.
+        factFilesMode={cameFromFactFiles || cameFromBeastfile}
         allPosts={allPosts}
         onSelectPost={handleSelectPost}
       />
