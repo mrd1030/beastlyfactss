@@ -23,25 +23,75 @@
     "than state law and covers 8 million people. Same principle would apply to",
     "any other city rule worth mapping."
   ],
-
   "coverage": {
-    "researched": ["CA", "GA", "HI", "PA", "DC", "NYC", "NJ", "ME", "WI"],
-    "remaining": 41,
-    "note": "Statuses below are complete for the 9 researched jurisdictions. An animal with no entry for a researched jurisdiction has no rule there."
+    "researched": [
+      "CA",
+      "GA",
+      "HI",
+      "PA",
+      "DC",
+      "NYC",
+      "NJ",
+      "ME",
+      "WI",
+      "FL",
+      "NY",
+      "CT"
+    ],
+    "remaining": 39,
+    "note": "Statuses are complete for the 12 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
-
   "jurisdictions": {
-    "CA": { "name": "California", "level": "state" },
-    "GA": { "name": "Georgia", "level": "state" },
-    "HI": { "name": "Hawaii", "level": "state" },
-    "PA": { "name": "Pennsylvania", "level": "state" },
-    "DC": { "name": "District of Columbia", "level": "federal-district" },
-    "NJ": { "name": "New Jersey", "level": "state" },
-    "ME": { "name": "Maine", "level": "state" },
-    "WI": { "name": "Wisconsin", "level": "state" },
-    "NYC": { "name": "New York City", "level": "city", "within": "NY" }
+    "CA": {
+      "name": "California",
+      "level": "state"
+    },
+    "GA": {
+      "name": "Georgia",
+      "level": "state"
+    },
+    "HI": {
+      "name": "Hawaii",
+      "level": "state"
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "level": "state"
+    },
+    "DC": {
+      "name": "District of Columbia",
+      "level": "federal-district"
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "level": "state"
+    },
+    "ME": {
+      "name": "Maine",
+      "level": "state"
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "level": "state"
+    },
+    "NYC": {
+      "name": "New York City",
+      "level": "city",
+      "within": "NY"
+    },
+    "FL": {
+      "name": "Florida",
+      "level": "state"
+    },
+    "NY": {
+      "name": "New York",
+      "level": "state"
+    },
+    "CT": {
+      "name": "Connecticut",
+      "level": "state"
+    }
   },
-
   "sources": {
     "ca-671": {
       "title": "California Code of Regulations Title 14 § 671, via CDFW Restricted Species Laws and Regulations Manual",
@@ -99,9 +149,23 @@
       "title": "Wisconsin Statutes Chapter 169, Captive Wildlife",
       "url": "https://www.animallaw.info/statute/wi-exotic-pets-chapter-169-captive-wildlife",
       "note": "§ 169.01(37) defines wild animal; § 169.11(1)(a) designates harmful wild animals as cougars, ursidae, wild and feral swine. § 169.04(4)(b) exempts most non-native species from licensing."
+    },
+    "fl-prohibited": {
+      "title": "Florida FWC Prohibited Nonnative Species List (Ch. 68-5, F.A.C.)",
+      "url": "https://myfwc.com/wildlifehabitats/nonnatives/prohibited-species-list/",
+      "note": "16 high-risk reptiles added 25 Feb 2021, effective 29 April 2021. Prohibited species may be possessed only by permit for educational exhibition, research or eradication. Tegu and green iguana owners who held one before 29 April 2021 and applied by October 2021 keep a no-cost, non-transferable personal permit for that animal's life."
+    },
+    "ny-11-0103": {
+      "title": "N.Y. Environmental Conservation Law § 11-0103(6)(e), definition of wild animal",
+      "url": "https://www.nysenate.gov/legislation/laws/ENV/11-0103",
+      "note": "A closed definition: 'includes and is limited to' nonhuman primates and prosimians, Felidae and hybrids, Canidae, Ursidae, venomous reptiles plus named large pythons and monitors, and Crocodylia. § 11-0512 then bars possessing a wild animal as a pet, grandfathering animals held when the section took effect if licensed within six months."
+    },
+    "ct-26-40a": {
+      "title": "Conn. Gen. Stat. § 26-40a, Possession of potentially dangerous animal",
+      "url": "https://www.animallaw.info/statute/ct-exotic-pets-%C2%A7-26-40a-possession-potentially-dangerous-animal-chapter-490-fisheries-and",
+      "note": "Potentially dangerous animals are 'the felidae... the canidae... the ursidae... and the hominidae', or any hybrid. Narrow: no rodents, marsupials, mustelids or insectivores. Civil penalty up to $2,000 per offence and a class A misdemeanour for a wilful violation."
     }
   },
-
   "animals": {
     "hedgehog": {
       "name": "Hedgehog",
@@ -109,297 +173,889 @@
       "encyclopediaId": "hedgehog",
       "article": "/blog/hedgehog-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(D)", "quote": "Order Insectivora-Shrews, Moles, Hedgehogs, etc. All species (D)" },
-        "GA": { "status": "banned", "sourceId": "ga-dnr-exotics", "cite": "R. 391-4-8-.05(1)(a)", "quote": "Order Erinaceopmorpha (hedgehogs): All species", "note": "Rule says licence required; DNR states listed species may not be held as pets, and hedgehogs have no carve-out." },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6", "cite": "§ 4-71-6", "quote": "The introduction into Hawaii of live animals or live non-domestic animals ... is prohibited except for those animals on the lists", "note": "Not named. Barred by the default rule. The only hedgehog Hawaii names is Hemiechinus auritis, not the pet species." },
-        "PA": { "status": "banned", "sourceId": "pa-memo-44994", "cite": "34 Pa.C.S. § 2961 as applied", "note": "No statute names hedgehogs. Game Commission interpretation. Legislation to reverse it has been introduced every session since 2017." },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)", "note": "Closed list permits 'domesticated rodents and rabbits'. Hedgehogs are Eulipotyphla, not rodents, so no category fits." },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "cite": "161.01(b)", "quote": "Insectivorous mammals (Insectivora): All aardvark, anteater, shrew, otter shrew, gymnure, desman, tenrec, mole and hedgehog." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "cite": "N.J.A.C. 7:25-4.5", "note": "Absent from the 4.4 exempt list, so 4.5 requires a permit." },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Atelerix albiventris  Four-toed Hedgehog, African Pygmy Hedgehog", "note": "Commonly misreported as a permit state." },
-        "WI": { "status": "legal", "sourceId": "wi-169", "note": "Not a designated harmful wild animal; Ch. 169 licensing does not reach it. Commonly misreported as a permit state." }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(D)",
+          "quote": "Order Insectivora-Shrews, Moles, Hedgehogs, etc. All species (D)"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-exotics",
+          "cite": "R. 391-4-8-.05(1)(a)",
+          "quote": "Order Erinaceopmorpha (hedgehogs): All species",
+          "note": "Rule says licence required; DNR states listed species may not be held as pets, and hedgehogs have no carve-out."
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6",
+          "quote": "The introduction into Hawaii of live animals or live non-domestic animals ... is prohibited except for those animals on the lists",
+          "note": "Not named. Barred by the default rule. The only hedgehog Hawaii names is Hemiechinus auritis, not the pet species."
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-memo-44994",
+          "cite": "34 Pa.C.S. § 2961 as applied",
+          "note": "No statute names hedgehogs. Game Commission interpretation. Legislation to reverse it has been introduced every session since 2017."
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "note": "Closed list permits 'domesticated rodents and rabbits'. Hedgehogs are Eulipotyphla, not rodents, so no category fits."
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "161.01(b)",
+          "quote": "Insectivorous mammals (Insectivora): All aardvark, anteater, shrew, otter shrew, gymnure, desman, tenrec, mole and hedgehog."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "note": "Absent from the 4.4 exempt list, so 4.5 requires a permit."
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Atelerix albiventris  Four-toed Hedgehog, African Pygmy Hedgehog",
+          "note": "Commonly misreported as a permit state."
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "note": "Not a designated harmful wild animal; Ch. 169 licensing does not reach it. Commonly misreported as a permit state."
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "No mammal entry covers hedgehogs; the 2021 rule is reptile-focused."
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "Not within the closed definition of wild animal. Legal statewide, but banned in New York City under its own Health Code."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a",
+          "note": "Outside the four listed families."
+        }
       }
     },
-
     "ferret": {
       "name": "Ferret",
       "scientific": "Mustela putorius furo",
       "encyclopediaId": "ferret",
       "article": "/blog/ferret-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(K)(5)", "quote": "Family Mustelidae-All species (D)", "note": "Exceptions are otters only." },
-        "GA": { "status": "conditional", "sourceId": "ga-391-4-8-05", "quote": "European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit", "note": "Condition: neutered before seven months and vaccinated against rabies." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(F)", "quote": "Ferrets" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "cite": "161.01(b)", "quote": "All fur bearing mammals of the family Mustelidae, including ... stoat and ferret." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "cite": "N.J.A.C. 7:25-4.5", "note": "Not on the exempt list." },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Mustela putorius furo  Domestic Ferret" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(5)",
+          "quote": "Family Mustelidae-All species (D)",
+          "note": "Exceptions are otters only."
+        },
+        "GA": {
+          "status": "conditional",
+          "sourceId": "ga-391-4-8-05",
+          "quote": "European ferret (Mustela putorius furo) may be sold, purchased, exhibited, or held as a pet without a license or permit",
+          "note": "Condition: neutered before seven months and vaccinated against rabies."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(F)",
+          "quote": "Ferrets"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "cite": "161.01(b)",
+          "quote": "All fur bearing mammals of the family Mustelidae, including ... stoat and ferret."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.5",
+          "note": "Not on the exempt list."
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Mustela putorius furo  Domestic Ferret"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "Mustelidae is absent from the definition. NYC bans it separately."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "sugar-glider": {
       "name": "Sugar glider",
       "scientific": "Petaurus breviceps",
       "encyclopediaId": "sugar-glider",
       "article": "/blog/sugar-glider-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(C)", "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)" },
-        "GA": { "status": "conditional", "sourceId": "ga-391-4-8-05", "quote": "Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit if the owner thereof possesses valid documentation that the animal originated from a source inspected and regulated by the United States Department of Agriculture" },
-        "PA": { "status": "banned", "sourceId": "pa-memo-44994", "note": "Named alongside hedgehogs in memo 44994 as banned by Game Commission interpretation." },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808", "note": "A marsupial, so the 'domesticated rodents and rabbits' category does not reach it." },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All marsupials, including ... numbat and pigmy, sugar and greater glider." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "cite": "N.J.A.C. 7:25-4.5" },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Petaurus breviceps  Sugar Glider" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(C)",
+          "quote": "Order Marsupialia-Marsupials or Pouched Animals: All species (W)"
+        },
+        "GA": {
+          "status": "conditional",
+          "sourceId": "ga-391-4-8-05",
+          "quote": "Petaurus breviceps (sugar glider) may be sold, purchased, exhibited, or held as a pet without a license or permit if the owner thereof possesses valid documentation that the animal originated from a source inspected and regulated by the United States Department of Agriculture"
+        },
+        "PA": {
+          "status": "banned",
+          "sourceId": "pa-memo-44994",
+          "note": "Named alongside hedgehogs in memo 44994 as banned by Game Commission interpretation."
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "note": "A marsupial, so the 'domesticated rodents and rabbits' category does not reach it."
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All marsupials, including ... numbat and pigmy, sugar and greater glider."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.5"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Petaurus breviceps  Sugar Glider"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "Marsupials are not in the definition. NYC bans it separately."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "hamster": {
       "name": "Hamster",
       "scientific": "Mesocricetus auratus",
       "encyclopediaId": "hamster",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)(b)", "quote": "Domesticated races of golden hamsters of the species Mesocricetus auratus and domesticated races of dwarf hamsters of the Genus Phodopus are not restricted" },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Rodentia entry excepts Genus Mesocricetus." },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6-5", "cite": "Part A", "quote": "Mesocricetus auratus", "note": "Part A is research and exhibition only, so no pet keeping." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(C)", "quote": "Domesticated rodents and rabbits" },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01", "note": "The rodent prohibition reaches only large rodents; hamsters are not named." },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "cite": "7:25-4.4(a)2", "quote": "Hamster - Mesocricetus auratus" }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)(b)",
+          "quote": "Domesticated races of golden hamsters of the species Mesocricetus auratus and domesticated races of dwarf hamsters of the Genus Phodopus are not restricted"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Rodentia entry excepts Genus Mesocricetus."
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "Part A",
+          "quote": "Mesocricetus auratus",
+          "note": "Part A is research and exhibition only, so no pet keeping."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(C)",
+          "quote": "Domesticated rodents and rabbits"
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01",
+          "note": "The rodent prohibition reaches only large rodents; hamsters are not named."
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "7:25-4.4(a)2",
+          "quote": "Hamster - Mesocricetus auratus"
+        }
       }
     },
-
     "gerbil": {
       "name": "Gerbil",
       "scientific": "Meriones unguiculatus",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)", "note": "Order Rodentia is restricted (D) and gerbils are not among the five exceptions, though the order's own heading names them." },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Rodentia entry excepts Genera Gerbillus and Meriones." },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6-5", "cite": "Part A", "quote": "Gerbillus gerbillus / Meriones unguiculatus" },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(C)" },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "cite": "7:25-4.4(a)2", "quote": "Gerbil - Meriones mongolinensis" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)",
+          "note": "Order Rodentia is restricted (D) and gerbils are not among the five exceptions, though the order's own heading names them."
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Rodentia entry excepts Genera Gerbillus and Meriones."
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "Part A",
+          "quote": "Gerbillus gerbillus / Meriones unguiculatus"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(C)"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "7:25-4.4(a)2",
+          "quote": "Gerbil - Meriones mongolinensis"
+        }
       }
     },
-
     "quaker-parakeet": {
       "name": "Quaker parakeet",
       "scientific": "Myiopsitta monachus",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(1)(M)", "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)" },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Absent from the bird list." },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6", "quote": "Myiopsitta monachus  parakeet, monk (quaker)" },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01", "note": "Bird entry covers predatory or large birds only. NY State is a separate question." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "note": "Not among the nine exempt birds." },
-        "ME": { "status": "permit", "sourceId": "me-unrestricted", "note": "Expressly carved out of the unrestricted list: 'Except for: Myiopsitta monachus'." }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(1)(M)",
+          "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Absent from the bird list."
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "quote": "Myiopsitta monachus  parakeet, monk (quaker)"
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01",
+          "note": "Bird entry covers predatory or large birds only. NY State is a separate question."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "note": "Not among the nine exempt birds."
+        },
+        "ME": {
+          "status": "permit",
+          "sourceId": "me-unrestricted",
+          "note": "Expressly carved out of the unrestricted list: 'Except for: Myiopsitta monachus'."
+        }
       }
     },
-
     "bengal-cat": {
       "name": "Bengal cat",
       "encyclopediaId": "bengal",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "cite": "§ 671(c)(2)(K)(1)(b)", "quote": "Domestic cats and hybrids of domestic cats are not restricted" },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(B)", "quote": "Domestic cats, excluding hybrids with ocelots or margays", "note": "The Bengal derives from the Asian leopard cat, which is neither." },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All cats other than domesticated cats (Felis catus), including ... any hybrid offspring of a wild cat and domesticated cat." }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)(b)",
+          "quote": "Domestic cats and hybrids of domestic cats are not restricted"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(B)",
+          "quote": "Domestic cats, excluding hybrids with ocelots or margays",
+          "note": "The Bengal derives from the Asian leopard cat, which is neither."
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All cats other than domesticated cats (Felis catus), including ... any hybrid offspring of a wild cat and domesticated cat."
+        },
+        "NY": {
+          "status": "conditional",
+          "sourceId": "ny-11-0103",
+          "note": "Felidae hybrids are wild animals except registered hybrids with no wild felid ancestry for five or more generations, so an F5 or later Bengal qualifies. NYC bans all wild-cat hybrids regardless."
+        }
       }
     },
-
     "veiled-chameleon": {
       "name": "Veiled chameleon",
       "scientific": "Chamaeleo calyptratus",
       "encyclopediaId": "veiled-chameleon",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "cite": "§ 671(c)(7)", "note": "The reptile list covers crocodilians, snapping turtles, venomous snakes and the Gila monster only." },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Reptile list names two pythons, the Argentine tegu and the Nile monitor only." },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(E)", "quote": "Non-venomous snakes, fish, and turtles", "note": "Lizards are absent from the permitted list entirely." },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01", "note": "Chamaeleonidae absent from the reptile entry." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4" },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Chamaeleo calyptratus" }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "The reptile list covers crocodilians, snapping turtles, venomous snakes and the Gila monster only."
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Reptile list names two pythons, the Argentine tegu and the Nile monitor only."
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(E)",
+          "quote": "Non-venomous snakes, fish, and turtles",
+          "note": "Lizards are absent from the permitted list entirely."
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01",
+          "note": "Chamaeleonidae absent from the reptile entry."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Chamaeleo calyptratus"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not on the prohibited list."
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "russian-tortoise": {
       "name": "Russian tortoise",
       "scientific": "Testudo horsfieldii",
       "encyclopediaId": "russian-tortoise",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "note": "Only Chelydridae among turtles." },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Testudines list names only Pelomedusa subrufa and Pelodiscus sinensis." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(E)", "note": "Statute says 'turtles'; a tortoise is Testudines, so this is defensible rather than express." },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01" },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4" },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Testudo horsfieldii", "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca." }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "note": "Only Chelydridae among turtles."
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Testudines list names only Pelomedusa subrufa and Pelodiscus sinensis."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(E)",
+          "note": "Statute says 'turtles'; a tortoise is Testudines, so this is defensible rather than express."
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Testudo horsfieldii",
+          "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca."
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103"
+        }
       }
     },
-
     "ball-python": {
       "name": "Ball python",
       "scientific": "Python regius",
       "encyclopediaId": "ball-python",
       "article": "/blog/ball-python-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "note": "Restricted snakes are venomous families plus boomslang, twig snakes and Nerodia." },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6", "quote": "Serpentes (all species)", "note": "All snakes prohibited." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(E)", "quote": "Non-venomous snakes" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "any member of the family Pythonidae, including but not limited to the African rock python, Indian or Burmese python, Amethystine or scrub python", "note": "'Any member' catches the ball python though it is not named." },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "note": "Not exempt, unlike the boa constrictor." }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "note": "Restricted snakes are venomous families plus boomslang, twig snakes and Nerodia."
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "All snakes prohibited."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(E)",
+          "quote": "Non-venomous snakes"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member of the family Pythonidae, including but not limited to the African rock python, Indian or Burmese python, Amethystine or scrub python",
+          "note": "'Any member' catches the ball python though it is not named."
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "note": "Not exempt, unlike the boa constrictor."
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Python regius is not on the prohibited list, unlike the large pythons."
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Python regius is not among them."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "boa-constrictor": {
       "name": "Boa constrictor",
       "scientific": "Boa constrictor",
       "encyclopediaId": "boa-constrictor",
       "article": "/blog/boa-constrictor-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671" },
-        "HI": { "status": "banned", "sourceId": "hi-4-71-6", "quote": "Serpentes (all species)" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda" },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "cite": "7:25-4.4(a)3", "quote": "Boa constrictor - Constrictor constrictor", "note": "New Jersey exempts the boa and requires a permit for the ball python, the reverse of most states." }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "quote": "Serpentes (all species)"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "7:25-4.4(a)3",
+          "quote": "Boa constrictor - Constrictor constrictor",
+          "note": "New Jersey exempts the boa and requires a permit for the ball python, the reverse of most states."
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not on the prohibited list."
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "Boidae is not named."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "tarantula": {
       "name": "Tarantula",
       "encyclopediaId": "tarantula",
       "jurisdictions": {
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All venomous spiders, including, but not limited to, tarantula, black widow and solifugid" }
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All venomous spiders, including, but not limited to, tarantula, black widow and solifugid"
+        }
       }
     },
-
     "emperor-scorpion": {
       "name": "Emperor scorpion",
       "scientific": "Pandinus imperator",
       "encyclopediaId": "emperor-scorpion",
       "jurisdictions": {
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "scorpion; all venomous arthropods" }
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "scorpion; all venomous arthropods"
+        }
       }
     },
-
     "argentine-tegu": {
       "name": "Argentine black and white tegu",
       "scientific": "Salvator merianae",
       "encyclopediaId": "tegu",
       "article": "/blog/argentine-tegu-legal-guide/",
       "jurisdictions": {
-        "GA": { "status": "restricted", "sourceId": "ga-391-4-8-05", "quote": "Salvator merianae (Argentine black-and-white tegu)", "note": "Reptiles on the list are limited to scientific, educational or public exhibition purposes, but may be held as pets if possessed before the rule's effective date." },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "any member of the family Teiidae, including, but not limited to the golden, common, or black and white tegu" }
+        "GA": {
+          "status": "restricted",
+          "sourceId": "ga-391-4-8-05",
+          "quote": "Salvator merianae (Argentine black-and-white tegu)",
+          "note": "Reptiles on the list are limited to scientific, educational or public exhibition purposes, but may be held as pets if possessed before the rule's effective date."
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member of the family Teiidae, including, but not limited to the golden, common, or black and white tegu"
+        },
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-prohibited",
+          "quote": "genera Salvator and Tupinambis, all species",
+          "note": "Grandfathered personal permit if possessed before 29 April 2021 and applied for by October 2021, for the life of that animal. Commercial breeding ended 30 June 2024."
+        }
       }
     },
-
     "savannah-monitor": {
       "name": "Savannah monitor",
       "scientific": "Varanus exanthematicus",
       "encyclopediaId": "savannah-monitor",
       "jurisdictions": {
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor" }
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member of the family Varanidae, including the white throated monitor, Bosc's or African savannah monitor"
+        }
       }
     },
-
     "prairie-dog": {
       "name": "Prairie dog",
       "scientific": "Cynomys",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)" },
-        "GA": { "status": "permit", "sourceId": "ga-391-4-8-05", "note": "Cynomys is not among the excepted rodent genera." },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808", "note": "A rodent, but not a domesticated one." },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All large rodents (Rodentia), including ... prairie dog, capybara" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)"
+        },
+        "GA": {
+          "status": "permit",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Cynomys is not among the excepted rodent genera."
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "note": "A rodent, but not a domesticated one."
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "capybara": {
       "name": "Capybara",
       "scientific": "Hydrochoerus hydrochaeris",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)" },
-        "GA": { "status": "permit", "sourceId": "ga-391-4-8-05" },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All large rodents (Rodentia), including ... prairie dog, capybara" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)"
+        },
+        "GA": {
+          "status": "permit",
+          "sourceId": "ga-391-4-8-05"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All large rodents (Rodentia), including ... prairie dog, capybara"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "Rodentia is outside the definition."
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a"
+        }
       }
     },
-
     "fennec-fox": {
       "name": "Fennec fox",
       "scientific": "Vulpes zerda",
       "jurisdictions": {
-        "CA": { "status": "restricted", "sourceId": "ca-671", "cite": "§ 671(c)(2)(K)(2)", "quote": "Family Canidae-All species (W)" },
-        "GA": { "status": "banned", "sourceId": "ga-dnr-exotics", "note": "Order Carnivora, all species; only the ferret is excepted." },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All dogs other than domesticated dogs (Canis familiaris), including ... dhole, fennec, raccoon dog" }
+        "CA": {
+          "status": "restricted",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(2)",
+          "quote": "Family Canidae-All species (W)"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-exotics",
+          "note": "Order Carnivora, all species; only the ferret is excepted."
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All dogs other than domesticated dogs (Canis familiaris), including ... dhole, fennec, raccoon dog"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "quote": "(with the exception of domesticated dogs and captive bred fennec foxes (vulpes zerda))",
+          "note": "Expressly carved out of the Canidae entry. Legal statewide, banned in NYC."
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-40a",
+          "quote": "The canidae, including, but not limited to, the wolf, and coyote"
+        }
       }
     },
-
     "serval": {
       "name": "Serval",
       "scientific": "Leptailurus serval",
       "jurisdictions": {
-        "CA": { "status": "restricted", "sourceId": "ca-671", "cite": "§ 671(c)(2)(K)(1)", "quote": "Family Felidae-All species (W)" },
-        "GA": { "status": "banned", "sourceId": "ga-dnr-exotics" },
-        "DC": { "status": "banned", "sourceId": "dc-8-1808" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "All cats other than domesticated cats (Felis catus), including ... serval, caracal" }
+        "CA": {
+          "status": "restricted",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(K)(1)",
+          "quote": "Family Felidae-All species (W)"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-exotics"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "All cats other than domesticated cats (Felis catus), including ... serval, caracal"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "note": "Felidae, with no applicable exception."
+        },
+        "CT": {
+          "status": "banned",
+          "sourceId": "ct-26-40a",
+          "quote": "The felidae, including, but not limited to, the lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat"
+        }
       }
     },
-
     "chinchilla": {
       "name": "Chinchilla",
       "scientific": "Chinchilla lanigera",
       "encyclopediaId": "chinchilla",
       "article": "/blog/chinchilla-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)(e)", "quote": "Domesticated races of chinchillas of the species Chinchilla laniger are not restricted" },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Genus Chinchilla excepted from Rodentia." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808", "cite": "§ 8-1808(j)(1)(C)" },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01" },
-        "NJ": { "status": "permit", "sourceId": "nj-7-25-4-4", "note": "Not on the exempt list, unlike the hamster and gerbil." },
-        "ME": { "status": "legal", "sourceId": "me-unrestricted", "quote": "Chinchilla lanigera" }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)(e)",
+          "quote": "Domesticated races of chinchillas of the species Chinchilla laniger are not restricted"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Genus Chinchilla excepted from Rodentia."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)(C)"
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "note": "Not on the exempt list, unlike the hamster and gerbil."
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "quote": "Chinchilla lanigera"
+        }
       }
     },
-
     "guinea-pig": {
       "name": "Guinea pig",
       "scientific": "Cavia porcellus",
       "encyclopediaId": "guinea-pig",
       "jurisdictions": {
-        "CA": { "status": "legal", "sourceId": "ca-671", "cite": "§ 671(c)(2)(J)(1)(d)", "quote": "Domesticated races of guinea pigs of the species Cavia porcellus are not restricted" },
-        "GA": { "status": "legal", "sourceId": "ga-391-4-8-05", "note": "Genus Cavia excepted." },
-        "DC": { "status": "legal", "sourceId": "dc-8-1808" },
-        "NYC": { "status": "legal", "sourceId": "nyc-161-01" },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "quote": "Guinea pig - Cavia porcellus" }
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)(d)",
+          "quote": "Domesticated races of guinea pigs of the species Cavia porcellus are not restricted"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "note": "Genus Cavia excepted."
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808"
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "quote": "Guinea pig - Cavia porcellus"
+        }
       }
     },
-
     "green-iguana": {
       "name": "Green iguana",
       "scientific": "Iguana iguana",
       "jurisdictions": {
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "any member of the family Iguanidae, including the green or common iguana" },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "quote": "Common iguana - Iguana iguana" }
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member of the family Iguanidae, including the green or common iguana"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "quote": "Common iguana - Iguana iguana"
+        },
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-prohibited",
+          "quote": "Iguana iguana",
+          "note": "Same grandfather permit route as the tegu."
+        }
       }
     },
-
     "snapping-turtle": {
       "name": "Snapping turtle",
       "scientific": "Chelydra serpentina",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(7)(B)", "quote": "Family Chelyridae-Snapping Turtles: All species (D)" },
-        "NYC": { "status": "banned", "sourceId": "nyc-161-01", "quote": "all members of the family Chelydridae, including snapping turtle and alligator snapping turtle" },
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "quote": "Snapping turtles - Chelydra serpentina" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)(B)",
+          "quote": "Family Chelyridae-Snapping Turtles: All species (D)"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "all members of the family Chelydridae, including snapping turtle and alligator snapping turtle"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "quote": "Snapping turtles - Chelydra serpentina"
+        }
       }
     },
-
     "tokay-gecko": {
       "name": "Tokay gecko",
       "scientific": "Gekko gecko",
       "encyclopediaId": "tokay-gecko",
       "jurisdictions": {
-        "NJ": { "status": "legal", "sourceId": "nj-7-25-4-4", "quote": "Tokay gecko - Gekko gecko" }
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "quote": "Tokay gecko - Gekko gecko"
+        }
       }
     },
-
     "tiger-salamander": {
       "name": "Tiger salamander",
       "scientific": "Ambystoma tigrinum",
       "encyclopediaId": "tiger-salamander",
       "article": "/blog/tiger-salamander-legal-guide/",
       "jurisdictions": {
-        "CA": { "status": "banned", "sourceId": "ca-671", "cite": "§ 671(c)(3)(C)(1)", "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)" }
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(3)(C)(1)",
+          "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)"
+        }
+      }
+    },
+    "nile-monitor": {
+      "name": "Nile monitor",
+      "scientific": "Varanus niloticus",
+      "jurisdictions": {
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-prohibited",
+          "quote": "Varanus niloticus",
+          "note": "Grandfathered for holders of a valid reptile of concern licence."
+        }
+      }
+    },
+    "burmese-python": {
+      "name": "Burmese python",
+      "scientific": "Python bivittatus",
+      "jurisdictions": {
+        "FL": {
+          "status": "banned",
+          "sourceId": "fl-prohibited",
+          "quote": "Python molurus",
+          "note": "Grandfathered for personal use by reptile of concern licence holders before 1 July 2010, for the life of the animal."
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0103",
+          "quote": "Burmese Python (Python m. bivittatus)"
+        }
       }
     }
   }
