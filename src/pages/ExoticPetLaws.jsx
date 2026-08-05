@@ -56,7 +56,13 @@ const PROPER_FIRST_WORDS = new Set([
   'Bengal', 'Russian', 'Argentine', 'Nile', 'Burmese', 'Quaker', 'African', 'Asian', 'American',
 ]);
 function inSentence(name) {
-  return PROPER_FIRST_WORDS.has(name.split(' ')[0]) ? name : name.toLowerCase();
+  const [first, ...rest] = name.split(' ');
+  // Only the first word is lowered, and only when it is not a proper noun.
+  // Lowercasing the whole string flattened "Giant African millipede" into
+  // "giant african millipede", since the proper noun there is not the word the
+  // sentence position affects.
+  if (PROPER_FIRST_WORDS.has(first)) return name;
+  return [first.toLowerCase(), ...rest].join(' ');
 }
 
 function statusRank(status) {

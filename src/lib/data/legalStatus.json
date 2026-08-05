@@ -3507,6 +3507,14 @@
           "note": "Not by name, but by omission. The arachnid entry at ARM 12.6.2205(3) clears two scorpions and no spiders, and under the white list an unclassified exotic species is not permitted. Montana is the one state where the emperor scorpion is expressly cleared and the tarantula is not.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "banned",
+          "quote": "a person shall not import into the District, possess... any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "Same gap as the millipede. The seven permitted categories contain no invertebrate.",
+          "verifiedOn": "2026-08-05"
         }
       },
       "scientific": "Theraphosidae"
@@ -3539,6 +3547,14 @@
           "note": "Named individually, along with the Tanzanian redclaw. Those two are the entire arachnid list.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "banned",
+          "quote": "a person shall not import into the District, possess... any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "No invertebrate category exists in the permitted list.",
+          "verifiedOn": "2026-08-05"
         }
       }
     },
@@ -6510,6 +6526,327 @@
           "quote": "Degu   Octodon spp.",
           "note": "Named on the importation list, which few states do.",
           "verifiedOn": "2026-08-04"
+        }
+      }
+    },
+    "axolotl": {
+      "name": "Axolotl",
+      "scientific": "Ambystoma mexicanum",
+      "encyclopediaId": "axolotl",
+      "article": "/blog/axolotl-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "banned",
+          "quote": "a person shall not import into the District, possess, display, offer for sale, trade, barter, exchange, or adoption, or give as a household pet, any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "The seven permitted categories are dogs, cats, domesticated rodents and rabbits, captive-bred common cage birds, non-venomous snakes, fish and turtles, ferrets and racing pigeons. No amphibian fits any of them, so the axolotl is barred by omission.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "conditional",
+          "cite": "List of Conditionally Approved Animals, Family Ambystomidae",
+          "quote": "Ambystoma mexicanum",
+          "note": "Named individually on the conditionally approved list, so importation and possession are allowed subject to Department of Agriculture conditions. A rare yes from a state that bans most exotics by default.",
+          "verifiedOn": "2026-08-05"
+        },
+        "RI": {
+          "sourceId": "ri-250-40-05-3",
+          "status": "conditional",
+          "cite": "§ 3.7(H)",
+          "quote": "All persons other than a bona fide researcher, or a licensed pet shop and their transportation agents are prohibited from possessing any species of exotic amphibians unless they are kept indoors as pets in a manner that will prevent their escape or liberation into the wild.",
+          "note": "Treated as an exotic amphibian: indoors only, and importation limited to pet shops and researchers.",
+          "verifiedOn": "2026-08-05"
+        },
+        "NH": {
+          "sourceId": "nh-fis800",
+          "status": "legal",
+          "cite": "Fis 804.02(b)(2)",
+          "quote": "Amphibians, exotic;",
+          "note": "Exotic amphibians are non-controlled for possession. The controlled table covers New Hampshire's own Ambystoma species, and the axolotl is Mexican.",
+          "verifiedOn": "2026-08-05"
+        },
+        "MT": {
+          "sourceId": "mt-87-5-7",
+          "status": "legal",
+          "cite": "§ 87-5-706(1)(i)(i)",
+          "quote": "all nonnative tropical and subtropical species of salamanders not on the controlled or prohibited lists in the families: (i) Ambystomatidae (mole salamanders);",
+          "note": "Cleared by family on the statutory noncontrolled list, which matters in Montana because anything not classified cannot be imported at all.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        },
+        "CA": {
+          "sourceId": "ca-671",
+          "status": "banned",
+          "cite": "§ 671(c)(3)(C)(1)",
+          "quote": "Genus Ambystoma (nonnative tiger salamander group)-(D)",
+          "note": "Ambystoma mexicanum sits in the listed genus. The parenthetical describes the group the restriction was aimed at rather than narrowing it, and none of the permit types in § 671.1 covers pet keeping, so there is no route.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        }
+      }
+    },
+    "box-turtle": {
+      "name": "Box turtle",
+      "scientific": "Terrapene spp.",
+      "encyclopediaId": "box-turtle",
+      "article": "/blog/box-turtle-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "legal",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "Turtles are one of the seven permitted categories, and the clause turns on keeping the animal for pleasure rather than commercially.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "conditional",
+          "cite": "List of Conditionally Approved Animals",
+          "quote": "Terrapene (all species in genus except T. coahuila)",
+          "note": "The whole genus is conditionally approved apart from the Coahuilan box turtle, which sits on the restricted Part B list instead.",
+          "verifiedOn": "2026-08-05"
+        },
+        "RI": {
+          "sourceId": "ri-250-40-05-3",
+          "status": "banned",
+          "cite": "§ 3.17(A)(4)(a)(2)",
+          "quote": "The possession of native turtles is restricted to those institutions identified within § 3.7(C) of this Part... Box Turtle (Terrapene carolina),",
+          "note": "Native to Rhode Island, so possession is limited to the Department, USFWS, AZA zoos, research institutions and USDA licensed exhibitors. Not a pet species here.",
+          "verifiedOn": "2026-08-05"
+        },
+        "LA": {
+          "sourceId": "la-76-xv-101",
+          "status": "restricted",
+          "cite": "§ 101.G.2, § 101.G.3.a.x",
+          "quote": "Box Turtles—Terrapene sp.",
+          "note": "A restricted turtle. No more than ten restricted turtles in total and no more than two of any one species, and § 101.G.2.a.ii separately caps native box turtles at two regardless of species. A basic recreational fishing licence is needed to collect one.",
+          "verifiedOn": "2026-08-05"
+        },
+        "NH": {
+          "sourceId": "nh-fis800",
+          "status": "banned",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "5   Eastern box turtle   Terrapene carolina carolina",
+          "note": "Permittee category 5 is an exhibitor, with no category 1 for an individual, so a private keeper cannot be permitted for one.",
+          "verifiedOn": "2026-08-05"
+        }
+      }
+    },
+    "red-eared-slider": {
+      "name": "Red-eared slider",
+      "scientific": "Trachemys scripta elegans",
+      "encyclopediaId": "red-eared-slider",
+      "article": "/blog/red-eared-slider-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "legal",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "Permitted as a turtle. The federal four-inch sale rule still applies to buying a hatchling anywhere in the country.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "permit",
+          "cite": "List of Restricted Animals, Part B",
+          "quote": "Trachemys (all species in genus)",
+          "permitFor": "personal",
+          "note": "Part B is the restricted list for private and commercial use, so unlike a Part A animal this one has a route, but it needs a permit rather than being freely importable.",
+          "verifiedOn": "2026-08-05"
+        },
+        "RI": {
+          "sourceId": "ri-250-40-05-3",
+          "status": "conditional",
+          "cite": "§ 3.7(D)",
+          "quote": "All persons other than a bona fide researcher, or a licensed pet shops and their transportation agents are prohibited from possessing Red Eared Slider turtles unless they are kept indoors as pets in a manner that will prevent their escape or liberation into the wild. Keeping of these animals in any type of outdoor enclosure is prohibited.",
+          "note": "Keepable indoors only, and only a pet shop or a researcher may import one. Pet shops must tell buyers about the indoor requirement at the point of sale.",
+          "verifiedOn": "2026-08-05"
+        },
+        "LA": {
+          "sourceId": "la-76-xv-101",
+          "status": "restricted",
+          "cite": "§ 101.G.3.a.xii",
+          "quote": "Red-eared Slider—Trachemys scripta elegans;",
+          "note": "A restricted turtle subject to the same two per species limit. Louisiana also bars relocating or releasing sliders off the site where they were caught, and allows landowners to remove nuisance animals only by humane euthanasia.",
+          "verifiedOn": "2026-08-05"
+        },
+        "MT": {
+          "sourceId": "mt-87-5-7",
+          "status": "banned",
+          "cite": "12.6.2215(6)(n)",
+          "quote": "Red-eared slider – Trachemys scripta elegans;",
+          "note": "On Montana's prohibited species list, so it may not be possessed, sold, purchased, exchanged or transported in the state.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        }
+      }
+    },
+    "sulcata-tortoise": {
+      "name": "Sulcata tortoise",
+      "scientific": "Centrochelys sulcata",
+      "encyclopediaId": "sulcata-tortoise",
+      "article": "/blog/sulcata-tortoise-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "legal",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "A tortoise is a turtle in the taxonomic sense the category uses, order Testudines.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "unclear",
+          "cite": "List of Conditionally Approved Animals, Family Testudinidae",
+          "quote": "Geochelone (all species in genus)",
+          "note": "The list was written when the sulcata was Geochelone sulcata. It has since moved to Centrochelys, which appears nowhere on any Hawaii list, so whether the clearance followed the species through the rename is not something the text answers. Ask the Department of Agriculture.",
+          "verifiedOn": "2026-08-05"
+        },
+        "RI": {
+          "sourceId": "ri-250-40-05-3",
+          "status": "legal",
+          "cite": "§ 3.17(A)(4)(a)(1)",
+          "quote": "All exotic species of turtles may be kept without an exotic animal possession permit, except endangered species.",
+          "note": "The three tortoises pulled back out are the Chaco tortoise, the genus Gopherus and the pancake tortoise. Centrochelys sulcata is none of them.",
+          "verifiedOn": "2026-08-05"
+        },
+        "MT": {
+          "sourceId": "mt-87-5-7",
+          "status": "legal",
+          "cite": "§ 87-5-706(1)(f)(ix)",
+          "quote": "all nonnative tropical and subtropical species of turtles with a carapace or shell length of more than 4 inches and not on the controlled or prohibited lists in the families: ...(ix) Testudinidae (tortoises);",
+          "note": "Cleared by family, above the four inch floor Montana writes into its own statute.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        },
+        "FL": {
+          "sourceId": "fl-prohibited",
+          "status": "legal",
+          "note": "Not on Florida's prohibited list, which is sixteen high-risk reptiles and contains no tortoise.",
+          "verifiedOn": "2026-08-05"
+        }
+      }
+    },
+    "hognose-snake": {
+      "name": "Hognose snake",
+      "scientific": "Heterodon spp.",
+      "encyclopediaId": "hognose-snake",
+      "article": "/blog/hognose-snake-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "legal",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "Hognose snakes are rear-fanged with a mild saliva toxin, which raises the question of whether the non-venomous qualifier reaches them. Every venomous reptile law we read draws its line well above hognose, so this reads as permitted.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "banned",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii bans the entire snake suborder with no exception for harmless species, having no native snakes to protect.",
+          "verifiedOn": "2026-08-05"
+        },
+        "KY": {
+          "sourceId": "ky-301-2-082",
+          "status": "legal",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Kentucky is the state that settles the argument in writing. Colubridae is listed among the venomous families and the hognose is then carved straight back out by genus, which is as close to an official answer on rear-fanged snakes as any state gives.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        },
+        "NH": {
+          "sourceId": "nh-fis800",
+          "status": "legal",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "New Hampshire names the western hognose as the single exception to its venomous reptile exclusion, so the species most often kept as a pet is cleared by name even if the venomous label is applied to it. The native eastern hognose is separately controlled at exhibitor level.",
+          "verifiedOn": "2026-08-05"
+        },
+        "MT": {
+          "sourceId": "mt-87-5-7",
+          "status": "legal",
+          "cite": "§ 87-5-706(1)(d)(v)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+          "note": "Montana clears Colubridae as nonvenomous, which places the hognose on the permitted side of the line.",
+          "verifiedOn": "2026-08-05",
+          "localOverride": true
+        },
+        "FL": {
+          "sourceId": "fl-prohibited",
+          "status": "legal",
+          "note": "Not on the prohibited list, which names large constrictors, monitors, tegus and the green iguana.",
+          "verifiedOn": "2026-08-05"
+        },
+        "AR": {
+          "sourceId": "ar-unrestricted",
+          "status": "legal",
+          "cite": "Unrestricted Captive Wildlife Species List",
+          "note": "Arkansas names permitted species individually. The list clears several colubrids and reaches no venomous family that would sweep in the hognose.",
+          "verifiedOn": "2026-08-05"
+        }
+      }
+    },
+    "african-grey-parrot": {
+      "name": "African grey parrot",
+      "scientific": "Psittacus erithacus",
+      "encyclopediaId": "african-grey",
+      "article": "/blog/african-grey-parrot-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "legal",
+          "quote": "Captive-bred species of common cage birds, including chickens",
+          "note": "Captive-bred is doing real work here, and every African grey legally sold in the United States is captive-bred because the Wild Bird Conservation Act has barred commercial import of wild-caught birds since 1992.",
+          "verifiedOn": "2026-08-05"
+        },
+        "HI": {
+          "sourceId": "hi-conditional",
+          "status": "conditional",
+          "cite": "List of Conditionally Approved Animals",
+          "quote": "Psittacus erithacus",
+          "note": "Named by binomial on the conditionally approved list.",
+          "verifiedOn": "2026-08-05"
+        },
+        "FL": {
+          "sourceId": "fl-prohibited",
+          "status": "legal",
+          "note": "The prohibited list is reptiles only.",
+          "verifiedOn": "2026-08-05"
+        }
+      }
+    },
+    "giant-millipede": {
+      "name": "Giant African millipede",
+      "scientific": "Archispirostreptus gigas",
+      "encyclopediaId": "millipede",
+      "article": "/blog/giant-millipede-legal-guide/",
+      "jurisdictions": {
+        "DC": {
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "status": "banned",
+          "quote": "a person shall not import into the District, possess... any living member of the animal kingdom, including those born or raised in captivity, except the following",
+          "note": "No invertebrate category exists in the permitted list, so every millipede, spider and scorpion is outside it. DC bans by omission rather than by name.",
+          "verifiedOn": "2026-08-05"
+        },
+        "RI": {
+          "sourceId": "ri-250-40-05-3",
+          "status": "permit",
+          "cite": "§ 3.8(G)",
+          "quote": "Nothing in this Part shall prohibit any person from possession of exotic animals or native animals of the class Insecta unless the animals of that class appear on the list of prohibited insects",
+          "permitFor": "personal",
+          "note": "The blanket invertebrate exemption is written for the class Insecta. A millipede is a myriapod, so on the literal wording it stays inside the definition of exotic animal and needs a permit, exactly like the tarantula and the scorpion.",
+          "verifiedOn": "2026-08-05"
         }
       }
     }
