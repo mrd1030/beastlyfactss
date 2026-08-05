@@ -457,51 +457,56 @@ export default function ExoticPetLaws() {
           )}
         </section>
 
-        {/* The written legal guides. This page is the hub for the Legal category,
-            so the index lives here rather than only inside one article that sits
-            partway down the category feed where nobody finds it. */}
-        <section className="mt-14">
-          <h2 className="font-display font-bold text-2xl text-foreground mb-1">Every legal guide we have written</h2>
-          <p className="text-sm font-body text-muted-foreground mb-5">
-            The map answers where. These answer why, including the states that get reported wrongly and the
-            federal rules that sound like bans and are not.
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {LEGAL_GUIDES.map((g) => {
-              const animalId = GUIDE_TO_ANIMAL[g.slug];
-              return (
-                <div key={g.slug} className="rounded-lg border border-border bg-card p-4">
-                  <h3 className="font-display font-bold text-base text-foreground mb-1">
-                    <Link to={`/blog/${g.slug}/`} className="hover:text-primary transition-colors">
-                      {g.title}
-                    </Link>
-                  </h3>
-                  {g.excerpt && (
-                    <p className="text-xs font-body text-muted-foreground leading-relaxed line-clamp-3">
-                      {g.excerpt}
-                    </p>
-                  )}
-                  {animalId && (
-                    <Link
-                      to={`/exotic-pet-laws/${animalId}/`}
-                      className="mt-2 inline-block text-xs font-body text-primary hover:underline"
-                    >
-                      See it on the map →
-                    </Link>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-          <p className="mt-5 text-sm font-body text-foreground">
-            For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are
-            structured, start with{' '}
-            <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
-              the written hub
-            </Link>
-            .
-          </p>
-        </section>
+        {/* The written legal guides, on the hub only. This page is the index for
+            the Legal category, so it belongs here rather than inside one article
+            partway down the category feed where nobody finds it.
+            Deliberately not rendered on the 28 per-animal pages: it was 1,044
+            words of byte-identical text on every one of them, which on a species
+            with no restrictions left a page that was entirely duplicate. */}
+        {isIndex && (
+          <section className="mt-14">
+            <h2 className="font-display font-bold text-2xl text-foreground mb-1">Every legal guide we have written</h2>
+            <p className="text-sm font-body text-muted-foreground mb-5">
+              The map answers where. These answer why, including the states that get reported wrongly and the
+              federal rules that sound like bans and are not.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {LEGAL_GUIDES.map((g) => {
+                const animalId = GUIDE_TO_ANIMAL[g.slug];
+                return (
+                  <div key={g.slug} className="rounded-lg border border-border bg-card p-4">
+                    <h3 className="font-display font-bold text-base text-foreground mb-1">
+                      <Link to={`/blog/${g.slug}/`} className="hover:text-primary transition-colors">
+                        {g.title}
+                      </Link>
+                    </h3>
+                    {g.excerpt && (
+                      <p className="text-xs font-body text-muted-foreground leading-relaxed line-clamp-3">
+                        {g.excerpt}
+                      </p>
+                    )}
+                    {animalId && (
+                      <Link
+                        to={`/exotic-pet-laws/${animalId}/`}
+                        className="mt-2 inline-block text-xs font-body text-primary hover:underline"
+                      >
+                        See it on the map →
+                      </Link>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+            <p className="mt-5 text-sm font-body text-foreground">
+              For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are
+              structured, start with{' '}
+              <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
+                the written hub
+              </Link>
+              .
+            </p>
+          </section>
+        )}
 
         <section className="mt-12 rounded-xl border border-border bg-muted/30 p-5">
           <h2 className="font-display font-bold text-lg text-foreground mb-2">How to read this</h2>
