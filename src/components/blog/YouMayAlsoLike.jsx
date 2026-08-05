@@ -1,6 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import CompactPostCard from '@/components/shared/CompactPostCard';
+import FactFileRow from '@/components/shared/FactFileRow';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
@@ -41,11 +42,18 @@ function tagsOf(post) {
 // shuffled before it is sorted by shared-tag count, and Array.sort is stable,
 // so posts of equal similarity stay in random order rather than always
 // resolving to the same ones.
-function selectRelated({ currentPostId, categorySlug, cutoff, seed }) {
+function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnly = false }) {
   const current = mdxPosts.find((p) => idOf(p) === currentPostId);
 
+  // Arriving from Fact Files narrows the pool to Fact Files. This is not just
+  // styling: a row states the claim being corrected and what replaced it, and
+  // an ordinary article has neither, so it cannot be drawn as one. Keeping the
+  // whole pool would mean two different card shapes stacked in one list.
   const pool = mdxPosts.filter(
-    (p) => idOf(p) !== currentPostId && dayOf(p) <= cutoff
+    (p) =>
+      idOf(p) !== currentPostId &&
+      dayOf(p) <= cutoff &&
+      (!factFilesOnly || (p.factFile && p.myth && p.truth))
   );
 
   const wantedCats = categorySlug
@@ -89,7 +97,7 @@ function selectRelated({ currentPostId, categorySlug, cutoff, seed }) {
   return picked;
 }
 
-export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost }) {
+export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPost, factFilesMode = false }) {
   // Two passes on purpose.
   //
   // The first render has to be byte-identical between prerender.mjs's capture
@@ -119,8 +127,9 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
       categorySlug,
       cutoff: runtime?.cutoff ?? buildStamp.generatedAt,
       seed: runtime?.seed ?? hashString(String(currentPostId)),
+      factFilesOnly: factFilesMode,
     });
-  }, [currentPostId, categorySlug, runtime]);
+  }, [currentPostId, categorySlug, runtime, factFilesMode]);
 
   if (related.length === 0) return null;
 
@@ -134,7 +143,9 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
       <h2 className="font-display font-bold text-xl text-foreground mb-4">
         You May Also Like
       </h2>
-      <div className="space-y-3">
+      {/* Roomier gap for the rows: their polaroid overhangs the top edge, so
+          the tighter blog-card rhythm would let one photo touch the row above. */}
+      <div className={factFilesMode ? 'space-y-5' : 'space-y-3'}>
         {related.map((post, i) => (
           <motion.div
             key={idOf(post)}
@@ -142,7 +153,25 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.05 }}
           >
-            <CompactPostCard post={post} onClick={() => onSelectPost(post)} />
+            {factFilesMode ? (
+              // FactFileRow is a Link carrying from: 'fact-files' itself, so
+              // the next article keeps the same back button and the same
+              // related list. It does not need onSelectPost, and App.jsx's
+              // ScrollToTop handles the jump to the top on arrival.
+              <FactFileRow
+                entry={{
+                  slug: post.slug?.current || post.slug,
+                  animal: post.animal || post.category,
+                  myth: post.myth,
+                  truth: post.truth,
+                  sources: post.sourceCount,
+                  image: post.image,
+                  imageAlt: post.imageAlt,
+                }}
+              />
+            ) : (
+              <CompactPostCard post={post} onClick={() => onSelectPost(post)} />
+            )}
           </motion.div>
         ))}
       </div>

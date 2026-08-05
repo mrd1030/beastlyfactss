@@ -15,7 +15,7 @@ import CompactPostCard from '@/components/shared/CompactPostCard';
 // kept as pets, so an article filed under Reptiles or Amphibians must never
 // surface here. Enforcing it at build time means a bad entry shows up in the
 // generator's output instead of being silently dropped in the browser.
-export default function RelatedFiles({ posts }) {
+export default function RelatedFiles({ posts, returnTo, returnLabel }) {
   const navigate = useNavigate();
 
   if (!posts?.length) return null;
@@ -28,7 +28,12 @@ export default function RelatedFiles({ posts }) {
           <CompactPostCard
             key={post.slug}
             post={post}
-            onClick={() => navigate(`/blog/${post.slug}/`)}
+            // Carries where the reader came from, so Blog.jsx can offer
+            // "Back to <animal>" instead of dropping them into the blog
+            // listing they never visited. Same mechanism as FactFileRow.
+            onClick={() => navigate(`/blog/${post.slug}/`, {
+              state: { from: 'beastlypedia', returnTo, returnLabel },
+            })}
           />
         ))}
       </div>

@@ -346,7 +346,10 @@ export default function BeastfileDetail() {
           </div>
         )}
 
-        <RelatedFiles posts={relatedPosts} />
+        {/* returnTo/returnLabel so an article opened from here sends the
+            reader back to this animal rather than to the Critter Digest, the
+            same way a Fact Files row does. */}
+        <RelatedFiles posts={relatedPosts} returnTo={`/beastlypedia/${id}/`} returnLabel={name} />
 
         <MoreBeastfiles ids={siblingIds} />
 

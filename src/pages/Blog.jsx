@@ -189,13 +189,29 @@ export default function Blog() {
   const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
   const paginated = filtered.slice((safePage - 1) * POSTS_PER_PAGE, safePage * POSTS_PER_PAGE);
 
-  // Fact Files links to posts with router state flagging where they came from,
-  // so the post view can send readers back there instead of always to the blog.
-  const cameFromFactFiles = location.state?.from === 'fact-files';
+  // Fact Files rows and Beastfile "Related Files" cards link here with router
+  // state saying where the reader came from, so the post view can send them
+  // back there instead of always to the blog listing.
+  //
+  // Beastlypedia carries its own returnTo/returnLabel because there are 44
+  // Beastfiles and the useful destination is the one animal being read, not
+  // the index. Fact Files has a single listing, so it needs neither.
+  const origin = location.state?.from;
+  const cameFromFactFiles = origin === 'fact-files';
+  const cameFromBeastfile = origin === 'beastlypedia' && Boolean(location.state?.returnTo);
+  const backLabel = cameFromFactFiles
+    ? 'Back to Fact Files'
+    : cameFromBeastfile
+      ? `Back to ${location.state.returnLabel || 'Beastlypedia'}`
+      : 'Back to Critter Digest';
 
   const handleBack = () => {
     if (cameFromFactFiles) {
       navigate('/fact-files/');
+      return;
+    }
+    if (cameFromBeastfile) {
+      navigate(location.state.returnTo);
       return;
     }
     // Prefer the real URL slug from the route; slugify only for legacy ?category= titles.
@@ -209,7 +225,13 @@ export default function Blog() {
 
   const handleSelectPost = (post) => {
     const targetSlug = post.slug?.current || post._id || post.id;
-    navigate(`/blog/${targetSlug}/`);
+    // Carry the origin forward. Without this, opening a second article from
+    // inside the first threw the state away and the back button silently
+    // reverted to "Back to Critter Digest" for a reader who had never been
+    // there. Every article-to-article jump on the page routes through here
+    // (the sidebar list and You May Also Like both call it), so this is the
+    // only place it needs doing.
+    navigate(`/blog/${targetSlug}/`, location.state ? { state: location.state } : undefined);
 
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -231,7 +253,8 @@ export default function Blog() {
       <PostView
         post={selectedPost}
         onBack={handleBack}
-        backLabel={cameFromFactFiles ? 'Back to Fact Files' : 'Back to Critter Digest'}
+        backLabel={backLabel}
+        factFilesMode={cameFromFactFiles}
         allPosts={allPosts}
         onSelectPost={handleSelectPost}
       />
@@ -428,7 +451,7 @@ function AuthorBio() {
   );
 }
 
-function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts, onSelectPost }) {
+function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFilesMode = false, allPosts, onSelectPost }) {
   const [openFaq, setOpenFaq] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
@@ -675,6 +698,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', allPosts
               currentPostId={post._id || post.id}
               categorySlug={post.categorySlug || post.category}
               onSelectPost={onSelectPost}
+              factFilesMode={factFilesMode}
             />
           </div>
 
