@@ -62,10 +62,13 @@
       "TX",
       "MI",
       "IL",
-      "MN"
+      "MN",
+      "NV",
+      "VA",
+      "MD"
     ],
-    "remaining": 29,
-    "note": "Statuses are complete for the 22 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 26,
+    "note": "Statuses are complete for the 25 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -155,6 +158,18 @@
     },
     "MN": {
       "name": "Minnesota",
+      "level": "state"
+    },
+    "NV": {
+      "name": "Nevada",
+      "level": "state"
+    },
+    "VA": {
+      "name": "Virginia",
+      "level": "state"
+    },
+    "MD": {
+      "name": "Maryland",
       "level": "state"
     }
   },
@@ -285,6 +300,21 @@
       "title": "Minn. Stat. § 346.155, Possessing regulated animals",
       "url": "https://www.animallaw.info/statute/mn-exotic-pet-346155-possessing-regulated-animals",
       "note": "'Regulated animal' is all members of Felidae except the domestic cat, all bears, and all non-human primates, plus any hybrid or cross between a listed animal and a domestic animal and all subsequent generations. Possession is unlawful unless held on or before 1 January 2005 in compliance with the federal Animal Welfare Act. A knowing violation is a gross misdemeanour: up to two years imprisonment or a $5,000 fine."
+    },
+    "nv-nac-503": {
+      "title": "Nev. Admin. Code § 503.110 (prohibited species) and § 503.140 (species needing no permit)",
+      "url": "https://www.animallaw.info/administrative/nv-exotic-animals-possession-transportation-importation-exportation-and-release",
+      "note": "Two lists: 503.110 prohibits, 503.140 names species that may be possessed, transported, imported and exported without a permit. Nevada counties and cities are frequently stricter than the state, notably Clark County, Henderson and Las Vegas."
+    },
+    "va-4vac15-30-40": {
+      "title": "4 Va. Admin. Code § 15-30-40, Importation requirements, possession, and sale of nonnative (exotic) animals",
+      "url": "https://law.lis.virginia.gov/admincode/title4/agency15/chapter30/section40/",
+      "note": "A special permit is required for animals the board 'finds and declares to be predatory or undesirable within the meaning and intent of § 29.1-542', on the basis that introducing them would harm Virginia's native fish and wildlife."
+    },
+    "md-10-621": {
+      "title": "Md. Code, Criminal Law § 10-621, Importing, selling or possessing certain animals",
+      "url": "https://www.animallaw.info/statute/md-exotic-pets-subtitle-6-crimes-relating-animals",
+      "note": "Misdemeanour: a fine up to $1,000 for an individual, $10,000 otherwise, and the animal may be seized immediately with costs falling on the keeper unless the seizure proves unjustified. Counties and municipalities may be stricter. Note COMAR 15.11.16.01, which is titled List of Prohibited Animals, is an agriculture rule about feral swine only and is not the exotic pet provision."
     }
   },
   "animals": {
@@ -446,6 +476,27 @@
           "sourceId": "mn-346-155",
           "note": "Only Felidae, bears and primates are regulated.",
           "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.140",
+          "quote": "African pygmy hedgehogs (Atelerix albiventris)",
+          "note": "Named on the no-permit list. Several secondary sources claim hedgehogs are illegal in Nevada; the regulation says otherwise.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "note": "Erinaceidae is absent from the permit table.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -570,6 +621,28 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.140",
+          "quote": "European ferret (Mustela putorius)",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "quote": "Mustela putorius furo (Ferret)",
+          "note": "Expressly excepted from the Mustelidae entry, so no permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "note": "Mustelids are absent; only skunk and raccoon are named among small carnivores.",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
@@ -699,6 +772,25 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.140",
+          "quote": "Marsupial",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
@@ -859,6 +951,13 @@
           "quote": "All Psitticine birds",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "quote": "Myiopsitta monachus",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -898,6 +997,14 @@
           "status": "banned",
           "sourceId": "mn-346-155",
           "note": "The definition expressly reaches 'any hybrid or cross between an animal listed as prohibited and a domestic animal and offspring from all subsequent generations', so unlike New York there is no generation at which a Bengal falls out.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "conditional",
+          "sourceId": "md-10-621",
+          "quote": "hybrid of a member of the cat family and a domestic cat if the hybrid weighs over 30 pounds",
+          "note": "Maryland draws the line by weight rather than by generation. A Bengal under 30 lb is outside the prohibition, which most Bengals are.",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
@@ -996,6 +1103,11 @@
           "note": "The only lizard listed is the Komodo dragon.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1134,6 +1246,13 @@
           "note": "Restricted constrictors are the anacondas plus reticulated, Indian, Burmese, North and South African rock and amethystine pythons. Python regius is not among them.",
           "verifiedOn": "2026-08-04",
           "localOverride": true
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1388,6 +1507,26 @@
           "status": "legal",
           "sourceId": "mn-346-155",
           "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "unclear",
+          "sourceId": "nv-nac-503",
+          "note": "On neither list, same as the capybara.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "quote": "Cynomys spp.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1484,6 +1623,24 @@
           "status": "legal",
           "sourceId": "mn-346-155",
           "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "unclear",
+          "sourceId": "nv-nac-503",
+          "note": "On neither list. Nevada does not state a default for unlisted species in the text read, so this does not resolve either way.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1577,6 +1734,23 @@
           "status": "legal",
           "sourceId": "mn-346-155",
           "note": "Canidae is absent from the definition entirely.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(d)",
+          "quote": "All species in the genera Vulpes, Fennecus",
+          "note": "Named twice over: the fennec fox is Vulpes zerda and the regulation also lists the older genus Fennecus.",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "quote": "fox, skunk, raccoon, or bear",
+          "note": "Caught by the bare word 'fox', with no genus qualifier and no exception for the fennec.",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1693,6 +1867,28 @@
             "detail": "Only if possessed on or before 1 January 2005 and brought into Animal Welfare Act compliance."
           },
           "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "banned",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.110(d)",
+          "quote": "All felines, except mountain lions and bobcats",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "permit",
+          "sourceId": "va-4vac15-30-40",
+          "note": "Caught by the blanket Felidae entry in the table.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "banned",
+          "sourceId": "md-10-621",
+          "quote": "member of the cat family other than the domestic cat",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1779,6 +1975,25 @@
         "MN": {
           "status": "legal",
           "sourceId": "mn-346-155",
+          "verifiedOn": "2026-08-04"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-nac-503",
+          "cite": "NAC 503.140",
+          "quote": "Domesticated races of chinchillas",
+          "localOverride": true,
+          "verifiedOn": "2026-08-04"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "verifiedOn": "2026-08-04"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "localOverride": true,
           "verifiedOn": "2026-08-04"
         }
       }
