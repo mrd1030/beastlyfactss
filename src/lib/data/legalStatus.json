@@ -41,10 +41,12 @@
       "CO",
       "AZ",
       "OR",
-      "WA"
+      "WA",
+      "OH",
+      "TX"
     ],
-    "remaining": 34,
-    "note": "Statuses are complete for the 17 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 32,
+    "note": "Statuses are complete for the 19 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -114,6 +116,14 @@
     },
     "WA": {
       "name": "Washington",
+      "level": "state"
+    },
+    "OH": {
+      "name": "Ohio",
+      "level": "state"
+    },
+    "TX": {
+      "name": "Texas",
       "level": "state"
     }
   },
@@ -219,6 +229,16 @@
       "title": "Wash. Rev. Code ch. 16.30, Dangerous Wild Animals, § 16.30.010(2) and § 16.30.030",
       "url": "https://apps.leg.wa.gov/rcw/default.aspx?cite=16.30&full=true",
       "note": "An enumerated definition. Felidae is limited to lions, tigers, captive-bred cougars, jaguars, cheetahs, leopards, snow leopards and clouded leopards; Canidae to wolves excluding wolf-hybrids. § 16.30.030: 'A person shall not own, possess, keep, harbor, bring into the state, or have custody or control of a potentially dangerous wild animal', grandfathering lawful possession before 22 July 2007."
+    },
+    "oh-935-01": {
+      "title": "Ohio Rev. Code § 935.01, Dangerous Wild Animals and Restricted Snakes definitions",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-935.01",
+      "note": "Two enumerated lists. Dangerous wild animals need an Ohio Department of Agriculture wildlife shelter permit; anything on neither list needs no state permit. Restricted snakes are constrictors of 12 feet or more plus venomous families."
+    },
+    "tx-822-101": {
+      "title": "Tex. Health & Safety Code § 822.101(4) and § 822.103, Dangerous Wild Animals",
+      "url": "https://www.animallaw.info/statute/tx-dangerous-subchapter-e-dangerous-wild-animals",
+      "note": "A closed species list. § 822.103: 'a person may not own, harbor, or have custody or control of a dangerous wild animal for any purpose unless the person holds a certificate of registration for that animal issued by an animal registration agency', plus liability insurance of at least $100,000 per occurrence and caging standards."
     }
   },
   "animals": {
@@ -326,6 +346,16 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "note": "Not within the enumerated definition."
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "note": "On neither list, so no state permit."
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "Not on the list. Texas requires no state permit for an animal that is not listed, not endangered and not native wildlife."
         }
       }
     },
@@ -403,6 +433,15 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "Legal statewide, though some cities restrict ferrets by ordinance."
         }
       }
     },
@@ -484,6 +523,14 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101"
         }
       }
     },
@@ -708,6 +755,11 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "note": "Varanidae covers water and crocodile monitors only; no chameleons."
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "note": "The only lizard listed is the Komodo dragon."
         }
       }
     },
@@ -815,6 +867,11 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "note": "Listed snakes are venomous families plus the boomslang."
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "note": "Restricted constrictors are the anacondas plus reticulated, Indian, Burmese, North and South African rock and amethystine pythons. Python regius is not among them."
         }
       }
     },
@@ -876,6 +933,10 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
         }
       }
     },
@@ -997,6 +1058,14 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101"
         }
       }
     },
@@ -1053,6 +1122,14 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101"
         }
       }
     },
@@ -1105,6 +1182,16 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "note": "The Canidae entry covers wolves only."
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "note": "The canid entries are gray wolves and African wild dogs only."
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "The canids listed are the coyote and jackal only."
         }
       }
     },
@@ -1155,6 +1242,18 @@
           "status": "legal",
           "sourceId": "wa-rcw-16-30",
           "note": "The Felidae entry names eight big cats and the serval is not among them, so Washington is unusually permissive here."
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-01",
+          "quote": "Servals, excluding hybrids with domestic cats commonly known as savannah cats",
+          "note": "The serval itself is a dangerous wild animal; savannah cat hybrids are expressly carved out."
+        },
+        "TX": {
+          "status": "permit",
+          "sourceId": "tx-822-101",
+          "quote": "a lion; a tiger; an ocelot; a cougar; a leopard; a cheetah; a jaguar; a bobcat; a lynx; a serval; a caracal; a hyena; a bear; a coyote; a jackal; a baboon; a chimpanzee; an orangutan; a gorilla; or any hybrid",
+          "note": "Certificate of registration plus $100,000 liability insurance."
         }
       }
     },
@@ -1207,6 +1306,10 @@
         "WA": {
           "status": "legal",
           "sourceId": "wa-rcw-16-30"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01"
         }
       }
     },
@@ -1337,6 +1440,11 @@
           "status": "banned",
           "sourceId": "ny-11-0103",
           "quote": "Burmese Python (Python m. bivittatus)"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-935-01",
+          "note": "A restricted snake, so it needs a permit rather than being outright banned."
         }
       }
     },
