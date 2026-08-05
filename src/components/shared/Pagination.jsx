@@ -95,12 +95,22 @@ export default function Pagination({ page, totalPages, onChange, scrollTo, class
   // Every consumer (Blog, Facts, Gallery, Fact Files) reads ?page back off the
   // URL on mount and on history moves, so the href and the click handler
   // always land on the same view.
+  // The trailing slash is forced rather than taken from location.pathname.
+  //
+  // prerender.mjs visits these routes without one ('/facts', not '/facts/'),
+  // so during the capture location.pathname has no slash and every page link
+  // was baked into the static HTML as /facts?page=2. Cloudflare then 301s that
+  // to /facts/?page=2, which turned one new link per page into 80 redirects
+  // and 129 pages linking at them. It looked correct in dev the whole time,
+  // because the dev URL does carry the slash.
+  const base = location.pathname.endsWith('/') ? location.pathname : `${location.pathname}/`;
+
   const hrefFor = (p) => {
     const params = new URLSearchParams(location.search);
     if (p > 1) params.set('page', String(p));
     else params.delete('page');
     const qs = params.toString();
-    return qs ? `${location.pathname}?${qs}` : location.pathname;
+    return qs ? `${base}?${qs}` : base;
   };
 
   const go = (p) => {
