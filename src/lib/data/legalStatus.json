@@ -95,7 +95,149 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "Statuses are complete for the 52 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "note": "All 51 states and DC have been researched, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
+    "perAnimal": {
+      "giant-millipede": {
+        "checked": 2,
+        "of": 51
+      },
+      "tarantula": {
+        "checked": 3,
+        "of": 51
+      },
+      "emperor-scorpion": {
+        "checked": 3,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 3,
+        "of": 51
+      },
+      "box-turtle": {
+        "checked": 5,
+        "of": 51
+      },
+      "red-eared-slider": {
+        "checked": 5,
+        "of": 51
+      },
+      "sulcata-tortoise": {
+        "checked": 5,
+        "of": 51
+      },
+      "axolotl": {
+        "checked": 6,
+        "of": 51
+      },
+      "tiger-salamander": {
+        "checked": 7,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 7,
+        "of": 51
+      },
+      "snapping-turtle": {
+        "checked": 10,
+        "of": 51
+      },
+      "nile-monitor": {
+        "checked": 17,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 18,
+        "of": 51
+      },
+      "tokay-gecko": {
+        "checked": 18,
+        "of": 51
+      },
+      "argentine-tegu": {
+        "checked": 20,
+        "of": 51
+      },
+      "green-iguana": {
+        "checked": 20,
+        "of": 51
+      },
+      "burmese-python": {
+        "checked": 21,
+        "of": 51
+      },
+      "degu": {
+        "checked": 22,
+        "of": 51
+      },
+      "guinea-pig": {
+        "checked": 23,
+        "of": 51
+      },
+      "hamster": {
+        "checked": 24,
+        "of": 51
+      },
+      "gerbil": {
+        "checked": 24,
+        "of": 51
+      },
+      "russian-tortoise": {
+        "checked": 24,
+        "of": 51
+      },
+      "quaker-parakeet": {
+        "checked": 25,
+        "of": 51
+      },
+      "bengal-cat": {
+        "checked": 25,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 31,
+        "of": 51
+      },
+      "ball-python": {
+        "checked": 32,
+        "of": 51
+      },
+      "veiled-chameleon": {
+        "checked": 33,
+        "of": 51
+      },
+      "prairie-dog": {
+        "checked": 36,
+        "of": 51
+      },
+      "fennec-fox": {
+        "checked": 36,
+        "of": 51
+      },
+      "serval": {
+        "checked": 38,
+        "of": 51
+      },
+      "capybara": {
+        "checked": 39,
+        "of": 51
+      },
+      "chinchilla": {
+        "checked": 39,
+        "of": 51
+      },
+      "ferret": {
+        "checked": 45,
+        "of": 51
+      },
+      "sugar-glider": {
+        "checked": 48,
+        "of": 51
+      },
+      "hedgehog": {
+        "checked": 50,
+        "of": 51
+      }
+    }
   },
   "jurisdictions": {
     "CA": {

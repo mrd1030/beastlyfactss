@@ -160,6 +160,14 @@ export default function ExoticPetLaws() {
     ([code, e]) => e.status !== 'legal' && LEGAL.jurisdictions[code]?.level === 'city',
   );
 
+  // How much of the country has actually been read for this animal. Coverage
+  // runs from 2 jurisdictions to 51, and a reader has no way to tell the
+  // difference from the map alone unless the page says so.
+  const checkedStates = Object.keys(statuses).filter(
+    (code) => LEGAL.jurisdictions[code]?.level !== 'city',
+  ).length;
+  const uncheckedStates = researchedCount - checkedStates;
+
   const detail = selectedState
     ? { code: selectedState, entry: statuses[selectedState] }
     : null;
@@ -279,6 +287,16 @@ export default function ExoticPetLaws() {
                   state and so cannot be shaded on a state map. Listed in full below.
                 </>
               )}
+              {uncheckedStates > 0 && (
+                <>
+                  {' '}
+                  <span className="text-foreground font-semibold">
+                    {checkedStates} of {researchedCount} states and DC have been read for this animal
+                  </span>
+                  , so the {uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`}{' '}
+                  a gap in our research rather than a finding of no rule.
+                </>
+              )}
             </p>
           </div>
 
@@ -295,7 +313,14 @@ export default function ExoticPetLaws() {
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
                   const b = STATUS_BUCKETS[key];
-                  const n = key === 'none' ? null : counts[key];
+                  // The two grey buckets carry a count too, otherwise "read it,
+                  // found nothing" and "have not read it" look interchangeable.
+                  const n =
+                    key === 'none'
+                      ? Object.values(statuses).filter((e) => e.status === 'legal').length
+                      : key === 'notChecked'
+                        ? uncheckedStates
+                        : counts[key];
                   return (
                     <li key={key} className="flex gap-2.5 text-xs font-body">
                       <span
@@ -306,7 +331,9 @@ export default function ExoticPetLaws() {
                               ? 'hsl(var(--muted))'
                               : key === 'unclear'
                                 ? 'repeating-linear-gradient(45deg,#CBD5E1 0 3px,#64748B 3px 5px)'
-                                : b.fill,
+                                : key === 'notChecked'
+                                  ? 'radial-gradient(hsl(var(--muted-foreground)/0.45) 1px, hsl(var(--background)) 1px) 0 0 / 5px 5px'
+                                  : b.fill,
                           borderColor: 'hsl(var(--border))',
                         }}
                       />
@@ -376,11 +403,15 @@ export default function ExoticPetLaws() {
                     )}
                   </>
                 ) : (
+                  // No entry means nobody read this jurisdiction for this
+                  // animal. Saying "nothing restricts it here" would be stating
+                  // a conclusion the research never reached.
                   <p className="text-xs font-body text-muted-foreground leading-relaxed">
-                    Nothing in {LEGAL.jurisdictions[detail.code]?.scope ? 'the body of law we read for this state' : 'the rules we checked'} restricts
-                    the {inSentence(animal.name)} here.
+                    We have not checked {jurisdictionName(detail.code)} for the {inSentence(animal.name)}{' '}
+                    yet, so there is no answer here either way. Treat it as unknown rather than as permitted,
+                    and ask the state agency before relying on it.
                     {LEGAL.jurisdictions[detail.code]?.scope
-                      ? ` Scope checked: ${LEGAL.jurisdictions[detail.code].scope}`
+                      ? ` When we do read it, the body of law that governs is: ${LEGAL.jurisdictions[detail.code].scope}`
                       : ''}
                   </p>
                 )}
@@ -550,9 +581,15 @@ export default function ExoticPetLaws() {
           <h2 className="font-display font-bold text-lg text-foreground mb-2">How to read this</h2>
           <div className="space-y-2.5 text-sm font-body text-muted-foreground leading-relaxed">
             <p>
-              A state with no colour is one where nothing in the law we read restricts that animal. That is
-              not the same as a guarantee: it means no restriction was found in the specific body of law
-              checked for that state, which is recorded alongside each jurisdiction. Cities and counties
+              Two of the shades mean very different things and are worth telling apart. A flat grey state was
+              read for this animal and nothing in it restricts one. A dotted state has not been read for this
+              animal at all. Coverage runs from two jurisdictions to fifty-one depending on the species, so on
+              a less-researched animal most of the map is a gap in our work rather than a finding, and it
+              should not be taken as permission.
+            </p>
+            <p>
+              Even a flat grey is not a guarantee. It means no restriction was found in the specific body of
+              law checked for that state, which is recorded alongside each jurisdiction. Cities and counties
               regularly ban animals their state allows, and several states say so in their own rules.
             </p>
             <p>

@@ -43,17 +43,31 @@ export const STATUS_BUCKETS = {
   none: {
     key: 'none',
     label: 'No restriction found',
-    blurb: 'Nothing in the body of law we read restricts this animal here.',
+    blurb: 'This jurisdiction was read for this animal and nothing in it restricts one.',
+    fill: 'transparent',
+    text: 'inherit',
+  },
+  notChecked: {
+    key: 'notChecked',
+    label: 'Not checked yet',
+    blurb: 'We have not read this jurisdiction for this animal. It is not a clean bill of health, it is a gap.',
     fill: 'transparent',
     text: 'inherit',
   },
 };
 
-export const BUCKET_ORDER = ['banned', 'permit', 'conditions', 'unclear', 'none'];
+export const BUCKET_ORDER = ['banned', 'permit', 'conditions', 'unclear', 'none', 'notChecked'];
 
-// Maps a raw dataset status onto a paint bucket.
+// Maps a dataset status onto a paint bucket.
+//
+// The important case is `undefined`, which means no entry exists for this
+// animal in this jurisdiction. That is not the same as having read the rules
+// and found nothing, and painting the two identically let a map with two
+// researched jurisdictions look like a verified all-clear across the country.
+// Coverage runs from 2 jurisdictions to 51 depending on the animal, so the
+// difference is most of the map for most species.
 export function bucketFor(status) {
-  if (!status) return 'none';
+  if (status === undefined || status === null) return 'notChecked';
   if (status === 'banned') return 'banned';
   if (status === 'permit') return 'permit';
   if (status === 'conditional' || status === 'restricted') return 'conditions';
@@ -69,19 +83,23 @@ export default function LegalStatusMap({
 }) {
   // useId keeps the pattern id unique if two maps ever render on one page,
   // which would otherwise make both of them reference the same fill.
-  const patternId = `${useId()}-unclear-hatch`;
+  const uid = useId();
+  const hatchId = `${uid}-unclear-hatch`;
+  const dotsId = `${uid}-not-checked-dots`;
 
   const paint = (code) => {
     const bucket = STATUS_BUCKETS[bucketFor(statuses[code]?.status)];
-    if (bucket.key === 'unclear') return `url(#${patternId})`;
+    if (bucket.key === 'unclear') return `url(#${hatchId})`;
+    if (bucket.key === 'notChecked') return `url(#${dotsId})`;
     if (bucket.key === 'none') return 'hsl(var(--muted))';
     return bucket.fill;
   };
 
   const describe = (code, name) => {
-    const entry = statuses[code];
-    const bucket = STATUS_BUCKETS[bucketFor(entry?.status)];
-    return `${name}: ${bucket.key === 'none' ? 'no restriction found' : bucket.label.toLowerCase()} for ${animalName}`;
+    const bucket = STATUS_BUCKETS[bucketFor(statuses[code]?.status)];
+    if (bucket.key === 'none') return `${name}: no restriction found for ${animalName}`;
+    if (bucket.key === 'notChecked') return `${name}: not checked yet for ${animalName}`;
+    return `${name}: ${bucket.label.toLowerCase()} for ${animalName}`;
   };
 
   const handleKey = (e, code) => {
@@ -100,9 +118,18 @@ export default function LegalStatusMap({
       <defs>
         {/* Unclear is hatched rather than flat, so the one status that means
             "we could not resolve this" never gets mistaken for a decision. */}
-        <pattern id={patternId} width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <pattern id={hatchId} width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
           <rect width="6" height="6" fill="#CBD5E1" />
           <line x1="0" y1="0" x2="0" y2="6" stroke="#64748B" strokeWidth="2.5" />
+        </pattern>
+        {/* Not checked is a faint dot grid. It has to be visibly different from
+            the flat fill used for "read it, found nothing", and quieter than
+            everything else on the map, because it is an absence of work rather
+            than a finding. Distinguished by texture as well as tone so it does
+            not rely on colour alone. */}
+        <pattern id={dotsId} width="5" height="5" patternUnits="userSpaceOnUse">
+          <rect width="5" height="5" fill="hsl(var(--background))" />
+          <circle cx="1.5" cy="1.5" r="0.9" fill="hsl(var(--muted-foreground))" opacity="0.45" />
         </pattern>
       </defs>
 
