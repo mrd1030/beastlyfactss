@@ -85,10 +85,17 @@
       "WV",
       "AK",
       "SD",
-      "AL"
+      "AL",
+      "IN",
+      "ND",
+      "WY",
+      "MS",
+      "LA",
+      "OK",
+      "NE"
     ],
-    "remaining": 7,
-    "note": "Statuses are complete for the 45 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
+    "remaining": 0,
+    "note": "Statuses are complete for the 52 jurisdictions in coverage.researched. An animal with no entry for one of those has no rule there. An animal with no entry for any other jurisdiction simply has not been researched yet, and must not be shown as unrestricted."
   },
   "jurisdictions": {
     "CA": {
@@ -280,6 +287,41 @@
       "name": "Alabama",
       "level": "state",
       "scope": "Ala. Admin. Code r. 220-2-.26, the Game and Fish Division rule on possession, sale, importation and release of certain animals. Native Alabama species are separately protected under the same title and were not researched for this entry."
+    },
+    "IN": {
+      "name": "Indiana",
+      "level": "state",
+      "scope": "312 IAC 9-11, the wild animal possession permit rule. Its own applicability clause limits it to animals referenced in the rule plus state endangered and threatened species, so an animal on none of the three class lists needs no permit."
+    },
+    "ND": {
+      "name": "North Dakota",
+      "level": "state",
+      "scope": "NDCC chapter 36-01, the Board of Animal Health statute, and NDAC title 48.1, its current rules. NDCC title 20.1 chapter 02 was also read: its permit requirement is for transplanting or introducing animals into the state, meaning release, not pet keeping."
+    },
+    "WY": {
+      "name": "Wyoming",
+      "level": "state",
+      "scope": "Wyoming Game and Fish Commission Regulation Chapter 10, live warm-blooded wildlife, and Chapter 69, live cold-blooded wildlife. Together these are the state's importation and possession framework."
+    },
+    "MS": {
+      "name": "Mississippi",
+      "level": "state",
+      "scope": "40 Miss. Admin. Code Part 2, Rule 8.3, the inherently dangerous wild animal rule, revised April 2025. Native Mississippi wildlife held in captivity is covered by other rules in the same chapter, which were not read for this entry."
+    },
+    "LA": {
+      "name": "Louisiana",
+      "level": "state",
+      "scope": "LAC Title 76 Part V § 115, potentially dangerous wild quadrupeds, big exotic cats and non-human primates, and LAC Title 76 Part XV § 101, the reptile and amphibian rule as amended January 2025."
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "level": "state",
+      "scope": "OAC 800:25-25, the subchapter classifying wildlife as domesticated and exempting it from licensing. Anything outside the exemption needs an import or export permit and a commercial or noncommercial wildlife breeder's licence rather than being banned."
+    },
+    "NE": {
+      "name": "Nebraska",
+      "level": "state",
+      "scope": "166 NAC 8, Keeping Wildlife in Captivity, which covers wild birds and wild mammals. Reptiles and amphibians are handled by 166 NAC 10 and the fisheries regulations in 164 NAC and were not read for this entry."
     }
   },
   "sources": {
@@ -554,6 +596,56 @@
       "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
       "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.26",
       "note": "A prohibited list rather than a permitted one, last amended October 2024. Two clauses do most of the work for pet keepers: everything the federal government lists as injurious wildlife under the Lacey Act is banned by reference, and a group of species is banned specifically when it comes from outside Alabama."
+    },
+    "in-312-9-11": {
+      "title": "312 IAC 9-11, Wild Animal Possession Permits",
+      "url": "https://iar.iga.in.gov/code/current/312/9",
+      "note": "Three classes by risk. Class I is rabbits and squirrels, Class II is a long and specific list of small wild cats plus Indiana's furbearers, Class III is wolves, bears, all other wild cats, venomous reptiles and large crocodilians. Both the Class II and Class III lists end with the same sentence exempting hybrids with a domestic dog or cat, which is the clearest hybrid answer any state gives."
+    },
+    "nd-36-01": {
+      "title": "North Dakota Century Code Chapter 36-01, Board of Animal Health",
+      "url": "https://ndlegis.gov/cencode/t36c01.pdf",
+      "note": "The chapter names only three restrictions relevant to pets: skunks and raccoons may not be kept at all, mountain lions and wolves need a tattooed identification number, and the board is to make rules on primates. § 36-01-08.1 says the board may require a licence for nontraditional livestock, meaning any wildlife held in confinement, but the wording is permissive."
+    },
+    "nd-48-1": {
+      "title": "North Dakota Administrative Code Title 48.1, State Board of Animal Health",
+      "url": "https://ndlegis.gov/information/acdata/pdf/48.1-13-02.pdf",
+      "note": "The old title 48, which carried the nontraditional livestock category system, is repealed. What replaced it is a set of importation health chapters. Chapter 48.1-13-02 covers everything else and asks only for a certificate of veterinary inspection and an importation permit number from the state veterinarian."
+    },
+    "wy-ch10": {
+      "title": "Wyoming Game and Fish Commission Regulation Chapter 10, Importation and Possession of Live Warm-Blooded Wildlife",
+      "url": "https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/CH-10-FINAL-CLEAN-SIGNED-03-10-2023-3.pdf",
+      "note": "Two closed lists do the work. Domestic animals and domesticated animals are both defined by enumeration, with the phrase for the purpose of this regulation, only the following animals are considered domestic. Anything on neither list is wildlife, and Section 13(d) leaves it to a permit that may be authorised upon approval."
+    },
+    "wy-ch69": {
+      "title": "Wyoming Game and Fish Commission Regulation Chapter 69, Importation and Possession of Live Cold-Blooded Wildlife",
+      "url": "https://wgfd.wyo.gov/sites/default/files/content/PDF/Regulations/CH-69-06-27-2022-6-CLEAN.pdf",
+      "note": "Section 10(a)(i) is the sentence that matters for reptile keepers: amphibians and reptiles not listed in Section 8 or 9 need no permit at all."
+    },
+    "ms-40-2-8-3": {
+      "title": "40 Miss. Admin. Code Part 2, Rule 8.3, Regulations For Animals Inherently Dangerous To Humans",
+      "url": "https://www.mdwfp.com/sites/default/files/2025-06/40%20Miss%20Admin%20Code%20Part2%20Rule%208.3%20Animals%20Inherently%20Dangerous%20to%20Humans%20Rev.%2004-2025%20FINAL.pdf",
+      "note": "A short list drawn by genus and family, covering apes and some monkeys, wolves and three wild dogs, bears, the wolverine, hyenas, the big cats, elephants, rhinos, hippos and African buffalo. Nothing smaller appears. The rule also notes that since the federal Big Cat Public Safety Act took effect in December 2022 no new big cat permits are issued at all."
+    },
+    "la-76-v-115": {
+      "title": "LAC 76:V.115, Possession of Potentially Dangerous Wild Quadrupeds, Big Exotic Cats, and Non-Human Primates",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "A short mammal ban: three bears, two wolves, wolf dog hybrids, all non-human primates, and six big cats with their subspecies and hybrids. Existing permit holders were grandfathered but may not acquire more."
+    },
+    "la-76-xv-101": {
+      "title": "LAC 76:XV.101, Reptiles and Amphibians, Recreational and Commercial Harvests; Prohibitions",
+      "url": "https://www.doa.la.gov/media/ln5kb5vu/76.docx",
+      "note": "Rewritten in January 2025 and now one of the strictest reptile rules in the country. Three tiers: prohibited nonnative species, restricted nonnative species needing a permit, and a general rule that any constrictor over eight feet needs a restricted snake permit."
+    },
+    "ok-800-25-25-3": {
+      "title": "OAC 800:25-25-3, Exemptions",
+      "url": "https://rules.ok.gov/code",
+      "note": "Navigate to Title 800, Chapter 25, Subchapter 25, Section 800:25-25-3. One of the most permissive exemption lists in the country, and one of the very few that names the fennec fox individually. Note what the exemptions are from: permits and breeder licences, not a ban. An unexempt animal is licensable, not prohibited."
+    },
+    "ne-166-nac-8": {
+      "title": "166 NAC 8, Nebraska Game and Parks Commission, Keeping Wildlife in Captivity",
+      "url": "https://rules.nebraska.gov",
+      "note": "Browse to Game and Parks Commission, Title 166 Wildlife Regulations, Chapter 8. Two lists that must not be conflated. § 001.01B lists the native wild birds and mammals that may be held under a Captive Wildlife Permit. § 001.08A is a separate closed list of wildlife that may be imported into the state, and a non-native animal missing from it cannot lawfully be brought in."
     }
   },
   "animals": {
@@ -871,6 +963,59 @@
           "cite": "§ (1)",
           "note": "Not a rodent, not on the prohibited list, and not federally injurious.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "quote": "a person must have a permit issued by the department under this rule to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "note": "Referenced nowhere in the rule, so no permit applies.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "note": "That sentence, plus tattooing for mountain lions and wolves, is the whole of the state's prohibition list. No rule currently licenses small exotic pets.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated hedgehog (Erinaceus spp.),",
+          "note": "Listed as a domesticated animal, and Section 16 lets domestic and domesticated animals be imported or possessed without a permit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The list runs to primates, carnivores, elephants, rhinos, hippos and African buffalo. No insectivore appears.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "The regulation lists three bears, two wolves, wolf dog hybrids, all non-human primates and six big cats. Nothing smaller appears.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(15)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements... (15) Hedgehogs.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "unclear",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Eurasian Hedgehogs   Erinaceus spp.",
+          "note": "The importation list clears the Eurasian genus. The hedgehog sold as a pet is the African pygmy hedgehog, Atelerix albiventris, which is a different genus and is not named. Because § 001.08A is a closed list, the omission matters. Ask Game and Parks before buying one out of state.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1146,6 +1291,60 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "Mustelids are absent from a list that does name raccoons, skunks and foxes, the other rabies vector species.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(10)",
+          "quote": "(10) Weasel (Mustela frenata, Mustela nivalis, and Mustela rixosa).",
+          "note": "The mustelids on the Class II list are named by binomial and the domestic ferret, Mustela putorius furo, is not among them.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-48-1",
+          "cite": "48.1-13-01-01",
+          "quote": "Any dog, cat, or ferret imported into the state for a period of over thirty days must be accompanied by a certificate of veterinary inspection.",
+          "note": "The ferret gets its own chapter alongside dogs and cats, which settles it: it is treated as a companion animal, subject to a rabies vaccination certificate on import.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(i), § 16",
+          "quote": "domestic ferret (Mustela furo),",
+          "note": "On the domestic animal list alongside the dog and the cat, not merely the domesticated list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5.b.iii",
+          "quote": "Family Mustelidae - Gulo gulo (wolverine);",
+          "note": "The only mustelid on the list is the wolverine.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(10)",
+          "quote": "(10) Ferrets (except black-footed, Mustela nigripes).",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.01B",
+          "quote": "Mink - (Mustela vison, except mutation)... Weasel - long-tailed (Mustela frenata)",
+          "note": "The mustelids in the captivity list are Nebraska's own wild ones. The domestic ferret is not a wild mammal under the statute the section points to.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1427,6 +1626,55 @@
           "cite": "§ (1)",
           "note": "Marsupials appear nowhere in the rule.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "quote": "a person must have a permit... to possess a wild animal if the wild animal is either of the following: (1) Referenced in this rule. (2) Listed in this article as an endangered species or a threatened species.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated sugar gliders (Petaurus breviceps),",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No marsupial appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(31)",
+          "quote": "(31) Sugar gliders",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Sugar Glider(s)   Petaurus spp.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1563,6 +1811,55 @@
           "cite": "§ (1)",
           "note": "A domesticated rodent, so outside the wild rodent clause, and named nowhere else in the rule.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "Not referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated hamster (Mesocricetus auratus),",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(14)",
+          "quote": "(14) Hamsters.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "note": "Absent from the importation list, but that list covers wildlife and the golden hamster is a domesticated animal rather than a wild mammal under Neb. Rev. Stat. 37-246. The guinea pig appears on the list even so, which makes the list less than perfectly consistent.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -1688,6 +1985,57 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "A domesticated rodent, so outside the wild rodent clause.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "Not referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated Mongolian gerbil (Meriones unguiculatus),",
+          "note": "Named by the correct binomial, unlike Alaska, which clears Gerbillus instead.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(11)",
+          "quote": "(11) Gerbils.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Gerbil   Gerbillus spp.",
+          "note": "As in Alaska, the binomial given is Gerbillus, while the gerbil in the pet trade is the Mongolian gerbil, Meriones unguiculatus.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1834,6 +2182,58 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "The only bird restrictions in the rule are wild turkey strains and anything federally listed as injurious. The monk parakeet is neither.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "No bird appears on any of the three class lists.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.1",
+          "note": "No bird restriction appears in the chapter. The only bird provision is a seven dollar annual licence fee for bird species that the board requires to be licensed.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch10",
+          "cite": "§ 11(b)(iii)",
+          "quote": "a permit shall not be issued for importation or possession of the following live warm-blooded wildlife in Wyoming... (iii) Monk parakeet (Myiopsitta monachus);",
+          "note": "Not merely unpermitted. The regulation says a permit shall not be issued, which closes the route entirely.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No bird appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "The regulation reaches wild quadrupeds, big exotic cats and non-human primates. No bird is listed.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(b)(2)",
+          "quote": "The following list of birds shall be exempt from import and export requirements... (2) Psittacine birds (parrots, parakeets and budgerigars).",
+          "note": "Cleared by group with no monk parakeet exception.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 008, § 001.08A",
+          "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage. For purposes of this regulation, the monk parakeet (Myiopsitta monachus) is not a cage and aviary bird.",
+          "note": "A neat piece of drafting to watch for. The importation list ends with All Cage and Aviary Birds, and the definitions section removes the monk parakeet from that category by name, so the one bird excluded from the definition is the one bird that cannot be imported.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -1989,6 +2389,61 @@
           "cite": "§ (1)",
           "quote": "black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
           "note": "No hybrid clause appears anywhere in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)",
+          "quote": "(12) Leopard cat (Prionailurus bengalensis)... A hybrid of any of these species with a domestic dog or domestic cat is exempt from permitting under this section.",
+          "note": "Indiana answers the Bengal question outright. The leopard cat itself needs a Class II permit, and its hybrid with a domestic cat is exempt by name, with no filial generation condition attached.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-01(3)",
+          "quote": "\"Domestic animal\" means dog, cat, horse, bovine animal, sheep, goat, bison, farmed elk, llama, alpaca, or swine.",
+          "note": "Cats are domestic animals under the statute and no hybrid clause appears anywhere in the chapter.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(i)",
+          "quote": "\"Domestic Animals\" means those populations of animals, their viable gametes (eggs and sperm), fertilized eggs, or any hybrid or transgenic product thereof, which through long association with humans have been bred to a degree which has resulted in genetic changes of the species to an extent that makes them unique and distinguishable from wild individuals of their species. For the purpose of this regulation, only the following animals are considered domestic: ...cat (Felis catus),",
+          "note": "The definition folds hybrids into the domestic category rather than carving them out, which is the opposite of how Rhode Island and Alaska handle the same question.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5.b.v",
+          "quote": "Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Prionailurus is not named, and the only hybrid clause in the rule is the one for wolf crosses under Canidae.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1.h",
+          "quote": "vii. all subspecies of the above listed exotic cats; viii. hybrids resulting from cross breeding of the above listed exotic cats.",
+          "note": "The Asian leopard cat is not one of the six listed cats, so a Bengal is outside the hybrid clause.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(4)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.01B",
+          "quote": "Bobcat* - (Lynx rufus)... Lynx* - (Lynx canadensis)",
+          "note": "The only cats in the chapter are Nebraska's two native ones, and both are marked for commercial purposes only. A domestic cat is not a wild mammal.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2178,6 +2633,48 @@
           "cite": "§ (1)",
           "note": "Only tegus of the genus Salvator are named among the lizards.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "On neither the prohibited nor the restricted nonnative list. The restricted lizards are the Asian water monitor, brown basilisk, spiny-tailed iguana, curly-tailed lizard and Peter's rock agama.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2308,6 +2805,48 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "No tortoise appears on the list and Testudo horsfieldii is not federally injurious.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "The turtle rules in § 101.G govern native turtles. Testudo horsfieldii is nonnative and appears on neither the prohibited nor the restricted list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -2509,6 +3048,49 @@
           "quote": "Any species of venomous reptile which has never naturally existed in the wild in Alabama including but not limited to venomous snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophiidae and Colubridae, except for hognose snakes (genus Heterodon);",
           "note": "Not venomous, not a tegu, and not on the federal injurious list.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "A permit is required under this rule for the following Class III wild animals: ...(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "The animals listed in this section may be imported or possessed without securing an importation/possession permit... (i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian. No reptile appears anywhere in it.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.1",
+          "quote": "The importation, private possession, selling, and/or purchasing of constrictor snakes in excess of eight feet... shall only be allowed via permit issued by the Department of Wildlife and Fisheries",
+          "note": "Python regius does not reach eight feet and is on neither the prohibited nor the restricted list, so it stays outside all three tiers.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "Except as otherwise provided, monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license; except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2694,6 +3276,50 @@
           "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
           "note": "Boa constrictor is not on the federal injurious list, which is why it survives a clause that catches the Burmese python.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "permit",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.c.i",
+          "quote": "The following restricted nonnative species may be in possession only via permit to be approved and monitored by the department... i. Boa constrictor (Boa constrictor);",
+          "permitFor": "personal",
+          "note": "Restricted rather than prohibited, so a permit route exists, but a Restricted Snake Permit is required regardless of the animal's length and the facility is open to inspection.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2876,6 +3502,52 @@
           "quote": "Any species of Tegus (Salvator sp.);",
           "note": "Banned by genus, so every tegu in the pet trade under the name Salvator is caught, not just the Argentine black and white.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a.ii",
+          "quote": "The following nonnative reptile and amphibian species are prohibited from importation, possession, sale, attempting to sell, transfer, release, and reproduction in the state... ii. All species in the Genera Salvator and Tupinambis, including the Argentine Black and White Tegu (Salvator merianae);",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Owners had 365 days from the effective date of the January 2025 rule to register the animal and obtain a permit. Registered animals may not be bred and no more may be acquired."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -2977,6 +3649,53 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "Only tegus of the genus Salvator are named among the lizards.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a.iv",
+          "quote": "iv. Savannah Monitor (Varanus exanthematicus);",
+          "note": "Louisiana is unusual in banning the savannah monitor. Most states that restrict monitors reach only the giant species.",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -3180,6 +3899,62 @@
           "cite": "§ (1)",
           "quote": "Any of the following from any area outside the state of Alabama; ...species of raccoon, species of skunk, wild rodent, or strain of wild turkey",
           "note": "A prairie dog is a wild rodent on any reading of the phrase, and one brought into Alabama comes from outside the state by definition.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6(a)",
+          "quote": "A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+          "note": "Cynomys is not native to Indiana and appears nowhere in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.1",
+          "quote": "\"Nontraditional livestock\" means any wildlife held in a cage, fence, enclosure, or other manmade means of confinement that limits its movement within definite boundaries",
+          "note": "Native to North Dakota and plainly wildlife held in confinement, so it falls inside the definition even though no rule currently attaches a licence to it.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "§ 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "permitFor": "personal",
+          "note": "Native to Wyoming. Section 14 allows possession without a permit of mammals declared pests if they were captured in the state, but importation of those same animals is barred.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "permitFor": "personal",
+          "note": "Native to Oklahoma and absent from the exemption list. The department has a dedicated subchapter on black-footed ferrets and prairie dogs.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.01B",
+          "quote": "It shall be unlawful for any person or persons to retain any wild birds or wild mammals (as defined in Nebraska revised statute 37-245 and 37-246) in captivity except the following species may be kept under authority of a Captive Wildlife Permit",
+          "note": "Cynomys is a Nebraska wild mammal and is absent from the list that follows, which runs from badger to long-tailed weasel. It is also absent from the importation list.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -3403,6 +4178,62 @@
           "cite": "§ (1)",
           "quote": "Any of the following from any area outside the state of Alabama; ...species of skunk, wild rodent, or strain of wild turkey",
           "note": "The largest rodent in the world, and a wild one. Nothing in the rule carves out captive bred stock.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6(a)",
+          "quote": "A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+          "note": "The only rodents in the rule are three Indiana squirrels.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.1",
+          "quote": "\"Nontraditional livestock\" means any wildlife held in a cage, fence, enclosure, or other manmade means of confinement that limits its movement within definite boundaries",
+          "note": "Inside the nontraditional livestock definition, with no rule currently attaching a licence.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "§ 11(b)(v), § 13(d)",
+          "quote": "(v) All members of the order Rodentia from Africa;",
+          "permitFor": "personal",
+          "note": "The rodent ban is geographic and reaches Africa only, so a South American rodent falls through to the discretionary permit at Section 13(d).",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "permitFor": "personal",
+          "note": "Absent from the exemption list, so a noncommercial wildlife breeder's licence and an import permit apply.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Importation: the following wildlife may be imported:",
+          "note": "The list clears the chinchilla, the degu, the gerbil, the guinea pig and the greater jerboa. The capybara is not among them.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -3636,6 +4467,63 @@
           "cite": "§ (1)",
           "quote": "Any of the following from any area outside the state of Alabama; any member of the family Cervidae (to include but not be limited to deer, elk, moose, caribou), species of coyote, species of fox, species of raccoon, species of skunk, wild rodent, or strain of wild turkey, black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus), Pronghorn Antelope (Antelocapridae), any nondomestic member of the families Suidae (pigs), Tayassuidae (peccaries), or Bovidae (except bison).",
           "note": "Species of fox, without qualification. Every fennec fox in the trade comes from outside Alabama, which is the trigger.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(3), (4)",
+          "quote": "(3) Gray fox (Urocyon cinereoargenteus). (4) Red fox (Vulpes fulva).",
+          "note": "The two foxes on the Class II list are Indiana's own. Vulpes zerda is on none of the three lists, and 312 IAC 9-11-1 limits the permit requirement to animals referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.1",
+          "quote": "The board of animal health may require a license for nontraditional livestock maintained within this state.",
+          "note": "Same gap as the serval. Note that the statute bans skunks and raccoons outright and singles out wolves for tattooing, so foxes sit between the two and are named in neither.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "§ 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "permitFor": "personal",
+          "note": "Wyoming's prohibited list names the gray wolf, the red wolf and wolf hybrids but no fox.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5.b.i",
+          "quote": "Family Canidae: Genus Canis (wolves, jackals, and dingos; all species, including crosses between wolves and domestic animals); excluding coyote (Canis latrans); Chrysocyon brachyurus (maned wolf); Cuon alpinus (red dog or dhole); Lycaon pictus (African hunting dog);",
+          "note": "Four named canids plus the genus Canis. Vulpes zerda is none of them.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "quote": "d. red wolf (Canis rufus); e. gray wolf (Canis lupus); f. wolf dog hybrid (Canis lupus or Canis rufus x Canis familiarus);",
+          "note": "The only canids listed are the two wolves and their dog hybrids.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(35)",
+          "quote": "(35) Fennec Fox.",
+          "note": "Named on its own line, separate from the dog entry, which exempts dogs except coyotes and native foxes. Oklahoma is one of the only states to clear the species by name.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Fox   Vulpes spp.",
+          "note": "Vulpes zerda is within the genus named on the importation list. The separate captivity list at § 001.01B reaches Nebraska's own gray and red foxes, which need a Captive Wildlife Permit.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -3896,6 +4784,64 @@
           "quote": "black bear (Ursus americanus), mountain lion (Felis concolor), bobcat (Felis rufus)",
           "note": "The only cats named are Alabama's own two, and only when brought in from outside the state. Leptailurus serval is not on the list and is not federally injurious.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-7(a)(11)",
+          "quote": "A permit is required under this rule for the following Class II wild animals: ...(11) Serval (Leptailurus serval).",
+          "permitFor": "personal",
+          "note": "Class II, not Class III, so the permit is applied for within five days of taking possession rather than obtained in advance. A Class II wild animal is defined as one that may pose a threat to human safety.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "unclear",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.1",
+          "quote": "The board of animal health may require a license for nontraditional livestock maintained within this state.",
+          "note": "Nontraditional livestock is defined as any wildlife held in confinement, which reaches a serval. Whether a licence is actually required turns on board rules, and the chapter of the administrative code that used to carry the species categories has been repealed. Ask the state veterinarian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "§ 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "permitFor": "personal",
+          "note": "Not on the prohibited list at Section 11 and not on either the domestic or the domesticated list, so it lands in the discretionary permit category. May be authorised is not the same as shall be issued.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5.b.v",
+          "quote": "Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "The cat entry is drawn by genus and Leptailurus is not among them.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1.h",
+          "quote": "the following big exotic cats: i. tigers; ii. lions; iii. leopards (including, but not limited to snow leopard and clouded leopard); iv. jaguars; v. cheetahs; vi. cougars or mountain lions (Felis concolor); vii. all subspecies of the above listed exotic cats; viii. hybrids resulting from cross breeding of the above listed exotic cats.",
+          "note": "The list is six cats. Leptailurus serval is not among them, and the hybrid clause attaches only to the six.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(4)",
+          "quote": "(4) Cats (except native cats and bears).",
+          "note": "The exemption is written for cats generally and carves out only native cats. Leptailurus serval is not native to Oklahoma.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "banned",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Importation: the following wildlife may be imported:",
+          "note": "No cat of any kind appears on the importation list, and the list is closed. The captivity list at § 001.01B covers only the bobcat and the Canada lynx, both for commercial purposes only.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4121,6 +5067,55 @@
           "quote": "Any of the following from any area outside the state of Alabama; ...species of skunk, wild rodent, or strain of wild turkey",
           "note": "The phrase is wild rodent, and the pet trade chinchilla is a domesticated strain bred in captivity since the 1920s. The term is undefined, so this is a reading rather than a certainty.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "Not referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated chinchilla (Chinchilla laniger),",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(7)",
+          "quote": "(7) Chinchillas.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Importation: the following wildlife may be imported: ...Chinchilla   Chinchilla spp.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4242,6 +5237,55 @@
           "cite": "§ (1)",
           "note": "A domesticated rodent, so outside the wild rodent clause.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "Not referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "§ 2(j), § 16",
+          "quote": "domesticated guinea pig (Cavia porcellus),",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)(13)",
+          "quote": "(13) Guinea pigs.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Guinea pig   Cavia porcellus",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4358,6 +5402,52 @@
           "cite": "§ (1)",
           "note": "Only tegus of the genus Salvator are named among the lizards. Florida bans this species, Alabama does not.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a.v",
+          "quote": "v. Green Iguana (Iguana iguana);",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4433,6 +5523,23 @@
           "cite": "§ 92.029(b)",
           "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
           "note": "Alaska has no native turtles, so nothing in the rule pulls it back out.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "restricted",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.G.2, § 101.G.3.a.i",
+          "quote": "No person shall collect or possess more than 10 restricted turtles, as listed in Paragraph G.3 herein, in any combination, with no individual species to exceed two per person at any time... i. Snapping Turtle—Chelydra serpentina;",
+          "note": "Two per person, a basic recreational fishing licence to collect, no commercial use of native turtles, and captive breeding is unlawful without department approval.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "permitFor": "personal",
+          "note": "The exemption is written for reptiles not indigenous to Oklahoma. Chelydra serpentina is native here, so it falls outside it.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -4526,6 +5633,48 @@
           "cite": "§ (1)",
           "note": "Only tegus of the genus Salvator are named among the lizards.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "On neither the prohibited nor the restricted nonnative list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4581,6 +5730,15 @@
           "sourceId": "sc-50-16",
           "cite": "§ 50-16-60",
           "quote": "16. amphibians.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "permitFor": "personal",
+          "note": "Ambystoma is native to Oklahoma, so the non-indigenous exemption does not reach it.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -4671,6 +5829,53 @@
           "sourceId": "al-220-2-26",
           "cite": "§ (1)",
           "note": "Only tegus of the genus Salvator are named among the lizards, and Varanus niloticus is not federally injurious.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a.iii",
+          "quote": "iii. Nile Monitor (Varanus niloticus);",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "note": "Varanus niloticus is not on the federal injurious list, so the exemption holds.",
           "verifiedOn": "2026-08-04"
         }
       }
@@ -4801,6 +6006,56 @@
           "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
           "note": "Alabama does not name the species itself. It adopts the federal injurious wildlife list, which has included Python bivittatus since 2012, so the federal listing does the work.",
           "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "note": "Indiana applies a length test to crocodilians and none at all to constrictors.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or in the current administrative rules, and North Dakota sets no constrictor length limit.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "banned",
+          "sourceId": "wy-ch69",
+          "cite": "§ 8(a)",
+          "quote": "An importation/possession permit shall not be issued for importation or possession of the live cold-blooded wildlife in this section... (a) Injurious wildlife listed in 50 CFR § 16.",
+          "note": "Adopted from the federal injurious list, which has covered Python bivittatus since 2012. The reticulated python and the green anaconda arrive by the same route.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian, so Mississippi sets no constrictor size limit in this rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "banned",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a.vii",
+          "quote": "vii. Burmese Python (Python bivittatus);",
+          "grandfathered": {
+            "before": "2025-01-01",
+            "detail": "Registration within 365 days of the rule taking effect, no breeding, no further acquisition."
+          },
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "except those which are biologically capable of establishing self-sustaining populations in the wild of Oklahoma and which may be potentially injurious or detrimental to Oklahoma's wildlife, agriculture or public safety in accordance with existing USDI or APHIS regulations",
+          "permitFor": "personal",
+          "note": "The exemption turns on the federal injurious wildlife listing, which covers Python bivittatus. Losing the exemption means permits and a breeder's licence apply, not that the animal is banned.",
+          "verifiedOn": "2026-08-04"
         }
       }
     },
@@ -4917,6 +6172,60 @@
           "cite": "§ (1)",
           "quote": "Any of the following from any area outside the state of Alabama; ...species of skunk, wild rodent, or strain of wild turkey",
           "note": "Wild rodent is not defined anywhere in the rule. A pet degu is captive bred, but Octodon degus is a wild species with no domesticated lineage behind it, unlike the hamster or the guinea pig. Ask the Division of Wildlife and Freshwater Fisheries before buying.",
+          "verifiedOn": "2026-08-04"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-1(a)",
+          "note": "Not referenced in the rule.",
+          "verifiedOn": "2026-08-04"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "quote": "A person may not keep a skunk or raccoon in captivity.",
+          "verifiedOn": "2026-08-04"
+        },
+        "WY": {
+          "status": "permit",
+          "sourceId": "wy-ch10",
+          "cite": "§ 13(d)",
+          "quote": "A permit may be authorized upon approval for other warm-blooded wildlife unless otherwise specified in this regulation.",
+          "permitFor": "personal",
+          "note": "The domesticated list clears the chinchilla, the guinea pig, the gerbil, the hamster, the mouse and the rat, but not the degu.",
+          "verifiedOn": "2026-08-04"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "No rodent appears on the list.",
+          "verifiedOn": "2026-08-04"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-v-115",
+          "cite": "§ 115.C.1",
+          "note": "Not among the listed animals.",
+          "verifiedOn": "2026-08-04"
+        },
+        "OK": {
+          "status": "permit",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(a)",
+          "quote": "The following wildlife species are exempt from import and export permits, commercial wildlife breeders licenses, noncommercial wildlife breeders licenses and commercial hunting area license requirements",
+          "permitFor": "personal",
+          "note": "The list clears chinchillas, gerbils, guinea pigs, hamsters, mice and rats but not the degu, so it stays inside the permit and breeder licence regime rather than being banned.",
+          "verifiedOn": "2026-08-04"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-166-nac-8",
+          "cite": "§ 001.08A",
+          "quote": "Degu   Octodon spp.",
+          "note": "Named on the importation list, which few states do.",
           "verifiedOn": "2026-08-04"
         }
       }
