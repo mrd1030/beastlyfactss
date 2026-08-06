@@ -678,6 +678,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$120–$220",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: ["Flight cage (24-30 in wide)", "36x24x48 in cage (larger preferred)", "18x18x24 in cage (larger preferred)", "24x24x24 in+ cage (larger preferred)", "24x24x30 in cage (larger preferred)", "24x24x30 in+ cage (larger preferred)", "24x24x36 in aviary-style cage"],
+    altGroup: "bird-flight-cage",
     pets: ["birds", "small-mammals"],
   },
   {
@@ -706,6 +707,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
     covers: ["Perches of varied diameters", "Perches and swings", "Multiple textured perches"],
+    altGroup: "bird-perches",
     pets: ["birds"],
   },
   {
@@ -1098,6 +1100,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$110–$130",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
     covers: [],
+    altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1111,6 +1114,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$90–$110",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
     covers: [],
+    altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1124,6 +1128,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$111–$141",
     description: "T5 UVB fixture kit that delivers strong, even UVB for reptiles that need regular basking exposure.",
     covers: ["T5 HO UVB fixture + bulb", "UVB bulb replacement (every 6-12 months)", "Strong desert UVB (T5 HO Arcadia Dragon 12%)"],
+    altGroup: "t5-uvb-fixture",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1248,6 +1253,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$175–$210",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1261,6 +1267,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$250–$330",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1274,6 +1281,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$180–$240",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1287,6 +1295,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$110–$160",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1300,6 +1309,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$70–$90",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1313,6 +1323,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$140–$165",
     description: "Spacious bird cage that leaves room for short flights, toys, and multiple perches.",
     covers: [],
+    altGroup: "bird-flight-cage",
     pets: ["birds"],
   },
   {
@@ -1326,6 +1337,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$6–$10",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
     covers: [],
+    altGroup: "bird-perches",
     pets: ["birds"],
   },
   {
@@ -1339,6 +1351,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
     covers: [],
+    altGroup: "bird-perches",
     pets: ["birds"],
   },
   {
@@ -1352,6 +1365,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
     covers: [],
+    altGroup: "bird-perches",
     pets: ["birds"],
   },
   {
@@ -1365,6 +1379,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$25",
     description: "Perches in varied shapes or diameters that help exercise bird feet and prevent pressure spots.",
     covers: [],
+    altGroup: "bird-perches",
     pets: ["birds"],
   },
   {
@@ -1378,6 +1393,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$8–$14",
     description: "Clamp-on feeding cup that keeps food or water off the cage floor and easy to refill.",
     covers: [], // clip-on cage bowls work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
+    altGroup: "bird-feeding-dishes",
     pets: ["birds", "small-mammals"],
   },
   {
@@ -1391,6 +1407,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$7–$12",
     description: "Clamp-on feeding cup that keeps food or water off the cage floor and easy to refill.",
     covers: [], // clip-on cage cups work the same on small-mammal wire cages, matching the generic bird-feeding-dishes product's established cross-tag
+    altGroup: "bird-feeding-dishes",
     pets: ["birds", "small-mammals"],
   },
   {
@@ -1404,6 +1421,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$18",
     description: "Clamp-on feeding cup that keeps food or water off the cage floor and easy to refill.",
     covers: ["Food and water dishes"],
+    altGroup: "bird-feeding-dishes",
     pets: ["birds", "reptiles-amphibians", "small-mammals"],
   },
   {
@@ -1417,6 +1435,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$15–$22",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
     covers: ["Small parrot pellets"],
+    altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
   {
@@ -1430,6 +1449,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$15",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
     covers: [],
+    altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
   {
@@ -1443,6 +1463,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$22–$30",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
     covers: [],
+    altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
   {
@@ -1456,6 +1477,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$18–$26",
     description: "Pelleted bird diet designed to give more balanced nutrition than seed-heavy mixes.",
     covers: [],
+    altGroup: "small-parrot-pellets",
     pets: ["birds"],
   },
   {
@@ -1521,6 +1543,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$4–$8",
     description: "Millet spray treat that encourages foraging and works well for taming or training small birds.",
     covers: ["Millet sprays (treats)"],
+    altGroup: "bird-millet",
     pets: ["birds"],
   },
   {
@@ -1534,6 +1557,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$17–$23",
     description: "Millet spray treat that encourages foraging and works well for taming or training small birds.",
     covers: [],
+    altGroup: "bird-millet",
     pets: ["birds"],
   },
   {
@@ -1547,6 +1571,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$9–$14",
     description: "Millet spray treat that encourages foraging and works well for taming or training small birds.",
     covers: [],
+    altGroup: "bird-millet",
     pets: ["birds"],
   },
   {
@@ -1560,6 +1585,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$8–$12",
     description: "Cuttlebone supplement birds can chew for calcium and natural beak wear.",
     covers: ["Cuttlebone or mineral block", "Cuttlebone and mineral block", "Cuttlebone (calcium source)"],
+    altGroup: "bird-cuttlebone",
     pets: ["birds", "reptiles-amphibians", "invertebrates"],
   },
   {
@@ -1573,6 +1599,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$1–$4",
     description: "Cuttlebone supplement birds can chew for calcium and natural beak wear.",
     covers: [],
+    altGroup: "bird-cuttlebone",
     pets: ["birds"],
   },
   {
@@ -1586,6 +1613,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$5–$9",
     description: "Cuttlebone supplement birds can chew for calcium and natural beak wear.",
     covers: [],
+    altGroup: "bird-cuttlebone",
     pets: ["birds"],
   },
   {
@@ -1599,6 +1627,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
     covers: ["Foraging and shreddable toys", "Shreddable toys"],
+    altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
   {
@@ -1612,6 +1641,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
     covers: [],
+    altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
   {
@@ -1625,6 +1655,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
     covers: [],
+    altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
   {
@@ -1638,6 +1669,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
     covers: [],
+    altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
   {
@@ -1651,6 +1683,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$22",
     description: "Chew, climb, or forage toy that helps reduce boredom and encourages movement in the cage.",
     covers: [],
+    altGroup: "bird-foraging-toys",
     pets: ["birds"],
   },
   {
@@ -1830,6 +1863,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$29–$41",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1843,6 +1877,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$20–$28",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: ["Commercial crested gecko diet"],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1856,6 +1891,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$15–$25",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1869,6 +1905,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$11–$17",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1882,6 +1919,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$14–$22",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: ["Commercial crested gecko diet (CGD)"],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1895,6 +1933,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$17–$25",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1908,6 +1947,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$14–$22",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1921,6 +1961,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$27–$39",
     description: "Complete powdered gecko diet you mix with water for fruit-eating species like cresteds.",
     covers: [],
+    altGroup: "crested-gecko-diet",
     pets: ["reptiles-amphibians"],
   },
   {
