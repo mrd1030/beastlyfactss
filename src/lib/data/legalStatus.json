@@ -4334,7 +4334,8 @@
           "localOverride": true
         }
       },
-      "scientific": "Theraphosidae"
+      "scientific": "Theraphosidae",
+      "article": "/blog/tarantula-legal-guide/"
     },
     "emperor-scorpion": {
       "name": "Emperor scorpion",
@@ -4554,7 +4555,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "article": "/blog/emperor-scorpion-legal-guide/"
     },
     "argentine-tegu": {
       "name": "Argentine black and white tegu",
@@ -5038,7 +5040,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "article": "/blog/savannah-monitor-legal-guide/"
     },
     "prairie-dog": {
       "name": "Prairie dog",
@@ -6102,7 +6105,8 @@
           "note": "The unrestricted mammal list has one carnivore, the European domestic ferret, plus wolf and dog hybrids. The fennec is on neither.",
           "verifiedOn": "2026-08-05"
         }
-      }
+      },
+      "article": "/blog/fennec-fox-legal-guide/"
     },
     "serval": {
       "name": "Serval",
@@ -6466,7 +6470,8 @@
           "note": "No felid appears anywhere on the unrestricted list.",
           "verifiedOn": "2026-08-05"
         }
-      }
+      },
+      "article": "/blog/serval-legal-guide/"
     },
     "chinchilla": {
       "name": "Chinchilla",
