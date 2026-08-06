@@ -3337,6 +3337,65 @@ export const AFFILIATE_PRODUCTS = [
     pets: ["reptiles-amphibians"],
   },
 
+  // Batch 7: gaps found while writing the gerbil, degu and Quaker parakeet guides,
+  // where a cost line had no product to link to at all. Prices and ratings captured
+  // from Amazon on 2026-08-05. `image: null` because the product photos have not been
+  // pulled into public/assets/images/affiliate yet.
+  {
+    slug: "bath-sand-supreme-science-selective",
+    product: "Supreme Petfoods Science Selective Bathing Sand for Hamsters, Gerbils, Chinchillas & Degus",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B09PZ1772S?tag=beastlyfacts-20",
+    image: null,
+    rating: 4.7,
+    price: "$10–$14",
+    description: "Bathing sand rather than the finer chinchilla dust, which is what gerbils and degus actually need to keep their coats from going greasy and matted. One of the few products labelled for both species.",
+    covers: ["Sand bath (chinchilla sand)", "Bathing sand", "Sand for bathing"],
+    altGroup: "small-pet-bath-sand",
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "bath-sand-niteangel-desert",
+    product: "Niteangel Hamster Desert Bath Sand, 2.5 lb / 40 oz, No-Dust",
+    category: "Small Mammal & Exotic Pet Gear",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0BW8RRDF1?tag=beastlyfacts-20",
+    image: null,
+    rating: 4.7,
+    price: "$12–$16",
+    description: "The higher-volume alternative to the Supreme sand, with a no-dust formulation. Merck notes gerbils deprived of sand bathing develop matted fur and measurable behaviour changes, so this is husbandry rather than grooming.",
+    covers: [],
+    altGroup: "small-pet-bath-sand",
+    pets: ["small-mammals"],
+  },
+  {
+    slug: "screen-cover-zilla-30x12",
+    product: "Zilla Fresh Air Screen Cover, Metal Mesh Terrarium Lid, 30 x 12 inches",
+    category: "Enclosures & Cages",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B000QFQ300?tag=beastlyfacts-20",
+    image: null,
+    rating: 4.7,
+    price: "$35–$42",
+    description: "Sized for a standard 20-gallon long, which is the tank a pair of gerbils wants. A glass tank holds the deep bedding gerbils need in a way a wire cage cannot, but it needs a secured mesh top rather than one resting on the rim.",
+    covers: ["Secure mesh lid", "Secure screen lid", "Mesh lid"],
+    pets: ["small-mammals", "reptiles-amphibians"],
+  },
+  {
+    slug: "bird-travel-carrier-perch",
+    product: "Bird Travel Carrier, Portable Small Parrot and Parakeet Carrier with Standing Perch and Mat",
+    category: "Enclosures & Cages",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0BG657ZV9?tag=beastlyfacts-20",
+    image: null,
+    rating: 4.6,
+    price: "$15–$20",
+    description: "A soft-sided carrier with a fitted perch, sized for a bird around the Quaker's twelve inches. The thing you need before the first vet trip rather than after it.",
+    covers: ["Travel carrier"],
+    pets: ["birds"],
+  },
+
 ];
 
 // Display order for category sections on the standalone gear page.

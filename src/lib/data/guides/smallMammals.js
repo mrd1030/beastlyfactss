@@ -247,6 +247,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
     costs: {
       setup: [
         { item: "20-gallon long aquarium (terrestrial setup)", low: 35, high: 60 },
+        { item: "Secure mesh lid", low: 35, high: 42 },
         { item: "Solid exercise wheel (10-12 in)", low: 38, high: 42 },
         { item: "Hideouts and tunnels", low: 10, high: 30 },
         { item: "Toys, tunnels, and dig boxes", low: 40, high: 58 },
@@ -257,6 +258,7 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
         { item: "Bedding", low: 18, high: 30 },
         { item: "Hamster pellets or lab blocks", low: 9, high: 14 },
         { item: "Grass hay (unlimited)", low: 18, high: 26 },
+        { item: "Sand bath (chinchilla sand)", low: 10, high: 14 },
         { item: "Chew toys (smaller, softer)", low: 10, high: 18 },
         { item: "Exotic vet check", low: 60, high: 130 },
       ],

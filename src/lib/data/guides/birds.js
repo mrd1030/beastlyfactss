@@ -491,6 +491,7 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
         { item: "Food and water dishes", low: 10, high: 18 },
         { item: "Cuttlebone or mineral block", low: 8, high: 12 },
         { item: "Gram scale (weight monitoring)", low: 30, high: 40 },
+        { item: "Travel carrier", low: 15, high: 20 },
       ],
       annual: [
         { item: "Small parrot pellets", low: 15, high: 22 },
