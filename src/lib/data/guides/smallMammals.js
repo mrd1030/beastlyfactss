@@ -102,7 +102,9 @@ Fur ring - a constricting ring of fur around the penis in males - can develop du
       ],
     },
     sections: {
-      housing: `A pair needs at least 24x18x36 inches with multiple solid levels, and more floor area beats more height. Use wire with bar spacing of half an inch or less, and solid shelves rather than mesh, which injures feet. Glass tanks are a poor choice: degus are active and produce a lot of dust, and a tank cannot ventilate it.
+      housing: `A pair needs at least 24x18x36 inches with multiple solid levels, and vertical space matters as much as floor area. The RSPCA is specific about this: wild degus climb onto the branches of shrubs and small trees, so they want safe-wood branches (pear, apple or beech), platforms at different heights to jump between, and stable rock formations to scramble on. Use wire with bar spacing of half an inch or less, and solid shelves rather than mesh, which injures feet. Glass tanks are a poor choice: degus are active and produce a lot of dust, and a tank cannot ventilate it.
+
+Fit a solid roof. Degus are prey animals whose main wild predators are birds of prey, and they are genuinely frightened by movement above them. A solid top rather than an open mesh one makes a visible difference to how settled they are.
 
 Give them a deep substrate layer to dig in. Degus are burrowers and a cage with a shallow tray is a cage they will spend their time trying to escape. Six inches of paper-based bedding or a dig box the full width of the cage will be used constantly.
 
@@ -111,11 +113,13 @@ Everything wooden will be destroyed. Degu incisors are open-rooted and grow for 
 Keep them at 60 to 72 degrees F. Like chinchillas they overheat easily and cannot cope above about 80, and a degu breathing rapidly with a wet chin in a warm room is in trouble.`,
       diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fibre that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
 
-Pellets must be sugar-free. Use a chinchilla or dedicated degu pellet with no molasses, no dried fruit, no seeds and no coloured pieces, at roughly a tablespoon per degu per day. Rabbit and guinea pig pellets are usually unsuitable because of added sugar and, in the guinea pig case, added vitamin C the degu does not need.
+Pellets must be sugar-free, and the RSPCA is clear that hay matters more than the pellets do. Use a dedicated degu pellet, or a guinea pig or chinchilla nugget provided it contains no molasses, at roughly a tablespoon per degu per day. Foods formulated for rabbits, hamsters and gerbils are not suitable, and neither are chinchilla mixes with dried fruit in them.
 
-No fruit, no carrot, no sweetcorn, no honey sticks, no yoghurt drops. This is not a general caution about treats: degus have an atypical insulin and a genuine inability to handle simple sugars, and diabetes in a pet degu shows up as cataracts, weight loss and excessive drinking. Safe extras are small amounts of leafy greens, dandelion, plantain, and the occasional plain oat or sunflower seed as a training reward.
+No fruit, no honey sticks, no yoghurt drops. This is not a general caution about treats: degus have an atypical insulin and a genuine inability to handle simple sugars, and diabetes in a pet degu shows up as cataracts, weight loss and excessive drinking. Carrot, sweet potato, beetroot and parsnip are all higher-sugar vegetables, so they belong in very small pieces as an occasional treat rather than as part of the daily bowl. Commercial small-animal treats are frequently too sugary to use at all. Safe extras are leafy greens, dandelion and plantain.
 
-Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of malnutrition, not good hygiene.`,
+Let them eat their own droppings. Degus are coprophagic and the RSPCA treats this as a nutritional requirement rather than a habit to discourage: they need it to get essential nutrients and keep the gut working.
+
+Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of poor health, not good hygiene, and teeth should be checked weekly for colour, length and shape.`,
       enrichment: `Degus are diurnal, which is the main reason people choose them: they are awake and interactive during the day rather than at two in the morning. That also means they need genuine daytime stimulation.
 
 They must be kept in at least a pair, and preferably a same-sex group from the same litter. A lone degu is a welfare problem, not a preference. Introducing unfamiliar adults is difficult and often fails, so buy littermates or an already-bonded group rather than planning to add later.
@@ -125,9 +129,11 @@ Provide a solid running wheel of 12 inches or more, tunnels, ceramic hides, plat
 They need a dust bath two or three times a week for ten to fifteen minutes, using chinchilla dust rather than sand. Their coat goes greasy and matted without it.
 
 Never pick a degu up by the tail. The skin sheds away as a predator defence, the exposed section is then lost, and it does not grow back.`,
-      health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite.
+      health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite. Opaque whitening of the eye is on the RSPCA's daily check list for exactly this reason.
 
-Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, dropping food, weight loss and a preference for softer items. This needs an exotics vet with a proper oral examination, usually under anaesthetic, not a visual check of the front teeth alone.
+Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, wetness around the mouth, dropping food, weight loss and a preference for softer items. Only a vet should correct overgrown or misaligned teeth. This needs a proper oral examination, usually under anaesthetic, not a visual check of the front teeth alone.
+
+Vitamin A deficiency and liver disease both appear on the RSPCA's list of conditions degu keepers should learn to recognise, alongside diabetes, tail loss, heat stroke and respiratory infection. Degus are a relatively new pet species and the veterinary picture is still filling in, which is a good argument for registering with an exotics vet who actually sees them.
 
 Bumblefoot comes from wire flooring and dirty bedding. Respiratory infections come from dusty bedding and poor ventilation, and a degu with laboured breathing or a discharge from the nose needs seeing quickly.
 
@@ -272,8 +278,12 @@ Bar spacing on any wire section must be half an inch or less. Gerbils are small,
 
 Keep them at 65 to 75 degrees F, out of direct sun. A glass tank in a sunny window becomes an oven very quickly.
 
+Keep the humidity low, which is the one environmental number that really matters for this species. Merck advises staying below 40 percent, because above 50 percent gerbils develop nasal dermatitis, the sore-nose condition described in the health section. A gerbil setup in a damp room or a poorly ventilated tank is asking for it.
+
 Skip the plastic. Tubes, wheels and hides in plastic get chewed through fast, and swallowed fragments cause impactions.`,
-      diet: `A good gerbil or hamster seed mix is the base, at roughly a tablespoon per gerbil per day. Look for a mix built on whole grains and seeds rather than one padded with coloured extruded pieces, and avoid mixes heavy on sunflower seed, which gerbils will pick out first and which is far too fatty as a staple.
+      diet: `Feed a pelleted diet labelled for gerbils specifically, at 18 to 20 percent protein and roughly 5 to 8 grams per gerbil per day. Merck is unusually direct about this: gerbils fed standard rat or mouse diets develop insidious periodontal disease, obesity, reduced glucose tolerance and diabetic changes in the pancreas, and its stated rule is to always feed diets labelled for the species.
+
+Sunflower seed is the specific thing to keep out. It is high in fat and low in calcium, gerbils will pick it out first given the chance, and on diets above about 4 percent fat they develop raised blood cholesterol, more so in males. Seed mixes are a treat rather than a staple.
 
 Provide hay alongside it, both to eat and to build with.
 
@@ -290,14 +300,18 @@ Give them things to destroy: cardboard tubes, plain toilet rolls, seagrass, untr
 
 A sand bath, not a dust bath, keeps the coat in order. Use chinchilla sand rather than the finer dust, and offer it a couple of times a week rather than leaving it in permanently.
 
-Handle low over a surface, scooped in cupped hands. Never grab the tail: like the degu, the skin can strip away and does not regrow.`,
-      health: `Tyzzer's disease is the one to know about. It is a bacterial infection, most often seen in young or stressed gerbils, and it moves fast: a hunched, lethargic gerbil with diarrhoea needs a vet the same day.
+Handle low over a surface, scooped in cupped hands. If you must steady a gerbil by the tail, take it at the base only. Merck is explicit that a gerbil lifted by the tail tip degloves: the skin slips off, leaving exposed tissue that goes necrotic and sloughs, and the treatment is prompt amputation of the bare section.`,
+      health: `Nasal dermatitis, called sore nose or facial eczema, is the condition Merck describes as common in pet gerbils. It starts as redness around the nostrils and can progress to hair loss and a spreading moist dermatitis, and if it reaches the sinuses it causes appetite loss, weight loss and can kill. The cause is not an infection to begin with: it is porphyrin secretion from the Harderian gland irritating the skin, driven by humidity above 50 percent, overcrowding, or being unable to sand bathe. Fix the environment as well as treating the skin.
 
-Scent gland tumours are common in older gerbils. The gland sits as a bare orange-tan oval on the belly, and any lump, ulceration or bleeding there is worth having looked at, since these are often removable when caught early.
+Tyzzer's disease is the one that kills fastest. Merck calls it the most frequently described fatal infectious disease of gerbils. It spreads by the faecal-oral route from contaminated bedding, and it presents as sudden death or a very short illness with diarrhoea. A hunched, lethargic gerbil with diarrhoea needs a vet the same day.
 
-Seizures happen in some lines and can look alarming. They are usually brief, triggered by stress or rough handling, and most animals grow out of them. Keep handling calm and short with a gerbil that has had one.
+Aural cholesteatoma is the one nobody warns you about. Merck records it in 50 percent of gerbils over two years old: a growth in the ear canal that pushes the eardrum inward, with head tilt as the visible sign, leading to bone damage and inner ear destruction.
 
-Overgrown teeth, wet tail-type diarrhoea and respiratory infections round out the usual list. Dusty bedding and poor ventilation are behind most respiratory problems.
+Tumours are common with age, at a 25 to 40 percent incidence past two or three years. Scent gland carcinomas in males and ovarian tumours in females account for around 80 percent of them. The scent gland sits as a bare orange-tan oval on the belly, so any lump, ulceration or bleeding there is worth checking early, since marking gland tumours can spread.
+
+Seizures occur in some lines and can look alarming. They typically pass in a few minutes and leave no lasting effects, and anticonvulsants are not usually needed. Merck notes that frequency and severity often decrease with age, but is careful to add that a subset of adults instead get progressively worse, so a gerbil whose seizures are becoming more frequent is not simply growing out of it. Handling gently and often in the first weeks of life suppresses them in predisposed animals.
+
+Overgrown teeth and respiratory infections round out the usual list. Dusty bedding and poor ventilation are behind most respiratory problems.
 
 Because gerbils drink so little, dehydration is easy to miss. Check skin tenting and check the bottle daily.`,
       checklist: [
@@ -306,9 +320,10 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
         "8 to 12 inches of bedding for burrowing",
         "Secure mesh lid",
         "Solid 8 in exercise wheel",
-        "Gerbil or hamster seed mix, low sunflower",
+        "Pelleted gerbil diet, 18 to 20 percent protein",
         "Hay for eating and tunnel building",
         "Chinchilla sand for bathing",
+        "Humidity kept below 40 percent",
         "Cardboard and untreated hardwood to chew",
         "Exotic veterinarian experienced with gerbils"
       ],

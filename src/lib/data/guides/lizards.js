@@ -313,14 +313,14 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     sections: {
       housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
 
-Substrate is the whole game with this species. Use six to ten inches of a mix that holds a tunnel: topsoil and coco fibre, slightly damp, with a layer of leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
+Substrate is the whole game with this species. Use four to six inches of a mix that holds a tunnel. ReptiFiles gives 40 percent organic topsoil, 40 percent coconut fibre and 20 percent fine sand, kept slightly damp, with leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
 
-Provide a basking spot of 95 to 100 degrees F at the surface, a cool end around 75 to 78, and a night drop into the low 70s. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
+Provide a basking surface of 92 to 96 degrees F, a cool end of 75 to 85, and a night drop to 70 to 75. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
 
-Fit UVB. A linear T5 at 5 to 6 percent across part of the enclosure is right; a small coil bulb is not. Humidity should sit around 60 to 75 percent, which deep damp substrate largely does on its own, topped up by misting one end.
+Fit UVB. A linear T5 at 5 to 6 percent across part of the enclosure is right; a small coil bulb is not. Humidity should sit at 60 to 70 percent, which deep damp substrate largely does on its own, topped up by misting morning and evening. Ventilate enough that it dries a little between mistings.
 
 Include a humid hide, a shallow water dish big enough to sit in, and plenty of cork bark and leaf cover. A skink that feels exposed will not come out.`,
-      diet: `Fire skinks are insectivores with an appetite. Feed a rotation of appropriately sized live insects: dubia roaches, crickets, black soldier fly larvae, silkworms and the occasional superworm. Adults eat every two to three days, juveniles daily.
+      diet: `Fire skinks are insectivores with an appetite. Feed a rotation of appropriately sized live insects: dubia roaches, crickets, black soldier fly larvae, silkworms and the occasional superworm. Adults eat twice a week, juveniles daily to every other day. Offer as much as the animal clears in about five minutes, with no feeder bigger than its head.
 
 Gut load the insects for at least 24 hours before offering them, on greens, squash and a commercial gut-load. An insect that has eaten nothing is close to an empty shell nutritionally.
 
@@ -349,9 +349,9 @@ Wild-caught animals are still common in this trade and often arrive with parasit
 Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
       checklist: [
         "36x18x18 in front-opening terrarium",
-        "6 to 10 inches of soil and coco fibre substrate",
+        "4 to 6 inches of topsoil, coco fibre and sand",
         "Leaf litter layer and cork bark cover",
-        "Halogen basking bulb on a dimmer, 95 to 100 F",
+        "Halogen basking bulb on a dimmer, 92 to 96 F",
         "Linear T5 UVB, 5 to 6 percent",
         "Humid hide and shallow water dish",
         "Digital thermometer and hygrometer",
@@ -469,18 +469,18 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
       ],
     },
     sections: {
-      housing: `Plan the adult enclosure before buying the hatchling. This is the whole problem with the species: a six inch juvenile in a 40 gallon tank becomes a five to six foot lizard needing something closer to 8 feet long, 4 deep and 6 tall. Almost nobody buys that in advance, and the result is thousands of surrendered iguanas a year.
+      housing: `Plan the adult enclosure before buying the hatchling. This is the whole problem with the species: a six inch juvenile in a 40 gallon tank becomes a five to six foot lizard, and the published minimum for a single adult is 10 feet long, 5 deep and 6 tall. Almost nobody buys that in advance, and the result is thousands of surrendered iguanas a year.
 
 Build upward as well as outward. Green iguanas are arboreal and will use height if it exists: broad branches, shelves and platforms at basking height matter more than floor area.
 
-Basking surface temperature should be 95 to 100 degrees F, with an ambient gradient from the mid 80s down to the high 70s, and a night drop no lower than about 73. Use banks of halogen floods on dimmers, not a single spot, because you are heating a large animal across a wide surface.
+Basking surface temperature should be around 120 degrees F, which surprises people used to smaller lizards, with general air temperature at 75 to 88 and a night range of 73 to 84. You are heating a large-bodied animal evenly rather than warming a spot, so use a cluster of halogen floods on dimmers: at least two bulbs for a juvenile and four or more for an adult.
 
-UVB is non-negotiable and needs to be strong. A high-output linear T5 at 10 to 12 percent, mounted the correct distance from the basking branch, running the length of the basking zone. Replace it every twelve months. Coil bulbs are useless for an animal this size.
+UVB is non-negotiable and needs to be strong. A high-output linear T5 at 12 to 14 percent, mounted at the manufacturer distance from the basking branch and running the length of the basking zone. The target is a UV index of 3 to 4 measured at the branch itself. Replace it every twelve months. Coil bulbs are useless for an animal this size.
 
-Humidity around 65 to 75 percent, which usually needs a misting system or a large evaporation surface rather than hand spraying. Provide a water basin big enough for the animal to sit in.`,
-      diet: `Green iguanas are strict herbivores and this is where most of them are damaged. The diet is leafy greens and vegetables, and it should be about 80 to 90 percent dark leafy greens.
+Humidity of 60 to 80 percent through the day, rising toward 100 at night, which usually needs a misting system or a large evaporation surface rather than hand spraying. Provide a water basin big enough for the animal to sit in.`,
+      diet: `Green iguanas are strict herbivores and this is where most of them are damaged. The diet is leafy greens and vegetables in a roughly 60 / 30 / 10 split of greens, other vegetables and fruit.
 
-Build it on collard, mustard and turnip greens, dandelion, escarole, endive and hibiscus. Add squash, parsnip, green beans and bell pepper as the vegetable portion. Fruit is an occasional garnish, not a food group.
+The working ratio is about 60 percent dark leafy greens, 30 percent other vegetables and 10 percent fruit. Build the greens on collard, mustard and turnip, dandelion, escarole, endive and hibiscus, and the vegetable share on squash, parsnip, green beans and bell pepper.
 
 Do not feed animal protein. No insects, no dog food, no cat food, no eggs. Iguanas fed protein develop kidney damage and gout, and it is one of the more common causes of premature death in captive animals. Ignore any older care sheet that suggests otherwise.
 
@@ -506,24 +506,24 @@ Females can become egg bound whether or not a male is present. A gravid female n
 
 Find an exotics vet who genuinely treats large lizards, and confirm they will before you need them. Not every reptile vet works on adult iguanas.`,
       checklist: [
-        "Adult enclosure plan, roughly 8x4x6 ft, before purchase",
-        "High output linear T5 UVB, 10 to 12 percent",
-        "Halogen basking bank on dimmers, 95 to 100 F",
+        "Adult enclosure plan, 10x5x6 ft minimum, before purchase",
+        "High output linear T5 UVB, 12 to 14 percent, UVI 3 to 4",
+        "Halogen basking cluster on dimmers, around 120 F surface",
         "Broad climbing branches and a full-body basking shelf",
         "Water basin large enough to sit in",
-        "Dark leafy greens as 80 to 90 percent of the diet",
+        "Roughly 60 percent greens, 30 percent veg, 10 percent fruit",
         "No animal protein of any kind",
         "Calcium several times a week, multivitamin weekly",
-        "Humidity 65 to 75 percent",
+        "Humidity 60 to 80 percent by day",
         "Exotic veterinarian who treats adult iguanas"
       ],
     },
     faqs: [
-      { q: "How big do green iguanas actually get?", a: "Four to six feet including the tail, and ten to twenty pounds, from a hatchling of about six inches. That is the central fact about keeping one and the reason so many end up in rescues. An adult needs an enclosure in the region of 8 feet long, 4 deep and 6 tall, which almost always has to be custom built, and it will live fifteen to twenty years. Work out where that enclosure is going before you buy the small one." },
+      { q: "How big do green iguanas actually get?", a: "Four to six feet including the tail, and ten to twenty pounds, from a hatchling of about six inches. That is the central fact about keeping one and the reason so many end up in rescues. The published minimum for one adult is 10 feet long, 5 deep and 6 tall, which almost always has to be custom built, and it will live fifteen to twenty years. Work out where that enclosure is going before you buy the small one." },
       { q: "Can green iguanas eat insects or meat?", a: "No. They are strict herbivores and animal protein damages their kidneys, causing renal failure and gout that is largely irreversible by the time it is visible. This includes insects, dog food, cat food and eggs. Some older care sheets recommend protein for juveniles; that advice is outdated and harmful. The diet is dark leafy greens with vegetables, and fruit only as an occasional garnish." },
       { q: "Why is my iguana's jaw swollen?", a: "That is a classic sign of metabolic bone disease, where the body pulls calcium from the skeleton and replaces jaw bone with fibrous tissue, producing the rubbery look keepers call rubber jaw. It comes from inadequate UVB, inadequate dietary calcium, or temperatures too low to digest properly. It needs veterinary treatment, and it needs the underlying lighting and diet fixed or it will simply continue." },
       { q: "Do male iguanas become aggressive?", a: "Many do, seasonally. A sexually mature male in breeding condition can become genuinely dangerous for a period of weeks to months, often fixating on one person, and a five foot lizard bites hard, whips with the tail and does most of its damage with the claws. It is a hormonal state rather than a personality flaw. Plan for handling to change during those months and take it seriously." },
-      { q: "Does a green iguana really need that much UVB?", a: "Yes. It is a large diurnal basking herbivore that synthesises vitamin D3 from UVB in order to use dietary calcium, and the requirement scales with the animal. Use a high-output linear T5 at 10 to 12 percent running the length of the basking area at the manufacturer's stated distance. Compact and coil bulbs cannot cover an animal this size, and any bulb needs replacing at twelve months even while it still gives off visible light." },
+      { q: "Does a green iguana really need that much UVB?", a: "Yes. It is a large diurnal basking herbivore that synthesises vitamin D3 from UVB in order to use dietary calcium, and the requirement scales with the animal. Use a high-output linear T5 at 12 to 14 percent running the length of the basking area at the manufacturer's stated distance, aiming for a UV index of 3 to 4 at the branch. Compact and coil bulbs cannot cover an animal this size, and any bulb needs replacing at twelve months even while it still gives off visible light." },
     ],
   },
   {

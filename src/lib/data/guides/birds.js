@@ -529,7 +529,7 @@ Plan on several hours of out-of-cage time daily, with supervision. A playstand o
 Watch the territoriality. Quakers frequently become defensive about the cage itself while being perfectly friendly away from it, and many bond hard to one person and get sharp with everyone else. Handling by several people from early on, and doing interactions away from the cage, both help a lot.
 
 They are loud. Not macaw loud, but a Quaker has a piercing contact call it uses when it wants company, and that is a genuine consideration in an apartment.`,
-      health: `Quaker mutilation syndrome is the one specific to this species: self-inflicted feather plucking and skin damage, usually on the chest, shoulders and flanks. Causes are tangled and include boredom, hormonal frustration, poor diet, allergy and anxiety, and it needs an avian vet promptly rather than waiting to see if it settles.
+      health: `Feather destructive behaviour is the problem most associated with this species, and in Quakers it can go past plucking into self-inflicted skin damage, usually on the chest and shoulders. Causes are tangled and include boredom, hormonal frustration, poor diet, allergy and anxiety, and it needs an avian vet promptly rather than waiting to see whether it settles. Keepers often call the severe form Quaker mutilation syndrome, though the sources we checked describe it simply as feather destructive behaviour.
 
 Fatty liver disease follows from seed-heavy diets and too little exercise, and Quakers are prone to it.
 
@@ -539,7 +539,7 @@ Egg binding affects females, including those with no male present, and chronic e
 
 Establish care with an avian vet, not a general small animal practice, and get a baseline exam early. Annual checks catch the slow problems while they are still fixable.`,
       checklist: [
-        "Check state and city law before buying",
+        "Check state and city law before buying, and before moving",
         "24x24x30 in cage minimum, 5/8 in bar spacing",
         "Pelleted base diet, not a seed mix",
         "Fresh vegetables daily",
@@ -552,7 +552,7 @@ Establish care with an avian vet, not a general small animal practice, and get a
       ],
     },
     faqs: [
-      { q: "Are Quaker parakeets legal to own?", a: "Not everywhere, and this is the species where you must check first. Escaped Quakers build large communal stick nests on power infrastructure and have established breeding colonies well outside their native range, so a number of US states ban them outright and others require permits, banding or wing clipping. It is the only common pet parrot with a widespread legal problem attached. Check your state and your city before buying, not after." },
+      { q: "Are Quaker parakeets legal to own?", a: "Not everywhere, and this is the species where you must check first. Escaped Quakers build large communal stick nests on power infrastructure and have established breeding colonies well outside their native range, so a number of US states ban them outright and others require permits, banding or wing clipping. It is the only common pet parrot with a widespread legal problem attached. Lafeber notes birds have been confiscated and euthanised in states where they are illegal to own, so check your state and city before buying, and check again before moving to a new one." },
       { q: "Do Quaker parakeets talk?", a: "Yes, and they are among the most reliable talkers of any small parrot. Many build vocabularies of dozens of words and use them in context, often with clearer diction than a budgie. They learn best from repetition tied to a real situation, a greeting as you walk in, a word as you hand over food, rather than from recordings. Not every individual talks, and hand-raised birds that get plenty of interaction are the most likely to." },
       { q: "Why is my Quaker plucking its feathers?", a: "Quaker mutilation syndrome is a recognised problem in this species, going beyond ordinary plucking to self-inflicted skin damage, usually on the chest and shoulders. The causes overlap: boredom, hormonal frustration, poor diet, allergies and anxiety all contribute, and it can become a habit that outlives the original trigger. See an avian vet early rather than waiting, because the earlier it is addressed the better the outcome." },
       { q: "Should I give my Quaker a nest box?", a: "No, in almost all pet situations. Quakers are the only parrots that build their own nests and the drive is strong, but a nest box or any dark enclosed space encourages hormonal behaviour, territorial aggression and chronic egg laying in hens. Give them shreddable and weavable material to satisfy the building instinct out in the open instead, and keep enclosed hides out of the cage." },
