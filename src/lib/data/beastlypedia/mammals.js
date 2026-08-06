@@ -391,6 +391,39 @@ export const mammalBeastfiles = [
     relatedFiles: ['every-wild-tiger-would-fit-in-a-small-town'],
   },
   {
+    id: 'serval',
+    name: 'Serval',
+    scientific: 'Leptailurus serval',
+    tagline: 'The cat built like a radio dish on stilts.',
+    habitat: 'Savannah',
+    group: 'Mammals',
+    overview:
+      'The serval is a medium sized African cat that has specialised almost entirely in one thing: finding rodents it cannot see. It has the longest legs of any cat relative to body size and ears large enough to look borrowed, and it hunts in tall wetland grass by standing still, listening, and then launching itself at a sound. That combination makes it one of the most successful hunters in the cat family, taking prey on roughly half its attempts, a strike rate most big cats never approach. Almost everything about its shape follows from hunting by ear in grass too dense to see through.',
+    origin:
+      'Sub-Saharan Africa, concentrated in well watered grassland and the reedy margins of wetlands rather than open dry savanna, with a small remnant population in Morocco.',
+    notableTraits: [
+      'Longest legs of any cat relative to body size',
+      'Hunts by sound, locating rodents through dense grass',
+      'Succeeds on roughly half of its hunting attempts',
+      'Can leap several times its own height to take birds in flight',
+      'Crosses with domestic cats to produce the savannah cat',
+    ],
+    conservation:
+      'Least Concern overall, with the population considered stable across most of its African range. The exception is the north: the species is effectively gone from most of North Africa, and the small Moroccan population is the last remnant there.',
+    funFacts: [
+      'Its ears are large enough to hear rodents moving underground and in thick grass, and it will hunt with its eyes closed to concentrate on the sound.',
+      'A serval can jump around three metres straight up to knock a bird out of the air.',
+      'It has the highest hunting success rate of any wild cat, several times that of a lion.',
+    ],
+    heroImage: '/assets/beastlypedia/serval-hero.jpg',
+    heroAlt:
+      'A serval standing alert in tall savanna grass with its oversized ears raised',
+    secondaryImage: '/assets/beastlypedia/serval-secondary.jpg',
+    secondaryAlt:
+      'Close portrait of a serval showing its spotted coat and tall rounded ears',
+    relatedFiles: [],
+  },
+  {
     id: 'rhinoceros',
     factAnimal: 'Rhino',
     name: 'Rhinoceros',

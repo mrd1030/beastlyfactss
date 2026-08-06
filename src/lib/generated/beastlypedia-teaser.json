@@ -96,6 +96,14 @@
     "heroAlt": "A wild tiger walking through tall grass at the edge of forest, striped flank catching the light"
   },
   {
+    "id": "serval",
+    "name": "Serval",
+    "tagline": "The cat built like a radio dish on stilts.",
+    "group": "Mammals",
+    "heroImage": "/assets/beastlypedia/serval-hero.jpg",
+    "heroAlt": "A serval standing alert in tall savanna grass with its oversized ears raised"
+  },
+  {
     "id": "rhinoceros",
     "name": "Rhinoceros",
     "tagline": "The horn is not ivory and not bone. It is the same protein as your fingernails.",

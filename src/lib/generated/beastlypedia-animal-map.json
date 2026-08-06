@@ -47,6 +47,10 @@
     "id": "tiger",
     "name": "Tiger"
   },
+  "serval": {
+    "id": "serval",
+    "name": "Serval"
+  },
   "rhino": {
     "id": "rhinoceros",
     "name": "Rhinoceros"

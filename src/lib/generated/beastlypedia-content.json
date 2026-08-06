@@ -425,7 +425,7 @@
       "gray-wolf",
       "lion",
       "tiger",
-      "rhinoceros"
+      "serval"
     ]
   },
   "gray-wolf": {
@@ -465,8 +465,8 @@
     "siblings": [
       "lion",
       "tiger",
-      "rhinoceros",
-      "wombat"
+      "serval",
+      "rhinoceros"
     ]
   },
   "lion": {
@@ -505,9 +505,9 @@
     ],
     "siblings": [
       "tiger",
+      "serval",
       "rhinoceros",
-      "wombat",
-      "honey-badger"
+      "wombat"
     ]
   },
   "tiger": {
@@ -544,6 +544,16 @@
         "sourceCount": 4
       }
     ],
+    "siblings": [
+      "serval",
+      "rhinoceros",
+      "wombat",
+      "honey-badger"
+    ]
+  },
+  "serval": {
+    "facts": [],
+    "related": [],
     "siblings": [
       "rhinoceros",
       "wombat",
@@ -762,9 +772,9 @@
     ],
     "related": [],
     "siblings": [
-      "green-anaconda",
       "panther-chameleon",
       "gaboon-viper",
+      "green-anaconda",
       "fennec-fox"
     ]
   },
@@ -817,20 +827,20 @@
       }
     ],
     "siblings": [
-      "thorny-devil",
       "gaboon-viper",
       "green-anaconda",
-      "aye-aye"
+      "thorny-devil",
+      "slow-loris"
     ]
   },
   "gaboon-viper": {
     "facts": [],
     "related": [],
     "siblings": [
-      "panther-chameleon",
       "green-anaconda",
       "thorny-devil",
-      "slow-loris"
+      "panther-chameleon",
+      "sloth"
     ]
   },
   "green-anaconda": {
@@ -875,10 +885,10 @@
       }
     ],
     "siblings": [
-      "gaboon-viper",
       "thorny-devil",
       "panther-chameleon",
-      "capybara"
+      "gaboon-viper",
+      "shoebill"
     ]
   },
   "glass-frog": {
@@ -909,10 +919,10 @@
       }
     ],
     "siblings": [
-      "axolotl",
       "blue-poison-dart-frog",
-      "panther-chameleon",
-      "gaboon-viper"
+      "axolotl",
+      "gaboon-viper",
+      "victoria-crowned-pigeon"
     ]
   },
   "blue-poison-dart-frog": {
@@ -942,10 +952,10 @@
     ],
     "related": [],
     "siblings": [
-      "glass-frog",
       "axolotl",
-      "gaboon-viper",
-      "victoria-crowned-pigeon"
+      "glass-frog",
+      "victoria-crowned-pigeon",
+      "aye-aye"
     ]
   },
   "axolotl": {
@@ -983,8 +993,8 @@
       }
     ],
     "siblings": [
-      "blue-poison-dart-frog",
       "glass-frog",
+      "blue-poison-dart-frog",
       "platypus",
       "crow"
     ]
@@ -1002,10 +1012,10 @@
     ],
     "related": [],
     "siblings": [
-      "victoria-crowned-pigeon",
       "emperor-penguin",
       "crow",
-      "capybara"
+      "victoria-crowned-pigeon",
+      "green-anaconda"
     ]
   },
   "victoria-crowned-pigeon": {
@@ -1035,10 +1045,10 @@
     ],
     "related": [],
     "siblings": [
-      "emperor-penguin",
       "crow",
       "shoebill",
-      "gaboon-viper"
+      "emperor-penguin",
+      "glass-frog"
     ]
   },
   "emperor-penguin": {
@@ -1076,10 +1086,10 @@
       }
     ],
     "siblings": [
-      "crow",
       "shoebill",
       "victoria-crowned-pigeon",
-      "narwhal"
+      "crow",
+      "wolverine"
     ]
   },
   "crow": {
@@ -1117,10 +1127,10 @@
       }
     ],
     "siblings": [
-      "shoebill",
       "victoria-crowned-pigeon",
       "emperor-penguin",
-      "wombat"
+      "shoebill",
+      "pangolin"
     ]
   },
   "manta-ray": {
@@ -1136,10 +1146,10 @@
     ],
     "related": [],
     "siblings": [
-      "cuttlefish",
       "humpback-whale",
       "leafy-sea-dragon",
-      "dolphin"
+      "dolphin",
+      "clownfish"
     ]
   },
   "leafy-sea-dragon": {
@@ -1155,10 +1165,10 @@
     ],
     "related": [],
     "siblings": [
-      "humpback-whale",
       "manta-ray",
       "dolphin",
-      "clownfish"
+      "clownfish",
+      "immortal-jellyfish"
     ]
   },
   "dolphin": {
@@ -1245,10 +1255,10 @@
       }
     ],
     "siblings": [
-      "manta-ray",
       "leafy-sea-dragon",
       "clownfish",
-      "immortal-jellyfish"
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "clownfish": {
@@ -1321,10 +1331,10 @@
       }
     ],
     "siblings": [
-      "leafy-sea-dragon",
       "dolphin",
       "immortal-jellyfish",
-      "seahorse"
+      "seahorse",
+      "shark"
     ]
   },
   "immortal-jellyfish": {
@@ -1390,10 +1400,10 @@
       }
     ],
     "siblings": [
-      "dolphin",
       "clownfish",
       "seahorse",
-      "shark"
+      "shark",
+      "octopus"
     ]
   },
   "seahorse": {
@@ -1452,10 +1462,10 @@
       }
     ],
     "siblings": [
-      "clownfish",
       "immortal-jellyfish",
       "shark",
-      "octopus"
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "shark": {
@@ -1500,10 +1510,10 @@
       }
     ],
     "siblings": [
-      "immortal-jellyfish",
       "seahorse",
       "octopus",
-      "mantis-shrimp"
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "octopus": {
@@ -1564,10 +1574,10 @@
       }
     ],
     "siblings": [
-      "seahorse",
       "shark",
       "mantis-shrimp",
-      "cuttlefish"
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "mantis-shrimp": {
@@ -1605,10 +1615,10 @@
       }
     ],
     "siblings": [
-      "shark",
       "octopus",
       "cuttlefish",
-      "humpback-whale"
+      "humpback-whale",
+      "manta-ray"
     ]
   },
   "cuttlefish": {
@@ -1641,10 +1651,10 @@
       }
     ],
     "siblings": [
-      "octopus",
       "mantis-shrimp",
       "humpback-whale",
-      "manta-ray"
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   },
   "humpback-whale": {
@@ -1670,10 +1680,10 @@
       }
     ],
     "siblings": [
-      "mantis-shrimp",
       "cuttlefish",
       "manta-ray",
-      "leafy-sea-dragon"
+      "leafy-sea-dragon",
+      "dolphin"
     ]
   }
 }
