@@ -78,7 +78,13 @@ export default function EncyclopediaAnimal() {
   }
 
   const relatedFacts = getRelatedFacts(animal.name, facts);
-  const relatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  // Legal guides are pulled out of the deep-dive list and given their own card.
+  // Mixed in with husbandry articles they read as one more thing to get round
+  // to, when they are the one link on the page that can tell a reader they
+  // cannot legally keep the animal at all.
+  const allRelatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
+  const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
   const bio = animal.bio || {};
   const ogImage = guide?.image
@@ -272,6 +278,26 @@ export default function EncyclopediaAnimal() {
                     See the state map <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
+              </div>
+            )}
+
+            {/* The written legal guide, kept next to the map rather than in the
+                deep-dive list below, so everything legal for this species sits
+                in one place and reads as its own kind of thing. */}
+            {legalArticles.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                  ⚖️ Legal Guide
+                </p>
+                <div className="space-y-3">
+                  {legalArticles.map(article => (
+                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                        {article.title}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 

@@ -433,4 +433,12 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/savannah-monitor-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/emperor-scorpion-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
 };

@@ -55,9 +55,14 @@ export default function GuideDetail() {
     navigate('/guides/');
   };
 
-  const relatedArticles = guide
+  // Same split as the encyclopedia page: a legal guide gets its own card rather
+  // than sitting in the deep-dive list, because it answers a different question
+  // from the husbandry articles around it.
+  const allRelatedArticles = guide
     ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
+  const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
+  const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
 
   const relatedFacts = guide ? getRelatedFacts(guide.name, facts) : [];
 
@@ -565,6 +570,24 @@ export default function GuideDetail() {
               <p className="text-xs text-muted-foreground font-body mb-4">New care guides straight to your inbox. No spam. 🐾</p>
               <BeehiivSubscribe />
             </div>
+
+            {/* Legal guide, kept above and apart from the deep-dive list */}
+            {legalArticles.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+                  ⚖️ Legal Guide
+                </p>
+                <div className="space-y-3">
+                  {legalArticles.map(article => (
+                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                      <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                        {article.title}
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Related deep-dive articles */}
             {relatedArticles.length > 0 && (
