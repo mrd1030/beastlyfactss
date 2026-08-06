@@ -77,7 +77,6 @@ equity:
    | article slug prefix | relatedArticles key |
    |---|---|
    | `argentine-tegu` | `tegu` |
-   | `fire-bellied-toad` | `fire-belly-toad` |
    | `giant-millipede` | `millipede` |
    | `oscar-fish` | `oscar` |
    | `jacksons-chameleon` | `chameleon` |

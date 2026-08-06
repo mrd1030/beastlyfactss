@@ -126,7 +126,7 @@ const ENCYCLOPEDIA_ANIMAL_IDS = [
   'domestic-shorthair','maine-coon','siamese','ragdoll','bengal','persian',
   'tarantula','praying-mantis','millipede','hissing-cockroach','stick-insect','emperor-scorpion',
   'jumping-spider','hermit-crab',
-  'pacman-frog','axolotl','whites-tree-frog','fire-belly-toad','tiger-salamander',
+  'pacman-frog','axolotl','whites-tree-frog','fire-bellied-toad','tiger-salamander',
   'betta-fish','goldfish','koi','guppy','angelfish','corydoras-catfish','neon-tetra','oscar',
 ];
 
@@ -139,7 +139,7 @@ const GUIDE_IDS = [
   'budgie','lovebird','tokay-gecko','african-fat-tail','uromastyx','savannah-monitor',
   'green-anole','california-kingsnake','milk-snake','russian-tortoise','sulcata-tortoise',
   'box-turtle','ferret','tarantula','praying-mantis','millipede','emperor-scorpion',
-  'hissing-cockroach','stick-insect','jumping-spider','hermit-crab','whites-tree-frog','pacman-frog','fire-belly-toad',
+  'hissing-cockroach','stick-insect','jumping-spider','hermit-crab','whites-tree-frog','pacman-frog','fire-bellied-toad',
   'axolotl','tiger-salamander','cockatiel','conure','canary','cockatoo',
   'dog-universal','dog-small-breed','dog-medium-breed','dog-large-breed','dog-labrador',
   'dog-golden-retriever','dog-german-shepherd','dog-french-bulldog','dog-border-collie',

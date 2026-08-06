@@ -56,12 +56,12 @@ Occasional variety with frozen bloodworms (thawed), brine shrimp, daphnia, or si
     ],
   },
   {
-    id: "fire-belly-toad",
+    id: "fire-bellied-toad",
     name: "Fire-Bellied Toad",
     emoji: "🐸",
     difficulty: "Beginner",
     petType: "Amphibians",
-    image: "/assets/guides/fire-belly-toad.jpg",
+    image: "/assets/guides/fire-bellied-toad.jpg",
     tagline: "The vivid red and black toad that warns predators of its mild toxicity!",
     funFact: "When threatened, fire-bellied toads perform the Unkenreflex: they arch their backs and flip their limbs upward to display the bright red and black warning coloration on their bellies. This 'unken' pose is a classic example of aposematism, advertising: 'I am toxic, do not eat me!'",
     // Rough starting ranges, not verified current pricing - needs a review pass.

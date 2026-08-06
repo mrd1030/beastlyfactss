@@ -13,8 +13,8 @@ export const amphibianEncyclopedia = [
     },
   },
   {
-    id: "fire-belly-toad", name: "Fire-Bellied Toad", scientific: "Bombina orientalis",
-    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "fire-belly-toad", available: true, image: "/assets/guides/fire-belly-toad.jpg",
+    id: "fire-bellied-toad", name: "Fire-Bellied Toad", scientific: "Bombina orientalis",
+    category: "Amphibians", emoji: "🐸", difficulty: "Beginner", guideId: "fire-bellied-toad", available: true, image: "/assets/guides/fire-bellied-toad.jpg",
     bio: {
       overview: "The Oriental fire-bellied toad is native to northeastern China, Korea, and the Russian Far East, where it inhabits slow-moving streams and mountain ponds. Its vivid red and orange belly serves as aposematic warning coloration - signaling to predators that it is toxic. When threatened, it arches its back to display this warning coloration (the unken reflex). Fire-bellied toads produce skin secretions toxic enough to irritate mucous membranes and eyes.",
       origin: "Northeastern China, Korea, and Russian Far East",

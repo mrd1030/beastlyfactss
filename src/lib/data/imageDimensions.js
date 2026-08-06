@@ -101,7 +101,7 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
-  "/assets/guides/fire-belly-toad.jpg": {
+  "/assets/guides/fire-bellied-toad.jpg": {
     "width": 1280,
     "height": 720
   },

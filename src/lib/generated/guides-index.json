@@ -10,12 +10,12 @@
       "tagline": "The 'forever larva' with feathery gills and superhero-level regeneration!"
     },
     {
-      "id": "fire-belly-toad",
+      "id": "fire-bellied-toad",
       "name": "Fire-Bellied Toad",
       "emoji": "🐸",
       "difficulty": "Beginner",
       "petType": "Amphibians",
-      "image": "/assets/guides/fire-belly-toad.jpg",
+      "image": "/assets/guides/fire-bellied-toad.jpg",
       "tagline": "The vivid red and black toad that warns predators of its mild toxicity!"
     },
     {

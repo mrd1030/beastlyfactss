@@ -134,3 +134,11 @@
 # either way. Only a non-JS crawler hitting one of those exact couple of
 # noindex routes would see a 404 instead of a soft 200 - an acceptable
 # trade for not breaking SEO tags on every real, indexed page on the site.
+
+# The encyclopedia and guide id for Bombina orientalis was fire-belly-toad
+# while all six of its articles, its display name and the species itself use
+# fire-bellied. Renamed to match; these two routes were live and indexed.
+/encyclopedia/animal/fire-belly-toad /encyclopedia/animal/fire-bellied-toad/ 301
+/encyclopedia/animal/fire-belly-toad/ /encyclopedia/animal/fire-bellied-toad/ 301
+/guides/fire-belly-toad /guides/fire-bellied-toad/ 301
+/guides/fire-belly-toad/ /guides/fire-bellied-toad/ 301
