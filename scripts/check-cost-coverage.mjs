@@ -15,6 +15,9 @@
 // Exits 1 if any guide falls below MIN_COVERAGE, so it can gate a build.
 // Run: node scripts/check-cost-coverage.mjs [--verbose]
 
+import fs from 'node:fs';
+import path from 'node:path';
+
 // Imported file by file rather than through the `allGuides` barrel, which uses
 // extensionless specifiers that Vite resolves and plain Node does not. Same
 // approach as scripts/generate-guides-index.js.
@@ -99,7 +102,69 @@ if (warning.length) {
   console.log('  Run with --verbose to see which items these are.');
 }
 
+// ---------------------------------------------------------------------------
+// Second surface: <AffiliateLink href> inside the MDX deep-dive articles. These
+// resolve by exact URL against a product's `link`, not through `covers`, so a
+// coverage check that only reads the guide data misses them entirely. 871 uses
+// across the articles were going unchecked, eight of them pointing at products
+// that are not in affiliateProducts.js at all.
+const mdxHrefs = new Map();
+function walkMdx(dir, out = []) {
+  if (!fs.existsSync(dir)) return out;
+  for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory()) walkMdx(full, out);
+    else if (e.name.endsWith('.mdx')) out.push(full);
+  }
+  return out;
+}
+const productLinks = new Set(AFFILIATE_PRODUCTS.map((p) => p.link));
+const unresolvedMdx = [];
+const untagged = [];
+for (const file of walkMdx('content')) {
+  const text = fs.readFileSync(file, 'utf8');
+  for (const m of text.matchAll(/<AffiliateLink[^>]*href=["']([^"']+)["']/g)) {
+    mdxHrefs.set(m[1], (mdxHrefs.get(m[1]) || 0) + 1);
+    if (!productLinks.has(m[1])) unresolvedMdx.push({ file: path.basename(file), href: m[1] });
+  }
+  // A raw Amazon URL without the associates tag is unpaid traffic.
+  for (const m of text.matchAll(/https:\/\/(?:www\.)?amazon\.com\/[^\s)"'>]+/g)) {
+    if (!/tag=beastlyfacts-20/.test(m[0])) untagged.push({ file: path.basename(file), href: m[0] });
+  }
+}
+
+console.log(`\nArticle links: ${[...mdxHrefs.values()].reduce((a, b) => a + b, 0)} <AffiliateLink> uses, ${mdxHrefs.size} distinct products.`);
+if (untagged.length) {
+  console.log(`  UNTAGGED amazon.com URLs (earning nothing): ${untagged.length}`);
+  for (const u of untagged.slice(0, 10)) console.log(`      ${u.file}  ${u.href.slice(0, 70)}`);
+}
+if (unresolvedMdx.length) {
+  console.log(`  hrefs not in affiliateProducts.js: ${unresolvedMdx.length}`);
+  for (const u of unresolvedMdx.slice(0, 10)) console.log(`      ${u.file}  ${u.href.slice(0, 70)}`);
+  console.log('  These still work as links, but get no hover preview, never appear on');
+  console.log('  the Gear page, and are invisible to any product-level audit.');
+}
+
+// Reachability: a product earns from article traffic if a cost line matches it, if
+// it is an altGroup sibling of one that does, or if an article links it directly.
+const reachable = new Set();
+for (const guide of allGuides) {
+  for (const i of [...(guide.costs?.setup || []), ...(guide.costs?.annual || [])]) {
+    const p = getAffiliateForItem(i.item);
+    if (p) {
+      reachable.add(p.slug);
+      for (const alt of AFFILIATE_PRODUCTS) if (alt.altGroup && alt.altGroup === p.altGroup) reachable.add(alt.slug);
+    }
+  }
+}
+for (const p of AFFILIATE_PRODUCTS) if (mdxHrefs.has(p.link)) reachable.add(p.slug);
+const stranded = AFFILIATE_PRODUCTS.filter((p) => !reachable.has(p.slug));
+console.log(`  products reachable from a guide or article: ${reachable.size}/${AFFILIATE_PRODUCTS.length} (${stranded.length} reachable only from /gear)`);
+
 if (verbose) {
+  console.log('\nProducts reachable only from /gear:');
+  for (const p of stranded) console.log(`      ${p.category.padEnd(30)} ${p.product.slice(0, 58)}`);
+
   console.log('\nEvery unmatched item, grouped by guide:');
   for (const [id, items] of unmatchedByGuide) {
     console.log(`  ${id}`);

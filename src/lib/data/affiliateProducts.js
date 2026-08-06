@@ -1142,6 +1142,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$16",
     description: "Heat bulb that creates a focused basking spot so reptiles can warm up and digest properly.",
     covers: [],
+    altGroup: "basking-spot-lamp",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1155,6 +1156,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$7–$11",
     description: "Heat bulb that creates a focused basking spot so reptiles can warm up and digest properly.",
     covers: [],
+    altGroup: "basking-spot-lamp",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1194,6 +1196,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$18",
     description: "Seagrass lounging hammock that adds a raised basking and climbing spot for bearded dragons.",
     covers: [],
+    altGroup: "basking-hammock",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1207,6 +1210,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$18",
     description: "Seagrass lounging hammock that adds a raised basking and climbing spot for bearded dragons.",
     covers: [],
+    altGroup: "basking-hammock",
     pets: ["reptiles-amphibians"],
   },
   {
@@ -1697,6 +1701,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$90–$110",
     description: "HEPA air purifier that captures dander, dust, and fine particles from pet rooms.",
     covers: [],
+    altGroup: "air-purifier",
     pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   {
@@ -1710,6 +1715,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$115–$135",
     description: "HEPA air purifier that captures dander, dust, and fine particles from pet rooms.",
     covers: [],
+    altGroup: "air-purifier",
     pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   {
@@ -1723,6 +1729,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$22–$32",
     description: "HEPA air purifier that captures dander, dust, and fine particles from pet rooms.",
     covers: [],
+    altGroup: "air-purifier",
     pets: ["reptiles-amphibians", "birds", "fish", "dogs-cats", "small-mammals"],
   },
   // --- Batch 10: reptile gap-fill pass (dimming thermostats, calcium, UVB,
@@ -2064,7 +2071,7 @@ export const AFFILIATE_PRODUCTS = [
     image: "/assets/images/affiliate/product-148.jpg",
     rating: 4.7,
     price: "$240–$265",
-    description: "Handheld UV meter that measures UV Index so you can set basking zones with real data.",
+    description: "The instrument keepers use to verify a UV index of 3 to 4 at the basking site rather than trusting a bulb's stated percentage, which drops off long before the bulb stops emitting visible light. At well over two hundred dollars it is the most expensive single item on this site and is genuinely optional, but it is the only way to actually measure what a reptile is receiving.",
     covers: [], // some parrot keepers provide UVB lighting too (birds.js references "Full-spectrum UVB light") and would want to verify output the same way
     pets: ["reptiles-amphibians", "birds"],
   },
@@ -2602,6 +2609,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$20",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
     covers: [], // "Chinchilla pellets" cost-builder line is perishable-adjacent food, correctly not auto-linked
+    altGroup: "chinchilla-food",
     pets: ["small-mammals"],
   },
   {
@@ -2615,6 +2623,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$10–$20",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
     covers: [],
+    altGroup: "chinchilla-food",
     pets: ["small-mammals"],
   },
   {
