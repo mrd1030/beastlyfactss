@@ -441,4 +441,24 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/guides/degu.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/fire-skink.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/gerbil.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/green-iguana.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/quaker-parakeet.jpg": {
+    "width": 1168,
+    "height": 784
+  },
 };

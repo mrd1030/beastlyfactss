@@ -481,21 +481,23 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
     image: "/assets/guides/quaker-parakeet.jpg",
     tagline: "A bold, talkative little parrot that several states will not let you keep!",
     funFact: "The Quaker is the only parrot in the world that builds its own stick nest instead of using a tree hollow. Wild colonies raise apartment-block structures with a separate chamber per pair, and captive Quakers will try the same thing with anything you leave in the cage.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Labels match `covers` strings in affiliateProducts.js and the figures are those
+    // products' vetted prices. See scripts/check-cost-coverage.mjs.
     costs: {
       setup: [
-        { item: "24x24x30 in cage minimum, bar spacing 5/8 in", low: 180, high: 400 },
-        { item: "Varied perches: natural wood, rope, cement", low: 40, high: 80 },
-        { item: "Foraging and shreddable toys, starter set", low: 50, high: 110 },
-        { item: "Stainless bowls and a playstand", low: 60, high: 140 },
-        { item: "Travel carrier", low: 40, high: 90 },
+        { item: "Flight cage (24-30 in wide)", low: 120, high: 220 },
+        { item: "Perches of varied diameters", low: 10, high: 25 },
+        { item: "Foraging and shreddable toys", low: 10, high: 22 },
+        { item: "Food and water dishes", low: 10, high: 18 },
+        { item: "Cuttlebone or mineral block", low: 8, high: 12 },
+        { item: "Gram scale (weight monitoring)", low: 30, high: 40 },
       ],
       annual: [
-        { item: "Pelleted base diet", low: 120, high: 220 },
+        { item: "Small parrot pellets", low: 15, high: 22 },
         { item: "Fresh vegetables and some fruit", low: 200, high: 400 },
-        { item: "Replacement toys (shredded constantly)", low: 150, high: 320 },
+        { item: "Toys (rotating)", low: 10, high: 22 },
+        { item: "Shallow bird bath", low: 12, high: 16 },
         { item: "Annual avian vet exam", low: 90, high: 200 },
-        { item: "Cage liners and cleaning supplies", low: 50, high: 100 },
       ],
     },
     sections: {

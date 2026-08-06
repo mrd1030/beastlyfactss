@@ -79,22 +79,25 @@ Fur ring - a constricting ring of fur around the penis in males - can develop du
     image: "/assets/guides/degu.jpg",
     tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
     funFact: "Degus are one of the few mammals that cannot metabolise dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Labels match `covers` strings in affiliateProducts.js and the figures are those
+    // products' vetted prices. See scripts/check-cost-coverage.mjs. Note there is no
+    // degu-specific pellet product wired up yet, so that line stays unmatched.
     // Priced for a pair, which is the minimum this species should be kept in.
     costs: {
       setup: [
-        { item: "Multi-level wire cage, 24x18x36 in minimum for a pair", low: 130, high: 260 },
-        { item: "Solid 12 in exercise wheel (no rungs)", low: 35, high: 70 },
-        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
-        { item: "Ceramic hides, tunnels and platforms", low: 30, high: 60 },
-        { item: "Heavy ceramic bowls and glass water bottle", low: 15, high: 30 },
-        { item: "Apple or willow chew wood", low: 15, high: 30 },
+        { item: "24x24x48 in multi-level cage", low: 280, high: 360 },
+        { item: "12-14 in solid exercise wheel", low: 55, high: 75 },
+        { item: "Dust bath house + chinchilla dust", low: 15, high: 25 },
+        { item: "Hideouts and tunnels", low: 10, high: 30 },
+        { item: "Water bottle and food dishes", low: 3, high: 9 },
+        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
       ],
       annual: [
-        { item: "Unlimited grass hay (Timothy or orchard)", low: 110, high: 190 },
+        { item: "Grass hay (unlimited)", low: 18, high: 26 },
         { item: "Sugar-free degu or chinchilla pellets", low: 40, high: 70 },
-        { item: "Bedding and substrate", low: 60, high: 110 },
-        { item: "Dust for bathing", low: 25, high: 45 },
+        { item: "Chinchilla dust (ongoing)", low: 10, high: 16 },
+        { item: "Chew toys (mineral/pumice)", low: 10, high: 16 },
+        { item: "Bedding", low: 18, high: 30 },
         { item: "Exotic vet check, including dental", low: 80, high: 160 },
       ],
     },
@@ -236,22 +239,25 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
     image: "/assets/guides/gerbil.jpg",
     tagline: "The tidy desert burrower that wants deep bedding, not a bare cage floor!",
     funFact: "Gerbils came out of the Mongolian desert with a water-conserving physiology that makes them one of the least smelly pets you can keep. They produce only a few drops of highly concentrated urine a day, so a well-kept gerbil tank barely registers compared with a mouse or a rat.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Item labels are written to match `covers` strings in affiliateProducts.js so the
+    // Cost Builder resolves each line to a real product, and the low/high figures are
+    // that product's vetted price range rather than an estimate. See
+    // scripts/check-cost-coverage.mjs. Lines with no matching product are services.
     // Priced for a pair, which is the minimum this species should be kept in.
     costs: {
       setup: [
-        { item: "20 gallon long tank or deep-base cage for a pair", low: 60, high: 130 },
-        { item: "Secure mesh lid", low: 20, high: 40 },
-        { item: "Solid 8 in exercise wheel (no rungs)", low: 20, high: 40 },
-        { item: "Sand bath dish + chinchilla sand", low: 12, high: 25 },
-        { item: "Ceramic hides and cardboard tunnels", low: 20, high: 40 },
-        { item: "Water bottle and heavy ceramic dish", low: 12, high: 25 },
+        { item: "20-gallon long aquarium (terrestrial setup)", low: 35, high: 60 },
+        { item: "Solid exercise wheel (10-12 in)", low: 38, high: 42 },
+        { item: "Hideouts and tunnels", low: 10, high: 30 },
+        { item: "Toys, tunnels, and dig boxes", low: 40, high: 58 },
+        { item: "Water bottle and food dishes", low: 3, high: 9 },
+        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
       ],
       annual: [
-        { item: "Deep paper bedding and hay for burrowing", low: 90, high: 160 },
-        { item: "Gerbil or hamster seed mix", low: 40, high: 70 },
-        { item: "Chinchilla sand for bathing", low: 20, high: 35 },
-        { item: "Chew wood and cardboard", low: 25, high: 45 },
+        { item: "Bedding", low: 18, high: 30 },
+        { item: "Hamster pellets or lab blocks", low: 9, high: 14 },
+        { item: "Grass hay (unlimited)", low: 18, high: 26 },
+        { item: "Chew toys (smaller, softer)", low: 10, high: 18 },
         { item: "Exotic vet check", low: 60, high: 130 },
       ],
     },

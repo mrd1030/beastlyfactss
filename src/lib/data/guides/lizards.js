@@ -288,21 +288,24 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     image: "/assets/guides/fire-skink.jpg",
     tagline: "Spectacular red and gold, and it will spend most of its life underground!",
     funFact: "Fire skinks are one of the most brightly coloured lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Labels match `covers` strings in affiliateProducts.js and the figures are those
+    // products' vetted prices. See scripts/check-cost-coverage.mjs.
     costs: {
       setup: [
-        { item: "36x18x18 in front-opening terrarium", low: 180, high: 320 },
-        { item: "Deep substrate: topsoil, coco fibre and leaf litter", low: 40, high: 80 },
-        { item: "Halogen basking bulb, dome and dimmer", low: 40, high: 80 },
-        { item: "Linear T5 UVB fixture (5 to 6 percent)", low: 60, high: 110 },
-        { item: "Cork bark, hides and a humid hide", low: 35, high: 70 },
-        { item: "Digital thermometer and hygrometer", low: 25, high: 45 },
+        { item: "36x18x18 in enclosure", low: 202, high: 258 },
+        { item: "Moist substrate (coconut fiber + topsoil)", low: 10, high: 16 },
+        { item: "Halogen basking bulb + fixture", low: 18, high: 25 },
+        { item: "Moderate UVB (T5 HO Arcadia 6%)", low: 95, high: 115 },
+        { item: "Cork bark slabs and flat stones", low: 28, high: 40 },
+        { item: "Sphagnum moss for moist hide", low: 8, high: 14 },
+        { item: "Shallow water dish", low: 8, high: 14 },
+        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
       ],
       annual: [
         { item: "Live insects (crickets, dubia, worms)", low: 200, high: 380 },
-        { item: "Calcium with D3 and multivitamin", low: 25, high: 45 },
-        { item: "UVB bulb replacement (every 12 months)", low: 40, high: 70 },
-        { item: "Substrate top-ups and leaf litter", low: 40, high: 80 },
+        { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
+        { item: "UVB bulb replacement (every 6-12 months)", low: 111, high: 141 },
+        { item: "Feeding tongs", low: 8, high: 14 },
         { item: "Electricity for heat and lighting", low: 70, high: 140 },
         { item: "Exotic vet check", low: 70, high: 150 },
       ],
@@ -444,21 +447,23 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
     image: "/assets/guides/green-iguana.jpg",
     tagline: "A six foot arboreal herbivore sold as a six inch hatchling!",
     funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Setup priced for the adult enclosure, which is the cost people miss.
+    // Labels match `covers` strings in affiliateProducts.js and the figures are those
+    // products' vetted prices. See scripts/check-cost-coverage.mjs. The stocked 8x4x4
+    // enclosure is the largest wired up and is still under the 10x5x6 ft minimum this
+    // species needs, so the adult enclosure line is priced as a custom build.
     costs: {
       setup: [
-        { item: "Custom adult enclosure, 8x4x6 ft (built or commissioned)", low: 900, high: 2500 },
-        { item: "Juvenile grow-out enclosure", low: 150, high: 350 },
-        { item: "Linear T5 UVB fixture (10 to 12 percent) and mounts", low: 90, high: 180 },
-        { item: "Halogen basking bank and dimmers", low: 70, high: 150 },
-        { item: "Climbing branches, shelves and platforms", low: 100, high: 250 },
-        { item: "Large water basin and digital thermometers", low: 50, high: 110 },
+        { item: "Custom PVC/wood enclosure, 8x4x4ft", low: 650, high: 730 },
+        { item: "Strong desert UVB (T5 HO 12%+)", low: 55, high: 70 },
+        { item: "Halogen basking bulb + fixture", low: 18, high: 25 },
+        { item: "Branches for climbing/enrichment", low: 15, high: 30 },
+        { item: "Large water tub for soaking", low: 95, high: 120 },
+        { item: "Digital thermometer and hygrometer", low: 11, high: 19 },
       ],
       annual: [
         { item: "Greens and vegetables, year round", low: 400, high: 800 },
-        { item: "Calcium and multivitamin supplements", low: 30, high: 60 },
-        { item: "UVB bulb replacement (every 12 months)", low: 60, high: 120 },
+        { item: "Calcium and multivitamin supplements (herbivore, no added phosphorus)", low: 20, high: 28 },
+        { item: "UVB bulb replacement (every 6-12 months)", low: 111, high: 141 },
         { item: "Electricity for heat and lighting", low: 200, high: 450 },
         { item: "Exotic vet check, plus dental and bloodwork as needed", low: 100, high: 300 },
       ],
