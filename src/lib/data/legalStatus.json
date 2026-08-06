@@ -2474,7 +2474,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "encyclopediaId": "gerbil"
     },
     "quaker-parakeet": {
       "name": "Quaker parakeet",
@@ -2746,7 +2747,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "encyclopediaId": "quaker-parakeet"
     },
     "bengal-cat": {
       "name": "Bengal cat",
@@ -7296,7 +7298,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "encyclopediaId": "green-iguana"
     },
     "snapping-turtle": {
       "name": "Snapping turtle",
@@ -8730,7 +8733,8 @@
           "verifiedOn": "2026-08-05",
           "localOverride": true
         }
-      }
+      },
+      "encyclopediaId": "degu"
     },
     "axolotl": {
       "name": "Axolotl",

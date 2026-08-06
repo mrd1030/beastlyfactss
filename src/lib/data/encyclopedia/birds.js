@@ -90,4 +90,17 @@ export const birdEncyclopedia = [
       conservation: "Most species Least Concern; Fischer's Lovebird Near Threatened (IUCN)",
     },
   },
+  {
+    id: "quaker-parakeet", name: "Quaker Parakeet", scientific: "Myiopsitta monachus",
+    category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "quaker-parakeet", available: true, image: "/assets/guides/quaker-parakeet.jpg",
+    bio: {
+      overview: "Also called the monk parakeet, this is the only parrot in the world that builds its own stick nest rather than using a tree hollow. Wild colonies construct enormous communal structures with separate chambers for each pair, and those nests are why the species is regulated in a way no other pet parrot is: escaped birds have established self-sustaining colonies across the United States and Europe, and their nests on electrical substations and transmission towers cause outages and fires. Several US states ban or restrict the species for that reason alone. As a pet the Quaker is famously bold for its size and among the most reliable talkers of any small parrot.",
+      origin: "Temperate and subtropical South America, from Bolivia and Brazil to central Argentina",
+      habitat: "Open woodland, savanna and farmland; readily colonises cities",
+      adultSize: "11-12 inches (28-30 cm); 3-5 oz",
+      wildDiet: "Seeds, grains, fruit, blossoms and some insects",
+      wildLifespan: "15-20 years (up to 25-30 years in captivity)",
+      conservation: "Least Concern (IUCN), and an established invasive species well outside its native range",
+    },
+  },
 ];

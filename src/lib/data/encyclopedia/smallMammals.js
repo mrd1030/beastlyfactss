@@ -13,6 +13,19 @@ export const smallMammalEncyclopedia = [
     },
   },
   {
+    id: "degu", name: "Degu", scientific: "Octodon degus",
+    category: "Small Mammals", emoji: "🐭", difficulty: "Intermediate", guideId: "degu", available: true, image: "/assets/guides/degu.jpg",
+    bio: {
+      overview: "Degus are diurnal rodents from central Chile, and almost everything unusual about them follows from that. They are awake when their owners are, which is rare in a small pet, and they are intensely social, living in wild burrow colonies of up to a hundred animals with cooperative digging and sentry behavior. They are also one of the very few mammals that cannot process dietary sugar properly: degus lack a functional insulin response and develop diabetes and cataracts on fruit, so a diet that would be a treat for a hamster is genuinely dangerous here. Their teeth are open-rooted and grow for life, and the enamel turns orange with age in a healthy animal.",
+      origin: "Central Chile, on the western slopes of the Andes",
+      habitat: "Semi-arid scrubland and rocky matorral, in communal burrow systems",
+      adultSize: "5-8 inches (12-20 cm) body, plus a 4-5 inch tufted tail; 6-11 oz",
+      wildDiet: "Grasses, seeds, bark, leaves, and tubers",
+      wildLifespan: "1-4 years in the wild; 6-8 years in captivity",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "ferret", name: "Ferret", scientific: "Mustela putorius furo",
     category: "Small Mammals", emoji: "🦡", difficulty: "Intermediate", guideId: "ferret", available: true, image: "/assets/guides/ferret.jpg",
     bio: {
@@ -23,6 +36,19 @@ export const smallMammalEncyclopedia = [
       wildDiet: "(Ancestral polecat) Small mammals, birds, amphibians, and eggs",
       wildLifespan: "5-10 years",
       conservation: "Not assessed (domesticated); European polecat is Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "gerbil", name: "Gerbil", scientific: "Meriones unguiculatus",
+    category: "Small Mammals", emoji: "🐭", difficulty: "Beginner", guideId: "gerbil", available: true, image: "/assets/guides/gerbil.jpg",
+    bio: {
+      overview: "The Mongolian gerbil comes from the steppe and semi-desert of Mongolia and northern China, and it is built to lose as little water as possible: it concentrates its urine heavily, produces almost no odor, and can go a remarkably long time on the moisture in its food. That desert economy is why gerbils are among the cleanest small pets to keep. They are obsessive burrowers, and a gerbil given deep enough bedding will build and maintain a tunnel system rather than sit on top of it. They are strictly social and should never be kept alone, but introductions between adults frequently fail, which is the single hardest part of keeping them.",
+      origin: "Mongolia, northern China, and adjacent parts of Russia",
+      habitat: "Arid steppe, sandy grassland and semi-desert, in extensive burrow systems",
+      adultSize: "4-5 inches (10-13 cm) body, plus a furred tail of similar length; 2-4 oz",
+      wildDiet: "Seeds, grasses, roots, and insects",
+      wildLifespan: "2-4 years",
+      conservation: "Least Concern (IUCN)",
     },
   },
   {

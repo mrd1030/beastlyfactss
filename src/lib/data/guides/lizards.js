@@ -280,6 +280,92 @@ Subspecies identification matters for care. Northern blue tongue skinks and Indo
     ],
   },
   {
+    id: "fire-skink",
+    name: "Fire Skink",
+    emoji: "🦎",
+    difficulty: "Beginner",
+    petType: "Lizards",
+    image: "/assets/guides/fire-skink.jpg",
+    tagline: "Spectacular red and gold, and it will spend most of its life underground!",
+    funFact: "Fire skinks are one of the most brightly coloured lizards in the hobby and one of the most rarely seen in their own enclosure. Give one four inches of substrate and it will vanish; give it eight to ten and it will build a burrow system, come out to bask, and behave like a completely different animal.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x18x18 in front-opening terrarium", low: 180, high: 320 },
+        { item: "Deep substrate: topsoil, coco fibre and leaf litter", low: 40, high: 80 },
+        { item: "Halogen basking bulb, dome and dimmer", low: 40, high: 80 },
+        { item: "Linear T5 UVB fixture (5 to 6 percent)", low: 60, high: 110 },
+        { item: "Cork bark, hides and a humid hide", low: 35, high: 70 },
+        { item: "Digital thermometer and hygrometer", low: 25, high: 45 },
+      ],
+      annual: [
+        { item: "Live insects (crickets, dubia, worms)", low: 200, high: 380 },
+        { item: "Calcium with D3 and multivitamin", low: 25, high: 45 },
+        { item: "UVB bulb replacement (every 12 months)", low: 40, high: 70 },
+        { item: "Substrate top-ups and leaf litter", low: 40, high: 80 },
+        { item: "Electricity for heat and lighting", low: 70, high: 140 },
+        { item: "Exotic vet check", low: 70, high: 150 },
+      ],
+    },
+    sections: {
+      housing: `A single adult wants 36x18x18 inches as a floor-space-first enclosure. Height is close to irrelevant here; fire skinks are terrestrial and fossorial, and the useful dimension is length and depth.
+
+Substrate is the whole game with this species. Use six to ten inches of a mix that holds a tunnel: topsoil and coco fibre, slightly damp, with a layer of leaf litter on top. A fire skink in shallow bedding hides in one corner under a hide and looks permanently nervous. The same animal in deep substrate builds a burrow, uses the whole enclosure and comes out to bask.
+
+Provide a basking spot of 95 to 100 degrees F at the surface, a cool end around 75 to 78, and a night drop into the low 70s. Use a halogen flood on a dimmer rather than a ceramic emitter, since these animals do respond to visible basking light.
+
+Fit UVB. A linear T5 at 5 to 6 percent across part of the enclosure is right; a small coil bulb is not. Humidity should sit around 60 to 75 percent, which deep damp substrate largely does on its own, topped up by misting one end.
+
+Include a humid hide, a shallow water dish big enough to sit in, and plenty of cork bark and leaf cover. A skink that feels exposed will not come out.`,
+      diet: `Fire skinks are insectivores with an appetite. Feed a rotation of appropriately sized live insects: dubia roaches, crickets, black soldier fly larvae, silkworms and the occasional superworm. Adults eat every two to three days, juveniles daily.
+
+Gut load the insects for at least 24 hours before offering them, on greens, squash and a commercial gut-load. An insect that has eaten nothing is close to an empty shell nutritionally.
+
+Dust with a plain calcium at most feedings and a calcium with D3 plus a multivitamin once or twice a week, adjusted down if your UVB is strong and well positioned. Metabolic bone disease is the main nutritional failure in this species and it comes from the calcium and UVB side rather than from protein.
+
+Some individuals take small amounts of soft fruit or the occasional pinky as adults. Neither is necessary and neither should be routine.
+
+Keep fresh water available at all times in a dish heavy enough not to be tipped or buried.`,
+      enrichment: `The enrichment for a fire skink is mostly the substrate, and it is not a nice-to-have. Depth, moisture and leaf litter turn a hiding animal into an active one.
+
+Add cork bark tunnels, flat stones near the basking area, sphagnum-stuffed hides and a dense litter layer. Live plants such as pothos survive in a fire skink enclosure better than they do with larger lizards, though the digging will disturb roots.
+
+Feed with tongs or scatter feed into the litter. Scatter feeding gets them foraging through the leaves, which is what they do in the wild and is the easiest natural behaviour to encourage.
+
+Handling is possible but should be earned slowly. Fire skinks are fast and initially flighty, and a stressed one will drop its tail. Start with tong feeding, then short sessions low over a soft surface. Many settle into being reliably handleable; some never do.
+
+Keep one per enclosure unless you have real experience. Males will fight, and mixed pairs need enough space and hides for the female to get away.`,
+      health: `Metabolic bone disease is the main preventable problem, from insufficient UVB, insufficient calcium, or both. Watch for tremors, a soft or bowed jaw, difficulty lifting the body off the floor and a reluctance to climb.
+
+Retained shed on the toes and tail tip is the most common minor complaint and is nearly always a humidity problem. A humid hide and a slightly damp substrate layer usually resolve it. Rings of retained skin left in place can cut off circulation.
+
+Impaction is the reason to avoid sand, gravel and any loose particulate that does not hold moisture. A soil and coco fibre mix is both better for burrowing and safer to swallow incidentally.
+
+Wild-caught animals are still common in this trade and often arrive with parasite loads, dehydration and injuries. Ask about origin. A captive-bred fire skink costs more and starts far healthier, and a fresh import should have a faecal check early.
+
+Mouth rot and respiratory infections follow from enclosures that are wet rather than humid, with no ventilation or no thermal gradient.`,
+      checklist: [
+        "36x18x18 in front-opening terrarium",
+        "6 to 10 inches of soil and coco fibre substrate",
+        "Leaf litter layer and cork bark cover",
+        "Halogen basking bulb on a dimmer, 95 to 100 F",
+        "Linear T5 UVB, 5 to 6 percent",
+        "Humid hide and shallow water dish",
+        "Digital thermometer and hygrometer",
+        "Varied live insects, gut loaded",
+        "Calcium and D3 plus multivitamin",
+        "Exotic veterinarian experienced with skinks"
+      ],
+    },
+    faqs: [
+      { q: "Why does my fire skink hide all the time?", a: "Almost always because the substrate is too shallow. Fire skinks are burrowers, and in four inches of bedding the only option is to wedge under a hide and stay there. At six to ten inches of a soil and coco fibre mix that holds a tunnel, they build a burrow system and start using the whole enclosure, basking in the open and foraging through the leaf litter. Depth of substrate changes this species more than any other single factor." },
+      { q: "Do fire skinks need UVB?", a: "Yes. They are diurnal and bask, and while some keepers raise them without UVB using heavy D3 supplementation, the results are far more consistent with it. Use a linear T5 at 5 to 6 percent over part of the enclosure rather than a compact coil, mount it at the distance the manufacturer specifies, and replace it every twelve months even though it still emits visible light." },
+      { q: "Can you handle a fire skink?", a: "Some, with patience. They are fast and start out flighty, and a stressed one can drop its tail, which regrows but never matches. Build up through tong feeding first, then short sessions held low over a soft surface so a jump does not end badly. Plenty of fire skinks become reliably handleable adults, and some simply stay display animals. Buying captive bred makes a calm outcome much more likely." },
+      { q: "Is my fire skink wild caught?", a: "Quite possibly, and it is worth asking directly. A large share of fire skinks in the trade are still imported, and wild-caught animals typically arrive dehydrated, carrying parasites, and sometimes with injuries or missing toes. They can settle in well, but they need a faecal test and a quiet acclimation period. Captive-bred animals cost more and start much healthier." },
+      { q: "How big do fire skinks get?", a: "About 12 to 15 inches including the tail, with the body itself a good deal shorter than that suggests. They are heavy-bodied for their length rather than lanky. That size makes a 36x18x18 inch enclosure a comfortable adult home for one animal, prioritising floor area over height since they spend their time on and under the ground." },
+    ],
+  },
+  {
     id: "green-anole",
     name: "Green Anole",
     emoji: "🦎",
@@ -347,6 +433,92 @@ Stress from over-handling, male-male aggression, or overly sparse housing causes
       { q: "What do green anoles eat?", a: "Green anoles are strict insectivores. Feed small live insects - appropriately sized crickets, small dubia roaches, and fruit flies for juveniles and smaller adults. Prey should be no wider than the space between the anole's eyes. Feed daily for juveniles, every other day for adults. Gut-load all insects 24 to 48 hours before offering." },
       { q: "How big do green anoles get?", a: "Adults reach 5 to 8 inches total length - most of which is the slender, whip-like tail. They are lightweight, delicate animals. Males develop a distinctive red dewlap (throat fan) used in territorial and courtship displays. Two males should never be housed together as they fight aggressively." },
       { q: "Do green anoles need UVB?", a: "Yes, UVB is essential. A T5 HO 5 to 6% UVB bulb on a 12-hour cycle supports calcium metabolism and vitamin D3 synthesis. Without adequate UVB, green anoles develop calcium deficiency and metabolic bone disease. A proper automatic misting system is equally critical - they drink from water droplets on leaves and rarely from standing water dishes." },
+    ],
+  },
+  {
+    id: "green-iguana",
+    name: "Green Iguana",
+    emoji: "🦎",
+    difficulty: "Advanced",
+    petType: "Lizards",
+    image: "/assets/guides/green-iguana.jpg",
+    tagline: "A six foot arboreal herbivore sold as a six inch hatchling!",
+    funFact: "Green iguanas have a pale scale on the top of the head called the parietal eye. It is a genuine third eye with a lens and a retina, wired to the pineal gland rather than to vision, and it detects shadow moving overhead. It is an early warning system for birds of prey.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Setup priced for the adult enclosure, which is the cost people miss.
+    costs: {
+      setup: [
+        { item: "Custom adult enclosure, 8x4x6 ft (built or commissioned)", low: 900, high: 2500 },
+        { item: "Juvenile grow-out enclosure", low: 150, high: 350 },
+        { item: "Linear T5 UVB fixture (10 to 12 percent) and mounts", low: 90, high: 180 },
+        { item: "Halogen basking bank and dimmers", low: 70, high: 150 },
+        { item: "Climbing branches, shelves and platforms", low: 100, high: 250 },
+        { item: "Large water basin and digital thermometers", low: 50, high: 110 },
+      ],
+      annual: [
+        { item: "Greens and vegetables, year round", low: 400, high: 800 },
+        { item: "Calcium and multivitamin supplements", low: 30, high: 60 },
+        { item: "UVB bulb replacement (every 12 months)", low: 60, high: 120 },
+        { item: "Electricity for heat and lighting", low: 200, high: 450 },
+        { item: "Exotic vet check, plus dental and bloodwork as needed", low: 100, high: 300 },
+      ],
+    },
+    sections: {
+      housing: `Plan the adult enclosure before buying the hatchling. This is the whole problem with the species: a six inch juvenile in a 40 gallon tank becomes a five to six foot lizard needing something closer to 8 feet long, 4 deep and 6 tall. Almost nobody buys that in advance, and the result is thousands of surrendered iguanas a year.
+
+Build upward as well as outward. Green iguanas are arboreal and will use height if it exists: broad branches, shelves and platforms at basking height matter more than floor area.
+
+Basking surface temperature should be 95 to 100 degrees F, with an ambient gradient from the mid 80s down to the high 70s, and a night drop no lower than about 73. Use banks of halogen floods on dimmers, not a single spot, because you are heating a large animal across a wide surface.
+
+UVB is non-negotiable and needs to be strong. A high-output linear T5 at 10 to 12 percent, mounted the correct distance from the basking branch, running the length of the basking zone. Replace it every twelve months. Coil bulbs are useless for an animal this size.
+
+Humidity around 65 to 75 percent, which usually needs a misting system or a large evaporation surface rather than hand spraying. Provide a water basin big enough for the animal to sit in.`,
+      diet: `Green iguanas are strict herbivores and this is where most of them are damaged. The diet is leafy greens and vegetables, and it should be about 80 to 90 percent dark leafy greens.
+
+Build it on collard, mustard and turnip greens, dandelion, escarole, endive and hibiscus. Add squash, parsnip, green beans and bell pepper as the vegetable portion. Fruit is an occasional garnish, not a food group.
+
+Do not feed animal protein. No insects, no dog food, no cat food, no eggs. Iguanas fed protein develop kidney damage and gout, and it is one of the more common causes of premature death in captive animals. Ignore any older care sheet that suggests otherwise.
+
+Avoid spinach, kale in quantity, beet greens and chard, which bind calcium, and avoid iceberg lettuce, which is water with nothing in it.
+
+Dust with plain calcium several times a week and a multivitamin weekly. Adult calcium demand is high and the combination of poor UVB and low calcium is what produces the soft jaws and bowed limbs seen in so many rescued iguanas.`,
+      enrichment: `Provide a climbing structure that fills the enclosure. Broad, secure branches at different heights, a basking shelf wide enough for the whole body, and something to get away from you on.
+
+They benefit from routine and from being able to see out. An iguana kept in a dark corner is a nervous iguana, and a nervous six foot lizard is a management problem rather than a preference.
+
+Handling has to be built patiently and kept up. Iguanas that are handled regularly from young usually tolerate it well; those left alone for months become difficult to work with. Support the whole body and never restrain by the tail, which will drop.
+
+Be aware of seasonal aggression. Sexually mature males in breeding season can become genuinely dangerous, and they often fixate on one person in the household. Bites are serious, the tail is used as a whip, and the claws do the most damage. This is a real change in behaviour rather than a bad individual.
+
+An outdoor enclosure in a suitable climate, with unfiltered sunlight, is the single best enrichment there is for this species.`,
+      health: `Metabolic bone disease is the classic and it is entirely preventable: strong UVB, high dietary calcium, correct temperatures. Look for a swollen or soft lower jaw, bowed legs, lumpy limbs, tremors and difficulty lifting the body.
+
+Kidney disease and gout follow from animal protein and chronic dehydration. This is a leading cause of death in captive iguanas and it is slow, invisible early, and largely irreversible once obvious.
+
+Mouth rot, thermal burns from unguarded heat sources and retained shed round out the common list. Burns are usually from an animal sitting directly on a lamp or heat rock, which is why overhead heating and a proper distance matter.
+
+Females can become egg bound whether or not a male is present. A gravid female needs a nest box with deep substrate to dig in, and a female straining without producing eggs needs a vet quickly.
+
+Find an exotics vet who genuinely treats large lizards, and confirm they will before you need them. Not every reptile vet works on adult iguanas.`,
+      checklist: [
+        "Adult enclosure plan, roughly 8x4x6 ft, before purchase",
+        "High output linear T5 UVB, 10 to 12 percent",
+        "Halogen basking bank on dimmers, 95 to 100 F",
+        "Broad climbing branches and a full-body basking shelf",
+        "Water basin large enough to sit in",
+        "Dark leafy greens as 80 to 90 percent of the diet",
+        "No animal protein of any kind",
+        "Calcium several times a week, multivitamin weekly",
+        "Humidity 65 to 75 percent",
+        "Exotic veterinarian who treats adult iguanas"
+      ],
+    },
+    faqs: [
+      { q: "How big do green iguanas actually get?", a: "Four to six feet including the tail, and ten to twenty pounds, from a hatchling of about six inches. That is the central fact about keeping one and the reason so many end up in rescues. An adult needs an enclosure in the region of 8 feet long, 4 deep and 6 tall, which almost always has to be custom built, and it will live fifteen to twenty years. Work out where that enclosure is going before you buy the small one." },
+      { q: "Can green iguanas eat insects or meat?", a: "No. They are strict herbivores and animal protein damages their kidneys, causing renal failure and gout that is largely irreversible by the time it is visible. This includes insects, dog food, cat food and eggs. Some older care sheets recommend protein for juveniles; that advice is outdated and harmful. The diet is dark leafy greens with vegetables, and fruit only as an occasional garnish." },
+      { q: "Why is my iguana's jaw swollen?", a: "That is a classic sign of metabolic bone disease, where the body pulls calcium from the skeleton and replaces jaw bone with fibrous tissue, producing the rubbery look keepers call rubber jaw. It comes from inadequate UVB, inadequate dietary calcium, or temperatures too low to digest properly. It needs veterinary treatment, and it needs the underlying lighting and diet fixed or it will simply continue." },
+      { q: "Do male iguanas become aggressive?", a: "Many do, seasonally. A sexually mature male in breeding condition can become genuinely dangerous for a period of weeks to months, often fixating on one person, and a five foot lizard bites hard, whips with the tail and does most of its damage with the claws. It is a hormonal state rather than a personality flaw. Plan for handling to change during those months and take it seriously." },
+      { q: "Does a green iguana really need that much UVB?", a: "Yes. It is a large diurnal basking herbivore that synthesises vitamin D3 from UVB in order to use dietary calcium, and the requirement scales with the animal. Use a high-output linear T5 at 10 to 12 percent running the length of the basking area at the manufacturer's stated distance. Compact and coil bulbs cannot cover an animal this size, and any bulb needs replacing at twelve months even while it still gives off visible light." },
     ],
   },
   {

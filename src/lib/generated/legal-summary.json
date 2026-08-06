@@ -19,6 +19,16 @@
     "restricted": 1,
     "checked": 33
   },
+  "gerbil": {
+    "id": "gerbil",
+    "restricted": 2,
+    "checked": 33
+  },
+  "quaker-parakeet": {
+    "id": "quaker-parakeet",
+    "restricted": 10,
+    "checked": 33
+  },
   "bengal": {
     "id": "bengal-cat",
     "restricted": 12,
@@ -74,6 +84,11 @@
     "restricted": 1,
     "checked": 33
   },
+  "green-iguana": {
+    "id": "green-iguana",
+    "restricted": 6,
+    "checked": 30
+  },
   "tokay-gecko": {
     "id": "tokay-gecko",
     "restricted": 2,
@@ -83,6 +98,11 @@
     "id": "tiger-salamander",
     "restricted": 12,
     "checked": 26
+  },
+  "degu": {
+    "id": "degu",
+    "restricted": 10,
+    "checked": 32
   },
   "axolotl": {
     "id": "axolotl",

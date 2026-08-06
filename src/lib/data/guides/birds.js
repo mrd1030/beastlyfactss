@@ -472,4 +472,88 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
       { q: "How long do lovebirds live?", a: "10 to 20 years with excellent care - a lifespan that surprises many keepers who assume small birds have short lives. The full 20-year potential requires a pellet-based diet, regular avian veterinary care, adequate enrichment and social contact, and minimizing hormonal stress (particularly in egg-laying females). Lovebirds rehomed in middle age after years of poor nutrition often have reduced lifespans. Starting with proper care from day one makes a measurable difference in long-term health." },
     ],
   },
+  {
+    id: "quaker-parakeet",
+    name: "Quaker Parakeet",
+    emoji: "🦜",
+    difficulty: "Intermediate",
+    petType: "Birds",
+    image: "/assets/guides/quaker-parakeet.jpg",
+    tagline: "A bold, talkative little parrot that several states will not let you keep!",
+    funFact: "The Quaker is the only parrot in the world that builds its own stick nest instead of using a tree hollow. Wild colonies raise apartment-block structures with a separate chamber per pair, and captive Quakers will try the same thing with anything you leave in the cage.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "24x24x30 in cage minimum, bar spacing 5/8 in", low: 180, high: 400 },
+        { item: "Varied perches: natural wood, rope, cement", low: 40, high: 80 },
+        { item: "Foraging and shreddable toys, starter set", low: 50, high: 110 },
+        { item: "Stainless bowls and a playstand", low: 60, high: 140 },
+        { item: "Travel carrier", low: 40, high: 90 },
+      ],
+      annual: [
+        { item: "Pelleted base diet", low: 120, high: 220 },
+        { item: "Fresh vegetables and some fruit", low: 200, high: 400 },
+        { item: "Replacement toys (shredded constantly)", low: 150, high: 320 },
+        { item: "Annual avian vet exam", low: 90, high: 200 },
+        { item: "Cage liners and cleaning supplies", low: 50, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `Check your state law before you buy. This is the only common pet parrot with a real legal problem attached: escaped Quakers build enormous stick nests on electrical infrastructure and have established breeding colonies across the US, so several states ban or restrict the species outright and others require permits or banding. It is the first thing to settle, not the last.
+
+Give a single Quaker at least 24x24x30 inches, and more if you can. They are only about eleven inches long but they are stocky, busy and territorial, and they use every inch. Bar spacing should be around five eighths of an inch.
+
+They will try to build. Quakers are the one parrot that constructs a nest rather than occupying a hollow, and a caged Quaker will weave paper, wood, rope and anything else into a corner. Giving them safe material to do it with is enrichment; leaving a nest box or a dark enclosed hide in the cage encourages hormonal and territorial behaviour and is best avoided.
+
+Keep the cage out of the kitchen. Fumes from overheated non-stick cookware are lethal to parrots, and Quakers are small enough to be killed quickly. Scented candles, aerosols and self-cleaning oven cycles carry the same risk.
+
+Room temperature of 65 to 80 degrees F suits them, away from draughts and direct sun.`,
+      diet: `Base the diet on a quality pellet, not a seed mix. Seed-only diets are the leading nutritional cause of illness in pet parrots, producing obesity, fatty liver disease and vitamin A deficiency. Pellets should make up roughly 60 to 70 percent of intake.
+
+Add fresh vegetables daily: dark leafy greens, broccoli, carrot, squash, peppers and sweet potato. Fruit is a smaller share, offered as a treat rather than a staple, since Quakers put on weight readily.
+
+Seed and nut go in as training rewards rather than as a meal. A few sunflower seeds have real value as a reinforcer; a bowl of them is a health problem.
+
+Never give avocado, chocolate, caffeine, alcohol, onion, garlic, or anything containing xylitol. Avocado in particular is acutely toxic to parrots.
+
+Fresh water daily in a bowl that gets washed properly, since Quakers dunk food and foul water quickly.`,
+      enrichment: `Quakers are famously bold for their size and they need a job. Expect to replace toys constantly: shreddable palm, paper, soft wood, foraging puzzles and anything they can dismantle.
+
+They are among the best talkers of any small parrot, often building vocabularies in the dozens or beyond, and they pick up words readily from repetition in context rather than from drilling.
+
+Plan on several hours of out-of-cage time daily, with supervision. A playstand outside the cage gives them somewhere legitimate to be.
+
+Watch the territoriality. Quakers frequently become defensive about the cage itself while being perfectly friendly away from it, and many bond hard to one person and get sharp with everyone else. Handling by several people from early on, and doing interactions away from the cage, both help a lot.
+
+They are loud. Not macaw loud, but a Quaker has a piercing contact call it uses when it wants company, and that is a genuine consideration in an apartment.`,
+      health: `Quaker mutilation syndrome is the one specific to this species: self-inflicted feather plucking and skin damage, usually on the chest, shoulders and flanks. Causes are tangled and include boredom, hormonal frustration, poor diet, allergy and anxiety, and it needs an avian vet promptly rather than waiting to see if it settles.
+
+Fatty liver disease follows from seed-heavy diets and too little exercise, and Quakers are prone to it.
+
+Psittacosis, aspergillosis and general respiratory infection show up as tail bobbing, nasal discharge, fluffed-up posture and changes in droppings. Birds mask illness until late, so any visible change is already worth a call.
+
+Egg binding affects females, including those with no male present, and chronic egg laying is an issue in hormonal hens. Reduce daylight hours and remove nest-like spaces if it starts.
+
+Establish care with an avian vet, not a general small animal practice, and get a baseline exam early. Annual checks catch the slow problems while they are still fixable.`,
+      checklist: [
+        "Check state and city law before buying",
+        "24x24x30 in cage minimum, 5/8 in bar spacing",
+        "Pelleted base diet, not a seed mix",
+        "Fresh vegetables daily",
+        "Varied perch types and sizes",
+        "Constant supply of shreddable and foraging toys",
+        "Several hours of supervised out-of-cage time",
+        "No non-stick cookware in the home",
+        "Playstand away from the cage for handling",
+        "Avian veterinarian, with an annual exam"
+      ],
+    },
+    faqs: [
+      { q: "Are Quaker parakeets legal to own?", a: "Not everywhere, and this is the species where you must check first. Escaped Quakers build large communal stick nests on power infrastructure and have established breeding colonies well outside their native range, so a number of US states ban them outright and others require permits, banding or wing clipping. It is the only common pet parrot with a widespread legal problem attached. Check your state and your city before buying, not after." },
+      { q: "Do Quaker parakeets talk?", a: "Yes, and they are among the most reliable talkers of any small parrot. Many build vocabularies of dozens of words and use them in context, often with clearer diction than a budgie. They learn best from repetition tied to a real situation, a greeting as you walk in, a word as you hand over food, rather than from recordings. Not every individual talks, and hand-raised birds that get plenty of interaction are the most likely to." },
+      { q: "Why is my Quaker plucking its feathers?", a: "Quaker mutilation syndrome is a recognised problem in this species, going beyond ordinary plucking to self-inflicted skin damage, usually on the chest and shoulders. The causes overlap: boredom, hormonal frustration, poor diet, allergies and anxiety all contribute, and it can become a habit that outlives the original trigger. See an avian vet early rather than waiting, because the earlier it is addressed the better the outcome." },
+      { q: "Should I give my Quaker a nest box?", a: "No, in almost all pet situations. Quakers are the only parrots that build their own nests and the drive is strong, but a nest box or any dark enclosed space encourages hormonal behaviour, territorial aggression and chronic egg laying in hens. Give them shreddable and weavable material to satisfy the building instinct out in the open instead, and keep enclosed hides out of the cage." },
+      { q: "Are Quaker parakeets loud?", a: "Moderately, with a piercing contact call they use to locate their flock, which in a home means you. They are not in macaw or cockatoo territory, but they are louder than a budgie and they call persistently when they want company. In an apartment that is worth thinking about honestly. Regular out-of-cage time and enough to do reduces attention calling considerably, though it will not eliminate the natural morning and evening noise." },
+    ],
+  },
 ];

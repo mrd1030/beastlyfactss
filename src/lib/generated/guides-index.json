@@ -109,6 +109,15 @@
       "tagline": "The feisty, affectionate little parrot that bonds deeply with its person!"
     },
     {
+      "id": "quaker-parakeet",
+      "name": "Quaker Parakeet",
+      "emoji": "🦜",
+      "difficulty": "Intermediate",
+      "petType": "Birds",
+      "image": "/assets/guides/quaker-parakeet.jpg",
+      "tagline": "A bold, talkative little parrot that several states will not let you keep!"
+    },
+    {
       "id": "cat-universal",
       "name": "Cat Care: The Essentials",
       "emoji": "🐱",
@@ -505,6 +514,15 @@
       "tagline": "The chunky, blue-tongued charmer who loves a good meal!"
     },
     {
+      "id": "fire-skink",
+      "name": "Fire Skink",
+      "emoji": "🦎",
+      "difficulty": "Beginner",
+      "petType": "Lizards",
+      "image": "/assets/guides/fire-skink.jpg",
+      "tagline": "Spectacular red and gold, and it will spend most of its life underground!"
+    },
+    {
       "id": "green-anole",
       "name": "Green Anole",
       "emoji": "🦎",
@@ -512,6 +530,15 @@
       "petType": "Lizards",
       "image": "/assets/guides/green-anole.jpg",
       "tagline": "America's tiny chameleon: the little green lizard that turns brown with its mood!"
+    },
+    {
+      "id": "green-iguana",
+      "name": "Green Iguana",
+      "emoji": "🦎",
+      "difficulty": "Advanced",
+      "petType": "Lizards",
+      "image": "/assets/guides/green-iguana.jpg",
+      "tagline": "A six foot arboreal herbivore sold as a six inch hatchling!"
     },
     {
       "id": "chameleon",
@@ -559,6 +586,15 @@
       "tagline": "The incredibly soft, high-jumping rodent that needs dust baths!"
     },
     {
+      "id": "degu",
+      "name": "Degu",
+      "emoji": "🐭",
+      "difficulty": "Intermediate",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/degu.jpg",
+      "tagline": "The daytime rodent that cannot eat sugar and will not live alone!"
+    },
+    {
       "id": "ferret",
       "name": "Ferret",
       "emoji": "🦡",
@@ -566,6 +602,15 @@
       "petType": "Small Mammals",
       "image": "/assets/guides/ferret.jpg",
       "tagline": "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!"
+    },
+    {
+      "id": "gerbil",
+      "name": "Gerbil",
+      "emoji": "🐭",
+      "difficulty": "Beginner",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/gerbil.jpg",
+      "tagline": "The tidy desert burrower that wants deep bedding, not a bare cage floor!"
     },
     {
       "id": "guinea-pig",

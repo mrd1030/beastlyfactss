@@ -56,6 +56,19 @@ export const lizardEncyclopedia = [
     },
   },
   {
+    id: "fire-skink", name: "Fire Skink", scientific: "Lepidothyris fernandi",
+    category: "Lizards", emoji: "🦎", difficulty: "Beginner", guideId: "fire-skink", available: true, image: "/assets/guides/fire-skink.jpg",
+    bio: {
+      overview: "The fire skink is a West African forest lizard with some of the most striking coloring of any commonly kept reptile: brilliant red flanks broken by black and silver barring, a gold and bronze back, and a black-and-white banded throat. It spends most of its life underground or under leaf litter, which is the part new keepers underestimate. A fire skink in a shallow setup will look permanently stressed and hide in a corner; the same animal in deep, moist substrate will burrow, tunnel and then come out to bask and hunt in the open. They are secretive rather than shy, and most become confident enough to feed from tongs.",
+      origin: "West and Central Africa, from Guinea east to Uganda and Angola",
+      habitat: "Tropical forest floor and forest edge, in leaf litter and self-dug burrows",
+      adultSize: "12-15 inches (30-38 cm) including tail",
+      wildDiet: "Insects, worms, snails, and occasional fruit or small vertebrates",
+      wildLifespan: "15-20 years in captivity",
+      conservation: "Not evaluated (IUCN)",
+    },
+  },
+  {
     id: "green-anole", name: "Green Anole", scientific: "Anolis carolinensis",
     category: "Lizards", emoji: "🦎", difficulty: "Beginner/Intermediate", guideId: "green-anole", available: true, image: "/assets/guides/green-anole.jpg",
     bio: {
@@ -66,6 +79,19 @@ export const lizardEncyclopedia = [
       wildDiet: "Insects, spiders, and small invertebrates",
       wildLifespan: "3-7 years",
       conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "green-iguana", name: "Green Iguana", scientific: "Iguana iguana",
+    category: "Lizards", emoji: "🦎", difficulty: "Advanced", guideId: "green-iguana", available: true, image: "/assets/guides/green-iguana.jpg",
+    bio: {
+      overview: "Green iguanas are large arboreal herbivores from Central and South America, and the gap between what they are sold as and what they become is the widest of any pet reptile. A hatchling is six inches and costs very little. An adult is five to six feet long, weighs up to twenty pounds, needs a custom enclosure the size of a wardrobe, and lives twenty years. They are strict herbivores whose gut relies on fermenting leafy greens, so the classic mistakes are protein and insufficient calcium, both of which produce metabolic bone disease. Males in breeding condition can become genuinely aggressive. Escaped and released animals have established breeding populations in Florida, Hawaii and Puerto Rico.",
+      origin: "Central and South America, from Mexico to Paraguay, plus many introduced populations",
+      habitat: "Rainforest canopy and riverside trees, rarely far from water",
+      adultSize: "4-6 feet (1.2-1.8 m) including tail; 10-20 lbs",
+      wildDiet: "Leaves, flowers and fruit; almost entirely herbivorous",
+      wildLifespan: "15-20 years",
+      conservation: "Least Concern (IUCN), listed on CITES Appendix II",
     },
   },
   {

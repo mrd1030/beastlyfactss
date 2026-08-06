@@ -71,6 +71,88 @@ Fur ring - a constricting ring of fur around the penis in males - can develop du
     ],
   },
   {
+    id: "degu",
+    name: "Degu",
+    emoji: "🐭",
+    difficulty: "Intermediate",
+    petType: "Small Mammals",
+    image: "/assets/guides/degu.jpg",
+    tagline: "The daytime rodent that cannot eat sugar and will not live alone!",
+    funFact: "Degus are one of the few mammals that cannot metabolise dietary sugar properly. They have an unusual insulin structure and develop diabetes and cataracts on a diet most other rodents handle fine, which is why a single grape can matter here in a way it never would for a hamster.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Priced for a pair, which is the minimum this species should be kept in.
+    costs: {
+      setup: [
+        { item: "Multi-level wire cage, 24x18x36 in minimum for a pair", low: 130, high: 260 },
+        { item: "Solid 12 in exercise wheel (no rungs)", low: 35, high: 70 },
+        { item: "Dust bath house + chinchilla dust", low: 20, high: 35 },
+        { item: "Ceramic hides, tunnels and platforms", low: 30, high: 60 },
+        { item: "Heavy ceramic bowls and glass water bottle", low: 15, high: 30 },
+        { item: "Apple or willow chew wood", low: 15, high: 30 },
+      ],
+      annual: [
+        { item: "Unlimited grass hay (Timothy or orchard)", low: 110, high: 190 },
+        { item: "Sugar-free degu or chinchilla pellets", low: 40, high: 70 },
+        { item: "Bedding and substrate", low: 60, high: 110 },
+        { item: "Dust for bathing", low: 25, high: 45 },
+        { item: "Exotic vet check, including dental", low: 80, high: 160 },
+      ],
+    },
+    sections: {
+      housing: `A pair needs at least 24x18x36 inches with multiple solid levels, and more floor area beats more height. Use wire with bar spacing of half an inch or less, and solid shelves rather than mesh, which injures feet. Glass tanks are a poor choice: degus are active and produce a lot of dust, and a tank cannot ventilate it.
+
+Give them a deep substrate layer to dig in. Degus are burrowers and a cage with a shallow tray is a cage they will spend their time trying to escape. Six inches of paper-based bedding or a dig box the full width of the cage will be used constantly.
+
+Everything wooden will be destroyed. Degu incisors are open-rooted and grow for life, and they chew structurally rather than idly. Plastic shelves, plastic hides and plastic wheels last days. Use ceramic, metal and untreated hardwood, and expect to replace chew wood weekly.
+
+Keep them at 60 to 72 degrees F. Like chinchillas they overheat easily and cannot cope above about 80, and a degu breathing rapidly with a wet chin in a warm room is in trouble.`,
+      diet: `Unlimited grass hay is the base of the diet and must be there all the time. It supplies the fibre that keeps the gut moving and the abrasion that keeps continuously growing teeth worn down.
+
+Pellets must be sugar-free. Use a chinchilla or dedicated degu pellet with no molasses, no dried fruit, no seeds and no coloured pieces, at roughly a tablespoon per degu per day. Rabbit and guinea pig pellets are usually unsuitable because of added sugar and, in the guinea pig case, added vitamin C the degu does not need.
+
+No fruit, no carrot, no sweetcorn, no honey sticks, no yoghurt drops. This is not a general caution about treats: degus have an atypical insulin and a genuine inability to handle simple sugars, and diabetes in a pet degu shows up as cataracts, weight loss and excessive drinking. Safe extras are small amounts of leafy greens, dandelion, plantain, and the occasional plain oat or sunflower seed as a training reward.
+
+Healthy adult degus have orange incisors. White or very pale teeth in an adult are a sign of malnutrition, not good hygiene.`,
+      enrichment: `Degus are diurnal, which is the main reason people choose them: they are awake and interactive during the day rather than at two in the morning. That also means they need genuine daytime stimulation.
+
+They must be kept in at least a pair, and preferably a same-sex group from the same litter. A lone degu is a welfare problem, not a preference. Introducing unfamiliar adults is difficult and often fails, so buy littermates or an already-bonded group rather than planning to add later.
+
+Provide a solid running wheel of 12 inches or more, tunnels, ceramic hides, platforms at different heights and a permanent dig area. Rotate cardboard and chew wood weekly.
+
+They need a dust bath two or three times a week for ten to fifteen minutes, using chinchilla dust rather than sand. Their coat goes greasy and matted without it.
+
+Never pick a degu up by the tail. The skin sheds away as a predator defence, the exposed section is then lost, and it does not grow back.`,
+      health: `Diabetes and cataracts are the signature problem and are almost entirely dietary. Watch for cloudy eyes, drinking far more than usual, and weight loss on a normal appetite.
+
+Dental disease is the other common one. Open-rooted teeth that are not worn down overgrow, and the first signs are drooling, dropping food, weight loss and a preference for softer items. This needs an exotics vet with a proper oral examination, usually under anaesthetic, not a visual check of the front teeth alone.
+
+Bumblefoot comes from wire flooring and dirty bedding. Respiratory infections come from dusty bedding and poor ventilation, and a degu with laboured breathing or a discharge from the nose needs seeing quickly.
+
+Heat stress is an emergency. Above roughly 80 degrees F expect rapid breathing, lethargy and a wet chin, and cool the animal gradually rather than with ice.
+
+Find an exotics vet before you need one. Degus are not a species every small animal practice sees regularly.`,
+      checklist: [
+        "24x18x36 in minimum multi-level cage for a pair",
+        "At least two degus, ideally littermates",
+        "Solid 12 in or larger exercise wheel",
+        "Unlimited grass hay (Timothy or orchard)",
+        "Sugar-free pellets, no fruit or molasses",
+        "Deep substrate or a dedicated dig box",
+        "Chinchilla dust and a bath house",
+        "Untreated hardwood chew, replaced weekly",
+        "Room kept between 60 and 72 degrees F",
+        "Exotic veterinarian experienced with degus"
+      ],
+    },
+    faqs: [
+      { q: "Can degus eat fruit?", a: "No. Degus have an unusual insulin structure and cannot process dietary sugar the way most rodents can, so fruit, carrot, sweetcorn, honey treats and yoghurt drops all carry a real risk of diabetes and the cataracts that follow it. This is not the usual advice to go easy on treats; it is a species-level metabolic limitation. Safe extras are leafy greens, dandelion, plantain and the occasional plain oat or single sunflower seed." },
+      { q: "Can I keep a single degu?", a: "You should not. Degus live in colonies of up to a hundred animals in the wild with cooperative burrowing and sentry duty, and a lone degu shows real distress: repetitive behaviour, bar chewing and lethargy. Keep at least two. The practical catch is that introducing unfamiliar adults frequently fails, so buy littermates or an established same-sex group rather than planning to add a companion later." },
+      { q: "Why are my degu's teeth orange?", a: "That is what a healthy adult degu's teeth look like. The enamel takes on an orange to deep yellow colour as the animal matures. It is white or very pale teeth in an adult that signal a problem, usually a diet short on the minerals and fibre the species needs." },
+      { q: "Are degus awake during the day?", a: "Yes, and it is the main reason people pick them over hamsters. Degus are diurnal, so they are active and sociable during normal waking hours instead of starting at midnight. They do take naps through the day, and they are noisy: the species has a large vocal repertoire and a bonded pair chatters constantly." },
+      { q: "What happens if a degu's tail comes off?", a: "The skin of the tail is designed to strip away if a predator grabs it, leaving the animal free but exposing the vertebrae, which then die back and are lost. It does not regrow. Never lift or restrain a degu by the tail, and scoop from underneath with both hands instead." },
+    ],
+  },
+  {
     id: "ferret",
     name: "Ferret",
     emoji: "🦡",
@@ -143,6 +225,92 @@ All ferrets should be vaccinated against canine distemper (fatal in ferrets) and
       { q: "What diseases are common in ferrets?", a: "Most North American ferrets develop at least one of three serious diseases by age 4 to 5: insulinoma (pancreatic cancer causing low blood sugar), adrenal gland disease (causing hair loss starting at the tail and hormonal imbalance), and lymphoma. Annual bloodwork starting at age 2 to 3 allows early detection. A ferret-experienced exotic vet is essential from day one, not just when illness appears." },
       { q: "How much free-roam time do ferrets need?", a: "A minimum of 4 hours per day outside their cage, in a thoroughly ferret-proofed area. Ferrets kept caged all day develop significant physical deterioration and behavioral problems. Ferret-proofing is serious: they squeeze through gaps wider than 1 inch, chew electrical cords, fall into open toilets, and get trapped in recliner mechanisms. Block all gaps under doors and secure all hazards before unsupervised roaming." },
       { q: "How long do ferrets live?", a: "6 to 10 years in captivity, though their high disease susceptibility means dedicated veterinary management becomes part of the commitment by middle age. Ferrets are deeply social, playful, and bond strongly with their keepers - many owners describe them as the most personality-rich small pets available. The veterinary costs of managing insulinoma and adrenal disease should be budgeted for before acquiring ferrets." },
+    ],
+  },
+  {
+    id: "gerbil",
+    name: "Gerbil",
+    emoji: "🐭",
+    difficulty: "Beginner",
+    petType: "Small Mammals",
+    image: "/assets/guides/gerbil.jpg",
+    tagline: "The tidy desert burrower that wants deep bedding, not a bare cage floor!",
+    funFact: "Gerbils came out of the Mongolian desert with a water-conserving physiology that makes them one of the least smelly pets you can keep. They produce only a few drops of highly concentrated urine a day, so a well-kept gerbil tank barely registers compared with a mouse or a rat.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Priced for a pair, which is the minimum this species should be kept in.
+    costs: {
+      setup: [
+        { item: "20 gallon long tank or deep-base cage for a pair", low: 60, high: 130 },
+        { item: "Secure mesh lid", low: 20, high: 40 },
+        { item: "Solid 8 in exercise wheel (no rungs)", low: 20, high: 40 },
+        { item: "Sand bath dish + chinchilla sand", low: 12, high: 25 },
+        { item: "Ceramic hides and cardboard tunnels", low: 20, high: 40 },
+        { item: "Water bottle and heavy ceramic dish", low: 12, high: 25 },
+      ],
+      annual: [
+        { item: "Deep paper bedding and hay for burrowing", low: 90, high: 160 },
+        { item: "Gerbil or hamster seed mix", low: 40, high: 70 },
+        { item: "Chinchilla sand for bathing", low: 20, high: 35 },
+        { item: "Chew wood and cardboard", low: 25, high: 45 },
+        { item: "Exotic vet check", low: 60, high: 130 },
+      ],
+    },
+    sections: {
+      housing: `Depth matters more than floor plan. Gerbils are burrowing animals and the single biggest improvement you can make is eight to twelve inches of substrate they can tunnel through. A 20 gallon long tank with a mesh lid suits them better than most wire cages, because a wire cage cannot hold deep bedding and gerbils kick it out.
+
+Mix paper-based bedding with hay or shredded paper so the tunnels hold their shape. Pure fluffy bedding collapses; a mix binds. Once a pair has built a burrow system they will maintain and remodel it for months, and that is the behaviour the species is really about.
+
+Bar spacing on any wire section must be half an inch or less. Gerbils are small, determined and good climbers, and a mesh lid needs to be secured rather than rested on top.
+
+Keep them at 65 to 75 degrees F, out of direct sun. A glass tank in a sunny window becomes an oven very quickly.
+
+Skip the plastic. Tubes, wheels and hides in plastic get chewed through fast, and swallowed fragments cause impactions.`,
+      diet: `A good gerbil or hamster seed mix is the base, at roughly a tablespoon per gerbil per day. Look for a mix built on whole grains and seeds rather than one padded with coloured extruded pieces, and avoid mixes heavy on sunflower seed, which gerbils will pick out first and which is far too fatty as a staple.
+
+Provide hay alongside it, both to eat and to build with.
+
+Fresh food is a small supplement rather than a food group: a little broccoli, carrot, cucumber, apple or dandelion a few times a week is plenty. Too much fresh food causes diarrhoea in a species adapted to a dry diet.
+
+Water from a bottle, checked daily. Gerbils drink very little, which makes it easy to miss a bottle that has stopped flowing.
+
+Avoid citrus, onion, garlic, rhubarb, raw beans and anything sugary or sticky.`,
+      enrichment: `Keep gerbils in same-sex pairs or small groups. A single gerbil is an unhappy gerbil, and unlike hamsters they are genuinely social.
+
+The catch is that introductions are hard. Adult gerbils that do not already know each other will often fight, sometimes seriously, and a bonded pair can also fall out later in what keepers call declanning. Buy littermates, keep an eye on them, and if a pair does break down they usually cannot be put back together. The split-cage method is the standard way to introduce unfamiliar animals, over one to two weeks.
+
+Give them things to destroy: cardboard tubes, plain toilet rolls, seagrass, untreated hardwood, hay. Gerbils gnaw constantly and a bare tank leads to bar chewing and repetitive digging in one corner.
+
+A sand bath, not a dust bath, keeps the coat in order. Use chinchilla sand rather than the finer dust, and offer it a couple of times a week rather than leaving it in permanently.
+
+Handle low over a surface, scooped in cupped hands. Never grab the tail: like the degu, the skin can strip away and does not regrow.`,
+      health: `Tyzzer's disease is the one to know about. It is a bacterial infection, most often seen in young or stressed gerbils, and it moves fast: a hunched, lethargic gerbil with diarrhoea needs a vet the same day.
+
+Scent gland tumours are common in older gerbils. The gland sits as a bare orange-tan oval on the belly, and any lump, ulceration or bleeding there is worth having looked at, since these are often removable when caught early.
+
+Seizures happen in some lines and can look alarming. They are usually brief, triggered by stress or rough handling, and most animals grow out of them. Keep handling calm and short with a gerbil that has had one.
+
+Overgrown teeth, wet tail-type diarrhoea and respiratory infections round out the usual list. Dusty bedding and poor ventilation are behind most respiratory problems.
+
+Because gerbils drink so little, dehydration is easy to miss. Check skin tenting and check the bottle daily.`,
+      checklist: [
+        "20 gallon long tank or deep-base cage for a pair",
+        "At least two gerbils, ideally littermates",
+        "8 to 12 inches of bedding for burrowing",
+        "Secure mesh lid",
+        "Solid 8 in exercise wheel",
+        "Gerbil or hamster seed mix, low sunflower",
+        "Hay for eating and tunnel building",
+        "Chinchilla sand for bathing",
+        "Cardboard and untreated hardwood to chew",
+        "Exotic veterinarian experienced with gerbils"
+      ],
+    },
+    faqs: [
+      { q: "Do gerbils smell?", a: "Barely, and it is the main reason people pick them. Gerbils evolved in the Mongolian desert with a physiology built around conserving water, so they produce only a few drops of very concentrated urine a day. A tank with deep bedding, spot-cleaned regularly and fully changed every few weeks, stays far fresher than the equivalent setup for a mouse or a rat." },
+      { q: "How deep should gerbil bedding be?", a: "Eight to twelve inches if you can manage it. Gerbils are burrowers and a shallow tray gives them nothing to do, which shows up as bar chewing and digging obsessively in one corner. Mix paper bedding with hay or shredded paper so the tunnels hold rather than collapse. A deep setup is the single biggest quality of life change you can make for this species." },
+      { q: "Can gerbils live alone?", a: "They should not. Gerbils are social and a lone animal does poorly. The complication is that they are also territorial: unfamiliar adults often fight, and even an established pair can suddenly fall out, which keepers call declanning. Buy littermates where possible, introduce unfamiliar animals only with the split-cage method over one to two weeks, and separate permanently if a pair breaks down." },
+      { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumours are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
+      { q: "Why is my gerbil having seizures?", a: "Some gerbil lines carry an inherited tendency to brief seizures, usually set off by stress, a sudden noise, or rough handling, and often in younger animals that grow out of it. An episode typically passes in under a minute. Keep the animal somewhere quiet, keep handling sessions short and gentle, and see a vet if seizures are frequent, long, or start in an adult that never had them before." },
     ],
   },
   {
