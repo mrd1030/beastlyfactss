@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/generate-thumbnails.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite",
-    "build": "node scripts/check-internal-links.mjs && node scripts/check-cost-coverage.mjs && node scripts/generate-thumbnails.js && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite build && node scripts/generate-fact-pages.mjs && node prerender.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
+    "build": "node scripts/check-internal-links.mjs && node scripts/check-cost-coverage.mjs && node scripts/check-seo-tags.mjs && node scripts/generate-thumbnails.js && node scripts/check-images.mjs && node scripts/sync-facts.js && node scripts/sync-articles.js && node scripts/generate-guides-index.js && node scripts/generate-beastlypedia-index.js && node scripts/generate-legal-summary.mjs && vite build && node scripts/generate-fact-pages.mjs && node prerender.mjs && node generate-sitemap.js && node scripts/inline-critical-css.mjs",
     "preview": "vite preview",
     "check:sources": "node scripts/check-source-links.mjs",
     "lint": "eslint . --quiet",
@@ -13,7 +13,9 @@
     "typecheck": "tsc -p ./jsconfig.json",
     "postinstall": "patch-package",
     "check:links": "node scripts/check-internal-links.mjs",
-    "check:costs": "node scripts/check-cost-coverage.mjs"
+    "check:costs": "node scripts/check-cost-coverage.mjs",
+    "check:seo": "node scripts/check-seo-tags.mjs",
+    "check:images": "node scripts/check-images.mjs"
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.1.1",

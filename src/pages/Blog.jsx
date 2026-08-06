@@ -12,6 +12,7 @@ import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicle
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { withBrand } from '@/lib/utils/seo';
 import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
@@ -496,7 +497,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   const postSlug = post.slug?.current || post._id || post.id;
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated frontmatter SEO fields win; excerpt/title/image are the fallbacks.
-  const postTitle = `${post.seoTitle || post.title} | Beastly Facts`;
+  // The brand suffix is appended only when the result still fits in 60
+  // characters. Four legal guides shipped with seoTitles in the mid-fifties that
+  // were fine on their own and only breached the limit once " | Beastly Facts"
+  // was glued on, which is the cheapest part of the tag to drop.
+  const postTitle = withBrand(post.seoTitle || post.title);
   // Truncated as a safety net - frontmatter fields (seoDescription/excerpt)
   // are hand-written and usually already a good length, but nothing upstream
   // enforces that, so a too-long field would otherwise ship straight to

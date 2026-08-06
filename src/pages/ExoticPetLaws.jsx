@@ -6,6 +6,7 @@ import { ArrowLeft } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
+import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
 const SITE = 'https://beastlyfacts.com';
@@ -171,13 +172,31 @@ export default function ExoticPetLaws() {
     ? { code: selectedState, entry: statuses[selectedState] }
     : null;
 
+  // Animal names here run from "Hamster" to "Argentine black and white tegu", a
+  // 23 character swing, so the tags are composed from variants rather than one
+  // template: short names keep the descriptive wording, long ones fall back.
+  // See src/lib/utils/seo.js for why the budgets are 60 and 160.
   const title = isIndex
     ? 'Exotic Pet Laws by State: An Interactive US Map'
-    : `${animal.name} Laws by State: Where It Is Banned or Restricted`;
+    : pickWithinLimit(
+        [
+          `${animal.name} Laws by State: Where It Is Banned`,
+          `${animal.name} Laws by State: Bans and Permits`,
+          `${animal.name} Laws by State`,
+        ],
+        TITLE_MAX - ` | ${BRAND}`.length,
+      );
 
   const description = isIndex
     ? `An interactive map of US exotic pet law covering ${ANIMAL_IDS.length} animals across all ${stateCount} states and DC, every entry quoting the statute or regulation itself.`
-    : `Every US state where the ${inSentence(animal.name)} is banned, needs a permit or comes with conditions, each entry citing the regulation directly. ${counts.banned} bans, ${counts.permit} permit states.`;
+    : pickWithinLimit(
+        [
+          `Every US state where the ${inSentence(animal.name)} is banned, needs a permit or comes with conditions, each entry citing the regulation itself. ${plural(counts.banned, 'ban')}, ${plural(counts.permit, 'permit state')}.`,
+          `Where the ${inSentence(animal.name)} is banned, restricted or needs a permit, each entry citing the regulation itself. ${plural(counts.banned, 'ban')}, ${plural(counts.permit, 'permit state')}.`,
+          `Where the ${inSentence(animal.name)} is banned or needs a permit, citing each regulation. ${plural(counts.banned, 'ban')}, ${plural(counts.permit, 'permit state')}.`,
+        ],
+        DESCRIPTION_MAX,
+      );
 
   // An animal with no restriction anywhere has no page of its own worth
   // indexing: an all-grey map and one honest sentence. It stays selectable on
@@ -190,11 +209,11 @@ export default function ExoticPetLaws() {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>{`${title} | Beastly Facts`}</title>
+        <title>{withBrand(title)}</title>
         <meta name="description" content={description} />
         <meta name="robots" content={nothingToReport ? 'noindex,follow' : 'index,follow'} />
         <link rel="canonical" href={canonical} />
-        <meta property="og:title" content={`${title} | Beastly Facts`} />
+        <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={canonical} />
@@ -204,7 +223,7 @@ export default function ExoticPetLaws() {
         <meta property="og:image:alt" content="Interactive map of United States exotic pet laws" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={`${SITE}/assets/guides/exotic-pet-legal-hub.jpg`} />
-        <meta name="twitter:title" content={`${title} | Beastly Facts`} />
+        <meta name="twitter:title" content={withBrand(title)} />
         <meta name="twitter:description" content={description} />
       </Helmet>
 
