@@ -404,5 +404,33 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/welcome-beastlyfacts.jpg": {
     "width": 1168,
     "height": 784
-  }
+  },
+  "/assets/guides/bengal-cat-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/fennec-fox-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/hamster-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/russian-tortoise-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/serval-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/tarantula-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/guides/veiled-chameleon-legal.jpg": {
+    "width": 1168,
+    "height": 784
+  },
 };
