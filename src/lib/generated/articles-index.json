@@ -4028,12 +4028,16 @@
     {
       "slug": "uvb-lighting-complete-guide",
       "title": "UVB Lighting: Why It Matters More Than You Think",
-      "excerpt": "Recent research has changed what we know about reptile UVB needs - including species once thought not to need it.",
+      "excerpt": "Lack of UVB is behind the most common bone disease in reptile practice, an African grey emergency vets see regularly,",
       "date": "2025-04-12",
       "image": "/assets/images/uvb-lighting.jpg",
-      "category": "Reptiles",
+      "category": "Pet Care",
       "categories": [
-        "Reptiles"
+        "Pet Care",
+        "Reptiles",
+        "Birds",
+        "Amphibians",
+        "Turtles & Tortoises"
       ]
     },
     {

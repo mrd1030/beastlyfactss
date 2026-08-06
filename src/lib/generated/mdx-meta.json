@@ -20254,11 +20254,15 @@
     "slug": "uvb-lighting-complete-guide",
     "title": "UVB Lighting: Why It Matters More Than You Think",
     "seoTitle": null,
-    "excerpt": "Recent research has changed what we know about reptile UVB needs - including species once thought not to need it. Here's the updated picture.",
+    "excerpt": "Lack of UVB is behind the most common bone disease in reptile practice, an African grey emergency vets see regularly, and a deformity that turns up in captive frogs. One lighting decision, three very different animals.",
     "date": "2025-04-12",
-    "category": "Reptiles",
+    "category": "Pet Care",
     "categories": [
-      "Reptiles"
+      "Pet Care",
+      "Reptiles",
+      "Birds",
+      "Amphibians",
+      "Turtles & Tortoises"
     ],
     "tags": [
       "UVB",
@@ -20267,14 +20271,17 @@
       "Health",
       "Care Tips",
       "Reptile Lighting",
-      "Vitamin D3"
+      "Vitamin D3",
+      "Metabolic Bone Disease",
+      "Parrots",
+      "Amphibians"
     ],
-    "readTime": 5,
+    "readTime": 9,
     "difficulty": "Intermediate",
     "image": "/assets/images/uvb-lighting.jpg",
     "imageAlt": "Bearded dragon under a modern T5 UVB light fixture showing proper lighting gradient",
-    "emoji": "🦎",
-    "lastReviewed": "2026-06-19",
+    "emoji": "🩺",
+    "lastReviewed": "2026-08-05",
     "canonicalUrl": null,
     "faqs": [
       {
@@ -20282,20 +20289,28 @@
         "a": "Current research says yes, at a low level. Even nocturnal and crepuscular species receive incidental UV exposure at dawn and dusk in the wild, and low-output UVB (Zone 1) is now commonly recommended for species previously thought not to need it at all."
       },
       {
+        "q": "Do pet birds need UVB?",
+        "a": "Indoor birds are at real risk without it. The Merck Veterinary Manual notes that a calcium-deficient seed diet is often compounded by inadequate exposure to unfiltered sunlight in birds housed indoors, producing vitamin D3 deficiency on top of the dietary problem. African grey parrots are specifically prone to an acute hypocalcemia syndrome tied to both low calcium and low vitamin D3, which can present as weakness, tremors and seizures."
+      },
+      {
         "q": "How do I know what Ferguson Zone my reptile needs?",
-        "a": "It's based on the species' natural basking behavior in the wild - shade-dwellers and crepuscular species sit in Zone 1 or 2 (low UV), while open baskers like bearded dragons and intense sun-seekers like ackie monitors sit in Zone 3 or 4 (moderate to high UV). Species-specific care guides typically state the appropriate zone directly."
+        "a": "It's based on the species' natural basking behavior in the wild. Shade-dwellers and crepuscular species sit in Zone 1 or 2 (low UV), while open baskers like bearded dragons and intense sun-seekers like ackie monitors sit in Zone 3 or 4 (moderate to high UV). Species-specific care guides typically state the appropriate zone directly."
       },
       {
         "q": "How often do UVB bulbs actually need replacing?",
-        "a": "Every 12 months for most linear T5 HO bulbs, even if the visible light still looks bright. UV output degrades well before visible brightness noticeably drops, so relying on how the bulb looks is not a reliable way to judge it."
+        "a": "Every 12 months for most linear T5 HO bulbs used with reptiles, even if the visible light still looks bright, because UV output degrades well before brightness noticeably drops. Amphibian guidance is shorter: Merck specifies every 6 to 8 months or per the manufacturer."
+      },
+      {
+        "q": "Does glass block UVB?",
+        "a": "Yes, and this catches people out constantly. Ordinary glass and most plastics attenuate UVB heavily, so a bulb mounted above a glass lid, or a window described as a sunny spot, delivers far less than it appears to. Merck states the point directly for amphibians and it applies just as much to a reptile under a glass top."
       },
       {
         "q": "Can I provide too much UVB?",
-        "a": "Yes - without a proper gradient allowing the animal to move toward or away from the light, overexposure is possible and can cause harm. A gradient that lets the reptile self-regulate its own exposure is just as important as the bulb strength itself."
+        "a": "Yes. Without a gradient allowing the animal to move toward or away from the light, overexposure is possible and can cause harm. A gradient that lets the animal self-regulate is as important as the bulb strength itself."
       },
       {
         "q": "Is a compact UVB bulb as good as a linear T5 HO?",
-        "a": "Compact coil and dome UVB bulbs generally produce a less even gradient and can be associated with eye and skin irritation in some cases. Linear T5 HO fixtures from reputable brands are the current gold standard recommended by most reptile lighting researchers."
+        "a": "Compact coil and dome UVB bulbs generally produce a less even gradient and have been associated with eye and skin irritation in some cases. Linear T5 HO fixtures from reputable brands are the current standard recommended by most reptile lighting researchers."
       }
     ],
     "relatedProducts": [
@@ -20307,7 +20322,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/veiled-chameleon-cost-guide.mdx",
