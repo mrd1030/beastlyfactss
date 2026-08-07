@@ -2,7 +2,6 @@ import React, { Suspense, useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import Footer from './Footer';
-import BeastlyBuddy from '../shared/BeastlyBuddy';
 import BottomTabs from './BottomTabs';
 import AchievementToast from '../shared/AchievementToast';
 
@@ -79,7 +78,6 @@ export default function AppLayout() {
       ) : (
         <RoutedContent />
       )}
-      <BeastlyBuddy />
       {/* Mobile-only bottom navigation */}
       <BottomTabs />
     </div>

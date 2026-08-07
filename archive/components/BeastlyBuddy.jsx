@@ -1,3 +1,18 @@
+// ARCHIVED 2026-08-07. Unmounted from AppLayout.jsx (was rendered on every
+// page as a `position: fixed` floating button). It stayed anchored to the
+// viewport while the page scrolled underneath it, which meant it could sit
+// directly on top of body text - confirmed on a live mobile screenshot, the
+// button was covering an article heading mid-scroll.
+//
+// Retired to see whether a mobile font-size bump on its own fixes the
+// "harder to read on the site than expected" report before deciding whether
+// this comes back, comes back repositioned, or stays retired. Not deleted:
+// this file still has real, working logic (the greeting rotation, favorites
+// integration, analytics) if it does come back.
+//
+// To restore: move this file back to src/components/shared/BeastlyBuddy.jsx,
+// then import and render <BeastlyBuddy /> in AppLayout.jsx (see git history
+// on that file for the exact two lines removed).
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { X, Heart } from 'lucide-react';

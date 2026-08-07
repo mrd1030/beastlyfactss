@@ -666,7 +666,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 zero is 9.6px at this size while its average letter is 7.35px,
                 so an apparently sensible max-w-[68ch] still produced 89
                 characters. 37rem is 592px, about 80. */}
-            <div ref={contentRef} className="prose prose-sm sm:prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
+            <div ref={contentRef} className="prose prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
               ) : (
