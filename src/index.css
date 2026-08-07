@@ -208,10 +208,17 @@
        To revert: restore the two commented values below. */
     --background: 150 12% 7%; /* was 150 30% 6% */
     --foreground: 34 15% 93%; /* was 34 40% 95% */
-    --card: 150 25% 10%;
-    --card-foreground: 34 40% 95%;
-    --popover: 150 25% 10%;
-    --popover-foreground: 34 40% 95%;
+    /* card/popover are the actual reading surface almost everywhere - every
+       article (BlogPost.jsx) wraps its entire content, header through body,
+       in a bg-card block, so this pair mattered more than background/
+       foreground above and was missed in the first pass. Same treatment,
+       same reasoning: desaturated, same hue, still comfortably AAA
+       (14.41:1). Foreground reuses the exact --foreground value above
+       rather than a third near-identical cream. */
+    --card: 150 10% 11%; /* was 150 25% 10% */
+    --card-foreground: 34 15% 93%; /* was 34 40% 95% */
+    --popover: 150 10% 11%; /* was 150 25% 10% */
+    --popover-foreground: 34 15% 93%; /* was 34 40% 95% */
     --primary: 174 100% 42%;
     --primary-foreground: 150 30% 6%;
     --secondary: 24 100% 63%;
