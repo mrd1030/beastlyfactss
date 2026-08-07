@@ -274,7 +274,11 @@ export const AFFILIATE_PRODUCTS = [
     price: "$23–$33",
     description: "Dry, low-dust bedding suited to many snakes and small mammals that prefer arid conditions.",
     covers: ["Aspen shavings substrate", "Aspen or coconut fiber substrate"],
-    pets: ["reptiles-amphibians"],
+    // Own description already says "small mammals," but pets only listed
+    // reptiles-amphibians - linked from the new degu/gerbil tank-setup
+    // guides, and the mismatch would have kept it off any small-mammal
+    // gear filtering.
+    pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
     slug: "sphagnum-moss",
@@ -2622,7 +2626,12 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$10–$20",
     description: "Balanced pelleted staple food that is easier to portion and more complete than a treat-heavy mix.",
-    covers: [],
+    // "Sugar-free degu or chinchilla pellets" is the degu guide's own cost
+    // line (src/lib/data/guides/smallMammals.js and the new degu-cost-guide
+    // article) - degus have a genuine insulin-resistance predisposition, so
+    // a low-sugar diet is a real welfare requirement for them, not just a
+    // chinchilla-specific preference.
+    covers: ["Sugar-free degu or chinchilla pellets"],
     altGroup: "chinchilla-food",
     pets: ["small-mammals"],
   },
