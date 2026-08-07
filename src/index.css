@@ -29,6 +29,28 @@
   font-display: optional;
 }
 
+/* Body font replaced 2026-08-07: Nunito -> Atkinson Hyperlegible Next, a
+   variable font built by the Braille Institute specifically for reading
+   clarity (taller lowercase, more distinct easily-confused glyphs like
+   1/l/I). Nunito's @font-face and file above are left in place rather than
+   deleted - nothing references the family 'Nunito' by name outside this
+   file, so it costs nothing at runtime, and it is one line to revert
+   (--font-body below) if this does not hold up. */
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/fonts/atkinson-hyperlegible-next-var.woff2') format('woff2-variations'), url('/fonts/atkinson-hyperlegible-next-var.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/fonts/atkinson-hyperlegible-next-italic-var.woff2') format('woff2-variations'), url('/fonts/atkinson-hyperlegible-next-italic-var.woff2') format('woff2');
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: optional;
+}
+
 /* Metric-matched fallback faces, for the rare page view that misses the
    preload window above. These alias to local Arial/Arial Bold, with
    ascent/descent/size-adjust overridden to match Fredoka/Nunito's ACTUAL
@@ -79,10 +101,61 @@
   size-adjust: 97.81%;
 }
 
+/* Atkinson Hyperlegible Next Fallback, computed from the real font files
+   (public/fonts/atkinson-hyperlegible-next*.woff2) via fontaine's
+   readMetrics()/generateFontFace(), which reads the actual OS/2 table
+   rather than estimating. One caveat, unlike the bespoke per-weight Canvas
+   measurements Fredoka/Nunito above used: fontaine's bundled Arial metrics
+   are not weight- or style-specific, so the regular/bold/italic blocks
+   below share one set of override numbers rather than four independently
+   measured ones. Still real, still measured against the actual font file,
+   just a coarser match than the pair above - worth redoing with a proper
+   per-weight measurement if this face sticks around long-term. */
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next Fallback';
+  src: local('Arial');
+  font-weight: 200 500;
+  font-style: normal;
+  ascent-override: 98.8%;
+  descent-override: 31.73%;
+  line-gap-override: 0%;
+  size-adjust: 99.6%;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT'), local('Arial');
+  font-weight: 501 800;
+  font-style: normal;
+  ascent-override: 98.8%;
+  descent-override: 31.73%;
+  line-gap-override: 0%;
+  size-adjust: 99.6%;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next Fallback';
+  src: local('Arial Italic'), local('Arial-ItalicMT'), local('Arial');
+  font-weight: 200 500;
+  font-style: italic;
+  ascent-override: 98.8%;
+  descent-override: 31.73%;
+  line-gap-override: 0%;
+  size-adjust: 99.6%;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next Fallback';
+  src: local('Arial Bold Italic'), local('Arial-BoldItalicMT'), local('Arial Italic'), local('Arial');
+  font-weight: 501 800;
+  font-style: italic;
+  ascent-override: 98.8%;
+  descent-override: 31.73%;
+  line-gap-override: 0%;
+  size-adjust: 99.6%;
+}
+
 @layer base {
   :root {
     --font-display: 'Fredoka', 'Fredoka Fallback', sans-serif;
-    --font-body: 'Nunito', 'Nunito Fallback', sans-serif;
+    --font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible Next Fallback', sans-serif;
 
     --background: 34 55% 96%;
     --foreground: 150 40% 10%;
@@ -125,8 +198,16 @@
   }
 
   .dark {
-    --background: 150 30% 6%;
-    --foreground: 34 40% 95%;
+    /* REVERT NOTE (2026-08-07): background/foreground were 150 30% 6% and
+       34 40% 95% before this change. Both passed WCAG AAA (16.96:1) but
+       carried real saturation - a true forest green and a true warm cream,
+       not neutral - which is invisible to the WCAG contrast formula (it
+       only measures luminance, not hue) but was reported as feeling harder
+       to read on sustained articles than the numbers implied. Desaturated
+       both roughly in half, same hues, same lightness, still 15.98:1 AAA.
+       To revert: restore the two commented values below. */
+    --background: 150 12% 7%; /* was 150 30% 6% */
+    --foreground: 34 15% 93%; /* was 34 40% 95% */
     --card: 150 25% 10%;
     --card-foreground: 34 40% 95%;
     --popover: 150 25% 10%;
