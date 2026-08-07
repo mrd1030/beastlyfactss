@@ -76,10 +76,18 @@ const missingDerivatives = [];
 const isStaged = (file) => file.startsWith('content/_scheduled');
 
 for (const [webPath, sources] of [...refs].sort()) {
-  if (!exists(webPath)) {
-    const live = [...sources].filter((s) => !isStaged(s));
-    if (live.length) missing.push({ webPath, sources: live });
-    else staged.push({ webPath, sources: [...sources] });
+  const stagedSources = [...sources].filter(isStaged);
+  const liveSources = [...sources].filter((s) => !isStaged(s));
+
+  // Staged artwork actually sits under an /_scheduled/ segment inserted after
+  // the directory root (e.g. /assets/images/_scheduled/dex/dex-chron12.jpg),
+  // not at the literal path written in frontmatter. Check both before
+  // reporting anything as missing.
+  const stagedPath = webPath.replace(/^(\/assets\/[^/]+\/)/, '$1_scheduled/');
+
+  if (!exists(webPath) && !(stagedSources.length && exists(stagedPath))) {
+    if (liveSources.length) missing.push({ webPath, sources: liveSources });
+    else if (stagedSources.length) staged.push({ webPath, sources: stagedSources });
     continue;
   }
 
