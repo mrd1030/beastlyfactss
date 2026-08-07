@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calculator, ShoppingCart, ChevronDown } from 'lucide-react';
 import { getAffiliateForItem, getAlternatesForItem, RETAILERS } from '@/lib/data/affiliateProducts';
+import ProductModal from '@/components/shared/ProductModal';
 
 // Joins retailer labels naturally: "Amazon", "Amazon and Chewy", "Amazon, Chewy and Impact".
 function joinLabels(labels) {
@@ -19,7 +20,7 @@ function sumRange(items, checked) {
   );
 }
 
-function ItemLabel({ text, textClassName }) {
+function ItemLabel({ text, textClassName, onSelectProduct }) {
   const [showAlts, setShowAlts] = useState(false);
   const product = getAffiliateForItem(text);
 
@@ -33,16 +34,17 @@ function ItemLabel({ text, textClassName }) {
   return (
     <span className="relative inline-flex flex-col items-start gap-1 min-w-0">
       <span className="relative inline-flex items-center gap-1 group/aff min-w-0">
-        <a
-          href={product.link}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          onClick={(e) => e.stopPropagation()}
-          title={`Paid link - opens the product on ${retailerLabel}`}
-          className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate`}
+        <button
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onSelectProduct(product);
+          }}
+          title={`See product details - ${retailerLabel}`}
+          className={`${textClassName} underline decoration-dotted decoration-current/40 underline-offset-2 hover:text-secondary transition-colors truncate min-w-0 text-left`}
         >
           {text}
-        </a>
+        </button>
         <ShoppingCart className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" aria-hidden="true" />
         {product.image && (
           <span className="pointer-events-none absolute left-0 bottom-full mb-2 z-20 hidden group-hover/aff:block group-focus-within/aff:block">
@@ -72,16 +74,15 @@ function ItemLabel({ text, textClassName }) {
       {showAlts && alternates.length > 0 && (
         <span className="flex flex-col gap-1 pl-1 border-l-2 border-border ml-0.5" onClick={(e) => e.stopPropagation()}>
           {alternates.map((alt) => (
-            <a
+            <button
               key={alt.slug}
-              href={alt.link}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              title={`Paid link - opens the product on ${RETAILERS[alt.retailer]?.label || 'Amazon'}`}
-              className="text-[10px] text-muted-foreground hover:text-secondary underline decoration-dotted decoration-current/40 underline-offset-2 pl-2 truncate max-w-[220px]"
+              type="button"
+              onClick={() => onSelectProduct(alt)}
+              title={`See product details - ${RETAILERS[alt.retailer]?.label || 'Amazon'}`}
+              className="text-[10px] text-left text-muted-foreground hover:text-secondary underline decoration-dotted decoration-current/40 underline-offset-2 pl-2 truncate max-w-[220px]"
             >
               {alt.product}
-            </a>
+            </button>
           ))}
         </span>
       )}
@@ -89,7 +90,7 @@ function ItemLabel({ text, textClassName }) {
   );
 }
 
-function CostSection({ title, items, checked, onToggle }) {
+function CostSection({ title, items, checked, onToggle, onSelectProduct }) {
   return (
     <div className="mb-5 last:mb-0">
       <h3 className="font-display font-bold text-sm text-foreground mb-3">{title}</h3>
@@ -109,6 +110,7 @@ function CostSection({ title, items, checked, onToggle }) {
               <ItemLabel
                 text={item.item}
                 textClassName={checked[i] ? 'text-foreground' : 'text-muted-foreground line-through'}
+                onSelectProduct={onSelectProduct}
               />
             </span>
             <span className="text-muted-foreground flex-shrink-0 whitespace-nowrap">
@@ -125,6 +127,7 @@ export default function CostBuilder({ guide }) {
   const costs = guide.costs;
   const [checkedSetup, setCheckedSetup] = useState(() => (costs?.setup || []).map(() => true));
   const [checkedAnnual, setCheckedAnnual] = useState(() => (costs?.annual || []).map(() => true));
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   if (!costs) return null;
 
@@ -148,8 +151,9 @@ export default function CostBuilder({ guide }) {
         Uncheck anything you already have to see your real total.
       </p>
 
-      <CostSection title="One-Time Setup" items={costs.setup} checked={checkedSetup} onToggle={toggleSetup} />
-      <CostSection title="Ongoing (Per Year)" items={costs.annual} checked={checkedAnnual} onToggle={toggleAnnual} />
+      <CostSection title="One-Time Setup" items={costs.setup} checked={checkedSetup} onToggle={toggleSetup} onSelectProduct={setSelectedProduct} />
+      <CostSection title="Ongoing (Per Year)" items={costs.annual} checked={checkedAnnual} onToggle={toggleAnnual} onSelectProduct={setSelectedProduct} />
+      <ProductModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
 
       <div className="grid grid-cols-2 gap-3 mt-5 pt-4 border-t border-border">
         <div>
