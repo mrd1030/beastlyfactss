@@ -28,6 +28,8 @@ export const RELATED_ARTICLES = {
   'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
   'hamster': ['hamster-vs-guinea-pig-guide', 'hamster-cost-guide', 'hamster-handling-guide', 'hamster-health-issues-guide', 'hamster-tank-setup-guide', 'hamster-feeding-guide'],
   'guinea-pig': ['hamster-vs-guinea-pig-guide', 'guinea-pig-scurvy-vitamin-c-guide', 'guinea-pig-cost-guide', 'guinea-pig-handling-guide', 'guinea-pig-health-issues-guide', 'guinea-pig-tank-setup-guide', 'guinea-pig-feeding-guide'],
+  'degu': ['degu-gerbil-overview', 'degu-cost-guide', 'degu-handling-guide', 'degu-health-issues-guide', 'degu-tank-setup-guide'],
+  'gerbil': ['degu-gerbil-overview', 'gerbil-cost-guide', 'gerbil-handling-guide', 'gerbil-health-issues-guide', 'gerbil-tank-setup-guide'],
   'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide', 'bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide'],
   'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide', 'leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide'],
   'crested-gecko': ['leopard-gecko-vs-crested-gecko-guide', 'crested-gecko-cost-guide', 'crested-gecko-handling-guide', 'crested-gecko-health-issues-guide', 'crested-gecko-tank-setup-guide'],
