@@ -3197,6 +3197,7 @@ export const AFFILIATE_PRODUCTS = [
     price: "$1,450–$1,550",
     description: "An all-welded, rust-resistant stainless steel cage big enough for cockatoos and macaws. Stainless steel matters for this species because a cockatoo's beak and constant chewing will eventually corrode or destroy powder-coated wire, and the smooth surface is easier to fully disinfect between cleanings.",
     covers: ["King's Cages or A&E Cage Company stainless steel cage"],
+    altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
   {
@@ -3209,7 +3210,13 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$820–$880",
     description: "A heavy-gauge, powder-coated steel cage sized for cockatoos, macaws, and other large parrots, hundreds less than a full stainless steel cage of the same size. Reviewers confirm using it for umbrella and galah cockatoos, macaws, African greys, and eclectus parrots.",
-    covers: ["Prevue Hendryx large cage"],
+    // "3x2x4 ft heavy-gauge cage with locks" is the cockatoo guide's own cost
+    // line (src/lib/data/guides/birds.js) - this $820-880 cage sits inside
+    // its stated $500-1200 range, the stainless option above ($1,450-1,550)
+    // does not, so this is the primary match and the stainless cage is
+    // linked as the upgrade alternative via altGroup instead.
+    covers: ["Prevue Hendryx large cage", "3x2x4 ft heavy-gauge cage with locks"],
+    altGroup: "large-parrot-cage",
     pets: ["birds"],
   },
   {
@@ -3222,7 +3229,16 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.3,
     price: "$42–$49",
     description: "A 5-piece rotation set of extra-large wooden foraging and chew toys built to withstand a cockatoo or macaw's beak power. Large parrots can demolish a toy in days, so having several on hand to rotate in keeps the cage from sitting bare while a replacement order ships.",
-    covers: ["Destructible foraging toys, rotating stock"],
+    // One physical purchase, three phrasings in the cockatoo guide's own
+    // cost lines (initial chew toy supply, foraging toys specifically, and
+    // the annual rotating-toy budget) - all three are this same rotating
+    // wooden toy set, not three different products.
+    covers: [
+      "Destructible foraging toys, rotating stock",
+      "Destructible wood chew toys (initial supply)",
+      "Foraging toys (large parrot, heavy-duty)",
+      "Toys (rotating, heavy destruction rate)",
+    ],
     pets: ["birds"],
   },
   {
