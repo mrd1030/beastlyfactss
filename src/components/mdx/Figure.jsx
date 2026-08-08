@@ -31,7 +31,10 @@ export default function Figure({
     e.stopPropagation();
     const articleUrl = window.location.href;
     const absoluteImageUrl = new URL(src, window.location.origin).href;
-    const description = caption || alt || document.title;
+    // caption/alt describe what's IN the picture (fine for a figcaption or
+    // screen reader, wrong tone for a share). The page's own meta description
+    // is already written as what the article is ABOUT, use that instead.
+    const description = document.querySelector('meta[name="description"]')?.content || document.title;
     const title = document.title;
     const textWithArticleLink = `${description}\n\n${articleUrl}`;
 
@@ -104,24 +107,16 @@ export default function Figure({
       }
     }
 
-    try {
-      const response = await fetch(src);
-      const blob = await response.blob();
-      const blobUrl = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = blobUrl;
-      link.download = filename;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(blobUrl);
-      setDownloaded(true);
-      setTimeout(() => setDownloaded(false), 2000);
-    } catch {
-      // Fetch failed (offline, etc) - open the image directly as a last
-      // resort so the user can long-press/save it manually.
-      window.open(src, '_blank');
-    }
+    // No native save dialog available (every mobile browser, plus Safari and
+    // Firefox on desktop). A blob-url + <a download> click used to be the
+    // fallback here, but that's confirmed unreliable on real devices: WebKit
+    // (so Safari and anything using it, including DuckDuckGo on iOS) largely
+    // ignores the download attribute, and DuckDuckGo on Android silently
+    // swallows the synthetic click as part of its script-blocking. Opening
+    // the image directly is the one thing every mobile browser handles the
+    // same way - the user long-presses the image and uses their own "Save
+    // image" / "Download image" option from there.
+    window.open(src, '_blank');
   };
 
   return (
