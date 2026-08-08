@@ -16,16 +16,23 @@ export default function Figure({
   // Two things both have to survive every fallback: the picture itself (not
   // the article's own og:image, usually an unrelated featured photo) and a
   // way back to the article. Sharing an actual File is what makes most share
-  // sheets treat it as "sending the picture", but files and a url can't
-  // reliably travel together in one share() call, so the article link rides
-  // along in `text` instead - it's included on every path below.
+  // sheets treat it as "sending the picture", but in practice a lot of mobile
+  // browsers report navigator.share without real navigator.canShare({files})
+  // support (confirmed: falls through on this site across Messages, X,
+  // Instagram, Threads, and email alike, so it's the browser, not the
+  // target). For that fallback, sharing the article's url would resolve to
+  // the article's own og:image, not this infographic - sharing the image's
+  // own url instead means an unfurled preview shows the right picture. The
+  // article link still rides along as plain text, most share targets
+  // auto-linkify a bare url even without building a card for it.
   const handleShare = async (e) => {
     e.preventDefault();
     e.stopPropagation();
     const articleUrl = window.location.href;
+    const absoluteImageUrl = new URL(src, window.location.origin).href;
     const description = caption || alt || document.title;
     const title = document.title;
-    const textWithLink = `${description}\n\n${articleUrl}`;
+    const textWithArticleLink = `${description}\n\n${articleUrl}`;
 
     if (navigator.share && navigator.canShare) {
       try {
@@ -34,22 +41,22 @@ export default function Figure({
         const filename = src.split('/').pop() || 'image.jpg';
         const file = new File([blob], filename, { type: blob.type || 'image/jpeg' });
         if (navigator.canShare({ files: [file] })) {
-          await navigator.share({ files: [file], title, text: textWithLink });
+          await navigator.share({ files: [file], title, text: textWithArticleLink });
           return;
         }
       } catch (err) {
         if (err?.name === 'AbortError') return;
         // Fetch/File construction failed (offline, CORS, unsupported type) -
-        // fall through to sharing the article link below rather than dead-ending.
+        // fall through to url-based sharing below rather than dead-ending.
       }
     }
 
-    // No file-sharing support: share the article itself rather than a bare
-    // image file with no way back to it, the article's own preview card
-    // still shows this image further down the page.
+    // No file-sharing support: share the image's own url so an unfurled
+    // preview shows the infographic itself, with the article link kept as
+    // plain text in `text` rather than lost entirely.
     if (navigator.share) {
       try {
-        await navigator.share({ title, text: description, url: articleUrl });
+        await navigator.share({ title, text: textWithArticleLink, url: absoluteImageUrl });
         return;
       } catch (err) {
         if (err?.name === 'AbortError') return;
@@ -57,7 +64,7 @@ export default function Figure({
     }
 
     try {
-      await navigator.clipboard.writeText(textWithLink);
+      await navigator.clipboard.writeText(textWithArticleLink);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {
