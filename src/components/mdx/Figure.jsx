@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Share2, Check } from 'lucide-react';
+import { Share2, Download, Check } from 'lucide-react';
 
 export default function Figure({
   src,
@@ -9,6 +9,7 @@ export default function Figure({
   shareable = false,
 }) {
   const [copied, setCopied] = useState(false);
+  const [downloaded, setDownloaded] = useState(false);
 
   // window/document access stays inside the handler (not render), same rule
   // ImageLightbox follows, so this is safe under prerendering.
@@ -73,6 +74,56 @@ export default function Figure({
     }
   };
 
+  // showSaveFilePicker gives a real native "choose where to save" dialog,
+  // but it's desktop Chrome/Edge only - there's no equivalent on mobile or
+  // Safari/Firefox, that's a platform gap, not something a page can add.
+  // Everywhere else this just falls back to a normal browser download,
+  // landing wherever that browser/OS puts downloads by default.
+  const handleDownload = async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const filename = src.split('/').pop() || 'image.jpg';
+
+    if (window.showSaveFilePicker) {
+      try {
+        const response = await fetch(src);
+        const blob = await response.blob();
+        const handle = await window.showSaveFilePicker({
+          suggestedName: filename,
+          types: [{ description: 'Image', accept: { [blob.type || 'image/jpeg']: ['.jpg', '.jpeg'] } }],
+        });
+        const writable = await handle.createWritable();
+        await writable.write(blob);
+        await writable.close();
+        setDownloaded(true);
+        setTimeout(() => setDownloaded(false), 2000);
+        return;
+      } catch (err) {
+        if (err?.name === 'AbortError') return; // user cancelled the picker
+        // fall through to the plain download below
+      }
+    }
+
+    try {
+      const response = await fetch(src);
+      const blob = await response.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(blobUrl);
+      setDownloaded(true);
+      setTimeout(() => setDownloaded(false), 2000);
+    } catch {
+      // Fetch failed (offline, etc) - open the image directly as a last
+      // resort so the user can long-press/save it manually.
+      window.open(src, '_blank');
+    }
+  };
+
   return (
     <figure className={`my-8 ${className}`}>
       <div className="relative group">
@@ -83,15 +134,26 @@ export default function Figure({
           loading="lazy"
         />
         {shareable && (
-          <button
-            type="button"
-            onClick={handleShare}
-            aria-label="Share this image"
-            className="absolute top-3 right-3 flex items-center gap-1.5 text-xs font-body font-bold text-white bg-black/70 backdrop-blur-sm px-3 py-2 rounded-xl opacity-0 group-hover:opacity-100 focus-visible:opacity-100 transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
-          >
-            {copied ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
-            <span>{copied ? 'Copied!' : 'Share'}</span>
-          </button>
+          <div className="absolute top-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
+            <button
+              type="button"
+              onClick={handleDownload}
+              aria-label="Download this image"
+              title="Download"
+              className="flex items-center justify-center text-white bg-black/70 backdrop-blur-sm p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+            >
+              {downloaded ? <Check className="w-4 h-4" /> : <Download className="w-4 h-4" />}
+            </button>
+            <button
+              type="button"
+              onClick={handleShare}
+              aria-label="Share this image"
+              title="Share"
+              className="flex items-center justify-center text-white bg-black/70 backdrop-blur-sm p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+            >
+              {copied ? <Check className="w-4 h-4" /> : <Share2 className="w-4 h-4" />}
+            </button>
+          </div>
         )}
       </div>
       {caption && (
