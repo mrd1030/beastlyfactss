@@ -77,46 +77,42 @@ export default function Figure({
     }
   };
 
-  // showSaveFilePicker gives a real native "choose where to save" dialog,
-  // but it's desktop Chrome/Edge only - there's no equivalent on mobile or
-  // Safari/Firefox, that's a platform gap, not something a page can add.
-  // Everywhere else this just falls back to a normal browser download,
-  // landing wherever that browser/OS puts downloads by default.
+  // The download control is a real <a href target="_blank"> below, not a
+  // button - a genuine link click is the one mechanism every browser treats
+  // as a normal navigation rather than a script action. Two scripted
+  // techniques were tried here already and both failed on real devices:
+  // blob-url + <a download> (WebKit mostly ignores the download attribute)
+  // and a plain window.open() call (DuckDuckGo's popup/script protections
+  // silently swallowed it). This handler only intercepts the click when it
+  // can offer something strictly better than that plain link navigation -
+  // the real native "choose where to save" dialog, desktop Chrome/Edge only.
+  // Everywhere else it does nothing and lets the link's own href/target
+  // open the image in a new tab, where the user long-presses to save it.
   const handleDownload = async (e) => {
+    if (!window.showSaveFilePicker) return;
+
     e.preventDefault();
     e.stopPropagation();
     const filename = src.split('/').pop() || 'image.jpg';
 
-    if (window.showSaveFilePicker) {
-      try {
-        const response = await fetch(src);
-        const blob = await response.blob();
-        const handle = await window.showSaveFilePicker({
-          suggestedName: filename,
-          types: [{ description: 'Image', accept: { [blob.type || 'image/jpeg']: ['.jpg', '.jpeg'] } }],
-        });
-        const writable = await handle.createWritable();
-        await writable.write(blob);
-        await writable.close();
-        setDownloaded(true);
-        setTimeout(() => setDownloaded(false), 2000);
-        return;
-      } catch (err) {
-        if (err?.name === 'AbortError') return; // user cancelled the picker
-        // fall through to the plain download below
-      }
+    try {
+      const response = await fetch(src);
+      const blob = await response.blob();
+      const handle = await window.showSaveFilePicker({
+        suggestedName: filename,
+        types: [{ description: 'Image', accept: { [blob.type || 'image/jpeg']: ['.jpg', '.jpeg'] } }],
+      });
+      const writable = await handle.createWritable();
+      await writable.write(blob);
+      await writable.close();
+      setDownloaded(true);
+      setTimeout(() => setDownloaded(false), 2000);
+    } catch (err) {
+      if (err?.name === 'AbortError') return; // user cancelled the picker
+      // Fetch/save failed some other way - fall back to the same plain
+      // open-in-new-tab behavior non-picker browsers get by default.
+      window.open(src, '_blank', 'noopener,noreferrer');
     }
-
-    // No native save dialog available (every mobile browser, plus Safari and
-    // Firefox on desktop). A blob-url + <a download> click used to be the
-    // fallback here, but that's confirmed unreliable on real devices: WebKit
-    // (so Safari and anything using it, including DuckDuckGo on iOS) largely
-    // ignores the download attribute, and DuckDuckGo on Android silently
-    // swallows the synthetic click as part of its script-blocking. Opening
-    // the image directly is the one thing every mobile browser handles the
-    // same way - the user long-presses the image and uses their own "Save
-    // image" / "Download image" option from there.
-    window.open(src, '_blank');
   };
 
   return (
@@ -130,15 +126,17 @@ export default function Figure({
         />
         {shareable && (
           <div className="absolute top-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
-            <button
-              type="button"
+            <a
+              href={src}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={handleDownload}
               aria-label="Download this image"
               title="Download"
               className="flex items-center justify-center text-white bg-black/70 backdrop-blur-sm p-2 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
             >
               {downloaded ? <Check className="w-4 h-4" /> : <Download className="w-4 h-4" />}
-            </button>
+            </a>
             <button
               type="button"
               onClick={handleShare}
