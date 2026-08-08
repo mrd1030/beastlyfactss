@@ -86,6 +86,43 @@ function readLastUpdated(post) {
   return parseFrontmatter(fs.readFileSync(filePath, 'utf8')).lastUpdated || null;
 }
 
+// Google discovers images fastest through the sitemap's image extension,
+// rather than waiting to crawl and render each page. Two sources per post:
+// the frontmatter featured image (image/imageAlt, already known from
+// mdxMeta) and any <Figure src="..." alt="..." /> embedded in the body
+// (attribute order not guaranteed, so src/alt are matched independently).
+function getFigureImages(post) {
+  const filePath = path.join(__dirname, post.path);
+  if (!fs.existsSync(filePath)) return [];
+  const content = fs.readFileSync(filePath, 'utf8');
+  const figureTags = content.match(/<Figure\s[^>]*\/>/g) || [];
+  return figureTags
+    .map(tag => {
+      const srcMatch = tag.match(/src=["']([^"']+)["']/);
+      const altMatch = tag.match(/alt=["']([^"']+)["']/);
+      return srcMatch ? { loc: srcMatch[1], title: altMatch ? altMatch[1] : '' } : null;
+    })
+    .filter(Boolean);
+}
+
+function getPostImages(post) {
+  const images = [];
+  if (post.image) images.push({ loc: post.image, title: post.imageAlt || post.title });
+  images.push(...getFigureImages(post));
+  return images;
+}
+
+// Escapes the five XML-reserved characters in a title/alt string pulled from
+// content, since & and < in particular would otherwise produce invalid XML.
+function escapeXml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 // A post's date can be set ahead as a release date (see hasReachedPublishDate in
 // public/_worker.js). The page itself stays in the sitemap either way, since it is
 // deployed and we want it crawled, but a <lastmod> in the future is a bad signal:
@@ -102,6 +139,7 @@ function getMdxPosts() {
     lastmod: notInFuture(readLastUpdated(post)) || notInFuture(post.date) || null,
     changefreq: 'weekly',
     priority: '0.7',
+    images: getPostImages(post),
   }));
 }
 
@@ -371,7 +409,7 @@ async function generateSitemap() {
   const uniqueStatic = [...new Set(staticPages)];
 
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
-  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+  xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n`;
 
   uniqueStatic.forEach(path => {
     const isHome = path === '/';
@@ -396,6 +434,12 @@ async function generateSitemap() {
     if (page.lastmod) xml += `    <lastmod>${page.lastmod}</lastmod>\n`;
     xml += `    <changefreq>${page.changefreq}</changefreq>\n`;
     xml += `    <priority>${page.priority}</priority>\n`;
+    (page.images || []).forEach(img => {
+      xml += `    <image:image>\n`;
+      xml += `      <image:loc>${BASE_URL}${img.loc}</image:loc>\n`;
+      if (img.title) xml += `      <image:title>${escapeXml(img.title)}</image:title>\n`;
+      xml += `    </image:image>\n`;
+    });
     xml += `  </url>\n`;
   });
 
