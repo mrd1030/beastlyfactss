@@ -40,12 +40,20 @@ async function watermark(filePath) {
         fill="white" fill-opacity="0.85">${text}</text>
     </svg>`;
 
+  // .jpeg() is load-bearing, not a style choice: without it sharp preserves
+  // whatever format the input happened to be and toBuffer() just returns
+  // that encoding, regardless of the .jpg extension on absPath. Three
+  // infographics (box-turtle, hedgehog, ackie-monitor) were fed PNG sources
+  // and came out the other end as PNG bytes wearing a .jpg filename, 2-3MB
+  // each instead of a few hundred KB, since PNG is lossless and this
+  // watermark step is the last thing that touches the file before it ships.
   const buffer = await image
     .composite([{
       input: Buffer.from(svg),
       left: meta.width - pillWidth - margin,
       top: meta.height - pillHeight - margin,
     }])
+    .jpeg({ quality: 85 })
     .toBuffer();
 
   // Written to a temp file and renamed over the original rather than
