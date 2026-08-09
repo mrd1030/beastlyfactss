@@ -226,9 +226,9 @@ export default function Search() {
           <div className="space-y-3">
             {sorted.map((post, i) => (
               <motion.div key={post._id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.03 }}>
-                <CompactPostCard 
-                  post={post} 
-                  onClick={() => navigate(`/blog?post=${post.slug?.current || post._id}`)} 
+                <CompactPostCard
+                  post={post}
+                  onClick={() => navigate(`/blog/${post.slug?.current || post._id || post.id}/`)}
                 />
               </motion.div>
             ))}
