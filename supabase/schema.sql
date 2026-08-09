@@ -132,6 +132,58 @@ create table if not exists public.blog_comments (
 create index if not exists blog_comments_post_id_status_idx
   on public.blog_comments (post_id, status);
 
+-- ---------------------------------------------------------------------------
+-- Replies (one level deep only)
+-- ---------------------------------------------------------------------------
+-- A reply is just a row in the same table with parent_id set, so it inherits
+-- moderation, the notify trigger and every CHECK constraint above for free.
+-- on delete cascade: replies to a comment that gets deleted (not rejected,
+-- actually deleted from the dashboard) go with it rather than becoming
+-- orphaned rows with a dangling parent_id.
+alter table public.blog_comments
+  add column if not exists parent_id uuid references public.blog_comments(id) on delete cascade;
+
+create index if not exists blog_comments_parent_id_idx
+  on public.blog_comments (parent_id);
+
+-- Enforced here rather than left to the client: a reply must target an
+-- approved, top-level comment on the same post. The parent_id is not null
+-- check on the target is what actually caps nesting at one level - a reply
+-- can never itself be replied to, because its own id can never pass this
+-- check as someone else's parent_id.
+--
+-- security definer is load-bearing, not optional: a plain trigger function
+-- runs as the inserting role (anon), which has no select grant on
+-- blog_comments at all (reads go through public_blog_comments). Without
+-- definer, every reply insert fails with "permission denied for table
+-- blog_comments" the moment this exists() subquery runs, not because the
+-- reply is invalid but because anon cannot even ask the question.
+create or replace function public.validate_comment_reply()
+returns trigger
+language plpgsql
+security definer
+set search_path = public, extensions
+as $fn$
+begin
+  if new.parent_id is not null and not exists (
+    select 1 from public.blog_comments
+    where id = new.parent_id
+      and post_id = new.post_id
+      and status = 'approved'
+      and parent_id is null
+  ) then
+    raise exception 'Replies must target an approved top-level comment on the same post';
+  end if;
+  return new;
+end
+$fn$;
+
+drop trigger if exists blog_comments_validate_reply on public.blog_comments;
+create trigger blog_comments_validate_reply
+  before insert on public.blog_comments
+  for each row
+  execute function public.validate_comment_reply();
+
 alter table public.blog_comments enable row level security;
 
 -- Anyone may submit, but only ever as 'pending'. The with check clause is what
@@ -147,15 +199,78 @@ create policy "anyone can submit a comment"
 -- through the view below, so author_email is never exposed.
 
 -- ---------------------------------------------------------------------------
+-- Comment likes
+-- ---------------------------------------------------------------------------
+-- Same shape and same reasoning as blog_post_likes: one like per device per
+-- comment, enforced by the database rather than trusted from localStorage,
+-- and no update/delete policy since unliking is not a feature here either.
+-- Applies equally to top-level comments and replies, they are both just rows
+-- in blog_comments.
+create table if not exists public.blog_comment_likes (
+  id          uuid primary key default gen_random_uuid(),
+  comment_id  uuid not null references public.blog_comments(id) on delete cascade,
+  session_key text not null,
+  created_at  timestamptz not null default now(),
+  unique (comment_id, session_key)
+);
+
+create index if not exists blog_comment_likes_comment_id_idx
+  on public.blog_comment_likes (comment_id);
+
+alter table public.blog_comment_likes enable row level security;
+
+drop policy if exists "anyone can read comment likes" on public.blog_comment_likes;
+create policy "anyone can read comment likes"
+  on public.blog_comment_likes for select
+  to anon, authenticated
+  using (true);
+
+-- RLS policy expressions run as the calling role too, the same trap as the
+-- reply trigger above: a raw "exists (select 1 from blog_comments ...)"
+-- inside with check fails for anon with "permission denied for table
+-- blog_comments", since anon has insert-only on that table. Routing the
+-- check through a security definer function is the fix, same pattern as
+-- moderate_comment() below - the function briefly runs with elevated
+-- privilege to answer one narrow, read-only question, and nothing else.
+create or replace function public.comment_is_approved(p_comment_id uuid)
+returns boolean
+language sql
+security definer
+stable
+set search_path = public, extensions
+as $fn$
+  select exists (
+    select 1 from public.blog_comments
+    where id = p_comment_id and status = 'approved'
+  );
+$fn$;
+
+revoke all on function public.comment_is_approved(uuid) from public;
+grant execute on function public.comment_is_approved(uuid) to anon, authenticated;
+
+-- The check is what stops someone liking a pending or rejected comment,
+-- since public_blog_comments never exposes their ids for a real reader to
+-- reference in the first place, but a crafted request could still try.
+drop policy if exists "anyone can like a comment" on public.blog_comment_likes;
+create policy "anyone can like a comment"
+  on public.blog_comment_likes for insert
+  to anon, authenticated
+  with check (
+    length(session_key) between 8 and 100
+    and public.comment_is_approved(comment_id)
+  );
+
+-- ---------------------------------------------------------------------------
 -- Public read surface
 -- ---------------------------------------------------------------------------
 -- security_invoker = off so the view can read the base table even though anon
 -- has no select policy on it. The view is the boundary: it exposes approved
--- comments only, without emails.
+-- comments only, without emails. parent_id is included so the client can
+-- build the two-level comment/reply tree; it is null for top-level comments.
 drop view if exists public.public_blog_comments;
 create view public.public_blog_comments
   with (security_invoker = off) as
-  select id, post_id, author_name, content, created_at
+  select id, post_id, parent_id, author_name, content, created_at
   from public.blog_comments
   where status = 'approved';
 
@@ -192,18 +307,22 @@ grant select on public.public_blog_comments to anon, authenticated;
 revoke all on public.blog_post_likes from anon, authenticated;
 revoke all on public.blog_post_shares from anon, authenticated;
 revoke all on public.blog_comments from anon, authenticated;
+revoke all on public.blog_comment_likes from anon, authenticated;
 
 grant select, insert on public.blog_post_likes to anon, authenticated;
 grant select, insert on public.blog_post_shares to anon, authenticated;
 grant insert on public.blog_comments to anon, authenticated;
+grant select, insert on public.blog_comment_likes to anon, authenticated;
 
 -- ---------------------------------------------------------------------------
 -- Moderating
 -- ---------------------------------------------------------------------------
 -- Approve:  update public.blog_comments set status = 'approved' where id = '...';
 -- Reject:   update public.blog_comments set status = 'rejected' where id = '...';
--- Queue:    select id, post_title, author_name, content, created_at
+-- Queue:    select id, post_title, author_name, content, parent_id, created_at
 --             from public.blog_comments where status = 'pending' order by created_at;
+--           A non-null parent_id means it's a reply; the notification title
+--           already distinguishes "New reply:" from "New comment:" too.
 --
 -- Run these from the SQL editor or the Table editor while signed in to the
 -- dashboard, which uses the service role and bypasses RLS. No admin UI is
@@ -341,7 +460,8 @@ begin
     url := 'https://ntfy.sh',
     body := jsonb_build_object(
       'topic', topic,
-      'title', 'New comment: ' || coalesce(nullif(new.post_title, ''), new.post_id),
+      'title', (case when new.parent_id is not null then 'New reply: ' else 'New comment: ' end)
+               || coalesce(nullif(new.post_title, ''), new.post_id),
       -- author_email is deliberately not included: it is not needed to decide
       -- whether to approve, and a phone notification is a poor place for it.
       'message', new.author_name || ' wrote:' || chr(10) || chr(10)

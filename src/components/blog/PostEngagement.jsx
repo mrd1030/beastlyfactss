@@ -54,6 +54,23 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Comment/reply likes: counts per comment id, plus which ones this session
+  // has already liked. Populated from the DB on load, same shape as the
+  // post-level like state above but keyed by comment id since there can be
+  // many on one post.
+  const [commentLikeCounts, setCommentLikeCounts] = useState({});
+  const [likedCommentIds, setLikedCommentIds] = useState(() => new Set());
+
+  // Replies are one level deep only (enforced server-side too, see
+  // validate_comment_reply in schema.sql), so a single open target is enough,
+  // there is never a reply-to-a-reply form to track.
+  const [replyTarget, setReplyTarget] = useState(null);
+  const [replyName, setReplyName] = useState('');
+  const [replyEmail, setReplyEmail] = useState('');
+  const [replyText, setReplyText] = useState('');
+  const [replySubmitting, setReplySubmitting] = useState(false);
+  const [submittedReplyIds, setSubmittedReplyIds] = useState(() => new Set());
+
   const sessionKey = getSessionKey();
 
   useEffect(() => {
@@ -82,19 +99,38 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       supabase.from('blog_post_shares').select('id').eq('post_id', postId).eq('session_key', sessionKey).maybeSingle(),
       // Reads the view, not the table: it exposes approved comments only and
       // omits author_email entirely. created_date is aliased so the markup
-      // below is unchanged from the base44 version.
+      // below is unchanged from the base44 version. parent_id is null for a
+      // top-level comment and set for a reply.
       supabase
         .from('public_blog_comments')
-        .select('id, author_name, content, created_date:created_at')
+        .select('id, parent_id, author_name, content, created_date:created_at')
         .eq('post_id', postId)
         .order('created_at', { ascending: true }),
     ]);
+
+    const commentRows = approved.data || [];
+    // A second, dependent query: comment_likes rows are keyed by comment id,
+    // not post id, so which comments exist has to be known first. Cheap in
+    // practice - one extra request, scoped to exactly this post's comments.
+    const commentIds = commentRows.map(c => c.id);
+    const commentLikesRes = commentIds.length
+      ? await supabase.from('blog_comment_likes').select('comment_id, session_key').in('comment_id', commentIds)
+      : { data: [] };
+    const counts = {};
+    const ownLikedIds = new Set();
+    for (const row of commentLikesRes.data || []) {
+      counts[row.comment_id] = (counts[row.comment_id] || 0) + 1;
+      if (row.session_key === sessionKey) ownLikedIds.add(row.comment_id);
+    }
+
     return {
       likeCount: likes.count,
       likedInDb: Boolean(ownLike.data),
       shareCount: shares.count,
       sharedInDb: Boolean(ownShare.data),
-      comments: approved.data,
+      comments: commentRows,
+      commentLikeCounts: counts,
+      likedCommentIds: ownLikedIds,
     };
   };
 
@@ -106,6 +142,8 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       if (typeof data.likeCount === 'number') setLikeCount(data.likeCount);
       if (typeof data.shareCount === 'number') setShareCount(data.shareCount);
       if (data.comments) setComments(data.comments);
+      if (data.commentLikeCounts) setCommentLikeCounts(data.commentLikeCounts);
+      if (data.likedCommentIds) setLikedCommentIds(data.likedCommentIds);
 
       // Reconcile the liked flag against the database instead of trusting
       // localStorage outright. localStorage is only a first-paint guess: it can
@@ -248,6 +286,93 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     }
   };
 
+  // Same optimistic-then-reconcile shape as handleLike above, just keyed by
+  // comment id instead of post id. A duplicate insert hits the (comment_id,
+  // session_key) unique constraint and errors, which is fine to ignore since
+  // the optimistic UI already reflects the like.
+  const handleLikeComment = async (commentId) => {
+    if (likedCommentIds.has(commentId)) return;
+    setLikedCommentIds(prev => new Set(prev).add(commentId));
+    setCommentLikeCounts(prev => ({ ...prev, [commentId]: (prev[commentId] || 0) + 1 }));
+    engagementCache.delete(postId);
+    if (!isSupabaseConfigured) return;
+    try {
+      await supabase.from('blog_comment_likes').insert({ comment_id: commentId, session_key: sessionKey });
+    } catch {
+      // silent - UI already updated
+    }
+  };
+
+  const openReply = (commentId) => {
+    setReplyTarget(commentId);
+    setReplyName('');
+    setReplyEmail('');
+    setReplyText('');
+  };
+
+  const handleSubmitReply = async (e, parentId) => {
+    e.preventDefault();
+    if (!replyName.trim() || !replyText.trim()) return;
+    if (!isSupabaseConfigured) {
+      toast.error('Replies are unavailable right now. Please try again later.');
+      return;
+    }
+    setReplySubmitting(true);
+    try {
+      // Same status omission as the top-level insert: defaults to 'pending'
+      // and the insert policy only accepts that. validate_comment_reply on
+      // the server is what actually enforces parentId points at an approved,
+      // top-level comment on this post - not re-checked here.
+      const { error } = await supabase.from('blog_comments').insert({
+        post_id: postId,
+        post_title: postTitle || '',
+        author_name: replyName.trim(),
+        author_email: replyEmail.trim(),
+        content: replyText.trim(),
+        parent_id: parentId,
+      });
+      if (error) throw error;
+      setSubmittedReplyIds(prev => new Set(prev).add(parentId));
+      setReplyTarget(null);
+    } catch (err) {
+      const isConstraint = /violates check constraint|blog_comments_/i.test(err?.message || '');
+      toast.error(
+        isConstraint
+          ? 'That reply looks too short, too long, or has too many links.'
+          : err?.message || 'Failed to submit reply'
+      );
+    } finally {
+      setReplySubmitting(false);
+    }
+  };
+
+  // Two-level tree: top-level comments in original order, each with its
+  // replies (also created_at order) nested underneath. Flat storage, grouped
+  // client-side rather than as a second query, since the whole approved set
+  // for one post is already small and already fetched.
+  const topLevelComments = comments.filter(c => !c.parent_id);
+  const repliesByParent = comments.reduce((acc, c) => {
+    if (c.parent_id) (acc[c.parent_id] ||= []).push(c);
+    return acc;
+  }, {});
+
+  const CommentLikeButton = ({ commentId }) => {
+    const liked = likedCommentIds.has(commentId);
+    const count = commentLikeCounts[commentId] || 0;
+    return (
+      <button
+        onClick={() => handleLikeComment(commentId)}
+        disabled={liked}
+        className={`flex items-center gap-1 text-xs font-body font-semibold transition-colors ${
+          liked ? 'text-hotpink cursor-default' : 'text-muted-foreground hover:text-hotpink'
+        }`}
+      >
+        <Heart className={`w-3.5 h-3.5 ${liked ? 'fill-hotpink text-hotpink' : ''}`} />
+        {count > 0 ? count : 'Like'}
+      </button>
+    );
+  };
+
   return (
     <div className="mt-12 border-t border-border pt-8 space-y-10">
       {/* Like & Share bar */}
@@ -301,12 +426,12 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
         </h3>
 
         {/* Existing comments */}
-        {comments.length === 0 ? (
+        {topLevelComments.length === 0 ? (
           <p className="text-sm text-muted-foreground font-body mb-6">No comments yet - be the first!</p>
         ) : (
           <div className="space-y-4 mb-8">
             <AnimatePresence>
-              {comments.map(c => (
+              {topLevelComments.map(c => (
                 <motion.div
                   key={c.id}
                   initial={{ opacity: 0, y: 8 }}
@@ -319,7 +444,93 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                       {new Date(c.created_date).toLocaleDateString()}
                     </span>
                   </div>
-                  <p className="text-sm font-body text-muted-foreground leading-relaxed">{c.content}</p>
+                  <p className="text-sm font-body text-muted-foreground leading-relaxed mb-2">{c.content}</p>
+                  <div className="flex items-center gap-4">
+                    <CommentLikeButton commentId={c.id} />
+                    <button
+                      onClick={() => openReply(c.id)}
+                      className="text-xs font-body font-semibold text-muted-foreground hover:text-secondary transition-colors"
+                    >
+                      Reply
+                    </button>
+                  </div>
+
+                  {/* Replies */}
+                  {repliesByParent[c.id]?.length > 0 && (
+                    <div className="mt-3 pl-4 border-l-2 border-border space-y-3">
+                      {repliesByParent[c.id].map(r => (
+                        <div key={r.id}>
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="font-body font-bold text-sm text-foreground">{r.author_name}</span>
+                            <span className="text-xs text-muted-foreground font-body">
+                              {new Date(r.created_date).toLocaleDateString()}
+                            </span>
+                          </div>
+                          <p className="text-sm font-body text-muted-foreground leading-relaxed mb-2">{r.content}</p>
+                          <CommentLikeButton commentId={r.id} />
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Reply form */}
+                  {submittedReplyIds.has(c.id) && replyTarget !== c.id ? (
+                    <div className="mt-3 pl-4 text-xs text-muted-foreground font-body">
+                      Thanks for your reply! It'll show up once approved.{' '}
+                      <button onClick={() => openReply(c.id)} className="text-secondary underline">
+                        Reply again
+                      </button>
+                    </div>
+                  ) : replyTarget === c.id ? (
+                    <form
+                      onSubmit={e => handleSubmitReply(e, c.id)}
+                      className="mt-3 pl-4 space-y-2 border-l-2 border-border"
+                    >
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-4">
+                        <Input
+                          placeholder="Your name *"
+                          value={replyName}
+                          onChange={e => setReplyName(e.target.value)}
+                          required
+                          className="font-body text-sm h-9"
+                        />
+                        <Input
+                          placeholder="Email (optional, not shown)"
+                          type="email"
+                          value={replyEmail}
+                          onChange={e => setReplyEmail(e.target.value)}
+                          className="font-body text-sm h-9"
+                        />
+                      </div>
+                      <div className="pl-4">
+                        <textarea
+                          placeholder={`Reply to ${c.author_name}...`}
+                          value={replyText}
+                          onChange={e => setReplyText(e.target.value)}
+                          required
+                          rows={3}
+                          className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm font-body placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring resize-none"
+                        />
+                      </div>
+                      <div className="flex items-center gap-2 pl-4">
+                        <Button
+                          type="submit"
+                          disabled={replySubmitting || !replyName.trim() || !replyText.trim()}
+                          size="sm"
+                          className="font-body font-bold"
+                        >
+                          {replySubmitting ? 'Submitting...' : 'Submit Reply'}
+                        </Button>
+                        <button
+                          type="button"
+                          onClick={() => setReplyTarget(null)}
+                          className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </form>
+                  ) : null}
                 </motion.div>
               ))}
             </AnimatePresence>
