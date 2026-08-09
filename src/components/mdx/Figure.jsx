@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { Share2, Download, Check } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Share2, Download, Check, Maximize2, X } from 'lucide-react';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
 
 export default function Figure({
   src,
@@ -10,6 +11,24 @@ export default function Figure({
 }) {
   const [copied, setCopied] = useState(false);
   const [downloaded, setDownloaded] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  // Escape-to-close and a scroll-locked background while open, same pattern
+  // ImageLightbox.jsx uses. Scoped to lightboxOpen so nothing runs, and
+  // nothing needs cleaning up, for the vast majority of Figures a reader
+  // never opens.
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    document.body.style.overflow = 'hidden';
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') setLightboxOpen(false);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = 'unset';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [lightboxOpen]);
 
   // window/document access stays inside the handler (not render), same rule
   // ImageLightbox follows, so this is safe under prerendering.
@@ -118,12 +137,35 @@ export default function Figure({
   return (
     <figure className={`my-8 ${className}`}>
       <div className="relative group">
-        <img
-          src={src}
-          alt={alt}
-          className="w-full rounded-xl border border-border shadow-sm"
-          loading="lazy"
-        />
+        {/* A <button> wrapping the <img>, kept as a SIBLING of the
+            download/share overlay below rather than a parent of it - both
+            hang off this same relative div, and the overlay paints on top via
+            absolute positioning. A click on Download/Share hits that overlay
+            element directly; it never reaches this button's onClick at all,
+            regardless of whether the click handler happens to call
+            stopPropagation. Nesting <a>/<button> inside this button would
+            be invalid HTML and risk exactly the interference this avoids by
+            construction instead. */}
+        <button
+          type="button"
+          onClick={() => setLightboxOpen(true)}
+          aria-label={alt ? `View larger: ${alt}` : 'View larger image'}
+          className="block w-full text-left cursor-zoom-in bg-transparent border-0 p-0 m-0 rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+        >
+          <img
+            src={src}
+            alt={alt}
+            className="w-full rounded-xl border border-border shadow-sm"
+            loading="lazy"
+          />
+        </button>
+        {/* Purely decorative, pointer-events-none so it can never intercept a
+            click - cursor-zoom-in alone has no equivalent on touch, so this
+            gives mobile readers a visible reason to tap. Bottom-left,
+            deliberately the opposite corner from Download/Share. */}
+        <div className="absolute bottom-3 left-3 flex items-center justify-center text-white bg-black/70 backdrop-blur-sm p-2 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+          <Maximize2 className="w-4 h-4" />
+        </div>
         {shareable && (
           <div className="absolute top-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-200">
             <a
@@ -154,6 +196,42 @@ export default function Figure({
           {caption}
         </figcaption>
       )}
+
+      <AnimatePresence>
+        {lightboxOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-foreground/70 backdrop-blur-sm"
+            onClick={() => setLightboxOpen(false)}
+            role="dialog"
+            aria-modal="true"
+            aria-label={alt || 'Enlarged image'}
+          >
+            <motion.div
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              className="relative max-w-5xl w-full"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setLightboxOpen(false)}
+                className="absolute -top-3 -right-3 z-10 p-2 rounded-full bg-card text-foreground shadow-lg hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
+                aria-label="Close"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <img
+                src={src}
+                alt={alt}
+                className="w-full max-h-[90vh] object-contain rounded-xl"
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </figure>
   );
 }
