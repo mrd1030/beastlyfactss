@@ -135,11 +135,9 @@ Surveyed 2026-08-08 for what's left across three buckets, to sequence the next r
 
 ### 2A. Remaining tank-setup diagrams (landscape, same format as the 7 done above)
 
-56 tank-setup guides left. **HIGH priority** (dense, specific, non-obvious numbers, genuinely distinct from what's already done), roughly in order:
+**Re-audited 2026-08-09 directly against the repo** (the earlier hand-maintained list had drifted, everything in the old HIGH bucket is actually done now). 24 tank-setup guides left, all in `content/guides/*-tank-setup-guide.mdx` with no `<Figure>` yet:
 
-ackie-monitor, argentine-tegu, savannah-monitor, uromastyx, blue-tongue-skink (has a real split, Northern vs Indonesian, different temps/humidity for the same species), boa-constrictor, veiled-chameleon (dripper is non-negotiable), box-turtle, crested-gecko, corn-snake, degu, ferret, hedgehog, hognose-snake, goldfish, guinea-pig, koi, madagascar-hissing-cockroach (petroleum jelly escape barrier is a genuinely odd, specific detail), oscar-fish, rabbit, fire-bellied-toad, leaf-tailed-gecko, stick-insect, sulcata-tortoise, tiger-salamander.
-
-**MEDIUM priority** (real numbers, but reads as a variation on an already-covered pattern): angelfish, ball-python, california-kingsnake, corydoras-catfish, emperor-scorpion, gargoyle-gecko, gerbil, guppy, jacksons-chameleon, jumping-spider, milk-snake, mourning-gecko, neon-tetra, pacman-frog, praying-mantis, russian-tortoise, tarantula, whites-tree-frog, african-fat-tail, green-anole, giant-millipede.
+**Priority** (real numbers, genuinely distinct from what's already done): gerbil (deep digging substrate over floor space, the degu companion piece, already referenced from the degu article), gargoyle-gecko, jacksons-chameleon, mourning-gecko, african-fat-tail, green-anole (reptile/gecko variety not yet covered), pacman-frog, whites-tree-frog, russian-tortoise, emperor-scorpion, jumping-spider, giant-millipede, praying-mantis (invertebrate variety not yet covered), california-kingsnake, milk-snake, ball-python (snake variety not yet covered), angelfish, corydoras-catfish, guppy, neon-tetra (fish variety not yet covered).
 
 **LOW priority / consolidate:** budgie, canary, conure, cockatiel, cockatoo, african-grey-parrot, lovebird all share the same skeleton (cage size, 0.5in bar spacing, pellet %, kitchen-fume warning). Do one composite "parrot cage setup" diagram instead of 7 near-duplicates.
 
