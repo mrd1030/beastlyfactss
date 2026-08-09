@@ -478,7 +478,6 @@ function AuthorBio() {
 }
 
 function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFilesMode = false, allPosts, onSelectPost }) {
-  const [openFaq, setOpenFaq] = useState(null);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
@@ -682,20 +681,15 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 </h2>
                 <div className="space-y-1">
                   {post.faqs.map((faq, i) => (
-                    <div key={i} className="border border-border/60 rounded-xl overflow-hidden">
-                      <button
-                        onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                        className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors"
-                      >
+                    <details key={i} name={`faq-${postSlug}`} className="group border border-border/60 rounded-xl overflow-hidden">
+                      <summary className="w-full flex items-center justify-between gap-3 px-4 py-3 text-left hover:bg-muted/50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                         <span className="font-body font-semibold text-sm text-foreground">{faq.q}</span>
-                        <ChevronDown className={`w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${openFaq === i ? 'rotate-180' : ''}`} />
-                      </button>
-                      {openFaq === i && (
-                        <div className="px-4 pb-3 text-sm text-muted-foreground font-body leading-relaxed border-t border-border/40">
-                          <p className="pt-3">{faq.a}</p>
-                        </div>
-                      )}
-                    </div>
+                        <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                      </summary>
+                      <div className="px-4 pb-3 text-sm text-muted-foreground font-body leading-relaxed border-t border-border/40">
+                        <p className="pt-3">{faq.a}</p>
+                      </div>
+                    </details>
                   ))}
                 </div>
               </div>
