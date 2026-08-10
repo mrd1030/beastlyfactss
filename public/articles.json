@@ -45,6 +45,17 @@
       ]
     },
     {
+      "slug": "ackie-monitor-feeding-guide",
+      "title": "Ackie Monitor Feeding Guide: Schedule and Diet",
+      "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed them like they're a bigger, meatier lizard than they actually are.",
+      "date": "2026-08-10",
+      "image": "/assets/images/ackie-monitor-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "ackie-monitor-handling-guide",
       "title": "How to Handle an Ackie Monitor Safely",
       "excerpt": "Ackie monitors are a genuinely different kind of lizard to interact with compared to the sit-and-bask species already covered on this site, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
@@ -138,6 +149,17 @@
       "excerpt": "African grey parrots are genuinely one of the most expensive pets covered on this site, and the purchase price is really just the entry fee for a decades-long commitment.",
       "date": "2026-07-17",
       "image": "/assets/images/african-grey-parrot-cost.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "african-grey-parrot-feeding-guide",
+      "title": "African Grey Parrot Feeding Guide: Schedule and Diet",
+      "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more consequential than it is for most pet birds: this species is specifically prone to calcium deficiency.",
+      "date": "2026-08-10",
+      "image": "/assets/images/african-grey-parrot-feeding.jpg",
       "category": "Birds",
       "categories": [
         "Birds"
@@ -1288,6 +1310,17 @@
       ]
     },
     {
+      "slug": "corydoras-catfish-feeding-guide",
+      "title": "Corydoras Catfish Feeding Guide: Schedule and Diet",
+      "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
+      "date": "2026-08-10",
+      "image": "/assets/images/corydoras-catfish-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
       "slug": "corydoras-catfish-handling-guide",
       "title": "Corydoras Catfish Behavior and Handling Guide",
       "excerpt": "Corydoras catfish are an observation animal, not a hands-on one. What actually matters with this species is its role in a tank, and that role is a very different one from a centerpiece fish like the oscar.",
@@ -1415,6 +1448,17 @@
       "excerpt": "Degus are genuinely affordable individually, and the real budgeting point with this species is that 'individually' isn't really how you should be thinking about the purchase at all.",
       "date": "2026-08-08",
       "image": "/assets/images/degu-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "degu-feeding-guide",
+      "title": "Degu Feeding Guide: Schedule and Diet",
+      "excerpt": "Degu feeding really comes down to one rule that matters more than anything else: sugar is genuinely dangerous for this species, not just something to limit.",
+      "date": "2026-08-10",
+      "image": "/assets/images/degu-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -3789,6 +3833,17 @@
       "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
       "date": "2026-07-23",
       "image": "/assets/images/sulcata-tortoise-cost.jpg",
+      "category": "Turtles & Tortoises",
+      "categories": [
+        "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "sulcata-tortoise-feeding-guide",
+      "title": "Sulcata Tortoise Feeding Guide: Schedule and Diet",
+      "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's than a typical salad-eating reptile.",
+      "date": "2026-08-10",
+      "image": "/assets/images/sulcata-tortoise-feeding.jpg",
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"

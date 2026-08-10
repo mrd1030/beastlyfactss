@@ -182,6 +182,67 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/ackie-monitor-feeding-guide.mdx",
+    "slug": "ackie-monitor-feeding-guide",
+    "title": "Ackie Monitor Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Ackie Monitor Feeding Guide: Schedule and Diet",
+    "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed them like they're a bigger, meatier lizard than they actually are.",
+    "date": "2026-08-10",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Ackie Monitor",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Insectivore"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ackie-monitor-feeding.jpg",
+    "imageAlt": "Ackie monitor eating a calcium-dusted feeder insect",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my ackie monitor?",
+        "a": "Hatchlings and juveniles, up to about 6 months, should be fed daily and allowed to eat as much as they want, they need the calories to fuel rapid growth. Once your ackie passes the 6-month mark, shift to feeding every other day, offering roughly what it can finish within a 5 to 10 minute window."
+      },
+      {
+        "q": "What do ackie monitors eat?",
+        "a": "This species is primarily insectivorous. Build the diet around well-gutloaded black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms as regular staples, with mealworms and superworms as occasional additions only, they're higher in fat with harder exoskeletons."
+      },
+      {
+        "q": "Can I feed my ackie monitor mice or rats?",
+        "a": "Only as an occasional, genuinely sparing treat, never a staple. A rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else."
+      },
+      {
+        "q": "Do ackie monitors need calcium and vitamin supplementation?",
+        "a": "Yes. Lightly dust most insect feeders with reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich. Use a multivitamin containing true vitamin A occasionally rather than on a fixed schedule, over-supplementing vitamins is a real risk with this species."
+      },
+      {
+        "q": "Why has my ackie monitor stopped eating?",
+        "a": "Common causes include dehydration (especially in hatchlings), shedding, stress or boredom, an incorrect basking temperature, internal or external parasites, and illnesses like metabolic bone disease or respiratory infection. Check temperature and hydration first before assuming something more serious."
+      },
+      {
+        "q": "How long can an ackie monitor safely go without eating?",
+        "a": "We couldn't find a single, consistently sourced number for this species, and would rather say that honestly than invent one. Treat any persistent refusal in a hatchling as urgent given how little margin fast-growing young animals have, and see a vet for an adult refusing food alongside lethargy, sunken eyes, or weight loss."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/ackie-monitor-handling-guide.mdx",
     "slug": "ackie-monitor-handling-guide",
     "title": "How to Handle an Ackie Monitor",
@@ -714,6 +775,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/african-grey-parrot-feeding-guide.mdx",
+    "slug": "african-grey-parrot-feeding-guide",
+    "title": "African Grey Parrot Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "African Grey Parrot Feeding Guide: Schedule and Diet",
+    "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more consequential than it is for most pet birds: this species is specifically prone to calcium deficiency.",
+    "date": "2026-08-10",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "African Grey Parrot",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Hypocalcemia"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/african-grey-parrot-feeding.jpg",
+    "imageAlt": "African grey parrot eating formulated pellets and fresh vegetables",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should make up most of an African grey's diet?",
+        "a": "Pelleted food. VCA Animal Hospitals recommends pellets make up 75 to 80% of what your grey eats daily. Fresh fruits and vegetables fill out most of the rest, roughly 20 to 40% of total intake, with fruit specifically capped closer to 10%."
+      },
+      {
+        "q": "How often should I feed my African grey parrot?",
+        "a": "There's no strict meal schedule. Offer fresh food daily and keep an eye on how much your grey actually eats. Fresh water needs to be available at all times, and pulling uneaten fresh food within a couple of hours prevents spoilage."
+      },
+      {
+        "q": "Do African grey parrots need grit?",
+        "a": "No. African greys hull seeds before swallowing them, so they don't need grit or gravel the way some other birds might seem to. Offering grit actually risks a genuinely dangerous digestive blockage."
+      },
+      {
+        "q": "What foods are toxic to African grey parrots?",
+        "a": "Avocado, chocolate, caffeine, alcohol, and xylitol are all toxic and can be fatal. Fruit pits and apple seeds contain cyanide-releasing compounds, and onion and garlic can cause a serious blood disorder in birds."
+      },
+      {
+        "q": "Why is diet so important for preventing health problems in African greys specifically?",
+        "a": "This species is unusually prone to hypocalcemia, dangerously low blood calcium, in a way other large parrots aren't. An all-seed diet is the most common path there, seed mixes are high in fat but genuinely low in calcium and vitamin A, and birds selectively pick their favorite fatty seeds even from a mix that looks balanced on paper."
+      },
+      {
+        "q": "Why has my African grey stopped eating?",
+        "a": "Calcium imbalance and heat stress are both flagged as causes of appetite loss and vomiting in this species. Illness, toxin or heavy metal exposure, egg-related problems, and general stress are other documented causes. Because African greys hide illness well, treat any noticeable drop in appetite or activity as a same-day concern rather than something to watch for a few days."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-harrisons-high-potency-fine-1lb"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/african-grey-parrot-handling-guide.mdx",
@@ -6651,6 +6775,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/corydoras-catfish-feeding-guide.mdx",
+    "slug": "corydoras-catfish-feeding-guide",
+    "title": "Corydoras Catfish Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Corydoras Catfish Feeding Guide: Schedule and Diet",
+    "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
+    "date": "2026-08-10",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Corydoras Catfish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corydoras-catfish-feeding.jpg",
+    "imageAlt": "A school of corydoras catfish feeding on sinking wafers at the bottom of the tank",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do corydoras catfish actually eat algae?",
+        "a": "Not effectively, and treating them as a self-sufficient algae-and-leftovers cleanup crew is a real path to slow starvation, especially if they're sharing a tank with faster, more aggressive eaters. They need to be fed dedicated sinking food on purpose, every time."
+      },
+      {
+        "q": "What should I feed corydoras catfish?",
+        "a": "Sinking pellets or wafers formulated for bottom feeders or catfish, roughly 30 to 40% protein, as the staple. Add worms regularly, live blackworms, frozen bloodworms, or a product like Hikari Vibra Bites, alongside occasional sinking gel foods. Blanched vegetables can round things out but shouldn't be the main event."
+      },
+      {
+        "q": "How much and how often should I feed corydoras?",
+        "a": "Once or twice a day, offering only what your cories can finish in about 2 to 3 minutes. A practical starting point is roughly one sinking wafer per 3 to 4 fish, or 2 to 3 small sinking pellets per cory, adjusted based on what actually gets eaten. If food is still visible after 20 to 30 minutes, scale back next time."
+      },
+      {
+        "q": "Why shouldn't I rely on floating flakes for corydoras?",
+        "a": "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily."
+      },
+      {
+        "q": "Why has my corydoras catfish stopped eating?",
+        "a": "Stress is the most common cause, including from being kept alone or in too small a group, poor water quality, especially ammonia buildup, disease, and the ordinary acclimation period after a move or a new tank are all documented causes."
+      },
+      {
+        "q": "How can I tell if poor water quality is why my cory stopped eating?",
+        "a": "Test ammonia and nitrite directly rather than guessing, elevated levels are a repeatedly cited cause of both appetite loss and lethargy in this species. Bad water conditions cause real stress, and correcting water quality often resolves the appetite issue on its own."
+      }
+    ],
+    "relatedProducts": [
+      "corydoras-hikari-sinking-wafers"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/corydoras-catfish-handling-guide.mdx",
     "slug": "corydoras-catfish-handling-guide",
     "title": "Corydoras Catfish Aren't Handled, and They're Not Solo Fish Either",
@@ -7305,6 +7491,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/degu-feeding-guide.mdx",
+    "slug": "degu-feeding-guide",
+    "title": "Degu Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Degu Feeding Guide: Schedule and Diet",
+    "excerpt": "Degu feeding really comes down to one rule that matters more than anything else: sugar is genuinely dangerous for this species, not just something to limit.",
+    "date": "2026-08-10",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Degu",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Degu Diabetes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/degu-feeding.jpg",
+    "imageAlt": "Degu eating timothy hay next to a small dish of sugar-free pellets",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a degu's diet be built around?",
+        "a": "Unlimited grass hay, timothy, meadow, or orchard, available at all times, plus a modest daily amount of a degu-specific or chinchilla pellet with no molasses, sugar, dried fruit, seeds, or colorful mixed pieces. A guinea pig pellet, or a 50/50 mix of guinea pig and chinchilla pellets, works as an acceptable alternative."
+      },
+      {
+        "q": "How much should I feed my degu?",
+        "a": "Hay stays available around the clock, the non-negotiable foundation of the diet. Pellets should be measured, not free-fed, roughly 1 to 2 tablespoons per degu daily. Degus will preferentially eat calorie-dense pellets over hay if given unlimited access to both, which undercuts the fiber intake this species actually needs."
+      },
+      {
+        "q": "Why is sugar so dangerous for degus specifically?",
+        "a": "Degus have unusually low natural insulin activity among rodents, and this species is specifically studied as a natural model for diabetes because it develops the disease so readily on a diet with even modest added sugar. Fruit, honey, molasses, and sugary treats should be avoided almost entirely, not just limited the way you might moderate treats for other small pets."
+      },
+      {
+        "q": "Do degus need vitamin C supplements like guinea pigs do?",
+        "a": "No. Unlike guinea pigs, degus produce their own vitamin C internally, so that's not something you need to source separately. On a correct hay-and-pellet diet, degus generally don't need added vitamin or mineral supplements at all."
+      },
+      {
+        "q": "What foods should I never feed a degu?",
+        "a": "Beyond fruit and sugar, avoid starchy vegetables like corn, peas, and potatoes, skip seeds and nuts as regular fare, and steer clear of rabbit food entirely, it can contain an ingredient that's genuinely toxic to degus. Hamster and gerbil mixes are also the wrong fit, too much protein and seed content for this species."
+      },
+      {
+        "q": "Why has my degu stopped eating?",
+        "a": "Dental problems (sharp tooth spurs that cut the mouth), mouth ulcers, digestive bloating from too rich or too rapidly changed a diet, infection, and dehydration are all documented causes. Diabetes itself can also suppress appetite. Degus tend to hide illness until it's fairly advanced, so don't wait out a persistent refusal."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-pellets-mazuri",
+      "timothy-hay-small-pets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/degu-gerbil-overview.mdx",
@@ -19143,6 +19393,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-feeding-guide.mdx",
+    "slug": "sulcata-tortoise-feeding-guide",
+    "title": "Sulcata Tortoise Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Sulcata Tortoise Feeding Guide: Schedule and Diet",
+    "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's than a typical salad-eating reptile.",
+    "date": "2026-08-10",
+    "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
+    "tags": [
+      "Sulcata Tortoise",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Tortoise Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Shell Pyramiding"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-feeding.jpg",
+    "imageAlt": "Sulcata tortoise grazing on grass and hay",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a sulcata tortoise eat most of?",
+        "a": "Grass and grass hay, commonly cited at 75 to 80% or more of the diet. Timothy, orchard, meadow, Bermuda, and barley grass all work well, fresh where possible, hay as the everyday and winter backup. The rest comes from edible weeds, leaves, and flowers, dandelion, hibiscus, and prickly pear pads are good choices, with a high-fiber tortoise pellet rounding things out in modest amounts."
+      },
+      {
+        "q": "How often should I feed a sulcata tortoise?",
+        "a": "Grass and hay should be available essentially all the time, sulcatas are grazers, not meal-eaters. Hatchlings get chopped, softer greens daily. Past about 6 months, many keepers shift supplemental feedings to every other day, and adults commonly move to 3 to 4 times a week for greens and vegetables, always with hay in the background."
+      },
+      {
+        "q": "Can sulcata tortoises eat fruit or animal protein?",
+        "a": "Skip animal protein entirely, no dog or cat food, no meat, it causes progressive kidney and liver damage over time and is considered a leading cause of premature death in captive sulcatas. Fruit should be avoided or offered only as a rare, tiny treat, the sugar disrupts the gut bacteria this species relies on to digest fiber."
+      },
+      {
+        "q": "What actually causes shell pyramiding in sulcata tortoises?",
+        "a": "It's genuinely debated. One well-known study found low humidity during growth was the key driver, with dietary protein playing only a minor role, though that study's methodology has itself been criticized. A separate study found supplemental night heat and faster growth rates caused pyramiding even when humidity stayed constant. Overfeeding and low humidity during the growing years are both worth taking seriously rather than blaming diet alone."
+      },
+      {
+        "q": "Why has my sulcata tortoise stopped eating?",
+        "a": "The most common cause by far is an enclosure that isn't warm enough, sulcatas need real heat to digest at all. Dehydration, mouth rot, vitamin A deficiency, bladder stones, respiratory infection, and parasites are other documented causes, along with ordinary stress from a new environment."
+      },
+      {
+        "q": "How long can a sulcata tortoise go without eating before it's a real problem?",
+        "a": "A tortoise that continues refusing food for more than about a week, or shows other signs of illness, needs a vet. Parasite-driven appetite loss in particular can take months to show up, appetite loss is often the very first sign."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-tortoise-turtle-herbivorous-sulcata"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/sulcata-tortoise-handling-guide.mdx",
