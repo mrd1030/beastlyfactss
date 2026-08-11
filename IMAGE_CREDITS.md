@@ -16,9 +16,15 @@ enclosure itself, but keep this file up to date so credit can be given if asked.
 | `leafy-sea-dragon.jpg` | Leafy Sea Dragon, Kangaroo Island | James Rosindell | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Leafy_Seadragon_on_Kangaroo_Island.jpg) |
 | `thorny-devil.jpg` | Thorny Devil, Great Central Road, WA | Bäras | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Thornydevil.jpg) |
 | `glass-frog.jpg` | Glass frog (*Rulyrana susatamai*) | Mauricio Rivera Correa | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Cochranella_susatamai03.jpg) |
+| `coconut-crab.jpg` | Coconut Crab, Diego Garcia, Chagos Archipelago | Drew Avery | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg) |
 
 All 7 downloaded 2026-07-16, resized to max 1600px / JPEG quality 80 before committing (same
-pipeline as the Adobe Stock photos already in this folder).
+pipeline as the Adobe Stock photos already in this folder). `coconut-crab.jpg` added
+2026-08-11 same way - it's the lead image on Wikipedia's own "Coconut crab" article, used
+across two dozen other-language Wikipedias too. The first AI-generated attempt for this fact
+was a generic shore crab with regular pincers, nothing like the real animal's body plan
+(giant terrestrial hermit crab, one massively oversized claw), so this one's a real photo
+instead.
 
 **Note on `flamingo-2.jpg`:** two existing facts (id 21 "Pink From Shrimp" and id 151 "The
 One-Leg Trick") are both about Flamingos and previously shared the single `flamingo.jpg`
