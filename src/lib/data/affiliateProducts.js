@@ -3471,6 +3471,36 @@ export const AFFILIATE_PRODUCTS = [
     pets: ["birds"],
   },
 
+  // Batch 12: green iguana / fire skink / Quaker parakeet research pass -
+  // sourced live on Amazon 2026-08-11 (real ASINs, checked in-browser, not the CSV).
+  {
+    slug: "calcium-repashy-superveggie-6oz",
+    product: "Repashy SuperVeggie, 6 oz Jar",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0D82DPB1D?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-251.jpg",
+    rating: 4.8,
+    price: "$18–$24",
+    description: "Phosphorus-free calcium and multivitamin supplement built for strict herbivores. Unlike standard reptile calcium dusts, which are formulated with D3 for insect-eaters, this one avoids adding phosphorus on top of an already vegetable-heavy diet, which is what green iguanas, box turtles, and Russian tortoises actually need.",
+    covers: ["Calcium and multivitamin supplements (herbivore, no added phosphorus)"],
+    pets: ["reptiles-amphibians"],
+  },
+  {
+    slug: "misting-system-mistking-starter-5th-gen",
+    product: "MistKing Starter Misting System, 5th Gen",
+    category: "Water & Humidity Care",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B086V3Q5BP?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-250.jpg",
+    rating: 4.5,
+    price: "$190–$210",
+    description: "The misting system zoos and serious keepers actually use, not a consumer fogger. A pump-driven, timer-controlled system with up to 10 nozzles for even coverage across a tall planted enclosure, worth the step up from a basic fogger for species that need genuinely consistent high humidity rather than a daily spike and crash.",
+    covers: [],
+    altGroup: "reptile-misting-system",
+    pets: ["reptiles-amphibians"],
+  },
+
 ];
 
 // Display order for category sections on the standalone gear page.
