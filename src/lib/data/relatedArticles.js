@@ -74,4 +74,7 @@ export const RELATED_ARTICLES = {
   'tegu': ['argentine-tegu-legal-guide', 'argentine-tegu-cost-guide', 'argentine-tegu-handling-guide', 'argentine-tegu-health-issues-guide', 'argentine-tegu-tank-setup-guide'],
   'fire-bellied-toad': ['fire-bellied-toad-cost-guide', 'fire-bellied-toad-handling-guide', 'fire-bellied-toad-health-issues-guide', 'fire-bellied-toad-tank-setup-guide'],
   'tiger-salamander': ['tiger-salamander-legal-guide', 'tiger-salamander-cost-guide', 'tiger-salamander-handling-guide', 'tiger-salamander-health-issues-guide', 'tiger-salamander-tank-setup-guide'],
+  'green-iguana': ['iguana-fireskink-quaker-overview', 'green-iguana-cost-guide', 'green-iguana-handling-guide', 'green-iguana-health-issues-guide', 'green-iguana-tank-setup-guide'],
+  'fire-skink': ['iguana-fireskink-quaker-overview', 'fire-skink-cost-guide', 'fire-skink-handling-guide', 'fire-skink-health-issues-guide', 'fire-skink-tank-setup-guide'],
+  'quaker-parakeet': ['iguana-fireskink-quaker-overview', 'quaker-parakeet-cost-guide', 'quaker-parakeet-handling-guide', 'quaker-parakeet-health-issues-guide', 'quaker-parakeet-tank-setup-guide'],
 };
