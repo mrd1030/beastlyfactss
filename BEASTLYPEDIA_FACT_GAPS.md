@@ -105,6 +105,17 @@ that shipped as id 281 (2026-08-12). The Beastfile (`birds.js`) already
 exists and already has one matched fact (281); these two extend its Fun Facts
 gallery rather than starting it.
 
+**Unrelated pending item, same file for visibility:** a full Wild Animals
+article for the Gaboon viper is written and sitting at
+`content/guides/gaboon-viper-longest-fangs-any-snake.mdx.draft` (the
+`.draft` suffix keeps it out of `check-images.mjs` and `sync-articles.js`
+until it's ready). Needs one photo, `public/assets/images/gaboon-viper-facts.jpg`:
+
+> Photorealistic wildlife photograph of a Gaboon viper (Bitis gabonica) resting in rainforest leaf litter, its body mostly still, head positioned so the broad, flat, triangular shape and two tiny horn-like scales between the nostrils are visible. Intricate camouflage pattern of pale cream and yellow-edged hourglass blotches down the back with brown and fawn rhomboid shapes on the flanks, blending closely into the surrounding dead leaves. Soft dappled natural light filtering through rainforest canopy, shallow depth of field with a softly blurred forest-floor background. Sharp focus on the head and forward third of the body, ultra-detailed scale texture, genuine wildlife/macro photography style, not simplified or cartoonish. Landscape orientation, suitable for a blog article header image.
+
+Once the photo exists: drop it at that path, run `generate-thumbnails.js`,
+rename the `.draft` file to `.mdx`, then `sync-articles.js`.
+
 ---
 
 ## Shima Enaga
