@@ -91,6 +91,56 @@ straight, shot low and from the side so the belly scales are visible.
 
 ---
 
+## Images needed: Shima Enaga
+
+Two photos, to `public/assets/facts/`.
+
+| Fact | Filename |
+|---|---|
+| A Nest Built to Stretch | `shima-enaga-2.jpg` |
+| Half Bird, Half Tail | `shima-enaga-3.jpg` |
+
+These would be ids 282 and 283, following the fun fact + Beastfile + article
+that shipped as id 281 (2026-08-12). The Beastfile (`birds.js`) already
+exists and already has one matched fact (281); these two extend its Fun Facts
+gallery rather than starting it.
+
+---
+
+## Shima Enaga
+
+Category `Birds`, emoji 🐦.
+
+### A Nest Built to Stretch
+
+> Long-tailed tits, shima enaga included, build an enclosed nest from moss and
+> lichen bound together with spider silk, and that silk gives the whole
+> structure real elasticity. As the chicks inside grow, the nest stretches to
+> fit them instead of the parents needing to rebuild it partway through
+> raising a brood. The interior gets lined with well over a thousand small
+> feathers, gathered one at a time, for insulation and cushioning.
+
+**Photo:** A shima enaga perched on a mossy or lichen-covered branch, angled
+differently from the id-281 and Beastfile photos already on file (looking
+back over its shoulder, or mid-hop, rather than a straight-on portrait).
+*Accuracy:* completely white face, no dark eye-stripe. Small black eye, short
+dark beak, black-and-white tail.
+
+### Half Bird, Half Tail
+
+> A shima enaga is a genuinely tiny bird, roughly 14 centimetres from beak to
+> tail tip, and close to half of that length is tail. Its name comes from
+> hishaku, a long-handled ladle traditionally used in Japan, a nod to the
+> silhouette of a small round body trailing a long, thin handle.
+
+**Photo:** A shima enaga captured mid-hop or in flight between branches, its
+long tail extended and visible against its small round body, so the
+tail-to-body proportion actually reads in the shot.
+*Accuracy:* same white-face rule as above. Tail should look genuinely long
+relative to the body, not stubby.
+
+---
+
 ## Promoting a fact once its photo exists
 
 1. Drop the photo into `public/assets/facts/` under the filename in the table.
