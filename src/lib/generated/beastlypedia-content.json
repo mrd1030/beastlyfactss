@@ -1014,8 +1014,8 @@
     "siblings": [
       "emperor-penguin",
       "crow",
-      "victoria-crowned-pigeon",
-      "green-anaconda"
+      "shima-enaga",
+      "victoria-crowned-pigeon"
     ]
   },
   "victoria-crowned-pigeon": {
@@ -1046,9 +1046,9 @@
     "related": [],
     "siblings": [
       "crow",
+      "shima-enaga",
       "shoebill",
-      "emperor-penguin",
-      "glass-frog"
+      "emperor-penguin"
     ]
   },
   "emperor-penguin": {
@@ -1086,10 +1086,10 @@
       }
     ],
     "siblings": [
+      "shima-enaga",
       "shoebill",
       "victoria-crowned-pigeon",
-      "crow",
-      "wolverine"
+      "crow"
     ]
   },
   "crow": {
@@ -1127,10 +1127,44 @@
       }
     ],
     "siblings": [
+      "shoebill",
       "victoria-crowned-pigeon",
       "emperor-penguin",
-      "shoebill",
-      "pangolin"
+      "shima-enaga"
+    ]
+  },
+  "shima-enaga": {
+    "animal": "Shima Enaga",
+    "facts": [
+      {
+        "id": 281,
+        "title": "Japan's Living Snowball",
+        "fact": "The shima enaga is a real wild bird, a Hokkaido-only subspecies of long-tailed tit nicknamed Japan's \"snow fairy.\" Adults lose the dark eye markings juveniles have and end up with a completely white face, and in winter they fluff their feathers for insulation until they look like a round white snowball with a long tail stuck on the back.",
+        "category": "Birds",
+        "image": "/assets/facts/shima-enaga.jpg"
+      }
+    ],
+    "related": [
+      {
+        "id": "shima-enaga-japans-snow-fairy-bird",
+        "slug": "shima-enaga-japans-snow-fairy-bird",
+        "title": "Shima Enaga: Japan's Real-Life Snow Fairy Bird",
+        "excerpt": "The shima enaga looks like a plush toy that learned to fly, but it's a genuine wild bird, a Hokkaido-only subspecies of",
+        "category": "Wild Animals",
+        "publishedAt": "2026-08-12",
+        "image": "/assets/images/shima-enaga-snow-fairy-facts.jpg",
+        "imageAlt": "A shima enaga with a completely white face perched on a bare branch in Hokkaido, Japan",
+        "animal": "Shima Enaga",
+        "myth": "The shima enaga's round, snowball shape is just how the bird always looks.",
+        "truth": "That roundness is a deliberate winter behavior. It fluffs its feathers to trap air for insulation against Hokkaido's cold, and looks noticeably slimmer the rest of the year.",
+        "sourceCount": 2
+      }
+    ],
+    "siblings": [
+      "victoria-crowned-pigeon",
+      "emperor-penguin",
+      "crow",
+      "shoebill"
     ]
   },
   "manta-ray": {
@@ -1146,10 +1180,10 @@
     ],
     "related": [],
     "siblings": [
-      "humpback-whale",
       "leafy-sea-dragon",
       "dolphin",
-      "clownfish"
+      "clownfish",
+      "immortal-jellyfish"
     ]
   },
   "leafy-sea-dragon": {
@@ -1165,10 +1199,10 @@
     ],
     "related": [],
     "siblings": [
-      "manta-ray",
       "dolphin",
       "clownfish",
-      "immortal-jellyfish"
+      "immortal-jellyfish",
+      "seahorse"
     ]
   },
   "dolphin": {
@@ -1255,10 +1289,10 @@
       }
     ],
     "siblings": [
-      "leafy-sea-dragon",
       "clownfish",
       "immortal-jellyfish",
-      "seahorse"
+      "seahorse",
+      "shark"
     ]
   },
   "clownfish": {
@@ -1331,10 +1365,10 @@
       }
     ],
     "siblings": [
-      "dolphin",
       "immortal-jellyfish",
       "seahorse",
-      "shark"
+      "shark",
+      "octopus"
     ]
   },
   "immortal-jellyfish": {
@@ -1400,10 +1434,10 @@
       }
     ],
     "siblings": [
-      "clownfish",
       "seahorse",
       "shark",
-      "octopus"
+      "octopus",
+      "mantis-shrimp"
     ]
   },
   "seahorse": {
@@ -1462,10 +1496,10 @@
       }
     ],
     "siblings": [
-      "immortal-jellyfish",
       "shark",
       "octopus",
-      "mantis-shrimp"
+      "mantis-shrimp",
+      "cuttlefish"
     ]
   },
   "shark": {
@@ -1510,10 +1544,10 @@
       }
     ],
     "siblings": [
-      "seahorse",
       "octopus",
       "mantis-shrimp",
-      "cuttlefish"
+      "cuttlefish",
+      "humpback-whale"
     ]
   },
   "octopus": {
@@ -1574,10 +1608,10 @@
       }
     ],
     "siblings": [
-      "shark",
       "mantis-shrimp",
       "cuttlefish",
-      "humpback-whale"
+      "humpback-whale",
+      "manta-ray"
     ]
   },
   "mantis-shrimp": {
@@ -1615,10 +1649,10 @@
       }
     ],
     "siblings": [
-      "octopus",
       "cuttlefish",
       "humpback-whale",
-      "manta-ray"
+      "manta-ray",
+      "leafy-sea-dragon"
     ]
   },
   "cuttlefish": {
@@ -1651,10 +1685,10 @@
       }
     ],
     "siblings": [
-      "mantis-shrimp",
       "humpback-whale",
       "manta-ray",
-      "leafy-sea-dragon"
+      "leafy-sea-dragon",
+      "dolphin"
     ]
   },
   "humpback-whale": {
@@ -1680,10 +1714,10 @@
       }
     ],
     "siblings": [
-      "cuttlefish",
       "manta-ray",
       "leafy-sea-dragon",
-      "dolphin"
+      "dolphin",
+      "clownfish"
     ]
   }
 }

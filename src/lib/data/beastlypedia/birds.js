@@ -132,4 +132,36 @@ export const birdBeastfiles = [
     secondaryAlt: 'A crow in profile showing its glossy black feathers and thick bill',
     relatedFiles: ['crows-are-smarter-than-you-think-and-they-probably-already-know-it'],
   },
+  {
+    id: 'shima-enaga',
+    name: 'Shima Enaga',
+    scientific: 'Aegithalos caudatus japonicus',
+    alsoKnownAs: ['Snow Fairy', 'Japanese Long-tailed Tit', 'Shimaenaga'],
+    tagline: 'A wild bird so round and white it gets mistaken for a plush toy.',
+    habitat: 'Woodland',
+    group: 'Birds',
+    overview:
+      "The shima enaga is a subspecies of long-tailed tit found only on Hokkaido, Japan's northernmost main island, where it has picked up the nickname \"snow fairy.\" Adults lose the dark eye markings that juveniles and mainland Japanese long-tailed tits both have, ending up with a completely white face, and in cold weather they fluff their feathers for insulation until the whole body reads as a round white puff with a long black-and-white tail stuck on the back. The bird is barely bigger than a ping pong ball with feathers, roughly 14cm long including a tail that makes up close to half of that. The name enaga comes from hishaku, the long-handled ladle its silhouette is said to resemble.",
+    origin:
+      "Exclusively the island of Hokkaido, in deciduous and mixed woodland. It doesn't occur naturally anywhere else, mainland Japan's long-tailed tit subspecies keep the dark eye-stripe this one lacks.",
+    notableTraits: [
+      'Adults have a completely white face, unlike other long-tailed tit subspecies',
+      'Fluffs into a round shape in cold weather for insulation, not just for looks',
+      'Roughly 14cm long, and close to half of that is tail',
+      'Found only on Hokkaido, nowhere else in the wild',
+      'Travels in family flocks of half a dozen or more outside breeding season',
+    ],
+    conservation:
+      "Not separately assessed, but the parent species, the long-tailed tit, is IUCN Least Concern with a large, stable range across Europe and Asia. The Hokkaido population isn't considered at risk.",
+    funFacts: [
+      'Its diet is almost entirely insects and their eggs and larvae, especially moth and butterfly eggs, even in the depths of a Hokkaido winter.',
+      'Long-tailed tits build an enclosed, elastic nest from moss and lichen bound with spider silk, which lets the whole structure stretch as the chicks inside grow.',
+      'That same nest gets lined with well over a thousand small feathers for insulation, more feathers than the bird itself will ever wear at once.',
+    ],
+    heroImage: '/assets/beastlypedia/shima-enaga-hero.jpg',
+    heroAlt: 'A shima enaga with a completely white face perched on a bare branch, its round fluffed body and long black-and-white tail visible',
+    secondaryImage: '/assets/facts/shima-enaga.jpg',
+    secondaryAlt: 'A shima enaga perched among bare winter twigs, showing its white face and dark wing markings',
+    relatedFiles: ['shima-enaga-japans-snow-fairy-bird'],
+  },
 ];
