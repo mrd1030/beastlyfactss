@@ -130,7 +130,7 @@ export const reptileBeastfiles = [
     secondaryImage: '/assets/beastlypedia/gaboon-viper-secondary.jpg',
     secondaryAlt:
       'Head-on view of a Gaboon viper showing its broad triangular head and small nasal horns',
-    relatedFiles: [],
+    relatedFiles: ['gaboon-viper-longest-fangs-any-snake'],
   },
   {
     id: 'green-anaconda',

@@ -858,7 +858,22 @@
         "image": "/assets/facts/gaboon-viper-3.jpg"
       }
     ],
-    "related": [],
+    "related": [
+      {
+        "id": "gaboon-viper-longest-fangs-any-snake",
+        "slug": "gaboon-viper-longest-fangs-any-snake",
+        "title": "Gaboon Viper: Longest Fangs of Any Snake, Explained",
+        "excerpt": "The Gaboon viper carries the longest fangs and the biggest venom yield of any snake alive, but it's also one of the",
+        "category": "Wild Animals",
+        "publishedAt": "2026-08-13",
+        "image": "/assets/images/gaboon-viper-facts.jpg",
+        "imageAlt": "A Gaboon viper resting in rainforest leaf litter, its geometric brown and cream pattern blending into the dead leaves",
+        "animal": "Gaboon Viper",
+        "myth": "The Gaboon viper is an aggressive, fast-striking snake that will attack without warning.",
+        "truth": "It's actually one of the most docile vipers in the world, rarely biting or hissing even when handled. Nearly every recorded bite happens because someone accidentally stepped on one hidden in leaf litter, not because it went looking for a fight.",
+        "sourceCount": 2
+      }
+    ],
     "siblings": [
       "green-anaconda",
       "thorny-devil",
