@@ -232,14 +232,6 @@
     "heroAlt": "A crow perched on a bare branch against an overcast sky, its glossy black plumage and heavy bill visible"
   },
   {
-    "id": "shima-enaga",
-    "name": "Shima Enaga",
-    "tagline": "A wild bird so round and white it gets mistaken for a plush toy.",
-    "group": "Birds",
-    "heroImage": "/assets/beastlypedia/shima-enaga-hero.jpg",
-    "heroAlt": "A shima enaga with a completely white face perched on a bare branch, its round fluffed body and long black-and-white tail visible"
-  },
-  {
     "id": "manta-ray",
     "name": "Giant Manta Ray",
     "tagline": "Seven metres across, filter-feeding, and one of the few fish to pass a mirror test.",
