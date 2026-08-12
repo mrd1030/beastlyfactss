@@ -4,6 +4,13 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 
 ## Completed
 
+**2026-08-12: 2 more Shima Enaga facts, 3 Gaboon Viper facts, Gaboon Viper
+article.** Added as ids 282 to 286, all site-owner-sourced real photos.
+Tracked and promoted via `BEASTLYPEDIA_FACT_GAPS.md`, not here, since both are
+Beastfile-linked. The Gaboon viper Beastfile now has real matched facts
+instead of falling back to its authored `funFacts`, and its Wild Animals
+article shipped once the header photo landed.
+
 **2026-08-11: Cassowary, Border Collie, Pronghorn, Lionfish, Coconut Crab.**
 Added as ids 276 to 280. The first four used photos the site owner sourced
 directly. Coconut Crab's AI-generated attempt turned out to be a generic shore
