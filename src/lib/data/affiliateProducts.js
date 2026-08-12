@@ -625,7 +625,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$35–$60",
     description: "Glass aquarium tank that gives fish or amphibians more stable water volume than tiny setups.",
-    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure"],
+    covers: ["20-gallon long aquarium (terrestrial setup)", "20-gallon long+ aquarium", "30x12x12 in or larger enclosure", "20-gallon+ enclosure"],
     pets: ["reptiles-amphibians", "fish"],
   },
 
@@ -1592,7 +1592,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.4,
     price: "$8–$12",
     description: "Cuttlebone supplement birds can chew for calcium and natural beak wear.",
-    covers: ["Cuttlebone or mineral block", "Cuttlebone and mineral block", "Cuttlebone (calcium source)"],
+    covers: ["Cuttlebone or mineral block", "Cuttlebone and mineral block", "Cuttlebone (calcium source)", "Cuttlebone or crushed eggshell"],
     altGroup: "bird-cuttlebone",
     pets: ["birds", "reptiles-amphibians", "invertebrates"],
   },
@@ -3008,7 +3008,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$60–$70",
     description: "Front-opening glass terrarium taller than it is wide, matching a mantis's need for vertical space to hang and molt.",
-    covers: ["Tall mesh or acrylic enclosure"],
+    covers: ["Tall mesh or acrylic enclosure", "Small tall enclosure (5x5x8 in or similar)"],
     pets: ["invertebrates"],
   },
   {
@@ -3179,7 +3179,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.2,
     price: "$28–$34",
     description: "A live, self-sustaining fruit fly culture (D. melanogaster, roughly 1/16in) sold as one producing cup and one freshly started cup, so a second generation is already staged before the first runs out. Melanogaster's small size makes them one of the few feeder insects actually small enough for jumping spiderlings to eat safely.",
-    covers: ["Fruit fly cultures (D. melanogaster / D. hydei)"],
+    covers: ["Fruit fly cultures (D. melanogaster / D. hydei)", "Live feeder insects (crickets, fruit flies)"],
     pets: ["invertebrates"],
   },
   {
@@ -3312,7 +3312,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$17–$21",
     description: "An organic topsoil blend of hardwoods, compost, and leaf matter made specifically for millipedes and isopods, not a dry coconut-fiber-only substrate. It doubles as both bedding and a food source, and the added calcium supports healthy molting and exoskeleton growth in giant millipedes, which need deep, moisture-retentive, edible substrate to thrive.",
-    covers: ["Organic topsoil + leaf litter substrate"],
+    covers: ["Organic topsoil + leaf litter substrate", "Deep substrate (coconut fiber, topsoil, hardwood)", "Substrate replacement"],
     pets: ["invertebrates"],
   },
   {
@@ -3499,6 +3499,21 @@ export const AFFILIATE_PRODUCTS = [
     covers: [],
     altGroup: "reptile-misting-system",
     pets: ["reptiles-amphibians"],
+  },
+
+  // Batch 13: millipede / jumping spider gap-fill - sourced live on Amazon 2026-08-11.
+  {
+    slug: "cork-bark-mini-flats-jumping-spider",
+    product: "Homoyoyo 4Pc Mini Cork Bark Flats, 3-5.5in (Jumping Spider/Isopod/Small Reptile)",
+    category: "Decor & Enrichment",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0H1SKZRT5?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-253.jpg",
+    rating: 4.7,
+    price: "$9–$12",
+    description: "Small 3 to 5.5in cork bark flats sized for a nano enclosure rather than reptile-scale cork bark, which typically overwhelms a jumping spider's small footprint. Sold specifically for jumping spider and isopod setups. New listing (4 ratings at time of sourcing) - worth a periodic recheck as more reviews come in.",
+    covers: ["Climbing branches and cork bark (miniature)"],
+    pets: ["invertebrates"],
   },
 
 ];
