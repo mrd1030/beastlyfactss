@@ -342,6 +342,17 @@
       ]
     },
     {
+      "slug": "axolotl-feeding-guide",
+      "title": "Axolotl Feeding Guide: Schedule and Diet",
+      "excerpt": "Axolotl feeding comes down to one central fact about how this species eats: it gulps its food whole, and that single detail shapes almost every rule on this page, including the one about your tank floor.",
+      "date": "2026-08-13",
+      "image": "/assets/images/axolotl-feeding.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians"
+      ]
+    },
+    {
       "slug": "axolotl-handling-guide",
       "title": "Axolotl Handling: What to Know",
       "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
@@ -688,6 +699,17 @@
       "excerpt": "Boa constrictors are genuinely affordable at the entry level, and most of what's sold as a boa in the pet trade is a specific type worth understanding before you buy, since it affects both price and what you're actually getting.",
       "date": "2026-07-18",
       "image": "/assets/images/boa-constrictor-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "boa-constrictor-feeding-guide",
+      "title": "Boa Constrictor Feeding Guide: Schedule and Diet",
+      "excerpt": "Boa constrictor feeding is genuinely simple in principle, whole prey covers this species' nutritional needs completely, the real skill is getting size and frequency right as your snake matures.",
+      "date": "2026-08-14",
+      "image": "/assets/images/boa-constrictor-feeding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -1145,6 +1167,17 @@
       ]
     },
     {
+      "slug": "cockatoo-feeding-guide",
+      "title": "Cockatoo Feeding Guide: Schedule and Diet",
+      "excerpt": "Cockatoo feeding comes down to a ratio worth memorizing: pellets should dominate the bowl, and seeds should stay firmly in treat territory, not the other way around.",
+      "date": "2026-08-15",
+      "image": "/assets/images/cockatoo-feeding.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
       "slug": "cockatoo-handling-guide",
       "title": "How to Handle a Cockatoo Safely",
       "excerpt": "Cockatoos are extremely social, intelligent, and deeply bonded to their people, genuinely affectionate as babies. That same intensity is also exactly what makes this species one of the most difficult parrots to keep long-term.",
@@ -1560,6 +1593,17 @@
       "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary invertebrate reputation doesn't come with a scary price tag.",
       "date": "2026-07-31",
       "image": "/assets/images/emperor-scorpion-cost.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates"
+      ]
+    },
+    {
+      "slug": "emperor-scorpion-feeding-guide",
+      "title": "Emperor Scorpion Feeding Guide: Schedule and Diet",
+      "excerpt": "Emperor scorpion feeding is genuinely low-effort once you internalize the one fact that changes everything about how often you should be doing it: this species can comfortably go far longer between meals than most keepers assume.",
+      "date": "2026-08-16",
+      "image": "/assets/images/emperor-scorpion-feeding.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
@@ -4376,6 +4420,17 @@
       "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the real cost shows up.",
       "date": "2026-07-15",
       "image": "/assets/images/veiled-chameleon-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "veiled-chameleon-feeding-guide",
+      "title": "Veiled Chameleon Feeding Guide: Schedule and Diet",
+      "excerpt": "Veiled chameleon feeding is really a two-part job: what you feed matters, but how you supplement it matters just as much, and getting that schedule right is the difference between a healthy chameleon and one headed toward metabolic bone disease.",
+      "date": "2026-08-17",
+      "image": "/assets/images/veiled-chameleon-feeding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
