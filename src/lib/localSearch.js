@@ -1,10 +1,11 @@
 // Client-side search over the site's non-article static data (care guides,
-// encyclopedia entries, glossary terms). Blog/guide articles are searched
-// separately in Search.jsx straight from mdxPosts, so they are deliberately
-// not duplicated here.
+// encyclopedia entries, glossary terms, Beastlypedia entries). Blog/guide
+// articles are searched separately in Search.jsx straight from mdxPosts, so
+// they are deliberately not duplicated here.
 import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { CATEGORIES as GLOSSARY_CATEGORIES } from '@/lib/data/glossaryTerms';
+import { beastfiles } from '@/lib/data/beastlypedia';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import { slugify } from '@/lib/utils/slugify';
@@ -17,7 +18,7 @@ function matches(text, q) {
 
 export function searchLocalContent(query) {
   const q = query.trim().toLowerCase();
-  if (!q) return { guides: [], encyclopedia: [], glossary: [], articles: [] };
+  if (!q) return { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 
   const guides = allGuides
     .filter(g => matches(g.name, q) || matches(g.tagline, q) || matches(g.petType, q))
@@ -41,6 +42,18 @@ export function searchLocalContent(query) {
       title: a.name,
       subtitle: a.scientific,
       to: `/encyclopedia/animal/${a.id}/`,
+    }));
+
+  const beastlypedia = beastfiles
+    .filter(b => matches(b.name, q) || matches(b.scientific, q) || matches(b.tagline, q) || matches(b.group, q) || (b.alsoKnownAs || []).some(a => matches(a, q)))
+    .slice(0, MAX_PER_TYPE)
+    .map(b => ({
+      key: `beastfile-${b.id}`,
+      type: 'Beastlypedia',
+      emoji: '🐾',
+      title: b.name,
+      subtitle: b.tagline || b.scientific,
+      to: `/beastlypedia/${b.id}/`,
     }));
 
   const glossary = [];
@@ -73,5 +86,5 @@ export function searchLocalContent(query) {
       to: `/blog/${p.slug.current}/`,
     }));
 
-  return { guides, encyclopedia, glossary, articles };
+  return { guides, encyclopedia, glossary, beastlypedia, articles };
 }

@@ -116,7 +116,7 @@ export default function Search() {
   // category filtering or sorting), so including it would list every article
   // match twice.
   const localResults = useMemo(() => searchLocalContent(query), [query]);
-  const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.glossary];
+  const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.beastlypedia, ...localResults.glossary];
 
   return (
     <div className="min-h-screen">
