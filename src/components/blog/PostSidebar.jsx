@@ -2,14 +2,27 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { matchesAnimal } from '@/lib/utils/matchAnimal';
+import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
 export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   const { isFavorite, toggleFavorite } = useFavoritesCtx();
-  
+
   const [displayRelated, setDisplayRelated] = useState([]);
   const [displayFact, setDisplayFact] = useState(null);
+
+  // Same curated same-species list Guide/Encyclopedia pages show as "Deep
+  // Dive" - without this, a reader who clicks a Deep Dive link to get here
+  // has no way to keep following that same thread once they've landed.
+  const deepDiveArticles = useMemo(() => {
+    const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
+    const siblingSlugs = getDeepDiveSiblings(currentSlug);
+    if (siblingSlugs.length === 0) return [];
+    return siblingSlugs
+      .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
+      .filter(Boolean);
+  }, [allPosts, currentPost]);
 
   // 1. Separate the rest of the blog into "Matches" and "Everything Else"
   const { matches, nonMatches } = useMemo(() => {
@@ -111,6 +124,31 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam. 🐾</p>
         <BeehiivSubscribe />
       </div>
+
+      {/* Deep Dive: the same curated same-species list Guide/Encyclopedia
+          pages show, so clicking through from one of those doesn't strand a
+          reader with no way to keep following the thread. */}
+      {deepDiveArticles.length > 0 && (
+        <div className="bg-card border border-border rounded-2xl p-5">
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+            📰 Deep Dive
+          </p>
+          <div className="space-y-3">
+            {deepDiveArticles.map((article) => (
+              <a
+                key={article._id || article.id}
+                href={`/blog/${article.slug?.current || article._id || article.id}/`}
+                onClick={(e) => { e.preventDefault(); onSelectPost(article); }}
+                className="group block"
+              >
+                <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                  {(article.emoji ? `${article.emoji} ` : '') + article.title}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Related Posts */}
       <div className="bg-card border border-border rounded-2xl p-5">

@@ -9,7 +9,7 @@ export const RELATED_ARTICLES = {
   'veiled-chameleon': ['chameleon-hydration-drippers-misters-fogging', 'veiled-chameleon-cost-guide', 'veiled-chameleon-handling-guide', 'veiled-chameleon-health-issues-guide', 'veiled-chameleon-tank-setup-guide'],
   'chameleon': ['chameleon-hydration-drippers-misters-fogging', 'jacksons-chameleon-cost-guide', 'jacksons-chameleon-handling-guide', 'jacksons-chameleon-health-issues-guide', 'jacksons-chameleon-tank-setup-guide'],
   'ferret': ['ferret-adrenal-disease-guide', 'ferret-legal-guide', 'ferret-cost-guide', 'ferret-handling-guide', 'ferret-health-issues-guide', 'ferret-tank-setup-guide', 'ferret-feeding-guide'],
-  'goldfish': ['goldfish-tank-size-bowl-myth', 'betta-fish-vs-goldfish-guide', 'goldfish-cost-guide', 'goldfish-handling-guide', 'goldfish-health-issues-guide', 'goldfish-tank-setup-guide', 'goldfish-feeding-guide'],
+  'goldfish': ['goldfish-tank-size-bowl-myth', 'betta-fish-vs-goldfish-guide', 'goldfish-cost-guide', 'goldfish-handling-guide', 'goldfish-health-issues-guide', 'goldfish-tank-setup-guide', 'goldfish-feeding-guide', 'goldfish-enrichment-guide'],
   'tarantula': ['invertebrate-molting-guide', 'tarantula-cost-guide', 'tarantula-handling-guide', 'tarantula-health-issues-guide', 'tarantula-tank-setup-guide', 'tarantula-feeding-guide'],
   'hermit-crab': ['invertebrate-molting-guide', 'hermit-crab-cost-guide', 'hermit-crab-handling-guide', 'hermit-crab-health-issues-guide', 'hermit-crab-tank-setup-guide'],
   'axolotl': ['axolotl-legal-guide', 'axolotl-cost-guide', 'axolotl-handling-guide', 'axolotl-health-issues-guide', 'axolotl-tank-setup-guide'],
@@ -30,8 +30,8 @@ export const RELATED_ARTICLES = {
   'guinea-pig': ['hamster-vs-guinea-pig-guide', 'guinea-pig-scurvy-vitamin-c-guide', 'guinea-pig-cost-guide', 'guinea-pig-handling-guide', 'guinea-pig-health-issues-guide', 'guinea-pig-tank-setup-guide', 'guinea-pig-feeding-guide'],
   'degu': ['degu-gerbil-overview', 'degu-cost-guide', 'degu-handling-guide', 'degu-health-issues-guide', 'degu-tank-setup-guide'],
   'gerbil': ['degu-gerbil-overview', 'gerbil-cost-guide', 'gerbil-handling-guide', 'gerbil-health-issues-guide', 'gerbil-tank-setup-guide'],
-  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide', 'bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide'],
-  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide', 'leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide'],
+  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide', 'bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide', 'bearded-dragon-enrichment-guide'],
+  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide', 'leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide', 'leopard-gecko-enrichment-guide'],
   'crested-gecko': ['leopard-gecko-vs-crested-gecko-guide', 'crested-gecko-cost-guide', 'crested-gecko-handling-guide', 'crested-gecko-health-issues-guide', 'crested-gecko-tank-setup-guide'],
   'gargoyle-gecko': ['gargoyle-gecko-cost-guide', 'gargoyle-gecko-handling-guide', 'gargoyle-gecko-health-issues-guide', 'gargoyle-gecko-tank-setup-guide'],
   'mourning-gecko': ['mourning-gecko-cost-guide', 'mourning-gecko-handling-guide', 'mourning-gecko-health-issues-guide', 'mourning-gecko-tank-setup-guide', 'mourning-gecko-feeding-guide'],
@@ -78,3 +78,20 @@ export const RELATED_ARTICLES = {
   'fire-skink': ['iguana-fireskink-quaker-overview', 'fire-skink-cost-guide', 'fire-skink-handling-guide', 'fire-skink-health-issues-guide', 'fire-skink-tank-setup-guide'],
   'quaker-parakeet': ['iguana-fireskink-quaker-overview', 'quaker-parakeet-cost-guide', 'quaker-parakeet-handling-guide', 'quaker-parakeet-health-issues-guide', 'quaker-parakeet-tank-setup-guide'],
 };
+
+// Reverse lookup: given a deep-dive article's own slug (e.g. the leopard
+// gecko feeding guide), find its sibling deep-dive articles for the same
+// guide(s), so a reader who lands on one article via a Guide/Encyclopedia
+// "Deep Dive" link doesn't lose that thread once they're actually on the
+// article. A slug can appear under more than one guide (comparison pieces
+// like bearded-dragon-vs-leopard-gecko-guide), so this unions every match.
+export function getDeepDiveSiblings(slug) {
+  if (!slug) return [];
+  const siblings = new Set();
+  for (const articles of Object.values(RELATED_ARTICLES)) {
+    if (articles.includes(slug)) {
+      articles.forEach((a) => { if (a !== slug) siblings.add(a); });
+    }
+  }
+  return [...siblings];
+}
