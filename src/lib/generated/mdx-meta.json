@@ -2514,6 +2514,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/bearded-dragon-enrichment-guide.mdx",
+    "slug": "bearded-dragon-enrichment-guide",
+    "title": "Bearded Dragon Enrichment: Climbing, Digging, and Safe Free-Roam",
+    "seoTitle": "Bearded Dragon Enrichment Guide",
+    "excerpt": "Enrichment gives a bearded dragon real choices, climbing, digging, hunting, but it only works once heat, UVB, and space are already correct. This covers what actually moves the needle and what's just clutter.",
+    "date": "2026-08-17",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Bearded Dragon",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Dig Box",
+      "Free Roam"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bearded-dragon-enrichment.jpg",
+    "imageAlt": "A bearded dragon climbing a sturdy branch inside its enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a bearded dragon?",
+        "a": "Anything that lets the dragon perform natural behavior: climbing and surveying from height, digging, choosing between warm and cool retreats, hunting live prey, and occasional supervised exploration outside the tank. It never replaces correct heat, UVB, diet, hydration, or a properly sized enclosure, those come first."
+      },
+      {
+        "q": "Does my bearded dragon actually need a dig box?",
+        "a": "It's genuinely useful enrichment for most dragons, and closer to a real husbandry need for gravid females who need to dig a lay site. A container the dragon can turn around and push substrate in works, with organic topsoil and washed play sand as a common fill, never calcium sand."
+      },
+      {
+        "q": "How deep should a bearded dragon dig box be?",
+        "a": "For general enrichment, 4 to 6-plus inches is typical. For a gravid female preparing to lay, sources commonly call for 6 to 12-plus inches of cohesive, slightly damp substrate that holds its shape when tunneled."
+      },
+      {
+        "q": "Is it safe to let my bearded dragon roam the house?",
+        "a": "Yes, with real precautions: short supervised sessions, often starting around 10 to 15 minutes, in a warm, escape-proof room with gaps blocked, other pets and cords removed, and nothing toxic or small enough to swallow within reach. End the session if the dragon cools down, panics, darkens its beard heavily, or seems lethargic."
+      },
+      {
+        "q": "Why is my bearded dragon glass surfing, and does enrichment fix it?",
+        "a": "Glass surfing can be linked to an undersized enclosure, wrong temperatures, reflections, boredom, hunger, or a gravid female searching for a lay site. Enrichment only helps once those husbandry basics are actually correct, it's not a fix on its own if the underlying cause is a tank that's too small or temperatures that are off."
+      },
+      {
+        "q": "Can two bearded dragons share an enclosure for social enrichment?",
+        "a": "No. Bearded dragons are solitary and do best housed alone, cohabitation isn't a form of enrichment for this species and commonly causes stress and competition over basking spots and food instead."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/bearded-dragon-feeding-guide.mdx",
     "slug": "bearded-dragon-feeding-guide",
     "title": "Bearded Dragon Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -10792,6 +10854,66 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/goldfish-enrichment-guide.mdx",
+    "slug": "goldfish-enrichment-guide",
+    "title": "Goldfish Enrichment: Space, Plants, and Foraging Done Right",
+    "seoTitle": "Goldfish Enrichment Guide",
+    "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is genuinely right, real research shows what actually adds value on top.",
+    "date": "2026-08-19",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Goldfish",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Aquarium Plants"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-enrichment.jpg",
+    "imageAlt": "A goldfish foraging along sandy substrate near planted aquarium decor",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What actually counts as enrichment for a goldfish?",
+        "a": "Open space to swim, structure and planting for cover, a substrate that supports foraging, and a feeding style that lets natural bottom-sifting behavior happen. None of it substitutes for correct tank volume, filtration, and water quality, those come first."
+      },
+      {
+        "q": "Do goldfish prefer live plants over artificial ones?",
+        "a": "Research tracking where goldfish spend their time found they spent roughly 90% of time in planted areas versus about 10% in barren open space, but didn't show a strong preference for live plants specifically over closely matched artificial ones. Structure and cover seem to be what matters, not necessarily whether it's alive."
+      },
+      {
+        "q": "What substrate is best for goldfish foraging?",
+        "a": "Fine sand or smooth rounded gravel supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Avoid sharp gravel or anything easily swallowed."
+      },
+      {
+        "q": "What plants actually survive in a goldfish tank?",
+        "a": "Tough, rhizome-based plants attached to hardscape rather than planted in substrate hold up best, anubias and java fern are commonly recommended since goldfish tend to uproot and nip at looser plantings. Expect some damage regardless, and either choose plants tough enough to take it or accept occasional replacement."
+      },
+      {
+        "q": "Can goldfish be kept together for social enrichment?",
+        "a": "Often yes, goldfish frequently do well with same-type tankmates, fancy with fancy, single-tail with single-tail, since matching body types and swim speed reduces competition. This only works if filtration and tank volume genuinely support the combined bioload, stocking for company without the space to back it up isn't enrichment."
+      },
+      {
+        "q": "Does water movement matter for enrichment?",
+        "a": "A mild current from adequate filtration can encourage more natural swimming activity, but avoid exhausting flow, especially for heavy-bodied fancy varieties that aren't built for strong currents."
+      }
+    ],
+    "relatedProducts": [
+      "betta-substrate-caribsea-freshwater-sand"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/goldfish-feeding-guide.mdx",
     "slug": "goldfish-feeding-guide",
     "title": "Goldfish Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -15279,6 +15401,66 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/leopard-gecko-enrichment-guide.mdx",
+    "slug": "leopard-gecko-enrichment-guide",
+    "title": "Leopard Gecko Enrichment: What the Research Actually Supports",
+    "seoTitle": "Leopard Gecko Enrichment Guide",
+    "excerpt": "Two real studies have tested leopard gecko enrichment directly, and the results are specific: thermal and feeding enrichment work, novelty toys and mirrors barely register. Here's what to actually spend effort on.",
+    "date": "2026-08-18",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Leopard Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-enrichment.jpg",
+    "imageAlt": "A leopard gecko exploring a naturalistic enclosure with cork bark and climbing structure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-18",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does research actually say about leopard gecko enrichment?",
+        "a": "Bashaw et al. (2016) found leopard geckos engaged with several types of enrichment, but thermal and feeding enrichment produced the strongest responses, while mirrors and other visual enrichment were the weakest. Rickman et al. (2025) found enriched housing improved welfare indicators compared to standard sparse setups, and geckos preferred naturalistic, enriched conditions when given a choice in preference tests."
+      },
+      {
+        "q": "Is the three-hide system really enrichment, or is it just husbandry?",
+        "a": "Both. A warm dry hide, a cool dry hide, and a moist hide are the baseline that lets a gecko actually choose its thermal and humidity microclimate while staying hidden, which is itself a form of enrichment (behavioral choice), not just a checklist item. Toys and novelty items don't make up for a missing hide or the wrong temperature."
+      },
+      {
+        "q": "What's the most effective enrichment for a leopard gecko?",
+        "a": "Thermal choice and feeding or hunting presentation, in that order, according to the available research. Tong-feeding, short supervised insect hunts inside the enclosure, and evening feeding timed to match their crepuscular activity all outperform passive novelty items like mirrors."
+      },
+      {
+        "q": "Do leopard geckos need climbing structure?",
+        "a": "Some, but it's secondary to hides and feeding. Low sturdy branches, cork flats or tubes, and stacked slate give a gecko somewhere to rest off the ground, but floor space and a working hide setup matter more than height for this species."
+      },
+      {
+        "q": "Should I give my leopard gecko a dig box?",
+        "a": "It can satisfy natural digging behavior, especially for some females, without converting the whole enclosure floor to loose substrate. Paper towel or tile stays the safest primary floor for beginners, with a separate dig box added if you want to offer it."
+      },
+      {
+        "q": "Do leopard geckos benefit from mirrors or other visual enrichment?",
+        "a": "Not much, according to Bashaw et al. (2016), mirror-based visual enrichment was the weakest-performing type tested. It's not harmful, but it's a low priority compared to thermal and feeding enrichment."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/leopard-gecko-feeding-guide.mdx",
     "slug": "leopard-gecko-feeding-guide",
     "title": "Leopard Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -15308,7 +15490,7 @@
     "faqs": [
       {
         "q": "How often should I feed my leopard gecko?",
-        "a": "It depends on age. Hatchlings and young geckos generally eat daily, juveniles every 1 to 2 days, and adults every 2 to 4 days once the tail has thickened to about the width of the neck. Sources vary on the exact adult number, some say every other day, some say every 5 days, so treat it as a range and let the gecko's body condition guide you rather than a fixed calendar."
+        "a": "It depends on age. Hatchlings and young geckos generally eat daily, juveniles daily or every 1 to 2 days, and adults every 2 to 4 days once the tail has thickened to about the width of the neck. Sources vary on the exact adult number, some say every other day, some say every 5 days, so treat it as a range and let the gecko's body condition guide you rather than a fixed calendar."
       },
       {
         "q": "What do leopard geckos eat?",
@@ -15316,7 +15498,7 @@
       },
       {
         "q": "Do I really need to gut-load and dust the insects?",
-        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for a day or two before offering them, and dust with calcium before most feedings, alternating in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure."
+        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for 24 to 48 hours before offering them, dust with calcium before most feedings (more often for juveniles), alternate in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure, and add a multivitamin about once a week."
       },
       {
         "q": "Why has my leopard gecko stopped eating?",
@@ -15374,7 +15556,7 @@
       },
       {
         "q": "How often can leopard geckos be handled?",
-        "a": "Start with 5-minute sessions every other day once settled, and cap young geckos at a few short sessions a week. Unlike some reptiles, they don't need daily handling to be a well-adjusted pet."
+        "a": "Start with 5-minute sessions every other day once settled, building toward 10 to 20 minutes as your gecko gets used to it, and cap young geckos at a few short sessions a week. Skip handling during a shed or within about 48 hours of a big meal. Unlike some reptiles, they don't need daily handling to be a well-adjusted pet."
       },
       {
         "q": "Can a leopard gecko really drop its tail?",

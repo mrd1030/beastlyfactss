@@ -15,6 +15,7 @@ export const CATEGORIES = [
   { slug: 'cats', label: 'Cats', emoji: '🐱', description: 'Cat care, health, breeds, and everything feline.' },
   { slug: 'comparisons', label: 'Comparisons', emoji: '🆚', description: 'Head-to-head species comparisons to help you pick the right pet.' },
   { slug: 'dogs', label: 'Dogs', emoji: '🐶', description: 'Dog care, training, breed guides, and more.' },
+  { slug: 'enrichment', label: 'Enrichment', emoji: '🧩', description: 'Environmental and behavioral enrichment for captive pets, by species.' },
   { slug: 'fish', label: 'Fish', emoji: '🐠', description: 'Betta, goldfish, guppies, koi, tetras and other fish and aquarium care guides.' },
   { slug: 'fun-facts', label: 'Fun Facts', emoji: '🤩', to: '/fact-files/', description: 'Wild, weird, and wonderful animal facts.' },
   { slug: 'invertebrates', label: 'Invertebrates', emoji: '🕷️', description: 'Tarantulas, mantises, snails, and exotic inverts.' },

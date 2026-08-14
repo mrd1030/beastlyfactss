@@ -485,6 +485,17 @@
       ]
     },
     {
+      "slug": "bearded-dragon-enrichment-guide",
+      "title": "Bearded Dragon Enrichment Guide",
+      "excerpt": "Enrichment gives a bearded dragon real choices, climbing, digging, hunting, but it only works once heat, UVB, and space are already correct. This covers what actually moves the needle and what's just clutter.",
+      "date": "2026-08-17",
+      "image": "/assets/images/bearded-dragon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "bearded-dragon-feeding-guide",
       "title": "Bearded Dragon Feeding Guide: Schedule and Diet",
       "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that actually needs a vet.",
@@ -2116,6 +2127,17 @@
       ]
     },
     {
+      "slug": "goldfish-enrichment-guide",
+      "title": "Goldfish Enrichment Guide",
+      "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is genuinely right, real research shows what actually adds value on top.",
+      "date": "2026-08-19",
+      "image": "/assets/images/goldfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "goldfish-feeding-guide",
       "title": "Goldfish Feeding Guide: Schedule and Diet",
       "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to actually feed, and how to read appetite loss.",
@@ -3009,6 +3031,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "leopard-gecko-enrichment-guide",
+      "title": "Leopard Gecko Enrichment Guide",
+      "excerpt": "Two real studies have tested leopard gecko enrichment directly, and the results are specific: thermal and feeding enrichment work, novelty toys and mirrors barely register. Here's what to actually spend effort on.",
+      "date": "2026-08-18",
+      "image": "/assets/images/leopard-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
