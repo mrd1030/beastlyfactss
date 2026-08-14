@@ -2715,7 +2715,7 @@
       },
       {
         "q": "How hot does the basking spot need to be?",
-        "a": "95 to 110°F on the basking surface, measured with an infrared thermometer aimed at the actual surface rather than the air. Some sources push this as high as 108 to 113°F for adults, either range is workable if you aim for the middle and adjust based on how your dragon uses the space."
+        "a": "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air."
       },
       {
         "q": "Do bearded dragons need UVB?",
@@ -10057,6 +10057,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/gerbil-feeding-guide.mdx",
+    "slug": "gerbil-feeding-guide",
+    "title": "Gerbil Feeding: Schedule, Diet, and Why Seed Mixes Fail This Species",
+    "seoTitle": "Gerbil Feeding Guide: Schedule and Diet",
+    "excerpt": "A sunflower-seed-heavy mix looks like a complete gerbil diet, but a gerbil will happily pick out the fatty seeds and leave the balanced parts behind, which is exactly how a seemingly complete diet causes obesity.",
+    "date": "2026-08-15",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Gerbil",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Rodent Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/gerbil-feeding.jpg",
+    "imageAlt": "A gerbil eating a pelleted food nugget while holding it in its front paws",
+    "emoji": "🐹",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the best staple food for a gerbil?",
+        "a": "A nutritionally complete, uniform pelleted diet or lab block formulated for gerbils, or a low-fat rodent formula, is the best base because it prevents selective feeding. The American Gerbil Society is explicit that gerbil food needs a minimum of 14% protein, many products labeled simply 'Hamster and Gerbil Food' fall under that and are really meant for hamsters."
+      },
+      {
+        "q": "How much should I feed a gerbil each day?",
+        "a": "Roughly 5 to 10 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Offer fresh vegetables every other day or a few times a week, and treat fruit as an occasional weekly indulgence given the sugar content."
+      },
+      {
+        "q": "Why are seed mixes bad for gerbils?",
+        "a": "Gerbils selectively eat the fatty seeds, sunflower especially, and leave the balanced components behind, so a bag that looks nutritionally complete on the label doesn't actually get eaten that way. The RSPCA specifically warns against excessive sunflower seed for this reason, it's fatty enough to drive obesity on its own."
+      },
+      {
+        "q": "What foods are toxic to gerbils?",
+        "a": "Grapes and raisins, rhubarb, citrus fruit, chocolate, onion and garlic, avocado, raw potato, raw kidney beans, and apple seeds. Also avoid salty, sugary, or processed human food and dairy, and skip watery lettuce, it can cause diarrhea."
+      },
+      {
+        "q": "Do gerbils need vitamin or mineral supplements?",
+        "a": "No, not with a complete pelleted diet. Occasional insect protein like mealworms and fresh produce add variety rather than correct a deficiency. Constant fresh water and safe wood to gnaw on for their continuously growing teeth matter more than any supplement."
+      },
+      {
+        "q": "Do young or breeding gerbils need more food?",
+        "a": "Yes. Young gerbils under 6 months and pregnant or nursing females need more calories and protein, some commercial diets are formulated to be offered without the usual portion limit during those life stages."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-food-oxbow-garden-select"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/gerbil-handling-guide.mdx",
     "slug": "gerbil-handling-guide",
     "title": "How to Handle a Gerbil (And Why It Needs a Companion)",
@@ -16860,6 +16922,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/neon-tetra-feeding-guide.mdx",
+    "slug": "neon-tetra-feeding-guide",
+    "title": "Neon Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
+    "seoTitle": "Neon Tetra Feeding Guide: Schedule and Diet",
+    "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "date": "2026-08-13",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Neon Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Neon Tetra Disease"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/neon-tetra-feeding.jpg",
+    "imageAlt": "A school of neon tetras feeding on micro pellets near the surface of a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do neon tetras eat?",
+        "a": "A high-quality tropical flake or micro-pellet designed for small fish, supplemented several times a week with small frozen or live foods like baby brine shrimp, daphnia, or finely chopped bloodworms. Because their mouths are only about 1 to 2mm across, flakes should be crushed and pellets should be micro or nano sized, food that's too large just gets taken and spat back out."
+      },
+      {
+        "q": "How often should I feed neon tetras?",
+        "a": "Small amounts twice daily, morning and evening, offering only what they finish in about 2 to 3 minutes. Small, frequent feedings suit their tiny stomachs and fast metabolism, and protect water quality far better than one large feeding would."
+      },
+      {
+        "q": "How do I know if I'm overfeeding my neon tetras?",
+        "a": "If food is still visible in the tank after 2 to 3 minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are genuinely sensitive to both."
+      },
+      {
+        "q": "Why do my neon tetras spit out their food?",
+        "a": "The food is too large. At 1 to 2mm mouths, anything not crushed fine enough gets taken and rejected repeatedly, which functionally starves the fish even though food is going into the tank."
+      },
+      {
+        "q": "What is neon tetra disease and how does feeding relate to it?",
+        "a": "It's caused by a parasite, Pleistophora hyphessobryconis, and it has no cure. If a fish dies of it and its body is scavenged by tankmates, those fish contract it too. Removing any dead or visibly sick fish immediately, not leaving it for others to eat, is the only real control available."
+      },
+      {
+        "q": "Do neon tetras need vitamin supplements?",
+        "a": "No specific supplement is required beyond a varied diet. Color-enhancing and plant-based foods help maintain coloration and immune function on their own."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/neon-tetra-handling-guide.mdx",
     "slug": "neon-tetra-handling-guide",
     "title": "Neon Tetras Aren't Handled, But the School Size Genuinely Isn't Optional",
@@ -17099,6 +17223,68 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/oscar-fish-feeding-guide.mdx",
+    "slug": "oscar-fish-feeding-guide",
+    "title": "Oscar Fish Feeding: Schedule, Diet, and Why Feeder Goldfish Are a Mistake",
+    "seoTitle": "Oscar Fish Feeding Guide: Schedule and Diet",
+    "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species isn't portion size, it's building the diet around live feeder goldfish.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Oscar Fish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Hole in the Head"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-feeding.jpg",
+    "imageAlt": "An oscar fish eating a floating cichlid pellet at the surface of its aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should oscars eat as their staple diet?",
+        "a": "A high-quality cichlid pellet, commonly cited at 35 to 45% protein, making up roughly 80% of the diet. Supplement the remaining 20% with frozen or fresh items like shrimp, krill, earthworms, mysis, and occasional plant matter such as peas or zucchini."
+      },
+      {
+        "q": "How often should I feed my oscar?",
+        "a": "Babies under 3 to 4 inches, 3 times daily. Juveniles around 3 to 8 inches, twice daily. Adults over about 8 inches or a year old, once or at most twice daily. Feed only what's eaten in 2 to 3 minutes, and remove anything left over."
+      },
+      {
+        "q": "Can I feed my oscar live feeder goldfish?",
+        "a": "Don't make it a staple. Feeder goldfish and rosy-red minnows commonly carry thiaminase, an enzyme that destroys vitamin B1, along with real parasite and disease risk and excess fat. A thiamine deficiency shows up as lethargy, weight loss, and nerve problems, and it can eventually be fatal."
+      },
+      {
+        "q": "What is Hole-in-the-Head disease and is it caused by diet?",
+        "a": "It's a real degenerative condition (HITH/HLLE) associated with poor water quality and nutritional deficiency, particularly vitamin C, D, and essential fatty acids. Some sources argue water quality is the dominant driver rather than diet specifically, but the safe response covers both: clean water plus a varied, quality diet without feeder goldfish."
+      },
+      {
+        "q": "How much should a healthy oscar's belly look like?",
+        "a": "Slightly rounded, not bulging. Oscars beg constantly and are genuinely easy to overfeed, many keepers fast adults one day a week to help keep portions honest."
+      },
+      {
+        "q": "Do oscars need vitamin supplements?",
+        "a": "Not as a separate product if fed a quality varied diet. Vitamin C and vitamin-fortified foods matter for preventing lateral-line disease, but a balanced pellet plus varied whole foods does more than added powders."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-hikari-cichlid-gold-pellets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/oscar-fish-handling-guide.mdx",
@@ -20104,6 +20290,70 @@
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "sugar-glider-diet-exotic-nutrition-glider-complete",
       "small-pet-hideout-igloo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/sugar-glider-feeding-guide.mdx",
+    "slug": "sugar-glider-feeding-guide",
+    "title": "Sugar Glider Feeding: Schedule, Diet, and the Calcium Ratio That Prevents Paralysis",
+    "seoTitle": "Sugar Glider Feeding Guide: Schedule and Diet",
+    "excerpt": "A sugar glider's wild diet of sap, nectar, pollen, and insects is genuinely hard to replicate in captivity, and getting the calcium-to-phosphorus ratio wrong is the leading cause of illness in this species.",
+    "date": "2026-08-16",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Sugar Glider",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Exotic Pet Diet",
+      "Feeding Schedule",
+      "Metabolic Bone Disease",
+      "Supplementation"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/sugar-glider-feeding.jpg",
+    "imageAlt": "A sugar glider eating a calcium-dusted insect while gripping a branch",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-08-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do sugar gliders eat in captivity?",
+        "a": "VCA's balanced framework is roughly one-third nutritionally balanced pelleted kibble, one-third a nectar or sap-based mixture, and one-third a small number of insects every other day, a calcium-based multivitamin, and a variety of fresh vegetables and fruits. Established formulated diets include Leadbeater's mixture, Bourbon's Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love Complete, and Exotic Nutrition diets."
+      },
+      {
+        "q": "How much should I feed a sugar glider daily?",
+        "a": "Roughly 15 to 20% of body weight per day, offered in the evening since they're nocturnal. Kibble can stay available at all times, with the fresh, nectar, insect, and produce components offered daily and insects every other day."
+      },
+      {
+        "q": "Why is calcium supplementation so important for sugar gliders?",
+        "a": "Their typical captive diet runs phosphorus-rich and calcium-poor, the opposite of what they need. Left uncorrected, this causes nutritional secondary hyperparathyroidism, better known as metabolic bone disease, where the body leaches calcium from the bones to keep blood calcium stable, and the bones weaken and fracture as a result."
+      },
+      {
+        "q": "What's the correct calcium-to-phosphorus ratio for sugar gliders?",
+        "a": "Roughly 2:1, with some sources citing 1.5:1 to 2:1. In practice this means dusting or gut-loading insects with calcium before feeding and sprinkling a glider-specific multivitamin with calcium on food, some breeder guidance calls for daily dusting, with a vitamin A/D3 supplement dusted on insects and produce twice weekly."
+      },
+      {
+        "q": "What foods should sugar gliders avoid?",
+        "a": "Chocolate, dairy, canned fruit, pesticide-treated produce, and high-phosphorus foods like most seeds, nuts, and beef fed in excess. Also limit foods high in oxalates that block calcium absorption, including raspberries, strawberries, spinach, carrots, and beets. Skip yogurt drops, peanut butter, pasta, rice, and human candy entirely."
+      },
+      {
+        "q": "What are the warning signs of metabolic bone disease in a sugar glider?",
+        "a": "Hind-leg weakness, tremors, or paralysis are emergency signs and need immediate veterinary attention along with an immediate diet correction, not a wait-and-see approach. This progresses from posterior weakness to genuine paralysis and pathological fractures if left uncorrected."
+      }
+    ],
+    "relatedProducts": [
+      "sugar-glider-diet-exotic-nutrition-glider-complete",
+      "calcium-sugar-glider-vitamin-combo"
     ],
     "factFile": false,
     "animal": null,
