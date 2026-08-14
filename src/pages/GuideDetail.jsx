@@ -9,6 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import CostBuilder from '@/components/guides/CostBuilder';
@@ -65,6 +66,10 @@ export default function GuideDetail() {
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
 
   const relatedFacts = guide ? getRelatedFacts(guide.name, facts) : [];
+  // Only 3 animals have a printable package right now (testing setup before
+  // more get made) - undefined for everything else, so the sidebar card below
+  // just doesn't render.
+  const carePackage = guide ? CARE_PACKAGES.find(p => p.id === guide.id) : null;
 
   // Modal keyboard handling: Escape closes, Tab is trapped inside, and focus
   // returns to the trigger button on close.
@@ -570,6 +575,34 @@ export default function GuideDetail() {
               <p className="text-xs text-muted-foreground font-body mb-4">New care guides straight to your inbox. No spam. 🐾</p>
               <BeehiivSubscribe />
             </div>
+
+            {/* Printable care package - only for the 3 animals that have one */}
+            {carePackage && (
+              <div className="bg-secondary/5 border border-secondary/20 rounded-2xl p-5">
+                <p className="text-xs font-body font-semibold text-secondary uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                  🖨️ Printable Guide
+                </p>
+                <Link to="/care-packages/store/" className="group block">
+                  <div className="flex items-start gap-3 mb-3">
+                    <img
+                      src={carePackage.image}
+                      alt={`${carePackage.name} cover`}
+                      loading="lazy"
+                      className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
+                    />
+                    <div>
+                      <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
+                        {carePackage.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground font-body mt-0.5">{carePackage.pages} pages &middot; {carePackage.price}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">
+                    Get the printable PDF <ChevronRight className="w-3.5 h-3.5" />
+                  </div>
+                </Link>
+              </div>
+            )}
 
             {/* Legal guide, kept above and apart from the deep-dive list */}
             {legalArticles.length > 0 && (
