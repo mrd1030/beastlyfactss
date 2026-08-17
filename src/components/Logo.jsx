@@ -9,7 +9,7 @@ export default function Logo({ className = "text-xl" }) {
       <motion.img
         src={favicon}
         alt="Beastly Facts"
-        className="h-[1em] w-[1em] object-contain"
+        className="h-[1.4em] w-[1.4em] object-contain"
         whileHover={{ rotate: [0, -10, 10, 0] }}
         transition={{ duration: 0.4 }}
       />
