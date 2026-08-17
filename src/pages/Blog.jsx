@@ -568,6 +568,25 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     })),
   } : null;
 
+  // "10 Surprising X Facts" listicles are a numbered, self-contained list -
+  // ItemList schema makes that countable structure explicit to Google rather
+  // than leaving it to be inferred from a plain numbered paragraph. Detected
+  // by slug rather than a frontmatter flag: every post on this pattern, past
+  // and future, is named this way, so a flag would just be a second thing to
+  // remember to set on every new one.
+  const isFactsListicle = /^\d+-surprising-.+-facts$/.test(postSlug);
+  const factsListSchema = isFactsListicle && typeof post.content === 'string' ? (() => {
+    const items = [...post.content.matchAll(/^\d+\.\s+(.+)$/gm)]
+      .map(m => m[1].replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim());
+    return items.length > 0 ? {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": post.title,
+      "numberOfItems": items.length,
+      "itemListElement": items.map((name, i) => ({ "@type": "ListItem", "position": i + 1, "name": name })),
+    } : null;
+  })() : null;
+
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="min-h-screen">
       <ReadingProgressBar />
@@ -594,6 +613,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
         {faqSchema && <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>}
+        {factsListSchema && <script type="application/ld+json">{JSON.stringify(factsListSchema)}</script>}
       </Helmet>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">

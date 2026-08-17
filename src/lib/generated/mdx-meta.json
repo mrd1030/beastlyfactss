@@ -182,6 +182,67 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/ackie-monitor-feeding-guide.mdx",
+    "slug": "ackie-monitor-feeding-guide",
+    "title": "Ackie Monitor Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Ackie Monitor Feeding Guide: Schedule and Diet",
+    "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed them like they're a bigger, meatier lizard than they actually are.",
+    "date": "2026-08-10",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Ackie Monitor",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Insectivore"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ackie-monitor-feeding.jpg",
+    "imageAlt": "Ackie monitor eating a calcium-dusted feeder insect",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How often should I feed my ackie monitor?",
+        "a": "Hatchlings and juveniles, up to about 6 months, should be fed daily and allowed to eat as much as they want, they need the calories to fuel rapid growth. Once your ackie passes the 6-month mark, shift to feeding every other day, offering roughly what it can finish within a 5 to 10 minute window."
+      },
+      {
+        "q": "What do ackie monitors eat?",
+        "a": "This species is primarily insectivorous. Build the diet around well-gutloaded black soldier fly larvae, crickets, discoid roaches, dubia roaches, grasshoppers, and silkworms as regular staples, with mealworms and superworms as occasional additions only, they're higher in fat with harder exoskeletons."
+      },
+      {
+        "q": "Can I feed my ackie monitor mice or rats?",
+        "a": "Only as an occasional, genuinely sparing treat, never a staple. A rodent-heavy diet is directly linked to the fatty liver disease that shortens more captive monitor lifespans than almost anything else."
+      },
+      {
+        "q": "Do ackie monitors need calcium and vitamin supplementation?",
+        "a": "Yes. Lightly dust most insect feeders with reptile calcium powder at each feeding, skipping isopods and hornworms since they're already calcium-rich. Use a multivitamin containing true vitamin A occasionally rather than on a fixed schedule, over-supplementing vitamins is a real risk with this species."
+      },
+      {
+        "q": "Why has my ackie monitor stopped eating?",
+        "a": "Common causes include dehydration (especially in hatchlings), shedding, stress or boredom, an incorrect basking temperature, internal or external parasites, and illnesses like metabolic bone disease or respiratory infection. Check temperature and hydration first before assuming something more serious."
+      },
+      {
+        "q": "How long can an ackie monitor safely go without eating?",
+        "a": "We couldn't find a single, consistently sourced number for this species, and would rather say that honestly than invent one. Treat any persistent refusal in a hatchling as urgent given how little margin fast-growing young animals have, and see a vet for an adult refusing food alongside lethargy, sunken eyes, or weight loss."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/ackie-monitor-handling-guide.mdx",
     "slug": "ackie-monitor-handling-guide",
     "title": "How to Handle an Ackie Monitor",
@@ -714,6 +775,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/african-grey-parrot-feeding-guide.mdx",
+    "slug": "african-grey-parrot-feeding-guide",
+    "title": "African Grey Parrot Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "African Grey Parrot Feeding Guide: Schedule and Diet",
+    "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more consequential than it is for most pet birds: this species is specifically prone to calcium deficiency.",
+    "date": "2026-08-10",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "African Grey Parrot",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Hypocalcemia"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/african-grey-parrot-feeding.jpg",
+    "imageAlt": "African grey parrot eating formulated pellets and fresh vegetables",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should make up most of an African grey's diet?",
+        "a": "Pelleted food. VCA Animal Hospitals recommends pellets make up 75 to 80% of what your grey eats daily. Fresh fruits and vegetables fill out most of the rest, roughly 20 to 40% of total intake, with fruit specifically capped closer to 10%."
+      },
+      {
+        "q": "How often should I feed my African grey parrot?",
+        "a": "There's no strict meal schedule. Offer fresh food daily and keep an eye on how much your grey actually eats. Fresh water needs to be available at all times, and pulling uneaten fresh food within a couple of hours prevents spoilage."
+      },
+      {
+        "q": "Do African grey parrots need grit?",
+        "a": "No. African greys hull seeds before swallowing them, so they don't need grit or gravel the way some other birds might seem to. Offering grit actually risks a genuinely dangerous digestive blockage."
+      },
+      {
+        "q": "What foods are toxic to African grey parrots?",
+        "a": "Avocado, chocolate, caffeine, alcohol, and xylitol are all toxic and can be fatal. Fruit pits and apple seeds contain cyanide-releasing compounds, and onion and garlic can cause a serious blood disorder in birds."
+      },
+      {
+        "q": "Why is diet so important for preventing health problems in African greys specifically?",
+        "a": "This species is unusually prone to hypocalcemia, dangerously low blood calcium, in a way other large parrots aren't. An all-seed diet is the most common path there, seed mixes are high in fat but genuinely low in calcium and vitamin A, and birds selectively pick their favorite fatty seeds even from a mix that looks balanced on paper."
+      },
+      {
+        "q": "Why has my African grey stopped eating?",
+        "a": "Calcium imbalance and heat stress are both flagged as causes of appetite loss and vomiting in this species. Illness, toxin or heavy metal exposure, egg-related problems, and general stress are other documented causes. Because African greys hide illness well, treat any noticeable drop in appetite or activity as a same-day concern rather than something to watch for a few days."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-harrisons-high-potency-fine-1lb"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/african-grey-parrot-handling-guide.mdx",
@@ -1661,6 +1785,124 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/axolotl-enrichment-guide.mdx",
+    "slug": "axolotl-enrichment-guide",
+    "title": "Axolotl Enrichment: Hides, Foraging, and Safe Novelty",
+    "seoTitle": "Axolotl Enrichment Guide",
+    "excerpt": "Axolotl enrichment isn't about toys, it's about giving choice: multiple smooth hides, plant cover, and food they have to search for instead of a bowl they wait next to.",
+    "date": "2026-08-14",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Axolotl",
+      "Enrichment",
+      "Care Tips",
+      "Aquarium Enrichment",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/axolotl-enrichment.jpg",
+    "imageAlt": "An axolotl emerging from a smooth tunnel hide surrounded by live plants",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for an axolotl?",
+        "a": "Anything that gives the axolotl a choice: multiple hides to rest in versus open water, plant cover, and food presented in a way that takes some searching instead of a static pile in one spot. It never replaces correct cold water temperature, clean water, and a safe smooth-bottomed tank, those come first."
+      },
+      {
+        "q": "Are toys or objects safe for an axolotl tank?",
+        "a": "Only if every edge is smooth and every piece is too large to swallow. Axolotls have no eyelids, delicate gills, and a real impaction risk from anything loose or sharp. Test any new item by running your hand over it, if it scratches you, it can injure the axolotl."
+      },
+      {
+        "q": "What is the sand saucer method?",
+        "a": "A shallow dish filled with very fine sand, under 1mm grain, placed in one corner, with small food items hidden in it for short hunting bouts. It gives a safe way to add foraging without putting loose sand across the whole tank, where it becomes an impaction risk instead."
+      },
+      {
+        "q": "How often should I rearrange an axolotl's tank?",
+        "a": "Rarely for anything load-bearing. Keep 2 to 3 stable hides that never move, and limit changes to occasionally introducing one new smooth item, or a mild rearrange of non-critical decor about once a month. Frequent full overhauls remove the security the tank is supposed to provide."
+      },
+      {
+        "q": "Can axolotls be kept together for enrichment?",
+        "a": "Cohousing isn't enrichment for this species and carries real risk, axolotls will bite at limbs and gills, especially around feeding time or if sizes are mismatched. Housing separately is the safer default."
+      }
+    ],
+    "relatedProducts": [
+      "hide-cave-aquarium-decoration"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/axolotl-feeding-guide.mdx",
+    "slug": "axolotl-feeding-guide",
+    "title": "Axolotl Feeding: Schedule, Diet, and the Substrate Mistake That Matters Most",
+    "seoTitle": "Axolotl Feeding Guide: Schedule and Diet",
+    "excerpt": "Axolotl feeding comes down to one central fact about how this species eats: it gulps its food whole, and that single detail shapes almost every rule on this page, including the one about your tank floor.",
+    "date": "2026-08-13",
+    "category": "Amphibians",
+    "categories": [
+      "Amphibians"
+    ],
+    "tags": [
+      "Axolotl",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Amphibian Diet",
+      "Feeding Schedule",
+      "Substrate"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/axolotl-feeding.jpg",
+    "imageAlt": "An axolotl on the tank floor eating a sinking pellet, gills fanned out",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do axolotls eat?",
+        "a": "Axolotls are carnivores that need no plant matter at all. The gold-standard staple is earthworms or nightcrawlers, paired with a quality sinking pellet formulated for axolotls or carnivorous amphibians. Frozen bloodworms, brine shrimp, and daphnia work well for hatchlings and juveniles or as occasional variety, but shouldn't be the entire diet."
+      },
+      {
+        "q": "How often should I feed my axolotl?",
+        "a": "Hatchlings (0 to 3 months) eat live food 2 to 3 times daily. Juveniles (3 to 6 months) eat about once a day. Sub-adults (6 to 12 months) eat every 1 to 3 days. Adults (12-plus months, over about 7.5 inches) eat every 2 to 3 days, their slower metabolism genuinely needs that extra time to digest in cool water."
+      },
+      {
+        "q": "Why is gravel substrate dangerous for axolotls?",
+        "a": "Axolotls gulp their food rather than carefully selecting it, so they readily swallow whatever's nearby, including gravel. Swallowed gravel causes intestinal blockage that can require surgery and can be fatal. Fine sand under about 1mm, or a bare-bottom tank, is the safe choice."
+      },
+      {
+        "q": "Can axolotls eat feeder fish?",
+        "a": "Skip them. Feeder fish carry real parasite risk, and many common feeder species contain an enzyme that causes a vitamin B deficiency over time."
+      },
+      {
+        "q": "Do axolotls need vitamin or calcium supplements?",
+        "a": "No, generally. A varied diet of worms and formulated pellets covers this species' nutritional needs without additional supplementation."
+      },
+      {
+        "q": "How much should I feed an axolotl at each meal?",
+        "a": "Size each meal to roughly your axolotl's head, and remove anything uneaten after 15 to 30 minutes to protect water quality."
+      }
+    ],
+    "relatedProducts": [
+      "soft-pellets-axolotl"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/axolotl-handling-guide.mdx",
     "slug": "axolotl-handling-guide",
     "title": "Should You Handle an Axolotl? Only When You Truly Have To",
@@ -2328,6 +2570,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/bearded-dragon-enrichment-guide.mdx",
+    "slug": "bearded-dragon-enrichment-guide",
+    "title": "Bearded Dragon Enrichment: Climbing, Digging, and Safe Free-Roam",
+    "seoTitle": "Bearded Dragon Enrichment Guide",
+    "excerpt": "Enrichment gives a bearded dragon real choices, climbing, digging, hunting, but it only works once heat, UVB, and space are already correct. This covers what actually moves the needle and what's just clutter.",
+    "date": "2026-08-17",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Bearded Dragon",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Dig Box",
+      "Free Roam"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bearded-dragon-enrichment.jpg",
+    "imageAlt": "A bearded dragon climbing a sturdy branch inside its enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a bearded dragon?",
+        "a": "Anything that lets the dragon perform natural behavior: climbing and surveying from height, digging, choosing between warm and cool retreats, hunting live prey, and occasional supervised exploration outside the tank. It never replaces correct heat, UVB, diet, hydration, or a properly sized enclosure, those come first."
+      },
+      {
+        "q": "Does my bearded dragon actually need a dig box?",
+        "a": "It's genuinely useful enrichment for most dragons, and closer to a real husbandry need for gravid females who need to dig a lay site. A container the dragon can turn around and push substrate in works, with organic topsoil and washed play sand as a common fill, never calcium sand."
+      },
+      {
+        "q": "How deep should a bearded dragon dig box be?",
+        "a": "For general enrichment, 4 to 6-plus inches is typical. For a gravid female preparing to lay, sources commonly call for 6 to 12-plus inches of cohesive, slightly damp substrate that holds its shape when tunneled."
+      },
+      {
+        "q": "Is it safe to let my bearded dragon roam the house?",
+        "a": "Yes, with real precautions: short supervised sessions, often starting around 10 to 15 minutes, in a warm, escape-proof room with gaps blocked, other pets and cords removed, and nothing toxic or small enough to swallow within reach. End the session if the dragon cools down, panics, darkens its beard heavily, or seems lethargic."
+      },
+      {
+        "q": "Why is my bearded dragon glass surfing, and does enrichment fix it?",
+        "a": "Glass surfing can be linked to an undersized enclosure, wrong temperatures, reflections, boredom, hunger, or a gravid female searching for a lay site. Enrichment only helps once those husbandry basics are actually correct, it's not a fix on its own if the underlying cause is a tank that's too small or temperatures that are off."
+      },
+      {
+        "q": "Can two bearded dragons share an enclosure for social enrichment?",
+        "a": "No. Bearded dragons are solitary and do best housed alone, cohabitation isn't a form of enrichment for this species and commonly causes stress and competition over basking spots and food instead."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/bearded-dragon-feeding-guide.mdx",
     "slug": "bearded-dragon-feeding-guide",
     "title": "Bearded Dragon Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -2529,7 +2833,7 @@
       },
       {
         "q": "How hot does the basking spot need to be?",
-        "a": "95 to 110°F on the basking surface, measured with an infrared thermometer aimed at the actual surface rather than the air. Some sources push this as high as 108 to 113°F for adults, either range is workable if you aim for the middle and adjust based on how your dragon uses the space."
+        "a": "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air."
       },
       {
         "q": "Do bearded dragons need UVB?",
@@ -3474,6 +3778,68 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/boa-constrictor-feeding-guide.mdx",
+    "slug": "boa-constrictor-feeding-guide",
+    "title": "Boa Constrictor Feeding: Schedule, Prey Size, and Why Adults Eat So Rarely",
+    "seoTitle": "Boa Constrictor Feeding Guide: Schedule and Diet",
+    "excerpt": "Boa constrictor feeding is genuinely simple in principle, whole prey covers this species' nutritional needs completely, the real skill is getting size and frequency right as your snake matures.",
+    "date": "2026-08-14",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Boa Constrictor",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Snake Diet",
+      "Feeding Schedule",
+      "Whole Prey"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/boa-constrictor-feeding.jpg",
+    "imageAlt": "A boa constrictor coiled around a frozen-thawed rat offered with feeding tongs",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do boa constrictors eat?",
+        "a": "Whole, frozen-thawed rodents, mice for younger animals, progressing to rats as they grow. Whole prey delivers the protein, fat, calcium, and vitamins a boa actually needs in the right balance. Always use frozen-thawed rather than live prey, and offer it with feeding tongs rather than your hand."
+      },
+      {
+        "q": "How big should feeder prey be?",
+        "a": "No wider than your boa's body at its widest point. A snake with a 1.5 inch midsection should get prey no wider than 1.5 inches. After a properly sized meal, you should see only a subtle lump, not a dramatic bulge."
+      },
+      {
+        "q": "How often should I feed my boa constrictor?",
+        "a": "Babies (0 to 6 months) every 5 to 7 days. Juveniles (6 to 12 months) every 7 to 10 days. Adults (3-plus years) every 10 to 14 days, extending to every 2 to 4 weeks for mature animals, mature females roughly every 2 to 3 weeks, adult males every 3 to 4 weeks."
+      },
+      {
+        "q": "Why shouldn't I feed my boa live rodents?",
+        "a": "A live rat or mouse can bite and cause real injury to your snake. Frozen-thawed prey removes that risk entirely, and skip wild-caught rodents too given the parasite and toxin risk."
+      },
+      {
+        "q": "How soon can I handle my boa after feeding?",
+        "a": "Wait at least a few days after feeding before handling. Disturbance during digestion is a real trigger for regurgitation, a genuinely traumatic event that can injure or kill a boa."
+      },
+      {
+        "q": "Do boa constrictors need vitamin or calcium supplements?",
+        "a": "Generally none needed, whole prey is nutritionally complete on its own. Some keepers occasionally dust prey with a light calcium or vitamin supplement since commercially bred feeder rodents can run slightly low in certain nutrients, but this is optional rather than essential."
+      }
+    ],
+    "relatedProducts": [
+      "feeding-tongs-lasnten-long-rubber-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/boa-constrictor-handling-guide.mdx",
@@ -5789,6 +6155,64 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/cockatoo-feeding-guide.mdx",
+    "slug": "cockatoo-feeding-guide",
+    "title": "Cockatoo Feeding: Schedule, Diet, and the Ratio Worth Memorizing",
+    "seoTitle": "Cockatoo Feeding Guide: Schedule and Diet",
+    "excerpt": "Cockatoo feeding comes down to a ratio worth memorizing: pellets should dominate the bowl, and seeds should stay firmly in treat territory, not the other way around.",
+    "date": "2026-08-15",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Cockatoo",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Bird Diet",
+      "Feeding Schedule",
+      "Pellets"
+    ],
+    "readTime": 5,
+    "difficulty": "Advanced",
+    "image": "/assets/images/cockatoo-feeding.jpg",
+    "imageAlt": "A cockatoo eating fresh vegetables and pellets from a food dish",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should make up most of a cockatoo's diet?",
+        "a": "Pelleted food should make up 75 to 80% of your cockatoo's daily diet. The remaining 20 to 40% comes from fresh fruits and vegetables, dark leafy greens, carrots, bell peppers, broccoli, squash, and peas all work well. Seeds and nuts are high-fat treats only, never the staple."
+      },
+      {
+        "q": "How much food does a cockatoo need daily?",
+        "a": "A useful mental picture from veterinary guidance: a small handful of food for a cockatoo is roughly equivalent to a full dinner plate for a person. Offer fresh food daily, keep fresh water available at all times, and clean both dishes every day."
+      },
+      {
+        "q": "What foods are toxic to cockatoos?",
+        "a": "Avocado, chocolate, caffeine, and alcohol are all toxic and can be fatal. Fruit pits and apple seeds release cyanide-related compounds, and onion and garlic can cause a serious blood disorder in birds. Skip grit or gravel too, cockatoos already hull seeds before swallowing them, and grit can cause a dangerous digestive blockage."
+      },
+      {
+        "q": "How do I switch my cockatoo from seeds to pellets?",
+        "a": "Do it gradually, and weigh your bird periodically during the transition to make sure intake stays adequate. A bird eating a genuinely complete pelleted diet at 75 to 80% generally doesn't need additional vitamin or mineral supplements, but a bird still transitioning off an all-seed diet may."
+      },
+      {
+        "q": "Why is a seed-heavy diet dangerous for cockatoos?",
+        "a": "It's directly linked to fatty liver disease, obesity, and vitamin A deficiency. High-fat diets specifically are also tied to lipomas, fatty skin tumors that show up notably often in overweight cockatoos and several other parrot species."
+      }
+    ],
+    "relatedProducts": [
+      "bird-food-lafebers-premium-parrots-25lb"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/cockatoo-handling-guide.mdx",
     "slug": "cockatoo-handling-guide",
     "title": "How to Handle a Cockatoo (And Why They're So Often Surrendered)",
@@ -6651,6 +7075,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/corydoras-catfish-feeding-guide.mdx",
+    "slug": "corydoras-catfish-feeding-guide",
+    "title": "Corydoras Catfish Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Corydoras Catfish Feeding Guide: Schedule and Diet",
+    "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
+    "date": "2026-08-10",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Corydoras Catfish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corydoras-catfish-feeding.jpg",
+    "imageAlt": "A school of corydoras catfish feeding on sinking wafers at the bottom of the tank",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do corydoras catfish actually eat algae?",
+        "a": "Not effectively, and treating them as a self-sufficient algae-and-leftovers cleanup crew is a real path to slow starvation, especially if they're sharing a tank with faster, more aggressive eaters. They need to be fed dedicated sinking food on purpose, every time."
+      },
+      {
+        "q": "What should I feed corydoras catfish?",
+        "a": "Sinking pellets or wafers formulated for bottom feeders or catfish, roughly 30 to 40% protein, as the staple. Add worms regularly, live blackworms, frozen bloodworms, or a product like Hikari Vibra Bites, alongside occasional sinking gel foods. Blanched vegetables can round things out but shouldn't be the main event."
+      },
+      {
+        "q": "How much and how often should I feed corydoras?",
+        "a": "Once or twice a day, offering only what your cories can finish in about 2 to 3 minutes. A practical starting point is roughly one sinking wafer per 3 to 4 fish, or 2 to 3 small sinking pellets per cory, adjusted based on what actually gets eaten. If food is still visible after 20 to 30 minutes, scale back next time."
+      },
+      {
+        "q": "Why shouldn't I rely on floating flakes for corydoras?",
+        "a": "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily."
+      },
+      {
+        "q": "Why has my corydoras catfish stopped eating?",
+        "a": "Stress is the most common cause, including from being kept alone or in too small a group, poor water quality, especially ammonia buildup, disease, and the ordinary acclimation period after a move or a new tank are all documented causes."
+      },
+      {
+        "q": "How can I tell if poor water quality is why my cory stopped eating?",
+        "a": "Test ammonia and nitrite directly rather than guessing, elevated levels are a repeatedly cited cause of both appetite loss and lethargy in this species. Bad water conditions cause real stress, and correcting water quality often resolves the appetite issue on its own."
+      }
+    ],
+    "relatedProducts": [
+      "corydoras-hikari-sinking-wafers"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/corydoras-catfish-handling-guide.mdx",
     "slug": "corydoras-catfish-handling-guide",
     "title": "Corydoras Catfish Aren't Handled, and They're Not Solo Fish Either",
@@ -6885,6 +7371,63 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/crested-gecko-enrichment-guide.mdx",
+    "slug": "crested-gecko-enrichment-guide",
+    "title": "Crested Gecko Enrichment: Vertical Space, Cover, and Foraging",
+    "seoTitle": "Crested Gecko Enrichment Guide",
+    "excerpt": "Crested geckos are arboreal, so enrichment here is mostly vertical: a real climbing network, cover at height, and food they have to find instead of a dish on the floor.",
+    "date": "2026-08-15",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Crested Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Bioactive"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-enrichment.jpg",
+    "imageAlt": "A crested gecko perched on a branch surrounded by foliage and cork tube hides",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a crested gecko?",
+        "a": "A complex vertical climbing network, cover at different heights so the gecko can choose how exposed it is, and food presented in a way that involves some searching or hunting rather than a static dish on the floor. It never replaces correct humidity, temperature, and a properly sized vertical enclosure, those come first."
+      },
+      {
+        "q": "Does a crested gecko need live plants?",
+        "a": "Live plants aren't strictly required, high-quality artificial foliage covers the same need for daytime cover and security. Pothos, philodendron, and bromeliads are common safe choices if you do go live, and either way, dense cover reduces stress by letting the gecko control its own light exposure."
+      },
+      {
+        "q": "How much climbing structure is too much?",
+        "a": "It's hard to overdo vertical complexity for this species, crested geckos are strong jumpers and use open gaps between perches on purpose. The real limit is stability, every branch and piece of cork has to be anchored so nothing collapses under the gecko's weight mid-jump."
+      },
+      {
+        "q": "Is a bioactive setup necessary for enrichment?",
+        "a": "No, it's an advanced option, not a requirement. A well-set-up bioactive enclosure with springtails and isopods adds continuous low-level stimulation through a growing, self-cleaning environment, but a non-bioactive setup with good climbing structure, cover, and varied feeding covers the basics just fine."
+      },
+      {
+        "q": "Should I rearrange the enclosure often for novelty?",
+        "a": "Only occasionally. Sudden total overhauls of a shy individual's enclosure cause stress rather than enrichment. Small changes, a new branch angle or rotated plant, are enough, and the core climbing structure and hides are better left stable."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/crested-gecko-feeding-guide.mdx",
@@ -7305,6 +7848,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/degu-feeding-guide.mdx",
+    "slug": "degu-feeding-guide",
+    "title": "Degu Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Degu Feeding Guide: Schedule and Diet",
+    "excerpt": "Degu feeding really comes down to one rule that matters more than anything else: sugar is genuinely dangerous for this species, not just something to limit.",
+    "date": "2026-08-10",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Degu",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Degu Diabetes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/degu-feeding.jpg",
+    "imageAlt": "Degu eating timothy hay next to a small dish of sugar-free pellets",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a degu's diet be built around?",
+        "a": "Unlimited grass hay, timothy, meadow, or orchard, available at all times, plus a modest daily amount of a degu-specific or chinchilla pellet with no molasses, sugar, dried fruit, seeds, or colorful mixed pieces. A guinea pig pellet, or a 50/50 mix of guinea pig and chinchilla pellets, works as an acceptable alternative."
+      },
+      {
+        "q": "How much should I feed my degu?",
+        "a": "Hay stays available around the clock, the non-negotiable foundation of the diet. Pellets should be measured, not free-fed, roughly 1 to 2 tablespoons per degu daily. Degus will preferentially eat calorie-dense pellets over hay if given unlimited access to both, which undercuts the fiber intake this species actually needs."
+      },
+      {
+        "q": "Why is sugar so dangerous for degus specifically?",
+        "a": "Degus have unusually low natural insulin activity among rodents, and this species is specifically studied as a natural model for diabetes because it develops the disease so readily on a diet with even modest added sugar. Fruit, honey, molasses, and sugary treats should be avoided almost entirely, not just limited the way you might moderate treats for other small pets."
+      },
+      {
+        "q": "Do degus need vitamin C supplements like guinea pigs do?",
+        "a": "No. Unlike guinea pigs, degus produce their own vitamin C internally, so that's not something you need to source separately. On a correct hay-and-pellet diet, degus generally don't need added vitamin or mineral supplements at all."
+      },
+      {
+        "q": "What foods should I never feed a degu?",
+        "a": "Beyond fruit and sugar, avoid starchy vegetables like corn, peas, and potatoes, skip seeds and nuts as regular fare, and steer clear of rabbit food entirely, it can contain an ingredient that's genuinely toxic to degus. Hamster and gerbil mixes are also the wrong fit, too much protein and seed content for this species."
+      },
+      {
+        "q": "Why has my degu stopped eating?",
+        "a": "Dental problems (sharp tooth spurs that cut the mouth), mouth ulcers, digestive bloating from too rich or too rapidly changed a diet, infection, and dehydration are all documented causes. Diabetes itself can also suppress appetite. Degus tend to hide illness until it's fairly advanced, so don't wait out a persistent refusal."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-pellets-mazuri",
+      "timothy-hay-small-pets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/degu-gerbil-overview.mdx",
@@ -7749,6 +8356,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/emperor-scorpion-feeding-guide.mdx",
+    "slug": "emperor-scorpion-feeding-guide",
+    "title": "Emperor Scorpion Feeding: Schedule, Diet, and Why Fasting Is Normal",
+    "seoTitle": "Emperor Scorpion Feeding Guide: Schedule and Diet",
+    "excerpt": "Emperor scorpion feeding is genuinely low-effort once you internalize the one fact that changes everything about how often you should be doing it: this species can comfortably go far longer between meals than most keepers assume.",
+    "date": "2026-08-16",
+    "category": "Invertebrates",
+    "categories": [
+      "Invertebrates"
+    ],
+    "tags": [
+      "Emperor Scorpion",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Invertebrate Diet",
+      "Feeding Schedule",
+      "Gut-Loading"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner/Intermediate",
+    "image": "/assets/images/emperor-scorpion-feeding.jpg",
+    "imageAlt": "An emperor scorpion tearing apart a feeder insect with its pincers",
+    "emoji": "🦂",
+    "lastReviewed": "2026-08-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do emperor scorpions eat?",
+        "a": "Gut-loaded feeder insects make up the entire diet. Crickets and dubia roaches are the most reliable staples, with locusts and the occasional mealworm or superworm added for variety. Adults use their powerful pincers to tear prey apart rather than relying on the stinger."
+      },
+      {
+        "q": "How often should I feed my emperor scorpion?",
+        "a": "Juveniles and nymphs every 2 to 4 days, they're growing and genuinely more voracious. Adults once a week is standard, sometimes 2 to 3 insects offered weekly. Size prey to your scorpion's body, nothing larger than the abdomen."
+      },
+      {
+        "q": "Is it normal for my emperor scorpion to stop eating?",
+        "a": "Yes. Emperor scorpions can safely fast for a month or two, especially heading into a molt, and refusing food during that window is normal, not a sign of a problem. Always remove any uneaten prey within 24 hours."
+      },
+      {
+        "q": "Do emperor scorpions need calcium or vitamin supplements?",
+        "a": "No, not directly. Instead of supplementing the scorpion, supplement the food: gut-load feeder insects with fresh produce or a commercial gut-load for at least 24 hours before offering them."
+      },
+      {
+        "q": "Can emperor scorpions eat fireflies?",
+        "a": "Never. Fireflies are genuinely toxic to scorpions and must never be offered."
+      },
+      {
+        "q": "How do I know if I'm overfeeding my emperor scorpion?",
+        "a": "A visibly distended abdomen is the clearest sign to scale back. An abdomen that looks narrower than the carapace means it's fine to feed a bit more."
+      }
+    ],
+    "relatedProducts": [
+      "dubia-roaches-bag",
+      "gutload-flukers-high-calcium-dubia-roach-diet-7oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/emperor-scorpion-handling-guide.mdx",
@@ -8731,6 +9401,234 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/fire-skink-cost-guide.mdx",
+    "slug": "fire-skink-cost-guide",
+    "title": "How Much Does a Fire Skink Really Cost?",
+    "seoTitle": "Fire Skink Cost: Full Price Breakdown",
+    "excerpt": "Fire skinks are genuinely affordable, and the price gap between captive-bred and wild-caught animals is worth paying attention to for reasons beyond just cost.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Fire Skink",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-skink-cost.jpg",
+    "imageAlt": "Fire skink showing its red, black, and gold banding beside enclosure setup materials",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a fire skink cost?",
+        "a": "Common wild-caught or imported fire skinks run $25 to $40. There's no real color-morph market here, this species is prized for its natural red, black, and gold banding rather than selectively bred variants. Captive-bred individuals cost more but make genuinely better pets."
+      },
+      {
+        "q": "What does a fire skink enclosure setup cost?",
+        "a": "A moderate reptile cost. A 36x18x18 inch enclosure, UVB kit, heat lamp and thermostat, deep moisture-retentive substrate, hides, and a hygrometer make up the setup, genuinely more affordable than the larger lizards on this site."
+      },
+      {
+        "q": "What are the ongoing costs of keeping a fire skink?",
+        "a": "Modest. Live insects, crickets, roaches, and worms among the common choices, plus a calcium and D3 supplement and periodic substrate replacement, keep this a low-maintenance species to feed month to month."
+      },
+      {
+        "q": "Should I pay more for a captive-bred fire skink instead of wild-caught?",
+        "a": "Genuinely yes. A wild-caught animal costs about the same as a captive-bred one but tends to arrive more stressed, more parasite-prone, and slower to settle. Paying a bit more for verified captive-bred stock is the better value once you account for vet costs and taming time."
+      },
+      {
+        "q": "How long do fire skinks live?",
+        "a": "15 to 20 years, a genuinely long commitment for a lizard this small and this affordable to acquire. The low purchase price shouldn't distract from the fact that you're taking on a two-decade relationship."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-forest-6",
+      "automatic-misting-system-fogger",
+      "dimming-thermostat-pt02t"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/fire-skink-handling-guide.mdx",
+    "slug": "fire-skink-handling-guide",
+    "title": "How to Handle a Fire Skink (This Isn't the Blue-Tongued Skink)",
+    "seoTitle": "How to Handle a Fire Skink Safely",
+    "excerpt": "Fire skinks and blue-tongued skinks share a family name and not much else temperamentally. If you've kept the docile, handleable blue-tongued skink already covered on this site, expect something genuinely different here.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Fire Skink",
+      "Handling",
+      "Reptile Behavior",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-skink-handling.jpg",
+    "imageAlt": "Fire skink held low over a soft surface during a gentle handling session",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are fire skinks easy to handle?",
+        "a": "Not in the way a blue-tongued skink is. Fire skinks aren't defensive or bitey in any meaningful sense, but they're notably skittish, fast-moving, and prone to burrowing out of sight the moment they feel exposed. Captive-bred individuals tame more readily than wild-caught ones."
+      },
+      {
+        "q": "Is a fire skink dangerous to handle?",
+        "a": "No, the real handling risks are minor. An occasional hard bite if genuinely cornered, and like many lizards, tail autotomy under grasping pressure. Never grab or restrain by the tail, and handle low over a soft surface given how fast and squirmy this species is."
+      },
+      {
+        "q": "How is a fire skink different from a blue-tongued skink?",
+        "a": "Genuinely different in almost every way that matters for handling. Blue-tongued skinks are larger, drier-climate, omnivorous, and personable, tolerant of and often seeming to enjoy interaction. Fire skinks are smaller, humidity-loving, insectivorous, and fossorial, closer to a beautiful display animal than a lizard built for regular handling."
+      },
+      {
+        "q": "What's the biggest mistake first-time fire skink owners make?",
+        "a": "Expecting the same docile, cuddly relationship a blue-tongued skink offers. This is genuinely a different kind of pet. Under-furnishing the enclosure is the second big one, a bare tank leaves this naturally shy species perpetually hidden and stressed."
+      },
+      {
+        "q": "Should I buy a wild-caught or captive-bred fire skink?",
+        "a": "Captive-bred if you can find and afford one. Wild-caught animals are notably skittish and stay flighty longer, while captive-bred individuals tame more readily with patient, gradual handling, covered in more detail in the cost guide."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/fire-skink-health-issues-guide.mdx",
+    "slug": "fire-skink-health-issues-guide",
+    "title": "Common Fire Skink Health Issues",
+    "seoTitle": "Fire Skink Health Issues: Signs & Causes",
+    "excerpt": "Fire skinks are hardy, and nearly every health issue in this species connects back to one thing: getting humidity and substrate moisture right for a fossorial animal that genuinely depends on both.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Fire Skink",
+      "Health",
+      "Reptile Illness",
+      "Care Tips",
+      "Lizard Care",
+      "Humidity"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-skink-health-issues.jpg",
+    "imageAlt": "Fire skink being checked for signs of retained shed near a humid hide",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What causes respiratory infection in fire skinks?",
+        "a": "Substrate or overall enclosure conditions running too dry, or occasionally too cold. Watch for open-mouth breathing, mucus, and wheezing. See a vet, this needs professional treatment, and prevention is straightforward, maintain 60 to 70% substrate humidity consistently."
+      },
+      {
+        "q": "Why does my fire skink have retained shed?",
+        "a": "Almost always from low humidity. Retained shed on the toes or tail can constrict circulation if left unaddressed. Manageable at home with corrected humidity and a genuinely humid hide, though retained eye caps or a severe case should prompt a vet visit."
+      },
+      {
+        "q": "What causes substrate impaction in fire skinks?",
+        "a": "Ingesting dry, loose substrate accidentally while feeding. See a vet if suspected. Prevented by using proper moist substrate and considering feeding from a dish to reduce accidental ingestion."
+      },
+      {
+        "q": "Do fire skinks get metabolic bone disease?",
+        "a": "Less commonly than in some other lizards, but it's still possible if UVB and calcium supplementation are inadequate. See a vet if you suspect it."
+      },
+      {
+        "q": "What's the single biggest factor in fire skink health?",
+        "a": "Humidity and substrate moisture, by a wide margin. Low humidity is directly responsible for the respiratory infection and poor shedding that make up most of this species' real health risk, and dry substrate causes impaction. Getting moisture right determines how healthy, and how visible, your fire skink actually is."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/fire-skink-tank-setup-guide.mdx",
+    "slug": "fire-skink-tank-setup-guide",
+    "title": "Fire Skink Enclosure Setup: Deep, Moist Substrate Above Everything Else",
+    "seoTitle": "Fire Skink Enclosure Setup Guide",
+    "excerpt": "Fire skink care comes down to one central skill more than any other: keeping deep substrate genuinely, permanently moist for a species that spends most of its time burrowed within it.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Fire Skink",
+      "Tank Setup",
+      "Enclosure",
+      "Substrate",
+      "Humidity",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fire-skink-tank-setup.jpg",
+    "imageAlt": "Fire skink enclosure with deep moist substrate, leaf litter, and a humid hide",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does a fire skink need?",
+        "a": "36 inches long by 18 inches wide by 18 inches tall as a minimum for a single adult, larger is genuinely worth it since this is an active species. Floor space matters more than height. Don't house multiple fire skinks together, especially two males, real fighting risk."
+      },
+      {
+        "q": "What temperature does a fire skink enclosure need?",
+        "a": "Ambient 80 to 86°F, with a basking spot around 92 to 96°F, and a night drop to about 70°F, 65°F is acceptable. A halogen basking bulb provides daytime heat, and some keepers add an under-tank heater on the warm side as well."
+      },
+      {
+        "q": "What substrate does a fire skink need?",
+        "a": "4 to 6 inches of a loose, moisture-retentive tropical mix, a DIY blend of roughly 40% topsoil, 40% coconut fiber, and 20% fine sand works well, topped with leaf litter or sphagnum moss. The substrate needs to stay damp, not waterlogged, and needs to hold a burrow shape."
+      },
+      {
+        "q": "Does a fire skink need UVB?",
+        "a": "Real benefit though technically optional if diet is properly supplemented. A lower-output UVB tube in the 5 to 6% range, positioned so the basking area sits 7 to 10 inches below the lamp, replaced every 12 months, is a reasonable, well-supported choice."
+      },
+      {
+        "q": "Why does my fire skink stay hidden all the time?",
+        "a": "Almost always because the substrate is too shallow or the enclosure is too sparse. Fire skinks are burrowers, and in a bare setup the only option is to wedge under a hide and stay there. Deep substrate, real cover, and permanent moisture are what actually let you see this species rather than staring at empty tank."
+      }
+    ],
+    "relatedProducts": [
+      "uvb-arcadia-forest-6",
+      "automatic-misting-system-fogger",
+      "dimming-thermostat-pt02t",
+      "sphagnum-moss"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
     "path": "/content/guides/five-beginner-reptiles-overview.mdx",
     "slug": "five-beginner-reptiles-overview",
     "title": "Five Reptiles That Actually Make Sense for Beginners",
@@ -8881,6 +9779,41 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/gaboon-viper-longest-fangs-any-snake.mdx",
+    "slug": "gaboon-viper-longest-fangs-any-snake",
+    "title": "Gaboon Viper Facts: The Snake With the Longest Fangs on Earth",
+    "seoTitle": "Gaboon Viper: Longest Fangs of Any Snake, Explained",
+    "excerpt": "The Gaboon viper carries the longest fangs and the biggest venom yield of any snake alive, but it's also one of the most docile vipers on Earth. Almost every fact about it comes back to the same trait: extreme patience.",
+    "date": "2026-08-13",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Gaboon Viper",
+      "Snakes",
+      "Reptiles",
+      "Africa",
+      "Venomous Snakes",
+      "Animal Science",
+      "Fun Facts"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/gaboon-viper-facts.jpg",
+    "imageAlt": "A Gaboon viper resting in rainforest leaf litter, its geometric brown and cream pattern blending into the dead leaves",
+    "emoji": "🐍",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Gaboon Viper",
+    "myth": "The Gaboon viper is an aggressive, fast-striking snake that will attack without warning.",
+    "truth": "It's actually one of the most docile vipers in the world, rarely biting or hissing even when handled. Nearly every recorded bite happens because someone accidentally stepped on one hidden in leaf litter, not because it went looking for a fight.",
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
@@ -9297,6 +10230,68 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/gerbil-feeding-guide.mdx",
+    "slug": "gerbil-feeding-guide",
+    "title": "Gerbil Feeding: Schedule, Diet, and Why Seed Mixes Fail This Species",
+    "seoTitle": "Gerbil Feeding Guide: Schedule and Diet",
+    "excerpt": "A sunflower-seed-heavy mix looks like a complete gerbil diet, but a gerbil will happily pick out the fatty seeds and leave the balanced parts behind, which is exactly how a seemingly complete diet causes obesity.",
+    "date": "2026-08-15",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Gerbil",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Small Mammal Diet",
+      "Feeding Schedule",
+      "Rodent Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/gerbil-feeding.jpg",
+    "imageAlt": "A gerbil eating a pelleted food nugget while holding it in its front paws",
+    "emoji": "🐹",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the best staple food for a gerbil?",
+        "a": "A nutritionally complete, uniform pelleted diet or lab block formulated for gerbils, or a low-fat rodent formula, is the best base because it prevents selective feeding. The American Gerbil Society is explicit that gerbil food needs a minimum of 14% protein, many products labeled simply 'Hamster and Gerbil Food' fall under that and are really meant for hamsters."
+      },
+      {
+        "q": "How much should I feed a gerbil each day?",
+        "a": "Roughly 5 to 10 grams, about a tablespoon, of pellets per adult gerbil per day, fed once daily. Offer fresh vegetables every other day or a few times a week, and treat fruit as an occasional weekly indulgence given the sugar content."
+      },
+      {
+        "q": "Why are seed mixes bad for gerbils?",
+        "a": "Gerbils selectively eat the fatty seeds, sunflower especially, and leave the balanced components behind, so a bag that looks nutritionally complete on the label doesn't actually get eaten that way. The RSPCA specifically warns against excessive sunflower seed for this reason, it's fatty enough to drive obesity on its own."
+      },
+      {
+        "q": "What foods are toxic to gerbils?",
+        "a": "Grapes and raisins, rhubarb, citrus fruit, chocolate, onion and garlic, avocado, raw potato, raw kidney beans, and apple seeds. Also avoid salty, sugary, or processed human food and dairy, and skip watery lettuce, it can cause diarrhea."
+      },
+      {
+        "q": "Do gerbils need vitamin or mineral supplements?",
+        "a": "No, not with a complete pelleted diet. Occasional insect protein like mealworms and fresh produce add variety rather than correct a deficiency. Constant fresh water and safe wood to gnaw on for their continuously growing teeth matter more than any supplement."
+      },
+      {
+        "q": "Do young or breeding gerbils need more food?",
+        "a": "Yes. Young gerbils under 6 months and pregnant or nursing females need more calories and protein, some commercial diets are formulated to be offered without the usual portion limit during those life stages."
+      }
+    ],
+    "relatedProducts": [
+      "hamster-food-oxbow-garden-select"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/gerbil-handling-guide.mdx",
@@ -9972,6 +10967,66 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/goldfish-enrichment-guide.mdx",
+    "slug": "goldfish-enrichment-guide",
+    "title": "Goldfish Enrichment: Space, Plants, and Foraging Done Right",
+    "seoTitle": "Goldfish Enrichment Guide",
+    "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is genuinely right, real research shows what actually adds value on top.",
+    "date": "2026-08-19",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Goldfish",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Aquarium Plants"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/goldfish-enrichment.jpg",
+    "imageAlt": "A goldfish foraging along sandy substrate near planted aquarium decor",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-19",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What actually counts as enrichment for a goldfish?",
+        "a": "Open space to swim, structure and planting for cover, a substrate that supports foraging, and a feeding style that lets natural bottom-sifting behavior happen. None of it substitutes for correct tank volume, filtration, and water quality, those come first."
+      },
+      {
+        "q": "Do goldfish prefer live plants over artificial ones?",
+        "a": "Research tracking where goldfish spend their time found they spent roughly 90% of time in planted areas versus about 10% in barren open space, but didn't show a strong preference for live plants specifically over closely matched artificial ones. Structure and cover seem to be what matters, not necessarily whether it's alive."
+      },
+      {
+        "q": "What substrate is best for goldfish foraging?",
+        "a": "Fine sand or smooth rounded gravel supports natural sifting behavior. Research on substrate particle size found it measurably affects how much time goldfish spend foraging, with coarse sand outperforming a lot of coarser gravel options for this specifically. Avoid sharp gravel or anything easily swallowed."
+      },
+      {
+        "q": "What plants actually survive in a goldfish tank?",
+        "a": "Tough, rhizome-based plants attached to hardscape rather than planted in substrate hold up best, anubias and java fern are commonly recommended since goldfish tend to uproot and nip at looser plantings. Expect some damage regardless, and either choose plants tough enough to take it or accept occasional replacement."
+      },
+      {
+        "q": "Can goldfish be kept together for social enrichment?",
+        "a": "Often yes, goldfish frequently do well with same-type tankmates, fancy with fancy, single-tail with single-tail, since matching body types and swim speed reduces competition. This only works if filtration and tank volume genuinely support the combined bioload, stocking for company without the space to back it up isn't enrichment."
+      },
+      {
+        "q": "Does water movement matter for enrichment?",
+        "a": "A mild current from adequate filtration can encourage more natural swimming activity, but avoid exhausting flow, especially for heavy-bodied fancy varieties that aren't built for strong currents."
+      }
+    ],
+    "relatedProducts": [
+      "betta-substrate-caribsea-freshwater-sand"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/goldfish-feeding-guide.mdx",
     "slug": "goldfish-feeding-guide",
     "title": "Goldfish Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -10500,6 +11555,235 @@
       "uvb-arcadia-forest-6",
       "substrate-tarantula-coconut-fiber-peat",
       "fine-mist-spray-bottle"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/green-iguana-cost-guide.mdx",
+    "slug": "green-iguana-cost-guide",
+    "title": "How Much Does a Green Iguana Really Cost?",
+    "seoTitle": "Green Iguana Cost: Full Price Breakdown",
+    "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to underestimate what they're actually taking on.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Cost",
+      "Reptile Budget",
+      "Pet Ownership Cost",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-cost.jpg",
+    "imageAlt": "Green iguana hatchling beside a custom-built walk-in enclosure under construction",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a green iguana itself cost?",
+        "a": "Baby green iguanas are farm-raised and inexpensive, commonly $20 to $100. Color morphs push the price up considerably, albino, hypomelanistic, axanthic, and purple translucent lines commonly run $300 to $1,000 or more. A related but genuinely different, IUCN-endangered species, the blue iguana, can run into the tens of thousands, worth knowing so you don't confuse the two."
+      },
+      {
+        "q": "What does the upfront setup actually cost?",
+        "a": "$700 to $2,500 or more, and this is where iguana ownership gets real. No commercial enclosure is large enough for an adult, so a custom or walk-in build is mandatory, on top of high-output UVB, a cluster of halogen basking bulbs, a misting system, and a large soaking tub."
+      },
+      {
+        "q": "What are the ongoing monthly costs?",
+        "a": "Roughly $60 to $150 a month, covering fresh produce, calcium and multivitamin supplements, substrate, and meaningful electricity to heat and light a large enclosure. One cost aggregator models an all-in annual ownership cost of around $2,140 a year."
+      },
+      {
+        "q": "How long do green iguanas live, and why does the survival rate matter for budgeting?",
+        "a": "With excellent care, 15 to 20 years, sometimes 25. But inadequate diet, lighting, and housing are so common in this species that an estimated 70% of captive green iguanas die within their first year of life. The purchase price has almost nothing to do with what it actually costs to keep this species alive long-term."
+      },
+      {
+        "q": "Are vet bills expensive for a green iguana?",
+        "a": "Reptile vets are specialized, and iguana-specific issues, metabolic bone disease treatment or egg-binding surgery among them, can run into real money. Budget for an annual exam at minimum, and know that emergency care for this species tends toward the expensive end."
+      }
+    ],
+    "relatedProducts": [
+      "arcadia-t5-uvb-36in-14pct-dragon",
+      "uromastyx-halogen-flood-bulb-100w",
+      "automatic-misting-system-fogger",
+      "calcium-repashy-superveggie-6oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/green-iguana-handling-guide.mdx",
+    "slug": "green-iguana-handling-guide",
+    "title": "How to Handle a Green Iguana (And Why So Many Get Surrendered)",
+    "seoTitle": "How to Handle a Green Iguana Safely",
+    "excerpt": "Green iguanas can become genuinely calm, interactive animals with consistent handling from a young age, but the honest picture also includes real physical risk from an adult, and a surrender rate that's worth understanding before you buy.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Handling",
+      "Reptile Behavior",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-handling.jpg",
+    "imageAlt": "Green iguana calmly perched on an owner's arm during a handling session",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How big does an adult green iguana actually get?",
+        "a": "6 to 7 feet including tail and up to 20 pounds, a completely different animal from the small, manageable baby most people bring home. This mirrors a theme already covered on this site with the savannah monitor and Argentine tegu, all three are large lizards commonly surrendered when the adult doesn't match what the owner signed up for."
+      },
+      {
+        "q": "What are the real physical risks of handling an adult iguana?",
+        "a": "Three of them. Sharp claws capable of deep scratches during normal handling. Tail-whipping, a real defensive strike that can cause welts and bruising, including to the face. And tail autotomy, the tail can drop under grasping pressure, so never grab or restrain by the tail."
+      },
+      {
+        "q": "Does breeding season really change an iguana's behavior?",
+        "a": "Yes, genuinely and significantly. Testosterone-driven aggression in mature males can transform a previously calm iguana into an unpredictable one for a period each year, head-bobbing, color intensifying toward orange or red, and territorial chasing or biting."
+      },
+      {
+        "q": "Why do so many green iguanas end up surrendered?",
+        "a": "Almost entirely a housing and size mismatch. A $30 baby gives no hint of the 6-foot adult coming, and by the time that adult needs a walk-in enclosure, many owners simply aren't prepared, which is exactly why iguanas show up so often at reptile rescues alongside monitors and tortoises."
+      },
+      {
+        "q": "How should you approach a green iguana to avoid triggering a defensive response?",
+        "a": "From the side, never from directly above. Approaching from overhead reads as an aerial predator attack to the iguana and triggers a strong defensive response, regardless of how calm the animal normally is."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/green-iguana-health-issues-guide.mdx",
+    "slug": "green-iguana-health-issues-guide",
+    "title": "Common Green Iguana Health Issues",
+    "seoTitle": "Green Iguana Health Issues: Signs & Causes",
+    "excerpt": "Green iguana health problems trace back overwhelmingly to husbandry, and one condition in particular is common enough in this species that understanding it should shape every other decision you make about care.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Health",
+      "Metabolic Bone Disease",
+      "Reptile Illness",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-health-issues.jpg",
+    "imageAlt": "Green iguana undergoing a vet exam to check for signs of metabolic bone disease",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common health issue in green iguanas?",
+        "a": "Metabolic bone disease. VCA Animal Hospitals describes it as probably the most common medical problem of pet iguanas, and WikiVet lists it as the most common disease in captive lizards generally, especially green iguanas. Watch for a swollen or rubbery lower jaw, swollen or bowed hind limbs, soft bones, and tremors."
+      },
+      {
+        "q": "What causes metabolic bone disease in green iguanas?",
+        "a": "Low dietary calcium relative to phosphorus, insufficient vitamin D3, or inadequate UVB exposure, often all three together. Always see a vet, advanced cases need immediate, long-term treatment, and prevention through correct UVB, calcium, and diet ratio from day one is genuinely the difference between a healthy iguana and a statistic."
+      },
+      {
+        "q": "What causes kidney disease in green iguanas?",
+        "a": "Chronic dehydration from low humidity, combined with too much animal protein in a diet that should be strictly plant-based. This is a leading cause of death in adult iguanas, and it's largely preventable by never feeding protein and keeping humidity in the correct range."
+      },
+      {
+        "q": "Is egg binding an emergency in green iguanas?",
+        "a": "Yes, always. Ovostasis can occur in females even without a male present, and it's a genuine reproductive emergency. Get to a vet immediately if you suspect it."
+      },
+      {
+        "q": "What health problems are actually preventable through husbandry alone?",
+        "a": "Nearly everything on this list. Thermal burns and substrate impaction are entirely preventable through setup choices, unguarded heat sources and substrate that's too fine while feeding are the direct causes. Getting UVB, calcium, humidity, and diet right from the start prevents most of what shows up on a vet's list for this species."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/green-iguana-tank-setup-guide.mdx",
+    "slug": "green-iguana-tank-setup-guide",
+    "title": "Green Iguana Enclosure Setup: Plan for a Room, Not a Tank",
+    "seoTitle": "Green Iguana Enclosure Setup Guide",
+    "excerpt": "Green iguana husbandry needs to be planned around the adult this species becomes, not the baby you're bringing home. Building toward that end state from the start is genuinely the better approach than upgrading repeatedly.",
+    "date": "2026-08-11",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Tank Setup",
+      "Enclosure",
+      "UVB",
+      "Care Tips",
+      "Lizard Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-tank-setup.jpg",
+    "imageAlt": "Custom walk-in green iguana enclosure with climbing branches and basking lighting",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size enclosure does an adult green iguana need?",
+        "a": "A minimum of 10 feet long by 5 feet wide by 6 feet tall, some vet and husbandry sources recommend 12 by 6 by 6. No commercial enclosure is large enough, this has to be a custom, walk-in build. A juvenile can start temporarily in something like a 4x2x4 foot enclosure or a 40 to 55 gallon tank, but outgrows it within the first year."
+      },
+      {
+        "q": "What temperature does a green iguana enclosure need?",
+        "a": "Basking area 100 to 120°F, cool end around 80°F, nighttime not dropping below the low 70s°F. Heat via a cluster of halogen bulbs, roughly six bulbs to adequately cover an adult's basking branch, positioned over a sturdy climbing perch."
+      },
+      {
+        "q": "Does a green iguana need UVB?",
+        "a": "Yes, required for survival in this species, not a nice-to-have. High-output T5 HO UVB, replaced every 12 months regardless of whether the bulb still produces visible light. Glass blocks UVB entirely, so a sunny window is never an adequate substitute."
+      },
+      {
+        "q": "What humidity does a green iguana need?",
+        "a": "60 to 80%, reflecting this species' tropical origin. Achieve this through misting twice daily with a pressure sprayer or an automated misting system, plus a large soaking tub the iguana can fully access. Chronically low humidity is directly linked to dehydration and kidney disease."
+      },
+      {
+        "q": "Why does a green iguana need vertical space, not just floor space?",
+        "a": "Because this is fundamentally an arboreal species. Roughly two-thirds of an iguana's total length is tail, and it needs genuine vertical space and sturdy branches positioned near the basking zone, not just floor area. A wide, short enclosure undersells this species just as much as a small one does."
+      }
+    ],
+    "relatedProducts": [
+      "arcadia-t5-uvb-36in-14pct-dragon",
+      "uromastyx-halogen-flood-bulb-100w",
+      "automatic-misting-system-fogger",
+      "misting-system-mistking-starter-5th-gen"
     ],
     "factFile": false,
     "animal": null,
@@ -12781,6 +14065,52 @@
     "sourceCount": 0
   },
   {
+    "path": "/content/guides/iguana-fireskink-quaker-overview.mdx",
+    "slug": "iguana-fireskink-quaker-overview",
+    "title": "Three Pets That Are a Bigger Deal Than They Look",
+    "seoTitle": "Green Iguana, Fire Skink & Quaker Parakeet Compared",
+    "excerpt": "A cheap baby lizard. A small, colorful skink. A parakeet barely bigger than a lovebird. None of these three look like they come with real strings attached. All three do.",
+    "date": "2026-08-11",
+    "category": "Roundups",
+    "categories": [
+      "Roundups"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Fire Skink",
+      "Quaker Parakeet",
+      "Pet Roundup",
+      "Beginner Pets"
+    ],
+    "readTime": 4,
+    "difficulty": "Beginner",
+    "image": "/assets/guides/iguana-fireskink-quaker-overview.jpg",
+    "imageAlt": "Green iguana, fire skink, and Quaker parakeet shown side by side",
+    "emoji": "🎭",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a green iguana a good pet for a first-time reptile owner?",
+        "a": "No, despite the cheap $20 to $100 hatchling price suggesting otherwise. Adult males reach 6 to 7 feet and up to 20 pounds, need a custom walk-in enclosure at minimum 10x5x6 feet, and an estimated 70% of captive green iguanas die within their first year from inadequate care. This is squarely an advanced-keeper species."
+      },
+      {
+        "q": "Is a fire skink handleable like a blue-tongued skink?",
+        "a": "No, and this is the most common misconception about the species. Fire skinks are shy, fast, and fossorial, closer to a beautiful display animal than a handling pet, a real temperament difference from the docile blue-tongued skink despite both being skinks."
+      },
+      {
+        "q": "Is it legal to own a Quaker parakeet everywhere in the US?",
+        "a": "No. Quaker parakeets are banned or restricted in a meaningful number of US states over invasive-species concerns, since escaped birds build large stick nests on power infrastructure and form feral colonies. Check your state's wildlife or agriculture agency before buying, not after."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
+  },
+  {
     "path": "/content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx",
     "slug": "immortal-jellyfish-turritopsis-dohrnii-explained",
     "title": "The Immortal Jellyfish Is Real, But It Does Not Live Forever",
@@ -13231,7 +14561,8 @@
       "mantis-enclosure-exo-terra-nano-tall",
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "digital-thermometer-hygrometer-combo",
-      "jumping-spider-fruit-fly-culture-starter"
+      "jumping-spider-fruit-fly-culture-starter",
+      "cork-bark-mini-flats-jumping-spider"
     ],
     "factFile": false,
     "animal": null,
@@ -13464,7 +14795,8 @@
       "mantis-enclosure-exo-terra-nano-tall",
       "substrate-zoo-med-eco-earth-coconut-fiber",
       "fine-mist-spray-bottle",
-      "digital-thermometer-hygrometer-combo"
+      "digital-thermometer-hygrometer-combo",
+      "cork-bark-mini-flats-jumping-spider"
     ],
     "factFile": false,
     "animal": null,
@@ -14182,6 +15514,66 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/leopard-gecko-enrichment-guide.mdx",
+    "slug": "leopard-gecko-enrichment-guide",
+    "title": "Leopard Gecko Enrichment: What the Research Actually Supports",
+    "seoTitle": "Leopard Gecko Enrichment Guide",
+    "excerpt": "Two real studies have tested leopard gecko enrichment directly, and the results are specific: thermal and feeding enrichment work, novelty toys and mirrors barely register. Here's what to actually spend effort on.",
+    "date": "2026-08-18",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Leopard Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/leopard-gecko-enrichment.jpg",
+    "imageAlt": "A leopard gecko exploring a naturalistic enclosure with cork bark and climbing structure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-18",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does research actually say about leopard gecko enrichment?",
+        "a": "Bashaw et al. (2016) found leopard geckos engaged with several types of enrichment, but thermal and feeding enrichment produced the strongest responses, while mirrors and other visual enrichment were the weakest. Rickman et al. (2025) found enriched housing improved welfare indicators compared to standard sparse setups, and geckos preferred naturalistic, enriched conditions when given a choice in preference tests."
+      },
+      {
+        "q": "Is the three-hide system really enrichment, or is it just husbandry?",
+        "a": "Both. A warm dry hide, a cool dry hide, and a moist hide are the baseline that lets a gecko actually choose its thermal and humidity microclimate while staying hidden, which is itself a form of enrichment (behavioral choice), not just a checklist item. Toys and novelty items don't make up for a missing hide or the wrong temperature."
+      },
+      {
+        "q": "What's the most effective enrichment for a leopard gecko?",
+        "a": "Thermal choice and feeding or hunting presentation, in that order, according to the available research. Tong-feeding, short supervised insect hunts inside the enclosure, and evening feeding timed to match their crepuscular activity all outperform passive novelty items like mirrors."
+      },
+      {
+        "q": "Do leopard geckos need climbing structure?",
+        "a": "Some, but it's secondary to hides and feeding. Low sturdy branches, cork flats or tubes, and stacked slate give a gecko somewhere to rest off the ground, but floor space and a working hide setup matter more than height for this species."
+      },
+      {
+        "q": "Should I give my leopard gecko a dig box?",
+        "a": "It can satisfy natural digging behavior, especially for some females, without converting the whole enclosure floor to loose substrate. Paper towel or tile stays the safest primary floor for beginners, with a separate dig box added if you want to offer it."
+      },
+      {
+        "q": "Do leopard geckos benefit from mirrors or other visual enrichment?",
+        "a": "Not much, according to Bashaw et al. (2016), mirror-based visual enrichment was the weakest-performing type tested. It's not harmful, but it's a low priority compared to thermal and feeding enrichment."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/leopard-gecko-feeding-guide.mdx",
     "slug": "leopard-gecko-feeding-guide",
     "title": "Leopard Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -14211,7 +15603,7 @@
     "faqs": [
       {
         "q": "How often should I feed my leopard gecko?",
-        "a": "It depends on age. Hatchlings and young geckos generally eat daily, juveniles every 1 to 2 days, and adults every 2 to 4 days once the tail has thickened to about the width of the neck. Sources vary on the exact adult number, some say every other day, some say every 5 days, so treat it as a range and let the gecko's body condition guide you rather than a fixed calendar."
+        "a": "It depends on age. Hatchlings and young geckos generally eat daily, juveniles daily or every 1 to 2 days, and adults every 2 to 4 days once the tail has thickened to about the width of the neck. Sources vary on the exact adult number, some say every other day, some say every 5 days, so treat it as a range and let the gecko's body condition guide you rather than a fixed calendar."
       },
       {
         "q": "What do leopard geckos eat?",
@@ -14219,7 +15611,7 @@
       },
       {
         "q": "Do I really need to gut-load and dust the insects?",
-        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for a day or two before offering them, and dust with calcium before most feedings, alternating in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure."
+        "a": "Yes. A leopard gecko gets its nutrition from what its prey ate, not just the prey itself. Feed insects a nutritious diet for 24 to 48 hours before offering them, dust with calcium before most feedings (more often for juveniles), alternate in calcium with D3 a couple times a week if your gecko doesn't get UVB exposure, and add a multivitamin about once a week."
       },
       {
         "q": "Why has my leopard gecko stopped eating?",
@@ -14277,7 +15669,7 @@
       },
       {
         "q": "How often can leopard geckos be handled?",
-        "a": "Start with 5-minute sessions every other day once settled, and cap young geckos at a few short sessions a week. Unlike some reptiles, they don't need daily handling to be a well-adjusted pet."
+        "a": "Start with 5-minute sessions every other day once settled, building toward 10 to 20 minutes as your gecko gets used to it, and cap young geckos at a few short sessions a week. Skip handling during a shed or within about 48 hours of a big meal. Unlike some reptiles, they don't need daily handling to be a well-adjusted pet."
       },
       {
         "q": "Can a leopard gecko really drop its tail?",
@@ -15825,6 +17217,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/neon-tetra-feeding-guide.mdx",
+    "slug": "neon-tetra-feeding-guide",
+    "title": "Neon Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
+    "seoTitle": "Neon Tetra Feeding Guide: Schedule and Diet",
+    "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "date": "2026-08-13",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Neon Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Neon Tetra Disease"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/neon-tetra-feeding.jpg",
+    "imageAlt": "A school of neon tetras feeding on micro pellets near the surface of a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do neon tetras eat?",
+        "a": "A high-quality tropical flake or micro-pellet designed for small fish, supplemented several times a week with small frozen or live foods like baby brine shrimp, daphnia, or finely chopped bloodworms. Because their mouths are only about 1 to 2mm across, flakes should be crushed and pellets should be micro or nano sized, food that's too large just gets taken and spat back out."
+      },
+      {
+        "q": "How often should I feed neon tetras?",
+        "a": "Small amounts twice daily, morning and evening, offering only what they finish in about 2 to 3 minutes. Small, frequent feedings suit their tiny stomachs and fast metabolism, and protect water quality far better than one large feeding would."
+      },
+      {
+        "q": "How do I know if I'm overfeeding my neon tetras?",
+        "a": "If food is still visible in the tank after 2 to 3 minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are genuinely sensitive to both."
+      },
+      {
+        "q": "Why do my neon tetras spit out their food?",
+        "a": "The food is too large. At 1 to 2mm mouths, anything not crushed fine enough gets taken and rejected repeatedly, which functionally starves the fish even though food is going into the tank."
+      },
+      {
+        "q": "What is neon tetra disease and how does feeding relate to it?",
+        "a": "It's caused by a parasite, Pleistophora hyphessobryconis, and it has no cure. If a fish dies of it and its body is scavenged by tankmates, those fish contract it too. Removing any dead or visibly sick fish immediately, not leaving it for others to eat, is the only real control available."
+      },
+      {
+        "q": "Do neon tetras need vitamin supplements?",
+        "a": "No specific supplement is required beyond a varied diet. Color-enhancing and plant-based foods help maintain coloration and immune function on their own."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/neon-tetra-handling-guide.mdx",
     "slug": "neon-tetra-handling-guide",
     "title": "Neon Tetras Aren't Handled, But the School Size Genuinely Isn't Optional",
@@ -16064,6 +17518,68 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/oscar-fish-feeding-guide.mdx",
+    "slug": "oscar-fish-feeding-guide",
+    "title": "Oscar Fish Feeding: Schedule, Diet, and Why Feeder Goldfish Are a Mistake",
+    "seoTitle": "Oscar Fish Feeding Guide: Schedule and Diet",
+    "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species isn't portion size, it's building the diet around live feeder goldfish.",
+    "date": "2026-08-14",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Oscar Fish",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Hole in the Head"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/oscar-fish-feeding.jpg",
+    "imageAlt": "An oscar fish eating a floating cichlid pellet at the surface of its aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should oscars eat as their staple diet?",
+        "a": "A high-quality cichlid pellet, commonly cited at 35 to 45% protein, making up roughly 80% of the diet. Supplement the remaining 20% with frozen or fresh items like shrimp, krill, earthworms, mysis, and occasional plant matter such as peas or zucchini."
+      },
+      {
+        "q": "How often should I feed my oscar?",
+        "a": "Babies under 3 to 4 inches, 3 times daily. Juveniles around 3 to 8 inches, twice daily. Adults over about 8 inches or a year old, once or at most twice daily. Feed only what's eaten in 2 to 3 minutes, and remove anything left over."
+      },
+      {
+        "q": "Can I feed my oscar live feeder goldfish?",
+        "a": "Don't make it a staple. Feeder goldfish and rosy-red minnows commonly carry thiaminase, an enzyme that destroys vitamin B1, along with real parasite and disease risk and excess fat. A thiamine deficiency shows up as lethargy, weight loss, and nerve problems, and it can eventually be fatal."
+      },
+      {
+        "q": "What is Hole-in-the-Head disease and is it caused by diet?",
+        "a": "It's a real degenerative condition (HITH/HLLE) associated with poor water quality and nutritional deficiency, particularly vitamin C, D, and essential fatty acids. Some sources argue water quality is the dominant driver rather than diet specifically, but the safe response covers both: clean water plus a varied, quality diet without feeder goldfish."
+      },
+      {
+        "q": "How much should a healthy oscar's belly look like?",
+        "a": "Slightly rounded, not bulging. Oscars beg constantly and are genuinely easy to overfeed, many keepers fast adults one day a week to help keep portions honest."
+      },
+      {
+        "q": "Do oscars need vitamin supplements?",
+        "a": "Not as a separate product if fed a quality varied diet. Vitamin C and vitamin-fortified foods matter for preventing lateral-line disease, but a balanced pellet plus varied whole foods does more than added powders."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-hikari-cichlid-gold-pellets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/oscar-fish-handling-guide.mdx",
@@ -16899,6 +18415,235 @@
       "climbing-branch-mopani-wood",
       "fine-mist-spray-bottle",
       "feeding-tongs-entomology-forceps-fine-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-cost-guide.mdx",
+    "slug": "quaker-parakeet-cost-guide",
+    "title": "How Much Does a Quaker Parakeet Really Cost?",
+    "seoTitle": "Quaker Parakeet Cost: Full Price Breakdown",
+    "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail matters more here than with almost any other bird on this site before you buy at all: whether it's even legal where you live.",
+    "date": "2026-08-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Monk Parakeet",
+      "Cost",
+      "Pet Ownership Cost",
+      "Bird Legality",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/quaker-parakeet-cost.jpg",
+    "imageAlt": "Quaker parakeet perched beside its cage and accessories, representing the total cost of ownership",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a Quaker parakeet cost?",
+        "a": "$250 to $500 from a reputable breeder for a well-socialized bird. Color mutations, age, and gender affect the exact price."
+      },
+      {
+        "q": "What does a starter Quaker setup cost?",
+        "a": "Roughly $300 to $800. A quality flight cage is the biggest expense on its own, often $150 to $300 or more, plus an initial vet visit, toys, perches, and dishes."
+      },
+      {
+        "q": "What are the ongoing monthly costs for a Quaker parakeet?",
+        "a": "Roughly $40 to $110 a month for pellets, fresh produce, and cage liners, plus a steady rotation of toys. That last item deserves emphasis, Quakers are natural nest-builders and shred and destroy toys quickly, budget for genuinely frequent replacement."
+      },
+      {
+        "q": "How long do Quaker parakeets live, and why does that matter for cost?",
+        "a": "20 to 30 years, sometimes longer, a genuinely long-lived bird on par with the largest parrots already covered on this site despite being considerably smaller and more affordable to acquire. Treat this as the real headline number when deciding whether this species fits your life."
+      },
+      {
+        "q": "What should I check before spending any money on a Quaker parakeet?",
+        "a": "Your state's laws, before you shop, not after you've found a breeder. Quaker parakeets are banned or restricted in a meaningful number of US states, tied to concerns about escaped birds establishing invasive wild colonies, covered in full in the handling guide."
+      }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-wrought-iron-flight-5ft",
+      "bird-food-harrisons-high-potency-fine-1lb",
+      "bird-toy-bbjinronjy-sola-ball-2pc"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-handling-guide.mdx",
+    "slug": "quaker-parakeet-handling-guide",
+    "title": "Is It Legal to Own a Quaker Parakeet? And How to Handle One",
+    "seoTitle": "Quaker Parakeet Legality and Handling Guide",
+    "excerpt": "Quaker parakeets are intelligent, social, genuinely gifted talkers, and also the one bird on this site where a real legal check needs to happen before anything else.",
+    "date": "2026-08-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Monk Parakeet",
+      "Handling",
+      "Bird Legality",
+      "Bird Behavior",
+      "Care Tips"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/quaker-parakeet-handling.jpg",
+    "imageAlt": "Quaker parakeet perched on an owner's hand, showing its bold, social temperament",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a Quaker parakeet?",
+        "a": "It depends entirely on your state. Quakers are restricted or banned in a meaningful number of US states because escaped birds form invasive feral colonies that damage crops and build large stick nests on power infrastructure. Sources genuinely disagree on the exact count, verify with your state wildlife or agriculture agency before buying."
+      },
+      {
+        "q": "Which states commonly ban Quaker parakeets outright?",
+        "a": "California, Georgia, Hawaii, Kansas, Kentucky, Maine, Pennsylvania, Rhode Island, Tennessee, and Wyoming are the most consistently cited outright bans. Colorado, Connecticut, and Wisconsin impose bans with exceptions, and New Jersey, Virginia, New York, and Ohio allow ownership under specific conditions like permits or banding."
+      },
+      {
+        "q": "Are Quaker parakeets good talkers?",
+        "a": "Genuinely, yes, one of the standout traits of this species. Their talking ability and intelligence is often compared favorably to birds many times more expensive, African greys and Amazon parrots among them. Hand-fed Quakers can build large vocabularies, and some start talking before they're even fully weaned."
+      },
+      {
+        "q": "What is unusual about how Quaker parakeets nest?",
+        "a": "They're the only parrot species that builds its own nest rather than nesting in a tree cavity. In the wild, these twig-woven nests can become massive multi-chambered structures shared by many pairs. Pet Quakers retain this instinct fully and will shred and weave any suitable material."
+      },
+      {
+        "q": "Should I give my Quaker parakeet a nest box?",
+        "a": "No. Reserve shredding toys for play areas rather than the cage itself, heavy nest-style shredding material or a permanent nest box inside the cage can trigger hormonal, territorial behavior you don't want to encourage."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-health-issues-guide.mdx",
+    "slug": "quaker-parakeet-health-issues-guide",
+    "title": "Common Quaker Parakeet Health Issues",
+    "seoTitle": "Quaker Parakeet Health Issues: Signs & Causes",
+    "excerpt": "Quaker parakeets are hardy birds, and the health issues that do come up trace back overwhelmingly to diet and social wellbeing, both genuinely within an owner's control.",
+    "date": "2026-08-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Monk Parakeet",
+      "Health",
+      "Fatty Liver Disease",
+      "Feather Plucking",
+      "Bird Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/quaker-parakeet-health-issues.jpg",
+    "imageAlt": "Quaker parakeet undergoing an avian vet exam",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the most common health issue in Quaker parakeets?",
+        "a": "Fatty liver disease (hepatic lipidosis), almost always tied to a seed-heavy, high-fat diet. Watch for lethargy, weight gain, labored breathing, reduced appetite, an overgrown or misshapen beak, and bright green droppings. Quakers are specifically flagged among the parrot species most at risk."
+      },
+      {
+        "q": "Why is my Quaker parakeet plucking its feathers?",
+        "a": "Feather plucking can be behavioral, driven by boredom, insufficient socialization, poor sleep, or stress, or medical, tied to skin irritation or underlying illness. In Quakers specifically it can progress past ordinary plucking into self-inflicted skin damage on the chest and shoulders. Always see a vet first to rule out a medical cause."
+      },
+      {
+        "q": "What is PBFD in Quaker parakeets?",
+        "a": "Psittacine beak and feather disease, a viral disease affecting feathers, beak, and the immune system. There's no cure, which makes early diagnosis and preventing spread to other birds genuinely important. See a vet."
+      },
+      {
+        "q": "Is psittacosis dangerous to people, not just birds?",
+        "a": "Yes. Psittacosis is a bacterial infection spread through droppings and is notably zoonotic, meaning it can pass to people in the household. See a vet, this needs proper diagnosis and treatment for everyone's sake, not just the bird's."
+      },
+      {
+        "q": "How can I prevent most Quaker parakeet health issues?",
+        "a": "An all-seed diet is directly responsible for both fatty liver disease and vitamin deficiencies, arguably the single most impactful thing to get right with this species. Insufficient social interaction and enrichment drives feather plucking in a bird this intelligent and social."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-tank-setup-guide.mdx",
+    "slug": "quaker-parakeet-tank-setup-guide",
+    "title": "Quaker Parakeet Cage Setup",
+    "seoTitle": "Quaker Parakeet Cage Setup Guide",
+    "excerpt": "A Quaker's cage needs to genuinely support an intelligent, assertive, chew-happy bird with a strong instinct to build, and getting the size, bar spacing, and enrichment right matters more than it might for a quieter species.",
+    "date": "2026-08-11",
+    "category": "Birds",
+    "categories": [
+      "Birds"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Monk Parakeet",
+      "Cage Setup",
+      "Enrichment",
+      "Care Tips",
+      "Bird Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/quaker-parakeet-tank-setup.jpg",
+    "imageAlt": "Quaker parakeet cage with varied perches and shreddable foraging toys",
+    "emoji": "🦜",
+    "lastReviewed": "2026-08-11",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size cage does a Quaker parakeet need?",
+        "a": "A reasonable minimum is 24 by 24 by 36 inches, though a wider flight-style cage in the 30 to 36 inch range is a better real-world target for this active bird. Use half to 5/8 inch bar spacing, don't exceed 3/4 inch, and choose heavy-gauge bars, this species is a genuinely strong chewer."
+      },
+      {
+        "q": "What temperature does a Quaker parakeet's cage need?",
+        "a": "Normal comfortable room temperature works well. Avoid drafts and temperature extremes, and never leave a Quaker outdoors once temperatures climb toward 90°F."
+      },
+      {
+        "q": "Does a Quaker parakeet need special lighting?",
+        "a": "Roughly 3 to 4 hours of daily UVB exposure supports healthy vitamin D and calcium metabolism. Provide a cuttlebone as an additional calcium source."
+      },
+      {
+        "q": "Should a Quaker parakeet's cage have a nest box?",
+        "a": "No, never for a pet bird. Doing so reliably triggers unwanted breeding-style hormonal aggression. Provide plenty of shreddable wood and foraging toys instead, this species needs an outlet for its natural building instinct without an enclosed space that encourages nesting behavior."
+      },
+      {
+        "q": "How much out-of-cage time does a Quaker parakeet need?",
+        "a": "Several hours of supervised time daily. This is too intelligent and social a bird to thrive on cage time alone, and out-of-cage time paired with varied perch diameters supports both foot health and mental wellbeing."
+      }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-wrought-iron-flight-5ft",
+      "bird-cuttlebone-penn-plax-2ct",
+      "bird-toy-bbjinronjy-sola-ball-2pc"
     ],
     "factFile": false,
     "animal": null,
@@ -17763,6 +19508,60 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/russian-tortoise-enrichment-guide.mdx",
+    "slug": "russian-tortoise-enrichment-guide",
+    "title": "Russian Tortoise Enrichment: Digging, Grazing, and Exploration",
+    "seoTitle": "Russian Tortoise Enrichment Guide",
+    "excerpt": "Russian tortoises are persistent diggers and grazers, enrichment here means real substrate to dig into, scattered forage instead of a bowl, and a landscape with actual routes through it.",
+    "date": "2026-08-16",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Russian Tortoise",
+      "Enrichment",
+      "Care Tips",
+      "Tortoise Care",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/russian-tortoise-enrichment.jpg",
+    "imageAlt": "A Russian tortoise grazing on scattered greens among rock hides and low obstacles",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a Russian tortoise?",
+        "a": "Deep, diggable substrate for burrowing, forage scattered across the enclosure instead of piled in one spot, and a landscape with hides and low obstacles to actually move through. It never replaces correct UVB, temperature, and enclosure size, those come first."
+      },
+      {
+        "q": "Why is digging so important for this species?",
+        "a": "Russian tortoises are persistent diggers in the wild, and burrows buffer temperature and humidity extremes for them, so digging is closer to a welfare necessity than a nice extra. Substrate at least 6 to 12-plus inches deep in one zone, or a dedicated dig box, gives them a real outlet for it."
+      },
+      {
+        "q": "How should I feed a Russian tortoise for enrichment?",
+        "a": "Scatter feed rather than using a single bowl, placing weeds, dandelion, plantain, clover, and endive in several spots so the tortoise has to search for them, closer to natural grazing. Rotate the exact locations every day or two."
+      },
+      {
+        "q": "Do Russian tortoises benefit from outdoor time?",
+        "a": "Yes, whenever climate and security allow. Outdoor pens give natural sunlight, variable terrain, real soil to dig, and edible vegetation all at once, and many experienced keepers consider secure outdoor housing the gold standard for this species."
+      },
+      {
+        "q": "How often should I change the enclosure layout?",
+        "a": "Move one non-essential item every 1 to 2 weeks rather than redesigning the whole space at once. Keep hides on both the warm and cool ends in place, those provide security and shouldn't be part of the rotation."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/russian-tortoise-handling-guide.mdx",
     "slug": "russian-tortoise-handling-guide",
     "title": "How to Handle a Russian Tortoise",
@@ -18419,6 +20218,40 @@
     "sourceCount": 5
   },
   {
+    "path": "/content/guides/shima-enaga-japans-snow-fairy-bird.mdx",
+    "slug": "shima-enaga-japans-snow-fairy-bird",
+    "title": "The Shima Enaga Is Real: Japan's 'Snow Fairy' Bird, Explained",
+    "seoTitle": "Shima Enaga: Japan's Real-Life Snow Fairy Bird",
+    "excerpt": "The shima enaga looks like a plush toy that learned to fly, but it's a genuine wild bird, a Hokkaido-only subspecies of long-tailed tit that fluffs into a perfect white puff when it gets cold.",
+    "date": "2026-08-12",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Shima Enaga",
+      "Birds",
+      "Japan",
+      "Hokkaido",
+      "Animal Science",
+      "Fun Facts"
+    ],
+    "readTime": 6,
+    "difficulty": null,
+    "image": "/assets/images/shima-enaga-snow-fairy-facts.jpg",
+    "imageAlt": "A shima enaga with a completely white face perched on a bare branch in Hokkaido, Japan",
+    "emoji": "🐦",
+    "lastReviewed": "2026-08-12",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": true,
+    "animal": "Shima Enaga",
+    "myth": "The shima enaga's round, snowball shape is just how the bird always looks.",
+    "truth": "That roundness is a deliberate winter behavior. It fluffs its feathers to trap air for insulation against Hokkaido's cold, and looks noticeably slimmer the rest of the year.",
+    "sourceCount": 2
+  },
+  {
     "path": "/content/guides/slow-loris-the-only-venomous-primate.mdx",
     "slug": "slow-loris-the-only-venomous-primate",
     "title": "The Slow Loris Is the Only Venomous Primate, and the Venom Is Mostly for Other Lorises",
@@ -18814,6 +20647,70 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/sugar-glider-feeding-guide.mdx",
+    "slug": "sugar-glider-feeding-guide",
+    "title": "Sugar Glider Feeding: Schedule, Diet, and the Calcium Ratio That Prevents Paralysis",
+    "seoTitle": "Sugar Glider Feeding Guide: Schedule and Diet",
+    "excerpt": "A sugar glider's wild diet of sap, nectar, pollen, and insects is genuinely hard to replicate in captivity, and getting the calcium-to-phosphorus ratio wrong is the leading cause of illness in this species.",
+    "date": "2026-08-16",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Sugar Glider",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Exotic Pet Diet",
+      "Feeding Schedule",
+      "Metabolic Bone Disease",
+      "Supplementation"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/sugar-glider-feeding.jpg",
+    "imageAlt": "A sugar glider eating a calcium-dusted insect while gripping a branch",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-08-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do sugar gliders eat in captivity?",
+        "a": "VCA's balanced framework is roughly one-third nutritionally balanced pelleted kibble, one-third a nectar or sap-based mixture, and one-third a small number of insects every other day, a calcium-based multivitamin, and a variety of fresh vegetables and fruits. Established formulated diets include Leadbeater's mixture, Bourbon's Modified Leadbeater's (BML), High Protein Wombaroo (HPW), Critter Love Complete, and Exotic Nutrition diets."
+      },
+      {
+        "q": "How much should I feed a sugar glider daily?",
+        "a": "Roughly 15 to 20% of body weight per day, offered in the evening since they're nocturnal. Kibble can stay available at all times, with the fresh, nectar, insect, and produce components offered daily and insects every other day."
+      },
+      {
+        "q": "Why is calcium supplementation so important for sugar gliders?",
+        "a": "Their typical captive diet runs phosphorus-rich and calcium-poor, the opposite of what they need. Left uncorrected, this causes nutritional secondary hyperparathyroidism, better known as metabolic bone disease, where the body leaches calcium from the bones to keep blood calcium stable, and the bones weaken and fracture as a result."
+      },
+      {
+        "q": "What's the correct calcium-to-phosphorus ratio for sugar gliders?",
+        "a": "Roughly 2:1, with some sources citing 1.5:1 to 2:1. In practice this means dusting or gut-loading insects with calcium before feeding and sprinkling a glider-specific multivitamin with calcium on food, some breeder guidance calls for daily dusting, with a vitamin A/D3 supplement dusted on insects and produce twice weekly."
+      },
+      {
+        "q": "What foods should sugar gliders avoid?",
+        "a": "Chocolate, dairy, canned fruit, pesticide-treated produce, and high-phosphorus foods like most seeds, nuts, and beef fed in excess. Also limit foods high in oxalates that block calcium absorption, including raspberries, strawberries, spinach, carrots, and beets. Skip yogurt drops, peanut butter, pasta, rice, and human candy entirely."
+      },
+      {
+        "q": "What are the warning signs of metabolic bone disease in a sugar glider?",
+        "a": "Hind-leg weakness, tremors, or paralysis are emergency signs and need immediate veterinary attention along with an immediate diet correction, not a wait-and-see approach. This progresses from posterior weakness to genuine paralysis and pathological fractures if left uncorrected."
+      }
+    ],
+    "relatedProducts": [
+      "sugar-glider-diet-exotic-nutrition-glider-complete",
+      "calcium-sugar-glider-vitamin-combo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/sugar-glider-handling-guide.mdx",
     "slug": "sugar-glider-handling-guide",
     "title": "How to Handle a Sugar Glider (It Starts With a Pouch, Not Your Hands)",
@@ -19143,6 +21040,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/sulcata-tortoise-feeding-guide.mdx",
+    "slug": "sulcata-tortoise-feeding-guide",
+    "title": "Sulcata Tortoise Feeding: Schedule, Diet, and Why They Stop Eating",
+    "seoTitle": "Sulcata Tortoise Feeding Guide: Schedule and Diet",
+    "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's than a typical salad-eating reptile.",
+    "date": "2026-08-10",
+    "category": "Turtles & Tortoises",
+    "categories": [
+      "Turtles & Tortoises"
+    ],
+    "tags": [
+      "Sulcata Tortoise",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Tortoise Diet",
+      "Feeding Schedule",
+      "Not Eating",
+      "Shell Pyramiding"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sulcata-tortoise-feeding.jpg",
+    "imageAlt": "Sulcata tortoise grazing on grass and hay",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-10",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What should a sulcata tortoise eat most of?",
+        "a": "Grass and grass hay, commonly cited at 75 to 80% or more of the diet. Timothy, orchard, meadow, Bermuda, and barley grass all work well, fresh where possible, hay as the everyday and winter backup. The rest comes from edible weeds, leaves, and flowers, dandelion, hibiscus, and prickly pear pads are good choices, with a high-fiber tortoise pellet rounding things out in modest amounts."
+      },
+      {
+        "q": "How often should I feed a sulcata tortoise?",
+        "a": "Grass and hay should be available essentially all the time, sulcatas are grazers, not meal-eaters. Hatchlings get chopped, softer greens daily. Past about 6 months, many keepers shift supplemental feedings to every other day, and adults commonly move to 3 to 4 times a week for greens and vegetables, always with hay in the background."
+      },
+      {
+        "q": "Can sulcata tortoises eat fruit or animal protein?",
+        "a": "Skip animal protein entirely, no dog or cat food, no meat, it causes progressive kidney and liver damage over time and is considered a leading cause of premature death in captive sulcatas. Fruit should be avoided or offered only as a rare, tiny treat, the sugar disrupts the gut bacteria this species relies on to digest fiber."
+      },
+      {
+        "q": "What actually causes shell pyramiding in sulcata tortoises?",
+        "a": "It's genuinely debated. One well-known study found low humidity during growth was the key driver, with dietary protein playing only a minor role, though that study's methodology has itself been criticized. A separate study found supplemental night heat and faster growth rates caused pyramiding even when humidity stayed constant. Overfeeding and low humidity during the growing years are both worth taking seriously rather than blaming diet alone."
+      },
+      {
+        "q": "Why has my sulcata tortoise stopped eating?",
+        "a": "The most common cause by far is an enclosure that isn't warm enough, sulcatas need real heat to digest at all. Dehydration, mouth rot, vitamin A deficiency, bladder stones, respiratory infection, and parasites are other documented causes, along with ordinary stress from a new environment."
+      },
+      {
+        "q": "How long can a sulcata tortoise go without eating before it's a real problem?",
+        "a": "A tortoise that continues refusing food for more than about a week, or shows other signs of illness, needs a vet. Parasite-driven appetite loss in particular can take months to show up, appetite loss is often the very first sign."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-tortoise-turtle-herbivorous-sulcata"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/sulcata-tortoise-handling-guide.mdx",
@@ -20933,6 +22893,74 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/veiled-chameleon-feeding-guide.mdx",
+    "slug": "veiled-chameleon-feeding-guide",
+    "title": "Veiled Chameleon Feeding: Schedule, Diet, and the Supplement Schedule That Actually Matters",
+    "seoTitle": "Veiled Chameleon Feeding Guide: Schedule and Diet",
+    "excerpt": "Veiled chameleon feeding is really a two-part job: what you feed matters, but how you supplement it matters just as much, and getting that schedule right is the difference between a healthy chameleon and one headed toward metabolic bone disease.",
+    "date": "2026-08-17",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Veiled Chameleon",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Reptile Diet",
+      "Feeding Schedule",
+      "Metabolic Bone Disease",
+      "Supplementation"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-feeding.jpg",
+    "imageAlt": "A veiled chameleon catching a calcium-dusted cricket with its tongue",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-17",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do veiled chameleons eat?",
+        "a": "This species is primarily insectivorous. Build the diet around a genuine variety, crickets, dubia roaches, black soldier fly larvae, superworms, silkworms, and locusts all work well as regular staples. Hornworms, waxworms, and butterworms are higher in fat or water content and belong in treat territory, no more than about twice a week. Veiled chameleons will also take some plant matter, though it stays a minor addition rather than a requirement."
+      },
+      {
+        "q": "How often should I feed a veiled chameleon?",
+        "a": "Babies (1 to 3 months) eat as much as they'll eat, roughly twice daily. Juveniles (3 to 6 months) eat around 10 to 12 small crickets daily. Sub-adults (6 to 12 months) eat 8 to 10 medium crickets daily or every other day. Adults (12-plus months) eat roughly 4 to 6 feeders every other day."
+      },
+      {
+        "q": "What is the correct calcium and vitamin schedule for a veiled chameleon?",
+        "a": "Dust feeders with plain calcium (no D3, no phosphorus) at nearly every feeding. Use a calcium with D3 supplement about every other week, and a multivitamin with a real vitamin A source on roughly the same twice-monthly schedule. D3 specifically can become toxic in excess, which is why it's dosed less often than plain calcium."
+      },
+      {
+        "q": "Why is supplementation so important for this species?",
+        "a": "Inadequate calcium, D3, or UVB leads directly to metabolic bone disease, one of the most commonly seen conditions in captive reptiles generally. A controlled study of 56 hatchling veiled chameleons found that supplementing calcium and vitamin A prevented the condition, independently of additional UVB and dietary cholecalciferol."
+      },
+      {
+        "q": "Can I over-supplement a veiled chameleon?",
+        "a": "Yes, and it's a real risk. Over-supplementing vitamin A or D3 can cause throat swelling (gular edema) and organ stress, which is exactly why the twice-monthly schedule for those two supplements matters, more isn't automatically safer here."
+      },
+      {
+        "q": "How do veiled chameleons drink water?",
+        "a": "They generally don't recognize still water sitting in a bowl as something to drink, they respond to movement. Hydration comes from a dripper system and regular misting of leaves and branches, not a water dish."
+      },
+      {
+        "q": "Why does overfeeding matter more for female veiled chameleons?",
+        "a": "Overfeeding females specifically drives excessive, frequent egg-laying even without a male present, which depletes calcium reserves and raises the risk of egg-binding, a genuine emergency."
+      }
+    ],
+    "relatedProducts": [
+      "calcium-repashy-plus-6oz",
+      "gutload-flukers-orange-cube-cricket-diet-12oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/veiled-chameleon-ferret-hognose-overview.mdx",
     "slug": "veiled-chameleon-ferret-hognose-overview",
     "title": "Three Pets Whose Drama Isn't the Real Story",
@@ -22565,6 +24593,43 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13",
+    "title": "Chronicles of Dex the Bearded Dragon: Gotcha Day (Part 13)",
+    "seoTitle": null,
+    "excerpt": "On the one day a year Dex actually notices, Mike marks his Gotcha Day with a small stone turret, a rare treat, and extra time under the lamp, and Dex spends the afternoon quietly measuring just how much has changed since that first cardboard scented day.",
+    "date": "2026-08-17",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "gotcha-day"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron13.jpg",
+    "imageAlt": "A bearded dragon perched contentedly inside a small ceramic turret ornament, warmed by terrarium lamp light.",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-17",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
+  },
+  {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6.mdx",
     "slug": "chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6",
     "title": "Chronicles of Dex the Bearded Dragon: The Afternoon in the Grass (Part 6)",
@@ -23179,6 +25244,43 @@
     "imageAlt": "A close-up portrait of a lop-eared rabbit sitting upright on a worn wooden floor, expression radiating imperious calm",
     "emoji": "📖",
     "lastReviewed": "2026-06-30",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-first-afternoon-part-13.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-first-afternoon-part-13",
+    "title": "Chronicles of Otis the Bunny: The First Afternoon (Part 13)",
+    "seoTitle": null,
+    "excerpt": "A particular slant of afternoon light sends Otis back to his very first day in the garden, back before the lettuce bed, the hydrangea's shade, and the clover along the fence line were his to claim. What he finds waiting there is not embarrassment but fondness for the smaller, uncertain rabbit he used to be.",
+    "date": "2026-08-17",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "coming-of-age"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron13.jpg",
+    "imageAlt": "A house rabbit sitting very still in a stripe of low golden afternoon light beside a garden lettuce bed, with a leash trailing loose behind him and a hydrangea's shade just visible nearby",
+    "emoji": "📖",
+    "lastReviewed": "2026-08-17",
     "canonicalUrl": null,
     "faqs": [],
     "relatedProducts": [],

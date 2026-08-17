@@ -202,6 +202,10 @@ const staticPages = [
   '/quiz/knowledge/',
   '/glossary/',
   '/exotic-pet-laws/',
+  '/care-packages/',
+  '/care-packages/store/',
+  '/care-packages/why-we-exist/',
+  '/care-packages/faq/',
 
   // One page per animal in the legal matrix. Read from the dataset for the same
   // reason prerender.mjs does: a hand-copied list goes stale the moment a new

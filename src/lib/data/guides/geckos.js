@@ -299,18 +299,18 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
       ],
     },
     sections: {
-      housing: `A 36x18x18" enclosure is the current minimum recommendation for a single adult leopard gecko. The old standard of a 20-gallon tank is now considered inadequate by most experienced keepers and veterinarians. Larger enclosures allow for better thermal gradients and more enrichment opportunities, both of which are critical for long-term health.
+      housing: `A 36x18x18" enclosure is the current minimum recommendation for a single adult leopard gecko. The old standard of a 20-gallon tank is now considered inadequate by most experienced keepers and veterinarians. Larger enclosures allow for better thermal gradients and more enrichment opportunities, both of which are critical for long-term health. Paper towel or tile is the safest substrate for beginners; never use calcium sand or other loose sand products.
 
-The thermal gradient is essential: provide a warm hide with a belly-heat surface temperature of 88 to 92 degrees F on one end, and a cool hide at 72 to 76 degrees F on the other. Leopard geckos are thermoconformers - they regulate their body temperature by moving between warm and cool zones. Without a proper gradient, they cannot digest food efficiently or support immune function.
+The thermal gradient is essential: provide a warm hide with a belly-heat surface temperature of 88 to 92 degrees F on one end, and a cool hide at 72 to 78 degrees F on the other. Leopard geckos are thermoconformers - they regulate their body temperature by moving between warm and cool zones. Without a proper gradient, they cannot digest food efficiently or support immune function.
 
 An under-tank heater (UTH) on a quality thermostat is the preferred heat source. Place it under one-third of the enclosure and verify temperatures with an infrared temperature gun, not a stick-on thermometer. Accurate temperature measurement is one of the most important aspects of leopard gecko husbandry.
 
-A third hide - the moist hide - is critical for shedding. Fill a hide box with damp sphagnum moss and place it at the warm end. Leopard geckos will use it during pre-shed to soften their skin and ensure a complete, clean shed. Without a moist hide, stuck shed on toes and the tail tip is common and can become a serious welfare issue.
+A third hide - the moist hide - is critical for shedding. Fill a hide box with damp sphagnum moss and place it at the warm end. Leopard geckos will use it during pre-shed to soften their skin and ensure a complete, clean shed. Without a moist hide, stuck shed on toes and the tail tip is common and can become a serious welfare issue. Keep overall enclosure humidity around 30 to 40%, the moist hide itself runs much higher, roughly 70 to 80%, but only inside the hide, not the whole tank.
 
 Low-output UVB lighting (T5 HO 5% or 6%, on a 10 to 12 hour cycle) is now recommended by the leading reptile veterinary community. While leopard geckos survived for decades without UVB, research shows they use and benefit from low-level exposure, particularly for calcium metabolism and circadian rhythm support.`,
       diet: `Leopard geckos are strict insectivores - they eat live invertebrates exclusively. The core of a healthy diet includes dubia roaches, crickets, and black soldier fly larvae (BSFL/CalciWorms). Mealworms can be offered but should not be the primary feeder due to their high fat content and chitinous exoskeleton, which some geckos have difficulty digesting in large quantities.
 
-Feed juveniles (under 4 to 6 months) daily, offering as many insects as they will eat in 15 minutes. Feed adults every other day, offering 2 to 6 insects depending on the gecko's size. Always use feeding tongs to avoid accidentally training the gecko to associate your fingers with food.
+Hatchlings and young juveniles eat daily, older juveniles can move to daily or every 1 to 2 days, and adults, once the tail is about as thick as the neck, do best every 2 to 4 days, adjusted by body condition. Offer only as many insects as they'll clear in about 15 minutes, and always use feeding tongs to avoid accidentally training the gecko to associate your fingers with food.
 
 Gut-loading feeder insects is non-negotiable. Feed insects a nutritious diet (fresh vegetables, commercial gut-load powder) for 24 to 48 hours before offering them. A gut-loaded cricket is dramatically more nutritious than one kept on cardboard. The gecko's nutrition is only as good as what its prey was eating.
 

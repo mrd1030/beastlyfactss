@@ -44,6 +44,7 @@ export const fishGuides = [
       { q: "How big do angelfish get?", a: "About 6 inches in body length, but their tall dorsal and anal fins can bring their total height to 8 to 10 inches - which is exactly why they need a tall tank rather than just a wide one." },
       { q: "Do angelfish pair for life?", a: "Angelfish that successfully pair off often form long-term monogamous bonds and cooperatively guard their eggs and fry, one of the more elaborate parenting behaviors seen in commonly kept aquarium fish." },
       { q: "What tank size do angelfish need?", a: "A minimum of 29 to 30 gallons for a single pair, with height of 18 inches or more being just as important as overall footprint because of their tall, laterally compressed body shape." },
+      { q: "Are angelfish good pets for beginners?", a: "Not the best first fish. Angelfish need a genuinely tall tank (18+ inches, 29-30 gallons minimum), can turn territorial once paired off, and will eventually eat small tankmates like neon tetras once grown. They're a great step-up fish for someone who's kept a community tank successfully first, rather than a true beginner species." },
     ],
   },
   {
@@ -94,6 +95,7 @@ export const fishGuides = [
       { q: "Why is my betta not eating?", a: "The most common causes are constipation from overfeeding, stress from recent water changes or new tankmates, water temperature that's too cold, or the early stages of illness. Check your heater is holding steady at 78-80°F first, since a chilled betta commonly refuses food, then evaluate water quality and recent tank changes." },
       { q: "How long do bettas live?", a: "2 to 4 years is typical, with some bettas reaching 5 years under excellent care. Consistent warm water temperature, a properly cycled and filtered tank, and a varied diet are the biggest factors in reaching the upper end of that range." },
       { q: "Do bettas need a heater?", a: "Yes, without exception. Bettas are tropical fish native to warm Southeast Asian waters, and room temperature in most homes is too cold for them. A stable 78-80°F is essential for their immune function, digestion, and overall activity level." },
+      { q: "Are betta fish good pets for beginners?", a: "Yes, but not the way they're usually sold. A betta kept in an unheated bowl is a stressed, short-lived fish, the beginner-friendly reputation only holds true with a real 5+ gallon heated, filtered tank. Get that right and bettas are genuinely low-maintenance, colorful, and interactive." },
     ],
   },
   {
@@ -143,6 +145,7 @@ export const fishGuides = [
       { q: "What substrate is safe for corydoras?", a: "Soft sand or smooth, fine gravel only. Sharp or rough gravel damages their sensitive barbels, the whisker-like feelers around their mouth that they rely on to locate food." },
       { q: "Are corydoras aggressive?", a: "No - they're among the most peaceful community fish available and make excellent tankmates for nearly any non-aggressive fish species." },
       { q: "How long do corydoras live?", a: "5 to 10 years is typical with good care, and some especially well-kept individuals have reached 15 years, which is unusually long for a small aquarium fish." },
+      { q: "Are corydoras catfish good pets for beginners?", a: "Yes, genuinely. They're peaceful, hardy, and among the most beginner-friendly community fish available, as long as you commit to a proper school of six or more and soft substrate for their barbels. The main mistake beginners make is buying just one or two, which leaves them visibly stressed." },
     ],
   },
   {
@@ -168,16 +171,16 @@ export const fishGuides = [
       ],
     },
     sections: {
-      housing: "A single fancy goldfish needs at least 20 gallons, with 10 additional gallons for each fish added. Common and comet goldfish grow considerably larger and are much better suited to an outdoor pond or a tank of 55 gallons or more. Goldfish are cold-water fish and generally do not need a heater - room temperature in the 65 to 72 degree F range suits them well, though they should never be mixed with tropical species that require heat. Because goldfish produce a lot of waste, strong filtration (a canister filter is ideal) is essential regardless of tank size. Bowls should never be used under any circumstances.",
-      diet: "Goldfish are omnivores and do best on a high-quality goldfish-specific pellet as their staple food. Blanched vegetables - shelled peas, zucchini, and leafy greens - are important for digestion and help prevent the swim bladder problems goldfish are prone to. Occasional treats of bloodworms or brine shrimp add variety. Feed small portions once or twice a day; goldfish will beg constantly but are prone to overeating, bloating, and constipation if fed too much or given only low-quality flake food.",
+      housing: "A single fancy goldfish needs at least 20 gallons, with 10 additional gallons for each fish added. Common and comet goldfish grow considerably larger, need at least 30 gallons for one and more for each additional, and are much better suited to an outdoor pond long term. Goldfish are cold-water fish and generally do not need a heater at typical room temperatures, comfortable in the 65 to 75 degree F range, though they should never be mixed with tropical species that require heat. Because goldfish produce a lot of waste, strong filtration is essential regardless of tank size, ideally a canister filter turning over the tank's full volume at least 4 times an hour. Fully cycle the tank before adding fish, ammonia and nitrite both need to read 0 before goldfish go in. Bowls should never be used under any circumstances.",
+      diet: "Goldfish are omnivores and do best on a high-quality sinking goldfish-specific pellet as their staple food. Blanched vegetables - shelled peas, zucchini, and leafy greens - are important for digestion and help prevent the swim bladder problems goldfish are prone to. Occasional treats of bloodworms or brine shrimp add variety. Feed small portions once or twice a day; goldfish will beg constantly but are prone to overeating, bloating, and constipation if fed too much or given only low-quality flake food.",
       enrichment: "Goldfish are highly food-motivated and genuinely trainable - many keepers teach them tricks like pushing a mini soccer ball, swimming through hoops, or following a finger around the glass. They enjoy foraging for pellets among smooth river rock and will happily graze on live plants as part of their natural feeding behavior (choose either plastic decor or plant varieties you don't mind them nibbling). Fancy varieties with rounded bodies are comparatively poor swimmers, so generous open swimming space matters more than clutter. Goldfish are also social and do well kept in same-species groups.",
       health: "Swim bladder disorder is especially common in round-bodied fancy varieties and is often linked to diet and genetics. Ammonia and nitrite poisoning from undersized, under-filtered tanks is the single most common cause of premature goldfish death, since keepers frequently underestimate how much waste they produce. Ich and fin rot both follow poor water quality. Avoid cheap 'feeder' goldfish, which are typically bred for low cost rather than health or longevity. Weekly water testing and 20 to 30 percent water changes are essential maintenance, not optional extras.",
       checklist: [
-        "20+ gallon tank per fancy goldfish (pond or 55+ gallons for common/comet)",
-        "Strong filtration (canister filter recommended)",
+        "20+ gallon tank per fancy goldfish (30+ gallons or a pond for common/comet)",
+        "Strong filtration, at least 4x turnover per hour (canister filter recommended)",
         "No heater needed (cold-water fish)",
         "Smooth gravel or sand substrate",
-        "Goldfish-specific pellets",
+        "Sinking goldfish-specific pellets",
         "Blanched vegetables (peas, zucchini, leafy greens)",
         "Occasional bloodworms or brine shrimp",
         "Water test kit and dechlorinator",
@@ -187,10 +190,11 @@ export const fishGuides = [
     },
     faqs: [
       { q: "Do goldfish really only remember 3 seconds?", a: "No, this is a widespread myth. Research has shown goldfish retain memories for months, can learn to navigate mazes, associate feeding times with cues, and be trained to perform simple tricks. The 3-second myth likely persists partly to excuse keeping them in inadequate, unstimulating bowls." },
-      { q: "How big of a tank does a goldfish need?", a: "At minimum, 20 gallons for a single fancy goldfish, with 10 more gallons for each additional fish. Common and comet goldfish grow much larger and are better suited to a pond or a tank of 55 gallons or more - they are not appropriate long-term for standard aquariums." },
+      { q: "How big of a tank does a goldfish need?", a: "At minimum, 20 gallons for a single fancy goldfish, with 10 more gallons for each additional fish. Common and comet goldfish grow much larger, need at least 30 gallons for one and more per additional fish, and are better suited to a pond long term rather than a standard aquarium." },
       { q: "Can goldfish live in a bowl?", a: "No. Bowls lack adequate oxygen exchange, filtration, and swimming space, and a goldfish kept in one will become stunted and stressed rather than staying conveniently small. This is one of the most damaging misconceptions in pet care and a major cause of shortened goldfish lifespans." },
       { q: "What do goldfish eat?", a: "A high-quality goldfish pellet should form the base of their diet, supplemented regularly with blanched vegetables like peas and zucchini, which support healthy digestion. Occasional bloodworms or brine shrimp add variety. Avoid overfeeding, since goldfish beg constantly regardless of how full they are." },
       { q: "How long do goldfish live?", a: "10 to 15 years is typical in a well-maintained tank, and goldfish kept in spacious outdoor ponds with excellent water quality have been documented living 20 to 30 years or more. Tank size and water quality are the two biggest factors separating a short goldfish lifespan from a long one." },
+      { q: "Are goldfish good pets for beginners?", a: "Yes, but the bowl reputation is exactly backwards. A goldfish kept in a bowl isn't a beginner setup, it's a welfare problem that produces a stunted, stressed fish. A properly filtered 20+ gallon tank makes goldfish a genuinely easy, long-lived, trainable first fish." },
     ],
   },
   {
@@ -238,6 +242,7 @@ export const fishGuides = [
       { q: "How many guppies should I keep together?", a: "At least 6, with a ratio of about 2 to 3 females for every male. This ratio reduces the constant mating pursuit that a 1:1 or male-heavy ratio puts on individual females, which can otherwise cause visible stress." },
       { q: "What water temperature do guppies need?", a: "72 to 82°F, with roughly 78°F being ideal. Guppies are tropical fish and need a heater in the vast majority of home aquariums." },
       { q: "How long do guppies live?", a: "2 to 3 years is typical with good water quality, appropriate temperature, and a varied diet." },
+      { q: "Are guppies good pets for beginners?", a: "Yes, they're one of the easiest community fish to keep. The one thing beginners underestimate is how fast they breed, a single female can produce a new brood roughly every four weeks, so have a population plan before you start." },
     ],
   },
   {
@@ -289,6 +294,7 @@ export const fishGuides = [
       { q: "Can koi live in an aquarium?", a: "Only temporarily as juveniles. Adult koi need thousands of gallons of space and are not suitable for long-term life in a standard aquarium - they belong in an outdoor pond built to accommodate their eventual size." },
       { q: "Do koi recognize their owners?", a: "Yes. Koi learn to associate specific people with feeding time and will often approach a familiar keeper at the pond's edge, sometimes even accepting food from an open hand." },
       { q: "What do koi eat in winter?", a: "Feeding should stop once water temperature drops below roughly 50°F, since their metabolism slows to the point where they can no longer properly digest food. Resume feeding gradually with easily digestible, lower-protein food as the water warms back up in spring." },
+      { q: "Are koi good pets for apartment living?", a: "No, not even close. Koi need a genuine outdoor pond of 1,000+ gallons and 3+ feet deep, they are not an aquarium fish at any life stage past being a juvenile. If you don't have yard space for a real pond, this isn't a fish you can keep long-term." },
     ],
   },
   {
@@ -338,6 +344,7 @@ export const fishGuides = [
       { q: "How many neon tetras should I get?", a: "At least 6, ideally 10 or more if tank size allows. They are intensely schooling fish and show noticeably better color and confidence in larger groups." },
       { q: "Why does my neon tetra's stripe look dull at night?", a: "This is normal - their signature iridescent blue stripe is produced by reflective cells that dim while the fish sleeps, so a faded stripe after dark is a natural nocturnal change, not a sign of illness." },
       { q: "How long do neon tetras live?", a: "5 to 8 years is achievable with stable water quality and a fully cycled, low-stress tank, though many pet-store neons live far shorter lives due to stress before and immediately after purchase." },
+      { q: "Are neon tetras good pets for beginners?", a: "With one big caveat: only in a fully cycled tank. Neon tetras are inexpensive and peaceful, which makes them a common first fish, but they're unusually sensitive to ammonia and nitrite, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner's neons dying within days." },
     ],
   },
   {
@@ -386,6 +393,7 @@ export const fishGuides = [
       { q: "What size tank does an oscar need?", a: "A minimum of 55 gallons for one juvenile, growing to 75 gallons or more as an adult. Oscars are frequently sold small into undersized tanks, which is one of the most common welfare problems in the species." },
       { q: "Can oscars live with other fish?", a: "Only with similarly sized, robust tankmates such as larger catfish, silver dollars, or other comparably sized Central and South American cichlids. Small or slow fish will be eaten or bullied." },
       { q: "What is hole-in-the-head disease?", a: "A condition causing pitting lesions on the head and lateral line, strongly associated with poor water quality, old-tank syndrome, and nutritional gaps, especially an all-feeder-fish diet. Prevention centers on strong filtration, regular water changes, and a varied high-quality diet." },
+      { q: "Are oscars good pets for beginners?", a: "Not really, despite how small they look in the pet store. An oscar needs 55 to 75+ gallons as an adult, produces a heavy bioload, and can live 10 to 20 years. They're better suited to someone who's already run a smaller tank successfully and is ready to commit to the space and filtration a big, intelligent cichlid needs." },
     ],
   },
 ];

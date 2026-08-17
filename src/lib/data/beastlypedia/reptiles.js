@@ -118,7 +118,7 @@ export const reptileBeastfiles = [
       'Among the heaviest-bodied vipers in the world',
     ],
     conservation:
-      'Least Concern, with a wide range, though it is affected by rainforest clearance and is killed on sight in some areas.',
+      'Vulnerable, with a decreasing population (IUCN), pressured by rainforest clearance and killed on sight in some areas.',
     funFacts: [
       'It holds on after biting rather than striking and releasing, which is unusual for a viper.',
       'Its camouflage is so effective that the main danger to people is stepping on one that was in plain view.',
@@ -130,7 +130,7 @@ export const reptileBeastfiles = [
     secondaryImage: '/assets/beastlypedia/gaboon-viper-secondary.jpg',
     secondaryAlt:
       'Head-on view of a Gaboon viper showing its broad triangular head and small nasal horns',
-    relatedFiles: [],
+    relatedFiles: ['gaboon-viper-longest-fangs-any-snake'],
   },
   {
     id: 'green-anaconda',

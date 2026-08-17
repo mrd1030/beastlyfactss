@@ -5,6 +5,7 @@ export { default as Figure } from './Figure';
 export { default as FunFact } from './FunFact';
 export { default as KeyTakeaway } from './KeyTakeaway';
 export { default as AffiliateLink } from './AffiliateLink';
+export { default as CarePackageBlock } from './CarePackageBlock';
 export { default as AffiliateDisclosure } from './AffiliateDisclosure';
 export { default as ProsCons } from './ProsCons';
 export { default as ComparisonTable } from './ComparisonTable';

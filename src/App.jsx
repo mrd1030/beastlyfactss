@@ -47,6 +47,10 @@ const Gear = lazy(() => import('@/pages/Gear'));
 const FactFiles = lazy(() => import('@/pages/FactFiles'));
 const Chronicles = lazy(() => import('@/pages/Chronicles'));
 const Gallery = lazy(() => import('@/pages/Gallery'));
+const CarePackages = lazy(() => import('@/pages/CarePackages'));
+const CarePackagesStore = lazy(() => import('@/pages/CarePackagesStore'));
+const CarePackagesWhyWeExist = lazy(() => import('@/pages/CarePackagesWhyWeExist'));
+const CarePackagesFaq = lazy(() => import('@/pages/CarePackagesFaq'));
 
 function RedirectGuideFilter() {
   const { guideFilter } = useParams();
@@ -129,6 +133,10 @@ const AuthenticatedApp = () => {
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/exotic-pet-laws" element={<ExoticPetLaws />} />
           <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
+          <Route path="/care-packages" element={<CarePackages />} />
+          <Route path="/care-packages/store" element={<CarePackagesStore />} />
+          <Route path="/care-packages/why-we-exist" element={<CarePackagesWhyWeExist />} />
+          <Route path="/care-packages/faq" element={<CarePackagesFaq />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

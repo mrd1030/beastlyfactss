@@ -229,6 +229,10 @@ const STATIC_ROUTES = [
   ...GUIDE_IDS.map(id => `/guides/${id}`),
   '/exotic-pet-laws',
   ...LEGAL_ANIMAL_IDS.map(id => `/exotic-pet-laws/${id}`),
+  '/care-packages',
+  '/care-packages/store',
+  '/care-packages/why-we-exist',
+  '/care-packages/faq',
 ];
 
 // Per-attempt deadlines, escalating. A flat 45s was the single biggest cost in

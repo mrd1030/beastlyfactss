@@ -45,6 +45,17 @@
       ]
     },
     {
+      "slug": "ackie-monitor-feeding-guide",
+      "title": "Ackie Monitor Feeding Guide: Schedule and Diet",
+      "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed them like they're a bigger, meatier lizard than they actually are.",
+      "date": "2026-08-10",
+      "image": "/assets/images/ackie-monitor-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "ackie-monitor-handling-guide",
       "title": "How to Handle an Ackie Monitor Safely",
       "excerpt": "Ackie monitors are a genuinely different kind of lizard to interact with compared to the sit-and-bask species already covered on this site, expect a completely different level of energy than a bearded dragon or blue-tongued skink.",
@@ -138,6 +149,17 @@
       "excerpt": "African grey parrots are genuinely one of the most expensive pets covered on this site, and the purchase price is really just the entry fee for a decades-long commitment.",
       "date": "2026-07-17",
       "image": "/assets/images/african-grey-parrot-cost.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "african-grey-parrot-feeding-guide",
+      "title": "African Grey Parrot Feeding Guide: Schedule and Diet",
+      "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more consequential than it is for most pet birds: this species is specifically prone to calcium deficiency.",
+      "date": "2026-08-10",
+      "image": "/assets/images/african-grey-parrot-feeding.jpg",
       "category": "Birds",
       "categories": [
         "Birds"
@@ -320,6 +342,28 @@
       ]
     },
     {
+      "slug": "axolotl-enrichment-guide",
+      "title": "Axolotl Enrichment Guide",
+      "excerpt": "Axolotl enrichment isn't about toys, it's about giving choice: multiple smooth hides, plant cover, and food they have to search for instead of a bowl they wait next to.",
+      "date": "2026-08-14",
+      "image": "/assets/images/axolotl-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
+      "slug": "axolotl-feeding-guide",
+      "title": "Axolotl Feeding Guide: Schedule and Diet",
+      "excerpt": "Axolotl feeding comes down to one central fact about how this species eats: it gulps its food whole, and that single detail shapes almost every rule on this page, including the one about your tank floor.",
+      "date": "2026-08-13",
+      "image": "/assets/images/axolotl-feeding.jpg",
+      "category": "Amphibians",
+      "categories": [
+        "Amphibians"
+      ]
+    },
+    {
       "slug": "axolotl-handling-guide",
       "title": "Axolotl Handling: What to Know",
       "excerpt": "Axolotls are not a hands-on pet, and this isn't a preference, it's about their physical vulnerability. Handling should be minimal and reserved for genuine necessity, not casual interaction.",
@@ -449,6 +493,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-enrichment-guide",
+      "title": "Bearded Dragon Enrichment Guide",
+      "excerpt": "Enrichment gives a bearded dragon real choices, climbing, digging, hunting, but it only works once heat, UVB, and space are already correct. This covers what actually moves the needle and what's just clutter.",
+      "date": "2026-08-17",
+      "image": "/assets/images/bearded-dragon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -666,6 +721,17 @@
       "excerpt": "Boa constrictors are genuinely affordable at the entry level, and most of what's sold as a boa in the pet trade is a specific type worth understanding before you buy, since it affects both price and what you're actually getting.",
       "date": "2026-07-18",
       "image": "/assets/images/boa-constrictor-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "boa-constrictor-feeding-guide",
+      "title": "Boa Constrictor Feeding Guide: Schedule and Diet",
+      "excerpt": "Boa constrictor feeding is genuinely simple in principle, whole prey covers this species' nutritional needs completely, the real skill is getting size and frequency right as your snake matures.",
+      "date": "2026-08-14",
+      "image": "/assets/images/boa-constrictor-feeding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -1123,6 +1189,17 @@
       ]
     },
     {
+      "slug": "cockatoo-feeding-guide",
+      "title": "Cockatoo Feeding Guide: Schedule and Diet",
+      "excerpt": "Cockatoo feeding comes down to a ratio worth memorizing: pellets should dominate the bowl, and seeds should stay firmly in treat territory, not the other way around.",
+      "date": "2026-08-15",
+      "image": "/assets/images/cockatoo-feeding.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
       "slug": "cockatoo-handling-guide",
       "title": "How to Handle a Cockatoo Safely",
       "excerpt": "Cockatoos are extremely social, intelligent, and deeply bonded to their people, genuinely affectionate as babies. That same intensity is also exactly what makes this species one of the most difficult parrots to keep long-term.",
@@ -1288,6 +1365,17 @@
       ]
     },
     {
+      "slug": "corydoras-catfish-feeding-guide",
+      "title": "Corydoras Catfish Feeding Guide: Schedule and Diet",
+      "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
+      "date": "2026-08-10",
+      "image": "/assets/images/corydoras-catfish-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
       "slug": "corydoras-catfish-handling-guide",
       "title": "Corydoras Catfish Behavior and Handling Guide",
       "excerpt": "Corydoras catfish are an observation animal, not a hands-on one. What actually matters with this species is its role in a tank, and that role is a very different one from a centerpiece fish like the oscar.",
@@ -1329,6 +1417,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "crested-gecko-enrichment-guide",
+      "title": "Crested Gecko Enrichment Guide",
+      "excerpt": "Crested geckos are arboreal, so enrichment here is mostly vertical: a real climbing network, cover at height, and food they have to find instead of a dish on the floor.",
+      "date": "2026-08-15",
+      "image": "/assets/images/crested-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1415,6 +1514,17 @@
       "excerpt": "Degus are genuinely affordable individually, and the real budgeting point with this species is that 'individually' isn't really how you should be thinking about the purchase at all.",
       "date": "2026-08-08",
       "image": "/assets/images/degu-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "degu-feeding-guide",
+      "title": "Degu Feeding Guide: Schedule and Diet",
+      "excerpt": "Degu feeding really comes down to one rule that matters more than anything else: sugar is genuinely dangerous for this species, not just something to limit.",
+      "date": "2026-08-10",
+      "image": "/assets/images/degu-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -1516,6 +1626,17 @@
       "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary invertebrate reputation doesn't come with a scary price tag.",
       "date": "2026-07-31",
       "image": "/assets/images/emperor-scorpion-cost.jpg",
+      "category": "Invertebrates",
+      "categories": [
+        "Invertebrates"
+      ]
+    },
+    {
+      "slug": "emperor-scorpion-feeding-guide",
+      "title": "Emperor Scorpion Feeding Guide: Schedule and Diet",
+      "excerpt": "Emperor scorpion feeding is genuinely low-effort once you internalize the one fact that changes everything about how often you should be doing it: this species can comfortably go far longer between meals than most keepers assume.",
+      "date": "2026-08-16",
+      "image": "/assets/images/emperor-scorpion-feeding.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
@@ -1720,6 +1841,50 @@
       ]
     },
     {
+      "slug": "fire-skink-cost-guide",
+      "title": "Fire Skink Cost: Full Price Breakdown",
+      "excerpt": "Fire skinks are genuinely affordable, and the price gap between captive-bred and wild-caught animals is worth paying attention to for reasons beyond just cost.",
+      "date": "2026-08-11",
+      "image": "/assets/images/fire-skink-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "fire-skink-handling-guide",
+      "title": "How to Handle a Fire Skink Safely",
+      "excerpt": "Fire skinks and blue-tongued skinks share a family name and not much else temperamentally. If you've kept the docile, handleable blue-tongued skink already covered on this site, expect something genuinely different here.",
+      "date": "2026-08-11",
+      "image": "/assets/images/fire-skink-handling.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "fire-skink-health-issues-guide",
+      "title": "Fire Skink Health Issues: Signs & Causes",
+      "excerpt": "Fire skinks are hardy, and nearly every health issue in this species connects back to one thing: getting humidity and substrate moisture right for a fossorial animal that genuinely depends on both.",
+      "date": "2026-08-11",
+      "image": "/assets/images/fire-skink-health-issues.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "fire-skink-tank-setup-guide",
+      "title": "Fire Skink Enclosure Setup Guide",
+      "excerpt": "Fire skink care comes down to one central skill more than any other: keeping deep substrate genuinely, permanently moist for a species that spends most of its time burrowed within it.",
+      "date": "2026-08-11",
+      "image": "/assets/images/fire-skink-tank-setup.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "five-beginner-reptiles-overview",
       "title": "5 Best Beginner Reptiles, and Why Each One Works",
       "excerpt": "Bearded dragon, leopard gecko, ball python, crested gecko, corn snake, five reptiles that earn their beginner reputation honestly, each for a slightly different reason.",
@@ -1750,6 +1915,17 @@
       "category": "Dogs",
       "categories": [
         "Dogs"
+      ]
+    },
+    {
+      "slug": "gaboon-viper-longest-fangs-any-snake",
+      "title": "Gaboon Viper: Longest Fangs of Any Snake, Explained",
+      "excerpt": "The Gaboon viper carries the longest fangs and the biggest venom yield of any snake alive, but it's also one of the most docile vipers on Earth. Almost every fact about it comes back to the same trait: extreme patience.",
+      "date": "2026-08-13",
+      "image": "/assets/images/gaboon-viper-facts.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
       ]
     },
     {
@@ -1824,6 +2000,17 @@
       "excerpt": "Gerbils are genuinely one of the more affordable small pets on this site, with one important caveat: like the degu also covered here, you're really budgeting for two animals, not one.",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-cost.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "gerbil-feeding-guide",
+      "title": "Gerbil Feeding Guide: Schedule and Diet",
+      "excerpt": "A sunflower-seed-heavy mix looks like a complete gerbil diet, but a gerbil will happily pick out the fatty seeds and leave the balanced parts behind, which is exactly how a seemingly complete diet causes obesity.",
+      "date": "2026-08-15",
+      "image": "/assets/images/gerbil-feeding.jpg",
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
@@ -1962,6 +2149,17 @@
       ]
     },
     {
+      "slug": "goldfish-enrichment-guide",
+      "title": "Goldfish Enrichment Guide",
+      "excerpt": "Goldfish enrichment is inseparable from the tank itself. Decor and plants can't rescue a bowl or bad water, but once the setup is genuinely right, real research shows what actually adds value on top.",
+      "date": "2026-08-19",
+      "image": "/assets/images/goldfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "goldfish-feeding-guide",
       "title": "Goldfish Feeding Guide: Schedule and Diet",
       "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to actually feed, and how to read appetite loss.",
@@ -2055,6 +2253,50 @@
       "excerpt": "Green anoles need genuinely more setup investment than their small size and low price suggest, tropical humidity, real UVB, and careful heat placement all matter here.",
       "date": "2026-07-28",
       "image": "/assets/images/green-anole-tank-setup.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-cost-guide",
+      "title": "Green Iguana Cost: Full Price Breakdown",
+      "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to underestimate what they're actually taking on.",
+      "date": "2026-08-11",
+      "image": "/assets/images/green-iguana-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-handling-guide",
+      "title": "How to Handle a Green Iguana Safely",
+      "excerpt": "Green iguanas can become genuinely calm, interactive animals with consistent handling from a young age, but the honest picture also includes real physical risk from an adult, and a surrender rate that's worth understanding before you buy.",
+      "date": "2026-08-11",
+      "image": "/assets/images/green-iguana-handling.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-health-issues-guide",
+      "title": "Green Iguana Health Issues: Signs & Causes",
+      "excerpt": "Green iguana health problems trace back overwhelmingly to husbandry, and one condition in particular is common enough in this species that understanding it should shape every other decision you make about care.",
+      "date": "2026-08-11",
+      "image": "/assets/images/green-iguana-health-issues.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-tank-setup-guide",
+      "title": "Green Iguana Enclosure Setup Guide",
+      "excerpt": "Green iguana husbandry needs to be planned around the adult this species becomes, not the baby you're bringing home. Building toward that end state from the start is genuinely the better approach than upgrading repeatedly.",
+      "date": "2026-08-11",
+      "image": "/assets/images/green-iguana-tank-setup.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -2538,6 +2780,17 @@
       ]
     },
     {
+      "slug": "iguana-fireskink-quaker-overview",
+      "title": "Green Iguana, Fire Skink & Quaker Parakeet Compared",
+      "excerpt": "A cheap baby lizard. A small, colorful skink. A parakeet barely bigger than a lovebird. None of these three look like they come with real strings attached. All three do.",
+      "date": "2026-08-11",
+      "image": "/assets/guides/iguana-fireskink-quaker-overview.jpg",
+      "category": "Roundups",
+      "categories": [
+        "Roundups"
+      ]
+    },
+    {
       "slug": "immortal-jellyfish-turritopsis-dohrnii-explained",
       "title": "The Immortal Jellyfish: What It Actually Does",
       "excerpt": "Turritopsis dohrnii really can reverse its life cycle and turn back into a polyp. What it cannot do is survive being eaten, and most of them are.",
@@ -2800,6 +3053,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "leopard-gecko-enrichment-guide",
+      "title": "Leopard Gecko Enrichment Guide",
+      "excerpt": "Two real studies have tested leopard gecko enrichment directly, and the results are specific: thermal and feeding enrichment work, novelty toys and mirrors barely register. Here's what to actually spend effort on.",
+      "date": "2026-08-18",
+      "image": "/assets/images/leopard-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3133,6 +3397,17 @@
       ]
     },
     {
+      "slug": "neon-tetra-feeding-guide",
+      "title": "Neon Tetra Feeding Guide: Schedule and Diet",
+      "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+      "date": "2026-08-13",
+      "image": "/assets/images/neon-tetra-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
       "slug": "neon-tetra-handling-guide",
       "title": "Handling Neon Tetras: School Size Matters",
       "excerpt": "Neon tetras are an observation pet, not a hands-on one. The real welfare consideration with this species isn't handling technique at all, it's group size, and getting that number right changes everything.",
@@ -3171,6 +3446,17 @@
       "excerpt": "Oscars are cheap to buy and genuinely expensive to house properly. The tank and filtration, not the fish, are where this species' real budget goes.",
       "date": "2026-07-30",
       "image": "/assets/images/oscar-fish-cost.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ]
+    },
+    {
+      "slug": "oscar-fish-feeding-guide",
+      "title": "Oscar Fish Feeding Guide: Schedule and Diet",
+      "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species isn't portion size, it's building the diet around live feeder goldfish.",
+      "date": "2026-08-14",
+      "image": "/assets/images/oscar-fish-feeding.jpg",
       "category": "Fish",
       "categories": [
         "Fish"
@@ -3343,6 +3629,50 @@
       ]
     },
     {
+      "slug": "quaker-parakeet-cost-guide",
+      "title": "Quaker Parakeet Cost: Full Price Breakdown",
+      "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail matters more here than with almost any other bird on this site before you buy at all: whether it's even legal where you live.",
+      "date": "2026-08-11",
+      "image": "/assets/images/quaker-parakeet-cost.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-handling-guide",
+      "title": "Quaker Parakeet Legality and Handling Guide",
+      "excerpt": "Quaker parakeets are intelligent, social, genuinely gifted talkers, and also the one bird on this site where a real legal check needs to happen before anything else.",
+      "date": "2026-08-11",
+      "image": "/assets/images/quaker-parakeet-handling.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-health-issues-guide",
+      "title": "Quaker Parakeet Health Issues: Signs & Causes",
+      "excerpt": "Quaker parakeets are hardy birds, and the health issues that do come up trace back overwhelmingly to diet and social wellbeing, both genuinely within an owner's control.",
+      "date": "2026-08-11",
+      "image": "/assets/images/quaker-parakeet-health-issues.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-tank-setup-guide",
+      "title": "Quaker Parakeet Cage Setup Guide",
+      "excerpt": "A Quaker's cage needs to genuinely support an intelligent, assertive, chew-happy bird with a strong instinct to build, and getting the size, bar spacing, and enrichment right matters more than it might for a quieter species.",
+      "date": "2026-08-11",
+      "image": "/assets/images/quaker-parakeet-tank-setup.jpg",
+      "category": "Birds",
+      "categories": [
+        "Birds"
+      ]
+    },
+    {
       "slug": "rabbit-budgie-overview",
       "title": "Rabbit vs Budgie: Both Need More Space",
       "excerpt": "Rabbits and budgies are two of the most commonly kept pets outside of cats and dogs, and both are, more often than not, housed in something significantly smaller than they actually need.",
@@ -3508,6 +3838,17 @@
       ]
     },
     {
+      "slug": "russian-tortoise-enrichment-guide",
+      "title": "Russian Tortoise Enrichment Guide",
+      "excerpt": "Russian tortoises are persistent diggers and grazers, enrichment here means real substrate to dig into, scattered forage instead of a bowl, and a landscape with actual routes through it.",
+      "date": "2026-08-16",
+      "image": "/assets/images/russian-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "russian-tortoise-handling-guide",
       "title": "How to Handle a Russian Tortoise Safely",
       "excerpt": "Russian tortoises are hardy and generally tolerant, but like most tortoises, this isn't really a species built for regular handling, it's better understood as an observation pet with occasional, careful interaction.",
@@ -3652,6 +3993,17 @@
       ]
     },
     {
+      "slug": "shima-enaga-japans-snow-fairy-bird",
+      "title": "Shima Enaga: Japan's Real-Life Snow Fairy Bird",
+      "excerpt": "The shima enaga looks like a plush toy that learned to fly, but it's a genuine wild bird, a Hokkaido-only subspecies of long-tailed tit that fluffs into a perfect white puff when it gets cold.",
+      "date": "2026-08-12",
+      "image": "/assets/images/shima-enaga-snow-fairy-facts.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ]
+    },
+    {
       "slug": "slow-loris-the-only-venomous-primate",
       "title": "Slow Loris Venom: The Only Venomous Primate",
       "excerpt": "A primate that mixes venom from a gland on its own arm into its saliva, delivered through a comb of teeth. In one clinical series, 43 percent of bitten patients went into anaphylaxis.",
@@ -3729,6 +4081,17 @@
       ]
     },
     {
+      "slug": "sugar-glider-feeding-guide",
+      "title": "Sugar Glider Feeding Guide: Schedule and Diet",
+      "excerpt": "A sugar glider's wild diet of sap, nectar, pollen, and insects is genuinely hard to replicate in captivity, and getting the calcium-to-phosphorus ratio wrong is the leading cause of illness in this species.",
+      "date": "2026-08-16",
+      "image": "/assets/images/sugar-glider-feeding.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ]
+    },
+    {
       "slug": "sugar-glider-handling-guide",
       "title": "How to Handle a Sugar Glider Correctly",
       "excerpt": "Sugar gliders bond through scent, not quick physical familiarity, which makes their handling process genuinely different from almost every other small pet on this site.",
@@ -3789,6 +4152,17 @@
       "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
       "date": "2026-07-23",
       "image": "/assets/images/sulcata-tortoise-cost.jpg",
+      "category": "Turtles & Tortoises",
+      "categories": [
+        "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "sulcata-tortoise-feeding-guide",
+      "title": "Sulcata Tortoise Feeding Guide: Schedule and Diet",
+      "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's than a typical salad-eating reptile.",
+      "date": "2026-08-10",
+      "image": "/assets/images/sulcata-tortoise-feeding.jpg",
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"
@@ -4156,6 +4530,17 @@
       "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the real cost shows up.",
       "date": "2026-07-15",
       "image": "/assets/images/veiled-chameleon-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "veiled-chameleon-feeding-guide",
+      "title": "Veiled Chameleon Feeding Guide: Schedule and Diet",
+      "excerpt": "Veiled chameleon feeding is really a two-part job: what you feed matters, but how you supplement it matters just as much, and getting that schedule right is the difference between a healthy chameleon and one headed toward metabolic bone disease.",
+      "date": "2026-08-17",
+      "image": "/assets/images/veiled-chameleon-feeding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -4628,6 +5013,13 @@
   ],
   "chronicles": [
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13",
+      "title": "Chronicles of Dex the Bearded Dragon: Gotcha Day (Part 13)",
+      "excerpt": "On the one day a year Dex actually notices, Mike marks his Gotcha Day with a small stone turret, a rare treat, and extra time under the lamp, and Dex spends the afternoon quietly measuring just how much has changed since that first cardboard scented day.",
+      "date": "2026-08-17",
+      "image": "/assets/images/dex/dex-chron13.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6",
       "title": "Chronicles of Dex the Bearded Dragon: The Afternoon in the Grass (Part 6)",
       "excerpt": "Mike sets up Dex's first outdoor sun pen, and the bearded dragon meets real wind, real grass, and one supremely unimpressed blue jay, in this funny, humbling short story about just how big the world turns out to be.",
@@ -4745,6 +5137,13 @@
       "excerpt": "Follow along in this Otis the bunny story, a charming short fiction about one determined rabbit navigating the big drama hiding in very small moments.",
       "date": "2026-06-30",
       "image": "/assets/images/otis/otis-chron3.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-first-afternoon-part-13",
+      "title": "Chronicles of Otis the Bunny: The First Afternoon (Part 13)",
+      "excerpt": "A particular slant of afternoon light sends Otis back to his very first day in the garden, back before the lettuce bed, the hydrangea's shade, and the clover along the fence line were his to claim. What he finds waiting there is not embarrassment but fondness for the smaller, uncertain rabbit he used to be.",
+      "date": "2026-08-17",
+      "image": "/assets/images/otis/otis-chron13.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-foster-part-12",
