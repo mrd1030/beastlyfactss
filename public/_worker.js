@@ -159,6 +159,11 @@ const ANIMAL_IMAGES = {
   'Giant Manta Ray': '/assets/facts/giant-manta-ray.jpg',
   'Frilled-necked Lizard': '/assets/facts/frilled-necked-lizard.jpg',
   'Slow Loris': '/assets/facts/slow-loris.jpg',
+  'Kakapo': '/assets/facts/kakapo.jpg',
+  'Maine Coon': '/assets/facts/maine-coon.jpg',
+  'Okapi': '/assets/facts/okapi.jpg',
+  'Nudibranch': '/assets/facts/nudibranch.jpg',
+  'Gila Monster': '/assets/facts/gila-monster.jpg',
 };
 
 // Per-fact overrides, keyed by fact id - takes priority over ANIMAL_IMAGES.
