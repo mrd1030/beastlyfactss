@@ -342,6 +342,17 @@
       ]
     },
     {
+      "slug": "axolotl-enrichment-guide",
+      "title": "Axolotl Enrichment Guide",
+      "excerpt": "Axolotl enrichment isn't about toys, it's about giving choice: multiple smooth hides, plant cover, and food they have to search for instead of a bowl they wait next to.",
+      "date": "2026-08-14",
+      "image": "/assets/images/axolotl-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "axolotl-feeding-guide",
       "title": "Axolotl Feeding Guide: Schedule and Diet",
       "excerpt": "Axolotl feeding comes down to one central fact about how this species eats: it gulps its food whole, and that single detail shapes almost every rule on this page, including the one about your tank floor.",
@@ -1406,6 +1417,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "crested-gecko-enrichment-guide",
+      "title": "Crested Gecko Enrichment Guide",
+      "excerpt": "Crested geckos are arboreal, so enrichment here is mostly vertical: a real climbing network, cover at height, and food they have to find instead of a dish on the floor.",
+      "date": "2026-08-15",
+      "image": "/assets/images/crested-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3816,6 +3838,17 @@
       ]
     },
     {
+      "slug": "russian-tortoise-enrichment-guide",
+      "title": "Russian Tortoise Enrichment Guide",
+      "excerpt": "Russian tortoises are persistent diggers and grazers, enrichment here means real substrate to dig into, scattered forage instead of a bowl, and a landscape with actual routes through it.",
+      "date": "2026-08-16",
+      "image": "/assets/images/russian-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "russian-tortoise-handling-guide",
       "title": "How to Handle a Russian Tortoise Safely",
       "excerpt": "Russian tortoises are hardy and generally tolerant, but like most tortoises, this isn't really a species built for regular handling, it's better understood as an observation pet with occasional, careful interaction.",
@@ -4980,6 +5013,13 @@
   ],
   "chronicles": [
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13",
+      "title": "Chronicles of Dex the Bearded Dragon: Gotcha Day (Part 13)",
+      "excerpt": "On the one day a year Dex actually notices, Mike marks his Gotcha Day with a small stone turret, a rare treat, and extra time under the lamp, and Dex spends the afternoon quietly measuring just how much has changed since that first cardboard scented day.",
+      "date": "2026-08-17",
+      "image": "/assets/images/dex/dex-chron13.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6",
       "title": "Chronicles of Dex the Bearded Dragon: The Afternoon in the Grass (Part 6)",
       "excerpt": "Mike sets up Dex's first outdoor sun pen, and the bearded dragon meets real wind, real grass, and one supremely unimpressed blue jay, in this funny, humbling short story about just how big the world turns out to be.",
@@ -5097,6 +5137,13 @@
       "excerpt": "Follow along in this Otis the bunny story, a charming short fiction about one determined rabbit navigating the big drama hiding in very small moments.",
       "date": "2026-06-30",
       "image": "/assets/images/otis/otis-chron3.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-the-first-afternoon-part-13",
+      "title": "Chronicles of Otis the Bunny: The First Afternoon (Part 13)",
+      "excerpt": "A particular slant of afternoon light sends Otis back to his very first day in the garden, back before the lettuce bed, the hydrangea's shade, and the clover along the fence line were his to claim. What he finds waiting there is not embarrassment but fondness for the smaller, uncertain rabbit he used to be.",
+      "date": "2026-08-17",
+      "image": "/assets/images/otis/otis-chron13.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-foster-part-12",

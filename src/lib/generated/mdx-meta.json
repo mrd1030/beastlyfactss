@@ -1785,6 +1785,62 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/axolotl-enrichment-guide.mdx",
+    "slug": "axolotl-enrichment-guide",
+    "title": "Axolotl Enrichment: Hides, Foraging, and Safe Novelty",
+    "seoTitle": "Axolotl Enrichment Guide",
+    "excerpt": "Axolotl enrichment isn't about toys, it's about giving choice: multiple smooth hides, plant cover, and food they have to search for instead of a bowl they wait next to.",
+    "date": "2026-08-14",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Axolotl",
+      "Enrichment",
+      "Care Tips",
+      "Aquarium Enrichment",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/axolotl-enrichment.jpg",
+    "imageAlt": "An axolotl emerging from a smooth tunnel hide surrounded by live plants",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-14",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for an axolotl?",
+        "a": "Anything that gives the axolotl a choice: multiple hides to rest in versus open water, plant cover, and food presented in a way that takes some searching instead of a static pile in one spot. It never replaces correct cold water temperature, clean water, and a safe smooth-bottomed tank, those come first."
+      },
+      {
+        "q": "Are toys or objects safe for an axolotl tank?",
+        "a": "Only if every edge is smooth and every piece is too large to swallow. Axolotls have no eyelids, delicate gills, and a real impaction risk from anything loose or sharp. Test any new item by running your hand over it, if it scratches you, it can injure the axolotl."
+      },
+      {
+        "q": "What is the sand saucer method?",
+        "a": "A shallow dish filled with very fine sand, under 1mm grain, placed in one corner, with small food items hidden in it for short hunting bouts. It gives a safe way to add foraging without putting loose sand across the whole tank, where it becomes an impaction risk instead."
+      },
+      {
+        "q": "How often should I rearrange an axolotl's tank?",
+        "a": "Rarely for anything load-bearing. Keep 2 to 3 stable hides that never move, and limit changes to occasionally introducing one new smooth item, or a mild rearrange of non-critical decor about once a month. Frequent full overhauls remove the security the tank is supposed to provide."
+      },
+      {
+        "q": "Can axolotls be kept together for enrichment?",
+        "a": "Cohousing isn't enrichment for this species and carries real risk, axolotls will bite at limbs and gills, especially around feeding time or if sizes are mismatched. Housing separately is the safer default."
+      }
+    ],
+    "relatedProducts": [
+      "hide-cave-aquarium-decoration"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/axolotl-feeding-guide.mdx",
     "slug": "axolotl-feeding-guide",
     "title": "Axolotl Feeding: Schedule, Diet, and the Substrate Mistake That Matters Most",
@@ -7315,6 +7371,63 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/crested-gecko-enrichment-guide.mdx",
+    "slug": "crested-gecko-enrichment-guide",
+    "title": "Crested Gecko Enrichment: Vertical Space, Cover, and Foraging",
+    "seoTitle": "Crested Gecko Enrichment Guide",
+    "excerpt": "Crested geckos are arboreal, so enrichment here is mostly vertical: a real climbing network, cover at height, and food they have to find instead of a dish on the floor.",
+    "date": "2026-08-15",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Crested Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Bioactive"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/crested-gecko-enrichment.jpg",
+    "imageAlt": "A crested gecko perched on a branch surrounded by foliage and cork tube hides",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-15",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a crested gecko?",
+        "a": "A complex vertical climbing network, cover at different heights so the gecko can choose how exposed it is, and food presented in a way that involves some searching or hunting rather than a static dish on the floor. It never replaces correct humidity, temperature, and a properly sized vertical enclosure, those come first."
+      },
+      {
+        "q": "Does a crested gecko need live plants?",
+        "a": "Live plants aren't strictly required, high-quality artificial foliage covers the same need for daytime cover and security. Pothos, philodendron, and bromeliads are common safe choices if you do go live, and either way, dense cover reduces stress by letting the gecko control its own light exposure."
+      },
+      {
+        "q": "How much climbing structure is too much?",
+        "a": "It's hard to overdo vertical complexity for this species, crested geckos are strong jumpers and use open gaps between perches on purpose. The real limit is stability, every branch and piece of cork has to be anchored so nothing collapses under the gecko's weight mid-jump."
+      },
+      {
+        "q": "Is a bioactive setup necessary for enrichment?",
+        "a": "No, it's an advanced option, not a requirement. A well-set-up bioactive enclosure with springtails and isopods adds continuous low-level stimulation through a growing, self-cleaning environment, but a non-bioactive setup with good climbing structure, cover, and varied feeding covers the basics just fine."
+      },
+      {
+        "q": "Should I rearrange the enclosure often for novelty?",
+        "a": "Only occasionally. Sudden total overhauls of a shy individual's enclosure cause stress rather than enrichment. Small changes, a new branch angle or rotated plant, are enough, and the core climbing structure and hides are better left stable."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/crested-gecko-feeding-guide.mdx",
@@ -19395,6 +19508,60 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/russian-tortoise-enrichment-guide.mdx",
+    "slug": "russian-tortoise-enrichment-guide",
+    "title": "Russian Tortoise Enrichment: Digging, Grazing, and Exploration",
+    "seoTitle": "Russian Tortoise Enrichment Guide",
+    "excerpt": "Russian tortoises are persistent diggers and grazers, enrichment here means real substrate to dig into, scattered forage instead of a bowl, and a landscape with actual routes through it.",
+    "date": "2026-08-16",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Russian Tortoise",
+      "Enrichment",
+      "Care Tips",
+      "Tortoise Care",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/russian-tortoise-enrichment.jpg",
+    "imageAlt": "A Russian tortoise grazing on scattered greens among rock hides and low obstacles",
+    "emoji": "🐢",
+    "lastReviewed": "2026-08-16",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What counts as enrichment for a Russian tortoise?",
+        "a": "Deep, diggable substrate for burrowing, forage scattered across the enclosure instead of piled in one spot, and a landscape with hides and low obstacles to actually move through. It never replaces correct UVB, temperature, and enclosure size, those come first."
+      },
+      {
+        "q": "Why is digging so important for this species?",
+        "a": "Russian tortoises are persistent diggers in the wild, and burrows buffer temperature and humidity extremes for them, so digging is closer to a welfare necessity than a nice extra. Substrate at least 6 to 12-plus inches deep in one zone, or a dedicated dig box, gives them a real outlet for it."
+      },
+      {
+        "q": "How should I feed a Russian tortoise for enrichment?",
+        "a": "Scatter feed rather than using a single bowl, placing weeds, dandelion, plantain, clover, and endive in several spots so the tortoise has to search for them, closer to natural grazing. Rotate the exact locations every day or two."
+      },
+      {
+        "q": "Do Russian tortoises benefit from outdoor time?",
+        "a": "Yes, whenever climate and security allow. Outdoor pens give natural sunlight, variable terrain, real soil to dig, and edible vegetation all at once, and many experienced keepers consider secure outdoor housing the gold standard for this species."
+      },
+      {
+        "q": "How often should I change the enclosure layout?",
+        "a": "Move one non-essential item every 1 to 2 weeks rather than redesigning the whole space at once. Keep hides on both the warm and cool ends in place, those provide security and shouldn't be part of the rotation."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/russian-tortoise-handling-guide.mdx",
     "slug": "russian-tortoise-handling-guide",
     "title": "How to Handle a Russian Tortoise",
@@ -24426,6 +24593,43 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13.mdx",
+    "slug": "chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13",
+    "title": "Chronicles of Dex the Bearded Dragon: Gotcha Day (Part 13)",
+    "seoTitle": null,
+    "excerpt": "On the one day a year Dex actually notices, Mike marks his Gotcha Day with a small stone turret, a rare treat, and extra time under the lamp, and Dex spends the afternoon quietly measuring just how much has changed since that first cardboard scented day.",
+    "date": "2026-08-17",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "bearded-dragon",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "dex-chronicles",
+      "gotcha-day"
+    ],
+    "readTime": 7,
+    "difficulty": null,
+    "image": "/assets/images/dex/dex-chron13.jpg",
+    "imageAlt": "A bearded dragon perched contentedly inside a small ceramic turret ornament, warmed by terrarium lamp light.",
+    "emoji": "🦎",
+    "lastReviewed": "2026-08-17",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
+  },
+  {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6.mdx",
     "slug": "chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6",
     "title": "Chronicles of Dex the Bearded Dragon: The Afternoon in the Grass (Part 6)",
@@ -25040,6 +25244,43 @@
     "imageAlt": "A close-up portrait of a lop-eared rabbit sitting upright on a worn wooden floor, expression radiating imperious calm",
     "emoji": "📖",
     "lastReviewed": "2026-06-30",
+    "canonicalUrl": null,
+    "faqs": [],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 0
+  },
+  {
+    "path": "/content/short-story/chronicles-of-otis-the-bunny-the-first-afternoon-part-13.mdx",
+    "slug": "chronicles-of-otis-the-bunny-the-first-afternoon-part-13",
+    "title": "Chronicles of Otis the Bunny: The First Afternoon (Part 13)",
+    "seoTitle": null,
+    "excerpt": "A particular slant of afternoon light sends Otis back to his very first day in the garden, back before the lettuce bed, the hydrangea's shade, and the clover along the fence line were his to claim. What he finds waiting there is not embarrassment but fondness for the smaller, uncertain rabbit he used to be.",
+    "date": "2026-08-17",
+    "category": "Short Stories",
+    "categories": [
+      "Short Stories"
+    ],
+    "tags": [
+      "rabbit",
+      "short-story",
+      "animal-perspective",
+      "pet-fiction",
+      "humorous-fiction",
+      "flash-fiction",
+      "series-fiction",
+      "otis-chronicles",
+      "coming-of-age"
+    ],
+    "readTime": 5,
+    "difficulty": null,
+    "image": "/assets/images/otis/otis-chron13.jpg",
+    "imageAlt": "A house rabbit sitting very still in a stripe of low golden afternoon light beside a garden lettuce bed, with a leash trailing loose behind him and a hydrangea's shade just visible nearby",
+    "emoji": "📖",
+    "lastReviewed": "2026-08-17",
     "canonicalUrl": null,
     "faqs": [],
     "relatedProducts": [],
