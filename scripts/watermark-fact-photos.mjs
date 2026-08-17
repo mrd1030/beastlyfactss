@@ -24,9 +24,16 @@ function collectImages(dir, results = []) {
   if (!fs.existsSync(dir)) return results;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name);
+    const ext = path.extname(entry.name);
     if (entry.isDirectory()) {
       collectImages(full, results);
-    } else if (supported.has(path.extname(entry.name).toLowerCase())) {
+    } else if (supported.has(ext.toLowerCase())) {
+      // Skip the generated -thumb tier (see generate-thumbnails.js) - the
+      // gallery grid is the one place these render small enough that the
+      // pill crowds out the actual photo, so only the full-size original
+      // gets stamped.
+      const baseName = path.basename(entry.name, ext);
+      if (baseName.endsWith('-thumb')) continue;
       results.push(full);
     }
   }
