@@ -139,16 +139,19 @@ const ANIMAL_IMAGES = {
   'Giant Manta Ray': '/assets/facts/giant-manta-ray.jpg',
   'Frilled-necked Lizard': '/assets/facts/frilled-necked-lizard.jpg',
   'Slow Loris': '/assets/facts/slow-loris.jpg',
-  'Kakapo': '/assets/facts/kakapo.jpg',
-  'Maine Coon': '/assets/facts/maine-coon.jpg',
-  'Okapi': '/assets/facts/okapi.jpg',
-  'Nudibranch': '/assets/facts/nudibranch.jpg',
-  'Gila Monster': '/assets/facts/gila-monster.jpg',
 };
 
 // Per-fact overrides, keyed by fact id - takes priority over ANIMAL_IMAGES.
 // Same purpose as public/_worker.js's copy: whenever two facts share an animal,
 // this points the extra facts at their own distinct photo.
+//
+// Since 2026-08-03 this has become the default landing spot for every new
+// fact's photo, not just repeat-animal overrides - the hard rule on this site
+// is no two facts ever show the same image. Keying by fact id instead of
+// ANIMAL_IMAGES's animal name enforces that automatically: a second fact
+// about an animal gets no photo (falls back to the hero image) unless it has
+// its own explicit id entry here, instead of silently inheriting whatever
+// photo the first fact for that animal used.
 const FACT_IMAGES = {
   247: '/assets/facts/penguin-2.jpg',
   248: '/assets/facts/penguin-3.jpg',
@@ -308,6 +311,11 @@ const FACT_IMAGES = {
   236: '/assets/facts/chicken-3.jpg',
   237: '/assets/facts/chicken-4.jpg',
   238: '/assets/facts/chicken-5.jpg',
+  287: '/assets/facts/kakapo.jpg',
+  288: '/assets/facts/maine-coon.jpg',
+  289: '/assets/facts/okapi.jpg',
+  290: '/assets/facts/nudibranch.jpg',
+  291: '/assets/facts/gila-monster.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.

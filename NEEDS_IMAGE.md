@@ -7,7 +7,7 @@ Notes on animal facts that were drafted but did NOT make it into `src/lib/data/f
 **2026-08-17: Kakapo, Maine Coon, Okapi, Nudibranch, Gila Monster.** Added as
 ids 287 to 291. Photos were AI-generated (Adobe Firefly, site-owner-run
 externally) matching each fact's visual hook, resized to max 1600px/quality 80
-and placed in `public/assets/facts/`. `ANIMAL_IMAGES` entries added to both
+and placed in `public/assets/facts/`. `FACT_IMAGES` entries added to both
 `src/lib/data/factImages.js` and `public/_worker.js`.
 
 **2026-08-12: 2 more Shima Enaga facts, 3 Gaboon Viper facts, Gaboon Viper
