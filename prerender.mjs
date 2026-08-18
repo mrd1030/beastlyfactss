@@ -214,6 +214,7 @@ const STATIC_ROUTES = [
   '/animal-facts',
   '/fact-files',
   '/gallery',
+  '/feed',
   '/categories',
   '/search',
   '/donate',

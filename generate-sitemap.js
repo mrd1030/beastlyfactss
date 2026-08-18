@@ -192,6 +192,7 @@ const staticPages = [
   '/animal-facts/',
   '/fact-files/',
   '/gallery/',
+  '/feed/',
   '/blog/',
   '/encyclopedia/',
   '/beastlypedia/',
