@@ -205,7 +205,10 @@ export default function Gallery() {
             </p>
           </motion.div>
 
-          <CrossLinkCta to="/facts/" label="Browse all facts as cards" />
+          <div className="flex flex-wrap gap-3 mt-4">
+            <CrossLinkCta to="/facts/" label="Browse all facts as cards" className="" />
+            <CrossLinkCta to="/feed/" label="See the feed" className="" />
+          </div>
 
           {/* Search */}
           <div className="mt-6 max-w-md">

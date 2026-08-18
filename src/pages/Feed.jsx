@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { ExternalLink } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
+import CrossLinkCta from '@/components/shared/CrossLinkCta';
 
 export default function Feed() {
   const [posts, setPosts] = useState([]);
@@ -55,6 +56,8 @@ export default function Feed() {
               Photos and clips from around Beastly Facts - the cool stuff that doesn't fit anywhere else on the site.
             </p>
           </motion.div>
+
+          <CrossLinkCta to="/gallery/" label="Browse the photo gallery" />
         </div>
       </div>
 

@@ -40,6 +40,7 @@ export default function Footer() {
                 { to: '/fact-files/', label: 'Fact Files' },
                 { to: '/quiz/personality/', label: 'Personality Quiz' },
                 { to: '/pack/', label: 'My Beast Pack' },
+                { to: '/feed/', label: 'The Feed' },
                 { to: '/blog/', label: 'Critter Digest' },
                 { to: '/chronicles/dex/', label: 'The Chronicles' },
               ]
