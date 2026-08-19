@@ -18,6 +18,7 @@ export const CARE_PACKAGES = [
     pages: 22,
     version: '2.0',
     image: 'https://public-files.gumroad.com/8z1vvv1brh27j8fn12mt5s4izm0z',
+    thumbnail: 'https://public-files.gumroad.com/9ws8etux5l8qfmyh2sr8dut7ijx6',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
     blurb: 'Complete 22-page printable guide with temperature targets, diet ratios by age, health triage, an owner log, and enrichment checklists.',
     bullets: [
@@ -37,6 +38,7 @@ export const CARE_PACKAGES = [
     pages: 22,
     version: '1.0',
     image: 'https://public-files.gumroad.com/j6l5pdwxluup1tlalmbc88e6mqrx',
+    thumbnail: 'https://public-files.gumroad.com/tybf6l6ifh28suw17ffp9grc9hvc',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage',
     blurb: 'Complete 22-page printable guide with belly-heat setup, the three-hide humidity system, insect-only feeding by age, and health triage.',
     bullets: [
@@ -56,6 +58,7 @@ export const CARE_PACKAGES = [
     pages: 21,
     version: '1.0',
     image: 'https://public-files.gumroad.com/2icuul18qkr60te6v8e1jzqi3vvm',
+    thumbnail: 'https://public-files.gumroad.com/argmi0d5wsmwqbxpdw62dxnds5lc',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/goldfishcarepackage',
     blurb: 'Complete 21-page printable guide with tank size, filtration turnover, water quality targets, swim bladder notes, and daily and weekly maintenance routines.',
     bullets: [
@@ -75,6 +78,7 @@ export const CARE_PACKAGES = [
     pages: 20,
     version: '1.0',
     image: 'https://public-files.gumroad.com/6zba9255p5yhte5abvd08avjulcv',
+    thumbnail: 'https://public-files.gumroad.com/9a7uvtx8g31j8hg6b7rg2vo5hm5y',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/axolotlcarepackage',
     blurb: 'Complete 20-page printable guide with cold-water temps, filtration, health triage, enrichment, and owner checklists.',
     bullets: [
@@ -94,6 +98,7 @@ export const CARE_PACKAGES = [
     pages: 20,
     version: '1.0',
     image: 'https://public-files.gumroad.com/m7ggu288hajb3rfxo87uzmpr45xz',
+    thumbnail: 'https://public-files.gumroad.com/x2s9l37sjyg3l8rz916xcx8esgaa',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/budgiecarepackage',
     blurb: 'Complete 20-page printable guide with cage setup, diet ratios, health triage, enrichment, and owner checklists.',
     bullets: [
@@ -113,6 +118,7 @@ export const CARE_PACKAGES = [
     pages: 21,
     version: '1.0',
     image: 'https://public-files.gumroad.com/vv8vahkgez2zvg8bq2roehqhmwkq',
+    thumbnail: 'https://public-files.gumroad.com/8xkdq3iw5r3h7fqod023nyjy2vrj',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/crestedgeckocarepackage',
     blurb: 'Complete 21-page printable guide with humidity cycling, CGD feeding, health triage, enrichment, and owner checklists.',
     bullets: [
@@ -132,6 +138,7 @@ export const CARE_PACKAGES = [
     pages: 22,
     version: '1.0',
     image: 'https://public-files.gumroad.com/q7ktcgzkfrj13zgu1p9e56q757i5',
+    thumbnail: 'https://public-files.gumroad.com/59ii344dycv65lha734so9mcfzgr',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/guineapigcarepackage',
     blurb: 'Complete 22-page printable guide with housing space, vitamin C targets, diet ratios, health triage, and owner checklists.',
     bullets: [
@@ -151,6 +158,7 @@ export const CARE_PACKAGES = [
     pages: 21,
     version: '1.0',
     image: 'https://public-files.gumroad.com/4wkkh3y7p00uqewtojfjxmv0j91s',
+    thumbnail: 'https://public-files.gumroad.com/jkkxrzyi49dldkfkjwao2k2jcykz',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/lovebirdcarepackage',
     blurb: 'Complete 21-page printable guide with cage sizing, bar spacing, diet ratios, single-vs-pair guidance, and owner checklists.',
     bullets: [
@@ -170,6 +178,7 @@ export const CARE_PACKAGES = [
     pages: 21,
     version: '1.0',
     image: 'https://public-files.gumroad.com/1gh7for81hcwsfl7gx1n2hnyi8d7',
+    thumbnail: 'https://public-files.gumroad.com/o992usdmn5u75b1xeegohxnti3n7',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/russiantortoisecarepackage',
     blurb: 'Complete 21-page printable guide with housing, heat and UVB targets, diet, brumation guidance, health triage, and owner checklists.',
     bullets: [

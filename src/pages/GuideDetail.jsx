@@ -585,10 +585,10 @@ export default function GuideDetail() {
                 <Link to="/care-packages/store/" className="group block">
                   <div className="flex items-start gap-3 mb-3">
                     <img
-                      src={carePackage.image}
+                      src={carePackage.thumbnail}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
-                      className="w-12 h-12 object-contain rounded-lg border border-border flex-shrink-0 bg-white"
+                      className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
                     />
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
