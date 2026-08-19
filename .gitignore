@@ -68,3 +68,7 @@ _sanity-archive/
 beastlyfactsapp/
 internal-link-audit.json
 .workflow-salvage.json
+
+# Cloudflare's Content-Security-Policy (set via a Transform Rule on the zone,
+# not read from anything here). Kept locally for editing/reference only.
+cloudflare-csp.txt

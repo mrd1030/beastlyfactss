@@ -1,6 +1,6 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { slugify } from '@/lib/utils/slugify';
 import { motion } from '@/lib/motion-safe';
 import { Search as SearchIcon, X } from 'lucide-react';
@@ -57,14 +57,20 @@ const BROWSE_CATEGORIES = CATEGORIES.filter(c => c.slug !== 'short-stories');
 
 export default function Search() {
   const navigate = useNavigate();
-  const urlParams = new URLSearchParams(window.location.search);
-  const [query, setQuery] = useState(urlParams.get('q') || '');
+  const { query: queryParam } = useParams();
+  // Legacy fallback: a /search/?q=... link shared before this moved to a path
+  // segment (/search/:query/) still resolves on first load. Read once here;
+  // every write from this page on uses the path form via handleInput below.
+  const initialQuery = queryParam
+    ? decodeURIComponent(queryParam)
+    : new URLSearchParams(window.location.search).get('q') || '';
+  const [query, setQuery] = useState(initialQuery);
   const [sort, setSort] = useState('relevance');
   const [activeCategory, setActiveCategory] = useState('');
   // Sticky once a real query has been entered, exactly like the ref it
   // replaces - but as state, since results are derived during render now and
   // nothing else re-renders this component when the flag flips.
-  const [hasSearched, setHasSearched] = useState(Boolean(urlParams.get('q')));
+  const [hasSearched, setHasSearched] = useState(Boolean(initialQuery));
   const debounceRef = useRef(null);
 
   // Newest-first to match the old `| order(publishedAt desc)` query, so the
@@ -87,9 +93,7 @@ export default function Search() {
     trackSearch(val);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
-      const url = new URL(window.location);
-      if (val) url.searchParams.set('q', val); else url.searchParams.delete('q');
-      window.history.replaceState({}, '', url);
+      navigate(val ? `/search/${encodeURIComponent(val)}/` : '/search/', { replace: true });
       if (val.trim()) {
         trackEvent('search_performed', { query: val });
       }

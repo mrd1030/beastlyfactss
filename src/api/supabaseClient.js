@@ -21,8 +21,13 @@ export const isSupabaseConfigured = Boolean(url && anonKey);
 // Null rather than a throwing stub when unconfigured. Callers check
 // isSupabaseConfigured and fall back to local-only behaviour, so a missing env
 // var degrades the like button instead of breaking the page it sits on.
+// persistSession/autoRefreshToken matter only once something actually signs
+// in - the composer login at /composer/ is the sole caller of supabase.auth
+// on this site. Every anonymous visitor (likes, shares, comments) never
+// touches auth, so this changes nothing for them; it just means a signed-in
+// admin session survives a page reload instead of forcing a re-login.
 export const supabase = isSupabaseConfigured
   ? createClient(url, anonKey, {
-      auth: { persistSession: false },
+      auth: { persistSession: true, autoRefreshToken: true, storageKey: 'bf-auth' },
     })
   : null;

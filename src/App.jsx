@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
+import ProtectedRoute from '@/components/ProtectedRoute';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import PageNotFound from './lib/PageNotFound';
 // Home is NOT lazy-loaded like the other pages below: its own module (~3KB
@@ -51,6 +52,9 @@ const CarePackages = lazy(() => import('@/pages/CarePackages'));
 const CarePackagesStore = lazy(() => import('@/pages/CarePackagesStore'));
 const CarePackagesWhyWeExist = lazy(() => import('@/pages/CarePackagesWhyWeExist'));
 const CarePackagesFaq = lazy(() => import('@/pages/CarePackagesFaq'));
+const Feed = lazy(() => import('@/pages/Feed'));
+const Composer = lazy(() => import('@/pages/Composer'));
+const ComposerLogin = lazy(() => import('@/pages/Composer/Login'));
 
 function RedirectGuideFilter() {
   const { guideFilter } = useParams();
@@ -130,6 +134,7 @@ const AuthenticatedApp = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/search/:query" element={<Search />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/exotic-pet-laws" element={<ExoticPetLaws />} />
           <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
@@ -137,6 +142,12 @@ const AuthenticatedApp = () => {
           <Route path="/care-packages/store" element={<CarePackagesStore />} />
           <Route path="/care-packages/why-we-exist" element={<CarePackagesWhyWeExist />} />
           <Route path="/care-packages/faq" element={<CarePackagesFaq />} />
+          <Route path="/feed" element={<Feed />} />
+          <Route path="/feed/tag/:tag" element={<Feed />} />
+          <Route path="/composer/login" element={<ComposerLogin />} />
+          <Route element={<ProtectedRoute unauthenticatedElement={<Navigate to="/composer/login/" replace />} />}>
+            <Route path="/composer" element={<Composer />} />
+          </Route>
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
@@ -153,7 +164,7 @@ function App() {
     "url": "https://beastlyfacts.com/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://beastlyfacts.com/search?q={search_term_string}",
+      "target": "https://beastlyfacts.com/search/{search_term_string}/",
       "query-input": "required name=search_term_string"
     }
   };
