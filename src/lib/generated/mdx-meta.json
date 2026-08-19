@@ -2824,7 +2824,7 @@
     "image": "/assets/images/bearded-dragon-tank-setup.jpg",
     "imageAlt": "Fully furnished bearded dragon enclosure with basking platform and UVB lighting",
     "emoji": "🦎",
-    "lastReviewed": "2026-07-05",
+    "lastReviewed": "2026-08-18",
     "canonicalUrl": null,
     "faqs": [
       {
@@ -2833,7 +2833,7 @@
       },
       {
         "q": "How hot does the basking spot need to be?",
-        "a": "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air."
+        "a": "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air. That heat comes from a separate basking bulb, not the UVB tube, which supplies UV but little usable heat on its own."
       },
       {
         "q": "Do bearded dragons need UVB?",
@@ -2855,7 +2855,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/bearded-dragon-vs-leopard-gecko-guide.mdx",

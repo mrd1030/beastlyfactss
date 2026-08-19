@@ -14,7 +14,7 @@ const FAQS = [
   },
   {
     q: 'How long are they?',
-    a: 'Bearded Dragon is 20 pages, Leopard Gecko is 17 pages, and Goldfish is 16 pages. Each one covers setup, diet, health red flags, and an owner routine.',
+    a: "Each package runs 15 to 23 pages depending on species. Every one covers setup, diet, health red flags, and an owner routine - the exact page count is listed on that package's card in the store.",
   },
   {
     q: 'Is this a subscription?',

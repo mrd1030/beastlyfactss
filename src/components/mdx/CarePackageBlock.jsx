@@ -9,7 +9,9 @@ import { CARE_PACKAGES } from '@/lib/data/carePackages';
 // wants to look never leaves the site to do it.
 export default function CarePackageBlock({ animal }) {
   const pkg = CARE_PACKAGES.find(p => p.id === animal);
-  if (!pkg) return null;
+  // Coming-soon packages have no Gumroad listing or cover yet - stay silent
+  // in the article until the status flips to 'live'.
+  if (!pkg || pkg.status === 'coming-soon') return null;
 
   return (
     <div className="my-8 rounded-2xl border border-secondary/30 border-l-4 border-l-secondary bg-secondary/5 p-5 flex items-center gap-4">

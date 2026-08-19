@@ -7,27 +7,37 @@ import { ArrowUpRight } from 'lucide-react';
 // where checkout actually happens.
 export default function CarePackageCard({ pkg, variant = 'compact' }) {
   const isFull = variant === 'full';
+  const isComingSoon = pkg.status === 'coming-soon';
+  const Wrapper = isComingSoon ? 'div' : 'a';
+  const wrapperProps = isComingSoon
+    ? {}
+    : { href: pkg.gumroadUrl, target: '_blank', rel: 'noopener noreferrer' };
+
   return (
-    <a
-      href={pkg.gumroadUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group flex flex-col bg-card border border-border rounded-2xl overflow-hidden hover:border-secondary/40 hover:shadow-md transition-all"
+    <Wrapper
+      {...wrapperProps}
+      className={`group flex flex-col bg-card border border-border rounded-2xl overflow-hidden transition-all ${
+        isComingSoon ? 'opacity-80' : 'hover:border-secondary/40 hover:shadow-md'
+      }`}
     >
-      <div className="aspect-[16/10] overflow-hidden bg-muted">
-        <img
-          src={pkg.image}
-          alt={`${pkg.name} cover`}
-          loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
-        />
+      <div className="aspect-[16/10] overflow-hidden bg-muted flex items-center justify-center">
+        {pkg.image ? (
+          <img
+            src={pkg.image}
+            alt={`${pkg.name} cover`}
+            loading="lazy"
+            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+          />
+        ) : (
+          <span className="text-4xl" role="img" aria-label={pkg.animal}>{pkg.emoji || '📘'}</span>
+        )}
       </div>
       <div className="p-4 sm:p-5 flex flex-col gap-2 flex-1">
         <div className="flex items-center justify-between gap-2">
           <span className="text-[11px] font-body font-bold tracking-wide uppercase text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
             {pkg.badge}
           </span>
-          <span className="font-display font-bold text-sm text-foreground">{pkg.price}</span>
+          {!isComingSoon && <span className="font-display font-bold text-sm text-foreground">{pkg.price}</span>}
         </div>
         <h3 className="font-display font-bold text-lg text-foreground">{pkg.name}</h3>
         <p className="text-xs text-muted-foreground font-body">{pkg.pages} pages &middot; PDF &middot; print or tablet</p>
@@ -45,10 +55,16 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
           <p className="text-sm text-muted-foreground font-body flex-1">{pkg.blurb}</p>
         )}
 
-        <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary">
-          Get the guide <ArrowUpRight className="w-3.5 h-3.5" />
-        </span>
+        {isComingSoon ? (
+          <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-muted-foreground">
+            Coming soon
+          </span>
+        ) : (
+          <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary">
+            Get the guide <ArrowUpRight className="w-3.5 h-3.5" />
+          </span>
+        )}
       </div>
-    </a>
+    </Wrapper>
   );
 }

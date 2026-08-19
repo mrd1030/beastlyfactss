@@ -7,7 +7,7 @@ import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageCard from '@/components/shared/CarePackageCard';
 
 const TITLE = 'Printable Care Packages | Beastly Facts';
-const DESCRIPTION = 'Printable PDF owner manuals for bearded dragons, leopard geckos, and goldfish - the same research standards as our free guides, formatted to print and keep by the enclosure.';
+const DESCRIPTION = 'Printable PDF owner manuals for reptiles, birds, fish, and small mammals - the same research standards as our free guides, formatted to print and keep by the enclosure.';
 
 const FEATURES = [
   { emoji: '🖨️', title: 'Print what matters', body: 'Temperature targets, shopping lists, first-30-days plans, and daily routines designed to live near the habitat.' },
@@ -16,6 +16,9 @@ const FEATURES = [
 ];
 
 export default function CarePackages() {
+  const live = CARE_PACKAGES.filter(pkg => pkg.status === 'live');
+  const comingSoon = CARE_PACKAGES.filter(pkg => pkg.status === 'coming-soon');
+
   return (
     <div className="min-h-screen">
       <Helmet>
@@ -71,12 +74,31 @@ export default function CarePackages() {
               View full store &rarr;
             </Link>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3">
-            {CARE_PACKAGES.map(pkg => (
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {live.map(pkg => (
               <CarePackageCard key={pkg.id} pkg={pkg} />
             ))}
           </div>
         </motion.section>
+
+        {comingSoon.length > 0 && (
+          <motion.section
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.12 }}
+            className="mt-10"
+          >
+            <div className="mb-4">
+              <h2 className="font-display font-bold text-xl text-foreground">Coming soon</h2>
+              <p className="text-sm text-muted-foreground font-body">In production now - not purchasable yet.</p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {comingSoon.map(pkg => (
+                <CarePackageCard key={pkg.id} pkg={pkg} />
+              ))}
+            </div>
+          </motion.section>
+        )}
 
         <motion.section
           initial={{ opacity: 0, y: 16 }}

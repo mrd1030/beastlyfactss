@@ -8,7 +8,7 @@ export const amphibianEncyclopedia = [
       habitat: "Freshwater lake and canal system",
       adultSize: "9-12 inches (23-30 cm)",
       wildDiet: "Worms, mollusks, insects, small fish, and aquatic invertebrates",
-      wildLifespan: "10-15 years",
+      wildLifespan: "5-6 years (habitat degradation and predation cut wild lifespans well short of the 10-15 years typical in captivity)",
       conservation: "Critically Endangered (IUCN)",
     },
   },

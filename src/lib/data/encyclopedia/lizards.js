@@ -38,7 +38,7 @@ export const lizardEncyclopedia = [
       habitat: "Arid woodland, scrubland, and rocky desert",
       adultSize: "18-24 inches (45-60 cm) including tail",
       wildDiet: "Omnivore - insects, vegetation, flowers, and small vertebrates",
-      wildLifespan: "10-15 years",
+      wildLifespan: "5-8 years (predation and disease cut wild lifespans well short of the 10-15 years typical in captivity)",
       conservation: "Least Concern (IUCN)",
     },
   },
