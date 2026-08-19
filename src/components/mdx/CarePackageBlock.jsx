@@ -19,7 +19,7 @@ export default function CarePackageBlock({ animal }) {
         src={pkg.image}
         alt={`${pkg.name} cover`}
         loading="lazy"
-        className="hidden sm:block w-16 h-16 object-cover rounded-xl border border-border flex-shrink-0 bg-white"
+        className="hidden sm:block w-16 h-16 object-contain rounded-xl border border-border flex-shrink-0 bg-white"
       />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-1.5 text-xs font-body font-bold uppercase tracking-wider text-secondary mb-1">

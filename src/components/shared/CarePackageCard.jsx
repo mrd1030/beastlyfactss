@@ -26,7 +26,13 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
             src={pkg.image}
             alt={`${pkg.name} cover`}
             loading="lazy"
-            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
+            // object-contain, not object-cover: the source covers are a
+            // different aspect ratio than this card, and object-cover was
+            // cropping into the BeastlyFacts logo badge near the top-right
+            // corner of the cover art. Full image, letterboxed on bg-muted,
+            // beats a cropped one - applies to every package's card, not
+            // just this one.
+            className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
           />
         ) : (
           <span className="text-4xl" role="img" aria-label={pkg.animal}>{pkg.emoji || '📘'}</span>

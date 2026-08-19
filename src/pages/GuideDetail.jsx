@@ -588,7 +588,7 @@ export default function GuideDetail() {
                       src={carePackage.image}
                       alt={`${carePackage.name} cover`}
                       loading="lazy"
-                      className="w-12 h-12 object-cover rounded-lg border border-border flex-shrink-0 bg-white"
+                      className="w-12 h-12 object-contain rounded-lg border border-border flex-shrink-0 bg-white"
                     />
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
