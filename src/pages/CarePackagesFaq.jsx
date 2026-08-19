@@ -10,7 +10,7 @@ const DESCRIPTION = 'Answers about format, printing, refunds, and updates for th
 const FAQS = [
   {
     q: 'What format are the care packages in?',
-    a: 'Every package is a PDF. Print the whole thing, print just the high-use pages, or keep it on a tablet or phone next to the enclosure.',
+    a: 'Every package is a PDF. Print the whole thing, print just the high-use pages, or keep it open on your phone, tablet, or computer next to the enclosure.',
   },
   {
     q: 'How long are they?',
