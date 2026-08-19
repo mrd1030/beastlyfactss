@@ -134,6 +134,7 @@ const AuthenticatedApp = () => {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/search/:query" element={<Search />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/exotic-pet-laws" element={<ExoticPetLaws />} />
           <Route path="/exotic-pet-laws/:animalId" element={<ExoticPetLaws />} />
@@ -142,6 +143,7 @@ const AuthenticatedApp = () => {
           <Route path="/care-packages/why-we-exist" element={<CarePackagesWhyWeExist />} />
           <Route path="/care-packages/faq" element={<CarePackagesFaq />} />
           <Route path="/feed" element={<Feed />} />
+          <Route path="/feed/tag/:tag" element={<Feed />} />
           <Route path="/composer/login" element={<ComposerLogin />} />
           <Route element={<ProtectedRoute unauthenticatedElement={<Navigate to="/composer/login/" replace />} />}>
             <Route path="/composer" element={<Composer />} />
@@ -162,7 +164,7 @@ function App() {
     "url": "https://beastlyfacts.com/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://beastlyfacts.com/search?q={search_term_string}",
+      "target": "https://beastlyfacts.com/search/{search_term_string}/",
       "query-input": "required name=search_term_string"
     }
   };

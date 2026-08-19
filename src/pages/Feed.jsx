@@ -1,12 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { SocialLinksRow } from '@/components/shared/SocialIcons';
+import { captionHasTag, splitCaptionByHashtags } from '@/lib/utils/hashtags';
+
+// Caption text with each #hashtag swapped for a link to its /feed/tag/ page.
+// Plain text segments render as-is; a hashtag keeps its original typed case
+// on screen but links to the lowercased tag (see splitCaptionByHashtags).
+function CaptionWithHashtags({ caption }) {
+  return (
+    <p className="text-sm font-body text-foreground leading-relaxed whitespace-pre-wrap">
+      {splitCaptionByHashtags(caption).map((part, i) =>
+        part.type === 'tag' ? (
+          <Link
+            key={i}
+            to={`/feed/tag/${part.tag}/`}
+            className="font-semibold text-secondary hover:underline"
+          >
+            {`#${part.value}`}
+          </Link>
+        ) : (
+          <React.Fragment key={i}>{part.value}</React.Fragment>
+        )
+      )}
+    </p>
+  );
+}
 
 export default function Feed() {
+  const { tag } = useParams();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -35,16 +61,31 @@ export default function Feed() {
     return () => { cancelled = true; };
   }, []);
 
+  // Tag pages are a client-side filter over the same fetch, not a separate
+  // query - the feed is small enough that this is simpler than round-tripping
+  // to Supabase per tag, and it keeps the "loading" flash identical on both
+  // /feed/ and /feed/tag/:tag/.
+  const displayPosts = tag ? posts.filter(p => captionHasTag(p.caption, tag)) : posts;
+
+  const pageTitle = tag ? `#${tag} | Feed | Beastly Facts` : 'Feed | Beastly Facts';
+  const pageDescription = tag
+    ? `Posts tagged #${tag} on the Beastly Facts feed.`
+    : "Photos and clips from Beastly Facts - the cool stuff we post on social media, collected here too.";
+  const canonicalUrl = tag ? `https://beastlyfacts.com/feed/tag/${tag}/` : 'https://beastlyfacts.com/feed/';
+
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Feed | Beastly Facts</title>
-        <meta name="description" content="Photos and clips from Beastly Facts - the cool stuff we post on social media, collected here too." />
-        <link rel="canonical" href="https://beastlyfacts.com/feed/" />
-        <meta name="robots" content="index,follow" />
-        <meta property="og:title" content="Feed | Beastly Facts" />
-        <meta property="og:description" content="Photos and clips from Beastly Facts - the cool stuff we post on social media, collected here too." />
-        <meta property="og:url" content="https://beastlyfacts.com/feed/" />
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        {/* Tag pages are a live filter over user-typed hashtags, not curated
+            content - same reasoning as noindexing /search/, kept out of the
+            index rather than left to accumulate as thin duplicate pages. */}
+        <meta name="robots" content={tag ? 'noindex,follow' : 'index,follow'} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -52,13 +93,28 @@ export default function Feed() {
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <span className="text-3xl mb-2 block" role="img" aria-label="Camera with flash">📱</span>
-            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">The Feed</h1>
+            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">
+              {tag ? `#${tag}` : 'The Feed'}
+            </h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Photos and clips from around Beastly Facts - the cool stuff that doesn't fit anywhere else on the site.
+              {tag
+                ? `Posts tagged #${tag}.`
+                : "Photos and clips from around Beastly Facts - the cool stuff that doesn't fit anywhere else on the site."}
             </p>
           </motion.div>
 
-          <CrossLinkCta to="/gallery/" label="Browse the photo gallery" />
+          <div className="flex flex-wrap gap-3 mt-4">
+            {tag && (
+              <Link
+                to="/feed/"
+                className="group inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2.5 font-body text-sm font-semibold text-foreground transition-all hover:border-secondary/50 hover:text-secondary"
+              >
+                <X className="h-3.5 w-3.5" />
+                Clear filter
+              </Link>
+            )}
+            <CrossLinkCta to="/gallery/" label="Browse the photo gallery" className="" />
+          </div>
         </div>
       </div>
 
@@ -67,14 +123,21 @@ export default function Feed() {
           <p className="text-center text-sm text-muted-foreground font-body py-16">Loading...</p>
         ) : error ? (
           <p className="text-center text-sm text-muted-foreground font-body py-16">The feed couldn't load right now.</p>
-        ) : posts.length === 0 ? (
+        ) : displayPosts.length === 0 ? (
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🐾</span>
-            <p className="font-body font-bold text-foreground">Nothing here yet - check back soon!</p>
+            <p className="font-body font-bold text-foreground">
+              {tag ? `Nothing tagged #${tag} yet.` : 'Nothing here yet - check back soon!'}
+            </p>
+            {tag && (
+              <Link to="/feed/" className="text-sm font-body font-semibold text-secondary hover:underline mt-2 inline-block">
+                See the whole feed →
+              </Link>
+            )}
           </div>
         ) : (
           <div className="space-y-6">
-            {posts.map((post, i) => (
+            {displayPosts.map((post, i) => (
               <motion.article
                 key={post.id}
                 initial={{ opacity: 0, y: 16 }}
@@ -96,9 +159,7 @@ export default function Feed() {
                   )}
                 </div>
                 <div className="p-4 sm:p-5">
-                  {post.caption && (
-                    <p className="text-sm font-body text-foreground leading-relaxed whitespace-pre-wrap">{post.caption}</p>
-                  )}
+                  {post.caption && <CaptionWithHashtags caption={post.caption} />}
                   <div className="flex items-center justify-between mt-3">
                     <span className="text-xs text-muted-foreground font-body">
                       {new Date(post.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
