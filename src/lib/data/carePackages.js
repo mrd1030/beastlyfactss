@@ -17,7 +17,7 @@ export const CARE_PACKAGES = [
     price: '$8.99',
     pages: 22,
     version: '2.0',
-    image: 'https://public-files.gumroad.com/n809bew9fom3ys5uyd4s0etgi9oq',
+    image: 'https://public-files.gumroad.com/8z1vvv1brh27j8fn12mt5s4izm0z',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/beardeddragoncarepackage',
     blurb: 'Complete 22-page printable guide with temperature targets, diet ratios by age, health triage, an owner log, and enrichment checklists.',
     bullets: [
@@ -36,7 +36,7 @@ export const CARE_PACKAGES = [
     price: '$8.99',
     pages: 22,
     version: '1.0',
-    image: 'https://public-files.gumroad.com/n7nuagfjubnwmqae2xin5q5yacxh',
+    image: 'https://public-files.gumroad.com/j6l5pdwxluup1tlalmbc88e6mqrx',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/leopardgeckocarepackage',
     blurb: 'Complete 22-page printable guide with belly-heat setup, the three-hide humidity system, insect-only feeding by age, and health triage.',
     bullets: [
@@ -55,7 +55,7 @@ export const CARE_PACKAGES = [
     price: '$8.99',
     pages: 21,
     version: '1.0',
-    image: 'https://public-files.gumroad.com/7efj98l6jaewr6u92xdop8tj9kjg',
+    image: 'https://public-files.gumroad.com/2icuul18qkr60te6v8e1jzqi3vvm',
     gumroadUrl: 'https://beastlyfacts.gumroad.com/l/goldfishcarepackage',
     blurb: 'Complete 21-page printable guide with tank size, filtration turnover, water quality targets, swim bladder notes, and daily and weekly maintenance routines.',
     bullets: [
