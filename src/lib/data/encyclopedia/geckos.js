@@ -60,7 +60,7 @@ export const geckoEncyclopedia = [
       habitat: "Rocky desert, arid grassland, and dry scrubland",
       adultSize: "7-11 inches (18-28 cm)",
       wildDiet: "Insects, scorpions, small lizards, and worms",
-      wildLifespan: "15-22 years",
+      wildLifespan: "6-8 years (predation, parasites, and harsh conditions cut wild lifespans well short of the 15-20+ years typical in captivity)",
       conservation: "Least Concern (IUCN)",
     },
   },

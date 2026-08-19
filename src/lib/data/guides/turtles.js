@@ -162,7 +162,7 @@ Metabolic bone disease from inadequate UVB causes soft shell and skeletal deform
       ],
     },
     sections: {
-      housing: "A minimum 4x4 ft outdoor enclosure or 4x2 ft indoor tortoise table is needed for one adult. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 90 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
+      housing: "A minimum 4x4 ft outdoor enclosure or 4x2 ft indoor tortoise table is needed for one adult. Outdoor enclosures with burrowing barriers (sunk 12 inches or more underground) are ideal in warm climates. Indoor setups need a strong UVB lamp (T5 HO Arcadia 12%) and a basking spot of 95 to 100 degrees F. Cool ambient of 68 to 78 degrees F. Deep substrate (6 inches or more of a 50/50 topsoil/sand or coconut coir/sand mix) is essential for natural burrowing behavior. Russian tortoises are notorious escape and climb artists. Secure walls 12 inches or more high.",
       diet: `Russian tortoises are almost entirely herbivorous. The foundation of the diet is unlimited grass hay (Timothy, orchard, or meadow) and a wide variety of dark leafy greens and edible weeds: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Weeds and fibrous leafy greens are the most nutritionally appropriate foods and should dominate the diet.
 
 Avoid high-oxalate foods (spinach, beet greens) as staples, high-protein foods (commercial tortoise pellets should not be primary), and all animal protein. Fruits should be minimal - less than 5% of the diet - as high sugar disrupts gut flora and can cause loose droppings and digestive issues.
@@ -177,11 +177,11 @@ Russian tortoises recognize their keepers and respond to their presence. Many ap
 
 Pyramiding of the shell (raised, bumpy scutes) results from poor diet (excessive protein or fruit), incorrect humidity, and rapid growth rates. Once pyramiding occurs, it is irreversible. Correct diet - primarily hay and fibrous weeds - prevents it.
 
-Hibernation (brumation) is natural and important for Russian tortoises. Animals that are prevented from hibernating develop reproductive problems and shortened lifespans. Consult a tortoise-experienced reptile vet for safe hibernation protocols. Annual veterinary wellness checks are essential - Russian tortoises can live 40 to 80+ years and deserve proactive healthcare for that lifetime.`,
+Hibernation (brumation) is natural for Russian tortoises, though indoor keepers who maintain full lighting, heat, and feeding year-round can choose to keep their tortoise active through winter instead of brumating it. If you do brumate, consult a tortoise-experienced reptile vet for safe hibernation protocols first. Annual veterinary wellness checks are essential - Russian tortoises can live 40 years or more, with some individuals reaching 50-plus, and deserve proactive healthcare for that lifetime.`,
       checklist: [
         "4x4 ft outdoor OR 4x2 ft indoor tortoise table",
         "Strong UVB (T5 HO Arcadia 12%)",
-        "Basking bulb (90 to 100 degrees F hot spot)",
+        "Basking bulb (95 to 100 degrees F hot spot)",
         "Deep substrate (6 inch+ topsoil/sand or coir/sand mix)",
         "Secure 12 inch+ high walls (escape and climb-proof)",
         "Calcium + multivitamin supplements",
@@ -192,12 +192,12 @@ Hibernation (brumation) is natural and important for Russian tortoises. Animals 
       ],
     },
     faqs: [
-      { q: "How long do Russian tortoises live?", a: "40 to 80+ years in captivity, with some individuals documented over 100 years. This is one of the most important facts to understand before acquiring one - a Russian tortoise purchased today may still be alive when passed down to the next generation. Annual wellness checks with a tortoise-experienced veterinarian are essential for this level of commitment." },
+      { q: "How long do Russian tortoises live?", a: "40 years or more in captivity, with some individuals reaching 50-plus. This is one of the most important facts to understand before acquiring one - a Russian tortoise purchased today may still be alive when passed down to the next generation. Annual wellness checks with a tortoise-experienced veterinarian are essential for this level of commitment." },
       { q: "What do Russian tortoises eat?", a: "Dark leafy greens and edible weeds form the dietary core: dandelion greens and flowers, clover, plantain weed, endive, escarole, mustard greens, and collard greens. Unlimited grass hay should always be available. Avoid high-protein foods, excessive fruit, and commercial tortoise pellets as primary food. The diet should be high-fiber and very low in protein and sugar." },
-      { q: "Do Russian tortoises need to hibernate?", a: "Yes - brumation is a natural and important part of Russian tortoise biology. Animals prevented from hibernating can develop reproductive problems and shortened lifespans over time. The hibernation period typically runs from autumn through early spring. Consult a tortoise-experienced reptile veterinarian for safe hibernation protocols before your tortoise's first winter." },
-      { q: "How big do Russian tortoises get?", a: "6 to 10 inches shell length, making them one of the smaller tortoise species commonly kept as pets. Males are usually smaller than females. Their relatively modest size makes them more manageable than larger species like sulcatas, but they still require spacious outdoor enclosures with deep burrowing substrate in warm climates." },
+      { q: "Do Russian tortoises need to hibernate?", a: "It's natural for them, but not mandatory for an indoor pet - keepers who maintain full lighting, heat, and feeding year-round can choose to keep their tortoise active through winter instead. If you do brumate, the dormancy period typically runs 2 to 4 months over winter. Consult a tortoise-experienced reptile veterinarian for safe hibernation protocols before your tortoise's first winter." },
+      { q: "How big do Russian tortoises get?", a: "5 to 10 inches shell length, making them one of the smaller tortoise species commonly kept as pets. Males are usually smaller than females. Their relatively modest size makes them more manageable than larger species like sulcatas, but they still require spacious outdoor enclosures with deep burrowing substrate in warm climates." },
       { q: "Can Russian tortoises live outdoors?", a: "Yes, in appropriate climates - and for many keepers, outdoor housing is the ideal long-term solution. They need an outdoor enclosure with walls buried 12 inches or more underground (they burrow and escape constantly), natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis), access to edible weeds, and a sheltered area for cool or wet weather." },
-      { q: "Are Russian tortoises good pets for beginners?", a: "Among the more manageable tortoises for a first-timer, since they stay a relatively compact 6 to 10 inches, but this is still a 40 to 80+ year commitment that needs real outdoor space in a warm climate or a substantial indoor tortoise table. Go in expecting to plan for decades, not a starter pet in the usual sense." },
+      { q: "Are Russian tortoises good pets for beginners?", a: "Among the more manageable tortoises for a first-timer, since they stay a relatively compact 5 to 10 inches, but this is still a 40-plus year commitment that needs real outdoor space in a warm climate or a substantial indoor tortoise table. Go in expecting to plan for decades, not a starter pet in the usual sense." },
     ],
   },
   {

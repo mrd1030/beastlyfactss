@@ -21,7 +21,7 @@ export const birdEncyclopedia = [
       habitat: "Open grassland, scrubland, and open woodland",
       adultSize: "7 inches (18 cm); 1-1.4 oz",
       wildDiet: "Grass seeds, berries, and plant matter",
-      wildLifespan: "5-8 years (up to 12-15 years in captivity)",
+      wildLifespan: "4-6 years (up to 12-15 years in captivity)",
       conservation: "Least Concern (IUCN)",
     },
   },

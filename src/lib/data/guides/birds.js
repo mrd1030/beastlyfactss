@@ -85,7 +85,7 @@ Annual avian veterinary exams including complete blood panel are essential. Find
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "18x18x24 in cage (larger preferred)", low: 50, high: 100 },
+        { item: "18x18x24 in cage (larger preferred)", low: 100, high: 280 },
         { item: "Perches of varied diameters", low: 15, high: 25 },
         { item: "Swing", low: 6, high: 12 },
         { item: "Ladder", low: 4, high: 8 },
@@ -145,7 +145,7 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
     },
     faqs: [
       { q: "Can budgies learn to talk?", a: "Yes, many can - males are significantly more likely to learn words and phrases than females. The Guinness World Record for most words learned by a bird belongs to a budgie: Puck, who knew 1,728 words. A single male budgie bonded closely to one person and kept in a relatively quiet environment with consistent repetition of words is the setup most likely to produce a talking bird. Talking is never guaranteed, but males in stimulating environments frequently learn their owner's names, phrases, and full sentences over time." },
-      { q: "How long do budgies live?", a: "7 to 12 years with proper care - a lifespan commonly cut short by seed-only diets, which cause fatty liver disease, nutritional deficiencies, and immune suppression. Wild budgies are not adapted to eat seeds as their primary food; seeds are a dry-season fallback, not a dietary staple. Pellet-based diets with daily vegetables are directly linked to longer, healthier lifespans. An avian veterinary wellness check every 1 to 2 years catches common problems early." },
+      { q: "How long do budgies live?", a: "7 to 12 years with proper care - a lifespan commonly cut short by seed-only diets, which cause fatty liver disease, nutritional deficiencies, and immune suppression. Wild budgies are not adapted to eat seeds as their primary food; seeds are a dry-season fallback, not a dietary staple. Pellet-based diets with daily vegetables are directly linked to longer, healthier lifespans. An annual avian veterinary wellness check catches common problems early." },
       { q: "Do budgies need a companion?", a: "They are far happier with one. Budgies are highly social flock animals - a bonded pair will preen each other, communicate constantly, sleep together, and show significantly more active and engaged behavior than a solo bird. A single budgie is not necessarily miserable, but requires several hours of intensive daily human interaction as a substitute for a flock companion. If you can't provide that reliably, a bonded pair of budgies is the far better choice for the bird's wellbeing." },
       { q: "What is the best diet for a budgie?", a: "60 to 70% high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries), supplemented with daily fresh vegetables. Seed mix should be no more than 10 to 20% of the diet, offered in foraging toys rather than open dishes. Millet spray is a high-fat treat to be limited to small amounts 2 to 3 times per week. A cuttlebone provides calcium and trace minerals. The most important dietary change for most budgies is reducing seed and adding pellets - this single step dramatically improves health outcomes." },
       { q: "Are budgies as easy as they are marketed?", a: "They are one of the simpler birds to keep, but are frequently sold as minimal-care starter pets when the reality is more involved. A properly cared-for budgie needs a cage larger than typical starter cages (18x18x24 inches minimum), daily fresh vegetables, regular out-of-cage time in a bird-proofed space, an avian vet relationship, and either a companion bird or several hours of human interaction per day. Within those parameters, they are genuinely manageable and rewarding for first-time bird owners." },
@@ -412,10 +412,10 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "24x24x24 in+ cage (larger preferred)", low: 80, high: 150 },
+        { item: "18x18x24 in+ cage (larger for a pair)", low: 80, high: 150 },
         { item: "Perches and swings", low: 20, high: 35 },
         { item: "Shreddable toys", low: 20, high: 40 },
-        { item: "Sleep tent", low: 10, high: 20 },
+        { item: "Breathable cage cover", low: 10, high: 20 },
       ],
       annual: [
         { item: "Small parrot pellets", low: 70, high: 110 },
@@ -425,11 +425,11 @@ Annual avian veterinary wellness examinations are essential. Green cheek conures
       ],
     },
     sections: {
-      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 24x24x24 inches is required, though 30x24x30 inches or larger is preferred. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers - cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
+      housing: `Lovebirds are small but intensely active and need more cage space than their size implies. A minimum of 18x18x24 inches is required for a single bird, or 24x18x24 inches for a pair, and larger is always better. Bar spacing of 1/2 inch is appropriate. Lovebirds are powerful chewers - cage bars should be thick enough to resist their strong beaks, and any cage with powder coating should be confirmed non-toxic.
 
 Provide multiple perches at different heights and diameters (1/2 to 3/4 inch), swings, and a variety of toys. Natural wood perches are preferred over dowels for foot health. Position the cage at eye level, away from the kitchen, drafts, and direct sunlight. Lovebirds are highly alert and feel most secure when positioned at human eye level with a wall behind the cage.
 
-Provide a sleep area - many lovebirds prefer a small sleeping tent or covered corner for nighttime, and benefit from 10 to 12 hours of covered darkness. Some lovebirds will enthusiastically shred fabric, so inspect sleeping tents regularly for loose threads.
+Provide a consistent sleep routine with 10 to 12 hours of covered darkness at night, using a plain, breathable cage cover rather than an enclosed sleeping tent or "happy hut." Those tunnel-shaped, nest-like products are a documented trigger for hormonal aggression and chronic egg-laying in this species.
 
 Lovebirds are highly social within their species. A bonded pair of lovebirds is happier and healthier than a solo bird, and bonded pairs often have less aggressive territorial behavior toward humans. Introducing a second lovebird requires a careful slow-introduction process.`,
       diet: `High-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries) should constitute 60 to 70% of the diet. A seed-only diet causes the same nutritional deficiencies seen in other parrots: fatty liver, vitamin deficiencies, and shortened lifespan. Pellet transition from seeds is often challenging with lovebirds - they are stubborn - but persistence pays off.
@@ -452,7 +452,7 @@ Psittacosis (Chlamydiosis) is a bacterial infection that can spread to humans. A
 
 Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in other parrots. Annual avian veterinary wellness checks are strongly recommended, particularly blood panels for birds on seed-heavy diets.`,
       checklist: [
-        "Minimum 24x24x24\" cage (larger preferred)",
+        "Minimum 18x18x24\" cage for one bird, 24x18x24\" for a pair (larger preferred)",
         "High-quality lovebird or small parrot pellets",
         "Fresh vegetables and limited fruit",
         "Multiple perches, swings, and ladders",
@@ -465,7 +465,7 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
       ],
     },
     faqs: [
-      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true - solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (several hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
+      { q: "Do lovebirds need to be kept in pairs?", a: "The old myth that a solo lovebird will die of loneliness is not literally true - solo lovebirds can live long healthy lives. However, a solo lovebird requires intensive daily human interaction (roughly two hours of direct engagement) as a substitute for a flock companion. A bonded pair of lovebirds is generally healthier, happier, and easier to keep because the birds meet each other's social needs. If your schedule cannot guarantee consistent daily time with the bird, a bonded pair is the more humane choice." },
       { q: "Can lovebirds learn to talk?", a: "Occasionally, but lovebirds are not known as talkers. Unlike budgies or African greys, speech is rare and the vocabulary stays very small when it does occur. What lovebirds excel at instead is vocalization, contact calling, and developing a strong interactive bond with their keeper. If talking ability is important to you, a budgie or a cockatiel (males) are more reliable choices. Lovebirds compensate with personality, affection, and playfulness." },
       { q: "Do lovebirds bite?", a: "Yes - lovebirds have a strong beak for their size and will use it when frightened, territorial, or over-stimulated. Consistent calm handling from a young age, respecting the bird's signals (fluffing, lunging, eye pinning), and never reaching into the cage when the bird is in a territorial mood significantly reduces biting. Lovebirds that are handled regularly from a young age and bonded to a primary human are generally no worse than any other small parrot, and many are remarkably gentle with their person." },
       { q: "What should lovebirds eat?", a: "60 to 70% of the diet should be high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries). Fresh vegetables daily - leafy greens, bell peppers, broccoli, carrot, and cooked sweet potato - make up the remainder. Limit seed mix to use as enrichment in foraging toys rather than as a dietary staple. Millet is a high-fat treat to be used sparingly. Seed-only diets cause fatty liver disease, vitamin deficiencies, and significantly shortened lifespan in lovebirds just as in all parrots." },

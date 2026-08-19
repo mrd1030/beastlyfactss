@@ -83,18 +83,18 @@ Parasites are less common in AFTs than in many other gecko species but annual fe
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "18x18x24 in arboreal enclosure", low: 100, high: 200 },
-        { item: "Low-output UVB (T5 HO, Zone 1)", low: 45, high: 80 },
+        { item: "18x18x24 in arboreal enclosure", low: 150, high: 200 },
+        { item: "Low-output UVB (T5 HO, Zone 1)", low: 50, high: 80 },
         { item: "Low-wattage heat bulb and fixture", low: 20, high: 40 },
         { item: "Thermostat", low: 30, high: 35 },
         { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
-        { item: "Coconut fiber or bioactive substrate", low: 20, high: 40 },
+        { item: "Coconut fiber or bioactive substrate", low: 15, high: 30 },
         { item: "Cork bark tubes and branches", low: 20, high: 40 },
         { item: "Live or artificial plants", low: 25, high: 45 },
         { item: "Fine misting bottle or fogger", low: 10, high: 40 },
       ],
       annual: [
-        { item: "Commercial crested gecko diet (CGD)", low: 40, high: 70 },
+        { item: "Commercial crested gecko diet (CGD)", low: 60, high: 90 },
         { item: "Feeder insects (crickets, dubia)", low: 60, high: 120 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
         { item: "UVB bulb replacement", low: 45, high: 80 },
@@ -109,12 +109,12 @@ Front-opening enclosures are strongly preferred over top-opening ones. Reaching 
 
 Bioactive setups with live plants (pothos, bromeliads, ficus pumila) are ideal. Live plants help regulate humidity, provide natural hiding spots, and create an aesthetically beautiful display. If going bioactive, add a drainage layer, mix in isopods and springtails as a clean-up crew, and use a quality ABG-style soil mix.
 
-Temperature should stay between 72 and 80 degrees F during the day, dropping to 65 to 72 degrees F at night. Crested geckos do not require supplemental heat in most homes. They are sensitive to heat - temperatures above 85 degrees F can be fatal. Humidity should be 50 to 70% during the day and can spike to 80 to 100% briefly at night after misting, then drop back down. This wet-dry cycle is important for respiratory health.`,
+Temperature should stay between 72 and 80 degrees F during the day, dropping to 65 to 72 degrees F at night. Crested geckos do not require supplemental heat in most homes. They are sensitive to heat - temperatures above 85 degrees F can be fatal. Humidity should stay in the 60 to 80% range, rising after evening misting and dropping to around 40 to 50% during the day. This wet-dry cycle is important for respiratory health.`,
       diet: `A commercial crested gecko diet (CGD) such as Repashy or Pangea should form the nutritional foundation. These powdered meal-replacement diets are scientifically formulated to meet all of a crested gecko's nutritional needs without live insects. Mix the powder with water to a smooth consistency and offer in a raised dish every other day, removing and refreshing every 48 hours to prevent spoilage.
 
 Supplement the CGD with live feeder insects 1 to 2 times per week. Crickets, dubia roaches, and small hornworms are excellent options. Insects add protein variety and behavioral enrichment - crested geckos actively hunt prey and this keeps them mentally stimulated. Insects must be appropriately sized (no wider than the space between the gecko's eyes) to prevent choking.
 
-All feeder insects must be gut-loaded (fed nutritious food for 24 to 48 hours before offering) and dusted with calcium w/D3 supplement 2 to 3 times per week and a reptile multivitamin once per week. Never skip supplementation - metabolic bone disease from calcium deficiency is preventable and devastating when it occurs.
+All feeder insects must be gut-loaded (fed nutritious food for 24 to 48 hours before offering) and lightly dusted with calcium w/D3 supplement each time they're offered, plus a reptile multivitamin once per week. Never skip supplementation - metabolic bone disease from calcium deficiency is preventable and devastating when it occurs.
 
 Always provide fresh, dechlorinated water in a small shallow dish. Crested geckos also drink water droplets from leaves after misting, so consistent misting is a secondary hydration source. Fruit-based purees (mashed mango, banana) can be offered occasionally as a treat but should not replace CGD.`,
       enrichment: `Provide an abundance of climbing structures at varying heights: cork bark tubes, cork rounds, thick and thin branches, and dense live or artificial plants. Crested geckos need multiple perching options to thermoregulate behaviorally and to feel secure. A gecko that has nowhere to hide is a stressed gecko.
@@ -136,7 +136,7 @@ Watch for weight loss, lethargy, loss of appetite, respiratory sounds, or abnorm
     faqs: [
       { q: "How big do crested geckos get?", a: "Adult crested geckos reach 7 to 9 inches total length and 35 to 55 grams at maturity, typically fully grown by 12 to 18 months of age." },
       { q: "Do crested geckos need live insects?", a: "Not strictly, but they benefit from them. A commercial crested gecko diet (CGD) like Repashy or Pangea provides complete nutrition, but live feeder insects 1 to 2 times per week add protein variety and the enrichment of active hunting that CGD alone does not replicate." },
-      { q: "How often should I mist my crested gecko?", a: "Mist lightly once or twice daily. The goal is a brief humidity spike to 80 to 100% after evening misting that drops back to 50 to 70% during the day. This wet-dry cycle is critical for respiratory health and mirrors their native New Caledonian rainforest climate." },
+      { q: "How often should I mist my crested gecko?", a: "Mist lightly once or twice daily. The goal is a 60 to 80% humidity range that rises after evening misting and drops to around 40 to 50% during the day. This wet-dry cycle is critical for respiratory health and mirrors their native New Caledonian rainforest climate." },
       { q: "Can crested geckos lose their tails?", a: "Yes. Crested geckos can drop their tails as a stress or defense response. Unlike leopard geckos, the tail does not regenerate. A tail-less crested gecko (called a frogbutt) is perfectly healthy and suffers no long-term consequences, but the tail is permanently gone." },
       { q: "How long do crested geckos live?", a: "With proper care, crested geckos commonly live 15 to 20 years in captivity, with some exceeding 20 years. Longevity depends heavily on keeping temperatures below 85 degrees F, consistent calcium supplementation, and annual wellness checks with a reptile-savvy veterinarian." },
     ],
@@ -277,7 +277,7 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
     image: "/assets/guides/leopard-gecko.jpg",
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Costs cross-checked against the leopard-gecko-cost-guide.mdx blog post (reviewed 2026-07-06, cited sources).
     costs: {
       setup: [
         { item: "36x18x18 in enclosure", low: 120, high: 220 },
@@ -288,20 +288,20 @@ Temperature spikes above 80 degrees F cause acute heat stress. In summer, this r
         { item: "Digital thermometer (IR gun recommended)", low: 15, high: 30 },
         { item: "Shallow water dish", low: 8, high: 15 },
         { item: "Feeding tongs", low: 5, high: 10 },
-        { item: "Low-output UVB (optional but beneficial)", low: 45, high: 80 },
+        { item: "Low-output UVB (optional but beneficial)", low: 20, high: 50 },
       ],
       annual: [
         { item: "Live insects (crickets, dubia, mealworms)", low: 100, high: 180 },
         { item: "Calcium w/D3 + multivitamin", low: 15, high: 25 },
         { item: "UVB bulb replacement (if used)", low: 45, high: 80 },
         { item: "Electricity (heat)", low: 30, high: 50 },
-        { item: "Annual vet wellness check", low: 50, high: 90 },
+        { item: "Annual vet wellness check", low: 85, high: 105 },
       ],
     },
     sections: {
       housing: `A 36x18x18" enclosure is the current minimum recommendation for a single adult leopard gecko. The old standard of a 20-gallon tank is now considered inadequate by most experienced keepers and veterinarians. Larger enclosures allow for better thermal gradients and more enrichment opportunities, both of which are critical for long-term health. Paper towel or tile is the safest substrate for beginners; never use calcium sand or other loose sand products.
 
-The thermal gradient is essential: provide a warm hide with a belly-heat surface temperature of 88 to 92 degrees F on one end, and a cool hide at 72 to 78 degrees F on the other. Leopard geckos are thermoconformers - they regulate their body temperature by moving between warm and cool zones. Without a proper gradient, they cannot digest food efficiently or support immune function.
+The thermal gradient is essential: provide a warm hide with a belly-heat surface temperature of 88 to 92 degrees F on one end, and a cool hide at 72 to 78 degrees F on the other. Leopard geckos are behavioral thermoregulators - they actively regulate their body temperature by moving between warm and cool zones rather than simply matching ambient temperature. Without a proper gradient, they cannot digest food efficiently or support immune function.
 
 An under-tank heater (UTH) on a quality thermostat is the preferred heat source. Place it under one-third of the enclosure and verify temperatures with an infrared temperature gun, not a stick-on thermometer. Accurate temperature measurement is one of the most important aspects of leopard gecko husbandry.
 
@@ -314,7 +314,7 @@ Hatchlings and young juveniles eat daily, older juveniles can move to daily or e
 
 Gut-loading feeder insects is non-negotiable. Feed insects a nutritious diet (fresh vegetables, commercial gut-load powder) for 24 to 48 hours before offering them. A gut-loaded cricket is dramatically more nutritious than one kept on cardboard. The gecko's nutrition is only as good as what its prey was eating.
 
-Dusting with calcium w/D3 is required at every feeding for juveniles and 2 to 3 times per week for adults. A reptile multivitamin should be added once per week. A small calcium dish placed inside the enclosure allows self-supplementation between feedings. Fresh, dechlorinated water in a shallow dish must always be available.`,
+Dust with plain calcium at most feedings, more often for juveniles than adults. Add calcium with D3 only a couple of times a week, and only if the setup doesn't include meaningful UVB exposure, since a gecko getting UVB is already synthesizing its own D3 and doesn't need it piled on through diet as well. A reptile multivitamin should be added once per week. A small calcium dish placed inside the enclosure allows self-supplementation between feedings. Fresh, dechlorinated water in a shallow dish must always be available.`,
       enrichment: `Provide a minimum of three hides: one at the warm end, one at the cool end, and the moist hide. Hides should be snug - leopard geckos feel secure when the hide walls touch their sides. An overly large hide does not provide the psychological security a snug one does.
 
 Cork bark flats and pieces, slate tiles, and textured stone provide natural-feeling surfaces for walking, exploring, and thermoregulating. Leopard geckos investigate their entire enclosure and will benefit from varied textures and objects to explore and move around.
@@ -326,7 +326,7 @@ Handle regularly for taming, starting with 5-minute sessions and building to 10 
 
 Metabolic Bone Disease (MBD) results from chronic calcium or vitamin D3 deficiency. Early signs include trembling limbs, difficulty walking, rubber jaw, and lethargy. Advanced MBD causes permanent skeletal deformities. Consistent supplementation and UVB exposure prevent it entirely.
 
-Cryptosporidiosis (Crypto) is a parasitic infection caused by Cryptosporidium varanae. It causes severe weight loss despite normal or increased appetite. There is no reliable cure. It is highly contagious between geckos. Always quarantine new animals for 60 to 90 days in a separate room before any contact with existing geckos.
+Cryptosporidiosis (Crypto) is a parasitic infection, most often caused by Cryptosporidium varanii in this species. It causes severe weight loss despite normal or increased appetite. There is no reliable cure. It is highly contagious between geckos. Always quarantine new animals for 60 to 90 days in a separate room before any contact with existing geckos.
 
 Obesity is common in adult leopard geckos fed primarily mealworms or waxworms. A plump tail is healthy; fat deposits around the neck and armpits are a sign of obesity. Feed a varied diet and avoid waxworms as more than an occasional treat. Annual fecal exams and wellness checks with a reptile vet are recommended - especially for any gecko that stops eating or shows behavioral changes.`,
       checklist: ["36x18x18\" enclosure", "Under-tank heater (UTH) with thermostat", "3 hides (warm, cool, moist)", "Sphagnum moss for moist hide", "Digital thermometer (infrared gun recommended)", "Calcium w/D3 supplement", "Multivitamin supplement", "Shallow water dish", "Live insects (crickets, dubia, mealworms)", "Low-output UVB (optional but beneficial)"],

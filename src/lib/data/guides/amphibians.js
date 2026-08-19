@@ -11,9 +11,9 @@ export const amphibianGuides = [
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "20-gallon long+ aquarium", low: 100, high: 200 },
+        { item: "20-gallon long+ aquarium", low: 50, high: 150 },
         { item: "Aquarium chiller (keeps water 60-68°F)", low: 150, high: 350 },
-        { item: "Gentle sponge or baffled canister filter", low: 30, high: 60 },
+        { item: "Gentle sponge or baffled canister filter", low: 20, high: 120 },
         { item: "Substrate (fine sand, or bare bottom)", low: 0, high: 25 },
         { item: "Caves, PVC pipes, and hides", low: 20, high: 40 },
         { item: "Digital thermometer", low: 10, high: 15 },

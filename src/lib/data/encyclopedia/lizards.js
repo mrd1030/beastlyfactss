@@ -36,7 +36,7 @@ export const lizardEncyclopedia = [
       overview: "The inland bearded dragon is native to Australia's arid and semi-arid interior, where it basks on rocks and fence posts in open woodland and scrubland. They take their name from the expandable, spiny throat pouch - the \"beard\" - which darkens to black when threatened or excited. Among the most social of reptile pets, beardies are capable of forming genuine bonds with their keepers and are often described as having distinct personalities.",
       origin: "Australia (central and eastern interior)",
       habitat: "Arid woodland, scrubland, and rocky desert",
-      adultSize: "18-24 inches (45-60 cm) including tail",
+      adultSize: "16-24 inches (40-60 cm) including tail",
       wildDiet: "Omnivore - insects, vegetation, flowers, and small vertebrates",
       wildLifespan: "5-8 years (predation and disease cut wild lifespans well short of the 10-15 years typical in captivity)",
       conservation: "Least Concern (IUCN)",
