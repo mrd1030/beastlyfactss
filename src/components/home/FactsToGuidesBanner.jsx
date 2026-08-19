@@ -14,7 +14,7 @@ export default function FactsToGuidesBanner() {
         className="max-w-6xl mx-auto text-center"
       >
         <p className="text-sm sm:text-base font-body text-muted-foreground">
-          That's just a taste. <span className="text-foreground font-body font-semibold">63 species profiles</span> and <span className="text-foreground font-body font-semibold">50+ care guides</span> are waiting below.
+          That's just a taste. <span className="text-foreground font-body font-semibold">63 species profiles</span> and <span className="text-foreground font-body font-semibold">300+ care guides</span> are waiting below.
         </p>
       </motion.div>
     </section>
