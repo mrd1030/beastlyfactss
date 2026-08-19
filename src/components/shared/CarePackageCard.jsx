@@ -20,19 +20,19 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
         isComingSoon ? 'opacity-80' : 'hover:border-secondary/40 hover:shadow-md'
       }`}
     >
-      <div className="aspect-[16/10] overflow-hidden bg-muted flex items-center justify-center">
+      <div className="aspect-video overflow-hidden bg-muted flex items-center justify-center">
         {pkg.image ? (
           <img
             src={pkg.image}
             alt={`${pkg.name} cover`}
             loading="lazy"
-            // object-contain, not object-cover: the source covers are a
-            // different aspect ratio than this card, and object-cover was
-            // cropping into the BeastlyFacts logo badge near the top-right
-            // corner of the cover art. Full image, letterboxed on bg-muted,
-            // beats a cropped one - applies to every package's card, not
-            // just this one.
-            className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-300"
+            // aspect-video (16:9) matches the real Gumroad cover art
+            // (670x376) pixel-for-pixel, so object-cover here needs to trim
+            // essentially nothing - no letterbox bars, and no crop deep
+            // enough to reach the logo badge or title text on the cover.
+            // The old aspect-[16/10] container was the actual mismatch;
+            // fixing the ratio here made the object-fit choice moot.
+            className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300"
           />
         ) : (
           <span className="text-4xl" role="img" aria-label={pkg.animal}>{pkg.emoji || '📘'}</span>
