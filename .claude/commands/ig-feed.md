@@ -94,7 +94,9 @@ PHASE 2: WRITE (after approval only)
     blocks.
 3.  No url. Links are dead in captions. Close with "link in bio" only when the
     article genuinely adds something the post did not cover, and not more than
-    3 times in the week.
+    3 times in the week. When a post says "link in bio", also print the
+    BIO TARGET so we know what to swap the bio link to that day. Build it per
+    the URL rules below.
 4.  Hashtags go in their own block after the caption, separated by a line of
     blank space. 5 to 10 tags, all specific to species and niche. Banned:
     #animals #cute #instagood #petsofinstagram #love #nature and anything with
@@ -105,6 +107,20 @@ PHASE 2: WRITE (after approval only)
     the setting, and anything the caption references.
 6.  End 3 of the 7 captions with a real question. Not "thoughts?". A question a
     keeper would answer with a specific setup or number.
+
+--- URL RULES (for BIO TARGET only, verified against generate-sitemap.js) ---
+  EVERY article in content/guides, content/fun-facts, and content/blog
+  renders at https://beastlyfacts.com/blog/{frontmatter slug}/. Yes, guides
+  too. getMdxPosts() in generate-sitemap.js maps every non-chronicle MDX post
+  to /blog/{slug}/. There is no /guides/{article-slug}/ route.
+
+  /guides/{species}/ is a different, hand-maintained species hub page. Use it
+  only to point at a whole species, and only for a species listed in
+  staticPages in generate-sitemap.js. Never build one from an article slug.
+
+  Chronicles are at /chronicles/dex/{n}/ and /chronicles/otis/{n}/, where {n}
+  is the 1-based position when that series is sorted by frontmatter `date`
+  ascending, not the number in the filename. Recompute the sort.
 
 --- CAROUSEL SPEC (listicles only) ---
   3 to 6 slides. State the count.
@@ -196,4 +212,5 @@ State pass or fail on each. Fix failures before outputting.
   [ ] Every QUOTE USED appears verbatim in its named file
   [ ] No image path used twice
   [ ] 3 or more captions end on a real question
-  [ ] "link in bio" used 3 times or fewer
+  [ ] "link in bio" used 3 times or fewer, each with a BIO TARGET printed
+  [ ] Every BIO TARGET is /blog/{slug}/, never /guides/{article-slug}/

@@ -68,7 +68,7 @@ For each pick, output:
               YES or NO, plus one line on what the pushback is.
   ANGLE:      <one line>
   IMAGE:      <frontmatter `image` value, or NONE>
-  URL:        <live url, or UNVERIFIED>
+  URL:        <live url, built per the URL rules below>
 
 Prefer picks where DISAGREES is YES. Aim for at least 4 of 7. A fact nobody can
 respond to is a dead post here, however true it is.
@@ -77,11 +77,32 @@ QUOTE rules:
   From the body, never the seoTitle, excerpt, or description. The sharpest
   claim, not a topic sentence. Character for character. It will be grepped.
 
-URL rules:
-  Guides at     https://beastlyfacts.com/guides/{slug}/
-  Chronicles at https://beastlyfacts.com/chronicles/{series}/{part}/
-  Others at     https://beastlyfacts.com/blog/{slug}/
-  Not certain which route a file uses? Write UNVERIFIED. Do not guess.
+URL rules (verified against generate-sitemap.js, do not deviate):
+
+  EVERY article in content/guides, content/fun-facts, and content/blog
+  renders at:
+      https://beastlyfacts.com/blog/{frontmatter slug}/
+
+  Yes, guides too. getMdxPosts() in generate-sitemap.js maps every
+  non-chronicle MDX post to /blog/{slug}/. There is no
+  /guides/{article-slug}/ route and building one produces a 404.
+
+  /guides/{species}/ is a DIFFERENT page: a hand-maintained species hub that
+  links a species' split care guides. Use it only to point at a whole species
+  rather than one article, and only for a species that appears in the
+  staticPages list in generate-sitemap.js. Never build one from an article
+  slug.
+
+  Chronicles render at:
+      https://beastlyfacts.com/chronicles/dex/{n}/
+      https://beastlyfacts.com/chronicles/otis/{n}/
+  where {n} is the story's 1-based position when that series is sorted by
+  frontmatter `date` ASCENDING. Chronicles.jsx resolves the route as
+  parts[n - 1] against that date-sorted array, so {n} is NOT read from the
+  filename or the title. As of the last check the two agree (13 parts each,
+  a file named part-N lands at /N/), but the URL is derived from date order,
+  so a backdated or inserted story shifts everything after it. Recompute the
+  sort, do not trust the filename.
 
 =====================================================================
 PHASE 2: WRITE (after approval only)
@@ -189,4 +210,5 @@ State pass or fail on each. Fix failures before outputting.
   [ ] Every QUOTE USED appears verbatim in its named file
   [ ] Every post has a planned reply written
   [ ] No copy identical to the X calendar
-  [ ] No url marked UNVERIFIED made it into a reply
+  [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
+  [ ] Every chronicles part number was derived from date order, not filename

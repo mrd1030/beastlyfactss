@@ -62,7 +62,7 @@ For each pick, output exactly:
   QUOTE:  "<verbatim sentence from the BODY, 1 to 2 sentences max>"
   ANGLE:  <one line: what the post argues>
   IMAGE:  <frontmatter `image` value, verbatim>
-  URL:    <live url, or UNVERIFIED>
+  URL:    <live url, built per the URL rules below>
 
 QUOTE rules:
   - From the article body. Never the seoTitle, excerpt, or description.
@@ -72,13 +72,35 @@ QUOTE rules:
     another, and say which you dropped.
   - Character for character. It will be grepped.
 
-URL rules:
-  Guides render at https://beastlyfacts.com/guides/{slug}/
-  Chronicles at    https://beastlyfacts.com/chronicles/{series}/{part}/
-  Others at        https://beastlyfacts.com/blog/{slug}/
-  If you are not certain which route a file renders under, write UNVERIFIED.
-  A 404 in the one link slot we get is the worst outcome possible. Do not
-  guess.
+URL rules (verified against generate-sitemap.js, do not deviate):
+
+  EVERY article in content/guides, content/fun-facts, and content/blog
+  renders at:
+      https://beastlyfacts.com/blog/{frontmatter slug}/
+
+  Yes, guides too. getMdxPosts() in generate-sitemap.js maps every
+  non-chronicle MDX post to /blog/{slug}/. There is no
+  /guides/{article-slug}/ route and building one produces a 404.
+
+  /guides/{species}/ is a DIFFERENT page: a hand-maintained species hub that
+  links a species' split care guides. Use it only to point at a whole species
+  rather than one article, and only for a species that appears in the
+  staticPages list in generate-sitemap.js. Never build one from an article
+  slug.
+
+  Chronicles render at:
+      https://beastlyfacts.com/chronicles/dex/{n}/
+      https://beastlyfacts.com/chronicles/otis/{n}/
+  where {n} is the story's 1-based position when that series is sorted by
+  frontmatter `date` ASCENDING. Chronicles.jsx resolves the route as
+  parts[n - 1] against that date-sorted array, so {n} is NOT read from the
+  filename or the title. As of the last check the two agree (13 parts each,
+  a file named part-N lands at /N/), but the URL is derived from date order,
+  so a backdated or inserted story shifts everything after it. Recompute the
+  sort, do not trust the filename.
+
+  The first reply is the only link slot we get. A 404 there wastes the whole
+  post.
 
 If you cannot fill the mix from 60 files, say what you are short of. Do not
 pad with older content or repeat a species to hit the count.
@@ -179,4 +201,5 @@ failing calendar with a note attached.
   [ ] Every QUOTE USED appears verbatim in its named file
   [ ] No image path used twice
   [ ] 3 or more posts end on a real question
-  [ ] No url marked UNVERIFIED made it into a first reply
+  [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
+  [ ] Every chronicles part number was derived from date order, not filename
