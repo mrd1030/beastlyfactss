@@ -80,3 +80,9 @@ const app = (
 preloadForCurrentRoute().finally(() => {
   ReactDOM.hydrateRoot(document.getElementById('root'), app);
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
