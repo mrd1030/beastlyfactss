@@ -1,6 +1,6 @@
 ---
 description: Build a 7 day X calendar for @Beastly_Facts from repo content. Native posts, url in first reply only.
-argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [notes to steer picks]"
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [notes to steer picks]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
@@ -9,11 +9,15 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 ARGUMENTS: $ARGUMENTS
 
 How to read the arguments:
-- Empty, or anything that is not "go": run PHASE 1 only, then stop. Treat any
-  extra text as steering for which sources to favor.
+- Empty, or anything that is not "go": run PHASE 1 only, then stop.
 - Starts with "go": run PHASE 2 using the shortlist already approved earlier in
   this conversation. If there is no approved shortlist in context, say so and
   run PHASE 1 instead. Never invent a shortlist you were not given.
+- CADENCE: if the arguments name a per-day volume ("2 facts 2 articles",
+  "3 and 2", "two of each"), use it for both phases and pass it through to the
+  inventory script. Default is 1 fact + 1 article per day. Carry the same
+  cadence into Phase 2 that Phase 1 was approved at.
+- Anything else is steering for which sources to favor.
 
 ---
 
@@ -34,29 +38,62 @@ WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 PHASE 1: SOURCE SHORTLIST
 =====================================================================
 
-Content locations:
-  content/guides/*.mdx       433 care guides, split into cost / handling /
-                             health / tank setup / feeding / legal per
-                             species. The splits stay split.
-  content/fun-facts/*.mdx    20 fact listicles
-  content/short-story/*.mdx  26 chronicles. Dex (bearded dragon, pompous,
-                             self-serious, wrong about himself). Otis
-                             (bunny).
-  content/blog/*.mdx         1 file. Ignore it.
-  content/_scheduled-*       NOT LIVE. Never source from here.
+TWO TRACKS, at the cadence the arguments ask for. Default 1 fact + 1 article
+per day. At 2 and 2 a week is 14 facts and 14 articles, 28 posts.
 
-Every guide is status: "published", so status filters nothing. Sort by the
-frontmatter `date` field descending and work from the most recent 60 files.
+Do NOT read the content directories by hand and do NOT limit yourself to recent
+files. The whole library is in play and it is far more than fits in context.
+Both pools grow as facts and articles are added, so never quote a count from
+memory or from an earlier run. Start here every time:
 
-Pick 7 sources:
-  3 care guides, 3 different species, and not 3 of the same split type
-  2 fun-facts (or a FunFact block inside a guide), different animal class
-  1 Dex chronicle
-  1 Otis chronicle
+    node scripts/social-inventory.mjs stats
+    node scripts/social-inventory.mjs plan 7 --facts-per-day N --articles-per-day M
 
-No species repeats across the week. Never three reptiles consecutively.
+`stats` reports the current pool sizes, how much the ledger has already
+consumed, and the runway at several cadences. Read it before proposing a
+cadence change: a higher volume shortens the runway proportionally, and it
+names which track runs out first.
 
-For each pick, output exactly:
+`plan` proposes picks drawn from the WHOLE library, spread by a stable hash
+rather than by date, so old material surfaces as readily as new. It enforces:
+nothing the ledger marks as posted, category spread scaled to the ask, no photo
+used twice in the run, no species repeated, care-guide split types spread, no
+collision between the fact and article tracks, and striping so a single day
+does not get two of the same kind. Treat its output as the starting shortlist,
+not a verdict. Override any pick whose source turns out to be weak, and say
+what you swapped and why.
+
+Useful when overriding:
+    node scripts/social-inventory.mjs facts --unused --limit 40
+    node scripts/social-inventory.mjs articles --unused --kind fact-article
+    node scripts/social-inventory.mjs articles --unused --kind chronicle
+    node scripts/social-inventory.mjs plan 7 --recent   (recency bias, opt in)
+
+Source shape:
+  FACTS     src/lib/data/facts.js, curated facts keyed by stable id. Ids are
+            load-bearing: favorites are keyed by id and gaps are deliberate.
+            Never renumber, never invent an id.
+  ARTICLES  content/guides (care guides split cost / handling / health /
+            tank setup / feeding / legal / enrichment, plus standalone fact
+            articles), content/fun-facts (listicles), content/short-story
+            (chronicles: Dex the bearded dragon, pompous and self-serious;
+            Otis the bunny). content/blog holds one file, ignore it.
+            content/_scheduled-* is NOT LIVE, never source from it.
+
+Across the week the ARTICLE track must include at least one Dex or Otis
+chronicle and at least one standalone fact article. Never three reptiles
+consecutively on either track. If the run is short of either, `plan` says so on
+a SHORT line: report that rather than padding around it.
+
+For each FACT pick, output exactly:
+  FACT ID:  <id from facts.js>
+  ANIMAL:   <animal field>  CATEGORY: <category field>
+  QUOTE:    "<verbatim from the `fact` field, the sharpest clause>"
+  ANGLE:    <one line: what the post argues>
+  IMAGE:    <resolved image path>  <own | SHARED>
+  URL:      https://beastlyfacts.com/facts/{slugify(title)}/
+
+For each ARTICLE pick, output exactly:
   FILE:   content/.../slug.mdx
   DATE:   <frontmatter date>
   QUOTE:  "<verbatim sentence from the BODY, 1 to 2 sentences max>"
@@ -65,12 +102,23 @@ For each pick, output exactly:
   URL:    <live url, built per the URL rules below>
 
 QUOTE rules:
-  - From the article body. Never the seoTitle, excerpt, or description.
-  - It must be the sharpest CLAIM in the piece: something a keeper could
-    disagree with, be surprised by, or act on tonight. Not a topic sentence.
-  - If a file's best line is still an SEO restatement, drop the file, pick
-    another, and say which you dropped.
+  - Articles: from the BODY. Never the seoTitle, excerpt, or description.
+  - Facts: from the `fact` field in facts.js. The fact text is already tight,
+    so quote the clause that carries the claim, not the whole entry.
+  - It must be the sharpest CLAIM available: something a keeper could disagree
+    with, be surprised by, or act on tonight. Not a topic sentence.
+  - If a source's best line is still an SEO restatement, drop it, take the next
+    candidate from the inventory, and say which you dropped.
   - Character for character. It will be grepped.
+
+IMAGE rules at Phase 1:
+  A fact marked SHARED resolves through ANIMAL_IMAGES by animal name rather
+  than to its own photo, so every fact about that animal returns the same file.
+  Roughly two facts in five are in that position, and `stats` prints the
+  current number. Two SHARED facts for the same animal in one week means the
+  same photo posted twice, which the house rules forbid.
+  `plan` already blocks it inside a run, but if you override a pick by hand,
+  check it yourself.
 
 URL rules (verified against generate-sitemap.js, do not deviate):
 
@@ -88,6 +136,16 @@ URL rules (verified against generate-sitemap.js, do not deviate):
   staticPages list in generate-sitemap.js. Never build one from an article
   slug.
 
+  Individual FACTS render at:
+      https://beastlyfacts.com/facts/{slugify(fact title)}/
+  built from the fact's TITLE, not its animal or id, using the slugify rule in
+  src/lib/utils/slugify.js (note that "&" and the standalone word "and" both
+  become "-and-"). These pages are prerendered and set their own canonical, but
+  they carry noindex. That is an SEO choice and does not affect a human opening
+  the link, so they are fine as a first-reply target. The inventory script
+  prints the resolved url for every fact, so use that rather than building it
+  by hand.
+
   Chronicles render at:
       https://beastlyfacts.com/chronicles/dex/{n}/
       https://beastlyfacts.com/chronicles/otis/{n}/
@@ -102,8 +160,9 @@ URL rules (verified against generate-sitemap.js, do not deviate):
   The first reply is the only link slot we get. A 404 there wastes the whole
   post.
 
-If you cannot fill the mix from 60 files, say what you are short of. Do not
-pad with older content or repeat a species to hit the count.
+If the inventory cannot fill the mix, say exactly what ran short. Do not pad
+by repeating a species, reusing a photo, or pulling something the ledger
+already marks as posted.
 
 =====================================================================
 PHASE 2: WRITE (after approval only)
@@ -114,7 +173,10 @@ PHASE 2: WRITE (after approval only)
 2.  The url goes in the FIRST REPLY only. One line of context, then the url.
     Not "read the full guide". Give a reason to click that is different from
     what the main post already said.
-3.  Max 2 original posts per day. Prefer 1.
+3.  Post the requested cadence, no more. Give every post its own time slot and
+    space them across waking hours, never back to back. Two posts sit in
+    opposite halves of the day. Four or more should be at least 3 hours apart,
+    and no two posts from the same track run consecutively.
 4.  Main post under 280 characters. Count it and show the count.
 5.  Zero hashtags unless exactly one genuinely fits.
 6.  One post, one take. Never the seoTitle.
@@ -144,7 +206,12 @@ Hard bans:
   QUESTION     A claim, then a question with a real answer or a real argument.
                Never "thoughts?".
 
-At least 3 of the 7 posts end on a real question.
+At least a quarter of the week's posts end on a real question, and at least
+one of those is on the fact track.
+
+Fact posts are their own register. A fact post is short, one claim, no setup,
+and it does NOT need the article track's framing. Do not turn a fact into a
+mini care guide. If the fact cannot stand as 2 or 3 lines, pick another.
 
 --- THE THREAD (one per week, replaces that day's single post) ---
 3 to 5 posts on ONE husbandry mistake, from ONE guide.
@@ -165,12 +232,15 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Species | Shape | Source file
+Table: Day | Fact (id + animal) | Article (species + kind) | Shapes
 
 ## Day 1 through Day 7
-  DAY / TIME:   one slot, not three options
+Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+
+  DAY / TIME:   one slot per post, not three options
+  TRACK:        fact | article
   SHAPE:        claim | correction | cost | scene | question | thread
-  SOURCE:       content/.../file.mdx
+  SOURCE:       facts.js id=<n>   or   content/.../file.mdx
   QUOTE USED:   "<verbatim>"
   SUPPORTS:     <the one sentence in the post this quote backs>
 
@@ -181,8 +251,16 @@ Table: Day | Species | Shape | Source file
   FIRST REPLY
   <one line + url>
 
-  IMAGE:        <frontmatter path>
+  IMAGE:        <resolved path>
   WHY THIS ONE: <one sentence>
+
+## Ledger
+The exact commands to run once the week is actually posted, one line per item,
+ready to paste. Nothing is consumed until these run, so a week that gets
+scheduled but not marked will be proposed again.
+
+    node scripts/social-inventory.mjs mark --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --article content/.../file.mdx --date YYYY-MM-DD
 
 ## What to cancel
 Any queued seoTitle + excerpt + url posts still scheduled this week, and a one
@@ -195,11 +273,15 @@ failing calendar with a note attached.
   [ ] No banned phrase
   [ ] No url in any main post
   [ ] Every main post under 280 chars
-  [ ] No species repeats
+  [ ] No species repeats, across BOTH tracks
   [ ] No three reptiles in a row
   [ ] No post shape used twice consecutively
-  [ ] Every QUOTE USED appears verbatim in its named file
-  [ ] No image path used twice
-  [ ] 3 or more posts end on a real question
+  [ ] No two posts from the same track scheduled back to back
+  [ ] Every article QUOTE USED appears verbatim in its named file
+  [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
+  [ ] No image path used twice, SHARED fact photos included
+  [ ] A quarter or more of posts end on a real question, at least one a fact
+  [ ] The article track includes a chronicle and a standalone fact article
+  [ ] Ledger section lists a mark command for every post
   [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
   [ ] Every chronicles part number was derived from date order, not filename
