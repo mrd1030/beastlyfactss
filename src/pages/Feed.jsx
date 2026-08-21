@@ -70,7 +70,7 @@ export default function Feed() {
   const pageTitle = tag ? `#${tag} | Feed | Beastly Facts` : 'Feed | Beastly Facts';
   const pageDescription = tag
     ? `Posts tagged #${tag} on the Beastly Facts feed.`
-    : "Photos and clips from Beastly Facts - the cool stuff we post on social media, collected here too.";
+    : "Photos and clips from Beastly Facts. The cool stuff we post on social media, animal pics and behind the scenes moments, collected here too.";
   const canonicalUrl = tag ? `https://beastlyfacts.com/feed/tag/${tag}/` : 'https://beastlyfacts.com/feed/';
 
   return (
@@ -87,6 +87,10 @@ export default function Feed() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Beastly Facts - amazing animal trivia and care guides" />
       </Helmet>
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">

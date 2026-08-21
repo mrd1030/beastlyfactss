@@ -3,6 +3,7 @@ import { motion } from '@/lib/motion-safe';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import FactFileRow from '@/components/shared/FactFileRow';
 import { mdxPosts } from '@/lib/mdxPosts';
+import { isChroniclesPost } from '@/lib/chronicles';
 import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
 import buildStamp from '@/lib/generated/build-stamp.json';
@@ -52,6 +53,7 @@ function selectRelated({ currentPostId, categorySlug, cutoff, seed, factFilesOnl
   const pool = mdxPosts.filter(
     (p) =>
       idOf(p) !== currentPostId &&
+      !isChroniclesPost(p) &&
       dayOf(p) <= cutoff &&
       (!factFilesOnly || (p.factFile && p.myth && p.truth))
   );

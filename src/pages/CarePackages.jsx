@@ -7,7 +7,7 @@ import CarePackagesNav from '@/components/shared/CarePackagesNav';
 import CarePackageCard from '@/components/shared/CarePackageCard';
 
 const TITLE = 'Printable Care Packages | Beastly Facts';
-const DESCRIPTION = 'Printable PDF owner manuals for reptiles, birds, fish, and small mammals - the same research standards as our free guides, formatted to print and keep by the enclosure.';
+const DESCRIPTION = 'Printable PDF owner manuals for reptiles, birds, fish, and small mammals. Same research standards as our free guides, formatted to keep by the enclosure.';
 
 const FEATURES = [
   { emoji: '🖨️', title: 'Print what matters', body: 'Temperature targets, shopping lists, first-30-days plans, and daily routines designed to live near the habitat.' },
