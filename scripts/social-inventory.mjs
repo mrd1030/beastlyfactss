@@ -1,16 +1,16 @@
 // Social posting inventory: the full library, not a recency window.
 //
 // The X/IG/Threads feed commands (.claude/commands/*-feed.md) run daily on two
-// tracks - one fact and one article - which means ~291 fact slots and ~479
-// article slots before anything repeats. That is far past what fits in a
-// conversation, so what has already gone out lives in social-ledger.json and
-// this script is how a feed run knows what is still unused.
+// tracks at a configurable cadence, drawing on pools far larger than fit in a
+// conversation. What has already gone out lives in social-ledger.json and this
+// script is how a feed run knows what is still unused. Run `stats` for current
+// pool sizes rather than quoting a number from here, since both pools grow.
 //
 // Read-only apart from `mark`. It never touches content/ or src/.
 //
 //   node scripts/social-inventory.mjs facts [--unused] [--limit N]
 //   node scripts/social-inventory.mjs articles [--unused] [--limit N] [--kind guide|fact-article|chronicle]
-//   node scripts/social-inventory.mjs plan [days]        propose N days of fact+article pairs
+//   node scripts/social-inventory.mjs plan [days] [--facts-per-day N] [--articles-per-day M] [--recent]
 //   node scripts/social-inventory.mjs stats
 //   node scripts/social-inventory.mjs mark --fact 12 --article content/guides/x.mdx --date 2026-08-22
 
@@ -75,8 +75,9 @@ function loadFacts() {
   return facts;
 }
 
-// Mirrors imagePathFor() in src/lib/data/factImages.js: a dedicated per-id
-// photo wins, otherwise the shared per-animal one.
+// Mirrors imagePathFor() in src/lib/data/factImages.js: a per-id photo wins,
+// otherwise the per-animal one. Both point at distinct files, so name
+// resolution is not a fallback to a lesser image.
 function loadFactImages() {
   const src = fs.readFileSync(path.join(ROOT, 'src/lib/data/factImages.js'), 'utf8');
   const aStart = src.indexOf('ANIMAL_IMAGES');
@@ -84,26 +85,37 @@ function loadFactImages() {
   const aBlock = src.slice(aStart, fStart > 0 ? fStart : src.length);
   const fBlock = fStart > 0 ? src.slice(fStart) : '';
   const byAnimal = {}, byId = {};
-  for (const m of aBlock.matchAll(/['"]([^'"]+)['"]:\s*['"]([^'"]+)['"]/g)) byAnimal[m[1]] = m[2];
+  // Keys are quoted with either quote char and may contain the other one
+  // ("Wallace's Flying Frog"), so match each quoting style separately. A naive
+  // [^'"]+ class silently drops those keys and makes the fact look photoless.
+  const KEYED = /(?:"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)')\s*:\s*(?:"([^"]*)"|'([^']*)')/g;
+  for (const m of aBlock.matchAll(KEYED)) {
+    const key = m[1] !== undefined ? m[1] : m[2];
+    const val = m[3] !== undefined ? m[3] : m[4];
+    if (key && val) byAnimal[key.replace(/\\(.)/g, '$1')] = val;
+  }
   for (const m of fBlock.matchAll(/(\d+):\s*['"]([^'"]+)['"]/g)) byId[Number(m[1])] = m[2];
   return { byAnimal, byId };
 }
 
 function decorateFacts(facts) {
   const { byAnimal, byId } = loadFactImages();
-  return facts.map(f => {
-    const dedicated = byId[f.id] || null;
-    const shared = byAnimal[f.animal] || null;
-    return {
-      ...f,
-      url: `${BASE}/facts/${slugify(f.title)}/`,
-      image: dedicated || shared || null,
-      // A shared image is one several facts of the same animal resolve to. Two
-      // such facts in one week would put the same photo out twice, which the
-      // house rules forbid.
-      imageShared: !dedicated && Boolean(shared),
-    };
-  });
+  const decorated = facts.map(f => ({
+    ...f,
+    url: `${BASE}/facts/${slugify(f.title)}/`,
+    image: byId[f.id] || byAnimal[f.animal] || null,
+  }));
+
+  // Sharing means two facts genuinely resolving to the SAME FILE, which is what
+  // the house rule forbids. Resolving via ANIMAL_IMAGES rather than FACT_IMAGES
+  // is not by itself sharing: every animal key points at its own photo, and an
+  // animal with several facts carries per-id entries for them. Today no file is
+  // used twice, but this is computed rather than assumed so that adding facts
+  // faster than photos surfaces the collision instead of hiding it.
+  const count = {};
+  for (const f of decorated) if (f.image) count[f.image] = (count[f.image] || 0) + 1;
+  for (const f of decorated) f.imageShared = Boolean(f.image) && count[f.image] > 1;
+  return decorated;
 }
 
 // ---------------------------------------------------------------- articles
@@ -242,8 +254,11 @@ function printStats() {
 
   console.log(`facts        ${facts.length} total, ${fUsed.size} posted, ${remainingFacts} left`);
   for (const [k, v] of Object.entries(byCat)) console.log(`  ${k.padEnd(20)} ${v}`);
-  console.log(`  no photo           ${facts.filter(f => !f.image).length}`);
-  console.log(`  shared photo       ${facts.filter(f => f.imageShared).length}`);
+  const noPhoto = facts.filter(f => !f.image);
+  const shared = facts.filter(f => f.imageShared);
+  console.log(`  unique photo       ${facts.length - noPhoto.length - shared.length}`);
+  console.log(`  shares a photo     ${shared.length}${shared.length ? '  <- breaks the one-photo-per-fact rule' : ''}`);
+  console.log(`  no photo           ${noPhoto.length}${noPhoto.length ? `  ids ${noPhoto.map(f => f.id).join(',')}` : ''}`);
   console.log(`articles     ${articles.length} total, ${aUsed.size} posted, ${remainingArticles} left`);
   for (const [k, v] of Object.entries(byKind)) console.log(`  ${k.padEnd(20)} ${v}`);
 

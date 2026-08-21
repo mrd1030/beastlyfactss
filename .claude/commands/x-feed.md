@@ -112,13 +112,18 @@ QUOTE rules:
   - Character for character. It will be grepped.
 
 IMAGE rules at Phase 1:
-  A fact marked SHARED resolves through ANIMAL_IMAGES by animal name rather
-  than to its own photo, so every fact about that animal returns the same file.
-  Roughly two facts in five are in that position, and `stats` prints the
-  current number. Two SHARED facts for the same animal in one week means the
-  same photo posted twice, which the house rules forbid.
-  `plan` already blocks it inside a run, but if you override a pick by hand,
-  check it yourself.
+  Every fact currently has its own photo, no two facts share a file, and none
+  is missing one. Some resolve by id through FACT_IMAGES and some by animal
+  name through ANIMAL_IMAGES, but both point at distinct files, so the
+  resolution route says nothing about image quality and is not worth
+  mentioning in the shortlist.
+
+  `stats` recomputes this every run. If it ever reports a nonzero "shares a
+  photo" count, facts are being added faster than photos and two posts would
+  go out with the same image, which the house rules forbid. `plan` refuses to
+  reuse a file inside a run, so that shows up as a SHORT line rather than a
+  duplicate. Report it, do not work around it. Same for any fact listed
+  under "no photo": skip it and say so.
 
 URL rules (verified against generate-sitemap.js, do not deviate):
 
@@ -279,7 +284,7 @@ failing calendar with a note attached.
   [ ] No two posts from the same track scheduled back to back
   [ ] Every article QUOTE USED appears verbatim in its named file
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
-  [ ] No image path used twice, SHARED fact photos included
+  [ ] No image path used twice across the whole week
   [ ] A quarter or more of posts end on a real question, at least one a fact
   [ ] The article track includes a chronicle and a standalone fact article
   [ ] Ledger section lists a mark command for every post
