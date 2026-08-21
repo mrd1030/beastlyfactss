@@ -76,3 +76,39 @@ self.addEventListener("message", (event) => {
     );
   }
 });
+
+// Fired by the browser when a push arrives from the Supabase edge function
+// (see supabase/functions/send-notification) - the payload is whatever JSON
+// that function sent as the push message body.
+self.addEventListener("push", (event) => {
+  let data = { title: "Beastly Facts", body: "New content is up!", url: "/" };
+  try {
+    if (event.data) data = { ...data, ...event.data.json() };
+  } catch {
+    // Non-JSON payload - fall back to the defaults above rather than drop
+    // the notification entirely.
+  }
+
+  event.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: "/pwa/icon-256.png",
+      badge: "/pwa/icon-256.png",
+      data: { url: data.url },
+    })
+  );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url = event.notification.data?.url || "/";
+
+  event.waitUntil(
+    clients.matchAll({ type: "window", includeUncontrolled: true }).then((windowClients) => {
+      for (const client of windowClients) {
+        if (client.url.includes(url) && "focus" in client) return client.focus();
+      }
+      if (clients.openWindow) return clients.openWindow(url);
+    })
+  );
+});
