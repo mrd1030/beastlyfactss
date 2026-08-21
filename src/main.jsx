@@ -79,6 +79,12 @@ const app = (
 //     baking state a fresh client's first render can't match yet.
 preloadForCurrentRoute().finally(() => {
   ReactDOM.hydrateRoot(document.getElementById('root'), app);
+
+  const splash = document.getElementById('app-splash');
+  if (splash) {
+    splash.classList.add('is-hiding');
+    setTimeout(() => splash.remove(), 300);
+  }
 });
 
 if ('serviceWorker' in navigator) {

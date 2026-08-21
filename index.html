@@ -24,6 +24,18 @@
     <link rel="apple-touch-startup-image" href="/pwa/apple-splash-1620x2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Android/standalone-launch splash: Chrome only auto-generates a splash
+         from the manifest icon+color (no custom-image support), so this fakes
+         one for installed-app launches only. Hidden by default; the inline
+         script below reveals it synchronously (before paint) just for
+         standalone launches so normal browser tab visits never see it. -->
+    <style>
+      #app-splash{position:fixed;inset:0;z-index:9999;background:#feeed5;display:none;align-items:center;justify-content:center;opacity:1;transition:opacity .25s ease}
+      #app-splash.is-visible{display:flex}
+      #app-splash.is-hiding{opacity:0}
+      #app-splash img{max-width:55vw;max-height:55vh;object-fit:contain}
+    </style>
+
     <!-- Homepage fallback meta - for social bots (no JS) and Googlebot first-pass crawl.
          NO canonical here: react-helmet-async injects the correct one per-route.
          Two canonicals = Google ignores both. -->
@@ -75,6 +87,15 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3PXSDZB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <div id="app-splash"><img src="/pwa/splash-web.jpg" width="700" height="1040" alt=""></div>
+    <script>
+      (function () {
+        var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+        if (isStandalone) {
+          document.getElementById('app-splash').classList.add('is-visible');
+        }
+      })();
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
