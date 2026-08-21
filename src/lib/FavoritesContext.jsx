@@ -47,15 +47,29 @@ export function FavoritesProvider({ children }) {
   // renders above AppLayout's Suspense boundary) severe enough to make React
   // discard and re-render the whole page client-side instead of hydrating it.
   const [favorites, setFavorites] = useState([]);
+  const [savedContent, setSavedContent] = useState([]);
   const [savedQuizResults, setSavedQuizResults] = useState([]);
   const [quizzesCompleted, setQuizzesCompleted] = useState(0);
   const isFirstFavoritesWrite = React.useRef(true);
+  const isFirstSavedContentWrite = React.useRef(true);
   const isFirstQuizResultsWrite = React.useRef(true);
 
   useEffect(() => {
     try {
       const item = localStorage.getItem('beastly-favorites');
       if (item !== null) setFavorites(JSON.parse(item));
+    } catch { /* ignore */ }
+  }, []);
+
+  // Separate store from `favorites` on purpose: favorites is a flat array of
+  // numeric fact ids, keyed and consumed all over the app (FactCard, Pack,
+  // achievements' favoritesCount). Guides/encyclopedia/beastlypedia/articles
+  // are keyed by string slug instead, so they get their own store rather than
+  // overloading the fact-id shape.
+  useEffect(() => {
+    try {
+      const item = localStorage.getItem('beastly-saved-content');
+      if (item !== null) setSavedContent(JSON.parse(item));
     } catch { /* ignore */ }
   }, []);
 
@@ -80,6 +94,14 @@ export function FavoritesProvider({ children }) {
     }
     try { localStorage.setItem('beastly-favorites', JSON.stringify(favorites)); } catch {}
   }, [favorites]);
+
+  useEffect(() => {
+    if (isFirstSavedContentWrite.current) {
+      isFirstSavedContentWrite.current = false;
+      return;
+    }
+    try { localStorage.setItem('beastly-saved-content', JSON.stringify(savedContent)); } catch {}
+  }, [savedContent]);
 
   useEffect(() => {
     if (isFirstQuizResultsWrite.current) {
@@ -116,6 +138,25 @@ export function FavoritesProvider({ children }) {
   };
 
   const isFavorite = (factId) => favorites.includes(factId);
+
+  // item: { type: 'guide' | 'encyclopedia' | 'beastlypedia' | 'article', id, title, subtitle, url }
+  // The display fields are captured at save time rather than re-derived from
+  // id later - guide/encyclopedia/beastlypedia/article data each live in
+  // differently-shaped modules, and the saving page already has everything
+  // needed on hand, so there is no single lookup Pack could reuse instead.
+  const toggleSavedContent = (item) => {
+    setSavedContent(prev =>
+      prev.some(s => s.type === item.type && s.id === item.id)
+        ? prev.filter(s => !(s.type === item.type && s.id === item.id))
+        : [...prev, { ...item, savedAt: new Date().toISOString() }]
+    );
+  };
+
+  const isContentSaved = (type, id) => savedContent.some(s => s.type === type && s.id === id);
+
+  const removeSavedContent = (type, id) => {
+    setSavedContent(prev => prev.filter(s => !(s.type === type && s.id === id)));
+  };
 
   const clearFavorites = () => {
     setFavorites([]);
@@ -190,6 +231,10 @@ export function FavoritesProvider({ children }) {
       toggleFavorite,
       isFavorite,
       clearFavorites,
+      savedContent,
+      toggleSavedContent,
+      isContentSaved,
+      removeSavedContent,
       savedQuizResults,
       saveQuizResult,
       removeQuizResult,

@@ -10,6 +10,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import SaveButton from '@/components/shared/SaveButton';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
@@ -142,22 +143,32 @@ export default function EncyclopediaAnimal() {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-start gap-4">
-            <span className="text-5xl">{animal.emoji}</span>
-            <div>
-              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
-                {animal.name}
-              </h1>
-              <p className="text-sm text-muted-foreground font-body italic mt-0.5">{animal.scientific}</p>
-              <div className="flex items-center gap-2 mt-2">
-                <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
-                  {animal.category}
-                </span>
-                <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
-                  {`${animal.difficulty} care`}
-                </span>
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-start gap-4">
+              <span className="text-5xl">{animal.emoji}</span>
+              <div>
+                <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
+                  {animal.name}
+                </h1>
+                <p className="text-sm text-muted-foreground font-body italic mt-0.5">{animal.scientific}</p>
+                <div className="flex items-center gap-2 mt-2">
+                  <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
+                    {animal.category}
+                  </span>
+                  <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
+                    {`${animal.difficulty} care`}
+                  </span>
+                </div>
               </div>
             </div>
+            <SaveButton
+              type="encyclopedia"
+              id={animal.id}
+              title={animal.name}
+              subtitle={animal.category}
+              url={`/encyclopedia/animal/${animal.id}/`}
+              className="flex-shrink-0"
+            />
           </div>
         </motion.div>
 

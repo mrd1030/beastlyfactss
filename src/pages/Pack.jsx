@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, Share2, ChevronDown, ChevronUp, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -14,13 +14,25 @@ import QuizTradingCard from '@/components/pack/QuizTradingCard';
 import AchievementDialog from '@/components/pack/AchievementDialog';
 
 
+const CONTENT_TYPE_META = {
+  guide: { emoji: '📖', label: 'Guide' },
+  encyclopedia: { emoji: '🦎', label: 'Encyclopedia' },
+  beastlypedia: { emoji: '🎴', label: 'Beastfile' },
+  article: { emoji: '📰', label: 'Article' },
+};
+
 export default function Pack() {
   const { favorites } = useFavoritesCtx();
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
-  const { savedQuizResults, removeQuizResult, unlockedAchievements, streak, achievementState } = useFavoritesCtx();
+  const {
+    savedQuizResults, removeQuizResult, unlockedAchievements, streak, achievementState,
+    savedContent, removeSavedContent,
+  } = useFavoritesCtx();
   const [openAchievement, setOpenAchievement] = useState(null);
   const savedFacts = facts.filter(f => favorites.includes(f.id));
+  // Most recently saved first, same ordering as the quiz results shelf.
+  const sortedSavedContent = [...savedContent].sort((a, b) => (a.savedAt < b.savedAt ? 1 : -1));
   const [confirmingId, setConfirmingId] = useState(null);
 
   // Results are no longer capped, so a long-standing collection could otherwise
@@ -214,6 +226,47 @@ export default function Pack() {
           : <>{`Show all ${savedQuizResults.length} cards`} <ChevronDown className="w-3.5 h-3.5" /></>}
       </button>
     )}
+  </div>
+)}
+
+{/* Saved Guides & Articles - kept as a thin list rather than image cards
+    like the facts grid below: these span four different content types
+    (guide/encyclopedia/beastlypedia/article) with no shared photo, and a
+    scannable list stays readable as the collection grows. */}
+{sortedSavedContent.length > 0 && (
+  <div className="mt-10 mb-8">
+    <div className="flex items-baseline gap-2 mb-4">
+      <h2 className="font-display font-bold text-xl text-foreground">📚 Saved Guides &amp; Articles</h2>
+      <span className="text-sm text-muted-foreground font-body tabular-nums">
+        {sortedSavedContent.length}
+      </span>
+    </div>
+    <div className="flex flex-col gap-2">
+      {sortedSavedContent.map((item) => {
+        const meta = CONTENT_TYPE_META[item.type] || { emoji: '🔖', label: item.type };
+        return (
+          <div
+            key={`${item.type}-${item.id}`}
+            className="group flex items-center gap-3 bg-card border border-border rounded-xl pl-3 pr-2 py-2.5 hover:border-secondary/40 transition-colors"
+          >
+            <span className="text-xl flex-shrink-0" aria-hidden="true">{meta.emoji}</span>
+            <Link to={item.url} className="min-w-0 flex-1">
+              <p className="text-sm font-body font-bold text-foreground truncate">{item.title}</p>
+              <p className="text-xs text-muted-foreground font-body truncate">
+                {item.subtitle ? `${meta.label} · ${item.subtitle}` : meta.label}
+              </p>
+            </Link>
+            <button
+              onClick={() => removeSavedContent(item.type, item.id)}
+              aria-label={`Remove ${item.title} from your Pack`}
+              className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-muted-foreground hover:text-red-500 hover:bg-red-500/10 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        );
+      })}
+    </div>
   </div>
 )}
         {savedFacts.length > 0 ? (

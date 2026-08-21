@@ -17,6 +17,7 @@ import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
+import SaveButton from '@/components/shared/SaveButton';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
@@ -651,7 +652,18 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               )}
             </div>
 
-            <h1 className="font-display font-bold text-3xl text-foreground mb-6 leading-tight">{post.title}</h1>
+            <div className="flex items-start justify-between gap-4 mb-6">
+              <h1 className="font-display font-bold text-3xl text-foreground leading-tight">{post.title}</h1>
+              <SaveButton
+                type="article"
+                id={postSlug}
+                title={post.title}
+                subtitle={post.category}
+                url={`/blog/${postSlug}/`}
+                iconOnly
+                className="mt-1"
+              />
+            </div>
 
             <p className="text-sm text-muted-foreground font-body mb-8 leading-relaxed border-l-4 border-secondary pl-4 italic">
               {post.excerpt}

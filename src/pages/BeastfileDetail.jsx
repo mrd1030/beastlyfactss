@@ -6,6 +6,7 @@ import { getBeastfile } from '@/lib/data/beastlypedia';
 import RelatedFiles from '@/components/beastlypedia/RelatedFiles';
 import MoreBeastfiles from '@/components/beastlypedia/MoreBeastfiles';
 import ShareButton from '@/components/shared/ShareButton';
+import SaveButton from '@/components/shared/SaveButton';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
 import { truncateDescription } from '@/lib/utils/truncate';
@@ -163,12 +164,22 @@ export default function BeastfileDetail() {
             <p className="text-[11px] font-body font-bold uppercase tracking-wider text-secondary mb-1">
               {`Beastfile · ${group}`}
             </p>
-            <ShareButton
-              title={name}
-              text={`${name}: ${tagline}`}
-              url={`/beastlypedia/${id}/`}
-              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
-            />
+            <div className="flex-shrink-0 flex items-center gap-2">
+              <SaveButton
+                type="beastlypedia"
+                id={id}
+                title={name}
+                subtitle={group}
+                url={`/beastlypedia/${id}/`}
+                iconOnly
+              />
+              <ShareButton
+                title={name}
+                text={`${name}: ${tagline}`}
+                url={`/beastlypedia/${id}/`}
+                className="flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+              />
+            </div>
           </div>
           <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground leading-tight">
             {name}

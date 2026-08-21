@@ -12,6 +12,7 @@ import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
+import SaveButton from '@/components/shared/SaveButton';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -444,13 +445,23 @@ export default function GuideDetail() {
                 </div>
               </div>
             </div>
-            <button
-              ref={printTriggerRef}
-              onClick={() => setIsPrintOpen(true)}
-              className="flex-shrink-0 flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
-            >
-              <Printer className="w-3.5 h-3.5" /> Print Checklist
-            </button>
+            <div className="flex-shrink-0 flex items-center gap-2">
+              <SaveButton
+                type="guide"
+                id={guide.id}
+                title={guide.name}
+                subtitle={guide.petType}
+                url={`/guides/${guide.id}/`}
+                iconOnly
+              />
+              <button
+                ref={printTriggerRef}
+                onClick={() => setIsPrintOpen(true)}
+                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
+              >
+                <Printer className="w-3.5 h-3.5" /> Print Checklist
+              </button>
+            </div>
           </div>
           <p className="text-base text-foreground font-body italic mb-4">{guide.tagline}</p>
         </motion.div>
