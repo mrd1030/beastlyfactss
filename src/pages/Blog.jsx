@@ -669,6 +669,17 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               {post.excerpt}
             </p>
 
+            {/* Mobile-only: the sticky sidebar (below) sits in a column that
+                collapses to the bottom of the page once the grid drops to a
+                single column, which buries the Table of Contents after the
+                whole article - useless for jumping to a section before
+                reading. Shown here instead, collapsed by default so it
+                doesn't push the article down. Hidden on lg+, where the
+                sidebar's always-open version already covers it. */}
+            <div className="lg:hidden mb-6">
+              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} collapsible />
+            </div>
+
             {/* Featured image */}
             {post.image ? (
               <div className="mb-10">
@@ -759,7 +770,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
           </div>
 
           <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
-            <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+            {/* Hidden below lg: the collapsible instance above the article
+                already covers mobile. */}
+            <div className="hidden lg:block">
+              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+            </div>
             <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
             <PostSidebar
               allPosts={allPosts} 

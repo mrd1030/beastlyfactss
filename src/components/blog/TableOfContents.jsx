@@ -5,7 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 // Scans the already-rendered content DOM for headings instead of parsing
 // each content source (MDX component, Sanity portable text, raw string)
 // separately - works uniformly regardless of where the post came from.
-export default function TableOfContents({ contentRef, watch, skipText }) {
+export default function TableOfContents({ contentRef, watch, skipText, collapsible = false }) {
   const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
@@ -63,23 +63,46 @@ export default function TableOfContents({ contentRef, watch, skipText }) {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
+  const nav = (
+    <nav className="space-y-2">
+      {headings.map(h => (
+        <a
+          key={h.id}
+          href={`#${h.id}`}
+          onClick={(e) => handleClick(e, h.id)}
+          className={`block text-xs font-body text-muted-foreground hover:text-secondary transition-colors leading-snug ${h.level === 3 ? 'pl-3' : ''}`}
+        >
+          {h.text}
+        </a>
+      ))}
+    </nav>
+  );
+
+  // Collapsible mode is for the mobile-only instance placed above the
+  // article (see Blog.jsx): a jump-to-section nav is only useful before
+  // reading, but showing it open by default there would push the whole
+  // article down the page before a reader sees any of it. The always-open
+  // card below is unchanged for the desktop sticky sidebar, where that's
+  // not a concern.
+  if (collapsible) {
+    return (
+      <details className="bg-card border border-border rounded-2xl overflow-hidden group">
+        <summary className="p-4 flex items-center gap-1.5 font-display font-bold text-sm text-foreground cursor-pointer list-none">
+          <List className="w-4 h-4 flex-shrink-0" />
+          On This Page
+          <span className="ml-auto text-xs text-muted-foreground font-body transition-transform group-open:rotate-180">▾</span>
+        </summary>
+        <div className="px-4 pb-4">{nav}</div>
+      </details>
+    );
+  }
+
   return (
     <div className="bg-card border border-border rounded-2xl p-5">
       <h3 className="font-display font-bold text-sm text-foreground mb-3 flex items-center gap-1.5">
         <List className="w-4 h-4" /> On This Page
       </h3>
-      <nav className="space-y-2">
-        {headings.map(h => (
-          <a
-            key={h.id}
-            href={`#${h.id}`}
-            onClick={(e) => handleClick(e, h.id)}
-            className={`block text-xs font-body text-muted-foreground hover:text-secondary transition-colors leading-snug ${h.level === 3 ? 'pl-3' : ''}`}
-          >
-            {h.text}
-          </a>
-        ))}
-      </nav>
+      {nav}
     </div>
   );
 }
