@@ -34,6 +34,10 @@ export default function Pack() {
   // Most recently saved first, same ordering as the quiz results shelf.
   const sortedSavedContent = [...savedContent].sort((a, b) => (a.savedAt < b.savedAt ? 1 : -1));
   const [confirmingId, setConfirmingId] = useState(null);
+  // Keyed by `${type}-${id}` rather than id alone: content ids are slugs and
+  // aren't unique across types (a guide and an encyclopedia entry can share
+  // an id), and this is a separate list from the quiz results above anyway.
+  const [confirmingContentKey, setConfirmingContentKey] = useState(null);
 
   // Results are no longer capped, so a long-standing collection could otherwise
   // push everything below it off the page. One full row is shown by default and
@@ -244,9 +248,11 @@ export default function Pack() {
     <div className="flex flex-col gap-2">
       {sortedSavedContent.map((item) => {
         const meta = CONTENT_TYPE_META[item.type] || { emoji: '🔖', label: item.type };
+        const key = `${item.type}-${item.id}`;
+        const confirming = confirmingContentKey === key;
         return (
           <div
-            key={`${item.type}-${item.id}`}
+            key={key}
             className="group flex items-center gap-3 bg-card border border-border rounded-xl pl-3 pr-2 py-2.5 hover:border-secondary/40 transition-colors"
           >
             <span className="text-xl flex-shrink-0" aria-hidden="true">{meta.emoji}</span>
@@ -256,13 +262,31 @@ export default function Pack() {
                 {item.subtitle ? `${meta.label} · ${item.subtitle}` : meta.label}
               </p>
             </Link>
-            <button
-              onClick={() => removeSavedContent(item.type, item.id)}
-              aria-label={`Remove ${item.title} from your Pack`}
-              className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-muted-foreground hover:text-red-500 hover:bg-red-500/10 transition-colors"
-            >
-              <X className="w-4 h-4" />
-            </button>
+            {confirming ? (
+              <div className="flex-shrink-0 flex items-center gap-1">
+                <span className="text-[11px] text-muted-foreground font-body mr-0.5 hidden sm:inline">Remove?</span>
+                <button
+                  onClick={() => { removeSavedContent(item.type, item.id); setConfirmingContentKey(null); }}
+                  className="text-[11px] font-body font-bold text-destructive px-2 py-1 rounded-lg hover:bg-destructive/10 transition-colors"
+                >
+                  Yes
+                </button>
+                <button
+                  onClick={() => setConfirmingContentKey(null)}
+                  className="text-[11px] font-body font-bold text-muted-foreground px-2 py-1 rounded-lg hover:bg-muted transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setConfirmingContentKey(key)}
+                aria-label={`Remove ${item.title} from your Pack`}
+                className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-muted-foreground hover:text-red-500 hover:bg-red-500/10 transition-colors"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            )}
           </div>
         );
       })}
