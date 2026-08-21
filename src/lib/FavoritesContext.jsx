@@ -3,6 +3,15 @@ import { useDailyStreak } from '@/lib/hooks/useLocalStorage';
 
 const FavoritesContext = createContext(null);
 
+// Asks the service worker to fetch+cache (or evict) a saved page's real URL,
+// independent of whether the browser ever visits it - see sw.js's message
+// listener. Silently a no-op with no controller (no SW yet, or offline on
+// first load), which just means that save doesn't get offline coverage.
+function postToServiceWorker(message) {
+  if (!('serviceWorker' in navigator)) return;
+  navigator.serviceWorker.controller?.postMessage(message);
+}
+
 // `description` is what you did, past tense, shown once the badge is earned.
 // `hint` is what to do, shown while it is still locked - restating the goal in
 // past tense reads as though you have already done it. `target`/`current` drive
@@ -145,17 +154,25 @@ export function FavoritesProvider({ children }) {
   // differently-shaped modules, and the saving page already has everything
   // needed on hand, so there is no single lookup Pack could reuse instead.
   const toggleSavedContent = (item) => {
-    setSavedContent(prev =>
-      prev.some(s => s.type === item.type && s.id === item.id)
-        ? prev.filter(s => !(s.type === item.type && s.id === item.id))
-        : [...prev, { ...item, savedAt: new Date().toISOString() }]
-    );
+    setSavedContent(prev => {
+      const already = prev.some(s => s.type === item.type && s.id === item.id);
+      if (already) {
+        postToServiceWorker({ type: 'UNCACHE_SAVED_PAGE', url: item.url });
+        return prev.filter(s => !(s.type === item.type && s.id === item.id));
+      }
+      postToServiceWorker({ type: 'CACHE_SAVED_PAGE', url: item.url });
+      return [...prev, { ...item, savedAt: new Date().toISOString() }];
+    });
   };
 
   const isContentSaved = (type, id) => savedContent.some(s => s.type === type && s.id === id);
 
   const removeSavedContent = (type, id) => {
-    setSavedContent(prev => prev.filter(s => !(s.type === type && s.id === id)));
+    setSavedContent(prev => {
+      const item = prev.find(s => s.type === type && s.id === id);
+      if (item) postToServiceWorker({ type: 'UNCACHE_SAVED_PAGE', url: item.url });
+      return prev.filter(s => !(s.type === type && s.id === id));
+    });
   };
 
   const clearFavorites = () => {
