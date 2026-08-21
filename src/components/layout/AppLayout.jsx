@@ -4,6 +4,8 @@ import Navbar from './Navbar.jsx';
 import Footer from './Footer';
 import BottomTabs from './BottomTabs';
 import AchievementToast from '../shared/AchievementToast';
+import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
+import { useSwipeBack } from '@/lib/hooks/useSwipeBack';
 
 // Shown for every client-side navigation whose route chunk hasn't loaded
 // yet this session (first visit to that page). A generic card-grid shape
@@ -61,6 +63,11 @@ export default function AppLayout() {
   useEffect(() => {
     if (!window.__IS_PRERENDER__) setReady(true);
   }, []);
+
+  // Edge-swipe-to-go-back, mobile viewports only - the app feel this whole
+  // pass is chasing shouldn't touch how the desktop site behaves.
+  const isMobile = useIsMobileViewport();
+  useSwipeBack(isMobile);
 
   return (
     <div className="min-h-screen flex flex-col font-body">

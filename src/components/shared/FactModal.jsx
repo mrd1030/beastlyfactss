@@ -12,6 +12,7 @@ import { imagePathFor } from '@/lib/data/factImages';
 // Facts, Gallery and Pack, and none of them should carry that to render one
 // optional link.
 import beastlypediaAnimals from '@/lib/generated/beastlypedia-animal-map.json';
+import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 
 // onOpenImage is optional and handled by the parent page (not rendered here) -
 // same reason as FactCard: this modal animates scale/y via framer-motion, so a
@@ -22,6 +23,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
   const [copied, setCopied] = useState(false); // State to track clipboard copy inside modal
   const modalRef = useRef(null);
   const imagePath = imagePathFor(fact);
+  const isMobile = useIsMobileViewport();
 
   // Exact match only (case-insensitive) - a "contains" match risks linking a fact to the
   // wrong animal (e.g. Komodo Dragon vs Bearded Dragon), so most facts just show no link at all.
@@ -138,6 +140,15 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
+            // Swipe-down-to-dismiss, mobile only: `drag` with a mouse on
+            // desktop would fight text selection and feel unintended there,
+            // so it's off entirely (not just visually inert) unless isMobile.
+            drag={isMobile ? 'y' : false}
+            dragConstraints={{ top: 0, bottom: 0 }}
+            dragElastic={{ top: 0, bottom: 0.5 }}
+            onDragEnd={(e, info) => {
+              if (info.offset.y > 120 || info.velocity.y > 500) onClose();
+            }}
             className="bg-card rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-border"
             onClick={(e) => e.stopPropagation()}
             role="dialog"
