@@ -1,6 +1,6 @@
 ---
 description: Build a 7 day Threads calendar from repo content. Take first, reply driven, links suppressed.
-argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [notes to steer picks]"
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
@@ -9,11 +9,20 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 ARGUMENTS: $ARGUMENTS
 
 How to read the arguments:
-- Empty, or anything that is not "go": run PHASE 1 only, then stop. Treat any
-  extra text as steering for which sources to favor.
+- Empty, or anything that is not "go": run PHASE 1 only, then stop.
 - Starts with "go": run PHASE 2 using the shortlist already approved earlier in
   this conversation. If there is no approved shortlist in context, say so and
   run PHASE 1 instead. Never invent a shortlist you were not given.
+- CADENCE: if the arguments name a per-day volume ("2 facts 2 articles"), use
+  it in both phases and pass it to the inventory script. Default 1 fact + 1
+  article per day. Carry the same cadence into Phase 2 that Phase 1 was
+  approved at.
+- MIRROR: "mirror x" or "mirror ig" means propose only what that platform has
+  already posted, so this run rewrites proven material rather than opening a
+  new seam. Pass it through as --mirror. This is the most useful mode here,
+  since a take that earned replies on X usually earns them again in a
+  conversational register.
+- Anything else is steering for which sources to favor.
 
 ---
 
@@ -39,43 +48,75 @@ WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 PHASE 1: SOURCE SHORTLIST
 =====================================================================
 
-Content locations:
-  content/guides/*.mdx       433 care guides, split cost / handling / health /
-                             tank setup / feeding / legal
-  content/fun-facts/*.mdx    20 listicles
-  content/short-story/*.mdx  26 chronicles. Dex (bearded dragon, pompous,
-                             self-serious, wrong about himself). Otis (bunny).
-  content/blog/*.mdx         1 file. Ignore.
-  content/_scheduled-*       NOT LIVE. Never source from here.
+TWO TRACKS, at the cadence the arguments ask for. Default 1 fact + 1 article
+per day.
 
-Every guide is status: "published", so status filters nothing. Sort by
-frontmatter `date` descending, work from the most recent 60 files.
+Do NOT read the content directories by hand and do NOT limit yourself to recent
+files. The whole library is in play and it is far more than fits in context.
+Both pools grow as facts and articles are added, so never quote a count from
+memory or an earlier run. Start here every time:
 
-Pick 7 sources, weighted toward things people argue about:
-  3 care guides, different species, ideally ones with a contested or
-    counterintuitive recommendation
-  2 fun-facts
-  1 Dex chronicle
-  1 Otis chronicle
+    node scripts/social-inventory.mjs stats
+    node scripts/social-inventory.mjs plan 7 --platform threads --facts-per-day N --articles-per-day M
 
-No species repeats across the week.
+Add --mirror x (or --mirror ig) when the arguments asked for a mirror run.
 
-For each pick, output:
+Threads keeps its own ledger bucket, so a source that already ran on X is still
+unused here. That is deliberate: the same material is meant to run on all three
+in different registers. Always pass --platform threads.
+
+Useful when overriding:
+    node scripts/social-inventory.mjs facts --platform threads --unused --limit 40
+    node scripts/social-inventory.mjs articles --platform threads --unused --kind guide
+    node scripts/social-inventory.mjs articles --platform threads --unused --kind chronicle
+
+`plan` enforces: nothing this platform's ledger has consumed, category spread
+scaled to the ask, no photo used twice in the run, no species repeated, split
+types spread, no fact/article collision, and striping so one day never gets two
+of the same kind. Treat its output as a starting shortlist, not a verdict.
+Override any pick nobody could argue with, and say what you swapped and why.
+
+Source shape:
+  FACTS     src/lib/data/facts.js, curated facts keyed by stable id. Ids are
+            load-bearing: favorites are keyed by id and gaps are deliberate.
+            Never renumber, never invent an id.
+  ARTICLES  content/guides (care guides split cost / handling / health / tank
+            setup / feeding / legal / enrichment, plus standalone fact
+            articles), content/fun-facts (listicles), content/short-story
+            (chronicles: Dex the bearded dragon, pompous and self-serious;
+            Otis the bunny). content/blog holds one file, ignore it.
+            content/_scheduled-* is NOT LIVE.
+
+For each FACT pick, output:
+  FACT ID:    <id from facts.js>
+  ANIMAL:     <animal>  CATEGORY: <category>
+  QUOTE:      "<verbatim from the `fact` field>"
+  DISAGREES?: YES or NO, plus one line on what the pushback is
+  ANGLE:      <one line>
+  IMAGE:      <resolved photo path>
+  URL:        <fact url from the inventory>
+
+For each ARTICLE pick, output:
   FILE:       content/.../slug.mdx
   DATE:       <frontmatter date>
   QUOTE:      "<verbatim sentence from the BODY>"
-  DISAGREES?: Would a real keeper push back on this, or add their own setup?
-              YES or NO, plus one line on what the pushback is.
+  DISAGREES?: YES or NO, plus one line on what the pushback is
   ANGLE:      <one line>
   IMAGE:      <frontmatter `image` value, or NONE>
   URL:        <live url, built per the URL rules below>
 
-Prefer picks where DISAGREES is YES. Aim for at least 4 of 7. A fact nobody can
-respond to is a dead post here, however true it is.
+DISAGREES is the gate that matters on this platform. Would a real keeper push
+back, correct a number, or volunteer their own setup? Prefer picks where the
+answer is YES, and aim for at least half the week. Something nobody can respond
+to is a dead post here, however true it is. Care guides with a contested or
+counterintuitive recommendation are the richest seam, so weight toward them
+when overriding.
 
 QUOTE rules:
-  From the body, never the seoTitle, excerpt, or description. The sharpest
-  claim, not a topic sentence. Character for character. It will be grepped.
+  Articles: from the BODY, never the seoTitle, excerpt, or description.
+  Facts: from the `fact` field, the clause carrying the claim.
+  The sharpest claim available, not a topic sentence. Character for character.
+  It will be grepped.
 
 URL rules (verified against generate-sitemap.js, do not deviate):
 
@@ -92,6 +133,15 @@ URL rules (verified against generate-sitemap.js, do not deviate):
   rather than one article, and only for a species that appears in the
   staticPages list in generate-sitemap.js. Never build one from an article
   slug.
+
+  Individual FACTS render at:
+      https://beastlyfacts.com/facts/{slugify(fact title)}/
+  built from the fact's TITLE, not its animal or id, using the slugify rule in
+  src/lib/utils/slugify.js (note that "&" and the standalone word "and" both
+  become "-and-"). These pages are prerendered and set their own canonical, but
+  they carry noindex. That is an SEO choice and does not affect a human opening
+  the link. The inventory script prints the resolved url for every fact, so use
+  that rather than building it by hand.
 
   Chronicles render at:
       https://beastlyfacts.com/chronicles/dex/{n}/
@@ -114,8 +164,8 @@ PHASE 2: WRITE (after approval only)
 2.  One to three lines for most posts. Under 200 characters is the target, even
     though the limit is higher. Show the character count.
 3.  Links suppress reach here too. Default to NO link. When a link earns its
-    place, put it in the first reply, same as X. Maximum 3 linked posts in the
-    week.
+    place, put it in the first reply, same as X. Cap linked posts at a fifth of
+    the week's volume.
 4.  No hashtags. Threads has topic tags and you may attach at most one, only
     when it is the obvious one for the species. Usually attach none.
 5.  Write for the reply. Every post should leave an obvious opening: a number
@@ -124,6 +174,8 @@ PHASE 2: WRITE (after approval only)
 6.  Write a PLANNED REPLY for each post: what the account says back when the
     first person responds. This is where the conversation actually happens and
     it should not be improvised.
+7.  Post the requested cadence, no more. Give each post its own slot, spaced
+    across the day, and never two from the same track back to back.
 
 --- POST SHAPES (rotate, never twice in a row) ---
   POSITION     A stance from the guide, stated flat. "X is not a beginner
@@ -166,9 +218,15 @@ file. Never "Part 12 is up". Keep Dex pompous and self-serious, with the comedy
 being that he is wrong about himself. Do not invent events not in the file.
 
 --- CROSS-POST CHECK ---
-If these sources overlap with the X calendar, say so and confirm the copy is
-genuinely rewritten, not trimmed. Same fact, different register, is the
-standard. Identical copy on both is a fail.
+Overlap with X is expected, not a problem: each platform has its own ledger
+bucket precisely so the same source can run on all three. A --mirror run is
+overlap by design. What is NOT acceptable is the same COPY on two platforms.
+
+For every source that has already run on X or IG, say so explicitly and confirm
+the copy is genuinely rewritten rather than trimmed. Same fact, different
+register, is the standard. Threads copy leads with the take, drops the setup,
+runs shorter, and leaves a reply opening the X version did not need. If you
+cannot make it read differently, pick another source.
 
 =====================================================================
 OUTPUT FORMAT. Nothing outside these sections.
@@ -178,9 +236,12 @@ OUTPUT FORMAT. Nothing outside these sections.
 Table: Day | Species | Shape | Linked? | Source file
 
 ## Day 1 through Day 7
-  DAY / TIME:     one slot
+Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+
+  DAY / TIME:     one slot per post
+  TRACK:          fact | article
   SHAPE:          position | number | confession | scene | ask | thread
-  SOURCE:         content/.../file.mdx
+  SOURCE:         facts.js id=<n>   or   content/.../file.mdx
   QUOTE USED:     "<verbatim>"
   SUPPORTS:       <the one line in the post this backs>
 
@@ -198,17 +259,29 @@ Table: Day | Species | Shape | Linked? | Source file
   IMAGE:          <frontmatter path, or none>
   WHY THIS ONE:   <one sentence>
 
+## Ledger
+The exact commands to run once the week is actually posted, one line per item,
+ready to paste. Nothing is consumed until these run, so a week that gets
+scheduled but never marked will be proposed again.
+
+    node scripts/social-inventory.mjs mark --platform threads --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform threads --article content/.../file.mdx --date YYYY-MM-DD
+
 ## Self check
 State pass or fail on each. Fix failures before outputting.
   [ ] No em or en dashes anywhere
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
-  [ ] 3 or fewer posts carry a link, all in the first reply
+  [ ] Linked posts within a fifth of the week's volume, all in the first reply
   [ ] No hashtags anywhere
   [ ] No shape used twice consecutively
-  [ ] No species repeats
-  [ ] Every QUOTE USED appears verbatim in its named file
+  [ ] No two posts from the same track scheduled back to back
+  [ ] No species repeats, across BOTH tracks
+  [ ] Every article QUOTE USED appears verbatim in its named file
+  [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
+  [ ] No image path used twice across the whole week
   [ ] Every post has a planned reply written
-  [ ] No copy identical to the X calendar
+  [ ] No copy identical to the X or IG calendar
   [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
   [ ] Every chronicles part number was derived from date order, not filename
+  [ ] Ledger section lists a mark command for every post

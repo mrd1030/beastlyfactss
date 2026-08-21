@@ -1,6 +1,6 @@
 ---
 description: Build a 7 day Instagram calendar from repo content. Image first, carousel spec, hashtag blocks, alt text.
-argument-hint: "[blank = Phase 1 shortlist + image audit] [go = Phase 2 write] [notes to steer picks]"
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 1 article'] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
@@ -9,11 +9,18 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 ARGUMENTS: $ARGUMENTS
 
 How to read the arguments:
-- Empty, or anything that is not "go": run PHASE 1 only, then stop. Treat any
-  extra text as steering for which sources to favor.
+- Empty, or anything that is not "go": run PHASE 1 only, then stop.
 - Starts with "go": run PHASE 2 using the shortlist already approved earlier in
   this conversation. If there is no approved shortlist in context, say so and
   run PHASE 1 instead. Never invent a shortlist you were not given.
+- CADENCE: if the arguments name a per-day volume ("2 facts 1 article"), use it
+  in both phases and pass it to the inventory script. Default 1 fact + 1
+  article per day. Carry the same cadence into Phase 2 that Phase 1 was
+  approved at.
+- MIRROR: "mirror x" or "mirror threads" means propose only what that platform
+  has already posted, so this is a rewrite of proven material rather than a new
+  seam of the library. Pass it through as --mirror.
+- Anything else is steering for which sources to favor.
 
 ---
 
@@ -35,52 +42,86 @@ WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 PHASE 1: SOURCE SHORTLIST + IMAGE AUDIT
 =====================================================================
 
-Content locations:
-  content/guides/*.mdx       433 care guides, split cost / handling / health /
-                             tank setup / feeding / legal
-  content/fun-facts/*.mdx    20 listicles. Your best carousel source. Weight
-                             toward them.
-  content/short-story/*.mdx  26 chronicles. Dex (bearded dragon, pompous,
-                             self-serious). Otis (bunny). Real photos at
-                             /assets/images/dex/...
-  content/blog/*.mdx         1 file. Ignore.
-  content/_scheduled-*       NOT LIVE. Never source from here.
+TWO TRACKS, at the cadence the arguments ask for. Default 1 fact + 1 article
+per day. The fact track is where carousels usually come from.
 
-Every guide is status: "published", so status filters nothing. Sort by
-frontmatter `date` descending, work from the most recent 60 files.
+Do NOT read the content directories by hand and do NOT limit yourself to recent
+files. The whole library is in play and it is far more than fits in context.
+Both pools grow as facts and articles are added, so never quote a count from
+memory or an earlier run. Start here every time:
 
-Pick 7 sources, weighted for visual strength:
-  2 to 3 fun-facts (carousel candidates)
-  2 to 3 care guides, different species, not all the same split type
-  1 Dex chronicle (real photo, highest engagement potential)
-  1 Otis chronicle
+    node scripts/social-inventory.mjs stats
+    node scripts/social-inventory.mjs plan 7 --platform ig --facts-per-day N --articles-per-day M
 
-No species repeats across the week.
+Add --mirror x (or --mirror threads) when the arguments asked for a mirror run.
 
-For each pick, output:
+Instagram keeps its own ledger bucket, so a fact that already ran on X is still
+unused here. That is deliberate: the same source is meant to run on all three
+in different registers. Always pass --platform ig.
+
+Useful when overriding:
+    node scripts/social-inventory.mjs facts --platform ig --unused --limit 40
+    node scripts/social-inventory.mjs articles --platform ig --unused --kind fun-fact-listicle
+    node scripts/social-inventory.mjs articles --platform ig --unused --kind chronicle
+
+`plan` enforces: nothing this platform's ledger has consumed, category spread
+scaled to the ask, no photo used twice in the run, no species repeated, split
+types spread, no fact/article collision, and striping so one day never gets two
+of the same kind. Treat its output as a starting shortlist, not a verdict.
+Override any pick that is visually weak and say what you swapped and why.
+
+Source shape:
+  FACTS     src/lib/data/facts.js, curated facts keyed by stable id, each with
+            its own photo. Ids are load-bearing: favorites are keyed by id and
+            gaps are deliberate. Never renumber, never invent an id.
+  ARTICLES  content/guides (care guides split cost / handling / health / tank
+            setup / feeding / legal / enrichment, plus standalone fact
+            articles), content/fun-facts (listicles, the strongest carousel
+            source), content/short-story (chronicles: Dex the bearded dragon,
+            pompous and self-serious; Otis the bunny, real photos under
+            /assets/images/dex/ and /assets/images/otis/). content/blog holds
+            one file, ignore it. content/_scheduled-* is NOT LIVE.
+
+For each FACT pick, output:
+  FACT ID:    <id from facts.js>
+  ANIMAL:     <animal>  CATEGORY: <category>
+  QUOTE:      "<verbatim from the `fact` field>"
+  IMAGE:      <resolved photo path>
+  CARRIES?:   YES or NO, see the image audit below
+  FORMAT:     single | carousel
+  ANGLE:      <one line>
+
+For each ARTICLE pick, output:
   FILE:       content/.../slug.mdx
   DATE:       <frontmatter date>
   QUOTE:      "<verbatim sentence from the BODY>"
   IMAGE:      <frontmatter `image` value, verbatim>
   IMAGE ALT:  <frontmatter `imageAlt` value, verbatim>
-  CARRIES?:   YES or NO. Does this image, alone, at thumbnail size, make
-              someone stop? Judge it from `imageAlt`, which describes what is
-              actually in the frame.
+  CARRIES?:   YES or NO
   FORMAT:     single | carousel | needs-new-asset
   ANGLE:      <one line>
 
-If CARRIES is NO and the source is a listicle, propose a carousel where slide 1
-is a text card, which does not depend on the photo.
-If CARRIES is NO and it is not a listicle, mark it needs-new-asset and pick a
-different source. Do not ship a weak image with a strong caption.
+THE IMAGE AUDIT is the part of Phase 1 that matters most here, and it applies
+mainly to the ARTICLE track. Ask of each: does this image, alone, at thumbnail
+size, make someone stop? Judge it from `imageAlt`, which describes what is
+actually in the frame.
+
+  CARRIES NO + listicle       propose a carousel whose slide 1 is a text card,
+                              so the post does not depend on the photo
+  CARRIES NO + anything else  mark needs-new-asset and take the next candidate
+                              from the inventory. Never ship a weak image
+                              carrying a strong caption.
+
+Fact photos are dedicated per fact and generally hold up, so expect most fact
+picks to pass. Report how many ARTICLE picks came back CARRIES: NO. If it is
+more than a third, say so plainly. That is an asset problem, not a copy
+problem, and no prompt fixes it.
 
 QUOTE rules:
-  From the body, never the seoTitle, excerpt, or description. It must be the
-  sharpest claim in the piece, not a topic sentence. Character for character.
+  Articles: from the BODY, never the seoTitle, excerpt, or description.
+  Facts: from the `fact` field, the clause carrying the claim.
+  The sharpest claim available, not a topic sentence. Character for character.
   It will be grepped.
-
-Report how many of the 7 came back CARRIES: NO. If it is more than 3, say so
-plainly. That is an asset problem, not a copy problem, and no prompt fixes it.
 
 =====================================================================
 PHASE 2: WRITE (after approval only)
@@ -105,8 +146,11 @@ PHASE 2: WRITE (after approval only)
 5.  Write ALT TEXT for every post. Start from the frontmatter `imageAlt`, then
     extend it to describe what a screen reader user needs, which is the animal,
     the setting, and anything the caption references.
-6.  End 3 of the 7 captions with a real question. Not "thoughts?". A question a
-    keeper would answer with a specific setup or number.
+6.  End at least a quarter of the week's captions with a real question. Not
+    "thoughts?". A question a keeper would answer with a specific setup or
+    number. At least one on the fact track.
+7.  Post the requested cadence, no more. Give each post its own slot, spaced
+    across the day, and never two from the same track back to back.
 
 --- URL RULES (for BIO TARGET only, verified against generate-sitemap.js) ---
   EVERY article in content/guides, content/fun-facts, and content/blog
@@ -169,12 +213,15 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Species | Format | Photo-led or text-led | Source file
+Table: Day | Fact (id + animal) | Article (species + kind) | Formats | Photo-led or text-led
 
 ## Day 1 through Day 7
-  DAY / TIME:     one slot
+Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+
+  DAY / TIME:     one slot per post
+  TRACK:          fact | article
   FORMAT:         single | carousel (n slides)
-  SOURCE:         content/.../file.mdx
+  SOURCE:         facts.js id=<n>   or   content/.../file.mdx
   QUOTE USED:     "<verbatim>"
   SUPPORTS:       <the one line in the caption this backs>
 
@@ -200,6 +247,14 @@ Table: Day | Species | Format | Photo-led or text-led | Source file
 Every needs-new-asset call and every carousel slide with no existing image.
 This is the shot list.
 
+## Ledger
+The exact commands to run once the week is actually posted, one line per item,
+ready to paste. Nothing is consumed until these run, so a week that gets
+scheduled but never marked will be proposed again.
+
+    node scripts/social-inventory.mjs mark --platform ig --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform ig --article content/.../file.mdx --date YYYY-MM-DD
+
 ## Self check
 State pass or fail on each. Fix failures before outputting.
   [ ] No em or en dashes anywhere
@@ -207,10 +262,13 @@ State pass or fail on each. Fix failures before outputting.
   [ ] Every line 1 reads complete at 125 chars
   [ ] Every post has alt text
   [ ] No hashtag block exceeds 10 tags or contains a banned tag
-  [ ] No species repeats
+  [ ] No species repeats, across BOTH tracks
   [ ] No 3 text-led posts consecutively
-  [ ] Every QUOTE USED appears verbatim in its named file
-  [ ] No image path used twice
-  [ ] 3 or more captions end on a real question
+  [ ] No two posts from the same track scheduled back to back
+  [ ] Every article QUOTE USED appears verbatim in its named file
+  [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
+  [ ] No image path used twice across the whole week
+  [ ] A quarter or more of captions end on a real question, at least one a fact
+  [ ] Ledger section lists a mark command for every post
   [ ] "link in bio" used 3 times or fewer, each with a BIO TARGET printed
   [ ] Every BIO TARGET is /blog/{slug}/, never /guides/{article-slug}/

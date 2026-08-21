@@ -8,11 +8,15 @@
 //
 // Read-only apart from `mark`. It never touches content/ or src/.
 //
-//   node scripts/social-inventory.mjs facts [--unused] [--limit N]
-//   node scripts/social-inventory.mjs articles [--unused] [--limit N] [--kind guide|fact-article|chronicle]
-//   node scripts/social-inventory.mjs plan [days] [--facts-per-day N] [--articles-per-day M] [--recent]
+// Every platform (x, ig, threads) keeps its own bucket, so the same fact can
+// run on all three. --platform defaults to x everywhere except `mark`, where it
+// is required.
+//
+//   node scripts/social-inventory.mjs facts [--platform p] [--unused] [--limit N]
+//   node scripts/social-inventory.mjs articles [--platform p] [--unused] [--limit N] [--kind guide|fact-article|chronicle]
+//   node scripts/social-inventory.mjs plan [days] [--platform p] [--facts-per-day N] [--articles-per-day M] [--mirror p] [--recent]
 //   node scripts/social-inventory.mjs stats
-//   node scripts/social-inventory.mjs mark --fact 12 --article content/guides/x.mdx --date 2026-08-22
+//   node scripts/social-inventory.mjs mark --platform x --fact 12 --article content/guides/x.mdx --date 2026-08-22
 
 import fs from 'fs';
 import path from 'path';
@@ -39,19 +43,55 @@ const slugify = (text) => {
 
 // ---------------------------------------------------------------- ledger
 
+// One bucket per platform, NOT one shared list. Running a fact on X should not
+// consume it for Instagram: the same source is meant to go out on all three in
+// different registers. Each platform therefore gets its own full runway, and
+// `plan --mirror <platform>` is how a deliberate cross-post is proposed.
+const PLATFORMS = ['x', 'ig', 'threads'];
+const emptyLedger = () => Object.fromEntries(PLATFORMS.map(p => [p, { facts: [], articles: [] }]));
+
 function readLedger() {
-  if (!fs.existsSync(LEDGER)) return { facts: [], articles: [] };
+  if (!fs.existsSync(LEDGER)) return emptyLedger();
+  let raw;
   try {
-    const l = JSON.parse(fs.readFileSync(LEDGER, 'utf8'));
-    return { facts: l.facts || [], articles: l.articles || [] };
+    raw = JSON.parse(fs.readFileSync(LEDGER, 'utf8'));
   } catch {
     console.error(`Could not parse ${path.relative(ROOT, LEDGER)}. Fix or delete it.`);
     process.exit(1);
   }
+  const out = emptyLedger();
+  // Pre-platform ledgers were a flat {facts,articles}. Treat those as X's,
+  // which is the only platform that was running when that shape existed.
+  if (Array.isArray(raw.facts) || Array.isArray(raw.articles)) {
+    out.x.facts = raw.facts || [];
+    out.x.articles = raw.articles || [];
+    return out;
+  }
+  for (const p of PLATFORMS) {
+    out[p].facts = raw[p]?.facts || [];
+    out[p].articles = raw[p]?.articles || [];
+  }
+  return out;
 }
 
-const usedFactIds = (l) => new Set(l.facts.map(f => f.id));
-const usedArticlePaths = (l) => new Set(l.articles.map(a => a.file));
+function platformArg(required = false) {
+  const p = (arg('--platform') || '').toLowerCase();
+  if (!p) {
+    if (required) {
+      console.error(`--platform is required: one of ${PLATFORMS.join(', ')}`);
+      process.exit(1);
+    }
+    return 'x';
+  }
+  if (!PLATFORMS.includes(p)) {
+    console.error(`unknown platform "${p}". Use one of ${PLATFORMS.join(', ')}`);
+    process.exit(1);
+  }
+  return p;
+}
+
+const usedFactIds = (l, p) => new Set((l[p]?.facts || []).map(f => f.id));
+const usedArticlePaths = (l, p) => new Set((l[p]?.articles || []).map(a => a.file));
 
 // ---------------------------------------------------------------- facts
 
@@ -209,12 +249,13 @@ const flag = (name) => process.argv.includes(name);
 
 function printFacts() {
   const ledger = readLedger();
-  const used = usedFactIds(ledger);
+  const plat = platformArg();
+  const used = usedFactIds(ledger, plat);
   let list = decorateFacts(loadFacts());
   if (flag('--unused')) list = list.filter(f => !used.has(f.id));
   const limit = Number(arg('--limit', 0));
   if (limit > 0) list = list.slice(0, limit);
-  console.log(`# ${list.length} facts${flag('--unused') ? ' unused' : ''}`);
+  console.log(`# ${list.length} facts${flag('--unused') ? ` unused on ${plat}` : ''}`);
   console.log('# id\tcategory\tanimal\ttitle\timage\tshared?\turl');
   for (const f of list) {
     console.log([f.id, f.category, f.animal, f.title, f.image || 'NONE',
@@ -224,14 +265,15 @@ function printFacts() {
 
 function printArticles() {
   const ledger = readLedger();
-  const used = usedArticlePaths(ledger);
+  const plat = platformArg();
+  const used = usedArticlePaths(ledger, plat);
   let list = loadArticles();
   if (flag('--unused')) list = list.filter(a => !used.has(a.file));
   const kind = arg('--kind');
   if (kind) list = list.filter(a => a.kind === kind);
   const limit = Number(arg('--limit', 0));
   if (limit > 0) list = list.slice(0, limit);
-  console.log(`# ${list.length} articles${flag('--unused') ? ' unused' : ''}${kind ? ` kind=${kind}` : ''}`);
+  console.log(`# ${list.length} articles${flag('--unused') ? ` unused on ${plat}` : ''}${kind ? ` kind=${kind}` : ''}`);
   console.log('# date\tkind\tsplit\tfile\timage\turl');
   for (const a of list) {
     console.log([a.date || 'nodate', a.kind, a.split || '-', a.file,
@@ -243,30 +285,45 @@ function printStats() {
   const ledger = readLedger();
   const facts = decorateFacts(loadFacts());
   const articles = loadArticles();
-  const fUsed = usedFactIds(ledger), aUsed = usedArticlePaths(ledger);
-  const remainingFacts = facts.filter(f => !fUsed.has(f.id)).length;
-  const remainingArticles = articles.filter(a => !aUsed.has(a.file)).length;
 
   const byKind = {};
   for (const a of articles) byKind[a.kind] = (byKind[a.kind] || 0) + 1;
   const byCat = {};
   for (const f of facts) byCat[f.category] = (byCat[f.category] || 0) + 1;
 
-  console.log(`facts        ${facts.length} total, ${fUsed.size} posted, ${remainingFacts} left`);
+  console.log(`facts        ${facts.length} total`);
   for (const [k, v] of Object.entries(byCat)) console.log(`  ${k.padEnd(20)} ${v}`);
   const noPhoto = facts.filter(f => !f.image);
   const shared = facts.filter(f => f.imageShared);
   console.log(`  unique photo       ${facts.length - noPhoto.length - shared.length}`);
   console.log(`  shares a photo     ${shared.length}${shared.length ? '  <- breaks the one-photo-per-fact rule' : ''}`);
   console.log(`  no photo           ${noPhoto.length}${noPhoto.length ? `  ids ${noPhoto.map(f => f.id).join(',')}` : ''}`);
-  console.log(`articles     ${articles.length} total, ${aUsed.size} posted, ${remainingArticles} left`);
+  console.log(`articles     ${articles.length} total`);
   for (const [k, v] of Object.entries(byKind)) console.log(`  ${k.padEnd(20)} ${v}`);
 
-  console.log('runway before anything repeats');
-  for (const [pf, pa] of [[1, 1], [2, 1], [2, 2], [3, 3]]) {
-    const d = Math.min(Math.floor(remainingFacts / pf), Math.floor(remainingArticles / pa));
-    const binding = Math.floor(remainingFacts / pf) <= Math.floor(remainingArticles / pa) ? 'facts' : 'articles';
-    console.log(`  ${pf} fact + ${pa} article/day    ${String(d).padStart(4)} days  (~${(d / 7).toFixed(0)} weeks, ${binding} run out first)`);
+  // Each platform draws on the full pool independently, so consumption and
+  // runway are reported per platform rather than as one shared number.
+  console.log('\nper platform');
+  for (const p of PLATFORMS) {
+    const fU = usedFactIds(ledger, p), aU = usedArticlePaths(ledger, p);
+    const rf = facts.length - fU.size, ra = articles.length - aU.size;
+    const at = (pf, pa) => Math.min(Math.floor(rf / pf), Math.floor(ra / pa));
+    console.log(`  ${p.padEnd(8)} posted ${String(fU.size).padStart(4)} facts / ${String(aU.size).padStart(4)} articles` +
+      `   left ${String(rf).padStart(4)} / ${String(ra).padStart(4)}` +
+      `   runway ${String(at(1, 1)).padStart(4)}d @1+1, ${String(at(2, 2)).padStart(4)}d @2+2, ${String(at(3, 3)).padStart(4)}d @3+3`);
+  }
+
+  // Overlap is the cross-post picture: what X has run that IG has not is
+  // exactly the queue for `plan --platform ig --mirror x`.
+  console.log('\ncross-post backlog (posted on row, not yet on column)');
+  const cell = (from, to) => {
+    const f = [...usedFactIds(ledger, from)].filter(id => !usedFactIds(ledger, to).has(id)).length;
+    const a = [...usedArticlePaths(ledger, from)].filter(p => !usedArticlePaths(ledger, to).has(p)).length;
+    return `${f}f/${a}a`;
+  };
+  console.log(`  ${''.padEnd(10)}${PLATFORMS.map(p => p.padEnd(12)).join('')}`);
+  for (const from of PLATFORMS) {
+    console.log(`  ${from.padEnd(10)}${PLATFORMS.map(to => (to === from ? '-' : cell(from, to)).padEnd(12)).join('')}`);
   }
 }
 
@@ -305,17 +362,33 @@ function printPlan() {
   const wantArticles = days * perDayArticles;
 
   const ledger = readLedger();
-  const fUsed = usedFactIds(ledger), aUsed = usedArticlePaths(ledger);
+  const plat = platformArg();
+  const fUsed = usedFactIds(ledger, plat), aUsed = usedArticlePaths(ledger, plat);
+
+  // --mirror <other>: propose only what that platform has ALREADY posted and
+  // this one has not. That is the cross-post lane - same source, rewritten for
+  // a different register - rather than opening a fresh seam of the library.
+  const mirror = (arg('--mirror') || '').toLowerCase();
+  if (mirror && !PLATFORMS.includes(mirror)) {
+    console.error(`unknown --mirror platform "${mirror}". Use one of ${PLATFORMS.join(', ')}`);
+    process.exit(1);
+  }
+  if (mirror === plat) {
+    console.error(`--mirror ${mirror} is the same as --platform ${plat}`);
+    process.exit(1);
+  }
+  const mFacts = mirror ? usedFactIds(ledger, mirror) : null;
+  const mArticles = mirror ? usedArticlePaths(ledger, mirror) : null;
 
   const order = flag('--recent')
     ? (a, b) => (b.date || '').localeCompare(a.date || '')
     : (a, b) => hash(a.slug || String(a.id)) - hash(b.slug || String(b.id));
 
   const facts = decorateFacts(loadFacts())
-    .filter(f => !fUsed.has(f.id) && f.image)
+    .filter(f => !fUsed.has(f.id) && f.image && (!mFacts || mFacts.has(f.id)))
     .sort((a, b) => hash(String(a.id)) - hash(String(b.id)));
   const articles = loadArticles()
-    .filter(a => !aUsed.has(a.file) && a.status === 'published')
+    .filter(a => !aUsed.has(a.file) && a.status === 'published' && (!mArticles || mArticles.has(a.file)))
     .sort(order);
 
   const pickedFacts = [], pickedArticles = [];
@@ -352,10 +425,11 @@ function printPlan() {
   const shortF = wantFacts - pickedFacts.length;
   const shortA = wantArticles - pickedArticles.length;
 
+  console.log(`# platform=${plat}${mirror ? `  mirroring ${mirror}` : ''}`);
   console.log(`# ${days} days at ${perDayFacts} fact + ${perDayArticles} article per day`);
   console.log(`# ${pickedFacts.length}/${wantFacts} facts, ${pickedArticles.length}/${wantArticles} articles (nothing written - run 'mark' after posting)`);
-  if (shortF > 0) console.log(`# SHORT ${shortF} facts: pool exhausted or blocked by the photo rule`);
-  if (shortA > 0) console.log(`# SHORT ${shortA} articles: pool exhausted or blocked by species/photo rules`);
+  if (shortF > 0) console.log(`# SHORT ${shortF} facts: ${mirror ? `${mirror} has not posted enough yet` : 'pool exhausted or blocked by the photo rule'}`);
+  if (shortA > 0) console.log(`# SHORT ${shortA} articles: ${mirror ? `${mirror} has not posted enough yet` : 'pool exhausted or blocked by species/photo rules'}`);
 
   // Stripe rather than block: day d takes picks d, d+days, d+2*days... Taking a
   // contiguous slice per day clumps the run (two tank-setup guides on the same
@@ -379,6 +453,10 @@ function printPlan() {
 
 function mark() {
   const ledger = readLedger();
+  // Required, not defaulted: marking against the wrong platform silently burns
+  // a slot on a feed that never ran it, and nothing downstream would catch it.
+  const plat = platformArg(true);
+  const bucket = ledger[plat];
   const date = arg('--date') || new Date().toISOString().slice(0, 10);
   const factId = arg('--fact');
   const articleFile = arg('--article');
@@ -388,19 +466,19 @@ function mark() {
   }
   if (factId) {
     const id = Number(factId);
-    if (ledger.facts.some(f => f.id === id)) console.error(`fact ${id} already in ledger, skipping`);
-    else ledger.facts.push({ id, date });
+    if (bucket.facts.some(f => f.id === id)) console.error(`fact ${id} already marked on ${plat}, skipping`);
+    else bucket.facts.push({ id, date });
   }
   if (articleFile) {
     if (!fs.existsSync(path.join(ROOT, articleFile))) {
       console.error(`no such file: ${articleFile}`);
       process.exit(1);
     }
-    if (ledger.articles.some(a => a.file === articleFile)) console.error(`${articleFile} already in ledger, skipping`);
-    else ledger.articles.push({ file: articleFile, date });
+    if (bucket.articles.some(a => a.file === articleFile)) console.error(`${articleFile} already marked on ${plat}, skipping`);
+    else bucket.articles.push({ file: articleFile, date });
   }
   fs.writeFileSync(LEDGER, JSON.stringify(ledger, null, 2) + '\n');
-  console.log(`ledger: ${ledger.facts.length} facts, ${ledger.articles.length} articles`);
+  console.log(`${plat}: ${bucket.facts.length} facts, ${bucket.articles.length} articles`);
 }
 
 const cmd = process.argv[2];
@@ -411,5 +489,7 @@ else if (cmd === 'stats') printStats();
 else if (cmd === 'mark') mark();
 else {
   console.log('usage: node scripts/social-inventory.mjs <facts|articles|plan|stats|mark> [options]');
+  console.log(`platforms: ${PLATFORMS.join(', ')}  (--platform, required for mark)`);
+  console.log('plan --mirror <platform>  propose what that platform already posted, for cross-posting');
   process.exit(1);
 }

@@ -47,7 +47,7 @@ Both pools grow as facts and articles are added, so never quote a count from
 memory or from an earlier run. Start here every time:
 
     node scripts/social-inventory.mjs stats
-    node scripts/social-inventory.mjs plan 7 --facts-per-day N --articles-per-day M
+    node scripts/social-inventory.mjs plan 7 --platform x --facts-per-day N --articles-per-day M
 
 `stats` reports the current pool sizes, how much the ledger has already
 consumed, and the runway at several cadences. Read it before proposing a
@@ -64,10 +64,13 @@ not a verdict. Override any pick whose source turns out to be weak, and say
 what you swapped and why.
 
 Useful when overriding:
-    node scripts/social-inventory.mjs facts --unused --limit 40
-    node scripts/social-inventory.mjs articles --unused --kind fact-article
-    node scripts/social-inventory.mjs articles --unused --kind chronicle
-    node scripts/social-inventory.mjs plan 7 --recent   (recency bias, opt in)
+    node scripts/social-inventory.mjs facts --platform x --unused --limit 40
+    node scripts/social-inventory.mjs articles --platform x --unused --kind fact-article
+    node scripts/social-inventory.mjs articles --platform x --unused --kind chronicle
+    node scripts/social-inventory.mjs plan 7 --platform x --recent   (recency bias, opt in)
+
+Every platform keeps its own ledger bucket, so X's runway is unaffected by what
+Instagram or Threads has run. Always pass --platform x here.
 
 Source shape:
   FACTS     src/lib/data/facts.js, curated facts keyed by stable id. Ids are
@@ -264,8 +267,8 @@ The exact commands to run once the week is actually posted, one line per item,
 ready to paste. Nothing is consumed until these run, so a week that gets
 scheduled but not marked will be proposed again.
 
-    node scripts/social-inventory.mjs mark --fact <id> --date YYYY-MM-DD
-    node scripts/social-inventory.mjs mark --article content/.../file.mdx --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform x --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform x --article content/.../file.mdx --date YYYY-MM-DD
 
 ## What to cancel
 Any queued seoTitle + excerpt + url posts still scheduled this week, and a one
