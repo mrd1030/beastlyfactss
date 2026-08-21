@@ -153,7 +153,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
               </motion.span>
               <button 
                 onClick={onClose} 
-                className="p-2 rounded-full hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
+                className="p-3 sm:p-2 rounded-full hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
                 aria-label="Close modal"
               >
                 <X className="w-5 h-5" />

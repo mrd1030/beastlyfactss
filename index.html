@@ -5,9 +5,13 @@
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Dark is this site's default (useDarkMode in useLocalStorage.js
+         defaults to true), so this static fallback matches that rather than
+         white - useDarkMode itself keeps this in sync with the live toggle
+         after mount (see its .dark class effect). -->
+    <meta name="theme-color" content="#101412">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Beastly Facts">
     <!-- iOS splash screens: Safari renders these before any JS runs, one per
          device size/DPR combo (no auto-generation like Android gets from the

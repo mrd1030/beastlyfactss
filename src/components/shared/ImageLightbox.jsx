@@ -76,7 +76,7 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
           >
             <button
               onClick={onClose}
-              className="absolute -top-3 -right-3 z-10 p-2 rounded-full bg-card text-foreground shadow-lg hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
+              className="absolute -top-3 -right-3 z-10 p-3 sm:p-2 rounded-full bg-card text-foreground shadow-lg hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
               aria-label="Close image"
             >
               <X className="w-5 h-5" />

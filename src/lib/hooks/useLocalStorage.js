@@ -49,6 +49,12 @@ export function useDarkMode() {
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark);
+    // Keeps the browser/OS chrome color (status bar, task switcher) matching
+    // the live theme instead of the static index.html fallback - otherwise
+    // toggling to light leaves a dark-colored status bar over a light page.
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute('content', dark ? '#101412' : '#faf6ef');
   }, [dark]);
 
   return [dark, setDark];

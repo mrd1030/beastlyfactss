@@ -83,7 +83,7 @@ export default function ProductModal({ product, onClose }) {
           <div className="flex justify-end mb-3">
             <button
               onClick={onClose}
-              className="p-2 rounded-full hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
+              className="p-3 sm:p-2 rounded-full hover:bg-muted transition-colors focus:ring-2 focus:ring-secondary focus:outline-none"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />

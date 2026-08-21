@@ -34,7 +34,7 @@ export default function SaveButton({
       onClick={() => toggleSavedContent({ type, id, title, subtitle, url })}
       aria-pressed={saved}
       aria-label={saved ? `Remove ${title} from your Pack` : `Save ${title} to your Pack`}
-      className={`flex items-center gap-1.5 text-xs font-body font-bold transition-colors px-3 py-2 rounded-xl border focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 ${
+      className={`flex items-center gap-1.5 text-xs font-body font-bold transition-colors ${iconOnly ? 'p-3 sm:px-3 sm:py-2' : 'px-3 py-2'} rounded-xl border focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50 ${
         saved
           ? 'bg-hotpink/10 border-hotpink/30 text-hotpink'
           : 'text-muted-foreground bg-card border-border hover:border-hotpink/40 hover:text-hotpink'

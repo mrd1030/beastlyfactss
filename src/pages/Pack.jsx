@@ -150,7 +150,7 @@ export default function Pack() {
   {!confirmingId || confirmingId !== qr.id ? (
     <button 
       onClick={() => setConfirmingId(qr.id)}
-      className="w-6 h-6 flex items-center justify-center rounded-full text-red-400 hover:text-red-500 hover:bg-red-500/10 transition-colors text-lg leading-none"
+      className="w-11 h-11 sm:w-6 sm:h-6 flex items-center justify-center rounded-full text-red-400 hover:text-red-500 hover:bg-red-500/10 transition-colors text-lg leading-none"
       title="Remove from Pack"
     >
       ×
@@ -282,7 +282,7 @@ export default function Pack() {
               <button
                 onClick={() => setConfirmingContentKey(key)}
                 aria-label={`Remove ${item.title} from your Pack`}
-                className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-full text-muted-foreground hover:text-red-500 hover:bg-red-500/10 transition-colors"
+                className="flex-shrink-0 w-11 h-11 sm:w-7 sm:h-7 flex items-center justify-center rounded-full text-muted-foreground hover:text-red-500 hover:bg-red-500/10 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>

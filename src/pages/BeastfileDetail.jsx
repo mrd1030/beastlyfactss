@@ -177,7 +177,7 @@ export default function BeastfileDetail() {
                 title={name}
                 text={`${name}: ${tagline}`}
                 url={`/beastlypedia/${id}/`}
-                className="flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
+                className="flex items-center gap-1.5 text-xs font-body font-bold text-muted-foreground hover:text-secondary transition-colors px-3 py-3 sm:py-1.5 rounded-xl border border-border bg-muted/40 hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/50"
               />
             </div>
           </div>
