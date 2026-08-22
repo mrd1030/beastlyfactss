@@ -19,6 +19,7 @@
 //   node scripts/social-inventory.mjs mark --platform x --fact 12 --article content/guides/x.mdx --date 2026-08-22
 //   node scripts/social-inventory.mjs next-start --platform x
 //   node scripts/social-inventory.mjs set-next-start --platform x --through 2026-08-28
+//   node scripts/social-inventory.mjs carousel-species [--min N] [--show-images]
 //
 // A batch's real calendar dates are assigned outside this script (plan only
 // outputs relative Day N). next-start/set-next-start exist so that assignment
@@ -382,6 +383,61 @@ function animalsCollide(a, b) {
 // the run, and keeps the fact track from colliding with the article track.
 const speciesOf = (a) => a.slug.replace(/-(cost|handling|health-issues|tank-setup|feeding|legal|enrichment)-guide$/, '');
 
+// A cross-guide IG carousel needs one real photo per slide, which only exists
+// for a species with several split guides already written. Grouping by
+// guideId (the encyclopedia's own species key) rather than a filename regex,
+// since that is the canonical species list the site already uses elsewhere -
+// a regex derived independently here would drift from it as new split types
+// or naming patterns get added.
+function loadCarouselCandidates() {
+  const encDir = path.join(ROOT, 'src/lib/data/encyclopedia');
+  const species = {};
+  // Split each file into per-entry blocks on `{ id:` boundaries, then pull
+  // guideId/name/image from each block independently - field order varies
+  // between encyclopedia files, so a single combined regex isn't reliable.
+  for (const f of fs.readdirSync(encDir).filter(f => f.endsWith('.js') && f !== 'index.js')) {
+    const src = fs.readFileSync(path.join(encDir, f), 'utf8');
+    const blocks = src.split(/\n\s*\{\s*\n?\s*id:/).slice(1);
+    for (const block of blocks) {
+      const guideId = (block.match(/guideId:\s*"([^"]+)"/) || [])[1];
+      const name = (block.match(/name:\s*"([^"]+)"/) || [])[1];
+      const hubImage = (block.match(/image:\s*"([^"]+)"/) || [])[1];
+      if (!guideId) continue;
+      species[guideId] = { name: name || guideId, images: new Set(hubImage ? [hubImage] : []) };
+    }
+  }
+
+  const guidesDir = path.join(ROOT, 'content/guides');
+  for (const file of fs.readdirSync(guidesDir).filter(f => f.endsWith('.mdx'))) {
+    for (const guideId of Object.keys(species)) {
+      if (!file.startsWith(`${guideId}-`)) continue;
+      const fm = parseFrontmatter(fs.readFileSync(path.join(guidesDir, file), 'utf8'));
+      if (fm.image) species[guideId].images.add(fm.image);
+    }
+  }
+
+  return Object.entries(species)
+    .map(([guideId, v]) => ({ guideId, name: v.name, images: [...v.images] }))
+    .sort((a, b) => b.images.length - a.images.length);
+}
+
+function printCarouselSpecies() {
+  const min = Number(arg('--min', 3));
+  const all = loadCarouselCandidates();
+  const qualifying = all.filter(s => s.images.length >= min);
+  console.log(`# ${qualifying.length} species qualify for a cross-guide carousel (${min}+ distinct images)`);
+  console.log(`# ${all.length - qualifying.length} more do not yet`);
+  console.log('# guideId\\timage count\\tname');
+  for (const s of qualifying) console.log(`${s.guideId}\t${s.images.length}\t${s.name}`);
+  if (flag('--show-images')) {
+    console.log('\n# resolved image paths per qualifying species');
+    for (const s of qualifying) {
+      console.log(`\n${s.guideId} (${s.images.length}):`);
+      s.images.forEach(img => console.log(`  ${img}`));
+    }
+  }
+}
+
 function printPlan() {
   const days = Number(process.argv[3]) || 7;
   const perDayFacts = Number(arg('--facts-per-day', 1));
@@ -550,11 +606,13 @@ else if (cmd === 'stats') printStats();
 else if (cmd === 'mark') mark();
 else if (cmd === 'next-start') nextStart();
 else if (cmd === 'set-next-start') setNextStart();
+else if (cmd === 'carousel-species') printCarouselSpecies();
 else {
   console.log('usage: node scripts/social-inventory.mjs <facts|articles|plan|stats|mark|next-start|set-next-start> [options]');
   console.log(`platforms: ${PLATFORMS.join(', ')}  (--platform, required for mark/next-start/set-next-start)`);
   console.log('plan --mirror <platform>  propose what that platform already posted, for cross-posting');
   console.log('next-start --platform p                        read where the next batch should start');
   console.log('set-next-start --platform p --through <date>   set it, once a batch\'s dates are locked in');
+  console.log('carousel-species [--min N] [--show-images]     species with enough real photos for an IG cross-guide carousel');
   process.exit(1);
 }

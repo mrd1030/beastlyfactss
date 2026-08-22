@@ -127,17 +127,21 @@ CROSS-GUIDE CAROUSEL, the stronger option whenever it's available. A listicle
 carousel leans on text cards because the article has exactly one photo, the
 frontmatter image, nothing else. But a species with several split guides
 already written (cost, handling, health, tank setup, feeding, enrichment,
-temperature, comparisons) has one real, distinct photo PER GUIDE, not one
-photo total. That is enough for a genuine photo carousel, real image on every
-slide, no text cards needed, and it beats a listicle carousel whenever it's
-available. Confirmed concretely: leopard gecko has 8 distinct guide photos,
-bearded dragon 7, axolotl 7, hermit crab 4.
+temperature, comparisons) has one real, distinct photo PER GUIDE, plus its own
+encyclopedia hub photo on top of those, not one photo total. That is enough
+for a genuine photo carousel, real image on every slide, no text cards needed,
+and it beats a listicle carousel whenever it's available. This is most
+species, not a handful: 62 currently qualify at 3+ images, several with 8 or 9.
 
 Check before proposing one:
-    grep -rh '^image:' content/guides/{species}-*.mdx | sort -u
-3 or more distinct images qualifies. Below that, fall back to a listicle
-carousel or a single post. Not every species qualifies, most don't have this
-many split guides written yet, so check per species rather than assuming.
+    node scripts/social-inventory.mjs carousel-species
+    node scripts/social-inventory.mjs carousel-species --show-images   (see the actual paths for one species)
+Lists every species at 3+ distinct images (adjustable with --min), pulling
+from both the split guides and the encyclopedia's own hub photo, not just a
+filename grep, so it will not undercount the way a hand-typed grep does.
+Below the threshold, fall back to a listicle carousel or a single post. Rerun
+this rather than trusting a number from an earlier session, the guide library
+keeps growing.
 
 If it qualifies, each slide is one aspect of care (cost / handling / health /
 tank setup / feeding / whatever that species has), paired with THAT guide's
