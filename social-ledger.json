@@ -20,7 +20,12 @@
     "nextStart": null
   },
   "threads": {
-    "facts": [],
+    "facts": [
+      {
+        "id": 94,
+        "date": "2026-08-21"
+      }
+    ],
     "articles": [],
     "nextStart": null
   }
