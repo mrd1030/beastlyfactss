@@ -13,6 +13,7 @@ import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
+import TableOfContents from '@/components/blog/TableOfContents';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -38,6 +39,7 @@ export default function GuideDetail() {
   const [printOptions, setPrintOptions] = useState({ encyclopedia: false, cost: false, faq: false });
   const printTriggerRef = useRef(null);
   const printModalRef = useRef(null);
+  const contentRef = useRef(null);
 
   const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
   const hasFaq = !!guide?.faqs?.length;
@@ -464,13 +466,20 @@ export default function GuideDetail() {
             </div>
           </div>
           <p className="text-base text-foreground font-body italic mb-4">{guide.tagline}</p>
+
+          {/* Mobile-only: the sidebar's TOC (below) sits in a column that
+              collapses to the bottom of the page once the grid drops to a
+              single column - same issue as Blog.jsx had, same fix. */}
+          <div className="lg:hidden">
+            <TableOfContents contentRef={contentRef} watch={guide.id} skipText={guide.name} collapsible />
+          </div>
         </motion.div>
 
         {/* Two-col layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* ── Main content ── */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
             {/* Fun fact */}
             <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
@@ -556,6 +565,12 @@ export default function GuideDetail() {
 
           {/* ── Sidebar ── */}
           <div className="space-y-4">
+
+            {/* Hidden below lg: the collapsible instance above the article
+                already covers mobile. */}
+            <div className="hidden lg:block">
+              <TableOfContents contentRef={contentRef} watch={guide.id} skipText={guide.name} />
+            </div>
 
             {/* Encyclopedia link */}
             {encAnimal && (

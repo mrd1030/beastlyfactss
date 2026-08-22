@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useParams, Link } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
@@ -9,6 +9,7 @@ import ShareButton from '@/components/shared/ShareButton';
 import SaveButton from '@/components/shared/SaveButton';
 import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
+import TableOfContents from '@/components/blog/TableOfContents';
 import { truncateDescription } from '@/lib/utils/truncate';
 // Built by scripts/generate-beastlypedia-index.js: this Beastfile's fun facts
 // and its related article cards, both already resolved.
@@ -38,6 +39,7 @@ export default function BeastfileDetail() {
   // Declared above the not-found return: hooks cannot sit after a conditional
   // exit. Holds the fact whose photo is open, or null.
   const [photoFact, setPhotoFact] = useState(null);
+  const contentRef = useRef(null);
 
   if (!beastfile) {
     return (
@@ -154,7 +156,7 @@ export default function BeastfileDetail() {
             </div>
           )}
 
-          <div className="p-5 sm:p-8">
+          <div className="p-5 sm:p-8" ref={contentRef}>
         <header className="mb-6">
           {/* The share control sits on the title row rather than at the foot of
               the page: this is the point where someone knows what the page is
@@ -194,6 +196,14 @@ export default function BeastfileDetail() {
             {tagline}
           </p>
         </header>
+
+        {/* This page is single-column at every width (no sidebar to reflow),
+            so unlike Blog/GuideDetail/EncyclopediaAnimal there's no
+            mobile-only variant here - just one collapsed-by-default TOC so
+            it doesn't push Overview down the page. */}
+        <div className="mb-6">
+          <TableOfContents contentRef={contentRef} watch={id} skipText={name} collapsible />
+        </div>
 
         <Section title="Overview">
           <p className="text-sm text-muted-foreground font-body leading-relaxed">{overview}</p>

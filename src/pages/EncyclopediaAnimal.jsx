@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
@@ -11,6 +11,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
 import SaveButton from '@/components/shared/SaveButton';
+import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
@@ -43,6 +44,7 @@ export default function EncyclopediaAnimal() {
   const location = useLocation();
   const { id } = useParams();
   const animal = encyclopediaAnimals.find(a => a.id === id);
+  const contentRef = useRef(null);
   const guide = animal?.guideId ? allGuides.find(g => g.id === animal.guideId) : null;
   const legal = animal ? LEGAL_BY_ENCYCLOPEDIA_ID[animal.id] : null;
 
@@ -172,11 +174,18 @@ export default function EncyclopediaAnimal() {
           </div>
         </motion.div>
 
+        {/* Mobile-only: the sidebar's TOC (below) sits in a column that
+            collapses to the bottom of the page once the grid drops to a
+            single column - same fix as GuideDetail/Blog. */}
+        <div className="lg:hidden mb-6">
+          <TableOfContents contentRef={contentRef} watch={animal.id} skipText={animal.name} collapsible />
+        </div>
+
         {/* Two-col layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* ── Main content ── */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
             {/* Hero image */}
             {guide?.image && (
@@ -244,6 +253,12 @@ export default function EncyclopediaAnimal() {
 
           {/* ── Sidebar ── */}
           <div className="space-y-4">
+
+            {/* Hidden below lg: the collapsible instance above the article
+                already covers mobile. */}
+            <div className="hidden lg:block">
+              <TableOfContents contentRef={contentRef} watch={animal.id} skipText={animal.name} />
+            </div>
 
             {/* Guide CTA */}
             {guide && (
