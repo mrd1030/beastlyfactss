@@ -17,6 +17,17 @@
 //   node scripts/social-inventory.mjs plan [days] [--platform p] [--facts-per-day N] [--articles-per-day M] [--mirror p] [--recent]
 //   node scripts/social-inventory.mjs stats
 //   node scripts/social-inventory.mjs mark --platform x --fact 12 --article content/guides/x.mdx --date 2026-08-22
+//   node scripts/social-inventory.mjs next-start --platform x
+//   node scripts/social-inventory.mjs set-next-start --platform x --through 2026-08-28
+//
+// A batch's real calendar dates are assigned outside this script (plan only
+// outputs relative Day N). next-start/set-next-start exist so that assignment
+// never depends on knowing what day it actually is: once a batch's dates are
+// locked in, set-next-start --through <its last day> records where the next
+// one picks up. next-start then just reads that back. This sidesteps clock
+// drift entirely - it was the actual cause of a batch going out a day off
+// from the user's real time, since this sandbox's own date can lag or lead
+// their actual clock and there is no way to verify it from in here.
 
 import fs from 'fs';
 import path from 'path';
@@ -48,7 +59,14 @@ const slugify = (text) => {
 // different registers. Each platform therefore gets its own full runway, and
 // `plan --mirror <platform>` is how a deliberate cross-post is proposed.
 const PLATFORMS = ['x', 'ig', 'threads'];
-const emptyLedger = () => Object.fromEntries(PLATFORMS.map(p => [p, { facts: [], articles: [] }]));
+// nextStart: the calendar date the NEXT batch should open on, per platform.
+// Deliberately separate from facts/articles (which track CONFIRMED posted
+// items via `mark`). nextStart tracks what's already been SCHEDULED - set
+// once a CSV is generated and its dates are locked in, regardless of whether
+// the individual posts have been confirmed live yet. Continuing from this
+// value instead of "today" sidesteps clock drift entirely: it never depends
+// on knowing what day it actually is, only on what was scheduled last time.
+const emptyLedger = () => Object.fromEntries(PLATFORMS.map(p => [p, { facts: [], articles: [], nextStart: null }]));
 
 function readLedger() {
   if (!fs.existsSync(LEDGER)) return emptyLedger();
@@ -70,8 +88,17 @@ function readLedger() {
   for (const p of PLATFORMS) {
     out[p].facts = raw[p]?.facts || [];
     out[p].articles = raw[p]?.articles || [];
+    out[p].nextStart = raw[p]?.nextStart || null;
   }
   return out;
+}
+
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+function addDays(dateStr, n) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d));
+  dt.setUTCDate(dt.getUTCDate() + n);
+  return dt.toISOString().slice(0, 10);
 }
 
 function platformArg(required = false) {
@@ -310,7 +337,8 @@ function printStats() {
     const at = (pf, pa) => Math.min(Math.floor(rf / pf), Math.floor(ra / pa));
     console.log(`  ${p.padEnd(8)} posted ${String(fU.size).padStart(4)} facts / ${String(aU.size).padStart(4)} articles` +
       `   left ${String(rf).padStart(4)} / ${String(ra).padStart(4)}` +
-      `   runway ${String(at(1, 1)).padStart(4)}d @1+1, ${String(at(2, 2)).padStart(4)}d @2+2, ${String(at(3, 3)).padStart(4)}d @3+3`);
+      `   runway ${String(at(1, 1)).padStart(4)}d @1+1, ${String(at(2, 2)).padStart(4)}d @2+2, ${String(at(3, 3)).padStart(4)}d @3+3` +
+      `   next batch starts ${ledger[p].nextStart || '(unset)'}`);
   }
 
   // Overlap is the cross-post picture: what X has run that IG has not is
@@ -481,15 +509,52 @@ function mark() {
   console.log(`${plat}: ${bucket.facts.length} facts, ${bucket.articles.length} articles`);
 }
 
+function nextStart() {
+  const plat = platformArg(true);
+  const ledger = readLedger();
+  const val = ledger[plat].nextStart;
+  if (!val) {
+    console.log(`no nextStart set for ${plat} yet - this is the first batch. Pick a real start date`);
+    console.log('yourself (confirm today\'s date with the user, don\'t trust the sandbox clock alone),');
+    console.log(`then run: node scripts/social-inventory.mjs set-next-start --platform ${plat} --through <last day's date>`);
+    return;
+  }
+  console.log(val);
+}
+
+function setNextStart() {
+  const plat = platformArg(true);
+  const ledger = readLedger();
+  const through = arg('--through');
+  const direct = arg('--date');
+  if (!through && !direct) {
+    console.error('set-next-start needs --through <last day used, YYYY-MM-DD> (sets nextStart to through+1)');
+    console.error('or --date <YYYY-MM-DD> to set nextStart directly');
+    process.exit(1);
+  }
+  const val = direct || addDays(through, 1);
+  if (!DATE_RE.test(val)) {
+    console.error(`bad date "${val}", expected YYYY-MM-DD`);
+    process.exit(1);
+  }
+  ledger[plat].nextStart = val;
+  fs.writeFileSync(LEDGER, JSON.stringify(ledger, null, 2) + '\n');
+  console.log(`${plat} nextStart set to ${val}`);
+}
+
 const cmd = process.argv[2];
 if (cmd === 'facts') printFacts();
 else if (cmd === 'articles') printArticles();
 else if (cmd === 'plan') printPlan();
 else if (cmd === 'stats') printStats();
 else if (cmd === 'mark') mark();
+else if (cmd === 'next-start') nextStart();
+else if (cmd === 'set-next-start') setNextStart();
 else {
-  console.log('usage: node scripts/social-inventory.mjs <facts|articles|plan|stats|mark> [options]');
-  console.log(`platforms: ${PLATFORMS.join(', ')}  (--platform, required for mark)`);
+  console.log('usage: node scripts/social-inventory.mjs <facts|articles|plan|stats|mark|next-start|set-next-start> [options]');
+  console.log(`platforms: ${PLATFORMS.join(', ')}  (--platform, required for mark/next-start/set-next-start)`);
   console.log('plan --mirror <platform>  propose what that platform already posted, for cross-posting');
+  console.log('next-start --platform p                        read where the next batch should start');
+  console.log('set-next-start --platform p --through <date>   set it, once a batch\'s dates are locked in');
   process.exit(1);
 }
