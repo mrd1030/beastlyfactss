@@ -306,11 +306,9 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 after the first goes here too, joined by ||, e.g.
                 "second post||third post||fourth post with the url". Each
                 fires automatically in order once the main post goes live,
-                no Condition needs to be set. Confirmed live for a single
-                reply; a full multi-|| chain is documented by Publer but
-                has not independently been watched fire end to end, so the
-                first time a real thread goes out this way, check every
-                post in the chain actually landed before trusting it.
+                no Condition needs to be set. Confirmed live, both a single
+                reply and a full 3-comment || chain (posted roughly 4
+                seconds apart, in order, no drops).
   Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
   CTA, Reminder) stays empty for a plain native X post.
 

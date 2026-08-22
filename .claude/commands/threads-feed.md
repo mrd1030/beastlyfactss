@@ -308,11 +308,12 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 there is one. For a thread, every post after the first goes
                 here too, joined by ||. Each fires automatically in order
                 once the main post goes live, no Condition needs to be set.
-                This has been confirmed live on X for a single reply; the
-                multi-|| chain and Threads specifically are documented by
-                Publer but have not independently been watched fire end to
-                end, so the first time this runs for real, check every post
-                in the chain actually landed before trusting it blind.
+                Confirmed live on X: a single reply, and separately a full
+                3-comment || chain, all landing in order roughly 4 seconds
+                apart. Threads-the-platform specifically has not been
+                separately tested, only X, so the first time a real thread
+                runs here, check every post in the chain actually landed
+                before trusting it blind on this platform too.
   Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
   CTA, Reminder) stays empty for a plain native Threads post.
 
