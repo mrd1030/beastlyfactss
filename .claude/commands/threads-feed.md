@@ -291,29 +291,29 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 failed batch on X. Slashes in the date part also work but
                 are not required once the time uses a colon.
   Text          the main post, verbatim from above. No url in this field,
-                ever, unless the post is one of the rare linked ones, in
-                which case put the url directly in Text rather than in
-                Link(s) (see below).
-  Link(s)       leave EMPTY for a native photo post. Per Publer's docs this
-                column takes priority over Media URL(s) on platforms that
-                support link sharing, and produces a link-preview post
-                instead of the native image this format exists to deliver.
-                For the rare linked post, put the url in Text and still
-                leave Link(s) empty so the image stays attached natively.
+                ever. Same as X: even for a linked post, the url goes in the
+                first reply (Comment(s), below), never in the post itself.
+  Link(s)       leave EMPTY. Per Publer's docs this column takes priority
+                over Media URL(s) on platforms that support link sharing,
+                and produces a link-preview post instead of the native image
+                this format exists to deliver. Confirmed: an empty Link(s)
+                column is what makes the image attach natively.
   Media URL(s)  the FULL https://beastlyfacts.com/... path, not the
                 relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
                 from the path alone.
-  Comment(s)    the FIRST REPLY or the PLANNED REPLY, carrying the url when
-                there is one. For a thread, every post after the first goes
-                here too, joined by ||. Each fires automatically in order
-                once the main post goes live, no Condition needs to be set.
-                Confirmed live on X: a single reply, and separately a full
-                3-comment || chain, all landing in order roughly 4 seconds
-                apart. Threads-the-platform specifically has not been
-                separately tested, only X, so the first time a real thread
-                runs here, check every post in the chain actually landed
-                before trusting it blind on this platform too.
+  Comment(s)    leave EMPTY for a normal, unlinked post. The PLANNED REPLY
+                is for the account to send once someone actually responds,
+                it is reactive and does not belong in the CSV. Only fill
+                this in for: a linked post, where it carries the FIRST
+                REPLY with the url; or a thread, where every post after the
+                first goes here, joined by ||, ending with a reply carrying
+                the url if the thread links out. Each fires automatically in
+                order once the main post goes live, no Condition needs to be
+                set. Confirmed live on both X and Threads: a single reply, a
+                full 3-comment || chain, and a 4-comment chain ending in a
+                url reply, all landing in order within seconds of the main
+                post.
   Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
   CTA, Reminder) stays empty for a plain native Threads post.
 
