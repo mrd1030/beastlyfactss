@@ -33,8 +33,10 @@ WHAT IS DIFFERENT ABOUT IG
 Instagram is image first. The caption supports the image, never the other way
 around. A post whose image cannot carry itself should not ship, no matter how
 good the fact is. Carousels get saved and saves are the metric that matters
-here, so listicle content is the strongest source we have. Links do not work in
-captions. Stop trying.
+here. Listicles are one carousel source; a species with several split guides
+already written is often a stronger one, real photos on every slide instead
+of text cards, see CROSS-GUIDE CAROUSEL below. Links do not work in captions.
+Stop trying.
 
 WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 
@@ -76,8 +78,10 @@ Source shape:
             gaps are deliberate. Never renumber, never invent an id.
   ARTICLES  content/guides (care guides split cost / handling / health / tank
             setup / feeding / legal / enrichment, plus standalone fact
-            articles), content/fun-facts (listicles, the strongest carousel
-            source), content/short-story (chronicles: Dex the bearded dragon,
+            articles, and the source for CROSS-GUIDE CAROUSELS when a species
+            has enough of them), content/fun-facts (listicles, a carousel
+            source when cross-guide doesn't qualify), content/short-story
+            (chronicles: Dex the bearded dragon,
             pompous and self-serious; Otis the bunny, real photos under
             /assets/images/dex/ and /assets/images/otis/). content/blog holds
             one file, ignore it. content/_scheduled-* is NOT LIVE.
@@ -108,14 +112,36 @@ actually in the frame.
 
   CARRIES NO + listicle       propose a carousel whose slide 1 is a text card,
                               so the post does not depend on the photo
-  CARRIES NO + anything else  mark needs-new-asset and take the next candidate
-                              from the inventory. Never ship a weak image
-                              carrying a strong caption.
+  CARRIES NO + anything else  check for a CROSS-GUIDE CAROUSEL first (below).
+                              If the species does not qualify, mark
+                              needs-new-asset and take the next candidate.
+                              Never ship a weak image carrying a strong
+                              caption.
 
 Fact photos are dedicated per fact and generally hold up, so expect most fact
 picks to pass. Report how many ARTICLE picks came back CARRIES: NO. If it is
 more than a third, say so plainly. That is an asset problem, not a copy
 problem, and no prompt fixes it.
+
+CROSS-GUIDE CAROUSEL, the stronger option whenever it's available. A listicle
+carousel leans on text cards because the article has exactly one photo, the
+frontmatter image, nothing else. But a species with several split guides
+already written (cost, handling, health, tank setup, feeding, enrichment,
+temperature, comparisons) has one real, distinct photo PER GUIDE, not one
+photo total. That is enough for a genuine photo carousel, real image on every
+slide, no text cards needed, and it beats a listicle carousel whenever it's
+available. Confirmed concretely: leopard gecko has 8 distinct guide photos,
+bearded dragon 7, axolotl 7, hermit crab 4.
+
+Check before proposing one:
+    grep -rh '^image:' content/guides/{species}-*.mdx | sort -u
+3 or more distinct images qualifies. Below that, fall back to a listicle
+carousel or a single post. Not every species qualifies, most don't have this
+many split guides written yet, so check per species rather than assuming.
+
+If it qualifies, each slide is one aspect of care (cost / handling / health /
+tank setup / feeding / whatever that species has), paired with THAT guide's
+own photo and a fact traced to THAT guide's body, not the listicle's.
 
 QUOTE rules:
   Articles: from the BODY, never the seoTitle, excerpt, or description.
@@ -166,7 +192,9 @@ PHASE 2: WRITE (after approval only)
   is the 1-based position when that series is sorted by frontmatter `date`
   ascending, not the number in the filename. Recompute the sort.
 
---- CAROUSEL SPEC (listicles only) ---
+--- CAROUSEL SPEC, TWO KINDS ---
+
+LISTICLE CAROUSEL (the article has one photo total)
   3 to 6 slides. State the count.
   Slide 1: the hook as a text card. Max 8 words. This is the thumbnail and it
            does all the work.
@@ -176,6 +204,22 @@ PHASE 2: WRITE (after approval only)
            question that drives comments.
   For each slide also give a one line IMAGE DIRECTION: what should be in the
   frame. If we do not have that asset, say so.
+
+CROSS-GUIDE CAROUSEL (the species qualified in Phase 1: 3+ distinct guide
+photos). Prefer this over a listicle carousel whenever both are available,
+real photos beat text cards.
+  One slide per split guide that exists for the species, up to 6. State the
+  count and which guides it draws from.
+  Each slide: that guide's own frontmatter `image`, plus max 12 words of
+  on-image text tracing to a verbatim line in THAT guide's body, not the
+  listicle's. Slide order should read as a natural progression (cost, then
+  handling, then setup, then health, or whatever order tells the clearest
+  story for that species) rather than alphabetical.
+  Slide 1 still needs to work as the thumbnail: lead with whichever guide's
+  photo and fact is visually strongest, not necessarily the first one
+  written.
+  Final slide: the practical takeaway, or a question, same as the listicle
+  version. Not "follow for more".
 
 --- VOICE ---
 Honest, specific, slightly dry. Sounds like someone who has actually cleaned a
