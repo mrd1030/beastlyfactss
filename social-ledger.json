@@ -26,7 +26,12 @@
         "date": "2026-08-21"
       }
     ],
-    "articles": [],
+    "articles": [
+      {
+        "file": "content/guides/goldfish-tank-setup-guide.mdx",
+        "date": "2026-08-21"
+      }
+    ],
     "nextStart": null
   }
 }
