@@ -407,8 +407,16 @@ function loadCarouselCandidates() {
     }
   }
 
+  // Excludes multi-species roundups: a "-vs-" comparison or an "-overview"
+  // piece shows two or more animals in one image, not the single species its
+  // filename happens to be prefixed with, so counting it would inflate a
+  // species' slide count with a photo a carousel can't actually use for that
+  // species alone.
+  const isRoundup = (file) => /-vs-/.test(file) || /-overview\.mdx$/.test(file);
+
   const guidesDir = path.join(ROOT, 'content/guides');
   for (const file of fs.readdirSync(guidesDir).filter(f => f.endsWith('.mdx'))) {
+    if (isRoundup(file)) continue;
     for (const guideId of Object.keys(species)) {
       if (!file.startsWith(`${guideId}-`)) continue;
       const fm = parseFrontmatter(fs.readFileSync(path.join(guidesDir, file), 'utf8'));
