@@ -1,1 +1,19 @@
-{"x":{"facts":[],"articles":[]},"ig":{"facts":[],"articles":[]},"threads":{"facts":[],"articles":[]}}
+{
+  "x": {
+    "facts": [
+      {
+        "id": 94,
+        "date": "2026-08-22"
+      }
+    ],
+    "articles": []
+  },
+  "ig": {
+    "facts": [],
+    "articles": []
+  },
+  "threads": {
+    "facts": [],
+    "articles": []
+  }
+}
