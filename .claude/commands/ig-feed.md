@@ -243,6 +243,58 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   IMAGE:          <frontmatter path>
   WHY THIS ONE:   <one sentence>
 
+## Publer CSV
+Only build this once the calendar above is approved. Do not generate it
+alongside the first draft.
+
+Read the real start date, never guess it:
+    node scripts/social-inventory.mjs next-start --platform ig
+If it prints "no nextStart set", this is the first batch on this platform.
+Either way, confirm the real current date with the user before picking Day 1.
+This sandbox's clock has drifted from the user's actual local time before,
+silently, and there is no way to verify it from in here. Trust the user's
+stated date/time over anything computed internally.
+
+CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
+  Date          YYYY-MM-DD HH:MM, COLON between hours and minutes. A hyphen
+                (08-30) silently fails to parse and the row lands as an
+                unscheduled draft with no error shown, confirmed by a real
+                failed batch on X. Slashes in the date part also work but
+                are not required once the time uses a colon.
+  Text          the caption, verbatim from above, hashtag block included.
+                No url in this field, Instagram never makes caption links
+                clickable regardless.
+  Link(s)       leave EMPTY. There is no native link-post equivalent worth
+                using here the way there is on X, and filling this risks
+                Publer prioritizing a link post over the native photo.
+  Media URL(s)  the FULL https://beastlyfacts.com/... path(s), not the
+                relative frontmatter path. Comma-separated for a carousel.
+                Must be real, live, public URLs, confirmed working before
+                use, never assumed correct from the path alone.
+  Alt text(s)   from the ALT TEXT block above. For a carousel, one entry
+                per media URL, || separated, in the same order.
+  Comment(s)    IMPORTANT, read before using: unlike X and Threads,
+                Instagram does not hyperlink comment text either, the same
+                restriction that already rules out a url in the caption.
+                A url placed here is not clickable and does not solve the
+                link-delivery problem. BIO TARGET stays the only real
+                mechanism for getting someone to the article: it works
+                because it is the one link slot IG actually renders as a
+                tappable link. Comment(s) is only worth using here for a
+                genuine non-link follow-up, a seeded question or added
+                detail, never as a stand-in for the url.
+  Everything else (Link Title, Label, Board/Album, Post subtype, CTA,
+  Reminder) stays empty for a plain native IG post.
+
+BIO TARGET days still need the bio link swapped by hand in Instagram itself.
+The CSV has no column for that, it is not something Publer's bulk import
+touches.
+
+After the CSV is imported AND the user has confirmed it actually scheduled
+correctly in Publer, not just generated:
+    node scripts/social-inventory.mjs set-next-start --platform ig --through <last day used>
+so the next batch picks up automatically without re-asking what day it is.
+
 ## Asset gaps
 Every needs-new-asset call and every carousel slide with no existing image.
 This is the shot list.

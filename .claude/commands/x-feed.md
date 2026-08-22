@@ -221,13 +221,23 @@ Fact posts are their own register. A fact post is short, one claim, no setup,
 and it does NOT need the article track's framing. Do not turn a fact into a
 mini care guide. If the fact cannot stand as 2 or 3 lines, pick another.
 
---- THE THREAD (one per week, replaces that day's single post) ---
+--- THE THREAD (an article slot filled this way instead of a single post) ---
+Not a fixed weekly quota. Use it whenever a source has one genuine mistake
+with a real mechanism and a real fix, which most guides do not, most weeks
+that is a few sources, not all seven. Forcing it daily either burns your
+strongest thread-shaped material fast or produces weak, formulaic threads
+that read as templated. A few a week beats one a day.
+
 3 to 5 posts on ONE husbandry mistake, from ONE guide.
   Post 1: state the mistake so it stings slightly.
   Middle: the mechanism and the real numbers from the article.
   Last:   the fix, specific enough to do today.
   Reply to the last post: the url. Nowhere else in the thread.
 Number nothing. No "1/5". Let the thread carry itself.
+
+Mechanically this is one CSV row: the main post is Post 1, every post after
+it goes in that row's Comment(s) column joined by ||, and each fires
+automatically in order once the main post goes live. See Publer CSV below.
 
 --- IMAGES ---
 Use the source's frontmatter `image` verbatim. Never invent a path. Prefer a
@@ -261,6 +271,53 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
 
   IMAGE:        <resolved path>
   WHY THIS ONE: <one sentence>
+
+## Publer CSV
+Only build this once the calendar above is approved. Do not generate it
+alongside the first draft.
+
+Read the real start date, never guess it:
+    node scripts/social-inventory.mjs next-start --platform x
+If it prints "no nextStart set", this is the first batch on this platform.
+Either way, confirm the real current date with the user before picking Day 1.
+This sandbox's clock has drifted from the user's actual local time before,
+silently, and there is no way to verify it from in here. Trust the user's
+stated date/time over anything computed internally.
+
+CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
+  Date          YYYY-MM-DD HH:MM, COLON between hours and minutes. A hyphen
+                (08-30) silently fails to parse and the row lands as an
+                unscheduled draft with no error shown, confirmed by a real
+                failed batch. Slashes in the date part also work but are
+                not required once the time uses a colon.
+  Text          the main post, verbatim from above. No url in this field,
+                ever.
+  Link(s)       leave EMPTY. Per Publer's own docs, this column takes
+                priority over Media URL(s) on platforms that support link
+                sharing, X included, which means anything in it produces a
+                link-preview post instead of the native photo post this
+                whole format exists to deliver. Confirmed: an empty
+                Link(s) column is what makes the image attach natively.
+  Media URL(s)  the FULL https://beastlyfacts.com/... path, not the
+                relative frontmatter path. Must be a real, live, public
+                URL. Confirmed working before use, never assumed correct
+                from the path alone.
+  Comment(s)    the first reply, carrying the url. For a thread, every post
+                after the first goes here too, joined by ||, e.g.
+                "second post||third post||fourth post with the url". Each
+                fires automatically in order once the main post goes live,
+                no Condition needs to be set. Confirmed live for a single
+                reply; a full multi-|| chain is documented by Publer but
+                has not independently been watched fire end to end, so the
+                first time a real thread goes out this way, check every
+                post in the chain actually landed before trusting it.
+  Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
+  CTA, Reminder) stays empty for a plain native X post.
+
+After the CSV is imported AND the user has confirmed it actually scheduled
+correctly in Publer, not just generated:
+    node scripts/social-inventory.mjs set-next-start --platform x --through <last day used>
+so the next batch picks up automatically without re-asking what day it is.
 
 ## Ledger
 The exact commands to run once the week is actually posted, one line per item,
