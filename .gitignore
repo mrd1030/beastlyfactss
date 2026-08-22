@@ -73,3 +73,6 @@ internal-link-audit.json
 # not read from anything here). Kept locally for editing/reference only.
 cloudflare-csp.txt
 .gumroad-pages/
+
+# Frontpage hero image/layout trials - local sandbox only, never shipped
+frontpage trials/

@@ -4539,6 +4539,62 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/budgie-enrichment-guide.mdx",
+    "slug": "budgie-enrichment-guide",
+    "title": "Budgie Enrichment: Foraging, Toys, and Cutting Cage Boredom",
+    "seoTitle": "Budgie Enrichment Guide",
+    "excerpt": "Budgies are small, cheap, and often treated as low-maintenance, which is exactly why enrichment gets skipped. A bored budgie plucks feathers and paces the same perch, and the fix is simpler than most people expect.",
+    "date": "2026-08-22",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Budgie",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/budgie-enrichment.jpg",
+    "imageAlt": "A budgie perched near a foraging toy inside its cage",
+    "emoji": "🐦",
+    "lastReviewed": "2026-08-22",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do budgies really need enrichment, or just a cage and food?",
+        "a": "They need enrichment. Budgies are small parrots, and in the wild they spend the bulk of their waking hours foraging, exploring, and interacting socially. A bare cage with a food dish removes almost all of that, and research links the resulting boredom to feather plucking and other stress behaviors."
+      },
+      {
+        "q": "What's the easiest first enrichment change to make?",
+        "a": "Move part of the daily food into a puzzle feeder or hidden spot instead of an open dish. This single change reintroduces foraging, which is the behavior budgies are naturally wired to spend the most time on, without buying anything elaborate."
+      },
+      {
+        "q": "How do I know if my budgie is bored versus just resting?",
+        "a": "Resting looks like a relaxed, fluffed bird sitting still with normal breathing. Boredom-driven behavior looks like repetitive pacing along the same stretch of perch, feather plucking, or screaming that's new or excessive. If those show up, both enrichment and a vet check are worth considering."
+      },
+      {
+        "q": "Can budgies destroy their toys too fast?",
+        "a": "Yes, and that's normal, not a sign of a bad toy. Budgies are enthusiastic chewers. Rotating in inexpensive destructible items like paper and cardboard keeps that outlet available without needing to replace an expensive toy constantly."
+      },
+      {
+        "q": "Is a single budgie okay without a cage mate?",
+        "a": "It can be, provided the owner supplies the social interaction a cage mate would otherwise cover, daily out-of-cage time, talking, and hands-on engagement. A cage mate helps with loneliness specifically but doesn't substitute for foraging or destructible enrichment either way."
+      }
+    ],
+    "relatedProducts": [
+      "bird-toy-bbjinronjy-sola-ball-2pc"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/budgie-handling-guide.mdx",
     "slug": "budgie-handling-guide",
     "title": "How to Handle and Tame a Budgie",
@@ -11954,6 +12010,62 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/guinea-pig-enrichment-guide.mdx",
+    "slug": "guinea-pig-enrichment-guide",
+    "title": "Guinea Pig Enrichment: Hideouts, Foraging, and Floor Time",
+    "seoTitle": "Guinea Pig Enrichment Guide",
+    "excerpt": "Wild guinea pigs spend up to 80% of the day foraging. A cage with a bowl and nothing to hide in leaves a prey animal exposed and bored at the same time. Here's what actually fixes both.",
+    "date": "2026-08-23",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Guinea Pig",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guinea-pig-enrichment.jpg",
+    "imageAlt": "A guinea pig peeking out of a fleece hideout tunnel surrounded by hay",
+    "emoji": "🐹",
+    "lastReviewed": "2026-08-23",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why do guinea pigs need hideouts specifically?",
+        "a": "Guinea pigs are a prey species and stay alert to anything that might be a threat. Constant access to a secure hiding place, a pipe, hut, or fleece tunnel, lets them retreat and feel safe, which lowers baseline stress even when nothing is actually wrong."
+      },
+      {
+        "q": "How much of a guinea pig's day is spent foraging naturally?",
+        "a": "Wild guinea pigs can spend up to 80% of their day foraging and feeding, concentrated in the morning and evening. That behavior is one of the most restricted in companion guinea pigs kept with a single food bowl, which is why foraging-based enrichment has an outsized effect."
+      },
+      {
+        "q": "What counts as foraging enrichment for a pet guinea pig?",
+        "a": "Scattering hay across the enclosure instead of piling it in one spot, hiding small amounts of vegetables in a foraging mat or tunnel, and offering hay in different textures and locations all replicate natural search behavior. Hay itself, unlimited and fresh, also doubles as both diet and enrichment."
+      },
+      {
+        "q": "Do guinea pigs need more than one hideout?",
+        "a": "Multiple hideouts are worth it, especially in a multi-guinea-pig setup, so a lower-ranking animal always has somewhere to retreat without being blocked. One hide in a shared cage can become a resource that gets guarded."
+      },
+      {
+        "q": "Is floor time outside the cage necessary?",
+        "a": "Yes, for exercise and exploration that a cage, even a large one, can't fully provide. Supervised time in a guinea-pig-proofed space, floor or a playpen, lets them run, popcorn, and explore new smells and textures, all real enrichment on top of what the enclosure itself offers."
+      }
+    ],
+    "relatedProducts": [
+      "small-mammal-play-pack-seagrass"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/guinea-pig-feeding-guide.mdx",
     "slug": "guinea-pig-feeding-guide",
     "title": "Guinea Pig Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -16016,6 +16128,62 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/lovebird-enrichment-guide.mdx",
+    "slug": "lovebird-enrichment-guide",
+    "title": "Lovebird Enrichment: Foraging, Toys, and What Cuts Boredom",
+    "seoTitle": "Lovebird Enrichment Guide",
+    "excerpt": "Lovebirds forage 60 to 80% of their waking hours in the wild. A cage with a food bowl and nothing else is asking for feather plucking, screaming, and pacing. Here's what actually replaces that lost behavior.",
+    "date": "2026-08-21",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Lovebird",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Foraging"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/lovebird-enrichment.jpg",
+    "imageAlt": "A pair of lovebirds perched together near a foraging toy inside their cage",
+    "emoji": "❤️",
+    "lastReviewed": "2026-08-21",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why is enrichment so important for lovebirds specifically?",
+        "a": "In the wild, parrots including lovebirds spend an estimated 60 to 80% of their waking hours foraging, searching, and problem-solving for food. A cage with a static food bowl removes almost all of that natural behavior at once, and boredom in lovebirds shows up as feather plucking, repetitive pacing, and excessive screaming."
+      },
+      {
+        "q": "What is contra-freeloading and why does it matter here?",
+        "a": "It's the documented tendency of parrots to choose working for food over eating from a free bowl when both are available. It's a sign that foraging itself is behaviorally rewarding, not just a means to an end, which is why hiding food in toys does more for a lovebird than the same food sitting in a dish."
+      },
+      {
+        "q": "How many toys should be in a lovebird's cage at once?",
+        "a": "Around 3 to 5 at a time is a commonly recommended range, rotated weekly so nothing goes stale from overexposure. Too few leaves the bird under-stimulated, too many crowded together limits flight and movement space inside the cage."
+      },
+      {
+        "q": "Do lovebirds need toys if they have a cage mate?",
+        "a": "Yes. A bonded pair reduces loneliness-driven stress, but it doesn't replace foraging, shredding, and problem-solving needs. Two lovebirds with no toys can still develop boredom behaviors, just directed at each other instead of at nothing."
+      },
+      {
+        "q": "What are signs a lovebird isn't getting enough enrichment?",
+        "a": "Feather plucking, repetitive pacing along the same perch or cage section, and excessive or new screaming patterns are the main ones. These same signs can also indicate a medical issue, so a vet check is worth ruling out alongside any enrichment changes."
+      }
+    ],
+    "relatedProducts": [
+      "bird-toy-kyouki-foraging-box"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/lovebird-handling-guide.mdx",

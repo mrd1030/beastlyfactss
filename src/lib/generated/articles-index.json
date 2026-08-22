@@ -870,6 +870,17 @@
       ]
     },
     {
+      "slug": "budgie-enrichment-guide",
+      "title": "Budgie Enrichment Guide",
+      "excerpt": "Budgies are small, cheap, and often treated as low-maintenance, which is exactly why enrichment gets skipped. A bored",
+      "date": "2026-08-22",
+      "image": "/assets/images/budgie-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "budgie-handling-guide",
       "title": "How to Tame and Handle a Budgie",
       "excerpt": "How you approach handling a budgie depends a lot on where it came from. A hand-raised bird may step up on day one; an",
@@ -2336,6 +2347,17 @@
       ]
     },
     {
+      "slug": "guinea-pig-enrichment-guide",
+      "title": "Guinea Pig Enrichment Guide",
+      "excerpt": "Wild guinea pigs spend up to 80% of the day foraging. A cage with a bowl and nothing to hide in leaves a prey animal",
+      "date": "2026-08-23",
+      "image": "/assets/images/guinea-pig-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "guinea-pig-feeding-guide",
       "title": "Guinea Pig Feeding Guide: Schedule and Diet",
       "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not",
@@ -3152,6 +3174,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "lovebird-enrichment-guide",
+      "title": "Lovebird Enrichment Guide",
+      "excerpt": "Lovebirds forage 60 to 80% of their waking hours in the wild. A cage with a food bowl and nothing else is asking for",
+      "date": "2026-08-21",
+      "image": "/assets/images/lovebird-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {

@@ -3,21 +3,21 @@
 // lets GuideDetail.jsx surface them as further reading instead of leaving
 // them discoverable only via the blog list/search.
 export const RELATED_ARTICLES = {
-  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-vs-goldfish-guide', 'betta-fish-cost-guide', 'betta-fish-handling-guide', 'betta-fish-health-issues-guide', 'betta-fish-tank-setup-guide', 'betta-fish-feeding-guide'],
-  'budgie': ['budgie-cere-color-guide', 'budgie-vs-cockatiel-guide', 'budgie-cost-guide', 'budgie-handling-guide', 'budgie-health-issues-guide', 'budgie-tank-setup-guide'],
-  'cockatiel': ['budgie-vs-cockatiel-guide', 'cockatiel-cost-guide', 'cockatiel-handling-guide', 'cockatiel-health-issues-guide', 'cockatiel-tank-setup-guide', 'cockatiel-feeding-guide'],
+  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-cost-guide', 'betta-fish-handling-guide', 'betta-fish-health-issues-guide', 'betta-fish-tank-setup-guide', 'betta-fish-feeding-guide'],
+  'budgie': ['budgie-cere-color-guide', 'budgie-cost-guide', 'budgie-handling-guide', 'budgie-health-issues-guide', 'budgie-tank-setup-guide', 'budgie-enrichment-guide'],
+  'cockatiel': ['cockatiel-cost-guide', 'cockatiel-handling-guide', 'cockatiel-health-issues-guide', 'cockatiel-tank-setup-guide', 'cockatiel-feeding-guide'],
   'veiled-chameleon': ['chameleon-hydration-drippers-misters-fogging', 'veiled-chameleon-cost-guide', 'veiled-chameleon-handling-guide', 'veiled-chameleon-health-issues-guide', 'veiled-chameleon-tank-setup-guide'],
   'chameleon': ['chameleon-hydration-drippers-misters-fogging', 'jacksons-chameleon-cost-guide', 'jacksons-chameleon-handling-guide', 'jacksons-chameleon-health-issues-guide', 'jacksons-chameleon-tank-setup-guide'],
   'ferret': ['ferret-adrenal-disease-guide', 'ferret-legal-guide', 'ferret-cost-guide', 'ferret-handling-guide', 'ferret-health-issues-guide', 'ferret-tank-setup-guide', 'ferret-feeding-guide'],
-  'goldfish': ['goldfish-tank-size-bowl-myth', 'betta-fish-vs-goldfish-guide', 'goldfish-cost-guide', 'goldfish-handling-guide', 'goldfish-health-issues-guide', 'goldfish-tank-setup-guide', 'goldfish-feeding-guide', 'goldfish-enrichment-guide'],
+  'goldfish': ['goldfish-tank-size-bowl-myth', 'goldfish-cost-guide', 'goldfish-handling-guide', 'goldfish-health-issues-guide', 'goldfish-tank-setup-guide', 'goldfish-feeding-guide', 'goldfish-enrichment-guide'],
   'tarantula': ['invertebrate-molting-guide', 'tarantula-cost-guide', 'tarantula-handling-guide', 'tarantula-health-issues-guide', 'tarantula-tank-setup-guide', 'tarantula-feeding-guide'],
   'hermit-crab': ['invertebrate-molting-guide', 'hermit-crab-cost-guide', 'hermit-crab-handling-guide', 'hermit-crab-health-issues-guide', 'hermit-crab-tank-setup-guide'],
   'axolotl': ['axolotl-legal-guide', 'axolotl-cost-guide', 'axolotl-handling-guide', 'axolotl-health-issues-guide', 'axolotl-tank-setup-guide', 'axolotl-enrichment-guide'],
   'chinchilla': ['chinchilla-legal-guide', 'chinchilla-cost-guide', 'chinchilla-handling-guide', 'chinchilla-health-issues-guide', 'chinchilla-tank-setup-guide', 'chinchilla-feeding-guide'],
   'praying-mantis': ['praying-mantis-ootheca-guide', 'praying-mantis-cost-guide', 'praying-mantis-handling-guide', 'praying-mantis-health-issues-guide', 'praying-mantis-tank-setup-guide'],
   'rabbit': ['rabbit-gi-stasis-guide', 'rabbit-cost-guide', 'rabbit-handling-guide', 'rabbit-health-issues-guide', 'rabbit-tank-setup-guide', 'rabbit-feeding-guide'],
-  'ball-python': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide', 'ball-python-legal-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide'],
-  'corn-snake': ['snake-brumation-guide', 'ball-python-vs-corn-snake-guide', 'corn-snake-cost-guide', 'corn-snake-handling-guide', 'corn-snake-health-issues-guide', 'corn-snake-tank-setup-guide', 'corn-snake-feeding-guide'],
+  'ball-python': ['snake-brumation-guide', 'ball-python-legal-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide'],
+  'corn-snake': ['snake-brumation-guide', 'corn-snake-cost-guide', 'corn-snake-handling-guide', 'corn-snake-health-issues-guide', 'corn-snake-tank-setup-guide', 'corn-snake-feeding-guide'],
   'dog-universal': ['dog-bloat-gdv-guide'],
   'dog-large-breed': ['dog-bloat-gdv-guide'],
   'dog-labrador': ['dog-bloat-gdv-guide'],
@@ -26,13 +26,13 @@ export const RELATED_ARTICLES = {
   'dog-golden-retriever': ['golden-retriever-feeding-guide'],
   'cat-universal': ['cat-hairball-vs-vomiting-guide'],
   'cat-domestic-shorthair': ['cat-hairball-vs-vomiting-guide'],
-  'hamster': ['hamster-vs-guinea-pig-guide', 'hamster-cost-guide', 'hamster-handling-guide', 'hamster-health-issues-guide', 'hamster-tank-setup-guide', 'hamster-feeding-guide'],
-  'guinea-pig': ['hamster-vs-guinea-pig-guide', 'guinea-pig-scurvy-vitamin-c-guide', 'guinea-pig-cost-guide', 'guinea-pig-handling-guide', 'guinea-pig-health-issues-guide', 'guinea-pig-tank-setup-guide', 'guinea-pig-feeding-guide'],
+  'hamster': ['hamster-cost-guide', 'hamster-handling-guide', 'hamster-health-issues-guide', 'hamster-tank-setup-guide', 'hamster-feeding-guide'],
+  'guinea-pig': ['guinea-pig-scurvy-vitamin-c-guide', 'guinea-pig-cost-guide', 'guinea-pig-handling-guide', 'guinea-pig-health-issues-guide', 'guinea-pig-tank-setup-guide', 'guinea-pig-feeding-guide', 'guinea-pig-enrichment-guide'],
   'degu': ['degu-gerbil-overview', 'degu-cost-guide', 'degu-handling-guide', 'degu-health-issues-guide', 'degu-tank-setup-guide'],
   'gerbil': ['degu-gerbil-overview', 'gerbil-cost-guide', 'gerbil-handling-guide', 'gerbil-health-issues-guide', 'gerbil-tank-setup-guide'],
-  'bearded-dragon': ['bearded-dragon-vs-leopard-gecko-guide', 'bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide', 'bearded-dragon-enrichment-guide', 'bioactive-setups-bearded-dragons'],
-  'leopard-gecko': ['bearded-dragon-vs-leopard-gecko-guide', 'leopard-gecko-vs-crested-gecko-guide', 'leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide', 'leopard-gecko-enrichment-guide'],
-  'crested-gecko': ['leopard-gecko-vs-crested-gecko-guide', 'crested-gecko-cost-guide', 'crested-gecko-handling-guide', 'crested-gecko-health-issues-guide', 'crested-gecko-tank-setup-guide', 'crested-gecko-enrichment-guide'],
+  'bearded-dragon': ['bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide', 'bearded-dragon-enrichment-guide', 'bioactive-setups-bearded-dragons'],
+  'leopard-gecko': ['leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide', 'leopard-gecko-enrichment-guide'],
+  'crested-gecko': ['crested-gecko-cost-guide', 'crested-gecko-handling-guide', 'crested-gecko-health-issues-guide', 'crested-gecko-tank-setup-guide', 'crested-gecko-enrichment-guide'],
   'gargoyle-gecko': ['gargoyle-gecko-cost-guide', 'gargoyle-gecko-handling-guide', 'gargoyle-gecko-health-issues-guide', 'gargoyle-gecko-tank-setup-guide'],
   'mourning-gecko': ['mourning-gecko-cost-guide', 'mourning-gecko-handling-guide', 'mourning-gecko-health-issues-guide', 'mourning-gecko-tank-setup-guide', 'mourning-gecko-feeding-guide'],
   'african-fat-tail': ['african-fat-tail-cost-guide', 'african-fat-tail-handling-guide', 'african-fat-tail-health-issues-guide', 'african-fat-tail-tank-setup-guide', 'african-fat-tail-feeding-guide'],
@@ -46,7 +46,7 @@ export const RELATED_ARTICLES = {
   'pacman-frog': ['pacman-frog-cost-guide', 'pacman-frog-handling-guide', 'pacman-frog-health-issues-guide', 'pacman-frog-tank-setup-guide'],
   'sulcata-tortoise': ['sulcata-tortoise-legal-guide', 'sulcata-tortoise-cost-guide', 'sulcata-tortoise-handling-guide', 'sulcata-tortoise-health-issues-guide', 'sulcata-tortoise-tank-setup-guide'],
   'hedgehog': ['hedgehog-cost-guide', 'hedgehog-handling-guide', 'hedgehog-health-issues-guide', 'hedgehog-tank-setup-guide', 'hedgehog-feeding-guide'],
-  'lovebird': ['lovebird-cost-guide', 'lovebird-handling-guide', 'lovebird-health-issues-guide', 'lovebird-tank-setup-guide'],
+  'lovebird': ['lovebird-cost-guide', 'lovebird-handling-guide', 'lovebird-health-issues-guide', 'lovebird-tank-setup-guide', 'lovebird-enrichment-guide'],
   'guppy': ['guppy-cost-guide', 'guppy-handling-guide', 'guppy-health-issues-guide', 'guppy-tank-setup-guide', 'guppy-feeding-guide'],
   'boa-constrictor': ['boa-constrictor-legal-guide', 'boa-constrictor-cost-guide', 'boa-constrictor-handling-guide', 'boa-constrictor-health-issues-guide', 'boa-constrictor-tank-setup-guide'],
   'sugar-glider': ['sugar-glider-cost-guide', 'sugar-glider-handling-guide', 'sugar-glider-health-issues-guide', 'sugar-glider-tank-setup-guide'],
@@ -83,8 +83,8 @@ export const RELATED_ARTICLES = {
 // gecko feeding guide), find its sibling deep-dive articles for the same
 // guide(s), so a reader who lands on one article via a Guide/Encyclopedia
 // "Deep Dive" link doesn't lose that thread once they're actually on the
-// article. A slug can appear under more than one guide (comparison pieces
-// like bearded-dragon-vs-leopard-gecko-guide), so this unions every match.
+// article. A slug can appear under more than one guide (shared pieces like
+// snake-brumation-guide), so this unions every match.
 export function getDeepDiveSiblings(slug) {
   if (!slug) return [];
   const siblings = new Set();
