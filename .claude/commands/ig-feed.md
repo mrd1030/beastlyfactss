@@ -163,11 +163,12 @@ PHASE 2: WRITE (after approval only)
     of line 1.
 2.  3 to 8 short lines total, with real line breaks between them. No paragraph
     blocks.
-3.  No url. Links are dead in captions. Close with "link in bio" only when the
-    article genuinely adds something the post did not cover, and not more than
-    3 times in the week. When a post says "link in bio", also print the
-    BIO TARGET so we know what to swap the bio link to that day. Build it per
-    the URL rules below.
+3.  No url. Links are dead in captions. The bio link stays fixed at
+    beastlyfacts.com, it is never swapped per post, so "link in bio" can never
+    point at one specific article. When a post wants to send someone to the
+    site, phrase it as a search, e.g. "look up leopard gecko on the site, link
+    in bio", not more than 3 times in the week, and only when the article
+    genuinely adds something the post did not cover.
 4.  Hashtags go in their own block after the caption, separated by a line of
     blank space. 5 to 10 tags, all specific to species and niche. Banned:
     #animals #cute #instagood #petsofinstagram #love #nature and anything with
@@ -181,20 +182,6 @@ PHASE 2: WRITE (after approval only)
     number. At least one on the fact track.
 7.  Post the requested cadence, no more. Give each post its own slot, spaced
     across the day, and never two from the same track back to back.
-
---- URL RULES (for BIO TARGET only, verified against generate-sitemap.js) ---
-  EVERY article in content/guides, content/fun-facts, and content/blog
-  renders at https://beastlyfacts.com/blog/{frontmatter slug}/. Yes, guides
-  too. getMdxPosts() in generate-sitemap.js maps every non-chronicle MDX post
-  to /blog/{slug}/. There is no /guides/{article-slug}/ route.
-
-  /guides/{species}/ is a different, hand-maintained species hub page. Use it
-  only to point at a whole species, and only for a species listed in
-  staticPages in generate-sitemap.js. Never build one from an article slug.
-
-  Chronicles are at /chronicles/dex/{n}/ and /chronicles/otis/{n}/, where {n}
-  is the 1-based position when that series is sorted by frontmatter `date`
-  ascending, not the number in the filename. Recompute the sort.
 
 --- CAROUSEL SPEC, TWO KINDS ---
 
@@ -325,18 +312,14 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 Instagram does not hyperlink comment text either, the same
                 restriction that already rules out a url in the caption.
                 A url placed here is not clickable and does not solve the
-                link-delivery problem. BIO TARGET stays the only real
-                mechanism for getting someone to the article: it works
-                because it is the one link slot IG actually renders as a
-                tappable link. Comment(s) is only worth using here for a
-                genuine non-link follow-up, a seeded question or added
-                detail, never as a stand-in for the url.
+                link-delivery problem. The bio link stays fixed at
+                beastlyfacts.com and is never swapped per post, so there is
+                no per-post link mechanism on IG at all, only the "look it up
+                on the site" phrasing in the caption. Comment(s) is only
+                worth using here for a genuine non-link follow-up, a seeded
+                question or added detail.
   Everything else (Link Title, Label, Board/Album, Post subtype, CTA,
   Reminder) stays empty for a plain native IG post.
-
-BIO TARGET days still need the bio link swapped by hand in Instagram itself.
-The CSV has no column for that, it is not something Publer's bulk import
-touches.
 
 After the CSV is imported AND the user has confirmed it actually scheduled
 correctly in Publer, not just generated:
@@ -370,5 +353,5 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No image path used twice across the whole week
   [ ] A quarter or more of captions end on a real question, at least one a fact
   [ ] Ledger section lists a mark command for every post
-  [ ] "link in bio" used 3 times or fewer, each with a BIO TARGET printed
-  [ ] Every BIO TARGET is /blog/{slug}/, never /guides/{article-slug}/
+  [ ] "link in bio" used 3 times or fewer, always phrased as a search on the
+      site, never as if it points at one specific article
