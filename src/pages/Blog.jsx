@@ -481,7 +481,6 @@ function AuthorBio() {
 function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFilesMode = false, allPosts, onSelectPost }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
-  const mainColRef = useRef(null);
   const sidebarRef = useRef(null);
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
   // future-scheduled post's own permalink page prerenders with the date span
@@ -510,48 +509,6 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (sidebarRef.current) sidebarRef.current.scrollTop = 0;
-  }, [postSlug]);
-
-  // Keeps the sticky sidebar's own scroll roughly in step with how far the
-  // reader has gotten through the article, so it reaches its own bottom
-  // around the same time the article does, rather than being stranded
-  // mid-scroll (or still at the top) once the article runs out above the
-  // footer. Desktop only (lg+) - below that the sidebar isn't sticky or
-  // independently scrollable at all, it's normal document flow.
-  useEffect(() => {
-    let raf = null;
-
-    const sync = () => {
-      raf = null;
-      const main = mainColRef.current;
-      const sidebar = sidebarRef.current;
-      if (!main || !sidebar || window.innerWidth < 1024) return;
-
-      const mainTop = main.getBoundingClientRect().top + window.scrollY;
-      const mainHeight = main.offsetHeight;
-      const viewport = window.innerHeight;
-      const progress = mainHeight <= viewport
-        ? 0
-        : Math.min(1, Math.max(0, (window.scrollY - mainTop) / (mainHeight - viewport)));
-
-      const sidebarRange = sidebar.scrollHeight - sidebar.clientHeight;
-      if (sidebarRange > 0) sidebar.scrollTop = progress * sidebarRange;
-    };
-
-    const onScroll = () => {
-      if (raf) return;
-      raf = requestAnimationFrame(sync);
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    sync();
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
-      if (raf) cancelAnimationFrame(raf);
-    };
   }, [postSlug]);
 
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
@@ -676,8 +633,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
         {factsListSchema && <script type="application/ld+json">{JSON.stringify(factsListSchema)}</script>}
       </Helmet>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div className="lg:col-span-2" ref={mainColRef}>
+        {/* No items-start: the sidebar's grid cell needs to stretch to match
+            the article column's height so its sticky child has room to
+            travel and release naturally near the bottom, instead of being
+            boxed into its own short natural height with nowhere to go. */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2">
             <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
@@ -828,21 +789,32 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             />
           </div>
 
-          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
-            {/* Hidden below lg: the collapsible instance above the article
-                already covers mobile. */}
-            <div className="hidden lg:block">
-              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+          {/* This outer div is the actual grid cell - with items-start gone
+              from the row above, it stretches to match the article column's
+              height by grid default. The sticky element below is nested
+              inside it rather than being the grid cell itself: sticky needs
+              a taller containing block than its own height to have room to
+              travel in, then release (get carried up with the page) once
+              this wrapper's bottom - which lines up with the article's own
+              end - reaches it. That release is native browser behavior,
+              nothing JS-driven about it. */}
+          <div>
+            <div className="lg:sticky lg:top-16 max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
+              {/* Hidden below lg: the collapsible instance above the article
+                  already covers mobile. */}
+              <div className="hidden lg:block">
+                <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+              </div>
+              <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
+              <PostSidebar
+                allPosts={allPosts}
+                currentPost={post}
+                onSelectPost={(p) => {
+                  onSelectPost(p);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
             </div>
-            <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
-            <PostSidebar
-              allPosts={allPosts} 
-              currentPost={post} 
-              onSelectPost={(p) => {
-                onSelectPost(p);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }} 
-            />
           </div>
         </div>
       </div>
