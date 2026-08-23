@@ -15,23 +15,217 @@
     "nextStart": "2026-08-29"
   },
   "ig": {
-    "facts": [],
-    "articles": [],
-    "nextStart": null
+    "facts": [
+      {
+        "id": 94,
+        "date": "2026-08-22"
+      },
+      {
+        "id": 95,
+        "date": "2026-08-23"
+      },
+      {
+        "id": 96,
+        "date": "2026-08-24"
+      },
+      {
+        "id": 97,
+        "date": "2026-08-25"
+      },
+      {
+        "id": 90,
+        "date": "2026-08-26"
+      },
+      {
+        "id": 69,
+        "date": "2026-08-27"
+      },
+      {
+        "id": 91,
+        "date": "2026-08-28"
+      }
+    ],
+    "articles": [
+      {
+        "file": "content/guides/leopard-gecko-cost-guide.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/leopard-gecko-tank-setup-guide.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/leopard-gecko-feeding-guide.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/leopard-gecko-handling-guide.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/leopard-gecko-health-issues-guide.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/hamster-health-issues-guide.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/hamster-handling-guide.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/hamster-tank-setup-guide.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/hamster-feeding-guide.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/hamster-cost-guide.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/betta-fish-tank-setup-guide.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/betta-fish-water-parameters-guide.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/betta-fish-health-issues-guide.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/betta-fish-feeding-guide.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/betta-fish-cost-guide.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-legal-guide.mdx",
+        "date": "2026-08-28"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-tank-setup-guide.mdx",
+        "date": "2026-08-28"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-handling-guide.mdx",
+        "date": "2026-08-28"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-feeding-guide.mdx",
+        "date": "2026-08-28"
+      },
+      {
+        "file": "content/guides/emperor-scorpion-cost-guide.mdx",
+        "date": "2026-08-28"
+      }
+    ],
+    "nextStart": "2026-08-29"
   },
   "threads": {
     "facts": [
       {
         "id": 94,
         "date": "2026-08-21"
+      },
+      {
+        "id": 68,
+        "date": "2026-08-22"
+      },
+      {
+        "id": 95,
+        "date": "2026-08-22"
+      },
+      {
+        "id": 96,
+        "date": "2026-08-23"
+      },
+      {
+        "id": 97,
+        "date": "2026-08-23"
+      },
+      {
+        "id": 18,
+        "date": "2026-08-24"
+      },
+      {
+        "id": 93,
+        "date": "2026-08-24"
+      },
+      {
+        "id": 90,
+        "date": "2026-08-25"
+      },
+      {
+        "id": 98,
+        "date": "2026-08-25"
+      },
+      {
+        "id": 69,
+        "date": "2026-08-26"
+      },
+      {
+        "id": 61,
+        "date": "2026-08-26"
+      },
+      {
+        "id": 91,
+        "date": "2026-08-27"
+      },
+      {
+        "id": 19,
+        "date": "2026-08-27"
+      },
+      {
+        "id": 92,
+        "date": "2026-08-28"
+      },
+      {
+        "id": 8,
+        "date": "2026-08-28"
       }
     ],
     "articles": [
       {
         "file": "content/guides/goldfish-tank-setup-guide.mdx",
         "date": "2026-08-21"
+      },
+      {
+        "file": "content/short-story/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13.mdx",
+        "date": "2026-08-22"
+      },
+      {
+        "file": "content/guides/hermit-crab-tank-setup-guide.mdx",
+        "date": "2026-08-23"
+      },
+      {
+        "file": "content/guides/narwhal-facts-the-real-unicorn-of-the-sea.mdx",
+        "date": "2026-08-24"
+      },
+      {
+        "file": "content/guides/degu-feeding-guide.mdx",
+        "date": "2026-08-25"
+      },
+      {
+        "file": "content/guides/penguins-do-not-mate-for-life.mdx",
+        "date": "2026-08-26"
+      },
+      {
+        "file": "content/guides/corydoras-catfish-cost-guide.mdx",
+        "date": "2026-08-27"
+      },
+      {
+        "file": "content/guides/rabbit-gi-stasis-guide.mdx",
+        "date": "2026-08-28"
       }
     ],
-    "nextStart": null
+    "nextStart": "2026-08-29"
   }
 }
