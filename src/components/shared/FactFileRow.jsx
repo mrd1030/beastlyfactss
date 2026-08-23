@@ -120,7 +120,7 @@ export default function FactFileRow({ entry, state = { from: 'fact-files' } }) {
               />
             ) : (
               <div className="flex h-16 w-16 items-center justify-center border-[1.5px] border-black/80 bg-neutral-200 sm:h-24 sm:w-24">
-                <span className="px-1 text-center font-body text-[9px] font-bold uppercase tracking-wider text-neutral-500">
+                <span className="px-1 text-center font-body text-[10px] font-bold uppercase tracking-wider text-neutral-600">
                   No photo
                 </span>
               </div>
