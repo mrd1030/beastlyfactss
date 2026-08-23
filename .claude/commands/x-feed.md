@@ -32,6 +32,20 @@ The account has been posting seoTitle + excerpt + a beastlyfacts.com url.
 Those posts get 1 to 8 views. Native posts with no url got 20 to 80. The url
 is the problem. Fix the format.
 
+GROWTH-PHASE VOLUME
+X is architecturally different from Threads and IG here: a tweet decays
+roughly 50% every 6 hours and is largely done within 24, so posts don't
+compete with each other the way an over-stuffed Meta feed does, and higher
+frequency is a documented lever specifically on this platform while the
+account is small (under a few hundred followers). Default cadence while
+still in growth phase: aim for 6 to 8 posts a day total, counting a whole
+thread as one post toward that count the same way the ledger does. Up to
+3 of those a day can be threads when the sources genuinely support it, see
+THE THREAD below, never pad to hit the number with weak material. Once
+engagement is consistently landing (real replies, not just views), it's
+fine to scale back toward something closer to the 1+1 default and lean
+harder into quality.
+
 WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 
 =====================================================================
@@ -222,11 +236,14 @@ and it does NOT need the article track's framing. Do not turn a fact into a
 mini care guide. If the fact cannot stand as 2 or 3 lines, pick another.
 
 --- THE THREAD (an article slot filled this way instead of a single post) ---
-Not a fixed weekly quota. Use it whenever a source has one genuine mistake
-with a real mechanism and a real fix, which most guides do not, most weeks
-that is a few sources, not all seven. Forcing it daily either burns your
-strongest thread-shaped material fast or produces weak, formulaic threads
-that read as templated. A few a week beats one a day.
+Not a fixed daily quota, but during growth phase (see GROWTH-PHASE VOLUME
+above) aim for up to 3 a day when the sources genuinely support it, since
+each thread adds real dwell time and a thread still only counts as one post
+toward the daily total. Use it whenever a source has one genuine mistake
+with a real mechanism and a real fix, which most guides do not. Forcing it
+past what the sources support either burns your strongest thread-shaped
+material fast or produces weak, formulaic threads that read as templated,
+a smaller number of strong threads always beats hitting 3 with filler.
 
 3 to 5 posts on ONE husbandry mistake, from ONE guide.
   Post 1: state the mistake so it stings slightly.

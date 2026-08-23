@@ -169,15 +169,24 @@ PHASE 2: WRITE (after approval only)
     is not sending anyone to a page that adds much beyond the post itself, no
     cap needed either way now that the rule is track-based rather than a
     weekly quota.
-4.  No hashtags. Threads has topic tags and you may attach at most one, only
-    when it is the obvious one for the species. Usually attach none.
+4.  No hashtags. Threads has topic tags, attach 1 to 2 when they're genuinely
+    the obvious ones for the species and topic, more than that dilutes the
+    signal. Zero is fine when nothing fits naturally, but 1 to 2 is normal,
+    not the exception.
 5.  Write for the reply. Every post should leave an obvious opening: a number
     someone will want to correct, a setup someone will want to compare, or a
     claim someone will want to qualify.
 6.  Write a PLANNED REPLY for each post: what the account says back when the
-    first person responds. This is where the conversation actually happens and
-    it should not be improvised.
-7.  Post the requested cadence, no more. Give each post its own slot, spaced
+    first person responds. This is reactive, off the CSV, not something to
+    schedule, and it should not be improvised when the moment comes.
+7.  Write a SELF REPLY for every post that doesn't already have a thread
+    chain or a linked first reply: one added detail, stat, or angle the main
+    post didn't cover, never a repeat of it. This is a documented working
+    signal on Threads specifically, distinct from engagement bait, because it
+    adds real content and extends dwell time rather than faking an engagement
+    number. Goes in Comment(s) so it fires within seconds of the main post,
+    comfortably inside the 15-to-30-minute window that counts most.
+8.  Post the requested cadence, no more. Give each post its own slot, spaced
     across the day, and never two from the same track back to back.
 
 --- POST SHAPES (rotate, never twice in a row) ---
@@ -268,6 +277,9 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   FIRST REPLY (only if linked)
   <one line + url>
 
+  SELF REPLY (skip only if a FIRST REPLY or thread chain already covers it)
+  <one added detail, stat, or angle, not a repeat of the post>
+
   PLANNED REPLY
   <what we say back to the first responder>
 
@@ -305,16 +317,20 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
                 from the path alone.
-  Comment(s)    leave EMPTY for a normal, unlinked post. The PLANNED REPLY
-                is for the account to send once someone actually responds,
-                it is reactive and does not belong in the CSV. Only fill
-                this in for: a linked post, where it carries the FIRST
-                REPLY with the url; or a thread, where every post after the
-                first goes here, joined by ||, ending with a reply carrying
-                the url if the thread links out. Each fires automatically in
-                order once the main post goes live, no Condition needs to be
-                set. Confirmed live on both X and Threads: a single reply, a
-                full 3-comment || chain, and a 4-comment chain ending in a
+  Comment(s)    the SELF REPLY, on every post that has one, this is now the
+                default, not the exception. The PLANNED REPLY is different,
+                that's for the account to send once someone actually
+                responds, it is reactive and does not belong in the CSV. For
+                a linked post, put the FIRST REPLY (with the url) here
+                instead of a separate self reply, one comment slot per post
+                is enough. For a thread, every post after the first goes
+                here, joined by ||, ending with a reply carrying the url if
+                the thread links out. Each fires automatically in order once
+                the main post goes live, no Condition needs to be set, so a
+                self reply posted this way still lands within seconds, well
+                inside the 15-to-30-minute window that counts most. Confirmed
+                live on both X and Threads: a single reply, a full 3-comment
+                || chain, and a 4-comment chain ending in a
                 url reply, all landing in order within seconds of the main
                 post.
   Everything else (Link Title, Label, Alt text, Board/Album, Post subtype,
@@ -339,7 +355,8 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
   [ ] Every article post has a first-reply link, every fact post has none
-  [ ] No hashtags anywhere
+  [ ] At most 1-2 topic tags per post, only when genuinely obvious for the
+      species and topic
   [ ] No shape used twice consecutively
   [ ] No two posts from the same track scheduled back to back
   [ ] No species repeats, across BOTH tracks
@@ -347,6 +364,8 @@ State pass or fail on each. Fix failures before outputting.
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
   [ ] No image path used twice across the whole week
   [ ] Every post has a planned reply written
+  [ ] Every post has a self reply, first reply, or thread chain in Comment(s),
+      none of them a repeat of the main post
   [ ] No copy identical to the X or IG calendar
   [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
   [ ] Every chronicles part number was derived from date order, not filename

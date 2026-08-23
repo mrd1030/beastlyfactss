@@ -160,7 +160,12 @@ PHASE 2: WRITE (after approval only)
 --- CAPTION MECHANICS ---
 1.  Line 1 is the hook and gets truncated around 125 characters. Write it so
     the cut point still reads as a complete thought. Show the character count
-    of line 1.
+    of line 1. Instagram's ranking reads captions semantically now, closer to
+    a search engine than old hashtag matching, so the hook should also work
+    as a natural, keyword-rich sentence: the species name and the specific
+    topic (cost, handling, a health issue, whatever the post is actually
+    about) belong in line 1 or 2, spelled out in plain words, not just implied
+    by the photo.
 2.  3 to 8 short lines total, with real line breaks between them. No paragraph
     blocks.
 3.  No url. Links are dead in captions. The bio link stays fixed at
@@ -170,10 +175,12 @@ PHASE 2: WRITE (after approval only)
     in bio", not more than 3 times in the week, and only when the article
     genuinely adds something the post did not cover.
 4.  Hashtags go in their own block after the caption, separated by a line of
-    blank space. 5 to 10 tags, all specific to species and niche. Banned:
-    #animals #cute #instagood #petsofinstagram #love #nature and anything with
-    over 10M posts. Mix one broad species tag, several mid-size niche tags, and
-    one or two community tags.
+    blank space. 3 to 5 tags, all specific to species and niche, no more.
+    Hashtags are topic labels now, not a discovery mechanism, semantic caption
+    search does that job, so stacking past 5 reads as spammy and does nothing
+    for reach. Banned: #animals #cute #instagood #petsofinstagram #love
+    #nature and anything with over 10M posts. Prefer specific niche tags over
+    one broad species tag padded with filler.
 5.  Write ALT TEXT for every post. Start from the frontmatter `imageAlt`, then
     extend it to describe what a screen reader user needs, which is the animal,
     the setting, and anything the caption references.
@@ -182,6 +189,12 @@ PHASE 2: WRITE (after approval only)
     number. At least one on the fact track.
 7.  Post the requested cadence, no more. Give each post its own slot, spaced
     across the day, and never two from the same track back to back.
+8.  Write a PINNED COMMENT for every post: one sentence that naturally extends
+    the caption with more of the specific keywords the caption didn't fit,
+    the same species/topic terms someone might actually search. Not a repeat
+    of the caption and not a link pitch, a real added detail or angle. This
+    is a semantic-search signal, not engagement bait, so it has to read as
+    a genuine addition, not a search-term dump.
 
 --- CAROUSEL SPEC, TWO KINDS ---
 
@@ -270,6 +283,9 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   ALT TEXT
   <paste ready>
 
+  PINNED COMMENT
+  <one sentence, adds keywords the caption didn't fit>
+
   CAROUSEL (if applicable)
   Slide 1: <text, max 8 words>  | IMAGE DIRECTION: <one line>
   Slide 2: <text, max 12 words> | IMAGE DIRECTION: <one line>
@@ -308,16 +324,17 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 use, never assumed correct from the path alone.
   Alt text(s)   from the ALT TEXT block above. For a carousel, one entry
                 per media URL, || separated, in the same order.
-  Comment(s)    IMPORTANT, read before using: unlike X and Threads,
-                Instagram does not hyperlink comment text either, the same
-                restriction that already rules out a url in the caption.
-                A url placed here is not clickable and does not solve the
-                link-delivery problem. The bio link stays fixed at
-                beastlyfacts.com and is never swapped per post, so there is
-                no per-post link mechanism on IG at all, only the "look it up
-                on the site" phrasing in the caption. Comment(s) is only
-                worth using here for a genuine non-link follow-up, a seeded
-                question or added detail.
+  Comment(s)    the PINNED COMMENT from above, on every post. IMPORTANT:
+                unlike X and Threads, Instagram does not hyperlink comment
+                text either, the same restriction that already rules out a
+                url in the caption. A url placed here is not clickable and
+                does not solve the link-delivery problem. The bio link stays
+                fixed at beastlyfacts.com and is never swapped per post, so
+                there is no per-post link mechanism on IG at all, only the
+                "look it up on the site" phrasing in the caption. What this
+                field is actually for now is the semantic-search signal: a
+                real added keyword or detail the caption didn't fit, never a
+                url and never a repeat of the caption.
   Everything else (Link Title, Label, Board/Album, Post subtype, CTA,
   Reminder) stays empty for a plain native IG post.
 
@@ -344,7 +361,9 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No banned phrase
   [ ] Every line 1 reads complete at 125 chars
   [ ] Every post has alt text
-  [ ] No hashtag block exceeds 10 tags or contains a banned tag
+  [ ] No hashtag block exceeds 5 tags or contains a banned tag
+  [ ] Every post has a pinned comment, and none of them are a url or a
+      restatement of the caption
   [ ] No species repeats, across BOTH tracks
   [ ] No 3 text-led posts consecutively
   [ ] No two posts from the same track scheduled back to back
