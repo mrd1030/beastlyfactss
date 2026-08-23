@@ -482,6 +482,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
   const sidebarRef = useRef(null);
+  const sidebarWrapperRef = useRef(null);
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
   // future-scheduled post's own permalink page prerenders with the date span
   // hidden - once the real world catches up to that date without a redeploy,
@@ -509,6 +510,121 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (sidebarRef.current) sidebarRef.current.scrollTop = 0;
+  }, [postSlug]);
+
+  // The sidebar (an overflow-y-auto box taller inside than the sticky window
+  // it sits in) only ever gets actively driven in two zones: right at the
+  // top of the page (forced back to 0) and the short final stretch near the
+  // bottom, where the browser is already natively detaching the sticky box
+  // to let it scroll away - there, its content gets slid up so the bottom
+  // (the last "You Might Also Like" card, etc.) has actually been shown by
+  // the time it leaves. Everywhere in between - the whole rest of the
+  // article - this leaves scrollTop exactly as it is, whether that's still
+  // 0 or wherever the reader last scrolled it themselves. Driving it off the
+  // scroll ratio for the ENTIRE page (an earlier version of this) meant any
+  // manual scroll got snapped straight back the instant the reader nudged
+  // the page again, anywhere at all - this only reasserts control at the two
+  // edges, matching them intentionally.
+  //
+  // Also backs off entirely for prefers-reduced-motion, since this is
+  // exactly the kind of scroll-triggered motion that setting asks to skip.
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const wrapper = sidebarWrapperRef.current;
+    const sticky = sidebarRef.current;
+    if (!wrapper || !sticky) return;
+
+    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
+    // Where each zone's transition interpolates FROM - captured fresh each
+    // time that zone is entered, from whatever scrollTop the sidebar
+    // actually has right then (0 by default, or wherever a manual scroll,
+    // or the other zone, left it). Without this, a zone would compute its
+    // target as a plain ratio, ignoring the current position entirely - a
+    // sidebar already sitting somewhere else would jump straight to
+    // whatever the ratio happened to compute first, then continue from
+    // there, as if wherever it started had never happened.
+    let releaseBaseline = null;
+    let topBaseline = null;
+
+    const sync = () => {
+      ticking = false;
+      if (!desktopQuery.matches || motionQuery.matches) return;
+
+      const topOffset = parseFloat(getComputedStyle(sticky).top) || 64;
+      const wrapperRect = wrapper.getBoundingClientRect();
+      const stickyHeight = sticky.offsetHeight;
+      const maxScroll = sticky.scrollHeight - sticky.clientHeight;
+      if (stickyHeight <= 0 || maxScroll <= 0) return;
+
+      // engageY is the scrollY where the wrapper's top first reaches
+      // topOffset - the instant native `position: sticky` first engages.
+      // Below that, the reader is still effectively at the top of the
+      // article, so the top zone eases the sidebar back to 0 - over the
+      // same modest window (a third of stickyHeight, capped by however much
+      // room actually exists above engageY) used for the bottom reveal, so
+      // scrolling up from a bottom-zone or manually-set position doesn't
+      // instantly snap to 0 the moment engageY is crossed.
+      const wrapperTopDocY = wrapperRect.top + window.scrollY;
+      const engageY = wrapperTopDocY - topOffset;
+      if (window.scrollY <= engageY) {
+        if (topBaseline === null) topBaseline = sticky.scrollTop;
+        const topSpan = Math.min(stickyHeight / 3, engageY);
+        const resetRatio = topSpan <= 0
+          ? 1
+          : Math.min(1, Math.max(0, (engageY - window.scrollY) / topSpan));
+        sticky.scrollTop = topBaseline * (1 - resetRatio);
+        releaseBaseline = null;
+        return;
+      }
+      topBaseline = null;
+
+      // releaseStartY is the scrollY where native `position: sticky` starts
+      // pulling the box's top back up off topOffset (the instant it begins
+      // detaching). Because topOffset (4rem) and stickyHeight
+      // (calc(100vh-6rem)) are both tied to the viewport, releaseStartY
+      // always lands within ~32px of the moment the article's own last
+      // block (the main column's "You May Also Like" cards) has just fully
+      // scrolled into view - i.e. "release starting" and "reached the real
+      // end of the article" are effectively the same instant. Everything
+      // that comes after that in the document is footer/comments/subscribe-box
+      // filler, not article content.
+      //
+      // So the reveal completes over a modest slice of that filler (a third
+      // of stickyHeight - long enough to feel like a slide, not a snap),
+      // capped by however much of the page is actually left for the rare
+      // short article that doesn't have that much room. Earlier versions
+      // spanned the full stickyHeight, or the entire remaining page down to
+      // the literal footer - both meant scrolling through most or all of a
+      // long related-posts/comments stack just to see the reveal finish.
+      const releaseStartY = wrapperRect.bottom + window.scrollY - (topOffset + stickyHeight);
+      const pageEndY = document.documentElement.scrollHeight - window.innerHeight;
+      const span = Math.min(stickyHeight / 3, pageEndY - releaseStartY);
+      const ratio = span <= 0
+        ? (window.scrollY >= releaseStartY ? 1 : 0)
+        : Math.min(1, Math.max(0, (window.scrollY - releaseStartY) / span));
+      if (ratio <= 0) {
+        releaseBaseline = null; // middle zone - leave scrollTop untouched
+        return;
+      }
+      if (releaseBaseline === null) releaseBaseline = sticky.scrollTop;
+      sticky.scrollTop = releaseBaseline + ratio * (maxScroll - releaseBaseline);
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(sync);
+    };
+
+    sync();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, [postSlug]);
 
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
@@ -798,7 +914,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
               this wrapper's bottom - which lines up with the article's own
               end - reaches it. That release is native browser behavior,
               nothing JS-driven about it. */}
-          <div>
+          <div ref={sidebarWrapperRef}>
             <div className="lg:sticky lg:top-16 max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
               {/* Hidden below lg: the collapsible instance above the article
                   already covers mobile. */}
