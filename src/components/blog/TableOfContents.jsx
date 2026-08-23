@@ -20,38 +20,60 @@ export default function TableOfContents({ contentRef, watch, skipText, collapsib
     // Same class of issue as CategoryBrowse's/CritterDigestPreview's
     // fetch-driven state before their fixes.
     if (window.__IS_PRERENDER__) return;
+
+    const scan = () => {
+      const container = contentRef.current;
+      if (!container) { setHeadings([]); return; }
+
+      const nodes = [...container.querySelectorAll('h2, h3')];
+      // Read every heading's text FIRST, in its own pass, before any of the
+      // id/style writes below. `innerText` forces a synchronous layout read -
+      // doing that read for node N+1 interleaved with the id/style write for
+      // node N (as a single filter().map() chain over the live nodes used to)
+      // meant each write invalidated layout right before the next node's read,
+      // forcing a synchronous reflow once per heading. Batching all the reads
+      // up front, then all the writes after, means layout only needs to
+      // settle once (for the reads) and once again after (for the writes),
+      // instead of ping-ponging per node.
+      const entries = nodes
+        .map(node => ({ node, text: node.innerText?.trim() || '' }))
+        .filter(({ text }) => text && text !== skipText);
+
+      const seenIds = new Set();
+      const list = entries.map(({ node, text }) => {
+        let id = node.id || slugify(text) || 'section';
+        let unique = id;
+        let i = 2;
+        while (seenIds.has(unique)) unique = `${id}-${i++}`;
+        seenIds.add(unique);
+        if (!node.id) node.id = unique;
+        // Clears the fixed navbar (+ reading progress bar, which overlaps it) plus
+        // a little breathing room, so a jumped-to heading isn't flush against the top.
+        node.style.scrollMarginTop = 'calc(56px + var(--safe-area-inset-top, 0px) + 16px)';
+        return { id: unique, text, level: node.tagName === 'H3' ? 3 : 2 };
+      });
+
+      setHeadings(list);
+    };
+
+    scan();
+
+    // A client-side navigation to a post whose MDX chunk wasn't preloaded at
+    // boot (see routePreload.js - it only preloads the CURRENT url's chunk,
+    // not ones a reader might click into next) renders MdxArticleBody's
+    // loading placeholder first, then swaps in the real content once the
+    // chunk arrives. That swap doesn't change contentRef's identity or
+    // `watch`/`skipText`, so without this observer the scan above runs once
+    // against the empty placeholder and never looks again - the exact "shows
+    // up after a refresh, not before" bug this fixes. childList/subtree only
+    // (no `attributes`): the scan's own node.id/style writes above are
+    // attribute mutations, and observing those would just make this observer
+    // re-fire on itself.
     const container = contentRef.current;
-    if (!container) { setHeadings([]); return; }
-
-    const nodes = [...container.querySelectorAll('h2, h3')];
-    // Read every heading's text FIRST, in its own pass, before any of the
-    // id/style writes below. `innerText` forces a synchronous layout read -
-    // doing that read for node N+1 interleaved with the id/style write for
-    // node N (as a single filter().map() chain over the live nodes used to)
-    // meant each write invalidated layout right before the next node's read,
-    // forcing a synchronous reflow once per heading. Batching all the reads
-    // up front, then all the writes after, means layout only needs to
-    // settle once (for the reads) and once again after (for the writes),
-    // instead of ping-ponging per node.
-    const entries = nodes
-      .map(node => ({ node, text: node.innerText?.trim() || '' }))
-      .filter(({ text }) => text && text !== skipText);
-
-    const seenIds = new Set();
-    const list = entries.map(({ node, text }) => {
-      let id = node.id || slugify(text) || 'section';
-      let unique = id;
-      let i = 2;
-      while (seenIds.has(unique)) unique = `${id}-${i++}`;
-      seenIds.add(unique);
-      if (!node.id) node.id = unique;
-      // Clears the fixed navbar (+ reading progress bar, which overlaps it) plus
-      // a little breathing room, so a jumped-to heading isn't flush against the top.
-      node.style.scrollMarginTop = 'calc(56px + var(--safe-area-inset-top, 0px) + 16px)';
-      return { id: unique, text, level: node.tagName === 'H3' ? 3 : 2 };
-    });
-
-    setHeadings(list);
+    if (!container) return;
+    const observer = new MutationObserver(scan);
+    observer.observe(container, { childList: true, subtree: true });
+    return () => observer.disconnect();
   }, [contentRef, watch, skipText]);
 
   // Below this, it's not worth a nav card - e.g. fact-list articles that only
