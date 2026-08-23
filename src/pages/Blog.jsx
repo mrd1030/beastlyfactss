@@ -481,6 +481,8 @@ function AuthorBio() {
 function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFilesMode = false, allPosts, onSelectPost }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
+  const mainColRef = useRef(null);
+  const sidebarRef = useRef(null);
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
   // future-scheduled post's own permalink page prerenders with the date span
   // hidden - once the real world catches up to that date without a redeploy,
@@ -495,6 +497,63 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     setDisplayDate(getDisplayDate(post.publishedAt));
   }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
+
+  // Resets both the page scroll and the sidebar's own scroll whenever the
+  // displayed post changes. Needed for two separate reasons: React Router's
+  // <Link> (what in-article MDX links render as, see MdxLink.jsx) doesn't
+  // restore scroll on navigation at all, and the sidebar below is a second,
+  // independent overflow-y-auto container whose own scrollTop persists
+  // across a post swap regardless of what the window does - handleSelectPost
+  // already scrolls the window for sidebar-triggered navigation, but never
+  // touched the sidebar's own scroll position, which is what stayed wherever
+  // it was left on the previous post.
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (sidebarRef.current) sidebarRef.current.scrollTop = 0;
+  }, [postSlug]);
+
+  // Keeps the sticky sidebar's own scroll roughly in step with how far the
+  // reader has gotten through the article, so it reaches its own bottom
+  // around the same time the article does, rather than being stranded
+  // mid-scroll (or still at the top) once the article runs out above the
+  // footer. Desktop only (lg+) - below that the sidebar isn't sticky or
+  // independently scrollable at all, it's normal document flow.
+  useEffect(() => {
+    let raf = null;
+
+    const sync = () => {
+      raf = null;
+      const main = mainColRef.current;
+      const sidebar = sidebarRef.current;
+      if (!main || !sidebar || window.innerWidth < 1024) return;
+
+      const mainTop = main.getBoundingClientRect().top + window.scrollY;
+      const mainHeight = main.offsetHeight;
+      const viewport = window.innerHeight;
+      const progress = mainHeight <= viewport
+        ? 0
+        : Math.min(1, Math.max(0, (window.scrollY - mainTop) / (mainHeight - viewport)));
+
+      const sidebarRange = sidebar.scrollHeight - sidebar.clientHeight;
+      if (sidebarRange > 0) sidebar.scrollTop = progress * sidebarRange;
+    };
+
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(sync);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    sync();
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
+  }, [postSlug]);
+
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated frontmatter SEO fields win; excerpt/title/image are the fallbacks.
   // The brand suffix is appended only when the result still fits in 60
@@ -618,7 +677,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
       </Helmet>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2" ref={mainColRef}>
             <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
               <ArrowLeft className="w-4 h-4" />{backLabel}
             </button>
@@ -769,7 +828,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             />
           </div>
 
-          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
+          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
             {/* Hidden below lg: the collapsible instance above the article
                 already covers mobile. */}
             <div className="hidden lg:block">
