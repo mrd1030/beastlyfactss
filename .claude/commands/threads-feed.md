@@ -163,9 +163,12 @@ PHASE 2: WRITE (after approval only)
     First sentence is the position.
 2.  One to three lines for most posts. Under 200 characters is the target, even
     though the limit is higher. Show the character count.
-3.  Links suppress reach here too. Default to NO link. When a link earns its
-    place, put it in the first reply, same as X. Cap linked posts at a fifth of
-    the week's volume.
+3.  Links suppress reach here too, but the tradeoff is worth it for the
+    article track specifically: every ARTICLE post gets a first reply linking
+    back to it, same as X. Facts stay unlinked by default, since a fact post
+    is not sending anyone to a page that adds much beyond the post itself, no
+    cap needed either way now that the rule is track-based rather than a
+    weekly quota.
 4.  No hashtags. Threads has topic tags and you may attach at most one, only
     when it is the obvious one for the species. Usually attach none.
 5.  Write for the reply. Every post should leave an obvious opening: a number
@@ -335,7 +338,7 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No em or en dashes anywhere
   [ ] No banned phrase
   [ ] Every post leads with the take, no setup line
-  [ ] Linked posts within a fifth of the week's volume, all in the first reply
+  [ ] Every article post has a first-reply link, every fact post has none
   [ ] No hashtags anywhere
   [ ] No shape used twice consecutively
   [ ] No two posts from the same track scheduled back to back
