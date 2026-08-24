@@ -195,6 +195,14 @@ PHASE 2: WRITE (after approval only)
 2.  The url goes in the FIRST REPLY only. One line of context, then the url.
     Not "read the full guide". Give a reason to click that is different from
     what the main post already said.
+    For an ARTICLE post, the linked guide genuinely has more than the tweet,
+    so it's fair to gesture at what that is.
+    For a FACT post, be honest about what's actually there: /facts/{slug}/
+    opens the same one-line fact in its own shareable card, nothing deeper.
+    Never write "more on this" or imply extra depth that doesn't exist. Frame
+    it instead as an invitation to save or send the card, warm and varied,
+    never a repeated template line. A different phrase for every fact post,
+    every week.
 3.  Post the requested cadence, no more. Give every post its own time slot and
     space them across waking hours, never back to back. Two posts sit in
     opposite halves of the day. Four or more should be at least 3 hours apart,
