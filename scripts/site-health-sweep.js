@@ -54,10 +54,28 @@ function readRelatedArticlesKeys() {
   return map;
 }
 
+// Beastfiles link out to blog articles via their own `relatedFiles: [...]`
+// arrays (rendered by RelatedFiles.jsx), a separate mechanism from
+// relatedArticles.js. Without reading these too, every article a Beastfile
+// links to reads as an orphan.
+function readBeastlypediaRelatedFiles() {
+  const dirPath = 'src/lib/data/beastlypedia';
+  const slugs = [];
+  if (!fs.existsSync(dirPath)) return slugs;
+  for (const file of fs.readdirSync(dirPath).filter(f => f.endsWith('.js') && f !== 'index.js')) {
+    const raw = fs.readFileSync(path.join(dirPath, file), 'utf8');
+    for (const m of raw.matchAll(/relatedFiles:\s*\[([^\]]*)\]/g)) {
+      for (const s of m[1].matchAll(/'([a-z0-9-]+)'/g)) slugs.push(s[1]);
+    }
+  }
+  return slugs;
+}
+
 const articles = readAllArticles();
 const slugSet = new Set(articles.map(a => a.slug));
 const structuredGuideIds = readStructuredGuideIds();
 const relatedArticles = readRelatedArticlesKeys();
+const beastlypediaRelatedFiles = readBeastlypediaRelatedFiles();
 
 // Inbound link tally: count /blog/<slug>/ and /guides/<slug>/ references
 // across every article body, plus credit from relatedArticles.js entries.
@@ -85,10 +103,14 @@ for (const a of articles) {
 for (const slugs of Object.values(relatedArticles)) {
   for (const s of slugs) inbound.set(s, (inbound.get(s) || 0) + 1);
 }
+for (const s of beastlypediaRelatedFiles) {
+  inbound.set(s, (inbound.get(s) || 0) + 1);
+}
 
-// Orphan pages: zero inbound references from any article body or relatedArticles.js.
-// Skip fun-facts (those are meant to stand alone, linked from elsewhere in the UI,
-// not from other article bodies) and the single legacy content/blog file.
+// Orphan pages: zero inbound references from any article body, relatedArticles.js,
+// or a Beastfile's relatedFiles list. Skip fun-facts (those are meant to stand
+// alone, linked from elsewhere in the UI, not from other article bodies) and the
+// single legacy content/blog file.
 const orphans = articles
   .filter(a => a.dir === 'guides')
   .filter(a => (inbound.get(a.slug) || 0) === 0)
