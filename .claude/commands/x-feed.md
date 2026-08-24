@@ -200,9 +200,13 @@ PHASE 2: WRITE (after approval only)
     For a FACT post, be honest about what's actually there: /facts/{slug}/
     opens the same one-line fact in its own shareable card, nothing deeper.
     Never write "more on this" or imply extra depth that doesn't exist. Frame
-    it instead as an invitation to save or send the card, warm and varied,
-    never a repeated template line. A different phrase for every fact post,
-    every week.
+    it as an action, not a description of the site: give the reader a
+    specific person or moment to send the card to ("send this to whoever
+    still thinks X", "grab this for the next person who says Y"), tied to
+    that fact's actual punchline. Avoid "its own page" / "saved here" /
+    anything that talks about the site's architecture instead of the
+    reader's reason to tap through. Warm and varied, never a repeated
+    template line, a different phrase for every fact post, every week.
 3.  Post the requested cadence, no more. Give every post its own time slot and
     space them across waking hours, never back to back. Two posts sit in
     opposite halves of the day. Four or more should be at least 3 hours apart,
