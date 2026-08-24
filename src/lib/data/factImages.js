@@ -316,6 +316,11 @@ const FACT_IMAGES = {
   289: '/assets/facts/okapi.jpg',
   290: '/assets/facts/nudibranch.jpg',
   291: '/assets/facts/gila-monster.jpg',
+  292: '/assets/facts/kea.jpg',
+  293: '/assets/facts/dachshund.jpg',
+  294: '/assets/facts/pygmy-marmoset.jpg',
+  295: '/assets/facts/barreleye-fish.jpg',
+  296: '/assets/facts/basilisk-lizard.jpg',
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
