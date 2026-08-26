@@ -408,25 +408,27 @@ export const fishGuides = [
     image: "/assets/guides/discus.jpg",
     tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
     funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // See research/discus-research-brief.md.
+    // Verified against real research in the discus deep-dive articles
+    // (content/guides/discus-cost-guide.mdx and siblings) - a proper 55-75
+    // gallon setup with filtration sized well above tank volume realistically
+    // runs $600-800, not the $200-450 first-draft estimate.
     costs: {
       setup: [
-        { item: "55-75 gallon tall tank (group of 6)", low: 200, high: 450 },
-        { item: "Heater rated for sustained 82-86°F", low: 30, high: 50 },
-        { item: "Canister filter (strong but gentle flow)", low: 100, high: 200 },
-        { item: "RO/DI unit or water softening (if tap is hard)", low: 80, high: 200 },
+        { item: "55-75 gallon tall tank (group of 6)", low: 290, high: 450 },
+        { item: "Heater rated for sustained 82-86°F", low: 18, high: 30 },
+        { item: "Canister filter, sized well above tank volume", low: 250, high: 320 },
+        { item: "RO/DI unit or water softening (if tap is hard)", low: 70, high: 150 },
       ],
       annual: [
         { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
-        { item: "Water test kit and conditioner", low: 20, high: 35 },
+        { item: "Water test kit and conditioner", low: 25, high: 40 },
       ],
     },
     sections: {
       housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
-      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for their first one to two weeks, a genuine and well-documented form of parental care rather than hobbyist folklore.",
+      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers, best rotated with other foods rather than fed as beef-heart alone given real fat and calcium-phosphorus caveats. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for about a month total, most intensively through the first two weeks and weaning through weeks three and four, a genuine and peer-reviewed form of parental care rather than hobbyist folklore.",
       enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
-      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and is linked to poor water quality, stress, and nutritional gaps; catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
+      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and has historically been blamed on poor water quality, stress, and diet-related calcium-phosphorus imbalance; a controlled 2019 study specifically tested severe dietary calcium deficiency over 16 weeks and found it did not produce the disease on its own, so water quality and stress remain the better-supported causes. Catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
       checklist: [
         "55-75 gallon tall tank (group of 6+)",
         "Heater holding a steady 82-86°F",
@@ -457,25 +459,26 @@ export const fishGuides = [
     image: "/assets/guides/cardinal-tetra.jpg",
     tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
     funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // See research/cardinal-tetra-research-brief.md.
+    // Verified against real research in the cardinal tetra deep-dive articles
+    // (content/guides/cardinal-tetra-cost-guide.mdx and siblings).
     costs: {
       setup: [
-        { item: "10-20 gallon tank", low: 60, high: 120 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Gentle filter", low: 20, high: 35 },
-        { item: "Dense live plants", low: 20, high: 35 },
+        { item: "10-20 gallon tank", low: 20, high: 150 },
+        { item: "Aquarium heater", low: 18, high: 30 },
+        { item: "Gentle filter", low: 8, high: 15 },
+        { item: "Dense live plants", low: 18, high: 35 },
       ],
       annual: [
-        { item: "Micro-pellets + baby brine shrimp", low: 30, high: 50 },
-        { item: "Water test kit and conditioner", low: 15, high: 25 },
+        { item: "Micro-pellets + baby brine shrimp", low: 15, high: 30 },
+        { item: "Water conditioner", low: 10, high: 15 },
+        { item: "Water test kit", low: 25, high: 40 },
       ],
     },
     sections: {
       housing: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more; cardinals are intensely schooling and look washed-out and nervous in small numbers. Keep water heated between 73 and 81 degrees F, a touch warmer-tolerant than neon tetra, which makes cardinals a slightly better fit for a warmer community tank. Dark substrate and dense planting show off their color best and give a school somewhere to retreat.",
       diet: "Cardinal tetras are omnivores that do well on high-quality micro-pellets or crushed flake, with baby brine shrimp or micro daphnia as valuable supplements. Feed small amounts once or twice daily; overfeeding fouls water quickly relative to how little this species actually needs.",
       enrichment: "A school of 8 to 10 or more moving in tight formation is both the visual appeal and a genuine stress-reducer for the individual fish. Dense plants and driftwood recreate the dappled light of their native blackwater streams. Peaceful and non-aggressive, cardinals make an easy community fish once past the fragile early-cycling period, just avoid anything large enough to see them as food.",
-      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. Ammonia and nitrite sensitivity in an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two, always confirm a completed nitrogen cycle before stocking.",
+      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. A 2008 toxicology study found cardinal tetras unusually ammonia-tolerant but genuinely nitrite-sensitive (LC50 just 1.1 mg/L), which is why an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two; always confirm a completed nitrogen cycle, especially for nitrite, before stocking.",
       checklist: [
         "10-20 gallon fully cycled tank",
         "Group of 8-10+ cardinal tetras",
@@ -504,32 +507,35 @@ export const fishGuides = [
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
-    tagline: "The hardy, prolific livebearer that actually does better with a little aquarium salt!",
-    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species, and adding a small amount of aquarium salt to their tank genuinely improves their health rather than just being an old hobbyist habit.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // See research/molly-research-brief.md.
+    tagline: "The hardy, prolific livebearer with a genuine tolerance for brackish water!",
+    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
+    // Verified against real research in the molly deep-dive articles
+    // (content/guides/molly-cost-guide.mdx and siblings). The salt claim in
+    // particular was corrected: real sources genuinely disagree on whether
+    // standing salt dosing benefits a healthy tank, it isn't settled fact.
     costs: {
       setup: [
-        { item: "20 gallon tank", low: 80, high: 150 },
-        { item: "Aquarium heater", low: 15, high: 25 },
-        { item: "Filter sized to tank/bioload", low: 25, high: 45 },
-        { item: "Aquarium salt (long-lasting supply)", low: 5, high: 10 },
+        { item: "20 gallon tank", low: 50, high: 150 },
+        { item: "Aquarium heater", low: 15, high: 30 },
+        { item: "Filter sized to tank/bioload", low: 45, high: 60 },
+        { item: "Aquarium salt (long-lasting supply, optional)", low: 20, high: 22 },
       ],
       annual: [
-        { item: "Flake/pellet food with vegetable content", low: 60, high: 120 },
-        { item: "Water test kit and conditioner", low: 15, high: 25 },
+        { item: "Flake/pellet food with vegetable content", low: 25, high: 50 },
+        { item: "Water conditioner", low: 10, high: 15 },
+        { item: "Water test kit", low: 25, high: 40 },
       ],
     },
     sections: {
-      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. The defining, non-obvious care detail: mollies are naturally a brackish-water species and commonly do measurably better with a small amount of aquarium salt added, roughly a tablespoon per 5 gallons is a common starting ratio, adjust to the specific product.",
+      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. Mollies are naturally a brackish-water species, and some keepers add a small amount of aquarium salt (roughly a tablespoon per 5 gallons is a common dose), but whether a healthy freshwater tank actually needs it is genuinely disputed: consistent water changes and stable parameters accomplish the same thing for many keepers without salt's downsides for live plants and snails. Lifespan is typically 3 to 5 years, up to 5 to 7 with excellent, stable water quality.",
       diet: "Mollies need more plant matter than most livebearers - a flake or pellet food with a real vegetable or algae component, not just protein, is important. A diet that's protein-heavy with no vegetable content is one of the most common molly-specific mistakes and drives real digestive and health problems over time.",
-      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters of 10 to 60+ fry every 4 to 6 weeks are normal in a mixed-sex tank, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
-      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low or unstable water quality; correcting both usually resolves it. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
+      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female's age, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
+      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low, low pH or mineral hardness, or unstable water quality; correcting those usually resolves it. Fancy mollies bred overseas in harder, mineral-rich water are especially prone to it when sold into softer home tap water. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
       checklist: [
         "20 gallon tank (more for sailfin varieties or a growing colony)",
         "Heater set to 72-78°F",
         "Filter sized to the tank and bioload",
-        "Aquarium salt (roughly 1 tbsp per 5 gallons, adjust to product)",
+        "Aquarium salt (optional, disputed benefit; 1 tbsp per 5 gal if used)",
         "Flake/pellet food with real vegetable content",
         "Dense planting (fry cover)",
         "Water test kit and conditioner",
@@ -539,10 +545,10 @@ export const fishGuides = [
     },
     faqs: [
       { q: "How can I tell if my molly is male or female?", a: "Easily, the same way as with guppies. Males have a modified, pointed anal fin called a gonopodium; females have a fuller, rounder body and a dark \"gravid spot\" near the vent, especially visible when pregnant. This is one of the most straightforward sexing calls in the livebearer family." },
-      { q: "Do mollies really need aquarium salt?", a: "Not strictly required, but genuinely beneficial. Mollies naturally inhabit brackish coastal waters, and a small amount of aquarium salt, commonly around a tablespoon per 5 gallons, tends to improve their health and can help prevent disease. This is a real point of difference from guppies and most other common livebearers, which don't need it." },
-      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely benefit from a little aquarium salt in a way [guppies](/guides/guppy/) don't need. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
-      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue almost always caused by water that's too cold or unstable water quality. Check and correct temperature first, then water parameters; most cases resolve once conditions stabilize." },
-      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters of 10 to 60+ fry every 4 to 6 weeks are completely normal in a mixed-sex tank. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
+      { q: "Do mollies really need aquarium salt?", a: "Not strictly, and it's genuinely disputed among experienced keepers. Mollies naturally inhabit brackish coastal waters and tolerate salt well, commonly around a tablespoon per 5 gallons if you use it, but some livebearer specialists argue consistent water changes accomplish the same thing without salt's downsides for live plants and snails. This is still a real point of difference from guppies and most other common livebearers, which don't tolerate salt the same way at all." },
+      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely tolerate brackish water in a way [guppies](/guides/guppy/) don't. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
+      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue most often caused by water that's too cold, low pH or mineral hardness, or unstable water quality generally. Fancy mollies bred overseas in harder water are especially prone to it once sold into softer home tap water. Check and correct temperature first, then pH, hardness, and general water parameters; most cases resolve once conditions stabilize." },
+      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
     ],
   },
 ];

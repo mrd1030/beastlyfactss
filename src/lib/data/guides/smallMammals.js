@@ -729,11 +729,12 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
     image: "/assets/guides/flying-squirrel.jpg",
     tagline: "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!",
     funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Verified against real research in the flying squirrel deep-dive articles
+    // (content/guides/flying-squirrel-cost-guide.mdx and siblings).
     // Legal status varies significantly by US state since this is a native wildlife
-    // species in much of its range, unlike the non-native sugar glider - see
-    // research/flying-squirrel-research-brief.md. Do not state specific state
-    // legality here without a dedicated legal-guide research pass.
+    // species in much of its range, unlike the non-native sugar glider - a
+    // dedicated legal-guide research pass still has not been done. Do not state
+    // specific state legality here.
     costs: {
       setup: [
         { item: "24x24x36 in aviary-style cage", low: 150, high: 300 },
@@ -744,14 +745,14 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
       annual: [
         { item: "Varied nuts, seeds, fruit, vegetables, and protein", low: 360, high: 720 },
         { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
-        { item: "Annual exotic vet wellness check", low: 60, high: 120 },
+        { item: "Annual exotic vet wellness check", low: 75, high: 150 },
       ],
     },
     sections: {
-      housing: "A tall, multi-level aviary-style cage, 24x24x36 inches at an absolute minimum and larger where possible, suits this genuinely active, vertically-oriented species. Provide multiple sleeping pouches at different heights along with branches, ropes, and ladders for climbing and gliding practice. Normal indoor room temperature is fine; just avoid cold drafts. Flying squirrels are nocturnal and most active at dusk and through the night, so plan feeding and interaction around their schedule, not a daytime one.",
+      housing: "A tall, multi-level aviary-style cage, 24x24x36 inches at an absolute minimum and larger where possible, suits this genuinely active, vertically-oriented species. Provide multiple sleeping pouches at different heights along with branches, ropes, and ladders for climbing and gliding practice. Keep the room around 65 to 75 degrees F; this species is native to temperate North American forests, tolerates a cool room well, but struggles with heat, so avoid letting it climb much past 80 degrees F, and keep the cage away from cold drafts too. Unlike a sugar glider, flying squirrels can synthesize some vitamin D through skin exposure to light, so regular access to natural daylight or full-spectrum lighting alongside dietary calcium is generally recommended. Flying squirrels are nocturnal and most active at dusk and through the night, so plan feeding and interaction around their schedule, not a daytime one.",
       diet: "A varied omnivorous diet of nuts, seeds, fruit, vegetables, and a protein or insect component, with calcium and multivitamin supplementation to prevent the same calcium-phosphorus imbalance risk seen in sugar gliders. Avoid an all-seed or nut-heavy diet, both for calcium balance and because the fat content drives obesity in a captive animal that's naturally far more active than its cage allows.",
       enrichment: "Deeply social, a solitary flying squirrel is a stressed one, and they should be kept in same-sex or bonded pairs and small groups, closely paralleling the sugar glider's social requirement. Hand-raised, captive-bred joeys imprint readily and often bond very closely with a consistent handler, commonly carried in a bonding pouch during the day so they acclimate to a keeper's scent ahead of active evening handling sessions. Wild-caught or late-socialized animals are considerably more skittish and not a realistic pet.",
-      health: "Metabolic bone disease from inadequate calcium relative to phosphorus is the same underlying risk seen in sugar gliders, driven by an unbalanced, seed-heavy diet without supplementation. Obesity from excess nuts or sugary fruit relative to a captive animal's activity level is also common. As with most small exotic mammals, illness is often hidden until it's advanced; a flying squirrel that's lethargic or off its food needs prompt exotic veterinary attention, not a wait-and-see approach.",
+      health: "Metabolic bone disease from inadequate calcium relative to phosphorus is the same underlying risk seen in sugar gliders, driven by an unbalanced, seed-heavy diet without supplementation. Unlike sugar gliders, which are marsupials, flying squirrels are true rodents with continuously growing incisors, so dental disease from inadequate wear is a real, if secondary, risk worth watching for alongside the diet-driven issues. Obesity from excess nuts or sugary fruit relative to a captive animal's activity level is also common. As with most small exotic mammals, illness is often hidden until it's advanced; a flying squirrel that's lethargic or off its food needs prompt exotic veterinary attention, not a wait-and-see approach.",
       checklist: [
         "24x24x36 in+ aviary-style cage",
         "Multiple sleeping pouches at varied heights",
@@ -769,7 +770,7 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
       { q: "Is it legal to own a pet flying squirrel?", a: "It depends heavily on your state, more so than for most pets on this site. Because the Southern flying squirrel is native wildlife across much of the eastern US, several states regulate it under wildlife and game laws rather than exotic-pet rules, a meaningfully different category than how most states treat the non-native sugar glider. Some states permit documented captive-bred animals while restricting wild-caught ones; others restrict native flying squirrels more broadly. Check your specific state's wildlife agency before acquiring one." },
       { q: "What's the difference between a flying squirrel and a sugar glider?", a: "They're not related at all, despite looking and gliding almost identically. Flying squirrels are true rodents; [sugar gliders](/guides/sugar-glider/) are marsupials, an unrelated lineage that independently evolved the same wrist-to-ankle gliding membrane. Flying squirrels are smaller and lighter, and their legal status is more complicated in the US since they're native wildlife rather than an exotic species everywhere." },
       { q: "Can a flying squirrel live alone?", a: "Not well. Flying squirrels are deeply social and a solitary animal is a genuinely stressed one, closely mirroring the same requirement in sugar gliders. Plan for a same-sex or bonded pair, or a small group, rather than a single animal." },
-      { q: "How long do flying squirrels live?", a: "5 to 6 years is typical in the wild; captive individuals with good care commonly reach 10 years and sometimes beyond, meaningfully longer than most people expect from an animal this small." },
+      { q: "How long do flying squirrels live?", a: "3 to 6 years is typical in the wild, sources vary within that range; captive individuals with good care commonly average around 10 years, and well-documented pets have lived past 19, meaningfully longer than most people expect from an animal this small." },
       { q: "Are flying squirrels good pets for beginners?", a: "No. Between the specialized calcium-balanced diet, mandatory social housing, a nocturnal schedule that demands evening commitment, and legal status that genuinely varies by state, this is an advanced exotic pet in the same tier as the sugar glider, not a casual first exotic." },
     ],
   },

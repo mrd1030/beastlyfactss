@@ -125,7 +125,7 @@ export const fishEncyclopedia = [
       habitat: "Blackwater forest streams and tributaries",
       adultSize: "2 inches (5 cm)",
       wildDiet: "Small insects, worms, crustaceans, and zooplankton",
-      wildLifespan: "4-5 years",
+      wildLifespan: "Often under 1 year (seasonal pools frequently strand and dry out); commonly 4-5 years, up to 10, in a stable aquarium",
       conservation: "Not evaluated (widespread; sustainable wild-harvest fishery supports conservation in parts of its range)",
     },
   },
@@ -133,7 +133,7 @@ export const fishEncyclopedia = [
     id: "molly", name: "Molly", scientific: "Poecilia sphenops / P. latipinna",
     category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "molly", available: true, image: "/assets/guides/molly.jpg",
     bio: {
-      overview: "Mollies are prolific livebearing fish native to fresh and brackish waters of the southern United States, Mexico, and Central America, closely related to guppies and platies. Unlike most freshwater aquarium fish, mollies naturally inhabit coastal and brackish waters and often do noticeably better with a small amount of aquarium salt added to their tank, a genuine point of difference from their livebearer relatives. Selective breeding has produced many color and finnage varieties, including the tall-finned sailfin molly.",
+      overview: "Mollies are prolific livebearing fish native to fresh and brackish waters of the southern United States, Mexico, and Central America, closely related to guppies and platies. Unlike most freshwater aquarium fish, mollies naturally inhabit coastal and brackish waters and can tolerate salt concentrations well past normal seawater, a genuine point of difference from their livebearer relatives, though whether a healthy freshwater tank benefits from added aquarium salt is a genuinely disputed question among experienced keepers rather than settled fact. Selective breeding has produced many color and finnage varieties, including the tall-finned sailfin molly.",
       origin: "Southern United States, Mexico, and Central America",
       habitat: "Fresh, brackish, and coastal waters",
       adultSize: "3-4.5 inches (7.5-11 cm); sailfin varieties up to 6 inches",

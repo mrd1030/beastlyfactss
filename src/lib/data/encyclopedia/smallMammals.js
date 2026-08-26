@@ -125,7 +125,7 @@ export const smallMammalEncyclopedia = [
       habitat: "Deciduous and mixed forest",
       adultSize: "8-10 inches (20-25 cm) total length including tail; 2-3 oz",
       wildDiet: "Nuts, seeds, fruit, fungi, insects, and occasionally bird eggs or nestlings",
-      wildLifespan: "5-6 years (up to 10+ years in captivity)",
+      wildLifespan: "3-6 years in the wild (sources vary); commonly around 10 years in captivity, with documented individuals living past 19",
       conservation: "Least Concern (IUCN)",
     },
   },
