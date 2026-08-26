@@ -45,6 +45,7 @@ export const fishGuides = [
       { q: "Do angelfish pair for life?", a: "Angelfish that successfully pair off often form long-term monogamous bonds and cooperatively guard their eggs and fry, one of the more elaborate parenting behaviors seen in commonly kept aquarium fish." },
       { q: "What tank size do angelfish need?", a: "A minimum of 29 to 30 gallons for a single pair, with height of 18 inches or more being just as important as overall footprint because of their tall, laterally compressed body shape." },
       { q: "Are angelfish good pets for beginners?", a: "Not the best first fish. Angelfish need a genuinely tall tank (18+ inches, 29-30 gallons minimum), can turn territorial once paired off, and will eventually eat small tankmates like neon tetras once grown. They're a great step-up fish for someone who's kept a community tank successfully first, rather than a true beginner species." },
+      { q: "How is an angelfish different from a discus?", a: "Both are tall-bodied Amazonian cichlids, but angelfish are the hardier, more forgiving of the two by a real margin. [Discus](/guides/discus/) need meaningfully warmer, softer, and cleaner water to thrive, while angelfish tolerate a wider temperature range and are a more realistic entry point into keeping this body shape of fish." },
     ],
   },
   {
@@ -243,6 +244,7 @@ export const fishGuides = [
       { q: "What water temperature do guppies need?", a: "72 to 82°F, with roughly 78°F being ideal. Guppies are tropical fish and need a heater in the vast majority of home aquariums." },
       { q: "How long do guppies live?", a: "2 to 3 years is typical with good water quality, appropriate temperature, and a varied diet." },
       { q: "Are guppies good pets for beginners?", a: "Yes, they're one of the easiest community fish to keep. The one thing beginners underestimate is how fast they breed, a single female can produce a new brood roughly every four weeks, so have a population plan before you start." },
+      { q: "What's the difference between a guppy and a molly?", a: "Size and salt, mainly. [Mollies](/guides/molly/) run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely benefit from a bit of aquarium salt in a way guppies don't need. Both are prolific livebearers in the same family with otherwise very similar easy-beginner care." },
     ],
   },
   {
@@ -345,6 +347,7 @@ export const fishGuides = [
       { q: "Why does my neon tetra's stripe look dull at night?", a: "This is normal - their signature iridescent blue stripe is produced by reflective cells that dim while the fish sleeps, so a faded stripe after dark is a natural nocturnal change, not a sign of illness." },
       { q: "How long do neon tetras live?", a: "5 to 8 years is achievable with stable water quality and a fully cycled, low-stress tank, though many pet-store neons live far shorter lives due to stress before and immediately after purchase." },
       { q: "Are neon tetras good pets for beginners?", a: "With one big caveat: only in a fully cycled tank. Neon tetras are inexpensive and peaceful, which makes them a common first fish, but they're unusually sensitive to ammonia and nitrite, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner's neons dying within days." },
+      { q: "What's the difference between a neon tetra and a cardinal tetra?", a: "The red stripe. On a [cardinal tetra](/guides/cardinal-tetra/) it runs the full length of the body; on a neon tetra it only covers roughly the back half. Cardinals also run slightly larger and tolerate marginally warmer water, otherwise the two are nearly identical to keep." },
     ],
   },
   {
@@ -394,6 +397,152 @@ export const fishGuides = [
       { q: "Can oscars live with other fish?", a: "Only with similarly sized, robust tankmates such as larger catfish, silver dollars, or other comparably sized Central and South American cichlids. Small or slow fish will be eaten or bullied." },
       { q: "What is hole-in-the-head disease?", a: "A condition causing pitting lesions on the head and lateral line, strongly associated with poor water quality, old-tank syndrome, and nutritional gaps, especially an all-feeder-fish diet. Prevention centers on strong filtration, regular water changes, and a varied high-quality diet." },
       { q: "Are oscars good pets for beginners?", a: "Not really, despite how small they look in the pet store. An oscar needs 55 to 75+ gallons as an adult, produces a heavy bioload, and can live 10 to 20 years. They're better suited to someone who's already run a smaller tank successfully and is ready to commit to the space and filtration a big, intelligent cichlid needs." },
+    ],
+  },
+  {
+    id: "discus",
+    name: "Discus",
+    emoji: "🐠",
+    difficulty: "Intermediate-Advanced",
+    petType: "Fish",
+    image: "/assets/guides/discus.jpg",
+    tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
+    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // See research/discus-research-brief.md.
+    costs: {
+      setup: [
+        { item: "55-75 gallon tall tank (group of 6)", low: 200, high: 450 },
+        { item: "Heater rated for sustained 82-86°F", low: 30, high: 50 },
+        { item: "Canister filter (strong but gentle flow)", low: 100, high: 200 },
+        { item: "RO/DI unit or water softening (if tap is hard)", low: 80, high: 200 },
+      ],
+      annual: [
+        { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
+        { item: "Water test kit and conditioner", low: 20, high: 35 },
+      ],
+    },
+    sections: {
+      housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
+      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for their first one to two weeks, a genuine and well-documented form of parental care rather than hobbyist folklore.",
+      enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
+      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and is linked to poor water quality, stress, and nutritional gaps; catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
+      checklist: [
+        "55-75 gallon tall tank (group of 6+)",
+        "Heater holding a steady 82-86°F",
+        "Strong but gentle canister filtration",
+        "RO/DI unit or water softener (if needed for soft, acidic water)",
+        "Frequent large water changes (25-50% every 2-3 days in serious setups)",
+        "Discus pellets, frozen bloodworms, and/or beef-heart mix",
+        "Bare-bottom or fine sand substrate for easy cleaning",
+        "Driftwood and broad-leafed plants for cover",
+        "Water test kit and conditioner",
+        "Warm-water-tolerant, peaceful tankmates only",
+      ],
+    },
+    faqs: [
+      { q: "Can discus live with neon tetras?", a: "Not well, long term. Discus need sustained 82 to 86°F water, and neon tetras genuinely struggle at the top of that range, so the classic community pairing is more of a temperature compromise than an ideal setup for either fish. [Cardinal tetras](/guides/cardinal-tetra/) tolerate the warmth noticeably better and are a more honest tankmate choice." },
+      { q: "How can I tell if my discus is male or female?", a: "It's genuinely difficult. Discus show almost no reliable external difference between sexes outside of breeding, when the genital papilla shape differs (males pointed, females rounder). Most keepers can't sex a non-breeding discus with confidence, and that's normal, not a sign you're missing something obvious." },
+      { q: "Why is my discus hiding and not eating?", a: "Discus are easily stressed by sudden movement, bright light, poor water quality, or a tank in a high-traffic area, and hiding with reduced appetite is usually the first visible sign. Check water parameters first, since ammonia or nitrite swings are a common trigger, then consider whether the tank's placement or a recent disturbance is the cause." },
+      { q: "How is a discus different from an angelfish?", a: "Both are Amazonian cichlids, but discus need meaningfully warmer, softer, cleaner water and are considered the more demanding of the two by a real margin, not just reputation. [Angelfish](/guides/angelfish/) are hardier, tolerate a wider temperature range, and are the more forgiving entry point into keeping a tall-bodied South American cichlid." },
+      { q: "How long do discus live?", a: "10 to 15 years with excellent, stable care, meaningfully shorter under fluctuating water quality. Discus reward consistency more than almost any other common aquarium fish; the fish that struggle are usually the ones kept in a tank that's clean one week and neglected the next." },
+    ],
+  },
+  {
+    id: "cardinal-tetra",
+    name: "Cardinal Tetra",
+    emoji: "🐠",
+    difficulty: "Beginner-Intermediate",
+    petType: "Fish",
+    image: "/assets/guides/cardinal-tetra.jpg",
+    tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
+    funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // See research/cardinal-tetra-research-brief.md.
+    costs: {
+      setup: [
+        { item: "10-20 gallon tank", low: 60, high: 120 },
+        { item: "Aquarium heater", low: 15, high: 25 },
+        { item: "Gentle filter", low: 20, high: 35 },
+        { item: "Dense live plants", low: 20, high: 35 },
+      ],
+      annual: [
+        { item: "Micro-pellets + baby brine shrimp", low: 30, high: 50 },
+        { item: "Water test kit and conditioner", low: 15, high: 25 },
+      ],
+    },
+    sections: {
+      housing: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more; cardinals are intensely schooling and look washed-out and nervous in small numbers. Keep water heated between 73 and 81 degrees F, a touch warmer-tolerant than neon tetra, which makes cardinals a slightly better fit for a warmer community tank. Dark substrate and dense planting show off their color best and give a school somewhere to retreat.",
+      diet: "Cardinal tetras are omnivores that do well on high-quality micro-pellets or crushed flake, with baby brine shrimp or micro daphnia as valuable supplements. Feed small amounts once or twice daily; overfeeding fouls water quickly relative to how little this species actually needs.",
+      enrichment: "A school of 8 to 10 or more moving in tight formation is both the visual appeal and a genuine stress-reducer for the individual fish. Dense plants and driftwood recreate the dappled light of their native blackwater streams. Peaceful and non-aggressive, cardinals make an easy community fish once past the fragile early-cycling period, just avoid anything large enough to see them as food.",
+      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. Ammonia and nitrite sensitivity in an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two, always confirm a completed nitrogen cycle before stocking.",
+      checklist: [
+        "10-20 gallon fully cycled tank",
+        "Group of 8-10+ cardinal tetras",
+        "Heater set to 73-81°F",
+        "Gentle filter",
+        "Dense live plants",
+        "Dark substrate",
+        "Micro-pellet or crushed flake food",
+        "Water test kit (confirm cycling before stocking)",
+        "Water conditioner",
+        "Weekly 20-25% water changes",
+      ],
+    },
+    faqs: [
+      { q: "What's the difference between a cardinal tetra and a neon tetra?", a: "Look at the red stripe. On a cardinal tetra it runs the full length of the body; on a [neon tetra](/guides/neon-tetra/) the red only covers roughly the back half, with the front half showing just the blue stripe. Cardinals also run slightly larger and tolerate marginally warmer water, which matters if you're stocking a warmer community tank." },
+      { q: "How many cardinal tetras should I get?", a: "At least 6, ideally 8 to 10 or more if the tank allows. Like most tetras, they're intensely schooling fish that show noticeably better color and confidence in a larger group than in a small cluster." },
+      { q: "Are cardinal tetras harder to keep than neon tetras?", a: "Only slightly, and mostly for historical reasons: more of the cardinal tetra supply has traditionally been wild-collected rather than farmed, which can mean a bit more transport stress reaching stores. Tank-raised stock has become widely available and is just as forgiving as neon tetra once past the same fragile early-cycling window both species share." },
+      { q: "How long do cardinal tetras live?", a: "4 to 5 years is the commonly cited range in a typical home aquarium; some sources report up to 10 years under very stable, low-stress conditions, though that's closer to a best-case outcome than a typical one." },
+      { q: "Do cardinal tetras need a fully cycled tank?", a: "Yes, without exception. Cardinal tetras are unusually sensitive to ammonia and nitrite spikes, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner losing an entire school within days." },
+    ],
+  },
+  {
+    id: "molly",
+    name: "Molly",
+    emoji: "🐠",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/molly.jpg",
+    tagline: "The hardy, prolific livebearer that actually does better with a little aquarium salt!",
+    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species, and adding a small amount of aquarium salt to their tank genuinely improves their health rather than just being an old hobbyist habit.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // See research/molly-research-brief.md.
+    costs: {
+      setup: [
+        { item: "20 gallon tank", low: 80, high: 150 },
+        { item: "Aquarium heater", low: 15, high: 25 },
+        { item: "Filter sized to tank/bioload", low: 25, high: 45 },
+        { item: "Aquarium salt (long-lasting supply)", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Flake/pellet food with vegetable content", low: 60, high: 120 },
+        { item: "Water test kit and conditioner", low: 15, high: 25 },
+      ],
+    },
+    sections: {
+      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. The defining, non-obvious care detail: mollies are naturally a brackish-water species and commonly do measurably better with a small amount of aquarium salt added, roughly a tablespoon per 5 gallons is a common starting ratio, adjust to the specific product.",
+      diet: "Mollies need more plant matter than most livebearers - a flake or pellet food with a real vegetable or algae component, not just protein, is important. A diet that's protein-heavy with no vegetable content is one of the most common molly-specific mistakes and drives real digestive and health problems over time.",
+      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters of 10 to 60+ fry every 4 to 6 weeks are normal in a mixed-sex tank, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
+      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low or unstable water quality; correcting both usually resolves it. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
+      checklist: [
+        "20 gallon tank (more for sailfin varieties or a growing colony)",
+        "Heater set to 72-78°F",
+        "Filter sized to the tank and bioload",
+        "Aquarium salt (roughly 1 tbsp per 5 gallons, adjust to product)",
+        "Flake/pellet food with real vegetable content",
+        "Dense planting (fry cover)",
+        "Water test kit and conditioner",
+        "Single-sex group, or a plan for population growth",
+        "Weekly 20-25% water changes",
+      ],
+    },
+    faqs: [
+      { q: "How can I tell if my molly is male or female?", a: "Easily, the same way as with guppies. Males have a modified, pointed anal fin called a gonopodium; females have a fuller, rounder body and a dark \"gravid spot\" near the vent, especially visible when pregnant. This is one of the most straightforward sexing calls in the livebearer family." },
+      { q: "Do mollies really need aquarium salt?", a: "Not strictly required, but genuinely beneficial. Mollies naturally inhabit brackish coastal waters, and a small amount of aquarium salt, commonly around a tablespoon per 5 gallons, tends to improve their health and can help prevent disease. This is a real point of difference from guppies and most other common livebearers, which don't need it." },
+      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely benefit from a little aquarium salt in a way [guppies](/guides/guppy/) don't need. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
+      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue almost always caused by water that's too cold or unstable water quality. Check and correct temperature first, then water parameters; most cases resolve once conditions stabilize." },
+      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters of 10 to 60+ fry every 4 to 6 weeks are completely normal in a mixed-sex tank. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
     ],
   },
 ];

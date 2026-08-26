@@ -103,4 +103,43 @@ export const fishEncyclopedia = [
       conservation: "Least Concern (IUCN)",
     },
   },
+  {
+    id: "discus", name: "Discus", scientific: "Symphysodon spp.",
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate-Advanced", guideId: "discus", available: true, image: "/assets/guides/discus.jpg",
+    bio: {
+      overview: "Discus are tall, laterally compressed cichlids from the slow-moving blackwater tributaries of the Amazon Basin, prized in the aquarium hobby as the self-styled 'king of the aquarium' for their vivid, selectively bred color patterns. Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group. Both parents feed newly hatched fry a nutrient-rich mucus secreted from their skin, a form of parental care called 'discus milk' that is highly unusual among fish.",
+      origin: "Amazon Basin (Peru, Brazil, Colombia)",
+      habitat: "Slow-moving, soft, acidic blackwater tributaries and flooded forest",
+      adultSize: "6-8 inches (15-20 cm) diameter",
+      wildDiet: "Insect larvae, small invertebrates, and plant matter",
+      wildLifespan: "10-13 years",
+      conservation: "Not evaluated (widespread in trade; wild populations locally affected by collection and habitat change)",
+    },
+  },
+  {
+    id: "cardinal-tetra", name: "Cardinal Tetra", scientific: "Paracheirodon axelrodi",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner-Intermediate", guideId: "cardinal-tetra", available: true, image: "/assets/guides/cardinal-tetra.jpg",
+    bio: {
+      overview: "The cardinal tetra is a small schooling fish from the blackwater tributaries of the Amazon and Orinoco basins, closely resembling the neon tetra but with its iridescent red stripe running the full length of the body rather than just the rear half. Enormous numbers are still sustainably wild-harvested from the Rio Negro each year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities an economic reason to keep the forest, and the river, intact.",
+      origin: "Amazon and Orinoco Basins (Brazil, Colombia, Venezuela)",
+      habitat: "Blackwater forest streams and tributaries",
+      adultSize: "2 inches (5 cm)",
+      wildDiet: "Small insects, worms, crustaceans, and zooplankton",
+      wildLifespan: "4-5 years",
+      conservation: "Not evaluated (widespread; sustainable wild-harvest fishery supports conservation in parts of its range)",
+    },
+  },
+  {
+    id: "molly", name: "Molly", scientific: "Poecilia sphenops / P. latipinna",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "molly", available: true, image: "/assets/guides/molly.jpg",
+    bio: {
+      overview: "Mollies are prolific livebearing fish native to fresh and brackish waters of the southern United States, Mexico, and Central America, closely related to guppies and platies. Unlike most freshwater aquarium fish, mollies naturally inhabit coastal and brackish waters and often do noticeably better with a small amount of aquarium salt added to their tank, a genuine point of difference from their livebearer relatives. Selective breeding has produced many color and finnage varieties, including the tall-finned sailfin molly.",
+      origin: "Southern United States, Mexico, and Central America",
+      habitat: "Fresh, brackish, and coastal waters",
+      adultSize: "3-4.5 inches (7.5-11 cm); sailfin varieties up to 6 inches",
+      wildDiet: "Algae, plant matter, and small invertebrates",
+      wildLifespan: "3-5 years",
+      conservation: "Least Concern (IUCN, for wild Poecilia sphenops)",
+    },
+  },
 ];

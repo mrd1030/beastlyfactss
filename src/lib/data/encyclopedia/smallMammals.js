@@ -116,4 +116,17 @@ export const smallMammalEncyclopedia = [
       conservation: "Least Concern (IUCN)",
     },
   },
+  {
+    id: "flying-squirrel", name: "Southern Flying Squirrel", scientific: "Glaucomys volans",
+    category: "Small Mammals", emoji: "🐿️", difficulty: "Advanced", guideId: "flying-squirrel", available: true, image: "/assets/guides/flying-squirrel.jpg",
+    bio: {
+      overview: "The Southern flying squirrel is a small nocturnal rodent native to the deciduous forests of eastern North America, gliding between trees on a furred membrane called a patagium stretched between its wrists and ankles. Despite the superficial resemblance and identical gliding strategy, flying squirrels are true rodents and are not closely related to sugar gliders, which are marsupials, a striking case of two unrelated animals independently evolving the same solution. Flying squirrels are deeply social and live in family groups, huddling together for warmth through winter.",
+      origin: "Eastern North America",
+      habitat: "Deciduous and mixed forest",
+      adultSize: "8-10 inches (20-25 cm) total length including tail; 2-3 oz",
+      wildDiet: "Nuts, seeds, fruit, fungi, insects, and occasionally bird eggs or nestlings",
+      wildLifespan: "5-6 years (up to 10+ years in captivity)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
 ];

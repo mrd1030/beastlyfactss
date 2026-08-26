@@ -565,6 +565,8 @@ Torpor (temperature-induced dormancy) in response to cold temperatures is a vete
       { q: "What do hedgehogs eat?", a: "High-quality low-fat cat food forms the backbone of most hedgehog diets. Look for a named protein (chicken, turkey) as the first ingredient and fat content under 15%. Supplement with live insects 3 to 5 times per week - dubia roaches, small mealworms in moderation, and crickets are appropriate. Small amounts of cooked egg, cooked chicken, and safe fruits and vegetables like blueberries, apple, and cooked carrot can be offered as variety. Avoid grapes, raisins, avocado, citrus, onion, garlic, and any xylitol-containing foods." },
       { q: "What is Wobbly Hedgehog Syndrome?", a: "Wobbly Hedgehog Syndrome (WHS) is a progressive, incurable neurological disease caused by a genetic mutation that produces muscle wasting and paralysis. It begins in the hindquarters and moves forward over months to years, eventually affecting the entire body. An estimated 1 in 3 African pygmy hedgehogs is affected. There is no treatment - management focuses on quality of life with veterinary guidance on when euthanasia becomes the compassionate choice." },
       { q: "How long do hedgehogs live?", a: "African pygmy hedgehogs typically live 3 to 6 years in captivity. Some individuals reach 7 to 8 years, but this is the exception. Lifespan is significantly affected by genetics (WHS, cancer predisposition), diet (obesity is extremely common and life-shortening), and access to appropriate veterinary care. Annual check-ups with an exotic vet experienced in hedgehogs from age 2 onward are strongly recommended." },
+      { q: "Is a hedgehog related to a porcupine?", a: "No, not closely at all, despite both being spiky. Hedgehogs are small insectivores covered in modified hairs called spines; porcupines are rodents, often much larger, covered in genuinely different quills that detach easily and can lodge in a predator. The two just look superficially similar because both evolved a spiky defense independently." },
+      { q: "Is a hedgehog the same as a groundhog?", a: "No, they're not related and don't even look that similar once you know what to look for. A groundhog is a large, spineless burrowing rodent (a type of marmot) native to North America; a hedgehog is a small, spine-covered insectivore. The name similarity is the main source of confusion, not the animals themselves." },
     ],
   },
   {
@@ -641,6 +643,8 @@ Flystrike (myiasis) occurs in warm months when flies lay eggs near the rabbit's 
       { q: "Do rabbits need a companion?", a: "Yes, for most rabbits. Rabbits are highly social animals that live in groups in the wild, and a solitary rabbit is generally an anxious, understimulated animal. Bonded pairs groom each other, sleep together, and communicate in ways no amount of human interaction fully replicates. Same-sex pairs (particularly two spayed or neutered animals) work well when properly introduced. Single rabbits can still thrive with extensive human interaction, but a bonded pair is the gold standard." },
       { q: "What do rabbits eat?", a: "The foundation of a rabbit's diet is unlimited grass hay - Timothy, orchard grass, or meadow grass - which should make up 80 to 90% of total intake. Hay provides the indigestible fiber essential for healthy gut motility and wears down continuously growing teeth. Supplement with a daily cup of fresh leafy greens per 5 pounds of body weight: romaine lettuce, cilantro, parsley, and dandelion greens are excellent choices. High-quality pellets can be offered in small amounts. Avoid sugary treats and commercial treat sticks - these cause gut flora disruption and dental disease." },
       { q: "Can rabbits be litter trained?", a: "Yes, and they learn remarkably quickly. Rabbits naturally choose one or two corners for elimination. Place a litter box with paper-based litter (never clay or clumping cat litter) where the rabbit already goes. Hay placed at one end of the litter box encourages consistent use, as rabbits like to eat while they eliminate. Spaying or neutering significantly improves litter habits. Most rabbits are reliably litter trained within a few weeks of consistent reinforcement." },
+      { q: "Is a bunny the same as a rabbit?", a: "Yes, \"bunny\" is just an informal, affectionate name for the same animal, there's no distinction in species or care between the two words. \"Bunny\" is sometimes used more specifically for a young rabbit, but in everyday use they're interchangeable." },
+      { q: "What's the difference between a rabbit and a hare?", a: "They're different species, not just different names for the same animal. Hares are larger, longer-eared, and are born fully furred and mobile (precocial), while domestic rabbits are born hairless and helpless (altricial) and are a genuinely different, domesticated lineage. Hares are also essentially never kept as pets, they're wild animals with very different needs than a domestic rabbit." },
       { q: "How long do rabbits live?", a: "Domestic rabbits commonly live 8 to 12 years with good care, and some individuals reach 14 or more years. Life expectancy has improved dramatically as knowledge of proper diet (hay-based, not pellet-heavy), spacious housing, spay/neuter practices, and exotic veterinary care has become more widely available. The old paradigm of small hutches and pellet-only diets produced lifespans of 5 to 6 years; modern care standards produce much longer, healthier lives." },
       { q: "Do rabbits need veterinary care?", a: "Yes. Rabbits need annual wellness examinations with a veterinarian experienced in exotic small mammals. They are prey animals that instinctively hide illness - by the time a rabbit shows obvious signs of being sick, the problem is usually already serious. Spaying female rabbits before age 2 is critical, as uterine cancer affects the majority of unspayed females by age 4 to 5. Finding a rabbit-savvy exotic vet before an emergency arises is one of the most important things a new rabbit owner can do." },
     ],
@@ -712,6 +716,61 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
       { q: "Do sugar gliders need specialized veterinary care?", a: "Yes. Only exotic veterinarians with specific experience in sugar gliders can provide appropriate care. Annual wellness exams are mandatory - sugar gliders mask illness as an evolutionary defense, and by the time symptoms are visible, the animal is usually significantly compromised. Find a glider-experienced exotic vet before acquiring your gliders, not during an emergency." },
       { q: "Are sugar gliders good pets for beginners?", a: "Sugar gliders are not recommended for first-time exotic pet owners. They require a specialized and research-intensive diet, must be kept in same-species groups, are nocturnal and most active when most people are sleeping, need daily bonding time during their active hours, and require exotic veterinary care. They are rewarding for dedicated keepers who fully prepare, but frequently end up in rescue from unprepared owners." },
       { q: "How long do sugar gliders live?", a: "10 to 15 years in captivity with excellent care - appropriate companionship, correct calcium-phosphorus balanced diet, nocturnal scheduling respected, and annual exotic vet exams. Life expectancy drops sharply in isolated animals or those on poorly balanced diets. A sugar glider is a decade-plus commitment." },
+      { q: "Is a sugar glider the same as a flying squirrel?", a: "No, despite looking and gliding almost identically. Sugar gliders are marsupials; [flying squirrels](/guides/flying-squirrel/) are true rodents, an unrelated lineage that independently evolved the same wrist-to-ankle gliding membrane. Sugar gliders are also larger and, in the US, are non-native everywhere, while flying squirrels are native wildlife in much of the country and face more complicated, state-by-state legal restrictions as a result." },
+      { q: "How can I tell if my sugar glider is male or female?", a: "Males have a visible scent gland as a bald spot on top of the head (and often the chest), plus a pendulous pouch-like structure housing the testes, positioned forward of the vent. Females have a marsupial pouch on the belly, used to carry joeys, which is easy to spot once you know to look for it. Both traits are reliably visible in a healthy adult and don't require a vet to check." },
+    ],
+  },
+  {
+    id: "flying-squirrel",
+    name: "Flying Squirrel",
+    emoji: "🐿️",
+    difficulty: "Advanced",
+    petType: "Small Mammals",
+    image: "/assets/guides/flying-squirrel.jpg",
+    tagline: "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!",
+    funFact: "Flying squirrels are true rodents, not marsupials, so despite gliding the same way on the same kind of wrist-to-ankle membrane, they aren't closely related to sugar gliders at all. It's convergent evolution: two unrelated animals independently landing on the same solution.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Legal status varies significantly by US state since this is a native wildlife
+    // species in much of its range, unlike the non-native sugar glider - see
+    // research/flying-squirrel-research-brief.md. Do not state specific state
+    // legality here without a dedicated legal-guide research pass.
+    costs: {
+      setup: [
+        { item: "24x24x36 in aviary-style cage", low: 150, high: 300 },
+        { item: "Solid exercise wheel (glider/squirrel-safe)", low: 40, high: 70 },
+        { item: "Multiple sleeping pouches", low: 30, high: 50 },
+        { item: "Branches, ropes, and climbing structure", low: 25, high: 50 },
+      ],
+      annual: [
+        { item: "Varied nuts, seeds, fruit, vegetables, and protein", low: 360, high: 720 },
+        { item: "Calcium and multivitamin supplements", low: 20, high: 30 },
+        { item: "Annual exotic vet wellness check", low: 60, high: 120 },
+      ],
+    },
+    sections: {
+      housing: "A tall, multi-level aviary-style cage, 24x24x36 inches at an absolute minimum and larger where possible, suits this genuinely active, vertically-oriented species. Provide multiple sleeping pouches at different heights along with branches, ropes, and ladders for climbing and gliding practice. Normal indoor room temperature is fine; just avoid cold drafts. Flying squirrels are nocturnal and most active at dusk and through the night, so plan feeding and interaction around their schedule, not a daytime one.",
+      diet: "A varied omnivorous diet of nuts, seeds, fruit, vegetables, and a protein or insect component, with calcium and multivitamin supplementation to prevent the same calcium-phosphorus imbalance risk seen in sugar gliders. Avoid an all-seed or nut-heavy diet, both for calcium balance and because the fat content drives obesity in a captive animal that's naturally far more active than its cage allows.",
+      enrichment: "Deeply social, a solitary flying squirrel is a stressed one, and they should be kept in same-sex or bonded pairs and small groups, closely paralleling the sugar glider's social requirement. Hand-raised, captive-bred joeys imprint readily and often bond very closely with a consistent handler, commonly carried in a bonding pouch during the day so they acclimate to a keeper's scent ahead of active evening handling sessions. Wild-caught or late-socialized animals are considerably more skittish and not a realistic pet.",
+      health: "Metabolic bone disease from inadequate calcium relative to phosphorus is the same underlying risk seen in sugar gliders, driven by an unbalanced, seed-heavy diet without supplementation. Obesity from excess nuts or sugary fruit relative to a captive animal's activity level is also common. As with most small exotic mammals, illness is often hidden until it's advanced; a flying squirrel that's lethargic or off its food needs prompt exotic veterinary attention, not a wait-and-see approach.",
+      checklist: [
+        "24x24x36 in+ aviary-style cage",
+        "Multiple sleeping pouches at varied heights",
+        "Branches, ropes, and climbing structure",
+        "Solid exercise wheel (glider/squirrel-safe)",
+        "Varied nuts, seeds, fruit, vegetables, and protein",
+        "Calcium and multivitamin supplements",
+        "Same-sex or bonded pair/small group housing",
+        "Bonding pouch for daytime carrying",
+        "Nocturnal-schedule handling and feeding",
+        "Exotic veterinarian experienced with flying squirrels",
+      ],
+    },
+    faqs: [
+      { q: "Is it legal to own a pet flying squirrel?", a: "It depends heavily on your state, more so than for most pets on this site. Because the Southern flying squirrel is native wildlife across much of the eastern US, several states regulate it under wildlife and game laws rather than exotic-pet rules, a meaningfully different category than how most states treat the non-native sugar glider. Some states permit documented captive-bred animals while restricting wild-caught ones; others restrict native flying squirrels more broadly. Check your specific state's wildlife agency before acquiring one." },
+      { q: "What's the difference between a flying squirrel and a sugar glider?", a: "They're not related at all, despite looking and gliding almost identically. Flying squirrels are true rodents; [sugar gliders](/guides/sugar-glider/) are marsupials, an unrelated lineage that independently evolved the same wrist-to-ankle gliding membrane. Flying squirrels are smaller and lighter, and their legal status is more complicated in the US since they're native wildlife rather than an exotic species everywhere." },
+      { q: "Can a flying squirrel live alone?", a: "Not well. Flying squirrels are deeply social and a solitary animal is a genuinely stressed one, closely mirroring the same requirement in sugar gliders. Plan for a same-sex or bonded pair, or a small group, rather than a single animal." },
+      { q: "How long do flying squirrels live?", a: "5 to 6 years is typical in the wild; captive individuals with good care commonly reach 10 years and sometimes beyond, meaningfully longer than most people expect from an animal this small." },
+      { q: "Are flying squirrels good pets for beginners?", a: "No. Between the specialized calcium-balanced diet, mandatory social housing, a nocturnal schedule that demands evening commitment, and legal status that genuinely varies by state, this is an advanced exotic pet in the same tier as the sugar glider, not a casual first exotic." },
     ],
   },
 ];
