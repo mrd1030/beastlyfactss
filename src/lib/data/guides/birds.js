@@ -150,6 +150,7 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
       { q: "What is the best diet for a budgie?", a: "60 to 70% high-quality small parrot pellets (Harrison's Fine, Roudybush, or Lafeber's Nutriberries), supplemented with daily fresh vegetables. Seed mix should be no more than 10 to 20% of the diet, offered in foraging toys rather than open dishes. Millet spray is a high-fat treat to be limited to small amounts 2 to 3 times per week. A cuttlebone provides calcium and trace minerals. The most important dietary change for most budgies is reducing seed and adding pellets - this single step dramatically improves health outcomes." },
       { q: "Are budgies as easy as they are marketed?", a: "They are one of the simpler birds to keep, but are frequently sold as minimal-care starter pets when the reality is more involved. A properly cared-for budgie needs a cage larger than typical starter cages (18x18x24 inches minimum), daily fresh vegetables, regular out-of-cage time in a bird-proofed space, an avian vet relationship, and either a companion bird or several hours of human interaction per day. Within those parameters, they are genuinely manageable and rewarding for first-time bird owners." },
       { q: "Is a budgie the same thing as a parakeet?", a: "Yes, when Americans say \"parakeet\" they almost always mean the budgerigar (Melopsittacus undulatus) - the exact bird this guide covers. \"Budgie\" is just the informal, shortened name used more often in the UK and Australia. The confusion comes from \"parakeet\" technically being a much broader category: it describes any small parrot with a long, slender tail, which includes dozens of unrelated species (Ring-necked Parakeet, Monk Parakeet, and others). The budgerigar simply became so dominant in the American pet trade that \"parakeet\" narrowed to mean specifically this bird in everyday use." },
+      { q: "Parrotlet or budgie: which is the better first parrot?", a: "Both are excellent small first parrots, but they suit slightly different people. A budgie is generally the gentler, more forgiving choice: easier to socialize, far more likely to build a large talking vocabulary, and just as happy solo with plenty of attention or paired with another budgie. A parrotlet is smaller and quieter but has a noticeably stronger bite for its size and a bolder, more assertive personality that needs consistent handling to stay friendly rather than nippy. If you want the lower-drama, kid-friendlier option, get the budgie. If you want a bird with outsized personality and don't mind the socialization work, a parrotlet is a great alternative." },
     ],
   },
   {
@@ -199,6 +200,7 @@ Obesity from seed-heavy diets leads to fatty liver disease (hepatic lipidosis), 
       { q: "Can canaries be handled?", a: "Generally, no. Canaries are an observation bird that stresses easily with handling, and most are content simply being watched and listened to rather than physically interacted with." },
       { q: "What do canaries eat?", a: "A quality seed mix or pellet diet as a base, with daily fresh greens and vegetables to fill nutritional gaps, plus egg food during breeding and molting season for extra protein." },
       { q: "How long do canaries live?", a: "8 to 10 years is typical, with some canaries reaching 12 to 15 years under excellent care." },
+      { q: "Should I get a canary or a zebra finch?", a: "Both are quiet, low-handling birds that don't need one-on-one interaction the way a parrot does, but their social setups are opposite. A canary does best alone or in a same-sex pair, since males often fight over territory, and it's kept mainly to be heard: only males sing, and that song is the whole point. A zebra finch should never be kept alone and doesn't sing in that same elaborate, solo way, but a bonded pair or small flock is genuinely enjoyable to watch interact all day. Pick a canary if you want a soloist you can listen to. Pick a zebra finch if you like the idea of watching a little flock." },
     ],
   },
   {
@@ -474,6 +476,81 @@ Obesity from seed-heavy diets causes fatty liver disease in lovebirds just as in
     ],
   },
   {
+    id: "parrotlet",
+    name: "Parrotlet",
+    emoji: "🐦",
+    difficulty: "Intermediate",
+    petType: "Birds",
+    image: "/assets/guides/parrotlet.jpg",
+    tagline: "The smallest parrot you can keep, with a personality far too big for its tiny body!",
+    funFact: "Despite being smaller than a budgie, the Pacific parrotlet has a noticeably stronger bite and a personality so bold that keepers often describe it as a big parrot's attitude packed into a tiny bird. It genuinely does not seem to know how small it is.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "18x18x24 in cage (larger preferred)", low: 100, high: 280 },
+        { item: "Perches of varied diameters", low: 15, high: 25 },
+        { item: "Foraging and shreddable toys", low: 20, high: 40 },
+        { item: "Food and water dishes", low: 10, high: 20 },
+        { item: "Cuttlebone or mineral block", low: 5, high: 12 },
+        { item: "Nail clippers", low: 8, high: 12 },
+      ],
+      annual: [
+        { item: "Small parrot pellets", low: 70, high: 110 },
+        { item: "Fresh vegetables", low: 80, high: 130 },
+        { item: "Toys (rotating)", low: 40, high: 70 },
+        { item: "Annual avian vet check", low: 60, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `A minimum cage of 18x18x24 inches suits a single parrotlet, though wider and more horizontal space is always appreciated since, despite their tiny size, parrotlets are active and energetic. Bar spacing of 3/8 to 1/2 inch keeps a parrotlet from squeezing through or getting a head or foot caught, since these birds are proportionally stronger and more determined than their size suggests.
+
+Position the cage at eye level against a wall, away from the kitchen, drafts, and direct sunlight. Cooking fumes, especially from overheated non-stick cookware, are instantly lethal to a bird this small. Parrotlets are alert, watchful birds that feel most secure with a stable wall behind them and a clear view of the room.
+
+Provide several perches of varying diameters (natural wood is preferred over uniform dowels) along with a swing and a ladder or two. Parrotlets are surprisingly strong chewers for their size, so cage bars and accessories should be sturdy rather than the flimsiest budget option.
+
+A consistent 10 to 12 hours of covered darkness each night supports healthy sleep. If you plan to keep a bonded pair rather than a single bird, budget for a noticeably larger cage, since two parrotlets need meaningfully more space than the minimum for one.`,
+      diet: `A high-quality small parrot pellet should form the base of a parrotlet's diet, supplemented daily with finely chopped fresh vegetables and a small amount of fruit. Pellet-based nutrition heads off the fatty liver disease and vitamin deficiencies that come from a seed-heavy diet, a problem parrotlets are just as prone to as any larger parrot despite their size.
+
+Offer fresh vegetables daily: leafy greens, bell pepper, broccoli, carrot, and peas are all good choices. Introduce new foods gradually and expect some initial refusal, since parrotlets can be surprisingly stubborn about trying unfamiliar food.
+
+Seed mix can be offered in small amounts, ideally through a foraging toy rather than an open dish, and a few pieces of millet work well as a training reward. A cuttlebone or mineral block should be available at all times for calcium.
+
+Strictly avoid avocado, chocolate, caffeine, onion, garlic, alcohol, and xylitol, all of which are toxic to birds. Fresh water changed daily is essential.`,
+      enrichment: `Parrotlets have a genuinely outsized personality: bold, curious, and seemingly unaware that they are one of the smallest parrots kept as pets. That confidence needs an outlet, or it curdles into nippiness and territorial behavior.
+
+Daily out-of-cage time of at least an hour in a bird-safe, supervised space is important. Parrotlets are strong, fast fliers that enjoy exploring, so bird-proof the room thoroughly before letting one out: cover windows, secure other pets, and close off small gaps they could squeeze into.
+
+Consistent, gentle daily handling from a young age is what determines whether a parrotlet grows into an affectionate, easygoing bird or a defensive, bitey one. Unlike a zebra finch, a parrotlet actively bonds to a person and can learn to say a handful of words, but that bond has to be built and maintained through regular interaction, not assumed.
+
+If you keep a bonded pair, expect them to bond tightly to each other rather than to you, which is a perfectly good outcome if companionship rather than a hands-on pet is what you want. A single, well-socialized parrotlet is the better choice if a close human bond is the goal.`,
+      health: `Feather plucking and other feather-destructive behavior can develop from boredom, stress, or an under-stimulated environment, the same as in larger parrots. Rule out medical causes with an avian vet before assuming it is purely behavioral.
+
+Obesity from a seed-heavy, low-exercise diet is a common and preventable problem. A pelleted diet and daily out-of-cage activity are the two most effective safeguards. Respiratory infections show up as tail-bobbing with each breath, nasal discharge, and fluffed, lethargic posture, and need prompt veterinary attention since birds mask illness until it is fairly advanced.
+
+Parrotlets are otherwise considered a fairly hardy small parrot with no major breed-specific disease, but their small size and fearless personality make them vulnerable to household accidents: being stepped on, caught in a door or gap, or grabbed by a curious cat or dog. Supervision during out-of-cage time matters as much for physical safety as for behavior.
+
+Annual avian veterinary checkups are recommended. With good care, parrotlets are notably long-lived for such a small bird, commonly reaching 15 to 20 years and occasionally into their 20s or 30s, so budget for a companion animal that may be around for two decades.`,
+      checklist: [
+        "18x18x24 in cage minimum (larger preferred)",
+        "High-quality small parrot pellets",
+        "Fresh vegetables daily, seed as a treat/training reward",
+        "Cuttlebone or mineral block",
+        "Multiple perches, a swing, and chew-safe toys",
+        "Daily out-of-cage time in a bird-proofed space",
+        "Consistent gentle handling from a young age",
+        "Avian veterinarian contact",
+      ],
+    },
+    faqs: [
+      { q: "Is a parrotlet a good first parrot?", a: "It can be, but it is a different kind of beginner bird than a budgie or cockatiel. Parrotlets are small and relatively low-maintenance in terms of space and noise, but they are bold and strong-willed, and an under-socialized bird can become genuinely nippy. Someone willing to commit to consistent, gentle daily handling from early on will likely find a parrotlet rewarding. Someone wanting a more forgiving, hands-off-friendly first bird may be happier starting with a budgie or cockatiel." },
+      { q: "Can parrotlets talk?", a: "Some can, though they are not among the most talkative parrots. A parrotlet may learn to say a handful of words or phrases, especially a hand-raised bird bonded closely to one person, but they are not in the same league as a budgie or an African grey. This is still a real point of contrast with a zebra finch, which cannot be taught to talk at all." },
+      { q: "Should I get one parrotlet or a bonded pair?", a: "It depends on what you want from the relationship. A single, well-socialized parrotlet bonds intensely to its person and can become a genuinely affectionate companion. A bonded pair will bond mainly to each other rather than to you, which is a fine outcome if you want to watch and enjoy two birds together rather than form a close hands-on bond with one. Mixing the two goals rarely works well." },
+      { q: "How long do parrotlets live?", a: "Commonly 15 to 20 years in captivity with good care, and some individuals live into their 20s or even 30s. That is notably long for a bird this small; a zebra finch of similar size typically lives only 5 to 10 years. A parrotlet is a two-decade commitment, not a short-lived starter pet." },
+      { q: "Are parrotlets aggressive?", a: "Not inherently, but they are feisty and can become nippy or territorial without regular, gentle socialization. Their bite is noticeably stronger than a budgie's for their size, which is part of why they are usually recommended for adults or older children rather than young kids. Consistent, calm daily handling from early on is the main thing that keeps a parrotlet's boldness from turning into aggression." },
+      { q: "Parrotlet or budgie: which is the better first bird?", a: "A budgie is generally the more forgiving choice: gentler by temperament, more likely to learn an extensive vocabulary, cheaper to buy, and just as content solo with plenty of attention or paired up with another budgie. A parrotlet is smaller and quieter but has a noticeably stronger bite for its size and a bolder, more assertive personality that needs consistent handling to stay friendly rather than nippy. If you want the lower-drama, kid-friendlier option, get the budgie. If you want a bird with outsized personality and don't mind putting in the socialization work, a parrotlet is a great alternative." },
+    ],
+  },
+  {
     id: "quaker-parakeet",
     name: "Quaker Parakeet",
     emoji: "🦜",
@@ -558,6 +635,55 @@ Establish care with an avian vet, not a general small animal practice, and get a
       { q: "Why is my Quaker plucking its feathers?", a: "Quaker mutilation syndrome is a recognised problem in this species, going beyond ordinary plucking to self-inflicted skin damage, usually on the chest and shoulders. The causes overlap: boredom, hormonal frustration, poor diet, allergies and anxiety all contribute, and it can become a habit that outlives the original trigger. See an avian vet early rather than waiting, because the earlier it is addressed the better the outcome." },
       { q: "Should I give my Quaker a nest box?", a: "No, in almost all pet situations. Quakers are the only parrots that build their own nests and the drive is strong, but a nest box or any dark enclosed space encourages hormonal behaviour, territorial aggression and chronic egg laying in hens. Give them shreddable and weavable material to satisfy the building instinct out in the open instead, and keep enclosed hides out of the cage." },
       { q: "Are Quaker parakeets loud?", a: "Moderately, with a piercing contact call they use to locate their flock, which in a home means you. They are not in macaw or cockatoo territory, but they are louder than a budgie and they call persistently when they want company. In an apartment that is worth thinking about honestly. Regular out-of-cage time and enough to do reduces attention calling considerably, though it will not eliminate the natural morning and evening noise." },
+    ],
+  },
+  {
+    id: "zebra-finch",
+    name: "Zebra Finch",
+    emoji: "🐦",
+    difficulty: "Beginner",
+    petType: "Birds",
+    image: "/assets/guides/zebra-finch.jpg",
+    tagline: "The tiny, sociable finch that thrives in pairs and doesn't need or want to be handled!",
+    funFact: "Zebra finches are the most widely studied songbird in neuroscience. Only males sing, and they learn their song from a tutor as juveniles in a process remarkably similar to how human babies learn speech, which has made them one of science's best models for understanding vocal learning.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "Flight cage (24-30 in wide)", low: 60, high: 120 },
+        { item: "Perches of varied diameters", low: 15, high: 25 },
+        { item: "Shallow bath dish", low: 8, high: 15 },
+        { item: "Cuttlebone or mineral block", low: 5, high: 10 },
+      ],
+      annual: [
+        { item: "Seed mix or pellets", low: 50, high: 80 },
+        { item: "Fresh greens and vegetables", low: 50, high: 90 },
+        { item: "Egg food (molting/breeding season)", low: 15, high: 25 },
+        { item: "Annual avian vet check", low: 40, high: 70 },
+      ],
+    },
+    sections: {
+      housing: "A flight cage at least 24 inches wide is important, since zebra finches are active, fast-flying birds that use horizontal space far more than height - the same style of cage recommended for canaries. Bar spacing of 1/2 inch or less keeps a finch from squeezing through or getting a head caught. Provide several natural perches of different diameters positioned so the birds can fly the length of the cage rather than just hop between two close perches. Position away from drafts, kitchen fumes (instantly lethal to birds), and direct sun. Unlike every parrot on this site, zebra finches should never be kept as a single bird: they are a genuinely flock-oriented species, and a pair or small group bonds to each other, not to a human keeper, so plan on at least two finches from the start. Cover the cage at night for a consistent 10 to 12 hours of darkness.",
+      diet: "A quality finch seed mix (millet and canary seed) has traditionally been the base of a zebra finch's diet, though avian vets increasingly recommend building the diet around a pelleted food instead, since seed alone runs short on vitamins, minerals, and protein. Add fresh greens and vegetables daily - spinach, dandelion, and shredded carrot are all readily eaten. Egg food, a small amount of hard-boiled egg mixed with bread or a commercial egg food supplement, provides extra protein that matters most during molting and breeding. A cuttlebone or mineral block supplies calcium. Fresh water changed daily is essential.",
+      enrichment: "Zebra finches are not a hands-on pet the way a parrot is: most will never enjoy being held, cannot be taught to talk, and do not form the one-on-one bond with an owner that a budgie or lovebird can. That is not a lesser version of a parrot, it is a genuinely different kind of bird, and expecting parrot-style interaction from a finch leads to a disappointed owner and a stressed bird. Their real social life happens with each other: a bonded pair spends the day perched side by side, preening one another and calling back and forth in a near-constant, cheerful chatter that is nowhere near as loud or piercing as a parrot's screech. Give them the space and company to do that, and a zebra finch asks for very little else - a shallow bath dish for regular bathing and a stable, predictable routine matter more than toys. Some hand-raised individuals will tolerate a finger, but this is the exception, not something to expect or train for.",
+      health: "Scaly-face and scaly-leg mites (Knemidocoptes) cause crusty growths on the beak, legs, and around the eyes, and are treated with an avian-specific antiparasitic. Air sac mites (Sternostoma tracheacolum) live in the airway and cause clicking or squeaking breath sounds, tail-bobbing, and open-mouthed breathing in heavy infections, though mild cases can be symptomless. Respiratory infections and obesity from seed-heavy diets are common, and are the main reasons avian vets increasingly push finch keepers toward a pelleted diet. Hens can lay eggs even without a male present, and egg binding is an emergency - watch for a fluffed, straining, lethargic bird and seek care immediately. Annual avian veterinary checkups are recommended despite the zebra finch's reputation as a low-maintenance bird.",
+      checklist: [
+        "Flight cage at least 24 inches wide",
+        "At least one companion finch - never keep a single bird",
+        "Quality finch seed mix or pelleted diet",
+        "Fresh greens and vegetables daily",
+        "Egg food during molting/breeding season",
+        "Cuttlebone or mineral block",
+        "Shallow bath dish",
+        "Cage cover for nighttime darkness",
+        "Avian veterinarian contact",
+      ],
+    },
+    faqs: [
+      { q: "Can I keep just one zebra finch?", a: "It is not recommended. Zebra finches are a genuinely flock-oriented species, and unlike a budgie or lovebird, a solo finch does not reliably transfer that social need onto a human keeper. A single zebra finch left without company is effectively isolated. Keep at least a pair, and same-sex pairs or small groups work well if you are not looking to breed them." },
+      { q: "How can I tell if my zebra finch is male or female?", a: "Look at the face and chest. Males have a solid orange cheek patch, a fine black-and-white barred throat, a black breast band, chestnut flanks spotted with white, and a bright red bill. Females are a plain, uniform grey with none of those markings and have a paler orange bill. Young males don't develop full adult coloring until around 2 to 3 months of age, so very young birds can be harder to sex by eye." },
+      { q: "Do zebra finches talk or bond with their owner like a parrot?", a: "No. Zebra finches cannot be taught to talk and generally do not bond one-on-one with a person the way a parrot does. Most will not enjoy being handled even with patient socialization. They are also much quieter and less destructive than any parrot on this site: no screeching, no shredded furniture, just frequent soft chirping and chatter between cage mates. If you want a bird that talks or cuddles, this isn't that bird. If you want an easy, low-drama pet that's genuinely happy to just be watched and listened to, it's an excellent one." },
+      { q: "How long do zebra finches live?", a: "Typically 5 to 10 years in captivity with good care, occasionally longer. Wild zebra finches live only 2 to 3 years on average, so the jump in captivity comes from reliable food, shelter from predators, and veterinary care, the same pattern seen across most small pet birds." },
+      { q: "Is a zebra finch a good alternative to a canary, or are they basically the same?", a: "They are both small, low-handling finches, but their social needs are quite different. A canary is typically kept alone or in a same-sex pair and is prized for the male's song. A zebra finch should never be kept alone and doesn't sing in the same elaborate, seasonal way, but both sexes stay in near-constant vocal contact with their cage mates. If you want a bird you can keep solo and enjoy for its singing, go with a canary. If you like the idea of watching a bonded pair or small flock interact, a zebra finch is the better fit." },
     ],
   },
 ];

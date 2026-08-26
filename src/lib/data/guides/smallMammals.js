@@ -335,6 +335,7 @@ Because gerbils drink so little, dehydration is easy to miss. Check skin tenting
       { q: "Can gerbils live alone?", a: "They should not. Gerbils are social and a lone animal does poorly. The complication is that they are also territorial: unfamiliar adults often fight, and even an established pair can suddenly fall out, which keepers call declanning. Buy littermates where possible, introduce unfamiliar animals only with the split-cage method over one to two weeks, and separate permanently if a pair breaks down." },
       { q: "Why does my gerbil have a bald orange patch on its belly?", a: "That is the scent gland, and it is normal on both sexes, more prominent in males. Gerbils rub it on objects to mark territory. It is worth checking now and then, because scent gland tumours are one of the more common problems in older gerbils and are usually treatable when found early. Any lump, ulcer or bleeding there needs a vet." },
       { q: "Why is my gerbil having seizures?", a: "Some gerbil lines carry an inherited tendency to brief seizures, usually set off by stress, a sudden noise, or rough handling, and often in younger animals that grow out of it. An episode typically passes in under a minute. Keep the animal somewhere quiet, keep handling sessions short and gentle, and see a vet if seizures are frequent, long, or start in an adult that never had them before." },
+      { q: "Should I get a gerbil or a mouse?", a: "Odor is the most practical difference. Gerbils evolved in the Mongolian desert to conserve water and produce only a few drops of concentrated urine a day, making them one of the least smelly small pets you can keep. [Mice](/guides/mouse/), especially males, are near the opposite end of the spectrum: male mouse urine contains trimethylamine, a compound that gives it a distinctly strong smell, so a mouse cage needs more frequent cleaning than a gerbil tank of the same size. Gerbils are also generally the calmer, less easily startled of the two once tame, while mice are smaller, faster, and quicker to bolt. If odor and steadier handling matter most, lean gerbil; if you specifically want the smallest, quickest small mammal on this site, a mouse is that animal." },
     ],
   },
   {
@@ -489,6 +490,7 @@ Syrian hamsters are strictly solitary - housing two together, even littermates, 
       { q: "How big of a cage does a hamster actually need?", a: "At least 450 square inches of unbroken floor space, with 600 to 800+ square inches strongly preferred - dramatically more than the small starter cages sold in most pet stores. Bin cages (modified ventilated storage totes) and large glass tanks are popular precisely because they hit this size requirement more affordably than most commercial wire cages." },
       { q: "Why does my hamster stuff its cheeks so much?", a: "Cheek-pouching is completely normal hoarding behavior, not overeating. Wild hamsters cache food in burrows for later, and pet hamsters keep the same instinct, sometimes carrying so much food their head visibly doubles in size. A hamster whose food seems to disappear is usually just stashing it in the bedding somewhere, not eating everything at once." },
       { q: "How long do hamsters live?", a: "Syrian hamsters typically live 2 to 3 years, and dwarf species (Campbell's, Winter White, Roborovski) often live a similar or slightly shorter 1.5 to 3 years. This is a notably short lifespan compared to most small pets, which is worth knowing upfront - a hamster is a real commitment for its size, just a shorter one than a rabbit or guinea pig." },
+      { q: "Should I get a rat or a hamster?", a: "It mostly comes down to social needs and temperament. Syrian hamsters are solitary and must live alone as adults, so a hamster's entire social world is you, in short sessions once it wakes up for the evening. [Rats](/guides/rat/) are the opposite: they're deeply social, need to be kept in same-sex pairs or small groups rather than alone, and are widely considered the more consistently people-friendly and trainable of the two, learning tricks and responding to their own name the way a small dog might. A hamster suits someone who wants one low-maintenance animal that bonds with a single owner; a rat suits someone willing to house at least two animals who wants more interactive, dog-like engagement in return." },
     ],
   },
   {
@@ -772,6 +774,152 @@ Respiratory infections from drafts, cold temperatures, or stress are common. Sug
       { q: "Can a flying squirrel live alone?", a: "Not well. Flying squirrels are deeply social and a solitary animal is a genuinely stressed one, closely mirroring the same requirement in sugar gliders. Plan for a same-sex or bonded pair, or a small group, rather than a single animal." },
       { q: "How long do flying squirrels live?", a: "3 to 6 years is typical in the wild, sources vary within that range; captive individuals with good care commonly average around 10 years, and well-documented pets have lived past 19, meaningfully longer than most people expect from an animal this small." },
       { q: "Are flying squirrels good pets for beginners?", a: "No. Between the specialized calcium-balanced diet, mandatory social housing, a nocturnal schedule that demands evening commitment, and legal status that genuinely varies by state, this is an advanced exotic pet in the same tier as the sugar glider, not a casual first exotic." },
+    ],
+  },
+  {
+    id: "rat",
+    name: "Fancy Rat",
+    emoji: "🐀",
+    difficulty: "Beginner",
+    petType: "Small Mammals",
+    image: "/assets/guides/rat.jpg",
+    tagline: "The whip-smart, deeply social rodent that will learn its own name!",
+    funFact: "Rats can be trained to respond to their own name, give a high-five, and fetch a ball using the same reward-based methods used on dogs. That knack for learning is also why lab rats have been the standard animal for maze and memory research for more than a century.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Priced for a pair, which is the minimum this species should be kept in.
+    costs: {
+      setup: [
+        { item: "24x24x36 in multi-level cage", low: 130, high: 260 },
+        { item: "12-14 in solid exercise wheel", low: 25, high: 45 },
+        { item: "Paper-based bedding", low: 15, high: 25 },
+        { item: "Hideouts and tunnels", low: 15, high: 30 },
+        { item: "Water bottle and food dishes", low: 10, high: 20 },
+        { item: "Chew toys and enrichment", low: 15, high: 30 },
+        { item: "Digital thermometer", low: 10, high: 15 },
+      ],
+      annual: [
+        { item: "Rat-specific pellets or lab blocks", low: 40, high: 70 },
+        { item: "Fresh vegetables and occasional protein", low: 50, high: 90 },
+        { item: "Bedding (ongoing)", low: 60, high: 100 },
+        { item: "Chew toys and enrichment refresh", low: 15, high: 25 },
+        { item: "Annual exotic vet wellness check", low: 60, high: 110 },
+      ],
+    },
+    sections: {
+      housing: `Give rats a multi-level cage with solid, ramped shelves rather than wire mesh flooring, which damages their feet over time. A commonly cited minimum is 16x28x30 inches with multiple levels for a rat, and because rats should never be housed alone, a pair or small group needs more than that bare minimum, not less. Bar spacing matters too: keep it to 1/2 inch or less, since rats are strong climbers and will test any gap they can reach.
+
+Line the cage with recycled paper bedding rather than wood shavings. Cedar and pine both contain aromatic oils that irritate a rat's sensitive respiratory tract, and ammonia buildup from infrequent cleaning is one of the biggest drivers of the chronic respiratory disease that shortens so many pet rats' lives. Clean thoroughly with a pet-safe disinfectant weekly, and change bedding at least twice a week.
+
+A solid-surface exercise wheel at least 12 to 14 inches in diameter, smooth rather than perforated inside, gives rats a safe outlet for their considerable energy without trapping toes or tails. Keep the room roughly 65 to 80 degrees F without big swings.
+
+Rats are highly social and should be kept in same-sex pairs or small groups from a young age, ideally littermates. A lone rat, even one that gets plenty of daily human attention, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically rehome rats in pairs or trios for exactly this reason.`,
+      diet: `Feed a rat-specific pelleted diet or lab block as the base of the diet rather than a loose seed mix, which lets rats pick out the fattiest pieces and skip the balanced parts, the same selective-eating problem seen in several other small pets. Supplement daily with fresh vegetables, and offer fruit more sparingly since rats are prone to obesity on a diet with too many calorie-dense extras.
+
+Rats are true omnivores, and unlike the strict herbivores on this list such as chinchillas and guinea pigs, they can also have small amounts of lean cooked protein like chicken or egg a couple of times a week. Avoid chocolate, caffeine, and carbonated drinks, and keep sugary treats occasional rather than routine, since obesity and some of the tumors covered below are both linked to calorie-dense diets.
+
+Fresh water in a properly positioned sipper bottle should always be available, checked daily to make sure it's actually flowing. Rats are enthusiastic, food-motivated animals, and scatter-feeding a portion of the daily pellets so they have to forage for it is a simple way to add mental stimulation to a routine meal.`,
+      enrichment: `Rats are widely considered among the most intelligent common small pets, and they show it: positive-reinforcement training gets them responding to their own name, giving a high-five, fetching, and running obstacle courses, and they've been the classic model animal for maze and spatial-memory research for exactly this reason. A rat that only gets a cage and a wheel is an under-stimulated rat.
+
+Rotate tunnels, climbing ropes, chew blocks, and cardboard boxes with holes cut in them regularly, and use foraging toys or scatter-feeding to give a rat something to work for. Daily supervised time outside the cage, in a rat-proofed space free of chewable cords and small gaps, is valuable both for exercise and for the bond between rat and keeper.
+
+Rats that are handled gently and often from a young age typically become confident, easily-handled pets that seek out interaction, a real contrast with their skittish wild relatives. Because they're deeply social, the strongest enrichment is often another rat: a bonded pair grooms, play-fights, and sleeps in a pile together in a way no amount of solo human attention fully replaces.`,
+      health: `Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious health problem in pet rats and a big part of why dirty or poorly ventilated cages shorten lives: rats with chronic respiratory disease rarely live past 2 years. Signs include sneezing, labored breathing, and a rough coat. There's no cure, but clean housing and prompt veterinary care for flare-ups make a real difference. Any rat that's wheezing, sneezing repeatedly, or breathing with visible effort needs a vet.
+
+Mammary tumors are the most frequently seen tumor in rats and affect both sexes, not just unspayed females, because rat mammary tissue extends widely across the body from chin to tail. Most are benign fibroadenomas rather than cancer, and surgical removal has a good success rate when caught early, so it's worth palpating along the belly and chest for new lumps during regular handling.
+
+Older rats are also prone to pituitary tumors (more common in females on high-calorie diets, causing head tilt and depression), chronic kidney disease, and hind-limb weakness from age-related spinal degeneration. None of these have a cure, which is part of why an experienced exotic vet and prompt attention to new symptoms matter so much for a pet with a naturally short lifespan.`,
+      checklist: [
+        "16x28x30 in minimum multi-level cage",
+        "At least two rats, ideally same-sex littermates",
+        "Bar spacing 1/2 in or less",
+        "Solid-surface exercise wheel, 12 to 14 in",
+        "Paper-based bedding (never cedar or pine)",
+        "Rat-specific pellets or lab blocks",
+        "Fresh vegetables daily",
+        "Hideouts, tunnels, and chew toys",
+        "Water bottle, checked daily",
+        "Exotic veterinarian experienced with rats"
+      ],
+    },
+    faqs: [
+      { q: "Are pet rats the same as wild rats?", a: "Genetically yes, but behaviorally and in every practical sense, no. Fancy rats descend from wild brown rats bred specifically for temperament and color starting in Victorian England, most famously by Jack Black, Queen Victoria's official rat catcher, who sold his tamer, unusually colored rats as pets to the wealthy in the 1800s. That selective breeding produced a genuinely different animal: calm, curious, and eager to interact with people, in contrast to the wild rats most people picture. The stigma persists mostly because the two look similar at a glance, not because fancy rats behave anything like their wild relatives." },
+      { q: "Can rats live alone?", a: "No. Rats are deeply social and should be kept in same-sex pairs or small groups, ideally littermates introduced from a young age. A lone rat, even one that gets hours of daily attention from its owner, is at real risk of stress-related depression and abnormal behavior that human company alone doesn't fully prevent. Rescues typically place rats in pairs or trios for exactly this reason, and it's worth planning cage space for at least two from the start." },
+      { q: "How smart are rats, really?", a: "Genuinely very smart, among the most trainable small pets kept as companions. Using the same reward-based methods used on dogs, rats can learn to respond to their own name, give a high-five, fetch, and run obstacle courses, and they can learn and remember new tasks over time. That trainability isn't just pet-owner folklore either: rats have been the standard animal for maze and spatial-memory research in psychology and neuroscience for more than a century, precisely because they're so good at learning and mentally mapping a space rather than just memorizing a sequence of turns." },
+      { q: "How long do rats live?", a: "Pet fancy rats typically live 2 to 3 years, occasionally reaching 4, which is short for how much personality and trainability they pack in relative to their size. Chronic respiratory disease is one of the biggest factors that shortens rat lifespans in practice, since rats with the condition rarely live past 2 years, which makes clean housing and prompt vet care for any breathing symptoms genuinely lifespan-relevant rather than just a comfort issue." },
+      { q: "What health problems are common in rats?", a: "Chronic respiratory disease, caused by the bacterium Mycoplasma pulmonis, is the most common serious problem and is aggravated by ammonia buildup from infrequent cage cleaning. Mammary tumors are also very common in rats and, unlike most mammals, occur in both sexes because rat mammary tissue extends widely under the skin from chin to tail. The good news is that these tumors are usually benign fibroadenomas rather than cancer, and surgical removal has a good success rate when they're caught early through regular handling and palpation." },
+      { q: "What's the difference between a rat and a mouse?", a: "They're closely related rodents but different species, and the practical differences matter for choosing between them. [Mice](/guides/mouse/) are smaller, faster, and generally more skittish, and most keepers find them harder to hand-tame to the confident, dog-like level many rats reach. Adult male mice are also prone to fighting each other in a way male rats generally aren't, which makes group housing more complicated for mice than for rats, and mice are noticeably smellier, particularly males." },
+    ],
+  },
+  {
+    id: "mouse",
+    name: "Fancy Mouse",
+    emoji: "🐭",
+    difficulty: "Beginner",
+    petType: "Small Mammals",
+    image: "/assets/guides/mouse.jpg",
+    tagline: "The pocket-sized speedster that's cheap to keep but easy to underestimate!",
+    funFact: "A male mouse's strong smell comes down to one specific chemical, trimethylamine, that shows up heavily in his urine and barely at all in a female's or a rat's. It's why an all-male mouse cage needs cleaning far more often than the equivalent rat setup.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Priced for a small group, since mice should not be kept alone.
+    costs: {
+      setup: [
+        { item: "18x18x10 in cage for 2-3 mice", low: 35, high: 70 },
+        { item: "Smooth exercise wheel (mouse-sized)", low: 12, high: 20 },
+        { item: "Paper-based bedding", low: 12, high: 20 },
+        { item: "Hideouts and tunnels", low: 10, high: 20 },
+        { item: "Water bottle and food dishes", low: 8, high: 15 },
+        { item: "Chew toys and enrichment", low: 10, high: 20 },
+        { item: "Digital thermometer", low: 10, high: 15 },
+      ],
+      annual: [
+        { item: "Mouse-specific pellets or lab blocks", low: 20, high: 35 },
+        { item: "Fresh vegetables (small amounts)", low: 20, high: 35 },
+        { item: "Bedding (ongoing)", low: 40, high: 70 },
+        { item: "Chew toys and enrichment refresh", low: 10, high: 18 },
+        { item: "Annual exotic vet wellness check", low: 40, high: 80 },
+      ],
+    },
+    sections: {
+      housing: `A commonly cited minimum for a small group of 2 to 3 mice is an 18x18x10 inch cage, and because mice are prolific escape artists, wire mesh spacing needs to be under half an inch, tighter than almost any other small pet on this site. A solid floor is essential; wire flooring injures small feet just as it does in rats and hamsters.
+
+Use paper-based bedding rather than wood shavings, for the same respiratory reasons as every other small rodent here, and never use a wood cage, since urine soaks into the wood and the resulting ammonia buildup drives respiratory disease. A smooth, non-perforated exercise wheel gives mice a safe way to burn off energy, and most take to it enthusiastically.
+
+Keep the room in the same general range as rats and hamsters, roughly 64 to 79 degrees F, away from damp and drafts, which is specifically flagged as a driver of respiratory infection in mice. Because male mice mark territory heavily and their urine carries a distinctly strong odor, plan on more frequent spot-cleaning for an all-male or mixed cage than you would for the equivalent rat setup.`,
+      diet: `A mouse-specific pelleted diet or lab block should form the base of the diet, alongside small daily portions of fresh vegetables. Mice are omnivores in the wild, eating seeds, plant matter, insects, and even carrion opportunistically, and a pelleted diet formulated specifically for mice covers that range of needs more reliably than a seed mix, which invites the same selective, fatty-piece-picking behavior seen in rats and hamsters.
+
+Mice also practice coprophagy, eating some of their own droppings, roughly six times a day. Like in [degus](/guides/degu/), this is normal, necessary behavior that lets them extract nutrients a single pass through the gut misses, not something to try to prevent.
+
+Keep treats and fruit occasional rather than routine, and always provide fresh water via a properly positioned sipper bottle, checked daily since a clogged spout is easy to miss on an animal that drinks so little at a time.`,
+      enrichment: `Mice are naturally social, but sex matters more here than it does for rats. Females of most lines get along well in same-sex groups and are the more straightforward choice if you want a group. Intact adult males frequently fight, especially if they're unfamiliar with each other or can smell females nearby, so male mice are usually kept singly, paired with a desexed female, or in a stable group of littermates established before weaning and never added to afterward. Whatever the arrangement, mice shouldn't be housed completely alone unless a vet has specifically advised it for an individual animal's welfare.
+
+Provide tunnels, climbing structures, chew blocks, and a smooth exercise wheel, and rotate items regularly since mice investigate novelty quickly. Nesting material that mice can shred and arrange themselves is both enrichment and a genuine behavioral need.
+
+Mice are quicker and more easily startled than rats, and most individuals don't tame down to the same degree of confident handling. Short, frequent, gentle handling sessions from a young age produce the calmest results, but expect a mouse to stay a faster-moving, more reactive pet than a rat even with consistent socialization.`,
+      health: `Respiratory infection is common in mice, worsened by damp conditions, drafts, and dusty bedding, the same Mycoplasma pulmonis risk that affects rats. Watch for labored or noisy breathing (affected mice can make an audible chattering sound), squinting, and discharge from the eyes or nose, and see a vet promptly since small animals decline quickly.
+
+Mice have continuously growing incisors, and overgrown teeth cause difficulty eating, weight loss, and mouth trauma if there isn't enough hard material to gnaw on. Regular access to wooden chew blocks is the main prevention, alongside a vet check if you notice dropped food or reluctance to eat.
+
+Tumors, including mammary tumors, become more common as mice age, similar to rats, though mouse mammary tumors are more often adenocarcinomas, a form more likely to be malignant than the typically benign fibroadenomas common in rats. Any new lump is worth a veterinary opinion rather than a wait-and-see approach, and unspayed females on breeding lines carry a higher mammary tumor risk specifically.`,
+      checklist: [
+        "18x18x10 in minimum cage for 2 to 3 mice",
+        "Compatible same-sex group, or a solo/paired male if needed",
+        "Bar spacing under 1/2 in",
+        "Smooth, non-perforated exercise wheel",
+        "Paper-based bedding (never wood shavings or a wood cage)",
+        "Mouse-specific pellets or lab blocks",
+        "Fresh vegetables in small daily amounts",
+        "Wooden chew blocks for tooth wear",
+        "Frequent spot-cleaning for odor control",
+        "Exotic veterinarian experienced with mice"
+      ],
+    },
+    faqs: [
+      { q: "Can mice be kept alone?", a: "Not by default. Mice are social animals and solitary housing is generally considered stressful for them, recommended only when a vet has specifically advised it for an individual animal, usually because of unmanageable aggression. Most mice should be kept in a compatible group of their own species rather than alone." },
+      { q: "Do male and female mice need to be housed differently?", a: "Yes, this is one of the bigger practical differences between the sexes in mice. Females of most lines get along well in same-sex groups and are the easier choice if you want more than one mouse without much fuss. Intact adult males are much more prone to fighting, especially with unfamiliar males or when they can smell females nearby, so males are usually kept singly, paired with a desexed female, or in a stable littermate group that was established before weaning and never has animals added or removed afterward." },
+      { q: "Why do mice smell more than other small pets?", a: "It comes down to a specific chemical. Male mouse urine contains trimethylamine, a compound that produces a notably pungent smell and is barely present in females and essentially absent in rat urine. Males also scent-mark and urinate considerably more than females as a territorial behavior, so an all-male or mixed mouse cage needs more frequent spot-cleaning than the equivalent rat or gerbil setup to stay on top of the odor." },
+      { q: "How long do mice live?", a: "Pet fancy mice typically live 1.5 to 2 years, genuinely shorter than the 2 to 3 years typical of pet rats despite the two being closely related. It's one of the shortest lifespans among the small mammals on this site, so it's worth going in expecting a briefer companionship than a rat, hamster, or gerbil would offer." },
+      { q: "Are mice as easy to tame as rats?", a: "Generally, no. Mice are smaller, faster, and more easily startled than rats, and most individuals don't reach the same level of confident, seek-out-interaction handling that a well-socialized rat does, even with frequent, gentle handling from a young age. That doesn't make them bad pets, just a faster-moving, more reactive one that rewards patience rather than one you can expect to relax into a lap." },
+      { q: "What's the difference between a mouse and a rat?", a: "They're closely related rodents but different species with meaningfully different care needs. [Rats](/guides/rat/) are larger, generally calmer, and more consistently hand-tameable, and are widely considered one of the more trainable small pets available. Mice are smaller, faster, and more easily startled, and male mice specifically are more prone to fighting each other and to producing a stronger odor than male rats. If you want the more interactive, dog-like companion, most keepers find rats the easier match; if you want the smallest, quickest small mammal on this site and don't mind a shorter lifespan and stronger smell, a mouse is that animal." },
     ],
   },
 ];

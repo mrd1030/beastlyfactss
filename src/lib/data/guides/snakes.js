@@ -136,6 +136,7 @@ Annual veterinary wellness checks are strongly recommended, particularly for adu
       { q: "What's the difference between a boa and a python?", a: "They're different families entirely, despite both being large, non-venomous constrictors that are frequently confused for each other. The clearest distinction: boas give live birth (the babies emerge fully formed), while pythons lay eggs and often coil around the clutch to incubate them. Geographically, boas are native to the Americas (plus Madagascar and a few Pacific islands), while pythons are native to Africa, Asia, and Australia - the two families never naturally overlapped until the exotic pet trade and reptile keeping brought them together. Ball Pythons and Burmese Pythons are pythons; the Boa Constrictor and Red-Tailed Boa are boas." },
       { q: "Are boa constrictors good pets for beginners?", a: "Not usually a first snake. Boas are powerful, heavy-bodied animals that need a 6x3x3 ft or larger enclosure as adults and can live 20 to 30+ years, a real step up from the ball pythons, corn snakes, and kingsnakes this site generally recommends starting with. They're a great second snake for someone who already has husbandry basics down." },
       { q: "Is a boa constrictor a python?", a: "No. Boas and pythons are entirely separate families that both happen to be large, non-venomous constrictors, which is exactly why the two get confused. A quick tell: boas give live birth, while pythons lay eggs. [Ball pythons](/guides/ball-python/), the site's other common large constrictor, are true pythons, not boas." },
+      { q: "Is a Boa constrictor related to the rosy boa?", a: "Yes - both are true boas in the family Boidae and both give live birth, but the resemblance mostly ends there. A Boa constrictor can reach 8 to 10+ feet, while the [rosy boa](/guides/rosy-boa/), native to the desert Southwest US and Baja California, rarely passes 3 feet and is one of the most docile, low-maintenance boas in the hobby. Anyone drawn to the boa temperament but not to housing an 8-foot snake should take a look at the rosy boa instead." },
     ],
   },
   {
@@ -274,6 +275,76 @@ Escape prevention is not a health issue per se, but an escaped corn snake is at 
     ],
   },
   {
+    id: "garter-snake",
+    name: "Garter Snake",
+    emoji: "🐍",
+    difficulty: "Beginner",
+    petType: "Snakes",
+    image: "/assets/guides/garter-snake.jpg",
+    tagline: "The backyard classic that eats fish and worms instead of mice!",
+    funFact: "Garter snakes give birth to live young instead of laying eggs, and a single litter can range from a handful of babies to as many as 80!",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "36x18x18 in or 40-gallon breeder enclosure", low: 120, high: 220 },
+        { item: "Under-tank heater + thermostat", low: 35, high: 60 },
+        { item: "Warm, cool, and humid hides", low: 15, high: 30 },
+        { item: "Large swimmable water dish", low: 15, high: 25 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Aspen or cypress mulch substrate", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Frozen/thawed fish, earthworms, and mice", low: 70, high: 140 },
+        { item: "Thiamine (B1) and calcium supplements", low: 10, high: 20 },
+        { item: "Substrate replacement", low: 25, high: 40 },
+        { item: "Electricity (heat)", low: 40, high: 70 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `A 36x18x18 in enclosure or 40-gallon breeder tank suits a single adult garter snake; a mated pair does well in a 55-gallon equivalent. Garter snakes are active and inquisitive, and unlike most colubrids on this site, they're semi-aquatic - a water dish large enough to fully submerge in isn't optional decor, it's a core part of their natural behavior.
+
+Provide a warm end with a surface temperature of 85 to 88 degrees F (basking air up to 90 degrees F) via an under-tank heater on a thermostat, and a cool end at 70 to 75 degrees F. Ambient humidity of 30 to 60% is appropriate, with a humid hide (damp sphagnum moss) available for shedding support. UVB isn't strictly required but is increasingly recommended by keepers and vets for overall health - a low-output 5% T8 or 2 to 5% T5 tube is sufficient.
+
+A secure, front-opening or lockable-lid enclosure matters; garter snakes are capable escape artists. Provide warm, cool, and humid hides at minimum, plus branches and cover - garter snakes are surprisingly active and will use all the enrichment you give them.`,
+      diet: `This is the single most important thing to get right before bringing home a garter snake, and it's genuinely different from every other snake on this site: garter snakes are semi-aquatic hunters that specialize in fish, earthworms, amphibians, slugs, and snails in the wild, not rodents. Many individual garter snakes will refuse plain mice entirely, their whole lives, no matter how they're offered.
+
+A varied captive diet of frozen/thawed earthworms, appropriately sized frozen/thawed fish (tilapia, salmon, or silversides - avoid feeding exclusively on goldfish or minnows), and frozen/thawed pinky mice covers their nutritional needs well. Feed juveniles every other day and adults roughly once a week if eating mice, or twice a week if eating mostly earthworms.
+
+Watch the fish-heavy diet carefully: many common feeder fish contain thiaminase, an enzyme that breaks down vitamin B1, and a diet that leans too heavily on fish long-term can cause a serious thiamine deficiency. Supplement with vitamin B1 and calcium a couple of times a month if fish or earthworms make up a significant part of the diet, and never feed live prey - it isn't necessary and can injure the snake.`,
+      enrichment: `Garter snakes are diurnal, alert, and among the most consistently active snakes commonly kept as pets - they explore, forage, and swim far more than a typical sedentary colubrid. A water feature big enough to actually swim in, not just soak in, is genuinely enriching for this species and reflects their wild semi-aquatic habits.
+
+Provide varied hides, branches for climbing, and a naturalistic substrate they can push through. Hiding earthworms in leaf litter or substrate for the snake to hunt out taps into natural foraging behavior. Many garter snakes become confident, food-motivated, and easy to observe once settled.
+
+Handle regularly once acclimated. New or stressed garter snakes may musk (release a foul-smelling secretion) or strike defensively, but this diminishes quickly with calm, consistent handling. Most become quite tolerant of gentle handling within weeks.`,
+      health: `A thiamine (vitamin B1) deficiency from an unsupplemented, fish-heavy diet is a genuine and somewhat unique health risk for garter snakes compared to other pet snakes. Signs include lethargy, loss of appetite, and neurological symptoms in advanced cases. Regular B1 supplementation when feeding fish or earthworms prevents this entirely.
+
+Retained shed from low humidity and respiratory infections from cold, damp conditions are the same general risks seen across small colubrids - a moist hide and correct temperatures prevent most cases. Mouth rot (infectious stomatitis) can also occur, usually linked to enclosure hygiene or minor injuries, and requires veterinary treatment if it develops.
+
+Mites and general parasite loads are worth checking for in any new garter snake, particularly one of unknown or wild-caught origin. Annual wellness checks with a reptile-experienced vet, including a fecal exam, are a reasonable baseline even for animals that appear healthy.`,
+      checklist: [
+        "36x18x18 in or 40-gallon breeder enclosure",
+        "Under-tank heater + thermostat (85 to 88 degrees F warm end)",
+        "Warm, cool, and humid hides",
+        "Large swimmable water dish",
+        "Digital thermometer and hygrometer",
+        "Aspen or cypress mulch substrate",
+        "Frozen/thawed earthworms, fish, and mice",
+        "Thiamine (B1) and calcium supplements",
+        "Feeding tongs",
+        "Reptile-savvy vet contact",
+      ],
+    },
+    faqs: [
+      { q: "What do garter snakes eat?", a: "Fish, earthworms, amphibians, slugs, and snails in the wild - not primarily rodents like most pet snakes. Many garter snakes refuse plain mice entirely. A varied captive diet of frozen/thawed earthworms, fish (tilapia, salmon, or silversides), and pinky mice works well. If fish make up a large part of the diet, supplement with vitamin B1, since many feeder fish contain thiaminase, which can cause a serious deficiency over time." },
+      { q: "Are garter snakes venomous?", a: "Technically yes, in the same limited sense as the hognose snake: they have a mild rear-fanged venom from a Duvernoy's gland that helps subdue small prey like fish and amphibians. It's harmless to humans in essentially all cases - garter snake bites cause minimal irritation at most and are not medically significant." },
+      { q: "How big do garter snakes get?", a: "Most adults reach 18 to 26 inches, though large females occasionally exceed 3.5 feet. They're one of the smaller, more manageable snakes commonly kept as pets, comparable in size to a milk snake or California kingsnake." },
+      { q: "Do garter snakes lay eggs?", a: "No - garter snakes are live-bearing (ovoviviparous), giving birth to fully formed young rather than laying eggs. This is different from every other snake on this site, all of which are egg-layers. A single litter can range from just a few babies to as many as 80." },
+      { q: "Are garter snakes good pets for beginners?", a: "Yes, with one real catch: diet. They're small, inexpensive, hardy, and among the most common snakes found in backyards across the US, which makes them approachable. But new keepers who assume every snake eats frozen mice are often caught off guard when their garter snake refuses them - budget for sourcing earthworms and appropriate feeder fish instead." },
+      { q: "How does a garter snake compare to a hognose snake?", a: "They share more than you'd expect for two very different-looking snakes: both are rear-fanged with a mild Duvernoy's-gland venom that's harmless to people, and both eat prey that trips up new keepers expecting a standard mouse-eater. The [hognose snake](/guides/hognose-snake/) specializes in toads and can be a stubborn feeder as a hatchling; the garter snake is semi-aquatic and often refuses mice outright in favor of fish, worms, and amphibians for life. Neither is a reliable mouse-only snake, so plan a different feeding routine than you would for a corn snake or ball python." },
+    ],
+  },
+  {
     id: "hognose-snake",
     name: "Hognose Snake",
     emoji: "🐍",
@@ -339,6 +410,7 @@ Respiratory infections can result from temperatures that are too low or a substr
       { q: "How often should I feed my hognose snake?", a: "Feed juvenile hognose snakes every 5 to 7 days and adults every 7 to 14 days. Always offer frozen and thawed prey - live rodents can injure snakes. Prey size should not exceed the widest part of the snake's body. Western hognose snakes can be finicky eaters; scenting prey with toad or fish can encourage reluctant feeders." },
       { q: "Do hognose snakes need a humid hide?", a: "Yes. All hognose snakes benefit from a humid hide - a box packed with damp sphagnum moss - especially during pre-shed. Western hognose snakes prefer drier ambient conditions (40 to 60% humidity) than many other colubrids, but a moist microhabitat for shedding is still essential. Without it, retained shed on the eye caps is a common and preventable problem." },
       { q: "Are hognose snakes good pets for beginners?", a: "Mostly yes, with one real caveat: feeding. Hatchlings can be notoriously picky eaters since they specialize in toads in the wild, which takes some patience to work through. Once established, they're a manageable size, dramatically entertaining (the death-feigning display alone is worth it), and effectively harmless despite the mild rear-fanged venom." },
+      { q: "Are hognose snakes related to garter snakes?", a: "Not closely - they're different genera entirely - but the two get mentioned together for good reason: both are rear-fanged with a mild Duvernoy's-gland venom that's harmless to people, and both specialize in prey that trips up keepers expecting a standard mouse-eater. Where a hognose snake digs up toads, the [garter snake](/guides/garter-snake/) hunts fish, worms, and amphibians, and many garter snakes refuse plain mice for life. If a hognose's toad-specialist feeding habits appeal to you, a garter snake's fish-and-worm diet is a similar kind of commitment." },
     ],
   },
   {
@@ -406,6 +478,75 @@ Their secretive nature means illness can be hidden until advanced. Monitor feedi
       { q: "Are milk snakes good beginner snakes?", a: "Yes - once established, they are strong feeders and straightforward to care for. Juvenile milk snakes can be nippy initially, but this diminishes rapidly with consistent calm handling. Their smaller size (compared to ball pythons or corn snakes) makes them easy to manage. Ensure a secure, lockable lid - milk snakes are persistent escape artists that will test every seam." },
       { q: "How long do milk snakes live?", a: "12 to 20 years in captivity with appropriate care - correct temperatures, consistent prey, humidity appropriate for the subspecies, and annual wellness checks with a reptile-savvy veterinarian. A milk snake acquired as a hatchling is a long-term commitment." },
       { q: "Is a milk snake the same as a king snake?", a: "Closely related, not the same. Milk snakes (Lampropeltis triangulum) are actually a species within the kingsnake genus, Lampropeltis, so every milk snake is technically a kingsnake, but not every kingsnake is a milk snake. The California kingsnake, for example, is a separate species in the same genus with different patterning, usually banded or striped in black and white, rather than the red-black-yellow banding milk snakes are known for. Care requirements are nearly identical between the two." },
+    ],
+  },
+  {
+    id: "rosy-boa",
+    name: "Rosy Boa",
+    emoji: "🐍",
+    difficulty: "Beginner",
+    petType: "Snakes",
+    image: "/assets/guides/rosy-boa.jpg",
+    tagline: "The pint-sized desert boa that's calmer than snakes twice its size!",
+    funFact: "Rosy boas rarely top 3 feet - a fraction of a Boa constrictor's 5 to 13 foot adult length - yet they can live just as long: some captive rosy boas have been documented living past 30 years!",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "20-30 gallon or 36x18x18 in enclosure", low: 100, high: 200 },
+        { item: "Under-tank heater + thermostat", low: 35, high: 60 },
+        { item: "Two snug hides", low: 15, high: 25 },
+        { item: "Small water dish", low: 8, high: 15 },
+        { item: "Digital thermometer and hygrometer", low: 15, high: 25 },
+        { item: "Aspen or sand/soil blend substrate", low: 15, high: 25 },
+      ],
+      annual: [
+        { item: "Frozen/thawed mice", low: 50, high: 100 },
+        { item: "Substrate replacement", low: 20, high: 35 },
+        { item: "Electricity (heat)", low: 35, high: 60 },
+        { item: "Annual vet wellness check", low: 50, high: 90 },
+      ],
+    },
+    sections: {
+      housing: `Adult rosy boas are content in a 20 to 30 gallon or 36x18x18 in enclosure - noticeably smaller than the 6x3x3 ft or larger space a Boa constrictor needs as an adult. They're a ground-dwelling, secretive species that spends much of its time tucked into rock crevices, so a snug hide matters more than floor space or height.
+
+Provide a warm end with a basking surface temperature around 88 to 90 degrees F via an under-tank heater on a thermostat, and a cool end of 65 to 75 degrees F. Rosy boas tolerate cooler nighttime temperatures than most tropical boas and pythons, reflecting their desert origin.
+
+Humidity is the other major difference from the site's other boa: rosy boas want only moderate humidity, around 40% ambient, rising to 60 to 65% during shed - well below the 60 to 80% a Boa constrictor needs. They're genuinely sensitive to overly damp conditions, so a dry, sandy-soil or aspen substrate blend suits them far better than the moisture-retentive substrates used for tropical species. Keep decor simple: a couple of secure hides and some flat rock or cork bark is typically all a rosy boa uses.`,
+      diet: `Rosy boas eat appropriately sized frozen/thawed mice - fuzzies for juveniles, progressing to small or medium adult mice for full-grown snakes. Prey should be roughly as wide as the snake's thickest point.
+
+Feed juveniles every 7 to 10 days. Adults have slow metabolisms and low activity levels even by boa standards, and do well on a mouse every 2 to 4 weeks - overfeeding a rosy boa is a more realistic risk than underfeeding, given how little they move. Always use feeding tongs and feed frozen/thawed only.
+
+Many keepers reduce or stop feeding for a few weeks during winter, mirroring the natural seasonal slowdown rosy boas experience in the wild, though this isn't required for a snake kept at stable indoor temperatures year-round. Fresh water should always be available, even though rosy boas drink and soak less than more tropical species.`,
+      enrichment: `Rosy boas are famously docile and slow-moving, often described as one of the calmest snakes commonly kept as pets - even compared to other boas. They rarely bite and tend to move deliberately rather than darting or thrashing, which makes them an easy, low-stress snake to handle regularly.
+
+Provide secure hides at both temperature ends and some rock or cork bark cover; rosy boas are fond of tight spaces and will spend much of the day hidden. Activity increases in the evening and at night during hot months, shifting toward dawn and dusk in cooler seasons - offering a hide near the warm side lets them thermoregulate on their own schedule.
+
+Handle confidently and gently; most rosy boas settle into handling with very little acclimation needed compared to flightier species. Support the body rather than gripping, since a startled rosy boa's main defense is simply trying to move away and hide, not bite.`,
+      health: `Excess humidity and damp substrate, not dryness, are the main environmental risk for rosy boas - the reverse of the concern with tropical boas and pythons. Chronically damp conditions can cause scale rot and respiratory infections in a species adapted to arid desert air. Keep substrate on the dry side and only raise humidity briefly around shedding.
+
+Obesity from overfeeding is a real and common issue given how sedentary rosy boas are; resist feeding on the same schedule used for a more active snake. Retained shed, especially on the tail tip, can occur if humidity isn't bumped slightly during the shed cycle - a brief soak resolves most cases.
+
+As with other boas, Inclusion Body Disease (IBD) is a rare but serious viral risk within the boid family. Source only captive-bred animals from reputable breeders and quarantine any new snake before introducing it to an existing collection. Annual wellness checks with a reptile vet are recommended, especially given how long-lived this species is.`,
+      checklist: [
+        "20-30 gallon or 36x18x18 in enclosure",
+        "Under-tank heater + thermostat (88 to 90 degrees F warm end)",
+        "Two snug hides (warm and cool ends)",
+        "Small water dish",
+        "Digital thermometer and hygrometer",
+        "Aspen or sand/soil blend substrate (kept dry)",
+        "Frozen/thawed mice, appropriately sized",
+        "Feeding tongs",
+        "Rock or cork bark cover",
+        "Reptile-savvy vet contact",
+      ],
+    },
+    faqs: [
+      { q: "How big do rosy boas get?", a: "Most adults reach 24 to 36 inches, occasionally a bit over 3 feet - a fraction of a [Boa constrictor's](/guides/boa-constrictor/) 5 to 13 foot adult length. This dramatic size difference is one of the main reasons rosy boas appeal to keepers who want a true boa without the eventual space and handling demands of a much larger species." },
+      { q: "Are rosy boas good pets for beginners?", a: "Yes - widely considered one of the best beginner boas available. They stay small, tolerate handling exceptionally well, rarely bite, and have simple desert-style care requirements with lower humidity than most other boas and pythons. Their slow, deliberate movement and calm temperament make them easy to work with even for a first-time snake owner." },
+      { q: "How long do rosy boas live?", a: "20 to 30 years in captivity is typical with good care, and some individuals have been documented living past 30. This is a genuinely long-lived pet for its small size - comparable to or longer than many much larger snakes." },
+      { q: "What do rosy boas eat?", a: "Appropriately sized frozen/thawed mice - fuzzies for juveniles, small to medium adult mice for grown snakes. Adults eat far less often than most pet snakes, typically once every 2 to 4 weeks, since rosy boas have slow metabolisms and low activity levels even by boa standards. Overfeeding is a more realistic risk than underfeeding this species." },
+      { q: "Do rosy boas need high humidity like other boas?", a: "No - this is one of the biggest differences between a rosy boa and the site's other boa, the Boa constrictor. Rosy boas come from arid Southwestern desert and chaparral and do best around 40% ambient humidity, only rising during shed. Housing one in the humid, moisture-retentive setup used for a tropical boa risks scale rot and respiratory infections." },
+      { q: "How does a rosy boa compare to a Boa constrictor?", a: "Wildly different despite belonging to the same family. A rosy boa tops out around 3 feet and comes from dry Southwestern desert; a [Boa constrictor](/guides/boa-constrictor/) can reach 8 to 10+ feet and needs a 6x3x3 ft or larger enclosure with tropical humidity. If a Boa constrictor's eventual size is the dealbreaker, a rosy boa offers the same docile, easy-to-handle boa temperament in a snake that never outgrows a modest enclosure." },
     ],
   },
 ];

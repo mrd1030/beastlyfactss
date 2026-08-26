@@ -129,4 +129,30 @@ export const smallMammalEncyclopedia = [
       conservation: "Least Concern (IUCN)",
     },
   },
+  {
+    id: "rat", name: "Fancy Rat", scientific: "Rattus norvegicus domestica",
+    category: "Small Mammals", emoji: "🐀", difficulty: "Beginner", guideId: "rat", available: true, image: "/assets/guides/rat.jpg",
+    bio: {
+      overview: "Fancy rats are the domesticated form of the wild brown rat, bred for temperament and color since Victorian England, most famously by Jack Black, Queen Victoria's official rat catcher, who caught and bred unusually colored rats and sold them to the wealthy as pets in the 1800s. The Rat Fancy became a formal hobby by 1901, and it produced a genuinely different animal from the wild rats it descends from. Fancy rats are widely considered among the most intelligent commonly kept small pets: they learn tricks, respond to their own names, and navigate mazes readily, which is also why wild-type rats have been the standard animal for spatial-learning research in psychology and neuroscience for more than a century. They're deeply social and bond closely with a consistent handler, though their reputation still suffers by association with the wild rats they were bred from.",
+      origin: "Domesticated from the wild brown rat (Rattus norvegicus); origin in northern China and Mongolia despite the misleading common name",
+      habitat: "Burrows near human settlements and farmland; originally forest and scrubland in Asia",
+      adultSize: "7-10 inches (18-25 cm) body, plus a 6-8 inch scaled tail; 0.8-1 lb females, 1-1.4 lb males",
+      wildDiet: "Grain, seeds, fruit, insects, and other small animals including fish, lizards, and nestling birds",
+      wildLifespan: "About 1 year on average in the wild (commonly 5-12 months, occasionally up to 3 years); pet fancy rats typically live 2-3 years, occasionally to 4",
+      conservation: "Least Concern (IUCN - wild Norway rat population)",
+    },
+  },
+  {
+    id: "mouse", name: "Fancy Mouse", scientific: "Mus musculus domesticus",
+    category: "Small Mammals", emoji: "🐭", difficulty: "Beginner", guideId: "mouse", available: true, image: "/assets/guides/mouse.jpg",
+    bio: {
+      overview: "The fancy mouse is a domesticated form of the house mouse, bred for coat color and pattern since at least Victorian England, where Walter Maxey founded the National Mouse Club in 1895 and designed the standard show cage still used today. House mice have lived alongside humans for roughly 11,000 years, since the earliest agricultural settlements of the Near East, and the western subspecies Mus musculus domesticus that most fancy and laboratory mice descend from spread from there across North Africa and Europe. Mice are smaller, faster, and considerably more skittish than fancy rats, and most keepers find them harder to hand-tame to the same degree. Their most practical downside as a pet is odor: male mouse urine contains trimethylamine, a compound that gives it a distinctly pungent smell largely absent in rat urine, so a mouse cage needs more frequent cleaning than a same-sized rat setup.",
+      origin: "Domesticated from the wild house mouse (Mus musculus); the domesticus subspecies originated in the Near East and spread across North Africa and Western Europe",
+      habitat: "Burrows in walls, buildings, and farmland; also fields, pastures, and woodland edges",
+      adultSize: "2-3 inches (5-8 cm) body, plus a 3-4 inch tail; 1-1.6 oz",
+      wildDiet: "Seeds, roots, leaves, stems, insects, and carrion",
+      wildLifespan: "Under 18 months in the wild (commonly 12-18 months); pet fancy mice typically live 1.5-2 years",
+      conservation: "Least Concern (IUCN - wild house mouse population)",
+    },
+  },
 ];
