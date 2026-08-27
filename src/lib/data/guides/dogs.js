@@ -197,6 +197,9 @@ export const dogGuides = [
         "Orthopedic flooring or rugs for slippery surfaces",
       ],
     },
+    faqs: [
+      { q: "What's the difference between a large breed dog and a giant breed dog?", a: "There's no single official line, but most vets and breed resources put the split around 100 lbs at adult weight. Dogs roughly 60 to 100 lbs (Labradors, German Shepherds, Golden Retrievers) are generally considered large breed, while dogs over 100 lbs (Great Danes, Saint Bernards, Mastiffs) are considered giant breed. Giant breeds also mature more slowly and tend toward shorter lifespans and a higher risk of joint and bloat issues, which is part of why this guide covers both together." },
+    ],
   },
 
   // ── BREED QUIRKS ─────────────────────────────────────────────────────────
