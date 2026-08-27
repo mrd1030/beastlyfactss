@@ -1,0 +1,373 @@
+{
+  "name": "Cockatoo",
+  "scientific": "Cacatuidae",
+  "encyclopediaId": "cockatoo",
+  "jurisdictions": {
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Parrot, parakeet, cockatiel, macaw, and other members of the Family Psittacidae   not prohibited by federal or international law",
+      "note": "Cockatoos are on Alaska's clean list, but the 'not prohibited by federal or international law' qualifier matters: several cockatoo species, including the Moluccan and yellow-crested cockatoo, are CITES Appendix I, which bars commercial international trade even though it doesn't touch domestic keeping of an already-captive-bred bird.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-exotic-birds",
+      "note": "Parrots, cockatiels, conures, and macaws are generally legal in Alabama. Species listed under CITES or the Migratory Bird Treaty Act may need import/export paperwork, but that doesn't reach ordinary possession of a captive-bred bird.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AR": {
+      "status": "legal",
+      "sourceId": "ar-unrestricted",
+      "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "quote": "Cockatoos: Lesser Sulphur-crested or Yellow-crested, Sulphur-crested, Umbrella or White, Salmon-crested or Moluccan, Goffin's (Cacatua sulphurea, C. galerita, C. alba, C. moluccensis, C. goffiniana)",
+      "note": "Five named cockatoo species, including two that are CITES Appendix I (yellow-crested and Moluccan), are on Arkansas's unrestricted list outright, a useful contrast with states like Maine that carve CITES-I birds back out of an otherwise blanket parrot clearance.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-exotic-birds",
+      "note": "Most cockatoos are legal pets in Arizona; the state's live-wildlife statute (A.R.S. § 17-306) is aimed at native and dangerous wildlife rather than common cage birds.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(1)(M)",
+      "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)",
+      "note": "The only parrot California's restricted species list reaches is the monk parakeet. Every cockatoo species is outside section 671.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CO": {
+      "status": "legal",
+      "sourceId": "co-unregulated-wildlife",
+      "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+      "note": "Colorado's 'unregulated wildlife' category explicitly includes pet birds.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-55-6",
+      "cite": "Regs. Conn. State Agencies § 26-55-6",
+      "note": "The only psittacine Connecticut regulates under any of its four wild-animal categories is the monk parakeet. General parrots and cockatoos fall outside the regulation entirely.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Captive-bred species of common cage birds, including chickens",
+      "note": "Every cockatoo sold in the US pet trade is captive-bred, so this exemption from DC's general wild-animal ban applies the same way it does for the African grey parrot.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "legal",
+      "sourceId": "de-birds-exempt",
+      "cite": "Del. Code tit. 3, c. 72",
+      "note": "Delaware exempts birds entirely from its exotic-animal permit system; only mammals and non-native reptiles are reached by that Title 3 permit requirement.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Florida's prohibited/conditional captive wildlife lists are built around reptiles; no bird appears on them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "legal",
+      "sourceId": "ga-391-4-8-05",
+      "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+      "note": "Georgia's wild-animal license bird section names raptors and a handful of native passerines; it does not reach Psittaciformes at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "conditional",
+      "sourceId": "hi-conditional",
+      "cite": "§ 4-71-6.5, List of Conditionally Approved Animals",
+      "quote": "White cockatoos (Umbrella, Moluccan, Sulphur-crested, Little Corella, etc.)",
+      "note": "Cockatoos are named on Hawaii's conditionally approved list, alongside the galah, gang-gang, black cockatoos, and palm cockatoo, so keeping one is possible but requires an import permit, pre-departure quarantine, health certification, and permanent ID before the bird ever lands in the state.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)",
+      "note": "Iowa's dangerous-wild-animal definition is drawn entirely around mammals and reptiles; no bird appears in it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "IDAPA 13.01.10.010.06",
+      "quote": "non-poultry birds",
+      "note": "Idaho's clean-list bird category is drawn by exclusion, not by naming families, so every parrot including cockatoos is a conventional pet.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "legal",
+      "sourceId": "il-720-48-10",
+      "cite": "720 ILCS 585/0.1",
+      "note": "Illinois's Dangerous Animals Act is a closed list of big cats and doesn't reach birds. Illinois is a home-rule state, so a municipality could still restrict one.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-6 through 9-11-8",
+      "note": "No bird appears in any of Indiana's three Wild Animal Possession Permit classes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)",
+      "note": "Kansas regulates six big cats, bears, and non-native venomous snakes; no bird is in the definition.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4",
+      "note": "Kentucky's permit-exempt list clears parrots, lovebirds, budgerigars, macaws, and parakeets by name, excepting only the monk parakeet.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Louisiana's quadruped regulation reaches mammals only; no bird is listed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321cmr9-01",
+      "cite": "321 CMR 9.01",
+      "note": "Parrots are on Massachusetts's license-exemption list. This research could not confirm whether Massachusetts carves specific CITES Appendix I or IUCN-Endangered cockatoo species back out the way Maine's list does, so treat that narrower point as unverified even though ordinary cockatoo ownership is clear.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "legal",
+      "sourceId": "md-not-native",
+      "cite": "Md. Code, Crim. Law § 10-621",
+      "note": "Parrots, macaws, and cockatoos are legal in Maryland; they're outside both the § 10-621 dangerous-animal list and the Migratory Bird Treaty Act, which doesn't reach non-native species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ME": {
+      "status": "permit",
+      "sourceId": "me-unrestricted",
+      "cite": "Unrestricted Species list, Psittaciformes",
+      "quote": "All Species in Order Psittaciformes (Parrots) Except for: Myiopsitta monachus; Cyanoliseus patagonus; Enicognathus leptorhynchus; Enicognathus ferrugineus; Family Strigopidae *Except if listed on: IUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR CITES Appendix I",
+      "permitFor": "personal",
+      "note": "Maine clears the whole parrot order but then strips back out anything on CITES Appendix I or the IUCN's Endangered/Critically Endangered tiers. That carve-out catches several of the most commonly kept pet cockatoos: the Moluccan and yellow-crested cockatoos are CITES Appendix I, and the umbrella cockatoo is IUCN Endangered even though it's only CITES Appendix II. Smaller, more secure species like the cockatiel or galah would still clear the list; the larger, more iconic cockatoos generally need Maine's captivity permit instead.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MI": {
+      "status": "legal",
+      "sourceId": "mi-captive-bred-birds",
+      "note": "Owning a captive-bred cockatoo is legal in Michigan; documentation showing lawful, captive-bred acquisition can be requested.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "legal",
+      "sourceId": "mn-346-155",
+      "cite": "§ 346.155",
+      "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates; no bird is in it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "legal",
+      "sourceId": "mo-3csr10-9",
+      "cite": "3 CSR 10-9.230",
+      "quote": "Class I wildlife shall include birds (including ring-necked pheasants and gray partridge) native to the continental United States",
+      "note": "The bird half of Missouri's Class I is limited to species native to the continental United States. No cockatoo is.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "Mississippi's inherently-dangerous list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)",
+      "quote": "The following noncontrolled exotic wildlife may not be released or transplanted in the state but may be possessed or sold as pets in Montana without a permit: ...(xi) Psittacidae (parrots)",
+      "note": "Psittacidae is named outright on Montana's noncontrolled list, cockatoos included.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "note": "No bird provision exists in North Carolina's only statewide exotic-animal statute; it covers venomous reptiles.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No bird prohibition exists in North Dakota's chapter beyond a modest annual license fee for species the board designates.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NE": {
+      "status": "legal",
+      "sourceId": "ne-cage-aviary-birds",
+      "cite": "163 Neb. Admin. Code, ch. 4",
+      "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage.",
+      "note": "A cockatoo fits Nebraska's cage-and-aviary-bird definition; the one psittacine carved back out of that category is the monk parakeet.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 803.03(b)(6)(c)",
+      "quote": "Parrots (Psittaciformes)",
+      "note": "The whole order is named on New Hampshire's noncontrolled list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "legal",
+      "sourceId": "nj-7-25-4-8",
+      "cite": "N.J.A.C. 7:25-4.8(a)",
+      "quote": "Psittaculis spp. – Ring-necked parakeets; Myiopsitta spp. – Monk (Quaker) parakeets; Cyanoliseus patagonus – Patagonian conures",
+      "note": "New Jersey's potentially dangerous species table names exactly three psittacine groups, and Cacatua is not one of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NM": {
+      "status": "unclear",
+      "sourceId": "nm-19-35-7",
+      "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; cockatoos weren't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NV": {
+      "status": "legal",
+      "sourceId": "nv-unprotected-birds",
+      "cite": "NAC 503.110",
+      "note": "Companion parrot species, cockatoos included, are not on Nevada's prohibited-species list and need no state permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-dangerous-animal",
+      "note": "Cacatuidae does not appear on New York's Dangerous Animal License species list, which is built around big cats, bears, primates, and venomous reptiles. No New York statute or DEC regulation restricting parrot or cockatoo possession generally turned up in this research.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Birds are outside Ohio's dangerous-wild-animal chapter entirely.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3",
+      "note": "Oklahoma's noncontrolled exotic-species exemption names cockatoos outright, along with cockatiels, macaws, canaries, and other psittacine birds.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "legal",
+      "sourceId": "pa-34-102",
+      "cite": "34 Pa.C.S. § 102",
+      "note": "Pennsylvania's 'exotic wildlife' definition is bears, big cats, canids, and their crossbreeds; common pet birds like parakeets and canaries are expressly carved out, and no cockatoo-specific rule was found.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "legal",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "250-RICR-40-05-3.7",
+      "quote": "Psittacidae (Parrots and their allies) except for Myiopsitta monachus (Monk Parakeet), which requires a permit",
+      "note": "The whole parrot family, cockatoos included, is permit-free with a single carve-out for the monk parakeet.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "note": "The only bird South Carolina's import permit reaches is turkeys of genus Meleagris; the pet-trade exemption separately clears parrots.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "Nondomestic birds are handled by ARSD 12:68:13 rather than the mammal-only possession-permit list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "legal",
+      "sourceId": "tn-70-4-403",
+      "cite": "§ 70-4-403",
+      "note": "A non-native cockatoo is Tennessee Class III: a nonpoisonous, non-native species that needs no registration.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-822-101",
+      "note": "Texas's dangerous wild animal statute doesn't reach birds. Legal statewide, subject to local ordinance.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "UT": {
+      "status": "legal",
+      "sourceId": "ut-r657-3b",
+      "cite": "Utah Admin. Code R657-3b",
+      "quote": "Parrots Family Psittacidae All species not native to North America",
+      "note": "Classified as noncontrolled, and a certificate of registration is not required to possess any noncontrolled bird.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "quote": "Psittaciformes   Psittacidae   Myiopsitta monachus   Monk parakeet*",
+      "note": "The only parrot on Virginia's permit table is the monk parakeet.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VT": {
+      "status": "unclear",
+      "sourceId": "vt-10-app-18",
+      "cite": "10 V.S.A. App. § 18",
+      "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether cockatoos appear on that list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "note": "Birds fall outside both the potentially-dangerous-animal statute and the deleterious exotic wildlife rule.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WI": {
+      "status": "legal",
+      "sourceId": "wi-datcp-birds",
+      "cite": "Wis. Stat. § 169.04; DATCP pet bird rules",
+      "note": "A cockatoo meets Wisconsin's definition of an unregulated 'pet bird': psittacine, non-native, not federally endangered, not a migratory species. The one psittacine Wisconsin does prohibit is the monk parakeet, as an invasive species. Importing one from out of state still calls for a DATCP animal import permit and health certificate.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)",
+      "note": "No bird category appears in West Virginia's dangerous-wild-animal guidance at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch10",
+      "cite": "Chapter 10, § 16(b)(i)",
+      "quote": "Live warm-blooded wildlife listed in this section... may be imported, possessed or transported without a permit... (b) Birds: (i) Cage and aviary birds.",
+      "note": "Chapter 10 defines cage and aviary birds as exotic captive-reared birds such as parrots that are adapted to live in a cage; a cockatoo qualifies.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "name": "Milk snake",
+  "scientific": "Lampropeltis triangulum",
+  "encyclopediaId": "milk-snake",
+  "jurisdictions": {
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-220-2-26",
+      "cite": "§ (1)",
+      "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+      "note": "Milk snake is not on the federal injurious wildlife list this rule points to.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-r12-4-406",
+      "cite": "R12-4-406",
+      "note": "Arizona's restricted live wildlife rule is aimed at dangerous species (crocodilians, elapids, boomslangs, twig snakes, keelbacks, brown tree snake). A common kingsnake-genus colubrid is not on it. Milk snake occurs natively in parts of Arizona; we did not separately verify a native wild-collection rule for it there, only that simple possession is unrestricted.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(7)",
+      "note": "California's restricted colubrid entries are boomslang, twig snakes and Nerodia. Milk snake is not native to California (the California kingsnake, a different species, fills that niche), so no native-take question arises.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-40a",
+      "cite": "§ 26-40a",
+      "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+      "note": "The potentially dangerous animal list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "legal",
+      "sourceId": "de-3900",
+      "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
+      "note": "The banned list is venomous species plus pythons and anacondas by name. A milk snake is none of those.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Not on FWC's prohibited/Reptiles of Concern list. Florida's milk snake population (Coastal Plain milksnake) is native, so this covers lawfully acquired possession; wild take of the native population is a separate FWC nongame question we did not verify in detail.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "banned",
+      "sourceId": "ga-dnr-legal-pets",
+      "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+      "note": "Georgia DNR's own \"Guide to Legal Pets\" and \"Laws Related to Native Wildlife\" pages both list \"Milksnake\" among native species that cannot be kept as pets, captive-bred or not. This is a genuine blanket ban on a species that is a pet-store staple elsewhere. Statutory basis is Georgia's wild animal statute, O.C.G.A. § 27-5-4/27-5-5; we could not confirm an exact numbered administrative subrule beyond that, but two independent official DNR pages state the prohibition plainly.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-4-71-6",
+      "cite": "§ 4-71-6",
+      "quote": "Serpentes (all species)",
+      "note": "Hawaii bans the entire snake suborder by name.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)(a)(9)(e)",
+      "note": "Iowa's dangerous wild animal definition for snakes is limited to venomous families and named giant pythons/anacondas. A milk snake is in none of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "§ 010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "conditional",
+      "sourceId": "il-herps-act",
+      "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+      "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect a native species from the wild. Milk snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this cap.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-8(a)",
+      "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)(3)",
+      "quote": "all non-native, venomous snakes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(t)",
+      "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+      "note": "Kentucky's Colubridae entry restricts only venomous rear-fanged colubrids. A milk snake is not venomous.",
+      "verifiedOn": "2026-08-27"
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Not among Louisiana's individually-named restricted nonnative species. Milk snake is Louisiana native; we did not separately verify Louisiana's wild-take rules for the native population.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "legal",
+      "sourceId": "md-10-621",
+      "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "conditional",
+      "sourceId": "mn-97a-401",
+      "cite": "Minn. Stat. § 97A.401, subd. 8",
+      "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+      "note": "Since August 2021, Minnesota requires any pet snake, including a native species like milk snake, to come from a permitted breeder or be grandfathered from before that date.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "The inherently dangerous list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(d)(v)",
+      "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in North Dakota's captivity-prohibition chapter.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-11-0103",
+      "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Milk snake is not among them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "permit",
+      "sourceId": "nj-7-25-4-5",
+      "cite": "N.J.A.C. 7:25-4.4/4.5",
+      "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
+      "note": "New Jersey's exempted-species list names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not milk snake, so a permit is required. We did not find a state-endangered listing for milk snake in New Jersey the way corn snake carries one; this is the general exotic/nongame species permit only.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Ohio's restricted snake list is three venomous families plus two named rear-fanged species plus eight large constrictors twelve feet or longer. A milk snake is none of those.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OR": {
+      "status": "legal",
+      "sourceId": "or-609-305",
+      "cite": "ORS § 609.305",
+      "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "conditional",
+      "sourceId": "pa-58-79-3",
+      "cite": "58 Pa. Code §§ 79.3, 79.4",
+      "quote": "Native species not listed in this subsection | No closed season | 1 | 1",
+      "note": "Milk snake is Pennsylvania native and is not one of the specifically-tabled species in Chapter 79, so it falls under the catch-all \"native species not listed\" line: a daily and possession limit of one. Critically, § 79.4 states a permit is required for continued possession \"regardless of the animal's origin,\" meaning this one-per-species cap is not just a wild-collection bag limit; it appears to bind a purchased or captive-bred milk snake too, since it is still a species native to Pennsylvania.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "conditional",
+      "sourceId": "sc-act177",
+      "cite": "S.C. Code Regs. Ch. 123-150 to -153 (Act 177)",
+      "quote": "eastern milksnakes reproduced in captivity and under 10 inches in total length are also permitted",
+      "note": "South Carolina's 2021 native-reptile law (Act 177) bars sale/possession of native reptiles generally, but carves out captive-bred eastern milksnakes under 10 inches total length as an allowed pet-trade exception. We could not confirm the exact regulation subsection for this size cutoff beyond the Chapter 123-150s series.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only; reptiles are handled under separate Game, Fish and Parks rules, though a free entry permit applies to importing any nondomestic animal.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "conditional",
+      "sourceId": "tn-70-4-403",
+      "cite": "Tenn. Code § 70-4-403(3)(A)",
+      "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+      "note": "Class III wildlife needs no possession permit, and milk snake is nonpoisonous. But it is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name, address and acquisition date.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-tpwd-nonindigenous",
+      "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+      "note": "Milk snake is not a controlled exotic snake or threatened species under TPWD rules. Several milk snake subspecies are Texas native; wild collection of native nongame wildlife generally requires a Texas hunting license, but a lawfully acquired pet-trade animal needs no TPWD permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "UT": {
+      "status": "conditional",
+      "sourceId": "ut-r657-53-tables",
+      "cite": "Utah DWR reptile/amphibian species tables (R657-53)",
+      "quote": "Western milk snake, Lampropeltis gentilis: Limited possession (2 daily and yearly/4 total, per species)",
+      "note": "Utah's own species table names the state's native milk snake population \"Lampropeltis gentilis\" (a segregate now often split from the broader Lampropeltis triangulum complex commonly called \"milk snake\" in the pet trade) and caps daily/yearly take and total possession at a combined 4. The phrase \"limited possession,\" not just \"bag limit,\" suggests the cap is not purely about wild collection.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "No snake appears on Virginia's special permit table at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Family colubridae, only dispholidus typus",
+      "note": "The only colubrid Washington restricts is the boomslang.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WI": {
+      "status": "conditional",
+      "sourceId": "wi-nr-16-12",
+      "cite": "Wis. Admin. Code NR 16.12/16.13",
+      "quote": "A person may take or possess up to 5 individuals... of each species of native amphibian, lizard and snake that are not endangered or threatened.",
+      "note": "Milk snake is Wisconsin native. Wild possession/take is capped at 5 individuals under NR 16.12. More notably, our research found that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" meaning simply buying a milk snake, even a captive-bred one, is restricted in Wisconsin because of its native status, unlike a non-native pet-trade species such as corn snake or ball python.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)(E)",
+      "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+      "note": "A milk snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "Chapter 69, § 10(a)(i)",
+      "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

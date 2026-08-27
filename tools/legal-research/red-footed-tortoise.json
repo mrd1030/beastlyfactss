@@ -1,0 +1,245 @@
+{
+  "name": "Red-Footed Tortoise",
+  "scientific": "Chelonoidis carbonarius",
+  "encyclopediaId": "red-footed-tortoise",
+  "jurisdictions": {
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(7)",
+      "note": "Section 671's Testudines entries reach only Chelydridae (snapping turtles). No tortoise family is restricted, and California's own tortoise rules concern the native desert tortoise (Gopherus agassizii) as a protected species, not an exotic-possession restriction.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-11-0103",
+      "cite": "ECL § 11-0103(6)(e)",
+      "quote": "includes and is limited to",
+      "note": "No tortoise or Testudinidae entry appears anywhere in the closed dangerous-wild-animal definition, which among reptiles names only certain large monitors, big constrictors, venomous species and crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321-9-01",
+      "cite": "321 CMR 9.01",
+      "note": "Massachusetts allows all species of turtles (up to 100 individuals/eggs per species) without a permit except five named exceptions: Argentina/Chaco tortoise, Gopherus spp. (gopher tortoises), pancake tortoise, spotted turtle, and red-eared slider. The red-footed tortoise is not among them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "permit",
+      "sourceId": "nj-7-25-4-4",
+      "cite": "N.J.A.C. 7:25-4.4, 4.5",
+      "note": "Not on the exempt-species list (N.J.A.C. 7:25-4.4), which names only American anole, common iguana, boa constrictor, eastern painted turtle, snapping turtle, fence lizard, garter snake, tokay gecko and ribbon snake among reptiles. Falls to the § 4.5 catch-all: 'a permit shall be required for any other exotic mammals, birds, reptiles, or amphibians... not specifically exempted.'",
+      "verifiedOn": "2026-08-27",
+      "permitFor": "personal"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "No tortoise, Chelonoidis, or Testudinidae entry appears in the nonnative-animal permit table. Subsection (H) allows possession of nonnative animals not listed in the table, subject to general law.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "legal",
+      "sourceId": "ga-391-4-8-05",
+      "cite": "391-4-8-.05",
+      "note": "Georgia's licensed wild-animal reptile list names only two turtles (African helmeted turtle, Chinese softshell turtle) under Order Testudines; no tortoise or Testudinidae entry appears.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "note": "A tortoise is a turtle in the taxonomic sense the category uses (Order Testudines), the same reading applied to the sulcata and Russian tortoise.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "legal",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17(A)(4)(a)(1)",
+      "quote": "All exotic species of turtles may be kept without an exotic animal possession permit, except endangered species.",
+      "note": "The three tortoises pulled back out are the Chaco tortoise, the genus Gopherus and the pancake tortoise. Chelonoidis carbonarius is none of them and is not federally endangered.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "cite": "Ch. 68-5, F.A.C.",
+      "note": "Not on Florida's prohibited reptile list (sixteen high-risk species, no tortoise) and not a Class I or II wildlife species requiring a specific license.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-822-101",
+      "cite": "Health & Safety Code § 822.101",
+      "note": "Not on Texas's closed dangerous-wild-animal list (lions, tigers, and other named cats, bears, canids and primates). Tortoises and monitor lizards are outside the registration requirement.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Absent from Louisiana's prohibited and restricted nonnative-reptile lists (which do name the savannah and Nile monitor). The native-turtle registration requirement at § 101.G governs Louisiana's own species and does not reach this South American tortoise.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(f)(ix)",
+      "quote": "all nonnative tropical and subtropical species of turtles with a carapace or shell length of more than 4 inches and not on the controlled or prohibited lists in the families: ...(ix) Testudinidae (tortoises);",
+      "note": "Cleared by family, above the four-inch floor, the same basis already used for the sulcata and Russian tortoise.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "Mississippi's inherently-dangerous list is drawn family by family and is entirely mammalian; no reptile is restricted under this rule at any size.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...15. reptiles 16. amphibians.",
+      "note": "South Carolina exempts reptiles as a class from the import permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in North Dakota's captive-wildlife chapter or current administrative rules.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)",
+      "note": "Kansas's only exotic-pet statute reaches six named cats, bears, and non-native venomous snakes. Tortoises are untouched at any size.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4",
+      "note": "On neither the prohibited species list nor the inherently-dangerous list, which among reptiles names only gila monsters, beaded lizards, the Komodo dragon, crocodilians and venomous snakes other than hognose.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)",
+      "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)",
+      "note": "The squamate/reptile half of Iowa's dangerous-wild-animal definition is exhaustively enumerated (certain monitors, helodermatids, venomous snakes, three named giant constrictors). No tortoise is among them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only (carnivores, hoofed mammals, tapirs, rhinos, elephants, primates); reptiles fall under Game, Fish and Parks rules instead.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "legal",
+      "sourceId": "mo-3csr10-9",
+      "cite": "3 CSR 10-9.230",
+      "note": "Not native to Missouri, so outside Class I, and not a deadly or dangerous reptile over eight feet under § 578.023.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "Chapter 69, § 10(a)(i)",
+      "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+      "note": "Non-venomous and not on the prohibited list, so no permit is required for personal use; the reptile must remain confined and never be released.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 803.03(b)",
+      "quote": "(4) Non-venomous reptiles, except the following: a. Indigenous reptile species listed in Table 800.1...",
+      "note": "No tortoise appears anywhere in the controlled table, so this non-native species clears the non-controlled category outright.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "IDAPA 13.01.10.010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "note": "A conventional pet under the reptile category, no size or weight qualifier attached.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "note": "No permit required; the clean list sets no size limit on reptiles.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Not a dangerous wild animal and not native to Ohio, so nothing in Chapter 935 reaches it.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Class reptilia ... Order crocodilia, all species",
+      "note": "Not listed. Washington's reptile concerns under this chapter are venom and crocodilians rather than size or origin.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "ME": {
+      "status": "legal",
+      "sourceId": "me-unrestricted",
+      "cite": "Unrestricted Species List, Testudines",
+      "quote": "Red-footed Tortoise",
+      "note": "Maine's own tortoise clearance list (documented in this site's sulcata-tortoise research) names the Russian, Greek, Hermann's, leopard, red-footed and yellow-footed tortoises by common name. The red-footed tortoise is expressly included; the exact binomial spelling used on Maine's PDF was not independently re-verified this round because the source PDF resisted text extraction, so double-check the primary document (maine.gov/ifw/docs/unrestrictedspecies.pdf) before publishing.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AR": {
+      "status": "legal",
+      "sourceId": "ar-unrestricted",
+      "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "quote": "Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)",
+      "note": "Confirmed directly from the current AGFC PDF (revised 11/1/22). Genus Chelonoidis is named outright, which covers the red-footed tortoise without ambiguity.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "conditional",
+      "sourceId": "hi-conditional",
+      "cite": "List of Conditionally Approved Animals, Family Testudinidae",
+      "quote": "Chelonoidis (all species in genus except C. elephantopus)",
+      "note": "Confirmed directly from the HDOA conditional-animal-list PDF. Unlike the sulcata (which moved out of Geochelone entirely into the unlisted genus Centrochelys, leaving its status genuinely unclear), the red-footed tortoise's current genus Chelonoidis is named outright on this list, with only the Galapagos tortoise (C. elephantopus, separately restricted) carved out. Chelonoidis carbonarius is squarely covered.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

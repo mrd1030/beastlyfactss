@@ -1,0 +1,378 @@
+{
+  "name": "California Kingsnake",
+  "scientific": "Lampropeltis californiae",
+  "encyclopediaId": "kingsnake",
+  "jurisdictions": {
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "note": "Alaska's clean list turns entirely on venom.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-native-nongame",
+      "cite": "Ala. Admin. Code r. 220-2-.92",
+      "note": "Not native to Alabama, so it's an ordinary nonvenomous pet reptile rather than wildlife needing a possession-limit accounting; no restriction was found.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AR": {
+      "status": "legal",
+      "sourceId": "ar-unrestricted",
+      "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "quote": "New World Colubrid Snakes (in part) (Genera: Bogertophis, Drymarchon, Drymobius, Lampropeltis, Pantherophis, Phrynonax, Pituophis, Pseudelaphe, Senticolis, Spilotes) except species native to Arkansas",
+      "note": "Named on the unrestricted list by genus; the native-species exception in that entry doesn't reach the California kingsnake since it isn't an Arkansas species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-license-take",
+      "cite": "Ariz. Admin. Code R12-4-406, R12-4-407",
+      "note": "The California kingsnake's range reaches into parts of Arizona, so the same hunting/fishing-license framework that governs wild take of native reptiles applies there, but simple possession of a lawfully-acquired one isn't restricted, and it isn't on Arizona's no-open-season list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-5-60",
+      "cite": "Cal. Code Regs. tit. 14, § 5.60(b)(41)",
+      "note": "Not on the Fish & Game Code § 671 restricted species list, so owning one is unrestricted. Wild collection of a California kingsnake specifically requires a sportfishing license and is capped at a 4-per-day bag/possession limit; unlike the common garter snake, there are no county-level closures for this species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CO": {
+      "status": "legal",
+      "sourceId": "co-unregulated-wildlife",
+      "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+      "note": "Colorado clears the genus Lampropeltis by name except for the western milksnake and the speckled kingsnake, neither of which is the California kingsnake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-55-6",
+      "cite": "Regs. Conn. State Agencies § 26-55-6",
+      "note": "Outside all four of Connecticut's wild-animal categories, which reach only specific dangerous mammals, dangerous reptiles, native birds/amphibians, and state-listed species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "note": "A California kingsnake fits this exemption from DC's general wild-animal ban squarely.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "permit",
+      "sourceId": "de-nonnative-reptile-permit",
+      "cite": "Del. Code tit. 3, c. 72",
+      "permitFor": "personal",
+      "note": "A live reptile not native to or generally found in Delaware needs a permit from the Department of Agriculture before it may be brought into the state, possessed, sold, or exhibited. The California kingsnake, a Pacific coast species, is exotic to Delaware.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Not a reptile of concern; that category is built around large invasive constrictors, monitors, and tegus. Ordinary nonvenomous colubrids like the California kingsnake need no license as a personal pet.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "legal",
+      "sourceId": "ga-391-4-8-05",
+      "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+      "note": "Georgia's wild-animal license rule doesn't name any snake at all, and the California kingsnake isn't Georgia native wildlife, so it falls outside both the wild-animal license scheme and the native-species possession restriction that reaches Georgia's own native kingsnake population.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-conditional",
+      "cite": "§ 4-71-6",
+      "quote": "Serpentes (all species)",
+      "note": "Hawaii's snake ban reaches every species in the suborder, kingsnakes included, with no pet-keeping permit available.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)",
+      "note": "The squamate half of Iowa's 'dangerous wild animal' definition is exhaustively enumerated (monitors, helodermatids, venomous families, a short list of giant constrictors); a kingsnake is none of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "IDAPA 13.01.10.010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "note": "Idaho's test is venom, not species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "legal",
+      "sourceId": "il-720-48-10",
+      "cite": "720 ILCS 585/0.1",
+      "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, so a municipality can still restrict snake ownership on its own.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-6 through 9-11-8",
+      "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes like a kingsnake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)",
+      "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(t)",
+      "note": "Kentucky's inherently-dangerous-wildlife list reaches Colubridae only when the snake is venomous.",
+      "verifiedOn": "2026-08-27"
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Louisiana's prohibited nonnative reptile list is built around crocodilians, tegus, monitors, the green iguana, and a short list of large or venomous snakes; ordinary colubrids like the kingsnake aren't on it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321cmr9-01",
+      "cite": "321 CMR 9.01, Table 10(b)(4)",
+      "quote": "Kingsnakes and Milk Snakes (Lampropeltis spp.)",
+      "note": "The whole genus is named on the license-exemption list, California kingsnake included.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "legal",
+      "sourceId": "md-not-native",
+      "cite": "Md. Code, Crim. Law § 10-621",
+      "note": "Not a Maryland native, so the state's native-reptile possession permit doesn't apply, and it's absent from the § 10-621 dangerous-animal list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ME": {
+      "status": "legal",
+      "sourceId": "me-unrestricted",
+      "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
+      "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
+      "note": "The whole genus is cleared except two named species, neither of which is the California kingsnake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MI": {
+      "status": "legal",
+      "sourceId": "mi-captive-bred",
+      "cite": "Mich. Comp. Laws § 324.43535",
+      "note": "Captive-bred nonvenomous snakes are legal pets in Michigan; documentation of lawful acquisition can be requested.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "legal",
+      "sourceId": "mn-346-155",
+      "cite": "§ 346.155",
+      "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "legal",
+      "sourceId": "mo-3csr10-9",
+      "cite": "3 CSR 10-9.230",
+      "note": "Class I, Missouri's permit tier for nonvenomous reptiles, reaches only species native to Missouri. The California kingsnake isn't one, so it falls outside that requirement.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "Mississippi's inherently-dangerous list is entirely mammalian; no reptile is restricted at any size.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(d)(v)",
+      "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+      "note": "Colubridae is cleared as nonvenomous.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417; § 153A-131",
+      "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else is left to county ordinance.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in North Dakota's captive wildlife chapter.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NE": {
+      "status": "legal",
+      "sourceId": "ne-captive-wildlife",
+      "cite": "163 Neb. Admin. Code, ch. 4, § 008",
+      "note": "Not endangered or threatened, and not one of the specifically prohibited carnivore families; an ordinary exotic pet reptile in Nebraska.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.02(b)(4)",
+      "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+      "note": "An exotic, nonvenomous reptile like the California kingsnake clears New Hampshire's noncontrolled list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "legal",
+      "sourceId": "nj-7-25-4-8",
+      "cite": "N.J.A.C. 7:25-4.8(a)",
+      "note": "Absent from the potentially dangerous species table, which limits its snakes to venomous families plus boomslang, twig snakes, African kraits, and anaconda.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NM": {
+      "status": "unclear",
+      "sourceId": "nm-19-35-7",
+      "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; the California kingsnake wasn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NV": {
+      "status": "legal",
+      "sourceId": "nv-unprotected-reptiles",
+      "cite": "NAC 503.090",
+      "note": "Nevada's unprotected-reptile category covers most kingsnakes, though the state singles out California kingsnakes lacking a continuous banded/ringed pattern from head to vent as the specific unprotected form, so pattern can matter for certain individuals.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-6nycrr-3-3",
+      "cite": "6 NYCRR § 3.3(a)",
+      "note": "New York's native-snake statute names its own indigenous species by common name, including the eastern milk snake (Lampropeltis triangulum); the California kingsnake is a Pacific coast species and isn't one of them, so it doesn't inherit the native-species possession permit that a New York garter snake needs. No other statute restricts it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Ohio's restricted-snake list is three venomous families plus two named rear-fanged species plus large constrictors twelve feet and up. A kingsnake is none of them.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3",
+      "note": "Non-indigenous reptiles are exempt from Oklahoma's import, breeder's-license, and permit requirements outright, and the California kingsnake isn't indigenous to Oklahoma.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OR": {
+      "status": "conditional",
+      "sourceId": "or-635-056-0060",
+      "cite": "OAR 635-056-0060(D)",
+      "quote": "Individuals of Lampropeltis getula, L. zonata and Pituophis catenifer that are morphologically distinct from native species.",
+      "note": "Oregon's kingsnake clearance, written under the older taxonomy in which the California kingsnake was classified as Lampropeltis getula californiae, only reaches individuals 'morphologically distinct from native species' -- in practice, a recognizable color or pattern morph rather than a wild-type-looking snake. Wild-caught, native-looking kingsnakes and their offspring aren't covered.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "legal",
+      "sourceId": "pa-58-79",
+      "cite": "58 Pa. Code Ch. 79",
+      "note": "Fish and Boat Commission possession rules apply only to species native to Pennsylvania. The California kingsnake isn't one, so it isn't reached by that chapter at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "legal",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17(A)(4)(b)(2)(D)(x)",
+      "quote": "Kingsnakes and Milk Snakes",
+      "note": "Named directly on Rhode Island's exempt Colubridae list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "note": "South Carolina exempts reptiles as a class from the import permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only; reptiles fall under separate Game, Fish & Parks rules.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "legal",
+      "sourceId": "tn-70-4-403",
+      "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
+      "note": "Not native to Tennessee, so a California kingsnake is Class III: a nonpoisonous, non-native reptile that needs no registration.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-822-101",
+      "note": "Texas's dangerous wild animal statute doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "UT": {
+      "status": "legal",
+      "sourceId": "ut-r657-53",
+      "cite": "Utah Admin. Code R657-53-5",
+      "note": "Falls under Utah's non-controlled reptile framework, the same one that clears the garter snake: up to three may be possessed without a certificate of registration, more with one from the Wildlife Board.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a kingsnake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VT": {
+      "status": "unclear",
+      "sourceId": "vt-10-app-18",
+      "cite": "10 V.S.A. App. § 18",
+      "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the California kingsnake appears on that list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Family colubridae, only dispholidus typus",
+      "note": "The only colubrid Washington restricts is the boomslang.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WI": {
+      "status": "legal",
+      "sourceId": "wi-import-permit",
+      "cite": "Wis. Stat. § 169.04",
+      "note": "As a non-native species, the California kingsnake sits outside Wisconsin's native-reptile possession cap and can be kept the way corn snakes and ball pythons are, without a DNR license. Bringing one in from out of state calls for a DATCP animal import permit and health paperwork.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)",
+      "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "Chapter 69, § 10(a)(i)",
+      "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

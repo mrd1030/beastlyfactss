@@ -1,0 +1,331 @@
+{
+  "name": "Rosy boa",
+  "scientific": "Lichanura trivirgata",
+  "encyclopediaId": "rosy-boa",
+  "jurisdictions": {
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-220-2-26",
+      "cite": "§ (1)",
+      "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+      "note": "Rosy boa is not on the federal injurious wildlife list this rule points to, the same reasoning that clears the much larger boa constrictor here.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-co43-reptile-regs",
+      "cite": "AZGFD Commission Order 43 (Reptile and Amphibian Regulations)",
+      "note": "Worth flagging clearly: rosy boa (listed by AZGFD as Lichanura trivirgata / L. roseofusca) is native to southern Arizona, and Commission Order 43 sets a wild-take and possession bag limit of 4 animals under a valid Arizona hunting license, since AZGFD treats it as a species of conservation concern. That licensing and bag-limit regime governs collecting one from the wild. It is separate from simply owning a captive-bred, pet-trade rosy boa, which is not on Arizona's restricted live wildlife list (R12-4-406, aimed at crocodilians, elapids and a handful of named dangerous colubrids) and needs no permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671",
+      "note": "Not on California's restricted species list, which names giant pythons and anacondas among constrictors, not small native boas. Worth flagging clearly, though: California's own native-reptile regulations (Title 14 CCR §§ 5.60 and 43) governing wild take and commercial captive propagation of native reptiles do not use the name \"Lichanura trivirgata\" at all. They instead name \"Lichanura orcutti\" (called \"Northern three-lined boa\" in the take-limit table), reflecting a genuine taxonomic split: genetic work in the early 2000s divided the rosy boa complex into two species, with California's own wild population now generally recognized as L. orcutti and L. trivirgata proper restricted to the southern end of the range (extreme southern CA/Baja/Sonora). Under § 5.60 a Californian may take up to 2 wild L. orcutti under a sportfishing license; under § 43 a native reptile propagation permit is required to commercially breed or sell them. None of this touches ordinary ownership of a captive-bred, pet-trade rosy boa (of either taxon), which remains unrestricted since it is not on § 671. The upshot: California treats its own wild boa population as a regulated native-take resource under a different scientific name than the common \"rosy boa\" pet-trade animal is usually sold under, which is exactly the kind of distinction a keeper could easily miss.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CO": {
+      "status": "legal",
+      "sourceId": "co-w11",
+      "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)",
+      "note": "Colorado's W-11 list clears the family Boidae as a category, the same basis boa constrictor is legal here. Rosy boa falls within it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-40a",
+      "cite": "§ 26-40a",
+      "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+      "note": "The potentially dangerous animal list is entirely mammalian, with no length or family test for constrictors at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "note": "DC applies no length or family test to constrictors.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "unclear",
+      "sourceId": "de-3900",
+      "note": "Delaware's banned list names pythons and anacondas but not Boidae generally; since the anaconda is itself a boid, whether the family is meant to be caught more broadly is not resolvable from the text as written. This is the same unresolved ambiguity that leaves boa constrictor unclear in Delaware, and nothing in the list specifically distinguishes a small boa from a large one.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Rosy boa is not Florida native.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-4-71-6",
+      "cite": "§ 4-71-6",
+      "quote": "Serpentes (all species)",
+      "note": "Hawaii bans the entire snake suborder by name, size and family irrelevant.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)(a)(9)(e)",
+      "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+      "note": "Rosy boa is a different genus entirely from all three named species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "§ 010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "legal",
+      "sourceId": "il-herps-act",
+      "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+      "quote": "Boidae family snakes such as boas, pythons, and anacondas are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+      "note": "Illinois exempts the whole family Boidae from its reptile permit system outright, a cleaner result than the native-species possession cap that applies to corn snake and milk snake under the same Act.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-8(a)",
+      "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)(3)",
+      "quote": "all non-native, venomous snakes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(t)",
+      "note": "Kentucky's restricted snake families are venomous ones. Boidae as a family is not reached at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2.c.i",
+      "note": "Louisiana's restricted list names Boa constrictor individually by binomial, not the family Boidae as a whole. We found no indication Lichanura is separately named on the broader restricted/prohibited nonnative species list, but we did not review that full list species-by-species, so this is a moderately, not fully, confident finding.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321-9-01",
+      "quote": "All species of boas and pythons (family Boidae)",
+      "note": "Massachusetts clears the whole family Boidae by name.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "legal",
+      "sourceId": "md-10-621",
+      "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "conditional",
+      "sourceId": "mn-97a-401",
+      "cite": "Minn. Stat. § 97A.401, subd. 8",
+      "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+      "note": "Minnesota's breeder-sourcing requirement applies to snakes generally, rosy boa included.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "legal",
+      "sourceId": "mo-578-023",
+      "cite": "§ 578.023(1)",
+      "quote": "any deadly or dangerous reptile over eight feet long... unless he or she has registered such animals with the local law enforcement agency",
+      "note": "Missouri's dangerous-reptile registration duty is an eight-foot length test. A rosy boa, topping out around 2-3 feet, never comes close to it, unlike a large boa constrictor which can.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "The inherently dangerous list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(d)(i)",
+      "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: (i) Boidae (boas);",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in the chapter or current administrative rules.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NE": {
+      "status": "legal",
+      "sourceId": "ne-163-nac-4-008",
+      "cite": "163 NAC ch. 4, § 008",
+      "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles, the same framework that clears corn snake. Rosy boa is not Nebraska native.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.02(b)(4)",
+      "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "permit",
+      "sourceId": "nj-7-25-4-5",
+      "cite": "N.J.A.C. 7:25-4.4/4.5",
+      "quote": "Boa constrictor - Constrictor constrictor",
+      "note": "New Jersey's exempted reptile list names Boa constrictor by exact genus and species, not the family Boidae generally. Rosy boa (genus Lichanura) is a different genus and is not covered by that specific exemption, so a permit is required under 7:25-4.5.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-11-0103",
+      "note": "New York's restricted list names venomous species plus three specific large pythons. Boidae is not named as a family, confirmed directly from the boa constrictor entry for this same source.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NYC": {
+      "status": "banned",
+      "sourceId": "nyc-161-01",
+      "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda",
+      "note": "Worth flagging clearly: New York City's health code bans the entire family Boidae by name, not just the large species it lists as examples. A rosy boa is a boid. Despite maxing out around 2-3 feet, well short of anything resembling a public-safety-scale constrictor, it reads as banned in NYC on the same \"any member of the family\" language that catches the green anaconda. This is a real instance of a blanket family-level ban sweeping in a small, harmless species, exactly the kind of non-obvious result worth calling out.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Ohio's restricted constrictors are eight named giant pythons/anacondas twelve feet or longer. A rosy boa at 2-3 feet is not remotely close, and is not one of the named species regardless.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3(c)",
+      "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+      "note": "Rosy boa is not indigenous to Oklahoma, so it clears under this exemption.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OR": {
+      "status": "legal",
+      "sourceId": "or-609-305",
+      "cite": "ORS § 609.305",
+      "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "unclear",
+      "sourceId": "pa-exotic-wildlife-permit",
+      "note": "Rosy boa is not Pennsylvania native, so the Fish and Boat Commission's native-species chapter (58 Pa. Code Ch. 79) does not apply. The Game Commission's Exotic Wildlife Possession Permit framework would be the relevant regime instead, and we could not confirm whether small non-venomous boids are exempted from it. Left unclear rather than guessed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "legal",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17(A)(4)(b)(2)(A)",
+      "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+      "note": "Rosy boa is not one of the five named exceptions and is not a listed endangered species.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "quote": "15. reptiles",
+      "note": "South Carolina exempts reptiles as a class from the import permit. Rosy boa is not South Carolina native, so Act 177's native-species regime (which does reach corn snake and milk snake here) does not apply to it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "legal",
+      "sourceId": "tn-70-4-403",
+      "cite": "Tenn. Code § 70-4-403(3)(A)",
+      "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+      "note": "Class III wildlife needs no possession permit. Rosy boa is not Tennessee native, so the native-sourcing documentation practice that applies to corn snake and milk snake here does not apply.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-tpwd-nonindigenous",
+      "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+      "note": "Rosy boa is not on TPWD's controlled exotic snake list (aimed at large pythons and the green anaconda) and is not Texas native.",
+      "verifiedOn": "2026-08-27"
+    },
+    "UT": {
+      "status": "legal",
+      "sourceId": "ut-r657-3",
+      "cite": "Utah Admin. Code R657-3",
+      "note": "Rosy boa does not appear on Utah's controlled/prohibited reptile tables and is not established as a Utah native species. Under R657-3's noncontrolled-species default, no certificate of registration is required.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "No snake appears on Virginia's special permit table at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010",
+      "note": "Washington's reptile definition reaches crocodilians and venomous snakes. Constrictors are absent at any length or family.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WI": {
+      "status": "legal",
+      "sourceId": "wi-nr-16-dnr-exotic",
+      "note": "Wisconsin DNR's non-native pet-trade framework, the one that clears corn snake and ball python without a DNR license when captive-bred, is the applicable regime for rosy boa too, since it is not a Wisconsin native species. We did not find a rosy-boa-specific citation and are inferring from the general non-native-reptile category.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)(E)",
+      "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+      "note": "Rosy boa, at 2-3 feet, is well short of West Virginia's six-foot constrictor threshold, the same clause that leaves a full-size boa constrictor unclear here because six feet is a close call for that species. There's no such ambiguity for a rosy boa.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "§ 10(a)(i)",
+      "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

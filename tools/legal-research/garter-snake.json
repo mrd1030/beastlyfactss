@@ -1,0 +1,391 @@
+{
+  "name": "Garter Snake",
+  "scientific": "Thamnophis sirtalis",
+  "encyclopediaId": "garter-snake",
+  "jurisdictions": {
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "note": "Alaska's clean list turns entirely on venom; a garter snake clears it the same way the hognose does.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-native-nongame",
+      "cite": "Ala. Admin. Code r. 220-2-.92; ADCNR hunting & fishing regulations",
+      "note": "Alabama lets residents keep native, non-protected wildlife such as the garter snake within possession limits set by hunting and fishing regulations. A scientific collection permit is only required for species specifically protected as nongame.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AR": {
+      "status": "permit",
+      "sourceId": "ar-unrestricted",
+      "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "permitFor": "personal",
+      "note": "Arkansas's unrestricted list clears several New World colubrid genera by name (Lampropeltis, Pantherophis, Nerodia, and others), but every one of those entries excepts species native to Arkansas, and Thamnophis never appears on the list at all. As Arkansas's own native species, a garter snake isn't covered by the pet-trade clearance and instead needs the state's Permitted Captive Wildlife Species List.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-license-take",
+      "cite": "Ariz. Admin. Code R12-4-406, R12-4-407",
+      "note": "Arizona bars an open season on a few rare native gartersnakes, the Mexican gartersnake and narrow-headed gartersnake, but the common garter snake isn't among them. Taking or handling one requires a valid AZ hunting/fishing license; simple possession of a lawfully-acquired one isn't separately restricted.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-5-60",
+      "cite": "Cal. Code Regs. tit. 14, § 5.60(b)(44), (f)(10)",
+      "quote": "No common gartersnakes (Thamnophis sirtalis) may be taken in San Mateo, Los Angeles, Orange, Riverside, San Diego, and Ventura counties.",
+      "note": "Owning a garter snake is unrestricted; it is not on the Fish & Game Code § 671 restricted species list. Wild collection is a separate question: it requires a sportfishing license, carries a 2-per-day bag/possession limit, and is closed entirely in six Southern California counties where protected look-alike subspecies (including the endangered San Francisco garter snake) occur.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CO": {
+      "status": "legal",
+      "sourceId": "co-unregulated-wildlife",
+      "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+      "note": "Colorado's 'unregulated wildlife' category explicitly includes pet reptiles, and no license is required for private possession. Wild collection of Colorado's own native garter snakes falls under Chapter W-7 (Herpetofauna) instead.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-55-6",
+      "cite": "Regs. Conn. State Agencies § 26-55-6",
+      "note": "Falls outside all four of Connecticut's regulated wild-animal categories: Category One is four dangerous mammal families, Category Two is dangerous reptiles plus the monk parakeet, Category Three is native birds and amphibians, and Category Four is state-listed endangered/threatened/special-concern species. A common garter snake is on none of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "note": "A garter snake fits this exemption from DC's general wild-animal ban squarely.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "banned",
+      "sourceId": "de-native-wildlife",
+      "cite": "Del. Code tit. 7, c. 7; Del. Code tit. 3, c. 72",
+      "note": "Delaware's native-wildlife rules forbid keeping a Delaware-native reptile as a pet, and DNREC's own guidance is explicit that native wildlife isn't for private ownership. A narrow carve-out exists for a captive-bred, aberrantly-colored native snake held under permit, but an ordinary wild-type garter snake doesn't qualify.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Not a reptile of concern; that list covers large invasive constrictors, monitors, and tegus. Florida's captive wildlife rule allows nonvenomous, unprotected reptiles to be kept as personal pets without a license.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "banned",
+      "sourceId": "ga-27-1-28",
+      "cite": "O.C.G.A. § 27-1-28; § 27-5-4",
+      "quote": "poisonous snakes",
+      "note": "Georgia bars possession of nongame wildlife outside a short exempted list that names venomous snakes but not harmless native colubrids, so a garter snake doesn't qualify. Native-reptile permits under § 27-5-4 are issued only for scientific, educational, or exhibition purposes, not casual pet-keeping, and Georgia DNR's own guidance says this holds 'regardless of the origin or morphology' of the animal.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-conditional",
+      "cite": "§ 4-71-6",
+      "quote": "Serpentes (all species)",
+      "note": "Hawaii bans the entire snake suborder outright, with no exception for harmless mainland species. There is no permit path for a pet garter snake in Hawaii.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)",
+      "quote": "\"Dangerous wild animal\" means any of the following:",
+      "note": "The squamate half of the definition is exhaustively enumerated: monitors, helodermatids, the venomous snake families, and a short list of giant constrictors. A garter snake is none of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "IDAPA 13.01.10.010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "note": "Idaho's test is venom, not species or origin, so a garter snake clears the same way a hognose does.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "legal",
+      "sourceId": "il-720-48-10",
+      "cite": "720 ILCS 585/0.1",
+      "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, though, so a municipality can still restrict snake ownership on its own.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-6 through 9-11-8",
+      "quote": "Wolves that are purebred. Bears (all species). Wild cats (all species)... Venomous reptiles. Crocodilians that are at least five (5) feet long.",
+      "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes. Wild collection of Indiana's own native reptiles and amphibians is capped separately at two per day and four per year per species, with a possession limit of four.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)",
+      "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+      "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(t)",
+      "note": "Kentucky's inherently-dangerous-wildlife list reaches Colubridae only when the snake is venomous. A garter snake isn't.",
+      "verifiedOn": "2026-08-27"
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Louisiana's prohibited nonnative reptile list is built around crocodilians, tegus, monitors, the green iguana, and a short list of large or venomous snakes; ordinary colubrids like the garter snake aren't on it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321cmr9-01",
+      "cite": "321 CMR 9.01, Table 10(b)(4)",
+      "quote": "Garter and Ribbon Snakes (Thamnophis spp.)",
+      "note": "Named directly on the license-exemption list, so it may be kept without a permit under M.G.L. c. 131 § 23. Massachusetts works as an allow-list: only animals actually named on it are exempt, and this one is.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "permit",
+      "sourceId": "md-native-herp",
+      "cite": "COMAR 08.03.09 (native reptile and amphibian regulations, adopted 1993)",
+      "permitFor": "personal",
+      "note": "Maryland requires a permit to possess, breed, sell, or trade a species of reptile or amphibian native to the state, and the garter snake is a Maryland native.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ME": {
+      "status": "permit",
+      "sourceId": "me-unrestricted",
+      "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
+      "permitFor": "personal",
+      "note": "Maine's unrestricted-species list runs through every North American colubrid genus commonly kept as a pet, kingsnakes, ratsnakes, hognose, watersnakes, and more, and Thamnophis is conspicuously absent from every entry. A Maine garter snake needs the state's separate captivity permit rather than falling under this pet-trade clearance.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MI": {
+      "status": "legal",
+      "sourceId": "mi-fishing-license",
+      "cite": "Mich. Comp. Laws § 324.43535",
+      "note": "A captive-bred garter snake is an unregulated pet in Michigan. Taking one from the wild is a different matter: it requires a fishing license and falls under a combined 3-per-day/6-in-possession cap for turtles, snakes, and lizards, with per-species sub-limits.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "legal",
+      "sourceId": "mn-346-155",
+      "cite": "§ 346.155",
+      "quote": "all members of the family Felidae except the domestic cat",
+      "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "permit",
+      "sourceId": "mo-3csr10-9",
+      "cite": "3 CSR 10-9.230",
+      "quote": "those species of mammals... and nonvenomous reptiles and amphibians native to Missouri",
+      "permitFor": "personal",
+      "note": "The garter snake is native to Missouri and nonvenomous, which places it in Class I, the tier that needs a simple possession permit rather than being unregulated.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "quote": "Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+      "note": "Mississippi's inherently-dangerous list is entirely mammalian; no reptile is restricted at any size.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(d)(v)",
+      "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+      "note": "Colubridae is cleared as nonvenomous, which covers a garter snake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417; § 153A-131",
+      "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else, including a garter snake, is left to county ordinance.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in North Dakota's captive wildlife chapter.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NE": {
+      "status": "legal",
+      "sourceId": "ne-captive-wildlife",
+      "cite": "163 Neb. Admin. Code, ch. 4, § 008",
+      "note": "Nebraska allows residents to keep native, non-protected wildlife such as the garter snake within possession limits; the captivity ban in this rule targets wolves, skunks, and the cat and bear families, not common native reptiles.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.02(b)(4)",
+      "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+      "note": "New Hampshire's noncontrolled reptile clearance turns on venom, not origin, so a garter snake is unaffected.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "legal",
+      "sourceId": "nj-7-25-4-8",
+      "cite": "N.J.A.C. 7:25-4.8(a)",
+      "note": "Not a potentially dangerous species; that list's only snakes are the venomous families (Elapidae, Viperidae, Crotalidae) plus boomslang, twig snakes, African kraits, and anaconda. A lawfully-acquired garter snake can be kept as a pet. Separately, New Jersey's own exotic-species guidance states plainly, 'It is illegal to take any animal from the wild,' so a wild-caught New Jersey garter snake is off the table even though owning one isn't.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NM": {
+      "status": "unclear",
+      "sourceId": "nm-19-35-7",
+      "note": "New Mexico's exotic wildlife rule sorts species into Groups I through IV by danger level; the garter snake isn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual permit requirements weren't confirmed in this research.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NV": {
+      "status": "legal",
+      "sourceId": "nv-unprotected-reptiles",
+      "cite": "NAC 503.090",
+      "note": "Any reptile not classified as protected, sensitive, threatened, or endangered is unprotected in Nevada, and a common garter snake is not on any of those lists.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "permit",
+      "sourceId": "ny-6nycrr-3-3",
+      "cite": "6 NYCRR § 3.3",
+      "quote": "native snakes shall mean all life stages, including eggs, of the following species: ... common garter snake ... Open season: None.",
+      "permitFor": "personal",
+      "note": "New York's 2006 native-herp law classifies the common garter snake as protected native wildlife with no open season, and DEC's own published guidance says the law 'does not differentiate between wild-caught and captive-bred animals.' DEC issues a possession permit for keeping a limited number of common native herp species, but that permit doesn't allow buying, selling, or breeding, so even a pet-store garter snake sits in a different legal category here than almost anywhere else.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Ohio's restricted-snake list is three venomous families plus two named rear-fanged species plus large constrictors twelve feet and up. A garter snake is none of them.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3",
+      "note": "Non-indigenous reptiles are exempt from Oklahoma's import, breeder's-license, and permit requirements outright. Oklahoma's own native garter snake population instead falls under standard Wildlife Conservation hunting-license rules for wild take.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OR": {
+      "status": "conditional",
+      "sourceId": "or-635-056-0060",
+      "cite": "OAR 635-056-0060(C)",
+      "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species except Boiga irregularis, Lampropeltis getula, L. zonata, and Pituophis catenifer",
+      "note": "Oregon's noncontrolled clearance for this group of colubrids is written for nonnative individuals. No equivalent express clearance was located for a garter snake that is an Oregon native, which instead appears to fall under the state's general nongame-wildlife holding-permit rule once three or more are kept.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "legal",
+      "sourceId": "pa-58-79",
+      "cite": "58 Pa. Code Ch. 79",
+      "note": "Pennsylvania Fish and Boat Commission rules reach only PA-native species and only regulate taking them from the wild, which requires a fishing license. Keeping a captive-bred or pet-store garter snake isn't separately licensed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "banned",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17(A)(4)(b)",
+      "note": "Rhode Island's exempt Colubridae list names sixteen groups of pet-trade snakes by genus, and Thamnophis is not one of them. The regulation states directly that possession of native snakes is restricted to institutions, meaning typical pet ownership of a Rhode Island garter snake isn't permitted.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...15. reptiles 16. amphibians.",
+      "note": "South Carolina exempts reptiles as a class from the import permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only; reptiles fall under separate Game, Fish & Parks rules rather than this permit scheme.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "permit",
+      "sourceId": "tn-70-4-403",
+      "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
+      "permitFor": "personal",
+      "note": "Tennessee's Class II covers native wildlife and requires a Wildlife Possession Permit with microchip or tattoo identification within 30 days. A garter snake, being Tennessee-native, falls in Class II rather than the unregistered Class III that non-native pet reptiles occupy.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-822-101",
+      "note": "Texas's dangerous wild animal statute (Health & Safety Code ch. 822) is a closed list of big carnivores and doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "UT": {
+      "status": "legal",
+      "sourceId": "ut-r657-53",
+      "cite": "Utah Admin. Code R657-53-5",
+      "note": "Non-controlled native reptiles, a category that includes garter snakes, may be possessed without a certificate of registration up to a threshold (three animals for most such species); holding more requires a certificate of registration from the Wildlife Board.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a garter snake.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VT": {
+      "status": "unclear",
+      "sourceId": "vt-10-app-18",
+      "cite": "10 V.S.A. App. § 18",
+      "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the garter snake appears on that list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Family colubridae, only dispholidus typus",
+      "note": "The only colubrid Washington restricts is the boomslang.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WI": {
+      "status": "conditional",
+      "sourceId": "wi-nr16-12",
+      "cite": "Wis. Admin. Code NR 16.12-16.15",
+      "note": "Wisconsin lets residents possess up to five individuals of each non-protected native species, garter snakes included, without a permit, but native reptiles generally may not be bought or sold within the state, so a Wisconsin-kept pet has to come from your own lawful collecting rather than a breeder or shop.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)",
+      "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "Chapter 69, § 10(a)(i)",
+      "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+      "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "ga-dnr-legal-pets": {
+    "title": "Georgia DNR: Guide to Legal Pets",
+    "url": "https://gadnrle.org/legal-pets",
+    "note": "Corn Snake and Milksnake both appear by name on DNR's own prohibited-native-species list, with the page stating plainly that origin or morphology doesn't matter."
+  },
+  "il-herps-act": {
+    "title": "Illinois Administrative Code, Title 17, Part 885 — Herptile Code",
+    "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700885",
+    "note": "Official Joint Committee on Administrative Rules text; §885.20 sets the 8-total/4-per-species cap on native herptiles and §885.80 sets the $50 Herpetoculture Permit that exempts a keeper from it."
+  },
+  "mn-97a-401": {
+    "title": "Minnesota Statutes 2025, Section 97A.401",
+    "url": "https://www.revisor.mn.gov/statutes/cite/97A.401",
+    "note": "Subd. 8 states a pet snake, lizard, or salamander must come from a permitted breeder or have been possessed before August 1, 2021; hosted on the MN Revisor of Statutes' own site."
+  },
+  "ne-163-nac-4-008": {
+    "title": "Nebraska Administrative Code, Title 163, Chapter 4, § 008 — Keeping Wildlife in Captivity",
+    "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
+    "note": "The Captive Wildlife Permit species list in §008.01B names only wild birds and wild mammals; reptiles never appear on it, which is the basis for treating common exotic reptiles as outside this permit system."
+  },
+  "nj-7-25-4-5": {
+    "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
+    "url": "https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf",
+    "note": "Official NJDEP Fish & Wildlife exempted-species list; 4.5 requires a permit for any exotic reptile not named in 4.4's list, which covers Boa constrictor, garter snakes and ribbon snakes but not corn snake, milk snake, or rosy boa."
+  },
+  "pa-exotic-wildlife-permit": {
+    "title": "58 Pa. Code Chapter 147, Subchapter N — Exotic Wildlife Possession",
+    "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter147%2FsubchapNtoc.html&d=reduce",
+    "note": "Official Pennsylvania Code text of the Game Commission's exotic-wildlife permit framework; no dedicated descriptive PGC web page could be confirmed, and the Commission has issued no new permits under this framework since January 1, 2014."
+  },
+  "sc-act177": {
+    "title": "S.C. Code of Regulations, Chapter 123, Article 5 (§§ 123-150 through 123-153.4)",
+    "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf",
+    "note": "Official codified text implementing 2021 Act 177; §123-151.3 carves out captive-bred corn snakes under 20 inches and eastern milksnakes under 10 inches from the general native-reptile sale/possession ban."
+  },
+  "tx-tpwd-nonindigenous": {
+    "title": "TPWD: Nonindigenous Snake Permits (Controlled Exotic Snake Permit)",
+    "url": "https://tpwd.texas.gov/faq/business/permits/nonindigenous_snakes/index.phtml",
+    "note": "Official TPWD FAQ page; the controlled list covers only non-native venomous snakes plus five named large constrictor species, so corn snake, milk snake, and rosy boa fall outside the permit requirement."
+  },
+  "pa-58-79-3": {
+    "title": "58 Pa. Code § 79.3 — Season and Daily Possession Limits (Chapter 79, Reptiles and Amphibians)",
+    "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/058/chapter79/s79.3.html&d=reduce",
+    "note": "Official Pennsylvania Code text; the catch-all 'native species not listed' line sets a 1-per-day/1-in-possession limit, and companion §79.4 requires a permit for continued possession regardless of the animal's origin."
+  },
+  "ut-r657-53-tables": {
+    "title": "Species Tables for Utah's Reptiles and Amphibians",
+    "url": "https://wildlife.utah.gov/reptiles-amphibians/tables",
+    "note": "Official Utah DWR table under R657-53; lists Western milk snake (Lampropeltis gentilis) under 'Limited possession' at 2 daily/yearly and 4 total per species."
+  },
+  "wi-nr-16-12": {
+    "title": "Wisconsin Admin. Code NR 16.12 — Amphibian and Reptile Regulations",
+    "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/12",
+    "note": "Official Wisconsin State Legislature code text; caps take/possession of native, non-listed amphibians, lizards and snakes at 5 individuals per species, with NR 16.13 layering on the purchase restriction for native species."
+  },
+  "az-co43-reptile-regs": {
+    "title": "Arizona Reptile and Amphibian Regulations 2026–2030 (Commission Order 43)",
+    "url": "https://azgfd-portal-wordpress-pantheon.s3.us-west-2.amazonaws.com/wp-content/uploads/2025/11/05144900/2026-2030-Reptile-and-Amphibian-Regulations.pdf",
+    "note": "Official AZGFD regulations booklet effective Jan. 1, 2026; lists rosy boa (Lichanura roseofusca/trivirgata) with a take limit of 2 per year and 4 in possession under a valid hunting license."
+  }
+}
