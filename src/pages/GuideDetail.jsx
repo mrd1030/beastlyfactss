@@ -8,7 +8,7 @@ import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { mdxPosts } from '@/lib/mdxPosts';
-import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
@@ -63,7 +63,7 @@ export default function GuideDetail() {
   // than sitting in the deep-dive list, because it answers a different question
   // from the husbandry articles around it.
   const allRelatedArticles = guide
-    ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
+    ? getRelatedArticleSlugs(guide.id, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');

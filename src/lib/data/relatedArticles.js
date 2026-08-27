@@ -77,25 +77,36 @@ export const RELATED_ARTICLES = {
   'green-iguana': ['iguana-fireskink-quaker-overview', 'green-iguana-cost-guide', 'green-iguana-handling-guide', 'green-iguana-health-issues-guide', 'green-iguana-tank-setup-guide'],
   'fire-skink': ['iguana-fireskink-quaker-overview', 'fire-skink-cost-guide', 'fire-skink-handling-guide', 'fire-skink-health-issues-guide', 'fire-skink-tank-setup-guide'],
   'quaker-parakeet': ['iguana-fireskink-quaker-overview', 'quaker-parakeet-cost-guide', 'quaker-parakeet-handling-guide', 'quaker-parakeet-health-issues-guide', 'quaker-parakeet-tank-setup-guide'],
-  'discus': ['discus-cost-guide', 'discus-feeding-guide', 'discus-handling-guide', 'discus-health-issues-guide', 'discus-tank-setup-guide'],
-  'cardinal-tetra': ['cardinal-tetra-cost-guide', 'cardinal-tetra-feeding-guide', 'cardinal-tetra-handling-guide', 'cardinal-tetra-health-issues-guide', 'cardinal-tetra-tank-setup-guide'],
-  'molly': ['molly-cost-guide', 'molly-feeding-guide', 'molly-handling-guide', 'molly-health-issues-guide', 'molly-tank-setup-guide'],
-  'flying-squirrel': ['flying-squirrel-cost-guide', 'flying-squirrel-feeding-guide', 'flying-squirrel-handling-guide', 'flying-squirrel-health-issues-guide', 'flying-squirrel-tank-setup-guide'],
-  'platy': ['platy-cost-guide', 'platy-feeding-guide', 'platy-handling-guide', 'platy-health-issues-guide', 'platy-tank-setup-guide'],
-  'swordtail': ['swordtail-cost-guide', 'swordtail-feeding-guide', 'swordtail-handling-guide', 'swordtail-health-issues-guide', 'swordtail-tank-setup-guide'],
-  'zebra-danio': ['zebra-danio-cost-guide', 'zebra-danio-feeding-guide', 'zebra-danio-handling-guide', 'zebra-danio-health-issues-guide', 'zebra-danio-tank-setup-guide'],
-  'bristlenose-pleco': ['bristlenose-pleco-cost-guide', 'bristlenose-pleco-feeding-guide', 'bristlenose-pleco-handling-guide', 'bristlenose-pleco-health-issues-guide', 'bristlenose-pleco-tank-setup-guide'],
-  'cherry-shrimp': ['cherry-shrimp-cost-guide', 'cherry-shrimp-feeding-guide', 'cherry-shrimp-handling-guide', 'cherry-shrimp-health-issues-guide', 'cherry-shrimp-tank-setup-guide'],
-  'amano-shrimp': ['amano-shrimp-cost-guide', 'amano-shrimp-feeding-guide', 'amano-shrimp-handling-guide', 'amano-shrimp-health-issues-guide', 'amano-shrimp-tank-setup-guide'],
-  'ghost-shrimp': ['ghost-shrimp-cost-guide', 'ghost-shrimp-feeding-guide', 'ghost-shrimp-handling-guide', 'ghost-shrimp-health-issues-guide', 'ghost-shrimp-tank-setup-guide'],
-  'zebra-finch': ['zebra-finch-cost-guide', 'zebra-finch-feeding-guide', 'zebra-finch-handling-guide', 'zebra-finch-health-issues-guide', 'zebra-finch-tank-setup-guide'],
-  'parrotlet': ['parrotlet-cost-guide', 'parrotlet-feeding-guide', 'parrotlet-handling-guide', 'parrotlet-health-issues-guide', 'parrotlet-tank-setup-guide'],
-  'rat': ['rat-cost-guide', 'rat-feeding-guide', 'rat-handling-guide', 'rat-health-issues-guide', 'rat-tank-setup-guide'],
-  'mouse': ['mouse-cost-guide', 'mouse-feeding-guide', 'mouse-handling-guide', 'mouse-health-issues-guide', 'mouse-tank-setup-guide'],
-  'red-footed-tortoise': ['red-footed-tortoise-cost-guide', 'red-footed-tortoise-feeding-guide', 'red-footed-tortoise-handling-guide', 'red-footed-tortoise-health-issues-guide', 'red-footed-tortoise-tank-setup-guide'],
-  'garter-snake': ['garter-snake-cost-guide', 'garter-snake-feeding-guide', 'garter-snake-handling-guide', 'garter-snake-health-issues-guide', 'garter-snake-tank-setup-guide'],
-  'rosy-boa': ['rosy-boa-cost-guide', 'rosy-boa-feeding-guide', 'rosy-boa-handling-guide', 'rosy-boa-health-issues-guide', 'rosy-boa-tank-setup-guide'],
 };
+
+// The standard 5-piece deep-dive quintet's suffixes, in display order.
+const STANDARD_SUFFIXES = ['cost-guide', 'handling-guide', 'health-issues-guide', 'tank-setup-guide', 'feeding-guide'];
+
+// Auto-detects a guide's standard deep-dive articles by matching mdxPosts
+// slugs against `${guideId}-${suffix}`, so the Deep Dive block starts working
+// the moment a species' articles are written, no entry in RELATED_ARTICLES
+// above required. Only picks up suffixes that actually exist as files, since
+// not every species has all 5 (e.g. some geckos have no feeding guide).
+function getAutoDetectedSlugs(guideId, posts) {
+  const known = new Set(posts.map((p) => p._id));
+  return STANDARD_SUFFIXES
+    .map((suffix) => `${guideId}-${suffix}`)
+    .filter((slug) => known.has(slug));
+}
+
+// The single source GuideDetail.jsx and EncyclopediaAnimal.jsx should call
+// instead of indexing RELATED_ARTICLES directly. Unions the auto-detected
+// quintet with whatever RELATED_ARTICLES already lists (legal guides,
+// disease-specific extras, shared cross-species pieces, or a guide id that
+// doesn't share its articles' slug prefix, like 'dog-german-shepherd' ->
+// 'german-shepherd-feeding-guide'), manual entries first so an existing
+// species' curated order and extras are unaffected by this addition.
+export function getRelatedArticleSlugs(guideId, posts) {
+  const manual = RELATED_ARTICLES[guideId] || [];
+  const manualSet = new Set(manual);
+  const auto = getAutoDetectedSlugs(guideId, posts).filter((slug) => !manualSet.has(slug));
+  return [...manual, ...auto];
+}
 
 // Reverse lookup: given a deep-dive article's own slug (e.g. the leopard
 // gecko feeding guide), find its sibling deep-dive articles for the same
@@ -103,12 +114,25 @@ export const RELATED_ARTICLES = {
 // "Deep Dive" link doesn't lose that thread once they're actually on the
 // article. A slug can appear under more than one guide (shared pieces like
 // snake-brumation-guide), so this unions every match.
-export function getDeepDiveSiblings(slug) {
+export function getDeepDiveSiblings(slug, posts) {
   if (!slug) return [];
   const siblings = new Set();
   for (const articles of Object.values(RELATED_ARTICLES)) {
     if (articles.includes(slug)) {
       articles.forEach((a) => { if (a !== slug) siblings.add(a); });
+    }
+  }
+  // Auto-detected quintet, same mechanism as getRelatedArticleSlugs: strip a
+  // known suffix off this slug to get a candidate guide id, so a species with
+  // no RELATED_ARTICLES entry (the normal case now) still gets working
+  // sibling navigation while reading one of its own articles.
+  if (posts) {
+    for (const suffix of STANDARD_SUFFIXES) {
+      if (slug.endsWith(`-${suffix}`)) {
+        const guideId = slug.slice(0, -(suffix.length + 1));
+        getAutoDetectedSlugs(guideId, posts).forEach((a) => { if (a !== slug) siblings.add(a); });
+        break;
+      }
     }
   }
   return [...siblings];

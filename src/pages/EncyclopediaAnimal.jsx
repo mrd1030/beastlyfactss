@@ -9,7 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
-import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
@@ -85,7 +85,7 @@ export default function EncyclopediaAnimal() {
   // Mixed in with husbandry articles they read as one more thing to get round
   // to, when they are the one link on the page that can tell a reader they
   // cannot legally keep the animal at all.
-  const allRelatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
