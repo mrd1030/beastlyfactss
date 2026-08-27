@@ -1,5 +1,31 @@
 export const invertebrateEncyclopedia = [
   {
+    id: "amano-shrimp", name: "Amano Shrimp", scientific: "Caridina multidentata",
+    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner/Intermediate", guideId: "amano-shrimp", available: true, image: "/assets/guides/amano-shrimp.jpg",
+    bio: {
+      overview: "The Amano shrimp is the largest shrimp commonly kept in freshwater aquariums and arguably the single best algae eater in the hobby, tackling hair, thread, and even tough beard algae that most fish and other shrimp ignore. It gets its name from Takashi Amano, the Japanese aquascaper who began using it to keep his pioneering planted tanks algae-free in the early 1980s. Unlike the cherry shrimp it's often sold alongside, the Amano shrimp cannot complete its life cycle in freshwater: its larvae hatch needing brackish to full-strength salt water to develop, so almost every Amano shrimp in the trade is wild-caught rather than captive-bred.",
+      origin: "Japan (southwestern) and Taiwan",
+      habitat: "Fast-flowing freshwater streams and rivers",
+      adultSize: "Up to about 2 inches (5 cm); the largest freshwater shrimp species commonly kept in aquariums",
+      wildDiet: "Algae and organic biofilm grazed from rocks and streambeds in fast-flowing water",
+      wildLifespan: "2-3 years typically in captivity (occasionally up to 5 with excellent, stable conditions)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "cherry-shrimp", name: "Cherry Shrimp", scientific: "Neocaridina davidi",
+    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner", guideId: "cherry-shrimp", available: true, image: "/assets/guides/cherry-shrimp.jpg",
+    bio: {
+      overview: "The cherry shrimp is one of the most popular freshwater aquarium shrimp species in the hobby, prized for breeding readily in plain freshwater and for the huge range of selectively bred colors developed from a single dull, translucent wild form. Native to streams and rivers in Taiwan and eastern China, wild cherry shrimp are a camouflaged greenish-brown, nothing like the vivid reds, blues, and yellows sold in stores today. They spend their days grazing biofilm and algae off any surface they can reach, doing genuine cleanup work in a planted tank while asking for almost nothing in return.",
+      origin: "Taiwan and eastern China",
+      habitat: "Streams, rivers, ponds, and lakes with dense vegetation, leaf litter, and moderate current",
+      adultSize: "Up to about 1.5 inches (4 cm); females larger than males",
+      wildDiet: "Biofilm, algae, and detritus grazed from submerged surfaces (does not eat live plants)",
+      wildLifespan: "1-2 years",
+      conservation: "Not formally assessed (IUCN); wild populations not considered at risk",
+    },
+  },
+  {
     id: "emperor-scorpion", name: "Emperor Scorpion", scientific: "Pandinus imperator",
     category: "Invertebrates", emoji: "🦂", difficulty: "Beginner/Intermediate", guideId: "emperor-scorpion", available: true, image: "/assets/guides/emperor-scorpion.jpg",
     bio: {
@@ -10,6 +36,19 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Insects, worms, small lizards, and small mammals",
       wildLifespan: "5-8 years (up to 10 years in captivity)",
       conservation: "Appendix II (CITES)",
+    },
+  },
+  {
+    id: "ghost-shrimp", name: "Ghost Shrimp", scientific: "Palaemonetes spp.",
+    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner", guideId: "ghost-shrimp", available: true, image: "/assets/guides/ghost-shrimp.jpg",
+    bio: {
+      overview: "Ghost shrimp are small, nearly transparent freshwater shrimp from the genus Palaemonetes, sold under names like ghost shrimp and glass shrimp and often mixed across several similar-looking species in the same shipment. Unlike the cherry shrimp and Amano shrimp they're commonly sold beside, ghost shrimp belong to an entirely different, unrelated shrimp family (Palaemonidae rather than Atyidae) that took its own separate evolutionary path from salt water into fresh water. Prized mainly for being cheap, hardy, and tolerant of imperfect water, they're sold in bulk as feeder stock for larger fish as often as they're kept as pets in their own right, though a translucent, active little scavenger is a genuinely appealing tank resident for keepers who look past the feeder-aisle reputation.",
+      origin: "North America (the most common aquarium species, Palaemonetes paludosus, ranges the Atlantic coastal plain from Florida to New Jersey)",
+      habitat: "Freshwater ponds, lakes, and streams with dense submerged vegetation",
+      adultSize: "1-2 inches (2.5-5 cm); females larger than males",
+      wildDiet: "Algae, detritus, small aquatic invertebrates, and plant matter (omnivorous scavenger)",
+      wildLifespan: "About 1 year in the wild (6-13 months); commonly 1-2 years in captivity",
+      conservation: "Not formally assessed (IUCN); secure and widespread in its native range",
     },
   },
   {
@@ -101,45 +140,6 @@ export const invertebrateEncyclopedia = [
       wildDiet: "Insects, small lizards, frogs, mice, and birds (large species)",
       wildLifespan: "5-30 years; females live far longer than males",
       conservation: "Varies; many species listed in Appendix II (CITES); some Endangered",
-    },
-  },
-  {
-    id: "cherry-shrimp", name: "Cherry Shrimp", scientific: "Neocaridina davidi",
-    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner", guideId: "cherry-shrimp", available: true, image: "/assets/guides/cherry-shrimp.jpg",
-    bio: {
-      overview: "The cherry shrimp is one of the most popular freshwater aquarium shrimp species in the hobby, prized for breeding readily in plain freshwater and for the huge range of selectively bred colors developed from a single dull, translucent wild form. Native to streams and rivers in Taiwan and eastern China, wild cherry shrimp are a camouflaged greenish-brown, nothing like the vivid reds, blues, and yellows sold in stores today. They spend their days grazing biofilm and algae off any surface they can reach, doing genuine cleanup work in a planted tank while asking for almost nothing in return.",
-      origin: "Taiwan and eastern China",
-      habitat: "Streams, rivers, ponds, and lakes with dense vegetation, leaf litter, and moderate current",
-      adultSize: "Up to about 1.5 inches (4 cm); females larger than males",
-      wildDiet: "Biofilm, algae, and detritus grazed from submerged surfaces (does not eat live plants)",
-      wildLifespan: "1-2 years",
-      conservation: "Not formally assessed (IUCN); wild populations not considered at risk",
-    },
-  },
-  {
-    id: "amano-shrimp", name: "Amano Shrimp", scientific: "Caridina multidentata",
-    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner/Intermediate", guideId: "amano-shrimp", available: true, image: "/assets/guides/amano-shrimp.jpg",
-    bio: {
-      overview: "The Amano shrimp is the largest shrimp commonly kept in freshwater aquariums and arguably the single best algae eater in the hobby, tackling hair, thread, and even tough beard algae that most fish and other shrimp ignore. It gets its name from Takashi Amano, the Japanese aquascaper who began using it to keep his pioneering planted tanks algae-free in the early 1980s. Unlike the cherry shrimp it's often sold alongside, the Amano shrimp cannot complete its life cycle in freshwater: its larvae hatch needing brackish to full-strength salt water to develop, so almost every Amano shrimp in the trade is wild-caught rather than captive-bred.",
-      origin: "Japan (southwestern) and Taiwan",
-      habitat: "Fast-flowing freshwater streams and rivers",
-      adultSize: "Up to about 2 inches (5 cm); the largest freshwater shrimp species commonly kept in aquariums",
-      wildDiet: "Algae and organic biofilm grazed from rocks and streambeds in fast-flowing water",
-      wildLifespan: "2-3 years typically in captivity (occasionally up to 5 with excellent, stable conditions)",
-      conservation: "Least Concern (IUCN)",
-    },
-  },
-  {
-    id: "ghost-shrimp", name: "Ghost Shrimp", scientific: "Palaemonetes spp.",
-    category: "Invertebrates", emoji: "🦐", difficulty: "Beginner", guideId: "ghost-shrimp", available: true, image: "/assets/guides/ghost-shrimp.jpg",
-    bio: {
-      overview: "Ghost shrimp are small, nearly transparent freshwater shrimp from the genus Palaemonetes, sold under names like ghost shrimp and glass shrimp and often mixed across several similar-looking species in the same shipment. Unlike the cherry shrimp and Amano shrimp they're commonly sold beside, ghost shrimp belong to an entirely different, unrelated shrimp family (Palaemonidae rather than Atyidae) that took its own separate evolutionary path from salt water into fresh water. Prized mainly for being cheap, hardy, and tolerant of imperfect water, they're sold in bulk as feeder stock for larger fish as often as they're kept as pets in their own right, though a translucent, active little scavenger is a genuinely appealing tank resident for keepers who look past the feeder-aisle reputation.",
-      origin: "North America (the most common aquarium species, Palaemonetes paludosus, ranges the Atlantic coastal plain from Florida to New Jersey)",
-      habitat: "Freshwater ponds, lakes, and streams with dense submerged vegetation",
-      adultSize: "1-2 inches (2.5-5 cm); females larger than males",
-      wildDiet: "Algae, detritus, small aquatic invertebrates, and plant matter (omnivorous scavenger)",
-      wildLifespan: "About 1 year in the wild (6-13 months); commonly 1-2 years in captivity",
-      conservation: "Not formally assessed (IUCN); secure and widespread in its native range",
     },
   },
 ];

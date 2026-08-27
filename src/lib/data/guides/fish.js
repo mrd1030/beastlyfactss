@@ -100,6 +100,106 @@ export const fishGuides = [
     ],
   },
   {
+    id: "bristlenose-pleco",
+    name: "Bristlenose Pleco",
+    emoji: "🐟",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/bristlenose-pleco.jpg",
+    tagline: "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!",
+    funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    // Priced for a single bristlenose, the beginner-appropriate pleco species.
+    costs: {
+      setup: [
+        { item: "20-30 gallon tank", low: 90, high: 170 },
+        { item: "Filter sized above the tank minimum", low: 30, high: 50 },
+        { item: "Aquarium heater", low: 20, high: 35 },
+        { item: "Driftwood (required, not decorative) and caves", low: 25, high: 50 },
+      ],
+      annual: [
+        { item: "Algae wafers + fresh vegetables", low: 30, high: 60 },
+        { item: "Water conditioner and test kit", low: 15, high: 25 },
+      ],
+    },
+    sections: {
+      housing: "A single adult bristlenose needs at least 20 gallons, and 30 is a genuinely better long-term minimum given how much waste one fish produces relative to its size. Keep water heated between 74 and 82 degrees F with a filter sized above what the tank's gallon rating alone would suggest, since bristlenose plecos are messy eaters. Driftwood is not optional decor for this species: they rasp wood fiber for real digestive benefit, and a tank without it tends to produce a duller, less healthy fish over time. Add caves, PVC pipe, or dense decor for daytime hiding, since bristlenose are nocturnal and spend most of the day tucked out of sight, becoming active once the lights go down.",
+      diet: "Bristlenose plecos are often sold as if algae alone will feed them, and that's a genuine myth: tank algae isn't enough on its own for an adult, and a pleco fed only on what it can graze from the glass typically ends up with a sunken belly and a shortened lifespan. Sinking algae wafers should form the dietary staple, supplemented several times a week with blanched zucchini, cucumber, or sweet potato. A small amount of occasional protein, like frozen bloodworms or brine shrimp, rounds out the diet without overdoing it, since bristlenose stay primarily plant-based grazers even as adults.",
+      enrichment: "The single best enrichment for a bristlenose is simply letting it do what it evolved to do: grazing algae and biofilm off glass, decor, and especially driftwood through the night. They're peaceful, low-key tankmates for almost any non-aggressive community fish, and a mature male's branching facial bristles, used to signal sex and spar with rival males, are one of the more distinctive things to watch develop as a juvenile grows up. Breeding is a real possibility even in a community tank: males are cave spawners that guard and fan a clutch of eggs alone once a female has laid them, a genuine bit of solo paternal care to witness if you keep more than one.",
+      health: "Bristlenose plecos, like corydoras catfish, are scaleless and unusually sensitive to copper-based medications, so any ich or parasite treatment needs to be checked for pleco safety before it goes in the tank. Ich and fungal infections both follow poor water quality more than anything else. The biggest real health risk with any pleco, bristlenose included, is nutritional: an adult fed algae alone, with no wafers, vegetables, or driftwood to rasp, declines over months rather than failing suddenly, which makes the problem easy to miss until a fish is already in poor shape. Buying a pleco without confirming the exact species is the other major risk here, since a juvenile common pleco and a juvenile bristlenose can look deceptively similar at an inch or two long in a store tank, and only one of them stays that size.",
+      checklist: [
+        "20-30 gallon tank",
+        "Heater set to 74-82°F",
+        "Filter sized above the tank's gallon minimum",
+        "Driftwood (required for digestion, not just decor)",
+        "Caves or PVC pipe for daytime hiding",
+        "Sinking algae wafers as dietary staple",
+        "Blanched zucchini, cucumber, or sweet potato",
+        "Occasional bloodworms or brine shrimp",
+        "Water test kit and conditioner",
+        "Confirm species before buying (bristlenose vs. common pleco)",
+      ],
+    },
+    faqs: [
+      { q: "Will a pleco stay small in my tank?", a: "Only if it's actually a bristlenose. The classic cheap 'plecostomus' sold as a tiny algae-eater is usually a common pleco or a related Pterygoplichthys species, both of which grow to 12 to 24 inches and need a 75-gallon-or-larger tank as an adult. A bristlenose pleco is the species that genuinely stays small, topping out around 4 to 6 inches." },
+      { q: "How can I tell a bristlenose pleco from a common pleco?", a: "At the size stores sell them, it's genuinely difficult, which is exactly the problem. Ask the store directly for the species name rather than just 'pleco,' and be skeptical of any unlabeled 'algae eater' sold at an inch or two long, since that's precisely the size both a bristlenose and a common pleco start out at." },
+      { q: "Do plecos only eat algae?", a: "No, and this is a common misconception. Tank algae alone isn't a complete diet for an adult of any pleco species. Sinking algae wafers and regular blanched vegetables need to be the actual dietary staple, with tank algae as a bonus rather than the main course." },
+      { q: "Why is my bristlenose pleco hiding all day?", a: "This is normal, not a sign of stress. Bristlenose plecos are nocturnal and spend daylight hours tucked into caves or driftwood, becoming active and visibly grazing once the lights go down." },
+      { q: "Can bristlenose plecos live with corydoras catfish?", a: "Yes, this is a genuinely good pairing. Both are peaceful, bottom-dwelling, scaleless catfish with similar water needs, and since [corydoras](/guides/corydoras-catfish/) forage the substrate while bristlenose graze surfaces and wood, they're not competing for the same food or space." },
+      { q: "How big does a bristlenose pleco get?", a: "4 to 6 inches for life, which is exactly what makes it the pleco worth recommending to a beginner. Compare that to a common pleco, which is regularly sold at the same tiny size but grows to 12 to 24 inches." },
+    ],
+  },
+  {
+    id: "cardinal-tetra",
+    name: "Cardinal Tetra",
+    emoji: "🐠",
+    difficulty: "Beginner-Intermediate",
+    petType: "Fish",
+    image: "/assets/guides/cardinal-tetra.jpg",
+    tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
+    funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
+    // Verified against real research in the cardinal tetra deep-dive articles
+    // (content/guides/cardinal-tetra-cost-guide.mdx and siblings).
+    costs: {
+      setup: [
+        { item: "10-20 gallon tank", low: 20, high: 150 },
+        { item: "Aquarium heater", low: 18, high: 30 },
+        { item: "Gentle filter", low: 8, high: 15 },
+        { item: "Dense live plants", low: 18, high: 35 },
+      ],
+      annual: [
+        { item: "Micro-pellets + baby brine shrimp", low: 15, high: 30 },
+        { item: "Water conditioner", low: 10, high: 15 },
+        { item: "Water test kit", low: 25, high: 40 },
+      ],
+    },
+    sections: {
+      housing: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more; cardinals are intensely schooling and look washed-out and nervous in small numbers. Keep water heated between 73 and 81 degrees F, a touch warmer-tolerant than neon tetra, which makes cardinals a slightly better fit for a warmer community tank. Dark substrate and dense planting show off their color best and give a school somewhere to retreat.",
+      diet: "Cardinal tetras are omnivores that do well on high-quality micro-pellets or crushed flake, with baby brine shrimp or micro daphnia as valuable supplements. Feed small amounts once or twice daily; overfeeding fouls water quickly relative to how little this species actually needs.",
+      enrichment: "A school of 8 to 10 or more moving in tight formation is both the visual appeal and a genuine stress-reducer for the individual fish. Dense plants and driftwood recreate the dappled light of their native blackwater streams. Peaceful and non-aggressive, cardinals make an easy community fish once past the fragile early-cycling period, just avoid anything large enough to see them as food.",
+      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. A 2008 toxicology study found cardinal tetras unusually ammonia-tolerant but genuinely nitrite-sensitive (LC50 just 1.1 mg/L), which is why an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two; always confirm a completed nitrogen cycle, especially for nitrite, before stocking.",
+      checklist: [
+        "10-20 gallon fully cycled tank",
+        "Group of 8-10+ cardinal tetras",
+        "Heater set to 73-81°F",
+        "Gentle filter",
+        "Dense live plants",
+        "Dark substrate",
+        "Micro-pellet or crushed flake food",
+        "Water test kit (confirm cycling before stocking)",
+        "Water conditioner",
+        "Weekly 20-25% water changes",
+      ],
+    },
+    faqs: [
+      { q: "What's the difference between a cardinal tetra and a neon tetra?", a: "Look at the red stripe. On a cardinal tetra it runs the full length of the body; on a [neon tetra](/guides/neon-tetra/) the red only covers roughly the back half, with the front half showing just the blue stripe. Cardinals also run slightly larger and tolerate marginally warmer water, which matters if you're stocking a warmer community tank." },
+      { q: "How many cardinal tetras should I get?", a: "At least 6, ideally 8 to 10 or more if the tank allows. Like most tetras, they're intensely schooling fish that show noticeably better color and confidence in a larger group than in a small cluster." },
+      { q: "Are cardinal tetras harder to keep than neon tetras?", a: "Only slightly, and mostly for historical reasons: more of the cardinal tetra supply has traditionally been wild-collected rather than farmed, which can mean a bit more transport stress reaching stores. Tank-raised stock has become widely available and is just as forgiving as neon tetra once past the same fragile early-cycling window both species share." },
+      { q: "How long do cardinal tetras live?", a: "4 to 5 years is the commonly cited range in a typical home aquarium; some sources report up to 10 years under very stable, low-stress conditions, though that's closer to a best-case outcome than a typical one." },
+      { q: "Do cardinal tetras need a fully cycled tank?", a: "Yes, without exception. Cardinal tetras are unusually sensitive to ammonia and nitrite spikes, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner losing an entire school within days." },
+    ],
+  },
+  {
     id: "corydoras-catfish",
     name: "Corydoras Catfish",
     emoji: "🐟",
@@ -148,6 +248,57 @@ export const fishGuides = [
       { q: "How long do corydoras live?", a: "5 to 10 years is typical with good care, and some especially well-kept individuals have reached 15 years, which is unusually long for a small aquarium fish." },
       { q: "Are corydoras catfish good pets for beginners?", a: "Yes, genuinely. They're peaceful, hardy, and among the most beginner-friendly community fish available, as long as you commit to a proper school of six or more and soft substrate for their barbels. The main mistake beginners make is buying just one or two, which leaves them visibly stressed." },
       { q: "Can corydoras live with a bristlenose pleco?", a: "Yes, genuinely well. Both are peaceful, bottom-dwelling, scaleless catfish that need similar water quality, and they're not really in competition since corydoras sift the substrate for food while a [bristlenose pleco](/guides/bristlenose-pleco/) grazes algae off glass, decor, and driftwood. Just remember both are sensitive to copper-based medications, so double-check any treatment before dosing a shared tank." },
+    ],
+  },
+  {
+    id: "discus",
+    name: "Discus",
+    emoji: "🐠",
+    difficulty: "Intermediate-Advanced",
+    petType: "Fish",
+    image: "/assets/guides/discus.jpg",
+    tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
+    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
+    // Verified against real research in the discus deep-dive articles
+    // (content/guides/discus-cost-guide.mdx and siblings) - a proper 55-75
+    // gallon setup with filtration sized well above tank volume realistically
+    // runs $600-800, not the $200-450 first-draft estimate.
+    costs: {
+      setup: [
+        { item: "55-75 gallon tall tank (group of 6)", low: 290, high: 450 },
+        { item: "Heater rated for sustained 82-86°F", low: 18, high: 30 },
+        { item: "Canister filter, sized well above tank volume", low: 250, high: 320 },
+        { item: "RO/DI unit or water softening (if tap is hard)", low: 70, high: 150 },
+      ],
+      annual: [
+        { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
+        { item: "Water test kit and conditioner", low: 25, high: 40 },
+      ],
+    },
+    sections: {
+      housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
+      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers, best rotated with other foods rather than fed as beef-heart alone given real fat and calcium-phosphorus caveats. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for about a month total, most intensively through the first two weeks and weaning through weeks three and four, a genuine and peer-reviewed form of parental care rather than hobbyist folklore.",
+      enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
+      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and has historically been blamed on poor water quality, stress, and diet-related calcium-phosphorus imbalance; a controlled 2019 study specifically tested severe dietary calcium deficiency over 16 weeks and found it did not produce the disease on its own, so water quality and stress remain the better-supported causes. Catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
+      checklist: [
+        "55-75 gallon tall tank (group of 6+)",
+        "Heater holding a steady 82-86°F",
+        "Strong but gentle canister filtration",
+        "RO/DI unit or water softener (if needed for soft, acidic water)",
+        "Frequent large water changes (25-50% every 2-3 days in serious setups)",
+        "Discus pellets, frozen bloodworms, and/or beef-heart mix",
+        "Bare-bottom or fine sand substrate for easy cleaning",
+        "Driftwood and broad-leafed plants for cover",
+        "Water test kit and conditioner",
+        "Warm-water-tolerant, peaceful tankmates only",
+      ],
+    },
+    faqs: [
+      { q: "Can discus live with neon tetras?", a: "Not well, long term. Discus need sustained 82 to 86°F water, and neon tetras genuinely struggle at the top of that range, so the classic community pairing is more of a temperature compromise than an ideal setup for either fish. [Cardinal tetras](/guides/cardinal-tetra/) tolerate the warmth noticeably better and are a more honest tankmate choice." },
+      { q: "How can I tell if my discus is male or female?", a: "It's genuinely difficult. Discus show almost no reliable external difference between sexes outside of breeding, when the genital papilla shape differs (males pointed, females rounder). Most keepers can't sex a non-breeding discus with confidence, and that's normal, not a sign you're missing something obvious." },
+      { q: "Why is my discus hiding and not eating?", a: "Discus are easily stressed by sudden movement, bright light, poor water quality, or a tank in a high-traffic area, and hiding with reduced appetite is usually the first visible sign. Check water parameters first, since ammonia or nitrite swings are a common trigger, then consider whether the tank's placement or a recent disturbance is the cause." },
+      { q: "How is a discus different from an angelfish?", a: "Both are Amazonian cichlids, but discus need meaningfully warmer, softer, cleaner water and are considered the more demanding of the two by a real margin, not just reputation. [Angelfish](/guides/angelfish/) are hardier, tolerate a wider temperature range, and are the more forgiving entry point into keeping a tall-bodied South American cichlid." },
+      { q: "How long do discus live?", a: "10 to 15 years with excellent, stable care, meaningfully shorter under fluctuating water quality. Discus reward consistency more than almost any other common aquarium fish; the fish that struggle are usually the ones kept in a tank that's clean one week and neglected the next." },
     ],
   },
   {
@@ -303,6 +454,58 @@ export const fishGuides = [
     ],
   },
   {
+    id: "molly",
+    name: "Molly",
+    emoji: "🐠",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/molly.jpg",
+    tagline: "The hardy, prolific livebearer with a genuine tolerance for brackish water!",
+    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
+    // Verified against real research in the molly deep-dive articles
+    // (content/guides/molly-cost-guide.mdx and siblings). The salt claim in
+    // particular was corrected: real sources genuinely disagree on whether
+    // standing salt dosing benefits a healthy tank, it isn't settled fact.
+    costs: {
+      setup: [
+        { item: "20 gallon tank", low: 50, high: 150 },
+        { item: "Aquarium heater", low: 15, high: 30 },
+        { item: "Filter sized to tank/bioload", low: 45, high: 60 },
+        { item: "Aquarium salt (long-lasting supply, optional)", low: 20, high: 22 },
+      ],
+      annual: [
+        { item: "Flake/pellet food with vegetable content", low: 25, high: 50 },
+        { item: "Water conditioner", low: 10, high: 15 },
+        { item: "Water test kit", low: 25, high: 40 },
+      ],
+    },
+    sections: {
+      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. Mollies are naturally a brackish-water species, and some keepers add a small amount of aquarium salt (roughly a tablespoon per 5 gallons is a common dose), but whether a healthy freshwater tank actually needs it is genuinely disputed: consistent water changes and stable parameters accomplish the same thing for many keepers without salt's downsides for live plants and snails. Lifespan is typically 3 to 5 years, up to 5 to 7 with excellent, stable water quality.",
+      diet: "Mollies need more plant matter than most livebearers - a flake or pellet food with a real vegetable or algae component, not just protein, is important. A diet that's protein-heavy with no vegetable content is one of the most common molly-specific mistakes and drives real digestive and health problems over time.",
+      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female's age, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
+      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low, low pH or mineral hardness, or unstable water quality; correcting those usually resolves it. Fancy mollies bred overseas in harder, mineral-rich water are especially prone to it when sold into softer home tap water. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
+      checklist: [
+        "20 gallon tank (more for sailfin varieties or a growing colony)",
+        "Heater set to 72-78°F",
+        "Filter sized to the tank and bioload",
+        "Aquarium salt (optional, disputed benefit; 1 tbsp per 5 gal if used)",
+        "Flake/pellet food with real vegetable content",
+        "Dense planting (fry cover)",
+        "Water test kit and conditioner",
+        "Single-sex group, or a plan for population growth",
+        "Weekly 20-25% water changes",
+      ],
+    },
+    faqs: [
+      { q: "How can I tell if my molly is male or female?", a: "Easily, the same way as with guppies. Males have a modified, pointed anal fin called a gonopodium; females have a fuller, rounder body and a dark \"gravid spot\" near the vent, especially visible when pregnant. This is one of the most straightforward sexing calls in the livebearer family." },
+      { q: "Do mollies really need aquarium salt?", a: "Not strictly, and it's genuinely disputed among experienced keepers. Mollies naturally inhabit brackish coastal waters and tolerate salt well, commonly around a tablespoon per 5 gallons if you use it, but some livebearer specialists argue consistent water changes accomplish the same thing without salt's downsides for live plants and snails. This is still a real point of difference from guppies and most other common livebearers, which don't tolerate salt the same way at all." },
+      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely tolerate brackish water in a way [guppies](/guides/guppy/) don't. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
+      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue most often caused by water that's too cold, low pH or mineral hardness, or unstable water quality generally. Fancy mollies bred overseas in harder water are especially prone to it once sold into softer home tap water. Check and correct temperature first, then pH, hardness, and general water parameters; most cases resolve once conditions stabilize." },
+      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
+      { q: "What's the difference between a molly and a swordtail?", a: "Size and shape, mainly. A [swordtail](/guides/swordtail/) is more elongated and reaches 5 to 6 inches including the male's namesake tail extension, next to a molly's stockier 3 to 4.5 inches. The two also can't interbreed the way platies and swordtails do, mollies are a different genus (Poecilia) than swordtails and platies (Xiphophorus), so crossbreeding between a molly and a swordtail doesn't happen." },
+    ],
+  },
+  {
     id: "neon-tetra",
     name: "Neon Tetra",
     emoji: "🐠",
@@ -400,159 +603,6 @@ export const fishGuides = [
       { q: "Can oscars live with other fish?", a: "Only with similarly sized, robust tankmates such as larger catfish, silver dollars, or other comparably sized Central and South American cichlids. Small or slow fish will be eaten or bullied." },
       { q: "What is hole-in-the-head disease?", a: "A condition causing pitting lesions on the head and lateral line, strongly associated with poor water quality, old-tank syndrome, and nutritional gaps, especially an all-feeder-fish diet. Prevention centers on strong filtration, regular water changes, and a varied high-quality diet." },
       { q: "Are oscars good pets for beginners?", a: "Not really, despite how small they look in the pet store. An oscar needs 55 to 75+ gallons as an adult, produces a heavy bioload, and can live 10 to 20 years. They're better suited to someone who's already run a smaller tank successfully and is ready to commit to the space and filtration a big, intelligent cichlid needs." },
-    ],
-  },
-  {
-    id: "discus",
-    name: "Discus",
-    emoji: "🐠",
-    difficulty: "Intermediate-Advanced",
-    petType: "Fish",
-    image: "/assets/guides/discus.jpg",
-    tagline: "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!",
-    funFact: "Newly hatched discus fry feed on a nutrient-rich mucus secreted from both parents' skin for their first one to two weeks of life, a form of direct parental feeding called 'discus milk' that's genuinely rare among fish.",
-    // Verified against real research in the discus deep-dive articles
-    // (content/guides/discus-cost-guide.mdx and siblings) - a proper 55-75
-    // gallon setup with filtration sized well above tank volume realistically
-    // runs $600-800, not the $200-450 first-draft estimate.
-    costs: {
-      setup: [
-        { item: "55-75 gallon tall tank (group of 6)", low: 290, high: 450 },
-        { item: "Heater rated for sustained 82-86°F", low: 18, high: 30 },
-        { item: "Canister filter, sized well above tank volume", low: 250, high: 320 },
-        { item: "RO/DI unit or water softening (if tap is hard)", low: 70, high: 150 },
-      ],
-      annual: [
-        { item: "Discus pellets or beef-heart mix", low: 240, high: 480 },
-        { item: "Water test kit and conditioner", low: 25, high: 40 },
-      ],
-    },
-    sections: {
-      housing: "A 55 to 75 gallon tank is the minimum for a proper group of 6, and taller, deeper tanks are strongly preferred over long ones since discus are a tall-bodied fish. Keep water heated between 82 and 86 degrees F, meaningfully warmer than most community tropical fish, which is exactly why tankmate choice is narrower than it looks. Soft, slightly acidic water (pH 6-7) mimicking Amazon blackwater is important; hard tap water often needs an RO/DI unit or a water softener to keep discus healthy long term.",
-      diet: "Discus do best on a high-protein diet: quality discus pellets, frozen bloodworms and brine shrimp, and the classic beef-heart mix used by experienced keepers, best rotated with other foods rather than fed as beef-heart alone given real fat and calcium-phosphorus caveats. Feed small amounts multiple times a day rather than one large feeding. Fry are fed by both parents through a nutrient-rich skin mucus for about a month total, most intensively through the first two weeks and weaning through weeks three and four, a genuine and peer-reviewed form of parental care rather than hobbyist folklore.",
-      enrichment: "Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group of 6 or more rather than alone or in pairs. They're easily startled by sudden movement and bright light, so a calm room and a tank kept out of a high-traffic path reduces stress noticeably. Dense broad-leafed planting (Amazon sword, anubias) and driftwood give a shy group somewhere to retreat, closer to their native blackwater look than an open tank.",
-      health: "Hexamita infection, known as hole-in-the-head disease, causes pitting around the head and lateral line and has historically been blamed on poor water quality, stress, and diet-related calcium-phosphorus imbalance; a controlled 2019 study specifically tested severe dietary calcium deficiency over 16 weeks and found it did not produce the disease on its own, so water quality and stress remain the better-supported causes. Catch it early and it's treatable, but a vet or experienced aquatic specialist should confirm before treating. Discus carry a thick protective slime coat, and anything that damages it, rough handling or poor water, opens the door to secondary bacterial or fungal infection. This is not a fish for an uncycled or newly established tank; ammonia and nitrite sensitivity is high, and sudden water-quality swings are a common cause of unexplained decline.",
-      checklist: [
-        "55-75 gallon tall tank (group of 6+)",
-        "Heater holding a steady 82-86°F",
-        "Strong but gentle canister filtration",
-        "RO/DI unit or water softener (if needed for soft, acidic water)",
-        "Frequent large water changes (25-50% every 2-3 days in serious setups)",
-        "Discus pellets, frozen bloodworms, and/or beef-heart mix",
-        "Bare-bottom or fine sand substrate for easy cleaning",
-        "Driftwood and broad-leafed plants for cover",
-        "Water test kit and conditioner",
-        "Warm-water-tolerant, peaceful tankmates only",
-      ],
-    },
-    faqs: [
-      { q: "Can discus live with neon tetras?", a: "Not well, long term. Discus need sustained 82 to 86°F water, and neon tetras genuinely struggle at the top of that range, so the classic community pairing is more of a temperature compromise than an ideal setup for either fish. [Cardinal tetras](/guides/cardinal-tetra/) tolerate the warmth noticeably better and are a more honest tankmate choice." },
-      { q: "How can I tell if my discus is male or female?", a: "It's genuinely difficult. Discus show almost no reliable external difference between sexes outside of breeding, when the genital papilla shape differs (males pointed, females rounder). Most keepers can't sex a non-breeding discus with confidence, and that's normal, not a sign you're missing something obvious." },
-      { q: "Why is my discus hiding and not eating?", a: "Discus are easily stressed by sudden movement, bright light, poor water quality, or a tank in a high-traffic area, and hiding with reduced appetite is usually the first visible sign. Check water parameters first, since ammonia or nitrite swings are a common trigger, then consider whether the tank's placement or a recent disturbance is the cause." },
-      { q: "How is a discus different from an angelfish?", a: "Both are Amazonian cichlids, but discus need meaningfully warmer, softer, cleaner water and are considered the more demanding of the two by a real margin, not just reputation. [Angelfish](/guides/angelfish/) are hardier, tolerate a wider temperature range, and are the more forgiving entry point into keeping a tall-bodied South American cichlid." },
-      { q: "How long do discus live?", a: "10 to 15 years with excellent, stable care, meaningfully shorter under fluctuating water quality. Discus reward consistency more than almost any other common aquarium fish; the fish that struggle are usually the ones kept in a tank that's clean one week and neglected the next." },
-    ],
-  },
-  {
-    id: "cardinal-tetra",
-    name: "Cardinal Tetra",
-    emoji: "🐠",
-    difficulty: "Beginner-Intermediate",
-    petType: "Fish",
-    image: "/assets/guides/cardinal-tetra.jpg",
-    tagline: "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!",
-    funFact: "Huge numbers of cardinal tetras are still sustainably wild-harvested from Brazil's Rio Negro every year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities a real economic reason to keep the river intact.",
-    // Verified against real research in the cardinal tetra deep-dive articles
-    // (content/guides/cardinal-tetra-cost-guide.mdx and siblings).
-    costs: {
-      setup: [
-        { item: "10-20 gallon tank", low: 20, high: 150 },
-        { item: "Aquarium heater", low: 18, high: 30 },
-        { item: "Gentle filter", low: 8, high: 15 },
-        { item: "Dense live plants", low: 18, high: 35 },
-      ],
-      annual: [
-        { item: "Micro-pellets + baby brine shrimp", low: 15, high: 30 },
-        { item: "Water conditioner", low: 10, high: 15 },
-        { item: "Water test kit", low: 25, high: 40 },
-      ],
-    },
-    sections: {
-      housing: "A 10 to 20 gallon tank suits a proper school of 8 to 10 or more; cardinals are intensely schooling and look washed-out and nervous in small numbers. Keep water heated between 73 and 81 degrees F, a touch warmer-tolerant than neon tetra, which makes cardinals a slightly better fit for a warmer community tank. Dark substrate and dense planting show off their color best and give a school somewhere to retreat.",
-      diet: "Cardinal tetras are omnivores that do well on high-quality micro-pellets or crushed flake, with baby brine shrimp or micro daphnia as valuable supplements. Feed small amounts once or twice daily; overfeeding fouls water quickly relative to how little this species actually needs.",
-      enrichment: "A school of 8 to 10 or more moving in tight formation is both the visual appeal and a genuine stress-reducer for the individual fish. Dense plants and driftwood recreate the dappled light of their native blackwater streams. Peaceful and non-aggressive, cardinals make an easy community fish once past the fragile early-cycling period, just avoid anything large enough to see them as food.",
-      health: "Neon tetra disease (Pleistophora hyphessobrycetis) can affect cardinal tetras despite the name, causing color loss, a curved spine, and wasting, with no cure; isolate an affected fish to protect the school. Ich is common under temperature swings or stress. A 2008 toxicology study found cardinal tetras unusually ammonia-tolerant but genuinely nitrite-sensitive (LC50 just 1.1 mg/L), which is why an uncycled tank is the single most common cause of a new keeper losing an entire school within the first week or two; always confirm a completed nitrogen cycle, especially for nitrite, before stocking.",
-      checklist: [
-        "10-20 gallon fully cycled tank",
-        "Group of 8-10+ cardinal tetras",
-        "Heater set to 73-81°F",
-        "Gentle filter",
-        "Dense live plants",
-        "Dark substrate",
-        "Micro-pellet or crushed flake food",
-        "Water test kit (confirm cycling before stocking)",
-        "Water conditioner",
-        "Weekly 20-25% water changes",
-      ],
-    },
-    faqs: [
-      { q: "What's the difference between a cardinal tetra and a neon tetra?", a: "Look at the red stripe. On a cardinal tetra it runs the full length of the body; on a [neon tetra](/guides/neon-tetra/) the red only covers roughly the back half, with the front half showing just the blue stripe. Cardinals also run slightly larger and tolerate marginally warmer water, which matters if you're stocking a warmer community tank." },
-      { q: "How many cardinal tetras should I get?", a: "At least 6, ideally 8 to 10 or more if the tank allows. Like most tetras, they're intensely schooling fish that show noticeably better color and confidence in a larger group than in a small cluster." },
-      { q: "Are cardinal tetras harder to keep than neon tetras?", a: "Only slightly, and mostly for historical reasons: more of the cardinal tetra supply has traditionally been wild-collected rather than farmed, which can mean a bit more transport stress reaching stores. Tank-raised stock has become widely available and is just as forgiving as neon tetra once past the same fragile early-cycling window both species share." },
-      { q: "How long do cardinal tetras live?", a: "4 to 5 years is the commonly cited range in a typical home aquarium; some sources report up to 10 years under very stable, low-stress conditions, though that's closer to a best-case outcome than a typical one." },
-      { q: "Do cardinal tetras need a fully cycled tank?", a: "Yes, without exception. Cardinal tetras are unusually sensitive to ammonia and nitrite spikes, and adding them to a brand-new, uncycled tank is the single most common cause of a beginner losing an entire school within days." },
-    ],
-  },
-  {
-    id: "molly",
-    name: "Molly",
-    emoji: "🐠",
-    difficulty: "Beginner",
-    petType: "Fish",
-    image: "/assets/guides/molly.jpg",
-    tagline: "The hardy, prolific livebearer with a genuine tolerance for brackish water!",
-    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
-    // Verified against real research in the molly deep-dive articles
-    // (content/guides/molly-cost-guide.mdx and siblings). The salt claim in
-    // particular was corrected: real sources genuinely disagree on whether
-    // standing salt dosing benefits a healthy tank, it isn't settled fact.
-    costs: {
-      setup: [
-        { item: "20 gallon tank", low: 50, high: 150 },
-        { item: "Aquarium heater", low: 15, high: 30 },
-        { item: "Filter sized to tank/bioload", low: 45, high: 60 },
-        { item: "Aquarium salt (long-lasting supply, optional)", low: 20, high: 22 },
-      ],
-      annual: [
-        { item: "Flake/pellet food with vegetable content", low: 25, high: 50 },
-        { item: "Water conditioner", low: 10, high: 15 },
-        { item: "Water test kit", low: 25, high: 40 },
-      ],
-    },
-    sections: {
-      housing: "A 20 gallon tank suits a small group; mollies run larger than guppies and produce a real bioload as a colony grows. Keep water between 72 and 78 degrees F. Mollies are naturally a brackish-water species, and some keepers add a small amount of aquarium salt (roughly a tablespoon per 5 gallons is a common dose), but whether a healthy freshwater tank actually needs it is genuinely disputed: consistent water changes and stable parameters accomplish the same thing for many keepers without salt's downsides for live plants and snails. Lifespan is typically 3 to 5 years, up to 5 to 7 with excellent, stable water quality.",
-      diet: "Mollies need more plant matter than most livebearers - a flake or pellet food with a real vegetable or algae component, not just protein, is important. A diet that's protein-heavy with no vegetable content is one of the most common molly-specific mistakes and drives real digestive and health problems over time.",
-      enrichment: "Peaceful, active, and hardy, mollies are one of the most forgiving common aquarium fish for a genuine beginner. Like guppies, they're prolific livebearers: litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female's age, so population planning, either a single-sex group or a stocking and rehoming plan, matters from day one. Dense planting gives fry cover from adults if breeding isn't the goal.",
-      health: "\"Molly shimmy,\" a distinctive side-to-side swaying swim, is most commonly caused by temperature that's too low, low pH or mineral hardness, or unstable water quality; correcting those usually resolves it. Fancy mollies bred overseas in harder, mineral-rich water are especially prone to it when sold into softer home tap water. Ich and fin rot are both linked to temperature swings and poor water quality more than genetics. Digestive and bloating issues trace directly to an inadequate vegetable component in the diet often enough that it's worth checking first when a molly looks off.",
-      checklist: [
-        "20 gallon tank (more for sailfin varieties or a growing colony)",
-        "Heater set to 72-78°F",
-        "Filter sized to the tank and bioload",
-        "Aquarium salt (optional, disputed benefit; 1 tbsp per 5 gal if used)",
-        "Flake/pellet food with real vegetable content",
-        "Dense planting (fry cover)",
-        "Water test kit and conditioner",
-        "Single-sex group, or a plan for population growth",
-        "Weekly 20-25% water changes",
-      ],
-    },
-    faqs: [
-      { q: "How can I tell if my molly is male or female?", a: "Easily, the same way as with guppies. Males have a modified, pointed anal fin called a gonopodium; females have a fuller, rounder body and a dark \"gravid spot\" near the vent, especially visible when pregnant. This is one of the most straightforward sexing calls in the livebearer family." },
-      { q: "Do mollies really need aquarium salt?", a: "Not strictly, and it's genuinely disputed among experienced keepers. Mollies naturally inhabit brackish coastal waters and tolerate salt well, commonly around a tablespoon per 5 gallons if you use it, but some livebearer specialists argue consistent water changes accomplish the same thing without salt's downsides for live plants and snails. This is still a real point of difference from guppies and most other common livebearers, which don't tolerate salt the same way at all." },
-      { q: "What's the difference between a guppy and a molly?", a: "Mollies run noticeably larger, 3 to 4.5 inches versus a guppy's 1 to 2.4 inches, and genuinely tolerate brackish water in a way [guppies](/guides/guppy/) don't. Both are prolific livebearers in the same family (Poeciliidae) with very similar easy-beginner care otherwise." },
-      { q: "Why is my molly swimming with a shimmy or wobble?", a: "This is \"molly shimmy,\" a recognized species-specific issue most often caused by water that's too cold, low pH or mineral hardness, or unstable water quality generally. Fancy mollies bred overseas in harder water are especially prone to it once sold into softer home tap water. Check and correct temperature first, then pH, hardness, and general water parameters; most cases resolve once conditions stabilize." },
-      { q: "Why do I keep getting more mollies than I bought?", a: "Mollies are prolific livebearers, litters commonly run 20 to 60 fry every 4 to 6 weeks in a mixed-sex tank, with a documented range as wide as 10 to over 100 depending on the female. If you don't want an expanding colony, keep a single-sex group or have a stocking and rehoming plan ready before mixing sexes." },
-      { q: "What's the difference between a molly and a swordtail?", a: "Size and shape, mainly. A [swordtail](/guides/swordtail/) is more elongated and reaches 5 to 6 inches including the male's namesake tail extension, next to a molly's stockier 3 to 4.5 inches. The two also can't interbreed the way platies and swordtails do, mollies are a different genus (Poecilia) than swordtails and platies (Xiphophorus), so crossbreeding between a molly and a swordtail doesn't happen." },
     ],
   },
   {
@@ -699,56 +749,6 @@ export const fishGuides = [
       { q: "Why are zebra danios used in science labs?", a: "Zebrafish, the same species as the aquarium zebra danio, are the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Their embryos develop transparently outside the body, and roughly 70 percent of human genes have a working counterpart in their genome, making them uniquely useful for studying development and disease." },
       { q: "What are GloFish?", a: "Fluorescent zebra danios. GloFish were the first genetically modified animal ever sold as a pet, created by inserting a fluorescent protein gene into zebrafish embryos, and they need the exact same care as any other zebra danio." },
       { q: "Are zebra danios good pets for beginners?", a: "Yes, genuinely, they're one of the hardiest community fish available and don't strictly need a heater. The real mismatch to avoid is tankmates: their speed and fin-nipping tendency in small groups can stress slow, long-finned fish like bettas, so stick to similarly active, non-delicate tankmates." },
-    ],
-  },
-  {
-    id: "bristlenose-pleco",
-    name: "Bristlenose Pleco",
-    emoji: "🐟",
-    difficulty: "Beginner",
-    petType: "Fish",
-    image: "/assets/guides/bristlenose-pleco.jpg",
-    tagline: "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!",
-    funFact: "Most of the cheap, inch-long 'plecos' sold for algae control are common plecos (Hypostomus plecostomus) or a related Pterygoplichthys species, and neither stays small: both regularly reach 12 to 24 inches and need a 75-gallon-or-larger tank as adults, a size surprise so common that escaped and released pet plecos have established breeding, invasive populations in Texas and Florida rivers. Researchers pulled more than 400 invasive armored catfish from a single stretch of Texas's San Marcos River in one 2022 removal effort. The bristlenose pleco profiled here is a different, deliberately smaller species that tops out around 4 to 6 inches for life, which is exactly why it's the pleco actually worth recommending to a beginner.",
-    // Rough starting ranges, not verified current pricing - needs a review pass.
-    // Priced for a single bristlenose, the beginner-appropriate pleco species.
-    costs: {
-      setup: [
-        { item: "20-30 gallon tank", low: 90, high: 170 },
-        { item: "Filter sized above the tank minimum", low: 30, high: 50 },
-        { item: "Aquarium heater", low: 20, high: 35 },
-        { item: "Driftwood (required, not decorative) and caves", low: 25, high: 50 },
-      ],
-      annual: [
-        { item: "Algae wafers + fresh vegetables", low: 30, high: 60 },
-        { item: "Water conditioner and test kit", low: 15, high: 25 },
-      ],
-    },
-    sections: {
-      housing: "A single adult bristlenose needs at least 20 gallons, and 30 is a genuinely better long-term minimum given how much waste one fish produces relative to its size. Keep water heated between 74 and 82 degrees F with a filter sized above what the tank's gallon rating alone would suggest, since bristlenose plecos are messy eaters. Driftwood is not optional decor for this species: they rasp wood fiber for real digestive benefit, and a tank without it tends to produce a duller, less healthy fish over time. Add caves, PVC pipe, or dense decor for daytime hiding, since bristlenose are nocturnal and spend most of the day tucked out of sight, becoming active once the lights go down.",
-      diet: "Bristlenose plecos are often sold as if algae alone will feed them, and that's a genuine myth: tank algae isn't enough on its own for an adult, and a pleco fed only on what it can graze from the glass typically ends up with a sunken belly and a shortened lifespan. Sinking algae wafers should form the dietary staple, supplemented several times a week with blanched zucchini, cucumber, or sweet potato. A small amount of occasional protein, like frozen bloodworms or brine shrimp, rounds out the diet without overdoing it, since bristlenose stay primarily plant-based grazers even as adults.",
-      enrichment: "The single best enrichment for a bristlenose is simply letting it do what it evolved to do: grazing algae and biofilm off glass, decor, and especially driftwood through the night. They're peaceful, low-key tankmates for almost any non-aggressive community fish, and a mature male's branching facial bristles, used to signal sex and spar with rival males, are one of the more distinctive things to watch develop as a juvenile grows up. Breeding is a real possibility even in a community tank: males are cave spawners that guard and fan a clutch of eggs alone once a female has laid them, a genuine bit of solo paternal care to witness if you keep more than one.",
-      health: "Bristlenose plecos, like corydoras catfish, are scaleless and unusually sensitive to copper-based medications, so any ich or parasite treatment needs to be checked for pleco safety before it goes in the tank. Ich and fungal infections both follow poor water quality more than anything else. The biggest real health risk with any pleco, bristlenose included, is nutritional: an adult fed algae alone, with no wafers, vegetables, or driftwood to rasp, declines over months rather than failing suddenly, which makes the problem easy to miss until a fish is already in poor shape. Buying a pleco without confirming the exact species is the other major risk here, since a juvenile common pleco and a juvenile bristlenose can look deceptively similar at an inch or two long in a store tank, and only one of them stays that size.",
-      checklist: [
-        "20-30 gallon tank",
-        "Heater set to 74-82°F",
-        "Filter sized above the tank's gallon minimum",
-        "Driftwood (required for digestion, not just decor)",
-        "Caves or PVC pipe for daytime hiding",
-        "Sinking algae wafers as dietary staple",
-        "Blanched zucchini, cucumber, or sweet potato",
-        "Occasional bloodworms or brine shrimp",
-        "Water test kit and conditioner",
-        "Confirm species before buying (bristlenose vs. common pleco)",
-      ],
-    },
-    faqs: [
-      { q: "Will a pleco stay small in my tank?", a: "Only if it's actually a bristlenose. The classic cheap 'plecostomus' sold as a tiny algae-eater is usually a common pleco or a related Pterygoplichthys species, both of which grow to 12 to 24 inches and need a 75-gallon-or-larger tank as an adult. A bristlenose pleco is the species that genuinely stays small, topping out around 4 to 6 inches." },
-      { q: "How can I tell a bristlenose pleco from a common pleco?", a: "At the size stores sell them, it's genuinely difficult, which is exactly the problem. Ask the store directly for the species name rather than just 'pleco,' and be skeptical of any unlabeled 'algae eater' sold at an inch or two long, since that's precisely the size both a bristlenose and a common pleco start out at." },
-      { q: "Do plecos only eat algae?", a: "No, and this is a common misconception. Tank algae alone isn't a complete diet for an adult of any pleco species. Sinking algae wafers and regular blanched vegetables need to be the actual dietary staple, with tank algae as a bonus rather than the main course." },
-      { q: "Why is my bristlenose pleco hiding all day?", a: "This is normal, not a sign of stress. Bristlenose plecos are nocturnal and spend daylight hours tucked into caves or driftwood, becoming active and visibly grazing once the lights go down." },
-      { q: "Can bristlenose plecos live with corydoras catfish?", a: "Yes, this is a genuinely good pairing. Both are peaceful, bottom-dwelling, scaleless catfish with similar water needs, and since [corydoras](/guides/corydoras-catfish/) forage the substrate while bristlenose graze surfaces and wood, they're not competing for the same food or space." },
-      { q: "How big does a bristlenose pleco get?", a: "4 to 6 inches for life, which is exactly what makes it the pleco worth recommending to a beginner. Compare that to a common pleco, which is regularly sold at the same tiny size but grows to 12 to 24 inches." },
     ],
   },
 ];
