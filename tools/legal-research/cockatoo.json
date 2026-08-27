@@ -163,12 +163,6 @@
       "note": "Maine clears the whole parrot order but then strips back out anything on CITES Appendix I or the IUCN's Endangered/Critically Endangered tiers. That carve-out catches several of the most commonly kept pet cockatoos: the Moluccan and yellow-crested cockatoos are CITES Appendix I, and the umbrella cockatoo is IUCN Endangered even though it's only CITES Appendix II. Smaller, more secure species like the cockatiel or galah would still clear the list; the larger, more iconic cockatoos generally need Maine's captivity permit instead.",
       "verifiedOn": "2026-08-27"
     },
-    "MI": {
-      "status": "legal",
-      "sourceId": "mi-captive-bred-birds",
-      "note": "Owning a captive-bred cockatoo is legal in Michigan; documentation showing lawful, captive-bred acquisition can be requested.",
-      "verifiedOn": "2026-08-27"
-    },
     "MN": {
       "status": "legal",
       "sourceId": "mn-346-155",
@@ -275,9 +269,9 @@
     },
     "PA": {
       "status": "legal",
-      "sourceId": "pa-34-102",
-      "cite": "34 Pa.C.S. § 102",
-      "note": "Pennsylvania's 'exotic wildlife' definition is bears, big cats, canids, and their crossbreeds; common pet birds like parakeets and canaries are expressly carved out, and no cockatoo-specific rule was found.",
+      "sourceId": "pa-2961",
+      "cite": "34 Pa.C.S. § 2961",
+      "note": "Pennsylvania's exotic wildlife definition (bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and their crossbreeds) does not reach birds at all; no cockatoo-specific rule was found. Corrected from an earlier draft citation (34 Pa.C.S. section 102) that does not exist as described; the real exotic-wildlife definition is section 2961, already used elsewhere in this dataset.",
       "verifiedOn": "2026-08-27"
     },
     "RI": {

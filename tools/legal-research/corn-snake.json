@@ -279,12 +279,6 @@
       "note": "The only colubrid Washington restricts is the boomslang.",
       "verifiedOn": "2026-08-27"
     },
-    "WI": {
-      "status": "legal",
-      "sourceId": "wi-nr-16-dnr-exotic",
-      "note": "Wisconsin DNR guidance treats the corn snake as a non-native, pet-trade reptile alongside ball pythons and bearded dragons: no DNR license needed when it is sourced from a legal captive breeder. This is the opposite side of the coin from Wisconsin's native-species rule, which reaches milk snake, not corn snake.",
-      "verifiedOn": "2026-08-27"
-    },
     "WV": {
       "status": "legal",
       "sourceId": "wv-19-34",
