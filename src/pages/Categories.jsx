@@ -12,6 +12,8 @@ import { CATEGORIES } from '@/lib/data/categories';
 const FACT_CATEGORIES = [
   { label: 'Birds', emoji: '🦜', slug: 'birds' },
   { label: 'Dogs & Cats', emoji: '🐾', slug: 'dogs-and-cats' },
+  { label: 'Fish', emoji: '🐠', slug: 'fish' },
+  { label: 'Invertebrates', emoji: '🕷️', slug: 'invertebrates' },
   { label: 'Mammals', emoji: '🦁', slug: 'mammals' },
   { label: 'Ocean', emoji: '🐬', slug: 'ocean' },
   { label: 'Reptiles', emoji: '🦎', slug: 'reptiles' },

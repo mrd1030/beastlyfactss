@@ -36,7 +36,7 @@ const ENCYCLOPEDIA_CATEGORIES = [
 
 // Fun-facts category slugs (mirrors `categories` in src/lib/data/facts.js, slugified)
 const FACT_CATEGORIES = [
-  'birds', 'dogs-and-cats', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
+  'birds', 'dogs-and-cats', 'fish', 'invertebrates', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
 ];
 
 // Gear pet-type filter slugs (mirrors GEAR_PET_TYPES in src/lib/data/affiliateProducts.js)
