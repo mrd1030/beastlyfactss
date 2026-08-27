@@ -8,46 +8,46 @@ Synthesized from 6 independent lenses (content-gap, legal-safety, buying-intent,
 
 These are the items that showed up across the most lenses and/or carry the single highest hit counts in the dataset. Do these first.
 
-1. **Argentine Black and White Tegu — three-part content push, highest-signal species in the entire dataset (appears in 5 of 6 lenses).**
+1. ~~**Argentine Black and White Tegu — three-part content push, highest-signal species in the entire dataset (appears in 5 of 6 lenses).**~~ **DONE** — argentine-tegu-cost-guide.mdx, argentine-tegu-legal-guide.mdx (covers the Florida invasive/prohibited-species angle in full), argentine-tegus-are-not-venomous.mdx.
    - Cost guide: no purchase-price content exists. `argentine black and white tegu price` (9 hits) + `price in india` (3) + `for sale` (3) + 4 more 2-hit variants = 26 combined hits, all unanswered.
    - Myth-bust: `are argentine black and white tegu dangerous` = **16 hits, rank 1** — the single highest-hit query in the whole CSV. `...poisonous` = 11 hits, rank 2. These two rows alone are 27 of the species' 39 total hits. Tegus are neither venomous nor dangerous to keep; this is an easy, high-value "no" answer.
    - FAQ addition: `why are argentine black and white tegu invasive` (3 hits) — real, newsworthy angle (documented Florida invasive population) not covered anywhere in the existing FAQ.
-   - Action: new `argentine-tegu-cost-guide.mdx` + a "Are Tegus Dangerous?" mythbust piece (or fold both into one deep-dive) + one FAQ line on Florida invasive status.
+   - ~~Action: new `argentine-tegu-cost-guide.mdx` + a "Are Tegus Dangerous?" mythbust piece (or fold both into one deep-dive) + one FAQ line on Florida invasive status.~~
 
-2. **Giant African Millipede — three-part gap, tied for strongest niche-species signal.**
+2. ~~**Giant African Millipede — three-part gap, tied for strongest niche-species signal.**~~ **DONE** — giant-millipede-cost-guide.mdx, giant-millipede-legal-guide.mdx, and the poison-nuance angle is covered in giant-millipede-legal-guide.mdx's FAQ (correctly debunks the "cyanide" overgeneralization with the actual 1974 benzoquinone study) and giant-millipede-handling-guide.mdx.
    - Cost: `how much are giant african millipedes` (10) + `...cost` (3) + 5 more 2-hit variants, unanswered anywhere.
    - Legality: `are giant african millipedes illegal` = **10 hits, rank 1** — tied for the highest single legal-question hit count found. No .mdx or FAQ site-wide touches legal/permit topics for any species — total blank spot.
    - Poison nuance: `are giant african millipedes poisonous` = 9 hits, rank 0. Real nuance here (they secrete a defensive fluid containing compounds like hydrogen cyanide that irritates skin/eyes) — frame as "mildly, wash your hands," not a flat myth-bust.
    - Bonus: `how big do african giant millipedes get` = 14 hits, rank 1 (highest-volume query for the species overall) — good hook for a general facts/size section too.
-   - Action: new `giant-african-millipede-cost-guide.mdx` + legality FAQ entry + poison-nuance FAQ entry, all on the existing invertebrates.js entry.
+   - ~~Action: new `giant-african-millipede-cost-guide.mdx` + legality FAQ entry + poison-nuance FAQ entry, all on the existing invertebrates.js entry.~~
 
-3. **Ferret — three distinct angles converge on one species.**
-   - Naming confusion: six separate 2-hit comparisons (`ferret vs weasel`, `vs mink`, `vs stoat`, `vs mongoose`, `vs otter`, `vs polecat`) plus `is ferret a weasel`/`ferret weasel` — ~16 combined hits, zero coverage in the current FAQ.
-   - Legal: 9 distinct locations in "is it legal to own a ferret in ___" queries (Australia, CA, Canada, FL, India, OR, TX, UK, WA); ferrets are genuinely illegal to own in California and Hawaii — a real, citable regulatory answer, not myth-chasing.
-   - Buying intent: `ferret cost` / `ferret for sale` (2 hits each) — no cost guide exists.
-   - Action: one "Is a Ferret a Weasel? Ferret vs. Weasel, Mink, Stoat & Other Mustelids" deep-dive (kills the naming cluster), one "Is It Legal to Own a Ferret?" state/country article, and a cost-guide addition.
+3. **Ferret — three distinct angles converge on one species.** **PARTIALLY DONE**
+   - ~~Naming confusion: six separate 2-hit comparisons (`ferret vs weasel`, `vs mink`, `vs stoat`, `vs mongoose`, `vs otter`, `vs polecat`) plus `is ferret a weasel`/`ferret weasel` — ~16 combined hits, zero coverage in the current FAQ.~~ **STILL OPEN** — only passing weasel-family mentions exist (ferret-feeding-guide.mdx, ferret-handling-guide.mdx), no direct "is a ferret a weasel" answer.
+   - ~~Legal: 9 distinct locations in "is it legal to own a ferret in ___" queries (Australia, CA, Canada, FL, India, OR, TX, UK, WA); ferrets are genuinely illegal to own in California and Hawaii — a real, citable regulatory answer, not myth-chasing.~~ **DONE** — ferret-legal-guide.mdx.
+   - ~~Buying intent: `ferret cost` / `ferret for sale` (2 hits each) — no cost guide exists.~~ **DONE** — ferret-cost-guide.mdx.
+   - Action: ~~one "Is a Ferret a Weasel? Ferret vs. Weasel, Mink, Stoat & Other Mustelids" deep-dive (kills the naming cluster),~~ **← still needed**, ~~one "Is It Legal to Own a Ferret?" state/country article, and a cost-guide addition.~~ **← both done**
 
 4. **Budgie vs Parakeet — the single largest naming-confusion gap, and the cheapest to fix.**
    - `difference between budgie and parakeet` = 7 hits, rank 1, plus `budgie vs parakeet` (2), `budgie or parakeet` (2), `budgie parakeet difference` (2), `budgie vs parakeet the difference` (2), `budgie vs parakeet size` (2), and a dozen+ 1-hit variants — 20+ combined hits, the largest single-topic gap found across all lenses.
-   - The site's data model already merges Budgie/Parakeet into one guide entry, so this needs only a single FAQ line ("Is a budgie the same thing as a parakeet?") — no new article required. Highest ROI item on this whole list.
+   - The site's data model already merges Budgie/Parakeet into one guide entry, so this needs only a single FAQ line ("Is a budgie the same thing as a parakeet?") — no new article required. Highest ROI item on this whole list. **STILL OPEN** — checked budgie-cost-guide.mdx's FAQ directly, this exact question isn't there yet.
 
-5. **Legal-location batch — genuine regulatory content, not myth-chasing, for the species with the widest state/country query spread.** Cross-checked: all of these already have guides, so this is pure upside content layered on top:
+5. ~~**Legal-location batch — genuine regulatory content, not myth-chasing, for the species with the widest state/country query spread.**~~ **DONE — all 6** (red-eared-slider-legal-guide.mdx, sugar-glider-legal-guide.mdx, hognose-snake-legal-guide.mdx, chinchilla-legal-guide.mdx, box-turtle-legal-guide.mdx, ball-python-legal-guide.mdx all exist). Cross-checked: all of these already have guides, so this is pure upside content layered on top:
    - **Red-Eared Slider** — 11 distinct locations (CA, FL, IN, MO, OH, OK, TN, TX, VA, India), 19 legal-rows, 30 total hits. Real hook: RES sale/possession bans exist in multiple states (invasive-species + salmonella rules).
    - **Sugar Glider** — 10 locations, 19 hits; genuinely banned/restricted as exotic wildlife in CA, HI, AK among others.
    - **Hognose Snake** — 9 locations, 10 legal-rows, 31 total hits (also has a 13-row danger cluster — see #8 below, strong dual-signal candidate).
    - **Chinchilla** — 9 locations, 11 legal-rows, 32 buying-intent hits too (cost-guide gap: `chinchilla cost` = 3 hits).
    - **Box Turtle** — 9 locations, all US states (no country queries) — purely "which states restrict wild box turtle possession."
    - **Ball Python** — 9 locations, 21 hits.
-   - Action: build a "Is [Species] Legal in My State/Country?" template article and run it down this list in order.
+   - ~~Action: build a "Is [Species] Legal in My State/Country?" template article and run it down this list in order.~~
 
-6. **Sulcata Tortoise legal status — largest single state-specific query cluster in the content-gap sweep.**
+6. ~~**Sulcata Tortoise legal status — largest single state-specific query cluster in the content-gap sweep.**~~ **DONE** — sulcata-tortoise-legal-guide.mdx.
    - `is it legal to own a sulcata tortoise` (2) + `...in india` (2) + `is it illegal to own a sulcata tortoise` (2) + ~9 more 1-hit state queries (TX, FL, CA, AZ, UT, TN) = ~15 combined hits, 8 distinct locations, 13 legal-rows total, 23 combined hits overall. Current FAQ covers size/lifespan/diet/pyramiding/indoor-keeping but nothing on legality. Also carries a Malaysia-specific price query worth a one-line mention.
 
-7. **African Grey Parrot cost guide — largest long-tail demand of any bird.**
+7. ~~**African Grey Parrot cost guide — largest long-tail demand of any bird.**~~ **DONE** — african-grey-parrot-cost-guide.mdx.
    - Headline: `african grey parrot price` (3) + regional variants (`near me`, `in india`, `price lifespan`, `in usa` at 2 each = 11) plus ~25 additional 1-hit regional variants (Nigeria, Philippines, Pakistan, Kerala, Kolkata, Australia) = one of the largest combined-hit totals in the whole dataset (59 across buying-intent rows, rank 2 overall). Current FAQ covers intelligence/diet/lifespan/plucking/calcium — no price question at all. Also carries real legal signal (16 hits, 7 legal-rows) and an adoption/rescue angle (`adoption`, `rescue near me` at 2 hits each).
-   - Action: cost guide matching the existing budgie-cost-guide.mdx / cockatiel-cost-guide.mdx pattern, with a regional-pricing callout and an adoption/rescue mention.
+   - ~~Action: cost guide matching the existing budgie-cost-guide.mdx / cockatiel-cost-guide.mdx pattern, with a regional-pricing callout and an adoption/rescue mention.~~
 
-8. **Hognose Snake, Boa Constrictor, Ball Python, Tarantula, Corn Snake, Box Turtle — "legality + safety" dual-signal pillar candidates.** These six are unusual: most species lean heavily toward either legal-location queries or danger/safety queries, but these six get comparable volume on both ("can I legally own one" and "is it dangerous" in the same breath). Hognose Snake is the strongest (9 locations + 13 danger-rows, 31 combined hits). A single "Everything to Know Before Getting a [Species]: Legality + Safety" article per species (or a two-part companion pair) captures both intents at once instead of splitting effort.
+8. **Hognose Snake, Boa Constrictor, Ball Python, Tarantula, Corn Snake, Box Turtle — "legality + safety" dual-signal pillar candidates.** **PARTIALLY DONE — 5 of 6.** ~~Hognose Snake~~, ~~Boa Constrictor~~, ~~Ball Python~~, ~~Tarantula~~, and ~~Box Turtle~~ all have a legal-guide.mdx already (hognose-snake-legal-guide.mdx, boa-constrictor-legal-guide.mdx, ball-python-legal-guide.mdx, tarantula-legal-guide.mdx, box-turtle-legal-guide.mdx). **Corn Snake is the one still missing** — no corn-snake-legal-guide.mdx exists. These six are unusual: most species lean heavily toward either legal-location queries or danger/safety queries, but these six get comparable volume on both ("can I legally own one" and "is it dangerous" in the same breath). Hognose Snake is the strongest (9 locations + 13 danger-rows, 31 combined hits). A single "Everything to Know Before Getting a [Species]: Legality + Safety" article per species (or a two-part companion pair) captures both intents at once instead of splitting effort.
 
 ---
 
@@ -55,11 +55,11 @@ These are the items that showed up across the most lenses and/or carry the singl
 
 Beyond the top-8 above, these are confirmed blank spots (checked against the actual guide FAQ/.mdx content):
 
-- **Ackie Monitor cost guide** — `how much is a ackie monitor` (7) + price/for-sale variants = 13-29 combined hits depending on lens; no cost-guide.mdx exists; FAQ only lists setup/annual gear costs, not purchase price. Also strong "are ackie monitors good pets" signal (11 hits, rank 1) worth folding in.
-- **Leaf-Tailed Gecko cost guide** — `leaf tailed gecko price` (7) + cost/for-sale (2 each) = highest hits-per-row ratio (1.9) of any lower-ranked niche species; no cost-guide.mdx exists, matching the crested-gecko/leopard-gecko precedent.
-- **Cockatiel vs Cockatoo comparison** — `cockatiel vs cockatoo` (3) + reverse (3) + size (2) + "is cockatoo and cockatiel the same" (1) = 12 combined; no comparison guide exists (only budgie-vs-cockatiel-guide.mdx does).
-- **Mourning Gecko vs House Gecko** — `mourning gecko vs house gecko` (6) + regional variants (~10 combined); current FAQ covers colony-keeping/parthenogenesis/size/diet/lifespan but never addresses the confusion. (House gecko isn't a dedicated site species, so this is a FAQ addition to the mourning gecko guide, not a standalone article.)
-- **California Kingsnake and Milk Snake — pure safety-FAQ candidates, zero legal overlap.** California Kingsnake: 14 danger-rows, 0 legal-rows — `are california kingsnakes dangerous` (3), `is it poisonous` (2), `venomous or not` (2) — clean "no," non-venomous constrictor. Milk Snake: 13 danger-rows, 0 legal-rows — classic mistaken-for-coral-snake mimicry myth.
+- ~~**Ackie Monitor cost guide** — `how much is a ackie monitor` (7) + price/for-sale variants = 13-29 combined hits depending on lens; no cost-guide.mdx exists; FAQ only lists setup/annual gear costs, not purchase price. Also strong "are ackie monitors good pets" signal (11 hits, rank 1) worth folding in.~~ **DONE** — ackie-monitor-cost-guide.mdx.
+- ~~**Leaf-Tailed Gecko cost guide** — `leaf tailed gecko price` (7) + cost/for-sale (2 each) = highest hits-per-row ratio (1.9) of any lower-ranked niche species; no cost-guide.mdx exists, matching the crested-gecko/leopard-gecko precedent.~~ **DONE** — leaf-tailed-gecko-cost-guide.mdx.
+- ~~**Cockatiel vs Cockatoo comparison** — `cockatiel vs cockatoo` (3) + reverse (3) + size (2) + "is cockatoo and cockatiel the same" (1) = 12 combined; no comparison guide exists (only budgie-vs-cockatiel-guide.mdx does).~~ **DONE** — cockatiel-vs-cockatoo-guide.mdx.
+- **Mourning Gecko vs House Gecko** — `mourning gecko vs house gecko` (6) + regional variants (~10 combined); current FAQ covers colony-keeping/parthenogenesis/size/diet/lifespan but never addresses the confusion. (House gecko isn't a dedicated site species, so this is a FAQ addition to the mourning gecko guide, not a standalone article.) **STILL OPEN.**
+- **California Kingsnake and Milk Snake — pure safety-FAQ candidates, zero legal overlap.** California Kingsnake: 14 danger-rows, 0 legal-rows — `are california kingsnakes dangerous` (3), `is it poisonous` (2), `venomous or not` (2) — clean "no," non-venomous constrictor. **STILL OPEN** — existing content covers what it eats, not a direct "is it safe to keep/handle" reassurance. ~~Milk Snake: 13 danger-rows, 0 legal-rows — classic mistaken-for-coral-snake mimicry myth.~~ **DONE** — the Batesian-mimicry/coral-snake angle is a FunFact in milk-snake-cost-guide.mdx, and milk-snake-vs-corn-snake-guide.mdx covers it further.
 
 ---
 
@@ -69,15 +69,15 @@ The site already has 6 comparison guides (budgie-vs-cockatiel, ball-python-vs-co
 
 | Pair | Hits | Notes |
 |---|---|---|
-| Axolotl vs Tiger Salamander | 14 | Highest-demand unpublished pair; bonus curiosity angle (axolotls are neotenic tiger salamander relatives — real taxonomy surprise) |
+| ~~Axolotl vs Tiger Salamander~~ **DONE** | 14 | Highest-demand unpublished pair; bonus curiosity angle (axolotls are neotenic tiger salamander relatives — real taxonomy surprise) |
 | Golden Retriever vs Labrador Retriever | 12 | Both breeds independently rank top-12 in buying intent too |
 | Crested Gecko vs Gargoyle Gecko | 9 | |
-| Cockatiel vs Cockatoo | 9 | Also a content-gap item, see above |
+| ~~Cockatiel vs Cockatoo~~ **DONE** | 9 | Also a content-gap item, see above |
 | Cockatiel vs Green Cheek Conure | 8 | |
-| Bearded Dragon vs Uromastyx | 8 | |
+| ~~Bearded Dragon vs Uromastyx~~ **DONE** | 8 | |
 | Green Cheek Conure vs Lovebird | 8 | |
 | Cat vs Maine Coon | 7 | |
-| Ball Python vs Boa Constrictor | 6 | |
+| ~~Ball Python vs Boa Constrictor~~ **DONE** | 6 | |
 
 **Single-guide comparisons** (only one side is a tracked species — best handled as an FAQ subsection on the existing guide rather than a full new article): **Siberian Husky** (vs Alaskan Husky/Malamute/wolf, 18 hits), **Ferret** (vs weasel/mink/stoat/mongoose/otter/polecat — see Priority #3), **Mourning Gecko** (vs house gecko — see Content Gaps), **Emperor Scorpion** (vs deathstalker/Asian forest scorpion, 16 hits), **Milk Snake** (vs coral snake/king snake/copperhead, 16 hits), **Box Turtle** (vs tortoise/snapping turtle/painted turtle, 15 hits), **French Bulldog** (vs Boston Terrier/Pug/English Bulldog, 14 hits).
 
@@ -97,9 +97,9 @@ The site already has 6 comparison guides (budgie-vs-cockatiel, ball-python-vs-co
 Ranked by hit count, checked against existing facts.js for duplication:
 
 1. **Madagascar Hissing Cockroach — "what does it sound like"** = 11 hits, the single highest-hit curiosity row in the whole CSV. Explain the spiracle-hissing mechanism (air forced through modified abdominal spiracles, not the mouth).
-2. **Argentine Tegu — poisonous mythbust** = 11 hits (ties into Priority #1).
-3. **Giant African Millipede — poisonous nuance** = 9 hits (ties into Priority #2).
-4. **Budgie/Parakeet naming trivia** = 7 hits (ties into Priority #4).
+2. ~~**Argentine Tegu — poisonous mythbust** = 11 hits (ties into Priority #1).~~ **DONE** via Priority #1 (argentine-tegus-are-not-venomous.mdx).
+3. ~~**Giant African Millipede — poisonous nuance** = 9 hits (ties into Priority #2).~~ **DONE** via Priority #2 (giant-millipede-legal-guide.mdx / handling-guide.mdx).
+4. **Budgie/Parakeet naming trivia** = 7 hits (ties into Priority #4). **STILL OPEN**, Priority #4 itself is still open.
 5. **Fire-Bellied Toad — poisonous** (6) + **poisonous to humans** (4) — real nuance: aposematic coloring, mildly toxic skin secretions, safe with normal handling.
 6. **Emperor Scorpion — "can it kill you"** = 5 hits — sting is roughly bee-sting-level despite the intimidating look.
 7. **Jackson's Chameleon — color meaning** = 5 hits — best placed as a guide-specific funfact (facts.js already has two generic chameleon color-change entries; avoid duplication).
