@@ -100,7 +100,7 @@ export const snakeEncyclopedia = [
       adultSize: "24-36 inches (60-90 cm); rarely over 4 feet (122 cm)",
       wildDiet: "Small mammals (kangaroo rats, deer mice, wood rats), nestling birds, and lizards",
       wildLifespan: "20-30+ years in captivity (wild lifespan undocumented)",
-      conservation: "Least Concern (IUCN); California Species of Special Concern",
+      conservation: "Least Concern (IUCN)",
     },
   },
 ];
