@@ -3573,6 +3573,19 @@ export const AFFILIATE_PRODUCTS = [
     covers: ["Cage sized and spaced for mice (18x18x10 in minimum, solid floor)"],
     pets: ["small-mammals"],
   },
+  {
+    slug: "mouse-young-rat-food-oxbow-essentials-25lb",
+    product: "Oxbow Essentials Mouse & Young Rat Food, 25 lb",
+    category: "Food & Treats",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B00GNITDK6?tag=beastlyfacts-20",
+    image: "/assets/images/affiliate/product-256.jpg",
+    rating: 4.8,
+    price: "$58.99",
+    description: "Nutritionally complete pellet formulated specifically for young, growing rats and mice, not a repurposed hamster or gerbil mix. 25 lb bulk size.",
+    covers: ["Mouse or rat-formulated lab block or pellets"],
+    pets: ["small-mammals"],
+  },
 
 ];
 
