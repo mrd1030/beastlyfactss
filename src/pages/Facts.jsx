@@ -150,7 +150,7 @@ export default function Facts() {
 
   const filtered = useMemo(() => {
     return dailyFacts.filter(f => {
-      const matchesCategory = activeCategory === 'All' || f.category === activeCategory; 
+      const matchesCategory = activeCategory === 'All' || f.category === activeCategory || (f.crossCategories || []).includes(activeCategory);
       const matchesSearch = !search ||
         f.title.toLowerCase().includes(search.toLowerCase()) || 
         f.animal.toLowerCase().includes(search.toLowerCase()) || 

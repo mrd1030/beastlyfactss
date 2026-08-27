@@ -99,7 +99,7 @@ export default function Gallery() {
 
   const filtered = useMemo(() => {
     return dailyPhotos.filter(({ fact }) =>
-      (activeCategory === 'All' || fact.category === activeCategory) && matchesSearch(fact, query)
+      (activeCategory === 'All' || fact.category === activeCategory || (fact.crossCategories || []).includes(activeCategory)) && matchesSearch(fact, query)
     );
   }, [dailyPhotos, activeCategory, query]);
 
