@@ -52,7 +52,7 @@ export default function ClearPackDialog() {
               initial={{ scale: 0.92, opacity: 0, y: 16 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.92, opacity: 0, y: 16 }}
-              className="bg-card border border-border rounded-3xl p-6 max-w-sm w-full shadow-2xl"
+              className="bg-card border border-border rounded-3xl p-6 max-w-sm w-full shadow-2xl landscape:max-h-[85dvh] landscape:overflow-y-auto"
               onClick={e => e.stopPropagation()}
             >
               {done ? (

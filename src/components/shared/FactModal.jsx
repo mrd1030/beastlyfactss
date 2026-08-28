@@ -25,6 +25,21 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
   const imagePath = imagePathFor(fact);
   const isMobile = useIsMobileViewport();
 
+  // Rotating a phone to landscape shrinks the viewport height enough that this
+  // card's content (emoji row through the action buttons) can exceed it, with
+  // no scroll to reach what's cut off - the fixed overlay just clips it. Swipe-
+  // to-dismiss is disabled in that case instead of fighting the scroll gesture
+  // it would otherwise intercept; portrait is unaffected since content already
+  // fits there.
+  const [isShortLandscape, setIsShortLandscape] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(orientation: landscape) and (max-height: 500px)');
+    setIsShortLandscape(mq.matches);
+    const handler = (e) => setIsShortLandscape(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
   // Exact match only (case-insensitive) - a "contains" match risks linking a fact to the
   // wrong animal (e.g. Komodo Dragon vs Bearded Dragon), so most facts just show no link at all.
   //
@@ -143,13 +158,13 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
             // Swipe-down-to-dismiss, mobile only: `drag` with a mouse on
             // desktop would fight text selection and feel unintended there,
             // so it's off entirely (not just visually inert) unless isMobile.
-            drag={isMobile ? 'y' : false}
+            drag={isMobile && !isShortLandscape ? 'y' : false}
             dragConstraints={{ top: 0, bottom: 0 }}
             dragElastic={{ top: 0, bottom: 0.5 }}
             onDragEnd={(e, info) => {
               if (info.offset.y > 120 || info.velocity.y > 500) onClose();
             }}
-            className="bg-card rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-border"
+            className="bg-card rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-border landscape:max-h-[85dvh] landscape:overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal="true"

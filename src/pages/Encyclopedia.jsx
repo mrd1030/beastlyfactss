@@ -265,7 +265,7 @@ export default function Encyclopedia() {
         >
           <div 
             onMouseDown={(e) => e.stopPropagation()} 
-            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative"
+            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>
             <DifficultyLegend />
