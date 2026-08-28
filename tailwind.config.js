@@ -170,6 +170,16 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        // Warm Modern sharpened these three fixed tiers too - rounded-xl/2xl/3xl
+        // are Tailwind's own scale, not driven by --radius, but they're what most
+        // of the site's cards, buttons, and panels actually use (rounded-lg/md/sm
+        // above cover only a minority of usages). Overriding here reaches every
+        // existing class in place rather than editing each of the ~90 files that
+        // use them. rounded-full is deliberately untouched: those are circular
+        // icon buttons and avatars, a shape choice, not a corner-radius one.
+        xl: '0.375rem',
+        '2xl': '0.5rem',
+        '3xl': '0.75rem',
       },
       colors: {
         background: 'hsl(var(--background))',
