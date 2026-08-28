@@ -173,10 +173,10 @@ export default function Navbar() {
                   key={link.to}
                   to={link.to}
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className={`px-3 py-1.5 rounded-full text-sm font-body font-semibold transition-all ${
+                  className={`px-3 py-1.5 border-b-2 text-sm font-body font-semibold transition-all ${
                     isActive
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                      ? 'border-secondary text-primary'
+                      : 'border-transparent text-muted-foreground hover:text-foreground hover:bg-muted rounded-full'
                   }`}
                 >
                   {link.label}
