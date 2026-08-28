@@ -37,7 +37,7 @@ export default function HeroSection({ onOpenFact }) {
       particleCount: 100,
       spread: 70,
       origin: { y: 0.8 },
-      colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'],
+      colors: ['#E4632F', '#D9A441', '#FFD93D', '#E8336D'],
     });
   };
 

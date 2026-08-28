@@ -38,7 +38,7 @@ export default function AnimalQuiz({ animal }) {
         particleCount: perfect ? 160 : 90,
         spread: perfect ? 100 : 70,
         origin: { y: 0.7 },
-        colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'],
+        colors: ['#E4632F', '#D9A441', '#FFD93D', '#E8336D'],
       });
     } catch {
       // canvas-confetti falls back to the main thread when its blob worker is

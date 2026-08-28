@@ -29,6 +29,44 @@
   font-display: optional;
 }
 
+/* Display font replaced 2026-08-28: Fredoka -> Schibsted Grotesk, part of
+   the "Warm Modern" palette/type refresh (see
+   docs/design-tokens-pre-warm-modern-2026-08-28.css for the full previous
+   token set). Fredoka's own @font-face and file are left in place below,
+   same reasoning as the Nunito note beneath this one: nothing else
+   references 'Fredoka' by name, so it costs nothing at runtime and the
+   revert is one line (--font-display below). Metrics for the fallback face
+   were computed from the real font file (public/fonts/schibsted-grotesk-var.woff2)
+   via fontaine's readMetrics()/generateFontFace(), same tool and method as
+   the Atkinson Hyperlegible Next fallback further down. Schibsted Grotesk is
+   a single variable font covering its whole weight range, so - like
+   Atkinson's fallback below - one set of override numbers covers both the
+   regular and bold buckets rather than a per-weight measurement. */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  src: url('/fonts/schibsted-grotesk-var.woff2') format('woff2-variations'), url('/fonts/schibsted-grotesk-var.woff2') format('woff2');
+  font-weight: 400 900;
+  font-display: optional;
+}
+@font-face {
+  font-family: 'Schibsted Grotesk Fallback';
+  src: local('Arial');
+  font-weight: 400 500;
+  ascent-override: 97.66%;
+  descent-override: 25.78%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+@font-face {
+  font-family: 'Schibsted Grotesk Fallback';
+  src: local('Arial Bold'), local('Arial-BoldMT'), local('Arial');
+  font-weight: 501 900;
+  ascent-override: 97.66%;
+  descent-override: 25.78%;
+  line-gap-override: 0%;
+  size-adjust: 100%;
+}
+
 /* Body font replaced 2026-08-07: Nunito -> Atkinson Hyperlegible Next, a
    variable font built by the Braille Institute specifically for reading
    clarity (taller lowercase, more distinct easily-confused glyphs like
@@ -154,98 +192,84 @@
 
 @layer base {
   :root {
-    --font-display: 'Fredoka', 'Fredoka Fallback', sans-serif;
+    --font-display: 'Schibsted Grotesk', 'Schibsted Grotesk Fallback', sans-serif;
     --font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible Next Fallback', sans-serif;
 
-    --background: 34 55% 96%;
-    --foreground: 150 40% 10%;
-    --card: 34 40% 98%;
-    --card-foreground: 150 40% 10%;
-    --popover: 34 40% 98%;
-    --popover-foreground: 150 40% 10%;
-    --primary: 150 60% 18%;
-    --primary-foreground: 34 55% 96%;
-    --secondary: 24 100% 63%;
-    /* White text on this orange measured 2.29:1, well under the 4.5:1 floor.
-       Reusing --foreground's dark green-black gets 7.16:1 (AAA) and keeps the
-       same dark text color already used everywhere else in light mode, rather
-       than introducing a one-off value. */
-    --secondary-foreground: 150 40% 10%;
-    --muted: 34 30% 92%;
-    --muted-foreground: 150 15% 40%;
-    --accent: 174 100% 36%;
-    --accent-foreground: 0 0% 100%;
+    --background: 40 75% 97%;
+    --foreground: 136 26% 14%;
+    --card: 42 63% 95%;
+    --card-foreground: 136 26% 14%;
+    --popover: 42 63% 95%;
+    --popover-foreground: 136 26% 14%;
+    --primary: 164 56% 19%;
+    --primary-foreground: 40 75% 97%;
+    --secondary: 17 77% 54%;
+    /* Cream text on this orange measured 3.27:1, under the 4.5:1 floor -
+       same failure mode the 2026-08-07 dark-mode note below used to
+       document for the previous orange. This near-black warm brown clears
+       5.48:1 in light mode and, reused as-is, 6.78:1 against the brighter
+       dark-mode orange too, so one value covers both themes. */
+    --secondary-foreground: 22 54% 7%;
+    --muted: 41 55% 92%;
+    --muted-foreground: 36 20% 35%;
+    --accent: 39 67% 55%;
+    --accent-foreground: 136 26% 14%;
     --destructive: 340 82% 52%;
     --destructive-foreground: 0 0% 100%;
-    --border: 34 25% 88%;
-    --input: 34 25% 88%;
-    --ring: 150 60% 18%;
-    --chart-1: 24 100% 63%;
-    --chart-2: 174 100% 36%;
-    --chart-3: 150 60% 18%;
+    --border: 42 48% 86%;
+    --input: 42 48% 86%;
+    --ring: 164 56% 19%;
+    --chart-1: 17 77% 54%;
+    --chart-2: 39 67% 55%;
+    --chart-3: 164 56% 19%;
     --chart-4: 340 82% 52%;
     --chart-5: 48 100% 60%;
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
-    --sidebar-background: 34 40% 98%;
-    --sidebar-foreground: 150 40% 10%;
-    --sidebar-primary: 150 60% 18%;
-    --sidebar-primary-foreground: 34 55% 96%;
-    --sidebar-accent: 34 30% 92%;
-    --sidebar-accent-foreground: 150 40% 10%;
-    --sidebar-border: 34 25% 88%;
-    --sidebar-ring: 150 60% 18%;
+    --sidebar-background: 42 63% 95%;
+    --sidebar-foreground: 136 26% 14%;
+    --sidebar-primary: 164 56% 19%;
+    --sidebar-primary-foreground: 40 75% 97%;
+    --sidebar-accent: 41 55% 92%;
+    --sidebar-accent-foreground: 136 26% 14%;
+    --sidebar-border: 42 48% 86%;
+    --sidebar-ring: 164 56% 19%;
   }
 
   .dark {
-    /* REVERT NOTE (2026-08-07): background/foreground were 150 30% 6% and
-       34 40% 95% before this change. Both passed WCAG AAA (16.96:1) but
-       carried real saturation - a true forest green and a true warm cream,
-       not neutral - which is invisible to the WCAG contrast formula (it
-       only measures luminance, not hue) but was reported as feeling harder
-       to read on sustained articles than the numbers implied. Desaturated
-       both roughly in half, same hues, same lightness, still 15.98:1 AAA.
-       To revert: restore the two commented values below. */
-    --background: 150 12% 7%; /* was 150 30% 6% */
-    --foreground: 34 15% 93%; /* was 34 40% 95% */
-    /* card/popover are the actual reading surface almost everywhere - every
-       article (BlogPost.jsx) wraps its entire content, header through body,
-       in a bg-card block, so this pair mattered more than background/
-       foreground above and was missed in the first pass. Same treatment,
-       same reasoning: desaturated, same hue, still comfortably AAA
-       (14.41:1). Foreground reuses the exact --foreground value above
-       rather than a third near-identical cream. */
-    --card: 150 10% 11%; /* was 150 25% 10% */
-    --card-foreground: 34 15% 93%; /* was 34 40% 95% */
-    --popover: 150 10% 11%; /* was 150 25% 10% */
-    --popover-foreground: 34 15% 93%; /* was 34 40% 95% */
-    --primary: 174 100% 42%;
-    --primary-foreground: 150 30% 6%;
-    --secondary: 24 100% 63%;
-    --secondary-foreground: 150 30% 6%;
-    --muted: 150 20% 14%;
-    --muted-foreground: 34 20% 60%;
-    --accent: 48 100% 60%;
-    --accent-foreground: 150 30% 6%;
+    --background: 153 27% 8%;
+    --foreground: 41 48% 91%;
+    --card: 150 22% 11%;
+    --card-foreground: 41 48% 91%;
+    --popover: 150 22% 11%;
+    --popover-foreground: 41 48% 91%;
+    --primary: 165 67% 41%;
+    --primary-foreground: 148 33% 8%;
+    --secondary: 17 85% 62%;
+    --secondary-foreground: 22 54% 7%;
+    --muted: 143 18% 14%;
+    --muted-foreground: 41 20% 66%;
+    --accent: 39 82% 67%;
+    --accent-foreground: 148 33% 8%;
     --destructive: 340 82% 52%;
     --destructive-foreground: 0 0% 100%;
-    --border: 150 15% 18%;
-    --input: 150 15% 18%;
-    --ring: 174 100% 42%;
-    --chart-1: 24 100% 63%;
-    --chart-2: 174 100% 50%;
-    --chart-3: 48 100% 60%;
+    --border: 141 14% 19%;
+    --input: 141 14% 19%;
+    --ring: 165 67% 41%;
+    --chart-1: 17 85% 62%;
+    --chart-2: 39 82% 67%;
+    --chart-3: 165 67% 41%;
     --chart-4: 340 82% 60%;
     --chart-5: 150 60% 40%;
 
-    --sidebar-background: 150 25% 10%;
-    --sidebar-foreground: 34 40% 95%;
-    --sidebar-primary: 174 100% 42%;
-    --sidebar-primary-foreground: 150 30% 6%;
-    --sidebar-accent: 150 20% 14%;
-    --sidebar-accent-foreground: 34 40% 95%;
-    --sidebar-border: 150 15% 18%;
-    --sidebar-ring: 174 100% 42%;
+    --sidebar-background: 150 22% 11%;
+    --sidebar-foreground: 41 48% 91%;
+    --sidebar-primary: 165 67% 41%;
+    --sidebar-primary-foreground: 148 33% 8%;
+    --sidebar-accent: 143 18% 14%;
+    --sidebar-accent-foreground: 41 48% 91%;
+    --sidebar-border: 141 14% 19%;
+    --sidebar-ring: 165 67% 41%;
   }
 }
 
