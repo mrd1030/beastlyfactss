@@ -210,7 +210,7 @@ export default function Encyclopedia() {
               prerendered and in the sitemap, but with no anchor a crawler had
               to find them there rather than by following a link, and no
               internal weight passed between the two halves of this page. */}
-          <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
+          <div className="flex gap-2 mt-5 bg-muted/60 border border-border rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => {
               const destination = tab.id === 'guides'
                 ? (activeCategory === 'All' ? '/guides/' : `/guides/category/${toSlug(activeCategory)}/`)
@@ -222,7 +222,7 @@ export default function Encyclopedia() {
                   to={destination}
                   state={{ returnTo: destination }}
                   className={`flex-1 py-2 px-3 rounded-xl text-center text-xs font-body font-bold transition-all ${
-                    activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                    activeTab === tab.id ? 'bg-card border border-border shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
                   {tab.label}

@@ -59,7 +59,7 @@ export default function HeroSection({ onOpenFact }) {
           <img
             src="/assets/hero-1200.jpg"
             alt="Majestic lion, colorful macaw, and bearded dragon in nature"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[50%_20%]"
             fetchpriority="high"
             width="1200"
             height="800"
@@ -68,8 +68,8 @@ export default function HeroSection({ onOpenFact }) {
         </picture>
 
         {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-transparent" />
       </div>
 
       {/* Floating emojis - purely decorative.
