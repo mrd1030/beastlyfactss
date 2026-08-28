@@ -138,5 +138,50 @@
     "id": "giant-millipede",
     "restricted": 6,
     "checked": 25
+  },
+  "corn-snake": {
+    "id": "corn-snake",
+    "restricted": 8,
+    "checked": 40
+  },
+  "milk-snake": {
+    "id": "milk-snake",
+    "restricted": 10,
+    "checked": 38
+  },
+  "rosy-boa": {
+    "id": "rosy-boa",
+    "restricted": 6,
+    "checked": 43
+  },
+  "flying-squirrel": {
+    "id": "flying-squirrel",
+    "restricted": 16,
+    "checked": 20
+  },
+  "ackie-monitor": {
+    "id": "ackie-monitor",
+    "restricted": 5,
+    "checked": 32
+  },
+  "garter-snake": {
+    "id": "garter-snake",
+    "restricted": 14,
+    "checked": 50
+  },
+  "kingsnake": {
+    "id": "kingsnake",
+    "restricted": 5,
+    "checked": 50
+  },
+  "cockatoo": {
+    "id": "cockatoo",
+    "restricted": 4,
+    "checked": 49
+  },
+  "red-footed-tortoise": {
+    "id": "red-footed-tortoise",
+    "restricted": 2,
+    "checked": 31
   }
 }

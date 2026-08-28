@@ -262,6 +262,24 @@
       "image": "/assets/guides/betta-fish.jpg"
     },
     {
+      "id": "bristlenose-pleco",
+      "name": "Bristlenose Pleco",
+      "emoji": "🐟",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "bristlenose-pleco",
+      "image": "/assets/guides/bristlenose-pleco.jpg"
+    },
+    {
+      "id": "cardinal-tetra",
+      "name": "Cardinal Tetra",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner-Intermediate",
+      "guideId": "cardinal-tetra",
+      "image": "/assets/guides/cardinal-tetra.jpg"
+    },
+    {
       "id": "corydoras-catfish",
       "name": "Corydoras Catfish",
       "emoji": "🐟",
@@ -269,6 +287,15 @@
       "difficulty": "Beginner",
       "guideId": "corydoras-catfish",
       "image": "/assets/guides/corydoras-catfish.jpg"
+    },
+    {
+      "id": "discus",
+      "name": "Discus",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Intermediate-Advanced",
+      "guideId": "discus",
+      "image": "/assets/guides/discus.jpg"
     },
     {
       "id": "goldfish",
@@ -298,6 +325,15 @@
       "image": "/assets/guides/koi.jpg"
     },
     {
+      "id": "molly",
+      "name": "Molly",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "molly",
+      "image": "/assets/guides/molly.jpg"
+    },
+    {
       "id": "neon-tetra",
       "name": "Neon Tetra",
       "emoji": "🐠",
@@ -314,33 +350,6 @@
       "difficulty": "Intermediate",
       "guideId": "oscar",
       "image": "/assets/guides/oscar.jpg"
-    },
-    {
-      "id": "discus",
-      "name": "Discus",
-      "emoji": "🐠",
-      "category": "Fish",
-      "difficulty": "Intermediate-Advanced",
-      "guideId": "discus",
-      "image": "/assets/guides/discus.jpg"
-    },
-    {
-      "id": "cardinal-tetra",
-      "name": "Cardinal Tetra",
-      "emoji": "🐠",
-      "category": "Fish",
-      "difficulty": "Beginner-Intermediate",
-      "guideId": "cardinal-tetra",
-      "image": "/assets/guides/cardinal-tetra.jpg"
-    },
-    {
-      "id": "molly",
-      "name": "Molly",
-      "emoji": "🐠",
-      "category": "Fish",
-      "difficulty": "Beginner",
-      "guideId": "molly",
-      "image": "/assets/guides/molly.jpg"
     },
     {
       "id": "platy",
@@ -368,15 +377,6 @@
       "difficulty": "Beginner",
       "guideId": "zebra-danio",
       "image": "/assets/guides/zebra-danio.jpg"
-    },
-    {
-      "id": "bristlenose-pleco",
-      "name": "Bristlenose Pleco",
-      "emoji": "🐟",
-      "category": "Fish",
-      "difficulty": "Beginner",
-      "guideId": "bristlenose-pleco",
-      "image": "/assets/guides/bristlenose-pleco.jpg"
     },
     {
       "id": "african-fat-tail",
@@ -442,6 +442,24 @@
       "image": "/assets/guides/tokay-gecko.jpg"
     },
     {
+      "id": "amano-shrimp",
+      "name": "Amano Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "amano-shrimp",
+      "image": "/assets/guides/amano-shrimp.jpg"
+    },
+    {
+      "id": "cherry-shrimp",
+      "name": "Cherry Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "cherry-shrimp",
+      "image": "/assets/guides/cherry-shrimp.jpg"
+    },
+    {
       "id": "emperor-scorpion",
       "name": "Emperor Scorpion",
       "emoji": "🦂",
@@ -449,6 +467,15 @@
       "difficulty": "Beginner/Intermediate",
       "guideId": "emperor-scorpion",
       "image": "/assets/guides/emperor-scorpion.jpg"
+    },
+    {
+      "id": "ghost-shrimp",
+      "name": "Ghost Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "ghost-shrimp",
+      "image": "/assets/guides/ghost-shrimp.jpg"
     },
     {
       "id": "millipede",
@@ -512,33 +539,6 @@
       "difficulty": "Beginner",
       "guideId": "tarantula",
       "image": "/assets/guides/tarantula.jpg"
-    },
-    {
-      "id": "cherry-shrimp",
-      "name": "Cherry Shrimp",
-      "emoji": "🦐",
-      "category": "Invertebrates",
-      "difficulty": "Beginner",
-      "guideId": "cherry-shrimp",
-      "image": "/assets/guides/cherry-shrimp.jpg"
-    },
-    {
-      "id": "amano-shrimp",
-      "name": "Amano Shrimp",
-      "emoji": "🦐",
-      "category": "Invertebrates",
-      "difficulty": "Beginner/Intermediate",
-      "guideId": "amano-shrimp",
-      "image": "/assets/guides/amano-shrimp.jpg"
-    },
-    {
-      "id": "ghost-shrimp",
-      "name": "Ghost Shrimp",
-      "emoji": "🦐",
-      "category": "Invertebrates",
-      "difficulty": "Beginner",
-      "guideId": "ghost-shrimp",
-      "image": "/assets/guides/ghost-shrimp.jpg"
     },
     {
       "id": "ackie-monitor",
@@ -658,6 +658,24 @@
       "image": "/assets/guides/degu.jpg"
     },
     {
+      "id": "mouse",
+      "name": "Fancy Mouse",
+      "emoji": "🐭",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "mouse",
+      "image": "/assets/guides/mouse.jpg"
+    },
+    {
+      "id": "rat",
+      "name": "Fancy Rat",
+      "emoji": "🐀",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "rat",
+      "image": "/assets/guides/rat.jpg"
+    },
+    {
       "id": "ferret",
       "name": "Ferret",
       "emoji": "🦡",
@@ -712,15 +730,6 @@
       "image": "/assets/guides/rabbit.jpg"
     },
     {
-      "id": "sugar-glider",
-      "name": "Sugar Glider",
-      "emoji": "🐿️",
-      "category": "Small Mammals",
-      "difficulty": "Advanced",
-      "guideId": "sugar-glider",
-      "image": "/assets/guides/sugar-glider.jpg"
-    },
-    {
       "id": "flying-squirrel",
       "name": "Southern Flying Squirrel",
       "emoji": "🐿️",
@@ -730,22 +739,13 @@
       "image": "/assets/guides/flying-squirrel.jpg"
     },
     {
-      "id": "rat",
-      "name": "Fancy Rat",
-      "emoji": "🐀",
+      "id": "sugar-glider",
+      "name": "Sugar Glider",
+      "emoji": "🐿️",
       "category": "Small Mammals",
-      "difficulty": "Beginner",
-      "guideId": "rat",
-      "image": "/assets/guides/rat.jpg"
-    },
-    {
-      "id": "mouse",
-      "name": "Fancy Mouse",
-      "emoji": "🐭",
-      "category": "Small Mammals",
-      "difficulty": "Beginner",
-      "guideId": "mouse",
-      "image": "/assets/guides/mouse.jpg"
+      "difficulty": "Advanced",
+      "guideId": "sugar-glider",
+      "image": "/assets/guides/sugar-glider.jpg"
     },
     {
       "id": "ball-python",

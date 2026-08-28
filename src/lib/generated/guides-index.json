@@ -109,6 +109,15 @@
       "tagline": "The feisty, affectionate little parrot that bonds deeply with its person!"
     },
     {
+      "id": "parrotlet",
+      "name": "Parrotlet",
+      "emoji": "🐦",
+      "difficulty": "Intermediate",
+      "petType": "Birds",
+      "image": "/assets/guides/parrotlet.jpg",
+      "tagline": "The smallest parrot you can keep, with a personality far too big for its tiny body!"
+    },
+    {
       "id": "quaker-parakeet",
       "name": "Quaker Parakeet",
       "emoji": "🦜",
@@ -116,6 +125,15 @@
       "petType": "Birds",
       "image": "/assets/guides/quaker-parakeet.jpg",
       "tagline": "A bold, talkative little parrot that several states will not let you keep!"
+    },
+    {
+      "id": "zebra-finch",
+      "name": "Zebra Finch",
+      "emoji": "🐦",
+      "difficulty": "Beginner",
+      "petType": "Birds",
+      "image": "/assets/guides/zebra-finch.jpg",
+      "tagline": "The tiny, sociable finch that thrives in pairs and doesn't need or want to be handled!"
     },
     {
       "id": "cat-universal",
@@ -289,6 +307,24 @@
       "tagline": "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!"
     },
     {
+      "id": "bristlenose-pleco",
+      "name": "Bristlenose Pleco",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/bristlenose-pleco.jpg",
+      "tagline": "The tentacle-snouted algae cleaner that actually stays small, unlike the 'baby pleco' at the pet store!"
+    },
+    {
+      "id": "cardinal-tetra",
+      "name": "Cardinal Tetra",
+      "emoji": "🐠",
+      "difficulty": "Beginner-Intermediate",
+      "petType": "Fish",
+      "image": "/assets/guides/cardinal-tetra.jpg",
+      "tagline": "The neon tetra's brighter, warmer-water-tolerant cousin, with a red stripe that runs the full body!"
+    },
+    {
       "id": "corydoras-catfish",
       "name": "Corydoras Catfish",
       "emoji": "🐟",
@@ -296,6 +332,15 @@
       "petType": "Fish",
       "image": "/assets/guides/corydoras-catfish.jpg",
       "tagline": "The armored little bottom-cleaner that schools, snoozes, and shimmies to the surface for air!"
+    },
+    {
+      "id": "discus",
+      "name": "Discus",
+      "emoji": "🐠",
+      "difficulty": "Intermediate-Advanced",
+      "petType": "Fish",
+      "image": "/assets/guides/discus.jpg",
+      "tagline": "The self-styled king of the aquarium, a tall, social cichlid that raises its fry on its own skin!"
     },
     {
       "id": "goldfish",
@@ -325,6 +370,15 @@
       "tagline": "The living jewels of the pond world that can genuinely outlive their keepers!"
     },
     {
+      "id": "molly",
+      "name": "Molly",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/molly.jpg",
+      "tagline": "The hardy, prolific livebearer with a genuine tolerance for brackish water!"
+    },
+    {
       "id": "neon-tetra",
       "name": "Neon Tetra",
       "emoji": "🐠",
@@ -341,6 +395,33 @@
       "petType": "Fish",
       "image": "/assets/guides/oscar.jpg",
       "tagline": "The big-personality cichlid that recognizes its keeper and rearranges the tank on a whim!"
+    },
+    {
+      "id": "platy",
+      "name": "Platy",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/platy.jpg",
+      "tagline": "The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!"
+    },
+    {
+      "id": "swordtail",
+      "name": "Swordtail",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/swordtail.jpg",
+      "tagline": "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!"
+    },
+    {
+      "id": "zebra-danio",
+      "name": "Zebra Danio",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/zebra-danio.jpg",
+      "tagline": "The tireless, torpedo-striped schooler that's equally at home in a beginner's tank and a genetics lab!"
     },
     {
       "id": "african-fat-tail",
@@ -406,6 +487,24 @@
       "tagline": "The jewel-toned, loud-voiced gecko that's not for the faint of heart!"
     },
     {
+      "id": "amano-shrimp",
+      "name": "Amano Shrimp",
+      "emoji": "🦐",
+      "difficulty": "Beginner/Intermediate",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/amano-shrimp.jpg",
+      "tagline": "The champion algae eater that can't reproduce in your freshwater tank, no matter how long you keep it!"
+    },
+    {
+      "id": "cherry-shrimp",
+      "name": "Cherry Shrimp",
+      "emoji": "🦐",
+      "difficulty": "Beginner",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/cherry-shrimp.jpg",
+      "tagline": "The tiny, self-multiplying cleanup crew that turns one bag of shrimp into a colony!"
+    },
+    {
       "id": "emperor-scorpion",
       "name": "Emperor Scorpion",
       "emoji": "🦂",
@@ -413,6 +512,15 @@
       "petType": "Invertebrates",
       "image": "/assets/guides/emperor-scorpion.jpg",
       "tagline": "One of the largest scorpions in the world, and one of the least venomous pet scorpions!"
+    },
+    {
+      "id": "ghost-shrimp",
+      "name": "Ghost Shrimp",
+      "emoji": "🦐",
+      "difficulty": "Beginner",
+      "petType": "Invertebrates",
+      "image": "/assets/guides/ghost-shrimp.jpg",
+      "tagline": "The nearly transparent, famously cheap cleanup crew that's sold as fish food as often as it's kept as a pet!"
     },
     {
       "id": "millipede",
@@ -595,6 +703,24 @@
       "tagline": "The daytime rodent that cannot eat sugar and will not live alone!"
     },
     {
+      "id": "mouse",
+      "name": "Fancy Mouse",
+      "emoji": "🐭",
+      "difficulty": "Beginner",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/mouse.jpg",
+      "tagline": "The pocket-sized speedster that's cheap to keep but easy to underestimate!"
+    },
+    {
+      "id": "rat",
+      "name": "Fancy Rat",
+      "emoji": "🐀",
+      "difficulty": "Beginner",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/rat.jpg",
+      "tagline": "The whip-smart, deeply social rodent that will learn its own name!"
+    },
+    {
       "id": "ferret",
       "name": "Ferret",
       "emoji": "🦡",
@@ -602,6 +728,15 @@
       "petType": "Small Mammals",
       "image": "/assets/guides/ferret.jpg",
       "tagline": "The slinky escape artist that sleeps 18 hours and wreaks havoc in the other 6!"
+    },
+    {
+      "id": "flying-squirrel",
+      "name": "Flying Squirrel",
+      "emoji": "🐿️",
+      "difficulty": "Advanced",
+      "petType": "Small Mammals",
+      "image": "/assets/guides/flying-squirrel.jpg",
+      "tagline": "The tiny gliding rodent that evolved the same trick as a sugar glider, completely independently!"
     },
     {
       "id": "gerbil",
@@ -694,6 +829,15 @@
       "tagline": "The curious, colorful beginner snake that never stops exploring!"
     },
     {
+      "id": "garter-snake",
+      "name": "Garter Snake",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "petType": "Snakes",
+      "image": "/assets/guides/garter-snake.jpg",
+      "tagline": "The backyard classic that eats fish and worms instead of mice!"
+    },
+    {
       "id": "hognose-snake",
       "name": "Hognose Snake",
       "emoji": "🐍",
@@ -712,6 +856,15 @@
       "tagline": "The brilliantly banded mimic that wears venomous colors with no venom required!"
     },
     {
+      "id": "rosy-boa",
+      "name": "Rosy Boa",
+      "emoji": "🐍",
+      "difficulty": "Beginner",
+      "petType": "Snakes",
+      "image": "/assets/guides/rosy-boa.jpg",
+      "tagline": "The pint-sized desert boa that's calmer than snakes twice its size!"
+    },
+    {
       "id": "box-turtle",
       "name": "Box Turtle",
       "emoji": "🐢",
@@ -728,6 +881,15 @@
       "petType": "Turtles & Tortoises",
       "image": "/assets/guides/red-eared-slider.jpg",
       "tagline": "The iconic pet turtle that grows much larger than the pet store suggests!"
+    },
+    {
+      "id": "red-footed-tortoise",
+      "name": "Red-Footed Tortoise",
+      "emoji": "🐢",
+      "difficulty": "Intermediate",
+      "petType": "Turtles & Tortoises",
+      "image": "/assets/guides/red-footed-tortoise.jpg",
+      "tagline": "The tropical omnivore tortoise that splits the difference between Russian and sulcata!"
     },
     {
       "id": "russian-tortoise",
