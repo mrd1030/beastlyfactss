@@ -226,19 +226,22 @@ export default function Gallery() {
 
           <FactOrderControl order={order} onChange={handleOrderChange} onRandomize={handleRandomize} className="mt-4" />
 
-          <div className="flex flex-wrap gap-2 mt-4">
-            {allCategories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => handleCategoryChange(cat)}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  activeCategory === cat
-                    ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
-                    : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30'
-                }`}
-              >
-                {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
-              </button>
+          <div className="flex flex-wrap items-center gap-y-2 mt-4 text-xs font-body">
+            {allCategories.map((cat, i) => (
+              <React.Fragment key={cat}>
+                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                <button
+                  type="button"
+                  onClick={() => handleCategoryChange(cat)}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    activeCategory === cat
+                      ? 'border-secondary text-foreground font-semibold'
+                      : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
+                </button>
+              </React.Fragment>
             ))}
           </div>
         </div>

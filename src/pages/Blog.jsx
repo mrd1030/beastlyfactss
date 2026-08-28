@@ -355,25 +355,19 @@ export default function Blog() {
             </Link>
           )}
 
-          <div className="flex flex-wrap gap-2 mt-4">
-            <Link
-              to="/blog/"
-              className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                slugify(activeCategory) === 'all' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              All
-            </Link>
-            {categories.map(cat => (
-              <Link
-                key={cat.slug}
-                to={`/blog/category/${cat.slug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  slugify(activeCategory) === cat.slug ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {cat.title} <span className="opacity-60">({cat.count})</span>
-              </Link>
+          <div className="flex flex-wrap items-center gap-y-2 mt-4 text-xs font-body">
+            {[{ slug: 'all', title: 'All', to: '/blog/' }, ...categories.map(cat => ({ slug: cat.slug, title: cat.title, to: `/blog/category/${cat.slug}/` }))].map((item, i) => (
+              <React.Fragment key={item.slug}>
+                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                <Link
+                  to={item.to}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {item.title}
+                </Link>
+              </React.Fragment>
             ))}
           </div>
         </div>
