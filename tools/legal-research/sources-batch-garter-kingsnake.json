@@ -1,0 +1,87 @@
+{
+  "al-native-nongame": {
+    "title": "Ala. Admin. Code r. 220-2-.92",
+    "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.92",
+    "note": "Alabama Legislature's administrative code rule listing nongame wildlife species that cannot be taken, possessed, or sold without a permit."
+  },
+  "az-license-take": {
+    "title": "Ariz. Admin. Code R12-4-406, R12-4-407",
+    "url": "https://s3.amazonaws.com/azgfd-portal-wordpress/PortalImages/files/Agency/12-04commissionrules.pdf",
+    "note": "Arizona Game and Fish Commission's live wildlife rules, hosted by AZGFD, R12-4-406 sets the restricted wildlife special license requirement and R12-4-407 lists exemptions from it."
+  },
+  "ca-5-60": {
+    "title": "Cal. Code Regs. tit. 14, § 5.60",
+    "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+    "note": "CDFW's current Freshwater Sport Fishing Regulations booklet, which reprints Title 14 section 5.60 in full, including species bag limits and county closures."
+  },
+  "co-unregulated-wildlife": {
+    "title": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+    "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=6776&fileName=2+CCR+406-11",
+    "note": "Colorado Secretary of State's current codified text of CPW's Chapter W-11 rule, whose Chapter 0 general provisions define the unregulated wildlife and prohibited species lists."
+  },
+  "ct-26-55-6": {
+    "title": "Regs. Conn. State Agencies § 26-55-6",
+    "url": "https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D",
+    "note": "Connecticut's official eRegulations portal text sorting wild animals into four possession categories by danger level."
+  },
+  "de-native-wildlife": {
+    "title": "Del. Code tit. 7, c. 7",
+    "url": "https://delcode.delaware.gov/title7/c007/index.html",
+    "note": "Delaware Code Online's game and fish possession chapter administered by DNREC, paired with a separate exotic species permit chapter at Del. Code tit. 3, c. 72."
+  },
+  "ma-321cmr9-01": {
+    "title": "321 CMR 9.01",
+    "url": "https://www.mass.gov/doc/321-cmr-9-exotic-wildlife/download",
+    "note": "MassWildlife's official exemption list under M.G.L. c. 131, section 23, only species actually named in it may be imported, sold, or possessed without a license."
+  },
+  "md-native-herp": {
+    "title": "COMAR 08.03.11 (formerly cited as 08.03.09, adopted 1993)",
+    "url": "https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html",
+    "note": "Maryland's native reptile and amphibian possession permit chapter, permanently adopted December 1, 1993, and renumbered from 08.03.09 to 08.03.11 since then."
+  },
+  "ne-captive-wildlife": {
+    "title": "163 Neb. Admin. Code ch. 4, § 008",
+    "url": "https://outdoornebraska.gov/wp-content/uploads/2023/03/Wildlife-Regs.pdf",
+    "note": "Nebraska Game and Parks Commission's own wildlife regulations booklet, section 008 lists which species require a Captive Wildlife Permit."
+  },
+  "nj-7-25-4-8": {
+    "title": "N.J.A.C. 7:25-4.8(a)",
+    "url": "https://dep.nj.gov/wp-content/uploads/njfw/restricted-species-potentially-dangerous-species-and-endangered-species.pdf",
+    "note": "NJDEP Fish and Wildlife's courtesy copy of its potentially dangerous species table, ordinary colubrid snakes such as kingsnakes and garter snakes are not on it."
+  },
+  "nv-unprotected-reptiles": {
+    "title": "NAC 503.090",
+    "url": "https://www.leg.state.nv.us/nac/nac-503.html",
+    "note": "Nevada Legislature's administrative code chapter defining unprotected reptiles as any species not classified protected, sensitive, threatened, or endangered."
+  },
+  "or-635-056-0060": {
+    "title": "OAR 635-056-0060",
+    "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060",
+    "note": "Oregon Secretary of State's administrative rules database entry listing wildlife species exempt from ODFW importation permits."
+  },
+  "pa-58-79": {
+    "title": "58 Pa. Code Ch. 79",
+    "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter79%2Fchap79toc.html&d=",
+    "note": "Official Pennsylvania Code and Bulletin chapter, Fish and Boat Commission rules that apply only to species native to Pennsylvania and only to wild take, which requires a fishing license."
+  },
+  "ut-r657-53": {
+    "title": "Utah Admin. Code R657-53-5",
+    "url": "https://wildlife.utah.gov/rules/r657-53",
+    "note": "Utah DWR's own hosting of rule R657-53, section 5 lists activities allowed without a wildlife document, including noncontrolled species possession thresholds."
+  },
+  "vt-10-app-18": {
+    "title": "10 V.S.A. App. § 18",
+    "url": "https://legislature.vermont.gov/statutes/section/10appendix/001/00018",
+    "note": "Vermont Legislature's official text requiring an Importation and Possession Permit for any wild animal not on the Commissioner's Unrestricted Wild Animals List."
+  },
+  "wi-nr16-12": {
+    "title": "Wis. Admin. Code NR 16.12-16.15",
+    "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16",
+    "note": "Wisconsin Legislature's codified DNR chapter on captive wildlife, sections 16.12 through 16.15 set possession and take limits for native reptiles and amphibians."
+  },
+  "wi-import-permit": {
+    "title": "Wis. Stat. § 169.04",
+    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/04",
+    "note": "Wisconsin Legislature's captive wildlife statute requiring lawful acquisition, animals sourced from out of state also need a DATCP import permit."
+  }
+}

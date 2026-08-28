@@ -220,21 +220,23 @@ export default function FactFiles() {
           {/* First on a phone, top of the right column on desktop. */}
           <div className="order-1 rounded-xl border border-border bg-card p-4 lg:order-none lg:col-start-3 lg:row-start-1">
             <h2 className="mb-3 font-display text-sm font-bold text-foreground">Browse by group</h2>
-            <div className="flex flex-wrap gap-2">
-              {[['All', ALL_FILES.length], ...GROUPS].map(([name, count]) => (
-                <button
-                  key={name}
-                  type="button"
-                  onClick={() => reset(() => setGroup(name))}
-                  aria-pressed={group === name}
-                  className={`rounded-full px-3 py-1.5 font-body text-xs font-semibold transition-all ${
-                    group === name
-                      ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
-                      : 'border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-foreground'
-                  }`}
-                >
-                  {name} <span className="opacity-60">{count}</span>
-                </button>
+            <div className="flex flex-wrap items-center gap-y-2 font-body text-xs">
+              {[['All', ALL_FILES.length], ...GROUPS].map(([name, count], i) => (
+                <React.Fragment key={name}>
+                  {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                  <button
+                    type="button"
+                    onClick={() => reset(() => setGroup(name))}
+                    aria-pressed={group === name}
+                    className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                      group === name
+                        ? 'border-secondary text-foreground font-semibold'
+                        : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                    }`}
+                  >
+                    {name} <span className="opacity-60">{count}</span>
+                  </button>
+                </React.Fragment>
               ))}
             </div>
           </div>

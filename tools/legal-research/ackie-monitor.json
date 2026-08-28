@@ -1,0 +1,250 @@
+{
+  "name": "Ackie Monitor",
+  "scientific": "Varanus acanthurus",
+  "encyclopediaId": "ackie-monitor",
+  "jurisdictions": {
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(7)",
+      "note": "Varanidae is absent from section 671 entirely, so monitors of any size are unrestricted in California, the same finding already documented for the savannah monitor.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-11-0103",
+      "cite": "ECL § 11-0103(6)(e)",
+      "quote": "Asiatic (water) Monitor (Varanus salvator); Nile Monitor (Varanus niloticus); White Throat Monitor (Varanus albigularis); Black Throat Monitor (Varanus albigularis ionides); Crocodile Monitor (Varanus salvadori); Komodo Dragon (Varanus komodoensis)",
+      "note": "New York's closed dangerous-wild-animal definition names six specific large monitors. Varanus acanthurus is absent.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321-9-01",
+      "cite": "321 CMR 9.01(10)(c)",
+      "quote": "Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus)",
+      "note": "The only monitor lizard on Massachusetts's exemption list; it may be kept without a permit.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "legal",
+      "sourceId": "ga-391-4-8-05",
+      "cite": "391-4-8-.05",
+      "note": "The only monitor named on Georgia's licensed wild-animal list is Varanus niloticus (Nile monitor), restricted to scientific, educational or exhibition purposes. Varanus acanthurus is absent and so unrestricted.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-822-101",
+      "cite": "Health & Safety Code § 822.101",
+      "note": "Monitor lizards do not appear on Texas's closed dangerous-wild-animal list, which is limited to named big cats, bears, canids and primates.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2.a",
+      "note": "Louisiana's prohibited nonnative-reptile list names the savannah monitor and Nile monitor specifically; Varanus acanthurus does not appear on either the prohibited or the restricted list. Louisiana is unusual in banning two monitors by name, but both are large species and the dwarf Ackie is not among them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AR": {
+      "status": "legal",
+      "sourceId": "ar-unrestricted",
+      "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+      "quote": "Monitor Lizards (Genus Varanus: V. acanthurus, V. albigularis, V. glauerti, V. jobiensis, V. kingorum, V. macraei, V. pilbarensis, V. prasinus, V. salvator, V. timorensis)",
+      "note": "Confirmed directly from the current AGFC PDF (revised 11/1/22). V. acanthurus is named outright on the unrestricted list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "No monitor lizard, Varanus, or Varanidae entry appears anywhere in the nonnative-animal permit table.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(m)",
+      "quote": "Komodo dragon (Varanus komodoensis);",
+      "note": "The only monitor on the inherently-dangerous list is the Komodo dragon.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)(a)(9)(a)",
+      "quote": "A member of the family varanidae, which are limited to water monitors and crocodile monitors.",
+      "note": "Varanus acanthurus is neither.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(e)(xxiv)",
+      "quote": "(xxiv) Varanidae (monitor lizard);",
+      "note": "The whole family is cleared as unregulated wildlife rather than restricted.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Family varanidae, only water monitors and crocodile monitors",
+      "note": "Washington restricts exactly two monitors, both reaching seven feet or more. The Ackie is not one of them.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "quote": "(14) Komodo dragons",
+      "note": "Varanus komodoensis is named individually rather than the family being listed, so other monitors are outside the law.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)",
+      "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.02(b)(4)",
+      "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+      "verifiedOn": "2026-08-27"
+    },
+    "MO": {
+      "status": "legal",
+      "sourceId": "mo-3csr10-9",
+      "cite": "3 CSR 10-9.230",
+      "note": "Not native to Missouri, so outside Class I, and well under the eight-foot dangerous-reptile registration threshold of § 578.023.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)",
+      "note": "Only non-native venomous snakes are named among reptiles.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "legal",
+      "sourceId": "sc-50-16",
+      "cite": "§ 50-16-60",
+      "quote": "15. reptiles",
+      "verifiedOn": "2026-08-27"
+    },
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+      "verifiedOn": "2026-08-27"
+    },
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-220-2-26",
+      "cite": "§ (1)",
+      "note": "Only tegus of the genus Salvator are named among the lizards.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-8(a)",
+      "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in the chapter or current administrative rules.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "§ 10(a)(i)",
+      "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "The inherently-dangerous list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3(c)",
+      "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, and does not ban even those. Everything else is a county question under § 153A-131.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "The possession-permit list covers mammals only; reptiles fall under Game, Fish and Parks rules instead.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "banned",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "note": "No lizard fits any of the seven permitted categories, the same finding already documented for the savannah monitor.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-4-71-6-5",
+      "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+      "quote": "Varanus acanthurus   monitor, spiny-tailed",
+      "note": "Confirmed directly from the HDOA restricted-animal-list (Part A) PDF. Part A is headed FOR RESEARCH AND EXHIBITION; a university or licensed exhibitor can hold one by permit, but no pet permit path exists, the same treatment as the savannah and Nile monitor.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "permit",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17(A)(4)(c)(1)",
+      "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "permit",
+      "sourceId": "nj-7-25-4-4",
+      "cite": "N.J.A.C. 7:25-4.4, 4.5",
+      "note": "No Varanus or Varanidae entry appears on the exempt-species list; falls to the § 4.5 catch-all permit provision.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "ME": {
+      "status": "permit",
+      "sourceId": "me-unrestricted",
+      "cite": "Unrestricted Species List",
+      "note": "Maine's clean list names only Varanus exanthematicus (savannah monitor) among monitors (documented in this site's savannah-monitor research). Varanus acanthurus is absent, so it falls back to Maine's general importation/possession permit requirement rather than the no-permit list. Whether an individual permit is actually issued for a pet Ackie was not separately confirmed.",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

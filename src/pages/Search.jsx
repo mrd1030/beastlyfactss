@@ -187,22 +187,24 @@ export default function Search() {
 
         {/* Category filter chips */}
         {results.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            <button
-              onClick={() => setActiveCategory('')}
-              className={`text-xs font-body font-semibold px-3 py-1 rounded-full transition-all ${!activeCategory ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
-            >
-              All
-            </button>
-            {CATEGORIES.filter(c => results.some(r => slugify(r.category) === slugify(c.slug) || (r.tags || []).some(t => slugify(t) === slugify(c.slug)))).map(c => (
-              <button
-                key={c.slug}
-                onClick={() => setActiveCategory(activeCategory === c.slug ? '' : c.slug)}
-                className={`text-xs font-body font-semibold px-3 py-1 rounded-full transition-all flex items-center gap-1 ${activeCategory === c.slug ? 'bg-secondary text-secondary-foreground' : 'bg-muted text-muted-foreground hover:text-foreground'}`}
-              >
-                {`${c.emoji} ${c.label}`}
-              </button>
-            ))}
+          <div className="flex flex-wrap items-center gap-y-2 mb-4 text-xs font-body">
+            {[{ slug: '', label: 'All' }, ...CATEGORIES.filter(c => results.some(r => slugify(r.category) === slugify(c.slug) || (r.tags || []).some(t => slugify(t) === slugify(c.slug))))].map((c, i) => {
+              const isActive = c.slug === '' ? !activeCategory : activeCategory === c.slug;
+              return (
+                <React.Fragment key={c.slug || 'all'}>
+                  {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                  <button
+                    type="button"
+                    onClick={() => setActiveCategory(c.slug === '' ? '' : (activeCategory === c.slug ? '' : c.slug))}
+                    className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                      isActive ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                    }`}
+                  >
+                    {c.slug === '' ? 'All' : `${c.emoji} ${c.label}`}
+                  </button>
+                </React.Fragment>
+              );
+            })}
           </div>
         )}
 
