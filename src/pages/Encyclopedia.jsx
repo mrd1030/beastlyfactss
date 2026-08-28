@@ -296,12 +296,12 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
           />
         </div>
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap items-center gap-y-2 mb-6 text-xs font-body">
           <Link
             to="/encyclopedia/"
             onClick={() => setActiveCategory('All')}
-            className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-              activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+            className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+              activeCategory === 'All' ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
             }`}
           >
             ✨ All
@@ -309,15 +309,17 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           {encyclopediaCategories.map(cat => {
             const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
             return (
-              <Link
-                key={cat.name}
-                to={`/encyclopedia/category/${urlSlug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {`${cat.emoji} ${cat.name}`}
-              </Link>
+              <React.Fragment key={cat.name}>
+                <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>
+                <Link
+                  to={`/encyclopedia/category/${urlSlug}/`}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    activeCategory === cat.name ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {`${cat.emoji} ${cat.name}`}
+                </Link>
+              </React.Fragment>
             );
           })}
         </div>
