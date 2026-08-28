@@ -162,8 +162,8 @@ export default function BeastfileDetail() {
               the page: this is the point where someone knows what the page is
               and decides to pass it on, and the page's og:image is already the
               hero, so an unfurled link previews properly. */}
-          <div className="flex items-start justify-between gap-4">
-            <p className="text-[11px] font-body font-bold uppercase tracking-wider text-secondary mb-1">
+          <div className="flex items-center justify-between gap-3">
+            <p className="text-[11px] font-body font-bold uppercase tracking-wider text-secondary mb-1 truncate min-w-0">
               {`Beastfile · ${group}`}
             </p>
             <div className="flex-shrink-0 flex items-center gap-2">

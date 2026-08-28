@@ -428,24 +428,12 @@ export default function GuideDetail() {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-start justify-between gap-4 mb-4">
-            <div className="flex items-center gap-4">
-              <span className="text-5xl">{guide.emoji}</span>
-              <div>
-                <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
-                  {guide.name}
-                </h1>
-                <p className="text-sm text-muted-foreground font-body mt-0.5">{guide.petType}</p>
-                <div className="flex items-center gap-2 mt-1.5">
-                  <button
-                    ref={legendTriggerRef}
-                    onClick={() => setIsLegendOpen(true)}
-                    className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-                  >
-                    {guide.difficulty}
-                  </button>
-                </div>
-              </div>
+          <div className="flex items-center justify-between gap-3 mb-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="text-4xl sm:text-5xl flex-shrink-0">{guide.emoji}</span>
+              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
+                {guide.name}
+              </h1>
             </div>
             <div className="flex-shrink-0 flex items-center gap-2">
               <SaveButton
@@ -459,11 +447,21 @@ export default function GuideDetail() {
               <button
                 ref={printTriggerRef}
                 onClick={() => setIsPrintOpen(true)}
-                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
+                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 p-3 sm:px-3 sm:py-2 rounded-xl transition-colors"
               >
-                <Printer className="w-3.5 h-3.5" /> Print Checklist
+                <Printer className="w-4 h-4" /> <span className="hidden sm:inline">Print Checklist</span>
               </button>
             </div>
+          </div>
+          <p className="text-sm text-muted-foreground font-body mt-2">{guide.petType}</p>
+          <div className="flex items-center gap-2 mt-1.5 mb-4">
+            <button
+              ref={legendTriggerRef}
+              onClick={() => setIsLegendOpen(true)}
+              className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
+            >
+              {guide.difficulty}
+            </button>
           </div>
           <p className="text-base text-foreground font-body italic mb-4">{guide.tagline}</p>
 

@@ -145,23 +145,12 @@ export default function EncyclopediaAnimal() {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <div className="flex items-start gap-4">
-              <span className="text-5xl">{animal.emoji}</span>
-              <div>
-                <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
-                  {animal.name}
-                </h1>
-                <p className="text-sm text-muted-foreground font-body italic mt-0.5">{animal.scientific}</p>
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
-                    {animal.category}
-                  </span>
-                  <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
-                    {`${animal.difficulty} care`}
-                  </span>
-                </div>
-              </div>
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="text-4xl sm:text-5xl flex-shrink-0">{animal.emoji}</span>
+              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
+                {animal.name}
+              </h1>
             </div>
             <SaveButton
               type="encyclopedia"
@@ -171,6 +160,15 @@ export default function EncyclopediaAnimal() {
               url={`/encyclopedia/animal/${animal.id}/`}
               className="flex-shrink-0"
             />
+          </div>
+          <p className="text-sm text-muted-foreground font-body italic mt-1.5">{animal.scientific}</p>
+          <div className="flex flex-wrap items-center gap-2 mt-2">
+            <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
+              {animal.category}
+            </span>
+            <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
+              {`${animal.difficulty} care`}
+            </span>
           </div>
         </motion.div>
 
