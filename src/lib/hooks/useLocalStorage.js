@@ -54,7 +54,7 @@ export function useDarkMode() {
     // toggling to light leaves a dark-colored status bar over a light page.
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', dark ? '#101412' : '#faf6ef');
+      ?.setAttribute('content', dark ? '#0f1a15' : '#FDF9F1');
   }, [dark]);
 
   return [dark, setDark];

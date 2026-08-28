@@ -48,12 +48,12 @@ export default function HeroSection({ onOpenFact }) {
         <picture>
           <source
             srcSet="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            sizes="100vw"
             type="image/webp"
           />
           <source
             srcSet="/assets/hero-400.jpg 400w, /assets/hero-800.jpg 800w, /assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            sizes="100vw"
             type="image/jpeg"
           />
           <img
@@ -67,9 +67,12 @@ export default function HeroSection({ onOpenFact }) {
           />
         </picture>
 
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/35 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/20 to-transparent" />
+        {/* Gradient overlays. Light mode uses a much lighter wash than dark:
+            the light --background is a pale cream, so the same opacities
+            that read as a normal dark vignette in dark mode instead
+            haze the whole photo over in light mode. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/10 to-transparent dark:from-background dark:via-background/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/10 to-transparent dark:from-background/20" />
       </div>
 
       {/* Floating emojis - purely decorative.

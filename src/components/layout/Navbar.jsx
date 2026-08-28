@@ -176,7 +176,7 @@ export default function Navbar() {
                   className={`px-3 py-1.5 border-b-2 text-sm font-body font-semibold transition-all ${
                     isActive
                       ? 'border-secondary text-primary'
-                      : 'border-transparent text-muted-foreground hover:text-foreground hover:bg-muted rounded-full'
+                      : 'border-transparent text-foreground hover:bg-muted rounded-full'
                   }`}
                 >
                   {link.label}
