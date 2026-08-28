@@ -26,10 +26,6 @@ Mark an item `[x]` once its photo has been replaced.
   - Shows a marine reef fish (rounded/oval body, short fins, coral-reef background), not the freshwater angelfish (*Pterophyllum scalare*) used everywhere else on the site. Wrong species, not just a detail.
   - Good news: confirmed isolated to this one file. All 6 per-article angelfish photos and both overview-grid angelfish panels checked and are correct.
 
-- [ ] **Corn Snake** — `public/assets/guides/corn-snake.jpg`, `public/assets/images/corn-snake-feeding.jpg`
-  - Vertical slit pupil. Corn snakes are colubrids with round pupils; a vertical slit is a pit-viper trait (e.g. copperhead).
-  - `corn-snake-cost.jpg` and the other corn-snake article photos were checked and are correctly round-pupiled, only these two files have the issue.
-
 - [ ] **Tiger Salamander** — `public/assets/guides/tiger-salamander-legal.jpg`, `public/assets/images/tiger-salamander-health-issues.jpg`
   - Pattern matches a European fire salamander (glossy jet-black skin, bold irregular yellow blotches, sometimes white-speckled snout), not a real tiger salamander (duller skin, plain snout matching body pattern).
   - `tiger-salamander.jpg`, `-cost.jpg`, `-handling.jpg`, `-tank-setup.jpg`, `-tank-setup-guide-1.jpg`, and `-vs-axolotl.jpg` were all checked and are correct, only these two files have the issue.
@@ -53,9 +49,6 @@ Mark an item `[x]` once its photo has been replaced.
 ### Worth a second look (not confident enough to hard-flag)
 
 - **Box Turtle** — `public/assets/guides/box-turtle-legal.jpg` — shell dome reads unusually smooth and high, more tortoise-like than a real box turtle's shape.
-- **California Kingsnake** — `public/assets/guides/california-kingsnake.jpg` — tongue fork unconfirmable at available resolution, worth zooming in yourself.
-- **Rosy Boa** — `public/assets/guides/rosy-boa-legal.jpg` — unusually uniform grey, low contrast. Could be a real pale morph, could be an error.
-- **Boa Constrictor** — `public/assets/images/boa-constrictor-health-issues.jpg` — odd reddish marks near the eyes on the open-mouthed shot, most likely shadowed nostrils rather than an extra eye pair, but worth a glance.
 - **Deep-sea anglerfish** (fun-fact article) — `public/assets/images/weirdest-creatures-deep-sea-facts-that-will-blow-your-mind-0.jpg` — dark high-contrast lighting near the eyes could read as a doubled eye shape, couldn't confirm either way.
 
 ## Pass 2: per-article photos (`public/assets/images/`)
@@ -84,15 +77,25 @@ Every photo below needs replacing or independent re-checking; this species has t
 - [ ] **Praying Mantis** — `public/assets/images/praying-mantis-ootheca.jpg` — the egg case is drawn as a smooth round ball with a fruit-like solid core; real oothecae are elongated, foam-textured, and internally segmented into many small egg chambers.
 - [ ] **Hamster vs. Guinea Pig** — `public/assets/images/hamster-vs-guinea-pig.jpg` — the guinea pig is given large upright cupped ears, essentially a scaled-up hamster ear; real guinea pig ears are small, low-set, and rounded against the head.
 - [ ] **Goldfish** — `public/assets/images/goldfish-cost.jpg` — has a pair of barbels at the mouth; goldfish are barbel-less (that's a defining difference from koi/carp). Isolated to this one file, the other 6 goldfish photos are correct.
-- [ ] **Corn Snake vs. Hognose Snake** — `public/assets/images/corn-snake-vs-hognose-snake.jpg` — the hognose snake is drawn with a generic rounded snout instead of its signature upturned, pig-like rostral scale; reads as a second corn snake.
 - [ ] **Crow** (fun-fact article) — `public/assets/images/crows-are-smarter-than-you-think-and-they-probably-already-know-it-0.jpg` — beak is pale grey/bone-white instead of solid black. (The `-1.jpg` in the same article is correct.)
 - [ ] **Madagascar Hissing Cockroach** — `public/assets/images/madagascar-hissing-cockroach-feeding.jpg` — "hands" gripping food look like crustacean pincers rather than a cockroach's simple legs/mandibles, plus a raised hook-curled body segment instead of the real flat oval abdomen.
 - [ ] **Mantis Shrimp** (fun-fact article, two images) — `public/assets/images/mantis-shrimp-16-color-vision-punch-power-4.jpg` and `-5.jpg` — both actually show a spiny lobster (long antennae, lobster-style fanned tail, no raptorial claw), not a mantis shrimp. `-5.jpg` is a real stock photo carrying a National Geographic watermark, so that one is a wrong-photo-sourced problem, not an AI-generation problem.
 - [ ] **Fire-Bellied Toad** — `public/assets/images/fire-bellied-toad-cost.jpg` — smooth-skinned, long-legged "true frog" body instead of the stocky, warty *Bombina orientalis* texture. (Its own `-handling.jpg` and `-health-issues.jpg` get the warty texture right.)
-- [ ] **Ball Python** (fun-fact article) — `public/assets/images/fun-facts-ball-python.jpg` — neon teal/turquoise with bright orange rings; no real ball python morph (normal, pastel, albino, spider, etc.) looks like this, they stay within black/brown/tan/cream/yellow/white.
-- [ ] **Boa Constrictor** (fun-fact article) — `public/assets/images/fun-facts-boa-constrictor.jpg` — shows ball-python-style chain-link circular blotches on a black base, not a boa's real saddle-shaped brown/tan/cream blotches on a greyish background. Wrong species' pattern.
 - [ ] **Madagascar Hissing Cockroach** (fun-fact article) — `public/assets/images/fun-facts-hissing-cockroach.jpg` — drawn with a large folded wing; Madagascar hissing cockroaches are wingless in both sexes, one of the species' best-known traits.
 - [ ] **Humpback Whale** (fun-fact article) — `public/assets/images/fun-facts-humpback-whale.jpg` — open mouth shows sharp pointed teeth; humpback whales are baleen whales with no teeth, only fringed keratin plates.
 - [ ] **Gargoyle Gecko** — `public/assets/images/gargoyle-gecko-feeding.jpg` — this is anatomically a leopard gecko (bold yellow/black bands, movable eyelids, plain clawed toes, no adhesive pads), not a gargoyle gecko (mottled grey/brown/tan, lidless fixed spectacle, adhesive lamellae toe pads). This looks like the wrong photo got attached to the article rather than a bad generation, may just need a straight file swap.
 
 Everything else across the ~613 files (16 review batches, full file list in git history if you want it) checked out clean against real diagnostic features for each species.
+
+## Skipped — not doing snake edits
+
+These 7 confirmed/soft-flagged issues involve snake species and are being
+left as-is by owner decision, not because they aren't real:
+
+- **Corn Snake** — `public/assets/guides/corn-snake.jpg`, `public/assets/images/corn-snake-feeding.jpg` — vertical slit pupil (should be round, corn snakes are colubrids not pit vipers).
+- **Corn Snake vs. Hognose Snake** — `public/assets/images/corn-snake-vs-hognose-snake.jpg` — hognose missing its signature upturned snout.
+- **Ball Python** (fun-fact article) — `public/assets/images/fun-facts-ball-python.jpg` — neon teal/orange coloring, no real morph looks like this.
+- **Boa Constrictor** (fun-fact article) — `public/assets/images/fun-facts-boa-constrictor.jpg` — shows ball python patterning instead of a boa's saddle blotches.
+- **California Kingsnake** (soft flag) — `public/assets/guides/california-kingsnake.jpg` — tongue fork unconfirmable at available resolution.
+- **Rosy Boa** (soft flag) — `public/assets/guides/rosy-boa-legal.jpg` — unusually uniform grey, could be a real pale morph.
+- **Boa Constrictor** (soft flag) — `public/assets/images/boa-constrictor-health-issues.jpg` — odd reddish eye-area marks, most likely shadowed nostrils.
