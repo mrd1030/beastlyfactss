@@ -92,12 +92,19 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3PXSDZB"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="app-splash"><img src="/pwa/splash-web.jpg" width="700" height="1040" alt="Illustrated bearded dragon wearing sunglasses and a scarf, the BeastlyFacts loading screen"></div>
+    <div id="app-splash"></div>
     <script>
       (function () {
         var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
         if (isStandalone) {
-          document.getElementById('app-splash').classList.add('is-visible');
+          var splash = document.getElementById('app-splash');
+          var img = document.createElement('img');
+          img.src = '/pwa/splash-web.jpg';
+          img.width = 700;
+          img.height = 1040;
+          img.alt = 'Illustrated bearded dragon wearing sunglasses and a scarf, the BeastlyFacts loading screen';
+          splash.appendChild(img);
+          splash.classList.add('is-visible');
         }
       })();
     </script>
