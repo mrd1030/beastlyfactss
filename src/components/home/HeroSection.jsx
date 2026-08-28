@@ -71,7 +71,7 @@ export default function HeroSection({ onOpenFact }) {
             the light --background is a pale cream, so the same opacities
             that read as a normal dark vignette in dark mode instead
             haze the whole photo over in light mode. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/10 to-transparent dark:from-background dark:via-background/35" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent dark:via-background/35" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/10 to-transparent dark:from-background/20" />
       </div>
 
