@@ -327,7 +327,7 @@ export const facts = [
 // Tailwind's scanner never sees them and drops them from the stylesheet.
 //
 // Note which palettes these use. tailwind.config.js defines `orange` and `teal`
-// as flat single values (#FF8C42 / #00B8A9), which replaces Tailwind's built-in
+// as flat single values (#E4632F / #D9A441), which replaces Tailwind's built-in
 // scales for those two names outright - so text-orange-300 and text-teal-700
 // do not exist and silently fall back to inherited colour. Mammals and Birds
 // rendered plain white here until they were moved onto rose and cyan, which

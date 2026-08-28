@@ -63,9 +63,11 @@ module.exports = {
             //
             // The fix is a rule rather than a colour. Recolouring headings to
             // --secondary was the obvious move and is wrong: that orange is
-            // hsl(24 100% 63%), which lands around 2.2:1 on the light-mode
-            // background and fails even the 3:1 large-text minimum. The bar
-            // carries the accent instead and the text keeps full contrast.
+            // hsl(17 77% 54%), which lands around 3.3:1 on the light-mode
+            // background. h2 (700-weight/24px) would scrape by on the 3:1
+            // large-text floor, but h3 (600-weight/20px) doesn't count as
+            // "large" and needs 4.5:1, which this fails. The bar carries the
+            // accent instead and the text keeps full contrast at every level.
             //
             // Same device the Beastfile tagline uses, so it reads as the site's
             // idiom rather than a new one.
