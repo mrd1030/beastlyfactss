@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/lib/AuthContext';
+import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
-export default function ComposerLogin() {
+function ComposerLoginForm() {
   const { login } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
@@ -62,5 +62,15 @@ export default function ComposerLogin() {
         </Button>
       </form>
     </div>
+  );
+}
+
+// Same reasoning as ProtectedRoute.jsx: AuthProvider mounts here, inside the
+// lazy-loaded Composer/Login chunk, instead of at the app root.
+export default function ComposerLogin() {
+  return (
+    <AuthProvider>
+      <ComposerLoginForm />
+    </AuthProvider>
   );
 }
