@@ -81,8 +81,15 @@ export default function Feed() {
         <link rel="canonical" href={canonicalUrl} />
         {/* Tag pages are a live filter over user-typed hashtags, not curated
             content - same reasoning as noindexing /search/, kept out of the
-            index rather than left to accumulate as thin duplicate pages. */}
-        <meta name="robots" content={tag ? 'noindex,follow' : 'index,follow'} />
+            index rather than left to accumulate as thin duplicate pages.
+            The untagged feed is noindex for a different reason: its posts come
+            from Supabase at runtime and this route is not prerendered, so a
+            crawler that does not run JS sees an empty page. Google logged
+            /feed/ as a soft 404 on exactly that. It is reposted social content
+            rather than original writing, and it had earned zero search
+            impressions, so there was nothing to weigh against dropping it.
+            Also removed from staticPages in generate-sitemap.js. */}
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />

@@ -205,7 +205,10 @@ const staticPages = [
   '/animal-facts/',
   '/fact-files/',
   '/gallery/',
-  '/feed/',
+  // /feed/ deliberately omitted: its posts are fetched from Supabase at
+  // runtime and the route is not prerendered, so a crawler that does not run
+  // JS gets an empty shell - Google logged it as a soft 404. It is noindex in
+  // Feed.jsx to match, so submitting it here would only contradict that.
   '/blog/',
   '/encyclopedia/',
   '/beastlypedia/',
