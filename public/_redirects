@@ -69,8 +69,11 @@
 /category/invertebrates/ /blog/category/invertebrates/ 301
 /category/pet-care /blog/category/pet-care/ 301
 /category/pet-care/ /blog/category/pet-care/ 301
-/category/product-picks /blog/category/product-picks/ 301
-/category/product-picks/ /blog/category/product-picks/ 301
+# Points straight at /gear/ rather than following its siblings' pattern:
+# /blog/category/product-picks/ is itself retired (see the note above) and
+# only redirects onward, so routing through it would cost a second hop.
+/category/product-picks /gear/ 301
+/category/product-picks/ /gear/ 301
 /category/reptiles /blog/category/reptiles/ 301
 /category/reptiles/ /blog/category/reptiles/ 301
 /category/small-and-exotic-pets /blog/category/small-and-exotic-pets/ 301
