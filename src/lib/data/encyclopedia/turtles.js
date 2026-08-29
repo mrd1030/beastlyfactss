@@ -26,6 +26,19 @@ export const turtleEncyclopedia = [
     },
   },
   {
+    id: "red-footed-tortoise", name: "Red-Footed Tortoise", scientific: "Chelonoidis carbonarius",
+    category: "Turtles & Tortoises", emoji: "🐢", difficulty: "Intermediate", guideId: "red-footed-tortoise", available: true, image: "/assets/guides/red-footed-tortoise.jpg",
+    bio: {
+      overview: "The red-footed tortoise is a tropical species native to South America east of the Andes, named for the bright red-to-orange scales on its limbs and head. Unlike the site's other tortoises, red-foots are genuine omnivores - alongside fruit and foliage, wild tortoises regularly eat carrion, insects, land snails, and other invertebrates, a real source of animal protein that strict grazers like the sulcata and Russian tortoise never touch. Their adult size lands squarely between those two species, which is a large part of their popularity: manageable enough for keepers who would never take on a 100+ lb sulcata, but noticeably roomier than a Russian tortoise. Coming from warm, humid, equatorial forest rather than cold steppe or desert, they don't brumate the way a Russian tortoise does, and they can live 50 to 70 years or more with good care.",
+      origin: "South America east of the Andes (Colombia to northern Argentina); also Panama and Trinidad",
+      habitat: "Tropical rainforest, dry forest, savanna, and humid forest edges",
+      adultSize: "11-16 inches (28-41 cm); exceptional individuals up to 20 inches (51 cm)",
+      wildDiet: "Omnivore - fruit, flowers, foliage, fungi, carrion, and invertebrates",
+      wildLifespan: "50-70+ years (up to 90 documented in captivity)",
+      conservation: "Vulnerable (IUCN Tortoise & Freshwater Turtle Specialist Group); CITES Appendix II",
+    },
+  },
+  {
     id: "russian-tortoise", name: "Russian Tortoise", scientific: "Testudo horsfieldii",
     category: "Turtles & Tortoises", emoji: "🐢", difficulty: "Intermediate", guideId: "russian-tortoise", available: true, image: "/assets/guides/russian-tortoise.jpg",
     bio: {

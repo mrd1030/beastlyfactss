@@ -8,11 +8,12 @@ import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { mdxPosts } from '@/lib/mdxPosts';
-import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
+import TableOfContents from '@/components/blog/TableOfContents';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -38,6 +39,7 @@ export default function GuideDetail() {
   const [printOptions, setPrintOptions] = useState({ encyclopedia: false, cost: false, faq: false });
   const printTriggerRef = useRef(null);
   const printModalRef = useRef(null);
+  const contentRef = useRef(null);
 
   const hasCost = !!(guide?.costs && ((guide.costs.setup?.length || 0) + (guide.costs.annual?.length || 0) > 0));
   const hasFaq = !!guide?.faqs?.length;
@@ -61,7 +63,7 @@ export default function GuideDetail() {
   // than sitting in the deep-dive list, because it answers a different question
   // from the husbandry articles around it.
   const allRelatedArticles = guide
-    ? (RELATED_ARTICLES[guide.id] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
+    ? getRelatedArticleSlugs(guide.id, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
@@ -426,24 +428,12 @@ export default function GuideDetail() {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-start justify-between gap-4 mb-4">
-            <div className="flex items-center gap-4">
-              <span className="text-5xl">{guide.emoji}</span>
-              <div>
-                <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
-                  {guide.name}
-                </h1>
-                <p className="text-sm text-muted-foreground font-body mt-0.5">{guide.petType}</p>
-                <div className="flex items-center gap-2 mt-1.5">
-                  <button
-                    ref={legendTriggerRef}
-                    onClick={() => setIsLegendOpen(true)}
-                    className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
-                  >
-                    {guide.difficulty}
-                  </button>
-                </div>
-              </div>
+          <div className="flex items-center justify-between gap-3 mb-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="text-4xl sm:text-5xl flex-shrink-0">{guide.emoji}</span>
+              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
+                {guide.name}
+              </h1>
             </div>
             <div className="flex-shrink-0 flex items-center gap-2">
               <SaveButton
@@ -457,20 +447,37 @@ export default function GuideDetail() {
               <button
                 ref={printTriggerRef}
                 onClick={() => setIsPrintOpen(true)}
-                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 px-3 py-2 rounded-xl transition-colors"
+                className="flex items-center gap-1.5 text-xs font-body font-semibold text-muted-foreground hover:text-foreground bg-muted hover:bg-muted/80 p-3 sm:px-3 sm:py-2 rounded-xl transition-colors"
               >
-                <Printer className="w-3.5 h-3.5" /> Print Checklist
+                <Printer className="w-4 h-4" /> <span className="hidden sm:inline">Print Checklist</span>
               </button>
             </div>
           </div>
+          <p className="text-sm text-muted-foreground font-body mt-2">{guide.petType}</p>
+          <div className="flex items-center gap-2 mt-1.5 mb-4">
+            <button
+              ref={legendTriggerRef}
+              onClick={() => setIsLegendOpen(true)}
+              className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full hover:opacity-80 transition-all ${diffClass}`}
+            >
+              {guide.difficulty}
+            </button>
+          </div>
           <p className="text-base text-foreground font-body italic mb-4">{guide.tagline}</p>
+
+          {/* Mobile-only: the sidebar's TOC (below) sits in a column that
+              collapses to the bottom of the page once the grid drops to a
+              single column - same issue as Blog.jsx had, same fix. */}
+          <div className="lg:hidden">
+            <TableOfContents contentRef={contentRef} watch={guide.id} skipText={guide.name} collapsible />
+          </div>
         </motion.div>
 
         {/* Two-col layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* ── Main content ── */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
             {/* Fun fact */}
             <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
@@ -556,6 +563,12 @@ export default function GuideDetail() {
 
           {/* ── Sidebar ── */}
           <div className="space-y-4">
+
+            {/* Hidden below lg: the collapsible instance above the article
+                already covers mobile. */}
+            <div className="hidden lg:block">
+              <TableOfContents contentRef={contentRef} watch={guide.id} skipText={guide.name} />
+            </div>
 
             {/* Encyclopedia link */}
             {encAnimal && (
@@ -738,7 +751,7 @@ export default function GuideDetail() {
             aria-modal="true"
             aria-label="Care difficulty legend"
             onClick={(e) => e.stopPropagation()}
-            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative"
+            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>
             <DifficultyLegend />
@@ -764,7 +777,7 @@ export default function GuideDetail() {
             aria-modal="true"
             aria-label="Print options"
             onClick={(e) => e.stopPropagation()}
-            className="bg-card border border-border p-6 rounded-2xl max-w-md w-full shadow-2xl relative"
+            className="bg-card border border-border p-6 rounded-2xl max-w-md w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
           >
             <h2 className="text-lg font-bold mb-1 font-display text-foreground flex items-center gap-2">
               <Printer className="w-4 h-4" /> Print Options

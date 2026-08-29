@@ -1,0 +1,62 @@
+{
+  "tx-71-001": {
+    "title": "Texas Parks & Wildlife Code § 71.001",
+    "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.71.htm",
+    "note": "Defines fur-bearing animal with a closed list of species that does not include squirrels or flying squirrels."
+  },
+  "fl-class3": {
+    "title": "Florida Administrative Code Chapter 68A-6, Captive Wildlife",
+    "url": "https://flrules.org/gateway/ChapterHome.asp?Chapter=68A-6",
+    "note": "FWC's captive wildlife chapter sets the Class I, II and III tiers, with Class III requiring only a free personal-pet permit."
+  },
+  "nc-113-272-5": {
+    "title": "North Carolina General Statutes § 113-272.5",
+    "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-272.5.html",
+    "note": "North Carolina's captivity-license statute, which bars issuing a license for a wild animal acquired merely as a pet."
+  },
+  "ny-11-0512": {
+    "title": "New York Environmental Conservation Law § 11-0512",
+    "url": "https://www.nysenate.gov/legislation/laws/ENV/11-0512",
+    "note": "Bars knowingly possessing, harboring, selling or importing any wild animal for use as a pet, with the special license path set out in ECL § 11-0515(1) and 6 NYCRR Part 175."
+  },
+  "wi-nr-10-02": {
+    "title": "Wisconsin Administrative Code NR 10.02",
+    "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/10/I/02",
+    "note": "Lists Wisconsin's protected wild animals, which may not be taken, transported or possessed without DNR authorization."
+  },
+  "il-520-5": {
+    "title": "Illinois Wildlife Code, 520 ILCS 5",
+    "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=1729&ChapterID=43",
+    "note": "Places ownership of wild birds and mammals in the state and requires an IDNR permit to hold protected native wildlife, including tree squirrels, in captivity."
+  },
+  "oh-1531": {
+    "title": "Ohio Revised Code Chapter 1531",
+    "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1531",
+    "note": "Ohio's Division of Wildlife chapter, which defines game quadrupeds (including the flying squirrel) and requires a permit to possess native wildlife."
+  },
+  "md-10-901": {
+    "title": "Maryland Natural Resources Code § 10-901",
+    "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=10-901&enactments=false",
+    "note": "Opens Maryland's Captive Wildlife subtitle with legislative findings supporting strict regulation of possessing wildlife native to the state."
+  },
+  "hi-4-71-6-prohibited": {
+    "title": "Hawaii Administrative Rules § 4-71-6, List of Prohibited Animals",
+    "url": "https://dab.hawaii.gov/wp-content/uploads/2019/08/List-of-Prohibited-Animals.pdf",
+    "note": "HDOA's prohibited species list, which bans the entire squirrel family Sciuridae except two zoo-exhibition species and university-research marmots."
+  },
+  "ny-dangerous-animal": {
+    "title": "6 NYCRR § 180.1, Animals Dangerous to Health or Welfare",
+    "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/1801animaldangerhealthwelfare.pdf",
+    "note": "The regulation behind DEC's Dangerous Animal License, listing canids, bears, felids, primates and venomous reptiles among others, with no parrot or cockatoo family included."
+  },
+  "wi-datcp-birds": {
+    "title": "Wisconsin Statutes § 169.01(25m)",
+    "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/01/25m",
+    "note": "Defines pet bird as a non-native, non-endangered, non-migratory psittacine or soft-bill bird, the category Wisconsin's captive wildlife law leaves unregulated."
+  },
+  "ut-r657-3b": {
+    "title": "Utah Administrative Code R657-3b",
+    "url": "https://wildlife.utah.gov/rules/r657-03b",
+    "note": "Governs certificates of registration for bird and mammal species; its Table 3b-1 classifies non-native Family Psittacidae as noncontrolled, needing no certificate."
+  }
+}

@@ -228,18 +228,18 @@ const FACT_IMAGES = {
   63: '/assets/facts/dolphin-2.jpg', // "Mirror Test Passers"
   79: '/assets/facts/dolphin-3.jpg', // "Secrets in the Sound"
   105: '/assets/facts/dolphin-4.jpg', // "Glowing Oceans, No Joke!"
-  49: '/assets/facts/cat-2.jpg', // "Meow is Just for Us"
-  50: '/assets/facts/cat-3.jpg', // "Healing Purr"
-  51: '/assets/facts/cat-4.jpg', // "Always Landing Right"
+  49: '/assets/facts/cat-3.jpg', // "Meow is Just for Us"
+  50: '/assets/facts/cat-6.jpg', // "Healing Purr"
+  51: '/assets/facts/cat-7.jpg', // "Always Landing Right"
   52: '/assets/facts/cat-5.jpg', // "Lactose Intolerant Cats"
-  53: '/assets/facts/cat-6.jpg', // "70% of Life Asleep"
-  145: '/assets/facts/cat-7.jpg', // "Can't Taste Sugar"
+  53: '/assets/facts/cat-4.jpg', // "70% of Life Asleep"
+  145: '/assets/facts/cat-2.jpg', // "Can't Taste Sugar"
   148: '/assets/facts/cat-8.jpg', // "Built-In Measuring Tape"
-  45: '/assets/facts/dog-2.jpg', // "Unique Nose Prints"
-  46: '/assets/facts/dog-3.jpg', // "Dogs Dream Too"
-  47: '/assets/facts/dog-4.jpg', // "Born Blind and Deaf"
+  45: '/assets/facts/dog-6.jpg', // "Unique Nose Prints"
+  46: '/assets/facts/dog-4.jpg', // "Dogs Dream Too"
+  47: '/assets/facts/dog-2.jpg', // "Born Blind and Deaf"
   48: '/assets/facts/dog-5.jpg', // "Mental Fatigue is Real"
-  147: '/assets/facts/dog-6.jpg', // "A Nose Built Different"
+  147: '/assets/facts/dog-3.jpg', // "A Nose Built Different"
   83: '/assets/facts/octopus-2.jpg', // "Silent Signals"
   95: '/assets/facts/octopus-3.jpg', // "Octopus Ink Defense"
   102: '/assets/facts/octopus-4.jpg', // "Silent Swimmers"
@@ -336,6 +336,11 @@ const FACT_IMAGES = {
   289: '/assets/facts/okapi.jpg',
   290: '/assets/facts/nudibranch.jpg',
   291: '/assets/facts/gila-monster.jpg',
+  292: '/assets/facts/kea.jpg',
+  293: '/assets/facts/dachshund.jpg',
+  294: '/assets/facts/pygmy-marmoset.jpg',
+  295: '/assets/facts/barreleye-fish.jpg',
+  296: '/assets/facts/basilisk-lizard.jpg',
 };
 
 function imageFor(fact) {

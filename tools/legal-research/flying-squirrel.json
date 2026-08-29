@@ -1,0 +1,164 @@
+{
+  "name": "Flying Squirrel",
+  "scientific": "Glaucomys volans",
+  "encyclopediaId": "flying-squirrel",
+  "jurisdictions": {
+    "MA": {
+      "status": "legal",
+      "sourceId": "ma-321-9-01",
+      "cite": "321 CMR 9.01(12)(a)(10)",
+      "quote": "Southern Flying Squirrel (Glaucomys volans)",
+      "note": "Named on Massachusetts's exemption list; may be kept without a MassWildlife permit. The one squirrel species on the list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "legal",
+      "sourceId": "nj-7-25-4-4",
+      "cite": "N.J.A.C. 7:25-4.4(a)(2)(viii)",
+      "quote": "Flying Squirrel – Glaucompys spp.",
+      "note": "Confirmed directly from the current NJDEP exempt-species PDF (the source document itself misspells the genus 'Glaucompys'). Exempt from permit alongside red squirrel, chipmunk, hamster, gerbil and guinea pig.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "legal",
+      "sourceId": "tn-70-4-403",
+      "cite": "§ 70-4-403",
+      "note": "Squirrels and chipmunks are named as Class III wildlife, which needs no TWRA possession permit. The animal must be legally sourced (i.e. not taken from the wild) for the no-permit status to apply.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-71-001",
+      "cite": "Parks & Wildlife Code § 71.001",
+      "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+      "note": "The closed statutory definition of fur-bearing animal (the category Texas otherwise regulates possession of) does not include squirrels or flying squirrels, and flying squirrels are not on the Ch. 822 dangerous-wild-animal list either.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "permit",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-6(a)(2)",
+      "quote": "A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+      "note": "Glaucomys volans is named explicitly as a Class I wild animal requiring a permit; whether this permit tier is issued for personal/pet purposes specifically was not separately confirmed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "permit",
+      "sourceId": "fl-class3",
+      "cite": "Ch. 68A-6, F.A.C. (Class III wildlife)",
+      "note": "Flying squirrels are not dangerous/large enough for Class I or II, so they default to Class III, which requires a free license (a 'Personal Pet' questionnaire suffices). FWC requires the animal's lineage trace to a lawfully captive-bred, USDA-licensed source; a wild-caught animal, even one hand-raised from birth, does not qualify.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "permit",
+      "sourceId": "ga-391-4-8-05",
+      "cite": "391-4-8-.05",
+      "note": "Confirmed directly from the current DNR rule text. Order Rodentia requires a license except for a short list of domesticated genera (Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus); flying squirrel is not among the exceptions. Species reached by this section 'shall only be licensed for scientific, educational, or public exhibition purposes' — no personal-pet permit path exists.",
+      "permitFor": "commercial-exhibition-research",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "permit",
+      "sourceId": "nc-113-272-5",
+      "cite": "G.S. § 113-272.5",
+      "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+      "note": "North Carolina's captivity license covers native wildlife (including the flying squirrel) for 'scientific, educational, exhibition, or other purposes,' but the statute expressly disqualifies a license sought merely for pet-keeping.",
+      "permitFor": "commercial-exhibition-research",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "banned",
+      "sourceId": "ny-11-0512",
+      "cite": "ECL § 11-0512; § 11-0515(1), 6 NYCRR Part 175",
+      "note": "ECL § 11-0512 bars knowingly possessing, harboring or importing 'any wild animal for use as a pet.' DEC's own guidance names bats, large cats, owls, skunks, sugar gliders, flying squirrels and wolves as requiring the special license under § 11-0515(1)/6 NYCRR Part 175, which is issued for education, exhibition, propagation or rehabilitation, not personal pet-keeping.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "banned",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.05, Table 800.2",
+      "quote": "Squirrel, Southern Flying   Glaucomys volans",
+      "note": "Requires Permittee Category 5, the same exhibitor-only category New Hampshire uses for the box turtle. There is no category 1 for an individual, so a private keeper cannot be permitted for one.",
+      "verifiedOn": "2026-08-27"
+    },
+    "RI": {
+      "status": "banned",
+      "sourceId": "ri-250-40-05-3",
+      "cite": "§ 3.17, Appendix A",
+      "quote": "Southern Flying Squirrel (Glaucomys volans)",
+      "note": "Listed among Rhode Island's native wild animals that cannot be kept without institutional status, the same treatment this site's box-turtle research documents for other Rhode Island natives. Not a pet species here.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WI": {
+      "status": "permit",
+      "sourceId": "wi-nr-10-02",
+      "cite": "Wis. Admin. Code NR 10.02",
+      "note": "Flying squirrels are a protected wild animal; no person may take, transport, or possess one except as authorized by the DNR, though 'proof of source' allows possessing one legally killed, taken, or obtained in another state or province.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "permit",
+      "sourceId": "il-520-5",
+      "cite": "520 ILCS 5 (Wildlife Code)",
+      "note": "Illinois is home to four native tree-squirrel species, all classed as protected wildlife; the flying squirrel is one of them and cannot be held in captivity without an IDNR permit. Whether IDNR treats non-native-sourced, captive-bred flying squirrels differently was not confirmed in the text reviewed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "permit",
+      "sourceId": "oh-1531",
+      "cite": "R.C. Chapter 1531 (game quadrupeds)",
+      "note": "Ohio classifies the flying squirrel as a game quadruped; no person may take, possess, buy, sell, or transport native wildlife without a permit from the Division of Wildlife. The permits confirmed in the sources reviewed were rehabilitation-oriented; a personal-pet pathway was not confirmed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "permit",
+      "sourceId": "md-10-901",
+      "cite": "Nat. Res. § 10-901 et seq.",
+      "note": "Maryland strictly regulates possession of wildlife native to the state; multiple sources confirm the Department does not issue personal pet-possession permits for squirrels specifically, only rehabilitation (time-limited) or other institutional permits.",
+      "permitFor": "commercial-exhibition-research",
+      "verifiedOn": "2026-08-27"
+    },
+    "AL": {
+      "status": "banned",
+      "sourceId": "al-220-2-26",
+      "cite": "§ (1)",
+      "quote": "Any of the following from any area outside the state of Alabama; ...species of raccoon, species of skunk, wild rodent, or strain of wild turkey",
+      "note": "The wild-rodent import ban that this site's prairie-dog research already documents names squirrels specifically in the underlying regulation text. A flying squirrel brought into Alabama from outside the state is a wild rodent under this rule.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "AZ": {
+      "status": "permit",
+      "sourceId": "az-r12-4-406",
+      "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks.",
+      "note": "Arizona's restricted-live-wildlife rule reaches the whole squirrel family by name (the same entry this site's prairie-dog research already documents), which covers the flying squirrel.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "banned",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(2)(J)(1)",
+      "note": "Order Rodentia is restricted as a whole ('All species (D)') except for a specific list of domesticated species (hamsters, rats, mice, guinea pigs, chinchillas); flying squirrels are not among the exceptions. This section number is carried over from this site's prairie-dog research, which cites the same Sciuridae subsection for a different genus in the same family; the exact subsection should be re-confirmed against the primary text before publishing.",
+      "verifiedOn": "2026-08-27",
+      "localOverride": true
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-4-71-6-prohibited",
+      "cite": "§ 4-71-6, List of Prohibited Animals",
+      "quote": "FAMILY Sciuridae Sciuridae (all in family, except the following two species for exhibition in government zoos only: Callosciurus prevosti (squirrel, prevost's) and Sciurus variegatoides (squirrel, variegated) and except all species in the genus Marmota for research in government universities only)",
+      "note": "Confirmed directly from the HDOA prohibited-animal-list PDF. The whole squirrel family is prohibited; the only carve-outs are two unrelated tree squirrels (zoo exhibition only) and marmots (university research only). The flying squirrel is not one of the named exceptions, so no legal pathway exists at all, unlike states where a science/exhibition permit at least exists.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VT": {
+      "status": "permit",
+      "sourceId": "vt-reg-881",
+      "cite": "10 V.S.A. § 4709, Reg. 881",
+      "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
+      "note": "Vermont bars bringing in, transporting, or possessing any live wild bird or animal without authorization, and permits are described as rarely issued outside science, education, or rehabilitation purposes.",
+      "permitFor": "commercial-exhibition-research",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

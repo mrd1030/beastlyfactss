@@ -26,6 +26,32 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "bristlenose-pleco", name: "Bristlenose Pleco", scientific: "Ancistrus sp.",
+    category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "bristlenose-pleco", available: true, image: "/assets/guides/bristlenose-pleco.jpg",
+    bio: {
+      overview: "The bristlenose pleco is a small, hardy, algae-grazing armored catfish native to South America. Mature males grow branching, tentacle-like bristles across the snout, used to signal sex and to spar with rival males, while females stay smooth or grow only a few short bristles. This is the pleco species BeastlyFacts recommends for a home aquarium: the common name 'pleco' or 'plecostomus' covers dozens of very different species sold under one generic label, and the classic cheap juvenile sold as a tiny algae-eater is usually a common pleco (Hypostomus plecostomus) or a related Pterygoplichthys species that grows into a real 12 to 24 inch, 75-plus-gallon adult, a well-documented size surprise that drives constant rehoming and has left escaped or released plecos as an established invasive species in Texas and Florida waterways. A bristlenose stays a manageable 4 to 6 inches for life instead. Algae alone is not a complete diet for either type as an adult, and the aquarium-trade bristlenose has been interbred across species for so long that its exact wild ancestry is unresolved, which is why it's typically sold and catalogued simply as Ancistrus sp. rather than one specific species.",
+      origin: "South America (Amazon and Parana-Paraguay river basins); the exact ancestry of the tank-bred aquarium strain is unresolved and likely mixed among several Ancistrus species",
+      habitat: "Fast-flowing rocky streams to slower rivers and backwaters with submerged driftwood and roots",
+      adultSize: "4-6 inches (10-15 cm)",
+      wildDiet: "Algae and biofilm grazed from rocks and wood, plus wood fiber rasped from driftwood and roots and some detritus",
+      wildLifespan: "5-10 years typical in the aquarium; up to 12-15 years with excellent care",
+      conservation: "Not evaluated (IUCN); the aquarium strain's mixed ancestry makes a species-level assessment difficult, though wild Ancistrus species are generally widespread",
+    },
+  },
+  {
+    id: "cardinal-tetra", name: "Cardinal Tetra", scientific: "Paracheirodon axelrodi",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner-Intermediate", guideId: "cardinal-tetra", available: true, image: "/assets/guides/cardinal-tetra.jpg",
+    bio: {
+      overview: "The cardinal tetra is a small schooling fish from the blackwater tributaries of the Amazon and Orinoco basins, closely resembling the neon tetra but with its iridescent red stripe running the full length of the body rather than just the rear half. Enormous numbers are still sustainably wild-harvested from the Rio Negro each year through community-based fisheries, a rare case where the aquarium trade directly funds rainforest conservation by giving local communities an economic reason to keep the forest, and the river, intact.",
+      origin: "Amazon and Orinoco Basins (Brazil, Colombia, Venezuela)",
+      habitat: "Blackwater forest streams and tributaries",
+      adultSize: "2 inches (5 cm)",
+      wildDiet: "Small insects, worms, crustaceans, and zooplankton",
+      wildLifespan: "Often under 1 year (seasonal pools frequently strand and dry out); commonly 4-5 years, up to 10, in a stable aquarium",
+      conservation: "Not evaluated (widespread; sustainable wild-harvest fishery supports conservation in parts of its range)",
+    },
+  },
+  {
     id: "corydoras-catfish", name: "Corydoras Catfish", scientific: "Corydoras aeneus",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "corydoras-catfish", available: true, image: "/assets/guides/corydoras-catfish.jpg",
     bio: {
@@ -36,6 +62,19 @@ export const fishEncyclopedia = [
       wildDiet: "Insect larvae, worms, small crustaceans, and organic detritus",
       wildLifespan: "5-10 years; up to 15 years with excellent care",
       conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "discus", name: "Discus", scientific: "Symphysodon spp.",
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate-Advanced", guideId: "discus", available: true, image: "/assets/guides/discus.jpg",
+    bio: {
+      overview: "Discus are tall, laterally compressed cichlids from the slow-moving blackwater tributaries of the Amazon Basin, prized in the aquarium hobby as the self-styled 'king of the aquarium' for their vivid, selectively bred color patterns. Unlike most cichlids, which pair off and defend territory, discus are genuinely social and do best in a group. Both parents feed newly hatched fry a nutrient-rich mucus secreted from their skin, a form of parental care called 'discus milk' that is highly unusual among fish.",
+      origin: "Amazon Basin (Peru, Brazil, Colombia)",
+      habitat: "Slow-moving, soft, acidic blackwater tributaries and flooded forest",
+      adultSize: "6-8 inches (15-20 cm) diameter",
+      wildDiet: "Insect larvae, small invertebrates, and plant matter",
+      wildLifespan: "10-13 years",
+      conservation: "Not evaluated (widespread in trade; wild populations locally affected by collection and habitat change)",
     },
   },
   {
@@ -78,6 +117,19 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "molly", name: "Molly", scientific: "Poecilia sphenops / P. latipinna",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "molly", available: true, image: "/assets/guides/molly.jpg",
+    bio: {
+      overview: "Mollies are prolific livebearing fish native to fresh and brackish waters of the southern United States, Mexico, and Central America, closely related to guppies and platies. Unlike most freshwater aquarium fish, mollies naturally inhabit coastal and brackish waters and can tolerate salt concentrations well past normal seawater, a genuine point of difference from their livebearer relatives, though whether a healthy freshwater tank benefits from added aquarium salt is a genuinely disputed question among experienced keepers rather than settled fact. Selective breeding has produced many color and finnage varieties, including the tall-finned sailfin molly.",
+      origin: "Southern United States, Mexico, and Central America",
+      habitat: "Fresh, brackish, and coastal waters",
+      adultSize: "3-4.5 inches (7.5-11 cm); sailfin varieties up to 6 inches",
+      wildDiet: "Algae, plant matter, and small invertebrates",
+      wildLifespan: "3-5 years",
+      conservation: "Least Concern (IUCN, for wild Poecilia sphenops)",
+    },
+  },
+  {
     id: "neon-tetra", name: "Neon Tetra", scientific: "Paracheirodon innesi",
     category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "neon-tetra", available: true, image: "/assets/guides/neon-tetra.jpg",
     bio: {
@@ -100,6 +152,45 @@ export const fishEncyclopedia = [
       adultSize: "10-14 inches (25-36 cm); up to 16 inches in optimal conditions",
       wildDiet: "Fish, insects, crustaceans, and worms",
       wildLifespan: "10-20 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "platy", name: "Platy", scientific: "Xiphophorus maculatus / X. variatus",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "platy", available: true, image: "/assets/guides/platy.jpg",
+    bio: {
+      overview: "The platy is a small, exceptionally hardy livebearer native to the Atlantic-slope river systems of Mexico, Belize, and Guatemala. Two closely related species are sold interchangeably as 'platy' in the aquarium trade, the southern platy (Xiphophorus maculatus) and the variatus platy (X. variatus), and decades of selective breeding plus repeated hybridization between the two, and even with the swordtail, have produced an enormous range of colors and patterns, from Mickey Mouse and wagtail platies to calico, tuxedo, and bumblebee varieties. Wild platies are actually a fairly drab olive-brown; virtually all of that color range is the product of generations of captive breeding. Like its guppy and molly relatives in the livebearer family Poeciliidae, the platy breeds prolifically and needs little encouragement to produce a steady stream of fry.",
+      origin: "Atlantic coastal plain of Mexico, Belize, and Guatemala (X. variatus more localized to northeastern Mexico)",
+      habitat: "Slow-moving, densely vegetated canals, ditches, ponds, and warm springs over muddy substrate",
+      adultSize: "2-3 inches (5-7.5 cm); females larger than males",
+      wildDiet: "Small crustaceans, insects, annelid worms, algae, and plant matter",
+      wildLifespan: "3-5 years",
+      conservation: "Data Deficient (IUCN, X. maculatus); Least Concern (X. variatus)",
+    },
+  },
+  {
+    id: "swordtail", name: "Swordtail", scientific: "Xiphophorus hellerii",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "swordtail", available: true, image: "/assets/guides/swordtail.jpg",
+    bio: {
+      overview: "The swordtail is a livebearer native to the Atlantic-slope rivers of Mexico, Belize, Guatemala, and Honduras, and one of the platy's closest relatives, sharing the genus Xiphophorus, Greek for 'sword bearer.' Males grow a long, colorful lower extension of the tail fin, the namesake 'sword,' that plays no role in swimming but is a genuine target of female mate choice, with females showing measurable preferences for males with longer swords and bolder patterning. Swordtails are close enough to platies to interbreed, and the two species have been crossed intentionally for almost a century, so many swordtails and platies sold today already carry some hybrid ancestry. In the wild, swordtails favor faster-flowing streams than platies and are correspondingly more energetic, active swimmers in the aquarium.",
+      origin: "Atlantic slope of Mexico, Belize, Guatemala, and Honduras (Veracruz to the Río Usumacinta drainage)",
+      habitat: "Fast-flowing rocky streams, springs, ditches, ponds, and rivers from sea level to 1,500 m; adults favor stronger current than juveniles",
+      adultSize: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm) and typically the larger sex overall",
+      wildDiet: "Aquatic and terrestrial invertebrates, detritus, algae, and plant matter (a generalist omnivore)",
+      wildLifespan: "3-5 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "zebra-danio", name: "Zebra Danio", scientific: "Danio rerio",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "zebra-danio", available: true, image: "/assets/guides/zebra-danio.jpg",
+    bio: {
+      overview: "The zebra danio is a small, fast-swimming schooling fish native to the shallow streams, ditches, and monsoon-flooded rice paddies of South Asia. Unlike the livebearing guppies and mollies also covered on this site, danios are egg-scatterers: a spawning pair releases eggs into open water or fine-leaved plants, with no nest built and no parental care afterward. Outside the aquarium hobby, the zebra danio is best known as zebrafish, the most widely used non-mammalian vertebrate model organism in developmental biology and genetics research. Its embryos develop transparently outside the mother's body, and roughly 70 percent of human genes have a working counterpart in its genome, a combination that has made it a mainstay of labs studying development, disease, and drug discovery since the 1990s.",
+      origin: "South Asia (Ganges and Brahmaputra river basins of India, Bangladesh, and Nepal)",
+      habitat: "Shallow, slow-moving streams and ditches, with seasonal migration into monsoon-flooded rice paddies and marginal pools to spawn",
+      adultSize: "1.5-2.5 inches (4-6 cm); occasionally to 3 inches (7.5 cm) in captivity",
+      wildDiet: "Zooplankton, aquatic and terrestrial insects, and mosquito larvae, taken from open water and the surface",
+      wildLifespan: "Around 1 year in the wild; 3.5 years average in captivity, with documented individuals living to 5.5 years",
       conservation: "Least Concern (IUCN)",
     },
   },

@@ -91,6 +91,19 @@ export const birdEncyclopedia = [
     },
   },
   {
+    id: "parrotlet", name: "Parrotlet", scientific: "Forpus coelestis",
+    category: "Birds", emoji: "🐦", difficulty: "Intermediate", guideId: "parrotlet", available: true, image: "/assets/guides/parrotlet.jpg",
+    bio: {
+      overview: "The Pacific parrotlet is the most popular of the nine parrotlet species and, at well under six inches, the smallest true parrot commonly kept as a pet - smaller even than a budgie. What it lacks in size it makes up for in personality: parrotlets are famously bold and feisty, often described as a large parrot's attitude packed into a tiny body. Wild parrotlets are native to the dry forests and scrubland of coastal Ecuador and Peru, where they travel in flocks of 40 to 50 birds. Unlike a zebra finch, a parrotlet can learn to say a handful of words and, when hand-raised and consistently handled, bonds intensely to one person, though an under-socialized bird can turn sharp and nippy well out of proportion to its size.",
+      origin: "Western Ecuador and northwestern Peru",
+      habitat: "Arid scrubland, deciduous forest, and cultivated farmland",
+      adultSize: "4.3-5.5 inches (11-14 cm); 1-1.4 oz",
+      wildDiet: "Grass seeds, berries, cactus fruit, and blossoms",
+      wildLifespan: "Not well documented in the wild; one estimate averages around 10 years (often 15-20 years in captivity, some individuals reaching their 20s or 30s)",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
     id: "quaker-parakeet", name: "Quaker Parakeet", scientific: "Myiopsitta monachus",
     category: "Birds", emoji: "🦜", difficulty: "Intermediate", guideId: "quaker-parakeet", available: true, image: "/assets/guides/quaker-parakeet.jpg",
     bio: {
@@ -101,6 +114,19 @@ export const birdEncyclopedia = [
       wildDiet: "Seeds, grains, fruit, blossoms and some insects",
       wildLifespan: "15-20 years (up to 25-30 years in captivity)",
       conservation: "Least Concern (IUCN), and an established invasive species well outside its native range",
+    },
+  },
+  {
+    id: "zebra-finch", name: "Zebra Finch", scientific: "Taeniopygia guttata",
+    category: "Birds", emoji: "🐦", difficulty: "Beginner", guideId: "zebra-finch", available: true, image: "/assets/guides/zebra-finch.jpg",
+    bio: {
+      overview: "The zebra finch is one of the most popular pet birds in the world and, alongside the canary, one of only two non-parrot species on this site - it is a true finch, and its care reflects that: no talking, no hand-taming the way a parrot bonds with an owner, and a strong instinct to live in flocks rather than pair off with a person. Native to the arid interior of Australia, wild zebra finches travel in flocks of dozens to over a hundred birds, foraging for grass seed around waterholes. Males are unmistakable, with a fine black-and-white barred throat (the source of the species' name), a solid black breast band, chestnut flanks spotted with white, an orange cheek patch, and a red bill; females are a plain uniform grey with an orange bill and none of those markings. Beyond the pet trade, the zebra finch is the single most widely used songbird in neuroscience, since males learn their song from a tutor as juveniles in a process that has made them central to research on vocal learning.",
+      origin: "Interior of Australia",
+      habitat: "Semi-arid grassland, scrubland, and open woodland near water",
+      adultSize: "3.9-4.3 inches (10-11 cm); 0.3-0.5 oz",
+      wildDiet: "Grass seeds, with insects taken for extra protein during breeding",
+      wildLifespan: "2-3 years (up to 5-10 years in captivity)",
+      conservation: "Least Concern (IUCN)",
     },
   },
 ];

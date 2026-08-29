@@ -62,6 +62,8 @@ Shell injuries (from dog attacks, lawn mowers, and vehicles) are unfortunately f
       { q: "Do box turtles need to hibernate?", a: "Annual brumation is natural and important for adult box turtles in most of their range. Animals prevented from hibernating long-term can develop reproductive issues and shortened lifespans. Consult a chelonian-experienced veterinarian for safe hibernation protocols tailored to your climate and the specific subspecies you are keeping before the first winter." },
       { q: "What kind of outdoor enclosure do box turtles need?", a: "A minimum 4x8 ft outdoor enclosure with walls buried 6 to 12 inches underground is appropriate for one adult. Box turtles are persistent diggers and climbers. Provide deep leaf litter for burrowing, a shallow water dish large enough to soak in (changed daily), varied terrain including logs and plants, and moist areas in one section of the enclosure." },
       { q: "Are box turtles good pets for beginners?", a: "Not the easiest first reptile, despite looking like a simple backyard turtle. Box turtles need real outdoor space, can live 50 to 100+ years, and have such strong homing instincts that a released or escaped turtle will try to walk back to its old territory, sometimes fatally. They're a better fit for someone ready for a genuinely multi-generational commitment." },
+      { q: "Is a box turtle a tortoise or a turtle?", a: "Technically a turtle. Box turtles (genus Terrapene) belong to the pond turtle family, not the true tortoise family, even though they're fully terrestrial and look and act more like a tortoise day to day. They're also not the same as a snapping turtle or a painted turtle - both are aquatic species with very different care needs, and a box turtle should never be housed in a full-water setup the way those species are." },
+      { q: "How can I tell if my box turtle is male or female?", a: "Eye color is the fastest tell in most North American box turtles: adult males typically have red or orange eyes, while females usually have brown or yellowish-brown eyes. Males also have a slightly concave plastron and a thicker, longer tail with the vent positioned farther from the body, compared to a female's flat plastron and shorter tail. These traits aren't reliable in juveniles, only in mature adults." },
     ],
   },
   {
@@ -134,6 +136,76 @@ Metabolic bone disease from inadequate UVB causes soft shell and skeletal deform
     ],
   },
   {
+    id: "red-footed-tortoise",
+    name: "Red-Footed Tortoise",
+    emoji: "🐢",
+    difficulty: "Intermediate",
+    petType: "Turtles & Tortoises",
+    image: "/assets/guides/red-footed-tortoise.jpg",
+    tagline: "The tropical omnivore tortoise that splits the difference between Russian and sulcata!",
+    funFact: "Unlike the strictly plant-eating Russian and sulcata tortoises, red-footed tortoises are true omnivores that eat carrion, insects, and land snails in the wild - a real taste for animal protein most pet tortoises never develop!",
+    // Rough starting ranges, not verified current pricing - needs a review pass.
+    costs: {
+      setup: [
+        { item: "Large indoor enclosure (adult) or humid outdoor pen", low: 250, high: 600 },
+        { item: "Strong UVB (T5 HO Arcadia 12%)", low: 60, high: 100 },
+        { item: "Basking bulb(s)", low: 25, high: 45 },
+        { item: "Humidity-retaining substrate (cypress mulch/coco coir)", low: 30, high: 60 },
+        { item: "Large soak dish", low: 15, high: 25 },
+        { item: "Fogger or humidifier", low: 40, high: 90 },
+      ],
+      annual: [
+        { item: "Fruit, leafy greens, and protein sources (snails, insects)", low: 150, high: 260 },
+        { item: "Calcium and multivitamin supplements", low: 15, high: 25 },
+        { item: "UVB bulb replacement", low: 60, high: 100 },
+        { item: "Electricity (heat, lighting, humidifier)", low: 90, high: 160 },
+        { item: "Annual vet wellness check", low: 60, high: 100 },
+      ],
+    },
+    sections: {
+      housing: `Adult red-footed tortoises need at least 32 to 72 sq ft of floor space - smaller than a sulcata's eventual yard, but still a genuinely large indoor enclosure or outdoor pen, not a tabletop setup. In warm, humid climates, a secure outdoor pen with a heated, insulated shelter works well. Everyone else needs a large indoor tortoise enclosure with strong UVB (T5 HO Arcadia 12%) and a basking spot of 90 to 95 degrees F, with an ambient gradient of 75 to 85 degrees F and nighttime lows no cooler than 65 to 70 degrees F.
+
+Humidity is the single biggest difference from the site's other tortoises: red-foots need ambient humidity of 70 to 80%, with a damp hide pushing even higher. Cypress mulch, coconut fiber, or a moisture-retaining topsoil mix holds humidity far better than the dry sand mixes used for sulcatas or Russian tortoises. Good ventilation still matters - the goal is a humid rainforest floor, not a stagnant box - so balance moisture with airflow to avoid respiratory problems.
+
+A large, shallow soak dish should always be available; red-foots drink and soak often. Daily misting or a reptile fogger helps maintain humidity between waterings, especially in drier climates or centrally heated homes.`,
+      diet: `Red-footed tortoises are genuine omnivores, and this is the most important way they differ from the sulcata and Russian tortoises on this site. A balanced diet runs roughly 90% plant matter and 10% animal matter: about 55% fruit, flowers, and leafy greens; 35% grasses and vegetables; and a real 10% slice of protein and mushrooms. Appropriate fruit includes papaya, mango, banana, and berries; leafy greens should be varied (collard, mustard, dandelion, endive); protein sources include earthworms, land snails, and occasional cooked lean meat or a small amount of low-iron commercial carnivore diet.
+
+This is a meaningfully different feeding plan than a sulcata or Russian tortoise, both of which should almost never get animal protein or much fruit. Skipping animal protein entirely is a real health risk for this species specifically - tortoises raised on a plant-only diet frequently develop hind-leg weakness or paralysis, along with poor fertility and weak hatchlings, so don't default to a hay-and-weeds-only routine out of habit if you're used to keeping an arid-species tortoise.
+
+Feed juveniles daily; shift adults to every other day to prevent obesity. Dust food with calcium (without D3 most feedings, with D3 twice weekly for indoor animals without natural sunlight). Fresh water should always be available in a soakable dish.`,
+      enrichment: `Red-footed tortoises are active, curious foragers that do best in a densely planted, naturalistic enclosure - leaf litter, logs, cork bark, and low plants to push through and investigate. Their omnivorous diet also makes foraging enrichment easy: scattering food items, hiding snails or worms in leaf litter, and offering a rotating variety of fruit and greens keeps them engaged.
+
+Many keepers find red-foots more food-motivated and personable than drier-climate tortoise species, readily approaching for feeding and recognizing their keeper over time. A humid, planted vivarium with climbing opportunities over logs and rocks also lets them express natural rainforest-floor behavior far more than a bare tortoise table would.
+
+Outdoor time in warm, humid weather on pesticide-free grass is excellent enrichment where climate allows, though unlike a Russian tortoise, a red-foot cannot handle cold snaps and should be brought inside well before temperatures drop.`,
+      health: `Low humidity, not excess humidity, is the main husbandry risk for red-footed tortoises - the opposite failure mode from the site's arid-species tortoises. Insufficient humidity causes shell pyramiding, dehydration, and irregular shell growth just as surely as an incorrect diet does. Check ambient humidity with a reliable hygrometer rather than guessing.
+
+Diet-related problems are the other major risk, and they cut both ways: too much protein or fruit causes the same kind of shell and organ problems seen in overfed sulcatas, while too little animal protein causes hind-leg weakness or paralysis, poor fertility, and weak hatchlings in this species specifically. Getting the roughly 90/10 plant-to-protein balance right matters more here than in a strictly herbivorous tortoise.
+
+Red-footed tortoises do not need to brumate and should not be allowed to get cold enough to attempt it - unlike a Russian tortoise, they have no natural cold-hardiness, and a botched brumation attempt can be fatal. Annual wellness checks with a chelonian-experienced reptile vet are recommended for this long-lived species.`,
+      checklist: [
+        "Large indoor enclosure (32-72 sq ft) or humid outdoor pen",
+        "Strong UVB (T5 HO Arcadia 12%)",
+        "Basking spot (90 to 95 degrees F)",
+        "Ambient gradient (75 to 85 degrees F, 65 to 70 degrees F at night)",
+        "Humidity-retaining substrate (cypress mulch/coco coir)",
+        "Fogger or humidifier (70 to 80% ambient humidity)",
+        "Large soak dish (always available)",
+        "Fruit, leafy greens, and occasional animal protein",
+        "Calcium + multivitamin supplements",
+        "Reptile vet with chelonian experience",
+      ],
+    },
+    faqs: [
+      { q: "How big do red-footed tortoises get?", a: "Adults typically reach 11 to 16 inches in shell length, with exceptional individuals up to 20 inches. That puts them squarely between the [Russian tortoise](/guides/russian-tortoise/) (5 to 10 inches) and the [sulcata tortoise](/guides/sulcata-tortoise/) (24 to 36 inches and 70+ lbs) - a big part of why red-foots are popular with keepers who want more tortoise than a Russian but nowhere near a sulcata's eventual size." },
+      { q: "What do red-footed tortoises eat?", a: "Genuine omnivores - roughly 90% plant matter (fruit, flowers, and leafy greens) and 10% animal matter (earthworms, land snails, occasional cooked lean meat). This is a real, important difference from strictly plant-eating tortoises like the sulcata and Russian tortoise. Skipping the protein isn't just a diet preference either - red-foots raised without any animal protein commonly develop hind-leg weakness and fertility problems. Feed juveniles daily and adults every other day." },
+      { q: "Do red-footed tortoises need to hibernate?", a: "No. Unlike the Russian tortoise, which brumates through cold Central Asian winters, red-footed tortoises come from warm, humid, equatorial South America and have no natural cold-hardiness. Never let a red-foot get cold enough to attempt brumation - it should stay warm and active year-round." },
+      { q: "How much humidity do red-footed tortoises need?", a: "A lot - 70 to 80% ambient humidity, well above what a sulcata or Russian tortoise wants. This is the biggest husbandry difference between a red-foot and the site's other tortoises. Moisture-retaining substrate, a large soak dish, and a fogger or regular misting are typically needed to hit that range indoors, especially in dry climates." },
+      { q: "How long do red-footed tortoises live?", a: "50 to 70 years or more with good care, and some captive individuals are reported near 90. Like any pet tortoise, this is a multi-decade commitment that outlasts many keepers' living situations, so plan for long-term care the same way you would with a Russian or sulcata tortoise." },
+      { q: "Are red-footed tortoises good pets for beginners?", a: "A reasonable step up from a Russian tortoise rather than a true first tortoise - the omnivorous diet and high humidity requirement take more attention to get right than a simple hay-and-weeds herbivore setup. They're a popular choice for keepers who've kept a Russian tortoise before and want more size without sulcata-level commitment." },
+    ],
+  },
+  {
     id: "russian-tortoise",
     name: "Russian Tortoise",
     emoji: "🐢",
@@ -198,6 +270,7 @@ Hibernation (brumation) is natural for Russian tortoises, though indoor keepers 
       { q: "How big do Russian tortoises get?", a: "5 to 10 inches shell length, making them one of the smaller tortoise species commonly kept as pets. Males are usually smaller than females. Their relatively modest size makes them more manageable than larger species like sulcatas, but they still require spacious outdoor enclosures with deep burrowing substrate in warm climates." },
       { q: "Can Russian tortoises live outdoors?", a: "Yes, in appropriate climates - and for many keepers, outdoor housing is the ideal long-term solution. They need an outdoor enclosure with walls buried 12 inches or more underground (they burrow and escape constantly), natural sunlight (far superior to any UVB bulb for vitamin D3 synthesis), access to edible weeds, and a sheltered area for cool or wet weather." },
       { q: "Are Russian tortoises good pets for beginners?", a: "Among the more manageable tortoises for a first-timer, since they stay a relatively compact 5 to 10 inches, but this is still a 40-plus year commitment that needs real outdoor space in a warm climate or a substantial indoor tortoise table. Go in expecting to plan for decades, not a starter pet in the usual sense." },
+      { q: "How does a Russian tortoise compare to other pet tortoises like the sulcata or red-footed?", a: "Russian tortoises are the smallest and hardiest of the three, built for cold, dry steppe and needing real brumation most winters. The [red-footed tortoise](/guides/red-footed-tortoise/) is a size step up and comes from humid tropical South America instead, so it wants high humidity rather than a hibernation box. The [sulcata tortoise](/guides/sulcata-tortoise/) dwarfs both, eventually needing a yard rather than a tortoise table. If a Russian tortoise's small size appeals but you'd rather skip winter brumation, a red-footed tortoise is worth a look." },
     ],
   },
   {
@@ -265,6 +338,8 @@ Sulcatas regularly outlive their owners - they can live 70 to 150+ years. This i
       { q: "What causes shell pyramiding in sulcatas?", a: "Pyramiding - raised, bumpy scutes - is caused by excessive protein or fruit in the diet, rapid growth from inappropriate high-calorie feeding, and low humidity during the growth phase. Once pyramiding occurs, it is irreversible. The only prevention is a correct high-fiber, low-protein diet and appropriate growth rate from hatching." },
       { q: "Can I keep a baby sulcata tortoise indoors?", a: "Yes, but only temporarily. Hatchlings and juveniles can be kept indoors with a T5 HO UVB lamp (Arcadia 12%) and basking spot of 95 to 105 degrees F. As they grow - which happens faster than most people expect - they need progressively larger outdoor enclosures. An adult sulcata cannot be kept indoors in any practical sense." },
       { q: "Are sulcata tortoises good pets for beginners?", a: "No, and this is one of the most consequential mismatches in the pet trade. A ping-pong-ball-sized hatchling grows into an animal that can exceed 150 pounds, needs 100+ square feet of outdoor space, and can outlive its owner by decades. Sulcatas are one of the most commonly surrendered tortoises specifically because they're sold to beginners who had no idea what they were taking on." },
+      { q: "How can I tell if my sulcata tortoise is male or female?", a: "It's genuinely difficult before the tortoise is several years old and around 8 to 10 inches in shell length - sulcatas don't show reliable external differences as hatchlings. Once mature, males have a longer, thicker tail, a more concave plastron to accommodate mating, and larger, more pronounced anal scutes than females. Males also tend to grow a bit larger overall. For a young tortoise, patience is the honest answer more often than any quick trick." },
+      { q: "How does a sulcata tortoise compare to smaller tortoises like the Russian or red-footed?", a: "Sulcatas are dramatically larger than both - a 100+ lb adult next to a 5 to 10 inch Russian tortoise or an 11 to 16 inch red-footed tortoise. The three also come from very different climates: Russian tortoises come from cold Central Asian steppe and brumate, red-footed tortoises come from humid tropical South America and don't, and sulcatas come from the hot, dry Sahel. If a sulcata's eventual size feels like too much responsibility, the [red-footed tortoise](/guides/red-footed-tortoise/) or [Russian tortoise](/guides/russian-tortoise/) are worth considering instead." },
     ],
   },
 ];

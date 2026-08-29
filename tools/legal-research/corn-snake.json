@@ -1,0 +1,298 @@
+{
+  "name": "Corn snake",
+  "scientific": "Pantherophis guttatus",
+  "encyclopediaId": "corn-snake",
+  "jurisdictions": {
+    "AL": {
+      "status": "legal",
+      "sourceId": "al-220-2-26",
+      "cite": "§ (1)",
+      "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+      "note": "Corn snake is not on the federal injurious wildlife list this rule points to.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AK": {
+      "status": "legal",
+      "sourceId": "ak-5aac92-029",
+      "cite": "§ 92.029(b)",
+      "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+      "note": "The clean list's only reptile test is venom.",
+      "verifiedOn": "2026-08-27"
+    },
+    "AZ": {
+      "status": "legal",
+      "sourceId": "az-r12-4-406",
+      "cite": "R12-4-406",
+      "note": "Arizona's restricted live wildlife rule reaches crocodilians, elapids, burrowing asps, boomslangs, twig snakes, keelbacks and the brown tree snake. A common colubrid like the corn snake is not on it, and it is not an Arizona native, so no separate wild-collection rule applies either.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CA": {
+      "status": "legal",
+      "sourceId": "ca-671",
+      "cite": "§ 671(c)(7)",
+      "note": "California's restricted colubrid entries are boomslang, twig snakes and Nerodia. Corn snake is not California native, so the state's separate native-reptile take rules (Title 14 CCR §§ 40-43) don't reach it either.",
+      "verifiedOn": "2026-08-27"
+    },
+    "CT": {
+      "status": "legal",
+      "sourceId": "ct-26-40a",
+      "cite": "§ 26-40a",
+      "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+      "note": "The potentially dangerous animal list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "DC": {
+      "status": "legal",
+      "sourceId": "dc-8-1808",
+      "cite": "§ 8-1808(j)(1)",
+      "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+      "verifiedOn": "2026-08-27"
+    },
+    "DE": {
+      "status": "legal",
+      "sourceId": "de-3900",
+      "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
+      "note": "The banned list is venomous species plus pythons and anacondas by name. A corn snake is none of those.",
+      "verifiedOn": "2026-08-27"
+    },
+    "FL": {
+      "status": "legal",
+      "sourceId": "fl-prohibited",
+      "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Corn snake is Florida native, though, so this covers lawfully acquired possession only; wild take of the native population falls under FWC's separate nongame take and bag-limit rules, not checked in detail here.",
+      "verifiedOn": "2026-08-27"
+    },
+    "GA": {
+      "status": "banned",
+      "sourceId": "ga-dnr-legal-pets",
+      "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+      "note": "Corn snake is named on Georgia DNR's own list of native species that cannot be kept as pets, and the agency is explicit that captive-bred stock is treated the same as wild-caught: origin does not matter. This is a real blanket ban on a species commonly sold in pet stores elsewhere, grounded in Georgia's wild animal statute, O.C.G.A. § 27-5-4/27-5-5. We could not pin an exact numbered subrule beyond that statutory basis; the DNR guidance page is unambiguous regardless.",
+      "verifiedOn": "2026-08-27"
+    },
+    "HI": {
+      "status": "banned",
+      "sourceId": "hi-4-71-6",
+      "cite": "§ 4-71-6",
+      "quote": "Serpentes (all species)",
+      "note": "Hawaii bans the entire snake suborder by name.",
+      "verifiedOn": "2026-08-27"
+    },
+    "IA": {
+      "status": "legal",
+      "sourceId": "ia-717F",
+      "cite": "§ 717F.1(5)(a)(9)(e)",
+      "note": "The squamate half of Iowa's dangerous wild animal definition is exhaustively enumerated: monitors, helodermatids, the venomous families, and henophidia limited to reticulated pythons, anacondas and African rock pythons. A corn snake is in none of them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ID": {
+      "status": "legal",
+      "sourceId": "id-130110",
+      "cite": "§ 010.06",
+      "quote": "non-venomous or non-dangerous reptiles and amphibians",
+      "verifiedOn": "2026-08-27"
+    },
+    "IL": {
+      "status": "conditional",
+      "sourceId": "il-herps-act",
+      "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+      "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect any native species from the wild. Corn snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this possession cap. Boidae, by contrast, is specifically exempted from the whole permit process (relevant to rosy boa, not this species).",
+      "verifiedOn": "2026-08-27"
+    },
+    "IN": {
+      "status": "legal",
+      "sourceId": "in-312-9-11",
+      "cite": "312 IAC 9-11-8(a)",
+      "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KS": {
+      "status": "legal",
+      "sourceId": "ks-32-1301",
+      "cite": "§ 32-1301(d)(3)",
+      "quote": "all non-native, venomous snakes.",
+      "verifiedOn": "2026-08-27"
+    },
+    "KY": {
+      "status": "legal",
+      "sourceId": "ky-301-2-082",
+      "cite": "§ 4(2)(t)",
+      "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+      "note": "The Colubridae entry on Kentucky's restricted list is limited to venomous rear-fanged colubrids. A corn snake is not venomous, so it was never inside the clause to begin with.",
+      "verifiedOn": "2026-08-27"
+    },
+    "LA": {
+      "status": "legal",
+      "sourceId": "la-76-xv-101",
+      "cite": "§ 101.K.2",
+      "note": "Not among the individually-named restricted nonnative species (which include Boa constrictor by exact binomial). Corn snake is Louisiana native; we did not separately verify Louisiana's wild-take rules for the native population, only that ordinary possession of a lawfully acquired animal is not on the restricted list.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MD": {
+      "status": "legal",
+      "sourceId": "md-10-621",
+      "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MN": {
+      "status": "conditional",
+      "sourceId": "mn-97a-401",
+      "cite": "Minn. Stat. § 97A.401, subd. 8",
+      "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+      "note": "Since August 2021, Minnesota requires any pet snake to come from a permitted breeder (or be grandfathered from before that date). The rule is not limited to Minnesota-native species; it applies to snakes generally.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MS": {
+      "status": "legal",
+      "sourceId": "ms-40-2-8-3",
+      "cite": "§ A.5",
+      "note": "The inherently dangerous list is entirely mammalian.",
+      "verifiedOn": "2026-08-27"
+    },
+    "MT": {
+      "status": "legal",
+      "sourceId": "mt-87-5-7",
+      "cite": "§ 87-5-706(1)(d)(v)",
+      "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+      "verifiedOn": "2026-08-27"
+    },
+    "NC": {
+      "status": "legal",
+      "sourceId": "nc-14-417",
+      "cite": "§ 14-417",
+      "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+      "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+      "verifiedOn": "2026-08-27"
+    },
+    "ND": {
+      "status": "legal",
+      "sourceId": "nd-36-01",
+      "cite": "§ 36-01-08.4",
+      "note": "No reptile appears anywhere in North Dakota's captivity-prohibition chapter.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NE": {
+      "status": "legal",
+      "sourceId": "ne-163-nac-4-008",
+      "cite": "163 NAC ch. 4, § 008",
+      "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles from its permit system; corn snakes are named as an example of a legal-to-own species in Game and Parks guidance. Corn snake is not Nebraska native.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NH": {
+      "status": "legal",
+      "sourceId": "nh-fis800",
+      "cite": "Fis 804.02(b)(4)",
+      "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+      "note": "Corn snake is not New Hampshire native, so it falls cleanly within the general exotic-reptile allowance.",
+      "verifiedOn": "2026-08-27"
+    },
+    "NJ": {
+      "status": "permit",
+      "sourceId": "nj-7-25-4-5",
+      "cite": "N.J.A.C. 7:25-4.4/4.5",
+      "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
+      "note": "We read New Jersey's exempted-species list directly: it names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not corn snake. So a permit is required. Worth flagging clearly: New Jersey also lists the corn snake as a state Endangered species (its native range barely reaches southern NJ, and the wild population was decimated by habitat loss and poaching before an endangered listing in 1984). Per NJ Fish & Wildlife's own species account, \"the collection or possession of wild corn snakes is prohibited by the New Jersey Endangered Species Act and is punishable with fines and/or imprisonment.\" A captive-bred, non-New Jersey-origin animal is a permit case under 7:25-4.5; a wild-collected New Jersey animal is a straight endangered-species violation, a much harsher regime.",
+      "permitFor": "personal",
+      "verifiedOn": "2026-08-27"
+    },
+    "NY": {
+      "status": "legal",
+      "sourceId": "ny-11-0103",
+      "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Corn snake is not among them.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OH": {
+      "status": "legal",
+      "sourceId": "oh-935-01",
+      "cite": "§ 935.01(C)",
+      "note": "Ohio's restricted snake list is three venomous families plus two named rear-fanged species plus eight large constrictors twelve feet or longer. A corn snake is none of those.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OK": {
+      "status": "legal",
+      "sourceId": "ok-800-25-25-3",
+      "cite": "§ 800:25-25-3(c)",
+      "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+      "note": "Corn snake is not indigenous to Oklahoma, so it clears under this exemption.",
+      "verifiedOn": "2026-08-27"
+    },
+    "OR": {
+      "status": "legal",
+      "sourceId": "or-609-305",
+      "cite": "ORS § 609.305",
+      "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+      "verifiedOn": "2026-08-27"
+    },
+    "PA": {
+      "status": "unclear",
+      "sourceId": "pa-exotic-wildlife-permit",
+      "note": "Corn snake is not Pennsylvania native, so the Fish and Boat Commission's native-species possession-limit rule (58 Pa. Code Ch. 79) does not apply. What does apply is the Game Commission's Exotic Wildlife Possession Permit framework, and we could not find a clear species-level exemption list confirming small non-venomous colubrids fall outside it. Left unclear rather than guessed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SC": {
+      "status": "conditional",
+      "sourceId": "sc-act177",
+      "cite": "S.C. Code Regs. Ch. 123-150 to -153 (Act 177)",
+      "quote": "Corn snakes reproduced in captivity and under 20 inches in total length are allowed",
+      "note": "South Carolina's 2021 native-reptile law (Act 177) generally bars sale/possession of native reptiles, but carves out captive-bred corn snakes under 20 inches total length as an allowed pet-trade exception. We could not confirm the exact regulation subsection number for this specific size cutoff beyond the Chapter 123-150s series; the substance is corroborated by SCDNR's own herp regulations page describing the general native-species possession scheme.",
+      "verifiedOn": "2026-08-27"
+    },
+    "SD": {
+      "status": "legal",
+      "sourceId": "sd-12-68-18",
+      "cite": "12:68:18:03",
+      "note": "South Dakota's possession-permit list covers mammals only; reptiles are handled under separate Game, Fish and Parks rules, though a free entry permit applies to importing any nondomestic animal.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TN": {
+      "status": "conditional",
+      "sourceId": "tn-70-4-403",
+      "cite": "Tenn. Code § 70-4-403(3)(A)",
+      "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+      "note": "Class III wildlife needs no possession permit, and this clause covers a corn snake regardless of origin. But corn snake is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name and address and the date of acquisition, to distinguish legitimately-sourced animals from wild-collected ones.",
+      "verifiedOn": "2026-08-27"
+    },
+    "TX": {
+      "status": "legal",
+      "sourceId": "tx-tpwd-nonindigenous",
+      "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+      "note": "Corn snake is not a controlled exotic snake and is not a threatened species; TPWD confirms it can be kept for personal enjoyment without a permit. Corn snake is Texas native, and wild collection of native nongame wildlife generally requires a Texas hunting license; this entry covers possessing a lawfully acquired animal, not wild take.",
+      "verifiedOn": "2026-08-27"
+    },
+    "UT": {
+      "status": "legal",
+      "sourceId": "ut-r657-3",
+      "cite": "Utah Admin. Code R657-3",
+      "note": "Corn snake does not appear on Utah's controlled/prohibited reptile tables and is not Utah native. Under R657-3's noncontrolled-species default, no certificate of registration is required for a species that poses no detrimental impact and isn't otherwise listed.",
+      "verifiedOn": "2026-08-27"
+    },
+    "VA": {
+      "status": "legal",
+      "sourceId": "va-4vac15-30-40",
+      "cite": "§ 15-30-40(A)",
+      "note": "No snake appears on Virginia's special permit table at all.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WA": {
+      "status": "legal",
+      "sourceId": "wa-rcw-16-30",
+      "cite": "RCW 16.30.010(2)",
+      "quote": "Family colubridae, only dispholidus typus",
+      "note": "The only colubrid Washington restricts is the boomslang.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WV": {
+      "status": "legal",
+      "sourceId": "wv-19-34",
+      "cite": "§ 19-34-5(c)(2)(E)",
+      "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+      "note": "A corn snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
+      "verifiedOn": "2026-08-27"
+    },
+    "WY": {
+      "status": "legal",
+      "sourceId": "wy-ch69",
+      "cite": "Chapter 69, § 10(a)(i)",
+      "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+      "verifiedOn": "2026-08-27"
+    }
+  }
+}

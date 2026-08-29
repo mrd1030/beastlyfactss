@@ -150,7 +150,7 @@ export default function Facts() {
 
   const filtered = useMemo(() => {
     return dailyFacts.filter(f => {
-      const matchesCategory = activeCategory === 'All' || f.category === activeCategory; 
+      const matchesCategory = activeCategory === 'All' || f.category === activeCategory || (f.crossCategories || []).includes(activeCategory);
       const matchesSearch = !search ||
         f.title.toLowerCase().includes(search.toLowerCase()) || 
         f.animal.toLowerCase().includes(search.toLowerCase()) || 
@@ -295,20 +295,22 @@ export default function Facts() {
           {/* Category chips - real links (not buttons) so the category pages
               are crawlable from /facts/ and from each other; the Ahrefs
               2026-07-16 audit flagged them as having a single inlink. */}
-          <div className="flex flex-wrap gap-2 mt-4">
-            {allCategories.map(cat => (
-              <Link
-                key={cat}
-                to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
-                onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  activeCategory === cat
-                    ? 'bg-secondary text-secondary-foreground shadow-md shadow-secondary/20'
-                    : 'bg-card border border-border text-muted-foreground hover:text-foreground hover:border-secondary/30'
-                }`}
-              >
-                {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
-              </Link>
+          <div className="flex flex-wrap items-center gap-y-2 mt-4 text-xs font-body">
+            {allCategories.map((cat, i) => (
+              <React.Fragment key={cat}>
+                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                <Link
+                  to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
+                  onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    activeCategory === cat
+                      ? 'border-secondary text-foreground font-semibold'
+                      : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {cat === 'All' ? '✨ All' : `${categories.find(c => c.name === cat)?.emoji || ''} ${cat}`}
+                </Link>
+              </React.Fragment>
             ))}
           </div>
         </div>

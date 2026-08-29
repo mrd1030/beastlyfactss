@@ -43,7 +43,7 @@ function PersonalityQuiz() {
       // lives in its own manualChunk (vite.config.js) specifically so this stays
       // an on-demand fetch instead of shipping on every page via 'vendor'.
       import('canvas-confetti').then(({ default: confetti }) => {
-        confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D', '#0F3A1F'] });
+        confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 }, colors: ['#E4632F', '#D9A441', '#FFD93D', '#E8336D', '#154B3D'] });
       });
     } else {
       setStep(step + 1);

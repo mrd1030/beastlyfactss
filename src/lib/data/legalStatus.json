@@ -236,6 +236,42 @@
       "hedgehog": {
         "checked": 51,
         "of": 51
+      },
+      "corn-snake": {
+        "checked": 40,
+        "of": 51
+      },
+      "milk-snake": {
+        "checked": 38,
+        "of": 51
+      },
+      "rosy-boa": {
+        "checked": 43,
+        "of": 51
+      },
+      "flying-squirrel": {
+        "checked": 20,
+        "of": 51
+      },
+      "ackie-monitor": {
+        "checked": 32,
+        "of": 51
+      },
+      "garter-snake": {
+        "checked": 50,
+        "of": 51
+      },
+      "kingsnake": {
+        "checked": 50,
+        "of": 51
+      },
+      "cockatoo": {
+        "checked": 49,
+        "of": 51
+      },
+      "red-footed-tortoise": {
+        "checked": 31,
+        "of": 51
       }
     }
   },
@@ -819,6 +855,256 @@
       "title": "WAC 220-640-200, Deleterious exotic wildlife",
       "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=220-640-200",
       "note": "Washington's second exotic animal rule. Checked and found to cover only ungulates, mongooses, wild boar, peccary and the mute swan, so it does not reach any common exotic pet."
+    },
+    "ga-dnr-legal-pets": {
+      "title": "Georgia DNR: Guide to Legal Pets",
+      "url": "https://gadnrle.org/legal-pets",
+      "note": "Corn Snake and Milksnake both appear by name on DNR's own prohibited-native-species list, with the page stating plainly that origin or morphology doesn't matter."
+    },
+    "il-herps-act": {
+      "title": "Illinois Administrative Code, Title 17, Part 885 — Herptile Code",
+      "url": "https://www.ilga.gov/agencies/JCAR/EntirePart?titlepart=01700885",
+      "note": "Official Joint Committee on Administrative Rules text; §885.20 sets the 8-total/4-per-species cap on native herptiles and §885.80 sets the $50 Herpetoculture Permit that exempts a keeper from it."
+    },
+    "mn-97a-401": {
+      "title": "Minnesota Statutes 2025, Section 97A.401",
+      "url": "https://www.revisor.mn.gov/statutes/cite/97A.401",
+      "note": "Subd. 8 states a pet snake, lizard, or salamander must come from a permitted breeder or have been possessed before August 1, 2021; hosted on the MN Revisor of Statutes' own site."
+    },
+    "ne-163-nac-4-008": {
+      "title": "Nebraska Administrative Code, Title 163, Chapter 4, § 008 — Keeping Wildlife in Captivity",
+      "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
+      "note": "The Captive Wildlife Permit species list in §008.01B names only wild birds and wild mammals; reptiles never appear on it, which is the basis for treating common exotic reptiles as outside this permit system."
+    },
+    "nj-7-25-4-5": {
+      "title": "N.J.A.C. 7:25-4.4 Exempted Species and 7:25-4.5 Additional Species",
+      "url": "https://nj.gov/dep/fgw/pdf/xotic_exemptspp.pdf",
+      "note": "Official NJDEP Fish & Wildlife exempted-species list; 4.5 requires a permit for any exotic reptile not named in 4.4's list, which covers Boa constrictor, garter snakes and ribbon snakes but not corn snake, milk snake, or rosy boa."
+    },
+    "pa-exotic-wildlife-permit": {
+      "title": "58 Pa. Code Chapter 147, Subchapter N — Exotic Wildlife Possession",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter147%2FsubchapNtoc.html&d=reduce",
+      "note": "Official Pennsylvania Code text of the Game Commission's exotic-wildlife permit framework; no dedicated descriptive PGC web page could be confirmed, and the Commission has issued no new permits under this framework since January 1, 2014."
+    },
+    "sc-act177": {
+      "title": "S.C. Code of Regulations, Chapter 123, Article 5 (§§ 123-150 through 123-153.4)",
+      "url": "https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf",
+      "note": "Official codified text implementing 2021 Act 177; §123-151.3 carves out captive-bred corn snakes under 20 inches and eastern milksnakes under 10 inches from the general native-reptile sale/possession ban."
+    },
+    "tx-tpwd-nonindigenous": {
+      "title": "TPWD: Nonindigenous Snake Permits (Controlled Exotic Snake Permit)",
+      "url": "https://tpwd.texas.gov/faq/business/permits/nonindigenous_snakes/index.phtml",
+      "note": "Official TPWD FAQ page; the controlled list covers only non-native venomous snakes plus five named large constrictor species, so corn snake, milk snake, and rosy boa fall outside the permit requirement."
+    },
+    "pa-58-79-3": {
+      "title": "58 Pa. Code § 79.3 — Season and Daily Possession Limits (Chapter 79, Reptiles and Amphibians)",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=/secure/pacode/data/058/chapter79/s79.3.html&d=reduce",
+      "note": "Official Pennsylvania Code text; the catch-all 'native species not listed' line sets a 1-per-day/1-in-possession limit, and companion §79.4 requires a permit for continued possession regardless of the animal's origin."
+    },
+    "ut-r657-53-tables": {
+      "title": "Species Tables for Utah's Reptiles and Amphibians",
+      "url": "https://wildlife.utah.gov/reptiles-amphibians/tables",
+      "note": "Official Utah DWR table under R657-53; lists Western milk snake (Lampropeltis gentilis) under 'Limited possession' at 2 daily/yearly and 4 total per species."
+    },
+    "wi-nr-16-12": {
+      "title": "Wisconsin Admin. Code NR 16.12 — Amphibian and Reptile Regulations",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16/12",
+      "note": "Official Wisconsin State Legislature code text; caps take/possession of native, non-listed amphibians, lizards and snakes at 5 individuals per species, with NR 16.13 layering on the purchase restriction for native species."
+    },
+    "az-co43-reptile-regs": {
+      "title": "Arizona Reptile and Amphibian Regulations 2026–2030 (Commission Order 43)",
+      "url": "https://azgfd-portal-wordpress-pantheon.s3.us-west-2.amazonaws.com/wp-content/uploads/2025/11/05144900/2026-2030-Reptile-and-Amphibian-Regulations.pdf",
+      "note": "Official AZGFD regulations booklet effective Jan. 1, 2026; lists rosy boa (Lichanura roseofusca/trivirgata) with a take limit of 2 per year and 4 in possession under a valid hunting license."
+    },
+    "al-native-nongame": {
+      "title": "Ala. Admin. Code r. 220-2-.92",
+      "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.92",
+      "note": "Alabama Legislature's administrative code rule listing nongame wildlife species that cannot be taken, possessed, or sold without a permit."
+    },
+    "az-license-take": {
+      "title": "Ariz. Admin. Code R12-4-406, R12-4-407",
+      "url": "https://s3.amazonaws.com/azgfd-portal-wordpress/PortalImages/files/Agency/12-04commissionrules.pdf",
+      "note": "Arizona Game and Fish Commission's live wildlife rules, hosted by AZGFD, R12-4-406 sets the restricted wildlife special license requirement and R12-4-407 lists exemptions from it."
+    },
+    "ca-5-60": {
+      "title": "Cal. Code Regs. tit. 14, § 5.60",
+      "url": "https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=",
+      "note": "CDFW's current Freshwater Sport Fishing Regulations booklet, which reprints Title 14 section 5.60 in full, including species bag limits and county closures."
+    },
+    "co-unregulated-wildlife": {
+      "title": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+      "url": "https://www.sos.state.co.us/CCR/GenerateRulePdf.do?ruleVersionId=6776&fileName=2+CCR+406-11",
+      "note": "Colorado Secretary of State's current codified text of CPW's Chapter W-11 rule, whose Chapter 0 general provisions define the unregulated wildlife and prohibited species lists."
+    },
+    "ct-26-55-6": {
+      "title": "Regs. Conn. State Agencies § 26-55-6",
+      "url": "https://eregulations.ct.gov/eRegsPortal/Browse/getDocument?guid=%7B6B566428-3A6A-452A-9E3A-7AF89D95D371%7D",
+      "note": "Connecticut's official eRegulations portal text sorting wild animals into four possession categories by danger level."
+    },
+    "de-native-wildlife": {
+      "title": "Del. Code tit. 7, c. 7",
+      "url": "https://delcode.delaware.gov/title7/c007/index.html",
+      "note": "Delaware Code Online's game and fish possession chapter administered by DNREC, paired with a separate exotic species permit chapter at Del. Code tit. 3, c. 72."
+    },
+    "ma-321cmr9-01": {
+      "title": "321 CMR 9.01",
+      "url": "https://www.mass.gov/doc/321-cmr-9-exotic-wildlife/download",
+      "note": "MassWildlife's official exemption list under M.G.L. c. 131, section 23, only species actually named in it may be imported, sold, or possessed without a license."
+    },
+    "md-native-herp": {
+      "title": "COMAR 08.03.11 (formerly cited as 08.03.09, adopted 1993)",
+      "url": "https://regs.maryland.gov/us/md/exec/comar/08.03.11/index.full.html",
+      "note": "Maryland's native reptile and amphibian possession permit chapter, permanently adopted December 1, 1993, and renumbered from 08.03.09 to 08.03.11 since then."
+    },
+    "ne-captive-wildlife": {
+      "title": "163 Neb. Admin. Code ch. 4, § 008",
+      "url": "https://outdoornebraska.gov/wp-content/uploads/2023/03/Wildlife-Regs.pdf",
+      "note": "Nebraska Game and Parks Commission's own wildlife regulations booklet, section 008 lists which species require a Captive Wildlife Permit."
+    },
+    "nj-7-25-4-8": {
+      "title": "N.J.A.C. 7:25-4.8(a)",
+      "url": "https://dep.nj.gov/wp-content/uploads/njfw/restricted-species-potentially-dangerous-species-and-endangered-species.pdf",
+      "note": "NJDEP Fish and Wildlife's courtesy copy of its potentially dangerous species table, ordinary colubrid snakes such as kingsnakes and garter snakes are not on it."
+    },
+    "nv-unprotected-reptiles": {
+      "title": "NAC 503.090",
+      "url": "https://www.leg.state.nv.us/nac/nac-503.html",
+      "note": "Nevada Legislature's administrative code chapter defining unprotected reptiles as any species not classified protected, sensitive, threatened, or endangered."
+    },
+    "or-635-056-0060": {
+      "title": "OAR 635-056-0060",
+      "url": "https://secure.sos.state.or.us/oard/view.action?ruleNumber=635-056-0060",
+      "note": "Oregon Secretary of State's administrative rules database entry listing wildlife species exempt from ODFW importation permits."
+    },
+    "pa-58-79": {
+      "title": "58 Pa. Code Ch. 79",
+      "url": "https://www.pacodeandbulletin.gov/Display/pacode?file=%2Fsecure%2Fpacode%2Fdata%2F058%2Fchapter79%2Fchap79toc.html&d=",
+      "note": "Official Pennsylvania Code and Bulletin chapter, Fish and Boat Commission rules that apply only to species native to Pennsylvania and only to wild take, which requires a fishing license."
+    },
+    "ut-r657-53": {
+      "title": "Utah Admin. Code R657-53-5",
+      "url": "https://wildlife.utah.gov/rules/r657-53",
+      "note": "Utah DWR's own hosting of rule R657-53, section 5 lists activities allowed without a wildlife document, including noncontrolled species possession thresholds."
+    },
+    "vt-10-app-18": {
+      "title": "10 V.S.A. App. § 18",
+      "url": "https://legislature.vermont.gov/statutes/section/10appendix/001/00018",
+      "note": "Vermont Legislature's official text requiring an Importation and Possession Permit for any wild animal not on the Commissioner's Unrestricted Wild Animals List."
+    },
+    "wi-nr16-12": {
+      "title": "Wis. Admin. Code NR 16.12-16.15",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/16",
+      "note": "Wisconsin Legislature's codified DNR chapter on captive wildlife, sections 16.12 through 16.15 set possession and take limits for native reptiles and amphibians."
+    },
+    "wi-import-permit": {
+      "title": "Wis. Stat. § 169.04",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/04",
+      "note": "Wisconsin Legislature's captive wildlife statute requiring lawful acquisition, animals sourced from out of state also need a DATCP import permit."
+    },
+    "tx-71-001": {
+      "title": "Texas Parks & Wildlife Code § 71.001",
+      "url": "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.71.htm",
+      "note": "Defines fur-bearing animal with a closed list of species that does not include squirrels or flying squirrels."
+    },
+    "fl-class3": {
+      "title": "Florida Administrative Code Chapter 68A-6, Captive Wildlife",
+      "url": "https://flrules.org/gateway/ChapterHome.asp?Chapter=68A-6",
+      "note": "FWC's captive wildlife chapter sets the Class I, II and III tiers, with Class III requiring only a free personal-pet permit."
+    },
+    "nc-113-272-5": {
+      "title": "North Carolina General Statutes § 113-272.5",
+      "url": "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_113/GS_113-272.5.html",
+      "note": "North Carolina's captivity-license statute, which bars issuing a license for a wild animal acquired merely as a pet."
+    },
+    "ny-11-0512": {
+      "title": "New York Environmental Conservation Law § 11-0512",
+      "url": "https://www.nysenate.gov/legislation/laws/ENV/11-0512",
+      "note": "Bars knowingly possessing, harboring, selling or importing any wild animal for use as a pet, with the special license path set out in ECL § 11-0515(1) and 6 NYCRR Part 175."
+    },
+    "wi-nr-10-02": {
+      "title": "Wisconsin Administrative Code NR 10.02",
+      "url": "https://docs.legis.wisconsin.gov/code/admin_code/nr/001/10/I/02",
+      "note": "Lists Wisconsin's protected wild animals, which may not be taken, transported or possessed without DNR authorization."
+    },
+    "il-520-5": {
+      "title": "Illinois Wildlife Code, 520 ILCS 5",
+      "url": "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=1729&ChapterID=43",
+      "note": "Places ownership of wild birds and mammals in the state and requires an IDNR permit to hold protected native wildlife, including tree squirrels, in captivity."
+    },
+    "oh-1531": {
+      "title": "Ohio Revised Code Chapter 1531",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-1531",
+      "note": "Ohio's Division of Wildlife chapter, which defines game quadrupeds (including the flying squirrel) and requires a permit to possess native wildlife."
+    },
+    "md-10-901": {
+      "title": "Maryland Natural Resources Code § 10-901",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gnr&section=10-901&enactments=false",
+      "note": "Opens Maryland's Captive Wildlife subtitle with legislative findings supporting strict regulation of possessing wildlife native to the state."
+    },
+    "hi-4-71-6-prohibited": {
+      "title": "Hawaii Administrative Rules § 4-71-6, List of Prohibited Animals",
+      "url": "https://dab.hawaii.gov/wp-content/uploads/2019/08/List-of-Prohibited-Animals.pdf",
+      "note": "HDOA's prohibited species list, which bans the entire squirrel family Sciuridae except two zoo-exhibition species and university-research marmots."
+    },
+    "ny-dangerous-animal": {
+      "title": "6 NYCRR § 180.1, Animals Dangerous to Health or Welfare",
+      "url": "https://extapps.dec.ny.gov/docs/wildlife_pdf/1801animaldangerhealthwelfare.pdf",
+      "note": "The regulation behind DEC's Dangerous Animal License, listing canids, bears, felids, primates and venomous reptiles among others, with no parrot or cockatoo family included."
+    },
+    "wi-datcp-birds": {
+      "title": "Wisconsin Statutes § 169.01(25m)",
+      "url": "https://docs.legis.wisconsin.gov/statutes/statutes/169/01/25m",
+      "note": "Defines pet bird as a non-native, non-endangered, non-migratory psittacine or soft-bill bird, the category Wisconsin's captive wildlife law leaves unregulated."
+    },
+    "ut-r657-3b": {
+      "title": "Utah Administrative Code R657-3b",
+      "url": "https://wildlife.utah.gov/rules/r657-03b",
+      "note": "Governs certificates of registration for bird and mammal species; its Table 3b-1 classifies non-native Family Psittacidae as noncontrolled, needing no certificate."
+    },
+    "de-nonnative-reptile-permit": {
+      "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
+      "url": "https://delcode.delaware.gov/title3/c072/index.html",
+      "note": "§7201 requires a permit before bringing in, possessing, selling, or exhibiting any live wild mammal or reptile not native to Delaware; the California kingsnake, a Pacific coast species, falls under this permit requirement."
+    },
+    "md-not-native": {
+      "title": "Md. Code, Criminal Law § 10-621, Import, Offer, or Transfer of Dangerous Animal",
+      "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcr&section=10-621&enactments=false",
+      "note": "The dangerous-animal list covers only specific mammals, crocodilians, and venomous snakes of four named families; non-venomous colubrids like the kingsnake and companion birds like cockatoos are both absent from it."
+    },
+    "al-exotic-birds": {
+      "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
+      "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.26",
+      "note": "Same rule already sourced for other species' prohibited list; its bans reach only federally-listed Lacey Act injurious wildlife and named out-of-state mammal/fish species, with no bird species named, so a captive-bred parrot or cockatoo falls outside it."
+    },
+    "az-exotic-birds": {
+      "title": "Arizona Revised Statutes § 17-306, Importation, Transportation, Release or Possession of Live Wildlife",
+      "url": "https://www.azleg.gov/ars/17/00306.htm",
+      "note": "General prohibition on unauthorized live wildlife; enforced in practice through the companion restricted-species rule (R12-4-406), which is aimed at native and dangerous wildlife and does not name common psittacine pets."
+    },
+    "de-birds-exempt": {
+      "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
+      "url": "https://delcode.delaware.gov/title3/c072/index.html",
+      "note": "The permit requirement in §7201 names only wild mammals and non-native reptiles; birds are absent from the chapter's operative text despite appearing in its older title reference, so a pet cockatoo needs no permit under this chapter."
+    },
+    "ne-cage-aviary-birds": {
+      "title": "163 Neb. Admin. Code, ch. 4, § 008 — Keeping Wildlife in Captivity (Definitions)",
+      "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
+      "note": "Same chapter as ne-163-nac-4-008; its opening definitions section defines 'Cage and Aviary Birds' verbatim as captive-reared, non-native birds such as parrots, exotic finches, and canaries, with the monk parakeet the one species carved back out."
+    },
+    "nv-unprotected-birds": {
+      "title": "Nevada Administrative Code § 503.110, Restrictions on Importation, Transportation and Possession of Certain Species",
+      "url": "https://www.leg.state.nv.us/nac/nac-503.html",
+      "note": "The prohibited-species list under this section names only three birds (Pink Starling/Rosy Pastor, Red-billed Dioch, Red-whiskered Bulbul); cockatoos and other companion parrots are absent."
+    },
+    "ny-6nycrr-3-3": {
+      "title": "6 NYCRR § 3.3, Native Snakes",
+      "url": "https://govt.westlaw.com/nycrr/Document/I21bf88a2c22211ddb7c8fb397c5bd26b?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)",
+      "note": "New York's official compilation of codes, rules and regulations (linked directly from DEC's own regulatory index page); defines native snakes by naming seventeen species by common name, each with open season 'None.'"
+    },
+    "ga-27-1-28": {
+      "title": "O.C.G.A. § 27-1-28, Taking of Nongame Species",
+      "url": "https://law.justia.com/codes/georgia/title-27/chapter-1/section-27-1-28/",
+      "note": "Bars possession of nongame wildlife except a short enumerated list (rats, mice, coyotes, armadillos, groundhogs, beaver, freshwater turtles, poisonous snakes, frogs, spring lizards, fiddler crabs, freshwater crayfish, freshwater mussels, nutria); an ordinary nonvenomous native colubrid like the garter snake is not on that exception list."
     }
   },
   "animals": {
@@ -10253,6 +10539,2702 @@
           "note": "Not reached by RCW 16.30 or by the deleterious exotic wildlife rule.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        }
+      }
+    },
+    "corn-snake": {
+      "name": "Corn snake",
+      "scientific": "Pantherophis guttatus",
+      "encyclopediaId": "corn-snake",
+      "jurisdictions": {
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Corn snake is not on the federal injurious wildlife list this rule points to.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "The clean list's only reptile test is venom.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406",
+          "note": "Arizona's restricted live wildlife rule reaches crocodilians, elapids, burrowing asps, boomslangs, twig snakes, keelbacks and the brown tree snake. A common colubrid like the corn snake is not on it, and it is not an Arizona native, so no separate wild-collection rule applies either.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted colubrid entries are boomslang, twig snakes and Nerodia. Corn snake is not California native, so the state's separate native-reptile take rules (Title 14 CCR §§ 40-43) don't reach it either.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The potentially dangerous animal list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-3900",
+          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
+          "note": "The banned list is venomous species plus pythons and anacondas by name. A corn snake is none of those.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Corn snake is Florida native, though, so this covers lawfully acquired possession only; wild take of the native population falls under FWC's separate nongame take and bag-limit rules, not checked in detail here.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+          "note": "Corn snake is named on Georgia DNR's own list of native species that cannot be kept as pets, and the agency is explicit that captive-bred stock is treated the same as wild-caught: origin does not matter. This is a real blanket ban on a species commonly sold in pet stores elsewhere, grounded in Georgia's wild animal statute, O.C.G.A. § 27-5-4/27-5-5. We could not pin an exact numbered subrule beyond that statutory basis; the DNR guidance page is unambiguous regardless.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii bans the entire snake suborder by name.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "note": "The squamate half of Iowa's dangerous wild animal definition is exhaustively enumerated: monitors, helodermatids, the venomous families, and henophidia limited to reticulated pythons, anacondas and African rock pythons. A corn snake is in none of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+          "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect any native species from the wild. Corn snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this possession cap. Boidae, by contrast, is specifically exempted from the whole permit process (relevant to rosy boa, not this species).",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "The Colubridae entry on Kentucky's restricted list is limited to venomous rear-fanged colubrids. A corn snake is not venomous, so it was never inside the clause to begin with.",
+          "verifiedOn": "2026-08-27"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Not among the individually-named restricted nonnative species (which include Boa constrictor by exact binomial). Corn snake is Louisiana native; we did not separately verify Louisiana's wild-take rules for the native population, only that ordinary possession of a lawfully acquired animal is not on the restricted list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "Minn. Stat. § 97A.401, subd. 8",
+          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Since August 2021, Minnesota requires any pet snake to come from a permitted breeder (or be grandfathered from before that date). The rule is not limited to Minnesota-native species; it applies to snakes generally.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(d)(v)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "quote": "It shall be unlawful for any person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and secure enclosure.",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in North Dakota's captivity-prohibition chapter.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-163-nac-4-008",
+          "cite": "163 NAC ch. 4, § 008",
+          "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles from its permit system; corn snakes are named as an example of a legal-to-own species in Game and Parks guidance. Corn snake is not Nebraska native.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "Corn snake is not New Hampshire native, so it falls cleanly within the general exotic-reptile allowance.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-5",
+          "cite": "N.J.A.C. 7:25-4.4/4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
+          "note": "We read New Jersey's exempted-species list directly: it names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not corn snake. So a permit is required. Worth flagging clearly: New Jersey also lists the corn snake as a state Endangered species (its native range barely reaches southern NJ, and the wild population was decimated by habitat loss and poaching before an endangered listing in 1984). Per NJ Fish & Wildlife's own species account, \"the collection or possession of wild corn snakes is prohibited by the New Jersey Endangered Species Act and is punishable with fines and/or imprisonment.\" A captive-bred, non-New Jersey-origin animal is a permit case under 7:25-4.5; a wild-collected New Jersey animal is a straight endangered-species violation, a much harsher regime.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Corn snake is not among them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Ohio's restricted snake list is three venomous families plus two named rear-fanged species plus eight large constrictors twelve feet or longer. A corn snake is none of those.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "note": "Corn snake is not indigenous to Oklahoma, so it clears under this exemption.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "cite": "ORS § 609.305",
+          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-exotic-wildlife-permit",
+          "note": "Corn snake is not Pennsylvania native, so the Fish and Boat Commission's native-species possession-limit rule (58 Pa. Code Ch. 79) does not apply. What does apply is the Game Commission's Exotic Wildlife Possession Permit framework, and we could not find a clear species-level exemption list confirming small non-venomous colubrids fall outside it. Left unclear rather than guessed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "conditional",
+          "sourceId": "sc-act177",
+          "cite": "S.C. Code Regs. Ch. 123-150 to -153 (Act 177)",
+          "quote": "Corn snakes reproduced in captivity and under 20 inches in total length are allowed",
+          "note": "South Carolina's 2021 native-reptile law (Act 177) generally bars sale/possession of native reptiles, but carves out captive-bred corn snakes under 20 inches total length as an allowed pet-trade exception. We could not confirm the exact regulation subsection number for this specific size cutoff beyond the Chapter 123-150s series; the substance is corroborated by SCDNR's own herp regulations page describing the general native-species possession scheme.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only; reptiles are handled under separate Game, Fish and Parks rules, though a free entry permit applies to importing any nondomestic animal.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "conditional",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code § 70-4-403(3)(A)",
+          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Class III wildlife needs no possession permit, and this clause covers a corn snake regardless of origin. But corn snake is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name and address and the date of acquisition, to distinguish legitimately-sourced animals from wild-collected ones.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-tpwd-nonindigenous",
+          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+          "note": "Corn snake is not a controlled exotic snake and is not a threatened species; TPWD confirms it can be kept for personal enjoyment without a permit. Corn snake is Texas native, and wild collection of native nongame wildlife generally requires a Texas hunting license; this entry covers possessing a lawfully acquired animal, not wild take.",
+          "verifiedOn": "2026-08-27"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3",
+          "cite": "Utah Admin. Code R657-3",
+          "note": "Corn snake does not appear on Utah's controlled/prohibited reptile tables and is not Utah native. Under R657-3's noncontrolled-species default, no certificate of registration is required for a species that poses no detrimental impact and isn't otherwise listed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "No snake appears on Virginia's special permit table at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Family colubridae, only dispholidus typus",
+          "note": "The only colubrid Washington restricts is the boomslang.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)(E)",
+          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+          "note": "A corn snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Chapter 69, § 10(a)(i)",
+          "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/corn-snake-legal-guide/"
+    },
+    "milk-snake": {
+      "name": "Milk snake",
+      "scientific": "Lampropeltis triangulum",
+      "encyclopediaId": "milk-snake",
+      "jurisdictions": {
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Milk snake is not on the federal injurious wildlife list this rule points to.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-r12-4-406",
+          "cite": "R12-4-406",
+          "note": "Arizona's restricted live wildlife rule is aimed at dangerous species (crocodilians, elapids, boomslangs, twig snakes, keelbacks, brown tree snake). A common kingsnake-genus colubrid is not on it. Milk snake occurs natively in parts of Arizona; we did not separately verify a native wild-collection rule for it there, only that simple possession is unrestricted.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "California's restricted colubrid entries are boomslang, twig snakes and Nerodia. Milk snake is not native to California (the California kingsnake, a different species, fills that niche), so no native-take question arises.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The potentially dangerous animal list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-3900",
+          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
+          "note": "The banned list is venomous species plus pythons and anacondas by name. A milk snake is none of those.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not on FWC's prohibited/Reptiles of Concern list. Florida's milk snake population (Coastal Plain milksnake) is native, so this covers lawfully acquired possession; wild take of the native population is a separate FWC nongame question we did not verify in detail.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-dnr-legal-pets",
+          "quote": "The following list of species native to Georgia may not be held as a pet regardless of its origin or morphology.",
+          "note": "Georgia DNR's own \"Guide to Legal Pets\" and \"Laws Related to Native Wildlife\" pages both list \"Milksnake\" among native species that cannot be kept as pets, captive-bred or not. This is a genuine blanket ban on a species that is a pet-store staple elsewhere. Statutory basis is Georgia's wild animal statute, O.C.G.A. § 27-5-4/27-5-5; we could not confirm an exact numbered administrative subrule beyond that, but two independent official DNR pages state the prohibition plainly.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii bans the entire snake suborder by name.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "note": "Iowa's dangerous wild animal definition for snakes is limited to venomous families and named giant pythons/anacondas. A milk snake is in none of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "conditional",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+          "note": "Illinois caps possession of native Illinois herptiles at 8 specimens total and 4 per species without a permit, and a sport fishing license is required to collect a native species from the wild. Milk snake is Illinois native. A $50 Herpetoculture Permit exempts a keeper from this cap.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "quote": "Venomous exotic snakes of the families Viperidae, Atractaspididae, Elapidae, Hydrophidae, and Colubridae, except for hognose snakes (Genus Heterodon);",
+          "note": "Kentucky's Colubridae entry restricts only venomous rear-fanged colubrids. A milk snake is not venomous.",
+          "verifiedOn": "2026-08-27"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Not among Louisiana's individually-named restricted nonnative species. Milk snake is Louisiana native; we did not separately verify Louisiana's wild-take rules for the native population.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "Minn. Stat. § 97A.401, subd. 8",
+          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Since August 2021, Minnesota requires any pet snake, including a native species like milk snake, to come from a permitted breeder or be grandfathered from before that date.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(d)(v)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in North Dakota's captivity-prohibition chapter.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "The reptile entry names venomous species plus Burmese, reticulated and African rock pythons. Milk snake is not among them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-5",
+          "cite": "N.J.A.C. 7:25-4.4/4.5",
+          "quote": "A permit shall be required for any other exotic mammals, birds, reptiles, or amphibians, or nongame species not specifically exempted by Section 4.4.",
+          "note": "New Jersey's exempted-species list names Boa constrictor, garter snakes and ribbon snakes among reptiles, but not milk snake, so a permit is required. We did not find a state-endangered listing for milk snake in New Jersey the way corn snake carries one; this is the general exotic/nongame species permit only.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Ohio's restricted snake list is three venomous families plus two named rear-fanged species plus eight large constrictors twelve feet or longer. A milk snake is none of those.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "cite": "ORS § 609.305",
+          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "conditional",
+          "sourceId": "pa-58-79-3",
+          "cite": "58 Pa. Code §§ 79.3, 79.4",
+          "quote": "Native species not listed in this subsection | No closed season | 1 | 1",
+          "note": "Milk snake is Pennsylvania native and is not one of the specifically-tabled species in Chapter 79, so it falls under the catch-all \"native species not listed\" line: a daily and possession limit of one. Critically, § 79.4 states a permit is required for continued possession \"regardless of the animal's origin,\" meaning this one-per-species cap is not just a wild-collection bag limit; it appears to bind a purchased or captive-bred milk snake too, since it is still a species native to Pennsylvania.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "conditional",
+          "sourceId": "sc-act177",
+          "cite": "S.C. Code Regs. Ch. 123-150 to -153 (Act 177)",
+          "quote": "eastern milksnakes reproduced in captivity and under 10 inches in total length are also permitted",
+          "note": "South Carolina's 2021 native-reptile law (Act 177) bars sale/possession of native reptiles generally, but carves out captive-bred eastern milksnakes under 10 inches total length as an allowed pet-trade exception. We could not confirm the exact regulation subsection for this size cutoff beyond the Chapter 123-150s series.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only; reptiles are handled under separate Game, Fish and Parks rules, though a free entry permit applies to importing any nondomestic animal.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "conditional",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code § 70-4-403(3)(A)",
+          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Class III wildlife needs no possession permit, and milk snake is nonpoisonous. But it is Tennessee native, and TWRA practice requires anyone holding a native, nonpoisonous Tennessee reptile to keep documentary evidence of the supplier's name, address and acquisition date.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-tpwd-nonindigenous",
+          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+          "note": "Milk snake is not a controlled exotic snake or threatened species under TPWD rules. Several milk snake subspecies are Texas native; wild collection of native nongame wildlife generally requires a Texas hunting license, but a lawfully acquired pet-trade animal needs no TPWD permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "UT": {
+          "status": "conditional",
+          "sourceId": "ut-r657-53-tables",
+          "cite": "Utah DWR reptile/amphibian species tables (R657-53)",
+          "quote": "Western milk snake, Lampropeltis gentilis: Limited possession (2 daily and yearly/4 total, per species)",
+          "note": "Utah's own species table names the state's native milk snake population \"Lampropeltis gentilis\" (a segregate now often split from the broader Lampropeltis triangulum complex commonly called \"milk snake\" in the pet trade) and caps daily/yearly take and total possession at a combined 4. The phrase \"limited possession,\" not just \"bag limit,\" suggests the cap is not purely about wild collection.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "No snake appears on Virginia's special permit table at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Family colubridae, only dispholidus typus",
+          "note": "The only colubrid Washington restricts is the boomslang.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "status": "conditional",
+          "sourceId": "wi-nr-16-12",
+          "cite": "Wis. Admin. Code NR 16.12/16.13",
+          "quote": "A person may take or possess up to 5 individuals... of each species of native amphibian, lizard and snake that are not endangered or threatened.",
+          "note": "Milk snake is Wisconsin native. Wild possession/take is capped at 5 individuals under NR 16.12. More notably, our research found that \"the purchase of native amphibians and reptiles is prohibited except as provided in specified exceptions,\" meaning simply buying a milk snake, even a captive-bred one, is restricted in Wisconsin because of its native status, unlike a non-native pet-trade species such as corn snake or ball python.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)(E)",
+          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+          "note": "A milk snake, at a couple feet, is nowhere near the six-foot constrictor threshold.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Chapter 69, § 10(a)(i)",
+          "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/milk-snake-legal-guide/"
+    },
+    "rosy-boa": {
+      "name": "Rosy boa",
+      "scientific": "Lichanura trivirgata",
+      "encyclopediaId": "rosy-boa",
+      "jurisdictions": {
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any species of bird, mammal, fish, crustacea, mollusk, reptile, or amphibian listed as injurious wildlife under the Lacey Act (18 U.S.C. 42) from the U.S. Fish and Wildlife Service;",
+          "note": "Rosy boa is not on the federal injurious wildlife list this rule points to, the same reasoning that clears the much larger boa constrictor here.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-co43-reptile-regs",
+          "cite": "AZGFD Commission Order 43 (Reptile and Amphibian Regulations)",
+          "note": "Worth flagging clearly: rosy boa (listed by AZGFD as Lichanura trivirgata / L. roseofusca) is native to southern Arizona, and Commission Order 43 sets a wild-take and possession bag limit of 4 animals under a valid Arizona hunting license, since AZGFD treats it as a species of conservation concern. That licensing and bag-limit regime governs collecting one from the wild. It is separate from simply owning a captive-bred, pet-trade rosy boa, which is not on Arizona's restricted live wildlife list (R12-4-406, aimed at crocodilians, elapids and a handful of named dangerous colubrids) and needs no permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671",
+          "note": "Not on California's restricted species list, which names giant pythons and anacondas among constrictors, not small native boas. Worth flagging clearly, though: California's own native-reptile regulations (Title 14 CCR §§ 5.60 and 43) governing wild take and commercial captive propagation of native reptiles do not use the name \"Lichanura trivirgata\" at all. They instead name \"Lichanura orcutti\" (called \"Northern three-lined boa\" in the take-limit table), reflecting a genuine taxonomic split: genetic work in the early 2000s divided the rosy boa complex into two species, with California's own wild population now generally recognized as L. orcutti and L. trivirgata proper restricted to the southern end of the range (extreme southern CA/Baja/Sonora). Under § 5.60 a Californian may take up to 2 wild L. orcutti under a sportfishing license; under § 43 a native reptile propagation permit is required to commercially breed or sell them. None of this touches ordinary ownership of a captive-bred, pet-trade rosy boa (of either taxon), which remains unrestricted since it is not on § 671. The upshot: California treats its own wild boa population as a regulated native-take resource under a different scientific name than the common \"rosy boa\" pet-trade animal is usually sold under, which is exactly the kind of distinction a keeper could easily miss.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-w11",
+          "quote": "All non-native tropical and subtropical species of snakes in the families: Boidae (giant snakes)",
+          "note": "Colorado's W-11 list clears the family Boidae as a category, the same basis boa constrictor is legal here. Rosy boa falls within it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-40a",
+          "cite": "§ 26-40a",
+          "quote": "The felidae... the canidae... the ursidae... and the hominidae",
+          "note": "The potentially dangerous animal list is entirely mammalian, with no length or family test for constrictors at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "DC applies no length or family test to constrictors.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "unclear",
+          "sourceId": "de-3900",
+          "note": "Delaware's banned list names pythons and anacondas but not Boidae generally; since the anaconda is itself a boid, whether the family is meant to be caught more broadly is not resolvable from the text as written. This is the same unresolved ambiguity that leaves boa constrictor unclear in Delaware, and nothing in the list specifically distinguishes a small boa from a large one.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Rosy boa is not Florida native.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii bans the entire snake suborder by name, size and family irrelevant.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(e)",
+          "quote": "A member of the superfamily henophidia, which are limited to reticulated pythons, anacondas, and African rock pythons.",
+          "note": "Rosy boa is a different genus entirely from all three named species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "§ 010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-herps-act",
+          "cite": "17 Ill. Adm. Code 885 (Herptiles-Herps Act)",
+          "quote": "Boidae family snakes such as boas, pythons, and anacondas are exempt from the permit process, associated annual fee, and liability insurance coverage.",
+          "note": "Illinois exempts the whole family Boidae from its reptile permit system outright, a cleaner result than the native-species possession cap that applies to corn snake and milk snake under the same Act.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)(3)",
+          "quote": "all non-native, venomous snakes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "note": "Kentucky's restricted snake families are venomous ones. Boidae as a family is not reached at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.c.i",
+          "note": "Louisiana's restricted list names Boa constrictor individually by binomial, not the family Boidae as a whole. We found no indication Lichanura is separately named on the broader restricted/prohibited nonnative species list, but we did not review that full list species-by-species, so this is a moderately, not fully, confident finding.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "quote": "All species of boas and pythons (family Boidae)",
+          "note": "Massachusetts clears the whole family Boidae by name.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-10-621",
+          "note": "Only Hydrophidae, Elapidae, Viperidae and Crotalidae are barred.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "conditional",
+          "sourceId": "mn-97a-401",
+          "cite": "Minn. Stat. § 97A.401, subd. 8",
+          "quote": "A snake, lizard, or salamander that is obtained from a permitted breeder or that was possessed before August 1, 2021, may be possessed as a pet.",
+          "note": "Minnesota's breeder-sourcing requirement applies to snakes generally, rosy boa included.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-578-023",
+          "cite": "§ 578.023(1)",
+          "quote": "any deadly or dangerous reptile over eight feet long... unless he or she has registered such animals with the local law enforcement agency",
+          "note": "Missouri's dangerous-reptile registration duty is an eight-foot length test. A rosy boa, topping out around 2-3 feet, never comes close to it, unlike a large boa constrictor which can.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(d)(i)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: (i) Boidae (boas);",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "note": "North Carolina's only statewide exotic animal statute covers venomous reptiles. Everything else is left to county ordinance under § 153A-131.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or current administrative rules.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-163-nac-4-008",
+          "cite": "163 NAC ch. 4, § 008",
+          "note": "Nebraska's captive wildlife rule exempts common non-dangerous exotic reptiles, the same framework that clears corn snake. Rosy boa is not Nebraska native.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-5",
+          "cite": "N.J.A.C. 7:25-4.4/4.5",
+          "quote": "Boa constrictor - Constrictor constrictor",
+          "note": "New Jersey's exempted reptile list names Boa constrictor by exact genus and species, not the family Boidae generally. Rosy boa (genus Lichanura) is a different genus and is not covered by that specific exemption, so a permit is required under 7:25-4.5.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "note": "New York's restricted list names venomous species plus three specific large pythons. Boidae is not named as a family, confirmed directly from the boa constrictor entry for this same source.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NYC": {
+          "status": "banned",
+          "sourceId": "nyc-161-01",
+          "quote": "any member, or hybrid offspring of the family Boidae, including ... the common or green anaconda and yellow anaconda",
+          "note": "Worth flagging clearly: New York City's health code bans the entire family Boidae by name, not just the large species it lists as examples. A rosy boa is a boid. Despite maxing out around 2-3 feet, well short of anything resembling a public-safety-scale constrictor, it reads as banned in NYC on the same \"any member of the family\" language that catches the green anaconda. This is a real instance of a blanket family-level ban sweeping in a small, harmless species, exactly the kind of non-obvious result worth calling out.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Ohio's restricted constrictors are eight named giant pythons/anacondas twelve feet or longer. A rosy boa at 2-3 feet is not remotely close, and is not one of the named species regardless.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "note": "Rosy boa is not indigenous to Oklahoma, so it clears under this exemption.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OR": {
+          "status": "legal",
+          "sourceId": "or-609-305",
+          "cite": "ORS § 609.305",
+          "note": "The only reptiles in Oregon's closed dangerous-animal definition are crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "unclear",
+          "sourceId": "pa-exotic-wildlife-permit",
+          "note": "Rosy boa is not Pennsylvania native, so the Fish and Boat Commission's native-species chapter (58 Pa. Code Ch. 79) does not apply. The Game Commission's Exotic Wildlife Possession Permit framework would be the relevant regime instead, and we could not confirm whether small non-venomous boids are exempted from it. Left unclear rather than guessed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(A)",
+          "quote": "All species of boas and pythons (family Boidae), may be kept without an exotic animal possession permit except those species that are endangered, and except the Emerald Tree Boa (Corallus caninus), Green Tree Python (Chondropython spp.), African Rock Python (Python sebae), Reticulated Python (Python reticulatus) and all species of Anaconda (Eunectes spp.).",
+          "note": "Rosy boa is not one of the five named exceptions and is not a listed endangered species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "note": "South Carolina exempts reptiles as a class from the import permit. Rosy boa is not South Carolina native, so Act 177's native-species regime (which does reach corn snake and milk snake here) does not apply to it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "Tenn. Code § 70-4-403(3)(A)",
+          "quote": "Nonpoisonous reptiles and amphibians except caimans and gavials",
+          "note": "Class III wildlife needs no possession permit. Rosy boa is not Tennessee native, so the native-sourcing documentation practice that applies to corn snake and milk snake here does not apply.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-tpwd-nonindigenous",
+          "cite": "TPWD Nonindigenous/Controlled Exotic Snake Permit rules",
+          "note": "Rosy boa is not on TPWD's controlled exotic snake list (aimed at large pythons and the green anaconda) and is not Texas native.",
+          "verifiedOn": "2026-08-27"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3",
+          "cite": "Utah Admin. Code R657-3",
+          "note": "Rosy boa does not appear on Utah's controlled/prohibited reptile tables and is not established as a Utah native species. Under R657-3's noncontrolled-species default, no certificate of registration is required.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "No snake appears on Virginia's special permit table at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010",
+          "note": "Washington's reptile definition reaches crocodilians and venomous snakes. Constrictors are absent at any length or family.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)(E)",
+          "quote": "Constrictor snakes greater than six feet, and venomous snakes;",
+          "note": "Rosy boa, at 2-3 feet, is well short of West Virginia's six-foot constrictor threshold, the same clause that leaves a full-size boa constrictor unclear here because six feet is a close call for that species. There's no such ambiguity for a rosy boa.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/rosy-boa-legal-guide/"
+    },
+    "flying-squirrel": {
+      "name": "Flying Squirrel",
+      "scientific": "Glaucomys volans",
+      "encyclopediaId": "flying-squirrel",
+      "jurisdictions": {
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(12)(a)(10)",
+          "quote": "Southern Flying Squirrel (Glaucomys volans)",
+          "note": "Named on Massachusetts's exemption list; may be kept without a MassWildlife permit. The one squirrel species on the list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.4(a)(2)(viii)",
+          "quote": "Flying Squirrel – Glaucompys spp.",
+          "note": "Confirmed directly from the current NJDEP exempt-species PDF (the source document itself misspells the genus 'Glaucompys'). Exempt from permit alongside red squirrel, chipmunk, hamster, gerbil and guinea pig.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403",
+          "note": "Squirrels and chipmunks are named as Class III wildlife, which needs no TWRA possession permit. The animal must be legally sourced (i.e. not taken from the wild) for the no-permit status to apply.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-71-001",
+          "cite": "Parks & Wildlife Code § 71.001",
+          "quote": "\"Fur-bearing animal\" means wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria.",
+          "note": "The closed statutory definition of fur-bearing animal (the category Texas otherwise regulates possession of) does not include squirrels or flying squirrels, and flying squirrels are not on the Ch. 822 dangerous-wild-animal list either.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "permit",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6(a)(2)",
+          "quote": "A permit is required under this rule for the following Class I wild animals: (1) Rabbit (Sylvilagus floridanus). (2) Squirrel (Sciurus carolinensis, Sciurus niger, and Glaucomys volans).",
+          "note": "Glaucomys volans is named explicitly as a Class I wild animal requiring a permit; whether this permit tier is issued for personal/pet purposes specifically was not separately confirmed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "Ch. 68A-6, F.A.C. (Class III wildlife)",
+          "note": "Flying squirrels are not dangerous/large enough for Class I or II, so they default to Class III, which requires a free license (a 'Personal Pet' questionnaire suffices). FWC requires the animal's lineage trace to a lawfully captive-bred, USDA-licensed source; a wild-caught animal, even one hand-raised from birth, does not qualify.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "permit",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "391-4-8-.05",
+          "note": "Confirmed directly from the current DNR rule text. Order Rodentia requires a license except for a short list of domesticated genera (Cavia, Chinchilla, Gerbillus, Meriones, Mesocricetus); flying squirrel is not among the exceptions. Species reached by this section 'shall only be licensed for scientific, educational, or public exhibition purposes' — no personal-pet permit path exists.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "permit",
+          "sourceId": "nc-113-272-5",
+          "cite": "G.S. § 113-272.5",
+          "quote": "the wild animal or wild bird was not acquired unlawfully or merely as a pet",
+          "note": "North Carolina's captivity license covers native wildlife (including the flying squirrel) for 'scientific, educational, exhibition, or other purposes,' but the statute expressly disqualifies a license sought merely for pet-keeping.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "banned",
+          "sourceId": "ny-11-0512",
+          "cite": "ECL § 11-0512; § 11-0515(1), 6 NYCRR Part 175",
+          "note": "ECL § 11-0512 bars knowingly possessing, harboring or importing 'any wild animal for use as a pet.' DEC's own guidance names bats, large cats, owls, skunks, sugar gliders, flying squirrels and wolves as requiring the special license under § 11-0515(1)/6 NYCRR Part 175, which is issued for education, exhibition, propagation or rehabilitation, not personal pet-keeping.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "banned",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.05, Table 800.2",
+          "quote": "Squirrel, Southern Flying   Glaucomys volans",
+          "note": "Requires Permittee Category 5, the same exhibitor-only category New Hampshire uses for the box turtle. There is no category 1 for an individual, so a private keeper cannot be permitted for one.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17, Appendix A",
+          "quote": "Southern Flying Squirrel (Glaucomys volans)",
+          "note": "Listed among Rhode Island's native wild animals that cannot be kept without institutional status, the same treatment this site's box-turtle research documents for other Rhode Island natives. Not a pet species here.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WI": {
+          "status": "permit",
+          "sourceId": "wi-nr-10-02",
+          "cite": "Wis. Admin. Code NR 10.02",
+          "note": "Flying squirrels are a protected wild animal; no person may take, transport, or possess one except as authorized by the DNR, though 'proof of source' allows possessing one legally killed, taken, or obtained in another state or province.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "permit",
+          "sourceId": "il-520-5",
+          "cite": "520 ILCS 5 (Wildlife Code)",
+          "note": "Illinois is home to four native tree-squirrel species, all classed as protected wildlife; the flying squirrel is one of them and cannot be held in captivity without an IDNR permit. Whether IDNR treats non-native-sourced, captive-bred flying squirrels differently was not confirmed in the text reviewed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "permit",
+          "sourceId": "oh-1531",
+          "cite": "R.C. Chapter 1531 (game quadrupeds)",
+          "note": "Ohio classifies the flying squirrel as a game quadruped; no person may take, possess, buy, sell, or transport native wildlife without a permit from the Division of Wildlife. The permits confirmed in the sources reviewed were rehabilitation-oriented; a personal-pet pathway was not confirmed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "permit",
+          "sourceId": "md-10-901",
+          "cite": "Nat. Res. § 10-901 et seq.",
+          "note": "Maryland strictly regulates possession of wildlife native to the state; multiple sources confirm the Department does not issue personal pet-possession permits for squirrels specifically, only rehabilitation (time-limited) or other institutional permits.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-08-27"
+        },
+        "AL": {
+          "status": "banned",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "quote": "Any of the following from any area outside the state of Alabama; ...species of raccoon, species of skunk, wild rodent, or strain of wild turkey",
+          "note": "The wild-rodent import ban that this site's prairie-dog research already documents names squirrels specifically in the underlying regulation text. A flying squirrel brought into Alabama from outside the state is a wild rodent under this rule.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "AZ": {
+          "status": "permit",
+          "sourceId": "az-r12-4-406",
+          "quote": "The family Sciuridae. Common names include: chipmunks, marmots, prairie dogs, squirrels, and woodchucks.",
+          "note": "Arizona's restricted-live-wildlife rule reaches the whole squirrel family by name (the same entry this site's prairie-dog research already documents), which covers the flying squirrel.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "banned",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(2)(J)(1)",
+          "note": "Order Rodentia is restricted as a whole ('All species (D)') except for a specific list of domesticated species (hamsters, rats, mice, guinea pigs, chinchillas); flying squirrels are not among the exceptions. This section number is carried over from this site's prairie-dog research, which cites the same Sciuridae subsection for a different genus in the same family; the exact subsection should be re-confirmed against the primary text before publishing.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-prohibited",
+          "cite": "§ 4-71-6, List of Prohibited Animals",
+          "quote": "FAMILY Sciuridae Sciuridae (all in family, except the following two species for exhibition in government zoos only: Callosciurus prevosti (squirrel, prevost's) and Sciurus variegatoides (squirrel, variegated) and except all species in the genus Marmota for research in government universities only)",
+          "note": "Confirmed directly from the HDOA prohibited-animal-list PDF. The whole squirrel family is prohibited; the only carve-outs are two unrelated tree squirrels (zoo exhibition only) and marmots (university research only). The flying squirrel is not one of the named exceptions, so no legal pathway exists at all, unlike states where a science/exhibition permit at least exists.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VT": {
+          "status": "permit",
+          "sourceId": "vt-reg-881",
+          "cite": "10 V.S.A. § 4709, Reg. 881",
+          "quote": "the Commissioner shall not issue a permit for the keeping or possession of any wild animal in captivity",
+          "note": "Vermont bars bringing in, transporting, or possessing any live wild bird or animal without authorization, and permits are described as rarely issued outside science, education, or rehabilitation purposes.",
+          "permitFor": "commercial-exhibition-research",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/flying-squirrel-legal-guide/"
+    },
+    "ackie-monitor": {
+      "name": "Ackie Monitor",
+      "scientific": "Varanus acanthurus",
+      "encyclopediaId": "ackie-monitor",
+      "jurisdictions": {
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "Varanidae is absent from section 671 entirely, so monitors of any size are unrestricted in California, the same finding already documented for the savannah monitor.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e)",
+          "quote": "Asiatic (water) Monitor (Varanus salvator); Nile Monitor (Varanus niloticus); White Throat Monitor (Varanus albigularis); Black Throat Monitor (Varanus albigularis ionides); Crocodile Monitor (Varanus salvadori); Komodo Dragon (Varanus komodoensis)",
+          "note": "New York's closed dangerous-wild-animal definition names six specific large monitors. Varanus acanthurus is absent.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01(10)(c)",
+          "quote": "Spiny-tailed or Ridge-tailed Monitor (Varanus acanthurus)",
+          "note": "The only monitor lizard on Massachusetts's exemption list; it may be kept without a permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "391-4-8-.05",
+          "note": "The only monitor named on Georgia's licensed wild-animal list is Varanus niloticus (Nile monitor), restricted to scientific, educational or exhibition purposes. Varanus acanthurus is absent and so unrestricted.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101",
+          "note": "Monitor lizards do not appear on Texas's closed dangerous-wild-animal list, which is limited to named big cats, bears, canids and primates.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2.a",
+          "note": "Louisiana's prohibited nonnative-reptile list names the savannah monitor and Nile monitor specifically; Varanus acanthurus does not appear on either the prohibited or the restricted list. Louisiana is unusual in banning two monitors by name, but both are large species and the dwarf Ackie is not among them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+          "quote": "Monitor Lizards (Genus Varanus: V. acanthurus, V. albigularis, V. glauerti, V. jobiensis, V. kingorum, V. macraei, V. pilbarensis, V. prasinus, V. salvator, V. timorensis)",
+          "note": "Confirmed directly from the current AGFC PDF (revised 11/1/22). V. acanthurus is named outright on the unrestricted list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "No monitor lizard, Varanus, or Varanidae entry appears anywhere in the nonnative-animal permit table.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(m)",
+          "quote": "Komodo dragon (Varanus komodoensis);",
+          "note": "The only monitor on the inherently-dangerous list is the Komodo dragon.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)(a)(9)(a)",
+          "quote": "A member of the family varanidae, which are limited to water monitors and crocodile monitors.",
+          "note": "Varanus acanthurus is neither.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(e)(xxiv)",
+          "quote": "(xxiv) Varanidae (monitor lizard);",
+          "note": "The whole family is cleared as unregulated wildlife rather than restricted.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Family varanidae, only water monitors and crocodile monitors",
+          "note": "Washington restricts exactly two monitors, both reaching seven feet or more. The Ackie is not one of them.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "quote": "(14) Komodo dragons",
+          "note": "Varanus komodoensis is named individually rather than the family being listed, so other monitors are outside the law.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)",
+          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I, and well under the eight-foot dangerous-reptile registration threshold of § 578.023.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Only non-native venomous snakes are named among reptiles.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "15. reptiles",
+          "verifiedOn": "2026-08-27"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia (crocodile, alligator, snake, turtle, or lizard)",
+          "verifiedOn": "2026-08-27"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-220-2-26",
+          "cite": "§ (1)",
+          "note": "Only tegus of the genus Salvator are named among the lizards.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-8(a)",
+          "quote": "(4) Venomous reptiles. (5) Crocodilians that are at least five (5) feet long.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in the chapter or current administrative rules.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "§ 10(a)(i)",
+          "quote": "(i) Amphibians and reptiles not listed in Section 8 or 9 of this regulation.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "The inherently-dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3(c)",
+          "quote": "monotypic species and subspecies of reptiles and amphibians not indigenous to Oklahoma are exempt from import and export requirements and commercial and noncommercial wildlife breeder's license",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles, and does not ban even those. Everything else is a county question under § 153A-131.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "The possession-permit list covers mammals only; reptiles fall under Game, Fish and Parks rules instead.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "banned",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "No lizard fits any of the seven permitted categories, the same finding already documented for the savannah monitor.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-4-71-6-5",
+          "cite": "§ 4-71-6.5, Restricted Animal List Part A",
+          "quote": "Varanus acanthurus   monitor, spiny-tailed",
+          "note": "Confirmed directly from the HDOA restricted-animal-list (Part A) PDF. Part A is headed FOR RESEARCH AND EXHIBITION; a university or licensed exhibitor can hold one by permit, but no pet permit path exists, the same treatment as the savannah and Nile monitor.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "permit",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(c)(1)",
+          "quote": "Possession of the Gila Monster, Beaded Lizard (Heloderatidae), and all Monitors (Varanidae) requires an exotic animal possession permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.4, 4.5",
+          "note": "No Varanus or Varanidae entry appears on the exempt-species list; falls to the § 4.5 catch-all permit provision.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-08-27"
+        },
+        "ME": {
+          "status": "permit",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List",
+          "note": "Maine's clean list names only Varanus exanthematicus (savannah monitor) among monitors (documented in this site's savannah-monitor research). Varanus acanthurus is absent, so it falls back to Maine's general importation/possession permit requirement rather than the no-permit list. Whether an individual permit is actually issued for a pet Ackie was not separately confirmed.",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/ackie-monitor-legal-guide/"
+    },
+    "garter-snake": {
+      "name": "Garter Snake",
+      "scientific": "Thamnophis sirtalis",
+      "encyclopediaId": "garter-snake",
+      "jurisdictions": {
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "Alaska's clean list turns entirely on venom; a garter snake clears it the same way the hognose does.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92; ADCNR hunting & fishing regulations",
+          "note": "Alabama lets residents keep native, non-protected wildlife such as the garter snake within possession limits set by hunting and fishing regulations. A scientific collection permit is only required for species specifically protected as nongame.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AR": {
+          "status": "permit",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+          "permitFor": "personal",
+          "note": "Arkansas's unrestricted list clears several New World colubrid genera by name (Lampropeltis, Pantherophis, Nerodia, and others), but every one of those entries excepts species native to Arkansas, and Thamnophis never appears on the list at all. As Arkansas's own native species, a garter snake isn't covered by the pet-trade clearance and instead needs the state's Permitted Captive Wildlife Species List.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-license-take",
+          "cite": "Ariz. Admin. Code R12-4-406, R12-4-407",
+          "note": "Arizona bars an open season on a few rare native gartersnakes, the Mexican gartersnake and narrow-headed gartersnake, but the common garter snake isn't among them. Taking or handling one requires a valid AZ hunting/fishing license; simple possession of a lawfully-acquired one isn't separately restricted.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-5-60",
+          "cite": "Cal. Code Regs. tit. 14, § 5.60(b)(44), (f)(10)",
+          "quote": "No common gartersnakes (Thamnophis sirtalis) may be taken in San Mateo, Los Angeles, Orange, Riverside, San Diego, and Ventura counties.",
+          "note": "Owning a garter snake is unrestricted; it is not on the Fish & Game Code § 671 restricted species list. Wild collection is a separate question: it requires a sportfishing license, carries a 2-per-day bag/possession limit, and is closed entirely in six Southern California counties where protected look-alike subspecies (including the endangered San Francisco garter snake) occur.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-unregulated-wildlife",
+          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+          "note": "Colorado's 'unregulated wildlife' category explicitly includes pet reptiles, and no license is required for private possession. Wild collection of Colorado's own native garter snakes falls under Chapter W-7 (Herpetofauna) instead.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "Regs. Conn. State Agencies § 26-55-6",
+          "note": "Falls outside all four of Connecticut's regulated wild-animal categories: Category One is four dangerous mammal families, Category Two is dangerous reptiles plus the monk parakeet, Category Three is native birds and amphibians, and Category Four is state-listed endangered/threatened/special-concern species. A common garter snake is on none of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "A garter snake fits this exemption from DC's general wild-animal ban squarely.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7; Del. Code tit. 3, c. 72",
+          "note": "Delaware's native-wildlife rules forbid keeping a Delaware-native reptile as a pet, and DNREC's own guidance is explicit that native wildlife isn't for private ownership. A narrow carve-out exists for a captive-bred, aberrantly-colored native snake held under permit, but an ordinary wild-type garter snake doesn't qualify.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not a reptile of concern; that list covers large invasive constrictors, monitors, and tegus. Florida's captive wildlife rule allows nonvenomous, unprotected reptiles to be kept as personal pets without a license.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "banned",
+          "sourceId": "ga-27-1-28",
+          "cite": "O.C.G.A. § 27-1-28; § 27-5-4",
+          "quote": "poisonous snakes",
+          "note": "Georgia bars possession of nongame wildlife outside a short exempted list that names venomous snakes but not harmless native colubrids, so a garter snake doesn't qualify. Native-reptile permits under § 27-5-4 are issued only for scientific, educational, or exhibition purposes, not casual pet-keeping, and Georgia DNR's own guidance says this holds 'regardless of the origin or morphology' of the animal.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-conditional",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii bans the entire snake suborder outright, with no exception for harmless mainland species. There is no permit path for a pet garter snake in Hawaii.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)",
+          "quote": "\"Dangerous wild animal\" means any of the following:",
+          "note": "The squamate half of the definition is exhaustively enumerated: monitors, helodermatids, the venomous snake families, and a short list of giant constrictors. A garter snake is none of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "Idaho's test is venom, not species or origin, so a garter snake clears the same way a hognose does.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 585/0.1",
+          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, though, so a municipality can still restrict snake ownership on its own.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6 through 9-11-8",
+          "quote": "Wolves that are purebred. Bears (all species). Wild cats (all species)... Venomous reptiles. Crocodilians that are at least five (5) feet long.",
+          "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes. Wild collection of Indiana's own native reptiles and amphibians is capped separately at two per day and four per year per species, with a possession limit of four.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "quote": "\"Dangerous regulated animal\" means a live or slaughtered parts of: (1) Lions, tigers, leopards, jaguars, cheetahs and mountain lions, or any hybrid thereof; (2) bears or any hybrid thereof; and (3) all non-native, venomous snakes.",
+          "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "note": "Kentucky's inherently-dangerous-wildlife list reaches Colubridae only when the snake is venomous. A garter snake isn't.",
+          "verifiedOn": "2026-08-27"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Louisiana's prohibited nonnative reptile list is built around crocodilians, tegus, monitors, the green iguana, and a short list of large or venomous snakes; ordinary colubrids like the garter snake aren't on it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321cmr9-01",
+          "cite": "321 CMR 9.01, Table 10(b)(4)",
+          "quote": "Garter and Ribbon Snakes (Thamnophis spp.)",
+          "note": "Named directly on the license-exemption list, so it may be kept without a permit under M.G.L. c. 131 § 23. Massachusetts works as an allow-list: only animals actually named on it are exempt, and this one is.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "permit",
+          "sourceId": "md-native-herp",
+          "cite": "COMAR 08.03.09 (native reptile and amphibian regulations, adopted 1993)",
+          "permitFor": "personal",
+          "note": "Maryland requires a permit to possess, breed, sell, or trade a species of reptile or amphibian native to the state, and the garter snake is a Maryland native.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ME": {
+          "status": "permit",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
+          "permitFor": "personal",
+          "note": "Maine's unrestricted-species list runs through every North American colubrid genus commonly kept as a pet, kingsnakes, ratsnakes, hognose, watersnakes, and more, and Thamnophis is conspicuously absent from every entry. A Maine garter snake needs the state's separate captivity permit rather than falling under this pet-trade clearance.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155",
+          "quote": "all members of the family Felidae except the domestic cat",
+          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "permit",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "those species of mammals... and nonvenomous reptiles and amphibians native to Missouri",
+          "permitFor": "personal",
+          "note": "The garter snake is native to Missouri and nonvenomous, which places it in Class I, the tier that needs a simple possession permit rather than being unregulated.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "quote": "Family Felidae: Genus Leo or Panthera or Neofelis (lions, tigers, jaguars, and leopards) - all species; Acinonyx iubatus (cheetah); Felis concolor (cougar) - all subspecies;",
+          "note": "Mississippi's inherently-dangerous list is entirely mammalian; no reptile is restricted at any size.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(d)(v)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+          "note": "Colubridae is cleared as nonvenomous, which covers a garter snake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417; § 153A-131",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else, including a garter snake, is left to county ordinance.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in North Dakota's captive wildlife chapter.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-captive-wildlife",
+          "cite": "163 Neb. Admin. Code, ch. 4, § 008",
+          "note": "Nebraska allows residents to keep native, non-protected wildlife such as the garter snake within possession limits; the captivity ban in this rule targets wolves, skunks, and the cat and bear families, not common native reptiles.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "New Hampshire's noncontrolled reptile clearance turns on venom, not origin, so a garter snake is unaffected.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.8(a)",
+          "note": "Not a potentially dangerous species; that list's only snakes are the venomous families (Elapidae, Viperidae, Crotalidae) plus boomslang, twig snakes, African kraits, and anaconda. A lawfully-acquired garter snake can be kept as a pet. Separately, New Jersey's own exotic-species guidance states plainly, 'It is illegal to take any animal from the wild,' so a wild-caught New Jersey garter snake is off the table even though owning one isn't.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "New Mexico's exotic wildlife rule sorts species into Groups I through IV by danger level; the garter snake isn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual permit requirements weren't confirmed in this research.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-unprotected-reptiles",
+          "cite": "NAC 503.090",
+          "note": "Any reptile not classified as protected, sensitive, threatened, or endangered is unprotected in Nevada, and a common garter snake is not on any of those lists.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "permit",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "6 NYCRR § 3.3",
+          "quote": "native snakes shall mean all life stages, including eggs, of the following species: ... common garter snake ... Open season: None.",
+          "permitFor": "personal",
+          "note": "New York's 2006 native-herp law classifies the common garter snake as protected native wildlife with no open season, and DEC's own published guidance says the law 'does not differentiate between wild-caught and captive-bred animals.' DEC issues a possession permit for keeping a limited number of common native herp species, but that permit doesn't allow buying, selling, or breeding, so even a pet-store garter snake sits in a different legal category here than almost anywhere else.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Ohio's restricted-snake list is three venomous families plus two named rear-fanged species plus large constrictors twelve feet and up. A garter snake is none of them.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3",
+          "note": "Non-indigenous reptiles are exempt from Oklahoma's import, breeder's-license, and permit requirements outright. Oklahoma's own native garter snake population instead falls under standard Wildlife Conservation hunting-license rules for wild take.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(C)",
+          "quote": "Milk, Pine, Corn, Rat, Garter snakes -- Colubridae -- All nonnative species except Boiga irregularis, Lampropeltis getula, L. zonata, and Pituophis catenifer",
+          "note": "Oregon's noncontrolled clearance for this group of colubrids is written for nonnative individuals. No equivalent express clearance was located for a garter snake that is an Oregon native, which instead appears to fall under the state's general nongame-wildlife holding-permit rule once three or more are kept.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code Ch. 79",
+          "note": "Pennsylvania Fish and Boat Commission rules reach only PA-native species and only regulate taking them from the wild, which requires a fishing license. Keeping a captive-bred or pet-store garter snake isn't separately licensed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "banned",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)",
+          "note": "Rhode Island's exempt Colubridae list names sixteen groups of pet-trade snakes by genus, and Thamnophis is not one of them. The regulation states directly that possession of native snakes is restricted to institutions, meaning typical pet ownership of a Rhode Island garter snake isn't permitted.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...15. reptiles 16. amphibians.",
+          "note": "South Carolina exempts reptiles as a class from the import permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only; reptiles fall under separate Game, Fish & Parks rules rather than this permit scheme.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "permit",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
+          "permitFor": "personal",
+          "note": "Tennessee's Class II covers native wildlife and requires a Wildlife Possession Permit with microchip or tattoo identification within 30 days. A garter snake, being Tennessee-native, falls in Class II rather than the unregistered Class III that non-native pet reptiles occupy.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "Texas's dangerous wild animal statute (Health & Safety Code ch. 822) is a closed list of big carnivores and doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-5",
+          "note": "Non-controlled native reptiles, a category that includes garter snakes, may be possessed without a certificate of registration up to a threshold (three animals for most such species); holding more requires a certificate of registration from the Wildlife Board.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a garter snake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-10-app-18",
+          "cite": "10 V.S.A. App. § 18",
+          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the garter snake appears on that list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Family colubridae, only dispholidus typus",
+          "note": "The only colubrid Washington restricts is the boomslang.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WI": {
+          "status": "conditional",
+          "sourceId": "wi-nr16-12",
+          "cite": "Wis. Admin. Code NR 16.12-16.15",
+          "note": "Wisconsin lets residents possess up to five individuals of each non-protected native species, garter snakes included, without a permit, but native reptiles generally may not be bought or sold within the state, so a Wisconsin-kept pet has to come from your own lawful collecting rather than a breeder or shop.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)",
+          "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Chapter 69, § 10(a)(i)",
+          "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+          "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/garter-snake-legal-guide/"
+    },
+    "kingsnake": {
+      "name": "California Kingsnake",
+      "scientific": "Lampropeltis californiae",
+      "encyclopediaId": "kingsnake",
+      "jurisdictions": {
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "Alaska's clean list turns entirely on venom.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-native-nongame",
+          "cite": "Ala. Admin. Code r. 220-2-.92",
+          "note": "Not native to Alabama, so it's an ordinary nonvenomous pet reptile rather than wildlife needing a possession-limit accounting; no restriction was found.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+          "quote": "New World Colubrid Snakes (in part) (Genera: Bogertophis, Drymarchon, Drymobius, Lampropeltis, Pantherophis, Phrynonax, Pituophis, Pseudelaphe, Senticolis, Spilotes) except species native to Arkansas",
+          "note": "Named on the unrestricted list by genus; the native-species exception in that entry doesn't reach the California kingsnake since it isn't an Arkansas species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-license-take",
+          "cite": "Ariz. Admin. Code R12-4-406, R12-4-407",
+          "note": "The California kingsnake's range reaches into parts of Arizona, so the same hunting/fishing-license framework that governs wild take of native reptiles applies there, but simple possession of a lawfully-acquired one isn't restricted, and it isn't on Arizona's no-open-season list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-5-60",
+          "cite": "Cal. Code Regs. tit. 14, § 5.60(b)(41)",
+          "note": "Not on the Fish & Game Code § 671 restricted species list, so owning one is unrestricted. Wild collection of a California kingsnake specifically requires a sportfishing license and is capped at a 4-per-day bag/possession limit; unlike the common garter snake, there are no county-level closures for this species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-unregulated-wildlife",
+          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+          "note": "Colorado clears the genus Lampropeltis by name except for the western milksnake and the speckled kingsnake, neither of which is the California kingsnake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "Regs. Conn. State Agencies § 26-55-6",
+          "note": "Outside all four of Connecticut's wild-animal categories, which reach only specific dangerous mammals, dangerous reptiles, native birds/amphibians, and state-listed species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "A California kingsnake fits this exemption from DC's general wild-animal ban squarely.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-nonnative-reptile-permit",
+          "cite": "Del. Code tit. 3, c. 72",
+          "permitFor": "personal",
+          "note": "A live reptile not native to or generally found in Delaware needs a permit from the Department of Agriculture before it may be brought into the state, possessed, sold, or exhibited. The California kingsnake, a Pacific coast species, is exotic to Delaware.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Not a reptile of concern; that category is built around large invasive constrictors, monitors, and tegus. Ordinary nonvenomous colubrids like the California kingsnake need no license as a personal pet.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+          "note": "Georgia's wild-animal license rule doesn't name any snake at all, and the California kingsnake isn't Georgia native wildlife, so it falls outside both the wild-animal license scheme and the native-species possession restriction that reaches Georgia's own native kingsnake population.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "banned",
+          "sourceId": "hi-conditional",
+          "cite": "§ 4-71-6",
+          "quote": "Serpentes (all species)",
+          "note": "Hawaii's snake ban reaches every species in the suborder, kingsnakes included, with no pet-keeping permit available.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)",
+          "note": "The squamate half of Iowa's 'dangerous wild animal' definition is exhaustively enumerated (monitors, helodermatids, venomous families, a short list of giant constrictors); a kingsnake is none of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "Idaho's test is venom, not species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 585/0.1",
+          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and never reaches ordinary colubrids. Illinois is a home-rule state, so a municipality can still restrict snake ownership on its own.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6 through 9-11-8",
+          "note": "Indiana's Wild Animal Possession Permit reaches venomous reptiles and large crocodilians, not ordinary nonvenomous snakes like a kingsnake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "The only reptiles Kansas regulates are non-native venomous snakes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4(2)(t)",
+          "note": "Kentucky's inherently-dangerous-wildlife list reaches Colubridae only when the snake is venomous.",
+          "verifiedOn": "2026-08-27"
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Louisiana's prohibited nonnative reptile list is built around crocodilians, tegus, monitors, the green iguana, and a short list of large or venomous snakes; ordinary colubrids like the kingsnake aren't on it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321cmr9-01",
+          "cite": "321 CMR 9.01, Table 10(b)(4)",
+          "quote": "Kingsnakes and Milk Snakes (Lampropeltis spp.)",
+          "note": "The whole genus is named on the license-exemption list, California kingsnake included.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-not-native",
+          "cite": "Md. Code, Crim. Law § 10-621",
+          "note": "Not a Maryland native, so the state's native-reptile possession permit doesn't apply, and it's absent from the § 10-621 dangerous-animal list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
+          "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
+          "note": "The whole genus is cleared except two named species, neither of which is the California kingsnake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155",
+          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates. No reptile appears in it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Class I, Missouri's permit tier for nonvenomous reptiles, reaches only species native to Missouri. The California kingsnake isn't one, so it falls outside that requirement.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "Mississippi's inherently-dangerous list is entirely mammalian; no reptile is restricted at any size.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(d)(v)",
+          "quote": "all nonnative tropical and subtropical species of nonvenomous snakes not on the controlled or prohibited lists in the families: ...(v) Colubridae (modern snakes);",
+          "note": "Colubridae is cleared as nonvenomous.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417; § 153A-131",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles. Everything else is left to county ordinance.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in North Dakota's captive wildlife chapter.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-captive-wildlife",
+          "cite": "163 Neb. Admin. Code, ch. 4, § 008",
+          "note": "Not endangered or threatened, and not one of the specifically prohibited carnivore families; an ordinary exotic pet reptile in Nebraska.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 804.02(b)(4)",
+          "quote": "Reptiles, exotic, except: a. Alligator (Alligatoridae, spp); b. Crocodile (Crocodylidae, spp); and c. Venomous reptiles, other than the Western Hognose Snake;",
+          "note": "An exotic, nonvenomous reptile like the California kingsnake clears New Hampshire's noncontrolled list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.8(a)",
+          "note": "Absent from the potentially dangerous species table, which limits its snakes to venomous families plus boomslang, twig snakes, African kraits, and anaconda.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; the California kingsnake wasn't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-unprotected-reptiles",
+          "cite": "NAC 503.090",
+          "note": "Nevada's unprotected-reptile category covers most kingsnakes, though the state singles out California kingsnakes lacking a continuous banded/ringed pattern from head to vent as the specific unprotected form, so pattern can matter for certain individuals.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-6nycrr-3-3",
+          "cite": "6 NYCRR § 3.3(a)",
+          "note": "New York's native-snake statute names its own indigenous species by common name, including the eastern milk snake (Lampropeltis triangulum); the California kingsnake is a Pacific coast species and isn't one of them, so it doesn't inherit the native-species possession permit that a New York garter snake needs. No other statute restricts it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Ohio's restricted-snake list is three venomous families plus two named rear-fanged species plus large constrictors twelve feet and up. A kingsnake is none of them.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3",
+          "note": "Non-indigenous reptiles are exempt from Oklahoma's import, breeder's-license, and permit requirements outright, and the California kingsnake isn't indigenous to Oklahoma.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OR": {
+          "status": "conditional",
+          "sourceId": "or-635-056-0060",
+          "cite": "OAR 635-056-0060(D)",
+          "quote": "Individuals of Lampropeltis getula, L. zonata and Pituophis catenifer that are morphologically distinct from native species.",
+          "note": "Oregon's kingsnake clearance, written under the older taxonomy in which the California kingsnake was classified as Lampropeltis getula californiae, only reaches individuals 'morphologically distinct from native species' -- in practice, a recognizable color or pattern morph rather than a wild-type-looking snake. Wild-caught, native-looking kingsnakes and their offspring aren't covered.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-58-79",
+          "cite": "58 Pa. Code Ch. 79",
+          "note": "Fish and Boat Commission possession rules apply only to species native to Pennsylvania. The California kingsnake isn't one, so it isn't reached by that chapter at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(b)(2)(D)(x)",
+          "quote": "Kingsnakes and Milk Snakes",
+          "note": "Named directly on Rhode Island's exempt Colubridae list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "note": "South Carolina exempts reptiles as a class from the import permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only; reptiles fall under separate Game, Fish & Parks rules.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403; Tenn. Comp. R. & Regs. 1660-01-18",
+          "note": "Not native to Tennessee, so a California kingsnake is Class III: a nonpoisonous, non-native reptile that needs no registration.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "Texas's dangerous wild animal statute doesn't reach ordinary snakes. Legal statewide, though some cities restrict snakes by ordinance.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-53",
+          "cite": "Utah Admin. Code R657-53-5",
+          "note": "Falls under Utah's non-controlled reptile framework, the same one that clears the garter snake: up to three may be possessed without a certificate of registration, more with one from the Wildlife Board.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "Virginia's special-permit table works species by species and contains no reptile relevant to a kingsnake.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-10-app-18",
+          "cite": "10 V.S.A. App. § 18",
+          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether the California kingsnake appears on that list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Family colubridae, only dispholidus typus",
+          "note": "The only colubrid Washington restricts is the boomslang.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-import-permit",
+          "cite": "Wis. Stat. § 169.04",
+          "note": "As a non-native species, the California kingsnake sits outside Wisconsin's native-reptile possession cap and can be kept the way corn snakes and ball pythons are, without a DNR license. Bringing one in from out of state calls for a DATCP animal import permit and health paperwork.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)",
+          "note": "The only reptiles West Virginia's dangerous-wild-animal guidance points at are large constrictors, venomous snakes, and crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Chapter 69, § 10(a)(i)",
+          "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/kingsnake-legal-guide/"
+    },
+    "cockatoo": {
+      "name": "Cockatoo",
+      "scientific": "Cacatuidae",
+      "encyclopediaId": "cockatoo",
+      "jurisdictions": {
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Parrot, parakeet, cockatiel, macaw, and other members of the Family Psittacidae   not prohibited by federal or international law",
+          "note": "Cockatoos are on Alaska's clean list, but the 'not prohibited by federal or international law' qualifier matters: several cockatoo species, including the Moluccan and yellow-crested cockatoo, are CITES Appendix I, which bars commercial international trade even though it doesn't touch domestic keeping of an already-captive-bred bird.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AL": {
+          "status": "legal",
+          "sourceId": "al-exotic-birds",
+          "note": "Parrots, cockatiels, conures, and macaws are generally legal in Alabama. Species listed under CITES or the Migratory Bird Treaty Act may need import/export paperwork, but that doesn't reach ordinary possession of a captive-bred bird.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+          "quote": "Cockatoos: Lesser Sulphur-crested or Yellow-crested, Sulphur-crested, Umbrella or White, Salmon-crested or Moluccan, Goffin's (Cacatua sulphurea, C. galerita, C. alba, C. moluccensis, C. goffiniana)",
+          "note": "Five named cockatoo species, including two that are CITES Appendix I (yellow-crested and Moluccan), are on Arkansas's unrestricted list outright, a useful contrast with states like Maine that carve CITES-I birds back out of an otherwise blanket parrot clearance.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AZ": {
+          "status": "legal",
+          "sourceId": "az-exotic-birds",
+          "note": "Most cockatoos are legal pets in Arizona; the state's live-wildlife statute (A.R.S. § 17-306) is aimed at native and dangerous wildlife rather than common cage birds.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(1)(M)",
+          "quote": "Family Psittacidae-Parrots, Parakeets: Myiopsitta monachus (Monk or Quaker parakeet) (D)",
+          "note": "The only parrot California's restricted species list reaches is the monk parakeet. Every cockatoo species is outside section 671.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CO": {
+          "status": "legal",
+          "sourceId": "co-unregulated-wildlife",
+          "cite": "2 CCR 406-11, Ch. 0 (Unregulated Wildlife)",
+          "note": "Colorado's 'unregulated wildlife' category explicitly includes pet birds.",
+          "verifiedOn": "2026-08-27"
+        },
+        "CT": {
+          "status": "legal",
+          "sourceId": "ct-26-55-6",
+          "cite": "Regs. Conn. State Agencies § 26-55-6",
+          "note": "The only psittacine Connecticut regulates under any of its four wild-animal categories is the monk parakeet. General parrots and cockatoos fall outside the regulation entirely.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Captive-bred species of common cage birds, including chickens",
+          "note": "Every cockatoo sold in the US pet trade is captive-bred, so this exemption from DC's general wild-animal ban applies the same way it does for the African grey parrot.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-birds-exempt",
+          "cite": "Del. Code tit. 3, c. 72",
+          "note": "Delaware exempts birds entirely from its exotic-animal permit system; only mammals and non-native reptiles are reached by that Title 3 permit requirement.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "note": "Florida's prohibited/conditional captive wildlife lists are built around reptiles; no bird appears on them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "Ga. Comp. R. & Regs. 391-4-8-.05",
+          "note": "Georgia's wild-animal license bird section names raptors and a handful of native passerines; it does not reach Psittaciformes at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "conditional",
+          "sourceId": "hi-conditional",
+          "cite": "§ 4-71-6.5, List of Conditionally Approved Animals",
+          "quote": "White cockatoos (Umbrella, Moluccan, Sulphur-crested, Little Corella, etc.)",
+          "note": "Cockatoos are named on Hawaii's conditionally approved list, alongside the galah, gang-gang, black cockatoos, and palm cockatoo, so keeping one is possible but requires an import permit, pre-departure quarantine, health certification, and permanent ID before the bird ever lands in the state.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)",
+          "note": "Iowa's dangerous-wild-animal definition is drawn entirely around mammals and reptiles; no bird appears in it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06",
+          "quote": "non-poultry birds",
+          "note": "Idaho's clean-list bird category is drawn by exclusion, not by naming families, so every parrot including cockatoos is a conventional pet.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IL": {
+          "status": "legal",
+          "sourceId": "il-720-48-10",
+          "cite": "720 ILCS 585/0.1",
+          "note": "Illinois's Dangerous Animals Act is a closed list of big cats and doesn't reach birds. Illinois is a home-rule state, so a municipality could still restrict one.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IN": {
+          "status": "legal",
+          "sourceId": "in-312-9-11",
+          "cite": "312 IAC 9-11-6 through 9-11-8",
+          "note": "No bird appears in any of Indiana's three Wild Animal Possession Permit classes.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Kansas regulates six big cats, bears, and non-native venomous snakes; no bird is in the definition.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "Kentucky's permit-exempt list clears parrots, lovebirds, budgerigars, macaws, and parakeets by name, excepting only the monk parakeet.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Louisiana's quadruped regulation reaches mammals only; no bird is listed.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321cmr9-01",
+          "cite": "321 CMR 9.01",
+          "note": "Parrots are on Massachusetts's license-exemption list. This research could not confirm whether Massachusetts carves specific CITES Appendix I or IUCN-Endangered cockatoo species back out the way Maine's list does, so treat that narrower point as unverified even though ordinary cockatoo ownership is clear.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MD": {
+          "status": "legal",
+          "sourceId": "md-not-native",
+          "cite": "Md. Code, Crim. Law § 10-621",
+          "note": "Parrots, macaws, and cockatoos are legal in Maryland; they're outside both the § 10-621 dangerous-animal list and the Migratory Bird Treaty Act, which doesn't reach non-native species.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ME": {
+          "status": "permit",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species list, Psittaciformes",
+          "quote": "All Species in Order Psittaciformes (Parrots) Except for: Myiopsitta monachus; Cyanoliseus patagonus; Enicognathus leptorhynchus; Enicognathus ferrugineus; Family Strigopidae *Except if listed on: IUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR CITES Appendix I",
+          "permitFor": "personal",
+          "note": "Maine clears the whole parrot order but then strips back out anything on CITES Appendix I or the IUCN's Endangered/Critically Endangered tiers. That carve-out catches several of the most commonly kept pet cockatoos: the Moluccan and yellow-crested cockatoos are CITES Appendix I, and the umbrella cockatoo is IUCN Endangered even though it's only CITES Appendix II. Smaller, more secure species like the cockatiel or galah would still clear the list; the larger, more iconic cockatoos generally need Maine's captivity permit instead.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MN": {
+          "status": "legal",
+          "sourceId": "mn-346-155",
+          "cite": "§ 346.155",
+          "note": "Minnesota's regulated-animal statute reaches cats, bears, and non-human primates; no bird is in it.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "quote": "Class I wildlife shall include birds (including ring-necked pheasants and gray partridge) native to the continental United States",
+          "note": "The bird half of Missouri's Class I is limited to species native to the continental United States. No cockatoo is.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "Mississippi's inherently-dangerous list is entirely mammalian.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)",
+          "quote": "The following noncontrolled exotic wildlife may not be released or transplanted in the state but may be possessed or sold as pets in Montana without a permit: ...(xi) Psittacidae (parrots)",
+          "note": "Psittacidae is named outright on Montana's noncontrolled list, cockatoos included.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "note": "No bird provision exists in North Carolina's only statewide exotic-animal statute; it covers venomous reptiles.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No bird prohibition exists in North Dakota's chapter beyond a modest annual license fee for species the board designates.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NE": {
+          "status": "legal",
+          "sourceId": "ne-cage-aviary-birds",
+          "cite": "163 Neb. Admin. Code, ch. 4",
+          "quote": "Cage and Aviary Birds - Means those captive-reared birds, not native to Nebraska, such as parrots, exotic finches, and canaries, which are adapted to live and breed in a cage.",
+          "note": "A cockatoo fits Nebraska's cage-and-aviary-bird definition; the one psittacine carved back out of that category is the monk parakeet.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 803.03(b)(6)(c)",
+          "quote": "Parrots (Psittaciformes)",
+          "note": "The whole order is named on New Hampshire's noncontrolled list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "legal",
+          "sourceId": "nj-7-25-4-8",
+          "cite": "N.J.A.C. 7:25-4.8(a)",
+          "quote": "Psittaculis spp. – Ring-necked parakeets; Myiopsitta spp. – Monk (Quaker) parakeets; Cyanoliseus patagonus – Patagonian conures",
+          "note": "New Jersey's potentially dangerous species table names exactly three psittacine groups, and Cacatua is not one of them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NM": {
+          "status": "unclear",
+          "sourceId": "nm-19-35-7",
+          "note": "New Mexico sorts exotic wildlife into Groups I through IV by danger level; cockatoos weren't named in the regulation text located, and an unlisted species defaults to Group IV, whose actual requirements weren't confirmed in this research.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NV": {
+          "status": "legal",
+          "sourceId": "nv-unprotected-birds",
+          "cite": "NAC 503.110",
+          "note": "Companion parrot species, cockatoos included, are not on Nevada's prohibited-species list and need no state permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-dangerous-animal",
+          "note": "Cacatuidae does not appear on New York's Dangerous Animal License species list, which is built around big cats, bears, primates, and venomous reptiles. No New York statute or DEC regulation restricting parrot or cockatoo possession generally turned up in this research.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Birds are outside Ohio's dangerous-wild-animal chapter entirely.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "OK": {
+          "status": "legal",
+          "sourceId": "ok-800-25-25-3",
+          "cite": "§ 800:25-25-3",
+          "note": "Oklahoma's noncontrolled exotic-species exemption names cockatoos outright, along with cockatiels, macaws, canaries, and other psittacine birds.",
+          "verifiedOn": "2026-08-27"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-2961",
+          "cite": "34 Pa.C.S. § 2961",
+          "note": "Pennsylvania's exotic wildlife definition (bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and their crossbreeds) does not reach birds at all; no cockatoo-specific rule was found. Corrected from an earlier draft citation (34 Pa.C.S. section 102) that does not exist as described; the real exotic-wildlife definition is section 2961, already used elsewhere in this dataset.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "250-RICR-40-05-3.7",
+          "quote": "Psittacidae (Parrots and their allies) except for Myiopsitta monachus (Monk Parakeet), which requires a permit",
+          "note": "The whole parrot family, cockatoos included, is permit-free with a single carve-out for the monk parakeet.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "note": "The only bird South Carolina's import permit reaches is turkeys of genus Meleagris; the pet-trade exemption separately clears parrots.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "Nondomestic birds are handled by ARSD 12:68:13 rather than the mammal-only possession-permit list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TN": {
+          "status": "legal",
+          "sourceId": "tn-70-4-403",
+          "cite": "§ 70-4-403",
+          "note": "A non-native cockatoo is Tennessee Class III: a nonpoisonous, non-native species that needs no registration.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "note": "Texas's dangerous wild animal statute doesn't reach birds. Legal statewide, subject to local ordinance.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3b",
+          "cite": "Utah Admin. Code R657-3b",
+          "quote": "Parrots Family Psittacidae All species not native to North America",
+          "note": "Classified as noncontrolled, and a certificate of registration is not required to possess any noncontrolled bird.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "quote": "Psittaciformes   Psittacidae   Myiopsitta monachus   Monk parakeet*",
+          "note": "The only parrot on Virginia's permit table is the monk parakeet.",
+          "verifiedOn": "2026-08-27"
+        },
+        "VT": {
+          "status": "unclear",
+          "sourceId": "vt-10-app-18",
+          "cite": "10 V.S.A. App. § 18",
+          "note": "Vermont requires an Importation & Possession Permit for any wild animal not on its Unrestricted Wild Animals List. This research could not confirm whether cockatoos appear on that list.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "note": "Birds fall outside both the potentially-dangerous-animal statute and the deleterious exotic wildlife rule.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-datcp-birds",
+          "cite": "Wis. Stat. § 169.04; DATCP pet bird rules",
+          "note": "A cockatoo meets Wisconsin's definition of an unregulated 'pet bird': psittacine, non-native, not federally endangered, not a migratory species. The one psittacine Wisconsin does prohibit is the monk parakeet, as an invasive species. Importing one from out of state still calls for a DATCP animal import permit and health certificate.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)",
+          "note": "No bird category appears in West Virginia's dangerous-wild-animal guidance at all.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch10",
+          "cite": "Chapter 10, § 16(b)(i)",
+          "quote": "Live warm-blooded wildlife listed in this section... may be imported, possessed or transported without a permit... (b) Birds: (i) Cage and aviary birds.",
+          "note": "Chapter 10 defines cage and aviary birds as exotic captive-reared birds such as parrots that are adapted to live in a cage; a cockatoo qualifies.",
+          "verifiedOn": "2026-08-27"
+        }
+      },
+      "article": "/blog/cockatoo-legal-guide/"
+    },
+    "red-footed-tortoise": {
+      "name": "Red-Footed Tortoise",
+      "scientific": "Chelonoidis carbonarius",
+      "encyclopediaId": "red-footed-tortoise",
+      "jurisdictions": {
+        "CA": {
+          "status": "legal",
+          "sourceId": "ca-671",
+          "cite": "§ 671(c)(7)",
+          "note": "Section 671's Testudines entries reach only Chelydridae (snapping turtles). No tortoise family is restricted, and California's own tortoise rules concern the native desert tortoise (Gopherus agassizii) as a protected species, not an exotic-possession restriction.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "NY": {
+          "status": "legal",
+          "sourceId": "ny-11-0103",
+          "cite": "ECL § 11-0103(6)(e)",
+          "quote": "includes and is limited to",
+          "note": "No tortoise or Testudinidae entry appears anywhere in the closed dangerous-wild-animal definition, which among reptiles names only certain large monitors, big constrictors, venomous species and crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MA": {
+          "status": "legal",
+          "sourceId": "ma-321-9-01",
+          "cite": "321 CMR 9.01",
+          "note": "Massachusetts allows all species of turtles (up to 100 individuals/eggs per species) without a permit except five named exceptions: Argentina/Chaco tortoise, Gopherus spp. (gopher tortoises), pancake tortoise, spotted turtle, and red-eared slider. The red-footed tortoise is not among them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NJ": {
+          "status": "permit",
+          "sourceId": "nj-7-25-4-4",
+          "cite": "N.J.A.C. 7:25-4.4, 4.5",
+          "note": "Not on the exempt-species list (N.J.A.C. 7:25-4.4), which names only American anole, common iguana, boa constrictor, eastern painted turtle, snapping turtle, fence lizard, garter snake, tokay gecko and ribbon snake among reptiles. Falls to the § 4.5 catch-all: 'a permit shall be required for any other exotic mammals, birds, reptiles, or amphibians... not specifically exempted.'",
+          "verifiedOn": "2026-08-27",
+          "permitFor": "personal"
+        },
+        "VA": {
+          "status": "legal",
+          "sourceId": "va-4vac15-30-40",
+          "cite": "§ 15-30-40(A)",
+          "note": "No tortoise, Chelonoidis, or Testudinidae entry appears in the nonnative-animal permit table. Subsection (H) allows possession of nonnative animals not listed in the table, subject to general law.",
+          "verifiedOn": "2026-08-27"
+        },
+        "GA": {
+          "status": "legal",
+          "sourceId": "ga-391-4-8-05",
+          "cite": "391-4-8-.05",
+          "note": "Georgia's licensed wild-animal reptile list names only two turtles (African helmeted turtle, Chinese softshell turtle) under Order Testudines; no tortoise or Testudinidae entry appears.",
+          "verifiedOn": "2026-08-27"
+        },
+        "DC": {
+          "status": "legal",
+          "sourceId": "dc-8-1808",
+          "cite": "§ 8-1808(j)(1)",
+          "quote": "Non-venomous snakes, fish, and turtles, traditionally kept in the home for pleasure rather than for commercial purposes",
+          "note": "A tortoise is a turtle in the taxonomic sense the category uses (Order Testudines), the same reading applied to the sulcata and Russian tortoise.",
+          "verifiedOn": "2026-08-27"
+        },
+        "RI": {
+          "status": "legal",
+          "sourceId": "ri-250-40-05-3",
+          "cite": "§ 3.17(A)(4)(a)(1)",
+          "quote": "All exotic species of turtles may be kept without an exotic animal possession permit, except endangered species.",
+          "note": "The three tortoises pulled back out are the Chaco tortoise, the genus Gopherus and the pancake tortoise. Chelonoidis carbonarius is none of them and is not federally endangered.",
+          "verifiedOn": "2026-08-27"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-prohibited",
+          "cite": "Ch. 68-5, F.A.C.",
+          "note": "Not on Florida's prohibited reptile list (sixteen high-risk species, no tortoise) and not a Class I or II wildlife species requiring a specific license.",
+          "verifiedOn": "2026-08-27"
+        },
+        "TX": {
+          "status": "legal",
+          "sourceId": "tx-822-101",
+          "cite": "Health & Safety Code § 822.101",
+          "note": "Not on Texas's closed dangerous-wild-animal list (lions, tigers, and other named cats, bears, canids and primates). Tortoises and monitor lizards are outside the registration requirement.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "LA": {
+          "status": "legal",
+          "sourceId": "la-76-xv-101",
+          "cite": "§ 101.K.2",
+          "note": "Absent from Louisiana's prohibited and restricted nonnative-reptile lists (which do name the savannah and Nile monitor). The native-turtle registration requirement at § 101.G governs Louisiana's own species and does not reach this South American tortoise.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MT": {
+          "status": "legal",
+          "sourceId": "mt-87-5-7",
+          "cite": "§ 87-5-706(1)(f)(ix)",
+          "quote": "all nonnative tropical and subtropical species of turtles with a carapace or shell length of more than 4 inches and not on the controlled or prohibited lists in the families: ...(ix) Testudinidae (tortoises);",
+          "note": "Cleared by family, above the four-inch floor, the same basis already used for the sulcata and Russian tortoise.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "MS": {
+          "status": "legal",
+          "sourceId": "ms-40-2-8-3",
+          "cite": "§ A.5",
+          "note": "Mississippi's inherently-dangerous list is drawn family by family and is entirely mammalian; no reptile is restricted under this rule at any size.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SC": {
+          "status": "legal",
+          "sourceId": "sc-50-16",
+          "cite": "§ 50-16-60",
+          "quote": "The importation of the following wildlife for sale in the pet trade does not require a permit: ...15. reptiles 16. amphibians.",
+          "note": "South Carolina exempts reptiles as a class from the import permit.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ND": {
+          "status": "legal",
+          "sourceId": "nd-36-01",
+          "cite": "§ 36-01-08.4",
+          "note": "No reptile appears anywhere in North Dakota's captive-wildlife chapter or current administrative rules.",
+          "verifiedOn": "2026-08-27"
+        },
+        "KS": {
+          "status": "legal",
+          "sourceId": "ks-32-1301",
+          "cite": "§ 32-1301(d)",
+          "note": "Kansas's only exotic-pet statute reaches six named cats, bears, and non-native venomous snakes. Tortoises are untouched at any size.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NC": {
+          "status": "legal",
+          "sourceId": "nc-14-417",
+          "cite": "§ 14-417",
+          "note": "North Carolina's only statewide exotic-animal statute covers venomous reptiles and does not ban even those. Everything else is left to county ordinance under § 153A-131.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "KY": {
+          "status": "legal",
+          "sourceId": "ky-301-2-082",
+          "cite": "§ 4",
+          "note": "On neither the prohibited species list nor the inherently-dangerous list, which among reptiles names only gila monsters, beaded lizards, the Komodo dragon, crocodilians and venomous snakes other than hognose.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WV": {
+          "status": "legal",
+          "sourceId": "wv-19-34",
+          "cite": "§ 19-34-5(c)(2)",
+          "note": "The only reptiles the statute points the board at are constrictors over six feet, venomous snakes and crocodilians.",
+          "verifiedOn": "2026-08-27"
+        },
+        "IA": {
+          "status": "legal",
+          "sourceId": "ia-717F",
+          "cite": "§ 717F.1(5)",
+          "note": "The squamate/reptile half of Iowa's dangerous-wild-animal definition is exhaustively enumerated (certain monitors, helodermatids, venomous snakes, three named giant constrictors). No tortoise is among them.",
+          "verifiedOn": "2026-08-27"
+        },
+        "SD": {
+          "status": "legal",
+          "sourceId": "sd-12-68-18",
+          "cite": "12:68:18:03",
+          "note": "South Dakota's possession-permit list covers mammals only (carnivores, hoofed mammals, tapirs, rhinos, elephants, primates); reptiles fall under Game, Fish and Parks rules instead.",
+          "verifiedOn": "2026-08-27"
+        },
+        "MO": {
+          "status": "legal",
+          "sourceId": "mo-3csr10-9",
+          "cite": "3 CSR 10-9.230",
+          "note": "Not native to Missouri, so outside Class I, and not a deadly or dangerous reptile over eight feet under § 578.023.",
+          "verifiedOn": "2026-08-27"
+        },
+        "WY": {
+          "status": "legal",
+          "sourceId": "wy-ch69",
+          "cite": "Chapter 69, § 10(a)(i)",
+          "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
+          "note": "Non-venomous and not on the prohibited list, so no permit is required for personal use; the reptile must remain confined and never be released.",
+          "verifiedOn": "2026-08-27"
+        },
+        "NH": {
+          "status": "legal",
+          "sourceId": "nh-fis800",
+          "cite": "Fis 803.03(b)",
+          "quote": "(4) Non-venomous reptiles, except the following: a. Indigenous reptile species listed in Table 800.1...",
+          "note": "No tortoise appears anywhere in the controlled table, so this non-native species clears the non-controlled category outright.",
+          "verifiedOn": "2026-08-27"
+        },
+        "ID": {
+          "status": "legal",
+          "sourceId": "id-130110",
+          "cite": "IDAPA 13.01.10.010.06",
+          "quote": "non-venomous or non-dangerous reptiles and amphibians",
+          "note": "A conventional pet under the reptile category, no size or weight qualifier attached.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AK": {
+          "status": "legal",
+          "sourceId": "ak-5aac92-029",
+          "cite": "§ 92.029(b)",
+          "quote": "Any nonvenomous reptile   Class Reptilia   (crocodile, alligator, snake, turtle, or lizard)",
+          "note": "No permit required; the clean list sets no size limit on reptiles.",
+          "verifiedOn": "2026-08-27"
+        },
+        "OH": {
+          "status": "legal",
+          "sourceId": "oh-935-01",
+          "cite": "§ 935.01(C)",
+          "note": "Not a dangerous wild animal and not native to Ohio, so nothing in Chapter 935 reaches it.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "WA": {
+          "status": "legal",
+          "sourceId": "wa-rcw-16-30",
+          "cite": "RCW 16.30.010(2)",
+          "quote": "Class reptilia ... Order crocodilia, all species",
+          "note": "Not listed. Washington's reptile concerns under this chapter are venom and crocodilians rather than size or origin.",
+          "verifiedOn": "2026-08-27",
+          "localOverride": true
+        },
+        "ME": {
+          "status": "legal",
+          "sourceId": "me-unrestricted",
+          "cite": "Unrestricted Species List, Testudines",
+          "quote": "Red-footed Tortoise",
+          "note": "Maine's own tortoise clearance list (documented in this site's sulcata-tortoise research) names the Russian, Greek, Hermann's, leopard, red-footed and yellow-footed tortoises by common name. The red-footed tortoise is expressly included; the exact binomial spelling used on Maine's PDF was not independently re-verified this round because the source PDF resisted text extraction, so double-check the primary document (maine.gov/ifw/docs/unrestrictedspecies.pdf) before publishing.",
+          "verifiedOn": "2026-08-27"
+        },
+        "AR": {
+          "status": "legal",
+          "sourceId": "ar-unrestricted",
+          "cite": "Code Addendum R1.01, Unrestricted Captive Wildlife Species List",
+          "quote": "Tortoises (Genera: Agrionemys, Aldabrachelys, Chelonoidis, Centrochelys, Geochelone, Gopherus, Indotestudo, Manouria, Psuedotestudo, Stigmochelys, Testudo)",
+          "note": "Confirmed directly from the current AGFC PDF (revised 11/1/22). Genus Chelonoidis is named outright, which covers the red-footed tortoise without ambiguity.",
+          "verifiedOn": "2026-08-27"
+        },
+        "HI": {
+          "status": "conditional",
+          "sourceId": "hi-conditional",
+          "cite": "List of Conditionally Approved Animals, Family Testudinidae",
+          "quote": "Chelonoidis (all species in genus except C. elephantopus)",
+          "note": "Confirmed directly from the HDOA conditional-animal-list PDF. Unlike the sulcata (which moved out of Geochelone entirely into the unlisted genus Centrochelys, leaving its status genuinely unclear), the red-footed tortoise's current genus Chelonoidis is named outright on this list, with only the Galapagos tortoise (C. elephantopus, separately restricted) carved out. Chelonoidis carbonarius is squarely covered.",
+          "verifiedOn": "2026-08-27"
         }
       }
     }

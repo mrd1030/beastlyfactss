@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation, useNavigate, useParams, Link } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
@@ -9,8 +9,9 @@ import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
-import { RELATED_ARTICLES } from '@/lib/data/relatedArticles';
+import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import SaveButton from '@/components/shared/SaveButton';
+import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
@@ -43,6 +44,7 @@ export default function EncyclopediaAnimal() {
   const location = useLocation();
   const { id } = useParams();
   const animal = encyclopediaAnimals.find(a => a.id === id);
+  const contentRef = useRef(null);
   const guide = animal?.guideId ? allGuides.find(g => g.id === animal.guideId) : null;
   const legal = animal ? LEGAL_BY_ENCYCLOPEDIA_ID[animal.id] : null;
 
@@ -83,7 +85,7 @@ export default function EncyclopediaAnimal() {
   // Mixed in with husbandry articles they read as one more thing to get round
   // to, when they are the one link on the page that can tell a reader they
   // cannot legally keep the animal at all.
-  const allRelatedArticles = (RELATED_ARTICLES[animal.guideId] || []).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
@@ -143,23 +145,12 @@ export default function EncyclopediaAnimal() {
 
         {/* Header */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
-          <div className="flex items-start justify-between gap-4">
-            <div className="flex items-start gap-4">
-              <span className="text-5xl">{animal.emoji}</span>
-              <div>
-                <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight">
-                  {animal.name}
-                </h1>
-                <p className="text-sm text-muted-foreground font-body italic mt-0.5">{animal.scientific}</p>
-                <div className="flex items-center gap-2 mt-2">
-                  <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
-                    {animal.category}
-                  </span>
-                  <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
-                    {`${animal.difficulty} care`}
-                  </span>
-                </div>
-              </div>
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <span className="text-4xl sm:text-5xl flex-shrink-0">{animal.emoji}</span>
+              <h1 className="font-display font-bold text-2xl sm:text-3xl text-foreground leading-tight truncate">
+                {animal.name}
+              </h1>
             </div>
             <SaveButton
               type="encyclopedia"
@@ -170,13 +161,29 @@ export default function EncyclopediaAnimal() {
               className="flex-shrink-0"
             />
           </div>
+          <p className="text-sm text-muted-foreground font-body italic mt-1.5">{animal.scientific}</p>
+          <div className="flex flex-wrap items-center gap-2 mt-2">
+            <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
+              {animal.category}
+            </span>
+            <span className={`text-xs font-body font-semibold px-2.5 py-0.5 rounded-full ${diffClass}`}>
+              {`${animal.difficulty} care`}
+            </span>
+          </div>
         </motion.div>
+
+        {/* Mobile-only: the sidebar's TOC (below) sits in a column that
+            collapses to the bottom of the page once the grid drops to a
+            single column - same fix as GuideDetail/Blog. */}
+        <div className="lg:hidden mb-6">
+          <TableOfContents contentRef={contentRef} watch={animal.id} skipText={animal.name} collapsible />
+        </div>
 
         {/* Two-col layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
           {/* ── Main content ── */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
             {/* Hero image */}
             {guide?.image && (
@@ -244,6 +251,12 @@ export default function EncyclopediaAnimal() {
 
           {/* ── Sidebar ── */}
           <div className="space-y-4">
+
+            {/* Hidden below lg: the collapsible instance above the article
+                already covers mobile. */}
+            <div className="hidden lg:block">
+              <TableOfContents contentRef={contentRef} watch={animal.id} skipText={animal.name} />
+            </div>
 
             {/* Guide CTA */}
             {guide && (

@@ -1,0 +1,37 @@
+{
+  "de-nonnative-reptile-permit": {
+    "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
+    "url": "https://delcode.delaware.gov/title3/c072/index.html",
+    "note": "§7201 requires a permit before bringing in, possessing, selling, or exhibiting any live wild mammal or reptile not native to Delaware; the California kingsnake, a Pacific coast species, falls under this permit requirement."
+  },
+  "md-not-native": {
+    "title": "Md. Code, Criminal Law § 10-621, Import, Offer, or Transfer of Dangerous Animal",
+    "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcr&section=10-621&enactments=false",
+    "note": "The dangerous-animal list covers only specific mammals, crocodilians, and venomous snakes of four named families; non-venomous colubrids like the kingsnake and companion birds like cockatoos are both absent from it."
+  },
+  "al-exotic-birds": {
+    "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
+    "url": "https://admincode.legislature.state.al.us/administrative-code/220-2-.26",
+    "note": "Same rule already sourced for other species' prohibited list; its bans reach only federally-listed Lacey Act injurious wildlife and named out-of-state mammal/fish species, with no bird species named, so a captive-bred parrot or cockatoo falls outside it."
+  },
+  "az-exotic-birds": {
+    "title": "Arizona Revised Statutes § 17-306, Importation, Transportation, Release or Possession of Live Wildlife",
+    "url": "https://www.azleg.gov/ars/17/00306.htm",
+    "note": "General prohibition on unauthorized live wildlife; enforced in practice through the companion restricted-species rule (R12-4-406), which is aimed at native and dangerous wildlife and does not name common psittacine pets."
+  },
+  "de-birds-exempt": {
+    "title": "Delaware Code, Title 3, Chapter 72 — Possession of Mammals or Reptiles Exotic to Delaware",
+    "url": "https://delcode.delaware.gov/title3/c072/index.html",
+    "note": "The permit requirement in §7201 names only wild mammals and non-native reptiles; birds are absent from the chapter's operative text despite appearing in its older title reference, so a pet cockatoo needs no permit under this chapter."
+  },
+  "ne-cage-aviary-birds": {
+    "title": "163 Neb. Admin. Code, ch. 4, § 008 — Keeping Wildlife in Captivity (Definitions)",
+    "url": "http://govdocs.nebraska.gov/epubs/G1000/R163.0004-2016.pdf",
+    "note": "Same chapter as ne-163-nac-4-008; its opening definitions section defines 'Cage and Aviary Birds' verbatim as captive-reared, non-native birds such as parrots, exotic finches, and canaries, with the monk parakeet the one species carved back out."
+  },
+  "nv-unprotected-birds": {
+    "title": "Nevada Administrative Code § 503.110, Restrictions on Importation, Transportation and Possession of Certain Species",
+    "url": "https://www.leg.state.nv.us/nac/nac-503.html",
+    "note": "The prohibited-species list under this section names only three birds (Pink Starling/Rosy Pastor, Red-billed Dioch, Red-whiskered Bulbul); cockatoos and other companion parrots are absent."
+  }
+}

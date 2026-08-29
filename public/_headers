@@ -3,7 +3,7 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
   # If Google Tag Assistant ever reports "the window was closed before a
   # connection could be established" or "page is not tagged", this line is why.
   # Tag Assistant opens the site in a popup and talks to it through
@@ -13,6 +13,7 @@
   # this. `same-origin-allow-popups` is NOT the fix: that governs popups this
   # page opens, not how this page behaves when something else opens it.
   Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/*.js

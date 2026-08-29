@@ -63,9 +63,11 @@ module.exports = {
             //
             // The fix is a rule rather than a colour. Recolouring headings to
             // --secondary was the obvious move and is wrong: that orange is
-            // hsl(24 100% 63%), which lands around 2.2:1 on the light-mode
-            // background and fails even the 3:1 large-text minimum. The bar
-            // carries the accent instead and the text keeps full contrast.
+            // hsl(17 77% 54%), which lands around 3.3:1 on the light-mode
+            // background. h2 (700-weight/24px) would scrape by on the 3:1
+            // large-text floor, but h3 (600-weight/20px) doesn't count as
+            // "large" and needs 4.5:1, which this fails. The bar carries the
+            // accent instead and the text keeps full contrast at every level.
             //
             // Same device the Beastfile tagline uses, so it reads as the site's
             // idiom rather than a new one.
@@ -170,6 +172,16 @@ module.exports = {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
+        // Warm Modern sharpened these three fixed tiers too - rounded-xl/2xl/3xl
+        // are Tailwind's own scale, not driven by --radius, but they're what most
+        // of the site's cards, buttons, and panels actually use (rounded-lg/md/sm
+        // above cover only a minority of usages). Overriding here reaches every
+        // existing class in place rather than editing each of the ~90 files that
+        // use them. rounded-full is deliberately untouched: those are circular
+        // icon buttons and avatars, a shape choice, not a corner-radius one.
+        xl: '0.375rem',
+        '2xl': '0.5rem',
+        '3xl': '0.75rem',
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -191,10 +203,10 @@ module.exports = {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
-        forest: '#0F3A1F',
-        orange: '#FF8C42',
-        teal: '#00B8A9',
-        cream: '#F8F1E9',
+        forest: '#154B3D',
+        orange: '#E4632F',
+        teal: '#D9A441',
+        cream: '#FDF9F1',
         hotpink: '#E8336D',
         sunny: '#FFD93D',
         sidebar: {

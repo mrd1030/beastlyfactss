@@ -210,7 +210,7 @@ export default function Encyclopedia() {
               prerendered and in the sitemap, but with no anchor a crawler had
               to find them there rather than by following a link, and no
               internal weight passed between the two halves of this page. */}
-          <div className="flex gap-2 mt-5 bg-muted/60 rounded-2xl p-1.5 max-w-sm">
+          <div className="flex gap-2 mt-5 bg-muted/60 border border-border rounded-2xl p-1.5 max-w-sm">
             {TABS.map(tab => {
               const destination = tab.id === 'guides'
                 ? (activeCategory === 'All' ? '/guides/' : `/guides/category/${toSlug(activeCategory)}/`)
@@ -222,7 +222,7 @@ export default function Encyclopedia() {
                   to={destination}
                   state={{ returnTo: destination }}
                   className={`flex-1 py-2 px-3 rounded-xl text-center text-xs font-body font-bold transition-all ${
-                    activeTab === tab.id ? 'bg-card shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
+                    activeTab === tab.id ? 'bg-card border border-border shadow-sm text-foreground' : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
                   {tab.label}
@@ -265,7 +265,7 @@ export default function Encyclopedia() {
         >
           <div 
             onMouseDown={(e) => e.stopPropagation()} 
-            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative"
+            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>
             <DifficultyLegend />
@@ -296,12 +296,12 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
           />
         </div>
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap items-center gap-y-2 mb-6 text-xs font-body">
           <Link
             to="/encyclopedia/"
             onClick={() => setActiveCategory('All')}
-            className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-              activeCategory === 'All' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+            className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+              activeCategory === 'All' ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
             }`}
           >
             ✨ All
@@ -309,15 +309,17 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
           {encyclopediaCategories.map(cat => {
             const urlSlug = cat.name.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
             return (
-              <Link
-                key={cat.name}
-                to={`/encyclopedia/category/${urlSlug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  activeCategory === cat.name ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {`${cat.emoji} ${cat.name}`}
-              </Link>
+              <React.Fragment key={cat.name}>
+                <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>
+                <Link
+                  to={`/encyclopedia/category/${urlSlug}/`}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    activeCategory === cat.name ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {`${cat.emoji} ${cat.name}`}
+                </Link>
+              </React.Fragment>
             );
           })}
         </div>

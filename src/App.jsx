@@ -3,12 +3,9 @@ import { MotionConfig } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
-import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
 import AppLayout from '@/components/layout/AppLayout';
-import ProtectedRoute from '@/components/ProtectedRoute';
-import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import PageNotFound from './lib/PageNotFound';
 // Home is NOT lazy-loaded like the other pages below: its own module (~3KB
 // gzipped) is tiny, but it's rendered inside AppLayout's <Suspense>, and every
@@ -55,6 +52,11 @@ const CarePackagesFaq = lazy(() => import('@/pages/CarePackagesFaq'));
 const Feed = lazy(() => import('@/pages/Feed'));
 const Composer = lazy(() => import('@/pages/Composer'));
 const ComposerLogin = lazy(() => import('@/pages/Composer/Login'));
+// Lazy rather than a static import like the rest of AppLayout's dependencies:
+// ProtectedRoute pulls in AuthContext, which pulls in the Supabase client.
+// Loading it eagerly here would ship that whole chunk on every single page,
+// not just the one route (/composer) that's actually gated behind it.
+const ProtectedRoute = lazy(() => import('@/components/ProtectedRoute'));
 
 function RedirectGuideFilter() {
   const { guideFilter } = useParams();
@@ -62,24 +64,6 @@ function RedirectGuideFilter() {
 }
 
 const AuthenticatedApp = () => {
-  const { isLoadingAuth, authError, navigateToLogin } = useAuth();
-
-  if (isLoadingAuth) {
-    return (
-      <div className="fixed inset-0 flex items-center justify-center bg-background">
-        <div className="text-center">
-          <span className="text-4xl block mb-3 animate-wiggle">🦁</span>
-          <div className="w-8 h-8 border-4 border-secondary/20 border-t-secondary rounded-full animate-spin mx-auto" />
-        </div>
-      </div>
-    );
-  }
-
-  if (authError) {
-    if (authError.type === 'user_not_registered') return <UserNotRegisteredError />;
-    if (authError.type === 'auth_required') { navigateToLogin(); return null; }
-  }
-
   return (
     <>
       {/* No <AnalyticsTracker /> here on purpose. It called
@@ -186,28 +170,26 @@ function App() {
   };
 
   return (
-    <AuthProvider>
-      <FavoritesProvider>
-        {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
-        <MotionConfig reducedMotion="user">
-          <Router>
-            {/* Inject SEO Data */}
-            <Helmet>
-              <script type="application/ld+json">
-                {JSON.stringify(structuredData)}
-              </script>
-              <script type="application/ld+json">
-                {JSON.stringify(organizationSchema)}
-              </script>
-            </Helmet>
+    <FavoritesProvider>
+      {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
+      <MotionConfig reducedMotion="user">
+        <Router>
+          {/* Inject SEO Data */}
+          <Helmet>
+            <script type="application/ld+json">
+              {JSON.stringify(structuredData)}
+            </script>
+            <script type="application/ld+json">
+              {JSON.stringify(organizationSchema)}
+            </script>
+          </Helmet>
 
-            <AuthenticatedApp />
-            <ScrollToTop />
-          </Router>
-          <Toaster />
-        </MotionConfig>
-      </FavoritesProvider>
-    </AuthProvider>
+          <AuthenticatedApp />
+          <ScrollToTop />
+        </Router>
+        <Toaster />
+      </MotionConfig>
+    </FavoritesProvider>
   );
 }
 

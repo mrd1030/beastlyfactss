@@ -1,0 +1,868 @@
+{
+  "animals": [
+    {
+      "id": "axolotl",
+      "name": "Axolotl",
+      "emoji": "🦎",
+      "category": "Amphibians",
+      "difficulty": "Intermediate",
+      "guideId": "axolotl",
+      "image": "/assets/guides/axolotl.jpg"
+    },
+    {
+      "id": "fire-bellied-toad",
+      "name": "Fire-Bellied Toad",
+      "emoji": "🐸",
+      "category": "Amphibians",
+      "difficulty": "Beginner",
+      "guideId": "fire-bellied-toad",
+      "image": "/assets/guides/fire-bellied-toad.jpg"
+    },
+    {
+      "id": "pacman-frog",
+      "name": "Pacman Frog",
+      "emoji": "🐸",
+      "category": "Amphibians",
+      "difficulty": "Beginner",
+      "guideId": "pacman-frog",
+      "image": "/assets/guides/pacman-frog.jpg"
+    },
+    {
+      "id": "tiger-salamander",
+      "name": "Tiger Salamander",
+      "emoji": "🦎",
+      "category": "Amphibians",
+      "difficulty": "Intermediate",
+      "guideId": "tiger-salamander",
+      "image": "/assets/guides/tiger-salamander.jpg"
+    },
+    {
+      "id": "whites-tree-frog",
+      "name": "White's Tree Frog",
+      "emoji": "🐸",
+      "category": "Amphibians",
+      "difficulty": "Beginner",
+      "guideId": "whites-tree-frog",
+      "image": "/assets/guides/whites-tree-frog.jpg"
+    },
+    {
+      "id": "african-grey",
+      "name": "African Grey Parrot",
+      "emoji": "🦜",
+      "category": "Birds",
+      "difficulty": "Advanced",
+      "guideId": "african-grey",
+      "image": "/assets/guides/african-grey.jpg"
+    },
+    {
+      "id": "budgie",
+      "name": "Budgie / Parakeet",
+      "emoji": "🐦",
+      "category": "Birds",
+      "difficulty": "Beginner",
+      "guideId": "budgie",
+      "image": "/assets/guides/budgie.jpg"
+    },
+    {
+      "id": "canary",
+      "name": "Canary",
+      "emoji": "🐦",
+      "category": "Birds",
+      "difficulty": "Beginner",
+      "guideId": "canary",
+      "image": "/assets/guides/canary.jpg"
+    },
+    {
+      "id": "cockatiel",
+      "name": "Cockatiel",
+      "emoji": "🦜",
+      "category": "Birds",
+      "difficulty": "Beginner",
+      "guideId": "cockatiel",
+      "image": "/assets/guides/cockatiel.jpg"
+    },
+    {
+      "id": "cockatoo",
+      "name": "Cockatoo",
+      "emoji": "🦜",
+      "category": "Birds",
+      "difficulty": "Advanced",
+      "guideId": "cockatoo",
+      "image": "/assets/guides/cockatoo.jpg"
+    },
+    {
+      "id": "conure",
+      "name": "Green Cheek Conure",
+      "emoji": "🦜",
+      "category": "Birds",
+      "difficulty": "Intermediate",
+      "guideId": "conure",
+      "image": "/assets/guides/conure.jpg"
+    },
+    {
+      "id": "lovebird",
+      "name": "Lovebird",
+      "emoji": "🐦",
+      "category": "Birds",
+      "difficulty": "Intermediate",
+      "guideId": "lovebird",
+      "image": "/assets/guides/lovebird.jpg"
+    },
+    {
+      "id": "parrotlet",
+      "name": "Parrotlet",
+      "emoji": "🐦",
+      "category": "Birds",
+      "difficulty": "Intermediate",
+      "guideId": "parrotlet",
+      "image": "/assets/guides/parrotlet.jpg"
+    },
+    {
+      "id": "quaker-parakeet",
+      "name": "Quaker Parakeet",
+      "emoji": "🦜",
+      "category": "Birds",
+      "difficulty": "Intermediate",
+      "guideId": "quaker-parakeet",
+      "image": "/assets/guides/quaker-parakeet.jpg"
+    },
+    {
+      "id": "zebra-finch",
+      "name": "Zebra Finch",
+      "emoji": "🐦",
+      "category": "Birds",
+      "difficulty": "Beginner",
+      "guideId": "zebra-finch",
+      "image": "/assets/guides/zebra-finch.jpg"
+    },
+    {
+      "id": "domestic-shorthair",
+      "name": "Domestic Shorthair",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Beginner",
+      "guideId": "cat-domestic-shorthair",
+      "image": "/assets/guides/cat-domestic-shorthair.jpg"
+    },
+    {
+      "id": "maine-coon",
+      "name": "Maine Coon",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Beginner",
+      "guideId": "cat-maine-coon",
+      "image": "/assets/guides/cat-maine-coon.jpg"
+    },
+    {
+      "id": "siamese",
+      "name": "Siamese",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Intermediate",
+      "guideId": "cat-siamese",
+      "image": "/assets/guides/cat-siamese.jpg"
+    },
+    {
+      "id": "ragdoll",
+      "name": "Ragdoll",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Beginner",
+      "guideId": "cat-ragdoll",
+      "image": "/assets/guides/cat-ragdoll.jpg"
+    },
+    {
+      "id": "bengal",
+      "name": "Bengal",
+      "emoji": "🐈",
+      "category": "Cats",
+      "difficulty": "Advanced",
+      "guideId": "cat-bengal",
+      "image": "/assets/guides/cat-bengal.jpg"
+    },
+    {
+      "id": "persian",
+      "name": "Persian",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Intermediate",
+      "guideId": "cat-persian",
+      "image": "/assets/guides/cat-persian.jpg"
+    },
+    {
+      "id": "labrador",
+      "name": "Labrador Retriever",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Beginner",
+      "guideId": "dog-labrador",
+      "image": "/assets/guides/dog-labrador-retriever.jpg"
+    },
+    {
+      "id": "golden-retriever",
+      "name": "Golden Retriever",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Beginner",
+      "guideId": "dog-golden-retriever",
+      "image": "/assets/guides/dog-golden-retriever.jpg"
+    },
+    {
+      "id": "german-shepherd",
+      "name": "German Shepherd",
+      "emoji": "🐕",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-german-shepherd",
+      "image": "/assets/guides/dog-german-shepherd.jpg"
+    },
+    {
+      "id": "french-bulldog",
+      "name": "French Bulldog",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-french-bulldog",
+      "image": "/assets/guides/dog-french-bulldog.jpg"
+    },
+    {
+      "id": "border-collie",
+      "name": "Border Collie",
+      "emoji": "🐕",
+      "category": "Dogs",
+      "difficulty": "Advanced",
+      "guideId": "dog-border-collie",
+      "image": "/assets/guides/dog-border-collie.jpg"
+    },
+    {
+      "id": "siberian-husky",
+      "name": "Siberian Husky",
+      "emoji": "🐺",
+      "category": "Dogs",
+      "difficulty": "Advanced",
+      "guideId": "dog-siberian-husky",
+      "image": "/assets/guides/dog-siberian-husky.jpg"
+    },
+    {
+      "id": "angelfish",
+      "name": "Angelfish",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Intermediate",
+      "guideId": "angelfish",
+      "image": "/assets/guides/angelfish.jpg"
+    },
+    {
+      "id": "betta-fish",
+      "name": "Betta Fish",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "betta-fish",
+      "image": "/assets/guides/betta-fish.jpg"
+    },
+    {
+      "id": "bristlenose-pleco",
+      "name": "Bristlenose Pleco",
+      "emoji": "🐟",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "bristlenose-pleco",
+      "image": "/assets/guides/bristlenose-pleco.jpg"
+    },
+    {
+      "id": "cardinal-tetra",
+      "name": "Cardinal Tetra",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner-Intermediate",
+      "guideId": "cardinal-tetra",
+      "image": "/assets/guides/cardinal-tetra.jpg"
+    },
+    {
+      "id": "corydoras-catfish",
+      "name": "Corydoras Catfish",
+      "emoji": "🐟",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "corydoras-catfish",
+      "image": "/assets/guides/corydoras-catfish.jpg"
+    },
+    {
+      "id": "discus",
+      "name": "Discus",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Intermediate-Advanced",
+      "guideId": "discus",
+      "image": "/assets/guides/discus.jpg"
+    },
+    {
+      "id": "goldfish",
+      "name": "Goldfish",
+      "emoji": "🐟",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "goldfish",
+      "image": "/assets/guides/goldfish.jpg"
+    },
+    {
+      "id": "guppy",
+      "name": "Guppy",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "guppy",
+      "image": "/assets/guides/guppy.jpg"
+    },
+    {
+      "id": "koi",
+      "name": "Koi",
+      "emoji": "🎏",
+      "category": "Fish",
+      "difficulty": "Intermediate",
+      "guideId": "koi",
+      "image": "/assets/guides/koi.jpg"
+    },
+    {
+      "id": "molly",
+      "name": "Molly",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "molly",
+      "image": "/assets/guides/molly.jpg"
+    },
+    {
+      "id": "neon-tetra",
+      "name": "Neon Tetra",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "neon-tetra",
+      "image": "/assets/guides/neon-tetra.jpg"
+    },
+    {
+      "id": "oscar",
+      "name": "Oscar",
+      "emoji": "🐟",
+      "category": "Fish",
+      "difficulty": "Intermediate",
+      "guideId": "oscar",
+      "image": "/assets/guides/oscar.jpg"
+    },
+    {
+      "id": "platy",
+      "name": "Platy",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "platy",
+      "image": "/assets/guides/platy.jpg"
+    },
+    {
+      "id": "swordtail",
+      "name": "Swordtail",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "swordtail",
+      "image": "/assets/guides/swordtail.jpg"
+    },
+    {
+      "id": "zebra-danio",
+      "name": "Zebra Danio",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "zebra-danio",
+      "image": "/assets/guides/zebra-danio.jpg"
+    },
+    {
+      "id": "african-fat-tail",
+      "name": "African Fat-Tailed Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Beginner",
+      "guideId": "african-fat-tail",
+      "image": "/assets/guides/african-fat-tail.jpg"
+    },
+    {
+      "id": "crested-gecko",
+      "name": "Crested Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Beginner",
+      "guideId": "crested-gecko",
+      "image": "/assets/guides/crested-gecko.jpg"
+    },
+    {
+      "id": "gargoyle-gecko",
+      "name": "Gargoyle Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Beginner",
+      "guideId": "gargoyle-gecko",
+      "image": "/assets/guides/gargoyle-gecko.jpg"
+    },
+    {
+      "id": "leaf-tailed-gecko",
+      "name": "Leaf-Tailed Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Advanced",
+      "guideId": "leaf-tailed-gecko",
+      "image": "/assets/guides/leaf-tailed-gecko.jpg"
+    },
+    {
+      "id": "leopard-gecko",
+      "name": "Leopard Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Beginner",
+      "guideId": "leopard-gecko",
+      "image": "/assets/guides/leopard-gecko.jpg"
+    },
+    {
+      "id": "mourning-gecko",
+      "name": "Mourning Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "mourning-gecko",
+      "image": "/assets/guides/mourning-gecko.jpg"
+    },
+    {
+      "id": "tokay-gecko",
+      "name": "Tokay Gecko",
+      "emoji": "🦎",
+      "category": "Geckos",
+      "difficulty": "Intermediate",
+      "guideId": "tokay-gecko",
+      "image": "/assets/guides/tokay-gecko.jpg"
+    },
+    {
+      "id": "amano-shrimp",
+      "name": "Amano Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "amano-shrimp",
+      "image": "/assets/guides/amano-shrimp.jpg"
+    },
+    {
+      "id": "cherry-shrimp",
+      "name": "Cherry Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "cherry-shrimp",
+      "image": "/assets/guides/cherry-shrimp.jpg"
+    },
+    {
+      "id": "emperor-scorpion",
+      "name": "Emperor Scorpion",
+      "emoji": "🦂",
+      "category": "Invertebrates",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "emperor-scorpion",
+      "image": "/assets/guides/emperor-scorpion.jpg"
+    },
+    {
+      "id": "ghost-shrimp",
+      "name": "Ghost Shrimp",
+      "emoji": "🦐",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "ghost-shrimp",
+      "image": "/assets/guides/ghost-shrimp.jpg"
+    },
+    {
+      "id": "millipede",
+      "name": "Giant African Millipede",
+      "emoji": "🐛",
+      "category": "Invertebrates",
+      "difficulty": "Self-Sufficient",
+      "guideId": "millipede",
+      "image": "/assets/guides/millipede.jpg"
+    },
+    {
+      "id": "hermit-crab",
+      "name": "Hermit Crab",
+      "emoji": "🦀",
+      "category": "Invertebrates",
+      "difficulty": "Intermediate",
+      "guideId": "hermit-crab",
+      "image": "/assets/guides/hermit-crab.jpg"
+    },
+    {
+      "id": "jumping-spider",
+      "name": "Jumping Spider",
+      "emoji": "🕷️",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "jumping-spider",
+      "image": "/assets/guides/jumping-spider.jpg"
+    },
+    {
+      "id": "hissing-cockroach",
+      "name": "Madagascar Hissing Cockroach",
+      "emoji": "🪳",
+      "category": "Invertebrates",
+      "difficulty": "Self-Sufficient",
+      "guideId": "hissing-cockroach",
+      "image": "/assets/guides/hissing-cockroach.jpg"
+    },
+    {
+      "id": "praying-mantis",
+      "name": "Praying Mantis",
+      "emoji": "🦗",
+      "category": "Invertebrates",
+      "difficulty": "Self-Sufficient",
+      "guideId": "praying-mantis",
+      "image": "/assets/guides/praying-mantis.jpg"
+    },
+    {
+      "id": "stick-insect",
+      "name": "Stick Insect",
+      "emoji": "🌿",
+      "category": "Invertebrates",
+      "difficulty": "Self-Sufficient",
+      "guideId": "stick-insect",
+      "image": "/assets/guides/stick-insect.jpg"
+    },
+    {
+      "id": "tarantula",
+      "name": "Tarantula",
+      "emoji": "🕷️",
+      "category": "Invertebrates",
+      "difficulty": "Beginner",
+      "guideId": "tarantula",
+      "image": "/assets/guides/tarantula.jpg"
+    },
+    {
+      "id": "ackie-monitor",
+      "name": "Ackie Monitor",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Advanced",
+      "guideId": "ackie-monitor",
+      "image": "/assets/guides/ackie-monitor.jpg"
+    },
+    {
+      "id": "tegu",
+      "name": "Argentine Black and White Tegu",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Advanced",
+      "guideId": "tegu",
+      "image": "/assets/guides/tegu.jpg"
+    },
+    {
+      "id": "bearded-dragon",
+      "name": "Bearded Dragon",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "bearded-dragon",
+      "image": "/assets/guides/bearded-dragon.jpg"
+    },
+    {
+      "id": "blue-tongue-skink",
+      "name": "Blue Tongue Skink",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "blue-tongue-skink",
+      "image": "/assets/guides/blue-tongue-skink.jpg"
+    },
+    {
+      "id": "fire-skink",
+      "name": "Fire Skink",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Beginner",
+      "guideId": "fire-skink",
+      "image": "/assets/guides/fire-skink.jpg"
+    },
+    {
+      "id": "green-anole",
+      "name": "Green Anole",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "green-anole",
+      "image": "/assets/guides/green-anole.jpg"
+    },
+    {
+      "id": "green-iguana",
+      "name": "Green Iguana",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Advanced",
+      "guideId": "green-iguana",
+      "image": "/assets/guides/green-iguana.jpg"
+    },
+    {
+      "id": "chameleon-jackson",
+      "name": "Jackson's Chameleon",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Advanced",
+      "guideId": "chameleon",
+      "image": "/assets/guides/chameleon.jpg"
+    },
+    {
+      "id": "savannah-monitor",
+      "name": "Savannah Monitor",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Advanced",
+      "guideId": "savannah-monitor",
+      "image": "/assets/guides/savannah-monitor.jpg"
+    },
+    {
+      "id": "uromastyx",
+      "name": "Uromastyx",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Intermediate",
+      "guideId": "uromastyx",
+      "image": "/assets/guides/uromastyx.jpg"
+    },
+    {
+      "id": "veiled-chameleon",
+      "name": "Veiled Chameleon",
+      "emoji": "🦎",
+      "category": "Lizards",
+      "difficulty": "Intermediate",
+      "guideId": "veiled-chameleon",
+      "image": "/assets/guides/veiled-chameleon.jpg"
+    },
+    {
+      "id": "chinchilla",
+      "name": "Chinchilla",
+      "emoji": "🐭",
+      "category": "Small Mammals",
+      "difficulty": "Intermediate/Advanced",
+      "guideId": "chinchilla",
+      "image": "/assets/guides/chinchilla.jpg"
+    },
+    {
+      "id": "degu",
+      "name": "Degu",
+      "emoji": "🐭",
+      "category": "Small Mammals",
+      "difficulty": "Intermediate",
+      "guideId": "degu",
+      "image": "/assets/guides/degu.jpg"
+    },
+    {
+      "id": "mouse",
+      "name": "Fancy Mouse",
+      "emoji": "🐭",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "mouse",
+      "image": "/assets/guides/mouse.jpg"
+    },
+    {
+      "id": "rat",
+      "name": "Fancy Rat",
+      "emoji": "🐀",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "rat",
+      "image": "/assets/guides/rat.jpg"
+    },
+    {
+      "id": "ferret",
+      "name": "Ferret",
+      "emoji": "🦡",
+      "category": "Small Mammals",
+      "difficulty": "Intermediate",
+      "guideId": "ferret",
+      "image": "/assets/guides/ferret.jpg"
+    },
+    {
+      "id": "gerbil",
+      "name": "Gerbil",
+      "emoji": "🐭",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "gerbil",
+      "image": "/assets/guides/gerbil.jpg"
+    },
+    {
+      "id": "guinea-pig",
+      "name": "Guinea Pig",
+      "emoji": "🐹",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "guinea-pig",
+      "image": "/assets/guides/guinea-pig.jpg"
+    },
+    {
+      "id": "hamster",
+      "name": "Hamster",
+      "emoji": "🌰",
+      "category": "Small Mammals",
+      "difficulty": "Beginner",
+      "guideId": "hamster",
+      "image": "/assets/guides/hamster.jpg"
+    },
+    {
+      "id": "hedgehog",
+      "name": "Hedgehog",
+      "emoji": "🦔",
+      "category": "Small Mammals",
+      "difficulty": "Intermediate",
+      "guideId": "hedgehog",
+      "image": "/assets/guides/hedgehog.jpg"
+    },
+    {
+      "id": "rabbit",
+      "name": "Rabbit",
+      "emoji": "🐰",
+      "category": "Small Mammals",
+      "difficulty": "Beginner/Intermediate",
+      "guideId": "rabbit",
+      "image": "/assets/guides/rabbit.jpg"
+    },
+    {
+      "id": "flying-squirrel",
+      "name": "Southern Flying Squirrel",
+      "emoji": "🐿️",
+      "category": "Small Mammals",
+      "difficulty": "Advanced",
+      "guideId": "flying-squirrel",
+      "image": "/assets/guides/flying-squirrel.jpg"
+    },
+    {
+      "id": "sugar-glider",
+      "name": "Sugar Glider",
+      "emoji": "🐿️",
+      "category": "Small Mammals",
+      "difficulty": "Advanced",
+      "guideId": "sugar-glider",
+      "image": "/assets/guides/sugar-glider.jpg"
+    },
+    {
+      "id": "ball-python",
+      "name": "Ball Python",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Intermediate",
+      "guideId": "ball-python",
+      "image": "/assets/guides/ball-python.jpg"
+    },
+    {
+      "id": "boa-constrictor",
+      "name": "Boa Constrictor",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Intermediate/Advanced",
+      "guideId": "boa-constrictor",
+      "image": "/assets/guides/boa-constrictor.jpg"
+    },
+    {
+      "id": "kingsnake",
+      "name": "California Kingsnake",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Beginner",
+      "guideId": "california-kingsnake",
+      "image": "/assets/guides/california-kingsnake.jpg"
+    },
+    {
+      "id": "corn-snake",
+      "name": "Corn Snake",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Beginner",
+      "guideId": "corn-snake",
+      "image": "/assets/guides/corn-snake.jpg"
+    },
+    {
+      "id": "garter-snake",
+      "name": "Garter Snake",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Beginner",
+      "guideId": "garter-snake",
+      "image": "/assets/guides/garter-snake.jpg"
+    },
+    {
+      "id": "hognose-snake",
+      "name": "Hognose Snake",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Intermediate",
+      "guideId": "hognose-snake",
+      "image": "/assets/guides/hognose-snake.jpg"
+    },
+    {
+      "id": "milk-snake",
+      "name": "Milk Snake",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Beginner",
+      "guideId": "milk-snake",
+      "image": "/assets/guides/milk-snake.jpg"
+    },
+    {
+      "id": "rosy-boa",
+      "name": "Rosy Boa",
+      "emoji": "🐍",
+      "category": "Snakes",
+      "difficulty": "Beginner",
+      "guideId": "rosy-boa",
+      "image": "/assets/guides/rosy-boa.jpg"
+    },
+    {
+      "id": "box-turtle",
+      "name": "Box Turtle",
+      "emoji": "🐢",
+      "category": "Turtles & Tortoises",
+      "difficulty": "Intermediate",
+      "guideId": "box-turtle",
+      "image": "/assets/guides/box-turtle.jpg"
+    },
+    {
+      "id": "red-eared-slider",
+      "name": "Red-Eared Slider",
+      "emoji": "🐢",
+      "category": "Turtles & Tortoises",
+      "difficulty": "Advanced",
+      "guideId": "red-eared-slider",
+      "image": "/assets/guides/red-eared-slider.jpg"
+    },
+    {
+      "id": "red-footed-tortoise",
+      "name": "Red-Footed Tortoise",
+      "emoji": "🐢",
+      "category": "Turtles & Tortoises",
+      "difficulty": "Intermediate",
+      "guideId": "red-footed-tortoise",
+      "image": "/assets/guides/red-footed-tortoise.jpg"
+    },
+    {
+      "id": "russian-tortoise",
+      "name": "Russian Tortoise",
+      "emoji": "🐢",
+      "category": "Turtles & Tortoises",
+      "difficulty": "Intermediate",
+      "guideId": "russian-tortoise",
+      "image": "/assets/guides/russian-tortoise.jpg"
+    },
+    {
+      "id": "sulcata-tortoise",
+      "name": "Sulcata Tortoise",
+      "emoji": "🐢",
+      "category": "Turtles & Tortoises",
+      "difficulty": "Advanced",
+      "guideId": "sulcata-tortoise",
+      "image": "/assets/guides/sulcata-tortoise.jpg"
+    }
+  ]
+}

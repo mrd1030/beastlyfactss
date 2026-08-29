@@ -17,7 +17,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   // has no way to keep following that same thread once they've landed.
   const deepDiveArticles = useMemo(() => {
     const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
-    const siblingSlugs = getDeepDiveSiblings(currentSlug);
+    const siblingSlugs = getDeepDiveSiblings(currentSlug, allPosts);
     if (siblingSlugs.length === 0) return [];
     return siblingSlugs
       .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))

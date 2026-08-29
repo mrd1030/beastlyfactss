@@ -184,26 +184,28 @@ export default function Guides() {
             className="w-full bg-card border border-border rounded-xl pl-10 pr-4 py-2.5 text-sm font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground"
           />
         </div>
-        <div className="flex flex-wrap gap-2 mb-3">
-          {guideFilters.map(f => {
+        <div className="flex flex-wrap items-center gap-y-2 mb-3 text-xs font-body">
+          {guideFilters.map((f, i) => {
             const slug = f.label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-');
             return (
-              <Link
-                key={f.label}
-                to={f.label === 'All' ? '/guides/' : `/guides/category/${slug}/`}
-                onClick={() => {
-                  setDogSize('All Sizes');
-                  setActiveSubtype(null);
-                  trackEvent('guides_category_filter_clicked', { category: f.label });
-                }}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all flex items-center gap-1.5 ${
-                  activeFilter === f.label
-                    ? 'bg-accent text-accent-foreground'
-                    : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                <span>{f.emoji}</span> {f.label}
-              </Link>
+              <React.Fragment key={f.label}>
+                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                <Link
+                  to={f.label === 'All' ? '/guides/' : `/guides/category/${slug}/`}
+                  onClick={() => {
+                    setDogSize('All Sizes');
+                    setActiveSubtype(null);
+                    trackEvent('guides_category_filter_clicked', { category: f.label });
+                  }}
+                  className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    activeFilter === f.label
+                      ? 'border-secondary text-foreground font-semibold'
+                      : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  <span>{f.emoji}</span> {f.label}
+                </Link>
+              </React.Fragment>
             );
           })}
         </div>
@@ -263,7 +265,7 @@ export default function Guides() {
         >
           <div
             onMouseDown={(e) => e.stopPropagation()}
-            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative"
+            className="bg-card border border-border p-6 rounded-2xl max-w-2xl w-full shadow-2xl relative landscape:max-h-[85dvh] landscape:overflow-y-auto"
           >
             <h2 className="text-xl font-bold mb-4 font-display text-foreground">Care Difficulty Legend</h2>
             <DifficultyLegend />

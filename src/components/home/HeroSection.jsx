@@ -37,7 +37,7 @@ export default function HeroSection({ onOpenFact }) {
       particleCount: 100,
       spread: 70,
       origin: { y: 0.8 },
-      colors: ['#FF8C42', '#00B8A9', '#FFD93D', '#E8336D'],
+      colors: ['#E4632F', '#D9A441', '#FFD93D', '#E8336D'],
     });
   };
 
@@ -48,18 +48,18 @@ export default function HeroSection({ onOpenFact }) {
         <picture>
           <source
             srcSet="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            sizes="100vw"
             type="image/webp"
           />
           <source
             srcSet="/assets/hero-400.jpg 400w, /assets/hero-800.jpg 800w, /assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+            sizes="100vw"
             type="image/jpeg"
           />
           <img
             src="/assets/hero-1200.jpg"
             alt="Majestic lion, colorful macaw, and bearded dragon in nature"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[50%_20%]"
             fetchpriority="high"
             width="1200"
             height="800"
@@ -67,9 +67,12 @@ export default function HeroSection({ onOpenFact }) {
           />
         </picture>
 
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent" />
+        {/* Gradient overlays. Light mode uses a much lighter wash than dark:
+            the light --background is a pale cream, so the same opacities
+            that read as a normal dark vignette in dark mode instead
+            haze the whole photo over in light mode. */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent dark:via-background/35" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/10 to-transparent dark:from-background/20" />
       </div>
 
       {/* Floating emojis - purely decorative.

@@ -52,10 +52,31 @@ function hasWordRun(haystack, needle) {
   return false;
 }
 
+// Whole-word compounds that pass the word-run test below but aren't a real
+// taxonomic "is-a" relationship, the shared word is a coincidental common-name
+// element, not evidence the animals are related. Different from the
+// sulcata/cat and corydoras-catfish false positives above (those were raw
+// substrings, fixed by requiring whole words): "zebra" and "rat" really are
+// complete, standalone words in both names here, they just don't mean the
+// second animal is a kind of the first. A Zebra Finch isn't a kind of zebra,
+// and a Kangaroo Rat or Naked Mole Rat isn't a kind of pet rat, just an
+// unrelated rodent that also got "rat" in its common name. Pairs are
+// unordered since the match itself is bidirectional.
+const FALSE_COMPOUNDS = [
+  ['zebra finch', 'zebra'],
+  ['zebra danio', 'zebra'],
+  ['rat', 'kangaroo rat'],
+  ['rat', 'naked mole rat'],
+];
+const isFalseCompound = (a, b) =>
+  FALSE_COMPOUNDS.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
+
 export function matchesAnimal(pageName, factAnimal) {
   const page = tokens(pageName);
   const animal = tokens(factAnimal);
   if (!page.length || !animal.length) return false;
+
+  if (isFalseCompound(page.join(' '), animal.join(' '))) return false;
 
   // Whole-word run either direction: "Corn Snake" gets generic "Snake" facts,
   // and a "Snake" page would get "Corn Snake" facts.

@@ -49,11 +49,11 @@ export default function Beastlypedia() {
   const groupPath = (group) =>
     group === 'All' ? '/beastlypedia/' : `/beastlypedia/group/${group.slug}/`;
 
-  const pillClass = (isActive) =>
-    `px-3.5 py-1.5 rounded-full text-xs font-body font-bold border transition-colors ${
+  const filterLinkClass = (isActive) =>
+    `inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
       isActive
-        ? 'bg-secondary text-secondary-foreground border-secondary'
-        : 'bg-card text-muted-foreground border-border hover:border-secondary/40'
+        ? 'border-secondary text-foreground font-semibold'
+        : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
     }`;
 
   const canonical = activeGroup === 'All' ? CANONICAL : `${CANONICAL}group/${groupSlug}/`;
@@ -100,18 +100,20 @@ export default function Beastlypedia() {
           <CrossLinkCta to="/fact-files/" label="See the claims about these animals, checked" />
         </header>
 
-        <div className="flex flex-wrap gap-2 mb-5">
-          <Link to={groupPath('All')} className={pillClass(activeGroup === 'All')}>
+        <div className="flex flex-wrap items-center gap-y-2 mb-5 text-xs font-body">
+          <Link to={groupPath('All')} className={filterLinkClass(activeGroup === 'All')}>
             All
           </Link>
           {populatedGroups.map((g) => (
-            <Link
-              key={g.slug}
-              to={groupPath(g)}
-              className={pillClass(activeGroup === g.name)}
-            >
-              {`${g.emoji} ${g.name}`}
-            </Link>
+            <React.Fragment key={g.slug}>
+              <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>
+              <Link
+                to={groupPath(g)}
+                className={filterLinkClass(activeGroup === g.name)}
+              >
+                {`${g.emoji} ${g.name}`}
+              </Link>
+            </React.Fragment>
           ))}
         </div>
 

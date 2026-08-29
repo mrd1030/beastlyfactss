@@ -355,25 +355,19 @@ export default function Blog() {
             </Link>
           )}
 
-          <div className="flex flex-wrap gap-2 mt-4">
-            <Link
-              to="/blog/"
-              className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                slugify(activeCategory) === 'all' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              All
-            </Link>
-            {categories.map(cat => (
-              <Link
-                key={cat.slug}
-                to={`/blog/category/${cat.slug}/`}
-                className={`px-3 py-1.5 rounded-full text-xs font-body font-semibold transition-all ${
-                  slugify(activeCategory) === cat.slug ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {cat.title} <span className="opacity-60">({cat.count})</span>
-              </Link>
+          <div className="flex flex-wrap items-center gap-y-2 mt-4 text-xs font-body">
+            {[{ slug: 'all', title: 'All', to: '/blog/' }, ...categories.map(cat => ({ slug: cat.slug, title: cat.title, to: `/blog/category/${cat.slug}/` }))].map((item, i) => (
+              <React.Fragment key={item.slug}>
+                {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
+                <Link
+                  to={item.to}
+                  className={`inline-block pb-1 border-b-2 whitespace-nowrap transition-colors ${
+                    slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
+                  }`}
+                >
+                  {item.title}
+                </Link>
+              </React.Fragment>
             ))}
           </div>
         </div>
@@ -481,6 +475,8 @@ function AuthorBio() {
 function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFilesMode = false, allPosts, onSelectPost }) {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const contentRef = useRef(null);
+  const sidebarRef = useRef(null);
+  const sidebarWrapperRef = useRef(null);
   // getDisplayDate() compares publishedAt against the live "now" clock, so a
   // future-scheduled post's own permalink page prerenders with the date span
   // hidden - once the real world catches up to that date without a redeploy,
@@ -495,6 +491,136 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     setDisplayDate(getDisplayDate(post.publishedAt));
   }, [post.publishedAt]);
   const postSlug = post.slug?.current || post._id || post.id;
+
+  // Resets both the page scroll and the sidebar's own scroll whenever the
+  // displayed post changes. Needed for two separate reasons: React Router's
+  // <Link> (what in-article MDX links render as, see MdxLink.jsx) doesn't
+  // restore scroll on navigation at all, and the sidebar below is a second,
+  // independent overflow-y-auto container whose own scrollTop persists
+  // across a post swap regardless of what the window does - handleSelectPost
+  // already scrolls the window for sidebar-triggered navigation, but never
+  // touched the sidebar's own scroll position, which is what stayed wherever
+  // it was left on the previous post.
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (sidebarRef.current) sidebarRef.current.scrollTop = 0;
+  }, [postSlug]);
+
+  // The sidebar (an overflow-y-auto box taller inside than the sticky window
+  // it sits in) only ever gets actively driven in two zones: right at the
+  // top of the page (forced back to 0) and the short final stretch near the
+  // bottom, where the browser is already natively detaching the sticky box
+  // to let it scroll away - there, its content gets slid up so the bottom
+  // (the last "You Might Also Like" card, etc.) has actually been shown by
+  // the time it leaves. Everywhere in between - the whole rest of the
+  // article - this leaves scrollTop exactly as it is, whether that's still
+  // 0 or wherever the reader last scrolled it themselves. Driving it off the
+  // scroll ratio for the ENTIRE page (an earlier version of this) meant any
+  // manual scroll got snapped straight back the instant the reader nudged
+  // the page again, anywhere at all - this only reasserts control at the two
+  // edges, matching them intentionally.
+  //
+  // Also backs off entirely for prefers-reduced-motion, since this is
+  // exactly the kind of scroll-triggered motion that setting asks to skip.
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const wrapper = sidebarWrapperRef.current;
+    const sticky = sidebarRef.current;
+    if (!wrapper || !sticky) return;
+
+    const desktopQuery = window.matchMedia('(min-width: 1024px)');
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let ticking = false;
+    // Where each zone's transition interpolates FROM - captured fresh each
+    // time that zone is entered, from whatever scrollTop the sidebar
+    // actually has right then (0 by default, or wherever a manual scroll,
+    // or the other zone, left it). Without this, a zone would compute its
+    // target as a plain ratio, ignoring the current position entirely - a
+    // sidebar already sitting somewhere else would jump straight to
+    // whatever the ratio happened to compute first, then continue from
+    // there, as if wherever it started had never happened.
+    let releaseBaseline = null;
+    let topBaseline = null;
+
+    const sync = () => {
+      ticking = false;
+      if (!desktopQuery.matches || motionQuery.matches) return;
+
+      const topOffset = parseFloat(getComputedStyle(sticky).top) || 64;
+      const wrapperRect = wrapper.getBoundingClientRect();
+      const stickyHeight = sticky.offsetHeight;
+      const maxScroll = sticky.scrollHeight - sticky.clientHeight;
+      if (stickyHeight <= 0 || maxScroll <= 0) return;
+
+      // engageY is the scrollY where the wrapper's top first reaches
+      // topOffset - the instant native `position: sticky` first engages.
+      // Below that, the reader is still effectively at the top of the
+      // article, so the top zone eases the sidebar back to 0 - over the
+      // same modest window (a third of stickyHeight, capped by however much
+      // room actually exists above engageY) used for the bottom reveal, so
+      // scrolling up from a bottom-zone or manually-set position doesn't
+      // instantly snap to 0 the moment engageY is crossed.
+      const wrapperTopDocY = wrapperRect.top + window.scrollY;
+      const engageY = wrapperTopDocY - topOffset;
+      if (window.scrollY <= engageY) {
+        if (topBaseline === null) topBaseline = sticky.scrollTop;
+        const topSpan = Math.min(stickyHeight / 3, engageY);
+        const resetRatio = topSpan <= 0
+          ? 1
+          : Math.min(1, Math.max(0, (engageY - window.scrollY) / topSpan));
+        sticky.scrollTop = topBaseline * (1 - resetRatio);
+        releaseBaseline = null;
+        return;
+      }
+      topBaseline = null;
+
+      // releaseStartY is the scrollY where native `position: sticky` starts
+      // pulling the box's top back up off topOffset (the instant it begins
+      // detaching). Because topOffset (4rem) and stickyHeight
+      // (calc(100vh-6rem)) are both tied to the viewport, releaseStartY
+      // always lands within ~32px of the moment the article's own last
+      // block (the main column's "You May Also Like" cards) has just fully
+      // scrolled into view - i.e. "release starting" and "reached the real
+      // end of the article" are effectively the same instant. Everything
+      // that comes after that in the document is footer/comments/subscribe-box
+      // filler, not article content.
+      //
+      // So the reveal completes over a modest slice of that filler (a third
+      // of stickyHeight - long enough to feel like a slide, not a snap),
+      // capped by however much of the page is actually left for the rare
+      // short article that doesn't have that much room. Earlier versions
+      // spanned the full stickyHeight, or the entire remaining page down to
+      // the literal footer - both meant scrolling through most or all of a
+      // long related-posts/comments stack just to see the reveal finish.
+      const releaseStartY = wrapperRect.bottom + window.scrollY - (topOffset + stickyHeight);
+      const pageEndY = document.documentElement.scrollHeight - window.innerHeight;
+      const span = Math.min(stickyHeight / 3, pageEndY - releaseStartY);
+      const ratio = span <= 0
+        ? (window.scrollY >= releaseStartY ? 1 : 0)
+        : Math.min(1, Math.max(0, (window.scrollY - releaseStartY) / span));
+      if (ratio <= 0) {
+        releaseBaseline = null; // middle zone - leave scrollTop untouched
+        return;
+      }
+      if (releaseBaseline === null) releaseBaseline = sticky.scrollTop;
+      sticky.scrollTop = releaseBaseline + ratio * (maxScroll - releaseBaseline);
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(sync);
+    };
+
+    sync();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [postSlug]);
+
   const canonicalUrl = `https://beastlyfacts.com/blog/${postSlug}/`;
   // Dedicated frontmatter SEO fields win; excerpt/title/image are the fallbacks.
   // The brand suffix is appended only when the result still fits in 60
@@ -617,7 +743,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
         {factsListSchema && <script type="application/ld+json">{JSON.stringify(factsListSchema)}</script>}
       </Helmet>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        {/* No items-start: the sidebar's grid cell needs to stretch to match
+            the article column's height so its sticky child has room to
+            travel and release naturally near the bottom, instead of being
+            boxed into its own short natural height with nowhere to go. */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <button onClick={onBack} className="flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2 mb-4">
               <ArrowLeft className="w-4 h-4" />{backLabel}
@@ -769,21 +899,32 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             />
           </div>
 
-          <div className="lg:sticky lg:top-16 self-start max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5">
-            {/* Hidden below lg: the collapsible instance above the article
-                already covers mobile. */}
-            <div className="hidden lg:block">
-              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+          {/* This outer div is the actual grid cell - with items-start gone
+              from the row above, it stretches to match the article column's
+              height by grid default. The sticky element below is nested
+              inside it rather than being the grid cell itself: sticky needs
+              a taller containing block than its own height to have room to
+              travel in, then release (get carried up with the page) once
+              this wrapper's bottom - which lines up with the article's own
+              end - reaches it. That release is native browser behavior,
+              nothing JS-driven about it. */}
+          <div ref={sidebarWrapperRef}>
+            <div className="lg:sticky lg:top-16 max-h-[calc(100vh-6rem)] overflow-y-auto custom-scrollbar-hide pb-4 space-y-5" ref={sidebarRef}>
+              {/* Hidden below lg: the collapsible instance above the article
+                  already covers mobile. */}
+              <div className="hidden lg:block">
+                <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} />
+              </div>
+              <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
+              <PostSidebar
+                allPosts={allPosts}
+                currentPost={post}
+                onSelectPost={(p) => {
+                  onSelectPost(p);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              />
             </div>
-            <GlossaryHighlighter contentRef={contentRef} watch={postSlug} />
-            <PostSidebar
-              allPosts={allPosts} 
-              currentPost={post} 
-              onSelectPost={(p) => {
-                onSelectPost(p);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }} 
-            />
           </div>
         </div>
       </div>

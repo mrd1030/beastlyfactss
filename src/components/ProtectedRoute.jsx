@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import { useAuth } from '@/lib/AuthContext';
+import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 
 const DefaultFallback = () => (
@@ -9,7 +9,7 @@ const DefaultFallback = () => (
   </div>
 );
 
-export default function ProtectedRoute({ fallback = <DefaultFallback />, unauthenticatedElement }) {
+function ProtectedRouteInner({ fallback, unauthenticatedElement }) {
   const { isAuthenticated, isLoadingAuth, authChecked, authError, checkUserAuth } = useAuth();
 
   useEffect(() => {
@@ -34,4 +34,16 @@ export default function ProtectedRoute({ fallback = <DefaultFallback />, unauthe
   }
 
   return <Outlet />;
+}
+
+// AuthProvider mounts here rather than at the app root, so AuthContext (and
+// the @supabase/supabase-js it imports) only ever loads for the one route
+// that needs it. ProtectedRoute is itself lazy-loaded from App.jsx, so this
+// whole module - and this import - only fetches on a /composer visit.
+export default function ProtectedRoute({ fallback = <DefaultFallback />, unauthenticatedElement }) {
+  return (
+    <AuthProvider>
+      <ProtectedRouteInner fallback={fallback} unauthenticatedElement={unauthenticatedElement} />
+    </AuthProvider>
+  );
 }

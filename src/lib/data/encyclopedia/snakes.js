@@ -52,6 +52,19 @@ export const snakeEncyclopedia = [
     },
   },
   {
+    id: "garter-snake", name: "Garter Snake", scientific: "Thamnophis sirtalis",
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "garter-snake", available: true, image: "/assets/guides/garter-snake.jpg",
+    bio: {
+      overview: "The common garter snake is one of the most widely distributed reptiles in North America, found in gardens, wetlands, and vacant lots from Florida to coastal Quebec and west to British Columbia - genuinely one of the most common \"found in the backyard\" snakes in the US. Unlike every other snake on this site, garter snakes are live-bearing (ovoviviparous) rather than egg-laying, and they're semi-aquatic hunters that key in on fish, earthworms, slugs, and amphibians rather than rodents - many individuals never accept a plain mouse. Like the hognose snake, they carry a mild rear-fanged venom from a Duvernoy's gland that helps subdue small prey but is harmless to people in normal handling. Cheap, hardy, and small, they're an accessible pet as long as a keeper is prepared to source fish and worms instead of relying on frozen mice.",
+      origin: "Most of the United States and Canada; largely absent from the arid Southwest",
+      habitat: "Meadows, marshes, woodland edges, hillsides, and suburban gardens near water",
+      adultSize: "18-26 inches (46-66 cm) typical; large females occasionally exceed 3.5 feet (107+ cm)",
+      wildDiet: "Earthworms, fish, amphibians, slugs, and snails; occasionally small rodents",
+      wildLifespan: "2-4 years in the wild (6-10+ years in captivity, some documented past 20)",
+      conservation: "Least Concern (IUCN); the San Francisco garter snake subspecies is federally endangered",
+    },
+  },
+  {
     id: "hognose-snake", name: "Hognose Snake", scientific: "Heterodon spp.",
     category: "Snakes", emoji: "🐍", difficulty: "Intermediate", guideId: "hognose-snake", available: true, image: "/assets/guides/hognose-snake.jpg",
     bio: {
@@ -74,6 +87,19 @@ export const snakeEncyclopedia = [
       adultSize: "2-4 feet (60-120 cm) depending on subspecies",
       wildDiet: "Rodents, lizards, birds, eggs, and other snakes",
       wildLifespan: "10-22 years",
+      conservation: "Least Concern (IUCN)",
+    },
+  },
+  {
+    id: "rosy-boa", name: "Rosy Boa", scientific: "Lichanura trivirgata",
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "rosy-boa", available: true, image: "/assets/guides/rosy-boa.jpg",
+    bio: {
+      overview: "The rosy boa is a small, desert-dwelling boa native to the arid Southwestern United States and Baja California, Mexico - a striking contrast to this site's other boa, the Boa constrictor, which can grow six to ten times longer. Rarely exceeding 3 feet as adults, rosy boas are famously docile and slow-moving even by boa standards, rarely bite, and are frequently recommended as one of the calmest snakes in the entire hobby. Their desert origin means lower humidity and simpler climate needs than the tropical boas and pythons most of this site covers. With proper care they're also remarkably long-lived, regularly reaching 20 to 30 years and occasionally beyond.",
+      origin: "Southwestern United States and Baja California, Mexico",
+      habitat: "Rocky desert, chaparral, and arid scrubland",
+      adultSize: "24-36 inches (60-90 cm); rarely over 4 feet (122 cm)",
+      wildDiet: "Small mammals (kangaroo rats, deer mice, wood rats), nestling birds, and lizards",
+      wildLifespan: "20-30+ years in captivity (wild lifespan undocumented)",
       conservation: "Least Concern (IUCN)",
     },
   },
