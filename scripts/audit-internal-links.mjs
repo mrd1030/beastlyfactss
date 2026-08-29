@@ -1,7 +1,21 @@
 // Reports pages whose body content carries fewer than N internal links.
 //
 // Runs against dist/, so it sees what a crawler sees rather than what the
-// source suggests. Run `node prerender.mjs` first.
+// source suggests. Run `node prerender.mjs` first - the build does, this runs
+// straight after it.
+//
+// Reporting only unless MAX_THIN_PAGES is set. It is deliberately a ratchet
+// rather than a fixed floor: nobody knows what the real number is until a build
+// has run, and a threshold picked blind either fails every build on day one or
+// is set so loose it never fires. Run it once, read "Below N content links",
+// then set MAX_THIN_PAGES to that figure. From then on the count can fall but
+// never rise, and each time it falls the number can be lowered again.
+//
+// This complements check-internal-links.mjs rather than repeating it. That one
+// reads .mdx source and enforces a floor of 1 in-body markdown link per
+// article. This one reads rendered HTML, so it also covers routes with no .mdx
+// behind them at all - /guides/<id>/, /encyclopedia/animal/<id>/, the
+// beastlypedia profiles - which is most of what the sitemap holds.
 //
 // The hard part is separating real content links from site chrome. The navbar,
 // footer, bottom tabs and breadcrumb appear on every page, and a page whose
@@ -16,8 +30,14 @@ import path from 'node:path';
 const DIST = 'dist';
 const THRESHOLD = Number(process.argv[2]) || 3;
 const BOILERPLATE_RATIO = 0.9;
+// Unset = report only. See the ratchet note above.
+const MAX_THIN_PAGES =
+  process.env.MAX_THIN_PAGES === undefined ? null : Number(process.env.MAX_THIN_PAGES);
 
 function walk(dir, out = []) {
+  // Missing dist/ falls through to the page-count guard below, which explains
+  // what to run, rather than surfacing a bare ENOENT stack.
+  if (!fs.existsSync(dir)) return out;
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
     const p = path.join(dir, e.name);
     if (e.isDirectory()) walk(p, out);
@@ -108,3 +128,30 @@ fs.writeFileSync(
   `${JSON.stringify({ threshold: THRESHOLD, chrome: [...chrome].sort(), pages: rows.sort((a, b) => a.content - b.content) }, null, 2)}\n`
 );
 console.log('Full data: internal-link-audit.json');
+
+if (MAX_THIN_PAGES === null) {
+  console.log(
+    `\nReporting only. To gate the build on this, set MAX_THIN_PAGES=${thin.length} ` +
+      '(the current count),\nthen lower it as pages get linked.',
+  );
+  process.exit(0);
+}
+
+if (Number.isNaN(MAX_THIN_PAGES)) {
+  console.error(`\nMAX_THIN_PAGES is not a number: "${process.env.MAX_THIN_PAGES}"`);
+  process.exit(1);
+}
+
+if (thin.length > MAX_THIN_PAGES) {
+  console.error(
+    `\nFAIL - ${thin.length} pages carry fewer than ${THRESHOLD} content links, ` +
+      `budget is ${MAX_THIN_PAGES}.\nLink the new pages from somewhere, or raise ` +
+      'MAX_THIN_PAGES deliberately if the growth is intended.',
+  );
+  process.exit(1);
+}
+
+console.log(`\nWithin budget: ${thin.length}/${MAX_THIN_PAGES} thin pages.`);
+if (thin.length < MAX_THIN_PAGES) {
+  console.log(`Ratchet it down: set MAX_THIN_PAGES=${thin.length}.`);
+}
