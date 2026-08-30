@@ -70,8 +70,8 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative pt-24 sm:pt-28 pb-10">
-      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+   <section className="relative pt-3 sm:pt-6 pb-10">
+      <div className="mx-auto w-full max-w-7xl px-0 sm:px-6">
         {/* ==================== HERO IMAGE ====================
             Contained rather than full-bleed, and at a fixed 3:2 that never
             changes across breakpoints, so the photograph is shown WHOLE at
@@ -84,15 +84,15 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative aspect-[3/2] overflow-hidden rounded-t-2xl">
+        <div className="relative aspect-[3/2] overflow-hidden rounded-2xl">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
                 index.html must name this same format or the preloaded file is
                 fetched at high priority and discarded. */}
-            <source srcSet={HERO_AVIF} sizes="(min-width: 896px) 848px, 100vw" type="image/avif" />
-            <source srcSet={HERO_WEBP} sizes="(min-width: 896px) 848px, 100vw" type="image/webp" />
-            <source srcSet={HERO_JPG} sizes="(min-width: 896px) 848px, 100vw" type="image/jpeg" />
+            <source srcSet={HERO_AVIF} sizes="(min-width: 1280px) 1232px, 100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="(min-width: 1280px) 1232px, 100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="(min-width: 1280px) 1232px, 100vw" type="image/jpeg" />
             <img
               src={hero1200Jpg}
               alt="Majestic lion, colorful macaw, and bearded dragon in nature"
@@ -104,13 +104,22 @@ export default function HeroSection({ onOpenFact }) {
             />
           </picture>
 
-          {/* Blends the foot of the image into the page background so there is
-              no hard horizontal edge between photo and content. */}
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>
 
       {/* Content */}
-        <div className="relative -mt-10 sm:-mt-14 flex justify-center text-center">
+        {/* The text block, deliberately overlapping the image rather than
+            sitting below it. It carries the page background as its own
+            surface, so every character is on a flat colour at full contrast in
+            both themes: no scrim, no negotiation with whatever the photograph
+            happens to be doing. Inset from the image on both sides and pulled
+            up so it reads as a panel resting ON the picture, while leaving the
+            top two thirds of the photo completely clear.
+            It is a real card, not a hole: bg-card sits a shade off the page
+            background, with the same border and rounding the site's other
+            cards use, and a shadow so it reads as resting ON the photograph
+            rather than punched out of it. border-b-0 because the bottom edge
+            runs on into the page rather than closing. */}
+        <div className="relative z-10 -mt-14 sm:-mt-24 mx-4 sm:mx-16 rounded-t-2xl border border-b-0 border-border bg-card shadow-2xl px-4 pt-7 sm:px-12 sm:pt-10 flex justify-center text-center">
           <div className="max-w-2xl flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
@@ -127,7 +136,7 @@ export default function HeroSection({ onOpenFact }) {
               Facts that roar. Guides that care.
             </div>
 
-            <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4">
+            <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
               <span className="text-foreground">Curated animal facts</span>
               <br />
               <span className="text-secondary">and practical care advice</span>
