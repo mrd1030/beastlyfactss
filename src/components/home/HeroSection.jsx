@@ -126,7 +126,13 @@ export default function HeroSection({ onOpenFact }) {
             background, with the same border and rounding the site's other
             cards use, and a shadow so it reads as resting ON the photograph
             rather than punched out of it. border-b-0 because the bottom edge
-            runs on into the page rather than closing. */}
+            runs on into the page rather than closing.
+            The border is warmed in dark mode. --border there is hsl(141 14% 42%),
+            a green-grey, which renders as RGB(79,98,81) once it is at 70% over
+            the photograph. Against red desert earth that reads cold, close to
+            blue, by simultaneous contrast. A tan at hue 36 sits in the same
+            family as the image and as the light-mode --border, which is already
+            warm at hue 38. Light mode is left alone for that reason. */}
         <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
@@ -138,7 +144,7 @@ export default function HeroSection({ onOpenFact }) {
               element PageSpeed still names as the sole shift culprit. It is
               above the fold and already in the HTML, so it should just be
               visible. */}
-          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
+          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 dark:border-[hsl(36_24%_52%/0.55)] bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
