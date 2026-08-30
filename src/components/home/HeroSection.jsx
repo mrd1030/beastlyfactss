@@ -125,7 +125,7 @@ export default function HeroSection({ onOpenFact }) {
             cards use, and a shadow so it reads as resting ON the photograph
             rather than punched out of it. border-b-0 because the bottom edge
             runs on into the page rather than closing. */}
-        <div className="relative z-[5] w-full max-w-[640px] -mt-4 sm:-mt-[100px] px-3 sm:px-5 flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
@@ -143,11 +143,9 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Curated animal facts</span>
+              <span className="text-foreground">Animal facts, verified.</span>
               <br />
-              <span className="text-secondary">and practical care advice</span>
-              <br />
-              <span className="text-foreground">for curious families and animal lovers.</span>
+              <span className="text-secondary">Pet care, made simple.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
@@ -192,7 +190,7 @@ export default function HeroSection({ onOpenFact }) {
               can feed CLS. It is also above the fold, so a 0.3s delay meant
               prerendered content sat invisible waiting for framer to hydrate.
               The markup is already in the HTML; it should simply be visible. */}
-          <div className="bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
+          <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
