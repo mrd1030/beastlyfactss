@@ -76,7 +76,7 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-0 lg:px-4 pt-6 pb-10">
+   <section className="relative flex flex-col items-center px-0 lg:px-4 pt-0 pb-10">
         {/* ==================== HERO IMAGE ====================
             Contained rather than full-bleed, and at a fixed 3:2 that never
             changes across breakpoints, so the photograph is shown WHOLE at
@@ -89,7 +89,7 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative w-full max-w-6xl aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-t-[20px] sm:rounded-t-[28px]">
+        <div className="relative w-full max-w-6xl aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
