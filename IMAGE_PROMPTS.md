@@ -1,8 +1,11 @@
 # Pending image prompts
 
-17 referenced images do not exist yet, so `scripts/check-images.mjs` fails and
+10 referenced images do not exist yet, so `scripts/check-images.mjs` fails and
 the build stops before Vite. This file holds a prompt for each. Delete an entry
 once its file is committed.
+
+The seven breed images are done and their prompts have been removed. What is
+left is the legal guide image and the nine article images.
 
 Both directories want a 3:2 frame. Guides are 1168x784, articles are 1600x1067.
 Export JPEG quality 80. `scripts/generate-thumbnails.js` derives the thumb and
@@ -37,86 +40,16 @@ and no two share a setting, palette or camera position:
 
 ## Sourcing
 
-**Buy stock for the seven breed images.** Breed morphology is the substance of
-those pages and generators get it wrong in ways an owner spots at once: Scottish
-Fold ears rendered unfolded, Sphynx as bald rubber rather than downy, American
-Shorthair drawn as a British Shorthair, Dachshund proportions normalized toward
-a generic small dog. `IMAGE_CREDITS.md` logs this exact failure with the coconut
-crab. The existing breed images are photographs.
+The seven breed images were generated and checked against breed standards before
+being installed, including the traits generators usually miss: the Scottish Fold
+ears actually fold, the Sphynx reads as downy rather than bald, and the
+Rottweiler carries a natural undocked tail. Worth the same check on anything
+added later, since those are the details a reader who owns the breed will catch.
 
-**Generation is fine for the nine article images and the legal one.** No specific
-animal is being identified, which is how the existing article set was made.
+Generation is fine for the remaining ten. No specific animal is being identified
+in any of them, which is how the existing article set was made.
 
 ---
-
-# Breed images, `public/assets/guides/`, 1168x784
-
-### cat-american-shorthair.jpg
-Photorealistic photograph of a silver tabby American Shorthair standing in
-profile on a pale hardwood floor in a bright sunlit hallway, head turned toward
-the camera. Dense black tabby markings on a silver ground with a clear bullseye
-swirl on the flank, full cheeks, medium round face, muscular working cat build,
-short thick coat, gold eyes. Not a British Shorthair: longer body, less flat
-face, no plush blue coat. Late morning sun striping the floor, shallow depth of
-field, 85mm, f/2, 3:2.
-
-### cat-scottish-fold.jpg
-Photorealistic photograph of a Scottish Fold cat sitting upright on a windowsill
-in three-quarter profile against soft backlight, so the folded ears read as one
-smooth unbroken dome from crown to cheek. Ears folded tightly forward and down,
-flat to the skull. Large round eyes, short curved nose, dense blue-grey plush
-coat. Bright hazy morning light through sheer curtains, rim light along the fur,
-cool airy palette, 50mm, f/2, 3:2.
-
-### cat-sphynx.jpg
-Photorealistic photograph of a Sphynx cat curled inside a chunky knitted wool
-blanket on a sofa, only the head, shoulders and one forepaw emerging, in warm
-lamplight. Skin covered in fine downy peach fuzz rather than bare rubber, deep
-soft wrinkles across the forehead, neck and shoulders. Very large wide-set ears,
-prominent cheekbones, large lemon-shaped eyes, warm pinkish-grey skin with faint
-tabby patterning. Cozy amber palette, close portrait, 85mm, f/1.8, 3:2.
-
-### dog-beagle.jpg
-Photorealistic photograph of an adult tricolor Beagle working a scent trail
-across an autumn lawn, nose down in fallen leaves, ears swinging forward, one
-front paw lifted mid-step. Black saddle, tan head and legs, white chest and
-muzzle, white tail tip held upright. Bright overcast daylight, damp grass, russet
-and green palette, side on at the dog's eye level, a little motion blur in the
-ears, 70mm, f/2.8, 3:2.
-
-### dog-bulldog.jpg
-Photorealistic photograph of an adult English Bulldog sitting square on a shaded
-stone porch step on a warm afternoon, facing the camera. Broad heavy head,
-moderate nose roll, wide undershot jaw, small rose ears, heavy shoulders,
-characteristic wide bowed front stance, short smooth fawn and white coat. Mouth
-closed, breathing easily, clear bright eyes. Cool open shade against a warm
-sunlit garden behind, thrown well out of focus, 50mm, f/2, 3:2.
-
-### dog-dachshund.jpg
-Photorealistic photograph of a smooth-coated standard Dachshund standing in full
-profile on a garden path, camera at ground level so the long low body runs the
-full width of the frame. Deep chest with a prominent forechest, level topline,
-short strong legs, long tapering muzzle, long low-set ears, rich red coat, tail
-carried level with the back. Warm low evening sun raking along the back from the
-side, long shadow across the path, 85mm, f/2.5, 3:2.
-
-### dog-rottweiler.jpg
-Photorealistic photograph of an adult Rottweiler sitting calmly on open grass in
-golden early evening light, body angled three-quarters to camera, head turned to
-face it. Short dense black coat with crisp rust markings over the eyes, on the
-cheeks, muzzle, chest and legs. Broad head, medium triangular ears carried
-forward, powerful level topline. Natural full undocked tail carried low and
-clearly visible. Calm steady expression, mouth closed, warm backlight rimming the
-coat, 85mm, f/2, 3:2.
-
-### conformation-breeding-laws.jpg
-Photorealistic editorial photograph of a quiet empty veterinary consulting room
-in cool morning light. A stainless steel examination table in the foreground
-holds a stethoscope, a plain clipboard with blank unmarked paper, and a simple
-wooden measuring caliper. Pale walls, a window softly out of focus behind, no
-people and no animals. Restrained documentary still life, neutral grey and steel
-palette, slight overhead angle, 35mm, f/4, 3:2. No text, logos, branding, flags
-or legible writing anywhere in the frame.
 
 ---
 
