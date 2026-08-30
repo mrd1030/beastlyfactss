@@ -143,9 +143,9 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Animal facts, verified.</span>
+              <span className="text-foreground">Come for the wild facts.</span>
               <br />
-              <span className="text-secondary">Pet care, made simple.</span>
+              <span className="text-secondary">Stay for the pet care.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
