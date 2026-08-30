@@ -69,7 +69,7 @@
          Since AVIF is now the first source there, this preloads AVIF. The
          type attribute is what keeps that safe: a browser that cannot decode
          image/avif skips this link entirely rather than wasting the fetch, and
-         falls through to the webp source as normal. -->
+         falls through to the webp source as normal.
          Paths point into src/assets rather than public/ so Vite content-hashes
          them and rewrites both href and every URL inside imagesrcset (verified:
          it does rewrite imagesrcset, not just href). They must stay identical to
