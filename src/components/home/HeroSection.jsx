@@ -28,6 +28,12 @@ import hero800Jpg from '@/assets/hero-800.jpg';
 import hero1200Jpg from '@/assets/hero-1200.jpg';
 import hero1600Jpg from '@/assets/hero-1600.jpg';
 
+// The image dissolves rather than being cut off: its own alpha ramps out over
+// the last third, revealing the page background, so there is no hard bottom
+// edge for the text panel to fight. A tint laid over the top cannot do this,
+// it only fakes it against one known background colour.
+const MASK = 'linear-gradient(to bottom, black 0%, black 68%, transparent 96%)';
+
 const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
 const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
 const HERO_WEBP = srcSet(hero400Webp, hero800Webp, hero1200Webp, hero1600Webp);
@@ -70,8 +76,7 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative pt-3 sm:pt-6 pb-10">
-      <div className="mx-auto w-full max-w-7xl px-0 sm:px-6">
+   <section className="relative flex flex-col items-center px-3.5 pt-6 pb-10">
         {/* ==================== HERO IMAGE ====================
             Contained rather than full-bleed, and at a fixed 3:2 that never
             changes across breakpoints, so the photograph is shown WHOLE at
@@ -84,19 +89,20 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative aspect-[3/2] overflow-hidden rounded-2xl">
+        <div className="relative w-full max-w-[900px] aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-t-[20px] sm:rounded-t-[28px]">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
                 index.html must name this same format or the preloaded file is
                 fetched at high priority and discarded. */}
-            <source srcSet={HERO_AVIF} sizes="(min-width: 1280px) 1232px, 100vw" type="image/avif" />
-            <source srcSet={HERO_WEBP} sizes="(min-width: 1280px) 1232px, 100vw" type="image/webp" />
-            <source srcSet={HERO_JPG} sizes="(min-width: 1280px) 1232px, 100vw" type="image/jpeg" />
+            <source srcSet={HERO_AVIF} sizes="(min-width: 900px) 900px, 100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="(min-width: 900px) 900px, 100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="(min-width: 900px) 900px, 100vw" type="image/jpeg" />
             <img
               src={hero1200Jpg}
               alt="Majestic lion, colorful macaw, and bearded dragon in nature"
               className="h-full w-full object-cover"
+              style={{ maskImage: MASK, WebkitMaskImage: MASK }}
               fetchpriority="high"
               width="1200"
               height="800"
@@ -119,8 +125,8 @@ export default function HeroSection({ onOpenFact }) {
             cards use, and a shadow so it reads as resting ON the photograph
             rather than punched out of it. border-b-0 because the bottom edge
             runs on into the page rather than closing. */}
-        <div className="relative z-10 -mt-14 sm:-mt-24 mx-4 sm:mx-16 rounded-t-2xl border border-b-0 border-border bg-card shadow-2xl px-4 pt-7 sm:px-12 sm:pt-10 flex justify-center text-center">
-          <div className="max-w-2xl flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[640px] -mt-4 sm:-mt-[26px] px-3 sm:px-5 flex flex-col items-center">
+          <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
               prerendered HTML, so this block ships as a bare <div> and only
@@ -130,7 +136,7 @@ export default function HeroSection({ onOpenFact }) {
               element PageSpeed still names as the sole shift culprit. It is
               above the fold and already in the HTML, so it should just be
               visible. */}
-          <div>
+          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
@@ -222,7 +228,6 @@ export default function HeroSection({ onOpenFact }) {
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 }
