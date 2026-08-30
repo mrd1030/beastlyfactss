@@ -234,9 +234,19 @@ const STATIC_ROUTES = [
 // runner blips. Giving listings a tight one just guarantees a wasted attempt,
 // which is what measuring showed: at 20s the big listings failed attempt 1 on
 // every run, and even at 30s several still did.
+// /exotic-pet-laws/<species> was missing here, so all 45 of them were treated as
+// listings. That is backwards twice over: they are single-species leaves, and
+// because HEAVY_TIMEOUTS_MS escalates faster it burns ROUTE_BUDGET_MS in three
+// attempts (60+75+90=225) where a leaf gets four (45+60+60+60=225) in the same
+// wall clock. Fewer retries is exactly wrong for the failure these actually hit:
+// rendered alone with no contention, sulcata-tortoise, prairie-dog and serval
+// each still failed attempt 1 and then rendered in about 5s on attempt 2, which
+// is a cold bundle cache, not a slow page. sulcata shelled in the 29 August
+// build after using all three.
 const LEAF_PATTERNS = [
   /^\/blog\/[^/]+$/, /^\/facts\/[^/]+$/, /^\/beastlypedia\/[^/]+$/,
   /^\/guides\/[^/]+$/, /^\/encyclopedia\/animal\/[^/]+$/, /^\/chronicles\/[^/]+(\/\d+)?$/,
+  /^\/exotic-pet-laws\/[^/]+$/,
 ];
 const isLeaf = (route) =>
   LEAF_PATTERNS.some(p => p.test(route)) &&

@@ -69,8 +69,11 @@
 /category/invertebrates/ /blog/category/invertebrates/ 301
 /category/pet-care /blog/category/pet-care/ 301
 /category/pet-care/ /blog/category/pet-care/ 301
-/category/product-picks /blog/category/product-picks/ 301
-/category/product-picks/ /blog/category/product-picks/ 301
+# Points straight at /gear/ rather than following its siblings' pattern:
+# /blog/category/product-picks/ is itself retired (see the note above) and
+# only redirects onward, so routing through it would cost a second hop.
+/category/product-picks /gear/ 301
+/category/product-picks/ /gear/ 301
 /category/reptiles /blog/category/reptiles/ 301
 /category/reptiles/ /blog/category/reptiles/ 301
 /category/small-and-exotic-pets /blog/category/small-and-exotic-pets/ 301
@@ -142,3 +145,102 @@
 /encyclopedia/animal/fire-belly-toad/ /encyclopedia/animal/fire-bellied-toad/ 301
 /guides/fire-belly-toad /guides/fire-bellied-toad/ 301
 /guides/fire-belly-toad/ /guides/fire-bellied-toad/ 301
+
+# Breed care guides carry a species-prefixed id (dog-/cat-) while their
+# encyclopedia entry does not, so a /guides/<encyclopedia-id>/ link 404s.
+# Google found three of these live; the rest are the same latent mismatch.
+/guides/maine-coon /guides/cat-maine-coon/ 301
+/guides/maine-coon/ /guides/cat-maine-coon/ 301
+/guides/siamese /guides/cat-siamese/ 301
+/guides/siamese/ /guides/cat-siamese/ 301
+/guides/ragdoll /guides/cat-ragdoll/ 301
+/guides/ragdoll/ /guides/cat-ragdoll/ 301
+/guides/bengal /guides/cat-bengal/ 301
+/guides/bengal/ /guides/cat-bengal/ 301
+/guides/persian /guides/cat-persian/ 301
+/guides/persian/ /guides/cat-persian/ 301
+/guides/labrador /guides/dog-labrador/ 301
+/guides/labrador/ /guides/dog-labrador/ 301
+/guides/golden-retriever /guides/dog-golden-retriever/ 301
+/guides/golden-retriever/ /guides/dog-golden-retriever/ 301
+/guides/german-shepherd /guides/dog-german-shepherd/ 301
+/guides/german-shepherd/ /guides/dog-german-shepherd/ 301
+/guides/french-bulldog /guides/dog-french-bulldog/ 301
+/guides/french-bulldog/ /guides/dog-french-bulldog/ 301
+/guides/border-collie /guides/dog-border-collie/ 301
+/guides/border-collie/ /guides/dog-border-collie/ 301
+/guides/siberian-husky /guides/dog-siberian-husky/ 301
+/guides/siberian-husky/ /guides/dog-siberian-husky/ 301
+/guides/chameleon-jackson /guides/chameleon/ 301
+/guides/chameleon-jackson/ /guides/chameleon/ 301
+/guides/kingsnake /guides/california-kingsnake/ 301
+/guides/kingsnake/ /guides/california-kingsnake/ 301
+
+# Chronicles stories read at /chronicles/<series>/<part>/, never at
+# /blog/<slug>/. Part numbers are positional by publish date (see
+# groupChronicles in src/lib/chroniclesPosts.js), which is how these were
+# derived rather than from the -part-N in each slug.
+/blog/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-glass-part-3 /chronicles/dex/3/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-glass-part-3/ /chronicles/dex/3/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4 /chronicles/dex/4/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4/ /chronicles/dex/4/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5 /chronicles/dex/5/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5/ /chronicles/dex/5/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6 /chronicles/dex/6/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6/ /chronicles/dex/6/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7 /chronicles/dex/7/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7/ /chronicles/dex/7/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-dragon-who-flew-part-8 /chronicles/dex/8/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-dragon-who-flew-part-8/ /chronicles/dex/8/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9 /chronicles/dex/9/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9/ /chronicles/dex/9/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10 /chronicles/dex/10/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10/ /chronicles/dex/10/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11 /chronicles/dex/11/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11/ /chronicles/dex/11/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-guest-tank-part-12 /chronicles/dex/12/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-the-guest-tank-part-12/ /chronicles/dex/12/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13 /chronicles/dex/13/ 301
+/blog/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13/ /chronicles/dex/13/ 301
+/blog/chronicles-of-otis-the-bunny-the-garden-the-squirrel-and-the-matter-of-trespassing /chronicles/otis/2/ 301
+/blog/chronicles-of-otis-the-bunny-the-garden-the-squirrel-and-the-matter-of-trespassing/ /chronicles/otis/2/ 301
+/blog/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3 /chronicles/otis/3/ 301
+/blog/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3/ /chronicles/otis/3/ 301
+/blog/chronicles-of-otis-the-bunny-first-flight-part-4 /chronicles/otis/4/ 301
+/blog/chronicles-of-otis-the-bunny-first-flight-part-4/ /chronicles/otis/4/ 301
+/blog/chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5 /chronicles/otis/5/ 301
+/blog/chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5/ /chronicles/otis/5/ 301
+/blog/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6 /chronicles/otis/6/ 301
+/blog/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6/ /chronicles/otis/6/ 301
+/blog/chronicles-of-otis-the-bunny-the-night-of-the-owl-part-7 /chronicles/otis/7/ 301
+/blog/chronicles-of-otis-the-bunny-the-night-of-the-owl-part-7/ /chronicles/otis/7/ 301
+/blog/chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8 /chronicles/otis/8/ 301
+/blog/chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8/ /chronicles/otis/8/ 301
+/blog/chronicles-of-otis-the-bunny-the-costume-part-9 /chronicles/otis/9/ 301
+/blog/chronicles-of-otis-the-bunny-the-costume-part-9/ /chronicles/otis/9/ 301
+/blog/chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10 /chronicles/otis/10/ 301
+/blog/chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10/ /chronicles/otis/10/ 301
+/blog/chronicles-of-otis-the-bunny-the-day-at-the-park-part-11 /chronicles/otis/11/ 301
+/blog/chronicles-of-otis-the-bunny-the-day-at-the-park-part-11/ /chronicles/otis/11/ 301
+/blog/chronicles-of-otis-the-bunny-the-foster-part-12 /chronicles/otis/12/ 301
+/blog/chronicles-of-otis-the-bunny-the-foster-part-12/ /chronicles/otis/12/ 301
+/blog/chronicles-of-otis-the-bunny-the-first-afternoon-part-13 /chronicles/otis/13/ 301
+/blog/chronicles-of-otis-the-bunny-the-first-afternoon-part-13/ /chronicles/otis/13/ 301
+
+# Truncated slugs Google picked up from somewhere; each has exactly one
+# real article it can only have meant.
+/blog/crocodiles-survived-what-killed-the-dino /blog/crocodiles-survived-what-killed-the-dinosaurs/ 301
+/blog/crocodiles-survived-what-killed-the-dino/ /blog/crocodiles-survived-what-killed-the-dinosaurs/ 301
+/blog/ball-python-feeding /blog/ball-python-feeding-guide/ 301
+/blog/ball-python-feeding/ /blog/ball-python-feeding-guide/ 301
+/blog/budgie-heal /blog/budgie-health-issues-guide/ 301
+/blog/budgie-heal/ /blog/budgie-health-issues-guide/ 301
+
+# Retired article; the species hub now covers the same ground.
+/blog/the-complete-bearded-dragon-care-guide-for-beginners-2026 /guides/bearded-dragon/ 301
+/blog/the-complete-bearded-dragon-care-guide-for-beginners-2026/ /guides/bearded-dragon/ 301
+
+# WordPress-era category path, still crawled. Typo (exotix) is in the
+# original URL, not a mistake here.
+/category/small-and-exotix-pets /blog/category/small-and-exotic-pets/ 301
+/category/small-and-exotix-pets/ /blog/category/small-and-exotic-pets/ 301

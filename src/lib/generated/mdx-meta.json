@@ -4943,6 +4943,61 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/brachycephalic-airway-syndrome-boas-guide.mdx",
+    "slug": "brachycephalic-airway-syndrome-boas-guide",
+    "title": "BOAS: What Flat-Faced Breathing Actually Costs",
+    "seoTitle": "BOAS in Dogs & Cats: Signs, Grades and Surgery",
+    "excerpt": "Snoring is not a personality trait. In flat-faced breeds it is usually the first audible sign of an airway that does not have room for itself, and there is now a graded test that tells you which side of the line your dog is on.",
+    "date": "2026-10-02",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "BOAS",
+      "Brachycephalic",
+      "Dog Health",
+      "Cat Health",
+      "Breathing",
+      "Health Screening"
+    ],
+    "readTime": 9,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/brachycephalic-airway-syndrome.jpg",
+    "imageAlt": "French Bulldog resting with visibly open-mouthed breathing",
+    "emoji": "🐽",
+    "lastReviewed": "2026-10-02",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does BOAS stand for?",
+        "a": "Brachycephalic obstructive airway syndrome. Brachycephalic breaks into brachy, meaning shortened, and cephalic, meaning head. It describes breeds whose skull bones are shortened in length, giving the flat face of a Pug, French Bulldog or Persian cat. The syndrome is the set of upper airway abnormalities that tend to come with that skull shape."
+      },
+      {
+        "q": "Is snoring normal for a flat-faced breed?",
+        "a": "No, and this is the most consequential misunderstanding in the whole subject. In a survey of 2,168 brachycephalic dog owners, 39.1% of the dogs scored in the range indicating clinically relevant airway obstruction, but only 17.9% of owners said their dog had a breathing problem. Researchers describe this as a normalisation phenomenon, where owners notice the struggle but file it as a breed trait rather than a problem."
+      },
+      {
+        "q": "How do I know if my dog needs assessment?",
+        "a": "The practical dividing line is whether you can hear the breathing without a stethoscope. Under the Respiratory Function Grading Scheme, noise detectable only through a stethoscope is Grade I and clinically unaffected. Noise audible across the room is Grade II, clinically affected. Grade III is inability to exercise or signs of respiratory distress such as blue-tinged gums."
+      },
+      {
+        "q": "Does surgery work?",
+        "a": "It helps meaningfully and the benefit lasts. In dogs reassessed a median of 1,645 days after surgery, the BOAS index had fallen from 71.6% before surgery to 49.1% long-term, and 54.8% of owners felt their dog no longer had breathing issues. Dogs operated on under two years of age do better. There is no surgical fix for a hypoplastic trachea."
+      },
+      {
+        "q": "Why do brachycephalic animals overheat so easily?",
+        "a": "Dogs shed heat mainly by evaporation from the moist surfaces inside the nose and mouth during panting. A shortened skull compresses those surfaces, so there is far less area to evaporate from, while the narrowed airway means more effort to move air, which generates more heat. Brachycephalic dogs have 2.10 times the odds of heat-related illness compared with normal-muzzled dogs."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 13
+  },
+  {
     "path": "/content/guides/bristlenose-pleco-cost-guide.mdx",
     "slug": "bristlenose-pleco-cost-guide",
     "title": "How Much Does Bristlenose Pleco Ownership Really Cost?",
@@ -6422,6 +6477,61 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5
+  },
+  {
+    "path": "/content/guides/cardiomyopathy-in-cats-and-dogs-guide.mdx",
+    "slug": "cardiomyopathy-in-cats-and-dogs-guide",
+    "title": "Cardiomyopathy in Cats and Dogs: HCM, DCM and What They Mean",
+    "seoTitle": "HCM in Cats & DCM in Dogs: Heart Disease Explained",
+    "excerpt": "Cardiomyopathy means disease of the heart muscle. Cats mostly get the thickening kind, dogs mostly get the thinning kind, and the two behave so differently that lumping them together helps nobody.",
+    "date": "2026-10-01",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "HCM",
+      "Cardiomyopathy",
+      "Cat Health",
+      "Dog Health",
+      "Heart Disease",
+      "Health Screening"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/cardiomyopathy-cats-dogs.jpg",
+    "imageAlt": "Veterinary cardiologist performing an echocardiogram on a cat",
+    "emoji": "🫀",
+    "lastReviewed": "2026-10-01",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does cardiomyopathy mean?",
+        "a": "Disease of the heart muscle. The word breaks into cardio for heart, myo for muscle, and pathy for disease. It describes a problem with the muscular wall of the heart itself, which is different from a problem with the valves inside it."
+      },
+      {
+        "q": "What is the difference between HCM and DCM?",
+        "a": "They are close to opposites. HCM, hypertrophic cardiomyopathy, is thickening: the muscle of the left ventricle grows thick, leaving less room inside for blood. DCM, dilated cardiomyopathy, is thinning: the muscle degenerates, becomes thin and weak, and the chamber stretches out. HCM is the common one in cats. DCM is the common one in large dogs."
+      },
+      {
+        "q": "Which cat breeds are predisposed to HCM?",
+        "a": "Cornell lists Maine Coon, Ragdoll, British Shorthair, American Shorthair, Sphynx, Bengal, Chartreux, Norwegian Forest, Siberian and Persian. Heritable gene mutations are recognized in some of these. Not every cat carrying an identified mutation goes on to develop the disease, which is why genetic results need veterinary interpretation rather than being read as a verdict."
+      },
+      {
+        "q": "How is cardiomyopathy diagnosed?",
+        "a": "By echocardiogram, an ultrasound of the heart. It is the only test that shows wall thickness and chamber volume directly. In cats, diagnosis also requires ruling out high blood pressure and hyperthyroidism, because both cause similar thickening without being cardiomyopathy."
+      },
+      {
+        "q": "What is a saddle thrombus?",
+        "a": "Aortic thromboembolism, or ATE. A blood clot forms in the heart, breaks loose, travels down the aorta and lodges where it splits toward the hind legs. The result is sudden pain and paralysis of the back legs. It is most often associated with underlying heart disease, particularly HCM, and the prognosis is generally very poor."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -8202,6 +8312,65 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/conformation-breeding-laws-guide.mdx",
+    "slug": "conformation-breeding-laws-guide",
+    "title": "The Laws That Regulate How a Pet Is Built",
+    "seoTitle": "Conformation Breeding Laws: Dutch Ban, Norway, US",
+    "excerpt": "Our exotic pet map answers which species you may keep. This is the other axis: which shapes an animal is allowed to be. Europe regulates it, the US does not, and the gap is wider than almost anyone realizes.",
+    "date": "2026-10-13",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Legal",
+      "Breed Standards",
+      "Animal Welfare Law",
+      "Brachycephalic",
+      "Dog Health",
+      "Cat Health"
+    ],
+    "readTime": 14,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/conformation-breeding-laws.jpg",
+    "imageAlt": "Gavel beside a flat-faced dog and a folded-ear cat representing breeding conformation law",
+    "emoji": "⚖️",
+    "lastReviewed": "2026-10-13",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it actually illegal to own a Sphynx or a Scottish Fold now?",
+        "a": "In the Netherlands, since 1 January 2026, yes, but be precise about what the rule says. The prohibited act is keeping. A trade and import ban was drafted and deliberately dropped as redundant, so selling and advertising are not themselves offences. Breeding them had already been unlawful there since 2014 under a separate provision. And the exemption is not for cats born before the cutoff, which is how it is usually paraphrased, but for cats already being kept before it, proven by the date the microchip was placed or registered. Those cats may be kept for life and may still change hands."
+      },
+      {
+        "q": "Does any US state ban breeding flat-faced dogs?",
+        "a": "No. Not one state, not one city. The only bill ever introduced was New Hampshire HB 1102-FN in 2024, which would have treated breeding animals with a birth deformity that causes suffering as cruelty. PETA called it first-of-its-kind, which is itself confirmation nothing comparable exists, the American Kennel Club campaigned against it, and the House tabled it. Over 30 states have commercial breeder laws, and they cover food, water, exercise, veterinary care and space. None of them reach conformation or heritable disease."
+      },
+      {
+        "q": "Did Norway ban the Cavalier King Charles Spaniel?",
+        "a": "The Supreme Court held in October 2023 that breeding the Cavalier as currently practiced breaches section 25 of the Animal Welfare Act, because at least 15% develop syringomyelia and Chiari-like malformation solely as a result of breeding for exterior traits. But it was a civil declaratory case, not a prosecution, and no injunction survived the appeals. The court also said expressly that an outcrossing project would not necessarily contravene the judgment. So it is not a ban on Cavalier-looking dogs, it is a ruling against continuing the current closed population."
+      },
+      {
+        "q": "Why do two cat registries disagree so completely about the Scottish Fold?",
+        "a": "Because they read the same mutation and drew opposite conclusions about what it means in practice. FIFe deleted the breed's registration codes with effect from 1 January 2012, its rules say they cannot be re-created, and it bars affected cats and any cat with such a cat in its ancestry from registration, breeding, showing and advertising. The CFA keeps the breed in championship competition and instead disqualifies a tail lacking flexibility due to abnormally thick vertebrae. One treats the folded ear as the disease marker. The other treats a stiff tail as the sign."
+      },
+      {
+        "q": "Can I still show a dog with cropped ears in the US?",
+        "a": "Yes. The American Kennel Club's published position is that ear cropping, tail docking and dewclaw removal are acceptable practices integral to defining and preserving breed character. No AKC breed standard disqualifies a natural ear or tail, though many describe the cropped or docked look. Compare the UK, where the Animal Welfare Act 2006 makes it a separate offence to show a docked dog at an event the public pays to enter."
+      },
+      {
+        "q": "What does the US regulate, if not breeding?",
+        "a": "Elective surgery, and only partially. Six states and the District of Columbia now ban non-therapeutic cat declawing, most recently California with effect from 1 January 2026. But no state law prohibits ear cropping or tail docking of dogs at all. Every US restriction on those is a rule about who may perform the procedure, not whether it may be done."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 38
+  },
+  {
     "path": "/content/guides/constriction-does-not-crush-or-suffocate.mdx",
     "slug": "constriction-does-not-crush-or-suffocate",
     "title": "Constriction Does Not Crush or Suffocate, and the Green Anaconda Is Not the Longest Snake",
@@ -9935,7 +10104,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/degu-tank-setup-guide.mdx",
@@ -10952,6 +11121,65 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/feline-kidney-disease-ckd-pkd-guide.mdx",
+    "slug": "feline-kidney-disease-ckd-pkd-guide",
+    "title": "Kidney Disease in Cats: What the Numbers Actually Mean",
+    "seoTitle": "Cat Kidney Disease: CKD and PKD Explained",
+    "excerpt": "A cat's kidneys hide their own damage. Creatinine does not rise until about three quarters of the filtering units are gone, which is why the blood panel that came back normal is reassuring but not conclusive.",
+    "date": "2026-10-09",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Chronic Kidney Disease",
+      "PKD",
+      "Cat Health",
+      "IRIS Staging",
+      "Health Screening",
+      "Senior Cats"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/feline-kidney-disease.jpg",
+    "imageAlt": "Veterinarian performing an abdominal ultrasound on a cat to examine the kidneys",
+    "emoji": "🫘",
+    "lastReviewed": "2026-10-09",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "My cat's blood test came back normal. Does that mean the kidneys are fine?",
+        "a": "Not necessarily. Creatinine, the standard kidney number, generally does not rise until a cat has lost about 75% of its kidney function. Before that, the surviving filtering units work harder and hide the loss. The earlier warning shows up in urine rather than blood: once about two thirds of them are gone, the kidney can no longer concentrate urine properly. That is why a urine test matters as much as the blood panel, and why one normal result in an older cat is reassuring but not conclusive."
+      },
+      {
+        "q": "Is SDMA worth paying for?",
+        "a": "It is a useful second number, not a magic early-detection test. SDMA rises earlier than creatinine and is not thrown off by muscle loss, which matters enormously in a thin old cat where creatinine is least trustworthy. But its specificity is lower, so it produces more false alarms, and an independent 2023 evidence review concluded most studies do not show it is superior to creatinine for assessing kidney function in cats. A single high SDMA is a reason to retest in two weeks, not a diagnosis."
+      },
+      {
+        "q": "Will a kidney diet actually help my cat?",
+        "a": "It is the best-supported treatment there is, and the claims made for it are still oversold. The one properly randomized trial, 45 cats, found no uremic crises on a renal diet against 26% on a normal diet, and significantly fewer kidney-related deaths. It did not show a significant difference in deaths from all causes. The much-quoted 633 days versus 264 days figure comes from a study where the groups were decided by whether the cat happened to accept the diet, which is a serious flaw. Most experts think the phosphorus restriction rather than the protein restriction is doing the work."
+      },
+      {
+        "q": "My Persian breeder says the line is PKD-free. Should I still test?",
+        "a": "Ask for the paperwork, and do not assume the breed is out of the woods. The DNA test for the main PKD1 variant is definitive at any age, including in a newborn kitten, and where testing has been systematic it has driven carrier frequency down hard: Persian heterozygotes fell 38.8% in three years in the best-documented population. But a 2022 survey in western Mexico still found 25.8% of Persians carrying it, and there was no significant fall at all in several other affected breeds. Two further caveats. Only about 78% of cats with cystic kidneys carry the conventional variant, so a clear result narrows the risk without closing it. And DNA tells you whether the gene is there, not how bad the disease will be, so an ultrasound after 10 months of age is still worth doing."
+      },
+      {
+        "q": "Why is kidney disease such a big deal in Ragdolls and Persians specifically?",
+        "a": "Because it is what most of them die of. In a study of 2,025 UK Ragdolls, kidney disorder was the leading cause of death at 21.18%. In a study of 3,235 UK Persians, renal disease led at 23.4%. Across cats generally, renal disorders account for about 12.1% of deaths. Both breeds run at roughly double the population rate. That does not mean most of them have kidney disease right now: only 1.93% of living Ragdolls had one recorded, because this is a disease of old cats and the affected ones had a median age of 14.6 years."
+      },
+      {
+        "q": "What can I actually do to prevent it?",
+        "a": "Honestly, less than most websites claim. There is no proven way to prevent age-related kidney disease, and the best study to test wet versus dry food found no difference in which cats went on to develop it. What works is avoiding the preventable causes and catching it early. Keep lilies out of the house entirely, including pollen and vase water. Never give a cat human painkillers. Store antifreeze securely, since one to two teaspoons can kill. Then screen: at least annually from age 7 to 10 and more often after, including a urine test and a blood pressure reading, not just a blood panel."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 25
   },
   {
     "path": "/content/guides/fennec-fox-legal-guide.mdx",
@@ -17105,6 +17333,61 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/hip-and-elbow-dysplasia-guide.mdx",
+    "slug": "hip-and-elbow-dysplasia-guide",
+    "title": "Hip and Elbow Dysplasia: What the Grades Actually Mean",
+    "seoTitle": "Hip & Elbow Dysplasia in Dogs: Grades Explained",
+    "excerpt": "Dysplasia simply means a joint that did not form correctly. The word gets used loosely, but the screening behind it is precise, and knowing what a grade means is the difference between a meaningful clearance and a piece of paper.",
+    "date": "2026-09-30",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Hip Dysplasia",
+      "Elbow Dysplasia",
+      "Dog Health",
+      "OFA",
+      "Health Screening",
+      "Joint Health"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hip-and-elbow-dysplasia.jpg",
+    "imageAlt": "Veterinary radiograph of a dog's hip joints positioned for dysplasia evaluation",
+    "emoji": "🦴",
+    "lastReviewed": "2026-09-30",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does dysplasia actually mean?",
+        "a": "It means abnormal development. A dysplastic joint is one that did not form into the correct shape, so the two halves do not fit together properly. In the hip, the ball sits loosely in a socket that is too shallow instead of seating deeply and tightly. That looseness grinds cartilage away over time, and the arthritis that follows is what actually causes the pain."
+      },
+      {
+        "q": "What are the OFA hip grades?",
+        "a": "Seven, in two groups. Excellent, Good and Fair are within normal limits and receive an OFA number. Borderline, Mild, Moderate and Severe are dysplastic. Excellent means a deep-seated femoral head fitting tightly into a well-formed socket. Fair still passes, with minor irregularities and the ball slipping slightly. Severe means marked dysplasia with significant arthritic bone change."
+      },
+      {
+        "q": "At what age can a dog be certified?",
+        "a": "Two years for a final elbow certification, and the same threshold applies to hips. Preliminary screening is available much earlier, between 4 and 23 months, which is useful for breeders making early decisions but is not the same as certification."
+      },
+      {
+        "q": "Is dysplasia purely genetic?",
+        "a": "No. Elbow dysplasia is described as an inherited polygenic disease, meaning many genes contribute rather than one. But severity is also affected by environment, specifically caloric intake and exercise level. Genetics load the dice, and how a puppy is fed and exercised influences how bad it gets."
+      },
+      {
+        "q": "Can dysplasia be treated?",
+        "a": "Yes, medically or surgically. Mild cases are managed with weight reduction, restricted exercise on hard surfaces, physical therapy, anti-inflammatory drugs and joint fluid modifiers. Surgical options run up to total hip replacement. Outcome depends on overall health, how severe the dysplasia is, how much joint damage has already happened, and the dog's environment."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6
+  },
+  {
     "path": "/content/guides/hognose-snake-cost-guide.mdx",
     "slug": "hognose-snake-cost-guide",
     "title": "How Much Does a Western Hognose Snake Really Cost?",
@@ -17604,6 +17887,65 @@
     "sourceCount": 14
   },
   {
+    "path": "/content/guides/inherited-eye-disease-dogs-cats-guide.mdx",
+    "slug": "inherited-eye-disease-dogs-cats-guide",
+    "title": "Inherited Eye Disease: What Screening Actually Catches",
+    "seoTitle": "Inherited Eye Disease in Dogs and Cats Explained",
+    "excerpt": "Progressive retinal atrophy is not one disease. It is a family of them, caused by different broken genes in different breeds, which is why a PRA-clear result names one variant and says nothing about the rest.",
+    "date": "2026-10-08",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Progressive Retinal Atrophy",
+      "Collie Eye Anomaly",
+      "Glaucoma",
+      "Dog Health",
+      "Cat Health",
+      "Health Screening"
+    ],
+    "readTime": 13,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/inherited-eye-disease.jpg",
+    "imageAlt": "Veterinary ophthalmologist examining a dog's eye with a slit lamp",
+    "emoji": "👁️",
+    "lastReviewed": "2026-10-08",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "My dog's PRA test came back clear. Is it safe from going blind?",
+        "a": "From that one variant, yes. From progressive retinal atrophy, not necessarily. PRA is a family of diseases caused by different broken genes in different breeds, and over 20 separate PRA-causing mutations have been identified in dogs. A test names the variant it looks for and says nothing about the others. Golden Retrievers alone have three separate PRA genes with three separate tests. A clear result on one of them is exactly that."
+      },
+      {
+        "q": "What is the very first thing I would notice?",
+        "a": "Usually behavior in the dark rather than anything you can see in the eye. A dog with early PRA becomes reluctant to go into dark rooms, hesitates going down stairs in poor light, and bumps into things at dusk while navigating the house perfectly at noon. Two other owner-noticed signs are pupils that look permanently large, and eyeshine that has got brighter, so the eyes glow more in photographs than they used to."
+      },
+      {
+        "q": "My old dog's eyes have gone cloudy blue. Is that a cataract?",
+        "a": "Probably not. Nuclear sclerosis is a normal age change where the lens becomes denser, giving the pupil a hazy blue-grey look, and it does not cause blindness. A cataract is an actual opacity that blocks light. They look similar to an owner and completely different through an ophthalmoscope, so this is one where you genuinely cannot tell at home. The practical difference is that a dog with nuclear sclerosis still navigates normally."
+      },
+      {
+        "q": "The vet wants to reposition my dog's cherry eye rather than remove it. Why?",
+        "a": "Because that pink lump is a working tear gland, not a growth. Sources put its contribution at somewhere between about a third and a half of the watery part of the tear film. Removing it substantially raises the risk of dry eye, which is painful, permanent and can itself impair vision. Repositioning tucks the gland into a pocket of tissue and secures it, with re-prolapse in roughly 5% to 20% of cases."
+      },
+      {
+        "q": "Does an eye certification mean my dog's eyes are healthy?",
+        "a": "It means a board-certified ophthalmologist screened them and found nothing on that screen. The OFA is explicit that it is a screening exam and not a comprehensive ocular health examination, and it lists what is not routinely done: gonioscopy, tonometry, Schirmer tear test, electroretinography and ultrasonography. So goniodysgenesis, glaucoma, dry eye, early lens luxation and some early PRA can all be missed. The certificate is also valid for 12 months, not for life."
+      },
+      {
+        "q": "Are white cats really at higher risk of eye cancer?",
+        "a": "White and unpigmented skin is the risk factor, and the sites it affects are exactly the ones around the eye: eyelids, nose, ear tips and lips. Prolonged ultraviolet exposure damages the DNA in those cells, producing solar keratosis first and squamous cell carcinoma after. Indoor cats are not exempt, because a favorite sunny windowsill delivers cumulative UV. Note that human sunscreen is unsafe for cats and must never be used near the eyes."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 26
+  },
+  {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
     "slug": "invertebrate-molting-guide",
     "title": "Invertebrate Molting 101: What's Normal Across Tarantulas, Hermit Crabs, and Jumping Spiders",
@@ -17661,6 +18003,61 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/ivdd-and-chondrodystrophy-guide.mdx",
+    "slug": "ivdd-and-chondrodystrophy-guide",
+    "title": "IVDD: Why Short Legs and Bad Backs Come From the Same Gene",
+    "seoTitle": "IVDD in Dogs: Grades, Genetics and Recovery Rates",
+    "excerpt": "The retrogene that gives a Dachshund its short legs is the same one that wrecks its discs. It is not a side effect of the shape, it is the shape, and the odds ratio attached to it is 51.",
+    "date": "2026-10-03",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "IVDD",
+      "Chondrodystrophy",
+      "Dog Health",
+      "Dachshund",
+      "Spinal Disease",
+      "Genetics"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ivdd-chondrodystrophy.jpg",
+    "imageAlt": "Dachshund standing in profile showing the long back and short legs of a chondrodystrophic breed",
+    "emoji": "🦴",
+    "lastReviewed": "2026-10-03",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does IVDD stand for?",
+        "a": "Intervertebral disc disease. An intervertebral disc is the cushion between two vertebrae, with a gel-like core called the nucleus pulposus inside a tough fibrous ring called the annulus fibrosus. The discs let the spine bend and absorb shock. When one degenerates it can bulge or rupture into the spinal canal, and because the cord runs through a tunnel of bone there is nowhere for that material to go except into the cord."
+      },
+      {
+        "q": "How common is IVDD in Dachshunds?",
+        "a": "Miniature Dachshunds have a lifetime prevalence of around 20%, against roughly 3.5% for dogs overall. A survey of 2,031 Dachshunds found 15.7% affected, and it varied by variety: Standard Smooth-Haired highest at 24.4%, Standard Wire-Haired lowest at 7.1%. The American College of Veterinary Surgeons estimates Dachshunds alone account for 40 to 75% of all IVDD cases."
+      },
+      {
+        "q": "What is the FGF4 retrogene?",
+        "a": "An extra, reinserted copy of the fibroblast growth factor 4 gene. Dogs carry two, one on chromosome 18 and one on chromosome 12. The chromosome 12 copy produces both the short-legged build and premature disc degeneration, with an odds ratio of 51.23 for IVDD. It is semidominant for height but dominant for disc disease, so one copy is enough to carry the disc risk."
+      },
+      {
+        "q": "What is deep pain perception and why does everyone ask about it?",
+        "a": "It is the deepest level of sensation in the limbs, tested by pinching the bone of a toe or the tail and watching for a real behavioral response such as a bark or turning the head. A reflex twitch of the leg does not count. In a paralyzed dog it is the single most important prognostic finding: with it intact, surgical recovery runs 85 to 95%, without it around 50%."
+      },
+      {
+        "q": "Do stairs and furniture cause IVDD?",
+        "a": "The evidence does not support the usual advice. In a survey of 2,031 Dachshunds, dogs not allowed to jump on furniture had higher odds of IVDD, not lower, and dogs doing no stairs daily had higher odds than dogs doing a full flight. That is almost certainly reverse causation, owners restricting dogs after a diagnosis. What it does mean is that banning stairs has never been shown to prevent anything."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 12
   },
   {
     "path": "/content/guides/jacksons-chameleon-cost-guide.mdx",
@@ -22828,6 +23225,175 @@
     "myth": "Penguins mate for life.",
     "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/periodontal-dental-disease-guide.mdx",
+    "slug": "periodontal-dental-disease-guide",
+    "title": "Dental Disease: Why White Teeth Do Not Mean a Healthy Mouth",
+    "seoTitle": "Pet Dental Disease: Stages, Prevention and What Works",
+    "excerpt": "Plaque is the enemy, not tartar. The damage happens below the gumline where nobody can see it, which is why a mouth full of clean-looking white teeth tells you almost nothing.",
+    "date": "2026-10-07",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Dental Disease",
+      "Periodontal Disease",
+      "Dog Health",
+      "Cat Health",
+      "Tooth Resorption",
+      "Prevention"
+    ],
+    "readTime": 10,
+    "difficulty": "Beginner",
+    "image": "/assets/images/periodontal-dental-disease.jpg",
+    "imageAlt": "Veterinarian examining a dog's teeth and gums during a dental assessment",
+    "emoji": "🦷",
+    "lastReviewed": "2026-10-07",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What is the difference between plaque and tartar?",
+        "a": "Plaque is the soft, living bacterial film that forms continuously on teeth. It is the actual cause of periodontal disease, and it is invisible. Tartar, properly called calculus, is plaque that has been left more than about two days and hardened with minerals from saliva. Tartar looks bad but its own contribution to the disease is minor. Plaque can be brushed off; tartar cannot."
+      },
+      {
+        "q": "How common is dental disease in pets?",
+        "a": "About 80% of dogs have some level of periodontal disease by age 2, and up to 70% of cats. In one study of 445 dogs examined under anesthesia the figure was 86.3%. Recorded diagnosis rates in ordinary practice are far lower, around 12% for dogs, because a conscious exam cannot detect most of it."
+      },
+      {
+        "q": "Does dry food clean my pet's teeth?",
+        "a": "No. Merck states plainly that the common perception that dry kibble decreases plaque through mechanical cleaning does not necessarily hold true, and Tufts lists it as fiction. Kibble and wet food both contribute to plaque. Specially formulated dental diets are a separate category and some do work, but ordinary kibble is not a dental measure."
+      },
+      {
+        "q": "Are bones and antlers good for teeth?",
+        "a": "No, and they cause real harm. Merck advises avoiding hard items such as bones and hooves because they crack teeth. Tufts recommends avoiding antlers, cow hooves, Himalayan yak chews and hard nylon bones. Their test for a safe chew is whether you can bend or flex it, or dent it with a thumbnail."
+      },
+      {
+        "q": "Why does a dental cleaning need general anesthesia?",
+        "a": "Because the disease is staged by measuring attachment loss, which requires periodontal probing and dental X-rays, and neither is possible in a conscious animal. The AVDC is direct that anesthesia-free scaling cannot clean below the gumline where the disease actually is, provides no benefit, and leaves unpolished teeth that are a prime surface for more bacteria."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 19
+  },
+  {
+    "path": "/content/guides/pet-dna-test-results-guide.mdx",
+    "slug": "pet-dna-test-results-guide",
+    "title": "What a Pet DNA Test Actually Tells You",
+    "seoTitle": "Pet DNA Test Results Explained: A31P, R820W, MDR1",
+    "excerpt": "The same panel contains tests that are near-perfect and tests that mean nothing, sold in the same report at the same price, with nothing on the page telling you which is which.",
+    "date": "2026-10-12",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Genetic Testing",
+      "DNA",
+      "Dog Health",
+      "Cat Health",
+      "Health Screening",
+      "Breeding"
+    ],
+    "readTime": 14,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/pet-dna-testing.jpg",
+    "imageAlt": "Cheek swab sample being prepared for a companion animal genetic test",
+    "emoji": "🧬",
+    "lastReviewed": "2026-10-12",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do the letters and numbers in something like R820W actually mean?",
+        "a": "Read it as a sentence. The first letter is the amino acid that should be at that position, the number is the position along the protein, and the last letter is what is there instead. So R820W means that at position 820, arginine has been swapped for tryptophan. A31P means alanine to proline at position 31. If the name starts with c. instead, the number counts along the DNA rather than the protein, so c.91G>C means a G was replaced by a C at position 91 of the coding sequence."
+      },
+      {
+        "q": "Why does the same variant have two different names?",
+        "a": "Because labs count from different starting points. The Ragdoll heart variant appears as both R820W and R818W, and the feline kidney variant appears under at least four names, depending on which reference sequence the lab used. They are the same change. If two reports on the same cat look like they disagree, check whether they are just numbering differently before you panic."
+      },
+      {
+        "q": "My dog tested carrier. Is it going to get sick?",
+        "a": "For a recessive condition, no. A carrier has one copy, needs two to be affected, and is healthy itself. What it can do is pass the variant on, so it matters when choosing a mate and not much otherwise. This is the misunderstanding behind the most-cited cautionary case in the field: a 13-year-old pug was reported as a carrier for a degenerative myelopathy variant, a result that on the published biology carries essentially no personal risk."
+      },
+      {
+        "q": "My cat is homozygous for the A31P heart variant. What does that mean?",
+        "a": "Two copies, and for this variant that is the result that matters. In a study of 332 Maine Coons, cats with two copies had a 50% rate of heart disease and an odds ratio of 12.1. Cats with one copy had an odds ratio of 1.0, meaning no detectable increase over cats with no mutation at all. Get an echocardiogram, because that is what actually diagnoses the disease, and do not breed from the cat."
+      },
+      {
+        "q": "Does a clear result mean my pet is healthy?",
+        "a": "It means it does not carry the specific variants that were tested. Ten of the 21 Maine Coons that genuinely had heart disease in one cohort carried no known mutation. Only about 78% of cats with cystic kidneys carry the standard PKD1 variant. And the veterinary consensus statement says outright that Maine Coons and Ragdolls testing negative for the heart variants have still been diagnosed with the disease, so screening should continue regardless."
+      },
+      {
+        "q": "Which tests are actually worth buying for a pet rather than a breeding animal?",
+        "a": "The ones that change what you do tomorrow. MDR1 is the clearest example: it is a causal variant, it affects drug safety, and knowing the result changes how your vet doses ivermectin-class wormers and some sedatives. Pharmacogenetic and acute-risk variants generally earn their place. Late-onset risk variants with no available intervention mostly do not, and anything classed a variant of unknown significance definitely does not."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 22
+  },
+  {
+    "path": "/content/guides/pet-obesity-body-condition-guide.mdx",
+    "slug": "pet-obesity-body-condition-guide",
+    "title": "Body Condition Score: How to Tell if Your Pet Is Actually Overweight",
+    "seoTitle": "Pet Obesity & Body Condition Score: The 9-Point Scale",
+    "excerpt": "Fifty-nine percent of dogs and 61% of cats are overweight, and about a third of their owners believe those pets are a normal weight. The gap between those two numbers is the whole problem.",
+    "date": "2026-10-06",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care"
+    ],
+    "tags": [
+      "Obesity",
+      "Body Condition Score",
+      "Dog Health",
+      "Cat Health",
+      "Weight Management",
+      "Nutrition"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/pet-obesity-body-condition.jpg",
+    "imageAlt": "Veterinarian assessing a dog's body condition by feeling along the ribcage",
+    "emoji": "⚖️",
+    "lastReviewed": "2026-10-06",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What actually counts as obese in a dog or cat?",
+        "a": "The threshold is the same for both species and it is measured against ideal body weight, not breed average. Ten to 20% above ideal is overweight. More than 20% above ideal is obese. Merck defines it as excessive accumulation of adipose tissue more than 20% above ideal body weight."
+      },
+      {
+        "q": "What is a body condition score?",
+        "a": "A hands-on 9-point scale that grades how much fat an animal carries, judged by feel rather than by the scale. Ideal is 5 out of 9 for cats and 4 to 5 out of 9 for dogs. Each point above ideal represents roughly a 5% increase in body fat and about 10 to 15% more body weight than ideal, so a pet at 7 out of 9 is already at about the obesity threshold."
+      },
+      {
+        "q": "How do I check at home without any equipment?",
+        "a": "Feel your pet's ribs and compare the sensation to your own hand. The back of your hand is about right. Your knuckles, or ribs you can see, means too thin. The fleshy pad below your thumb means too much weight. Then look from the side for an abdominal tuck and from above for a waist behind the ribs."
+      },
+      {
+        "q": "How fast should a pet lose weight?",
+        "a": "Roughly 1% of body weight per week is a reasonable target, with cats safely in the 0.5 to 2% range. Real weight-loss programs usually run slower than that, with median losses around 0.71% per week in dogs and 0.54% in cats. Slow is genuinely better, because gradual loss preserves lean muscle rather than burning it."
+      },
+      {
+        "q": "Why is crash dieting more dangerous for cats than dogs?",
+        "a": "Cats are obligate carnivores that remain in continuous gluconeogenesis and cannot downregulate it during fasting. Restrict a cat's calories too hard and body fat mobilizes faster than the liver can process it, causing hepatic lipidosis, the most common and potentially lethal acquired liver disease in cats. If a cat on a diet stops eating, that is a same-day veterinary matter."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 18
   },
   {
     "path": "/content/guides/platy-cost-guide.mdx",
