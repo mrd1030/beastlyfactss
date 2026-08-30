@@ -28,6 +28,12 @@ import hero800Jpg from '@/assets/hero-800.jpg';
 import hero1200Jpg from '@/assets/hero-1200.jpg';
 import hero1600Jpg from '@/assets/hero-1600.jpg';
 
+// The image dissolves rather than being cut off: its own alpha ramps out over
+// the last third, revealing the page background, so there is no hard bottom
+// edge for the text panel to fight. A tint laid over the top cannot do this,
+// it only fakes it against one known background colour.
+const MASK = 'linear-gradient(to bottom, black 0%, black 68%, transparent 96%)';
+
 const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
 const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
 const HERO_WEBP = srcSet(hero400Webp, hero800Webp, hero1200Webp, hero1600Webp);
@@ -70,81 +76,65 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative min-h-screen flex items-center justify-center overflow-hidden text-center">
-      {/* ==================== OPTIMIZED HERO IMAGE ==================== */}
-      <div className="absolute inset-0">
-        <picture>
-          {/* AVIF first: <picture> takes the first source whose type the browser
-              accepts, so order is the negotiation. Roughly 23-26% smaller than
-              the webp below at matched quality (measured 39.5-41.4 dB against
-              the jpg, and checked at 1:1 on the two regions that would show it
-              first, the sunset gradient for banding and the mane for detail).
-              This is the LCP element on the homepage, so those bytes are the
-              ones worth having. Anything that cannot decode AVIF, mainly Safari
-              before 16.4, falls through to exactly what it gets today. */}
-          <source
-            srcSet={HERO_AVIF}
-            sizes="100vw"
-            type="image/avif"
-          />
-          <source
-            srcSet={HERO_WEBP}
-            sizes="100vw"
-            type="image/webp"
-          />
-          <source
-            srcSet={HERO_JPG}
-            sizes="100vw"
-            type="image/jpeg"
-          />
-          <img
-            src={hero1200Jpg}
-            alt="Majestic lion, colorful macaw, and bearded dragon in nature"
-            className="w-full h-full object-cover object-[50%_20%]"
-            fetchpriority="high"
-            width="1200"
-            height="800"
-            decoding="async"
-          />
-        </picture>
+   <section className="relative flex flex-col items-center px-0 pt-0 pb-10">
+        {/* ==================== HERO IMAGE ====================
+            Full bleed, square corners, running straight into the navbar. The
+            source is 3:2 and the box is 4/3 on phones, 16/10 above that, so the
+            crop is 11% off the sides at worst and 6% off top and bottom: the
+            picture is essentially whole at every width.
+            The old treatment was an absolutely positioned min-h-screen
+            background with object-cover, which on a 412x823 phone threw away
+            67% of the image width. The bearded dragon in the previous hero was
+            cropped out of frame entirely at that size and only the macaw
+            survived. That is the failure this layout exists to fix.
+            No rounding and no shadow: the foot of the image is masked out
+            instead (see MASK), and a shadow would trace the container's full
+            silhouette even where the picture has faded to nothing, putting back
+            the exact hard line the mask removes. */}
+        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+          <picture>
+            {/* AVIF first: <picture> takes the first source whose type the
+                browser accepts, so order is the negotiation. The preload in
+                index.html must name this same format or the preloaded file is
+                fetched at high priority and discarded. */}
+            <source srcSet={HERO_AVIF} sizes="100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
+            <img
+              src={hero1200Jpg}
+              alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
+              className="h-full w-full object-cover"
+              style={{ maskImage: MASK, WebkitMaskImage: MASK }}
+              fetchpriority="high"
+              width="1200"
+              height="800"
+              decoding="async"
+            />
+          </picture>
 
-        {/* Gradient overlays. Light mode uses a much lighter wash than dark:
-            the light --background is a pale cream, so the same opacities
-            that read as a normal dark vignette in dark mode instead
-            haze the whole photo over in light mode. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent dark:via-background/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/10 to-transparent dark:from-background/20" />
-      </div>
-
-      {/* Floating emojis - purely decorative.
-          The position lives on a PLAIN span, not on the motion.span, because
-          framer-motion does not emit its `style` prop into the prerendered
-          HTML. When it was a motion.span the markup shipped with no left/top at
-          all, so all five stacked at the same spot on first paint and only
-          jumped to their real positions once framer hydrated (on mobile, after
-          the vendor chunk lands several seconds in). That was a measurable
-          layout shift caused entirely by decoration nobody is reading. Static
-          markup carries the position now, and the inner motion.span only
-          animates transforms, which cannot affect layout. */}
-      {['🦋', '🐾', '🌿', '✨', '🦜'].map((emoji, i) => (
-        <span
-          key={i}
-          className="absolute hidden sm:block pointer-events-none"
-          style={{ left: `${15 + i * 18}%`, top: `${20 + i * 10}vh` }}
-        >
-          <motion.span
-            className="block text-2xl opacity-40"
-            animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
-            transition={{ repeat: Infinity, duration: 3 + i, delay: i * 0.3, ease: 'easeInOut' }}
-          >
-            {emoji}
-          </motion.span>
-        </span>
-      ))}
+        </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 mt-28 w-full flex justify-center">
-        <div className="max-w-2xl h-full flex flex-col items-center justify-center">
+        {/* The text block, deliberately overlapping the image rather than
+            sitting below it. It carries the page background as its own
+            surface, so every character is on a flat colour at full contrast in
+            both themes: no scrim, no negotiation with whatever the photograph
+            happens to be doing. Inset from the image on both sides and pulled
+            up so it reads as a panel resting ON the picture, while leaving the
+            top two thirds of the photo completely clear.
+            It is a real card, not a hole: bg-card sits a shade off the page
+            background, with the same border and rounding the site's other
+            cards use, and a shadow so it reads as resting ON the photograph
+            rather than punched out of it. border-b-0 because the bottom edge
+            runs on into the page rather than closing.
+            The border is warmed in dark mode. --border there is hsl(141 14% 42%),
+            a green-grey, which renders as RGB(79,98,81) once it is at 70% over
+            the photograph. Against red desert earth that reads cold, close to
+            blue, by simultaneous contrast. A tan at hue 36 sits in the same
+            family as the image and as the light-mode --border, which is already
+            warm at hue 38. Light mode is left alone for that reason. */}
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] px-3 sm:px-5 flex flex-col items-center">
+          <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
               prerendered HTML, so this block ships as a bare <div> and only
@@ -154,22 +144,22 @@ export default function HeroSection({ onOpenFact }) {
               element PageSpeed still names as the sole shift culprit. It is
               above the fold and already in the HTML, so it should just be
               visible. */}
-          <div>
+          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 dark:border-[hsl(36_24%_52%/0.55)] bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Facts that roar. Guides that care.
             </div>
 
-            <h1 className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4">
-              <span className="text-foreground">Curated animal facts</span>
+            <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
+              <span className="text-foreground">Wild facts. Pet care.</span>
               <br />
-              <span className="text-secondary">and practical care advice</span>
+              <span className="text-secondary">We looked it up.</span>
               <br />
-              <span className="text-foreground">for curious families and animal lovers.</span>
+              <span className="text-foreground">So you don&rsquo;t have to.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
-  Discover verified wild facts, beginner-friendly pet care guides, and short quizzes designed to make every visit quick, fun, and useful.
+  Verified animal facts about creatures you&rsquo;ll never meet, and honest care guides for the ones you live with.
 </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-4">
@@ -179,7 +169,7 @@ export default function HeroSection({ onOpenFact }) {
                 whileTap={{ scale: 0.97 }}
                 className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
               >
-                Start with Verified Facts
+                Show me something wild
                 <ArrowRight className="w-4 h-4" />
               </MotionLink>
               {/* Only the destination word goes orange, and only in dark mode,
@@ -210,7 +200,7 @@ export default function HeroSection({ onOpenFact }) {
               can feed CLS. It is also above the fold, so a 0.3s delay meant
               prerendered content sat invisible waiting for framer to hydrate.
               The markup is already in the HTML; it should simply be visible. */}
-          <div className="bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
+          <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
