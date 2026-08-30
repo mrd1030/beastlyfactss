@@ -76,7 +76,7 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-0 lg:px-4 pt-0 pb-10">
+   <section className="relative flex flex-col items-center px-0 pt-0 pb-10">
         {/* ==================== HERO IMAGE ====================
             Contained rather than full-bleed, and at a fixed 3:2 that never
             changes across breakpoints, so the photograph is shown WHOLE at
@@ -89,15 +89,15 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative w-full max-w-6xl aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[21/9] overflow-hidden">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
                 index.html must name this same format or the preloaded file is
                 fetched at high priority and discarded. */}
-            <source srcSet={HERO_AVIF} sizes="(min-width: 1152px) 1152px, 100vw" type="image/avif" />
-            <source srcSet={HERO_WEBP} sizes="(min-width: 1152px) 1152px, 100vw" type="image/webp" />
-            <source srcSet={HERO_JPG} sizes="(min-width: 1152px) 1152px, 100vw" type="image/jpeg" />
+            <source srcSet={HERO_AVIF} sizes="100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
             <img
               src={hero1200Jpg}
               alt="Majestic lion, colorful macaw, and bearded dragon in nature"
