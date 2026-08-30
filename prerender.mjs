@@ -676,19 +676,25 @@ async function main() {
   // build runner where isolated timeouts are expected occasionally even
   // after 5 retries. Only hard-fail when failures are widespread enough to
   // suggest a real, systemic problem worth blocking the deploy over.
-  // Proportional, with a floor. A flat 3 was set when this rendered ~600 routes
-  // and a failure meant no file at all; there are now 964 and a failed route
-  // gets the SPA shell written for it, so it still returns 200 and still works.
-  // The 4 August build had exactly 4 contention timeouts, which under the old
-  // flat threshold would have failed the deploy on top of the timeout that
-  // actually killed it. 1% is still low enough to catch anything systemic.
-  const FAILURE_THRESHOLD = Math.max(5, Math.ceil(allRoutes.length * 0.01));
-  if (results.failed > FAILURE_THRESHOLD) {
-    console.error(`❌ ${results.failed} routes failed prerendering (threshold: ${FAILURE_THRESHOLD}) - failing build.`);
-    process.exit(1);
-  }
+  // Zero tolerance, on purpose. This used to allow the greater of 5 or 1% of
+  // routes to fail, on the reasoning that a shelled route still returns 200 and
+  // that one page's SEO is not worth blocking every other page's update over.
+  //
+  // That trade reads differently now. A route that fails here ships with no
+  // prerendered head or body, so it goes out with the generic shell title and
+  // an empty body until JavaScript runs. A handful of those is exactly the
+  // "thin content" shape a crawler penalises, and the old threshold let up to
+  // 10 of them through per deploy while reporting success. Worse, which routes
+  // lose is a lottery decided by runner contention, so nothing in the build
+  // output tells you a page went out wrong. A red build that has to be re-run
+  // is the cheaper failure.
+  //
+  // MAX_ATTEMPTS above is what absorbs flaky contention timeouts. Five retries
+  // with escalating deadlines is the resilience budget; this is the assertion
+  // that the retries actually worked.
   if (results.failed > 0) {
-    console.warn(`⚠️  ${results.failed} route(s) failed prerendering but under the threshold - deploying anyway. Affected routes will serve client-rendered until fixed.`);
+    console.error(`❌ ${results.failed} route(s) failed prerendering after ${MAX_ATTEMPTS} attempts each - failing build.`);
+    process.exit(1);
   }
 }
 

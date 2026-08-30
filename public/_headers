@@ -46,3 +46,11 @@
   Cache-Control: public, max-age=2592000
 /assets/*.svg
   Cache-Control: public, max-age=2592000
+
+# The favicon is the one image Vite content-hashes, because index.html points at
+# ./src/assets/favicon.webp rather than at public/. That makes its filename
+# change whenever its contents do, which is exactly the property the rules above
+# cannot assume, so it gets the same year-long immutable treatment as .js/.css.
+# More specific path, so this wins over /assets/*.webp.
+/assets/favicon-*.webp
+  Cache-Control: public, max-age=31536000, immutable
