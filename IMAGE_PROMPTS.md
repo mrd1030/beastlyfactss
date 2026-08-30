@@ -53,6 +53,19 @@ in any of them, which is how the existing article set was made.
 
 ---
 
+# Legal guide image, `public/assets/guides/`, 1168x784
+
+### conformation-breeding-laws.jpg
+Photorealistic editorial photograph of a quiet empty veterinary consulting room
+in cool morning light. A stainless steel examination table in the foreground
+holds a stethoscope, a plain clipboard with blank unmarked paper, and a simple
+wooden measuring caliper. Pale walls, a window softly out of focus behind, no
+people and no animals. Restrained documentary still life, neutral grey and steel
+palette, slight overhead angle, 35mm, f/4, 3:2. No text, logos, branding, flags
+or legible writing anywhere in the frame.
+
+---
+
 # Article images, `public/assets/images/`, 1600x1067
 
 ### brachycephalic-airway-syndrome.jpg
