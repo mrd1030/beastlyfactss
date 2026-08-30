@@ -76,7 +76,7 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-3.5 pt-6 pb-10">
+   <section className="relative flex flex-col items-center px-0 lg:px-4 pt-6 pb-10">
         {/* ==================== HERO IMAGE ====================
             Contained rather than full-bleed, and at a fixed 3:2 that never
             changes across breakpoints, so the photograph is shown WHOLE at
@@ -89,15 +89,15 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative w-full max-w-[900px] aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-t-[20px] sm:rounded-t-[28px]">
+        <div className="relative w-full max-w-6xl aspect-[4/3] sm:aspect-[16/10] overflow-hidden rounded-t-[20px] sm:rounded-t-[28px]">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
                 index.html must name this same format or the preloaded file is
                 fetched at high priority and discarded. */}
-            <source srcSet={HERO_AVIF} sizes="(min-width: 900px) 900px, 100vw" type="image/avif" />
-            <source srcSet={HERO_WEBP} sizes="(min-width: 900px) 900px, 100vw" type="image/webp" />
-            <source srcSet={HERO_JPG} sizes="(min-width: 900px) 900px, 100vw" type="image/jpeg" />
+            <source srcSet={HERO_AVIF} sizes="(min-width: 1152px) 1152px, 100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="(min-width: 1152px) 1152px, 100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="(min-width: 1152px) 1152px, 100vw" type="image/jpeg" />
             <img
               src={hero1200Jpg}
               alt="Majestic lion, colorful macaw, and bearded dragon in nature"
@@ -125,7 +125,7 @@ export default function HeroSection({ onOpenFact }) {
             cards use, and a shadow so it reads as resting ON the photograph
             rather than punched out of it. border-b-0 because the bottom edge
             runs on into the page rather than closing. */}
-        <div className="relative z-[5] w-full max-w-[640px] -mt-4 sm:-mt-[26px] px-3 sm:px-5 flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[640px] -mt-4 sm:-mt-[100px] px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
