@@ -48,6 +48,13 @@ export const catGuides = [
         "Dental hygiene routine",
       ],
     },
+    faqs: [
+      { q: "Do indoor cats really live longer than outdoor cats?", a: "Dramatically so: roughly 10 to 15 years on average indoors versus 2 to 5 outdoors. The difference comes from protection against cars, predators, disease, and injury. If you want your cat to have outdoor access, a supervised enclosure, often called a catio, or leash walking gives most of the enrichment without most of the risk." },
+      { q: "How many litter boxes do I need?", a: "One per cat plus one extra. They need scooping daily and a full empty-and-clean monthly. Under-provisioning litter boxes is one of the most common causes of house-soiling in multi-cat homes, and it is usually treated as a behavior problem when it is really a resource problem." },
+      { q: "Is wet food better than dry food for cats?", a: "Veterinary nutritionists strongly prefer wet food for hydration. Cats evolved in deserts and have a low thirst drive, so cats fed primarily dry food often live in a state of chronic mild dehydration that contributes to urinary tract and kidney disease. Always keep fresh water available too, and many cats drink more from a fountain than a bowl." },
+      { q: "Why do cats need vertical space?", a: "Cat trees, shelves, and window perches are not luxuries, they are how a cat feels secure and stimulated in an indoor territory. Cats without adequate climbing space and daily play show boredom-driven behaviors: overeating, aggression, excessive vocalization, and destructive scratching. In multi-cat homes, separate resources also reduce social tension." },
+      { q: "What vaccinations does an indoor cat need?", a: "FVRCP, covering feline viral rhinotracheitis, calicivirus, and panleukopenia, plus rabies, which is required by law in most regions. Cats with any outdoor access also need FeLV. Monthly flea prevention is recommended even for indoor cats in most climates, and annual exams matter because cats hide illness well." },
+    ],
   },
 
   // ── BREED QUIRKS ─────────────────────────────────────────────────────────
@@ -92,6 +99,9 @@ export const catGuides = [
     },
     faqs: [
       { q: "Is tabby a breed of cat?", a: "No - tabby describes a coat pattern (the classic swirls, stripes, or spots, plus the \"M\" marking on the forehead), not a breed. It's the most common pattern in domestic shorthairs, since it's the ancestral wild-type coat that shows up whenever a cat has no specific pedigree, but plenty of recognized breeds also carry tabby patterns, including Maine Coons and Bengals. A tabby-patterned cat with no papers is a Domestic Shorthair; a tabby-patterned cat with Maine Coon or Bengal parentage and registration is that breed with a tabby coat." },
+      { q: "Are domestic shorthairs healthier than purebred cats?", a: "Generally yes. Their genetic diversity means they carry no breed-specific hereditary diseases, which makes them the healthiest cat type overall. Standard feline concerns still apply: dental disease, obesity, hyperthyroidism in older cats, kidney disease, and urinary tract issues." },
+      { q: "What personality should I expect from a domestic shorthair?", a: "It varies widely, and it is driven by individual genetics and early socialization rather than by breed. Some are highly active and playful, others are laid-back lap cats. Tailor enrichment to the cat in front of you rather than to a breed description, though daily interactive play benefits all of them." },
+      { q: "What is the most important preventive care for a DSH cat?", a: "Annual wellness exams and weight monitoring, in that order. Indoor-cat obesity is the most common avoidable problem in the type, and there is no breed-specific screening to layer on top. A complete AAFCO food with wet food prioritized, plus a dental routine, covers most of the rest." },
     ],
   },
   {
@@ -135,6 +145,12 @@ export const catGuides = [
         "Annual wellness vet exam",
       ],
     },
+    faqs: [
+      { q: "How big do Maine Coons get, and when are they fully grown?", a: "Large enough that ordinary cat furniture often will not hold them, with males commonly reaching around 20 lbs. They mature slowly and do not reach full size until 3 to 5 years of age. Buy cat trees rated for the weight, because standard ones are frequently too flimsy." },
+      { q: "What is HCM and when should screening start?", a: "Hypertrophic cardiomyopathy is the most common heart disease in cats and a key Maine Coon concern. Annual cardiac ultrasounds are recommended from age 2 onward. A DNA test exists, and responsible breeders screen for HCM alongside SMA and PKD." },
+      { q: "What health clearances should a Maine Coon breeder have?", a: "DNA clearances for HCM, spinal muscular atrophy, and polycystic kidney disease, all three of which have tests available. Hip dysplasia is also seen in the breed, which is unusual in cats generally and worth asking about specifically." },
+      { q: "Are Maine Coons really dog-like?", a: "The comparison holds up better than most breed clichés. They often follow owners around the house, play fetch, and take to supervised leash walks. They stay playful well into adulthood and generally do not thrive as the only pet in a very quiet household." },
+    ],
   },
   {
     id: "cat-siamese",
@@ -176,6 +192,12 @@ export const catGuides = [
         "Accept vocal behavior as normal breed trait",
       ],
     },
+    faqs: [
+      { q: "Why are Siamese cats so vocal?", a: "It is normal breed behavior rather than a problem to suppress. They will talk loudly and persistently when bored, lonely, or seeking attention. Understanding that going in matters, because the vocalization is not going to be trained away and it is a common reason Siamese are rehomed." },
+      { q: "Can a Siamese be left alone during the workday?", a: "Not comfortably. They are extremely social and do poorly with long periods alone. A second cat companion is strongly recommended if you work full-time. A bored Siamese becomes destructive, loud, and can develop anxiety-related behaviors." },
+      { q: "Can Siamese cats be trained?", a: "Yes, and they take to it well. Clicker training genuinely works with cats, and Siamese are intelligent and interactive enough to enjoy it. Puzzle feeders, fetch, and trick training all suit them and provide the mental engagement the breed needs daily." },
+      { q: "What health problems are Siamese predisposed to?", a: "Progressive retinal atrophy, amyloidosis, which is protein deposits in organs and especially the liver, mediastinal lymphoma, and dental disease. Their slightly altered facial structure also makes respiratory infections more likely, so keeping vaccinations current matters. Annual exams with bloodwork are worth starting from around age 7." },
+    ],
   },
   {
     id: "cat-ragdoll",
@@ -217,6 +239,12 @@ export const catGuides = [
         "Annual wellness exam",
       ],
     },
+    faqs: [
+      { q: "How much grooming does a Ragdoll need?", a: "Brushing two to three times per week to keep the long silky coat from matting. That is less demanding than a Persian but more than a shorthair, and skipping it leads to mats that eventually need clipping out rather than brushing through." },
+      { q: "When is a Ragdoll fully grown?", a: "Around four years, which is slow even by large-breed cat standards. Males commonly reach 15 to 20 lbs. Because of that extended growth, they benefit from a kitten or all-life-stages food until age 4 rather than switching to adult food at the usual point." },
+      { q: "What is the main health concern in the breed?", a: "Hypertrophic cardiomyopathy is prevalent in Ragdolls. All breeding cats should be DNA tested and cardiac screened, and annual cardiac ultrasounds from age 2 are the standard for pet cats. Urinary tract issues are also seen, which is part of why wet food matters here specifically." },
+      { q: "Are Ragdolls good with children and other pets?", a: "Generally yes. They are calm, gentle, low to moderate energy cats that do well with children and other gentle pets, and they often greet people at the door and follow family around. The flip side of that calm nature is a real tendency toward indoor weight gain, so monitor body condition." },
+    ],
   },
   {
     id: "cat-bengal",
@@ -261,6 +289,12 @@ export const catGuides = [
         "Annual fecal testing for intestinal parasites",
       ],
     },
+    faqs: [
+      { q: "How much attention does a Bengal need every day?", a: "Thirty to 60 minutes of vigorous interactive play, plus access to safe outdoor exploration through a catio or leash. They are the most active and demanding domestic cat breed, and without adequate stimulation they become destructive, loud, and aggressive. A second active cat companion is strongly recommended." },
+      { q: "Are Bengals a good first cat?", a: "Usually not. The breed is rated advanced for good reason: the activity requirement is high and non-negotiable, and they are clever enough to turn on faucets, open cabinets, and work lever-style door handles. Bengal-proofing a home is closer to toddler-proofing than to normal cat ownership." },
+      { q: "What is PRA-b?", a: "It is a Bengal-specific mutation causing progressive retinal atrophy and eventual blindness. A DNA test is available and a clearance should be requested from any breeder. Hypertrophic cardiomyopathy is the other major concern, with annual screening from age 2." },
+      { q: "What is tritrichomonas foetus?", a: "A chronic intestinal parasite that is common in cats sourced from catteries, and a specific reason to include annual fecal testing in a Bengal's routine care. It is easy to miss because the signs look like ordinary loose stools." },
+    ],
   },
   {
     id: "cat-persian",
@@ -304,5 +338,12 @@ export const catGuides = [
         "Dental checkups (crowded teeth breed)",
       ],
     },
+    faqs: [
+      { q: "How much grooming does a Persian need?", a: "Daily. The long dense coat mats without daily brushing, and mats are painful rather than merely untidy once they tighten against the skin. This is the single biggest ongoing commitment of the breed and it does not have a shortcut." },
+      { q: "What health problems come from the flat face?", a: "Extreme brachycephaly drives most of the breed's issues: brachycephalic obstructive airway syndrome, dental overcrowding, chronic eye discharge as facial folds press on the tear ducts, and skin fold dermatitis. Noisy or labored breathing warrants a BOAS assessment rather than being accepted as normal." },
+      { q: "What is PKD and can it be tested for?", a: "Polycystic kidney disease, and yes, a DNA test is available and all responsible breeders screen for it. Hypertrophic cardiomyopathy also occurs in the breed, with annual screening from age 2 the usual recommendation." },
+      { q: "Is a doll-face Persian healthier than a flat-faced one?", a: "Yes. Traditional or doll-face Persians have far fewer health issues than extreme-type Persians, because most of the breed's problems trace directly to how far the face has been shortened. If you are choosing a Persian, this is the most consequential decision you make." },
+      { q: "Why might a Persian struggle with normal kibble?", a: "Flat-faced cats often have difficulty picking up and chewing standard kibble shapes. Flat or small kibble designed for brachycephalic cats exists, and making wet food the primary diet solves the problem while also helping hydration. Weight monitoring matters too, since Persians are relatively inactive." },
+    ],
   },
 ];

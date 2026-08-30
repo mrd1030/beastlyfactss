@@ -50,6 +50,13 @@ export const dogGuides = [
         "Nail clippers or grinder",
       ],
     },
+    faqs: [
+      { q: "How much exercise does a dog need every day?", a: "It varies enormously by breed, but the more useful point is that exercise alone is not enough. A physically tired dog that has not been mentally worked will still show behavioral problems. Pair daily walks or play with puzzle feeders, sniff mats, training sessions, and novel experiences like a new route or a new smell. The mental side is the part most owners underestimate." },
+      { q: "What foods are toxic to dogs?", a: "Grapes, raisins, onions, garlic, xylitol, chocolate, macadamia nuts, and cooked bones. Xylitol in particular hides in sugar-free gum, peanut butter, and baked goods, so read labels before sharing anything. Beyond the toxic list, feed a complete AAFCO-approved food matched to your dog's life stage and size, with protein as the first ingredient." },
+      { q: "Is crate training cruel?", a: "Not when it is done correctly. A crate gives a dog a secure den of its own and prevents destructive behavior when unsupervised. Size is what matters: your dog should be able to stand, turn around, and lie down comfortably. The crate is a den, not a punishment, and dogs that are crated as discipline learn to fear it." },
+      { q: "How often should I brush my dog's teeth?", a: "Three to five times per week, or provide dental chews if brushing is not realistic. Dental hygiene is the single most undervalued part of routine dog care, and dental disease is both painful and expensive once it is established. An annual wellness exam catches it early even in a dog that seems perfectly healthy." },
+      { q: "When is the best time to socialize a puppy?", a: "Between 3 and 14 weeks of age. That window is when positive exposure to people, other animals, sounds, and environments does the most good, and it closes quickly. Adult dogs still benefit from continued exposure to new things, but nothing later fully substitutes for what happens in those weeks." },
+    ],
   },
 
   // ── SMALL BREED GUIDE ────────────────────────────────────────────────────
@@ -97,6 +104,13 @@ export const dogGuides = [
         "Nail clippers appropriate for small nails",
       ],
     },
+    faqs: [
+      { q: "Why should small dogs wear a harness instead of a collar?", a: "Tracheal collapse is a real risk in small breeds, and a collar puts pressure directly on the windpipe every time the dog pulls. A harness spreads that force across the chest instead. This is one of the few pieces of small-breed gear advice that is genuinely about anatomy rather than preference." },
+      { q: "What is small dog syndrome?", a: "It is the pattern where small dogs are allowed behaviors that would be corrected immediately in a large breed: jumping on people, snapping, demanding attention. The dog is not being difficult, it is being trained by inconsistency. Consistent rules matter regardless of size, and a 10 lb dog that has never been told no is genuinely harder to live with than a well-trained 80 lb one." },
+      { q: "Why are small dogs so prone to dental disease?", a: "The same number of teeth are crowded into a much smaller jaw, which traps food and plaque in places a larger mouth would keep clear. That crowding makes frequent brushing more important in small breeds than in large ones, not less, and it is worth raising specifically at every annual exam." },
+      { q: "What is a luxating patella?", a: "It is a kneecap that slips out of its groove, and it is one of the most common orthopedic problems in small breeds. Owners often notice it as a skipping step or a brief hop before the dog carries on normally. Annual vet checks with a patella assessment are the standard way to track whether it is progressing." },
+      { q: "Why do toy breed puppies need several small meals a day?", a: "Hypoglycemia, low blood sugar, can affect toy breeds and is most dangerous in puppies. Their small energy reserves run down fast between meals. Feeding multiple small meals daily and watching for lethargy or wobbliness is the practical prevention, alongside a small-breed formula with kibble sized for small jaws." },
+    ],
   },
 
   // ── MEDIUM BREED GUIDE ───────────────────────────────────────────────────
@@ -146,6 +160,10 @@ export const dogGuides = [
     },
     faqs: [
       { q: "What size counts as a medium breed dog, exactly?", a: "There's no single official cutoff, but roughly 20 to 60 lbs at adult weight is the range most trainers, vets, and breed clubs use for \"medium.\" Below that is generally considered small, and above it starts sliding into large (60 to 100 lbs) and giant (100+ lbs) territory. The line is blurrier than it sounds - a 55 lb Border Collie and a 65 lb Labrador are both commonly called medium in everyday use, since build and activity level matter as much as the number on the scale." },
+      { q: "How much exercise does a medium breed dog need?", a: "Roughly 45 to 90 minutes per day depending on the breed's energy level, plus daily mental enrichment. Most medium breeds were built for active work: herding, hunting, retrieving, or guarding. Insufficient exercise and enrichment is the leading cause of destructive behavior in this size class, and it is usually mistaken for a training problem." },
+      { q: "Can a medium breed dog live in an apartment?", a: "Yes, given two or more dedicated walks a day. Space matters less than routine. The bigger constraint is time alone: medium breeds are often very social and do poorly isolated for eight or more hours daily, so a midday walk or doggy daycare is worth budgeting for if you work long hours." },
+      { q: "Should I free-feed my dog?", a: "No. Leaving food out all day makes portion control impossible, and medium breeds are prone to obesity, especially after spaying or neutering. Feed twice daily for adults, measure with an actual measuring cup rather than eyeballing a scoop, and adjust to your individual dog's body condition." },
+      { q: "Which health problems are most common in medium breeds?", a: "Hip and elbow dysplasia affect many of them, particularly breeds with a genetic predisposition such as Labradors, Golden Retrievers, and Border Collies. Keeping the dog at a healthy weight is the most effective thing an owner controls. Bloat is less likely than in giant breeds but still possible in deep-chested medium dogs like Standard Poodles and Border Collies." },
     ],
   },
 
@@ -199,6 +217,10 @@ export const dogGuides = [
     },
     faqs: [
       { q: "What's the difference between a large breed dog and a giant breed dog?", a: "There's no single official line, but most vets and breed resources put the split around 100 lbs at adult weight. Dogs roughly 60 to 100 lbs (Labradors, German Shepherds, Golden Retrievers) are generally considered large breed, while dogs over 100 lbs (Great Danes, Saint Bernards, Mastiffs) are considered giant breed. Giant breeds also mature more slowly and tend toward shorter lifespans and a higher risk of joint and bloat issues, which is part of why this guide covers both together." },
+      { q: "What are the warning signs of bloat, and what should I do?", a: "Unproductive retching, a swollen abdomen, and restlessness. Gastric dilatation-volvulus is a life-threatening emergency, not something to watch overnight, so go to an emergency vet immediately. It is most common in deep-chested breeds including Great Danes, Weimaraners, German Shepherds, and Boxers, and prophylactic stomach tacking is worth discussing for high-risk dogs." },
+      { q: "Why can't large breed puppies eat regular puppy food?", a: "Standard puppy food promotes growth that is too rapid for a large frame, which raises the risk of hip and elbow dysplasia. Large breed puppy formulas control the calcium and phosphorus ratio and slow that growth rate deliberately. This is one of the few feeding decisions where the breed-specific label is doing real work rather than marketing." },
+      { q: "How long do large and giant breeds live?", a: "Roughly 8 to 12 years for large breeds and 6 to 9 for giant breeds, meaningfully shorter than small dogs. Their size also brings a higher risk of osteosarcoma, heart disease, and joint problems, so annual exams matter more, not less, and joint screening is worth raising with your vet early rather than after a limp appears." },
+      { q: "Does a raised food bowl prevent bloat?", a: "No, and it is worth being clear about that because the advice circulates widely. A raised bowl can reduce neck strain in giant breeds, which is a comfort benefit, but the evidence does not show it prevents bloat. Feeding twice daily rather than once is the more useful habit." },
     ],
   },
 
@@ -246,6 +268,12 @@ export const dogGuides = [
         "Dental hygiene routine",
       ],
     },
+    faqs: [
+      { q: "Why are Labradors so prone to obesity?", a: "A mutation in the POMC gene affects appetite regulation in a large share of the breed, so a Lab genuinely does feel hungrier than most dogs. That is a reason for strict portion control from puppyhood rather than a reason to give in. Measure food precisely, keep treats to about 10% of daily calories, and aim for a lean body condition where ribs are easily felt but not seen." },
+      { q: "How much exercise does a Labrador need?", a: "Sixty to 90 minutes of sustained aerobic exercise daily, minimum. They were bred to retrieve in the field all day, so swimming, fetch, running, and hiking suit them far better than a slow walk around the block. Without it they become destructive chewers and boisterous indoors, which is usually read as bad behavior rather than unmet need." },
+      { q: "What is exercise-induced collapse?", a: "EIC is a genetic condition seen in Labradors that causes weakness or collapse after intense exercise. It is worth knowing about before you push a young Lab hard, and it is one of several conditions where knowing the dog's genetic background changes how you manage them. Progressive retinal atrophy and centronuclear myopathy are the other two breed-specific ones to ask a breeder about." },
+      { q: "What are OFA clearances and when do they happen?", a: "OFA hip and elbow screening evaluates joint conformation, and the formal certification is done at around two years of age. Ask any breeder for clearances on the parent dogs, since hip and elbow dysplasia are among the breed's major concerns. Weight monitoring at every vet visit throughout life does more for those joints than anything else." },
+    ],
   },
   {
     id: "dog-golden-retriever",
@@ -291,6 +319,12 @@ export const dogGuides = [
         "Dental hygiene routine",
       ],
     },
+    faqs: [
+      { q: "What is the biggest health risk for Golden Retrievers?", a: "Cancer, and it is the defining health concern for the breed rather than one item on a list. Early detection is what you actually control: know what is normal for your dog and report lumps, lethargy, or unexplained weight loss promptly. Annual exams with bloodwork are strongly recommended from age 5 onward." },
+      { q: "How much do Golden Retrievers shed?", a: "A great deal, year-round, with heavy seasonal blowouts on top. The long double coat needs brushing three to four times per week to stay manageable. This is worth being honest with yourself about before getting one, because coat maintenance is a permanent commitment rather than an occasional chore." },
+      { q: "What kind of training works best for a Golden?", a: "Positive reinforcement, and it is not just a preference. Goldens are emotionally sensitive and harsh correction damages their trust and confidence in a way that is slow to repair. They were bred to work cooperatively with people, so obedience, agility, and therapy dog work all play to what the breed already wants to do." },
+      { q: "Do Golden Retrievers need to swim?", a: "They do not need to, but water access is close to ideal enrichment for them. They were bred as hunting retrievers with a strong drive to carry things and work with people, so swimming and fetch satisfy the instinct directly. Sixty to 90 minutes of daily exercise is the target however you get there." },
+    ],
   },
   {
     id: "dog-german-shepherd",
@@ -335,6 +369,12 @@ export const dogGuides = [
         "Annual wellness exam with bloodwork",
       ],
     },
+    faqs: [
+      { q: "What is degenerative myelopathy?", a: "DM is a progressive neurological disease that causes gradual hind-end paralysis, broadly similar to ALS in humans. DNA testing can identify carriers, so it is a specific thing to ask a breeder about rather than a general risk. Alongside it, hip and elbow dysplasia are extremely common in the breed and OFA clearances on the parents matter." },
+      { q: "How much exercise and training does a German Shepherd need?", a: "Ninety minutes or more of vigorous exercise daily, plus daily training sessions. These are working dogs that need a job, and the mental half is not optional. Scent work, protection sports, agility, obedience, and herding are all good outlets. Without them, GSDs become destructive, anxious, and reactive." },
+      { q: "Why is early socialization so important for this breed?", a: "An undersocialized German Shepherd is a significant bite risk, which is a blunt way of putting it but an accurate one. This is a large, powerful, intensely bonded dog, and the combination means early and ongoing exposure to people, animals, and environments is a safety issue rather than a nicety." },
+      { q: "Are German Shepherds prone to food allergies?", a: "Yes, and chicken and wheat are the common triggers. Chronic loose stools, skin issues, or recurring ear infections are the signs worth acting on, usually via a food trial with a novel protein. Separately, exocrine pancreatic insufficiency is a breed-associated digestive condition worth knowing the name of." },
+    ],
   },
   {
     id: "dog-french-bulldog",
@@ -380,6 +420,13 @@ export const dogGuides = [
         "Pet insurance strongly recommended",
       ],
     },
+    faqs: [
+      { q: "What is BOAS, and can it be fixed?", a: "Brachycephalic obstructive airway syndrome is the defining French Bulldog health issue: narrowed nostrils, an elongated soft palate, and a narrowed trachea that together make breathing difficult. Surgical correction improves quality of life significantly and is worth discussing with a vet rather than accepting noisy breathing as normal for the breed. Use a vet experienced with brachycephalic dogs." },
+      { q: "Can French Bulldogs swim?", a: "No. Their body proportions mean they cannot swim, and water is a genuine drowning risk rather than a supervision problem. A life jacket is required for any water exposure at all, including a backyard pool a dog might simply fall into." },
+      { q: "Why are Frenchies so sensitive to heat?", a: "Dogs cool themselves largely by panting, and brachycephalic anatomy severely limits how well that works. A French Bulldog in heat and humidity cannot shed heat the way another breed can. Never leave one in a hot car, do not exercise them in warm weather, and keep air conditioning available in summer." },
+      { q: "Why do French Bulldogs need C-sections?", a: "In most cases their puppies' heads are too large to pass through the birth canal, so nearly all Frenchie litters are delivered surgically. It is one of several ways the breed's conformation drives its cost and its veterinary needs, which is part of why pet insurance is strongly recommended for the breed." },
+      { q: "What spinal problems affect French Bulldogs?", a: "IVDD and hemivertebrae are both very common. The practical management is limiting jumping and stairs where you reasonably can, and knowing the signs early. Skin fold dermatitis, cherry eye, and ear infections round out the routine concerns, with fold cleaning as ongoing maintenance rather than an occasional task." },
+    ],
   },
   {
     id: "dog-border-collie",
@@ -424,6 +471,12 @@ export const dogGuides = [
         "Annual wellness vet exam",
       ],
     },
+    faqs: [
+      { q: "How much exercise does a Border Collie actually need?", a: "Two to three hours of vigorous exercise daily, plus 30 to 60 minutes of active training. That is the honest number and it is why this breed is rated advanced. They were bred to run all day herding sheep, so two or three miles of walking is woefully insufficient rather than merely light." },
+      { q: "Are Border Collies suitable for apartments?", a: "Not without an extremely high exercise commitment that most households will not sustain. This is one of the few breeds where the honest answer to a low-activity home is no. A bored Border Collie does not simply mope, it develops compulsive behaviors like chasing lights or shadows, anxiety, and destructive habits." },
+      { q: "What is the MDR1 mutation and why does it matter?", a: "MDR1, also called ABCB1, causes severe reactions to several common drugs including ivermectin-based dewormers. A DNA test identifies it, and every Border Collie should be tested and every vet who treats the dog should be told the result. This is the single most important practical thing to know about the breed medically." },
+      { q: "What is Collie eye anomaly?", a: "CEA is an inherited eye condition, and a CEA clearance is one of the two things to ask a breeder for alongside MDR1 testing. Border Collies are otherwise a healthy breed when responsibly bred, though hip dysplasia and epilepsy occur, and deafness and vision problems are seen more often in merle dogs." },
+    ],
   },
   {
     id: "dog-siberian-husky",
@@ -468,5 +521,12 @@ export const dogGuides = [
         "Annual wellness exam",
       ],
     },
+    faqs: [
+      { q: "Can Siberian Huskies be trusted off-leash?", a: "No, and this is not a training failure that can be worked through. Their prey drive and wanderlust mean a Husky off-leash in an unfenced area will run and may not come back. Off-leash freedom belongs inside a secure fence, and nowhere else." },
+      { q: "What kind of fence does a Husky need?", a: "Six feet with a buried base. Huskies are escape artists of the highest order and will dig under, climb over, or jump a fence that would contain almost any other breed. Fencing is the largest single setup cost for the breed and skimping on it is how Huskies end up in shelters." },
+      { q: "Do Huskies cope with hot climates?", a: "Poorly. They are built for cold and thrive in snow, and heat is a real constraint on where and how they can live. Their thick double coat is supported nutritionally by omega-3 fatty acids, and they are efficient metabolizers who often need less food than their size suggests." },
+      { q: "What is zinc-responsive dermatosis?", a: "It is a condition where Huskies have difficulty absorbing zinc from food, and it is worth monitoring with your vet. Otherwise the breed is generally healthy and long-lived at 12 to 15 years, with hip dysplasia, progressive retinal atrophy, cataracts, and hypothyroidism as the other concerns to know." },
+      { q: "Is there anything my vet should know before surgery?", a: "Yes. Huskies can be sensitive to anesthesia, so tell your vet before any procedure and make sure it is noted in the record. It is also worth discussing titers rather than automatic boosters, since over-vaccination is a common concern raised for the breed." },
+    ],
   },
 ];
