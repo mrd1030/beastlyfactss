@@ -89,7 +89,7 @@ export default function HeroSection({ onOpenFact }) {
             fact card below uses the same). The bottom is deliberately square
             and fades into the page instead, so the image reads as part of the
             page rather than a floating tile. */}
-        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[21/9] overflow-hidden">
+        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
@@ -142,7 +142,7 @@ export default function HeroSection({ onOpenFact }) {
               Facts that roar. Guides that care.
             </div>
 
-            <h1 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
               <span className="text-foreground">Curated animal facts</span>
               <br />
               <span className="text-secondary">and practical care advice</span>
