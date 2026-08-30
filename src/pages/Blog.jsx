@@ -13,7 +13,8 @@ import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { withBrand } from '@/lib/utils/seo';
-import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
+import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate } from '@/lib/utils/date';
+import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
@@ -67,6 +68,13 @@ export default function Blog() {
   const location = useLocation();
   const { slug: routeSlug, catSlug } = useParams();
 
+  // Build date first so prerendered HTML and first client render agree, then the
+  // real date after mount. See byReleaseThenDate in @/lib/utils/date.
+  const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setCutoff(new Date().toISOString().slice(0, 10));
+  }, []);
   const [activeCategory, setActiveCategory] = useState('All');
   // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
   // search box) pre-fills the filter on first render, not just live typing.
@@ -133,11 +141,11 @@ export default function Blog() {
     })),
     ...mdxPosts.filter(p => !isChroniclesPost(p)),
   ]
-  .sort((a, b) => {
-      const dateA = new Date(a.publishedAt || a.date || 0);
-      const dateB = new Date(b.publishedAt || b.date || 0);
-      return dateB - dateA;
-    });
+  // Same ordering as the homepage's Latest Articles: released posts first and
+  // newest of those on top, with not-yet-dated posts trailing in soonest-first
+  // order. Plain date-descending surfaced October articles above everything a
+  // reader could actually see a date on.
+  .sort(byReleaseThenDate(cutoff));
 
 
   const searchQuery = search.trim().toLowerCase();
