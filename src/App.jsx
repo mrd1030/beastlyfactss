@@ -161,7 +161,7 @@ function App() {
     "@type": "Organization",
     "name": "Beastly Facts",
     "url": "https://beastlyfacts.com/",
-    "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" },
+    "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" },
     "sameAs": [
       "https://www.pinterest.com/BeastlyFacts",
       "https://x.com/beastly_facts",

@@ -47,6 +47,19 @@
 /assets/*.svg
   Cache-Control: public, max-age=2592000
 
+# og-default.jpg is the og:image and twitter:image for every page, and its URL
+# must never change. Facebook, X, LinkedIn and Slack cache a share card against
+# the URL that was live when the link was first posted, so renaming or hashing
+# this file breaks the preview on every link anyone has already shared. It is
+# deliberately a plain file in public/ for that reason, while the visual hero it
+# was cut from is imported through src/assets/ and hashed. Same picture, two
+# jobs, opposite requirements: one must change its URL on every edit, the other
+# must never change it at all.
+#
+# public/assets/hero-1200.jpg is kept for the same reason. It was the og:image
+# before og-default.jpg took over, so links shared before that swap still point
+# at it. Nothing in the app references it any more. Do not delete it.
+
 # The favicon is the one image Vite content-hashes, because index.html points at
 # ./src/assets/favicon.webp rather than at public/. That makes its filename
 # change whenever its contents do, which is exactly the property the rules above

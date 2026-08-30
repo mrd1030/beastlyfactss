@@ -292,12 +292,12 @@ export default function Blog() {
         <meta property="og:description" content={blogDescription} />
         <meta property="og:url" content={blogCanonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:alt" content="The Critter Digest - reptile and exotic pet care blog by Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Critter Digest | Beastly Facts" />
         <meta name="twitter:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips." />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
@@ -640,7 +640,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   // rendered last).
   const ogImage = post.image
     ? `https://beastlyfacts.com${post.image}`
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : 'https://beastlyfacts.com/assets/og-default.jpg';
   const ogImageDims = (post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
   const relatedProducts = (post.relatedProducts || [])
     .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
@@ -671,7 +671,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     // valid where an empty one is not.
     ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastReviewed || isoPublished }),
     "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-    "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
+    "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
   };
 

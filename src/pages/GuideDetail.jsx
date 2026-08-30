@@ -330,7 +330,7 @@ export default function GuideDetail() {
 
   const ogImage = guide.image
     ? `https://beastlyfacts.com${guide.image}`
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : 'https://beastlyfacts.com/assets/og-default.jpg';
   // og:image:width/height must match the actual image's real size - Helmet
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every guide photo's real dimensions.
@@ -397,7 +397,7 @@ export default function GuideDetail() {
           "image": ogImage,
           "url": canonicalUrl,
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
+          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
         })}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>

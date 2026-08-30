@@ -69,14 +69,14 @@ export default function Chronicles() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content={isReader ? 'article' : 'website'} />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`Chronicles of ${series.character} - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 
       {/* Header + series tabs */}

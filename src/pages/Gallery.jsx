@@ -184,13 +184,13 @@ export default function Gallery() {
         <meta property="og:description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <meta property="og:url" content="https://beastlyfacts.com/gallery/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Photo Gallery | Beastly Facts" />
         <meta name="twitter:description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">

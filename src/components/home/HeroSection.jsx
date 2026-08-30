@@ -5,6 +5,34 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { truncateDescription } from '@/lib/utils/truncate';
 
+// Imported rather than referenced as /assets/hero-*.ext from public/, so Vite
+// emits them with a content hash in the filename. That is what lets public/_headers
+// cache them for a year as immutable: a changed hero is a changed URL, so nobody
+// is ever served a stale one, and there is no rename to remember.
+//
+// This is deliberately NOT the image used for og:image and twitter:image. Those
+// point at the unhashed public/assets/og-default.jpg, because social platforms
+// cache share cards by URL and a hashed name would break every link already
+// shared. Same picture, two different jobs, opposite requirements. See the note
+// in public/_headers.
+import hero400Avif from '@/assets/hero-400.avif';
+import hero800Avif from '@/assets/hero-800.avif';
+import hero1200Avif from '@/assets/hero-1200.avif';
+import hero1600Avif from '@/assets/hero-1600.avif';
+import hero400Webp from '@/assets/hero-400.webp';
+import hero800Webp from '@/assets/hero-800.webp';
+import hero1200Webp from '@/assets/hero-1200.webp';
+import hero1600Webp from '@/assets/hero-1600.webp';
+import hero400Jpg from '@/assets/hero-400.jpg';
+import hero800Jpg from '@/assets/hero-800.jpg';
+import hero1200Jpg from '@/assets/hero-1200.jpg';
+import hero1600Jpg from '@/assets/hero-1600.jpg';
+
+const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
+const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
+const HERO_WEBP = srcSet(hero400Webp, hero800Webp, hero1200Webp, hero1600Webp);
+const HERO_JPG = srcSet(hero400Jpg, hero800Jpg, hero1200Jpg, hero1600Jpg);
+
 // A single animated element, not <Link><motion.button>...</motion.button></Link> -
 // nesting a <button> inside an <a> is invalid HTML content-model nesting, and
 // Lighthouse's touch-target audit was flagging both as two overlapping,
@@ -55,22 +83,22 @@ export default function HeroSection({ onOpenFact }) {
               ones worth having. Anything that cannot decode AVIF, mainly Safari
               before 16.4, falls through to exactly what it gets today. */}
           <source
-            srcSet="/assets/hero-400.avif 400w, /assets/hero-800.avif 800w, /assets/hero-1200.avif 1200w, /assets/hero-1600.avif 1600w"
+            srcSet={HERO_AVIF}
             sizes="100vw"
             type="image/avif"
           />
           <source
-            srcSet="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
+            srcSet={HERO_WEBP}
             sizes="100vw"
             type="image/webp"
           />
           <source
-            srcSet="/assets/hero-400.jpg 400w, /assets/hero-800.jpg 800w, /assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w"
+            srcSet={HERO_JPG}
             sizes="100vw"
             type="image/jpeg"
           />
           <img
-            src="/assets/hero-1200.jpg"
+            src={hero1200Jpg}
             alt="Majestic lion, colorful macaw, and bearded dragon in nature"
             className="w-full h-full object-cover object-[50%_20%]"
             fetchpriority="high"

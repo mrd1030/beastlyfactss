@@ -11,11 +11,11 @@ export default function DonateSuccess() {
       <Helmet>
         <title>Donation Successful | Beastly Facts</title>
         <meta name="robots" content="noindex, nofollow" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <motion.div
         initial={{ opacity: 0, y: 50 }}

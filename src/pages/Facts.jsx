@@ -226,7 +226,7 @@ export default function Facts() {
   // Real per-fact photo for the share preview when a specific fact is linked
   // (see src/lib/data/factImages.js) - falls back to the generic hero otherwise,
   // since a category/list page has no single representative photo.
-  const heroImage = 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  const heroImage = 'https://beastlyfacts.com/assets/og-default.jpg';
   const factImage = linkedFact ? absoluteImageFor(linkedFact) : null;
   const pageImage = factImage || heroImage;
   // Direct fact links aren't prerendered (Facts.jsx is already flagged CPU-heavy

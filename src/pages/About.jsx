@@ -14,14 +14,14 @@ export default function About() {
         <meta property="og:description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
         <meta property="og:url" content="https://beastlyfacts.com/about/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts - animal trivia, care guides and quizzes" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Beastly Facts" />
         <meta name="twitter:description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">

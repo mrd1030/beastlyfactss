@@ -112,14 +112,14 @@ export default function Categories() {
         <meta property="og:description" content={PAGE_DESCRIPTION} />
         <meta property="og:url" content="https://beastlyfacts.com/categories/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts - browse by category" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Browse by Category | Beastly Facts" />
         <meta name="twitter:description" content={PAGE_DESCRIPTION} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "CollectionPage",

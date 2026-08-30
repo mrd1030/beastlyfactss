@@ -92,7 +92,7 @@ export default function EncyclopediaAnimal() {
   const bio = animal.bio || {};
   const ogImage = guide?.image
     ? `https://beastlyfacts.com${guide.image}`
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : 'https://beastlyfacts.com/assets/og-default.jpg';
   // og:image:width/height must match the actual image's real size - Helmet
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every animal photo's real dimensions.

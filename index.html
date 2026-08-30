@@ -70,8 +70,12 @@
          type attribute is what keeps that safe: a browser that cannot decode
          image/avif skips this link entirely rather than wasting the fetch, and
          falls through to the webp source as normal. -->
-    <link rel="preload" as="image" href="/assets/hero-1200.avif" type="image/avif" fetchpriority="high"
-      imagesrcset="/assets/hero-400.avif 400w, /assets/hero-800.avif 800w, /assets/hero-1200.avif 1200w, /assets/hero-1600.avif 1600w"
+         Paths point into src/assets rather than public/ so Vite content-hashes
+         them and rewrites both href and every URL inside imagesrcset (verified:
+         it does rewrite imagesrcset, not just href). They must stay identical to
+         the imports in HeroSection.jsx or the preload misses again. -->
+    <link rel="preload" as="image" href="./src/assets/hero-1200.avif" type="image/avif" fetchpriority="high"
+      imagesrcset="./src/assets/hero-400.avif 400w, ./src/assets/hero-800.avif 800w, ./src/assets/hero-1200.avif 1200w, ./src/assets/hero-1600.avif 1600w"
       imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <!-- Fonts: self-hosted (public/fonts/, see src/index.css for the @font-face
