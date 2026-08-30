@@ -331,3 +331,84 @@ html, body {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
+/* ============================================================
+   Homepage section bands and dividers
+   ============================================================
+   The homepage is ~7,700px of a single flat --background with cards floating
+   on it, and nothing but whitespace marking where one topic ends and the next
+   begins. Below the hero there is effectively no colour on the page at all.
+   These lay a low-contrast wash of two hues behind groups of sections, faded
+   to nothing at the top and bottom edges so no band ever draws a hard line,
+   plus a small repeated motif in the side gutters on wide screens where the
+   max-w-6xl content leaves them empty.
+
+   Pure CSS gradients and one masked inline SVG, deliberately. Decorative
+   images would put network weight back onto a page whose image budget was
+   just cut from 269MB to 202MB, and this has to sit behind ~5,000px of
+   lazy-loaded content without costing a request or a pixel of layout shift.
+
+   The tints are absolute colours per theme rather than alpha over a token,
+   because the two modes need opposite moves. In light mode the band sits
+   slightly darker and warmer/cooler than the cream page. In dark mode it goes
+   *below* the page background instead of above it: --card is hsl(150 22% 11%)
+   against a hsl(153 27% 8%) page, only three points apart, so lightening the
+   band would swallow the cards it sits behind. Dropping to 6% pushes the band
+   back and lets the cards float further forward than they did before. */
+.home-band {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(var(--band-tint) / 0) 0%,
+    hsl(var(--band-tint) / 1) 7%,
+    hsl(var(--band-tint) / 1) 93%,
+    hsl(var(--band-tint) / 0) 100%
+  );
+}
+/* Both stops interpolate between the same hue at alpha 1 and alpha 0, not
+   between the tint and `transparent`. `transparent` is rgba(0,0,0,0), so a
+   gradient to it passes through grey and the fade reads dirty. */
+.home-band--warm { --band-tint: 38 70% 94%; }
+.home-band--cool { --band-tint: 152 30% 94%; }
+.dark .home-band--warm { --band-tint: 32 34% 6%; }
+.dark .home-band--cool { --band-tint: 178 34% 6%; }
+
+/* Overlapping arcs: scales. Tiles at 40x20, the second row offset by half a
+   tile so the seams do not line up. Used as a mask rather than a background
+   image so the colour comes from the theme token below and follows dark mode,
+   which a data-URI SVG with a baked-in fill cannot do. */
+.home-band--edged {
+  --band-motif: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20' viewBox='0 0 40 20'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.6'%3E%3Cpath d='M0 20a10 10 0 0 1 20 0a10 10 0 0 1 20 0'/%3E%3Cpath d='M-20 10a10 10 0 0 1 20 0a10 10 0 0 1 20 0a10 10 0 0 1 20 0'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 1400px, not the lg breakpoint: max-w-6xl is 1152px, so a viewport has to
+   clear roughly 1400px before there is a gutter wide enough to hold this
+   without crowding the content. Below that the motif simply does not render,
+   which is also why none of the colour work above depends on it. */
+@media (min-width: 1400px) {
+  .home-band--edged::before,
+  .home-band--edged::after {
+    content: '';
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    width: 108px;
+    pointer-events: none;
+    -webkit-mask-image: var(--band-motif);
+    mask-image: var(--band-motif);
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+    -webkit-mask-size: 40px 20px;
+    mask-size: 40px 20px;
+  }
+  /* The horizontal fade lives in the background rather than in a second mask
+     layer, so this needs no mask-composite (whose standard keyword and the
+     -webkit- one disagree, and which would be the only fragile part here). */
+  .home-band--edged::before {
+    left: 0;
+    background-image: linear-gradient(to right, hsl(var(--secondary) / 0.22), hsl(var(--secondary) / 0) 88%);
+  }
+  .home-band--edged::after {
+    right: 0;
+    background-image: linear-gradient(to left, hsl(var(--secondary) / 0.22), hsl(var(--secondary) / 0) 88%);
+  }
+}

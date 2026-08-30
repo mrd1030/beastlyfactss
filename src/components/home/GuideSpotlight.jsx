@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
@@ -11,6 +11,7 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 // slim index is 23 KB and carries the same records in the same order.
 import guidesIndex from '@/lib/generated/guides-index.json';
 import { difficultyColor } from '@/lib/data/encyclopedia';
+import { hashString } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
 
 // One guide per pet type so the sample reflects the site's actual range
@@ -22,11 +23,41 @@ const SAMPLE_PET_TYPES = [
   'Lizards', 'Snakes', 'Geckos', 'Turtles & Tortoises',
   'Invertebrates', 'Amphibians',
 ];
-const featured = SAMPLE_PET_TYPES
-  .map(petType => guidesIndex.guides.find(g => g.petType === petType))
-  .filter(Boolean);
+
+// Every guide bucketed by pet type, not one hardcoded pick per type. This used
+// to be `SAMPLE_PET_TYPES.map(t => guides.find(g => g.petType === t))` at module
+// scope, which is fully deterministic: the same 11 of 108 guides on every visit
+// forever (dog-universal, cat-universal, african-grey, angelfish...). The other
+// 97 had no route through this section at all.
+const GUIDE_BUCKETS = SAMPLE_PET_TYPES
+  .map(petType => [petType, guidesIndex.guides.filter(g => g.petType === petType)])
+  .filter(([, list]) => list.length > 0);
+
+// Rotates which guide represents each pet type while keeping exactly one slot
+// per type, so Dog, Cat and every other category stay present on every render.
+// The seed mixes the day with a per-type hash so the 11 cards advance out of
+// step with each other instead of all turning over together.
+function pickFeatured(daySeed) {
+  return GUIDE_BUCKETS.map(([petType, list]) => list[(daySeed + hashString(petType)) % list.length]);
+}
+
+// Index 0 of each bucket on the hydration-critical first render. prerender.mjs
+// renders with the effect below skipped, so this is exactly what it bakes into
+// the static HTML. Deriving the real day inline during render instead is the
+// React #418/#423 mismatch already fixed everywhere else on this page: the site
+// is not rebuilt daily, so any real visitor would land on a different day than
+// the deploy and reorder all 11 cards out from under hydration. The images here
+// are loading="lazy" and this section sits ~5,000px down, so the post-mount swap
+// costs no wasted fetches - nothing has started loading yet.
+const DEFAULT_FEATURED = GUIDE_BUCKETS.map(([, list]) => list[0]);
 
 export default function GuideSpotlight() {
+  const [featured, setFeatured] = useState(DEFAULT_FEATURED);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setFeatured(pickFeatured(new Date().getDate()));
+  }, []);
+
   return (
     <section className="py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
@@ -42,7 +73,7 @@ export default function GuideSpotlight() {
               Sample Guides
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Detailed, research-backed guides for pets
+              {`A rotating pick from ${guidesIndex.guides.length} research-backed care guides`}
             </p>
           </div>
           <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

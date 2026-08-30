@@ -108,7 +108,10 @@ export default function CritterDigestPreview() {
           })}
         </div>
 
-        <div className="text-center mt-6">
+        {/* sm:hidden, same as the other home sections: the header above already
+            carries a "View all articles" link that is hidden:sm:flex, so without
+            this the desktop layout rendered the same link twice. */}
+        <div className="text-center mt-6 sm:hidden">
           <Link
             to="/blog/"
             className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"
