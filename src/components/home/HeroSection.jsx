@@ -143,7 +143,7 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Facts? Care?</span>
+              <span className="text-foreground">Wild facts. Pet care.</span>
               <br />
               <span className="text-secondary">We looked it up.</span>
               <br />
