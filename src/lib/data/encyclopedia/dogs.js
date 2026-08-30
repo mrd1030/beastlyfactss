@@ -103,4 +103,30 @@ export const dogEncyclopedia = [
       conservation: "Not applicable (domesticated breed)",
     },
   },
+  {
+    id: "beagle", name: "Beagle", scientific: "Canis lupus familiaris",
+    category: "Dogs", emoji: "\U0001F415", difficulty: "Intermediate", guideId: "dog-beagle", available: true, image: "/assets/guides/dog-beagle.jpg",
+    bio: {
+      overview: "The Beagle descends from small English pack scenthounds bred to trail hare on foot, kept deliberately smaller than mounted hunting hounds so that owners without a horse could keep up. The compact type traces to the 1500s and the first AKC registration came in 1885. Selection targeted stamina, an exceptional nose and a carrying voice rather than handler focus, so the traits that made a good rabbit hound are the same ones that make a demanding pet: the AKC states plainly that walks must always be on leash because a Beagle will not resist the urge to run off after a compelling scent. The long drop ears that help sweep scent upward also trap warmth and moisture, and Beagles carry 2.54 times the odds of outer ear infection compared with crossbred dogs. Breeding has also left them markedly food-motivated, with obesity the single most diagnosed disorder in UK Beagles at 24.27 percent. The honest counterweight is that a 2025 study of 19,906 UK Beagles concluded the breed should not be considered to have an extreme conformation, with a median age at death of 11.28 years, broadly in line with dogs overall.",
+      origin: "Breed origin: England (small foot-hunting pack hounds bred to trail hare, compact type established by the 1500s, first AKC registration 1885)",
+      habitat: "Fully domesticated",
+      adultSize: "Two AKC varieties: 13 inches and under at the shoulder, under 20 lbs; and over 13 up to 15 inches, 20-30 lbs",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "10-15 years (UK primary-care records give a median age at death of 11.28 years)",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
+  {
+    id: "rottweiler", name: "Rottweiler", scientific: "Canis lupus familiaris",
+    category: "Dogs", emoji: "\U0001F415", difficulty: "Advanced", guideId: "dog-rottweiler", available: true, image: "/assets/guides/dog-rottweiler.jpg",
+    bio: {
+      overview: "The Rottweiler descends from Roman drover dogs bred to move and guard the herds that fed the legions. After the empire's collapse the type found work in the German cattle town of Rottweil and earned the name Rottweiler Metzgerhund, the Butcher's Dog of Rottweil. When railroad cattle cars ended the droving trade in the 1800s the breed was redirected into police work, personal protection and guide work, and the AKC admitted it to the Stud Book in 1931. Selecting for great mass and bone has come at a measurable orthopedic cost: OFA data from 1974 to 2015 record 20.2 percent of Rottweilers as hip dysplastic and 36.7 percent as elbow dysplastic, against Labrador figures of 11.5 and 10.2 percent. The same size and long bone length carry an extreme bone cancer burden, with Rottweilers showing 26.67 times the odds of osteosarcoma compared with crossbred dogs in a UK study of 905,552 dogs. Median longevity in UK primary care is 9.0 years, with cancer the single largest cause of death at 33.0 percent, so a buyer should plan for a shorter life and a higher cancer probability than the breed's power and vigor suggest.",
+      origin: "Breed origin: Germany (Roman drover and guard dogs redeveloped as the Butcher's Dog of Rottweil, later police and protection work; AKC Stud Book 1931)",
+      habitat: "Fully domesticated",
+      adultSize: "Males 24-27 inches at the shoulder and 95-135 lbs; females 22-25 inches and 80-100 lbs",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "9-10 years (UK primary-care data give a median longevity of 9.0 years, 9.5 for females and 8.7 for males)",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
 ];
