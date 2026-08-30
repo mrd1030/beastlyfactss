@@ -77,4 +77,30 @@ export const dogEncyclopedia = [
       conservation: "Not applicable (domesticated breed)",
     },
   },
+  {
+    id: "dachshund", name: "Dachshund", scientific: "Canis lupus familiaris",
+    category: "Dogs", emoji: "🌭", difficulty: "Intermediate", guideId: "dog-dachshund", available: true, image: "/assets/guides/dog-dachshund.jpg",
+    bio: {
+      overview: "Dachshund is German for badger dog, and the breed was built to do exactly that, going to ground after burrowing carnivores. German foresters bred the type consistently through the 18th century, with the smooth coat considered original, longhairs following from selective breeding, and wirehairs arriving in the 1800s through crosses with rough-coated terriers. A boom in Germany's rabbit population produced the miniature, a smaller version for smaller quarry. The short legs that let the dog fit down a badger sett are not a cosmetic trait: they come from an FGF4 retrogene on chromosome 12 that simultaneously causes premature degeneration and calcification of the intervertebral discs, carrying an odds ratio of 51.23 for disc disease. The retrogene sits at a frequency of about 0.99 in the breed, meaning the defining silhouette and the defining disease are effectively the same mutation.",
+      origin: "Breed origin: Germany (bred by foresters from the late 17th century to go to ground after badgers, with a miniature developed in the 1800s for rabbit)",
+      habitat: "Fully domesticated",
+      adultSize: "Standard 8-9 inches at shoulder, 16-32 lbs; Miniature 5-6 inches, 11 lbs and under",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "12-16 years",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
+  {
+    id: "bulldog", name: "Bulldog", scientific: "Canis lupus familiaris",
+    category: "Dogs", emoji: "🐶", difficulty: "Intermediate", guideId: "dog-bulldog", available: true, image: "/assets/guides/dog-bulldog.jpg",
+    bio: {
+      overview: "The Bulldog was created in medieval England for bull-baiting, and its ancestors were selected for huge jaws and a high pain threshold. When England banned blood sports in 1835 the breed lost its job and nearly died out, so admirers spent decades reworking it into a companion, refining its contours and breeding away the aggression. That reshaping came at a documented cost: a study of 2,662 English Bulldogs found 2.04 times the odds of being diagnosed with at least one disorder compared with other dogs, with raised odds for 24 of 43 specific disorders, and its authors called for immediate redefinition of the breed toward a moderate conformation. A separate survey of 102 breeding Bulldogs found one paternal haplotype in 93% of dogs. None of this makes the Bulldog a bad dog, and it is genuinely docile and fond of children, but it is a dog that will need active medical management.",
+      origin: "Breed origin: England (bred for bull-baiting from the 13th century, then reworked into a companion after Britain's 1835 blood-sports ban)",
+      habitat: "Fully domesticated",
+      adultSize: "14-15 inches at shoulder; about 50 lbs male, 40 lbs female",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "8-10 years (UK life-table data gives 7.39 years at birth against 11.23 for dogs overall)",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
 ];
