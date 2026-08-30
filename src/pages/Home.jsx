@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import HeroSection from '@/components/home/HeroSection';
-import SectionBand from '@/components/home/SectionBand';
 import SectionDivider from '@/components/home/SectionDivider';
 import FactModal from '@/components/shared/FactModal';
 import ImageLightbox from '@/components/shared/ImageLightbox';
@@ -59,47 +58,33 @@ export default function Home() {
 
       <HomeChild name="FeaturedEvent" />
 
-      {/* Three tinted bands and two dividers, grouping the eleven sections into
-          the four blocks they already were in intent: facts, browse, reference,
-          editorial. Nothing here reorders or re-scopes a section - the bands are
-          the only thing that says where one block ends, on a page that below the
-          hero was a single flat colour for ~7,700px. See the CSS at the foot of
-          src/index.css. Purely presentational wrappers, so this has no effect on
-          homePreload.js: all eleven chunks still fire their import() in one tick
-          and hydration still waits on the same Promise.allSettled. */}
-      <SectionBand tone="warm" edged>
-        <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
-        {/* Directly under the fact cards: the strip continues the same rotation
-            they use, and gives /gallery/ a real entry point. It had exactly one
-            inbound link site-wide, on the Facts page. */}
-        <HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} />
-      </SectionBand>
-
+      <HomeChild name="TrendingFacts" onOpenFact={setSelectedFact} onOpenImage={setImageFact} />
+      {/* Directly under the fact cards: the strip continues the same rotation
+          they use, and gives /gallery/ a real entry point. It had exactly one
+          inbound link site-wide, on the Facts page. */}
+      <HomeChild name="FactPhotoStrip" onOpenFact={setSelectedFact} />
       <HomeChild name="FactsToGuidesBanner" />
 
+      {/* Two dividers, marking the three blocks the eleven sections already were
+          in intent: facts, reference, editorial. A tinted band behind each block
+          was tried here and taken back out - see SectionDivider.jsx. */}
       <SectionDivider />
 
       <HomeChild name="CategoryBrowse" />
-
       {/* Reference content: animal profiles + care guides, together.
           Beastlypedia leads it because the wild-animal thread runs unbroken
           from TrendingFacts through CategoryBrowse into here, and the fact
           database is mostly wild animals. The handover to pet care happens
           once, at EncyclopediaTeaser, instead of twice. */}
-      <SectionBand tone="cool" edged>
-        <HomeChild name="BeastlypediaTeaser" />
-        <HomeChild name="EncyclopediaTeaser" />
-        <HomeChild name="GuideSpotlight" />
-      </SectionBand>
+      <HomeChild name="BeastlypediaTeaser" />
+      <HomeChild name="EncyclopediaTeaser" />
+      <HomeChild name="GuideSpotlight" />
 
       <SectionDivider />
 
       {/* Editorial content: articles + fiction, together */}
-      <SectionBand tone="warm" edged>
-        <HomeChild name="CritterDigestPreview" />
-        <HomeChild name="DexTeaser" />
-      </SectionBand>
-
+      <HomeChild name="CritterDigestPreview" />
+      <HomeChild name="DexTeaser" />
       <HomeChild name="Newsletter" />
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
       <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />

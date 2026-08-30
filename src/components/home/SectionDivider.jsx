@@ -1,8 +1,16 @@
 import React from 'react';
 
-// A breather between two untinted homepage sections, where there is no band
-// edge to do the separating. Three scale arcs, the same motif the band gutters
-// tile, between two hairlines that fade out into the page.
+// A breather between blocks of homepage sections. Three scale arcs between two
+// hairlines that fade out into the page.
+//
+// This is what is left of a larger pass that also put tinted bands behind each
+// block and tiled the same arc motif into the side gutters. The bands are gone:
+// the dark-mode warm tint rendered as rgb(21,16,10), hue 33, a brown against a
+// hue-153 green-black page. The gutter motif went with them, since it hung off
+// the band element. If it is ever wanted back, it does not need the tint - it
+// was a mask-image of a 40x20 tiled arc SVG over a horizontal gradient of
+// --secondary, in a 108px column, gated to viewports above 1400px where
+// max-w-6xl leaves a gutter wide enough for it.
 //
 // Purely decorative, so aria-hidden: it carries no information a screen reader
 // needs, and the headings on either side already mark the boundary in the
