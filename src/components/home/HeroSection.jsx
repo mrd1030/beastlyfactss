@@ -70,81 +70,48 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative min-h-screen flex items-center justify-center overflow-hidden text-center">
-      {/* ==================== OPTIMIZED HERO IMAGE ==================== */}
-      <div className="absolute inset-0">
-        <picture>
-          {/* AVIF first: <picture> takes the first source whose type the browser
-              accepts, so order is the negotiation. Roughly 23-26% smaller than
-              the webp below at matched quality (measured 39.5-41.4 dB against
-              the jpg, and checked at 1:1 on the two regions that would show it
-              first, the sunset gradient for banding and the mane for detail).
-              This is the LCP element on the homepage, so those bytes are the
-              ones worth having. Anything that cannot decode AVIF, mainly Safari
-              before 16.4, falls through to exactly what it gets today. */}
-          <source
-            srcSet={HERO_AVIF}
-            sizes="100vw"
-            type="image/avif"
-          />
-          <source
-            srcSet={HERO_WEBP}
-            sizes="100vw"
-            type="image/webp"
-          />
-          <source
-            srcSet={HERO_JPG}
-            sizes="100vw"
-            type="image/jpeg"
-          />
-          <img
-            src={hero1200Jpg}
-            alt="Majestic lion, colorful macaw, and bearded dragon in nature"
-            className="w-full h-full object-cover object-[50%_20%]"
-            fetchpriority="high"
-            width="1200"
-            height="800"
-            decoding="async"
-          />
-        </picture>
+   <section className="relative pt-24 sm:pt-28 pb-10">
+      <div className="mx-auto w-full max-w-4xl px-4 sm:px-6">
+        {/* ==================== HERO IMAGE ====================
+            Contained rather than full-bleed, and at a fixed 3:2 that never
+            changes across breakpoints, so the photograph is shown WHOLE at
+            every width. The old treatment was an absolutely positioned
+            min-h-screen background with object-cover, which on a 412x823 phone
+            threw away 67% of the image width - enough that the bearded dragon
+            in the previous hero was cropped out of the frame entirely and only
+            the macaw survived.
+            Top corners are rounded-2xl to match the site's cards (the daily
+            fact card below uses the same). The bottom is deliberately square
+            and fades into the page instead, so the image reads as part of the
+            page rather than a floating tile. */}
+        <div className="relative aspect-[3/2] overflow-hidden rounded-t-2xl">
+          <picture>
+            {/* AVIF first: <picture> takes the first source whose type the
+                browser accepts, so order is the negotiation. The preload in
+                index.html must name this same format or the preloaded file is
+                fetched at high priority and discarded. */}
+            <source srcSet={HERO_AVIF} sizes="(min-width: 896px) 848px, 100vw" type="image/avif" />
+            <source srcSet={HERO_WEBP} sizes="(min-width: 896px) 848px, 100vw" type="image/webp" />
+            <source srcSet={HERO_JPG} sizes="(min-width: 896px) 848px, 100vw" type="image/jpeg" />
+            <img
+              src={hero1200Jpg}
+              alt="Majestic lion, colorful macaw, and bearded dragon in nature"
+              className="h-full w-full object-cover"
+              fetchpriority="high"
+              width="1200"
+              height="800"
+              decoding="async"
+            />
+          </picture>
 
-        {/* Gradient overlays. Light mode uses a much lighter wash than dark:
-            the light --background is a pale cream, so the same opacities
-            that read as a normal dark vignette in dark mode instead
-            haze the whole photo over in light mode. */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent dark:via-background/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/10 to-transparent dark:from-background/20" />
-      </div>
-
-      {/* Floating emojis - purely decorative.
-          The position lives on a PLAIN span, not on the motion.span, because
-          framer-motion does not emit its `style` prop into the prerendered
-          HTML. When it was a motion.span the markup shipped with no left/top at
-          all, so all five stacked at the same spot on first paint and only
-          jumped to their real positions once framer hydrated (on mobile, after
-          the vendor chunk lands several seconds in). That was a measurable
-          layout shift caused entirely by decoration nobody is reading. Static
-          markup carries the position now, and the inner motion.span only
-          animates transforms, which cannot affect layout. */}
-      {['🦋', '🐾', '🌿', '✨', '🦜'].map((emoji, i) => (
-        <span
-          key={i}
-          className="absolute hidden sm:block pointer-events-none"
-          style={{ left: `${15 + i * 18}%`, top: `${20 + i * 10}vh` }}
-        >
-          <motion.span
-            className="block text-2xl opacity-40"
-            animate={{ y: [0, -15, 0], rotate: [0, 5, -5, 0] }}
-            transition={{ repeat: Infinity, duration: 3 + i, delay: i * 0.3, ease: 'easeInOut' }}
-          >
-            {emoji}
-          </motion.span>
-        </span>
-      ))}
+          {/* Blends the foot of the image into the page background so there is
+              no hard horizontal edge between photo and content. */}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/60 to-transparent" />
+        </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 mt-28 w-full flex justify-center">
-        <div className="max-w-2xl h-full flex flex-col items-center justify-center">
+        <div className="relative -mt-10 sm:-mt-14 flex justify-center text-center">
+          <div className="max-w-2xl flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
               prerendered HTML, so this block ships as a bare <div> and only
@@ -246,6 +213,7 @@ export default function HeroSection({ onOpenFact }) {
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 }
