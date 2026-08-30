@@ -542,14 +542,17 @@ export const dogGuides = [
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "Small crate + orthopedic bed", low: 70, high: 140 },
+        { item: "Small crate + bed", low: 70, high: 140 },
         { item: "Ramps or steps for sofa and bed", low: 60, high: 180 },
-        { item: "Harness (never a neck collar for walks)", low: 20, high: 45 },
+        { item: "Harness (prevents tracheal strain)", low: 20, high: 45 },
         { item: "Collar ID tag + microchip", low: 60, high: 90 },
         { item: "Baby gates for stairs", low: 40, high: 120 },
+        { item: "Puzzle feeders", low: 20, high: 50 },
+        { item: "Nail clippers", low: 12, high: 30 },
       ],
       annual: [
         { item: "Small breed adult food", low: 200, high: 350 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 30, high: 70 },
         { item: "Dental cleaning under anesthesia", low: 300, high: 700 },
         { item: "Heartworm, flea, and tick prevention", low: 150, high: 250 },
         { item: "Annual wellness exam", low: 150, high: 300 },
@@ -596,15 +599,18 @@ export const dogGuides = [
     // Rough starting ranges, not verified current pricing - needs a review pass.
     costs: {
       setup: [
-        { item: "Medium crate + cooling bed", low: 90, high: 180 },
-        { item: "Harness (never a neck collar)", low: 25, high: 50 },
+        { item: "Medium crate + bed", low: 90, high: 180 },
+        { item: "Harness (prevents tracheal strain)", low: 25, high: 50 },
         { item: "Collar ID tag + microchip", low: 60, high: 90 },
         { item: "Cooling mat and fan for hot months", low: 40, high: 120 },
         { item: "Elevated slow-feed bowl", low: 25, high: 60 },
+        { item: "Durable chew toys (powerful chewers)", low: 20, high: 50 },
+        { item: "Nail clippers", low: 12, high: 30 },
       ],
       annual: [
         { item: "Medium breed adult food (measured)", low: 300, high: 500 },
         { item: "Skin fold care supplies and medicated wipes", low: 60, high: 150 },
+        { item: "Dental hygiene routine (dog-formulated)", low: 30, high: 70 },
         { item: "Dental cleaning under anesthesia", low: 400, high: 900 },
         { item: "Heartworm, flea, and tick prevention", low: 200, high: 300 },
         { item: "Annual wellness exam plus derm and airway checks", low: 250, high: 500 },

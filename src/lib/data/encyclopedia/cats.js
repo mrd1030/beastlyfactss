@@ -77,4 +77,43 @@ export const catEncyclopedia = [
       conservation: "Not applicable (domesticated breed)",
     },
   },
+  {
+    id: "american-shorthair", name: "American Shorthair", scientific: "Felis catus",
+    category: "Cats", emoji: "\U0001F431", difficulty: "Beginner", guideId: "cat-american-shorthair", available: true, image: "/assets/guides/cat-american-shorthair.jpg",
+    bio: {
+      overview: "The American Shorthair descends from ordinary working cats carried aboard early European settler ships to North America, where they earned their keep killing rodents on farms and in homes. Cats of this type appeared at the first US cat show in 1895, and the breed was one of the first five recognized by the Cat Fanciers' Association at its founding in 1906, shown as Domestic Shorthairs until it was given its current name in 1965. Because the breed was formalized from a broad random-bred foundation rather than a small founder group, it kept comparatively good genetic variation: in the largest genetic survey of cat breeds, its observed heterozygosity measured 0.57 against a purebred average of 0.51 and a random-bred average of 0.65. The CFA standard is explicitly anti-extreme, requiring that no part of the anatomy be so exaggerated as to foster weakness, and it lists obesity as a fault. The breed's real risks are cardiac and metabolic rather than structural: it is named among those predisposed to hypertrophic cardiomyopathy, and a placid, food-motivated indoor cat is an easy cat to overfeed.",
+      origin: "Breed origin: United States (working ships' and farm cats of early European settlers, formalized by the Cat Fanciers' Association in 1906 and renamed in 1965)",
+      habitat: "Fully domesticated",
+      adultSize: "Medium to large and muscular, slightly longer than tall; 6-15 lbs, males at the heavier end",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "15-20 years (UK primary-care life tables put life expectancy at birth for all cats at 11.7 years)",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
+  {
+    id: "sphynx", name: "Sphynx", scientific: "Felis catus",
+    category: "Cats", emoji: "\U0001F431", difficulty: "Advanced", guideId: "cat-sphynx", available: true, image: "/assets/guides/cat-sphynx.jpg",
+    bio: {
+      overview: "The Sphynx traces to a spontaneous mutation in 1966, when a domestic cat in Toronto gave birth to a hairless kitten. Breeders identified the trait as recessive and spent more than 30 years developing the breed by outcrossing to normal-coated cats, including Devon Rex and American Shorthair lines, and most modern Sphynx descend from two kittens found in Minnesota in 1975 and three found in Toronto in 1978. That repeated outcrossing left the breed genetically healthier than its rarity suggests, with observed heterozygosity of 0.58 against a purebred average of 0.51. The consequences of hairlessness are real and permanent: the oil glands work normally but there is no coat to absorb the secretions, so the skin stays greasy and needs routine bathing, and the cats sunburn easily, carry high rates of Malassezia yeast, and regulate body temperature poorly. The breed also carries a striking burden of hypertrophic cardiomyopathy, and in UK primary-care life tables the Sphynx had the shortest life expectancy of any breed reported, 6.8 years from birth against 11.7 years for cats overall. Since 1 January 2026 it has been prohibited to buy, sell, breed or keep hairless cats in the Netherlands, with an exemption for microchipped cats born before that date.",
+      origin: "Breed origin: Canada (a spontaneous hairless mutation in Toronto in 1966, developed over three decades with Devon Rex and American Shorthair outcrosses)",
+      habitat: "Fully domesticated",
+      adultSize: "Medium and surprisingly heavy for its size, with a rounded belly, wrinkled skin and large bat-like ears; 6-14 lbs, about 8-10 inches tall. Not truly bald: short hair is usually present on the nose, ears and tail",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "8-14 years is the commonly quoted range, but UK primary-care life tables give the Sphynx the shortest life expectancy of any breed reported at 6.8 years from birth, against 11.7 for cats overall",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
+  {
+    id: "scottish-fold", name: "Scottish Fold", scientific: "Felis catus",
+    category: "Cats", emoji: "\U0001F431", difficulty: "Advanced", guideId: "cat-scottish-fold", available: true, image: "/assets/guides/cat-scottish-fold.jpg",
+    bio: {
+      overview: "The Scottish Fold began in 1961 when a shepherd found a folded-ear cat named Susie on a farm in the Tayside region of Scotland. Susie produced only one litter, so her daughter Snooks became the foundation queen, and the breed was built out through crosses with British Shorthairs and domestic cats. The fold comes from a dominant variant in TRPV4, a gene encoding an ion channel whose correct activation is crucial for normal development of cartilage and bone cells, and that is the central problem with the breed: the mutation does not act only on ear cartilage. It affects cartilage throughout the body, producing a progressive degenerative osteochondrodysplasia, and while early work suggested only cats with two copies were affected, recent evidence indicates any cat carrying at least one copy of the ear-folding variant can develop it. The British Veterinary Association states that there is no excuse not to condemn breeding of the Scottish Fold, because the same disorder that folds the ears means these cats develop painful arthritis for much, if not all, of their lives. The CFA recognizes the breed, granting championship status to shorthairs in 1978, longhairs in 1992 and straight-eared cats in 2022, but FIFe will not register cats with osteochondrodysplasia or any cat with such a cat in its ancestry, the UK's Governing Council of the Cat Fancy does not recognize the breed on welfare grounds, and since 1 January 2026 it has been prohibited to buy, sell, breed or keep folded-ear cats in the Netherlands.",
+      origin: "Breed origin: Scotland (a single folded-ear farm cat, Susie, found in the Tayside region in 1961; her daughter Snooks became the breed's foundation queen)",
+      habitat: "Fully domesticated",
+      adultSize: "Medium, stocky and round; 6-13 lbs, about 8-10 inches tall. A thickened, inflexible tail and a stiff gait are clinical signs of osteochondrodysplasia, not breed type",
+      wildDiet: "Fully domesticated",
+      wildLifespan: "14-16 years is the commonly quoted average (UK primary-care life tables put life expectancy at birth for all cats at 11.7 years)",
+      conservation: "Not applicable (domesticated breed)",
+    },
+  },
 ];
