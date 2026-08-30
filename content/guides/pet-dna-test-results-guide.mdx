@@ -1,0 +1,238 @@
+---
+# === Basic Information ===
+title: "What a Pet DNA Test Actually Tells You"
+seoTitle: "Pet DNA Test Results Explained: A31P, R820W, MDR1"
+slug: "pet-dna-test-results-guide"
+date: "2026-10-12"
+lastUpdated: "2026-10-12"
+lastReviewed: "2026-10-12"
+
+# === Organization ===
+category: "Pet Care"
+tags: ["Genetic Testing", "DNA", "Dog Health", "Cat Health", "Health Screening", "Breeding"]
+difficulty: "Intermediate"
+emoji: "🧬"
+
+# === SEO & Descriptions ===
+excerpt: "The same panel contains tests that are near-perfect and tests that mean nothing, sold in the same report at the same price, with nothing on the page telling you which is which."
+seoDescription: "How to read a pet DNA result: what A31P and R820W mean, why an odds ratio of 1.0 matters, and which tests are worth buying."
+description: "A decoder for pet genetic test results: what the letters and numbers in a variant name actually stand for, what penetrance and odds ratios do to a result, which tests are validated and which are guesswork, and when a result should change nothing."
+canonicalUrl: ""
+readingTime: 14
+
+# === Featured Image ===
+image: "/assets/images/pet-dna-testing.jpg"
+imageAlt: "Cheek swab sample being prepared for a companion animal genetic test"
+
+# === Author & Publishing ===
+author: "Mike"
+status: "published"
+noIndex: false
+
+# === Affiliate & Monetization ===
+affiliate: false
+
+# === FAQs ===
+faqs:
+  - q: "What do the letters and numbers in something like R820W actually mean?"
+    a: "Read it as a sentence. The first letter is the amino acid that should be at that position, the number is the position along the protein, and the last letter is what is there instead. So R820W means that at position 820, arginine has been swapped for tryptophan. A31P means alanine to proline at position 31. If the name starts with c. instead, the number counts along the DNA rather than the protein, so c.91G>C means a G was replaced by a C at position 91 of the coding sequence."
+  - q: "Why does the same variant have two different names?"
+    a: "Because labs count from different starting points. The Ragdoll heart variant appears as both R820W and R818W, and the feline kidney variant appears under at least four names, depending on which reference sequence the lab used. They are the same change. If two reports on the same cat look like they disagree, check whether they are just numbering differently before you panic."
+  - q: "My dog tested carrier. Is it going to get sick?"
+    a: "For a recessive condition, no. A carrier has one copy, needs two to be affected, and is healthy itself. What it can do is pass the variant on, so it matters when choosing a mate and not much otherwise. This is the misunderstanding behind the most-cited cautionary case in the field: a 13-year-old pug was reported as a carrier for a degenerative myelopathy variant, a result that on the published biology carries essentially no personal risk."
+  - q: "My cat is homozygous for the A31P heart variant. What does that mean?"
+    a: "Two copies, and for this variant that is the result that matters. In a study of 332 Maine Coons, cats with two copies had a 50% rate of heart disease and an odds ratio of 12.1. Cats with one copy had an odds ratio of 1.0, meaning no detectable increase over cats with no mutation at all. Get an echocardiogram, because that is what actually diagnoses the disease, and do not breed from the cat."
+  - q: "Does a clear result mean my pet is healthy?"
+    a: "It means it does not carry the specific variants that were tested. Ten of the 21 Maine Coons that genuinely had heart disease in one cohort carried no known mutation. Only about 78% of cats with cystic kidneys carry the standard PKD1 variant. And the veterinary consensus statement says outright that Maine Coons and Ragdolls testing negative for the heart variants have still been diagnosed with the disease, so screening should continue regardless."
+  - q: "Which tests are actually worth buying for a pet rather than a breeding animal?"
+    a: "The ones that change what you do tomorrow. MDR1 is the clearest example: it is a causal variant, it affects drug safety, and knowing the result changes how your vet doses ivermectin-class wormers and some sedatives. Pharmacogenetic and acute-risk variants generally earn their place. Late-onset risk variants with no available intervention mostly do not, and anything classed a variant of unknown significance definitely does not."
+---
+
+# What a Pet DNA Test Actually Tells You
+
+<VetDisclaimer />
+
+A pet DNA panel is not one test. It is dozens of them bundled together, and their quality varies enormously. Some name a mutation that reliably causes a disease, validated in the breed you are testing. Others report a change that has been catalogued but never shown to cause anything at all.
+
+They arrive on the same page, at the same price, formatted identically, with nothing telling you which is which.
+
+This is a guide to reading the report.
+
+## First, the Decoder
+
+Almost every variant name is a compressed sentence. Once you can read it, the reports stop being intimidating.
+
+<ComparisonTable
+  headers={["What you see", "What it means", "Worked example"]}
+  rows={[
+    ["A capital letter, a number, a capital letter", "Amino acid that should be there, position along the protein, what is there instead", "R820W: at position 820, arginine (R) became tryptophan (W)"],
+    ["c. at the front", "The number counts along the coding DNA, the part that gets translated into protein", "c.91G>C: at DNA position 91, a G became a C"],
+    ["p. at the front", "The number counts along the finished protein instead", "p.A31P: at protein position 31, alanine became proline"],
+    ["g. at the front", "The number counts along the whole chromosome", "Same change, third possible name"],
+    ["The > symbol", "Simply means 'changed to'", "C>A means a C was replaced by an A"],
+    ["An asterisk *", "A premature stop instruction, so the protein is cut short", "p.Arg193* truncates the protein at position 193"],
+    ["del", "Deletion. DNA letters removed", "A 14 base pair deletion in POMC"],
+    ["ins", "Insertion. DNA letters added", "A 44 base pair insertion in RPGRIP1"],
+    ["fs", "Frameshift. The reading frame slipped, so everything after is nonsense", "p.Gly1641fs"],
+    ["IVS, or a + number", "The change sits in an intron, a non-coding stretch between coding pieces", "CEP290 IVS50+9T>G"],
+    ["An ALL-CAPS word", "The gene's name, not the change", "MYBPC3, SOD1, PKD1, ABCB1"],
+    ["N/N, N/A, A/A", "Both copies normal, one copy, two copies", "N/A means one copy: a carrier, for a recessive condition"],
+  ]}
+/>
+
+**The single letters are amino acids**, the building blocks proteins are made from. A is alanine, P is proline, R is arginine, W is tryptophan, C is cysteine, G is glycine. There are twenty in total and you never need to memorize them: the point of the notation is the position and the fact that something changed, not the chemistry.
+
+<FunFact>
+One reason two reports on the same animal can look like they disagree is that labs count from different starting points. The Ragdoll heart variant is published as both R820W and R818W. The feline polycystic kidney disease variant appears under at least four names depending on which reference sequence a lab used. Same change every time. Before assuming a lab made a mistake, check whether it is just numbering differently.
+</FunFact>
+
+## Then, the Four Words That Do All the Work
+
+**Penetrance** is the one that matters most. Of all the animals carrying a risk genotype, what proportion ever actually develop the condition? Some variants are fully penetrant, so the genotype is effectively a diagnosis. Others are barely penetrant, and the genotype means almost nothing.
+
+**Expressivity** is the follow-on question. Among those that do develop it, how badly?
+
+**Genotype** is what the DNA says. **Phenotype** is what the animal actually is. When they disagree, the animal is not wrong.
+
+And one number: an **odds ratio** compares the chance of disease in animals with the genotype against animals without it. An odds ratio of 1.0 means **no difference at all**. Read it alongside its **confidence interval**, because if that range crosses 1.0, the finding is not statistically significant no matter what the headline number looks like.
+
+## The Worked Example That Explains Everything
+
+The [Maine Coon](/guides/cat-maine-coon/) heart variant, A31P in the MYBPC3 gene, is the most instructive result in companion animal genetics.
+
+<ComparisonTable
+  headers={["Genotype", "Rate of heart disease", "Odds ratio"]}
+  rows={[
+    ["Two copies (homozygous)", "50%", "12.1"],
+    ["One copy (heterozygous)", "2.4%", "1.0"],
+    ["No copies", "Baseline", "reference"],
+  ]}
+/>
+
+**An odds ratio of 1.0 for the one-copy cats.** Not slightly raised. Not a mild concern. Literally no detectable difference from cats with no mutation at all, in a cohort of 332 cats. The study's authors concluded the mutation must have very low penetrance in that group.
+
+Now the other direction. **Ten of the 21 cats that actually had heart disease in that cohort carried no mutation whatsoever.** The genotype missed half the phenotype.
+
+So a positive one-copy result on this variant is not a diagnosis, and a clear result is not a clearance. The veterinary consensus statement says exactly that, and rates the evidence high: Maine Coons and [Ragdolls](/guides/cat-ragdoll/) testing negative for these variants have still been diagnosed with the disease, so echocardiographic screening should continue anyway.
+
+## Where the Tests Are Genuinely Good
+
+It would be wrong to leave you thinking these tests are all oversold. They are not.
+
+A large study of over a million dogs found **complete penetrance, 100%**, for ten variants including canine leukocyte adhesion deficiency type III, cone-rod dystrophy 2, and hemophilia A. Tested in the breed it was validated in, a well-characterized recessive variant does exactly what it says.
+
+The other genuinely good news is what testing has achieved. Feline polycystic kidney disease once ran at roughly 36% to 50% of [Persians](/guides/cat-persian/). Where testing has been systematic, carrier frequency fell 42.6% across 14 breeds in three years. A study of 5,512 Pembroke Welsh Corgis found degenerative myelopathy homozygotes dropping from 14.5% to 2.9% between 2019 and 2022, **with no loss of genetic diversity at all** and effective population size actually rising, because breeders used the test to widen their search rather than narrow it.
+
+Used properly, these tests work.
+
+## Where They Do Not
+
+### Variants of unknown significance, sold anyway
+
+Six feline heart-disease variants are sold commercially. When reviewers applied formal classification criteria across 21,772 cats, **two were pathogenic and three were variants of unknown significance**. Their recommendation was to limit routine testing to two variants in two breeds and to avoid screening for the three unknowns entirely, for lack of evidence they cause disease.
+
+The clearest case is ALMS1, marketed as a [Sphynx](/guides/cat-sphynx/) heart test. In a New Zealand cohort it was present in 70.9% of cats and showed **no association whatsoever** with the diagnosis. That same cohort still reached 40% heart disease prevalence. The test finds something. It does not find the disease.
+
+### Variants sold outside the breed they were validated in
+
+This is the best-evidenced problem of the lot, and the sentence to remember comes from the researchers themselves: **discovery of a disease-implicated variant on another genetic background does not equal confirmation that presence of the variant leads to disease onset.**
+
+In a study of over a million dogs, 26 disease variants turned up in 65 additional purebred breeds with no prior characterization in the literature. Named examples where the variant is probably not doing what the panel implies include a cystinuria variant found at 12% to 26% in Golden Retrievers and Swedish Vallhunds, and two dilated cardiomyopathy variants discovered in Dobermans and now found across many breeds.
+
+The [Dachshund](/guides/dog-dachshund/) retinal variant is the cleanest illustration. The OFA states that over 25 breeds carry it, including the [Beagle](/guides/dog-beagle/), [Rottweiler](/guides/dog-rottweiler/) and [French Bulldog](/guides/dog-french-bulldog/), but that outside Miniature Longhaired Dachshunds and English Springer Spaniels the risk of actually developing disease is low.
+
+### Linked marker tests, which are not the same thing
+
+A **causal-variant test** looks at the actual disease-causing change. A **linked marker test** looks at a signpost sitting nearby, used when the real mutation is unknown. It works only while the two stay together on the chromosome, and it fails in lines where they have separated.
+
+The Bedlington Terrier copper toxicosis test is the textbook failure. The marker sat about 13,500 DNA letters away from the actual mutation, and a chromosome was eventually found carrying the disease-associated marker alongside a perfectly healthy gene, producing false positives.
+
+**How to tell which you are buying:** ask the lab to name the variant in full notation, gene plus position plus change. A causal test can always answer. A linked marker test cannot. Watch for the words *marker*, *linked*, *indirect*, *haplotype* and *associated*.
+
+### And one test that simply did not work
+
+A 17-marker hip dysplasia test, patented and sold commercially, was put through independent prospective validation in 935 German Shepherds followed for three years. Its area under the curve was **0.523**, where 0.5 is a coin toss. The odds ratio pointed the wrong way and was statistically indistinguishable from noise. The authors' conclusion was that the test is unsuitable for individual risk assessment.
+
+## Nobody Is Checking
+
+This is the part most owners assume is handled, and it is not. From the standards paper written by the field itself:
+
+> "Currently, there is no regulatory oversight or testing standards for diagnostic veterinary genetic testing laboratories."
+
+Veterinary genetic labs are not required to be accredited. No external proficiency program exists for disease-variant genotyping. The biennial ISAG comparison test that labs sometimes cite is explicit that it **is not a proficiency or accreditation test**, and in any case it covers parentage and identity markers, not disease variants. A lab can perform perfectly in it while genotyping disease variants badly.
+
+What this looks like in practice: researchers sent samples from 12 registered purebred dogs to six direct-to-consumer companies, swapping the submitted photographs on half of them. Two companies matched the registered breed on every dog. **One matched zero of nine**, with results that tracked the photograph rather than the DNA. One company reported a purebred Bulldog as 10% to 20% wolf. Four of the twelve dogs were assigned ancestry banned by more than half of home insurance companies, despite none actually being such a breed.
+
+That study tested breed ancestry, not disease variants, and the distinction matters. But it tells you what "no oversight" means concretely.
+
+## What to Actually Do With a Result
+
+<ComparisonTable
+  headers={["Result", "What it should change"]}
+  rows={[
+    ["Two copies of a validated pathogenic variant, in its own breed", "Do not breed. Screen the animal clinically. This is the real thing"],
+    ["One copy of a recessive variant", "Mate selection only. Never breed carrier to carrier. The animal itself is fine"],
+    ["A variant of unknown significance", "Nothing. It is a data point awaiting evidence"],
+    ["A variant found outside its discovery breed", "Little, without follow-up. Ask what it means in your breed specifically"],
+    ["Any result whose confidence interval crosses 1.0", "Nothing"],
+    ["A clear result", "Do not stop screening. Clear means clear of what was tested"],
+  ]}
+/>
+
+Never breeding carrier to carrier is close to a free intervention: it removes affected offspring without removing a single animal from the gene pool.
+
+The opposite mistake is real too. The OFA warns in its own guidance that with 29.1% carriers and 14.8% at-risk dogs, an overly aggressive program to eliminate every non-clear [German Shepherd](/guides/dog-german-shepherd/) would remove roughly 44% of tested dogs and could be devastating to the breed. The failure mode there is not the test. It is replacing a broad cull with a narrow set of popular clear sires, and the Corgi study above shows it is entirely avoidable.
+
+There is a subtler trap as well. Selecting hard against one trait drags correlated traits with it. In 5,038 [Maine Coons](/guides/cat-maine-coon/) screened for hip dysplasia over 20 years, severity was genetically correlated with body mass, so selection reduced dysplasia and made the cats about 33 grams smaller each generation. The same mechanism ran in reverse in the [Labrador](/guides/dog-labrador/): selecting for the food motivation that makes a good assistance dog pushed the appetite variant to a 45% allele frequency in assistance breeding stock against 12% in the general population.
+
+## What Is Worth Buying for a Pet
+
+**Worth it**, because the result changes something tomorrow:
+
+- **MDR1**, unambiguously. A causal variant affecting drug safety, relevant to any herding breed or herding cross. Rough Collies run about 70%, Australian Shepherds 50%, mixed breeds 5%. Your vet needs to know before prescribing ivermectin-class wormers, high-dose loperamide or certain sedatives.
+- **Other pharmacogenetic and acute-risk variants**, such as malignant hyperthermia and clotting disorders, which change anesthesia and surgical planning.
+- **A validated causal variant for a manageable disease**, where early detection changes care.
+
+**Not worth it for a pet:**
+
+- Late-onset risk variants with no available intervention. An at-risk degenerative myelopathy result on a healthy three-year-old changes nothing you can act on, and its penetrance is strongly age-dependent: in one survey no at-risk dog under 10 had signs, while all seven over 10 did.
+- Anything classed a variant of unknown significance.
+- Breed ancestry, if you intend to act on it.
+- Broad panels bought for reassurance. More tests are not necessarily better.
+
+**For a breeding animal**, the breed-relevant validated variants, ideally from a lab invested in that specific disease, plus a diversity measure alongside the disease panel. The average purebred dog across 227 breeds already carries an inbreeding coefficient of about 0.249, which is roughly what you would get from mating full siblings, and the more inbred breeds carry measurably higher morbidity.
+
+## The Honest Summary
+
+A DNA test tells you what an animal **carries**. A clinical examination tells you what it **has**. Neither on its own tells you what it will develop or pass on.
+
+Buy the tests that change a decision. Ignore the ones that do not. And when a result and the animal in front of you disagree, believe the animal.
+
+---
+
+## Sources & Further Reading
+
+<Sources>
+- [Godiksen et al.: A31P in Maine Coons, genotype and phenotype](https://pmc.ncbi.nlm.nih.gov/articles/PMC3044103/)
+- [Boeykens et al.: ACMG classification of feline HCM variants across 21,772 cats](https://www.frontiersin.org/journals/veterinary-science/articles/10.3389/fvets.2024.1327081/full)
+- [Seo et al.: HCM and the ALMS1 variant in Sphynx cats](https://pmc.ncbi.nlm.nih.gov/articles/PMC11428990/)
+- [ACVIM consensus statement: cardiomyopathies in cats](https://pmc.ncbi.nlm.nih.gov/articles/PMC7255676/)
+- [Donner et al. 2023: disease variants across 1,054,293 dogs](https://pmc.ncbi.nlm.nih.gov/articles/PMC9997962/)
+- [Donner et al. 2018: variant frequencies across 101,427 dogs](https://pmc.ncbi.nlm.nih.gov/articles/PMC5945203/)
+- [Shaffer et al.: standards and guidelines for canine genetic testing laboratories](https://pmc.ncbi.nlm.nih.gov/articles/PMC6536461/)
+- [Manz et al.: independent validation of a patented hip dysplasia DNA test](https://pmc.ncbi.nlm.nih.gov/articles/PMC5542656/)
+- [Rando et al.: effect of photographs on breed ancestry predictions](https://avmajournals.avma.org/view/journals/javma/262/5/javma.23.07.0372.xml)
+- [Lyons: genetic testing dos and don'ts for cats](https://pmc.ncbi.nlm.nih.gov/articles/PMC11626677/)
+- [Ukawa et al.: selection against SOD1 in Corgis without inbreeding](https://pmc.ncbi.nlm.nih.gov/articles/PMC10773665/)
+- [Bannasch et al.: inbreeding, body size and health across 227 dog breeds](https://escholarship.org/content/qt5b61d7p0/qt5b61d7p0.pdf)
+- [Raffan et al.: the POMC deletion in Labradors](https://pmc.ncbi.nlm.nih.gov/articles/PMC4873617/)
+- [Graziano et al.: PNPLA1 in 48 breeding Golden Retrievers](https://pmc.ncbi.nlm.nih.gov/articles/PMC6024370/)
+- [Maki et al.: degenerative myelopathy in German Shepherds in Japan](https://pmc.ncbi.nlm.nih.gov/articles/PMC9264911/)
+- [Low et al.: hip dysplasia and body mass in 5,038 Maine Coons](https://pmc.ncbi.nlm.nih.gov/articles/PMC6868272/)
+- [Kim et al.: COMMD1 exon 2 deletion in Bedlington Terriers](https://pmc.ncbi.nlm.nih.gov/articles/PMC5115198/)
+- [OFA: degenerative myelopathy and breeding guidance](https://ofa.org/diseases/dna-tested-diseases/degenerative-myelopathy/)
+- [OFA: crd4 progressive retinal atrophy and the RPGRIP1 caveat](https://ofa.org/crd4-progressive-retinal-atrophy/)
+- [Washington State University: MDR1 breed frequencies](https://waddl.vetmed.wsu.edu/mdr1-in-dogs/)
+- [ISAG: what the comparison test is and is not](https://www.isag.us/CT-info.asp)
+- [Cornell Riney Canine Health Center: benefits of canine DNA testing](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/benefits-canine-dna-testing)
+</Sources>
