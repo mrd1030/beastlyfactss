@@ -143,9 +143,11 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Come for the wild facts.</span>
+              <span className="text-foreground">Facts? Care?</span>
               <br />
-              <span className="text-secondary">Stay for the pet care.</span>
+              <span className="text-secondary">We looked it up.</span>
+              <br />
+              <span className="text-foreground">So you don&rsquo;t have to.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
@@ -159,7 +161,7 @@ export default function HeroSection({ onOpenFact }) {
                 whileTap={{ scale: 0.97 }}
                 className="bg-secondary text-secondary-foreground font-body font-bold text-sm py-3 px-6 rounded-xl flex items-center gap-2 shadow-lg shadow-secondary/20"
               >
-                Start with Verified Facts
+                Show me something wild
                 <ArrowRight className="w-4 h-4" />
               </MotionLink>
               {/* Only the destination word goes orange, and only in dark mode,
