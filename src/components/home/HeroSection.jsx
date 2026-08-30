@@ -78,17 +78,19 @@ export default function HeroSection({ onOpenFact }) {
   return (
    <section className="relative flex flex-col items-center px-0 pt-0 pb-10">
         {/* ==================== HERO IMAGE ====================
-            Contained rather than full-bleed, and at a fixed 3:2 that never
-            changes across breakpoints, so the photograph is shown WHOLE at
-            every width. The old treatment was an absolutely positioned
-            min-h-screen background with object-cover, which on a 412x823 phone
-            threw away 67% of the image width - enough that the bearded dragon
-            in the previous hero was cropped out of the frame entirely and only
-            the macaw survived.
-            Top corners are rounded-2xl to match the site's cards (the daily
-            fact card below uses the same). The bottom is deliberately square
-            and fades into the page instead, so the image reads as part of the
-            page rather than a floating tile. */}
+            Full bleed, square corners, running straight into the navbar. The
+            source is 3:2 and the box is 4/3 on phones, 16/10 above that, so the
+            crop is 11% off the sides at worst and 6% off top and bottom: the
+            picture is essentially whole at every width.
+            The old treatment was an absolutely positioned min-h-screen
+            background with object-cover, which on a 412x823 phone threw away
+            67% of the image width. The bearded dragon in the previous hero was
+            cropped out of frame entirely at that size and only the macaw
+            survived. That is the failure this layout exists to fix.
+            No rounding and no shadow: the foot of the image is masked out
+            instead (see MASK), and a shadow would trace the container's full
+            silhouette even where the picture has faded to nothing, putting back
+            the exact hard line the mask removes. */}
         <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
@@ -100,7 +102,7 @@ export default function HeroSection({ onOpenFact }) {
             <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
             <img
               src={hero1200Jpg}
-              alt="Majestic lion, colorful macaw, and bearded dragon in nature"
+              alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
               className="h-full w-full object-cover"
               style={{ maskImage: MASK, WebkitMaskImage: MASK }}
               fetchpriority="high"
@@ -151,7 +153,7 @@ export default function HeroSection({ onOpenFact }) {
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
-  Discover verified wild facts, beginner-friendly pet care guides, and short quizzes designed to make every visit quick, fun, and useful.
+  Verified animal facts about creatures you&rsquo;ll never meet, and honest care guides for the ones you live with.
 </p>
 
             <div className="flex flex-wrap justify-center gap-3 mb-4">
