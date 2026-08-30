@@ -151,7 +151,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-domestic-shorthair.jpg",
-      "tagline": "The most common cat in the world, and often the healthiest."
+      "tagline": "The most common cat in the world, and genetically the best-hedged."
     },
     {
       "id": "cat-maine-coon",
@@ -160,7 +160,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-maine-coon.jpg",
-      "tagline": "The gentle giant of the cat world, with a dog-like personality."
+      "tagline": "The gentle giant, sold on a dog-like reputation the breed standard does not quite claim."
     },
     {
       "id": "cat-siamese",
@@ -178,7 +178,7 @@
       "difficulty": "Beginner",
       "petType": "Cat",
       "image": "/assets/guides/cat-ragdoll.jpg",
-      "tagline": "The floppy, gentle giant that goes limp when you pick them up."
+      "tagline": "A genuinely gentle giant, named for a trait most of them no longer have."
     },
     {
       "id": "cat-bengal",
@@ -197,6 +197,33 @@
       "petType": "Cat",
       "image": "/assets/guides/cat-persian.jpg",
       "tagline": "The luxurious, calm lap cat with significant grooming requirements."
+    },
+    {
+      "id": "cat-american-shorthair",
+      "name": "American Shorthair: Breed Quirks",
+      "emoji": "U0001F431",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-american-shorthair.jpg",
+      "tagline": "A working cat that became a show cat without ever becoming a fragile one."
+    },
+    {
+      "id": "cat-sphynx",
+      "name": "Sphynx: Breed Quirks",
+      "emoji": "U0001F431",
+      "difficulty": "Advanced",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-sphynx.jpg",
+      "tagline": "A high-maintenance skin, a high-risk heart, and a cat that genuinely cannot be left alone."
+    },
+    {
+      "id": "cat-scottish-fold",
+      "name": "Scottish Fold: Breed Quirks",
+      "emoji": "U0001F431",
+      "difficulty": "Advanced",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-scottish-fold.jpg",
+      "tagline": "The ears and the arthritis are the same mutation, and you cannot have one without the other."
     },
     {
       "id": "dog-universal",
@@ -241,7 +268,7 @@
       "difficulty": "Beginner",
       "petType": "Dog",
       "image": "/assets/guides/dog-labrador-retriever.jpg",
-      "tagline": "The world's most popular dog breed, and for good reason!"
+      "tagline": "Held the AKC top spot for 31 years, and still the easiest big dog to live with."
     },
     {
       "id": "dog-golden-retriever",
@@ -287,6 +314,42 @@
       "petType": "Dog",
       "image": "/assets/guides/dog-siberian-husky.jpg",
       "tagline": "The escape artist sled dog that needs a job and a secure fence."
+    },
+    {
+      "id": "dog-dachshund",
+      "name": "Dachshund: Breed Quirks",
+      "emoji": "U0001F32D",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-dachshund.jpg",
+      "tagline": "The badger dog whose famous silhouette and famous spinal disease are the same mutation."
+    },
+    {
+      "id": "dog-bulldog",
+      "name": "Bulldog: Breed Quirks",
+      "emoji": "U0001F436",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-bulldog.jpg",
+      "tagline": "A famously gentle dog that needs active medical management, not just care."
+    },
+    {
+      "id": "dog-beagle",
+      "name": "Beagle: Breed Quirks",
+      "emoji": "U0001F415",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-beagle.jpg",
+      "tagline": "A nose with a dog attached, and a fence problem you solve before the puppy arrives."
+    },
+    {
+      "id": "dog-rottweiler",
+      "name": "Rottweiler: Breed Quirks",
+      "emoji": "U0001F415",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-rottweiler.jpg",
+      "tagline": "A drover's dog that needs a job, early training, and an owner who has read the cancer numbers."
     },
     {
       "id": "angelfish",

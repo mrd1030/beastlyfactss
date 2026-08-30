@@ -190,6 +190,33 @@
       "image": "/assets/guides/cat-persian.jpg"
     },
     {
+      "id": "american-shorthair",
+      "name": "American Shorthair",
+      "emoji": "U0001F431",
+      "category": "Cats",
+      "difficulty": "Beginner",
+      "guideId": "cat-american-shorthair",
+      "image": "/assets/guides/cat-american-shorthair.jpg"
+    },
+    {
+      "id": "sphynx",
+      "name": "Sphynx",
+      "emoji": "U0001F431",
+      "category": "Cats",
+      "difficulty": "Advanced",
+      "guideId": "cat-sphynx",
+      "image": "/assets/guides/cat-sphynx.jpg"
+    },
+    {
+      "id": "scottish-fold",
+      "name": "Scottish Fold",
+      "emoji": "U0001F431",
+      "category": "Cats",
+      "difficulty": "Advanced",
+      "guideId": "cat-scottish-fold",
+      "image": "/assets/guides/cat-scottish-fold.jpg"
+    },
+    {
       "id": "labrador",
       "name": "Labrador Retriever",
       "emoji": "🐶",
@@ -242,6 +269,42 @@
       "difficulty": "Advanced",
       "guideId": "dog-siberian-husky",
       "image": "/assets/guides/dog-siberian-husky.jpg"
+    },
+    {
+      "id": "dachshund",
+      "name": "Dachshund",
+      "emoji": "🌭",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-dachshund",
+      "image": "/assets/guides/dog-dachshund.jpg"
+    },
+    {
+      "id": "bulldog",
+      "name": "Bulldog",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-bulldog",
+      "image": "/assets/guides/dog-bulldog.jpg"
+    },
+    {
+      "id": "beagle",
+      "name": "Beagle",
+      "emoji": "U0001F415",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-beagle",
+      "image": "/assets/guides/dog-beagle.jpg"
+    },
+    {
+      "id": "rottweiler",
+      "name": "Rottweiler",
+      "emoji": "U0001F415",
+      "category": "Dogs",
+      "difficulty": "Advanced",
+      "guideId": "dog-rottweiler",
+      "image": "/assets/guides/dog-rottweiler.jpg"
     },
     {
       "id": "angelfish",
