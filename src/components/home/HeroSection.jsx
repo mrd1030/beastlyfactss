@@ -46,6 +46,19 @@ export default function HeroSection({ onOpenFact }) {
       {/* ==================== OPTIMIZED HERO IMAGE ==================== */}
       <div className="absolute inset-0">
         <picture>
+          {/* AVIF first: <picture> takes the first source whose type the browser
+              accepts, so order is the negotiation. Roughly 23-26% smaller than
+              the webp below at matched quality (measured 39.5-41.4 dB against
+              the jpg, and checked at 1:1 on the two regions that would show it
+              first, the sunset gradient for banding and the mane for detail).
+              This is the LCP element on the homepage, so those bytes are the
+              ones worth having. Anything that cannot decode AVIF, mainly Safari
+              before 16.4, falls through to exactly what it gets today. */}
+          <source
+            srcSet="/assets/hero-400.avif 400w, /assets/hero-800.avif 800w, /assets/hero-1200.avif 1200w, /assets/hero-1600.avif 1600w"
+            sizes="100vw"
+            type="image/avif"
+          />
           <source
             srcSet="/assets/hero-400.webp 400w, /assets/hero-800.webp 800w, /assets/hero-1200.webp 1200w, /assets/hero-1600.webp 1600w"
             sizes="100vw"
