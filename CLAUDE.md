@@ -23,6 +23,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Never renumber facts. Removing a fact must leave an id gap (favorites are keyed by id).
 - Never share one photo across multiple facts. Add new photos to FACT_IMAGES by id, never to ANIMAL_IMAGES by name.
 - Every article needs 1-2+ in-body internal links. This is enforced by scripts/check-internal-links.mjs at the front of `build`, but write the links yourself rather than relying on the check to catch it.
+- Every new article gets wired into RELATED_ARTICLES in src/lib/data/relatedArticles.js, against the guide ids it actually serves. Species articles ending in a standard suffix (cost/handling/health-issues/tank-setup/feeding) auto-detect and need no entry. Anything else, and every cross-breed dog or cat hub, does. scripts/check-related-articles.mjs enforces this for articles tagged "Dog Health" or "Cat Health" and also fails on dead slugs and unknown guide ids, but wire it yourself when you write the article.
 - When publishing new articles, spread dates across days (max 4-5/day). Never dump a whole batch on today's date.
 
 ## Technical Notes & Commands
