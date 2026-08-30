@@ -21,3 +21,28 @@
 
 /assets/*.css
   Cache-Control: public, max-age=31536000, immutable
+
+# Images were falling through to a 1 hour lifetime, which is what PageSpeed's
+# "use efficient cache lifetimes" flags: every repeat visitor revalidates all
+# ~1,400 of them. 30 days instead.
+#
+# Deliberately NOT the year-long immutable that .js and .css get above. Those
+# filenames carry a content hash, so a changed file is a changed URL and a stale
+# cache is impossible. Image filenames are stable (hero-800.avif stays
+# hero-800.avif when its contents change), so max-age is a promise we cannot
+# take back: whatever number is here is how long an existing visitor can keep
+# showing the old bytes after a swap. 30 days is the most that seemed fair to
+# trade for that. If an image ever has to change faster than that, rename it and
+# update the reference rather than lowering this.
+/assets/*.jpg
+  Cache-Control: public, max-age=2592000
+/assets/*.jpeg
+  Cache-Control: public, max-age=2592000
+/assets/*.png
+  Cache-Control: public, max-age=2592000
+/assets/*.webp
+  Cache-Control: public, max-age=2592000
+/assets/*.avif
+  Cache-Control: public, max-age=2592000
+/assets/*.svg
+  Cache-Control: public, max-age=2592000
