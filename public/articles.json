@@ -947,6 +947,17 @@
       ]
     },
     {
+      "slug": "brachycephalic-airway-syndrome-boas-guide",
+      "title": "BOAS in Dogs & Cats: Signs, Grades and Surgery",
+      "excerpt": "Snoring is not a personality trait. In flat-faced breeds it is usually the first audible sign of an airway that does not have room for itself, and there is now a graded test that tells you which side of the line your dog is on.",
+      "date": "2026-10-02",
+      "image": "/assets/images/brachycephalic-airway-syndrome.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "bristlenose-pleco-cost-guide",
       "title": "Bristlenose Pleco Cost: Full Price Breakdown",
       "excerpt": "A bristlenose pleco itself is cheap, but this is one of the few beginner fish where a single required item, driftwood, isn't optional decor. Skip it and you're not saving money, you're just deferring a problem.",
@@ -1219,6 +1230,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "cardiomyopathy-in-cats-and-dogs-guide",
+      "title": "HCM in Cats & DCM in Dogs: Heart Disease Explained",
+      "excerpt": "Cardiomyopathy means disease of the heart muscle. Cats mostly get the thickening kind, dogs mostly get the thinning kind, and the two behave so differently that lumping them together helps nobody.",
+      "date": "2026-10-01",
+      "image": "/assets/images/cardiomyopathy-cats-dogs.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
       ]
     },
     {
@@ -1571,6 +1593,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "conformation-breeding-laws-guide",
+      "title": "Conformation Breeding Laws: Dutch Ban, Norway, US",
+      "excerpt": "Our exotic pet map answers which species you may keep. This is the other axis: which shapes an animal is allowed to be. Europe regulates it, the US does not, and the gap is wider than almost anyone realizes.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/conformation-breeding-laws.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ]
     },
     {
@@ -2124,6 +2157,17 @@
       "category": "Legal",
       "categories": [
         "Legal"
+      ]
+    },
+    {
+      "slug": "feline-kidney-disease-ckd-pkd-guide",
+      "title": "Cat Kidney Disease: CKD and PKD Explained",
+      "excerpt": "A cat's kidneys hide their own damage. Creatinine does not rise until about three quarters of the filtering units are gone, which is why the blood panel that came back normal is reassuring but not conclusive.",
+      "date": "2026-10-09",
+      "image": "/assets/images/feline-kidney-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
       ]
     },
     {
@@ -3329,6 +3373,17 @@
       ]
     },
     {
+      "slug": "hip-and-elbow-dysplasia-guide",
+      "title": "Hip & Elbow Dysplasia in Dogs: Grades Explained",
+      "excerpt": "Dysplasia simply means a joint that did not form correctly. The word gets used loosely, but the screening behind it is precise, and knowing what a grade means is the difference between a meaningful clearance and a piece of paper.",
+      "date": "2026-09-30",
+      "image": "/assets/images/hip-and-elbow-dysplasia.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "hognose-snake-cost-guide",
       "title": "Hognose Snake Cost: Full Price Breakdown",
       "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
@@ -3452,6 +3507,17 @@
       ]
     },
     {
+      "slug": "inherited-eye-disease-dogs-cats-guide",
+      "title": "Inherited Eye Disease in Dogs and Cats Explained",
+      "excerpt": "Progressive retinal atrophy is not one disease. It is a family of them, caused by different broken genes in different breeds, which is why a PRA-clear result names one variant and says nothing about the rest.",
+      "date": "2026-10-08",
+      "image": "/assets/images/inherited-eye-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
+      ]
+    },
+    {
       "slug": "invertebrate-molting-guide",
       "title": "Invertebrate Molting 101: What's Normal",
       "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you should never disturb a molting pet.",
@@ -3460,6 +3526,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "ivdd-and-chondrodystrophy-guide",
+      "title": "IVDD in Dogs: Grades, Genetics and Recovery Rates",
+      "excerpt": "The retrogene that gives a Dachshund its short legs is the same one that wrecks its discs. It is not a side effect of the shape, it is the shape, and the odds ratio attached to it is 51.",
+      "date": "2026-10-03",
+      "image": "/assets/images/ivdd-chondrodystrophy.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
       ]
     },
     {
@@ -4451,6 +4528,39 @@
       "categories": [
         "Wild Animals",
         "Aquatic Life"
+      ]
+    },
+    {
+      "slug": "periodontal-dental-disease-guide",
+      "title": "Pet Dental Disease: Stages, Prevention and What Works",
+      "excerpt": "Plaque is the enemy, not tartar. The damage happens below the gumline where nobody can see it, which is why a mouth full of clean-looking white teeth tells you almost nothing.",
+      "date": "2026-10-07",
+      "image": "/assets/images/periodontal-dental-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "pet-dna-test-results-guide",
+      "title": "Pet DNA Test Results Explained: A31P, R820W, MDR1",
+      "excerpt": "The same panel contains tests that are near-perfect and tests that mean nothing, sold in the same report at the same price, with nothing on the page telling you which is which.",
+      "date": "2026-10-12",
+      "image": "/assets/images/pet-dna-testing.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
+      ]
+    },
+    {
+      "slug": "pet-obesity-body-condition-guide",
+      "title": "Pet Obesity & Body Condition Score: The 9-Point Scale",
+      "excerpt": "Fifty-nine percent of dogs and 61% of cats are overweight, and about a third of their owners believe those pets are a normal weight. The gap between those two numbers is the whole problem.",
+      "date": "2026-10-06",
+      "image": "/assets/images/pet-obesity-body-condition.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care"
       ]
     },
     {

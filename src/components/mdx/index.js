@@ -10,5 +10,6 @@ export { default as AffiliateDisclosure } from './AffiliateDisclosure';
 export { default as ProsCons } from './ProsCons';
 export { default as ComparisonTable } from './ComparisonTable';
 export { default as Sources } from './Sources';
+export { default as AlsoConsulted } from './AlsoConsulted';
 export { default as VetDisclaimer } from './VetDisclaimer';
 export { default as LegalDisclaimer } from './LegalDisclaimer';
