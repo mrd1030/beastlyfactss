@@ -1,21 +1,21 @@
-# Pending image prompts
+# Image prompts
 
-10 referenced images do not exist yet, so `scripts/check-images.mjs` fails and
-the build stops before Vite. This file holds a prompt for each. Delete an entry
-once its file is committed.
+Every image in `public/assets/guides/` and `public/assets/images/` added in the
+2026 dog and cat pass was generated from a prompt below. Kept as a record, not a
+to-do list: when one of these needs regenerating, or a new page needs an image
+that sits beside them, start here so the set stays coherent.
 
-The seven breed images are done and their prompts have been removed. What is
-left is the legal guide image and the nine article images.
+All are 3:2. Guides are 1168x784. Article images normally sit at 1600x1067, but
+this batch was generated at 1168x784 and installed at that size rather than
+upscaled, since the largest tier `scripts/generate-thumbnails.js` derives is
+640x480 and enlarging would only invent detail. Everything is re-encoded through
+mozjpeg at quality 80 on the way in.
 
-Both directories want a 3:2 frame. Guides are 1168x784, articles are 1600x1067.
-Export JPEG quality 80. `scripts/generate-thumbnails.js` derives the thumb and
-card variants at build time.
-
-## How the existing health images handle illness
+## How these handle illness
 
 Sampled from `rabbit-gi-stasis.jpg`, `cat-hairball-vomiting.jpg`,
-`ferret-adrenal-disease.jpg` and `dog-bloat-gdv.jpg`, the site already follows
-one rule: **never show the disease, show the thing standing next to it.**
+`ferret-adrenal-disease.jpg` and `dog-bloat-gdv.jpg`, the site follows one rule:
+**never show the disease, show the thing standing next to it.**
 
 - GI stasis shows a healthy rabbit on a bed of hay, which is the prevention.
 - Hairballs show a longhair cat grooming in a sunlit window, which is the cause,
@@ -23,8 +23,8 @@ one rule: **never show the disease, show the thing standing next to it.**
 - Adrenal disease shows a ferret warm and comfortable in blankets.
 - Bloat shows a large dog resting quietly after eating.
 
-So each of the nine article prompts below takes a different one of those angles,
-and no two share a setting, palette or camera position:
+Each of the nine article images takes a different one of those angles, so no two
+share a setting, palette or camera position.
 
 | Article | Angle | Look |
 |---|---|---|
@@ -38,18 +38,82 @@ and no two share a setting, palette or camera position:
 | DNA testing | the kit | overhead flat lay, pale oak |
 | Obesity | the intervention | warm kitchen, measuring scoop |
 
-## Sourcing
+## Breed accuracy
 
-The seven breed images were generated and checked against breed standards before
-being installed, including the traits generators usually miss: the Scottish Fold
-ears actually fold, the Sphynx reads as downy rather than bald, and the
-Rottweiler carries a natural undocked tail. Worth the same check on anything
-added later, since those are the details a reader who owns the breed will catch.
+Generators routinely miss the traits that define a breed, so each of these was
+checked against the standard before installing: the Scottish Fold ears fold flat
+to the skull, the Sphynx reads downy rather than bald, the American Shorthair
+keeps a working cat build rather than drifting British Shorthair, and the
+Rottweiler carries a natural undocked tail, docking being unlawful in the UK and
+most of Europe. Worth the same check on anything added later.
 
-Generation is fine for the remaining ten. No specific animal is being identified
-in any of them, which is how the existing article set was made.
+Three accuracy choices are written into the prompts themselves and should
+survive any rewrite: the Pug wears a harness and no collar, since neck pressure
+is contraindicated in brachycephalic obstructive airway syndrome; the Rottweiler
+tail is undocked; and the obesity image measures food rather than photographing
+an overweight animal.
 
 ---
+
+# Breed images, `public/assets/guides/`, 1168x784
+
+### cat-american-shorthair.jpg
+Photorealistic photograph of a silver tabby American Shorthair standing in
+profile on a pale hardwood floor in a bright sunlit hallway, head turned toward
+the camera. Dense black tabby markings on a silver ground with a clear bullseye
+swirl on the flank, full cheeks, medium round face, muscular working cat build,
+short thick coat, gold eyes. Not a British Shorthair: longer body, less flat
+face, no plush blue coat. Late morning sun striping the floor, shallow depth of
+field, 85mm, f/2, 3:2.
+
+### cat-scottish-fold.jpg
+Photorealistic photograph of a Scottish Fold cat sitting upright on a windowsill
+in three-quarter profile against soft backlight, so the folded ears read as one
+smooth unbroken dome from crown to cheek. Ears folded tightly forward and down,
+flat to the skull. Large round eyes, short curved nose, dense blue-grey plush
+coat. Bright hazy morning light through sheer curtains, rim light along the fur,
+cool airy palette, 50mm, f/2, 3:2.
+
+### cat-sphynx.jpg
+Photorealistic photograph of a Sphynx cat curled inside a chunky knitted wool
+blanket on a sofa, only the head, shoulders and one forepaw emerging, in warm
+lamplight. Skin covered in fine downy peach fuzz rather than bare rubber, deep
+soft wrinkles across the forehead, neck and shoulders. Very large wide-set ears,
+prominent cheekbones, large lemon-shaped eyes, warm pinkish-grey skin with faint
+tabby patterning. Cozy amber palette, close portrait, 85mm, f/1.8, 3:2.
+
+### dog-beagle.jpg
+Photorealistic photograph of an adult tricolor Beagle working a scent trail
+across an autumn lawn, nose down in fallen leaves, ears swinging forward, one
+front paw lifted mid-step. Black saddle, tan head and legs, white chest and
+muzzle, white tail tip held upright. Bright overcast daylight, damp grass, russet
+and green palette, side on at the dog's eye level, a little motion blur in the
+ears, 70mm, f/2.8, 3:2.
+
+### dog-bulldog.jpg
+Photorealistic photograph of an adult English Bulldog sitting square on a shaded
+stone porch step on a warm afternoon, facing the camera. Broad heavy head,
+moderate nose roll, wide undershot jaw, small rose ears, heavy shoulders,
+characteristic wide bowed front stance, short smooth fawn and white coat. Mouth
+closed, breathing easily, clear bright eyes. Cool open shade against a warm
+sunlit garden behind, thrown well out of focus, 50mm, f/2, 3:2.
+
+### dog-dachshund.jpg
+Photorealistic photograph of a smooth-coated standard Dachshund standing in full
+profile on a garden path, camera at ground level so the long low body runs the
+full width of the frame. Deep chest with a prominent forechest, level topline,
+short strong legs, long tapering muzzle, long low-set ears, rich red coat, tail
+carried level with the back. Warm low evening sun raking along the back from the
+side, long shadow across the path, 85mm, f/2.5, 3:2.
+
+### dog-rottweiler.jpg
+Photorealistic photograph of an adult Rottweiler sitting calmly on open grass in
+golden early evening light, body angled three-quarters to camera, head turned to
+face it. Short dense black coat with crisp rust markings over the eyes, on the
+cheeks, muzzle, chest and legs. Broad head, medium triangular ears carried
+forward, powerful level topline. Natural full undocked tail carried low and
+clearly visible. Calm steady expression, mouth closed, warm backlight rimming the
+coat, 85mm, f/2, 3:2.
 
 ---
 
@@ -143,9 +207,11 @@ and matter of fact, never comic.
 
 ---
 
-## After generating or sourcing
+## Adding another
 
-1. Resize to the dimensions above, JPEG quality 80, commit to the right directory.
+1. Match the 3:2 frame, re-encode at mozjpeg quality 80, commit the base file
+   only. The `-thumb` and `-card` tiers are gitignored and rebuilt by
+   `scripts/generate-thumbnails.js`, which runs ahead of `check-images.mjs`.
 2. Log anything from Wikimedia Commons in `IMAGE_CREDITS.md` with author and
    license. Adobe Stock, generated and Canva images are not tracked there.
-3. Re-run `node scripts/check-images.mjs` to confirm the list is clear.
+3. Run `node scripts/check-images.mjs`.
