@@ -2,6 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <!-- Theme, applied before first paint. useDarkMode() sets the `dark` class
+         in a useEffect, which does not run until React has hydrated, and
+         prerender.mjs bakes class="dark" into every page because it renders with
+         the default. A returning light-mode visitor therefore got a dark flash
+         while waiting for hydration to undo it. This reads the same
+         localStorage key synchronously and toggles the class both ways, so the
+         first paint is already correct. The effect then agrees with it.
+         Must stay above any stylesheet. theme-color is deliberately left to the
+         effect: it colours OS chrome, not the page, so it cannot flash. -->
+    <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'true'))}catch(e){}</script>
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script>
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
@@ -73,10 +83,11 @@
          Paths point into src/assets rather than public/ so Vite content-hashes
          them and rewrites both href and every URL inside imagesrcset (verified:
          it does rewrite imagesrcset, not just href). They must stay identical to
-         the imports in HeroSection.jsx or the preload misses again. -->
+         the imports in HeroSection.jsx, and imagesizes must match the sizes
+         attribute on those <source> tags, or the preload misses again. -->
     <link rel="preload" as="image" href="./src/assets/hero-1200.avif" type="image/avif" fetchpriority="high"
       imagesrcset="./src/assets/hero-400.avif 400w, ./src/assets/hero-800.avif 800w, ./src/assets/hero-1200.avif 1200w, ./src/assets/hero-1600.avif 1600w"
-      imagesizes="(min-width: 896px) 848px, 100vw" />
+      imagesizes="100vw" />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <!-- Fonts: self-hosted (public/fonts/, see src/index.css for the @font-face
          rules) instead of Google Fonts - preloaded directly here so the fetch
