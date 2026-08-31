@@ -394,7 +394,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           onClick={handleShare}
           className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-secondary transition-all font-body font-semibold text-sm"
         >
-          {shared ? <Check className="w-4 h-4 text-accent" /> : <Share2 className="w-4 h-4" />}
+          {shared ? <Check className="w-4 h-4 text-accent-ink" /> : <Share2 className="w-4 h-4" />}
           {shared ? 'Copied!' : 'Share'}
         </button>
 

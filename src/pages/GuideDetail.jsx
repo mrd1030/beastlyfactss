@@ -522,7 +522,7 @@ export default function GuideDetail() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {guide.sections.checklist.map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-xs text-muted-foreground font-body bg-muted/50 rounded-xl p-2.5">
-                    <Check className="w-3.5 h-3.5 text-teal mt-0.5 flex-shrink-0" />
+                    <Check className="w-3.5 h-3.5 text-primary mt-0.5 flex-shrink-0" />
                     {item}
                   </div>
                 ))}

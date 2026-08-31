@@ -228,7 +228,7 @@ export default function HeroSection({ onOpenFact }) {
               <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                className="inline-block mt-3 text-xs font-body font-bold text-teal"
+                className="inline-block mt-3 text-xs font-body font-bold text-primary"
               >
                 🎉 +1 Brain Cell!
               </motion.span>

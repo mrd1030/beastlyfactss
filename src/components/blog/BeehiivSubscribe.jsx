@@ -58,7 +58,7 @@ export default function BeehiivSubscribe() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-bold py-3 rounded-xl transition-all disabled:opacity-70"
+          className="w-full bg-secondary hover:opacity-90 text-secondary-foreground font-body font-bold py-3 rounded-xl transition-all disabled:opacity-70"
         >
           {loading ? 'Please wait...' : "Subscribe - it's free 🐾"}
         </button>
@@ -83,7 +83,7 @@ export default function BeehiivSubscribe() {
             </p>
             <button
               onClick={() => setSuccess(false)}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-10 py-3 rounded-xl transition"
+              className="bg-secondary hover:opacity-90 text-secondary-foreground font-bold px-10 py-3 rounded-xl transition"
             >
               Close
             </button>
