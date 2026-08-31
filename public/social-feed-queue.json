@@ -2,6 +2,22 @@
   "description": "Publish queue for the on-site social feed (/feed/). A pg_cron job calls the post-social-feed edge function daily at 15:00 UTC (see supabase/social_feed_automation.sql); the function fetches this file from the live site and inserts every pending entry whose post_date (America/New_York) has arrived into public.social_posts, deduped forever by queue id, so stale entries and repeat calls are harmless. A weekly routine refills pending with the coming week's posts drawn from releasing articles, facts that have photos in FACT_IMAGES, and Chronicles. Caption rules match docs/RULES.md and the social voice: hook first, no URLs in the caption (link_url carries the page), 2 to 4 #hashtags at the end, no em or en dashes, US spelling. media_url and link_url are site-relative; the function makes them absolute.",
   "pending": [
     {
+      "id": "2026-08-31-dex-part-14",
+      "post_date": "2026-08-31",
+      "media_type": "image",
+      "media_url": "/assets/images/dex/dex-chron14.jpg",
+      "caption": "Dex is back. Part 14 of the Chronicles just dropped, and this one is called The Long Drop, which should worry you exactly as much as it worries Dex. Otis has a new episode up too. #chronicles #beardeddragon #petstories",
+      "link_url": "/chronicles/dex/14/"
+    },
+    {
+      "id": "2026-08-31-uromastyx-vs-beardie",
+      "post_date": "2026-08-31",
+      "media_type": "image",
+      "media_url": "/assets/images/uromastyx-vs-bearded-dragon.jpg",
+      "caption": "Uromastyx or bearded dragon? Both are chill desert lizards with big personalities, but one eats salad for life and the other needs a bug budget. Full comparison is up now. #uromastyx #beardeddragon #reptiles",
+      "link_url": "/blog/uromastyx-vs-bearded-dragon-guide/"
+    },
+    {
       "id": "2026-09-01-gerbil-vs-hamster",
       "post_date": "2026-09-01",
       "media_type": "image",
