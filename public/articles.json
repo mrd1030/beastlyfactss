@@ -353,6 +353,17 @@
       ]
     },
     {
+      "slug": "angelfish-enrichment-guide",
+      "title": "Angelfish Enrichment Guide",
+      "excerpt": "The same study that found neon tetras do better in tens found no group size effect at all for angelfish. They are cichlids, and cichlids are not shoals.",
+      "date": "2026-11-03",
+      "image": "/assets/images/angelfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "angelfish-feeding-guide",
       "title": "Angelfish Feeding Guide: Schedule and Diet",
       "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
@@ -1079,6 +1090,17 @@
       ]
     },
     {
+      "slug": "bristlenose-pleco-enrichment-guide",
+      "title": "Bristlenose Pleco Enrichment Guide",
+      "excerpt": "Plecos rasp wood constantly and every care sheet says they digest it. The research on wood-eating catfish is less certain than that, and the wood is still required.",
+      "date": "2026-11-05",
+      "image": "/assets/images/bristlenose-pleco-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "bristlenose-pleco-feeding-guide",
       "title": "Bristlenose Pleco Feeding Guide: Diet and Driftwood",
       "excerpt": "A bristlenose pleco is sold as a living algae solution, and as an adult that reputation quietly stops being true. What it actually needs is a real diet, plus one piece of tank furniture that doubles as food.",
@@ -1318,6 +1340,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "cardinal-tetra-enrichment-guide",
+      "title": "Cardinal Tetra Enrichment Guide",
+      "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+      "date": "2026-11-04",
+      "image": "/assets/images/cardinal-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1948,6 +1981,17 @@
       ]
     },
     {
+      "slug": "corydoras-catfish-enrichment-guide",
+      "title": "Corydoras Catfish Enrichment Guide",
+      "excerpt": "Everyone says gravel wears down cory barbels. The better explanation is that barbel erosion is bacterial, and a dirty substrate does it whatever it is made of.",
+      "date": "2026-11-03",
+      "image": "/assets/images/corydoras-catfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "corydoras-catfish-feeding-guide",
       "title": "Corydoras Catfish Feeding Guide: Schedule and Diet",
       "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
@@ -2188,6 +2232,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "discus-enrichment-guide",
+      "title": "Discus Enrichment Guide",
+      "excerpt": "Discus are shy cichlids that hold a pecking order. In small groups the bottom fish has nowhere to be, which is why six is the number people give.",
+      "date": "2026-11-05",
+      "image": "/assets/images/discus-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3436,6 +3491,17 @@
       ]
     },
     {
+      "slug": "guppy-enrichment-guide",
+      "title": "Guppy Enrichment Guide",
+      "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to vigilance, and even to the next generation.",
+      "date": "2026-11-03",
+      "image": "/assets/images/guppy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "guppy-feeding-guide",
       "title": "Guppy Feeding Guide: Schedule and Diet",
       "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the real risk here. Here's a real schedule, what to feed, and when refusal actually matters.",
@@ -4090,6 +4156,17 @@
       ]
     },
     {
+      "slug": "koi-enrichment-guide",
+      "title": "Koi Enrichment Guide",
+      "excerpt": "Koi live for decades, reach the length of your arm and learn who feeds them. Nearly every welfare problem they have is a pond that was built too small.",
+      "date": "2026-11-05",
+      "image": "/assets/images/koi-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "koi-feeding-guide",
       "title": "Koi Feeding Guide: Schedule and Diet",
       "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the real seasonal schedule, what to feed, and why stopping feeding in cold water can save a koi's life.",
@@ -4552,6 +4629,17 @@
       ]
     },
     {
+      "slug": "molly-enrichment-guide",
+      "title": "Molly Enrichment Guide",
+      "excerpt": "The harassment research that shapes guppy stocking was partly done on a molly. They also graze algae all day and get sold into tanks with none in them.",
+      "date": "2026-11-04",
+      "image": "/assets/images/molly-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "molly-feeding-guide",
       "title": "Molly Fish Feeding Guide: Schedule and Diet",
       "excerpt": "Mollies lean more herbivorous than most livebearers, and a protein-heavy, no-vegetables diet is the single most common molly-specific feeding mistake. Here's a real schedule and what to actually feed.",
@@ -4761,6 +4849,17 @@
       ]
     },
     {
+      "slug": "neon-tetra-enrichment-guide",
+      "title": "Neon Tetra Enrichment Guide",
+      "excerpt": "The usual advice is six. A study that actually measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better.",
+      "date": "2026-11-03",
+      "image": "/assets/images/neon-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "neon-tetra-feeding-guide",
       "title": "Neon Tetra Feeding Guide: Schedule and Diet",
       "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the school has nothing to do with portions: never leave a dead fish in the tank.",
@@ -4813,6 +4912,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "oscar-fish-enrichment-guide",
+      "title": "Oscar Fish Enrichment Guide",
+      "excerpt": "Oscars dig, move decor, recognise the person who feeds them and destroy plants on purpose. Almost no other aquarium fish gives you this much to work with.",
+      "date": "2026-11-05",
+      "image": "/assets/images/oscar-fish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5056,6 +5166,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "platy-enrichment-guide",
+      "title": "Platy Enrichment Guide",
+      "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive it. Surviving something is not evidence it was fine.",
+      "date": "2026-11-04",
+      "image": "/assets/images/platy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -6094,6 +6215,17 @@
       ]
     },
     {
+      "slug": "swordtail-enrichment-guide",
+      "title": "Swordtail Enrichment Guide",
+      "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that reliably produces a loser.",
+      "date": "2026-11-04",
+      "image": "/assets/images/swordtail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "swordtail-feeding-guide",
       "title": "Swordtail Fish Feeding Guide: Schedule and Diet",
       "excerpt": "Swordtails are true dietary generalists, more balanced between plant and animal food than a molly's heavier plant lean. Here's a real schedule and what to actually feed.",
@@ -6834,6 +6966,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "zebra-danio-enrichment-guide",
+      "title": "Zebra Danio Enrichment Guide",
+      "excerpt": "Zebrafish larvae reared in enriched tanks survived at higher rates than those in bare ones, and adults from enriched tanks were less anxious in a strange environment.",
+      "date": "2026-11-03",
+      "image": "/assets/images/zebra-danio-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {

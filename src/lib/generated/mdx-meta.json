@@ -1874,6 +1874,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/angelfish-enrichment-guide.mdx",
+    "slug": "angelfish-enrichment-guide",
+    "title": "Angelfish Enrichment: The Study Found Group Size Did Not Matter",
+    "seoTitle": "Angelfish Enrichment Guide",
+    "excerpt": "The same study that found neon tetras do better in tens found no group size effect at all for angelfish. They are cichlids, and cichlids are not shoals.",
+    "date": "2026-11-03",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Angelfish",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Cichlids"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/angelfish-enrichment.jpg",
+    "imageAlt": "A tall angelfish turning between vertical plant stems in a deep planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-03",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on angelfish welfare?",
+        "a": "Yes. Angelfish were one of the four species in Saxby and colleagues' 2010 study of group size in home aquarium fish, alongside neon tetras, white cloud mountain minnows and tiger barbs."
+      },
+      {
+        "q": "What did it find for angelfish?",
+        "a": "No evidence of an effect of group size on angelfish welfare, while the same study found groups of ten improved welfare in neon tetras. The effect was species-specific, and angelfish were the species where it did not appear."
+      },
+      {
+        "q": "Why would angelfish be different?",
+        "a": "They are cichlids, not shoaling fish. Adults form pairs and hold territory, and the social structure that makes a shoal of tetras safer in numbers does not describe them. Group size is simply not the variable that governs their welfare."
+      },
+      {
+        "q": "So what does matter for angelfish?",
+        "a": "Height, territory and tank mates. They are tall, deep-bodied fish that need vertical space, and adult pairs become territorial and will harass other fish, especially around spawning."
+      },
+      {
+        "q": "Can angelfish be kept with neon tetras?",
+        "a": "It is a classic pairing and a risky one. Adult angelfish will eat fish small enough to fit, and neon tetras are borderline. Cardinal tetras, being slightly larger, are the usual substitute."
+      },
+      {
+        "q": "How many angelfish should I keep?",
+        "a": "Either a bonded pair, or a group large enough that aggression is spread rather than focused on one fish, in a tank big enough to support it. What does not work is two or three adults in a tank where one gets singled out."
+      }
+    ],
+    "relatedProducts": [
+      "angelfish-tank-tetra-55-gallon",
+      "live-terrarium-plants",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
     "path": "/content/guides/angelfish-feeding-guide.mdx",
     "slug": "angelfish-feeding-guide",
     "title": "Angelfish Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -5786,6 +5850,70 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/bristlenose-pleco-enrichment-guide.mdx",
+    "slug": "bristlenose-pleco-enrichment-guide",
+    "title": "Bristlenose Pleco Enrichment: Wood Is Not Optional, For Murkier Reasons Than You Think",
+    "seoTitle": "Bristlenose Pleco Enrichment Guide",
+    "excerpt": "Plecos rasp wood constantly and every care sheet says they digest it. The research on wood-eating catfish is less certain than that, and the wood is still required.",
+    "date": "2026-11-05",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Bristlenose Pleco",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Catfish"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bristlenose-pleco-enrichment.jpg",
+    "imageAlt": "A bristlenose pleco rasping the surface of a large piece of driftwood",
+    "emoji": "🐟",
+    "lastReviewed": "2026-11-05",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do bristlenose plecos need driftwood?",
+        "a": "Yes. Keepers consistently report digestive problems and colour loss in plecos kept without it, and providing wood is treated as a requirement rather than a nicety across the hobby and the care literature."
+      },
+      {
+        "q": "Do they actually digest the wood?",
+        "a": "Less clearly than the standard explanation suggests. Research on wood-rasping loricariid catfish increasingly indicates they are not true wood digesters in the way termites are, and that any benefit is more likely from microbial activity in the gut, with the wood itself contributing less nutritionally than assumed."
+      },
+      {
+        "q": "So why provide it if they may not digest it?",
+        "a": "Because the outcome is not in doubt even if the mechanism is. Plecos kept without wood do worse, they rasp at it constantly when it is there, and it grows the biofilm that makes up a good share of what they actually eat."
+      },
+      {
+        "q": "Are they algae eaters?",
+        "a": "Partly, and not enough to live on. This is the myth that starves them. Once the tank's algae is gone they need sinking foods and vegetables fed for them, and a bristlenose in a clean tank with no supplementary feeding is slowly starving."
+      },
+      {
+        "q": "What kind of wood?",
+        "a": "Softer woods are generally preferred, with Malaysian driftwood, mopani, grape wood and cholla all commonly used. Size matters more than type, since a small piece in a tank with several plecos does not go far."
+      },
+      {
+        "q": "Do they need a cave?",
+        "a": "Yes. They are nocturnal and want somewhere enclosed to spend the day, and males use caves as spawning sites. A cave per fish is a reasonable rule in a tank with more than one."
+      }
+    ],
+    "relatedProducts": [
+      "driftwood",
+      "hide-cave-aquarium-decoration",
+      "corydoras-hikari-sinking-wafers"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/bristlenose-pleco-feeding-guide.mdx",
     "slug": "bristlenose-pleco-feeding-guide",
     "title": "Bristlenose Pleco Feeding: Diet, Driftwood, and the Algae Myth",
@@ -7114,6 +7242,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/cardinal-tetra-enrichment-guide.mdx",
+    "slug": "cardinal-tetra-enrichment-guide",
+    "title": "Cardinal Tetra Enrichment: Most of Them Are Still Wild",
+    "seoTitle": "Cardinal Tetra Enrichment Guide",
+    "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+    "date": "2026-11-04",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Cardinal Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/cardinal-tetra-enrichment.jpg",
+    "imageAlt": "A shoal of cardinal tetras in tannin-stained water among submerged branches and leaf litter",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-04",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on cardinal tetras?",
+        "a": "Not on the species. The closest evidence is the 2010 home aquarium study by Saxby and colleagues, which found groups of ten neon tetras showed improved welfare over smaller groups, with lower aggression and darting and faster feeding."
+      },
+      {
+        "q": "How are cardinals different from neon tetras?",
+        "a": "Larger, longer lived, more expensive, and considerably more demanding on water. The red stripe runs the full length of the body rather than half of it. They also want softer, warmer, more acidic water than neons tolerate."
+      },
+      {
+        "q": "Are cardinal tetras really wild caught?",
+        "a": "A large proportion still are, from the Rio Negro in Brazil, unlike almost everything else in a modern fish shop. That matters practically, because a wild fish arriving from a long supply chain needs settling time and stable conditions more than a tank-bred one does."
+      },
+      {
+        "q": "Is buying wild caught fish a problem?",
+        "a": "It is more complicated than it sounds here. The Rio Negro ornamental fishery is frequently cited as a case where the trade gives local communities an economic reason to keep the forest and river intact. That is a genuine argument and not a blanket endorsement of wild collection."
+      },
+      {
+        "q": "How many should I keep?",
+        "a": "Ten or more, following the neon tetra finding, and cardinals shoal more tightly and colour up better in bigger groups. Six is a floor rather than a target."
+      },
+      {
+        "q": "What water do they need?",
+        "a": "Soft, warm and acidic, ideally tannin-stained by wood and leaf litter. They tolerate harder water and they do not thrive in it, and this is the main reason cardinals fail in tanks where neons would have been fine."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "live-terrarium-plants",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/cardinal-tetra-feeding-guide.mdx",
@@ -10420,6 +10612,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/corydoras-catfish-enrichment-guide.mdx",
+    "slug": "corydoras-catfish-enrichment-guide",
+    "title": "Corydoras Enrichment: Sand for the Sifting, Not for the Barbels",
+    "seoTitle": "Corydoras Catfish Enrichment Guide",
+    "excerpt": "Everyone says gravel wears down cory barbels. The better explanation is that barbel erosion is bacterial, and a dirty substrate does it whatever it is made of.",
+    "date": "2026-11-03",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Corydoras",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Catfish"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corydoras-catfish-enrichment.jpg",
+    "imageAlt": "A group of corydoras catfish sifting fine sand with their barbels, snouts buried",
+    "emoji": "🐟",
+    "lastReviewed": "2026-11-03",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does gravel wear down corydoras barbels?",
+        "a": "That is the standard explanation and it is probably not the main one. The better-supported account is that barbel erosion is driven by poor water quality and bacterial infection in the substrate rather than by mechanical abrasion, and plenty of keepers have raised healthy corydoras on smooth gravel for decades."
+      },
+      {
+        "q": "So should I use gravel?",
+        "a": "Sand is still the better choice, for a different reason: corydoras sift substrate through their gills, and fine sand is what lets them do it properly. The behavioural argument for sand is stronger than the barbel argument ever was."
+      },
+      {
+        "q": "What actually prevents barbel erosion?",
+        "a": "Keeping the bottom clean. Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Sharp substrate is not ideal and is a secondary factor next to what is living in a dirty one."
+      },
+      {
+        "q": "How many corydoras should I keep?",
+        "a": "Six at absolute minimum and more is better. They are social bottom-dwellers that shoal, forage and rest together, and a group of two or three is a visibly less active, more nervous set of fish."
+      },
+      {
+        "q": "Why do they dash to the surface?",
+        "a": "Corydoras can gulp air and absorb oxygen through the gut, which is normal behaviour rather than a symptom. It becomes a warning sign when it happens constantly, which usually means the water is low in oxygen or fouled."
+      },
+      {
+        "q": "Do they eat leftovers?",
+        "a": "This is the myth that starves them. Corydoras are not a cleanup crew and will not thrive on whatever the other fish miss. They need sinking food fed for them, after lights out if faster tankmates are taking it."
+      }
+    ],
+    "relatedProducts": [
+      "betta-substrate-caribsea-freshwater-sand",
+      "tank-20-gallon-long",
+      "corydoras-hikari-sinking-wafers"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/corydoras-catfish-feeding-guide.mdx",
     "slug": "corydoras-catfish-feeding-guide",
     "title": "Corydoras Catfish Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -11686,6 +11942,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/discus-enrichment-guide.mdx",
+    "slug": "discus-enrichment-guide",
+    "title": "Discus Enrichment: A Nervous Cichlid Needs a Group and a Quiet Room",
+    "seoTitle": "Discus Enrichment Guide",
+    "excerpt": "Discus are shy cichlids that hold a pecking order. In small groups the bottom fish has nowhere to be, which is why six is the number people give.",
+    "date": "2026-11-05",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Discus",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Cichlids"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/discus-enrichment.jpg",
+    "imageAlt": "A group of discus hanging together among tall plant stems and vertical driftwood",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-05",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on discus welfare?",
+        "a": "Not on the species directly. The nearest evidence is the 2010 home aquarium group size study, which found the effect of group size on welfare was species-specific and, notably, found no group size effect for angelfish, the other large cichlid in the study."
+      },
+      {
+        "q": "Does that mean group size does not matter for discus?",
+        "a": "No, and the reason is the hierarchy rather than shoaling. Discus establish a pecking order, and in a group of three or four the lowest-ranked fish is singled out with nowhere to go. Six or more spreads it, which is why that number is the standard advice."
+      },
+      {
+        "q": "What is the hardest part of keeping discus?",
+        "a": "Water. They want warm, soft, very clean and above all stable conditions, and they react badly to swings that other cichlids shrug off. Most discus problems are water problems that started weeks earlier."
+      },
+      {
+        "q": "Do they need a tall tank?",
+        "a": "Yes. Like angelfish they are laterally compressed and deep-bodied, so vertical space is the constrained dimension. A tall tank of the same volume is worth considerably more to them than a long shallow one."
+      },
+      {
+        "q": "Why are my discus always hiding?",
+        "a": "Often the tank's position. Discus are genuinely nervous fish and a tank in a high-traffic spot, or one with people looming over it, produces animals that spend their time at the back. Location is an enrichment decision for this species."
+      },
+      {
+        "q": "Can discus be kept in a community tank?",
+        "a": "With care and with the right tank mates. The warm temperatures they need rule out many common community fish, and boisterous or nippy species stress them badly. A species tank is the simplest answer."
+      }
+    ],
+    "relatedProducts": [
+      "angelfish-tank-tetra-55-gallon",
+      "canister-filter-large",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/discus-feeding-guide.mdx",
@@ -18250,6 +18570,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/guppy-enrichment-guide.mdx",
+    "slug": "guppy-enrichment-guide",
+    "title": "Guppy Enrichment: The Sex Ratio Is a Welfare Decision",
+    "seoTitle": "Guppy Enrichment Guide",
+    "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to vigilance, and even to the next generation.",
+    "date": "2026-11-03",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Guppy",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Livebearers"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/guppy-enrichment.jpg",
+    "imageAlt": "A group of female guppies among dense planting with a male displaying nearby",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-03",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on guppy welfare?",
+        "a": "There is a substantial body of research on sexual harassment in guppies and related livebearers, which is the single most useful thread for someone stocking a tank. It documents direct costs to females from constant male pursuit."
+      },
+      {
+        "q": "What are those costs?",
+        "a": "Energy expenditure and reduced foraging ability. Females faced with persistent male attention become more vigilant and flee, which means less feeding. In a related livebearer, males attempt to mate almost constantly while females are mostly non-responsive."
+      },
+      {
+        "q": "Does it affect the offspring?",
+        "a": "In one study, yes. Females exposed to high sexual harassment produced daughters with smaller bodies and sons with shorter gonopodia that were less attractive to females and less successful. Lifetime fecundity itself did not differ."
+      },
+      {
+        "q": "What sex ratio should I keep?",
+        "a": "Two to three females per male at minimum, and more females is better. Keeping males only is the other workable answer and avoids the problem entirely, along with the endless fry."
+      },
+      {
+        "q": "Why do people end up with too many males?",
+        "a": "Because males are the colourful ones and get sold that way. A tank stocked on appearance ends up male-heavy, which is the exact arrangement the harassment research argues against."
+      },
+      {
+        "q": "Do guppies need planting?",
+        "a": "Yes, and for a specific reason here. Dense planting gives females somewhere to break line of sight and rest, and it gives fry somewhere to survive. In a livebearer tank, cover is a social tool rather than decoration."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "tank-10-gallon",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/guppy-feeding-guide.mdx",
     "slug": "guppy-feeding-guide",
     "title": "Guppy Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -21514,6 +21898,70 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/koi-enrichment-guide.mdx",
+    "slug": "koi-enrichment-guide",
+    "title": "Koi Enrichment: Volume, Depth, and Somewhere to Overwinter",
+    "seoTitle": "Koi Enrichment Guide",
+    "excerpt": "Koi live for decades, reach the length of your arm and learn who feeds them. Nearly every welfare problem they have is a pond that was built too small.",
+    "date": "2026-11-05",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Koi",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Pond Fish"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/koi-enrichment.jpg",
+    "imageAlt": "Several large koi rising together toward the surface of a deep planted pond",
+    "emoji": "🐟",
+    "lastReviewed": "2026-11-05",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on koi welfare?",
+        "a": "Not in the form of a controlled enrichment study. Koi are carp, one of the most-studied fish groups in aquaculture, and the useful evidence is about space, water quality, stocking density and social behaviour rather than about enrichment as such."
+      },
+      {
+        "q": "How big do koi get?",
+        "a": "Around two feet is normal for a well-kept adult and larger is possible. They are sold at a few inches, which is the root of nearly every koi welfare problem: a pond built for the fish in the bag rather than the fish it becomes."
+      },
+      {
+        "q": "How deep should the pond be?",
+        "a": "Deep enough that the bottom does not freeze and stays thermally stable, which in most temperate climates means at least three to four feet in part of the pond. Depth is what makes overwintering survivable rather than merely survivable-looking."
+      },
+      {
+        "q": "Are koi social?",
+        "a": "Yes. They are shoaling fish that feed and move together, and a solitary koi is a poorer arrangement. They also learn a feeding routine and readily learn to take food from a hand."
+      },
+      {
+        "q": "What is the biggest killer?",
+        "a": "Water quality in an overstocked pond, usually in summer when warm water holds less oxygen and a heavy fish load is producing the most waste. Filtration and aeration have to be sized for the adult fish, not the current ones."
+      },
+      {
+        "q": "Do they need plants?",
+        "a": "Plants help with shade, water quality and cover, and koi will eat and uproot them. The usual answer is planting protected in baskets or in a separate shallow zone the fish cannot fully reach."
+      }
+    ],
+    "relatedProducts": [
+      "pond-liner-firestone-epdm-15x20",
+      "pond-aerator-aquascape-pond-air-2",
+      "pond-netting-alpinereach-15x20"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
+  },
+  {
     "path": "/content/guides/koi-feeding-guide.mdx",
     "slug": "koi-feeding-guide",
     "title": "Koi Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -23959,6 +24407,70 @@
     "sourceCount": 8
   },
   {
+    "path": "/content/guides/molly-enrichment-guide.mdx",
+    "slug": "molly-enrichment-guide",
+    "title": "Molly Enrichment: The Biggest Livebearer Needs Room to Graze",
+    "seoTitle": "Molly Enrichment Guide",
+    "excerpt": "The harassment research that shapes guppy stocking was partly done on a molly. They also graze algae all day and get sold into tanks with none in them.",
+    "date": "2026-11-04",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Molly",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Livebearers"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/molly-enrichment.jpg",
+    "imageAlt": "A black molly grazing algae from a piece of driftwood in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-04",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to molly welfare?",
+        "a": "Yes, and some of it was done on a molly. Work on Poecilia mexicana found males attempt to mate almost constantly while females are largely non-responsive, so females flee, become more vigilant and have hampered feeding opportunities."
+      },
+      {
+        "q": "What sex ratio should I keep?",
+        "a": "At least two to three females per male, and more females is better. An all-male group is the other clean answer, though male mollies can squabble more than male guppies, so it needs space."
+      },
+      {
+        "q": "Why does grazing matter so much for mollies?",
+        "a": "They are the most herbivorous of the common livebearers and graze algae and biofilm more or less continuously. A spotless tank with a pinch of flake twice a day removes most of what a molly does with its day."
+      },
+      {
+        "q": "Do mollies need salt?",
+        "a": "Not necessarily, and they do need hard, alkaline, mineral-rich water. The salt recommendation is a blunt version of that. Getting the hardness right matters more than adding salt to soft water."
+      },
+      {
+        "q": "How big a tank do they need?",
+        "a": "Bigger than most livebearer advice suggests. Mollies are the largest of the common livebearers and some varieties reach a size that makes a ten gallon inadequate, before you count the fry."
+      },
+      {
+        "q": "Why do my mollies keep getting sick?",
+        "a": "Most often soft water, unstable parameters, or an overstocked tank after a few broods. Mollies have a reputation for being delicate that mostly traces back to being kept in conditions suited to a guppy."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "live-terrarium-plants",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/molly-feeding-guide.mdx",
     "slug": "molly-feeding-guide",
     "title": "Molly Feeding: Schedule, Diet, and Why Vegetables Matter",
@@ -25086,6 +25598,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/neon-tetra-enrichment-guide.mdx",
+    "slug": "neon-tetra-enrichment-guide",
+    "title": "Neon Tetra Enrichment: Someone Counted, and the Number Is Ten",
+    "seoTitle": "Neon Tetra Enrichment Guide",
+    "excerpt": "The usual advice is six. A study that actually measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better.",
+    "date": "2026-11-03",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Neon Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/neon-tetra-enrichment.jpg",
+    "imageAlt": "A tight shoal of neon tetras moving together through a densely planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-03",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on neon tetra group size?",
+        "a": "Yes, and it is unusually direct. Saxby, Adams, Snellgrove, Wilson and Sloman studied group size in four species commonly kept in home aquaria, neon tetras among them, and published it in Applied Animal Behaviour Science in 2010."
+      },
+      {
+        "q": "What did it find?",
+        "a": "Single species groups of ten neon tetras showed improved welfare compared with smaller groups. Darting, aggression, shoaling and latency to feed all varied with group size, and a principal components analysis pointed at the larger groups."
+      },
+      {
+        "q": "So is six enough?",
+        "a": "Six is the number most care sheets give and the study found ten better. The smallest functioning shoaling unit is often put at six to eight, so six is a floor rather than a target. If you can house ten, house ten."
+      },
+      {
+        "q": "What does latency to feed tell you?",
+        "a": "How long the fish waits before eating. A fish that hangs back is a fish that does not feel safe enough to come out, and feeding latency dropping in larger groups is one of the clearer welfare signals in the study."
+      },
+      {
+        "q": "Does planting matter as much as numbers?",
+        "a": "It matters a great deal and differently. Neon tetras come from blackwater streams shaded by dense vegetation, and open bright tanks make them pale and skittish. Planting and cover give a shoal somewhere to feel unexposed."
+      },
+      {
+        "q": "What is the most common reason neon tetras die?",
+        "a": "Being added to an uncycled or unstable tank. They are sold as beginner fish and are actually quite sensitive to water quality and to sudden parameter changes, which is a poor combination."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "driftwood",
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/neon-tetra-feeding-guide.mdx",
     "slug": "neon-tetra-feeding-guide",
     "title": "Neon Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
@@ -25392,6 +25968,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/oscar-fish-enrichment-guide.mdx",
+    "slug": "oscar-fish-enrichment-guide",
+    "title": "Oscar Enrichment: The Fish That Rearranges the Tank Itself",
+    "seoTitle": "Oscar Fish Enrichment Guide",
+    "excerpt": "Oscars dig, move decor, recognise the person who feeds them and destroy plants on purpose. Almost no other aquarium fish gives you this much to work with.",
+    "date": "2026-11-05",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Oscar Fish",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Cichlids"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/oscar-fish-enrichment.jpg",
+    "imageAlt": "A large oscar pushing substrate around a piece of driftwood in a big aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-05",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on oscar welfare?",
+        "a": "Not on the species. The nearest evidence is the 2010 home aquarium group size study, which found effects were species-specific and found no group size effect for angelfish, the cichlid in that study. Cichlid enrichment is better argued from behaviour than from the shoaling literature."
+      },
+      {
+        "q": "Are oscars actually intelligent?",
+        "a": "They behave that way in ways keepers can observe: they recognise and respond differently to the person who feeds them, learn routines, take food from the hand, and interact with objects deliberately. Whether that meets a formal definition is a separate question from whether they need something to do."
+      },
+      {
+        "q": "How big a tank does one need?",
+        "a": "Much bigger than they are sold for. Oscars reach a foot or more and are sold at two inches. A single adult needs a tank in the region of 75 gallons as a floor, and a pair or a community needs considerably more."
+      },
+      {
+        "q": "Why do they dig everything up?",
+        "a": "Because that is what they do. Oscars move substrate, uproot plants and reposition decor as normal behaviour, not as misbehaviour. An enclosure they cannot alter removes one of the few things a large cichlid can actually do in a glass box."
+      },
+      {
+        "q": "Can I feed them feeder fish?",
+        "a": "Better not. Feeder fish are a common route for parasites and disease into a tank, and they are nutritionally poor compared with a proper pellet and frozen diet. The hunting appeal is real and the risk outweighs it."
+      },
+      {
+        "q": "Can oscars be kept with other fish?",
+        "a": "With large, robust tank mates in a very large tank, and even then it is unpredictable. Anything small enough to swallow will eventually be swallowed, and individual oscars vary enormously in temperament."
+      }
+    ],
+    "relatedProducts": [
+      "oscar-fish-canister-filter-fluval-fx4",
+      "driftwood",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/oscar-fish-feeding-guide.mdx",
@@ -26679,6 +27319,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/platy-enrichment-guide.mdx",
+    "slug": "platy-enrichment-guide",
+    "title": "Platy Enrichment: Hardy Is Not the Same as Unaffected",
+    "seoTitle": "Platy Enrichment Guide",
+    "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive it. Surviving something is not evidence it was fine.",
+    "date": "2026-11-04",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Platy",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Livebearers"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/platy-enrichment.jpg",
+    "imageAlt": "A group of orange platies among dense planting near the surface of an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-04",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to platy welfare?",
+        "a": "Not on platies directly. The applicable evidence is the livebearer harassment literature, which found direct costs to females from constant male pursuit including energy expenditure, reduced foraging and increased vigilance."
+      },
+      {
+        "q": "What sex ratio should I keep?",
+        "a": "At least two to three females per male, and more females is better. Platy males are less relentless than guppy males but the same dynamic applies, and a male-heavy tank produces females that spend their time avoiding rather than feeding."
+      },
+      {
+        "q": "Are platies really that hardy?",
+        "a": "Yes, comparatively, and that is the problem. They tolerate small tanks, hard water, temperature swings and undercycled setups better than most community fish, which is exactly why they end up in all of them."
+      },
+      {
+        "q": "So what does a platy actually need?",
+        "a": "A group, a sex ratio that is not male-heavy, planting to break line of sight, and a cycled tank of a reasonable size. None of it is demanding, and none of it is what a hardy fish typically gets."
+      },
+      {
+        "q": "Do platies need to be in groups?",
+        "a": "They do better in them. Platies are peaceful and social, and a group of five or more spreads out any chasing rather than concentrating it, as well as producing more visible normal behaviour."
+      },
+      {
+        "q": "Will they breed?",
+        "a": "Constantly, if you keep both sexes. A mixed platy tank produces broods roughly monthly and the population outgrows the tank quickly. An all-female or all-male group avoids it."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "live-terrarium-plants",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/platy-feeding-guide.mdx",
@@ -32101,6 +32805,70 @@
     "sourceCount": 5
   },
   {
+    "path": "/content/guides/swordtail-enrichment-guide.mdx",
+    "slug": "swordtail-enrichment-guide",
+    "title": "Swordtail Enrichment: Two Males Is the Number That Causes Trouble",
+    "seoTitle": "Swordtail Enrichment Guide",
+    "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that reliably produces a loser.",
+    "date": "2026-11-04",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Swordtail",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Livebearers"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/swordtail-enrichment.jpg",
+    "imageAlt": "A male swordtail with a long sword extension swimming through open water past planting",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-04",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to swordtail welfare?",
+        "a": "Not on swordtails directly. The applicable evidence is the livebearer harassment literature, which documents costs to females from constant male pursuit: energy expenditure, reduced foraging and increased vigilance."
+      },
+      {
+        "q": "Why is two males the problem number?",
+        "a": "Because with two, all the competition lands on one fish. Male swordtails are more aggressive toward each other than guppies or platies are, and a single subordinate male with nowhere to go gets pursued relentlessly. One male, or enough males that it spreads, but not two."
+      },
+      {
+        "q": "What sex ratio should I keep?",
+        "a": "At least two to three females per male, and more is better. With swordtails the male-to-male question matters as much as the male-to-female one, which is not true of the other common livebearers."
+      },
+      {
+        "q": "How big a tank do they need?",
+        "a": "Longer than most livebearer advice suggests. Swordtails are the largest and most active of the common livebearers, strong swimmers that use horizontal distance, and they are also accomplished jumpers, so the tank needs a lid."
+      },
+      {
+        "q": "Do female swordtails ever grow swords?",
+        "a": "Occasionally. Older females sometimes develop a sword and male-like features, which is a well-known quirk of the species. It is not a health problem and it does surprise people."
+      },
+      {
+        "q": "What is the most common mistake?",
+        "a": "A small tank with two males in it. That combination concentrates aggression and gives the loser nowhere to go, and it is by far the most common way a swordtail tank goes wrong."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "live-terrarium-plants",
+      "hob-filter-aquaclear-70"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/swordtail-feeding-guide.mdx",
     "slug": "swordtail-feeding-guide",
     "title": "Swordtail Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -35622,6 +36390,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/zebra-danio-enrichment-guide.mdx",
+    "slug": "zebra-danio-enrichment-guide",
+    "title": "Zebra Danio Enrichment: The Most Studied Fish in the World Lives in a Bare Box",
+    "seoTitle": "Zebra Danio Enrichment Guide",
+    "excerpt": "Zebrafish larvae reared in enriched tanks survived at higher rates than those in bare ones, and adults from enriched tanks were less anxious in a strange environment.",
+    "date": "2026-11-03",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Zebra Danio",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Danios"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/zebra-danio-enrichment.jpg",
+    "imageAlt": "A group of zebra danios moving fast along the length of a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-03",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on zebra danios?",
+        "a": "More than on almost any other fish, because the zebra danio is the zebrafish, one of the most-used laboratory animals in the world. The relevant work looks at what happens when the standard bare laboratory tank gets plants and substrate added to it."
+      },
+      {
+        "q": "What did those studies find?",
+        "a": "Several things. Larvae reared in enriched tanks had significantly higher survivorship than larvae in bare tanks. Adults from enriched tanks showed lower anxiety-related behaviour when placed in a novel environment, and enriched fish did not show the cortisol increases that control fish did."
+      },
+      {
+        "q": "Is a bare tank actually harmful?",
+        "a": "The evidence points that way for this species, and the researchers' framing is worth noting: laboratory zebrafish are kept in bare tanks for husbandry convenience rather than because it suits the fish, and compromised welfare can distort experimental results."
+      },
+      {
+        "q": "How many should I keep?",
+        "a": "A proper group. Zebra danios are active shoaling fish and small groups produce more nipping and chasing directed at individuals. Eight or more, and more is better in a tank that supports it."
+      },
+      {
+        "q": "What tank shape suits them?",
+        "a": "Long. Zebra danios are fast, constantly moving fish that use horizontal distance, and a tall short tank wastes its volume on them. Length is the dimension that counts."
+      },
+      {
+        "q": "Are they really beginner fish?",
+        "a": "They are hardy and tolerant of a wide range of conditions, which is not the same as thriving. Hardiness is why they end up in undersized bare tanks, and it is exactly the situation the enrichment research argues against."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "live-terrarium-plants",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/zebra-danio-feeding-guide.mdx",

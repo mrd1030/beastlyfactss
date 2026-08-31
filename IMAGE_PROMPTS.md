@@ -848,3 +848,119 @@ and planting behind providing cover. Soft diffuse underwater lighting, clean mac
 shallow depth of field. The transparency should read clearly against the darker
 leaf litter. No hands, no people.
 ```
+
+### Enrichment guides, batch 11 (2026-11-03 to 11-05)
+
+Fish. Same rules: 3:2 at 1168x784, fish mid-behavior, show the enrichment being
+used rather than the tank standing empty. Clean underwater photography, no
+distracting equipment in frame unless the article is about it.
+
+#### neon-tetra-enrichment.jpg
+```
+A tight shoal of a dozen neon tetras moving together through the open middle of a
+densely planted aquarium, all facing the same way, blue and red stripes catching
+the light. Dense planting at the sides and back, tannin-tinted water, driftwood
+below. Soft subdued lighting rather than a bright tank. The size and cohesion of
+the group is the subject. No hands, no people.
+```
+
+#### angelfish-enrichment.jpg
+```
+A tall silver and black angelfish turning between vertical plant stems in a deep
+planted aquarium, long trailing fins fully extended, body upright and filling the
+vertical frame. Upright driftwood behind, open water to one side. Soft clean
+lighting. The height of the fish and the height of the tank should both read. No
+hands, no people.
+```
+
+#### zebra-danio-enrichment.jpg
+```
+A group of zebra danios in fast motion along the length of a long planted
+aquarium, bodies streaked with horizontal blue stripes, slight motion blur on the
+tails. Planting at the sides and back with a clear open lane through the middle.
+Bright clean lighting. Speed and horizontal distance are the subject. No hands, no
+people.
+```
+
+#### guppy-enrichment.jpg
+```
+Several female guppies resting among dense planting and floating plant roots, with
+one brightly coloured male displaying at the edge of frame, clearly separated from
+them by foliage. Soft warm lighting, planted freshwater aquarium. The cover
+between the females and the male is the point of the composition. No hands, no
+people.
+```
+
+#### corydoras-catfish-enrichment.jpg
+```
+A group of five or six corydoras catfish working a bed of fine pale sand, several
+with snouts buried and barbels spread, sand slightly disturbed around them. Broad
+plant leaves and driftwood behind. Bright clean lighting, shallow depth of field on
+the front fish. Sifting in progress, not fish sitting still. No hands, no people.
+```
+
+#### cardinal-tetra-enrichment.jpg
+```
+A shoal of cardinal tetras in tannin-stained tea-coloured water among submerged
+branches and brown leaf litter, the full-length red stripe glowing against the dark
+background. Dim shaded lighting, blackwater aesthetic, dense planting behind. The
+water colour is as much the subject as the fish. No hands, no people.
+```
+
+#### molly-enrichment.jpg
+```
+A black molly grazing algae from the surface of a large piece of driftwood, mouth
+against the wood, body angled down. Planted aquarium behind with more grazeable
+surfaces, a second molly working a plant leaf. Bright clean lighting. Grazing in
+progress is the subject. No hands, no people.
+```
+
+#### platy-enrichment.jpg
+```
+A group of orange and red platies among dense planting near the surface of a
+planted aquarium, spread across the frame rather than clustered, floating plant
+roots hanging down. Warm bright lighting, healthy green planting. A well-stocked
+ordinary tank done properly. No hands, no people.
+```
+
+#### swordtail-enrichment.jpg
+```
+A male swordtail with a long sword extension swimming through open water in a
+long planted tank, females visible further back among planting. Clear horizontal
+distance in the frame, planting breaking up the background. Bright clean lighting,
+shallow depth of field on the male. No hands, no people.
+```
+
+#### bristlenose-pleco-enrichment.jpg
+```
+A bristlenose pleco clamped to the surface of a large piece of driftwood, mouth
+rasping, bristles on the snout clearly visible, rasping marks on the wood. Dimly
+lit planted aquarium, cave visible in the background. Warm low lighting suited to
+a nocturnal fish, macro detail on the snout. No hands, no people.
+```
+
+#### discus-enrichment.jpg
+```
+A group of five or six discus hanging together in open water among tall plant
+stems and vertical driftwood, bodies broad and disc-shaped, patterns clearly
+visible. Dark background, soft even lighting, no bright hotspots. Calm and settled
+rather than darting. The group is the subject. No hands, no people.
+```
+
+#### oscar-fish-enrichment.jpg
+```
+A large oscar pushing substrate around the base of a piece of driftwood with its
+mouth, sand visibly disturbed and clouding slightly, a displaced stone nearby.
+Large sparsely aquascaped tank behind. Warm lighting, mottled orange and black
+markings. Active rearranging is the subject, not a fish posing. No hands, no
+people.
+```
+
+#### koi-enrichment.jpg
+```
+Several large koi rising together toward the surface of a deep planted pond,
+viewed slightly from above at an angle, white, orange and black patterns clear
+through the water. Depth visible below them, pond planting at the margins,
+dappled outdoor daylight. The size of the fish and the depth of the pond should
+both read. No hands, no people.
+```
