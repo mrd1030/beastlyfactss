@@ -305,6 +305,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1280,
     "height": 720
   },
+  "/assets/images/ackie-monitor-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/african-grey-parrot-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -360,6 +364,14 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/chameleon-hydration.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/chinchilla-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/cockatiel-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/cockatoo-feather-plucking.jpg": {
     "width": 1620,
@@ -469,11 +481,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1620,
     "height": 1080
   },
+  "/assets/images/jumping-spider-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/leopard-gecko-temperature.jpg": {
     "width": 784,
     "height": 1168
   },
   "/assets/images/leopard-gecko-vs-crested-gecko.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/madagascar-hissing-cockroach-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -486,6 +506,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 1080
   },
   "/assets/images/rat-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/red-footed-tortoise-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
