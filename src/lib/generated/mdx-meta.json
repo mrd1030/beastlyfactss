@@ -10889,6 +10889,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/degu-enrichment-guide.mdx",
+    "slug": "degu-enrichment-guide",
+    "title": "Degu Enrichment: The Dust Bath Is a Message Board",
+    "seoTitle": "Degu Enrichment Guide",
+    "excerpt": "Degus dust bathe more on sand a familiar animal has already used. It is scent marking as much as grooming, which changes how you should offer it.",
+    "date": "2026-10-28",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Degu",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Rodents"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/degu-enrichment.jpg",
+    "imageAlt": "Two degus rolling in a shallow sand bath inside a tall multi-level cage",
+    "emoji": "🐹",
+    "lastReviewed": "2026-10-28",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on degu behaviour?",
+        "a": "Yes, and more than most exotic pets, because degus are used as a research model for diabetes and Alzheimer's disease. The behavioural work most useful to a keeper is on dust bathing, which turns out to be social communication as well as coat care."
+      },
+      {
+        "q": "What did the dust bathing research find?",
+        "a": "Degus dust bathe at a higher rate on soil previously used by a familiar animal, and dust bathing is involved in communication during male-to-male interactions specifically. In wild colonies the bathing sites are marked with urine and anal gland secretions."
+      },
+      {
+        "q": "Does that change how I should offer a sand bath?",
+        "a": "It argues for offering it to the group rather than to one animal in isolation, and for not sterilising every trace between sessions when the same animals share it. It also means some soiling of the sand is the point rather than a failure."
+      },
+      {
+        "q": "Can degus be kept alone?",
+        "a": "No. They are colonial and highly social, and at least two should be kept together. Isolated degus are reported to become aggressive or to self-mutilate, and a solitary degu is a welfare problem rather than a simpler setup."
+      },
+      {
+        "q": "Are degus nocturnal?",
+        "a": "No, and this is one of the better things about them as pets. Degus are diurnal, so they are awake when you are, which makes the enrichment you provide something you will actually see used."
+      },
+      {
+        "q": "Why does the diet matter so much for a degu?",
+        "a": "They are extremely prone to diabetes and cannot process sugar properly, including fruit and many commercial treats. That constrains food-based enrichment more than for any other rodent on this site, so foraging has to be built on safe, low-sugar material."
+      }
+    ],
+    "relatedProducts": [
+      "bath-sand-supreme-science-selective",
+      "exercise-wheel-chinchilla",
+      "chew-chinchilla-mineral-lava-blocks"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/degu-feeding-guide.mdx",
     "slug": "degu-feeding-guide",
     "title": "Degu Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -13437,6 +13501,70 @@
     "sourceCount": 5
   },
   {
+    "path": "/content/guides/flying-squirrel-enrichment-guide.mdx",
+    "slug": "flying-squirrel-enrichment-guide",
+    "title": "Flying Squirrel Enrichment: A Rodent That Solved the Same Problem",
+    "seoTitle": "Flying Squirrel Enrichment Guide",
+    "excerpt": "A flying squirrel and a sugar glider are not related. They are a rodent and a marsupial that arrived at the same body plan, and they need almost the same enclosure.",
+    "date": "2026-10-29",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Flying Squirrel",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Exotic Pets"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/flying-squirrel-enrichment.jpg",
+    "imageAlt": "A southern flying squirrel clinging to a vertical branch at the top of a tall cage at night",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-10-29",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on flying squirrels?",
+        "a": "No. Nothing has been published on pet flying squirrel enrichment. The closest usable comparison is the sugar glider, which is not a relative at all: one is a rodent and one is a marsupial, and gliding evolved separately in each. Their captive requirements end up almost identical anyway."
+      },
+      {
+        "q": "Why is that a reasonable borrow if they are unrelated?",
+        "a": "Because convergent evolution produced the same problem and the same solution. Both are small nocturnal gliding mammals that live in trees, sleep in cavities, forage across a home range and are social. What a captive enclosure has to provide follows from that, not from taxonomy."
+      },
+      {
+        "q": "How tall should the cage be?",
+        "a": "As tall as you can manage, and filled. Height is the only dimension that lets a gliding animal do anything glide-like indoors, and a tall empty cage is worse than a shorter well-furnished one."
+      },
+      {
+        "q": "Should flying squirrels be kept in pairs?",
+        "a": "Yes. They are social and nest communally in the wild, sometimes in large huddles in cold weather. A single flying squirrel is a poorer setup, and same-sex pairs or small groups are the sensible default."
+      },
+      {
+        "q": "Are they nocturnal?",
+        "a": "Strongly, with large eyes built for it. They are active at night and sleep the day in a cavity, so most enrichment gets used while you are asleep and daytime handling means waking the animal."
+      },
+      {
+        "q": "What do they need to gnaw on?",
+        "a": "Plenty. They are rodents with continuously growing incisors, unlike sugar gliders, which is the one place the borrow breaks down. Untreated branches, nuts in shell and hard chews all need to be available constantly."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "climbing-branch-mopani-wood",
+      "ferret-hammock-niteangel-nap-sack"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/flying-squirrel-feeding-guide.mdx",
     "slug": "flying-squirrel-feeding-guide",
     "title": "Flying Squirrel Feeding: Diet, Schedule, and the Calcium Ratio That Prevents Paralysis",
@@ -14759,6 +14887,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/gerbil-enrichment-guide.mdx",
+    "slug": "gerbil-enrichment-guide",
+    "title": "Gerbil Enrichment: Deep Bedding Alone Does Not Stop the Digging",
+    "seoTitle": "Gerbil Enrichment Guide",
+    "excerpt": "Gerbils that grow up with a tunnel leading to a chamber do not develop stereotypic corner digging. Gerbils given sand alone still do. The distinction is the whole guide.",
+    "date": "2026-10-28",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Gerbil",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Rodents"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/gerbil-enrichment.jpg",
+    "imageAlt": "A gerbil emerging from a tunnel entrance in deep bedding, sand and chew sticks nearby",
+    "emoji": "🐹",
+    "lastReviewed": "2026-10-28",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on gerbils?",
+        "a": "Yes, and it is one of the best-known findings in small animal welfare. Wiedenmayer showed that stereotypic corner digging in gerbils develops when the animal has no burrow to dig toward, and that gerbils raised with an artificial burrow do not develop it."
+      },
+      {
+        "q": "What exactly counts as a burrow in that study?",
+        "a": "A tunnel with a chamber connected to it. That specific structure is the part that worked. Offering sand to dig in was far less effective, which is the detail most gerbil care advice leaves out."
+      },
+      {
+        "q": "Doesn't a bigger cage fix stereotypic digging?",
+        "a": "No, and that is one of the more striking parts of the work. Digging behaviour was not affected by cage size. The problem is not the amount of space, it is the absence of a goal for the digging to reach."
+      },
+      {
+        "q": "What is stereotypic corner digging?",
+        "a": "Repetitive digging at a fixed spot, usually a cage corner, that never achieves anything and continues regardless. It is a recognised welfare indicator rather than a quirk, and it is extremely common in pet gerbils."
+      },
+      {
+        "q": "Can it be fixed once it has started?",
+        "a": "It is much easier to prevent than to reverse, which is why the study focused on young animals. Adding a proper burrow to an established digger is still worth doing, and expect improvement rather than a switch being flipped."
+      },
+      {
+        "q": "Should gerbils be kept alone?",
+        "a": "No. They are social and should be kept in same-sex pairs or small groups, ideally littermates or animals introduced young. A solitary gerbil is a welfare problem, not a simpler setup."
+      }
+    ],
+    "relatedProducts": [
+      "aspen-shavings-substrate",
+      "small-pet-hideout-igloo",
+      "chew-guinea-pig-natural-sticks"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/gerbil-feeding-guide.mdx",
@@ -18443,6 +18635,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/hedgehog-enrichment-guide.mdx",
+    "slug": "hedgehog-enrichment-guide",
+    "title": "Hedgehog Enrichment: A Survey of Owners Found What Most Are Missing",
+    "seoTitle": "Hedgehog Enrichment Guide",
+    "excerpt": "In a survey of pygmy hedgehog owners, 84 percent had no hide, 68 percent housed them under half a square metre, and 17 percent provided no wheel. That is the checklist.",
+    "date": "2026-10-29",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Hedgehog",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Exotic Pets"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hedgehog-enrichment.jpg",
+    "imageAlt": "An African pygmy hedgehog running on a large solid wheel beside a fleece hide",
+    "emoji": "🦔",
+    "lastReviewed": "2026-10-29",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on hedgehog welfare?",
+        "a": "There is a 2024 study assessing owner investment in African pygmy hedgehog welfare across feeding, housing, enrichment, hygiene and health practice. It is a survey of what owners actually do rather than an enrichment experiment, and what it found is a useful list of common gaps."
+      },
+      {
+        "q": "What were the main gaps it found?",
+        "a": "84 percent of hedgehogs had no hiding house, 68 percent were housed in under half a square metre, and 17 percent had no wheel. Owners who had consulted a vet were more likely to wash the wheel daily."
+      },
+      {
+        "q": "Is a wheel really essential?",
+        "a": "It is the closest thing to essential in this species. Wild hedgehogs routinely cover five kilometres or more in a night foraging, and no pet enclosure provides that distance. A wheel is the only realistic substitute for that much locomotion."
+      },
+      {
+        "q": "What kind of wheel?",
+        "a": "Large, solid-surface and with a solid running track rather than mesh or rungs. Hedgehog feet and legs are easily injured by grid surfaces, and a wheel too small forces the spine into a curve. Expect to clean it daily, because they defecate while running."
+      },
+      {
+        "q": "Do hedgehogs need heat?",
+        "a": "Yes, and it is the most commonly missed requirement. They need consistent ambient warmth, and if they get too cold they can attempt hibernation, which is dangerous for a captive African pygmy hedgehog and can be fatal."
+      },
+      {
+        "q": "Should hedgehogs be kept together?",
+        "a": "No. African pygmy hedgehogs are solitary and adults kept together fight. Unlike most small mammals in this series, solo housing is the correct answer for this species rather than a compromise."
+      }
+    ],
+    "relatedProducts": [
+      "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
+      "small-pet-hideout-igloo",
+      "ceramic-heat-emitter-zoo-med-repticare-150w"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/hedgehog-feeding-guide.mdx",
@@ -23886,6 +24142,70 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/mouse-enrichment-guide.mdx",
+    "slug": "mouse-enrichment-guide",
+    "title": "Mouse Enrichment: Give Them Far More Nesting Material Than You Think",
+    "seoTitle": "Mouse Enrichment Guide",
+    "excerpt": "Mice at normal room temperature are cold. Research on nesting material found they need six to ten grams to build their way out of it, which is far more than most cages get.",
+    "date": "2026-10-28",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Mouse",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Rodents"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/mouse-enrichment.jpg",
+    "imageAlt": "A mouse inside a large domed nest of shredded paper, only its head visible at the entrance",
+    "emoji": "🐭",
+    "lastReviewed": "2026-10-28",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on mice?",
+        "a": "More than on almost any other pet on this site, because mice are the most-used laboratory animal in the world. The most useful thread for a pet keeper is Brianna Gaskill's work on nesting material and thermal comfort."
+      },
+      {
+        "q": "What did the nesting material research find?",
+        "a": "Mice housed at typical room temperatures of 20 to 24 degrees Celsius are below their lower critical temperature, which sits near 30. Given a choice they prefer 26 to 29 degrees. Provided with nesting material they build their way toward that instead, and the shift from seeking warmth to building a nest happens between six and ten grams of material."
+      },
+      {
+        "q": "How much nesting material should I actually give?",
+        "a": "No less than six grams, and up to ten if the room is cool. That is a lot more than a pinch of shredded paper, and it is one of the cheapest welfare improvements available for this species."
+      },
+      {
+        "q": "Can the nest tell me anything about my mouse?",
+        "a": "Yes. Nest quality is used as a welfare indicator in laboratories, and a sudden drop in nest building can flag illness, pain, thermal stress or aggression between cage mates. A mouse that stops building is worth a closer look."
+      },
+      {
+        "q": "Should I just heat the room instead?",
+        "a": "No. Giving the animal the material to solve its own thermal problem is better than fixing the temperature at one value, because it leaves the mouse with the choice. Nest building is also a behaviour worth having in its own right."
+      },
+      {
+        "q": "Can mice live alone?",
+        "a": "Females should not. They are social and do well in same-sex female groups. Adult males frequently fight badly enough that solitary housing is the usual answer for them, which is a real welfare compromise rather than a preference."
+      }
+    ],
+    "relatedProducts": [
+      "small-pet-paper-bedding",
+      "small-pet-hideout-igloo",
+      "chew-guinea-pig-natural-sticks"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/mouse-feeding-guide.mdx",
     "slug": "mouse-feeding-guide",
     "title": "What Do Pet Mice Eat? Diet, Portions, and Foods to Avoid",
@@ -26708,6 +27028,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/rabbit-enrichment-guide.mdx",
+    "slug": "rabbit-enrichment-guide",
+    "title": "Rabbit Enrichment: A Companion Beats Everything Else You Could Buy",
+    "seoTitle": "Rabbit Enrichment Guide",
+    "excerpt": "Solitary rabbits showed less behavioural diversity and more awake inactivity than paired ones. No toy on the market closes that gap.",
+    "date": "2026-10-28",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Rabbit",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Rabbits"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rabbit-enrichment.jpg",
+    "imageAlt": "Two rabbits grazing side by side in a large run beside a hay pile and a dig box",
+    "emoji": "🐰",
+    "lastReviewed": "2026-10-28",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there welfare research on pet rabbits specifically?",
+        "a": "Yes, and increasingly on pet rabbits rather than only laboratory or farmed ones. A study of privately owned rabbits found solitary animals expressed significantly less behavioural diversity and more awake inactivity than socially housed ones."
+      },
+      {
+        "q": "What is awake inactivity and why does it matter?",
+        "a": "Being awake but doing nothing. It is used as a welfare indicator because an animal with opportunities available generally takes some of them. A rabbit sitting awake and still for long stretches is not necessarily relaxed, and the paired rabbits in that study did it less."
+      },
+      {
+        "q": "Does run access actually change anything measurably?",
+        "a": "Yes. A study of pair-housed pet rabbits found run access, hutch size and time of day all affected welfare-relevant behaviour and faecal corticosterone. Space is not a comfort item, it shows up in the physiology."
+      },
+      {
+        "q": "How should I choose a companion rabbit?",
+        "a": "Neutered, opposite sex is the usual recommendation, and the research adds a detail worth knowing: a larger age difference was associated with a lower friendship index, so pairing animals closer in age is the better bet."
+      },
+      {
+        "q": "What is the most valuable free enrichment?",
+        "a": "Hay, and lots of it. It is the bulk of the diet, the main dental wear mechanism, and the foraging activity all at once. Feeding hay in a way that takes time to work through does more than any toy in the shop."
+      },
+      {
+        "q": "Do rabbits need to dig?",
+        "a": "They are burrowing animals and digging is normal behaviour rather than misbehaviour. A dig box filled with safe substrate gives them somewhere to do it that is not your carpet or the base of your fence."
+      }
+    ],
+    "relatedProducts": [
+      "timothy-hay-small-pets",
+      "rabbit-litter-box-pinvnby",
+      "chew-rabbit-bamboo-sticks"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/rabbit-feeding-guide.mdx",
@@ -29989,6 +30373,70 @@
       "hedgehog-wheel-exotic-nutrition-silent-runner-12in-wide",
       "sugar-glider-diet-exotic-nutrition-glider-complete",
       "small-pet-hideout-igloo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/sugar-glider-enrichment-guide.mdx",
+    "slug": "sugar-glider-enrichment-guide",
+    "title": "Sugar Glider Enrichment: Company, Height, and an Honest Caveat",
+    "seoTitle": "Sugar Glider Enrichment Guide",
+    "excerpt": "Everyone repeats that solitary sugar gliders self-mutilate. The study that actually looked found the solitary animals healthy. Both halves belong in the same guide.",
+    "date": "2026-10-29",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Sugar Glider",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Enrichment",
+      "Small Mammal Welfare",
+      "Exotic Pets"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sugar-glider-enrichment.jpg",
+    "imageAlt": "Two sugar gliders on a branch high in a tall cage beside a hanging fleece pouch",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-10-29",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do sugar gliders have to be kept in pairs?",
+        "a": "They are colonial in the wild and living in pairs or small groups is the strong veterinary and welfare recommendation, with solitary housing treated as a major risk factor for depression, self-mutilation and failure to thrive. It is worth knowing that a study establishing reference values in pet sugar gliders found the solitary animals in its sample healthy and did not observe those behaviours."
+      },
+      {
+        "q": "So which is it?",
+        "a": "Keep them in pairs or groups. The natural history is unambiguous, the veterinary consensus is unambiguous, and one sample of healthy solitary animals does not overturn either. It does mean the self-mutilation claim is repeated with more confidence than the published evidence supports, and this guide says so rather than pretending otherwise."
+      },
+      {
+        "q": "How much vertical space do they need?",
+        "a": "As much as you can give. They are gliding marsupials that travel between trees, and a cage's height is the only dimension that gives them anything resembling that. Tall, and filled with branches at varied heights so there are real routes to move between."
+      },
+      {
+        "q": "Are sugar gliders nocturnal?",
+        "a": "Strongly. They are active at night and sleep through the day in a pouch or nest box, which means most of the enrichment you provide gets used when you are asleep. It also means daytime handling is waking an animal up."
+      },
+      {
+        "q": "What is the most important feeding change?",
+        "a": "Making them work for it. Gliders forage for sap, nectar and insects across a home range, and a bowl of chopped food is the least interesting version. Foraging toys, food hidden at height and insects released into the cage all extend it."
+      },
+      {
+        "q": "Do they need a wheel?",
+        "a": "A large solid-surface wheel is well used by many gliders and is worth providing. Solid track only, since a tail or a gliding membrane caught in an open-rung wheel is a serious injury."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-cage-midwest-critter-nation-double",
+      "sugar-glider-bonding-pouch",
+      "exercise-wheel-sugar-glider"
     ],
     "factFile": false,
     "animal": null,

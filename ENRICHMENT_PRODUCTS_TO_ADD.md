@@ -96,3 +96,19 @@ an affiliate link, because buying something is the wrong answer:
 - **Scent trails and olfactory novelty.** Shed skin from another enclosure, a
   scent-marked object, prey dragged across the substrate. All free.
 - **Dig boxes.** A storage tub with damp substrate in it.
+
+## 7. Composable burrow tunnel system for small rodents
+The gerbil enrichment guide turns on a specific finding: Wiedenmayer showed that
+gerbils raised with a **tunnel connected to a chamber** do not develop stereotypic
+digging, and that tunnel-like dens were far more effective than sand alone. Deep
+bedding is not a substitute, so this is a mechanism the catalogue has no entry
+for. The igloo hideout covers the chamber half and nothing covers the tunnel.
+
+Also serves mouse, hamster and degu.
+
+- **ASIN** `B082FBW69F`
+- **Product** Niteangel Creative and Composable Hamster Tunnel, DIY burrow tube system
+- **Link** https://www.amazon.com/dp/B082FBW69F?tag=beastlyfacts-20
+- **Category** Small Mammal & Exotic Pet Gear
+- **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
+- **pets** `["small-mammals"]`

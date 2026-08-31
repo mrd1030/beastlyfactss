@@ -646,3 +646,70 @@ of a dug burrow and a low shelter visible behind, secure fencing at the far edge
 of frame. Bright dry outdoor daylight, arid palette. Scale should read large,
 photographed from low down. No hands, no people.
 ```
+
+### Enrichment guides, batch 8 (2026-10-28 to 10-29)
+
+Small mammals. Same rules: 3:2 at 1168x784, animal mid-behavior, show the
+enrichment being used rather than the enclosure standing empty.
+
+#### gerbil-enrichment.jpg
+```
+A gerbil emerging head-first from a tunnel entrance in deep aspen bedding, the
+tunnel mouth clearly holding its shape and leading down out of frame. Bedding
+piled several inches deep and visibly excavated, chew sticks and a partly buried
+hideout nearby. Warm bright lighting, shallow depth of field on the gerbil's
+face. The burrow structure has to read clearly. No hands, no people.
+```
+
+#### mouse-enrichment.jpg
+```
+A mouse looking out from the entrance of a large domed nest built from shredded
+white and brown paper, only the head and one forepaw visible. The nest should be
+substantial and obviously constructed, filling much of the frame. Soft warm
+lighting, cardboard tube and chew stick visible at the edge. The size of the nest
+is the subject. No hands, no people.
+```
+
+#### rabbit-enrichment.jpg
+```
+Two rabbits side by side in a large outdoor-style run, one grazing and one
+sitting up alert, bodies close together. A generous pile of timothy hay, a
+cardboard tunnel and a low platform in the background. Bright natural daylight,
+open space visible beyond them. The pairing and the space should both read
+clearly. No hands, no people.
+```
+
+#### degu-enrichment.jpg
+```
+Two degus mid-roll in a shallow tray of pale bathing sand, sand visibly kicked up
+around them, one on its side. Tall multi-level cage with solid wooden shelves and
+branches behind. Bright daylight, since degus are diurnal. Warm brown fur against
+pale sand, motion in the dust. No hands, no people.
+```
+
+#### hedgehog-enrichment.jpg
+```
+An African pygmy hedgehog running on a large solid-surface wheel at night, spines
+flattened and legs mid-stride, wheel showing motion blur. A fleece hide and
+snuggle sack visible beside it on a deep-floored enclosure. Warm low lighting
+suited to a nocturnal animal, shallow depth of field. The wheel in use is the
+subject. No hands, no people.
+```
+
+#### sugar-glider-enrichment.jpg
+```
+Two sugar gliders on a branch high in a tall cage at night, one gripping vertical
+and one reaching across a gap, large dark eyes catching the light. A hanging
+fleece pouch and further branches at varied heights behind them. Cool dim
+lighting, grey fur with the dark dorsal stripe visible. Height and the pair both
+have to read. No hands, no people.
+```
+
+#### flying-squirrel-enrichment.jpg
+```
+A southern flying squirrel clinging to a vertical branch near the top of a tall
+cage at night, body flattened and huge dark eyes forward, loose skin of the
+patagium visible along the flank. Branches and ropes spanning gaps behind it, a
+nest box mounted high. Cool dim night lighting, soft grey-brown fur. The gliding
+membrane should be visible. No hands, no people.
+```
