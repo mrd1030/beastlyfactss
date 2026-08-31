@@ -215,3 +215,78 @@ and matter of fact, never comic.
 2. Log anything from Wikimedia Commons in `IMAGE_CREDITS.md` with author and
    license. Adobe Stock, generated and Canva images are not tracked there.
 3. Run `node scripts/check-images.mjs`.
+
+---
+
+## Enrichment guides, batch 1 (2026-10-14 to 10-15)
+
+Six anchor guides, the ones with direct published studies behind them. All 3:2
+at 1168x784, same as the pass above, and installed at that size rather than
+upscaled. House rule for this set: **show the enrichment being used, not the
+enclosure standing empty.** An animal mid-behavior is the whole argument these
+articles make.
+
+Filenames go in `public/assets/images/` and must match the frontmatter exactly.
+
+### ball-python-enrichment.jpg
+```
+A ball python in a large, heavily furnished bioactive terrarium, mid-movement
+across the floor with the front third of its body raised and braced against a
+thick horizontal cork branch. Deep dark substrate with scattered leaf litter,
+live pothos and bromeliads breaking up the space, a wide shallow water basin
+large enough for the snake to enter, cork bark tubes at both ends. Warm low
+side-lighting, shallow depth of field, photographed slightly above eye level.
+Naturalistic and lived-in, not a showroom setup. No hands, no people.
+```
+
+### corn-snake-enrichment.jpg
+```
+An orange and red corn snake stretched out almost fully along a long branch
+spanning a wide planted terrarium, body extended rather than coiled. Enclosure
+clearly much longer than the snake, deep substrate, leaf litter, cork flats and
+dense low planting breaking the floor into cover. Soft daylight from one side,
+shallow depth of field on the head, the length of the body receding into the
+enclosure. Emphasize horizontal space and the fully extended posture.
+No hands, no people.
+```
+
+### hamster-enrichment.jpg
+```
+A Syrian hamster emerging head-first from a burrow entrance it has dug in very
+deep bedding, cross-section not visible, viewed from just above substrate level
+so the depth of the bedding dominates the frame. Thick layered aspen and paper
+bedding piled high, scattered seed and a few chew items on the surface, a large
+solid-surface wheel out of focus behind. Warm domestic light, shallow depth of
+field on the hamster's face. The bedding depth is the subject.
+No hands, no people, no wire bars in focus.
+```
+
+### african-grey-parrot-enrichment.jpg
+```
+An African grey parrot gripping a wooden foraging toy with one foot, actively
+working a piece of food out of a drilled compartment with its beak, wood
+shavings and shredded palm scattered below. Perched on a natural apple-wood
+branch among perches of visibly different diameters. Neutral soft studio-daylight
+background, shallow depth of field, close enough to read the concentration in the
+eye. The bird is working, not posing. No cage bars in the foreground, no people.
+```
+
+### betta-fish-enrichment.jpg
+```
+A male betta with long flowing fins swimming in open water through a densely
+planted aquarium, broad-leaved plants and fine-leaved stems filling the
+background, a piece of driftwood breaking the frame diagonally. Slightly tannin
+stained water, soft top-down light, dark background. The fish is out in the open
+with cover clearly available behind it. Shallow depth of field on the fish.
+No mirror, no bowl, no plastic ornaments, no people.
+```
+
+### hermit-crab-enrichment.jpg
+```
+Two or three land hermit crabs on deep damp sand-and-coco substrate, one crab
+actively inspecting an empty shell with its claws while six or seven other empty
+shells of clearly different sizes and openings lie scattered nearby. A piece of
+cork and a climbing branch at the edge of frame. Warm humid light, shallow depth
+of field on the inspecting crab. Natural unpainted shells only. The act of
+choosing is the subject. No hands, no people.
+```

@@ -28,6 +28,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Technical Notes & Commands
 - Always Read a file before making changes to it.
+- "Research" means web search with real, verifiable sources. Never write research-shaped content from memory, and never hand me citations flagged as unverified. Max 4 source URLs per article.
 - Never fetch photos or source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
 - Content pipeline order: matrix → legal guide → encyclopedia/Beastfile → care guides.

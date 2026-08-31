@@ -838,6 +838,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/african-grey-parrot-enrichment-guide.mdx",
+    "slug": "african-grey-parrot-enrichment-guide",
+    "title": "African Grey Enrichment: Foraging Is the One With Real Evidence",
+    "seoTitle": "African Grey Parrot Enrichment Guide",
+    "excerpt": "Eighteen plucking African greys were given food in pipe feeders instead of bowls. Foraging enrichment is the closest thing to a treatment effect in exotic pet welfare.",
+    "date": "2026-10-15",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "African Grey Parrot",
+      "Enrichment",
+      "Care Tips",
+      "Bird Welfare",
+      "Foraging",
+      "Feather Plucking"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/african-grey-parrot-enrichment.jpg",
+    "imageAlt": "An African grey parrot working food out of a wooden foraging toy",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-15",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does foraging enrichment actually stop feather plucking?",
+        "a": "It has the strongest evidence of anything in this field. Lumeij and Hommers ran 18 feather-plucking African greys in a crossover design where the experimental group received food in pipe feeders and controls got a bowl plus two empty pipe feeders, scored with a ten-point plumage system. In Amazon parrots, Meehan, Millam and Mench found foraging opportunity both prevented and reduced psychogenic feather picking in young birds, and foraging enrichment was preferred over plastic toys."
+      },
+      {
+        "q": "Why is a food bowl a problem?",
+        "a": "Because it removes the activity the bird is built around. In conventional captive settings, food offered in a bowl results in foraging times of well under an hour a day, leaving most of the waking day unoccupied. Abnormal repetitive behaviors, including oral stereotypies and feather destruction, fill that gap."
+      },
+      {
+        "q": "How much of the diet should be delivered through foraging?",
+        "a": "As much as the bird will reliably work for while still eating enough. Start by moving part of the ration into foraging devices and watch intake, then increase difficulty as the bird gets competent. A bird that gives up and loses weight has been asked for too much too fast."
+      },
+      {
+        "q": "Do perches matter or is that just husbandry?",
+        "a": "Both. A cage of identical dowels puts the same pressure on the same points of the foot all day and gives the bird no reason to move between locations. Varied diameters and natural materials are a foot health intervention and a choice intervention at once."
+      },
+      {
+        "q": "Will enrichment fix an established plucker?",
+        "a": "It can help and it has been studied as a treatment, but plucking has medical causes too, and a bird that has started should be seen by an avian vet before anyone assumes it is behavioral. Enrichment is part of the answer, not a substitute for a diagnosis."
+      },
+      {
+        "q": "Is an African grey a reasonable first parrot?",
+        "a": "For most people, no. This is a long-lived, highly intelligent species with a documented vulnerability to feather-damaging behavior when under-occupied, and the enrichment workload is a daily commitment rather than a one-time purchase."
+      }
+    ],
+    "relatedProducts": [
+      "cockatoo-foraging-toys-large-parrot",
+      "bird-toy-kyouki-foraging-box",
+      "bird-perch-czwestc-8pc-apple-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/african-grey-parrot-feeding-guide.mdx",
     "slug": "african-grey-parrot-feeding-guide",
     "title": "African Grey Parrot Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -2675,6 +2739,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/ball-python-enrichment-guide.mdx",
+    "slug": "ball-python-enrichment-guide",
+    "title": "Ball Python Enrichment: What 35 Snakes in a Study Actually Showed",
+    "seoTitle": "Ball Python Enrichment Guide",
+    "excerpt": "The rack argument has an actual peer-reviewed answer. Researchers compared 35 ball pythons in racks against furnished terrariums, and the conclusion was not ambiguous.",
+    "date": "2026-10-14",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ball Python",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ball-python-enrichment.jpg",
+    "imageAlt": "A ball python exploring a furnished terrarium with cork bark, climbing branch and live planting",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-14",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there actual research on ball python enrichment?",
+        "a": "Yes. A study published in PLOS ONE compared 35 ball pythons housed in a conventional rack system against furnished terrariums containing substrate, hiding places, climbing structure, a water basin large enough to bathe in, elevated basking spots and living plants. The authors concluded that from a welfare standpoint, rack systems are not an alternative to a furnished terrarium."
+      },
+      {
+        "q": "Do ball pythons actually climb?",
+        "a": "Yes, more than their reputation suggests. The furnished terrariums in the housing study deliberately included climbing opportunities, and elevated structure is one of the things a rack physically cannot provide. Sturdy branches and cork placed so the snake can brace its coils against something are used far more often than most keepers expect."
+      },
+      {
+        "q": "Does my ball python need a water bowl big enough to soak in?",
+        "a": "It is worth providing. The furnished terrariums in the study included a water basin for bathing rather than just a drinking dish. Soaking supports shedding and hydration, and it is a behavior a snake will choose for itself when the option exists."
+      },
+      {
+        "q": "Is enrichment more important than temperature and humidity?",
+        "a": "No, and no study claims otherwise. A thermal gradient, correct humidity and secure hides are the foundation. Enrichment is what you add on top of a setup that already works, not a substitute for one that does not."
+      },
+      {
+        "q": "Will more clutter stress my ball python out?",
+        "a": "The opposite is the more common problem. Ball pythons are ambush predators that spend a lot of time concealed, and a cluttered enclosure gives them cover everywhere rather than only inside a hide. A snake with cover across the whole floor will use more of it, not less."
+      },
+      {
+        "q": "How often should I rearrange the enclosure?",
+        "a": "Occasionally, and not as a substitute for the fundamentals. Novelty rotation is the lowest-value item on this list. Adding a new piece of cork or shifting a branch every few weeks is reasonable, tearing the whole enclosure down every week is not."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "climbing-branch-mopani-wood",
+      "large-soakable-water-dish"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/ball-python-feeding-guide.mdx",
     "slug": "ball-python-feeding-guide",
     "title": "Ball Python Feeding: Everything You Need to Know",
@@ -3577,6 +3705,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/betta-fish-enrichment-guide.mdx",
+    "slug": "betta-fish-enrichment-guide",
+    "title": "Betta Enrichment: Three Studies, and a Mirror Is Not a Toy",
+    "seoTitle": "Betta Fish Enrichment Guide",
+    "excerpt": "Bettas are the best-studied fish in the hobby, and the findings are awkward for two things everyone does: tiny tanks and mirror sessions.",
+    "date": "2026-10-15",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Betta Fish",
+      "Enrichment",
+      "Care Tips",
+      "Fish Welfare",
+      "Planted Tank",
+      "Aquarium"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/betta-fish-enrichment.jpg",
+    "imageAlt": "A betta swimming through dense live planting in a furnished aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-15",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there real research on betta enrichment?",
+        "a": "More than for any other fish commonly kept. One study found space and environmental enrichment both affect behaviour in Betta splendens, with restricted space increasing hiding and inactivity. A second examined tank size and furnishings specifically. A third found bettas in aquaria planted with Sagittaria subulata showed the longest average active swimming time and fewer negative behaviours."
+      },
+      {
+        "q": "Are mirrors good enrichment for a betta?",
+        "a": "Mirrors are used in research as a stress test, not as a toy. The mirror-image test is a standard way to provoke and then measure a response, with cortisol used to assess it. Brief exposure is sometimes suggested as exercise, but the honest framing is that you are triggering a threat display, so it belongs nowhere near the top of an enrichment list."
+      },
+      {
+        "q": "Won't more plants make my betta hide more?",
+        "a": "The research points the other way. Restricted, bare conditions increased hiding and inactivity, while planted tanks produced the most active swimming. Cover appears to make a betta more willing to use open water, not less."
+      },
+      {
+        "q": "Can bettas ever be housed together?",
+        "a": "Under specific conditions, yes, which contradicts the standard advice. Research indicates bettas of either sex can be housed in groups with lower aggression if they have been housed in groups since hatching under enriched conditions, and a separate study found the timing of isolation from an enriched environment determines later aggression and sexual maturity. This is not a recommendation to combine two adult males bought separately."
+      },
+      {
+        "q": "How big does the tank need to be?",
+        "a": "Bigger than the containers bettas are sold in. Larger tanks promoted natural, active behaviour in the space studies, and restricted space produced the hiding and inactivity pattern. Volume is the first enrichment decision, before anything goes inside it."
+      },
+      {
+        "q": "Do live plants beat artificial ones?",
+        "a": "The study that measured swimming activity used live Sagittaria subulata, and live planting does a second job by affecting water quality and the tank's microbial community. Artificial plants still provide cover, but choose soft ones, since stiff plastic damages betta fins."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/betta-fish-feeding-guide.mdx",
@@ -8860,6 +9051,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 1
+  },
+  {
+    "path": "/content/guides/corn-snake-enrichment-guide.mdx",
+    "slug": "corn-snake-enrichment-guide",
+    "title": "Corn Snake Enrichment: The Species With the Most Research Behind It",
+    "seoTitle": "Corn Snake Enrichment Guide",
+    "excerpt": "Given an enclosure longer than their own body, corn snakes stretch all the way out and prefer it. That single result kills the oldest myth in snake keeping.",
+    "date": "2026-10-14",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Corn Snake",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/corn-snake-enrichment.jpg",
+    "imageAlt": "A corn snake stretched out across a branch in a planted enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-14",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do corn snakes really prefer a bigger enclosure?",
+        "a": "Yes, and it has been tested. Hoehfurtner and colleagues housed corn snakes in enclosures either two thirds of their body length or longer than their body length. Given the opportunity to stretch out fully, the snakes did so, and they showed a clear preference for the larger enclosure. The authors recommend enclosures that allow a snake to stretch."
+      },
+      {
+        "q": "Is a bigger tank actually enrichment, or just better housing?",
+        "a": "For this species the research treats it as both. Floor space is what makes stretching, exploring and using multiple microclimates possible at all, so it functions as the enabling condition for almost every other enrichment item rather than as a separate category."
+      },
+      {
+        "q": "Does enrichment change anything measurable in corn snakes?",
+        "a": "A separate 2021 study found that environmental enrichment affected corn snakes' ability to discriminate between familiar and unfamiliar human odours, which is a cognitive outcome rather than just an activity count. Earlier work by Almli and Burghardt on ratsnakes, the group corn snakes belong to, found enriched housing altered their behavioural profile and performance on problem solving and feeding tasks."
+      },
+      {
+        "q": "Do corn snakes climb?",
+        "a": "Readily. They are semi-arboreal in the wild and will use branches, cork and any stable elevated structure you provide. A tall enclosure is less useful than a long one, but adding height on top of adequate floor space is well used."
+      },
+      {
+        "q": "What is the lowest-effort enrichment that actually works?",
+        "a": "Scent. Corn snakes navigate chemically, so a shed skin from another enclosure, a scent-marked object, or dragging prey across the substrate before offering it gives them something to investigate with their primary sense. It costs nothing."
+      },
+      {
+        "q": "Will a hiding snake in a large enclosure be stressed?",
+        "a": "Not if the enclosure has cover throughout. The mistake is giving a snake more space without giving it more places to be concealed, which produces an animal that uses only the two hides. Clutter the whole floor and the space gets used."
+      }
+    ],
+    "relatedProducts": [
+      "climbing-branch-mopani-wood",
+      "cork-bark-round-hide",
+      "pvc-enclosure-4x2x2"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/corn-snake-feeding-guide.mdx",
@@ -16653,6 +16908,69 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/hamster-enrichment-guide.mdx",
+    "slug": "hamster-enrichment-guide",
+    "title": "Hamster Enrichment: The Bedding Depth Study Everyone Should Know",
+    "seoTitle": "Hamster Enrichment Guide",
+    "excerpt": "Forty-five hamsters, three bedding depths, one stereotypy. At 10 cm they gnawed the bars. At 80 cm, wire-gnawing was not observed at all.",
+    "date": "2026-10-14",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Hamster",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Welfare",
+      "Bedding"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hamster-enrichment.jpg",
+    "imageAlt": "A hamster emerging from a deep burrow it has dug in thick bedding",
+    "emoji": "🐹",
+    "lastReviewed": "2026-10-14",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How deep should hamster bedding actually be?",
+        "a": "Deeper than almost anything sold as a starter kit. Hauzenberger and colleagues gave 45 golden hamsters either 80, 40 or 10 cm of wood shavings. Every hamster with 40 cm or more constructed a burrow and used it. Hamsters given only 10 cm showed significantly more wire-gnawing and higher wheel activity. In the 80 cm group, wire-gnawing was not observed during the study at all."
+      },
+      {
+        "q": "What does bar-chewing mean in a hamster?",
+        "a": "Wire-gnawing is used as a standard welfare indicator in small rodents, which is exactly why the bedding study measured it. A hamster chewing the bars is not bored in a vague sense, it is displaying a behavior that decreases when the animal can burrow properly."
+      },
+      {
+        "q": "Is a wheel enrichment or is it a symptom?",
+        "a": "Both, and the study is a useful caution. Hamsters on shallow bedding showed higher wheel activity as well as more bar-chewing, so unusually heavy wheel use can accompany a poor setup rather than proving a good one. A correctly sized solid wheel is still necessary, it just is not sufficient."
+      },
+      {
+        "q": "What size wheel does a hamster need?",
+        "a": "Large enough that the back stays flat rather than curved while running, and solid-surfaced rather than wire or mesh, which causes foot injuries. For a Syrian, that generally means a wheel measured in inches rather than the small ones bundled with starter cages."
+      },
+      {
+        "q": "Should hamsters be housed together?",
+        "a": "Syrians are solitary and should be housed alone. This is one of the few species on this site where group housing is the wrong answer, and it is worth stating plainly because so much enrichment advice defaults to companionship."
+      },
+      {
+        "q": "Are toys and tunnels worth it?",
+        "a": "Yes, as an addition, not as a replacement. Tunnels and connected cover encourage a prey animal to cross open ground and use more of its enclosure. But if bedding is shallow, no amount of accessories addresses the behavior the study measured."
+      }
+    ],
+    "relatedProducts": [
+      "aspen-shavings-substrate",
+      "hamster-wheel-niteangel-super-silent-10in",
+      "small-pet-paper-bedding"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/hamster-feeding-guide.mdx",
     "slug": "hamster-feeding-guide",
     "title": "Hamster Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -17470,6 +17788,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/hermit-crab-enrichment-guide.mdx",
+    "slug": "hermit-crab-enrichment-guide",
+    "title": "Hermit Crab Enrichment: Shells Are a Welfare Need, Not Decoration",
+    "seoTitle": "Hermit Crab Enrichment Guide",
+    "excerpt": "A hermit crab will abandon the shell keeping it alive to escape a shock, and how much shock it takes depends on how good the shell is. That is a motivational trade-off, and it is why shell choice is not decor.",
+    "date": "2026-10-15",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Hermit Crab",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Welfare",
+      "Shells",
+      "Substrate"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/hermit-crab-enrichment.jpg",
+    "imageAlt": "Land hermit crabs among a scattered selection of empty shells in varied sizes",
+    "emoji": "🦀",
+    "lastReviewed": "2026-10-15",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many spare shells should a hermit crab have?",
+        "a": "Several per crab, across a range of sizes and openings, not one spare. The research on shell assessment shows crabs evaluate and compare shells rather than simply occupying whatever is available, and under-supplying shells in a group produces real competition rather than polite waiting."
+      },
+      {
+        "q": "Why is shell choice treated as a welfare issue rather than decoration?",
+        "a": "Because of what crabs will trade for a shell. Elwood and Appel gave hermit crabs small shocks inside their shells and found they would abandon the shell that keeps them alive in order to escape, with the shock strength required depending partly on how much they valued the shell they were in compared with what else was available. That is a motivational trade-off, which is the standard evidence bar for something beyond a reflex."
+      },
+      {
+        "q": "How deep does hermit crab substrate need to be?",
+        "a": "Deep enough to bury completely and moult underground, which for most keepers means several times the height of the largest crab. Moulting happens buried, and a crab that cannot bury properly is at real risk. This is functional husbandry rather than enrichment, but it outranks everything called enrichment."
+      },
+      {
+        "q": "Do hermit crabs climb?",
+        "a": "Yes, land hermit crabs climb readily and will use branches, cork and mesh. Vertical structure adds usable space to an enclosure that otherwise only has a floor, and climbing is one of the more visible natural behaviors they show in captivity."
+      },
+      {
+        "q": "Is the pain research settled?",
+        "a": "No, and the guide should say so. Elwood published a 2022 paper on hermit crabs, shells and sentience, and Briffa published a commentary disagreeing, with Elwood responding again. Showing that exchange is more honest than picking a side, and the practical husbandry advice is the same either way."
+      },
+      {
+        "q": "Should hermit crabs be kept alone?",
+        "a": "No. They are social in the wild and are usually kept in groups, which makes shell supply more important rather than less, since a group with too few shells is a group competing for them."
+      }
+    ],
+    "relatedProducts": [
+      "hermit-crab-shells-natural-12pk",
+      "substrate-hermit-crab-flukers-sand-coco",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/hermit-crab-handling-guide.mdx",

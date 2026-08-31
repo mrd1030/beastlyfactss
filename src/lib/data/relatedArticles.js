@@ -3,7 +3,7 @@
 // lets GuideDetail.jsx surface them as further reading instead of leaving
 // them discoverable only via the blog list/search.
 export const RELATED_ARTICLES = {
-  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-cost-guide', 'betta-fish-handling-guide', 'betta-fish-health-issues-guide', 'betta-fish-tank-setup-guide', 'betta-fish-feeding-guide'],
+  'betta-fish': ['betta-fish-water-parameters-guide', 'betta-fish-cost-guide', 'betta-fish-handling-guide', 'betta-fish-health-issues-guide', 'betta-fish-tank-setup-guide', 'betta-fish-feeding-guide', 'betta-fish-enrichment-guide'],
   'budgie': ['budgie-cere-color-guide', 'budgie-cost-guide', 'budgie-handling-guide', 'budgie-health-issues-guide', 'budgie-tank-setup-guide', 'budgie-enrichment-guide'],
   'cockatiel': ['cockatiel-cost-guide', 'cockatiel-handling-guide', 'cockatiel-health-issues-guide', 'cockatiel-tank-setup-guide', 'cockatiel-feeding-guide'],
   'veiled-chameleon': ['chameleon-hydration-drippers-misters-fogging', 'veiled-chameleon-cost-guide', 'veiled-chameleon-handling-guide', 'veiled-chameleon-health-issues-guide', 'veiled-chameleon-tank-setup-guide'],
@@ -11,13 +11,13 @@ export const RELATED_ARTICLES = {
   'ferret': ['ferret-adrenal-disease-guide', 'ferret-legal-guide', 'ferret-cost-guide', 'ferret-handling-guide', 'ferret-health-issues-guide', 'ferret-tank-setup-guide', 'ferret-feeding-guide'],
   'goldfish': ['goldfish-tank-size-bowl-myth', 'goldfish-cost-guide', 'goldfish-handling-guide', 'goldfish-health-issues-guide', 'goldfish-tank-setup-guide', 'goldfish-feeding-guide', 'goldfish-enrichment-guide'],
   'tarantula': ['invertebrate-molting-guide', 'tarantula-cost-guide', 'tarantula-handling-guide', 'tarantula-health-issues-guide', 'tarantula-tank-setup-guide', 'tarantula-feeding-guide'],
-  'hermit-crab': ['invertebrate-molting-guide', 'hermit-crab-cost-guide', 'hermit-crab-handling-guide', 'hermit-crab-health-issues-guide', 'hermit-crab-tank-setup-guide'],
+  'hermit-crab': ['invertebrate-molting-guide', 'hermit-crab-cost-guide', 'hermit-crab-handling-guide', 'hermit-crab-health-issues-guide', 'hermit-crab-tank-setup-guide', 'hermit-crab-enrichment-guide'],
   'axolotl': ['axolotl-legal-guide', 'axolotl-cost-guide', 'axolotl-handling-guide', 'axolotl-health-issues-guide', 'axolotl-tank-setup-guide', 'axolotl-enrichment-guide'],
   'chinchilla': ['chinchilla-legal-guide', 'chinchilla-cost-guide', 'chinchilla-handling-guide', 'chinchilla-health-issues-guide', 'chinchilla-tank-setup-guide', 'chinchilla-feeding-guide'],
   'praying-mantis': ['praying-mantis-ootheca-guide', 'praying-mantis-cost-guide', 'praying-mantis-handling-guide', 'praying-mantis-health-issues-guide', 'praying-mantis-tank-setup-guide'],
   'rabbit': ['rabbit-gi-stasis-guide', 'rabbit-cost-guide', 'rabbit-handling-guide', 'rabbit-health-issues-guide', 'rabbit-tank-setup-guide', 'rabbit-feeding-guide'],
-  'ball-python': ['snake-brumation-guide', 'ball-python-legal-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide'],
-  'corn-snake': ['snake-brumation-guide', 'corn-snake-cost-guide', 'corn-snake-handling-guide', 'corn-snake-health-issues-guide', 'corn-snake-tank-setup-guide', 'corn-snake-feeding-guide'],
+  'ball-python': ['snake-brumation-guide', 'ball-python-legal-guide', 'ball-python-cost-guide', 'ball-python-handling-guide', 'ball-python-health-issues-guide', 'ball-python-tank-setup-guide', 'ball-python-enrichment-guide'],
+  'corn-snake': ['snake-brumation-guide', 'corn-snake-cost-guide', 'corn-snake-handling-guide', 'corn-snake-health-issues-guide', 'corn-snake-tank-setup-guide', 'corn-snake-feeding-guide', 'corn-snake-enrichment-guide'],
   // Dogs and cats. Unlike the species above, these guides have no standard
   // deep-dive quintet to auto-detect, so without an entry here a breed page
   // links to none of the cross-breed condition hubs and the hubs stay
@@ -48,7 +48,7 @@ export const RELATED_ARTICLES = {
   'cat-scottish-fold': ['conformation-breeding-laws-guide', 'pet-dna-test-results-guide', 'inherited-eye-disease-dogs-cats-guide', 'feline-kidney-disease-ckd-pkd-guide', 'cardiomyopathy-in-cats-and-dogs-guide', 'pet-obesity-body-condition-guide'],
   'cat-siamese': ['pet-dna-test-results-guide', 'inherited-eye-disease-dogs-cats-guide', 'feline-kidney-disease-ckd-pkd-guide', 'periodontal-dental-disease-guide', 'why-cats-need-mental-enrichment-and-how-boredom-can-break-them', 'when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you'],
   'cat-sphynx': ['conformation-breeding-laws-guide', 'pet-dna-test-results-guide', 'inherited-eye-disease-dogs-cats-guide', 'cardiomyopathy-in-cats-and-dogs-guide', 'periodontal-dental-disease-guide', 'why-cats-need-mental-enrichment-and-how-boredom-can-break-them', 'when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you'],
-  'hamster': ['hamster-cost-guide', 'hamster-handling-guide', 'hamster-health-issues-guide', 'hamster-tank-setup-guide', 'hamster-feeding-guide'],
+  'hamster': ['hamster-cost-guide', 'hamster-handling-guide', 'hamster-health-issues-guide', 'hamster-tank-setup-guide', 'hamster-feeding-guide', 'hamster-enrichment-guide'],
   'guinea-pig': ['guinea-pig-scurvy-vitamin-c-guide', 'guinea-pig-cost-guide', 'guinea-pig-handling-guide', 'guinea-pig-health-issues-guide', 'guinea-pig-tank-setup-guide', 'guinea-pig-feeding-guide', 'guinea-pig-enrichment-guide'],
   'degu': ['degu-gerbil-overview', 'degu-cost-guide', 'degu-handling-guide', 'degu-health-issues-guide', 'degu-tank-setup-guide'],
   'gerbil': ['degu-gerbil-overview', 'gerbil-cost-guide', 'gerbil-handling-guide', 'gerbil-health-issues-guide', 'gerbil-tank-setup-guide'],
@@ -79,7 +79,7 @@ export const RELATED_ARTICLES = {
   'angelfish': ['angelfish-cost-guide', 'angelfish-handling-guide', 'angelfish-health-issues-guide', 'angelfish-tank-setup-guide', 'angelfish-feeding-guide'],
   'uromastyx': ['uromastyx-cost-guide', 'uromastyx-handling-guide', 'uromastyx-health-issues-guide', 'uromastyx-tank-setup-guide'],
   'tokay-gecko': ['tokay-gecko-cost-guide', 'tokay-gecko-handling-guide', 'tokay-gecko-health-issues-guide', 'tokay-gecko-tank-setup-guide'],
-  'african-grey': ['african-grey-parrot-legal-guide', 'african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide'],
+  'african-grey': ['african-grey-parrot-legal-guide', 'african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide', 'african-grey-parrot-enrichment-guide'],
   'jumping-spider': ['invertebrate-molting-guide', 'jumping-spider-feeding-guide', 'jumping-spider-cost-guide', 'jumping-spider-handling-guide', 'jumping-spider-health-issues-guide', 'jumping-spider-tank-setup-guide'],
   'savannah-monitor': ['savannah-monitor-cost-guide', 'savannah-monitor-handling-guide', 'savannah-monitor-health-issues-guide', 'savannah-monitor-tank-setup-guide'],
   'russian-tortoise': ['russian-tortoise-cost-guide', 'russian-tortoise-handling-guide', 'russian-tortoise-health-issues-guide', 'russian-tortoise-tank-setup-guide', 'russian-tortoise-enrichment-guide'],
