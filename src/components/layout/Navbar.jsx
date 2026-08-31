@@ -14,19 +14,14 @@ const dropdownAnimation = {
   initial: { opacity: 0, height: 0, y: -50, scale: 0.94 },
   animate: { opacity: 1, height: 'auto', y: 0, scale: 1 },
   exit: { opacity: 0, height: 0, y: -50, scale: 0.94 },
-  transition: { 
-    type: 'spring', 
-    stiffness: 420, 
-    damping: 18, 
+  transition: {
+    type: 'spring',
+    stiffness: 420,
+    damping: 18,
     height: { type: 'tween', duration: 0.28, ease: 'easeInOut' }
   }
 };
 
-// Critter Digest categories come straight from the local taxonomy - the whole
-// navbar mounts on every page, so it must not pull in the MDX metadata module
-// (src/lib/generated/mdx-meta.json is ~1MB) just to count posts per category.
-// "Short Stories" is dropped because /blog/category/short-stories/ 301s to
-// /chronicles/ (public/_redirects, mirrored in prerender.mjs).
 const DIGEST_CATEGORIES = CATEGORIES.filter(c => c.slug !== 'short-stories');
 
 const primaryLinks = [
@@ -97,7 +92,7 @@ export default function Navbar() {
         if (focusableElements.length === 0) return;
 
         const firstElement = focusableElements[0];
-        const lastElement = focusableElements[lastElement];
+        const lastElement = focusableElements[focusableElements.length - 1];
 
         if (event.shiftKey) {
           if (document.activeElement === firstElement) {
@@ -134,7 +129,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 transition-colors duration-300 navbar-safe-top"
     >
-      <div 
+      <div
         className={`absolute inset-0 -z-10 transition-all duration-300 ${
           mobileOpen || scrolled
             ? 'bg-card/75 backdrop-blur-xl shadow-sm border-b border-border'
@@ -194,7 +189,7 @@ export default function Navbar() {
                 title={`${streak}-day visit streak! Keep it up`}
                 className="hidden sm:flex items-center gap-1 bg-secondary/10 text-secondary font-body font-bold text-xs px-2 py-1 rounded-full cursor-default"
               >
-                {` ${streak}`}
+                {`${streak}`}
               </motion.div>
             )}
             <button
@@ -216,6 +211,118 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            key="mobile-menu"
+            {...dropdownAnimation}
+            ref={menuRef}
+            className="z-50 border-t border-border/60 bg-card/75 text-foreground backdrop-blur-xl overflow-hidden sm:absolute sm:top-[57px] sm:right-4 sm:w-80 sm:rounded-2xl sm:border sm:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] dark:sm:shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8)] transform-gpu"
+          >
+            <div className="p-4 max-h-[calc(100vh_-_3.5rem_-_3.5rem_-_0.75rem_-_var(--safe-area-inset-top)_-_var(--safe-area-inset-bottom))] sm:max-h-[70vh] overflow-y-auto custom-scrollbar">
+              <div className="space-y-1">
+                <p className={`${groupLabelClass} pt-1`}>Keep a pet</p>
+                {[
+                  { to: '/guides/', emoji: 'G', label: 'Care guides' },
+                  { to: '/blog/', emoji: 'A', label: 'Articles' },
+                  { to: '/encyclopedia/', emoji: 'E', label: 'Encyclopedia' },
+                  { to: '/gear/', emoji: 'R', label: 'Gear' },
+                  { to: '/care-packages/', emoji: 'P', label: 'Care packages' },
+                ].map(item => (
+                  <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </Link>
+                ))}
+
+                <button
+                  onClick={() => setDigestOpen(!digestOpen)}
+                  className="w-full flex items-center justify-between px-4 py-2 text-sm font-body text-muted-foreground hover:text-foreground"
+                >
+                  Article topics
+                  <ChevronDown className={`w-4 h-4 transition-transform ${digestOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {digestOpen && (
+                  <div className="ml-4 my-1 space-y-0.5 border-l-2 border-border pl-3">
+                    <Link to="/blog/" onClick={handleMenuNav} className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body font-semibold text-foreground hover:bg-muted transition-all">
+                      All articles
+                    </Link>
+                    {DIGEST_CATEGORIES.map(cat => (
+                      <Link
+                        key={cat.slug}
+                        to={cat.to || `/blog/category/${cat.slug}/`}
+                        onClick={handleMenuNav}
+                        className="flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-body text-muted-foreground hover:text-foreground hover:bg-muted transition-all"
+                      >
+                        {cat.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+
+                <p className={groupLabelClass}>Learn something wild</p>
+                {[
+                  { to: '/facts/', emoji: 'F', label: 'Facts' },
+                  { to: '/fact-files/', emoji: 'I', label: 'Fact files' },
+                  { to: '/beastlypedia/', emoji: 'B', label: 'Beastlypedia' },
+                  { to: '/gallery/', emoji: 'Y', label: 'Gallery' },
+                  { to: '/quiz/personality/', emoji: 'Q', label: 'Quizzes' },
+                ].map(item => (
+                  <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </Link>
+                ))}
+
+                <p className={groupLabelClass}>Tools</p>
+                {[
+                  { to: '/exotic-pet-laws/', emoji: 'L', label: 'Is it legal?' },
+                  { to: '/pack/', emoji: 'M', label: 'My Pack' },
+                  { to: '/search/', emoji: 'S', label: 'Search' },
+                  { to: '/feed/', emoji: 'D', label: 'Feed' },
+                ].map(item => (
+                  <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </Link>
+                ))}
+
+                <p className={groupLabelClass}>The site</p>
+                {[
+                  { to: '/about/', emoji: 'O', label: 'About' },
+                  { to: '/chronicles/dex/', emoji: 'C', label: 'Chronicles' },
+                  { to: '/contact/', emoji: 'T', label: 'Contact' },
+                  { to: '/donate/', emoji: 'U', label: 'Support us' },
+                ].map(item => (
+                  <Link key={item.to} to={item.to} onClick={handleMenuNav} className={menuLinkClass(linkActive(location.pathname, item.to))}>
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-2 gap-1.5 pt-3 mt-2 border-t border-border/60">
+                <a href="https://instagram.com/beastly.facts" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-hotpink/10 text-hotpink text-xs font-body font-bold">
+                  <Instagram className="w-3.5 h-3.5" /> Instagram
+                </a>
+                <a href="https://x.com/beastly_facts" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold">
+                  <XLogo className="w-3.5 h-3.5" /> X
+                </a>
+                <a href="https://www.pinterest.com/beastlyfacts/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-red-500/10 text-red-600 text-xs font-body font-bold">
+                  <PinterestLogo className="w-3.5 h-3.5" /> Pinterest
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61590767090597" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-blue-500/10 text-blue-600 text-xs font-body font-bold">
+                  <FacebookLogo className="w-3.5 h-3.5" /> Facebook
+                </a>
+                <a href="https://www.threads.net/@Beastly.Facts" target="_blank" rel="noopener noreferrer" className="col-span-2 flex items-center justify-center gap-2 px-3 py-2 rounded-xl bg-foreground/5 text-foreground text-xs font-body font-bold">
+                  <ThreadsLogo className="w-3.5 h-3.5" /> Threads
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
