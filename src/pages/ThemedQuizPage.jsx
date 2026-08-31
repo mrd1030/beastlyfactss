@@ -27,6 +27,26 @@ const factForSource = (to) => {
 // Fact sources pop up in place; blog sources leave the quiz, so they say so.
 const sourceSuffix = (to) => (to.startsWith('/blog/') ? ' (article)' : '');
 
+// Results are tiered by score. Only a perfect run earns the quiz's own
+// reward card; 75%+ (6-7 on an 8-question quiz) takes a silver So Close
+// badge; anything below gets a nice-try nudge to study and retake rather
+// than a winner's card.
+const tierFor = (score, total, reward) => {
+  if (score === total) return { kind: 'perfect', heading: 'Reward card earned', card: reward };
+  if (score >= Math.ceil(total * 0.75)) {
+    return {
+      kind: 'close',
+      heading: 'Close! Silver badge earned',
+      card: { emoji: '🥈', title: 'So Close', blurb: `Within reach of ${reward.title}. Retake to claim it.` },
+    };
+  }
+  return {
+    kind: 'tryagain',
+    heading: 'No badge this time',
+    card: { emoji: '🐢', title: 'Nice Try', blurb: 'The animals win this round. Study the sources and try again.' },
+  };
+};
+
 // Plays one dated themed quiz (src/lib/data/quizzes/). Rendered by Quiz.jsx
 // when /quiz/:tab matches a themed quiz id instead of an evergreen tab.
 // Interaction mirrors the trivia tab so the two feel like one family; what's
@@ -47,6 +67,7 @@ export default function ThemedQuizPage({ quiz }) {
 
   const total = quiz.questions.length;
   const question = quiz.questions[currentIndex];
+  const tier = tierFor(score, total, quiz.reward);
 
   const handleSelect = (i) => {
     if (answered) return;
@@ -81,9 +102,9 @@ export default function ThemedQuizPage({ quiz }) {
     if (savedToPack) return;
     saveQuizResult({
       type: 'themed-quiz',
-      emoji: quiz.reward.emoji,
-      title: quiz.reward.title,
-      description: `${quiz.reward.blurb} Scored ${score}/${total} on "${quiz.title}".`,
+      emoji: tier.card.emoji,
+      title: tier.card.title,
+      description: `${tier.card.blurb} Scored ${score}/${total} on "${quiz.title}".`,
       quizId: quiz.id,
       quizTitle: quiz.title,
       score,
@@ -101,7 +122,9 @@ export default function ThemedQuizPage({ quiz }) {
   };
 
   const handleShare = () => {
-    const text = `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`;
+    const text = tier.kind === 'perfect'
+      ? `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
+      : `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts. Think you can beat me?`;
     const url = `${window.location.origin}/quiz/${quiz.id}/`;
     if (navigator.share) {
       navigator.share({ title: `${quiz.title} | Beastly Facts`, text, url }).catch(() => {});
@@ -266,24 +289,29 @@ export default function ThemedQuizPage({ quiz }) {
         {step === 'results' && (
           <div className="max-w-md mx-auto text-center py-8">
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
-              <Trophy className="w-16 h-16 mx-auto mb-3 text-secondary" />
-              <h2 className="font-display font-bold text-3xl text-foreground mb-1">Quiz Complete!</h2>
+              <Trophy className={`w-16 h-16 mx-auto mb-3 ${tier.kind === 'tryagain' ? 'text-muted-foreground/40' : 'text-secondary'}`} />
+              <h2 className="font-display font-bold text-3xl text-foreground mb-1">
+                {tier.kind === 'perfect' ? 'Perfect Score!' : 'Quiz Complete!'}
+              </h2>
               <p className="text-sm text-muted-foreground font-body mb-6">
                 {`You scored ${score} of ${total}${best && best.score > score ? `, your best is still ${best.score}` : ''}.`}
               </p>
 
-              {/* Reward card - the collectible this quiz mints */}
-              <div className="bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-2 border-secondary/40 rounded-3xl p-6 mb-6 relative overflow-hidden">
-                <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary mb-2">Reward card earned</p>
-                <span className="text-6xl block mb-2" aria-hidden="true">{quiz.reward.emoji}</span>
-                <h3 className="font-display font-bold text-2xl text-foreground">{quiz.reward.title}</h3>
-                <p className="text-sm text-muted-foreground font-body mt-1">{quiz.reward.blurb}</p>
+              {/* The tiered result card. Only a perfect run mints the quiz's
+                  own reward; lower tiers get honest consolation cards. */}
+              <div className={`rounded-3xl p-6 mb-6 relative overflow-hidden border-2 ${tier.kind === 'tryagain' ? 'bg-card border-border' : 'bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-secondary/40'}`}>
+                <p className={`text-[10px] font-body font-bold uppercase tracking-widest mb-2 ${tier.kind === 'tryagain' ? 'text-muted-foreground' : 'text-secondary'}`}>{tier.heading}</p>
+                <span className="text-6xl block mb-2" aria-hidden="true">{tier.card.emoji}</span>
+                <h3 className="font-display font-bold text-2xl text-foreground">{tier.card.title}</h3>
+                <p className="text-sm text-muted-foreground font-body mt-1">{tier.card.blurb}</p>
                 <p className="text-xs font-body font-bold text-secondary mt-3">{`${quiz.title} · ${score}/${total}`}</p>
               </div>
 
+              {/* On a try-again result the filled button is Retake, not Save:
+                  the card pushed is another run, not the consolation card. */}
               <div className="flex flex-col sm:flex-row justify-center gap-3">
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSaveToPack} disabled={savedToPack}
-                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${savedToPack ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' : 'bg-secondary text-secondary-foreground'}`}>
+                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${savedToPack ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' : tier.kind === 'tryagain' ? 'bg-card border border-border text-foreground' : 'bg-secondary text-secondary-foreground'}`}>
                   {savedToPack ? <><CheckCircle2 className="w-4 h-4" /> Saved to Pack</> : <>❤️ Save card to Pack</>}
                 </motion.button>
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
@@ -291,8 +319,8 @@ export default function ThemedQuizPage({ quiz }) {
                   <Share2 className="w-4 h-4" /> Share
                 </motion.button>
                 <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
-                  className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
-                  <RotateCcw className="w-4 h-4" /> Retake
+                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${tier.kind === 'tryagain' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-foreground'}`}>
+                  <RotateCcw className="w-4 h-4" /> {tier.kind === 'tryagain' ? 'Try Again' : 'Retake'}
                 </motion.button>
               </div>
               <Link to="/quiz/" className="inline-flex items-center gap-1 mt-6 text-sm font-body font-bold text-secondary hover:underline">
