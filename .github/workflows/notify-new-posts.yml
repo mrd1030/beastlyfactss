@@ -1,0 +1,53 @@
+name: notify-new-posts
+
+# Sends the daily push for whatever surfaced on the blog at site-time midnight.
+#
+# Two cron entries, one guard. GitHub cron is UTC only and does not follow US
+# daylight saving, so 9am in America/New_York is 13:00 UTC for most of the year
+# and 14:00 UTC in winter. Both fire, and the guard below lets exactly one of
+# them through by checking the real ET hour, which means no missed morning in
+# March and no double send in November.
+on:
+  schedule:
+    - cron: '0 13 * * *'
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print the payload without sending'
+        type: boolean
+        default: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # Manual runs skip the guard on purpose: a dispatch is someone asking for
+      # this now, whatever time it happens to be.
+      - name: Only the 9am ET run continues
+        id: gate
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$hour" = "09" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Skipping: it is ${hour}:00 in America/New_York, not 09:00."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # No npm ci: the script reads a committed JSON index and posts with the
+      # built-in fetch, so it needs nothing from node_modules.
+      - name: Send
+        if: steps.gate.outputs.run == 'true'
+        env:
+          SEND_NOTIFICATION_URL: ${{ secrets.SEND_NOTIFICATION_URL }}
+          SEND_NOTIFICATION_SECRET: ${{ secrets.SEND_NOTIFICATION_SECRET }}
+        run: node scripts/notify-todays-posts.mjs ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '' }}

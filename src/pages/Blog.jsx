@@ -13,7 +13,7 @@ import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { withBrand } from '@/lib/utils/seo';
-import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate } from '@/lib/utils/date';
+import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate, siteToday } from '@/lib/utils/date';
 import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
@@ -72,10 +72,24 @@ export default function Blog() {
 
   // Build date first so prerendered HTML and first client render agree, then the
   // real date after mount. See byReleaseThenDate in @/lib/utils/date.
+  //
+  // The interval is what makes a scheduled article surface on its own. Every
+  // article is already deployed and live; the only thing holding one back is
+  // this cutoff, so a tab left open across midnight used to keep sorting
+  // against yesterday until someone reloaded. Checking once a minute means the
+  // list reorders itself when the date actually arrives, which is also the
+  // moment the morning push notification is announcing (see
+  // scripts/notify-todays-posts.mjs).
   const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
-    setCutoff(new Date().toISOString().slice(0, 10));
+    const sync = () => setCutoff(prev => {
+      const now = siteToday();
+      return now === prev ? prev : now;
+    });
+    sync();
+    const id = setInterval(sync, 60 * 1000);
+    return () => clearInterval(id);
   }, []);
   const [activeCategory, setActiveCategory] = useState('All');
   // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage

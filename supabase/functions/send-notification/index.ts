@@ -1,9 +1,13 @@
 // Sends a Web Push notification to every stored subscription.
 //
-// Manually triggered by the site owner after publishing (this site's content
-// is git-based - MDX files built into the site, not a live CMS - so there's
-// no database row whose insert could trigger this automatically). Call it
-// after a deploy goes out:
+// Normally called by .github/workflows/notify-new-posts.yml at 9am ET, which
+// runs scripts/notify-todays-posts.mjs to find the articles that surfaced on
+// the blog at site-time midnight and builds the title and body from them. This
+// site's content is git-based (MDX files built into the site, not a live CMS),
+// so there is no database row whose insert could trigger a send: the schedule
+// watches the frontmatter dates instead.
+//
+// Still callable by hand for anything off-schedule:
 //
 //   curl -X POST https://<project-ref>.supabase.co/functions/v1/send-notification \
 //     -H "x-send-secret: <SEND_NOTIFICATION_SECRET>" \

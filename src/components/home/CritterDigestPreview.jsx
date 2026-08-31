@@ -11,7 +11,7 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 // prerender.mjs's capture always reflects the post-fetch state.
 import articlesIndex from '@/lib/generated/articles-index.json';
 import buildStamp from '@/lib/generated/build-stamp.json';
-import { byReleaseThenDate } from '@/lib/utils/date';
+import { byReleaseThenDate, siteToday } from '@/lib/utils/date';
 
 export default function CritterDigestPreview() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ export default function CritterDigestPreview() {
   const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
-    setCutoff(new Date().toISOString().slice(0, 10));
+    setCutoff(siteToday());
   }, []);
 
   // Helper to safely get slug as string
