@@ -145,6 +145,24 @@
       "tagline": "Core care principles that apply to every cat, every breed."
     },
     {
+      "id": "cat-american-shorthair",
+      "name": "American Shorthair: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Beginner",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-american-shorthair.jpg",
+      "tagline": "A working cat that became a show cat without ever becoming a fragile one."
+    },
+    {
+      "id": "cat-bengal",
+      "name": "Bengal: Breed Quirks",
+      "emoji": "🐈",
+      "difficulty": "Advanced",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-bengal.jpg",
+      "tagline": "The wild-looking, highly athletic cat that needs an active owner."
+    },
+    {
       "id": "cat-domestic-shorthair",
       "name": "Domestic Shorthair: Breed Quirks",
       "emoji": "🐱",
@@ -163,13 +181,13 @@
       "tagline": "The gentle giant, sold on a dog-like reputation the breed standard does not quite claim."
     },
     {
-      "id": "cat-siamese",
-      "name": "Siamese: Breed Quirks",
+      "id": "cat-persian",
+      "name": "Persian: Breed Quirks",
       "emoji": "🐱",
       "difficulty": "Intermediate",
       "petType": "Cat",
-      "image": "/assets/guides/cat-siamese.jpg",
-      "tagline": "The vocal, social, opinionated cat that demands to be part of everything."
+      "image": "/assets/guides/cat-persian.jpg",
+      "tagline": "The luxurious, calm lap cat with significant grooming requirements."
     },
     {
       "id": "cat-ragdoll",
@@ -181,49 +199,31 @@
       "tagline": "A genuinely gentle giant, named for a trait most of them no longer have."
     },
     {
-      "id": "cat-bengal",
-      "name": "Bengal: Breed Quirks",
-      "emoji": "🐈",
-      "difficulty": "Advanced",
-      "petType": "Cat",
-      "image": "/assets/guides/cat-bengal.jpg",
-      "tagline": "The wild-looking, highly athletic cat that needs an active owner."
-    },
-    {
-      "id": "cat-persian",
-      "name": "Persian: Breed Quirks",
-      "emoji": "🐱",
-      "difficulty": "Intermediate",
-      "petType": "Cat",
-      "image": "/assets/guides/cat-persian.jpg",
-      "tagline": "The luxurious, calm lap cat with significant grooming requirements."
-    },
-    {
-      "id": "cat-american-shorthair",
-      "name": "American Shorthair: Breed Quirks",
-      "emoji": "U0001F431",
-      "difficulty": "Beginner",
-      "petType": "Cat",
-      "image": "/assets/guides/cat-american-shorthair.jpg",
-      "tagline": "A working cat that became a show cat without ever becoming a fragile one."
-    },
-    {
-      "id": "cat-sphynx",
-      "name": "Sphynx: Breed Quirks",
-      "emoji": "U0001F431",
-      "difficulty": "Advanced",
-      "petType": "Cat",
-      "image": "/assets/guides/cat-sphynx.jpg",
-      "tagline": "A high-maintenance skin, a high-risk heart, and a cat that genuinely cannot be left alone."
-    },
-    {
       "id": "cat-scottish-fold",
       "name": "Scottish Fold: Breed Quirks",
-      "emoji": "U0001F431",
+      "emoji": "🐱",
       "difficulty": "Advanced",
       "petType": "Cat",
       "image": "/assets/guides/cat-scottish-fold.jpg",
       "tagline": "The ears and the arthritis are the same mutation, and you cannot have one without the other."
+    },
+    {
+      "id": "cat-siamese",
+      "name": "Siamese: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Intermediate",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-siamese.jpg",
+      "tagline": "The vocal, social, opinionated cat that demands to be part of everything."
+    },
+    {
+      "id": "cat-sphynx",
+      "name": "Sphynx: Breed Quirks",
+      "emoji": "🐱",
+      "difficulty": "Advanced",
+      "petType": "Cat",
+      "image": "/assets/guides/cat-sphynx.jpg",
+      "tagline": "A high-maintenance skin, a high-risk heart, and a cat that genuinely cannot be left alone."
     },
     {
       "id": "dog-universal",
@@ -262,40 +262,13 @@
       "tagline": "More dog to love, and more responsibility to match."
     },
     {
-      "id": "dog-labrador",
-      "name": "Labrador Retriever: Breed Quirks",
-      "emoji": "🐶",
-      "difficulty": "Beginner",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-labrador-retriever.jpg",
-      "tagline": "Held the AKC top spot for 31 years, and still the easiest big dog to live with."
-    },
-    {
-      "id": "dog-golden-retriever",
-      "name": "Golden Retriever: Breed Quirks",
-      "emoji": "🐶",
-      "difficulty": "Beginner",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-golden-retriever.jpg",
-      "tagline": "Gentle, joyful, and endlessly loyal: the golden retriever."
-    },
-    {
-      "id": "dog-german-shepherd",
-      "name": "German Shepherd: Breed Quirks",
+      "id": "dog-beagle",
+      "name": "Beagle: Breed Quirks",
       "emoji": "🐕",
       "difficulty": "Intermediate",
       "petType": "Dog",
-      "image": "/assets/guides/dog-german-shepherd.jpg",
-      "tagline": "One of the world's most versatile and intelligent working dogs."
-    },
-    {
-      "id": "dog-french-bulldog",
-      "name": "French Bulldog: Breed Quirks",
-      "emoji": "🐶",
-      "difficulty": "Intermediate",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-french-bulldog.jpg",
-      "tagline": "Charming and adaptable, but needs informed, attentive ownership."
+      "image": "/assets/guides/dog-beagle.jpg",
+      "tagline": "A nose with a dog attached, and a fence problem you solve before the puppy arrives."
     },
     {
       "id": "dog-border-collie",
@@ -307,6 +280,69 @@
       "tagline": "The world's most intelligent dog breed, and the most demanding."
     },
     {
+      "id": "dog-bulldog",
+      "name": "Bulldog: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-bulldog.jpg",
+      "tagline": "A famously gentle dog that needs active medical management, not just care."
+    },
+    {
+      "id": "dog-dachshund",
+      "name": "Dachshund: Breed Quirks",
+      "emoji": "🌭",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-dachshund.jpg",
+      "tagline": "The badger dog whose famous silhouette and famous spinal disease are the same mutation."
+    },
+    {
+      "id": "dog-french-bulldog",
+      "name": "French Bulldog: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-french-bulldog.jpg",
+      "tagline": "Charming and adaptable, but needs informed, attentive ownership."
+    },
+    {
+      "id": "dog-german-shepherd",
+      "name": "German Shepherd: Breed Quirks",
+      "emoji": "🐕",
+      "difficulty": "Intermediate",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-german-shepherd.jpg",
+      "tagline": "One of the world's most versatile and intelligent working dogs."
+    },
+    {
+      "id": "dog-golden-retriever",
+      "name": "Golden Retriever: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-golden-retriever.jpg",
+      "tagline": "Gentle, joyful, and endlessly loyal: the golden retriever."
+    },
+    {
+      "id": "dog-labrador",
+      "name": "Labrador Retriever: Breed Quirks",
+      "emoji": "🐶",
+      "difficulty": "Beginner",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-labrador-retriever.jpg",
+      "tagline": "Held the AKC top spot for 31 years, and still the easiest big dog to live with."
+    },
+    {
+      "id": "dog-rottweiler",
+      "name": "Rottweiler: Breed Quirks",
+      "emoji": "🐕",
+      "difficulty": "Advanced",
+      "petType": "Dog",
+      "image": "/assets/guides/dog-rottweiler.jpg",
+      "tagline": "A drover's dog that needs a job, early training, and an owner who has read the cancer numbers."
+    },
+    {
       "id": "dog-siberian-husky",
       "name": "Siberian Husky: Breed Quirks",
       "emoji": "🐺",
@@ -314,42 +350,6 @@
       "petType": "Dog",
       "image": "/assets/guides/dog-siberian-husky.jpg",
       "tagline": "The escape artist sled dog that needs a job and a secure fence."
-    },
-    {
-      "id": "dog-dachshund",
-      "name": "Dachshund: Breed Quirks",
-      "emoji": "U0001F32D",
-      "difficulty": "Intermediate",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-dachshund.jpg",
-      "tagline": "The badger dog whose famous silhouette and famous spinal disease are the same mutation."
-    },
-    {
-      "id": "dog-bulldog",
-      "name": "Bulldog: Breed Quirks",
-      "emoji": "U0001F436",
-      "difficulty": "Advanced",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-bulldog.jpg",
-      "tagline": "A famously gentle dog that needs active medical management, not just care."
-    },
-    {
-      "id": "dog-beagle",
-      "name": "Beagle: Breed Quirks",
-      "emoji": "U0001F415",
-      "difficulty": "Intermediate",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-beagle.jpg",
-      "tagline": "A nose with a dog attached, and a fence problem you solve before the puppy arrives."
-    },
-    {
-      "id": "dog-rottweiler",
-      "name": "Rottweiler: Breed Quirks",
-      "emoji": "U0001F415",
-      "difficulty": "Advanced",
-      "petType": "Dog",
-      "image": "/assets/guides/dog-rottweiler.jpg",
-      "tagline": "A drover's dog that needs a job, early training, and an owner who has read the cancer numbers."
     },
     {
       "id": "angelfish",
