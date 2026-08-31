@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
+import { SocialLinksRow } from '@/components/shared/SocialIcons';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -27,6 +28,12 @@ export default function Footer() {
             </p>
             <div className="mt-4">
               <DonateButton className="w-full font-body font-bold" />
+            </div>
+            <div className="mt-5">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-2.5">
+                Follow along
+              </h4>
+              <SocialLinksRow className="gap-4" />
             </div>
           </div>
 
