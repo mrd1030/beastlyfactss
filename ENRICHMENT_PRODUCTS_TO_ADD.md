@@ -49,16 +49,12 @@ searching in fabric instead of solving a lid. Covers ferrets, which the wooden
 puzzle does not.
 
 - **ASIN** `B09HBSZXT6`
-- **Product** Abizoo Small Pet Snuffle Mat, 11.8 x 11.8 in
+- **Product** Abizoo Bunny Snuffle Mat Toy, 11.8''x11.8'' Washable Skin Friendly Puzzle Fun Foraging Pad Treat Dispenser Consume Energy for Rabbit Guinea Pigs Ferrets Chinchillas Small Animal Toys Cage Supplies
 - **Link** https://www.amazon.com/dp/B09HBSZXT6?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
-- **rating** search returns `4.4` from 159 reviews; Mike read `4.5` off the page
-- **price** Mike read $11.99; band as `"$10–$16"`
+- **rating** `4.5`
+- **price** `"$10–$16"` (seen at $11.99)
 - **image** still needed
-- **ASIN unconfirmed.** Mike's screenshot shows a hedgehog in the species icons
-  and this listing names only rabbit, guinea pig, ferret and chinchilla. There are
-  at least six near-identical blue-rose foraging mats on Amazon right now, so this
-  may be a different listing. Worth one look at the URL before it goes in.
 - **covers** `["Snuffle mat or scatter-feeding mat for small mammals"]`
 - **pets** `["small-mammals"]`
 
