@@ -203,17 +203,28 @@
     --popover-foreground: 136 26% 14%;
     --primary: 164 56% 19%;
     --primary-foreground: 40 75% 97%;
-    --secondary: 17 77% 54%;
-    /* Cream text on this orange measured 3.27:1, under the 4.5:1 floor -
-       same failure mode the 2026-08-07 dark-mode note below used to
-       document for the previous orange. This near-black warm brown clears
-       5.48:1 in light mode and, reused as-is, 6.78:1 against the brighter
-       dark-mode orange too, so one value covers both themes. */
-    --secondary-foreground: 22 54% 7%;
+    /* Deepened 54% -> 42% lightness on 2026-08-31: the site sets this orange
+       as TEXT everywhere (text-secondary on ~190 small bold labels and links,
+       plus every prose link via --tw-prose-links), and at 54% it measured
+       3.27:1 on --background, under the 4.5:1 floor for normal-size text. At
+       42% it clears 4.82:1 on --background and 4.65:1 on --card, so the same
+       token works as both fill and text. Dark mode overrides with its own
+       brighter orange, which already passed as text (6.44:1). */
+    --secondary: 17 80% 42%;
+    /* Cream, not the near-black warm brown the brighter orange needed: on the
+       deepened fill above, near-black dropped to 3.71:1 while cream clears
+       4.65:1+. Dark mode still pairs its bright orange with near-black
+       (6.79:1) via its own override below. */
+    --secondary-foreground: 40 75% 97%;
     --muted: 41 55% 92%;
     --muted-foreground: 36 20% 35%;
     --accent: 39 67% 55%;
     --accent-foreground: 136 26% 14%;
+    /* Gold as text. --accent is a fill color: set as text on the cream
+       background it measures 2.16:1. Anything rendering gold TEXT or icons
+       (text-accent-ink) uses this deepened gold instead, 4.91:1 here. Dark
+       mode maps it back to the regular accent, which clears 10.5:1 as text. */
+    --accent-ink: 36 80% 33%;
     --destructive: 340 82% 48%;
     --destructive-foreground: 0 0% 100%;
     --border: 38 16% 49%;
@@ -251,8 +262,12 @@
     --muted-foreground: 41 20% 66%;
     --accent: 39 82% 67%;
     --accent-foreground: 148 33% 8%;
-    --destructive: 340 82% 48%;
-    --destructive-foreground: 0 0% 100%;
+    --accent-ink: 39 82% 67%;
+    /* The light-mode destructive red reads 3.73:1 as text on this dark
+       background, so dark mode brightens it to 5.1:1 and flips the button
+       text to the same near-black the other dark fills use. */
+    --destructive: 345 85% 62%;
+    --destructive-foreground: 153 27% 8%;
     --border: 141 14% 42%;
     --input: 141 14% 42%;
     --ring: 165 67% 41%;

@@ -29,7 +29,11 @@ const QUIZZES = [
     emoji: '🧠',
     title: 'Beastly Facts Challenge',
     description: 'Quick-fire multiple choice questions with instant explanations.',
-    gradient: 'from-secondary to-secondary/70',
+    // The tail used to fade to secondary/70. With cream text on the deepened
+    // light-mode orange, a faded tail under-contrasts, so the gradient now
+    // runs darker instead (and brighter in dark mode, where the text is
+    // near-black on a bright orange).
+    gradient: 'from-secondary to-[hsl(17_80%_32%)] dark:to-[hsl(17_85%_70%)]',
     fg: 'text-secondary-foreground',
     fgMuted: 'text-secondary-foreground/80',
   },
