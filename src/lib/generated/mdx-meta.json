@@ -186,6 +186,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/ackie-monitor-enrichment-guide.mdx",
+    "slug": "ackie-monitor-enrichment-guide",
+    "title": "Ackie Monitor Enrichment: Eight Out of Eight, First Try, Ten Minutes",
+    "seoTitle": "Ackie Monitor Enrichment Guide",
+    "excerpt": "Eight juvenile monitors were given a puzzle tube with food inside. All eight opened it within ten minutes, on the first trial. Bare enclosures are not neutral for this animal.",
+    "date": "2026-10-19",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ackie Monitor",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Monitor Lizard"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ackie-monitor-enrichment.jpg",
+    "imageAlt": "An ackie monitor digging into deep substrate in a large planted enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-19",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What did the monitor problem-solving study find?",
+        "a": "At Knoxville Zoological Gardens, eight juvenile black-throated monitors (Varanus albigularis) were tested with a transparent food tube apparatus. All eight learned to open the tube within ten minutes on the first trial. Later longitudinal work with puzzle-feeder devices found latencies decreasing over time across tested lizards, which was interpreted as evidence of learning."
+      },
+      {
+        "q": "Does research on a different monitor species apply to ackies?",
+        "a": "It is genus-level evidence rather than species-specific, and a guide should say so. Ackies are Varanus acanthurus and the study animals were Varanus albigularis. The transferable finding is that varanids solve novel food problems quickly, which is a property of the genus rather than of one species."
+      },
+      {
+        "q": "How deep should ackie substrate be?",
+        "a": "Deep enough for real burrow construction, which for this species means substantially deeper than most keepers provide. Ackies are obligate burrowers that build extensive tunnel systems, and depth is the single largest enclosure decision for them."
+      },
+      {
+        "q": "Can ackie monitors be target trained?",
+        "a": "Yes, and monitors are routinely target-trained in zoo collections. Training is cognitive enrichment and cooperative-care husbandry at once, making weighing, health checks and shifting the animal far less stressful."
+      },
+      {
+        "q": "Do they need a dig box separate from the substrate?",
+        "a": "For an ackie the whole floor should effectively be a dig box, but a separate tub of damper material gives them a humid excavation zone without you having to keep the entire substrate wet, which matters for a species from arid Australia."
+      },
+      {
+        "q": "Is a puzzle feeder appropriate for a monitor?",
+        "a": "It is the item the research most directly supports, and there is nothing in our gear list sized for a large lizard yet. A transparent tube with food visible inside is essentially what the study used, and it is easy to improvise."
+      }
+    ],
+    "relatedProducts": [
+      "ackie-substrate-bio-dude-terra-sahara-36qt",
+      "ackie-enclosure-reptile-habitats-48x24x48-pvc",
+      "dubia-roach-colony-starter-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/ackie-monitor-feeding-guide.mdx",
     "slug": "ackie-monitor-feeding-guide",
     "title": "Ackie Monitor Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -7606,6 +7670,70 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/chinchilla-enrichment-guide.mdx",
+    "slug": "chinchilla-enrichment-guide",
+    "title": "Chinchilla Enrichment: Fur Chewing Dropped With the Right Floor",
+    "seoTitle": "Chinchilla Enrichment Guide",
+    "excerpt": "A study of farmed chinchillas found fur chewing decreased in solid-floor cages with litter. The species' signature stereotypy, moved by flooring.",
+    "date": "2026-10-18",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Chinchilla",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Welfare",
+      "Dust Bath",
+      "Fur Chewing"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/chinchilla-enrichment.jpg",
+    "imageAlt": "A chinchilla mid-roll in a dust bath house inside a multi-level cage",
+    "emoji": "🐭",
+    "lastReviewed": "2026-10-18",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does the chinchilla research actually show?",
+        "a": "A study in Scientific Reports examined age, size and cage complexity in farmed female chinchillas. Flooring type greatly influenced natural behaviours including scratching and dust bathing, and fur-chewing cases decreased in solid-floor cages with litter. Fur chewing is this species' signature stereotypy, so that is a direct welfare outcome from a housing change."
+      },
+      {
+        "q": "Is dust bathing optional?",
+        "a": "No. It is a physiological requirement for coat condition rather than stimulation. Dust absorbs excess oil and moisture, removes loose fur and debris, and keeps the hairs separated so the coat holds its insulating properties. Older research on bath deprivation is what establishes it as a motivated behaviour rather than a habit."
+      },
+      {
+        "q": "How often should a chinchilla get a dust bath?",
+        "a": "Several times a week to daily, offered and then removed rather than left in the cage. Constant access causes eye irritation and dries the skin, so the container goes in for a limited period and comes back out."
+      },
+      {
+        "q": "Why does a wire floor matter so much?",
+        "a": "Because flooring is what the study found strongly influenced scratching and dust bathing, the behaviours the animal performs against its substrate. A wire floor removes the surface those behaviours act on, and it is also implicated in foot problems in this species."
+      },
+      {
+        "q": "Do chinchillas need a wheel?",
+        "a": "A large solid-surface one, yes. Chinchillas are built for jumping and running and a wheel too small forces a permanently arched spine, while wire or mesh surfaces catch feet and tails. Size and surface are the two variables that matter."
+      },
+      {
+        "q": "Should chinchillas be kept in pairs?",
+        "a": "They are social and generally do better with a compatible companion, though introductions between adults can go badly and need care. A solitary chinchilla needs considerably more from you in interaction and enrichment."
+      }
+    ],
+    "relatedProducts": [
+      "chinchilla-dust-bath-house",
+      "chinchilla-dust",
+      "chew-chinchilla-mineral-lava-blocks"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/chinchilla-feeding-guide.mdx",
     "slug": "chinchilla-feeding-guide",
     "title": "Chinchilla Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -8066,6 +8194,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/cockatiel-enrichment-guide.mdx",
+    "slug": "cockatiel-enrichment-guide",
+    "title": "Cockatiel Enrichment: Two Studies, Five Years Apart",
+    "seoTitle": "Cockatiel Enrichment Guide",
+    "excerpt": "Most parrot enrichment research targets large or endangered species. Cockatiels finally got two studies of their own, and the second one is from 2025.",
+    "date": "2026-10-18",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Cockatiel",
+      "Enrichment",
+      "Care Tips",
+      "Bird Welfare",
+      "Foraging",
+      "Feather Plucking"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cockatiel-enrichment.jpg",
+    "imageAlt": "A cockatiel shredding a foraging toy on a natural branch perch",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-18",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there cockatiel-specific enrichment research?",
+        "a": "Two papers now. A 2020 study looked at the effects of environmental enrichment on the behaviour of cockatiels in aviaries, and a 2025 study concludes that environmental enrichment improves behaviour and welfare in captive cockatiels, particularly by reducing feather-damaging behaviours. Most parrot enrichment research has concentrated on larger or more endangered psittacines, so this is recent."
+      },
+      {
+        "q": "Why is foraging the centrepiece?",
+        "a": "Because bowl feeding removes the activity a parrot is built around. In conventional captive settings food offered in a regular bowl results in foraging times of well under an hour a day, and abnormal repetitive behaviours including oral stereotypies and feather destruction fill the remaining time."
+      },
+      {
+        "q": "Do cockatiels pluck like larger parrots?",
+        "a": "They can, and the 2025 study specifically identifies reduced feather-damaging behaviour as an enrichment outcome in this species. Any established plucking should be seen by an avian vet before it is assumed to be behavioural."
+      },
+      {
+        "q": "How many perches does a cockatiel need, and what kind?",
+        "a": "Several, at varied diameters and heights. A cage of identical dowels loads the same points of the foot all day and gives the bird no reason to move between locations. Natural branch and rope beat plastic."
+      },
+      {
+        "q": "Are cockatiels social enough to need a companion?",
+        "a": "They are flock birds, and a single cockatiel needs a substantial daily time commitment from you to fill that role. A companion or a serious interaction routine is not an optional extra for this species."
+      },
+      {
+        "q": "What about night frights?",
+        "a": "Cockatiels are prone to thrashing panics in the dark, which is a housing and lighting question rather than an enrichment one. A dim night light and a cage placed away from sudden movement outside are the usual answers, and it is worth solving before adding anything else."
+      }
+    ],
+    "relatedProducts": [
+      "bird-toys-katumo-small-parrot-variety",
+      "bird-perch-limio-6pc-set",
+      "bird-cuttlebone-double"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/cockatiel-feeding-guide.mdx",
@@ -19390,6 +19582,68 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/jumping-spider-enrichment-guide.mdx",
+    "slug": "jumping-spider-enrichment-guide",
+    "title": "Jumping Spider Enrichment: They Can Recognize Individuals",
+    "seoTitle": "Jumping Spider Enrichment Guide",
+    "excerpt": "A 2024 paper in eLife documented individual recognition in Phidippus regius. This is a spider that learns shapes, avoids places and knows who it has met.",
+    "date": "2026-10-19",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Jumping Spider",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Welfare",
+      "Spider Cognition"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/jumping-spider-enrichment.jpg",
+    "imageAlt": "A regal jumping spider on a cork bark flat, front eyes facing the camera",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-10-19",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there real cognition research on jumping spiders?",
+        "a": "A surprising amount. There is published work on visual discrimination learning in Phidippus regius, a replication study on shape discrimination conditioning in the same species, a 2024 eLife paper documenting individual recognition in P. regius, and place avoidance learning and memory in another salticid. A 2020 review in Learning and Behavior argues jumping spiders are an exceptional group for comparative cognition."
+      },
+      {
+        "q": "What does that mean for how I keep one?",
+        "a": "That the enrichment axis is visual. Salticids have exceptional vision for their size and navigate complex environments by sight, so structural and visual complexity does more than anything scent or texture based would."
+      },
+      {
+        "q": "Does captivity change their behaviour?",
+        "a": "It appears to. Comparisons between lab-reared and field-collected Phidippus audax found differences in colour preferences, aggression, courtship and exploratory behaviour. That is a captivity effect worth naming honestly in a care guide rather than assuming a captive-bred spider behaves like a wild one."
+      },
+      {
+        "q": "Should I feed live prey?",
+        "a": "Yes, and it is the closest thing to a hunting outlet these animals get. Jumping spiders stalk and pounce rather than building capture webs, so live prey that has to be located and pursued engages the behaviour the animal is built around."
+      },
+      {
+        "q": "Do jumping spiders need climbing structure?",
+        "a": "Yes. Behavioural enrichment for salticids in the literature is described in terms of climbing and nesting structures such as natural wood branches. They build silk retreats in elevated corners and use vertical surfaces constantly."
+      },
+      {
+        "q": "Is handling enrichment for a jumping spider?",
+        "a": "Interaction with human caretakers during handling and maintenance is mentioned in the literature as a form of behavioural enrichment for salticids, which is unusual for an invertebrate. It should still be brief, low and over a soft surface, because a fall can be fatal."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-mini-flats-jumping-spider",
+      "jumping-spider-fruit-fly-culture-starter"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/jumping-spider-feeding-guide.mdx",
     "slug": "jumping-spider-feeding-guide",
     "title": "Jumping Spider Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -21324,6 +21578,68 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/madagascar-hissing-cockroach-enrichment-guide.mdx",
+    "slug": "madagascar-hissing-cockroach-enrichment-guide",
+    "title": "Hissing Cockroach Enrichment: Somebody Built Them a Welfare Framework",
+    "seoTitle": "Hissing Cockroach Enrichment Guide",
+    "excerpt": "A 2023 paper assessed welfare in captive group-housed Gromphadorhina using a validated monitoring tool. Almost no invertebrate in the pet trade has that.",
+    "date": "2026-10-19",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Hissing Cockroach",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Welfare",
+      "Group Housing"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/madagascar-hissing-cockroach-enrichment.jpg",
+    "imageAlt": "Madagascar hissing cockroaches clustered on a stack of bark over deep substrate",
+    "emoji": "🪳",
+    "lastReviewed": "2026-10-19",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there really welfare research on hissing cockroaches?",
+        "a": "Yes, which surprised us. A 2023 paper in Animals assessed the welfare of captive group-housed cockroaches, Gromphadorhina oblongonota, a congener of the pet species, and applied the Animal Welfare Assessment Grid. The AWAG is an objective welfare-monitoring tool approved for use across a wide range of species, and applying it to a terrestrial invertebrate at group level is unusual."
+      },
+      {
+        "q": "Why does group-level assessment matter?",
+        "a": "Because these are colony animals and welfare questions about them are colony questions. The research identifies a need for a validated system for monitoring terrestrial invertebrate welfare at group level, which is exactly the framing a keeper should use rather than watching one individual."
+      },
+      {
+        "q": "Should hissing cockroaches be kept in colonies?",
+        "a": "Yes. They are gregarious and cluster together, and the welfare work that exists is on group-housed animals. A single hissing cockroach is not how the species lives or how it has been studied."
+      },
+      {
+        "q": "How deep should the substrate be?",
+        "a": "Deep enough to burrow into and hold humidity, which is what the substrate is doing double duty for. These are forest floor animals that shelter in leaf litter and rotting wood, and a bare tank floor removes both the shelter and the humidity buffer."
+      },
+      {
+        "q": "Do they need climbing structure?",
+        "a": "They climb well, which is why enclosures need a smooth barrier at the top. Stacked bark and cork give a colony vertical surface area and somewhere to cluster, and vertical space is also needed for moulting."
+      },
+      {
+        "q": "Is invertebrate welfare taken seriously?",
+        "a": "Increasingly, but from a very low base. Current laws in most places do not apply to invertebrates, and welfare in captivity is often neglected. These animals can live for years, which is the argument the literature makes for why husbandry standards should exist at all."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-zoo-med-eco-earth-coconut-fiber",
+      "cork-bark-round-hide"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-feeding-guide.mdx",
@@ -26544,6 +26860,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/red-footed-tortoise-enrichment-guide.mdx",
+    "slug": "red-footed-tortoise-enrichment-guide",
+    "title": "Red-Footed Tortoise Enrichment: Enriched Tortoises Are More Optimistic",
+    "seoTitle": "Red-Footed Tortoise Enrichment Guide",
+    "excerpt": "Tortoises in enriched housing judged ambiguous situations optimistically. That is a mood measurement, in an animal most care sheets treat as a rock with legs.",
+    "date": "2026-10-18",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Red-Footed Tortoise",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Tortoise Cognition"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/red-footed-tortoise-enrichment.jpg",
+    "imageAlt": "A red-footed tortoise browsing scattered greens across a planted enclosure floor",
+    "emoji": "🐢",
+    "lastReviewed": "2026-10-18",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there really research on tortoise mood?",
+        "a": "Yes. A study of 15 red-footed tortoises used a cognitive bias test, a standard method for assessing affective state, and found that tortoises housed in enriched environments were more likely to judge ambiguous situations optimistically. Optimistic judgment bias is one of the closest things animal welfare science has to a mood measure."
+      },
+      {
+        "q": "What else has this species been shown to do?",
+        "a": "Red-footed tortoises have been trained to use touchscreens, with individuals learning a spatial task on the screen and transferring that solution to a physical arena. Further work shows them anticipating cyclical resource availability. Wilkinson's radial maze work also showed a tortoise switching navigation strategy when visual landmarks were made available."
+      },
+      {
+        "q": "Why does the testing temperature matter?",
+        "a": "Because earlier reptile cognition research got it wrong. Wilkinson tested tortoises at around 29 degrees Celsius specifically to make sure they were fully alert. Flawed older studies tested ectotherms in cool laboratory conditions, produced sluggish and minimally responsive animals, and concluded reptiles were poor learners."
+      },
+      {
+        "q": "Can a tortoise be target trained?",
+        "a": "Yes, and it is one of the better-supported enrichment approaches for the group. Target and station training works as cognitive enrichment and cooperative-care husbandry at once, making routine weighing and health checks much less stressful."
+      },
+      {
+        "q": "How should a red-footed tortoise be fed for enrichment?",
+        "a": "Scattered and varied rather than presented in one dish. These are foraging animals that cover ground searching, and a single bowl of chopped salad compresses that into a couple of minutes. Growing edible planting inside the enclosure extends it further."
+      },
+      {
+        "q": "Do they need more humidity than other tortoises?",
+        "a": "Considerably. Red-foots are tropical forest-floor animals rather than arid grazers, which is the most common husbandry error with this species, and a humid substrate with damp retreats is a welfare input rather than a refinement."
+      }
+    ],
+    "relatedProducts": [
+      "tortoise-table",
+      "large-soakable-water-dish",
+      "calcium-tortoise-turtle-herbivorous-sulcata"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/red-footed-tortoise-feeding-guide.mdx",

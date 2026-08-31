@@ -354,3 +354,67 @@ one corner. Warm domestic light, shallow depth of field on the climbing rat.
 The frame should read as a cage covering many different kinds of enrichment at
 once, which is the point of the article. No hands, no people.
 ```
+
+### Enrichment guides, batch 3 (2026-10-18 to 10-19)
+
+Same rules: 3:2 at 1168x784, the animal mid-behavior.
+
+#### chinchilla-enrichment.jpg
+```
+A chinchilla mid-roll on its back inside an open dust bath house, a visible puff
+of fine dust in the air around it, all four feet up. Solid-floor cage with
+bedding and solid wooden shelves at several heights visible behind, a wooden
+chew block on the floor. Bright even light, fast shutter to freeze the dust.
+Joyful and undignified, which is what dust bathing actually looks like.
+No wire flooring anywhere in frame, no hands, no people.
+```
+
+#### cockatiel-enrichment.jpg
+```
+A grey cockatiel with orange cheek patches gripping a hanging foraging toy with
+one foot, actively shredding a paper or palm element with its beak, fragments
+falling. Perched on a natural branch among perches of visibly different
+diameters and materials. Soft daylight, plain neutral background, shallow depth
+of field on the head and beak. The bird is destroying something on purpose.
+No cage bars in the foreground, no people.
+```
+
+#### red-footed-tortoise-enrichment.jpg
+```
+A red-footed tortoise walking across a humid planted enclosure floor toward
+scattered chopped greens and berries spread across leaf litter and low growing
+plants, several separate feeding spots visible rather than one dish. Damp dark
+substrate, broad-leaved planting, warm humid light with visible moisture.
+Camera low at shell height. Grazing across ground, not eating from a bowl.
+No dish in frame, no hands, no people.
+```
+
+#### jumping-spider-enrichment.jpg
+```
+A regal jumping spider on a small cork bark flat, front-facing so the two large
+forward eyes dominate, body angled as if tracking something. Behind it a layered
+enclosure with small branches, foliage at multiple depths and a silk retreat
+visible in an upper corner. Extreme shallow depth of field, macro, soft
+directional light picking out the iridescent chelicerae. The eyes are the
+subject, because vision is the whole article. No hands, no people.
+```
+
+#### madagascar-hissing-cockroach-enrichment.jpg
+```
+A cluster of six or seven Madagascar hissing cockroaches of mixed sizes packed
+together on and under a stack of overlapping cork bark slabs, over deep dark
+coconut fibre substrate with leaf litter and pieces of rotting wood. Warm dim
+light, visible humidity. Photographed as a colony rather than a specimen, which
+is the point of the article. Glossy chestnut carapaces catching the light.
+No hands, no people.
+```
+
+#### ackie-monitor-enrichment.jpg
+```
+An ackie monitor mid-dig, front legs buried and substrate spraying backwards,
+head down at the entrance of a burrow in very deep red-brown sandy substrate.
+Large enclosure with rock stacks and cork visible behind, strong overhead
+basking light casting a hard shadow. Camera low at substrate level so the depth
+of the substrate fills the lower third. Active excavation, not a basking pose.
+No hands, no people.
+```
