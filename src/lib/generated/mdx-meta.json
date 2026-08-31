@@ -235,7 +235,7 @@
       },
       {
         "q": "Is a puzzle feeder appropriate for a monitor?",
-        "a": "It is the item the research most directly supports, and there is nothing in our gear list sized for a large lizard yet. A transparent tube with food visible inside is essentially what the study used, and it is easy to improvise."
+        "a": "It is the item the research most directly supports. A transparent tube with food visible inside is essentially what the study used, and it is easy to improvise, though a wooden extraction board with sliders and lift-out plugs saves the trouble."
       }
     ],
     "relatedProducts": [
@@ -3667,7 +3667,7 @@
     "image": "/assets/images/bearded-dragon-enrichment.jpg",
     "imageAlt": "A bearded dragon climbing a sturdy branch inside its enclosure",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-17",
+    "lastReviewed": "2026-08-31",
     "author": "Mike",
     "canonicalUrl": null,
     "faqs": [
@@ -18701,7 +18701,7 @@
     "image": "/assets/images/guinea-pig-enrichment.jpg",
     "imageAlt": "A guinea pig peeking out of a fleece hideout tunnel surrounded by hay",
     "emoji": "🐹",
-    "lastReviewed": "2026-08-23",
+    "lastReviewed": "2026-08-31",
     "author": "Mike",
     "canonicalUrl": null,
     "faqs": [
@@ -23300,7 +23300,7 @@
     "image": "/assets/images/leopard-gecko-enrichment.jpg",
     "imageAlt": "A leopard gecko exploring a naturalistic enclosure with cork bark and climbing structure",
     "emoji": "🦎",
-    "lastReviewed": "2026-08-18",
+    "lastReviewed": "2026-08-31",
     "author": "Mike",
     "canonicalUrl": null,
     "faqs": [
@@ -31237,7 +31237,7 @@
     "image": "/assets/images/russian-tortoise-enrichment.jpg",
     "imageAlt": "A Russian tortoise grazing on scattered greens among rock hides and low obstacles",
     "emoji": "🐢",
-    "lastReviewed": "2026-08-16",
+    "lastReviewed": "2026-08-31",
     "author": "Mike",
     "canonicalUrl": null,
     "faqs": [
