@@ -577,3 +577,72 @@ with a narrow gap immediately behind it. Warm orange and slate-grey stripes on
 cream. Dim evening lighting for a crepuscular species, dry dusty palette, shallow
 depth of field on the head. The burying is the subject. No hands, no people.
 ```
+
+### Enrichment guides, batch 7 (2026-10-26 to 10-27)
+
+The last reptiles and the amphibians. Same rules: 3:2 at 1168x784, animal
+mid-behavior, show the enrichment being used rather than the enclosure standing
+empty. Amphibian shots should read damp and softly lit, not dry and bright.
+
+#### whites-tree-frog-enrichment.jpg
+```
+A plump White's tree frog sitting on a broad leaf partway up a densely planted
+terrarium, toe pads gripping, body settled and relaxed. Layered foliage above and
+below so the frog is nested inside cover rather than perched on top of it. Soft
+green light, high humidity, water droplets on the leaves. Shallow depth of field
+on the frog's face. No hands, no people.
+```
+
+#### red-eared-slider-enrichment.jpg
+```
+A red-eared slider mid-swim in clear water, angled downward toward a scattered
+food item on the substrate, front limbs extended. Submerged driftwood and sturdy
+planting around it, a dry basking platform visible above the waterline in the
+upper frame. Bright clean underwater lighting, visible red ear stripe. The turtle
+should read as actively searching. No hands, no people.
+```
+
+#### fire-skink-enrichment.jpg
+```
+A fire skink emerging head-first from deep leaf litter on a forest floor setup,
+front half out and body still partly buried. Brilliant red and black barred
+flanks catching low light against dark damp substrate and dead leaves. Cork flat
+laid nearby, low planting behind. Warm dim lighting, shallow depth of field on
+the head. The emergence is the subject. No hands, no people.
+```
+
+#### pacman-frog-enrichment.jpg
+```
+A pacman frog buried to the eyes in damp coconut fibre substrate, only the top of
+the head, eyes and wide mouth line visible above the surface, sphagnum moss
+scattered around. Mottled green and brown. Shot low and close so the frog is
+almost part of the ground. Soft diffuse light, high humidity, very still
+composition. The burial is the whole photo. No hands, no people.
+```
+
+#### fire-bellied-toad-enrichment.jpg
+```
+Two fire-bellied toads on a mossy bank at the edge of a shallow planted water
+section, one half in the water, green and black mottled backs visible. Artificial
+and live planting both in the water and on the land side, clear shallow water.
+Bright naturalistic daylight, since these are diurnal. Land and water should both
+read as real parts of the enclosure. No hands, no people.
+```
+
+#### tiger-salamander-enrichment.jpg
+```
+A tiger salamander emerging at night from the mouth of a burrow in deep damp
+substrate, glossy black skin with bold yellow blotches, head and forelimbs out.
+Leaf litter and cork flats across the surface around the burrow entrance. Cool
+dim lighting, damp earthy palette, shallow depth of field. Substrate depth should
+be visible in the frame. No hands, no people.
+```
+
+#### sulcata-tortoise-enrichment.jpg
+```
+A large adult sulcata tortoise mid-stride across rough grazing grass, head down
+and actively cropping, thick scaled forelimbs and heavily marked shell. The mouth
+of a dug burrow and a low shelter visible behind, secure fencing at the far edge
+of frame. Bright dry outdoor daylight, arid palette. Scale should read large,
+photographed from low down. No hands, no people.
+```
