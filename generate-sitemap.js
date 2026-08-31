@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { themedQuizzes } from './src/lib/data/quizzes/index.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -214,9 +215,11 @@ const staticPages = [
   '/beastlypedia/',
   '/guides/',
   '/gear/',
+  '/quiz/',
   '/quiz/personality/',
   '/quiz/trivia/',
   '/quiz/knowledge/',
+  ...themedQuizzes.map(q => `/quiz/${q.id}/`),
   '/glossary/',
   '/exotic-pet-laws/',
   '/care-packages/',

@@ -79,6 +79,12 @@ working checklist.
 - Never renumber facts. A removed fact leaves an id gap, favorites are keyed by
   id in the app's frozen snapshot.
 
+## Themed quizzes
+
+- Format, voice, and publishing checklist live in docs/QUIZZES.md. Ids and
+  numbers are permanent, every question needs a released source page, and a
+  committed quiz is never future-dated.
+
 ## Placement quirks
 
 - Beastlypedia only surfaces articles filed under `category: "Wild Animals"`,

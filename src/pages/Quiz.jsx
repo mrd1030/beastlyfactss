@@ -9,6 +9,8 @@ import { triviaQuestions } from '@/lib/data/triviaQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';   // ← ADDED
 import KnowledgeQuiz from '@/lib/data/KnowledgeQuiz';
+import { getThemedQuiz } from '@/lib/data/quizzes';
+import ThemedQuizPage from '@/pages/ThemedQuizPage';
 
 const TRIVIA_TOTAL = triviaQuestions.length;
 
@@ -438,6 +440,10 @@ export default function Quiz() {
   const location = useLocation();
   const navigate = useNavigate();
   const { tab: urlTab } = useParams();
+  // Dated themed quizzes share the /quiz/:tab route with the three evergreen
+  // tabs; a matching quiz id takes over the whole page.
+  const themedQuiz = getThemedQuiz(urlTab);
+  if (themedQuiz) return <ThemedQuizPage quiz={themedQuiz} />;
   const activeTab = ['trivia', 'knowledge'].includes(urlTab) ? urlTab : 'personality';
   const shouldNoindex = hasNoindexStateParams(location.search);
   const meta = TAB_META[activeTab] || TAB_META.personality;

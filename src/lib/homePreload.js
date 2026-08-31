@@ -28,6 +28,7 @@ const modules = {
   GuideSpotlight: () => import('@/components/home/GuideSpotlight'),
   CritterDigestPreview: () => import('@/components/home/CritterDigestPreview'),
   DexTeaser: () => import('@/components/home/DexTeaser'),
+  QuizzesTeaser: () => import('@/components/home/QuizzesTeaser'),
   Newsletter: () => import('@/components/shared/Newsletter'),
 };
 

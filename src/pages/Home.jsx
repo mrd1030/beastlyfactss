@@ -82,9 +82,10 @@ export default function Home() {
 
       <SectionDivider />
 
-      {/* Editorial content: articles + fiction, together */}
+      {/* Editorial content: articles + fiction + play, together */}
       <HomeChild name="CritterDigestPreview" />
       <HomeChild name="DexTeaser" />
+      <HomeChild name="QuizzesTeaser" />
       <HomeChild name="Newsletter" />
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
       <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />

@@ -128,15 +128,22 @@ export default function Pack() {
       {visibleQuizResults.map((qr) => {
         const isAnimalCard = qr.type === 'animal-quiz';
 
+        const isThemedCard = qr.type === 'themed-quiz';
+
         const handleShareQuiz = () => {
-          // An animal card has a score and a page worth linking to; the
-          // personality result has neither, so they get different wording.
+          // An animal card has a score and a page worth linking to, a themed
+          // card has both plus a named reward, and the personality result has
+          // neither, so each gets its own wording.
           const text = isAnimalCard
             ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
-            : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
+            : isThemedCard
+              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on the ${qr.quizTitle} quiz at BeastlyFacts. Think you can beat me?`
+              : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
           const url = isAnimalCard
             ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`
-            : `${window.location.origin}/quiz/`;
+            : isThemedCard
+              ? `${window.location.origin}/quiz/${qr.quizId}/`
+              : `${window.location.origin}/quiz/`;
 
           if (navigator.share) {
             navigator.share({ title: qr.title, text, url }).catch(() => {});
