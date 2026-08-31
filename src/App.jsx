@@ -21,6 +21,7 @@ import PageNotFound from './lib/PageNotFound';
 import Home from '@/pages/Home';
 const Facts = lazy(() => import('@/pages/Facts'));
 const Quiz = lazy(() => import('@/pages/Quiz'));
+const QuizHub = lazy(() => import('@/pages/QuizHub'));
 const Pack = lazy(() => import('@/pages/Pack'));
 const Encyclopedia = lazy(() => import('@/pages/Encyclopedia'));
 const Blog = lazy(() => import('@/pages/Blog'));
@@ -102,7 +103,7 @@ const AuthenticatedApp = () => {
           <Route path="/chronicles" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
-          <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
+          <Route path="/quiz" element={<QuizHub />} />
           <Route path="/quiz/:tab" element={<Quiz />} />
           <Route path="/pack" element={<Pack />} />
           <Route path="/about" element={<About />} />

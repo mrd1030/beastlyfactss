@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { themedQuizzes } from '@/lib/data/quizzes';
 
 // Full class strings kept complete (not concatenated at render time) so
 // Tailwind's static scanner can find and generate them.
@@ -47,8 +48,31 @@ export default function QuizzesTeaser() {
         >
           <span className="text-3xl mb-2 block">🧩</span>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-2">Test Yourself</h2>
-          <p className="text-sm text-muted-foreground font-body max-w-md mx-auto">Three ways to play - pick your challenge.</p>
+          <p className="text-sm text-muted-foreground font-body max-w-md mx-auto">A new themed quiz every other week, plus the classics.</p>
         </motion.div>
+
+        {themedQuizzes[0] && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-5"
+          >
+            <Link to={`/quiz/${themedQuizzes[0].id}/`} className="group flex items-center gap-4 bg-card border-2 border-secondary/40 hover:border-secondary rounded-3xl p-5 sm:p-6 transition-colors">
+              <span className="text-4xl sm:text-5xl flex-shrink-0" aria-hidden="true">{themedQuizzes[0].emoji}</span>
+              <div className="flex-1 min-w-0">
+                <p className="flex items-center gap-1 text-[10px] font-body font-bold uppercase tracking-wider text-secondary mb-0.5">
+                  <Sparkles className="w-3 h-3" />{`Latest quiz · #${themedQuizzes[0].number}`}
+                </p>
+                <h3 className="font-display font-bold text-lg sm:text-xl text-foreground group-hover:text-secondary transition-colors truncate">{themedQuizzes[0].title}</h3>
+                <p className="text-xs text-muted-foreground font-body truncate">{themedQuizzes[0].tagline}</p>
+              </div>
+              <span className="flex-shrink-0 inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary">
+                Play <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+          </motion.div>
+        )}
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {QUIZZES.map((quiz, i) => (

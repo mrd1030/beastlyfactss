@@ -16,6 +16,7 @@ import { mkdir, writeFile, readFile } from 'fs/promises';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { cpus } from 'os';
+import { themedQuizzes } from './src/lib/data/quizzes/index.js';
 
 const DIST = './dist';
 const PORT = 4173;
@@ -185,9 +186,11 @@ const STATIC_ROUTES = [
   '/guides',
   '/gear',
   '/pack',
+  '/quiz',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
+  ...themedQuizzes.map(q => `/quiz/${q.id}`),
   '/about',
   '/contact',
   '/glossary',
