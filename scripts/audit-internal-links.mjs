@@ -39,7 +39,7 @@ const DIST = 'dist';
 const THRESHOLD = Number(process.argv[2]) || 3;
 const BOILERPLATE_RATIO = 0.9;
 // Measured 2026-08-29 against a full build. See the ratchet note above.
-const BUDGET = 30;
+const BUDGET = 11;
 const MAX_THIN_PAGES =
   process.env.MAX_THIN_PAGES === undefined ? BUDGET : Number(process.env.MAX_THIN_PAGES);
 

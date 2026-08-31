@@ -19,6 +19,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 - Don't ask for permission before acting on clear instructions.
 
 ## Writing & Content Rules
+- The full consolidated rulebook is docs/RULES.md. Read it before writing or editing content. The rules below are the non-negotiables.
 - Never use em or en dashes. Use commas or periods instead.
 - Use US spelling in prose. British variants are fine in SEO tags. Prefer the spelling "grey".
 - Keep the existing split structure for care guides (cost / handling / health / tank setup). Do not turn them into long-form pillar pages.
