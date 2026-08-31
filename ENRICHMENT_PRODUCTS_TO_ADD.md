@@ -1,6 +1,6 @@
 # Enrichment products to add to affiliateProducts.js
 
-Six categories the enrichment guides need that the 261-item catalogue does not
+Seven categories the enrichment guides need that the 261-item catalogue does not
 cover at all. These are not size variants of anything already listed: each is a
 mechanism with no existing entry.
 
@@ -85,18 +85,6 @@ entry for it.
 - **covers** `["Target stick or clicker for training"]`
 - **pets** `["birds", "reptiles-amphibians", "small-mammals"]`
 
----
-
-## Deliberately not sourced
-
-Three enrichment mechanisms in the matrix need no product and should never get
-an affiliate link, because buying something is the wrong answer:
-
-- **Group size.** Not purchasable and the most commonly ignored item on the list.
-- **Scent trails and olfactory novelty.** Shed skin from another enclosure, a
-  scent-marked object, prey dragged across the substrate. All free.
-- **Dig boxes.** A storage tub with damp substrate in it.
-
 ## 7. Composable burrow tunnel system for small rodents
 The gerbil enrichment guide turns on a specific finding: Wiedenmayer showed that
 gerbils raised with a **tunnel connected to a chamber** do not develop stereotypic
@@ -112,3 +100,15 @@ Also serves mouse, hamster and degu.
 - **Category** Small Mammal & Exotic Pet Gear
 - **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
 - **pets** `["small-mammals"]`
+
+---
+
+## Deliberately not sourced
+
+Three enrichment mechanisms in the matrix need no product and should never get
+an affiliate link, because buying something is the wrong answer:
+
+- **Group size.** Not purchasable and the most commonly ignored item on the list.
+- **Scent trails and olfactory novelty.** Shed skin from another enclosure, a
+  scent-marked object, prey dragged across the substrate. All free.
+- **Dig boxes.** A storage tub with damp substrate in it.
