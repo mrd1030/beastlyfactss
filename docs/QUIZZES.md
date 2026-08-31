@@ -64,8 +64,12 @@ export default {
   close with one most players get right.
 - House style applies: no em or en dashes anywhere, US spelling, no URLs in
   question or explanation text (the source field carries the link).
-- Reward cards are earned by finishing, not by score. Title is two punchy
-  words; the blurb is one line of personality.
+- Results are tiered by score (logic lives in ThemedQuizPage, not the quiz
+  file): a perfect score earns the quiz's reward card, 75%+ earns a silver
+  "So Close" badge, and anything below gets a "Nice Try" nudge to study and
+  retake. Write the reward title and blurb for the perfect tier, it is the
+  card players are chasing. Title is two punchy words; the blurb is one
+  line of personality.
 
 ## Publishing checklist (the Routine follows this)
 

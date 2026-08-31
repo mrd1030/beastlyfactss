@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -209,7 +209,7 @@ export default function Pack() {
             <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{qr.description}</p>
 
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex flex-wrap items-center gap-2 mt-4">
               {/* Share Button */}
               <button
                 onClick={handleShareQuiz}
@@ -217,6 +217,17 @@ export default function Pack() {
               >
                 <Share2 className="w-3.5 h-3.5" /> Share
               </button>
+
+              {/* Themed cards link back to their quiz so a Nice Try or So
+                  Close card can be upgraded from right here. */}
+              {isThemedCard && qr.quizId && (
+                <Link
+                  to={`/quiz/${qr.quizId}/`}
+                  className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" /> Retake
+                </Link>
+              )}
 
               <span className="text-[10px] text-muted-foreground">
                 {`Saved ${new Date(qr.savedAt).toLocaleDateString()}`}
