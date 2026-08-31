@@ -122,6 +122,17 @@
       ]
     },
     {
+      "slug": "african-fat-tail-enrichment-guide",
+      "title": "African Fat-Tailed Gecko Enrichment Guide",
+      "excerpt": "The leopard gecko enrichment study tested five types and ranked them. Fat-tails are the closest relative anyone has tested, so that ranking is the best guide available.",
+      "date": "2026-10-22",
+      "image": "/assets/images/african-fat-tail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "african-fat-tail-feeding-guide",
       "title": "African Fat-Tailed Gecko Feeding Guide",
       "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating and be completely fine. Here's how to actually tell that from real trouble.",
@@ -2611,6 +2622,17 @@
       ]
     },
     {
+      "slug": "gargoyle-gecko-enrichment-guide",
+      "title": "Gargoyle Gecko Enrichment Guide",
+      "excerpt": "The crested gecko stress-hormone study found geckos that engaged with novel objects sooner had lower baseline stress. Gargoyles are their closest studied relative.",
+      "date": "2026-10-22",
+      "image": "/assets/images/gargoyle-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "gargoyle-gecko-feeding-guide",
       "title": "Gargoyle Gecko Feeding Guide: Schedule and Diet",
       "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the diet here, not just enrichment.",
@@ -3947,6 +3969,17 @@
       ]
     },
     {
+      "slug": "leaf-tailed-gecko-enrichment-guide",
+      "title": "Leaf-Tailed Gecko Enrichment Guide",
+      "excerpt": "A gecko evolved to vanish against bark has nothing to vanish against in a bare enclosure. For this species, cover is not a hiding place, it is the whole behaviour.",
+      "date": "2026-10-23",
+      "image": "/assets/images/leaf-tailed-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "leaf-tailed-gecko-handling-guide",
       "title": "Leaf-Tailed Gecko Handling: What to Expect",
       "excerpt": "Leaf-tailed geckos are the most advanced-keeper gecko covered on this site, and unlike the tokay gecko, this isn't about aggression or a defensive bite. It's about fragility.",
@@ -4384,6 +4417,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "mourning-gecko-enrichment-guide",
+      "title": "Mourning Gecko Enrichment Guide",
+      "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair them. This one starts from a group.",
+      "date": "2026-10-22",
+      "image": "/assets/images/mourning-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {

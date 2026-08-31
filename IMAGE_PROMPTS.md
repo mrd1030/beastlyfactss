@@ -476,3 +476,43 @@ coiled. Shallow water dish large enough to swim in visible at the edge of frame,
 damp planted substrate. Bright daylight, since this is a diurnal species.
 Hunting, in motion. No hands, no people.
 ```
+
+### Enrichment guides, batch 5 (2026-10-22 to 10-23)
+
+Geckos. Same rules: 3:2 at 1168x784, animal mid-behavior.
+
+#### african-fat-tail-enrichment.jpg
+```
+An African fat-tailed gecko emerging from the mouth of a humid hide packed with
+visibly damp sphagnum moss, head and forelimbs out, condensation on the moss.
+Warm banded brown and cream markings, thick tail. Dim evening lighting suited to
+a crepuscular species, shallow depth of field on the face. The damp hide is the
+subject. No hands, no people.
+```
+
+#### mourning-gecko-enrichment.jpg
+```
+Three or four small mourning geckos at different heights on the broad leaves and
+stems of a densely planted bioactive vivarium, one on a vertical cork slab.
+Mottled grey-brown geckos against green foliage, visible humidity. Soft diffuse
+light. Photographed as a colony spread through vertical space, which is the
+whole article. No hands, no people.
+```
+
+#### gargoyle-gecko-enrichment.jpg
+```
+A gargoyle gecko with knobbly cranial bumps gripping a vertical cork slab
+partway up a tall planted vivarium, head angled down. Branches at several angles
+and dense foliage filling the frame behind, a shallow feeding ledge with gecko
+diet mounted high. Warm dim light. The enclosure should read as full from floor
+to ceiling. No hands, no people.
+```
+
+#### leaf-tailed-gecko-enrichment.jpg
+```
+A leaf-tailed gecko flattened head-down against a vertical cork slab, edges of
+the body blending into the bark so the outline is genuinely hard to resolve.
+Dense mossy planting and layered branches around it, high humidity with fine
+mist visible in the air. Low contrast, muted greens and browns, shallow depth of
+field. The camouflage should be the difficulty of the photo. No hands, no people.
+```

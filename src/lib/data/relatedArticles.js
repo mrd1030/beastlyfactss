@@ -57,9 +57,9 @@ export const RELATED_ARTICLES = {
   'bearded-dragon': ['bearded-dragon-cost-guide', 'bearded-dragon-handling-guide', 'bearded-dragon-health-issues-guide', 'bearded-dragon-tank-setup-guide', 'bearded-dragon-feeding-guide', 'bearded-dragon-enrichment-guide', 'bioactive-setups-bearded-dragons'],
   'leopard-gecko': ['leopard-gecko-cost-guide', 'leopard-gecko-handling-guide', 'leopard-gecko-health-issues-guide', 'leopard-gecko-tank-setup-guide', 'leopard-gecko-feeding-guide', 'leopard-gecko-enrichment-guide'],
   'crested-gecko': ['crested-gecko-cost-guide', 'crested-gecko-handling-guide', 'crested-gecko-health-issues-guide', 'crested-gecko-tank-setup-guide', 'crested-gecko-enrichment-guide'],
-  'gargoyle-gecko': ['gargoyle-gecko-cost-guide', 'gargoyle-gecko-handling-guide', 'gargoyle-gecko-health-issues-guide', 'gargoyle-gecko-tank-setup-guide'],
-  'mourning-gecko': ['mourning-gecko-cost-guide', 'mourning-gecko-handling-guide', 'mourning-gecko-health-issues-guide', 'mourning-gecko-tank-setup-guide', 'mourning-gecko-feeding-guide'],
-  'african-fat-tail': ['african-fat-tail-cost-guide', 'african-fat-tail-handling-guide', 'african-fat-tail-health-issues-guide', 'african-fat-tail-tank-setup-guide', 'african-fat-tail-feeding-guide'],
+  'gargoyle-gecko': ['gargoyle-gecko-cost-guide', 'gargoyle-gecko-handling-guide', 'gargoyle-gecko-health-issues-guide', 'gargoyle-gecko-tank-setup-guide', 'gargoyle-gecko-enrichment-guide'],
+  'mourning-gecko': ['mourning-gecko-cost-guide', 'mourning-gecko-handling-guide', 'mourning-gecko-health-issues-guide', 'mourning-gecko-tank-setup-guide', 'mourning-gecko-feeding-guide', 'mourning-gecko-enrichment-guide'],
+  'african-fat-tail': ['african-fat-tail-cost-guide', 'african-fat-tail-handling-guide', 'african-fat-tail-health-issues-guide', 'african-fat-tail-tank-setup-guide', 'african-fat-tail-feeding-guide', 'african-fat-tail-enrichment-guide'],
   'koi': ['koi-cost-guide', 'koi-handling-guide', 'koi-health-issues-guide', 'koi-tank-setup-guide', 'koi-feeding-guide'],
   'conure': ['conure-cost-guide', 'conure-handling-guide', 'conure-health-issues-guide', 'conure-tank-setup-guide'],
   'red-eared-slider': ['red-eared-slider-legal-guide', 'red-eared-slider-cost-guide', 'red-eared-slider-handling-guide', 'red-eared-slider-health-issues-guide', 'red-eared-slider-tank-setup-guide', 'red-eared-slider-feeding-guide'],
@@ -81,17 +81,17 @@ export const RELATED_ARTICLES = {
   'angelfish': ['angelfish-cost-guide', 'angelfish-handling-guide', 'angelfish-health-issues-guide', 'angelfish-tank-setup-guide', 'angelfish-feeding-guide'],
   'uromastyx': ['uromastyx-cost-guide', 'uromastyx-handling-guide', 'uromastyx-health-issues-guide', 'uromastyx-tank-setup-guide'],
   'tokay-gecko': ['tokay-gecko-cost-guide', 'tokay-gecko-handling-guide', 'tokay-gecko-health-issues-guide', 'tokay-gecko-tank-setup-guide', 'tokay-gecko-enrichment-guide'],
-  'african-grey': ['african-grey-parrot-legal-guide', 'african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide', 'african-grey-parrot-enrichment-guide'],
+  'african-grey': ['african-grey-parrot-legal-guide', 'african-grey-parrot-cost-guide', 'african-grey-parrot-handling-guide', 'african-grey-parrot-health-issues-guide', 'african-grey-parrot-tank-setup-guide', 'african-grey-parrot-enrichment-guide', 'african-grey-parrot-feeding-guide'],
   'jumping-spider': ['invertebrate-molting-guide', 'jumping-spider-feeding-guide', 'jumping-spider-cost-guide', 'jumping-spider-handling-guide', 'jumping-spider-health-issues-guide', 'jumping-spider-tank-setup-guide', 'jumping-spider-enrichment-guide'],
   'savannah-monitor': ['savannah-monitor-cost-guide', 'savannah-monitor-handling-guide', 'savannah-monitor-health-issues-guide', 'savannah-monitor-tank-setup-guide', 'savannah-monitor-enrichment-guide'],
   'russian-tortoise': ['russian-tortoise-cost-guide', 'russian-tortoise-handling-guide', 'russian-tortoise-health-issues-guide', 'russian-tortoise-tank-setup-guide', 'russian-tortoise-enrichment-guide'],
   'red-footed-tortoise': ['red-footed-tortoise-cost-guide', 'red-footed-tortoise-handling-guide', 'red-footed-tortoise-health-issues-guide', 'red-footed-tortoise-tank-setup-guide', 'red-footed-tortoise-feeding-guide', 'red-footed-tortoise-enrichment-guide'],
   'cockatoo': ['cockatoo-cost-guide', 'cockatoo-handling-guide', 'cockatoo-health-issues-guide', 'cockatoo-tank-setup-guide', 'cockatoo-screaming-feather-plucking-explained'],
   'stick-insect': ['stick-insect-cost-guide', 'stick-insect-handling-guide', 'stick-insect-health-issues-guide', 'stick-insect-tank-setup-guide'],
-  'leaf-tailed-gecko': ['leaf-tailed-gecko-cost-guide', 'leaf-tailed-gecko-handling-guide', 'leaf-tailed-gecko-health-issues-guide', 'leaf-tailed-gecko-tank-setup-guide'],
+  'leaf-tailed-gecko': ['leaf-tailed-gecko-cost-guide', 'leaf-tailed-gecko-handling-guide', 'leaf-tailed-gecko-health-issues-guide', 'leaf-tailed-gecko-tank-setup-guide', 'leaf-tailed-gecko-enrichment-guide'],
   'california-kingsnake': ['california-kingsnake-cost-guide', 'california-kingsnake-handling-guide', 'california-kingsnake-health-issues-guide', 'california-kingsnake-tank-setup-guide', 'california-kingsnake-enrichment-guide'],
   'box-turtle': ['box-turtle-legal-guide', 'box-turtle-cost-guide', 'box-turtle-handling-guide', 'box-turtle-health-issues-guide', 'box-turtle-tank-setup-guide', 'box-turtle-enrichment-guide'],
-  'oscar': ['oscar-fish-cost-guide', 'oscar-fish-handling-guide', 'oscar-fish-health-issues-guide', 'oscar-fish-tank-setup-guide'],
+  'oscar': ['oscar-fish-cost-guide', 'oscar-fish-handling-guide', 'oscar-fish-health-issues-guide', 'oscar-fish-tank-setup-guide', 'oscar-fish-feeding-guide'],
   'canary': ['canary-cost-guide', 'canary-handling-guide', 'canary-health-issues-guide', 'canary-tank-setup-guide'],
   'millipede': ['giant-millipede-cost-guide', 'giant-millipede-handling-guide', 'giant-millipede-health-issues-guide', 'giant-millipede-tank-setup-guide'],
   'corydoras-catfish': ['corydoras-catfish-cost-guide', 'corydoras-catfish-handling-guide', 'corydoras-catfish-health-issues-guide', 'corydoras-catfish-tank-setup-guide'],
@@ -104,8 +104,28 @@ export const RELATED_ARTICLES = {
   'quaker-parakeet': ['iguana-fireskink-quaker-overview', 'quaker-parakeet-cost-guide', 'quaker-parakeet-handling-guide', 'quaker-parakeet-health-issues-guide', 'quaker-parakeet-tank-setup-guide'],
 };
 
-// The standard 5-piece deep-dive quintet's suffixes, in display order.
-const STANDARD_SUFFIXES = ['cost-guide', 'handling-guide', 'health-issues-guide', 'tank-setup-guide', 'feeding-guide'];
+// The standard deep-dive set's suffixes, in display order. This list does three
+// jobs: it drives auto-detection below, it fixes the order articles appear in on
+// a guide page, and getDeepDiveSiblings sorts tied siblings by position in it.
+//
+// enrichment-guide joined the set once the enrichment articles started landing.
+// Before that it was a five-piece quintet, and an enrichment article could only
+// reach a guide page through a hand-written RELATED_ARTICLES entry, which put it
+// wherever that entry happened to list it: fifth on one species, seventh on
+// another. It is sixth here because that is where it belongs, after feeding.
+const STANDARD_SUFFIXES = ['cost-guide', 'handling-guide', 'health-issues-guide', 'tank-setup-guide', 'feeding-guide', 'enrichment-guide'];
+
+// Position in STANDARD_SUFFIXES, matched against the END of the slug rather than
+// against `${guideId}-${suffix}`. That matters for the handful of species whose
+// article prefix differs from their guide id (african-grey vs
+// african-grey-parrot-, tegu vs argentine-tegu-, hissing-cockroach vs
+// madagascar-hissing-cockroach-): those articles are wired by hand and would
+// otherwise sort as unrecognised extras. Anything that is not one of the six
+// sorts after all of them.
+function standardRank(slug) {
+  const i = STANDARD_SUFFIXES.findIndex((suffix) => slug.endsWith(`-${suffix}`));
+  return i === -1 ? STANDARD_SUFFIXES.length : i;
+}
 
 // Auto-detects a guide's standard deep-dive articles by matching mdxPosts
 // slugs against `${guideId}-${suffix}`, so the Deep Dive block starts working
@@ -130,7 +150,16 @@ export function getRelatedArticleSlugs(guideId, posts) {
   const manual = RELATED_ARTICLES[guideId] || [];
   const manualSet = new Set(manual);
   const auto = getAutoDetectedSlugs(guideId, posts).filter((slug) => !manualSet.has(slug));
-  return [...manual, ...auto];
+  // Sorted into the standard order rather than returned manual-first. The old
+  // order put every hand-written entry ahead of every auto-detected one, so a
+  // curated extra like snake-brumation-guide led the list while the article's
+  // own cost guide sat below it, and an enrichment article landed fifth, sixth
+  // or seventh depending on which of the six the manual entry happened to name.
+  // Sorting by STANDARD_SUFFIXES gives every guide page the same sequence.
+  //
+  // Stable sort, so the six standard pieces come first in their fixed order and
+  // everything else keeps the curated order it was written in, after them.
+  return [...manual, ...auto].sort((a, b) => standardRank(a) - standardRank(b));
 }
 
 // How many siblings the Deep Dive block shows. A species article never reaches

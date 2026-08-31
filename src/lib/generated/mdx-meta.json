@@ -593,6 +593,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/african-fat-tail-enrichment-guide.mdx",
+    "slug": "african-fat-tail-enrichment-guide",
+    "title": "African Fat-Tailed Gecko Enrichment: The Closest Cousin Was Studied",
+    "seoTitle": "African Fat-Tailed Gecko Enrichment Guide",
+    "excerpt": "The leopard gecko enrichment study tested five types and ranked them. Fat-tails are the closest relative anyone has tested, so that ranking is the best guide available.",
+    "date": "2026-10-22",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "African Fat-Tailed Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Geckos"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/african-fat-tail-enrichment.jpg",
+    "imageAlt": "An African fat-tailed gecko emerging from a humid hide onto damp substrate",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-22",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on African fat-tailed geckos?",
+        "a": "No. Nothing has been published on Hemitheconyx caudicinctus. The nearest evidence is the leopard gecko work, and the two are eublepharids, the same family, which makes this one of the shorter borrows on this site."
+      },
+      {
+        "q": "What did the leopard gecko study rank?",
+        "a": "Bashaw and colleagues tested five types of environmental enrichment. Thermal and feeding enrichment produced the strongest responses and increased behavioural diversity. Mirror-based visual enrichment was the weakest, with geckos largely not engaging with it."
+      },
+      {
+        "q": "How is a fat-tail different from a leopard gecko for enrichment purposes?",
+        "a": "Humidity. Fat-tails come from more humid West African habitats and need noticeably more moisture than leopard geckos, so the humid hide is less of an optional extra and more of a permanent requirement. Everything else transfers closely."
+      },
+      {
+        "q": "Is the three-hide system really enrichment?",
+        "a": "Both husbandry and enrichment. A warm hide, a cool hide and a humid hide are what let a gecko choose its temperature and humidity while staying concealed, which is behavioural choice rather than a checklist item. Thermal choice is what the leopard gecko study ranked first."
+      },
+      {
+        "q": "What is the best feeding enrichment for this species?",
+        "a": "Tong feeding, short supervised insect hunts in the enclosure, and varying when and where prey appears. Fat-tails are crepuscular and nocturnal, so evening feeding matches their activity window and gets a better response than daytime offering."
+      },
+      {
+        "q": "Do fat-tailed geckos need climbing structure?",
+        "a": "Some, but it is secondary. They are terrestrial and floor space plus a working hide setup does more for them than height. Low branches, cork flats and stacked slate give somewhere to rest off the ground without making the enclosure a climbing wall."
+      }
+    ],
+    "relatedProducts": [
+      "hide-exo-terra-gecko-cave-medium",
+      "sphagnum-moss",
+      "feeding-tongs-short-soft-tip-4pack"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/african-fat-tail-feeding-guide.mdx",
     "slug": "african-fat-tail-feeding-guide",
     "title": "African Fat-Tailed Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -13732,6 +13796,70 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/gargoyle-gecko-enrichment-guide.mdx",
+    "slug": "gargoyle-gecko-enrichment-guide",
+    "title": "Gargoyle Gecko Enrichment: Build Up, and Fill What You Build",
+    "seoTitle": "Gargoyle Gecko Enrichment Guide",
+    "excerpt": "The crested gecko stress-hormone study found geckos that engaged with novel objects sooner had lower baseline stress. Gargoyles are their closest studied relative.",
+    "date": "2026-10-22",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Gargoyle Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Geckos"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/gargoyle-gecko-enrichment.jpg",
+    "imageAlt": "A gargoyle gecko gripping a vertical cork slab in a densely planted vivarium",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-22",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on gargoyle geckos?",
+        "a": "No. Nothing has been published on Rhacodactylus auriculatus. The closest evidence is a study on crested geckos, the same genus group from New Caledonia, which compared reaction to novel objects against faecal glucocorticoid metabolite levels in two nocturnal gecko species."
+      },
+      {
+        "q": "What did that crested gecko study find?",
+        "a": "Crested geckos showed higher and more variable stress-hormone levels than leopard geckos, and individuals that interacted with novel objects sooner and for longer had lower baseline levels. That is a correlation rather than proof that novelty lowers stress, and it is worth stating that way."
+      },
+      {
+        "q": "How much height does a gargoyle gecko need?",
+        "a": "More than floor. They are arboreal New Caledonian geckos that live on vertical surfaces, so a tall enclosure with real structure in it gives them far more usable space than a wide flat one. Height without branches and planting is wasted."
+      },
+      {
+        "q": "Are gargoyles easier than crested geckos?",
+        "a": "Broadly similar husbandry, with gargoyles generally regarded as more robust and more tolerant of a slightly wider temperature range. The enrichment picture is close to identical, which is why the crested gecko work borrows so readily."
+      },
+      {
+        "q": "Can gargoyle geckos be housed together?",
+        "a": "Not casually. Unlike mourning geckos they are not colonial, and gargoyles in particular have a reputation for nipping tails in shared enclosures. Solo housing is the safe default for this species."
+      },
+      {
+        "q": "What is the best feeding enrichment?",
+        "a": "Both halves. A prepared fruit diet in shallow dishes placed at different heights, so feeding requires climbing, plus live insects released into the planting so they have to be hunted. Feeding enrichment ranked second in the leopard gecko study."
+      }
+    ],
+    "relatedProducts": [
+      "glass-terrarium-18x18x24",
+      "live-terrarium-plants",
+      "crested-gecko-diet-pangea-watermelon-complete-8oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/gargoyle-gecko-feeding-guide.mdx",
     "slug": "gargoyle-gecko-feeding-guide",
     "title": "Gargoyle Gecko Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -20664,6 +20792,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/leaf-tailed-gecko-enrichment-guide.mdx",
+    "slug": "leaf-tailed-gecko-enrichment-guide",
+    "title": "Leaf-Tailed Gecko Enrichment: Camouflage Only Works With Something to Match",
+    "seoTitle": "Leaf-Tailed Gecko Enrichment Guide",
+    "excerpt": "A gecko evolved to vanish against bark has nothing to vanish against in a bare enclosure. For this species, cover is not a hiding place, it is the whole behaviour.",
+    "date": "2026-10-23",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Leaf-Tailed Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Geckos"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/leaf-tailed-gecko-enrichment.jpg",
+    "imageAlt": "A leaf-tailed gecko flattened against a vertical cork slab, almost invisible",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-23",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on leaf-tailed geckos?",
+        "a": "No. Nothing has been published on Uroplatus. The closest evidence comes from other geckos: a 2024 tokay study on pair housing, a crested gecko study on novel objects and stress hormones, and the leopard gecko study that ranked five enrichment types."
+      },
+      {
+        "q": "Why is cover more important for this species than most?",
+        "a": "Because crypsis is their entire defence. A leaf-tailed gecko is built to be indistinguishable from bark or a dead leaf, and in a bare enclosure that adaptation has nothing to work against. The animal is exposed at all times, which for a species that relies on not being seen is a permanent stressor rather than a minor gap."
+      },
+      {
+        "q": "How much planting is enough?",
+        "a": "The test is whether the gecko can position itself anywhere in the enclosure and be genuinely hard to spot. If you can always find it immediately, there is not enough bark, foliage or depth in the layout."
+      },
+      {
+        "q": "Do they need a misting system?",
+        "a": "For most keepers it is the practical answer. Uroplatus need high humidity with proper drying cycles between mistings, and hand spraying several times a day is difficult to sustain. Automated misting is one of the few pieces of equipment that genuinely changes outcomes for this genus."
+      },
+      {
+        "q": "Are leaf-tailed geckos beginner animals?",
+        "a": "No. They are demanding on humidity, temperature and stress management, and many available animals are wild-caught with the health problems that brings. This is an advanced species and the enrichment picture assumes the husbandry is already right."
+      },
+      {
+        "q": "How should they be fed?",
+        "a": "Live prey, at night, released so it has to be hunted rather than presented. A magnetic feeding ledge mounted high suits an arboreal gecko that does not want to come to the floor to eat."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "leaf-tailed-gecko-magnetic-feeding-ledge",
+      "misting-system-mistking-starter-5th-gen"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
     "slug": "leaf-tailed-gecko-handling-guide",
     "title": "Should You Handle a Leaf-Tailed Gecko? Almost Never",
@@ -22996,6 +23188,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/mourning-gecko-enrichment-guide.mdx",
+    "slug": "mourning-gecko-enrichment-guide",
+    "title": "Mourning Gecko Enrichment: The Only One You Should Keep in Groups",
+    "seoTitle": "Mourning Gecko Enrichment Guide",
+    "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair them. This one starts from a group.",
+    "date": "2026-10-22",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Mourning Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Geckos"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/mourning-gecko-enrichment.jpg",
+    "imageAlt": "Several mourning geckos on the leaves of a densely planted bioactive vivarium",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-22",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why are mourning geckos kept in groups when most geckos are not?",
+        "a": "Because the species is parthenogenetic. Mourning geckos are all female and reproduce without males, and they naturally occur in colonies rather than as solitary territorial animals. Group housing is the normal state for them rather than an experiment."
+      },
+      {
+        "q": "Is there research supporting social housing in geckos?",
+        "a": "For this species, no. The nearest evidence is a 2024 study on tokay geckos, which measured enclosure use, basking and hiding across a move from single to pair housing and concluded pair housing improves welfare. That is a different genus and a much larger animal, so it is a supporting signal rather than proof."
+      },
+      {
+        "q": "How much vertical space do mourning geckos need?",
+        "a": "A lot relative to their size. They are small arboreal geckos that live on vertical surfaces and foliage, so a tall, densely planted enclosure gives them far more usable area than a wide flat one. Height with planting in it, not height alone."
+      },
+      {
+        "q": "What do you feed them for enrichment?",
+        "a": "Both halves of their diet. A prepared fruit-based diet in shallow dishes at several heights, plus small live insects like fruit flies or micro crickets that have to be chased. The hunting half is what a dish alone removes."
+      },
+      {
+        "q": "Can I keep a single mourning gecko?",
+        "a": "You can, and it is an odd choice for a colonial parthenogenetic species. A group is the default, and it is also more interesting to watch, since most of their visible behaviour is social."
+      },
+      {
+        "q": "Do they need UVB?",
+        "a": "Low-level UVB is increasingly recommended for nocturnal and crepuscular geckos, and provision is treated as a welfare input rather than optional in current reptile literature. A gradient the animals can move within costs little."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "glass-terrarium-18x18x24",
+      "crested-gecko-diet-pangea-watermelon-complete-8oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/mourning-gecko-feeding-guide.mdx",
