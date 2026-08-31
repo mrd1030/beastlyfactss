@@ -6,6 +6,26 @@ import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, 
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { getDisplayDate } from '@/lib/utils/date';
+import { facts } from '@/lib/data/facts';
+import { slugify } from '@/lib/utils/slugify';
+import { imagePathFor } from '@/lib/data/factImages';
+import FactModal from '@/components/shared/FactModal';
+import ImageLightbox from '@/components/shared/ImageLightbox';
+
+// A source pointing at /facts/<slug>/ is a fact card, not a page of its own:
+// that route just opens the Facts page with the fact's modal, and closing the
+// modal strands the player on the Facts page with the quiz gone. So fact
+// sources stay real links in the markup (the prerendered page keeps its
+// internal links) but a plain click opens the same modal here in place, the
+// way the homepage photo strip does. Modified clicks still get the real page.
+const factForSource = (to) => {
+  const match = /^\/facts\/([^/]+)\/?$/.exec(to || '');
+  if (!match) return null;
+  return facts.find(f => slugify(f.title) === match[1]) || null;
+};
+
+// Fact sources pop up in place; blog sources leave the quiz, so they say so.
+const sourceSuffix = (to) => (to.startsWith('/blog/') ? ' (article)' : '');
 
 // Plays one dated themed quiz (src/lib/data/quizzes/). Rendered by Quiz.jsx
 // when /quiz/:tab matches a themed quiz id instead of an evergreen tab.
@@ -18,6 +38,8 @@ export default function ThemedQuizPage({ quiz }) {
   const [answered, setAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [savedToPack, setSavedToPack] = useState(false);
+  const [popupFact, setPopupFact] = useState(null);
+  const [imageFact, setImageFact] = useState(null);
 
   const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
   const { scores, recordScore } = useQuizScores();
@@ -68,6 +90,14 @@ export default function ThemedQuizPage({ quiz }) {
       total,
     });
     setSavedToPack(true);
+  };
+
+  const handleSourceClick = (e, source) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const fact = factForSource(source.to);
+    if (!fact) return;
+    e.preventDefault();
+    setPopupFact(fact);
   };
 
   const handleShare = () => {
@@ -163,8 +193,8 @@ export default function ThemedQuizPage({ quiz }) {
                   <ul className="space-y-1.5">
                     {sourcePages.map(source => (
                       <li key={source.to}>
-                        <Link to={source.to} className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline">
-                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label}
+                        <Link to={source.to} onClick={(e) => handleSourceClick(e, source)} className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline">
+                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label + sourceSuffix(source.to)}
                         </Link>
                       </li>
                     ))}
@@ -215,8 +245,8 @@ export default function ThemedQuizPage({ quiz }) {
                         </p>
                         <p className="text-sm font-body text-foreground leading-relaxed">{question.explain}</p>
                         {question.source && (
-                          <Link to={question.source.to} className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary hover:underline">
-                            {`From: ${question.source.label}`} <ArrowRight className="w-3 h-3" />
+                          <Link to={question.source.to} onClick={(e) => handleSourceClick(e, question.source)} className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary hover:underline">
+                            {`From: ${question.source.label}${sourceSuffix(question.source.to)}`} <ArrowRight className="w-3 h-3" />
                           </Link>
                         )}
                       </div>
@@ -272,6 +302,12 @@ export default function ThemedQuizPage({ quiz }) {
           </div>
         )}
       </div>
+
+      {/* Rendered here at the page root, not inside the animated step
+          containers - a fixed overlay inside a transformed element would be
+          confined to it. Same arrangement as Home.jsx. */}
+      <FactModal fact={popupFact} onClose={() => setPopupFact(null)} onOpenImage={setImageFact} />
+      <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
     </div>
   );
 }
