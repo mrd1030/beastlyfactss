@@ -87,6 +87,16 @@ product rather than three.
 - **Product** Tortoise Forage Seed Mix – Grow Fresh Grazing Greens for Sulcata, Russian & Hermann's Tortoises – Oats, Rye & Alfalfa Blend for Indoor Trays or Outdoor Enclosures – Non-GMO Seed (1 lb)
 - **Link** https://www.amazon.com/dp/B0H3R2RXFJ?tag=beastlyfacts-20
 - **Category** Food & Treats
+- **rating** omit the field entirely. The listing shows 3 stars from only 3
+  reviews, which is noise rather than a signal, and 3.0 sitting beside a wall of
+  4.5s would read as a warning the sample size does not support. ProductCard and
+  ProductModal both guard with `rating != null` and fall back to price alone, so
+  an absent rating renders correctly. This would be the first of the catalogue to
+  use it. Revisit once the listing has a real review count.
+- **price** `"$15–$25"` (seen at $19.99)
+- **image** `/assets/images/affiliate/product-262.jpg` installed, cropped from the
+  A+ composite to the bag alone, since the full composite is unreadable at the
+  240x240 thumb and 320x240 card sizes
 - **covers** `["Growable browse or forage seed for tortoises"]`
 - **pets** `["reptiles-amphibians"]`
 
