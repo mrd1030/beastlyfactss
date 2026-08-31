@@ -47,6 +47,11 @@ export default {
   article, or fact) and links to it. Verify each claim against the actual
   page before writing the question; never write from memory. The source link
   is required, and only released pages qualify (date already passed).
+- Source link behavior is automatic, no wiring needed: a `/facts/<slug>/`
+  source opens that fact as a popup in place on the quiz page (players are
+  never stranded on the Facts page), blog sources display with an "(article)"
+  suffix, and any article cited as a source gets a "Quiz Yourself" backlink
+  in its sidebar.
 - **Theme tightly.** Eight questions about one world (one species, one
   habitat, one myth cluster) beat eight random facts. Mine recent releases:
   a species that just got its guide set, the week's facts, a comparison pair.
