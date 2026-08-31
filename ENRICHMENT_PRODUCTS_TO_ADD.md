@@ -1,6 +1,6 @@
 # Enrichment products to add to affiliateProducts.js
 
-Seven categories the enrichment guides need that the 261-item catalogue does not
+Eight categories the enrichment guides need that the 261-item catalogue does not
 cover at all. These are not size variants of anything already listed: each is a
 mechanism with no existing entry.
 
@@ -100,15 +100,25 @@ product rather than three.
 - **covers** `["Growable browse or forage seed for tortoises"]`
 - **pets** `["reptiles-amphibians"]`
 
-## 5. Reptile foraging puzzle feeder
-The 19-species gap. Wooden slow-feed puzzle box sized for a lizard rather than a
-dog, which is what the monitor, tegu, bearded dragon and tortoise guides need.
+## 5. Rolling treat dispenser, for pushing species
+Originally sourced as a single "reptile puzzle feeder" covering all 19 species.
+Mike caught the problem: the wooden board sourced for that role has a **rope pull**
+as one of its mechanisms, and a bearded dragon does not pull cord. That is a
+parrot and rodent action. A dragon **pushes and noses**, so a rolling dispenser
+that sheds mealworms as it moves is the mechanism that matches the animal.
 
-- **ASIN** `B0CZHKGB3M`
-- **Product** FlidRunest Bearded Dragon Feeder Puzzle, Wooden Lizard Feeding Box, Reptile Interactive Enrichment Food Feeder Training Treat Dispenser for Lizard Bearded Dragon Frog Hamster
-- **Link** https://www.amazon.com/dp/B0CZHKGB3M?tag=beastlyfacts-20
+Split into two products as a result, this one and item 8. Bearded dragon, leopard
+gecko and the smaller lizards get the ball; the manipulative species get the
+extraction board.
+
+- **ASIN** `B0BVFLSFHC`
+- **Product** ALI2 Lizard Feeder Toys Bearded Dragon Enrichment Reptile Interactive Rugby Shape Toy for Bearded Dragon, Lizard, Gecko and Small Animals
+- **Link** https://www.amazon.com/dp/B0BVFLSFHC?tag=beastlyfacts-20
 - **Category** Feeding & Watering
-- **covers** `["Foraging or puzzle feeder for reptiles"]`
+- **rating** `4.1`
+- **price** `"$7–$12"` (seen at $8.59)
+- **image** `/assets/images/affiliate/product-263.jpg` installed
+- **covers** `["Rolling treat dispenser for reptiles"]`
 - **pets** `["reptiles-amphibians"]`
 
 ## 6. Target stick and clicker
@@ -138,6 +148,31 @@ Also serves mouse, hamster and degu.
 - **Category** Small Mammal & Exotic Pet Gear
 - **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
 - **pets** `["small-mammals"]`
+
+## 8. Extraction puzzle board, for manipulative species
+The other half of the split. This is the product Mike flagged as mis-advertised
+for bearded dragons, and it is the right product for a different set of animals.
+
+Puzzle and extraction feeding is central to two guides specifically. The savannah
+monitor and Argentine tegu guides are both built on the varanid study where eight
+juvenile black-throated monitors were given a transparent tube of food and all
+eight opened it within ten minutes on the first trial, with solving latencies
+falling over later trials. That is an extraction problem, and a rolling ball is
+not one for an animal that size. Red-footed tortoise lists food puzzles in its
+priority order too.
+
+So: monitors, tegus and tortoises here. Not bearded dragons, whatever the listing
+photo shows.
+
+- **ASIN** `B0CZHKGB3M`
+- **Product** FlidRunest Bearded Dragon Feeder Puzzle, Wooden Lizard Feeding Box, Reptile Interactive Enrichment Food Feeder Training Treat Dispenser for Lizard Bearded Dragon Frog Hamster
+- **Link** https://www.amazon.com/dp/B0CZHKGB3M?tag=beastlyfacts-20
+- **Category** Feeding & Watering
+- **rating** `4.0`
+- **price** `"$15–$25"` (seen at $18.99)
+- **image** `/assets/images/affiliate/product-264.jpg` installed
+- **covers** `["Extraction or puzzle feeder for reptiles"]`
+- **pets** `["reptiles-amphibians"]`
 
 ---
 
