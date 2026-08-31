@@ -9,7 +9,7 @@ import { CATEGORIES } from '@/lib/data/categories';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
-import { searchLocalContent } from '@/lib/localSearch';
+import { searchLocalContent, normalizeQuery, correctQuery } from '@/lib/localSearch';
 
 function LocalResultRow({ result }) {
   return (
@@ -46,9 +46,16 @@ function LocalResultRow({ result }) {
 // localSearch.js exclude them: they read at /chronicles/, not in the blog.
 const searchablePosts = mdxPosts.filter(p => !isChroniclesPost(p));
 
-const matchesQuery = (post, q) =>
+// Variants come from normalizeQuery: the canonical (alias-expanded) query
+// plus the raw string, so "beardie" reaches bearded dragon articles too, not
+// just the guide that localSearch.js covers.
+const matchesQuery = (post, variants) =>
   [post.title, post.excerpt, ...(post.tags || [])]
-    .some(text => typeof text === 'string' && text.toLowerCase().includes(q));
+    .some(text => typeof text === 'string' && variants.some(v => text.toLowerCase().includes(v)));
+
+const EMPTY_LOCAL = { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
+const countLocal = (local) =>
+  local.guides.length + local.encyclopedia.length + local.beastlypedia.length + local.glossary.length;
 
 // "Short Stories" is a real category on MDX posts, but /blog/category/short-stories/
 // 301s to /chronicles/ (see public/_redirects, mirrored in prerender.mjs), so
@@ -71,20 +78,53 @@ export default function Search() {
   // replaces - but as state, since results are derived during render now and
   // nothing else re-renders this component when the flag flips.
   const [hasSearched, setHasSearched] = useState(Boolean(initialQuery));
+  // The typo rescue waits until typing settles (the same 400ms pause the URL
+  // update below uses), so a partial word like "beard" never flashes a
+  // correction mid-keystroke. Alias expansion has no such delay - it is an
+  // exact map lookup and inert on partial words.
+  const [settledQuery, setSettledQuery] = useState(initialQuery);
+  // Set by "Search instead for" on a corrected search; suppresses the typo
+  // rescue until the query changes again.
+  const [forceRaw, setForceRaw] = useState(false);
   const debounceRef = useRef(null);
 
   // Newest-first to match the old `| order(publishedAt desc)` query, so the
   // default "relevance" sort (deliberately a no-op) keeps the same ordering.
-  const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return [];
-    return searchablePosts
-      .filter(p => matchesQuery(p, q))
-      .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
-  }, [query]);
+  // Articles and local content resolve in one memo because the typo rescue
+  // may only rewrite the query once BOTH came back empty.
+  const { results, localResults, didYouMean, rescued } = useMemo(() => {
+    const norm = normalizeQuery(query);
+    if (!norm.raw) return { results: [], localResults: EMPTY_LOCAL, didYouMean: null, rescued: false };
+
+    const byDate = (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt);
+    let articles = searchablePosts.filter(p => matchesQuery(p, norm.variants));
+    let local = searchLocalContent(query);
+    let suggestion = norm.didYouMean;
+    let rescuedFlag = false;
+
+    // Last resort, after aliases found nothing: 1-2 letter typo correction,
+    // adopted only when the corrected query actually produces results.
+    if (!articles.length && !countLocal(local) && !forceRaw && settledQuery === query) {
+      const corrected = correctQuery(norm.canonical);
+      if (corrected) {
+        const cNorm = normalizeQuery(corrected);
+        const cArticles = searchablePosts.filter(p => matchesQuery(p, cNorm.variants));
+        const cLocal = searchLocalContent(corrected);
+        if (cArticles.length || countLocal(cLocal)) {
+          articles = cArticles;
+          local = cLocal;
+          suggestion = cNorm.canonical;
+          rescuedFlag = true;
+        }
+      }
+    }
+
+    return { results: articles.sort(byDate), localResults: local, didYouMean: suggestion, rescued: rescuedFlag };
+  }, [query, settledQuery, forceRaw]);
 
   const handleInput = (val) => {
     setQuery(val);
+    setForceRaw(false);
     if (val.trim()) setHasSearched(true);
     // trackSearch debounces and dedupes on its own, so it is safe to call on
     // every keystroke rather than nesting it inside the timeout below. It
@@ -93,6 +133,7 @@ export default function Search() {
     trackSearch(val);
     clearTimeout(debounceRef.current);
     debounceRef.current = setTimeout(() => {
+      setSettledQuery(val);
       navigate(val ? `/search/${encodeURIComponent(val)}/` : '/search/', { replace: true });
       if (val.trim()) {
         trackEvent('search_performed', { query: val });
@@ -119,7 +160,6 @@ export default function Search() {
   // MDX posts `results` already covers (capped at 6, without images, dates,
   // category filtering or sorting), so including it would list every article
   // match twice.
-  const localResults = useMemo(() => searchLocalContent(query), [query]);
   const localResultsFlat = [...localResults.guides, ...localResults.encyclopedia, ...localResults.beastlypedia, ...localResults.glossary];
 
   return (
@@ -171,6 +211,30 @@ export default function Search() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+        {/* Did-you-mean: never a silent rewrite. The input and URL keep the
+            raw string; this line says what the results actually show. A
+            rescued (typo-corrected) search offers a way back to the literal
+            query; an alias expansion doesn't need one, since the raw string's
+            own matches are already included alongside. */}
+        {didYouMean && (
+          <p className="mb-4 text-sm font-body text-muted-foreground">
+            {rescued ? (
+              <>
+                Showing results for <span className="font-semibold text-foreground">{didYouMean}</span>.{' '}
+                <button
+                  type="button"
+                  onClick={() => setForceRaw(true)}
+                  className="underline underline-offset-2 hover:text-foreground transition-colors"
+                >
+                  Search instead for &quot;{query.trim()}&quot;
+                </button>
+              </>
+            ) : (
+              <>Including results for <span className="font-semibold text-foreground">{didYouMean}</span>.</>
+            )}
+          </p>
+        )}
+
         {/* Guides / Encyclopedia / Glossary matches - static data, matched instantly client-side */}
         {query.trim() && localResultsFlat.length > 0 && (
           <div className="mb-6">
