@@ -771,3 +771,80 @@ perches in the background, cage bars close-spaced. Bright warm lighting, shallow
 depth of field. Scale should read small, the attitude should not. No hands, no
 people.
 ```
+
+### Enrichment guides, batch 10 (2026-11-01 to 11-02)
+
+Invertebrates. Same rules: 3:2 at 1168x784, animal mid-behavior, show the
+enrichment being used rather than the enclosure standing empty. The arachnid and
+insect shots should be sharp macro work, the shrimp shots clean underwater macro.
+
+#### tarantula-enrichment.jpg
+```
+A Brazilian black tarantula at the mouth of a burrow it has dug in deep substrate,
+front legs out on the surface and the rest of the body still inside, silk webbing
+visible around the entrance. Cork bark laid nearby, shallow water dish at the
+edge. Warm low lighting, velvety black setae catching a highlight. Macro, shallow
+depth of field on the front legs. No hands, no people.
+```
+
+#### emperor-scorpion-enrichment.jpg
+```
+A large glossy black emperor scorpion emerging from under a piece of cork bark in
+deep damp substrate, pincers forward and tail arched low. Visible humidity on the
+substrate, more cork hides in the background. Warm dim lighting suited to a
+nocturnal animal, macro with shallow depth of field on the pincers. No hands, no
+people.
+```
+
+#### praying-mantis-enrichment.jpg
+```
+A green praying mantis hanging upside down from mesh at the top of a tall
+enclosure, body fully extended downward, clear empty vertical space beneath it.
+Thin twigs and foliage lower in the frame, well clear of the drop. Bright clean
+lighting, macro on the head and forelimbs. The vertical clearance below the animal
+is the point of the composition. No hands, no people.
+```
+
+#### stick-insect-enrichment.jpg
+```
+A stick insect hanging from a fresh bramble stem in a tall mesh enclosure, mid-
+feed with a leaf edge visibly notched where it has been eating. Cut stems standing
+in a covered water container below, more fresh foliage around. Soft green natural
+light, macro, shallow depth of field on the head. Fresh living plant is the
+subject. No hands, no people.
+```
+
+#### giant-millipede-enrichment.jpg
+```
+A large dark giant millipede half buried in deep leaf litter and crumbling rotting
+hardwood, front third of the body out and antennae forward, segments and legs
+clearly visible. A cuttlebone resting on the substrate nearby. Damp earthy palette,
+soft diffuse lighting, macro. Substrate depth has to read clearly in the frame.
+No hands, no people.
+```
+
+#### cherry-shrimp-enrichment.jpg
+```
+Several bright red cherry shrimp grazing across a clump of green moss growing on
+driftwood, legs actively picking at the surface, one shrimp on a fallen leaf below.
+Clear planted freshwater aquarium behind. Bright clean underwater macro, shallow
+depth of field, strong red against green. Grazing in progress, not shrimp sitting
+still. No hands, no people.
+```
+
+#### amano-shrimp-enrichment.jpg
+```
+A large translucent amano shrimp gripping a sinking wafer on a piece of driftwood,
+both front claws working at it, body angled over the food. Planted aquarium
+background, a second shrimp approaching. Clean underwater macro, shallow depth of
+field on the claws. The animal actively feeding is the point. No hands, no people.
+```
+
+#### ghost-shrimp-enrichment.jpg
+```
+A translucent ghost shrimp picking through brown leaf litter on an aquarium floor,
+internal organs faintly visible through the shell, antennae extended. Dense moss
+and planting behind providing cover. Soft diffuse underwater lighting, clean macro,
+shallow depth of field. The transparency should read clearly against the darker
+leaf litter. No hands, no people.
+```

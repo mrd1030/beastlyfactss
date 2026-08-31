@@ -1504,6 +1504,70 @@
     "sourceCount": 6
   },
   {
+    "path": "/content/guides/amano-shrimp-enrichment-guide.mdx",
+    "slug": "amano-shrimp-enrichment-guide",
+    "title": "Amano Shrimp Enrichment: The Algae Runs Out and Nobody Notices",
+    "seoTitle": "Amano Shrimp Enrichment Guide",
+    "excerpt": "Amano shrimp are bought as a cleaning crew. They do the job, then the algae is gone, and a lot of them quietly starve in a spotless tank.",
+    "date": "2026-11-02",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Amano Shrimp",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Shrimp"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/amano-shrimp-enrichment.jpg",
+    "imageAlt": "An amano shrimp gripping a sinking wafer on driftwood, picking at it with both claws",
+    "emoji": "🦐",
+    "lastReviewed": "2026-11-02",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on amano shrimp welfare?",
+        "a": "Not on the species. The relevant work is the 2021 review that assessed over 300 papers against eight sentience criteria and concluded decapod crustaceans are probably sentient, which led the UK to extend animal welfare law to cover them."
+      },
+      {
+        "q": "Do amano shrimp need feeding?",
+        "a": "Yes, and this is the mistake the species is defined by. They are bought as an algae crew, they clear the algae efficiently, and then the food source they were bought for no longer exists. A spotless tank is a tank with nothing in it for an amano to eat."
+      },
+      {
+        "q": "How are they different from cherry shrimp?",
+        "a": "Larger, more active, longer lived and much better at clearing algae. They are also more assertive at feeding time and will take food from smaller shrimp. They will not breed in a freshwater tank, which cherry shrimp do readily."
+      },
+      {
+        "q": "Why will they not breed?",
+        "a": "Their larvae need brackish water to develop. Females carry eggs and larvae hatch, but in a freshwater aquarium the larvae die. Breeding them requires a deliberate brackish rearing setup, so an amano population does not replace itself."
+      },
+      {
+        "q": "Can they be kept with cherry shrimp?",
+        "a": "Usually, with the caveat that amanos are considerably bigger and will outcompete them at feeding time. Feed in more than one place, and do not assume the smaller shrimp are getting any of it."
+      },
+      {
+        "q": "What kills them?",
+        "a": "Copper, sudden water changes and slow starvation, in roughly that order of speed. The starvation one is the most common and the least noticed, because it happens over months in a tank that looks clean and healthy."
+      }
+    ],
+    "relatedProducts": [
+      "driftwood",
+      "corydoras-hikari-sinking-wafers",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/amano-shrimp-feeding-guide.mdx",
     "slug": "amano-shrimp-feeding-guide",
     "title": "Amano Shrimp Feeding: The Hobby's Best Algae Eater, With Real Limits",
@@ -7685,6 +7749,70 @@
     "sourceCount": 6
   },
   {
+    "path": "/content/guides/cherry-shrimp-enrichment-guide.mdx",
+    "slug": "cherry-shrimp-enrichment-guide",
+    "title": "Cherry Shrimp Enrichment: Surfaces to Graze, Not Food to Add",
+    "seoTitle": "Cherry Shrimp Enrichment Guide",
+    "excerpt": "A 2021 review of 300 papers concluded decapod crustaceans are probably sentient, and UK law changed to match. Shrimp keeping is a welfare topic now, whether or not it feels like one.",
+    "date": "2026-11-02",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Cherry Shrimp",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Shrimp"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cherry-shrimp-enrichment.jpg",
+    "imageAlt": "Red cherry shrimp grazing across a clump of moss and a piece of driftwood",
+    "emoji": "🦐",
+    "lastReviewed": "2026-11-02",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on shrimp welfare?",
+        "a": "There is a landmark review. Birch, Burn, Schnell, Browning and Crump assessed over 300 scientific publications against eight criteria for sentience and concluded that decapod crustaceans, including shrimp, are probably sentient. The UK subsequently extended animal welfare law to cover them."
+      },
+      {
+        "q": "Does that finding apply to cherry shrimp specifically?",
+        "a": "Partly, and it is worth being careful here. The review found the evidence strongest for true crabs and lobsters and explicitly weaker for penaeid shrimps, flagging research gaps. Dwarf freshwater shrimp were not the strongest case in the report, and the general conclusion still covers decapods as a group."
+      },
+      {
+        "q": "What is the main enrichment for a cherry shrimp?",
+        "a": "Surface area. Almost everything a cherry shrimp does is graze biofilm off surfaces, so moss, plants, driftwood and leaf litter give the colony more places to do the thing it does, rather than more food in a dish."
+      },
+      {
+        "q": "How many should I keep?",
+        "a": "More than a handful. Cherry shrimp are more active, more visible and more confident in a colony, and ten or more is a sensible starting point in a tank of reasonable size. A pair or trio spends most of its time hidden."
+      },
+      {
+        "q": "What kills cherry shrimp most often?",
+        "a": "Water problems, and copper in particular. They are far more sensitive to copper, ammonia and sudden parameter swings than fish are, and a treatment or plant fertiliser that is safe for fish can wipe out a colony."
+      },
+      {
+        "q": "Do I need to worry about moulting?",
+        "a": "Yes, and it is mostly a water chemistry question. Failed moults are common when mineral content is wrong or swings suddenly, and stable parameters plus a steady mineral supply do more to prevent them than anything else."
+      }
+    ],
+    "relatedProducts": [
+      "live-terrarium-plants",
+      "driftwood",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/cherry-shrimp-feeding-guide.mdx",
     "slug": "cherry-shrimp-feeding-guide",
     "title": "Cherry Shrimp Feeding: Diet, Portions, and the Overfeeding Trap",
@@ -12033,6 +12161,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/emperor-scorpion-enrichment-guide.mdx",
+    "slug": "emperor-scorpion-enrichment-guide",
+    "title": "Emperor Scorpion Enrichment: One of the Few You Can Keep in a Group",
+    "seoTitle": "Emperor Scorpion Enrichment Guide",
+    "excerpt": "Emperor scorpions are subsocial in the wild, with mothers and offspring sharing a burrow. Communal housing is possible here, which is rare among arachnids, and it is not free.",
+    "date": "2026-11-01",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Emperor Scorpion",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Scorpions"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/emperor-scorpion-enrichment.jpg",
+    "imageAlt": "A black emperor scorpion emerging from a burrow under cork bark in deep damp substrate",
+    "emoji": "🦂",
+    "lastReviewed": "2026-11-01",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on emperor scorpions?",
+        "a": "No. Nothing has been published on Pandinus imperator enrichment. The nearest evidence is the 2024 tarantula housing study, where a six times larger and more complex enclosure produced 77 percent larger home ranges and a bolder response to novelty, but no change in activity and no clear preference."
+      },
+      {
+        "q": "Can emperor scorpions really be housed together?",
+        "a": "More successfully than almost any other arachnid. Subsociality is reported in the wild, with mothers and offspring or siblings sharing a burrow. In captivity it works with ample space, multiple hides and every animal well fed, and it is not recommended for a first-time keeper."
+      },
+      {
+        "q": "What goes wrong in a communal setup?",
+        "a": "Cannibalism, almost always downstream of crowding or hunger. A group in a small enclosure with one hide and irregular feeding is the setup that goes wrong. Space, hides and food are the three things holding it together."
+      },
+      {
+        "q": "How deep should the substrate be?",
+        "a": "Deep enough to dig a real burrow rather than scratch a depression. They spend most of the day underground or under cover and become active at night, so burrow depth is the single most important thing in the enclosure."
+      },
+      {
+        "q": "Why do they glow under UV?",
+        "a": "Scorpion cuticle fluoresces under ultraviolet light, which is a genuinely useful husbandry trick for finding an animal that spends its life hidden. It is a checking tool rather than enrichment, and brief use only."
+      },
+      {
+        "q": "Do they need high humidity?",
+        "a": "Yes. Emperor scorpions come from West African rainforest and need warm, humid conditions with damp substrate and good ventilation. Dry conditions cause failed moults, which is one of the commonest causes of death in captive scorpions."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-tarantula-coconut-fiber-peat",
+      "cork-bark-round-small",
+      "uv-blacklight-uvbeast-v3"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/emperor-scorpion-feeding-guide.mdx",
     "slug": "emperor-scorpion-feeding-guide",
     "title": "Emperor Scorpion Feeding: Schedule, Diet, and Why Fasting Is Normal",
@@ -15627,6 +15819,70 @@
     "sourceCount": 5
   },
   {
+    "path": "/content/guides/ghost-shrimp-enrichment-guide.mdx",
+    "slug": "ghost-shrimp-enrichment-guide",
+    "title": "Ghost Shrimp Enrichment: Sold as Feeders, Kept as Pets",
+    "seoTitle": "Ghost Shrimp Enrichment Guide",
+    "excerpt": "A tank of ghost shrimp is usually several species in one bag, kept in feeder conditions, sold cheap. Most of what goes wrong happened before you bought them.",
+    "date": "2026-11-02",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ghost Shrimp",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Shrimp"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ghost-shrimp-enrichment.jpg",
+    "imageAlt": "A translucent ghost shrimp picking through leaf litter on an aquarium floor",
+    "emoji": "🦐",
+    "lastReviewed": "2026-11-02",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on ghost shrimp welfare?",
+        "a": "Not on the species. The relevant work is the 2021 review that weighed over 300 papers against eight criteria and concluded decapod crustaceans are probably sentient, which prompted the UK to extend animal welfare law to cover them."
+      },
+      {
+        "q": "Why do ghost shrimp die so quickly after purchase?",
+        "a": "Usually because of what happened before purchase. They are sold cheaply as feeder animals, held in crowded tanks with poor water, and often shipped and handled roughly. A high proportion of losses in the first two weeks are damage that was already done."
+      },
+      {
+        "q": "Are ghost shrimp one species?",
+        "a": "No. The name covers several translucent Palaemonetes and similar species sold interchangeably, and a single bag can contain more than one. That is why care advice for them varies so much and why some individuals behave differently from others."
+      },
+      {
+        "q": "Are they safe with small fish?",
+        "a": "Not entirely. Some of the species sold under this name are opportunistically predatory and will take fry, very small fish and weaker tankmates. Larger individuals are the ones to watch."
+      },
+      {
+        "q": "What is the most useful thing I can do for newly bought ones?",
+        "a": "Acclimate slowly and give them a quiet, stable, planted tank for the first few weeks. Recovery from the feeder trade is a bigger factor in survival than anything you add to the enclosure afterwards."
+      },
+      {
+        "q": "Will they breed?",
+        "a": "Sometimes. Some of the species sold as ghost shrimp have larvae that develop in freshwater, and others need brackish. Since the bag composition is uncertain, treat breeding as a bonus rather than a plan."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "sponge-filter",
+      "live-terrarium-plants"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/ghost-shrimp-feeding-guide.mdx",
     "slug": "ghost-shrimp-feeding-guide",
     "title": "Ghost Shrimp Feeding: What They'll Actually Eat, Including Each Other",
@@ -15932,6 +16188,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/giant-millipede-enrichment-guide.mdx",
+    "slug": "giant-millipede-enrichment-guide",
+    "title": "Giant Millipede Enrichment: The Substrate Is the Food and the Home",
+    "seoTitle": "Giant Millipede Enrichment Guide",
+    "excerpt": "For most pets, substrate is flooring. For a giant millipede it is the burrow, the humidity buffer and most of the diet at the same time.",
+    "date": "2026-11-02",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Millipede",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Insects"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/giant-millipede-enrichment.jpg",
+    "imageAlt": "A giant millipede half buried in deep leaf litter and decaying wood substrate",
+    "emoji": "🪲",
+    "lastReviewed": "2026-11-02",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on millipedes?",
+        "a": "No. Nothing has been published on millipede enrichment. The nearest evidence is the 2024 tarantula housing study, where a larger and more complex enclosure produced larger home ranges and a bolder response to novelty, without changing overall activity or producing a preference."
+      },
+      {
+        "q": "Why does substrate matter so much for this animal?",
+        "a": "Because a millipede eats it. They are detritivores that consume decaying leaf litter and rotting hardwood, so the substrate is simultaneously the burrow, the humidity buffer and the bulk of the diet. Nothing else in the enclosure comes close."
+      },
+      {
+        "q": "How deep should it be?",
+        "a": "Deep enough to bury completely, which for a large species means several inches and more is better. They burrow to moult and spend a great deal of time under the surface, and shallow substrate removes most of what the animal does."
+      },
+      {
+        "q": "Do they need calcium?",
+        "a": "Yes, and it is easy to overlook. Millipedes need calcium for the exoskeleton, and a cuttlebone left on the substrate is the standard way to provide it. Deficiency shows up at moults, which is when this species is most vulnerable."
+      },
+      {
+        "q": "Can millipedes be kept together?",
+        "a": "Yes. They are not predatory or territorial and are commonly kept in groups, with space and substrate volume the only real limits. Mixing species is discouraged because of parasite and mite transfer rather than aggression."
+      },
+      {
+        "q": "Why should I not use fresh wood or garden soil?",
+        "a": "Fresh wood has no nutritional value to a detritivore and garden soil may carry pesticides, fertiliser or parasites. Rotting hardwood and pesticide-free leaf litter are what they actually eat, and getting this wrong is the commonest reason a millipede slowly declines."
+      }
+    ],
+    "relatedProducts": [
+      "giant-millipede-organic-topsoil-substrate",
+      "bird-cuttlebone-penn-plax-2ct",
+      "fine-mist-spray-bottle"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
@@ -26708,6 +27028,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/praying-mantis-enrichment-guide.mdx",
+    "slug": "praying-mantis-enrichment-guide",
+    "title": "Praying Mantis Enrichment: Height Is a Moulting Requirement, Not a Preference",
+    "seoTitle": "Praying Mantis Enrichment Guide",
+    "excerpt": "A mantis moults hanging upside down and has to pull itself free of its own skin. If the enclosure is too short, it lands on the floor half out and dies there.",
+    "date": "2026-11-01",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Praying Mantis",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Insects"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/praying-mantis-enrichment.jpg",
+    "imageAlt": "A green praying mantis hanging upside down from mesh at the top of a tall enclosure",
+    "emoji": "🦗",
+    "lastReviewed": "2026-11-01",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on praying mantids?",
+        "a": "No. Nothing has been published on mantis enrichment. The nearest evidence is the 2024 tarantula housing study, where a much larger and more complex enclosure produced larger home ranges and a bolder response to novelty, without changing activity levels or producing a housing preference."
+      },
+      {
+        "q": "How tall does the enclosure need to be?",
+        "a": "The common rule is at least three times the mantis's body length in clear vertical space, because a mantis moults hanging upside down and has to have room to pull itself completely free. This is the single most important number in mantis keeping."
+      },
+      {
+        "q": "What happens if it is too short?",
+        "a": "The animal drops before it is fully out of the old skin, and a mantis that lands part-moulted usually ends up with deformed limbs or dies. Failed moults are the leading cause of death in captive mantids and most of them are enclosure geometry."
+      },
+      {
+        "q": "What should the top of the enclosure be?",
+        "a": "Something the mantis can grip securely upside down for hours: mesh, screen or a rough surface. Smooth glass or plastic at the top is a moulting hazard, because a mantis that loses its grip mid-moult does not get a second attempt."
+      },
+      {
+        "q": "Do mantids need live prey?",
+        "a": "Effectively yes. They are visual ambush hunters that respond to movement, and most will ignore a dead insect entirely. Live flying prey is also the closest thing to enrichment this animal has, since hunting is most of its behavioural repertoire."
+      },
+      {
+        "q": "Can mantids be kept together?",
+        "a": "No. They are cannibalistic and will eat each other at any size difference and often at none. Solo housing is the only sensible default outside of deliberate, supervised breeding."
+      }
+    ],
+    "relatedProducts": [
+      "mantis-enclosure-exo-terra-nano-tall",
+      "climbing-branch-mopani-wood",
+      "feeding-tongs-entomology-forceps-fine-tip"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
     "slug": "praying-mantis-handling-guide",
     "title": "Should You Handle a Praying Mantis? Gently, and Rarely",
@@ -30459,6 +30843,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/stick-insect-enrichment-guide.mdx",
+    "slug": "stick-insect-enrichment-guide",
+    "title": "Stick Insect Enrichment: Fresh Leaves and Room to Hang",
+    "seoTitle": "Stick Insect Enrichment Guide",
+    "excerpt": "A stick insect's whole life is standing on a plant eating it. The enrichment question is unusually simple, and the moulting height requirement is unusually strict.",
+    "date": "2026-11-01",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Stick Insect",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Insects"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/stick-insect-enrichment.jpg",
+    "imageAlt": "A stick insect hanging from a bramble stem in a tall mesh enclosure, feeding on a leaf",
+    "emoji": "🦗",
+    "lastReviewed": "2026-11-01",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on stick insects?",
+        "a": "No. Nothing has been published on phasmid enrichment. The nearest evidence is the 2024 tarantula housing study, where a much larger, more complex enclosure produced larger home ranges and a bolder response to novelty, but no change in overall activity and no housing preference."
+      },
+      {
+        "q": "How tall does the enclosure need to be?",
+        "a": "The standard rule is at least three times the insect's body length in clear vertical space, for the same reason as mantids: a stick insect moults hanging and needs room to pull itself completely free before it touches anything below."
+      },
+      {
+        "q": "What goes wrong if it is too short?",
+        "a": "Failed moults, which are the leading cause of death and deformity in captive stick insects. An animal that touches down before it is out ends up with bent or missing legs, and often does not survive the next moult either."
+      },
+      {
+        "q": "What should they eat?",
+        "a": "Fresh live host plant, species dependent, with bramble the most common all-rounder for the species usually kept. Leaves need replacing before they dry out, and cut stems should stand in water with the opening blocked so nobody drowns in it."
+      },
+      {
+        "q": "Is a stick insect enrichment guide even necessary?",
+        "a": "It is a short one, honestly. This is a herbivore whose behavioural repertoire is standing on a plant, eating it, and occasionally swaying. The useful advice is about getting the plant, the height and the humidity right rather than about stimulation."
+      },
+      {
+        "q": "Can stick insects be kept together?",
+        "a": "Yes, easily, and most species are kept in groups. They are not predatory or territorial. The limit is space and food rather than compatibility, and overcrowding shows up as damaged legs and antennae."
+      }
+    ],
+    "relatedProducts": [
+      "mantis-enclosure-exo-terra-nano-tall",
+      "fine-mist-spray-bottle",
+      "substrate-tarantula-coconut-fiber-peat"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
     "slug": "stick-insect-handling-guide",
     "title": "How to Handle a Stick Insect (And Why You Can Keep More Than One)",
@@ -31941,6 +32389,70 @@
       "cork-bark-round-hide",
       "shallow-water-dish",
       "dubia-roaches-bag"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/tarantula-enrichment-guide.mdx",
+    "slug": "tarantula-enrichment-guide",
+    "title": "Tarantula Enrichment: The Spider Sat Still in Both Enclosures",
+    "seoTitle": "Tarantula Enrichment Guide",
+    "excerpt": "A six times larger enclosure did not make tarantulas more active and they did not prefer it. They did use more of it, and they were bolder afterwards in a strange room.",
+    "date": "2026-11-01",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Tarantula",
+      "Enrichment",
+      "Care Tips",
+      "Invertebrate Enrichment",
+      "Invertebrate Welfare",
+      "Spiders"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/tarantula-enrichment.jpg",
+    "imageAlt": "A Brazilian black tarantula at the mouth of a burrow it has dug in deep substrate",
+    "emoji": "🕷️",
+    "lastReviewed": "2026-11-01",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on tarantulas?",
+        "a": "Yes, one controlled study. Stalter and colleagues housed Brazilian black tarantulas in Standard and Complex enclosures, where Complex was about six times larger with six times as many structural elements, and published the results in PLoS ONE in 2024."
+      },
+      {
+        "q": "What did it find?",
+        "a": "Three things, and they do not all point the same way. Activity budgets were about the same in both, with inactivity accounting for nearly all observed behaviour. Home ranges were 77 percent larger and core areas 113 percent larger in the complex enclosure. And in a novel environment test, tarantulas had 150 percent greater odds of being active after living in the complex condition."
+      },
+      {
+        "q": "Did the spiders prefer the complex enclosure?",
+        "a": "No. Offered both at once they showed no clear preference. The authors were straightforward about that, and about the small sample size, and still concluded complexity probably helps."
+      },
+      {
+        "q": "So does a bigger enclosure help or not?",
+        "a": "The honest answer is that the evidence is mixed and leans yes. The spiders used considerably more space when they had it and behaved more boldly in a novel setting afterwards, which are reasonable welfare signals. They did not become more active overall and they did not choose it."
+      },
+      {
+        "q": "Does a tarantula sitting still mean something is wrong?",
+        "a": "No. Inactivity accounted for nearly all observed behaviour in both housing conditions in that study. Tarantulas are ambush predators and sitting motionless is the normal state, not a symptom."
+      },
+      {
+        "q": "What matters most in practice?",
+        "a": "Substrate depth appropriate to the species, a retreat, water, and correct humidity and ventilation. A terrestrial burrower on shallow substrate in a display enclosure is the most common genuine husbandry failure, and it matters more than anything on the enrichment list."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-tarantula-coconut-fiber-peat",
+      "cork-bark-round-hide",
+      "shallow-water-dish"
     ],
     "factFile": false,
     "animal": null,
