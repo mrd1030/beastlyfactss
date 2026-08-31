@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8" />
     <!-- Theme, applied before first paint. useDarkMode() sets the `dark` class
-         in a useEffect, which does not run until React has hydrated, and
-         prerender.mjs bakes class="dark" into every page because it renders with
-         the default. A returning light-mode visitor therefore got a dark flash
-         while waiting for hydration to undo it. This reads the same
-         localStorage key synchronously and toggles the class both ways, so the
-         first paint is already correct. The effect then agrees with it.
+         in a useEffect, which does not run until React has hydrated, so
+         whichever theme prerender.mjs baked in is what a visitor sees until
+         then. A visitor whose stored choice differs from the default got a
+         flash of the wrong theme while waiting for hydration to undo it. This
+         reads the same localStorage key synchronously and toggles the class
+         both ways, so the first paint is already correct. The effect then
+         agrees with it. The default here must match useDarkMode's default in
+         useLocalStorage.js, or every first-time visitor gets that same flash.
          Must stay above any stylesheet. theme-color is deliberately left to the
          effect: it colours OS chrome, not the page, so it cannot flash. -->
-    <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'true'))}catch(e){}</script>
+    <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'false'))}catch(e){}</script>
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script>
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
-    <!-- Dark is this site's default (useDarkMode in useLocalStorage.js
-         defaults to true), so this static fallback matches that rather than
-         white - useDarkMode itself keeps this in sync with the live toggle
-         after mount (see its .dark class effect). -->
-    <meta name="theme-color" content="#0f1a15">
+    <!-- Light is this site's default (useDarkMode in useLocalStorage.js
+         defaults to false), so this static fallback matches that rather than
+         the dark ground - useDarkMode itself keeps this in sync with the live
+         toggle after mount (see its .dark class effect). -->
+    <meta name="theme-color" content="#FDF9F1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Beastly Facts">
     <!-- iOS splash screens: Safari renders these before any JS runs, one per
          device size/DPR combo (no auto-generation like Android gets from the
