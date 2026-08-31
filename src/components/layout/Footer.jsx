@@ -23,7 +23,7 @@ export default function Footer() {
     </Link>
   </div>
             <p className="text-xs text-foreground/80 font-body leading-relaxed mb-4 max-w-[250px]">
-              Animal facts and pet care guides. For reptile keepers and animal lovers everywhere.
+              Facts that roar. Guides that care. For keepers and anyone who likes animals enough to look them up.
             </p>
             <div className="mt-4">
               <DonateButton className="w-full font-body font-bold" />

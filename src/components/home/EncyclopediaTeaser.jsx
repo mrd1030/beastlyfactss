@@ -68,7 +68,7 @@ export default function EncyclopediaTeaser() {
               Animal Encyclopedia
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`Animal profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish`}
+              {`Pet species profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish.`}
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

@@ -20,9 +20,12 @@ export default function Newsletter() {
                         {/* Left: email promo. Critter Digest is the newsletter name. */}
                         <div>
                             <span className="text-3xl block mb-3">📰</span>
-                            <h2 className="font-display font-bold text-2xl text-foreground mb-2">
+                            <h2 className="font-display font-bold text-2xl text-foreground mb-1">
                                 Critter Digest
                             </h2>
+                            <p className="text-xs font-body font-semibold text-secondary mb-3">
+                                Facts that roar. Guides that care.
+                            </p>
                             <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
                                 The weekly email. A Sunday roundup of verified animal facts and practical care tips. No spam, ever.
                             </p>
