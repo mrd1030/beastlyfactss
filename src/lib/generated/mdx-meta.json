@@ -16294,6 +16294,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/green-anole-enrichment-guide.mdx",
+    "slug": "green-anole-enrichment-guide",
+    "title": "Green Anole Enrichment: The Studies Exist, and They Found Nothing",
+    "seoTitle": "Green Anole Enrichment Guide",
+    "excerpt": "Cage size, added perches, routine handling, four months of captivity. Researchers measured all four in green anoles and found no effect from any of them. That result needs reading carefully.",
+    "date": "2026-10-24",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Green Anole",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/green-anole-enrichment.jpg",
+    "imageAlt": "A green anole perched on a thin branch among broad leaves in a planted terrarium",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-24",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on green anoles?",
+        "a": "Yes, unusually. Several papers in Animal Welfare examined cage size, environmental provisioning with perches and leaf refuges, and routine handling in Anolis carolinensis, plus a study on the effect of four months of captivity. All of them reported no measurable effect on the outcomes they tracked."
+      },
+      {
+        "q": "Does that mean a bare enclosure is fine?",
+        "a": "No. Those studies measured body mass, tail-base width, heterophil to lymphocyte ratios, faecal corticosterone metabolites and scored behaviour. None of that captures whether an animal has anything to do. A lizard can return a normal stress panel and still be sitting in a box with no opportunities in it."
+      },
+      {
+        "q": "Why would the studies find nothing?",
+        "a": "The tested ranges were narrow. Cage volumes spanned roughly 0.05 to 0.2 cubic metres, which is small at both ends, so the comparison was between a small cage and a slightly larger small cage. Corticosterone metabolites and H/L ratios are also blunt instruments that move for many reasons."
+      },
+      {
+        "q": "So what should I actually build?",
+        "a": "A tall, densely planted enclosure with vertical perches at several heights and a proper basking gradient. That comes from anole natural history and thermal biology rather than from the enrichment studies, and it is well supported independently of them."
+      },
+      {
+        "q": "Can green anoles live together?",
+        "a": "One male with females can work in a large, heavily planted enclosure. Two males cannot. Males are display animals with a dewlap built for territorial signalling, and putting two in a shared space produces continuous confrontation."
+      },
+      {
+        "q": "Do anoles drink from a bowl?",
+        "a": "Mostly not. They take droplets off leaves and glass, so misting once or twice a day is how they actually hydrate. A standing dish is worth having and should not be your hydration plan."
+      }
+    ],
+    "relatedProducts": [
+      "green-anole-enclosure-24x24x24",
+      "live-terrarium-plants",
+      "fine-mist-spray-bottle"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/green-anole-handling-guide.mdx",
     "slug": "green-anole-handling-guide",
     "title": "How to Handle a Green Anole (Carefully, and Rarely)",
@@ -16540,6 +16604,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/green-iguana-enrichment-guide.mdx",
+    "slug": "green-iguana-enrichment-guide",
+    "title": "Green Iguana Enrichment: Hatchlings Are Social, Adults Are Not",
+    "seoTitle": "Green Iguana Enrichment Guide",
+    "excerpt": "Wild hatchling iguanas that slept in larger groups grew faster. The same species, grown up, will fight anything it can reach. Both facts belong in the same guide.",
+    "date": "2026-10-23",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Green Iguana",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/green-iguana-enrichment.jpg",
+    "imageAlt": "A green iguana resting on a wide elevated branch below a basking lamp",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-23",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on green iguana behaviour?",
+        "a": "Yes, and more than almost any other pet lizard. Burghardt and colleagues published on hatchling social behaviour at a Panamanian nesting site in Science in 1977, and follow-up work covered kinship recognition, grouping, and the relationship between sleeping group size and growth rate."
+      },
+      {
+        "q": "What did the group size finding show?",
+        "a": "Hatchlings followed on Barro Colorado Island for three years grew significantly faster when they slept in larger groups. That is a correlation from field observation rather than a controlled experiment, and it is still a striking result for an animal widely assumed to be asocial."
+      },
+      {
+        "q": "Should I keep green iguanas together?",
+        "a": "Generally no. Hatchlings group naturally, but adults are territorial, and adult males in particular will fight and injure each other and can become dangerous to handle during breeding season. The sociality finding is about juveniles and does not extend to a pair of adults in a room."
+      },
+      {
+        "q": "What is the biggest enrichment problem with this species?",
+        "a": "Space, and it is not close. A green iguana reaches five to six feet and needs an enclosure or room measured in feet rather than gallons. Almost every welfare problem in captive iguanas traces back to an animal bought at six inches and housed as though it will stay that size."
+      },
+      {
+        "q": "Do iguanas need climbing structure?",
+        "a": "They are arboreal, so yes, and it has to hold their adult weight. Wide, sturdy, anchored branches and elevated platforms let an iguana get up high and survey, which is where the species is comfortable. A floor-level setup is the wrong shape for the animal."
+      },
+      {
+        "q": "How do you enrich feeding for a herbivore?",
+        "a": "By scattering and varying it. Whole leaves clipped at height, food in more than one place, and rotating variety across the week turn eating into foraging. A single bowl of chopped salad in the same corner every day removes the searching part entirely."
+      }
+    ],
+    "relatedProducts": [
+      "climbing-branch-mopani-wood",
+      "bearded-dragon-hammock-seagrass-2pc",
+      "calcium-repashy-superveggie-6oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/green-iguana-handling-guide.mdx",
@@ -19658,6 +19786,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/jacksons-chameleon-enrichment-guide.mdx",
+    "slug": "jacksons-chameleon-enrichment-guide",
+    "title": "Jackson's Chameleon Enrichment: A Mountain Animal in a Warm House",
+    "seoTitle": "Jackson's Chameleon Enrichment Guide",
+    "excerpt": "For this species the most valuable enrichment is a temperature most keepers are accidentally exceeding. Everything else comes after the enclosure stops being too hot.",
+    "date": "2026-10-24",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Jackson's Chameleon",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/jacksons-chameleon-enrichment.jpg",
+    "imageAlt": "A horned Jackson's chameleon moving along a mossy branch in a cool planted enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-24",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on Jackson's chameleons?",
+        "a": "No. Nothing has been published on Trioceros jacksonii. The nearest evidence is the veiled chameleon isolation study, which found that hatchlings reared alone for two months grew into more submissive, duller, worse-foraging animals. Different genus, same family, so it is a reasonable borrow."
+      },
+      {
+        "q": "What makes Jackson's chameleons different from veiled chameleons?",
+        "a": "Altitude. They come from cool, humid montane forest in East Africa, so they need noticeably lower temperatures and a real night-time drop. A room temperature that suits a veiled chameleon can be lethal to a Jackson's over time."
+      },
+      {
+        "q": "What is the most important enrichment item for this species?",
+        "a": "Getting the temperature down. That sounds like husbandry rather than enrichment, and for a montane animal being kept too warm it is the change that unlocks every other behaviour. A chronically overheated chameleon does not climb, hunt or display much of anything."
+      },
+      {
+        "q": "Do they need a misting system?",
+        "a": "In practice, yes. They drink moving droplets off leaves, need high humidity with drying cycles between mistings, and the humidity requirement is higher than for most chameleons kept in the hobby. Hand spraying enough times a day is difficult to sustain."
+      },
+      {
+        "q": "Can Jackson's chameleons be kept together?",
+        "a": "No, not as adults. They are less openly aggressive than veiled chameleons, which makes the stress harder to spot rather than absent. Solo housing is correct, and a subordinate chameleon in a shared enclosure declines quietly."
+      },
+      {
+        "q": "Are wild-caught Jackson's chameleons common?",
+        "a": "Historically yes, and it matters here. Wild-caught animals arrive with parasite loads and transport stress, and a stressed imported chameleon needs quarantine, veterinary attention and quiet far more than it needs enrichment objects."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-zoo-med-reptibreeze-24x24x48",
+      "live-terrarium-plants",
+      "automatic-misting-system-fogger"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/jacksons-chameleon-handling-guide.mdx",
@@ -27909,6 +28101,70 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/rosy-boa-enrichment-guide.mdx",
+    "slug": "rosy-boa-enrichment-guide",
+    "title": "Rosy Boa Enrichment: A Slow Snake Is Not a Snake That Needs Less",
+    "seoTitle": "Rosy Boa Enrichment Guide",
+    "excerpt": "Rosy boas are small, slow and famously undemanding, which is exactly why they get the smallest enclosures in the hobby. Recent snake research keeps arguing the other way.",
+    "date": "2026-10-25",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Rosy Boa",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/rosy-boa-enrichment.jpg",
+    "imageAlt": "A rosy boa half buried in aspen substrate beside a stacked rock crevice",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-25",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on rosy boas?",
+        "a": "No. Nothing has been published on Lichanura. The closest evidence is the western hognose preference study, which found snakes chose an enclosure with burrowing substrate over one without, and the corn snake work on enclosure size and enrichment."
+      },
+      {
+        "q": "Are the standard rosy boa enclosure recommendations too small?",
+        "a": "Probably, and the research points that way. Corn snakes given enclosures longer than their stretched-out body used the full length and preferred the larger option, and a 2025 review of captive snake spatial needs reaches similar conclusions. The 20 gallon figure in most care sheets is a floor, not a target."
+      },
+      {
+        "q": "Do rosy boas burrow?",
+        "a": "Yes. In the wild they shelter under loose soil, rocks and debris, and in captivity they will disappear into substrate given the chance. Deep enough bedding to vanish into is one of the highest-value additions for this species."
+      },
+      {
+        "q": "What kind of hide do they prefer?",
+        "a": "Tight ones. Rosy boas are rock crevice animals and want contact on several sides at once, so a hide the snake barely fits into beats a spacious cave. Fit matters more than the number of hides."
+      },
+      {
+        "q": "Can rosy boas be kept in a humid setup?",
+        "a": "No, and this is the mistake that harms them. They are desert animals prone to scale rot and respiratory problems in damp conditions. Dry substrate, good ventilation and a water dish is the correct picture, not a humid vivarium."
+      },
+      {
+        "q": "What is the best free enrichment for a rosy boa?",
+        "a": "Scent. Dragging prey across the substrate before offering, moving where food appears, and adding shed-scented or handled objects all engage a chemosensory hunter and cost nothing."
+      }
+    ],
+    "relatedProducts": [
+      "aspen-shavings-substrate",
+      "hide-zoomed-habba-hut-medium",
+      "cork-bark-round-hide"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/rosy-boa-feeding-guide.mdx",
     "slug": "rosy-boa-feeding-guide",
     "title": "Rosy Boa Feeding: Schedule, Prey Size, and Why Adults Eat So Rarely",
@@ -31889,6 +32145,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/uromastyx-enrichment-guide.mdx",
+    "slug": "uromastyx-enrichment-guide",
+    "title": "Uromastyx Enrichment: Heat and a Burrow Beat Every Object You Can Buy",
+    "seoTitle": "Uromastyx Enrichment Guide",
+    "excerpt": "The nearest lizard study ranked thermal enrichment first out of five types. For a desert species that basks hotter than almost any other pet reptile, that ranking is not a surprise.",
+    "date": "2026-10-24",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Uromastyx",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/uromastyx-enrichment.jpg",
+    "imageAlt": "A uromastyx flattened on hot stone under a basking lamp beside a deep sand burrow",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-24",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on uromastyx?",
+        "a": "No. Nothing has been published on the genus. The two closest useful findings are the leopard gecko study that ranked five enrichment types, with thermal first and visual last, and the western hognose study showing a preference for enclosures with burrowing substrate."
+      },
+      {
+        "q": "Why does thermal enrichment matter so much for this species?",
+        "a": "Because uromastyx bask hotter than almost any other reptile in the hobby, and they need somewhere genuinely cool to go afterwards. A single warm zone is not a gradient. Thermal choice is what the closest lizard study ranked first, and for a desert species the stakes are higher."
+      },
+      {
+        "q": "Do uromastyx need to burrow?",
+        "a": "They dig extensive burrows in the wild and use them to escape both heat and cold. Giving them enough substrate to actually excavate rather than scratch at is one of the highest-value things you can do, and it is closer to a requirement than an extra."
+      },
+      {
+        "q": "What do you feed a herbivorous lizard for enrichment?",
+        "a": "Scattered and varied greens, seed mixes offered so they have to be worked through rather than poured in a bowl, and edible flowers when you can get them safely. Uromastyx are seed and leaf specialists, and picking through material is the behaviour that a single bowl removes."
+      },
+      {
+        "q": "Should uromastyx get insects?",
+        "a": "Mostly not. They are herbivores and a diet built on insects causes real problems over time. Occasional insects are not a disaster in most keepers' experience, and they should not be a routine part of the plan or a substitute for varied plant material."
+      },
+      {
+        "q": "Can uromastyx live together?",
+        "a": "Not casually. They are territorial, males will fight, and a subordinate animal in a shared enclosure loses access to the basking spot, which for this species means losing access to digestion. Solo housing is the safe default."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-zoo-med-reptisand-burrowing",
+      "uromastyx-uro-grit-seed-pollen-supplement",
+      "calcium-repashy-superveggie-6oz"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/uromastyx-feeding-guide.mdx",
     "slug": "uromastyx-feeding-guide",
     "title": "Uromastyx Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -32390,6 +32710,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/veiled-chameleon-enrichment-guide.mdx",
+    "slug": "veiled-chameleon-enrichment-guide",
+    "title": "Veiled Chameleon Enrichment: The First Two Months Change the Animal",
+    "seoTitle": "Veiled Chameleon Enrichment Guide",
+    "excerpt": "Hatchlings raised alone for two months grew into duller, more submissive adults that hunted worse. This is one of the few reptile studies done on the species keepers actually own.",
+    "date": "2026-10-23",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Veiled Chameleon",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/veiled-chameleon-enrichment.jpg",
+    "imageAlt": "A veiled chameleon gripping a branch in a heavily planted screen enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-23",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on veiled chameleons?",
+        "a": "Yes, and it is unusually good. Ballen, Shine and Olsson reared hatchling veiled chameleons either alone or in groups of four using a split-clutch design, then tested them. Animals raised in isolation were more submissive toward unfamiliar chameleons, went darker and duller in colour, and performed worse on a foraging task."
+      },
+      {
+        "q": "Does that mean I should house veiled chameleons together?",
+        "a": "No, and this is the part that gets misread constantly. The study was about the first two months of life. Adult veiled chameleons are strongly territorial, and cohabiting them causes chronic stress, fighting and injury. Solo housing for anything past the juvenile stage remains correct."
+      },
+      {
+        "q": "So what do I actually do with that finding?",
+        "a": "Ask the breeder how the animal was reared, prefer one raised in a clutch group over one raised in a deli cup, and take the enrichment side of the enclosure seriously rather than treating a chameleon as an ornament that needs a branch. The finding is a reason to care about early life, not a housing instruction."
+      },
+      {
+        "q": "What is the single biggest enrichment item for this species?",
+        "a": "Planting density. A chameleon that can move through the enclosure without being visible from outside behaves completely differently from one sitting exposed on a bare stick, and that is the difference most enclosures are missing."
+      },
+      {
+        "q": "Do they need a misting system?",
+        "a": "For most keepers, yes. Veiled chameleons drink moving water off leaves and generally will not use a standing bowl, and hand spraying enough times a day to keep that reliable is difficult to sustain. This is one of the few pieces of equipment that changes outcomes rather than convenience."
+      },
+      {
+        "q": "Is free-roaming a chameleon enrichment?",
+        "a": "It can be, supervised, in a warm room with real plants and no hazards. It is not a substitute for an enclosure that works, and a chameleon loose in a cold room with nothing to climb is being exposed rather than enriched."
+      }
+    ],
+    "relatedProducts": [
+      "enclosure-zoo-med-reptibreeze-24x24x48",
+      "live-terrarium-plants",
+      "misting-system-mistking-starter-5th-gen"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/veiled-chameleon-feeding-guide.mdx",

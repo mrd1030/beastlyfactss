@@ -516,3 +516,64 @@ Dense mossy planting and layered branches around it, high humidity with fine
 mist visible in the air. Low contrast, muted greens and browns, shallow depth of
 field. The camouflage should be the difficulty of the photo. No hands, no people.
 ```
+
+### Enrichment guides, batch 6 (2026-10-23 to 10-25)
+
+Chameleons, iguana, anole, uromastyx and rosy boa. Same rules: 3:2 at 1168x784,
+animal mid-behavior, show the enrichment being used rather than the enclosure
+standing empty.
+
+#### veiled-chameleon-enrichment.jpg
+```
+A veiled chameleon mid-stride on a thin diagonal branch inside a heavily planted
+screen enclosure, one foot lifted and gripping forward, tail partly curled.
+Dense layered foliage around and behind it so the animal is partly obscured, fine
+water droplets clinging to the leaves. Bright green casque and banded flanks.
+Soft daylight through the mesh, shallow depth of field. The planting density is
+the subject as much as the animal. No hands, no people.
+```
+
+#### green-iguana-enrichment.jpg
+```
+A large adult green iguana stretched along a thick anchored branch high in a
+tall enclosure, head raised and surveying, dewlap visible. Wide basking platform
+and a seagrass hammock lower in frame, broad leaves for scale. Warm basking light
+from above casting long shadow. Shot from slightly below so the animal reads as
+high up and large. No hands, no people.
+```
+
+#### green-anole-enrichment.jpg
+```
+A bright green anole gripping a thin vertical stem partway up a densely planted
+terrarium, body upright in a perching posture, throat pale. Broad leaves and fine
+branches at several heights around it, water droplets on the foliage catching
+the light. Bright naturalistic daylight, shallow depth of field. Vertical
+structure should dominate the composition. No hands, no people.
+```
+
+#### jacksons-chameleon-enrichment.jpg
+```
+A male Jackson's chameleon with three prominent horns moving along a mossy
+branch in a cool, densely planted enclosure. Fine mist hanging in the air, water
+beading on moss and leaves, muted green palette suggesting montane forest rather
+than desert warmth. Overcast diffuse lighting, cooler colour temperature than the
+other reptile shots. No hands, no people.
+```
+
+#### uromastyx-enrichment.jpg
+```
+A uromastyx flattened wide on a slab of hot stone directly under a basking lamp,
+limbs splayed, spiny tail extended. Beside it a bank of deep pale sand with the
+mouth of an excavated burrow clearly visible, scattered greens and seed on the
+substrate nearby. Harsh bright desert lighting, strong shadows, warm ochre
+palette. Heat and burrow in one frame. No hands, no people.
+```
+
+#### rosy-boa-enrichment.jpg
+```
+A rosy boa half buried in dry aspen shavings, front third of the body emerging
+and head raised, the rest of the animal under substrate. A stacked slate crevice
+with a narrow gap immediately behind it. Warm orange and slate-grey stripes on
+cream. Dim evening lighting for a crepuscular species, dry dusty palette, shallow
+depth of field on the head. The burying is the subject. No hands, no people.
+```
