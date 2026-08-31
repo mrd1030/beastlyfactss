@@ -197,6 +197,13 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       // Frontmatter still wins whenever it is set.
       emoji: fm.emoji || derivedEmoji(fm),
       lastReviewed: fm.lastReviewed || null,
+      // Every one of the 625 MDX files declares `author: "Mike"`, and this
+      // dropped all of them, so the app had no author to put in its schema and
+      // fell back to naming the Organization as the writer. Carried through
+      // rather than hardcoded downstream, so a guest byline would be described
+      // truthfully instead of silently reattributed. null means "the site's own
+      // author", resolved by src/lib/data/author.js.
+      author: fm.author || null,
       canonicalUrl: fm.canonicalUrl || null,
       faqs: Array.isArray(fm.faqs) ? fm.faqs : [],
       relatedProducts: Array.isArray(fm.relatedProducts) ? fm.relatedProducts : [],

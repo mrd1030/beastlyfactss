@@ -17,6 +17,8 @@ import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate } from '@/lib/util
 import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
+import { AUTHOR, PUBLISHER, authorSchema } from '@/lib/data/author';
+import { ArticleMetaProvider } from '@/lib/articleMeta';
 import PostEngagement from '@/components/blog/PostEngagement';
 import SaveButton from '@/components/shared/SaveButton';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
@@ -465,15 +467,15 @@ function AuthorBio() {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
       <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
-        🦎
+        {AUTHOR.emoji}
       </div>
       <div>
-        <p className="font-body font-bold text-sm text-foreground mb-1">Written by Mike</p>
+        <p className="font-body font-bold text-sm text-foreground mb-1">{`Written by ${AUTHOR.name}`}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
-          Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.
+          {AUTHOR.bio}
         </p>
         <Link to="/about/" className="text-xs font-body font-semibold text-secondary hover:underline">
-          More about Mike →
+          {`More about ${AUTHOR.name} →`}
         </Link>
       </div>
     </div>
@@ -678,8 +680,16 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     // entirely when there is no publishable date, since omitting a field is
     // valid where an empty one is not.
     ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastReviewed || isoPublished }),
-    "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-    "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
+    // A Person, not the Organization. The page directly below this renders an
+    // AuthorBio card reading "Written by Mike" with a bio and a link to
+    // /about/, and every one of the 625 MDX files declares author: "Mike" in
+    // frontmatter - but this line said an Organization wrote the article, so
+    // the only version a crawler reads contradicted the one a reader sees. On a
+    // site whose content is largely pet health, having no identifiable author
+    // in the structured data is the exact signal that is expensive to be
+    // missing. publisher stays the Organization, which is what it is.
+    "author": authorSchema(post.author),
+    "publisher": PUBLISHER,
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
   };
 
@@ -846,6 +856,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 zero is 9.6px at this size while its average letter is 7.35px,
                 so an apparently sensible max-w-[68ch] still produced 89
                 characters. 37rem is 592px, about 80. */}
+            {/* The article's own review date and source count, for <Sources> to
+                render above its list. Provided here rather than passed as an
+                attribute in each MDX file: sourceCount is derived at sync time
+                from the real list, so an authored copy of it would go stale the
+                first time a source moved. */}
+            <ArticleMetaProvider value={{ lastReviewed: post.lastReviewed, sourceCount: post.sourceCount }}>
             <div ref={contentRef} className="prose prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
@@ -853,6 +869,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
               </div>
+            </ArticleMetaProvider>
             </div>
 
             {post.faqs?.length > 0 && (

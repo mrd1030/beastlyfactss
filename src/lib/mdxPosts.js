@@ -95,6 +95,7 @@ function toPost(meta) {
     // Optional extra fields
     emoji: meta.emoji,
     lastReviewed: meta.lastReviewed,
+    author: meta.author || null,
     canonicalUrl: meta.canonicalUrl,
     faqs: meta.faqs,
     relatedProducts: meta.relatedProducts || [],

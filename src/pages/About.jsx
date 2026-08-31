@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
+import { AUTHOR, PUBLISHER } from '@/lib/data/author';
 
 export default function About() {
   return (
@@ -22,6 +23,30 @@ export default function About() {
         <meta name="twitter:title" content="About Beastly Facts" />
         <meta name="twitter:description" content="Learn about Beastly Facts - the animal trivia, care guide, and quiz hub built by a passionate reptile keeper for pet owners and animal lovers everywhere." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        {/* The Person every article's BlogPosting author points at by @id.
+            Without a node here, 615 articles each asserted an author named
+            "Mike" with no entity behind the name and nothing to reconcile them
+            against. ProfilePage is the type for a page that IS about one
+            person, which this is: the copy below opens "It's just me. My name
+            is Mike". sameAs is what lets a crawler tie the byline, this page
+            and the site's three public accounts into a single identity. */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "url": AUTHOR.url,
+            "mainEntity": {
+              "@type": "Person",
+              "@id": AUTHOR.url,
+              "name": AUTHOR.name,
+              "url": AUTHOR.url,
+              "description": AUTHOR.bio,
+              "jobTitle": AUTHOR.role,
+              "sameAs": AUTHOR.sameAs,
+              "worksFor": PUBLISHER,
+            },
+          })}
+        </script>
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
