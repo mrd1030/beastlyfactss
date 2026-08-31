@@ -1,0 +1,101 @@
+{
+  "description": "Publish queue for the on-site social feed (/feed/). A pg_cron job calls the post-social-feed edge function daily at 15:00 UTC (see supabase/social_feed_automation.sql); the function fetches this file from the live site and inserts every pending entry whose post_date (America/New_York) has arrived into public.social_posts, deduped forever by queue id, so stale entries and repeat calls are harmless. A weekly routine refills pending with the coming week's posts drawn from releasing articles, facts that have photos in FACT_IMAGES, and Chronicles. Caption rules match docs/RULES.md and the social voice: hook first, no URLs in the caption (link_url carries the page), 2 to 4 #hashtags at the end, no em or en dashes, US spelling. media_url and link_url are site-relative; the function makes them absolute.",
+  "pending": [
+    {
+      "id": "2026-08-31-dex-part-14",
+      "post_date": "2026-08-31",
+      "media_type": "image",
+      "media_url": "/assets/images/dex/dex-chron14.jpg",
+      "caption": "Dex is back. Part 14 of the Chronicles just dropped, and this one is called The Long Drop, which should worry you exactly as much as it worries Dex. Otis has a new episode up too. #chronicles #beardeddragon #petstories",
+      "link_url": "/chronicles/dex/14/"
+    },
+    {
+      "id": "2026-08-31-uromastyx-vs-beardie",
+      "post_date": "2026-08-31",
+      "media_type": "image",
+      "media_url": "/assets/images/uromastyx-vs-bearded-dragon.jpg",
+      "caption": "Uromastyx or bearded dragon? Both are chill desert lizards with big personalities, but one eats salad for life and the other needs a bug budget. Full comparison is up now. #uromastyx #beardeddragon #reptiles",
+      "link_url": "/blog/uromastyx-vs-bearded-dragon-guide/"
+    },
+    {
+      "id": "2026-09-01-gerbil-vs-hamster",
+      "post_date": "2026-09-01",
+      "media_type": "image",
+      "media_url": "/assets/images/gerbil-vs-hamster.jpg",
+      "caption": "Gerbil or hamster? One is a social sprinter that should live in pairs, the other a solitary night owl that will fight a roommate. The right pick depends on your schedule more than your shelf space. Full comparison now on the site. #gerbil #hamster #smallpets",
+      "link_url": "/blog/gerbil-vs-hamster-guide/"
+    },
+    {
+      "id": "2026-09-02-kea-fact",
+      "post_date": "2026-09-02",
+      "media_type": "image",
+      "media_url": "/assets/facts/kea.jpg",
+      "caption": "The kea is the world's only alpine parrot and one of the smartest birds alive. It also strips rubber off cars and steals wallets at New Zealand ski resorts. Researchers think all that tinkering is how it learns about its world. #kea #parrot #birdfacts",
+      "link_url": "/facts/the-alpine-kleptomaniac/"
+    },
+    {
+      "id": "2026-09-02-degu-vs-chinchilla",
+      "post_date": "2026-09-02",
+      "media_type": "image",
+      "media_url": "/assets/images/degu-vs-chinchilla.jpg",
+      "caption": "Degu vs chinchilla looks like a coin flip until you read their care sheets. One is awake with you all day, the other parties after midnight, and their dust bath routines are not the same. New comparison guide is live. #degu #chinchilla #smallpets",
+      "link_url": "/blog/degu-vs-chinchilla-guide/"
+    },
+    {
+      "id": "2026-09-03-koi-vs-goldfish",
+      "post_date": "2026-09-03",
+      "media_type": "image",
+      "media_url": "/assets/images/koi-vs-goldfish.jpg",
+      "caption": "Koi and goldfish get mixed up constantly, but one outgrows a bathtub and can outlive your dog. Before you stock a pond or a tank, make sure you know which one you are actually buying. #koi #goldfish #fishkeeping",
+      "link_url": "/blog/koi-vs-goldfish-guide/"
+    },
+    {
+      "id": "2026-09-04-milk-snake-vs-corn-snake",
+      "post_date": "2026-09-04",
+      "media_type": "image",
+      "media_url": "/assets/images/milk-snake-vs-corn-snake.jpg",
+      "caption": "Milk snake or corn snake? They get confused for each other and for venomous lookalikes, yet their care, temperament, and handling feel noticeably different once you have both in hand. Full breakdown on the site. #milksnake #cornsnake #reptiles",
+      "link_url": "/blog/milk-snake-vs-corn-snake-guide/"
+    },
+    {
+      "id": "2026-09-04-barreleye-fact",
+      "post_date": "2026-09-04",
+      "media_type": "image",
+      "media_url": "/assets/facts/barreleye-fish.jpg",
+      "caption": "The barreleye fish has a transparent dome for a head, and its glowing green eyes swivel inside it. Scientists assumed those eyes were stuck looking straight up until a 2009 study caught them rotating forward to track food. #barreleye #deepsea #oceanfacts",
+      "link_url": "/facts/eyes-that-swivel-forward/"
+    },
+    {
+      "id": "2026-09-05-flying-squirrel-cost",
+      "post_date": "2026-09-05",
+      "media_type": "image",
+      "media_url": "/assets/images/flying-squirrel-cost.jpg",
+      "caption": "A flying squirrel costs less to buy than most people expect. Then the cage, the wheel, and the diet math show up. We priced out the real first year, line by line. #flyingsquirrel #exoticpets #petcosts",
+      "link_url": "/blog/flying-squirrel-cost-guide/"
+    },
+    {
+      "id": "2026-09-06-basilisk-fact",
+      "post_date": "2026-09-06",
+      "media_type": "image",
+      "media_url": "/assets/facts/basilisk-lizard.jpg",
+      "caption": "The basilisk lizard runs on water. Up to 20 steps per second slap air pockets under its feet, enough to sprint about 20 meters across the surface before it drops back in and swims. #basilisk #lizard #reptilefacts",
+      "link_url": "/facts/sprinting-across-the-surface/"
+    },
+    {
+      "id": "2026-09-06-cardinal-tetra-feeding",
+      "post_date": "2026-09-06",
+      "media_type": "image",
+      "media_url": "/assets/images/cardinal-tetra-feeding.jpg",
+      "caption": "Cardinal tetras are tiny, but feeding them wrong is the fastest way to lose a school. Portion size, schedule, and what actually fits their mouths, all in the new feeding guide. #cardinaltetra #aquarium #fishkeeping",
+      "link_url": "/blog/cardinal-tetra-feeding-guide/"
+    },
+    {
+      "id": "2026-09-07-flying-squirrel-handling",
+      "post_date": "2026-09-07",
+      "media_type": "image",
+      "media_url": "/assets/images/flying-squirrel-handling.jpg",
+      "caption": "You do not grab a flying squirrel. You become the tree. Bonding pouches, glide practice, and the patience curve that turns a nervous squirrel into a shoulder pet. New handling guide is up. #flyingsquirrel #exoticpets #pocketpets",
+      "link_url": "/blog/flying-squirrel-handling-guide/"
+    }
+  ]
+}
