@@ -130,6 +130,11 @@ entry for it.
 - **Product** Parrot Training Clicker and Target Stick
 - **Link** https://www.amazon.com/dp/B07GBC85T9?tag=beastlyfacts-20
 - **Category** Decor & Enrichment
+- **rating** `4.2`
+- **price** `"$8–$14"` (seen at $9.99)
+- **image** `/assets/images/affiliate/product-265.jpg` installed. The listing shot
+  is 364x1000, which letterboxes to a sliver in a 320x240 card, so the existing
+  white background is padded out to 4:3 rather than the image being cropped.
 - **covers** `["Target stick or clicker for training"]`
 - **pets** `["birds", "reptiles-amphibians", "small-mammals"]`
 
@@ -146,6 +151,9 @@ Also serves mouse, hamster and degu.
 - **Product** Niteangel Creative & Composable Hamster Tunnel - DIY & Build Unique Tube Burrow as Hideout for Small Sized Animals Like Hamsters Mouse Gerbils Mice (Corner)
 - **Link** https://www.amazon.com/dp/B082FBW69F?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
+- **rating** still needed
+- **price** still needed
+- **image** still needed
 - **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
 - **pets** `["small-mammals"]`
 
@@ -170,7 +178,10 @@ photo shows.
 - **Category** Feeding & Watering
 - **rating** `4.0`
 - **price** `"$15–$25"` (seen at $18.99)
-- **image** `/assets/images/affiliate/product-264.jpg` installed
+- **image** `/assets/images/affiliate/product-264.jpg` installed. Deliberately the
+  listing shot **without** the bearded dragon in it, since this product is not for
+  bearded dragons and the standard photo would contradict the guidance. Overlay
+  text cropped off the top and bottom.
 - **covers** `["Extraction or puzzle feeder for reptiles"]`
 - **pets** `["reptiles-amphibians"]`
 
