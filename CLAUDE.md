@@ -13,6 +13,8 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 ## Collaboration Preferences
 - No trailing summaries or recaps of what you just did.
 - When I say "push", commit and push.
+- Branch pushes are free: Cloudflare preview builds are disabled, only pushes to main build and deploy. Push your working branch freely to preserve work, bundled into few pushes, but never push to main unprompted. To push main without triggering a deploy, put [CI Skip] in the head commit message.
+- Cloud sessions lose unpushed commits when the session's machine is reclaimed, so push branch work before wrapping up.
 - Bundle related changes into fewer commits when it makes sense.
 - Don't ask for permission before acting on clear instructions.
 

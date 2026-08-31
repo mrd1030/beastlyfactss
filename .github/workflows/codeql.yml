@@ -1,15 +1,9 @@
-name: beastlyfactsapp-codeql
+name: codeql
 
 on:
   pull_request:
-    paths:
-      - 'beastlyfactsapp/**'
-      - '.github/workflows/beastlyfactsapp-codeql.yml'
   push:
     branches: [main]
-    paths:
-      - 'beastlyfactsapp/**'
-      - '.github/workflows/beastlyfactsapp-codeql.yml'
   schedule:
     - cron: '0 6 * * 1'
 
