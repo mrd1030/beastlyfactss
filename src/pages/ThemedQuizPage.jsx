@@ -80,6 +80,14 @@ export default function ThemedQuizPage({ quiz }) {
     }
   };
 
+  // Unique source pages, in question order. Shown on the intro screen: it
+  // lets a player study first, and it gives the prerendered page its in-body
+  // internal links (the play-state source links never reach the static HTML,
+  // which is what audit-internal-links.mjs measures).
+  const sourcePages = [...new Map(
+    quiz.questions.filter(q => q.source).map(q => [q.source.to, q.source])
+  ).values()];
+
   const pageTitle = `${quiz.title} Quiz | Beastly Facts`;
   const pageDescription = `${quiz.tagline} ${total} questions drawn from real Beastly Facts guides, instant feedback with sources, and a collectible reward card for your Pack.`;
   const canonicalUrl = `https://beastlyfacts.com/quiz/${quiz.id}/`;
@@ -143,6 +151,26 @@ export default function ThemedQuizPage({ quiz }) {
                 className="bg-secondary text-secondary-foreground font-body font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
                 Start Quiz 🚀
               </motion.button>
+
+              {sourcePages.length > 0 && (
+                <div className="mt-10 text-left bg-card border border-border rounded-2xl p-5">
+                  <p className="text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground mb-2.5">
+                    Study up first (or after)
+                  </p>
+                  <p className="text-xs text-muted-foreground font-body mb-3">
+                    Every answer in this quiz comes from a real page on the site:
+                  </p>
+                  <ul className="space-y-1.5">
+                    {sourcePages.map(source => (
+                      <li key={source.to}>
+                        <Link to={source.to} className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline">
+                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </motion.div>
           </div>
         )}
