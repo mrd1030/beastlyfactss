@@ -313,6 +313,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/argentine-tegu-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/ball-python-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -514,6 +518,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/reptile-shedding.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/savannah-monitor-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
