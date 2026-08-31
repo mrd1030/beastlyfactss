@@ -70,10 +70,10 @@ export default function GuideSpotlight() {
           <div>
             <span className="text-2xl block mb-1">📖</span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Sample Guides
+              Care guides
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`A rotating pick from ${guidesIndex.guides.length} research-backed care guides`}
+              {`A rotating pick from ${guidesIndex.guides.length}+ species guides. Each one links out to deep dives on setup, diet, health, handling, cost, and the law.`}
             </p>
           </div>
           <Link to="/guides/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

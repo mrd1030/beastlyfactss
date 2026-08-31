@@ -11,12 +11,8 @@ import { motion } from '@/lib/motion-safe';
 // dog-medium-breed, dog-large-breed, cat-universal) exist only in the guides,
 // so they cannot inflate this number.
 //
-// "300+ care guides" stays a literal, and stays deliberately low. A care guide
-// here is a deep-dive article (cost, handling, health issues, tank setup,
-// feeding), not a card on /guides/ - that page shows one card per animal, 108
-// of them, which is a different thing entirely. The real deep-dive count is
-// 449. DO NOT "correct" 300+ upward to match it; the understatement is the
-// point.
+// "400+ deep dives" is the blog husbandry series (cost, handling, health,
+// tank setup, feeding, legal). Species hubs live on /guides/ (100+).
 import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 
 // Slim one-line transition between TrendingFacts and EncyclopediaTeaser/GuideSpotlight -
@@ -32,7 +28,7 @@ export default function FactsToGuidesBanner() {
         className="max-w-6xl mx-auto text-center"
       >
         <p className="text-sm sm:text-base font-body text-muted-foreground">
-          That's just a taste. <span className="text-foreground font-body font-semibold">{`${encyclopediaAnimals.length} species profiles`}</span> and <span className="text-foreground font-body font-semibold">300+ care guides</span> are waiting below.
+          That&rsquo;s just a taste. <span className="text-foreground font-body font-semibold">{`${encyclopediaAnimals.length} species profiles`}</span>, <span className="text-foreground font-body font-semibold">100+ care guides</span>, and <span className="text-foreground font-body font-semibold">400+ deep dives</span> are waiting below.
         </p>
       </motion.div>
     </section>

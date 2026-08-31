@@ -147,7 +147,7 @@ export default function HeroSection({ onOpenFact }) {
           <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 dark:border-[hsl(36_24%_52%/0.55)] bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
-              Facts that roar. Guides that care.
+              Animal facts and pet care guides
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
@@ -179,17 +179,17 @@ export default function HeroSection({ onOpenFact }) {
                   is plain text, and an anonymous flex item would swallow the
                   space before the span. */}
               <MotionLink
-                to="/encyclopedia/"
+                to="/guides/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="bg-card/80 border border-border text-muted-foreground font-body font-bold text-sm py-3 px-6 rounded-xl"
               >
-                Browse the <span className="dark:text-secondary">Encyclopedia</span>
+                Browse <span className="dark:text-secondary">care guides</span>
               </MotionLink>
             </div>
 
             <p className="text-xs text-muted-foreground font-body max-w-md mx-auto text-center leading-relaxed">
-              Updated weekly with reviewed animal facts, practical pet care tips, and quiz challenges that help you learn faster.
+              100+ species care guides, plus 400+ deep dives on setup, diet, health, handling, cost, and the law.
             </p>
           </div>
 
