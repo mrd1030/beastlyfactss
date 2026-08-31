@@ -130,19 +130,81 @@ export function getRelatedArticleSlugs(guideId, posts) {
   return [...manual, ...auto];
 }
 
-// Reverse lookup: given a deep-dive article's own slug (e.g. the leopard
-// gecko feeding guide), find its sibling deep-dive articles for the same
-// guide(s), so a reader who lands on one article via a Guide/Encyclopedia
-// "Deep Dive" link doesn't lose that thread once they're actually on the
-// article. A slug can appear under more than one guide (shared pieces like
-// snake-brumation-guide), so this unions every match.
-export function getDeepDiveSiblings(slug, posts) {
-  if (!slug) return [];
-  const siblings = new Set();
-  for (const articles of Object.values(RELATED_ARTICLES)) {
-    if (articles.includes(slug)) {
-      articles.forEach((a) => { if (a !== slug) siblings.add(a); });
+// How many siblings the Deep Dive block shows. A species article never reaches
+// this: its quintet is at most four siblings plus the odd curated extra. The
+// cap exists for cross-species articles, where the candidate pool runs to 15
+// and the tail of it is unrelated.
+const DEEP_DIVE_LIMIT = 6;
+
+// Every guide that lists an article, manual entries plus the auto-detected
+// quintet. This set is the relatedness signal the ranking below runs on: two
+// articles filed under nearly the same guides are about nearly the same thing,
+// and two that share only one guide out of twenty are not.
+function getListingGuides(slug) {
+  const guides = new Set();
+  for (const [guideId, articles] of Object.entries(RELATED_ARTICLES)) {
+    if (articles.includes(slug)) guides.add(guideId);
+  }
+  for (const suffix of STANDARD_SUFFIXES) {
+    if (slug.endsWith(`-${suffix}`)) {
+      // Namespaced so an auto-detected guide can never collide with a real key
+      guides.add(`auto:${slug.slice(0, -(suffix.length + 1))}`);
+      break;
     }
+  }
+  return guides;
+}
+
+function getPostCategories(post) {
+  if (!post) return [];
+  if (Array.isArray(post.categories) && post.categories.length) return post.categories;
+  const c = post.category;
+  if (!c) return [];
+  const one = typeof c === 'string' ? c : c.title;
+  return one ? [one] : [];
+}
+
+// Position in the quintet's display order, so tied siblings come out
+// cost -> handling -> health -> tank setup -> feeding, the same sequence the
+// Guide and Encyclopedia pages use. Anything that is not a quintet piece sorts
+// after all of them.
+function getSuffixOrder(slug) {
+  const i = STANDARD_SUFFIXES.findIndex((suffix) => slug.endsWith(`-${suffix}`));
+  return i === -1 ? STANDARD_SUFFIXES.length : i;
+}
+
+// Reverse lookup: given a deep-dive article's own slug (e.g. the leopard
+// gecko feeding guide), find its sibling deep-dive articles, so a reader who
+// lands on one article via a Guide/Encyclopedia "Deep Dive" link doesn't lose
+// that thread once they're actually on the article.
+//
+// This used to union the ENTIRE article list of every guide that mentioned the
+// slug, uncapped and in whatever order the guide ids happened to sit in the
+// object literal above. That is fine for a species article, which belongs to
+// one guide and gets its own clean quintet back. It falls apart for a
+// cross-species piece: cardiomyopathy-in-cats-and-dogs-guide is listed under 11
+// guides (dog-universal, dog-large-breed, cat-universal and eight cat breeds),
+// so it returned 15 articles whose only connection was "some guide that also
+// links cardiomyopathy links these too". A heart-disease article was
+// recommending dog toys and the alpha wolf myth.
+//
+// So candidates are ranked rather than dumped. The score is the overlap between
+// the two articles' guide sets (shared / union), which is self-normalising: an
+// article listed under twenty guides does not out-rank a tight match just by
+// being everywhere. Same category breaks ties, then quintet display order, then
+// slug so the result is stable.
+//
+// Species behaviour is unchanged by construction: every quintet sibling shares
+// the same single guide set, scores a perfect 1, and comes back in display
+// order, well inside the cap.
+export function getDeepDiveSiblings(slug, posts, limit = DEEP_DIVE_LIMIT) {
+  if (!slug) return [];
+
+  const listingGuides = getListingGuides(slug);
+  const candidates = new Set();
+  for (const guideId of listingGuides) {
+    const articles = RELATED_ARTICLES[guideId];
+    if (articles) articles.forEach((a) => { if (a !== slug) candidates.add(a); });
   }
   // Auto-detected quintet, same mechanism as getRelatedArticleSlugs: strip a
   // known suffix off this slug to get a candidate guide id, so a species with
@@ -152,10 +214,43 @@ export function getDeepDiveSiblings(slug, posts) {
     for (const suffix of STANDARD_SUFFIXES) {
       if (slug.endsWith(`-${suffix}`)) {
         const guideId = slug.slice(0, -(suffix.length + 1));
-        getAutoDetectedSlugs(guideId, posts).forEach((a) => { if (a !== slug) siblings.add(a); });
+        getAutoDetectedSlugs(guideId, posts).forEach((a) => { if (a !== slug) candidates.add(a); });
         break;
       }
     }
   }
-  return [...siblings];
+  if (candidates.size === 0) return [];
+
+  const postBySlug = new Map();
+  for (const p of posts || []) {
+    const key = p.slug?.current || p._id || p.id;
+    if (key) postBySlug.set(key, p);
+  }
+  const ownCategories = new Set(getPostCategories(postBySlug.get(slug)));
+
+  return [...candidates]
+    // A slug with no article behind it would otherwise take up one of the
+    // limited slots and then be dropped by the caller, shortening the list.
+    .filter((candidate) => postBySlug.size === 0 || postBySlug.has(candidate))
+    .map((candidate) => {
+      const theirGuides = getListingGuides(candidate);
+      let shared = 0;
+      for (const g of theirGuides) if (listingGuides.has(g)) shared += 1;
+      const union = listingGuides.size + theirGuides.size - shared;
+      return {
+        slug: candidate,
+        overlap: union > 0 ? shared / union : 0,
+        sameCategory: getPostCategories(postBySlug.get(candidate))
+          .some((c) => ownCategories.has(c)) ? 1 : 0,
+        order: getSuffixOrder(candidate),
+      };
+    })
+    .sort((a, b) => (
+      b.overlap - a.overlap
+      || b.sameCategory - a.sameCategory
+      || a.order - b.order
+      || a.slug.localeCompare(b.slug)
+    ))
+    .slice(0, limit)
+    .map((x) => x.slug);
 }
