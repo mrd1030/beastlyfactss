@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "ignoreDeprecations": "6.0",
+    "ignoreDeprecations": "5.0",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -19,7 +19,7 @@
   "include": [
     "src/**/*.js",
     "src/**/*.jsx"
-, "beastly-facts/initialValueTemplates.js", "beastly-facts/PreviewPane.jsx", "beastly-facts/SplitPreview.jsx"  ],
+  ],
   "exclude": [
     "node_modules",
     "dist"
