@@ -17,14 +17,14 @@ export default function Newsletter() {
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-                        {/* Left: Blog promo */}
+                        {/* Left: email promo. Critter Digest is the newsletter name. */}
                         <div>
                             <span className="text-3xl block mb-3">📰</span>
                             <h2 className="font-display font-bold text-2xl text-foreground mb-2">
-                                Weekly Critter Digest
+                                Critter Digest
                             </h2>
                             <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
-                                Get a weekly roundup of verified animal facts, practical care tips, and short quiz challenges - delivered every Sunday. No spam, ever.
+                                The weekly email. A Sunday roundup of verified animal facts and practical care tips. No spam, ever.
                             </p>
                             <div className="flex flex-col gap-2 mb-5">
                                 {[
@@ -44,7 +44,7 @@ export default function Newsletter() {
                                     whileHover={{ x: 3 }}
                                     className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"
                                 >
-                                    Browse all articles <ArrowRight className="w-3.5 h-3.5" />
+                                    Or read the latest articles <ArrowRight className="w-3.5 h-3.5" />
                                 </motion.button>
                             </Link>
                         </div>

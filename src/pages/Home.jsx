@@ -36,20 +36,20 @@ export default function Home() {
     <main>
       {/* SEO: Meta Tags */}
       <Helmet>
-        <title>Beastly Facts | Animal Trivia & Care Guides</title>
-        <meta name="description" content="Explore Beastly Facts to discover mind-blowing animal facts and practical care guides for reptiles, mammals, birds, and more." />
+        <title>Beastly Facts | Animal Facts and Pet Care Guides</title>
+        <meta name="description" content="100+ species care guides and 400+ deep dives on setup, diet, health, handling, cost, and the law. Checked animal facts for keepers and the curious." />
         <link rel="canonical" href="https://beastlyfacts.com/" />
-        <meta property="og:title" content="Beastly Facts | Animal Trivia & Care Guides" />
-        <meta property="og:description" content="Explore Beastly Facts to discover mind-blowing animal facts and practical care guides for reptiles, mammals, birds, and more." />
+        <meta property="og:title" content="Beastly Facts | Animal Facts and Pet Care Guides" />
+        <meta property="og:description" content="100+ species care guides and 400+ deep dives on setup, diet, health, handling, cost, and the law." />
         <meta property="og:url" content="https://beastlyfacts.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Beastly Facts - amazing animal trivia and care guides" />
+        <meta property="og:image:alt" content="Beastly Facts - animal facts and pet care guides" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Beastly Facts | Animal Trivia & Care Guides" />
-        <meta name="twitter:description" content="Explore Beastly Facts to discover mind-blowing animal facts and practical care guides for reptiles, mammals, birds, and more." />
+        <meta name="twitter:title" content="Beastly Facts | Animal Facts and Pet Care Guides" />
+        <meta name="twitter:description" content="100+ species care guides and 400+ deep dives on setup, diet, health, handling, cost, and the law." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 

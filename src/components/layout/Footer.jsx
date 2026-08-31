@@ -23,45 +23,42 @@ export default function Footer() {
     </Link>
   </div>
             <p className="text-xs text-foreground/80 font-body leading-relaxed mb-4 max-w-[250px]">
-              Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
+              Animal facts and pet care guides. For reptile keepers and animal lovers everywhere.
             </p>
             <div className="mt-4">
               <DonateButton className="w-full font-body font-bold" />
             </div>
           </div>
 
-          {/* Navigation Links - Cleaned Up */}
           {[
             {
-              title: "Explore",
+              title: "Keep a pet",
               links: [
-                { to: '/facts/', label: 'Fun Facts' },
-                { to: '/animal-facts/', label: 'Facts Hub' },
-                { to: '/fact-files/', label: 'Fact Files' },
-                { to: '/quiz/personality/', label: 'Personality Quiz' },
-                { to: '/pack/', label: 'My Beast Pack' },
-                { to: '/feed/', label: 'The Feed' },
-                { to: '/blog/', label: 'Critter Digest' },
-                { to: '/chronicles/dex/', label: 'The Chronicles' },
+                { to: '/guides/', label: 'Care guides' },
+                { to: '/blog/', label: 'Articles' },
+                { to: '/encyclopedia/', label: 'Encyclopedia' },
+                { to: '/gear/', label: 'Recommended gear' },
+                { to: '/care-packages/', label: 'Care packages' },
               ]
             },
             {
-              title: "Encyclopedia",
+              title: "Learn something wild",
               links: [
-                { to: '/encyclopedia/', label: 'Browse all animals' },
-                { to: '/guides/', label: 'Care Guides' },
-                { to: '/gear/', label: 'Recommended Gear' },
-                { to: '/categories/', label: 'All Categories' },
-                { to: '/glossary/', label: 'Glossary' },
-                { to: '/exotic-pet-laws/', label: 'Exotic Pet Laws' },
+                { to: '/facts/', label: 'Facts' },
+                { to: '/fact-files/', label: 'Fact files' },
+                { to: '/beastlypedia/', label: 'Beastlypedia' },
+                { to: '/gallery/', label: 'Gallery' },
+                { to: '/quiz/personality/', label: 'Quizzes' },
+                { to: '/chronicles/dex/', label: 'Chronicles' },
               ]
             },
             {
-              title: "Info",
+              title: "The site",
               links: [
-                { to: '/about/', label: 'About Us' },
-                { to: '/blog/welcome-to-beastlyfacts/', label: 'Why We\'re Here' },
+                { to: '/exotic-pet-laws/', label: 'Is it legal?' },
+                { to: '/about/', label: 'About' },
                 { to: '/contact/', label: 'Contact' },
+                { to: '/pack/', label: 'My Pack' },
                 { to: '/terms/', label: 'Terms' },
                 { to: '/privacy/', label: 'Privacy' },
               ]
