@@ -151,9 +151,12 @@ Also serves mouse, hamster and degu.
 - **Product** Niteangel Creative & Composable Hamster Tunnel - DIY & Build Unique Tube Burrow as Hideout for Small Sized Animals Like Hamsters Mouse Gerbils Mice (Corner)
 - **Link** https://www.amazon.com/dp/B082FBW69F?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
-- **rating** still needed
-- **price** still needed
-- **image** still needed
+- **rating** `4.7`, the highest of the eight
+- **price** `"$8–$14"` (seen at $9.99)
+- **image** `/assets/images/affiliate/product-266.jpg` installed
+- **note** it is pressed edible plant fibre rather than plastic, which makes it the
+  tunnel and the chewing material at once. It also degrades and gets rebuilt,
+  which is closer to how a real burrow behaves than a permanent plastic tube.
 - **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
 - **pets** `["small-mammals"]`
 
