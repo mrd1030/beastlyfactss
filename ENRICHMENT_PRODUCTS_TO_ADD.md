@@ -10,6 +10,9 @@ because a rating and price cannot be read off a search result without going stal
 immediately, and the product photo has to be downloaded and installed rather than
 invented. Fill those three in and the records are ready to paste.
 
+Item 1 is the exception: Mike supplied the rating and price from the live listing
+after the original pick went out of stock, so only its image is outstanding.
+
 Link format matches the newer entries in the file:
 `https://www.amazon.com/dp/<ASIN>?tag=beastlyfacts-20`
 
@@ -19,10 +22,19 @@ Link format matches the newer entries in the file:
 Unlocks the food-extraction mechanism for rat, mouse, chinchilla, degu, guinea
 pig, hamster and rabbit. The catalogue's four puzzle feeders are all dog products.
 
-- **ASIN** `B0B82CQ78G`
-- **Product** Sieral Wooden Enrichment Foraging Toy, 7.7 x 7.1 in
-- **Link** https://www.amazon.com/dp/B0B82CQ78G?tag=beastlyfacts-20
+Originally sourced as the Sieral single unit, ASIN `B0B82CQ78G`, which went out of
+stock with no restock date. Replaced by Mike with the Hamiledyi three pack below,
+which is a better fit anyway: the listing names chinchilla, bunny, rat and gerbil
+directly, so it covers the species list rather than approximating it, and three
+units means one per enclosure in a multi-pet home.
+
+- **ASIN** `B0DPKP3JBX`
+- **Product** Hamiledyi 3 Pack Guinea Pig Foraging Toys Interactive Wooden Rabbit Enrichment Toys Hamster Hide Treats Snuffle Puzzle Game for Chinchilla Bunny Rat Gerbil
+- **Link** https://www.amazon.com/dp/B0DPKP3JBX?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
+- **rating** `4.5`
+- **price** `"$15–$20"` (seen at $16.99, banded to match every other price field in the catalogue)
+- **image** still needed
 - **covers** `["Foraging or puzzle feeder for small mammals"]`
 - **pets** `["small-mammals"]`
 
