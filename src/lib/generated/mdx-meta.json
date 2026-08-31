@@ -2055,6 +2055,69 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/argentine-tegu-enrichment-guide.mdx",
+    "slug": "argentine-tegu-enrichment-guide",
+    "title": "Tegu Enrichment: Borrowing From the Monitors, and Saying So",
+    "seoTitle": "Argentine Tegu Enrichment Guide",
+    "excerpt": "Nobody has published an enrichment study on tegus. The closest evidence is the monitor problem-solving work, and this guide says which parts transfer and which do not.",
+    "date": "2026-10-20",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Argentine Tegu",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/argentine-tegu-enrichment.jpg",
+    "imageAlt": "An Argentine black and white tegu digging into deep substrate in a large enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-20",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on Argentine tegus?",
+        "a": "No. Searching the literature returns nothing on Salvator merianae specifically. The nearest evidence is problem-solving work on monitor lizards, where eight of eight juvenile black-throated monitors opened a food tube within ten minutes on the first trial, and follow-up work showed solving times dropping across repeated trials. Tegus are teiids rather than varanids, so that is a looser borrow than it looks."
+      },
+      {
+        "q": "How loose is the borrow?",
+        "a": "Loose enough to state plainly. Monitors and tegus are not close relatives, they are separate lineages that converged on a similar shape and lifestyle: large, active, intelligent, burrowing carnivores that forage widely. The convergence is why the husbandry advice transfers, and it is not the same as a study on your animal."
+      },
+      {
+        "q": "Are tegus really that trainable?",
+        "a": "They are among the most commonly trained reptiles in private keeping, and target and station training is standard in zoo collections for large lizards. That is practice rather than published evidence, and this guide separates the two."
+      },
+      {
+        "q": "How deep should tegu substrate be?",
+        "a": "Deep enough for an animal this size to construct a real burrow, which is substantially deeper than most keepers provide. Tegus dig extensively and will excavate a burrow they sleep and brumate in. This is the single largest enclosure decision for the species."
+      },
+      {
+        "q": "Do tegus need a soaking dish?",
+        "a": "Yes, large enough to get fully into. They soak readily, and it supports both hydration and shedding. It is one of the few genuinely passive enrichment items: provide it and the animal decides when to use it."
+      },
+      {
+        "q": "Does handling count as enrichment for a tegu?",
+        "a": "It is closer to true for a tegu than for almost any other reptile, since well-socialised individuals tolerate and appear to seek interaction. But training is the better framing, because it gives the animal a choice and a task rather than making it the object of the activity."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-zoo-med-eco-earth-coconut-fiber",
+      "large-soakable-water-dish"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/argentine-tegu-handling-guide.mdx",
     "slug": "argentine-tegu-handling-guide",
     "title": "How to Handle an Argentine Tegu (The Reptile That Acts Like a Dog)",
@@ -4682,6 +4745,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/boa-constrictor-enrichment-guide.mdx",
+    "slug": "boa-constrictor-enrichment-guide",
+    "title": "Boa Enrichment: A Big Snake in a Box Is Still a Snake in a Box",
+    "seoTitle": "Boa Constrictor Enrichment Guide",
+    "excerpt": "The ball python housing study compared racks against furnished terrariums. Boas are kept in racks far more often and are far larger, and nobody has studied them.",
+    "date": "2026-10-21",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Boa Constrictor",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/boa-constrictor-enrichment.jpg",
+    "imageAlt": "A boa constrictor draped across a thick horizontal branch in a large planted enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-21",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on boa enrichment?",
+        "a": "No. Nothing has been published on Boa constrictor. The nearest evidence is the ball python housing study, which compared 35 snakes in a rack system against furnished terrariums with substrate, hides, climbing structure, a bathing basin, elevated spots and live plants, and concluded racks are not a welfare alternative."
+      },
+      {
+        "q": "How well does that borrow to a boa?",
+        "a": "Partly. Both are large-bodied ambush constrictors and the rack question applies to both, more urgently to boas given their size. But ball pythons are largely terrestrial and boas are considerably more arboreal, especially as juveniles, so the climbing component carries more weight here than the study itself measured."
+      },
+      {
+        "q": "Do boa constrictors climb?",
+        "a": "Yes, and juveniles particularly. Wild boas use trees regularly, and captive animals will use sturdy elevated structure when it is stable enough to take their weight. Most commercial setups give them nothing to climb at all."
+      },
+      {
+        "q": "Is a rack acceptable for a boa?",
+        "a": "The only study on a comparable species concluded rack systems are not a welfare-equivalent alternative to a furnished terrarium. For an animal that reaches this size and climbs, the argument is harder to make than it is for a ball python, not easier."
+      },
+      {
+        "q": "How big does the water dish need to be?",
+        "a": "Large enough for the snake to get fully into. The furnished enclosures in the ball python study included a basin for bathing rather than a drinking cup, and soaking supports shedding and hydration in a snake this size."
+      },
+      {
+        "q": "What is the biggest enrichment mistake with boas?",
+        "a": "Treating adult size as a reason to reduce the enclosure to something manageable. A large snake in a plastic tub is the scenario the housing research argues against, and it becomes more of a problem as the animal grows rather than less."
+      }
+    ],
+    "relatedProducts": [
+      "climbing-branch-mopani-wood",
+      "large-soakable-water-dish",
+      "cork-bark-round-xl"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/boa-constrictor-feeding-guide.mdx",
     "slug": "boa-constrictor-feeding-guide",
     "title": "Boa Constrictor Feeding: Schedule, Prey Size, and Why Adults Eat So Rarely",
@@ -6232,6 +6359,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/california-kingsnake-enrichment-guide.mdx",
+    "slug": "california-kingsnake-enrichment-guide",
+    "title": "Kingsnake Enrichment: Colubrid Evidence, Honestly Labelled",
+    "seoTitle": "California Kingsnake Enrichment Guide",
+    "excerpt": "Nobody has studied kingsnake enrichment. The corn snake work is the closest, it is from the same family, and this guide says which parts carry.",
+    "date": "2026-10-20",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "California Kingsnake",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/california-kingsnake-enrichment.jpg",
+    "imageAlt": "A banded California kingsnake moving across leaf litter in a furnished enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-20",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on kingsnake enrichment?",
+        "a": "No. Nothing has been published on Lampropeltis californiae. The closest evidence is the corn snake work, which is the same family, and the ratsnake enrichment study, which is closer still in the older taxonomy. Both are covered in our corn snake enrichment guide."
+      },
+      {
+        "q": "What does the corn snake research actually show?",
+        "a": "Given enclosures either two thirds of their body length or longer than their body, corn snakes stretched out fully when they could and showed a clear preference for the larger enclosure. Separate papers found enrichment affected behaviour and welfare measures, and altered how the snakes discriminated familiar from unfamiliar human odour."
+      },
+      {
+        "q": "How far does that borrow stretch?",
+        "a": "Reasonably far. Kingsnakes and corn snakes are both North American colubrids of similar size, build and lifestyle: active terrestrial foragers that also climb. That is a much shorter borrow than the ones needed for, say, a boa or a python, and it should still be labelled as a borrow."
+      },
+      {
+        "q": "Do kingsnakes climb?",
+        "a": "Yes, more than their terrestrial reputation suggests. Stable branches and stacked cork give them a second usable level, and they will use it when it does not shift under them."
+      },
+      {
+        "q": "Should kingsnakes be housed together?",
+        "a": "Never. California kingsnakes are ophiophagous, meaning they eat other snakes, including their own species. This is one of the few animals on this site where cohabitation is a genuine safety issue rather than a welfare preference."
+      },
+      {
+        "q": "What is the cheapest enrichment for a kingsnake?",
+        "a": "Scent. Colubrids navigate chemically, so a shed skin from another enclosure, a scent-marked object, or prey dragged across the substrate before feeding gives them something to investigate with the sense they lead with."
+      }
+    ],
+    "relatedProducts": [
+      "pvc-enclosure-4x2x2",
+      "cork-bark-round-hide",
+      "aspen-shavings-substrate"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/california-kingsnake-handling-guide.mdx",
@@ -13898,6 +14089,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/garter-snake-enrichment-guide.mdx",
+    "slug": "garter-snake-enrichment-guide",
+    "title": "Garter Snake Enrichment: The One I Had to Correct",
+    "seoTitle": "Garter Snake Enrichment Guide",
+    "excerpt": "A widely cited enrichment study is often attributed to garter snakes. It was ratsnakes. Garter snakes have nothing of their own, and that is worth knowing.",
+    "date": "2026-10-21",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Garter Snake",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/garter-snake-enrichment.jpg",
+    "imageAlt": "A garter snake tongue-flicking as it moves through dense low planting",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-21",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on garter snakes?",
+        "a": "No. Nothing has been published on Thamnophis. This matters because a well-known enrichment study is frequently attributed to garter snakes and was actually done on ratsnakes: Almli and Burghardt (2006), Environmental Enrichment Alters the Behavioral Profile of Ratsnakes. Elaphe is the old genus name for what is now Pantherophis, the corn snakes and ratsnakes."
+      },
+      {
+        "q": "So what evidence applies to garter snakes?",
+        "a": "The colubrid work, borrowed and labelled as such. Corn snakes given enclosures longer than their body stretched out fully and preferred them, and separate papers found enrichment affected behaviour, welfare measures and odour discrimination. Garter snakes are colubrids too, so this is a reasonable borrow rather than a good substitute."
+      },
+      {
+        "q": "What makes garter snakes different from other pet snakes?",
+        "a": "They are diurnal, active foragers rather than sit-and-wait ambush predators. That changes the enrichment picture substantially: an animal that spends its day actively hunting needs an enclosure it can hunt in, not just hide in."
+      },
+      {
+        "q": "Can garter snakes be housed together?",
+        "a": "More successfully than most snakes, and it is still not risk-free. They are found in aggregations in the wild and are sometimes kept in groups, but feeding must be separated to avoid one snake taking another's prey and injuring it in the process."
+      },
+      {
+        "q": "Do garter snakes swim?",
+        "a": "Readily, and many populations are semi-aquatic and hunt in water. A container large enough to swim in rather than merely soak is a genuine enrichment item for this species in a way it is not for most snakes."
+      },
+      {
+        "q": "What is the best free enrichment for a garter snake?",
+        "a": "Scent trails and scattered prey. These are chemosensory hunters that follow trails, so dragging prey across the substrate or hiding food in different places engages the behaviour they are actually built around."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "large-soakable-water-dish",
+      "live-terrarium-plants"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/garter-snake-feeding-guide.mdx",
@@ -22010,6 +22265,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/milk-snake-enrichment-guide.mdx",
+    "slug": "milk-snake-enrichment-guide",
+    "title": "Milk Snake Enrichment: A Shy Snake Needs More Cover, Not Less Space",
+    "seoTitle": "Milk Snake Enrichment Guide",
+    "excerpt": "Milk snakes hide constantly, and that gets used to justify small enclosures. The colubrid research suggests the answer is more cover, not less room.",
+    "date": "2026-10-21",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Milk Snake",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/milk-snake-enrichment.jpg",
+    "imageAlt": "A banded milk snake emerging from cork bark cover in a cluttered enclosure",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-21",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on milk snake enrichment?",
+        "a": "No. Nothing has been published on Lampropeltis triangulum. The nearest evidence is the corn snake enclosure-size and enrichment work, both North American colubrids of similar build, covered in full in our corn snake enrichment guide."
+      },
+      {
+        "q": "My milk snake hides all the time. Does it need a smaller enclosure?",
+        "a": "That is the conclusion most keepers reach and the colubrid research points elsewhere. Given enclosures longer than their body, corn snakes stretched out fully and preferred the larger option. A snake that hides constantly in a large bare enclosure is short of cover rather than short of walls."
+      },
+      {
+        "q": "How do I clutter an enclosure properly?",
+        "a": "The test is whether the snake can travel from one end to the other without ever being fully exposed. Cork tubes and flats, leaf litter, branches and dense artificial or live planting all count. Two hides at opposite ends is a starting point, not the finished job."
+      },
+      {
+        "q": "Do milk snakes climb?",
+        "a": "Yes. They are more arboreal than kingsnakes generally get credit for, and a stable braced branch or a stack of cork gives them a second usable level."
+      },
+      {
+        "q": "Can milk snakes be housed together?",
+        "a": "No. Like other Lampropeltis they are ophiophagous and will eat other snakes. Cohabitation is a safety problem, not a welfare preference."
+      },
+      {
+        "q": "Does scent enrichment work for milk snakes?",
+        "a": "It is the most plausible free option. Colubrids navigate chemically, and a corn snake study found enrichment altered how well the snakes discriminated familiar from unfamiliar human odour, which at least suggests the channel is worth engaging."
+      }
+    ],
+    "relatedProducts": [
+      "cork-bark-round-hide",
+      "aspen-shavings-substrate",
+      "climbing-branch-mopani-wood"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
+  },
+  {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
     "slug": "milk-snake-handling-guide",
     "title": "How to Handle a Milk Snake (And the Coral Snake Look-Alike Question)",
@@ -28024,6 +28343,69 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/savannah-monitor-enrichment-guide.mdx",
+    "slug": "savannah-monitor-enrichment-guide",
+    "title": "Savannah Monitor Enrichment: The Species That Gets Bored Fastest",
+    "seoTitle": "Savannah Monitor Enrichment Guide",
+    "excerpt": "The monitor problem-solving research is a closer fit here than for any other lizard on this site, because savannahs are in the same genus as the animals tested.",
+    "date": "2026-10-20",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Savannah Monitor",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Monitor Lizard"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/savannah-monitor-enrichment.jpg",
+    "imageAlt": "A savannah monitor tongue-flicking across deep substrate in a large enclosure",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-20",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How close is the research to this species?",
+        "a": "Closer than for most animals on this site. The problem-solving study was on Varanus albigularis, the black-throated monitor, and savannah monitors are Varanus exanthematicus, the same genus. That is genus-level rather than species-specific evidence, which is a real distinction but a much shorter borrow than the one tegus need."
+      },
+      {
+        "q": "What did the monitor study show?",
+        "a": "Eight juvenile black-throated monitors were given a transparent tube containing food, and all eight opened it within ten minutes on the first trial. Later longitudinal testing with puzzle-feeder devices found solving latencies decreasing over time, interpreted as learning rather than repetition."
+      },
+      {
+        "q": "Why is obesity relevant to an enrichment guide?",
+        "a": "Because most enrichment for this species is food based, and savannah monitors become obese very easily in captivity on rich diets and limited space. Puzzle feeding has to deliver the existing ration in a harder form rather than adding calories on top of it."
+      },
+      {
+        "q": "How deep does the substrate need to be?",
+        "a": "Deep enough to construct a burrow, which for an adult is a serious volume of material. Savannah monitors burrow to escape heat and to rest, and a shallow layer removes the behavior entirely. This is the biggest single housing decision for the species."
+      },
+      {
+        "q": "Do savannah monitors need humidity?",
+        "a": "More than the arid reputation suggests. They shelter in humid burrows in the wild even in dry regions, so a damp lower substrate layer or a dedicated humid retreat matters, and chronic dehydration is a common problem in captive animals."
+      },
+      {
+        "q": "Can savannah monitors be target trained?",
+        "a": "Yes, and monitors are routinely target-trained in zoo collections. For an animal this size, station training makes weighing and health checks dramatically safer for both parties."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-zoo-med-eco-earth-coconut-fiber",
+      "large-soakable-water-dish"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5
   },
   {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",

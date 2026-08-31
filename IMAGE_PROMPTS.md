@@ -418,3 +418,61 @@ basking light casting a hard shadow. Camera low at substrate level so the depth
 of the substrate fills the lower third. Active excavation, not a basking pose.
 No hands, no people.
 ```
+
+### Enrichment guides, batch 4 (2026-10-20 to 10-21)
+
+First borrowed-evidence batch. Same rules: 3:2 at 1168x784, animal mid-behavior.
+
+#### argentine-tegu-enrichment.jpg
+```
+An Argentine black and white tegu mid-dig, forelimbs buried to the elbow in
+deep dark substrate with soil sprayed backwards, head lowered at a burrow
+entrance. Very large enclosure, cork and logs behind, strong basking light from
+above right. Low camera at substrate level. The bold black and white banding
+should read clearly against the dark soil. No hands, no people.
+```
+
+#### savannah-monitor-enrichment.jpg
+```
+A savannah monitor standing over deep substrate with its forked tongue extended
+mid-flick, investigating a partly buried food item. Heavy-bodied, keeled scales
+catching hard overhead basking light, rock stack and a large water tub behind.
+Camera low and slightly ahead of the animal. Investigating, not basking.
+No hands, no people.
+```
+
+#### california-kingsnake-enrichment.jpg
+```
+A black and white banded California kingsnake moving through leaf litter over
+aspen substrate, head raised and tongue out, body winding between cork tubes and
+low planting so it is partly obscured along its length. Wide horizontal frame
+emphasizing floor length. Soft even light. Travelling under cover, not coiled in
+a hide. No hands, no people.
+```
+
+#### milk-snake-enrichment.jpg
+```
+A red, black and white banded milk snake emerging head-first from beneath a cork
+flat, most of the body still hidden under leaf litter, only the head and a few
+inches of neck visible. Densely cluttered enclosure floor with overlapping cork,
+litter and low plants leaving almost no open ground. Warm low light.
+The clutter is the subject. No hands, no people.
+```
+
+#### boa-constrictor-enrichment.jpg
+```
+A boa constrictor draped in loose coils across a thick horizontal branch,
+supporting its own weight, several feet off the enclosure floor. Large planted
+enclosure below with a big water tub and cork rounds visible. Warm light from
+one side, shallow depth of field on the head. Scale should read: this is a heavy
+animal on structure strong enough to hold it. No hands, no people.
+```
+
+#### garter-snake-enrichment.jpg
+```
+A slender garter snake with yellow dorsal stripes moving quickly through dense
+low planting, head up and tongue extended, body in an active S-curve rather than
+coiled. Shallow water dish large enough to swim in visible at the edge of frame,
+damp planted substrate. Bright daylight, since this is a diurnal species.
+Hunting, in motion. No hands, no people.
+```
