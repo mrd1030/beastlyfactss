@@ -4247,6 +4247,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/blue-tongue-skink-enrichment-guide.mdx",
+    "slug": "blue-tongue-skink-enrichment-guide",
+    "title": "Blue Tongue Skink Enrichment: Mealworms Made Them Hide Less",
+    "seoTitle": "Blue Tongue Skink Enrichment Guide",
+    "excerpt": "Nine eastern blue-tongues were given feeding enrichment. They fed longer, gained weight, and spent less time hiding. Three outcomes from one change.",
+    "date": "2026-10-16",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Blue Tongue Skink",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Lizards"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/blue-tongue-skink-enrichment.jpg",
+    "imageAlt": "A blue tongue skink foraging across deep substrate scattered with food",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-16",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What did the blue tongue enrichment study actually test?",
+        "a": "Nine eastern blue-tongue lizards were kept individually in cages furnished with a brick for basking and a pipe for hiding, and then given feeding enrichment. Mealworms increased the time the lizards spent feeding and increased liveweight gain, and mealworms also reduced the time the lizards spent hiding."
+      },
+      {
+        "q": "Why is less hiding the interesting result?",
+        "a": "Because it is a welfare signal rather than a convenience. A skink that hides less is not becoming tamer, it is spending more of its day doing something. Reduced hiding alongside increased feeding time points to an animal that has found a reason to be out."
+      },
+      {
+        "q": "Is scatter feeding better than a bowl?",
+        "a": "For this species the evidence points that way. Blue tongues are opportunistic omnivores that forage across ground in the wild, and a single dish compresses that into a two minute event. Scattering food across substrate, hiding it under cover and using tongs to make prey move all extend it."
+      },
+      {
+        "q": "Do blue tongue skinks need a dig box?",
+        "a": "They dig, and a separate tub of damp diggable material lets them do it without you converting the whole enclosure floor. It is one of the enrichment items with no purpose-made product behind it, because a storage tub does the job."
+      },
+      {
+        "q": "How much floor space does a blue tongue need?",
+        "a": "More than height. These are terrestrial lizards that cover ground, so footprint is the dimension that matters and a tall enclosure adds little. Floor space is what makes scatter feeding and foraging possible at all."
+      },
+      {
+        "q": "Are blue tongues good candidates for training?",
+        "a": "They are among the better reptile candidates. Target and station training is used routinely in zoo collections for large lizards, and it works as cognitive enrichment and cooperative-care husbandry at the same time."
+      }
+    ],
+    "relatedProducts": [
+      "cypress-mulch-substrate",
+      "feeding-tongs-short-soft-tip-4pack",
+      "hide-exo-terra-reptile-cave-xl"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/blue-tongue-skink-feeding-guide.mdx",
     "slug": "blue-tongue-skink-feeding-guide",
     "title": "Blue Tongue Skink Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -4980,6 +5044,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/box-turtle-enrichment-guide.mdx",
+    "slug": "box-turtle-enrichment-guide",
+    "title": "Box Turtle Enrichment: Substrate and a Hide Box Changed Their Bloodwork",
+    "seoTitle": "Box Turtle Enrichment Guide",
+    "excerpt": "Thirty-eight box turtles, one month, two enclosure types. The enriched group ended with a lower stress ratio in their blood and spent less time trying to escape.",
+    "date": "2026-10-17",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Box Turtle",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Turtles"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/box-turtle-enrichment.jpg",
+    "imageAlt": "An eastern box turtle pushing through deep mulch and leaf litter in a planted enclosure",
+    "emoji": "🐢",
+    "lastReviewed": "2026-10-17",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What did the box turtle enrichment study find?",
+        "a": "Case, Lewbart and Doerr randomised 38 eastern box turtles to either barren enclosures with flat newspaper substrate or enriched ones with cypress mulch, shredded paper and a hide box, for a one month period. Turtles in enriched enclosures ended with a significantly lower heterophil to lymphocyte ratio, and spent significantly less time engaged in escape behaviour."
+      },
+      {
+        "q": "What is a heterophil to lymphocyte ratio?",
+        "a": "It is a blood measure used as a physiological stress indicator in reptiles and birds, comparable to how cortisol is used elsewhere. A lower ratio in the enriched group means the effect showed up in the animals' physiology, not just in what they were seen doing."
+      },
+      {
+        "q": "What counts as escape behaviour in a turtle?",
+        "a": "Pacing the perimeter, pushing at walls, climbing at corners. It is easy to read as an active, curious turtle exploring, and the study treats it as the opposite: a measure that went down when the enclosure got better."
+      },
+      {
+        "q": "Was the enrichment complicated?",
+        "a": "Not at all, which is what makes the result useful. The enriched condition was cypress mulch instead of newspaper, some shredded paper, and a hide box. Three inexpensive changes produced both a physiological and a behavioural difference."
+      },
+      {
+        "q": "Do box turtles need browse and varied food?",
+        "a": "It suits them. Box turtles are omnivorous foragers that cover ground searching for food, so scattering a varied diet across substrate rather than presenting it in one dish extends feeding into foraging. Chelonian cognition research also supports treating them as animals that can solve food problems."
+      },
+      {
+        "q": "Can box turtles be target trained?",
+        "a": "Related chelonians can. Red-footed tortoises have been trained to use touchscreens and solve spatial tasks, which makes target and station training a defensible enrichment approach across the group rather than an anthropomorphic one."
+      }
+    ],
+    "relatedProducts": [
+      "cypress-mulch-substrate",
+      "hide-exo-terra-reptile-cave-xl",
+      "sphagnum-moss"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/box-turtle-handling-guide.mdx",
@@ -11789,6 +11917,69 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/ferret-enrichment-guide.mdx",
+    "slug": "ferret-enrichment-guide",
+    "title": "Ferret Enrichment: Lying Awake With Their Eyes Open",
+    "seoTitle": "Ferret Enrichment Guide",
+    "excerpt": "Ferrets without playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less. Boredom with a measurable signature.",
+    "date": "2026-10-17",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ferret",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Welfare",
+      "Play",
+      "Tunnels"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/ferret-enrichment.jpg",
+    "imageAlt": "A ferret mid-leap out of a fabric tunnel in a multi-level enclosure",
+    "emoji": "🦡",
+    "lastReviewed": "2026-10-17",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does an under-stimulated ferret actually look like?",
+        "a": "Research on ferret playtime found that ferrets without it spent more time lying awake with their eyes open, screeched more, and sat and stood less than after playtime. Lying awake with eyes open is the specific, observable thing to look for, and it is easy to mistake for a resting animal."
+      },
+      {
+        "q": "What enrichment do ferret owners actually provide?",
+        "a": "Survey work found the most commonly reported enrichments were hammocks, tunnels and human interaction, and that ferrets were reported to most enjoy digging, tunnels, human interaction and exploration. Those four are the shortlist."
+      },
+      {
+        "q": "Do ferrets need a multi-level cage?",
+        "a": "Multi-level caging promotes exploratory behaviour and reduces stress, according to the housing research, and cages should provide separate feeding and elimination areas to suit their natural behaviour. Height used as connected levels is different from height as empty space."
+      },
+      {
+        "q": "How much out-of-cage time does a ferret need?",
+        "a": "Several hours daily is the standard recommendation, and the playtime research supports treating it as a requirement rather than a bonus. A ferret is awake for a relatively small part of the day, and most of that awake time should not be spent in a cage."
+      },
+      {
+        "q": "Should ferrets be kept alone?",
+        "a": "They are social and generally do better in groups, and human interaction shows up repeatedly in the survey data as a core enrichment rather than an optional extra. A single ferret needs substantially more time from you."
+      },
+      {
+        "q": "Is a dig box worth it?",
+        "a": "Digging is one of the four activities ferrets were reported to most enjoy. A tub of rice, dried beans or soil gives them somewhere to do it that is not your carpet or your houseplants, and it costs almost nothing."
+      }
+    ],
+    "relatedProducts": [
+      "ferret-hammock-niteangel-nap-sack",
+      "small-pet-hideout-igloo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/ferret-feeding-guide.mdx",
     "slug": "ferret-feeding-guide",
     "title": "Ferret Feeding: Schedule, Diet, and Why They Stop Eating",
@@ -18136,6 +18327,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/hognose-snake-enrichment-guide.mdx",
+    "slug": "hognose-snake-enrichment-guide",
+    "title": "Hognose Enrichment: They Were Asked, and They Chose",
+    "seoTitle": "Hognose Snake Enrichment Guide",
+    "excerpt": "Researchers let western hognose snakes pick between an enriched side and a standard one. They chose enrichment, and the preference got stronger over time.",
+    "date": "2026-10-16",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Hognose Snake",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Snakes"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/hognose-snake-enrichment.jpg",
+    "imageAlt": "A western hognose snake burrowing into loose substrate with its upturned snout",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-16",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on hognose enrichment specifically?",
+        "a": "Yes. Nagabaskaran, Skinner and Miller ran a preference test on western hognose snakes, offering an enriched side with burrowing substrate, interactive stimuli and a large water dish against a standard side with paper towel and a small dish. Both sides had shelters and a thermal gradient, so the comparison was enrichment rather than basic husbandry. The snakes preferred the enriched side, and the preference strengthened over time."
+      },
+      {
+        "q": "Why does it matter that the preference got stronger?",
+        "a": "Because it rules out novelty. A snake investigating something new once tells you little. A preference that grows across the study suggests the animal is learning the enriched side is genuinely better and choosing it deliberately."
+      },
+      {
+        "q": "Why did the cooler enriched side get preferred more?",
+        "a": "The authors link it to hognose burrowing behavior. A burrowing species is naturally drawn to cooler, deeper conditions, so putting the diggable substrate on the cool side aligns two preferences instead of forcing a trade between them."
+      },
+      {
+        "q": "How deep should hognose substrate be?",
+        "a": "Deep enough to disappear into completely, not just to push through. These are dedicated burrowers with an upturned rostral scale adapted for digging, and shallow substrate removes the behavior the snout is built for."
+      },
+      {
+        "q": "Does boldness affect whether a snake uses enrichment?",
+        "a": "The study found no relationship between enrichment preference and individual boldness levels, so a shy hognose is not opting out of enrichment. Every snake in the study leaned the same direction."
+      },
+      {
+        "q": "Is the hognose defensive display a stress signal?",
+        "a": "Hooding, hissing and playing dead are anti-predator responses, and a snake performing them regularly during routine keeping is telling you something. Reducing how often a snake feels it needs them is a fair welfare goal, and secure cover plus depth to retreat into is how you get there."
+      }
+    ],
+    "relatedProducts": [
+      "substrate-zoo-med-reptisand-burrowing",
+      "large-soakable-water-dish",
+      "cork-bark-round-hide"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/hognose-snake-handling-guide.mdx",
@@ -25533,6 +25788,70 @@
     "sourceCount": 5
   },
   {
+    "path": "/content/guides/rat-enrichment-guide.mdx",
+    "slug": "rat-enrichment-guide",
+    "title": "Rat Enrichment: It Is the Number of Types That Matters",
+    "seoTitle": "Fancy Rat Enrichment Guide",
+    "excerpt": "A study of pet rats found the variable that mattered was not any single item. It was how many different kinds of enrichment the cage had.",
+    "date": "2026-10-17",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Fancy Rat",
+      "Enrichment",
+      "Care Tips",
+      "Small Mammal Welfare",
+      "Foraging",
+      "Social Housing"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/rat-enrichment.jpg",
+    "imageAlt": "Two fancy rats exploring a multi-level cage with ropes, hammocks and a dig box",
+    "emoji": "🐀",
+    "lastReviewed": "2026-10-17",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What does the research say matters most for pet rats?",
+        "a": "An exploratory study of pet rats found that a greater total number of enrichment types, meaning nesting material, digging substrate, foraging device, climbing structure, tube, hideaway and suspended area, was associated with more frequent digging, nesting and climbing. The measured variable was variety across categories rather than any single product."
+      },
+      {
+        "q": "Is laboratory rat research relevant to pet rats?",
+        "a": "Largely yes. A 2022 systematic review in Frontiers in Veterinary Science covering laboratory rats and mice found both benefit similarly from enriched environments, with no evidence that housing conditions affect the welfare of different strains differently. The setting differs, the animal does not."
+      },
+      {
+        "q": "How many rats should be kept together?",
+        "a": "Never one. Rats are intensely social and single housing is a welfare problem no amount of enrichment fixes. Two is a minimum and a small same-sex group is better."
+      },
+      {
+        "q": "Do rats need a wheel?",
+        "a": "A correctly sized solid-surface one is a reasonable addition, but it is one category out of seven rather than the centrepiece. Wire and mesh running surfaces cause foot injuries, and a wheel too small forces a permanently arched spine."
+      },
+      {
+        "q": "Can rats be trained?",
+        "a": "Very readily, and it counts as enrichment. Rats learn target training, recall and simple trick sequences quickly, and training sessions are cognitive stimulation and relationship-building at once."
+      },
+      {
+        "q": "What is the single cheapest enrichment upgrade?",
+        "a": "Scatter feeding. Throwing the ration across the cage instead of putting it in a bowl converts a two minute event into a foraging session, and it costs nothing at all."
+      }
+    ],
+    "relatedProducts": [
+      "rat-cage-prevue-495-rolling",
+      "rat-wheel-exotic-nutrition-silent-runner-12in-regular",
+      "small-pet-hideout-igloo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/rat-feeding-guide.mdx",
     "slug": "rat-feeding-guide",
     "title": "Rat Feeding: Diet, Portions, and Why Hamster Food Isn't Rat Food",
@@ -30210,6 +30529,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/tokay-gecko-enrichment-guide.mdx",
+    "slug": "tokay-gecko-enrichment-guide",
+    "title": "Tokay Gecko Enrichment: A 2024 Study Says Keep Them in Pairs",
+    "seoTitle": "Tokay Gecko Enrichment Guide",
+    "excerpt": "Everyone says house tokays alone. A 2024 study moved captive-bred tokays from single to pair housing and found the opposite.",
+    "date": "2026-10-16",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Tokay Gecko",
+      "Enrichment",
+      "Care Tips",
+      "Reptile Enrichment",
+      "Reptile Welfare",
+      "Geckos"
+    ],
+    "readTime": 6,
+    "difficulty": "Advanced",
+    "image": "/assets/images/tokay-gecko-enrichment.jpg",
+    "imageAlt": "A tokay gecko gripping a vertical cork slab in a tall planted terrarium",
+    "emoji": "🦎",
+    "lastReviewed": "2026-10-16",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Should tokay geckos really be housed in pairs?",
+        "a": "A 2024 study in Applied Animal Behaviour Science measured changes in enclosure use, basking and hiding as captive-bred tokay geckos moved from single to pair housing, and concluded that pair housing improves tokay gecko welfare. That runs against the standard advice, and it is the most current evidence available. It does not mean any two tokays can be put together without introduction, monitoring or an exit plan."
+      },
+      {
+        "q": "What did the socially isolated geckos actually do?",
+        "a": "When socially deprived, the lizards were more likely to move and hide before feeding. Hiding is easy to misread as a shy animal settling in, and the study frames it as a welfare signal instead."
+      },
+      {
+        "q": "Is a tall enclosure more important than a wide one for tokays?",
+        "a": "Height matters more for this species than for terrestrial geckos, because tokays are arboreal and spend their time on vertical surfaces. But usable vertical structure matters more than raw height: a tall empty box is wasted space, and cork slabs, branches and planting are what turn it into territory."
+      },
+      {
+        "q": "Are tokays too aggressive for enrichment to matter?",
+        "a": "Their reputation is for defensiveness rather than aggression, and a defensive animal is one that feels it has no better option. Cover, height and secure retreats reduce how often a tokay reaches for that response, which is a welfare goal in its own right."
+      },
+      {
+        "q": "Do tokay geckos need UVB?",
+        "a": "Provision is increasingly treated as a welfare input rather than optional for nocturnal species, and a low-output gradient the animal can move within costs little. The general reptile literature has moved on this considerably from the older position that nocturnal geckos need none."
+      },
+      {
+        "q": "How much should I handle a tokay?",
+        "a": "Little to none as a routine. This is a species best enriched through its enclosure rather than through interaction, and handling is a stressor here rather than a stimulus."
+      }
+    ],
+    "relatedProducts": [
+      "climbing-branch-mopani-wood",
+      "live-terrarium-plants",
+      "cork-bark-round-xl"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",

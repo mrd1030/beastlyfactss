@@ -290,3 +290,67 @@ cork and a climbing branch at the edge of frame. Warm humid light, shallow depth
 of field on the inspecting crab. Natural unpainted shells only. The act of
 choosing is the subject. No hands, no people.
 ```
+
+### Enrichment guides, batch 2 (2026-10-16 to 10-17)
+
+Same rules as batch 1: 3:2 at 1168x784, the animal mid-behavior rather than an
+empty enclosure.
+
+#### hognose-snake-enrichment.jpg
+```
+A western hognose snake actively burrowing, head and upturned snout pushed down
+into loose sandy substrate with a shallow furrow trailing behind it, most of the
+body still on the surface. Deep loose substrate filling the lower half of frame,
+a large shallow water dish and a cork tube visible on the cool side, soft
+diffuse light from above. Close, low camera angle at substrate level so the
+depth reads. The digging is the subject. No hands, no people.
+```
+
+#### tokay-gecko-enrichment.jpg
+```
+A tokay gecko, vivid blue-grey with orange spots, gripping a vertical cork slab
+partway up a tall densely planted terrarium, body oriented head-down. Large
+pothos and bromeliad foliage, branches at multiple heights, visible humidity on
+the glass. Dim warm evening lighting suited to a nocturnal species, shallow
+depth of field on the gecko's head and foot pads. Emphasize vertical space that
+is full rather than empty. No hands, no people.
+```
+
+#### blue-tongue-skink-enrichment.jpg
+```
+A blue tongue skink walking across deep cypress mulch with its tongue extended,
+nosing among scattered chopped greens and a few insects spread across the
+substrate and partly hidden under leaf litter and a cork flat. Wide low camera
+angle showing floor space running away from the animal. Warm basking light from
+one side. Foraging across ground, not eating from a dish. No bowl in frame,
+no hands, no people.
+```
+
+#### box-turtle-enrichment.jpg
+```
+An eastern box turtle pushing forward through deep cypress mulch and leaf
+litter, front half emerging from under a fallen log, substrate visibly disturbed
+around it. Damp mossy patches, low ferns, dappled light as if through a canopy.
+Camera at substrate level, shallow depth of field on the turtle's face and the
+red eye. The animal is burrowing out, not sitting on a bare surface.
+No hands, no people, no newspaper.
+```
+
+#### ferret-enrichment.jpg
+```
+A ferret in mid-leap emerging from the open end of a fabric play tunnel, all
+four feet off the ground, body stretched out. Behind it a multi-level cage with
+hammocks slung at two heights and a second tunnel connecting levels. Bright
+domestic daylight, fast shutter feel, slight motion energy. Playing, caught mid
+movement, not posed. No hands, no people.
+```
+
+#### rat-enrichment.jpg
+```
+Two fancy rats in a tall multi-level cage, one climbing a knotted rope and the
+other sitting in a hanging hammock, with a shallow dig tub, cardboard tubes and
+a wooden hideout visible across different levels. Nesting material pulled into
+one corner. Warm domestic light, shallow depth of field on the climbing rat.
+The frame should read as a cage covering many different kinds of enrichment at
+once, which is the point of the article. No hands, no people.
+```
