@@ -964,3 +964,110 @@ through the water. Depth visible below them, pond planting at the margins,
 dappled outdoor daylight. The size of the fish and the depth of the pond should
 both read. No hands, no people.
 ```
+
+### Enrichment guides, batch 12 (2026-11-06 to 11-08)
+
+Dogs and cats, the last batch. Same rules: 3:2 at 1168x784, animal mid-behavior,
+show the enrichment being used rather than the product sitting there. These are
+the highest-traffic pages on the site, so the photography should be the most
+polished of the set.
+
+#### dog-enrichment.jpg
+```
+A dog nose-down working a scent trail through long grass, ears forward, tail
+level, whole body committed to following something. Open field, low golden
+afternoon light, shallow depth of field on the muzzle. Mixed-breed or unremarkable
+breed so it reads as any dog. The concentration is the subject. No hands, no
+people, no lead visible.
+```
+
+#### cat-enrichment.jpg
+```
+A cat mid-pounce on a wand toy, front paws off the ground and both aimed at the
+toy, body fully extended. A tall cat tree and a scratching post visible in the
+background, plus a puzzle feeder on the floor. Bright warm domestic lighting,
+shallow depth of field on the cat. Full predatory posture, not a cat batting
+idly. No hands, no people, the wand toy end only.
+```
+
+#### border-collie-enrichment.jpg
+```
+A black and white border collie in the classic low crouch with its eye locked on
+something just out of frame, ears forward, body coiled and still. Open grass,
+crisp daylight, shallow depth of field. The intensity of the stare is the whole
+photo. No hands, no people, no sheep in frame.
+```
+
+#### beagle-enrichment.jpg
+```
+A beagle nose-down and fully absorbed in a scent trail across grass, ears hanging
+forward around the muzzle, tail up. Tricolour markings, bright natural daylight,
+low camera angle at the dog's head height. Shallow depth of field on the nose. No
+hands, no people, no lead.
+```
+
+#### labrador-enrichment.jpg
+```
+A labrador working at a puzzle feeder on a kitchen floor, nose pushing a slider,
+one paw resting on the edge of the toy, completely absorbed. Warm indoor light,
+shallow depth of field on the face. Lean and fit rather than heavy. Problem
+solving in progress. No hands, no people.
+```
+
+#### siberian-husky-enrichment.jpg
+```
+A siberian husky leaning hard into a pulling harness on a long line across open
+ground, body low and driving forward, mouth open. Cool overcast daylight, winter
+or early spring landscape. Shot from the side so the pulling posture reads
+clearly. No hands, no people, the line trailing out of frame.
+```
+
+#### french-bulldog-enrichment.jpg
+```
+A french bulldog working a snuffle mat on a cool tiled floor indoors, nose buried
+in the fabric strips, bat ears up. Calm indoor lighting, shallow depth of field on
+the face. Relaxed and settled rather than exerting. The low-effort mental work is
+the point. No hands, no people.
+```
+
+#### bulldog-enrichment.jpg
+```
+An english bulldog lying down on a cool tiled floor working a puzzle feeder with
+one paw, heavy body settled and relaxed, breathing easy. Soft indoor lighting,
+shallow depth of field on the face and the toy. Everything at floor level, nothing
+requiring effort. No hands, no people.
+```
+
+#### dachshund-enrichment.jpg
+```
+A dachshund digging enthusiastically into a sandpit, front paws buried and sand
+flying, tail up, nose down. Outdoor daylight, contained pit with a wooden edge
+visible. Shallow depth of field, motion in the sand. Four feet on the ground and
+clearly delighted. No hands, no people.
+```
+
+#### bengal-cat-enrichment.jpg
+```
+A spotted bengal cat mid-leap between two high wall shelves, body fully extended
+in the air, rosetted coat catching the light. Domestic room below with more
+shelves forming a route across the wall. Bright daylight, fast shutter freezing
+the jump. The vertical route should be readable in the background. No hands, no
+people.
+```
+
+#### sphynx-cat-enrichment.jpg
+```
+A sphynx cat curled contentedly inside an enclosed heated bed on a high carpeted
+shelf, only the head and one forepaw out, eyes half closed. Wrinkled skin and
+large ears clearly visible. Warm low lighting, cosy domestic setting. Warmth and
+height in the same frame is the point. No hands, no people.
+```
+
+#### persian-cat-enrichment.jpg
+```
+A long-haired persian cat reaching up from a low padded platform to bat at a wand
+toy held just above it, paw extended, flat face and large eyes clear. Low stepped
+cat furniture around it, warm domestic lighting, shallow depth of field. Engaged
+and playing, but low to the ground and unhurried. No hands, no people, the toy end
+only.
+```

@@ -3522,6 +3522,71 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/beagle-enrichment-guide.mdx",
+    "slug": "beagle-enrichment-guide",
+    "title": "Beagle Enrichment: The Study That Explains the Whole Breed",
+    "seoTitle": "Beagle Enrichment Guide",
+    "excerpt": "Dogs allowed to use their noses became measurably more optimistic. For a breed built around exactly that, the finding stops being interesting and starts being a care plan.",
+    "date": "2026-11-06",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Beagle",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Scent Hounds"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/beagle-enrichment.jpg",
+    "imageAlt": "A beagle nose-down tracking a scent trail across grass, ears forward",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-06",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to beagle enrichment?",
+        "a": "The nosework study by Duranton and Horowitz is the most directly relevant work in dog enrichment for any breed, and it lands hardest here. Dogs given scent work approached an ambiguous bowl significantly faster afterwards, the standard optimism measure, while dogs given heelwork did not change."
+      },
+      {
+        "q": "Why is that finding so relevant to beagles?",
+        "a": "Because a beagle is a nose with a dog attached. The study's explanation is that scent work lets a dog express a natural behaviour autonomously, and for a breed selected for centuries to follow a trail independently of a handler, that is the core of what the animal is for."
+      },
+      {
+        "q": "Will my beagle ever have reliable off-lead recall?",
+        "a": "Plan as though not. Beagles were bred to follow a scent away from a handler for hours, and once a trail is picked up, recall competes with several centuries of selection. A long line and secure fenced areas are the realistic answer rather than a training failure."
+      },
+      {
+        "q": "Why is my beagle always hungry?",
+        "a": "Beagles are strongly food motivated as a breed and are one of the most obesity-prone dogs in veterinary practice. That is a management problem and also an opportunity, since food motivation makes scent-and-food enrichment straightforward to set up."
+      },
+      {
+        "q": "Is the baying trainable?",
+        "a": "Partially. The voice is what the breed was selected for, so it will not disappear, and much of the excess is boredom and frustration. A beagle with daily scent work and company bays less than one left alone in a garden."
+      },
+      {
+        "q": "Do beagles need company?",
+        "a": "They are pack hounds and cope poorly with long isolation, more so than many breeds. A beagle left alone all day is the classic profile for both the vocalising and the destruction people complain about."
+      }
+    ],
+    "relatedProducts": [
+      "rundik-snuffle-mat-dogs",
+      "nina-ottosson-dog-tornado-puzzle-toy",
+      "licki-mat-dogs"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/bearded-dragon-cost-guide.mdx",
     "slug": "bearded-dragon-cost-guide",
     "title": "How Much Does a Bearded Dragon Really Cost?",
@@ -3933,6 +3998,71 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/bengal-cat-enrichment-guide.mdx",
+    "slug": "bengal-cat-enrichment-guide",
+    "title": "Bengal Cat Enrichment: The Five Pillars, Turned Up",
+    "seoTitle": "Bengal Cat Enrichment Guide",
+    "excerpt": "A Bengal does not need different things from other cats. It needs the same things, provided at a scale that defeats most households, which is why so many get rehomed.",
+    "date": "2026-11-08",
+    "category": "Cats",
+    "categories": [
+      "Cats",
+      "Enrichment"
+    ],
+    "tags": [
+      "Bengal",
+      "Cat Health",
+      "Enrichment",
+      "Care Tips",
+      "Cat Welfare",
+      "Active Cats"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/bengal-cat-enrichment.jpg",
+    "imageAlt": "A spotted bengal cat mid-leap between two high wall shelves",
+    "emoji": "🐈",
+    "lastReviewed": "2026-11-08",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do Bengals need different enrichment from other cats?",
+        "a": "Not different, more. The AAFP and ISFM five pillars apply to every cat, and a Bengal needs the third pillar, opportunity for play and predatory behaviour, provided at a scale most households do not anticipate."
+      },
+      {
+        "q": "What are the five pillars?",
+        "a": "A safe place. Multiple and separated key resources. Opportunity for play and predatory behaviour. Positive, consistent and predictable human interaction. And an environment that respects the cat's sense of smell."
+      },
+      {
+        "q": "How much play does a Bengal need?",
+        "a": "Several sessions a day rather than one, and each ending in a catch the cat is allowed to have. An under-stimulated Bengal is not a quiet cat, it is a cat that finds its own entertainment in your house."
+      },
+      {
+        "q": "Do Bengals really like water?",
+        "a": "Many do, unusually for cats. Running taps, dripping fountains and shallow water play are genuinely enriching for a lot of Bengals, which is a rare opportunity worth using rather than a quirk to manage."
+      },
+      {
+        "q": "Can Bengals be trained?",
+        "a": "Yes, and it is one of the better outlets available. They take to clicker training, recall and harness walking readily, and structured training sessions give a highly active cat a predictable task."
+      },
+      {
+        "q": "Why do so many Bengals get rehomed?",
+        "a": "Because they are bought for how they look and kept as ordinary cats. The behaviour that follows, climbing everything, opening things, vocalising, redirecting energy onto the household, is an active animal in an environment built for a less active one."
+      }
+    ],
+    "relatedProducts": [
+      "cat-tree-scratching-post",
+      "puzzle-feeder",
+      "litter-box"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
   },
   {
     "path": "/content/guides/bengal-cat-legal-guide.mdx",
@@ -5364,6 +5494,71 @@
     "sourceCount": 0
   },
   {
+    "path": "/content/guides/border-collie-enrichment-guide.mdx",
+    "slug": "border-collie-enrichment-guide",
+    "title": "Border Collie Enrichment: You Cannot Tire Them Out, So Stop Trying",
+    "seoTitle": "Border Collie Enrichment Guide",
+    "excerpt": "The standard advice is more exercise. Run a border collie harder and you get a fitter border collie who still needs a job, and now needs a longer run to settle.",
+    "date": "2026-11-06",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Border Collie",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Working Dogs"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/border-collie-enrichment.jpg",
+    "imageAlt": "A border collie in a focused crouch, eyes locked on a task in front of it",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-06",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to border collie enrichment?",
+        "a": "Not on the breed specifically. The most useful evidence is the nosework study by Duranton and Horowitz, where dogs given scent work became measurably more optimistic on a cognitive bias test while dogs given heelwork did not change."
+      },
+      {
+        "q": "Why does more exercise not fix a border collie?",
+        "a": "Because it builds fitness. A dog run to exhaustion daily adapts, and next month the same run does less. What does not adapt in the same way is the need for a task, so you end up with an extremely fit dog that still has nothing to do."
+      },
+      {
+        "q": "What counts as a job for a pet border collie?",
+        "a": "Anything with a structure, a problem and an endpoint. Scent work, trick chains, retrieving named objects, agility, obedience, treibball, or a real task around the house. The specific activity matters less than that it has a beginning and a result."
+      },
+      {
+        "q": "Should I let my border collie herd things?",
+        "a": "Give the drive an appropriate outlet rather than suppressing it or letting it aim itself. Herding balls, treibball and formal herding all work. What goes wrong is a collie that starts herding cars, bicycles, children or the vacuum cleaner because nothing else was offered."
+      },
+      {
+        "q": "Why does my collie never settle?",
+        "a": "Often because settling was never taught and because the routine is all activity. An off switch is a trained skill: a mat, a place cue, a predictable end to sessions. A dog that has learned to rest is a different animal from one that has only learned to work."
+      },
+      {
+        "q": "Are border collies good first dogs?",
+        "a": "Rarely. They are the most capable dog most people will ever meet and the least forgiving of an unstructured home. The breed dominates rehoming statistics in a way that is directly about the mismatch between what they need and what an average household provides."
+      }
+    ],
+    "relatedProducts": [
+      "nina-ottosson-dog-tornado-puzzle-toy",
+      "rundik-snuffle-mat-dogs",
+      "west-paw-zogoflex-toy"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/box-turtle-cost-guide.mdx",
     "slug": "box-turtle-cost-guide",
     "title": "How Much Does a Box Turtle Really Cost? (And a Legal Note on Where They Come From)",
@@ -6552,6 +6747,71 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/bulldog-enrichment-guide.mdx",
+    "slug": "bulldog-enrichment-guide",
+    "title": "Bulldog Enrichment: Heavier, Hotter, and Even Less Margin",
+    "seoTitle": "Bulldog Enrichment Guide",
+    "excerpt": "The English bulldog carries the French bulldog's airway problem on a heavier frame with worse joints. The margin for error on a warm day is smaller still.",
+    "date": "2026-11-07",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Bulldog",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Brachycephalic"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/bulldog-enrichment.jpg",
+    "imageAlt": "An english bulldog working a puzzle feeder on a cool tiled floor",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-07",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How is a bulldog different from a French bulldog for enrichment?",
+        "a": "Same airway problem, larger and heavier body. The extra mass means more heat generated for the same effort, more load on joints that are frequently already abnormal, and less margin before a warm day becomes an emergency."
+      },
+      {
+        "q": "What exercise can a bulldog actually do?",
+        "a": "Short, frequent, cool, flat walks, stopped on the breathing rather than the clock. Movement matters for weight, and the intensity has to stay well below what a similarly sized dog of another breed would manage."
+      },
+      {
+        "q": "What should enrichment look like instead?",
+        "a": "Scent work and puzzles, which cost almost no breath. That is also the best-evidenced dog enrichment generally: dogs given nosework became measurably more optimistic on a cognitive bias test while dogs given heelwork did not change."
+      },
+      {
+        "q": "Why does weight matter so much here?",
+        "a": "Because it worsens both problems at once. Extra weight loads compromised joints and makes an already restricted airway work harder, so weight control is not a cosmetic goal in this breed, it is the main lever an owner actually has."
+      },
+      {
+        "q": "Can bulldogs swim?",
+        "a": "Most cannot swim safely. The body shape and the head make them poor swimmers, and bulldogs drown in garden pools with some regularity. Water is not the low-impact exercise option here that it is for other heavy breeds."
+      },
+      {
+        "q": "What about the skin folds?",
+        "a": "They need regular cleaning and drying, and it is worth folding into the daily routine alongside everything else. Fold dermatitis is common, uncomfortable, and entirely a management problem."
+      }
+    ],
+    "relatedProducts": [
+      "rundik-snuffle-mat-dogs",
+      "licki-mat-dogs",
+      "nina-ottosson-dog-tornado-puzzle-toy"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/california-kingsnake-cost-guide.mdx",
     "slug": "california-kingsnake-cost-guide",
     "title": "How Much Does a California Kingsnake Really Cost?",
@@ -7603,6 +7863,71 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/cat-enrichment-guide.mdx",
+    "slug": "cat-enrichment-guide",
+    "title": "Cat Enrichment: Five Pillars, and Most Homes Miss the Second One",
+    "seoTitle": "Cat Enrichment Guide",
+    "excerpt": "Veterinary medicine has an agreed framework for what a cat's environment must provide. The pillar most homes fail is the one about not stacking the resources together.",
+    "date": "2026-11-06",
+    "category": "Cats",
+    "categories": [
+      "Cats",
+      "Enrichment"
+    ],
+    "tags": [
+      "Cats",
+      "Cat Health",
+      "Enrichment",
+      "Care Tips",
+      "Cat Welfare",
+      "Indoor Cats"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/images/cat-enrichment.jpg",
+    "imageAlt": "A cat mid-pounce on a wand toy beside a tall cat tree and a scratching post",
+    "emoji": "🐈",
+    "lastReviewed": "2026-11-06",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there an agreed standard for cat environments?",
+        "a": "Yes. The American Association of Feline Practitioners and the International Society of Feline Medicine published Feline Environmental Needs Guidelines, which set out five pillars of a healthy feline environment covering safety, resources, play, human interaction and scent."
+      },
+      {
+        "q": "What are the five pillars?",
+        "a": "A safe place. Multiple and separated key environmental resources. Opportunity for play and predatory behaviour. Positive, consistent and predictable human to cat social interaction. And an environment that respects the cat's sense of smell."
+      },
+      {
+        "q": "Which one do most homes get wrong?",
+        "a": "The second. Food, water, litter trays, scratching posts and resting places tend to get grouped in one corner or one room, and separating them is what stops a cat having to make a trade-off between eating, drinking, toileting and feeling safe."
+      },
+      {
+        "q": "How many litter trays should I have?",
+        "a": "The standard veterinary recommendation is one per cat plus one, in separate locations rather than lined up together. Two trays side by side function as one resource, which is exactly what the second pillar is warning about."
+      },
+      {
+        "q": "Does play really need to be predatory?",
+        "a": "That is what the third pillar specifies, and it matches what cats do. A wand toy moved like prey, allowed to end in a catch, engages a full hunting sequence. A laser pointer that never lets the cat catch anything ends the sequence without resolution."
+      },
+      {
+        "q": "Do indoor cats need vertical space?",
+        "a": "Yes, and it is one of the cheapest fixes. Height gives a cat somewhere to observe from and somewhere to retreat to, which serves the first pillar directly, and in multi-cat homes it multiplies the usable territory without needing more floor."
+      }
+    ],
+    "relatedProducts": [
+      "cat-tree-scratching-post",
+      "puzzle-feeder",
+      "litter-box"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -11400,6 +11725,71 @@
     "sourceCount": 3
   },
   {
+    "path": "/content/guides/dachshund-enrichment-guide.mdx",
+    "slug": "dachshund-enrichment-guide",
+    "title": "Dachshund Enrichment: Keep It at Floor Level",
+    "seoTitle": "Dachshund Enrichment Guide",
+    "excerpt": "A dachshund is a scent hound with a spine that fails. That combination means the best enrichment for the breed is also the safest: nose down, four feet on the ground.",
+    "date": "2026-11-08",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Dachshund",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Scent Hounds"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/dachshund-enrichment.jpg",
+    "imageAlt": "A dachshund digging into a sand pit with its nose buried, tail up",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-08",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does enrichment for a dachshund need special care?",
+        "a": "Because of the spine. Dachshunds are the breed most associated with intervertebral disc disease, and a great many activities other dogs do freely, jumping off sofas, stairs, hard landings, carry real risk here."
+      },
+      {
+        "q": "What can they do safely?",
+        "a": "Almost anything at floor level. Digging, scent work, puzzle feeding and tracking all give a dachshund a genuine job with four feet on the ground, and they happen to be exactly what the breed was designed for."
+      },
+      {
+        "q": "Is there evidence that scent work helps dogs?",
+        "a": "Yes. Dogs given nosework approached an ambiguous bowl significantly faster afterwards on a cognitive bias test, the standard optimism measure, while dogs given heelwork did not change. For a scent-hunting breed that cannot jump, it is close to ideal."
+      },
+      {
+        "q": "Should I stop my dachshund using stairs?",
+        "a": "Manage them rather than relying on the dog to be sensible. Ramps onto furniture, carrying up and down stairs or gating them off, and supporting the whole body when lifting are the standard recommendations."
+      },
+      {
+        "q": "Does weight affect the back?",
+        "a": "Yes, and it is one of the few risk factors an owner fully controls. Extra weight increases load on a spine that is already the breed's weak point, so weight control is spinal care rather than a cosmetic concern."
+      },
+      {
+        "q": "Why is my dachshund digging up the garden?",
+        "a": "Because it was bred to go underground after badgers. Digging is the breed doing its actual job, and a dedicated digging pit turns a destructive habit into the single best enrichment available for the breed."
+      }
+    ],
+    "relatedProducts": [
+      "rundik-snuffle-mat-dogs",
+      "nina-ottosson-dog-tornado-puzzle-toy",
+      "licki-mat-dogs"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/degu-cost-guide.mdx",
     "slug": "degu-cost-guide",
     "title": "How Much Does Degu Ownership Really Cost?",
@@ -12339,6 +12729,71 @@
     ],
     "relatedProducts": [
       "licki-mat-dogs"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/dog-enrichment-guide.mdx",
+    "slug": "dog-enrichment-guide",
+    "title": "Dog Enrichment: Let Them Sniff, and the Dog Gets More Optimistic",
+    "seoTitle": "Dog Enrichment Guide",
+    "excerpt": "Two weeks of nosework made dogs measurably more optimistic on a cognitive bias test. The control group did heelwork and did not change.",
+    "date": "2026-11-06",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Dogs",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Training"
+    ],
+    "readTime": 8,
+    "difficulty": "Beginner",
+    "image": "/assets/images/dog-enrichment.jpg",
+    "imageAlt": "A dog nose-down working a scent trail through long grass",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-06",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research showing dog enrichment works?",
+        "a": "Yes, and one study is unusually clean. Duranton and Horowitz gave twenty pet dogs either nosework or heelwork, then tested them on a cognitive bias task. The nosework dogs approached an ambiguous bowl significantly faster afterwards, which is the standard measure of optimism in animals. The heelwork controls did not change."
+      },
+      {
+        "q": "What is a cognitive bias test?",
+        "a": "A way of asking an animal whether it expects good things. Dogs learn that a bowl in one spot always has food and a bowl in another never does, then get an empty bowl placed exactly between them. How quickly they go and check is read as optimism or pessimism."
+      },
+      {
+        "q": "Why does sniffing specifically help?",
+        "a": "The authors put it down to expressing a natural behaviour and having autonomy over it. A dog on a lead being told where to go is not making decisions. A dog following a scent is choosing where to go next, and choice is what most enrichment definitions are actually about."
+      },
+      {
+        "q": "How much exercise does enrichment replace?",
+        "a": "None of it. Enrichment sits alongside physical exercise, training and company rather than substituting for any of them. A dog that is under-exercised and under-stimulated needs both fixed, not one traded for the other."
+      },
+      {
+        "q": "What is the cheapest useful thing I can do?",
+        "a": "Let the dog sniff on walks. A walk where the dog is allowed to stop and investigate is a different activity from a walk covering the same distance at heel, and the research says the difference is measurable."
+      },
+      {
+        "q": "Do food puzzles actually help or do they just slow eating?",
+        "a": "Both, and the slowing is not the point. Working for food is a natural behaviour that a bowl removes entirely, and moving some of the daily ration into puzzles, snuffle mats and scatter feeding turns a thirty second event into an activity."
+      }
+    ],
+    "relatedProducts": [
+      "rundik-snuffle-mat-dogs",
+      "nina-ottosson-dog-tornado-puzzle-toy",
+      "kong-extreme-dog-toy-large"
     ],
     "factFile": false,
     "animal": null,
@@ -14595,6 +15050,71 @@
     "myth": null,
     "truth": null,
     "sourceCount": 0
+  },
+  {
+    "path": "/content/guides/french-bulldog-enrichment-guide.mdx",
+    "slug": "french-bulldog-enrichment-guide",
+    "title": "French Bulldog Enrichment: Build the Whole Plan Around the Airway",
+    "seoTitle": "French Bulldog Enrichment Guide",
+    "excerpt": "Most dog enrichment advice assumes the dog can breathe hard. For a French bulldog that assumption is the problem, so the whole plan has to shift to low-exertion work.",
+    "date": "2026-11-07",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "French Bulldog",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Brachycephalic"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/french-bulldog-enrichment.jpg",
+    "imageAlt": "A french bulldog working a snuffle mat indoors on a cool floor",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-07",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why does a French bulldog need a different enrichment plan?",
+        "a": "Because most dog enrichment assumes exertion is available. Brachycephalic obstructive airway syndrome limits how hard many French bulldogs can work before they are in trouble, so the plan has to shift toward mental work that costs little breath."
+      },
+      {
+        "q": "Does that mean no exercise at all?",
+        "a": "No. It means short, frequent, cool walks rather than long or hard ones, and stopping on the dog's breathing rather than on the clock. Movement still matters, particularly for weight, and the intensity has to be capped."
+      },
+      {
+        "q": "What is the best enrichment for a dog that cannot be run?",
+        "a": "Scent work, and it is well evidenced for dogs generally. Dogs given nosework became measurably more optimistic on a cognitive bias test while dogs given heelwork did not, and sniffing costs almost no exertion, which makes it close to ideal here."
+      },
+      {
+        "q": "How dangerous is heat for this breed?",
+        "a": "Seriously dangerous. Brachycephalic dogs cannot cool themselves efficiently by panting, and heat-related emergencies in this group happen at temperatures other dogs handle easily. Warm weather is a hard limit on activity rather than a comfort question."
+      },
+      {
+        "q": "Should I be careful about their backs too?",
+        "a": "Yes. French bulldogs are a screw-tailed breed with a high rate of vertebral malformation and intervertebral disc disease, so jumping off furniture and stair use are worth managing alongside the airway."
+      },
+      {
+        "q": "Is snoring normal?",
+        "a": "It is common and it is not normal in the sense of being harmless. Noisy breathing at rest is a sign of airway obstruction, not a breed charm, and it is worth a veterinary assessment rather than acceptance."
+      }
+    ],
+    "relatedProducts": [
+      "rundik-snuffle-mat-dogs",
+      "licki-mat-dogs",
+      "nina-ottosson-dog-tornado-puzzle-toy"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/french-bulldog-feeding-guide.mdx",
@@ -22263,6 +22783,71 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/labrador-enrichment-guide.mdx",
+    "slug": "labrador-enrichment-guide",
+    "title": "Labrador Enrichment: A Gene Deletion Explains the Appetite",
+    "seoTitle": "Labrador Enrichment Guide",
+    "excerpt": "A deletion in the POMC gene makes some Labradors hungrier and heavier. Assistance dogs carry it more often than pets and stay lean anyway, because they work.",
+    "date": "2026-11-07",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Labrador Retriever",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Retrievers"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/labrador-enrichment.jpg",
+    "imageAlt": "A labrador working at a puzzle feeder with its nose, fully absorbed",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-07",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research explaining why Labradors are so food obsessed?",
+        "a": "Yes, and it is unusually specific. Raffan and colleagues at Cambridge found a 14 base pair deletion in the POMC gene in Labrador retrievers, at an allele frequency of around 12 percent, associated with body weight, adiposity and greater food motivation."
+      },
+      {
+        "q": "How big is the effect?",
+        "a": "Each copy of the deletion added about 0.33 standard deviations of body weight, which the authors noted is more than three times the per-allele effect seen at the FTO locus in humans. It is a real effect rather than a curiosity."
+      },
+      {
+        "q": "Does that mean an overweight Labrador cannot be helped?",
+        "a": "No, and the most useful part of the study is why. The deletion was significantly more common in Labradors selected as assistance dogs than in pets, and those dogs maintained a healthy body weight because of their regular physical activity. The genetics set the appetite. Activity and management set the weight."
+      },
+      {
+        "q": "So how should I feed a Labrador?",
+        "a": "Weighed portions, and as much of the ration as possible delivered through work. A dog this food motivated is easy to enrich with food, which turns the trait from a liability into the thing that makes the enrichment straightforward."
+      },
+      {
+        "q": "Do Labradors need to retrieve?",
+        "a": "It is a strong outlet rather than a requirement, and most Labradors take to it enthusiastically. It is worth combining with scent work, since a retrieve that has to be found first is a better use of twenty minutes than a ball thrown twenty times."
+      },
+      {
+        "q": "What should I watch for physically?",
+        "a": "Joints and weight together. Labradors are prone to hip and elbow dysplasia, and excess weight makes both worse, so the food management and the joint health are the same problem viewed from two sides."
+      }
+    ],
+    "relatedProducts": [
+      "nina-ottosson-dog-tornado-puzzle-toy",
+      "rundik-snuffle-mat-dogs",
+      "kong-extreme-dog-toy-large"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/leaf-tailed-gecko-cost-guide.mdx",
     "slug": "leaf-tailed-gecko-cost-guide",
     "title": "How Much Does a Leaf-Tailed Gecko Really Cost?",
@@ -27142,6 +27727,71 @@
     "sourceCount": 19
   },
   {
+    "path": "/content/guides/persian-cat-enrichment-guide.mdx",
+    "slug": "persian-cat-enrichment-guide",
+    "title": "Persian Cat Enrichment: A Quiet Cat Is Not Automatically a Content One",
+    "seoTitle": "Persian Cat Enrichment Guide",
+    "excerpt": "The Persian's placid reputation is doing a lot of work. A cat that does not demand much is also a cat whose under-stimulation nobody notices.",
+    "date": "2026-11-08",
+    "category": "Cats",
+    "categories": [
+      "Cats",
+      "Enrichment"
+    ],
+    "tags": [
+      "Persian",
+      "Cat Health",
+      "Enrichment",
+      "Care Tips",
+      "Cat Welfare",
+      "Brachycephalic"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/persian-cat-enrichment.jpg",
+    "imageAlt": "A long-haired persian cat batting at a wand toy from a low padded platform",
+    "emoji": "🐈",
+    "lastReviewed": "2026-11-08",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does a Persian need enrichment if it is happy lying around?",
+        "a": "Yes, and the placid reputation is exactly why it gets skipped. The five pillars framework applies to every cat, and a cat that does not complain is a cat whose under-stimulation goes unnoticed rather than one that does not have any."
+      },
+      {
+        "q": "What limits a Persian physically?",
+        "a": "The face. Persians are brachycephalic, so exertion tolerance and heat tolerance are both reduced, and the flattened face also makes eating and drinking from deep bowls awkward. Play has to be shorter and lower-effort than for a standard cat."
+      },
+      {
+        "q": "Should I still provide vertical space?",
+        "a": "Yes, with easier access. Low, wide, stable platforms and steps rather than tall leaps. The first pillar, a safe elevated place, still matters, and it has to be reachable by a cat with a heavy coat and limited athleticism."
+      },
+      {
+        "q": "How do I handle the grooming?",
+        "a": "Daily, and best trained rather than endured. Persians mat badly without regular brushing, and turning grooming into cooperative care training gives mental work, social interaction and a predictable routine, which serves the fourth pillar directly."
+      },
+      {
+        "q": "Why does my Persian's eyes always run?",
+        "a": "The flattened face distorts the tear ducts, so tear overflow is common and needs daily cleaning of the folds. It is a management task rather than something to accept, since damp fur under the eyes leads to skin infection."
+      },
+      {
+        "q": "What health problems should I know about?",
+        "a": "Polycystic kidney disease is strongly associated with the breed, along with brachycephalic airway issues and hypertrophic cardiomyopathy. All three are reasons for regular veterinary screening and for keeping activity within the cat's tolerance."
+      }
+    ],
+    "relatedProducts": [
+      "cat-tree-scratching-post",
+      "puzzle-feeder",
+      "litter-box"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/pet-dna-test-results-guide.mdx",
     "slug": "pet-dna-test-results-guide",
     "title": "What a Pet DNA Test Actually Tells You",
@@ -31387,6 +32037,71 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/siberian-husky-enrichment-guide.mdx",
+    "slug": "siberian-husky-enrichment-guide",
+    "title": "Siberian Husky Enrichment: Bred to Run All Day and Not Come Back",
+    "seoTitle": "Siberian Husky Enrichment Guide",
+    "excerpt": "A husky was selected to run for hours in the cold, away from home, alongside other dogs. Every difficult thing about keeping one is a direct consequence of that.",
+    "date": "2026-11-07",
+    "category": "Dogs",
+    "categories": [
+      "Dogs",
+      "Enrichment"
+    ],
+    "tags": [
+      "Siberian Husky",
+      "Dog Health",
+      "Enrichment",
+      "Care Tips",
+      "Dog Welfare",
+      "Working Dogs"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/siberian-husky-enrichment.jpg",
+    "imageAlt": "A siberian husky pulling into a harness on a long line across open ground",
+    "emoji": "🐕",
+    "lastReviewed": "2026-11-07",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research relevant to husky enrichment?",
+        "a": "Not on the breed. The general dog evidence applies, including the nosework study where dogs given scent work became measurably more optimistic while dogs given heelwork did not change. The breed-specific part comes from what huskies were selected for rather than from a study."
+      },
+      {
+        "q": "Why do huskies escape so persistently?",
+        "a": "Because they were bred to travel long distances away from home and to work with considerable independence. Escaping is not a training failure or a sign of unhappiness, it is the breed doing what it was selected to do, and it has to be engineered against rather than trained out."
+      },
+      {
+        "q": "Will a husky ever have reliable off-lead recall?",
+        "a": "Plan as though not. A husky that decides to run can cover ground fast and will keep going, and a great many are lost or killed on roads every year. Long lines, secure fenced areas and harness work are the realistic answer."
+      },
+      {
+        "q": "Do huskies need to pull?",
+        "a": "It is the most natural outlet available to them. Canicross, bikejoring, scootering and weight pulling all use the trait the breed was built around, and a husky doing them is a visibly more settled dog than one taken for a walk on a flat lead."
+      },
+      {
+        "q": "How do they cope with heat?",
+        "a": "Badly, and it is the most serious practical risk. A double-coated arctic breed in a warm climate needs exercise timed to the cool parts of the day, shade and water, and never shaving, since the coat insulates against heat as well as cold."
+      },
+      {
+        "q": "Why does my husky dig up the garden?",
+        "a": "Because digging is normal husky behaviour, used in the wild for shelter and cooling. A dedicated digging pit gives it somewhere acceptable to happen, which works far better than trying to stop it."
+      }
+    ],
+    "relatedProducts": [
+      "leash-harness-set",
+      "rundik-snuffle-mat-dogs",
+      "kong-extreme-dog-toy-large"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
     "path": "/content/guides/slow-loris-the-only-venomous-primate.mdx",
     "slug": "slow-loris-the-only-venomous-primate",
     "title": "The Slow Loris Is the Only Venomous Primate, and the Venom Is Mostly for Other Lorises",
@@ -31475,6 +32190,71 @@
     "relatedProducts": [
       "shallow-water-dish",
       "digital-thermometer-hygrometer-combo"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/sphynx-cat-enrichment-guide.mdx",
+    "slug": "sphynx-cat-enrichment-guide",
+    "title": "Sphynx Cat Enrichment: Warmth Is a Welfare Requirement",
+    "seoTitle": "Sphynx Cat Enrichment Guide",
+    "excerpt": "A cat with no coat cannot thermoregulate the way the five pillars framework assumes. Every safe place has to also be a warm one, which changes the whole layout.",
+    "date": "2026-11-08",
+    "category": "Cats",
+    "categories": [
+      "Cats",
+      "Enrichment"
+    ],
+    "tags": [
+      "Sphynx",
+      "Cat Health",
+      "Enrichment",
+      "Care Tips",
+      "Cat Welfare",
+      "Hairless Cats"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/sphynx-cat-enrichment.jpg",
+    "imageAlt": "A sphynx cat curled inside a heated covered bed on a high shelf",
+    "emoji": "🐈",
+    "lastReviewed": "2026-11-08",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Does the five pillars framework apply to a sphynx?",
+        "a": "Yes, and with a layer added. The AAFP and ISFM Feline Environmental Needs Guidelines apply to every cat, and for a hairless cat the first pillar, a safe place, has to also mean a warm place, which changes how the whole home is laid out."
+      },
+      {
+        "q": "Why does warmth count as enrichment rather than just comfort?",
+        "a": "Because a cold cat does not do anything else. A sphynx spending its day seeking heat is a cat not playing, not exploring and not using its space, so the thermal provision is what unlocks the rest of the pillars."
+      },
+      {
+        "q": "What about sunbathing?",
+        "a": "Sphynx cats seek warmth and will sunbathe given the chance, and unpigmented skin burns. Sun exposure needs limiting, and the answer is to provide heated indoor spots so the cat is not driven to the window for warmth in the first place."
+      },
+      {
+        "q": "Do they need bathing?",
+        "a": "Regularly. Without a coat to wick it, skin oil accumulates, and most sphynx cats need routine bathing plus ear and nail fold cleaning. That is a lot of handling, which is why teaching it as cooperative care is worth the effort."
+      },
+      {
+        "q": "Are sphynx cats more social than other cats?",
+        "a": "They have a reputation for it and much of it is thermal. A cat that seeks contact partly for warmth ends up on people constantly. Either way, they generally cope poorly with long isolation."
+      },
+      {
+        "q": "What health issue should I know about?",
+        "a": "Hypertrophic cardiomyopathy is over-represented in the breed and is a reason for regular veterinary screening. It also matters for activity, since a cat with undiagnosed heart disease is not a cat to push into more exercise."
+      }
+    ],
+    "relatedProducts": [
+      "cat-tree-scratching-post",
+      "puzzle-feeder",
+      "dental-kit-cat-virbac-cet"
     ],
     "factFile": false,
     "animal": null,
