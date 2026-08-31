@@ -6739,6 +6739,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/canary-enrichment-guide.mdx",
+    "slug": "canary-enrichment-guide",
+    "title": "Canary Enrichment: He May Be Singing Because He Is Alone",
+    "seoTitle": "Canary Enrichment Guide",
+    "excerpt": "Male canaries sing more when there is no mate present and much less once there is. The most cheerful thing about the bird is not the contentment signal owners assume.",
+    "date": "2026-10-30",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Canary",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Finches"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/canary-enrichment.jpg",
+    "imageAlt": "A yellow canary in mid-flight between perches inside a long flight cage",
+    "emoji": "🐦",
+    "lastReviewed": "2026-10-30",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on canary welfare?",
+        "a": "There is a large body of neuroscience on canary song, and one directly useful welfare study measuring corticosterone in droppings. It found a robust daily rhythm in birds on short-day light cycles, and a significant change in corticosterone excretion when group-bred birds were confined to smaller cages."
+      },
+      {
+        "q": "Does more singing mean a happier canary?",
+        "a": "Not reliably. In canaries, the absence of a potential mate increases the number of songs produced, and the presence of a mate greatly reduces singing. Song is a signalling behaviour with a function, and reading its volume as a contentment score gets it backwards as often as not."
+      },
+      {
+        "q": "So should I get my canary a mate?",
+        "a": "Not necessarily, and not casually. Canaries are less socially dependent than parrots and males are territorial toward each other. The point of the finding is to stop treating song volume as a welfare reading, not to change the housing on the strength of it."
+      },
+      {
+        "q": "Can canaries be kept together?",
+        "a": "Males should not be housed together, since they are territorial and will fight. A male and female pair, or a group of females, can work in a large enough flight cage. A single canary in a good flight cage is a perfectly reasonable setup."
+      },
+      {
+        "q": "What is the single most important thing to provide?",
+        "a": "Flight distance. Canaries are small active birds that fly rather than climb, so a long horizontal cage is worth far more than a tall narrow one, and the corticosterone finding points at cage size as something that registers physiologically."
+      },
+      {
+        "q": "Do canaries need a bath?",
+        "a": "They bathe enthusiastically and often daily, and it is good for feather condition and clearly something they want to do. A shallow bath offered regularly is one of the easiest pieces of enrichment for this species."
+      }
+    ],
+    "relatedProducts": [
+      "bird-flight-cage-large",
+      "bird-perches",
+      "canary-shallow-bird-bath"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/canary-handling-guide.mdx",
     "slug": "canary-handling-guide",
     "title": "Canaries Aren't Really Handled, and That's the Point",
@@ -8873,6 +8937,70 @@
     "sourceCount": 2
   },
   {
+    "path": "/content/guides/cockatoo-enrichment-guide.mdx",
+    "slug": "cockatoo-enrichment-guide",
+    "title": "Cockatoo Enrichment: Training Beat Every Other Treatment They Tried",
+    "seoTitle": "Cockatoo Enrichment Guide",
+    "excerpt": "A feather plucking study tried drugs, socialisation, feeding enrichment and training sessions on sulphur-crested cockatoos. Training won, and not because of the tricks.",
+    "date": "2026-10-30",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Cockatoo",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Parrots"
+    ],
+    "readTime": 7,
+    "difficulty": "Advanced",
+    "image": "/assets/images/cockatoo-enrichment.jpg",
+    "imageAlt": "A sulphur-crested cockatoo working a wooden foraging toy apart with its foot and beak",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-30",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on cockatoo feather plucking?",
+        "a": "Yes. A study on sulphur-crested cockatoos assessed and treated feather plucking using medication, socialisation, training and feeding enrichment, and checked the results with behavioural observation, feather condition scoring and corticosterone levels. Training sessions were the most successful treatment."
+      },
+      {
+        "q": "Why did training work best?",
+        "a": "The authors put it down to the social attention and mental stimulation the sessions provided, rather than anything about the specific behaviours being taught. For a species this social and this intelligent, structured one-to-one time appears to be the active ingredient."
+      },
+      {
+        "q": "How long do wild parrots spend feeding?",
+        "a": "Up to six hours a day searching for, selecting and manipulating food. A captive bird with a full bowl finishes in minutes, which leaves a very large hole in the day that has to be filled with something."
+      },
+      {
+        "q": "Does foraging enrichment actually improve feathers?",
+        "a": "Increased foraging opportunity has repeatedly been found to improve feather condition in parrots. In young Amazon parrots, foraging opportunity and increased physical complexity both prevented and reduced psychogenic feather picking, which is one of the stronger results in bird welfare."
+      },
+      {
+        "q": "Are cockatoos harder than other parrots?",
+        "a": "Generally yes. They are extremely social, extremely loud, extremely destructive and extremely long lived, and the combination produces more behavioural problems than in most species. Plucking, screaming and separation-related behaviour are common enough to be characteristic."
+      },
+      {
+        "q": "How long do they live?",
+        "a": "Decades, commonly into the 40s and 50s and sometimes beyond 60 for larger species. That is a bird that may outlive you, and it is a genuine reason to think about who takes it on afterwards."
+      }
+    ],
+    "relatedProducts": [
+      "cockatoo-foraging-toys-large-parrot",
+      "cockatoo-cage-prevue-hendryx-large",
+      "bird-toy-kyouki-foraging-box"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/cockatoo-feeding-guide.mdx",
     "slug": "cockatoo-feeding-guide",
     "title": "Cockatoo Feeding: Schedule, Diet, and the Ratio Worth Memorizing",
@@ -9386,6 +9514,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3
+  },
+  {
+    "path": "/content/guides/conure-enrichment-guide.mdx",
+    "slug": "conure-enrichment-guide",
+    "title": "Conure Enrichment: A Big Parrot's Needs in a Small Parrot's Body",
+    "seoTitle": "Conure Enrichment Guide",
+    "excerpt": "Wild parrots spend up to six hours a day working for food. A conure with a full bowl is done in three minutes and then has the rest of the day to fill.",
+    "date": "2026-10-30",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Conure",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Parrots"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/conure-enrichment.jpg",
+    "imageAlt": "A green cheek conure hanging upside down from a foraging toy, working at it with one foot",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-30",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on conures?",
+        "a": "Not on conures specifically. The evidence comes from other parrots: in young Amazon parrots, foraging opportunity and increased physical complexity both prevented and reduced psychogenic feather picking, and foraging enrichment has repeatedly improved feather condition across parrot species."
+      },
+      {
+        "q": "How much time should a conure spend on food?",
+        "a": "More than it does. Wild parrots spend up to six hours a day searching for, selecting and manipulating food, while a captive bird with a full bowl finishes in minutes. Closing even part of that gap is the highest-value change most owners can make."
+      },
+      {
+        "q": "Are conures as demanding as bigger parrots?",
+        "a": "Behaviourally, close to it. They are full parrots in a small body: intelligent, social, destructive and loud for their size. Buying one expecting a budgie with more colour is how conures end up rehomed."
+      },
+      {
+        "q": "Why do conures sleep in tents or pouches?",
+        "a": "Many conures, green cheeks especially, are cavity roosters and will sleep in an enclosed hanging space rather than on a perch. A sleeping pouch suits that instinct, and it needs checking regularly for frayed threads and chewed holes."
+      },
+      {
+        "q": "Are conures loud?",
+        "a": "Yes, disproportionately so for their size, and it is not something enrichment fixes. Sun conures in particular have a call that carries through a house and beyond. Choose the species with that in mind rather than hoping to train it away."
+      },
+      {
+        "q": "Can conures live alone?",
+        "a": "With a very involved owner, yes, and they need real daily interaction rather than a cage in a busy room. A bonded pair covers the social side better, and a lone conure with an absent owner is the setup that produces screaming and plucking."
+      }
+    ],
+    "relatedProducts": [
+      "bird-toys-katumo-small-parrot-variety",
+      "bird-toy-kyouki-foraging-box",
+      "bird-flight-cage-large"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/conure-handling-guide.mdx",
@@ -25593,6 +25785,70 @@
     "sourceCount": 4
   },
   {
+    "path": "/content/guides/parrotlet-enrichment-guide.mdx",
+    "slug": "parrotlet-enrichment-guide",
+    "title": "Parrotlet Enrichment: Five Inches of Full-Sized Parrot",
+    "seoTitle": "Parrotlet Enrichment Guide",
+    "excerpt": "The smallest true parrot in the trade has the temperament of a much larger one. Housed like a budgie, it behaves like a very small Amazon with a grievance.",
+    "date": "2026-10-31",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Parrotlet",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Parrots"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/parrotlet-enrichment.jpg",
+    "imageAlt": "A small green parrotlet gripping a hanging forage toy with one foot, beak working at it",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-31",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on parrotlets?",
+        "a": "Not on the species. The evidence comes from other parrots, where foraging opportunity and increased physical complexity both prevented and reduced psychogenic feather picking, and where training sessions outperformed other treatments for plucking in cockatoos."
+      },
+      {
+        "q": "Can I keep a parrotlet like a budgie?",
+        "a": "Not really, and this is the mistake the species is defined by. A parrotlet is a true parrot in a five inch body, with the intelligence, the destructiveness and the temperament that goes with that. Housed and stimulated like a budgie, it tends to become nippy and territorial."
+      },
+      {
+        "q": "Are parrotlets aggressive?",
+        "a": "They can be territorial and are bold well beyond their size, including toward much larger birds. That is a reason to house them alone or as a bonded pair rather than in a mixed aviary, and a reason not to leave one loose around other pets."
+      },
+      {
+        "q": "Should I get two?",
+        "a": "A bonded pair covers the social side well and usually means less bonding to you. A single parrotlet with a genuinely involved owner also works. What does not work is a single bird with an owner who is out all day."
+      },
+      {
+        "q": "How much chewing material do they need?",
+        "a": "More than the size suggests. Small beaks that work constantly, and a parrotlet with nothing to destroy will start on perches, cage furniture or feathers. Soft wood, paper and consumable toys should be in constant supply."
+      },
+      {
+        "q": "What is the easiest improvement to make?",
+        "a": "Stop using a food bowl as the default. Wild parrots spend up to six hours a day working for food, and moving a parrotlet's diet into foraging toys, wrapped parcels and multiple hidden sites closes part of that gap for nothing."
+      }
+    ],
+    "relatedProducts": [
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-perches",
+      "bird-cuttlebone-penn-plax-2ct"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
+  },
+  {
     "path": "/content/guides/parrotlet-feeding-guide.mdx",
     "slug": "parrotlet-feeding-guide",
     "title": "Parrotlet Feeding: Diet, Schedule, and Foods to Avoid",
@@ -26751,6 +27007,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 2
+  },
+  {
+    "path": "/content/guides/quaker-parakeet-enrichment-guide.mdx",
+    "slug": "quaker-parakeet-enrichment-guide",
+    "title": "Quaker Parakeet Enrichment: The Only Parrot That Builds a House",
+    "seoTitle": "Quaker Parakeet Enrichment Guide",
+    "excerpt": "Every other parrot nests in a hole in a tree. Quakers weave enormous communal stick nests, and captive ones still try. That is enrichment nobody else gets to use.",
+    "date": "2026-10-31",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Quaker Parakeet",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Parrots"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/quaker-parakeet-enrichment.jpg",
+    "imageAlt": "A quaker parakeet weaving a willow strip into the bars of its cage",
+    "emoji": "🦜",
+    "lastReviewed": "2026-10-31",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there enrichment research on quaker parakeets?",
+        "a": "Not on the species directly. The evidence comes from other parrots, where foraging opportunity and increased physical complexity both prevented and reduced psychogenic feather picking, and training sessions outperformed other treatments for plucking in cockatoos."
+      },
+      {
+        "q": "What makes quakers different from other parrots?",
+        "a": "They build nests. Quakers, also called monk parakeets, are the only parrots that construct their own stick nests rather than using a tree cavity, and they build large communal structures with separate chambers. Captive quakers still weave, and that gives you an enrichment avenue no other pet parrot offers."
+      },
+      {
+        "q": "What should I give them to weave with?",
+        "a": "Safe untreated twigs, willow and palm strips, seagrass and plain paper strips. They will push material into cage bars and toys and work at it for hours. Avoid anything stringy or fibrous that can wrap around a toe or a neck."
+      },
+      {
+        "q": "Will nest building trigger breeding or aggression?",
+        "a": "It can. Nest building in an unpaired bird sometimes comes with territorial behaviour around the cage, especially in spring. Provide the material and watch the behaviour, and if a bird becomes cage-aggressive, scale the material back rather than removing every outlet."
+      },
+      {
+        "q": "Are quakers legal to keep?",
+        "a": "Not everywhere. They are banned or restricted in a number of US states because escaped birds establish feral colonies and build nests on electrical infrastructure. Check before you buy, not after."
+      },
+      {
+        "q": "Are quakers social?",
+        "a": "Very. They are colonial nesters, which is unusual among parrots, and they need substantial daily interaction or a companion. A lone quaker with an absent owner is a strong candidate for screaming and plucking."
+      }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-wrought-iron-flight-5ft",
+      "bird-toy-bbjinronjy-sola-ball-2pc",
+      "bird-toy-rope-perch-bell"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/quaker-parakeet-handling-guide.mdx",
@@ -35092,6 +35412,70 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6
+  },
+  {
+    "path": "/content/guides/zebra-finch-enrichment-guide.mdx",
+    "slug": "zebra-finch-enrichment-guide",
+    "title": "Zebra Finch Enrichment: Wild Ones Travel in Twos, Not Flocks",
+    "seoTitle": "Zebra Finch Enrichment Guide",
+    "excerpt": "Wild zebra finches forage and travel mostly in pairs, and 94 percent of those pairs are mixed-sex. Bigger is not automatically better for a social bird.",
+    "date": "2026-10-30",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Zebra Finch",
+      "Enrichment",
+      "Care Tips",
+      "Bird Enrichment",
+      "Bird Welfare",
+      "Finches"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/zebra-finch-enrichment.jpg",
+    "imageAlt": "A pair of zebra finches perched close together on a branch in a long flight cage",
+    "emoji": "🐦",
+    "lastReviewed": "2026-10-30",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is there research on zebra finch social housing?",
+        "a": "A good deal, because they are one of the most-used birds in research. Observation of wild zebra finches found they most commonly foraged, watered and travelled in groups of two, 94 percent of which were mixed-sex, or in groups of three to ten, with larger groups rarely seen."
+      },
+      {
+        "q": "What did the researchers recommend from that?",
+        "a": "That people working with captive zebra finches keep them in pairs or small social groups, to match the social environment the birds actually experience in the wild. It is an argument against both solitary housing and a crowded aviary."
+      },
+      {
+        "q": "Is a bigger group not better for a social bird?",
+        "a": "Not automatically. A study of group housing during adolescence found long-term effects on the adult stress response in females: birds raised in larger groups, independent of density, showed higher glucocorticoid concentrations under restraint, including in adulthood. Group size was the factor, not crowding."
+      },
+      {
+        "q": "Do zebra finches fight?",
+        "a": "They form dominance hierarchies, and introducing males into a new cage typically produces aggression until one settles out. Serious attacks tend to come from the heavier dominant bird against a lighter subordinate, so introductions need space and watching."
+      },
+      {
+        "q": "What shape of cage do they need?",
+        "a": "Long. Zebra finches fly rather than climb, so horizontal distance is what gives them exercise. A tall narrow cage wastes most of its volume on this species."
+      },
+      {
+        "q": "Should I give them a nest?",
+        "a": "Only if you want eggs, since a nest and nesting material readily trigger breeding. Nesting material for shredding and carrying is genuinely enriching, and if you do not want chicks, offer the material without a nest site."
+      }
+    ],
+    "relatedProducts": [
+      "bird-cage-prevue-wrought-iron-flight-5ft",
+      "bird-perches",
+      "canary-shallow-bird-bath"
+    ],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4
   },
   {
     "path": "/content/guides/zebra-finch-feeding-guide.mdx",

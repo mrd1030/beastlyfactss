@@ -713,3 +713,61 @@ patagium visible along the flank. Branches and ropes spanning gaps behind it, a
 nest box mounted high. Cool dim night lighting, soft grey-brown fur. The gliding
 membrane should be visible. No hands, no people.
 ```
+
+### Enrichment guides, batch 9 (2026-10-30 to 10-31)
+
+Birds. Same rules: 3:2 at 1168x784, bird mid-behavior, show the enrichment being
+used rather than the cage standing empty.
+
+#### cockatoo-enrichment.jpg
+```
+A sulphur-crested cockatoo gripping a large wooden foraging toy with one foot and
+working it apart with its beak, crest partly raised, wood fragments scattered
+below. Heavy-gauge cage bars and further shredded toys behind. Bright warm
+lighting, white plumage against darker background. Destruction in progress is the
+subject. No hands, no people.
+```
+
+#### canary-enrichment.jpg
+```
+A yellow canary caught in mid-flight between two perches at opposite ends of a
+long flight cage, wings spread, open flight path visible through the frame.
+Natural branch perches of varied thickness at the ends, shallow bath below.
+Bright clean daylight, shallow depth of field. The flight distance is the point of
+the composition. No hands, no people.
+```
+
+#### zebra-finch-enrichment.jpg
+```
+A pair of zebra finches perched close together on a natural branch, the male with
+orange cheek patches and barred throat, the female plainer, one holding a strand
+of grass in its beak. Long flight cage with clear open span behind them. Bright
+warm daylight, shallow depth of field on the pair. The closeness of the two birds
+is the subject. No hands, no people.
+```
+
+#### conure-enrichment.jpg
+```
+A green cheek conure hanging upside down from a hanging foraging toy, one foot
+gripping, beak working at a wrapped paper parcel, shredded paper below. Colourful
+small parrot toys and a rope perch around it. Bright warm lighting, green and
+maroon plumage. Active problem-solving posture. No hands, no people.
+```
+
+#### quaker-parakeet-enrichment.jpg
+```
+A quaker parakeet holding a willow strip in its beak and pushing it into the cage
+bars, several strips already woven into place around it, more natural twigs and
+seagrass scattered on the perch. Bright daylight, grey chest and green back
+clearly visible. The weaving in progress is the whole photo, and it should look
+deliberate rather than accidental. No hands, no people.
+```
+
+#### parrotlet-enrichment.jpg
+```
+A small green parrotlet gripping a hanging sola ball forage toy with one foot,
+beak buried in it, body angled sideways. Cuttlebone and varied natural branch
+perches in the background, cage bars close-spaced. Bright warm lighting, shallow
+depth of field. Scale should read small, the attitude should not. No hands, no
+people.
+```
