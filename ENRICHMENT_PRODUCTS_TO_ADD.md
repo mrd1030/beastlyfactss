@@ -16,7 +16,12 @@ What is actually true, after testing it:
 - **Prices** never do. Amazon renders them client-side and blocks the fetch.
 
 So prices genuinely need a human with the page open, and ratings are worth a
-search first. Images have to be downloaded and installed either way.
+search first.
+
+**Images** come from the listing gallery. Mike sends the main product photo and it
+gets resized to fit 640px and saved as `product-N.jpg`. Only that source file is
+tracked; the `-thumb` and `-card` tiers are gitignored and rebuilt by
+`generate-thumbnails.js` at the front of `build` and `dev`.
 
 Link format matches the newer entries in the file:
 `https://www.amazon.com/dp/<ASIN>?tag=beastlyfacts-20`
@@ -39,7 +44,7 @@ units means one per enclosure in a multi-pet home.
 - **Category** Small Mammal & Exotic Pet Gear
 - **rating** `4.5`
 - **price** `"$15–$20"` (seen at $16.99, banded to match every other price field in the catalogue)
-- **image** still needed
+- **image** `/assets/images/affiliate/product-259.jpg` installed
 - **covers** `["Foraging or puzzle feeder for small mammals"]`
 - **pets** `["small-mammals"]`
 
@@ -54,7 +59,7 @@ puzzle does not.
 - **Category** Small Mammal & Exotic Pet Gear
 - **rating** `4.5`
 - **price** `"$10–$16"` (seen at $11.99)
-- **image** still needed
+- **image** `/assets/images/affiliate/product-260.jpg` installed
 - **covers** `["Snuffle mat or scatter-feeding mat for small mammals"]`
 - **pets** `["small-mammals"]`
 
@@ -68,7 +73,7 @@ actually cross. Nine species, no existing entry.
 - **Category** Small Mammal & Exotic Pet Gear
 - **rating** `4.4`
 - **price** `"$8–$14"` (seen at $9.99)
-- **image** still needed
+- **image** `/assets/images/affiliate/product-261.jpg` installed
 - **covers** `["Tunnel or tube cover for small mammals"]`
 - **pets** `["small-mammals"]`
 
