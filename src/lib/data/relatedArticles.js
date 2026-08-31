@@ -197,8 +197,38 @@ function getSuffixOrder(slug) {
 // Species behaviour is unchanged by construction: every quintet sibling shares
 // the same single guide set, scores a perfect 1, and comes back in display
 // order, well inside the cap.
-export function getDeepDiveSiblings(slug, posts, limit = DEEP_DIVE_LIMIT) {
+//
+// The ranking is the fallback, not the primary path. It is what a reader gets
+// when we do not know where they came from: a direct landing, a search result,
+// a shared link. When we do know, `fromGuideId` short-circuits all of it (see
+// below), because continuing the exact list the reader was just looking at
+// beats any similarity score.
+export function getDeepDiveSiblings(slug, posts, { fromGuideId = null, limit = DEEP_DIVE_LIMIT } = {}) {
   if (!slug) return [];
+
+  // If we know which guide the reader clicked through from, that guide's own
+  // curated list IS the thread, and no amount of ranking beats just continuing
+  // it. dog-universal lists bloat, dysplasia and exercise next to this article;
+  // cat-persian lists kidney disease and hairballs. Both are correct answers to
+  // "what else is like this", for different readers, which is exactly why the
+  // context-free ranking below cannot get this case right on its own. Curated
+  // order is kept as written: it is an editorial choice, so reordering the
+  // array in this file is how you change what shows.
+  //
+  // Only honoured when that guide really does list this article, so a stale
+  // value left in sessionStorage from an earlier click cannot pull an unrelated
+  // list onto a page.
+  if (fromGuideId) {
+    const fromList = getRelatedArticleSlugs(fromGuideId, posts);
+    if (fromList.includes(slug)) {
+      const known = posts?.length
+        ? new Set(posts.map((p) => p.slug?.current || p._id || p.id))
+        : null;
+      return fromList
+        .filter((a) => a !== slug && (!known || known.has(a)))
+        .slice(0, limit);
+    }
+  }
 
   const listingGuides = getListingGuides(slug);
   const candidates = new Set();

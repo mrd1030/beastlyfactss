@@ -9,6 +9,7 @@ import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
+import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
@@ -654,7 +655,15 @@ export default function GuideDetail() {
                 </p>
                 <div className="space-y-3">
                   {relatedArticles.map(article => (
-                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                    // Carries which guide this click came from, so the article's
+                    // own Deep Dive block can continue this exact list instead of
+                    // guessing. See deepDiveContext.js.
+                    <Link
+                      key={article._id}
+                      to={`/blog/${article.slug.current}/`}
+                      onClick={() => rememberDeepDiveGuide(guide.id)}
+                      className="group block"
+                    >
                       <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>

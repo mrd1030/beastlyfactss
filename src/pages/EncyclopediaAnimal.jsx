@@ -10,6 +10,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
+import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
@@ -340,7 +341,14 @@ export default function EncyclopediaAnimal() {
                 </p>
                 <div className="space-y-3">
                   {relatedArticles.map(article => (
-                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                    // Same as GuideDetail: the encyclopedia page builds this
+                    // list from animal.guideId, so that is the thread to carry.
+                    <Link
+                      key={article._id}
+                      to={`/blog/${article.slug.current}/`}
+                      onClick={() => rememberDeepDiveGuide(animal.guideId)}
+                      className="group block"
+                    >
                       <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>
