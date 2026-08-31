@@ -4,14 +4,19 @@ Seven categories the enrichment guides need that the 261-item catalogue does not
 cover at all. These are not size variants of anything already listed: each is a
 mechanism with no existing entry.
 
-Found by search, not from memory. ASIN and product name are taken from the live
-Amazon listing. **`rating`, `price` and `image` are deliberately left blank**,
-because a rating and price cannot be read off a search result without going stale
-immediately, and the product photo has to be downloaded and installed rather than
-invented. Fill those three in and the records are ready to paste.
+Found by search, not from memory. Every ASIN and product title below has been
+verified against the live Amazon listing.
 
-Item 1 is the exception: Mike supplied the rating and price from the live listing
-after the original pick went out of stock, so only its image is outstanding.
+**On the blank fields.** An earlier version of this file claimed ratings and
+prices could not be retrieved. That was wrong and it made Mike do work twice.
+What is actually true, after testing it:
+
+- **Titles** are reliable. Amazon serves them in the page meta tag.
+- **Ratings** come back from search snippets perhaps a quarter of the time.
+- **Prices** never do. Amazon renders them client-side and blocks the fetch.
+
+So prices genuinely need a human with the page open, and ratings are worth a
+search first. Images have to be downloaded and installed either way.
 
 Link format matches the newer entries in the file:
 `https://www.amazon.com/dp/<ASIN>?tag=beastlyfacts-20`
@@ -47,6 +52,13 @@ puzzle does not.
 - **Product** Abizoo Small Pet Snuffle Mat, 11.8 x 11.8 in
 - **Link** https://www.amazon.com/dp/B09HBSZXT6?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
+- **rating** search returns `4.4` from 159 reviews; Mike read `4.5` off the page
+- **price** Mike read $11.99; band as `"$10–$16"`
+- **image** still needed
+- **ASIN unconfirmed.** Mike's screenshot shows a hedgehog in the species icons
+  and this listing names only rabbit, guinea pig, ferret and chinchilla. There are
+  at least six near-identical blue-rose foraging mats on Amazon right now, so this
+  may be a different listing. Worth one look at the URL before it goes in.
 - **covers** `["Snuffle mat or scatter-feeding mat for small mammals"]`
 - **pets** `["small-mammals"]`
 
@@ -58,6 +70,9 @@ actually cross. Nine species, no existing entry.
 - **Product** YUEPET Collapsible Corner Tunnel and Tube for Small Animals
 - **Link** https://www.amazon.com/dp/B0BYMSTP23?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
+- **rating** `4.4`
+- **price** `"$8–$14"` (seen at $9.99)
+- **image** still needed
 - **covers** `["Tunnel or tube cover for small mammals"]`
 - **pets** `["small-mammals"]`
 
@@ -68,7 +83,7 @@ because this one listing covers Sulcata, Russian and Hermann's, so it is one
 product rather than three.
 
 - **ASIN** `B0H3R2RXFJ`
-- **Product** Tortoise Forage Seed Mix, oat, rye and alfalfa blend, 1 lb
+- **Product** Tortoise Forage Seed Mix – Grow Fresh Grazing Greens for Sulcata, Russian & Hermann's Tortoises – Oats, Rye & Alfalfa Blend for Indoor Trays or Outdoor Enclosures – Non-GMO Seed (1 lb)
 - **Link** https://www.amazon.com/dp/B0H3R2RXFJ?tag=beastlyfacts-20
 - **Category** Food & Treats
 - **covers** `["Growable browse or forage seed for tortoises"]`
@@ -79,7 +94,7 @@ The 19-species gap. Wooden slow-feed puzzle box sized for a lizard rather than a
 dog, which is what the monitor, tegu, bearded dragon and tortoise guides need.
 
 - **ASIN** `B0CZHKGB3M`
-- **Product** FlidRunest Wooden Reptile Feeder Puzzle, 7.1 x 5.5 in
+- **Product** FlidRunest Bearded Dragon Feeder Puzzle, Wooden Lizard Feeding Box, Reptile Interactive Enrichment Food Feeder Training Treat Dispenser for Lizard Bearded Dragon Frog Hamster
 - **Link** https://www.amazon.com/dp/B0CZHKGB3M?tag=beastlyfacts-20
 - **Category** Feeding & Watering
 - **covers** `["Foraging or puzzle feeder for reptiles"]`
@@ -107,7 +122,7 @@ for. The igloo hideout covers the chamber half and nothing covers the tunnel.
 Also serves mouse, hamster and degu.
 
 - **ASIN** `B082FBW69F`
-- **Product** Niteangel Creative and Composable Hamster Tunnel, DIY burrow tube system
+- **Product** Niteangel Creative & Composable Hamster Tunnel - DIY & Build Unique Tube Burrow as Hideout for Small Sized Animals Like Hamsters Mouse Gerbils Mice (Corner)
 - **Link** https://www.amazon.com/dp/B082FBW69F?tag=beastlyfacts-20
 - **Category** Small Mammal & Exotic Pet Gear
 - **covers** `["Burrow tunnel system for small rodents", "Tunnel and chamber burrow enrichment"]`
