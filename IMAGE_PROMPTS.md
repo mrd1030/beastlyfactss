@@ -215,3 +215,23 @@ and matter of fact, never comic.
 2. Log anything from Wikimedia Commons in `IMAGE_CREDITS.md` with author and
    license. Adobe Stock, generated and Canva images are not tracked there.
 3. Run `node scripts/check-images.mjs`.
+
+### bearded-dragon-shopping-list.jpg
+Photorealistic photograph of an adult bearded dragon perched on the rim of a red
+plastic shopping basket on a light wood floor, head tilted as it inspects the
+haul inside: a ceramic dome lamp, a long tube light fixture in plain packaging,
+a digital thermometer, a small unmarked jar of white supplement powder, and a
+slate tile leaning against the basket. Bright clean daylight from a window at
+the right, warm terracotta and sand palette, sharpest on the dragon's face and
+the basket rim, 50mm, f/2.8, 3:2. No text, brand names, or legible packaging
+anywhere.
+
+### t5-vs-compact-uvb-guide.jpg
+Photorealistic photograph inside a spacious desert vivarium: an adult bearded
+dragon basking on a flat rock under a long linear tube light that casts one
+even band of brightness down the full length of the enclosure, fading softly
+into a shaded cool end with a cork bark hide. In the near foreground outside
+the glass, a small unplugged compact coil bulb lies retired on the tabletop,
+slightly out of focus. Warm amber light against cool shadow, red desert sand
+and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
+logos, or brand markings on any equipment.
