@@ -118,6 +118,8 @@ export default function About() {
             learned from keeping my own animals (my bearded dragon Dexter has taught me more than any book has).
             If you've got questions, feedback, or a cool animal fact to share, reach out via the{' '}
             <Link to="/contact/" className="text-secondary font-semibold hover:underline">Contact page</Link>.
+            The full origin story is in{' '}
+            <Link to="/blog/welcome-to-beastlyfacts/" className="text-secondary font-semibold hover:underline">the welcome post</Link>.
           </p>
         </motion.section>
 

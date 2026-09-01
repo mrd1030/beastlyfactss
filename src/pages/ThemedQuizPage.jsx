@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, 
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { useQuizScores } from '@/lib/hooks/useQuizScores';
 import { getDisplayDate } from '@/lib/utils/date';
+import { truncateDescription } from '@/lib/utils/truncate';
 import { facts } from '@/lib/data/facts';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -142,7 +143,9 @@ export default function ThemedQuizPage({ quiz }) {
   ).values()];
 
   const pageTitle = `${quiz.title} Quiz | Beastly Facts`;
-  const pageDescription = `${quiz.tagline} ${total} questions drawn from real Beastly Facts guides, instant feedback with sources, and a collectible reward card for your Pack.`;
+  // Truncated at the site-wide 155 so a long tagline can never push the meta
+  // description past Google's display limit.
+  const pageDescription = truncateDescription(`${quiz.tagline} ${total} sourced questions from real Beastly Facts pages, plus a reward card for your Pack.`);
   const canonicalUrl = `https://beastlyfacts.com/quiz/${quiz.id}/`;
 
   return (

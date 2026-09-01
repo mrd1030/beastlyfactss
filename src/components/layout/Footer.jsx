@@ -46,12 +46,14 @@ export default function Footer() {
                 { to: '/encyclopedia/', label: 'Encyclopedia' },
                 { to: '/gear/', label: 'Recommended gear' },
                 { to: '/care-packages/', label: 'Care packages' },
+                { to: '/glossary/', label: 'Glossary' },
               ]
             },
             {
               title: "Learn something wild",
               links: [
                 { to: '/facts/', label: 'Facts' },
+                { to: '/animal-facts/', label: 'Animal facts hub' },
                 { to: '/fact-files/', label: 'Fact files' },
                 { to: '/beastlypedia/', label: 'Beastlypedia' },
                 { to: '/gallery/', label: 'Gallery' },
@@ -63,6 +65,7 @@ export default function Footer() {
               title: "The site",
               links: [
                 { to: '/exotic-pet-laws/', label: 'Is it legal?' },
+                { to: '/categories/', label: 'All categories' },
                 { to: '/about/', label: 'About' },
                 { to: '/contact/', label: 'Contact' },
                 { to: '/pack/', label: 'My Pack' },
