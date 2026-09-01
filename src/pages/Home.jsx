@@ -33,7 +33,9 @@ export default function Home() {
   const [imageFact, setImageFact] = useState(null);
 
   return (
-    <main>
+    // A div, not <main>: AppLayout already wraps every route in the page's one
+    // <main> landmark, and main-inside-main is invalid nesting.
+    <div>
       {/* SEO: Meta Tags */}
       <Helmet>
         <title>Beastly Facts | Animal Facts and Pet Care Guides</title>
@@ -89,6 +91,6 @@ export default function Home() {
       <HomeChild name="Newsletter" />
       <FactModal fact={selectedFact} onClose={() => setSelectedFact(null)} onOpenImage={setImageFact} />
       <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
-    </main>
+    </div>
   );
 }

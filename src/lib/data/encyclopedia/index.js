@@ -38,11 +38,14 @@ export const encyclopediaCategories = [
   { name: "Turtles & Tortoises", emoji: "🐢", slug: "turtles-tortoises", image: "/assets/encyclopedia/turtles-tortoises-category.jpg" },
 ];
 
+// Light-mode text is the -700 shade: every -600 fails WCAG 4.5:1 on its -50
+// pill (lime-600 was 2.98:1), while all six -700s clear it at 4.8 to 5.9.
+// Flagged by PageSpeed's accessibility audit on every difficulty chip.
 export const difficultyColor = {
-  "Self-Sufficient": "text-sky-600 bg-sky-50 dark:bg-sky-950 dark:text-sky-400",
-  "Beginner": "text-emerald-600 bg-emerald-50 dark:bg-emerald-950 dark:text-emerald-400",
-  "Beginner/Intermediate": "text-lime-600 bg-lime-50 dark:bg-lime-950 dark:text-lime-400",
-  "Intermediate": "text-amber-600 bg-amber-50 dark:bg-amber-950 dark:text-amber-400",
-  "Intermediate/Advanced": "text-orange-600 bg-orange-50 dark:bg-orange-950 dark:text-orange-400",
-  "Advanced": "text-red-600 bg-red-50 dark:bg-red-950 dark:text-red-400",
+  "Self-Sufficient": "text-sky-700 bg-sky-50 dark:bg-sky-950 dark:text-sky-400",
+  "Beginner": "text-emerald-700 bg-emerald-50 dark:bg-emerald-950 dark:text-emerald-400",
+  "Beginner/Intermediate": "text-lime-700 bg-lime-50 dark:bg-lime-950 dark:text-lime-400",
+  "Intermediate": "text-amber-700 bg-amber-50 dark:bg-amber-950 dark:text-amber-400",
+  "Intermediate/Advanced": "text-orange-700 bg-orange-50 dark:bg-orange-950 dark:text-orange-400",
+  "Advanced": "text-red-700 bg-red-50 dark:bg-red-950 dark:text-red-400",
 };

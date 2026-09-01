@@ -112,3 +112,56 @@ self.addEventListener("notificationclick", (event) => {
     })
   );
 });
+
+// Fired by the browser when it rotates or expires a push subscription on its
+// own (token aging, a browser update, battery policy). Without this handler
+// the subscription silently dies: the phone still holds notification
+// permission, but pings stop and the Pack card falls back to "Enable" as if
+// the user never opted in. Resubscribe with the same key and register the
+// fresh endpoint straight with Supabase - no page is open when this fires,
+// so the REST call has to happen here. The dead endpoint's old row is pruned
+// by send-notification the next time it gets a 404/410 for it.
+//
+// VAPID_PUBLIC_KEY is duplicated from src/lib/pushNotifications.js and the
+// two must stay in sync by hand (same arrangement as FACT_IMAGES in
+// _worker.js). The Supabase URL and anon key are the public client-side
+// values that already ship in the app bundle; RLS decides what they can
+// touch (insert-only on this table), not their visibility.
+const VAPID_PUBLIC_KEY = "BCRnhiBTSkzZJE86IOPyvyp-qsFZgcr1hYYZ4zTlWw8z2fb9hVlVVTQet5RPCKjYVYn_M7i_nM4JaGa1On4ASSg";
+const SUPABASE_URL = "https://ipqqeofzlwvfnunduuru.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlwcXFlb2Z6bHd2Zm51bmR1dXJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNTg2MzUsImV4cCI6MjA5NzczNDYzNX0.Ai1fuNqEvUKvIA1YSkMg0CMDh6hUO85h3a_0hGeEjok";
+
+function urlBase64ToUint8Array(base64) {
+  const padding = "=".repeat((4 - (base64.length % 4)) % 4);
+  const raw = atob((base64 + padding).replace(/-/g, "+").replace(/_/g, "/"));
+  return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
+}
+
+self.addEventListener("pushsubscriptionchange", (event) => {
+  event.waitUntil(
+    self.registration.pushManager
+      .subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(VAPID_PUBLIC_KEY),
+      })
+      .then((subscription) => {
+        const json = subscription.toJSON();
+        // Plain insert, matching subscribeToPush() in the app: anon is
+        // insert-only on this table, so the on_conflict upsert form is not
+        // available to it. A 409 duplicate means this endpoint is already
+        // registered, which is success, and fetch() does not throw on it.
+        return fetch(`${SUPABASE_URL}/rest/v1/push_subscriptions`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            apikey: SUPABASE_ANON_KEY,
+            Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+          },
+          body: JSON.stringify({ endpoint: json.endpoint, p256dh: json.keys.p256dh, auth: json.keys.auth }),
+        });
+      })
+      // Resubscribing can legitimately fail (permission since revoked at the
+      // OS level) - there is nothing useful to do about it from here.
+      .catch(() => {})
+  );
+});
