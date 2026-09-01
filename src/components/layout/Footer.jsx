@@ -57,6 +57,7 @@ export default function Footer() {
                 { to: '/fact-files/', label: 'Fact files' },
                 { to: '/beastlypedia/', label: 'Beastlypedia' },
                 { to: '/gallery/', label: 'Gallery' },
+                { to: '/feed/', label: 'The feed' },
                 { to: '/quiz/', label: 'Quizzes' },
                 { to: '/chronicles/dex/', label: 'Chronicles' },
               ]
