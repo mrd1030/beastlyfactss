@@ -15,6 +15,11 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   Cache-Control: public, max-age=0, must-revalidate
+  # Google Discover eligibility: allows full-size image previews. A header
+  # rather than a robots meta on purpose - generate-fact-pages.mjs forbids a
+  # robots meta in the built shell (it injects its own per-fact noindex).
+  # Header and page-level meta directives merge, so noindex pages stay noindex.
+  X-Robots-Tag: max-image-preview:large
 
 /assets/*.js
   Cache-Control: public, max-age=31536000, immutable
