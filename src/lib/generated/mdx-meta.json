@@ -4,7 +4,7 @@
     "slug": "welcome-to-beastlyfacts",
     "title": "Welcome to BeastlyFacts - Why We're Here",
     "seoTitle": null,
-    "excerpt": "Welcome to BeastlyFacts! Honest animal care guides, fun facts, and practical advice for reptile and small mammal owners.",
+    "excerpt": "Welcome to BeastlyFacts. What started as a few honest care guides is now 100+ species guides, 400+ deep dives, checked facts, and quizzes. Here is the tour.",
     "date": "2026-06-01",
     "category": "Site News",
     "categories": [
@@ -20,12 +20,12 @@
       "pet-owner-resources",
       "site-news"
     ],
-    "readTime": 7,
+    "readTime": 3,
     "difficulty": null,
     "image": "/assets/images/welcome-beastlyfacts.jpg",
     "imageAlt": "BeastlyFacts logo with various happy pets",
     "emoji": "🐾",
-    "lastReviewed": "2026-06-19",
+    "lastReviewed": "2026-09-01",
     "author": "Mike",
     "canonicalUrl": null,
     "faqs": [],
@@ -3365,6 +3365,53 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4
+  },
+  {
+    "path": "/content/guides/bearded-dragon-shopping-list.mdx",
+    "slug": "bearded-dragon-shopping-list",
+    "title": "The Bearded Dragon Starter Shopping List (Buy Once, Cry Once)",
+    "seoTitle": "Bearded Dragon Shopping List: Buy Once, Skip the Kit",
+    "excerpt": "The buy-once bearded dragon setup list: a real 4x2x2 enclosure, T5 UVB, a thermostat, and feeders, plus the pet store kit items to skip entirely.",
+    "date": "2026-09-01",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Bearded Dragon",
+      "Reptile Gear",
+      "Shopping List",
+      "Beginner Setup",
+      "Reptile Lighting"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": null,
+    "imageAlt": "The Bearded Dragon Starter Shopping List (Buy Once, Cry Once)",
+    "emoji": "🦎",
+    "lastReviewed": "2026-09-01",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can I start a baby bearded dragon in a 40 gallon and upgrade later?",
+        "a": "You can, but it usually costs more than buying the adult enclosure once. Bearded dragons reach most of their adult size within a year, so the 40 gallon becomes a spare tank fast. A baby does perfectly well in a 4x2x2 with a slightly smaller feeding area while it learns to hunt."
+      },
+      {
+        "q": "Do I really need a thermostat if the bulb wattage seems right?",
+        "a": "Yes. Room temperature swings change what the same bulb puts out from one day to the next, and an unregulated basking site can drift far above safe surface temperatures. A dimming thermostat holds the basking spot where you set it and pays for itself the first hot week of summer."
+      },
+      {
+        "q": "Where can I safely cut costs on this list?",
+        "a": "Substrate and furniture. Slate tile from a hardware store is cheap, holds basking heat, and cannot be swallowed. A food bowl can be any shallow ceramic dish. Do not cut costs on UVB, the thermostat, or enclosure size, those three are what the vet bills come from."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 1
   },
   {
     "path": "/content/guides/bearded-dragon-tank-setup-guide.mdx",
@@ -28828,6 +28875,54 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5
+  },
+  {
+    "path": "/content/guides/t5-vs-compact-uvb-guide.mdx",
+    "slug": "t5-vs-compact-uvb-guide",
+    "title": "T5 vs Compact UVB: Which One Won't Fail Your Reptile",
+    "seoTitle": "T5 vs Compact UVB: Which Reptile Bulb Actually Works",
+    "excerpt": "T5 tubes and compact coil UVB bulbs are not interchangeable. Which one fits your enclosure, which species need which strength, and when the coil is a trap.",
+    "date": "2026-09-02",
+    "category": "Reptiles",
+    "categories": [
+      "Reptiles"
+    ],
+    "tags": [
+      "Reptile Lighting",
+      "UVB",
+      "Bearded Dragon",
+      "Leopard Gecko",
+      "Crested Gecko",
+      "Reptile Gear"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": null,
+    "imageAlt": "T5 vs Compact UVB: Which One Won't Fail Your Reptile",
+    "emoji": "💡",
+    "lastReviewed": "2026-09-02",
+    "author": "Mike",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do nocturnal reptiles like leopard geckos need UVB at all?",
+        "a": "They survive without it when their diet is supplemented correctly, but low-level UVB is increasingly considered best practice even for crepuscular species. A gentle tube at the shaded end of the range lets the animal choose its own exposure, which is how it would manage sun in the wild."
+      },
+      {
+        "q": "How often does a UVB bulb need replacing?",
+        "a": "Follow the manufacturer's rated life rather than waiting for the bulb to burn out. UVB output decays long before visible light does, so a bulb can look bright while producing too little UVB to matter. For most quality T5 tubes that means a replacement roughly once a year."
+      },
+      {
+        "q": "Can my reptile get UVB through a window instead?",
+        "a": "No. Ordinary glass filters out almost all UVB, so a sunny windowsill delivers heat and visible light with none of the benefit. Unfiltered outdoor sun works, glass-filtered sun does not."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 2
   },
   {
     "path": "/content/guides/tarantula-cost-guide.mdx",

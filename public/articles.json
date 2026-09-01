@@ -3,7 +3,7 @@
     {
       "slug": "welcome-to-beastlyfacts",
       "title": "Welcome to BeastlyFacts - Why We're Here",
-      "excerpt": "Welcome to BeastlyFacts! Honest animal care guides, fun facts, and practical advice for reptile and small mammal owners.",
+      "excerpt": "Welcome to BeastlyFacts. What started as a few honest care guides is now 100+ species guides, 400+ deep dives, checked facts, and quizzes. Here is the tour.",
       "date": "2026-06-01",
       "image": "/assets/images/welcome-beastlyfacts.jpg",
       "category": "Site News",
@@ -633,6 +633,17 @@
       "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD to yellow fungus disease, and when to call a vet.",
       "date": "2026-07-05",
       "image": "/assets/images/bearded-dragon-health-issues.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-shopping-list",
+      "title": "Bearded Dragon Shopping List: Buy Once, Skip the Kit",
+      "excerpt": "The buy-once bearded dragon setup list: a real 4x2x2 enclosure, T5 UVB, a thermostat, and feeders, plus the pet store kit items to skip entirely.",
+      "date": "2026-09-01",
+      "image": null,
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -5530,6 +5541,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "t5-vs-compact-uvb-guide",
+      "title": "T5 vs Compact UVB: Which Reptile Bulb Actually Works",
+      "excerpt": "T5 tubes and compact coil UVB bulbs are not interchangeable. Which one fits your enclosure, which species need which strength, and when the coil is a trap.",
+      "date": "2026-09-02",
+      "image": null,
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
       ]
     },
     {
