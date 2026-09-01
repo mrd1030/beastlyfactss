@@ -14,8 +14,13 @@
          Must stay above any stylesheet. theme-color is deliberately left to the
          effect: it colours OS chrome, not the page, so it cannot flash. -->
     <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'false'))}catch(e){}</script>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script>
+    <!-- Google AdSense: removed while the site is unapproved - the loader
+         (and the FundingChoices consent popup it auto-loads) was ~290KB of
+         script earning nothing, the largest weight in every PageSpeed run.
+         To reapply, restore this single tag before requesting the review
+         (ads.txt in public/ is still in place):
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script> -->
+
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
