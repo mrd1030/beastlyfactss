@@ -21,6 +21,11 @@
          (ads.txt in public/ is still in place):
          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script> -->
 
+    <!-- Google Discover eligibility: without max-image-preview:large, Google
+         only shows small thumbnails and pages essentially never surface in
+         the Discover feed. Additive directive - pages that set their own
+         robots meta (noindex etc.) keep those directives, Google merges. -->
+    <meta name="robots" content="max-image-preview:large">
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
