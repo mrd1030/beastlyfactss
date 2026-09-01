@@ -9,7 +9,7 @@ beats volume.
 
 1. Pins are 1000x1500 (2:3) portrait cards composed from existing site
    assets by `scripts/generate-pins.mjs`: photo on top, cream band with the
-   title in Fredoka, orange kicker and BeastlyFacts.com footer. No new
+   title in Schibsted Grotesk, orange kicker and BeastlyFacts.com footer. No new
    photography, no text on the photo itself.
 2. The generator takes a JSON spec (`out`, `image`, `kicker`, `title`) and
    writes JPEGs to `public/assets/pins/`, which deploy with the site, so
@@ -17,8 +17,8 @@ beats volume.
    `https://beastlyfacts.com/assets/pins/<out>.jpg`. Pins must be MERGED AND
    DEPLOYED before importing the CSV, or Publer fetches 404s.
 3. Fonts: the generator renders through fontconfig. Instance the site's
-   variable fonts once per machine/session (Fredoka at wght 600 as
-   "Fredoka-SemiBold", Nunito at 700 as "Nunito-Bold", via fonttools
+   variable fonts once per machine/session (Schibsted Grotesk at wght 700 as
+   "Schibsted-Bold", Atkinson Hyperlegible Next at 700 as "Atkinson-Bold", via fonttools
    instancer into ~/.fonts, then `fc-cache -f`), or titles fall back to
    DejaVu.
 

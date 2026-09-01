@@ -5,8 +5,8 @@
 // image already shipped with the site.
 //
 // Fonts: librsvg resolves families through fontconfig, so the site's variable
-// woff2 faces are instanced to static TTFs first (Fredoka-SemiBold for
-// titles, Nunito-Bold for the kicker and domain) and dropped in ~/.fonts.
+// woff2 faces are instanced to static TTFs first (Schibsted-Bold for
+// titles, Atkinson-Bold for the kicker and domain) and dropped in ~/.fonts.
 // A session that has not done that falls back to DejaVu, which is legible
 // but off-brand - regenerate after registering the fonts.
 //
@@ -39,10 +39,9 @@ const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
 const outDir = 'public/assets/pins';
 fs.mkdirSync(outDir, { recursive: true });
 
-// Greedy word wrap against an estimated average glyph width. Fredoka is a
-// rounded geometric face, so 0.58em per character holds up well enough for
-// three-line titles; anything that would need a fourth line drops the font
-// size a step instead.
+// Greedy word wrap against an estimated average glyph width. 0.58em per
+// character holds up well enough for Schibsted Grotesk at title sizes;
+// anything that would need a fourth line drops the font size a step instead.
 function layoutTitle(title) {
   for (const size of [76, 68, 60, 52]) {
     const maxChars = Math.floor((W - 160) / (size * 0.58));
@@ -65,15 +64,15 @@ for (const spec of specs) {
   const lineHeight = size * 1.18;
   const titleTop = PHOTO_H + 150;
   const titleSvg = lines
-    .map((l, i) => `<text x="80" y="${titleTop + i * lineHeight}" font-family="Fredoka-SemiBold" font-size="${size}" fill="${INK}">${esc(l)}</text>`)
+    .map((l, i) => `<text x="80" y="${titleTop + i * lineHeight}" font-family="Schibsted-Bold" font-size="${size}" fill="${INK}">${esc(l)}</text>`)
     .join('\n');
 
   const svg = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
     <rect x="0" y="${PHOTO_H}" width="${W}" height="${H - PHOTO_H}" fill="${CREAM}"/>
     <rect x="0" y="${PHOTO_H}" width="${W}" height="14" fill="${ORANGE}"/>
-    <text x="80" y="${PHOTO_H + 78}" font-family="Nunito-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
+    <text x="80" y="${PHOTO_H + 78}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
     ${titleSvg}
-    <text x="80" y="${H - 62}" font-family="Nunito-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
+    <text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
   </svg>`;
 
   const photo = await sharp(spec.image)
