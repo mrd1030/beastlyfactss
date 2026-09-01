@@ -26,6 +26,10 @@ working checklist.
   Birds, Small & Exotic Pets, Invertebrates, Cats, Dogs, Comparisons, Legal,
   Roundups, Fun Facts, Pet Care, Enrichment. New categories are a deliberate
   decision, not a convenience.
+- A cross-species article also sets the `categories` array (primary first),
+  e.g. `categories: ["Pet Care", "Dogs", "Cats"]`, or it never appears under
+  the species pills on /blog/. The blog filters on the array when present.
+  Ten dog/cat health guides shipped invisible to both pills before this rule.
 - No em or en dashes anywhere. US spelling, "grey" preferred. No AI-tell
   phrasing ("nature's ultimate X", "let that sink in", "delve into").
 - Deliver the structure the lead-in promises: "six surprising facts" means an
