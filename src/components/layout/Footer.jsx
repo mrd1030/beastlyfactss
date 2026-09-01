@@ -30,7 +30,7 @@ export default function Footer() {
               <DonateButton className="w-full font-body font-bold" />
             </div>
             <div className="mt-5">
-              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-2.5">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-muted-foreground mb-2.5">
                 Follow along
               </h4>
               <SocialLinksRow className="gap-4" />
@@ -75,7 +75,7 @@ export default function Footer() {
             }
           ].map((section) => (
             <div key={section.title}>
-              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-4">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-muted-foreground mb-4">
                 {section.title}
               </h4>
               <nav className="flex flex-col gap-2.5">
