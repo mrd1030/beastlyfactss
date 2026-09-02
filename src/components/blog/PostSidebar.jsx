@@ -150,7 +150,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Subscribe */}
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-        <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam. 🐾</p>
+        <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam. 🐾</p>
         <BeehiivSubscribe />
       </div>
 
