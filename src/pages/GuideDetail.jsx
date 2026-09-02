@@ -619,7 +619,7 @@ export default function GuideDetail() {
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {carePackage.name}
                       </p>
-                      <p className="text-xs text-muted-foreground font-body mt-0.5">{carePackage.pages} pages &middot; {carePackage.price}</p>
+                      <p className="text-xs text-muted-foreground font-body mt-0.5">{`${carePackage.pages} pages · ${carePackage.price}`}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">

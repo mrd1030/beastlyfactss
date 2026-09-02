@@ -307,7 +307,7 @@ export default function ExoticPetLaws() {
                 <>
                   {' '}
                   <span className="text-foreground font-semibold">
-                    {checkedStates} of {researchedCount} states and DC have been read for this animal
+                    {`${checkedStates} of ${researchedCount} states and DC have been read for this animal`}
                   </span>
                   , so the {uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`}{' '}
                   a gap in our research rather than a finding of no rule.
