@@ -18,7 +18,10 @@ export const CHRONICLES_SERIES = [
     character: 'Otis the Bunny',
     shortName: 'Otis',
     emoji: '🐰',
-    blurb: 'A house rabbit who is quite sure the garden - and everything in it - belongs to him.',
+    // Otis is Mike's sister's rabbit and stays with him for weeks at a time.
+    // Said here so the series page, the About page and the welcome post all
+    // tell the same story about whose rabbit he is.
+    blurb: 'A house rabbit who is quite sure the garden - and everything in it - belongs to him. Otis is my sister\'s rabbit and stays with me for weeks at a time, which is where these stories come from.',
   },
 ];
 

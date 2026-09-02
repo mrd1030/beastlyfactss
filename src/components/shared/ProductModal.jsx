@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
-import { X, ShoppingCart, Star } from 'lucide-react';
+import { X, ShoppingCart } from 'lucide-react';
 import { RETAILERS } from '@/lib/data/affiliateProducts';
 import LocalImage from '@/components/shared/LocalImage';
 
@@ -110,18 +110,11 @@ export default function ProductModal({ product, onClose }) {
             {product.product}
           </h2>
 
-          {(product.rating != null || product.price) && (
+          {/* Rating hidden for the same reason as in ProductCard.jsx: a stale
+              copied number, not a live rating. */}
+          {product.price && (
             <div className="flex items-center gap-3 mb-3">
-              {product.rating != null && (
-                <span className="flex items-center gap-1 text-sm font-body text-amber-500">
-                  <Star className="w-4 h-4 fill-amber-500" />
-                  <span className="font-semibold">{product.rating.toFixed(1)}</span>
-                  <span className="text-muted-foreground text-xs">/ 5</span>
-                </span>
-              )}
-              {product.price && (
-                <span className="text-sm font-body font-semibold text-foreground">{product.price}</span>
-              )}
+              <span className="text-sm font-body font-semibold text-foreground">{product.price}</span>
             </div>
           )}
 

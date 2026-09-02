@@ -8,6 +8,30 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Drops HTML comments from the built shell. index.html carries several
+// paragraphs of maintainer notes (why the theme script runs first, why the
+// AdSense tag is out, how the preload pairs with HeroSection) that are useful
+// in source and pure weight in production: they shipped inside every
+// prerendered page, about 5KB each, and read oddly to anyone viewing source.
+// Build only, so the dev server keeps the notes next to the tags they explain.
+// generate-fact-pages.mjs already strips comments from its own copy of the
+// shell, so nothing changes there. Runs post so it sees the final markup after
+// Vite has rewritten asset URLs.
+function stripHtmlComments() {
+  return {
+    name: 'strip-html-comments',
+    apply: 'build',
+    transformIndexHtml: {
+      order: 'post',
+      handler(html) {
+        return html
+          .replace(/<!--[\s\S]*?-->/g, '')
+          .replace(/\n[ \t]*\n([ \t]*\n)+/g, '\n\n');
+      },
+    },
+  };
+}
+
 export default defineConfig({
   plugins: [
     mdx({
@@ -17,6 +41,7 @@ export default defineConfig({
       ],
     }),
     react(),
+    stripHtmlComments(),
   ],
   resolve: {
     alias: {
