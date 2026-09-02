@@ -89,8 +89,8 @@ export default function CarePackages() {
             className="mt-10"
           >
             <div className="mb-4">
-              <h2 className="font-display font-bold text-xl text-foreground">Coming soon</h2>
-              <p className="text-sm text-muted-foreground font-body">In production now - not purchasable yet.</p>
+              <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
+              <p className="text-sm text-muted-foreground font-body">Being researched and written now. Each one goes on sale once it clears the same review as the free guides.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (

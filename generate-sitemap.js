@@ -192,20 +192,21 @@ const factCategories = [
   'birds', 'dogs-and-cats', 'fish', 'invertebrates', 'mammals', 'ocean', 'reptiles', 'weird-and-wonderful',
 ];
 
-// Gear pet-type filter slugs (mirrors GEAR_PET_TYPES in src/lib/data/affiliateProducts.js)
-const gearPetTypes = [
-  'reptiles-amphibians', 'birds', 'fish', 'dogs-cats', 'small-mammals',
-];
+// Not listed here, on purpose: /gear/ and its five pet-type filters,
+// /gallery/, /categories/, and the three /care-packages/ subpages (store,
+// why-we-exist, faq). Each carries noindex,follow in its page component. Over
+// three months of Search Console data they earned one click between them, and
+// listing a noindexed URL in a sitemap is a contradiction Google reports as an
+// error. They stay prerendered and linked for readers; they are just not
+// submitted for indexing.
 
 const staticPages = [
   '/',
   '/about/',
   '/contact/',
-  '/categories/',
   '/facts/',
   '/animal-facts/',
   '/fact-files/',
-  '/gallery/',
   // /feed/ deliberately omitted: its posts are fetched from Supabase at
   // runtime and the route is not prerendered, so a crawler that does not run
   // JS gets an empty shell - Google logged it as a soft 404. It is noindex in
@@ -214,7 +215,6 @@ const staticPages = [
   '/encyclopedia/',
   '/beastlypedia/',
   '/guides/',
-  '/gear/',
   '/quiz/',
   '/quiz/personality/',
   '/quiz/trivia/',
@@ -223,9 +223,6 @@ const staticPages = [
   '/glossary/',
   '/exotic-pet-laws/',
   '/care-packages/',
-  '/care-packages/store/',
-  '/care-packages/why-we-exist/',
-  '/care-packages/faq/',
 
   // One page per animal in the legal matrix. Read from the dataset for the same
   // reason prerender.mjs does: a hand-copied list goes stale the moment a new
@@ -247,9 +244,6 @@ const staticPages = [
 
   // Fun-facts category pages
   ...factCategories.map(s => `/facts/category/${s}/`),
-
-  // Gear pet-type filter pages
-  ...gearPetTypes.map(s => `/gear/category/${s}/`),
 
   // Beastlypedia group filters and individual Beastfiles
   ...beastlypedia.groupSlugs.map(s => `/beastlypedia/group/${s}/`),
@@ -293,9 +287,8 @@ async function generateSitemap() {
     const isGuideDetail = path.startsWith('/guides/') && !isGuideCat;
     const isEncAnimal = path.startsWith('/encyclopedia/animal/');
     const isEncCat = path.startsWith('/encyclopedia/category/');
-    const isGearCat = path.startsWith('/gear/category/');
     const changefreq = isHighFreq ? 'weekly' : (isGuideDetail || isEncAnimal) ? 'monthly' : 'weekly';
-    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat || isGearCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
+    const priority = isHome ? '1.0' : isHighFreq ? '0.9' : (isEncCat || isGuideCat) ? '0.7' : (isGuideDetail || isEncAnimal) ? '0.6' : '0.7';
     xml += `  <url>\n`;
     xml += `    <loc>${BASE_URL}${path}</loc>\n`;
     xml += `    <changefreq>${changefreq}</changefreq>\n`;

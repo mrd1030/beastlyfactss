@@ -66,7 +66,7 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
 
         {isComingSoon ? (
           <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-muted-foreground">
-            Coming soon
+            In progress
           </span>
         ) : (
           <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary">

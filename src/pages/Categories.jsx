@@ -108,6 +108,7 @@ export default function Categories() {
         <title>Browse by Category | Beastly Facts</title>
         <meta name="description" content={PAGE_DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/categories/" />
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content="Browse by Category | Beastly Facts" />
         <meta property="og:description" content={PAGE_DESCRIPTION} />
         <meta property="og:url" content="https://beastlyfacts.com/categories/" />

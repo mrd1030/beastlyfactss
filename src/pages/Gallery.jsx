@@ -179,7 +179,7 @@ export default function Gallery() {
         <title>Photo Gallery | Beastly Facts</title>
         <meta name="description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <link rel="canonical" href="https://beastlyfacts.com/gallery/" />
-        <meta name="robots" content="index,follow" />
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content="Photo Gallery | Beastly Facts" />
         <meta property="og:description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <meta property="og:url" content="https://beastlyfacts.com/gallery/" />
