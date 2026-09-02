@@ -253,8 +253,7 @@ export default function ExoticPetLaws() {
                 <>
                   Pick an animal and the map shows where it is restricted. Every entry below was read from
                   the statute or the regulation itself, never from a summary of one, and each carries the
-                  citation so you can check it. {ANIMAL_IDS.length} animals across all {stateCount} states
-                  and the District of Columbia, plus New York City, which has its own Health Code.
+                  {`citation so you can check it. ${ANIMAL_IDS.length} animals across all ${stateCount} states and the District of Columbia, plus New York City, which has its own Health Code.`}
                 </>
               ) : (
                 <>
@@ -267,8 +266,7 @@ export default function ExoticPetLaws() {
                     </>
                   ) : (
                     <>
-                      Restricted in {restricted.length} of the {Object.keys(statuses).length} jurisdictions
-                      checked. Every entry quotes the rule it comes from.
+                      {`Restricted in ${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked. Every entry quotes the rule it comes from.`}
                     </>
                   )}
                 </>

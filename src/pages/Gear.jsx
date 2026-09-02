@@ -158,7 +158,7 @@ export default function Gear() {
                     : 'bg-card border border-border text-muted-foreground hover:text-foreground'
                 }`}
               >
-                <span>{t.emoji}</span> {t.label}
+                <span>{t.emoji}</span>{` ${t.label}`}
               </Link>
             ))}
           </div>

@@ -329,7 +329,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
         {grouped.map((group) => (
           <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-              <span>{group.emoji}</span> {group.name}
+              <span>{group.emoji}</span>{` ${group.name}`}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
@@ -373,7 +373,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
-              <span>{f.emoji}</span> {f.label}
+              <span>{f.emoji}</span>{` ${f.label}`}
             </Link>
           ))}
         </div>

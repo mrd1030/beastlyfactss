@@ -47,8 +47,7 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
         </div>
         <h3 className="font-display font-bold text-lg text-foreground">{pkg.name}</h3>
         <p className="text-xs text-muted-foreground font-body">
-          {pkg.pages} pages &middot; PDF &middot; print or view
-          {pkg.version && <> &middot; v{pkg.version}</>}
+          {`${pkg.pages} pages · PDF · print or view${pkg.version ? ` · v${pkg.version}` : ''}`}
         </p>
 
         {isFull ? (

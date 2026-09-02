@@ -172,8 +172,7 @@ export default function FactFiles() {
             </div>
 
             <p className="mb-4 font-body text-xs text-muted-foreground">
-              {`${filtered.length} ${filtered.length === 1 ? 'file' : 'files'}`}
-              {totalPages > 1 && ` · Page ${safePage} of ${totalPages}`}
+              {`${filtered.length} ${filtered.length === 1 ? 'file' : 'files'}${totalPages > 1 ? ` · Page ${safePage} of ${totalPages}` : ''}`}
             </p>
 
             {filtered.length > 0 ? (

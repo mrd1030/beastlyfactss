@@ -81,7 +81,7 @@ export default function FactFileRow({ entry, state = { from: 'fact-files' } }) {
               {sources > 0 ? (
                 <span className="flex items-center gap-1.5 text-muted-foreground">
                   <BookOpen className="h-3.5 w-3.5" />
-                  {sources} {sources === 1 ? 'source' : 'sources'}
+                  {`${sources} ${sources === 1 ? 'source' : 'sources'}`}
                 </span>
               ) : (
                 <span />

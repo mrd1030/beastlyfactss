@@ -105,7 +105,7 @@ export default function QuizHub() {
                   </p>
                 </div>
                 <span className="flex-shrink-0 inline-flex items-center gap-1.5 bg-secondary text-secondary-foreground font-body font-bold text-sm px-5 py-2.5 rounded-2xl">
-                  {scores[featured.id] ? 'Play again' : 'Play'} <ArrowRight className="w-4 h-4" />
+                  {`${scores[featured.id] ? 'Play again' : 'Play'} `}<ArrowRight className="w-4 h-4" />
                 </span>
               </div>
             </Link>

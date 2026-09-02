@@ -270,7 +270,7 @@ export default function EncyclopediaAnimal() {
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {guide.name} Care Guide
+                        {`${guide.name} Care Guide`}
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed">{guide.tagline}</p>
                     </div>

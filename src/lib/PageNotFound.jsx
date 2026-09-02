@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate, useNavigationType } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft } from 'lucide-react';
@@ -6,7 +7,15 @@ export default function PageNotFound() {
     const location = useLocation();
     const navigate = useNavigate();
     const navigationType = useNavigationType();
-    const pageName = location.pathname.substring(1);
+    // Filled in after mount, not during render: 404.html is one static file
+    // that prerender.mjs captured for its own probe path, and it is served for
+    // every missing URL. Rendering the real path on the first pass made the
+    // text differ from the captured HTML on every 404, which failed hydration.
+    const [pageName, setPageName] = useState('');
+    useEffect(() => {
+        if (window.__IS_PRERENDER__) return;
+        setPageName(location.pathname.substring(1));
+    }, [location.pathname]);
     // 'PUSH' means this entry was reached by clicking something (a Link, a
     // navigate() call) during the current session - i.e. a broken internal
     // link. Landing here directly (typed URL, bookmark, external link) is
@@ -24,8 +33,7 @@ export default function PageNotFound() {
                 <span className="text-5xl block mb-4" role="img" aria-label="See-no-evil monkey">🙈</span>
                 <h1 className="font-display font-bold text-3xl text-foreground mb-2">404 - Page Not Found</h1>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6">
-                    We couldn't find <span className="font-semibold text-foreground">{`"${pageName}"`}</span>.
-                    It may have moved, or it never existed in the first place.
+                    {"We couldn't find "}<span className="font-semibold text-foreground">{pageName ? `"${pageName}"` : 'that page'}</span>{'. It may have moved, or it never existed in the first place.'}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                     {cameFromSite && (

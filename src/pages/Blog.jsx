@@ -91,10 +91,22 @@ export default function Blog() {
     const id = setInterval(sync, 60 * 1000);
     return () => clearInterval(id);
   }, []);
-  const [activeCategory, setActiveCategory] = useState('All');
-  // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
-  // search box) pre-fills the filter on first render, not just live typing.
-  const [search, setSearch] = useState(() => new URLSearchParams(window.location.search).get('search') || '');
+  // From the route param on the very first render, not from the effect below:
+  // /blog/category/<slug>/ is prerendered with that category applied, so a
+  // first render at 'All' (591 posts, a 60-page pagination) disagreed with the
+  // captured HTML and failed hydration on every category page. The ?category=
+  // query form has no prerendered file of its own, so it still goes through
+  // the effect like ?page= does.
+  const [activeCategory, setActiveCategory] = useState(() => catSlug || 'All');
+  // Applied after mount rather than lazily from the URL: /blog/?search=oscar
+  // (the homepage search box) hydrates against the unfiltered prerendered
+  // /blog/ list, so a first render that already filters is a mismatch.
+  const [search, setSearch] = useState('');
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const q = new URLSearchParams(window.location.search).get('search');
+    if (q) setSearch(q);
+  }, []);
   // Lazy init from statically-available posts - see findStaticPost's comment.
   const [selectedPost, setSelectedPost] = useState(() => {
     const postParam = routeSlug || new URLSearchParams(window.location.search).get('post');

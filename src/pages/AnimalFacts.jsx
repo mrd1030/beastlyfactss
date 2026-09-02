@@ -109,7 +109,7 @@ export default function AnimalFacts() {
             className="bg-card border border-border rounded-2xl p-6 sm:p-8"
           >
             <h2 className="font-display font-bold text-xl text-foreground mb-4 flex items-center gap-2">
-              <span>{section.emoji}</span> {section.heading}
+              <span>{section.emoji}</span>{` ${section.heading}`}
             </h2>
             <ul className="space-y-3">
               {section.items.map((item, j) => (
