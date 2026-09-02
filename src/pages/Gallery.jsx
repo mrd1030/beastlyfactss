@@ -361,14 +361,14 @@ export default function Gallery() {
                     // today, so this is a graceful fallback rather than a state
                     // anyone can currently hit.
                     <>
-                      Some matching facts have no photo yet.{' '}
+                      {'Some matching facts have no photo yet. '}
                       <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-body font-semibold text-secondary hover:underline">
                         Search all facts instead →
                       </Link>
                     </>
                   ) : (
                     <>
-                      Nothing matches that yet.{' '}
+                      {'Nothing matches that yet. '}
                       <Link to={`/facts/?search=${encodeURIComponent(search)}`} className="font-body font-semibold text-secondary hover:underline">
                         Try searching all facts →
                       </Link>

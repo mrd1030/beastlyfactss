@@ -220,13 +220,13 @@ export default function Search() {
           <p className="mb-4 text-sm font-body text-muted-foreground">
             {rescued ? (
               <>
-                Showing results for <span className="font-semibold text-foreground">{didYouMean}</span>.{' '}
+                Showing results for <span className="font-semibold text-foreground">{didYouMean}</span>{'. '}
                 <button
                   type="button"
                   onClick={() => setForceRaw(true)}
                   className="underline underline-offset-2 hover:text-foreground transition-colors"
                 >
-                  Search instead for &quot;{query.trim()}&quot;
+                  {`Search instead for "${query.trim()}"`}
                 </button>
               </>
             ) : (

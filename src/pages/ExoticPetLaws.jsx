@@ -395,7 +395,7 @@ export default function ExoticPetLaws() {
                         rel="noopener noreferrer"
                         className="mt-3 inline-block text-xs font-body text-primary hover:underline"
                       >
-                        {LEGAL.sources[detail.entry.sourceId].title} →
+                        {`${LEGAL.sources[detail.entry.sourceId].title} →`}
                       </a>
                     )}
                   </>
@@ -404,12 +404,9 @@ export default function ExoticPetLaws() {
                   // animal. Saying "nothing restricts it here" would be stating
                   // a conclusion the research never reached.
                   <p className="text-xs font-body text-muted-foreground leading-relaxed">
-                    We have not checked {jurisdictionName(detail.code)} for the {inSentence(animal.name)}{' '}
-                    yet, so there is no answer here either way. Treat it as unknown rather than as permitted,
-                    and ask the state agency before relying on it.
-                    {LEGAL.jurisdictions[detail.code]?.scope
+                    {`We have not checked ${jurisdictionName(detail.code)} for the ${inSentence(animal.name)} yet, so there is no answer here either way. Treat it as unknown rather than as permitted, and ask the state agency before relying on it.${LEGAL.jurisdictions[detail.code]?.scope
                       ? ` When we do read it, the body of law that governs is: ${LEGAL.jurisdictions[detail.code].scope}`
-                      : ''}
+                      : ''}`}
                   </p>
                 )}
               </div>
@@ -446,7 +443,7 @@ export default function ExoticPetLaws() {
             the same information is written out here in full. */}
         <section className="mt-12">
           <h2 className="font-display font-bold text-2xl text-foreground mb-1">
-            Every restriction on the {inSentence(animal.name)}
+            {`Every restriction on the ${inSentence(animal.name)}`}
           </h2>
           <p className="text-sm font-body text-muted-foreground mb-5">
             {restricted.length === 0
@@ -493,7 +490,7 @@ export default function ExoticPetLaws() {
                     rel="noopener noreferrer"
                     className="mt-2 inline-block text-xs font-body text-primary hover:underline"
                   >
-                    {LEGAL.sources[entry.sourceId].title} →
+                    {`${LEGAL.sources[entry.sourceId].title} →`}
                   </a>
                 )}
               </div>
@@ -502,21 +499,21 @@ export default function ExoticPetLaws() {
 
           {animal.article && (
             <p className="mt-6 text-sm font-body text-foreground">
-              For the full write-up, including the states that get reported wrongly,{' '}
+              {'For the full write-up, including the states that get reported wrongly, '}
               <Link to={animal.article} className="text-primary font-semibold hover:underline">
-                read the {inSentence(animal.name)} legal guide
+                {`read the ${inSentence(animal.name)} legal guide`}
               </Link>
               .
             </p>
           )}
           {animal.encyclopediaId && (
             <p className="mt-1.5 text-sm font-body text-foreground">
-              Past the legal question?{' '}
+              {'Past the legal question? '}
               <Link
                 to={`/encyclopedia/animal/${animal.encyclopediaId}/`}
                 className="text-primary font-semibold hover:underline"
               >
-                See the {inSentence(animal.name)} profile
+                {`See the ${inSentence(animal.name)} profile`}
               </Link>
               .
             </p>
@@ -564,8 +561,7 @@ export default function ExoticPetLaws() {
               })}
             </div>
             <p className="mt-5 text-sm font-body text-foreground">
-              For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are
-              structured, start with{' '}
+              {'For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are structured, start with '}
               <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
                 the written hub
               </Link>
@@ -595,9 +591,7 @@ export default function ExoticPetLaws() {
               Those entries are marked unclear on purpose rather than being rounded to a yes or a no.
             </p>
             <p>
-              Every entry links to the regulation it came from. None of this is legal advice, laws change
-              without much notice, and the agency that issues the permit is always the last word. For the
-              federal layer and how state schemes are structured, see the{' '}
+              {'Every entry links to the regulation it came from. None of this is legal advice, laws change without much notice, and the agency that issues the permit is always the last word. For the federal layer and how state schemes are structured, see the '}
               <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
                 exotic pet legal hub
               </Link>

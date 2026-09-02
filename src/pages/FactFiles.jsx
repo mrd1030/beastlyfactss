@@ -200,9 +200,9 @@ export default function FactFiles() {
               </>
             ) : (
               <div className="py-16 text-center">
-                <p className="font-body font-bold text-foreground">No files match "{search}"</p>
+                <p className="font-body font-bold text-foreground">{`No files match "${search}"`}</p>
                 <p className="mt-1 font-body text-sm text-muted-foreground">
-                  Try a different term, or{' '}
+                  {'Try a different term, or '}
                   <button
                     type="button"
                     onClick={() => reset(() => { setSearch(''); setGroup('All'); })}
