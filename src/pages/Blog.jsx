@@ -693,7 +693,10 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     // mismatch the span had. Spreading rather than assigning keeps the keys out
     // entirely when there is no publishable date, since omitting a field is
     // valid where an empty one is not.
-    ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastReviewed || isoPublished }),
+    // lastReviewed goes through the same future-date gate as the publish date:
+    // a scheduled article carries a review date that has not happened yet, and
+    // schema.org should not claim it has.
+    ...(isoPublished && { datePublished: isoPublished, dateModified: getDisplayIsoDate(post.lastReviewed) || isoPublished }),
     // A Person, not the Organization. The page directly below this renders an
     // AuthorBio card reading "Written by Mike" with a bio and a link to
     // /about/, and every one of the 625 MDX files declares author: "Mike" in

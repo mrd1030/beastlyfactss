@@ -12,9 +12,9 @@
 // articles and the profile page are one entity rather than 601 unrelated
 // mentions of the same first name.
 export const AUTHOR = {
-  name: 'Mike',
+  name: 'Michael Ryan',
   url: 'https://beastlyfacts.com/about/',
-  bio: 'Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.',
+  bio: 'Michael Ryan is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. He writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.',
   // Short form for the profile page, where the surrounding copy already
   // introduces him.
   role: 'Founder and writer, Beastly Facts',

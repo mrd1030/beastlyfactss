@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useArticleMeta } from '@/lib/articleMeta';
+import buildStamp from '@/lib/generated/build-stamp.json';
+import { siteToday, isFutureDated } from '@/lib/utils/date';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -27,18 +29,31 @@ function formatReviewDate(iso) {
 // Further Reading" from its own list instead of reading as one section.
 //
 // The review line above the list is the only place either of these numbers is
-// visible to a reader. 594 articles carry lastReviewed and 561 carry a derived
-// sourceCount, and until now both existed purely to feed schema.org's
-// dateModified, so the site did the work of dating and citing everything and
-// then showed none of it. Here rather than under the title because that is
-// where a reader who is checking whether to trust the piece is already looking.
+// visible to a reader. Articles carry lastReviewed and a derived sourceCount,
+// and until now both existed purely to feed schema.org's dateModified, so the
+// site did the work of dating and citing everything and then showed none of
+// it. Here rather than under the title because that is where a reader who is
+// checking whether to trust the piece is already looking.
 //
 // Both halves are independent: an article with a review date but no <Sources>
 // list still gets the date, and one with sources but no date still gets the
 // count. Nothing renders when the component is used outside an article.
+//
+// A review date in the future is a scheduling artifact (lastReviewed is set to
+// the intended publish date), not a review that has happened, so it is held
+// back until the day arrives - the same gate the byline date goes through.
+// Same two-step clock as Blog.jsx: the build stamp for the first render so the
+// prerendered HTML and the hydrating client agree, then the live clock after
+// mount, so a page that crosses its date between deploys catches up without a
+// hydration mismatch.
 export default function Sources({ children, className = '' }) {
   const { lastReviewed, sourceCount } = useArticleMeta();
-  const reviewed = formatReviewDate(lastReviewed);
+  const [today, setToday] = useState(buildStamp.generatedAt);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setToday(siteToday());
+  }, []);
+  const reviewed = isFutureDated(lastReviewed, today) ? null : formatReviewDate(lastReviewed);
   const parts = [];
   if (reviewed) parts.push(`Last reviewed ${reviewed}`);
   if (sourceCount > 0) parts.push(`${sourceCount} source${sourceCount === 1 ? '' : 's'}`);

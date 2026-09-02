@@ -28,7 +28,7 @@ export default function About() {
             "Mike" with no entity behind the name and nothing to reconcile them
             against. ProfilePage is the type for a page that IS about one
             person, which this is: the copy below opens "It's just me. My name
-            is Mike". sameAs is what lets a crawler tie the byline, this page
+            is Michael Ryan". sameAs is what lets a crawler tie the byline, this page
             and the site's three public accounts into a single identity. */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -109,7 +109,7 @@ export default function About() {
         >
           <h2 className="font-display font-bold text-xl text-foreground mb-3">Who built this? 👋</h2>
           <p className="font-body text-sm text-muted-foreground leading-relaxed">
-            It's just me. My name is Mike, and I built and maintain this whole site myself. No editorial team, no
+            It's just me. My name is Michael Ryan, and I built and maintain this whole site myself. No editorial team, no
             corporate backing - just someone who started keeping reptiles, got a little obsessed with animal biology
             and behavior, and decided to turn that into something useful.
           </p>
