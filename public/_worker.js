@@ -564,11 +564,11 @@ async function buildArticlesFeed(request) {
 // ?subscribed=1. No personal data is involved: Beehiiv does not pass the email
 // through the redirect, and the alert says only that someone signed up.
 //
-// NTFY_SUBSCRIBER_TOPIC is a Cloudflare Pages environment variable, not a
+// NTFY_SUBSCRIBER_NOTIF is a Cloudflare Pages environment variable, not a
 // repo value, so the topic name stays private. With it unset the route still
 // redirects and simply sends nothing.
 async function notifySubscriber(env) {
-  const topic = env?.NTFY_SUBSCRIBER_TOPIC;
+  const topic = env?.NTFY_SUBSCRIBER_NOTIF;
   if (!topic) return;
   try {
     await fetch('https://ntfy.sh', {
