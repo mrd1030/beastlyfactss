@@ -480,9 +480,20 @@ export default function Blog() {
 function AuthorBio() {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
-      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
-        {AUTHOR.emoji}
-      </div>
+      {AUTHOR.image ? (
+        <img
+          src={AUTHOR.image}
+          alt={AUTHOR.imageAlt || AUTHOR.name}
+          width="48"
+          height="48"
+          loading="lazy"
+          className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+        />
+      ) : (
+        <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
+          {AUTHOR.emoji}
+        </div>
+      )}
       <div>
         <p className="font-body font-bold text-sm text-foreground mb-1">{`Written by ${AUTHOR.name}`}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">

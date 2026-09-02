@@ -14,7 +14,12 @@
 export const AUTHOR = {
   name: 'Michael Ryan',
   url: 'https://beastlyfacts.com/about/',
-  bio: 'Michael Ryan is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. He writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.',
+  bio: 'Michael Ryan keeps two rescued bearded dragons, Dex and Cera, and writes the care guides on Beastly Facts from his own research and mistakes. He is not a veterinarian.',
+  // Author-box and profile image. Dex for now, at Michael's request, until he
+  // picks a photo of himself; swap the path and alt together when he does.
+  // Derived from his own phone photo, cropped square and stripped of metadata.
+  image: '/assets/images/about/dex-portrait.jpg',
+  imageAlt: 'Dex, a bearded dragon, lying in long grass with his mouth open in the sun',
   // Short form for the profile page, where the surrounding copy already
   // introduces him.
   role: 'Founder and writer, Beastly Facts',
