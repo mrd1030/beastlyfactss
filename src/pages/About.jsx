@@ -108,15 +108,14 @@ export default function About() {
 
         <Section title="What this site is for" delay={0.15}>
           <p>
-            I want the person who just took in a bearded dragon, a gecko, or a rabbit they did not plan on to find
-            everything I wish I'd had in one place. Written plainly. Sources on the page.
+            I want the person who just took in a bearded dragon, a gecko, or a rabbit they did not plan on, or a new
+            owner in general, to find everything I wish I'd had in one place. Written plainly. Sources on the page.
           </p>
           <p>
             The same standard applies to the rest of the site: <Link to="/guides/" className="text-secondary font-semibold hover:underline">care guides</Link>,
             species profiles, <Link to="/facts/" className="text-secondary font-semibold hover:underline">checked facts</Link>,
             <Link to="/exotic-pet-laws/" className="text-secondary font-semibold hover:underline"> legal pages</Link>, and
-            the <Link to="/chronicles/dex/" className="text-secondary font-semibold hover:underline">Chronicles</Link>. I add
-            things when the research is done, not on a calendar.
+            the <Link to="/chronicles/dex/" className="text-secondary font-semibold hover:underline">Chronicles</Link>.
           </p>
         </Section>
 
