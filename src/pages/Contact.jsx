@@ -42,10 +42,10 @@ export default function Contact() {
     <div className="min-h-screen">
       <Helmet>
         <title>Contact Beastly Facts | Get in Touch</title>
-        <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team - we'd love to hear from you!" />
+        <meta name="description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with Michael Ryan, the keeper who runs Beastly Facts." />
         <link rel="canonical" href="https://beastlyfacts.com/contact/" />
         <meta property="og:title" content="Contact Beastly Facts" />
-        <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
+        <meta property="og:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with Michael Ryan, the keeper who runs Beastly Facts." />
         <meta property="og:url" content="https://beastlyfacts.com/contact/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
@@ -54,7 +54,7 @@ export default function Contact() {
         <meta property="og:image:alt" content="Beastly Facts - get in touch" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Beastly Facts" />
-        <meta name="twitter:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with the Beastly Facts team." />
+        <meta name="twitter:description" content="Got a question, a cool animal fact to share, or just want to say hi? Get in touch with Michael Ryan, the keeper who runs Beastly Facts." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
@@ -65,7 +65,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-sm text-muted-foreground font-body">
-              Got a question, a cool fact to share, or just want to say hi? We'd love to hear from you!
+              Got a question, a cool fact to share, or spotted an error? I'd like to hear from you.
             </p>
           </motion.div>
         </div>
@@ -84,9 +84,9 @@ export default function Contact() {
             <Mail className="w-5 h-5 text-secondary" />
           </div>
           <div>
-            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Email Us</p>
+            <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">Email Me</p>
             <p className="text-sm text-muted-foreground font-body">hello@beastlyfacts.com</p>
-            <p className="text-xs text-muted-foreground font-body mt-0.5">We read every message 🐾</p>
+            <p className="text-xs text-muted-foreground font-body mt-0.5">I read every message 🐾</p>
           </div>
         </motion.a>
 

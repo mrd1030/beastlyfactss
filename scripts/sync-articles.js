@@ -52,7 +52,11 @@ const isUnpublished = (fm) => Boolean(fm.status && fm.status !== 'published');
 function countSources(body = '') {
   const block = body.match(/<Sources>([\s\S]*?)<\/Sources>/);
   if (!block) return 0;
-  return (block[1].match(/^\s*-\s+/gm) || []).length;
+  // Only list items that link somewhere count. A plain-text line such as
+  // "Veterinary resources on reptile nutrition" is not something a reader can
+  // open and check, and the on-page "N sources" line was counting those as if
+  // it were, on 107 articles that had nothing but such lines.
+  return (block[1].match(/^\s*-\s+.*https?:\/\//gm) || []).length;
 }
 
 function readDir(dir) {

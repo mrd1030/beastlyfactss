@@ -49,6 +49,7 @@ export default function CarePackagesFaq() {
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/care-packages/faq/" />
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
