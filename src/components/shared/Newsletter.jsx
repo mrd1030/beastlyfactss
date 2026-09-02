@@ -26,22 +26,15 @@ export default function Newsletter() {
                             <p className="text-xs font-body font-semibold text-secondary mb-3">
                                 Facts that roar. Guides that care.
                             </p>
-                            <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
-                                The weekly email. A Sunday roundup of verified animal facts and practical care tips. No spam, ever.
+                            {/* Deliberately no cadence promise. This used to say "the weekly
+                                email, a Sunday roundup" with four bullets of specifics while no
+                                issue had ever gone out. A subscriber who is promised weekly and
+                                hears nothing for a month forgets they signed up and flags the
+                                first real send as spam. Promise only what is true. */}
+                            <p className="text-sm text-muted-foreground font-body mb-5 leading-relaxed">
+                                An occasional email when I have published something worth your time. No schedule,
+                                no spam, unsubscribe in one click.
                             </p>
-                            <div className="flex flex-col gap-2 mb-5">
-                                {[
-                                    "🐾 Practical care tips for dogs, cats, reptiles, birds & more",
-                                    "🏠 Tank, cage, and terrarium setup ideas that work",
-                                    "🥗 Diet and habitat tips tailored to each species",
-                                    "🩺 Simple health checks for happier pets",
-                                ].map((item, i) => (
-                                    <div key={i} className="flex items-start gap-2 text-xs font-body text-muted-foreground">
-                                        <span className="text-base leading-none mt-0.5">{item.split(' ')[0]}</span>
-                                        <span>{item.split(' ').slice(1).join(' ')}</span>
-                                    </div>
-                                ))}
-                            </div>
                             <Link to="/blog/">
                                 <motion.button
                                     whileHover={{ x: 3 }}
@@ -58,7 +51,7 @@ export default function Newsletter() {
                                 Subscribe - it's free
                             </h3>
                             <p className="text-xs text-muted-foreground font-body mb-4">
-                                New articles straight to your inbox. No spam, ever. 🐾
+                                Occasional, not weekly. Unsubscribe in one click. 🐾
                             </p>
                             <BeehiivSubscribe />
                         </div>
