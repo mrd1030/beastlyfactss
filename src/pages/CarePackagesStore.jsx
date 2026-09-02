@@ -63,7 +63,7 @@ export default function CarePackagesStore() {
         >
           <div className="mb-4">
             <h2 className="font-display font-bold text-xl text-foreground">Care packages</h2>
-            <p className="text-sm text-muted-foreground font-body">{live.length} package{live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep.</p>
+            <p className="text-sm text-muted-foreground font-body">{`${live.length} package${live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep.`}</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {live.map(pkg => (

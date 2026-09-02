@@ -233,7 +233,7 @@ export default function FactFiles() {
                         : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                     }`}
                   >
-                    {name} <span className="opacity-60">{count}</span>
+                    {`${name} `}<span className="opacity-60">{count}</span>
                   </button>
                 </React.Fragment>
               ))}

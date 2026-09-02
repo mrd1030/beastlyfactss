@@ -250,25 +250,19 @@ export default function ExoticPetLaws() {
             </h1>
             <p className="text-muted-foreground font-body leading-relaxed max-w-3xl">
               {isIndex ? (
-                <>
-                  Pick an animal and the map shows where it is restricted. Every entry below was read from
-                  the statute or the regulation itself, never from a summary of one, and each carries the
-                  {`citation so you can check it. ${ANIMAL_IDS.length} animals across all ${stateCount} states and the District of Columbia, plus New York City, which has its own Health Code.`}
-                </>
+                // One string, not text beside an expression: the prerendered paragraph
+                // is a single text node and React's hydration text check (#425)
+                // fails on anything that renders as several. See main.jsx.
+                `Pick an animal and the map shows where it is restricted. Every entry below was read from the statute or the regulation itself, never from a summary of one, and each carries the citation so you can check it. ${ANIMAL_IDS.length} animals across all ${stateCount} states and the District of Columbia, plus New York City, which has its own Health Code.`
               ) : (
                 <>
                   {animal.scientific ? <em>{animal.scientific}</em> : null}
-                  {animal.scientific ? '. ' : ''}
-                  {nothingToReport ? (
-                    <>
-                      Nothing in any of the {Object.keys(statuses).length} jurisdictions we checked restricts
-                      this animal, which is why the map below is blank. That is the answer rather than a gap.
-                    </>
-                  ) : (
-                    <>
-                      {`Restricted in ${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked. Every entry quotes the rule it comes from.`}
-                    </>
-                  )}
+                  {/* Everything after the <em> is ONE string: the separator and the
+                      sentence used to be separate text nodes, which the prerendered
+                      HTML merges, failing hydration (#425) on every species page. */}
+                  {`${animal.scientific ? '. ' : ''}${nothingToReport
+                    ? `Nothing in any of the ${Object.keys(statuses).length} jurisdictions we checked restricts this animal, which is why the map below is blank. That is the answer rather than a gap.`
+                    : `Restricted in ${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked. Every entry quotes the rule it comes from.`}`}
                 </>
               )}
             </p>
@@ -287,30 +281,18 @@ export default function ExoticPetLaws() {
               animalName={inSentence(animal.name)}
             />
             <p className="mt-3 text-[11px] font-body text-muted-foreground">
-              Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are
-              drawn out of position so they can be clicked.
-              {cityEntries.length > 0 && (
-                <>
-                  {' '}
-                  The counts include{' '}
-                  {cityEntries.map(([code], i) => (
-                    <React.Fragment key={code}>
-                      {i > 0 ? ' and ' : ''}
-                      {jurisdictionName(code)}
-                    </React.Fragment>
-                  ))}
-                  , which {cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding
-                  state and so cannot be shaded on a state map. Listed in full below.
-                </>
-              )}
+              {/* Assembled as one string for the same hydration reason as the
+                  intro above: this caption was a static run followed by a fragment
+                  of further text nodes. */}
+              {`Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are drawn out of position so they can be clicked.${cityEntries.length > 0
+                ? ` The counts include ${cityEntries.map(([code]) => jurisdictionName(code)).join(' and ')}, which ${cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding state and so cannot be shaded on a state map. Listed in full below.`
+                : ''}${uncheckedStates > 0 ? ' ' : ''}`}
               {uncheckedStates > 0 && (
                 <>
-                  {' '}
                   <span className="text-foreground font-semibold">
                     {`${checkedStates} of ${researchedCount} states and DC have been read for this animal`}
                   </span>
-                  , so the {uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`}{' '}
-                  a gap in our research rather than a finding of no rule.
+                  {`, so the ${uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`} a gap in our research rather than a finding of no rule.`}
                 </>
               )}
             </p>

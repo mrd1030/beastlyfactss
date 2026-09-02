@@ -31,7 +31,7 @@ function TermCard({ term, showCategory, catEmoji, catLabel }) {
               to={r.to}
               className="text-[11px] font-body text-primary/80 hover:text-primary border border-primary/20 hover:border-primary/40 rounded-full px-2.5 py-0.5 transition-colors"
             >
-              {r.label} →
+              {`${r.label} →`}
             </Link>
           ))}
         </div>
