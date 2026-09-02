@@ -2,6 +2,7 @@ import React, { lazy } from 'react';
 import { MotionConfig } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
+import SubscribedToast from "@/components/shared/SubscribedToast";
 import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
@@ -189,6 +190,7 @@ function App() {
           <ScrollToTop />
         </Router>
         <Toaster />
+        <SubscribedToast />
       </MotionConfig>
     </FavoritesProvider>
   );
