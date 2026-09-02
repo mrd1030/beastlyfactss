@@ -69,12 +69,13 @@ const AuthenticatedApp = () => {
   return (
     <>
       {/* No <AnalyticsTracker /> here on purpose. It called
-          window.gtag('config', ...) on every route change, which never ran
-          (this site loads only the GTM container, so window.gtag is undefined)
-          and would have double-counted every pageview if it ever did: GA4's
-          Enhanced Measurement already reports SPA route changes through its own
-          history listener inside gtag.js. Pageviews are GA4's job, not the
-          app's. See src/lib/analytics.js for how custom events reach GTM. */}
+          window.gtag('config', ...) on every route change, which would
+          double-count every pageview: GA4's Enhanced Measurement already
+          reports SPA route changes through its own history listener inside
+          gtag.js. Pageviews are GA4's job, not the app's. (It also never ran
+          in the Tag Manager era, when window.gtag did not exist; index.html
+          now defines gtag directly.) See src/lib/analytics.js for how custom
+          events reach GA4. */}
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
