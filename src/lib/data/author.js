@@ -14,7 +14,7 @@
 export const AUTHOR = {
   name: 'Michael Ryan',
   url: 'https://beastlyfacts.com/about/',
-  bio: 'Michael Ryan keeps two rescued bearded dragons, Dex and Cera, and writes the care guides on Beastly Facts from his own research and mistakes. He is not a veterinarian.',
+  bio: 'Mike keeps two rescued bearded dragons, Dex and Cera, and writes the care guides on BeastlyFacts from his own research and mistakes. He is not a veterinarian.',
   // Author-box and profile image. Dex for now, at Michael's request, until he
   // picks a photo of himself; swap the path and alt together when he does.
   // Derived from his own phone photo, cropped square and stripped of metadata.

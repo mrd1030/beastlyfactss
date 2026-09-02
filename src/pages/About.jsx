@@ -70,7 +70,7 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-3">
-              About Beastly Facts
+              About BeastlyFacts
             </h1>
             <p className="font-body text-base text-muted-foreground max-w-2xl">
               One keeper, two rescued bearded dragons, and the research I wish I had on day one.
@@ -94,67 +94,69 @@ export default function About() {
             className="w-full h-auto rounded-2xl border border-border"
           />
           <figcaption className="mt-2 text-xs font-body text-muted-foreground">
-            Dex, who I call Baby. He came to me in 2022 at four years old and is the reason this site exists.
+            Dex. He came to me in February 2022 at four years old, and he is the reason this site exists.
           </figcaption>
         </motion.figure>
 
         <Section title="Who runs this" delay={0.1}>
           <p>
-            It's just me. My name is Michael Ryan, and I built and maintain this whole site myself. I am not a
-            veterinarian. I am a keeper who spent years hunting for straight answers and decided to write down
-            the ones I found.
+            It's just me. My name is Michael Ryan. I go by Mike. I built and maintain this whole site myself. I am
+            not a veterinarian. I am a keeper who spent years hunting for straight answers and decided to write
+            down the ones I found.
           </p>
         </Section>
 
-        <Section title="The animals that got me here" delay={0.15}>
+        <Section title="What this site is for" delay={0.15}>
           <p>
-            I grew up with three dogs. Lady was a keeshond who was around from the day I was born until I was
-            about ten. She hid behind the couch in every thunderstorm and I'd lie back there with her. She once
-            ate an entire plastic bag and we had to wait it out, and she fought stomach cancer at the end. Autumn
-            and Spencer were golden retrievers, half siblings, and we brought them home together in the mid
-            1990s. Autumn would drive her head into you until you gave up and petted her. Spencer greeted
-            everyone with a shoe he never chewed, just carried like it was sacred, and he'd back up until he was
-            pressed against your legs waiting to be rubbed. When Autumn passed, Spencer fell apart, stopped
-            eating even for cheese, and followed her not long after. I miss all three of them.
+            I want the person who just took in a bearded dragon, a gecko, or a rabbit they did not plan on to find
+            everything I wish I'd had in one place. Written plainly. Sources on the page.
           </p>
           <p>
-            In February 2022 a friend of my sister's was moving and couldn't take her bearded dragon. I said I'd
-            take him. He was four. I call him Baby, the site calls him Dex, and I had no idea what I was getting
-            into. Bulb wattage, UVB versus UVA, coil versus T5, which greens, which bugs, how often. None of it
-            was hard information, but it was scattered across forums, old books, and pages that contradicted
-            each other.
+            The same standard applies to the rest of the site: <Link to="/guides/" className="text-secondary font-semibold hover:underline">care guides</Link>,
+            species profiles, <Link to="/facts/" className="text-secondary font-semibold hover:underline">checked facts</Link>,
+            <Link to="/exotic-pet-laws/" className="text-secondary font-semibold hover:underline"> legal pages</Link>, and
+            the <Link to="/chronicles/dex/" className="text-secondary font-semibold hover:underline">Chronicles</Link>. I add
+            things when the research is done, not on a calendar.
+          </p>
+        </Section>
+
+        <Section title="The animals that got me here" delay={0.2}>
+          <p>
+            I grew up with dogs. Ladie was a keeshond who was around from the day I was born until I was about ten.
+            She hid behind the couch in every thunderstorm, and I used to lie back there with her. Autumn and Spencer
+            were golden retrievers, half siblings, and we brought them home together in the mid 1990s. Autumn would
+            drive her head into you until you gave up and petted her. Spencer greeted everyone with a shoe he never
+            chewed, just carried, and he'd back up until he was pressed against your legs. When Autumn passed,
+            Spencer fell apart and followed her not long after. I miss all three of them.
           </p>
           <p>
-            In 2024 my aunt's bearded dragon needed a new home too. I named her Cera, after the triceratops,
-            gave her a bigger enclosure, and she has turned into the most curious lizard I have ever met.
+            In February 2022 a friend of my sister's was moving and could not take her bearded dragon. I said I
+            would take him. He was four. His name is Dex. I call him Baby at home. I had no idea what I was getting
+            into. Bulb wattage, UVB versus UVA, coil versus T5, which greens, which bugs, how often. None of it was
+            hard information. It was scattered across forums, old books, and pages that contradicted each other.
+          </p>
+          <p>
+            In 2024 my aunt's bearded dragon needed a home too. I named her Cera, after the triceratops. She has the
+            bigger enclosure, and she is the most curious lizard I have ever met.
+          </p>
+          <p>
+            I also watch my sister's rabbit, Otis, sometimes for weeks. That is why he has
+            a <Link to="/chronicles/otis/" className="text-secondary font-semibold hover:underline">Chronicles page</Link> of his own.
           </p>
           <p>
             A little over a year ago Dex's eyes started swelling and he stopped acting like himself. The vet
-            diagnosed heart disease. He is on four medications now, with arthritis on top of it, and he is not
-            doing great. He got better for a while and has since gotten worse. He's still with me for as long as
-            he is. If I didn't know what I know now, I would not have recognized the early signs, and that is
-            the reason this site exists.
-          </p>
-        </Section>
-
-        <Section title="What this site is for" delay={0.2}>
-          <p>
-            I want the person who just took in a bearded dragon, or a gecko, or a rabbit they didn't plan on, to
-            find everything I wish I'd had in one place, written plainly, with the sources right there on the
-            page. That means <Link to="/guides/" className="text-secondary font-semibold hover:underline">species care guides</Link>,
-            deep dives on cost, setup, feeding, handling and health, <Link to="/exotic-pet-laws/" className="text-secondary font-semibold hover:underline">state-by-state legality</Link>,
-            and a library of <Link to="/facts/" className="text-secondary font-semibold hover:underline">checked animal facts</Link> for
-            the days you just want something wild to read.
+            diagnosed heart disease. He is on medication now, with arthritis on top of it. He is still here. If I
+            had not known what I know now, I would not have caught the early signs. That is the reason this site
+            exists.
           </p>
         </Section>
 
         <Section title="How the content gets made" delay={0.25}>
           <p>
-            Every guide is researched against veterinary references, published papers, and agency sources, and
-            those sources are listed at the bottom of each article. I use AI tools to help draft and organize,
-            and nothing goes up until I have checked it against those sources myself. I go back over published
-            articles and correct them as I learn more. If you spot an error, email me and I will fix it and
-            note the change.
+            Every guide is checked against veterinary references, published papers, and agency sources. Those
+            sources are listed at the bottom of each article. I use AI tools to help draft and organize. Nothing
+            goes up until I have checked it against those sources myself. I go back over published articles and
+            correct them as I learn more. If you spot an error, email me. I will fix it and note the change.
           </p>
           <p>
             Nothing here replaces a vet. If your animal is sick, the right move is an exotic or reptile vet, and
@@ -164,17 +166,17 @@ export default function About() {
 
         <Section title="How the site is funded" delay={0.3}>
           <p>
-            Some articles contain affiliate links, marked on the page, and I earn a small commission if you buy
-            through them at no extra cost to you. There are <Link to="/care-packages/" className="text-secondary font-semibold hover:underline">printable care packages</Link> for
-            sale, a donation button, and possibly ads in the future. None of that changes what I recommend.
+            Some articles contain affiliate links, marked on the page. I earn a small commission if you buy through
+            them, at no extra cost to you. There are <Link to="/care-packages/" className="text-secondary font-semibold hover:underline">printable care packages</Link> for
+            sale, and a donation button. None of that changes what I recommend.
           </p>
         </Section>
 
         <Section title="Get in touch" delay={0.35}>
           <p>
             <a href="mailto:hello@beastlyfacts.com" className="text-secondary font-semibold hover:underline">hello@beastlyfacts.com</a>.
-            I read everything, and I answer, though it may take a couple of days because there are two dragons
-            who need me first. The <Link to="/contact/" className="text-secondary font-semibold hover:underline">contact page</Link> has
+            I read everything, and I answer. It may take a couple of days. There are two dragons who need me first.
+            The <Link to="/contact/" className="text-secondary font-semibold hover:underline">contact page</Link> has
             the social accounts too, and the <Link to="/blog/welcome-to-beastlyfacts/" className="text-secondary font-semibold hover:underline">welcome post</Link> is
             the short version of how this started.
           </p>
