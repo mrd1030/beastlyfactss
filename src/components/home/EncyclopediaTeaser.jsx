@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { encyclopediaCategories, encyclopediaAnimals } from '@/lib/data/encyclopedia';
+import { encyclopediaCategories } from '@/lib/data/encyclopedia/meta';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
+// Per-category counts only need each animal's category, which the generated
+// index carries. The full data barrel is 120KB and was loading on the homepage
+// for the sake of eleven numbers.
+import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
+const encyclopediaAnimals = encyclopediaIndex.animals;
 
 const PREVIEW_COUNT = 8;
 

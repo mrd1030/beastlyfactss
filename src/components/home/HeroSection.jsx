@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import { facts } from '@/lib/data/facts';
+import { getHomeChild, preloadHomeChildren } from '@/lib/homePreload';
 import { truncateDescription } from '@/lib/utils/truncate';
 
 // Imported rather than referenced as /assets/hero-*.ext from public/, so Vite
@@ -57,11 +57,23 @@ export default function HeroSection({ onOpenFact }) {
   // Deferring the real day-based pick to a post-mount effect (skipped during
   // prerendering, same as this app's other date/random-driven state) matches
   // prerendered HTML exactly on first paint, then upgrades right after.
-  const [dailyFact, setDailyFact] = useState(() => facts[0]);
+  //
+  // `facts` comes from the homePreload cache rather than a static import, so
+  // the 118KB array stays out of the entry chunk that every page loads (see
+  // homePreload.js). On a fresh page load the cache is populated before
+  // hydrateRoot runs, so the first render is facts[0] exactly as before. The
+  // only time it can be empty is client-side navigation to "/" from a page
+  // that never loaded facts: no hydration involved, so the card simply mounts
+  // a tick later, the same way every HomeChild section already does.
+  const [, setTick] = useState(0);
+  const facts = getHomeChild('facts');
+  const [dayIndex, setDayIndex] = useState(0);
   useEffect(() => {
+    if (!facts) { preloadHomeChildren().then(() => setTick((n) => n + 1)); return; }
     if (window.__IS_PRERENDER__) return;
-    setDailyFact(facts[new Date().getDate() % facts.length]);
-  }, []);
+    setDayIndex(new Date().getDate() % facts.length);
+  }, [facts]);
+  const dailyFact = facts ? facts[dayIndex] : null;
   const [learned, setLearned] = useState(false);
 
   const handleLearned = async () => {
@@ -200,7 +212,7 @@ export default function HeroSection({ onOpenFact }) {
               can feed CLS. It is also above the fold, so a 0.3s delay meant
               prerendered content sat invisible waiting for framer to hydrate.
               The markup is already in the HTML; it should simply be visible. */}
-          <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
+          {dailyFact && <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
@@ -233,7 +245,7 @@ export default function HeroSection({ onOpenFact }) {
                 🎉 +1 Brain Cell!
               </motion.span>
             )}
-          </div>
+          </div>}
         </div>
       </div>
     </section>

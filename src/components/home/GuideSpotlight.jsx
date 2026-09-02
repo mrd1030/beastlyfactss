@@ -10,7 +10,7 @@ import { ArrowRight, ChevronRight } from 'lucide-react';
 // image for bandwidth on mobile. See scripts/generate-guides-index.js; the
 // slim index is 23 KB and carries the same records in the same order.
 import guidesIndex from '@/lib/generated/guides-index.json';
-import { difficultyColor } from '@/lib/data/encyclopedia';
+import { difficultyColor } from '@/lib/data/encyclopedia/meta';
 import { hashString } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
 

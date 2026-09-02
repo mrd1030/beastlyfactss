@@ -30,6 +30,12 @@ const modules = {
   DexTeaser: () => import('@/components/home/DexTeaser'),
   QuizzesTeaser: () => import('@/components/home/QuizzesTeaser'),
   Newsletter: () => import('@/components/shared/Newsletter'),
+  // Data, not a component. HeroSection used to import facts.js statically for
+  // its daily fact, which put the whole 118KB array in the entry chunk of
+  // every page on the site. Routed through this cache it is fetched alongside
+  // the sections (still before hydrateRoot, so the hydration-critical first
+  // render sees facts[0] exactly as before) and stays out of the entry.
+  facts: () => import('@/lib/data/facts').then(m => ({ default: m.facts })),
 };
 
 const cache = {};

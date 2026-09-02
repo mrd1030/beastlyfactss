@@ -1,5 +1,5 @@
 import React, { lazy } from 'react';
-import { MotionConfig } from '@/lib/motion-safe';
+import { MotionConfig, LazyMotion, domAnimation } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
 import SubscribedToast from "@/components/shared/SubscribedToast";
@@ -175,6 +175,17 @@ function App() {
     <FavoritesProvider>
       {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
       <MotionConfig reducedMotion="user">
+        {/* motion-safe.js builds every motion.X on framer's lightweight `m`
+            component, which renders nothing animated until a LazyMotion
+            provides features. domAnimation is loaded synchronously here so
+            animate/exit/whileHover/whileTap/whileInView behave exactly as the
+            full `motion` import did, minus the drag and layout-projection
+            engine (~41KB raw) that nothing on the initial render needs.
+            FactModal, the one drag user, loads domMax on demand when it
+            opens (see motionFeaturesMax.js). Feature loading is post-mount
+            only and never changes markup, so the prerender/hydration
+            contract in motion-safe.js is untouched. */}
+        <LazyMotion features={domAnimation}>
         <Router>
           {/* Inject SEO Data */}
           <Helmet>
@@ -189,6 +200,7 @@ function App() {
           <AuthenticatedApp />
           <ScrollToTop />
         </Router>
+        </LazyMotion>
         <Toaster />
         <SubscribedToast />
       </MotionConfig>
