@@ -94,7 +94,7 @@ export default function About() {
             className="w-full h-auto rounded-2xl border border-border"
           />
           <figcaption className="mt-2 text-xs font-body text-muted-foreground">
-            Dex. He came to me in February 2022 at four years old, and he is the reason this site exists.
+            Dex. He came to me in February 2022 at four years old.
           </figcaption>
         </motion.figure>
 
