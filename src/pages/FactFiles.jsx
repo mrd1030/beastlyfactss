@@ -246,9 +246,7 @@ export default function FactFiles() {
             <div className="rounded-xl border border-border bg-card p-4">
               <h2 className="mb-1 font-display text-sm font-bold text-foreground">What these are</h2>
               <p className="font-body text-xs leading-relaxed text-muted-foreground">
-                {ALL_FILES.length} wild animal features, checked against {totalSources} primary
-                sources between them. Each lists the claim it corrects and what backs the
-                correction.
+                {`${ALL_FILES.length} wild animal features, checked against ${totalSources} primary sources between them. Each lists the claim it corrects and what backs the correction.`}
               </p>
             </div>
 

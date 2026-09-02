@@ -337,8 +337,7 @@ export default function ExoticPetLaws() {
                       />
                       <span>
                         <span className="font-semibold text-foreground">
-                          {b.label}
-                          {n ? ` (${n})` : ''}
+                          {`${b.label}${n ? ` (${n})` : ''}`}
                         </span>
                         <span className="block text-muted-foreground leading-snug">{b.blurb}</span>
                       </span>
