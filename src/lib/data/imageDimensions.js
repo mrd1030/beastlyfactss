@@ -613,6 +613,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1620,
     "height": 1080
   },
+  "/assets/images/jacksons-chameleon-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/jumping-spider-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -754,6 +758,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/tokay-gecko-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/uromastyx-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
