@@ -132,3 +132,90 @@ owner-tool page. The water page and the two molting pages are the product. A tar
 package without the death-curl-versus-molting-on-its-back distinction is actively
 dangerous, and that distinction is currently spread across pages 13, 24 and the emergency
 card by design, not by accident.
+
+## The attempt to get under 40 pages, September 2026
+
+Asked to bring Tarantula under 40 pages if it could be done without cutting
+anything real. It cannot. This is the measured evidence, so nobody has to
+redo the experiment.
+
+### What was actually done, and kept
+
+A layout-only pass, no words changed and no type sizes changed:
+
+1. The `.snug` rule block in this file's head was only five rules deep. The
+   other v3 guides carry nine. The four missing rules (`p` and `li` at
+   `line-height:1.45`, `li margin-bottom:2pt`, `.card padding:8pt 10pt`,
+   `table.dense td line-height:1.32`) were added.
+2. `.snug` was then applied to every content page rather than the eleven it
+   had been on.
+
+Result: 43 pages, minimum headroom up from **19px to 31px**. Every page clears
+the 15px print floor with room to spare. This is worth having on its own.
+
+### Why 39 pages is not reachable
+
+Page area is 946px of usable height. Merging page B into page A needs
+`bodyA + bodyB` to fit in `946 - one page head - 15px floor`, which is about
+859px for a page with a section-sub and 880px for one without.
+
+The four cheapest adjacent same-topic merges, measured after the layout pass:
+
+| Merge | Combined body | Capacity | Short by |
+| --- | --- | --- | --- |
+| p4 Quick profile + p5 Cost overview | 937px | 859px | 78px |
+| p18 + p19 Rehousing, prepare and method | 945px | 859px | 86px |
+| p35 Power outages + p36 Travel | 958px | 859px | 99px |
+| p39 Acquisition and molt log + p40 Equipment log | 1035px | 880px | 155px |
+
+Four merges is what 43 to 39 requires. All four were then built for real and
+measured, first with the standard `.snug` spacing and then again under a
+deliberately over-tight experimental pass: leading down to 1.36, table cell
+padding down to 1.9pt, callouts at 7pt, list margins at 1.5pt. That pass is
+tighter than anything else in the series and would have made those four pages
+visibly cramped against their neighbors.
+
+Measured overflow on the four merged pages under that over-tight pass:
+**-90px, -89px, -91px, -87px.** Add the 15px print floor and each merged page
+is still about **105px of real content over**, which is five or six lines of
+body copy or one callout, per page. Roughly **420px of content in total**
+would have to come out.
+
+### What would have to be given up
+
+Only two of the four merges can be paid for with anything that is not
+husbandry, a health red flag, or a target figure. Measured block heights:
+
+| Block | Height | Pays for | Verdict |
+| --- | --- | --- | --- |
+| p5 "Fun facts worth knowing", heading and three items | 188px | p4+p5 (needs 93px) | Payable. Not husbandry. It is the only genuinely optional prose block in the guide |
+| p5 "The real number to sit with" callout | 129px | p4+p5 (needs 93px) | Payable, but it is the one place the 15 to 20 year commitment is argued rather than stated |
+| p36 "Shipping" callout | 129px | p35+p36 (needs 114px) | Payable on paper. In practice most tarantulas are bought online, so the live-arrival policy advice is real buyer safety |
+| p40 Twelve-month planner, heading and table | 121px | p39+p40 (needs 170px) | Not enough on its own, and the planner is a working tool |
+| p18+p19 Rehousing | nothing optional on either page | needs 101px | **Not payable.** Every block is rehousing procedure. Cutting 101px means dropping a step or the whole when-to-rehouse trigger list |
+| p39+p40 logs | nothing optional | needs 170px | **Not payable** without deleting about four log rows, which shortens the useful life of a log meant to span twenty years |
+
+So the honest floor is:
+
+- **43 pages** with nothing given up. This is what shipped.
+- **41 pages** if the fun facts block and the shipping callout are parked here,
+  and those four pages are allowed to run visibly tighter than the rest.
+- **39 pages** only by cutting rehousing procedure and log capacity.
+
+39 is a hole in the book. Per the template's own line, page count is a target
+and not a budget, and the animal decides the length. Tarantula is a 43-page
+animal.
+
+### If the decision later goes the other way
+
+The two payable parks, in the order they should be taken:
+
+1. **p5 fun facts**, the whole `<h2>` and `<ul>`, which enables merging Quick
+   profile and Cost overview into one page. The three facts are the bolus and
+   external digestion, females never stopping molting, and free-flowing
+   hemolymph. All three are real and none is husbandry.
+2. **p36 shipping callout**, which enables merging Power outages and Travel.
+   Take this one only if buyers are told elsewhere to ask about live-arrival
+   policy, because that is the part with consequences.
+
+Do not take a third. p18+p19 and p39+p40 both fail the "nothing real" test.
