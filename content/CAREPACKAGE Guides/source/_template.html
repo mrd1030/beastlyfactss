@@ -178,12 +178,14 @@ page done; keep at least 15 px free above every footer.
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version {{VERSION}} &middot; {{MONTH_YEAR}}</span>
     </div>
   </div>
-  <div style="width:3.9in;position:relative;flex-shrink:0;overflow:hidden;">
-    <img src="{{COVER_IMAGE_DATA_URI}}" style="width:100%;height:100%;object-fit:cover;object-position:42% 50%;display:block;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%);" />
-    <!-- the mask fades the photo's own left edge to transparent so the diagonal
-         background gradient above shows through underneath - do NOT go back to
-         a flat-color overlay div, it only matches the gradient at one height
-         and leaves a visible seam (this was a real bug, fixed once already).
+  <div style="width:3.9in;position:relative;flex-shrink:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%);">
+    <img src="{{COVER_IMAGE_DATA_URI}}" style="width:100%;height:100%;object-fit:cover;object-position:42% 50%;display:block;" />
+    <!-- the mask on the COLUMN (not the img) fades the photo and the vertical
+         darkening overlay together, so the diagonal background shows through and
+         the overlay has no hard left edge. Masking only the img left the overlay's
+         edge printing as a vertical line (real bug, v3.0 first render). Do NOT go
+         back to a flat-color overlay div either, it only matches the gradient at
+         one height and leaves a seam (also a real bug, fixed once already).
          Pick a photo where the animal faces LEFT, toward the headline. Tune
          object-position so the head sits in the upper third. -->
     <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(43,36,32,0.25) 0%,rgba(43,36,32,0) 22%,rgba(43,36,32,0) 66%,rgba(30,24,18,0.5) 100%);"></div>

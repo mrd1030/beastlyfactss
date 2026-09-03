@@ -75,8 +75,30 @@ source and check it against the veterinary references on its Sources page:
 - Mouth rot, tail rot, eye problems, burns, prolapse
 - Brumation routine (the site has a paragraph, not a routine)
 
-Site articles to create for these are listed in the site's own todo; once one exists,
-re-source that PDF page from it.
+Site articles to create, combined so each is long enough to stand on its own (the four
+standard split guides stay as they are; these are additions, not replacements):
+
+1. **Bearded dragon safe foods list** (`bearded-dragon-safe-foods-guide.mdx`): every
+   feeder insect, green, vegetable, fruit, and "human food" in a staple / occasional /
+   rare / never tier with the reason, the prey-size rule, gut-loading, and a
+   daily-salad recipe. Naturally 2,500+ words. Highest search value of the set.
+2. **Bearded dragon growth, weight, and at-home health checks**
+   (`bearded-dragon-growth-and-health-checks-guide.mdx`): sexing, growth chart, body
+   condition, weekly weigh-in routine, reading stool and urates, dehydration signs.
+3. **Female bearded dragons: eggs, lay boxes, and egg binding**
+   (`bearded-dragon-eggs-and-egg-binding-guide.mdx`): infertile clutches, gravid
+   signs, lay box build, calcium during a cycle, dystocia signs and treatment.
+4. **Bearded dragon brumation guide** (`bearded-dragon-brumation-guide.mdx`): triggers,
+   the pre-brumation vet check, the weekly routine, waking up, when to worry. Also
+   settles the inconsistent durations across the current pages.
+5. **Reptile emergency plan: power outages, travel, and pet sitters**
+   (`reptile-power-outage-and-travel-guide.mdx`): one site-wide article wired into
+   every reptile guide's related articles. Species-specific temperature floors in a
+   table.
+6. **Expand the existing health-issues guide**, not a new article: parasites and the
+   fecal test, mouth rot, tail rot, eye problems, burns, prolapse.
+
+Once one exists, re-source that PDF page from it.
 
 ## Page-by-page sourcing (reptile skeleton, 34 pages)
 
@@ -141,15 +163,18 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render and check for overflow. `.page` is `overflow:hidden`, so text that runs long
+8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the major version on
+   the cover. Never overwrite the previous version's PDF; the old file stays as the
+   record of what buyers of that version received.
+9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
    ```bash
    # Windows (Edge)
-   "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="../rebuilt/{Animal}_Care_Package.pdf" --print-to-pdf-no-header "file:///C:/Users/Mike D/Desktop/CAREPACKAGE Guides/source/{slug}.html"
+   "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="../rebuilt/{Animal}_Care_Package_v{N}.pdf" --print-to-pdf-no-header "file:///C:/Users/Mike D/Desktop/CAREPACKAGE Guides/source/{slug}.html"
 
    # Linux / a Claude cloud session (Playwright's Chromium)
-   /opt/pw-browsers/chromium-*/chrome-linux/chrome --headless --disable-gpu --no-sandbox --no-pdf-header-footer --virtual-time-budget=10000 --print-to-pdf=out.pdf "file:///abs/path/{slug}.html"
+   /opt/pw-browsers/chromium-*/chrome-linux/chrome --headless --disable-gpu --no-sandbox --no-pdf-header-footer --virtual-time-budget=10000 --print-to-pdf="{Animal}_Care_Package_v{N}.pdf" "file:///abs/path/{slug}.html"
    ```
 
    Overflow check: append this to a copy of the file just before `</body>`, run the
@@ -163,7 +188,7 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    A cloud session has no internet access from Chromium, so Google Fonts won't load
    there. Download the woff2 files with curl and swap the `@import` for local
    `@font-face` rules in the render copy only; leave the `@import` in the source file.
-9. Icons must be small inline SVGs matching the existing minimalist style, never a raw
+10. Icons must be small inline SVGs matching the existing minimalist style, never a raw
    emoji character or HTML entity. Headless Chromium print has rendered those as
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
