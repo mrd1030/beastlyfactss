@@ -39,6 +39,12 @@ the series reads as one product line.
 - Cover art is pulled from `public/assets/guides/<slug>.jpg` by relative path.
   Set `object-position` inline on the `<img>` when the default center crop
   misses the animal's head.
+- Cover colors are tokenized on `.cover` so a package can dress its cover for
+  the animal's habitat without touching the interior. Default is the warm earth
+  palette from v2.0; add `class="page cover blackwater"` for the deep teal
+  variant, which suits fish and amphibians where the earth palette reads like
+  the wrong habitat. The interior stays house rust either way, so the series
+  still reads as one product line.
 
 ## Page structure
 

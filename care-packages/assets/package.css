@@ -23,8 +23,6 @@
   --good-bg: #e7eee1;
 
   --thead-bg: #f4e3d3;
-  --cover-bg: #2c2520;
-  --cover-gold: #c77c3f;
 }
 
 * { box-sizing: border-box; }
@@ -261,18 +259,44 @@ ul.check.cols {
 
 /* ---------- cover ---------- */
 
+/* Cover colors are tokenized so a package can dress its cover for the animal
+   without touching the interior, which stays house rust across the series.
+   Default is the warm earth palette the Bearded Dragon v2.0 cover uses. */
 .cover {
+  --cv-top: #382d25;
+  --cv-mid: #2c2520;
+  --cv-bot: #241e1a;
+  --cv-scrim: 44, 37, 32;
+  --cv-accent: #c77c3f;
+  --cv-sub: #cfc6bd;
+  --cv-pill-line: rgba(233, 220, 208, 0.35);
+  --cv-pill-text: #e4d9cf;
+
   padding: 0;
   display: flex;
-  background: var(--cover-bg);
+  background: var(--cv-mid);
   color: #fff;
 }
+
+/* Blackwater: tannin-stained tropical water, for the fish and amphibian
+   packages where the earth palette reads like the wrong habitat. */
+.cover.blackwater {
+  --cv-top: #1a3d48;
+  --cv-mid: #123039;
+  --cv-bot: #0a1d23;
+  --cv-scrim: 10, 29, 35;
+  --cv-accent: #4fbccf;
+  --cv-sub: #b6cdd4;
+  --cv-pill-line: rgba(180, 214, 222, 0.34);
+  --cv-pill-text: #cfe4ea;
+}
+
 .cover .left {
   width: 60%;
   padding: 0.62in 0.5in 0.62in 0.65in;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(160deg, #382d25 0%, #2c2520 55%, #241e1a 100%);
+  background: linear-gradient(160deg, var(--cv-top) 0%, var(--cv-mid) 55%, var(--cv-bot) 100%);
 }
 .cover .right {
   width: 40%;
@@ -292,7 +316,7 @@ ul.check.cols {
   position: absolute;
   inset: 0;
   width: 34%;
-  background: linear-gradient(90deg, rgba(44, 37, 32, 0.92), rgba(44, 37, 32, 0));
+  background: linear-gradient(90deg, rgba(var(--cv-scrim), 0.92), rgba(var(--cv-scrim), 0));
 }
 
 .cover .mark {
@@ -300,14 +324,14 @@ ul.check.cols {
   font-weight: bold;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--cover-gold);
+  color: var(--cv-accent);
 }
 .cover .mark span {
   display: inline-block;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--cover-gold);
+  background: var(--cv-accent);
   margin-right: 9px;
   vertical-align: -1px;
 }
@@ -318,7 +342,7 @@ ul.check.cols {
   font-weight: bold;
   letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: var(--cover-gold);
+  color: var(--cv-accent);
   margin: 0 0 10px;
 }
 .cover h1 {
@@ -332,7 +356,7 @@ ul.check.cols {
 .cover .sub {
   font-size: 12.5px;
   line-height: 1.55;
-  color: #cfc6bd;
+  color: var(--cv-sub);
   max-width: 3.4in;
   margin: 0;
 }
@@ -346,11 +370,11 @@ ul.check.cols {
   max-width: 3.02in;
 }
 .cover .pill {
-  border: 1px solid rgba(233, 220, 208, 0.35);
+  border: 1px solid var(--cv-pill-line);
   border-radius: 999px;
   padding: 5px 13px;
   font-size: 10.5px;
-  color: #e4d9cf;
+  color: var(--cv-pill-text);
   white-space: nowrap;
 }
 
