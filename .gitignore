@@ -92,3 +92,6 @@ research/
 # sold on Gumroad. Kept here for convenience, not part of this app - never
 # read by the build, and never tracked (large binaries, separate product).
 
+
+# care package render cache (fonts re-downloaded on demand by source/_render.mjs)
+content/CAREPACKAGE Guides/source/.fonts/

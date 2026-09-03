@@ -64,7 +64,9 @@ the MDX wins, but flag the JS copy to fix too so the two don't stay out of sync.
 ### Content the site does NOT have yet (as of Sep 2026)
 The v3 bearded dragon package needed pages the site had no article for. Until those
 articles exist, the PDF text is the only copy, so treat the bearded dragon file as the
-source and check it against the veterinary references on its Sources page:
+source and check it against the veterinary references on its Sources page. Every package
+since logs its own gaps in **Site content gaps by package** near the end of this file;
+add yours there before you call a package done.
 
 - Full safe-foods charts (every staple / occasional / rare / never food with the reason)
 - Power outage, travel, and transport plan
@@ -163,9 +165,14 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the major version on
-   the cover. Never overwrite the previous version's PDF; the old file stays as the
-   record of what buyers of that version received.
+8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
+   cover. Never overwrite the previous version's PDF; the old file stays as the record
+   of what buyers of that version received. Once the new build replaces it, move the old
+   file into `rebuilt/past versions/` and add a row to the README there saying what
+   changed, so `rebuilt/` only ever holds the current edition of each animal. Careful
+   with what "current" means: the bearded dragon's live edition is the 22-page
+   unversioned file, not the newer v3 build, because v3 has not been listed yet. Check
+   `carePackages.js` before moving anything.
 9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
@@ -193,6 +200,14 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
+11. **Log the gaps before you call it done.** Every package ends up with pages the site
+   has no article for, and that list is the most valuable byproduct of building one: it
+   is a ready-made content plan, already filtered to things a paying customer wanted
+   enough to read. Add a block for your animal under **Site content gaps by package**
+   below. Do it while the sourcing is fresh, not later. Two things to record and not
+   skip: what you found already covered (so nobody rewrites it), and any number in the
+   PDF that has no site source at all, because that is the copy no one can fact-check
+   against the site later.
 
 ## Pre-publish accuracy checks (learned the hard way)
 
@@ -208,3 +223,224 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 - Every page ends with at least 15 px of free space by the overflow check.
 - No internal notes in the printed footer ("no external links appear in this document"
   was a real one that shipped in v2.0).
+
+## Site content gaps by package
+
+The running list of site articles the packages need. Build workflow step 11 says to add
+a block here when you finish a package; this is what turns "the PDF says something the
+site doesn't" into a content plan.
+
+How to use it: pick off the **cross-species** rows first, because one article closes the
+same gap in every future package. When you write one, re-source that PDF page from the
+new article, cross the row off here, and note the slug so the next person knows it exists.
+
+Anything still open is copy that lives only in a PDF, so it has no site article to be
+fact-checked against later. That is the actual risk this table tracks.
+
+Remember `CLAUDE.md` when you write one: 1 to 2 in-body internal links, a
+`RELATED_ARTICLES` entry in `src/lib/data/relatedArticles.js` unless the slug ends in a
+standard suffix that auto-detects, and dates spread across days rather than dumped on
+one.
+
+### Bearded Dragon v3.0 (Aug 2026)
+
+Listed in full under **Content the site does NOT have yet** above. Six articles, of which
+these have since shipped: `bearded-dragon-growth-weight-checks-guide.mdx`,
+`bearded-dragon-eggs-and-egg-binding-guide.mdx`, `bearded-dragon-brumation-guide.mdx`,
+and `reptile-emergency-plan-guide.mdx` (which covers the power outage, travel, and
+pet-sitter pages for every reptile package, not just this one). Still open from that
+list: the full safe-foods chart, and the health-issues expansion.
+
+### Ball Python v2.0 (Sep 2026)
+
+Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
+which carries a ball python temperature row. Page 20's shed cycle from
+`reptile-shedding-complete-guide.mdx`. Note `pet-obesity-body-condition-guide.mdx` does
+**not** transfer, it is a dog and cat article on the 9-point scale.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Snake heating: thermostats, probe placement, heat source types | 7 | Cross-species | No article anywhere; `thermostat` returns zero hits in `content/`. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Quarantine for a new reptile | 18, 31 | Cross-species | Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
+| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
+| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Also open on the bearded dragon list, so one article closes both |
+| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
+| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
+| Female ball pythons: follicles, eggs &amp; egg binding | 15 | Ball python | No snake equivalent of `bearded-dragon-eggs-and-egg-binding-guide.mdx`. The page with the least site backing in the whole package, so the one most worth grounding |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the growth table on page 14, the body-condition descriptions on page 14, the
+thermostat type guidance on page 7, and the prey tiers on page 11.
+
+**Source drift, resolved Sep 2026.** `snakes.js` said cool side 76 to 80&deg;F and
+humidity 50 to 60%; the MDX said 75 to 80&deg;F and 55 to 70%. Researched rather than
+picking a winner, and the "MDX wins" call was only half right. ReptiFiles, republished by
+Zen Habitats, gives warm side 90 to 95&deg;F, cool side **75 to 80&deg;F**, and ambient
+humidity **55 to 65%**. So the cool side went to the MDX figure, but neither humidity
+figure was correct: `snakes.js` was too low and the MDX was too high at the top. Both are
+now 55 to 65% ambient with 70 to 80% through a shed, along with
+`ball-python-tank-setup-guide.mdx`, `ball-python-health-issues-guide.mdx`, and the two
+comparison articles, which had drifted separately to 50 to 60%. The package was rebuilt
+as v2.1 to match.
+
+The lesson worth keeping: when two internal sources disagree, "the dedicated guide wins"
+picks a side without checking whether either side is right. Go to the external source
+first when the number matters.
+
+### Betta Fish v1.0 (Sep 2026)
+
+The first aquatic package on the v3 template. `goldfish.html` and `axolotl.html` predate
+v3 and carry none of its CSS additions, so the aquatic layout here was derived from the
+adaptation note in this guide rather than copied from them. It came out at 36 pages, not
+the 28 to 30 that note predicts, because cycling, water chemistry, and water changes need
+a page each rather than a shared one. Update that estimate to 34 to 36 for the next
+aquatic build.
+
+Already covered, do not rewrite: `betta-fish-water-parameters-guide.mdx` carries the full
+parameter table, the testing schedule, and the GH/KH note, and it is the dedicated guide
+so it wins over `betta-fish-tank-setup-guide.mdx` on pH (6.5 to 7.5, not 6.5 to 7.8).
+`betta-fish-enrichment-guide.mdx` covers all three studies and the mirror finding.
+`betta-fish-feeding-guide.mdx` covers portioning, the never-feed list, and the six
+refusal reasons. Note `reptile-emergency-plan-guide.mdx` does **not** transfer: it is
+reptile-only, and an aquarium blackout is a different problem with different physics.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package |
+| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package |
+| Transporting and moving fish | 30 | Cross-species (aquatic) | Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
+| Aquarium salt, and medicating a small tank | 18, 19 | Cross-species (aquatic) | Nothing on dosing or duration. 1 tsp per gallon, the 10-day ceiling, replacing only what a water change removes, and why plants, snails, and shrimp need a hospital tank. Also the carbon-removal and aeration rules that apply to every treatment |
+| Betta body condition from above | 15 | Betta | Nothing. `betta-fish-feeding-guide.mdx` gives portions but no way to check whether they are right. The top-down torpedo test, shoulders versus the middle third, and the one-pellet correction over 2 weeks |
+| Velvet, columnaris and telling them apart | 19 | Betta | Expand `betta-fish-health-issues-guide.mdx`, not a new URL. It names both in a sentence each. The package needs the differential (grains versus metallic dust versus cottony saddle) and, more importantly, that ich wants the temperature raised and columnaris wants it lowered |
+| Betta tankmates and sororities | 22 | Betta | Nothing, and the site currently points the wrong way (see drift below). The honest version: alone is the default, snails are usually fine, shrimp and schooling fish are risky and need a real separation plan, and the group-housing research is about fish reared together from hatching |
+| Sexing a betta | 28 (glossary) | Betta | Nothing on the site. Only in the glossary here because there was no page to justify, but a short article would let a future edition carry it properly: ovipositor, ventral fin length, anal fin shape, beard size, and why the egg spot is suggestive rather than conclusive |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the whole blackout timeline on page 29, the aquarium salt dose and its 10-day
+ceiling on page 18, the ich treatment temperature of 82&deg;F (28&deg;C) and the
+columnaris instruction to drop toward 76&deg;F (24.5&deg;C) on pages 18 and 19, the
+fishless cycling ammonia doses and the completion test on page 7, the body-condition
+descriptions on page 15, and the transport durations on page 30.
+
+**Source drift, resolved Sep 2026.** All five were researched rather than settled by the
+precedence rule, and two of the first calls were wrong.
+
+- **Cost.** `betta-fish-cost-guide.mdx` said both "$20 to $30 a month" and "$100 to $250
+  a year," which cannot both be true. The package originally used an itemised $6 to $20 a
+  month, and that was also wrong: the electricity line was understated. Heating a small
+  tank runs $30 to $100 a year depending on climate, so about $3 to $8 a month on its own.
+  Corrected everywhere to **$10 to $25 a month, $120 to $300 a year**, with a note that a
+  year needing a course of medication runs higher. Package rebuilt as v2.0.
+- **Mirrors.** `guides/fish.js` called brief mirror exposure "natural and healthy in small
+  doses." The enrichment MDX was right and the JS is now corrected. The supporting study
+  is *Androgens and corticosteroids increase in response to mirror images and interacting
+  conspecifics in males of the Siamese fighting fish Betta splendens* (Hormones and
+  Behavior, 2021): plasma cortisol and androgens rose to the aggression challenge
+  independent of stimulus type, so a mirror produces the same endocrine response as a live
+  rival, with live rivals only drawing more attempted bites.
+- **Sororities.** `guides/fish.js` described them without the caveats. Now carries the
+  20 gallon minimum, experienced-keeper framing, high failure rate, backup tank, and the
+  rearing point from the BMC Zoology isolation study.
+- **Feeding window.** The first call, that the MDX's 60 seconds beat `fish.js`'s two
+  minutes, was **wrong**. Vet-reviewed guidance is 1 to 2 minutes with no leftovers, so
+  `fish.js` was closer. The MDX and the package both moved to 1 to 2 minutes instead.
+- **pH.** `betta-fish-tank-setup-guide.mdx` gave 6.5 to 7.8 against the dedicated guide's
+  6.5 to 7.5. External sources back 6.5 to 7.5 as ideal with tolerance to about 8.0 and
+  stability mattering more than the exact figure, so the setup guide was brought into line
+  and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
+
+### Rabbit v2.0 (Sep 2026)
+
+The first mammal package on the v3 template, and the layout needed real surgery: the
+reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
+replaced with indoors versus outdoors and temperature, flooring and litter training,
+rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
+because GI stasis needs three pages on its own. It came out at 39 pages.
+
+For the next mammal build: expect 38 to 40 pages, expect the health section to be the
+long one rather than the husbandry section, and expect two pages that reptiles never need,
+a vet-choice page and a companionship page.
+
+Already covered, do not rewrite: `rabbit-tank-setup-guide.mdx` carries the House Rabbit
+Society space standard and the litter-training method. `rabbit-feeding-guide.mdx` carries
+the full life-stage table and the never-feed list. `rabbit-gi-stasis-guide.mdx` and
+`rabbit-health-issues-guide.mdx` between them cover triggers, warning signs and treatment.
+`rabbit-enrichment-guide.mdx` covers all three studies.
+`why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it.mdx` covers the
+dental mechanism.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Small-mammal temperature, heat stress &amp; cold | 7 | Cross-species (small mammals) | Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
+| Bonding a pair, step by step | 15 | Rabbit | Nothing, and `rabbit-enrichment-guide.mdx` currently promises that the handling guide covers introductions when it does not (see drift below). Side-by-side pens, neutral territory, stress bonding, what is normal negotiation versus a real fight, and the weeks it actually takes |
+| Spay and neuter beyond the price | 16 | Rabbit | `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
+| Rabbit-proofing a room | 6 | Rabbit | Nothing. Cables first because that is the one that kills, then plants, baseboards, carpet corners, and pairing every block with an outlet |
+| Grooming, nails &amp; molting | 24 | Cross-species (small mammals) | Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
+| Reading droppings &amp; cecotropes | 25 | Rabbit | `rabbit-gi-stasis-guide.mdx` explains cecotropes in a FunFact. There is no reference for what the litter box is telling you, which is the earliest signal this species gives and the cheapest daily check in the whole package |
+| Small-mammal power outages &amp; travel | 31, 32 | Cross-species (small mammals) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the temperature table and heatstroke signs on page 7, the bonding stages on page
+15, the spay and neuter timing on page 16, the nail trim interval and scent gland
+schedule on page 24, and the droppings reference table on page 25.
+
+**Source drift found while building:**
+
+- **Three different GI stasis thresholds across three articles.**
+  `rabbit-feeding-guide.mdx` says 3 to 12 hours, `rabbit-gi-stasis-guide.mdx` says 8 to
+  12 hours, and `rabbit-health-issues-guide.mdx` says 8 hours or more. This is the single
+  most important number in rabbit care and it should read the same everywhere. The package
+  uses 8 hours as the line, with the 3-to-12 spread described as the range sources give.
+  Pick one and propagate it.
+- **A broken cross-reference promise.** `rabbit-enrichment-guide.mdx` says "Our handling
+  guide covers introductions." `rabbit-handling-guide.mdx` contains nothing about
+  introductions or bonding. Either write the bonding article above and point at it, or fix
+  the sentence.
+- **Pellet and green portions disagree between guides.**
+  `rabbit-tank-setup-guide.mdx` gives 1/4 cup of pellets per 5 lb;
+  `rabbit-feeding-guide.mdx` gives 1/8 to 1/4 cup per 5 to 6 lb. The dedicated feeding
+  guide's range is the better figure and is what the package uses. Same for greens, where
+  the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
+  vague to act on next to the setup guide's 1 cup per 2 lb.
+
+### Tarantula v2.0 (Sep 2026)
+
+The first invertebrate package on the v3 template. The reptile heat, UVB and thermostat
+pages collapse into a single temperature and ventilation page, which frees a lot of room,
+and the freed room goes to things no reptile package needs: two pages on molting, a page
+on water alone, a rehousing method, urticating hair and bite first aid, and a legality
+page. It came out at 43 pages, the longest in the series so far, largely because molting
+and the handling question each split in two.
+
+For the next invertebrate build: expect 40 to 43 pages, expect husbandry to be short and
+the behavior and molting sections to be long, and expect the health section to be weighted
+toward prevention because veterinary care for invertebrates barely exists.
+
+Already covered, do not rewrite: `tarantula-legal-guide.mdx` carries the full state table
+on page 28. `tarantula-enrichment-guide.mdx` carries the PLoS ONE study with all four of
+its findings, which is the honest version and the one the package uses.
+`tarantula-feeding-guide.mdx` carries the life-stage intervals and the seven reasons for
+refusing food. `invertebrate-molting-guide.mdx` covers molting cross-species, though not
+at the depth pages 13 and 14 needed.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
+| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
+| Urticating hair first aid | 17 | Cross-species (New World species) | `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
+| Sexing a tarantula from the exuvia | 27 | Tarantula | Nothing. The spermatheca in the shed skin is the only reliable home method, and it decides whether the animal is a 5-year pet or a 20-year one, which makes it more consequential here than sexing is for most species |
+| Enclosure type by lifestyle | 7 | Tarantula | `tarantula-tank-setup-guide.mdx` says most pet species are terrestrial and stops there. No terrestrial versus fossorial versus arboreal table, which is the decision every other husbandry choice depends on, and getting it wrong is the commonest genuine welfare failure in the hobby |
+| Water, and reading the abdomen | 9 | Tarantula | `tarantula-health-issues-guide.mdx` covers dehydration as a condition. Nothing frames the water dish as the single most important object in the enclosure, and there is no reference for reading the abdomen from plump through premolt to death curl |
+| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the enclosure height ceiling and the 3&times;-leg-span floor rule on page 6, the
+substrate depths by type on page 7, the abdomen reference table on page 9, the premolt
+sign list and hardening windows on pages 13 and 14, and the sexing method on page 27.
+
+**Source drift found while building:** none. The tarantula guides agree with each other,
+which is worth noting because they are also unusually honest about where the underlying
+sources disagree. The humidity range on page 8 is presented as an open disagreement rather
+than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it is one:
+40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
+dish plus one damp corner is what both sides actually do.
