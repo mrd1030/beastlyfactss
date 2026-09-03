@@ -264,3 +264,29 @@ small notebook and pen sit just behind the scale, slightly blurred. Bright
 clean daylight from a window at the left, warm terracotta and honey palette,
 sharpest on the dragon's face and front legs, 50mm, f/2.8, 3:2. No text,
 logos, or brand markings anywhere.
+
+### bearded-dragon-safe-foods.jpg
+Photorealistic overhead photograph of a freshly chopped bearded dragon salad on
+a flat grey slate feeding tile: finely shredded collard and mustard greens,
+grated orange butternut squash, and small diced red and yellow bell pepper,
+loosely piled so the individual pieces read separately. A single dubia roach
+sits on the slate beside the tile, lightly and unevenly coated in fine white
+calcium powder. Bright clean daylight from the upper left, high key, vivid
+green and orange against cool grey stone, water droplets on the greens. Shot
+straight down, 50mm, f/4, 3:2. Overhead and high key so it doesn't collide with
+the warm floor-level look of `bearded-dragon-shopping-list.jpg`. No fruit, no
+lettuce, no bowl, no hands, no text, logos, or brand markings anywhere.
+
+### reptile-emergency-plan.jpg
+Photorealistic photograph of a power outage kit assembled on a plain wood floor
+beside a ventilated clear plastic transport tub, seen from a low three-quarter
+angle. The tub lid rests to one side and a folded thick towel lines the base; a
+flat cloth hand warmer sits on the floor beside the tub rather than inside it,
+next to a small battery thermometer with an unlit display and a folded index
+card with handwriting too soft to read. Dim warm side light as though the room
+lights are out, deep shadow falling away behind, muted amber and grey-brown
+palette. Camera low at floor level, sharpest on the tub rim and the hand
+warmer, 35mm, f/3.5, 3:2. The hand warmer stays outside the tub and no animal
+appears, since the guide's own rule is that an emergency heat source never
+touches the reptile. No candles or open flame, for the same reason the article
+rules them out. No legible text, logos, or brand markings anywhere.
