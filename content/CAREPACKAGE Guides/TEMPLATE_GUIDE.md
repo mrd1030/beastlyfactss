@@ -801,9 +801,23 @@ the same way, with the health section long and the husbandry section short. The 
 places a rodent needs pages a reptile does not are species choice, because temperament
 varies enormously inside one common name, and torpor.
 
-Watch for the same drift: a topic that genuinely needs a page will try to take two, and
-the second page is usually the first one's prose restated. Three of the six merges above
-were pure duplication and cost nothing to make.
+**What actually caused the duplication, so nobody draws the wrong lesson.** This was not
+judgment drift. The build hit an API error partway through and the session restarted, and
+on resuming it rebuilt pages it had already written instead of continuing from where it
+stopped. Three of the six merges above were that: the same topic written twice, the
+second copy being the first one's prose restated. They cost nothing to merge because
+neither copy was wrong, there were simply two.
+
+That makes it a resume hazard, not a content hazard, and it will happen again on any
+interrupted build. **Before continuing an interrupted build, reconcile before you write
+another page.** List the page keys already in the file, compare them against your section
+map and the contents page, and find where the last completed page actually ends. Never
+resume by starting the page list again.
+
+This is exactly what the duplicate page key check in **Renumbering: generate it, don't
+hand-edit it** is for. A build script that refuses to build on a duplicate key turns this
+class of error into a build failure instead of six pages nobody notices until the page
+count comes in eight over. Worth having on any package long enough to be interrupted.
 
 Already covered, do not rewrite: the bedding-depth study is reported with all three of
 its figures on page 7 and is the package's strongest single page.
