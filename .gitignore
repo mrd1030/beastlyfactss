@@ -85,3 +85,8 @@ frontpage trials/
 # Loose content-research working docs, moved out of repo root - reference only,
 # never read by the build
 research/
+
+# The printable PDF care packages (source HTML + rendered PDFs + cover images)
+# sold on Gumroad. Kept here for convenience, not part of this app - never
+# read by the build, and never tracked (large binaries, separate product).
+CAREPACKAGE Guides/
