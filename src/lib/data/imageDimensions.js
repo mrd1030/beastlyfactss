@@ -373,6 +373,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/boa-constrictor-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/border-collie-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -394,6 +398,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/bulldog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/california-kingsnake-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -557,6 +565,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/garter-snake-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/gerbil-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -645,6 +657,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/milk-snake-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/molly-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -714,6 +730,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/reptile-shedding.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/rosy-boa-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
