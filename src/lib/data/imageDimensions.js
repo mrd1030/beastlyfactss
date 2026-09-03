@@ -477,6 +477,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/fire-skink-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/flying-squirrel-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -560,6 +564,14 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/goldfish-tank-size.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/green-anole-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/green-iguana-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/guinea-pig-scurvy.jpg": {
     "width": 1600,
@@ -732,6 +744,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/uvb-lighting.jpg": {
     "width": 784,
     "height": 1168
+  },
+  "/assets/images/veiled-chameleon-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/welcome-beastlyfacts.jpg": {
     "width": 1168,
