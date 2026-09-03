@@ -237,34 +237,39 @@ and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
 
 ### bearded-dragon-brumation.jpg
-Photorealistic photograph of an adult bearded dragon brumating, resting
-half-tucked under a wide arch of dark cork bark on the cool side of its
-enclosure, head and forelimbs out on the floor, hindquarters and tail still in
-shadow inside the hide. Eyes fully closed, chin flat to the ground, body low and
-settled rather than propped up or alert. She is healthy, only dormant: full
-rounded tail base, no visible hip bones or ribs, smooth unwrinkled skin, eyes
-level rather than sunken, colour slightly muted and dusty rather than bright.
+Photorealistic photograph of an adult bearded dragon brumating, asleep and
+half-tucked inside the mouth of a wide cork bark tube on the cool side of a
+naturalistic enclosure. Head and shoulders out on the substrate, body and tail
+still in shadow inside the tube, chin resting flat on the ground, posture low
+and settled rather than propped up or alert.
 
-The enclosure floor is smooth grey slate tile, clean and flat, with a folded
-edge of paper towel visible at the frame's edge. This site treats loose
-particulate substrate as an impaction risk, so the floor must read as a hard
-solid surface.
+THE VISIBLE EYE IS FULLY SHUT. The lower lid domes smoothly up over the socket
+as a soft scaled mound, meeting a fine gold-rimmed seam above it. No eyeball, no
+glossy globe, no iris, no pupil, no sclera and no catchlight anywhere in the eye
+socket. This is the detail that decides the picture: an eye that reads open or
+cloudy turns a sleeping dragon into a sick one, which is the exact confusion the
+article exists to clear up.
 
-Above and behind, a long linear UVB tube sits dark and unlit in its reflector,
-and the enclosure beyond falls away into soft shadow. The only light is cool
-ambient room light spilling in from the left across the dragon's head and one
-shoulder, with deep shadow filling the hide. Muted slate, charcoal and warm cork
-brown palette, quiet and still, the feel of a dim autumn evening.
+She is healthy, only dormant: full rounded tail base, no visible hip bones or
+ribs, smooth unwrinkled skin, colour muted and dusty rather than bright.
 
-Camera low at floor level, close, sharpest on the closed eye and the ridge of
-spines along the jaw, cork bark texture crisp, background falling off, 100mm,
-f/2.8, 3:2.
+Substrate is a dark naturalistic soil mix with scattered dry brown leaf litter
+around the mouth of the tube, drifting to a paler sandy area at the right of the
+frame. Enclosure glass and a dark frame edge sit out of focus along the top.
 
-Must not contain: bark chips, wood chips, sand, soil or any loose substrate;
-a lit or glowing lamp of any kind; a red or coloured night bulb; sunken eyes,
-wrinkled skin, a visible spine or hip bones, an open mouth, or any other cue
-that reads as a sick dragon rather than a sleeping one. No text, logos, or brand
-markings anywhere.
+Dim, low, warm side light raking in from the left across the cork and the top of
+the head, deep shadow filling the tube and the right foreground, no lamp visible
+and nothing lit. Muted brown, grey and cork palette, quiet and still, the feel of
+a dim autumn evening. Camera low at substrate level and close, sharpest on the
+closed eyelid and the ridge of spines along the jaw, leaf litter crisp in the
+near foreground, 100mm, f/2.8, 3:2.
+
+Must not contain: an open or partially open eye, a visible eyeball, iris or
+pupil, a cloudy, milky, blue-grey, opaque or filmy eye, or a bulging eye; wood
+chips, bark chips or gravel; a lit or glowing lamp of any kind; a red or coloured
+night bulb; sunken eyes, wrinkled skin, a visible spine or hip bones, an open
+mouth, or any other cue that reads as a sick dragon rather than a sleeping one.
+No text, logos, or brand markings anywhere.
 
 ### bearded-dragon-eggs-and-egg-binding.jpg
 Photorealistic photograph of a large lay box set up on the warm side of a
