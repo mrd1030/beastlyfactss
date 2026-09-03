@@ -473,6 +473,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/fire-bellied-toad-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/flying-squirrel-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -629,6 +633,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/pacman-frog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/parrotlet-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -665,6 +673,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/red-eared-slider-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/red-footed-tortoise-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -697,11 +709,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/sulcata-tortoise-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/swordtail-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
   "/assets/images/tarantula-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/tiger-salamander-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -714,6 +734,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 1168
   },
   "/assets/images/welcome-beastlyfacts.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/whites-tree-frog-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
