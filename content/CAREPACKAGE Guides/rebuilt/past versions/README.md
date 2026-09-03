@@ -81,3 +81,18 @@ its last page.
 
 Page counts are unchanged: Ball Python 34, Betta Fish 36, Rabbit 39,
 Tarantula 43, Goldfish 39.
+
+## Budgie, Guinea Pig and Russian Tortoise, September 2026
+
+All three were rebuilt from the pre-t3 layout onto t3 and numbered 2.0:
+Budgie 20 pages to 39, Guinea Pig 22 to 39, Russian Tortoise 21 to 37.
+
+The three 1.0 files are **not** in this folder, deliberately. Each of them is
+still the edition on sale: `carePackages.js` lists all three at `version: '1.0'`
+with the old page counts, and the 2.0 builds are not listed yet. So the
+unversioned `Budgie_Care_Package.pdf`, `Guinea_Pig_Care_Package.pdf` and
+`Russian_Tortoise_Care_Package.pdf` stay in `rebuilt/` alongside the new
+`_v2.0.pdf` files, on the same reasoning the Bearded Dragon note above gives.
+
+Move each 1.0 file here, and add a row for it, on the day its 2.0 build is
+listed and the 1.0 stops being what a buyer receives.

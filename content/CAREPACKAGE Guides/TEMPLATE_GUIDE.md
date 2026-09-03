@@ -1182,7 +1182,7 @@ plus the honest line that conversion takes days, weeks or months.
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
 | Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
-| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-colour change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
+| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
 | Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Proposed.** Zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
 | Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | Nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
 | Exhibition versus pet-type budgies | 4, 16 | Budgie | **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
@@ -1336,3 +1336,92 @@ found in any package in this series.
   $30 to $50 of anything. Page 30 itemizes to **$71 to $172 a month for a pair before vet
   costs**, with hay at $25 to $60 and pellets at $6 to $15, and the lines sum to the totals.
   The headline and the breakdown both need fixing.
+
+### Russian Tortoise 2.0, t3 (Sep 2026)
+
+The third reptile package, and a rebuild rather than a new build: 1.0 was 21 pages on the
+pre-t3 layout. It came out at 37 pages against the canonical 34, and the three extra pages
+are worth knowing about because a chelonian will want the same three every time: **outdoor
+housing and escape-proofing**, **weeds and grazing** (which replaces the feeder-insect page
+a herbivore has no use for and is worth more than the page it replaced), and a **legal
+page**, following the Tarantula 2.1 precedent. Two skeleton pages were merged the other way:
+thermostats and UVB distance fold into the UVB page, because the equipment story here is
+short and belongs with the fixture it controls, and the brumation-shed-behavior page becomes
+brumation alone, because a tortoise does not shed the way a snake does and the shed material
+is three sentences at the end of the minor-conditions page. Source is fragments plus a build
+script in `source/russian-tortoise-src/` over six page files, and
+`notes/russian-tortoise-v3-notes.md` carries the parked blocks, the per-page free space,
+seven undrafted page ideas and a ranked cut list.
+
+Worth knowing for the next chelonian: the reptile skeleton transfers almost intact, and the
+places it does not are all the same place, which is that this animal walks and grazes rather
+than sits and eats prey. Everything downstream of that, floor area rather than volume,
+scatter feeding, weeds, outdoor pens, follows from it.
+
+Already covered, do not rewrite: `russian-tortoise-legal-guide.mdx` is the best article
+behind this package and carries the whole of page 25 including the 21 CFR 1240.62 text, the
+business exception, and the Hawaii, New Jersey, Montana and Rhode Island positions.
+`russian-tortoise-tank-setup-guide.mdx` carries the tortoise-table argument, the 95 to
+100&deg;F basking figure, the 60&deg;F night tolerance, the UVI 3.0 to 4.0 target and the
+coil-bulb warning. `russian-tortoise-health-issues-guide.mdx` carries MBD, respiratory
+infection, shell rot, pyramiding and the parasite point, and its closing "husbandry pattern"
+paragraph is the shape page 17 uses. `russian-tortoise-enrichment-guide.mdx` carries the
+digging-as-welfare-necessity argument, the substrate depths, the buried-wall figure and the
+scatter-feeding method. `uvb-lighting-complete-guide.mdx` and `t5-vs-compact-uvb-guide.mdx`
+carry page 7's Ferguson Zone framing, the 12-month replacement rule, the glass and mesh
+attenuation point and the coil argument. `reptile-emergency-plan-guide.mdx` **does** transfer
+and carries a Russian tortoise row, 60&deg;F tolerated and act below 60&deg;F outside
+brumation, which is what page 32 is built on.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Chelonian herpesvirus, and quarantining a new tortoise | 19, 21 | Cross-species (chelonians) | **Proposed, and the highest-value row here.** Nothing on the site. <em>Testudo</em> tortoises are susceptible to epidemics of viral disease and should be treated as potential high-risk carriers of herpes-type organisms; an infected animal is highly contagious, can look well for long periods, and in an unquarantined group mortality can approach 100%. There is no cure and a survivor is a carrier for life. Needs the signs (runny nose, oral plaques, difficulty swallowing, neurological signs), the months-not-weeks quarantine, separate room and separate equipment, and the point that ranavirus and mycoplasma make the same argument. Serves every tortoise and box turtle on the site |
+| Reptile brumation for tortoises | 23 | Cross-species (Testudo and box turtles) | `bearded-dragon-brumation-guide.mdx` and `snake-brumation-guide.mdx` both exist and **neither transfers**: the temperatures, the fasting requirement, the duration and the method are all different, and the fridge technique has no lizard or snake equivalent. Needs the do-not-brumate list, the 2 to 4 week fast with heat still on, the 40 to 55&deg;F (4 to 13&deg;C) band for 2 to 4 months, weekly weighing with the roughly 1% a month loss limit, and the gradual warm-up and immediate soak. The site currently has a paragraph saying brumation exists and is optional |
+| Safe weeds and plants for herbivorous reptiles | 12, 13 | Cross-species (tortoises, uromastyx, iguana) | **Proposed.** Nothing on the site names a single weed. This is the page that changes a keeper's costs and the animal's diet quality more than anything else, and it is entirely absent: dandelion, plantain, clover, sow thistle, hawkbit, mallow, chickweed, with identification notes, where not to pick, and how to grow and dry forage. Pairs with a toxic-plant list, which is also missing |
+| Sexing a tortoise | 15 | Cross-species (chelonians) | Nothing. Tail length and thickness, vent position relative to the shell margin, plastron concavity, carapace profile, and the point that none of it is reliable below about 4 in of shell. Cheap to write and asked constantly |
+| Tortoise eggs and egg binding | 16 | Cross-species (chelonians) | Nothing, and `bearded-dragon-eggs-and-egg-binding-guide.mdx` does not transfer: the nest-site requirement, the depth, the digging behavior and the intervention are all different. Needs the gravid signs, the nest site provided before it is needed, the do-not-palpate warning, the dystocia sign list, and the point that a single female with no male still lays |
+| Reading reptile stool, urates and hydration | 24 | Cross-species | **Extends the row already open on the Bearded Dragon and Ball Python blocks.** This species is the strongest case for writing it: a tortoise's urates are the best hydration gauge any reptile owner gets, gritty urates are the warning that precedes a urate blockage, and the weekly soak is when you see both. Add the tortoise column when the article is written |
+| Salmonella and reptile hygiene | 10 | Cross-species (all reptiles) | **Proposed.** `salmonella` returns hits only in the three red-eared slider articles. It is the reason the federal four-inch rule exists, it is a real risk rather than a regulatory relic, and every reptile package in the series has to say something about it in a callout because there is nothing to link to. One universal article closes it for reptiles, amphibians and turtles alike: shedding by healthy animals, the hand-to-face route, no kitchen sinks, and who in a household is actually at risk |
+| Cloacoliths and urate blockage | 22 | Cross-species (reptiles) | Nothing. A hardened urate stone in the cloaca, presenting as straining while vocalizing, which is a true emergency and one of the very few sounds a tortoise makes. The underlying cause is chronic dehydration, which ties it to the soaking and urates rows above |
+| Outdoor housing for reptiles | 9 | Cross-species (tortoises, and some lizards seasonally) | Nothing. Pen construction, the buried barrier depth, permanent shade, shelter, predator cover, and the five ways an outdoor tortoise dies. The site's enrichment guide mentions outdoor pens approvingly and gives one figure |
+| Hexamita parva | 21 | Russian tortoise | **Proposed.** A parasite of the renal and urinary system identified frequently in <em>T. horsfieldii</em>, causing rapid weight loss, dehydration and terminal renal failure if untreated, with a published metronidazole dose. Belongs as a section in an expanded `russian-tortoise-health-issues-guide.mdx` rather than a new URL, alongside the other conditions that article names in a sentence each |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the ReptiFiles 8&times;4 ft enclosure figure and the per-additional-animal space on
+pages 4 and 5; the UVB mounting distances on page 7; the burrow temperature figures and the
+maximum verified 22 cm size on pages 4 and 6; the sexing criteria on page 15; the clutch and
+nest-site figures on page 16; the whole brumation protocol on page 23; the <em>Hexamita</em>
+dose on page 21; the herpesvirus mortality figure on page 19; the weed identification notes
+on page 12; the ninety-days-a-year wild feeding pattern on page 11; and the itemized budget
+on page 28.
+
+**Source drift found while building.** Four, and two of them are genuine disagreements
+between credible sources rather than errors, which is how they are printed.
+
+- **Enclosure size, a real disagreement.** `russian-tortoise-tank-setup-guide.mdx` gives an
+  indoor minimum of 4&times;2&times;2 ft and a functional size nearer 7 ft by 3.5 ft;
+  `guides/turtles.js` gives 4&times;2 ft indoor and 4&times;4 ft outdoor. The ReptiFiles
+  species care sheet gives 8&times;4 ft, about 32 sq ft, plus at least 10 sq ft per
+  additional tortoise. That is a fourfold gap. Neither was picked: page 5 prints 4&times;2 ft
+  as the floor and 8&times;4 ft as the target and says why, which is the treatment the
+  lovebird and budgie packages gave the same kind of disagreement. The site articles would be
+  better carrying both figures too.
+- **Humidity, the other real disagreement.** The site gives 30 to 50% ambient and warns that
+  high ambient humidity causes respiratory infection. ReptiFiles gives 40 to 75%, lower by
+  day and higher at night, following what the animal experiences in a burrow. Both are
+  printed on page 8, with the point that they agree on the shape of the answer even where the
+  numbers differ: a dry ventilated surface with a genuinely humid microclimate underneath.
+  Worth adding that framing to the site article, because "keep it dry" alone produces the
+  dehydrated, pyramided tortoise that page 18 describes.
+- **Fruit.** The site says fruit should be minimal, under 5% of the diet.
+  The Tortoise Trust's position is that fruits are entirely inappropriate for arid-habitat
+  species. The package prints the under-5% figure with the specialist position beside it and
+  the note that zero is a defensible answer for this species.
+- **Cost.** `guides/turtles.js` still carries the `// Rough starting ranges, not verified
+  current pricing` comment. `russian-tortoise-cost-guide.mdx` gives $400 to $600 for setup
+  and $500 to $650 a year. Page 28 itemizes to **$372 to $775 for equipment and $365 to $715
+  a year**, and the wider setup range is the thermostat, the infrared gun and the gram scale,
+  which the site's list omits and which are exactly the items that prevent the conditions on
+  pages 18 and 19. Also worth adding to the MDX: at those figures the animal costs roughly
+  $15,000 to $30,000 over a forty-year life, which is the number that should decide the
+  purchase and appears nowhere.
