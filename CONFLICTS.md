@@ -15,14 +15,37 @@ happens.
 `content/guides/uromastyx-tank-setup-guide.mdx` says nighttime drops to
 around 65°F (18°C) "usually without needing supplemental night heat." Zoo
 Med's own uromastyx care sheet (zoomed.com/uromastyx/, fetched directly)
-says nighttime should stay at 75°F+ (24°C+), tolerating down to about 68°F
-(20°C) before supplemental heat is needed, a meaningfully stricter floor.
+says "Nighttime Temperature: 75+°F," a meaningfully stricter floor.
 `content/guides/reptile-emergency-plan-guide.mdx` used the Zoo Med figure
 for its "act below" column since it's the more authoritative, directly
 fetched source, but `uromastyx-tank-setup-guide.mdx` itself was not changed.
-Someone should decide whether the tank setup guide's 65°F figure needs
-revisiting, or whether there's a reason (species subgroup, thermostat setup)
-the two numbers can both be right.
+
+Surveyed against six sources on 2026-09-03, all fetched directly. The night
+figure is genuinely unsettled, and Zoo Med is the strictest of the six:
+
+| Source | Basking | Cool side | Night |
+| --- | --- | --- | --- |
+| ReptiFiles (via the Zen Habitats mirror) | 120-130°F surface, U. aegyptia 130°F+ | ~85°F | not stated in the fetched section |
+| Dubia.com | 120-130°F surface | ~85°F | "tolerate nighttime temperatures down to 68°F" |
+| Reptile Supply | 120-130°F surface | down to 85°F | 68-80°F |
+| Chicago Exotics Animal Hospital | 105-110°F "ideally" at the basking site | warm side 80-100°F | "never fall below 65°F" |
+| Long Island Birds & Exotics Vet Clinic | 110-120°F | warm 90-100°F, cool 80-85°F | not stated |
+| Zoo Med | 98-115°F basking spot | 85-90°F daytime terrarium | 75+°F |
+
+So the tank setup guide's 65°F matches the Chicago Exotics floor exactly and
+sits 3°F under the hobbyist consensus, while Zoo Med's 75°F is an outlier on
+the strict side. Someone should decide whether the emergency plan should keep
+citing the strictest of six sources as its act-below line, or move to the 68°F
+that three independent sources land on.
+
+**Basking is NOT a conflict.** The apparent 120-130°F vs 98-115°F gap is a
+surface-vs-air measurement difference, not a disagreement. ReptiFiles, Dubia,
+and Reptile Supply all state their 120-130°F explicitly as a *surface* reading
+taken with an infrared gun on the basking rock; the vet clinics and Zoo Med
+give lower numbers for readings at or above the basking site. A basking
+surface runs well hotter than the air above it, so both can be right.
+`uromastyx-tank-setup-guide.mdx` already says "on the basking surface" and
+cites ReptiFiles, so its 120-130°F figure needs no change.
 
 **2026-10-15: Bearded dragon brumation duration and threshold wording.**
 `content/guides/bearded-dragon-feeding-guide.mdx` says "not eating for 1 to 4
