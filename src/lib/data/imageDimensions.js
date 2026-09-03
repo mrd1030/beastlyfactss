@@ -313,6 +313,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/angelfish-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/argentine-tegu-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -369,6 +373,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/bristlenose-pleco-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/budgie-cere-color.jpg": {
     "width": 1620,
     "height": 1080
@@ -378,6 +386,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/bulldog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/cardinal-tetra-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -405,11 +417,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/corydoras-catfish-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/crested-gecko-humidity.jpg": {
     "width": 784,
     "height": 1168
   },
   "/assets/images/dachshund-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/discus-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -497,6 +517,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1600,
     "height": 1067
   },
+  "/assets/images/guppy-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/hamster-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -521,6 +545,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/koi-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/labrador-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -537,7 +565,23 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/molly-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/neon-tetra-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/oscar-fish-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/persian-cat-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/platy-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -577,6 +621,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/swordtail-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/tokay-gecko-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -586,6 +634,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 1168
   },
   "/assets/images/welcome-beastlyfacts.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/zebra-danio-enrichment.jpg": {
     "width": 1168,
     "height": 784
   }
