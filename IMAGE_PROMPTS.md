@@ -235,3 +235,14 @@ the glass, a small unplugged compact coil bulb lies retired on the tabletop,
 slightly out of focus. Warm amber light against cool shadow, red desert sand
 and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
+
+### bearded-dragon-brumation.jpg
+Photorealistic photograph of an adult bearded dragon settled calmly half
+inside a dark cork bark hide on the cool side of its enclosure, eyes closed
+or heavy-lidded, body relaxed and low rather than alert or basking. The
+UVB tube overhead sits dim and unlit in soft ambient room light, a hint of
+cooler blue-grey creeping in through the enclosure glass beside a warm
+wooden shelf edge, suggesting a quiet autumn evening rather than illness.
+Muted slate and warm wood palette, sharpest on the dragon's face at the
+mouth of the hide, 50mm, f/2.8, 3:2. No text, logos, or brand markings
+anywhere.
