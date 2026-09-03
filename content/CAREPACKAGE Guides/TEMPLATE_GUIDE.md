@@ -267,10 +267,20 @@ which carries a ball python temperature row. Page 20's shed cycle from
 exist: the growth table on page 14, the body-condition descriptions on page 14, the
 thermostat type guidance on page 7, and the prey tiers on page 11.
 
-**Source drift found while building:** `src/lib/data/guides/snakes.js` disagrees with the
-MDX on cool side (76 to 80&deg;F vs 75 to 80&deg;F) and humidity (50 to 60% vs 55 to 70%).
-The MDX wins per the rule above and is what the package uses, but the JS copy still needs
-correcting so the two stop drifting.
+**Source drift, resolved Sep 2026.** `snakes.js` said cool side 76 to 80&deg;F and
+humidity 50 to 60%; the MDX said 75 to 80&deg;F and 55 to 70%. Researched rather than
+picking a winner, and the "MDX wins" call was only half right. ReptiFiles, republished by
+Zen Habitats, gives warm side 90 to 95&deg;F, cool side **75 to 80&deg;F**, and ambient
+humidity **55 to 65%**. So the cool side went to the MDX figure, but neither humidity
+figure was correct: `snakes.js` was too low and the MDX was too high at the top. Both are
+now 55 to 65% ambient with 70 to 80% through a shed, along with
+`ball-python-tank-setup-guide.mdx`, `ball-python-health-issues-guide.mdx`, and the two
+comparison articles, which had drifted separately to 50 to 60%. The package was rebuilt
+as v2.1 to match.
+
+The lesson worth keeping: when two internal sources disagree, "the dedicated guide wins"
+picks a side without checking whether either side is right. Go to the external source
+first when the number matters.
 
 ### Betta Fish v1.0 (Sep 2026)
 
@@ -307,21 +317,29 @@ columnaris instruction to drop toward 76&deg;F (24.5&deg;C) on pages 18 and 19, 
 fishless cycling ammonia doses and the completion test on page 7, the body-condition
 descriptions on page 15, and the transport durations on page 30.
 
-**Source drift found while building:**
+**Source drift, resolved Sep 2026.** All five were researched rather than settled by the
+precedence rule, and two of the first calls were wrong.
 
-- `betta-fish-cost-guide.mdx` contradicts itself: "$20 to $30 a month" is $240 to $360 a
-  year, against its own stated "$100 to $250 a year." The package uses an itemised
-  $6 to $20 a month ($72 to $240 a year), which agrees with the annual figure. The
-  monthly line in the article needs correcting.
-- `src/lib/data/guides/fish.js` says brief mirror exposure is "natural and healthy in
-  small doses." `betta-fish-enrichment-guide.mdx` says the opposite, and is right: a
-  mirror is what researchers use to provoke a measurable stress response. The MDX wins,
-  and the JS copy needs fixing.
-- `src/lib/data/guides/fish.js` recommends "sororities of five or more females with
-  plenty of visual barriers" without the rearing caveat, which reads as an endorsement.
-  Same fix needed.
-- `src/lib/data/guides/fish.js` says feed what is finished "in about two minutes";
-  `betta-fish-feeding-guide.mdx` says about 60 seconds. The MDX wins.
-- `betta-fish-tank-setup-guide.mdx` gives pH 6.5 to 7.8; the dedicated
-  `betta-fish-water-parameters-guide.mdx` gives 6.5 to 7.5. The dedicated guide wins and
-  the setup guide should be brought into line.
+- **Cost.** `betta-fish-cost-guide.mdx` said both "$20 to $30 a month" and "$100 to $250
+  a year," which cannot both be true. The package originally used an itemised $6 to $20 a
+  month, and that was also wrong: the electricity line was understated. Heating a small
+  tank runs $30 to $100 a year depending on climate, so about $3 to $8 a month on its own.
+  Corrected everywhere to **$10 to $25 a month, $120 to $300 a year**, with a note that a
+  year needing a course of medication runs higher. Package rebuilt as v2.0.
+- **Mirrors.** `guides/fish.js` called brief mirror exposure "natural and healthy in small
+  doses." The enrichment MDX was right and the JS is now corrected. The supporting study
+  is *Androgens and corticosteroids increase in response to mirror images and interacting
+  conspecifics in males of the Siamese fighting fish Betta splendens* (Hormones and
+  Behavior, 2021): plasma cortisol and androgens rose to the aggression challenge
+  independent of stimulus type, so a mirror produces the same endocrine response as a live
+  rival, with live rivals only drawing more attempted bites.
+- **Sororities.** `guides/fish.js` described them without the caveats. Now carries the
+  20 gallon minimum, experienced-keeper framing, high failure rate, backup tank, and the
+  rearing point from the BMC Zoology isolation study.
+- **Feeding window.** The first call, that the MDX's 60 seconds beat `fish.js`'s two
+  minutes, was **wrong**. Vet-reviewed guidance is 1 to 2 minutes with no leftovers, so
+  `fish.js` was closer. The MDX and the package both moved to 1 to 2 minutes instead.
+- **pH.** `betta-fish-tank-setup-guide.mdx` gave 6.5 to 7.8 against the dedicated guide's
+  6.5 to 7.5. External sources back 6.5 to 7.5 as ideal with tolerance to about 8.0 and
+  stability mattering more than the exact figure, so the setup guide was brought into line
+  and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.

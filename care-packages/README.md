@@ -4,8 +4,8 @@
 > `rebuilt/` for the PDFs. Build new packages there, not here.
 >
 > Ball Python and Betta Fish have already been rebuilt on that template at
-> `content/CAREPACKAGE Guides/source/ball-python.html` (v2.0, 34 pages) and
-> `source/betta-fish.html` (v1.0, 36 pages).
+> `content/CAREPACKAGE Guides/source/ball-python.html` (v2.1, 34 pages) and
+> `source/betta-fish.html` (v2.0, 36 pages).
 > Hamster, Rabbit, Tarantula and Corn Snake are still only in this folder
 > and need porting.
 

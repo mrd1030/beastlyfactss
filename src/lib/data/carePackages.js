@@ -196,7 +196,7 @@ export const CARE_PACKAGES = [
     status: 'coming-soon',
     price: '$8.99',
     pages: 34,
-    version: '2.0',
+    version: '2.1',
     blurb: 'Complete 34-page printable guide with thermostat and probe placement, the humidity range that decides everything, a full prey chart, health triage, and printable owner tools.',
     bullets: [
       'Housing, temperature and humidity, substrate, handling, feeding by age, and enrichment in one guide',
@@ -213,7 +213,7 @@ export const CARE_PACKAGES = [
     status: 'coming-soon',
     price: '$8.99',
     pages: 36,
-    version: '1.0',
+    version: '2.0',
     blurb: 'Complete 36-page printable guide with tank and heater targets, the water numbers that actually matter, a full fishless cycling walkthrough, health triage, and owner checklists.',
     bullets: [
       'Tank, heater and filter, water parameters, cycling and water changes, diet, and enrichment in one guide',
