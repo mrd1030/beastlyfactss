@@ -64,7 +64,9 @@ the MDX wins, but flag the JS copy to fix too so the two don't stay out of sync.
 ### Content the site does NOT have yet (as of Sep 2026)
 The v3 bearded dragon package needed pages the site had no article for. Until those
 articles exist, the PDF text is the only copy, so treat the bearded dragon file as the
-source and check it against the veterinary references on its Sources page:
+source and check it against the veterinary references on its Sources page. Every package
+since logs its own gaps in **Site content gaps by package** near the end of this file;
+add yours there before you call a package done.
 
 - Full safe-foods charts (every staple / occasional / rare / never food with the reason)
 - Power outage, travel, and transport plan
@@ -193,6 +195,14 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
+11. **Log the gaps before you call it done.** Every package ends up with pages the site
+   has no article for, and that list is the most valuable byproduct of building one: it
+   is a ready-made content plan, already filtered to things a paying customer wanted
+   enough to read. Add a block for your animal under **Site content gaps by package**
+   below. Do it while the sourcing is fresh, not later. Two things to record and not
+   skip: what you found already covered (so nobody rewrites it), and any number in the
+   PDF that has no site source at all, because that is the copy no one can fact-check
+   against the site later.
 
 ## Pre-publish accuracy checks (learned the hard way)
 
@@ -208,3 +218,56 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 - Every page ends with at least 15 px of free space by the overflow check.
 - No internal notes in the printed footer ("no external links appear in this document"
   was a real one that shipped in v2.0).
+
+## Site content gaps by package
+
+The running list of site articles the packages need. Build workflow step 11 says to add
+a block here when you finish a package; this is what turns "the PDF says something the
+site doesn't" into a content plan.
+
+How to use it: pick off the **cross-species** rows first, because one article closes the
+same gap in every future package. When you write one, re-source that PDF page from the
+new article, cross the row off here, and note the slug so the next person knows it exists.
+
+Anything still open is copy that lives only in a PDF, so it has no site article to be
+fact-checked against later. That is the actual risk this table tracks.
+
+Remember `CLAUDE.md` when you write one: 1 to 2 in-body internal links, a
+`RELATED_ARTICLES` entry in `src/lib/data/relatedArticles.js` unless the slug ends in a
+standard suffix that auto-detects, and dates spread across days rather than dumped on
+one.
+
+### Bearded Dragon v3.0 (Aug 2026)
+
+Listed in full under **Content the site does NOT have yet** above. Six articles, of which
+these have since shipped: `bearded-dragon-growth-weight-checks-guide.mdx`,
+`bearded-dragon-eggs-and-egg-binding-guide.mdx`, `bearded-dragon-brumation-guide.mdx`,
+and `reptile-emergency-plan-guide.mdx` (which covers the power outage, travel, and
+pet-sitter pages for every reptile package, not just this one). Still open from that
+list: the full safe-foods chart, and the health-issues expansion.
+
+### Ball Python v2.0 (Sep 2026)
+
+Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
+which carries a ball python temperature row. Page 20's shed cycle from
+`reptile-shedding-complete-guide.mdx`. Note `pet-obesity-body-condition-guide.mdx` does
+**not** transfer, it is a dog and cat article on the 9-point scale.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Snake heating: thermostats, probe placement, heat source types | 7 | Cross-species | No article anywhere; `thermostat` returns zero hits in `content/`. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Quarantine for a new reptile | 18, 31 | Cross-species | Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
+| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
+| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Also open on the bearded dragon list, so one article closes both |
+| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
+| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
+| Female ball pythons: follicles, eggs &amp; egg binding | 15 | Ball python | No snake equivalent of `bearded-dragon-eggs-and-egg-binding-guide.mdx`. The page with the least site backing in the whole package, so the one most worth grounding |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the growth table on page 14, the body-condition descriptions on page 14, the
+thermostat type guidance on page 7, and the prey tiers on page 11.
+
+**Source drift found while building:** `src/lib/data/guides/snakes.js` disagrees with the
+MDX on cool side (76 to 80&deg;F vs 75 to 80&deg;F) and humidity (50 to 60% vs 55 to 70%).
+The MDX wins per the rule above and is what the package uses, but the JS copy still needs
+correcting so the two stop drifting.
