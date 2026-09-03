@@ -93,7 +93,7 @@ h3.h{font-size:11pt;margin:10pt 0 4pt 0;color:var(--accent-dark);}
 .toc table{margin-top:0;}
 .toc td{padding:1.4pt 0;border-bottom:none;font-size:9.2pt;line-height:1.3;}
 
-/* v3 additions */
+/* t3 additions */
 .tier{display:inline-block;font-size:7.6pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border-radius:20pt;padding:2pt 7pt;white-space:nowrap;}
 .tier.staple{background:var(--good-tint);color:var(--good);}
 .tier.occasional{background:var(--accent-tint);color:var(--accent-dark);}
@@ -119,18 +119,30 @@ table.log.tall td{height:30pt;}
 
 <!--
 =====================================================================
-CARE PACKAGE TEMPLATE v3 - read this block, then delete it before render
+CARE PACKAGE TEMPLATE t3 - read this block, then delete it before render
 =====================================================================
-Every {{DOUBLE_BRACE}} token below is a placeholder to fill in. Icons
-must be small inline SVGs matching the existing minimalist style -
+Every {{DOUBLE_BRACE}} token below is a placeholder to fill in.
+
+VERSION vs TEMPLATE. Two separate numbers, never merged:
+  {{VERSION}}   how many times THIS guide has been revised. A brand new
+                guide is 1.0 no matter how mature the skeleton it was
+                built on. Only a rebuild or a correction moves it.
+  {{TEMPLATE}}  which generation of this skeleton the edition was built
+                on. This file is t3. Editions predating it are "pre-t3".
+A new guide off this file is 1.0 / t3. Revise it twice and it is 2.1 / t3,
+which is not the same claim as the template being 3. Never bump {{VERSION}}
+to match the template number: that was a real mistake, made in September
+2026 across five guides, and it cost a full re-render to undo.
+
+Icons must be small inline SVGs matching the existing minimalist style -
 never a raw emoji character or HTML entity (headless Chromium print
 can render those as broken/wrong glyphs; caught this bug 3 times).
 
 Full page-by-page content sourcing (which site file/field feeds each
 page) lives in ../TEMPLATE_GUIDE.md - read that alongside this file.
-The finished worked example is bearded-dragon.html (v3.0, 34 pages);
-when a comment below says "see bearded-dragon.html", copy that page's
-structure and swap the species content.
+The finished worked example is bearded-dragon.html (guide 3.0 on the
+t3 template, 34 pages); when a comment below says "see bearded-dragon.html",
+copy that page's structure and swap the species content.
 
 This skeleton is the 34-page reptile layout. Aquatic animals drop the
 UVB-distance, feeder, sexing, and egg pages (see the guide). Drop or
@@ -175,6 +187,9 @@ page done; keep at least 15 px free above every footer.
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">{{PAGE_COUNT}} pages</span>
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">{{DIFFICULTY}}</span>
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Print or tablet</span>
+      <!-- cover badge carries the GUIDE version only. The template generation
+           is buyer-irrelevant on the cover; it lives in the version history
+           table and the colophon on the last page. -->
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version {{VERSION}} &middot; {{MONTH_YEAR}}</span>
     </div>
   </div>
@@ -183,7 +198,7 @@ page done; keep at least 15 px free above every footer.
     <!-- the mask on the COLUMN (not the img) fades the photo and the vertical
          darkening overlay together, so the diagonal background shows through and
          the overlay has no hard left edge. Masking only the img left the overlay's
-         edge printing as a vertical line (real bug, v3.0 first render). Do NOT go
+         edge printing as a vertical line (real bug, first t3 render). Do NOT go
          back to a flat-color overlay div either, it only matches the gradient at
          one height and leaves a seam (also a real bug, fixed once already).
          Pick a photo where the animal faces LEFT, toward the headline. Tune
@@ -1235,13 +1250,15 @@ page done; keep at least 15 px free above every footer.
 
   <h2 class="h">Version history</h2>
   <table class="dense">
-    <tr><th style="width:22%;">Version</th><th>What changed</th></tr>
-    <tr><td>{{VERSION}} &middot; {{MONTH_YEAR}}</td><td>{{VERSION_NOTES}}</td></tr>
+    <tr><th style="width:16%;">Version</th><th style="width:11%;">Template</th><th>What changed</th></tr>
+    <tr><td>{{VERSION}} &middot; {{MONTH_YEAR}}</td><td>{{TEMPLATE}}</td><td>{{VERSION_NOTES}}</td></tr>
+    <!-- one row per edition, newest first. The Template cell is t3 for anything
+         built on this file, pre-t3 for an edition on the older 22-page layout. -->
   </table>
 
   <div class="divider"></div>
   <p class="small">This package is a husbandry reference compiled from the sources above and cross-checked against current veterinary guidance at the time of publication. It is not a substitute for a {{VET_OR_SPECIALIST}}, and nothing in it should delay a vet visit. Free companion guides, updated as guidance changes, are at beastlyfacts.com.</p>
-  <p class="small" style="margin-top:8pt;">&copy; Beastly Facts &middot; Version {{VERSION}} &middot; {{MONTH_YEAR_LONG}} &middot; For personal use by the purchaser. Please don't redistribute.</p>
+  <p class="small" style="margin-top:8pt;">&copy; Beastly Facts &middot; Version {{VERSION}} &middot; Template {{TEMPLATE}} &middot; {{MONTH_YEAR_LONG}} &middot; For personal use by the purchaser. Please don't redistribute.</p>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>34</span></div>
 </div>
 

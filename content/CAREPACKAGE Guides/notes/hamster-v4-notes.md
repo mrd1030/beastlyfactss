@@ -1,6 +1,6 @@
 # Hamster, notes for the next version
 
-Written against **v3.0, 36 pages**, September 2026. The previous build was
+Written against **3.0, 36 pages, template t3**, September 2026. The previous build was
 v2.0 at 42 pages and never shipped, so nothing here was ever in a customer's
 hands. Old page numbers below are v2.0's; new ones are v3.0's.
 

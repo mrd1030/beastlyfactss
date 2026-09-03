@@ -1,6 +1,6 @@
-# Goldfish Care Package: notes for v4
+# Goldfish Care Package: notes for v3
 
-Content written for or cut from **v3.0 (September 2026, 39 pages)** during the page-count
+Content written for or cut from **2.0 (September 2026, 39 pages, template t3)** during the page-count
 pass. Nothing here was cut for being wrong: it was cut to keep every page inside the
 print area, and it is parked so a later edition does not have to research or write it
 again.
@@ -10,7 +10,7 @@ The HTML is the exact markup that was removed, so reinstating a block is a paste
 Anything reinstated needs a page split to absorb it; the page-by-page headroom is in the
 measurement output, not guessable by eye.
 
-## Where v3.0 landed
+## Where 2.0 landed
 
 39 pages. The floor for this content at the template's type sizes, measured, not
 estimated. Getting below it means parking whole topics rather than trimming, and the
@@ -263,17 +263,17 @@ candidates are listed under "If a future edition needs to be shorter" at the end
       </div>
 ```
 
-## Ideas raised while writing v3.0 but never drafted
+## Ideas raised while writing 2.0 but never drafted
 
 - **A stocking calculator table.** Volume against number and type of fish, so a buyer
   can check a mixed group rather than reading two minimums and doing the arithmetic.
 - **A water-test log with space for a hand-drawn trend line.** The owner log records
   numbers; a small grid would make a nitrate drift visible at a glance.
-- **Breeding and raising fry.** v3.0 covers spawning behavior as something that happens
+- **Breeding and raising fry.** 2.0 covers spawning behavior as something that happens
   to you, not as a project. A full treatment needs a page on conditioning, a spawning
   mop, egg handling, and the fry feeding schedule that is currently compressed into two
   rows of the feeding-by-age table.
-- **Pond construction.** v3.0 tells single-tail owners a pond is the right long-term
+- **Pond construction.** 2.0 tells single-tail owners a pond is the right long-term
   home and then stops. Depth, volume per fish, liner, pond filtration and predator
   netting are all missing, and a pond section is arguably its own product.
 - **A varieties visual key.** The varieties table describes body types in words. Small

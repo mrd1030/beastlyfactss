@@ -1,6 +1,6 @@
-# Tarantula Care Package: notes for v4
+# Tarantula Care Package: notes for v3
 
-Content written for or cut from **v3.0 (September 2026, 43 pages)** during the page-count
+Content written for or cut from **2.1 (September 2026, 43 pages, template t3)** during the page-count
 pass, plus everything raised and never drafted.
 
 Read this before touching `source/tarantula.html`.
@@ -19,9 +19,9 @@ the last resort:
 4. **One deletion**, recorded below, and it was genuinely redundant.
 
 That is why the package is 43 pages. The count is a consequence of refusing to trim, not
-a target anyone aimed at. See "Where v3.0 landed" below before deciding to shorten it.
+a target anyone aimed at. See "Where 2.1 landed" below before deciding to shorten it.
 
-## Where v3.0 landed
+## Where 2.1 landed
 
 43 pages, with a measured minimum of 19 px of headroom on the tightest page. **This is
 not a measured floor.** It is where the content settled once trimming was ruled out. The
@@ -86,9 +86,9 @@ The fix was a shorter label, not less information:
   the enclosure's left edge. If that diagram is ever rebuilt, keep the centre at 148 or
   further right.
 
-## Ideas raised while writing v3.0 but never drafted
+## Ideas raised while writing 2.1 but never drafted
 
-- **A species picker table.** v3.0 explains terrestrial, fossorial and arboreal and then
+- **A species picker table.** 2.1 explains terrestrial, fossorial and arboreal and then
   leaves the reader to identify their own animal. A table of the twenty or so commonly
   sold species against type, adult leg span, temperament, and beginner suitability would
   be the most useful single page that is missing, and it is the question every buyer
@@ -103,7 +103,7 @@ The fix was a shorter label, not less information:
   all described in words. Simple inline SVGs of a bald patch, an inverted molting spider,
   and a spermatheca in a flattened exuvia would carry pages 13, 14 and 27 far better than
   text does, and the spermatheca especially is hard to describe and easy to draw.
-- **Communal species.** v3.0 says one spider per enclosure, full stop, which is right for
+- **Communal species.** 2.1 says one spider per enclosure, full stop, which is right for
   the beginner species it covers. The handful of genuinely communal species deserve a
   paragraph saying why they are the exception rather than being silently contradicted by
   a keeper who has seen one.
@@ -144,7 +144,7 @@ redo the experiment.
 A layout-only pass, no words changed and no type sizes changed:
 
 1. The `.snug` rule block in this file's head was only five rules deep. The
-   other v3 guides carry nine. The four missing rules (`p` and `li` at
+   other t3 guides carry nine. The four missing rules (`p` and `li` at
    `line-height:1.45`, `li margin-bottom:2pt`, `.card padding:8pt 10pt`,
    `table.dense td line-height:1.32`) were added.
 2. `.snug` was then applied to every content page rather than the eleven it

@@ -16,7 +16,7 @@ Splitting a page means adding a `<!--PAGE key-->` / `<!--FOOT key-->` pair and o
 `SECTIONS`. Every number downstream follows on its own, which is the point: this package
 was renumbered from 31 to 49 to 39 pages during its build, and no page number went stale.
 
-Content cut to make pages fit goes in `../../notes/goldfish-v4-notes.md`, never in the
+Content cut to make pages fit goes in `../../notes/goldfish-v3-notes.md`, never in the
 bin. See **Always keep a next-version notes file** in `../../TEMPLATE_GUIDE.md`.
 
 Only the goldfish uses this fragment layout so far. Other packages are single hand-edited

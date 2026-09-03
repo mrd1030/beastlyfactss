@@ -1,6 +1,6 @@
-# Betta Fish Care Package: notes for v4
+# Betta Fish Care Package: notes for v3
 
-Content written for or cut from **v3.0 (September 2026, 36 pages)** during the page-count
+Content written for or cut from **2.1 (September 2026, 36 pages, template t3)** during the page-count
 pass, plus everything raised and never drafted.
 
 Read this before touching `source/betta-fish.html`.
@@ -16,7 +16,7 @@ fuller prose if a split frees the room.
 Nothing was deleted as a whole block. Seven pages were split, one layout-only tightening
 pass was applied to two pages, and one callout was moved.
 
-## Where v3.0 landed
+## Where 2.1 landed
 
 36 pages, with a measured minimum of 19 px of headroom. **Not a measured floor.** The
 first build came in at 29 pages following the aquatic adaptation note in the template
@@ -43,7 +43,7 @@ Previously:
     <tr><td style="color:var(--muted);font-weight:600;">Native range</td><td>Shallow rice paddies, floodplains, and slow streams in Thailand, Cambodia, and Vietnam</td></tr>
 ```
 
-Reinstate in v4 if the row fits. "Southeast Asia" is accurate but vaguer than the
+Reinstate in v3 if the row fits. "Southeast Asia" is accurate but vaguer than the
 encyclopedia entry the package is sourced from, and the countries matter for a species
 whose wild populations are IUCN Vulnerable, which is stated two rows below.
 
@@ -114,13 +114,13 @@ site's own guides, which is worth remembering because the site was the original 
 
 - **Feeding window.** v1.0 said "cleared within about 60 seconds", taken from the site's
   feeding MDX. Vet-reviewed guidance is 1 to 2 minutes with no leftovers, which is what
-  v3.0 says. The MDX was corrected to match.
+  2.1 says. The MDX was corrected to match.
 - **Running costs.** v1.0 itemised $6 to $20 a month, which understated heater
-  electricity. Heating a small tank is $30 to $100 a year on its own. v3.0 says $10 to $25
+  electricity. Heating a small tank is $30 to $100 a year on its own. 2.1 says $10 to $25
   a month and $120 to $300 a year, and the site's cost guide was corrected too, since it
   had been self-contradictory.
 
-## Ideas raised while writing v3.0 but never drafted
+## Ideas raised while writing 2.1 but never drafted
 
 - **Sexing a betta.** Logged as a site content gap and currently present only as a
   glossary entry for "ovipositor". Ovipositor, ventral fin length, anal fin shape, beard

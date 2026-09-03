@@ -1,6 +1,7 @@
-# Ball Python Care Package: notes for v4
+# Ball Python Care Package: notes for v3
 
-Notes for **v3.0 (September 2026, 34 pages)**, formerly numbered v2.1.
+Notes for **2.1 (September 2026, 34 pages)**, built on template t3. Briefly mislabelled
+3.0 in September 2026 and put back; see TEMPLATE_GUIDE.md.
 
 Read this before touching `source/ball-python.html`.
 
@@ -10,7 +11,7 @@ This is the one package in the series where content was genuinely cut to fit a p
 and it is also the one package whose cuts cannot be reproduced here as real markup. Both
 facts have the same cause, and it is worth writing down so nobody goes looking.
 
-**What happened.** The first build of this package on the v3 template came in at 33 pages,
+**What happened.** The first build of this package on the t3 template came in at 33 pages,
 with substrate and handling sharing a single page. Getting them onto one page meant cutting
 handling technique, session frequency, and settling-in guidance. The overflow measurement
 was clean, so nothing looked wrong.
@@ -31,17 +32,17 @@ paragraphs from recollection would produce something that reads like the origina
 being it.
 
 **The practical consequence is nil.** Everything cut was restored, so nothing is missing
-from v3.0. This section exists so that a future editor does not spend an afternoon looking
+from 2.1. This section exists so that a future editor does not spend an afternoon looking
 for a park file that was never written.
 
-## Where v3.0 landed
+## Where 2.1 landed
 
 34 pages, with a measured minimum of 20 px of headroom on the tightest page. **Not a
 measured floor.** It is 33 pages plus the split that fixed the trimming, and it matches
 the reptile skeleton's expected shape exactly, which is unsurprising given this is the
 animal class the skeleton was drawn for.
 
-## The "should anything move out of v3.0 and into here?" pass
+## The "should anything move out of 2.1 and into here?" pass
 
 Done, page by page, and the answer is **no**. Recorded with reasoning, because this
 package is the one most likely to be asked the question again.
