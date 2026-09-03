@@ -11,32 +11,37 @@ happens.
 
 ## Open
 
-**2026-09-15: Uromastyx nighttime temperature floor.**
-`content/guides/uromastyx-tank-setup-guide.mdx` says nighttime drops to
-around 65°F (18°C) "usually without needing supplemental night heat." Zoo
-Med's own uromastyx care sheet (zoomed.com/uromastyx/, fetched directly)
-says "Nighttime Temperature: 75+°F," a meaningfully stricter floor.
-`content/guides/reptile-emergency-plan-guide.mdx` used the Zoo Med figure
-for its "act below" column since it's the more authoritative, directly
-fetched source, but `uromastyx-tank-setup-guide.mdx` itself was not changed.
+**2026-09-15: Uromastyx nighttime temperature floor.** (mostly resolved
+2026-09-03, one small gap left)
+`content/guides/reptile-emergency-plan-guide.mdx` originally took its
+uromastyx "act below" figure from Zoo Med's care sheet ("Nighttime
+Temperature: 75+°F"), which clashed with
+`content/guides/uromastyx-tank-setup-guide.mdx`'s 65°F (18°C) "usually
+without needing supplemental night heat."
 
-Surveyed against six sources on 2026-09-03, all fetched directly. The night
-figure is genuinely unsettled, and Zoo Med is the strictest of the six:
+Surveyed against six sources on 2026-09-03, all fetched directly:
 
 | Source | Basking | Cool side | Night |
 | --- | --- | --- | --- |
 | ReptiFiles (via the Zen Habitats mirror) | 120-130°F surface, U. aegyptia 130°F+ | ~85°F | not stated in the fetched section |
 | Dubia.com | 120-130°F surface | ~85°F | "tolerate nighttime temperatures down to 68°F" |
 | Reptile Supply | 120-130°F surface | down to 85°F | 68-80°F |
-| Chicago Exotics Animal Hospital | 105-110°F "ideally" at the basking site | warm side 80-100°F | "never fall below 65°F" |
+| Chicago Exotics Animal Hospital | 105-110°F "ideally" at the basking site | warm side 80-100°F | "At night, the enclosure should never fall below 65°F" |
 | Long Island Birds & Exotics Vet Clinic | 110-120°F | warm 90-100°F, cool 80-85°F | not stated |
 | Zoo Med | 98-115°F basking spot | 85-90°F daytime terrarium | 75+°F |
 
-So the tank setup guide's 65°F matches the Chicago Exotics floor exactly and
-sits 3°F under the hobbyist consensus, while Zoo Med's 75°F is an outlier on
-the strict side. Someone should decide whether the emergency plan should keep
-citing the strictest of six sources as its act-below line, or move to the 68°F
-that three independent sources land on.
+Zoo Med's 75°F was the strict outlier of the six and has been dropped from the
+emergency plan entirely, source link included. That row now reads 68°F as the
+act-below line, where three independent care sheets land, with "never below
+65°F" from Chicago Exotics Animal Hospital as the hard floor. The two figures
+are not in tension: 68°F is "tolerates down to," 65°F is "never below," so the
+act line sits above the floor by design.
+
+Remaining gap, minor: `uromastyx-tank-setup-guide.mdx` still says night drops
+to "around 65°F" as a routine expectation, which reads slightly looser than
+the three care sheets' 68°F even though it matches the vet hospital's hard
+floor exactly. Someone may want to reword it as a floor rather than a normal
+resting point, but no number there is wrong.
 
 **Basking is NOT a conflict.** The apparent 120-130°F vs 98-115°F gap is a
 surface-vs-air measurement difference, not a disagreement. ReptiFiles, Dubia,
