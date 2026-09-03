@@ -103,11 +103,10 @@ That third row is the one that bites. `getAutoDetectedSlugs` wires a slug for fr
 when it is exactly `{guideId}-{suffix}` for one of the six standard suffixes
 (`cost-guide`, `handling-guide`, `health-issues-guide`, `tank-setup-guide`,
 `feeding-guide`, `enrichment-guide`, per `STANDARD_SUFFIXES` in
-`relatedArticles.js:117`). Note that CLAUDE.md lists five of those and omits
-`enrichment-guide`; the code is the authority, and it wires six. A species whose article
-prefix differs from its guide id (`african-grey` vs `african-grey-parrot-`, `tegu` vs
-`argentine-tegu-`) does not auto-detect either, even on a standard suffix, and is wired
-by hand.
+`relatedArticles.js:117`, and matching the lists in CLAUDE.md and docs/RULES.md).
+A species whose article prefix differs from its guide id (`african-grey` vs
+`african-grey-parrot-`, `tegu` vs `argentine-tegu-`) does not auto-detect either, even
+on a standard suffix, and is wired by hand.
 
 Most articles written for a care package page match none of that: `safe-foods-guide`,
 `brumation-guide`, `growth-weight-checks-guide`, `eggs-and-egg-binding-guide`, and

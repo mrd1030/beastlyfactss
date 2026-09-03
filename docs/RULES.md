@@ -60,8 +60,8 @@ working checklist.
 - Every article carries 1 to 2+ in-body internal links, written by hand. The
   build gates on this, but the check is a net, not the author.
 - Every article must be reachable from a guide. Standard species suffixes
-  (cost, handling, health-issues, tank-setup, feeding) auto-wire; everything
-  else gets a RELATED_ARTICLES entry against the guide ids it serves.
+  (cost, handling, health-issues, tank-setup, feeding, enrichment) auto-wire;
+  everything else gets a RELATED_ARTICLES entry against the guide ids it serves.
 - The inbound-link audit is a ratchet: the thin-page budget only goes down, so
   no new page ships that nothing links to.
 
