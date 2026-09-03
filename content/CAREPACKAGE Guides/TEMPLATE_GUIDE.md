@@ -247,7 +247,7 @@ further down. Page counts below are what shipped, not estimates.
 |---|---|---|---|
 | Reptile | Bearded Dragon v3.0, Ball Python v3.0 | 34 | The canonical table above |
 | Aquatic | Betta v3.0, Goldfish v3.0 | 36 to 39 | Water systems replace heat systems |
-| Mammal | Rabbit v3.0 | 39 | Diet and health dominate; no environmental control pages |
+| Mammal | Rabbit v3.0, Hamster v3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula v3.0 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
 | Bird | none yet | proposed | See below, this row is a proposal |
 
@@ -265,9 +265,18 @@ allows. Rabbit v3.0 gave hay, greens and pellets, and life-stage feeding three p
 gave GI stasis three pages of its own before dental, flystrike and snuffles, and the
 E. cuniculi group. It also needed pages the reptile table has no slot for: litter
 training and rabbit-proofing, bonding and companionship, spay and neuter, and grooming,
-nails and molting. Expect 38 to 40, expect health to be the biggest section in the
-package, and expect prey-species behavior to change the handling pages: picking one up is
-a page, and reading its body language is another.
+nails and molting. Expect health to be the biggest section in the package, and expect
+prey-species behavior to change the handling pages: picking one up is a page, and reading
+its body language is another.
+
+Page count scales with the animal inside the class, so take it from the nearest species
+rather than from the class. A rabbit runs 38 to 40. Hamster v3.0 came in at 36, and its
+block below puts a rodent at 34 to 37, because a smaller animal genuinely has less
+husbandry to describe. Two pages a rodent needs that a reptile does not are species
+choice, since temperament varies enormously inside one common name, and torpor. Read the
+Hamster block before any small-mammal build: it lists six pairs of pages that had drifted
+into duplicates, and warns that a topic which genuinely needs one page will try to take
+two, with the second usually the first one's prose restated.
 
 **Invertebrate.** The heat, UVB and thermostat pages come out. Handling inverts: Tarantula
 v3.0 spends three pages on why the answer is no, what interacting actually looks like,
@@ -298,6 +307,20 @@ pages 4 and 24 both draw from, so bird costs need checking against the MDX cost 
 rather than trusting the JS. Budgie and lovebird already have pre-v3 packages at 20 and
 21 pages, so those are rebuilds rather than new builds. Cockatiel is the cleanest first
 bird: seven articles including a feeding guide.
+
+Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
+distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
+outdoors, flooring and litter training, proofing, bonding, and spay and neuter, and landed
+at 39 pages. Hamster v3.0 needed far less of that, because the animal is solitary, lives
+two to three years, and has one enclosure standard rather than a housing philosophy, and
+landed at 36. Take 34 to 39 as the mammal range rather than a single number, and let the
+animal's social life decide where in it you fall: a species that is kept in pairs needs a
+companionship page and a bonding page, and a solitary one needs neither.
+
+Both mammal builds also want a page reptiles never need, on choosing which animal within
+the common name, because temperament varies more inside "rabbit" and "hamster" than inside
+"ball python." One page, not two: see the hamster section below for what happens when it
+takes two.
 
 ### Page count is a target, not a budget
 
@@ -705,9 +728,12 @@ replaced with indoors versus outdoors and temperature, flooring and litter train
 rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
 because GI stasis needs three pages on its own. It came out at 39 pages.
 
-For the next mammal build: expect 38 to 40 pages, expect the health section to be the
-long one rather than the husbandry section, and expect two pages that reptiles never need,
-a vet-choice page and a companionship page.
+For the next mammal build: expect the health section to be the long one rather than the
+husbandry section, and expect a vet-choice page, which reptiles never need. The 38 to 40
+page range this note used to predict held for the rabbit and did not survive contact with
+the hamster, which came out at 36. See the hamster section below: the companionship page
+predicted here does not exist for a solitary species, and the page count follows the
+animal's social life more than anything else.
 
 Already covered, do not rewrite: `rabbit-tank-setup-guide.mdx` carries the House Rabbit
 Society space standard and the litter-training method. `rabbit-feeding-guide.mdx` carries
@@ -750,6 +776,41 @@ schedule on page 24, and the droppings reference table on page 25.
   guide's range is the better figure and is what the package uses. Same for greens, where
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
+
+### Hamster v3.0 (Sep 2026)
+
+The second mammal package, and the one that shows the small-mammal skeleton runs
+narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
+combining six pairs of pages that shared a topic. Every block removed is in
+`notes/hamster-v4-notes.md` in full markup.
+
+Where v2.0 had drifted wider than the reptile skeleton, and what it cost:
+
+| Drift | Template shape | Fixed to |
+| --- | --- | --- |
+| Two species-choice pages | The skeleton has none | One page, choosing and where from |
+| Two mistakes pages, one of them named "mistakes" twice | One (template page 13) | One, folded in with the first week |
+| Two torpor pages, on top of a torpor section on the temperature page | One behavior page (template page 20) | One |
+| Two legality pages | Not in the skeleton at all | One |
+| Power outages and travel on separate pages | One (template page 28) | One |
+| Enrichment log as its own page | One (template page 32) | Folded into the equipment log |
+
+For the next small-mammal build: a hamster is a shorter animal than a rabbit, so expect
+34 to 37 rather than the 38 to 40 the rabbit note predicts, and expect the split to fall
+the same way, with the health section long and the husbandry section short. The two
+places a rodent needs pages a reptile does not are species choice, because temperament
+varies enormously inside one common name, and torpor.
+
+Watch for the same drift: a topic that genuinely needs a page will try to take two, and
+the second page is usually the first one's prose restated. Three of the six merges above
+were pure duplication and cost nothing to make.
+
+Already covered, do not rewrite: the bedding-depth study is reported with all three of
+its figures on page 7 and is the package's strongest single page.
+
+Known gaps, listed in the notes file: there is no target weight anywhere despite the
+owner log asking for grams, no sexing page despite the guide telling the reader twice to
+check the sex, and nothing on cheek pouches.
 
 ### Tarantula v3.0 (Sep 2026)
 
