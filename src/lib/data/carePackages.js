@@ -212,9 +212,9 @@ export const CARE_PACKAGES = [
     emoji: '🐠',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 22,
+    pages: 36,
     version: '1.0',
-    blurb: 'Complete 22-page printable guide with tank and heater targets, the water numbers that actually matter, fishless cycling, health triage, and owner checklists.',
+    blurb: 'Complete 36-page printable guide with tank and heater targets, the water numbers that actually matter, a full fishless cycling walkthrough, health triage, and owner checklists.',
     bullets: [
       'Tank, heater and filter, water parameters, cycling and water changes, diet, and enrichment in one guide',
       'Health section with red flags, fin rot, ich and velvet, swim bladder, dropsy and columnaris, and stress, aggression and tankmate guidance',

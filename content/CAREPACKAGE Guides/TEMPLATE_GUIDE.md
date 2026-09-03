@@ -271,3 +271,57 @@ thermostat type guidance on page 7, and the prey tiers on page 11.
 MDX on cool side (76 to 80&deg;F vs 75 to 80&deg;F) and humidity (50 to 60% vs 55 to 70%).
 The MDX wins per the rule above and is what the package uses, but the JS copy still needs
 correcting so the two stop drifting.
+
+### Betta Fish v1.0 (Sep 2026)
+
+The first aquatic package on the v3 template. `goldfish.html` and `axolotl.html` predate
+v3 and carry none of its CSS additions, so the aquatic layout here was derived from the
+adaptation note in this guide rather than copied from them. It came out at 36 pages, not
+the 28 to 30 that note predicts, because cycling, water chemistry, and water changes need
+a page each rather than a shared one. Update that estimate to 34 to 36 for the next
+aquatic build.
+
+Already covered, do not rewrite: `betta-fish-water-parameters-guide.mdx` carries the full
+parameter table, the testing schedule, and the GH/KH note, and it is the dedicated guide
+so it wins over `betta-fish-tank-setup-guide.mdx` on pH (6.5 to 7.5, not 6.5 to 7.8).
+`betta-fish-enrichment-guide.mdx` covers all three studies and the mirror finding.
+`betta-fish-feeding-guide.mdx` covers portioning, the never-feed list, and the six
+refusal reasons. Note `reptile-emergency-plan-guide.mdx` does **not** transfer: it is
+reptile-only, and an aquarium blackout is a different problem with different physics.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package |
+| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package |
+| Transporting and moving fish | 30 | Cross-species (aquatic) | Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
+| Aquarium salt, and medicating a small tank | 18, 19 | Cross-species (aquatic) | Nothing on dosing or duration. 1 tsp per gallon, the 10-day ceiling, replacing only what a water change removes, and why plants, snails, and shrimp need a hospital tank. Also the carbon-removal and aeration rules that apply to every treatment |
+| Betta body condition from above | 15 | Betta | Nothing. `betta-fish-feeding-guide.mdx` gives portions but no way to check whether they are right. The top-down torpedo test, shoulders versus the middle third, and the one-pellet correction over 2 weeks |
+| Velvet, columnaris and telling them apart | 19 | Betta | Expand `betta-fish-health-issues-guide.mdx`, not a new URL. It names both in a sentence each. The package needs the differential (grains versus metallic dust versus cottony saddle) and, more importantly, that ich wants the temperature raised and columnaris wants it lowered |
+| Betta tankmates and sororities | 22 | Betta | Nothing, and the site currently points the wrong way (see drift below). The honest version: alone is the default, snails are usually fine, shrimp and schooling fish are risky and need a real separation plan, and the group-housing research is about fish reared together from hatching |
+| Sexing a betta | 28 (glossary) | Betta | Nothing on the site. Only in the glossary here because there was no page to justify, but a short article would let a future edition carry it properly: ovipositor, ventral fin length, anal fin shape, beard size, and why the egg spot is suggestive rather than conclusive |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the whole blackout timeline on page 29, the aquarium salt dose and its 10-day
+ceiling on page 18, the ich treatment temperature of 82&deg;F (28&deg;C) and the
+columnaris instruction to drop toward 76&deg;F (24.5&deg;C) on pages 18 and 19, the
+fishless cycling ammonia doses and the completion test on page 7, the body-condition
+descriptions on page 15, and the transport durations on page 30.
+
+**Source drift found while building:**
+
+- `betta-fish-cost-guide.mdx` contradicts itself: "$20 to $30 a month" is $240 to $360 a
+  year, against its own stated "$100 to $250 a year." The package uses an itemised
+  $6 to $20 a month ($72 to $240 a year), which agrees with the annual figure. The
+  monthly line in the article needs correcting.
+- `src/lib/data/guides/fish.js` says brief mirror exposure is "natural and healthy in
+  small doses." `betta-fish-enrichment-guide.mdx` says the opposite, and is right: a
+  mirror is what researchers use to provoke a measurable stress response. The MDX wins,
+  and the JS copy needs fixing.
+- `src/lib/data/guides/fish.js` recommends "sororities of five or more females with
+  plenty of visual barriers" without the rearing caveat, which reads as an endorsement.
+  Same fix needed.
+- `src/lib/data/guides/fish.js` says feed what is finished "in about two minutes";
+  `betta-fish-feeding-guide.mdx` says about 60 seconds. The MDX wins.
+- `betta-fish-tank-setup-guide.mdx` gives pH 6.5 to 7.8; the dedicated
+  `betta-fish-water-parameters-guide.mdx` gives 6.5 to 7.5. The dedicated guide wins and
+  the setup guide should be brought into line.

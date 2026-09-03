@@ -3,10 +3,11 @@
 > skeleton), `TEMPLATE_GUIDE.md` (page-by-page content sourcing), and
 > `rebuilt/` for the PDFs. Build new packages there, not here.
 >
-> Ball Python has already been rebuilt on that template at
-> `content/CAREPACKAGE Guides/source/ball-python.html` (v2.0, 34 pages).
-> Betta Fish, Hamster, Rabbit, Tarantula and Corn Snake are still only in
-> this folder and need porting.
+> Ball Python and Betta Fish have already been rebuilt on that template at
+> `content/CAREPACKAGE Guides/source/ball-python.html` (v2.0, 34 pages) and
+> `source/betta-fish.html` (v1.0, 36 pages).
+> Hamster, Rabbit, Tarantula and Corn Snake are still only in this folder
+> and need porting.
 
 # Care package sources
 
