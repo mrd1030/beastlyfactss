@@ -235,3 +235,13 @@ the glass, a small unplugged compact coil bulb lies retired on the tabletop,
 slightly out of focus. Warm amber light against cool shadow, red desert sand
 and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
+
+### bearded-dragon-growth-weight-checks.jpg
+Photorealistic photograph of an adult bearded dragon standing calmly on the
+flat platform of a small digital kitchen scale on a light wood counter, a
+person's hand resting nearby ready to steady it rather than gripping the
+animal, the scale's display softly out of focus so no digits are legible. A
+small notebook and pen sit just behind the scale, slightly blurred. Bright
+clean daylight from a window at the left, warm terracotta and honey palette,
+sharpest on the dragon's face and front legs, 50mm, f/2.8, 3:2. No text,
+logos, or brand markings anywhere.
