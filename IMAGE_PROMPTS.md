@@ -235,3 +235,11 @@ the glass, a small unplugged compact coil bulb lies retired on the tabletop,
 slightly out of focus. Warm amber light against cool shadow, red desert sand
 and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
+
+### bearded-dragon-eggs-and-egg-binding.jpg
+Photorealistic photograph of an adult female bearded dragon standing beside an
+open plastic lay box filled with damp dark soil and sand on a terrarium floor,
+one small test-dig visible in the substrate near her front feet. Warm
+terracotta light from an overhead basking lamp just out of frame, earthy brown
+and terracotta palette, sharpest on the dragon's face and the lay box rim,
+50mm, f/2.8, 3:2. No text, logos, or brand markings anywhere.
