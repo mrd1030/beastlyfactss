@@ -313,6 +313,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/amano-shrimp-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/angelfish-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -389,6 +393,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/canary-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/cardinal-tetra-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -401,6 +409,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1620,
     "height": 1080
   },
+  "/assets/images/cherry-shrimp-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/chinchilla-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -409,9 +421,17 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/cockatoo-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/cockatoo-feather-plucking.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/conure-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/corn-snake-enrichment.jpg": {
     "width": 1168,
@@ -438,6 +458,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/dog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/emperor-scorpion-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -521,6 +545,14 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/ghost-shrimp-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/giant-millipede-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/goldfish-tank-size.jpg": {
     "width": 1620,
     "height": 1080
@@ -597,6 +629,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/parrotlet-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/persian-cat-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -605,9 +641,17 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/praying-mantis-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/praying-mantis-ootheca.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/quaker-parakeet-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/rabbit-enrichment.jpg": {
     "width": 1168,
@@ -645,11 +689,19 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/stick-insect-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/sugar-glider-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
   "/assets/images/swordtail-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/tarantula-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -666,6 +718,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/zebra-danio-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/zebra-finch-enrichment.jpg": {
     "width": 1168,
     "height": 784
   }
