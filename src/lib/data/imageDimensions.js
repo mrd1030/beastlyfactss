@@ -309,6 +309,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/african-fat-tail-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/african-grey-parrot-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -549,6 +553,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/gargoyle-gecko-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/gerbil-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -617,6 +625,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/leaf-tailed-gecko-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/leopard-gecko-temperature.jpg": {
     "width": 784,
     "height": 1168
@@ -630,6 +642,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/molly-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/mourning-gecko-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
