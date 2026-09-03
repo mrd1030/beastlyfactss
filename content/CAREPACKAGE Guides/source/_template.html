@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>{{ANIMAL_NAME}} Care Package</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap');
+
+@page{size:8.5in 11in;margin:0;} /* fixes a Chromium print-to-PDF rounding gap at the bottom edge of every page - keep this on every guide */
+
+:root{
+  --ink:#2B2420;
+  --muted:#6E6459;
+  --faint:#A79E92;
+  --paper:#FFFFFF;
+  --cream:#FBF7F0;
+  --line:#E4DCCC;
+  --accent:{{ACCENT}};        /* e.g. #B5551F bearded dragon, #5C6B7A leopard gecko - pick a color not yet used by another animal */
+  --accent-dark:{{ACCENT_DARK}};
+  --accent-tint:{{ACCENT_TINT}};
+  --danger:#9B3226;
+  --danger-tint:#F6E2DE;
+  --good:#4F6B44;
+  --good-tint:#E7EEE1;
+  --info:#3D5A73;
+  --info-tint:#DFE8ED;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#DCD5C8;}
+.page{
+  position:relative;
+  width:8.5in;
+  height:11in;
+  background:var(--paper);
+  padding:0.62in 0.66in 0.55in 0.66in;
+  font-family:'Inter',sans-serif;
+  color:var(--ink);
+  break-after:page;
+  overflow:hidden;
+}
+.page:last-child{break-after:auto;}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);}
+.eyebrow{
+  font-family:'Inter',sans-serif;font-weight:700;font-size:9.5pt;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:4pt;
+}
+.pagefoot{
+  position:absolute;bottom:0.3in;left:0.66in;right:0.66in;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:8pt;color:var(--faint);border-top:0.75pt solid var(--line);padding-top:6pt;
+}
+.pagefoot .brand{font-family:'Fraunces',serif;font-weight:600;color:var(--faint);}
+p{line-height:1.5;font-size:10.3pt;color:var(--ink);}
+.muted{color:var(--muted);}
+ul,ol{padding-left:16pt;margin-top:4pt;}
+li{line-height:1.5;font-size:10.3pt;margin-bottom:3pt;}
+table{width:100%;border-collapse:collapse;margin-top:8pt;font-size:9.7pt;}
+th{
+  text-align:left;background:var(--accent-tint);color:var(--accent-dark);
+  font-family:'Inter',sans-serif;font-weight:700;font-size:8.6pt;letter-spacing:0.04em;
+  text-transform:uppercase;padding:6pt 9pt;
+}
+td{padding:7pt 9pt;border-bottom:0.75pt solid var(--line);vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+.callout{border-radius:8pt;padding:11pt 14pt;margin:10pt 0;border-left:3.5pt solid;}
+.callout .label{font-family:'Inter',sans-serif;font-weight:800;font-size:8.6pt;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3pt;display:block;}
+.callout.never{background:var(--danger-tint);border-color:var(--danger);}
+.callout.never .label{color:var(--danger);}
+.callout.tip{background:var(--good-tint);border-color:var(--good);}
+.callout.tip .label{color:var(--good);}
+.callout.info{background:var(--info-tint);border-color:var(--info);}
+.callout.info .label{color:var(--info);}
+.section-title{font-size:19pt;margin-bottom:2pt;}
+.section-sub{font-size:9.8pt;color:var(--muted);margin-bottom:12pt;}
+.chip{
+  display:inline-block;font-size:8.3pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;
+  background:var(--accent-tint);color:var(--accent-dark);border-radius:20pt;padding:3pt 10pt;margin-right:5pt;
+}
+.check-item{display:flex;gap:8pt;align-items:flex-start;margin-bottom:6pt;font-size:10pt;}
+.box{width:10pt;height:10pt;border:1.4pt solid var(--faint);border-radius:2.5pt;flex-shrink:0;margin-top:2pt;}
+.two-col{display:flex;gap:24pt;}
+.col{flex:1;}
+.divider{height:0.75pt;background:var(--line);margin:12pt 0;}
+h2.h{font-size:13.5pt;margin:14pt 0 5pt 0;}
+h3.h{font-size:11pt;margin:10pt 0 4pt 0;color:var(--accent-dark);}
+.small{font-size:8.8pt;color:var(--faint);}
+.toc-label{font-family:'Inter',sans-serif;font-weight:700;font-size:9pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-top:13pt;margin-bottom:1pt;border-bottom:1pt solid var(--line);padding-bottom:4pt;}
+.toc-label:first-of-type{margin-top:16pt;}
+.toc table{margin-top:0;}
+.toc td{padding:5pt 0;border-bottom:none;}
+</style>
+</head>
+<body>
+
+<!--
+=====================================================================
+CARE PACKAGE TEMPLATE - read this block, then delete it before render
+=====================================================================
+Every {{DOUBLE_BRACE}} token below is a placeholder to fill in. Icons
+must be small inline SVGs matching the existing minimalist style -
+never a raw emoji character or HTML entity (headless Chromium print
+can render those as broken/wrong glyphs; caught this bug 3 times).
+
+Full page-by-page content sourcing (which site file/field feeds each
+page) lives in ../TEMPLATE_GUIDE.md - read that alongside this file.
+
+Page count and the "FULL CARE GUIDE" / "HEALTH" module counts vary by
+animal (20-22 pages seen so far). Drop or duplicate modules as needed,
+then fix the TOC page numbers and pagefoot page numbers to match.
+=====================================================================
+-->
+
+<!-- PAGE 1: COVER — SOURCE: encyclopedia bio.overview (tagline/hook), guides tagline field -->
+<div class="page" style="padding:0;color:#F4EADB;">
+  <div style="position:absolute;top:-3px;left:-3px;right:-3px;bottom:-4px;background:linear-gradient(165deg,#2B2420 0%,#3A2E24 55%,#4A3524 100%);"></div>
+  <div style="position:relative;height:100%;display:flex;flex-direction:row;">
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;min-width:0;">
+    <div style="padding:0.75in 0 0 0.75in;">
+      <div style="display:flex;align-items:center;gap:8pt;">
+        {{COVER_ICON_SVG}} <!-- small inline SVG, ~24-26px, animal silhouette or motif, matches accent palette -->
+        <span style="font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.16em;font-size:9.5pt;text-transform:uppercase;color:#D8A876;">Beastly Facts &middot; Care Package</span>
+      </div>
+    </div>
+    <div style="padding:0 0.4in 0 0.75in;">
+      <div style="font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.1em;font-size:10pt;text-transform:uppercase;color:#C77C3F;margin-bottom:10pt;">{{ANIMAL_NAME}} &middot; {{SCIENTIFIC_NAME}}</div>
+      <h1 style="font-family:'Fraunces',serif;font-weight:600;font-size:37pt;line-height:1.1;color:#FBF3E7;">{{COVER_HEADLINE}}</h1>
+      <p style="color:#D8CBB8;font-size:11pt;margin-top:15pt;line-height:1.55;">{{COVER_SUBHEAD}}</p>
+    </div>
+    <div style="padding:0 0.4in 0.75in 0.75in;display:flex;gap:10pt;flex-wrap:wrap;">
+      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.6pt;font-weight:600;padding:5pt 12pt;border-radius:20pt;">{{PAGE_COUNT}} pages</span>
+      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.6pt;font-weight:600;padding:5pt 12pt;border-radius:20pt;">{{DIFFICULTY}}</span>
+      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.6pt;font-weight:600;padding:5pt 12pt;border-radius:20pt;">Print or tablet</span>
+      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.6pt;font-weight:600;padding:5pt 12pt;border-radius:20pt;">Version 1.0 &middot; {{MONTH_YEAR}}</span>
+    </div>
+  </div>
+  <div style="width:3.4in;position:relative;flex-shrink:0;overflow:hidden;">
+    <img src="{{COVER_IMAGE_DATA_URI}}" style="width:100%;height:100%;object-fit:cover;object-position:50% 32%;display:block;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 26%);mask-image:linear-gradient(90deg,transparent 0%,#000 26%);" />
+    <!-- the mask fades the photo's own left edge to transparent so the diagonal
+         background gradient above shows through underneath - do NOT go back to
+         a flat-color overlay div, it only matches the gradient at one height
+         and leaves a visible seam (this was a real bug, fixed once already) -->
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(43,36,32,0.2) 0%,rgba(43,36,32,0) 22%,rgba(43,36,32,0) 68%,rgba(30,24,18,0.45) 100%);"></div>
+  </div>
+  </div>
+</div>
+
+<!-- PAGE 2: CONTENTS — SOURCE: none, this is just your own outline once pages are finalized -->
+<div class="page">
+  <div class="eyebrow">Contents</div>
+  <h1 class="section-title">What's inside</h1>
+  <div class="section-sub">Every page is written to be used, not just read once.</div>
+
+  <div class="toc">
+    <div class="toc-label">Getting Started</div>
+    <table>
+      <tr><td>How to Use This Package</td><td class="small" style="text-align:right;">3</td></tr>
+    </table>
+
+    <div class="toc-label">Section 01 &middot; Quick Profile</div>
+    <table>
+      <tr><td>Quick Profile &amp; Cost Overview</td><td class="small" style="text-align:right;">4</td></tr>
+    </table>
+
+    <div class="toc-label">Section 02 &middot; Full Care Guide</div>
+    <table>
+      <!-- 3-4 rows here depending on animal type, see TEMPLATE_GUIDE.md "Full Care Guide module" -->
+      <tr><td>{{CARE_PAGE_1_TITLE}}</td><td class="small" style="text-align:right;">5</td></tr>
+      <tr><td>{{CARE_PAGE_2_TITLE}}</td><td class="small" style="text-align:right;">6</td></tr>
+      <tr><td>{{CARE_PAGE_3_TITLE}}</td><td class="small" style="text-align:right;">7</td></tr>
+      <tr><td>Common Mistakes &amp; Enrichment</td><td class="small" style="text-align:right;">8</td></tr>
+    </table>
+
+    <div class="toc-label">Section 03 &middot; Health &amp; Common Issues</div>
+    <table>
+      <tr><td>Health Red Flags &amp; What to Tell the Vet</td><td class="small" style="text-align:right;">9</td></tr>
+      <!-- one row per condition-pair page, see TEMPLATE_GUIDE.md -->
+      <tr><td>{{CONDITION_PAGE_1_TITLE}}</td><td class="small" style="text-align:right;">10</td></tr>
+      <tr><td>{{CONDITION_PAGE_2_TITLE}}</td><td class="small" style="text-align:right;">11</td></tr>
+    </table>
+
+    <div class="toc-label">Section 04 &middot; Quick Reference</div>
+    <table>
+      <tr><td>Setup Checklist &amp; Targets</td><td class="small" style="text-align:right;">12</td></tr>
+      <tr><td>Emergency &amp; Quick Targets Card</td><td class="small" style="text-align:right;">13</td></tr>
+    </table>
+
+    <div class="toc-label">Section 05 &middot; Owner Tools</div>
+    <table>
+      <tr><td>Budget &amp; Shopping List</td><td class="small" style="text-align:right;">14</td></tr>
+      <tr><td>First 30 Days Checklist</td><td class="small" style="text-align:right;">15</td></tr>
+      <tr><td>Symptom Quick Reference</td><td class="small" style="text-align:right;">16</td></tr>
+      <tr><td>Daily &amp; Weekly Routine</td><td class="small" style="text-align:right;">17</td></tr>
+      <tr><td>Owner Log</td><td class="small" style="text-align:right;">18</td></tr>
+      <tr><td>Enrichment Checklist</td><td class="small" style="text-align:right;">19</td></tr>
+    </table>
+
+    <div class="toc-label">Reference</div>
+    <table>
+      <tr><td>Glossary</td><td class="small" style="text-align:right;">20</td></tr>
+    </table>
+  </div>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>2</span></div>
+</div>
+
+<!-- PAGE 3: HOW TO USE — SOURCE: none, boilerplate framing, only reword the "why this package exists" callout if the animal has a specific outdated-care-sheet problem worth naming -->
+<div class="page">
+  <div class="eyebrow">Start Here</div>
+  <h1 class="section-title">How to use this package</h1>
+  <p class="section-sub">Three ways to get value from it, depending on where you are right now.</p>
+
+  <h2 class="h">If you haven't set up yet</h2>
+  <p>{{PRE_SETUP_GUIDANCE}}</p>
+
+  <h2 class="h">If your {{ANIMAL_COMMON_NAME}} is already set up</h2>
+  <p>{{AUDIT_GUIDANCE}}</p>
+
+  <h2 class="h">Print these first</h2>
+  <div class="two-col" style="margin-top:8pt;">
+    <div class="col">
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Setup Checklist &amp; Targets</span></div>
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Emergency &amp; Quick Targets Card</span></div>
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Symptom Quick Reference</span></div>
+    </div>
+    <div class="col">
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Daily &amp; Weekly Routine</span></div>
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Owner Log</span></div>
+      <div class="check-item"><div class="box"></div><span>Page {{N}}: Enrichment Checklist</span></div>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <span class="label">Why this package exists</span>
+    {{OUTDATED_CARE_SHEET_CONTEXT}}
+  </div>
+
+  <div class="callout never">
+    <span class="label">Not a substitute for</span>
+    A {{VET_OR_SPECIALIST}} experienced with {{ANIMAL_COMMON_NAME}}s. This is a husbandry reference for day-to-day care. Anything urgent or health-related is always a professional call, not a page in this book.
+  </div>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>3</span></div>
+</div>
+
+<!-- PAGE 4: QUICK PROFILE — SOURCE: encyclopedia/{category}.js bio{} fields (scientific, adultSize, wildLifespan, origin/habitat, wildDiet, conservation); guides/{category}.js costs{setup,annual} and funFact -->
+<div class="page">
+  <div class="eyebrow">Section 01</div>
+  <h1 class="section-title">Quick profile</h1>
+  <div class="section-sub">Everything at a glance before you read the detail.</div>
+
+  <table>
+    <tr><td style="width:38%;color:var(--muted);font-weight:600;">Scientific name</td><td><em>{{SCIENTIFIC_NAME}}</em></td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Adult size</td><td>{{ADULT_SIZE}}</td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Captive lifespan</td><td>{{CAPTIVE_LIFESPAN}}</td></tr>
+    <!-- CAPTIVE lifespan, not wildLifespan - encyclopedia bio.wildLifespan is the WILD figure only, mixing these up is a bug caught 4 separate times across this project -->
+    <tr><td style="color:var(--muted);font-weight:600;">Native range</td><td>{{ORIGIN_HABITAT}}</td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Diet type</td><td>{{DIET_TYPE}}</td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Enclosure minimum (adult)</td><td>{{ENCLOSURE_MIN}}</td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Handling difficulty</td><td>{{HANDLING_DIFFICULTY}}</td></tr>
+    <tr><td style="color:var(--muted);font-weight:600;">Conservation status</td><td>{{CONSERVATION}}</td></tr>
+  </table>
+
+  <h2 class="h">Cost overview</h2>
+  <div class="two-col">
+    <div class="col">
+      <p style="font-weight:700;color:var(--accent-dark);margin-bottom:2pt;">Initial setup</p>
+      <p class="muted" style="font-size:10pt;">{{SETUP_COST_RANGE}}</p>
+    </div>
+    <div class="col">
+      <p style="font-weight:700;color:var(--accent-dark);margin-bottom:2pt;">Monthly ongoing</p>
+      <p class="muted" style="font-size:10pt;">{{MONTHLY_COST_RANGE}}</p>
+    </div>
+  </div>
+  <div class="callout info" style="margin-top:10pt;">
+    <span class="label">Budget for the worst case too</span>
+    {{EMERGENCY_COST_NOTE}} <!-- cross-check against the animal's own -cost-guide.mdx, not just the guides/*.js costs{} block, they've drifted before -->
+  </div>
+
+  <h2 class="h">Fun facts worth knowing</h2>
+  <ul>
+    <li>{{FUN_FACT_1}}</li>
+    <li>{{FUN_FACT_2}}</li>
+    <li>{{FUN_FACT_3}}</li>
+  </ul>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>4</span></div>
+</div>
+
+<!--
+  =================================================================
+  "FULL CARE GUIDE" MODULE — 3 to 4 pages, repeat/adapt per animal
+  SOURCE per page: the matching content/guides/{slug}-*-guide.mdx
+  deep dive is the primary source (most detailed, most recently
+  audited); guides/{category}.js sections{housing,diet} is a
+  shorter secondary source - if they disagree, the MDX wins, but
+  flag the guides/*.js copy to fix too so they don't drift apart.
+  =================================================================
+-->
+
+<!-- PAGE 5: HOUSING & ENCLOSURE (with diagram) — SOURCE: {slug}-tank-setup-guide.mdx "Enclosure Size"/"Furnishings" sections -->
+<div class="page">
+  <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
+  <h1 class="section-title">Housing &amp; enclosure</h1>
+  <p>{{ENCLOSURE_SIZE_PARAGRAPH}}</p>
+
+  <!-- {{HOUSING_DIAGRAM_SVG}} - custom per animal, not templated; keep labeled
+       parts on 2-3 short lines each (title / number / sub-label) rather than
+       one long line, and keep it visually light - "feels completely packed"
+       was real user feedback on an earlier, denser version -->
+
+  <h2 class="h">What the diagram doesn't show</h2>
+  <p>{{HOUSING_ADDITIONAL_NOTES}}</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>5</span></div>
+</div>
+
+<!-- PAGE 6: TEMPERATURE / UVB / HUMIDITY (reptiles, birds) or FILTRATION & WATER QUALITY (fish/aquatic) — SOURCE: {slug}-tank-setup-guide.mdx "Temperature Gradient"/"UVB"/"Humidity" sections, or {slug}-temperature-guide.mdx if one exists -->
+<div class="page">
+  <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
+  <h1 class="section-title">{{PAGE_6_TITLE}}</h1>
+  <p>{{PAGE_6_INTRO}}</p>
+
+  <h2 class="h">{{PAGE_6_SUBSECTION_1}}</h2>
+  <p>{{PAGE_6_SUBSECTION_1_BODY}}</p>
+
+  <h2 class="h">{{PAGE_6_SUBSECTION_2}}</h2>
+  <p>{{PAGE_6_SUBSECTION_2_BODY}}</p>
+
+  <h2 class="h">Signs your setup needs adjusting</h2>
+  <ul>
+    <li>{{WARNING_SIGN_1}}</li>
+    <li>{{WARNING_SIGN_2}}</li>
+  </ul>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>6</span></div>
+</div>
+
+<!-- PAGE 7: SUBSTRATE, FURNISHINGS & HANDLING — SOURCE: {slug}-tank-setup-guide.mdx "Substrate"/"Furnishings" + {slug}-handling-guide.mdx -->
+<div class="page">
+  <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
+  <h1 class="section-title">Substrate, furnishings &amp; handling</h1>
+  <h2 class="h">Substrate</h2>
+  <p>{{SUBSTRATE_BODY}}</p>
+
+  <h2 class="h">Furnishings checklist</h2>
+  <ul>
+    <li>{{FURNISHING_1}}</li>
+    <li>{{FURNISHING_2}}</li>
+    <li>{{FURNISHING_3}}</li>
+  </ul>
+
+  <h2 class="h">Handling</h2>
+  <p>{{HANDLING_BODY}}</p>
+
+  <h2 class="h">First days in a new home</h2>
+  <p>{{ACCLIMATION_BODY}}</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>7</span></div>
+</div>
+
+<!-- PAGE 8: DIET & FEEDING BY AGE — SOURCE: {slug}-feeding-guide.mdx (primary), guides/{category}.js sections.diet (secondary) -->
+<div class="page">
+  <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
+  <h1 class="section-title">Diet &amp; feeding by age</h1>
+  <p>{{DIET_OVERVIEW}}</p>
+
+  <h2 class="h">Supplement schedule</h2>
+  <p>{{SUPPLEMENT_SCHEDULE}}</p> <!-- e.g. calcium/D3 dosing - this exact detail has been wrong more than once, verify against the feeding-guide.mdx wording specifically -->
+
+  <h2 class="h">Hydration</h2>
+  <p>{{HYDRATION_NOTES}}</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>8</span></div>
+</div>
+
+<!-- PAGE 9: COMMON MISTAKES & ENRICHMENT — SOURCE: {slug}-enrichment-guide.mdx (primary), guides/{category}.js sections.enrichment -->
+<div class="page">
+  <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
+  <h1 class="section-title">Common mistakes &amp; enrichment</h1>
+  <h2 class="h">Mistakes that cause the most harm</h2>
+  <ul>
+    <li>{{MISTAKE_1}}</li>
+    <li>{{MISTAKE_2}}</li>
+    <li>{{MISTAKE_3}}</li>
+  </ul>
+
+  <h2 class="h">Enrichment, by priority</h2>
+  <ul>
+    <li>{{ENRICHMENT_1}}</li>
+    <li>{{ENRICHMENT_2}}</li>
+    <li>{{ENRICHMENT_3}}</li>
+  </ul>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>9</span></div>
+</div>
+
+<!--
+  =================================================================
+  "HEALTH & COMMON ISSUES" MODULE — 1 red-flags page + 2-3 paired
+  condition pages, repeat the condition-page block as needed
+  SOURCE: {slug}-health-issues-guide.mdx is the primary source for
+  every page in this module - it's the most detailed and the one
+  the site-content audit checked most closely against real vet
+  sources (VCA, PetMD, Merck Veterinary Manual). guides/{category}.js
+  sections.health is a shorter secondary source only.
+  =================================================================
+-->
+
+<!-- PAGE 10: HEALTH RED FLAGS — SOURCE: {slug}-health-issues-guide.mdx intro/"when to call a vet" section -->
+<div class="page">
+  <div class="eyebrow">Section 03 &middot; Health &amp; Common Issues</div>
+  <h1 class="section-title">Health red flags</h1>
+  <h2 class="h">What to tell the vet</h2>
+  <ul>
+    <li>{{RED_FLAG_1}}</li>
+    <li>{{RED_FLAG_2}}</li>
+  </ul>
+
+  <h2 class="h">Why {{KEY_HUSBANDRY_FACTOR}} comes up first</h2>
+  <p>{{KEY_HUSBANDRY_FACTOR_BODY}}</p>
+
+  <h2 class="h">Normal vs. concerning</h2>
+  <table>
+    <tr><th>Normal</th><th>Concerning</th></tr>
+    <tr><td>{{NORMAL_1}}</td><td>{{CONCERNING_1}}</td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>10</span></div>
+</div>
+
+<!-- PAGE 11: CONDITION PAIR #1 — SOURCE: {slug}-health-issues-guide.mdx, the two most common/serious conditions -->
+<div class="page">
+  <div class="eyebrow">Section 03 &middot; Health &amp; Common Issues</div>
+  <h1 class="section-title">{{CONDITION_1_NAME}} &amp; {{CONDITION_2_NAME}}</h1>
+  <h2 class="h">{{CONDITION_1_NAME}}</h2>
+  <p>{{CONDITION_1_BODY}}</p>
+
+  <h2 class="h">{{CONDITION_2_NAME}}</h2>
+  <p>{{CONDITION_2_BODY}}</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>11</span></div>
+</div>
+
+<!-- PAGE 12 (optional 3rd condition pair, e.g. bearded-dragon added a 4th page for ADV) — duplicate PAGE 11's block as needed -->
+
+<!-- PAGE 13: SETUP CHECKLIST & TARGETS — SOURCE: {slug}-tank-setup-guide.mdx FAQs + numbers, cross-checked against guides/{category}.js checklist[] array -->
+<div class="page">
+  <div class="eyebrow">Section 04 &middot; Quick Reference</div>
+  <h1 class="section-title">Setup checklist &amp; targets</h1>
+  <h2 class="h">Essential setup checklist</h2>
+  <div class="two-col">
+    <div class="col">
+      <div class="check-item"><div class="box"></div><span>{{CHECKLIST_ITEM_1}}</span></div>
+      <div class="check-item"><div class="box"></div><span>{{CHECKLIST_ITEM_2}}</span></div>
+    </div>
+    <div class="col">
+      <div class="check-item"><div class="box"></div><span>{{CHECKLIST_ITEM_3}}</span></div>
+      <div class="check-item"><div class="box"></div><span>{{CHECKLIST_ITEM_4}}</span></div>
+    </div>
+  </div>
+
+  <h2 class="h">Temperature &amp; climate targets</h2>
+  <table>
+    <tr><th>Zone</th><th>Target</th></tr>
+    <tr><td>{{ZONE_1}}</td><td>{{TARGET_1}}</td></tr>
+  </table>
+
+  <h2 class="h">Before your {{ANIMAL_COMMON_NAME}} comes home</h2>
+  <p>{{PRE_ARRIVAL_NOTE}}</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>13</span></div>
+</div>
+
+<!-- PAGE 14: EMERGENCY & QUICK TARGETS CARD — SOURCE: aggregated from every number already used on pages 5-11, this page has no new content of its own, just restates it as a scan-fast reference -->
+<div class="page">
+  <div class="eyebrow">Section 04 &middot; Quick Reference</div>
+  <h1 class="section-title">Emergency &amp; quick targets</h1>
+  <div class="callout never">
+    <span class="label">Call a vet immediately if</span>
+    {{EMERGENCY_SIGNS}}
+  </div>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>14</span></div>
+</div>
+
+<!-- PAGE 15: BUDGET & SHOPPING LIST — SOURCE: {slug}-cost-guide.mdx (primary, most current), guides/{category}.js costs{setup,annual} arrays (secondary) -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">Budget &amp; shopping list</h1>
+  <table>
+    <tr><th>Item</th><th>Est. cost</th></tr>
+    <tr><td>{{SHOPPING_ITEM_1}}</td><td>{{SHOPPING_ITEM_1_COST}}</td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>15</span></div>
+</div>
+
+<!-- PAGE 16: FIRST 30 DAYS CHECKLIST — SOURCE: synthesized from the tank-setup + handling + health MDX guides, no single source file -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">First 30 days checklist</h1>
+  <h2 class="h">Week 1</h2>
+  <ul><li>{{WEEK_1_ITEM}}</li></ul>
+  <h2 class="h">Week 2 to 3</h2>
+  <ul><li>{{WEEK_2_3_ITEM}}</li></ul>
+  <h2 class="h">Week 4</h2>
+  <ul><li>{{WEEK_4_ITEM}}</li></ul>
+  <h2 class="h">Days 31 to 90</h2>
+  <ul><li>{{DAYS_31_90_ITEM}}</li></ul>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>16</span></div>
+</div>
+
+<!-- PAGE 17: SYMPTOM QUICK REFERENCE — SOURCE: {slug}-health-issues-guide.mdx, condensed to a table -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">Symptom quick reference</h1>
+  <table>
+    <tr><th>Symptom</th><th>Likely cause</th><th>Action</th></tr>
+    <tr><td>{{SYMPTOM_1}}</td><td>{{CAUSE_1}}</td><td>{{ACTION_1}}</td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>17</span></div>
+</div>
+
+<!-- PAGE 18: DAILY & WEEKLY ROUTINE — SOURCE: synthesized from tank-setup + feeding + enrichment MDX guides -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">Daily &amp; weekly routine</h1>
+  <h2 class="h">Daily</h2>
+  <ul><li>{{DAILY_TASK}}</li></ul>
+  <h2 class="h">Weekly</h2>
+  <ul><li>{{WEEKLY_TASK}}</li></ul>
+  <h2 class="h">Monthly</h2>
+  <ul><li>{{MONTHLY_TASK}}</li></ul>
+  <h2 class="h">Seasonal</h2>
+  <ul><li>{{SEASONAL_TASK}}</li></ul>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>18</span></div>
+</div>
+
+<!-- PAGE 19: OWNER LOG — SOURCE: none, blank fillable template -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">Owner log</h1>
+  <h2 class="h">Equipment log</h2>
+  <table>
+    <tr><th>Item</th><th>Installed</th><th>Replace by</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+  <h2 class="h">Vet visit log</h2>
+  <table>
+    <tr><th>Date</th><th>Reason</th><th>Notes</th></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>19</span></div>
+</div>
+
+<!-- PAGE 20: ENRICHMENT CHECKLIST — SOURCE: {slug}-enrichment-guide.mdx, condensed to a checklist -->
+<div class="page">
+  <div class="eyebrow">Section 05 &middot; Owner Tools</div>
+  <h1 class="section-title">Enrichment checklist</h1>
+  <h2 class="h">Setup</h2>
+  <div class="check-item"><div class="box"></div><span>{{ENRICHMENT_SETUP_ITEM}}</span></div>
+  <h2 class="h">Monthly review</h2>
+  <div class="check-item"><div class="box"></div><span>{{ENRICHMENT_REVIEW_ITEM}}</span></div>
+  <h2 class="h">Enrichment log</h2>
+  <table>
+    <tr><th>Date</th><th>What changed</th></tr>
+    <tr><td></td><td></td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>20</span></div>
+</div>
+
+<!-- LAST PAGE: GLOSSARY — SOURCE: terms actually used earlier in this same document, define each one -->
+<div class="page">
+  <div class="eyebrow">Reference</div>
+  <h1 class="section-title">Glossary</h1>
+  <table>
+    <tr><td style="width:28%;font-weight:700;">{{TERM_1}}</td><td>{{DEFINITION_1}}</td></tr>
+  </table>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>{{ANIMAL_NAME}} Care Package</span><span>21</span></div>
+</div>
+
+</body>
+</html>

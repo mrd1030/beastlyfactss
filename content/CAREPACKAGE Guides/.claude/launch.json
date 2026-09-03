@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "beastlyfacts-dev",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-Command", "Set-Location -LiteralPath 'C:\\Users\\Mike D\\beastlyfactss\\beastlyfactss'; npm run dev"],
+      "port": 5173,
+      "autoPort": true
+    }
+  ]
+}
