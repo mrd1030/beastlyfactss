@@ -29,6 +29,13 @@
 //      An unbalanced tag breaks the MDX parse at build time; catching it here names
 //      the file instead of failing deep inside the bundler.
 //
+//   5. Affiliate articles carry <AffiliateDisclosure />.
+//      The rule has always been "affiliate: true pairs with the disclosure right
+//      after the H1", and all 67 articles at the time paired the two, but nothing
+//      enforced it: an 87-article batch then shipped to a branch with affiliate
+//      links in prose and no disclosure on any of them. Flags any article that
+//      sets affiliate: true or uses <AffiliateLink> without a disclosure.
+//
 // Exits 1 on any violation, so it can gate a build.
 // Run: node scripts/check-affiliate-mdx.mjs [--verbose]
 
@@ -74,6 +81,7 @@ const badSlugs = [];
 const duplicates = [];
 const overCap = [];
 const unbalanced = [];
+const missingDisclosure = [];
 
 const files = walkMdx('content');
 let totalLinks = 0;
@@ -91,6 +99,11 @@ for (const file of files) {
   }
 
   const { frontmatter, body } = splitFrontmatter(text);
+
+  const isAffiliate = /^affiliate:\s*true/m.test(frontmatter);
+  if ((isAffiliate || opens > 0) && !body.includes('<AffiliateDisclosure')) {
+    missingDisclosure.push({ name });
+  }
 
   for (const slug of relatedProductSlugs(frontmatter)) {
     if (!productSlugs.has(slug)) badSlugs.push({ name, slug });
@@ -170,7 +183,14 @@ if (overCap.length) {
   );
 }
 
-const failures = unbalanced.length + badSlugs.length + duplicates.length + overCap.length;
+if (missingDisclosure.length) {
+  console.log(`\nFAIL - ${missingDisclosure.length} affiliate article(s) missing <AffiliateDisclosure />:`);
+  for (const m of missingDisclosure) console.log(`  ${m.name}`);
+  console.log('\nAdd <AffiliateDisclosure /> immediately after the H1, matching every other affiliate article.');
+}
+
+const failures =
+  unbalanced.length + badSlugs.length + duplicates.length + overCap.length + missingDisclosure.length;
 
 if (!failures) console.log('All clear.');
 

@@ -49,3 +49,89 @@ create policy "anyone can subscribe"
 
 revoke all on public.push_subscriptions from anon, authenticated;
 grant insert on public.push_subscriptions to anon, authenticated;
+
+-- --------------------------------------------------------------------------
+-- Daily send: ledger + schedule
+-- --------------------------------------------------------------------------
+--
+-- Applied to this project already (migrations notification_sends_ledger,
+-- enable_pg_cron, schedule_daily_push_notification). Kept here so the whole
+-- push setup reads in one place, and so it can be rebuilt from scratch.
+--
+-- Why a schedule at all: this site's content is git-based, and every article
+-- ships deployed and crawlable with a future frontmatter date as the only
+-- thing holding it out of the blog list and the feed (see src/lib/utils/date.js
+-- and public/_worker.js). Nothing happens at publish time to hang a send off,
+-- so the schedule watches the dates instead and the edge function reads the
+-- live /articles.json to decide what, if anything, went live today.
+--
+-- This started life as a GitHub Actions cron and moved here because Actions
+-- could not hit a morning reliably: on this repo, scheduled runs landed
+-- between 34 minutes and 6 hours late, every single time. pg_cron runs inside
+-- Postgres and fires on the minute.
+
+create extension if not exists pg_cron;
+create extension if not exists pg_net;
+
+-- One row per calendar day the daily push went out. The function inserts here
+-- BEFORE sending, so a retry, the second cron entry, or a hand-run of the
+-- daily mode all hit the primary key and no-op rather than buzzing the same
+-- phone twice.
+create table if not exists public.notification_sends (
+  send_date date primary key,
+  article_count integer not null default 0,
+  sent_at timestamptz not null default now()
+);
+
+alter table public.notification_sends enable row level security;
+
+-- No policies at all: only the edge function touches this, via the service
+-- role key, which bypasses RLS. Same posture as push_subscriptions above.
+revoke all on public.notification_sends from anon, authenticated;
+
+-- The shared secret lives in Vault so it never appears in the job definition
+-- or in cron.job_run_details. Set it once (use your own value):
+--
+--   select vault.create_secret('<SEND_NOTIFICATION_SECRET>', 'send_notification_secret');
+--
+-- Two entries because pg_cron schedules in UTC while the site's day is
+-- America/New_York: 13:00 UTC is 9am EDT, 14:00 UTC is 9am EST. The function
+-- checks the real ET hour and no-ops on whichever entry is not 9am, so exactly
+-- one send happens per day, year round, with nothing to change at the
+-- daylight-saving boundaries.
+
+select cron.schedule(
+  'notify-new-posts-1300z',
+  '0 13 * * *',
+  $job$
+  select net.http_post(
+    url := 'https://ipqqeofzlwvfnunduuru.supabase.co/functions/v1/send-notification',
+    headers := jsonb_build_object(
+      'content-type', 'application/json',
+      'x-send-secret', (select decrypted_secret from vault.decrypted_secrets where name = 'send_notification_secret')
+    ),
+    body := jsonb_build_object('mode', 'daily')
+  );
+  $job$
+);
+
+select cron.schedule(
+  'notify-new-posts-1400z',
+  '0 14 * * *',
+  $job$
+  select net.http_post(
+    url := 'https://ipqqeofzlwvfnunduuru.supabase.co/functions/v1/send-notification',
+    headers := jsonb_build_object(
+      'content-type', 'application/json',
+      'x-send-secret', (select decrypted_secret from vault.decrypted_secrets where name = 'send_notification_secret')
+    ),
+    body := jsonb_build_object('mode', 'daily')
+  );
+  $job$
+);
+
+-- Handy checks:
+--   select jobname, schedule, active from cron.job;
+--   select jobname, status, return_message, start_time
+--     from cron.job_run_details order by start_time desc limit 10;
+--   select * from public.notification_sends order by send_date desc limit 7;

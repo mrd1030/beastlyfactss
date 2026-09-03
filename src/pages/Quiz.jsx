@@ -9,6 +9,8 @@ import { triviaQuestions } from '@/lib/data/triviaQuestions';
 import { useLocalStorage } from '@/lib/hooks/useLocalStorage';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';   // ← ADDED
 import KnowledgeQuiz from '@/lib/data/KnowledgeQuiz';
+import { getThemedQuiz } from '@/lib/data/quizzes';
+import ThemedQuizPage from '@/pages/ThemedQuizPage';
 
 const TRIVIA_TOTAL = triviaQuestions.length;
 
@@ -152,7 +154,7 @@ function PersonalityQuiz() {
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
           <span className="text-xs font-body font-bold text-muted-foreground">{`Question ${step} of ${totalQ}`}</span>
-          <span className="text-xs font-body font-bold text-secondary">{Math.round(progress)}%</span>
+          <span className="text-xs font-body font-bold text-secondary">{`${Math.round(progress)}%`}</span>
         </div>
         <div className="h-2 bg-muted rounded-full overflow-hidden">
           <motion.div className="h-full w-full bg-gradient-to-r from-secondary to-accent rounded-full origin-left"
@@ -282,7 +284,7 @@ function TriviaQuizSection() {
               <motion.div className="bg-secondary h-3 w-full rounded-full origin-left" initial={{ scaleX: 0 }}
                 animate={{ scaleX: score / TRIVIA_TOTAL }} transition={{ duration: 1, delay: 0.4, ease: 'easeOut' }} />
             </div>
-            <p className="text-xs text-muted-foreground font-body mt-2">{Math.round((score / TRIVIA_TOTAL) * 100)}% correct</p>
+            <p className="text-xs text-muted-foreground font-body mt-2">{`${Math.round((score / TRIVIA_TOTAL) * 100)}% correct`}</p>
           </div>
           <div className="flex justify-center gap-3">
             <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
@@ -311,7 +313,7 @@ function TriviaQuizSection() {
     <div className="max-w-xl mx-auto py-8">
       <div className="flex items-center justify-between mb-3">
         <span className="text-xs font-body text-muted-foreground">{`Question ${currentIndex + 1} of ${TRIVIA_TOTAL}`}</span>
-        <span className="text-xs font-body font-bold text-secondary">{score} pts</span>
+        <span className="text-xs font-body font-bold text-secondary">{`${score} pts`}</span>
       </div>
       <div className="w-full bg-muted rounded-full h-2 mb-8 overflow-hidden">
         <motion.div className="bg-secondary h-2 w-full rounded-full origin-left"
@@ -438,6 +440,10 @@ export default function Quiz() {
   const location = useLocation();
   const navigate = useNavigate();
   const { tab: urlTab } = useParams();
+  // Dated themed quizzes share the /quiz/:tab route with the three evergreen
+  // tabs; a matching quiz id takes over the whole page.
+  const themedQuiz = getThemedQuiz(urlTab);
+  if (themedQuiz) return <ThemedQuizPage quiz={themedQuiz} />;
   const activeTab = ['trivia', 'knowledge'].includes(urlTab) ? urlTab : 'personality';
   const shouldNoindex = hasNoindexStateParams(location.search);
   const meta = TAB_META[activeTab] || TAB_META.personality;

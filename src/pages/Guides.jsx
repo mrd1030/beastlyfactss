@@ -203,7 +203,7 @@ export default function Guides() {
                       : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                   }`}
                 >
-                  <span>{f.emoji}</span> {f.label}
+                  <span>{f.emoji}</span>{` ${f.label}`}
                 </Link>
               </React.Fragment>
             );

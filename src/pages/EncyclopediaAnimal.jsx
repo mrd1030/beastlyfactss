@@ -8,7 +8,7 @@ import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
-import { mdxPosts } from '@/lib/mdxPosts';
+import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import SaveButton from '@/components/shared/SaveButton';
@@ -86,7 +86,7 @@ export default function EncyclopediaAnimal() {
   // Mixed in with husbandry articles they read as one more thing to get round
   // to, when they are the one link on the page that can tell a reader they
   // cannot legally keep the animal at all.
-  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, relatedPosts).map(slug => relatedPosts.find(p => p._id === slug)).filter(Boolean);
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
@@ -270,7 +270,7 @@ export default function EncyclopediaAnimal() {
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {guide.name} Care Guide
+                        {`${guide.name} Care Guide`}
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed">{guide.tagline}</p>
                     </div>

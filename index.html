@@ -3,28 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <!-- Theme, applied before first paint. useDarkMode() sets the `dark` class
-         in a useEffect, which does not run until React has hydrated, and
-         prerender.mjs bakes class="dark" into every page because it renders with
-         the default. A returning light-mode visitor therefore got a dark flash
-         while waiting for hydration to undo it. This reads the same
-         localStorage key synchronously and toggles the class both ways, so the
-         first paint is already correct. The effect then agrees with it.
+         in a useEffect, which does not run until React has hydrated, so
+         whichever theme prerender.mjs baked in is what a visitor sees until
+         then. A visitor whose stored choice differs from the default got a
+         flash of the wrong theme while waiting for hydration to undo it. This
+         reads the same localStorage key synchronously and toggles the class
+         both ways, so the first paint is already correct. The effect then
+         agrees with it. The default here must match useDarkMode's default in
+         useLocalStorage.js, or every first-time visitor gets that same flash.
          Must stay above any stylesheet. theme-color is deliberately left to the
          effect: it colours OS chrome, not the page, so it cannot flash. -->
-    <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'true'))}catch(e){}</script>
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script>
+    <script>try{document.documentElement.classList.toggle('dark',JSON.parse(localStorage.getItem('beastly-dark-mode')??'false'))}catch(e){}</script>
+    <!-- Google AdSense: removed while the site is unapproved - the loader
+         (and the FundingChoices consent popup it auto-loads) was ~290KB of
+         script earning nothing, the largest weight in every PageSpeed run.
+         To reapply, restore this single tag before requesting the review
+         (ads.txt in public/ is still in place):
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2950702470680795" crossorigin="anonymous"></script> -->
+
+    <!-- Google Discover eligibility (max-image-preview:large) is delivered as
+         an X-Robots-Tag header in public/_headers, NOT as a robots meta here:
+         generate-fact-pages.mjs injects a per-fact robots noindex into this
+         shell and hard-fails the build if the shell already carries one. -->
     <link rel="icon" type="image/webp" sizes="256x256" href="./src/assets/favicon.webp">
     <link rel="apple-touch-icon" href="/pwa/apple-touch-icon-180.png">
     <link rel="manifest" href="/manifest.json">
-    <!-- Dark is this site's default (useDarkMode in useLocalStorage.js
-         defaults to true), so this static fallback matches that rather than
-         white - useDarkMode itself keeps this in sync with the live toggle
-         after mount (see its .dark class effect). -->
-    <meta name="theme-color" content="#0f1a15">
+    <!-- Light is this site's default (useDarkMode in useLocalStorage.js
+         defaults to false), so this static fallback matches that rather than
+         the dark ground - useDarkMode itself keeps this in sync with the live
+         toggle after mount (see its .dark class effect). -->
+    <meta name="theme-color" content="#FDF9F1">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Beastly Facts">
     <!-- iOS splash screens: Safari renders these before any JS runs, one per
          device size/DPR combo (no auto-generation like Android gets from the
@@ -103,20 +114,46 @@
     <!-- Chewy affiliate program (Impact) site verification -->
     <meta name='impact-site-verification' value='a5d0acbb-072a-4fff-9585-0a3a2b7e9546'>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N3PXSDZB');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Analytics: GA4 via gtag.js directly, no Tag Manager. The GTM container
+         held exactly three tags (the GA4 config below, one GA4 "search" event,
+         and a custom HTML tag that injected ahrefs analytics), and cost 121KB
+         of container script plus 130ms of main-thread blocking on mobile to
+         deliver them. Both scripts are now injected here instead.
+         Two-part on purpose. gtag() and the config call are queued right away,
+         so the page_view is stamped at page start and analytics.js can call
+         window.gtag from the first render; the queue is just an array until
+         the library lands. The library fetch itself waits for the load event
+         and an idle slot, so 191KB of gtag.js no longer competes with the hero
+         image for bandwidth or with hydration for the main thread. The 3s
+         timeout keeps the fetch from waiting forever on a busy page.
+         prerender.mjs blocks both hosts while capturing and strips any tag
+         this managed to inject, so the static HTML never carries them twice.
+         GA4 Enhanced Measurement handles SPA route changes on its own (see the
+         note in App.jsx), so nothing here needs to hook the router. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L0T3V8PPP7');
+      window.addEventListener('load', function () {
+        var inject = function () {
+          var g = document.createElement('script');
+          g.async = true;
+          g.src = 'https://www.googletagmanager.com/gtag/js?id=G-L0T3V8PPP7';
+          document.head.appendChild(g);
+          var a = document.createElement('script');
+          a.async = true;
+          a.src = 'https://analytics.ahrefs.com/analytics.js';
+          a.setAttribute('data-key', '5QXjSradQeYmBdqyivq+Gg');
+          document.head.appendChild(a);
+        };
+        if ('requestIdleCallback' in window) requestIdleCallback(inject, { timeout: 3000 });
+        else setTimeout(inject, 1500);
+      });
+    </script>
 
 </head>
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3PXSDZB"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div id="app-splash"></div>
     <script>
       (function () {

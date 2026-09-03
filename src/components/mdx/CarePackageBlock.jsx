@@ -26,11 +26,14 @@ export default function CarePackageBlock({ animal }) {
           <Printer className="h-3.5 w-3.5" /> Printable Guide
         </div>
         <p className="text-foreground font-body text-sm">
-          Want this as a printable reference? The{' '}
+          {/* Single strings either side of the link: this block is prerendered
+              inside articles, and text beside {expressions} renders as several
+              nodes that the captured HTML merges, failing hydration. See main.jsx. */}
+          {'Want this as a printable reference? The '}
           <Link to="/care-packages/store/" className="font-semibold underline decoration-secondary/40 hover:decoration-secondary">
             {pkg.name}
-          </Link>{' '}
-          turns this guide into a {pkg.pages}-page PDF you can keep by the enclosure, {pkg.price}.
+          </Link>
+          {` turns this guide into a ${pkg.pages}-page PDF you can keep by the enclosure, ${pkg.price}.`}
         </p>
       </div>
     </div>

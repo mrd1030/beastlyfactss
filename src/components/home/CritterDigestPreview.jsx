@@ -11,7 +11,7 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 // prerender.mjs's capture always reflects the post-fetch state.
 import articlesIndex from '@/lib/generated/articles-index.json';
 import buildStamp from '@/lib/generated/build-stamp.json';
-import { byReleaseThenDate } from '@/lib/utils/date';
+import { byReleaseThenDate, siteToday } from '@/lib/utils/date';
 
 export default function CritterDigestPreview() {
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ export default function CritterDigestPreview() {
   const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
-    setCutoff(new Date().toISOString().slice(0, 10));
+    setCutoff(siteToday());
   }, []);
 
   // Helper to safely get slug as string
@@ -76,10 +76,10 @@ export default function CritterDigestPreview() {
           <div>
             <span className="text-2xl block mb-1">📰</span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Latest Articles
+              Latest articles
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Care guides, deep-dives, and more from our blog
+              From the blog: comparisons, health, and the deep dives that sit on each guide.
             </p>
           </div>
           <Link to="/blog/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

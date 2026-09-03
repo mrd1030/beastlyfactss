@@ -31,7 +31,7 @@ function TermCard({ term, showCategory, catEmoji, catLabel }) {
               to={r.to}
               className="text-[11px] font-body text-primary/80 hover:text-primary border border-primary/20 hover:border-primary/40 rounded-full px-2.5 py-0.5 transition-colors"
             >
-              {r.label} →
+              {`${r.label} →`}
             </Link>
           ))}
         </div>
@@ -149,8 +149,7 @@ export default function Glossary() {
               Reptile &amp; Exotic Pet Glossary
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              Plain-English definitions for {TOTAL_TERMS}+ care terms - from husbandry basics to species-specific jargon.
-              Every entry links back to the guide where it matters most.
+              {`Plain-English definitions for ${TOTAL_TERMS}+ care terms - from husbandry basics to species-specific jargon. Every entry links back to the guide where it matters most.`}
             </p>
           </motion.div>
         </div>

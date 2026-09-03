@@ -172,8 +172,7 @@ export default function FactFiles() {
             </div>
 
             <p className="mb-4 font-body text-xs text-muted-foreground">
-              {`${filtered.length} ${filtered.length === 1 ? 'file' : 'files'}`}
-              {totalPages > 1 && ` · Page ${safePage} of ${totalPages}`}
+              {`${filtered.length} ${filtered.length === 1 ? 'file' : 'files'}${totalPages > 1 ? ` · Page ${safePage} of ${totalPages}` : ''}`}
             </p>
 
             {filtered.length > 0 ? (
@@ -201,9 +200,9 @@ export default function FactFiles() {
               </>
             ) : (
               <div className="py-16 text-center">
-                <p className="font-body font-bold text-foreground">No files match "{search}"</p>
+                <p className="font-body font-bold text-foreground">{`No files match "${search}"`}</p>
                 <p className="mt-1 font-body text-sm text-muted-foreground">
-                  Try a different term, or{' '}
+                  {'Try a different term, or '}
                   <button
                     type="button"
                     onClick={() => reset(() => { setSearch(''); setGroup('All'); })}
@@ -234,7 +233,7 @@ export default function FactFiles() {
                         : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                     }`}
                   >
-                    {name} <span className="opacity-60">{count}</span>
+                    {`${name} `}<span className="opacity-60">{count}</span>
                   </button>
                 </React.Fragment>
               ))}
@@ -247,9 +246,7 @@ export default function FactFiles() {
             <div className="rounded-xl border border-border bg-card p-4">
               <h2 className="mb-1 font-display text-sm font-bold text-foreground">What these are</h2>
               <p className="font-body text-xs leading-relaxed text-muted-foreground">
-                {ALL_FILES.length} wild animal features, checked against {totalSources} primary
-                sources between them. Each lists the claim it corrects and what backs the
-                correction.
+                {`${ALL_FILES.length} wild animal features, checked against ${totalSources} primary sources between them. Each lists the claim it corrects and what backs the correction.`}
               </p>
             </div>
 

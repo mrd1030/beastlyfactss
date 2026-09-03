@@ -394,7 +394,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
           onClick={handleShare}
           className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card text-muted-foreground hover:border-secondary/40 hover:text-secondary transition-all font-body font-semibold text-sm"
         >
-          {shared ? <Check className="w-4 h-4 text-accent" /> : <Share2 className="w-4 h-4" />}
+          {shared ? <Check className="w-4 h-4 text-accent-ink" /> : <Share2 className="w-4 h-4" />}
           {shared ? 'Copied!' : 'Share'}
         </button>
 
@@ -476,7 +476,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
                   {/* Reply form */}
                   {submittedReplyIds.has(c.id) && replyTarget !== c.id ? (
                     <div className="mt-3 pl-4 text-xs text-muted-foreground font-body">
-                      Thanks for your reply! It'll show up once approved.{' '}
+                      {"Thanks for your reply! It'll show up once approved. "}
                       <button onClick={() => openReply(c.id)} className="text-secondary underline">
                         Reply again
                       </button>

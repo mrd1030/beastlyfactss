@@ -7,13 +7,10 @@ import { isChroniclesPost } from '@/lib/chronicles';
 import { slugify } from '@/lib/utils/slugify';
 import { seededShuffle, hashString } from '@/lib/utils/seededShuffle';
 import buildStamp from '@/lib/generated/build-stamp.json';
+import { siteToday } from '@/lib/utils/date';
 
 // 4, matching what the old Sanity-backed version rendered.
 const RELATED_LIMIT = 4;
-
-// Matches the worker's gate in public/_worker.js so a post appears here on the
-// same day it appears in the feed.
-const SITE_TIMEZONE = 'America/New_York';
 
 const idOf = (post) => post._id || post.slug?.current || post.id;
 const dayOf = (post) => String(post.publishedAt || '').slice(0, 10);
@@ -118,7 +115,7 @@ export default function YouMayAlsoLike({ currentPostId, categorySlug, onSelectPo
     if (typeof window !== 'undefined' && window.__IS_PRERENDER__) return;
     setRuntime({
       seed: Math.floor(Math.random() * 0x7fffffff),
-      cutoff: new Date().toLocaleDateString('en-CA', { timeZone: SITE_TIMEZONE }),
+      cutoff: siteToday(),
     });
   }, [currentPostId]);
 

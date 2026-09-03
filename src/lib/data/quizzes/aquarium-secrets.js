@@ -1,0 +1,72 @@
+// Themed quiz #2. Format documented in docs/QUIZZES.md.
+export default {
+  id: 'aquarium-secrets',
+  number: 2,
+  date: '2026-08-31',
+  title: 'Aquarium Secrets',
+  emoji: '🐠',
+  tagline: 'The weird science swimming in ordinary tanks.',
+  reward: {
+    emoji: '🫧',
+    title: 'Tank Whisperer',
+    blurb: 'You know what the fish know.',
+  },
+  questions: [
+    {
+      q: 'How do newborn discus fry get their first meals?',
+      options: ['Hunting microscopic prey', 'Eating algae off plants', 'Biting nutrient-rich mucus off their parents', 'They live off their yolk for weeks'],
+      answer: 2,
+      explain: 'Both discus parents secrete a nutrient-rich skin mucus the fry feed on directly, one of the only documented cases of sustained parental feeding in fish, with protein levels that rise and fall like regulated milk.',
+      source: { label: 'Nursing Without Milk', to: '/facts/nursing-without-milk/' },
+    },
+    {
+      q: 'What is the cardinal tetra’s flashy red and blue stripe actually for?',
+      options: ['Attracting mates', 'Camouflage in dark blackwater streams', 'Warning predators it is toxic', 'Absorbing sunlight for warmth'],
+      answer: 1,
+      explain: 'In the dim, tannin-stained water it evolved in, the metallic stripe reflects light in ways that create false and confusing targets for predators. The showiest feature in your tank is defensive gear.',
+      source: { label: 'A Stripe That Hides You', to: '/facts/a-stripe-that-hides-you/' },
+    },
+    {
+      q: 'Wild mollies have been found living in which combination of places?',
+      options: ['Only freshwater rivers', 'Only brackish estuaries', 'Coastal saltwater lagoons AND freshwater ditches', 'Deep lakes only'],
+      answer: 2,
+      explain: 'Mollies are euryhaline, tolerating an unusually wide salinity range. Wild populations turn up in saltwater lagoons and freshwater roadside ditches sometimes just a short distance apart.',
+      source: { label: 'At Home in Two Kinds of Water', to: '/facts/at-home-in-two-kinds-of-water/' },
+    },
+    {
+      q: 'GloFish were originally engineered to do what?',
+      options: ['Look pretty in pet stores', 'Glow in the presence of water pollutants', 'Survive colder tanks', 'Grow faster for food farming'],
+      answer: 1,
+      explain: 'The fluorescent gene was built into zebra danios by researchers in Singapore to signal water pollution. The aquarium trade licensing came later.',
+      source: { label: 'The Fish Behind GloFish', to: '/facts/the-fish-behind-glofish/' },
+    },
+    {
+      q: 'What does a male swordtail’s sword actually do?',
+      options: ['Steers like a rudder', 'Fights off rivals', 'Nothing practical, females just prefer longer ones', 'Digs nesting pits'],
+      answer: 2,
+      explain: 'The sword plays no role in swimming. It is pure ornament, and a landmark 1990 study showed female preference grows stronger as the sword gets longer, a textbook case of sexual selection.',
+      source: { label: 'Females Choose the Longer Sword', to: '/facts/females-choose-the-longer-sword/' },
+    },
+    {
+      q: 'The humble pet-store platy is famous in medical research for what?',
+      options: ['Regrowing fins', 'Over 70 years of melanoma research', 'Producing antivenom', 'Sleeping with one eye open'],
+      answer: 1,
+      explain: 'Platies and their relatives are one of the oldest continuously studied animal models for any cancer, over 70 years of melanoma research, though an ordinary aquarium platy has essentially no risk of developing it.',
+      source: { label: '70 Years in Cancer Labs', to: '/facts/70-years-in-cancer-labs/' },
+    },
+    {
+      q: 'The "bristles" on a male bristlenose pleco’s snout are really...',
+      options: ['Whiskers, like a catfish', 'Odontodes, tooth-like structures', 'Parasites', 'Loose skin flaps'],
+      answer: 1,
+      explain: 'They are odontodes, modified tooth-like structures. Males use them to signal breeding readiness and spar with rivals over caves.',
+      source: { label: 'Not Actually Whiskers', to: '/facts/not-actually-whiskers/' },
+    },
+    {
+      q: 'Which fish outgrows a bathtub and can outlive your dog?',
+      options: ['Goldfish', 'Koi', 'Both stay small in small tanks', 'Neither lives past 10 years'],
+      answer: 1,
+      explain: 'Koi are pond fish that reach serious size and can live for decades. Goldfish get mixed up with them constantly, and neither actually "grows to its tank" in a healthy way.',
+      source: { label: 'Koi vs. Goldfish comparison', to: '/blog/koi-vs-goldfish-guide/' },
+    },
+  ],
+};

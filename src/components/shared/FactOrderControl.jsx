@@ -41,11 +41,11 @@ export default function FactOrderControl({ order, onChange, onRandomize, classNa
           aria-pressed={order === key}
           className={pill(order === key)}
         >
-          <Icon className="w-3.5 h-3.5" /> {label}
+          <Icon className="w-3.5 h-3.5" />{` ${label}`}
         </button>
       ))}
       <button type="button" onClick={onRandomize} aria-pressed={order === 'random'} className={pill(order === 'random')}>
-        <Shuffle className="w-3.5 h-3.5" /> {order === 'random' ? 'Shuffle again' : 'Random'}
+        <Shuffle className="w-3.5 h-3.5" />{` ${order === 'random' ? 'Shuffle again' : 'Random'}`}
       </button>
     </div>
   );

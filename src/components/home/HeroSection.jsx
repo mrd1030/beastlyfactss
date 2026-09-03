@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import { facts } from '@/lib/data/facts';
+import { getHomeChild, preloadHomeChildren } from '@/lib/homePreload';
 import { truncateDescription } from '@/lib/utils/truncate';
 
 // Imported rather than referenced as /assets/hero-*.ext from public/, so Vite
@@ -57,11 +57,23 @@ export default function HeroSection({ onOpenFact }) {
   // Deferring the real day-based pick to a post-mount effect (skipped during
   // prerendering, same as this app's other date/random-driven state) matches
   // prerendered HTML exactly on first paint, then upgrades right after.
-  const [dailyFact, setDailyFact] = useState(() => facts[0]);
+  //
+  // `facts` comes from the homePreload cache rather than a static import, so
+  // the 118KB array stays out of the entry chunk that every page loads (see
+  // homePreload.js). On a fresh page load the cache is populated before
+  // hydrateRoot runs, so the first render is facts[0] exactly as before. The
+  // only time it can be empty is client-side navigation to "/" from a page
+  // that never loaded facts: no hydration involved, so the card simply mounts
+  // a tick later, the same way every HomeChild section already does.
+  const [, setTick] = useState(0);
+  const facts = getHomeChild('facts');
+  const [dayIndex, setDayIndex] = useState(0);
   useEffect(() => {
+    if (!facts) { preloadHomeChildren().then(() => setTick((n) => n + 1)); return; }
     if (window.__IS_PRERENDER__) return;
-    setDailyFact(facts[new Date().getDate() % facts.length]);
-  }, []);
+    setDayIndex(new Date().getDate() % facts.length);
+  }, [facts]);
+  const dailyFact = facts ? facts[dayIndex] : null;
   const [learned, setLearned] = useState(false);
 
   const handleLearned = async () => {
@@ -147,7 +159,7 @@ export default function HeroSection({ onOpenFact }) {
           <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 dark:border-[hsl(36_24%_52%/0.55)] bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
             <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
-              Facts that roar. Guides that care.
+              Pet care guides and animal facts
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
@@ -179,17 +191,17 @@ export default function HeroSection({ onOpenFact }) {
                   is plain text, and an anonymous flex item would swallow the
                   space before the span. */}
               <MotionLink
-                to="/encyclopedia/"
+                to="/guides/"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="bg-card/80 border border-border text-muted-foreground font-body font-bold text-sm py-3 px-6 rounded-xl"
               >
-                Browse the <span className="dark:text-secondary">Encyclopedia</span>
+                Browse <span className="dark:text-secondary">care guides</span>
               </MotionLink>
             </div>
 
             <p className="text-xs text-muted-foreground font-body max-w-md mx-auto text-center leading-relaxed">
-              Updated weekly with reviewed animal facts, practical pet care tips, and quiz challenges that help you learn faster.
+              100+ species care guides, plus 400+ deep dives on setup, diet, health, handling, cost, and the law.
             </p>
           </div>
 
@@ -200,7 +212,7 @@ export default function HeroSection({ onOpenFact }) {
               can feed CLS. It is also above the fold, so a 0.3s delay meant
               prerendered content sat invisible waiting for framer to hydrate.
               The markup is already in the HTML; it should simply be visible. */}
-          <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
+          {dailyFact && <div className="mt-5 sm:mt-6 bg-card/80 backdrop-blur-md border border-border rounded-2xl p-4 max-w-lg">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-lg">⭐</span>
               <span className="font-body font-bold text-xs text-secondary">DAILY FACT</span>
@@ -228,12 +240,12 @@ export default function HeroSection({ onOpenFact }) {
               <motion.span
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                className="inline-block mt-3 text-xs font-body font-bold text-teal"
+                className="inline-block mt-3 text-xs font-body font-bold text-primary"
               >
                 🎉 +1 Brain Cell!
               </motion.span>
             )}
-          </div>
+          </div>}
         </div>
       </div>
     </section>

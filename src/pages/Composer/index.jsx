@@ -194,7 +194,7 @@ export default function Composer() {
         </label>
 
         {status && (
-          <p className={`text-sm font-body ${status.type === 'error' ? 'text-destructive' : 'text-accent'}`}>
+          <p className={`text-sm font-body ${status.type === 'error' ? 'text-destructive' : 'text-accent-ink'}`}>
             {status.message}
           </p>
         )}

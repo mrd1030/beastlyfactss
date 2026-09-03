@@ -38,8 +38,12 @@ import path from 'node:path';
 const DIST = 'dist';
 const THRESHOLD = Number(process.argv[2]) || 3;
 const BOILERPLATE_RATIO = 0.9;
-// Measured 2026-08-29 against a full build. See the ratchet note above.
-const BUDGET = 30;
+// Measured 2026-08-29 against a full build at 11. Raised to 13 on 2026-08-31
+// (see the ratchet note above): themed quiz pages source most questions from
+// fact cards, which are modal popups rather than pages, so a fact-heavy quiz
+// intro can legitimately sit near the threshold. The headroom covers that
+// without loosening the standard for ordinary pages.
+const BUDGET = 13;
 const MAX_THIN_PAGES =
   process.env.MAX_THIN_PAGES === undefined ? BUDGET : Number(process.env.MAX_THIN_PAGES);
 

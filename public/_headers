@@ -15,6 +15,22 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   Cache-Control: public, max-age=0, must-revalidate
+  # Google Discover eligibility: allows full-size image previews. A header
+  # rather than a robots meta on purpose - generate-fact-pages.mjs forbids a
+  # robots meta in the built shell (it injects its own per-fact noindex).
+  # Header and page-level meta directives merge, so noindex pages stay noindex.
+  X-Robots-Tag: max-image-preview:large
+
+# Images, fonts and scripts under /assets/ are meant to be embedded from other
+# origins: the newsletter hotlinks the About photo, Discord and forum posts
+# unfurl article images, and the OG image is fetched by every share card.
+# The site-wide Cross-Origin-Resource-Policy: same-origin above makes a browser
+# refuse those loads (the Beehiiv editor rendered the Dex photo as its alt
+# text). Detach the site-wide value and re-set it as cross-origin for static
+# assets only. HTML responses keep same-origin.
+/assets/*
+  ! Cross-Origin-Resource-Policy
+  Cross-Origin-Resource-Policy: cross-origin
 
 /assets/*.js
   Cache-Control: public, max-age=31536000, immutable

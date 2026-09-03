@@ -17,34 +17,30 @@ export default function Newsletter() {
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-                        {/* Left: Blog promo */}
+                        {/* Left: email promo. Critter Digest is the newsletter name. */}
                         <div>
                             <span className="text-3xl block mb-3">📰</span>
-                            <h2 className="font-display font-bold text-2xl text-foreground mb-2">
-                                Weekly Critter Digest
+                            <h2 className="font-display font-bold text-2xl text-foreground mb-1">
+                                Critter Digest
                             </h2>
-                            <p className="text-sm text-muted-foreground font-body mb-4 leading-relaxed">
-                                Get a weekly roundup of verified animal facts, practical care tips, and short quiz challenges - delivered every Sunday. No spam, ever.
+                            <p className="text-xs font-body font-semibold text-secondary mb-3">
+                                Facts that roar. Guides that care.
                             </p>
-                            <div className="flex flex-col gap-2 mb-5">
-                                {[
-                                    "🐾 Practical care tips for dogs, cats, reptiles, birds & more",
-                                    "🏠 Tank, cage, and terrarium setup ideas that work",
-                                    "🥗 Diet and habitat tips tailored to each species",
-                                    "🩺 Simple health checks for happier pets",
-                                ].map((item, i) => (
-                                    <div key={i} className="flex items-start gap-2 text-xs font-body text-muted-foreground">
-                                        <span className="text-base leading-none mt-0.5">{item.split(' ')[0]}</span>
-                                        <span>{item.split(' ').slice(1).join(' ')}</span>
-                                    </div>
-                                ))}
-                            </div>
+                            {/* Deliberately no cadence promise. This used to say "the weekly
+                                email, a Sunday roundup" with four bullets of specifics while no
+                                issue had ever gone out. A subscriber who is promised weekly and
+                                hears nothing for a month forgets they signed up and flags the
+                                first real send as spam. Promise only what is true. */}
+                            <p className="text-sm text-muted-foreground font-body mb-5 leading-relaxed">
+                                An occasional email when I have published something worth your time. No schedule,
+                                no spam, unsubscribe in one click.
+                            </p>
                             <Link to="/blog/">
                                 <motion.button
                                     whileHover={{ x: 3 }}
                                     className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"
                                 >
-                                    Browse all articles <ArrowRight className="w-3.5 h-3.5" />
+                                    Or read the latest articles <ArrowRight className="w-3.5 h-3.5" />
                                 </motion.button>
                             </Link>
                         </div>
@@ -55,7 +51,7 @@ export default function Newsletter() {
                                 Subscribe - it's free
                             </h3>
                             <p className="text-xs text-muted-foreground font-body mb-4">
-                                New articles straight to your inbox. No spam, ever. 🐾
+                                Occasional, not weekly. Unsubscribe in one click. 🐾
                             </p>
                             <BeehiivSubscribe />
                         </div>

@@ -1,7 +1,9 @@
 import React, { lazy } from 'react';
-import { MotionConfig } from '@/lib/motion-safe';
+import { hydratable } from '@/lib/routeRegistry';
+import { MotionConfig, LazyMotion, domAnimation } from '@/lib/motion-safe';
 import { Helmet } from 'react-helmet-async'; // Added for SEO Structured Data
 import { Toaster } from "@/components/ui/toaster";
+import SubscribedToast from "@/components/shared/SubscribedToast";
 import { BrowserRouter as Router, Route, Routes, Navigate, useParams } from 'react-router-dom';
 import { FavoritesProvider } from '@/lib/FavoritesContext';
 import ScrollToTop from './components/ui/ScrollToTop';
@@ -19,39 +21,40 @@ import PageNotFound from './lib/PageNotFound';
 // Keeping Home available synchronously means the initial commit never
 // suspends for the homepage, so there's no gap for Hero to disappear into.
 import Home from '@/pages/Home';
-const Facts = lazy(() => import('@/pages/Facts'));
-const Quiz = lazy(() => import('@/pages/Quiz'));
-const Pack = lazy(() => import('@/pages/Pack'));
-const Encyclopedia = lazy(() => import('@/pages/Encyclopedia'));
-const Blog = lazy(() => import('@/pages/Blog'));
-const GuideDetail = lazy(() => import('@/pages/GuideDetail'));
-const About = lazy(() => import('@/pages/About'));
-const Contact = lazy(() => import('@/pages/Contact'));
-const AnimalFacts = lazy(() => import('@/pages/AnimalFacts'));
-const Donate = lazy(() => import('@/pages/Donate'));
-const DonateSuccess = lazy(() => import('@/pages/DonateSuccess'));
-const DonateCancel = lazy(() => import('@/pages/DonateCancel'));
-const Terms = lazy(() => import('@/pages/Terms'));
-const Privacy = lazy(() => import('@/pages/Privacy'));
-const Categories = lazy(() => import('@/pages/Categories'));
-const Search = lazy(() => import('@/pages/Search'));
-const Glossary = lazy(() => import('@/pages/Glossary'));
-const ExoticPetLaws = lazy(() => import('@/pages/ExoticPetLaws'));
-const EncyclopediaAnimal = lazy(() => import('@/pages/EncyclopediaAnimal'));
-const Beastlypedia = lazy(() => import('@/pages/Beastlypedia'));
-const BeastfileDetail = lazy(() => import('@/pages/BeastfileDetail'));
-const Guides = lazy(() => import('@/pages/Guides'));
-const Gear = lazy(() => import('@/pages/Gear'));
-const FactFiles = lazy(() => import('@/pages/FactFiles'));
-const Chronicles = lazy(() => import('@/pages/Chronicles'));
-const Gallery = lazy(() => import('@/pages/Gallery'));
-const CarePackages = lazy(() => import('@/pages/CarePackages'));
-const CarePackagesStore = lazy(() => import('@/pages/CarePackagesStore'));
-const CarePackagesWhyWeExist = lazy(() => import('@/pages/CarePackagesWhyWeExist'));
-const CarePackagesFaq = lazy(() => import('@/pages/CarePackagesFaq'));
-const Feed = lazy(() => import('@/pages/Feed'));
-const Composer = lazy(() => import('@/pages/Composer'));
-const ComposerLogin = lazy(() => import('@/pages/Composer/Login'));
+const Facts = hydratable('Facts');
+const Quiz = hydratable('Quiz');
+const QuizHub = hydratable('QuizHub');
+const Pack = hydratable('Pack');
+const Encyclopedia = hydratable('Encyclopedia');
+const Blog = hydratable('Blog');
+const GuideDetail = hydratable('GuideDetail');
+const About = hydratable('About');
+const Contact = hydratable('Contact');
+const AnimalFacts = hydratable('AnimalFacts');
+const Donate = hydratable('Donate');
+const DonateSuccess = hydratable('DonateSuccess');
+const DonateCancel = hydratable('DonateCancel');
+const Terms = hydratable('Terms');
+const Privacy = hydratable('Privacy');
+const Categories = hydratable('Categories');
+const Search = hydratable('Search');
+const Glossary = hydratable('Glossary');
+const ExoticPetLaws = hydratable('ExoticPetLaws');
+const EncyclopediaAnimal = hydratable('EncyclopediaAnimal');
+const Beastlypedia = hydratable('Beastlypedia');
+const BeastfileDetail = hydratable('BeastfileDetail');
+const Guides = hydratable('Guides');
+const Gear = hydratable('Gear');
+const FactFiles = hydratable('FactFiles');
+const Chronicles = hydratable('Chronicles');
+const Gallery = hydratable('Gallery');
+const CarePackages = hydratable('CarePackages');
+const CarePackagesStore = hydratable('CarePackagesStore');
+const CarePackagesWhyWeExist = hydratable('CarePackagesWhyWeExist');
+const CarePackagesFaq = hydratable('CarePackagesFaq');
+const Feed = hydratable('Feed');
+const Composer = hydratable('Composer');
+const ComposerLogin = hydratable('ComposerLogin');
 // Lazy rather than a static import like the rest of AppLayout's dependencies:
 // ProtectedRoute pulls in AuthContext, which pulls in the Supabase client.
 // Loading it eagerly here would ship that whole chunk on every single page,
@@ -67,12 +70,13 @@ const AuthenticatedApp = () => {
   return (
     <>
       {/* No <AnalyticsTracker /> here on purpose. It called
-          window.gtag('config', ...) on every route change, which never ran
-          (this site loads only the GTM container, so window.gtag is undefined)
-          and would have double-counted every pageview if it ever did: GA4's
-          Enhanced Measurement already reports SPA route changes through its own
-          history listener inside gtag.js. Pageviews are GA4's job, not the
-          app's. See src/lib/analytics.js for how custom events reach GTM. */}
+          window.gtag('config', ...) on every route change, which would
+          double-count every pageview: GA4's Enhanced Measurement already
+          reports SPA route changes through its own history listener inside
+          gtag.js. Pageviews are GA4's job, not the app's. (It also never ran
+          in the Tag Manager era, when window.gtag did not exist; index.html
+          now defines gtag directly.) See src/lib/analytics.js for how custom
+          events reach GA4. */}
       <Routes>
         <Route element={<AppLayout />}>
           <Route path="/" element={<Home />} />
@@ -102,7 +106,7 @@ const AuthenticatedApp = () => {
           <Route path="/chronicles" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId" element={<Chronicles />} />
           <Route path="/chronicles/:seriesId/:part" element={<Chronicles />} />
-          <Route path="/quiz" element={<Navigate to="/quiz/personality/" replace />} />
+          <Route path="/quiz" element={<QuizHub />} />
           <Route path="/quiz/:tab" element={<Quiz />} />
           <Route path="/pack" element={<Pack />} />
           <Route path="/about" element={<About />} />
@@ -173,6 +177,17 @@ function App() {
     <FavoritesProvider>
       {/* reducedMotion="user" disables framer-motion transforms for visitors with prefers-reduced-motion set */}
       <MotionConfig reducedMotion="user">
+        {/* motion-safe.js builds every motion.X on framer's lightweight `m`
+            component, which renders nothing animated until a LazyMotion
+            provides features. domAnimation is loaded synchronously here so
+            animate/exit/whileHover/whileTap/whileInView behave exactly as the
+            full `motion` import did, minus the drag and layout-projection
+            engine (~41KB raw) that nothing on the initial render needs.
+            FactModal, the one drag user, loads domMax on demand when it
+            opens (see motionFeaturesMax.js). Feature loading is post-mount
+            only and never changes markup, so the prerender/hydration
+            contract in motion-safe.js is untouched. */}
+        <LazyMotion features={domAnimation}>
         <Router>
           {/* Inject SEO Data */}
           <Helmet>
@@ -187,7 +202,9 @@ function App() {
           <AuthenticatedApp />
           <ScrollToTop />
         </Router>
+        </LazyMotion>
         <Toaster />
+        <SubscribedToast />
       </MotionConfig>
     </FavoritesProvider>
   );

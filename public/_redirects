@@ -105,8 +105,7 @@
 /guides/african-grey-parrot/ /guides/african-grey/ 301
 /guides/labrador-retriever /guides/dog-labrador/ 301
 /guides/labrador-retriever/ /guides/dog-labrador/ 301
-/quiz /quiz/personality/ 301
-/quiz/ /quiz/personality/ 301
+/quiz /quiz/ 301
 /trivia /quiz/trivia/ 301
 /trivia/ /quiz/trivia/ 301
 /encyclopedia/guides /guides/ 301
@@ -244,3 +243,19 @@
 # original URL, not a mistake here.
 /category/small-and-exotix-pets /blog/category/small-and-exotic-pets/ 301
 /category/small-and-exotix-pets/ /blog/category/small-and-exotic-pets/ 301
+
+# WordPress-era /posts/ URLs and the old blog path. Search Console still lists
+# them from the June crawl (as soft 404s, now real 404s). Each maps to the page
+# it became, so an old link or bookmark lands somewhere instead of dead-ending.
+/posts/mantis-shrimp-16-color-vision-punch-power /blog/mantis-shrimp-16-color-vision-punch-power/ 301
+/posts/mantis-shrimp-16-color-vision-punch-power/ /blog/mantis-shrimp-16-color-vision-punch-power/ 301
+/posts/honey-badgers-the-toughest-little-troublemakers-on-the-planet /blog/honey-badgers-the-toughest-little-troublemakers-on-the-planet/ 301
+/posts/honey-badgers-the-toughest-little-troublemakers-on-the-planet/ /blog/honey-badgers-the-toughest-little-troublemakers-on-the-planet/ 301
+/posts/the-platypus-natures-most-wonderfully-bizarre-mammal /blog/the-platypus-natures-most-wonderfully-bizarre-mammal/ 301
+/posts/the-platypus-natures-most-wonderfully-bizarre-mammal/ /blog/the-platypus-natures-most-wonderfully-bizarre-mammal/ 301
+/posts/the-incredible-axolotl-nature-s-smiling-salamander /blog/the-incredible-axolotl-nature-s-smiling-salamander/ 301
+/posts/the-incredible-axolotl-nature-s-smiling-salamander/ /blog/the-incredible-axolotl-nature-s-smiling-salamander/ 301
+/posts/the-complete-bearded-dragon-care-guide-for-beginners-2026 /guides/bearded-dragon/ 301
+/posts/the-complete-bearded-dragon-care-guide-for-beginners-2026/ /guides/bearded-dragon/ 301
+/critter-digest /blog/ 301
+/critter-digest/ /blog/ 301

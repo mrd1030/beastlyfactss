@@ -8,7 +8,13 @@ const CHILD_ROUTES = ['/guides/'];
 export default function MobileBackButton({ pageTitle }) {
   const { pathname } = useLocation();
   const navigate = useNavigate();
-  const isChildRoute = CHILD_ROUTES.some(prefix => pathname.startsWith(prefix) && pathname !== prefix.slice(0, -1));
+  // Trailing slash stripped first: Cloudflare serves the listing as /guides/
+  // while prerender.mjs renders it as /guides, and "/guides/".startsWith
+  // ("/guides/") is true, so the real visitor's first render grew a Back
+  // button the prerendered HTML did not have, a structural mismatch that
+  // failed hydration on /guides/ for everyone.
+  const path = pathname.replace(/\/+$/, '');
+  const isChildRoute = CHILD_ROUTES.some(prefix => path.startsWith(prefix));
 
   if (!isChildRoute) return null;
 

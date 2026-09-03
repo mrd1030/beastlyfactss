@@ -1,9 +1,11 @@
 import React, { useMemo, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { matchesAnimal } from '@/lib/utils/matchAnimal';
 import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import { readDeepDiveGuide } from '@/lib/data/deepDiveContext';
+import { themedQuizzes } from '@/lib/data/quizzes';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
@@ -41,6 +43,15 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
       .filter(Boolean);
   }, [allPosts, currentPost, fromGuideId]);
+
+  // Themed quizzes that cite this article as a question source. Auto-wired
+  // from the quiz data: a new quiz that sources an article gets its backlink
+  // here with no per-article setup.
+  const quizBacklinks = useMemo(() => {
+    const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
+    const path = `/blog/${currentSlug}/`;
+    return themedQuizzes.filter(qz => qz.questions.some(q => q.source && q.source.to === path));
+  }, [currentPost]);
 
   // 1. Separate the rest of the blog into "Matches" and "Everything Else"
   const { matches, nonMatches } = useMemo(() => {
@@ -139,7 +150,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Subscribe */}
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-        <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam. 🐾</p>
+        <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam. 🐾</p>
         <BeehiivSubscribe />
       </div>
 
@@ -163,6 +174,27 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
                   {(article.emoji ? `${article.emoji} ` : '') + article.title}
                 </p>
               </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Quiz backlink: this article is a question source in these quizzes */}
+      {quizBacklinks.length > 0 && (
+        <div className="bg-card border border-border rounded-2xl p-5">
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+            🧩 Quiz Yourself
+          </p>
+          <div className="space-y-3">
+            {quizBacklinks.map(qz => (
+              <Link key={qz.id} to={`/quiz/${qz.id}/`} className="group block">
+                <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                  {`${qz.emoji} ${qz.title}`}
+                </p>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  {'This article answers quiz questions. Test yourself →'}
+                </p>
+              </Link>
             ))}
           </div>
         </div>

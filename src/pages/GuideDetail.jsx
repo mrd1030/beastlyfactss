@@ -7,7 +7,7 @@ import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
-import { mdxPosts } from '@/lib/mdxPosts';
+import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
@@ -15,6 +15,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
+import HeroImage from '@/components/shared/HeroImage';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -64,7 +65,7 @@ export default function GuideDetail() {
   // than sitting in the deep-dive list, because it answers a different question
   // from the husbandry articles around it.
   const allRelatedArticles = guide
-    ? getRelatedArticleSlugs(guide.id, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
+    ? getRelatedArticleSlugs(guide.id, relatedPosts).map(slug => relatedPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
@@ -491,11 +492,10 @@ export default function GuideDetail() {
             {/* Hero image */}
             {guide.image && (
               <div className="rounded-2xl overflow-hidden aspect-video">
-                <img
+                <HeroImage
                   src={guide.image}
                   alt={`${guide.name} - ${guide.petType}`}
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
             )}
@@ -522,7 +522,7 @@ export default function GuideDetail() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {guide.sections.checklist.map((item, i) => (
                   <div key={i} className="flex items-start gap-2.5 text-xs text-muted-foreground font-body bg-muted/50 rounded-xl p-2.5">
-                    <Check className="w-3.5 h-3.5 text-teal mt-0.5 flex-shrink-0" />
+                    <Check className="w-3.5 h-3.5 text-primary mt-0.5 flex-shrink-0" />
                     {item}
                   </div>
                 ))}
@@ -619,7 +619,7 @@ export default function GuideDetail() {
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {carePackage.name}
                       </p>
-                      <p className="text-xs text-muted-foreground font-body mt-0.5">{carePackage.pages} pages &middot; {carePackage.price}</p>
+                      <p className="text-xs text-muted-foreground font-body mt-0.5">{`${carePackage.pages} pages · ${carePackage.price}`}</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-xs font-body font-semibold text-secondary">

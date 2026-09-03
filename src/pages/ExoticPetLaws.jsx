@@ -250,27 +250,19 @@ export default function ExoticPetLaws() {
             </h1>
             <p className="text-muted-foreground font-body leading-relaxed max-w-3xl">
               {isIndex ? (
-                <>
-                  Pick an animal and the map shows where it is restricted. Every entry below was read from
-                  the statute or the regulation itself, never from a summary of one, and each carries the
-                  citation so you can check it. {ANIMAL_IDS.length} animals across all {stateCount} states
-                  and the District of Columbia, plus New York City, which has its own Health Code.
-                </>
+                // One string, not text beside an expression: the prerendered paragraph
+                // is a single text node and React's hydration text check (#425)
+                // fails on anything that renders as several. See main.jsx.
+                `Pick an animal and the map shows where it is restricted. Every entry below was read from the statute or the regulation itself, never from a summary of one, and each carries the citation so you can check it. ${ANIMAL_IDS.length} animals across all ${stateCount} states and the District of Columbia, plus New York City, which has its own Health Code.`
               ) : (
                 <>
                   {animal.scientific ? <em>{animal.scientific}</em> : null}
-                  {animal.scientific ? '. ' : ''}
-                  {nothingToReport ? (
-                    <>
-                      Nothing in any of the {Object.keys(statuses).length} jurisdictions we checked restricts
-                      this animal, which is why the map below is blank. That is the answer rather than a gap.
-                    </>
-                  ) : (
-                    <>
-                      Restricted in {restricted.length} of the {Object.keys(statuses).length} jurisdictions
-                      checked. Every entry quotes the rule it comes from.
-                    </>
-                  )}
+                  {/* Everything after the <em> is ONE string: the separator and the
+                      sentence used to be separate text nodes, which the prerendered
+                      HTML merges, failing hydration (#425) on every species page. */}
+                  {`${animal.scientific ? '. ' : ''}${nothingToReport
+                    ? `Nothing in any of the ${Object.keys(statuses).length} jurisdictions we checked restricts this animal, which is why the map below is blank. That is the answer rather than a gap.`
+                    : `Restricted in ${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked. Every entry quotes the rule it comes from.`}`}
                 </>
               )}
             </p>
@@ -289,30 +281,18 @@ export default function ExoticPetLaws() {
               animalName={inSentence(animal.name)}
             />
             <p className="mt-3 text-[11px] font-body text-muted-foreground">
-              Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are
-              drawn out of position so they can be clicked.
-              {cityEntries.length > 0 && (
-                <>
-                  {' '}
-                  The counts include{' '}
-                  {cityEntries.map(([code], i) => (
-                    <React.Fragment key={code}>
-                      {i > 0 ? ' and ' : ''}
-                      {jurisdictionName(code)}
-                    </React.Fragment>
-                  ))}
-                  , which {cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding
-                  state and so cannot be shaded on a state map. Listed in full below.
-                </>
-              )}
+              {/* Assembled as one string for the same hydration reason as the
+                  intro above: this caption was a static run followed by a fragment
+                  of further text nodes. */}
+              {`Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are drawn out of position so they can be clicked.${cityEntries.length > 0
+                ? ` The counts include ${cityEntries.map(([code]) => jurisdictionName(code)).join(' and ')}, which ${cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding state and so cannot be shaded on a state map. Listed in full below.`
+                : ''}${uncheckedStates > 0 ? ' ' : ''}`}
               {uncheckedStates > 0 && (
                 <>
-                  {' '}
                   <span className="text-foreground font-semibold">
-                    {checkedStates} of {researchedCount} states and DC have been read for this animal
+                    {`${checkedStates} of ${researchedCount} states and DC have been read for this animal`}
                   </span>
-                  , so the {uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`}{' '}
-                  a gap in our research rather than a finding of no rule.
+                  {`, so the ${uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`} a gap in our research rather than a finding of no rule.`}
                 </>
               )}
             </p>
@@ -357,8 +337,7 @@ export default function ExoticPetLaws() {
                       />
                       <span>
                         <span className="font-semibold text-foreground">
-                          {b.label}
-                          {n ? ` (${n})` : ''}
+                          {`${b.label}${n ? ` (${n})` : ''}`}
                         </span>
                         <span className="block text-muted-foreground leading-snug">{b.blurb}</span>
                       </span>
@@ -416,7 +395,7 @@ export default function ExoticPetLaws() {
                         rel="noopener noreferrer"
                         className="mt-3 inline-block text-xs font-body text-primary hover:underline"
                       >
-                        {LEGAL.sources[detail.entry.sourceId].title} →
+                        {`${LEGAL.sources[detail.entry.sourceId].title} →`}
                       </a>
                     )}
                   </>
@@ -425,12 +404,9 @@ export default function ExoticPetLaws() {
                   // animal. Saying "nothing restricts it here" would be stating
                   // a conclusion the research never reached.
                   <p className="text-xs font-body text-muted-foreground leading-relaxed">
-                    We have not checked {jurisdictionName(detail.code)} for the {inSentence(animal.name)}{' '}
-                    yet, so there is no answer here either way. Treat it as unknown rather than as permitted,
-                    and ask the state agency before relying on it.
-                    {LEGAL.jurisdictions[detail.code]?.scope
+                    {`We have not checked ${jurisdictionName(detail.code)} for the ${inSentence(animal.name)} yet, so there is no answer here either way. Treat it as unknown rather than as permitted, and ask the state agency before relying on it.${LEGAL.jurisdictions[detail.code]?.scope
                       ? ` When we do read it, the body of law that governs is: ${LEGAL.jurisdictions[detail.code].scope}`
-                      : ''}
+                      : ''}`}
                   </p>
                 )}
               </div>
@@ -467,7 +443,7 @@ export default function ExoticPetLaws() {
             the same information is written out here in full. */}
         <section className="mt-12">
           <h2 className="font-display font-bold text-2xl text-foreground mb-1">
-            Every restriction on the {inSentence(animal.name)}
+            {`Every restriction on the ${inSentence(animal.name)}`}
           </h2>
           <p className="text-sm font-body text-muted-foreground mb-5">
             {restricted.length === 0
@@ -514,7 +490,7 @@ export default function ExoticPetLaws() {
                     rel="noopener noreferrer"
                     className="mt-2 inline-block text-xs font-body text-primary hover:underline"
                   >
-                    {LEGAL.sources[entry.sourceId].title} →
+                    {`${LEGAL.sources[entry.sourceId].title} →`}
                   </a>
                 )}
               </div>
@@ -523,21 +499,21 @@ export default function ExoticPetLaws() {
 
           {animal.article && (
             <p className="mt-6 text-sm font-body text-foreground">
-              For the full write-up, including the states that get reported wrongly,{' '}
+              {'For the full write-up, including the states that get reported wrongly, '}
               <Link to={animal.article} className="text-primary font-semibold hover:underline">
-                read the {inSentence(animal.name)} legal guide
+                {`read the ${inSentence(animal.name)} legal guide`}
               </Link>
               .
             </p>
           )}
           {animal.encyclopediaId && (
             <p className="mt-1.5 text-sm font-body text-foreground">
-              Past the legal question?{' '}
+              {'Past the legal question? '}
               <Link
                 to={`/encyclopedia/animal/${animal.encyclopediaId}/`}
                 className="text-primary font-semibold hover:underline"
               >
-                See the {inSentence(animal.name)} profile
+                {`See the ${inSentence(animal.name)} profile`}
               </Link>
               .
             </p>
@@ -585,8 +561,7 @@ export default function ExoticPetLaws() {
               })}
             </div>
             <p className="mt-5 text-sm font-body text-foreground">
-              For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are
-              structured, start with{' '}
+              {'For the federal layer, what the Lacey Act and CITES actually control, and how state schemes are structured, start with '}
               <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
                 the written hub
               </Link>
@@ -616,9 +591,7 @@ export default function ExoticPetLaws() {
               Those entries are marked unclear on purpose rather than being rounded to a yes or a no.
             </p>
             <p>
-              Every entry links to the regulation it came from. None of this is legal advice, laws change
-              without much notice, and the agency that issues the permit is always the last word. For the
-              federal layer and how state schemes are structured, see the{' '}
+              {'Every entry links to the regulation it came from. None of this is legal advice, laws change without much notice, and the agency that issues the permit is always the last word. For the federal layer and how state schemes are structured, see the '}
               <Link to="/blog/exotic-pet-legal-hub/" className="text-primary font-semibold hover:underline">
                 exotic pet legal hub
               </Link>

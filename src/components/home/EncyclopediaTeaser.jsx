@@ -2,9 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { encyclopediaCategories, encyclopediaAnimals } from '@/lib/data/encyclopedia';
+import { encyclopediaCategories } from '@/lib/data/encyclopedia/meta';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
+// Per-category counts only need each animal's category, which the generated
+// index carries. The full data barrel is 120KB and was loading on the homepage
+// for the sake of eleven numbers.
+import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
+const encyclopediaAnimals = encyclopediaIndex.animals;
 
 const PREVIEW_COUNT = 8;
 
@@ -68,7 +73,7 @@ export default function EncyclopediaTeaser() {
               Animal Encyclopedia
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`Animal profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish`}
+              {`Pet species profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish.`}
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

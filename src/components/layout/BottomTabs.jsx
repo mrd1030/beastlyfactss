@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Layers, BookOpen, Compass, Heart } from 'lucide-react';
+import { BookOpen, Compass, Newspaper, Heart } from 'lucide-react';
 import { motion } from '@/lib/motion-safe';
 
 const tabs = [
-  { to: '/',             label: 'Home',    icon: Home },
-  { to: '/facts/',       label: 'Facts',   icon: Compass },
-  { to: '/encyclopedia/',label: 'Browse',  icon: Layers },
-  { to: '/blog/',        label: 'Critter Digest',  icon: BookOpen },
-  { to: '/pack/',        label: 'My Pack', icon: Heart },
+  { to: '/guides/', label: 'Guides',   icon: BookOpen },
+  { to: '/facts/',  label: 'Facts',    icon: Compass },
+  { to: '/blog/',   label: 'Articles', icon: Newspaper },
+  { to: '/pack/',   label: 'My Pack',  icon: Heart },
 ];
 
 export default function BottomTabs() {

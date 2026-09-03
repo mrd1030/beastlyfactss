@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
-import { Heart, Share2, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { Heart, Share2, ChevronDown, ChevronUp, X, RotateCcw } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { facts } from '@/lib/data/facts';
 import { imagePathFor } from '@/lib/data/factImages';
@@ -128,15 +128,22 @@ export default function Pack() {
       {visibleQuizResults.map((qr) => {
         const isAnimalCard = qr.type === 'animal-quiz';
 
+        const isThemedCard = qr.type === 'themed-quiz';
+
         const handleShareQuiz = () => {
-          // An animal card has a score and a page worth linking to; the
-          // personality result has neither, so they get different wording.
+          // An animal card has a score and a page worth linking to, a themed
+          // card has both plus a named reward, and the personality result has
+          // neither, so each gets its own wording.
           const text = isAnimalCard
             ? `${qr.animalEmoji || '🐾'} I scored ${qr.score}/${qr.total} on the ${qr.animalName} quiz on BeastlyFacts! Think you can beat me?`
-            : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
+            : isThemedCard
+              ? `${qr.emoji} I earned the "${qr.title}" card scoring ${qr.score}/${qr.total} on the ${qr.quizTitle} quiz at BeastlyFacts. Think you can beat me?`
+              : `${qr.emoji} I got ${qr.title} on BeastlyFacts!\n\n${qr.description}\n\nFind out your result at ${window.location.origin}/quiz`;
           const url = isAnimalCard
             ? `${window.location.origin}/encyclopedia/animal/${qr.animalId}/`
-            : `${window.location.origin}/quiz/`;
+            : isThemedCard
+              ? `${window.location.origin}/quiz/${qr.quizId}/`
+              : `${window.location.origin}/quiz/`;
 
           if (navigator.share) {
             navigator.share({ title: qr.title, text, url }).catch(() => {});
@@ -202,7 +209,7 @@ export default function Pack() {
             <h3 className="font-display font-bold text-lg pr-6">{qr.title}</h3>
             <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{qr.description}</p>
 
-            <div className="flex items-center gap-2 mt-4">
+            <div className="flex flex-wrap items-center gap-2 mt-4">
               {/* Share Button */}
               <button
                 onClick={handleShareQuiz}
@@ -210,6 +217,17 @@ export default function Pack() {
               >
                 <Share2 className="w-3.5 h-3.5" /> Share
               </button>
+
+              {/* Themed cards link back to their quiz so a Nice Try or So
+                  Close card can be upgraded from right here. */}
+              {isThemedCard && qr.quizId && (
+                <Link
+                  to={`/quiz/${qr.quizId}/`}
+                  className="flex items-center gap-1.5 text-xs font-body font-bold px-3 py-1.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 text-secondary transition-colors"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" /> Retake
+                </Link>
+              )}
 
               <span className="text-[10px] text-muted-foreground">
                 {`Saved ${new Date(qr.savedAt).toLocaleDateString()}`}

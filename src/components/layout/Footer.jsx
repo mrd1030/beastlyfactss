@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import DonateButton from '@/components/DonateButton';
 import Logo from '@/components/Logo';
+import { SocialLinksRow } from '@/components/shared/SocialIcons';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -23,52 +24,59 @@ export default function Footer() {
     </Link>
   </div>
             <p className="text-xs text-foreground/80 font-body leading-relaxed mb-4 max-w-[250px]">
-              Facts that roar. Guides that care. For reptile keepers and animal lovers everywhere.
+              Facts that roar. Guides that care. For keepers and anyone who likes animals enough to look them up.
             </p>
             <div className="mt-4">
               <DonateButton className="w-full font-body font-bold" />
             </div>
+            <div className="mt-5">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-muted-foreground mb-2.5">
+                Follow along
+              </h4>
+              <SocialLinksRow className="gap-4" />
+            </div>
           </div>
 
-          {/* Navigation Links - Cleaned Up */}
           {[
             {
-              title: "Explore",
+              title: "Keep a pet",
               links: [
-                { to: '/facts/', label: 'Fun Facts' },
-                { to: '/animal-facts/', label: 'Facts Hub' },
-                { to: '/fact-files/', label: 'Fact Files' },
-                { to: '/quiz/personality/', label: 'Personality Quiz' },
-                { to: '/pack/', label: 'My Beast Pack' },
-                { to: '/feed/', label: 'The Feed' },
-                { to: '/blog/', label: 'Critter Digest' },
-                { to: '/chronicles/dex/', label: 'The Chronicles' },
-              ]
-            },
-            {
-              title: "Encyclopedia",
-              links: [
-                { to: '/encyclopedia/', label: 'Browse all animals' },
-                { to: '/guides/', label: 'Care Guides' },
-                { to: '/gear/', label: 'Recommended Gear' },
-                { to: '/categories/', label: 'All Categories' },
+                { to: '/guides/', label: 'Care guides' },
+                { to: '/blog/', label: 'Articles' },
+                { to: '/encyclopedia/', label: 'Encyclopedia' },
+                { to: '/gear/', label: 'Recommended gear' },
+                { to: '/care-packages/', label: 'Care packages' },
                 { to: '/glossary/', label: 'Glossary' },
-                { to: '/exotic-pet-laws/', label: 'Exotic Pet Laws' },
               ]
             },
             {
-              title: "Info",
+              title: "Learn something wild",
               links: [
-                { to: '/about/', label: 'About Us' },
-                { to: '/blog/welcome-to-beastlyfacts/', label: 'Why We\'re Here' },
+                { to: '/facts/', label: 'Facts' },
+                { to: '/animal-facts/', label: 'Animal facts hub' },
+                { to: '/fact-files/', label: 'Fact files' },
+                { to: '/beastlypedia/', label: 'Beastlypedia' },
+                { to: '/gallery/', label: 'Gallery' },
+                { to: '/feed/', label: 'The feed' },
+                { to: '/quiz/', label: 'Quizzes' },
+                { to: '/chronicles/dex/', label: 'Chronicles' },
+              ]
+            },
+            {
+              title: "The site",
+              links: [
+                { to: '/exotic-pet-laws/', label: 'Is it legal?' },
+                { to: '/categories/', label: 'All categories' },
+                { to: '/about/', label: 'About' },
                 { to: '/contact/', label: 'Contact' },
+                { to: '/pack/', label: 'My Pack' },
                 { to: '/terms/', label: 'Terms' },
                 { to: '/privacy/', label: 'Privacy' },
               ]
             }
           ].map((section) => (
             <div key={section.title}>
-              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-foreground/60 mb-4">
+              <h4 className="font-body font-bold text-[10px] uppercase tracking-widest text-muted-foreground mb-4">
                 {section.title}
               </h4>
               <nav className="flex flex-col gap-2.5">

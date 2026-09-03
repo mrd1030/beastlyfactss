@@ -195,28 +195,55 @@
     --font-display: 'Schibsted Grotesk', 'Schibsted Grotesk Fallback', sans-serif;
     --font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible Next Fallback', sans-serif;
 
-    --background: 40 75% 97%;
+    /* Light surface rework, 2026-08-31 ("paper on desk"). The old scheme put
+       cards at 95% lightness on a 97% ground: panels sat DARKER than the
+       page, so nothing lifted, and the heavily saturated (75%) yellow ground
+       left no neutral for the eye to calibrate against - the whole page read
+       as one flat beige slab held together by hard borders. Now the ground
+       is a calmer warm sand and cards are near-white paper above it, with a
+       soft shadow (see the bg-card rule at the end of this file) and much
+       lighter borders doing the separation instead. */
+    --background: 42 40% 94.5%;
     --foreground: 136 26% 14%;
-    --card: 42 63% 95%;
+    --card: 40 55% 98.5%;
     --card-foreground: 136 26% 14%;
-    --popover: 42 63% 95%;
+    --popover: 40 55% 98.5%;
     --popover-foreground: 136 26% 14%;
     --primary: 164 56% 19%;
     --primary-foreground: 40 75% 97%;
-    --secondary: 17 77% 54%;
-    /* Cream text on this orange measured 3.27:1, under the 4.5:1 floor -
-       same failure mode the 2026-08-07 dark-mode note below used to
-       document for the previous orange. This near-black warm brown clears
-       5.48:1 in light mode and, reused as-is, 6.78:1 against the brighter
-       dark-mode orange too, so one value covers both themes. */
-    --secondary-foreground: 22 54% 7%;
-    --muted: 41 55% 92%;
-    --muted-foreground: 36 20% 35%;
+    /* Deepened 54% -> 40% lightness on 2026-08-31: the site sets this orange
+       as TEXT everywhere (text-secondary on ~190 small bold labels and links,
+       plus every prose link via --tw-prose-links), and at 54% it measured
+       3.27:1 on the old background, under the 4.5:1 floor for normal-size
+       text. At 40% it clears 4.93:1 on --background, 5.32:1 on --card, and
+       4.59:1 on --muted, so the same token works as both fill and text on
+       every light surface. Dark mode overrides with its own brighter orange,
+       which already passed as text (6.44:1). */
+    --secondary: 17 80% 40%;
+    /* Cream, not the near-black warm brown the brighter orange needed: on the
+       deepened fill above, near-black dropped under 4:1 while cream clears
+       5.2:1. Dark mode still pairs its bright orange with near-black
+       (6.79:1) via its own override below. */
+    --secondary-foreground: 40 75% 97%;
+    --muted: 41 35% 91%;
+    --muted-foreground: 36 18% 32%;
     --accent: 39 67% 55%;
     --accent-foreground: 136 26% 14%;
-    --destructive: 340 82% 48%;
+    /* Gold as text. --accent is a fill color: set as text on the light
+       background it measures near 2:1. Anything rendering gold TEXT or icons
+       (text-accent-ink) uses this deepened gold instead: 5:1 on
+       --background, 4.66:1 on --muted. Dark mode maps it back to the regular
+       accent, which clears 10.5:1 as text. */
+    --accent-ink: 36 80% 31%;
+    /* 44%, not 48%: on the deeper sand ground 48% measured 4.32:1 as text. */
+    --destructive: 340 82% 44%;
     --destructive-foreground: 0 0% 100%;
-    --border: 38 16% 49%;
+    /* Border is deliberately much lighter than input. With cards lifted off
+       the ground and shadowed, borders only assist the separation, so the
+       old 49% outlines (3.6:1, on everything) read as wireframe clutter.
+       Inputs keep the darker value: a form field's boundary is often its
+       only affordance and needs the 3:1 non-text floor, which 70% fails. */
+    --border: 38 14% 70%;
     --input: 38 16% 49%;
     --ring: 164 56% 19%;
     --chart-1: 17 77% 54%;
@@ -226,13 +253,13 @@
     --chart-5: 48 100% 60%;
     --radius: 0.5rem;
 
-    --sidebar-background: 42 63% 95%;
+    --sidebar-background: 40 55% 98.5%;
     --sidebar-foreground: 136 26% 14%;
     --sidebar-primary: 164 56% 19%;
     --sidebar-primary-foreground: 40 75% 97%;
-    --sidebar-accent: 41 55% 92%;
+    --sidebar-accent: 41 35% 91%;
     --sidebar-accent-foreground: 136 26% 14%;
-    --sidebar-border: 38 16% 49%;
+    --sidebar-border: 38 14% 70%;
     --sidebar-ring: 164 56% 19%;
   }
 
@@ -251,8 +278,12 @@
     --muted-foreground: 41 20% 66%;
     --accent: 39 82% 67%;
     --accent-foreground: 148 33% 8%;
-    --destructive: 340 82% 48%;
-    --destructive-foreground: 0 0% 100%;
+    --accent-ink: 39 82% 67%;
+    /* The light-mode destructive red reads 3.73:1 as text on this dark
+       background, so dark mode brightens it to 5.1:1 and flips the button
+       text to the same near-black the other dark fills use. */
+    --destructive: 345 85% 62%;
+    --destructive-foreground: 153 27% 8%;
     --border: 141 14% 42%;
     --input: 141 14% 42%;
     --ring: 165 67% 41%;
@@ -330,6 +361,18 @@ html, body {
   user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+}
+
+/* Part of the light "paper on desk" rework (see the :root token comment):
+   cards get a soft warm shadow so the lift off the sand ground is depth, not
+   just a lighter fill. Declared as a plain rule against Tailwind's own
+   .bg-card utility class, which sets only background-color, so nothing
+   conflicts. In dark mode a dark shadow on a near-black page is invisible,
+   which is the correct behavior there, so it is not gated to light. Opacity
+   variants (bg-card/80 etc., e.g. the hero glass card) are different class
+   names and stay shadowless on purpose. */
+.bg-card {
+  box-shadow: 0 1px 3px hsl(30 40% 10% / 0.06), 0 4px 14px hsl(30 40% 10% / 0.05);
 }
 
 /* Homepage section divider ornament.

@@ -16,6 +16,7 @@ import { mkdir, writeFile, readFile } from 'fs/promises';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { cpus } from 'os';
+import { themedQuizzes } from './src/lib/data/quizzes/index.js';
 
 const DIST = './dist';
 const PORT = 4173;
@@ -185,9 +186,11 @@ const STATIC_ROUTES = [
   '/guides',
   '/gear',
   '/pack',
+  '/quiz',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
+  ...themedQuizzes.map(q => `/quiz/${q.id}`),
   '/about',
   '/contact',
   '/glossary',
@@ -355,8 +358,9 @@ async function renderRoute(page, route, timeoutMs) {
 
   const html = await page.content();
 
-  // Strip <script src> tags that Google Tag Manager's own loader snippet
-  // injected while this page was being rendered. page.content() serialises the
+  // Strip <script src> tags that the analytics loader in index.html (gtag.js
+  // and the ahrefs tag, injected after load) managed to add while this page
+  // was being rendered. page.content() serialises the
   // live DOM, so anything a third-party script appended gets baked into the
   // static file - and index.html still contains the snippet that appends it
   // again at request time. The result is GTM loading twice on every prerendered
@@ -364,14 +368,15 @@ async function renderRoute(page, route, timeoutMs) {
   // injection), which PageSpeed measured as /gtm.js listed repeatedly at 116 KiB
   // each and counted toward "reduce unused JavaScript".
   //
-  // Only tags pointing at googletagmanager.com are removed, and only ones with a
-  // src, so the inline loader snippet and the <noscript> iframe both survive
-  // untouched: GTM still loads exactly once for real visitors, via the snippet
-  // that was always meant to do it.
+  // Only tags pointing at googletagmanager.com or analytics.ahrefs.com are
+  // removed, and only ones with a src, so the inline loader snippet survives
+  // untouched: both scripts still load exactly once for real visitors, via the
+  // snippet that was always meant to do it. Both hosts are also aborted at the
+  // request level in makePage(), so this is belt and braces.
   return (
     html
       .replace(
-        /<script\b[^>]*\bsrc="https?:\/\/(?:www\.)?googletagmanager\.com\/[^"]*"[^>]*>\s*<\/script>/gi,
+        /<script\b[^>]*\bsrc="https?:\/\/(?:www\.googletagmanager\.com|analytics\.ahrefs\.com)\/[^"]*"[^>]*>\s*<\/script>/gi,
         ''
       )
       // Same class of problem, different injector: Vite's __vitePreload helper
@@ -395,6 +400,14 @@ async function renderRoute(page, route, timeoutMs) {
       // ahead of it.
       .replace(/<link\b[^>]*>\s*/gi, (tag) =>
         /\brel="modulepreload"/i.test(tag) && /\bas="script"/i.test(tag) ? '' : tag
+      )
+      // index.html is the template for every route, and its LCP preload for
+      // the homepage hero (see the comment there) came along to all of them:
+      // every article and guide page fetched an 84 KB AVIF at high priority
+      // that nothing on the page renders, ahead of its own hero image. Only
+      // the homepage keeps it.
+      .replace(/<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>\s*/gi, (tag) =>
+        route === '/' || !/\/hero-\d+/.test(tag) ? tag : ''
       )
   );
 }
@@ -476,7 +489,7 @@ async function makePage(browser) {
   await page.setRequestInterception(true);
   page.on('request', req => {
     const u = req.url();
-    if (u.includes('googletagmanager') || u.includes('google-analytics') ||
+    if (u.includes('googletagmanager') || u.includes('google-analytics') || u.includes('analytics.ahrefs.com') ||
         u.includes('pagead') || u.includes('fundingchoices') ||
         u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
       req.abort();

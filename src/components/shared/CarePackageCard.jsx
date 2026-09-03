@@ -47,8 +47,7 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
         </div>
         <h3 className="font-display font-bold text-lg text-foreground">{pkg.name}</h3>
         <p className="text-xs text-muted-foreground font-body">
-          {pkg.pages} pages &middot; PDF &middot; print or view
-          {pkg.version && <> &middot; v{pkg.version}</>}
+          {`${pkg.pages} pages · PDF · print or view${pkg.version ? ` · v${pkg.version}` : ''}`}
         </p>
 
         {isFull ? (
@@ -66,7 +65,7 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
 
         {isComingSoon ? (
           <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-muted-foreground">
-            Coming soon
+            In progress
           </span>
         ) : (
           <span className="mt-2 inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary">

@@ -557,9 +557,48 @@ async function buildArticlesFeed(request) {
   );
 }
 
+// Beehiiv's magic-link signup redirects the visitor here once the address is
+// recorded (see BeehiivSubscribe.jsx). Push a one-line alert to ntfy, the same
+// channel the comment moderation alerts use (supabase/schema.sql), then send
+// the visitor on to the homepage, which shows a thank-you toast on
+// ?subscribed=1. No personal data is involved: Beehiiv does not pass the email
+// through the redirect, and the alert says only that someone signed up.
+//
+// NTFY_SUBSCRIBER_NOTIF is a Cloudflare Pages environment variable, not a
+// repo value, so the topic name stays private. With it unset the route still
+// redirects and simply sends nothing.
+async function notifySubscriber(env) {
+  const topic = env?.NTFY_SUBSCRIBER_NOTIF;
+  if (!topic) return;
+  try {
+    await fetch('https://ntfy.sh', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        topic,
+        title: 'New Critter Digest subscriber',
+        message: 'Someone just signed up through beastlyfacts.com.',
+        tags: ['newspaper'],
+        priority: 3,
+        click: 'https://app.beehiiv.com/',
+      }),
+    });
+  } catch {
+    // A failed alert must never break the visitor's redirect.
+  }
+}
+
 export default {
-  async fetch(request) {
+  async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
+
+    if (pathname === '/subscribed' || pathname === '/subscribed/') {
+      const alert = notifySubscriber(env);
+      // waitUntil lets the alert finish after the redirect has been sent.
+      if (ctx?.waitUntil) ctx.waitUntil(alert); else await alert;
+      return Response.redirect(new URL('/?subscribed=1', request.url).toString(), 302);
+    }
+
     const rss =
       pathname === '/articles.xml' ? await buildArticlesFeed(request) : await buildFactsFeed(request);
 
