@@ -19,6 +19,10 @@ const outDir = join(here, 'pdf');
 const PACKAGES = [
   { slug: 'ball-python', out: 'BeastlyFacts-Ball-Python-Care-Package.pdf' },
   { slug: 'betta-fish', out: 'BeastlyFacts-Betta-Fish-Care-Package.pdf' },
+  { slug: 'hamster', out: 'BeastlyFacts-Hamster-Care-Package.pdf' },
+  { slug: 'rabbit', out: 'BeastlyFacts-Rabbit-Care-Package.pdf' },
+  { slug: 'tarantula', out: 'BeastlyFacts-Tarantula-Care-Package.pdf' },
+  { slug: 'corn-snake', out: 'BeastlyFacts-Corn-Snake-Care-Package.pdf' },
 ];
 
 const CHROME_CANDIDATES = [

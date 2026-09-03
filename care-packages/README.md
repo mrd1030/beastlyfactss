@@ -44,11 +44,16 @@ the series reads as one product line.
   palette from v2.0; add `class="page cover blackwater"` for the deep teal
   variant, which suits fish and amphibians where the earth palette reads like
   the wrong habitat. The interior stays house rust either way, so the series
-  still reads as one product line.
+  still reads as one product line. Variants so far: `blackwater` (fish and
+  amphibians), `burrow` (arid-steppe rodents), `meadow` (grazing herbivores),
+  `forestfloor` (invertebrates), `pineclay` (a hotter red clay for the
+  colubrids). Add a new one as another token block rather than styling a cover
+  inline.
 
 ## Page structure
 
-Every package follows the same 22-page spine:
+Every package follows the same spine. 22 pages is the usual length; where a
+species has less to say the package runs shorter, but never under 20:
 
 | Pages | Section |
 | --- | --- |

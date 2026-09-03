@@ -291,6 +291,54 @@ ul.check.cols {
   --cv-pill-text: #cfe4ea;
 }
 
+/* Burrow: warm ochre over deep umber, for the arid-steppe burrowing rodents. */
+.cover.burrow {
+  --cv-top: #443722;
+  --cv-mid: #342a19;
+  --cv-bot: #241d11;
+  --cv-scrim: 36, 29, 17;
+  --cv-accent: #e0a63f;
+  --cv-sub: #d2c6ae;
+  --cv-pill-line: rgba(233, 216, 186, 0.35);
+  --cv-pill-text: #e8dcc6;
+}
+
+/* Meadow: deep moss and hay, for the grazing herbivores. */
+.cover.meadow {
+  --cv-top: #303a26;
+  --cv-mid: #242c1d;
+  --cv-bot: #171d13;
+  --cv-scrim: 23, 29, 19;
+  --cv-accent: #a9c266;
+  --cv-sub: #c2ccb3;
+  --cv-pill-line: rgba(196, 214, 176, 0.33);
+  --cv-pill-text: #d7e2c8;
+}
+
+/* Forest floor: the near-black of a leaf-litter burrow, for the inverts. */
+.cover.forestfloor {
+  --cv-top: #2c2830;
+  --cv-mid: #1f1c23;
+  --cv-bot: #141216;
+  --cv-scrim: 20, 18, 22;
+  --cv-accent: #cb7c4f;
+  --cv-sub: #c0b8bf;
+  --cv-pill-line: rgba(214, 203, 210, 0.32);
+  --cv-pill-text: #ddd3d9;
+}
+
+/* Pine clay: red clay and dry pine, hotter than the default earth. */
+.cover.pineclay {
+  --cv-top: #452a20;
+  --cv-mid: #351f18;
+  --cv-bot: #251511;
+  --cv-scrim: 37, 21, 17;
+  --cv-accent: #d5703f;
+  --cv-sub: #d0bcb0;
+  --cv-pill-line: rgba(228, 205, 192, 0.35);
+  --cv-pill-text: #e6d5c9;
+}
+
 .cover .left {
   width: 60%;
   padding: 0.62in 0.5in 0.62in 0.65in;
