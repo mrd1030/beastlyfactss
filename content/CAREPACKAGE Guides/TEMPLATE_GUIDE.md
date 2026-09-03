@@ -165,9 +165,14 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the major version on
-   the cover. Never overwrite the previous version's PDF; the old file stays as the
-   record of what buyers of that version received.
+8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
+   cover. Never overwrite the previous version's PDF; the old file stays as the record
+   of what buyers of that version received. Once the new build replaces it, move the old
+   file into `rebuilt/past versions/` and add a row to the README there saying what
+   changed, so `rebuilt/` only ever holds the current edition of each animal. Careful
+   with what "current" means: the bearded dragon's live edition is the 22-page
+   unversioned file, not the newer v3 build, because v3 has not been listed yet. Check
+   `carePackages.js` before moving anything.
 9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
