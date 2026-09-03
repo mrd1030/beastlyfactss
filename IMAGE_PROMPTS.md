@@ -237,23 +237,73 @@ and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
 
 ### bearded-dragon-brumation.jpg
-Photorealistic photograph of an adult bearded dragon settled calmly half
-inside a dark cork bark hide on the cool side of its enclosure, eyes closed
-or heavy-lidded, body relaxed and low rather than alert or basking. The
-UVB tube overhead sits dim and unlit in soft ambient room light, a hint of
-cooler blue-grey creeping in through the enclosure glass beside a warm
-wooden shelf edge, suggesting a quiet autumn evening rather than illness.
-Muted slate and warm wood palette, sharpest on the dragon's face at the
-mouth of the hide, 50mm, f/2.8, 3:2. No text, logos, or brand markings
-anywhere.
+Photorealistic photograph of an adult bearded dragon brumating, resting
+half-tucked under a wide arch of dark cork bark on the cool side of its
+enclosure, head and forelimbs out on the floor, hindquarters and tail still in
+shadow inside the hide. Eyes fully closed, chin flat to the ground, body low and
+settled rather than propped up or alert. She is healthy, only dormant: full
+rounded tail base, no visible hip bones or ribs, smooth unwrinkled skin, eyes
+level rather than sunken, colour slightly muted and dusty rather than bright.
+
+The enclosure floor is smooth grey slate tile, clean and flat, with a folded
+edge of paper towel visible at the frame's edge. This site treats loose
+particulate substrate as an impaction risk, so the floor must read as a hard
+solid surface.
+
+Above and behind, a long linear UVB tube sits dark and unlit in its reflector,
+and the enclosure beyond falls away into soft shadow. The only light is cool
+ambient room light spilling in from the left across the dragon's head and one
+shoulder, with deep shadow filling the hide. Muted slate, charcoal and warm cork
+brown palette, quiet and still, the feel of a dim autumn evening.
+
+Camera low at floor level, close, sharpest on the closed eye and the ridge of
+spines along the jaw, cork bark texture crisp, background falling off, 100mm,
+f/2.8, 3:2.
+
+Must not contain: bark chips, wood chips, sand, soil or any loose substrate;
+a lit or glowing lamp of any kind; a red or coloured night bulb; sunken eyes,
+wrinkled skin, a visible spine or hip bones, an open mouth, or any other cue
+that reads as a sick dragon rather than a sleeping one. No text, logos, or brand
+markings anywhere.
 
 ### bearded-dragon-eggs-and-egg-binding.jpg
-Photorealistic photograph of an adult female bearded dragon standing beside an
-open plastic lay box filled with damp dark soil and sand on a terrarium floor,
-one small test-dig visible in the substrate near her front feet. Warm
-terracotta light from an overhead basking lamp just out of frame, earthy brown
-and terracotta palette, sharpest on the dragon's face and the lay box rim,
-50mm, f/2.8, 3:2. No text, logos, or brand markings anywhere.
+Photorealistic photograph of a large lay box set up on the warm side of a
+bearded dragon enclosure, with an adult female standing beside it.
+
+THE LAY BOX IS THE SUBJECT AND MUST READ AS LARGE. It is a full-size
+translucent household storage tub with the lid off, roughly the size of a
+laundry basket, wide enough that the dragon could comfortably turn around
+inside it and clearly longer than she is from nose to tail base. It occupies
+about two thirds of the frame width and its near rim rises to roughly the
+height of her shoulder. Do not render it as a small tray, seed dish, food bowl,
+plant pot or nest box.
+
+The tub is filled deep with a damp dark 50/50 mix of organic topsoil and washed
+play sand, packed to within a few inches of the rim, the depth of the fill
+plainly visible as a dense band through the translucent side wall. The surface
+is worked over rather than smooth, with one shallow test hole started near the
+front corner, its walls holding their shape without slumping. The mix looks
+damp and cohesive, not dusty and not muddy.
+
+The adult female stands on the enclosure floor beside the tub in three-quarter
+view, alert and healthy, body normal and well muscled, one front foot raised
+against the tub's outer wall as if about to climb in. She is secondary to the
+box in the composition and noticeably smaller in the frame than it is. The
+enclosure floor she stands on is smooth grey slate tile, bare and clean, so the
+filled box reads as an obviously separate container rather than as loose
+substrate spread across the enclosure. This contrast between bare tile floor and
+deep filled box is the whole point of the image.
+
+Warm terracotta basking light from a lamp just out of frame at the upper right,
+earthy brown, tan and slate palette, soft shadow under the tub's rim. Camera
+low at floor level and pulled back far enough to hold the full tub in frame,
+sharpest on the tub's near rim and the test hole, the dragon's face still clearly
+readable, 35mm, f/4, 3:2.
+
+Must not contain: eggs of any kind, a small or shallow container, loose soil or
+sand spread across the enclosure floor outside the box, a gravid belly shown
+distended or distressed, a dark beard, gaping, or any cue of illness. No text,
+logos, or brand markings anywhere.
 
 ### bearded-dragon-growth-weight-checks.jpg
 Photorealistic photograph of an adult bearded dragon standing calmly on the
