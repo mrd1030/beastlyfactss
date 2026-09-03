@@ -139,7 +139,11 @@ Once one exists, re-source that PDF page from it.
 
 Aquatic animals collapse pages 5 to 8 to tank size / filtration and cycling / water
 quality and testing / diet, and drop pages 7, 10, 14 (keep body condition), 15, and
-the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
+the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl on that plan,
+but treat that as the floor rather than the target: goldfish v3.0 came out at 39 because
+water chemistry, filtration and cycling each need a full page of their own, and the
+11-page owner-tools and reference tail is fixed. An aquatic animal trades the UVB and
+feeder-insect pages for water-quality pages rather than simply losing them.
 
 ## Build workflow
 
@@ -193,6 +197,55 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
+11. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
+
+## Always keep a next-version notes file
+
+Every package gets `notes/{slug}-v{N+1}-notes.md`, written as you build, not afterward.
+Fitting a page count means cutting good content, and without this file that content gets
+cut twice: once out of the PDF and once out of memory, so the next edition researches and
+writes it again from nothing.
+
+What goes in it:
+
+- **The exact HTML of every block you removed**, in a fenced code block, with a one-line
+  label saying which page it came off and why it went. Reinstating a block should be a
+  paste plus a re-run of the overflow check, not a rewrite. Note its rough word count so
+  a future editor knows whether it needs a page split to absorb.
+- **The page count you landed on, and whether it was a floor or a choice.** Say whether
+  the number came from the measurement script or from judgment, so nobody re-litigates a
+  limit that was already measured.
+- **Ideas raised and never drafted.** The pages you wanted and did not build, with enough
+  detail to start from. This is usually the most valuable part of the file.
+- **A cut list for next time, in priority order.** Having just built the thing, you know
+  better than anyone which pages would survive being dropped, and which are the product.
+  Name the ones that must not be cut.
+
+Two rules that matter:
+
+- **Cut by parking, never by trimming.** When a page overflows, first split it or move a
+  block to a page with headroom; park the block only when neither works. Do not shave
+  sentences to make text fit, and never let `overflow:hidden` clip content silently. A
+  fact half-stated is worse than the same fact on the next page.
+- **Tighten layout before you cut content.** A `class="dense"` table, a `compact` list, a
+  callout at `margin:7pt 0`, or a two-column block reclaims 20 to 100 px a page and costs
+  nothing. Most small overflows are a layout problem wearing a content problem's clothes.
+
+The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`.
+
+## Renumbering: generate it, don't hand-edit it
+
+Splitting or merging one page moves every page number after it, and there are three
+places each number appears: the TOC, the `.pagefoot`, and every in-text "page N"
+cross-reference. Hand-editing those is where stale numbers ship.
+
+Build the file from per-page fragments carrying `<!--PAGE key-->` and `<!--FOOT key-->`
+markers, write cross-references as symbolic `{{P:key}}` tokens, and let a small build
+script assign numbers in document order, generate the TOC from a section map, and resolve
+the tokens. The script should refuse to build on a duplicate page key, a page missing from
+the TOC, a TOC entry with no page, an unknown `{{P:key}}`, or a leftover placeholder. Then
+a split costs one edit instead of forty, and a wrong number becomes a build failure rather
+than a proofreading job. The goldfish v3.0 build script is the pattern.
 
 ## Pre-publish accuracy checks (learned the hard way)
 
