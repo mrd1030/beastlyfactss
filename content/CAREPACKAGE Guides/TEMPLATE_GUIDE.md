@@ -61,46 +61,102 @@ detailed and the ones that got the closest fact-check against real external sour
 `guides/{category}.js` is a shorter, secondary source; if it disagrees with the MDX,
 the MDX wins, but flag the JS copy to fix too so the two don't stay out of sync.
 
-### Content the site does NOT have yet (as of Sep 2026)
-The v3 bearded dragon package needed pages the site had no article for. Until those
-articles exist, the PDF text is the only copy, so treat the bearded dragon file as the
-source and check it against the veterinary references on its Sources page. Every package
-since logs its own gaps in **Site content gaps by package** near the end of this file;
-add yours there before you call a package done.
+Read the Ball Python v2.0 note under **Site content gaps by package** before leaning on
+that last sentence. "The MDX wins" picks a side without checking whether either side is
+right. When two internal sources disagree on a number that matters, go to the external
+source first.
 
-- Full safe-foods charts (every staple / occasional / rare / never food with the reason)
-- Power outage, travel, and transport plan
-- Pet-sitter sheet
-- Sexing, growth reference, body condition
-- Females, infertile eggs, lay box, egg binding
-- Reading stool and urates
-- Mouth rot, tail rot, eye problems, burns, prolapse
-- Brumation routine (the site has a paragraph, not a routine)
+### External sources: recommended, not a whitelist
 
-Site articles to create, combined so each is long enough to stand on its own (the four
-standard split guides stay as they are; these are additions, not replacements):
+VCA Hospitals, PetMD, and the Merck Veterinary Manual are the ones leaned on most here,
+but they are recommendations, not the only sites allowed. Any credible source is usable:
+veterinary schools and teaching hospitals, peer-reviewed papers and journals, government
+wildlife and agriculture agencies, accredited zoos and aquariums, species and breed
+societies, and established species-specific references. ReptiFiles settled the ball
+python humidity drift, so a well-sourced species reference can outrank a general portal.
+Reach for the better-placed source when one exists.
 
-1. **Bearded dragon safe foods list** (`bearded-dragon-safe-foods-guide.mdx`): every
-   feeder insect, green, vegetable, fruit, and "human food" in a staple / occasional /
-   rare / never tier with the reason, the prey-size rule, gut-loading, and a
-   daily-salad recipe. Naturally 2,500+ words. Highest search value of the set.
-2. **Bearded dragon growth, weight, and at-home health checks**
-   (`bearded-dragon-growth-and-health-checks-guide.mdx`): sexing, growth chart, body
-   condition, weekly weigh-in routine, reading stool and urates, dehydration signs.
-3. **Female bearded dragons: eggs, lay boxes, and egg binding**
-   (`bearded-dragon-eggs-and-egg-binding-guide.mdx`): infertile clutches, gravid
-   signs, lay box build, calcium during a cycle, dystocia signs and treatment.
-4. **Bearded dragon brumation guide** (`bearded-dragon-brumation-guide.mdx`): triggers,
-   the pre-brumation vet check, the weekly routine, waking up, when to worry. Also
-   settles the inconsistent durations across the current pages.
-5. **Reptile emergency plan: power outages, travel, and pet sitters**
-   (`reptile-power-outage-and-travel-guide.mdx`): one site-wide article wired into
-   every reptile guide's related articles. Species-specific temperature floors in a
-   table.
-6. **Expand the existing health-issues guide**, not a new article: parasites and the
-   fecal test, mouth rot, tail rot, eye problems, burns, prolapse.
+What does not count as credible: forums, Reddit threads, Facebook groups, care sheets on
+retailer or breeder sales pages, AI-generated content farms, and anything with no named
+author or organization behind it.
 
-Once one exists, re-source that PDF page from it.
+Two more rules that hold whatever the source is. Cite only what you actually opened and
+read, never a figure recalled from memory. And when two credible sources disagree on a
+number, print the range instead of picking a side, and name both on the Sources page so
+a reader can see why it's a range.
+
+### Writing site articles for content the site does not have
+
+**This is a standing part of every package build, not a one-off backlog.** When a PDF
+page needs content no site article covers, the fix is to write the site article, not to
+let the PDF stay the only copy. Order of operations: write and publish the article
+first, then source the PDF page from it. That keeps the PDF and the site from
+disagreeing, and the research gets used twice instead of once.
+
+Until the article exists, the PDF text is the only copy, so the figures on that page have
+nothing to be fact-checked against later. That is the risk, and it is why every package
+logs its own gaps under **Site content gaps by package** near the end of this file. Add
+yours there before you call a package done (build workflow step 12), and pick off the
+cross-species rows first, since one article closes the same gap in every future package.
+
+What the build checks actually enforce is worth knowing before you lean on them:
+
+| Requirement | Enforced by | Covers a care package article? |
+|---|---|---|
+| 1-2+ in-body internal links, written into the prose | `scripts/check-internal-links.mjs` (`npm run check:links`) | **Yes.** Walks every `.mdx` under `content/`, so a new article is caught the moment it exists |
+| Every `RELATED_ARTICLES` slug resolves to a real file, every guide id key is real | `scripts/check-related-articles.mjs` (`npm run check:related`) | **Yes**, for dead slugs and typo'd keys, which is what catches a renamed article |
+| The article is attached to at least one guide at all | same script, orphan check | **No.** The orphan check only fires on articles tagged "Dog Health" or "Cat Health". A reptile, bird, or fish article with no entry passes silently |
+| Photos exist and are wired by id | `scripts/check-images.mjs` (`npm run check:images`) | Yes, when the article adds photos |
+
+That third row is the one that bites. `getAutoDetectedSlugs` wires a slug for free only
+when it is exactly `{guideId}-{suffix}` for one of the six standard suffixes
+(`cost-guide`, `handling-guide`, `health-issues-guide`, `tank-setup-guide`,
+`feeding-guide`, `enrichment-guide`, per `STANDARD_SUFFIXES` in `relatedArticles.js`).
+A species whose article prefix differs from its guide id (`african-grey` vs
+`african-grey-parrot-`, `tegu` vs `argentine-tegu-`) does not auto-detect either, even
+on a standard suffix, and is wired by hand.
+
+Most articles written for a care package page match none of that: `safe-foods-guide`,
+`brumation-guide`, `growth-weight-checks-guide`, `eggs-and-egg-binding-guide`,
+`quarantine-guide`, and `reptile-emergency-plan-guide` all auto-detect against nothing.
+So **write the `RELATED_ARTICLES` entry by hand, every time**, against the guide ids the
+article actually serves, and do not expect a check to remind you. Nothing will. An
+unwired article is reachable only by search.
+
+Run `npm run check:links` and `npm run check:related` after installing the article, plus
+`npm run check:images` if it added photos. Stop there: per CLAUDE.md, content installs do
+not run `npm run build` unless explicitly asked.
+
+The rest is judgment, unenforced. Combine narrow topics so each article is long enough
+to stand on its own, and spread publish dates across days rather than dumping a batch on
+one. The four standard split guides stay as they are; these are additions, never
+replacements. Expanding an existing guide in place is often the better move than a new
+thin article, and several gap rows below call for exactly that.
+
+The v3 bearded dragon package drove the first round of this, and all six are now done
+and live:
+
+| PDF page need | Article | Status |
+|---|---|---|
+| Safe-foods charts, prey-size rule, gut-loading | `bearded-dragon-safe-foods-guide.mdx` | live |
+| Sexing, growth reference, body condition, stool and urates | `bearded-dragon-growth-weight-checks-guide.mdx` | live |
+| Females, infertile eggs, lay box, egg binding | `bearded-dragon-eggs-and-egg-binding-guide.mdx` | live |
+| Brumation routine (the site had a paragraph, not a routine) | `bearded-dragon-brumation-guide.mdx` | live |
+| Power outage, travel, transport, pet-sitter sheet | `reptile-emergency-plan-guide.mdx` | live, site-wide, wired into 31 reptile guide ids |
+| Parasites and the fecal test, mouth rot, tail rot, eye problems, burns, prolapse | `bearded-dragon-health-issues-guide.mdx` | live, expanded in place |
+
+Two shipped under different slugs than first planned. Link the real ones:
+`bearded-dragon-growth-weight-checks-guide` (not `-growth-and-health-checks-`) and
+`reptile-emergency-plan-guide` (not `reptile-power-outage-and-travel-`).
+
+**Still open for every other species.** Those six cover the bearded dragon only. Every
+other animal's package hits the same gaps, and the rows marked "check for a species
+article" in the sourcing table below are where they land. For a new animal, check
+whether that species has its own version first. If it does, source from it. If it
+doesn't, either write it (preferred, when the topic has enough species-specific
+substance to stand alone) or use the bearded dragon file as the structural pattern and
+verify every single number against veterinary sources for that species. Never carry a
+bearded dragon figure across to another animal.
 
 ## Page-by-page sourcing (reptile skeleton, 34 pages)
 
@@ -115,24 +171,24 @@ Once one exists, re-source that PDF page from it.
 | 7 | Thermostats, timers & UVB distance | `{slug}-tank-setup-guide.mdx` plus `uvb-lighting-complete-guide.mdx` and `t5-vs-compact-uvb-guide.mdx`. Reptiles and birds only; aquatic animals replace this with a water-testing page |
 | 8 | Substrate, furnishings & handling | `{slug}-tank-setup-guide.mdx` Substrate / Furnishings + `{slug}-handling-guide.mdx` (Salmonella callout for every reptile and amphibian) |
 | 9 | Diet & feeding by age | `{slug}-feeding-guide.mdx`. Verify the supplement table specifically: plain calcium vs calcium-with-D3 vs multivitamin, by age. This has been wrong before |
-| 10 | Feeder insects (insectivores and omnivores) | `{slug}-feeding-guide.mdx` + `gut-loading-feeder-insects-guide.mdx`; the site has no full chart, use the bearded dragon page as the pattern |
-| 11 | Safe greens & vegetables (herbivores and omnivores) | `{slug}-feeding-guide.mdx`; no full chart on the site, use the bearded dragon page as the pattern |
+| 10 | Feeder insects (insectivores and omnivores) | `{slug}-feeding-guide.mdx` + `gut-loading-feeder-insects-guide.mdx`; check for a species article first (`{slug}-safe-foods-guide.mdx`, which bearded dragon has), otherwise use the bearded dragon page as the pattern |
+| 11 | Safe greens & vegetables (herbivores and omnivores) | `{slug}-feeding-guide.mdx` + `{slug}-safe-foods-guide.mdx` where one exists; check for a species article first, otherwise use the bearded dragon page as the pattern |
 | 12 | Fruit, extras & the never-feed list | same |
 | 13 | Common mistakes & enrichment | `{slug}-enrichment-guide.mdx` + `guides` sections.enrichment |
-| 14 | Sexing, growth & body condition | not on the site; bearded dragon page as pattern, verify against vet sources |
-| 15 | Females, eggs & egg binding (egg-laying species) | not on the site; bearded dragon page as pattern. Birds: egg binding is in `{slug}-health-issues-guide.mdx` |
+| 14 | Sexing, growth & body condition | `{slug}-growth-weight-checks-guide.mdx` where one exists (bearded dragon does); check for a species article first, otherwise bearded dragon page as pattern, verify against vet sources. Snakes have nothing for this yet |
+| 15 | Females, eggs & egg binding (egg-laying species) | `{slug}-eggs-and-egg-binding-guide.mdx` where one exists (bearded dragon does); check for a species article first, otherwise bearded dragon page as pattern. Birds: egg binding is in `{slug}-health-issues-guide.mdx` |
 | 16 | Health red flags | `{slug}-health-issues-guide.mdx` intro / when-to-call-a-vet. Split food-refusal thresholds by age wherever the species has a juvenile/adult difference |
 | 17 to 19 | Condition pages (2 to 3, one pair or trio each) | `{slug}-health-issues-guide.mdx`, ranked by severity/frequency; the last one collects the minor conditions (parasites, mouth rot, eyes, burns, prolapse) |
-| 20 | Brumation, shed & behavior page | `{slug}-health-issues-guide.mdx` + `{slug}-feeding-guide.mdx` brumation section |
-| 21 | Reading poop & hydration | not on the site; bearded dragon page as pattern |
+| 20 | Brumation, shed & behavior page | `{slug}-brumation-guide.mdx` where one exists (bearded dragon and snakes do) and `reptile-shedding-complete-guide.mdx` for the shed cycle, else `{slug}-health-issues-guide.mdx` + `{slug}-feeding-guide.mdx` brumation section |
+| 21 | Reading poop & hydration | `{slug}-growth-weight-checks-guide.mdx` where one exists (bearded dragon's covers stool, urates and dehydration signs); check for a species article first, otherwise bearded dragon page as pattern. Open as a cross-species gap |
 | 22 | Setup checklist & targets | `{slug}-tank-setup-guide.mdx` FAQs + `guides` checklist[] |
 | 23 | Emergency & quick targets card | no new content; restates numbers from pages 5 to 21, plus fill-in lines for vet numbers and bulb dates |
 | 24 | Budget & shopping list | `{slug}-cost-guide.mdx` (primary) + `guides` costs{}. Make the line items actually sum to the totals |
 | 25 | First 30 days checklist | synthesized from tank-setup + handling + health MDX guides |
 | 26 | Symptom quick reference | `{slug}-health-issues-guide.mdx`, condensed to a table, every condition page gets a row |
 | 27 | Daily, weekly & seasonal routine | synthesized from tank-setup + feeding + enrichment MDX guides |
-| 28 | Power outages, travel & transport | not on the site; bearded dragon page as pattern, adjust the tolerable temperature floor per species |
-| 29 | Pet-sitter sheet | boilerplate with species numbers filled in |
+| 28 | Power outages, travel & transport | `reptile-emergency-plan-guide.mdx`, the site-wide article; adjust the tolerable temperature floor per species |
+| 29 | Pet-sitter sheet | `reptile-emergency-plan-guide.mdx` pet-sitter section, plus boilerplate with species numbers filled in |
 | 30 | Owner log | blank fillable, 16 rows |
 | 31 | Equipment, supplement & vet log | blank fillable plus the 12-month planner |
 | 32 | Enrichment checklist & log | `{slug}-enrichment-guide.mdx`, condensed |
@@ -141,31 +197,85 @@ Once one exists, re-source that PDF page from it.
 
 Aquatic animals collapse pages 5 to 8 to tank size / filtration and cycling / water
 quality and testing / diet, and drop pages 7, 10, 14 (keep body condition), 15, and
-the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
+the UVB rows on 22 and 23. Expect 34 to 39 pages for a fish, not the 28 to 30 this note
+used to predict: Betta v1.0 landed at 36 and Goldfish v3.0 at 39, because cycling, water
+chemistry, and water changes each need their own page rather than a shared one, and a
+goldfish additionally needs filtration sizing and media maintenance on separate pages.
+
+### Page count is a target, not a budget
+
+Every page count in this doc (34 for the reptile skeleton, 34 to 36 aquatic) is the
+expected shape, not a quota to hit. **Going over or under is fine.** Accurate, complete,
+genuinely useful content beats landing on a number, every time. A package that runs 31
+pages or 37 pages is the right length for that animal.
+
+So never cut a real husbandry detail, a health red flag, a supplement dose, or a
+temperature target to make a page fit. Ball Python v2.0 had to be rebuilt precisely
+because husbandry detail got trimmed to fit, and the restored version came out at 34
+pages. When a page runs long, in this order: combine it with a neighboring page that
+shares its topic, split it into two pages and renumber, or just let the guide run longer.
+When a page runs short, extend it with content that earns its place, the species' own
+specifics, a worked example, a table that saves the reader a lookup, rather than padding
+with filler or stretching the type to fill space.
+
+Two half-empty pages are worse than one full page, and one clipped page is worse than
+either. The one hard rule is that the count has to be *consistent* once it's locked in:
+update the cover, the contents page, every in-text "page N" cross-reference, and every
+footer to match, per step 8 of the build workflow.
 
 ## Build workflow
 
 1. Copy `source/_template.html` to `source/{slug}.html`.
 2. Pick an unused accent color triple (`--accent` / `--accent-dark` / `--accent-tint`).
    Check the other files' `:root` blocks so no two animals share one.
-3. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
+3. **Re-tone the cover chrome to match that accent.** The `:root` triple only drives the
+   interior pages. Page 1 carries its own hard-coded palette, and in `_template.html`
+   that palette is the bearded dragon's browns, so a new guide inherits them and ships a
+   brown cover behind an animal that has nothing brown about it. This regressed the
+   goldfish once already: v3.0's first build had a brown cover behind a teal photo
+   because the cover was copied from the template verbatim.
+
+   Every one of these is on the cover and every one needs changing:
+
+   | What | Template (dragon) | Goldfish | Axolotl |
+   |---|---|---|---|
+   | Backdrop gradient | `#2B2420,#3A2E24,#4A3524` | `#12262B,#163640,#1B4552` | `#2B2420,#33283A,#432E44` |
+   | Brand strip text | `#D8A876` | `#8FD0E0` | `#DBA4BE` |
+   | Kicker and "Inside" label | `#C77C3F` | `#5FB8D6` | `#C77CA0` |
+   | Icon and tick circle fill | `#E39257` | `#5FC8DC` | `#E39BC4` |
+   | Tick check and icon eye | `#2B2420` | `#12262B` | `#2B2420` |
+   | Headline | `#FBF3E7` | `#F2FAFB` | `#FBF3E7` |
+   | Subhead and chip text | `#D8CBB8` | `#C7DEE3` | `#D8CBB8` |
+   | "Inside" bullet text | `#E8DCC8` | `#EAF6F8` | `#E8DCC8` |
+   | Chip borders | `#6B5540` | `#3E6672` | `#6B5566` |
+   | Rule above "Inside" | `#5A4633` | `#2F5A66` | `#5A4633` |
+   | Photo overlay rgba | `43,36,32` / `30,24,18` | `18,38,43` / `13,28,32` | unchanged |
+
+   The gradient's first stop stays near-black in every guide; it is the second and third
+   stops that carry the hue. Tint the vertical photo overlay to the same dark, or its
+   bottom fade prints as a warm haze over cool water. Warm-toned animals (dragons, geckos,
+   tortoises, birds, rodents) can legitimately keep the browns; anything cool-toned should
+   not. Grep the cover block for `#3A2E24`, `#C77C3F`, `#E39257` and `#6B5540` before you
+   call the cover done, and confirm the render, since a brown cover looks deliberate in
+   markup and obvious on screen.
+4. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
    numbers from memory. Copy the exact figure from the MDX and re-verify anything that
    looks off against a real external source before "fixing" it.
-4. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
+5. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
    `4×2×2 ft (120×60×60 cm)`. Gumroad buyers are global.
-5. Build the housing diagram last, as inline SVG, once the housing paragraph text is
+6. Build the housing diagram last, as inline SVG, once the housing paragraph text is
    final. Keep labels short (title / number / sub-label on separate lines). Check that
    every `<text>` fits inside its `<rect>` in the render; the bearded dragon v3 first
    render had two labels spilling out of their boxes.
-6. Base64-encode the chosen cover photo with a small script (never paste the base64
+7. Base64-encode the chosen cover photo with a small script (never paste the base64
    string into a chat context) and drop it into `{{COVER_IMAGE_DATA_URI}}` using the
    existing `mask-image` fade, never a flat-color gradient overlay. Pick a photo where
    the animal faces the headline (toward the left), it reads far better than one
    facing off the page.
-7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
+8. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
+9. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
    cover. Never overwrite the previous version's PDF; the old file stays as the record
    of what buyers of that version received. Once the new build replaces it, move the old
    file into `rebuilt/past versions/` and add a row to the README there saying what
@@ -173,7 +283,7 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    with what "current" means: the bearded dragon's live edition is the 22-page
    unversioned file, not the newer v3 build, because v3 has not been listed yet. Check
    `carePackages.js` before moving anything.
-9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
+10. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
    ```bash
@@ -195,12 +305,12 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    A cloud session has no internet access from Chromium, so Google Fonts won't load
    there. Download the woff2 files with curl and swap the `@import` for local
    `@font-face` rules in the render copy only; leave the `@import` in the source file.
-10. Icons must be small inline SVGs matching the existing minimalist style, never a raw
+11. Icons must be small inline SVGs matching the existing minimalist style, never a raw
    emoji character or HTML entity. Headless Chromium print has rendered those as
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
-11. **Log the gaps before you call it done.** Every package ends up with pages the site
+12. **Log the gaps before you call it done.** Every package ends up with pages the site
    has no article for, and that list is the most valuable byproduct of building one: it
    is a ready-made content plan, already filtered to things a paying customer wanted
    enough to read. Add a block for your animal under **Site content gaps by package**
@@ -208,6 +318,57 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
    skip: what you found already covered (so nobody rewrites it), and any number in the
    PDF that has no site source at all, because that is the copy no one can fact-check
    against the site later.
+13. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
+
+
+## Always keep a next-version notes file
+
+Every package gets `notes/{slug}-v{N+1}-notes.md`, written as you build, not afterward.
+Fitting a page count means cutting good content, and without this file that content gets
+cut twice: once out of the PDF and once out of memory, so the next edition researches and
+writes it again from nothing.
+
+What goes in it:
+
+- **The exact HTML of every block you removed**, in a fenced code block, with a one-line
+  label saying which page it came off and why it went. Reinstating a block should be a
+  paste plus a re-run of the overflow check, not a rewrite. Note its rough word count so
+  a future editor knows whether it needs a page split to absorb.
+- **The page count you landed on, and whether it was a floor or a choice.** Say whether
+  the number came from the measurement script or from judgment, so nobody re-litigates a
+  limit that was already measured.
+- **Ideas raised and never drafted.** The pages you wanted and did not build, with enough
+  detail to start from. This is usually the most valuable part of the file.
+- **A cut list for next time, in priority order.** Having just built the thing, you know
+  better than anyone which pages would survive being dropped, and which are the product.
+  Name the ones that must not be cut.
+
+Two rules that matter:
+
+- **Cut by parking, never by trimming.** When a page overflows, first split it or move a
+  block to a page with headroom; park the block only when neither works. Do not shave
+  sentences to make text fit, and never let `overflow:hidden` clip content silently. A
+  fact half-stated is worse than the same fact on the next page.
+- **Tighten layout before you cut content.** A `class="dense"` table, a `compact` list, a
+  callout at `margin:7pt 0`, or a two-column block reclaims 20 to 100 px a page and costs
+  nothing. Most small overflows are a layout problem wearing a content problem's clothes.
+
+The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`.
+
+## Renumbering: generate it, don't hand-edit it
+
+Splitting or merging one page moves every page number after it, and there are three
+places each number appears: the TOC, the `.pagefoot`, and every in-text "page N"
+cross-reference. Hand-editing those is where stale numbers ship.
+
+Build the file from per-page fragments carrying `<!--PAGE key-->` and `<!--FOOT key-->`
+markers, write cross-references as symbolic `{{P:key}}` tokens, and let a small build
+script assign numbers in document order, generate the TOC from a section map, and resolve
+the tokens. The script should refuse to build on a duplicate page key, a page missing from
+the TOC, a TOC entry with no page, an unknown `{{P:key}}`, or a leftover placeholder. Then
+a split costs one edit instead of forty, and a wrong number becomes a build failure rather
+than a proofreading job. The goldfish v3.0 build script is the pattern.
+
 
 ## Pre-publish accuracy checks (learned the hard way)
 
@@ -226,7 +387,7 @@ the UVB rows on 22 and 23. Expect 28 to 30 pages for a fish or an axolotl.
 
 ## Site content gaps by package
 
-The running list of site articles the packages need. Build workflow step 11 says to add
+The running list of site articles the packages need. Build workflow step 12 says to add
 a block here when you finish a package; this is what turns "the PDF says something the
 site doesn't" into a content plan.
 
@@ -237,19 +398,22 @@ new article, cross the row off here, and note the slug so the next person knows 
 Anything still open is copy that lives only in a PDF, so it has no site article to be
 fact-checked against later. That is the actual risk this table tracks.
 
-Remember `CLAUDE.md` when you write one: 1 to 2 in-body internal links, a
-`RELATED_ARTICLES` entry in `src/lib/data/relatedArticles.js` unless the slug ends in a
-standard suffix that auto-detects, and dates spread across days rather than dumped on
-one.
+When you write one, follow the rules and the check table under **Writing site articles
+for content the site does not have** above. The short version: 1 to 2+ in-body internal
+links, a hand-written `RELATED_ARTICLES` entry unless the slug is exactly
+`{guideId}-{suffix}` for one of the six auto-detecting suffixes, and dates spread across
+days rather than dumped on one. No check will catch a missing entry on a reptile, bird,
+or fish article.
 
 ### Bearded Dragon v3.0 (Aug 2026)
 
-Listed in full under **Content the site does NOT have yet** above. Six articles, of which
-these have since shipped: `bearded-dragon-growth-weight-checks-guide.mdx`,
-`bearded-dragon-eggs-and-egg-binding-guide.mdx`, `bearded-dragon-brumation-guide.mdx`,
-and `reptile-emergency-plan-guide.mdx` (which covers the power outage, travel, and
-pet-sitter pages for every reptile package, not just this one). Still open from that
-list: the full safe-foods chart, and the health-issues expansion.
+**Closed.** All six are live, listed in the table under **Writing site articles for
+content the site does not have** above. The last two shipped since this block was
+written: `bearded-dragon-safe-foods-guide.mdx` carries the full staple / occasional /
+rare / never chart, and `bearded-dragon-health-issues-guide.mdx` was expanded in place
+with internal parasites and the fecal test, mouth rot, tail rot and toe loss, eye
+problems, and burns and prolapse. `reptile-emergency-plan-guide.mdx` covers the power
+outage, travel, and pet-sitter pages for every reptile package, not just this one.
 
 ### Ball Python v2.0 (Sep 2026)
 
@@ -292,9 +456,10 @@ first when the number matters.
 The first aquatic package on the v3 template. `goldfish.html` and `axolotl.html` predate
 v3 and carry none of its CSS additions, so the aquatic layout here was derived from the
 adaptation note in this guide rather than copied from them. It came out at 36 pages, not
-the 28 to 30 that note predicts, because cycling, water chemistry, and water changes need
-a page each rather than a shared one. Update that estimate to 34 to 36 for the next
-aquatic build.
+the 28 to 30 that note predicted at the time, because cycling, water chemistry, and water
+changes need a page each rather than a shared one. That estimate has since been raised to
+34 to 36 in the adaptation note, and it is what prompted the **Page count is a target,
+not a budget** rule above.
 
 Already covered, do not rewrite: `betta-fish-water-parameters-guide.mdx` carries the full
 parameter table, the testing schedule, and the GH/KH note, and it is the dedicated guide
@@ -444,3 +609,39 @@ sources disagree. The humidity range on page 8 is presented as an open disagreem
 than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it is one:
 40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
 dish plus one damp corner is what both sides actually do.
+
+### Goldfish v3.0 (Sep 2026)
+
+Already covered, do not rewrite: page 7's bowl-myth argument from
+`goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 16's slime coat and
+net-and-cup handling from `goldfish-handling-guide.mdx`. Page 25's enrichment research,
+the 90 percent planted versus 10 percent barren finding and the substrate foraging work,
+from `goldfish-enrichment-guide.mdx`. Note `betta-fish-water-parameters-guide.mdx`
+partially transfers: its GH and KH section and testing schedule are species-neutral, but
+its target ranges are betta numbers and a goldfish is a coldwater fish, so do not lift the
+table. `reptile-emergency-plan-guide.mdx` does **not** transfer at all, it is temperature
+floors for reptiles and a fish outage is an oxygen problem.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Cycling an aquarium, fishless and fish-in | 10, 11 | Cross-species (fish) | The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case |
+| Aquarium filtration: turnover, media types, maintenance | 8, 9 | Cross-species (fish) | The MDX gives 4 to 10x turnover and nothing else. Needs the gph math worked for common tank sizes, mechanical vs biological vs chemical and which to disturb, why manufacturer ratings overstate, and rinse-in-tank-water-only with the reason |
+| Freshwater pH, GH and KH for coldwater fish | 12 | Cross-species (fish) | The betta article covers hardness well but at tropical targets. Needs the goldfish-appropriate ranges and, more usefully, the KH-buffers-pH mechanism and why chasing a pH number with adjusting chemicals backfires |
+| Quarantining and treating a new or sick fish | 16, 24 | Cross-species (fish) | `quarantine` returns hits only in the angelfish guides, in passing. Needs the 2 to 4 week minimum, the bare hospital tank, seeding it from a mature sponge filter, and why medicating the display tank costs you the bacteria colony |
+| Aquarium power outages and transporting a fish | 33 | Cross-species (fish) | Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
+| Goldfish safe foods chart | 15, 16, 17 | Goldfish | Expand `goldfish-feeding-guide.mdx`, not a new URL. It has the diet shape but no tier chart. Pellet vs gel vs flake, the vegetable list with blanching, protein foods weekly not daily, and the never list with reasons |
+| Flukes, anchor worm, velvet, popeye and ulcers | 24 | Goldfish | Expand `goldfish-health-issues-guide.mdx`. It covers ich, fin rot, swim bladder, dropsy, fungus and ammonia, and stops there. The five added in v3.0 carry published veterinary doses that currently exist only in the PDF |
+| Goldfish varieties, tankmate matching and sexing | 19 | Goldfish | Nothing on the site. Fancy vs single-tail vs eye varieties with adult sizes and minimums, why mixing body types is a feeding-time mismatch rather than a preference, and the honest answer that sexing is unreliable outside breeding condition |
+| Reading fish waste | 26 | Cross-species (fish) | Nothing. White stringy versus pale trailing is the most useful early signal an owner has and it appears in no article |
+| Goldfish growth, body condition and lifespan | 20 | Goldfish | Nothing. Also the place to make the point that a fish is not weighed weekly, water readings are its vital signs, which contradicts the reptile-shaped owner log in the template |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the pH, GH and KH targets on page 12, the gph turnover figures on page 8, the
+growth table on page 20, the variety adult sizes and minimums on page 19, and the
+praziquantel and diflubenzuron doses on page 24 (those are from Merck, not from the site).
+
+**Source drift, unresolved.** `guides/fish.js` costs for goldfish still carry the
+`// Rough starting ranges, not verified current pricing` comment and disagree with the
+itemized budget on page 29, which sums to $208 to $500 of equipment against the JS
+block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
+`fish.js` so the two stop drifting.
