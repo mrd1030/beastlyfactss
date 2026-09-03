@@ -1130,3 +1130,110 @@ far.
   in other animals. The captive figure also disagrees with the cost guide and with VCA, which
   both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
   Worth splitting that field and picking one captive range across the three files.
+
+### Budgie 2.0, t3 (Sep 2026)
+
+The second bird package, and a rebuild rather than a new build: 1.0 was 20 pages on the
+pre-t3 layout. It came out at 39 pages. Source is fragments plus a build script in
+`source/budgie-src/`, and `notes/budgie-v3-notes.md` carries the parked blocks, the
+per-page free space, seven undrafted page ideas and a ranked cut list.
+
+**Read the head CSS note in that file before the next build of anything.** The lovebird
+head was already tightened from `_template.html`; this build tightened it again (line
+height 1.40, `p`/`li` at 10.1pt, `td` padding 4.5pt, callouts at 8/12pt and 10pt/1.40,
+`check-item` 4pt/9.8pt, `h2.h` 13pt with 9/3 margins, `table.dense td` 2.6pt/1.30) and
+that one pass took the guide from 22 overflowing pages to zero, reclaiming roughly 130 to
+200 px a page. It is worth more than every content cut combined and it should be the first
+move on any package that runs long, not the last.
+
+Confirms the bird row: 36 to 39 for a small parrot held, and the lovebird's finding that
+**health sources well and husbandry sources badly** held exactly. Nine of the rows below
+are cross-species rows the lovebird block already opened, and they are extended there
+rather than duplicated here.
+
+Already covered, do not rewrite: `budgie-tank-setup-guide.mdx` carries the width-over-height
+argument, the half-inch bar spacing, the perch variety point, the 10 to 12 hour darkness
+figure and the PTFE warning. `budgie-health-issues-guide.mdx` names fatty liver, lipomas
+and xanthomas, scaly face mites, egg binding, psittacosis and the same-day red flag list.
+`budgie-cere-color-guide.mdx` is the best single article behind this package and carries
+the whole of page 16's cere material, including the point that a brown crusty cere means
+different things in the two sexes. `budgie-handling-guide.mdx` carries the settle-first
+week, the three-step taming progression, the no-dominance rule and the hen-bites-harder
+note. `budgie-enrichment-guide.mdx` carries foraging-first and the enrichment and plucking
+link. Note `reptile-emergency-plan-guide.mdx` does **not** transfer, for the same reason it
+does not transfer to the lovebird.
+
+Rows already open on the Lovebird block that this package hit identically, and that are
+**extended there rather than repeated here**: household hazards for pet birds (page 8);
+photoperiod, sleep and hormonal management (pages 7, 17, 33); converting a seed eater to
+pellets (page 10); quarantining a new bird (pages 27, 35); wing clipping (page 15);
+reading bird droppings (page 26); bird power outages, travel and transport (page 34);
+molt in companion birds (page 25); and choosing a bird and where from (proposed, page 4).
+Two notes to add to those rows from this build. The **quarantine** row now has a
+citable public-health figure, 30 to 45 days with testing or prophylactic treatment before
+joining a group, from the NASPHV and CDC psittacosis compendium, which also gives the
+45-day doxycycline course and the cleaning precautions; the article should be written
+around that document. And the **pellet conversion** row has a second veterinary schedule
+worth including beside VCA's lovebird one: VCA's budgie page gives four methods rather
+than a percentage ramp (pellets first thing in the morning, spread on a flat surface,
+ground to powder over a moist food, or mixed into the seed with the seed decreasing),
+plus the honest line that conversion takes days, weeks or months.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
+| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-colour change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
+| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Proposed.** Zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
+| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | Nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
+| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
+| Talking and training a budgie | 9, 13 | Budgie | The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
+| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
+| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the MSD cage table figure of 20&times;20&times;30 in and the 3/8 in bar spacing on
+pages 4, 5, 28 and 29; the 25 to 35 g weight range and the keel scoring on page 16; the
+normal heart rate, respiratory rate and body temperature on page 19; the clutch size and
+18-day incubation on page 17; the leuprolide and deslorelin dosing on page 17; the
+ivermectin and moxidectin dosing on page 23; the amphotericin B protocol and the 10 to 80%
+mortality figure on page 23; the Lugol's iodine figure on page 23; the polyomavirus
+timeline and vaccine schedule on page 22; the lead and zinc source lists on page 8; the
+30 to 45 day quarantine and the human psittacosis picture on pages 27 and 21; and the
+whole itemized budget on page 30.
+
+**Source drift found while building.** Four, and the millet one is the most consequential
+because it concerns the food every budgie owner overfeeds.
+
+- **Millet spray frequency.** `guides/birds.js` says "a small piece 2 to 3 times per week
+  maximum." VCA's budgie feeding page says millet spray or branches "should only be offered
+  in small quantities once or twice a month," and adds that honey sticks are not
+  recommended at all by most avian veterinarians. That is roughly a tenfold difference on
+  the single highest-fat thing in the cage, in a species whose commonest killer is fatty
+  liver disease. The package uses the VCA figure. `birds.js` needs correcting.
+- **Pellet share.** `budgie-tank-setup-guide.mdx` says 60 to 80% pellets with 20 to 25%
+  fresh, which matches VCA exactly and is right. `guides/birds.js` says 60 to 70% on the
+  budgie entry, and the lovebird block already flagged the same 60 to 70% line appearing on
+  several species in that file. One correction pass fixes both.
+- **Lifespan, three different figures and none of them the source's.**
+  `encyclopedia/birds.js` gives `bio.wildLifespan: "4-6 years (up to 12-15 years in
+  captivity)"`, which is the same field-stuffing bug the lovebird block flagged, and
+  `guides/birds.js` says 7 to 12 in one FAQ. LafeberVet's parakeet information sheet gives
+  a mean life span of 7 to 15 years. The package prints 7 to 15 with the note that the low
+  end is almost always diet. Split the encyclopedia field and pick one captive range across
+  the three files.
+- **Cage minimum, and it is a genuine disagreement rather than an error.**
+  `budgie-tank-setup-guide.mdx` gives 18&times;18&times;18 in minimum and 30&times;18&times;18
+  for a pair; `guides/birds.js` gives 18&times;18&times;24. LafeberVet gives a minimum of 18 in
+  wide and long with the note that length beats height, and the MSD Veterinary Manual's
+  cage table gives 20&times;20&times;30 in with 0.5 in bar spacing. Neither was picked: page 5
+  prints 18&times;18 in as the floor and 20&times;20&times;30 in as the target and says why,
+  which is the same treatment the lovebird package gave the same disagreement. Bar spacing
+  is printed as a range, 3/8 to 1/2 in, for the same reason.
+
+**Cost.** `guides/birds.js` still carries the `// Rough starting ranges, not verified
+current pricing` comment. `budgie-cost-guide.mdx` gives $175 to $475 for setup and $350 to
+$900 for the first year. The itemized budget on page 30 reproduces the setup figure almost
+exactly at $184 to $477, but reaches $470 to $1,200 for the first year, and the difference
+is four line items no starter list carries: a gram scale, a travel carrier, a sleep cage,
+and a real veterinary line rather than an amortized annual check. The MDX first-year figure
+is the one worth revisiting.
