@@ -1,6 +1,6 @@
 # Bearded Dragon Care Package: notes for v4
 
-Notes for **v3.0 (September 2026, 34 pages)**, the worked example the template guide
+Notes for **3.0 (September 2026, 34 pages, template t3)**, the worked example the template guide
 points at.
 
 Read this before touching `source/bearded-dragon.html`.

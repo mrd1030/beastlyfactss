@@ -1,6 +1,6 @@
-# Rabbit Care Package: notes for v4
+# Rabbit Care Package: notes for v3
 
-Content written for or cut from **v3.0 (September 2026, 39 pages)** during the page-count
+Content written for or cut from **2.0 (September 2026, 39 pages, template t3)** during the page-count
 pass, plus everything raised and never drafted.
 
 Read this before touching `source/rabbit.html`.
@@ -23,7 +23,7 @@ What that pass did, in the end:
 The compression edits that survived are logged below in full, because a future editor
 should be able to see exactly what the prose used to say and put any of it back.
 
-## Where v3.0 landed
+## Where 2.0 landed
 
 39 pages, with a measured minimum of 19 px of headroom on the tightest page. **Not a
 measured floor**, but the point at which splitting stopped being necessary. Section 03 is
@@ -51,7 +51,7 @@ It previously read:
     <tr><td>Timothy</td><td><span class="tier staple">Adults</span></td><td>The default. Good fiber, moderate protein and calcium. First cut is coarser and better for teeth, second cut softer and more palatable</td></tr>
 ```
 
-Worth reinstating in v4. "Moderate protein and calcium" is what distinguishes timothy from
+Worth reinstating in v3. "Moderate protein and calcium" is what distinguishes timothy from
 alfalfa two rows down, and without it the alfalfa row's "too rich for a healthy adult"
 has nothing to be rich *relative to*.
 
@@ -73,7 +73,7 @@ Each pair is before, then after.
 | Spay and neuter, timing | `your vet will go by size and development rather than the calendar` | `your vet goes by size rather than the calendar` |
 
 Four further compressions from that pass **were reverted** and the fuller wording is what
-ships in v3.0: pregnant does on the alfalfa row, the bowl-or-bottle option on the water
+ships in 2.0: pregnant does on the alfalfa row, the bowl-or-bottle option on the water
 row, "no reason to use it" on the iceberg row, and "the European rabbit" in the scientific
 name row. Do not re-cut those.
 
@@ -88,18 +88,18 @@ name row. Do not re-cut those.
 The remaining two pre-arrival items stayed on the setup checklist. All four still exist;
 none was lost.
 
-## Ideas raised while writing v3.0 but never drafted
+## Ideas raised while writing 2.0 but never drafted
 
 - **A bonding photo or diagram sequence.** Page 15 describes side-by-side pens, neutral
   territory and stress bonding in words. The stages are visual and would carry far better
   as a five-panel diagram, which is also the page most likely to be read under stress.
-- **Breeds, and what changes with them.** v3.0 treats "rabbit" as one animal. Lops need
+- **Breeds, and what changes with them.** 2.0 treats "rabbit" as one animal. Lops need
   their ears checked, angoras need daily grooming or they mat to the skin, giants need
   different flooring and have shorter lifespans, and flat-faced dwarfs are dentally
   predisposed. A breed table would change real husbandry decisions.
 - **A rabbit-proofing floor plan.** The proofing checklist is a list. A room diagram
   showing cable runs, carpet corners, and the gap behind the sofa would land better.
-- **Litter training troubleshooting.** v3.0 explains the method and says spaying fixes
+- **Litter training troubleshooting.** 2.0 explains the method and says spaying fixes
   most failures. It does not cover the rabbit that uses three corners, the one that
   regresses after a move, or the bonded pair that disagree about where the box is.
 - **Outdoor housing, done properly.** The package says indoors and gives the lifespan

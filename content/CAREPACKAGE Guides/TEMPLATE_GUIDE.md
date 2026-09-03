@@ -6,7 +6,7 @@ is the map of **where to pull real content from** for each page, so a new animal
 can be built by copying from the site instead of writing from scratch.
 
 The worked example is [source/bearded-dragon.html](source/bearded-dragon.html)
-(version 3.0, 34 pages). When a template comment says "see the bearded dragon file",
+(guide 3.0 on t3, 34 pages). When a template comment says "see the bearded dragon file",
 copy that page's structure and swap the species content.
 
 ## Where site content actually lives
@@ -61,7 +61,7 @@ detailed and the ones that got the closest fact-check against real external sour
 `guides/{category}.js` is a shorter, secondary source; if it disagrees with the MDX,
 the MDX wins, but flag the JS copy to fix too so the two don't stay out of sync.
 
-Read the Ball Python v3.0 note under **Site content gaps by package** before leaning on
+Read the Ball Python 2.1 note under **Site content gaps by package** before leaning on
 that last sentence. "The MDX wins" picks a side without checking whether either side is
 right. When two internal sources disagree on a number that matters, go to the external
 source first.
@@ -171,7 +171,7 @@ one. The four standard split guides stay as they are; these are additions, never
 replacements. Expanding an existing guide in place is often the better move than a new
 thin article, and several gap rows below call for exactly that.
 
-The v3 bearded dragon package drove the first round of this, and all six are now done
+The t3 bearded dragon package drove the first round of this, and all six are now done
 and live:
 
 | PDF page need | Article | Status |
@@ -245,10 +245,10 @@ further down. Page counts below are what shipped, not estimates.
 
 | Class | Built | Pages | The middle, in short |
 |---|---|---|---|
-| Reptile | Bearded Dragon v3.0, Ball Python v3.0 | 34 | The canonical table above |
-| Aquatic | Betta v3.0, Goldfish v3.0 | 36 to 39 | Water systems replace heat systems |
-| Mammal | Rabbit v3.0, Hamster v3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
-| Invertebrate | Tarantula v3.0 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
+| Reptile | Bearded Dragon 3.0, Ball Python 2.1 | 34 | The canonical table above |
+| Aquatic | Betta 2.1, Goldfish 2.0 | 36 to 39 | Water systems replace heat systems |
+| Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
+| Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
 | Bird | none yet | proposed | See below, this row is a proposal |
 
 **Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
@@ -261,7 +261,7 @@ test kit.
 
 **Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
 out. What replaces them is diet and health, both much larger than the reptile skeleton
-allows. Rabbit v3.0 gave hay, greens and pellets, and life-stage feeding three pages, and
+allows. Rabbit 2.0 gave hay, greens and pellets, and life-stage feeding three pages, and
 gave GI stasis three pages of its own before dental, flystrike and snuffles, and the
 E. cuniculi group. It also needed pages the reptile table has no slot for: litter
 training and rabbit-proofing, bonding and companionship, spay and neuter, and grooming,
@@ -270,7 +270,7 @@ prey-species behavior to change the handling pages: picking one up is a page, an
 its body language is another.
 
 Page count scales with the animal inside the class, so take it from the nearest species
-rather than from the class. A rabbit runs 38 to 40. Hamster v3.0 came in at 36, and its
+rather than from the class. A rabbit runs 38 to 40. Hamster 3.0 came in at 36, and its
 block below puts a rodent at 34 to 37, because a smaller animal genuinely has less
 husbandry to describe. Two pages a rodent needs that a reptile does not are species
 choice, since temperament varies enormously inside one common name, and torpor. Read the
@@ -279,7 +279,7 @@ into duplicates, and warns that a topic which genuinely needs one page will try 
 two, with the second usually the first one's prose restated.
 
 **Invertebrate.** The heat, UVB and thermostat pages come out. Handling inverts: Tarantula
-v3.0 spends three pages on why the answer is no, what interacting actually looks like,
+2.1 spends three pages on why the answer is no, what interacting actually looks like,
 and urticating hairs and bites, where a reptile gets one handling page. Molting takes two
 pages and replaces the brumation and shed page. Rehousing takes two more and has no
 reptile equivalent at all. A legal page earns its place, which the reptile skeleton does
@@ -304,14 +304,14 @@ Two things a bird build will hit that no other class does. Five of ten birds
 the diet pages source from nothing for those species. And `guides/birds.js` carries a
 "rough starting ranges, not verified current pricing" comment on its cost block, which
 pages 4 and 24 both draw from, so bird costs need checking against the MDX cost guide
-rather than trusting the JS. Budgie and lovebird already have pre-v3 packages at 20 and
+rather than trusting the JS. Budgie and lovebird already have pre-t3 packages at 20 and
 21 pages, so those are rebuilds rather than new builds. Cockatiel is the cleanest first
 bird: seven articles including a feeding guide.
 
 Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
 distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
 outdoors, flooring and litter training, proofing, bonding, and spay and neuter, and landed
-at 39 pages. Hamster v3.0 needed far less of that, because the animal is solitary, lives
+at 39 pages. Hamster 3.0 needed far less of that, because the animal is solitary, lives
 two to three years, and has one enclosure standard rather than a housing philosophy, and
 landed at 36. Take 34 to 39 as the mammal range rather than a single number, and let the
 animal's social life decide where in it you fall: a species that is kept in pairs needs a
@@ -330,7 +330,7 @@ every time. The shipped range across four classes is 34 to 43, and the spread is
 point: the animal decides the length, not the template.
 
 So never cut a real husbandry detail, a health red flag, a supplement dose, or a
-temperature target to make a page fit. Ball Python v3.0 had to be rebuilt precisely
+temperature target to make a page fit. Ball Python had to be rebuilt precisely
 because husbandry detail got trimmed to fit, and the restored version came out at 34
 pages. When a page runs long, in this order: combine it with a neighboring page that
 shares its topic, split it into two pages and renumber, or just let the guide run longer.
@@ -342,6 +342,43 @@ Two half-empty pages are worse than one full page, and one clipped page is worse
 either. The one hard rule is that the count has to be *consistent* once it's locked in:
 update the cover, the contents page, every in-text "page N" cross-reference, and every
 footer to match, per step 8 of the build workflow.
+
+## Guide version and template version are different numbers
+
+Two numbers, kept apart, both printed on the last page of every package:
+
+- **Guide version** (`1.0`, `2.1`, `3.0`): how many times *this* guide has been revised.
+  A guide starts at 1.0 the day it is published, however mature the skeleton it was built
+  on. Only a rebuild or a correction moves it.
+- **Template generation** (`t3`, or `pre-t3`): which generation of `source/_template.html`
+  the edition was built on. `t3` is this 34-page skeleton. `pre-t3` covers the older
+  22-page layout in `care-packages/`, whose generations were never numbered.
+
+So a brand new lion guide off this file is **1.0 / t3**. Revise it twice and it is
+**2.1 / t3**, which is not a claim about the template. **Never bump the guide version to
+match the template number.** That mistake was made in September 2026: Ball Python, Betta
+Fish, Rabbit and Tarantula were pushed to 3.0 because they sat on the third-generation
+template, and Goldfish was built at 3.0 from the start, skipping its real 2.0. All five were put back
+and re-rendered. See `rebuilt/past versions/README.md` for the full account.
+
+Where each number goes:
+
+| Place | Carries |
+|---|---|
+| Cover badge | guide version only, e.g. `Version 2.1 · Sep 2026` |
+| Version history table | a `Template` column, one cell per edition: `t3` or `pre-t3` |
+| Colophon, last page | both: `Version 2.1 · Template t3 · September 2026` |
+| PDF filename | guide version only, `{Animal}_Care_Package_v2.1.pdf` |
+| `carePackages.js` | guide version only, in `version:` |
+
+The payoff is the query you cannot run otherwise. When t4 exists, every guide still
+reading `t3` is the backfill list, and an old guide is distinguishable from a new one
+built on old bones. Merging the two numbers destroys exactly that.
+
+A guide's version history table must show the template generation of *every* edition, not
+just the current one, which is what makes a row like "1.0 / pre-t3, first edition on the
+earlier 22-page layout" readable years later.
+
 
 ## Build workflow
 
@@ -363,7 +400,7 @@ footer to match, per step 8 of the build workflow.
    interior pages. Page 1 carries its own hard-coded palette, and in `_template.html`
    that palette is the bearded dragon's browns, so a new guide inherits them and ships a
    brown cover behind an animal that has nothing brown about it. This regressed the
-   goldfish once already: v3.0's first build had a brown cover behind a teal photo
+   goldfish once already: the 2.0 rebuild's first build had a brown cover behind a teal photo
    because the cover was copied from the template verbatim.
 
    Every one of these is on the cover and every one needs changing:
@@ -396,7 +433,7 @@ footer to match, per step 8 of the build workflow.
    `4×2×2 ft (120×60×60 cm)`. Gumroad buyers are global.
 6. Build the housing diagram last, as inline SVG, once the housing paragraph text is
    final. Keep labels short (title / number / sub-label on separate lines). Check that
-   every `<text>` fits inside its `<rect>` in the render; the bearded dragon v3 first
+   every `<text>` fits inside its `<rect>` in the render; the bearded dragon 3.0 first
    render had two labels spilling out of their boxes.
 7. Base64-encode the chosen cover photo with a small script (never paste the base64
    string into a chat context) and drop it into `{{COVER_IMAGE_DATA_URI}}` using the
@@ -406,13 +443,15 @@ footer to match, per step 8 of the build workflow.
 8. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-9. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
-   cover. Never overwrite the previous version's PDF; the old file stays as the record
+9. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the **guide** version
+   on the cover, never the template generation. See **Guide version and template version
+   are different numbers** above; getting this wrong has already cost one full re-render
+   of five packages. Never overwrite the previous version's PDF; the old file stays as the record
    of what buyers of that version received. Once the new build replaces it, move the old
    file into `rebuilt/past versions/` and add a row to the README there saying what
    changed, so `rebuilt/` only ever holds the current edition of each animal. Careful
    with what "current" means: the bearded dragon's live edition is the 22-page
-   unversioned file, not the newer v3 build, because v3 has not been listed yet. Check
+   unversioned file, not the newer 3.0 build, because 3.0 has not been listed yet. Check
    `carePackages.js` before moving anything.
 10. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
@@ -471,6 +510,7 @@ footer to match, per step 8 of the build workflow.
 ## Always keep a next-version notes file
 
 Every package gets `notes/{slug}-v{N+1}-notes.md`, written as you build, not afterward.
+N is the **guide** version, so a guide at 2.1 parks its notes in `{slug}-v3-notes.md`.
 Fitting a page count means cutting good content, and without this file that content gets
 cut twice: once out of the PDF and once out of memory, so the next edition researches and
 writes it again from nothing.
@@ -505,8 +545,8 @@ Two rules that matter:
   callout at `margin:7pt 0`, or a two-column block reclaims 20 to 100 px a page and costs
   nothing. Most small overflows are a layout problem wearing a content problem's clothes.
 
-The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`. It is
-also what step 0 makes mandatory reading for a goldfish v4: 17 parked blocks with their
+The goldfish 2.0 rebuild is the worked example: `notes/goldfish-v3-notes.md`. It is
+also what step 0 makes mandatory reading for the next goldfish edition: 17 parked blocks with their
 original markup, a measured 39-page floor, six undrafted ideas, and a ranked cut list.
 Writing the file and reading it are the two halves of the same rule, and the file is
 worth nothing if the next build starts without opening it.
@@ -523,7 +563,7 @@ script assign numbers in document order, generate the TOC from a section map, an
 the tokens. The script should refuse to build on a duplicate page key, a page missing from
 the TOC, a TOC entry with no page, an unknown `{{P:key}}`, or a leftover placeholder. Then
 a split costs one edit instead of forty, and a wrong number becomes a build failure rather
-than a proofreading job. The goldfish v3.0 build script is the pattern.
+than a proofreading job. The goldfish 2.0 build script is the pattern.
 
 
 ## Pre-publish accuracy checks (learned the hard way)
@@ -595,11 +635,13 @@ article and get logged again. `reptile-emergency-plan-guide` and
 `gut-loading-feeder-insects-guide` are the right shape. `bearded-dragon-power-outage-guide`
 would have been the wrong one.
 
-Note on version numbers: the four packages built on the v3 template kept their old
-numbers at first and were renumbered to 3.0 in September 2026. Block headings carry the
-corrected number. References to a v2.0 or v2.1 rebuild inside a block are the real
-history of that package and are left as written. When you write one, re-source that PDF page from the
-new article, cross the row off here, and note the slug so the next person knows it exists.
+Note on version numbers: block headings carry the **guide** version, not the template
+generation. Five blocks read 3.0 for a while after the September 2026 renumbering, which
+has since been undone; see **Guide version and template version are different numbers**
+above.
+
+When you write one, re-source that PDF page from the new article, cross the row off here,
+and note the slug so the next person knows it exists.
 
 Anything still open is copy that lives only in a PDF, so it has no site article to be
 fact-checked against later. That is the actual risk this table tracks.
@@ -611,7 +653,7 @@ links, a hand-written `RELATED_ARTICLES` entry unless the slug is exactly
 days rather than dumped on one. No check will catch a missing entry on a reptile, bird,
 or fish article.
 
-### Bearded Dragon v3.0 (Aug 2026)
+### Bearded Dragon 3.0, t3 (Aug 2026)
 
 **Closed.** All six are live, listed in the table under **Writing site articles for
 content the site does not have** above. The last two shipped since this block was
@@ -621,7 +663,7 @@ with internal parasites and the fecal test, mouth rot, tail rot and toe loss, ey
 problems, and burns and prolapse. `reptile-emergency-plan-guide.mdx` covers the power
 outage, travel, and pet-sitter pages for every reptile package, not just this one.
 
-### Ball Python v3.0 (Sep 2026)
+### Ball Python 2.1, t3 (Sep 2026)
 
 Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
 which carries a ball python temperature row. Page 20's shed cycle from
@@ -657,10 +699,10 @@ The lesson worth keeping: when two internal sources disagree, "the dedicated gui
 picks a side without checking whether either side is right. Go to the external source
 first when the number matters.
 
-### Betta Fish v3.0 (Sep 2026)
+### Betta Fish 2.1, t3 (Sep 2026)
 
-The first aquatic package on the v3 template. `goldfish.html` and `axolotl.html` predate
-v3 and carry none of its CSS additions, so the aquatic layout here was derived from the
+The first aquatic package on the t3 template. `goldfish.html` and `axolotl.html` predate
+t3 and carry none of its CSS additions, so the aquatic layout here was derived from the
 adaptation note in this guide rather than copied from them. It came out at 36 pages, not
 the 28 to 30 that note predicted at the time, because cycling, water chemistry, and water
 changes need a page each rather than a shared one. That estimate has since been raised to
@@ -720,9 +762,9 @@ precedence rule, and two of the first calls were wrong.
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
 
-### Rabbit v3.0 (Sep 2026)
+### Rabbit 2.0, t3 (Sep 2026)
 
-The first mammal package on the v3 template, and the layout needed real surgery: the
+The first mammal package on the t3 template, and the layout needed real surgery: the
 reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
 replaced with indoors versus outdoors and temperature, flooring and litter training,
 rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
@@ -777,7 +819,7 @@ schedule on page 24, and the droppings reference table on page 25.
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
 
-### Hamster v3.0 (Sep 2026)
+### Hamster 3.0, t3 (Sep 2026)
 
 The second mammal package, and the one that shows the small-mammal skeleton runs
 narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
@@ -826,9 +868,9 @@ Known gaps, listed in the notes file: there is no target weight anywhere despite
 owner log asking for grams, no sexing page despite the guide telling the reader twice to
 check the sex, and nothing on cheek pouches.
 
-### Tarantula v3.0 (Sep 2026)
+### Tarantula 2.1, t3 (Sep 2026)
 
-The first invertebrate package on the v3 template. The reptile heat, UVB and thermostat
+The first invertebrate package on the t3 template. The reptile heat, UVB and thermostat
 pages collapse into a single temperature and ventilation page, which frees a lot of room,
 and the freed room goes to things no reptile package needs: two pages on molting, a page
 on water alone, a rehousing method, urticating hair and bite first aid, and a legality
@@ -868,7 +910,7 @@ than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it
 40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
 dish plus one damp corner is what both sides actually do.
 
-### Goldfish v3.0 (Sep 2026)
+### Goldfish 2.0, t3 (Sep 2026)
 
 Already covered, do not rewrite: page 7's bowl-myth argument from
 `goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 16's slime coat and
