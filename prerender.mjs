@@ -401,6 +401,14 @@ async function renderRoute(page, route, timeoutMs) {
       .replace(/<link\b[^>]*>\s*/gi, (tag) =>
         /\brel="modulepreload"/i.test(tag) && /\bas="script"/i.test(tag) ? '' : tag
       )
+      // index.html is the template for every route, and its LCP preload for
+      // the homepage hero (see the comment there) came along to all of them:
+      // every article and guide page fetched an 84 KB AVIF at high priority
+      // that nothing on the page renders, ahead of its own hero image. Only
+      // the homepage keeps it.
+      .replace(/<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>\s*/gi, (tag) =>
+        route === '/' || !/\/hero-\d+/.test(tag) ? tag : ''
+      )
   );
 }
 

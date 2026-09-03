@@ -9,11 +9,9 @@
 // being reverted before (see commit 30c123b) - preloading here is what makes
 // hydration actually work this time instead of just trying it blind again.
 //
-// This intentionally duplicates the import() specifiers in App.jsx/Home.jsx
-// rather than sharing a single route-config object, to avoid restructuring
-// either file's JSX Routes - Vite/Rollup dedupes a module by its specifier
-// regardless of how many places call import() on it, so this doesn't create
-// a second copy of any chunk.
+// The page loaders themselves live in routeRegistry.jsx, shared with App.jsx,
+// so the preloaded component can also be rendered synchronously on the
+// hydration render (see the comment there for why lazy() cannot be).
 //
 // mdxPosts.js is imported dynamically inside preloadForCurrentRoute() below,
 // NOT statically here - this module is imported eagerly by main.jsx on every
@@ -22,6 +20,8 @@
 // the main bundle for every page load, the exact anti-pattern already fixed
 // once today for DexTeaser/chronicles.js (see that commit's message).
 
+import { preloadRoute } from '@/lib/routeRegistry';
+
 function pathIs(pathname, exact) {
   return pathname === exact || pathname === `${exact}/`;
 }
@@ -29,48 +29,48 @@ function pathIs(pathname, exact) {
 // Order matters: more specific prefixes must be checked before their more
 // general parents (e.g. /encyclopedia/animal/ before /encyclopedia).
 //
-// Every lazy() route in App.jsx must have an entry here. A route that is
-// missing only fails when its chunk arrives after hydrateRoot has already
-// started: the page suspends at the root with no Suspense boundary (AppLayout
-// deliberately has none on the first render), React logs #418 on the retry
-// and never commits, and the page is left as static HTML with no
-// interactivity. It passes on a fast connection and fails on a slow one, so
-// it looks intermittent. Reproduced by delaying only the route chunk.
+// Every route in App.jsx must have an entry here. A route that is missing
+// renders through lazy() on the hydration render and suspends at the root,
+// where AppLayout deliberately has no Suspense boundary; React's retry then
+// hydrated against the wrong nodes, logged #418 and never committed, leaving
+// the page as static HTML with no interactivity. It passed on a fast
+// connection and failed on a slow one, so it looked intermittent. Reproduced
+// by delaying only the route chunk; see routeRegistry.jsx.
 const ROUTE_PRELOADS = [
-  [p => p.startsWith('/encyclopedia/animal/'), () => import('@/pages/EncyclopediaAnimal')],
-  [p => p.startsWith('/encyclopedia'), () => import('@/pages/Encyclopedia')],
-  [p => p.startsWith('/guides/category/'), () => import('@/pages/Guides')],
-  [p => pathIs(p, '/guides'), () => import('@/pages/Guides')],
-  [p => p.startsWith('/guides/'), () => import('@/pages/GuideDetail')],
-  [p => p.startsWith('/facts'), () => import('@/pages/Facts')],
-  [p => p.startsWith('/gear'), () => import('@/pages/Gear')],
-  [p => p.startsWith('/blog'), () => import('@/pages/Blog')],
-  [p => p.startsWith('/chronicles'), () => import('@/pages/Chronicles')],
-  [p => pathIs(p, '/quiz'), () => import('@/pages/QuizHub')],
-  [p => p.startsWith('/quiz/') || pathIs(p, '/trivia'), () => import('@/pages/Quiz')],
-  [p => pathIs(p, '/pack'), () => import('@/pages/Pack')],
-  [p => pathIs(p, '/about'), () => import('@/pages/About')],
-  [p => pathIs(p, '/contact'), () => import('@/pages/Contact')],
-  [p => p.startsWith('/animal-facts'), () => import('@/pages/AnimalFacts')],
-  [p => p.startsWith('/fact-files'), () => import('@/pages/FactFiles')],
-  [p => p.startsWith('/gallery'), () => import('@/pages/Gallery')],
-  [p => p.startsWith('/donate/success'), () => import('@/pages/DonateSuccess')],
-  [p => p.startsWith('/donate/cancel'), () => import('@/pages/DonateCancel')],
-  [p => p.startsWith('/donate'), () => import('@/pages/Donate')],
-  [p => pathIs(p, '/terms'), () => import('@/pages/Terms')],
-  [p => pathIs(p, '/privacy'), () => import('@/pages/Privacy')],
-  [p => pathIs(p, '/categories'), () => import('@/pages/Categories')],
-  [p => p.startsWith('/search'), () => import('@/pages/Search')],
-  [p => pathIs(p, '/glossary'), () => import('@/pages/Glossary')],
-  [p => p.startsWith('/exotic-pet-laws'), () => import('@/pages/ExoticPetLaws')],
-  [p => p.startsWith('/beastlypedia/group/'), () => import('@/pages/Beastlypedia')],
-  [p => pathIs(p, '/beastlypedia'), () => import('@/pages/Beastlypedia')],
-  [p => p.startsWith('/beastlypedia/'), () => import('@/pages/BeastfileDetail')],
-  [p => p.startsWith('/care-packages/store'), () => import('@/pages/CarePackagesStore')],
-  [p => p.startsWith('/care-packages/why-we-exist'), () => import('@/pages/CarePackagesWhyWeExist')],
-  [p => p.startsWith('/care-packages/faq'), () => import('@/pages/CarePackagesFaq')],
-  [p => pathIs(p, '/care-packages'), () => import('@/pages/CarePackages')],
-  [p => p.startsWith('/feed'), () => import('@/pages/Feed')],
+  [p => p.startsWith('/encyclopedia/animal/'), 'EncyclopediaAnimal'],
+  [p => p.startsWith('/encyclopedia'), 'Encyclopedia'],
+  [p => p.startsWith('/guides/category/'), 'Guides'],
+  [p => pathIs(p, '/guides'), 'Guides'],
+  [p => p.startsWith('/guides/'), 'GuideDetail'],
+  [p => p.startsWith('/facts'), 'Facts'],
+  [p => p.startsWith('/gear'), 'Gear'],
+  [p => p.startsWith('/blog'), 'Blog'],
+  [p => p.startsWith('/chronicles'), 'Chronicles'],
+  [p => pathIs(p, '/quiz'), 'QuizHub'],
+  [p => p.startsWith('/quiz/') || pathIs(p, '/trivia'), 'Quiz'],
+  [p => pathIs(p, '/pack'), 'Pack'],
+  [p => pathIs(p, '/about'), 'About'],
+  [p => pathIs(p, '/contact'), 'Contact'],
+  [p => p.startsWith('/animal-facts'), 'AnimalFacts'],
+  [p => p.startsWith('/fact-files'), 'FactFiles'],
+  [p => p.startsWith('/gallery'), 'Gallery'],
+  [p => p.startsWith('/donate/success'), 'DonateSuccess'],
+  [p => p.startsWith('/donate/cancel'), 'DonateCancel'],
+  [p => p.startsWith('/donate'), 'Donate'],
+  [p => pathIs(p, '/terms'), 'Terms'],
+  [p => pathIs(p, '/privacy'), 'Privacy'],
+  [p => pathIs(p, '/categories'), 'Categories'],
+  [p => p.startsWith('/search'), 'Search'],
+  [p => pathIs(p, '/glossary'), 'Glossary'],
+  [p => p.startsWith('/exotic-pet-laws'), 'ExoticPetLaws'],
+  [p => p.startsWith('/beastlypedia/group/'), 'Beastlypedia'],
+  [p => pathIs(p, '/beastlypedia'), 'Beastlypedia'],
+  [p => p.startsWith('/beastlypedia/'), 'BeastfileDetail'],
+  [p => p.startsWith('/care-packages/store'), 'CarePackagesStore'],
+  [p => p.startsWith('/care-packages/why-we-exist'), 'CarePackagesWhyWeExist'],
+  [p => p.startsWith('/care-packages/faq'), 'CarePackagesFaq'],
+  [p => pathIs(p, '/care-packages'), 'CarePackages'],
+  [p => p.startsWith('/feed'), 'Feed'],
 ];
 
 // Preloads whatever the current URL needs. Never throws - a failed/slow
@@ -87,7 +87,7 @@ export async function preloadForCurrentRoute() {
     jobs.push(preloadHomeChildren());
   } else {
     const match = ROUTE_PRELOADS.find(([test]) => test(pathname));
-    if (match) jobs.push(match[1]());
+    if (match) jobs.push(preloadRoute(match[1]));
 
     // Blog post detail (not the /blog or /blog/category/:x listing views)
     // renders its MDX body via MdxArticleBody (see mdxPosts.js) - preload

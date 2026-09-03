@@ -45,6 +45,17 @@
       ]
     },
     {
+      "slug": "ackie-monitor-enrichment-guide",
+      "title": "Ackie Monitor Enrichment Guide",
+      "excerpt": "Eight juvenile monitors were given a puzzle tube with food inside. All eight opened it within ten minutes, on the first",
+      "date": "2026-10-19",
+      "image": "/assets/images/ackie-monitor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ackie-monitor-feeding-guide",
       "title": "What Do Ackie Monitors Eat? Diet and Feeding Schedule",
       "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed",
@@ -111,6 +122,17 @@
       ]
     },
     {
+      "slug": "african-fat-tail-enrichment-guide",
+      "title": "African Fat-Tailed Gecko Enrichment Guide",
+      "excerpt": "The leopard gecko enrichment study tested five types and ranked them. Fat-tails are the closest relative anyone has",
+      "date": "2026-10-22",
+      "image": "/assets/images/african-fat-tail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "african-fat-tail-feeding-guide",
       "title": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
       "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating",
@@ -163,6 +185,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "african-grey-parrot-enrichment-guide",
+      "title": "African Grey Parrot Enrichment Guide",
+      "excerpt": "Eighteen plucking African greys were given food in pipe feeders instead of bowls. Foraging enrichment is the closest",
+      "date": "2026-10-15",
+      "image": "/assets/images/african-grey-parrot-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -254,6 +287,17 @@
       ]
     },
     {
+      "slug": "amano-shrimp-enrichment-guide",
+      "title": "Amano Shrimp Enrichment Guide",
+      "excerpt": "Amano shrimp are bought as a cleaning crew. They do the job, then the algae is gone, and a lot of them quietly starve",
+      "date": "2026-11-02",
+      "image": "/assets/images/amano-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "amano-shrimp-feeding-guide",
       "title": "What Do Amano Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Amano shrimp really are the best true algae eater in the aquarium hobby, but the reputation gets oversold. They're",
@@ -309,6 +353,17 @@
       ]
     },
     {
+      "slug": "angelfish-enrichment-guide",
+      "title": "Angelfish Enrichment Guide",
+      "excerpt": "The same study that found neon tetras do better in tens found no group size effect at all for angelfish. They are",
+      "date": "2026-11-03",
+      "image": "/assets/images/angelfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "angelfish-feeding-guide",
       "title": "What Do Angelfish Eat? Diet and Feeding Schedule",
       "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters",
@@ -361,6 +416,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "argentine-tegu-enrichment-guide",
+      "title": "Argentine Tegu Enrichment Guide",
+      "excerpt": "Nobody has published an enrichment study on tegus. The closest evidence is the monitor problem-solving work, and this",
+      "date": "2026-10-20",
+      "image": "/assets/images/argentine-tegu-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -507,6 +573,17 @@
       ]
     },
     {
+      "slug": "ball-python-enrichment-guide",
+      "title": "Ball Python Enrichment Guide",
+      "excerpt": "The rack argument has an actual peer-reviewed answer. Researchers compared 35 ball pythons in racks against furnished",
+      "date": "2026-10-14",
+      "image": "/assets/images/ball-python-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ball-python-feeding-guide",
       "title": "What Do Ball Pythons Eat? Prey Size, Schedule and Refusals",
       "excerpt": "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal, and when to actually",
@@ -584,11 +661,45 @@
       ]
     },
     {
+      "slug": "beagle-enrichment-guide",
+      "title": "Beagle Enrichment Guide",
+      "excerpt": "Dogs allowed to use their noses became measurably more optimistic. For a breed built around exactly that, the finding",
+      "date": "2026-11-06",
+      "image": "/assets/images/beagle-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-brumation-guide",
+      "title": "Bearded Dragon Brumation Guide: What to Expect",
+      "excerpt": "A bearded dragon that stops eating and sleeps for weeks might just be brumating. Here's the pre-brumation vet check,",
+      "date": "2026-10-15",
+      "image": "/assets/images/bearded-dragon-brumation.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "bearded-dragon-cost-guide",
       "title": "Bearded Dragon Price: $40 to $100, Plus $400 to $800 Setup",
       "excerpt": "What a bearded dragon actually costs: $400-800 to set up right, $50-108 a month after that, and the vet bills correct",
       "date": "2026-07-05",
       "image": "/assets/images/bearded-dragon-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-eggs-and-egg-binding-guide",
+      "title": "Bearded Dragon Eggs & Egg Binding (Dystocia) Guide",
+      "excerpt": "Female bearded dragons can lay infertile eggs without ever meeting a male. Here's how to spot a gravid dragon, build a",
+      "date": "2026-10-04",
+      "image": "/assets/images/bearded-dragon-eggs-and-egg-binding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -617,6 +728,17 @@
       ]
     },
     {
+      "slug": "bearded-dragon-growth-weight-checks-guide",
+      "title": "Bearded Dragon Growth Chart & Weight Check Guide",
+      "excerpt": "How to sex a bearded dragon, what normal growth looks like month by month, and how to read weight, body condition,",
+      "date": "2026-09-26",
+      "image": "/assets/images/bearded-dragon-growth-weight-checks.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "bearded-dragon-handling-guide",
       "title": "How to Handle a Bearded Dragon Correctly",
       "excerpt": "Bearded dragons are one of the most handleable pet lizards, but getting the timing, grip, and body language right early",
@@ -633,6 +755,17 @@
       "excerpt": "Most serious bearded dragon health problems trace back to husbandry, not bad luck. Here's what to watch for, from MBD",
       "date": "2026-07-05",
       "image": "/assets/images/bearded-dragon-health-issues.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-safe-foods-guide",
+      "title": "Bearded Dragon Food List: What's Safe to Feed (Chart)",
+      "excerpt": "Every feeder insect, green, vegetable, and fruit a bearded dragon can eat, sorted into staple, occasional, rare, and",
+      "date": "2026-09-12",
+      "image": "/assets/images/bearded-dragon-safe-foods.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -672,6 +805,18 @@
       ]
     },
     {
+      "slug": "bengal-cat-enrichment-guide",
+      "title": "Bengal Cat Enrichment Guide",
+      "excerpt": "A Bengal does not need different things from other cats. It needs the same things, provided at a scale that defeats",
+      "date": "2026-11-08",
+      "image": "/assets/images/bengal-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "bengal-cat-legal-guide",
       "title": "Are Bengal Cats Legal? F1 to F5 Rules by State",
       "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the",
@@ -692,6 +837,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "betta-fish-enrichment-guide",
+      "title": "Betta Fish Enrichment Guide",
+      "excerpt": "Bettas are the best-studied fish in the hobby, and the findings are awkward for two things everyone does: tiny tanks",
+      "date": "2026-10-15",
+      "image": "/assets/images/betta-fish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -783,6 +939,17 @@
       ]
     },
     {
+      "slug": "blue-tongue-skink-enrichment-guide",
+      "title": "Blue Tongue Skink Enrichment Guide",
+      "excerpt": "Nine eastern blue-tongues were given feeding enrichment. They fed longer, gained weight, and spent less time hiding.",
+      "date": "2026-10-16",
+      "image": "/assets/images/blue-tongue-skink-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "blue-tongue-skink-feeding-guide",
       "title": "What Do Blue Tongue Skinks Eat? Diet and Feeding Schedule",
       "excerpt": "Vets and pet-industry care sheets genuinely disagree on how often to feed an adult blue tongue skink, by a factor of up",
@@ -835,6 +1002,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "boa-constrictor-enrichment-guide",
+      "title": "Boa Constrictor Enrichment Guide",
+      "excerpt": "The ball python housing study compared racks against furnished terrariums. Boas are kept in racks far more often and",
+      "date": "2026-10-21",
+      "image": "/assets/images/boa-constrictor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -904,6 +1082,18 @@
       ]
     },
     {
+      "slug": "border-collie-enrichment-guide",
+      "title": "Border Collie Enrichment Guide",
+      "excerpt": "The standard advice is more exercise. Run a border collie harder and you get a fitter border collie who still needs a",
+      "date": "2026-11-06",
+      "image": "/assets/images/border-collie-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "box-turtle-cost-guide",
       "title": "How Much Is a Box Turtle? Price, Setup and Legal Notes",
       "excerpt": "Box turtles come with a genuinely important sourcing consideration that affects both cost and legality, worth",
@@ -912,6 +1102,17 @@
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "box-turtle-enrichment-guide",
+      "title": "Box Turtle Enrichment Guide",
+      "excerpt": "Thirty-eight box turtles, one month, two enclosure types. The enriched group ended with a lower stress ratio in their",
+      "date": "2026-10-17",
+      "image": "/assets/images/box-turtle-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -980,6 +1181,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "bristlenose-pleco-enrichment-guide",
+      "title": "Bristlenose Pleco Enrichment Guide",
+      "excerpt": "Plecos rasp wood constantly and every care sheet says they digest it. The research on wood-eating catfish is less",
+      "date": "2026-11-05",
+      "image": "/assets/images/bristlenose-pleco-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1104,6 +1316,18 @@
       ]
     },
     {
+      "slug": "bulldog-enrichment-guide",
+      "title": "Bulldog Enrichment Guide",
+      "excerpt": "The English bulldog carries the French bulldog's airway problem on a heavier frame with worse joints. The margin for",
+      "date": "2026-11-07",
+      "image": "/assets/images/bulldog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "california-kingsnake-cost-guide",
       "title": "California Kingsnake Price: $45 to $300, Setup $200 to $500",
       "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment",
@@ -1112,6 +1336,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "california-kingsnake-enrichment-guide",
+      "title": "California Kingsnake Enrichment Guide",
+      "excerpt": "Nobody has studied kingsnake enrichment. The corn snake work is the closest, it is from the same family, and this guide",
+      "date": "2026-10-20",
+      "image": "/assets/images/california-kingsnake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1159,6 +1394,17 @@
       ]
     },
     {
+      "slug": "canary-enrichment-guide",
+      "title": "Canary Enrichment Guide",
+      "excerpt": "Male canaries sing more when there is no mate present and much less once there is. The most cheerful thing about the",
+      "date": "2026-10-30",
+      "image": "/assets/images/canary-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "canary-handling-guide",
       "title": "Canary Handling: Why This Bird Isn't Hands-On",
       "excerpt": "Every other bird covered on this site, budgie, cockatiel, green-cheeked conure, lovebird, African grey, cockatoo, can",
@@ -1200,6 +1446,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "cardinal-tetra-enrichment-guide",
+      "title": "Cardinal Tetra Enrichment Guide",
+      "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That",
+      "date": "2026-11-04",
+      "image": "/assets/images/cardinal-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1257,6 +1514,18 @@
         "Pet Care",
         "Dogs",
         "Cats"
+      ]
+    },
+    {
+      "slug": "cat-enrichment-guide",
+      "title": "Cat Enrichment Guide",
+      "excerpt": "Veterinary medicine has an agreed framework for what a cat's environment must provide. The pillar most homes fail is",
+      "date": "2026-11-06",
+      "image": "/assets/images/cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
       ]
     },
     {
@@ -1337,6 +1606,17 @@
       ]
     },
     {
+      "slug": "cherry-shrimp-enrichment-guide",
+      "title": "Cherry Shrimp Enrichment Guide",
+      "excerpt": "A 2021 review of 300 papers concluded decapod crustaceans are probably sentient, and UK law changed to match. Shrimp",
+      "date": "2026-11-02",
+      "image": "/assets/images/cherry-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cherry-shrimp-feeding-guide",
       "title": "What Do Cherry Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Cherry shrimp mostly feed themselves, grazing biofilm and algae all day, which is exactly why it's so easy to overfeed",
@@ -1389,6 +1669,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "chinchilla-enrichment-guide",
+      "title": "Chinchilla Enrichment Guide",
+      "excerpt": "A study of farmed chinchillas found fur chewing decreased in solid-floor cages with litter. The species' signature",
+      "date": "2026-10-18",
+      "image": "/assets/images/chinchilla-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1480,6 +1771,17 @@
       ]
     },
     {
+      "slug": "cockatiel-enrichment-guide",
+      "title": "Cockatiel Enrichment Guide",
+      "excerpt": "Most parrot enrichment research targets large or endangered species. Cockatiels finally got two studies of their own,",
+      "date": "2026-10-18",
+      "image": "/assets/images/cockatiel-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cockatiel-feeding-guide",
       "title": "What Do Cockatiels Eat? Diet and Feeding Schedule",
       "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food actually belongs in there, and",
@@ -1543,6 +1845,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "cockatoo-enrichment-guide",
+      "title": "Cockatoo Enrichment Guide",
+      "excerpt": "A feather plucking study tried drugs, socialisation, feeding enrichment and training sessions on sulphur-crested",
+      "date": "2026-10-30",
+      "image": "/assets/images/cockatoo-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1647,6 +1960,17 @@
       ]
     },
     {
+      "slug": "conure-enrichment-guide",
+      "title": "Conure Enrichment Guide",
+      "excerpt": "Wild parrots spend up to six hours a day working for food. A conure with a full bowl is done in three minutes and then",
+      "date": "2026-10-30",
+      "image": "/assets/images/conure-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "conure-handling-guide",
       "title": "How to Handle a Green Cheek Conure Correctly",
       "excerpt": "Green cheek conures are affectionate, playful, and genuinely comical birds that form strong bonds with their people,",
@@ -1688,6 +2012,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "corn-snake-enrichment-guide",
+      "title": "Corn Snake Enrichment Guide",
+      "excerpt": "Given an enclosure longer than their own body, corn snakes stretch all the way out and prefer it. That single result",
+      "date": "2026-10-14",
+      "image": "/assets/images/corn-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1765,6 +2100,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "corydoras-catfish-enrichment-guide",
+      "title": "Corydoras Catfish Enrichment Guide",
+      "excerpt": "Everyone says gravel wears down cory barbels. The better explanation is that barbel erosion is bacterial, and a dirty",
+      "date": "2026-11-03",
+      "image": "/assets/images/corydoras-catfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1912,6 +2258,18 @@
       ]
     },
     {
+      "slug": "dachshund-enrichment-guide",
+      "title": "Dachshund Enrichment Guide",
+      "excerpt": "A dachshund is a scent hound with a spine that fails. That combination means the best enrichment for the breed is also",
+      "date": "2026-11-08",
+      "image": "/assets/images/dachshund-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "degu-cost-guide",
       "title": "Degu Price: $10 to $50, Plus $100 to $300 Setup",
       "excerpt": "Degus are genuinely affordable individually, and the real budgeting point with this species is that 'individually'",
@@ -1920,6 +2278,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "degu-enrichment-guide",
+      "title": "Degu Enrichment Guide",
+      "excerpt": "Degus dust bathe more on sand a familiar animal has already used. It is scent marking as much as grooming, which",
+      "date": "2026-10-28",
+      "image": "/assets/images/degu-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2000,6 +2369,17 @@
       ]
     },
     {
+      "slug": "discus-enrichment-guide",
+      "title": "Discus Enrichment Guide",
+      "excerpt": "Discus are shy cichlids that hold a pecking order. In small groups the bottom fish has nowhere to be, which is why six",
+      "date": "2026-11-05",
+      "image": "/assets/images/discus-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "discus-feeding-guide",
       "title": "What Do Discus Eat? Diet and Feeding Schedule",
       "excerpt": "Discus have unusually small mouths for such a broad-bodied fish, and their fry start life feeding on a parent's own",
@@ -2067,6 +2447,18 @@
       ]
     },
     {
+      "slug": "dog-enrichment-guide",
+      "title": "Dog Enrichment Guide",
+      "excerpt": "Two weeks of nosework made dogs measurably more optimistic on a cognitive bias test. The control group did heelwork and",
+      "date": "2026-11-06",
+      "image": "/assets/images/dog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "dung-beetles-navigate-by-the-milky-way",
       "title": "Dung Beetles Navigate by the Milky Way: The Study",
       "excerpt": "An insect with a brain the size of a grain of rice steers by the galaxy. Proving it involved tiny cardboard visors, a",
@@ -2098,6 +2490,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "emperor-scorpion-enrichment-guide",
+      "title": "Emperor Scorpion Enrichment Guide",
+      "excerpt": "Emperor scorpions are subsocial in the wild, with mothers and offspring sharing a burrow. Communal housing is possible",
+      "date": "2026-11-01",
+      "image": "/assets/images/emperor-scorpion-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2223,6 +2626,17 @@
       ]
     },
     {
+      "slug": "ferret-enrichment-guide",
+      "title": "Ferret Enrichment Guide",
+      "excerpt": "Ferrets without playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less.",
+      "date": "2026-10-17",
+      "image": "/assets/images/ferret-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ferret-feeding-guide",
       "title": "What Do Ferrets Eat? Diet and Feeding Schedule",
       "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food",
@@ -2289,6 +2703,17 @@
       ]
     },
     {
+      "slug": "fire-bellied-toad-enrichment-guide",
+      "title": "Fire-Bellied Toad Enrichment Guide",
+      "excerpt": "Aquatic frogs given a choice picked plants over PVC pipes by 40 percent, and picked both over open water. It is a small",
+      "date": "2026-10-27",
+      "image": "/assets/images/fire-bellied-toad-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "fire-bellied-toad-handling-guide",
       "title": "Fire-Bellied Toad Handling: What the Toxin Means",
       "excerpt": "Fire-bellied toads are display animals, and there's a real, specific safety reason behind that recommendation, not just",
@@ -2330,6 +2755,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "fire-skink-enrichment-guide",
+      "title": "Fire Skink Enrichment Guide",
+      "excerpt": "Skinks given live prey fed more, gained more weight, and spent less time hiding. Fire skinks are the species keepers",
+      "date": "2026-10-26",
+      "image": "/assets/images/fire-skink-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2385,6 +2821,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "flying-squirrel-enrichment-guide",
+      "title": "Flying Squirrel Enrichment Guide",
+      "excerpt": "A flying squirrel and a sugar glider are not related. They are a rodent and a marsupial that arrived at the same body",
+      "date": "2026-10-29",
+      "image": "/assets/images/flying-squirrel-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2454,6 +2901,18 @@
       ]
     },
     {
+      "slug": "french-bulldog-enrichment-guide",
+      "title": "French Bulldog Enrichment Guide",
+      "excerpt": "Most dog enrichment advice assumes the dog can breathe hard. For a French bulldog that assumption is the problem, so",
+      "date": "2026-11-07",
+      "image": "/assets/images/french-bulldog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "french-bulldog-feeding-guide",
       "title": "French Bulldog Feeding Schedule: How Much and How Often",
       "excerpt": "A French Bulldog's legendary gas is often less about diet and more about how the breed is built to breathe. Here's a",
@@ -2484,6 +2943,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "gargoyle-gecko-enrichment-guide",
+      "title": "Gargoyle Gecko Enrichment Guide",
+      "excerpt": "The crested gecko stress-hormone study found geckos that engaged with novel objects sooner had lower baseline stress.",
+      "date": "2026-10-22",
+      "image": "/assets/images/gargoyle-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2553,6 +3023,17 @@
       ]
     },
     {
+      "slug": "garter-snake-enrichment-guide",
+      "title": "Garter Snake Enrichment Guide",
+      "excerpt": "A widely cited enrichment study is often attributed to garter snakes. It was ratsnakes. Garter snakes have nothing of",
+      "date": "2026-10-21",
+      "image": "/assets/images/garter-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "garter-snake-feeding-guide",
       "title": "What Do Garter Snakes Eat? Fish, Worms and Why Not Mice",
       "excerpt": "Garter snakes are semi-aquatic hunters built around fish, earthworms, and amphibians, not rodents, and a lot of new",
@@ -2616,6 +3097,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "gerbil-enrichment-guide",
+      "title": "Gerbil Enrichment Guide",
+      "excerpt": "Gerbils that grow up with a tunnel leading to a chamber do not develop stereotypic corner digging. Gerbils given sand",
+      "date": "2026-10-28",
+      "image": "/assets/images/gerbil-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2707,6 +3199,17 @@
       ]
     },
     {
+      "slug": "ghost-shrimp-enrichment-guide",
+      "title": "Ghost Shrimp Enrichment Guide",
+      "excerpt": "A tank of ghost shrimp is usually several species in one bag, kept in feeder conditions, sold cheap. Most of what goes",
+      "date": "2026-11-02",
+      "image": "/assets/images/ghost-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ghost-shrimp-feeding-guide",
       "title": "What Do Ghost Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Ghost shrimp feeding is genuinely easy, they'll scavenge most of their own food, but the one thing worth understanding",
@@ -2759,6 +3262,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "giant-millipede-enrichment-guide",
+      "title": "Giant Millipede Enrichment Guide",
+      "excerpt": "For most pets, substrate is flooring. For a giant millipede it is the burrow, the humidity buffer and most of the diet",
+      "date": "2026-11-02",
+      "image": "/assets/images/giant-millipede-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2927,6 +3441,17 @@
       ]
     },
     {
+      "slug": "green-anole-enrichment-guide",
+      "title": "Green Anole Enrichment Guide",
+      "excerpt": "Cage size, added perches, routine handling, four months of captivity. Researchers measured all four in green anoles and",
+      "date": "2026-10-24",
+      "image": "/assets/images/green-anole-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "green-anole-handling-guide",
       "title": "How to Handle a Green Anole Safely",
       "excerpt": "Green anoles are genuinely delicate compared to the larger lizards already covered on this site, and that size",
@@ -2968,6 +3493,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-enrichment-guide",
+      "title": "Green Iguana Enrichment Guide",
+      "excerpt": "Wild hatchling iguanas that slept in larger groups grew faster. The same species, grown up, will fight anything it can",
+      "date": "2026-10-23",
+      "image": "/assets/images/green-iguana-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3114,6 +3650,17 @@
       ]
     },
     {
+      "slug": "guppy-enrichment-guide",
+      "title": "Guppy Enrichment Guide",
+      "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to vigilance,",
+      "date": "2026-11-03",
+      "image": "/assets/images/guppy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "guppy-feeding-guide",
       "title": "What Do Guppies Eat? Diet and Feeding Schedule",
       "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the real risk here. Here's a real",
@@ -3191,6 +3738,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "hamster-enrichment-guide",
+      "title": "Hamster Enrichment Guide",
+      "excerpt": "Forty-five hamsters, three bedding depths, one stereotypy. At 10 cm they gnawed the bars. At 80 cm, wire-gnawing was",
+      "date": "2026-10-14",
+      "image": "/assets/images/hamster-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3282,6 +3840,17 @@
       ]
     },
     {
+      "slug": "hedgehog-enrichment-guide",
+      "title": "Hedgehog Enrichment Guide",
+      "excerpt": "In a survey of pygmy hedgehog owners, 84 percent had no hide, 68 percent housed them under half a square metre, and 17",
+      "date": "2026-10-29",
+      "image": "/assets/images/hedgehog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "hedgehog-feeding-guide",
       "title": "What Do Hedgehogs Eat? Diet and Feeding Schedule",
       "excerpt": "Hedgehogs hide illness until they're genuinely sick, which is exactly why a full day of not eating deserves faster",
@@ -3359,6 +3928,17 @@
       ]
     },
     {
+      "slug": "hermit-crab-enrichment-guide",
+      "title": "Hermit Crab Enrichment Guide",
+      "excerpt": "A hermit crab will abandon the shell keeping it alive to escape a shock, and how much shock it takes depends on how",
+      "date": "2026-10-15",
+      "image": "/assets/images/hermit-crab-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "hermit-crab-handling-guide",
       "title": "How to Handle a Hermit Crab Safely",
       "excerpt": "Hermit crabs are prey animals, and they're not really a pet built for regular handling the way a guinea pig or a",
@@ -3412,6 +3992,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "hognose-snake-enrichment-guide",
+      "title": "Hognose Snake Enrichment Guide",
+      "excerpt": "Researchers let western hognose snakes pick between an enriched side and a standard one. They chose enrichment, and the",
+      "date": "2026-10-16",
+      "image": "/assets/images/hognose-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3574,6 +4165,17 @@
       ]
     },
     {
+      "slug": "jacksons-chameleon-enrichment-guide",
+      "title": "Jackson's Chameleon Enrichment Guide",
+      "excerpt": "For this species the most valuable enrichment is a temperature most keepers are accidentally exceeding. Everything else",
+      "date": "2026-10-24",
+      "image": "/assets/images/jacksons-chameleon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "jacksons-chameleon-handling-guide",
       "title": "How to Handle a Jackson's Chameleon Correctly",
       "excerpt": "Jackson's chameleons are among the more docile chameleons kept as pets, genuinely more laid-back than the veiled",
@@ -3626,6 +4228,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "jumping-spider-enrichment-guide",
+      "title": "Jumping Spider Enrichment Guide",
+      "excerpt": "A 2024 paper in eLife documented individual recognition in Phidippus regius. This is a spider that learns shapes,",
+      "date": "2026-10-19",
+      "image": "/assets/images/jumping-spider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3706,6 +4319,17 @@
       ]
     },
     {
+      "slug": "koi-enrichment-guide",
+      "title": "Koi Enrichment Guide",
+      "excerpt": "Koi live for decades, reach the length of your arm and learn who feeds them. Nearly every welfare problem they have is",
+      "date": "2026-11-05",
+      "image": "/assets/images/koi-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "koi-feeding-guide",
       "title": "What Do Koi Eat? Diet and Feeding Schedule",
       "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the real seasonal schedule, what",
@@ -3761,6 +4385,18 @@
       ]
     },
     {
+      "slug": "labrador-enrichment-guide",
+      "title": "Labrador Enrichment Guide",
+      "excerpt": "A deletion in the POMC gene makes some Labradors hungrier and heavier. Assistance dogs carry it more often than pets",
+      "date": "2026-11-07",
+      "image": "/assets/images/labrador-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "leaf-tailed-gecko-cost-guide",
       "title": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $300 to $600",
       "excerpt": "Leaf-tailed geckos are genuinely the most expensive gecko covered on this site, and the price reflects both their",
@@ -3769,6 +4405,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "leaf-tailed-gecko-enrichment-guide",
+      "title": "Leaf-Tailed Gecko Enrichment Guide",
+      "excerpt": "A gecko evolved to vanish against bark has nothing to vanish against in a bare enclosure. For this species, cover is",
+      "date": "2026-10-23",
+      "image": "/assets/images/leaf-tailed-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3992,6 +4639,17 @@
       ]
     },
     {
+      "slug": "madagascar-hissing-cockroach-enrichment-guide",
+      "title": "Hissing Cockroach Enrichment Guide",
+      "excerpt": "A 2023 paper assessed welfare in captive group-housed Gromphadorhina using a validated monitoring tool. Almost no",
+      "date": "2026-10-19",
+      "image": "/assets/images/madagascar-hissing-cockroach-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "madagascar-hissing-cockroach-feeding-guide",
       "title": "What Do Hissing Cockroaches Eat? Diet and Feeding Schedule",
       "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe",
@@ -4069,6 +4727,17 @@
       ]
     },
     {
+      "slug": "milk-snake-enrichment-guide",
+      "title": "Milk Snake Enrichment Guide",
+      "excerpt": "Milk snakes hide constantly, and that gets used to justify small enclosures. The colubrid research suggests the answer",
+      "date": "2026-10-21",
+      "image": "/assets/images/milk-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "milk-snake-handling-guide",
       "title": "How to Handle a Milk Snake Correctly",
       "excerpt": "Milk snakes are docile overall and generally tolerate handling well, but they run a bit muskier and flightier than the",
@@ -4135,6 +4804,17 @@
       ]
     },
     {
+      "slug": "molly-enrichment-guide",
+      "title": "Molly Enrichment Guide",
+      "excerpt": "The harassment research that shapes guppy stocking was partly done on a molly. They also graze algae all day and get",
+      "date": "2026-11-04",
+      "image": "/assets/images/molly-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "molly-feeding-guide",
       "title": "What Do Molly Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Mollies lean more herbivorous than most livebearers, and a protein-heavy, no-vegetables diet is the single most common",
@@ -4190,6 +4870,17 @@
       ]
     },
     {
+      "slug": "mourning-gecko-enrichment-guide",
+      "title": "Mourning Gecko Enrichment Guide",
+      "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair",
+      "date": "2026-10-22",
+      "image": "/assets/images/mourning-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "mourning-gecko-feeding-guide",
       "title": "What Do Mourning Geckos Eat? Diet and Feeding Schedule",
       "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own.",
@@ -4242,6 +4933,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "mouse-enrichment-guide",
+      "title": "Mouse Enrichment Guide",
+      "excerpt": "Mice at normal room temperature are cold. Research on nesting material found they need six to ten grams to build their",
+      "date": "2026-10-28",
+      "image": "/assets/images/mouse-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4322,6 +5024,17 @@
       ]
     },
     {
+      "slug": "neon-tetra-enrichment-guide",
+      "title": "Neon Tetra Enrichment Guide",
+      "excerpt": "The usual advice is six. A study that actually measured darting, aggression, shoaling and feeding latency in home",
+      "date": "2026-11-03",
+      "image": "/assets/images/neon-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "neon-tetra-feeding-guide",
       "title": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
       "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the",
@@ -4377,6 +5090,17 @@
       ]
     },
     {
+      "slug": "oscar-fish-enrichment-guide",
+      "title": "Oscar Fish Enrichment Guide",
+      "excerpt": "Oscars dig, move decor, recognise the person who feeds them and destroy plants on purpose. Almost no other aquarium",
+      "date": "2026-11-05",
+      "image": "/assets/images/oscar-fish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "oscar-fish-feeding-guide",
       "title": "What Do Oscar Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species",
@@ -4429,6 +5153,17 @@
       "category": "Amphibians",
       "categories": [
         "Amphibians"
+      ]
+    },
+    {
+      "slug": "pacman-frog-enrichment-guide",
+      "title": "Pacman Frog Enrichment Guide",
+      "excerpt": "This is the hardest species on the site to write an enrichment guide for, because sitting motionless in one spot is not",
+      "date": "2026-10-26",
+      "image": "/assets/images/pacman-frog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4495,6 +5230,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "parrotlet-enrichment-guide",
+      "title": "Parrotlet Enrichment Guide",
+      "excerpt": "The smallest true parrot in the trade has the temperament of a much larger one. Housed like a budgie, it behaves like a",
+      "date": "2026-10-31",
+      "image": "/assets/images/parrotlet-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4567,6 +5313,18 @@
       ]
     },
     {
+      "slug": "persian-cat-enrichment-guide",
+      "title": "Persian Cat Enrichment Guide",
+      "excerpt": "The Persian's placid reputation is doing a lot of work. A cat that does not demand much is also a cat whose",
+      "date": "2026-11-08",
+      "image": "/assets/images/persian-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "pet-dna-test-results-guide",
       "title": "Pet DNA Test Results Explained: A31P, R820W, MDR1",
       "excerpt": "The same panel contains tests that are near-perfect and tests that mean nothing, sold in the same report at the same",
@@ -4601,6 +5359,17 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "platy-enrichment-guide",
+      "title": "Platy Enrichment Guide",
+      "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive",
+      "date": "2026-11-04",
+      "image": "/assets/images/platy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4670,6 +5439,17 @@
       ]
     },
     {
+      "slug": "praying-mantis-enrichment-guide",
+      "title": "Praying Mantis Enrichment Guide",
+      "excerpt": "A mantis moults hanging upside down and has to pull itself free of its own skin. If the enclosure is too short, it",
+      "date": "2026-11-01",
+      "image": "/assets/images/praying-mantis-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "praying-mantis-handling-guide",
       "title": "Can You Hold a Praying Mantis? How to Do It Without Harm",
       "excerpt": "Praying mantises are calm around people and rarely bite, some can even be tamed to walk across your hands. That's still",
@@ -4725,6 +5505,17 @@
       ]
     },
     {
+      "slug": "quaker-parakeet-enrichment-guide",
+      "title": "Quaker Parakeet Enrichment Guide",
+      "excerpt": "Every other parrot nests in a hole in a tree. Quakers weave enormous communal stick nests, and captive ones still try.",
+      "date": "2026-10-31",
+      "image": "/assets/images/quaker-parakeet-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "quaker-parakeet-handling-guide",
       "title": "Quaker Parakeet Legality and Handling Guide",
       "excerpt": "Quaker parakeets are intelligent, social, genuinely gifted talkers, and also the one bird on this site where a real",
@@ -4777,6 +5568,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "rabbit-enrichment-guide",
+      "title": "Rabbit Enrichment Guide",
+      "excerpt": "Solitary rabbits showed less behavioural diversity and more awake inactivity than paired ones. No toy on the market",
+      "date": "2026-10-28",
+      "image": "/assets/images/rabbit-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4846,6 +5648,17 @@
       ]
     },
     {
+      "slug": "rat-enrichment-guide",
+      "title": "Fancy Rat Enrichment Guide",
+      "excerpt": "A study of pet rats found the variable that mattered was not any single item. It was how many different kinds of",
+      "date": "2026-10-17",
+      "image": "/assets/images/rat-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "rat-feeding-guide",
       "title": "What Do Pet Rats Eat? Diet and Feeding Schedule",
       "excerpt": "A bag labeled 'Hamster and Gerbil Food' looks close enough for a rat too, but the two formulas are built to different",
@@ -4909,6 +5722,17 @@
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "red-eared-slider-enrichment-guide",
+      "title": "Red-Eared Slider Enrichment Guide",
+      "excerpt": "Coloured objects cut escape behaviour and raised activity in captive sliders. They also worked differently for",
+      "date": "2026-10-26",
+      "image": "/assets/images/red-eared-slider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4978,6 +5802,17 @@
       ]
     },
     {
+      "slug": "red-footed-tortoise-enrichment-guide",
+      "title": "Red-Footed Tortoise Enrichment Guide",
+      "excerpt": "Tortoises in enriched housing judged ambiguous situations optimistically. That is a mood measurement, in an animal most",
+      "date": "2026-10-18",
+      "image": "/assets/images/red-footed-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "red-footed-tortoise-feeding-guide",
       "title": "What Do Red-Footed Tortoises Eat? Diet and Feeding Schedule",
       "excerpt": "Red-footed tortoises need a genuinely different diet than the other tortoises on this site, real omnivores that need",
@@ -5033,6 +5868,17 @@
       ]
     },
     {
+      "slug": "reptile-emergency-plan-guide",
+      "title": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
+      "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with",
+      "date": "2026-09-15",
+      "image": "/assets/images/reptile-emergency-plan.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "reptile-shedding-complete-guide",
       "title": "Understanding Reptile Shedding (Ecdysis)",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and",
@@ -5052,6 +5898,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "rosy-boa-enrichment-guide",
+      "title": "Rosy Boa Enrichment Guide",
+      "excerpt": "Rosy boas are small, slow and famously undemanding, which is exactly why they get the smallest enclosures in the hobby.",
+      "date": "2026-10-25",
+      "image": "/assets/images/rosy-boa-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5187,6 +6044,17 @@
       ]
     },
     {
+      "slug": "savannah-monitor-enrichment-guide",
+      "title": "Savannah Monitor Enrichment Guide",
+      "excerpt": "The monitor problem-solving research is a closer fit here than for any other lizard on this site, because savannahs are",
+      "date": "2026-10-20",
+      "image": "/assets/images/savannah-monitor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "savannah-monitor-handling-guide",
       "title": "How to Handle a Savannah Monitor Safely",
       "excerpt": "Savannah monitors get marketed alongside the ackie monitor as a similarly approachable species. They aren't really",
@@ -5288,6 +6156,18 @@
       ]
     },
     {
+      "slug": "siberian-husky-enrichment-guide",
+      "title": "Siberian Husky Enrichment Guide",
+      "excerpt": "A husky was selected to run for hours in the cold, away from home, alongside other dogs. Every difficult thing about",
+      "date": "2026-11-07",
+      "image": "/assets/images/siberian-husky-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "slow-loris-the-only-venomous-primate",
       "title": "Slow Loris Venom: The Only Venomous Primate",
       "excerpt": "A primate that mixes venom from a gland on its own arm into its saliva, delivered through a comb of teeth. In one",
@@ -5310,6 +6190,18 @@
       ]
     },
     {
+      "slug": "sphynx-cat-enrichment-guide",
+      "title": "Sphynx Cat Enrichment Guide",
+      "excerpt": "A cat with no coat cannot thermoregulate the way the five pillars framework assumes. Every safe place has to also be a",
+      "date": "2026-11-08",
+      "image": "/assets/images/sphynx-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "stick-insect-cost-guide",
       "title": "Stick Insect Price: A Few Dollars, Plus $30 to $100 Setup",
       "excerpt": "Stick insects are genuinely one of the cheapest pets covered on this site, but before any cost discussion, there's a",
@@ -5318,6 +6210,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "stick-insect-enrichment-guide",
+      "title": "Stick Insect Enrichment Guide",
+      "excerpt": "A stick insect's whole life is standing on a plant eating it. The enrichment question is unusually simple, and the",
+      "date": "2026-11-01",
+      "image": "/assets/images/stick-insect-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5362,6 +6265,17 @@
       "category": "Small & Exotic Pets",
       "categories": [
         "Small & Exotic Pets"
+      ]
+    },
+    {
+      "slug": "sugar-glider-enrichment-guide",
+      "title": "Sugar Glider Enrichment Guide",
+      "excerpt": "Everyone repeats that solitary sugar gliders self-mutilate. The study that actually looked found the solitary animals",
+      "date": "2026-10-29",
+      "image": "/assets/images/sugar-glider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5442,6 +6356,17 @@
       ]
     },
     {
+      "slug": "sulcata-tortoise-enrichment-guide",
+      "title": "Sulcata Tortoise Enrichment Guide",
+      "excerpt": "Tortoises learn touchscreens, anticipate food on a schedule, and show cognitive bias. Sulcatas get all of that plus the",
+      "date": "2026-10-27",
+      "image": "/assets/images/sulcata-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "sulcata-tortoise-feeding-guide",
       "title": "What Do Sulcata Tortoises Eat? Diet and Feeding Schedule",
       "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's",
@@ -5519,6 +6444,17 @@
       ]
     },
     {
+      "slug": "swordtail-enrichment-guide",
+      "title": "Swordtail Enrichment Guide",
+      "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that",
+      "date": "2026-11-04",
+      "image": "/assets/images/swordtail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "swordtail-feeding-guide",
       "title": "What Do Swordtail Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Swordtails are true dietary generalists, more balanced between plant and animal food than a molly's heavier plant lean.",
@@ -5582,6 +6518,17 @@
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "tarantula-enrichment-guide",
+      "title": "Tarantula Enrichment Guide",
+      "excerpt": "A six times larger enclosure did not make tarantulas more active and they did not prefer it. They did use more of it,",
+      "date": "2026-11-01",
+      "image": "/assets/images/tarantula-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5718,6 +6665,17 @@
       ]
     },
     {
+      "slug": "tiger-salamander-enrichment-guide",
+      "title": "Tiger Salamander Enrichment Guide",
+      "excerpt": "A tiger salamander spends most of its life in a burrow it dug. Shallow substrate does not make it more visible, it just",
+      "date": "2026-10-27",
+      "image": "/assets/images/tiger-salamander-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "tiger-salamander-handling-guide",
       "title": "Tiger Salamander Handling: What to Know",
       "excerpt": "Tiger salamanders are genuinely more outgoing than a lot of amphibians, but that personality doesn't translate into a",
@@ -5784,6 +6742,17 @@
       ]
     },
     {
+      "slug": "tokay-gecko-enrichment-guide",
+      "title": "Tokay Gecko Enrichment Guide",
+      "excerpt": "Everyone says house tokays alone. A 2024 study moved captive-bred tokays from single to pair housing and found the",
+      "date": "2026-10-16",
+      "image": "/assets/images/tokay-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "tokay-gecko-handling-guide",
       "title": "Tokay Gecko Handling: What to Actually Expect",
       "excerpt": "Every other gecko covered on this site, crested, leopard, gargoyle, mourning, and African fat-tailed, ranges from calm",
@@ -5836,6 +6805,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "uromastyx-enrichment-guide",
+      "title": "Uromastyx Enrichment Guide",
+      "excerpt": "The nearest lizard study ranked thermal enrichment first out of five types. For a desert species that basks hotter than",
+      "date": "2026-10-24",
+      "image": "/assets/images/uromastyx-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5928,6 +6908,17 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "veiled-chameleon-enrichment-guide",
+      "title": "Veiled Chameleon Enrichment Guide",
+      "excerpt": "Hatchlings raised alone for two months grew into duller, more submissive adults that hunted worse. This is one of the",
+      "date": "2026-10-23",
+      "image": "/assets/images/veiled-chameleon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -6039,6 +7030,17 @@
       "category": "Amphibians",
       "categories": [
         "Amphibians"
+      ]
+    },
+    {
+      "slug": "whites-tree-frog-enrichment-guide",
+      "title": "White's Tree Frog Enrichment Guide",
+      "excerpt": "Tree frogs given planted enclosures grew larger, grew faster, carried different skin bacteria, and chose the planted",
+      "date": "2026-10-26",
+      "image": "/assets/images/whites-tree-frog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -6208,6 +7210,17 @@
       ]
     },
     {
+      "slug": "zebra-danio-enrichment-guide",
+      "title": "Zebra Danio Enrichment Guide",
+      "excerpt": "Zebrafish larvae reared in enriched tanks survived at higher rates than those in bare ones, and adults from enriched",
+      "date": "2026-11-03",
+      "image": "/assets/images/zebra-danio-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "zebra-danio-feeding-guide",
       "title": "What Do Zebra Danios Eat? Diet and Feeding Schedule",
       "excerpt": "Zebra danio feeding is genuinely simple, a flake or micro-pellet staple with live or frozen food a few times a week.",
@@ -6260,6 +7273,17 @@
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "zebra-finch-enrichment-guide",
+      "title": "Zebra Finch Enrichment Guide",
+      "excerpt": "Wild zebra finches forage and travel mostly in pairs, and 94 percent of those pairs are mixed-sex. Bigger is not",
+      "date": "2026-10-30",
+      "image": "/assets/images/zebra-finch-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {

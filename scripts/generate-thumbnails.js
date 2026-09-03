@@ -45,6 +45,18 @@ const CARD_VARIANT_DIRS = new Set([
   // therefore use the uncropped original until a portrait tier exists.
 ]);
 
+// images/ and guides/ also get a "-hero" tier: the article featured image and
+// the guide hero are the LCP element on their pages and were served as the
+// 1168px original JPEG (PageSpeed: 334 KB for a 592px slot on the rhino
+// article). Two webp widths, no crop (fit: inside keeps the aspect ratio), so
+// HeroImage.jsx can offer them as 1x/2x density candidates with the original
+// JPEG as the fallback <img src>. facts/, encyclopedia/ and beastlypedia/ are
+// deliberately left out: nothing renders them at hero size.
+const HERO_VARIANT_DIRS = new Set([
+  path.join(rootDir, 'public/assets/images'),
+  path.join(rootDir, 'public/assets/guides'),
+]);
+
 const supported = new Set(['.jpg', '.jpeg', '.png']);
 
 // Recursively collect all image files under a directory tree.
@@ -86,10 +98,10 @@ function collectImages(dir, results = []) {
 // build, so that is the right thing to spend. The encode happens once per
 // deploy, the download happens on every visit.
 async function generateTier(input, { webpOut, jpgOut, resize, webpOpts, jpegOpts, label }) {
-  if (fs.existsSync(webpOut) && fs.existsSync(jpgOut)) return 0;
+  if (fs.existsSync(webpOut) && (!jpgOut || fs.existsSync(jpgOut))) return 0;
   try {
     await sharp(input).resize(...resize).webp(webpOpts).toFile(webpOut);
-    await sharp(input).resize(...resize).jpeg(jpegOpts).toFile(jpgOut);
+    if (jpgOut) await sharp(input).resize(...resize).jpeg(jpegOpts).toFile(jpgOut);
     return 1;
   } catch (error) {
     console.warn(`Skipping ${path.basename(input)}${label}: ${error.message}`);
@@ -138,6 +150,10 @@ async function generateThumbs() {
     for (const input of files) {
       const ext = path.extname(input);
       const baseName = path.basename(input, ext);
+      // Only the generated jpg tiers can collide with a source name here: the
+      // -hero tiers are webp-only and collectImages() never picks up webp, so
+      // they need no skip. Beastlypedia's source photos are named *-hero.jpg
+      // and must NOT be skipped (that mistake broke a deploy).
       if (baseName.endsWith('-thumb') || baseName.endsWith('-card') || baseName.endsWith('-card@2x')) continue;
 
       const base = input.slice(0, -ext.length);
@@ -191,6 +207,35 @@ async function generateThumbs() {
           label: ' (card 2x variant)',
         }));
       }
+    }
+  }
+
+  for (const dir of assetDirs) {
+    if (!HERO_VARIANT_DIRS.has(dir)) continue;
+    for (const input of collectImages(dir)) {
+      const ext = path.extname(input);
+      const baseName = path.basename(input, ext);
+      if (/-(thumb|card|card@2x)$/.test(baseName)) continue;
+      const base = input.slice(0, -ext.length);
+      // 800px wide covers the 592-665px desktop slot at DPR 1. The 2x file is
+      // capped at 1600 but withoutEnlargement means it is the original's own
+      // width (1168 for most of these), which is what a 380px mobile slot at
+      // DPR 2.6 needs. Quality steps down on the 2x file for the same reason
+      // as the -card@2x tier: every artifact is drawn at half size or less.
+      jobs.push(() => generateTier(input, {
+        webpOut: `${base}-hero.webp`,
+        jpgOut: null,
+        resize: [800, null, { fit: 'inside', withoutEnlargement: true }],
+        webpOpts: { quality: 74, effort: 6 },
+        label: ' (hero 1x variant)',
+      }));
+      jobs.push(() => generateTier(input, {
+        webpOut: `${base}-hero@2x.webp`,
+        jpgOut: null,
+        resize: [1600, null, { fit: 'inside', withoutEnlargement: true }],
+        webpOpts: { quality: 66, effort: 6 },
+        label: ' (hero 2x variant)',
+      }));
     }
   }
 

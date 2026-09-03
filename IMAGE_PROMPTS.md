@@ -235,3 +235,969 @@ the glass, a small unplugged compact coil bulb lies retired on the tabletop,
 slightly out of focus. Warm amber light against cool shadow, red desert sand
 and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
+
+### bearded-dragon-brumation.jpg
+Photorealistic photograph of an adult bearded dragon brumating, asleep and
+half-tucked inside the mouth of a wide cork bark tube on the cool side of a
+naturalistic enclosure. Head and shoulders out on the substrate, body and tail
+still in shadow inside the tube, chin resting flat on the ground, posture low
+and settled rather than propped up or alert.
+
+THE VISIBLE EYE IS FULLY SHUT. The lower lid domes smoothly up over the socket
+as a soft scaled mound, meeting a fine gold-rimmed seam above it. No eyeball, no
+glossy globe, no iris, no pupil, no sclera and no catchlight anywhere in the eye
+socket. This is the detail that decides the picture: an eye that reads open or
+cloudy turns a sleeping dragon into a sick one, which is the exact confusion the
+article exists to clear up.
+
+She is healthy, only dormant: full rounded tail base, no visible hip bones or
+ribs, smooth unwrinkled skin, colour muted and dusty rather than bright.
+
+Substrate is a dark naturalistic soil mix with scattered dry brown leaf litter
+around the mouth of the tube, drifting to a paler sandy area at the right of the
+frame. Enclosure glass and a dark frame edge sit out of focus along the top.
+
+Dim, low, warm side light raking in from the left across the cork and the top of
+the head, deep shadow filling the tube and the right foreground, no lamp visible
+and nothing lit. Muted brown, grey and cork palette, quiet and still, the feel of
+a dim autumn evening. Camera low at substrate level and close, sharpest on the
+closed eyelid and the ridge of spines along the jaw, leaf litter crisp in the
+near foreground, 100mm, f/2.8, 3:2.
+
+Must not contain: an open or partially open eye, a visible eyeball, iris or
+pupil, a cloudy, milky, blue-grey, opaque or filmy eye, or a bulging eye; wood
+chips, bark chips or gravel; a lit or glowing lamp of any kind; a red or coloured
+night bulb; sunken eyes, wrinkled skin, a visible spine or hip bones, an open
+mouth, or any other cue that reads as a sick dragon rather than a sleeping one.
+No text, logos, or brand markings anywhere.
+
+### bearded-dragon-eggs-and-egg-binding.jpg
+Photorealistic photograph of a large lay box set up on the warm side of a
+bearded dragon enclosure, with an adult female standing beside it.
+
+THE LAY BOX IS THE SUBJECT AND MUST READ AS LARGE. It is a full-size
+translucent household storage tub with the lid off, roughly the size of a
+laundry basket, wide enough that the dragon could comfortably turn around
+inside it and clearly longer than she is from nose to tail base. It occupies
+about two thirds of the frame width and its near rim rises to roughly the
+height of her shoulder. Do not render it as a small tray, seed dish, food bowl,
+plant pot or nest box.
+
+The tub is filled deep with a damp dark 50/50 mix of organic topsoil and washed
+play sand, packed to within a few inches of the rim, the depth of the fill
+plainly visible as a dense band through the translucent side wall. The surface
+is worked over rather than smooth, with one shallow test hole started near the
+front corner, its walls holding their shape without slumping. The mix looks
+damp and cohesive, not dusty and not muddy.
+
+The adult female stands on the enclosure floor beside the tub in three-quarter
+view, alert and healthy, body normal and well muscled, one front foot raised
+against the tub's outer wall as if about to climb in. She is secondary to the
+box in the composition and noticeably smaller in the frame than it is. The
+enclosure floor she stands on is smooth grey slate tile, bare and clean, so the
+filled box reads as an obviously separate container rather than as loose
+substrate spread across the enclosure. This contrast between bare tile floor and
+deep filled box is the whole point of the image.
+
+Warm terracotta basking light from a lamp just out of frame at the upper right,
+earthy brown, tan and slate palette, soft shadow under the tub's rim. Camera
+low at floor level and pulled back far enough to hold the full tub in frame,
+sharpest on the tub's near rim and the test hole, the dragon's face still clearly
+readable, 35mm, f/4, 3:2.
+
+Must not contain: eggs of any kind, a small or shallow container, loose soil or
+sand spread across the enclosure floor outside the box, a gravid belly shown
+distended or distressed, a dark beard, gaping, or any cue of illness. No text,
+logos, or brand markings anywhere.
+
+### bearded-dragon-growth-weight-checks.jpg
+Photorealistic photograph of an adult bearded dragon standing calmly on the
+flat platform of a small digital kitchen scale on a light wood counter, a
+person's hand resting nearby ready to steady it rather than gripping the
+animal, the scale's display softly out of focus so no digits are legible. A
+small notebook and pen sit just behind the scale, slightly blurred. Bright
+clean daylight from a window at the left, warm terracotta and honey palette,
+sharpest on the dragon's face and front legs, 50mm, f/2.8, 3:2. No text,
+logos, or brand markings anywhere.
+
+### bearded-dragon-safe-foods.jpg
+Photorealistic overhead photograph of a freshly chopped bearded dragon salad on
+a flat grey slate feeding tile: finely shredded collard and mustard greens,
+grated orange butternut squash, and small diced red and yellow bell pepper,
+loosely piled so the individual pieces read separately. A single dubia roach
+sits on the slate beside the tile, lightly and unevenly coated in fine white
+calcium powder. Bright clean daylight from the upper left, high key, vivid
+green and orange against cool grey stone, water droplets on the greens. Shot
+straight down, 50mm, f/4, 3:2. Overhead and high key so it doesn't collide with
+the warm floor-level look of `bearded-dragon-shopping-list.jpg`. No fruit, no
+lettuce, no bowl, no hands, no text, logos, or brand markings anywhere.
+
+### reptile-emergency-plan.jpg
+Photorealistic photograph of a power outage kit assembled on a plain wood floor
+beside a ventilated clear plastic transport tub, seen from a low three-quarter
+angle. The tub lid rests to one side and a folded thick towel lines the base; a
+flat cloth hand warmer sits on the floor beside the tub rather than inside it,
+next to a small battery thermometer with an unlit display and a folded index
+card with handwriting too soft to read. Dim warm side light as though the room
+lights are out, deep shadow falling away behind, muted amber and grey-brown
+palette. Camera low at floor level, sharpest on the tub rim and the hand
+warmer, 35mm, f/3.5, 3:2. The hand warmer stays outside the tub and no animal
+appears, since the guide's own rule is that an emergency heat source never
+touches the reptile. No candles or open flame, for the same reason the article
+rules them out. No legible text, logos, or brand markings anywhere.
+
+---
+
+## Enrichment guides, batch 1 (2026-10-14 to 10-15)
+
+Six anchor guides, the ones with direct published studies behind them. All 3:2
+at 1168x784, same as the pass above, and installed at that size rather than
+upscaled. House rule for this set: **show the enrichment being used, not the
+enclosure standing empty.** An animal mid-behavior is the whole argument these
+articles make.
+
+Filenames go in `public/assets/images/` and must match the frontmatter exactly.
+
+### ball-python-enrichment.jpg
+```
+A ball python in a large, heavily furnished bioactive terrarium, mid-movement
+across the floor with the front third of its body raised and braced against a
+thick horizontal cork branch. Deep dark substrate with scattered leaf litter,
+live pothos and bromeliads breaking up the space, a wide shallow water basin
+large enough for the snake to enter, cork bark tubes at both ends. Warm low
+side-lighting, shallow depth of field, photographed slightly above eye level.
+Naturalistic and lived-in, not a showroom setup. No hands, no people.
+```
+
+### corn-snake-enrichment.jpg
+```
+An orange and red corn snake stretched out almost fully along a long branch
+spanning a wide planted terrarium, body extended rather than coiled. Enclosure
+clearly much longer than the snake, deep substrate, leaf litter, cork flats and
+dense low planting breaking the floor into cover. Soft daylight from one side,
+shallow depth of field on the head, the length of the body receding into the
+enclosure. Emphasize horizontal space and the fully extended posture.
+No hands, no people.
+```
+
+### hamster-enrichment.jpg
+```
+A Syrian hamster emerging head-first from a burrow entrance it has dug in very
+deep bedding, cross-section not visible, viewed from just above substrate level
+so the depth of the bedding dominates the frame. Thick layered aspen and paper
+bedding piled high, scattered seed and a few chew items on the surface, a large
+solid-surface wheel out of focus behind. Warm domestic light, shallow depth of
+field on the hamster's face. The bedding depth is the subject.
+No hands, no people, no wire bars in focus.
+```
+
+### african-grey-parrot-enrichment.jpg
+```
+An African grey parrot gripping a wooden foraging toy with one foot, actively
+working a piece of food out of a drilled compartment with its beak, wood
+shavings and shredded palm scattered below. Perched on a natural apple-wood
+branch among perches of visibly different diameters. Neutral soft studio-daylight
+background, shallow depth of field, close enough to read the concentration in the
+eye. The bird is working, not posing. No cage bars in the foreground, no people.
+```
+
+### betta-fish-enrichment.jpg
+```
+A male betta with long flowing fins swimming in open water through a densely
+planted aquarium, broad-leaved plants and fine-leaved stems filling the
+background, a piece of driftwood breaking the frame diagonally. Slightly tannin
+stained water, soft top-down light, dark background. The fish is out in the open
+with cover clearly available behind it. Shallow depth of field on the fish.
+No mirror, no bowl, no plastic ornaments, no people.
+```
+
+### hermit-crab-enrichment.jpg
+```
+Two or three land hermit crabs on deep damp sand-and-coco substrate, one crab
+actively inspecting an empty shell with its claws while six or seven other empty
+shells of clearly different sizes and openings lie scattered nearby. A piece of
+cork and a climbing branch at the edge of frame. Warm humid light, shallow depth
+of field on the inspecting crab. Natural unpainted shells only. The act of
+choosing is the subject. No hands, no people.
+```
+
+### Enrichment guides, batch 2 (2026-10-16 to 10-17)
+
+Same rules as batch 1: 3:2 at 1168x784, the animal mid-behavior rather than an
+empty enclosure.
+
+#### hognose-snake-enrichment.jpg
+```
+A western hognose snake actively burrowing, head and upturned snout pushed down
+into loose sandy substrate with a shallow furrow trailing behind it, most of the
+body still on the surface. Deep loose substrate filling the lower half of frame,
+a large shallow water dish and a cork tube visible on the cool side, soft
+diffuse light from above. Close, low camera angle at substrate level so the
+depth reads. The digging is the subject. No hands, no people.
+```
+
+#### tokay-gecko-enrichment.jpg
+```
+A tokay gecko, vivid blue-grey with orange spots, gripping a vertical cork slab
+partway up a tall densely planted terrarium, body oriented head-down. Large
+pothos and bromeliad foliage, branches at multiple heights, visible humidity on
+the glass. Dim warm evening lighting suited to a nocturnal species, shallow
+depth of field on the gecko's head and foot pads. Emphasize vertical space that
+is full rather than empty. No hands, no people.
+```
+
+#### blue-tongue-skink-enrichment.jpg
+```
+A blue tongue skink walking across deep cypress mulch with its tongue extended,
+nosing among scattered chopped greens and a few insects spread across the
+substrate and partly hidden under leaf litter and a cork flat. Wide low camera
+angle showing floor space running away from the animal. Warm basking light from
+one side. Foraging across ground, not eating from a dish. No bowl in frame,
+no hands, no people.
+```
+
+#### box-turtle-enrichment.jpg
+```
+An eastern box turtle pushing forward through deep cypress mulch and leaf
+litter, front half emerging from under a fallen log, substrate visibly disturbed
+around it. Damp mossy patches, low ferns, dappled light as if through a canopy.
+Camera at substrate level, shallow depth of field on the turtle's face and the
+red eye. The animal is burrowing out, not sitting on a bare surface.
+No hands, no people, no newspaper.
+```
+
+#### ferret-enrichment.jpg
+```
+A ferret in mid-leap emerging from the open end of a fabric play tunnel, all
+four feet off the ground, body stretched out. Behind it a multi-level cage with
+hammocks slung at two heights and a second tunnel connecting levels. Bright
+domestic daylight, fast shutter feel, slight motion energy. Playing, caught mid
+movement, not posed. No hands, no people.
+```
+
+#### rat-enrichment.jpg
+```
+Two fancy rats in a tall multi-level cage, one climbing a knotted rope and the
+other sitting in a hanging hammock, with a shallow dig tub, cardboard tubes and
+a wooden hideout visible across different levels. Nesting material pulled into
+one corner. Warm domestic light, shallow depth of field on the climbing rat.
+The frame should read as a cage covering many different kinds of enrichment at
+once, which is the point of the article. No hands, no people.
+```
+
+### Enrichment guides, batch 3 (2026-10-18 to 10-19)
+
+Same rules: 3:2 at 1168x784, the animal mid-behavior.
+
+#### chinchilla-enrichment.jpg
+```
+A chinchilla mid-roll on its back inside an open dust bath house, a visible puff
+of fine dust in the air around it, all four feet up. Solid-floor cage with
+bedding and solid wooden shelves at several heights visible behind, a wooden
+chew block on the floor. Bright even light, fast shutter to freeze the dust.
+Joyful and undignified, which is what dust bathing actually looks like.
+No wire flooring anywhere in frame, no hands, no people.
+```
+
+#### cockatiel-enrichment.jpg
+```
+A grey cockatiel with orange cheek patches gripping a hanging foraging toy with
+one foot, actively shredding a paper or palm element with its beak, fragments
+falling. Perched on a natural branch among perches of visibly different
+diameters and materials. Soft daylight, plain neutral background, shallow depth
+of field on the head and beak. The bird is destroying something on purpose.
+No cage bars in the foreground, no people.
+```
+
+#### red-footed-tortoise-enrichment.jpg
+```
+A red-footed tortoise walking across a humid planted enclosure floor toward
+scattered chopped greens and berries spread across leaf litter and low growing
+plants, several separate feeding spots visible rather than one dish. Damp dark
+substrate, broad-leaved planting, warm humid light with visible moisture.
+Camera low at shell height. Grazing across ground, not eating from a bowl.
+No dish in frame, no hands, no people.
+```
+
+#### jumping-spider-enrichment.jpg
+```
+A regal jumping spider on a small cork bark flat, front-facing so the two large
+forward eyes dominate, body angled as if tracking something. Behind it a layered
+enclosure with small branches, foliage at multiple depths and a silk retreat
+visible in an upper corner. Extreme shallow depth of field, macro, soft
+directional light picking out the iridescent chelicerae. The eyes are the
+subject, because vision is the whole article. No hands, no people.
+```
+
+#### madagascar-hissing-cockroach-enrichment.jpg
+```
+A cluster of six or seven Madagascar hissing cockroaches of mixed sizes packed
+together on and under a stack of overlapping cork bark slabs, over deep dark
+coconut fibre substrate with leaf litter and pieces of rotting wood. Warm dim
+light, visible humidity. Photographed as a colony rather than a specimen, which
+is the point of the article. Glossy chestnut carapaces catching the light.
+No hands, no people.
+```
+
+#### ackie-monitor-enrichment.jpg
+```
+An ackie monitor mid-dig, front legs buried and substrate spraying backwards,
+head down at the entrance of a burrow in very deep red-brown sandy substrate.
+Large enclosure with rock stacks and cork visible behind, strong overhead
+basking light casting a hard shadow. Camera low at substrate level so the depth
+of the substrate fills the lower third. Active excavation, not a basking pose.
+No hands, no people.
+```
+
+### Enrichment guides, batch 4 (2026-10-20 to 10-21)
+
+First borrowed-evidence batch. Same rules: 3:2 at 1168x784, animal mid-behavior.
+
+#### argentine-tegu-enrichment.jpg
+```
+An Argentine black and white tegu mid-dig, forelimbs buried to the elbow in
+deep dark substrate with soil sprayed backwards, head lowered at a burrow
+entrance. Very large enclosure, cork and logs behind, strong basking light from
+above right. Low camera at substrate level. The bold black and white banding
+should read clearly against the dark soil. No hands, no people.
+```
+
+#### savannah-monitor-enrichment.jpg
+```
+A savannah monitor standing over deep substrate with its forked tongue extended
+mid-flick, investigating a partly buried food item. Heavy-bodied, keeled scales
+catching hard overhead basking light, rock stack and a large water tub behind.
+Camera low and slightly ahead of the animal. Investigating, not basking.
+No hands, no people.
+```
+
+#### california-kingsnake-enrichment.jpg
+```
+A black and white banded California kingsnake moving through leaf litter over
+aspen substrate, head raised and tongue out, body winding between cork tubes and
+low planting so it is partly obscured along its length. Wide horizontal frame
+emphasizing floor length. Soft even light. Travelling under cover, not coiled in
+a hide. No hands, no people.
+```
+
+#### milk-snake-enrichment.jpg
+```
+A red, black and white banded milk snake emerging head-first from beneath a cork
+flat, most of the body still hidden under leaf litter, only the head and a few
+inches of neck visible. Densely cluttered enclosure floor with overlapping cork,
+litter and low plants leaving almost no open ground. Warm low light.
+The clutter is the subject. No hands, no people.
+```
+
+#### boa-constrictor-enrichment.jpg
+```
+A boa constrictor draped in loose coils across a thick horizontal branch,
+supporting its own weight, several feet off the enclosure floor. Large planted
+enclosure below with a big water tub and cork rounds visible. Warm light from
+one side, shallow depth of field on the head. Scale should read: this is a heavy
+animal on structure strong enough to hold it. No hands, no people.
+```
+
+#### garter-snake-enrichment.jpg
+```
+A slender garter snake with yellow dorsal stripes moving quickly through dense
+low planting, head up and tongue extended, body in an active S-curve rather than
+coiled. Shallow water dish large enough to swim in visible at the edge of frame,
+damp planted substrate. Bright daylight, since this is a diurnal species.
+Hunting, in motion. No hands, no people.
+```
+
+### Enrichment guides, batch 5 (2026-10-22 to 10-23)
+
+Geckos. Same rules: 3:2 at 1168x784, animal mid-behavior.
+
+#### african-fat-tail-enrichment.jpg
+```
+An African fat-tailed gecko emerging from the mouth of a humid hide packed with
+visibly damp sphagnum moss, head and forelimbs out, condensation on the moss.
+Warm banded brown and cream markings, thick tail. Dim evening lighting suited to
+a crepuscular species, shallow depth of field on the face. The damp hide is the
+subject. No hands, no people.
+```
+
+#### mourning-gecko-enrichment.jpg
+```
+Three or four small mourning geckos at different heights on the broad leaves and
+stems of a densely planted bioactive vivarium, one on a vertical cork slab.
+Mottled grey-brown geckos against green foliage, visible humidity. Soft diffuse
+light. Photographed as a colony spread through vertical space, which is the
+whole article. No hands, no people.
+```
+
+#### gargoyle-gecko-enrichment.jpg
+```
+A gargoyle gecko with knobbly cranial bumps gripping a vertical cork slab
+partway up a tall planted vivarium, head angled down. Branches at several angles
+and dense foliage filling the frame behind, a shallow feeding ledge with gecko
+diet mounted high. Warm dim light. The enclosure should read as full from floor
+to ceiling. No hands, no people.
+```
+
+#### leaf-tailed-gecko-enrichment.jpg
+```
+A leaf-tailed gecko flattened head-down against a vertical cork slab, edges of
+the body blending into the bark so the outline is genuinely hard to resolve.
+Dense mossy planting and layered branches around it, high humidity with fine
+mist visible in the air. Low contrast, muted greens and browns, shallow depth of
+field. The camouflage should be the difficulty of the photo. No hands, no people.
+```
+
+### Enrichment guides, batch 6 (2026-10-23 to 10-25)
+
+Chameleons, iguana, anole, uromastyx and rosy boa. Same rules: 3:2 at 1168x784,
+animal mid-behavior, show the enrichment being used rather than the enclosure
+standing empty.
+
+#### veiled-chameleon-enrichment.jpg
+```
+A veiled chameleon mid-stride on a thin diagonal branch inside a heavily planted
+screen enclosure, one foot lifted and gripping forward, tail partly curled.
+Dense layered foliage around and behind it so the animal is partly obscured, fine
+water droplets clinging to the leaves. Bright green casque and banded flanks.
+Soft daylight through the mesh, shallow depth of field. The planting density is
+the subject as much as the animal. No hands, no people.
+```
+
+#### green-iguana-enrichment.jpg
+```
+A large adult green iguana stretched along a thick anchored branch high in a
+tall enclosure, head raised and surveying, dewlap visible. Wide basking platform
+and a seagrass hammock lower in frame, broad leaves for scale. Warm basking light
+from above casting long shadow. Shot from slightly below so the animal reads as
+high up and large. No hands, no people.
+```
+
+#### green-anole-enrichment.jpg
+```
+A bright green anole gripping a thin vertical stem partway up a densely planted
+terrarium, body upright in a perching posture, throat pale. Broad leaves and fine
+branches at several heights around it, water droplets on the foliage catching
+the light. Bright naturalistic daylight, shallow depth of field. Vertical
+structure should dominate the composition. No hands, no people.
+```
+
+#### jacksons-chameleon-enrichment.jpg
+```
+A male Jackson's chameleon with three prominent horns moving along a mossy
+branch in a cool, densely planted enclosure. Fine mist hanging in the air, water
+beading on moss and leaves, muted green palette suggesting montane forest rather
+than desert warmth. Overcast diffuse lighting, cooler colour temperature than the
+other reptile shots. No hands, no people.
+```
+
+#### uromastyx-enrichment.jpg
+```
+A uromastyx flattened wide on a slab of hot stone directly under a basking lamp,
+limbs splayed, spiny tail extended. Beside it a bank of deep pale sand with the
+mouth of an excavated burrow clearly visible, scattered greens and seed on the
+substrate nearby. Harsh bright desert lighting, strong shadows, warm ochre
+palette. Heat and burrow in one frame. No hands, no people.
+```
+
+#### rosy-boa-enrichment.jpg
+```
+A rosy boa half buried in dry aspen shavings, front third of the body emerging
+and head raised, the rest of the animal under substrate. A stacked slate crevice
+with a narrow gap immediately behind it. Warm orange and slate-grey stripes on
+cream. Dim evening lighting for a crepuscular species, dry dusty palette, shallow
+depth of field on the head. The burying is the subject. No hands, no people.
+```
+
+### Enrichment guides, batch 7 (2026-10-26 to 10-27)
+
+The last reptiles and the amphibians. Same rules: 3:2 at 1168x784, animal
+mid-behavior, show the enrichment being used rather than the enclosure standing
+empty. Amphibian shots should read damp and softly lit, not dry and bright.
+
+#### whites-tree-frog-enrichment.jpg
+```
+A plump White's tree frog sitting on a broad leaf partway up a densely planted
+terrarium, toe pads gripping, body settled and relaxed. Layered foliage above and
+below so the frog is nested inside cover rather than perched on top of it. Soft
+green light, high humidity, water droplets on the leaves. Shallow depth of field
+on the frog's face. No hands, no people.
+```
+
+#### red-eared-slider-enrichment.jpg
+```
+A red-eared slider mid-swim in clear water, angled downward toward a scattered
+food item on the substrate, front limbs extended. Submerged driftwood and sturdy
+planting around it, a dry basking platform visible above the waterline in the
+upper frame. Bright clean underwater lighting, visible red ear stripe. The turtle
+should read as actively searching. No hands, no people.
+```
+
+#### fire-skink-enrichment.jpg
+```
+A fire skink emerging head-first from deep leaf litter on a forest floor setup,
+front half out and body still partly buried. Brilliant red and black barred
+flanks catching low light against dark damp substrate and dead leaves. Cork flat
+laid nearby, low planting behind. Warm dim lighting, shallow depth of field on
+the head. The emergence is the subject. No hands, no people.
+```
+
+#### pacman-frog-enrichment.jpg
+```
+A pacman frog buried to the eyes in damp coconut fibre substrate, only the top of
+the head, eyes and wide mouth line visible above the surface, sphagnum moss
+scattered around. Mottled green and brown. Shot low and close so the frog is
+almost part of the ground. Soft diffuse light, high humidity, very still
+composition. The burial is the whole photo. No hands, no people.
+```
+
+#### fire-bellied-toad-enrichment.jpg
+```
+Two fire-bellied toads on a mossy bank at the edge of a shallow planted water
+section, one half in the water, green and black mottled backs visible. Artificial
+and live planting both in the water and on the land side, clear shallow water.
+Bright naturalistic daylight, since these are diurnal. Land and water should both
+read as real parts of the enclosure. No hands, no people.
+```
+
+#### tiger-salamander-enrichment.jpg
+```
+A tiger salamander emerging at night from the mouth of a burrow in deep damp
+substrate, glossy black skin with bold yellow blotches, head and forelimbs out.
+Leaf litter and cork flats across the surface around the burrow entrance. Cool
+dim lighting, damp earthy palette, shallow depth of field. Substrate depth should
+be visible in the frame. No hands, no people.
+```
+
+#### sulcata-tortoise-enrichment.jpg
+```
+A large adult sulcata tortoise mid-stride across rough grazing grass, head down
+and actively cropping, thick scaled forelimbs and heavily marked shell. The mouth
+of a dug burrow and a low shelter visible behind, secure fencing at the far edge
+of frame. Bright dry outdoor daylight, arid palette. Scale should read large,
+photographed from low down. No hands, no people.
+```
+
+### Enrichment guides, batch 8 (2026-10-28 to 10-29)
+
+Small mammals. Same rules: 3:2 at 1168x784, animal mid-behavior, show the
+enrichment being used rather than the enclosure standing empty.
+
+#### gerbil-enrichment.jpg
+```
+A gerbil emerging head-first from a tunnel entrance in deep aspen bedding, the
+tunnel mouth clearly holding its shape and leading down out of frame. Bedding
+piled several inches deep and visibly excavated, chew sticks and a partly buried
+hideout nearby. Warm bright lighting, shallow depth of field on the gerbil's
+face. The burrow structure has to read clearly. No hands, no people.
+```
+
+#### mouse-enrichment.jpg
+```
+A mouse looking out from the entrance of a large domed nest built from shredded
+white and brown paper, only the head and one forepaw visible. The nest should be
+substantial and obviously constructed, filling much of the frame. Soft warm
+lighting, cardboard tube and chew stick visible at the edge. The size of the nest
+is the subject. No hands, no people.
+```
+
+#### rabbit-enrichment.jpg
+```
+Two rabbits side by side in a large outdoor-style run, one grazing and one
+sitting up alert, bodies close together. A generous pile of timothy hay, a
+cardboard tunnel and a low platform in the background. Bright natural daylight,
+open space visible beyond them. The pairing and the space should both read
+clearly. No hands, no people.
+```
+
+#### degu-enrichment.jpg
+```
+Two degus mid-roll in a shallow tray of pale bathing sand, sand visibly kicked up
+around them, one on its side. Tall multi-level cage with solid wooden shelves and
+branches behind. Bright daylight, since degus are diurnal. Warm brown fur against
+pale sand, motion in the dust. No hands, no people.
+```
+
+#### hedgehog-enrichment.jpg
+```
+An African pygmy hedgehog running on a large solid-surface wheel at night, spines
+flattened and legs mid-stride, wheel showing motion blur. A fleece hide and
+snuggle sack visible beside it on a deep-floored enclosure. Warm low lighting
+suited to a nocturnal animal, shallow depth of field. The wheel in use is the
+subject. No hands, no people.
+```
+
+#### sugar-glider-enrichment.jpg
+```
+Two sugar gliders on a branch high in a tall cage at night, one gripping vertical
+and one reaching across a gap, large dark eyes catching the light. A hanging
+fleece pouch and further branches at varied heights behind them. Cool dim
+lighting, grey fur with the dark dorsal stripe visible. Height and the pair both
+have to read. No hands, no people.
+```
+
+#### flying-squirrel-enrichment.jpg
+```
+A southern flying squirrel clinging to a vertical branch near the top of a tall
+cage at night, body flattened and huge dark eyes forward, loose skin of the
+patagium visible along the flank. Branches and ropes spanning gaps behind it, a
+nest box mounted high. Cool dim night lighting, soft grey-brown fur. The gliding
+membrane should be visible. No hands, no people.
+```
+
+### Enrichment guides, batch 9 (2026-10-30 to 10-31)
+
+Birds. Same rules: 3:2 at 1168x784, bird mid-behavior, show the enrichment being
+used rather than the cage standing empty.
+
+#### cockatoo-enrichment.jpg
+```
+A sulphur-crested cockatoo gripping a large wooden foraging toy with one foot and
+working it apart with its beak, crest partly raised, wood fragments scattered
+below. Heavy-gauge cage bars and further shredded toys behind. Bright warm
+lighting, white plumage against darker background. Destruction in progress is the
+subject. No hands, no people.
+```
+
+#### canary-enrichment.jpg
+```
+A yellow canary caught in mid-flight between two perches at opposite ends of a
+long flight cage, wings spread, open flight path visible through the frame.
+Natural branch perches of varied thickness at the ends, shallow bath below.
+Bright clean daylight, shallow depth of field. The flight distance is the point of
+the composition. No hands, no people.
+```
+
+#### zebra-finch-enrichment.jpg
+```
+A pair of zebra finches perched close together on a natural branch, the male with
+orange cheek patches and barred throat, the female plainer, one holding a strand
+of grass in its beak. Long flight cage with clear open span behind them. Bright
+warm daylight, shallow depth of field on the pair. The closeness of the two birds
+is the subject. No hands, no people.
+```
+
+#### conure-enrichment.jpg
+```
+A green cheek conure hanging upside down from a hanging foraging toy, one foot
+gripping, beak working at a wrapped paper parcel, shredded paper below. Colourful
+small parrot toys and a rope perch around it. Bright warm lighting, green and
+maroon plumage. Active problem-solving posture. No hands, no people.
+```
+
+#### quaker-parakeet-enrichment.jpg
+```
+A quaker parakeet holding a willow strip in its beak and pushing it into the cage
+bars, several strips already woven into place around it, more natural twigs and
+seagrass scattered on the perch. Bright daylight, grey chest and green back
+clearly visible. The weaving in progress is the whole photo, and it should look
+deliberate rather than accidental. No hands, no people.
+```
+
+#### parrotlet-enrichment.jpg
+```
+A small green parrotlet gripping a hanging sola ball forage toy with one foot,
+beak buried in it, body angled sideways. Cuttlebone and varied natural branch
+perches in the background, cage bars close-spaced. Bright warm lighting, shallow
+depth of field. Scale should read small, the attitude should not. No hands, no
+people.
+```
+
+### Enrichment guides, batch 10 (2026-11-01 to 11-02)
+
+Invertebrates. Same rules: 3:2 at 1168x784, animal mid-behavior, show the
+enrichment being used rather than the enclosure standing empty. The arachnid and
+insect shots should be sharp macro work, the shrimp shots clean underwater macro.
+
+#### tarantula-enrichment.jpg
+```
+A Brazilian black tarantula at the mouth of a burrow it has dug in deep substrate,
+front legs out on the surface and the rest of the body still inside, silk webbing
+visible around the entrance. Cork bark laid nearby, shallow water dish at the
+edge. Warm low lighting, velvety black setae catching a highlight. Macro, shallow
+depth of field on the front legs. No hands, no people.
+```
+
+#### emperor-scorpion-enrichment.jpg
+```
+A large glossy black emperor scorpion emerging from under a piece of cork bark in
+deep damp substrate, pincers forward and tail arched low. Visible humidity on the
+substrate, more cork hides in the background. Warm dim lighting suited to a
+nocturnal animal, macro with shallow depth of field on the pincers. No hands, no
+people.
+```
+
+#### praying-mantis-enrichment.jpg
+```
+A green praying mantis hanging upside down from mesh at the top of a tall
+enclosure, body fully extended downward, clear empty vertical space beneath it.
+Thin twigs and foliage lower in the frame, well clear of the drop. Bright clean
+lighting, macro on the head and forelimbs. The vertical clearance below the animal
+is the point of the composition. No hands, no people.
+```
+
+#### stick-insect-enrichment.jpg
+```
+A stick insect hanging from a fresh bramble stem in a tall mesh enclosure, mid-
+feed with a leaf edge visibly notched where it has been eating. Cut stems standing
+in a covered water container below, more fresh foliage around. Soft green natural
+light, macro, shallow depth of field on the head. Fresh living plant is the
+subject. No hands, no people.
+```
+
+#### giant-millipede-enrichment.jpg
+```
+A large dark giant millipede half buried in deep leaf litter and crumbling rotting
+hardwood, front third of the body out and antennae forward, segments and legs
+clearly visible. A cuttlebone resting on the substrate nearby. Damp earthy palette,
+soft diffuse lighting, macro. Substrate depth has to read clearly in the frame.
+No hands, no people.
+```
+
+#### cherry-shrimp-enrichment.jpg
+```
+Several bright red cherry shrimp grazing across a clump of green moss growing on
+driftwood, legs actively picking at the surface, one shrimp on a fallen leaf below.
+Clear planted freshwater aquarium behind. Bright clean underwater macro, shallow
+depth of field, strong red against green. Grazing in progress, not shrimp sitting
+still. No hands, no people.
+```
+
+#### amano-shrimp-enrichment.jpg
+```
+A large translucent amano shrimp gripping a sinking wafer on a piece of driftwood,
+both front claws working at it, body angled over the food. Planted aquarium
+background, a second shrimp approaching. Clean underwater macro, shallow depth of
+field on the claws. The animal actively feeding is the point. No hands, no people.
+```
+
+#### ghost-shrimp-enrichment.jpg
+```
+A translucent ghost shrimp picking through brown leaf litter on an aquarium floor,
+internal organs faintly visible through the shell, antennae extended. Dense moss
+and planting behind providing cover. Soft diffuse underwater lighting, clean macro,
+shallow depth of field. The transparency should read clearly against the darker
+leaf litter. No hands, no people.
+```
+
+### Enrichment guides, batch 11 (2026-11-03 to 11-05)
+
+Fish. Same rules: 3:2 at 1168x784, fish mid-behavior, show the enrichment being
+used rather than the tank standing empty. Clean underwater photography, no
+distracting equipment in frame unless the article is about it.
+
+#### neon-tetra-enrichment.jpg
+```
+A tight shoal of a dozen neon tetras moving together through the open middle of a
+densely planted aquarium, all facing the same way, blue and red stripes catching
+the light. Dense planting at the sides and back, tannin-tinted water, driftwood
+below. Soft subdued lighting rather than a bright tank. The size and cohesion of
+the group is the subject. No hands, no people.
+```
+
+#### angelfish-enrichment.jpg
+```
+A tall silver and black angelfish turning between vertical plant stems in a deep
+planted aquarium, long trailing fins fully extended, body upright and filling the
+vertical frame. Upright driftwood behind, open water to one side. Soft clean
+lighting. The height of the fish and the height of the tank should both read. No
+hands, no people.
+```
+
+#### zebra-danio-enrichment.jpg
+```
+A group of zebra danios in fast motion along the length of a long planted
+aquarium, bodies streaked with horizontal blue stripes, slight motion blur on the
+tails. Planting at the sides and back with a clear open lane through the middle.
+Bright clean lighting. Speed and horizontal distance are the subject. No hands, no
+people.
+```
+
+#### guppy-enrichment.jpg
+```
+Several female guppies resting among dense planting and floating plant roots, with
+one brightly coloured male displaying at the edge of frame, clearly separated from
+them by foliage. Soft warm lighting, planted freshwater aquarium. The cover
+between the females and the male is the point of the composition. No hands, no
+people.
+```
+
+#### corydoras-catfish-enrichment.jpg
+```
+A group of five or six corydoras catfish working a bed of fine pale sand, several
+with snouts buried and barbels spread, sand slightly disturbed around them. Broad
+plant leaves and driftwood behind. Bright clean lighting, shallow depth of field on
+the front fish. Sifting in progress, not fish sitting still. No hands, no people.
+```
+
+#### cardinal-tetra-enrichment.jpg
+```
+A shoal of cardinal tetras in tannin-stained tea-coloured water among submerged
+branches and brown leaf litter, the full-length red stripe glowing against the dark
+background. Dim shaded lighting, blackwater aesthetic, dense planting behind. The
+water colour is as much the subject as the fish. No hands, no people.
+```
+
+#### molly-enrichment.jpg
+```
+A black molly grazing algae from the surface of a large piece of driftwood, mouth
+against the wood, body angled down. Planted aquarium behind with more grazeable
+surfaces, a second molly working a plant leaf. Bright clean lighting. Grazing in
+progress is the subject. No hands, no people.
+```
+
+#### platy-enrichment.jpg
+```
+A group of orange and red platies among dense planting near the surface of a
+planted aquarium, spread across the frame rather than clustered, floating plant
+roots hanging down. Warm bright lighting, healthy green planting. A well-stocked
+ordinary tank done properly. No hands, no people.
+```
+
+#### swordtail-enrichment.jpg
+```
+A male swordtail with a long sword extension swimming through open water in a
+long planted tank, females visible further back among planting. Clear horizontal
+distance in the frame, planting breaking up the background. Bright clean lighting,
+shallow depth of field on the male. No hands, no people.
+```
+
+#### bristlenose-pleco-enrichment.jpg
+```
+A bristlenose pleco clamped to the surface of a large piece of driftwood, mouth
+rasping, bristles on the snout clearly visible, rasping marks on the wood. Dimly
+lit planted aquarium, cave visible in the background. Warm low lighting suited to
+a nocturnal fish, macro detail on the snout. No hands, no people.
+```
+
+#### discus-enrichment.jpg
+```
+A group of five or six discus hanging together in open water among tall plant
+stems and vertical driftwood, bodies broad and disc-shaped, patterns clearly
+visible. Dark background, soft even lighting, no bright hotspots. Calm and settled
+rather than darting. The group is the subject. No hands, no people.
+```
+
+#### oscar-fish-enrichment.jpg
+```
+A large oscar pushing substrate around the base of a piece of driftwood with its
+mouth, sand visibly disturbed and clouding slightly, a displaced stone nearby.
+Large sparsely aquascaped tank behind. Warm lighting, mottled orange and black
+markings. Active rearranging is the subject, not a fish posing. No hands, no
+people.
+```
+
+#### koi-enrichment.jpg
+```
+Several large koi rising together toward the surface of a deep planted pond,
+viewed slightly from above at an angle, white, orange and black patterns clear
+through the water. Depth visible below them, pond planting at the margins,
+dappled outdoor daylight. The size of the fish and the depth of the pond should
+both read. No hands, no people.
+```
+
+### Enrichment guides, batch 12 (2026-11-06 to 11-08)
+
+Dogs and cats, the last batch. Same rules: 3:2 at 1168x784, animal mid-behavior,
+show the enrichment being used rather than the product sitting there. These are
+the highest-traffic pages on the site, so the photography should be the most
+polished of the set.
+
+#### dog-enrichment.jpg
+```
+A dog nose-down working a scent trail through long grass, ears forward, tail
+level, whole body committed to following something. Open field, low golden
+afternoon light, shallow depth of field on the muzzle. Mixed-breed or unremarkable
+breed so it reads as any dog. The concentration is the subject. No hands, no
+people, no lead visible.
+```
+
+#### cat-enrichment.jpg
+```
+A cat mid-pounce on a wand toy, front paws off the ground and both aimed at the
+toy, body fully extended. A tall cat tree and a scratching post visible in the
+background, plus a puzzle feeder on the floor. Bright warm domestic lighting,
+shallow depth of field on the cat. Full predatory posture, not a cat batting
+idly. No hands, no people, the wand toy end only.
+```
+
+#### border-collie-enrichment.jpg
+```
+A black and white border collie in the classic low crouch with its eye locked on
+something just out of frame, ears forward, body coiled and still. Open grass,
+crisp daylight, shallow depth of field. The intensity of the stare is the whole
+photo. No hands, no people, no sheep in frame.
+```
+
+#### beagle-enrichment.jpg
+```
+A beagle nose-down and fully absorbed in a scent trail across grass, ears hanging
+forward around the muzzle, tail up. Tricolour markings, bright natural daylight,
+low camera angle at the dog's head height. Shallow depth of field on the nose. No
+hands, no people, no lead.
+```
+
+#### labrador-enrichment.jpg
+```
+A labrador working at a puzzle feeder on a kitchen floor, nose pushing a slider,
+one paw resting on the edge of the toy, completely absorbed. Warm indoor light,
+shallow depth of field on the face. Lean and fit rather than heavy. Problem
+solving in progress. No hands, no people.
+```
+
+#### siberian-husky-enrichment.jpg
+```
+A siberian husky leaning hard into a pulling harness on a long line across open
+ground, body low and driving forward, mouth open. Cool overcast daylight, winter
+or early spring landscape. Shot from the side so the pulling posture reads
+clearly. No hands, no people, the line trailing out of frame.
+```
+
+#### french-bulldog-enrichment.jpg
+```
+A french bulldog working a snuffle mat on a cool tiled floor indoors, nose buried
+in the fabric strips, bat ears up. Calm indoor lighting, shallow depth of field on
+the face. Relaxed and settled rather than exerting. The low-effort mental work is
+the point. No hands, no people.
+```
+
+#### bulldog-enrichment.jpg
+```
+An english bulldog lying down on a cool tiled floor working a puzzle feeder with
+one paw, heavy body settled and relaxed, breathing easy. Soft indoor lighting,
+shallow depth of field on the face and the toy. Everything at floor level, nothing
+requiring effort. No hands, no people.
+```
+
+#### dachshund-enrichment.jpg
+```
+A dachshund digging enthusiastically into a sandpit, front paws buried and sand
+flying, tail up, nose down. Outdoor daylight, contained pit with a wooden edge
+visible. Shallow depth of field, motion in the sand. Four feet on the ground and
+clearly delighted. No hands, no people.
+```
+
+#### bengal-cat-enrichment.jpg
+```
+A spotted bengal cat mid-leap between two high wall shelves, body fully extended
+in the air, rosetted coat catching the light. Domestic room below with more
+shelves forming a route across the wall. Bright daylight, fast shutter freezing
+the jump. The vertical route should be readable in the background. No hands, no
+people.
+```
+
+#### sphynx-cat-enrichment.jpg
+```
+A sphynx cat curled contentedly inside an enclosed heated bed on a high carpeted
+shelf, only the head and one forepaw out, eyes half closed. Wrinkled skin and
+large ears clearly visible. Warm low lighting, cosy domestic setting. Warmth and
+height in the same frame is the point. No hands, no people.
+```
+
+#### persian-cat-enrichment.jpg
+```
+A long-haired persian cat reaching up from a low padded platform to bat at a wand
+toy held just above it, paw extended, flat face and large eyes clear. Low stepped
+cat furniture around it, warm domestic lighting, shallow depth of field. Engaged
+and playing, but low to the ground and unhurried. No hands, no people, the toy end
+only.
+```

@@ -5,7 +5,7 @@ import { slugify } from '@/lib/utils/slugify';
 // Scans the already-rendered content DOM for headings instead of parsing
 // each content source (MDX component, Sanity portable text, raw string)
 // separately - works uniformly regardless of where the post came from.
-export default function TableOfContents({ contentRef, watch, skipText, collapsible = false }) {
+export default function TableOfContents({ contentRef, watch, skipText, collapsible = false, expectHeadings = true }) {
   const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
@@ -78,7 +78,17 @@ export default function TableOfContents({ contentRef, watch, skipText, collapsib
 
   // Below this, it's not worth a nav card - e.g. fact-list articles that only
   // have the trailing Sources heading(s) and no real section structure.
-  if (headings.length < 3) return null;
+  //
+  // The collapsible (mobile, above-the-article) instance cannot wait for the
+  // scan to make that call: the scan runs after mount, so the card used to
+  // appear after hydration and push the hero image and the whole article
+  // down, which was most of the measured layout shift on guide and article
+  // pages. It now renders its closed shell from the first render (identical
+  // in the prerender and on hydration, since the effect is skipped in both)
+  // and fills the links in after the scan, inside the closed <details>, where
+  // they take no space. The caller says whether a card is expected at all
+  // (Blog.jsx from the sync-time heading count; guides always have one).
+  if (collapsible ? !expectHeadings : headings.length < 3) return null;
 
   const handleClick = (e, id) => {
     e.preventDefault();
