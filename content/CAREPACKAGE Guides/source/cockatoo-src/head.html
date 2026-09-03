@@ -34,7 +34,7 @@ body{background:#DCD5C8;}
   width:8.5in;
   height:11in;
   background:var(--paper);
-  padding:0.62in 0.66in 0.55in 0.66in;
+  padding:0.56in 0.60in 0.50in 0.60in;
   font-family:'Inter',sans-serif;
   color:var(--ink);
   break-after:page;
@@ -43,28 +43,28 @@ body{background:#DCD5C8;}
 .page:last-child{break-after:auto;}
 h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;color:var(--ink);}
 .eyebrow{
-  font-family:'Inter',sans-serif;font-weight:700;font-size:9.5pt;letter-spacing:0.14em;
-  text-transform:uppercase;color:var(--accent);margin-bottom:4pt;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:9pt;letter-spacing:0.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:3pt;
 }
 .pagefoot{
-  position:absolute;bottom:0.3in;left:0.66in;right:0.66in;
+  position:absolute;bottom:0.28in;left:0.60in;right:0.60in;
   display:flex;justify-content:space-between;align-items:center;
-  font-size:8pt;color:var(--faint);border-top:0.75pt solid var(--line);padding-top:6pt;
+  font-size:8pt;color:var(--faint);border-top:0.75pt solid var(--line);padding-top:5pt;
 }
 .pagefoot .brand{font-family:'Fraunces',serif;font-weight:600;color:var(--faint);}
-p{line-height:1.40;font-size:10.1pt;color:var(--ink);}
+p{line-height:1.36;font-size:9.9pt;color:var(--ink);}
 .muted{color:var(--muted);}
-ul,ol{padding-left:16pt;margin-top:3pt;}
-li{line-height:1.40;font-size:10.1pt;margin-bottom:2pt;}
-table{width:100%;border-collapse:collapse;margin-top:6pt;font-size:9.6pt;}
+ul,ol{padding-left:15pt;margin-top:2.5pt;}
+li{line-height:1.36;font-size:9.9pt;margin-bottom:1.6pt;}
+table{width:100%;border-collapse:collapse;margin-top:4.5pt;font-size:9.4pt;}
 th{
   text-align:left;background:var(--accent-tint);color:var(--accent-dark);
-  font-family:'Inter',sans-serif;font-weight:700;font-size:8.6pt;letter-spacing:0.04em;
-  text-transform:uppercase;padding:5pt 8pt;
+  font-family:'Inter',sans-serif;font-weight:700;font-size:8.4pt;letter-spacing:0.04em;
+  text-transform:uppercase;padding:4.2pt 7pt;
 }
-td{padding:4.5pt 8pt;border-bottom:0.75pt solid var(--line);vertical-align:top;}
+td{padding:3.7pt 7pt;border-bottom:0.75pt solid var(--line);vertical-align:top;}
 tr:last-child td{border-bottom:none;}
-.callout{border-radius:8pt;padding:8pt 12pt;margin:7pt 0;border-left:3.5pt solid;font-size:10pt;line-height:1.40;}
+.callout{border-radius:7pt;padding:6.5pt 10.5pt;margin:5pt 0;border-left:3.5pt solid;font-size:9.6pt;line-height:1.36;}
 .callout .label{font-family:'Inter',sans-serif;font-weight:800;font-size:8.6pt;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3pt;display:block;}
 .callout.never{background:var(--danger-tint);border-color:var(--danger);}
 .callout.never .label{color:var(--danger);}
@@ -74,23 +74,25 @@ tr:last-child td{border-bottom:none;}
 .callout.info .label{color:var(--info);}
 .callout.warn{background:var(--warn-tint);border-color:var(--warn);}
 .callout.warn .label{color:var(--warn);}
-.section-title{font-size:19pt;margin-bottom:2pt;}
-.section-sub{font-size:9.7pt;color:var(--muted);margin-bottom:8pt;}
+.section-title{font-size:18pt;margin-bottom:1.5pt;}
+.section-sub{font-size:9.4pt;color:var(--muted);margin-bottom:5.5pt;}
 .chip{
   display:inline-block;font-size:8.3pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;
   background:var(--accent-tint);color:var(--accent-dark);border-radius:20pt;padding:3pt 10pt;margin-right:5pt;
 }
-.check-item{display:flex;gap:8pt;align-items:flex-start;margin-bottom:4pt;font-size:9.8pt;line-height:1.36;}
+.check-item{display:flex;gap:7pt;align-items:flex-start;margin-bottom:2.8pt;font-size:9.5pt;line-height:1.30;}
 .box{width:10pt;height:10pt;border:1.4pt solid var(--faint);border-radius:2.5pt;flex-shrink:0;margin-top:2pt;}
 .two-col{display:flex;gap:24pt;}
 .col{flex:1;}
 .divider{height:0.75pt;background:var(--line);margin:12pt 0;}
-h2.h{font-size:13pt;margin:9pt 0 3pt 0;}
-h3.h{font-size:11pt;margin:8pt 0 3pt 0;color:var(--accent-dark);}
+h2.h{font-size:12.4pt;margin:6.5pt 0 2pt 0;}
+h3.h{font-size:10.6pt;margin:6.5pt 0 2.5pt 0;color:var(--accent-dark);}
 .small{font-size:8.8pt;color:var(--faint);}
 .toc-label{font-family:'Inter',sans-serif;font-weight:700;font-size:8.8pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-top:4.5pt;margin-bottom:1pt;border-bottom:1pt solid var(--line);padding-bottom:2.4pt;}
 .toc-label:first-of-type{margin-top:10pt;}
-.toc table{margin-top:0;}
+.toc{column-count:2;column-gap:20pt;}
+.toc table{margin-top:0;break-inside:avoid;}
+.toc-label{break-after:avoid;}
 .toc td{padding:0.9pt 0;border-bottom:none;font-size:9pt;line-height:1.25;}
 
 /* t3 additions */
@@ -99,16 +101,16 @@ h3.h{font-size:11pt;margin:8pt 0 3pt 0;color:var(--accent-dark);}
 .tier.occasional{background:var(--accent-tint);color:var(--accent-dark);}
 .tier.rare{background:var(--warn-tint);color:var(--warn);}
 .tier.never{background:var(--danger-tint);color:var(--danger);}
-table.dense{font-size:8.7pt;margin-top:5pt;}
-table.dense td{padding:2.6pt 7pt;line-height:1.30;}
-table.dense th{padding:5pt 7pt;}
-table.log td{height:25pt;}
+table.dense{font-size:8.5pt;margin-top:4pt;}
+table.dense td{padding:2.0pt 6pt;line-height:1.24;}
+table.dense th{padding:4pt 6pt;}
+table.log td{height:23pt;}
 table.log.tall td{height:30pt;}
-.fill{display:flex;gap:8pt;align-items:flex-end;margin:8pt 0;font-size:9.8pt;}
+.fill{display:flex;gap:8pt;align-items:flex-end;margin:7pt 0;font-size:9.6pt;}
 .fill .lab{color:var(--muted);font-weight:600;white-space:nowrap;}
 .fill .line{flex:1;border-bottom:0.9pt solid var(--faint);height:13pt;}
-.cards{display:flex;gap:10pt;margin-top:8pt;}
-.card{flex:1;border:0.9pt solid var(--line);border-radius:8pt;padding:9pt 11pt;background:var(--cream);}
+.cards{display:flex;gap:10pt;margin-top:6pt;}
+.card{flex:1;border:0.9pt solid var(--line);border-radius:8pt;padding:8pt 10pt;background:var(--cream);}
 .card h4{font-family:'Inter',sans-serif;font-size:8.6pt;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent-dark);margin-bottom:4pt;}
 .card p{font-size:9.3pt;line-height:1.45;}
 .compact p,.compact li{font-size:9.6pt;}
