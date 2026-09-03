@@ -437,6 +437,11 @@ footer to match, per step 8 of the build workflow.
    - **Any number in the PDF with no site source at all**, because that is the copy no
      one can fact-check against the site later.
 
+   Run the reach test on every row before you write it, and read the existing blocks
+   for your class first. See **Before logging a row: how far does it reach?** at the top
+   of that section. A gap another package already logged gets its row extended, never a
+   second row.
+
 13. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
 
 
@@ -522,14 +527,50 @@ site doesn't" into a content plan.
 How to use it: pick off the **cross-species** rows first, because one article closes the
 same gap in every future package.
 
-**A cross-species row is one multi-purpose article, not one per animal.** Two packages
-that hit the same gap will each log it in their own block, in their own words, because
-each was written while building a different animal. That is duplicate bookkeeping, not
-duplicate work. Before writing anything, read every block for the same class and merge
-the rows that describe one article: write it once, covering every species that needs it,
-then cross the row off in *both* blocks and name the slug in each. The aquatic rows below
-are annotated where this applies. `reptile-emergency-plan-guide.mdx` is the worked
-example of doing it right, one article wired into 31 reptile guide ids.
+### Before logging a row: how far does it reach?
+
+**Every gap gets a reach test before it gets written down.** Skipping it is how the fish
+set came to look like four articles when it needed two: Betta and Goldfish each logged
+cycling and each logged power outages, from their own build, in their own words. That is
+duplicate bookkeeping, not duplicate work, and it is invisible until someone reads both
+blocks side by side.
+
+Two questions, in order, and the second is the one that gets skipped:
+
+1. **Which animals hit this same gap?** Answer with the widest honest set, not the animal
+   in front of you. Universal (every pet on the site), one class (every fish, every
+   reptile, every small mammal), a sub-group (snakes, New World tarantulas), or genuinely
+   this species alone. Write that set into the Scope column.
+2. **Would one article actually serve all of them, or does the advice change?** A shared
+   topic is not a shared article. This is the question that decides whether you write one
+   guide or several, and it is answered by the content, not the title.
+
+Cycling an aquarium is identical for a betta and a goldfish, so it is one article. Power
+outages are a universal *topic* where the advice inverts by class, which is why
+`reptile-emergency-plan-guide.mdx` is noted as **not transferring** in three separate
+blocks below: it is temperature-first, and for a rabbit the priority flips to feeding,
+because a rabbit that stops eating is in more danger than a cold one. Same topic, three
+articles. Getting this backwards is worse than duplicating: one article stretched over
+animals it does not fit gives every one of them slightly wrong advice.
+
+**Then check the log before adding your row.** Read every existing block for the same
+class and the universal rows in all of them. If your gap is already there, do not add a
+second row: extend the existing one with your package's page numbers and anything your
+animal needs that the original missed. If it is new but reaches past your animal, say so
+in the Scope column so the next build finds it.
+
+When you write a merged article, cross the row off in *every* block that logged it and
+name the slug in each. The aquatic rows below are annotated where this applies.
+`reptile-emergency-plan-guide.mdx` is the worked example of a correctly scoped one: a
+single article wired into 31 reptile guide ids, deliberately not stretched to mammals or
+fish.
+
+A practical consequence for naming. Scope decides the slug, and the slug is hard to
+change once it is wired into `RELATED_ARTICLES`. A universal or class-wide article should
+not carry a species prefix, or the next animal that needs it will look like it has no
+article and get logged again. `reptile-emergency-plan-guide` and
+`gut-loading-feeder-insects-guide` are the right shape. `bearded-dragon-power-outage-guide`
+would have been the wrong one.
 
 Note on version numbers: the four packages built on the v3 template kept their old
 numbers at first and were renumbered to 3.0 in September 2026. Block headings carry the
