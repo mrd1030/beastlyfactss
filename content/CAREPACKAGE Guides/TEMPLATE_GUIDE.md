@@ -249,7 +249,7 @@ further down. Page counts below are what shipped, not estimates.
 | Aquatic | Betta 2.1, Goldfish 2.0 | 36 to 39 | Water systems replace heat systems |
 | Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
-| Bird | none yet | proposed | See below, this row is a proposal |
+| Bird | Lovebird 2.0 | 36 to 39 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
 
 **Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
 and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
@@ -287,26 +287,54 @@ not have. Eggs and egg binding, and reading stool, both drop. Expect 40 to 43, e
 husbandry to be short and health to lean toward prevention, because veterinary care for
 invertebrates barely exists.
 
-**Bird (proposed, not yet built).** Nothing here has been tested against a real build, so
-treat it as a starting hypothesis and correct it from what the first bird package
-actually needs. Page 7 survives but changes meaning, from thermostats to full-spectrum
-lighting, photoperiod, and the 10 to 12 hour sleep requirement (`uvb-lighting-complete-guide.mdx`
-covers birds, 18 mentions). Page 10 (feeder insects) drops. Pages 11 and 12 become pellet
-versus seed, safe fresh foods, and a never list where avocado, chocolate and onion carry
-real weight. Page 15 becomes chronic egg laying rather than a single clutch, which is the
-actual companion bird problem. Page 20 becomes molt and behavior instead of brumation and
-shed. Expect roughly 32 to 36 by analogy with the other classes, and expect the health
-pages to source well: the site is strong here (PBFD in 9 files, psittacosis in 7, feather
-plucking in 18, egg binding in 8).
+**Bird.** Written from the Lovebird 2.0 build, the first bird package on this template.
+It came out at 38 pages, not the 32 to 36 this note used to predict, and the prediction was
+low for reasons that will repeat on every bird: **take 36 to 39 for a small parrot.**
+
+What was right in the original hypothesis: page 7 survives and changes meaning, from
+thermostats to light, photoperiod and the 10 to 12 hour sleep requirement. Page 10, feeder
+insects, drops. Pages 11 and 12 become pellet versus seed, safe fresh foods, and a never
+list where avocado, onion and chocolate carry real weight. Page 15 becomes chronic egg
+laying rather than a single clutch. Page 20 becomes molt and behavior instead of brumation
+and shed. The substrate page collapses to two sentences about a paper liner, and the
+Salmonella callout goes.
+
+What the hypothesis missed, and where the extra pages went:
+
+- **Household hazards and bird-proofing is a mandatory page, and it is the most valuable
+  page in the package.** PTFE gas from an overheated nonstick pan kills at around 536&deg;F
+  (280&deg;C) with acute death often the only sign, and no other class in this series has a
+  hazard that is invisible, odorless, and routine in a normal kitchen. Aerosols, candles,
+  smoke, zinc and lead in cage hardware, and a cat's mouth all belong on it. Nothing in the
+  reptile skeleton asks for this page.
+- **Light and sleep is a health page, not a lighting note.** Day length is the main lever on
+  hormonal behavior, so the photoperiod figure on page 7 is the same figure the egg pages
+  depend on. Print the routine number and the intervention number: 10 to 12 hours of
+  darkness normally, and light cut to 8 hours a day to break a laying cycle.
+- **The social-structure decision needs its own page** for any bird kept singly or in pairs.
+  For a lovebird it is one bird or two, and it decides whether the buyer gets a tame pet or
+  an aviary pair. It is the page a buyer picks a species-specific guide for.
+- **Wing clipping needs a page.** Every new owner is asked about it in the first week,
+  usually by whoever is selling the trim, and the site covers it nowhere.
+- **The egg material wants two pages, not one**, for any hen-laying species. Chronic laying
+  is a management protocol run over weeks; egg binding is a decision made in ten minutes.
+  Budgerigars, cockatiels and lovebirds are the three species named most often for both.
+
+Expect the health pages to source well, because the site is strong here (PBFD in 9 files,
+psittacosis in 7, feather plucking in 18, egg binding in 8), and expect the husbandry pages
+to source badly, because bird husbandry on the site is thin outside the tank-setup guides.
+The 38-page count was a measured floor, not a choice: see `notes/lovebird-v3-notes.md` for
+the per-page free space and the ranked cut list.
 
 Two things a bird build will hit that no other class does. Five of ten birds
 (budgie, canary, conure, lovebird, quaker parakeet) have **no feeding guide at all**, so
 the diet pages source from nothing for those species. And `guides/birds.js` carries a
 "rough starting ranges, not verified current pricing" comment on its cost block, which
 pages 4 and 24 both draw from, so bird costs need checking against the MDX cost guide
-rather than trusting the JS. Budgie and lovebird already have pre-t3 packages at 20 and
-21 pages, so those are rebuilds rather than new builds. Cockatiel is the cleanest first
-bird: seven articles including a feeding guide.
+rather than trusting the JS. Budgie still has a pre-t3 package at 20 pages, so that one is a rebuild
+rather than a new build; lovebird was the rebuild that produced this row. Cockatiel is the
+cleanest new bird build: seven articles including a feeding guide, and it shares the
+chronic-laying problem, so pages 17 and 18 of the lovebird package transfer as a shape.
 
 Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
 distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
@@ -945,3 +973,81 @@ praziquantel and diflubenzuron doses on page 24 (those are from Merck, not from 
 itemized budget on page 29, which sums to $208 to $500 of equipment against the JS
 block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
 `fish.js` so the two stop drifting.
+
+### Lovebird 2.0, t3 (Sep 2026)
+
+The first bird package on the t3 template, and a rebuild rather than a new build: 1.0 was
+21 pages on the pre-t3 layout. It came out at 38 pages. The class adaptation note above was
+rewritten from this build, and `notes/lovebird-v3-notes.md` carries the per-page free space,
+seven undrafted page ideas, and a ranked cut list.
+
+The headline finding for the whole bird set: **the health pages source well and the
+husbandry pages source badly.** PBFD, psittacosis, egg binding and feather plucking are all
+in the site's articles. Almost everything a keeper actually does day to day, the diet split,
+sleep, hazards, quarantine, droppings, clipping, is not, which is why nine of the rows below
+are cross-species rather than lovebird-specific.
+
+Already covered, do not rewrite: `lovebird-tank-setup-guide.mdx` carries cage size, the
+3/8 to 5/8 in bar spacing safety figure, the powder-coated and stainless materials rule, the
+65 to 80&deg;F range, the no-grit point, and the full case against nest boxes and happy huts.
+`lovebird-handling-guide.mdx` carries the territorial temperament, the one-versus-two
+decision, the cage-aggression fixes and the 4 to 8 week grief figure for a separated pair.
+`lovebird-enrichment-guide.mdx` carries the 60 to 80% foraging figure, contra-freeloading,
+and the 3 to 5 toy weekly rotation. `lovebird-cost-guide.mdx` carries the bird price tiers
+and the vet figures. `lovebird-health-issues-guide.mdx` names PBFD, chronic laying and egg
+binding, plucking, respiratory disease and polyomavirus, though at a paragraph each rather
+than at package depth. Note `reptile-emergency-plan-guide.mdx` does **not** transfer: it is
+temperature-first, and a bird outage is a fumes problem, since what endangers the bird is
+what people light for heat and light, not the cold.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Household hazards for pet birds | 8 | Cross-species (birds) | **The single highest-value article the bird set could have, and there is nothing on it anywhere.** A bird's respiratory system makes fumes that merely irritate a person lethal to it. PTFE gas off overheated nonstick cookware at about 536&deg;F (280&deg;C), with acute death often the only sign; irons, self-cleaning ovens, some heaters and hair dryers as the other PTFE sources; aerosols, candles, plug-ins and smoke; zinc from galvanized hardware and lead from curtain weights and mirror backings; and why a cat's mouth is a same-day vet visit with no visible wound. Serves every one of the ten birds on the site |
+| Photoperiod, sleep and hormonal management | 7, 17, 24 | Cross-species (birds) | Nothing, and it is the lever the whole hormonal section turns on. 10 to 12 hours of uninterrupted darkness as routine, light cut to 8 hours a day to break a laying cycle, why a lit living room at midnight is a long summer day to a bird, and the link between sleep debt and feather plucking. `uvb-lighting-complete-guide.mdx` mentions birds 18 times but is a reptile article |
+| Converting a seed eater to pellets | 10 | Cross-species (birds) | Nothing, and it is one of the two or three things every new small-parrot owner has to do. Both VCA schedules (75/25 to 50/50 to 25/75 at 3-day steps, or 90/10 tapering 10% a day to day 10), why you never starve a bird onto pellets, weighing through the change, and the tricks that work. Serves all ten birds |
+| Quarantining a new bird | 20, 29 | Cross-species (birds) | Nothing. 30 days minimum and 45 to 60 in a multi-bird house, a separate room ideally off the same air, separate dishes and tools, established birds first and the new one last, and the PCR panel for PBFD, polyomavirus and psittacosis. The reptile and fish sets logged their own quarantine rows and neither transfers: the pathogens, the airborne route and the test panel are all different |
+| Wing clipping, flighted versus clipped | 15 | Cross-species (birds) | Nothing, and every new owner is asked about it in week one by whoever is selling the trim. Both cases made honestly, blood feathers and why only mature feathers are cut, what a correct trim leaves the bird able to do, that it grows out at the next molt, and that clipping fixes no behavior problem |
+| Reading bird droppings | 25 | Cross-species (birds) | Nothing. The three components (feces, urates, urine), polyuria versus true diarrhea and why the difference matters, the color table, the 20 to 30 minute frequency, and the 24-hour rule. The reptile and fish sets both logged their own version of this row and neither transfers. Cheapest daily health check a bird owner has |
+| Bird power outages, travel and transport | 32 | Cross-species (birds) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. The advice inverts: keep feeding, because a 50 g bird has no reserve, and the danger in an outage is the candles, generators and camping heaters people reach for, not the temperature. Plus carrier versus cage, and never leaving a bird in a parked car |
+| Sexing a monomorphic parrot, weight and body condition | 16 | Cross-species (birds) | Nothing. No reliable external difference in most kept species, DNA testing on blood or a feather as the actual answer, weight as this class's vital sign with a gram scale and a perch, keel scoring 1 to 5, and obesity at roughly 20% over ideal. Note `pet-obesity-body-condition-guide.mdx` does **not** transfer, it is the dog and cat 9-point scale |
+| Molt in companion birds | 24 | Cross-species (birds) | Nothing. Symmetrical loss with new feathers up before old ones drop, pin feathers and sheaths, why a molting bird is quieter and touchier, bathing to help, and the three-way differential against plucking and PBFD that owners get wrong constantly |
+| A lovebird feeding guide, at all | 10, 11, 12 | Lovebird | The species has **no feeding guide**, which is the largest single hole behind this package. Five of the ten birds are in the same position (budgie, canary, conure, lovebird, quaker parakeet). Needs the 75 to 80% pellets and 20 to 40% fresh split, the vegetable and fruit tier charts, the never list, treat portioning, and the no-grit point |
+| Chronic egg laying and egg binding, at package depth | 17, 18 | Cross-species (hen-laying birds) | Expand `lovebird-health-issues-guide.mdx`, not a new URL, and consider a cross-species article: budgerigars, cockatiels and lovebirds are the three named most often. It currently has a paragraph on each. Needs the full trigger list, the do-not-pull-the-clutch point with the 21 to 28 day incubation cycle, the 8-hour photoperiod intervention, the hormone injection and implant options, and the egg-binding sign list in order of appearance |
+| Choosing a bird: hand-raised versus parent-raised, and where from | not in 2.0 | Cross-species (birds) | Proposed, from the build rather than from a grep. `lovebird-cost-guide.mdx` names hand-raised versus parent-raised as the decision that sets how tame the bird becomes, then stops. Nothing covers breeder versus shop versus rescue, what to ask, or what a healthy bird looks like in the cage you are buying it from. Both mammal packages needed their own version of this page; birds need it more, because hand-raising has no mammal equivalent |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the whole hazards page 8, the PTFE ignition temperature included; the 8-hour
+photoperiod intervention on pages 7, 17 and 26; the pellet conversion schedules on page 10;
+the vegetable and fruit tier charts on pages 11 and 12; the 40 to 60 g weight range and the
+keel scoring on page 16; the egg-binding sign and treatment detail on page 18; the 45-day
+doxycycline course on page 21; the quarantine periods on pages 20 and 29; the droppings
+reference table on page 25; and the itemized budget on page 28.
+
+**Source drift found while building.** Four, and the cost one is the worst in the series so
+far.
+
+- **Diet split.** `guides/birds.js` says pellets should be 60 to 70% of the diet. VCA's
+  lovebird feeding page, which is the species-specific veterinary source, says **75 to 80%
+  pellets with fruit and vegetables at 20 to 40%**. The package uses the VCA figures.
+  `birds.js` is worth correcting, and the same 60 to 70% line appears on several other
+  species in that file.
+- **Cost, and it does not add up against itself.** `lovebird-cost-guide.mdx` headlines
+  "roughly $70 to $125 a month," but its own annual table (pellets $70 to $110, vegetables
+  $80 to $130, toys $40 to $70, vet $70 to $120) totals $260 to $430 a year, which is $22 to
+  $36 a month. Its own monthly narrative ($20 to $30 pellets plus $10 to $15 produce) does
+  not reach $70 either. The annual table is the coherent half: a 44 oz bag of small-parrot
+  pellets feeds one 50 g bird for months. Page 28 itemizes to **$25 to $50 a month for one
+  bird and $45 to $90 for a pair**, with the lines summing to the totals. The MDX headline
+  and the FAQ that repeats it both need fixing, and `guides/birds.js` still carries the
+  "rough starting ranges, not verified current pricing" comment on its cost block.
+- **Cage minimum.** The site gives 18&times;18&times;24 in for one bird. VCA's lovebird
+  profile gives 3 ft long by 2 ft wide by 2 ft tall, which is considerably larger. Neither
+  was picked: page 5 prints both, with the smaller as a floor and the larger as the target,
+  and page 38 says why.
+- **A wild lifespan field carrying a captive figure.** `encyclopedia/birds.js` has
+  `bio.wildLifespan: "5-15 years (up to 15-20 years in captivity)"` for the lovebird. That
+  field is the wild figure only, and stuffing the captive range into it is how the captive
+  and wild numbers get mixed up in a package, which this guide has already caught four times
+  in other animals. The captive figure also disagrees with the cost guide and with VCA, which
+  both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
+  Worth splitting that field and picking one captive range across the three files.
