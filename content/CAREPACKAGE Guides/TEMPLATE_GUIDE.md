@@ -81,9 +81,12 @@ retailer or breeder sales pages, AI-generated content farms, and anything with n
 author or organization behind it.
 
 Two more rules that hold whatever the source is. Cite only what you actually opened and
-read, never a figure recalled from memory. And when two credible sources disagree on a
-number, print the range instead of picking a side, and name both on the Sources page so
-a reader can see why it's a range.
+read, never a figure recalled from memory. This governs figures and claims, not topics:
+deciding a package needs a page on wing clipping or PTFE fumes is knowledge work and is
+exactly what you should be doing. Writing the safe temperature onto that page is
+sourcing work. And when two credible sources disagree on a number, print the range
+instead of picking a side, and name both on the Sources page so a reader can see why
+it's a range.
 
 ### Writing site articles for content the site does not have
 
@@ -93,15 +96,39 @@ site where the site has it, then log what it did not have under **Site content g
 package** near the end of this file (build workflow step 11). The articles are separate
 work, picked up when asked, and the log is what turns them into a plan.
 
-How the gaps are found, which is mechanical rather than remembered: the page skeleton is
-fixed, so every page has a defined content requirement before the animal is chosen. Read
-what the site actually holds for that animal (`encyclopedia/{category}.js`,
-`guides/{category}.js`, and every `content/guides/{slug}-*.mdx`), map it onto the page
-list, and the pages left without a source are the gaps. Each one lands in one of three
-places: an existing cross-species article already covers it
+Gaps come from two places, and **both are required**. Neither one finds what the other
+does.
+
+**Derived gaps** are mechanical. The page skeleton is fixed, so every page has a defined
+content requirement before the animal is chosen. Read what the site actually holds for
+that animal (`encyclopedia/{category}.js`, `guides/{category}.js`, and every
+`content/guides/{slug}-*.mdx`), map it onto the page list, and the pages left without a
+source are derived gaps. Each resolves to an existing cross-species article
 (`reptile-emergency-plan-guide`, `reptile-shedding-complete-guide`, the UVB guides), or
-it needs real research against verifiable external sources, or it gets logged. It is
-never filled from memory.
+to research, or to a logged row.
+
+**Proposed gaps come from your own knowledge of the animal, and this is where the
+valuable articles come from.** The site cannot tell you what it is missing, and the
+skeleton only asks for what the last animal needed. So say plainly what a keeper of this
+species has to know that neither one covers. Wing clipping is the worked example: nothing
+in the bird page list asks for it and a grep finds only a glossary definition and two
+Quaker legal mentions, yet it is one of the first real decisions a new bird owner faces.
+No amount of reading the repo surfaces that. Only knowing birds does.
+
+Do this deliberately on every package, not as an afterthought, and put those rows in the
+gap block alongside the derived ones. Species-specific husbandry decisions, the common
+beginner mistakes, the household hazards, and the routine care a care sheet skips are all
+worth proposing.
+
+Two things keep it honest, and they are narrow:
+
+- **Mark which kind a row is.** A derived row can cite its hit count. A proposed row
+  cannot, so label it proposed and say what it is based on. Do not present a proposal as
+  a grep result, and do not claim "zero hits" without actually grepping `content/` and
+  `src/` both, since the glossary and the guides JS carry real coverage the MDX does not.
+- **Proposing a topic is not the same as writing its content.** Name the topic from
+  knowledge, then source every figure, dose, temperature, and claim before it goes into a
+  PDF page or an article. The topic is yours. The numbers are the source's.
 
 Until an article exists, the PDF text is the only copy of those figures, so nothing can
 fact-check them against the site later. That is the actual risk the log tracks, and why
@@ -294,10 +321,20 @@ footer to match, per step 7 of the build workflow.
    has no article for, and that list is the most valuable byproduct of building one: it
    is a ready-made content plan, already filtered to things a paying customer wanted
    enough to read. Add a block for your animal under **Site content gaps by package**
-   below. Do it while the sourcing is fresh, not later. Two things to record and not
-   skip: what you found already covered (so nobody rewrites it), and any number in the
-   PDF that has no site source at all, because that is the copy no one can fact-check
-   against the site later.
+   below. Do it while the sourcing is fresh, not later.
+
+   Four things to record, none of them optional:
+
+   - **Derived gaps**, the pages that found no source in the site's own content.
+   - **Proposed gaps**, the topics a keeper of this species needs that neither the page
+     list nor the site raised. This is a required pass, not a bonus. Ask directly what
+     this animal's owners get wrong, what decisions they face early, and what in a normal
+     house can kill one, then write down whatever the repo does not already answer. The
+     best articles in the log came from here, not from the greps. Label these rows
+     **proposed** so a later reader knows they rest on knowledge rather than a hit count.
+   - **What you found already covered**, so nobody rewrites it.
+   - **Any number in the PDF with no site source at all**, because that is the copy no
+     one can fact-check against the site later.
 
 ## Pre-publish accuracy checks (learned the hard way)
 
