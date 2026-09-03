@@ -150,7 +150,11 @@ async function generateThumbs() {
     for (const input of files) {
       const ext = path.extname(input);
       const baseName = path.basename(input, ext);
-      if (baseName.endsWith('-thumb') || baseName.endsWith('-card') || baseName.endsWith('-card@2x') || baseName.endsWith('-hero') || baseName.endsWith('-hero@2x')) continue;
+      // Only the generated jpg tiers can collide with a source name here: the
+      // -hero tiers are webp-only and collectImages() never picks up webp, so
+      // they need no skip. Beastlypedia's source photos are named *-hero.jpg
+      // and must NOT be skipped (that mistake broke a deploy).
+      if (baseName.endsWith('-thumb') || baseName.endsWith('-card') || baseName.endsWith('-card@2x')) continue;
 
       const base = input.slice(0, -ext.length);
 
@@ -211,7 +215,7 @@ async function generateThumbs() {
     for (const input of collectImages(dir)) {
       const ext = path.extname(input);
       const baseName = path.basename(input, ext);
-      if (/-(thumb|card|card@2x|hero|hero@2x)$/.test(baseName)) continue;
+      if (/-(thumb|card|card@2x)$/.test(baseName)) continue;
       const base = input.slice(0, -ext.length);
       // 800px wide covers the 592-665px desktop slot at DPR 1. The 2x file is
       // capped at 1600 but withoutEnlargement means it is the original's own
