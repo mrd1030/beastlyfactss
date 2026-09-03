@@ -246,3 +246,11 @@ wooden shelf edge, suggesting a quiet autumn evening rather than illness.
 Muted slate and warm wood palette, sharpest on the dragon's face at the
 mouth of the hide, 50mm, f/2.8, 3:2. No text, logos, or brand markings
 anywhere.
+
+### bearded-dragon-eggs-and-egg-binding.jpg
+Photorealistic photograph of an adult female bearded dragon standing beside an
+open plastic lay box filled with damp dark soil and sand on a terrarium floor,
+one small test-dig visible in the substrate near her front feet. Warm
+terracotta light from an overhead basking lamp just out of frame, earthy brown
+and terracotta palette, sharpest on the dragon's face and the lay box rim,
+50mm, f/2.8, 3:2. No text, logos, or brand markings anywhere.
