@@ -233,19 +233,78 @@ bearded dragon figure across to another animal.
 | 33 | Glossary | terms actually used earlier in the same document |
 | 34 | Sources, version history & about | the site articles' own Sources blocks, plus the external references you checked |
 
-Aquatic animals collapse pages 5 to 8 to tank size / filtration and cycling / water
-quality and testing / diet, and drop pages 7, 10, 14 (keep body condition), 15, and
-the UVB rows on 22 and 23. Expect 34 to 39 pages for a fish, not the 28 to 30 this note
-used to predict: Betta v1.0 landed at 36 and Goldfish v3.0 at 39, because cycling, water
-chemistry, and water changes each need their own page rather than a shared one, and a
-goldfish additionally needs filtration sizing and media maintenance on separate pages.
+## Adapting the skeleton by animal class
+
+The table above is the **reptile** skeleton. It is the only one written page by page,
+because it came first, and every other class is an adaptation of it. Pages 1 to 4 and
+pages 22 to 34 (the checklists, budget, logs, glossary and sources) carry across every
+class almost unchanged. The husbandry and health middle is what moves.
+
+Read the row for your class before building, then read the matching package's gap block
+further down. Page counts below are what shipped, not estimates.
+
+| Class | Built | Pages | The middle, in short |
+|---|---|---|---|
+| Reptile | Bearded Dragon v3.0, Ball Python v2.0 | 34 | The canonical table above |
+| Aquatic | Betta v1.0, Goldfish v3.0 | 36 to 39 | Water systems replace heat systems |
+| Mammal | Rabbit v2.0 | 39 | Diet and health dominate; no environmental control pages |
+| Invertebrate | Tarantula v2.0 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
+| Bird | none yet | proposed | See below, this row is a proposal |
+
+**Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
+and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
+and 23. Cycling, water chemistry, and water changes each need their own page rather than
+a shared one, which is why Betta landed at 36. Goldfish needed 39 because filtration
+sizing and media maintenance also split. Water quality is this class's whole health
+story: goldfish spends pages 21 to 25 on it and still routes most conditions back to the
+test kit.
+
+**Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
+out. What replaces them is diet and health, both much larger than the reptile skeleton
+allows. Rabbit v2.0 gave hay, greens and pellets, and life-stage feeding three pages, and
+gave GI stasis three pages of its own before dental, flystrike and snuffles, and the
+E. cuniculi group. It also needed pages the reptile table has no slot for: litter
+training and rabbit-proofing, bonding and companionship, spay and neuter, and grooming,
+nails and molting. Expect 38 to 40, expect health to be the biggest section in the
+package, and expect prey-species behavior to change the handling pages: picking one up is
+a page, and reading its body language is another.
+
+**Invertebrate.** The heat, UVB and thermostat pages come out. Handling inverts: Tarantula
+v2.0 spends three pages on why the answer is no, what interacting actually looks like,
+and urticating hairs and bites, where a reptile gets one handling page. Molting takes two
+pages and replaces the brumation and shed page. Rehousing takes two more and has no
+reptile equivalent at all. A legal page earns its place, which the reptile skeleton does
+not have. Eggs and egg binding, and reading stool, both drop. Expect 40 to 43, expect
+husbandry to be short and health to lean toward prevention, because veterinary care for
+invertebrates barely exists.
+
+**Bird (proposed, not yet built).** Nothing here has been tested against a real build, so
+treat it as a starting hypothesis and correct it from what the first bird package
+actually needs. Page 7 survives but changes meaning, from thermostats to full-spectrum
+lighting, photoperiod, and the 10 to 12 hour sleep requirement (`uvb-lighting-complete-guide.mdx`
+covers birds, 18 mentions). Page 10 (feeder insects) drops. Pages 11 and 12 become pellet
+versus seed, safe fresh foods, and a never list where avocado, chocolate and onion carry
+real weight. Page 15 becomes chronic egg laying rather than a single clutch, which is the
+actual companion bird problem. Page 20 becomes molt and behavior instead of brumation and
+shed. Expect roughly 32 to 36 by analogy with the other classes, and expect the health
+pages to source well: the site is strong here (PBFD in 9 files, psittacosis in 7, feather
+plucking in 18, egg binding in 8).
+
+Two things a bird build will hit that no other class does. Five of ten birds
+(budgie, canary, conure, lovebird, quaker parakeet) have **no feeding guide at all**, so
+the diet pages source from nothing for those species. And `guides/birds.js` carries a
+"rough starting ranges, not verified current pricing" comment on its cost block, which
+pages 4 and 24 both draw from, so bird costs need checking against the MDX cost guide
+rather than trusting the JS. Budgie and lovebird already have pre-v3 packages at 20 and
+21 pages, so those are rebuilds rather than new builds. Cockatiel is the cleanest first
+bird: seven articles including a feeding guide.
 
 ### Page count is a target, not a budget
 
-Every page count in this doc (34 for the reptile skeleton, 34 to 36 aquatic) is the
-expected shape, not a quota to hit. **Going over or under is fine.** Accurate, complete,
-genuinely useful content beats landing on a number, every time. A package that runs 31
-pages or 37 pages is the right length for that animal.
+Every page count in this doc is the expected shape, not a quota to hit. **Going over or
+under is fine.** Accurate, complete, genuinely useful content beats landing on a number,
+every time. The shipped range across four classes is 34 to 43, and the spread is the
+point: the animal decides the length, not the template.
 
 So never cut a real husbandry detail, a health red flag, a supplement dose, or a
 temperature target to make a page fit. Ball Python v2.0 had to be rebuilt precisely
