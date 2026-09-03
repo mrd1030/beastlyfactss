@@ -61,7 +61,7 @@ detailed and the ones that got the closest fact-check against real external sour
 `guides/{category}.js` is a shorter, secondary source; if it disagrees with the MDX,
 the MDX wins, but flag the JS copy to fix too so the two don't stay out of sync.
 
-Read the Ball Python v2.0 note under **Site content gaps by package** before leaning on
+Read the Ball Python v3.0 note under **Site content gaps by package** before leaning on
 that last sentence. "The MDX wins" picks a side without checking whether either side is
 right. When two internal sources disagree on a number that matters, go to the external
 source first.
@@ -81,23 +81,61 @@ retailer or breeder sales pages, AI-generated content farms, and anything with n
 author or organization behind it.
 
 Two more rules that hold whatever the source is. Cite only what you actually opened and
-read, never a figure recalled from memory. And when two credible sources disagree on a
-number, print the range instead of picking a side, and name both on the Sources page so
-a reader can see why it's a range.
+read, never a figure recalled from memory. This governs figures and claims, not topics:
+deciding a package needs a page on wing clipping or PTFE fumes is knowledge work and is
+exactly what you should be doing. Writing the safe temperature onto that page is
+sourcing work. And when two credible sources disagree on a number, print the range
+instead of picking a side, and name both on the Sources page so a reader can see why
+it's a range.
 
 ### Writing site articles for content the site does not have
 
-**This is a standing part of every package build, not a one-off backlog.** When a PDF
-page needs content no site article covers, the fix is to write the site article, not to
-let the PDF stay the only copy. Order of operations: write and publish the article
-first, then source the PDF page from it. That keeps the PDF and the site from
-disagreeing, and the research gets used twice instead of once.
+**Order of operations: the PDF ships first, the articles follow.** Do not stop a package
+build to go write five articles. Build and render the PDF, sourcing each page from the
+site where the site has it, then log what it did not have under **Site content gaps by
+package** near the end of this file (build workflow step 11). The articles are separate
+work, picked up when asked, and the log is what turns them into a plan.
 
-Until the article exists, the PDF text is the only copy, so the figures on that page have
-nothing to be fact-checked against later. That is the risk, and it is why every package
-logs its own gaps under **Site content gaps by package** near the end of this file. Add
-yours there before you call a package done (build workflow step 12), and pick off the
-cross-species rows first, since one article closes the same gap in every future package.
+Gaps come from two places, and **both are required**. Neither one finds what the other
+does.
+
+**Derived gaps** are mechanical. The page skeleton is fixed, so every page has a defined
+content requirement before the animal is chosen. Read what the site actually holds for
+that animal (`encyclopedia/{category}.js`, `guides/{category}.js`, and every
+`content/guides/{slug}-*.mdx`), map it onto the page list, and the pages left without a
+source are derived gaps. Each resolves to an existing cross-species article
+(`reptile-emergency-plan-guide`, `reptile-shedding-complete-guide`, the UVB guides), or
+to research, or to a logged row.
+
+**Proposed gaps come from your own knowledge of the animal, and this is where the
+valuable articles come from.** The site cannot tell you what it is missing, and the
+skeleton only asks for what the last animal needed. So say plainly what a keeper of this
+species has to know that neither one covers. Wing clipping is the worked example: nothing
+in the bird page list asks for it and a grep finds only a glossary definition and two
+Quaker legal mentions, yet it is one of the first real decisions a new bird owner faces.
+No amount of reading the repo surfaces that. Only knowing birds does.
+
+Do this deliberately on every package, not as an afterthought, and put those rows in the
+gap block alongside the derived ones. Species-specific husbandry decisions, the common
+beginner mistakes, the household hazards, and the routine care a care sheet skips are all
+worth proposing.
+
+Two things keep it honest, and they are narrow:
+
+- **Mark which kind a row is.** A derived row can cite its hit count. A proposed row
+  cannot, so label it proposed and say what it is based on. Do not present a proposal as
+  a grep result, and do not claim "zero hits" without actually grepping `content/` and
+  `src/` both, since the glossary and the guides JS carry real coverage the MDX does not.
+- **Proposing a topic is not the same as writing its content.** Name the topic from
+  knowledge, then source every figure, dose, temperature, and claim before it goes into a
+  PDF page or an article. The topic is yours. The numbers are the source's.
+
+Until an article exists, the PDF text is the only copy of those figures, so nothing can
+fact-check them against the site later. That is the actual risk the log tracks, and why
+the block gets written while the sourcing is fresh rather than later. Pick off the
+**cross-species** rows first, since one article closes the same gap in every future
+package, and when one does get written, re-source that PDF page from it and cross the
+row off.
 
 What the build checks actually enforce is worth knowing before you lean on them:
 
@@ -195,12 +233,80 @@ bearded dragon figure across to another animal.
 | 33 | Glossary | terms actually used earlier in the same document |
 | 34 | Sources, version history & about | the site articles' own Sources blocks, plus the external references you checked |
 
-Aquatic animals collapse pages 5 to 8 to tank size / filtration and cycling / water
-quality and testing / diet, and drop pages 7, 10, 14 (keep body condition), 15, and
-the UVB rows on 22 and 23. Expect 34 to 39 pages for a fish, not the 28 to 30 this note
-used to predict: Betta v1.0 landed at 36 and Goldfish v3.0 at 39, because cycling, water
-chemistry, and water changes each need their own page rather than a shared one, and a
-goldfish additionally needs filtration sizing and media maintenance on separate pages.
+## Adapting the skeleton by animal class
+
+The table above is the **reptile** skeleton. It is the only one written page by page,
+because it came first, and every other class is an adaptation of it. Pages 1 to 4 and
+pages 22 to 34 (the checklists, budget, logs, glossary and sources) carry across every
+class almost unchanged. The husbandry and health middle is what moves.
+
+Read the row for your class before building, then read the matching package's gap block
+further down. Page counts below are what shipped, not estimates.
+
+| Class | Built | Pages | The middle, in short |
+|---|---|---|---|
+| Reptile | Bearded Dragon v3.0, Ball Python v3.0 | 34 | The canonical table above |
+| Aquatic | Betta v3.0, Goldfish v3.0 | 36 to 39 | Water systems replace heat systems |
+| Mammal | Rabbit v3.0, Hamster v3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
+| Invertebrate | Tarantula v3.0 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
+| Bird | none yet | proposed | See below, this row is a proposal |
+
+**Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
+and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
+and 23. Cycling, water chemistry, and water changes each need their own page rather than
+a shared one, which is why Betta landed at 36. Goldfish needed 39 because filtration
+sizing and media maintenance also split. Water quality is this class's whole health
+story: goldfish spends pages 21 to 25 on it and still routes most conditions back to the
+test kit.
+
+**Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
+out. What replaces them is diet and health, both much larger than the reptile skeleton
+allows. Rabbit v3.0 gave hay, greens and pellets, and life-stage feeding three pages, and
+gave GI stasis three pages of its own before dental, flystrike and snuffles, and the
+E. cuniculi group. It also needed pages the reptile table has no slot for: litter
+training and rabbit-proofing, bonding and companionship, spay and neuter, and grooming,
+nails and molting. Expect health to be the biggest section in the package, and expect
+prey-species behavior to change the handling pages: picking one up is a page, and reading
+its body language is another.
+
+Page count scales with the animal inside the class, so take it from the nearest species
+rather than from the class. A rabbit runs 38 to 40. Hamster v3.0 came in at 36, and its
+block below puts a rodent at 34 to 37, because a smaller animal genuinely has less
+husbandry to describe. Two pages a rodent needs that a reptile does not are species
+choice, since temperament varies enormously inside one common name, and torpor. Read the
+Hamster block before any small-mammal build: it lists six pairs of pages that had drifted
+into duplicates, and warns that a topic which genuinely needs one page will try to take
+two, with the second usually the first one's prose restated.
+
+**Invertebrate.** The heat, UVB and thermostat pages come out. Handling inverts: Tarantula
+v3.0 spends three pages on why the answer is no, what interacting actually looks like,
+and urticating hairs and bites, where a reptile gets one handling page. Molting takes two
+pages and replaces the brumation and shed page. Rehousing takes two more and has no
+reptile equivalent at all. A legal page earns its place, which the reptile skeleton does
+not have. Eggs and egg binding, and reading stool, both drop. Expect 40 to 43, expect
+husbandry to be short and health to lean toward prevention, because veterinary care for
+invertebrates barely exists.
+
+**Bird (proposed, not yet built).** Nothing here has been tested against a real build, so
+treat it as a starting hypothesis and correct it from what the first bird package
+actually needs. Page 7 survives but changes meaning, from thermostats to full-spectrum
+lighting, photoperiod, and the 10 to 12 hour sleep requirement (`uvb-lighting-complete-guide.mdx`
+covers birds, 18 mentions). Page 10 (feeder insects) drops. Pages 11 and 12 become pellet
+versus seed, safe fresh foods, and a never list where avocado, chocolate and onion carry
+real weight. Page 15 becomes chronic egg laying rather than a single clutch, which is the
+actual companion bird problem. Page 20 becomes molt and behavior instead of brumation and
+shed. Expect roughly 32 to 36 by analogy with the other classes, and expect the health
+pages to source well: the site is strong here (PBFD in 9 files, psittacosis in 7, feather
+plucking in 18, egg binding in 8).
+
+Two things a bird build will hit that no other class does. Five of ten birds
+(budgie, canary, conure, lovebird, quaker parakeet) have **no feeding guide at all**, so
+the diet pages source from nothing for those species. And `guides/birds.js` carries a
+"rough starting ranges, not verified current pricing" comment on its cost block, which
+pages 4 and 24 both draw from, so bird costs need checking against the MDX cost guide
+rather than trusting the JS. Budgie and lovebird already have pre-v3 packages at 20 and
+21 pages, so those are rebuilds rather than new builds. Cockatiel is the cleanest first
+bird: seven articles including a feeding guide.
 
 Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
 distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
@@ -218,13 +324,13 @@ takes two.
 
 ### Page count is a target, not a budget
 
-Every page count in this doc (34 for the reptile skeleton, 34 to 36 aquatic) is the
-expected shape, not a quota to hit. **Going over or under is fine.** Accurate, complete,
-genuinely useful content beats landing on a number, every time. A package that runs 31
-pages or 37 pages is the right length for that animal.
+Every page count in this doc is the expected shape, not a quota to hit. **Going over or
+under is fine.** Accurate, complete, genuinely useful content beats landing on a number,
+every time. The shipped range across four classes is 34 to 43, and the spread is the
+point: the animal decides the length, not the template.
 
 So never cut a real husbandry detail, a health red flag, a supplement dose, or a
-temperature target to make a page fit. Ball Python v2.0 had to be rebuilt precisely
+temperature target to make a page fit. Ball Python v3.0 had to be rebuilt precisely
 because husbandry detail got trimmed to fit, and the restored version came out at 34
 pages. When a page runs long, in this order: combine it with a neighboring page that
 shares its topic, split it into two pages and renumber, or just let the guide run longer.
@@ -238,6 +344,17 @@ update the cover, the contents page, every in-text "page N" cross-reference, and
 footer to match, per step 8 of the build workflow.
 
 ## Build workflow
+
+0. **Read `notes/{slug}-v*-notes.md` first, before touching anything.** If a previous
+   edition of this animal exists, its notes file is the single most useful input to the
+   build and it is mandatory reading, not optional background. It carries the exact HTML
+   of everything the last edition had to cut, the page count it landed on and whether
+   that was a measured floor or a choice, the pages that were wanted and never drafted,
+   and the cut list in priority order. Rebuilding without it means re-researching content
+   that is already written and sitting in the file, and re-litigating a page limit that
+   was already measured. Also read the animal's block under **Site content gaps by
+   package** and any gap article that has shipped since, so pages sourced from the PDF
+   last time now get sourced from the site.
 
 1. Copy `source/_template.html` to `source/{slug}.html`.
 2. Pick an unused accent color triple (`--accent` / `--accent-dark` / `--accent-tint`).
@@ -328,10 +445,26 @@ footer to match, per step 8 of the build workflow.
    has no article for, and that list is the most valuable byproduct of building one: it
    is a ready-made content plan, already filtered to things a paying customer wanted
    enough to read. Add a block for your animal under **Site content gaps by package**
-   below. Do it while the sourcing is fresh, not later. Two things to record and not
-   skip: what you found already covered (so nobody rewrites it), and any number in the
-   PDF that has no site source at all, because that is the copy no one can fact-check
-   against the site later.
+   below. Do it while the sourcing is fresh, not later.
+
+   Four things to record, none of them optional:
+
+   - **Derived gaps**, the pages that found no source in the site's own content.
+   - **Proposed gaps**, the topics a keeper of this species needs that neither the page
+     list nor the site raised. This is a required pass, not a bonus. Ask directly what
+     this animal's owners get wrong, what decisions they face early, and what in a normal
+     house can kill one, then write down whatever the repo does not already answer. The
+     best articles in the log came from here, not from the greps. Label these rows
+     **proposed** so a later reader knows they rest on knowledge rather than a hit count.
+   - **What you found already covered**, so nobody rewrites it.
+   - **Any number in the PDF with no site source at all**, because that is the copy no
+     one can fact-check against the site later.
+
+   Run the reach test on every row before you write it, and read the existing blocks
+   for your class first. See **Before logging a row: how far does it reach?** at the top
+   of that section. A gap another package already logged gets its row extended, never a
+   second row.
+
 13. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
 
 
@@ -353,6 +486,11 @@ What goes in it:
   limit that was already measured.
 - **Ideas raised and never drafted.** The pages you wanted and did not build, with enough
   detail to start from. This is usually the most valuable part of the file.
+- **The proposed gaps from step 12**, the topics you know this animal's keepers need that
+  neither the page list nor the site raised. They belong here as well as in the gap log:
+  the log drives site articles, this file drives the next edition of the PDF, and a topic
+  can deserve both. Keep them labeled as proposals so a later reader knows they still
+  need sourcing.
 - **A cut list for next time, in priority order.** Having just built the thing, you know
   better than anyone which pages would survive being dropped, and which are the product.
   Name the ones that must not be cut.
@@ -367,7 +505,11 @@ Two rules that matter:
   callout at `margin:7pt 0`, or a two-column block reclaims 20 to 100 px a page and costs
   nothing. Most small overflows are a layout problem wearing a content problem's clothes.
 
-The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`.
+The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`. It is
+also what step 0 makes mandatory reading for a goldfish v4: 17 parked blocks with their
+original markup, a measured 39-page floor, six undrafted ideas, and a ranked cut list.
+Writing the file and reading it are the two halves of the same rule, and the file is
+worth nothing if the next build starts without opening it.
 
 ## Renumbering: generate it, don't hand-edit it
 
@@ -406,7 +548,57 @@ a block here when you finish a package; this is what turns "the PDF says somethi
 site doesn't" into a content plan.
 
 How to use it: pick off the **cross-species** rows first, because one article closes the
-same gap in every future package. When you write one, re-source that PDF page from the
+same gap in every future package.
+
+### Before logging a row: how far does it reach?
+
+**Every gap gets a reach test before it gets written down.** Skipping it is how the fish
+set came to look like four articles when it needed two: Betta and Goldfish each logged
+cycling and each logged power outages, from their own build, in their own words. That is
+duplicate bookkeeping, not duplicate work, and it is invisible until someone reads both
+blocks side by side.
+
+Two questions, in order, and the second is the one that gets skipped:
+
+1. **Which animals hit this same gap?** Answer with the widest honest set, not the animal
+   in front of you. Universal (every pet on the site), one class (every fish, every
+   reptile, every small mammal), a sub-group (snakes, New World tarantulas), or genuinely
+   this species alone. Write that set into the Scope column.
+2. **Would one article actually serve all of them, or does the advice change?** A shared
+   topic is not a shared article. This is the question that decides whether you write one
+   guide or several, and it is answered by the content, not the title.
+
+Cycling an aquarium is identical for a betta and a goldfish, so it is one article. Power
+outages are a universal *topic* where the advice inverts by class, which is why
+`reptile-emergency-plan-guide.mdx` is noted as **not transferring** in three separate
+blocks below: it is temperature-first, and for a rabbit the priority flips to feeding,
+because a rabbit that stops eating is in more danger than a cold one. Same topic, three
+articles. Getting this backwards is worse than duplicating: one article stretched over
+animals it does not fit gives every one of them slightly wrong advice.
+
+**Then check the log before adding your row.** Read every existing block for the same
+class and the universal rows in all of them. If your gap is already there, do not add a
+second row: extend the existing one with your package's page numbers and anything your
+animal needs that the original missed. If it is new but reaches past your animal, say so
+in the Scope column so the next build finds it.
+
+When you write a merged article, cross the row off in *every* block that logged it and
+name the slug in each. The aquatic rows below are annotated where this applies.
+`reptile-emergency-plan-guide.mdx` is the worked example of a correctly scoped one: a
+single article wired into 31 reptile guide ids, deliberately not stretched to mammals or
+fish.
+
+A practical consequence for naming. Scope decides the slug, and the slug is hard to
+change once it is wired into `RELATED_ARTICLES`. A universal or class-wide article should
+not carry a species prefix, or the next animal that needs it will look like it has no
+article and get logged again. `reptile-emergency-plan-guide` and
+`gut-loading-feeder-insects-guide` are the right shape. `bearded-dragon-power-outage-guide`
+would have been the wrong one.
+
+Note on version numbers: the four packages built on the v3 template kept their old
+numbers at first and were renumbered to 3.0 in September 2026. Block headings carry the
+corrected number. References to a v2.0 or v2.1 rebuild inside a block are the real
+history of that package and are left as written. When you write one, re-source that PDF page from the
 new article, cross the row off here, and note the slug so the next person knows it exists.
 
 Anything still open is copy that lives only in a PDF, so it has no site article to be
@@ -429,7 +621,7 @@ with internal parasites and the fecal test, mouth rot, tail rot and toe loss, ey
 problems, and burns and prolapse. `reptile-emergency-plan-guide.mdx` covers the power
 outage, travel, and pet-sitter pages for every reptile package, not just this one.
 
-### Ball Python v2.0 (Sep 2026)
+### Ball Python v3.0 (Sep 2026)
 
 Already covered, do not rewrite: pages 28 and 29 from `reptile-emergency-plan-guide.mdx`,
 which carries a ball python temperature row. Page 20's shed cycle from
@@ -438,7 +630,7 @@ which carries a ball python temperature row. Page 20's shed cycle from
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Snake heating: thermostats, probe placement, heat source types | 7 | Cross-species | No article anywhere; `thermostat` returns zero hits in `content/`. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Snake heating: thermostats, probe placement, heat source types | 7 | Cross-species | No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
 | Quarantine for a new reptile | 18, 31 | Cross-species | Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
 | Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
 | Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Also open on the bearded dragon list, so one article closes both |
@@ -465,7 +657,7 @@ The lesson worth keeping: when two internal sources disagree, "the dedicated gui
 picks a side without checking whether either side is right. Go to the external source
 first when the number matters.
 
-### Betta Fish v1.0 (Sep 2026)
+### Betta Fish v3.0 (Sep 2026)
 
 The first aquatic package on the v3 template. `goldfish.html` and `axolotl.html` predate
 v3 and carry none of its CSS additions, so the aquatic layout here was derived from the
@@ -485,9 +677,9 @@ reptile-only, and an aquarium blackout is a different problem with different phy
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package |
-| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package |
-| Transporting and moving fish | 30 | Cross-species (aquatic) | Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
+| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | **One article with "Transporting and moving fish" below and the Goldfish block's "Aquarium power outages and transporting a fish" row. All three are the same aquatic emergency and transport article, the fish equivalent of `reptile-emergency-plan-guide.mdx`.** No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package |
+| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | **One article with the Goldfish block's "Cycling an aquarium, fishless and fish-in" row. Write it once for both, covering fishless and fish-in.** `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package |
+| Transporting and moving fish | 30 | Cross-species (aquatic) | **Merged into the aquatic emergency and transport article above, not separate.** Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
 | Aquarium salt, and medicating a small tank | 18, 19 | Cross-species (aquatic) | Nothing on dosing or duration. 1 tsp per gallon, the 10-day ceiling, replacing only what a water change removes, and why plants, snails, and shrimp need a hospital tank. Also the carbon-removal and aeration rules that apply to every treatment |
 | Betta body condition from above | 15 | Betta | Nothing. `betta-fish-feeding-guide.mdx` gives portions but no way to check whether they are right. The top-down torpedo test, shoulders versus the middle third, and the one-pellet correction over 2 weeks |
 | Velvet, columnaris and telling them apart | 19 | Betta | Expand `betta-fish-health-issues-guide.mdx`, not a new URL. It names both in a sentence each. The package needs the differential (grains versus metallic dust versus cottony saddle) and, more importantly, that ich wants the temperature raised and columnaris wants it lowered |
@@ -528,7 +720,7 @@ precedence rule, and two of the first calls were wrong.
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
 
-### Rabbit v2.0 (Sep 2026)
+### Rabbit v3.0 (Sep 2026)
 
 The first mammal package on the v3 template, and the layout needed real surgery: the
 reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
@@ -620,7 +812,7 @@ Known gaps, listed in the notes file: there is no target weight anywhere despite
 owner log asking for grams, no sexing page despite the guide telling the reader twice to
 check the sex, and nothing on cheek pouches.
 
-### Tarantula v2.0 (Sep 2026)
+### Tarantula v3.0 (Sep 2026)
 
 The first invertebrate package on the v3 template. The reptile heat, UVB and thermostat
 pages collapse into a single temperature and ventilation page, which frees a lot of room,
@@ -676,11 +868,11 @@ floors for reptiles and a fish outage is an oxygen problem.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Cycling an aquarium, fishless and fish-in | 10, 11 | Cross-species (fish) | The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case |
+| Cycling an aquarium, fishless and fish-in | 10, 11 | Cross-species (fish) | **One article with the Betta block's "Fishless cycling, start to finish" row. Same article, write it once for both.** The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case |
 | Aquarium filtration: turnover, media types, maintenance | 8, 9 | Cross-species (fish) | The MDX gives 4 to 10x turnover and nothing else. Needs the gph math worked for common tank sizes, mechanical vs biological vs chemical and which to disturb, why manufacturer ratings overstate, and rinse-in-tank-water-only with the reason |
 | Freshwater pH, GH and KH for coldwater fish | 12 | Cross-species (fish) | The betta article covers hardness well but at tropical targets. Needs the goldfish-appropriate ranges and, more usefully, the KH-buffers-pH mechanism and why chasing a pH number with adjusting chemicals backfires |
 | Quarantining and treating a new or sick fish | 16, 24 | Cross-species (fish) | `quarantine` returns hits only in the angelfish guides, in passing. Needs the 2 to 4 week minimum, the bare hospital tank, seeding it from a mature sponge filter, and why medicating the display tank costs you the bacteria colony |
-| Aquarium power outages and transporting a fish | 33 | Cross-species (fish) | Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
+| Aquarium power outages and transporting a fish | 33 | Cross-species (fish) | **One article with the Betta block's power outage and transport rows. Same article, write it once for both.** Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
 | Goldfish safe foods chart | 15, 16, 17 | Goldfish | Expand `goldfish-feeding-guide.mdx`, not a new URL. It has the diet shape but no tier chart. Pellet vs gel vs flake, the vegetable list with blanching, protein foods weekly not daily, and the never list with reasons |
 | Flukes, anchor worm, velvet, popeye and ulcers | 24 | Goldfish | Expand `goldfish-health-issues-guide.mdx`. It covers ich, fin rot, swim bladder, dropsy, fungus and ammonia, and stops there. The five added in v3.0 carry published veterinary doses that currently exist only in the PDF |
 | Goldfish varieties, tankmate matching and sexing | 19 | Goldfish | Nothing on the site. Fancy vs single-tail vs eye varieties with adult sizes and minimums, why mixing body types is a feeding-time mismatch rather than a preference, and the honest answer that sexing is unreliable outside breeding condition |
