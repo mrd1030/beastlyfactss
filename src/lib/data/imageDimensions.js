@@ -429,6 +429,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/degu-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/discus-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -442,6 +446,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 1080
   },
   "/assets/images/ferret-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/flying-squirrel-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -509,6 +517,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/gerbil-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/goldfish-tank-size.jpg": {
     "width": 1620,
     "height": 1080
@@ -528,6 +540,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/hamster-vs-guinea-pig.jpg": {
     "width": 1600,
     "height": 1067
+  },
+  "/assets/images/hedgehog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/hermit-crab-enrichment.jpg": {
     "width": 1168,
@@ -569,6 +585,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/mouse-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/neon-tetra-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -588,6 +608,10 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/praying-mantis-ootheca.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/rabbit-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/rabbit-gi-stasis.jpg": {
     "width": 1620,
@@ -618,6 +642,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 1080
   },
   "/assets/images/sphynx-cat-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/sugar-glider-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
