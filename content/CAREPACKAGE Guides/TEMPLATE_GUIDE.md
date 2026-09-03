@@ -249,7 +249,8 @@ further down. Page counts below are what shipped, not estimates.
 | Aquatic | Betta 2.1, Goldfish 2.0, Axolotl 2.0 | 36 to 41 | Water systems replace heat systems |
 | Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
-| Bird | Lovebird 2.0 | 36 to 39 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
+| Bird, small parrot | Lovebird 2.0, Budgie 2.0, Cockatiel 1.0 | 36 to 40 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
+| Bird, large parrot | Cockatoo 1.0 | 42 to 45 | The above, plus a decision page, a species-choice page, dust and human health, training, bonding, screaming, legal and succession |
 
 **Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
 and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
@@ -342,9 +343,36 @@ the diet pages source from nothing for those species. And `guides/birds.js` carr
 "rough starting ranges, not verified current pricing" comment on its cost block, which
 pages 4 and 24 both draw from, so bird costs need checking against the MDX cost guide
 rather than trusting the JS. Budgie still has a pre-t3 package at 20 pages, so that one is a rebuild
-rather than a new build; lovebird was the rebuild that produced this row. Cockatiel is the
-cleanest new bird build: seven articles including a feeding guide, and it shares the
-chronic-laying problem, so pages 17 and 18 of the lovebird package transfer as a shape.
+rather than a new build; lovebird was the rebuild that produced this row.
+
+Cockatiel 1.0 was the first bird package that was a genuinely new build rather than a
+rebuild, and it was the cleanest one available: seven articles including a feeding guide,
+and it shares the chronic-laying problem, so pages 17 and 18 of the lovebird package
+transferred as a shape exactly as predicted. It landed at 40, one over the small-parrot
+band, and the extra page is structural rather than about the animal: **a bird package that
+sources properly needs two reference pages at the back, not one**, because the source table
+outgrows a single page and the source-drift table needs somewhere to live. Take that as the
+default for every future package rather than a cockatiel quirk.
+
+**A large cockatoo is a different build, and the 36 to 39 band does not stretch to it.**
+Cockatoo 1.0 came in at 44 and none of the extra pages are padding. Eight pages exist that
+no small-parrot package has a slot for: a decision test written to talk some readers out of
+the purchase, since this species has a documented surrender pattern that the buyer rather
+than the bird causes; a species-choice page, because "cockatoo" spans birds differing
+threefold in weight and tenfold in price; feather dust and human respiratory health, which
+is a household problem at this scale and has no equivalent anywhere else in the series;
+training, which is the only page in the series resting on a species-specific treatment
+trial; over-bonding and independence, which is the defining failure mode and is created in
+the first three weeks; screaming, which is a housing decision rather than a behaviour note;
+a legal page, since three commonly kept species are CITES Appendix I or IUCN Endangered and
+Maine's carve-out catches them; and succession, because this is the only animal in the
+series that may outlive its owner. **Take 42 to 45 for a large parrot.**
+
+Two mechanical findings from that build that apply to any package past about 38 pages. The
+contents page needs `column-count:2`, because at 44 entries a single column overflows by
+roughly 110 px and clears with 370 px free in two. And any page that is mostly `check-item`
+rows should be two-column by default: splitting the five week-sections of a First 30 Days
+page into columns took it from 42 px of overflow to 16 px of clearance and reads better.
 
 Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
 distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
@@ -1425,3 +1453,206 @@ between credible sources rather than errors, which is how they are printed.
   pages 18 and 19. Also worth adding to the MDX: at those figures the animal costs roughly
   $15,000 to $30,000 over a forty-year life, which is the number that should decide the
   purchase and appears nowhere.
+
+### Cockatiel 1.0, t3 (Sep 2026)
+
+The third bird package and the first bird package that was a new build rather than a
+rebuild. 40 pages. Source is fragments plus a build script in `source/cockatiel-src/`, and
+`notes/cockatiel-v2-notes.md` carries the parked blocks, the per-page free space, seven
+undrafted page ideas and a ranked cut list.
+
+**Read the head CSS note in that file before the next build of anything.** The budgie head
+was already tightened from the lovebird's; this build tightened it again (page padding
+0.56/0.60/0.50, line height 1.36, `p`/`li` at 9.9pt, `td` padding 3.7pt, `table` 9.4pt,
+callouts at 7/11pt and 9.6pt/1.36, `check-item` 3.2pt/9.5pt, `h2.h` 12.4pt with 7.5/2.5
+margins, `section-title` 18pt, `table.dense td` 2.2pt/1.26) and that one pass took the guide
+from **19 overflowing pages to one**, reclaiming roughly 90 to 160 px a page. That is now
+two builds in a row where the CSS pass beat every content cut combined. The narrowed side
+padding is the part worth calling out separately: 0.06 in off each side is 11.5 px of extra
+line width, which removes a wrapped line from most paragraphs on a text-heavy page.
+
+Confirms the lovebird finding that **health sources well and husbandry sources badly**, with
+one twist: the cockatiel's health articles are thinner than the budgie's but the veterinary
+literature on this species is unusually rich, because it is one of the most-studied pet
+birds there is. Almost every page in section 03 is sourced externally rather than from the
+site.
+
+Already covered, do not rewrite: `cockatiel-tank-setup-guide.mdx` carries the 20&times;20&times;30 in
+minimum, the half-inch bar spacing, the width-over-height argument, the 10 to 12 hour sleep
+figure, the PTFE warning and the pellet-forward diet position. `cockatiel-feeding-guide.mdx`
+is the best article behind this package: the 75 to 80% pellet split, the safe and toxic food
+lists, the no-grit point, the six reasons a cockatiel stops eating, and an unusually honest
+passage admitting the site could not find a sourced figure for how long a cockatiel can go
+without food. `cockatiel-handling-guide.mdx` carries the 7 to 14 day settling period, the
+flat-palm rule, the crest-as-mood-dial material and the full stress and comfort lists.
+`cockatiel-enrichment-guide.mdx` carries the 2020 and 2025 studies and the under-one-hour
+bowl-feeding figure. `cockatiel-health-issues-guide.mdx` names nutritional disease, the
+reproductive group, plucking, psittacosis and the rope-fiber and heavy-metal habit, at a
+paragraph each. Note `reptile-emergency-plan-guide.mdx` does **not** transfer, for the same
+reason it does not transfer to the lovebird or the budgie.
+
+Rows already open on the Lovebird block that this package hit identically, and that are
+**extended there rather than repeated here**: household hazards for pet birds (page 8);
+photoperiod, sleep and hormonal management (pages 7, 17, 29); converting a seed eater to
+pellets (page 10); quarantining a new bird (pages 27, 29); wing clipping (page 15); reading
+bird droppings (page 26); bird power outages, travel and transport (page 34); molt in
+companion birds (page 25); and choosing a bird and where from (proposed, page 4). Two notes
+to add to those rows from this build. The **pellet conversion** row now has a fifth method
+worth including beside VCA's four: eating the food in front of the bird, which works
+unusually well in a species that decides what counts as food by watching its flock, and
+which converts more birds than any product does. And the **quarantine** row has a citable
+species hook: the NASPHV and CDC psittacosis compendium names **cockatiels first** among the
+pet birds behind human cases.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Night frights | 7 | Cockatiel, with a smaller cross-species note | **The highest-value row here and the one most specific to this species.** Cockatiels are far more prone than most parrots to thrashing panics in the dark, and the injuries are real: broken blood feathers, a bleeding cere, a damaged wing, a foot caught in a toy. The site mentions it only in `guides/birds.js`, in two answers, with no article anywhere. Needs the mechanism (birds do not see in the dark, so a startled bird cannot find a perch), the dim night light as the fix, the partial rather than full cage cover, identifying external triggers like sweeping headlights, the calm response when one happens, and the check-for-blood step afterwards. Lafeber's night fright material is the source to build it on |
+| <em>Giardia</em>, and the itch that looks behavioural | 23, 24 | Cross-species (birds, cockatiel-weighted) | **Proposed, and the best differential in the package.** VCA notes cockatiels are specifically susceptible to <em>Giardia</em>, and that infected birds may be intensely itchy and attack themselves, especially under the wings, which then drives a feather-destructive habit that looks entirely behavioural. Nothing on the site connects a plucking cockatiel to a fecal test. Needs the presentation, the loose-stool-or-itch split, that the itch is often the only sign, and the point that a bird plucking under the wings gets a fecal test before anyone rearranges the cage |
+| Sexing a cockatiel, and why the mutations break it | 16 | Cockatiel | The normal grey is genuinely dimorphic after the first molt, which is one of this species' real advantages and appears nowhere on the site. Needs the yellow face and orange cheeks against a duller face, the solid versus barred underwing, the barred tail, and the whistling difference. Then the important half: lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all, a pied bird may keep hen-type barring for life, and a DNA test on a feather is the answer wherever it matters. Slots naturally into a wider cockatiel mutations article |
+| Talking, whistling and what to expect by sex | 9 | Cockatiel | The species is bought for the whistling and the site's coverage is one FAQ answer in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), the fact that hens rarely whistle tunes to any degree, and the trade against getting a pair, which is the decision on page 9 of this package. Related to the budgie block's talking row but not the same article: the behaviour and the odds both differ |
+| Training protocols for a small parrot, step by step | 13, 15 | Cross-species (birds) | **Proposed.** Extends the budgie block's talking row into the thing underneath it. Target training, step up and down, station, and recall, which page 15 of this package promises as the safe alternative to clipping without teaching it. The cockatoo package's page 16 is the large-parrot version and the mechanics are the same; the article should be written once, cross-species, and wired into both |
+| A cockatiel first-aid kit and basic grooming | 23 | Cross-species (birds) | Nothing. Nail trim interval and technique, towel restraint taught with rewards rather than imposed, when an overgrown beak is a liver sign rather than a grooming job, broken blood feather first aid, and the kit list. The reptile and mammal sets logged their own versions and neither transfers, because the restraint and the bleeding risk are both different in a 90 g animal |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the whole hazards page 8 including the PTFE ignition temperature and the lead and
+zinc source lists; the night fright material on page 7; the 8-hour photoperiod intervention
+on pages 7, 17 and 29; the five pellet conversion methods on page 10; the vegetable and
+fruit tier charts on pages 11 and 12; the 80 to 125 g weight range, the dimorphism and the
+keel scoring on page 16; the incubation and clutch figures and the do-not-pull-the-clutch
+rule on page 17; the egg-binding sign list and treatment sequence on page 18; the body
+temperature, heart rate and respiratory rate on page 19; the PBFD detail on page 22; the
+45-day doxycycline course and the human illness picture on page 21; the <em>Giardia</em>
+material on page 23; the 30 to 45 day quarantine on page 27; the droppings reference table
+on page 26; and the whole itemized budget on page 30.
+
+**Source drift found while building.** Four, and the bar spacing one is a safety figure.
+
+- **Bar spacing, and the safe answer is the stricter one.** LafeberVet gives 0.5 to 0.75 in
+  (1.3 to 1.9 cm) for a cockatiel. `cockatiel-tank-setup-guide.mdx` gives half an inch or
+  smaller and calls wider spacing a genuine head-entrapment risk; `guides/birds.js` gives
+  1/2 to 3/4 in, matching LafeberVet. The package prints **1/2 in (13 mm)** and says why: the
+  cost of being wrong is a trapped bird, and the top of the published range is not worth the
+  convenience. `guides/birds.js` is the file to correct, and the tank-setup guide is already
+  right.
+- **Captive lifespan, three internal figures and none of them the source's.**
+  `encyclopedia/birds.js` has `bio.wildLifespan: "10-15 years (up to 20-25 years in
+  captivity)"`, which is the same field-stuffing bug the lovebird and budgie blocks both
+  flagged, now confirmed in a third species. `guides/birds.js` says 15 to 25; the cost guide
+  says 15 to 20; `cockatiel-vs-cockatoo-guide.mdx` says 15 to 25. LafeberVet gives **12 to 15
+  with up to 25 reported**. The package prints the veterinary range. Split that encyclopedia
+  field and pick one captive range across the four files.
+- **Diet split.** `guides/birds.js` says pellets should be 60 to 70% for the cockatiel, the
+  same line the lovebird and budgie blocks flagged on other species in that file. VCA's
+  cockatiel feeding page gives **75 to 80% pellets with 20 to 25% fresh**, and
+  `cockatiel-tank-setup-guide.mdx` gives 60 to 80% with 20 to 30% fresh, which overlaps.
+  The package uses the VCA figures. One correction pass on `birds.js` fixes this for at
+  least four species now.
+- **Cage size, and it is a genuine disagreement rather than an error.**
+  `cockatiel-tank-setup-guide.mdx` gives about 20&times;20&times;30 in as a commonly cited
+  minimum with 24&times;24&times;30 in as what many keepers aim for; `guides/birds.js` gives
+  24&times;24&times;30 in as the minimum and 30&times;24&times;36 in as strongly preferred;
+  LafeberVet gives at least 20 to 24 in (50 to 60 cm) long and wide. Neither end was picked:
+  page 5 prints 20&times;20 in as the floor and 24&times;24&times;30 in as the target and says
+  why, which is the same treatment the lovebird and budgie packages gave the same
+  disagreement.
+
+**Cost.** `guides/birds.js` still carries the `// Rough starting ranges, not verified current
+pricing` comment. `cockatiel-cost-guide.mdx` gives $320 to $860 for setup and $200 to $350 a
+year. Page 30 itemizes to **$392 to $1,027 to be properly set up and $300 to $565 a year**,
+and the difference is four line items no starter list carries: a gram scale, a travel
+carrier, a sleep cage or cover, and a real first veterinary visit rather than an amortized
+annual check. The MDX figures are worth revisiting, and the annual one specifically, since
+its own $60 to $100 vet line is below the $85 to $200 the same article gives for an exam.
+
+### Cockatoo 1.0, t3 (Sep 2026)
+
+The fourth bird package, the first large parrot in the series, and the build that produced
+the second bird row in the class table above. 44 pages. Source is fragments plus a build
+script in `source/cockatoo-src/`, over five page files, and `notes/cockatoo-v2-notes.md`
+carries the parked blocks, the per-page free space, seven undrafted page ideas and a ranked
+cut list.
+
+This build inverts the lovebird finding. **For the cockatoo the behaviour material sources
+well and everything else sources badly**, because the site's cockatoo set is unusually
+strong on exactly the thing this species is famous for: `cockatoo-enrichment-guide.mdx`
+carries the sulphur-crested feather-plucking treatment study, and
+`cockatoo-screaming-feather-plucking-explained.mdx` is a full behavioural deep dive. What
+the site does not have is anything about the household: dust, human respiratory risk, the
+purchase decision, succession, or the cost of a forty-year animal.
+
+Already covered, do not rewrite: `cockatoo-tank-setup-guide.mdx` carries the 36&times;24&times;48 in
+minimum and the 48&times;48&times;60 in target, the 3/4 to 1 in bar spacing, the stainless
+versus powder-coated argument, the never-galvanized rule, the escape-artist point, the 10 to
+12 hour sleep figure and the air purifier. `cockatoo-feeding-guide.mdx` carries the 75 to
+80% pellet ratio, the toxic list, the no-grit point and the lipoma link.
+`cockatoo-handling-guide.mdx` carries the surrender pattern with the consultant's
+over-half-her-practice figure, the bite risk, the sexual-maturity change at 5 to 7 years and
+the four first-timer mistakes including over-bonding.
+`cockatoo-health-issues-guide.mdx` names feather-destructive behaviour, PBFD, lipomas and
+hepatic lipidosis. `cockatoo-enrichment-guide.mdx` is the best article behind this package
+and carries the training result, the six-hour wild foraging figure, the destruction-as-normal
+point and the independence trap. `cockatoo-legal-guide.mdx` carries the whole of page 30.
+Note `reptile-emergency-plan-guide.mdx` does **not** transfer, for the same reason it does
+not transfer to any bird.
+
+Rows already open on the Lovebird block that this package hit identically, and that are
+**extended there rather than repeated here**: household hazards for pet birds (page 11);
+photoperiod, sleep and hormonal management (pages 9, 22); converting a seed eater to pellets
+(page 12); quarantining a new bird (page 29); wing clipping (page 20); reading bird droppings
+(page 28); bird power outages, travel and transport (page 38); molt in companion birds (page
+24, folded into the plucking differential); and choosing a bird and where from (page 6,
+which this package finally drafted as a full page and which is the shape that article should
+take). One note to add to the **hazards** row: for a large parrot it needs a mains-cable
+section, because this beak goes through a cable a small parrot could not dent.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Feather dust, air quality and bird fancier's lung | 10 | Cross-species (birds, cockatoo and African grey weighted) | **The highest-value row here, and there is nothing on it anywhere.** Powder-down species produce enough keratin dust to film every surface in a room daily, and prolonged exposure to avian proteins in that dust and in dried droppings causes hypersensitivity pneumonitis in people, with progressive pulmonary fibrosis as the serious complication and removal of exposure as part of the treatment. Needs the control hierarchy (HEPA purifier, bathing the bird two or three times a week, damp-wiping rather than dry dusting, hard floors, not the bedroom), the point that dust is also the PBFD transmission route, and the advice to tell a doctor you keep a parrot if you develop an unexplained cough. Serves cockatoo, African grey and cockatiel, and it is the page a buyer most needs before purchase rather than after |
+| Succession and estate planning for a long-lived pet | 31 | Cross-species (large parrots, tortoises) | **Proposed, and it reaches well past birds.** A cockatoo lives 30 to 45 years and a Moluccan up to 70; a Russian tortoise block in this same file already notes a forty-year animal costing $15,000 to $30,000. The site has nothing on what happens to either when the owner does not outlive it. Needs the named guardian who has actually agreed, the sanctuary fallback contacted in advance, money attached to the animal because inheriting one without funds is inheriting a bill, the will clause since pets pass with the estate as property, the care file, and a rehoming section that says go to a rescue rather than a classified ad and never advertise free to a good home |
+| Training as the primary intervention for a large parrot | 16 | Cross-species (large parrots) | **Proposed, and it has the best evidence behind it of anything in the bird set.** The site's cockatoo enrichment guide reports the sulphur-crested study finding that training sessions beat medication, socialization and feeding enrichment, then stops. An article should teach the thing: ten to fifteen minutes twice a day, positive reinforcement with a marker, ending while the bird still wants more, rotated between everyone in the household, and the behaviour ladder of target, step up and down, station, recall, voluntary crate entry and towel acceptance. The cockatiel block logs the small-parrot version of the same gap; **write one cross-species article, not two**, since the mechanics are identical and only the reward and the bite risk scale |
+| Over-bonding and building independence | 18 | Cross-species (large parrots) | Extends rather than duplicates the site's screaming and plucking article, which explains the behaviour but not the prevention. Needs the specific first-weeks warning, that intense one-on-one time early cements an anxious dependency rather than a healthy attachment, and then the protocol: several people in rotation, rewarding self-directed activity, leaving the room constantly and briefly, a play stand that is genuinely good to be on, low-key departures, and the shoulder question. Expand `cockatoo-screaming-feather-plucking-explained.mdx` rather than opening a new URL |
+| Sexing a monomorphic parrot, iris colour and DNA | 21 | Cross-species (birds) | Extends the lovebird block's sexing row with the cockatoo half, which the lovebird build did not need. Mature white <em>Cacatua</em> hens often show a reddish or chestnut iris against the male's dark brown to black, and it is useful, partial, species-dependent, lighting-dependent and absent in juveniles. DNA on a blood spot or a plucked feather remains the answer. The lovebird row should absorb this rather than a second row being opened |
+| A large-parrot noise reference, with a measured figure | 5, 19 | Cross-species (large parrots) | **Proposed, and it is the one hole in this package that a source could have filled and did not.** Page 19 handles screaming honestly but prints no measured sound level, because none was found in a source worth citing. Noise is one of the top reasons a cockatoo is rehomed and it is the question a buyer in an apartment most needs answered. A sound-pressure figure from an acoustic or veterinary source, plus the dawn-and-dusk contact-calling pattern and the fact that quieting the bird is not an achievable goal, would make the housing decision concrete rather than adjectival |
+| Working with a rescue or rehomed parrot | 6, 31 | Cross-species (large parrots) | **Proposed.** The package recommends adoption on page 6 and then teaches nothing about it. An adult bird with a plucking history, an existing bond to someone else, and unknown handling is a different starting position from a weaned baby, and it is the position an increasing share of large-parrot owners are actually in. Needs the transition period, the grief behaviours, what to ask a rescue, and what a rescue will ask you |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the whole feather dust and bird fancier's lung page 10; the weights by species and
+the life span band on pages 4, 6 and 21; the sexual maturity, incubation, clutch and weaning
+figures on pages 4, 17 and 22; the body temperature, heart rate and respiratory rate on page
+23; the iris sexing and the keel scoring on page 21; the PTFE ignition temperature and the
+lead and zinc source lists on page 11; the 8-hour photoperiod intervention on pages 9 and 22;
+the egg-binding sign list and treatment sequence on page 22; the 45-day doxycycline course
+and the human psittacosis picture on page 27; the PBFD form and incubation detail on page 25;
+the 30 to 45 day quarantine on page 29; the droppings reference table on page 28; the whole
+of the succession page 31; and the itemized budget on page 34.
+
+**Source drift found while building.** Four.
+
+- **Life span.** `cockatoo-cost-guide.mdx` and `guides/birds.js` give 40 to 70-plus and 40 to
+  60, with umbrellas at 50 to 70. LafeberVet's veterinary information sheet gives **30 to 45
+  years generally, with Moluccans up to 70**. The package prints the veterinary range with
+  the documented upper figure beside it, because the planning consequence on page 31 is
+  identical either way. `encyclopedia/birds.js` also carries `bio.wildLifespan: "40-60 years"`
+  for the cockatoo, which unlike the lovebird, budgie and cockatiel entries is at least not
+  stuffed with a captive figure, so this one is fine as it stands.
+- **Diet split.** `guides/birds.js` says a large parrot pellet should form 60 to 70% of the
+  diet for the cockatoo. VCA's cockatoo feeding page gives **75 to 80% pellets** with fresh
+  food at no more than 20 to 40%, and `cockatoo-tank-setup-guide.mdx` and
+  `cockatoo-feeding-guide.mdx` both already say 75 to 80%. This is the same `birds.js` line
+  now flagged on five species across four blocks. It is one correction pass and it should be
+  done.
+- **Weight.** `encyclopedia/birds.js` gives 1.1 to 1.7 lb for the umbrella, roughly 500 to
+  770 g. LafeberVet gives **400 to 700 g**. The ranges overlap and neither is wrong; the
+  package prints the veterinary figure and says on page 21 that the bird's own stable
+  baseline matters far more than the published range.
+- **Setup cost, and it is the largest gap in the series so far.** `cockatoo-cost-guide.mdx`
+  headlines $250 to $1,300 for setup while its own table lists a stainless cage at $1,450 to
+  $1,550 and a powder-coated one at $820 to $880, so the headline is below the price of the
+  single largest item in its own list. Page 34 itemizes to **$1,205 to $2,980 of equipment,
+  $2,105 to $6,930 to be fully set up including the bird and a first vet visit with a PCR
+  panel, and $1,160 to $2,380 a year**, with the lines summing to the totals. The additions
+  over the site's list are a play stand, an air purifier, a gram scale, a large carrier and a
+  real veterinary line. The MDX headline needs fixing, and the annual figure is worth adding,
+  because at these numbers the animal costs **$46,000 to $95,000 over a forty-year life**
+  before a single emergency, which is the figure that should decide the purchase and appears
+  nowhere on the site.
