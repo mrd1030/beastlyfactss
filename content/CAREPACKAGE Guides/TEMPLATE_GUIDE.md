@@ -235,9 +235,10 @@ bearded dragon figure across to another animal.
 
 Aquatic animals collapse pages 5 to 8 to tank size / filtration and cycling / water
 quality and testing / diet, and drop pages 7, 10, 14 (keep body condition), 15, and
-the UVB rows on 22 and 23. Expect 34 to 36 pages for a fish, not the 28 to 30 this note
-used to predict: Betta v1.0 landed at 36 because cycling, water chemistry, and water
-changes each need their own page rather than a shared one.
+the UVB rows on 22 and 23. Expect 34 to 39 pages for a fish, not the 28 to 30 this note
+used to predict: Betta v1.0 landed at 36 and Goldfish v3.0 at 39, because cycling, water
+chemistry, and water changes each need their own page rather than a shared one, and a
+goldfish additionally needs filtration sizing and media maintenance on separate pages.
 
 ### Page count is a target, not a budget
 
@@ -258,31 +259,72 @@ with filler or stretching the type to fill space.
 Two half-empty pages are worse than one full page, and one clipped page is worse than
 either. The one hard rule is that the count has to be *consistent* once it's locked in:
 update the cover, the contents page, every in-text "page N" cross-reference, and every
-footer to match, per step 7 of the build workflow.
+footer to match, per step 8 of the build workflow.
 
 ## Build workflow
+
+0. **Read `notes/{slug}-v*-notes.md` first, before touching anything.** If a previous
+   edition of this animal exists, its notes file is the single most useful input to the
+   build and it is mandatory reading, not optional background. It carries the exact HTML
+   of everything the last edition had to cut, the page count it landed on and whether
+   that was a measured floor or a choice, the pages that were wanted and never drafted,
+   and the cut list in priority order. Rebuilding without it means re-researching content
+   that is already written and sitting in the file, and re-litigating a page limit that
+   was already measured. Also read the animal's block under **Site content gaps by
+   package** and any gap article that has shipped since, so pages sourced from the PDF
+   last time now get sourced from the site.
 
 1. Copy `source/_template.html` to `source/{slug}.html`.
 2. Pick an unused accent color triple (`--accent` / `--accent-dark` / `--accent-tint`).
    Check the other files' `:root` blocks so no two animals share one.
-3. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
+3. **Re-tone the cover chrome to match that accent.** The `:root` triple only drives the
+   interior pages. Page 1 carries its own hard-coded palette, and in `_template.html`
+   that palette is the bearded dragon's browns, so a new guide inherits them and ships a
+   brown cover behind an animal that has nothing brown about it. This regressed the
+   goldfish once already: v3.0's first build had a brown cover behind a teal photo
+   because the cover was copied from the template verbatim.
+
+   Every one of these is on the cover and every one needs changing:
+
+   | What | Template (dragon) | Goldfish | Axolotl |
+   |---|---|---|---|
+   | Backdrop gradient | `#2B2420,#3A2E24,#4A3524` | `#12262B,#163640,#1B4552` | `#2B2420,#33283A,#432E44` |
+   | Brand strip text | `#D8A876` | `#8FD0E0` | `#DBA4BE` |
+   | Kicker and "Inside" label | `#C77C3F` | `#5FB8D6` | `#C77CA0` |
+   | Icon and tick circle fill | `#E39257` | `#5FC8DC` | `#E39BC4` |
+   | Tick check and icon eye | `#2B2420` | `#12262B` | `#2B2420` |
+   | Headline | `#FBF3E7` | `#F2FAFB` | `#FBF3E7` |
+   | Subhead and chip text | `#D8CBB8` | `#C7DEE3` | `#D8CBB8` |
+   | "Inside" bullet text | `#E8DCC8` | `#EAF6F8` | `#E8DCC8` |
+   | Chip borders | `#6B5540` | `#3E6672` | `#6B5566` |
+   | Rule above "Inside" | `#5A4633` | `#2F5A66` | `#5A4633` |
+   | Photo overlay rgba | `43,36,32` / `30,24,18` | `18,38,43` / `13,28,32` | unchanged |
+
+   The gradient's first stop stays near-black in every guide; it is the second and third
+   stops that carry the hue. Tint the vertical photo overlay to the same dark, or its
+   bottom fade prints as a warm haze over cool water. Warm-toned animals (dragons, geckos,
+   tortoises, birds, rodents) can legitimately keep the browns; anything cool-toned should
+   not. Grep the cover block for `#3A2E24`, `#C77C3F`, `#E39257` and `#6B5540` before you
+   call the cover done, and confirm the render, since a brown cover looks deliberate in
+   markup and obvious on screen.
+4. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
    numbers from memory. Copy the exact figure from the MDX and re-verify anything that
    looks off against a real external source before "fixing" it.
-4. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
+5. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
    `4×2×2 ft (120×60×60 cm)`. Gumroad buyers are global.
-5. Build the housing diagram last, as inline SVG, once the housing paragraph text is
+6. Build the housing diagram last, as inline SVG, once the housing paragraph text is
    final. Keep labels short (title / number / sub-label on separate lines). Check that
    every `<text>` fits inside its `<rect>` in the render; the bearded dragon v3 first
    render had two labels spilling out of their boxes.
-6. Base64-encode the chosen cover photo with a small script (never paste the base64
+7. Base64-encode the chosen cover photo with a small script (never paste the base64
    string into a chat context) and drop it into `{{COVER_IMAGE_DATA_URI}}` using the
    existing `mask-image` fade, never a flat-color gradient overlay. Pick a photo where
    the animal faces the headline (toward the left), it reads far better than one
    facing off the page.
-7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
+8. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
+9. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the version on the
    cover. Never overwrite the previous version's PDF; the old file stays as the record
    of what buyers of that version received. Once the new build replaces it, move the old
    file into `rebuilt/past versions/` and add a row to the README there saying what
@@ -290,7 +332,7 @@ footer to match, per step 7 of the build workflow.
    with what "current" means: the bearded dragon's live edition is the 22-page
    unversioned file, not the newer v3 build, because v3 has not been listed yet. Check
    `carePackages.js` before moving anything.
-9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
+10. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
    ```bash
@@ -312,12 +354,12 @@ footer to match, per step 7 of the build workflow.
    A cloud session has no internet access from Chromium, so Google Fonts won't load
    there. Download the woff2 files with curl and swap the `@import` for local
    `@font-face` rules in the render copy only; leave the `@import` in the source file.
-10. Icons must be small inline SVGs matching the existing minimalist style, never a raw
+11. Icons must be small inline SVGs matching the existing minimalist style, never a raw
    emoji character or HTML entity. Headless Chromium print has rendered those as
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
-11. **Log the gaps before you call it done.** Every package ends up with pages the site
+12. **Log the gaps before you call it done.** Every package ends up with pages the site
    has no article for, and that list is the most valuable byproduct of building one: it
    is a ready-made content plan, already filtered to things a paying customer wanted
    enough to read. Add a block for your animal under **Site content gaps by package**
@@ -336,6 +378,67 @@ footer to match, per step 7 of the build workflow.
    - **Any number in the PDF with no site source at all**, because that is the copy no
      one can fact-check against the site later.
 
+13. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
+
+
+## Always keep a next-version notes file
+
+Every package gets `notes/{slug}-v{N+1}-notes.md`, written as you build, not afterward.
+Fitting a page count means cutting good content, and without this file that content gets
+cut twice: once out of the PDF and once out of memory, so the next edition researches and
+writes it again from nothing.
+
+What goes in it:
+
+- **The exact HTML of every block you removed**, in a fenced code block, with a one-line
+  label saying which page it came off and why it went. Reinstating a block should be a
+  paste plus a re-run of the overflow check, not a rewrite. Note its rough word count so
+  a future editor knows whether it needs a page split to absorb.
+- **The page count you landed on, and whether it was a floor or a choice.** Say whether
+  the number came from the measurement script or from judgment, so nobody re-litigates a
+  limit that was already measured.
+- **Ideas raised and never drafted.** The pages you wanted and did not build, with enough
+  detail to start from. This is usually the most valuable part of the file.
+- **The proposed gaps from step 12**, the topics you know this animal's keepers need that
+  neither the page list nor the site raised. They belong here as well as in the gap log:
+  the log drives site articles, this file drives the next edition of the PDF, and a topic
+  can deserve both. Keep them labeled as proposals so a later reader knows they still
+  need sourcing.
+- **A cut list for next time, in priority order.** Having just built the thing, you know
+  better than anyone which pages would survive being dropped, and which are the product.
+  Name the ones that must not be cut.
+
+Two rules that matter:
+
+- **Cut by parking, never by trimming.** When a page overflows, first split it or move a
+  block to a page with headroom; park the block only when neither works. Do not shave
+  sentences to make text fit, and never let `overflow:hidden` clip content silently. A
+  fact half-stated is worse than the same fact on the next page.
+- **Tighten layout before you cut content.** A `class="dense"` table, a `compact` list, a
+  callout at `margin:7pt 0`, or a two-column block reclaims 20 to 100 px a page and costs
+  nothing. Most small overflows are a layout problem wearing a content problem's clothes.
+
+The goldfish v3.0 rebuild is the worked example: `notes/goldfish-v4-notes.md`. It is
+also what step 0 makes mandatory reading for a goldfish v4: 17 parked blocks with their
+original markup, a measured 39-page floor, six undrafted ideas, and a ranked cut list.
+Writing the file and reading it are the two halves of the same rule, and the file is
+worth nothing if the next build starts without opening it.
+
+## Renumbering: generate it, don't hand-edit it
+
+Splitting or merging one page moves every page number after it, and there are three
+places each number appears: the TOC, the `.pagefoot`, and every in-text "page N"
+cross-reference. Hand-editing those is where stale numbers ship.
+
+Build the file from per-page fragments carrying `<!--PAGE key-->` and `<!--FOOT key-->`
+markers, write cross-references as symbolic `{{P:key}}` tokens, and let a small build
+script assign numbers in document order, generate the TOC from a section map, and resolve
+the tokens. The script should refuse to build on a duplicate page key, a page missing from
+the TOC, a TOC entry with no page, an unknown `{{P:key}}`, or a leftover placeholder. Then
+a split costs one edit instead of forty, and a wrong number becomes a build failure rather
+than a proofreading job. The goldfish v3.0 build script is the pattern.
+
+
 ## Pre-publish accuracy checks (learned the hard way)
 
 - Supplement schedule: plain calcium is the daily dust; calcium with D3 is 1 to 2 times
@@ -353,7 +456,7 @@ footer to match, per step 7 of the build workflow.
 
 ## Site content gaps by package
 
-The running list of site articles the packages need. Build workflow step 11 says to add
+The running list of site articles the packages need. Build workflow step 12 says to add
 a block here when you finish a package; this is what turns "the PDF says something the
 site doesn't" into a content plan.
 
@@ -575,3 +678,39 @@ sources disagree. The humidity range on page 8 is presented as an open disagreem
 than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it is one:
 40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
 dish plus one damp corner is what both sides actually do.
+
+### Goldfish v3.0 (Sep 2026)
+
+Already covered, do not rewrite: page 7's bowl-myth argument from
+`goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 16's slime coat and
+net-and-cup handling from `goldfish-handling-guide.mdx`. Page 25's enrichment research,
+the 90 percent planted versus 10 percent barren finding and the substrate foraging work,
+from `goldfish-enrichment-guide.mdx`. Note `betta-fish-water-parameters-guide.mdx`
+partially transfers: its GH and KH section and testing schedule are species-neutral, but
+its target ranges are betta numbers and a goldfish is a coldwater fish, so do not lift the
+table. `reptile-emergency-plan-guide.mdx` does **not** transfer at all, it is temperature
+floors for reptiles and a fish outage is an oxygen problem.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Cycling an aquarium, fishless and fish-in | 10, 11 | Cross-species (fish) | The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case |
+| Aquarium filtration: turnover, media types, maintenance | 8, 9 | Cross-species (fish) | The MDX gives 4 to 10x turnover and nothing else. Needs the gph math worked for common tank sizes, mechanical vs biological vs chemical and which to disturb, why manufacturer ratings overstate, and rinse-in-tank-water-only with the reason |
+| Freshwater pH, GH and KH for coldwater fish | 12 | Cross-species (fish) | The betta article covers hardness well but at tropical targets. Needs the goldfish-appropriate ranges and, more usefully, the KH-buffers-pH mechanism and why chasing a pH number with adjusting chemicals backfires |
+| Quarantining and treating a new or sick fish | 16, 24 | Cross-species (fish) | `quarantine` returns hits only in the angelfish guides, in passing. Needs the 2 to 4 week minimum, the bare hospital tank, seeding it from a mature sponge filter, and why medicating the display tank costs you the bacteria colony |
+| Aquarium power outages and transporting a fish | 33 | Cross-species (fish) | Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
+| Goldfish safe foods chart | 15, 16, 17 | Goldfish | Expand `goldfish-feeding-guide.mdx`, not a new URL. It has the diet shape but no tier chart. Pellet vs gel vs flake, the vegetable list with blanching, protein foods weekly not daily, and the never list with reasons |
+| Flukes, anchor worm, velvet, popeye and ulcers | 24 | Goldfish | Expand `goldfish-health-issues-guide.mdx`. It covers ich, fin rot, swim bladder, dropsy, fungus and ammonia, and stops there. The five added in v3.0 carry published veterinary doses that currently exist only in the PDF |
+| Goldfish varieties, tankmate matching and sexing | 19 | Goldfish | Nothing on the site. Fancy vs single-tail vs eye varieties with adult sizes and minimums, why mixing body types is a feeding-time mismatch rather than a preference, and the honest answer that sexing is unreliable outside breeding condition |
+| Reading fish waste | 26 | Cross-species (fish) | Nothing. White stringy versus pale trailing is the most useful early signal an owner has and it appears in no article |
+| Goldfish growth, body condition and lifespan | 20 | Goldfish | Nothing. Also the place to make the point that a fish is not weighed weekly, water readings are its vital signs, which contradicts the reptile-shaped owner log in the template |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the pH, GH and KH targets on page 12, the gph turnover figures on page 8, the
+growth table on page 20, the variety adult sizes and minimums on page 19, and the
+praziquantel and diflubenzuron doses on page 24 (those are from Merck, not from the site).
+
+**Source drift, unresolved.** `guides/fish.js` costs for goldfish still carry the
+`// Rough starting ranges, not verified current pricing` comment and disagree with the
+itemized budget on page 29, which sums to $208 to $500 of equipment against the JS
+block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
+`fish.js` so the two stop drifting.

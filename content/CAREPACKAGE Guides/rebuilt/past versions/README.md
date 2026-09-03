@@ -20,3 +20,12 @@ v3 build. The 22-page unversioned file is the edition currently on sale
 (`carePackages.js` has bearded-dragon at `status: 'live'`, `version: '2.0'`),
 and `Bearded_Dragon_Care_Package_v3.pdf` is the newer build that has not been
 published yet. Don't move the 22-page one here until the v3 listing goes up.
+
+`Goldfish_Care_Package.pdf` is **not** here either, for the same reason.
+`carePackages.js` has goldfish at `status: 'live'`, `version: '1.0'`,
+`pages: 21`, and the Gumroad listing still describes the 21-page edition, so
+that file is what buyers currently receive. `Goldfish_Care_Package_v3.pdf` is
+the 39-page rebuild waiting on a listing update. Move the 21-page file here,
+and update `carePackages.js` to version 3.0 with the new page count and blurb,
+only once the Gumroad listing goes up. Doing either one early leaves the store
+describing a product nobody is being sent.
