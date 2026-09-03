@@ -195,9 +195,9 @@ export const CARE_PACKAGES = [
     emoji: '🐍',
     status: 'coming-soon',
     price: '$8.99',
-    pages: 22,
+    pages: 33,
     version: '1.0',
-    blurb: 'Complete 22-page printable guide with thermostat-controlled heat targets, the humidity range that decides everything, feeding-refusal triage, and health red flags.',
+    blurb: 'Complete 33-page printable guide with thermostat and probe placement, the humidity range that decides everything, a full prey chart, health triage, and printable owner tools.',
     bullets: [
       'Housing, temperature and humidity, substrate, handling, feeding by age, and enrichment in one guide',
       'Health section with red flags, respiratory infection and scale rot, mouth rot, mites and thermal burns, and stuck shed, feeding refusal and regurgitation guidance',
