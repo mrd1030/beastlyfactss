@@ -150,27 +150,57 @@ feeder-insect pages for water-quality pages rather than simply losing them.
 1. Copy `source/_template.html` to `source/{slug}.html`.
 2. Pick an unused accent color triple (`--accent` / `--accent-dark` / `--accent-tint`).
    Check the other files' `:root` blocks so no two animals share one.
-3. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
+3. **Re-tone the cover chrome to match that accent.** The `:root` triple only drives the
+   interior pages. Page 1 carries its own hard-coded palette, and in `_template.html`
+   that palette is the bearded dragon's browns, so a new guide inherits them and ships a
+   brown cover behind an animal that has nothing brown about it. This regressed the
+   goldfish once already: v3.0's first build had a brown cover behind a teal photo
+   because the cover was copied from the template verbatim.
+
+   Every one of these is on the cover and every one needs changing:
+
+   | What | Template (dragon) | Goldfish | Axolotl |
+   |---|---|---|---|
+   | Backdrop gradient | `#2B2420,#3A2E24,#4A3524` | `#12262B,#163640,#1B4552` | `#2B2420,#33283A,#432E44` |
+   | Brand strip text | `#D8A876` | `#8FD0E0` | `#DBA4BE` |
+   | Kicker and "Inside" label | `#C77C3F` | `#5FB8D6` | `#C77CA0` |
+   | Icon and tick circle fill | `#E39257` | `#5FC8DC` | `#E39BC4` |
+   | Tick check and icon eye | `#2B2420` | `#12262B` | `#2B2420` |
+   | Headline | `#FBF3E7` | `#F2FAFB` | `#FBF3E7` |
+   | Subhead and chip text | `#D8CBB8` | `#C7DEE3` | `#D8CBB8` |
+   | "Inside" bullet text | `#E8DCC8` | `#EAF6F8` | `#E8DCC8` |
+   | Chip borders | `#6B5540` | `#3E6672` | `#6B5566` |
+   | Rule above "Inside" | `#5A4633` | `#2F5A66` | `#5A4633` |
+   | Photo overlay rgba | `43,36,32` / `30,24,18` | `18,38,43` / `13,28,32` | unchanged |
+
+   The gradient's first stop stays near-black in every guide; it is the second and third
+   stops that carry the hue. Tint the vertical photo overlay to the same dark, or its
+   bottom fade prints as a warm haze over cool water. Warm-toned animals (dragons, geckos,
+   tortoises, birds, rodents) can legitimately keep the browns; anything cool-toned should
+   not. Grep the cover block for `#3A2E24`, `#C77C3F`, `#E39257` and `#6B5540` before you
+   call the cover done, and confirm the render, since a brown cover looks deliberate in
+   markup and obvious on screen.
+4. Fill in placeholders page by page using the sourcing table above. Do not paraphrase
    numbers from memory. Copy the exact figure from the MDX and re-verify anything that
    looks off against a real external source before "fixing" it.
-4. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
+5. Give every temperature and dimension in both units: `95 to 110°F (35 to 43°C)`,
    `4×2×2 ft (120×60×60 cm)`. Gumroad buyers are global.
-5. Build the housing diagram last, as inline SVG, once the housing paragraph text is
+6. Build the housing diagram last, as inline SVG, once the housing paragraph text is
    final. Keep labels short (title / number / sub-label on separate lines). Check that
    every `<text>` fits inside its `<rect>` in the render; the bearded dragon v3 first
    render had two labels spilling out of their boxes.
-6. Base64-encode the chosen cover photo with a small script (never paste the base64
+7. Base64-encode the chosen cover photo with a small script (never paste the base64
    string into a chat context) and drop it into `{{COVER_IMAGE_DATA_URI}}` using the
    existing `mask-image` fade, never a flat-color gradient overlay. Pick a photo where
    the animal faces the headline (toward the left), it reads far better than one
    facing off the page.
-7. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
+8. Fix the TOC page numbers, every in-text "page N" cross-reference, and every
    `.pagefoot` page number once the final page count is locked in. Grep for `page `
    and check each one.
-8. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the major version on
+9. Render to `rebuilt/{Animal}_Care_Package_v{N}.pdf`, where N is the major version on
    the cover. Never overwrite the previous version's PDF; the old file stays as the
    record of what buyers of that version received.
-9. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
+10. Check for overflow. `.page` is `overflow:hidden`, so text that runs long
    is silently clipped, not pushed to the next page. Measure before trusting your eyes:
 
    ```bash
@@ -192,12 +222,12 @@ feeder-insect pages for water-quality pages rather than simply losing them.
    A cloud session has no internet access from Chromium, so Google Fonts won't load
    there. Download the woff2 files with curl and swap the `@import` for local
    `@font-face` rules in the render copy only; leave the `@import` in the source file.
-10. Icons must be small inline SVGs matching the existing minimalist style, never a raw
+11. Icons must be small inline SVGs matching the existing minimalist style, never a raw
    emoji character or HTML entity. Headless Chromium print has rendered those as
    broken or flatly wrong glyphs 3 separate times already (crested gecko, goldfish,
    axolotl all had this bug). The `&#9633;` checkbox glyph in the 12-month planner is
    the one exception that has rendered fine.
-11. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
+12. Park everything you cut into `notes/{slug}-v{N+1}-notes.md`. See the next section.
 
 ## Always keep a next-version notes file
 
