@@ -87,17 +87,28 @@ a reader can see why it's a range.
 
 ### Writing site articles for content the site does not have
 
-**This is a standing part of every package build, not a one-off backlog.** When a PDF
-page needs content no site article covers, the fix is to write the site article, not to
-let the PDF stay the only copy. Order of operations: write and publish the article
-first, then source the PDF page from it. That keeps the PDF and the site from
-disagreeing, and the research gets used twice instead of once.
+**Order of operations: the PDF ships first, the articles follow.** Do not stop a package
+build to go write five articles. Build and render the PDF, sourcing each page from the
+site where the site has it, then log what it did not have under **Site content gaps by
+package** near the end of this file (build workflow step 11). The articles are separate
+work, picked up when asked, and the log is what turns them into a plan.
 
-Until the article exists, the PDF text is the only copy, so the figures on that page have
-nothing to be fact-checked against later. That is the risk, and it is why every package
-logs its own gaps under **Site content gaps by package** near the end of this file. Add
-yours there before you call a package done (build workflow step 11), and pick off the
-cross-species rows first, since one article closes the same gap in every future package.
+How the gaps are found, which is mechanical rather than remembered: the page skeleton is
+fixed, so every page has a defined content requirement before the animal is chosen. Read
+what the site actually holds for that animal (`encyclopedia/{category}.js`,
+`guides/{category}.js`, and every `content/guides/{slug}-*.mdx`), map it onto the page
+list, and the pages left without a source are the gaps. Each one lands in one of three
+places: an existing cross-species article already covers it
+(`reptile-emergency-plan-guide`, `reptile-shedding-complete-guide`, the UVB guides), or
+it needs real research against verifiable external sources, or it gets logged. It is
+never filled from memory.
+
+Until an article exists, the PDF text is the only copy of those figures, so nothing can
+fact-check them against the site later. That is the actual risk the log tracks, and why
+the block gets written while the sourcing is fresh rather than later. Pick off the
+**cross-species** rows first, since one article closes the same gap in every future
+package, and when one does get written, re-source that PDF page from it and cross the
+row off.
 
 What the build checks actually enforce is worth knowing before you lean on them:
 
