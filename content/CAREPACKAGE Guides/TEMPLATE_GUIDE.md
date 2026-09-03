@@ -89,15 +89,42 @@ let the PDF stay the only copy. Order of operations: write and publish the artic
 first, then source the PDF page from it. That keeps the PDF and the site from
 disagreeing, and the research gets used twice instead of once.
 
-Those articles follow the same rules as any other (see docs/RULES.md): 1-2+ in-body
-internal links, real researched sources, and an entry in `RELATED_ARTICLES`
-(`beastlyfactss/src/lib/data/relatedArticles.js`) against the guide ids it actually
-serves. A slug not ending in a standard suffix (cost / handling / health-issues /
-tank-setup / feeding) does not auto-detect, so it needs that entry written by hand.
-Combine narrow topics so each article is long enough to stand on its own, and spread
-publish dates across days rather than dumping a batch on one. The four standard split
-guides stay as they are; these are additions, never replacements. Expanding an existing
-guide in place is often the better move than a new thin article.
+Those articles follow the same rules as any other (see docs/RULES.md), and what the
+build checks actually enforce is worth knowing before you lean on them:
+
+| Requirement | Enforced by | Covers a care package article? |
+|---|---|---|
+| 1-2+ in-body internal links, written into the prose | `scripts/check-internal-links.mjs` (`npm run check:links`) | **Yes.** Walks every `.mdx` under `content/`, so a new article is caught the moment it exists |
+| Every `RELATED_ARTICLES` slug resolves to a real file, every guide id key is real | `scripts/check-related-articles.mjs` (`npm run check:related`) | **Yes**, for dead slugs and typo'd keys, which is what catches a renamed article |
+| The article is attached to at least one guide at all | same script, orphan check | **No.** The orphan check only fires on articles tagged "Dog Health" or "Cat Health". A reptile, bird, or fish article with no entry passes silently |
+| Photos exist and are wired by id | `scripts/check-images.mjs` (`npm run check:images`) | Yes, when the article adds photos |
+
+That third row is the one that bites. `getAutoDetectedSlugs` wires a slug for free only
+when it is exactly `{guideId}-{suffix}` for one of the six standard suffixes
+(`cost-guide`, `handling-guide`, `health-issues-guide`, `tank-setup-guide`,
+`feeding-guide`, `enrichment-guide`, per `STANDARD_SUFFIXES` in
+`relatedArticles.js:117`). Note that CLAUDE.md lists five of those and omits
+`enrichment-guide`; the code is the authority, and it wires six. A species whose article
+prefix differs from its guide id (`african-grey` vs `african-grey-parrot-`, `tegu` vs
+`argentine-tegu-`) does not auto-detect either, even on a standard suffix, and is wired
+by hand.
+
+Most articles written for a care package page match none of that: `safe-foods-guide`,
+`brumation-guide`, `growth-weight-checks-guide`, `eggs-and-egg-binding-guide`, and
+`reptile-emergency-plan-guide` all match nothing and auto-detect against nothing. So
+**write the `RELATED_ARTICLES` entry by hand, every time**, against the guide ids the
+article actually serves, and do not expect a check to remind you. Nothing will. An
+unwired article is reachable only by search.
+
+Run `npm run check:links` and `npm run check:related` after installing the article, plus
+`npm run check:images` if it added photos. Stop there: per CLAUDE.md, content installs do
+not run `npm run build` unless explicitly asked.
+
+The rest is judgment, unenforced. Combine narrow topics so each article is long enough
+to stand on its own, and spread publish dates across days rather than dumping a batch on
+one. The four standard split guides stay as they are; these are additions, never
+replacements. Expanding an existing guide in place is often the better move than a new
+thin article.
 
 The v3 bearded dragon package drove the first round of this, and all of it is done and
 live:
