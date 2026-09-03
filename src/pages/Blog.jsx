@@ -24,6 +24,7 @@ import SaveButton from '@/components/shared/SaveButton';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
+import HeroImage from '@/components/shared/HeroImage';
 import GlossaryHighlighter from '@/components/blog/GlossaryHighlighter';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import CompactPostCard from '@/components/shared/CompactPostCard';
@@ -865,17 +866,18 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 doesn't push the article down. Hidden on lg+, where the
                 sidebar's always-open version already covers it. */}
             <div className="lg:hidden mb-6">
-              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} collapsible />
+              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} collapsible expectHeadings={(post.headingCount ?? 3) >= 3} />
             </div>
 
             {/* Featured image */}
             {post.image ? (
               <div className="mb-10">
-                <img
+                <HeroImage
                   src={post.image}
                   alt={post.imageAlt || post.title}
-                  className="w-full rounded-2xl shadow-lg"
-                  loading="lazy"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                  width={post.imageWidth}
+                  height={post.imageHeight}
                 />
               </div>
             ) : null}
