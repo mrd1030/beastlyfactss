@@ -28,6 +28,14 @@ function pathIs(pathname, exact) {
 
 // Order matters: more specific prefixes must be checked before their more
 // general parents (e.g. /encyclopedia/animal/ before /encyclopedia).
+//
+// Every lazy() route in App.jsx must have an entry here. A route that is
+// missing only fails when its chunk arrives after hydrateRoot has already
+// started: the page suspends at the root with no Suspense boundary (AppLayout
+// deliberately has none on the first render), React logs #418 on the retry
+// and never commits, and the page is left as static HTML with no
+// interactivity. It passes on a fast connection and fails on a slow one, so
+// it looks intermittent. Reproduced by delaying only the route chunk.
 const ROUTE_PRELOADS = [
   [p => p.startsWith('/encyclopedia/animal/'), () => import('@/pages/EncyclopediaAnimal')],
   [p => p.startsWith('/encyclopedia'), () => import('@/pages/Encyclopedia')],
@@ -38,7 +46,8 @@ const ROUTE_PRELOADS = [
   [p => p.startsWith('/gear'), () => import('@/pages/Gear')],
   [p => p.startsWith('/blog'), () => import('@/pages/Blog')],
   [p => p.startsWith('/chronicles'), () => import('@/pages/Chronicles')],
-  [p => p.startsWith('/quiz') || pathIs(p, '/trivia'), () => import('@/pages/Quiz')],
+  [p => pathIs(p, '/quiz'), () => import('@/pages/QuizHub')],
+  [p => p.startsWith('/quiz/') || pathIs(p, '/trivia'), () => import('@/pages/Quiz')],
   [p => pathIs(p, '/pack'), () => import('@/pages/Pack')],
   [p => pathIs(p, '/about'), () => import('@/pages/About')],
   [p => pathIs(p, '/contact'), () => import('@/pages/Contact')],
@@ -51,8 +60,17 @@ const ROUTE_PRELOADS = [
   [p => pathIs(p, '/terms'), () => import('@/pages/Terms')],
   [p => pathIs(p, '/privacy'), () => import('@/pages/Privacy')],
   [p => pathIs(p, '/categories'), () => import('@/pages/Categories')],
-  [p => pathIs(p, '/search'), () => import('@/pages/Search')],
+  [p => p.startsWith('/search'), () => import('@/pages/Search')],
   [p => pathIs(p, '/glossary'), () => import('@/pages/Glossary')],
+  [p => p.startsWith('/exotic-pet-laws'), () => import('@/pages/ExoticPetLaws')],
+  [p => p.startsWith('/beastlypedia/group/'), () => import('@/pages/Beastlypedia')],
+  [p => pathIs(p, '/beastlypedia'), () => import('@/pages/Beastlypedia')],
+  [p => p.startsWith('/beastlypedia/'), () => import('@/pages/BeastfileDetail')],
+  [p => p.startsWith('/care-packages/store'), () => import('@/pages/CarePackagesStore')],
+  [p => p.startsWith('/care-packages/why-we-exist'), () => import('@/pages/CarePackagesWhyWeExist')],
+  [p => p.startsWith('/care-packages/faq'), () => import('@/pages/CarePackagesFaq')],
+  [p => pathIs(p, '/care-packages'), () => import('@/pages/CarePackages')],
+  [p => p.startsWith('/feed'), () => import('@/pages/Feed')],
 ];
 
 // Preloads whatever the current URL needs. Never throws - a failed/slow
