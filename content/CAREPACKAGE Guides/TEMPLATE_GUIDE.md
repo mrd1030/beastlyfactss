@@ -348,3 +348,99 @@ precedence rule, and two of the first calls were wrong.
   6.5 to 7.5. External sources back 6.5 to 7.5 as ideal with tolerance to about 8.0 and
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
+
+### Rabbit v2.0 (Sep 2026)
+
+The first mammal package on the v3 template, and the layout needed real surgery: the
+reptile heat, UVB, thermostat and substrate pages have no mammal equivalent, so they were
+replaced with indoors versus outdoors and temperature, flooring and litter training,
+rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
+because GI stasis needs three pages on its own. It came out at 39 pages.
+
+For the next mammal build: expect 38 to 40 pages, expect the health section to be the
+long one rather than the husbandry section, and expect two pages that reptiles never need,
+a vet-choice page and a companionship page.
+
+Already covered, do not rewrite: `rabbit-tank-setup-guide.mdx` carries the House Rabbit
+Society space standard and the litter-training method. `rabbit-feeding-guide.mdx` carries
+the full life-stage table and the never-feed list. `rabbit-gi-stasis-guide.mdx` and
+`rabbit-health-issues-guide.mdx` between them cover triggers, warning signs and treatment.
+`rabbit-enrichment-guide.mdx` covers all three studies.
+`why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it.mdx` covers the
+dental mechanism.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Small-mammal temperature, heat stress &amp; cold | 7 | Cross-species (small mammals) | Nothing anywhere. The tank setup guide gives the indoor-versus-outdoor lifespan figures but no temperature ranges, no heatstroke signs, and no cooling method. Serves rabbit, guinea pig, chinchilla, hamster, and every future small mammal |
+| Bonding a pair, step by step | 15 | Rabbit | Nothing, and `rabbit-enrichment-guide.mdx` currently promises that the handling guide covers introductions when it does not (see drift below). Side-by-side pens, neutral territory, stress bonding, what is normal negotiation versus a real fight, and the weeks it actually takes |
+| Spay and neuter beyond the price | 16 | Rabbit | `rabbit-cost-guide.mdx` has the cost and the 80% uterine cancer figure. Nothing on timing, what it changes behaviorally, how to choose a clinic, or the point that rabbits must **not** be fasted before surgery, which is also the best question for vetting a practice |
+| Rabbit-proofing a room | 6 | Rabbit | Nothing. Cables first because that is the one that kills, then plants, baseboards, carpet corners, and pairing every block with an outlet |
+| Grooming, nails &amp; molting | 24 | Cross-species (small mammals) | Nothing. Molt frequency, why a rabbit cannot cough up a hairball and what that means for GI stasis, nail trim interval and technique, scent glands, and why you never bath a rabbit |
+| Reading droppings &amp; cecotropes | 25 | Rabbit | `rabbit-gi-stasis-guide.mdx` explains cecotropes in a FunFact. There is no reference for what the litter box is telling you, which is the earliest signal this species gives and the cheapest daily check in the whole package |
+| Small-mammal power outages &amp; travel | 31, 32 | Cross-species (small mammals) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. Note the advice inverts for a rabbit: keep feeding through an outage, because a rabbit that stops eating is in more danger than a cold one |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the temperature table and heatstroke signs on page 7, the bonding stages on page
+15, the spay and neuter timing on page 16, the nail trim interval and scent gland
+schedule on page 24, and the droppings reference table on page 25.
+
+**Source drift found while building:**
+
+- **Three different GI stasis thresholds across three articles.**
+  `rabbit-feeding-guide.mdx` says 3 to 12 hours, `rabbit-gi-stasis-guide.mdx` says 8 to
+  12 hours, and `rabbit-health-issues-guide.mdx` says 8 hours or more. This is the single
+  most important number in rabbit care and it should read the same everywhere. The package
+  uses 8 hours as the line, with the 3-to-12 spread described as the range sources give.
+  Pick one and propagate it.
+- **A broken cross-reference promise.** `rabbit-enrichment-guide.mdx` says "Our handling
+  guide covers introductions." `rabbit-handling-guide.mdx` contains nothing about
+  introductions or bonding. Either write the bonding article above and point at it, or fix
+  the sentence.
+- **Pellet and green portions disagree between guides.**
+  `rabbit-tank-setup-guide.mdx` gives 1/4 cup of pellets per 5 lb;
+  `rabbit-feeding-guide.mdx` gives 1/8 to 1/4 cup per 5 to 6 lb. The dedicated feeding
+  guide's range is the better figure and is what the package uses. Same for greens, where
+  the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
+  vague to act on next to the setup guide's 1 cup per 2 lb.
+
+### Tarantula v2.0 (Sep 2026)
+
+The first invertebrate package on the v3 template. The reptile heat, UVB and thermostat
+pages collapse into a single temperature and ventilation page, which frees a lot of room,
+and the freed room goes to things no reptile package needs: two pages on molting, a page
+on water alone, a rehousing method, urticating hair and bite first aid, and a legality
+page. It came out at 43 pages, the longest in the series so far, largely because molting
+and the handling question each split in two.
+
+For the next invertebrate build: expect 40 to 43 pages, expect husbandry to be short and
+the behavior and molting sections to be long, and expect the health section to be weighted
+toward prevention because veterinary care for invertebrates barely exists.
+
+Already covered, do not rewrite: `tarantula-legal-guide.mdx` carries the full state table
+on page 28. `tarantula-enrichment-guide.mdx` carries the PLoS ONE study with all four of
+its findings, which is the honest version and the one the package uses.
+`tarantula-feeding-guide.mdx` carries the life-stage intervals and the seven reasons for
+refusing food. `invertebrate-molting-guide.mdx` covers molting cross-species, though not
+at the depth pages 13 and 14 needed.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Household pesticides and invertebrate pets | 26 | Cross-species (invertebrates) | Nothing anywhere, and it is one of the few ways a well-kept spider dies suddenly with no warning. Bug spray, plug-in insect killers, flea and tick treatment on a pet in the same room, ant powder, and wild-caught feeders. Serves tarantula, scorpion, mantis, millipede, and every future invertebrate |
+| Rehousing an invertebrate | 18, 19 | Cross-species (invertebrates) | Nothing. The catch-cup-and-card method, working inside a larger tub, low to the ground, what to do when it bolts, and never during a molt. Two pages here because the preparation and the method are separate jobs |
+| Urticating hair first aid | 17 | Cross-species (New World species) | `tarantula-handling-guide.mdx` explains the risk and cites the eye-injury literature but gives no first aid. Tape rather than washing for skin, flush and same-day attention for eyes, ventilation and a mask for airway |
+| Sexing a tarantula from the exuvia | 27 | Tarantula | Nothing. The spermatheca in the shed skin is the only reliable home method, and it decides whether the animal is a 5-year pet or a 20-year one, which makes it more consequential here than sexing is for most species |
+| Enclosure type by lifestyle | 7 | Tarantula | `tarantula-tank-setup-guide.mdx` says most pet species are terrestrial and stops there. No terrestrial versus fossorial versus arboreal table, which is the decision every other husbandry choice depends on, and getting it wrong is the commonest genuine welfare failure in the hobby |
+| Water, and reading the abdomen | 9 | Tarantula | `tarantula-health-issues-guide.mdx` covers dehydration as a condition. Nothing frames the water dish as the single most important object in the enclosure, and there is no reference for reading the abdomen from plump through premolt to death curl |
+| Invertebrate power outages, travel &amp; shipping | 35, 36 | Cross-species (invertebrates) | Nothing. Mostly reassuring, which is worth writing down: a tarantula is fine alone for two weeks. The transport and shipping half is where the real risk is |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the enclosure height ceiling and the 3&times;-leg-span floor rule on page 6, the
+substrate depths by type on page 7, the abdomen reference table on page 9, the premolt
+sign list and hardening windows on pages 13 and 14, and the sexing method on page 27.
+
+**Source drift found while building:** none. The tarantula guides agree with each other,
+which is worth noting because they are also unusually honest about where the underlying
+sources disagree. The humidity range on page 8 is presented as an open disagreement rather
+than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it is one:
+40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
+dish plus one damp corner is what both sides actually do.
