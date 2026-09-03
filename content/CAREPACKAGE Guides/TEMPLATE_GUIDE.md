@@ -1237,3 +1237,102 @@ exactly at $184 to $477, but reaches $470 to $1,200 for the first year, and the 
 is four line items no starter list carries: a gram scale, a travel carrier, a sleep cage,
 and a real veterinary line rather than an amortized annual check. The MDX first-year figure
 is the one worth revisiting.
+
+### Guinea Pig 2.0, t3 (Sep 2026)
+
+The third mammal package, and a rebuild rather than a new build: 1.0 was 22 pages on the
+pre-t3 layout. It came out at 39 pages, at the rabbit end of the small-mammal range rather
+than the hamster end, and the reason is worth carrying forward: **page count in this class
+follows the animal's social life and the size of its health section, not its body size.**
+A guinea pig is smaller than a rabbit and needs the same page count, because it is social
+(so it needs the pairing and bonding pages a hamster does not) and because it has the
+longest health section in the series so far at ten pages. Source is fragments plus a build
+script in `source/guinea-pig-src/`, over five page files, and
+`notes/guinea-pig-v3-notes.md` carries the parked blocks, the per-page free space, seven
+undrafted page ideas and a ranked cut list.
+
+Only three pages needed any trimming, which is the Budgie 2.0 head CSS doing its job. Use
+that head as the starting point for the next package in any class.
+
+Already covered, do not rewrite: `guinea-pig-tank-setup-guide.mdx` carries the 7.5 and
+10.5 sq ft figures, the solid-floor rule, the C&C recommendation, the bedding list and the
+"never in the water" point. `guinea-pig-scurvy-vitamin-c-guide.mdx` is the best article
+behind this package and carries the three-stage scurvy table, the pellet degradation
+argument and the bell pepper point in full; page 22 is sourced almost entirely from it.
+`guinea-pig-feeding-guide.mdx` carries the seven reasons a guinea pig stops eating, the
+8 to 12 hour threshold, the 24 to 48 hour deterioration window and the 24 to 72 hour
+recovery figure, and it is unusually good. `guinea-pig-handling-guide.mdx` carries the
+approach-from-the-side method, both-ends support, stay-low, and the stress and contentment
+signals. `guinea-pig-enrichment-guide.mdx` carries the up-to-80% foraging figure, the
+hides-reduce-stress research and the multiple-hides point. Note
+`reptile-emergency-plan-guide.mdx` does **not** transfer, for the same reason the Rabbit
+block gives: the advice inverts, and in an outage a guinea pig keeps eating.
+
+Rows already open on the Rabbit 2.0 block that this package hit identically, and that are
+**extended there rather than repeated here**: small-mammal temperature, heat stress and
+cold (pages 7 and 35, and this build found published figures to write it from, below);
+grooming, nails and molting (page 16, plus the boar-cleaning section below); and
+small-mammal power outages and travel (page 35, with the keep-feeding inversion confirmed
+for a second species). Two Rabbit rows do **not** transfer and get their own rows below:
+bonding, because the method genuinely differs, and reading droppings, because cecotropes
+are the rabbit's story and consistency and count are the guinea pig's.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Antibiotic-associated enterotoxemia in small mammals | 27, 32 | Cross-species (small mammals) | **Proposed, and the highest-value row in this block by a distance.** Zero hits anywhere in `content/` or `src/`. A guinea pig's gut flora is predominantly Gram-positive, so antibiotics that target Gram-positive organisms wipe it out and let toxin-producing <em>Clostridium</em>, particularly <em>C. difficile</em>, overgrow. Penicillin, ampicillin, streptomycin, clindamycin, lincomycin, spiramycin, chlortetracycline, erythromycin and bacitracin are all implicated. Needs the list, the mechanism, the signs, and the framing that this is a question to ask rather than a prescription to refuse. Serves guinea pig, chinchilla, rabbit, hamster, degu and every future hindgut-fermenting small mammal. **Nothing else logged in this file is as likely to prevent a death caused by an ordinary vet visit** |
+| Sexing a guinea pig, and the breeding deadline | 17, 9 | Guinea pig | **Proposed.** Nothing on the site, and mis-sexing at point of sale is common enough that surprise litters are routine. Two things belong in it. Sows can conceive from 4 to 5 weeks, so mixed litters separate at three weeks. And the pubic symphysis ossifies in a sow who has never given birth, so a first litter after about 6 to 9 months means obstructed labor and a caesarean or death, which is the concrete reason an intact boar and a sow must not share a cage. Also the four to six week post-neuter fertility window, which produces litters every year |
+| Heat stress in small mammals, as an emergency page | 7, 35 | Cross-species (small mammals) | **Extends the Rabbit block's row, which asked for temperature ranges and cooling methods and had no figures.** This build found them: comfortable at 65 to 79&deg;F (18 to 26&deg;C) with 30 to 60% humidity, dangerous above 82&deg;F (28&deg;C), and a genuinely comfortable band nearer 64 to 73&deg;F. No sweat glands. The sign order is lying stretched flat with the back feet trailing, then panting, then drooling, then weakness, then convulsions. First aid is cool but not iced water on the fur then straight to a vet, because iced water shuts the surface vessels and slows cooling. The article should carry all of it |
+| Bonding two guinea pigs, step by step | 10 | Guinea pig | Nothing, and the Rabbit block's bonding row does not transfer: neutral territory and a full cage strip do most of the work here, there is no rabbit-style stress bonding, and the normal-negotiation list (rumblestrutting, mounting, teeth chattering, chasing) is different enough that borrowing the rabbit version would mislead. Needs the sequence, the separate-now list, the two-of-everything rule, and the honest note that a small number of pairings fail and that is not a reason to keep either animal alone |
+| Reading guinea pig droppings | 28 | Guinea pig | Nothing. The Rabbit block logged its own version and it does not transfer: a rabbit owner is reading cecotropes and a guinea pig owner is reading count, size and dryness as a daily proxy for gut motility and dental function. Needs the size-and-count reference, soft against truly liquid, the normal chalky calcium residue in the urine, and cecotrophy as normal behavior that an obese or long-coated pig may be unable to perform |
+| Ovarian cysts, at article depth | 25 | Guinea pig | Expand `guinea-pig-health-issues-guide.mdx`, not a new URL. It currently says "ovarian cysts, which show up in intact females" and stops. This is the most common reproductive tract disorder in sows, and the single sign that identifies it, **symmetrical flank hair loss with normal skin underneath**, is exactly what distinguishes it from mites and appears nowhere on the site. Needs that, plus the swollen abdomen, crusty nipples and temperament change, and the hormonal, draining and surgical options honestly compared |
+| Bladder stones and urinary disease, at article depth | 24 | Guinea pig | Expand the same article. One clause currently. Needs calcium carbonate as the stone type, the dietary levers (alfalfa in adults, the same high-calcium green every day, low water intake), the sign list with squeaking on urination as the memorable one, that a fully blocked bladder is fatal within a day, and that there is no dietary way to dissolve a formed stone |
+| Guinea pig vocalizations and body language | 11 | Guinea pig | **Proposed.** `guides/smallMammals.js` lists five sounds in a sentence and the FAQ explains wheeking. This species is the most vocal in the whole catalogue and the sounds are genuinely diagnostic: a high tense purr means the opposite of a low slow one, and rapid teeth chattering is a warning that owners read as cute. Pairs naturally with popcorning and the freeze |
+| The rectal pouch in older boars | 16 | Guinea pig | Nothing. Boars have a rectal pouch behind the anus that becomes impacted with feces in older intact males, causing odor, irritation, infection and secondary urinary infections. It is a weekly owner task for any boar over about two, it is unpleasant enough that nobody warns buyers, and no site article mentions it. Pairs with the grease gland, which the Rabbit grooming row does not cover either |
+| Anesthesia and surgery in guinea pigs | 27 | Cross-species (small mammals) | **Proposed.** Two things that differ from a dog or a cat and that owners are never told: guinea pigs are **not fasted** before anesthesia, because they cannot vomit and a fasted herbivore arrives with a slowing gut; and the cage mate should come to the appointment, because a pig recovering alone eats less and eating is the whole game. Belongs with the antibiotics article above or beside it |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the per-kilogram vitamin C figures on pages 4, 13 and 28; the 1 to 2 teaspoon pellet
+portion and the 1 to 2 cup produce figure on pages 15 and 16; adult weights split by sex,
+body temperature, heart rate and respiratory rate on pages 4 and 18; gestation, litter size,
+weaning age and the 4 to 5 week conception figure on page 17; the pubic symphysis deadline
+on page 17; the ivermectin and selamectin dosing on page 26; the 4 to 6 week dental
+recurrence interval on page 20; the antibiotic list on page 27; the whole heat-stress
+sequence on pages 7 and 35; the rectal pouch on page 16; and the itemized budget on page 30.
+
+**Source drift found while building.** Five, and the pellet one is the largest disagreement
+found in any package in this series.
+
+- **Pellet portion, off by roughly a factor of three.** `guinea-pig-tank-setup-guide.mdx`
+  and `guides/smallMammals.js` both give 1/8 cup, about 2 tablespoons, per pig per day. The
+  Merck Veterinary Manual gives **1 to 2 teaspoons**. Two tablespoons is six teaspoons, so
+  the site figure is three to six times the veterinary one, on the one component of the diet
+  that displaces hay when overfed. The package prints 1 to 2 teaspoons as the starting
+  point, says the larger figure suits a growing, pregnant or underweight animal, and tells
+  the reader to let hay intake and body condition decide. Both site files need correcting,
+  and this is the one to do first.
+- **Vitamin C, given as a flat figure where the source is per kilogram.**
+  `guinea-pig-tank-setup-guide.mdx` says "10 to 50 milligrams a day," which is VCA's flat
+  figure and is defensible on its own. Merck gives **10 to 25 mg/kg daily for adults and
+  30 mg/kg or more for growing, pregnant, lactating or ill animals**, which scales with the
+  animal and carries the life-stage multiplier the flat figure loses entirely. The package
+  prints the per-kilogram figures as primary and notes that the two overlap at roughly 10 to
+  25 mg for a typical 900 g adult. The site should carry both, with the per-kg one leading.
+- **Floor space, contradicting itself inside one paragraph.** `guides/smallMammals.js` says
+  "the minimum is 7.5 square feet of unobstructed floor space, **the same whether it's one
+  guinea pig or a pair**" and then, two sentences later, recommends at least 10.5 sq ft for
+  a pair. Merck gives 7.5 sq ft for one plus 2 to 4 sq ft per additional animal, which
+  agrees with the second half and not the first. Delete the clause.
+- **Lifespan, and a `wildLifespan` field for a species with no wild population.**
+  `encyclopedia/smallMammals.js` gives `bio.wildLifespan: "4-8 years"` for an animal whose
+  own `habitat` field correctly reads "Fully domesticated; no wild population." The field is
+  meaningless here and should hold the captive figure or be blanked. `guides/smallMammals.js`
+  gives 4 to 8 with 5 to 7 average; LafeberVet gives a mean of 6 to 8. The package prints
+  4 to 8 with 6 to 8 typical under good care.
+- **Cost, and it does not add up against itself.** `guinea-pig-cost-guide.mdx` headlines
+  $33 to $70 a month for one pig and $60 to $135 for a pair, then breaks the pair down as
+  $30 to $50 pellets plus $20 to $50 vegetables plus $40 to $60 hay, which totals $90 to
+  $160 and exceeds its own stated range. The pellet line is also implausible on its own: at
+  1 to 2 teaspoons per pig per day a pair gets through roughly 600 g a month, which is not
+  $30 to $50 of anything. Page 30 itemizes to **$71 to $172 a month for a pair before vet
+  costs**, with hay at $25 to $60 and pellets at $6 to $15, and the lines sum to the totals.
+  The headline and the breakdown both need fixing.
