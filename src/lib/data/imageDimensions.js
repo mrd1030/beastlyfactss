@@ -329,9 +329,17 @@ export const IMAGE_DIMENSIONS = {
     "width": 1248,
     "height": 832
   },
+  "/assets/images/beagle-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/bearded-dragon-vs-leopard-gecko.jpg": {
     "width": 1600,
     "height": 1067
+  },
+  "/assets/images/bengal-cat-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/betta-fish-enrichment.jpg": {
     "width": 1168,
@@ -353,6 +361,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/border-collie-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/box-turtle-enrichment.jpg": {
     "width": 1168,
     "height": 784
@@ -362,6 +374,14 @@ export const IMAGE_DIMENSIONS = {
     "height": 1080
   },
   "/assets/images/budgie-vs-cockatiel.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/bulldog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/cat-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -389,11 +409,23 @@ export const IMAGE_DIMENSIONS = {
     "width": 784,
     "height": 1168
   },
+  "/assets/images/dachshund-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/dog-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/ferret-adrenal-disease.jpg": {
     "width": 1620,
     "height": 1080
   },
   "/assets/images/ferret-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/french-bulldog-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -489,6 +521,10 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/labrador-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/leopard-gecko-temperature.jpg": {
     "width": 784,
     "height": 1168
@@ -498,6 +534,10 @@ export const IMAGE_DIMENSIONS = {
     "height": 784
   },
   "/assets/images/madagascar-hissing-cockroach-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
+  "/assets/images/persian-cat-enrichment.jpg": {
     "width": 1168,
     "height": 784
   },
@@ -525,9 +565,17 @@ export const IMAGE_DIMENSIONS = {
     "width": 1168,
     "height": 784
   },
+  "/assets/images/siberian-husky-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
+  },
   "/assets/images/snake-brumation.jpg": {
     "width": 1620,
     "height": 1080
+  },
+  "/assets/images/sphynx-cat-enrichment.jpg": {
+    "width": 1168,
+    "height": 784
   },
   "/assets/images/tokay-gecko-enrichment.jpg": {
     "width": 1168,
@@ -540,5 +588,5 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/welcome-beastlyfacts.jpg": {
     "width": 1168,
     "height": 784
-  },
+  }
 };
