@@ -1130,3 +1130,298 @@ far.
   in other animals. The captive figure also disagrees with the cost guide and with VCA, which
   both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
   Worth splitting that field and picking one captive range across the three files.
+
+### Budgie 2.0, t3 (Sep 2026)
+
+The second bird package, and a rebuild rather than a new build: 1.0 was 20 pages on the
+pre-t3 layout. It came out at 39 pages. Source is fragments plus a build script in
+`source/budgie-src/`, and `notes/budgie-v3-notes.md` carries the parked blocks, the
+per-page free space, seven undrafted page ideas and a ranked cut list.
+
+**Read the head CSS note in that file before the next build of anything.** The lovebird
+head was already tightened from `_template.html`; this build tightened it again (line
+height 1.40, `p`/`li` at 10.1pt, `td` padding 4.5pt, callouts at 8/12pt and 10pt/1.40,
+`check-item` 4pt/9.8pt, `h2.h` 13pt with 9/3 margins, `table.dense td` 2.6pt/1.30) and
+that one pass took the guide from 22 overflowing pages to zero, reclaiming roughly 130 to
+200 px a page. It is worth more than every content cut combined and it should be the first
+move on any package that runs long, not the last.
+
+Confirms the bird row: 36 to 39 for a small parrot held, and the lovebird's finding that
+**health sources well and husbandry sources badly** held exactly. Nine of the rows below
+are cross-species rows the lovebird block already opened, and they are extended there
+rather than duplicated here.
+
+Already covered, do not rewrite: `budgie-tank-setup-guide.mdx` carries the width-over-height
+argument, the half-inch bar spacing, the perch variety point, the 10 to 12 hour darkness
+figure and the PTFE warning. `budgie-health-issues-guide.mdx` names fatty liver, lipomas
+and xanthomas, scaly face mites, egg binding, psittacosis and the same-day red flag list.
+`budgie-cere-color-guide.mdx` is the best single article behind this package and carries
+the whole of page 16's cere material, including the point that a brown crusty cere means
+different things in the two sexes. `budgie-handling-guide.mdx` carries the settle-first
+week, the three-step taming progression, the no-dominance rule and the hen-bites-harder
+note. `budgie-enrichment-guide.mdx` carries foraging-first and the enrichment and plucking
+link. Note `reptile-emergency-plan-guide.mdx` does **not** transfer, for the same reason it
+does not transfer to the lovebird.
+
+Rows already open on the Lovebird block that this package hit identically, and that are
+**extended there rather than repeated here**: household hazards for pet birds (page 8);
+photoperiod, sleep and hormonal management (pages 7, 17, 33); converting a seed eater to
+pellets (page 10); quarantining a new bird (pages 27, 35); wing clipping (page 15);
+reading bird droppings (page 26); bird power outages, travel and transport (page 34);
+molt in companion birds (page 25); and choosing a bird and where from (proposed, page 4).
+Two notes to add to those rows from this build. The **quarantine** row now has a
+citable public-health figure, 30 to 45 days with testing or prophylactic treatment before
+joining a group, from the NASPHV and CDC psittacosis compendium, which also gives the
+45-day doxycycline course and the cleaning precautions; the article should be written
+around that document. And the **pellet conversion** row has a second veterinary schedule
+worth including beside VCA's lovebird one: VCA's budgie page gives four methods rather
+than a percentage ramp (pellets first thing in the morning, spread on a flat surface,
+ground to powder over a moist food, or mixed into the seed with the seed decreasing),
+plus the honest line that conversion takes days, weeks or months.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
+| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
+| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Proposed.** Zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
+| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | Nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
+| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
+| Talking and training a budgie | 9, 13 | Budgie | The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
+| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
+| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the MSD cage table figure of 20&times;20&times;30 in and the 3/8 in bar spacing on
+pages 4, 5, 28 and 29; the 25 to 35 g weight range and the keel scoring on page 16; the
+normal heart rate, respiratory rate and body temperature on page 19; the clutch size and
+18-day incubation on page 17; the leuprolide and deslorelin dosing on page 17; the
+ivermectin and moxidectin dosing on page 23; the amphotericin B protocol and the 10 to 80%
+mortality figure on page 23; the Lugol's iodine figure on page 23; the polyomavirus
+timeline and vaccine schedule on page 22; the lead and zinc source lists on page 8; the
+30 to 45 day quarantine and the human psittacosis picture on pages 27 and 21; and the
+whole itemized budget on page 30.
+
+**Source drift found while building.** Four, and the millet one is the most consequential
+because it concerns the food every budgie owner overfeeds.
+
+- **Millet spray frequency.** `guides/birds.js` says "a small piece 2 to 3 times per week
+  maximum." VCA's budgie feeding page says millet spray or branches "should only be offered
+  in small quantities once or twice a month," and adds that honey sticks are not
+  recommended at all by most avian veterinarians. That is roughly a tenfold difference on
+  the single highest-fat thing in the cage, in a species whose commonest killer is fatty
+  liver disease. The package uses the VCA figure. `birds.js` needs correcting.
+- **Pellet share.** `budgie-tank-setup-guide.mdx` says 60 to 80% pellets with 20 to 25%
+  fresh, which matches VCA exactly and is right. `guides/birds.js` says 60 to 70% on the
+  budgie entry, and the lovebird block already flagged the same 60 to 70% line appearing on
+  several species in that file. One correction pass fixes both.
+- **Lifespan, three different figures and none of them the source's.**
+  `encyclopedia/birds.js` gives `bio.wildLifespan: "4-6 years (up to 12-15 years in
+  captivity)"`, which is the same field-stuffing bug the lovebird block flagged, and
+  `guides/birds.js` says 7 to 12 in one FAQ. LafeberVet's parakeet information sheet gives
+  a mean life span of 7 to 15 years. The package prints 7 to 15 with the note that the low
+  end is almost always diet. Split the encyclopedia field and pick one captive range across
+  the three files.
+- **Cage minimum, and it is a genuine disagreement rather than an error.**
+  `budgie-tank-setup-guide.mdx` gives 18&times;18&times;18 in minimum and 30&times;18&times;18
+  for a pair; `guides/birds.js` gives 18&times;18&times;24. LafeberVet gives a minimum of 18 in
+  wide and long with the note that length beats height, and the MSD Veterinary Manual's
+  cage table gives 20&times;20&times;30 in with 0.5 in bar spacing. Neither was picked: page 5
+  prints 18&times;18 in as the floor and 20&times;20&times;30 in as the target and says why,
+  which is the same treatment the lovebird package gave the same disagreement. Bar spacing
+  is printed as a range, 3/8 to 1/2 in, for the same reason.
+
+**Cost.** `guides/birds.js` still carries the `// Rough starting ranges, not verified
+current pricing` comment. `budgie-cost-guide.mdx` gives $175 to $475 for setup and $350 to
+$900 for the first year. The itemized budget on page 30 reproduces the setup figure almost
+exactly at $184 to $477, but reaches $470 to $1,200 for the first year, and the difference
+is four line items no starter list carries: a gram scale, a travel carrier, a sleep cage,
+and a real veterinary line rather than an amortized annual check. The MDX first-year figure
+is the one worth revisiting.
+
+### Guinea Pig 2.0, t3 (Sep 2026)
+
+The third mammal package, and a rebuild rather than a new build: 1.0 was 22 pages on the
+pre-t3 layout. It came out at 39 pages, at the rabbit end of the small-mammal range rather
+than the hamster end, and the reason is worth carrying forward: **page count in this class
+follows the animal's social life and the size of its health section, not its body size.**
+A guinea pig is smaller than a rabbit and needs the same page count, because it is social
+(so it needs the pairing and bonding pages a hamster does not) and because it has the
+longest health section in the series so far at ten pages. Source is fragments plus a build
+script in `source/guinea-pig-src/`, over five page files, and
+`notes/guinea-pig-v3-notes.md` carries the parked blocks, the per-page free space, seven
+undrafted page ideas and a ranked cut list.
+
+Only three pages needed any trimming, which is the Budgie 2.0 head CSS doing its job. Use
+that head as the starting point for the next package in any class.
+
+Already covered, do not rewrite: `guinea-pig-tank-setup-guide.mdx` carries the 7.5 and
+10.5 sq ft figures, the solid-floor rule, the C&C recommendation, the bedding list and the
+"never in the water" point. `guinea-pig-scurvy-vitamin-c-guide.mdx` is the best article
+behind this package and carries the three-stage scurvy table, the pellet degradation
+argument and the bell pepper point in full; page 22 is sourced almost entirely from it.
+`guinea-pig-feeding-guide.mdx` carries the seven reasons a guinea pig stops eating, the
+8 to 12 hour threshold, the 24 to 48 hour deterioration window and the 24 to 72 hour
+recovery figure, and it is unusually good. `guinea-pig-handling-guide.mdx` carries the
+approach-from-the-side method, both-ends support, stay-low, and the stress and contentment
+signals. `guinea-pig-enrichment-guide.mdx` carries the up-to-80% foraging figure, the
+hides-reduce-stress research and the multiple-hides point. Note
+`reptile-emergency-plan-guide.mdx` does **not** transfer, for the same reason the Rabbit
+block gives: the advice inverts, and in an outage a guinea pig keeps eating.
+
+Rows already open on the Rabbit 2.0 block that this package hit identically, and that are
+**extended there rather than repeated here**: small-mammal temperature, heat stress and
+cold (pages 7 and 35, and this build found published figures to write it from, below);
+grooming, nails and molting (page 16, plus the boar-cleaning section below); and
+small-mammal power outages and travel (page 35, with the keep-feeding inversion confirmed
+for a second species). Two Rabbit rows do **not** transfer and get their own rows below:
+bonding, because the method genuinely differs, and reading droppings, because cecotropes
+are the rabbit's story and consistency and count are the guinea pig's.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Antibiotic-associated enterotoxemia in small mammals | 27, 32 | Cross-species (small mammals) | **Proposed, and the highest-value row in this block by a distance.** Zero hits anywhere in `content/` or `src/`. A guinea pig's gut flora is predominantly Gram-positive, so antibiotics that target Gram-positive organisms wipe it out and let toxin-producing <em>Clostridium</em>, particularly <em>C. difficile</em>, overgrow. Penicillin, ampicillin, streptomycin, clindamycin, lincomycin, spiramycin, chlortetracycline, erythromycin and bacitracin are all implicated. Needs the list, the mechanism, the signs, and the framing that this is a question to ask rather than a prescription to refuse. Serves guinea pig, chinchilla, rabbit, hamster, degu and every future hindgut-fermenting small mammal. **Nothing else logged in this file is as likely to prevent a death caused by an ordinary vet visit** |
+| Sexing a guinea pig, and the breeding deadline | 17, 9 | Guinea pig | **Proposed.** Nothing on the site, and mis-sexing at point of sale is common enough that surprise litters are routine. Two things belong in it. Sows can conceive from 4 to 5 weeks, so mixed litters separate at three weeks. And the pubic symphysis ossifies in a sow who has never given birth, so a first litter after about 6 to 9 months means obstructed labor and a caesarean or death, which is the concrete reason an intact boar and a sow must not share a cage. Also the four to six week post-neuter fertility window, which produces litters every year |
+| Heat stress in small mammals, as an emergency page | 7, 35 | Cross-species (small mammals) | **Extends the Rabbit block's row, which asked for temperature ranges and cooling methods and had no figures.** This build found them: comfortable at 65 to 79&deg;F (18 to 26&deg;C) with 30 to 60% humidity, dangerous above 82&deg;F (28&deg;C), and a genuinely comfortable band nearer 64 to 73&deg;F. No sweat glands. The sign order is lying stretched flat with the back feet trailing, then panting, then drooling, then weakness, then convulsions. First aid is cool but not iced water on the fur then straight to a vet, because iced water shuts the surface vessels and slows cooling. The article should carry all of it |
+| Bonding two guinea pigs, step by step | 10 | Guinea pig | Nothing, and the Rabbit block's bonding row does not transfer: neutral territory and a full cage strip do most of the work here, there is no rabbit-style stress bonding, and the normal-negotiation list (rumblestrutting, mounting, teeth chattering, chasing) is different enough that borrowing the rabbit version would mislead. Needs the sequence, the separate-now list, the two-of-everything rule, and the honest note that a small number of pairings fail and that is not a reason to keep either animal alone |
+| Reading guinea pig droppings | 28 | Guinea pig | Nothing. The Rabbit block logged its own version and it does not transfer: a rabbit owner is reading cecotropes and a guinea pig owner is reading count, size and dryness as a daily proxy for gut motility and dental function. Needs the size-and-count reference, soft against truly liquid, the normal chalky calcium residue in the urine, and cecotrophy as normal behavior that an obese or long-coated pig may be unable to perform |
+| Ovarian cysts, at article depth | 25 | Guinea pig | Expand `guinea-pig-health-issues-guide.mdx`, not a new URL. It currently says "ovarian cysts, which show up in intact females" and stops. This is the most common reproductive tract disorder in sows, and the single sign that identifies it, **symmetrical flank hair loss with normal skin underneath**, is exactly what distinguishes it from mites and appears nowhere on the site. Needs that, plus the swollen abdomen, crusty nipples and temperament change, and the hormonal, draining and surgical options honestly compared |
+| Bladder stones and urinary disease, at article depth | 24 | Guinea pig | Expand the same article. One clause currently. Needs calcium carbonate as the stone type, the dietary levers (alfalfa in adults, the same high-calcium green every day, low water intake), the sign list with squeaking on urination as the memorable one, that a fully blocked bladder is fatal within a day, and that there is no dietary way to dissolve a formed stone |
+| Guinea pig vocalizations and body language | 11 | Guinea pig | **Proposed.** `guides/smallMammals.js` lists five sounds in a sentence and the FAQ explains wheeking. This species is the most vocal in the whole catalogue and the sounds are genuinely diagnostic: a high tense purr means the opposite of a low slow one, and rapid teeth chattering is a warning that owners read as cute. Pairs naturally with popcorning and the freeze |
+| The rectal pouch in older boars | 16 | Guinea pig | Nothing. Boars have a rectal pouch behind the anus that becomes impacted with feces in older intact males, causing odor, irritation, infection and secondary urinary infections. It is a weekly owner task for any boar over about two, it is unpleasant enough that nobody warns buyers, and no site article mentions it. Pairs with the grease gland, which the Rabbit grooming row does not cover either |
+| Anesthesia and surgery in guinea pigs | 27 | Cross-species (small mammals) | **Proposed.** Two things that differ from a dog or a cat and that owners are never told: guinea pigs are **not fasted** before anesthesia, because they cannot vomit and a fasted herbivore arrives with a slowing gut; and the cage mate should come to the appointment, because a pig recovering alone eats less and eating is the whole game. Belongs with the antibiotics article above or beside it |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the per-kilogram vitamin C figures on pages 4, 13 and 28; the 1 to 2 teaspoon pellet
+portion and the 1 to 2 cup produce figure on pages 15 and 16; adult weights split by sex,
+body temperature, heart rate and respiratory rate on pages 4 and 18; gestation, litter size,
+weaning age and the 4 to 5 week conception figure on page 17; the pubic symphysis deadline
+on page 17; the ivermectin and selamectin dosing on page 26; the 4 to 6 week dental
+recurrence interval on page 20; the antibiotic list on page 27; the whole heat-stress
+sequence on pages 7 and 35; the rectal pouch on page 16; and the itemized budget on page 30.
+
+**Source drift found while building.** Five, and the pellet one is the largest disagreement
+found in any package in this series.
+
+- **Pellet portion, off by roughly a factor of three.** `guinea-pig-tank-setup-guide.mdx`
+  and `guides/smallMammals.js` both give 1/8 cup, about 2 tablespoons, per pig per day. The
+  Merck Veterinary Manual gives **1 to 2 teaspoons**. Two tablespoons is six teaspoons, so
+  the site figure is three to six times the veterinary one, on the one component of the diet
+  that displaces hay when overfed. The package prints 1 to 2 teaspoons as the starting
+  point, says the larger figure suits a growing, pregnant or underweight animal, and tells
+  the reader to let hay intake and body condition decide. Both site files need correcting,
+  and this is the one to do first.
+- **Vitamin C, given as a flat figure where the source is per kilogram.**
+  `guinea-pig-tank-setup-guide.mdx` says "10 to 50 milligrams a day," which is VCA's flat
+  figure and is defensible on its own. Merck gives **10 to 25 mg/kg daily for adults and
+  30 mg/kg or more for growing, pregnant, lactating or ill animals**, which scales with the
+  animal and carries the life-stage multiplier the flat figure loses entirely. The package
+  prints the per-kilogram figures as primary and notes that the two overlap at roughly 10 to
+  25 mg for a typical 900 g adult. The site should carry both, with the per-kg one leading.
+- **Floor space, contradicting itself inside one paragraph.** `guides/smallMammals.js` says
+  "the minimum is 7.5 square feet of unobstructed floor space, **the same whether it's one
+  guinea pig or a pair**" and then, two sentences later, recommends at least 10.5 sq ft for
+  a pair. Merck gives 7.5 sq ft for one plus 2 to 4 sq ft per additional animal, which
+  agrees with the second half and not the first. Delete the clause.
+- **Lifespan, and a `wildLifespan` field for a species with no wild population.**
+  `encyclopedia/smallMammals.js` gives `bio.wildLifespan: "4-8 years"` for an animal whose
+  own `habitat` field correctly reads "Fully domesticated; no wild population." The field is
+  meaningless here and should hold the captive figure or be blanked. `guides/smallMammals.js`
+  gives 4 to 8 with 5 to 7 average; LafeberVet gives a mean of 6 to 8. The package prints
+  4 to 8 with 6 to 8 typical under good care.
+- **Cost, and it does not add up against itself.** `guinea-pig-cost-guide.mdx` headlines
+  $33 to $70 a month for one pig and $60 to $135 for a pair, then breaks the pair down as
+  $30 to $50 pellets plus $20 to $50 vegetables plus $40 to $60 hay, which totals $90 to
+  $160 and exceeds its own stated range. The pellet line is also implausible on its own: at
+  1 to 2 teaspoons per pig per day a pair gets through roughly 600 g a month, which is not
+  $30 to $50 of anything. Page 30 itemizes to **$71 to $172 a month for a pair before vet
+  costs**, with hay at $25 to $60 and pellets at $6 to $15, and the lines sum to the totals.
+  The headline and the breakdown both need fixing.
+
+### Russian Tortoise 2.0, t3 (Sep 2026)
+
+The third reptile package, and a rebuild rather than a new build: 1.0 was 21 pages on the
+pre-t3 layout. It came out at 37 pages against the canonical 34, and the three extra pages
+are worth knowing about because a chelonian will want the same three every time: **outdoor
+housing and escape-proofing**, **weeds and grazing** (which replaces the feeder-insect page
+a herbivore has no use for and is worth more than the page it replaced), and a **legal
+page**, following the Tarantula 2.1 precedent. Two skeleton pages were merged the other way:
+thermostats and UVB distance fold into the UVB page, because the equipment story here is
+short and belongs with the fixture it controls, and the brumation-shed-behavior page becomes
+brumation alone, because a tortoise does not shed the way a snake does and the shed material
+is three sentences at the end of the minor-conditions page. Source is fragments plus a build
+script in `source/russian-tortoise-src/` over six page files, and
+`notes/russian-tortoise-v3-notes.md` carries the parked blocks, the per-page free space,
+seven undrafted page ideas and a ranked cut list.
+
+Worth knowing for the next chelonian: the reptile skeleton transfers almost intact, and the
+places it does not are all the same place, which is that this animal walks and grazes rather
+than sits and eats prey. Everything downstream of that, floor area rather than volume,
+scatter feeding, weeds, outdoor pens, follows from it.
+
+Already covered, do not rewrite: `russian-tortoise-legal-guide.mdx` is the best article
+behind this package and carries the whole of page 25 including the 21 CFR 1240.62 text, the
+business exception, and the Hawaii, New Jersey, Montana and Rhode Island positions.
+`russian-tortoise-tank-setup-guide.mdx` carries the tortoise-table argument, the 95 to
+100&deg;F basking figure, the 60&deg;F night tolerance, the UVI 3.0 to 4.0 target and the
+coil-bulb warning. `russian-tortoise-health-issues-guide.mdx` carries MBD, respiratory
+infection, shell rot, pyramiding and the parasite point, and its closing "husbandry pattern"
+paragraph is the shape page 17 uses. `russian-tortoise-enrichment-guide.mdx` carries the
+digging-as-welfare-necessity argument, the substrate depths, the buried-wall figure and the
+scatter-feeding method. `uvb-lighting-complete-guide.mdx` and `t5-vs-compact-uvb-guide.mdx`
+carry page 7's Ferguson Zone framing, the 12-month replacement rule, the glass and mesh
+attenuation point and the coil argument. `reptile-emergency-plan-guide.mdx` **does** transfer
+and carries a Russian tortoise row, 60&deg;F tolerated and act below 60&deg;F outside
+brumation, which is what page 32 is built on.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Chelonian herpesvirus, and quarantining a new tortoise | 19, 21 | Cross-species (chelonians) | **Proposed, and the highest-value row here.** Nothing on the site. <em>Testudo</em> tortoises are susceptible to epidemics of viral disease and should be treated as potential high-risk carriers of herpes-type organisms; an infected animal is highly contagious, can look well for long periods, and in an unquarantined group mortality can approach 100%. There is no cure and a survivor is a carrier for life. Needs the signs (runny nose, oral plaques, difficulty swallowing, neurological signs), the months-not-weeks quarantine, separate room and separate equipment, and the point that ranavirus and mycoplasma make the same argument. Serves every tortoise and box turtle on the site |
+| Reptile brumation for tortoises | 23 | Cross-species (Testudo and box turtles) | `bearded-dragon-brumation-guide.mdx` and `snake-brumation-guide.mdx` both exist and **neither transfers**: the temperatures, the fasting requirement, the duration and the method are all different, and the fridge technique has no lizard or snake equivalent. Needs the do-not-brumate list, the 2 to 4 week fast with heat still on, the 40 to 55&deg;F (4 to 13&deg;C) band for 2 to 4 months, weekly weighing with the roughly 1% a month loss limit, and the gradual warm-up and immediate soak. The site currently has a paragraph saying brumation exists and is optional |
+| Safe weeds and plants for herbivorous reptiles | 12, 13 | Cross-species (tortoises, uromastyx, iguana) | **Proposed.** Nothing on the site names a single weed. This is the page that changes a keeper's costs and the animal's diet quality more than anything else, and it is entirely absent: dandelion, plantain, clover, sow thistle, hawkbit, mallow, chickweed, with identification notes, where not to pick, and how to grow and dry forage. Pairs with a toxic-plant list, which is also missing |
+| Sexing a tortoise | 15 | Cross-species (chelonians) | Nothing. Tail length and thickness, vent position relative to the shell margin, plastron concavity, carapace profile, and the point that none of it is reliable below about 4 in of shell. Cheap to write and asked constantly |
+| Tortoise eggs and egg binding | 16 | Cross-species (chelonians) | Nothing, and `bearded-dragon-eggs-and-egg-binding-guide.mdx` does not transfer: the nest-site requirement, the depth, the digging behavior and the intervention are all different. Needs the gravid signs, the nest site provided before it is needed, the do-not-palpate warning, the dystocia sign list, and the point that a single female with no male still lays |
+| Reading reptile stool, urates and hydration | 24 | Cross-species | **Extends the row already open on the Bearded Dragon and Ball Python blocks.** This species is the strongest case for writing it: a tortoise's urates are the best hydration gauge any reptile owner gets, gritty urates are the warning that precedes a urate blockage, and the weekly soak is when you see both. Add the tortoise column when the article is written |
+| Salmonella and reptile hygiene | 10 | Cross-species (all reptiles) | **Proposed.** `salmonella` returns hits only in the three red-eared slider articles. It is the reason the federal four-inch rule exists, it is a real risk rather than a regulatory relic, and every reptile package in the series has to say something about it in a callout because there is nothing to link to. One universal article closes it for reptiles, amphibians and turtles alike: shedding by healthy animals, the hand-to-face route, no kitchen sinks, and who in a household is actually at risk |
+| Cloacoliths and urate blockage | 22 | Cross-species (reptiles) | Nothing. A hardened urate stone in the cloaca, presenting as straining while vocalizing, which is a true emergency and one of the very few sounds a tortoise makes. The underlying cause is chronic dehydration, which ties it to the soaking and urates rows above |
+| Outdoor housing for reptiles | 9 | Cross-species (tortoises, and some lizards seasonally) | Nothing. Pen construction, the buried barrier depth, permanent shade, shelter, predator cover, and the five ways an outdoor tortoise dies. The site's enrichment guide mentions outdoor pens approvingly and gives one figure |
+| Hexamita parva | 21 | Russian tortoise | **Proposed.** A parasite of the renal and urinary system identified frequently in <em>T. horsfieldii</em>, causing rapid weight loss, dehydration and terminal renal failure if untreated, with a published metronidazole dose. Belongs as a section in an expanded `russian-tortoise-health-issues-guide.mdx` rather than a new URL, alongside the other conditions that article names in a sentence each |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the ReptiFiles 8&times;4 ft enclosure figure and the per-additional-animal space on
+pages 4 and 5; the UVB mounting distances on page 7; the burrow temperature figures and the
+maximum verified 22 cm size on pages 4 and 6; the sexing criteria on page 15; the clutch and
+nest-site figures on page 16; the whole brumation protocol on page 23; the <em>Hexamita</em>
+dose on page 21; the herpesvirus mortality figure on page 19; the weed identification notes
+on page 12; the ninety-days-a-year wild feeding pattern on page 11; and the itemized budget
+on page 28.
+
+**Source drift found while building.** Four, and two of them are genuine disagreements
+between credible sources rather than errors, which is how they are printed.
+
+- **Enclosure size, a real disagreement.** `russian-tortoise-tank-setup-guide.mdx` gives an
+  indoor minimum of 4&times;2&times;2 ft and a functional size nearer 7 ft by 3.5 ft;
+  `guides/turtles.js` gives 4&times;2 ft indoor and 4&times;4 ft outdoor. The ReptiFiles
+  species care sheet gives 8&times;4 ft, about 32 sq ft, plus at least 10 sq ft per
+  additional tortoise. That is a fourfold gap. Neither was picked: page 5 prints 4&times;2 ft
+  as the floor and 8&times;4 ft as the target and says why, which is the treatment the
+  lovebird and budgie packages gave the same kind of disagreement. The site articles would be
+  better carrying both figures too.
+- **Humidity, the other real disagreement.** The site gives 30 to 50% ambient and warns that
+  high ambient humidity causes respiratory infection. ReptiFiles gives 40 to 75%, lower by
+  day and higher at night, following what the animal experiences in a burrow. Both are
+  printed on page 8, with the point that they agree on the shape of the answer even where the
+  numbers differ: a dry ventilated surface with a genuinely humid microclimate underneath.
+  Worth adding that framing to the site article, because "keep it dry" alone produces the
+  dehydrated, pyramided tortoise that page 18 describes.
+- **Fruit.** The site says fruit should be minimal, under 5% of the diet.
+  The Tortoise Trust's position is that fruits are entirely inappropriate for arid-habitat
+  species. The package prints the under-5% figure with the specialist position beside it and
+  the note that zero is a defensible answer for this species.
+- **Cost.** `guides/turtles.js` still carries the `// Rough starting ranges, not verified
+  current pricing` comment. `russian-tortoise-cost-guide.mdx` gives $400 to $600 for setup
+  and $500 to $650 a year. Page 28 itemizes to **$372 to $775 for equipment and $365 to $715
+  a year**, and the wider setup range is the thermostat, the infrared gun and the gram scale,
+  which the site's list omits and which are exactly the items that prevent the conditions on
+  pages 18 and 19. Also worth adding to the MDX: at those figures the animal costs roughly
+  $15,000 to $30,000 over a forty-year life, which is the number that should decide the
+  purchase and appears nowhere.
