@@ -568,6 +568,41 @@ schedule on page 24, and the droppings reference table on page 25.
   the feeding guide's "1 to 4 cups per several pounds depending on the source" is too
   vague to act on next to the setup guide's 1 cup per 2 lb.
 
+### Hamster v3.0 (Sep 2026)
+
+The second mammal package, and the one that shows the small-mammal skeleton runs
+narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
+combining six pairs of pages that shared a topic. Every block removed is in
+`notes/hamster-v4-notes.md` in full markup.
+
+Where v2.0 had drifted wider than the reptile skeleton, and what it cost:
+
+| Drift | Template shape | Fixed to |
+| --- | --- | --- |
+| Two species-choice pages | The skeleton has none | One page, choosing and where from |
+| Two mistakes pages, one of them named "mistakes" twice | One (template page 13) | One, folded in with the first week |
+| Two torpor pages, on top of a torpor section on the temperature page | One behavior page (template page 20) | One |
+| Two legality pages | Not in the skeleton at all | One |
+| Power outages and travel on separate pages | One (template page 28) | One |
+| Enrichment log as its own page | One (template page 32) | Folded into the equipment log |
+
+For the next small-mammal build: a hamster is a shorter animal than a rabbit, so expect
+34 to 37 rather than the 38 to 40 the rabbit note predicts, and expect the split to fall
+the same way, with the health section long and the husbandry section short. The two
+places a rodent needs pages a reptile does not are species choice, because temperament
+varies enormously inside one common name, and torpor.
+
+Watch for the same drift: a topic that genuinely needs a page will try to take two, and
+the second page is usually the first one's prose restated. Three of the six merges above
+were pure duplication and cost nothing to make.
+
+Already covered, do not rewrite: the bedding-depth study is reported with all three of
+its figures on page 7 and is the package's strongest single page.
+
+Known gaps, listed in the notes file: there is no target weight anywhere despite the
+owner log asking for grams, no sexing page despite the guide telling the reader twice to
+check the sex, and nothing on cheek pouches.
+
 ### Tarantula v2.0 (Sep 2026)
 
 The first invertebrate package on the v3 template. The reptile heat, UVB and thermostat
