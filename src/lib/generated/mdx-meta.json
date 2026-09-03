@@ -34,7 +34,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 1,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/a-rhino-horn-is-made-of-keratin.mdx",
@@ -69,7 +72,10 @@
     "animal": "Rhino",
     "myth": "Rhino horn is ivory, like an elephant tusk.",
     "truth": "It is compacted keratin, the same protein as fingernails, and the medicine trade built on it is selling people their own hair.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ackie-milksnake-mhc-angelfish-overview.mdx",
@@ -121,7 +127,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ackie-monitor-cost-guide.mdx",
@@ -183,7 +192,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ackie-monitor-feeding-guide.mdx",
@@ -245,7 +257,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/ackie-monitor-handling-guide.mdx",
@@ -300,7 +315,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ackie-monitor-health-issues-guide.mdx",
@@ -360,7 +378,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ackie-monitor-legal-guide.mdx",
@@ -407,7 +428,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 1195
   },
   {
     "path": "/content/guides/ackie-monitor-tank-setup-guide.mdx",
@@ -469,7 +493,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-fat-tail-cost-guide.mdx",
@@ -526,7 +553,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-fat-tail-feeding-guide.mdx",
@@ -590,7 +620,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-fat-tail-handling-guide.mdx",
@@ -642,7 +675,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-fat-tail-health-issues-guide.mdx",
@@ -704,7 +740,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-fat-tail-tank-setup-guide.mdx",
@@ -769,7 +808,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-cost-guide.mdx",
@@ -835,7 +877,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-feeding-guide.mdx",
@@ -899,7 +944,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/african-grey-parrot-handling-guide.mdx",
@@ -959,7 +1007,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-health-issues-guide.mdx",
@@ -1022,7 +1073,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-legal-guide.mdx",
@@ -1081,7 +1135,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-tank-setup-guide.mdx",
@@ -1144,7 +1201,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/african-grey-parrot-vs-cockatoo-guide.mdx",
@@ -1209,7 +1269,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/alpha-wolf-myth-what-the-research-actually-says.mdx",
@@ -1244,7 +1307,10 @@
     "animal": "Wolf",
     "myth": "Wolf packs are ruled by an alpha that fought its way to the top.",
     "truth": "A wild pack is a family, and the parents lead it. The alpha came from unrelated wolves forced together in a zoo pen.",
-    "sourceCount": 11
+    "sourceCount": 11,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/amano-shrimp-cost-guide.mdx",
@@ -1309,7 +1375,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/amano-shrimp-feeding-guide.mdx",
@@ -1367,7 +1436,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/amano-shrimp-handling-guide.mdx",
@@ -1423,7 +1495,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/amano-shrimp-health-issues-guide.mdx",
@@ -1484,7 +1559,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/amano-shrimp-tank-setup-guide.mdx",
@@ -1548,7 +1626,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/angelfish-cost-guide.mdx",
@@ -1615,7 +1696,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/angelfish-feeding-guide.mdx",
@@ -1676,7 +1760,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/angelfish-handling-guide.mdx",
@@ -1732,7 +1819,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/angelfish-health-issues-guide.mdx",
@@ -1792,7 +1882,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/angelfish-tank-setup-guide.mdx",
@@ -1858,7 +1951,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 11,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegu-cost-guide.mdx",
@@ -1924,7 +2020,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegu-handling-guide.mdx",
@@ -1984,7 +2083,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegu-health-issues-guide.mdx",
@@ -2044,7 +2146,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegu-legal-guide.mdx",
@@ -2103,7 +2208,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegu-tank-setup-guide.mdx",
@@ -2169,7 +2277,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/argentine-tegus-are-not-venomous.mdx",
@@ -2206,7 +2317,10 @@
     "animal": "Argentine Tegu",
     "myth": "Argentine tegus are venomous and dangerously aggressive.",
     "truth": "No venom apparatus has ever been documented in tegus. Their bite is real but defensive, and the aggression reputation traces back to wild-caught or undersocialized animals more than the species itself.",
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/axolotl-cost-guide.mdx",
@@ -2266,7 +2380,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/axolotl-enrichment-guide.mdx",
@@ -2323,7 +2440,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/axolotl-feeding-guide.mdx",
@@ -2386,7 +2506,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/axolotl-handling-guide.mdx",
@@ -2438,7 +2561,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/axolotl-health-issues-guide.mdx",
@@ -2495,7 +2621,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/axolotl-legal-guide.mdx",
@@ -2554,7 +2683,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/axolotl-tank-setup-guide.mdx",
@@ -2614,7 +2746,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-cost-guide.mdx",
@@ -2672,7 +2807,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-feeding-guide.mdx",
@@ -2733,7 +2871,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 784,
+    "imageHeight": 1168
   },
   {
     "path": "/content/guides/ball-python-handling-guide.mdx",
@@ -2785,7 +2926,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-health-issues-guide.mdx",
@@ -2842,7 +2986,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-legal-guide.mdx",
@@ -2889,7 +3036,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-tank-setup-guide.mdx",
@@ -2947,7 +3097,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ball-python-vs-boa-constrictor-guide.mdx",
@@ -3007,7 +3160,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 670
   },
   {
     "path": "/content/guides/ball-python-vs-corn-snake-guide.mdx",
@@ -3072,7 +3228,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/bearded-dragon-cost-guide.mdx",
@@ -3129,7 +3288,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bearded-dragon-enrichment-guide.mdx",
@@ -3192,7 +3354,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/bearded-dragon-feeding-guide.mdx",
@@ -3257,7 +3422,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bearded-dragon-handling-guide.mdx",
@@ -3309,7 +3477,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bearded-dragon-health-issues-guide.mdx",
@@ -3364,7 +3535,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bearded-dragon-shopping-list.mdx",
@@ -3411,7 +3585,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/bearded-dragon-tank-setup-guide.mdx",
@@ -3469,7 +3646,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bearded-dragon-vs-leopard-gecko-guide.mdx",
@@ -3532,7 +3712,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/bengal-cat-legal-guide.mdx",
@@ -3567,7 +3750,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-cost-guide.mdx",
@@ -3624,7 +3810,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-feeding-guide.mdx",
@@ -3685,7 +3874,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-handling-guide.mdx",
@@ -3737,7 +3929,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-health-issues-guide.mdx",
@@ -3793,7 +3988,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-tank-setup-guide.mdx",
@@ -3850,7 +4048,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/betta-fish-vs-goldfish-guide.mdx",
@@ -3913,7 +4114,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/betta-fish-water-parameters-guide.mdx",
@@ -3975,7 +4179,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/bioactive-setups-bearded-dragons.mdx",
@@ -4039,7 +4246,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
@@ -4101,7 +4311,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/blue-tongue-skink-feeding-guide.mdx",
@@ -4165,7 +4378,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/blue-tongue-skink-handling-guide.mdx",
@@ -4220,7 +4436,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/blue-tongue-skink-health-issues-guide.mdx",
@@ -4282,7 +4501,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/blue-tongue-skink-tank-setup-guide.mdx",
@@ -4345,7 +4567,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-constrictor-cost-guide.mdx",
@@ -4408,7 +4633,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-constrictor-feeding-guide.mdx",
@@ -4471,7 +4699,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/boa-constrictor-handling-guide.mdx",
@@ -4531,7 +4762,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-constrictor-health-issues-guide.mdx",
@@ -4592,7 +4826,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-constrictor-legal-guide.mdx",
@@ -4651,7 +4888,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-constrictor-tank-setup-guide.mdx",
@@ -4715,7 +4955,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/boa-glider-mantis-tetra-overview.mdx",
@@ -4771,7 +5014,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/box-turtle-cost-guide.mdx",
@@ -4836,7 +5082,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/box-turtle-handling-guide.mdx",
@@ -4900,7 +5149,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/box-turtle-health-issues-guide.mdx",
@@ -4960,7 +5212,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/box-turtle-legal-guide.mdx",
@@ -5007,7 +5262,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/box-turtle-tank-setup-guide.mdx",
@@ -5074,7 +5332,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/brachycephalic-airway-syndrome-boas-guide.mdx",
@@ -5132,7 +5393,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/bristlenose-pleco-cost-guide.mdx",
@@ -5195,7 +5459,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/bristlenose-pleco-feeding-guide.mdx",
@@ -5255,7 +5522,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/bristlenose-pleco-handling-guide.mdx",
@@ -5311,7 +5581,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/bristlenose-pleco-health-issues-guide.mdx",
@@ -5371,7 +5644,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/bristlenose-pleco-tank-setup-guide.mdx",
@@ -5434,7 +5710,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-cere-color-guide.mdx",
@@ -5491,7 +5770,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/budgie-cost-guide.mdx",
@@ -5552,7 +5834,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-enrichment-guide.mdx",
@@ -5609,7 +5894,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 1200
   },
   {
     "path": "/content/guides/budgie-handling-guide.mdx",
@@ -5663,7 +5951,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-health-issues-guide.mdx",
@@ -5718,7 +6009,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-tank-setup-guide.mdx",
@@ -5775,7 +6069,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/budgie-vs-cockatiel-guide.mdx",
@@ -5833,7 +6130,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/california-kingsnake-cost-guide.mdx",
@@ -5898,7 +6198,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/california-kingsnake-handling-guide.mdx",
@@ -5958,7 +6261,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/california-kingsnake-health-issues-guide.mdx",
@@ -6018,7 +6324,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/california-kingsnake-tank-setup-guide.mdx",
@@ -6083,7 +6392,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/canary-cost-guide.mdx",
@@ -6148,7 +6460,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/canary-handling-guide.mdx",
@@ -6208,7 +6523,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/canary-health-issues-guide.mdx",
@@ -6268,7 +6586,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/canary-tank-setup-guide.mdx",
@@ -6332,7 +6653,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
@@ -6397,7 +6721,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cardinal-tetra-feeding-guide.mdx",
@@ -6456,7 +6783,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cardinal-tetra-handling-guide.mdx",
@@ -6512,7 +6842,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 6,
+    "imageWidth": 1200,
+    "imageHeight": 900
   },
   {
     "path": "/content/guides/cardinal-tetra-health-issues-guide.mdx",
@@ -6573,7 +6906,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cardinal-tetra-tank-setup-guide.mdx",
@@ -6638,7 +6974,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cardiomyopathy-in-cats-and-dogs-guide.mdx",
@@ -6696,7 +7035,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cat-hairball-vs-vomiting-guide.mdx",
@@ -6755,7 +7097,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/cats-always-land-on-their-feet-not-always-unhurt.mdx",
@@ -6788,7 +7133,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cats-invented-the-meow-for-humans.mdx",
@@ -6823,7 +7171,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chameleon-hydration-drippers-misters-fogging.mdx",
@@ -6884,7 +7235,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/chameleons-do-not-change-color-to-match-their-background.mdx",
@@ -6923,7 +7277,10 @@
     "animal": "Chameleon",
     "myth": "Chameleons change colour to blend into their surroundings.",
     "truth": "Put one on a chessboard and nothing happens. The colour signals mood and temperature, not the background.",
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 914
   },
   {
     "path": "/content/guides/cherry-amano-ghost-shrimp-overview.mdx",
@@ -6967,7 +7324,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/cherry-shrimp-cost-guide.mdx",
@@ -7032,7 +7392,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cherry-shrimp-feeding-guide.mdx",
@@ -7092,7 +7455,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cherry-shrimp-handling-guide.mdx",
@@ -7148,7 +7514,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 807
   },
   {
     "path": "/content/guides/cherry-shrimp-health-issues-guide.mdx",
@@ -7210,7 +7579,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cherry-shrimp-tank-setup-guide.mdx",
@@ -7275,7 +7647,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 807
   },
   {
     "path": "/content/guides/chinchilla-cost-guide.mdx",
@@ -7336,7 +7711,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-feeding-guide.mdx",
@@ -7401,7 +7779,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-handling-guide.mdx",
@@ -7453,7 +7834,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-health-issues-guide.mdx",
@@ -7509,7 +7893,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-legal-guide.mdx",
@@ -7556,7 +7943,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-tank-setup-guide.mdx",
@@ -7616,7 +8006,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/chinchilla-vs-guinea-pig-guide.mdx",
@@ -7681,7 +8074,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/chinchilla-vs-hamster-guide.mdx",
@@ -7741,7 +8137,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/cockatiel-cost-guide.mdx",
@@ -7798,7 +8197,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatiel-feeding-guide.mdx",
@@ -7862,7 +8264,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatiel-handling-guide.mdx",
@@ -7917,7 +8322,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatiel-health-issues-guide.mdx",
@@ -7972,7 +8380,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatiel-tank-setup-guide.mdx",
@@ -8030,7 +8441,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatiel-vs-cockatoo-guide.mdx",
@@ -8091,7 +8505,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/cockatoo-cost-guide.mdx",
@@ -8156,7 +8573,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatoo-feeding-guide.mdx",
@@ -8215,7 +8635,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/cockatoo-handling-guide.mdx",
@@ -8270,7 +8693,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatoo-health-issues-guide.mdx",
@@ -8333,7 +8759,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/cockatoo-legal-guide.mdx",
@@ -8380,7 +8809,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 2400,
+    "imageHeight": 1792
   },
   {
     "path": "/content/guides/cockatoo-screaming-feather-plucking-explained.mdx",
@@ -8438,7 +8870,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/cockatoo-tank-setup-guide.mdx",
@@ -8506,7 +8941,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/conformation-breeding-laws-guide.mdx",
@@ -8568,7 +9006,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 10
+    "sourceCount": 10,
+    "headingCount": 15,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/constriction-does-not-crush-or-suffocate.mdx",
@@ -8607,7 +9048,10 @@
     "animal": "Boa Constrictor",
     "myth": "Constrictors crush their prey, or slowly suffocate it.",
     "truth": "Neither. Pressure readings taken inside the coils show blood flow stops first, and the animal faints within seconds.",
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 914
   },
   {
     "path": "/content/guides/conure-cost-guide.mdx",
@@ -8673,7 +9117,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/conure-handling-guide.mdx",
@@ -8733,7 +9180,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/conure-health-issues-guide.mdx",
@@ -8795,7 +9245,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/conure-tank-setup-guide.mdx",
@@ -8857,7 +9310,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corn-snake-cost-guide.mdx",
@@ -8913,7 +9369,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 5,
+    "imageWidth": 1280,
+    "imageHeight": 720
   },
   {
     "path": "/content/guides/corn-snake-feeding-guide.mdx",
@@ -8975,7 +9434,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corn-snake-handling-guide.mdx",
@@ -9027,7 +9489,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1280,
+    "imageHeight": 720
   },
   {
     "path": "/content/guides/corn-snake-health-issues-guide.mdx",
@@ -9084,7 +9549,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corn-snake-legal-guide.mdx",
@@ -9131,7 +9599,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/corn-snake-tank-setup-guide.mdx",
@@ -9189,7 +9660,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/corn-snake-vs-hognose-snake-guide.mdx",
@@ -9254,7 +9728,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/corydoras-catfish-cost-guide.mdx",
@@ -9321,7 +9798,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corydoras-catfish-feeding-guide.mdx",
@@ -9384,7 +9864,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 279
   },
   {
     "path": "/content/guides/corydoras-catfish-handling-guide.mdx",
@@ -9444,7 +9927,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corydoras-catfish-health-issues-guide.mdx",
@@ -9506,7 +9992,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/corydoras-catfish-tank-setup-guide.mdx",
@@ -9572,7 +10061,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-cost-guide.mdx",
@@ -9624,7 +10116,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-enrichment-guide.mdx",
@@ -9682,7 +10177,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-feeding-guide.mdx",
@@ -9747,7 +10245,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-handling-guide.mdx",
@@ -9799,7 +10300,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-health-issues-guide.mdx",
@@ -9856,7 +10360,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crested-gecko-humidity-guide.mdx",
@@ -9920,7 +10427,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 784,
+    "imageHeight": 1168
   },
   {
     "path": "/content/guides/crested-gecko-tank-setup-guide.mdx",
@@ -9978,7 +10488,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crocodiles-survived-what-killed-the-dinosaurs.mdx",
@@ -10014,7 +10527,10 @@
     "animal": "Crocodile",
     "myth": "Crocodiles survived the asteroid by never changing.",
     "truth": "They changed a great deal. What carried them through was being small, aquatic, and able to go a long time without eating.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/crows-are-smarter-than-you-think-and-they-probably-already-know-it.mdx",
@@ -10045,7 +10561,10 @@
     "animal": "Crow",
     "myth": "Betty the crow bending a wire into a hook was the clearest case of invention in any animal.",
     "truth": "Wild New Caledonian crows bend twigs using the same motion. She applied a species-typical move to an unfamiliar material.",
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 12,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/degu-cost-guide.mdx",
@@ -10110,7 +10629,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/degu-feeding-guide.mdx",
@@ -10175,7 +10697,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/degu-gerbil-overview.mdx",
@@ -10222,7 +10747,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/degu-handling-guide.mdx",
@@ -10274,7 +10802,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/degu-health-issues-guide.mdx",
@@ -10335,7 +10866,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/degu-tank-setup-guide.mdx",
@@ -10399,7 +10933,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/degu-vs-chinchilla-guide.mdx",
@@ -10459,7 +10996,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/discus-cost-guide.mdx",
@@ -10525,7 +11065,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/discus-feeding-guide.mdx",
@@ -10586,7 +11129,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/discus-handling-guide.mdx",
@@ -10642,7 +11188,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/discus-health-issues-guide.mdx",
@@ -10702,7 +11251,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/discus-tank-setup-guide.mdx",
@@ -10769,7 +11321,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 11,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/do-dolphins-have-names-what-the-research-shows.mdx",
@@ -10805,7 +11360,10 @@
     "animal": "Dolphin",
     "myth": "Dolphins call each other by name.",
     "truth": "Each one invents a signature whistle and answers to it. Calling that a name overstates a narrower and stranger finding.",
-    "sourceCount": 11
+    "sourceCount": 11,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/dog-bloat-gdv-guide.mdx",
@@ -10864,7 +11422,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/dung-beetles-navigate-by-the-milky-way.mdx",
@@ -10900,7 +11461,10 @@
     "animal": "Dung Beetle",
     "myth": "A dung beetle rolling in a straight line is just going straight.",
     "truth": "It steers by the Milky Way. Proving it took cardboard visors, a planetarium in Johannesburg, and a lot of patience.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/elephants-talk-below-human-hearing.mdx",
@@ -10935,7 +11499,10 @@
     "animal": "Elephant",
     "myth": "Elephants are fairly quiet animals between trumpets.",
     "truth": "They are calling constantly, below human hearing, and part of the signal travels through the ground into the feet of the herd.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-cost-guide.mdx",
@@ -10998,7 +11565,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-feeding-guide.mdx",
@@ -11062,7 +11632,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/emperor-scorpion-handling-guide.mdx",
@@ -11118,7 +11691,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-health-issues-guide.mdx",
@@ -11180,7 +11756,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-legal-guide.mdx",
@@ -11214,7 +11793,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-tank-setup-guide.mdx",
@@ -11277,7 +11859,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/every-wild-tiger-would-fit-in-a-small-town.mdx",
@@ -11311,7 +11896,10 @@
     "animal": "Tiger",
     "myth": "Tiger numbers are rising, so tigers are recovering.",
     "truth": "The entire wild population is a few thousand animals across thirteen countries. More may live in private American hands than in the wild.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/exotic-pet-legal-hub.mdx",
@@ -11370,7 +11958,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/feline-kidney-disease-ckd-pkd-guide.mdx",
@@ -11431,7 +12022,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 22,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fennec-fox-legal-guide.mdx",
@@ -11465,7 +12059,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-adrenal-disease-guide.mdx",
@@ -11523,7 +12120,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/ferret-cost-guide.mdx",
@@ -11586,7 +12186,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-feeding-guide.mdx",
@@ -11647,7 +12250,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-handling-guide.mdx",
@@ -11707,7 +12313,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-health-issues-guide.mdx",
@@ -11766,7 +12375,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-legal-guide.mdx",
@@ -11813,7 +12425,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ferret-tank-setup-guide.mdx",
@@ -11875,7 +12490,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fire-bellied-toad-cost-guide.mdx",
@@ -11940,7 +12558,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fire-bellied-toad-handling-guide.mdx",
@@ -12000,7 +12621,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fire-bellied-toad-health-issues-guide.mdx",
@@ -12060,7 +12684,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fire-bellied-toad-tank-setup-guide.mdx",
@@ -12125,7 +12752,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fire-skink-cost-guide.mdx",
@@ -12185,7 +12815,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1600,
+    "imageHeight": 1244
   },
   {
     "path": "/content/guides/fire-skink-handling-guide.mdx",
@@ -12240,7 +12873,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 512,
+    "imageHeight": 279
   },
   {
     "path": "/content/guides/fire-skink-health-issues-guide.mdx",
@@ -12296,7 +12932,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/fire-skink-tank-setup-guide.mdx",
@@ -12357,7 +12996,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/five-beginner-reptiles-overview.mdx",
@@ -12406,7 +13048,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/flying-squirrel-cost-guide.mdx",
@@ -12468,7 +13113,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/flying-squirrel-feeding-guide.mdx",
@@ -12529,7 +13177,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 670
   },
   {
     "path": "/content/guides/flying-squirrel-handling-guide.mdx",
@@ -12585,7 +13236,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/flying-squirrel-health-issues-guide.mdx",
@@ -12644,7 +13298,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 6,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/flying-squirrel-legal-guide.mdx",
@@ -12691,7 +13348,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/flying-squirrel-tank-setup-guide.mdx",
@@ -12752,7 +13412,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/four-unusual-pets-overview.mdx",
@@ -12796,7 +13459,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/french-bulldog-feeding-guide.mdx",
@@ -12858,7 +13524,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gaboon-viper-longest-fangs-any-snake.mdx",
@@ -12894,7 +13563,10 @@
     "animal": "Gaboon Viper",
     "myth": "The Gaboon viper is an aggressive, fast-striking snake that will attack without warning.",
     "truth": "It's actually one of the most docile vipers in the world, rarely biting or hissing even when handled. Nearly every recorded bite happens because someone accidentally stepped on one hidden in leaf litter, not because it went looking for a fight.",
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/gargoyle-gecko-cost-guide.mdx",
@@ -12955,7 +13627,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gargoyle-gecko-feeding-guide.mdx",
@@ -13020,7 +13695,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gargoyle-gecko-handling-guide.mdx",
@@ -13076,7 +13754,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gargoyle-gecko-health-issues-guide.mdx",
@@ -13137,7 +13818,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gargoyle-gecko-tank-setup-guide.mdx",
@@ -13200,7 +13884,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gargoyle-mourning-african-fat-tail-gecko-overview.mdx",
@@ -13252,7 +13939,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/garter-snake-cost-guide.mdx",
@@ -13314,7 +14004,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/garter-snake-feeding-guide.mdx",
@@ -13371,7 +14064,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/garter-snake-handling-guide.mdx",
@@ -13427,7 +14123,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/garter-snake-health-issues-guide.mdx",
@@ -13489,7 +14188,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/garter-snake-legal-guide.mdx",
@@ -13536,7 +14238,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/garter-snake-tank-setup-guide.mdx",
@@ -13599,7 +14304,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 10,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/gerbil-cost-guide.mdx",
@@ -13664,7 +14372,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gerbil-feeding-guide.mdx",
@@ -13727,7 +14438,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/gerbil-handling-guide.mdx",
@@ -13779,7 +14493,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gerbil-health-issues-guide.mdx",
@@ -13834,7 +14551,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gerbil-tank-setup-guide.mdx",
@@ -13896,7 +14616,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/gerbil-vs-guinea-pig-guide.mdx",
@@ -13957,7 +14680,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/gerbil-vs-hamster-guide.mdx",
@@ -14018,7 +14744,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/german-shepherd-feeding-guide.mdx",
@@ -14081,7 +14810,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ghost-shrimp-cost-guide.mdx",
@@ -14146,7 +14878,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ghost-shrimp-feeding-guide.mdx",
@@ -14205,7 +14940,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ghost-shrimp-handling-guide.mdx",
@@ -14261,7 +14999,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ghost-shrimp-health-issues-guide.mdx",
@@ -14323,7 +15064,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 7
+    "sourceCount": 7,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ghost-shrimp-tank-setup-guide.mdx",
@@ -14388,7 +15132,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giant-millipede-cost-guide.mdx",
@@ -14453,7 +15200,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giant-millipede-handling-guide.mdx",
@@ -14513,7 +15263,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giant-millipede-health-issues-guide.mdx",
@@ -14573,7 +15326,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giant-millipede-legal-guide.mdx",
@@ -14620,7 +15376,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giant-millipede-tank-setup-guide.mdx",
@@ -14686,7 +15445,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/giraffe-heart-myth-what-the-research-shows.mdx",
@@ -14721,7 +15483,10 @@
     "animal": "Giraffe",
     "myth": "A giraffe has a 25 pound heart to pump blood up that neck.",
     "truth": "It weighs about 11 pounds, ordinary for the body size. The extreme part is the blood pressure, roughly twice a human.",
-    "sourceCount": 10
+    "sourceCount": 10,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/golden-retriever-feeding-guide.mdx",
@@ -14783,7 +15548,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/golden-retriever-vs-german-shepherd-guide.mdx",
@@ -14848,7 +15616,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/goldfish-cost-guide.mdx",
@@ -14906,7 +15677,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/goldfish-enrichment-guide.mdx",
@@ -14967,7 +15741,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/goldfish-feeding-guide.mdx",
@@ -15031,7 +15808,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/goldfish-handling-guide.mdx",
@@ -15083,7 +15863,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/goldfish-health-issues-guide.mdx",
@@ -15138,7 +15921,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/goldfish-tank-setup-guide.mdx",
@@ -15196,7 +15982,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/goldfish-tank-size-bowl-myth.mdx",
@@ -15258,7 +16047,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/green-anole-cost-guide.mdx",
@@ -15325,7 +16117,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/green-anole-handling-guide.mdx",
@@ -15385,7 +16180,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/green-anole-health-issues-guide.mdx",
@@ -15445,7 +16243,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/green-anole-tank-setup-guide.mdx",
@@ -15512,7 +16313,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/green-iguana-cost-guide.mdx",
@@ -15573,7 +16377,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/green-iguana-handling-guide.mdx",
@@ -15628,7 +16435,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/green-iguana-health-issues-guide.mdx",
@@ -15684,7 +16494,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/green-iguana-tank-setup-guide.mdx",
@@ -15745,7 +16558,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1600,
+    "imageHeight": 1244
   },
   {
     "path": "/content/guides/greenanole-tegu-firebelliedtoad-tigersalamander-overview.mdx",
@@ -15805,7 +16621,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guinea-pig-cockatiel-betta-tarantula-overview.mdx",
@@ -15853,7 +16672,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/guinea-pig-cost-guide.mdx",
@@ -15910,7 +16732,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guinea-pig-enrichment-guide.mdx",
@@ -15967,7 +16792,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 1200
   },
   {
     "path": "/content/guides/guinea-pig-feeding-guide.mdx",
@@ -16032,7 +16860,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guinea-pig-handling-guide.mdx",
@@ -16084,7 +16915,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/guides/guinea-pig-health-issues-guide.mdx",
@@ -16140,7 +16974,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guinea-pig-scurvy-vitamin-c-guide.mdx",
@@ -16200,7 +17037,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/guinea-pig-tank-setup-guide.mdx",
@@ -16258,7 +17098,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guppy-cost-guide.mdx",
@@ -16321,7 +17164,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guppy-feeding-guide.mdx",
@@ -16382,7 +17228,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guppy-handling-guide.mdx",
@@ -16438,7 +17287,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guppy-health-issues-guide.mdx",
@@ -16499,7 +17351,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/guppy-tank-setup-guide.mdx",
@@ -16561,7 +17416,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/gut-loading-feeder-insects-guide.mdx",
@@ -16604,7 +17462,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hagfish-slime-how-it-works.mdx",
@@ -16640,7 +17501,10 @@
     "animal": "Hagfish",
     "myth": "A hagfish produces a litre of slime.",
     "truth": "It produces a teaspoon of protein and thread. The rest of that litre is seawater, recruited in 400 milliseconds.",
-    "sourceCount": 7
+    "sourceCount": 7,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/hamster-cost-guide.mdx",
@@ -16705,7 +17569,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-feeding-guide.mdx",
@@ -16767,7 +17634,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-handling-guide.mdx",
@@ -16823,7 +17693,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-health-issues-guide.mdx",
@@ -16884,7 +17757,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-legal-guide.mdx",
@@ -16918,7 +17794,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-skink-whitestreefrog-pacmanfrog-overview.mdx",
@@ -16970,7 +17849,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-tank-setup-guide.mdx",
@@ -17032,7 +17914,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-vs-guinea-pig-guide.mdx",
@@ -17092,7 +17977,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/hedgehog-cost-guide.mdx",
@@ -17157,7 +18045,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehog-feeding-guide.mdx",
@@ -17218,7 +18109,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehog-handling-guide.mdx",
@@ -17274,7 +18168,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehog-health-issues-guide.mdx",
@@ -17335,7 +18232,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehog-legal-guide.mdx",
@@ -17369,7 +18269,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehog-tank-setup-guide.mdx",
@@ -17432,7 +18335,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hedgehogs-are-lactose-intolerant-despite-what-cartoons-show.mdx",
@@ -17465,7 +18371,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/hermit-crab-cost-guide.mdx",
@@ -17524,7 +18433,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hermit-crab-handling-guide.mdx",
@@ -17576,7 +18488,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hermit-crab-health-issues-guide.mdx",
@@ -17632,7 +18547,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hermit-crab-tank-setup-guide.mdx",
@@ -17691,7 +18609,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hip-and-elbow-dysplasia-guide.mdx",
@@ -17748,7 +18669,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hognose-snake-cost-guide.mdx",
@@ -17809,7 +18733,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hognose-snake-handling-guide.mdx",
@@ -17865,7 +18792,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hognose-snake-health-issues-guide.mdx",
@@ -17926,7 +18856,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hognose-snake-legal-guide.mdx",
@@ -17973,7 +18906,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/hognose-snake-tank-setup-guide.mdx",
@@ -18035,7 +18971,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/honey-badgers-the-toughest-little-troublemakers-on-the-planet.mdx",
@@ -18066,7 +19005,10 @@
     "animal": "Honey Badger",
     "myth": "The honey badger is officially the world most fearless animal, and nothing can touch it.",
     "truth": "That was a 2002 print edition of Guinness. Lions and leopards prey on them, and adult annual mortality runs at 34 percent.",
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 11,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/how-a-glass-frog-hides-its-own-blood.mdx",
@@ -18104,7 +19046,10 @@
     "animal": "Glass Frog",
     "myth": "A glass frog is see-through because there is nothing much inside it.",
     "truth": "It packs 89 percent of its red blood cells into its liver to sleep. Blood that concentrated should clot, and somehow does not.",
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1600,
+    "imageHeight": 914
   },
   {
     "path": "/content/guides/how-dangerous-are-sharks-really.mdx",
@@ -18140,7 +19085,10 @@
     "animal": "Shark",
     "myth": "Sharks are one of the more dangerous animals to humans.",
     "truth": "There were 65 unprovoked bites worldwide in 2025. Over the same period people killed roughly 80 million sharks.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/how-honeybees-vote-on-a-new-home.mdx",
@@ -18175,7 +19123,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/iguana-fireskink-quaker-overview.mdx",
@@ -18222,7 +19173,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx",
@@ -18258,7 +19212,10 @@
     "animal": "Immortal Jellyfish",
     "myth": "The immortal jellyfish lives forever.",
     "truth": "It can reverse its life cycle back to a polyp, which is not the same as not dying. Most get eaten long before they get the chance.",
-    "sourceCount": 14
+    "sourceCount": 14,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/inherited-eye-disease-dogs-cats-guide.mdx",
@@ -18320,7 +19277,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 16,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/invertebrate-molting-guide.mdx",
@@ -18380,7 +19340,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/ivdd-and-chondrodystrophy-guide.mdx",
@@ -18437,7 +19400,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jacksons-chameleon-cost-guide.mdx",
@@ -18504,7 +19470,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jacksons-chameleon-handling-guide.mdx",
@@ -18564,7 +19533,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jacksons-chameleon-health-issues-guide.mdx",
@@ -18624,7 +19596,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jacksons-chameleon-tank-setup-guide.mdx",
@@ -18687,7 +19662,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jacksonschameleon-canary-millipede-corydoras-overview.mdx",
@@ -18747,7 +19725,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jumping-spider-cost-guide.mdx",
@@ -18809,7 +19790,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jumping-spider-feeding-guide.mdx",
@@ -18871,7 +19855,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jumping-spider-handling-guide.mdx",
@@ -18926,7 +19913,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jumping-spider-health-issues-guide.mdx",
@@ -18985,7 +19975,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/jumping-spider-tank-setup-guide.mdx",
@@ -19047,7 +20040,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/kingsnake-legal-guide.mdx",
@@ -19094,7 +20090,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 6,
+    "imageWidth": 2400,
+    "imageHeight": 1792
   },
   {
     "path": "/content/guides/koi-conure-slider-scorpion-overview.mdx",
@@ -19146,7 +20145,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-cost-guide.mdx",
@@ -19208,7 +20210,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-feeding-guide.mdx",
@@ -19272,7 +20277,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-handling-guide.mdx",
@@ -19328,7 +20336,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-health-issues-guide.mdx",
@@ -19388,7 +20399,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-tank-setup-guide.mdx",
@@ -19449,7 +20463,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-vs-goldfish-guide.mdx",
@@ -19509,7 +20526,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-cost-guide.mdx",
@@ -19574,7 +20594,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-handling-guide.mdx",
@@ -19634,7 +20657,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-health-issues-guide.mdx",
@@ -19694,7 +20720,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leaf-tailed-gecko-tank-setup-guide.mdx",
@@ -19759,7 +20788,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx",
@@ -19819,7 +20851,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-cost-guide.mdx",
@@ -19875,7 +20910,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-enrichment-guide.mdx",
@@ -19936,7 +20974,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/leopard-gecko-feeding-guide.mdx",
@@ -20000,7 +21041,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-handling-guide.mdx",
@@ -20052,7 +21096,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-health-issues-guide.mdx",
@@ -20109,7 +21156,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-tank-setup-guide.mdx",
@@ -20166,7 +21216,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/leopard-gecko-temperature-guide.mdx",
@@ -20228,7 +21281,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 784,
+    "imageHeight": 1168
   },
   {
     "path": "/content/guides/leopard-gecko-vs-crested-gecko-guide.mdx",
@@ -20291,7 +21347,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lions-are-the-only-social-cat.mdx",
@@ -20326,7 +21385,10 @@
     "animal": "Lion",
     "myth": "Lions live in prides so they can hunt together.",
     "truth": "Cooperative hunting is not what holds a pride together. Related females holding ground worth having is.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-cost-guide.mdx",
@@ -20388,7 +21450,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-enrichment-guide.mdx",
@@ -20445,7 +21510,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1600,
+    "imageHeight": 1200
   },
   {
     "path": "/content/guides/lovebird-handling-guide.mdx",
@@ -20501,7 +21569,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-health-issues-guide.mdx",
@@ -20562,7 +21633,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-tank-setup-guide.mdx",
@@ -20623,7 +21697,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/lovebird-vs-budgie-guide.mdx",
@@ -20683,7 +21760,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-cost-guide.mdx",
@@ -20745,7 +21825,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-feeding-guide.mdx",
@@ -20806,7 +21889,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-handling-guide.mdx",
@@ -20862,7 +21948,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-health-issues-guide.mdx",
@@ -20921,7 +22010,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/madagascar-hissing-cockroach-tank-setup-guide.mdx",
@@ -20983,7 +22075,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mantis-shrimp-16-color-vision-punch-power.mdx",
@@ -21016,7 +22111,10 @@
     "animal": "Mantis Shrimp",
     "myth": "Sixteen colour receptors means the mantis shrimp sees colours we cannot imagine.",
     "truth": "It discriminates colour worse than we do. The receptors work as a fast lookup, not as a richer picture.",
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/mike-the-headless-chicken-explained.mdx",
@@ -21051,7 +22149,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/milk-snake-cost-guide.mdx",
@@ -21113,7 +22214,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/milk-snake-handling-guide.mdx",
@@ -21169,7 +22273,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/milk-snake-health-issues-guide.mdx",
@@ -21228,7 +22335,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/milk-snake-legal-guide.mdx",
@@ -21275,7 +22385,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/milk-snake-tank-setup-guide.mdx",
@@ -21337,7 +22450,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/milk-snake-vs-corn-snake-guide.mdx",
@@ -21397,7 +22513,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 670
   },
   {
     "path": "/content/guides/molly-cost-guide.mdx",
@@ -21463,7 +22582,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/molly-feeding-guide.mdx",
@@ -21524,7 +22646,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/molly-handling-guide.mdx",
@@ -21584,7 +22709,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/molly-health-issues-guide.mdx",
@@ -21651,7 +22779,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/molly-tank-setup-guide.mdx",
@@ -21721,7 +22852,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mourning-gecko-cost-guide.mdx",
@@ -21782,7 +22916,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mourning-gecko-feeding-guide.mdx",
@@ -21847,7 +22984,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mourning-gecko-handling-guide.mdx",
@@ -21907,7 +23047,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mourning-gecko-health-issues-guide.mdx",
@@ -21968,7 +23111,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mourning-gecko-tank-setup-guide.mdx",
@@ -22030,7 +23176,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mouse-cost-guide.mdx",
@@ -22094,7 +23243,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mouse-feeding-guide.mdx",
@@ -22153,7 +23305,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mouse-handling-guide.mdx",
@@ -22209,7 +23364,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mouse-health-issues-guide.mdx",
@@ -22269,7 +23427,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mouse-tank-setup-guide.mdx",
@@ -22331,7 +23492,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 670
   },
   {
     "path": "/content/guides/naked-mole-rat-breaks-the-rules-for-mammals.mdx",
@@ -22366,7 +23530,10 @@
     "animal": "Naked Mole Rat",
     "myth": "Naked mole rats cannot get cancer.",
     "truth": "They do get it. What is genuinely strange is that their risk of dying does not rise with age, which was thought impossible for a mammal.",
-    "sourceCount": 13
+    "sourceCount": 13,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/narwhal-facts-the-real-unicorn-of-the-sea.mdx",
@@ -22398,7 +23565,10 @@
     "animal": "Narwhal",
     "myth": "The narwhal tusk is a horn.",
     "truth": "It is a tooth, grown out through the lip, threaded with ten million channels that let the animal taste the sea through it.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/neon-tetra-cost-guide.mdx",
@@ -22462,7 +23632,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/neon-tetra-feeding-guide.mdx",
@@ -22525,7 +23698,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/neon-tetra-handling-guide.mdx",
@@ -22581,7 +23757,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/neon-tetra-health-issues-guide.mdx",
@@ -22642,7 +23821,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/neon-tetra-tank-setup-guide.mdx",
@@ -22706,7 +23888,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/oscar-fish-cost-guide.mdx",
@@ -22770,7 +23955,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/oscar-fish-feeding-guide.mdx",
@@ -22833,7 +24021,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/oscar-fish-handling-guide.mdx",
@@ -22889,7 +24080,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/oscar-fish-health-issues-guide.mdx",
@@ -22951,7 +24145,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/oscar-fish-tank-setup-guide.mdx",
@@ -23014,7 +24211,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pacman-frog-cost-guide.mdx",
@@ -23076,7 +24276,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pacman-frog-feeding-guide.mdx",
@@ -23137,7 +24340,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pacman-frog-handling-guide.mdx",
@@ -23197,7 +24403,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pacman-frog-health-issues-guide.mdx",
@@ -23258,7 +24467,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pacman-frog-tank-setup-guide.mdx",
@@ -23320,7 +24532,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pangolins-the-most-trafficked-mammal-nobody-knows.mdx",
@@ -23355,7 +24570,10 @@
     "animal": "Pangolin",
     "myth": "Pangolin scales are worth taking.",
     "truth": "They are keratin, the same as fingernails. That belief has made the pangolin the most trafficked wild mammal on Earth.",
-    "sourceCount": 14
+    "sourceCount": 14,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/parrotlet-cost-guide.mdx",
@@ -23417,7 +24635,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/parrotlet-feeding-guide.mdx",
@@ -23478,7 +24699,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/parrotlet-handling-guide.mdx",
@@ -23536,7 +24760,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/parrotlet-health-issues-guide.mdx",
@@ -23597,7 +24824,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/parrotlet-tank-setup-guide.mdx",
@@ -23658,7 +24888,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/penguins-do-not-mate-for-life.mdx",
@@ -23694,7 +24927,10 @@
     "animal": "Penguin",
     "myth": "Penguins mate for life.",
     "truth": "Divorce rates run from near zero to over 80 percent depending on the species, and what predicts loyalty is the nest.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/periodontal-dental-disease-guide.mdx",
@@ -23752,7 +24988,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 11,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pet-dna-test-results-guide.mdx",
@@ -23814,7 +25053,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 15,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/pet-obesity-body-condition-guide.mdx",
@@ -23872,7 +25114,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/platy-cost-guide.mdx",
@@ -23935,7 +25180,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/platy-feeding-guide.mdx",
@@ -23992,7 +25240,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/platy-handling-guide.mdx",
@@ -24048,7 +25299,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/platy-health-issues-guide.mdx",
@@ -24110,7 +25364,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/platy-swordtail-molly-overview.mdx",
@@ -24154,7 +25411,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 2400,
+    "imageHeight": 1792
   },
   {
     "path": "/content/guides/platy-tank-setup-guide.mdx",
@@ -24220,7 +25480,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/praying-mantis-cost-guide.mdx",
@@ -24282,7 +25545,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/praying-mantis-handling-guide.mdx",
@@ -24338,7 +25604,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/praying-mantis-health-issues-guide.mdx",
@@ -24399,7 +25668,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/praying-mantis-ootheca-guide.mdx",
@@ -24460,7 +25732,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/praying-mantis-tank-setup-guide.mdx",
@@ -24522,7 +25797,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/quaker-parakeet-cost-guide.mdx",
@@ -24583,7 +25861,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/quaker-parakeet-handling-guide.mdx",
@@ -24639,7 +25920,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/quaker-parakeet-health-issues-guide.mdx",
@@ -24695,7 +25979,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/quaker-parakeet-tank-setup-guide.mdx",
@@ -24755,7 +26042,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/rabbit-budgie-overview.mdx",
@@ -24802,7 +26092,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rabbit-cost-guide.mdx",
@@ -24860,7 +26153,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rabbit-feeding-guide.mdx",
@@ -24925,7 +26221,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rabbit-gi-stasis-guide.mdx",
@@ -24984,7 +26283,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/rabbit-handling-guide.mdx",
@@ -25036,7 +26338,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rabbit-health-issues-guide.mdx",
@@ -25091,7 +26396,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rabbit-tank-setup-guide.mdx",
@@ -25147,7 +26455,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rat-cost-guide.mdx",
@@ -25213,7 +26524,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rat-feeding-guide.mdx",
@@ -25270,7 +26584,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rat-handling-guide.mdx",
@@ -25326,7 +26643,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rat-health-issues-guide.mdx",
@@ -25387,7 +26707,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rat-mouse-flying-squirrel-overview.mdx",
@@ -25430,7 +26753,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 2400,
+    "imageHeight": 1792
   },
   {
     "path": "/content/guides/rat-tank-setup-guide.mdx",
@@ -25494,7 +26820,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 10,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-cost-guide.mdx",
@@ -25556,7 +26885,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-feeding-guide.mdx",
@@ -25619,7 +26951,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-handling-guide.mdx",
@@ -25675,7 +27010,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-health-issues-guide.mdx",
@@ -25736,7 +27074,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-legal-guide.mdx",
@@ -25783,7 +27124,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-eared-slider-tank-setup-guide.mdx",
@@ -25845,7 +27189,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-footed-tortoise-cost-guide.mdx",
@@ -25907,7 +27254,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-footed-tortoise-feeding-guide.mdx",
@@ -25967,7 +27317,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-footed-tortoise-garter-snake-rosy-boa-overview.mdx",
@@ -26010,7 +27363,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 1600,
+    "imageHeight": 1195
   },
   {
     "path": "/content/guides/red-footed-tortoise-handling-guide.mdx",
@@ -26066,7 +27422,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/red-footed-tortoise-health-issues-guide.mdx",
@@ -26127,7 +27486,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/red-footed-tortoise-tank-setup-guide.mdx",
@@ -26190,7 +27552,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/reptile-shedding-complete-guide.mdx",
@@ -26252,7 +27617,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rosy-boa-cost-guide.mdx",
@@ -26315,7 +27683,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/rosy-boa-feeding-guide.mdx",
@@ -26373,7 +27744,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/rosy-boa-handling-guide.mdx",
@@ -26429,7 +27803,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/rosy-boa-health-issues-guide.mdx",
@@ -26489,7 +27866,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 10,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/rosy-boa-legal-guide.mdx",
@@ -26536,7 +27916,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/rosy-boa-tank-setup-guide.mdx",
@@ -26601,7 +27984,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/russian-tortoise-cost-guide.mdx",
@@ -26667,7 +28053,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-enrichment-guide.mdx",
@@ -26722,7 +28111,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-handling-guide.mdx",
@@ -26782,7 +28174,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-health-issues-guide.mdx",
@@ -26841,7 +28236,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-legal-guide.mdx",
@@ -26875,7 +28273,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-tank-setup-guide.mdx",
@@ -26941,7 +28342,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-monitor-cost-guide.mdx",
@@ -27007,7 +28411,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-monitor-handling-guide.mdx",
@@ -27066,7 +28473,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-monitor-health-issues-guide.mdx",
@@ -27129,7 +28539,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-monitor-legal-guide.mdx",
@@ -27163,7 +28576,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-monitor-tank-setup-guide.mdx",
@@ -27229,7 +28645,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/savannah-russiantortoise-cockatoo-stickinsect-overview.mdx",
@@ -27289,7 +28708,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/seahorse-male-pregnancy-how-it-works.mdx",
@@ -27325,7 +28747,10 @@
     "animal": "Seahorse",
     "myth": "The male seahorse just carries the eggs.",
     "truth": "He grows a placenta and feeds the embryos, and had to dismantle part of his own immune system to stop his body rejecting them.",
-    "sourceCount": 7
+    "sourceCount": 7,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/serval-legal-guide.mdx",
@@ -27360,7 +28785,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sharks-are-older-than-trees-and-9-other-facts-that-will-blow-your-mind.mdx",
@@ -27392,7 +28820,10 @@
     "animal": "Shark",
     "myth": "Sharks have been around a very long time.",
     "truth": "Longer than trees. Shark-like scales turn up around 450 million years ago; the first forests are 385.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 13,
+    "imageWidth": 1600,
+    "imageHeight": 978
   },
   {
     "path": "/content/guides/shima-enaga-japans-snow-fairy-bird.mdx",
@@ -27427,7 +28858,10 @@
     "animal": "Shima Enaga",
     "myth": "The shima enaga's round, snowball shape is just how the bird always looks.",
     "truth": "That roundness is a deliberate winter behavior. It fluffs its feathers to trap air for insulation against Hokkaido's cold, and looks noticeably slimmer the rest of the year.",
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 800,
+    "imageHeight": 600
   },
   {
     "path": "/content/guides/slow-loris-the-only-venomous-primate.mdx",
@@ -27462,7 +28896,10 @@
     "animal": "Slow Loris",
     "myth": "No primate is venomous.",
     "truth": "The slow loris mixes venom from a gland on its own arm into its saliva. In one clinical series, 43 percent of people bitten needed hospital care.",
-    "sourceCount": 9
+    "sourceCount": 9,
+    "headingCount": 7,
+    "imageWidth": 1280,
+    "imageHeight": 720
   },
   {
     "path": "/content/guides/snake-brumation-guide.mdx",
@@ -27523,7 +28960,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1620,
+    "imageHeight": 1080
   },
   {
     "path": "/content/guides/stick-insect-cost-guide.mdx",
@@ -27587,7 +29027,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/stick-insect-handling-guide.mdx",
@@ -27643,7 +29086,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/stick-insect-health-issues-guide.mdx",
@@ -27702,7 +29148,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/stick-insect-tank-setup-guide.mdx",
@@ -27767,7 +29216,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sugar-glider-cost-guide.mdx",
@@ -27829,7 +29281,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sugar-glider-feeding-guide.mdx",
@@ -27894,7 +29349,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/sugar-glider-handling-guide.mdx",
@@ -27950,7 +29408,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sugar-glider-health-issues-guide.mdx",
@@ -28008,7 +29469,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sugar-glider-legal-guide.mdx",
@@ -28055,7 +29519,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sugar-glider-tank-setup-guide.mdx",
@@ -28117,7 +29584,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-hedgehog-lovebird-guppy-overview.mdx",
@@ -28169,7 +29639,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-cost-guide.mdx",
@@ -28231,7 +29704,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-feeding-guide.mdx",
@@ -28295,7 +29771,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 512,
+    "imageHeight": 382
   },
   {
     "path": "/content/guides/sulcata-tortoise-handling-guide.mdx",
@@ -28355,7 +29834,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-health-issues-guide.mdx",
@@ -28416,7 +29898,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-legal-guide.mdx",
@@ -28463,7 +29948,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-tank-setup-guide.mdx",
@@ -28525,7 +30013,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/sulcata-tortoise-vs-russian-tortoise-guide.mdx",
@@ -28590,7 +30081,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1264,
+    "imageHeight": 848
   },
   {
     "path": "/content/guides/swordtail-cost-guide.mdx",
@@ -28653,7 +30147,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/swordtail-feeding-guide.mdx",
@@ -28710,7 +30207,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/swordtail-handling-guide.mdx",
@@ -28766,7 +30266,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 10,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/swordtail-health-issues-guide.mdx",
@@ -28828,7 +30331,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/swordtail-tank-setup-guide.mdx",
@@ -28893,7 +30399,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 11,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/t5-vs-compact-uvb-guide.mdx",
@@ -28941,7 +30450,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 5,
+    "imageWidth": 1600,
+    "imageHeight": 1067
   },
   {
     "path": "/content/guides/tarantula-cost-guide.mdx",
@@ -28997,7 +30509,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1600,
+    "imageHeight": 1200
   },
   {
     "path": "/content/guides/tarantula-feeding-guide.mdx",
@@ -29061,7 +30576,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tarantula-handling-guide.mdx",
@@ -29113,7 +30631,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tarantula-health-issues-guide.mdx",
@@ -29169,7 +30690,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tarantula-legal-guide.mdx",
@@ -29203,7 +30727,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tarantula-tank-setup-guide.mdx",
@@ -29261,7 +30788,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tarantula-vs-emperor-scorpion-guide.mdx",
@@ -29321,7 +30851,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/tardigrades-the-toughest-creatures-on-earth-and-in-space.mdx",
@@ -29353,7 +30886,10 @@
     "animal": "Tardigrade",
     "myth": "A tardigrade can survive anything, indefinitely.",
     "truth": "Dried ones collapse past about 120 days. Every multi-decade survival on record was frozen, and the two states get confused constantly.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 11,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx",
@@ -29396,7 +30932,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 13,
+    "imageWidth": 1360,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/the-incredible-axolotl-nature-s-smiling-salamander.mdx",
@@ -29436,7 +30975,10 @@
     "animal": "Axolotl",
     "myth": "The axolotl never grows up.",
     "truth": "It reaches full adult size and breeds. The word is paedomorphosis, and the right hormone pushes it through metamorphosis anyway.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 4,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/the-octopus-has-three-hearts-and-uses-all-of-them.mdx",
@@ -29471,7 +31013,10 @@
     "animal": "Octopus",
     "myth": "An octopus has nine brains, one in each arm.",
     "truth": "It has one, a ring around its throat, plus a nerve cord running down every arm. That is remarkable enough without the upgrade.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/the-platypus-natures-most-wonderfully-bizarre-mammal.mdx",
@@ -29502,7 +31047,10 @@
     "animal": "Platypus",
     "myth": "The platypus glows under UV light, and it must be for something.",
     "truth": "So does nearly every mammal. It is a property of unpigmented fur, and this one hunts underwater with its eyes shut.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 12,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/tiger-salamander-cost-guide.mdx",
@@ -29568,7 +31116,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-handling-guide.mdx",
@@ -29628,7 +31179,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 5,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-health-issues-guide.mdx",
@@ -29688,7 +31242,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-legal-guide.mdx",
@@ -29747,7 +31304,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-tank-setup-guide.mdx",
@@ -29812,7 +31372,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-vs-axolotl-guide.mdx",
@@ -29876,7 +31439,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 9,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/tokay-gecko-cost-guide.mdx",
@@ -29942,7 +31508,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tokay-gecko-handling-guide.mdx",
@@ -29997,7 +31566,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tokay-gecko-health-issues-guide.mdx",
@@ -30056,7 +31628,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tokay-gecko-tank-setup-guide.mdx",
@@ -30120,7 +31695,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",
@@ -30152,7 +31730,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 8,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/uromastyx-cost-guide.mdx",
@@ -30218,7 +31799,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-feeding-guide.mdx",
@@ -30282,7 +31866,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-handling-guide.mdx",
@@ -30337,7 +31924,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-health-issues-guide.mdx",
@@ -30396,7 +31986,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-tank-setup-guide.mdx",
@@ -30462,7 +32055,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-tokay-africangrey-jumpingspider-overview.mdx",
@@ -30522,7 +32118,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/uromastyx-vs-bearded-dragon-guide.mdx",
@@ -30582,7 +32181,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1200,
+    "imageHeight": 675
   },
   {
     "path": "/content/guides/uvb-lighting-complete-guide.mdx",
@@ -30658,7 +32260,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 10,
+    "imageWidth": 784,
+    "imageHeight": 1168
   },
   {
     "path": "/content/guides/veiled-chameleon-cost-guide.mdx",
@@ -30721,7 +32326,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/veiled-chameleon-feeding-guide.mdx",
@@ -30790,7 +32398,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 8,
+    "imageWidth": 1376,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/veiled-chameleon-ferret-hognose-overview.mdx",
@@ -30842,7 +32453,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/veiled-chameleon-handling-guide.mdx",
@@ -30902,7 +32516,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/veiled-chameleon-health-issues-guide.mdx",
@@ -30963,7 +32580,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/veiled-chameleon-legal-guide.mdx",
@@ -30997,7 +32617,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/veiled-chameleon-tank-setup-guide.mdx",
@@ -31059,7 +32682,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/weirdest-creatures-deep-sea-facts-that-will-blow-your-mind.mdx",
@@ -31091,7 +32717,10 @@
     "animal": "Deep Sea",
     "myth": "Bioluminescence is a rare trick of the deep.",
     "truth": "Three quarters of the animals counted in Monterey Bay make their own light, and the ratio barely shifts from the surface to 4,000 metres.",
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/what-finding-nemo-got-wrong-about-clownfish.mdx",
@@ -31127,7 +32756,10 @@
     "animal": "Clownfish",
     "myth": "Marlin raises Nemo alone after Coral dies.",
     "truth": "Every clownfish is born male. Marlin would have become female and paired with his own son.",
-    "sourceCount": 10
+    "sourceCount": 10,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/when-your-pet-wont-stop-pacing-or-hiding-what-anxious-pet-behavior-is-really-telling-you.mdx",
@@ -31158,7 +32790,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 3,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
@@ -31220,7 +32855,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/whites-tree-frog-handling-guide.mdx",
@@ -31276,7 +32914,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/whites-tree-frog-health-issues-guide.mdx",
@@ -31337,7 +32978,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/whites-tree-frog-tank-setup-guide.mdx",
@@ -31399,7 +33043,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-a-sloth-climbs-down-to-defecate.mdx",
@@ -31434,7 +33081,10 @@
     "animal": "Sloth",
     "myth": "Sloths are too lazy to leave their tree.",
     "truth": "One climbs all the way down once a week to defecate, and a large share of all sloth deaths happen during that trip.",
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 3,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-axolotls-need-cold-clean-water.mdx",
@@ -31467,7 +33117,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 8,
+    "imageWidth": 1280,
+    "imageHeight": 720
   },
   {
     "path": "/content/guides/why-bearded-dragons-need-uvb-lighting-and-why-skipping-it-is-deadly.mdx",
@@ -31500,7 +33153,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2
+    "sourceCount": 2,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-cats-need-mental-enrichment-and-how-boredom-can-break-them.mdx",
@@ -31532,7 +33188,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 1
+    "sourceCount": 1,
+    "headingCount": 6,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-parrots-need-social-interaction-and-what-loneliness-does-to-them.mdx",
@@ -31564,7 +33223,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-rabbits-need-unlimited-hay-and-what-happens-to-their-teeth-without-it.mdx",
@@ -31596,7 +33258,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-wombats-produce-cube-shaped-droppings.mdx",
@@ -31631,7 +33296,10 @@
     "animal": "Wombat",
     "myth": "A wombat has a square sphincter.",
     "truth": "There is no such thing. The cube is shaped much further up, by stiff and stretchy bands in the intestine wall.",
-    "sourceCount": 10
+    "sourceCount": 10,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/why-your-dog-needs-daily-exercise.mdx",
@@ -31665,7 +33333,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 6,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/wolverine-facts-the-toughest-animal-pound-for-pound.mdx",
@@ -31696,7 +33367,10 @@
     "animal": "Wolverine",
     "myth": "A wolverine will drive a bear, a cougar or a wolf pack off a kill.",
     "truth": "That traces to one uncited sentence on a reference site. A camera study of 58 puma kills logged 20 scavenger species and no wolverine.",
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 10,
+    "imageWidth": 1408,
+    "imageHeight": 768
   },
   {
     "path": "/content/guides/wood-frog-freezes-solid-and-survives.mdx",
@@ -31732,7 +33406,10 @@
     "animal": "Wood Frog",
     "myth": "Frozen solid means dead.",
     "truth": "Two thirds of a wood frog turns to ice and its heart stops for weeks. Alaskan ones come back from minus 16 Celsius.",
-    "sourceCount": 10
+    "sourceCount": 10,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview.mdx",
@@ -31776,7 +33453,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 4,
+    "imageWidth": 2752,
+    "imageHeight": 1536
   },
   {
     "path": "/content/guides/zebra-danio-cost-guide.mdx",
@@ -31841,7 +33521,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-feeding-guide.mdx",
@@ -31900,7 +33583,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-handling-guide.mdx",
@@ -31956,7 +33642,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-health-issues-guide.mdx",
@@ -32017,7 +33706,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 9
+    "sourceCount": 9,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-danio-tank-setup-guide.mdx",
@@ -32082,7 +33774,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-finch-cost-guide.mdx",
@@ -32143,7 +33838,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6
+    "sourceCount": 6,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-finch-feeding-guide.mdx",
@@ -32204,7 +33902,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-finch-handling-guide.mdx",
@@ -32260,7 +33961,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5
+    "sourceCount": 5,
+    "headingCount": 7,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-finch-health-issues-guide.mdx",
@@ -32316,7 +34020,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 8,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/zebra-finch-parrotlet-overview.mdx",
@@ -32360,7 +34067,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 2,
+    "imageWidth": 1200,
+    "imageHeight": 896
   },
   {
     "path": "/content/guides/zebra-finch-tank-setup-guide.mdx",
@@ -32420,7 +34130,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4
+    "sourceCount": 4,
+    "headingCount": 9,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-argentine-tegu-facts.mdx",
@@ -32455,7 +34168,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-ball-python-facts.mdx",
@@ -32492,7 +34208,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-bearded-dragon-facts.mdx",
@@ -32529,7 +34248,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-betta-fish-facts.mdx",
@@ -32566,7 +34288,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-cockatoo-facts.mdx",
@@ -32603,7 +34328,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-emperor-scorpion-facts.mdx",
@@ -32639,7 +34367,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-fire-bellied-toad-facts.mdx",
@@ -32674,7 +34405,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-hedgehog-facts.mdx",
@@ -32708,7 +34442,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-hermit-crab-facts.mdx",
@@ -32745,7 +34482,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-hissing-cockroach-facts.mdx",
@@ -32780,7 +34520,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3
+    "sourceCount": 3,
+    "headingCount": 2,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-leopard-gecko-facts.mdx",
@@ -32817,7 +34560,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1248,
+    "imageHeight": 832
   },
   {
     "path": "/content/fun-facts/10-surprising-praying-mantis-facts.mdx",
@@ -32854,7 +34600,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/10-surprising-tarantula-facts.mdx",
@@ -32891,7 +34640,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-axolotl.mdx",
@@ -32928,7 +34680,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-boa-constrictor.mdx",
@@ -32965,7 +34720,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-cuttlefish.mdx",
@@ -33002,7 +34760,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-golden-retriever.mdx",
@@ -33042,7 +34803,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-humpback-whale.mdx",
@@ -33079,7 +34843,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-octopus.mdx",
@@ -33116,7 +34883,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/fun-facts/fun-facts-rabbit.mdx",
@@ -33156,7 +34926,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-gotcha-day-part-13.mdx",
@@ -33194,7 +34967,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-afternoon-in-the-grass-part-6.mdx",
@@ -33232,7 +35008,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-day-everything-changed-part-2.mdx",
@@ -33269,7 +35048,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-dragon-who-flew-part-8.mdx",
@@ -33307,7 +35089,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-great-molt-part-10.mdx",
@@ -33345,7 +35130,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-guest-tank-part-12.mdx",
@@ -33383,7 +35171,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-long-drop-part-14.mdx",
@@ -33420,7 +35211,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11.mdx",
@@ -33458,7 +35252,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-pirate-of-the-sand-sea-part-5.mdx",
@@ -33496,7 +35293,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-rival-beyond-the-gl.mdx",
@@ -33534,7 +35334,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-sun-the-glass-and-t.mdx",
@@ -33569,7 +35372,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-twelfth-day-part-4.mdx",
@@ -33607,7 +35413,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-the-waiting-room-part-9.mdx",
@@ -33645,7 +35454,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-dex-the-bearded-dragon-what-the-glass-was-for-part-7.mdx",
@@ -33683,7 +35495,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-first-flight-part-4.mdx",
@@ -33721,7 +35536,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-otis-goes-downtown-part-14.mdx",
@@ -33758,7 +35576,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3.mdx",
@@ -33796,7 +35617,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-costume-part-9.mdx",
@@ -33834,7 +35658,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-at-the-park-part-11.mdx",
@@ -33872,7 +35699,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-day-he-decided-the-garden-belonged-to-him.mdx",
@@ -33909,7 +35739,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-first-afternoon-part-13.mdx",
@@ -33947,7 +35780,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-foster-part-12.mdx",
@@ -33985,7 +35821,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-garden-the-squirrel.mdx",
@@ -34022,7 +35861,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-great-warren-expedition-part-8.mdx",
@@ -34060,7 +35902,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-guest-in-the-house-part-6.mdx",
@@ -34098,7 +35943,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-moon-made-of-clover-part-10.mdx",
@@ -34136,7 +35984,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-night-of-the-owl-part-7.mdx",
@@ -34174,7 +36025,10 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   },
   {
     "path": "/content/short-story/chronicles-of-otis-the-bunny-the-trip-to-somewhere-new-part-5.mdx",
@@ -34212,6 +36066,9 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 0
+    "sourceCount": 0,
+    "headingCount": 0,
+    "imageWidth": 1920,
+    "imageHeight": 1080
   }
 ]

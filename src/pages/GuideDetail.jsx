@@ -7,7 +7,7 @@ import { allGuides } from '@/lib/data/guides';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
-import { mdxPosts } from '@/lib/mdxPosts';
+import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
@@ -15,6 +15,7 @@ import { truncateDescription } from '@/lib/utils/truncate';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
+import HeroImage from '@/components/shared/HeroImage';
 import CostBuilder from '@/components/guides/CostBuilder';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
@@ -64,7 +65,7 @@ export default function GuideDetail() {
   // than sitting in the deep-dive list, because it answers a different question
   // from the husbandry articles around it.
   const allRelatedArticles = guide
-    ? getRelatedArticleSlugs(guide.id, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean)
+    ? getRelatedArticleSlugs(guide.id, relatedPosts).map(slug => relatedPosts.find(p => p._id === slug)).filter(Boolean)
     : [];
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
@@ -491,11 +492,10 @@ export default function GuideDetail() {
             {/* Hero image */}
             {guide.image && (
               <div className="rounded-2xl overflow-hidden aspect-video">
-                <img
+                <HeroImage
                   src={guide.image}
                   alt={`${guide.name} - ${guide.petType}`}
                   className="w-full h-full object-cover"
-                  loading="lazy"
                 />
               </div>
             )}
