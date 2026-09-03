@@ -202,6 +202,20 @@ used to predict: Betta v1.0 landed at 36 and Goldfish v3.0 at 39, because cyclin
 chemistry, and water changes each need their own page rather than a shared one, and a
 goldfish additionally needs filtration sizing and media maintenance on separate pages.
 
+Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
+distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
+outdoors, flooring and litter training, proofing, bonding, and spay and neuter, and landed
+at 39 pages. Hamster v3.0 needed far less of that, because the animal is solitary, lives
+two to three years, and has one enclosure standard rather than a housing philosophy, and
+landed at 36. Take 34 to 39 as the mammal range rather than a single number, and let the
+animal's social life decide where in it you fall: a species that is kept in pairs needs a
+companionship page and a bonding page, and a solitary one needs neither.
+
+Both mammal builds also want a page reptiles never need, on choosing which animal within
+the common name, because temperament varies more inside "rabbit" and "hamster" than inside
+"ball python." One page, not two: see the hamster section below for what happens when it
+takes two.
+
 ### Page count is a target, not a budget
 
 Every page count in this doc (34 for the reptile skeleton, 34 to 36 aquatic) is the
@@ -522,9 +536,12 @@ replaced with indoors versus outdoors and temperature, flooring and litter train
 rabbit-proofing, bonding, and spay and neuter. Section 03 went the other way and grew,
 because GI stasis needs three pages on its own. It came out at 39 pages.
 
-For the next mammal build: expect 38 to 40 pages, expect the health section to be the
-long one rather than the husbandry section, and expect two pages that reptiles never need,
-a vet-choice page and a companionship page.
+For the next mammal build: expect the health section to be the long one rather than the
+husbandry section, and expect a vet-choice page, which reptiles never need. The 38 to 40
+page range this note used to predict held for the rabbit and did not survive contact with
+the hamster, which came out at 36. See the hamster section below: the companionship page
+predicted here does not exist for a solitary species, and the page count follows the
+animal's social life more than anything else.
 
 Already covered, do not rewrite: `rabbit-tank-setup-guide.mdx` carries the House Rabbit
 Society space standard and the litter-training method. `rabbit-feeding-guide.mdx` carries
