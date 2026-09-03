@@ -237,23 +237,78 @@ and slate palette, sharpest on the dragon mid-frame, 35mm, f/4, 3:2. No text,
 logos, or brand markings on any equipment.
 
 ### bearded-dragon-brumation.jpg
-Photorealistic photograph of an adult bearded dragon settled calmly half
-inside a dark cork bark hide on the cool side of its enclosure, eyes closed
-or heavy-lidded, body relaxed and low rather than alert or basking. The
-UVB tube overhead sits dim and unlit in soft ambient room light, a hint of
-cooler blue-grey creeping in through the enclosure glass beside a warm
-wooden shelf edge, suggesting a quiet autumn evening rather than illness.
-Muted slate and warm wood palette, sharpest on the dragon's face at the
-mouth of the hide, 50mm, f/2.8, 3:2. No text, logos, or brand markings
-anywhere.
+Photorealistic photograph of an adult bearded dragon brumating, asleep and
+half-tucked inside the mouth of a wide cork bark tube on the cool side of a
+naturalistic enclosure. Head and shoulders out on the substrate, body and tail
+still in shadow inside the tube, chin resting flat on the ground, posture low
+and settled rather than propped up or alert.
+
+THE VISIBLE EYE IS FULLY SHUT. The lower lid domes smoothly up over the socket
+as a soft scaled mound, meeting a fine gold-rimmed seam above it. No eyeball, no
+glossy globe, no iris, no pupil, no sclera and no catchlight anywhere in the eye
+socket. This is the detail that decides the picture: an eye that reads open or
+cloudy turns a sleeping dragon into a sick one, which is the exact confusion the
+article exists to clear up.
+
+She is healthy, only dormant: full rounded tail base, no visible hip bones or
+ribs, smooth unwrinkled skin, colour muted and dusty rather than bright.
+
+Substrate is a dark naturalistic soil mix with scattered dry brown leaf litter
+around the mouth of the tube, drifting to a paler sandy area at the right of the
+frame. Enclosure glass and a dark frame edge sit out of focus along the top.
+
+Dim, low, warm side light raking in from the left across the cork and the top of
+the head, deep shadow filling the tube and the right foreground, no lamp visible
+and nothing lit. Muted brown, grey and cork palette, quiet and still, the feel of
+a dim autumn evening. Camera low at substrate level and close, sharpest on the
+closed eyelid and the ridge of spines along the jaw, leaf litter crisp in the
+near foreground, 100mm, f/2.8, 3:2.
+
+Must not contain: an open or partially open eye, a visible eyeball, iris or
+pupil, a cloudy, milky, blue-grey, opaque or filmy eye, or a bulging eye; wood
+chips, bark chips or gravel; a lit or glowing lamp of any kind; a red or coloured
+night bulb; sunken eyes, wrinkled skin, a visible spine or hip bones, an open
+mouth, or any other cue that reads as a sick dragon rather than a sleeping one.
+No text, logos, or brand markings anywhere.
 
 ### bearded-dragon-eggs-and-egg-binding.jpg
-Photorealistic photograph of an adult female bearded dragon standing beside an
-open plastic lay box filled with damp dark soil and sand on a terrarium floor,
-one small test-dig visible in the substrate near her front feet. Warm
-terracotta light from an overhead basking lamp just out of frame, earthy brown
-and terracotta palette, sharpest on the dragon's face and the lay box rim,
-50mm, f/2.8, 3:2. No text, logos, or brand markings anywhere.
+Photorealistic photograph of a large lay box set up on the warm side of a
+bearded dragon enclosure, with an adult female standing beside it.
+
+THE LAY BOX IS THE SUBJECT AND MUST READ AS LARGE. It is a full-size
+translucent household storage tub with the lid off, roughly the size of a
+laundry basket, wide enough that the dragon could comfortably turn around
+inside it and clearly longer than she is from nose to tail base. It occupies
+about two thirds of the frame width and its near rim rises to roughly the
+height of her shoulder. Do not render it as a small tray, seed dish, food bowl,
+plant pot or nest box.
+
+The tub is filled deep with a damp dark 50/50 mix of organic topsoil and washed
+play sand, packed to within a few inches of the rim, the depth of the fill
+plainly visible as a dense band through the translucent side wall. The surface
+is worked over rather than smooth, with one shallow test hole started near the
+front corner, its walls holding their shape without slumping. The mix looks
+damp and cohesive, not dusty and not muddy.
+
+The adult female stands on the enclosure floor beside the tub in three-quarter
+view, alert and healthy, body normal and well muscled, one front foot raised
+against the tub's outer wall as if about to climb in. She is secondary to the
+box in the composition and noticeably smaller in the frame than it is. The
+enclosure floor she stands on is smooth grey slate tile, bare and clean, so the
+filled box reads as an obviously separate container rather than as loose
+substrate spread across the enclosure. This contrast between bare tile floor and
+deep filled box is the whole point of the image.
+
+Warm terracotta basking light from a lamp just out of frame at the upper right,
+earthy brown, tan and slate palette, soft shadow under the tub's rim. Camera
+low at floor level and pulled back far enough to hold the full tub in frame,
+sharpest on the tub's near rim and the test hole, the dragon's face still clearly
+readable, 35mm, f/4, 3:2.
+
+Must not contain: eggs of any kind, a small or shallow container, loose soil or
+sand spread across the enclosure floor outside the box, a gravid belly shown
+distended or distressed, a dark beard, gaping, or any cue of illness. No text,
+logos, or brand markings anywhere.
 
 ### bearded-dragon-growth-weight-checks.jpg
 Photorealistic photograph of an adult bearded dragon standing calmly on the
@@ -264,3 +319,29 @@ small notebook and pen sit just behind the scale, slightly blurred. Bright
 clean daylight from a window at the left, warm terracotta and honey palette,
 sharpest on the dragon's face and front legs, 50mm, f/2.8, 3:2. No text,
 logos, or brand markings anywhere.
+
+### bearded-dragon-safe-foods.jpg
+Photorealistic overhead photograph of a freshly chopped bearded dragon salad on
+a flat grey slate feeding tile: finely shredded collard and mustard greens,
+grated orange butternut squash, and small diced red and yellow bell pepper,
+loosely piled so the individual pieces read separately. A single dubia roach
+sits on the slate beside the tile, lightly and unevenly coated in fine white
+calcium powder. Bright clean daylight from the upper left, high key, vivid
+green and orange against cool grey stone, water droplets on the greens. Shot
+straight down, 50mm, f/4, 3:2. Overhead and high key so it doesn't collide with
+the warm floor-level look of `bearded-dragon-shopping-list.jpg`. No fruit, no
+lettuce, no bowl, no hands, no text, logos, or brand markings anywhere.
+
+### reptile-emergency-plan.jpg
+Photorealistic photograph of a power outage kit assembled on a plain wood floor
+beside a ventilated clear plastic transport tub, seen from a low three-quarter
+angle. The tub lid rests to one side and a folded thick towel lines the base; a
+flat cloth hand warmer sits on the floor beside the tub rather than inside it,
+next to a small battery thermometer with an unlit display and a folded index
+card with handwriting too soft to read. Dim warm side light as though the room
+lights are out, deep shadow falling away behind, muted amber and grey-brown
+palette. Camera low at floor level, sharpest on the tub rim and the hand
+warmer, 35mm, f/3.5, 3:2. The hand warmer stays outside the tub and no animal
+appears, since the guide's own rule is that an emergency heat source never
+touches the reptile. No candles or open flame, for the same reason the article
+rules them out. No legible text, logos, or brand markings anywhere.
