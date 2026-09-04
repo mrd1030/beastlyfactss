@@ -48,9 +48,22 @@ const summary = Object.fromEntries(
 // The hub's index of legal guides, sorted the way it renders. Same reasoning
 // as above: the map page filtered this out of mdx-meta.json, which is ~1MB of
 // metadata for all 426 articles, to end up with twenty titles and slugs.
+// The excerpt is carried too, and trimmed here rather than in the browser. The
+// hub's cards have always rendered g.excerpt and it has always been undefined,
+// because this only ever emitted slug and title, so every card on the hub was a
+// bare headline. Cut at a word boundary near 200 characters: the card clamps to
+// three lines, so shipping the full excerpt for 33 guides would be a few KB
+// nobody can read.
+const trimExcerpt = (text) => {
+  const clean = (text || '').trim();
+  if (clean.length <= 200) return clean;
+  const cut = clean.slice(0, 200);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:]$/, '')}...`;
+};
+
 const guides = mdxMeta
   .filter((m) => m.category === 'Legal' && m.slug !== 'exotic-pet-legal-hub')
-  .map((m) => ({ slug: m.slug, title: m.title }))
+  .map((m) => ({ slug: m.slug, title: m.title, excerpt: trimExcerpt(m.excerpt) }))
   .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
 
 // How big the map is, in the two numbers the rest of the site quotes at
