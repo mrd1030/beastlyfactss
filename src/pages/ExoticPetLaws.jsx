@@ -178,7 +178,9 @@ export default function ExoticPetLaws() {
   }, [statuses]);
 
   // researched includes DC, which is not a state, so the two are counted
-  // separately rather than reporting "51 states" at anyone.
+  // separately rather than reporting "51 states" at anyone. Watch which one a
+  // sentence needs: the map caption used to read "N of 51 states and DC",
+  // adding DC to a total that already contained it and implying 52.
   const researchedCount = LEGAL.coverage.researched.filter(
     (c) => LEGAL.jurisdictions[c]?.level !== 'city',
   ).length;
@@ -408,7 +410,7 @@ export default function ExoticPetLaws() {
               {uncheckedStates > 0 && (
                 <>
                   <span className="text-foreground font-semibold">
-                    {`${checkedStates} of ${researchedCount} states and DC have been read for this animal`}
+                    {`${checkedStates} of the ${researchedCount} jurisdictions we cover, the ${stateCount} states plus DC, have been read for this animal`}
                   </span>
                   {`, so the ${uncheckedStates === 1 ? 'single dotted one is' : `${uncheckedStates} dotted ones are`} a gap in our research rather than a finding of no rule.`}
                 </>
