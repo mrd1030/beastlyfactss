@@ -37,14 +37,19 @@ X is architecturally different from Threads and IG here: a tweet decays
 roughly 50% every 6 hours and is largely done within 24, so posts don't
 compete with each other the way an over-stuffed Meta feed does, and higher
 frequency is a documented lever specifically on this platform while the
-account is small (under a few hundred followers). Default cadence while
-still in growth phase: aim for 6 to 8 posts a day total, counting a whole
-thread as one post toward that count the same way the ledger does. Up to
-3 of those a day can be threads when the sources genuinely support it, see
-THE THREAD below, never pad to hit the number with weak material. Once
-engagement is consistently landing (real replies, not just views), it's
-fine to scale back toward something closer to the 1+1 default and lean
-harder into quality.
+account is small (under a few hundred followers).
+
+Current cadence, as of the week of 2026-09-12: 3 posts a day, 2 facts and
+1 article thread, counting a whole thread as one post toward that count the
+same way the ledger does. That is deliberately half of what the first three
+weeks ran at (6 a day, 4 facts and 2 threads). The higher rate was a growth
+push, and sustaining it burns through the strongest thread-shaped guides
+faster than the library refills. 21 posts a week is the standing default now,
+not a step down to apologize for.
+
+Only raise it again if engagement is genuinely landing (real replies, not
+just views) and the guide pool can support the extra threads. Volume is
+never the reason to ship a weak post.
 
 WORK IN TWO PHASES. Stop after Phase 1 and wait for approval.
 
@@ -248,14 +253,15 @@ and it does NOT need the article track's framing. Do not turn a fact into a
 mini care guide. If the fact cannot stand as 2 or 3 lines, pick another.
 
 --- THE THREAD (an article slot filled this way instead of a single post) ---
-Not a fixed daily quota, but during growth phase (see GROWTH-PHASE VOLUME
-above) aim for up to 3 a day when the sources genuinely support it, since
-each thread adds real dwell time and a thread still only counts as one post
-toward the daily total. Use it whenever a source has one genuine mistake
-with a real mechanism and a real fix, which most guides do not. Forcing it
-past what the sources support either burns your strongest thread-shaped
-material fast or produces weak, formulaic threads that read as templated,
-a smaller number of strong threads always beats hitting 3 with filler.
+One a day at the current cadence (see GROWTH-PHASE VOLUME above), filling
+the single article slot. A thread adds real dwell time and still only counts
+as one post toward the daily total. Use it whenever a source has one genuine
+mistake with a real mechanism and a real fix, which most guides do not.
+Forcing it past what the sources support either burns your strongest
+thread-shaped material fast or produces weak, formulaic threads that read as
+templated. If a given day's article source has no real mistake in it, run a
+single post instead, a flat week of 7 strong threads is not worth 2 hollow
+ones.
 
 3 to 5 posts on ONE husbandry mistake, from ONE guide.
   Post 1: state the mistake so it stings slightly.

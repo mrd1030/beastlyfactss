@@ -8,6 +8,15 @@ comments and replies are impossible, they are wrong and this file is right.
 Confirmed live on X and on Threads: single posts, single replies carrying a
 url, and full multi-comment reply chains, all created from CSV import alone.
 
+Three full weeks have now gone out this way, most recently the 9/5 to 9/11
+batch (X 42 posts, Threads 21, IG 11), all uploaded and queued without
+incident.
+
+**This document covers the CSV format itself.** For the end-to-end process of
+building a week, which sources to pull, how to verify claims, what to check
+before importing, and what to run afterward, see
+`docs/SOCIAL_WEEK_RUNBOOK.md`.
+
 ---
 
 ## The header row, verbatim

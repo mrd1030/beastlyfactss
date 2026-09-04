@@ -68,13 +68,19 @@ Cadence in use:
 
 | Platform | Per day | Week total |
 |---|---|---|
-| X | 4 facts + 2 article threads | 42 posts |
+| X | 2 facts + 1 article thread | 21 posts |
 | Threads | 2 facts + 1 article | 21 posts |
 | IG | 1 fact, carousel every other day | 11 posts |
 
-X runs hot because tweets decay independently. Threads and IG stay low because
-posts there compete with each other, see the algorithm notes in the feed
-commands.
+**X was halved starting the week of 9/12.** The first three weeks ran at 6 a
+day (4 facts + 2 threads) as a growth push. That rate burns through the
+strongest thread-shaped guides faster than the library refills, so 3 a day is
+the standing default now. The old numbers appear in this doc's worked examples
+below because that is what the 9/5 build actually ran at.
+
+X can still run hotter than the Meta platforms because tweets decay
+independently, while Threads and IG posts compete with each other. See the
+algorithm notes in the feed commands.
 
 Every claim gets read out of the repo before it is written into a post:
 
@@ -90,10 +96,13 @@ is usually where the thesis sentence lives.
 
 ### Two real problems this caught on the 9/5 build
 
-**A mistitled fact.** Fact 87 is a humpback whale fact titled "Sharks Can Be
-Chatty", so its card URL would have been `/facts/sharks-can-be-chatty/` on a
-whale post. Dropped it and used fact 178 (sperm whale) instead. The underlying
-data bug is still there and worth fixing separately.
+**A mistitled fact.** Fact 87 is a humpback whale fact that was titled "Sharks
+Can Be Chatty", so its card URL would have been `/facts/sharks-can-be-chatty/`
+on a whale post. Dropped it from the batch and used fact 178 (sperm whale)
+instead. The underlying entry has since been retitled to "Singers of the Sea",
+which is what the fact text actually says. Worth knowing that a title change
+moves the fact's URL, since the slug is derived from the title, so it is only
+safe while nothing links to the old one.
 
 **Excerpts are not body text.** The first pass at the IG carousel quotes pulled
 `excerpt:` frontmatter, which is not allowed as a source. Re-pulled from the
@@ -213,6 +222,20 @@ time, which is exactly what happened when the first X week and its filler batch
 both went unmarked and the ledger showed one fact posted instead of 28.
 
 Commit `social-ledger.json` after marking.
+
+**Derive the marks from the CSV, do not retype them.** 90 marks by hand is
+where transcription errors come from. The 9/5 week was marked by parsing the
+finished CSVs for `/facts/<slug>/` and `/blog/<slug>/` urls and mapping slugs
+back to fact ids, then appending the IG fact marks separately, since IG posts
+carry no urls at all and nothing in the file identifies which fact they used.
+That gap is worth remembering: 83 of the 90 marks came out of the files, the
+last 7 had to be supplied from the batch JSON.
+
+### Status
+
+The 9/5 to 9/11 week is uploaded and queued on all three platforms, marked in
+the ledger (X 84 facts / 48 articles, IG 21 / 60, Threads 43 / 22), with
+`nextStart` on all three at 2026-09-12.
 
 ---
 
