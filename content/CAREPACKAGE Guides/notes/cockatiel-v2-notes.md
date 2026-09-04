@@ -183,3 +183,84 @@ the bar spacing, the lifespan, the weight, the noise, the bite risk and the enti
 behavioural section are different animals. **Do not carry a figure between them**, and be
 particularly careful with the ones that look transferable, the diet split and the
 photoperiod, because those two genuinely are the same and every other number is not.
+
+---
+
+## 1.1 corrections pass, 4 September 2026
+
+Cross-check of the whole package against the bird articles published since this
+edition: the fifteen in commit `42fd86f` plus the five cross-species bird guides
+that landed the day before it. Guide version 1.0 to 1.1, template still t3,
+40 pages unchanged.
+
+### Errors corrected
+
+**Page 23, the blood feather instruction was wrong twice.** It said to apply
+"gentle pressure with clean gauze and cornstarch" and that "if it does not stop
+within a few minutes the feather must be pulled." VCA's current guidance is firm,
+steady pressure, clotting powder on the exposed broken tip and never into an open
+follicle, a vet at two to three minutes, and explicitly that pulling a blood
+feather at home is **not recommended**, because it leaves the shaft open and can
+cost more blood than it saves. Even in a clinic a vet pulls one only as a last
+resort, because it is painful and can permanently damage the follicle. Now
+corrected here and on the symptom table on page 32.
+
+**Page 18, the warming figure was the highest of the four bird packages.** It gave
+85 to 90 F (29 to 32 C). Harmonized to **80 to 85 F (27 to 29 C)**, which sits
+inside the 80 to 90 F range LafeberVet gives for a bird under supplemental heat,
+with VCA's 75 to 80 F for a recovering bird named beside it, and the signs of
+overheating added: flat sleek feathers, wings held out, open-mouth breathing.
+
+**Page 15, the regrowth interval had no source.** "A clip lasts one molt cycle,
+roughly six to twelve months" is gone. Merck's position is that molt timing varies
+with nutrition, daylight and humidity, so the page now says to check the wings
+rather than the calendar. Merck's method was added: four to seven of the outermost
+primaries on both wings, cut below the coverts, secondaries left alone.
+
+**Page 27, the multi-bird quarantine figure was invented.** "45 to 60 days" became
+Merck's **90 days** with testing for an aviary or an established group, since an
+infected adult can shed polyomavirus intermittently for up to 90 days.
+
+### Added
+
+- **Page 6, nail-trim technique**, and deliberately **no interval**, because the article establishes there is no verified one: the quick, the pink core on a pale nail against nothing visible on a dark one, backlighting with a torch, taking a little at a time, and the cut-quick sequence (pinch the toe above the nail, styptic to the cut end, off the water dish for a few hours).
+- **Page 7, bird fancier's lung.** Merck names cockatiels with cockatoos as heavy powder-down producers, and the NHLBI lists pet birds in the home as a risk factor for hypersensitivity pneumonitis, usually diagnosed between 50 and 70, with lung fibrosis at the serious end. Control hierarchy and the line that matters most: tell your doctor you keep a parrot. This row had only ever been logged under Cockatoo, and the article's own scope names cockatiels.
+- **Page 26, avian gastric yeast**, reached through the droppings page, which is where whole undigested seed actually shows up. Merck names cockatiels among the species it most affects and one case series found it more often in cockatiels than budgerigars, so this is not a budgie-only disease.
+- **Page 23**, the point the *Giardia* article turns on: the "or" is doing real work, and plenty of infected cockatiels show only the itch with a normal-looking tray throughout, so a clear sample rules nothing out.
+- Page 7: Merck's over-12-hour photoperiod threshold and LafeberVet's 8 to 10 hour intervention range. Page 8: lead's sweet taste, electroplated against hot-dipped zinc, a carbon monoxide detector, avocado's persin and 12-hour onset, and the cat-bite window corrected from "about 48 hours" to within hours. Page 17: the 19 to 21 day incubation marked as the species figure rather than the general 21 to 28. Page 18: VCA's 48-hour egg marker. Page 25: Merck's partial second molt. Page 26: polyuria as often the first sign of kidney damage from zinc. Page 34: the CDC's 20 feet for a generator and a CO detector. Page 40: VCA's 10 to 14 years with a maximum of 24 added to the life span disagreement, which now has four figures in it.
+
+### Fitting it, which took four passes
+
+The content edits left six pages over: 8, 23, 26, 6, 7 and 39. Three of the new
+blocks were simply in the wrong place for space, and moving them improved the book
+as well as the measurement: the dust note went from page 8 to page 7, which is the
+page about the room the bird lives in; the nail technique went to page 6, next to
+the perch material that decides how fast nails grow; and the avian gastric yeast
+entry went from the page 23 conditions table to page 26, where the droppings sign
+that flags it already lives. That is also the fallback placement agreed before the
+pass started.
+
+Then a second CSS pass. This head had been the tightest of the four bird files, but
+the **cockatoo head is tighter still**, and porting its values here (table margin
+4.5pt, callouts 6.5/10.5pt with 5pt margins, `section-sub` 5.5pt, `check-item`
+2.8pt, `h2.h` 6.5/2 margins, `table.dense td` 2.0pt/1.24) cleared five of the six
+remaining pages at once. The cockatoo's two-column contents rule was deliberately
+not ported: at 40 entries this contents page does not need it.
+
+Page 23 was the last holdout at 6 px and would not yield to prose trimming, because
+what sets the floor there is a table, not a paragraph. Moving the **first-aid kit
+box to page 29**, beside the emergency card, cleared it and puts the kit where
+someone reaching for it in a hurry is already looking.
+
+Final measurement: all 40 pages clear, minimum 17 px free.
+
+### Still only in this PDF
+
+Night frights on page 7, the sexing dimorphism and the mutations that break it on
+page 16, and the whistling-by-sex material on page 9 all still have no site article
+behind them and stay open in the gap log. The
+`bird-sexing-weight-body-condition-guide` names cockatiels as a visual-sexing
+exception in one FAQ line but never covers the dimorphism or the mutations, which
+is why that row could not be closed. The claim on page 17 that VCA finds
+reproductive problems more common in cockatiels than budgies also stays flagged for
+an external check.

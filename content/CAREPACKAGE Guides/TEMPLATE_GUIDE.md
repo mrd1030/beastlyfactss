@@ -1477,7 +1477,14 @@ between credible sources rather than errors, which is how they are printed.
   $15,000 to $30,000 over a forty-year life, which is the number that should decide the
   purchase and appears nowhere.
 
-### Cockatiel 1.0, t3 (Sep 2026)
+### Cockatiel 1.1, t3 (Sep 2026)
+
+**At 1.1, three of the six rows below are closed.** The corrections pass of 4 September
+2026 fixed a blood-feather instruction that told owners the feather "must be pulled", the
+highest warming figure in the bird set, an unsourced wing-regrowth interval and an invented
+multi-bird quarantine period, and added the nail-trim technique, an avian gastric yeast
+entry and the bird fancier's lung note this species needed. See
+`notes/cockatiel-v2-notes.md`. Still 40 pages.
 
 The third bird package and the first bird package that was a new build rather than a
 rebuild. 40 pages. Source is fragments plus a build script in `source/cockatiel-src/`, and
@@ -1529,24 +1536,22 @@ pet birds behind human cases.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Night frights | 7 | Cockatiel, with a smaller cross-species note | **The highest-value row here and the one most specific to this species.** Cockatiels are far more prone than most parrots to thrashing panics in the dark, and the injuries are real: broken blood feathers, a bleeding cere, a damaged wing, a foot caught in a toy. The site mentions it only in `guides/birds.js`, in two answers, with no article anywhere. Needs the mechanism (birds do not see in the dark, so a startled bird cannot find a perch), the dim night light as the fix, the partial rather than full cage cover, identifying external triggers like sweeping headlights, the calm response when one happens, and the check-for-blood step afterwards. Lafeber's night fright material is the source to build it on |
-| <em>Giardia</em>, and the itch that looks behavioural | 23, 24 | Cross-species (birds, cockatiel-weighted) | **Proposed, and the best differential in the package.** VCA notes cockatiels are specifically susceptible to <em>Giardia</em>, and that infected birds may be intensely itchy and attack themselves, especially under the wings, which then drives a feather-destructive habit that looks entirely behavioural. Nothing on the site connects a plucking cockatiel to a fecal test. Needs the presentation, the loose-stool-or-itch split, that the itch is often the only sign, and the point that a bird plucking under the wings gets a fecal test before anyone rearranges the cage |
-| Sexing a cockatiel, and why the mutations break it | 16 | Cockatiel | The normal grey is genuinely dimorphic after the first molt, which is one of this species' real advantages and appears nowhere on the site. Needs the yellow face and orange cheeks against a duller face, the solid versus barred underwing, the barred tail, and the whistling difference. Then the important half: lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all, a pied bird may keep hen-type barring for life, and a DNA test on a feather is the answer wherever it matters. Slots naturally into a wider cockatiel mutations article |
-| Talking, whistling and what to expect by sex | 9 | Cockatiel | The species is bought for the whistling and the site's coverage is one FAQ answer in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), the fact that hens rarely whistle tunes to any degree, and the trade against getting a pair, which is the decision on page 9 of this package. Related to the budgie block's talking row but not the same article: the behaviour and the odds both differ |
-| Training protocols for a small parrot, step by step | 13, 15 | Cross-species (birds) | **Proposed.** Extends the budgie block's talking row into the thing underneath it. Target training, step up and down, station, and recall, which page 15 of this package promises as the safe alternative to clipping without teaching it. The cockatoo package's page 16 is the large-parrot version and the mechanics are the same; the article should be written once, cross-species, and wired into both |
-| A cockatiel first-aid kit and basic grooming | 23 | Cross-species (birds) | Nothing. Nail trim interval and technique, towel restraint taught with rewards rather than imposed, when an overgrown beak is a liver sign rather than a grooming job, broken blood feather first aid, and the kit list. The reptile and mammal sets logged their own versions and neither transfers, because the restraint and the bleeding risk are both different in a 90 g animal |
+| Night frights | 7 | Cockatiel, with a smaller cross-species note | **Still open at 1.1.** **The highest-value row here and the one most specific to this species.** Cockatiels are far more prone than most parrots to thrashing panics in the dark, and the injuries are real: broken blood feathers, a bleeding cere, a damaged wing, a foot caught in a toy. The site mentions it only in `guides/birds.js`, in two answers, with no article anywhere. Needs the mechanism (birds do not see in the dark, so a startled bird cannot find a perch), the dim night light as the fix, the partial rather than full cage cover, identifying external triggers like sweeping headlights, the calm response when one happens, and the check-for-blood step afterwards. Lafeber's night fright material is the source to build it on |
+| <em>Giardia</em>, and the itch that looks behavioural | 23, 24 | Cross-species (birds, cockatiel-weighted) | **Closed by `bird-feather-loss-and-molt-guide`, Sep 2026.** which carries the VCA passage verbatim; page 23 gained the article's key point at 1.1, that the itch is often the only sign and a clear tray rules nothing out.** Originally: **Proposed, and the best differential in the package.** VCA notes cockatiels are specifically susceptible to <em>Giardia</em>, and that infected birds may be intensely itchy and attack themselves, especially under the wings, which then drives a feather-destructive habit that looks entirely behavioural. Nothing on the site connects a plucking cockatiel to a fecal test. Needs the presentation, the loose-stool-or-itch split, that the itch is often the only sign, and the point that a bird plucking under the wings gets a fecal test before anyone rearranges the cage |
+| Sexing a cockatiel, and why the mutations break it | 16 | Cockatiel | **Still open at 1.1.** `bird-sexing-weight-body-condition-guide` names cockatiels as a visual-sexing exception in one FAQ line and never covers the dimorphism or the mutations, so this row did not close. The normal grey is genuinely dimorphic after the first molt, which is one of this species' real advantages and appears nowhere on the site. Needs the yellow face and orange cheeks against a duller face, the solid versus barred underwing, the barred tail, and the whistling difference. Then the important half: lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all, a pied bird may keep hen-type barring for life, and a DNA test on a feather is the answer wherever it matters. Slots naturally into a wider cockatiel mutations article |
+| Talking, whistling and what to expect by sex | 9 | Cockatiel | **Still open at 1.1.** The species is bought for the whistling and the site's coverage is one FAQ answer in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), the fact that hens rarely whistle tunes to any degree, and the trade against getting a pair, which is the decision on page 9 of this package. Related to the budgie block's talking row but not the same article: the behaviour and the odds both differ |
+| Training protocols for a small parrot, step by step | 13, 15 | Cross-species (birds) | **Closed by `parrot-training-guide`, Sep 2026.** written once and cross-species, as this row asked, and wired into both this package and the cockatoo's.** Originally: **Proposed.** Extends the budgie block's talking row into the thing underneath it. Target training, step up and down, station, and recall, which page 15 of this package promises as the safe alternative to clipping without teaching it. The cockatoo package's page 16 is the large-parrot version and the mechanics are the same; the article should be written once, cross-species, and wired into both |
+| A cockatiel first-aid kit and basic grooming | 23 | Cross-species (birds) | **Closed by `bird-first-aid-kit-and-grooming-guide`, Sep 2026.** At 1.1 the nail-trim technique went onto page 6 and the kit moved to page 29. Note the article establishes there is no verified trim interval, so none is printed.** Originally: nothing. Nail trim interval and technique, towel restraint taught with rewards rather than imposed, when an overgrown beak is a liver sign rather than a grooming job, broken blood feather first aid, and the kit list. The reptile and mammal sets logged their own versions and neither transfers, because the restraint and the bleeding risk are both different in a 90 g animal |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the whole hazards page 8 including the PTFE ignition temperature and the lead and
-zinc source lists; the night fright material on page 7; the 8-hour photoperiod intervention
-on pages 7, 17 and 29; the five pellet conversion methods on page 10; the vegetable and
-fruit tier charts on pages 11 and 12; the 80 to 125 g weight range, the dimorphism and the
-keel scoring on page 16; the incubation and clutch figures and the do-not-pull-the-clutch
-rule on page 17; the egg-binding sign list and treatment sequence on page 18; the body
-temperature, heart rate and respiratory rate on page 19; the PBFD detail on page 22; the
-45-day doxycycline course and the human illness picture on page 21; the <em>Giardia</em>
-material on page 23; the 30 to 45 day quarantine on page 27; the droppings reference table
-on page 26; and the whole itemized budget on page 30.
+**Numbers with no site source at all.** Rewritten at 1.1, because most of this list now has
+one. Closed: the hazards page and the PTFE, lead and zinc material, the 8-hour photoperiod
+intervention, the pellet conversion methods, the keel scoring, the egg-binding signs, the
+<em>Giardia</em> material, the quarantine period, and the droppings table are all sourced now
+and cited on page 39. What is still PDF-only: the night fright material on page 7, which is
+the highest-value row still open; the 80 to 125 g weight range and the dimorphism on page 16;
+the vegetable and fruit tier charts on pages 11 and 12; the incubation and clutch figures on
+page 17; the body temperature, heart rate and respiratory rate on page 19; and the itemized
+budget on page 30.
 
 **Source drift found while building.** Four, and the bar spacing one is a safety figure.
 
