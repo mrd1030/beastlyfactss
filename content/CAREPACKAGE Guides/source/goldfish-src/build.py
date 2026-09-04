@@ -66,7 +66,8 @@ SECTIONS = [
     ]),
     ("Reference", [
         ("glossary", "Glossary"),
-        ("sources", "Sources, Version History &amp; About"),
+        ("sources", "Sources"),
+        ("versions", "Version History &amp; About"),
     ]),
 ]
 

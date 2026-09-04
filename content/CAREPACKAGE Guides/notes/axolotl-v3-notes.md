@@ -188,3 +188,171 @@ Do not cut, in any edition:
   explains anywhere on the site.
 - **Emergency card (p30) and pet-sitter sheet (p36).** Both are printed and posted, which
   is the format doing something a website cannot.
+
+## Sep 4 2026: cross-check against the new aquatic and amphibian articles (v2.0 to v2.1)
+
+Cross-checked against `amphibian-tubbing-and-salt-baths-guide`,
+`amphibian-quarantine-and-water-guide`, `cooling-an-aquarium-without-a-chiller-guide`,
+`aquarium-cycling-guide`, and `aquarium-power-outage-and-transport-guide`. All edits went
+into `source/axolotl-src/` and were rebuilt with `build.py`. Page count unchanged at 41.
+Version bumped 2.0 to 2.1, template stays t3.
+
+This package had almost no headroom to spend. The per-page free space recorded earlier in
+this file was the real constraint: five pages needed existing prose tightened to make room
+for a sourced addition. Those tightenings are listed under each page and none of them
+dropped a fact.
+
+### Page 4, Quick profile
+
+- Was, water chemistry row: "...pH 7.4 to 7.6, moderately hard water"
+- Now: "...pH 7.4 to 7.6, dechlorinated tap water"
+
+### Page 8, Temperature: the numbers that matter
+
+- Was: "Above 75&deg;F (24&deg;C) | High probability of illness. Expect appetite loss, uncontrolled floating, and bacterial or fungal infection."
+- Now: "Above 75&deg;F (24&deg;C) | High probability of illness. Expect appetite loss, ascites (fluid swelling in the abdomen), uncontrolled floating, and bacterial or fungal infection."
+
+### Page 9, Cooling methods & the summer plan
+
+The per-method degree figures were withdrawn. The article that now covers this ground ranks
+the methods but prints no degree figures, and nothing was found to attribute them to, so
+they became qualitative rather than staying as unsourced numbers.
+
+- Was: "Cut heat sources | 1 to 2&deg;F | Dimmer light, shorter photoperiod, and check whether the filter or pump motor itself is warming the water."
+- Now: "Cut heat sources | Small | Lights off, lid cracked open, shorter photoperiod, and turn a canister down: its motor makes heat that flow pushes into the tank."
+- Was: "Fan across the surface | 2 to 5&deg;F | ..."
+- Now: "Fan across the surface | Best cheap fix | ..."
+- Was: "Insulate the tank sides | A few &deg;F | ..."
+- Now: "Insulate the tank sides | Prevention | ..."
+- Added: "More aeration | Margin | Does not cool. Warm water holds less oxygen while the animal needs more, so run an air stone alongside."
+
+Reduced canister flow was folded into the cut-heat-sources row rather than given its own,
+for space. Chiller price left at $150 to $400 as instructed. To fit, the chiller row note
+was tightened: "The only method that holds a number regardless of the weather. $150 to $400,
+plus running cost. In a warm climate it is core equipment, not an upgrade." became "The only
+method that holds a number whatever the weather. $150 to $400 plus running cost, and core
+equipment in a warm climate."
+
+Rate of change, one of four identical instances:
+
+- Was: "Aim for a change of no more than 1 to 2&deg;F (about 1&deg;C) an hour in either direction."
+- Now: "Aim for 1&deg;F per hour, and never more than 1&deg;C even for a tolerant species, in either direction."
+
+### Page 11, Cycling
+
+Cold-water slowdown figure added to the stall callout:
+
+- Was: "Nitrite that will not clear is the usual sticking point. Check that the temperature has not dropped so low that bacterial growth crawls,"
+- Now: "Nitrite that will not clear is the usual sticking point. Cold is usually why: a drop of just 1&deg;C (about 2&deg;F) cuts ammonia oxidation by around 30 percent, so a tank at axolotl temperatures cycles at the slow end by design. Check the temperature has not fallen further,"
+
+Fish-in action line, now identical across all three aquatic packages:
+
+- Was: "Change 25 to 50 percent of the water with dechlorinated, temperature-matched water whenever either reads above 0.25 ppm."
+- Now: "Watch from 0.1 ppm and change water at 0.25 ppm. Scale the change to the reading: 25 to 30 percent just over the line, 50 percent or more once either number is clearly climbing."
+
+### Page 12, Water targets & testing
+
+The hardness target came out. The article established that the GH and KH figures circulating
+for this species do not trace to a primary source, so the package now prints none, which is
+what the gap log had already suspected.
+
+- Was: "Hardness | Moderately hard | Very soft or distilled | Axolotls need mineral content to maintain skin integrity. Soft water also lets pH swing."
+- Now: "Hardness | No sourced target | Distilled or RO water | The circulating GH and KH figures trace to no primary source, so none is printed. Distilled and RO water are not electrolyte balanced and can be fatal unless remineralized."
+- Was, tap water callout: "If your supply is very soft or you use RO water, it needs remineralizing before it goes near an axolotl."
+- Now: "Distilled and RO water are not electrolyte balanced and can be fatal, so either needs remineralizing first. Dechlorinated tap water is the practical default."
+
+To fit, the liquid test kit callout was tightened by one line. No fact dropped.
+
+### Page 17, Bringing one home, quarantine & handling
+
+- Was: "Set it up in its own small tank or tub, cycled or with daily water changes, for a few weeks while you watch it eat, move, breathe and pass waste normally. This is also the window for a first veterinary check, including a fecal test for parasites."
+- Now: "Give it its own tank or tub, cycled or with daily water changes, for six to eight weeks, the period veterinary guidance calls adequate for a new amphibian. Zoos run a 30 day minimum and prefer 60. Watch it eat, move, breathe and pass waste normally, and use the window for a first vet check including a fecal test."
+
+Bsal rationale added as a new paragraph:
+
+- Added: "Why stricter than for a fish: *Batrachochytrium salamandrivorans*, Bsal, kills salamanders specifically and reached Europe through the pet trade. So a new arrival is quarantined even if it never leaves the house, and a captive amphibian is never released outdoors."
+
+This page had 21px of headroom, so four existing passages were tightened to fund the above:
+two acclimation steps, the handling paragraph, the vet-visit table row, and the closing
+callout. All copy edits, no facts dropped.
+
+### Page 24, Heat stress & reading the gills
+
+- Was, signs: "...restlessness or the opposite, uncontrolled floating, pale patches, and a general fragility..."
+- Now: "...restlessness or the opposite, uncontrolled floating, ascites (fluid swelling in the abdomen), pale patches, and a general fragility..."
+- Was, response: "bring the temperature down, steadily rather than instantly, and test the water while you do it."
+- Now: "bring the temperature down steadily, and test the water while you do it. For an animal already in crisis, the veterinary literature names a dish in the refrigerator as a stopgap while the tank is cooled."
+
+Funded by tightening the cold-is-not-the-mirror-image callout, two gill table cells, and the
+gills early-warning callout.
+
+### Page 25, Fungal & bacterial infection
+
+- Was: "Salt baths at the dose on page 28 are the standard next step."
+- Now: "A salt bath is what most keepers reach for next, but the figures on page 28 are a published ceiling, not a prescription, so get the dose from a vet."
+
+### Page 28, Tubbing, cooling & salt baths
+
+The figures were right and the framing was wrong. The source gives 10 to 15 g/L for 10
+minutes once or twice daily in a section on toxicosis, as the point at which salt starts
+damaging skin and gills. It names no condition the bath treats and no salt type, both of
+which the package had been printing as though they came from the source. Figures unchanged.
+
+- Removed: "Salt type | Non-iodized aquarium or sea salt, with no anti-caking additives"
+- Removed: "Used for | Fungal infection, alongside correcting the water. Not a general tonic"
+- Added: "What these are | The published ceiling before salt damages skin and gills, not a prescription"
+- Added: "Who sets the dose | A vet who has examined the animal"
+- Was: "Dissolve the salt fully before the animal goes in, never over it. Stay for the full ten minutes, end early if it shows real distress, then return it to clean, cool tubbed water. Excessive salt treatment does harm, so more and longer is not better, and salt does not belong in the display tank as a preventive."
+- Now: "The paper gives these as the point where salt starts doing damage, not a dose to run, and never says which condition a bath treats or which salt. If a vet directs one: dissolve it fully first, never over the animal, end early on real distress, then return the animal to clean, cool tubbed water."
+
+### Page 29, Setup checklist & targets
+
+- Was: "Hardness | Moderately hard. Never distilled, RO or very soft water without remineralizing"
+- Now: "Hardness | No well-sourced target exists. Never distilled or RO water without remineralizing it first"
+
+### Page 30, Emergency & quick targets card
+
+- Was: "Salt bath, if directed | 10 to 15 g per liter, 10 minutes, once or twice daily"
+- Now: "Salt bath, only if a vet directs | 10 to 15 g per liter, 10 minutes, once or twice daily. A published ceiling, not a prescription"
+- Was: "Aim for no more than 1 to 2&deg;F (about 1&deg;C) an hour of change."
+- Now: "Aim for no more than 1&deg;F per hour, and never more than 1&deg;C even for a tolerant species."
+
+### Page 33, Symptom quick reference
+
+- Was: "White or grey cottony growth | Fungal infection on stressed tissue | Correct water, cool, salt bath, vet at 48 hours."
+- Now: "...| Correct water and cool. Vet at 48 hours, and for any salt bath dose."
+
+### Page 35, Power outages, heat waves & transport
+
+- Was: "Don't tip loose ice into the tank, and don't chase a fast temperature drop. Aim for no more than 1 to 2&deg;F (about 1&deg;C) an hour."
+- Now: "...Aim for no more than 1&deg;F per hour, and never more than 1&deg;C even for a tolerant species."
+
+### Page 40, Glossary
+
+- Was, Salt bath: "A short therapeutic bath, 10 to 15 g of non-iodized salt per liter for 10 minutes, used against fungal infection alongside correcting the water."
+- Now: "A short therapeutic bath. The published figures, 10 to 15 g per liter for 10 minutes, are the ceiling before salt does harm, so a vet sets the actual dose."
+
+### Page 41, Sources, version history & about
+
+Loh's entry rewritten to say the salt figures are a ceiling. Added AZA's Amphibian Husbandry
+Resource Guide, Merck's amphibian husbandry and aquatic environmental disease pages, USGS on
+Bsal, NC State on power outages, and Texas A&M AgriLife on temperature swings and aeration.
+The "Where sources disagree" section gained a third entry, on hardness being missing rather
+than disputed. Cover badge and colophon moved to Version 2.1 and a 2.1 row was added.
+
+This page did not fit as one page, running 363px over against a 32px baseline, the worst of
+the three because it also carries the source-drift section.
+
+### Page 42, new: Where sources disagree, version history & about
+
+**The package is now 42 pages.** Page 41 keeps the two source lists; "Where sources
+disagree", the version history, the disclaimer and the colophon moved to a new page 42,
+which is the right grouping anyway since the drift section is commentary on the sources
+rather than a source. One `<!--PAGE versions-->` and `<!--FOOT versions-->` pair plus one
+line in `SECTIONS`, and `build.py` did the rest. The 2.0 history row already had its page
+count hardcoded, so the `{{PAGE_COUNT}}` trap that bit the goldfish build did not apply.
+
+Page 41 finished at 206px free and page 42 at 318px. Worth knowing for v3: the per-page
+free space list near the top of this file is now out of date for pages 41 onward, and
+several other pages moved by a line or two in this pass. Re-measure before planning a
+restore rather than trusting those numbers.

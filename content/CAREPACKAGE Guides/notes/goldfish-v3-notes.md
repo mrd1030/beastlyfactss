@@ -297,3 +297,128 @@ In the order I would cut, having built it:
 
 Do not cut the water chemistry table, the filtration turnover figures, the cycling
 walkthrough, or any owner-tool page. Those are the package.
+
+## Sep 4 2026: cross-check against the new aquatic articles (v2.0 to v2.1)
+
+Cross-checked against `aquarium-filtration-guide`, `aquarium-cycling-guide`,
+`freshwater-ph-gh-kh-guide`, `fish-quarantine-and-treatment-guide`,
+`spotting-a-sick-fish-guide`, and `aquarium-power-outage-and-transport-guide`.
+All edits went into `source/goldfish-src/` and were rebuilt with `build.py`. Page count is
+unchanged at 39, so every `{{P:key}}` cross-reference resolved to the same number as before.
+Version bumped 2.0 to 2.1, template stays t3.
+
+### Page 4, Quick profile
+
+- Was: "Filtration minimum: 4 times the tank volume per hour, 5 to 10 times preferred"
+- Now: "Filtration minimum: 10 times the tank volume per hour"
+
+### Page 7, Filtration
+
+The whole sizing table changed. The package had been printing the light-stocking figure as
+a goldfish minimum. The filtration article puts a goldfish tank in the heavily stocked
+column at 10 times an hour, and the gph figures the package already listed as "better" are
+exactly 10x, so the numbers themselves needed no recomputation, only a relabel.
+
+- Was: "Minimum turnover: 4 times the tank's total volume per hour" / "Preferred turnover: 5 to 10 times per hour" / "On a 20 gal (76 L) tank: 80 gph (300 lph) minimum, 100 to 200 gph (380 to 760 lph) better" / "On a 40 gal (151 L) tank: 160 gph (605 lph) minimum, 200 to 400 gph (760 to 1,500 lph) better" / "On a 55 gal (208 L) tank: 220 gph (830 lph) minimum, 275 to 550 gph (1,040 to 2,080 lph) better"
+- Now: "Turnover to aim for: 10 times the tank's total volume per hour" / "Why that number: Filter sizing puts a lightly stocked tank at 4 times an hour and a typical community at 6 to 8. A goldfish tank is the heavily stocked, messy case, which is the 10 times column" / "On a 20 gal (76 L) tank: 200 gph (760 lph)" / "On a 40 gal (151 L) tank: 400 gph (1,500 lph)" / "On a 55 gal (208 L) tank: 550 gph (2,080 lph)"
+
+### Page 8, Filter media & maintenance
+
+Merck's post-copper note added as a full-width row under the media table:
+
+- Added: "After treating with copper, expect a rise in ammonia and nitrite for weeks to months: it damages the nitrifying bacteria along with the parasite. Keep testing long after the course has finished."
+
+### Page 9, Cycling
+
+Fish-in action line, now identical across all three aquatic packages. The old claim that a
+larger change slows the colony is contradicted by the article and came out:
+
+- Was: "**Water change at 0.25 ppm.** Any reading above roughly 0.25 ppm of ammonia or nitrite calls for a 25 to 30 percent change with dechlorinated, temperature-matched water. Larger changes than that slow the colony you are trying to grow."
+- Now: "**Watch from 0.1 ppm and change water at 0.25 ppm.** Scale the change to the reading: 25 to 30 percent just over the line, 50 percent or more once either number is clearly climbing. A large change interrupts the cycle briefly, and that is a far smaller risk than leaving a fish in rising ammonia."
+
+### Page 10, Water targets & testing
+
+- Was: "GH (general hardness) | 100 to 300 ppm"
+- Now: "GH (general hardness) | 60 to 180 ppm, moderately hard to hard"
+
+The old KH action line sat below the level Merck says already inhibits the biofilter:
+
+- Was: "KH (carbonate hardness) | 70 to 140 ppm | Under about 40 ppm. Low KH lets pH crash without warning."
+- Now: "KH (carbonate hardness) | 100 ppm and up | Under about 50 ppm. Below that the buffer is gone and the biofilter suffers too."
+
+### Page 11, Water changes & early warnings
+
+Untouched.
+
+### Page 13, Handling, quarantine & settling in
+
+- Was: "Two to four weeks is the practical minimum, and four to six weeks is safer, since different pathogens surface on different timelines."
+- Now: "Thirty days is the veterinary minimum, and 30 to 60 days is the range given for a fish you especially do not want to lose, since different pathogens surface on different timelines."
+
+Merck's separation rule added to the hospital tank paragraph:
+
+- Added: "Keep separate nets and siphons for it, and disinfect and dry it between uses."
+
+### Page 26, Behavior, spawning & reading waste
+
+UF/IFAS dissolved oxygen figures added to the gasping row:
+
+- Was: "Hanging at the surface gulping | Low oxygen or gill damage. Test immediately and add surface agitation."
+- Now: "Hanging at the surface gulping | Low oxygen or gill damage. Above 5 mg/L dissolved oxygen is healthy, 2 to 4 is distress, under 2 is fatal. Test, add surface agitation."
+
+The two waste rows assigned confident causes to a sign the article says is nonspecific, and
+split pale from white in a way it says does not hold by eye:
+
+- Was: "Long, pale, stringy and trailing for days | Constipation, overfeeding, or too much dry food | Fast 24 to 48 hours, then a de-shelled pea. Switch to soaked or sinking food."
+- Now: "Long, pale, stringy and trailing for days | Nonspecific, often just a fish off its food | Test the water, then watch appetite and weight for a day or two rather than treating one dropping."
+- Was: "White, stringy and clear rather than pale | Often internal parasites, especially alongside weight loss with a good appetite | Vet or a targeted antiparasitic. Do not treat blind."
+- Now: "The same, with weight loss over several days | The pattern, not one dropping, points at internal parasites | Vet or a targeted antiparasitic. Do not treat blind."
+
+To fit the above, the winter slowdown paragraph was tightened. No fact was dropped:
+
+- Was: "Pond goldfish drop into a low-metabolism dormancy as water cools, settling near the bottom and eating little or nothing below about 39&deg;F (4&deg;C). This is normal, and it does not apply to an indoor tank held at room temperature. An indoor goldfish that suddenly becomes sluggish has a water quality or health problem, not a season."
+- Now: "Pond goldfish drop into a low-metabolism dormancy as water cools, eating little or nothing below about 39&deg;F (4&deg;C). That does not apply to an indoor tank at room temperature: a goldfish that suddenly becomes sluggish indoors has a water quality or health problem, not a season."
+
+### Page 27, Setup checklist & targets
+
+- Was: "Filtration rated for 4 times the tank volume per hour minimum, 5 to 10 times preferred"
+- Now: "Filtration rated for 10 times the tank volume per hour"
+- Was: "KH | 70 to 140 ppm | Under about 40 ppm"
+- Now: "KH | 100 ppm and up | Under about 50 ppm"
+
+### Page 31, Symptom quick reference
+
+- Was: "Long white stringy waste | Internal parasites, especially with weight loss | Vet or targeted antiparasitic, do not treat blind"
+- Now: "Stringy pale waste plus weight loss over days | A pattern that points at internal parasites | Vet or targeted antiparasitic, do not treat blind"
+- Was: "Long pale trailing waste | Constipation or overfeeding | Fast, then a pea, then soaked or sinking food"
+- Now: "Long pale trailing waste, one-off | Nonspecific, often just a fish off its food | Test the water, watch appetite for a day or two"
+
+### Page 38, Glossary
+
+- Was, Quarantine: "2 to 4 weeks minimum and 4 to 6 weeks preferably"
+- Now: "30 days minimum and 30 to 60 days preferably"
+- Was, Turnover: "Aim for 4 times minimum, 5 to 10 preferred."
+- Now: "Aim for 10 times an hour for a goldfish."
+
+### Page 39, Sources, version history & about
+
+Added Merck's Management of Aquarium Fish and water quality reference ranges, USGS on
+hardness and alkalinity, UF/IFAS on dissolved oxygen, Practical Fishkeeping on the fish-in
+action line, and a line for the turnover figure. Cover badge and colophon moved to Version
+2.1 and a 2.1 row was added.
+
+This page did not fit as one page, running 253px over against a 26px baseline.
+
+### Page 40, new: Version history & about
+
+**The package is now 40 pages.** Page 39 keeps the two source lists; the version history,
+the closing disclaimer and the colophon moved to a new page 40. It cost one
+`<!--PAGE versions-->` and `<!--FOOT versions-->` pair and one line in `SECTIONS`, and
+`build.py` renumbered the contents, the footers and the cover badge on its own.
+
+The one trap, caught before it shipped: the 2.0 history row said "expanded from 21 to
+`{{PAGE_COUNT}}` pages", which would have silently become 40 and retroactively rewritten
+what 2.0 was. It is hardcoded to 39 now. Any future split needs the same check.
+
+Page 39 finished at 265px free and page 40 at 346px, so both have real room for the next
+edition's sources.

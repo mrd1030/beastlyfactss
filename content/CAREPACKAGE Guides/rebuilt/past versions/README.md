@@ -19,6 +19,9 @@ version are different numbers".
 | `Budgie_Care_Package_v2.0.pdf` | 2.1 | A 24-hour no-eating threshold against Lafeber's 12 hours for a budgerigar; quarantine offering prophylactic antibiotics as an alternative to testing, which the NASPHV compendium discourages; a flat 45-day doxycycline course without the 30-day budgerigar exception; and avian gastric yeast described as commoner in budgerigars than in anything else kept |
 | `Cockatiel_Care_Package_v1.0.pdf` | 1.1 | Blood-feather first aid saying the feather "must be pulled"; an egg-binding warming figure of 85 to 90F against LafeberVet's 80 to 90 and VCA's 75 to 80; a six-to-twelve-month wing regrowth interval Merck does not support; and a 45 to 60 day multi-bird quarantine in place of Merck's 90 |
 | `Cockatoo_Care_Package_v1.0.pdf` | 1.1 | A rehomed bird's withdrawal called grief, where Merck lists reduced vocalizing and interaction as potential signs of illness; blood-feather first aid saying the feather "must be pulled"; weekly weighing against Lafeber's daily; a 45 to 60 day multi-bird quarantine in place of Merck's 90; a bird fancier's lung source line citing "case reports in psittacine keepers" when the report behind it documents a pigeon keeper; and a back-page list of unsourced material that articles had since closed |
+| `Betta_Fish_Care_Package_v2.1.pdf` | 2.2 | Quarantine at 2 to 4 weeks against the Merck 30 day minimum, a 10 day ceiling on aquarium salt that no source supports, a blackout plan that put oxygen after temperature, and *Oodinium* named as the freshwater velvet genus |
+| `Goldfish_Care_Package_v2.pdf` | 2.1 | Filter turnover floor of 4 times an hour, which is the light-stocking figure rather than the goldfish one, a KH action line below the level that already inhibits the biofilter, quarantine at 2 to 4 weeks, and waste rows that assigned confident causes to a nonspecific sign |
+| `Axolotl_Care_Package_v2.0.pdf` | 2.1 | Salt bath figures printed as a prescription with an indication and a salt type the source never gives, a temperature change ceiling of 1 to 2&deg;F an hour, per-method cooling figures with no source, and a hardness target that traces to nothing |
 | `Tarantula_Care_Package_v2.pdf` | 2.1 | A layout-only tightening pass across all 43 pages that changed no words and no type sizes. Minimum page headroom went from 19px to 31px |
 | `BeastlyFacts-Rabbit-Care-Package.pdf`, `BeastlyFacts-Tarantula-Care-Package.pdf` | 2.0 | Not in this folder, see the note below. 22 and 21 pages on the old parallel layout, rebuilt at 39 and 43 pages on t3 |
 
@@ -26,6 +29,13 @@ The v1 builds of Rabbit, Tarantula, Hamster and Corn Snake are **not** here.
 Those came out of the superseded parallel implementation and still sit at
 `care-packages/pdf/BeastlyFacts-<Animal>-Care-Package.pdf`, which that folder's
 README already flags. Nothing is lost; they simply predate this folder.
+
+The three aquatic files above were archived together in September 2026 after a
+cross-check against the new cross-species aquatic articles. None of the three was the
+edition on sale: `carePackages.js` has goldfish and axolotl live at 1.0, pointing at the
+unversioned 21 and 20 page files that stay in `rebuilt/`, and betta at `coming-soon`.
+All three new editions also gained a second reference page at the back, which is the
+Cockatiel 1.0 finding applied to the aquatic set: 36 to 37, 39 to 40, and 41 to 42 pages.
 
 Rabbit has no file in this folder. Its current edition is still 2.0, and its
 only earlier build is the pre-t3 one named above.

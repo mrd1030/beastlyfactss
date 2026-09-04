@@ -246,7 +246,7 @@ further down. Page counts below are what shipped, not estimates.
 | Class | Built | Pages | The middle, in short |
 |---|---|---|---|
 | Reptile | Bearded Dragon 3.0, Ball Python 2.1 | 34 | The canonical table above |
-| Aquatic | Betta 2.1, Goldfish 2.0, Axolotl 2.0 | 36 to 41 | Water systems replace heat systems |
+| Aquatic | Betta 2.2, Goldfish 2.1, Axolotl 2.1 | 37 to 42 | Water systems replace heat systems |
 | Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
 | Bird, small parrot | Lovebird 2.0, Budgie 2.0, Cockatiel 1.0 | 36 to 40 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
@@ -255,13 +255,13 @@ further down. Page counts below are what shipped, not estimates.
 **Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
 and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
 and 23. Cycling, water chemistry, and water changes each need their own page rather than
-a shared one, which is why Betta landed at 36. Goldfish needed 39 because filtration
-sizing and media maintenance also split. Water quality is this class's whole health
+a shared one, which is why Betta landed at 36, then 37 once its reference page split.
+Goldfish needed 39, then 40, because filtration sizing and media maintenance also split. Water quality is this class's whole health
 story: goldfish spends pages 21 to 25 on it and still routes most conditions back to the
 test kit.
 
 A fully aquatic amphibian takes this same skeleton rather than a class of its own. Axolotl
-2.0 landed at 41, and the two places it diverges are worth knowing before the next one.
+2.1 landed at 42, and the two places it diverges are worth knowing before the next one.
 **Cooling replaces heating as the entire environmental story**, and it takes two pages, one
 for the numbers and one for the methods, because the equipment answer changes with the
 buyer's climate. And a tubbing, cooling and salt bath page appears that no other class has,
@@ -269,6 +269,21 @@ carrying the interventions a keeper actually performs at home. Handling shrinks 
 paragraph inside an arrival and quarantine page, since the answer is no. Everything else,
 tank size, filtration, cycling, water chemistry, water changes, the logs and the reference
 pages, carries across from the fish builds essentially unchanged.
+
+**Budget two reference pages at the back of an aquatic build, not one.** All three aquatic
+packages shipped with a single page carrying sources, version history, the colophon and,
+for the axolotl, a source-drift section, and all three overflowed the moment the September
+2026 article cross-check added source lines and a version row: betta by 143px against 37px
+of headroom, goldfish by 253px against 26px, axolotl by 363px against 32px. Betta stayed
+81px over even with every existing history row and the closing disclaimer cut to the bone,
+so this is not a compression problem. It is the same finding the Cockatiel 1.0 build
+recorded, and it is not a bird quirk: **any package that sources properly needs a sources
+page and a version-history page.** Splitting them took betta to 37, goldfish to 40 and
+axolotl to 42. On a `-src` build it is one `<!--PAGE-->` marker and one line in `SECTIONS`;
+on a single hand-edited file it is an append at the very end, which moves no existing page
+number. One trap on a `-src` build: a version-history row that describes an earlier edition
+using `{{PAGE_COUNT}}` will silently follow the new count, so hardcode the old number
+before splitting.
 
 **Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
 out. What replaces them is diet and health, both much larger than the reptile skeleton
@@ -765,12 +780,12 @@ The lesson worth keeping: when two internal sources disagree, "the dedicated gui
 picks a side without checking whether either side is right. Go to the external source
 first when the number matters.
 
-### Betta Fish 2.1, t3 (Sep 2026)
+### Betta Fish 2.2, t3 (Sep 2026)
 
 The first aquatic package on the t3 template. At the time, `goldfish.html` and
 `axolotl.html` predated t3 and carried none of its CSS additions, so the aquatic layout
 here was derived from the adaptation note in this guide rather than copied from them. Both
-have since been rebuilt on t3, so a new aquatic build should copy from one of those. It came out at 36 pages, not
+have since been rebuilt on t3, so a new aquatic build should copy from one of those. It came out at 36 pages, 37 since the reference page split, not
 the 28 to 30 that note predicted at the time, because cycling, water chemistry, and water
 changes need a page each rather than a shared one. That estimate has since been raised to
 34 to 36 in the adaptation note, and it is what prompted the **Page count is a target,
@@ -786,21 +801,30 @@ reptile-only, and an aquarium blackout is a different problem with different phy
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | **One article with "Transporting and moving fish" below and the Goldfish block's "Aquarium power outages and transporting a fish" row. All three are the same aquatic emergency and transport article, the fish equivalent of `reptile-emergency-plan-guide.mdx`.** No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package. **The axolotl needs one added section rather than its own article**: for a cold-water animal the blackout inverts into keeping heat out, so insulating the tank, sealed frozen bottles rather than loose ice, and the 1 to 2&deg;F (about 1&deg;C) an hour ceiling on any temperature change all belong in the same piece (Axolotl 2.0, page 35) |
-| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | **One article with the Goldfish block's "Cycling an aquarium, fishless and fish-in" row. Write it once for both, covering fishless and fish-in.** `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package, the axolotl included: the Axolotl 2.0 package sources page 11 from nothing for exactly this reason |
-| Transporting and moving fish | 30 | Cross-species (aquatic) | **Merged into the aquatic emergency and transport article above, not separate.** Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
-| Aquarium salt, and medicating a small tank | 18, 19 | Cross-species (aquatic) | Nothing on dosing or duration. 1 tsp per gallon, the 10-day ceiling, replacing only what a water change removes, and why plants, snails, and shrimp need a hospital tank. Also the carbon-removal and aeration rules that apply to every treatment |
+| Aquarium power outages: oxygen, heat and the filter | 29 | Cross-species (aquatic) | **CLOSED Sep 4 2026 by `aquarium-power-outage-and-transport-guide`.** Package rebuilt as 2.2: page 29 reordered so aeration comes first. Original row follows. **One article with "Transporting and moving fish" below and the Goldfish block's "Aquarium power outages and transporting a fish" row. All three are the same aquatic emergency and transport article, the fish equivalent of `reptile-emergency-plan-guide.mdx`.** No article anywhere. The whole page is externally sourced. The 8-hour aeration cycle, insulating rather than heating, unplugging the filter so it cannot flush rotting media back in, and no feeding. Serves betta, goldfish, axolotl, and every future fish package. **The axolotl needs one added section rather than its own article**: for a cold-water animal the blackout inverts into keeping heat out, so insulating the tank, sealed frozen bottles rather than loose ice, and the 1 to 2&deg;F (about 1&deg;C) an hour ceiling on any temperature change all belong in the same piece (Axolotl 2.0, page 35) |
+| Fishless cycling, start to finish | 7 | Cross-species (aquatic) | **CLOSED Sep 4 2026 by `aquarium-cycling-guide`.** Also closes the Goldfish block's cycling row. Original row follows. **One article with the Goldfish block's "Cycling an aquarium, fishless and fish-in" row. Write it once for both, covering fishless and fish-in.** `betta-fish-water-parameters-guide.mdx` explains what the cycle is and gives the 4 to 6 week figure, but not how to run one: ammonia dosing to 2 to 4 ppm, seeding, the 24-hour completion test, and the stall table. Closes the same gap for every aquatic package, the axolotl included: the Axolotl 2.0 package sources page 11 from nothing for exactly this reason |
+| Transporting and moving fish | 30 | Cross-species (aquatic) | **CLOSED Sep 4 2026 by `aquarium-power-outage-and-transport-guide`.** One figure unresolved: the article gives a two thirds water bag ratio that its own cited source contradicts, see the site list. Original row follows. **Merged into the aquatic emergency and transport article above, not separate.** Nothing. Bag versus bucket, the air gap a labyrinth fish needs, oxygen-filled bags, and carrying the filter sponge submerged so the cycle survives the move |
+| Aquarium salt, and medicating a small tank | 18, 19 | Cross-species (aquatic) | **PARTLY CLOSED Sep 4 2026 by `fish-quarantine-and-treatment-guide`.** Duration, carbon and aeration are now sourced on the site and the package's 10 day ceiling has gone. The 1 tsp per gallon dose is still unsourced and is on the site list. Original row follows. Nothing on dosing or duration. 1 tsp per gallon, the 10-day ceiling, replacing only what a water change removes, and why plants, snails, and shrimp need a hospital tank. Also the carbon-removal and aeration rules that apply to every treatment |
 | Betta body condition from above | 15 | Betta | Nothing. `betta-fish-feeding-guide.mdx` gives portions but no way to check whether they are right. The top-down torpedo test, shoulders versus the middle third, and the one-pellet correction over 2 weeks |
 | Velvet, columnaris and telling them apart | 19 | Betta | Expand `betta-fish-health-issues-guide.mdx`, not a new URL. It names both in a sentence each. The package needs the differential (grains versus metallic dust versus cottony saddle) and, more importantly, that ich wants the temperature raised and columnaris wants it lowered |
 | Betta tankmates and sororities | 22 | Betta | Nothing, and the site currently points the wrong way (see drift below). The honest version: alone is the default, snails are usually fine, shrimp and schooling fish are risky and need a real separation plan, and the group-housing research is about fish reared together from hatching |
-| Sexing a betta | 28 (glossary) | Betta | Nothing on the site. Only in the glossary here because there was no page to justify, but a short article would let a future edition carry it properly: ovipositor, ventral fin length, anal fin shape, beard size, and why the egg spot is suggestive rather than conclusive |
+| Sexing a betta | 35 (glossary) | Betta | Nothing on the site. Only in the glossary here (page 35) because there was no page to justify, but a short article would let a future edition carry it properly: ovipositor, ventral fin length, anal fin shape, beard size, and why the egg spot is suggestive rather than conclusive |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the whole blackout timeline on page 29, the aquarium salt dose and its 10-day
-ceiling on page 18, the ich treatment temperature of 82&deg;F (28&deg;C) and the
-columnaris instruction to drop toward 76&deg;F (24.5&deg;C) on pages 18 and 19, the
-fishless cycling ammonia doses and the completion test on page 7, the body-condition
-descriptions on page 15, and the transport durations on page 30.
+**Numbers with no site source at all**, updated Sep 4 2026 after the cross-check:
+
+- Blackout plan, page 29: **now carried** by `aquarium-power-outage-and-transport-guide`,
+  which supplies aeration-first ordering and the agitation interval. The old 8-hour oxygen
+  cycle was dropped rather than sourced, because it contradicted the article.
+- Fishless cycling doses and the completion test, page 7: **now carried** by
+  `aquarium-cycling-guide`.
+- Aquarium salt, page 18: the 10-day ceiling is **gone**, replaced by the endpoint rule in
+  `fish-quarantine-and-treatment-guide`. The 1 tsp per gallon dose is **still PDF only**
+  and is on the site list below.
+- Ich at 82&deg;F (28&deg;C) and columnaris toward 76&deg;F (24.5&deg;C), pages 18 and 19:
+  **still PDF only.** No article covers either treatment temperature.
+- Body-condition descriptions, page 15: **still PDF only.** No article.
+- Transport, page 30: the method is now carried by the outage and transport article. The
+  6-hour figure and the trip-length table are **still PDF only**.
 
 **Source drift, resolved Sep 2026.** All five were researched rather than settled by the
 precedence rule, and two of the first calls were wrong.
@@ -828,6 +852,26 @@ precedence rule, and two of the first calls were wrong.
   6.5 to 7.5. External sources back 6.5 to 7.5 as ideal with tolerance to about 8.0 and
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
+
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** Three items, all in
+site content rather than the package:
+
+- **The transport bag ratio in `aquarium-power-outage-and-transport-guide.mdx` is wrong,
+  and its own cited source says so.** The article states "A roughly two-thirds water,
+  one-third air split is standard for bettas." The Fish Site page it cites says
+  "Approximately 75 percent of the volume in the bag should be oxygen," and UF/IFAS FA212,
+  on *Betta splendens* specifically, says "Ninety percent of the bag's volume is reserved
+  for air to allow the betta enough oxygen to breath during shipment." Both put air well
+  above water, which is the direction the packages already had. Betta page 30 and goldfish
+  page 33 were left as they are. **The article is the thing to correct.**
+- **Velvet genus.** `betta-fish-health-issues-guide.mdx` names *Oodinium*. Merck's parasitic
+  diseases page gives *Piscinoodinium* as the freshwater counterpart, and
+  `goldfish-health-issues-guide.mdx` already uses it. The package was corrected on page 19;
+  the MDX still needs it.
+- **Columnaris is still thin.** The velvet and columnaris row above is crossed off for the
+  package, but the MDX expansion only went halfway: it gained a columnaris section of one
+  sentence and still does not carry the point that ich wants the temperature raised and
+  columnaris wants it lowered, which is the reason the row was logged.
 
 ### Rabbit 2.0, t3 (Sep 2026)
 
@@ -977,11 +1021,11 @@ than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it
 40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
 dish plus one damp corner is what both sides actually do.
 
-### Goldfish 2.0, t3 (Sep 2026)
+### Goldfish 2.1, t3 (Sep 2026)
 
-Already covered, do not rewrite: page 7's bowl-myth argument from
-`goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 16's slime coat and
-net-and-cup handling from `goldfish-handling-guide.mdx`. Page 25's enrichment research,
+Already covered, do not rewrite: page 6's bowl-myth argument from
+`goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 13's slime coat and
+net-and-cup handling from `goldfish-handling-guide.mdx`. Page 19's enrichment research,
 the 90 percent planted versus 10 percent barren finding and the substrate foraging work,
 from `goldfish-enrichment-guide.mdx`. Note `betta-fish-water-parameters-guide.mdx`
 partially transfers: its GH and KH section and testing schedule are species-neutral, but
@@ -991,21 +1035,39 @@ floors for reptiles and a fish outage is an oxygen problem.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Cycling an aquarium, fishless and fish-in | 10, 11 | Cross-species (aquatic) | **One article with the Betta block's "Fishless cycling, start to finish" row. Same article, write it once for both.** The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case, and the axolotl package hits the same gap at page 11 |
-| Aquarium filtration: turnover, media types, maintenance | 8, 9 | Cross-species (fish) | The MDX gives 4 to 10x turnover and nothing else. Needs the gph math worked for common tank sizes, mechanical vs biological vs chemical and which to disturb, why manufacturer ratings overstate, and rinse-in-tank-water-only with the reason |
-| Freshwater pH, GH and KH for coldwater fish | 12 | Cross-species (fish) | The betta article covers hardness well but at tropical targets. Needs the goldfish-appropriate ranges and, more usefully, the KH-buffers-pH mechanism and why chasing a pH number with adjusting chemicals backfires |
-| Quarantining and treating a new or sick fish | 16, 24 | Cross-species (fish) | `quarantine` returns hits only in the angelfish guides, in passing. Needs the 2 to 4 week minimum, the bare hospital tank, seeding it from a mature sponge filter, and why medicating the display tank costs you the bacteria colony |
-| Aquarium power outages and transporting a fish | 33 | Cross-species (aquatic) | **One article with the Betta block's power outage and transport rows. Same article, write it once for both.** Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
-| Goldfish safe foods chart | 15, 16, 17 | Goldfish | Expand `goldfish-feeding-guide.mdx`, not a new URL. It has the diet shape but no tier chart. Pellet vs gel vs flake, the vegetable list with blanching, protein foods weekly not daily, and the never list with reasons |
-| Flukes, anchor worm, velvet, popeye and ulcers | 24 | Goldfish | Expand `goldfish-health-issues-guide.mdx`. It covers ich, fin rot, swim bladder, dropsy, fungus and ammonia, and stops there. The five added in v3.0 carry published veterinary doses that currently exist only in the PDF |
-| Goldfish varieties, tankmate matching and sexing | 19 | Goldfish | Nothing on the site. Fancy vs single-tail vs eye varieties with adult sizes and minimums, why mixing body types is a feeding-time mismatch rather than a preference, and the honest answer that sexing is unreliable outside breeding condition |
-| Reading fish waste | 26 | Cross-species (fish) | Nothing. White stringy versus pale trailing is the most useful early signal an owner has and it appears in no article |
-| Goldfish growth, body condition and lifespan | 20 | Goldfish | Nothing. Also the place to make the point that a fish is not weighed weekly, water readings are its vital signs, which contradicts the reptile-shaped owner log in the template |
+| Cycling an aquarium, fishless and fish-in | 9 | Cross-species (aquatic) | **CLOSED Sep 4 2026 by `aquarium-cycling-guide`.** Same article as the Betta block's cycling row. Original row follows. **One article with the Betta block's "Fishless cycling, start to finish" row. Same article, write it once for both.** The single biggest gap in the fish set. `goldfish-tank-setup-guide.mdx` gives cycling three sentences, and roughly ten other fish tank-setup guides mention the nitrogen cycle without ever explaining it. Needs the fishless stages week by week, and the fish-in recovery plan: test daily, 25 to 30% change above 0.25 ppm, ammonia binder, do not clean the filter. Most new owners are in the fish-in case, and the axolotl package hits the same gap at page 11 |
+| Aquarium filtration: turnover, media types, maintenance | 7, 8 | Cross-species (fish) | **CLOSED Sep 4 2026 by `aquarium-filtration-guide`.** Package turnover raised from 4x to the article's 10x figure for a heavily stocked tank. Original row follows. The MDX gives 4 to 10x turnover and nothing else. Needs the gph math worked for common tank sizes, mechanical vs biological vs chemical and which to disturb, why manufacturer ratings overstate, and rinse-in-tank-water-only with the reason |
+| Freshwater pH, GH and KH for coldwater fish | 10 | Cross-species (fish) | **CLOSED Sep 4 2026 by `freshwater-ph-gh-kh-guide`.** KH retargeted to 100 ppm and up and GH brought onto the USGS classes. Original row follows. The betta article covers hardness well but at tropical targets. Needs the goldfish-appropriate ranges and, more usefully, the KH-buffers-pH mechanism and why chasing a pH number with adjusting chemicals backfires |
+| Quarantining and treating a new or sick fish | 13, 25 | Cross-species (fish) | **CLOSED Sep 4 2026 by `fish-quarantine-and-treatment-guide`.** Also closes the Betta block's quarantine wording. Both packages moved to the 30 day minimum. Original row follows. `quarantine` returns hits only in the angelfish guides, in passing. Needs the 2 to 4 week minimum, the bare hospital tank, seeding it from a mature sponge filter, and why medicating the display tank costs you the bacteria colony |
+| Aquarium power outages and transporting a fish | 33 | Cross-species (aquatic) | **CLOSED Sep 4 2026 by `aquarium-power-outage-and-transport-guide`.** Same article as the two Betta block rows. Original row follows. **One article with the Betta block's power outage and transport rows. Same article, write it once for both.** Nothing anywhere. Aeration first and temperature a distant second, battery air pump, the cup-pour trick, pulling biological media into an aerated container, and why restarting a long-dead filter without rinsing dumps decomposed waste into the tank |
+| Goldfish safe foods chart | 15 to 18 | Goldfish | **CLOSED Sep 4 2026.** The expansion happened: `goldfish-feeding-guide.mdx` now carries a staple, supplement, occasional and never tier table, blanching, and the never list with reasons. Original row follows. Expand `goldfish-feeding-guide.mdx`, not a new URL. It has the diet shape but no tier chart. Pellet vs gel vs flake, the vegetable list with blanching, protein foods weekly not daily, and the never list with reasons |
+| Flukes, anchor worm, velvet, popeye and ulcers | 25 | Goldfish | **CLOSED Sep 4 2026.** The expansion happened: all five are now in `goldfish-health-issues-guide.mdx`. One figure differs between site and PDF, see the site list. Original row follows. Expand `goldfish-health-issues-guide.mdx`. It covers ich, fin rot, swim bladder, dropsy, fungus and ammonia, and stops there. The five added in v3.0 carry published veterinary doses that currently exist only in the PDF |
+| Goldfish varieties, tankmate matching and sexing | 20 | Goldfish | Nothing on the site. Fancy vs single-tail vs eye varieties with adult sizes and minimums, why mixing body types is a feeding-time mismatch rather than a preference, and the honest answer that sexing is unreliable outside breeding condition |
+| Reading fish waste | 26 | Cross-species (fish) | **CLOSED Sep 4 2026 by `spotting-a-sick-fish-guide`.** The article is the reason the package's waste rows are now nonspecific: the white versus pale split it assumed does not hold. Original row follows. Nothing. White stringy versus pale trailing is the most useful early signal an owner has and it appears in no article |
+| Goldfish growth, body condition and lifespan | 21 | Goldfish | Nothing. Also the place to make the point that a fish is not weighed weekly, water readings are its vital signs, which contradicts the reptile-shaped owner log in the template |
 
 **Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the pH, GH and KH targets on page 12, the gph turnover figures on page 8, the
-growth table on page 20, the variety adult sizes and minimums on page 19, and the
-praziquantel and diflubenzuron doses on page 24 (those are from Merck, not from the site).
+updated Sep 4 2026 after the cross-check:
+
+- pH, GH and KH targets, page 10: **now carried** by `freshwater-ph-gh-kh-guide`, and the
+  package moved to its figures.
+- gph turnover, page 7: **now carried** by `aquarium-filtration-guide`, and the package
+  moved from a 4x floor to its 10x figure.
+- Growth table, page 21, and variety adult sizes and minimums, page 20: **still PDF only.**
+  No article.
+- Praziquantel and diflubenzuron, page 25: **still PDF only** as doses. Both are now on the
+  site in `goldfish-health-issues-guide.mdx`, but the diflubenzuron figures differ between
+  the two, see the site list below.
+
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** The two site expansion
+rows are both done, but `goldfish-health-issues-guide.mdx` and page 25 now print different
+diflubenzuron doses, and both are correctly sourced. Merck's parasitic diseases page says
+"Diflubenzuron (0.03 mg/L, once) is the most effective treatment for crustacean parasites,"
+which is what the package prints. UF/IFAS FA185, on *Lernaea* specifically, gives
+0.066 mg/L, which is what the MDX prints. This is a genuine difference between two
+published sources rather than an error in either place, so neither was changed. Somebody
+should decide which the site leads with and say so in both. The praziquantel figure,
+5 mg/L as a prolonged bath, agrees in both.
 
 **Source drift, unresolved.** `guides/fish.js` costs for goldfish still carry the
 `// Rough starting ranges, not verified current pricing` comment and disagree with the
@@ -1013,10 +1075,10 @@ itemized budget on page 29, which sums to $208 to $500 of equipment against the 
 block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
 `fish.js` so the two stop drifting.
 
-### Axolotl 2.0, t3 (Sep 2026)
+### Axolotl 2.1, t3 (Sep 2026)
 
 A rebuild rather than a new build: 1.0 was 20 pages on the pre-t3 layout. It came out at
-41 pages, and the count was measured rather than chosen. The one real split was the
+41 pages, and 42 once the reference page split in 2.1, and the count was measured rather than chosen. The one real split was the
 temperature page, which overflowed by 182px and became a numbers page and a cooling
 methods page. `notes/axolotl-v3-notes.md` carries the parked blocks, the per-page free
 space, seven undrafted page ideas and a ranked cut list. Source is fragments plus a build
@@ -1047,21 +1109,31 @@ cold-water section noted in the Betta block above.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Tubbing, cooling as treatment, and salt baths | 28 | Cross-species (amphibians) | **Proposed, and the most valuable row here.** Nothing on the site, and it is the intervention an axolotl keeper reaches for first in every forum thread. Needs the tub setup and the 100 percent daily change, the salt bath figures (10 to 15 g per liter, 10 minutes, once or twice daily, non-iodized), the veterinary cooling range of 41 to 59&deg;F (5 to 15&deg;C) for treatment, and a hard line on where home care stops. Every figure in the PDF page came from Loh's WSAVA proceedings, not from the site |
-| Cooling an aquarium without a chiller | 8, 9, 35 | Cross-species (any tank in a heat wave) | The site says a chiller is needed and stops. Needs the method comparison: moving the tank, cutting heat sources, evaporative cooling with a fan across the surface, insulation, room air conditioning, and the chiller itself, with the honest note that frozen bottles are a stopgap whose swing is itself a stressor, and the 1 to 2&deg;F an hour ceiling. Serves goldfish and every future coldwater build, not just this one |
+| Tubbing, cooling as treatment, and salt baths | 28 | Cross-species (amphibians) | **CLOSED Sep 4 2026 by `amphibian-tubbing-and-salt-baths-guide`.** The figures matched; the framing did not, and the package now prints them as the published ceiling rather than a prescription. Original row follows. **Proposed, and the most valuable row here.** Nothing on the site, and it is the intervention an axolotl keeper reaches for first in every forum thread. Needs the tub setup and the 100 percent daily change, the salt bath figures (10 to 15 g per liter, 10 minutes, once or twice daily, non-iodized), the veterinary cooling range of 41 to 59&deg;F (5 to 15&deg;C) for treatment, and a hard line on where home care stops. Every figure in the PDF page came from Loh's WSAVA proceedings, not from the site |
+| Cooling an aquarium without a chiller | 8, 9, 35 | Cross-species (any tank in a heat wave) | **CLOSED Sep 4 2026 by `cooling-an-aquarium-without-a-chiller-guide`.** Rate of change tightened to 1&deg;F an hour and the per-method degree figures withdrawn as unsourced. Original row follows. The site says a chiller is needed and stops. Needs the method comparison: moving the tank, cutting heat sources, evaporative cooling with a fan across the surface, insulation, room air conditioning, and the chiller itself, with the honest note that frozen bottles are a stopgap whose swing is itself a stressor, and the 1 to 2&deg;F an hour ceiling. Serves goldfish and every future coldwater build, not just this one |
 | Choosing an axolotl, morphs and sexing | 15 | Axolotl | **Proposed.** Nothing on the site. What to check before paying, the morph list in plain terms, the male cloacal bulge and black nails against the female's rounder body, that none of it is reliable before about a year, and the tiger salamander larva mix-up at point of sale, which `tiger-salamander-vs-axolotl-guide.mdx` sets up but does not close |
 | Cohabitation, cannibalism and the no-fish rule | 16 | Axolotl | **Proposed.** `guides/amphibians.js` says they are social enough to house in pairs and mentions gill nipping, which understates it. Needs the juvenile cannibalism window, the size-matching rule, the second-tank-ready requirement, and why fish fail on temperature as well as on gills |
 | Reading the gills as a daily health check | 24 | Axolotl | The health MDX mentions curled gills twice, in passing. This is the earliest warning signal a keeper of this species gets, and it deserves its own section: fanned and full against curled forward, pale against dark red, and filaments shortening over weeks |
 | Growth, body condition and reading waste | 22 | Axolotl | Pairs with the goldfish block's growth and waste rows but does not share an article: body condition here is body width against head width viewed from above, and obesity from an adult still on a juvenile feeding schedule is the specific failure |
-| Quarantine and acclimation for an amphibian | 17 | Cross-species (amphibians) | The goldfish block logs the fish version. The amphibian one differs enough to be its own piece: no netting at any point, temperature-first acclimation, the fecal screen during quarantine, and Bsal as the reason biosecurity matters for this genus specifically |
-| Water hardness, and what to do about soft or RO water | 12 | Cross-species (amphibians) | The site says axolotls need hard water and gives no number, and neither does this package, deliberately. The GH and KH figures that circulate are not well sourced for this species, and Holtfreter's solution is a laboratory practice rather than home husbandry. Needs someone to do the sourcing properly. **The biggest genuine hole in the water chemistry coverage** |
+| Quarantine and acclimation for an amphibian | 17 | Cross-species (amphibians) | **CLOSED Sep 4 2026 by `amphibian-quarantine-and-water-guide`.** Package quarantine raised to six to eight weeks with the Bsal rationale added. Original row follows. The goldfish block logs the fish version. The amphibian one differs enough to be its own piece: no netting at any point, temperature-first acclimation, the fecal screen during quarantine, and Bsal as the reason biosecurity matters for this genus specifically |
+| Water hardness, and what to do about soft or RO water | 12 | Cross-species (amphibians) | **CLOSED Sep 4 2026 by `amphibian-quarantine-and-water-guide`, in the honest direction.** The article established that no GH or KH figure for this species traces to a primary source, so the package now prints no hardness target at all and keeps only the RO and distilled rule. Original row follows. The site says axolotls need hard water and gives no number, and neither does this package, deliberately. The GH and KH figures that circulate are not well sourced for this species, and Holtfreter's solution is a laboratory practice rather than home husbandry. Needs someone to do the sourcing properly. **The biggest genuine hole in the water chemistry coverage** |
 | Juvenile rearing, 0 to 6 months | 18, 22 | Axolotl | **Proposed.** Covered in passing across three pages of the package and nowhere on the site. Live food, individual housing, the cannibalism problem, and the size at which sand becomes an option |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the salt bath dose and the 41 to 59&deg;F treatment range on page 28, the antibiotic
-classes and the tetracycline caution on page 25, the sexing criteria on page 15, the growth
-table on page 22, the whole cooling method comparison on pages 8 and 9, and the blackout
-plan on page 35.
+**Numbers with no site source at all**, updated Sep 4 2026 after the cross-check:
+
+- Salt bath figures and the 41 to 59&deg;F (5 to 15&deg;C) treatment range, page 28:
+  **now carried** by `amphibian-tubbing-and-salt-baths-guide`, which also supplied the
+  correction to how they are framed.
+- Cooling method comparison, pages 8 and 9: **now carried** by
+  `cooling-an-aquarium-without-a-chiller-guide`. The per-method degree figures were
+  **withdrawn** rather than sourced, since the article prints none. The chiller price is
+  still PDF only.
+- Blackout plan, page 35: **now carried** by `aquarium-power-outage-and-transport-guide`,
+  including its axolotl section.
+- Antibiotic classes and the 5 mg/kg figure, page 25: **partly carried.** The tubbing
+  article names enrofloxacin and trimethoprim-sulfonamides only, so the dose, gentamicin,
+  amikacin and the tetracycline caution are **still PDF only**.
+- Sexing criteria, page 15, and the growth table, page 22: **still PDF only.** No article.
 
 **Source drift, unresolved.** Three worth fixing on the site.
 
