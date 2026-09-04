@@ -1,0 +1,103 @@
+{
+  "source": {
+    "fl-personal-pet": {
+      "title": "Florida Fish and Wildlife Conservation Commission, Wildlife as a Personal Pet",
+      "url": "https://myfwc.com/license/captive-wildlife/personal-pet/",
+      "note": "FWC's no-permit personal-pet list names domestic ferrets, European ferrets, hedgehogs, sugar gliders, gerbils, hamsters, guinea pigs, prairie dogs, chinchillas, and common cage birds. Native wildlife is never a personal pet."
+    }
+  },
+  "cells": {
+    "ferret": {
+      "FL": {
+        "status": "legal",
+        "sourceId": "fl-personal-pet",
+        "cite": "Wildlife as a Personal Pet",
+        "quote": "No permit is needed to possess the following species as a personal pet: ... domestic ferrets, European ferrets ...",
+        "verifiedOn": "2026-09-04"
+      },
+      "PA": {
+        "status": "legal",
+        "sourceId": "pa-2961",
+        "cite": "34 Pa.C.S. § 2961",
+        "quote": "Exotic wildlife includes, but is not limited to, all bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and any crossbreed of these animals.",
+        "note": "The ferret is not in that definition and is not game. Pennsylvania treats the domestic ferret as a pet, not as exotic wildlife.",
+        "verifiedOn": "2026-09-04"
+      },
+      "WI": {
+        "status": "legal",
+        "sourceId": "wi-169",
+        "cite": "Wis. Stat. § 169.04(4)(b)",
+        "note": "Chapter 169's harmful-wild-animal list is cougars, bears and swine. Domestic ferret is outside that chapter's pet ban.",
+        "verifiedOn": "2026-09-04"
+      },
+      "UT": {
+        "status": "legal",
+        "sourceId": "ut-r657-3b",
+        "cite": "R657-3b Table 3b-1",
+        "note": "Domestic ferret is not a controlled mammal on Table 3b-1. Controlled rows are the named wild carnivores, primates and the like.",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "sugar-glider": {
+      "WI": {
+        "status": "legal",
+        "sourceId": "wi-169",
+        "cite": "Wis. Stat. § 169.04(4)(b)",
+        "note": "Sugar glider is a non-native mammal and is not a harmful wild animal under § 169.11.",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "hamster": {
+      "FL": {
+        "status": "legal",
+        "sourceId": "fl-personal-pet",
+        "cite": "Wildlife as a Personal Pet",
+        "quote": "No permit is needed to possess the following species as a personal pet: ... hamsters ...",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "gerbil": {
+      "FL": {
+        "status": "legal",
+        "sourceId": "fl-personal-pet",
+        "cite": "Wildlife as a Personal Pet",
+        "quote": "No permit is needed to possess the following species as a personal pet: ... gerbils ...",
+        "verifiedOn": "2026-09-04"
+      },
+      "NYC": {
+        "status": "legal",
+        "sourceId": "nyc-161-01",
+        "cite": "Health Code § 161.01(b)(3)",
+        "note": "Domesticated rodents are allowed. The large-rodent ban does not name gerbils.",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "chinchilla": {
+      "FL": {
+        "status": "legal",
+        "sourceId": "fl-personal-pet",
+        "cite": "Wildlife as a Personal Pet",
+        "quote": "No permit is needed to possess the following species as a personal pet: ... chinchillas ...",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "guinea-pig": {
+      "FL": {
+        "status": "legal",
+        "sourceId": "fl-personal-pet",
+        "cite": "Wildlife as a Personal Pet",
+        "quote": "No permit is needed to possess the following species as a personal pet: ... guinea pigs ...",
+        "verifiedOn": "2026-09-04"
+      }
+    },
+    "garter-snake": {
+      "NYC": {
+        "status": "unclear",
+        "sourceId": "nyc-161-01",
+        "cite": "Health Code § 161.01",
+        "note": "NYC's prohibited list names Pythonidae, Boidae, Iguanidae and venomous taxa. Thamnophis is not on the named families. The closed allowed-pet list also does not name garter snakes. Do not colour this legal or banned until 161.01 is read against Colubridae.",
+        "verifiedOn": "2026-09-04"
+      }
+    }
+  }
+}
