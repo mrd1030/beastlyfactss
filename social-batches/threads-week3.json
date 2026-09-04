@@ -1,0 +1,199 @@
+{
+  "platform": "threads",
+  "posts": [
+    {
+      "date": "2026-09-05 10:00",
+      "text": "Common swifts stay airborne up to 10 months at a stretch. Eating, sleeping, mating, all of it in the air.",
+      "media": ["https://beastlyfacts.com/assets/facts/swift.jpg"],
+      "comments": [
+        "The only thing that brings them down is breeding. Everything else in their life happens without landing.",
+        "Send this to whoever complains about a six hour flight: https://beastlyfacts.com/facts/sky-high-sleepers/"
+      ]
+    },
+    {
+      "date": "2026-09-05 15:00",
+      "text": "Rosy boas are the one snake where the standard humidity advice will actively hurt them.",
+      "media": ["https://beastlyfacts.com/assets/images/rosy-boa-health-issues.jpg"],
+      "comments": [
+        "Care sheets for tropical boas warn about humidity running too low. This is a desert species, and excess moisture is the primary trigger for respiratory infection here.",
+        "Scale rot runs on the same root cause. Damp or dirty substrate, discolored belly scales, sometimes an odor. Both fix the same way, keep the aspen genuinely dry.",
+        "Full guide on the reversal and the rest of the list here → https://beastlyfacts.com/blog/rosy-boa-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-05 20:15",
+      "text": "A pistol shrimp's claw snaps fast enough to make a bubble that briefly hits the temperature of the sun's surface. The bubble does the killing, not the claw.",
+      "media": ["https://beastlyfacts.com/assets/facts/pistol-shrimp.jpg"],
+      "comments": [
+        "The snap alone stuns or kills prey outright. It never has to make contact.",
+        "Grab this for the next person who says small means harmless: https://beastlyfacts.com/facts/finger-snapping-shrimp/"
+      ]
+    },
+
+    {
+      "date": "2026-09-06 10:00",
+      "text": "Cuttlefish do not just camouflage. They hypnotize. Patterns ripple across the skin fast enough to freeze a crab in place.",
+      "media": ["https://beastlyfacts.com/assets/images/fun-facts-cuttlefish.jpg"],
+      "comments": [
+        "The freeze only has to last long enough for the strike. That is the whole point of the light show.",
+        "Send this to whoever thinks color change is only about hiding: https://beastlyfacts.com/facts/hypnotic-skin/"
+      ]
+    },
+    {
+      "date": "2026-09-06 15:00",
+      "text": "Mice are hardy for their size until they suddenly are not, and the thing that gets them is usually already established before you see it.",
+      "media": ["https://beastlyfacts.com/assets/images/mouse-health-issues.jpg"],
+      "comments": [
+        "Most serious mouse respiratory disease is Mycoplasma pulmonis, the same pathogen behind chronic respiratory disease in rats. It can sit asymptomatic a long time before it flares.",
+        "Sneezing, nasal or eye discharge, noisy or labored breathing, a hunched posture, ruffled coat. Damp, drafts, dust, and poor ventilation all raise the risk.",
+        "Full guide on the humidity range and the rest of the list here → https://beastlyfacts.com/blog/mouse-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-06 20:15",
+      "text": "Magpies were the first non-mammal to pass the mirror test. Dot on the feathers, shown a reflection, and they go straight for the dot.",
+      "media": ["https://beastlyfacts.com/assets/facts/magpie.jpg"],
+      "comments": [
+        "A cleaner wrasse has since joined them, which is its own strange thing to sit with. A fish, on the same list.",
+        "Grab this for the next person who calls a bird brainless: https://beastlyfacts.com/facts/magpie-self-awareness/"
+      ]
+    },
+
+    {
+      "date": "2026-09-07 10:00",
+      "text": "Fireflies are not glowing, exactly. They are running a chemical reaction on a compound called luciferin.",
+      "media": ["https://beastlyfacts.com/assets/facts/firefly.jpg"],
+      "comments": [
+        "Which makes every summer field you have ever watched a slow chemistry demonstration you did not know you were attending.",
+        "Send this to whoever you used to catch these with: https://beastlyfacts.com/facts/glimmer-in-the-dark/"
+      ]
+    },
+    {
+      "date": "2026-09-07 15:00",
+      "text": "Parrotlets come with a full-size parrot personality in a body small enough that problems move fast.",
+      "media": ["https://beastlyfacts.com/assets/images/parrotlet-health-issues.jpg"],
+      "comments": [
+        "Avian vets treat respiratory signs as a same-day emergency until proven otherwise. Full guide on what to watch for → https://beastlyfacts.com/blog/parrotlet-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-07 20:15",
+      "text": "Sperm whale clicks reach 230 decibels. Loudest sound any animal makes, and you can feel it in your chest from meters away.",
+      "media": ["https://beastlyfacts.com/assets/facts/sperm-whale.jpg"],
+      "comments": [
+        "It is not for show either. That is how they find giant squid thousands of feet down in total darkness.",
+        "Grab this for the next person who thinks the deep ocean is quiet: https://beastlyfacts.com/facts/the-loudest-animal-alive/"
+      ]
+    },
+
+    {
+      "date": "2026-09-08 10:00",
+      "text": "Cheetahs purr constantly, even on the exhale. The tradeoff is that they cannot roar at all.",
+      "media": ["https://beastlyfacts.com/assets/facts/cheetah.jpg"],
+      "comments": [
+        "They are the only large cat that does it, which puts them closer to a house cat than to a lion on this one specific thing.",
+        "Send this to whoever assumed every big cat roars: https://beastlyfacts.com/facts/cant-stop-purring/"
+      ]
+    },
+    {
+      "date": "2026-09-08 15:00",
+      "text": "Cherry shrimp rarely die of disease. They die of a molt that went wrong, and by then there is nothing you can do.",
+      "media": ["https://beastlyfacts.com/assets/images/cherry-shrimp-health-issues.jpg"],
+      "comments": [
+        "An adult sheds every 3 to 4 weeks. A failed one shows as a complete white band around the middle of the body instead of a clean split at the head.",
+        "It usually traces to a swing in general hardness, an oversized water change, a calcium poor diet, or water too cold to support the molt. Stable GH and gradual changes are the actual fix.",
+        "Full guide on GH targets and the rest here → https://beastlyfacts.com/blog/cherry-shrimp-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-08 20:15",
+      "text": "Owls do not have eyeballs. They have fixed tubes locked into the skull, which is why the head has to do all the moving.",
+      "media": ["https://beastlyfacts.com/assets/facts/owl.jpg"],
+      "comments": [
+        "Up to 270 degrees of rotation, purely as compensation for eyes that cannot move at all in their sockets.",
+        "Grab this for whoever thinks the head spin is a party trick: https://beastlyfacts.com/facts/tube-eyed-head-rotators/"
+      ]
+    },
+
+    {
+      "date": "2026-09-09 10:00",
+      "text": "Reindeer eyes change color with the season. Gold in summer, blue in winter.",
+      "media": ["https://beastlyfacts.com/assets/facts/reindeer.jpg"],
+      "comments": [
+        "The blue shift is a night vision upgrade for Arctic twilight. They are the only mammals known to do it.",
+        "Send this to whoever thinks they already know everything about reindeer: https://beastlyfacts.com/facts/blue-eyed-arctic-shifters/"
+      ]
+    },
+    {
+      "date": "2026-09-09 15:00",
+      "text": "Discus are not actually delicate. They just give you a much narrower margin for error than other fish do.",
+      "media": ["https://beastlyfacts.com/assets/images/discus-health-issues.jpg"],
+      "comments": [
+        "Ich treatment here goes to roughly 90F rather than the usual 82 to 86F, because discus already live warm and have less headroom left. Full guide → https://beastlyfacts.com/blog/discus-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-09 20:15",
+      "text": "A threatened hagfish dumps up to a liter of slime in 0.1 seconds. It expands in water and clogs the predator's gills completely.",
+      "media": ["https://beastlyfacts.com/assets/facts/hagfish.jpg"],
+      "comments": [
+        "The predator is the one with the problem at that point. The hagfish just leaves.",
+        "Grab this for whoever thinks fish have no defenses: https://beastlyfacts.com/facts/instant-slime-escape-artist/"
+      ]
+    },
+
+    {
+      "date": "2026-09-10 10:00",
+      "text": "Peregrine falcons dive over 240 mph. Nothing else on the planet moves that fast under its own power.",
+      "media": ["https://beastlyfacts.com/assets/facts/peregrine-falcon.jpg"],
+      "comments": [
+        "Tiny bony baffles in the nostrils are what make it survivable, they keep the air pressure from wrecking the lungs at that speed.",
+        "Send this to whoever wants to argue about the fastest animal: https://beastlyfacts.com/facts/fastest-animal-alive/"
+      ]
+    },
+    {
+      "date": "2026-09-10 15:00",
+      "text": "Jackson's chameleons get recommended as the friendlier step up from a veiled. Same failure mode ends most of them.",
+      "media": ["https://beastlyfacts.com/assets/images/jacksons-chameleon-health-issues.jpg"],
+      "comments": [
+        "Metabolic bone disease, from inadequate calcium, D3, or UVB, and early cases respond far better than advanced ones. Full guide → https://beastlyfacts.com/blog/jacksons-chameleon-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-10 20:15",
+      "text": "Naked mole rats are nearly immune to cancer and can go 18 minutes without oxygen by running their metabolism on fructose, like a plant.",
+      "media": ["https://beastlyfacts.com/assets/facts/naked-mole-rat.jpg"],
+      "comments": [
+        "They are also one of the only mammals that cannot regulate their own body temperature, which is a strange thing to trade for near cancer immunity.",
+        "Send this to whoever thinks evolution optimizes for looks: https://beastlyfacts.com/facts/cancer-proof-and-cold-blooded/"
+      ]
+    },
+
+    {
+      "date": "2026-09-11 10:00",
+      "text": "Tuataras have a light-sensing third eye on top of the skull and a lineage older than the dinosaurs.",
+      "media": ["https://beastlyfacts.com/assets/facts/tuatara.jpg"],
+      "comments": [
+        "Their metabolism is slow enough to push them past 100 years, and they are the last survivor of an entire reptile order. Not a lizard, despite looking like one.",
+        "Grab this for whoever lumps all reptiles together: https://beastlyfacts.com/facts/the-reptile-with-a-third-eye/"
+      ]
+    },
+    {
+      "date": "2026-09-11 15:00",
+      "text": "Lovebirds hide illness so well that noticing usually means it is already further along than it would be in another pet.",
+      "media": ["https://beastlyfacts.com/assets/images/lovebird-health-issues.jpg"],
+      "comments": [
+        "They are particularly susceptible to PBFD, which is often fatal, has no cure, and is highly contagious, so testing a new bird before introducing it is real prevention. Full guide → https://beastlyfacts.com/blog/lovebird-health-issues-guide/"
+      ]
+    },
+    {
+      "date": "2026-09-11 20:15",
+      "text": "Bats are the only mammals that actually fly, not glide. Some fire off 200 calls a second and read the echoes into a live map.",
+      "media": ["https://beastlyfacts.com/assets/facts/bat.jpg"],
+      "comments": [
+        "That map is built in total darkness, updating continuously, purely from sound bouncing back. Nothing else in the mammal world comes close.",
+        "Send this to whoever still calls them flying mice: https://beastlyfacts.com/facts/built-in-sonar/"
+      ]
+    }
+  ]
+}
