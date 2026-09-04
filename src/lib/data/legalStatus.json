@@ -97,12 +97,116 @@
     "remaining": 0,
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
     "perAnimal": {
+      "hedgehog": {
+        "checked": 51,
+        "of": 51
+      },
+      "ferret": {
+        "checked": 51,
+        "of": 51
+      },
+      "sugar-glider": {
+        "checked": 51,
+        "of": 51
+      },
+      "hamster": {
+        "checked": 34,
+        "of": 51
+      },
+      "gerbil": {
+        "checked": 34,
+        "of": 51
+      },
+      "quaker-parakeet": {
+        "checked": 33,
+        "of": 51
+      },
+      "bengal-cat": {
+        "checked": 32,
+        "of": 51
+      },
+      "veiled-chameleon": {
+        "checked": 36,
+        "of": 51
+      },
+      "russian-tortoise": {
+        "checked": 31,
+        "of": 51
+      },
+      "ball-python": {
+        "checked": 36,
+        "of": 51
+      },
+      "boa-constrictor": {
+        "checked": 36,
+        "of": 51
+      },
       "tarantula": {
         "checked": 25,
         "of": 51
       },
       "emperor-scorpion": {
         "checked": 25,
+        "of": 51
+      },
+      "argentine-tegu": {
+        "checked": 30,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 28,
+        "of": 51
+      },
+      "prairie-dog": {
+        "checked": 45,
+        "of": 51
+      },
+      "capybara": {
+        "checked": 45,
+        "of": 51
+      },
+      "fennec-fox": {
+        "checked": 41,
+        "of": 51
+      },
+      "serval": {
+        "checked": 42,
+        "of": 51
+      },
+      "chinchilla": {
+        "checked": 42,
+        "of": 51
+      },
+      "guinea-pig": {
+        "checked": 34,
+        "of": 51
+      },
+      "green-iguana": {
+        "checked": 30,
+        "of": 51
+      },
+      "snapping-turtle": {
+        "checked": 27,
+        "of": 51
+      },
+      "tokay-gecko": {
+        "checked": 29,
+        "of": 51
+      },
+      "tiger-salamander": {
+        "checked": 26,
+        "of": 51
+      },
+      "nile-monitor": {
+        "checked": 29,
+        "of": 51
+      },
+      "burmese-python": {
+        "checked": 30,
+        "of": 51
+      },
+      "degu": {
+        "checked": 32,
         "of": 51
       },
       "axolotl": {
@@ -117,14 +221,6 @@
         "checked": 25,
         "of": 51
       },
-      "giant-millipede": {
-        "checked": 25,
-        "of": 51
-      },
-      "tiger-salamander": {
-        "checked": 26,
-        "of": 51
-      },
       "sulcata-tortoise": {
         "checked": 26,
         "of": 51
@@ -137,104 +233,8 @@
         "checked": 26,
         "of": 51
       },
-      "snapping-turtle": {
-        "checked": 27,
-        "of": 51
-      },
-      "savannah-monitor": {
-        "checked": 28,
-        "of": 51
-      },
-      "tokay-gecko": {
-        "checked": 29,
-        "of": 51
-      },
-      "nile-monitor": {
-        "checked": 29,
-        "of": 51
-      },
-      "argentine-tegu": {
-        "checked": 30,
-        "of": 51
-      },
-      "green-iguana": {
-        "checked": 30,
-        "of": 51
-      },
-      "burmese-python": {
-        "checked": 30,
-        "of": 51
-      },
-      "russian-tortoise": {
-        "checked": 31,
-        "of": 51
-      },
-      "bengal-cat": {
-        "checked": 32,
-        "of": 51
-      },
-      "degu": {
-        "checked": 32,
-        "of": 51
-      },
-      "hamster": {
-        "checked": 33,
-        "of": 51
-      },
-      "gerbil": {
-        "checked": 33,
-        "of": 51
-      },
-      "quaker-parakeet": {
-        "checked": 33,
-        "of": 51
-      },
-      "guinea-pig": {
-        "checked": 33,
-        "of": 51
-      },
-      "veiled-chameleon": {
-        "checked": 36,
-        "of": 51
-      },
-      "ball-python": {
-        "checked": 36,
-        "of": 51
-      },
-      "boa-constrictor": {
-        "checked": 36,
-        "of": 51
-      },
-      "fennec-fox": {
-        "checked": 41,
-        "of": 51
-      },
-      "chinchilla": {
-        "checked": 41,
-        "of": 51
-      },
-      "serval": {
-        "checked": 42,
-        "of": 51
-      },
-      "prairie-dog": {
-        "checked": 45,
-        "of": 51
-      },
-      "capybara": {
-        "checked": 45,
-        "of": 51
-      },
-      "ferret": {
-        "checked": 47,
-        "of": 51
-      },
-      "sugar-glider": {
-        "checked": 50,
-        "of": 51
-      },
-      "hedgehog": {
-        "checked": 51,
+      "giant-millipede": {
+        "checked": 25,
         "of": 51
       },
       "corn-snake": {
@@ -1105,6 +1105,11 @@
       "title": "O.C.G.A. § 27-1-28, Taking of Nongame Species",
       "url": "https://law.justia.com/codes/georgia/title-27/chapter-1/section-27-1-28/",
       "note": "Bars possession of nongame wildlife except a short enumerated list (rats, mice, coyotes, armadillos, groundhogs, beaver, freshwater turtles, poisonous snakes, frogs, spring lizards, fiddler crabs, freshwater crayfish, freshwater mussels, nutria); an ordinary nonvenomous native colubrid like the garter snake is not on that exception list."
+    },
+    "fl-personal-pet": {
+      "title": "Florida Fish and Wildlife Conservation Commission, Wildlife as a Personal Pet",
+      "url": "https://myfwc.com/license/captive-wildlife/personal-pet/",
+      "note": "FWC's no-permit personal-pet list names domestic ferrets, European ferrets, hedgehogs, sugar gliders, gerbils, hamsters, guinea pigs, prairie dogs, chinchillas, and common cage birds. Native wildlife is never a personal pet."
     }
   },
   "animals": {
@@ -1858,6 +1863,35 @@
           "quote": "Mustela putorius furo",
           "note": "Named on Part A, which is headed FOR RESEARCH AND EXHIBITION. A university or licensed exhibitor can hold one by permit; a pet keeper cannot, and no pet permit exists. This is the origin of Hawaii's well known ferret ban.",
           "verifiedOn": "2026-08-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-personal-pet",
+          "cite": "Wildlife as a Personal Pet",
+          "quote": "No permit is needed to possess the following species as a personal pet: ... domestic ferrets, European ferrets ...",
+          "verifiedOn": "2026-09-04"
+        },
+        "PA": {
+          "status": "legal",
+          "sourceId": "pa-2961",
+          "cite": "34 Pa.C.S. § 2961",
+          "quote": "Exotic wildlife includes, but is not limited to, all bears, coyotes, lions, tigers, leopards, jaguars, cheetahs, cougars, wolves and any crossbreed of these animals.",
+          "note": "The ferret is not in that definition and is not game. Pennsylvania treats the domestic ferret as a pet, not as exotic wildlife.",
+          "verifiedOn": "2026-09-04"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "note": "Chapter 169's harmful-wild-animal list is cougars, bears and swine. Domestic ferret is outside that chapter's pet ban.",
+          "verifiedOn": "2026-09-04"
+        },
+        "UT": {
+          "status": "legal",
+          "sourceId": "ut-r657-3b",
+          "cite": "R657-3b Table 3b-1",
+          "note": "Domestic ferret is not a controlled mammal on Table 3b-1. Controlled rows are the named wild carnivores, primates and the like.",
+          "verifiedOn": "2026-09-04"
         }
       }
     },
@@ -2242,6 +2276,13 @@
           "quote": "Any animal that is not on the lists of conditionally approved, restricted, or prohibited animals shall be prohibited until the board's review and determination for placement on one of these lists",
           "note": "Petaurus appears on none of the four lists, so the default rule bars it rather than any decision about sugar gliders. The special permits the subsection goes on to describe are for medical or ecological emergencies and for filming, not for pets.",
           "verifiedOn": "2026-08-05"
+        },
+        "WI": {
+          "status": "legal",
+          "sourceId": "wi-169",
+          "cite": "Wis. Stat. § 169.04(4)(b)",
+          "note": "Sugar glider is a non-native mammal and is not a harmful wild animal under § 169.11.",
+          "verifiedOn": "2026-09-04"
         }
       }
     },
@@ -2504,6 +2545,13 @@
           "note": "The mammal side of the statute is four orders: carnivores, rhinoceroses, primates and elephants. Rodentia is not among them.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-personal-pet",
+          "cite": "Wildlife as a Personal Pet",
+          "quote": "No permit is needed to possess the following species as a personal pet: ... hamsters ...",
+          "verifiedOn": "2026-09-04"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -2759,6 +2807,20 @@
           "note": "No rodent order is listed, so gerbils are unrestricted. Worth contrasting with California, which bans them outright.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-personal-pet",
+          "cite": "Wildlife as a Personal Pet",
+          "quote": "No permit is needed to possess the following species as a personal pet: ... gerbils ...",
+          "verifiedOn": "2026-09-04"
+        },
+        "NYC": {
+          "status": "legal",
+          "sourceId": "nyc-161-01",
+          "cite": "Health Code § 161.01(b)(3)",
+          "note": "Domesticated rodents are allowed. The large-rodent ban does not name gerbils.",
+          "verifiedOn": "2026-09-04"
         }
       },
       "encyclopediaId": "gerbil"
@@ -7077,6 +7139,13 @@
           "quote": "Chinchilla lanigera",
           "note": "On the conditionally approved list rather than a restricted one, so import and possession are allowed by permit subject to the conditions the Board of Agriculture attaches. One of the few mammals with a legitimate route into Hawaii.",
           "verifiedOn": "2026-08-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-personal-pet",
+          "cite": "Wildlife as a Personal Pet",
+          "quote": "No permit is needed to possess the following species as a personal pet: ... chinchillas ...",
+          "verifiedOn": "2026-09-04"
         }
       }
     },
@@ -7337,6 +7406,13 @@
           "note": "Outside the statute entirely.",
           "verifiedOn": "2026-08-05",
           "localOverride": true
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-personal-pet",
+          "cite": "Wildlife as a Personal Pet",
+          "quote": "No permit is needed to possess the following species as a personal pet: ... guinea pigs ...",
+          "verifiedOn": "2026-09-04"
         }
       }
     },
@@ -12249,6 +12325,13 @@
           "quote": "Amphibians and reptiles not listed in Section 8 or 9 of this regulation",
           "note": "Not venomous, and not on Wyoming's Section 8 prohibited list.",
           "verifiedOn": "2026-08-27"
+        },
+        "NYC": {
+          "status": "unclear",
+          "sourceId": "nyc-161-01",
+          "cite": "Health Code § 161.01",
+          "note": "NYC's prohibited list names Pythonidae, Boidae, Iguanidae and venomous taxa. Thamnophis is not on the named families. The closed allowed-pet list also does not name garter snakes. Do not colour this legal or banned until 161.01 is read against Colubridae.",
+          "verifiedOn": "2026-09-04"
         }
       },
       "article": "/blog/garter-snake-legal-guide/"
