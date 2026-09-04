@@ -31,7 +31,13 @@ status: "published"
 noIndex: false
 
 # === Affiliate & Monetization ===
-affiliate: false
+affiliate: true
+relatedProducts:
+  - "thermostat-bn-link-on-off"
+  - "dimming-thermostat-exo-terra-proportional"
+  - "dimming-thermostat-reptizoo-pid"
+  - "ceramic-heat-emitter-zoo-med-repticare-150w"
+  - "etekcity-infrared-thermometer-gun"
 
 # === FAQs ===
 faqs:
@@ -52,6 +58,7 @@ faqs:
 # Reptile Heating and Thermostats: Preventing Burns
 
 <VetDisclaimer />
+<AffiliateDisclosure />
 
 A pet reptile can't regulate its own body temperature the way a mammal does, so every enclosure depends on an external heat source running for weeks and months at a time. That's exactly why a thermostat matters more here than for almost any other piece of pet equipment. The Merck Veterinary Manual's husbandry guidance for reptiles is direct about it: heaters should be thermostat controlled, screened from the animal, and positioned toward one end of the enclosure to create a gradient, and "hot rocks" are singled out as a heat source that frequently causes burns in larger animals. VCA Animal Hospitals says much the same in its snake housing guidance, listing "hot rocks" or "sizzle rocks" as dangerous and ineffective and worth avoiding outright.
 
@@ -72,9 +79,9 @@ Not every thermostat regulates heat the same way, and the type matters more with
 <ComparisonTable
   headers={["Controller type", "How it regulates heat", "Best matched to"]}
   rows={[
-    ["On/off", "Cuts power fully at the set temperature, restores it fully once the reading drops back below that point", "Under-tank heat mats, which change temperature slowly enough that a full on/off cycle doesn't create a harsh swing"],
-    ["Pulse proportional", "Reads temperature continuously and sends short pulses of power rather than switching fully on or off, holding a steadier average output", "Ceramic heat emitters and other radiant sources that respond faster than a mat and can overshoot on a simple on/off cycle"],
-    ["Dimming", "Reduces or increases voltage to the heat source the way a light dimmer does, rather than pulsing power on and off", "Halogen and incandescent basking bulbs, since dimming avoids the visible flicker a pulse cycle can cause on a light-emitting bulb"],
+    [<><AffiliateLink href="https://www.amazon.com/dp/B01I15S6OM?tag=beastlyfacts-20" product="BN-LINK Reptile Thermostat Temperature Controller, Digital Heat Mat Thermostat, 40-108F, 1000W, ETL Listed">On/off</AffiliateLink></>, "Cuts power fully at the set temperature, restores it fully once the reading drops back below that point", "Under-tank heat mats, which change temperature slowly enough that a full on/off cycle doesn't create a harsh swing"],
+    [<><AffiliateLink href="https://www.amazon.com/dp/B08R29S2WB?tag=beastlyfacts-20" product="Exo Terra Dimming and Pulse Proportional Thermostat for Reptile Terrariums">Pulse proportional</AffiliateLink></>, "Reads temperature continuously and sends short pulses of power rather than switching fully on or off, holding a steadier average output", "Ceramic heat emitters and other radiant sources that respond faster than a mat and can overshoot on a simple on/off cycle"],
+    [<><AffiliateLink href="https://www.amazon.com/dp/B0BGS517FT?tag=beastlyfacts-20" product="REPTIZOO Dimming Thermostat, PID Temperature Controller with Memory Function">Dimming</AffiliateLink></>, "Reduces or increases voltage to the heat source the way a light dimmer does, rather than pulsing power on and off", "Halogen and incandescent basking bulbs, since dimming avoids the visible flicker a pulse cycle can cause on a light-emitting bulb"],
   ]}
 />
 
@@ -86,7 +93,7 @@ One honest caveat on that table: the veterinary sources say "thermostat controll
   headers={["Heat source", "What it is", "What it's good for", "What it's not good for"]}
   rows={[
     ["Under-tank heat mat", "A thin adhesive or standalone pad placed under part of the enclosure floor", "Belly heat for burrowing and ground-dwelling snakes, works well through glass or thin PVC", "Heating thick substrate or large enclosures on its own, and no light output for a basking species"],
-    ["Ceramic heat emitter (CHE)", "A screw-in bulb that produces infrared heat with no visible light", "Daytime or nighttime ambient and basking heat without disrupting the light cycle", "Precise, low-wattage heating in a small enclosure, output is harder to fine-tune than a dimmable bulb"],
+    [<><AffiliateLink href="https://www.amazon.com/dp/B0002AQCQO?tag=beastlyfacts-20" product="Zoo Med Repticare Infrared Ceramic Heat Emitter (150 watt)">Ceramic heat emitter (CHE)</AffiliateLink></>, "A screw-in bulb that produces infrared heat with no visible light", "Daytime or nighttime ambient and basking heat without disrupting the light cycle", "Precise, low-wattage heating in a small enclosure, output is harder to fine-tune than a dimmable bulb"],
     ["Deep heat projector (DHP)", "A ceramic-style emitter designed to project heat downward in a more focused beam than a standard CHE", "Overhead basking heat with a more defined warm spot, used with larger or taller enclosures", "Small enclosures, where the more focused beam can create too small or too hot a basking area"],
     ["Halogen or incandescent basking bulb", "A conventional light bulb used for both light and heat during the day", "Daytime basking heat paired with visible light, works well on a dimming thermostat", "Nighttime heat, since Merck's husbandry guidance notes light-emitting bulbs aren't suited to providing nocturnal heat"],
     ["Radiant heat panel", "A flat panel, usually mounted on or near the enclosure ceiling, that radiates heat downward over a broad area", "Even ambient warmth across a larger enclosure without a visible hot bulb", "A single, sharply defined basking spot the way a bulb or DHP produces"],
@@ -109,7 +116,7 @@ A thermostat with a correctly set target temperature can still produce a burn if
 
 A wattage figure printed on a heat mat or bulb box is sized for a specific enclosure volume and material under average conditions, not for your room, enclosure, or climate. A glass enclosure in an air-conditioned room and a PVC enclosure in an unheated garage lose heat at very different rates on the same listed wattage, so that number is a reasonable starting point for shopping, not a figure you dial in once and stop checking.
 
-The way to confirm it worked is with two separate tools, not one thermostat display. A digital probe thermometer left at the basking spot and the cool end gives a continuous read on both ends of the gradient over a day or more. An infrared temperature gun spot-checks the actual surface at multiple points, the basking spot, the substrate, the wall near the heat source, catching a hot spot the fixed probe isn't sitting on. Run both checks before an animal goes into a new enclosure, and again whenever the setup changes.
+The way to confirm it worked is with two separate tools, not one thermostat display. A digital probe thermometer left at the basking spot and the cool end gives a continuous read on both ends of the gradient over a day or more. An <><AffiliateLink href="https://amzn.to/4dEII7J" product="Etekcity Infrared Thermometer Laser Temperature Gun">infrared temperature gun</AffiliateLink></> spot-checks the actual surface at multiple points, the basking spot, the substrate, the wall near the heat source, catching a hot spot the fixed probe isn't sitting on. Run both checks before an animal goes into a new enclosure, and again whenever the setup changes.
 
 ## Failure Modes Worth Planning Around
 
