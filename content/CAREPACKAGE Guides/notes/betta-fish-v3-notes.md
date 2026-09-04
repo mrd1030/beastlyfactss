@@ -155,3 +155,111 @@ Do not cut: the parameter table, either cycling page, the ich-versus-velvet-vers
 columnaris differential, the abdomen and body condition diagram, the aquarium salt dosing
 and its 10-day ceiling, or any owner-tool page. The two cycling pages are the reason this
 package exists, since an uncycled tank is what actually kills most bettas.
+
+## Sep 4 2026: cross-check against the new aquatic articles (v2.1 to v2.2)
+
+Package cross-checked against the cross-species aquatic articles published Sep 3 and Sep 4:
+`aquarium-cycling-guide`, `aquarium-power-outage-and-transport-guide`, and
+`fish-quarantine-and-treatment-guide`. Every page touched is below, old text then new.
+Version bumped 2.1 to 2.2, template stays t3.
+
+### Page 7, Fishless cycling, step by step
+
+Completion test, nitrate added:
+
+- Was: `read <strong>0 ammonia and 0 nitrite 24 hours later</strong>. Not "close to zero." Zero.`
+- Now: `read <strong>0 ammonia and 0 nitrite 24 hours later, with nitrate present</strong>. Not "close to zero." Zero.`
+
+Fish-in callout, action line set at 0.1 to 0.25 ppm. This wording is now identical in all
+three aquatic packages:
+
+- Was: "Test ammonia and nitrite daily. Change 25 to 50% of the water any time either reads above 0, use a conditioner that detoxifies ammonia between changes"
+- Now: "Test ammonia and nitrite daily. Watch from 0.1 ppm and change water at 0.25 ppm, scaling the change to the reading: 25 to 30% just over the line, 50% or more once either number is clearly climbing. Use a conditioner that detoxifies ammonia between changes"
+
+### Page 17, Finding a vet & what to tell them
+
+Hospital tank, Merck's reference build added alongside the betta-sized one:
+
+- Was: "A bare 2 to 3 gallon (8 to 11 L) container with a spare heater and a sponge filter seeded in your main tank lets you treat a fish without dosing medication into your plants, your snails, and your bacteria colony."
+- Now: "The veterinary reference build is a 10 gallon (38 L) tank with a sponge filter, an air pump and a heater. For one betta, a bare 2 to 3 gallon (8 to 11 L) container with a spare heater and a sponge filter seeded in your main tank does the same job. Either lets you treat a fish without dosing medication into your plants, your snails, and your bacteria colony."
+
+Quarantine window raised to the Merck minimum:
+
+- Was: "Quarantine a new fish for 2 to 4 weeks in a separate container before it goes anywhere near an established tank, and rinse and inspect plants."
+- Now: "Quarantine a new fish for at least 30 days in a separate container before it goes anywhere near an established tank, and 30 to 60 days for one you especially do not want to lose. Rinse and inspect plants."
+
+### Page 18, Fin rot & ich
+
+Aquarium salt duration. The fixed ceiling was not supported by any site or veterinary
+source, and the article that now covers this ground declines to give a number of days:
+
+- Was: "Do not run salt for more than about 10 days continuously, it is hard on the kidneys and liver. Salt does not evaporate, so only replace what you remove in a water change, dosed to the volume replaced."
+- Now: "There is no agreed number of days to stop at, so do not run a countdown. End it the way the veterinary guidance does: once the infection has cleared, change the water repeatedly until the salt is fully out. Salt does not evaporate, so between changes only replace what you remove, dosed to the volume replaced."
+
+The 1 tsp per gallon dose itself was **not** changed. It is unsourced against the two vet
+sources now on the site and is parked pending a decision.
+
+### Page 22, Tankmates
+
+- Was: "Quarantine it for 2 to 4 weeks first (page 17)"
+- Now: "Quarantine it for at least 30 days first (page 17)"
+
+### Page 27, Symptom quick reference
+
+- Was: "Fix the water, salt at 1 tsp per gallon, max 10 days (page 18)"
+- Now: "Fix the water, salt at 1 tsp per gallon, cleared by water changes (page 18)"
+
+### Page 29, Power outages & the blackout plan
+
+The biggest change in this pass. The page opened by telling a keeper to do nothing for an
+hour or two and to leave oxygen until the 8 hour mark. The article puts aeration first and
+temperature a distant second, so the ordering inverted and the 8-hour cycle was dropped
+rather than kept, because it contradicted the new first step. The labyrinth organ stays as
+the reason a betta has more margin than a gill-only fish, which is what the old ordering
+was really reaching for.
+
+Section subtitle:
+
+- Was: "A betta breathes air, which buys you far more time in a blackout than most fish get. Temperature is the thing that will actually get you."
+- Now: "Oxygen goes first and temperature second, even for a fish that can breathe air. Aerate before you do anything else."
+
+Do list, first three items:
+
+- Was: "For the first hour or two, do nothing. A single betta in 5 gallons is a very light bioload and the water holds fine." / "Insulate..." / "Heat gently..." / "From about the 8 hour mark, restore oxygen for an hour, then repeat every 8 hours..."
+- Now: "**Aerate straight away.** Once the filter stops, the surface stops moving and dissolved oxygen starts falling within a couple of hours. A battery or USB air pump on a power bank, left running, is the whole job." / "No pump: scoop water out and pour it back from a few inches up, every 10 to 15 minutes at this tank size. Crude, and it works." / "The labyrinth organ is your margin, not your plan. A betta takes oxygen at the surface, so it tolerates still water far better than a gill-only fish. Keep aerating anyway." / then insulate, then heat gently.
+
+Timeline table, first three rows:
+
+- Was: "0 to 2 hours: Nothing. Leave the lid on, leave the lights off, and do not open the tank" / "2 to 8 hours: Insulate with towels. Start watching the thermometer rather than the clock" / "From 8 hours: Run oxygen for an hour, then repeat every 8 hours..." / "Past 24 hours: Keep the 8-hour oxygen cycle going..."
+- Now: "First 10 min: Get air moving: battery pump on, or start the pour-back cycle. Unplug the filter at the wall, lid on, lights off" / "0 to 2 hours: Keep aerating. No feeding. Temperature has barely moved yet, so do not chase it" / "2 to 8 hours: Insulate with towels and start watching the thermometer. Aeration continues throughout" / "Past 24 hours: Still aerating, still no feeding..."
+
+Page 30, travel and transport, was **not** changed. The bag ratio there is under review, see
+the site list.
+
+### Page 33, Equipment, water change & vet log
+
+- Was: "Quarantine log (any new fish, plant, or snail, 2 to 4 weeks)"
+- Now: "Quarantine log (any new fish, plant, or snail, 30 days minimum)"
+
+### Page 36, Sources, version history & about
+
+Added: Merck's Management of Aquarium Fish and Routine Health Care of Fish; VCA on ending a
+salt course by water change; NC State on power outages, folded into the Aquarium Co-Op line.
+The two tank-size enrichment studies were merged onto one line and the Merck entries folded
+together, purely to buy space. Cover badge and colophon moved to Version 2.2, and a 2.2 row
+was added to the version history.
+
+**This page did not fit.** It ran 143px over after the additions, and 81px over even with
+every existing history row and the closing disclaimer cut to the bone. Its baseline
+headroom was 37px, so the page has been effectively full since 2.0. See the note below.
+
+### The back reference page needs to be two pages
+
+All three aquatic packages hit the same wall in this pass: betta 36, goldfish 39 and
+axolotl 41 are single reference pages carrying sources, version history, the colophon, and
+in the axolotl's case a source-drift section, and none of them has room for another source
+line or another history row. This is exactly the finding the Cockatiel 1.0 build recorded
+in `TEMPLATE_GUIDE.md`: a package that sources properly needs two reference pages at the
+back, not one. Betta is the awkward one of the three because it is a single hand-edited
+file rather than a `-src` fragment build, though a split at the very end of the document
+appends a page without moving any existing page number.
