@@ -254,6 +254,15 @@ someone reaching for it in a hurry is already looking.
 
 Final measurement: all 40 pages clear, minimum 17 px free.
 
+### One correction after review
+
+The corrected warming figure went onto page 18 but never reached the page 29
+emergency card, which had a room-temperature row and no sick-bird row. That
+breaks the rule that a fixed figure reads the same on the care page, the quick
+reference and the card, so the card gained the row: 80 to 85 F (27 to 29 C) with
+the overheating signs. Re-rendered over the same 1.1 file. All 40 pages clear,
+minimum 17 px.
+
 ### Still only in this PDF
 
 Night frights on page 7, the sexing dimorphism and the mutations that break it on
