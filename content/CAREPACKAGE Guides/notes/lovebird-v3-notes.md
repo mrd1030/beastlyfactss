@@ -280,6 +280,14 @@ Three disagreements were added to the block on page 39:
 - **Oxytocin on page 18**, "may be used to induce contractions and can be repeated once." Checked against Merck's dosage table, which gives oxytocin at 5 to 10 U/kg IM, "may repeat once." Correct as printed. Merck is now cited for it.
 - **The 40 to 60 g weight and the 10 to 15 year life span** on pages 4 and 16, kept and recorded as disagreements rather than changed.
 
+### One correction after review
+
+The page 27 card carried the corrected 80 to 85 F figure but not the overheating
+signs that pages 18 and 21 gained, and that the other three packages' cards
+ended up with. Added as a sub-line on the card row, so all four cards now warn
+when to stop warming as well as what to warm to. Re-rendered over the same 2.1
+file. All 39 pages clear, minimum 19 px.
+
 ### Still only in this PDF
 
 Carried by the package with no site article behind them: the 40 to 60 g weight
