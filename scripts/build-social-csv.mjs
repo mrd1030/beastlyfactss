@@ -14,16 +14,29 @@
 // Batch JSON shape:
 //
 //   {
-//     "platform": "x" | "ig" | "threads",
+//     "platform": "x" | "ig" | "threads" | "pinterest",
 //     "posts": [
 //       {
 //         "date": "2026-08-29 10:00",      required, colon in the time
 //         "text": "the main post",          required
 //         "media": ["https://..."],         1 url, or several for an IG carousel
-//         "alt": ["..."],                   IG only, one per media url
+//         "alt": ["..."],                   IG and pinterest, one per media url
 //         "comments": ["reply", "reply"]    replies, in order, chained
 //       }
 //     ]
+//   }
+//
+// Pinterest posts take three extra fields and no comments, because it is a
+// search channel rather than a conversation one:
+//
+//   {
+//     "date": "2026-09-12 09:00",
+//     "text": "the pin description, 100 to 200 chars",
+//     "link": "https://beastlyfacts.com/blog/...",   the outbound link, required
+//     "title": "the pin title",                       required
+//     "board": "Reptile Care & Setups",               must already exist, required
+//     "media": ["https://beastlyfacts.com/assets/pins/....jpg"],
+//     "alt": ["what is actually in the image"]
 //   }
 //
 // `comments` is the whole reply mechanism. One entry is a single reply. Several
@@ -37,8 +50,16 @@
 import fs from 'fs';
 import path from 'path';
 
-const PLATFORMS = ['x', 'ig', 'threads'];
+const PLATFORMS = ['x', 'ig', 'threads', 'pinterest'];
 const SITE = 'https://beastlyfacts.com';
+
+// pinterest inverts the central rule of every other platform here. Elsewhere
+// Link(s) must stay empty or Publer builds a link-preview post instead of the
+// native photo post. On pinterest the outbound link IS the product, so it is
+// required, and the reply mechanism the others run on does not exist at all.
+// It also needs two columns nothing else touches, Title and Board/Album, and
+// the board has to already exist in Pinterest before the import runs.
+const isPin = (b) => b.platform === 'pinterest';
 
 // Publer's bulk template. Fixed order, and the empty ones are not padding, they
 // hold the positions the importer expects.
@@ -91,8 +112,17 @@ function validate(batch, file) {
       err(i, 'text contains a url, urls go in comments');
     }
 
-    if ('link' in p || 'links' in p) {
-      err(i, 'link fields are not supported, Link(s) must stay empty or Publer builds a link post instead of a native photo post');
+    if (isPin(batch)) {
+      // The outbound link is the entire point of the channel.
+      if (!p.link) err(i, 'pinterest posts need a link, the outbound url is the whole point of the channel');
+      else if (!p.link.startsWith(SITE + '/')) err(i, `link must be a ${SITE} url, got ${JSON.stringify(p.link)}`);
+      if (!p.title || !String(p.title).trim()) err(i, 'pinterest posts need a title (the pin title)');
+      if (!p.board || !String(p.board).trim()) err(i, 'pinterest posts need a board, and it must already exist in Pinterest before import');
+    } else if ('link' in p || 'links' in p) {
+      err(i, 'link fields are not supported on this platform, Link(s) must stay empty or Publer builds a link post instead of a native photo post');
+    }
+    if (!isPin(batch) && (p.title || p.board)) {
+      err(i, 'title and board are pinterest-only, they must stay empty elsewhere');
     }
 
     const media = p.media ?? [];
@@ -103,20 +133,36 @@ function validate(batch, file) {
       if (seenMedia.has(m)) err(i, `image reused from post ${seenMedia.get(m) + 1}: ${m}`);
       else seenMedia.set(m, i);
     });
+    if (isPin(batch)) {
+      if (media.length !== 1) err(i, `a pin is one image, got ${media.length}`);
+      // Pins are generated 2:3 cards, not site photos reused straight, and
+      // they must be deployed before the import or Publer fetches a 404.
+      media.forEach(m => {
+        if (!m.includes('/assets/pins/')) {
+          err(i, `pin media should be a generated card under /assets/pins/, got ${m}. Run scripts/generate-pins.mjs, then merge and deploy before importing`);
+        }
+      });
+    }
 
     const alt = p.alt ?? [];
     if (!Array.isArray(alt)) err(i, 'alt must be an array');
-    if (batch.platform === 'ig') {
+    if (batch.platform === 'ig' || isPin(batch)) {
       if (alt.length !== media.length) {
-        err(i, `ig needs one alt text per image, got ${alt.length} for ${media.length} image(s)`);
+        err(i, `${batch.platform} needs one alt text per image, got ${alt.length} for ${media.length} image(s)`);
       }
     } else if (alt.length) {
-      err(i, 'alt text only applies to ig');
+      err(i, 'alt text only applies to ig and pinterest');
     }
 
     const comments = p.comments ?? [];
     if (!Array.isArray(comments)) err(i, 'comments must be an array');
-    if (comments.length === 0) err(i, 'no comments, every post gets at least one reply');
+    // Pinterest has no reply mechanism worth using, the link column does that
+    // job. Every other platform gets at least one reply.
+    if (isPin(batch)) {
+      if (comments.length) err(i, 'pinterest has no reply mechanism, the outbound link does that job, leave comments out');
+    } else if (comments.length === 0) {
+      err(i, 'no comments, every post gets at least one reply');
+    }
     comments.forEach(c => {
       if (!c || !String(c).trim()) err(i, 'empty comment entry');
       // || is the chain separator, so it cannot appear inside a single reply.
@@ -143,10 +189,13 @@ function toCsv(batch) {
     const row = {
       'Date': p.date,
       'Text': p.text,
-      'Link(s)': '',
+      // Empty everywhere except pinterest, where it is the outbound link.
+      'Link(s)': isPin(batch) ? p.link : '',
       'Media URL(s)': (p.media ?? []).join(','),
+      'Title': isPin(batch) ? p.title : '',
       'Alt text(s)': (p.alt ?? []).join('||'),
       'Comment(s)': (p.comments ?? []).join('||'),
+      'Board/Album': isPin(batch) ? p.board : '',
     };
     lines.push(COLS.map(c => csvField(row[c] ?? '')).join(','));
   }

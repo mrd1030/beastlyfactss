@@ -24,6 +24,17 @@ beats volume.
 
 ## Publer CSV (12-column bulk template)
 
+Build it with the shared builder, which knows Pinterest's inverted rules and
+refuses to emit a file that breaks them:
+
+```bash
+node scripts/build-social-csv.mjs pins.json
+```
+
+The batch JSON shape is in `docs/PUBLER_CSV_HOWTO.md`. In short, a pin needs
+`link`, `title`, and `board` (all rejected on the other platforms), exactly one
+image under `/assets/pins/`, one alt text, and no comments.
+
 Same template as the X feed, different columns matter:
 
 - `Date`        YYYY-MM-DD HH:MM, colon in the time.

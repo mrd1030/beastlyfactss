@@ -202,8 +202,42 @@ correct CSV and refuses to emit a broken one.
   follow-ups in `comments`, not four post objects.**
 - `media` takes several urls for an IG carousel, one otherwise.
 - `alt` is IG only, one entry per media url, in the same order.
-- There is no `link` field on purpose. `Link(s)` is always empty, and passing
-  one is a hard error.
+- There is no `link` field on X, IG, or Threads, on purpose. `Link(s)` is
+  always empty there, and passing one is a hard error.
+
+### Pinterest is the exception
+
+Pinterest inverts the central rule, so it gets its own shape. It is a search
+channel, not a conversation one: the outbound link is the product, and there
+are no replies at all.
+
+```json
+{
+  "platform": "pinterest",
+  "posts": [
+    {
+      "date": "2026-09-12 09:00",
+      "text": "the pin description, 100 to 200 characters, natural keywords",
+      "link": "https://beastlyfacts.com/blog/rosy-boa-health-issues-guide/",
+      "title": "The Rosy Boa Humidity Mistake",
+      "board": "Reptile Care & Setups",
+      "media": ["https://beastlyfacts.com/assets/pins/rosy-boa-humidity.jpg"],
+      "alt": ["A rosy boa coiled on dry aspen substrate."]
+    }
+  ]
+}
+```
+
+- `link`, `title`, and `board` are all **required**, and rejected on every
+  other platform.
+- The board must already exist in Pinterest before the import runs.
+- One image per pin, and it has to be a generated card under `/assets/pins/`
+  from `scripts/generate-pins.mjs`, **merged and deployed first** or Publer
+  fetches a 404.
+- `comments` must be absent. Passing one is an error.
+
+Full channel rules, boards, cadence, and the font setup the generator needs
+live in `docs/pinterest-feed.md`.
 
 ### What it refuses to build
 

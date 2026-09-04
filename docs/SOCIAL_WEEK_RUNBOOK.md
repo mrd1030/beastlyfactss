@@ -82,6 +82,13 @@ X can still run hotter than the Meta platforms because tweets decay
 independently, while Threads and IG posts compete with each other. See the
 algorithm notes in the feed commands.
 
+**Pinterest runs on its own track.** It shares the source pools, the ledger,
+and the builder, but nothing else: no replies, an outbound link on every pin,
+its own boards, and an image generation step that has to be deployed before
+the import. It is a search play with a 1 to 3 month payoff curve, so it does
+not belong in the same weekly rhythm as the other three. Rules live in
+`docs/pinterest-feed.md`, and its extra pre-step is step 4b below.
+
 Every claim gets read out of the repo before it is written into a post:
 
 ```bash
@@ -134,6 +141,25 @@ node scripts/social-inventory.mjs facts --platform x --unused --limit 300 \
 The slug is derived from the fact's **title**, not its animal or id, and the
 slugify rules have edge cases ("and" becomes "-and-"), so always read the
 resolved URL rather than building one by hand.
+
+---
+
+## Step 4b: Pinterest only, generate and deploy the pins
+
+Skip this unless the batch includes Pinterest. It is the one platform whose
+images do not already exist on the site.
+
+```bash
+node scripts/generate-pins.mjs pin-spec.json   # writes public/assets/pins/*.jpg
+```
+
+Then **merge and deploy before importing the CSV.** Publer fetches the image
+at import time, so a pin referencing an undeployed file just 404s. This is the
+only place in the whole pipeline where a deploy has to happen mid-process.
+
+Fonts have to be instanced once per machine or titles silently fall back to
+DejaVu, which is legible but off-brand. The generator's header comment has the
+exact steps.
 
 ---
 

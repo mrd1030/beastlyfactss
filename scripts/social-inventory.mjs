@@ -59,7 +59,13 @@ const slugify = (text) => {
 // consume it for Instagram: the same source is meant to go out on all three in
 // different registers. Each platform therefore gets its own full runway, and
 // `plan --mirror <platform>` is how a deliberate cross-post is proposed.
-const PLATFORMS = ['x', 'ig', 'threads'];
+// pinterest runs on the same source pools and the same no-repeat rule, but it
+// is a search channel rather than a conversation one: pins carry an outbound
+// link instead of replies, and each pin needs a generated 2:3 card from
+// scripts/generate-pins.mjs. See docs/pinterest-feed.md. One gap worth knowing:
+// this ledger tracks SOURCES, not pin images, so the "never pin the same image
+// twice" rule still has to be held by hand across weeks.
+const PLATFORMS = ['x', 'ig', 'threads', 'pinterest'];
 // nextStart: the calendar date the NEXT batch should open on, per platform.
 // Deliberately separate from facts/articles (which track CONFIRMED posted
 // items via `mark`). nextStart tracks what's already been SCHEDULED - set
