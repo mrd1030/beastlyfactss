@@ -340,6 +340,19 @@ Bsal, NC State on power outages, and Texas A&M AgriLife on temperature swings an
 The "Where sources disagree" section gained a third entry, on hardness being missing rather
 than disputed. Cover badge and colophon moved to Version 2.1 and a 2.1 row was added.
 
-**This page did not fit**, running 363px over against a 32px baseline. It is the worst of
-the three because it also carries the source-drift section. See the note at the end of
-`betta-fish-v3-notes.md`.
+This page did not fit as one page, running 363px over against a 32px baseline, the worst of
+the three because it also carries the source-drift section.
+
+### Page 42, new: Where sources disagree, version history & about
+
+**The package is now 42 pages.** Page 41 keeps the two source lists; "Where sources
+disagree", the version history, the disclaimer and the colophon moved to a new page 42,
+which is the right grouping anyway since the drift section is commentary on the sources
+rather than a source. One `<!--PAGE versions-->` and `<!--FOOT versions-->` pair plus one
+line in `SECTIONS`, and `build.py` did the rest. The 2.0 history row already had its page
+count hardcoded, so the `{{PAGE_COUNT}}` trap that bit the goldfish build did not apply.
+
+Page 41 finished at 206px free and page 42 at 318px. Worth knowing for v3: the per-page
+free space list near the top of this file is now out of date for pages 41 onward, and
+several other pages moved by a line or two in this pass. Re-measure before planning a
+restore rather than trusting those numbers.
