@@ -1081,10 +1081,16 @@ plan on page 35.
   the axolotl cost figures there disagree with `axolotl-cost-guide.mdx`, which is the
   researched one and is what pages 5 and 30 use.
 
-### Lovebird 2.0, t3 (Sep 2026)
+### Lovebird 2.1, t3 (Sep 2026)
+
+**At 2.1, eleven of the twelve rows below are closed.** The corrections pass of 4 September
+2026 cross-checked every page against the bird articles published since 2.0 and re-sourced
+what those articles now carry; see `notes/lovebird-v3-notes.md` for the page-by-page record.
+The back matter split into two reference pages and the guide went from 38 pages to 39. Only
+the lovebird feeding guide row is still open.
 
 The first bird package on the t3 template, and a rebuild rather than a new build: 1.0 was
-21 pages on the pre-t3 layout. It came out at 38 pages. The class adaptation note above was
+21 pages on the pre-t3 layout. It came out at 38 pages, and 39 at 2.1. The class adaptation note above was
 rewritten from this build, and `notes/lovebird-v3-notes.md` carries the per-page free space,
 seven undrafted page ideas, and a ranked cut list.
 
@@ -1109,26 +1115,45 @@ what people light for heat and light, not the cold.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Household hazards for pet birds | 8 | Cross-species (birds) | **The single highest-value article the bird set could have, and there is nothing on it anywhere.** A bird's respiratory system makes fumes that merely irritate a person lethal to it. PTFE gas off overheated nonstick cookware at about 536&deg;F (280&deg;C), with acute death often the only sign; irons, self-cleaning ovens, some heaters and hair dryers as the other PTFE sources; aerosols, candles, plug-ins and smoke; zinc from galvanized hardware and lead from curtain weights and mirror backings; and why a cat's mouth is a same-day vet visit with no visible wound. Serves every one of the ten birds on the site |
-| Photoperiod, sleep and hormonal management | 7, 17, 24 | Cross-species (birds) | Nothing, and it is the lever the whole hormonal section turns on. 10 to 12 hours of uninterrupted darkness as routine, light cut to 8 hours a day to break a laying cycle, why a lit living room at midnight is a long summer day to a bird, and the link between sleep debt and feather plucking. `uvb-lighting-complete-guide.mdx` mentions birds 18 times but is a reptile article |
-| Converting a seed eater to pellets | 10 | Cross-species (birds) | Nothing, and it is one of the two or three things every new small-parrot owner has to do. Both VCA schedules (75/25 to 50/50 to 25/75 at 3-day steps, or 90/10 tapering 10% a day to day 10), why you never starve a bird onto pellets, weighing through the change, and the tricks that work. Serves all ten birds |
-| Quarantining a new bird | 20, 29 | Cross-species (birds) | Nothing. 30 days minimum and 45 to 60 in a multi-bird house, a separate room ideally off the same air, separate dishes and tools, established birds first and the new one last, and the PCR panel for PBFD, polyomavirus and psittacosis. The reptile and fish sets logged their own quarantine rows and neither transfers: the pathogens, the airborne route and the test panel are all different |
-| Wing clipping, flighted versus clipped | 15 | Cross-species (birds) | Nothing, and every new owner is asked about it in week one by whoever is selling the trim. Both cases made honestly, blood feathers and why only mature feathers are cut, what a correct trim leaves the bird able to do, that it grows out at the next molt, and that clipping fixes no behavior problem |
-| Reading bird droppings | 25 | Cross-species (birds) | Nothing. The three components (feces, urates, urine), polyuria versus true diarrhea and why the difference matters, the color table, the 20 to 30 minute frequency, and the 24-hour rule. The reptile and fish sets both logged their own version of this row and neither transfers. Cheapest daily health check a bird owner has |
-| Bird power outages, travel and transport | 32 | Cross-species (birds) | Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. The advice inverts: keep feeding, because a 50 g bird has no reserve, and the danger in an outage is the candles, generators and camping heaters people reach for, not the temperature. Plus carrier versus cage, and never leaving a bird in a parked car |
-| Sexing a monomorphic parrot, weight and body condition | 16 | Cross-species (birds) | Nothing. No reliable external difference in most kept species, DNA testing on blood or a feather as the actual answer, weight as this class's vital sign with a gram scale and a perch, keel scoring 1 to 5, and obesity at roughly 20% over ideal. Note `pet-obesity-body-condition-guide.mdx` does **not** transfer, it is the dog and cat 9-point scale |
-| Molt in companion birds | 24 | Cross-species (birds) | Nothing. Symmetrical loss with new feathers up before old ones drop, pin feathers and sheaths, why a molting bird is quieter and touchier, bathing to help, and the three-way differential against plucking and PBFD that owners get wrong constantly |
-| A lovebird feeding guide, at all | 10, 11, 12 | Lovebird | The species has **no feeding guide**, which is the largest single hole behind this package. Five of the ten birds are in the same position (budgie, canary, conure, lovebird, quaker parakeet). Needs the 75 to 80% pellets and 20 to 40% fresh split, the vegetable and fruit tier charts, the never list, treat portioning, and the no-grit point |
-| Chronic egg laying and egg binding, at package depth | 17, 18 | Cross-species (hen-laying birds) | Expand `lovebird-health-issues-guide.mdx`, not a new URL, and consider a cross-species article: budgerigars, cockatiels and lovebirds are the three named most often. It currently has a paragraph on each. Needs the full trigger list, the do-not-pull-the-clutch point with the 21 to 28 day incubation cycle, the 8-hour photoperiod intervention, the hormone injection and implant options, and the egg-binding sign list in order of appearance |
-| Choosing a bird: hand-raised versus parent-raised, and where from | not in 2.0 | Cross-species (birds) | Proposed, from the build rather than from a grep. `lovebird-cost-guide.mdx` names hand-raised versus parent-raised as the decision that sets how tame the bird becomes, then stops. Nothing covers breeder versus shop versus rescue, what to ask, or what a healthy bird looks like in the cage you are buying it from. Both mammal packages needed their own version of this page; birds need it more, because hand-raising has no mammal equivalent |
+| Household hazards for pet birds | 8 | Cross-species (birds) | **Closed by `bird-household-hazards-guide`, Sep 2026.** **The single highest-value article the bird set could have, and there is nothing on it anywhere.** A bird's respiratory system makes fumes that merely irritate a person lethal to it. PTFE gas off overheated nonstick cookware at about 536&deg;F (280&deg;C), with acute death often the only sign; irons, self-cleaning ovens, some heaters and hair dryers as the other PTFE sources; aerosols, candles, plug-ins and smoke; zinc from galvanized hardware and lead from curtain weights and mirror backings; and why a cat's mouth is a same-day vet visit with no visible wound. Serves every one of the ten birds on the site |
+| Photoperiod, sleep and hormonal management | 7, 17, 24 | Cross-species (birds) | **Closed by `bird-photoperiod-sleep-guide`, Sep 2026.** Nothing, and it is the lever the whole hormonal section turns on. 10 to 12 hours of uninterrupted darkness as routine, light cut to 8 hours a day to break a laying cycle, why a lit living room at midnight is a long summer day to a bird, and the link between sleep debt and feather plucking. `uvb-lighting-complete-guide.mdx` mentions birds 18 times but is a reptile article |
+| Converting a seed eater to pellets | 10 | Cross-species (birds) | **Closed by `bird-pellet-conversion-guide`, Sep 2026.** Nothing, and it is one of the two or three things every new small-parrot owner has to do. Both VCA schedules (75/25 to 50/50 to 25/75 at 3-day steps, or 90/10 tapering 10% a day to day 10), why you never starve a bird onto pellets, weighing through the change, and the tricks that work. Serves all ten birds |
+| Quarantining a new bird | 20, 29 | Cross-species (birds) | **Closed by `bird-quarantine-guide`, Sep 2026.** Nothing. 30 days minimum and 45 to 60 in a multi-bird house, a separate room ideally off the same air, separate dishes and tools, established birds first and the new one last, and the PCR panel for PBFD, polyomavirus and psittacosis. The reptile and fish sets logged their own quarantine rows and neither transfers: the pathogens, the airborne route and the test panel are all different |
+| Wing clipping, flighted versus clipped | 15 | Cross-species (birds) | **Closed by `bird-wing-clipping-guide`, Sep 2026.** Nothing, and every new owner is asked about it in week one by whoever is selling the trim. Both cases made honestly, blood feathers and why only mature feathers are cut, what a correct trim leaves the bird able to do, that it grows out at the next molt, and that clipping fixes no behavior problem |
+| Reading bird droppings | 25 | Cross-species (birds) | **Closed by `bird-droppings-guide`, Sep 2026.** Nothing. The three components (feces, urates, urine), polyuria versus true diarrhea and why the difference matters, the color table, the 20 to 30 minute frequency, and the 24-hour rule. The reptile and fish sets both logged their own version of this row and neither transfers. Cheapest daily health check a bird owner has |
+| Bird power outages, travel and transport | 32 | Cross-species (birds) | **Closed by `bird-emergency-travel-guide`, Sep 2026.** Nothing, and `reptile-emergency-plan-guide.mdx` does not transfer. The advice inverts: keep feeding, because a 50 g bird has no reserve, and the danger in an outage is the candles, generators and camping heaters people reach for, not the temperature. Plus carrier versus cage, and never leaving a bird in a parked car |
+| Sexing a monomorphic parrot, weight and body condition | 16 | Cross-species (birds) | **Closed by `bird-sexing-weight-body-condition-guide`, Sep 2026.** Nothing. No reliable external difference in most kept species, DNA testing on blood or a feather as the actual answer, weight as this class's vital sign with a gram scale and a perch, keel scoring 1 to 5, and obesity at roughly 20% over ideal. Note `pet-obesity-body-condition-guide.mdx` does **not** transfer, it is the dog and cat 9-point scale |
+| Molt in companion birds | 24 | Cross-species (birds) | **Closed by `bird-feather-loss-and-molt-guide`, Sep 2026.** Nothing. Symmetrical loss with new feathers up before old ones drop, pin feathers and sheaths, why a molting bird is quieter and touchier, bathing to help, and the three-way differential against plucking and PBFD that owners get wrong constantly |
+| A lovebird feeding guide, at all | 10, 11, 12 | Lovebird | **Still open at 2.1.** The species has **no feeding guide**, which is the largest single hole behind this package. Five of the ten birds are in the same position (budgie, canary, conure, lovebird, quaker parakeet). Needs the 75 to 80% pellets and 20 to 40% fresh split, the vegetable and fruit tier charts, the never list, treat portioning, and the no-grit point |
+| Chronic egg laying and egg binding, at package depth | 17, 18 | Cross-species (hen-laying birds) | **Closed by `bird-chronic-egg-laying-guide`, Sep 2026.** Expand `lovebird-health-issues-guide.mdx`, not a new URL, and consider a cross-species article: budgerigars, cockatiels and lovebirds are the three named most often. It currently has a paragraph on each. Needs the full trigger list, the do-not-pull-the-clutch point with the 21 to 28 day incubation cycle, the 8-hour photoperiod intervention, the hormone injection and implant options, and the egg-binding sign list in order of appearance |
+| Choosing a bird: hand-raised versus parent-raised, and where from | not in 2.0 | Cross-species (birds) | **Closed by `choosing-a-pet-bird-guide`, Sep 2026.** Proposed, from the build rather than from a grep. `lovebird-cost-guide.mdx` names hand-raised versus parent-raised as the decision that sets how tame the bird becomes, then stops. Nothing covers breeder versus shop versus rescue, what to ask, or what a healthy bird looks like in the cage you are buying it from. Both mammal packages needed their own version of this page; birds need it more, because hand-raising has no mammal equivalent |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the whole hazards page 8, the PTFE ignition temperature included; the 8-hour
-photoperiod intervention on pages 7, 17 and 26; the pellet conversion schedules on page 10;
-the vegetable and fruit tier charts on pages 11 and 12; the 40 to 60 g weight range and the
-keel scoring on page 16; the egg-binding sign and treatment detail on page 18; the 45-day
-doxycycline course on page 21; the quarantine periods on pages 20 and 29; the droppings
-reference table on page 25; and the itemized budget on page 28.
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** The package edits are
+done; these are article changes the pass turned up and deliberately left alone, because the
+brief was the packages.
+
+- `bird-emergency-travel-guide.mdx`. Currently reads: "The same sheet notes a budgie's
+  resting heart rate runs about **seven times faster than a human's**, which is the flip
+  side of having so little mass." The sheet it cites, LafeberVet's *Basic Information Sheet
+  for the Parakeet*, gives the budgerigar heart rate as "**Approximately 274**" bpm. Against a
+  typical human resting rate that is roughly **3 to 4.5 times**, not seven. **Fix:** either
+  restate the multiple or drop the comparison and print 274 bpm, which is what the sheet
+  actually supplies. This is an article error rather than a disagreement: Budgie page 19
+  prints 274 and is correct, and the vitals on Cockatiel page 19 and Cockatoo page 23 were
+  checked against the same sheet during this pass and matched it. Lovebird has no vitals
+  page, so this package is unaffected; the row is logged here because this is the block the
+  article's own gap row sits in.
+
+**Numbers with no site source at all.** This list was rewritten at 2.1, because most of it
+now has one. Closed since 2.0: the hazards page 8 and the PTFE figure, the 8-hour photoperiod
+intervention, the pellet conversion schedules, the keel scoring on page 16, the egg-binding
+signs on page 18, the quarantine periods on pages 20 and 29, and the droppings table on
+page 25 are all sourced now, and page 38 cites them. What is still PDF-only: the 40 to 60 g
+weight range on pages 4 and 16, which LafeberVet disagrees with and page 39 now records; the
+vegetable and fruit tier charts on pages 11 and 12, which need the lovebird feeding guide
+that still does not exist; the genetic-component and cage-rearrangement claims on page 17;
+the fair-to-good egg-binding outlook on page 18; the full-spectrum lamp and vitamin D3 claim
+on page 7, which needs an external check; and the itemized budget on page 28.
 
 **Source drift found while building.** Four, and the cost one is the worst in the series so
 far.
@@ -1159,10 +1184,18 @@ far.
   both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
   Worth splitting that field and picking one captive range across the three files.
 
-### Budgie 2.0, t3 (Sep 2026)
+### Budgie 2.1, t3 (Sep 2026)
+
+**At 2.1, five of the eight rows below are closed and a sixth is half closed.** The
+corrections pass of 4 September 2026 found the worst errors in the bird set here: a 24-hour
+no-eating threshold where Lafeber gives 12 for a budgerigar, a quarantine page offering
+prophylactic antibiotics that the public-health compendium discourages, a doxycycline course
+missing its budgerigar exception, and an avian gastric yeast entry that overstated the
+species. See `notes/budgie-v3-notes.md`. The back matter split into two reference pages and
+the guide went from 39 pages to 40.
 
 The second bird package, and a rebuild rather than a new build: 1.0 was 20 pages on the
-pre-t3 layout. It came out at 39 pages. Source is fragments plus a build script in
+pre-t3 layout. It came out at 39 pages, and 40 at 2.1. Source is fragments plus a build script in
 `source/budgie-src/`, and `notes/budgie-v3-notes.md` carries the parked blocks, the
 per-page free space, seven undrafted page ideas and a ranked cut list.
 
@@ -1197,11 +1230,14 @@ photoperiod, sleep and hormonal management (pages 7, 17, 33); converting a seed 
 pellets (page 10); quarantining a new bird (pages 27, 35); wing clipping (page 15);
 reading bird droppings (page 26); bird power outages, travel and transport (page 34);
 molt in companion birds (page 25); and choosing a bird and where from (proposed, page 4).
-Two notes to add to those rows from this build. The **quarantine** row now has a
-citable public-health figure, 30 to 45 days with testing or prophylactic treatment before
-joining a group, from the NASPHV and CDC psittacosis compendium, which also gives the
-45-day doxycycline course and the cleaning precautions; the article should be written
-around that document. And the **pellet conversion** row has a second veterinary schedule
+Every one of those rows is now closed; the slugs are named in the Lovebird block.
+Two notes from this build, one of them a correction. The **quarantine** row's figure was
+logged here as "30 to 45 days with testing or prophylactic treatment," which misread the
+source: the NASPHV and CDC psittacosis compendium gives at least 30 days with testing and
+says routine prophylactic antibiotic treatment is **highly discouraged**, because it can
+harm the bird and breed resistant strains. That error had been copied into page 27 of the
+package and both were fixed at 2.1. The same document gives the 45-day doxycycline course
+**with a 30-day exception for budgerigars**, which page 21 was missing and now carries. And the **pellet conversion** row has a second veterinary schedule
 worth including beside VCA's lovebird one: VCA's budgie page gives four methods rather
 than a percentage ramp (pellets first thing in the morning, spread on a flat surface,
 ground to powder over a moist food, or mixed into the seed with the seed decreasing),
@@ -1209,25 +1245,43 @@ plus the honest line that conversion takes days, weeks or months.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
-| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
-| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Proposed.** Zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
-| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | Nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
-| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
-| Talking and training a budgie | 9, 13 | Budgie | The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
-| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
-| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
+| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Closed by `avian-gastric-yeast-guide`, Sep 2026.** Note the article corrects this row: Merck names budgerigars, parrotlets, lovebirds, cockatiels and finches together, and a peer-reviewed case series found it more often in the cockatiels examined than the budgies, so the "more common in budgerigars than anything else" framing below was an overstatement and was fixed on page 23 at 2.1. Originally logged as:** **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
+| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Still open at 2.1.** **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
+| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Closed by `avian-polyomavirus-guide`, Sep 2026.** ** Originally: zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
+| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | **Closed by `bird-pellet-conversion-guide`, Sep 2026.** ** which carries the Merck goiter material and the Lugol's figure. Originally: nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
+| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Still open at 2.1.** **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
+| Talking and training a budgie | 9, 13 | Budgie | **Half closed at 2.1.** The training half is `parrot-training-guide`; the talking odds are still open. The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
+| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Closed by `bird-colony-aviary-keeping-guide`, Sep 2026.** The article establishes that no verified space-per-bird or sex-ratio figure exists in a citable source, so page 9 at 2.1 carries the principles and deliberately prints no numbers.** Originally: **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
+| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Closed by `bird-body-language-guide`, Sep 2026.** At 2.1 the cues split by meaning: the one-foot against two-foot fluff and the fanned against bobbing tail went to page 19 with the red flags, and beak grinding and eye pinning to page 24, which finally moved beak grinding off page 31.** Originally: **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the MSD cage table figure of 20&times;20&times;30 in and the 3/8 in bar spacing on
-pages 4, 5, 28 and 29; the 25 to 35 g weight range and the keel scoring on page 16; the
-normal heart rate, respiratory rate and body temperature on page 19; the clutch size and
-18-day incubation on page 17; the leuprolide and deslorelin dosing on page 17; the
-ivermectin and moxidectin dosing on page 23; the amphotericin B protocol and the 10 to 80%
-mortality figure on page 23; the Lugol's iodine figure on page 23; the polyomavirus
-timeline and vaccine schedule on page 22; the lead and zinc source lists on page 8; the
-30 to 45 day quarantine and the human psittacosis picture on pages 27 and 21; and the
-whole itemized budget on page 30.
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** As above, an article
+change the pass turned up and left alone.
+
+- `bird-sexing-weight-body-condition-guide.mdx`. The FAQ currently reads: "**Budgies and
+  cockatiels are genuine exceptions with real visual cues**, and mature white cockatoos show
+  a partial one in iris color, but for most commonly kept parrots, DNA testing is the only
+  reliable answer." The body delivers only two of those three: the budgie cere and the
+  cockatoo iris. **Cockatiel dimorphism appears nowhere in the article**, which mentions the
+  species just three times, in the image alt text, in that FAQ sentence, and in the care
+  package block. **Fix:** add the cockatiel section the FAQ promises, the yellow face and
+  orange cheeks against a duller face, the barred underwing and tail, and the point that
+  lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all; or narrow
+  the FAQ claim to budgies. Until one or the other happens, the **Cockatiel** block's sexing
+  row cannot close, which is why it is still open at 1.1 despite the article existing.
+
+**Numbers with no site source at all.** Rewritten at 2.1, because most of this list now has
+one. Closed: the amphotericin B protocol and the 10 to 80% mortality figure, the Lugol's
+iodine figure, the polyomavirus timeline and vaccine schedule, the lead and zinc source
+lists, the quarantine periods and the human psittacosis picture, the keel scoring, and the
+droppings material are all sourced now and cited on page 39. The **25 to 35 g weight range
+also comes off this list**: LafeberVet's parakeet information sheet gives exactly 25 to 35 g,
+and was confirmed during this pass to also match the 274 bpm heart rate, the 60 to 75
+respiratory rate, the 107.1&deg;F body temperature, the 7 to 15 year life span, the 18-day
+incubation and the 4 to 6 egg clutch the package already prints. What is still PDF-only: the
+MSD cage table figure and bar spacing on pages 4, 5, 28 and 29; the leuprolide and deslorelin
+dosing on page 17; the ivermectin and moxidectin dosing on page 23; the neoplasia material on
+pages 20 and 32; the exhibition against pet-type distinction; and the itemized budget on
+page 30.
 
 **Source drift found while building.** Four, and the millet one is the most consequential
 because it concerns the food every budgie owner overfeeds.
@@ -1454,7 +1508,14 @@ between credible sources rather than errors, which is how they are printed.
   $15,000 to $30,000 over a forty-year life, which is the number that should decide the
   purchase and appears nowhere.
 
-### Cockatiel 1.0, t3 (Sep 2026)
+### Cockatiel 1.1, t3 (Sep 2026)
+
+**At 1.1, three of the six rows below are closed.** The corrections pass of 4 September
+2026 fixed a blood-feather instruction that told owners the feather "must be pulled", the
+highest warming figure in the bird set, an unsourced wing-regrowth interval and an invented
+multi-bird quarantine period, and added the nail-trim technique, an avian gastric yeast
+entry and the bird fancier's lung note this species needed. See
+`notes/cockatiel-v2-notes.md`. Still 40 pages.
 
 The third bird package and the first bird package that was a new build rather than a
 rebuild. 40 pages. Source is fragments plus a build script in `source/cockatiel-src/`, and
@@ -1506,24 +1567,22 @@ pet birds behind human cases.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Night frights | 7 | Cockatiel, with a smaller cross-species note | **The highest-value row here and the one most specific to this species.** Cockatiels are far more prone than most parrots to thrashing panics in the dark, and the injuries are real: broken blood feathers, a bleeding cere, a damaged wing, a foot caught in a toy. The site mentions it only in `guides/birds.js`, in two answers, with no article anywhere. Needs the mechanism (birds do not see in the dark, so a startled bird cannot find a perch), the dim night light as the fix, the partial rather than full cage cover, identifying external triggers like sweeping headlights, the calm response when one happens, and the check-for-blood step afterwards. Lafeber's night fright material is the source to build it on |
-| <em>Giardia</em>, and the itch that looks behavioural | 23, 24 | Cross-species (birds, cockatiel-weighted) | **Proposed, and the best differential in the package.** VCA notes cockatiels are specifically susceptible to <em>Giardia</em>, and that infected birds may be intensely itchy and attack themselves, especially under the wings, which then drives a feather-destructive habit that looks entirely behavioural. Nothing on the site connects a plucking cockatiel to a fecal test. Needs the presentation, the loose-stool-or-itch split, that the itch is often the only sign, and the point that a bird plucking under the wings gets a fecal test before anyone rearranges the cage |
-| Sexing a cockatiel, and why the mutations break it | 16 | Cockatiel | The normal grey is genuinely dimorphic after the first molt, which is one of this species' real advantages and appears nowhere on the site. Needs the yellow face and orange cheeks against a duller face, the solid versus barred underwing, the barred tail, and the whistling difference. Then the important half: lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all, a pied bird may keep hen-type barring for life, and a DNA test on a feather is the answer wherever it matters. Slots naturally into a wider cockatiel mutations article |
-| Talking, whistling and what to expect by sex | 9 | Cockatiel | The species is bought for the whistling and the site's coverage is one FAQ answer in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), the fact that hens rarely whistle tunes to any degree, and the trade against getting a pair, which is the decision on page 9 of this package. Related to the budgie block's talking row but not the same article: the behaviour and the odds both differ |
-| Training protocols for a small parrot, step by step | 13, 15 | Cross-species (birds) | **Proposed.** Extends the budgie block's talking row into the thing underneath it. Target training, step up and down, station, and recall, which page 15 of this package promises as the safe alternative to clipping without teaching it. The cockatoo package's page 16 is the large-parrot version and the mechanics are the same; the article should be written once, cross-species, and wired into both |
-| A cockatiel first-aid kit and basic grooming | 23 | Cross-species (birds) | Nothing. Nail trim interval and technique, towel restraint taught with rewards rather than imposed, when an overgrown beak is a liver sign rather than a grooming job, broken blood feather first aid, and the kit list. The reptile and mammal sets logged their own versions and neither transfers, because the restraint and the bleeding risk are both different in a 90 g animal |
+| Night frights | 7 | Cockatiel, with a smaller cross-species note | **Still open at 1.1.** **The highest-value row here and the one most specific to this species.** Cockatiels are far more prone than most parrots to thrashing panics in the dark, and the injuries are real: broken blood feathers, a bleeding cere, a damaged wing, a foot caught in a toy. The site mentions it only in `guides/birds.js`, in two answers, with no article anywhere. Needs the mechanism (birds do not see in the dark, so a startled bird cannot find a perch), the dim night light as the fix, the partial rather than full cage cover, identifying external triggers like sweeping headlights, the calm response when one happens, and the check-for-blood step afterwards. Lafeber's night fright material is the source to build it on |
+| <em>Giardia</em>, and the itch that looks behavioural | 23, 24 | Cross-species (birds, cockatiel-weighted) | **Closed by `bird-feather-loss-and-molt-guide`, Sep 2026.** which carries the VCA passage verbatim; page 23 gained the article's key point at 1.1, that the itch is often the only sign and a clear tray rules nothing out.** Originally: **Proposed, and the best differential in the package.** VCA notes cockatiels are specifically susceptible to <em>Giardia</em>, and that infected birds may be intensely itchy and attack themselves, especially under the wings, which then drives a feather-destructive habit that looks entirely behavioural. Nothing on the site connects a plucking cockatiel to a fecal test. Needs the presentation, the loose-stool-or-itch split, that the itch is often the only sign, and the point that a bird plucking under the wings gets a fecal test before anyone rearranges the cage |
+| Sexing a cockatiel, and why the mutations break it | 16 | Cockatiel | **Still open at 1.1.** `bird-sexing-weight-body-condition-guide` names cockatiels as a visual-sexing exception in one FAQ line and never covers the dimorphism or the mutations, so this row did not close. The normal grey is genuinely dimorphic after the first molt, which is one of this species' real advantages and appears nowhere on the site. Needs the yellow face and orange cheeks against a duller face, the solid versus barred underwing, the barred tail, and the whistling difference. Then the important half: lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all, a pied bird may keep hen-type barring for life, and a DNA test on a feather is the answer wherever it matters. Slots naturally into a wider cockatiel mutations article |
+| Talking, whistling and what to expect by sex | 9 | Cockatiel | **Still open at 1.1.** The species is bought for the whistling and the site's coverage is one FAQ answer in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), the fact that hens rarely whistle tunes to any degree, and the trade against getting a pair, which is the decision on page 9 of this package. Related to the budgie block's talking row but not the same article: the behaviour and the odds both differ |
+| Training protocols for a small parrot, step by step | 13, 15 | Cross-species (birds) | **Closed by `parrot-training-guide`, Sep 2026.** written once and cross-species, as this row asked, and wired into both this package and the cockatoo's.** Originally: **Proposed.** Extends the budgie block's talking row into the thing underneath it. Target training, step up and down, station, and recall, which page 15 of this package promises as the safe alternative to clipping without teaching it. The cockatoo package's page 16 is the large-parrot version and the mechanics are the same; the article should be written once, cross-species, and wired into both |
+| A cockatiel first-aid kit and basic grooming | 23 | Cross-species (birds) | **Closed by `bird-first-aid-kit-and-grooming-guide`, Sep 2026.** At 1.1 the nail-trim technique went onto page 6 and the kit moved to page 29. Note the article establishes there is no verified trim interval, so none is printed.** Originally: nothing. Nail trim interval and technique, towel restraint taught with rewards rather than imposed, when an overgrown beak is a liver sign rather than a grooming job, broken blood feather first aid, and the kit list. The reptile and mammal sets logged their own versions and neither transfers, because the restraint and the bleeding risk are both different in a 90 g animal |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the whole hazards page 8 including the PTFE ignition temperature and the lead and
-zinc source lists; the night fright material on page 7; the 8-hour photoperiod intervention
-on pages 7, 17 and 29; the five pellet conversion methods on page 10; the vegetable and
-fruit tier charts on pages 11 and 12; the 80 to 125 g weight range, the dimorphism and the
-keel scoring on page 16; the incubation and clutch figures and the do-not-pull-the-clutch
-rule on page 17; the egg-binding sign list and treatment sequence on page 18; the body
-temperature, heart rate and respiratory rate on page 19; the PBFD detail on page 22; the
-45-day doxycycline course and the human illness picture on page 21; the <em>Giardia</em>
-material on page 23; the 30 to 45 day quarantine on page 27; the droppings reference table
-on page 26; and the whole itemized budget on page 30.
+**Numbers with no site source at all.** Rewritten at 1.1, because most of this list now has
+one. Closed: the hazards page and the PTFE, lead and zinc material, the 8-hour photoperiod
+intervention, the pellet conversion methods, the keel scoring, the egg-binding signs, the
+<em>Giardia</em> material, the quarantine period, and the droppings table are all sourced now
+and cited on page 39. What is still PDF-only: the night fright material on page 7, which is
+the highest-value row still open; the 80 to 125 g weight range and the dimorphism on page 16;
+the vegetable and fruit tier charts on pages 11 and 12; the incubation and clutch figures on
+page 17; the body temperature, heart rate and respiratory rate on page 19; and the itemized
+budget on page 30.
 
 **Source drift found while building.** Four, and the bar spacing one is a safety figure.
 
@@ -1564,10 +1623,17 @@ carrier, a sleep cage or cover, and a real first veterinary visit rather than an
 annual check. The MDX figures are worth revisiting, and the annual one specifically, since
 its own $60 to $100 vet line is below the $85 to $200 the same article gives for an exam.
 
-### Cockatoo 1.0, t3 (Sep 2026)
+### Cockatoo 1.1, t3 (Sep 2026)
+
+**At 1.1, five of the seven rows below are closed.** The corrections pass of 4 September
+2026 found one error that mattered more than the rest: page 31 called a rehomed bird's
+withdrawal grief, where Merck treats reduced vocalizing and interaction as potential signs
+of illness, so the page was telling a new owner to wait out something that wants a vet.
+See `notes/cockatoo-v2-notes.md`. The back matter went to three reference pages and the
+guide went from 44 pages to 45.
 
 The fourth bird package, the first large parrot in the series, and the build that produced
-the second bird row in the class table above. 44 pages. Source is fragments plus a build
+the second bird row in the class table above. 44 pages, and 45 at 1.1. Source is fragments plus a build
 script in `source/cockatoo-src/`, over five page files, and `notes/cockatoo-v2-notes.md`
 carries the parked blocks, the per-page free space, seven undrafted page ideas and a ranked
 cut list.
@@ -1607,24 +1673,25 @@ section, because this beak goes through a cable a small parrot could not dent.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Feather dust, air quality and bird fancier's lung | 10 | Cross-species (birds, cockatoo and African grey weighted) | **The highest-value row here, and there is nothing on it anywhere.** Powder-down species produce enough keratin dust to film every surface in a room daily, and prolonged exposure to avian proteins in that dust and in dried droppings causes hypersensitivity pneumonitis in people, with progressive pulmonary fibrosis as the serious complication and removal of exposure as part of the treatment. Needs the control hierarchy (HEPA purifier, bathing the bird two or three times a week, damp-wiping rather than dry dusting, hard floors, not the bedroom), the point that dust is also the PBFD transmission route, and the advice to tell a doctor you keep a parrot if you develop an unexplained cough. Serves cockatoo, African grey and cockatiel, and it is the page a buyer most needs before purchase rather than after |
-| Succession and estate planning for a long-lived pet | 31 | Cross-species (large parrots, tortoises) | **Proposed, and it reaches well past birds.** A cockatoo lives 30 to 45 years and a Moluccan up to 70; a Russian tortoise block in this same file already notes a forty-year animal costing $15,000 to $30,000. The site has nothing on what happens to either when the owner does not outlive it. Needs the named guardian who has actually agreed, the sanctuary fallback contacted in advance, money attached to the animal because inheriting one without funds is inheriting a bill, the will clause since pets pass with the estate as property, the care file, and a rehoming section that says go to a rescue rather than a classified ad and never advertise free to a good home |
-| Training as the primary intervention for a large parrot | 16 | Cross-species (large parrots) | **Proposed, and it has the best evidence behind it of anything in the bird set.** The site's cockatoo enrichment guide reports the sulphur-crested study finding that training sessions beat medication, socialization and feeding enrichment, then stops. An article should teach the thing: ten to fifteen minutes twice a day, positive reinforcement with a marker, ending while the bird still wants more, rotated between everyone in the household, and the behaviour ladder of target, step up and down, station, recall, voluntary crate entry and towel acceptance. The cockatiel block logs the small-parrot version of the same gap; **write one cross-species article, not two**, since the mechanics are identical and only the reward and the bite risk scale |
-| Over-bonding and building independence | 18 | Cross-species (large parrots) | Extends rather than duplicates the site's screaming and plucking article, which explains the behaviour but not the prevention. Needs the specific first-weeks warning, that intense one-on-one time early cements an anxious dependency rather than a healthy attachment, and then the protocol: several people in rotation, rewarding self-directed activity, leaving the room constantly and briefly, a play stand that is genuinely good to be on, low-key departures, and the shoulder question. Expand `cockatoo-screaming-feather-plucking-explained.mdx` rather than opening a new URL |
-| Sexing a monomorphic parrot, iris colour and DNA | 21 | Cross-species (birds) | Extends the lovebird block's sexing row with the cockatoo half, which the lovebird build did not need. Mature white <em>Cacatua</em> hens often show a reddish or chestnut iris against the male's dark brown to black, and it is useful, partial, species-dependent, lighting-dependent and absent in juveniles. DNA on a blood spot or a plucked feather remains the answer. The lovebird row should absorb this rather than a second row being opened |
-| A large-parrot noise reference, with a measured figure | 5, 19 | Cross-species (large parrots) | **Proposed, and it is the one hole in this package that a source could have filled and did not.** Page 19 handles screaming honestly but prints no measured sound level, because none was found in a source worth citing. Noise is one of the top reasons a cockatoo is rehomed and it is the question a buyer in an apartment most needs answered. A sound-pressure figure from an acoustic or veterinary source, plus the dawn-and-dusk contact-calling pattern and the fact that quieting the bird is not an achievable goal, would make the housing decision concrete rather than adjectival |
-| Working with a rescue or rehomed parrot | 6, 31 | Cross-species (large parrots) | **Proposed.** The package recommends adoption on page 6 and then teaches nothing about it. An adult bird with a plucking history, an existing bond to someone else, and unknown handling is a different starting position from a weaned baby, and it is the position an increasing share of large-parrot owners are actually in. Needs the transition period, the grief behaviours, what to ask a rescue, and what a rescue will ask you |
+| Feather dust, air quality and bird fancier's lung | 10 | Cross-species (birds, cockatoo and African grey weighted) | **Closed by `bird-feather-dust-air-quality-guide`, Sep 2026.** The cockatiel package gained a note from it at 1.1 too, since the article's scope names cockatiels and only this block had logged the row.** Originally: **The highest-value row here, and there is nothing on it anywhere.** Powder-down species produce enough keratin dust to film every surface in a room daily, and prolonged exposure to avian proteins in that dust and in dried droppings causes hypersensitivity pneumonitis in people, with progressive pulmonary fibrosis as the serious complication and removal of exposure as part of the treatment. Needs the control hierarchy (HEPA purifier, bathing the bird two or three times a week, damp-wiping rather than dry dusting, hard floors, not the bedroom), the point that dust is also the PBFD transmission route, and the advice to tell a doctor you keep a parrot if you develop an unexplained cough. Serves cockatoo, African grey and cockatiel, and it is the page a buyer most needs before purchase rather than after |
+| Succession and estate planning for a long-lived pet | 31 | Cross-species (large parrots, tortoises) | **Closed by `long-lived-pet-succession-planning-guide`, Sep 2026.** which reaches tortoises as this row predicted, and supplied the pet trust law position page 31 gained at 1.1.** Originally: **Proposed, and it reaches well past birds.** A cockatoo lives 30 to 45 years and a Moluccan up to 70; a Russian tortoise block in this same file already notes a forty-year animal costing $15,000 to $30,000. The site has nothing on what happens to either when the owner does not outlive it. Needs the named guardian who has actually agreed, the sanctuary fallback contacted in advance, money attached to the animal because inheriting one without funds is inheriting a bill, the will clause since pets pass with the estate as property, the care file, and a rehoming section that says go to a rescue rather than a classified ad and never advertise free to a good home |
+| Training as the primary intervention for a large parrot | 16 | Cross-species (large parrots) | **Closed by `parrot-training-guide`, Sep 2026.** written once and cross-species as this row insisted, and wired into both this package and the cockatiel's.** Originally: **Proposed, and it has the best evidence behind it of anything in the bird set.** The site's cockatoo enrichment guide reports the sulphur-crested study finding that training sessions beat medication, socialization and feeding enrichment, then stops. An article should teach the thing: ten to fifteen minutes twice a day, positive reinforcement with a marker, ending while the bird still wants more, rotated between everyone in the household, and the behaviour ladder of target, step up and down, station, recall, voluntary crate entry and towel acceptance. The cockatiel block logs the small-parrot version of the same gap; **write one cross-species article, not two**, since the mechanics are identical and only the reward and the bite risk scale |
+| Over-bonding and building independence | 18 | Cross-species (large parrots) | **Still open at 1.1.** `parrot-training-guide` supports the rotation half through VCA, but nothing covers the prevention protocol. Extends rather than duplicates the site's screaming and plucking article, which explains the behaviour but not the prevention. Needs the specific first-weeks warning, that intense one-on-one time early cements an anxious dependency rather than a healthy attachment, and then the protocol: several people in rotation, rewarding self-directed activity, leaving the room constantly and briefly, a play stand that is genuinely good to be on, low-key departures, and the shoulder question. Expand `cockatoo-screaming-feather-plucking-explained.mdx` rather than opening a new URL |
+| Sexing a monomorphic parrot, iris colour and DNA | 21 | Cross-species (birds) | **Closed by `bird-sexing-weight-body-condition-guide`, Sep 2026.** which absorbed the cockatoo half as this row asked, and supplied the pale grey juvenile iris page 21 gained at 1.1.** Extends the lovebird block's sexing row with the cockatoo half, which the lovebird build did not need. Mature white <em>Cacatua</em> hens often show a reddish or chestnut iris against the male's dark brown to black, and it is useful, partial, species-dependent, lighting-dependent and absent in juveniles. DNA on a blood spot or a plucked feather remains the answer. The lovebird row should absorb this rather than a second row being opened |
+| A large-parrot noise reference, with a measured figure | 5, 19 | Cross-species (large parrots) | **Still open, and now known to be unfillable from public sources.** `choosing-a-pet-bird-guide` searched for a measured sound-pressure figure and reports that none exists from an acoustic or veterinary source worth citing, and that the decibel numbers in circulation trace back to no study. The package still prints none, which is now a documented position rather than a gap. Originally: **Proposed, and it is the one hole in this package that a source could have filled and did not.** Page 19 handles screaming honestly but prints no measured sound level, because none was found in a source worth citing. Noise is one of the top reasons a cockatoo is rehomed and it is the question a buyer in an apartment most needs answered. A sound-pressure figure from an acoustic or veterinary source, plus the dawn-and-dusk contact-calling pattern and the fact that quieting the bird is not an achievable goal, would make the housing decision concrete rather than adjectival |
+| Working with a rescue or rehomed parrot | 6, 31 | Cross-species (large parrots) | **Closed by `rehomed-parrot-guide`, Sep 2026.** and it corrected this package rather than only extending it: page 31 called a rehomed bird's withdrawal grief, where Merck treats reduced vocalizing and interaction as potential signs of illness. Fixed at 1.1.** Originally: **Proposed.** The package recommends adoption on page 6 and then teaches nothing about it. An adult bird with a plucking history, an existing bond to someone else, and unknown handling is a different starting position from a weaned baby, and it is the position an increasing share of large-parrot owners are actually in. Needs the transition period, the grief behaviours, what to ask a rescue, and what a rescue will ask you |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the whole feather dust and bird fancier's lung page 10; the weights by species and
+**Numbers with no site source at all.** Rewritten at 1.1, because most of this list now has
+one. Closed: the feather dust and bird fancier's lung page, the iris sexing and keel scoring,
+the PTFE, lead and zinc material, the 8-hour photoperiod intervention, the egg-binding signs,
+the quarantine period, the droppings table, and the whole of the succession page are all
+sourced now and cited on pages 43 and 44. What is still PDF-only: the weights by species and
 the life span band on pages 4, 6 and 21; the sexual maturity, incubation, clutch and weaning
 figures on pages 4, 17 and 22; the body temperature, heart rate and respiratory rate on page
-23; the iris sexing and the keel scoring on page 21; the PTFE ignition temperature and the
-lead and zinc source lists on page 11; the 8-hour photoperiod intervention on pages 9 and 22;
-the egg-binding sign list and treatment sequence on page 22; the 45-day doxycycline course
-and the human psittacosis picture on page 27; the PBFD form and incubation detail on page 25;
-the 30 to 45 day quarantine on page 29; the droppings reference table on page 28; the whole
-of the succession page 31; and the itemized budget on page 34.
+23; the 45-day doxycycline course on page 27; the PBFD form and incubation detail on page 25;
+and the itemized budget on page 34. Plus the measured noise figure on pages 5 and 19, which
+the package deliberately does not print and which `choosing-a-pet-bird-guide` has since
+confirmed does not exist in a citable source.
 
 **Source drift found while building.** Four.
 
