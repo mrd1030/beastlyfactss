@@ -186,3 +186,111 @@ heart and respiratory rate, bite risk, noise, cost and the whole behavioural sec
 different animals, and the temptation to carry a number across was strongest exactly where
 it would have been most wrong. Build a large parrot from the large-parrot sources, and use
 the small-parrot package only for page shape.
+
+---
+
+## 1.1 corrections pass, 4 September 2026
+
+Cross-check of the whole package against the bird articles published since this
+edition: the fifteen in commit `42fd86f` plus the five cross-species bird guides
+that landed the day before it. Guide version 1.0 to 1.1, template still t3,
+44 pages to 45.
+
+### The one that mattered most
+
+**Page 31 called a rehomed bird's withdrawal grief.** The line read: "A rehomed
+cockatoo commonly screams and refuses food and handling for weeks. That is grief,
+not a character flaw." `rehomed-parrot-guide` refuses that attribution
+deliberately, and for a reason worth reading twice: the Merck Veterinary Manual
+lists a bird **not vocalizing in the morning** and showing **decreased
+interaction with family members** as changes that "should be considered potential
+signs of illness." A bird that goes quiet and off its food after a move is
+showing the exact pattern an avian vet wants to see, and telling the new owner it
+is grief is telling them to wait it out. The page now describes what the bird
+does rather than what it feels, routes it to a vet check first, and carries VCA's
+first-exam window of 1 to 2 weeks after acquiring any bird.
+
+### The other errors
+
+- **Page 27, blood feather.** "Gentle pressure with gauze and cornstarch; if it does not stop in a few minutes the feather must be pulled." Corrected to firm steady pressure, powder on the exposed broken tip and never into an open follicle, a vet at two to three minutes, and VCA's actual position that pulling one at home is not recommended and is a last resort even in clinic.
+- **Page 21, weighing.** Weekly, against Lafeber's daily before the first feed. The page already said to weigh daily for the first fortnight, so it contradicted itself. Now daily throughout, citing Orosz.
+- **Page 29, quarantine.** The 45 to 60 day multi-bird figure was invented. Replaced with Merck's 90 days with testing.
+- **Page 43, the bird fancier's lung source line** cited "case reports in psittacine keepers." The case report actually behind that material, Kila et al. in *Cureus* (2025), documents a **pigeon** keeper. The line now says so, and credits the NHLBI as what generalizes the risk to pet birds in the home.
+- **Page 16, training session length.** A flat "ten to fifteen minutes, twice a day" where VCA describes a ramp: five to ten minutes, once or twice a day, working up to two twenty-minute sessions once the bird is engaged. Now printed as the ramp.
+- **Page 44's unsourced list was stale.** It named seven things the site had no article for. Six of them now have one. Rewritten to say what is genuinely still PDF-only: the itemized budget, the weights and weaning ages by species, and the noise figure this book deliberately does not print.
+
+### The noise row, deliberately still open
+
+`choosing-a-pet-bird-guide` went looking for a measured sound-pressure figure for
+a large parrot and reported that it could not find one from an acoustic or
+veterinary source worth citing, and that the decibel numbers circulating online
+trace back to nothing. That is the same conclusion page 19 reached during the
+original build. **No figure was added**, and the row stays open in the gap log.
+The article's finding is worth more than a number would have been: it means the
+absence is real rather than a gap in this book's research.
+
+### Added
+
+- **Page 6**, the hand-raised against parent-raised tradeoff from Schmid, Doherr and Steiger (2006), which is the one thing this package's own source page said the site named and then stopped at.
+- **Page 10**, the NHLBI's point that pet birds in the home are a risk factor in their own right rather than only occupational exposure, and that most diagnoses fall between 50 and 70.
+- **Page 21**, LafeberVet's pale grey juvenile iris, which is the reason the sexing cue fails in a young bird, and the Sakas citation replaced with LafeberVet's cockatoo sheet, a stronger source that carries the same claim.
+- **Page 31**, that companion animals are legally property and so cannot inherit directly, and that as of 2026 all 50 states and DC have pet trust laws, from the Michigan State Animal Legal & Historical Center.
+- Page 9: Merck's over-12-hour photoperiod threshold and LafeberVet's 8 to 10 hour range. Page 11: lead's sweet taste and electroplated against hot-dipped zinc. Page 20: Merck's four to seven outermost primaries with secondaries untouched. Page 22: VCA's 48-hour egg marker. Page 24: Merck's partial second molt. Page 28: polyuria as the first sign of zinc kidney damage, and whole seed cross-referenced to avian gastric yeast. Page 38: the CDC's 20 feet for a generator and a carbon monoxide detector. Page 45: VCA's 25 to 45 years with the larger species at 70 to 80-plus, added to the life span disagreement.
+
+### Fitting it: 44 pages to 45
+
+Four pages went over. The head CSS on this file is the tightest in the series and
+there was nothing left to reclaim there, so this was a content and layout problem
+rather than a typography one.
+
+The sources page overflowed by 271 px even after condensing rows, and it already
+had a companion page, so **the back matter went to three: page 43 Sources, page 44
+Sources Continued, and page 45 Where the Sources Disagree**. That pushed exactly
+one existing page number, the old 44 to 45, which the contents, the badge, the
+colophon and both in-text cross references were updated for. 45 sits inside the
+42-to-45 band the class table gives a large parrot.
+
+The hand-raising note took three attempts to place. As a callout it was 131 px and
+overflowed page 6; moved to page 18, which it references, it overflowed there too,
+because what sets that page's floor is a table rather than prose. Rewritten as a
+plain paragraph on page 6, next to the rescue-against-breeder table where a buyer
+is actually making the decision, it fits and reads better than the callout did.
+
+Final measurement: all 45 pages clear, minimum 15 px free.
+
+### The warming figure, caught on review
+
+The 1.1 pass was supposed to put the same sick-bird warming wording on all four
+packages. It went onto Lovebird, Budgie and Cockatiel and was **missed here
+entirely**, which review caught. This package had no owner-facing warming figure
+anywhere: page 22 named supplemental heat only inside the vet's treatment
+sequence, page 27 had a controllable heat source in the kit list with no target,
+and the page 33 card had a room-temperature row but no sick-bird row. So the one
+package whose bird is large enough for a long drive in a carrier never said what
+temperature to hold it at.
+
+Added at **page 22**, owner-facing, matching the other three packages' egg pages:
+80 to 85 F (27 to 29 C) in a dark quiet carrier, inside LafeberVet's 80 to 90 F
+range under supplemental heat with VCA's 75 to 80 F for a recovering bird, plus
+the overheating signs and a do-not-massage line. Added at **page 33** as a card
+row, so the figure now reads the same on the care page and the emergency card,
+which is what the rule asks for. Page 27 was left pointing at neither: it lists a
+controllable heat source and the two pages above carry the number, and a third
+copy cost more space than it earned.
+
+While fitting it, the cat-bite row on page 27 turned out to still say bacteria
+"kill birds within about 48 hours". That correction had gone onto Budgie and
+Cockatiel and was missed here too. It now reads <em>Pasteurella</em> turning
+septic within hours, matching the other three.
+
+Re-measured and re-rendered over the same 1.1 file. All 45 pages clear, minimum
+15 px.
+
+### Still only in this PDF
+
+The over-bonding row stays open: `parrot-training-guide` supports the rotation
+half through VCA, but nothing covers the prevention protocol, and the gap log
+still points at expanding `cockatoo-screaming-feather-plucking-explained.mdx`
+rather than opening a new URL. The weaning window of 90 to 150 days on page 6, the
+weights by species on pages 4 and 6, and the itemized budget on page 34 also have
+no article behind them.
