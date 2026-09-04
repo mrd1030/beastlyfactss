@@ -15,6 +15,7 @@ version are different numbers".
 | `Ball_Python_Care_Package_v2.pdf` | 2.1 | Baseline humidity of 55 to 70%, corrected to the 55 to 65% ambient figure the ReptiFiles and Zen Habitats care sheets give |
 | `Betta_Fish_Care_Package_v1.pdf` | 2.0 | Feeding window of about 60 seconds, since corrected to 1 to 2 minutes, and running costs of $6 to $20 a month that understated heater electricity |
 | `Betta_Fish_Care_Package_v2.pdf` | 2.1 | The shared t3 spacing rules were missing from the head of this file. Adding them changed no words and no type sizes |
+| `Lovebird_Care_Package_v2.0.pdf` | 2.1 | Weighing given as weekly against Lafeber's daily; blood-feather first aid given as gentle pressure with pulling as the next step, against VCA's firm pressure and no pulling at home; a general 21 to 28 day incubation where LafeberVet gives 18 to 24 for the species; and three different sick-bird warming figures across pages 18, 21 and 27 |
 | `Tarantula_Care_Package_v2.pdf` | 2.1 | A layout-only tightening pass across all 43 pages that changed no words and no type sizes. Minimum page headroom went from 19px to 31px |
 | `BeastlyFacts-Rabbit-Care-Package.pdf`, `BeastlyFacts-Tarantula-Care-Package.pdf` | 2.0 | Not in this folder, see the note below. 22 and 21 pages on the old parallel layout, rebuilt at 39 and 43 pages on t3 |
 
