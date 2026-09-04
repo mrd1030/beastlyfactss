@@ -136,6 +136,24 @@
       "image": "/assets/guides/zebra-finch.jpg"
     },
     {
+      "id": "american-shorthair",
+      "name": "American Shorthair",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Beginner",
+      "guideId": "cat-american-shorthair",
+      "image": "/assets/guides/cat-american-shorthair.jpg"
+    },
+    {
+      "id": "bengal",
+      "name": "Bengal",
+      "emoji": "🐈",
+      "category": "Cats",
+      "difficulty": "Advanced",
+      "guideId": "cat-bengal",
+      "image": "/assets/guides/cat-bengal.jpg"
+    },
+    {
       "id": "domestic-shorthair",
       "name": "Domestic Shorthair",
       "emoji": "🐱",
@@ -154,13 +172,13 @@
       "image": "/assets/guides/cat-maine-coon.jpg"
     },
     {
-      "id": "siamese",
-      "name": "Siamese",
+      "id": "persian",
+      "name": "Persian",
       "emoji": "🐱",
       "category": "Cats",
       "difficulty": "Intermediate",
-      "guideId": "cat-siamese",
-      "image": "/assets/guides/cat-siamese.jpg"
+      "guideId": "cat-persian",
+      "image": "/assets/guides/cat-persian.jpg"
     },
     {
       "id": "ragdoll",
@@ -172,49 +190,67 @@
       "image": "/assets/guides/cat-ragdoll.jpg"
     },
     {
-      "id": "bengal",
-      "name": "Bengal",
-      "emoji": "🐈",
+      "id": "scottish-fold",
+      "name": "Scottish Fold",
+      "emoji": "🐱",
       "category": "Cats",
       "difficulty": "Advanced",
-      "guideId": "cat-bengal",
-      "image": "/assets/guides/cat-bengal.jpg"
+      "guideId": "cat-scottish-fold",
+      "image": "/assets/guides/cat-scottish-fold.jpg"
     },
     {
-      "id": "persian",
-      "name": "Persian",
+      "id": "siamese",
+      "name": "Siamese",
       "emoji": "🐱",
       "category": "Cats",
       "difficulty": "Intermediate",
-      "guideId": "cat-persian",
-      "image": "/assets/guides/cat-persian.jpg"
+      "guideId": "cat-siamese",
+      "image": "/assets/guides/cat-siamese.jpg"
     },
     {
-      "id": "labrador",
-      "name": "Labrador Retriever",
-      "emoji": "🐶",
-      "category": "Dogs",
-      "difficulty": "Beginner",
-      "guideId": "dog-labrador",
-      "image": "/assets/guides/dog-labrador-retriever.jpg"
+      "id": "sphynx",
+      "name": "Sphynx",
+      "emoji": "🐱",
+      "category": "Cats",
+      "difficulty": "Advanced",
+      "guideId": "cat-sphynx",
+      "image": "/assets/guides/cat-sphynx.jpg"
     },
     {
-      "id": "golden-retriever",
-      "name": "Golden Retriever",
-      "emoji": "🐶",
-      "category": "Dogs",
-      "difficulty": "Beginner",
-      "guideId": "dog-golden-retriever",
-      "image": "/assets/guides/dog-golden-retriever.jpg"
-    },
-    {
-      "id": "german-shepherd",
-      "name": "German Shepherd",
+      "id": "beagle",
+      "name": "Beagle",
       "emoji": "🐕",
       "category": "Dogs",
       "difficulty": "Intermediate",
-      "guideId": "dog-german-shepherd",
-      "image": "/assets/guides/dog-german-shepherd.jpg"
+      "guideId": "dog-beagle",
+      "image": "/assets/guides/dog-beagle.jpg"
+    },
+    {
+      "id": "border-collie",
+      "name": "Border Collie",
+      "emoji": "🐕",
+      "category": "Dogs",
+      "difficulty": "Advanced",
+      "guideId": "dog-border-collie",
+      "image": "/assets/guides/dog-border-collie.jpg"
+    },
+    {
+      "id": "bulldog",
+      "name": "Bulldog",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-bulldog",
+      "image": "/assets/guides/dog-bulldog.jpg"
+    },
+    {
+      "id": "dachshund",
+      "name": "Dachshund",
+      "emoji": "🌭",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-dachshund",
+      "image": "/assets/guides/dog-dachshund.jpg"
     },
     {
       "id": "french-bulldog",
@@ -226,13 +262,40 @@
       "image": "/assets/guides/dog-french-bulldog.jpg"
     },
     {
-      "id": "border-collie",
-      "name": "Border Collie",
+      "id": "german-shepherd",
+      "name": "German Shepherd",
+      "emoji": "🐕",
+      "category": "Dogs",
+      "difficulty": "Intermediate",
+      "guideId": "dog-german-shepherd",
+      "image": "/assets/guides/dog-german-shepherd.jpg"
+    },
+    {
+      "id": "golden-retriever",
+      "name": "Golden Retriever",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Beginner",
+      "guideId": "dog-golden-retriever",
+      "image": "/assets/guides/dog-golden-retriever.jpg"
+    },
+    {
+      "id": "labrador",
+      "name": "Labrador Retriever",
+      "emoji": "🐶",
+      "category": "Dogs",
+      "difficulty": "Beginner",
+      "guideId": "dog-labrador",
+      "image": "/assets/guides/dog-labrador-retriever.jpg"
+    },
+    {
+      "id": "rottweiler",
+      "name": "Rottweiler",
       "emoji": "🐕",
       "category": "Dogs",
       "difficulty": "Advanced",
-      "guideId": "dog-border-collie",
-      "image": "/assets/guides/dog-border-collie.jpg"
+      "guideId": "dog-rottweiler",
+      "image": "/assets/guides/dog-rottweiler.jpg"
     },
     {
       "id": "siberian-husky",

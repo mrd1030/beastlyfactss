@@ -8,8 +8,9 @@ import { allGuides } from '@/lib/data/guides';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
-import { mdxPosts } from '@/lib/mdxPosts';
+import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
+import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import SaveButton from '@/components/shared/SaveButton';
 import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
@@ -85,14 +86,14 @@ export default function EncyclopediaAnimal() {
   // Mixed in with husbandry articles they read as one more thing to get round
   // to, when they are the one link on the page that can tell a reader they
   // cannot legally keep the animal at all.
-  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, mdxPosts).map(slug => mdxPosts.find(p => p._id === slug)).filter(Boolean);
+  const allRelatedArticles = getRelatedArticleSlugs(animal.guideId, relatedPosts).map(slug => relatedPosts.find(p => p._id === slug)).filter(Boolean);
   const legalArticles = allRelatedArticles.filter(a => a.category === 'Legal');
   const relatedArticles = allRelatedArticles.filter(a => a.category !== 'Legal');
   const diffClass = difficultyColor[animal.difficulty] || 'text-muted-foreground bg-muted';
   const bio = animal.bio || {};
   const ogImage = guide?.image
     ? `https://beastlyfacts.com${guide.image}`
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : 'https://beastlyfacts.com/assets/og-default.jpg';
   // og:image:width/height must match the actual image's real size - Helmet
   // has no way to "unset" a tag it doesn't declare, so leaving these fixed
   // at 1200x630 would silently misdeclare every animal photo's real dimensions.
@@ -269,7 +270,7 @@ export default function EncyclopediaAnimal() {
                     <span className="text-2xl flex-shrink-0">{guide.emoji}</span>
                     <div>
                       <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">
-                        {guide.name} Care Guide
+                        {`${guide.name} Care Guide`}
                       </p>
                       <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed">{guide.tagline}</p>
                     </div>
@@ -340,7 +341,14 @@ export default function EncyclopediaAnimal() {
                 </p>
                 <div className="space-y-3">
                   {relatedArticles.map(article => (
-                    <Link key={article._id} to={`/blog/${article.slug.current}/`} className="group block">
+                    // Same as GuideDetail: the encyclopedia page builds this
+                    // list from animal.guideId, so that is the thread to carry.
+                    <Link
+                      key={article._id}
+                      to={`/blog/${article.slug.current}/`}
+                      onClick={() => rememberDeepDiveGuide(animal.guideId)}
+                      className="group block"
+                    >
                       <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
                         {(article.emoji ? `${article.emoji} ` : '') + article.title}
                       </p>

@@ -95,7 +95,7 @@
       "NE"
     ],
     "remaining": 0,
-    "note": "All 51 states and DC have been researched, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 25 of the 51 have now been read for all 35 animals. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
+    "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got.",
     "perAnimal": {
       "tarantula": {
         "checked": 25,

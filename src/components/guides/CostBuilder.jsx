@@ -66,7 +66,7 @@ function ItemLabel({ text, textClassName, onSelectProduct }) {
             title="See similar products"
             className="inline-flex items-center gap-0.5 text-[10px] text-muted-foreground/70 hover:text-secondary transition-colors flex-shrink-0"
           >
-            +{alternates.length} more
+            {`+${alternates.length} more`}
             <ChevronDown className={`w-2.5 h-2.5 transition-transform ${showAlts ? 'rotate-180' : ''}`} aria-hidden="true" />
           </button>
         )}

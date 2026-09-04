@@ -2,16 +2,32 @@ import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import { encyclopediaCategories, encyclopediaAnimals } from '@/lib/data/encyclopedia';
+import { encyclopediaCategories } from '@/lib/data/encyclopedia/meta';
 import { seededShuffle } from '@/lib/utils/seededShuffle';
 import LocalImage from '@/components/shared/LocalImage';
+// Per-category counts only need each animal's category, which the generated
+// index carries. The full data barrel is 120KB and was loading on the homepage
+// for the sake of eleven numbers.
+import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
+const encyclopediaAnimals = encyclopediaIndex.animals;
 
 const PREVIEW_COUNT = 8;
+
+// Pinned to the front of the preview, never rotated out. With 8 of 11 tiles
+// shown, a plain shuffle hid at least one of these on most days - and Dogs and
+// Cats are the two categories visitors are most likely to arrive looking for.
+const PINNED = ['Dogs', 'Cats'];
 
 const categoryPreview = encyclopediaCategories.map(cat => ({
   ...cat,
   count: encyclopediaAnimals.filter(a => a.category === cat.name).length,
 }));
+
+const pinnedCategories = PINNED
+  .map(name => categoryPreview.find(cat => cat.name === name))
+  .filter(Boolean);
+const rotatingCategories = categoryPreview.filter(cat => !PINNED.includes(cat.name));
+const ROTATING_SLOTS = PREVIEW_COUNT - pinnedCategories.length;
 
 // A rotating subset, not the full category list: every category rendered a
 // 640x480 "card" image up front (loading="lazy" or not - Lighthouse's mobile
@@ -20,12 +36,15 @@ const categoryPreview = encyclopediaCategories.map(cat => ({
 // seeded-shuffle idiom as CategoryBrowse.jsx/HeroSection.jsx) rather than a
 // fixed slice, so this stays a changing preview - not a static, permanently-
 // identical-every-visit subset - while /encyclopedia/ still has the full grid.
-// Fixed default (first PREVIEW_COUNT, unshuffled) on the hydration-critical
-// first render, upgraded to the real day's rotation in an effect: shuffling
-// by new Date().getDate() inline here would reintroduce the exact hydration
-// mismatch bug (React errors #418/#423) already fixed elsewhere on this page.
+// PINNED sits outside the shuffle so the cap costs rotation, never coverage of
+// the categories people actually search for.
+// Fixed default (pinned + the first ROTATING_SLOTS, unshuffled) on the
+// hydration-critical first render, upgraded to the real day's rotation in an
+// effect: shuffling by new Date().getDate() inline here would reintroduce the
+// exact hydration mismatch bug (React errors #418/#423) already fixed
+// elsewhere on this page.
 function defaultPreview() {
-  return categoryPreview.slice(0, PREVIEW_COUNT);
+  return [...pinnedCategories, ...rotatingCategories.slice(0, ROTATING_SLOTS)];
 }
 
 export default function EncyclopediaTeaser() {
@@ -33,7 +52,10 @@ export default function EncyclopediaTeaser() {
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
     const seed = new Date().getDate();
-    setVisibleCategories(seededShuffle(categoryPreview, seed).slice(0, PREVIEW_COUNT));
+    setVisibleCategories([
+      ...pinnedCategories,
+      ...seededShuffle(rotatingCategories, seed).slice(0, ROTATING_SLOTS),
+    ]);
   }, []);
 
   return (
@@ -51,7 +73,7 @@ export default function EncyclopediaTeaser() {
               Animal Encyclopedia
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              {`Animal profiles for ${encyclopediaCategories.length} categories of reptiles, birds & more`}
+              {`Pet species profiles across ${encyclopediaCategories.length} categories, from dogs and cats to reptiles and fish.`}
             </p>
           </div>
           <Link to="/encyclopedia/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

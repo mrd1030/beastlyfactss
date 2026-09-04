@@ -172,14 +172,14 @@ export default function Encyclopedia() {
         <meta property="og:description" content={encDescription} />
         <meta property="og:url" content={encCanonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts - encyclopedia and care guides" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={encTitle} />
         <meta name="twitter:description" content={encDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
@@ -329,7 +329,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
         {grouped.map((group) => (
           <motion.div key={group.name} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}>
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
-              <span>{group.emoji}</span> {group.name}
+              <span>{group.emoji}</span>{` ${group.name}`}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {group.animals.map((animal) => (
@@ -373,7 +373,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 activeFilter === f.label ? 'bg-accent text-accent-foreground' : 'bg-card border border-border text-muted-foreground hover:text-foreground'
               }`}
             >
-              <span>{f.emoji}</span> {f.label}
+              <span>{f.emoji}</span>{` ${f.label}`}
             </Link>
           ))}
         </div>

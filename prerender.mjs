@@ -16,6 +16,7 @@ import { mkdir, writeFile, readFile } from 'fs/promises';
 import { readFileSync } from 'fs';
 import path from 'path';
 import { cpus } from 'os';
+import { themedQuizzes } from './src/lib/data/quizzes/index.js';
 
 const DIST = './dist';
 const PORT = 4173;
@@ -185,9 +186,11 @@ const STATIC_ROUTES = [
   '/guides',
   '/gear',
   '/pack',
+  '/quiz',
   '/quiz/personality',
   '/quiz/trivia',
   '/quiz/knowledge',
+  ...themedQuizzes.map(q => `/quiz/${q.id}`),
   '/about',
   '/contact',
   '/glossary',
@@ -234,9 +237,19 @@ const STATIC_ROUTES = [
 // runner blips. Giving listings a tight one just guarantees a wasted attempt,
 // which is what measuring showed: at 20s the big listings failed attempt 1 on
 // every run, and even at 30s several still did.
+// /exotic-pet-laws/<species> was missing here, so all 45 of them were treated as
+// listings. That is backwards twice over: they are single-species leaves, and
+// because HEAVY_TIMEOUTS_MS escalates faster it burns ROUTE_BUDGET_MS in three
+// attempts (60+75+90=225) where a leaf gets four (45+60+60+60=225) in the same
+// wall clock. Fewer retries is exactly wrong for the failure these actually hit:
+// rendered alone with no contention, sulcata-tortoise, prairie-dog and serval
+// each still failed attempt 1 and then rendered in about 5s on attempt 2, which
+// is a cold bundle cache, not a slow page. sulcata shelled in the 29 August
+// build after using all three.
 const LEAF_PATTERNS = [
   /^\/blog\/[^/]+$/, /^\/facts\/[^/]+$/, /^\/beastlypedia\/[^/]+$/,
   /^\/guides\/[^/]+$/, /^\/encyclopedia\/animal\/[^/]+$/, /^\/chronicles\/[^/]+(\/\d+)?$/,
+  /^\/exotic-pet-laws\/[^/]+$/,
 ];
 const isLeaf = (route) =>
   LEAF_PATTERNS.some(p => p.test(route)) &&
@@ -345,8 +358,9 @@ async function renderRoute(page, route, timeoutMs) {
 
   const html = await page.content();
 
-  // Strip <script src> tags that Google Tag Manager's own loader snippet
-  // injected while this page was being rendered. page.content() serialises the
+  // Strip <script src> tags that the analytics loader in index.html (gtag.js
+  // and the ahrefs tag, injected after load) managed to add while this page
+  // was being rendered. page.content() serialises the
   // live DOM, so anything a third-party script appended gets baked into the
   // static file - and index.html still contains the snippet that appends it
   // again at request time. The result is GTM loading twice on every prerendered
@@ -354,14 +368,15 @@ async function renderRoute(page, route, timeoutMs) {
   // injection), which PageSpeed measured as /gtm.js listed repeatedly at 116 KiB
   // each and counted toward "reduce unused JavaScript".
   //
-  // Only tags pointing at googletagmanager.com are removed, and only ones with a
-  // src, so the inline loader snippet and the <noscript> iframe both survive
-  // untouched: GTM still loads exactly once for real visitors, via the snippet
-  // that was always meant to do it.
+  // Only tags pointing at googletagmanager.com or analytics.ahrefs.com are
+  // removed, and only ones with a src, so the inline loader snippet survives
+  // untouched: both scripts still load exactly once for real visitors, via the
+  // snippet that was always meant to do it. Both hosts are also aborted at the
+  // request level in makePage(), so this is belt and braces.
   return (
     html
       .replace(
-        /<script\b[^>]*\bsrc="https?:\/\/(?:www\.)?googletagmanager\.com\/[^"]*"[^>]*>\s*<\/script>/gi,
+        /<script\b[^>]*\bsrc="https?:\/\/(?:www\.googletagmanager\.com|analytics\.ahrefs\.com)\/[^"]*"[^>]*>\s*<\/script>/gi,
         ''
       )
       // Same class of problem, different injector: Vite's __vitePreload helper
@@ -385,6 +400,14 @@ async function renderRoute(page, route, timeoutMs) {
       // ahead of it.
       .replace(/<link\b[^>]*>\s*/gi, (tag) =>
         /\brel="modulepreload"/i.test(tag) && /\bas="script"/i.test(tag) ? '' : tag
+      )
+      // index.html is the template for every route, and its LCP preload for
+      // the homepage hero (see the comment there) came along to all of them:
+      // every article and guide page fetched an 84 KB AVIF at high priority
+      // that nothing on the page renders, ahead of its own hero image. Only
+      // the homepage keeps it.
+      .replace(/<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>\s*/gi, (tag) =>
+        route === '/' || !/\/hero-\d+/.test(tag) ? tag : ''
       )
   );
 }
@@ -466,7 +489,7 @@ async function makePage(browser) {
   await page.setRequestInterception(true);
   page.on('request', req => {
     const u = req.url();
-    if (u.includes('googletagmanager') || u.includes('google-analytics') ||
+    if (u.includes('googletagmanager') || u.includes('google-analytics') || u.includes('analytics.ahrefs.com') ||
         u.includes('pagead') || u.includes('fundingchoices') ||
         u.includes('fonts.googleapis.com') || u.includes('fonts.gstatic.com')) {
       req.abort();
@@ -666,19 +689,25 @@ async function main() {
   // build runner where isolated timeouts are expected occasionally even
   // after 5 retries. Only hard-fail when failures are widespread enough to
   // suggest a real, systemic problem worth blocking the deploy over.
-  // Proportional, with a floor. A flat 3 was set when this rendered ~600 routes
-  // and a failure meant no file at all; there are now 964 and a failed route
-  // gets the SPA shell written for it, so it still returns 200 and still works.
-  // The 4 August build had exactly 4 contention timeouts, which under the old
-  // flat threshold would have failed the deploy on top of the timeout that
-  // actually killed it. 1% is still low enough to catch anything systemic.
-  const FAILURE_THRESHOLD = Math.max(5, Math.ceil(allRoutes.length * 0.01));
-  if (results.failed > FAILURE_THRESHOLD) {
-    console.error(`❌ ${results.failed} routes failed prerendering (threshold: ${FAILURE_THRESHOLD}) - failing build.`);
-    process.exit(1);
-  }
+  // Zero tolerance, on purpose. This used to allow the greater of 5 or 1% of
+  // routes to fail, on the reasoning that a shelled route still returns 200 and
+  // that one page's SEO is not worth blocking every other page's update over.
+  //
+  // That trade reads differently now. A route that fails here ships with no
+  // prerendered head or body, so it goes out with the generic shell title and
+  // an empty body until JavaScript runs. A handful of those is exactly the
+  // "thin content" shape a crawler penalises, and the old threshold let up to
+  // 10 of them through per deploy while reporting success. Worse, which routes
+  // lose is a lottery decided by runner contention, so nothing in the build
+  // output tells you a page went out wrong. A red build that has to be re-run
+  // is the cheaper failure.
+  //
+  // MAX_ATTEMPTS above is what absorbs flaky contention timeouts. Five retries
+  // with escalating deadlines is the resilience budget; this is the assertion
+  // that the retries actually worked.
   if (results.failed > 0) {
-    console.warn(`⚠️  ${results.failed} route(s) failed prerendering but under the threshold - deploying anyway. Affected routes will serve client-rendered until fixed.`);
+    console.error(`❌ ${results.failed} route(s) failed prerendering after ${MAX_ATTEMPTS} attempts each - failing build.`);
+    process.exit(1);
   }
 }
 

@@ -69,14 +69,14 @@ export default function Chronicles() {
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content={isReader ? 'article' : 'website'} />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content={`Chronicles of ${series.character} - Beastly Facts`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 
       {/* Header + series tabs */}
@@ -214,7 +214,7 @@ function StoryCard({ story, seriesId, part, index }) {
         </div>
         <div className="min-w-0">
           <div className="flex items-center gap-2 flex-wrap mb-1">
-            <span className="text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+            <span className="text-xs font-body font-semibold text-accent-ink bg-accent/10 px-2 py-0.5 rounded-full">
               {`Part ${part}`}
             </span>
             {displayDate && (
@@ -268,7 +268,7 @@ function PartPager({ seriesId, parts, current, className = '' }) {
               className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-body font-bold transition-colors ${
                 n === current
                   ? 'bg-accent text-accent-foreground'
-                  : 'bg-muted text-muted-foreground hover:bg-accent/10 hover:text-accent'
+                  : 'bg-muted text-muted-foreground hover:bg-accent/10 hover:text-accent-ink'
               }`}
             >
               {n}
@@ -309,7 +309,7 @@ function StoryReader({ story, part }) {
   return (
     <motion.article initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}>
       <div className="flex items-center gap-2 mb-3 flex-wrap">
-        <span className="text-xs font-body font-semibold text-accent bg-accent/10 px-2 py-0.5 rounded-full">
+        <span className="text-xs font-body font-semibold text-accent-ink bg-accent/10 px-2 py-0.5 rounded-full">
           {`Part ${part}`}
         </span>
         {displayDate && (
@@ -356,7 +356,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
               <Link
                 to={chroniclesPath(s.id)}
                 className={`text-xs font-body font-bold uppercase tracking-wide transition-colors ${
-                  s.id === activeSeriesId && !activePart ? 'text-accent' : 'text-muted-foreground hover:text-foreground'
+                  s.id === activeSeriesId && !activePart ? 'text-accent-ink' : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {`${s.emoji} ${s.shortName}`}
@@ -371,7 +371,7 @@ function ChroniclesSidebar({ bySeries, activeSeriesId, activePart }) {
                       to={chroniclesPath(s.id, n)}
                       className={`block px-2.5 py-1.5 rounded-lg text-xs font-body transition-colors ${
                         isActive
-                          ? 'bg-accent/10 text-accent font-semibold'
+                          ? 'bg-accent/10 text-accent-ink font-semibold'
                           : 'text-muted-foreground hover:bg-muted hover:text-foreground'
                       }`}
                     >

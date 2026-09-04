@@ -45,6 +45,18 @@ const CARD_VARIANT_DIRS = new Set([
   // therefore use the uncropped original until a portrait tier exists.
 ]);
 
+// images/ and guides/ also get a "-hero" tier: the article featured image and
+// the guide hero are the LCP element on their pages and were served as the
+// 1168px original JPEG (PageSpeed: 334 KB for a 592px slot on the rhino
+// article). Two webp widths, no crop (fit: inside keeps the aspect ratio), so
+// HeroImage.jsx can offer them as 1x/2x density candidates with the original
+// JPEG as the fallback <img src>. facts/, encyclopedia/ and beastlypedia/ are
+// deliberately left out: nothing renders them at hero size.
+const HERO_VARIANT_DIRS = new Set([
+  path.join(rootDir, 'public/assets/images'),
+  path.join(rootDir, 'public/assets/guides'),
+]);
+
 const supported = new Set(['.jpg', '.jpeg', '.png']);
 
 // Recursively collect all image files under a directory tree.
@@ -65,11 +77,31 @@ function collectImages(dir, results = []) {
 // tiers) for one source image. Returns 1 if it actually wrote files, 0 if it
 // was already there or the write failed - same accounting the old sequential
 // version did with its `count += 1` inside each try block.
+// Encoder choices. Every `quality` number below was tuned against PageSpeed and
+// is left exactly as it was found; only the encoders changed.
+//
+// `effort: 6` on webp is a free win: same quality target, just a wider search
+// than the default 4. Identical output quality, a few percent smaller.
+//
+// `mozjpeg: true` is not free, and it is worth being precise about why it is
+// still right. Measured against the uncompressed resize at q70, mozjpeg scores
+// slightly LOWER on PSNR than libjpeg (40.30 vs 41.26 dB on a card@2x sample)
+// while producing a file 26% smaller. That is the intended trade, not a
+// regression: mozjpeg's trellis quantization optimises for perceptual quality
+// per byte, and PSNR does not measure perception. A sub-1 dB difference up at
+// 40 dB is not visible, and it is least visible here of all, since the -card@2x
+// tier is only ever served to high-DPI screens that draw its 640x480 into a
+// slot around 315 CSS px, the same reasoning that already justifies q70 below.
+//
+// The cost is build time: a full rebuild goes from about 50s to about 90s.
+// These files are gitignored and regenerated from the originals on every
+// build, so that is the right thing to spend. The encode happens once per
+// deploy, the download happens on every visit.
 async function generateTier(input, { webpOut, jpgOut, resize, webpOpts, jpegOpts, label }) {
-  if (fs.existsSync(webpOut) && fs.existsSync(jpgOut)) return 0;
+  if (fs.existsSync(webpOut) && (!jpgOut || fs.existsSync(jpgOut))) return 0;
   try {
     await sharp(input).resize(...resize).webp(webpOpts).toFile(webpOut);
-    await sharp(input).resize(...resize).jpeg(jpegOpts).toFile(jpgOut);
+    if (jpgOut) await sharp(input).resize(...resize).jpeg(jpegOpts).toFile(jpgOut);
     return 1;
   } catch (error) {
     console.warn(`Skipping ${path.basename(input)}${label}: ${error.message}`);
@@ -118,6 +150,10 @@ async function generateThumbs() {
     for (const input of files) {
       const ext = path.extname(input);
       const baseName = path.basename(input, ext);
+      // Only the generated jpg tiers can collide with a source name here: the
+      // -hero tiers are webp-only and collectImages() never picks up webp, so
+      // they need no skip. Beastlypedia's source photos are named *-hero.jpg
+      // and must NOT be skipped (that mistake broke a deploy).
       if (baseName.endsWith('-thumb') || baseName.endsWith('-card') || baseName.endsWith('-card@2x')) continue;
 
       const base = input.slice(0, -ext.length);
@@ -131,8 +167,8 @@ async function generateThumbs() {
         webpOut: `${base}-thumb.webp`,
         jpgOut: `${base}-thumb.jpg`,
         resize: [240, 240, { fit: 'cover', withoutEnlargement: true }],
-        webpOpts: { quality: 68 },
-        jpegOpts: { quality: 70 },
+        webpOpts: { quality: 68, effort: 6 },
+        jpegOpts: { quality: 70, mozjpeg: true },
         label: '',
       }));
 
@@ -149,8 +185,8 @@ async function generateThumbs() {
           webpOut: `${base}-card.webp`,
           jpgOut: `${base}-card.jpg`,
           resize: [320, 240, { fit: 'cover', withoutEnlargement: true }],
-          webpOpts: { quality: 76 },
-          jpegOpts: { quality: 78 },
+          webpOpts: { quality: 76, effort: 6 },
+          jpegOpts: { quality: 78, mozjpeg: true },
           label: ' (card 1x variant)',
         }));
 
@@ -166,11 +202,40 @@ async function generateThumbs() {
           webpOut: `${base}-card@2x.webp`,
           jpgOut: `${base}-card@2x.jpg`,
           resize: [640, 480, { fit: 'cover', withoutEnlargement: true }],
-          webpOpts: { quality: 68 },
-          jpegOpts: { quality: 70 },
+          webpOpts: { quality: 68, effort: 6 },
+          jpegOpts: { quality: 70, mozjpeg: true },
           label: ' (card 2x variant)',
         }));
       }
+    }
+  }
+
+  for (const dir of assetDirs) {
+    if (!HERO_VARIANT_DIRS.has(dir)) continue;
+    for (const input of collectImages(dir)) {
+      const ext = path.extname(input);
+      const baseName = path.basename(input, ext);
+      if (/-(thumb|card|card@2x)$/.test(baseName)) continue;
+      const base = input.slice(0, -ext.length);
+      // 800px wide covers the 592-665px desktop slot at DPR 1. The 2x file is
+      // capped at 1600 but withoutEnlargement means it is the original's own
+      // width (1168 for most of these), which is what a 380px mobile slot at
+      // DPR 2.6 needs. Quality steps down on the 2x file for the same reason
+      // as the -card@2x tier: every artifact is drawn at half size or less.
+      jobs.push(() => generateTier(input, {
+        webpOut: `${base}-hero.webp`,
+        jpgOut: null,
+        resize: [800, null, { fit: 'inside', withoutEnlargement: true }],
+        webpOpts: { quality: 74, effort: 6 },
+        label: ' (hero 1x variant)',
+      }));
+      jobs.push(() => generateTier(input, {
+        webpOut: `${base}-hero@2x.webp`,
+        jpgOut: null,
+        resize: [1600, null, { fit: 'inside', withoutEnlargement: true }],
+        webpOpts: { quality: 66, effort: 6 },
+        label: ' (hero 2x variant)',
+      }));
     }
   }
 

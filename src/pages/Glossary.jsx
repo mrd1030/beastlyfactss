@@ -31,7 +31,7 @@ function TermCard({ term, showCategory, catEmoji, catLabel }) {
               to={r.to}
               className="text-[11px] font-body text-primary/80 hover:text-primary border border-primary/20 hover:border-primary/40 rounded-full px-2.5 py-0.5 transition-colors"
             >
-              {r.label} →
+              {`${r.label} →`}
             </Link>
           ))}
         </div>
@@ -131,12 +131,12 @@ export default function Glossary() {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://beastlyfacts.com/glossary/" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts Reptile & Exotic Pet Care Glossary" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta name="twitter:title" content="Reptile & Exotic Pet Care Glossary | Beastly Facts" />
         <meta name="twitter:description" content={DESCRIPTION} />
       </Helmet>
@@ -149,8 +149,7 @@ export default function Glossary() {
               Reptile &amp; Exotic Pet Glossary
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-xl">
-              Plain-English definitions for {TOTAL_TERMS}+ care terms - from husbandry basics to species-specific jargon.
-              Every entry links back to the guide where it matters most.
+              {`Plain-English definitions for ${TOTAL_TERMS}+ care terms - from husbandry basics to species-specific jargon. Every entry links back to the guide where it matters most.`}
             </p>
           </motion.div>
         </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ExternalLink, X } from 'lucide-react';
+import { ExternalLink, Search, X } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import CrossLinkCta from '@/components/shared/CrossLinkCta';
 import { SocialLinksRow } from '@/components/shared/SocialIcons';
@@ -36,6 +36,7 @@ export default function Feed() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     // Skipped during prerendering, same reasoning as PostEngagement.jsx: a
@@ -64,8 +65,13 @@ export default function Feed() {
   // Tag pages are a client-side filter over the same fetch, not a separate
   // query - the feed is small enough that this is simpler than round-tripping
   // to Supabase per tag, and it keeps the "loading" flash identical on both
-  // /feed/ and /feed/tag/:tag/.
-  const displayPosts = tag ? posts.filter(p => captionHasTag(p.caption, tag)) : posts;
+  // /feed/ and /feed/tag/:tag/. The search box stacks on top of the tag
+  // filter the same way, matching caption text including hashtags.
+  const q = query.trim().toLowerCase();
+  const displayPosts = posts.filter(p =>
+    (!tag || captionHasTag(p.caption, tag)) &&
+    (!q || (p.caption || '').toLowerCase().includes(q))
+  );
 
   const pageTitle = tag ? `#${tag} | Feed | Beastly Facts` : 'Feed | Beastly Facts';
   const pageDescription = tag
@@ -81,13 +87,20 @@ export default function Feed() {
         <link rel="canonical" href={canonicalUrl} />
         {/* Tag pages are a live filter over user-typed hashtags, not curated
             content - same reasoning as noindexing /search/, kept out of the
-            index rather than left to accumulate as thin duplicate pages. */}
-        <meta name="robots" content={tag ? 'noindex,follow' : 'index,follow'} />
+            index rather than left to accumulate as thin duplicate pages.
+            The untagged feed is noindex for a different reason: its posts come
+            from Supabase at runtime and this route is not prerendered, so a
+            crawler that does not run JS sees an empty page. Google logged
+            /feed/ as a soft 404 on exactly that. It is reposted social content
+            rather than original writing, and it had earned zero search
+            impressions, so there was nothing to weigh against dropping it.
+            Also removed from staticPages in generate-sitemap.js. */}
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Beastly Facts - amazing animal trivia and care guides" />
@@ -106,6 +119,18 @@ export default function Feed() {
                 : "Photos and clips from around Beastly Facts - the cool stuff that doesn't fit anywhere else on the site."}
             </p>
           </motion.div>
+
+          <div className="relative mt-5 max-w-md">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search the feed..."
+              aria-label="Search feed posts"
+              className="w-full rounded-xl border border-border bg-card pl-10 pr-4 py-2.5 font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-secondary/50"
+            />
+          </div>
 
           <div className="flex flex-wrap gap-3 mt-4">
             {tag && (
@@ -131,7 +156,9 @@ export default function Feed() {
           <div className="text-center py-16">
             <span className="text-4xl block mb-3">🐾</span>
             <p className="font-body font-bold text-foreground">
-              {tag ? `Nothing tagged #${tag} yet.` : 'Nothing here yet - check back soon!'}
+              {q
+                ? `Nothing matches "${query.trim()}".`
+                : tag ? `Nothing tagged #${tag} yet.` : 'Nothing here yet - check back soon!'}
             </p>
             {tag && (
               <Link to="/feed/" className="text-sm font-body font-semibold text-secondary hover:underline mt-2 inline-block">

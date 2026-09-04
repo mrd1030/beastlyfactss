@@ -87,7 +87,7 @@ export default function BeastfileDetail() {
   // Falls back to the secondary image, then the site hero. A null heroImage
   // would otherwise emit og:image="https://beastlyfacts.com" and every share of
   // an unfinished Beastfile would unfurl blank.
-  const shareImage = `${SITE}${heroImage || secondaryImage || '/assets/hero-1200.jpg'}`;
+  const shareImage = `${SITE}${heroImage || secondaryImage || '/assets/og-default.jpg'}`;
 
   // schema.org has no Animal type. Thing is the honest choice; the binomial
   // goes in alternateName, which is what a Taxon extension would map to anyway.

@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'; // Added useState here
-import { motion, AnimatePresence } from '@/lib/motion-safe';
+import { motion, AnimatePresence, LazyMotion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
 import { X, Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
-import { encyclopediaAnimals } from '@/lib/data/encyclopedia';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
 // 2.8KB of {normalised animal name -> {id, name}}, built by
@@ -13,6 +12,20 @@ import { imagePathFor } from '@/lib/data/factImages';
 // optional link.
 import beastlypediaAnimals from '@/lib/generated/beastlypedia-animal-map.json';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
+// Same reasoning for the encyclopedia side of that lookup: the generated index
+// (id, name, category per animal, 25KB) instead of the 120KB data barrel, which
+// this import alone was pulling into the entry chunk of every page via Home.
+import encyclopediaIndex from '@/lib/generated/encyclopedia-index.json';
+const encyclopediaAnimals = encyclopediaIndex.animals;
+
+// The swipe-to-dismiss `drag` below is the only drag on the site, and drag
+// lives in framer's domMax feature set (~41KB raw with its layout-projection
+// engine). App.jsx loads only domAnimation up front; this loads domMax the
+// first time the modal actually opens. Until that import lands (a few hundred
+// ms on first open, instant after) the modal works normally, just without the
+// swipe. Features are registered globally once loaded, never re-rendered into
+// markup, so prerendered HTML and hydration are unaffected.
+const loadDomMax = () => import('@/lib/motionFeaturesMax').then(m => m.default);
 
 // onOpenImage is optional and handled by the parent page (not rendered here) -
 // same reason as FactCard: this modal animates scale/y via framer-motion, so a
@@ -141,6 +154,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
   };
 
   return (
+    <LazyMotion features={loadDomMax}>
     <AnimatePresence>
       {fact && (
         <motion.div
@@ -245,5 +259,6 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
         </motion.div>
       )}
     </AnimatePresence>
+    </LazyMotion>
   );
 }

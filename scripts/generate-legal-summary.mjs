@@ -24,6 +24,7 @@ const mdxMeta = JSON.parse(
 );
 const outPath = path.join(root, 'src/lib/generated/legal-summary.json');
 const guidesPath = path.join(root, 'src/lib/generated/legal-guides.json');
+const coveragePath = path.join(root, 'src/lib/generated/legal-coverage.json');
 
 // Keyed by encyclopediaId, because that is what the encyclopedia route has in
 // hand. The two id sets do not always match: every cat is cat-<breed> in the
@@ -47,19 +48,54 @@ const summary = Object.fromEntries(
 // The hub's index of legal guides, sorted the way it renders. Same reasoning
 // as above: the map page filtered this out of mdx-meta.json, which is ~1MB of
 // metadata for all 426 articles, to end up with twenty titles and slugs.
+// The excerpt is carried too, and trimmed here rather than in the browser. The
+// hub's cards have always rendered g.excerpt and it has always been undefined,
+// because this only ever emitted slug and title, so every card on the hub was a
+// bare headline. Cut at a word boundary near 200 characters: the card clamps to
+// three lines, so shipping the full excerpt for 33 guides would be a few KB
+// nobody can read.
+const trimExcerpt = (text) => {
+  const clean = (text || '').trim();
+  if (clean.length <= 200) return clean;
+  const cut = clean.slice(0, 200);
+  return `${cut.slice(0, cut.lastIndexOf(' ')).replace(/[,;:]$/, '')}...`;
+};
+
 const guides = mdxMeta
   .filter((m) => m.category === 'Legal' && m.slug !== 'exotic-pet-legal-hub')
-  .map((m) => ({ slug: m.slug, title: m.title }))
+  .map((m) => ({ slug: m.slug, title: m.title, excerpt: trimExcerpt(m.excerpt) }))
   .sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+
+// How big the map is, in the two numbers the rest of the site quotes at
+// people. Anywhere off the map page that says "N animals across all 50 states"
+// was hand-typed and went stale the moment an animal was added: the Legal
+// category banner still read 28 when the matrix had reached 44. This is a few
+// dozen bytes, so a page can state the size of the map without importing the
+// 400KB matrix to count it.
+const researchedStates = legal.coverage.researched.filter(
+  (c) => legal.jurisdictions[c]?.level !== 'city',
+);
+const coverage = {
+  animals: Object.keys(legal.animals).length,
+  states: researchedStates.filter((c) => c !== 'DC').length,
+  includesDC: researchedStates.includes('DC'),
+  cities: legal.coverage.researched
+    .filter((c) => legal.jurisdictions[c]?.level === 'city')
+    .map((c) => legal.jurisdictions[c].name),
+};
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, `${JSON.stringify(summary, null, 2)}\n`);
 fs.writeFileSync(guidesPath, `${JSON.stringify(guides, null, 2)}\n`);
+fs.writeFileSync(coveragePath, `${JSON.stringify(coverage, null, 2)}\n`);
 
 const count = Object.keys(summary).length;
 const bytes = fs.statSync(outPath).size;
 console.log(`Legal summary: ${count} animals, ${bytes} bytes.`);
 console.log(`Legal guide index: ${guides.length} guides, ${fs.statSync(guidesPath).size} bytes.`);
+console.log(
+  `Legal coverage: ${coverage.animals} animals, ${coverage.states} states${coverage.includesDC ? ' and DC' : ''}${coverage.cities.length ? `, plus ${coverage.cities.join(', ')}` : ''}.`,
+);
 
 // An animal with a legal guide but no encyclopediaId never shows the card, which
 // is a silent miss rather than a broken page, so it is worth seeing.

@@ -86,6 +86,8 @@ function toPost(meta) {
     // Images
     image: meta.image,
     imageAlt: meta.imageAlt,
+    imageWidth: meta.imageWidth,
+    imageHeight: meta.imageHeight,
 
     // Marker only - not a component. Renderers look the real component up
     // by slug via getMdxComponent()/MdxArticleBody, not through this field.
@@ -95,6 +97,7 @@ function toPost(meta) {
     // Optional extra fields
     emoji: meta.emoji,
     lastReviewed: meta.lastReviewed,
+    author: meta.author || null,
     canonicalUrl: meta.canonicalUrl,
     faqs: meta.faqs,
     relatedProducts: meta.relatedProducts || [],
@@ -109,6 +112,7 @@ function toPost(meta) {
     myth: meta.myth || null,
     truth: meta.truth || null,
     sourceCount: meta.sourceCount || 0,
+    headingCount: meta.headingCount || 0,
   };
 }
 

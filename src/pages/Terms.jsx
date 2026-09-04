@@ -17,11 +17,11 @@ export default function Terms() {
         <meta name="description" content="Read the Beastly Facts terms of service to understand the rules and guidelines for using our animal facts, care guides, and quiz platform." />
         <link rel="canonical" href="https://beastlyfacts.com/terms/" />
         <meta name="robots" content="noindex, follow" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
@@ -56,7 +56,7 @@ export default function Terms() {
 
           <Section title="4. Donations & Payments">
             <p>Donations made through BeastlyFacts.com are processed securely by Stripe. All transactions are subject to Stripe's Terms of Service. BeastlyFacts.com does not store any payment card information.</p>
-            <p>Donations are voluntary and non-refundable unless required by applicable law. Monthly recurring donations can be cancelled at any time by contacting us at info@beastlyfacts.com.</p>
+            <p>Donations are voluntary and non-refundable unless required by applicable law. Monthly recurring donations can be cancelled at any time by contacting us at hello@beastlyfacts.com.</p>
           </Section>
 
           <Section title="5. Disclaimer of Warranties">
@@ -73,7 +73,7 @@ export default function Terms() {
           </Section>
 
           <Section title="8. Contact">
-            <p>For any questions regarding these Terms, please contact us at <a href="mailto:info@beastlyfacts.com" className="text-secondary hover:underline">info@beastlyfacts.com</a>.</p>
+            <p>For any questions regarding these Terms, please contact us at <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a>.</p>
           </Section>
         </motion.div>
       </div>

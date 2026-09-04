@@ -35,7 +35,16 @@ export default function Facts() {
   const { slug, factCat } = useParams();
 
   const [search, setSearch] = useState('');
-  const [activeCategory, setActiveCategory] = useState('All');
+  // From the route param on the very first render, not only from the URL
+  // synchronizer effect below: /facts/category/<slug>/ is prerendered with the
+  // category applied, and a first render at 'All' (every fact, a 12-page
+  // pagination) disagreed with that HTML and failed hydration on every category
+  // page. The effect still owns later changes and the invalid-slug redirect.
+  const [activeCategory, setActiveCategory] = useState(() => {
+    if (!factCat) return 'All';
+    const match = categories.map(c => c.name).find(c => slugify(c) === factCat);
+    return match || 'All';
+  });
   const [selectedFact, setSelectedFact] = useState(null);
   const [imageFact, setImageFact] = useState(null);
   const [page, setPage] = useState(1);
@@ -226,7 +235,7 @@ export default function Facts() {
   // Real per-fact photo for the share preview when a specific fact is linked
   // (see src/lib/data/factImages.js) - falls back to the generic hero otherwise,
   // since a category/list page has no single representative photo.
-  const heroImage = 'https://beastlyfacts.com/assets/hero-1200.jpg';
+  const heroImage = 'https://beastlyfacts.com/assets/og-default.jpg';
   const factImage = linkedFact ? absoluteImageFor(linkedFact) : null;
   const pageImage = factImage || heroImage;
   // Direct fact links aren't prerendered (Facts.jsx is already flagged CPU-heavy

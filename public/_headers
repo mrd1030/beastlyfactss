@@ -15,9 +15,71 @@
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
   Cache-Control: public, max-age=0, must-revalidate
+  # Google Discover eligibility: allows full-size image previews. A header
+  # rather than a robots meta on purpose - generate-fact-pages.mjs forbids a
+  # robots meta in the built shell (it injects its own per-fact noindex).
+  # Header and page-level meta directives merge, so noindex pages stay noindex.
+  X-Robots-Tag: max-image-preview:large
+
+# Images, fonts and scripts under /assets/ are meant to be embedded from other
+# origins: the newsletter hotlinks the About photo, Discord and forum posts
+# unfurl article images, and the OG image is fetched by every share card.
+# The site-wide Cross-Origin-Resource-Policy: same-origin above makes a browser
+# refuse those loads (the Beehiiv editor rendered the Dex photo as its alt
+# text). Detach the site-wide value and re-set it as cross-origin for static
+# assets only. HTML responses keep same-origin.
+/assets/*
+  ! Cross-Origin-Resource-Policy
+  Cross-Origin-Resource-Policy: cross-origin
 
 /assets/*.js
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images were falling through to a 1 hour lifetime, which is what PageSpeed's
+# "use efficient cache lifetimes" flags: every repeat visitor revalidates all
+# ~1,400 of them. 30 days instead.
+#
+# Deliberately NOT the year-long immutable that .js and .css get above. Those
+# filenames carry a content hash, so a changed file is a changed URL and a stale
+# cache is impossible. Image filenames are stable (hero-800.avif stays
+# hero-800.avif when its contents change), so max-age is a promise we cannot
+# take back: whatever number is here is how long an existing visitor can keep
+# showing the old bytes after a swap. 30 days is the most that seemed fair to
+# trade for that. If an image ever has to change faster than that, rename it and
+# update the reference rather than lowering this.
+/assets/*.jpg
+  Cache-Control: public, max-age=2592000
+/assets/*.jpeg
+  Cache-Control: public, max-age=2592000
+/assets/*.png
+  Cache-Control: public, max-age=2592000
+/assets/*.webp
+  Cache-Control: public, max-age=2592000
+/assets/*.avif
+  Cache-Control: public, max-age=2592000
+/assets/*.svg
+  Cache-Control: public, max-age=2592000
+
+# og-default.jpg is the og:image and twitter:image for every page, and its URL
+# must never change. Facebook, X, LinkedIn and Slack cache a share card against
+# the URL that was live when the link was first posted, so renaming or hashing
+# this file breaks the preview on every link anyone has already shared. It is
+# deliberately a plain file in public/ for that reason, while the visual hero it
+# was cut from is imported through src/assets/ and hashed. Same picture, two
+# jobs, opposite requirements: one must change its URL on every edit, the other
+# must never change it at all.
+#
+# public/assets/hero-1200.jpg is kept for the same reason. It was the og:image
+# before og-default.jpg took over, so links shared before that swap still point
+# at it. Nothing in the app references it any more. Do not delete it.
+
+# The favicon is the one image Vite content-hashes, because index.html points at
+# ./src/assets/favicon.webp rather than at public/. That makes its filename
+# change whenever its contents do, which is exactly the property the rules above
+# cannot assume, so it gets the same year-long immutable treatment as .js/.css.
+# More specific path, so this wins over /assets/*.webp.
+/assets/favicon-*.webp
   Cache-Control: public, max-age=31536000, immutable

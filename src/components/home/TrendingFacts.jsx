@@ -49,10 +49,17 @@ export default function TrendingFacts({ onOpenFact, onOpenImage }) {
     <section className="pt-8 pb-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-8">
+          {/* Not "Trending" any more. Nothing here measures engagement: the
+              order is (new Date().getDate() % facts.length + 1) % facts.length,
+              a plain day-of-month rotation of the fact library. A heading that
+              claims a popularity signal the code does not collect is the kind
+              of thing an AdSense content review reads as filler, and at this
+              traffic level there is no honest trending number to compute
+              instead. So the heading says what it actually is. */}
           <div>
-            <span className="text-2xl mb-1 block">🔥</span>
-            <h2 className="font-display font-bold text-2xl text-foreground">Trending Facts</h2>
-            <p className="text-sm text-muted-foreground font-body mt-1">The wildest facts everyone's talking about</p>
+            <span className="text-2xl mb-1 block">🎲</span>
+            <h2 className="font-display font-bold text-2xl text-foreground">Today&rsquo;s Wild Picks</h2>
+            <p className="text-sm text-muted-foreground font-body mt-1">A fresh handful from the fact library, reshuffled every day</p>
           </div>
           <div className="hidden sm:flex items-center gap-4">
             <Link to="/facts/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">

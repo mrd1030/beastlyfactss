@@ -17,11 +17,11 @@ export default function Privacy() {
         <meta name="description" content="Read the Beastly Facts privacy policy to understand how we collect, use, and protect your data when you use our animal facts and care guide website." />
         <link rel="canonical" href="https://beastlyfacts.com/privacy/" />
         <meta name="robots" content="noindex, follow" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
@@ -94,7 +94,7 @@ export default function Privacy() {
           </Section>
 
           <Section title="6. Data Retention & Your Rights">
-            <p>Newsletter subscribers can unsubscribe at any time using the link in any email. To request access to, correction of, or deletion of your personal data, contact us at <a href="mailto:info@beastlyfacts.com" className="text-secondary hover:underline">info@beastlyfacts.com</a>.</p>
+            <p>Newsletter subscribers can unsubscribe at any time using the link in any email. To request access to, correction of, or deletion of your personal data, contact us at <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a>.</p>
             <p>If you are located in the EU/EEA, you have rights under GDPR, including the right to data portability and the right to object to processing.</p>
           </Section>
 
@@ -107,7 +107,7 @@ export default function Privacy() {
           </Section>
 
           <Section title="9. Contact">
-            <p>For privacy-related questions, please contact: <a href="mailto:info@beastlyfacts.com" className="text-secondary hover:underline">info@beastlyfacts.com</a></p>
+            <p>For privacy-related questions, please contact: <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a></p>
           </Section>
         </motion.div>
       </div>

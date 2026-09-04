@@ -58,6 +58,8 @@ public/assets/**/*-card.jpg
 public/assets/**/*-card.webp
 public/assets/**/*-card@2x.jpg
 public/assets/**/*-card@2x.webp
+public/assets/**/*-hero.webp
+public/assets/**/*-hero@2x.webp
 
 # Sanity CMS, migrated to MDX (see _sanity-archive/scripts/sanity-to-mdx.mjs).
 # Kept locally as a rollback path, not tracked.
@@ -85,3 +87,11 @@ frontpage trials/
 # Loose content-research working docs, moved out of repo root - reference only,
 # never read by the build
 research/
+
+# The printable PDF care packages (source HTML + rendered PDFs + cover images)
+# sold on Gumroad. Kept here for convenience, not part of this app - never
+# read by the build, and never tracked (large binaries, separate product).
+
+
+# care package render cache (fonts re-downloaded on demand by source/_render.mjs)
+content/CAREPACKAGE Guides/source/.fonts/

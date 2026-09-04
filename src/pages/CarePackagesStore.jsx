@@ -25,11 +25,12 @@ export default function CarePackagesStore() {
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/care-packages/store/" />
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://beastlyfacts.com/care-packages/store/" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -62,7 +63,7 @@ export default function CarePackagesStore() {
         >
           <div className="mb-4">
             <h2 className="font-display font-bold text-xl text-foreground">Care packages</h2>
-            <p className="text-sm text-muted-foreground font-body">{live.length} package{live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep.</p>
+            <p className="text-sm text-muted-foreground font-body">{`${live.length} package${live.length === 1 ? '' : 's'}, $8.99 each. One time purchase, yours to keep.`}</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {live.map(pkg => (
@@ -79,8 +80,8 @@ export default function CarePackagesStore() {
             className="mt-10"
           >
             <div className="mb-4">
-              <h2 className="font-display font-bold text-xl text-foreground">Coming soon</h2>
-              <p className="text-sm text-muted-foreground font-body">In production now - not purchasable yet.</p>
+              <h2 className="font-display font-bold text-xl text-foreground">Next in the series</h2>
+              <p className="text-sm text-muted-foreground font-body">Being researched and written now. Each one goes on sale once it clears the same review as the free guides.</p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoon.map(pkg => (

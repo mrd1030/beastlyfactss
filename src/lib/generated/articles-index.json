@@ -3,7 +3,7 @@
     {
       "slug": "welcome-to-beastlyfacts",
       "title": "Welcome to BeastlyFacts - Why We're Here",
-      "excerpt": "Welcome to BeastlyFacts! Honest animal care guides, fun facts, and practical advice for reptile and small mammal owners.",
+      "excerpt": "A short tour of BeastlyFacts from Mike: care guides, facts, laws, quizzes, and the Chronicles of Dex and Otis. The",
       "date": "2026-06-01",
       "image": "/assets/images/welcome-beastlyfacts.jpg",
       "category": "Site News",
@@ -35,7 +35,7 @@
     },
     {
       "slug": "ackie-monitor-cost-guide",
-      "title": "Ackie Monitor Cost: Full Price Breakdown",
+      "title": "Ackie Monitor Price: $150 to $450, Plus $800 to $1,500 Setup",
       "excerpt": "Ackie monitors are a genuine step up in investment from most beginner lizards, both in what the animal costs and in",
       "date": "2026-07-16",
       "image": "/assets/images/ackie-monitor-cost.jpg",
@@ -45,8 +45,19 @@
       ]
     },
     {
+      "slug": "ackie-monitor-enrichment-guide",
+      "title": "Ackie Monitor Enrichment Guide",
+      "excerpt": "Eight juvenile monitors were given a puzzle tube with food inside. All eight opened it within ten minutes, on the first",
+      "date": "2026-10-19",
+      "image": "/assets/images/ackie-monitor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ackie-monitor-feeding-guide",
-      "title": "Ackie Monitor Feeding Guide: Schedule and Diet",
+      "title": "What Do Ackie Monitors Eat? Diet and Feeding Schedule",
       "excerpt": "Ackie monitors are lean, active insectivores, and getting their diet right is really about resisting the urge to feed",
       "date": "2026-08-10",
       "image": "/assets/images/ackie-monitor-feeding.jpg",
@@ -79,7 +90,7 @@
     },
     {
       "slug": "ackie-monitor-legal-guide",
-      "title": "Ackie Monitor Laws by State: Legal Except Two Places",
+      "title": "Are Ackie Monitors Legal? Banned in Only Two Places",
       "excerpt": "The Ackie monitor clears almost every state we checked, including Louisiana, which bans two other monitor species by",
       "date": "2026-09-27",
       "image": "/assets/guides/ackie-monitor-legal.jpg",
@@ -101,7 +112,7 @@
     },
     {
       "slug": "african-fat-tail-cost-guide",
-      "title": "African Fat-Tailed Gecko Cost: Full Price Breakdown",
+      "title": "Fat-Tailed Gecko Price: $75 to $600, Plus $200 to $450 Setup",
       "excerpt": "African fat-tailed geckos cost more upfront than most beginner geckos, and morphs push that number considerably higher,",
       "date": "2026-07-26",
       "image": "/assets/images/african-fat-tail-cost.jpg",
@@ -111,8 +122,19 @@
       ]
     },
     {
+      "slug": "african-fat-tail-enrichment-guide",
+      "title": "African Fat-Tailed Gecko Enrichment Guide",
+      "excerpt": "The leopard gecko enrichment study tested five types and ranked them. Fat-tails are the closest relative anyone has",
+      "date": "2026-10-22",
+      "image": "/assets/images/african-fat-tail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "african-fat-tail-feeding-guide",
-      "title": "African Fat-Tailed Gecko Feeding Guide",
+      "title": "What Do African Fat-Tailed Geckos Eat? Diet and Schedule",
       "excerpt": "That fat tail can hold close to half the gecko's body mass, which is why healthy adults can go months without eating",
       "date": "2026-07-31",
       "image": "/assets/images/african-fat-tail-feeding.jpg",
@@ -156,7 +178,7 @@
     },
     {
       "slug": "african-grey-parrot-cost-guide",
-      "title": "African Grey Parrot Cost: Full Price Breakdown",
+      "title": "African Grey Price: $1,000 to $4,000, Plus $500+ Setup",
       "excerpt": "African grey parrots are genuinely one of the most expensive pets covered on this site, and the purchase price is",
       "date": "2026-07-17",
       "image": "/assets/images/african-grey-parrot-cost.jpg",
@@ -166,8 +188,19 @@
       ]
     },
     {
+      "slug": "african-grey-parrot-enrichment-guide",
+      "title": "African Grey Parrot Enrichment Guide",
+      "excerpt": "Eighteen plucking African greys were given food in pipe feeders instead of bowls. Foraging enrichment is the closest",
+      "date": "2026-10-15",
+      "image": "/assets/images/african-grey-parrot-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "african-grey-parrot-feeding-guide",
-      "title": "African Grey Parrot Feeding Guide: Schedule and Diet",
+      "title": "What Do African Grey Parrots Eat? Diet and Feeding Schedule",
       "excerpt": "African grey parrots have a genuine, well-documented vulnerability that makes getting their diet right more",
       "date": "2026-08-10",
       "image": "/assets/images/african-grey-parrot-feeding.jpg",
@@ -200,7 +233,7 @@
     },
     {
       "slug": "african-grey-parrot-legal-guide",
-      "title": "African Grey Parrot Legal Guide: CITES & Ownership",
+      "title": "Are African Grey Parrots Legal? CITES and State Rules",
       "excerpt": "African grey parrots hold the strictest CITES protection level there is, Appendix I, since 2017. That sounds like an",
       "date": "2026-07-13",
       "image": "/assets/guides/african-grey-parrot-legal.jpg",
@@ -244,7 +277,7 @@
     },
     {
       "slug": "amano-shrimp-cost-guide",
-      "title": "Amano Shrimp Cost: Full Price Breakdown",
+      "title": "Amano Shrimp Price: $5 to $12, Plus $60 to $150 Setup",
       "excerpt": "Amano shrimp cost more than a basic cherry shrimp, and selective breeding has almost nothing to do with why. Almost",
       "date": "2026-09-17",
       "image": "/assets/images/amano-shrimp-cost.jpg",
@@ -254,8 +287,19 @@
       ]
     },
     {
+      "slug": "amano-shrimp-enrichment-guide",
+      "title": "Amano Shrimp Enrichment Guide",
+      "excerpt": "Amano shrimp are bought as a cleaning crew. They do the job, then the algae is gone, and a lot of them quietly starve",
+      "date": "2026-11-02",
+      "image": "/assets/images/amano-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "amano-shrimp-feeding-guide",
-      "title": "Amano Shrimp Feeding Guide: Diet and Algae Limits",
+      "title": "What Do Amano Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Amano shrimp really are the best true algae eater in the aquarium hobby, but the reputation gets oversold. They're",
       "date": "2026-09-17",
       "image": "/assets/images/amano-shrimp-feeding.jpg",
@@ -299,7 +343,7 @@
     },
     {
       "slug": "angelfish-cost-guide",
-      "title": "Angelfish Cost: Full Price Breakdown",
+      "title": "Angelfish Price: $3 to $50, Plus $300 to $600 Setup",
       "excerpt": "Angelfish are cheap to buy and genuinely expensive to house properly, the tank, not the fish, is where the real budget",
       "date": "2026-07-17",
       "image": "/assets/images/angelfish-cost.jpg",
@@ -309,8 +353,19 @@
       ]
     },
     {
+      "slug": "angelfish-enrichment-guide",
+      "title": "Angelfish Enrichment Guide",
+      "excerpt": "The same study that found neon tetras do better in tens found no group size effect at all for angelfish. They are",
+      "date": "2026-11-03",
+      "image": "/assets/images/angelfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "angelfish-feeding-guide",
-      "title": "Angelfish Feeding Guide: Schedule and Diet",
+      "title": "What Do Angelfish Eat? Diet and Feeding Schedule",
       "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters",
       "date": "2026-07-31",
       "image": "/assets/images/angelfish-feeding.jpg",
@@ -354,13 +409,24 @@
     },
     {
       "slug": "argentine-tegu-cost-guide",
-      "title": "Argentine Tegu Cost: Full Price Breakdown",
+      "title": "Argentine Tegu Price: $200 to $1,200, Plus $1,000+ Setup",
       "excerpt": "Argentine tegus are one of the more expensive lizards on this site to set up properly, a direct consequence of just how",
       "date": "2026-07-24",
       "image": "/assets/images/argentine-tegu-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "argentine-tegu-enrichment-guide",
+      "title": "Argentine Tegu Enrichment Guide",
+      "excerpt": "Nobody has published an enrichment study on tegus. The closest evidence is the monitor problem-solving work, and this",
+      "date": "2026-10-20",
+      "image": "/assets/images/argentine-tegu-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -387,7 +453,7 @@
     },
     {
       "slug": "argentine-tegu-legal-guide",
-      "title": "Argentine Tegu Legal Guide: Florida Ban & Permits",
+      "title": "Are Argentine Tegus Legal? Florida Ban and Permits",
       "excerpt": "Argentine tegus aren't federally restricted and most states don't touch them, but Florida is the real exception. Since",
       "date": "2026-07-14",
       "image": "/assets/guides/argentine-tegu-legal.jpg",
@@ -420,7 +486,7 @@
     },
     {
       "slug": "axolotl-cost-guide",
-      "title": "Axolotl Cost: Full Price Breakdown",
+      "title": "Axolotl Price: $30 to $100, Plus $200 to $500 Setup",
       "excerpt": "Axolotls look deceptively simple to keep, a tank of water and a strange, smiling salamander. The real cost driver isn't",
       "date": "2026-07-18",
       "image": "/assets/images/axolotl-cost.jpg",
@@ -442,7 +508,7 @@
     },
     {
       "slug": "axolotl-feeding-guide",
-      "title": "Axolotl Feeding Guide: Schedule and Diet",
+      "title": "What Do Axolotls Eat? Diet and Feeding Schedule",
       "excerpt": "Axolotl feeding comes down to one central fact about how this species eats: it gulps its food whole, and that single",
       "date": "2026-08-13",
       "image": "/assets/images/axolotl-feeding.jpg",
@@ -475,7 +541,7 @@
     },
     {
       "slug": "axolotl-legal-guide",
-      "title": "Axolotl Legal: Banned States & VA Update",
+      "title": "Are Axolotls Legal? Banned States and the Virginia Update",
       "excerpt": "Axolotls are genuinely banned in a handful of states, California among them, but Virginia isn't one of them anymore. A",
       "date": "2026-07-15",
       "image": "/assets/guides/axolotl-legal.jpg",
@@ -497,7 +563,7 @@
     },
     {
       "slug": "ball-python-cost-guide",
-      "title": "Ball Python Cost: Full Price Breakdown",
+      "title": "Ball Python Price: $40 to $150, Plus $300 to $800 Setup",
       "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $300-800 to set up, then",
       "date": "2026-07-07",
       "image": "/assets/images/ball-python-cost.jpg",
@@ -507,8 +573,19 @@
       ]
     },
     {
+      "slug": "ball-python-enrichment-guide",
+      "title": "Ball Python Enrichment Guide",
+      "excerpt": "The rack argument has an actual peer-reviewed answer. Researchers compared 35 ball pythons in racks against furnished",
+      "date": "2026-10-14",
+      "image": "/assets/images/ball-python-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ball-python-feeding-guide",
-      "title": "Ball Python Feeding: Everything You Need to Know",
+      "title": "What Do Ball Pythons Eat? Prey Size, Schedule and Refusals",
       "excerpt": "Ball pythons are legendary for refusing food. Before you panic, here's what's actually normal, and when to actually",
       "date": "2025-04-26",
       "image": "/assets/images/ball-python-feeding.jpg",
@@ -584,11 +661,45 @@
       ]
     },
     {
+      "slug": "beagle-enrichment-guide",
+      "title": "Beagle Enrichment Guide",
+      "excerpt": "Dogs allowed to use their noses became measurably more optimistic. For a breed built around exactly that, the finding",
+      "date": "2026-11-06",
+      "image": "/assets/images/beagle-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-brumation-guide",
+      "title": "Bearded Dragon Brumation Guide: What to Expect",
+      "excerpt": "A bearded dragon that stops eating and sleeps for weeks might just be brumating. Here's the pre-brumation vet check,",
+      "date": "2026-10-15",
+      "image": "/assets/images/bearded-dragon-brumation.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "bearded-dragon-cost-guide",
-      "title": "Bearded Dragon Cost: Full Price Breakdown",
+      "title": "Bearded Dragon Price: $40 to $100, Plus $400 to $800 Setup",
       "excerpt": "What a bearded dragon actually costs: $400-800 to set up right, $50-108 a month after that, and the vet bills correct",
       "date": "2026-07-05",
       "image": "/assets/images/bearded-dragon-cost.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-eggs-and-egg-binding-guide",
+      "title": "Bearded Dragon Eggs & Egg Binding (Dystocia) Guide",
+      "excerpt": "Female bearded dragons can lay infertile eggs without ever meeting a male. Here's how to spot a gravid dragon, build a",
+      "date": "2026-10-04",
+      "image": "/assets/images/bearded-dragon-eggs-and-egg-binding.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -607,10 +718,21 @@
     },
     {
       "slug": "bearded-dragon-feeding-guide",
-      "title": "Bearded Dragon Feeding Guide: Schedule and Diet",
+      "title": "What Do Bearded Dragons Eat? Diet and Feeding Schedule",
       "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation",
       "date": "2026-07-27",
       "image": "/assets/images/bearded-dragon-feeding.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-growth-weight-checks-guide",
+      "title": "Bearded Dragon Growth Chart & Weight Check Guide",
+      "excerpt": "How to sex a bearded dragon, what normal growth looks like month by month, and how to read weight, body condition,",
+      "date": "2026-09-26",
+      "image": "/assets/images/bearded-dragon-growth-weight-checks.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
@@ -639,6 +761,28 @@
       ]
     },
     {
+      "slug": "bearded-dragon-safe-foods-guide",
+      "title": "Bearded Dragon Food List: What's Safe to Feed (Chart)",
+      "excerpt": "Every feeder insect, green, vegetable, and fruit a bearded dragon can eat, sorted into staple, occasional, rare, and",
+      "date": "2026-09-12",
+      "image": "/assets/images/bearded-dragon-safe-foods.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
+      "slug": "bearded-dragon-shopping-list",
+      "title": "Bearded Dragon Shopping List: Buy Once, Skip the Kit",
+      "excerpt": "The buy-once bearded dragon setup list: a real 4x2x2 enclosure, T5 UVB, a thermostat, and feeders, plus the pet store",
+      "date": "2026-09-01",
+      "image": "/assets/images/bearded-dragon-shopping-list.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "bearded-dragon-tank-setup-guide",
       "title": "Bearded Dragon Tank Setup Guide",
       "excerpt": "Bearded dragon husbandry has moved on from what old care sheets say. Bigger enclosures, stronger UVB, and more careful",
@@ -661,19 +805,32 @@
       ]
     },
     {
+      "slug": "bengal-cat-enrichment-guide",
+      "title": "Bengal Cat Enrichment Guide",
+      "excerpt": "A Bengal does not need different things from other cats. It needs the same things, provided at a scale that defeats",
+      "date": "2026-11-08",
+      "image": "/assets/images/bengal-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "bengal-cat-legal-guide",
-      "title": "Bengal Cat Laws by State: F1 to F5 and What Changes",
+      "title": "Are Bengal Cats Legal? F1 to F5 Rules by State",
       "excerpt": "The same Bengal is a domestic cat in Indiana, a dangerous wild animal in Minnesota, and legal in Iowa only from the",
       "date": "2026-08-13",
       "image": "/assets/guides/bengal-cat-legal.jpg",
       "category": "Legal",
       "categories": [
-        "Legal"
+        "Legal",
+        "Cats"
       ]
     },
     {
       "slug": "betta-fish-cost-guide",
-      "title": "Betta Fish Cost: Full Price Breakdown",
+      "title": "Betta Fish Price: $5 to $30, Plus $100 to $300 Setup",
       "excerpt": "Betta fish have a reputation as a starter pet you can keep in almost nothing, which is exactly the misconception worth",
       "date": "2026-07-14",
       "image": "/assets/images/betta-fish-cost.jpg",
@@ -683,8 +840,19 @@
       ]
     },
     {
+      "slug": "betta-fish-enrichment-guide",
+      "title": "Betta Fish Enrichment Guide",
+      "excerpt": "Bettas are the best-studied fish in the hobby, and the findings are awkward for two things everyone does: tiny tanks",
+      "date": "2026-10-15",
+      "image": "/assets/images/betta-fish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "betta-fish-feeding-guide",
-      "title": "Betta Fish Feeding Guide: Schedule and Diet",
+      "title": "What Do Betta Fish Eat? Diet and Feeding Schedule",
       "excerpt": "How much to actually feed a betta (less than you'd think), what belongs in the bowl, and the real reasons a betta goes",
       "date": "2026-07-24",
       "image": "/assets/images/betta-fish-feeding.jpg",
@@ -728,7 +896,7 @@
     },
     {
       "slug": "betta-fish-vs-goldfish-guide",
-      "title": "Betta Fish vs. Goldfish: Beginner Fish Guide",
+      "title": "Goldfish or Betta: Which Is Easier to Keep?",
       "excerpt": "Betta or goldfish? The real differences in tank size, temperature needs, social behavior, and lifespan - not just which",
       "date": "2026-07-08",
       "image": "/assets/images/betta-fish-vs-goldfish.jpg",
@@ -761,7 +929,7 @@
     },
     {
       "slug": "blue-tongue-skink-cost-guide",
-      "title": "Blue-Tongued Skink Cost: Full Price Breakdown",
+      "title": "Blue Tongue Skink Price: $100 to $700+, Setup $400 to $800",
       "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern",
       "date": "2026-07-13",
       "image": "/assets/images/blue-tongue-skink-cost.jpg",
@@ -771,8 +939,19 @@
       ]
     },
     {
+      "slug": "blue-tongue-skink-enrichment-guide",
+      "title": "Blue Tongue Skink Enrichment Guide",
+      "excerpt": "Nine eastern blue-tongues were given feeding enrichment. They fed longer, gained weight, and spent less time hiding.",
+      "date": "2026-10-16",
+      "image": "/assets/images/blue-tongue-skink-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "blue-tongue-skink-feeding-guide",
-      "title": "Blue Tongue Skink Feeding Guide: Schedule and Diet",
+      "title": "What Do Blue Tongue Skinks Eat? Diet and Feeding Schedule",
       "excerpt": "Vets and pet-industry care sheets genuinely disagree on how often to feed an adult blue tongue skink, by a factor of up",
       "date": "2026-07-30",
       "image": "/assets/images/blue-tongue-skink-feeding.jpg",
@@ -816,7 +995,7 @@
     },
     {
       "slug": "boa-constrictor-cost-guide",
-      "title": "Boa Constrictor Cost: Full Price Breakdown",
+      "title": "Boa Constrictor Price: $50 to $200, Setup $400 to $1,200",
       "excerpt": "Boa constrictors are genuinely affordable at the entry level, and most of what's sold as a boa in the pet trade is a",
       "date": "2026-07-18",
       "image": "/assets/images/boa-constrictor-cost.jpg",
@@ -826,8 +1005,19 @@
       ]
     },
     {
+      "slug": "boa-constrictor-enrichment-guide",
+      "title": "Boa Constrictor Enrichment Guide",
+      "excerpt": "The ball python housing study compared racks against furnished terrariums. Boas are kept in racks far more often and",
+      "date": "2026-10-21",
+      "image": "/assets/images/boa-constrictor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "boa-constrictor-feeding-guide",
-      "title": "Boa Constrictor Feeding Guide: Schedule and Diet",
+      "title": "What Do Boa Constrictors Eat? Prey Size and Schedule",
       "excerpt": "Boa constrictor feeding is genuinely simple in principle, whole prey covers this species' nutritional needs completely,",
       "date": "2026-08-14",
       "image": "/assets/images/boa-constrictor-feeding.jpg",
@@ -860,7 +1050,7 @@
     },
     {
       "slug": "boa-constrictor-legal-guide",
-      "title": "Boa Constrictor Legal Guide: State Bans & Permits",
+      "title": "Are Boa Constrictors Legal? State Bans and Permits",
       "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal",
       "date": "2026-07-16",
       "image": "/assets/guides/boa-constrictor-legal.jpg",
@@ -892,14 +1082,37 @@
       ]
     },
     {
+      "slug": "border-collie-enrichment-guide",
+      "title": "Border Collie Enrichment Guide",
+      "excerpt": "The standard advice is more exercise. Run a border collie harder and you get a fitter border collie who still needs a",
+      "date": "2026-11-06",
+      "image": "/assets/images/border-collie-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "box-turtle-cost-guide",
-      "title": "Box Turtle Cost, Legal Sourcing, and Lifespan Guide",
+      "title": "How Much Is a Box Turtle? Price, Setup and Legal Notes",
       "excerpt": "Box turtles come with a genuinely important sourcing consideration that affects both cost and legality, worth",
       "date": "2026-07-25",
       "image": "/assets/images/box-turtle-cost.jpg",
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"
+      ]
+    },
+    {
+      "slug": "box-turtle-enrichment-guide",
+      "title": "Box Turtle Enrichment Guide",
+      "excerpt": "Thirty-eight box turtles, one month, two enclosure types. The enriched group ended with a lower stress ratio in their",
+      "date": "2026-10-17",
+      "image": "/assets/images/box-turtle-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -947,8 +1160,21 @@
       ]
     },
     {
+      "slug": "brachycephalic-airway-syndrome-boas-guide",
+      "title": "BOAS in Dogs & Cats: Signs, Grades and Surgery",
+      "excerpt": "Snoring is not a personality trait. In flat-faced breeds it is usually the first audible sign of an airway that does",
+      "date": "2026-10-02",
+      "image": "/assets/images/brachycephalic-airway-syndrome.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "slug": "bristlenose-pleco-cost-guide",
-      "title": "Bristlenose Pleco Cost: Full Price Breakdown",
+      "title": "Bristlenose Pleco Price: $7 to $25, Plus $155 to $265 Setup",
       "excerpt": "A bristlenose pleco itself is cheap, but this is one of the few beginner fish where a single required item, driftwood,",
       "date": "2026-09-14",
       "image": "/assets/images/bristlenose-pleco-cost.jpg",
@@ -958,8 +1184,19 @@
       ]
     },
     {
+      "slug": "bristlenose-pleco-enrichment-guide",
+      "title": "Bristlenose Pleco Enrichment Guide",
+      "excerpt": "Plecos rasp wood constantly and every care sheet says they digest it. The research on wood-eating catfish is less",
+      "date": "2026-11-05",
+      "image": "/assets/images/bristlenose-pleco-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "bristlenose-pleco-feeding-guide",
-      "title": "Bristlenose Pleco Feeding Guide: Diet and Driftwood",
+      "title": "What Do Bristlenose Plecos Eat? Diet and Feeding Schedule",
       "excerpt": "A bristlenose pleco is sold as a living algae solution, and as an adult that reputation quietly stops being true. What",
       "date": "2026-09-14",
       "image": "/assets/images/bristlenose-pleco-feeding.jpg",
@@ -1014,7 +1251,7 @@
     },
     {
       "slug": "budgie-cost-guide",
-      "title": "Budgie Cost: Full Price Breakdown",
+      "title": "Budgie Price: $20 to $80, Plus $175 to $475 Setup",
       "excerpt": "Budgies are one of the more affordable pet birds to buy, but avian vet care is scarcer and pricier than dog or cat",
       "date": "2026-07-10",
       "image": "/assets/images/budgie-cost.jpg",
@@ -1079,14 +1316,37 @@
       ]
     },
     {
+      "slug": "bulldog-enrichment-guide",
+      "title": "Bulldog Enrichment Guide",
+      "excerpt": "The English bulldog carries the French bulldog's airway problem on a heavier frame with worse joints. The margin for",
+      "date": "2026-11-07",
+      "image": "/assets/images/bulldog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "california-kingsnake-cost-guide",
-      "title": "California Kingsnake Cost: Full Price Breakdown",
+      "title": "California Kingsnake Price: $45 to $300, Setup $200 to $500",
       "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment",
       "date": "2026-07-25",
       "image": "/assets/images/california-kingsnake-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "california-kingsnake-enrichment-guide",
+      "title": "California Kingsnake Enrichment Guide",
+      "excerpt": "Nobody has studied kingsnake enrichment. The corn snake work is the closest, it is from the same family, and this guide",
+      "date": "2026-10-20",
+      "image": "/assets/images/california-kingsnake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1124,13 +1384,24 @@
     },
     {
       "slug": "canary-cost-guide",
-      "title": "Canary Cost: Full Price Breakdown",
+      "title": "Canary Price: $25 to $500, Plus $200 to $400 Setup",
       "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into",
       "date": "2026-07-26",
       "image": "/assets/images/canary-cost.jpg",
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "canary-enrichment-guide",
+      "title": "Canary Enrichment Guide",
+      "excerpt": "Male canaries sing more when there is no mate present and much less once there is. The most cheerful thing about the",
+      "date": "2026-10-30",
+      "image": "/assets/images/canary-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1168,7 +1439,7 @@
     },
     {
       "slug": "cardinal-tetra-cost-guide",
-      "title": "Cardinal Tetra Cost: Full Price Breakdown",
+      "title": "Cardinal Tetra Price: $1 to $5 Each, Plus $65 to $230 Setup",
       "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger",
       "date": "2026-09-05",
       "image": "/assets/images/cardinal-tetra-cost.jpg",
@@ -1178,8 +1449,19 @@
       ]
     },
     {
+      "slug": "cardinal-tetra-enrichment-guide",
+      "title": "Cardinal Tetra Enrichment Guide",
+      "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That",
+      "date": "2026-11-04",
+      "image": "/assets/images/cardinal-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cardinal-tetra-feeding-guide",
-      "title": "Cardinal Tetra Feeding Guide: Schedule and Diet",
+      "title": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
       "excerpt": "Cardinal tetra feeding is simple in principle, small food in small amounts, but the rule that actually protects the",
       "date": "2026-09-06",
       "image": "/assets/images/cardinal-tetra-feeding.jpg",
@@ -1219,6 +1501,31 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ]
+    },
+    {
+      "slug": "cardiomyopathy-in-cats-and-dogs-guide",
+      "title": "HCM in Cats & DCM in Dogs: Heart Disease Explained",
+      "excerpt": "Cardiomyopathy means disease of the heart muscle. Cats mostly get the thickening kind, dogs mostly get the thinning",
+      "date": "2026-10-01",
+      "image": "/assets/images/cardiomyopathy-cats-dogs.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "slug": "cat-enrichment-guide",
+      "title": "Cat Enrichment Guide",
+      "excerpt": "Veterinary medicine has an agreed framework for what a cat's environment must provide. The pillar most homes fail is",
+      "date": "2026-11-06",
+      "image": "/assets/images/cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
       ]
     },
     {
@@ -1289,7 +1596,7 @@
     },
     {
       "slug": "cherry-shrimp-cost-guide",
-      "title": "Cherry Shrimp Cost: Full Price Breakdown",
+      "title": "Cherry Shrimp Price: $4 to $8 Each, Plus $45 to $110 Setup",
       "excerpt": "Cherry shrimp are one of the cheapest animals on this site to buy, but the real cost story isn't the shrimp, it's how",
       "date": "2026-09-16",
       "image": "/assets/images/cherry-shrimp-cost.jpg",
@@ -1299,8 +1606,19 @@
       ]
     },
     {
+      "slug": "cherry-shrimp-enrichment-guide",
+      "title": "Cherry Shrimp Enrichment Guide",
+      "excerpt": "A 2021 review of 300 papers concluded decapod crustaceans are probably sentient, and UK law changed to match. Shrimp",
+      "date": "2026-11-02",
+      "image": "/assets/images/cherry-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cherry-shrimp-feeding-guide",
-      "title": "Cherry Shrimp Feeding Guide: Diet & Portions",
+      "title": "What Do Cherry Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Cherry shrimp mostly feed themselves, grazing biofilm and algae all day, which is exactly why it's so easy to overfeed",
       "date": "2026-09-16",
       "image": "/assets/images/cherry-shrimp-feeding.jpg",
@@ -1344,7 +1662,7 @@
     },
     {
       "slug": "chinchilla-cost-guide",
-      "title": "Chinchilla Cost: Full Price Breakdown",
+      "title": "Chinchilla Price: $75 to $700, Plus $455 to $1,225 Setup",
       "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself",
       "date": "2026-07-19",
       "image": "/assets/images/chinchilla-cost.jpg",
@@ -1354,8 +1672,19 @@
       ]
     },
     {
+      "slug": "chinchilla-enrichment-guide",
+      "title": "Chinchilla Enrichment Guide",
+      "excerpt": "A study of farmed chinchillas found fur chewing decreased in solid-floor cages with litter. The species' signature",
+      "date": "2026-10-18",
+      "image": "/assets/images/chinchilla-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "chinchilla-feeding-guide",
-      "title": "Chinchilla Feeding Guide: Schedule and Diet",
+      "title": "What Do Chinchillas Eat? Diet and Feeding Schedule",
       "excerpt": "Chinchillas re-eat a special dropping overnight to run food through the gut a second time, a required part of",
       "date": "2026-08-01",
       "image": "/assets/images/chinchilla-feeding.jpg",
@@ -1432,7 +1761,7 @@
     },
     {
       "slug": "cockatiel-cost-guide",
-      "title": "Cockatiel Cost: Full Price Breakdown",
+      "title": "Cockatiel Price: $75 to $250, Plus $320 to $860 Setup",
       "excerpt": "Cockatiels are relatively affordable to buy, but the real budgeting story here is how long you'll be caring for one. A",
       "date": "2026-07-15",
       "image": "/assets/images/cockatiel-cost.jpg",
@@ -1442,8 +1771,19 @@
       ]
     },
     {
+      "slug": "cockatiel-enrichment-guide",
+      "title": "Cockatiel Enrichment Guide",
+      "excerpt": "Most parrot enrichment research targets large or endangered species. Cockatiels finally got two studies of their own,",
+      "date": "2026-10-18",
+      "image": "/assets/images/cockatiel-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cockatiel-feeding-guide",
-      "title": "Cockatiel Feeding Guide: Schedule and Diet",
+      "title": "What Do Cockatiels Eat? Diet and Feeding Schedule",
       "excerpt": "Why pellets, not seeds, should make up most of a cockatiel's bowl, how much fresh food actually belongs in there, and",
       "date": "2026-07-25",
       "image": "/assets/images/cockatiel-feeding.jpg",
@@ -1498,7 +1838,7 @@
     },
     {
       "slug": "cockatoo-cost-guide",
-      "title": "Cockatoo Cost: Full Price Breakdown",
+      "title": "Cockatoo Price: $700 to $3,000, Plus $250 to $1,300 Setup",
       "excerpt": "Cockatoos are a genuinely serious financial and emotional commitment, and the purchase price is really just the",
       "date": "2026-07-26",
       "image": "/assets/images/cockatoo-cost.jpg",
@@ -1508,8 +1848,19 @@
       ]
     },
     {
+      "slug": "cockatoo-enrichment-guide",
+      "title": "Cockatoo Enrichment Guide",
+      "excerpt": "A feather plucking study tried drugs, socialisation, feeding enrichment and training sessions on sulphur-crested",
+      "date": "2026-10-30",
+      "image": "/assets/images/cockatoo-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "cockatoo-feeding-guide",
-      "title": "Cockatoo Feeding Guide: Schedule and Diet",
+      "title": "What Do Cockatoos Eat? Diet and Feeding Schedule",
       "excerpt": "Cockatoo feeding comes down to a ratio worth memorizing: pellets should dominate the bowl, and seeds should stay firmly",
       "date": "2026-08-15",
       "image": "/assets/images/cockatoo-feeding.jpg",
@@ -1574,6 +1925,19 @@
       ]
     },
     {
+      "slug": "conformation-breeding-laws-guide",
+      "title": "Conformation Breeding Laws: Dutch Ban, Norway, US",
+      "excerpt": "Our exotic pet map answers which species you may keep. This is the other axis: which shapes an animal is allowed to be.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/conformation-breeding-laws.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "slug": "constriction-does-not-crush-or-suffocate",
       "title": "What Constriction Actually Does to Prey",
       "excerpt": "Constrictors do not crush bones and they do not slowly suffocate anything. Measurements taken inside the coils show it",
@@ -1586,13 +1950,24 @@
     },
     {
       "slug": "conure-cost-guide",
-      "title": "Green Cheek Conure Cost: Full Price Breakdown",
+      "title": "Green Cheek Conure Price: $250 to $700+, Setup $400 to $900+",
       "excerpt": "Green cheek conures sit at a moderate price point for a parrot, but color mutations and the wrong sales channel can",
       "date": "2026-07-29",
       "image": "/assets/images/conure-cost.jpg",
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "conure-enrichment-guide",
+      "title": "Conure Enrichment Guide",
+      "excerpt": "Wild parrots spend up to six hours a day working for food. A conure with a full bowl is done in three minutes and then",
+      "date": "2026-10-30",
+      "image": "/assets/images/conure-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -1630,7 +2005,7 @@
     },
     {
       "slug": "corn-snake-cost-guide",
-      "title": "Corn Snake Cost: Full Price Breakdown",
+      "title": "Corn Snake Price: $25 to $70, Plus $250 to $600 Setup",
       "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then genuinely low costs",
       "date": "2026-07-11",
       "image": "/assets/images/corn-snake-cost.jpg",
@@ -1640,8 +2015,19 @@
       ]
     },
     {
+      "slug": "corn-snake-enrichment-guide",
+      "title": "Corn Snake Enrichment Guide",
+      "excerpt": "Given an enclosure longer than their own body, corn snakes stretch all the way out and prefer it. That single result",
+      "date": "2026-10-14",
+      "image": "/assets/images/corn-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "corn-snake-feeding-guide",
-      "title": "Corn Snake Feeding Guide: Schedule and Diet",
+      "title": "What Do Corn Snakes Eat? Diet and Feeding Schedule",
       "excerpt": "How often to feed a corn snake by age and weight, why frozen/thawed beats live prey, and the honest range of reasons",
       "date": "2026-07-25",
       "image": "/assets/images/corn-snake-feeding.jpg",
@@ -1707,7 +2093,7 @@
     },
     {
       "slug": "corydoras-catfish-cost-guide",
-      "title": "Corydoras Catfish Cost: Full Price Breakdown",
+      "title": "Corydoras Catfish Price: $3 to $30, Plus $150 to $215 Setup",
       "excerpt": "Corydoras catfish are genuinely inexpensive on their own, but the real budgeting consideration isn't the individual",
       "date": "2026-07-27",
       "image": "/assets/images/corydoras-catfish-cost.jpg",
@@ -1717,8 +2103,19 @@
       ]
     },
     {
+      "slug": "corydoras-catfish-enrichment-guide",
+      "title": "Corydoras Catfish Enrichment Guide",
+      "excerpt": "Everyone says gravel wears down cory barbels. The better explanation is that barbel erosion is bacterial, and a dirty",
+      "date": "2026-11-03",
+      "image": "/assets/images/corydoras-catfish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "corydoras-catfish-feeding-guide",
-      "title": "Corydoras Catfish Feeding Guide: Schedule and Diet",
+      "title": "What Do Corydoras Catfish Eat? Diet and Feeding Schedule",
       "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that genuinely isn't accurate, and believing it is one of",
       "date": "2026-08-10",
       "image": "/assets/images/corydoras-catfish-feeding.jpg",
@@ -1762,7 +2159,7 @@
     },
     {
       "slug": "crested-gecko-cost-guide",
-      "title": "Crested Gecko Cost: Full Price Breakdown",
+      "title": "Crested Gecko Price: $50 to $200, Plus $300 to $600 Setup",
       "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the",
       "date": "2026-07-12",
       "image": "/assets/images/crested-gecko-cost.jpg",
@@ -1784,7 +2181,7 @@
     },
     {
       "slug": "crested-gecko-feeding-guide",
-      "title": "Crested Gecko Feeding Guide: Schedule and Diet",
+      "title": "What Do Crested Geckos Eat? Diet and Feeding Schedule",
       "excerpt": "Why powdered crested gecko diet, not live insects, should be the actual staple, and how to tell a picky eater from a",
       "date": "2026-07-29",
       "image": "/assets/images/crested-gecko-feeding.jpg",
@@ -1861,8 +2258,20 @@
       ]
     },
     {
+      "slug": "dachshund-enrichment-guide",
+      "title": "Dachshund Enrichment Guide",
+      "excerpt": "A dachshund is a scent hound with a spine that fails. That combination means the best enrichment for the breed is also",
+      "date": "2026-11-08",
+      "image": "/assets/images/dachshund-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "degu-cost-guide",
-      "title": "Degu Cost: Full Price Breakdown",
+      "title": "Degu Price: $10 to $50, Plus $100 to $300 Setup",
       "excerpt": "Degus are genuinely affordable individually, and the real budgeting point with this species is that 'individually'",
       "date": "2026-08-08",
       "image": "/assets/images/degu-cost.jpg",
@@ -1872,8 +2281,19 @@
       ]
     },
     {
+      "slug": "degu-enrichment-guide",
+      "title": "Degu Enrichment Guide",
+      "excerpt": "Degus dust bathe more on sand a familiar animal has already used. It is scent marking as much as grooming, which",
+      "date": "2026-10-28",
+      "image": "/assets/images/degu-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "degu-feeding-guide",
-      "title": "Degu Feeding Guide: Schedule and Diet",
+      "title": "What Do Degus Eat? Diet and Feeding Schedule",
       "excerpt": "Degu feeding really comes down to one rule that matters more than anything else: sugar is genuinely dangerous for this",
       "date": "2026-08-10",
       "image": "/assets/images/degu-feeding.jpg",
@@ -1884,7 +2304,7 @@
     },
     {
       "slug": "degu-gerbil-overview",
-      "title": "Degu vs Gerbil: Both Need a Pair",
+      "title": "Degu vs Gerbil: Which Small Pet Fits You? Key Differences",
       "excerpt": "The hamster already covered on this site is a lesson in solitude, one per cage, always. Degus and gerbils teach the",
       "date": "2026-08-10",
       "image": "/assets/images/degu-gerbil-overview.jpg",
@@ -1939,7 +2359,7 @@
     },
     {
       "slug": "discus-cost-guide",
-      "title": "Discus Fish Cost: Full Price Breakdown",
+      "title": "Discus Fish Price: $20 to $450, Plus $600 to $800 Setup",
       "excerpt": "Discus are one of the pricier community fish you can keep, and the real cost isn't the fish itself, it's the filtration",
       "date": "2026-09-05",
       "image": "/assets/images/discus-cost.jpg",
@@ -1949,8 +2369,19 @@
       ]
     },
     {
+      "slug": "discus-enrichment-guide",
+      "title": "Discus Enrichment Guide",
+      "excerpt": "Discus are shy cichlids that hold a pecking order. In small groups the bottom fish has nowhere to be, which is why six",
+      "date": "2026-11-05",
+      "image": "/assets/images/discus-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "discus-feeding-guide",
-      "title": "Discus Feeding Guide: Schedule and Diet",
+      "title": "What Do Discus Eat? Diet and Feeding Schedule",
       "excerpt": "Discus have unusually small mouths for such a broad-bodied fish, and their fry start life feeding on a parent's own",
       "date": "2026-09-06",
       "image": "/assets/images/discus-feeding.jpg",
@@ -2016,6 +2447,18 @@
       ]
     },
     {
+      "slug": "dog-enrichment-guide",
+      "title": "Dog Enrichment Guide",
+      "excerpt": "Two weeks of nosework made dogs measurably more optimistic on a cognitive bias test. The control group did heelwork and",
+      "date": "2026-11-06",
+      "image": "/assets/images/dog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "dung-beetles-navigate-by-the-milky-way",
       "title": "Dung Beetles Navigate by the Milky Way: The Study",
       "excerpt": "An insect with a brain the size of a grain of rice steers by the galaxy. Proving it involved tiny cardboard visors, a",
@@ -2040,7 +2483,7 @@
     },
     {
       "slug": "emperor-scorpion-cost-guide",
-      "title": "Emperor Scorpion Cost: Full Price Breakdown",
+      "title": "Emperor Scorpion Price: $25 to $100, Plus $80 to $250 Setup",
       "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary",
       "date": "2026-07-31",
       "image": "/assets/images/emperor-scorpion-cost.jpg",
@@ -2050,8 +2493,19 @@
       ]
     },
     {
+      "slug": "emperor-scorpion-enrichment-guide",
+      "title": "Emperor Scorpion Enrichment Guide",
+      "excerpt": "Emperor scorpions are subsocial in the wild, with mothers and offspring sharing a burrow. Communal housing is possible",
+      "date": "2026-11-01",
+      "image": "/assets/images/emperor-scorpion-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "emperor-scorpion-feeding-guide",
-      "title": "Emperor Scorpion Feeding Guide: Schedule and Diet",
+      "title": "What Do Emperor Scorpions Eat? Diet and Feeding Schedule",
       "excerpt": "Emperor scorpion feeding is genuinely low-effort once you internalize the one fact that changes everything about how",
       "date": "2026-08-16",
       "image": "/assets/images/emperor-scorpion-feeding.jpg",
@@ -2084,7 +2538,7 @@
     },
     {
       "slug": "emperor-scorpion-legal-guide",
-      "title": "Emperor Scorpion Laws by State and the CITES Rule",
+      "title": "Are Emperor Scorpions Legal? State Laws and the CITES Rule",
       "excerpt": "Montana clears the emperor scorpion by name while banning every pet tarantula. Maine does the reverse. The one rule",
       "date": "2026-08-18",
       "image": "/assets/guides/emperor-scorpion-legal.jpg",
@@ -2127,8 +2581,20 @@
       ]
     },
     {
+      "slug": "feline-kidney-disease-ckd-pkd-guide",
+      "title": "Cat Kidney Disease: CKD and PKD Explained",
+      "excerpt": "A cat's kidneys hide their own damage. Creatinine does not rise until about three quarters of the filtering units are",
+      "date": "2026-10-09",
+      "image": "/assets/images/feline-kidney-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Cats"
+      ]
+    },
+    {
       "slug": "fennec-fox-legal-guide",
-      "title": "Fennec Fox Laws by State: Where the Smallest Fox Is Banned",
+      "title": "Are Fennec Foxes Legal? Where the Smallest Fox Is Banned",
       "excerpt": "A three pound desert fox gets caught by rules written about rabies vectors and coyotes. Maryland bans it with the",
       "date": "2026-08-20",
       "image": "/assets/guides/fennec-fox-legal.jpg",
@@ -2150,7 +2616,7 @@
     },
     {
       "slug": "ferret-cost-guide",
-      "title": "Ferret Cost: Full Price Breakdown",
+      "title": "Ferret Price: $75 to $400, Plus $300 to $700 Setup",
       "excerpt": "Ferrets are moderately priced to buy, but they're genuinely the most expensive long-term pet on this site, driven",
       "date": "2026-07-13",
       "image": "/assets/images/ferret-cost.jpg",
@@ -2160,8 +2626,19 @@
       ]
     },
     {
+      "slug": "ferret-enrichment-guide",
+      "title": "Ferret Enrichment Guide",
+      "excerpt": "Ferrets without playtime spent more time lying awake with their eyes open, screeched more, and sat and stood less.",
+      "date": "2026-10-17",
+      "image": "/assets/images/ferret-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ferret-feeding-guide",
-      "title": "Ferret Feeding Guide: Schedule and Diet",
+      "title": "What Do Ferrets Eat? Diet and Feeding Schedule",
       "excerpt": "Why ferrets need food available almost constantly, what actually belongs in the bowl, and why a ferret going off food",
       "date": "2026-07-24",
       "image": "/assets/images/ferret-feeding.jpg",
@@ -2216,13 +2693,24 @@
     },
     {
       "slug": "fire-bellied-toad-cost-guide",
-      "title": "Fire-Bellied Toad Cost: Full Price Breakdown",
+      "title": "Fire-Bellied Toad Price: $10 to $25, Plus $150 to $300 Setup",
       "excerpt": "Fire-bellied toads are genuinely inexpensive, and the setup cost here goes toward something a bit different than most",
       "date": "2026-07-27",
       "image": "/assets/images/fire-bellied-toad-cost.jpg",
       "category": "Amphibians",
       "categories": [
         "Amphibians"
+      ]
+    },
+    {
+      "slug": "fire-bellied-toad-enrichment-guide",
+      "title": "Fire-Bellied Toad Enrichment Guide",
+      "excerpt": "Aquatic frogs given a choice picked plants over PVC pipes by 40 percent, and picked both over open water. It is a small",
+      "date": "2026-10-27",
+      "image": "/assets/images/fire-bellied-toad-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2260,13 +2748,24 @@
     },
     {
       "slug": "fire-skink-cost-guide",
-      "title": "Fire Skink Cost: Full Price Breakdown",
+      "title": "Fire Skink Price: $25 to $40, Plus Setup and Monthly Costs",
       "excerpt": "Fire skinks are genuinely affordable, and the price gap between captive-bred and wild-caught animals is worth paying",
       "date": "2026-08-11",
       "image": "/assets/images/fire-skink-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "fire-skink-enrichment-guide",
+      "title": "Fire Skink Enrichment Guide",
+      "excerpt": "Skinks given live prey fed more, gained more weight, and spent less time hiding. Fire skinks are the species keepers",
+      "date": "2026-10-26",
+      "image": "/assets/images/fire-skink-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2315,7 +2814,7 @@
     },
     {
       "slug": "flying-squirrel-cost-guide",
-      "title": "Flying Squirrel Cost: Full Price Breakdown",
+      "title": "Flying Squirrel Price: $200 to $450, Plus $200 to $500 Setup",
       "excerpt": "Flying squirrels are native US wildlife, not an imported exotic, so the first real question isn't the price tag, it's",
       "date": "2026-09-05",
       "image": "/assets/images/flying-squirrel-cost.jpg",
@@ -2325,8 +2824,19 @@
       ]
     },
     {
+      "slug": "flying-squirrel-enrichment-guide",
+      "title": "Flying Squirrel Enrichment Guide",
+      "excerpt": "A flying squirrel and a sugar glider are not related. They are a rodent and a marsupial that arrived at the same body",
+      "date": "2026-10-29",
+      "image": "/assets/images/flying-squirrel-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "flying-squirrel-feeding-guide",
-      "title": "Flying Squirrel Feeding Guide: Diet and Schedule",
+      "title": "What Do Flying Squirrels Eat? Diet and Feeding Schedule",
       "excerpt": "A flying squirrel's wild diet of acorns, seeds, fungi, and the occasional bird egg is easy to approximate badly in",
       "date": "2026-09-06",
       "image": "/assets/images/flying-squirrel-feeding.jpg",
@@ -2359,7 +2869,7 @@
     },
     {
       "slug": "flying-squirrel-legal-guide",
-      "title": "Flying Squirrel Laws: The Most Restricted Small Pet We Cover",
+      "title": "Are Flying Squirrels Legal? The Most Restricted Small Pet",
       "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most",
       "date": "2026-09-27",
       "image": "/assets/guides/flying-squirrel-legal.jpg",
@@ -2391,8 +2901,20 @@
       ]
     },
     {
+      "slug": "french-bulldog-enrichment-guide",
+      "title": "French Bulldog Enrichment Guide",
+      "excerpt": "Most dog enrichment advice assumes the dog can breathe hard. For a French bulldog that assumption is the problem, so",
+      "date": "2026-11-07",
+      "image": "/assets/images/french-bulldog-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "french-bulldog-feeding-guide",
-      "title": "French Bulldog Feeding Guide: Schedule and Diet",
+      "title": "French Bulldog Feeding Schedule: How Much and How Often",
       "excerpt": "A French Bulldog's legendary gas is often less about diet and more about how the breed is built to breathe. Here's a",
       "date": "2026-08-02",
       "image": "/assets/images/french-bulldog-feeding.jpg",
@@ -2414,7 +2936,7 @@
     },
     {
       "slug": "gargoyle-gecko-cost-guide",
-      "title": "Gargoyle Gecko Cost: Full Price Breakdown",
+      "title": "Gargoyle Gecko Price: $50 to $1,000, Plus $230 to $445 Setup",
       "excerpt": "Gargoyle geckos sit at an interesting price point: genuinely affordable for a common reticulated animal, but morphs and",
       "date": "2026-07-24",
       "image": "/assets/images/gargoyle-gecko-cost.jpg",
@@ -2424,8 +2946,19 @@
       ]
     },
     {
+      "slug": "gargoyle-gecko-enrichment-guide",
+      "title": "Gargoyle Gecko Enrichment Guide",
+      "excerpt": "The crested gecko stress-hormone study found geckos that engaged with novel objects sooner had lower baseline stress.",
+      "date": "2026-10-22",
+      "image": "/assets/images/gargoyle-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "gargoyle-gecko-feeding-guide",
-      "title": "Gargoyle Gecko Feeding Guide: Schedule and Diet",
+      "title": "What Do Gargoyle Geckos Eat? Diet and Feeding Schedule",
       "excerpt": "Gargoyle geckos are more carnivorous than their crested gecko cousins, which is why insects are a required part of the",
       "date": "2026-07-30",
       "image": "/assets/images/gargoyle-gecko-feeding.jpg",
@@ -2436,7 +2969,7 @@
     },
     {
       "slug": "gargoyle-gecko-handling-guide",
-      "title": "Gargoyle Gecko Handling: Complete Guide",
+      "title": "Gargoyle Gecko Handling: How Often, How Long, What to Avoid",
       "excerpt": "Gargoyle geckos are docile and slow-moving as adults, genuinely one of the calmer arboreal geckos to handle, though",
       "date": "2026-07-24",
       "image": "/assets/images/gargoyle-gecko-handling.jpg",
@@ -2480,7 +3013,7 @@
     },
     {
       "slug": "garter-snake-cost-guide",
-      "title": "Garter Snake Cost: Full Price Breakdown",
+      "title": "Garter Snake Price: $20 to $50, Plus $200 to $400 Setup",
       "excerpt": "Common garter snakes are some of the cheapest snakes to acquire, some keepers find one in the backyard for free, but a",
       "date": "2026-09-24",
       "image": "/assets/images/garter-snake-cost.jpg",
@@ -2490,8 +3023,19 @@
       ]
     },
     {
+      "slug": "garter-snake-enrichment-guide",
+      "title": "Garter Snake Enrichment Guide",
+      "excerpt": "A widely cited enrichment study is often attributed to garter snakes. It was ratsnakes. Garter snakes have nothing of",
+      "date": "2026-10-21",
+      "image": "/assets/images/garter-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "garter-snake-feeding-guide",
-      "title": "Garter Snake Feeding Guide: Diet and Schedule",
+      "title": "What Do Garter Snakes Eat? Fish, Worms and Why Not Mice",
       "excerpt": "Garter snakes are semi-aquatic hunters built around fish, earthworms, and amphibians, not rodents, and a lot of new",
       "date": "2026-09-24",
       "image": "/assets/images/garter-snake-feeding.jpg",
@@ -2546,7 +3090,7 @@
     },
     {
       "slug": "gerbil-cost-guide",
-      "title": "Gerbil Cost: Full Price Breakdown",
+      "title": "Gerbil Price: $5 to $50 Each, Plus $150 to $350 Setup",
       "excerpt": "Gerbils are genuinely one of the more affordable small pets on this site, with one important caveat: like the degu also",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-cost.jpg",
@@ -2556,8 +3100,19 @@
       ]
     },
     {
+      "slug": "gerbil-enrichment-guide",
+      "title": "Gerbil Enrichment Guide",
+      "excerpt": "Gerbils that grow up with a tunnel leading to a chamber do not develop stereotypic corner digging. Gerbils given sand",
+      "date": "2026-10-28",
+      "image": "/assets/images/gerbil-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "gerbil-feeding-guide",
-      "title": "Gerbil Feeding Guide: Schedule and Diet",
+      "title": "What Do Gerbils Eat? Diet and Feeding Schedule",
       "excerpt": "A sunflower-seed-heavy mix looks like a complete gerbil diet, but a gerbil will happily pick out the fatty seeds and",
       "date": "2026-08-15",
       "image": "/assets/images/gerbil-feeding.jpg",
@@ -2623,7 +3178,7 @@
     },
     {
       "slug": "german-shepherd-feeding-guide",
-      "title": "German Shepherd Feeding Guide: Schedule and Diet",
+      "title": "German Shepherd Feeding Schedule: How Much and How Often",
       "excerpt": "A slow-maturing large breed with a genuine, breed-linked digestive condition to know about. Here's a real feeding",
       "date": "2026-07-28",
       "image": "/assets/images/german-shepherd-feeding.jpg",
@@ -2634,7 +3189,7 @@
     },
     {
       "slug": "ghost-shrimp-cost-guide",
-      "title": "Ghost Shrimp Cost: Full Price Breakdown",
+      "title": "Ghost Shrimp Price: Under $1 Each, Plus $40 to $130 Setup",
       "excerpt": "Ghost shrimp are some of the cheapest livestock in the aquarium hobby, sold in bulk as feeder stock for other fish as",
       "date": "2026-09-18",
       "image": "/assets/images/ghost-shrimp-cost.jpg",
@@ -2644,8 +3199,19 @@
       ]
     },
     {
+      "slug": "ghost-shrimp-enrichment-guide",
+      "title": "Ghost Shrimp Enrichment Guide",
+      "excerpt": "A tank of ghost shrimp is usually several species in one bag, kept in feeder conditions, sold cheap. Most of what goes",
+      "date": "2026-11-02",
+      "image": "/assets/images/ghost-shrimp-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "ghost-shrimp-feeding-guide",
-      "title": "Ghost Shrimp Feeding Guide: Diet and Schedule",
+      "title": "What Do Ghost Shrimp Eat? Diet and Feeding Schedule",
       "excerpt": "Ghost shrimp feeding is genuinely easy, they'll scavenge most of their own food, but the one thing worth understanding",
       "date": "2026-09-18",
       "image": "/assets/images/ghost-shrimp-feeding.jpg",
@@ -2689,13 +3255,24 @@
     },
     {
       "slug": "giant-millipede-cost-guide",
-      "title": "Giant Millipede Cost: Full Price Breakdown",
+      "title": "Giant Millipede Price: $75 to $150, Plus $75 to $150 Setup",
       "excerpt": "Giant African millipedes are genuinely inexpensive to keep month to month, though the animal itself costs more than you",
       "date": "2026-07-28",
       "image": "/assets/images/giant-millipede-cost.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "giant-millipede-enrichment-guide",
+      "title": "Giant Millipede Enrichment Guide",
+      "excerpt": "For most pets, substrate is flooring. For a giant millipede it is the burrow, the humidity buffer and most of the diet",
+      "date": "2026-11-02",
+      "image": "/assets/images/giant-millipede-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2722,7 +3299,7 @@
     },
     {
       "slug": "giant-millipede-legal-guide",
-      "title": "Giant African Millipede: Legal Guide",
+      "title": "Are Giant African Millipedes Legal? State and Federal Rules",
       "excerpt": "There was never a 2006 blanket import ban on giant African millipedes, despite what hobbyist forums repeat. The real",
       "date": "2026-07-23",
       "image": "/assets/guides/giant-millipede-legal.jpg",
@@ -2755,7 +3332,7 @@
     },
     {
       "slug": "golden-retriever-feeding-guide",
-      "title": "Golden Retriever Feeding Guide: Schedule and Diet",
+      "title": "Golden Retriever Feeding Schedule: How Much and How Often",
       "excerpt": "Goldens are famously food-motivated, which makes portion control and slow feeding matter more than the schedule itself.",
       "date": "2026-07-26",
       "image": "/assets/images/golden-retriever-feeding.jpg",
@@ -2777,7 +3354,7 @@
     },
     {
       "slug": "goldfish-cost-guide",
-      "title": "Goldfish Cost: Full Price Breakdown",
+      "title": "Goldfish Price: Under $10, Plus the $150 to $400 Setup",
       "excerpt": "Goldfish have the worst reputation-to-reality gap of almost any common pet. The fish itself costs next to nothing, but",
       "date": "2026-07-20",
       "image": "/assets/images/goldfish-cost.jpg",
@@ -2799,7 +3376,7 @@
     },
     {
       "slug": "goldfish-feeding-guide",
-      "title": "Goldfish Feeding Guide: Schedule and Diet",
+      "title": "What Do Goldfish Eat? Diet and Feeding Schedule",
       "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding",
       "date": "2026-07-26",
       "image": "/assets/images/goldfish-feeding.jpg",
@@ -2854,13 +3431,24 @@
     },
     {
       "slug": "green-anole-cost-guide",
-      "title": "Green Anole Cost: Full Price Breakdown",
+      "title": "Green Anole Price: $5 to $30, Plus $390 to $470 Setup",
       "excerpt": "Green anoles are genuinely one of the cheapest reptiles you can buy, and that low price is exactly why this species is",
       "date": "2026-07-28",
       "image": "/assets/images/green-anole-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-anole-enrichment-guide",
+      "title": "Green Anole Enrichment Guide",
+      "excerpt": "Cage size, added perches, routine handling, four months of captivity. Researchers measured all four in green anoles and",
+      "date": "2026-10-24",
+      "image": "/assets/images/green-anole-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2898,13 +3486,24 @@
     },
     {
       "slug": "green-iguana-cost-guide",
-      "title": "Green Iguana Cost: Full Price Breakdown",
+      "title": "Green Iguana Price: $20 to $1,000, Setup $700 to $2,500",
       "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to",
       "date": "2026-08-11",
       "image": "/assets/images/green-iguana-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "green-iguana-enrichment-guide",
+      "title": "Green Iguana Enrichment Guide",
+      "excerpt": "Wild hatchling iguanas that slept in larger groups grew faster. The same species, grown up, will fight anything it can",
+      "date": "2026-10-23",
+      "image": "/assets/images/green-iguana-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -2964,7 +3563,7 @@
     },
     {
       "slug": "guinea-pig-cost-guide",
-      "title": "Guinea Pig Cost: Full Price Breakdown",
+      "title": "Guinea Pig Price: $10 to $60, Plus $100 to $250 Setup",
       "excerpt": "Guinea pigs are cheap to adopt and expensive to underestimate. The animal itself costs almost nothing, but guinea pigs",
       "date": "2026-07-16",
       "image": "/assets/images/guinea-pig-cost.jpg",
@@ -2986,7 +3585,7 @@
     },
     {
       "slug": "guinea-pig-feeding-guide",
-      "title": "Guinea Pig Feeding Guide: Schedule and Diet",
+      "title": "What Do Guinea Pigs Eat? Diet and Feeding Schedule",
       "excerpt": "Unlimited hay, a daily vitamin C source, and why a guinea pig that skips even a few meals needs same-day attention, not",
       "date": "2026-07-26",
       "image": "/assets/images/guinea-pig-feeding.jpg",
@@ -3041,7 +3640,7 @@
     },
     {
       "slug": "guppy-cost-guide",
-      "title": "Guppy Fish Cost: Full Price Breakdown",
+      "title": "Guppy Price: $2 to $20 Each, Plus $30 to $100 Setup",
       "excerpt": "Guppies are about as affordable as pets get on this entire site, cheap to buy and cheap to keep. The cost most new",
       "date": "2026-07-18",
       "image": "/assets/images/guppy-cost.jpg",
@@ -3051,8 +3650,19 @@
       ]
     },
     {
+      "slug": "guppy-enrichment-guide",
+      "title": "Guppy Enrichment Guide",
+      "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to vigilance,",
+      "date": "2026-11-03",
+      "image": "/assets/images/guppy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "guppy-feeding-guide",
-      "title": "Guppy Feeding Guide: Schedule and Diet",
+      "title": "What Do Guppies Eat? Diet and Feeding Schedule",
       "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the real risk here. Here's a real",
       "date": "2026-08-01",
       "image": "/assets/images/guppy-feeding.jpg",
@@ -3121,7 +3731,7 @@
     },
     {
       "slug": "hamster-cost-guide",
-      "title": "Hamster Cost: Full Price Breakdown",
+      "title": "Hamster Price: $15 to $25, Plus $150 to $350 Setup",
       "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost",
       "date": "2026-07-14",
       "image": "/assets/images/hamster-cost.jpg",
@@ -3131,8 +3741,19 @@
       ]
     },
     {
+      "slug": "hamster-enrichment-guide",
+      "title": "Hamster Enrichment Guide",
+      "excerpt": "Forty-five hamsters, three bedding depths, one stereotypy. At 10 cm they gnawed the bars. At 80 cm, wire-gnawing was",
+      "date": "2026-10-14",
+      "image": "/assets/images/hamster-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "hamster-feeding-guide",
-      "title": "Hamster Feeding Guide: Schedule and Diet",
+      "title": "What Do Hamsters Eat? Diet and Feeding Schedule",
       "excerpt": "A hamster's cheek pouches can hold roughly a fifth of its own body weight in food, which is exactly why you might not",
       "date": "2026-08-01",
       "image": "/assets/images/hamster-feeding.jpg",
@@ -3165,7 +3786,7 @@
     },
     {
       "slug": "hamster-legal-guide",
-      "title": "Hamster Laws by State: Where They Are Actually Banned",
+      "title": "Are Hamsters Legal? Where They Are Actually Banned",
       "excerpt": "Exactly one state bans hamsters, and it is not the one people guess. California, which restricts more animals than",
       "date": "2026-08-12",
       "image": "/assets/guides/hamster-legal.jpg",
@@ -3209,7 +3830,7 @@
     },
     {
       "slug": "hedgehog-cost-guide",
-      "title": "Hedgehog Cost: Full Price Breakdown",
+      "title": "Hedgehog Price: $100 to $300, Plus $200 to $400 Setup",
       "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal.",
       "date": "2026-07-19",
       "image": "/assets/images/hedgehog-cost.jpg",
@@ -3219,8 +3840,19 @@
       ]
     },
     {
+      "slug": "hedgehog-enrichment-guide",
+      "title": "Hedgehog Enrichment Guide",
+      "excerpt": "In a survey of pygmy hedgehog owners, 84 percent had no hide, 68 percent housed them under half a square metre, and 17",
+      "date": "2026-10-29",
+      "image": "/assets/images/hedgehog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "hedgehog-feeding-guide",
-      "title": "Hedgehog Feeding Guide: Schedule and Diet",
+      "title": "What Do Hedgehogs Eat? Diet and Feeding Schedule",
       "excerpt": "Hedgehogs hide illness until they're genuinely sick, which is exactly why a full day of not eating deserves faster",
       "date": "2026-08-02",
       "image": "/assets/images/hedgehog-feeding.jpg",
@@ -3286,13 +3918,24 @@
     },
     {
       "slug": "hermit-crab-cost-guide",
-      "title": "Hermit Crab Cost: Full Price Breakdown",
+      "title": "Hermit Crab Price: $3 to $40 Each, Plus $130 to $450 Setup",
       "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to",
       "date": "2026-07-21",
       "image": "/assets/images/hermit-crab-cost.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "hermit-crab-enrichment-guide",
+      "title": "Hermit Crab Enrichment Guide",
+      "excerpt": "A hermit crab will abandon the shell keeping it alive to escape a shock, and how much shock it takes depends on how",
+      "date": "2026-10-15",
+      "image": "/assets/images/hermit-crab-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3329,14 +3972,37 @@
       ]
     },
     {
+      "slug": "hip-and-elbow-dysplasia-guide",
+      "title": "Hip & Elbow Dysplasia in Dogs: Grades Explained",
+      "excerpt": "Dysplasia simply means a joint that did not form correctly. The word gets used loosely, but the screening behind it is",
+      "date": "2026-09-30",
+      "image": "/assets/images/hip-and-elbow-dysplasia.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs"
+      ]
+    },
+    {
       "slug": "hognose-snake-cost-guide",
-      "title": "Hognose Snake Cost: Full Price Breakdown",
+      "title": "Hognose Snake Price: $50 to $1,000+, Plus $200 to $500 Setup",
       "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands",
       "date": "2026-07-14",
       "image": "/assets/images/hognose-snake-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "hognose-snake-enrichment-guide",
+      "title": "Hognose Snake Enrichment Guide",
+      "excerpt": "Researchers let western hognose snakes pick between an enriched side and a standard one. They chose enrichment, and the",
+      "date": "2026-10-16",
+      "image": "/assets/images/hognose-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3452,6 +4118,19 @@
       ]
     },
     {
+      "slug": "inherited-eye-disease-dogs-cats-guide",
+      "title": "Inherited Eye Disease in Dogs and Cats Explained",
+      "excerpt": "Progressive retinal atrophy is not one disease. It is a family of them, caused by different broken genes in different",
+      "date": "2026-10-08",
+      "image": "/assets/images/inherited-eye-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "slug": "invertebrate-molting-guide",
       "title": "Invertebrate Molting 101: What's Normal",
       "excerpt": "How molting works in tarantulas, hermit crabs, and jumping spiders - normal signs versus a failed molt, and why you",
@@ -3463,14 +4142,37 @@
       ]
     },
     {
+      "slug": "ivdd-and-chondrodystrophy-guide",
+      "title": "IVDD in Dogs: Grades, Genetics and Recovery Rates",
+      "excerpt": "The retrogene that gives a Dachshund its short legs is the same one that wrecks its discs. It is not a side effect of",
+      "date": "2026-10-03",
+      "image": "/assets/images/ivdd-chondrodystrophy.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs"
+      ]
+    },
+    {
       "slug": "jacksons-chameleon-cost-guide",
-      "title": "Jackson's Chameleon Cost: Full Price Breakdown",
+      "title": "Jackson's Chameleon Price: $50 to $250, Setup $400 to $525",
       "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon already covered on this site, but the two",
       "date": "2026-07-29",
       "image": "/assets/images/jacksons-chameleon-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "jacksons-chameleon-enrichment-guide",
+      "title": "Jackson's Chameleon Enrichment Guide",
+      "excerpt": "For this species the most valuable enrichment is a temperature most keepers are accidentally exceeding. Everything else",
+      "date": "2026-10-24",
+      "image": "/assets/images/jacksons-chameleon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3519,7 +4221,7 @@
     },
     {
       "slug": "jumping-spider-cost-guide",
-      "title": "Jumping Spider Cost: Full Price Breakdown",
+      "title": "Jumping Spider Price: $15 to $60, Plus $50 to $120 Setup",
       "excerpt": "Jumping spiders, the regal jumping spider especially, are one of the most affordable and low space pets on this entire",
       "date": "2026-07-19",
       "image": "/assets/images/jumping-spider-cost.jpg",
@@ -3529,8 +4231,19 @@
       ]
     },
     {
+      "slug": "jumping-spider-enrichment-guide",
+      "title": "Jumping Spider Enrichment Guide",
+      "excerpt": "A 2024 paper in eLife documented individual recognition in Phidippus regius. This is a spider that learns shapes,",
+      "date": "2026-10-19",
+      "image": "/assets/images/jumping-spider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "jumping-spider-feeding-guide",
-      "title": "Jumping Spider Feeding Guide: Schedule and Diet",
+      "title": "What Do Jumping Spiders Eat? Diet and Feeding Schedule",
       "excerpt": "Let the abdomen do the talking. Here's a real feeding schedule by life stage, safe prey, and how to tell normal premolt",
       "date": "2026-07-28",
       "image": "/assets/images/jumping-spider-feeding.jpg",
@@ -3596,7 +4309,7 @@
     },
     {
       "slug": "koi-cost-guide",
-      "title": "Koi Fish Cost: Full Price Breakdown",
+      "title": "Koi Fish Price: $10 to $50,000, Plus Pond Setup Costs",
       "excerpt": "The fish itself is often the smallest number in the whole equation. Koi ownership is really pond ownership, and that's",
       "date": "2026-07-28",
       "image": "/assets/images/koi-cost.jpg",
@@ -3606,8 +4319,19 @@
       ]
     },
     {
+      "slug": "koi-enrichment-guide",
+      "title": "Koi Enrichment Guide",
+      "excerpt": "Koi live for decades, reach the length of your arm and learn who feeds them. Nearly every welfare problem they have is",
+      "date": "2026-11-05",
+      "image": "/assets/images/koi-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "koi-feeding-guide",
-      "title": "Koi Feeding Guide: Schedule and Diet",
+      "title": "What Do Koi Eat? Diet and Feeding Schedule",
       "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the real seasonal schedule, what",
       "date": "2026-07-28",
       "image": "/assets/images/koi-feeding.jpg",
@@ -3661,14 +4385,37 @@
       ]
     },
     {
+      "slug": "labrador-enrichment-guide",
+      "title": "Labrador Enrichment Guide",
+      "excerpt": "A deletion in the POMC gene makes some Labradors hungrier and heavier. Assistance dogs carry it more often than pets",
+      "date": "2026-11-07",
+      "image": "/assets/images/labrador-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "leaf-tailed-gecko-cost-guide",
-      "title": "Leaf-Tailed Gecko Cost: Full Price Breakdown",
+      "title": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $300 to $600",
       "excerpt": "Leaf-tailed geckos are genuinely the most expensive gecko covered on this site, and the price reflects both their",
       "date": "2026-07-29",
       "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "leaf-tailed-gecko-enrichment-guide",
+      "title": "Leaf-Tailed Gecko Enrichment Guide",
+      "excerpt": "A gecko evolved to vanish against bark has nothing to vanish against in a bare enclosure. For this species, cover is",
+      "date": "2026-10-23",
+      "image": "/assets/images/leaf-tailed-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -3717,7 +4464,7 @@
     },
     {
       "slug": "leopard-gecko-cost-guide",
-      "title": "Leopard Gecko Cost: Full Price Breakdown",
+      "title": "Leopard Gecko Price: $20 to $150, Plus $250 to $400 Setup",
       "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: roughly $250-400 to set up, then $20-50 a month",
       "date": "2026-07-06",
       "image": "/assets/images/leopard-gecko-cost.jpg",
@@ -3739,7 +4486,7 @@
     },
     {
       "slug": "leopard-gecko-feeding-guide",
-      "title": "Leopard Gecko Feeding Guide: Schedule and Diet",
+      "title": "What Do Leopard Geckos Eat? Diet and Feeding Schedule",
       "excerpt": "How often to feed a leopard gecko by age, what they actually eat, and the real reasons they refuse food, from a normal",
       "date": "2026-07-24",
       "image": "/assets/images/leopard-gecko-feeding.jpg",
@@ -3794,7 +4541,7 @@
     },
     {
       "slug": "leopard-gecko-vs-crested-gecko-guide",
-      "title": "Leopard Gecko vs. Crested Gecko: Beginner Guide",
+      "title": "Crested Gecko vs Leopard Gecko: Which Is Easier to Keep?",
       "excerpt": "Leopard gecko or crested gecko? The real differences in diet, enclosure shape, heating needs, and tail regrowth - not",
       "date": "2026-07-09",
       "image": "/assets/images/leopard-gecko-vs-crested-gecko.jpg",
@@ -3816,7 +4563,7 @@
     },
     {
       "slug": "lovebird-cost-guide",
-      "title": "Lovebird Cost: Full Price Breakdown",
+      "title": "Lovebird Price: $50 to $400, Plus About $300 Setup",
       "excerpt": "Lovebirds are one of the more affordable parrots to buy, but the name suggests something gentler than what you actually",
       "date": "2026-07-20",
       "image": "/assets/images/lovebird-cost.jpg",
@@ -3882,7 +4629,7 @@
     },
     {
       "slug": "madagascar-hissing-cockroach-cost-guide",
-      "title": "Hissing Cockroach Cost: Full Price Breakdown",
+      "title": "Hissing Cockroach Price: $3 to $65, Plus $40 to $100 Setup",
       "excerpt": "Madagascar hissing cockroaches are genuinely the most affordable pet on this entire site, both to buy and to keep, and",
       "date": "2026-07-20",
       "image": "/assets/images/madagascar-hissing-cockroach-cost.jpg",
@@ -3892,8 +4639,19 @@
       ]
     },
     {
+      "slug": "madagascar-hissing-cockroach-enrichment-guide",
+      "title": "Hissing Cockroach Enrichment Guide",
+      "excerpt": "A 2023 paper assessed welfare in captive group-housed Gromphadorhina using a validated monitoring tool. Almost no",
+      "date": "2026-10-19",
+      "image": "/assets/images/madagascar-hissing-cockroach-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "madagascar-hissing-cockroach-feeding-guide",
-      "title": "Hissing Cockroach Feeding Guide: Schedule and Diet",
+      "title": "What Do Hissing Cockroaches Eat? Diet and Feeding Schedule",
       "excerpt": "Dry dog food is genuinely the recommended staple for a pet hisser colony. Here's how much to actually offer, safe",
       "date": "2026-07-27",
       "image": "/assets/images/madagascar-hissing-cockroach-feeding.jpg",
@@ -3959,13 +4717,24 @@
     },
     {
       "slug": "milk-snake-cost-guide",
-      "title": "Milk Snake Cost: Full Price Breakdown",
+      "title": "Milk Snake Price: $60 to $500, Plus $300 to $600 Setup",
       "excerpt": "Milk snakes span a wide price range by subspecies and morph, $60 to $500 for the animal itself, but even the high end",
       "date": "2026-07-21",
       "image": "/assets/images/milk-snake-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "milk-snake-enrichment-guide",
+      "title": "Milk Snake Enrichment Guide",
+      "excerpt": "Milk snakes hide constantly, and that gets used to justify small enclosures. The colubrid research suggests the answer",
+      "date": "2026-10-21",
+      "image": "/assets/images/milk-snake-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4025,7 +4794,7 @@
     },
     {
       "slug": "molly-cost-guide",
-      "title": "Molly Fish Cost: Full Price Breakdown",
+      "title": "Molly Fish Price: $2 to $20 Each, Plus $130 to $260 Setup",
       "excerpt": "Mollies cost a little more upfront than guppies, mainly because they need a bigger tank and sturdier filtration from",
       "date": "2026-09-05",
       "image": "/assets/images/molly-cost.jpg",
@@ -4035,8 +4804,19 @@
       ]
     },
     {
+      "slug": "molly-enrichment-guide",
+      "title": "Molly Enrichment Guide",
+      "excerpt": "The harassment research that shapes guppy stocking was partly done on a molly. They also graze algae all day and get",
+      "date": "2026-11-04",
+      "image": "/assets/images/molly-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "molly-feeding-guide",
-      "title": "Molly Fish Feeding Guide: Schedule and Diet",
+      "title": "What Do Molly Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Mollies lean more herbivorous than most livebearers, and a protein-heavy, no-vegetables diet is the single most common",
       "date": "2026-09-06",
       "image": "/assets/images/molly-feeding.jpg",
@@ -4080,7 +4860,7 @@
     },
     {
       "slug": "mourning-gecko-cost-guide",
-      "title": "Mourning Gecko Cost: Full Price Breakdown",
+      "title": "Mourning Gecko Price: $15 to $65, Plus $200 to $450 Setup",
       "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small",
       "date": "2026-07-25",
       "image": "/assets/images/mourning-gecko-cost.jpg",
@@ -4090,8 +4870,19 @@
       ]
     },
     {
+      "slug": "mourning-gecko-enrichment-guide",
+      "title": "Mourning Gecko Enrichment Guide",
+      "excerpt": "An all-female parthenogenetic species that lives in colonies. Every other gecko guide argues about whether to pair",
+      "date": "2026-10-22",
+      "image": "/assets/images/mourning-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "mourning-gecko-feeding-guide",
-      "title": "Mourning Gecko Feeding Guide: Schedule and Diet",
+      "title": "What Do Mourning Geckos Eat? Diet and Feeding Schedule",
       "excerpt": "A mourning gecko's calcium needs never really pause, since a lone female still lays eggs every few weeks on her own.",
       "date": "2026-07-31",
       "image": "/assets/images/mourning-gecko-feeding.jpg",
@@ -4135,7 +4926,7 @@
     },
     {
       "slug": "mouse-cost-guide",
-      "title": "Fancy Mouse Cost: Full Price Breakdown",
+      "title": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $210 Setup",
       "excerpt": "A pet mouse is one of the cheapest animals on this site to buy, but it's a group animal with a real housing complexity",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-cost.jpg",
@@ -4145,8 +4936,19 @@
       ]
     },
     {
+      "slug": "mouse-enrichment-guide",
+      "title": "Mouse Enrichment Guide",
+      "excerpt": "Mice at normal room temperature are cold. Research on nesting material found they need six to ten grams to build their",
+      "date": "2026-10-28",
+      "image": "/assets/images/mouse-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "mouse-feeding-guide",
-      "title": "Mouse Feeding Guide: Diet and Portions",
+      "title": "What Do Pet Mice Eat? Diet, Portions and Foods to Avoid",
       "excerpt": "Mice are opportunistic omnivores that need noticeably more protein than a hamster or gerbil, and because a full-grown",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-feeding.jpg",
@@ -4212,7 +5014,7 @@
     },
     {
       "slug": "neon-tetra-cost-guide",
-      "title": "Neon Tetra Cost: Full Price Breakdown",
+      "title": "Neon Tetra Price: $1 to $5 Each, Plus $100 to $300 Setup",
       "excerpt": "Neon tetras are genuinely one of the most affordable fish you can keep, cheap individually and cheap as a group. The",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-cost.jpg",
@@ -4222,8 +5024,19 @@
       ]
     },
     {
+      "slug": "neon-tetra-enrichment-guide",
+      "title": "Neon Tetra Enrichment Guide",
+      "excerpt": "The usual advice is six. A study that actually measured darting, aggression, shoaling and feeding latency in home",
+      "date": "2026-11-03",
+      "image": "/assets/images/neon-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "neon-tetra-feeding-guide",
-      "title": "Neon Tetra Feeding Guide: Schedule and Diet",
+      "title": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
       "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that actually protects the",
       "date": "2026-08-13",
       "image": "/assets/images/neon-tetra-feeding.jpg",
@@ -4267,7 +5080,7 @@
     },
     {
       "slug": "oscar-fish-cost-guide",
-      "title": "Oscar Fish Cost: Full Price Breakdown",
+      "title": "Oscar Fish Price: $7 to $35, Plus a $1,000+ Tank Setup",
       "excerpt": "Oscars are cheap to buy and genuinely expensive to house properly. The tank and filtration, not the fish, are where",
       "date": "2026-07-30",
       "image": "/assets/images/oscar-fish-cost.jpg",
@@ -4277,8 +5090,19 @@
       ]
     },
     {
+      "slug": "oscar-fish-enrichment-guide",
+      "title": "Oscar Fish Enrichment Guide",
+      "excerpt": "Oscars dig, move decor, recognise the person who feeds them and destroy plants on purpose. Almost no other aquarium",
+      "date": "2026-11-05",
+      "image": "/assets/images/oscar-fish-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "oscar-fish-feeding-guide",
-      "title": "Oscar Fish Feeding Guide: Schedule and Diet",
+      "title": "What Do Oscar Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species",
       "date": "2026-08-14",
       "image": "/assets/images/oscar-fish-feeding.jpg",
@@ -4322,7 +5146,7 @@
     },
     {
       "slug": "pacman-frog-cost-guide",
-      "title": "Pacman Frog Cost: Full Price Breakdown",
+      "title": "Pacman Frog Price: $15 to $100, Plus $100 to $225 Setup",
       "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and genuinely cheap to set",
       "date": "2026-07-15",
       "image": "/assets/images/pacman-frog-cost.jpg",
@@ -4332,8 +5156,19 @@
       ]
     },
     {
+      "slug": "pacman-frog-enrichment-guide",
+      "title": "Pacman Frog Enrichment Guide",
+      "excerpt": "This is the hardest species on the site to write an enrichment guide for, because sitting motionless in one spot is not",
+      "date": "2026-10-26",
+      "image": "/assets/images/pacman-frog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "pacman-frog-feeding-guide",
-      "title": "Pacman Frog Feeding Guide: Schedule and Diet",
+      "title": "What Do Pacman Frogs Eat? Diet and Feeding Schedule",
       "excerpt": "Pacman frogs will genuinely eat until they're sick, so portion control matters more than the schedule. Here's how much",
       "date": "2026-07-29",
       "image": "/assets/images/pacman-frog-feeding.jpg",
@@ -4344,7 +5179,7 @@
     },
     {
       "slug": "pacman-frog-handling-guide",
-      "title": "Pacman Frog Handling: Why It Should Stay Minimal",
+      "title": "Can You Handle a Pacman Frog? Why It Should Stay Minimal",
       "excerpt": "Pacman frogs are sit-and-wait ambush predators built to strike at anything that moves near their face. That's exactly",
       "date": "2026-07-15",
       "image": "/assets/images/pacman-frog-handling.jpg",
@@ -4388,7 +5223,7 @@
     },
     {
       "slug": "parrotlet-cost-guide",
-      "title": "Parrotlet Cost: Full Price Breakdown",
+      "title": "Parrotlet Price: $100 to $900, Plus $160 to $300 Setup",
       "excerpt": "Parrotlets are the smallest commonly kept parrot, but the price tag and the personality both punch above that size,",
       "date": "2026-09-20",
       "image": "/assets/images/parrotlet-cost.jpg",
@@ -4398,8 +5233,19 @@
       ]
     },
     {
+      "slug": "parrotlet-enrichment-guide",
+      "title": "Parrotlet Enrichment Guide",
+      "excerpt": "The smallest true parrot in the trade has the temperament of a much larger one. Housed like a budgie, it behaves like a",
+      "date": "2026-10-31",
+      "image": "/assets/images/parrotlet-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "parrotlet-feeding-guide",
-      "title": "Parrotlet Feeding Guide: Diet and Schedule",
+      "title": "What Do Parrotlets Eat? Diet and Feeding Schedule",
       "excerpt": "A parrotlet's bowl should look a lot like a cockatiel's or a budgie's, pellets doing most of the work, seed treated as",
       "date": "2026-09-20",
       "image": "/assets/images/parrotlet-feeding.jpg",
@@ -4454,8 +5300,59 @@
       ]
     },
     {
+      "slug": "periodontal-dental-disease-guide",
+      "title": "Pet Dental Disease: Stages, Prevention and What Works",
+      "excerpt": "Plaque is the enemy, not tartar. The damage happens below the gumline where nobody can see it, which is why a mouth",
+      "date": "2026-10-07",
+      "image": "/assets/images/periodontal-dental-disease.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "slug": "persian-cat-enrichment-guide",
+      "title": "Persian Cat Enrichment Guide",
+      "excerpt": "The Persian's placid reputation is doing a lot of work. A cat that does not demand much is also a cat whose",
+      "date": "2026-11-08",
+      "image": "/assets/images/persian-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
+      "slug": "pet-dna-test-results-guide",
+      "title": "Pet DNA Test Results Explained: A31P, R820W, MDR1",
+      "excerpt": "The same panel contains tests that are near-perfect and tests that mean nothing, sold in the same report at the same",
+      "date": "2026-10-12",
+      "image": "/assets/images/pet-dna-testing.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
+      "slug": "pet-obesity-body-condition-guide",
+      "title": "Pet Obesity & Body Condition Score: The 9-Point Scale",
+      "excerpt": "Fifty-nine percent of dogs and 61% of cats are overweight, and about a third of their owners believe those pets are a",
+      "date": "2026-10-06",
+      "image": "/assets/images/pet-obesity-body-condition.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats"
+      ]
+    },
+    {
       "slug": "platy-cost-guide",
-      "title": "Platy Fish Cost: Full Price Breakdown",
+      "title": "Platy Fish Price: $2 to $6 Each, Plus $60 to $120 Setup",
       "excerpt": "Platies are about as close to guppy-cheap as a livebearer gets, a small tank and a modest setup that costs almost",
       "date": "2026-09-10",
       "image": "/assets/images/platy-cost.jpg",
@@ -4465,8 +5362,19 @@
       ]
     },
     {
+      "slug": "platy-enrichment-guide",
+      "title": "Platy Enrichment Guide",
+      "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive",
+      "date": "2026-11-04",
+      "image": "/assets/images/platy-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "platy-feeding-guide",
-      "title": "Platy Fish Feeding Guide: Schedule and Diet",
+      "title": "What Do Platy Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Platies are unfussy true omnivores that will eat almost anything offered, which flips the usual worry. With a fish this",
       "date": "2026-09-10",
       "image": "/assets/images/platy-feeding.jpg",
@@ -4521,7 +5429,7 @@
     },
     {
       "slug": "praying-mantis-cost-guide",
-      "title": "Praying Mantis Cost: Full Price Breakdown",
+      "title": "Praying Mantis Price: $15 to $75, Plus $50 to $150 Setup",
       "excerpt": "Praying mantises are one of the most affordable exotic pets available, genuinely cheap to buy and cheap to keep, with",
       "date": "2026-07-22",
       "image": "/assets/images/praying-mantis-cost.jpg",
@@ -4531,8 +5439,19 @@
       ]
     },
     {
+      "slug": "praying-mantis-enrichment-guide",
+      "title": "Praying Mantis Enrichment Guide",
+      "excerpt": "A mantis moults hanging upside down and has to pull itself free of its own skin. If the enclosure is too short, it",
+      "date": "2026-11-01",
+      "image": "/assets/images/praying-mantis-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "praying-mantis-handling-guide",
-      "title": "Can You Handle a Praying Mantis Safely?",
+      "title": "Can You Hold a Praying Mantis? How to Do It Without Harm",
       "excerpt": "Praying mantises are calm around people and rarely bite, some can even be tamed to walk across your hands. That's still",
       "date": "2026-07-22",
       "image": "/assets/images/praying-mantis-handling.jpg",
@@ -4576,13 +5495,24 @@
     },
     {
       "slug": "quaker-parakeet-cost-guide",
-      "title": "Quaker Parakeet Cost: Full Price Breakdown",
+      "title": "Quaker Parakeet Price: $250 to $500, Plus $300 to $800 Setup",
       "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail matters more here than with almost any",
       "date": "2026-08-11",
       "image": "/assets/images/quaker-parakeet-cost.jpg",
       "category": "Birds",
       "categories": [
         "Birds"
+      ]
+    },
+    {
+      "slug": "quaker-parakeet-enrichment-guide",
+      "title": "Quaker Parakeet Enrichment Guide",
+      "excerpt": "Every other parrot nests in a hole in a tree. Quakers weave enormous communal stick nests, and captive ones still try.",
+      "date": "2026-10-31",
+      "image": "/assets/images/quaker-parakeet-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -4631,7 +5561,7 @@
     },
     {
       "slug": "rabbit-cost-guide",
-      "title": "Rabbit Cost: Full Price Breakdown",
+      "title": "Rabbit Cost: $150 to $600 Setup, Then $60 to $100 a Month",
       "excerpt": "Rabbits have a reputation as a simple starter pet, but the real cost picture is bigger than the low adoption fee",
       "date": "2026-07-13",
       "image": "/assets/images/rabbit-cost.jpg",
@@ -4641,8 +5571,19 @@
       ]
     },
     {
+      "slug": "rabbit-enrichment-guide",
+      "title": "Rabbit Enrichment Guide",
+      "excerpt": "Solitary rabbits showed less behavioural diversity and more awake inactivity than paired ones. No toy on the market",
+      "date": "2026-10-28",
+      "image": "/assets/images/rabbit-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "rabbit-feeding-guide",
-      "title": "Rabbit Feeding Guide: Schedule and Diet",
+      "title": "What Do Rabbits Eat? Diet and Feeding Schedule",
       "excerpt": "Unlimited hay, measured pellets, and why a rabbit that skips even a single meal needs same-day attention. Here's a real",
       "date": "2026-07-27",
       "image": "/assets/images/rabbit-feeding.jpg",
@@ -4697,7 +5638,7 @@
     },
     {
       "slug": "rat-cost-guide",
-      "title": "Rat Cost: Full Price Breakdown",
+      "title": "Pet Rat Price: $10 to $20 Each, Plus $250 to $550 Setup",
       "excerpt": "Rats are cheap to buy, but because they must be kept in pairs or small groups, the real budget starts once you multiply",
       "date": "2026-09-21",
       "image": "/assets/images/rat-cost.jpg",
@@ -4707,8 +5648,19 @@
       ]
     },
     {
+      "slug": "rat-enrichment-guide",
+      "title": "Fancy Rat Enrichment Guide",
+      "excerpt": "A study of pet rats found the variable that mattered was not any single item. It was how many different kinds of",
+      "date": "2026-10-17",
+      "image": "/assets/images/rat-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "rat-feeding-guide",
-      "title": "Rat Feeding Guide: Schedule and Diet",
+      "title": "What Do Pet Rats Eat? Diet and Feeding Schedule",
       "excerpt": "A bag labeled 'Hamster and Gerbil Food' looks close enough for a rat too, but the two formulas are built to different",
       "date": "2026-09-21",
       "image": "/assets/images/rat-feeding.jpg",
@@ -4763,7 +5715,7 @@
     },
     {
       "slug": "red-eared-slider-cost-guide",
-      "title": "Red-Eared Slider Cost: Full Price Breakdown",
+      "title": "Red-Eared Slider Price: $10 to $200, Setup $550 to $1,250+",
       "excerpt": "Red-eared sliders are sold cheap and small, which is exactly what makes their real cost so easy to underestimate. The",
       "date": "2026-07-30",
       "image": "/assets/images/red-eared-slider-cost.jpg",
@@ -4773,8 +5725,19 @@
       ]
     },
     {
+      "slug": "red-eared-slider-enrichment-guide",
+      "title": "Red-Eared Slider Enrichment Guide",
+      "excerpt": "Coloured objects cut escape behaviour and raised activity in captive sliders. They also worked differently for",
+      "date": "2026-10-26",
+      "image": "/assets/images/red-eared-slider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "red-eared-slider-feeding-guide",
-      "title": "Red-Eared Slider Feeding Guide: Schedule and Diet",
+      "title": "What Do Red-Eared Sliders Eat? Diet and Feeding Schedule",
       "excerpt": "Why a red-eared slider can only eat while submerged, how the protein-to-plant ratio shifts as they grow, and how to",
       "date": "2026-07-29",
       "image": "/assets/images/red-eared-slider-feeding.jpg",
@@ -4829,7 +5792,7 @@
     },
     {
       "slug": "red-footed-tortoise-cost-guide",
-      "title": "Red-Footed Tortoise Cost: Full Price Breakdown",
+      "title": "Red-Footed Tortoise Price: $150 to $900, Setup $500 to $950",
       "excerpt": "Red-footed tortoises land in a genuinely useful price bracket, pricier and more space-hungry than a Russian tortoise,",
       "date": "2026-09-23",
       "image": "/assets/images/red-footed-tortoise-cost.jpg",
@@ -4839,8 +5802,19 @@
       ]
     },
     {
+      "slug": "red-footed-tortoise-enrichment-guide",
+      "title": "Red-Footed Tortoise Enrichment Guide",
+      "excerpt": "Tortoises in enriched housing judged ambiguous situations optimistically. That is a mood measurement, in an animal most",
+      "date": "2026-10-18",
+      "image": "/assets/images/red-footed-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "red-footed-tortoise-feeding-guide",
-      "title": "Red-Footed Tortoise Feeding Guide: Diet and Schedule",
+      "title": "What Do Red-Footed Tortoises Eat? Diet and Feeding Schedule",
       "excerpt": "Red-footed tortoises need a genuinely different diet than the other tortoises on this site, real omnivores that need",
       "date": "2026-09-23",
       "image": "/assets/images/red-footed-tortoise-feeding.jpg",
@@ -4894,6 +5868,17 @@
       ]
     },
     {
+      "slug": "reptile-emergency-plan-guide",
+      "title": "Reptile Emergency Plan: Outages, Travel, Pet Sitters",
+      "excerpt": "What to actually do when the power goes out, you're leaving town, or you're handing your reptile off to a sitter, with",
+      "date": "2026-09-15",
+      "image": "/assets/images/reptile-emergency-plan.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "reptile-shedding-complete-guide",
       "title": "Understanding Reptile Shedding (Ecdysis)",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and",
@@ -4906,7 +5891,7 @@
     },
     {
       "slug": "rosy-boa-cost-guide",
-      "title": "Rosy Boa Cost: Full Price Breakdown",
+      "title": "Rosy Boa Price: $150 to $400, Plus $150 to $250 Setup",
       "excerpt": "A rosy boa costs a fraction of what a boa constrictor does to buy and set up, a genuinely modest enclosure covers a",
       "date": "2026-09-25",
       "image": "/assets/images/rosy-boa-cost.jpg",
@@ -4916,8 +5901,19 @@
       ]
     },
     {
+      "slug": "rosy-boa-enrichment-guide",
+      "title": "Rosy Boa Enrichment Guide",
+      "excerpt": "Rosy boas are small, slow and famously undemanding, which is exactly why they get the smallest enclosures in the hobby.",
+      "date": "2026-10-25",
+      "image": "/assets/images/rosy-boa-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "rosy-boa-feeding-guide",
-      "title": "Rosy Boa Feeding Guide: Schedule and Diet",
+      "title": "What Do Rosy Boas Eat? Prey Size and Feeding Schedule",
       "excerpt": "Rosy boa feeding looks a lot like boa constrictor feeding scaled down, whole prey sized to the snake, on a schedule",
       "date": "2026-09-25",
       "image": "/assets/images/rosy-boa-feeding.jpg",
@@ -4972,7 +5968,7 @@
     },
     {
       "slug": "russian-tortoise-cost-guide",
-      "title": "Russian Tortoise Cost: Full Price Breakdown",
+      "title": "Russian Tortoise Price: $50 to $400, Plus $400 to $600 Setup",
       "excerpt": "Russian tortoises are genuinely one of the more approachable tortoises to own, both in price and, unlike the sulcata",
       "date": "2026-07-30",
       "image": "/assets/images/russian-tortoise-cost.jpg",
@@ -5016,7 +6012,7 @@
     },
     {
       "slug": "russian-tortoise-legal-guide",
-      "title": "Russian Tortoise Laws: The Rule Everyone Gets Backwards",
+      "title": "Are Russian Tortoises Legal? The Rule People Get Backwards",
       "excerpt": "No state bans the Russian tortoise. The rule that actually shapes the hobby is federal, it is about size rather than",
       "date": "2026-08-12",
       "image": "/assets/guides/russian-tortoise-legal.jpg",
@@ -5038,13 +6034,24 @@
     },
     {
       "slug": "savannah-monitor-cost-guide",
-      "title": "Savannah Monitor Cost: Full Price Breakdown",
+      "title": "Savannah Monitor Price: $150 to $800, Plus $1,000+ Setup",
       "excerpt": "Savannah monitors are cheap to buy, and that low price is part of a genuine problem with how this species gets marketed",
       "date": "2026-07-31",
       "image": "/assets/images/savannah-monitor-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "savannah-monitor-enrichment-guide",
+      "title": "Savannah Monitor Enrichment Guide",
+      "excerpt": "The monitor problem-solving research is a closer fit here than for any other lizard on this site, because savannahs are",
+      "date": "2026-10-20",
+      "image": "/assets/images/savannah-monitor-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5071,7 +6078,7 @@
     },
     {
       "slug": "savannah-monitor-legal-guide",
-      "title": "Savannah Monitor Laws by State and the Arkansas Near Miss",
+      "title": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
       "excerpt": "Twenty-three states have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most",
       "date": "2026-08-19",
       "image": "/assets/guides/savannah-monitor-legal.jpg",
@@ -5116,13 +6123,14 @@
     },
     {
       "slug": "serval-legal-guide",
-      "title": "Serval Laws by State: Bans, Permits and the Savannah Split",
+      "title": "Are Servals Legal? Banned Outright in 16 of 43 Jurisdictions",
       "excerpt": "Thirty-one of the forty-three jurisdictions we checked restrict the serval, sixteen of them outright. Ohio bans the cat",
       "date": "2026-08-19",
       "image": "/assets/guides/serval-legal.jpg",
       "category": "Legal",
       "categories": [
-        "Legal"
+        "Legal",
+        "Cats"
       ]
     },
     {
@@ -5148,6 +6156,18 @@
       ]
     },
     {
+      "slug": "siberian-husky-enrichment-guide",
+      "title": "Siberian Husky Enrichment Guide",
+      "excerpt": "A husky was selected to run for hours in the cold, away from home, alongside other dogs. Every difficult thing about",
+      "date": "2026-11-07",
+      "image": "/assets/images/siberian-husky-enrichment.jpg",
+      "category": "Dogs",
+      "categories": [
+        "Dogs",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "slow-loris-the-only-venomous-primate",
       "title": "Slow Loris Venom: The Only Venomous Primate",
       "excerpt": "A primate that mixes venom from a gland on its own arm into its saliva, delivered through a comb of teeth. In one",
@@ -5170,14 +6190,37 @@
       ]
     },
     {
+      "slug": "sphynx-cat-enrichment-guide",
+      "title": "Sphynx Cat Enrichment Guide",
+      "excerpt": "A cat with no coat cannot thermoregulate the way the five pillars framework assumes. Every safe place has to also be a",
+      "date": "2026-11-08",
+      "image": "/assets/images/sphynx-cat-enrichment.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats",
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "stick-insect-cost-guide",
-      "title": "Stick Insect Cost: Price Breakdown & Legal Notes",
+      "title": "Stick Insect Price: A Few Dollars, Plus $30 to $100 Setup",
       "excerpt": "Stick insects are genuinely one of the cheapest pets covered on this site, but before any cost discussion, there's a",
       "date": "2026-07-31",
       "image": "/assets/images/stick-insect-cost.jpg",
       "category": "Invertebrates",
       "categories": [
         "Invertebrates"
+      ]
+    },
+    {
+      "slug": "stick-insect-enrichment-guide",
+      "title": "Stick Insect Enrichment Guide",
+      "excerpt": "A stick insect's whole life is standing on a plant eating it. The enrichment question is unusually simple, and the",
+      "date": "2026-11-01",
+      "image": "/assets/images/stick-insect-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5215,7 +6258,7 @@
     },
     {
       "slug": "sugar-glider-cost-guide",
-      "title": "Sugar Glider Cost: Full Price Breakdown",
+      "title": "Sugar Glider Price: $200 to $500, Plus $500 to $1,200 Setup",
       "excerpt": "Sugar gliders are illegal in several US states, and that has to be settled before cost even enters the conversation.",
       "date": "2026-07-22",
       "image": "/assets/images/sugar-glider-cost.jpg",
@@ -5225,8 +6268,19 @@
       ]
     },
     {
+      "slug": "sugar-glider-enrichment-guide",
+      "title": "Sugar Glider Enrichment Guide",
+      "excerpt": "Everyone repeats that solitary sugar gliders self-mutilate. The study that actually looked found the solitary animals",
+      "date": "2026-10-29",
+      "image": "/assets/images/sugar-glider-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "sugar-glider-feeding-guide",
-      "title": "Sugar Glider Feeding Guide: Schedule and Diet",
+      "title": "What Do Sugar Gliders Eat? Diet and Feeding Schedule",
       "excerpt": "A sugar glider's wild diet of sap, nectar, pollen, and insects is genuinely hard to replicate in captivity, and getting",
       "date": "2026-08-16",
       "image": "/assets/images/sugar-glider-feeding.jpg",
@@ -5292,7 +6346,7 @@
     },
     {
       "slug": "sulcata-tortoise-cost-guide",
-      "title": "Sulcata Tortoise Cost: Full Price Breakdown",
+      "title": "Sulcata Tortoise Price: $100 to $600, Plus $300+ Setup",
       "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and genuinely one of the most expensive long-term commitments in the",
       "date": "2026-07-23",
       "image": "/assets/images/sulcata-tortoise-cost.jpg",
@@ -5302,8 +6356,19 @@
       ]
     },
     {
+      "slug": "sulcata-tortoise-enrichment-guide",
+      "title": "Sulcata Tortoise Enrichment Guide",
+      "excerpt": "Tortoises learn touchscreens, anticipate food on a schedule, and show cognitive bias. Sulcatas get all of that plus the",
+      "date": "2026-10-27",
+      "image": "/assets/images/sulcata-tortoise-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "sulcata-tortoise-feeding-guide",
-      "title": "Sulcata Tortoise Feeding Guide: Schedule and Diet",
+      "title": "What Do Sulcata Tortoises Eat? Diet and Feeding Schedule",
       "excerpt": "Sulcata tortoises need a genuinely stricter diet than most tortoises kept as pets, closer to a grazing farm animal's",
       "date": "2026-08-10",
       "image": "/assets/images/sulcata-tortoise-feeding.jpg",
@@ -5369,7 +6434,7 @@
     },
     {
       "slug": "swordtail-cost-guide",
-      "title": "Swordtail Fish Cost: Full Price Breakdown",
+      "title": "Swordtail Price: $3 to $25 Each, Plus $115 to $190 Setup",
       "excerpt": "Swordtails cost about the same per fish as a molly, but of the three common livebearers on this site, they're the one",
       "date": "2026-09-11",
       "image": "/assets/images/swordtail-cost.jpg",
@@ -5379,8 +6444,19 @@
       ]
     },
     {
+      "slug": "swordtail-enrichment-guide",
+      "title": "Swordtail Enrichment Guide",
+      "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that",
+      "date": "2026-11-04",
+      "image": "/assets/images/swordtail-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "swordtail-feeding-guide",
-      "title": "Swordtail Fish Feeding Guide: Schedule and Diet",
+      "title": "What Do Swordtail Fish Eat? Diet and Feeding Schedule",
       "excerpt": "Swordtails are true dietary generalists, more balanced between plant and animal food than a molly's heavier plant lean.",
       "date": "2026-09-11",
       "image": "/assets/images/swordtail-feeding.jpg",
@@ -5423,8 +6499,19 @@
       ]
     },
     {
+      "slug": "t5-vs-compact-uvb-guide",
+      "title": "T5 vs Compact UVB: Which Reptile Bulb Actually Works",
+      "excerpt": "T5 tubes and compact coil UVB bulbs are not interchangeable. Which one fits your enclosure, which species need which",
+      "date": "2026-09-02",
+      "image": "/assets/images/t5-vs-compact-uvb-guide.jpg",
+      "category": "Reptiles",
+      "categories": [
+        "Reptiles"
+      ]
+    },
+    {
       "slug": "tarantula-cost-guide",
-      "title": "Tarantula Cost: Full Price Breakdown",
+      "title": "Tarantula Price: $25 to $100, Plus $70 to $300 Setup",
       "excerpt": "Tarantulas are one of the most affordable exotic pets to keep, both upfront and over time, but a female can live 15 to",
       "date": "2026-07-17",
       "image": "/assets/images/tarantula-cost.jpg",
@@ -5434,8 +6521,19 @@
       ]
     },
     {
+      "slug": "tarantula-enrichment-guide",
+      "title": "Tarantula Enrichment Guide",
+      "excerpt": "A six times larger enclosure did not make tarantulas more active and they did not prefer it. They did use more of it,",
+      "date": "2026-11-01",
+      "image": "/assets/images/tarantula-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "tarantula-feeding-guide",
-      "title": "Tarantula Feeding Guide: Schedule and Diet",
+      "title": "What Do Tarantulas Eat? Diet and Feeding Schedule",
       "excerpt": "A tarantula going weeks without eating usually isn't a problem, it's premolt. Here's the real feeding schedule, what",
       "date": "2026-07-25",
       "image": "/assets/images/tarantula-feeding.jpg",
@@ -5468,7 +6566,7 @@
     },
     {
       "slug": "tarantula-legal-guide",
-      "title": "Tarantula Laws by State: Where Spiders Need a Permit",
+      "title": "Are Tarantulas Legal? Where Spiders Need a Permit",
       "excerpt": "Most states have no tarantula rule at all, because their wildlife laws stop at vertebrates. The places that do regulate",
       "date": "2026-08-18",
       "image": "/assets/guides/tarantula-legal.jpg",
@@ -5518,7 +6616,8 @@
       "image": "/assets/images/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide-0.jpg",
       "category": "Pet Care",
       "categories": [
-        "Pet Care"
+        "Pet Care",
+        "Dogs"
       ]
     },
     {
@@ -5556,13 +6655,24 @@
     },
     {
       "slug": "tiger-salamander-cost-guide",
-      "title": "Tiger Salamander Cost: Full Price Breakdown",
+      "title": "Tiger Salamander Price: $30 to $125, Plus $150 to $400 Setup",
       "excerpt": "Tiger salamanders are genuinely affordable, and the real budgeting story with this species is more about longevity than",
       "date": "2026-08-01",
       "image": "/assets/images/tiger-salamander-cost.jpg",
       "category": "Amphibians",
       "categories": [
         "Amphibians"
+      ]
+    },
+    {
+      "slug": "tiger-salamander-enrichment-guide",
+      "title": "Tiger Salamander Enrichment Guide",
+      "excerpt": "A tiger salamander spends most of its life in a burrow it dug. Shallow substrate does not make it more visible, it just",
+      "date": "2026-10-27",
+      "image": "/assets/images/tiger-salamander-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5589,7 +6699,7 @@
     },
     {
       "slug": "tiger-salamander-legal-guide",
-      "title": "Tiger Salamander: Federal & State Rules",
+      "title": "Are Tiger Salamanders Legal? Federal and State Rules",
       "excerpt": "A 2025 federal rule added tiger salamanders to an injurious wildlife list, and headlines made that sound like a ban. It",
       "date": "2026-07-18",
       "image": "/assets/guides/tiger-salamander-legal.jpg",
@@ -5622,13 +6732,24 @@
     },
     {
       "slug": "tokay-gecko-cost-guide",
-      "title": "Tokay Gecko Cost: Full Price Breakdown",
+      "title": "Tokay Gecko Price: $15 to $400+, Plus $300 to $500 Setup",
       "excerpt": "Tokay geckos have a wide price range that reflects a real quality divide in this species: wild-caught animals are cheap",
       "date": "2026-07-23",
       "image": "/assets/images/tokay-gecko-cost.jpg",
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ]
+    },
+    {
+      "slug": "tokay-gecko-enrichment-guide",
+      "title": "Tokay Gecko Enrichment Guide",
+      "excerpt": "Everyone says house tokays alone. A 2024 study moved captive-bred tokays from single to pair housing and found the",
+      "date": "2026-10-16",
+      "image": "/assets/images/tokay-gecko-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -5677,7 +6798,7 @@
     },
     {
       "slug": "uromastyx-cost-guide",
-      "title": "Uromastyx Cost: Full Price Breakdown",
+      "title": "Uromastyx Price: $150 to $400, Plus $500 to $900 Setup",
       "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the real upfront cost to",
       "date": "2026-07-24",
       "image": "/assets/images/uromastyx-cost.jpg",
@@ -5687,8 +6808,19 @@
       ]
     },
     {
+      "slug": "uromastyx-enrichment-guide",
+      "title": "Uromastyx Enrichment Guide",
+      "excerpt": "The nearest lizard study ranked thermal enrichment first out of five types. For a desert species that basks hotter than",
+      "date": "2026-10-24",
+      "image": "/assets/images/uromastyx-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "uromastyx-feeding-guide",
-      "title": "Uromastyx Feeding Guide: Schedule and Diet",
+      "title": "What Do Uromastyx Eat? Diet and Feeding Schedule",
       "excerpt": "Uromastyx digest through hindgut fermentation, meaning heat isn't just for comfort, it's what actually breaks down",
       "date": "2026-07-30",
       "image": "/assets/images/uromastyx-feeding.jpg",
@@ -5769,7 +6901,7 @@
     },
     {
       "slug": "veiled-chameleon-cost-guide",
-      "title": "Veiled Chameleon Cost: Full Price Breakdown",
+      "title": "Veiled Chameleon Price: $20 to $100, Plus $400 to $800 Setup",
       "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're",
       "date": "2026-07-15",
       "image": "/assets/images/veiled-chameleon-cost.jpg",
@@ -5779,8 +6911,19 @@
       ]
     },
     {
+      "slug": "veiled-chameleon-enrichment-guide",
+      "title": "Veiled Chameleon Enrichment Guide",
+      "excerpt": "Hatchlings raised alone for two months grew into duller, more submissive adults that hunted worse. This is one of the",
+      "date": "2026-10-23",
+      "image": "/assets/images/veiled-chameleon-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "veiled-chameleon-feeding-guide",
-      "title": "Veiled Chameleon Feeding Guide: Schedule and Diet",
+      "title": "What Do Veiled Chameleons Eat? Diet and Feeding Schedule",
       "excerpt": "Veiled chameleon feeding is really a two-part job: what you feed matters, but how you supplement it matters just as",
       "date": "2026-08-17",
       "image": "/assets/images/veiled-chameleon-feeding.jpg",
@@ -5824,7 +6967,7 @@
     },
     {
       "slug": "veiled-chameleon-legal-guide",
-      "title": "Veiled Chameleon Laws: Where They Are Actually Banned",
+      "title": "Are Veiled Chameleons Legal? Where They Are Banned",
       "excerpt": "Two places will not let you keep a veiled chameleon, and neither one banned the species. Washington DC left every",
       "date": "2026-08-13",
       "image": "/assets/guides/veiled-chameleon-legal.jpg",
@@ -5880,13 +7023,24 @@
     },
     {
       "slug": "whites-tree-frog-cost-guide",
-      "title": "White's Tree Frog Cost: Full Price Breakdown",
+      "title": "White's Tree Frog Price: $20 to $60, Plus $200 to $400 Setup",
       "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more",
       "date": "2026-07-16",
       "image": "/assets/images/whites-tree-frog-cost.jpg",
       "category": "Amphibians",
       "categories": [
         "Amphibians"
+      ]
+    },
+    {
+      "slug": "whites-tree-frog-enrichment-guide",
+      "title": "White's Tree Frog Enrichment Guide",
+      "excerpt": "Tree frogs given planted enclosures grew larger, grew faster, carried different skin bacteria, and chose the planted",
+      "date": "2026-10-26",
+      "image": "/assets/images/whites-tree-frog-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
       ]
     },
     {
@@ -6046,7 +7200,7 @@
     },
     {
       "slug": "zebra-danio-cost-guide",
-      "title": "Zebra Danio Cost: Full Price Breakdown",
+      "title": "Zebra Danio Price: $2 to $3 Each, Plus $60 to $150 Setup",
       "excerpt": "Zebra danios are about as cheap as a starter fish gets, and one of the few community species where a heater is",
       "date": "2026-09-13",
       "image": "/assets/images/zebra-danio-cost.jpg",
@@ -6056,8 +7210,19 @@
       ]
     },
     {
+      "slug": "zebra-danio-enrichment-guide",
+      "title": "Zebra Danio Enrichment Guide",
+      "excerpt": "Zebrafish larvae reared in enriched tanks survived at higher rates than those in bare ones, and adults from enriched",
+      "date": "2026-11-03",
+      "image": "/assets/images/zebra-danio-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "zebra-danio-feeding-guide",
-      "title": "Zebra Danio Feeding Guide: Diet and Schedule",
+      "title": "What Do Zebra Danios Eat? Diet and Feeding Schedule",
       "excerpt": "Zebra danio feeding is genuinely simple, a flake or micro-pellet staple with live or frozen food a few times a week.",
       "date": "2026-09-13",
       "image": "/assets/images/zebra-danio-feeding.jpg",
@@ -6101,7 +7266,7 @@
     },
     {
       "slug": "zebra-finch-cost-guide",
-      "title": "Zebra Finch Cost: Full Price Breakdown",
+      "title": "Zebra Finch Price: $30 to $120, Plus $180 to $400 Setup",
       "excerpt": "Zebra finches are among the cheapest pet birds you can buy, but the detail that actually reshapes the budget is that",
       "date": "2026-09-19",
       "image": "/assets/images/zebra-finch-cost.jpg",
@@ -6111,8 +7276,19 @@
       ]
     },
     {
+      "slug": "zebra-finch-enrichment-guide",
+      "title": "Zebra Finch Enrichment Guide",
+      "excerpt": "Wild zebra finches forage and travel mostly in pairs, and 94 percent of those pairs are mixed-sex. Bigger is not",
+      "date": "2026-10-30",
+      "image": "/assets/images/zebra-finch-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ]
+    },
+    {
       "slug": "zebra-finch-feeding-guide",
-      "title": "Zebra Finch Feeding Guide: Diet & Ratios",
+      "title": "What Do Zebra Finches Eat? Diet and Feeding Schedule",
       "excerpt": "A traditional seed mix will keep a zebra finch alive, but avian vets increasingly agree it won't keep one properly",
       "date": "2026-09-19",
       "image": "/assets/images/zebra-finch-feeding.jpg",
@@ -6430,6 +7606,13 @@
       "image": "/assets/images/dex/dex-chron12.jpg"
     },
     {
+      "slug": "chronicles-of-dex-the-bearded-dragon-the-long-drop-part-14",
+      "title": "Chronicles of Dex the Bearded Dragon: The Long Drop (Part 14)",
+      "excerpt": "Dex is recruited into an elite squadron of skydiving dragons and has to trust an instinct he's never once needed before, in this high-altitude short story about fear, falling, and the surprising uses of a bearded dragon's beard.",
+      "date": "2026-08-31",
+      "image": "/assets/images/dex/dex-chron14.jpg"
+    },
+    {
       "slug": "chronicles-of-dex-the-bearded-dragon-the-night-he-breathed-fire-part-11",
       "title": "Chronicles of Dex the Bearded Dragon: The Night He Breathed Fire (Part 11)",
       "excerpt": "In a single vivid dream, Dex trades his terrarium for a mountain kingdom, becoming a true fire-breathing dragon of legend who hoards treasure and guards a grateful village, only to wake on his basking rock without so much as a wisp of smoke to show for it.",
@@ -6484,6 +7667,13 @@
       "excerpt": "Dozing in his hutch on a hot afternoon, Otis dreams that he can fly, rising above the only garden he's ever known to see its whole shape, and the neighborhood beyond it, for the first time.",
       "date": "2026-07-12",
       "image": "/assets/images/otis/otis-chron4.jpg"
+    },
+    {
+      "slug": "chronicles-of-otis-the-bunny-otis-goes-downtown-part-14",
+      "title": "Chronicles of Otis the Bunny: Otis Goes Downtown (Part 14)",
+      "excerpt": "A grocery bag full of unfamiliar city smells sends Otis into a dream where he escapes his garden entirely and discovers a whole downtown just waiting to be claimed, one fruit stand at a time.",
+      "date": "2026-08-31",
+      "image": "/assets/images/otis/otis-chron14.jpg"
     },
     {
       "slug": "chronicles-of-otis-the-bunny-the-bark-the-gap-and-the-matter-of-proportion-part-3",

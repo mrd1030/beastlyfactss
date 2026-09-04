@@ -12,15 +12,20 @@ import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicle
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
+import LEGAL_COVERAGE from '@/lib/generated/legal-coverage.json';
 import { withBrand } from '@/lib/utils/seo';
-import { getDisplayDate, getDisplayIsoDate } from '@/lib/utils/date';
+import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate, siteToday } from '@/lib/utils/date';
+import buildStamp from '@/lib/generated/build-stamp.json';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
+import { AUTHOR, PUBLISHER, authorSchema } from '@/lib/data/author';
+import { ArticleMetaProvider } from '@/lib/articleMeta';
 import PostEngagement from '@/components/blog/PostEngagement';
 import SaveButton from '@/components/shared/SaveButton';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import PostSidebar from '@/components/blog/PostSidebar';
 import TableOfContents from '@/components/blog/TableOfContents';
+import HeroImage from '@/components/shared/HeroImage';
 import GlossaryHighlighter from '@/components/blog/GlossaryHighlighter';
 import ReadingProgressBar from '@/components/blog/ReadingProgressBar';
 import CompactPostCard from '@/components/shared/CompactPostCard';
@@ -67,10 +72,43 @@ export default function Blog() {
   const location = useLocation();
   const { slug: routeSlug, catSlug } = useParams();
 
-  const [activeCategory, setActiveCategory] = useState('All');
-  // Lazy init so a deep link like /blog/?search=oscar (e.g. from the homepage
-  // search box) pre-fills the filter on first render, not just live typing.
-  const [search, setSearch] = useState(() => new URLSearchParams(window.location.search).get('search') || '');
+  // Build date first so prerendered HTML and first client render agree, then the
+  // real date after mount. See byReleaseThenDate in @/lib/utils/date.
+  //
+  // The interval is what makes a scheduled article surface on its own. Every
+  // article is already deployed and live; the only thing holding one back is
+  // this cutoff, so a tab left open across midnight used to keep sorting
+  // against yesterday until someone reloaded. Checking once a minute means the
+  // list reorders itself when the date actually arrives, which is also the
+  // moment the morning push notification is announcing (see
+  // scripts/notify-todays-posts.mjs).
+  const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const sync = () => setCutoff(prev => {
+      const now = siteToday();
+      return now === prev ? prev : now;
+    });
+    sync();
+    const id = setInterval(sync, 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+  // From the route param on the very first render, not from the effect below:
+  // /blog/category/<slug>/ is prerendered with that category applied, so a
+  // first render at 'All' (591 posts, a 60-page pagination) disagreed with the
+  // captured HTML and failed hydration on every category page. The ?category=
+  // query form has no prerendered file of its own, so it still goes through
+  // the effect like ?page= does.
+  const [activeCategory, setActiveCategory] = useState(() => catSlug || 'All');
+  // Applied after mount rather than lazily from the URL: /blog/?search=oscar
+  // (the homepage search box) hydrates against the unfiltered prerendered
+  // /blog/ list, so a first render that already filters is a mismatch.
+  const [search, setSearch] = useState('');
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    const q = new URLSearchParams(window.location.search).get('search');
+    if (q) setSearch(q);
+  }, []);
   // Lazy init from statically-available posts - see findStaticPost's comment.
   const [selectedPost, setSelectedPost] = useState(() => {
     const postParam = routeSlug || new URLSearchParams(window.location.search).get('post');
@@ -133,11 +171,11 @@ export default function Blog() {
     })),
     ...mdxPosts.filter(p => !isChroniclesPost(p)),
   ]
-  .sort((a, b) => {
-      const dateA = new Date(a.publishedAt || a.date || 0);
-      const dateB = new Date(b.publishedAt || b.date || 0);
-      return dateB - dateA;
-    });
+  // Same ordering as the homepage's Latest Articles: released posts first and
+  // newest of those on top, with not-yet-dated posts trailing in soonest-first
+  // order. Plain date-descending surfaced October articles above everything a
+  // reader could actually see a date on.
+  .sort(byReleaseThenDate(cutoff));
 
 
   const searchQuery = search.trim().toLowerCase();
@@ -292,12 +330,12 @@ export default function Blog() {
         <meta property="og:description" content={blogDescription} />
         <meta property="og:url" content={blogCanonical} />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:alt" content="The Critter Digest - reptile and exotic pet care blog by Beastly Facts" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Critter Digest | Beastly Facts" />
         <meta name="twitter:description" content="In-depth reptile and exotic pet care guides, husbandry deep-dives, and pet tips." />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
@@ -348,8 +386,12 @@ export default function Blog() {
                   Start with the interactive map
                 </span>
                 <span className="block text-xs font-body text-muted-foreground leading-relaxed mt-0.5">
-                  28 animals across all 50 states and DC. Pick a species and the states that restrict it light
-                  up, each one quoting the regulation it came from.
+                  {/* Counted from the matrix at build time rather than typed here.
+                      This read 28 while the map had reached 44, because there is
+                      nothing about adding an animal that brings you back to the
+                      Legal category banner. One string, not text beside an
+                      expression, for the hydration reason in main.jsx (#425). */}
+                  {`${LEGAL_COVERAGE.animals} animals across all ${LEGAL_COVERAGE.states} states and DC. Pick a species and the states that restrict it light up, each one quoting the regulation it came from.`}
                 </span>
               </span>
             </Link>
@@ -456,16 +498,27 @@ export default function Blog() {
 function AuthorBio() {
   return (
     <div className="mt-10 mb-2 flex items-start gap-4 bg-card border border-border rounded-2xl p-5">
-      <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
-        🦎
-      </div>
+      {AUTHOR.image ? (
+        <img
+          src={AUTHOR.image}
+          alt={AUTHOR.imageAlt || AUTHOR.name}
+          width="48"
+          height="48"
+          loading="lazy"
+          className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+        />
+      ) : (
+        <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-2xl flex-shrink-0">
+          {AUTHOR.emoji}
+        </div>
+      )}
       <div>
-        <p className="font-body font-bold text-sm text-foreground mb-1">Written by Mike</p>
+        <p className="font-body font-bold text-sm text-foreground mb-1">{`Written by ${AUTHOR.name}`}</p>
         <p className="text-xs text-muted-foreground font-body leading-relaxed mb-2">
-          Mike is the founder of Beastly Facts and a lifelong reptile enthusiast. He shares his home with Dex, a bearded dragon with strong opinions about crickets and basking schedules. Mike writes in-depth care guides, animal facts, and the occasional short story about life with exotic pets.
+          {AUTHOR.bio}
         </p>
         <Link to="/about/" className="text-xs font-body font-semibold text-secondary hover:underline">
-          More about Mike →
+          {`More about ${AUTHOR.name} →`}
         </Link>
       </div>
     </div>
@@ -640,7 +693,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   // rendered last).
   const ogImage = post.image
     ? `https://beastlyfacts.com${post.image}`
-    : 'https://beastlyfacts.com/assets/hero-1200.jpg';
+    : 'https://beastlyfacts.com/assets/og-default.jpg';
   const ogImageDims = (post.image && IMAGE_DIMENSIONS[post.image]) || { width: 1200, height: 630 };
   const relatedProducts = (post.relatedProducts || [])
     .map((slug) => AFFILIATE_PRODUCTS.find((p) => p.slug === slug))
@@ -669,9 +722,20 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
     // mismatch the span had. Spreading rather than assigning keeps the keys out
     // entirely when there is no publishable date, since omitting a field is
     // valid where an empty one is not.
-    ...(isoPublished && { datePublished: isoPublished, dateModified: post.lastReviewed || isoPublished }),
-    "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-    "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/hero-1200.jpg" } },
+    // lastReviewed goes through the same future-date gate as the publish date:
+    // a scheduled article carries a review date that has not happened yet, and
+    // schema.org should not claim it has.
+    ...(isoPublished && { datePublished: isoPublished, dateModified: getDisplayIsoDate(post.lastReviewed) || isoPublished }),
+    // A Person, not the Organization. The page directly below this renders an
+    // AuthorBio card reading "Written by Mike" with a bio and a link to
+    // /about/, and every one of the 625 MDX files declares author: "Mike" in
+    // frontmatter - but this line said an Organization wrote the article, so
+    // the only version a crawler reads contradicted the one a reader sees. On a
+    // site whose content is largely pet health, having no identifiable author
+    // in the structured data is the exact signal that is expensive to be
+    // missing. publisher stays the Organization, which is what it is.
+    "author": authorSchema(post.author),
+    "publisher": PUBLISHER,
     "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
   };
 
@@ -807,17 +871,18 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 doesn't push the article down. Hidden on lg+, where the
                 sidebar's always-open version already covers it. */}
             <div className="lg:hidden mb-6">
-              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} collapsible />
+              <TableOfContents contentRef={contentRef} watch={postSlug} skipText={post.title} collapsible expectHeadings={(post.headingCount ?? 3) >= 3} />
             </div>
 
             {/* Featured image */}
             {post.image ? (
               <div className="mb-10">
-                <img
+                <HeroImage
                   src={post.image}
                   alt={post.imageAlt || post.title}
-                  className="w-full rounded-2xl shadow-lg"
-                  loading="lazy"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                  width={post.imageWidth}
+                  height={post.imageHeight}
                 />
               </div>
             ) : null}
@@ -838,6 +903,12 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 zero is 9.6px at this size while its average letter is 7.35px,
                 so an apparently sensible max-w-[68ch] still produced 89
                 characters. 37rem is 592px, about 80. */}
+            {/* The article's own review date and source count, for <Sources> to
+                render above its list. Provided here rather than passed as an
+                attribute in each MDX file: sourceCount is derived at sync time
+                from the real list, so an authored copy of it would go stale the
+                first time a source moved. */}
+            <ArticleMetaProvider value={{ lastReviewed: post.lastReviewed, sourceCount: post.sourceCount }}>
             <div ref={contentRef} className="prose prose-base max-w-[37rem] mx-auto dark:prose-invert font-body">
               {post.source === 'mdx' && post.content ? (
                 <MdxArticleBody slug={post.slug.current} components={MdxComponents} loadingLabel="Loading article…" />
@@ -845,6 +916,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 <LocalPostContent content={typeof post.content === 'string' ? post.content : ''} />
               )}
               </div>
+            </ArticleMetaProvider>
             </div>
 
             {post.faqs?.length > 0 && (

@@ -18,8 +18,12 @@ export default function BeehiivSubscribe() {
     setError('');
     setLoading(true);
 
-    // Open Beehiiv confirmation
-    const magicLink = `https://magic.beehiiv.com/v1/6c2e78bc-4fb8-4161-b91f-ee16f5ef259f?email=${encodeURIComponent(email)}&redirect_to=https://beastlyfacts.com`;
+    // Open Beehiiv confirmation. redirect_to lands on /subscribed/, a worker
+    // route (public/_worker.js) that pushes a "new subscriber" ntfy alert and
+    // then sends the visitor to the homepage with a thank-you toast. The
+    // free Beehiiv plan has no subscriber notifications, and that redirect is
+    // the one signal the site itself receives about a signup.
+    const magicLink = `https://magic.beehiiv.com/v1/6c2e78bc-4fb8-4161-b91f-ee16f5ef259f?email=${encodeURIComponent(email)}&redirect_to=https://beastlyfacts.com/subscribed/`;
     window.open(magicLink, '_blank');
 
     setTimeout(() => {
@@ -58,7 +62,7 @@ export default function BeehiivSubscribe() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body font-bold py-3 rounded-xl transition-all disabled:opacity-70"
+          className="w-full bg-secondary hover:opacity-90 text-secondary-foreground font-body font-bold py-3 rounded-xl transition-all disabled:opacity-70"
         >
           {loading ? 'Please wait...' : "Subscribe - it's free 🐾"}
         </button>
@@ -83,7 +87,7 @@ export default function BeehiivSubscribe() {
             </p>
             <button
               onClick={() => setSuccess(false)}
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold px-10 py-3 rounded-xl transition"
+              className="bg-secondary hover:opacity-90 text-secondary-foreground font-bold px-10 py-3 rounded-xl transition"
             >
               Close
             </button>

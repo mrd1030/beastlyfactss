@@ -49,10 +49,25 @@ const isUnpublished = (fm) => Boolean(fm.status && fm.status !== 'published');
 
 // Number of entries in the article's <Sources> list. Derived, never authored:
 // a frontmatter number would silently go stale the moment a source moved.
+// h2/h3 count of the body, for Blog.jsx to decide up front whether the mobile
+// "On This Page" card is worth rendering. TableOfContents.jsx used to decide
+// that itself after mount by scanning the rendered DOM, which meant the card
+// appeared after hydration and pushed the featured image and the article down
+// (measured as most of the article pages' layout shift). <Sources> renders its
+// own h2, so it counts as one.
+function countHeadings(body = '') {
+  const md = (body.match(/^#{2,3}\s+\S/gm) || []).length;
+  return md + (body.includes('<Sources') ? 1 : 0);
+}
+
 function countSources(body = '') {
   const block = body.match(/<Sources>([\s\S]*?)<\/Sources>/);
   if (!block) return 0;
-  return (block[1].match(/^\s*-\s+/gm) || []).length;
+  // Only list items that link somewhere count. A plain-text line such as
+  // "Veterinary resources on reptile nutrition" is not something a reader can
+  // open and check, and the on-page "N sources" line was counting those as if
+  // it were, on 107 articles that had nothing but such lines.
+  return (block[1].match(/^\s*-\s+.*https?:\/\//gm) || []).length;
 }
 
 function readDir(dir) {
@@ -197,6 +212,13 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       // Frontmatter still wins whenever it is set.
       emoji: fm.emoji || derivedEmoji(fm),
       lastReviewed: fm.lastReviewed || null,
+      // Every one of the 625 MDX files declares `author: "Mike"`, and this
+      // dropped all of them, so the app had no author to put in its schema and
+      // fell back to naming the Organization as the writer. Carried through
+      // rather than hardcoded downstream, so a guest byline would be described
+      // truthfully instead of silently reattributed. null means "the site's own
+      // author", resolved by src/lib/data/author.js.
+      author: fm.author || null,
       canonicalUrl: fm.canonicalUrl || null,
       faqs: Array.isArray(fm.faqs) ? fm.faqs : [],
       relatedProducts: Array.isArray(fm.relatedProducts) ? fm.relatedProducts : [],
@@ -215,13 +237,36 @@ for (const dir of [...CONTENT_DIRS, 'short-story']) {
       myth: fm.myth || null,
       truth: fm.truth || null,
       sourceCount: countSources(body),
+      headingCount: countHeadings(body),
     });
   }
 }
 
+// Real pixel size of each post's featured image, so Blog.jsx can put
+// width/height on the <img> and the browser reserves its box before the bytes
+// arrive. Without it the image was the article pages' "media element lacking
+// an explicit size" layout shift. Read from the file itself at sync time so it
+// can never drift from what is served; a missing or unreadable file just
+// leaves the fields off, which renders exactly as before.
+const { default: sharp } = await import('sharp');
+await Promise.all(mdxMeta.map(async (meta) => {
+  if (!meta.image || !meta.image.startsWith('/assets/')) return;
+  try {
+    const { width, height } = await sharp(path.join('./public', meta.image)).metadata();
+    if (width && height) { meta.imageWidth = width; meta.imageHeight = height; }
+  } catch {
+    // No file on disk (staged image, external URL): no dimensions.
+  }
+}));
+
 fs.mkdirSync('./src/lib/generated', { recursive: true });
 fs.writeFileSync('./src/lib/generated/mdx-meta.json', JSON.stringify(mdxMeta, null, 2));
 console.log(`Synced ${mdxMeta.length} MDX post metadata entries to src/lib/generated/mdx-meta.json`);
+
+// The four-field companion index for pages that only link to articles. See
+// src/lib/relatedPosts.js for why it exists.
+const mdxRelated = mdxMeta.map(({ slug, title, emoji, category }) => ({ slug, title, emoji: emoji || null, category: category || null }));
+fs.writeFileSync('./src/lib/generated/mdx-related.json', JSON.stringify(mdxRelated));
 
 // The build date, as a bundle constant, for anything that has to hide
 // future-dated posts before hydration finishes.

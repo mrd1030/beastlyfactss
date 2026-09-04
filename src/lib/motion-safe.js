@@ -1,5 +1,13 @@
 import React from 'react';
-import { motion as motionOriginal } from 'framer-motion';
+// `m`, not `motion`: identical component, but it carries no animation
+// features of its own. App.jsx supplies them through <LazyMotion
+// features={domAnimation}> (animate/exit/gestures/inView), and FactModal adds
+// the drag + layout-projection set (domMax) on demand. The full `motion`
+// import bundled all of that statically, ~41KB raw of drag/projection code on
+// every page for one swipe-to-dismiss. Everything below is unchanged: the
+// wrapper only gates props on first render, which is orthogonal to which
+// features are loaded.
+import { m as motionOriginal } from 'framer-motion';
 
 // Re-export everything else from framer-motion untouched (AnimatePresence,
 // useScroll, useSpring, MotionConfig, etc). The explicit `motion` export

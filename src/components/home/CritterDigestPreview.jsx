@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from '@/lib/motion-safe';
 import { Link, useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
@@ -10,9 +10,22 @@ import { blogPosts as localPosts } from '@/lib/data/newsletters';
 // mismatches a real client's hydration-time first render, since
 // prerender.mjs's capture always reflects the post-fetch state.
 import articlesIndex from '@/lib/generated/articles-index.json';
+import buildStamp from '@/lib/generated/build-stamp.json';
+import { byReleaseThenDate, siteToday } from '@/lib/utils/date';
 
 export default function CritterDigestPreview() {
   const navigate = useNavigate();
+
+  // The cutoff that separates released from scheduled. Starts at the build date
+  // so the prerendered order and the first client render agree, then upgrades to
+  // the real date after mount. Without the two-step a visitor arriving days after
+  // a deploy would sort differently from the static HTML, which is the hydration
+  // mismatch HeroSection's daily fact works around the same way.
+  const [cutoff, setCutoff] = useState(buildStamp.generatedAt);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setCutoff(siteToday());
+  }, []);
 
   // Helper to safely get slug as string
   const getSlug = (post) => {
@@ -22,7 +35,11 @@ export default function CritterDigestPreview() {
     return post._id || post.id || '';
   };
 
-  // Merge, normalize, and sort. Every source here is a static import, so this
+  // Merge, normalize, and sort. Released posts lead, newest first; posts whose
+  // date has not arrived yet, and whose date getDisplayDate() therefore hides,
+  // fall to the back in soonest-first order. Sorting on date alone put the
+  // furthest-future article in slot one, so all five cards showed no date.
+  // Every source here is a static import, so this
   // list is identical during prerendering and at hydration time. (It used to
   // also merge in effect-fetched CMS posts, which made the prerendered top-5 a
   // genuinely different SET of posts - different keys, links, images - than a
@@ -43,11 +60,7 @@ export default function CritterDigestPreview() {
       publishedAt: post.date,
       slug: { current: post.slug },
     })),
-  ].sort((a, b) => {
-    const dateA = new Date(a.publishedAt || a.date || 0);
-    const dateB = new Date(b.publishedAt || b.date || 0);
-    return dateB - dateA;
-  });
+  ].sort(byReleaseThenDate(cutoff));
 
   const previewPosts = allPosts.slice(0, 5);
 
@@ -63,10 +76,10 @@ export default function CritterDigestPreview() {
           <div>
             <span className="text-2xl block mb-1">📰</span>
             <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
-              Latest Articles
+              Latest articles
             </h2>
             <p className="text-xs text-muted-foreground font-body mt-0.5">
-              Care guides, deep-dives, and more from our blog
+              From the blog: comparisons, health, and the deep dives that sit on each guide.
             </p>
           </div>
           <Link to="/blog/" className="hidden sm:flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline flex-shrink-0 p-2 -m-2">
@@ -95,7 +108,10 @@ export default function CritterDigestPreview() {
           })}
         </div>
 
-        <div className="text-center mt-6">
+        {/* sm:hidden, same as the other home sections: the header above already
+            carries a "View all articles" link that is hidden:sm:flex, so without
+            this the desktop layout rendered the same link twice. */}
+        <div className="text-center mt-6 sm:hidden">
           <Link
             to="/blog/"
             className="inline-flex items-center gap-1.5 text-sm font-body font-bold text-secondary hover:underline p-2 -m-2"

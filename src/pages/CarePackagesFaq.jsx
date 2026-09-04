@@ -5,7 +5,7 @@ import { motion } from '@/lib/motion-safe';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
 
 const TITLE = 'Care Package FAQ | Beastly Facts';
-const DESCRIPTION = 'Answers about format, printing, refunds, and updates for the Beastly Facts printable care packages.';
+const DESCRIPTION = 'Answers about format, printing, refunds, and lifetime updates for the Beastly Facts printable care packages, plus what each PDF covers and how delivery works.';
 
 const FAQS = [
   {
@@ -49,11 +49,12 @@ export default function CarePackagesFaq() {
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/care-packages/faq/" />
+        <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://beastlyfacts.com/care-packages/faq/" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />

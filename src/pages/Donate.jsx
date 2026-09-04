@@ -98,11 +98,11 @@ export default function Donate() {
         <meta name="description" content="Love Beastly Facts? Support us with a donation and help keep amazing animal facts, care guides, and quizzes free for everyone." />
         <link rel="canonical" href="https://beastlyfacts.com/donate/" />
         <meta name="robots" content="noindex, follow" />
-        <meta property="og:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://beastlyfacts.com/assets/hero-1200.jpg" />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
       <div className="bg-gradient-to-b from-secondary/5 to-transparent pt-12 pb-8 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
@@ -205,7 +205,7 @@ export default function Donate() {
           <div className="flex items-start gap-3 bg-accent/10 border border-accent/20 rounded-xl p-3">
             <span className="text-xl flex-shrink-0">🌍</span>
             <p className="text-xs text-muted-foreground font-body leading-relaxed">
-              <span className="font-semibold text-foreground">BeastlyFacts.com</span> will contribute <span className="font-semibold text-accent">1% of every purchase or donation</span> to removing CO₂ from the atmosphere - because protecting animals means protecting their planet too.
+              <span className="font-semibold text-foreground">BeastlyFacts.com</span> will contribute <span className="font-semibold text-accent-ink">1% of every purchase or donation</span> to removing CO₂ from the atmosphere - because protecting animals means protecting their planet too.
             </p>
           </div>
 

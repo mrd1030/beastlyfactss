@@ -1,8 +1,11 @@
 import React, { useMemo, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { matchesAnimal } from '@/lib/utils/matchAnimal';
 import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
+import { readDeepDiveGuide } from '@/lib/data/deepDiveContext';
+import { themedQuizzes } from '@/lib/data/quizzes';
 import BeehiivSubscribe from './BeehiivSubscribe';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 
@@ -12,17 +15,43 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   const [displayRelated, setDisplayRelated] = useState([]);
   const [displayFact, setDisplayFact] = useState(null);
 
+  // Which guide the reader clicked through from, if they came from one. Null on
+  // the first render on purpose: this route is prerendered, and the static HTML
+  // cannot know anything about one particular reader's session. Reading
+  // sessionStorage during render would therefore produce a different list than
+  // the one in the HTML the moment a real visitor hydrates, which is the React
+  // #418/#423 mismatch already fixed across the homepage. So the prerender-safe
+  // context-free ranking renders first and the personalised list replaces it in
+  // an effect, same pattern as displayRelated below.
+  //
+  // Keyed on currentPost so moving between siblings through this sidebar
+  // re-reads it rather than holding the value from the article before.
+  const [fromGuideId, setFromGuideId] = useState(null);
+  useEffect(() => {
+    if (window.__IS_PRERENDER__) return;
+    setFromGuideId(readDeepDiveGuide());
+  }, [currentPost]);
+
   // Same curated same-species list Guide/Encyclopedia pages show as "Deep
   // Dive" - without this, a reader who clicks a Deep Dive link to get here
   // has no way to keep following that same thread once they've landed.
   const deepDiveArticles = useMemo(() => {
     const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
-    const siblingSlugs = getDeepDiveSiblings(currentSlug, allPosts);
+    const siblingSlugs = getDeepDiveSiblings(currentSlug, allPosts, { fromGuideId });
     if (siblingSlugs.length === 0) return [];
     return siblingSlugs
       .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
       .filter(Boolean);
-  }, [allPosts, currentPost]);
+  }, [allPosts, currentPost, fromGuideId]);
+
+  // Themed quizzes that cite this article as a question source. Auto-wired
+  // from the quiz data: a new quiz that sources an article gets its backlink
+  // here with no per-article setup.
+  const quizBacklinks = useMemo(() => {
+    const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
+    const path = `/blog/${currentSlug}/`;
+    return themedQuizzes.filter(qz => qz.questions.some(q => q.source && q.source.to === path));
+  }, [currentPost]);
 
   // 1. Separate the rest of the blog into "Matches" and "Everything Else"
   const { matches, nonMatches } = useMemo(() => {
@@ -121,7 +150,7 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
       {/* Subscribe */}
       <div className="bg-card border border-border rounded-2xl p-5">
         <h3 className="font-display font-bold text-sm text-foreground mb-1">Subscribe - it's free</h3>
-        <p className="text-xs text-muted-foreground font-body mb-4">New articles straight to your inbox. No spam. 🐾</p>
+        <p className="text-xs text-muted-foreground font-body mb-4">An occasional email when something new is worth your time. No spam. 🐾</p>
         <BeehiivSubscribe />
       </div>
 
@@ -145,6 +174,27 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
                   {(article.emoji ? `${article.emoji} ` : '') + article.title}
                 </p>
               </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Quiz backlink: this article is a question source in these quizzes */}
+      {quizBacklinks.length > 0 && (
+        <div className="bg-card border border-border rounded-2xl p-5">
+          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
+            🧩 Quiz Yourself
+          </p>
+          <div className="space-y-3">
+            {quizBacklinks.map(qz => (
+              <Link key={qz.id} to={`/quiz/${qz.id}/`} className="group block">
+                <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
+                  {`${qz.emoji} ${qz.title}`}
+                </p>
+                <p className="text-xs text-muted-foreground font-body mt-0.5">
+                  {'This article answers quiz questions. Test yourself →'}
+                </p>
+              </Link>
             ))}
           </div>
         </div>

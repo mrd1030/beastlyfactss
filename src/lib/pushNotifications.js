@@ -4,6 +4,8 @@ import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 // push service which server is allowed to send to a subscription; the
 // private key that actually signs sends lives only in the Supabase edge
 // function's secrets (see supabase/functions/send-notification).
+// Duplicated in public/sw.js for the pushsubscriptionchange handler (a
+// static file that can't import this module) - keep the two in sync.
 const VAPID_PUBLIC_KEY = 'BCRnhiBTSkzZJE86IOPyvyp-qsFZgcr1hYYZ4zTlWw8z2fb9hVlVVTQet5RPCKjYVYn_M7i_nM4JaGa1On4ASSg';
 
 function urlBase64ToUint8Array(base64) {

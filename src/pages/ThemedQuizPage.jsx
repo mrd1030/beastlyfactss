@@ -1,0 +1,344 @@
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from '@/lib/motion-safe';
+import { ArrowLeft, ArrowRight, CheckCircle2, XCircle, ChevronRight, RotateCcw, Share2, Trophy } from 'lucide-react';
+import { useFavoritesCtx } from '@/lib/FavoritesContext';
+import { useQuizScores } from '@/lib/hooks/useQuizScores';
+import { getDisplayDate } from '@/lib/utils/date';
+import { truncateDescription } from '@/lib/utils/truncate';
+import { facts } from '@/lib/data/facts';
+import { slugify } from '@/lib/utils/slugify';
+import { imagePathFor } from '@/lib/data/factImages';
+import FactModal from '@/components/shared/FactModal';
+import ImageLightbox from '@/components/shared/ImageLightbox';
+
+// A source pointing at /facts/<slug>/ is a fact card, not a page of its own:
+// that route just opens the Facts page with the fact's modal, and closing the
+// modal strands the player on the Facts page with the quiz gone. So fact
+// sources stay real links in the markup (the prerendered page keeps its
+// internal links) but a plain click opens the same modal here in place, the
+// way the homepage photo strip does. Modified clicks still get the real page.
+const factForSource = (to) => {
+  const match = /^\/facts\/([^/]+)\/?$/.exec(to || '');
+  if (!match) return null;
+  return facts.find(f => slugify(f.title) === match[1]) || null;
+};
+
+// Fact sources pop up in place; blog sources leave the quiz, so they say so.
+const sourceSuffix = (to) => (to.startsWith('/blog/') ? ' (article)' : '');
+
+// Results are tiered by score. Only a perfect run earns the quiz's own
+// reward card; 75%+ (6-7 on an 8-question quiz) takes a silver So Close
+// badge; anything below gets a nice-try nudge to study and retake rather
+// than a winner's card.
+const tierFor = (score, total, reward) => {
+  if (score === total) return { kind: 'perfect', heading: 'Reward card earned', card: reward };
+  if (score >= Math.ceil(total * 0.75)) {
+    return {
+      kind: 'close',
+      heading: 'Close! Silver badge earned',
+      card: { emoji: '🥈', title: 'So Close', blurb: `Within reach of ${reward.title}. Retake to claim it.` },
+    };
+  }
+  return {
+    kind: 'tryagain',
+    heading: 'No badge this time',
+    card: { emoji: '🐢', title: 'Nice Try', blurb: 'The animals win this round. Study the sources and try again.' },
+  };
+};
+
+// Plays one dated themed quiz (src/lib/data/quizzes/). Rendered by Quiz.jsx
+// when /quiz/:tab matches a themed quiz id instead of an evergreen tab.
+// Interaction mirrors the trivia tab so the two feel like one family; what's
+// new here is the per-question source link and the reward card at the end.
+export default function ThemedQuizPage({ quiz }) {
+  const [step, setStep] = useState('intro');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [selected, setSelected] = useState(null);
+  const [answered, setAnswered] = useState(false);
+  const [score, setScore] = useState(0);
+  const [savedToPack, setSavedToPack] = useState(false);
+  const [popupFact, setPopupFact] = useState(null);
+  const [imageFact, setImageFact] = useState(null);
+
+  const { saveQuizResult, recordQuizCompletion } = useFavoritesCtx();
+  const { scores, recordScore } = useQuizScores();
+  const best = scores[quiz.id];
+
+  const total = quiz.questions.length;
+  const question = quiz.questions[currentIndex];
+  const tier = tierFor(score, total, quiz.reward);
+
+  const handleSelect = (i) => {
+    if (answered) return;
+    setSelected(i);
+    setAnswered(true);
+    if (i === question.answer) setScore(s => s + 1);
+  };
+
+  const handleNext = () => {
+    if (currentIndex + 1 >= total) {
+      const finalScore = score;
+      recordScore(quiz.id, finalScore, total);
+      recordQuizCompletion();
+      setStep('results');
+    } else {
+      setAnswered(false);
+      setSelected(null);
+      setCurrentIndex(i => i + 1);
+    }
+  };
+
+  const handleRestart = () => {
+    setStep('intro');
+    setCurrentIndex(0);
+    setSelected(null);
+    setAnswered(false);
+    setScore(0);
+    setSavedToPack(false);
+  };
+
+  const handleSaveToPack = () => {
+    if (savedToPack) return;
+    saveQuizResult({
+      type: 'themed-quiz',
+      emoji: tier.card.emoji,
+      title: tier.card.title,
+      description: `${tier.card.blurb} Scored ${score}/${total} on "${quiz.title}".`,
+      quizId: quiz.id,
+      quizTitle: quiz.title,
+      score,
+      total,
+    });
+    setSavedToPack(true);
+  };
+
+  const handleSourceClick = (e, source) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const fact = factForSource(source.to);
+    if (!fact) return;
+    e.preventDefault();
+    setPopupFact(fact);
+  };
+
+  const handleShare = () => {
+    const text = tier.kind === 'perfect'
+      ? `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts and earned the ${quiz.reward.emoji} ${quiz.reward.title} card. Think you can beat me?`
+      : `${quiz.emoji} I scored ${score}/${total} on the "${quiz.title}" quiz at BeastlyFacts. Think you can beat me?`;
+    const url = `${window.location.origin}/quiz/${quiz.id}/`;
+    if (navigator.share) {
+      navigator.share({ title: `${quiz.title} | Beastly Facts`, text, url }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(`${text} ${url}`);
+    }
+  };
+
+  // Unique source pages, in question order. Shown on the intro screen: it
+  // lets a player study first, and it gives the prerendered page its in-body
+  // internal links (the play-state source links never reach the static HTML,
+  // which is what audit-internal-links.mjs measures).
+  const sourcePages = [...new Map(
+    quiz.questions.filter(q => q.source).map(q => [q.source.to, q.source])
+  ).values()];
+
+  const pageTitle = `${quiz.title} Quiz | Beastly Facts`;
+  // Truncated at the site-wide 155 so a long tagline can never push the meta
+  // description past Google's display limit.
+  const pageDescription = truncateDescription(`${quiz.tagline} ${total} sourced questions from real Beastly Facts pages, plus a reward card for your Pack.`);
+  const canonicalUrl = `https://beastlyfacts.com/quiz/${quiz.id}/`;
+
+  return (
+    <div className="min-h-screen">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={`${quiz.title} quiz on Beastly Facts`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDescription} />
+        <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+      </Helmet>
+
+      <div className="bg-gradient-to-b from-primary/5 to-transparent pt-12 pb-6 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto">
+          <Link to="/quiz/" className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors mb-4">
+            <ArrowLeft className="w-4 h-4" /> All quizzes
+          </Link>
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+            <p className="text-[10px] font-body font-bold uppercase tracking-wider text-secondary mb-1">
+              {`Quiz #${quiz.number} · ${getDisplayDate(quiz.date)}`}
+            </p>
+            <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">
+              <span className="mr-2" aria-hidden="true">{quiz.emoji}</span>{quiz.title}
+            </h1>
+            <p className="text-sm text-muted-foreground font-body">{quiz.tagline}</p>
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="px-4 sm:px-6 pb-16">
+        {step === 'intro' && (
+          <div className="max-w-md mx-auto text-center py-8">
+            <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}>
+              <span className="text-6xl block mb-4" aria-hidden="true">{quiz.emoji}</span>
+              <div className="flex items-center justify-center gap-6 mb-6 text-sm font-body text-muted-foreground">
+                {[['❓', `${total} Questions`], ['📚', 'Sourced Answers'], [quiz.reward.emoji, 'Reward Card']].map(([e, l]) => (
+                  <div key={l} className="flex flex-col items-center gap-1">
+                    <span className="text-2xl" aria-hidden="true">{e}</span>
+                    <span>{l}</span>
+                  </div>
+                ))}
+              </div>
+              {best && (
+                <p className="text-xs font-body text-muted-foreground mb-4">
+                  {`Your best: ${best.score}/${best.total}`}
+                </p>
+              )}
+              <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={() => setStep('quiz')}
+                className="bg-secondary text-secondary-foreground font-body font-bold text-base px-8 py-3.5 rounded-2xl shadow-lg shadow-secondary/30">
+                Start Quiz 🚀
+              </motion.button>
+
+              {sourcePages.length > 0 && (
+                <div className="mt-10 text-left bg-card border border-border rounded-2xl p-5">
+                  <p className="text-[10px] font-body font-bold uppercase tracking-wider text-muted-foreground mb-2.5">
+                    Study up first (or after)
+                  </p>
+                  <p className="text-xs text-muted-foreground font-body mb-3">
+                    Every answer in this quiz comes from a real page on the site:
+                  </p>
+                  <ul className="space-y-1.5">
+                    {sourcePages.map(source => (
+                      <li key={source.to}>
+                        <Link to={source.to} onClick={(e) => handleSourceClick(e, source)} className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-secondary hover:underline">
+                          <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />{source.label + sourceSuffix(source.to)}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </motion.div>
+          </div>
+        )}
+
+        {step === 'quiz' && (
+          <div className="max-w-md mx-auto py-4">
+            <div className="flex items-center justify-between mb-3 text-xs font-body text-muted-foreground">
+              <span>{`Question ${currentIndex + 1} of ${total}`}</span>
+              <span>{`Score: ${score}`}</span>
+            </div>
+            <div className="w-full bg-muted rounded-full h-1.5 mb-6 overflow-hidden">
+              <motion.div className="bg-secondary h-1.5 rounded-full" animate={{ width: `${((currentIndex + (answered ? 1 : 0)) / total) * 100}%` }} />
+            </div>
+            <AnimatePresence mode="wait">
+              <motion.div key={currentIndex} initial={{ x: 80, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -80, opacity: 0 }} transition={{ duration: 0.2 }}>
+                <h2 className="font-display font-bold text-xl text-foreground mb-5 leading-snug">{question.q}</h2>
+                <div className="space-y-2.5 mb-5">
+                  {question.options.map((option, i) => {
+                    let style = 'bg-card border-border text-foreground hover:border-secondary/40';
+                    if (answered) {
+                      if (i === question.answer) style = 'bg-emerald-50 border-emerald-400 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300';
+                      else if (i === selected) style = 'bg-red-50 border-red-400 text-red-800 dark:bg-red-950 dark:text-red-300';
+                      else style = 'bg-card border-border text-muted-foreground opacity-50';
+                    }
+                    return (
+                      <motion.button key={i} onClick={() => handleSelect(i)} disabled={answered}
+                        whileHover={answered ? {} : { scale: 1.02 }} whileTap={answered ? {} : { scale: 0.98 }}
+                        className={`w-full text-left px-5 py-4 rounded-2xl border-2 font-body text-sm transition-all flex items-center justify-between gap-3 ${style}`}>
+                        <span>{option}</span>
+                        {answered && i === question.answer && <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />}
+                        {answered && i === selected && i !== question.answer && <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />}
+                      </motion.button>
+                    );
+                  })}
+                </div>
+                <AnimatePresence>
+                  {answered && (
+                    <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="overflow-hidden">
+                      <div className={`rounded-2xl p-4 mb-4 border ${selected === question.answer ? 'bg-emerald-50 border-emerald-200 dark:bg-emerald-950 dark:border-emerald-800' : 'bg-amber-50 border-amber-200 dark:bg-amber-950 dark:border-amber-800'}`}>
+                        <p className="text-xs font-body font-bold text-muted-foreground mb-1">
+                          {selected === question.answer ? '✅ Correct!' : '❌ Not quite!'}
+                        </p>
+                        <p className="text-sm font-body text-foreground leading-relaxed">{question.explain}</p>
+                        {question.source && (
+                          <Link to={question.source.to} onClick={(e) => handleSourceClick(e, question.source)} className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary hover:underline">
+                            {`From: ${question.source.label}${sourceSuffix(question.source.to)}`} <ArrowRight className="w-3 h-3" />
+                          </Link>
+                        )}
+                      </div>
+                      <motion.button initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
+                        whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={handleNext}
+                        className="w-full bg-secondary text-secondary-foreground font-body font-bold text-sm py-3.5 rounded-2xl flex items-center justify-center gap-2">
+                        {currentIndex + 1 >= total ? '🏆 See Results' : 'Next Question'} <ChevronRight className="w-4 h-4" />
+                      </motion.button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        )}
+
+        {step === 'results' && (
+          <div className="max-w-md mx-auto text-center py-8">
+            <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ type: 'spring', stiffness: 200 }}>
+              <Trophy className={`w-16 h-16 mx-auto mb-3 ${tier.kind === 'tryagain' ? 'text-muted-foreground/40' : 'text-secondary'}`} />
+              <h2 className="font-display font-bold text-3xl text-foreground mb-1">
+                {tier.kind === 'perfect' ? 'Perfect Score!' : 'Quiz Complete!'}
+              </h2>
+              <p className="text-sm text-muted-foreground font-body mb-6">
+                {`You scored ${score} of ${total}${best && best.score > score ? `, your best is still ${best.score}` : ''}.`}
+              </p>
+
+              {/* The tiered result card. Only a perfect run mints the quiz's
+                  own reward; lower tiers get honest consolation cards. */}
+              <div className={`rounded-3xl p-6 mb-6 relative overflow-hidden border-2 ${tier.kind === 'tryagain' ? 'bg-card border-border' : 'bg-gradient-to-br from-secondary/15 via-card to-primary/10 border-secondary/40'}`}>
+                <p className={`text-[10px] font-body font-bold uppercase tracking-widest mb-2 ${tier.kind === 'tryagain' ? 'text-muted-foreground' : 'text-secondary'}`}>{tier.heading}</p>
+                <span className="text-6xl block mb-2" aria-hidden="true">{tier.card.emoji}</span>
+                <h3 className="font-display font-bold text-2xl text-foreground">{tier.card.title}</h3>
+                <p className="text-sm text-muted-foreground font-body mt-1">{tier.card.blurb}</p>
+                <p className="text-xs font-body font-bold text-secondary mt-3">{`${quiz.title} · ${score}/${total}`}</p>
+              </div>
+
+              {/* On a try-again result the filled button is Retake, not Save:
+                  the card pushed is another run, not the consolation card. */}
+              <div className="flex flex-col sm:flex-row justify-center gap-3">
+                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleSaveToPack} disabled={savedToPack}
+                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${savedToPack ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300' : tier.kind === 'tryagain' ? 'bg-card border border-border text-foreground' : 'bg-secondary text-secondary-foreground'}`}>
+                  {savedToPack ? <><CheckCircle2 className="w-4 h-4" /> Saved to Pack</> : <>❤️ Save card to Pack</>}
+                </motion.button>
+                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleShare}
+                  className="bg-card border border-border text-foreground font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2">
+                  <Share2 className="w-4 h-4" /> Share
+                </motion.button>
+                <motion.button whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} onClick={handleRestart}
+                  className={`font-body font-bold text-sm px-6 py-3 rounded-2xl flex items-center justify-center gap-2 ${tier.kind === 'tryagain' ? 'bg-secondary text-secondary-foreground' : 'bg-card border border-border text-foreground'}`}>
+                  <RotateCcw className="w-4 h-4" /> {tier.kind === 'tryagain' ? 'Try Again' : 'Retake'}
+                </motion.button>
+              </div>
+              <Link to="/quiz/" className="inline-flex items-center gap-1 mt-6 text-sm font-body font-bold text-secondary hover:underline">
+                More quizzes <ArrowRight className="w-4 h-4" />
+              </Link>
+            </motion.div>
+          </div>
+        )}
+      </div>
+
+      {/* Rendered here at the page root, not inside the animated step
+          containers - a fixed overlay inside a transformed element would be
+          confined to it. Same arrangement as Home.jsx. */}
+      <FactModal fact={popupFact} onClose={() => setPopupFact(null)} onOpenImage={setImageFact} />
+      <ImageLightbox fact={imageFact} imagePath={imagePathFor(imageFact)} onClose={() => setImageFact(null)} />
+    </div>
+  );
+}
