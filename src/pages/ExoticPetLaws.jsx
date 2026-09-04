@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ChevronDown } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
@@ -34,14 +34,14 @@ const GUIDE_TO_ANIMAL = Object.fromEntries(
     .map(([id, a]) => [a.article.replace(/^\/blog\/|\/$/g, ''), id]),
 );
 
-// Order matters here: the list doubles as the page's navigation, so it runs
-// most-restricted first rather than alphabetically. An animal nobody can keep
-// anywhere is more useful at the top than a guinea pig with no rules at all.
-const ANIMALS_BY_INTEREST = [...ANIMAL_IDS].sort((a, b) => {
-  const restricted = (id) =>
-    Object.values(LEGAL.animals[id].jurisdictions).filter((e) => e.status !== 'legal').length;
-  return restricted(b) - restricted(a) || LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name);
-});
+// The chips run A to Z. They used to run most-restricted first, which reads
+// well as an editorial ranking and badly as navigation: almost everyone arrives
+// for one animal out of 28 and scans for its name, and there is no way to guess
+// where a name falls in an ordering by restriction count. Alphabetical is the
+// only order a reader can predict without reading every chip.
+const ANIMALS_AZ = [...ANIMAL_IDS].sort((a, b) =>
+  LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
+);
 
 // Several of the 28 names lead with a proper noun. A blanket .toLowerCase()
 // turned those into "the bengal cat" mid-sentence and "Where Is the Bengal cat
@@ -94,12 +94,33 @@ export default function ExoticPetLaws() {
   const isIndex = !animalId;
 
   const [selectedState, setSelectedState] = React.useState(null);
+  const [helpOpen, setHelpOpen] = React.useState(false);
   const mapRef = React.useRef(null);
+  const helpRef = React.useRef(null);
   const firstRender = React.useRef(true);
 
   // Reset the pinned state whenever the animal changes, otherwise you keep a
   // detail card for a jurisdiction that has nothing to say about the new one.
   React.useEffect(() => setSelectedState(null), [activeId]);
+
+  // Escape and a click anywhere outside both close the how-it-works popover.
+  // Without the outside click it sits open over the legend it is explaining,
+  // which on a phone is most of what is on screen.
+  React.useEffect(() => {
+    if (!helpOpen) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setHelpOpen(false);
+    };
+    const onPointer = (e) => {
+      if (!helpRef.current?.contains(e.target)) setHelpOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('mousedown', onPointer);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('mousedown', onPointer);
+    };
+  }, [helpOpen]);
 
   // The picker sits below the map, which on a phone means it can be a screen
   // and a half further down. Changing animal from there would otherwise repaint
@@ -307,7 +328,49 @@ export default function ExoticPetLaws() {
               appears under it instead of shoving it down on every click. */}
           <div className="flex flex-col gap-4">
             <div className="order-2 lg:order-1 rounded-xl border border-border bg-card p-4">
-              <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colours mean</h2>
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <h2 className="font-display font-bold text-sm text-foreground">What the colours mean</h2>
+                {/* The long version of this lives at the foot of the page, which
+                    on a phone is several screens past the map it explains. The
+                    two greys are the pair people misread, so the answer needs to
+                    be reachable from the legend itself. */}
+                <div ref={helpRef} className="relative">
+                  <button
+                    type="button"
+                    onClick={() => setHelpOpen((open) => !open)}
+                    aria-expanded={helpOpen}
+                    aria-controls="legend-help"
+                    aria-label="How this map works"
+                    className="flex h-7 w-7 items-center justify-center rounded-full border border-border text-xs font-body font-bold text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                  >
+                    ?
+                  </button>
+                  {helpOpen && (
+                    <div
+                      id="legend-help"
+                      role="dialog"
+                      aria-label="How this map works"
+                      className="absolute right-0 top-9 z-20 w-64 rounded-lg border border-border bg-card p-3 shadow-lg text-xs font-body text-muted-foreground leading-relaxed"
+                    >
+                      <p>
+                        Flat grey was read for this animal and had no rule. Dotted was never read, so it is a
+                        gap in our research rather than permission.
+                      </p>
+                      <p className="mt-2">
+                        Hatched grey means the rule genuinely does not resolve, and the agency is the one to
+                        ask.
+                      </p>
+                      <a
+                        href="#how-to-read"
+                        onClick={() => setHelpOpen(false)}
+                        className="mt-2 inline-block font-semibold text-primary hover:underline"
+                      >
+                        The longer version →
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
                   const b = STATUS_BUCKETS[key];
@@ -417,15 +480,16 @@ export default function ExoticPetLaws() {
         {/* Animal picker, deliberately below the map */}
         <div className="mt-8">
           <h2 className="font-display font-bold text-sm uppercase tracking-wider text-muted-foreground mb-3">
-            Choose an animal
+            {`Choose an animal (A to Z, ${ANIMAL_IDS.length} of them)`}
           </h2>
           <div className="flex flex-wrap gap-2">
-            {ANIMALS_BY_INTEREST.map((id) => {
+            {ANIMALS_AZ.map((id) => {
               const isActive = id === activeId;
               return (
                 <Link
                   key={id}
                   to={`/exotic-pet-laws/${id}/`}
+                  aria-current={isActive ? 'page' : undefined}
                   className={`rounded-full border px-3 py-1.5 text-sm font-body transition-colors ${
                     isActive
                       ? 'bg-primary text-primary-foreground border-primary font-semibold'
@@ -448,13 +512,18 @@ export default function ExoticPetLaws() {
           <p className="text-sm font-body text-muted-foreground mb-5">
             {restricted.length === 0
               ? `Nothing in the ${Object.keys(statuses).length} jurisdictions checked restricts this animal.`
-              : `${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked restrict this animal in some way. The rest had no rule we could find.`}
+              : `${restricted.length} of the ${Object.keys(statuses).length} jurisdictions checked restrict this animal in some way. The rest had no rule we could find. Open a row for the wording of the rule and the citation behind it.`}
           </p>
 
           <div className="space-y-3">
+            {/* Collapsed rather than laid out in full: on a well-researched animal
+                this section ran to several screens of block quotes, which buries
+                the one jurisdiction the reader came for. Native <details> rather
+                than component state, so every quote is still in the prerendered
+                HTML for a crawler and for find-on-page. */}
             {restricted.map(([code, entry]) => (
-              <div key={code} className="rounded-lg border border-border bg-card p-4">
-                <div className="flex flex-wrap items-center gap-2 mb-1.5">
+              <details key={code} className="group rounded-lg border border-border bg-card">
+                <summary className="flex flex-wrap cursor-pointer list-none items-center gap-2 p-4 [&::-webkit-details-marker]:hidden">
                   <h3 className="font-display font-bold text-base text-foreground">
                     {jurisdictionName(code)}
                   </h3>
@@ -462,38 +531,41 @@ export default function ExoticPetLaws() {
                   {entry.cite && (
                     <span className="text-xs font-body text-muted-foreground">{entry.cite}</span>
                   )}
+                  <ChevronDown className="ml-auto w-4 h-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180" />
+                </summary>
+                <div className="px-4 pb-4">
+                  {entry.quote && (
+                    <blockquote className="border-l-2 border-primary/40 pl-3 text-sm font-body italic text-muted-foreground leading-relaxed">
+                      {entry.quote}
+                    </blockquote>
+                  )}
+                  {entry.note && (
+                    <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">{entry.note}</p>
+                  )}
+                  {entry.grandfathered && (
+                    <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
+                      <span className="font-semibold text-foreground">Existing owners: </span>
+                      {entry.grandfathered.detail}
+                    </p>
+                  )}
+                  {LEGAL.sources[entry.sourceId]?.note && (
+                    <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
+                      <span className="font-semibold text-foreground">How this rule works: </span>
+                      {LEGAL.sources[entry.sourceId].note}
+                    </p>
+                  )}
+                  {LEGAL.sources[entry.sourceId] && (
+                    <a
+                      href={LEGAL.sources[entry.sourceId].url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-block text-xs font-body text-primary hover:underline"
+                    >
+                      {`${LEGAL.sources[entry.sourceId].title} →`}
+                    </a>
+                  )}
                 </div>
-                {entry.quote && (
-                  <blockquote className="border-l-2 border-primary/40 pl-3 text-sm font-body italic text-muted-foreground leading-relaxed">
-                    {entry.quote}
-                  </blockquote>
-                )}
-                {entry.note && (
-                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">{entry.note}</p>
-                )}
-                {entry.grandfathered && (
-                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
-                    <span className="font-semibold text-foreground">Existing owners: </span>
-                    {entry.grandfathered.detail}
-                  </p>
-                )}
-                {LEGAL.sources[entry.sourceId]?.note && (
-                  <p className="mt-2 text-sm font-body text-muted-foreground leading-relaxed">
-                    <span className="font-semibold text-foreground">How this rule works: </span>
-                    {LEGAL.sources[entry.sourceId].note}
-                  </p>
-                )}
-                {LEGAL.sources[entry.sourceId] && (
-                  <a
-                    href={LEGAL.sources[entry.sourceId].url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-2 inline-block text-xs font-body text-primary hover:underline"
-                  >
-                    {`${LEGAL.sources[entry.sourceId].title} →`}
-                  </a>
-                )}
-              </div>
+              </details>
             ))}
           </div>
 
@@ -570,7 +642,7 @@ export default function ExoticPetLaws() {
           </section>
         )}
 
-        <section className="mt-12 rounded-xl border border-border bg-muted/30 p-5">
+        <section id="how-to-read" className="mt-12 scroll-mt-20 rounded-xl border border-border bg-muted/30 p-5">
           <h2 className="font-display font-bold text-lg text-foreground mb-2">How to read this</h2>
           <div className="space-y-2.5 text-sm font-body text-muted-foreground leading-relaxed">
             <p>
