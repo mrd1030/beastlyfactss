@@ -107,6 +107,9 @@ with the old page counts, and the 2.0 builds are not listed yet. So the
 unversioned `Budgie_Care_Package.pdf`, `Guinea_Pig_Care_Package.pdf` and
 `Russian_Tortoise_Care_Package.pdf` stay in `rebuilt/` alongside the new
 `_v2.0.pdf` files, on the same reasoning the Bearded Dragon note above gives.
+`Leopard_Gecko_Care_Package.pdf` and `Crested_Gecko_Care_Package.pdf` are in
+the same position: both are listed at 1.0 and on sale, and their 2.0 t3
+rebuilds landed in `rebuilt/` in September 2026 without being published.
 
 Move each 1.0 file here, and add a row for it, on the day its 2.0 build is
 listed and the 1.0 stops being what a buyer receives.

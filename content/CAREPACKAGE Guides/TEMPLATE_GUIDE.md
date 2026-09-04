@@ -245,7 +245,7 @@ further down. Page counts below are what shipped, not estimates.
 
 | Class | Built | Pages | The middle, in short |
 |---|---|---|---|
-| Reptile | Bearded Dragon 3.0, Ball Python 2.1 | 34 | The canonical table above |
+| Reptile | Bearded Dragon 3.0, Ball Python 2.1, Leopard Gecko 2.0, Crested Gecko 2.0 | 34 | The canonical table above |
 | Aquatic | Betta 2.2, Goldfish 2.1, Axolotl 2.1 | 37 to 42 | Water systems replace heat systems |
 | Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
@@ -284,6 +284,19 @@ on a single hand-edited file it is an append at the very end, which moves no exi
 number. One trap on a `-src` build: a version-history row that describes an earlier edition
 using `{{PAGE_COUNT}}` will silently follow the new count, so hardcode the old number
 before splitting.
+**Arboreal reptiles are still the reptile skeleton, with two swaps.** Crested Gecko 2.0
+landed on 34 pages with no page count change, and the substitutions are worth knowing before
+the next arboreal build (gargoyle, chahoua, leachianus, mourning gecko, and the day geckos).
+Page 5's diagram turns vertical and the enclosure figure becomes height rather than length.
+Page 7 stops being thermostats and UVB distance and becomes misting, ventilation and
+lighting, carrying a humidity-cycle chart instead of a lamp-distance diagram: for a species
+whose whole husbandry is a daily wet-dry swing, one graph of that swing does more work than
+any table. And where a desert species' emergency page is about losing heat, an arboreal
+tropical one needs a heatwave half, since a sealed glass box in a sunny window passes a
+crested gecko's 85&deg;F (29&deg;C) ceiling in under an hour. That page ends up better than the
+reptile original rather than a compromise. The food pages also reorder for any species on a
+complete powdered diet: the powder is page 10 because it is the base, insects move to 11, and
+fruit and the never list stay on 12.
 
 **Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
 out. What replaces them is diet and health, both much larger than the reptile skeleton
@@ -753,10 +766,10 @@ which carries a ball python temperature row. Page 20's shed cycle from
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Snake heating: thermostats, probe placement, heat source types | 7 | Cross-species | No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
-| Quarantine for a new reptile | 18, 31 | Cross-species | Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
+| Heating hardware: thermostats, probe placement, heat source types | 7 | Cross-species | Also page 7 of Leopard Gecko 2.0, where the same hole appears for mats rather than for snake heat sources: on/off versus pulse for a mat, the probe taped flat inside the warm hide rather than on the glass, and why an unregulated mat is the classic burn. No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Quarantine for a new reptile | 18, 31 | Cross-species | Also Leopard Gecko 2.0 pages 17 and 25, where it is the entire prevention story for cryptosporidiosis, and Crested Gecko 2.0 page 25. Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
 | Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
-| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Also open on the bearded dragon list, so one article closes both |
+| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Open on the bearded dragon list too, and now on both gecko lists (Leopard Gecko 2.0 page 21, Crested Gecko 2.0 page 21), so one article closes four packages. The gecko versions need a hydration half that a snake article would not: the humid hide for a leopard gecko, misted droplets for a crested one |
 | Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
 | Prey chart, thawing method, freezer storage | 11, 12 | Ball python | Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
 | Female ball pythons: follicles, eggs &amp; egg binding | 15 | Ball python | No snake equivalent of `bearded-dragon-eggs-and-egg-binding-guide.mdx`. The page with the least site backing in the whole package, so the one most worth grounding |
@@ -1795,3 +1808,119 @@ confirmed does not exist in a citable source.
   because at these numbers the animal costs **$46,000 to $95,000 over a forty-year life**
   before a single emergency, which is the figure that should decide the purchase and appears
   nowhere on the site.
+### Leopard Gecko 2.0, t3 (Sep 2026)
+
+A rebuild, not a new build: 1.0 was 22 pages on the pre-t3 layout. It came out at 34 pages,
+the canonical reptile count, with no page added or dropped from the skeleton. Three
+skeleton pages changed meaning rather than moving: page 7 is thermostats and probe placement
+rather than UVB distance (a mat species has no lamp-height problem, it has a probe-placement
+problem), page 11 became the gut-load chart rather than a greens chart, and page 12 became
+treats plus the food-refusal thresholds, which is where this species' real decision lives.
+
+Already covered, do not rewrite: `leopard-gecko-tank-setup-guide.mdx` carries the
+36&times;18&times;18 in minimum, the three-hide system, the 30 to 40% versus 70 to 80% humidity
+split, and the UVB position. `leopard-gecko-temperature-guide.mdx` carries the full gradient
+and the measurement argument. `leopard-gecko-feeding-guide.mdx` carries the schedule by age,
+the safe and unsafe feeder lists, the seven refusal reasons and the honest "no one agrees on
+a day count" framing. `leopard-gecko-health-issues-guide.mdx` carries cryptosporidiosis at
+real depth, MBD, impaction, dysecdysis, dystocia and prolapse.
+`leopard-gecko-handling-guide.mdx` carries the settling period, the session lengths and the
+tail-autotomy section. `leopard-gecko-enrichment-guide.mdx` carries the Bashaw and Rickman
+studies and the priority order, which is unusual: most enrichment pages in this series are
+extrapolation and this one is evidence. `gut-loading-feeder-insects-guide.mdx` carries the
+whole of page 11, ratios and timing window included. `reptile-emergency-plan-guide.mdx`
+carries pages 28 and 29 and has a leopard gecko row in its temperature table.
+`reptile-shedding-complete-guide.mdx` carries the shed cycle on page 20.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Gecko sexing, growth and body condition | 14 | Cross-species (geckos) | Nothing for any gecko, and the snake row above does not transfer: no probing, no popping, and pores plus hemipenal bulges instead. Needs the age-by-weight table, what a tail as thick as the neck actually means, and the fat-pad signs of an obese adult. Serves leopard, crested, gargoyle, African fat-tail, tokay, mourning and leaf-tailed |
+| Female lizards: infertile clutches, lay boxes and egg binding | 15 | Cross-species (egg-laying lizards) | `bearded-dragon-eggs-and-egg-binding-guide.mdx` exists and is the pattern, but it is a bearded dragon article and none of its numbers transfer. A lizard-wide or gecko-wide version needs the "a lone female still lays" point, the lay-box build, the under-48-hours rule, and the calcium drain of repeated clutches |
+| Leopard gecko growth and weight reference | 14 | Leopard gecko | Expand `leopard-gecko-health-issues-guide.mdx` or add a growth-and-weight-checks article. The site has no weight figures at all for this species, which is awkward given that weight is the single check this package leans on hardest |
+| Choosing and sourcing a reptile | not in 2.0 | Cross-species (reptiles) | **Proposed**, from the build rather than a grep. Both mammal packages and the bird package needed their own version of this page. For reptiles it is breeder versus shop versus rescue versus expo, what a healthy animal looks like in the enclosure you are buying it from, what to ask about feeding history and quarantine, and for leopard geckos specifically, what a morph price actually buys |
+| Morph-linked care differences in leopard geckos | 6, 7 | Leopard gecko | **Proposed.** Pigment is not cosmetic here: albino and other pale morphs burn under UVB that a normally pigmented gecko handles, which the package prints as a lower UVI target with no site article behind it. The neurological problems reported in some morph lines belong in the same article, and nothing on the site touches either |
+| Cohabitation: why one reptile per enclosure | 5 | Cross-species (reptiles) | **Proposed.** Every reptile guide on the site says "house singly" in a sentence and moves on. The article is the reasoning: resource competition at the one warm spot, the injuries that follow, why two females "getting along" is usually one female losing quietly, and the disease-transmission half that quarantine articles only half cover |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the growth table on page 14, the body-condition descriptions on page 14, the sexing
+detail on page 14, the lay-box dimensions and the under-48-hours dystocia rule on page 15,
+the itemized budget subtotals on page 24, and the bladder-stone paragraph on page 19.
+
+**Source drift found while building.** Three, none serious, all worth a pass.
+
+- **Cool-side temperature.** `leopard-gecko-tank-setup-guide.mdx` and `guides/geckos.js`
+  both say 72 to 78&deg;F, `leopard-gecko-temperature-guide.mdx` says 70 to 77&deg;F, and
+  ReptiFiles gives 70 to 77&deg;F. The package prints 70 to 78&deg;F rather than picking a
+  side, since the spread is small and every version is inside a safe band. Worth aligning the
+  three site files anyway.
+- **Adult length.** The encyclopedia says 7 to 11 in (18 to 28 cm), ReptiFiles says 7 to 10 in
+  and LafeberVet says 6.5 to 8 in (17 to 20 cm). Page 4 prints the full 6.5 to 11 in span and
+  page 34 says why. This is a genuine disagreement in the literature, not a site error.
+- **The checklist omits plain calcium.** `guides/geckos.js` lists "Calcium w/D3 supplement"
+  and a multivitamin in the leopard gecko `checklist[]`, but not plain phosphorus-free
+  calcium, which is the daily dusting in its own `sections.diet` text and in the MDX. A
+  buyer working from that checklist buys the backup and misses the staple.
+
+### Crested Gecko 2.0, t3 (Sep 2026)
+
+A rebuild: 1.0 was 21 pages on the pre-t3 layout. It came out at 34 pages, and the reptile
+skeleton absorbed an arboreal tropical species with two page swaps rather than a new shape.
+See the arboreal note under **Adapting the skeleton by animal class** for what moved.
+
+Already covered, do not rewrite: `crested-gecko-tank-setup-guide.mdx` carries the
+18&times;18&times;24 in minimum, the front-opening argument, the temperature table and the
+85&deg;F ceiling, the substrate depth and cleaning intervals, and the UVB spec.
+`crested-gecko-humidity-guide.mdx` carries the 60 to 80% range, the wet-dry cycle, the screen
+top fix and the low-humidity signs. `crested-gecko-feeding-guide.mdx` is the strongest
+article of the set: portions by age, the "do not introduce insects first" point, the picky
+eater and flavor rotation finding, the safe and toxic food lists, the nine refusal reasons
+and the 2 to 3 week versus 3 day thresholds. `crested-gecko-health-issues-guide.mdx` carries
+MBD, floppy tail syndrome, impaction, dysecdysis, respiratory infection and the weekly
+weigh-in advice. `crested-gecko-handling-guide.mdx` carries the settling period, the weight
+thresholds for handling, treadmilling, and the permanent tail-loss section with the genome
+paper behind it. Note `reptile-emergency-plan-guide.mdx` **only half transfers**: its
+temperature table has a crested gecko row and its sitter section is fine, but it is built
+around losing heat, and for this species the emergency runs the other way.
+
+| Gap | Pages | Scope | Shape |
+|---|---|---|---|
+| Overheating: heat stress in reptiles and what to do about it | 19, 28 | Cross-species (reptiles) | Nothing anywhere on the site, and it is the highest-value row in this block. Every reptile article on the site is written around providing heat. What a heat-stressed reptile looks like, what to do in the ten minutes after you find one, how to cool a room and an enclosure without shocking the animal, and the species where the ceiling matters more than the floor: crested, gargoyle and leachianus geckos, and any tropical species in a glass tank in a sunny room |
+| Complete diet powders: brands, mixing, storage and rotation | 10 | Cross-species (fruit-eating geckos) | The feeding guide covers the schedule and the picky-eater fix but not the product itself. Mixing ratio and consistency, why made-up diet is not stored, how long a bag actually lasts, what "complete" means and why nothing is dusted into it, and the flavor rotation that keeps a fussy gecko eating. Serves crested, gargoyle, chahoua, leachianus and mourning geckos |
+| Floppy tail syndrome, at package depth | 17 | Cross-species (crested and gargoyle) | Expand `crested-gecko-health-issues-guide.mdx`, not a new URL. It currently gets a paragraph. Needs the flat-glass-sleeping mechanism, the furnishing fix that prevents it, the honest "irreversible but generally benign" framing, and where it does and does not overlap MBD |
+| Gecko sexing, growth and body condition | 14 | Cross-species (geckos) | Same row as the leopard gecko block above, and one article closes both. The crested half is weight-milestone shaped rather than length-shaped: under 10 g, 8 to 15 g, adult at 35 to 55 g |
+| Female lizards: infertile clutches, lay boxes and egg binding | 15 | Cross-species (egg-laying lizards) | Same row as the leopard gecko block above. The crested half adds the every-4-to-6-week cycle and the calcium-crash risk in an over-bred pair |
+| Bioactive setups, properly | 5, 13, 32 | Cross-species (tropical reptiles) | **Proposed.** `crested-gecko-enrichment-guide.mdx` names bioactive and says it is optional, which is true and not useful to someone deciding. The article is the drainage layer, the ABG-style mix, springtails and isopods, plant choice, the establishment period before an animal goes in, and the honest maintenance comparison against a paper-towel setup |
+| Handling a jumper | 8 | Cross-species (arboreal geckos) | **Proposed.** The handling guide has treadmilling and the tail warning, both good, but nothing on the practical problem every new crested gecko owner hits in week three: the gecko launches. Where to sit, what to do when it is on the curtain, how to catch one without grabbing it, and why the answer is never the tail |
+
+**Numbers with no site source at all**, carried by the PDF only until the articles above
+exist: the weight-milestone table and the sexing detail on page 14, the lay-box dimensions
+and the under-48-hours dystocia rule on page 15, the heat-stress response on page 19, the
+itemized budget subtotals on page 24, and the heatwave plan on page 28.
+
+**Source drift found while building.** Three.
+
+- **The cost block is flagged unverified and it shows.** `guides/geckos.js` carries a
+  "rough starting ranges, not verified current pricing, needs a review pass" comment on the
+  crested gecko `costs{}`, and its annual list and `crested-gecko-cost-guide.mdx` do not
+  itemize the same things. Page 24 rebuilds the list from the MDX plus the misting bottle
+  from the JS, and the lines sum to the printed totals: $335 to $530 equipment, $400 to $740
+  all in, $31 to $52 a month. That comment has now outlived two packages and should be
+  resolved rather than carried.
+- **Calcium with D3 on every insect feeding.** `guides/geckos.js` says feeder insects should
+  be "lightly dusted with calcium w/D3 supplement each time they're offered", on top of a
+  complete diet powder that already supplies D3. The MDX says a calcium supplement rather
+  than specifying D3, which is the safer wording. D3 is fat-soluble and accumulates, so the
+  package prints plain calcium on most insect feedings and D3 once or twice a week. The JS
+  line is worth correcting; this is the same class of error the bearded dragon package was
+  rebuilt to fix.
+- **A wild lifespan field carrying a captive figure.** `encyclopedia/geckos.js` gives the
+  crested gecko `bio.wildLifespan: "10-20 years"`, which is the captive range every source
+  quotes, not a wild one. The leopard gecko entry in the same file gets this right and says
+  so explicitly. African fat-tail carries the same 10 to 20 figure and is worth checking too.
+  The package uses 15 to 20 years captive, with the earliest captives into their 30s, and
+  never touches the wild field.
+
+**One finding worth carrying to the next arboreal build.** The temperature ceiling is not a
+husbandry detail on this species, it is the organising idea of the whole package, and pages
+3, 5, 6, 13, 19, 23, 26 and 28 all point back at it. Writing it as a single line in a table
+the way the reptile skeleton assumes would waste the most useful thing the guide has to say.
