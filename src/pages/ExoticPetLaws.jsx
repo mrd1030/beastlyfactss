@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from '@/lib/motion-safe';
-import { ArrowLeft, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ChevronDown, X } from 'lucide-react';
 import LEGAL from '@/lib/data/legalStatus.json';
 import LEGAL_GUIDES from '@/lib/generated/legal-guides.json';
 import { STATE_NAMES } from '@/lib/data/usStatePaths';
@@ -97,19 +97,32 @@ export default function ExoticPetLaws() {
   const [helpOpen, setHelpOpen] = React.useState(false);
   const mapRef = React.useRef(null);
   const helpRef = React.useRef(null);
+  const helpButtonRef = React.useRef(null);
+  const helpPanelRef = React.useRef(null);
   const firstRender = React.useRef(true);
+
+  // Dismissing puts focus back on the control that opened the panel. Without
+  // it, closing from the keyboard drops focus onto the body and the next tab
+  // starts again from the top of the page.
+  const closeHelp = React.useCallback(() => {
+    setHelpOpen(false);
+    helpButtonRef.current?.focus();
+  }, []);
 
   // Reset the pinned state whenever the animal changes, otherwise you keep a
   // detail card for a jurisdiction that has nothing to say about the new one.
   React.useEffect(() => setSelectedState(null), [activeId]);
 
-  // Escape and a click anywhere outside both close the how-it-works popover.
-  // Without the outside click it sits open over the legend it is explaining,
-  // which on a phone is most of what is on screen.
+  // Escape and a click anywhere outside both dismiss the help panel. Without
+  // the outside click it sits open over the map it is explaining, which on a
+  // phone is most of what is on screen. Opening also moves focus into the
+  // panel, so a screen reader lands on the instructions rather than reading on
+  // past the button as though nothing had happened.
   React.useEffect(() => {
     if (!helpOpen) return undefined;
+    helpPanelRef.current?.focus();
     const onKey = (e) => {
-      if (e.key === 'Escape') setHelpOpen(false);
+      if (e.key === 'Escape') closeHelp();
     };
     const onPointer = (e) => {
       if (!helpRef.current?.contains(e.target)) setHelpOpen(false);
@@ -120,7 +133,7 @@ export default function ExoticPetLaws() {
       document.removeEventListener('keydown', onKey);
       document.removeEventListener('mousedown', onPointer);
     };
-  }, [helpOpen]);
+  }, [helpOpen, closeHelp]);
 
   // The picker sits below the map, which on a phone means it can be a screen
   // and a half further down. Changing animal from there would otherwise repaint
@@ -295,6 +308,85 @@ export default function ExoticPetLaws() {
         <div className="grid gap-6 lg:grid-cols-[1fr,18rem] items-start">
           {/* Map */}
           <div ref={mapRef} className="scroll-mt-20 rounded-xl border border-border bg-card p-3 sm:p-5">
+            {/* Nothing on this page announces that the map is clickable, that the
+                answer appears in a different place on a phone than on a desktop,
+                or that the chips at the foot change animal. That is four things a
+                first-time reader has to guess, so they are written down behind a
+                control at the top of the map rather than left to be discovered. */}
+            <div className="flex items-center justify-between gap-2 mb-2">
+              <p className="text-[11px] font-body font-bold uppercase tracking-wider text-muted-foreground">
+                Interactive map
+              </p>
+              <div ref={helpRef} className="relative">
+                <button
+                  ref={helpButtonRef}
+                  type="button"
+                  onClick={() => setHelpOpen((open) => !open)}
+                  aria-expanded={helpOpen}
+                  aria-controls="page-help"
+                  aria-label="How to use this page"
+                  title="How to use this page"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-border text-sm font-body font-bold text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
+                >
+                  ?
+                </button>
+                {helpOpen && (
+                  // Width is capped against the viewport rather than fixed: at a
+                  // flat 20rem the panel hung off the right edge of a 360px
+                  // phone, which is most of the traffic this page gets.
+                  <div
+                    id="page-help"
+                    ref={helpPanelRef}
+                    role="dialog"
+                    aria-label="How to use this page"
+                    tabIndex={-1}
+                    className="absolute right-0 top-10 z-20 w-[min(20rem,calc(100vw-3rem))] rounded-lg border border-border bg-card p-4 shadow-lg text-xs font-body text-muted-foreground leading-relaxed focus:outline-none"
+                  >
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                      <h2 className="font-display font-bold text-sm text-foreground">How to use this page</h2>
+                      <button
+                        type="button"
+                        onClick={closeHelp}
+                        aria-label="Close"
+                        className="-mt-1 -mr-1 p-1 text-muted-foreground hover:text-foreground transition-colors"
+                      >
+                        <X className="w-4 h-4" />
+                      </button>
+                    </div>
+                    <ol className="space-y-2 list-decimal pl-4 marker:text-muted-foreground/70">
+                      <li>
+                        <span className="font-semibold text-foreground">Click or tap any state</span>
+                        {' to see the rule behind its colour, the citation, and a link to the regulation itself. Tap it again to clear it. By keyboard, tab to a state and press Enter or space.'}
+                      </li>
+                      <li>
+                        {'The answer appears '}
+                        <span className="font-semibold text-foreground">directly under the map on a phone</span>
+                        {', and in the panel beside it on a wider screen. Alaska, Hawaii and DC sit out of position so they stay clickable. City rules, New York City among them, cannot be shaded on a state map at all and are in the list below.'}
+                      </li>
+                      <li>
+                        <span className="font-semibold text-foreground">Every restriction is written out below the map</span>
+                        {', one row per state. Open a row for the wording of the rule. That list is the same information as the map, in a form you can search with find-on-page.'}
+                      </li>
+                      <li>
+                        {'The chips at the foot of the page '}
+                        <span className="font-semibold text-foreground">switch animals</span>
+                        {', A to Z. The map, the list and the counts all follow whichever one is selected.'}
+                      </li>
+                      <li>
+                        {'On the colours: flat grey was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
+                      </li>
+                    </ol>
+                    <a
+                      href="#how-to-read"
+                      onClick={closeHelp}
+                      className="mt-3 inline-block font-semibold text-primary hover:underline"
+                    >
+                      The longer version →
+                    </a>
+                  </div>
+                )}
+              </div>
+            </div>
             <LegalStatusMap
               statuses={statuses}
               selected={selectedState}
@@ -328,49 +420,7 @@ export default function ExoticPetLaws() {
               appears under it instead of shoving it down on every click. */}
           <div className="flex flex-col gap-4">
             <div className="order-2 lg:order-1 rounded-xl border border-border bg-card p-4">
-              <div className="flex items-center justify-between gap-2 mb-3">
-                <h2 className="font-display font-bold text-sm text-foreground">What the colours mean</h2>
-                {/* The long version of this lives at the foot of the page, which
-                    on a phone is several screens past the map it explains. The
-                    two greys are the pair people misread, so the answer needs to
-                    be reachable from the legend itself. */}
-                <div ref={helpRef} className="relative">
-                  <button
-                    type="button"
-                    onClick={() => setHelpOpen((open) => !open)}
-                    aria-expanded={helpOpen}
-                    aria-controls="legend-help"
-                    aria-label="How this map works"
-                    className="flex h-7 w-7 items-center justify-center rounded-full border border-border text-xs font-body font-bold text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors"
-                  >
-                    ?
-                  </button>
-                  {helpOpen && (
-                    <div
-                      id="legend-help"
-                      role="dialog"
-                      aria-label="How this map works"
-                      className="absolute right-0 top-9 z-20 w-64 rounded-lg border border-border bg-card p-3 shadow-lg text-xs font-body text-muted-foreground leading-relaxed"
-                    >
-                      <p>
-                        Flat grey was read for this animal and had no rule. Dotted was never read, so it is a
-                        gap in our research rather than permission.
-                      </p>
-                      <p className="mt-2">
-                        Hatched grey means the rule genuinely does not resolve, and the agency is the one to
-                        ask.
-                      </p>
-                      <a
-                        href="#how-to-read"
-                        onClick={() => setHelpOpen(false)}
-                        className="mt-2 inline-block font-semibold text-primary hover:underline"
-                      >
-                        The longer version →
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </div>
+              <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colours mean</h2>
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
                   const b = STATUS_BUCKETS[key];
