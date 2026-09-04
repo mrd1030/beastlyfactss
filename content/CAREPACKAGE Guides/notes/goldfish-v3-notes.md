@@ -407,8 +407,18 @@ hardness and alkalinity, UF/IFAS on dissolved oxygen, Practical Fishkeeping on t
 action line, and a line for the turnover figure. Cover badge and colophon moved to Version
 2.1 and a 2.1 row was added.
 
-**This page did not fit**, running 253px over against a 26px baseline. See the note at the
-end of `betta-fish-v3-notes.md`: all three aquatic packages need a second reference page at
-the back, which for this package is one `<!--PAGE-->` marker and one line in `SECTIONS`.
-One trap if that happens: the 2.0 history row uses `{{PAGE_COUNT}}` to say "expanded from
-21 to 39 pages", which would silently become 40. Hardcode 39 there before splitting.
+This page did not fit as one page, running 253px over against a 26px baseline.
+
+### Page 40, new: Version history & about
+
+**The package is now 40 pages.** Page 39 keeps the two source lists; the version history,
+the closing disclaimer and the colophon moved to a new page 40. It cost one
+`<!--PAGE versions-->` and `<!--FOOT versions-->` pair and one line in `SECTIONS`, and
+`build.py` renumbered the contents, the footers and the cover badge on its own.
+
+The one trap, caught before it shipped: the 2.0 history row said "expanded from 21 to
+`{{PAGE_COUNT}}` pages", which would have silently become 40 and retroactively rewritten
+what 2.0 was. It is hardcoded to 39 now. Any future split needs the same check.
+
+Page 39 finished at 265px free and page 40 at 346px, so both have real room for the next
+edition's sources.
