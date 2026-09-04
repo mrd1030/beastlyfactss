@@ -36,14 +36,14 @@ const GUIDE_TO_ANIMAL = Object.fromEntries(
 
 // The chips run A to Z. They used to run most-restricted first, which reads
 // well as an editorial ranking and badly as navigation: almost everyone arrives
-// for one animal out of 28 and scans for its name, and there is no way to guess
-// where a name falls in an ordering by restriction count. Alphabetical is the
-// only order a reader can predict without reading every chip.
+// for one animal out of the 44 and scans for its name, and there is no way to
+// guess where a name falls in an ordering by restriction count. Alphabetical is
+// the only order a reader can predict without reading every chip.
 const ANIMALS_AZ = [...ANIMAL_IDS].sort((a, b) =>
   LEGAL.animals[a].name.localeCompare(LEGAL.animals[b].name),
 );
 
-// Several of the 28 names lead with a proper noun. A blanket .toLowerCase()
+// Several of the names lead with a proper noun. A blanket .toLowerCase()
 // turned those into "the bengal cat" mid-sentence and "Where Is the Bengal cat
 // Legal?" in the title, so the name is only lowered when its first word is not
 // one.
@@ -330,61 +330,66 @@ export default function ExoticPetLaws() {
                 >
                   ?
                 </button>
-                {helpOpen && (
-                  // Width is capped against the viewport rather than fixed: at a
-                  // flat 20rem the panel hung off the right edge of a 360px
-                  // phone, which is most of the traffic this page gets.
-                  <div
-                    id="page-help"
-                    ref={helpPanelRef}
-                    role="dialog"
-                    aria-label="How to use this page"
-                    tabIndex={-1}
-                    className="absolute right-0 top-10 z-20 w-[min(20rem,calc(100vw-3rem))] rounded-lg border border-border bg-card p-4 shadow-lg text-xs font-body text-muted-foreground leading-relaxed focus:outline-none"
-                  >
-                    <div className="flex items-start justify-between gap-2 mb-2">
-                      <h2 className="font-display font-bold text-sm text-foreground">How to use this page</h2>
-                      <button
-                        type="button"
-                        onClick={closeHelp}
-                        aria-label="Close"
-                        className="-mt-1 -mr-1 p-1 text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <X className="w-4 h-4" />
-                      </button>
-                    </div>
-                    <ol className="space-y-2 list-decimal pl-4 marker:text-muted-foreground/70">
-                      <li>
-                        <span className="font-semibold text-foreground">Click or tap any state</span>
-                        {' to see the rule behind its colour, the citation, and a link to the regulation itself. Tap it again to clear it. By keyboard, tab to a state and press Enter or space.'}
-                      </li>
-                      <li>
-                        {'The answer appears '}
-                        <span className="font-semibold text-foreground">directly under the map on a phone</span>
-                        {', and in the panel beside it on a wider screen. Alaska, Hawaii and DC sit out of position so they stay clickable. City rules, New York City among them, cannot be shaded on a state map at all and are in the list below.'}
-                      </li>
-                      <li>
-                        <span className="font-semibold text-foreground">Every restriction is written out below the map</span>
-                        {', one row per state. Open a row for the wording of the rule. That list is the same information as the map, in a form you can search with find-on-page.'}
-                      </li>
-                      <li>
-                        {'The chips at the foot of the page '}
-                        <span className="font-semibold text-foreground">switch animals</span>
-                        {', A to Z. The map, the list and the counts all follow whichever one is selected.'}
-                      </li>
-                      <li>
-                        {'On the colours: flat grey was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
-                      </li>
-                    </ol>
-                    <a
-                      href="#how-to-read"
+                {/* Rendered whether it is open or not, and hidden with the
+                    attribute rather than unmounted: aria-controls above has to
+                    point at an element that exists, and hidden keeps the panel
+                    out of the accessibility tree and out of tab order while it
+                    is closed. It also puts the instructions in the prerendered
+                    HTML instead of behind a click.
+                    Width is capped against the viewport rather than fixed: at a
+                    flat 20rem the panel hung off the right edge of a 360px
+                    phone, which is most of the traffic this page gets. */}
+                <div
+                  id="page-help"
+                  ref={helpPanelRef}
+                  role="dialog"
+                  aria-label="How to use this page"
+                  tabIndex={-1}
+                  hidden={!helpOpen}
+                  className="absolute right-0 top-10 z-20 w-[min(20rem,calc(100vw-3rem))] rounded-lg border border-border bg-card p-4 shadow-lg text-xs font-body text-muted-foreground leading-relaxed focus:outline-none"
+                >
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h2 className="font-display font-bold text-sm text-foreground">How to use this page</h2>
+                    <button
+                      type="button"
                       onClick={closeHelp}
-                      className="mt-3 inline-block font-semibold text-primary hover:underline"
+                      aria-label="Close"
+                      className="-mt-1 -mr-1 p-1 text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      The longer version →
-                    </a>
+                      <X className="w-4 h-4" />
+                    </button>
                   </div>
-                )}
+                  <ol className="space-y-2 list-decimal pl-4 marker:text-muted-foreground/70">
+                    <li>
+                      <span className="font-semibold text-foreground">Click or tap any state</span>
+                      {' to see the rule behind its colour, the citation, and a link to the regulation itself. Tap it again to clear it. By keyboard, tab to a state and press Enter or space.'}
+                    </li>
+                    <li>
+                      {'The answer appears '}
+                      <span className="font-semibold text-foreground">directly under the map on a phone</span>
+                      {', and in the panel beside it on a wider screen. Alaska, Hawaii and DC sit out of position so they stay clickable. City rules, New York City among them, cannot be shaded on a state map at all and are in the list below.'}
+                    </li>
+                    <li>
+                      <span className="font-semibold text-foreground">Every restriction is written out below the map</span>
+                      {', one row per state. Open a row for the wording of the rule. That list is the same information as the map, in a form you can search with find-on-page.'}
+                    </li>
+                    <li>
+                      {'The chips at the foot of the page '}
+                      <span className="font-semibold text-foreground">switch animals</span>
+                      {', A to Z. The map, the list and the counts all follow whichever one is selected.'}
+                    </li>
+                    <li>
+                      {'On the colours: flat grey was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
+                    </li>
+                  </ol>
+                  <a
+                    href="#how-to-read"
+                    onClick={closeHelp}
+                    className="mt-3 inline-block font-semibold text-primary hover:underline"
+                  >
+                    The longer version →
+                  </a>
+                </div>
               </div>
             </div>
             <LegalStatusMap

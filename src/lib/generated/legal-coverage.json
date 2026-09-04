@@ -1,0 +1,8 @@
+{
+  "animals": 44,
+  "states": 50,
+  "includesDC": true,
+  "cities": [
+    "New York City"
+  ]
+}

@@ -12,6 +12,7 @@ import { isChroniclesPost, seriesForSlug, chroniclesPath } from '@/lib/chronicle
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import { trackSearch } from '@/lib/analytics';
 import { truncateDescription } from '@/lib/utils/truncate';
+import LEGAL_COVERAGE from '@/lib/generated/legal-coverage.json';
 import { withBrand } from '@/lib/utils/seo';
 import { getDisplayDate, getDisplayIsoDate, byReleaseThenDate, siteToday } from '@/lib/utils/date';
 import buildStamp from '@/lib/generated/build-stamp.json';
@@ -385,8 +386,12 @@ export default function Blog() {
                   Start with the interactive map
                 </span>
                 <span className="block text-xs font-body text-muted-foreground leading-relaxed mt-0.5">
-                  28 animals across all 50 states and DC. Pick a species and the states that restrict it light
-                  up, each one quoting the regulation it came from.
+                  {/* Counted from the matrix at build time rather than typed here.
+                      This read 28 while the map had reached 44, because there is
+                      nothing about adding an animal that brings you back to the
+                      Legal category banner. One string, not text beside an
+                      expression, for the hydration reason in main.jsx (#425). */}
+                  {`${LEGAL_COVERAGE.animals} animals across all ${LEGAL_COVERAGE.states} states and DC. Pick a species and the states that restrict it light up, each one quoting the regulation it came from.`}
                 </span>
               </span>
             </Link>
