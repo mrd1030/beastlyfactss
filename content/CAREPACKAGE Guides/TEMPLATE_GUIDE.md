@@ -1128,6 +1128,22 @@ what people light for heat and light, not the cold.
 | Chronic egg laying and egg binding, at package depth | 17, 18 | Cross-species (hen-laying birds) | **Closed by `bird-chronic-egg-laying-guide`, Sep 2026.** Expand `lovebird-health-issues-guide.mdx`, not a new URL, and consider a cross-species article: budgerigars, cockatiels and lovebirds are the three named most often. It currently has a paragraph on each. Needs the full trigger list, the do-not-pull-the-clutch point with the 21 to 28 day incubation cycle, the 8-hour photoperiod intervention, the hormone injection and implant options, and the egg-binding sign list in order of appearance |
 | Choosing a bird: hand-raised versus parent-raised, and where from | not in 2.0 | Cross-species (birds) | **Closed by `choosing-a-pet-bird-guide`, Sep 2026.** Proposed, from the build rather than from a grep. `lovebird-cost-guide.mdx` names hand-raised versus parent-raised as the decision that sets how tame the bird becomes, then stops. Nothing covers breeder versus shop versus rescue, what to ask, or what a healthy bird looks like in the cage you are buying it from. Both mammal packages needed their own version of this page; birds need it more, because hand-raising has no mammal equivalent |
 
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** The package edits are
+done; these are article changes the pass turned up and deliberately left alone, because the
+brief was the packages.
+
+- `bird-emergency-travel-guide.mdx`. Currently reads: "The same sheet notes a budgie's
+  resting heart rate runs about **seven times faster than a human's**, which is the flip
+  side of having so little mass." The sheet it cites, LafeberVet's *Basic Information Sheet
+  for the Parakeet*, gives the budgerigar heart rate as "**Approximately 274**" bpm. Against a
+  typical human resting rate that is roughly **3 to 4.5 times**, not seven. **Fix:** either
+  restate the multiple or drop the comparison and print 274 bpm, which is what the sheet
+  actually supplies. This is an article error rather than a disagreement: Budgie page 19
+  prints 274 and is correct, and the vitals on Cockatiel page 19 and Cockatoo page 23 were
+  checked against the same sheet during this pass and matched it. Lovebird has no vitals
+  page, so this package is unaffected; the row is logged here because this is the block the
+  article's own gap row sits in.
+
 **Numbers with no site source at all.** This list was rewritten at 2.1, because most of it
 now has one. Closed since 2.0: the hazards page 8 and the PTFE figure, the 8-hour photoperiod
 intervention, the pellet conversion schedules, the keel scoring on page 16, the egg-binding
@@ -1237,6 +1253,21 @@ plus the honest line that conversion takes days, weeks or months.
 | Talking and training a budgie | 9, 13 | Budgie | **Half closed at 2.1.** The training half is `parrot-training-guide`; the talking odds are still open. The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
 | Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Closed by `bird-colony-aviary-keeping-guide`, Sep 2026.** The article establishes that no verified space-per-bird or sex-ratio figure exists in a citable source, so page 9 at 2.1 carries the principles and deliberately prints no numbers.** Originally: **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
 | Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Closed by `bird-body-language-guide`, Sep 2026.** At 2.1 the cues split by meaning: the one-foot against two-foot fluff and the fanned against bobbing tail went to page 19 with the red flags, and beak grinding and eye pinning to page 24, which finally moved beak grinding off page 31.** Originally: **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
+
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** As above, an article
+change the pass turned up and left alone.
+
+- `bird-sexing-weight-body-condition-guide.mdx`. The FAQ currently reads: "**Budgies and
+  cockatiels are genuine exceptions with real visual cues**, and mature white cockatoos show
+  a partial one in iris color, but for most commonly kept parrots, DNA testing is the only
+  reliable answer." The body delivers only two of those three: the budgie cere and the
+  cockatoo iris. **Cockatiel dimorphism appears nowhere in the article**, which mentions the
+  species just three times, in the image alt text, in that FAQ sentence, and in the care
+  package block. **Fix:** add the cockatiel section the FAQ promises, the yellow face and
+  orange cheeks against a duller face, the barred underwing and tail, and the point that
+  lutino, pied, whiteface, albino and pearl birds cannot be sexed this way at all; or narrow
+  the FAQ claim to budgies. Until one or the other happens, the **Cockatiel** block's sexing
+  row cannot close, which is why it is still open at 1.1 despite the article existing.
 
 **Numbers with no site source at all.** Rewritten at 2.1, because most of this list now has
 one. Closed: the amphotericin B protocol and the 10 to 80% mortality figure, the Lugol's
