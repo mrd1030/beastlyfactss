@@ -1168,10 +1168,18 @@ far.
   both give 10 to 15 typical and about 20 maximum. The package uses 10 to 15, up to about 20.
   Worth splitting that field and picking one captive range across the three files.
 
-### Budgie 2.0, t3 (Sep 2026)
+### Budgie 2.1, t3 (Sep 2026)
+
+**At 2.1, five of the eight rows below are closed and a sixth is half closed.** The
+corrections pass of 4 September 2026 found the worst errors in the bird set here: a 24-hour
+no-eating threshold where Lafeber gives 12 for a budgerigar, a quarantine page offering
+prophylactic antibiotics that the public-health compendium discourages, a doxycycline course
+missing its budgerigar exception, and an avian gastric yeast entry that overstated the
+species. See `notes/budgie-v3-notes.md`. The back matter split into two reference pages and
+the guide went from 39 pages to 40.
 
 The second bird package, and a rebuild rather than a new build: 1.0 was 20 pages on the
-pre-t3 layout. It came out at 39 pages. Source is fragments plus a build script in
+pre-t3 layout. It came out at 39 pages, and 40 at 2.1. Source is fragments plus a build script in
 `source/budgie-src/`, and `notes/budgie-v3-notes.md` carries the parked blocks, the
 per-page free space, seven undrafted page ideas and a ranked cut list.
 
@@ -1206,11 +1214,14 @@ photoperiod, sleep and hormonal management (pages 7, 17, 33); converting a seed 
 pellets (page 10); quarantining a new bird (pages 27, 35); wing clipping (page 15);
 reading bird droppings (page 26); bird power outages, travel and transport (page 34);
 molt in companion birds (page 25); and choosing a bird and where from (proposed, page 4).
-Two notes to add to those rows from this build. The **quarantine** row now has a
-citable public-health figure, 30 to 45 days with testing or prophylactic treatment before
-joining a group, from the NASPHV and CDC psittacosis compendium, which also gives the
-45-day doxycycline course and the cleaning precautions; the article should be written
-around that document. And the **pellet conversion** row has a second veterinary schedule
+Every one of those rows is now closed; the slugs are named in the Lovebird block.
+Two notes from this build, one of them a correction. The **quarantine** row's figure was
+logged here as "30 to 45 days with testing or prophylactic treatment," which misread the
+source: the NASPHV and CDC psittacosis compendium gives at least 30 days with testing and
+says routine prophylactic antibiotic treatment is **highly discouraged**, because it can
+harm the bird and breed resistant strains. That error had been copied into page 27 of the
+package and both were fixed at 2.1. The same document gives the 45-day doxycycline course
+**with a 30-day exception for budgerigars**, which page 21 was missing and now carries. And the **pellet conversion** row has a second veterinary schedule
 worth including beside VCA's lovebird one: VCA's budgie page gives four methods rather
 than a percentage ramp (pellets first thing in the morning, spread on a flat surface,
 ground to powder over a moist food, or mixed into the seed with the seed decreasing),
@@ -1218,25 +1229,28 @@ plus the honest line that conversion takes days, weeks or months.
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
-| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
-| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Proposed.** Zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
-| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | Nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
-| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
-| Talking and training a budgie | 9, 13 | Budgie | The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
-| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
-| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
+| Megabacteriosis, or avian gastric yeast | 23, 32 | Cross-species (small pet birds) | **Closed by `avian-gastric-yeast-guide`, Sep 2026.** Note the article corrects this row: Merck names budgerigars, parrotlets, lovebirds, cockatiels and finches together, and a peer-reviewed case series found it more often in the cockatiels examined than the budgies, so the "more common in budgerigars than anything else" framing below was an overstatement and was fixed on page 23 at 2.1. Originally logged as:** **Proposed, and the highest-value row here.** `Macrorhabdus ornithogaster` appears on the site only as three words in `budgie-health-issues-guide.mdx`. It is more common in budgerigars than in anything else kept, it kills 10 to 80% of affected birds depending on strain, and its whole presentation is a bird eating well and losing weight, which is invisible without a scale. Needs the going-light picture, whole seed in the droppings, that shedding is intermittent so one clear sample rules nothing out, the amphotericin B protocol at 100 mg/kg twice daily for 30 days with the note that shorter courses fail, and the liver and kidney monitoring during treatment. Serves budgie, cockatiel, canary, finch, lovebird and parrotlet |
+| Neoplasia in budgerigars, and lameness as a presenting sign | 20, 32 | Budgie | **Still open at 2.1.** **Proposed.** Nothing on the site connects a limping budgie to anything but injury, and renal tumors are specifically noted as common in this species, presenting as unilateral or bilateral lameness from compression of the nerve plexus rather than as a visible mass. Also the cere-color change in a mature cock. `budgie-health-issues-guide.mdx` has one line on lipomas and xanthomas and should be expanded rather than given a new URL |
+| Avian polyomavirus and French moult | 22 | Cross-species (birds, budgie-weighted) | **Closed by `avian-polyomavirus-guide`, Sep 2026.** ** Originally: zero hits anywhere in `content/` or `src/`. The disease is named budgerigar fledgling disease and the aviary term for its survivors has been in use for a century. Needs the acute form in unweaned chicks (crop stasis, death in 24 to 48 hours, signs at 7 to 10 days), the feather form in birds that survive past three weeks, the vaccine schedule from 35 days with a booster at 2 to 3 weeks, and the differential against PBFD, which is the part owners actually need |
+| Iodine deficiency and goiter | 21, 23 | Cross-species (seed-fed birds) | **Closed by `bird-pellet-conversion-guide`, Sep 2026.** ** which carries the Merck goiter material and the Lugol's figure. Originally: nothing. `guides/birds.js` mentions goiter in one clause on the budgie entry and nowhere else. The useful point is that it presents as a breathing noise rather than a lump, because the thyroid presses on the syrinx, so it is easy to mistake for a respiratory infection. Lugol's iodine at 1 drop per 250 mL of water until the bird is converted to pellets |
+| Exhibition versus pet-type budgies | 4, 16 | Budgie | **Still open at 2.1.** **Proposed.** Two visibly different animals sold under one name, differing in adult weight, build, lifespan and price, and the difference makes any published weight range unusable without knowing which you have. The site does not distinguish them at all. Belongs in a choosing-a-budgie article alongside the cross-species row the lovebird block already opened |
+| Talking and training a budgie | 9, 13 | Budgie | **Half closed at 2.1.** The training half is `parrot-training-guide`; the talking odds are still open. The species is bought for this more than for anything else and the site's coverage is two FAQ answers in `guides/birds.js`. Needs the honest odds (males, single birds, consistent repetition), what target and recall training actually look like, and the trade against getting a pair, which is the decision on page 9 of this package |
+| Colony and aviary keeping | not in 2.0 | Cross-species (budgie, canary, finch) | **Closed by `bird-colony-aviary-keeping-guide`, Sep 2026.** The article establishes that no verified space-per-bird or sex-ratio figure exists in a citable source, so page 9 at 2.1 carries the principles and deliberately prints no numbers.** Originally: **Proposed.** Budgies are the one small parrot commonly kept in groups, and both the site and this package answer only one-or-two. Space per bird, sex ratios, nest-site control in a group, and the point that a mixed colony is a breeding setup whether or not you intended one |
+| Reading small-parrot body language | 24, 25 | Cross-species (birds) | **Closed by `bird-body-language-guide`, Sep 2026.** At 2.1 the cues split by meaning: the one-foot against two-foot fluff and the fanned against bobbing tail went to page 19 with the red flags, and beak grinding and eye pinning to page 24, which finally moved beak grinding off page 31.** Originally: **Proposed.** Beak grinding, eye pinning, the one-foot sleep, fluffed-relaxed against fluffed-ill, tail fanning, head bobbing. This package puts beak grinding in a callout on page 31 purely because there was nowhere else for it, and the fluffed-relaxed against fluffed-ill distinction is the one an owner most needs and most often gets wrong |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the MSD cage table figure of 20&times;20&times;30 in and the 3/8 in bar spacing on
-pages 4, 5, 28 and 29; the 25 to 35 g weight range and the keel scoring on page 16; the
-normal heart rate, respiratory rate and body temperature on page 19; the clutch size and
-18-day incubation on page 17; the leuprolide and deslorelin dosing on page 17; the
-ivermectin and moxidectin dosing on page 23; the amphotericin B protocol and the 10 to 80%
-mortality figure on page 23; the Lugol's iodine figure on page 23; the polyomavirus
-timeline and vaccine schedule on page 22; the lead and zinc source lists on page 8; the
-30 to 45 day quarantine and the human psittacosis picture on pages 27 and 21; and the
-whole itemized budget on page 30.
+**Numbers with no site source at all.** Rewritten at 2.1, because most of this list now has
+one. Closed: the amphotericin B protocol and the 10 to 80% mortality figure, the Lugol's
+iodine figure, the polyomavirus timeline and vaccine schedule, the lead and zinc source
+lists, the quarantine periods and the human psittacosis picture, the keel scoring, and the
+droppings material are all sourced now and cited on page 39. The **25 to 35 g weight range
+also comes off this list**: LafeberVet's parakeet information sheet gives exactly 25 to 35 g,
+and was confirmed during this pass to also match the 274 bpm heart rate, the 60 to 75
+respiratory rate, the 107.1&deg;F body temperature, the 7 to 15 year life span, the 18-day
+incubation and the 4 to 6 egg clutch the package already prints. What is still PDF-only: the
+MSD cage table figure and bar spacing on pages 4, 5, 28 and 29; the leuprolide and deslorelin
+dosing on page 17; the ivermectin and moxidectin dosing on page 23; the neoplasia material on
+pages 20 and 32; the exhibition against pet-type distinction; and the itemized budget on
+page 30.
 
 **Source drift found while building.** Four, and the millet one is the most consequential
 because it concerns the food every budgie owner overfeeds.

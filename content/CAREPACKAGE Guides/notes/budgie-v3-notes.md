@@ -164,3 +164,104 @@ millet 2 to 3 times a week against VCA's small quantities once or twice a month,
 a large gap on the one treat every owner overfeeds; `encyclopedia/birds.js` stuffs a
 captive figure into `bio.wildLifespan`; and the site's three lifespan figures (12 to 15,
 7 to 12, and 7 to 12 again) do not agree with each other or with LafeberVet's 7 to 15.
+
+---
+
+## 2.1 corrections pass, 4 September 2026
+
+A cross-check of the whole package against the bird articles published since
+2.0: the fifteen in commit `42fd86f` plus the five cross-species bird guides
+that landed the day before it. Sixteen pages touched, one structural change.
+Guide version 2.0 to 2.1, template still t3, 39 pages to 40.
+
+### Four real errors, and this package had the worst of the set
+
+**Page 10, the 24-hour rule was wrong for this species.** The page said "a
+budgie that stops eating is a vet visit within 24 hours." Lafeber's Stephanie
+Lamb is specific that a small bird like a budgerigar should not go more than
+**12 hours** without eating; 24 hours is the figure for an African grey or
+larger. Now 12 hours, with the 10% weight-loss threshold beside it.
+
+**Page 27, the package recommended something the source discourages.** It said
+the public health guidance is to "test or prophylactically treat" a new bird
+before adding it to a group. The NASPHV and CDC compendium says the opposite:
+"routine prophylactic antibiotic treatment is highly discouraged as it may cause
+adverse effects and could generate resistant strains." The alternative is gone,
+it is testing only, and the page now says why. The gap log row in
+`TEMPLATE_GUIDE.md` carried the same error and was fixed with it.
+
+**Page 21, the doxycycline course was missing its species exception.** The page
+gave a flat 45 days. The compendium's own wording is 45 days historically,
+"except budgerigars required only 30 days," with recent work putting 21 to 30
+days within reach for psittacines generally and a retest two to four weeks
+after. In a budgie package that exception is the whole point. Now printed.
+
+**Page 23, the avian gastric yeast framing was an overstatement.** It said the
+organism is "more common in small pet birds such as budgerigars than in anything
+else." Merck names budgerigars, parrotlets, lovebirds, cockatiels and finches
+together, and a peer-reviewed case series found it more often in the cockatiels
+it examined than the budgies. Rebalanced, with the budgerigar's longer history
+kept. The four-weekly liver enzyme, bile acid and uric acid monitoring line was
+replaced with the fecal recheck schedule the source actually supports, and the
+uncommon acute form was added: budgerigars in good condition collapsing and
+dying within 12 to 24 hours from proventricular bleeding, as a same-day flag.
+
+### The rest, page by page
+
+- **Page 7.** Merck's over-12-hour photoperiod threshold and LafeberVet's 8 to 10 hour version of the intervention added beside VCA's 8.
+- **Page 8.** The PTFE source list said to check "irons, space heaters, hair dryers, air fryers and drip coffee makers"; Merck lists irons and ironing board covers, some self-cleaning ovens, reverse-cycle heat pump elements and some heat lamps, so the list now matches the source it implies. Lead now noted as sweet-tasting, zinc split into electroplated (safe) against hot-dipped (not), a carbon monoxide detector line added, and the cat-bite window corrected from "within a day or two" to "within hours," which is what the Pasteurella mechanism actually gives you.
+- **Page 9.** A short colony-and-aviary paragraph, deliberately with no numbers in it, because no verified space-per-bird or sex-ratio figure exists in a citable source.
+- **Page 12.** Avocado gained persin, the greater sensitivity of small birds, and the roughly 12-hour onset.
+- **Page 15.** "Regains flight at the next molt, usually within six to twelve months" removed, because Merck's position is that molt timing varies with nutrition, daylight and humidity and has no fixed interval. Merck's four-to-seven outermost primaries and the untouched secondaries added.
+- **Page 16.** Weighing moved from weekly to daily, before the first feed, citing Orosz.
+- **Page 17.** The 18-day incubation kept, with a line saying it is the budgerigar's own figure rather than the 21 to 28 days quoted as a general parrot range.
+- **Page 18.** The vent bulge, the prolapse, the late leg weakness and VCA's 48-hour marker added. The warming figure kept at 80 to 85 F but now named against LafeberVet's 80 to 90 F clinical range and VCA's 75 to 80 F for a recovering bird, with the overheating signs.
+- **Page 19.** Two illness cues sharpened: the one-foot against two-foot fluff, and a fanned tail against a bobbing one.
+- **Page 22.** VCA's up-to-100% mortality in birds under 15 days, and the vertical transmission route documented in budgerigars alone.
+- **Page 24.** Beak grinding as contentment and eye pinning as arousal rather than happiness, which is where the material stranded on page 31 finally belongs.
+- **Page 25.** Blood-feather first aid rewritten from "firm gentle pressure" (which is self-contradictory) to firm steady pressure, powder on the exposed tip and never into an open follicle, a vet at two to three minutes, and no pulling at home. Merck's partial second molt about six months after the main one added.
+- **Page 26.** The 20 to 30 minute dropping frequency, the larger morning dropping as normal, whole undigested seed cross-referenced to avian gastric yeast, and polyuria as often the first sign of kidney damage from zinc.
+- **Page 29.** The emergency card warming row matched to pages 18 and 21.
+- **Page 31.** The stranded beak-grinding line now points at pages 19 and 24 instead of explaining itself.
+- **Page 32.** The bleeding row matched to page 25.
+- **Page 34.** The CDC's 20 feet from any door, window or vent for a generator, and a carbon monoxide detector.
+
+### Where the body-language material actually landed
+
+It was drafted as a five-row table on page 24, which overflowed that page by
+107 px, then a callout on page 25, which overflowed by 45. Splitting it by
+meaning fixed it and reads better: the two illness cues went to page 19 with the
+rest of the red flags, and the two contentment and arousal cues to page 24 with
+the behaviour material. A mid-document page would have forced hand renumbering,
+which `TEMPLATE_GUIDE.md` forbids.
+
+### Structural: the second reference page
+
+The sources page overflowed by 471 px once the new citations went on, so the back
+matter split into **page 39, Sources & Further Reading** and **page 40, Where the
+Sources Disagree, Version History & About**. Page 40 gave the five source
+disagreements a home in the PDF for the first time; they had only ever lived in
+the gap log. This is the shape `TEMPLATE_GUIDE.md` already prescribes and that
+Cockatiel and Cockatoo already use. 39 pages to 40, no existing page number moved.
+
+### The CSS pass, third build running
+
+Fifteen pages were tight or overflowing after the content edits. The budgie head
+had already been tightened once from the lovebird's; porting the Cockatiel values
+into it (padding 0.56/0.60/0.50, line height 1.36, `p`/`li` 9.9pt, `td` 3.7pt,
+`table` 9.4pt, callouts 7/11pt and 9.6pt/1.36, `check-item` 3.2pt/9.5pt, `h2.h`
+12.4pt with 7.5/2.5 margins, `section-title` 18pt, `table.dense td` 2.2pt/1.26)
+cleared thirteen of them. All four bird files now share one head.
+
+Final measurement: all 40 pages clear, minimum 25 px free.
+
+### Still only in this PDF
+
+The neoplasia material on pages 20 and 32, the exhibition against pet-type
+distinction on pages 4 and 16, and the talking odds on page 9 have no site
+article behind them and stay open in the gap log. The 25 to 35 g weight range no
+longer belongs on that list: LafeberVet's parakeet sheet gives exactly that
+figure, along with the 274 bpm heart rate, the 60 to 75 respiratory rate, the
+107.1 F body temperature, the 7 to 15 year life span, the 18-day incubation and
+the 4 to 6 egg clutch this package already prints. All were checked against the
+sheet during this pass and all matched.
