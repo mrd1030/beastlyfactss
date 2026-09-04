@@ -1131,5 +1131,68 @@
       }
     ],
     "nextStart": "2026-09-12"
+  },
+  "pinterest": {
+    "facts": [
+      {
+        "id": 65,
+        "date": "2026-09-12"
+      },
+      {
+        "id": 139,
+        "date": "2026-09-13"
+      },
+      {
+        "id": 142,
+        "date": "2026-09-14"
+      },
+      {
+        "id": 125,
+        "date": "2026-09-15"
+      },
+      {
+        "id": 77,
+        "date": "2026-09-16"
+      },
+      {
+        "id": 133,
+        "date": "2026-09-17"
+      },
+      {
+        "id": 135,
+        "date": "2026-09-18"
+      }
+    ],
+    "articles": [
+      {
+        "file": "content/guides/bearded-dragon-tank-setup-guide.mdx",
+        "date": "2026-09-12"
+      },
+      {
+        "file": "content/guides/rat-tank-setup-guide.mdx",
+        "date": "2026-09-13"
+      },
+      {
+        "file": "content/guides/discus-tank-setup-guide.mdx",
+        "date": "2026-09-14"
+      },
+      {
+        "file": "content/guides/red-footed-tortoise-tank-setup-guide.mdx",
+        "date": "2026-09-15"
+      },
+      {
+        "file": "content/guides/chinchilla-tank-setup-guide.mdx",
+        "date": "2026-09-16"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-tank-setup-guide.mdx",
+        "date": "2026-09-17"
+      },
+      {
+        "file": "content/guides/rosy-boa-tank-setup-guide.mdx",
+        "date": "2026-09-18"
+      }
+    ],
+    "nextStart": "2026-09-19"
   }
 }

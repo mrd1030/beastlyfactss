@@ -268,8 +268,9 @@ Pinterest's first week is built for 9/12 to 9/18, 14 pins at 2 a day, batch in
 guides, seven fact pins. Care guides were the obvious source, but the
 health-issues photos are clinical vet clinic shots that do not carry a pin, so
 the care half leans on tank setup guides instead. The 14 pin images are
-committed under `public/assets/pins/` and have to be live before the import
-runs. Nothing is marked in the Pinterest ledger until the batch is queued.
+committed under `public/assets/pins/` and are deployed. That week is uploaded
+and queued, marked in the ledger (7 facts / 7 articles), with `nextStart` at
+2026-09-19.
 
 ---
 
