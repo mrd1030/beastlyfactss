@@ -196,8 +196,29 @@ source, and the article that now covers this ground declines to give a number of
 - Was: "Do not run salt for more than about 10 days continuously, it is hard on the kidneys and liver. Salt does not evaporate, so only replace what you remove in a water change, dosed to the volume replaced."
 - Now: "There is no agreed number of days to stop at, so do not run a countdown. End it the way the veterinary guidance does: once the infection has cleared, change the water repeatedly until the salt is fully out. Salt does not evaporate, so between changes only replace what you remove, dosed to the volume replaced."
 
-The 1 tsp per gallon dose itself was **not** changed. It is unsourced against the two vet
-sources now on the site and is parked pending a decision.
+**Dose changed too, after research.** The 1 tsp per gallon figure traces to no veterinary
+source. VCA's ich page, which the site already cites, gives "about a tablespoon of salt per
+5 gallons of water" and is explicit that the method is "only suitable for scaled fish."
+Merck gives 1 to 3 g/L for recovery and healing and says most freshwater fish tolerate
+3 g/L almost indefinitely, and UF/IFAS allows up to 0.2 percent as a permanent treatment in
+a recirculating system, all of which also contradict a 10 day ceiling.
+
+- Was: "Aquarium salt at 1 teaspoon per gallon (per 3.8 L), dissolved in a cup of tank water before it goes in, is the standard mild-case treatment."
+- Now: "Aquarium salt at about 1 tablespoon per 5 gallons (per 19 L), dissolved in a cup of tank water before it goes in, is the vet-reviewed starting dose, and it is for scaled fish only."
+
+That is roughly a third lower than the old figure. Page 27 follows: "salt at 1 tsp per
+gallon" became "salt at 1 tbsp per 5 gal".
+
+### Page 19, Velvet & columnaris
+
+Velvet's genus was wrong for a freshwater fish. Merck's parasitic diseases page: "Its
+freshwater counterpart, *Piscinoodinium* spp, is frequently seen on zebrafish and some
+barbs, but can occur on any freshwater fish." *Oodinium* is the marine genus.
+
+- Was: "*Oodinium*, a parasitic dinoflagellate. Usually introduced on a new fish and set off by stress, chilling, or poor water quality"
+- Now: "*Piscinoodinium*, the freshwater velvet parasite and a dinoflagellate. *Oodinium* is its marine counterpart and the two names get swapped constantly. Usually introduced on a new fish and set off by stress, chilling, or poor water quality"
+
+`betta-fish-health-issues-guide.mdx` still says *Oodinium* and is on the site list.
 
 ### Page 22, Tankmates
 
@@ -249,17 +270,26 @@ The two tank-size enrichment studies were merged onto one line and the Merck ent
 together, purely to buy space. Cover badge and colophon moved to Version 2.2, and a 2.2 row
 was added to the version history.
 
-**This page did not fit.** It ran 143px over after the additions, and 81px over even with
-every existing history row and the closing disclaimer cut to the bone. Its baseline
-headroom was 37px, so the page has been effectively full since 2.0. See the note below.
+This page did not fit as one page. It ran 143px over after the additions, and 81px over
+even with every existing history row and the closing disclaimer cut to the bone. Its
+baseline headroom was 37px, so it had been effectively full since 2.0.
 
-### The back reference page needs to be two pages
+### Page 37, new: Version history & about
 
-All three aquatic packages hit the same wall in this pass: betta 36, goldfish 39 and
-axolotl 41 are single reference pages carrying sources, version history, the colophon, and
-in the axolotl's case a source-drift section, and none of them has room for another source
-line or another history row. This is exactly the finding the Cockatiel 1.0 build recorded
-in `TEMPLATE_GUIDE.md`: a package that sources properly needs two reference pages at the
-back, not one. Betta is the awkward one of the three because it is a single hand-edited
-file rather than a `-src` fragment build, though a split at the very end of the document
-appends a page without moving any existing page number.
+**The package is now 37 pages.** Page 36 keeps the two source lists; the version history,
+the closing disclaimer and the colophon moved to a new page 37. The split is an append at
+the very end of the document, so no existing page number moved and no cross-reference
+needed touching. Changed with it: the cover badge from "36 pages" to "37 pages", and the
+contents gained a "Version History & About, 37" row while "Sources, Version History &
+About" became "Sources".
+
+Because page 36 now has 215px of headroom, three merges made purely to save space were
+undone: the two tank-size enrichment studies are separate lines again, the Merck entries
+are split by topic rather than run together, and Aquarium Co-Op and NC State have their own
+lines. Page 37 finished at 400px free.
+
+All three aquatic packages hit this same wall in this pass, and the resolution is now
+written into `TEMPLATE_GUIDE.md` under the aquatic adaptation note: a package that sources
+properly needs a sources page and a version-history page, which is the Cockatiel 1.0
+finding rather than a bird quirk. Betta was the awkward one only because it is a single
+hand-edited file rather than a `-src` fragment build.
