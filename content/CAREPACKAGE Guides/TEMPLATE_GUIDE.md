@@ -246,7 +246,7 @@ further down. Page counts below are what shipped, not estimates.
 | Class | Built | Pages | The middle, in short |
 |---|---|---|---|
 | Reptile | Bearded Dragon 3.0, Ball Python 2.1 | 34 | The canonical table above |
-| Aquatic | Betta 2.1, Goldfish 2.0, Axolotl 2.0 | 36 to 41 | Water systems replace heat systems |
+| Aquatic | Betta 2.2, Goldfish 2.1, Axolotl 2.1 | 37 to 42 | Water systems replace heat systems |
 | Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
 | Bird, small parrot | Lovebird 2.0, Budgie 2.0, Cockatiel 1.0 | 36 to 40 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
@@ -255,13 +255,13 @@ further down. Page counts below are what shipped, not estimates.
 **Aquatic.** Collapse pages 5 to 8 into tank size, filtration, cycling, and water quality
 and testing, and drop pages 7, 10, 14 (keep body condition), 15, and the UVB rows on 22
 and 23. Cycling, water chemistry, and water changes each need their own page rather than
-a shared one, which is why Betta landed at 36. Goldfish needed 39 because filtration
-sizing and media maintenance also split. Water quality is this class's whole health
+a shared one, which is why Betta landed at 36, then 37 once its reference page split.
+Goldfish needed 39, then 40, because filtration sizing and media maintenance also split. Water quality is this class's whole health
 story: goldfish spends pages 21 to 25 on it and still routes most conditions back to the
 test kit.
 
 A fully aquatic amphibian takes this same skeleton rather than a class of its own. Axolotl
-2.0 landed at 41, and the two places it diverges are worth knowing before the next one.
+2.1 landed at 42, and the two places it diverges are worth knowing before the next one.
 **Cooling replaces heating as the entire environmental story**, and it takes two pages, one
 for the numbers and one for the methods, because the equipment answer changes with the
 buyer's climate. And a tubbing, cooling and salt bath page appears that no other class has,
@@ -269,6 +269,21 @@ carrying the interventions a keeper actually performs at home. Handling shrinks 
 paragraph inside an arrival and quarantine page, since the answer is no. Everything else,
 tank size, filtration, cycling, water chemistry, water changes, the logs and the reference
 pages, carries across from the fish builds essentially unchanged.
+
+**Budget two reference pages at the back of an aquatic build, not one.** All three aquatic
+packages shipped with a single page carrying sources, version history, the colophon and,
+for the axolotl, a source-drift section, and all three overflowed the moment the September
+2026 article cross-check added source lines and a version row: betta by 143px against 37px
+of headroom, goldfish by 253px against 26px, axolotl by 363px against 32px. Betta stayed
+81px over even with every existing history row and the closing disclaimer cut to the bone,
+so this is not a compression problem. It is the same finding the Cockatiel 1.0 build
+recorded, and it is not a bird quirk: **any package that sources properly needs a sources
+page and a version-history page.** Splitting them took betta to 37, goldfish to 40 and
+axolotl to 42. On a `-src` build it is one `<!--PAGE-->` marker and one line in `SECTIONS`;
+on a single hand-edited file it is an append at the very end, which moves no existing page
+number. One trap on a `-src` build: a version-history row that describes an earlier edition
+using `{{PAGE_COUNT}}` will silently follow the new count, so hardcode the old number
+before splitting.
 
 **Mammal.** The heat, UVB, thermostat and substrate pages have no equivalent and come
 out. What replaces them is diet and health, both much larger than the reptile skeleton
@@ -765,12 +780,12 @@ The lesson worth keeping: when two internal sources disagree, "the dedicated gui
 picks a side without checking whether either side is right. Go to the external source
 first when the number matters.
 
-### Betta Fish 2.1, t3 (Sep 2026)
+### Betta Fish 2.2, t3 (Sep 2026)
 
 The first aquatic package on the t3 template. At the time, `goldfish.html` and
 `axolotl.html` predated t3 and carried none of its CSS additions, so the aquatic layout
 here was derived from the adaptation note in this guide rather than copied from them. Both
-have since been rebuilt on t3, so a new aquatic build should copy from one of those. It came out at 36 pages, not
+have since been rebuilt on t3, so a new aquatic build should copy from one of those. It came out at 36 pages, 37 since the reference page split, not
 the 28 to 30 that note predicted at the time, because cycling, water chemistry, and water
 changes need a page each rather than a shared one. That estimate has since been raised to
 34 to 36 in the adaptation note, and it is what prompted the **Page count is a target,
@@ -837,6 +852,26 @@ precedence rule, and two of the first calls were wrong.
   6.5 to 7.5. External sources back 6.5 to 7.5 as ideal with tolerance to about 8.0 and
   stability mattering more than the exact figure, so the setup guide was brought into line
   and gained the tolerance note. The package already used 6.5 to 7.5 and did not change.
+
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** Three items, all in
+site content rather than the package:
+
+- **The transport bag ratio in `aquarium-power-outage-and-transport-guide.mdx` is wrong,
+  and its own cited source says so.** The article states "A roughly two-thirds water,
+  one-third air split is standard for bettas." The Fish Site page it cites says
+  "Approximately 75 percent of the volume in the bag should be oxygen," and UF/IFAS FA212,
+  on *Betta splendens* specifically, says "Ninety percent of the bag's volume is reserved
+  for air to allow the betta enough oxygen to breath during shipment." Both put air well
+  above water, which is the direction the packages already had. Betta page 30 and goldfish
+  page 33 were left as they are. **The article is the thing to correct.**
+- **Velvet genus.** `betta-fish-health-issues-guide.mdx` names *Oodinium*. Merck's parasitic
+  diseases page gives *Piscinoodinium* as the freshwater counterpart, and
+  `goldfish-health-issues-guide.mdx` already uses it. The package was corrected on page 19;
+  the MDX still needs it.
+- **Columnaris is still thin.** The velvet and columnaris row above is crossed off for the
+  package, but the MDX expansion only went halfway: it gained a columnaris section of one
+  sentence and still does not carry the point that ich wants the temperature raised and
+  columnaris wants it lowered, which is the reason the row was logged.
 
 ### Rabbit 2.0, t3 (Sep 2026)
 
@@ -986,7 +1021,7 @@ than a settled number, because `tarantula-tank-setup-guide.mdx` is right that it
 40 to 60% from the care-guide side, 65 to 75% from the clinical side, and a full water
 dish plus one damp corner is what both sides actually do.
 
-### Goldfish 2.0, t3 (Sep 2026)
+### Goldfish 2.1, t3 (Sep 2026)
 
 Already covered, do not rewrite: page 6's bowl-myth argument from
 `goldfish-tank-size-bowl-myth.mdx`, which is a full deep dive. Page 13's slime coat and
@@ -1024,16 +1059,26 @@ updated Sep 4 2026 after the cross-check:
   site in `goldfish-health-issues-guide.mdx`, but the diflubenzuron figures differ between
   the two, see the site list below.
 
+**Site work found by the Sep 4 2026 cross-check, not fixed there.** The two site expansion
+rows are both done, but `goldfish-health-issues-guide.mdx` and page 25 now print different
+diflubenzuron doses, and both are correctly sourced. Merck's parasitic diseases page says
+"Diflubenzuron (0.03 mg/L, once) is the most effective treatment for crustacean parasites,"
+which is what the package prints. UF/IFAS FA185, on *Lernaea* specifically, gives
+0.066 mg/L, which is what the MDX prints. This is a genuine difference between two
+published sources rather than an error in either place, so neither was changed. Somebody
+should decide which the site leads with and say so in both. The praziquantel figure,
+5 mg/L as a prolonged bath, agrees in both.
+
 **Source drift, unresolved.** `guides/fish.js` costs for goldfish still carry the
 `// Rough starting ranges, not verified current pricing` comment and disagree with the
 itemized budget on page 29, which sums to $208 to $500 of equipment against the JS
 block's implied $170 to $345. The PDF figures are the researched ones. Worth correcting
 `fish.js` so the two stop drifting.
 
-### Axolotl 2.0, t3 (Sep 2026)
+### Axolotl 2.1, t3 (Sep 2026)
 
 A rebuild rather than a new build: 1.0 was 20 pages on the pre-t3 layout. It came out at
-41 pages, and the count was measured rather than chosen. The one real split was the
+41 pages, and 42 once the reference page split in 2.1, and the count was measured rather than chosen. The one real split was the
 temperature page, which overflowed by 182px and became a numbers page and a cooling
 methods page. `notes/axolotl-v3-notes.md` carries the parked blocks, the per-page free
 space, seven undrafted page ideas and a ranked cut list. Source is fragments plus a build
