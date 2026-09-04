@@ -255,6 +255,15 @@ cleared thirteen of them. All four bird files now share one head.
 
 Final measurement: all 40 pages clear, minimum 25 px free.
 
+### One correction after review
+
+Page 21's supportive-care line carried the 80 to 85 F figure but not the source
+naming or the overheating signs that pages 18 and 29 had gained, so the same
+number read three different ways inside one book. Completed to match: LafeberVet's
+80 to 90 F range and VCA's 75 to 80 F both named, and flat sleek feathers, wings
+held out or open-mouth breathing as the too-hot signs. Re-rendered over the same
+2.1 file. All 40 pages clear, minimum 25 px.
+
 ### Still only in this PDF
 
 The neoplasia material on pages 20 and 32, the exhibition against pet-type
