@@ -1,48 +1,48 @@
 {
   "hedgehog": {
     "id": "hedgehog",
-    "restricted": 10,
+    "restricted": 9,
     "checked": 51
   },
   "ferret": {
     "id": "ferret",
-    "restricted": 10,
+    "restricted": 9,
     "checked": 50
   },
   "sugar-glider": {
     "id": "sugar-glider",
-    "restricted": 10,
+    "restricted": 9,
     "checked": 51
   },
   "hamster": {
     "id": "hamster",
     "restricted": 1,
-    "checked": 40
+    "checked": 41
   },
   "gerbil": {
     "id": "gerbil",
     "restricted": 2,
-    "checked": 40
+    "checked": 41
   },
   "quaker-parakeet": {
     "id": "quaker-parakeet",
     "restricted": 12,
-    "checked": 40
+    "checked": 41
   },
   "bengal": {
     "id": "bengal-cat",
-    "restricted": 15,
-    "checked": 40
+    "restricted": 16,
+    "checked": 41
   },
   "veiled-chameleon": {
     "id": "veiled-chameleon",
     "restricted": 3,
-    "checked": 43
+    "checked": 44
   },
   "russian-tortoise": {
     "id": "russian-tortoise",
-    "restricted": 4,
-    "checked": 38
+    "restricted": 5,
+    "checked": 39
   },
   "ball-python": {
     "id": "ball-python",
@@ -57,96 +57,96 @@
   "tarantula": {
     "id": "tarantula",
     "restricted": 9,
-    "checked": 32
+    "checked": 33
   },
   "emperor-scorpion": {
     "id": "emperor-scorpion",
     "restricted": 8,
-    "checked": 32
+    "checked": 33
   },
   "tegu": {
     "id": "argentine-tegu",
     "restricted": 8,
-    "checked": 37
+    "checked": 38
   },
   "savannah-monitor": {
     "id": "savannah-monitor",
-    "restricted": 7,
-    "checked": 35
+    "restricted": 8,
+    "checked": 36
   },
   "chinchilla": {
     "id": "chinchilla",
     "restricted": 2,
-    "checked": 45
+    "checked": 46
   },
   "guinea-pig": {
     "id": "guinea-pig",
     "restricted": 1,
-    "checked": 40
+    "checked": 41
   },
   "green-iguana": {
     "id": "green-iguana",
     "restricted": 7,
-    "checked": 37
+    "checked": 38
   },
   "tokay-gecko": {
     "id": "tokay-gecko",
     "restricted": 2,
-    "checked": 36
+    "checked": 37
   },
   "tiger-salamander": {
     "id": "tiger-salamander",
-    "restricted": 18,
-    "checked": 34
+    "restricted": 19,
+    "checked": 35
   },
   "degu": {
     "id": "degu",
     "restricted": 14,
-    "checked": 39
+    "checked": 40
   },
   "axolotl": {
     "id": "axolotl",
     "restricted": 9,
-    "checked": 32
+    "checked": 33
   },
   "box-turtle": {
     "id": "box-turtle",
-    "restricted": 13,
-    "checked": 32
+    "restricted": 14,
+    "checked": 33
   },
   "red-eared-slider": {
     "id": "red-eared-slider",
-    "restricted": 9,
-    "checked": 33
+    "restricted": 10,
+    "checked": 34
   },
   "sulcata-tortoise": {
     "id": "sulcata-tortoise",
-    "restricted": 4,
-    "checked": 33
+    "restricted": 5,
+    "checked": 34
   },
   "hognose-snake": {
     "id": "hognose-snake",
-    "restricted": 6,
-    "checked": 33
+    "restricted": 7,
+    "checked": 34
   },
   "african-grey": {
     "id": "african-grey-parrot",
     "restricted": 2,
-    "checked": 33
+    "checked": 34
   },
   "millipede": {
     "id": "giant-millipede",
     "restricted": 7,
-    "checked": 32
+    "checked": 33
   },
   "corn-snake": {
     "id": "corn-snake",
-    "restricted": 7,
+    "restricted": 8,
     "checked": 45
   },
   "milk-snake": {
     "id": "milk-snake",
-    "restricted": 12,
+    "restricted": 13,
     "checked": 42
   },
   "rosy-boa": {
@@ -156,13 +156,13 @@
   },
   "flying-squirrel": {
     "id": "flying-squirrel",
-    "restricted": 21,
-    "checked": 25
+    "restricted": 22,
+    "checked": 26
   },
   "ackie-monitor": {
     "id": "ackie-monitor",
-    "restricted": 7,
-    "checked": 39
+    "restricted": 8,
+    "checked": 40
   },
   "garter-snake": {
     "id": "garter-snake",
@@ -181,47 +181,47 @@
   },
   "red-footed-tortoise": {
     "id": "red-footed-tortoise",
-    "restricted": 4,
-    "checked": 38
+    "restricted": 5,
+    "checked": 39
   },
   "bearded-dragon": {
     "id": "bearded-dragon",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "leopard-gecko": {
     "id": "leopard-gecko",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "crested-gecko": {
     "id": "crested-gecko",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "blue-tongue-skink": {
     "id": "blue-tongue-skink",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "chameleon-jackson": {
     "id": "chameleon-jackson",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "green-anole": {
     "id": "green-anole",
     "restricted": 1,
-    "checked": 8
+    "checked": 9
   },
   "rabbit": {
     "id": "rabbit",
     "restricted": 1,
-    "checked": 7
+    "checked": 8
   },
   "hissing-cockroach": {
     "id": "hissing-cockroach",
     "restricted": 2,
-    "checked": 7
+    "checked": 8
   }
 }

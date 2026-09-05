@@ -1,0 +1,55 @@
+# Delaware exotic animals, 3 Del. Admin. Code 903 and Del. Code tit. 3 c. 72
+
+sourceId: de-903 / de-nonnative-reptile-permit / de-native-wildlife
+jurisdiction: DE
+url: https://www.animallaw.info/administrative/de-exotic-animals-chapter-903-exotic-animal-regulations
+     https://delcode.delaware.gov/title3/c072/index.html
+     https://agriculture.delaware.gov/poultry-animal-health/exotic-animals/
+fetched: 2026-09-05
+fetch notes: regulations.delaware.gov is an Angular single-page app and serves an empty
+  shell to any fetcher, WebFetch included; there is no API path that works. delcode
+  .delaware.gov serves the statutes fine with plain curl. The regulation text came from
+  a full reproduction, cross-checked against the Department of Agriculture's own page.
+
+----------------------------------------------------------------------
+
+THE TRAP. Secondary sources circulate a Delaware prohibited list reading roughly
+"elephants, wolverines, hyaenas, kangaroos, wallabies, armadillos, skunks, raccoons,
+hippopotamus, peccaries, bats, rhinoceroses, wild rodents, crocodiles, cobras, coral
+snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas,
+gila monsters and komodo dragons". No such possession prohibition exists in chapter 903.
+Those names come from other parts of the scheme, chiefly 7.5.2.10, which is a restriction
+on what SALES PERMIT HOLDERS may BREED. Reading it as a ban puts the ball python, the
+prairie dog and the capybara in the wrong bucket, which is exactly what happened here.
+
+STATUTE, Del. Code tit. 3 § 7201, verbatim:
+
+  "No person shall bring into this State, possess, sell or exhibit any live wild mammal
+   or hybrid of a wild mammal or live reptile not native to or generally found in
+   Delaware without first securing a permit under this chapter."
+  Plus an outright ban, with no permit available, on non-native venomous snakes whose
+  venom poses a risk of serious injury or death. Permit fee is $25 under § 7202.
+  Note what is absent: birds, fish, amphibians, invertebrates. All outside the chapter.
+
+REGULATION 903:
+
+  6.1.1 Exempt mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters,
+        Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders.
+  6.1.2 Exempt reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons,
+        Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards,
+        and Tegus.
+        Note: lizards are exempted generously and NO snake, turtle or tortoise is exempt.
+  6.2   Unless exempt under 6.1, anyone owning or having custody of an exotic must first
+        obtain a permit from the Department.
+  4.7   The State Veterinarian will not issue Individual, Exhibitor or Sales permits for
+        gila monsters, beaded lizards or komodo dragons. This is the ONLY possession
+        prohibition in the chapter.
+  7.5.2.10 Sales Permit holders may not breed: crocodilians, tuataras, giant snakes over
+        5 feet (anacondas, pythons, boas), giant monitors, giant tortoises, and rare or
+        endangered species. A BREEDING restriction on one permit class.
+
+NATIVE SPECIES go to DNREC under Del. Code tit. 7 c. 7 instead, because a native animal
+is not exotic. Native reptiles are not available for private ownership, with one carve-out
+that matters: a captive-bred native snake in an aberrant colour morph may be held under
+permit. That is why the garter snake is banned here and the corn and milk snakes, whose
+pet trade is almost entirely colour morphs, are conditional.

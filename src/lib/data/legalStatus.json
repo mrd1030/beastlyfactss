@@ -98,175 +98,175 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 4 of the 51 have now been read for all 44 animals and 20 for at least 43 of them, while the least-read is down at 6. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 7,
+        "checked": 8,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "green-anole": {
-        "checked": 8,
+        "checked": 9,
         "of": 51
       },
       "flying-squirrel": {
-        "checked": 25,
+        "checked": 26,
         "of": 51
       },
       "tarantula": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "axolotl": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "box-turtle": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 32,
+        "checked": 33,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 33,
-        "of": 51
-      },
-      "sulcata-tortoise": {
-        "checked": 33,
-        "of": 51
-      },
-      "hognose-snake": {
-        "checked": 33,
-        "of": 51
-      },
-      "african-grey-parrot": {
-        "checked": 33,
-        "of": 51
-      },
-      "tiger-salamander": {
         "checked": 34,
         "of": 51
       },
-      "savannah-monitor": {
+      "sulcata-tortoise": {
+        "checked": 34,
+        "of": 51
+      },
+      "hognose-snake": {
+        "checked": 34,
+        "of": 51
+      },
+      "african-grey-parrot": {
+        "checked": 34,
+        "of": 51
+      },
+      "tiger-salamander": {
         "checked": 35,
+        "of": 51
+      },
+      "savannah-monitor": {
+        "checked": 36,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 35,
+        "checked": 36,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "nile-monitor": {
-        "checked": 36,
+        "checked": 37,
         "of": 51
       },
       "argentine-tegu": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "green-iguana": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "burmese-python": {
-        "checked": 37,
+        "checked": 38,
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "red-footed-tortoise": {
-        "checked": 38,
+        "checked": 39,
         "of": 51
       },
       "degu": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 39,
+        "checked": 40,
         "of": 51
       },
       "hamster": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "gerbil": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 40,
+        "checked": 41,
         "of": 51
       },
       "milk-snake": {
         "checked": 42,
         "of": 51
       },
-      "veiled-chameleon": {
+      "ball-python": {
         "checked": 43,
         "of": 51
       },
-      "ball-python": {
-        "checked": 43,
+      "veiled-chameleon": {
+        "checked": 44,
         "of": 51
       },
       "boa-constrictor": {
         "checked": 44,
         "of": 51
       },
-      "chinchilla": {
-        "checked": 45,
-        "of": 51
-      },
       "corn-snake": {
         "checked": 45,
         "of": 51
       },
-      "fennec-fox": {
+      "chinchilla": {
         "checked": 46,
         "of": 51
       },
+      "fennec-fox": {
+        "checked": 47,
+        "of": 51
+      },
       "serval": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "rosy-boa": {
@@ -431,7 +431,8 @@
     },
     "DE": {
       "name": "Delaware",
-      "level": "state"
+      "level": "state",
+      "scope": "Two regimes with a clean seam. Del. Code tit. 3 c. 72 and 3 Del. Admin. Code 903, run by the State Veterinarian, cover exotics, meaning live wild mammals, hybrids of wild mammals and reptiles not native to Delaware. Regulation 6.1 exempts a named list of pets outright, 6.2 requires a $25 Individual permit for everything else, and 4.7 names the only three animals that may not be permitted at all: gila monsters, beaded lizards and komodo dragons. Non-native venomous snakes are banned by statute. Anything native to Delaware is not exotic and belongs to DNREC instead, which does not make native wildlife available as pets except for a captive-bred native snake in an aberrant colour morph held under permit. Birds, fish, amphibians and invertebrates are outside the exotic chapter entirely, because § 7201 names only mammals, their hybrids and reptiles."
     },
     "TN": {
       "name": "Tennessee",
@@ -1222,6 +1223,11 @@
       "title": "Ariz. Rev. Stat. § 17-101, definitions, including wildlife",
       "url": "https://www.azleg.gov/ars/17/00101.htm",
       "note": "Sets the outer edge of what the Game and Fish Commission can reach. Wildlife means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn. Insects and arachnids are absent, so a terrestrial invertebrate is outside Title 17 altogether."
+    },
+    "de-903": {
+      "title": "3 Del. Admin. Code 903, Exotic Animal Regulations, with Del. Code tit. 3 § 7201",
+      "url": "https://www.animallaw.info/administrative/de-exotic-animals-chapter-903-exotic-animal-regulations",
+      "note": "The regulation that actually decides Delaware, and it is much narrower than the list circulating in secondary sources. § 7201 requires a permit before anyone brings in, possesses, sells or exhibits a live wild mammal, a hybrid of a wild mammal, or a live reptile not native to Delaware, and bans non-native venomous snakes outright with no permit available. Regulation 6.1 then exempts a named list of pets from the permit entirely, and 6.2 says everything else needs one. The only species the State Veterinarian may not permit at all are at 4.7: gila monsters, beaded lizards and komodo dragons. Pythons, anacondas and boas appear only at 7.5.2.10, a restriction on what Sales Permit holders may breed, not a possession ban. The Delaware regulations site is a single-page app that serves no text to a fetcher, so this was read from a full reproduction and cross-checked against the Department of Agriculture's own exotic animals page."
     }
   },
   "animals": {
@@ -1437,11 +1443,12 @@
           "verifiedOn": "2026-08-04"
         },
         "DE": {
-          "status": "permit",
-          "sourceId": "de-3900",
-          "note": "Not on the prohibited sublist, but a non-native live wild mammal, so it falls in the exotic animal permit regime.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Corrected. Hedgehogs appear by name on the exempt mammal list at regulation 6.1.1, so no permit is required. The previous entry treated this animal as a non-exempt wild mammal needing an exotic animal permit, which was the right framework read against the wrong list.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -1794,10 +1801,12 @@
           "verifiedOn": "2026-08-04"
         },
         "DE": {
-          "status": "unclear",
-          "sourceId": "de-3900",
-          "note": "The regime covers live wild mammals. A domesticated ferret is arguably not one, and Delaware does not say either way in the text read.",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Corrected. Ferrets appear by name on the exempt mammal list at regulation 6.1.1, so no permit is required. The previous entry treated this animal as a non-exempt wild mammal needing an exotic animal permit, which was the right framework read against the wrong list.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -2211,11 +2220,12 @@
           "verifiedOn": "2026-08-04"
         },
         "DE": {
-          "status": "permit",
-          "sourceId": "de-3900",
-          "note": "The prohibited list names kangaroos and wallabies but not gliders, so it falls to the general exotic animal permit rather than the ban.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-04"
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Corrected. Sugar gliders appear by name on the exempt mammal list at regulation 6.1.1, so no permit is required. The previous entry treated this animal as a non-exempt wild mammal needing an exotic animal permit, which was the right framework read against the wrong list.",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -2718,6 +2728,14 @@
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The golden hamster is Cricetidae, which is not among them, so no special licence is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Hamsters appear by name on the exempt mammal list, so no permit is required.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3028,6 +3046,14 @@
           "cite": "R12-4-406(F)",
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The Mongolian gerbil is Muridae, which is not among them, so no special licence is required.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Gerbils appear by name on the exempt mammal list, so no permit is required.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3359,6 +3385,14 @@
           "cite": "R12-4-406(G)",
           "quote": "The following species within the family Phasianidae ... All species listed under the Migratory Bird Treaty Act listed under 50 CFR 10.13",
           "note": "Arizona's restricted bird list is a handful of quail, grouse and turkeys plus everything covered by the federal Migratory Bird Treaty Act. No psittacine appears, and the only parrot the state names anywhere is the thick-billed parrot, a native species. The monk or quaker parakeet is neither, so no licence is required. Worth flagging against Pennsylvania, which bans this species by name.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement names live wild mammals, hybrids of wild mammals and non-native reptiles, and stops there. Birds are absent from the operative text despite the chapter's title mentioning them, and the Department of Agriculture's own guidance states that all birds and fish are exempt from the permitting process. The monk or quaker parakeet therefore needs nothing.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3694,6 +3728,15 @@
           "cite": "R12-4-406(E)",
           "quote": "Hybrid wildlife, as defined in R12-4-401, that result from the interbreeding of at least one parent species of wildlife that is listed under this Section are regulated by this Section.",
           "note": "Arizona is one of the few states with an express rule on hybrids, and it points the wrong way for the Bengal. The whole order Carnivora is restricted, which takes in the Asian leopard cat behind the breed, and subsection E then says hybrids resulting from the interbreeding of at least one listed parent species are regulated by the same section. No filial generation cutoff appears, so on the text a late-generation Bengal is caught alongside an F1. The counterweight is subsection D, which exempts domestic animals, defined as a species that does not exist in the wild, and a Bengal is a cross rather than a species. Recorded restricted rather than banned or legal, because the permit regime plainly reaches it and pet keeping is not clearly ruled out.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The Bengal is a hybrid of a wild mammal, which § 7201 names expressly alongside wild mammals themselves, and no cat appears on the exempt list. So an Individual permit is required and the filial generation does not enter into it, because the statute reaches the hybrid as such. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4034,6 +4077,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The veiled chameleon is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The veiled chameleon is covered by the entry for chameleons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/veiled-chameleon-legal-guide/"
@@ -4341,6 +4392,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Russian tortoise is on none of it, so no special licence is required. The only tortoises Arizona restricts are the genus Gopherus, which is its own desert tortoise. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The Russian tortoise is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4442,11 +4502,13 @@
           "verifiedOn": "2026-08-04"
         },
         "DE": {
-          "status": "banned",
-          "sourceId": "de-3900",
-          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
-          "note": "The prohibited list names pythons as a group with no size or species qualifier, so it reaches the ball python. Unusual: most states that restrict pythons name only the large constrictors.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-7.5.2.10, with 903-6.2",
+          "quote": "Giant snakes over 5 feet (anacondas, pythons, boas)",
+          "note": "Corrected from banned. Pythons do appear in these regulations, but only at 7.5.2.10, which lists giant snakes over five feet among the animals a Sales Permit holder may not breed. That is a breeding restriction on one permit class, not a prohibition on possession, and it carries a size qualifier the previous entry read past. The only animals the State Veterinarian may not permit at all are gila monsters, beaded lizards and komodo dragons. A ball python is a non-native reptile on no exempt list, so it needs an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "AR": {
           "status": "legal",
@@ -4778,10 +4840,13 @@
           "note": "Ohio's restricted snake list is constrictors of twelve feet or more plus the venomous families. A boa constrictor under twelve feet falls outside it, which makes length rather than species the test here."
         },
         "DE": {
-          "status": "unclear",
-          "sourceId": "de-3900",
-          "note": "The list names pythons and anacondas but not Boidae generally, and the anaconda is a boid, so whether the boa constrictor is caught is not resolvable from the list as written.",
-          "verifiedOn": "2026-08-04"
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "Resolved from unclear. The question was whether Delaware's list reached Boidae generally, and the answer is that the list in question is a breeding restriction on Sales Permit holders at 7.5.2.10, not a possession ban, and the only outright refusals are the gila monster, beaded lizard and komodo dragon. The boa constrictor is simply a non-native reptile that no exemption covers, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "AR": {
           "status": "legal",
@@ -5308,6 +5373,14 @@
           "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
           "note": "A tarantula is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. A tarantula is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -5586,6 +5659,14 @@
           "cite": "A.R.S. § 17-101(24)",
           "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
           "note": "The emperor scorpion is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The emperor scorpion is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -5897,6 +5978,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Argentine black and white tegu is on none of it, so no special licence is required. Teiidae appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The Argentine black and white tegu is covered by the entry for tegus is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -6187,6 +6276,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The savannah monitor is on none of it, so no special licence is required. Varanidae appears nowhere in the rule, so monitors of any size are unrestricted here. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The savannah monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Varanidae is absent from the exempt reptile list, which runs to anoles, agamas, water dragons, basilisks, bearded dragons, chameleons, geckos, iguanas, skinks, swifts and tegus.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -6361,12 +6459,13 @@
           "verifiedOn": "2026-09-05"
         },
         "DE": {
-          "status": "banned",
-          "sourceId": "de-3900",
-          "quote": "wild rodents",
-          "verifiedOn": "2026-08-04",
-          "cite": "7 Del. Admin. Code § 3900",
-          "note": "Delaware's exotic animal rules reach live wild mammals and their hybrids, and wild rodents are named. A permit exists in principle for exotic animals, but not for pet keeping."
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "Corrected from banned. The previous entry read a wild rodent prohibition into Delaware's rules; no such prohibition exists in chapter 903. The exempt mammal list simply does not reach the prairie dog, which leaves it a live wild mammal needing an Individual permit under 6.2. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "ID": {
           "status": "permit",
@@ -6758,12 +6857,13 @@
           "verifiedOn": "2026-09-05"
         },
         "DE": {
-          "status": "banned",
-          "sourceId": "de-3900",
-          "quote": "wild rodents",
-          "verifiedOn": "2026-08-04",
-          "cite": "7 Del. Admin. Code § 3900",
-          "note": "Caught by the same wild rodent wording as the prairie dog. Nothing in the rule carves out captive bred stock."
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "Corrected from banned. The previous entry read a wild rodent prohibition into Delaware's rules; no such prohibition exists in chapter 903. The exempt mammal list simply does not reach the capybara, which leaves it a live wild mammal needing an Individual permit under 6.2. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "TN": {
           "status": "legal",
@@ -7381,6 +7481,15 @@
           "note": "The fennec fox is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. No canid of any kind appears on the Unrestricted list. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The fennec fox is a live wild mammal and is not on the exempt list, so regulation 6.2 requires an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's outright refusals at 4.7 are only the gila monster, the beaded lizard and the komodo dragon, so no mammal is barred from permitting by name. County and municipal ordinances are the more likely obstacle for a cat or a canid of this size.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -7784,6 +7893,15 @@
           "note": "The serval is on neither the Unrestricted nor the Restricted list, and Vermont treats that absence as a restriction rather than a gap. The only cats on the Unrestricted list are wild-domestic hybrids of the fourth generation or later. A serval is not a hybrid. A permit exists on paper but not for a pet: Regulation 881 says the Commissioner shall not issue a permit for keeping or possessing a wild animal in captivity except for bona fide scientific or educational purposes. So restricted here means a private keeper cannot have one, not that there is paperwork to fill in.",
           "permitFor": "commercial-exhibition-research",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The serval is a live wild mammal and is not on the exempt list, so regulation 6.2 requires an Individual permit. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's outright refusals at 4.7 are only the gila monster, the beaded lizard and the komodo dragon, so no mammal is barred from permitting by name. County and municipal ordinances are the more likely obstacle for a cat or a canid of this size.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -8139,6 +8257,14 @@
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The chinchilla is Chinchillidae, which is not among them, so no special licence is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Chinchillas appear by name on the exempt mammal list, so no permit is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8455,6 +8581,14 @@
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The guinea pig is Caviidae, which is not among them, so no special licence is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Guinea pigs appear by name on the exempt mammal list, so no permit is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -8759,6 +8893,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The green iguana is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The green iguana is covered by the entry for iguanas is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "green-iguana"
@@ -9062,6 +9204,13 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Named at family level, so every snapping turtle is restricted live wildlife and needs the appropriate special licence under R12-4-409(A) or a lawful exemption. The exemptions at R12-4-407 are about transit, fairs and circuses, photography, advertising, veterinary care and registered research facilities, none of which is a pet route, so a private keeper has no practical way in. Arizona restricts only two turtle groups and this is one of them, the other being its own gopher tortoises.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7",
+          "note": "The snapping turtle is native to Delaware, so it is not exotic and the Agriculture permit chapter does not reach it. What applies instead is DNREC's native wildlife regime, under which native reptiles are not available for private ownership. The narrow carve-out Delaware does allow, a captive-bred native snake in an aberrant colour morph held under permit, is written for snakes and does not help a turtle.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9344,6 +9493,14 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The tokay gecko is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The tokay gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9635,6 +9792,13 @@
           "cite": "R12-4-406(I)",
           "quote": "The species Bufo horribilis, Bufo marinus, Bufo schneideri ... All species of the genus Rana ... All species of the genus Xenopus",
           "note": "Arizona's restricted amphibian list is three genera and species groups, the giant and marine toads, the genus Rana and the genus Xenopus. Ambystoma is not among them, so the tiger salamander needs no special licence. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The Sonora tiger salamander is also federally endangered, which is a separate federal constraint on that subspecies.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7",
+          "note": "The eastern tiger salamander is native to Delaware and is state endangered there. Amphibians sit outside the Agriculture permit chapter, which names only mammals, their hybrids and reptiles, so DNREC's native wildlife rules are the whole answer and they do not make native wildlife available as pets. The barred tiger salamander sold in the trade is a western species and would fall outside the native rules, but it is also outside the Agriculture chapter, which is why the axolotl comes out legal here.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9930,6 +10094,15 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The Nile monitor is on none of it, so no special licence is required. Varanidae appears nowhere in the rule. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The Nile monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. No monitor appears on the exempt list.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10243,6 +10416,15 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. No python appears on it, so Arizona itself does not restrict the Burmese python. Federal law is the constraint that bites: the species has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation and interstate transport.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Giant snakes over 5 feet (anacondas, pythons, boas)",
+          "note": "The Burmese python is a non-native reptile and no snake is exempt in Delaware, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. It is not banned here: pythons appear in these rules only at 7.5.2.10, which bars Sales Permit holders from breeding giant snakes over five feet, and that is a breeding restriction on a permit class rather than a prohibition on keeping one. Federal law is the harder constraint, since the species has been listed as injurious wildlife under the Lacey Act since 2012 and cannot lawfully cross a state line.",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -10560,6 +10742,14 @@
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona restricts rodents by family rather than as an order, and the seven families named are Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae and Sciuridae. The degu is Octodontidae, which is not among them, so no special licence is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Degus appear by name on the exempt mammal list, so no permit is required. Worth noting because Delaware names the degu specifically, which few states do, and Colorado goes the other way and requires a permit for one.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -10832,6 +11022,14 @@
           "cite": "R12-4-406(I)",
           "quote": "The species Bufo horribilis, Bufo marinus, Bufo schneideri ... All species of the genus Rana ... All species of the genus Xenopus",
           "note": "Arizona's restricted amphibian list is three genera and species groups, the giant and marine toads, the genus Rana and the genus Xenopus. Ambystoma is not among them, so the axolotl needs no special licence.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "A quirk of Delaware's drafting decides this one. The permit requirement covers wild mammals, their hybrids and reptiles, and amphibians are simply not in it. The axolotl is also not native to Delaware, so the DNREC native wildlife rules do not reach it either. It falls between the two regimes and needs no permit.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11109,6 +11307,13 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. Terrapene is on none of it. The only turtles Arizona restricts are the snapping turtles and its own gopher tortoises. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The ornate box turtle is the Arizona native here.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "banned",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7",
+          "note": "The eastern box turtle is native to Delaware and is a species of greatest conservation need there, so it is not exotic and falls to DNREC rather than to the Agriculture permit. Native reptiles are not available for private ownership, and the captive-bred colour morph carve-out is written for snakes. A Terrapene that is not a Delaware native would instead need an Individual permit as a non-native reptile.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11393,6 +11598,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The red-eared slider is on none of it, so no special licence is required. Trachemys appears nowhere in the rule. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The red-eared slider is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11671,6 +11885,15 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The sulcata is on none of it, so no special licence is required. Centrochelys is not Gopherus, so the sulcata is clear where the state's own desert tortoise is not. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The sulcata is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind. Note that giant tortoises, meaning Aldabras and Galapagos, are barred from being bred by Sales Permit holders under 7.5.2.10, but a sulcata is neither and the restriction is on breeding by permit holders rather than on possession.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11951,6 +12174,13 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The four colubrids Arizona claws back are the brown tree snake, boomslang, keelback and twig snake, and Heterodon is not among them. One Arizona-specific caveat: this species occurs in the wild here, and taking one alive from the wild is a separate question governed by R12-4-404 and R12-4-405 and the take limits in Commission Order 43, which need a valid hunting licence. The clearance above is about keeping a captive-bred animal, not about collecting one. The Mexican hognose reaches southeastern Arizona.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "conditional",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7, with Del. Code tit. 3 § 7201",
+          "note": "The condition is which hognose. The eastern hognose is native to Delaware, so it is DNREC's and native reptiles are not available for private ownership, subject only to the captive-bred aberrant colour morph carve-out held under permit. The western hognose that dominates the pet trade is not a Delaware species, which makes it a non-native reptile needing an Individual permit from Agriculture instead. Neither route is simply open, but they are different routes.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12228,6 +12458,14 @@
           "quote": "The following species within the family Phasianidae ... All species listed under the Migratory Bird Treaty Act listed under 50 CFR 10.13",
           "note": "Arizona's restricted bird list is a handful of quail, grouse and turkeys plus everything covered by the federal Migratory Bird Treaty Act. No psittacine appears, and the only parrot the state names anywhere is the thick-billed parrot, a native species. The African grey is neither, so no licence is required.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement names live wild mammals, hybrids of wild mammals and non-native reptiles, and stops there. Birds are absent from the operative text despite the chapter's title mentioning them, and the Department of Agriculture's own guidance states that all birds and fish are exempt from the permitting process. The African grey therefore needs nothing.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12500,6 +12738,14 @@
           "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
           "note": "The giant African millipede is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The giant African millipede is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -12554,11 +12800,11 @@
           "verifiedOn": "2026-08-27"
         },
         "DE": {
-          "status": "legal",
-          "sourceId": "de-3900",
-          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
-          "note": "The banned list is venomous species plus pythons and anacondas by name. A corn snake is none of those.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7",
+          "note": "Corrected from legal. The previous entry cleared this snake against a banned list that does not exist in the form described. The real point is that the corn snake is native to Delaware, so it is not exotic, the Agriculture permit chapter does not reach it, and DNREC's native wildlife rules do. Those rules do not make native wildlife available as pets, with one carve-out that matters here: a captive-bred native snake in an aberrant colour morph may be held under permit. Since the pet trade in this species is almost entirely captive-bred colour morphs, most animals offered for sale can qualify where a wild-type one cannot. Hence conditional rather than banned, which is where the garter snake sits.",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "legal",
@@ -12895,11 +13141,11 @@
           "verifiedOn": "2026-08-27"
         },
         "DE": {
-          "status": "legal",
-          "sourceId": "de-3900",
-          "quote": "cobras, coral snakes, mambas, vipers, rattlesnakes, copperheads, cottonmouths, pythons, anacondas",
-          "note": "The banned list is venomous species plus pythons and anacondas by name. A milk snake is none of those.",
-          "verifiedOn": "2026-08-27"
+          "status": "conditional",
+          "sourceId": "de-native-wildlife",
+          "cite": "Del. Code tit. 7, c. 7",
+          "note": "Corrected from legal. The previous entry cleared this snake against a banned list that does not exist in the form described. The real point is that the eastern milk snake is native to Delaware, so it is not exotic, the Agriculture permit chapter does not reach it, and DNREC's native wildlife rules do. Those rules do not make native wildlife available as pets, with one carve-out that matters here: a captive-bred native snake in an aberrant colour morph may be held under permit. Since the pet trade in this species is almost entirely captive-bred colour morphs, most animals offered for sale can qualify where a wild-type one cannot. Hence conditional rather than banned, which is where the garter snake sits.",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "legal",
@@ -13222,10 +13468,13 @@
           "verifiedOn": "2026-08-27"
         },
         "DE": {
-          "status": "unclear",
-          "sourceId": "de-3900",
-          "note": "Delaware's banned list names pythons and anacondas but not Boidae generally; since the anaconda is itself a boid, whether the family is meant to be caught more broadly is not resolvable from the text as written. This is the same unresolved ambiguity that leaves boa constrictor unclear in Delaware, and nothing in the list specifically distinguishes a small boa from a large one.",
-          "verifiedOn": "2026-08-27"
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "Resolved from unclear. The question was whether Delaware's list reached Boidae generally, and the answer is that the list in question is a breeding restriction on Sales Permit holders at 7.5.2.10, not a possession ban, and the only outright refusals are the gila monster, beaded lizard and komodo dragon. The rosy boa is simply a non-native reptile that no exemption covers, so an Individual permit is required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         },
         "FL": {
           "status": "legal",
@@ -13738,6 +13987,15 @@
           "permitFor": "personal",
           "localOverride": true,
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The southern flying squirrel is a wild mammal and squirrels are not on the exempt list, which covers hamsters, gerbils, mice, Norway rats, guinea pigs, chinchillas, degus, rabbits, possums, ferrets, hedgehogs and sugar gliders. A permit is therefore required. The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. Delaware's flying squirrel is also a native animal, so DNREC's native wildlife rules bear on taking one from the wild here regardless of the Agriculture permit.",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/flying-squirrel-legal-guide/"
@@ -14046,6 +14304,15 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The ackie monitor is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The ackie monitor is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. No monitor appears on the exempt list, and the Komodo dragon is the one varanid Delaware refuses to permit at all, so the family is treated with some care here.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -15514,6 +15781,15 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The red-footed tortoise is on none of it, so no special licence is required. The only restricted tortoises are the genus Gopherus. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "permit",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.2, with Del. Code tit. 3 § 7201",
+          "quote": "Unless specifically exempt from the permitting requirement as presented in regulation 6.1, all persons who would own or have custody of an exotic animal must first obtain a permit issued by the Department.",
+          "note": "The red-footed tortoise is a live reptile not native to Delaware and is not on the exempt list, so regulation 6.2 requires an Individual permit before anyone may bring one in, possess, sell or exhibit it. Delaware exempts no chelonian of any kind.  The permit is a $25 Individual permit from the Department of Agriculture, issued where possession will be in the public interest, so this is a real route rather than a closed door. ",
+          "permitFor": "personal",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15583,6 +15859,14 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The bearded dragon is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The bearded dragon is covered by the entry for bearded dragons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15654,6 +15938,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The leopard gecko is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The leopard gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15723,6 +16015,14 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The crested gecko is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The crested gecko is covered by the entry for geckos is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15794,6 +16094,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The blue-tongue skink is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Skinks are exempt with one carve-out, the five-lined skink, which is a Delaware native rather than a pet-trade animal. The blue-tongue skink is Australian and needs no permit. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15863,6 +16171,14 @@
           "cite": "R12-4-406(H)",
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. Jackson's chameleon is on none of it, so no special licence is required. ",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Jackson's chameleon is covered by the entry for chameleons is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -15934,6 +16250,14 @@
           "quote": "All species of the order Crocodilia ... All species of the family Chelydridae. Common name: snapping turtles; and All species of the genus Gopherus. Common name: gopher tortoises, including the desert tortoise",
           "note": "Arizona's restricted reptile list is short and aimed at danger and at its own natives: crocodilians, the venomous families, four named colubrids, snapping turtles and the genus Gopherus. The green anole is on none of it, so no special licence is required. ",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.2",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "The green anole is covered by the entry for anoles is named on the exempt list at regulation 6.1, so it needs no permit at all. Delaware exempts lizards generously and exempts no snake, turtle or tortoise at all, which is the sharpest line in this state's rules.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15997,6 +16321,14 @@
           "quote": "Order Erinaceomorpha, all species, except members of the genus Atelerix, which are not restricted. Common name: longeared and pygmy hedgehogs; Order Lagomorpha, all species, except members of the genus Oryctolagus containing domestic rabbits, which are not wildlife and are not restricted; Order Rodentia, the families Capromyidae, Castoridae, Dipodidae, Echimyidae, Erethizontidae, Geomyidae, Sciuridae",
           "note": "Arizona goes further than clearing the rabbit, it declines to call it wildlife at all. The order Lagomorpha is restricted with the genus Oryctolagus carved out in terms, and the carve-out says domestic rabbits are not wildlife and are not restricted. That phrasing puts the pet rabbit outside Title 17 rather than merely exempting it, which is the cleanest rabbit answer on this map.",
           "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "3 Del. Admin. Code 903-6.1.1",
+          "quote": "6.1.1 Mammals: Chinchillas, Degus, Ferrets, Gerbils, Guinea pigs, Hamsters, Hedgehogs, Mice, Norway rats, Possums, Rabbits and Sugar gliders. 6.1.2 Reptiles: Anoles, Agamas, Asian Water Dragons, Basilisks, Bearded dragons, Chameleons, Geckos, Iguanas, Skinks (except the five-lined skink), Swift lizards, and Tegus.",
+          "note": "Rabbits appear by name on the exempt mammal list, so no permit is required.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -16059,6 +16391,14 @@
           "cite": "A.R.S. § 17-101(24)",
           "quote": "\"Wildlife\" means all wild mammals, wild birds and the nests or eggs thereof, reptiles, amphibians, mollusks, crustaceans and fish, including their eggs or spawn.",
           "note": "The Madagascar hissing cockroach is an arthropod, and Arizona's definition of wildlife runs to mammals, birds, reptiles, amphibians, mollusks, crustaceans and fish. Insects and arachnids are not in it, so Title 17 and the restricted live wildlife rule made under it do not reach one at all. Arizona and Nevada answer this the same clean way; New Mexico does not, which is why the same animals sit unclear there.",
+          "verifiedOn": "2026-09-05"
+        },
+        "DE": {
+          "status": "legal",
+          "sourceId": "de-903",
+          "cite": "Del. Code tit. 3 § 7201",
+          "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
+          "note": "The permit requirement reaches live wild mammals, hybrids of wild mammals and non-native reptiles only. The Madagascar hissing cockroach is an arthropod and falls outside the chapter entirely, as it does outside the exotic animal regulations made under it.",
           "verifiedOn": "2026-09-05"
         }
       }
