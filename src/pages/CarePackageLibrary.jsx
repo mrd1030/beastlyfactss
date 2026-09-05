@@ -108,21 +108,59 @@ export default function CarePackageLibrary() {
       return;
     }
     setCodeSent(true);
-    setNotice('Check your email and click the sign-in link. If the email also shows a six digit code, you can type it here instead.');
+    setNotice('Check your email. Click the sign-in link, or paste it into the box below if clicking it does not bring you back here.');
+  };
+
+  // Accepts whatever the buyer can actually get out of their email client:
+  // the whole sign-in URL, the bare token from inside it, or a six digit code.
+  //
+  // The pasted-link path is not a nicety. Clicking the link fails in more ways
+  // than it looks: an Android device with an app registered for the Supabase
+  // domain opens that app instead of the browser, corporate scanners burn
+  // one-time links before the human sees them, and some clients rewrite or
+  // wrap the URL. In every one of those cases the token itself is still sitting
+  // there in the email, and pasting it is a working way in that does not depend
+  // on the redirect resolving at all.
+  //
+  // Supabase treats the `token` in that URL as a token_hash, which verifyOtp
+  // accepts directly. A six digit code is the other shape, and it goes through
+  // the email + token form instead.
+  const parseCredential = (raw) => {
+    const value = raw.trim();
+    if (/^\d{6}$/.test(value)) return { kind: 'code', token: value };
+
+    // A full URL, or anything carrying the query string from one.
+    const match = value.match(/[?&](?:token_hash|token)=([^&\s]+)/);
+    if (match) {
+      const typeMatch = value.match(/[?&]type=([^&\s]+)/);
+      return { kind: 'hash', token: decodeURIComponent(match[1]), type: typeMatch?.[1] || 'magiclink' };
+    }
+
+    // A bare token, pasted without the surrounding URL.
+    if (/^[a-f0-9]{20,}$/i.test(value)) return { kind: 'hash', token: value, type: 'magiclink' };
+
+    return null;
   };
 
   const verifyCode = async (e) => {
     e.preventDefault();
     setError('');
+
+    const parsed = parseCredential(code);
+    if (!parsed) {
+      setError('That does not look like a sign-in link or a six digit code. Paste the whole link from the email.');
+      return;
+    }
+
     setWorking(true);
-    const { error: verifyError } = await supabase.auth.verifyOtp({
-      email: email.trim(),
-      token: code.trim(),
-      type: 'email',
-    });
+    const { error: verifyError } = parsed.kind === 'code'
+      ? await supabase.auth.verifyOtp({ email: email.trim(), token: parsed.token, type: 'email' })
+      : await supabase.auth.verifyOtp({ token_hash: parsed.token, type: parsed.type });
     setWorking(false);
+
     if (verifyError) {
-      setError(verifyError.message || 'That code did not work. Ask for a new one.');
+      // Nearly always because the link was already opened once, or it aged out.
+      setError(verifyError.message || 'That link has already been used or has expired. Ask for a new one.');
     }
   };
 
@@ -211,14 +249,18 @@ export default function CarePackageLibrary() {
             </form>
 
             {codeSent && (
-              <form onSubmit={verifyCode} className="flex flex-col sm:flex-row gap-3 mt-4 pt-4 border-t border-border">
+              <form onSubmit={verifyCode} className="mt-4 pt-4 border-t border-border">
+                <label htmlFor="signin-credential" className="block text-sm font-body text-muted-foreground mb-2">
+                  Link not working? In your email, hold the Sign in link, copy it, and paste it here.
+                </label>
+                <div className="flex flex-col sm:flex-row gap-3">
                 <input
+                  id="signin-credential"
                   type="text"
-                  inputMode="numeric"
                   required
                   value={code}
                   onChange={e => setCode(e.target.value)}
-                  placeholder="6 digit code"
+                  placeholder="Paste the sign-in link"
                   autoComplete="one-time-code"
                   className="flex-1 bg-background border border-border rounded-full px-4 py-2.5 text-sm font-body text-foreground"
                 />
@@ -229,6 +271,7 @@ export default function CarePackageLibrary() {
                 >
                   Sign in
                 </button>
+                </div>
               </form>
             )}
 

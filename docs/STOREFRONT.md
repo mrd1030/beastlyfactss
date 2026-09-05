@@ -129,11 +129,26 @@ uses for likes and comments.
    anything else it silently substitutes the Site URL instead, so a default
    project sends sign-in links pointing at `http://localhost:3000` and every
    buyer's link is dead. That is what happened on the first test run.
-5. **Email sign-in.** The library uses `signInWithOtp`. Out of the box the
-   "Magic Link" template sends a link only, which is fine once step 4 is done:
-   clicking it returns the buyer to `/care-packages/library/` already signed in.
-   For the six digit code box on that page to work as well, add `{{ .Token }}`
-   to that template (Authentication -> Emails -> Magic Link). Optional.
+5. **Custom SMTP. This blocks going live.** Supabase's built-in email sender
+   "will refuse to deliver messages to addresses that are not part of the
+   project's team". So sign-in works for you and fails silently for every real
+   buyer. It is also rate limited to a handful of messages an hour, and it locks
+   the email templates, which is why the Source tab on the Magic Link template
+   cannot be clicked and the six digit code cannot be enabled.
+
+   Point Authentication -> Emails -> SMTP Settings at any SMTP provider and all
+   three of those go away at once. Then, optionally, add `{{ .Token }}` to the
+   Magic Link template so the six digit code works alongside the link.
+
+   Until that is done, treat the storefront as testable but not sellable.
+6. **Email sign-in, and why the library takes a pasted link.** The library uses
+   `signInWithOtp`, and clicking the emailed link is the normal path. The box
+   underneath that accepts a pasted link is not decoration: on Android a device
+   with an app registered for the Supabase domain opens that app instead of a
+   browser and the link is unusable, corporate scanners burn one-time links
+   before the human sees them, and some clients rewrite the URL. In all of those
+   the token is still in the email, and pasting the link verifies it directly
+   through `verifyOtp({ token_hash })` with no redirect involved.
 
 ## Cloudflare Pages environment variables
 
