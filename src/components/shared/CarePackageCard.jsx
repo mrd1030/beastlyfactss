@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
+import CarePackageBuyButton from '@/components/shared/CarePackageBuyButton';
 
 // Own product, not an affiliate link - no rel="sponsored" (that's reserved
 // for the paid/affiliate gear links in ProductCard.jsx). target="_blank"
@@ -10,11 +11,20 @@ import { ArrowUpRight } from 'lucide-react';
 // The outer element is a div, not a link, because every card also carries
 // an internal link to the species' free guide, and a link cannot nest inside
 // a link. The cover and the "Get the guide" row are the Gumroad links.
+//
+// A package with storefront: 'stripe' is the third case, and it is neither of
+// the other two: it sells here, so the cover points at its own product page at
+// /care-packages/<id>/ (an internal Link, no new tab) and the card carries a
+// real buy button instead of "Listing soon". Its status is still
+// 'coming-soon' - that is what keeps it out of the Gumroad grid - so this is
+// checked before isComingSoon everywhere the two would disagree.
 export default function CarePackageCard({ pkg, variant = 'compact' }) {
   const isFull = variant === 'full';
-  const isComingSoon = pkg.status === 'coming-soon';
+  const isStripe = pkg.storefront === 'stripe';
+  const isComingSoon = pkg.status === 'coming-soon' && !isStripe;
   const cover = pkg.image || pkg.cover;
   const guideHref = `/guides/${pkg.id}/`;
+  const productHref = `/care-packages/${pkg.id}/`;
   const shopProps = { href: pkg.gumroadUrl, target: '_blank', rel: 'noopener noreferrer' };
 
   const coverImg = cover ? (
@@ -39,7 +49,13 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
       }`}
     >
       <div className="aspect-video overflow-hidden bg-muted flex items-center justify-center">
-        {isComingSoon ? coverImg : <a {...shopProps} aria-label={`${pkg.name} on Gumroad`} className="block w-full h-full">{coverImg}</a>}
+        {isStripe ? (
+          <Link to={productHref} aria-label={pkg.name} className="block w-full h-full">{coverImg}</Link>
+        ) : isComingSoon ? (
+          coverImg
+        ) : (
+          <a {...shopProps} aria-label={`${pkg.name} on Gumroad`} className="block w-full h-full">{coverImg}</a>
+        )}
       </div>
       <div className="p-4 sm:p-5 flex flex-col gap-2 flex-1">
         <div className="flex items-center justify-between gap-2">
@@ -73,15 +89,20 @@ export default function CarePackageCard({ pkg, variant = 'compact' }) {
         )}
 
         <div className="mt-2 flex items-center justify-between gap-3">
-          {isComingSoon ? (
+          {isStripe ? (
+            <CarePackageBuyButton pkg={pkg} className="px-4 py-2" />
+          ) : isComingSoon ? (
             <span className="text-sm font-body font-semibold text-muted-foreground">In progress</span>
           ) : (
             <a {...shopProps} className="inline-flex items-center gap-1 text-sm font-body font-semibold text-secondary hover:underline">
               Get the guide <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
           )}
-          <Link to={guideHref} className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground hover:underline">
-            {isComingSoon ? 'Read the free guide' : 'Free guide'}
+          <Link
+            to={isStripe ? productHref : guideHref}
+            className="text-xs font-body font-semibold text-muted-foreground hover:text-foreground hover:underline"
+          >
+            {isStripe ? 'Full details' : isComingSoon ? 'Read the free guide' : 'Free guide'}
           </Link>
         </div>
       </div>

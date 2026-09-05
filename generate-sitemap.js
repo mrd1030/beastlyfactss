@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { themedQuizzes } from './src/lib/data/quizzes/index.js';
+import { CARE_PACKAGES } from './src/lib/data/carePackages.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -223,6 +224,14 @@ const staticPages = [
   '/glossary/',
   '/exotic-pet-laws/',
   '/care-packages/',
+
+  // Product pages for packages sold on this site. Same list prerender.mjs
+  // builds its routes from, so the sitemap cannot offer a URL that was never
+  // rendered. Gumroad packages are not here: their product page is Gumroad's.
+  // /care-packages/thanks/ and /care-packages/library/ are not here either -
+  // both are noindex,nofollow, and listing a noindexed URL in a sitemap is the
+  // contradiction the note above is about.
+  ...CARE_PACKAGES.filter(p => p.storefront === 'stripe').map(p => `/care-packages/${p.id}/`),
 
   // One page per animal in the legal matrix. Read from the dataset for the same
   // reason prerender.mjs does: a hand-copied list goes stale the moment a new

@@ -17,6 +17,7 @@ import { readFileSync } from 'fs';
 import path from 'path';
 import { cpus } from 'os';
 import { themedQuizzes } from './src/lib/data/quizzes/index.js';
+import { CARE_PACKAGES } from './src/lib/data/carePackages.js';
 
 const DIST = './dist';
 const PORT = 4173;
@@ -217,6 +218,16 @@ const STATIC_ROUTES = [
   '/care-packages/store',
   '/care-packages/why-we-exist',
   '/care-packages/faq',
+  // One product page per package that sells here rather than on Gumroad.
+  // Derived from the catalog, not hand-listed, for the same reason the
+  // encyclopedia and guide ids above are: a package switched to Stripe would
+  // otherwise have a live route that never gets a static file, which on
+  // Cloudflare means a real 404 for every crawler on a page we want indexed.
+  // /care-packages/thanks/ and /care-packages/library/ are deliberately NOT
+  // here: both are noindex,nofollow and neither has a stable default state to
+  // render (one needs a Stripe session id, the other a signed-in buyer), the
+  // same reason /donate/success and /donate/cancel are left out.
+  ...CARE_PACKAGES.filter(p => p.storefront === 'stripe').map(p => `/care-packages/${p.id}`),
 ];
 
 // Per-attempt deadlines, escalating. A flat 45s was the single biggest cost in
