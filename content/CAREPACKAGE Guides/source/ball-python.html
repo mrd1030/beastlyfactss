@@ -91,7 +91,7 @@ h3.h{font-size:11pt;margin:10pt 0 4pt 0;color:var(--accent-dark);}
 .toc-label{font-family:'Inter',sans-serif;font-weight:700;font-size:9pt;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-top:6pt;margin-bottom:1pt;border-bottom:1pt solid var(--line);padding-bottom:3pt;}
 .toc-label:first-of-type{margin-top:10pt;}
 .toc table{margin-top:0;}
-.toc td{padding:1.4pt 0;border-bottom:none;font-size:9.2pt;line-height:1.3;}
+.toc td{padding:1pt 0;border-bottom:none;font-size:9.2pt;line-height:1.26;}
 
 /* t3 additions */
 .tier{display:inline-block;font-size:7.6pt;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;border-radius:20pt;padding:2pt 7pt;white-space:nowrap;}
@@ -109,6 +109,8 @@ table.log.tall td{height:30pt;}
 .fill .line{flex:1;border-bottom:0.9pt solid var(--faint);height:13pt;}
 .cards{display:flex;gap:10pt;margin-top:8pt;}
 .card{flex:1;border:0.9pt solid var(--line);border-radius:8pt;padding:9pt 11pt;background:var(--cream);}
+.page14-tight .card{padding:7pt 9pt;}
+.page14-tight .card p{font-size:9pt;line-height:1.4;}
 .card h4{font-family:'Inter',sans-serif;font-size:8.6pt;text-transform:uppercase;letter-spacing:0.06em;color:var(--accent-dark);margin-bottom:4pt;}
 .card p{font-size:9.3pt;line-height:1.45;}
 .compact p,.compact li{font-size:9.8pt;}
@@ -150,7 +152,7 @@ table.log.tall td{height:30pt;}
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">34 pages</span>
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Beginner to Intermediate</span>
       <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Print or tablet</span>
-      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version 2.1 &middot; Sep 2026</span>
+      <span style="border:1pt solid #6B5540;color:#D8CBB8;font-size:8.4pt;font-weight:600;padding:5pt 11pt;border-radius:20pt;">Version 2.2 &middot; Sep 2026</span>
     </div>
   </div>
   <div style="width:3.9in;position:relative;flex-shrink:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%);">
@@ -224,7 +226,8 @@ table.log.tall td{height:30pt;}
     <div class="toc-label">Reference</div>
     <table>
       <tr><td>Glossary</td><td class="small" style="text-align:right;">33</td></tr>
-      <tr><td>Sources, Version History &amp; About</td><td class="small" style="text-align:right;">34</td></tr>
+      <tr><td>Sources</td><td class="small" style="text-align:right;">34</td></tr>
+      <tr><td>Version History &amp; About</td><td class="small" style="text-align:right;">35</td></tr>
     </table>
   </div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>2</span></div>
@@ -414,7 +417,7 @@ table.log.tall td{height:30pt;}
   <h1 class="section-title">Thermostats, probes &amp; heat sources</h1>
   <h2 class="h" style="margin-top:8pt;">The thermostat is the safety device</h2>
   <p>A thermostat sits between the heat source and your snake and stops a mat that reads 90&deg;F (32&deg;C) this morning from climbing on a warm afternoon. An unregulated under-tank heater can reach temperatures well above anything a snake can survive lying on, and a ball python will stay on a hot surface rather than move off it. This is the single most common preventable injury in the species, and the fix costs $25 to $100. Budget for the thermostat as part of the heat source, never as an upgrade to add later.</p>
-  <p style="margin-top:6pt;">Use an <strong>on/off or pulse thermostat</strong> for an under-tank heater, heat tape, a ceramic heat emitter, or a radiant heat panel, which is the usual ball python setup. Use a <strong>dimming (proportional) thermostat</strong> if you run an overhead halogen, which dislikes being switched on and off. Never put a UVB tube on a thermostat, and never run any heat source unregulated, not even briefly while you wait for a part.</p>
+  <p style="margin-top:6pt;">Use an <strong>on/off or pulse thermostat</strong> for an under-tank heater, heat tape, a ceramic heat emitter, or a radiant heat panel, which is the usual ball python setup. Use a <strong>dimming thermostat</strong> if you run an overhead halogen, which dislikes being switched on and off. Never put a UVB tube on a thermostat, and never run any heat source unregulated, not even briefly while you wait for a part. VCA puts any overhead source at least 4 to 6 in (10 to 15 cm) above the highest spot the snake can reach, behind a screened top.</p>
 
   <h2 class="h">Where the probe goes</h2>
   <p>Probe placement is the part people get wrong after buying the right equipment. Put the probe where the snake actually lies: on the substrate surface at the warm end, or inside the warm hide, taped down so the snake cannot shift it. A probe taped to the heat mat itself reads the equipment rather than the animal and will hold the mat at your set point while the surface above it runs hotter. Verify with an infrared thermometer gun for the first week, then spot-check monthly.</p>
@@ -447,11 +450,11 @@ table.log.tall td{height:30pt;}
     <text x="465" y="146" font-family="Inter" font-size="9.5" fill="#6E6459" text-anchor="middle">holds the mat at the set point while</text>
     <text x="465" y="166" font-family="Inter" font-size="10" fill="#9B3226" text-anchor="middle" font-weight="700">the surface above runs hotter</text>
   </svg>
-  <p class="muted" style="font-size:9.3pt;margin-top:5pt;">Wattage is a starting guess, not a target. Let the thermostat and the infrared gun settle it, and re-check after any change of room, season, or substrate depth.</p>
+  <p class="muted" style="font-size:9.2pt;margin-top:3pt;">Wattage is a starting guess, not a target. Let the thermostat and the infrared gun settle it, and re-check after any change of room, season, or substrate depth.</p>
 
-  <div class="callout tip">
+  <div class="callout tip" style="margin:7pt 0;padding:9pt 13pt;">
     <span class="label">Measure, don't assume</span>
-    An infrared thermometer gun costs $15 to $30 and is the only way to know what the surface under your snake actually reads. Check the warm side, the cool side, and the inside of both hides. Write the numbers on page 23 so a sitter or a vet can see them at a glance.
+    An infrared thermometer gun costs $15 to $30 and is the only way to know what the surface under your snake actually reads. Check the warm side, the cool side and both hides. Write the numbers on page 23 so a sitter or a vet can see them at a glance. Keep a second thermometer away from the thermostat's probe and read it daily: a thermostat stuck on, or a probe that has slipped, gives no other warning.
   </div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>7</span></div>
 </div>
@@ -513,7 +516,7 @@ table.log.tall td{height:30pt;}
 
   <div class="callout warn">
     <span class="label">Salmonella</span>
-    Healthy reptiles carry <em>Salmonella</em> with no sign of it. Wash your hands with soap before and after handling, keep the animal and its gear away from food-prep areas, and never clean dishes in the kitchen sink. Children under five, pregnant people, and anyone immunocompromised should not handle the snake.
+    Healthy reptiles shed <em>Salmonella</em> without being ill, and one negative test clears nothing. It travels hands to face or food, so wash with soap after every contact with the snake, its enclosure or anything in it. Never clean gear in a kitchen sink, a bathroom sink or a bath people use; keep a plastic tub for it and nothing else. Do not kiss the snake or hold it near your face. Children under five, adults over 65, pregnant people and anyone immunocompromised are most at risk, and the CDC line for under-fives is not to handle reptiles or their environments at all.
   </div>
 
   <h2 class="h" style="margin-top:10pt;">First days in a new home</h2>
@@ -577,7 +580,7 @@ table.log.tall td{height:30pt;}
 
   <div class="callout tip" style="margin-bottom:0;">
     <span class="label">Buying and storing</span>
-    Buy frozen prey in bulk from a commercial rodent supplier and keep it in a sealed bag or box in the freezer, away from human food, for no more than about six months. Label the bag with the size and the date. Never refreeze anything you have thawed.
+    Buy frozen prey in bulk from a commercial rodent supplier and keep it in a sealed bag or box in the freezer, away from human food. Held at a steady 0&deg;F (-18&deg;C) it stays safe indefinitely by FDA guidance, but quality falls the longer it sits, so work through stock rather than letting it stand a year. Label the bag with the size and the date. Never refreeze anything you have thawed. Frozen rodents are also a documented <em>Salmonella</em> source for people: keep containers and tongs that touch prey and nothing else, never thaw in a sink you wash dishes in, and wash your hands afterwards.
   </div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>11</span></div>
 </div>
@@ -590,7 +593,7 @@ table.log.tall td{height:30pt;}
   <h2 class="h" style="margin-top:4pt;">Thawing, step by step</h2>
   <ul class="compact">
     <li>Move the prey from the freezer to the fridge the night before, or thaw from frozen in a sealed bag submerged in cool water.</li>
-    <li>Finish in warm, not hot, water in a sealed bag for 20 to 30 minutes, until warm all the way through. The core should reach roughly 100 to 105&deg;F (38 to 41&deg;C), about the temperature of live prey and what the heat pits are looking for.</li>
+    <li>Finish in warm, not hot, water in a sealed bag for 20 to 30 minutes, until warm all the way through and about the temperature of live prey, which is what the heat pits look for. Judge it by touch rather than to a number: too hot cooks the prey and can scald the snake.</li>
     <li>Pat it dry. A dripping wet rodent is less appealing and makes a mess of the substrate.</li>
     <li><strong>Never microwave prey.</strong> It heats unevenly, leaving hot spots that can burn a snake's mouth while the center is still frozen, and it can rupture.</li>
   </ul>
@@ -660,15 +663,15 @@ table.log.tall td{height:30pt;}
 </div>
 
 <!-- PAGE 13: SEXING, GROWTH, BODY CONDITION -->
-<div class="page">
+<div class="page page14-tight">
   <div class="eyebrow">Section 02 &middot; Full Care Guide</div>
   <h1 class="section-title">Sexing, growth &amp; body condition</h1>
 
   <h2 class="h" style="margin-top:6pt;">Telling male from female</h2>
-  <p>Ball pythons show almost no reliable external sex difference before adulthood, which is why even experienced keepers confirm sex by <strong>probing</strong> or <strong>popping</strong> rather than by looking. Both are done by a reptile vet or an experienced breeder, not by a first-time owner: done wrong, either can cause real injury. Two soft clues exist. Adult males tend to have larger cloacal spurs, the small claw-like remnants either side of the vent, and adult females grow noticeably larger. Neither is conclusive on its own, and a pet-store guess about a hatchling is exactly that.</p>
+  <p>Ball pythons show almost no reliable external sex difference before adulthood, which is why even experienced keepers confirm sex by <strong>probing</strong> or <strong>popping</strong> rather than by looking. Both are done by a reptile vet or an experienced breeder, not by a first-time owner: done wrong, either can cause real injury. <strong>Ultrasound</strong> is the third route, carries no injury risk, and is documented as reliable for sexing snakes. Read nothing into cloacal spurs: the one measured difference comes from a wild Bahamian boa population and says nothing about the animal in your hands. Adult females do grow larger, and a pet-store guess about a hatchling is exactly that.</p>
 
   <h2 class="h">Growth reference</h2>
-  <p class="muted" style="font-size:9.5pt;">Ranges are deliberately wide and healthy snakes fall outside them. What matters is the trend: steady gain for a juvenile, a stable weight for an adult. Weigh monthly in grams and log it on page 30.</p>
+  <p class="muted" style="font-size:9pt;">Ranges are wide and healthy snakes fall outside them. What matters is the trend: steady gain for a juvenile, a stable weight for an adult. Weigh monthly in grams and log it on page 30.</p>
   <table class="dense">
     <tr><th>Age</th><th>Length</th><th>Weight</th></tr>
     <tr><td>Hatchling, 0 to 6 months</td><td>10 to 17 in (25 to 43 cm)</td><td>50 to 300 g</td></tr>
@@ -677,9 +680,10 @@ table.log.tall td{height:30pt;}
     <tr><td>Adult male, 3 years and up</td><td>3 to 3.5 ft (90 to 105 cm)</td><td>800 to 1,200 g</td></tr>
     <tr><td>Adult female, 3 to 5 years and up</td><td>4 to 5 ft (120 to 150 cm)</td><td>1,200 to 1,800 g</td></tr>
   </table>
+  <p class="muted" style="font-size:9pt;margin-top:3pt;">Adult length is a real disagreement, so both sides are printed: the lengths above are the ReptiFiles and PetMD figures, and VCA gives 5 to 6 ft at maturity. The weights have no veterinary source: read the trend, not the number.</p>
 
   <h2 class="h">Body condition at a glance</h2>
-  <div class="cards">
+  <div class="cards" style="margin-top:6pt;gap:8pt;">
     <div class="card">
       <h4>Underweight</h4>
       <p>A pronounced triangular cross-section with the spine ridged and visible along the back, loose skin folds outside a shed, and a narrow tail base. Rule out parasites, mites, and a cool warm side first (pages 17 and 18), then feed up on the normal schedule rather than by adding meals.</p>
@@ -694,7 +698,7 @@ table.log.tall td{height:30pt;}
     </div>
   </div>
 
-  <div class="callout info" style="margin-top:12pt;">
+  <div class="callout info" style="margin-top:7pt;padding:9pt 13pt;">
     <span class="label">When a weight change is a vet visit</span>
     A juvenile that stops gaining for 4 to 6 weeks. An adult that loses about 10% of its body weight outside a known seasonal fast, or any weight loss that comes with lethargy, a refusal to use the warm side, or abnormal stool. Bring the Owner Log; a trend line tells a vet more than a single reading.
   </div>
@@ -811,7 +815,7 @@ table.log.tall td{height:30pt;}
 
   <div class="callout info">
     <span class="label">Quarantine is the actual fix for mites</span>
-    Quarantine any new snake for 60 to 90 days before it goes anywhere near an established animal: a separate room where possible, paper towel substrate, a simple setup you can strip and disinfect, separate tools, and hand-washing between enclosures. Always work with the established animals first and the new one last. The same routine is what keeps IBD out of a collection (page 19), and there is a log for it on page 31.
+    Quarantine any new snake for <strong>3 to 6 months</strong> before it goes anywhere near an established animal. That is the Merck Veterinary Manual figure for a new reptile, not the 60 to 90 days the hobby usually quotes, and the extra time is what catches a slow problem. A separate room where possible, paper towel substrate, a simple setup you can strip and disinfect, separate tools, and hand-washing between enclosures. Always work with the established animals first and the new one last. Book the first vet visit within two weeks of pickup and bring a fresh fecal sample to it. The same routine is what keeps IBD out of a collection (page 19), and there is a log for it on page 31.
   </div>
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>18</span></div>
 </div>
@@ -822,7 +826,7 @@ table.log.tall td{height:30pt;}
   <h1 class="section-title">Parasites, regurgitation, obesity &amp; IBD</h1>
   <p class="section-sub">Less dramatic than the last two pages, and far more common.</p>
   <h2 class="h" style="margin-top:4pt;">Internal parasites</h2>
-  <p>Show up as weight loss and diarrhea despite the snake eating normally, sometimes with visible material in the stool. Wild-caught and imported animals carry them far more often than captive-bred stock. Diagnosis is a fecal test, which is why the first vet visit is worth booking with a fresh stool sample in a sealed bag, and why an annual wellness exam with a fecal is the standard recommendation. Treatment is a prescribed antiparasitic plus a full enclosure clean.</p>
+  <p>Show up as weight loss and diarrhea despite the snake eating normally, sometimes with visible material in the stool. Wild-caught and imported animals carry them far more often than captive-bred stock. Diagnosis is a fecal test, which is why the first vet visit is worth booking within two weeks of bringing the snake home, with a fresh stool sample in a sealed bag, and why an annual wellness exam with a fecal is the standard recommendation. Treatment is a prescribed antiparasitic plus a full enclosure clean.</p>
 
   <h2 class="h">Regurgitation</h2>
   <p>Bringing a meal back up hours to days after eating, most often from handling too soon after a feed, prey that was too large, or a warm side too cool to digest properly. It is hard on the esophagus and repeated episodes cause real damage. After one, leave the snake completely alone for 10 to 14 days, then offer a smaller than usual prey item. Repeated regurgitation is a vet visit, not a feeding adjustment.</p>
@@ -831,7 +835,7 @@ table.log.tall td{height:30pt;}
   <p>Real and common in captive ball pythons, and almost always the result of feeding an adult on a juvenile's schedule. Look for the body-condition signs on page 14: a rounded rather than loaf-shaped cross-section, skin visible between the scales when coiled, and creases along the body. The fix is stretching the feeding interval toward every 14 days and adding floor space, cover, and climbing, not cutting prey size while keeping the frequency.</p>
 
   <h2 class="h">Inclusion Body Disease (IBD)</h2>
-  <p>A serious viral disease of boas and pythons, associated with arenaviruses. Signs include neurological symptoms such as head wobbling, stargazing, and an inability to right itself, alongside regurgitation and progressive decline. There is no cure, and it can spread between boids through mites, which is the practical link between this page and the last one. Prevention is the only tool available: source from a reputable captive breeder and quarantine every new animal for 60 to 90 days.</p>
+  <p>A serious viral disease of boas and pythons, caused by <strong>reptarenaviruses</strong>. Signs include neurological symptoms such as head wobbling, stargazing, and an inability to right itself, alongside regurgitation and progressive decline. The two families behave differently, which matters during quarantine: a boa can carry the virus for months to years showing little or nothing, while a python usually declines fast once signs start. There is no cure, and it can spread between boids through mites, which is the practical link between this page and the last one. Prevention is the only tool available: source from a reputable captive breeder and quarantine every new animal for 3 to 6 months.</p>
 
   <h2 class="h">Burns and prolapse</h2>
   <p>Burns are covered on page 18 and are always a thermostat failure. A prolapse, anything protruding from the vent, is a same-day emergency: keep the tissue moist with clean lukewarm water or saline-dampened gauze, do not attempt to push it back, and get to a reptile vet immediately.</p>
@@ -843,13 +847,13 @@ table.log.tall td{height:30pt;}
   <div class="eyebrow">Section 03 &middot; Health &amp; Common Issues</div>
   <h1 class="section-title">Shedding, refusal &amp; defensive behavior</h1>
   <h2 class="h" style="margin-top:6pt;">The shed cycle</h2>
-  <p>A healthy shed comes off in one length. The cycle runs roughly a week to ten days: the skin dulls, the belly may pink up, the eyes go cloudy or blue for a few days, then clear again for two or three days before the snake sheds. Appetite drops through most of it and handling stops entirely, because a snake with clouded eyes is functionally blind and startles easily.</p>
+  <p>A healthy shed comes off in one length. The cycle runs roughly a week to ten days: the skin dulls, the belly may pink up, the eyes go cloudy or blue for a few days, then clear again one to two days before the snake sheds. Appetite drops through most of it and handling stops entirely, because a snake with clouded eyes is functionally blind and startles easily.</p>
   <div class="callout tip">
     <span class="label">The shed routine</span>
     From the moment the eyes go blue: raise humidity to 70 to 80%, check the humid hide is genuinely damp and top up the moss, make sure there is a rough surface such as cork for the snake to start the shed against, and leave it alone. Don't handle, don't feed, don't rearrange. After the shed, find the skin and check it for the eye caps.
   </div>
   <h2 class="h">Stuck shed (dysecdysis)</h2>
-  <p>Caused by humidity running too low, especially through the cycle itself. A bad shed comes off in flakes and patches. Increase humidity, offer a shallow lukewarm soak of 20 to 30 minutes, and gently roll the loosened skin off; never peel it by force. Check the eye caps every time. A retained eye cap is one of the easiest problems to miss because the snake's behavior looks completely normal, and it can cause permanent eye damage if left, so it needs a vet rather than a home attempt with tweezers.</p>
+  <p>Caused by humidity running too low, especially through the cycle itself. A bad shed comes off in flakes and patches. Increase humidity, offer a shallow lukewarm soak of 15 to 20 minutes, and gently roll the loosened skin off; never peel it by force. Check the eye caps every time. A retained eye cap is one of the easiest problems to miss because the snake's behavior looks completely normal, and it can cause permanent eye damage if left, so it needs a vet rather than a home attempt with tweezers.</p>
   <h2 class="h">Defensive behavior</h2>
   <p>Balling up tightly with the head tucked away is a fear response, not aggression, and it is where the species gets its name. Rapid or heavy breathing, hiding the head against your hand, actively trying to move away, or musking, a foul-smelling release from the cloaca, all mean the session is over. Bites are rare and minor, and are typically a feeding response from a snake that smells rodent on your hands rather than a temperament problem. Use tongs at every feeding and wash your hands after handling prey.</p>
   <div class="callout info">
@@ -868,9 +872,9 @@ table.log.tall td{height:30pt;}
   <table class="dense">
     <tr><th style="width:26%;">It looks like</th><th style="width:36%;">Usually means</th><th>Do</th></tr>
     <tr><td>A firm dark log with a chalky white urate, once every one to two weeks</td><td>Normal</td><td>Nothing. Snakes defecate on a meal cycle, not a daily one.</td></tr>
-    <tr><td>Urate yellow, orange, or hard and gritty</td><td>Dehydration</td><td>Check humidity and the water bowl, offer a shallow soak. Vet if it persists past a couple of cycles.</td></tr>
+    <tr><td>Urate yellow, orange, or hard and gritty</td><td>Dehydration, and left uncorrected a urate or kidney problem</td><td>Check humidity and the water bowl, offer a shallow soak. Vet if it persists past a couple of cycles: the same uric acid chemistry is what causes gout.</td></tr>
     <tr><td>Runny, watery, or foul-smelling more than once</td><td>Parasites, especially with mucus or blood</td><td>Vet with a fresh sample in a sealed bag (page 19).</td></tr>
-    <tr><td>Visible fur clumped and undigested</td><td>Warm side too cool to digest properly</td><td>Re-measure the warm side surface and check the thermostat probe (page 7).</td></tr>
+    <tr><td>Fur in a solid undigested clump. Loose fur and bone fragments are normal</td><td>Warm side too cool to digest properly</td><td>Re-measure the warm side surface and check the thermostat probe (page 7).</td></tr>
     <tr><td>Black, tarry, or with red streaks</td><td>Possible blood in the digestive tract</td><td>Vet the same day.</td></tr>
     <tr><td>Nothing at all, but the snake is eating and gaining</td><td>Normal between meals, or a slow cycle</td><td>Watch. Log the date of the last one so you know the interval.</td></tr>
     <tr><td>Nothing for 3 or more feeding cycles, or straining with nothing produced</td><td>Possible impaction or obstruction</td><td>Vet promptly, and mention substrate type and prey size.</td></tr>
@@ -881,7 +885,7 @@ table.log.tall td{height:30pt;}
   <ul class="compact">
     <li>Use a bowl heavy enough not to tip and large enough for the snake to fully enter, on the cool side. Refresh daily and scrub weekly, since a soaking snake will also defecate in it.</li>
     <li>Keep humidity in the 55 to 65% band as the baseline hydration tool. A snake that is chronically dry sheds badly long before it looks dehydrated.</li>
-    <li>A shallow lukewarm soak of 20 to 30 minutes helps a stuck shed or a dehydrated snake. Chest-deep at most, never unsupervised, and never hot water.</li>
+    <li>A shallow lukewarm soak of 15 to 20 minutes helps a stuck shed or a dehydrated snake. Chest-deep at most, never unsupervised, and never hot water.</li>
   </ul>
   <div class="callout warn">
     <span class="label">Signs of dehydration</span>
@@ -1255,7 +1259,7 @@ table.log.tall td{height:30pt;}
     <tr><td>Heat source</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Substrate, full change every 4 to 8 weeks</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
     <tr><td>Thermometer and hygrometer batteries</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-    <tr><td>Frozen prey stock, replace within about 6 months</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Frozen prey stock, check date and quality</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
   </table>
 
   <h2 class="h">Twelve-month planner</h2>
@@ -1268,7 +1272,7 @@ table.log.tall td{height:30pt;}
     <tr><td style="text-align:left;">Vet exam</td><td>&#9633;</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>&#9633;</td></tr>
   </table>
 
-  <h2 class="h">Quarantine log (any new snake, 60 to 90 days)</h2>
+  <h2 class="h">Quarantine log (any new snake, 3 to 6 months)</h2>
   <table class="log">
     <tr><th style="width:20%;">Date in</th><th style="width:20%;">Date out</th><th>Mite checks, sheds, feeds, and anything noticed</th></tr>
     <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -1349,41 +1353,71 @@ table.log.tall td{height:30pt;}
   <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>33</span></div>
 </div>
 
-<!-- PAGE 33: SOURCES, VERSION HISTORY, ABOUT -->
+<!-- PAGE 34: SOURCES -->
 <div class="page">
   <div class="eyebrow">Reference</div>
-  <h1 class="section-title">Sources, version history &amp; about</h1>
+  <h1 class="section-title">Sources</h1>
   <p class="section-sub">Where the numbers in this package come from, so you can check them yourself.</p>
 
-  <h2 class="h">Veterinary and scientific sources</h2>
+  <h2 class="h">Veterinary sources</h2>
   <ul class="compact">
-    <li>Kaufmann et al. Animal-appropriate housing of ball pythons (<em>Python regius</em>), a behavior-based evaluation of two types of housing systems. <em>PLOS ONE</em>.</li>
+    <li>Merck Veterinary Manual: management and husbandry of reptiles, and its parasitic and viral disease pages. Thermostat control and hot rocks, the 3 to 6 month quarantine, mite-borne transmission, and reptarenavirus in boas against pythons.</li>
+    <li>VCA Animal Hospitals: Snakes, Housing; Snakes, Owning; and Veterinary Care, New Reptile Visit. Heat-source clearance, night temperature, adult length at maturity, and the first exam within two weeks with a fecal sample.</li>
+    <li>PetMD, Ball Python Care Sheet, for husbandry, feeding and common conditions.</li>
+    <li>Association of Reptilian and Amphibian Veterinarians, for the vet directory on pages 15 and 22.</li>
+  </ul>
+
+  <h2 class="h">Scientific sources</h2>
+  <ul class="compact">
+    <li>Kaufmann et al. Animal-appropriate housing of ball pythons (<em>Python regius</em>). <em>PLOS ONE</em>. Page 13.</li>
     <li>Hutchings. Recent scientific insight into the spatial needs of captive snakes. <em>International Journal of Zoology</em>, 2025.</li>
     <li>Burghardt. Environmental enrichment and cognitive complexity in reptiles and amphibians. <em>Applied Animal Behaviour Science</em>, 2013.</li>
-    <li>PetMD, Ball Python Care Sheet. Reviewed veterinary care guidance on husbandry, feeding, and common conditions.</li>
-    <li>Association of Reptilian and Amphibian Veterinarians, for the reptile-vet directory referenced on pages 15 and 22.</li>
+    <li>Vetere, Capasso &amp; Di Ianni. Sex determination in reptiles: a review. <em>Animals</em>, 2025. Ultrasound, and the injury risk in popping.</li>
+    <li>Hoefer, Robinson &amp; Pinou. Sexual dimorphism in the pelvic spurs of the Bahamian boa. <em>Herpetology Notes</em>, 2021. Page 14.</li>
+    <li>Falk, Snow &amp; Reed. A validation of 11 body-condition indices in a giant snake species. <em>PLOS ONE</em>, 2017. Why weight beats length.</li>
+  </ul>
+
+  <h2 class="h">Public health and food safety</h2>
+  <ul class="compact">
+    <li>Centers for Disease Control and Prevention: reptiles and amphibians, and frozen feeder rodents. Pages 9 and 11.</li>
+    <li>Center for Food Security and Public Health, Iowa State University: Reptile- and Amphibian-Associated Salmonellosis.</li>
+    <li>US Food and Drug Administration, on frozen storage at a steady 0&deg;F.</li>
   </ul>
 
   <h2 class="h">Husbandry references</h2>
   <ul class="compact">
-    <li>ReptiFiles ball python care guide, including its terrarium size, lighting, and respiratory infection pages.</li>
-    <li>Zen Habitats ball python care sheet, provided by ReptiFiles.</li>
-    <li>Animal Diversity Web (University of Michigan), <em>Python regius</em>, for range, natural history, and wild size.</li>
-    <li>Beastly Facts ball python guides: tank setup, feeding, health issues, handling, cost, and enrichment, current at the time of publication.</li>
+    <li>ReptiFiles ball python care guide, and the Zen Habitats care sheet it provides.</li>
+    <li>Animal Diversity Web (University of Michigan), <em>Python regius</em>, for range and wild size.</li>
+    <li>Beastly Facts guides, current at publication: the ball python tank setup, feeding, health, handling, cost and enrichment guides, plus the cross-species reptile heating and thermostats, quarantine, salmonella and hygiene, stool and urates, shedding, snake sexing, and emergency plan guides.</li>
   </ul>
+
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>34</span></div>
+</div>
+
+<!-- PAGE 35: VERSION HISTORY & ABOUT -->
+<div class="page">
+  <div class="eyebrow">Reference</div>
+  <h1 class="section-title">Version history &amp; about</h1>
+  <p class="section-sub">What changed, and when, so an older printout can be placed.</p>
+
+  <div class="callout">
+    <span class="label">Where the sources disagree</span>
+    Adult length on page 14: the care sheets give an adult female 4 to 5 ft, VCA gives 5 to 6 ft, and both are printed. The growth weights there have no veterinary source. Prey warmth on page 12 is given by touch rather than as a number, because no veterinary source states one.
+  </div>
 
   <h2 class="h">Version history</h2>
   <table class="dense">
     <tr><th style="width:16%;">Version</th><th style="width:11%;">Template</th><th>What changed</th></tr>
+    <tr><td>2.2 &middot; Sep 2026</td><td>t3</td><td>Cross-checked against the September 2026 cross-species reptile articles. Quarantine raised from 60 to 90 days to the Merck figure of 3 to 6 months on pages 18, 19 and 31. Cloacal spurs reframed and ultrasound added on page 14, where adult length now prints the VCA figure beside the care-sheet one. The prey core-temperature figure on page 12 removed, since no veterinary source gives one. IBD attributed to reptarenaviruses, with the boa and python difference. Freezer storage reframed to the FDA figure, with the CDC prey-handling rules added. Salmonella callout rewritten. Urate and stool rows corrected. Soak time aligned to 15 to 20 minutes. Sources and version history split onto their own pages.</td></tr>
     <tr><td>2.1 &middot; Sep 2026</td><td>t3</td><td>Baseline humidity corrected from 55 to 70% down to 55 to 65%, which is the figure the ReptiFiles and Zen Habitats care sheets actually give. The 70 to 80% shed range is unchanged.</td></tr>
     <tr><td>2.0 &middot; Sep 2026</td><td>t3</td><td>34 pages. Substrate and handling split onto their own pages, restoring the full handling technique, session frequency, and settling-in guidance that the one-page version had to compress. Adds a cleaning routine and a hide-fit note.</td></tr>
     <tr><td>1.0 &middot; Sep 2026</td><td>t3</td><td>First edition. 33 pages on the t3 package template. Both units throughout, a probe-placement diagram, a full prey chart, and the peer-reviewed housing research on page 13.</td></tr>
   </table>
 
   <div class="divider"></div>
-  <p class="small">This package is a husbandry reference compiled from the sources above and cross-checked against current veterinary guidance at the time of publication. It is not a substitute for a reptile veterinarian, and nothing in it should delay a vet visit. Free companion guides, updated as guidance changes, are at beastlyfacts.com.</p>
-  <p class="small" style="margin-top:8pt;">&copy; Beastly Facts &middot; Version 2.1 &middot; Template t3 &middot; September 2026 &middot; For personal use by the purchaser. Please don't redistribute.</p>
-  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>34</span></div>
+  <p class="small">This package is a husbandry reference compiled from the sources on page 34 and cross-checked against current veterinary guidance at the time of publication. It is not a substitute for a reptile veterinarian, and nothing in it should delay a vet visit. Free companion guides, updated as guidance changes, are at beastlyfacts.com.</p>
+  <p class="small" style="margin-top:8pt;">&copy; Beastly Facts &middot; Version 2.2 &middot; Template t3 &middot; September 2026 &middot; For personal use by the purchaser. Please don't redistribute.</p>
+  <div class="pagefoot"><span class="brand">Beastly Facts</span><span>Ball Python Care Package</span><span>35</span></div>
 </div>
 
 </body>

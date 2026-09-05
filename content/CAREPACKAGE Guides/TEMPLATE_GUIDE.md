@@ -766,17 +766,44 @@ which carries a ball python temperature row. Page 20's shed cycle from
 
 | Gap | Pages | Scope | Shape |
 |---|---|---|---|
-| Heating hardware: thermostats, probe placement, heat source types | 7 | Cross-species | Also page 7 of Leopard Gecko 2.0, where the same hole appears for mats rather than for snake heat sources: on/off versus pulse for a mat, the probe taped flat inside the warm hide rather than on the glass, and why an unregulated mat is the classic burn. No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
-| Quarantine for a new reptile | 18, 31 | Cross-species | Also Leopard Gecko 2.0 pages 17 and 25, where it is the entire prevention story for cryptosporidiosis, and Crested Gecko 2.0 page 25. Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
-| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
-| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | Nothing. Open on the bearded dragon list too, and now on both gecko lists (Leopard Gecko 2.0 page 21, Crested Gecko 2.0 page 21), so one article closes four packages. The gecko versions need a hydration half that a snake article would not: the humid hide for a leopard gecko, misted droplets for a crested one |
-| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
-| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
+| Heating hardware: thermostats, probe placement, heat source types | 7 | Cross-species | **CLOSED Sep 5 2026 by `reptile-heating-thermostats-guide`.** Closes page 7 of Leopard Gecko 2.0 and page 7 of Bearded Dragon 3.0 in the same stroke. Ball Python 2.2 and Leopard Gecko 2.1 gained the 4 to 6 in VCA clearance figure and the daily second-thermometer check; Bearded Dragon 3.1 gained the second thermometer and narrowed its ceramic-emitter controller advice. One conflict is unresolved, see the Bearded Dragon block. Original row follows. Also page 7 of Leopard Gecko 2.0, where the same hole appears for mats rather than for snake heat sources: on/off versus pulse for a mat, the probe taped flat inside the warm hide rather than on the glass, and why an unregulated mat is the classic burn. No dedicated article. `thermostat` is mentioned in 62 files under `content/guides/` and 9 under `src/lib/data/`, but only ever as a line item in a cost or setup list, never explained. The site has three UVB articles and nothing on the device that actually prevents burns. On/off vs pulse vs dimming, probe on the surface not the mat, wattage as a guess not a target. Serves ball python, corn snake, kingsnake, hognose, garter, boa, milk snake, rosy boa |
+| Quarantine for a new reptile | 18, 31 | Cross-species | **CLOSED Sep 5 2026 by `reptile-quarantine-guide`.** The article moved the number: Merck recommends 3 to 6 months for a new reptile and calls 60 to 90 days the hobby floor. Corrected on Ball Python 2.2 pages 18, 19 and 31, Bearded Dragon 3.1 pages 18 and 33, and Leopard Gecko 2.1 pages 17 and 25. Crested Gecko 2.1 page 25 had no duration at all and ended quarantine on a clear fecal, which the article says clears nothing; it now carries the full window. Original row follows. Also Leopard Gecko 2.0 pages 17 and 25, where it is the entire prevention story for cryptosporidiosis, and Crested Gecko 2.0 page 25. Zero hits. The prevention story for both mites and IBD: 60 to 90 days, separate room, paper towel, separate tools, established animals first and the new one last |
+| Snake sexing, growth &amp; body condition | 14 | Cross-species (snakes) | **CLOSED Sep 5 2026 by `snake-sexing-growth-body-condition-guide`**, with one figure it deliberately does not carry. Ball Python 2.2 page 14 dropped the cloacal-spur clue, added ultrasound, and now prints VCA's 5 to 6 ft adult length beside the care-sheet figure. The growth **weights** stay package-only: the article states outright that no verified species-by-species snake weight ranges could be sourced, so there is nothing to check them against. Original row follows. Nothing for any snake. Probing and popping and why an owner should not do either, weight-based growth ranges, triangular vs loaf cross-section |
+| Reading reptile stool, urates &amp; hydration | 21 | Cross-species | **CLOSED Sep 5 2026 by `reptile-stool-urates-hydration-guide`.** It closed four packages as predicted, and the cross-check found the four had drifted apart: the discolored-urate row carried a different second cause in each. Ball Python and Leopard Gecko were clean, Bearded Dragon blamed excess calcium and Russian Tortoise blamed the liver, where the article gives dehydration, then a urate or kidney problem, then gout. All five reptile packages now read the same. Also closes the Russian Tortoise cloacolith row. Original row follows. Nothing. Open on the bearded dragon list too, and now on both gecko lists (Leopard Gecko 2.0 page 21, Crested Gecko 2.0 page 21), so one article closes four packages. The gecko versions need a hydration half that a snake article would not: the humid hide for a leopard gecko, misted droplets for a crested one |
+| Internal parasites and the fecal test, IBD, prolapse | 19, 21 | Ball python | **CLOSED Sep 5 2026. The expansion shipped**: `ball-python-health-issues-guide.mdx` now carries Internal Parasites, Inclusion Body Disease and Prolapse as full sections. Page 19 was corrected from arenaviruses to reptarenaviruses and gained the boa against python difference in how the disease presents, which is the practical argument for the longer quarantine. Original row follows. Expand `ball-python-health-issues-guide.mdx`, not a new URL. IBD currently exists only as a paragraph in `guides/snakes.js`, which is the secondary source |
+| Prey chart, thawing method, freezer storage | 11, 12 | Ball python | **CLOSED Sep 5 2026. The expansion shipped**: `ball-python-feeding-guide.mdx` now carries a Prey Type Chart, Thawing Method and Temperature, and Freezer Storage. The package's prey tiers matched. Two figures did not survive: the six-month freezer limit went to the FDA framing, and the 100 to 105&deg;F prey core temperature came out, because the article deliberately declines to state one. The CDC prey-handling rules were added. Original row follows. Expand `ball-python-feeding-guide.mdx`. It has schedule, prey size, and refusal reasons, but not the tier chart (ASF, day-old chicks, quail), thaw temperature and method, or storage |
 | Female ball pythons: follicles, eggs &amp; egg binding | 15 | Ball python | No snake equivalent of `bearded-dragon-eggs-and-egg-binding-guide.mdx`. The page with the least site backing in the whole package, so the one most worth grounding |
 
-**Numbers with no site source at all**, carried by the PDF only until the articles above
-exist: the growth table on page 14, the body-condition descriptions on page 14, the
-thermostat type guidance on page 7, and the prey tiers on page 11.
+**Numbers with no site source at all**, updated Sep 5 2026 after the cross-check:
+
+- Growth table, page 14: the **lengths** are now checkable, and page 14 prints the VCA
+  figure beside the care-sheet one because they disagree. The **weight column is still
+  package-only** and now known to be unsourceable: `snake-sexing-growth-body-condition-guide`
+  says plainly that no verified species-by-species snake weight ranges exist in the
+  veterinary or peer-reviewed literature. Page 14 says so on the page.
+- Body-condition descriptions, page 14: **now carried** by the same article, triangular
+  against loaf against round, and it confirms the block's note that the 9-point dog and cat
+  scale does not transfer.
+- Thermostat type guidance, page 7: **now carried** by `reptile-heating-thermostats-guide`,
+  with the article's own caveat that the on/off, pulse and dimming split is a manufacturer
+  distinction rather than a veterinary one.
+- Prey tiers, page 11: **now carried** by the expanded `ball-python-feeding-guide`.
+- Prey core temperature, page 12: was not on this list and should have been. Removed at 2.2
+  rather than sourced, because no veterinary source states a figure.
+- Page 15, female follicles, eggs and egg binding: **still the page with no site backing at
+  all.** No snake equivalent exists and the September 2026 batch did not add one. The
+  chelonian article does not transfer.
+
+**Site work found by the Sep 2026 cross-check, not fixed there.** One item, and it is a
+clearance rather than a correction:
+
+- **The adult-length check came back in the article's favor.** The cross-check flagged
+  `snake-sexing-growth-body-condition-guide` for attributing "5 to 6 feet" to VCA against
+  the package's 5 ft top end. The VCA page was read: "Hatchling ball pythons are about a
+  foot long and grow to about 3 feet by 3 years of age. At maturity (reached in 3-5 years),
+  adults reach 5-6 feet in length." The article quotes it correctly. What the check actually
+  exposed is a genuine disagreement between VCA and the ReptiFiles and PetMD care sheets the
+  package uses, so page 14 now prints both. Nothing on the site needs changing.
 
 **Source drift, resolved Sep 2026.** `snakes.js` said cool side 76 to 80&deg;F and
 humidity 50 to 60%; the MDX said 75 to 80&deg;F and 55 to 70%. Researched rather than
