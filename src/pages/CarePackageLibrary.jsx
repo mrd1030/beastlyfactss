@@ -104,7 +104,15 @@ export default function CarePackageLibrary() {
     });
     setWorking(false);
     if (otpError) {
-      setError(otpError.message || 'Could not send that email.');
+      // Supabase's raw "email rate limit exceeded" is true but unhelpful to a
+      // buyer, who reads it as having done something wrong. The limit is on the
+      // sender, not on them, and the useful part is that a link they were
+      // already sent still works.
+      const raw = otpError.message || '';
+      setError(/rate limit/i.test(raw)
+        ? 'Too many sign-in emails have gone out in the last hour. Wait a little and try again, or paste an earlier sign-in link below if you still have one.'
+        : raw || 'Could not send that email.');
+      setCodeSent(true);
       return;
     }
     setCodeSent(true);
