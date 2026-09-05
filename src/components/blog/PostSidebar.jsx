@@ -4,6 +4,7 @@ import { Clock, Heart } from 'lucide-react';
 import { facts } from '@/lib/data/facts';
 import { matchesAnimal } from '@/lib/utils/matchAnimal';
 import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
+import DeepDiveList from '@/components/shared/DeepDiveList';
 import { readDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { themedQuizzes } from '@/lib/data/quizzes';
 import BeehiivSubscribe from './BeehiivSubscribe';
@@ -37,7 +38,12 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
   // has no way to keep following that same thread once they've landed.
   const deepDiveArticles = useMemo(() => {
     const currentSlug = currentPost.slug?.current || currentPost._id || currentPost.id;
-    const siblingSlugs = getDeepDiveSiblings(currentSlug, allPosts, { fromGuideId });
+    // A bigger pool than fits, so DeepDiveList has something to put behind
+    // "Show all". The visible count is still DEEP_DIVE_LIMIT; this only decides
+    // how much is reachable by expanding. Capped rather than unbounded because
+    // the context-free ranking below the curated path degrades as it goes, and
+    // an endless tail of loosely-related articles is not worth revealing.
+    const siblingSlugs = getDeepDiveSiblings(currentSlug, allPosts, { fromGuideId, limit: 24 });
     if (siblingSlugs.length === 0) return [];
     return siblingSlugs
       .map((slug) => allPosts.find((p) => (p.slug?.current || p._id || p.id) === slug))
@@ -154,30 +160,14 @@ export default function PostSidebar({ allPosts, currentPost, onSelectPost }) {
         <BeehiivSubscribe />
       </div>
 
-      {/* Deep Dive: the same curated same-species list Guide/Encyclopedia
-          pages show, so clicking through from one of those doesn't strand a
-          reader with no way to keep following the thread. */}
-      {deepDiveArticles.length > 0 && (
-        <div className="bg-card border border-border rounded-2xl p-5">
-          <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-            📰 Deep Dive
-          </p>
-          <div className="space-y-3">
-            {deepDiveArticles.map((article) => (
-              <a
-                key={article._id || article.id}
-                href={`/blog/${article.slug?.current || article._id || article.id}/`}
-                onClick={(e) => { e.preventDefault(); onSelectPost(article); }}
-                className="group block"
-              >
-                <p className="text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug">
-                  {(article.emoji ? `${article.emoji} ` : '') + article.title}
-                </p>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* Deep Dive: the same curated same-species list Guide/Encyclopedia pages
+          show, and the same component, so clicking through from one of those
+          doesn't strand a reader with no way to keep following the thread. */}
+      <DeepDiveList
+        articles={deepDiveArticles}
+        guideId={fromGuideId}
+        onSelect={onSelectPost}
+      />
 
       {/* Quiz backlink: this article is a question source in these quizzes */}
       {quizBacklinks.length > 0 && (

@@ -190,6 +190,32 @@ export const DEEP_DIVE_LIMIT = 6;
 // quintet. This set is the relatedness signal the ranking below runs on: two
 // articles filed under nearly the same guides are about nearly the same thing,
 // and two that share only one guide out of twenty are not.
+// How many guides list an article, which is what separates the two halves of
+// the Deep Dive sidebar. An article listed by exactly one guide is that
+// species' own (conure-cost-guide, budgie-cere-color-guide). One listed by
+// several is shared care material that happens to apply here too
+// (bird-quarantine-guide sits under 10 bird guides,
+// reptile-salmonella-hygiene-guide under 36).
+//
+// Counted straight off RELATED_ARTICLES rather than through getListingGuides,
+// which is the wrong tool twice over: it returns a Set, and it adds a synthetic
+// `auto:` entry for any standard-suffix slug, so conure-cost-guide would come
+// back with two "guides" and read as shared.
+//
+// Zero counts as own rather than shared: an auto-detected article has no
+// RELATED_ARTICLES entry at all, and it was detected precisely because its slug
+// carries this species' prefix.
+let listingCounts = null;
+export function isSharedDeepDiveArticle(slug) {
+  if (!listingCounts) {
+    listingCounts = new Map();
+    for (const articles of Object.values(RELATED_ARTICLES)) {
+      for (const a of articles || []) listingCounts.set(a, (listingCounts.get(a) || 0) + 1);
+    }
+  }
+  return (listingCounts.get(slug) || 0) > 1;
+}
+
 function getListingGuides(slug) {
   const guides = new Set();
   for (const [guideId, articles] of Object.entries(RELATED_ARTICLES)) {
