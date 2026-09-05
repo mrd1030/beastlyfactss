@@ -259,6 +259,86 @@ reads like signing in rather than registering, and to add `{{ .Token }}` to it
 as well as to Magic Link. The library tries a typed code as type `email` and
 falls back to `signup`, so a code from either template works.
 
+## Phase 2, not started: product pages in the landing page style
+
+**The hamster is off sale until this is done.** `storefront: 'gumroad'` in
+`carePackages.js` is what holds it there. Phase 1 proved the plumbing; it did
+not produce a page worth selling through.
+
+`src/pages/CarePackageProduct.jsx` today is a competent spec sheet: cover,
+price, bullets, contents, buy button. The bar is set by the nine pages in
+`.gumroad-pages/products/`, which are real sales pages. Those were written for
+Gumroad to host and are the closest thing to a brief that exists.
+
+### What those nine actually are
+
+One shared skeleton, skinned per species. The skeleton:
+
+1. Hero: full-bleed gradient, eyebrow, a hook headline, one paragraph, price
+   CTA, three tick bullets, cover art on a slight rotation with a rating badge,
+   and an SVG wave into the next section.
+2. Contrast pair: a rose "care-sheet roulette" card of four real frustrations,
+   against a themed "this guide" card answering them one for one.
+3. What's inside: six cards, emoji, heading, one line.
+4. Preview carousel: five interior page images, snap scroll, arrows and dots.
+5. Who this is for, and what it's not: two columns on a dark panel.
+6. Final CTA, then footer.
+
+What changes per species is the whole skin:
+
+| Package | Palette | Keyframes |
+| --- | --- | --- |
+| axolotl | coral, deep, mist | sway |
+| bearded-dragon | ember, fire, sand | emberPulse, spin-slow |
+| budgie | cream, sky, sun | flutter, drift |
+| crested-gecko | jungle, mist, orchid | bob, drift |
+| goldfish | gold, sand, teal | shimmer, wiggle |
+| guinea-pig | hay, leaf, toffee | nibble |
+| leopard-gecko | amber, night, sand | blink, twinkle, pulseGlow |
+| lovebird | bloom, cream, rose | beat |
+| russian-tortoise | clay, sage, sand, terra | plod |
+
+Plus a bespoke hook headline each: "Basking temps you don't have to guess at",
+"Two facts drive most vet visits. This covers both", "An animal that can
+outlive its owner deserves the setup right". Only Fredoka and the section order
+are constant.
+
+### Notes for whoever builds it
+
+- **Themes are data, not Tailwind config.** Nine palettes in
+  `tailwind.config.js` would bloat it for pages most visitors never see. Put
+  each package's colors on a wrapper as CSS custom properties instead, in a
+  `src/lib/data/carePackageThemes.js` keyed by package id, and leave the
+  catalog file as catalog.
+- **The hamster's theme is already decided.** The retired
+  `care-packages/hamster.html` uses `class="page cover burrow"`, and that
+  folder's README defines `burrow` as the arid-steppe rodent palette. Use it,
+  with an animation off the wheel or the bedding rather than a borrowed one.
+- **These pages need per-package copy that does not exist yet**: the hook, the
+  four frustrations, the four answers, six cards, who it is for, what it is
+  not. For the nine, lift it from `.gumroad-pages/products/<id>.html`. For the
+  hamster there is no source, so it has to be written.
+- **The carousel has no images for the hamster.** The nine pull five interior
+  pages each from `public-files.gumroad.com`, uploaded when the listing was
+  made. The hamster has no listing. Either render page images from
+  `content/CAREPACKAGE Guides/source/hamster.html` with headless Chrome and
+  commit them under `public/assets/care-packages/hamster/`, or ship without
+  the section. Self-hosting is better: a package no longer sold on Gumroad
+  should not depend on Gumroad's CDN.
+- **Reveal-on-scroll must not hide content from crawlers.** Those pages use an
+  IntersectionObserver that sets `opacity: 0` until scrolled into view. The
+  product page is prerendered and indexed, so a naive port would capture an
+  invisible page. Either resolve it during prerender via the
+  `window.__IS_PRERENDER__` guard the rest of the app uses, or make the initial
+  state visible and treat the animation as progressive enhancement.
+- **Drop the Gumroad-only machinery** when porting: `data-gumroad-field`,
+  `data-gumroad-action`, the `window.top.location.href` iframe escapes, and the
+  Tailwind CDN script. On our own domain the buy button is
+  `CarePackageBuyButton` and the links are ordinary `Link`s.
+
+`.gumroad-pages/` was gitignored until 5 September 2026 and is now tracked, so
+the source for all nine is in the repo.
+
 ## Cloudflare Pages environment variables
 
 Settings -> Variables and Secrets, on the **Production** environment (and
