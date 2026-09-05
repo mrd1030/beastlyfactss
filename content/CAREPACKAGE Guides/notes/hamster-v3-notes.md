@@ -1,6 +1,6 @@
 # Hamster, notes for the next version
 
-Written against **3.0, 36 pages, template t3**, September 2026. The previous build was
+Written against **2.1 (built as 3.0), 36 pages, template t3**, September 2026. The previous build was
 v2.0 at 42 pages and never shipped, so nothing here was ever in a customer's
 hands. Old page numbers below are v2.0's; new ones are v3.0's.
 
@@ -393,9 +393,9 @@ Never cut, in any edition:
 
 ---
 
-## 3.1, September 2026: the small mammal article cross-check
+## 2.2, September 2026: the small mammal article cross-check
 
-Written against **3.1, 37 pages, template t3**. A corrections edition. The
+Written against **2.2 (rendered first as 3.1, renumbered the same day), 37 pages, template t3**. A corrections edition. The
 hamster block in `TEMPLATE_GUIDE.md` has no gap table, so the check ran the
 other way round: every page the four September 2026 cross-species articles
 could touch was read against them.
@@ -533,7 +533,7 @@ including every source behind the new page 18.
 
 No `.snug` changes: 3.0 already has it everywhere. Minimum headroom across all 37
 pages is 17px, on page 18, which is the new antibiotic page and the tightest in
-the package. If v4 adds anything to page 18, split it rather than compress it.
+the package. If the next edition adds anything to page 18, split it rather than compress it.
 
 ### Still only in the PDF
 

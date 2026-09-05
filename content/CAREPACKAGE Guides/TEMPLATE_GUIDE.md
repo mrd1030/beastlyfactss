@@ -247,7 +247,7 @@ further down. Page counts below are what shipped, not estimates.
 |---|---|---|---|
 | Reptile | Bearded Dragon 3.0, Ball Python 2.1, Leopard Gecko 2.0, Crested Gecko 2.0 | 34 | The canonical table above |
 | Aquatic | Betta 2.2, Goldfish 2.1, Axolotl 2.1 | 37 to 42 | Water systems replace heat systems |
-| Mammal | Rabbit 2.0, Hamster 3.0 | 36 to 39 | Diet and health dominate; no environmental control pages |
+| Mammal | Rabbit 2.1, Hamster 2.2, Guinea Pig 2.1 | 36 to 39 | Diet and health dominate; no environmental control pages |
 | Invertebrate | Tarantula 2.1 | 43 | Molt and rehousing replace handling; prevention replaces treatment |
 | Bird, small parrot | Lovebird 2.0, Budgie 2.0, Cockatiel 1.0 | 36 to 40 | Light and sleep replace heat; hazards, pairing and clipping are new pages |
 | Bird, large parrot | Cockatoo 1.0 | 42 to 45 | The above, plus a decision page, a species-choice page, dust and human health, training, bonding, screaming, legal and succession |
@@ -309,7 +309,7 @@ prey-species behavior to change the handling pages: picking one up is a page, an
 its body language is another.
 
 Page count scales with the animal inside the class, so take it from the nearest species
-rather than from the class. A rabbit runs 38 to 40. Hamster 3.0 came in at 36, and its
+rather than from the class. A rabbit runs 38 to 40. Hamster 2.1 (built as 3.0) came in at 36, and its
 block below puts a rodent at 34 to 37, because a smaller animal genuinely has less
 husbandry to describe. Two pages a rodent needs that a reptile does not are species
 choice, since temperament varies enormously inside one common name, and torpor. Read the
@@ -405,7 +405,7 @@ page into columns took it from 42 px of overflow to 16 px of clearance and reads
 Mammals drop pages 6, 7 and 8's reptile half entirely: heat, UVB, thermostats and UVB
 distance have no mammal equivalent. Rabbit v2.0 spent the freed room on indoors versus
 outdoors, flooring and litter training, proofing, bonding, and spay and neuter, and landed
-at 39 pages. Hamster 3.0 needed far less of that, because the animal is solitary, lives
+at 39 pages. Hamster 2.1 needed far less of that, because the animal is solitary, lives
 two to three years, and has one enclosure standard rather than a housing philosophy, and
 landed at 36. Take 34 to 39 as the mammal range rather than a single number, and let the
 animal's social life decide where in it you fall: a species that is kept in pairs needs a
@@ -442,8 +442,14 @@ footer to match, per step 8 of the build workflow.
 Two numbers, kept apart, both printed on the last page of every package:
 
 - **Guide version** (`1.0`, `2.1`, `3.0`): how many times *this* guide has been revised.
-  A guide starts at 1.0 the day it is published, however mature the skeleton it was built
-  on. Only a rebuild or a correction moves it.
+  A guide starts at 1.0 with its first complete build, however mature the skeleton it was
+  built on, and whether or not that build has been listed yet. Only a rebuild or a
+  correction moves it: a rebuild on a new template is the next whole number, a corrections
+  or tightening pass is the next .1. Publication does not gate the number.
+  `carePackages.js` carries the number a buyer actually receives, which lags this one
+  until the listing goes up. The Hamster is the worked example: 1.0 pre-t3 draft, 2.0 t3
+  rebuild, 2.1 page tightening (built and briefly numbered 3.0, corrected September
+  2026), 2.2 article cross-check, none of them listed yet.
 - **Template generation** (`t3`, or `pre-t3`): which generation of `source/_template.html`
   the edition was built on. `t3` is this 34-page skeleton. `pre-t3` covers the older
   22-page layout in `care-packages/`, whose generations were never numbered.
@@ -1043,12 +1049,12 @@ site content rather than the package:
   further. `guinea-pig-scurvy-vitamin-c-guide.mdx` has the same problem and is on the
   Guinea Pig list below.
 
-### Hamster 3.1, t3 (Sep 2026)
+### Hamster 2.2, t3 (Sep 2026)
 
 The second mammal package, and the one that shows the small-mammal skeleton runs
 narrower than the rabbit's, not wider. It was first built at 42 pages and cut to 36 by
 combining six pairs of pages that shared a topic. Every block removed is in
-`notes/hamster-v4-notes.md` in full markup.
+`notes/hamster-v3-notes.md` in full markup.
 
 Where v2.0 had drifted wider than the reptile skeleton, and what it cost:
 
@@ -1106,10 +1112,10 @@ of the three.
 
 **What the Sep 2026 cross-check found here.** This block has no gap table, so the check
 ran the other way: every page the four cross-species small mammal articles could touch
-was read against them. Three of the four found something, and the package rebuilt as 3.1
+was read against them. Three of the four found something, and the package rebuilt as 2.2
 at 37 pages.
 
-- **The torpor threshold was wrong by about 24&deg;F, and it drove seven pages.** 3.0 gave
+- **The torpor threshold was wrong by about 24&deg;F, and it drove seven pages.** 2.1 gave
   60 to 65&deg;F, attributed only to "sources". Merck's hamster page gives hibernation at
   "< 5&deg;C (41&deg;F)" and LafeberVet's information sheet gives torpor "below 41&deg;F (5&deg;C),
   particularly when exposed to short days", with both adding a thin food supply as a

@@ -24,7 +24,7 @@ version are different numbers".
 | `Goldfish_Care_Package_v2.pdf` | 2.1 | Filter turnover floor of 4 times an hour, which is the light-stocking figure rather than the goldfish one, a KH action line below the level that already inhibits the biofilter, quarantine at 2 to 4 weeks, and waste rows that assigned confident causes to a nonspecific sign |
 | `Axolotl_Care_Package_v2.0.pdf` | 2.1 | Salt bath figures printed as a prescription with an indication and a salt type the source never gives, a temperature change ceiling of 1 to 2&deg;F an hour, per-method cooling figures with no source, and a hardness target that traces to nothing |
 | `Rabbit_Care_Package_v2.pdf` | 2.1 | A comfortable range of 60 to 70&deg;F and a heatstroke line of 85&deg;F, against Merck's 61 to 72&deg;F optimal environment and VCA's 80&deg;F ceiling; heat stress signs with no drooling stage; nail and scent gland intervals of 4 to 8 weeks and a month or two against Lafeber's 6 to 8; swallowed fur described as a direct route to GI stasis where VCA has it compounding a gut that has already slowed; a flat no-fasting instruction before surgery against Merck's short 1 to 2 hour mouth-clearing fast; a post-operative eating deadline of the evening of surgery day against Merck's 2 to 3 hours; and the GI stasis line printed as 8 hours on five pages and 8 to 12 hours on a sixth |
-| `Hamster_Care_Package_v3.pdf` | 3.1 | A torpor threshold of 60 to 65&deg;F attributed only to "sources", where Merck and LafeberVet both give 41&deg;F (5&deg;C) and add short days and a thin food supply as triggers; no antibiotic warning anywhere in 36 pages despite recommending antibiotics for wet tail and for respiratory infection, where Merck records fatal enterotoxemia 3 to 5 days after a dose; VCA's 80&deg;F ceiling on the temperature page only, absent from the setup targets and the emergency card; and a cover badge still reading 42 pages from the 2.0 build |
+| `Hamster_Care_Package_v3.pdf` (built as 3.0, now 2.1 in the history) | 2.2 | A torpor threshold of 60 to 65&deg;F attributed only to "sources", where Merck and LafeberVet both give 41&deg;F (5&deg;C) and add short days and a thin food supply as triggers; no antibiotic warning anywhere in 36 pages despite recommending antibiotics for wet tail and for respiratory infection, where Merck records fatal enterotoxemia 3 to 5 days after a dose; VCA's 80&deg;F ceiling on the temperature page only, absent from the setup targets and the emergency card; and a cover badge still reading 42 pages from the 2.0 build |
 | `Guinea_Pig_Care_Package_v2.0.pdf` | 2.1 | A heat danger line of 82&deg;F, which is the RSPCA's most-commonly-seen figure rather than a ceiling, against VCA's 80&deg;F (27&deg;C); a heat stress sign order led by the stretched-out posture, which Blue Cross gives as a too-warm signal and no clinical source puts first; cold water explained as vasoconstriction where PDSA gives shock and ice burns; an antibiotic list missing amoxicillin, amoxicillin-clavulanate and cephalosporins while naming chlortetracycline, which Merck now places in the usable group, and spiramycin, which no current source names; no safer-drug list; no fasting duration; and no post-operative eating deadline |
 | `Tarantula_Care_Package_v2.pdf` | 2.1 | A layout-only tightening pass across all 43 pages that changed no words and no type sizes. Minimum page headroom went from 19px to 31px |
 | `Russian_Tortoise_Care_Package_v2.0.pdf` | 2.1 | A brumation protocol with the weight-loss figure inverted, printing 1% a month as the abort threshold when it is the normal rate, plus a 40 to 55&deg;F band above the published ceiling, a 2 to 4 month duration treated as a target rather than a limit, and a two-year age floor against the published four. Also a male plastron described as convex where Merck gives concave, egg binding triggered on a two-day nesting clock against a normal retention window of weeks, a quarantine of three to six months against the EAZWV six-month minimum, and a metronidazole dose printed for owners to read |
@@ -46,7 +46,7 @@ unversioned 21 and 20 page files that stay in `rebuilt/`, and betta at `coming-s
 All three new editions also gained a second reference page at the back, which is the
 Cockatiel 1.0 finding applied to the aquatic set: 36 to 37, 39 to 40, and 41 to 42 pages.
 
-Rabbit's 2.0, Hamster's 3.0 and Guinea Pig's 2.0 were archived here in September
+Rabbit's 2.0, Hamster's 3.0 (since renumbered 2.1) and Guinea Pig's 2.0 were archived here in September
 2026 by the small mammal cross-check. All three gained a second reference page at
 the back, splitting sources from version history, which is the Cockatiel 1.0
 finding applied to the mammal set: 39 to 40, 36 to 37 and 39 to 41 pages. The
@@ -91,12 +91,21 @@ own field:
 | Rabbit | 3.0 | 2.0 | t3 |
 | Tarantula | 3.0 | 2.1 | t3 |
 | Goldfish | 3.0 | 2.0 | t3 |
-| Hamster | 3.0 | 3.0, correct already | t3 |
+| Hamster | 3.0 | 2.1, reversed 5 Sep 2026, see below | t3 |
 | Bearded Dragon | 3.0 | 3.0, correct already | t3 |
 
 Hamster and Bearded Dragon reached a genuine third edition on their own count,
 so their numbers stood. Hamster's version history had picked up a line claiming
 the number was corrected to match the template, which was removed.
+
+**Hamster, reversed 5 September 2026.** The call above was wrong. The Hamster has
+never been listed, and its "third edition" was a 42-to-36 page tightening of an
+unshipped t3 rebuild. Under the rule every other unlisted package uses (Rabbit,
+Betta, Ball Python, Tarantula), a t3 rebuild is 2.0 and each pass after it is a
+.1, so the tightening is 2.1 and the September article cross-check is 2.2. The
+archived file keeps its `_v3.pdf` name because its cover says 3.0; the version
+history inside the current build records both numbers. Bearded Dragon's 3.0
+stands, because its 2.0 is on sale.
 
 Betta Fish and Tarantula kept the layout-only changes that rode along with the
 bad renumber, so those builds are real revisions and are numbered 2.1. Ball
