@@ -55,7 +55,7 @@ says it can, which is the safe direction for the two to disagree in.
 
 The catalog carries two price id fields and they never replace each other:
 
-- `stripePriceIdSandbox` is a price in Stripe test mode. Test cards only.
+- `stripePriceIdSandbox` is a price in the Sandbox (test mode). Test cards only.
 - `stripePriceId` is a price on the live Stripe account, added **alongside** the
   sandbox id when a package actually goes on sale.
 
@@ -69,17 +69,16 @@ Product and price for the Hamster, created for phase 1:
 
 | Thing | Value |
 | --- | --- |
-| Account | `acct_1Tbn669qtY3Ob6va` (Beastlyfacts), **test mode** |
+| Account | `acct_1Tbn669qtY3Ob6va` (Beastlyfacts), **Sandbox / test mode** |
 | Product | `prod_VCYbnCXsukssee`, "Hamster Care Package" |
 | Price | `price_1UC9Up9qtY3Ob6vac8xRLEu2`, $8.99 USD, one time |
 
-Read this before assuming it is a Sandbox: the Stripe connector exposes exactly
-one account, `acct_1Tbn669qtY3Ob6va`, in two modes (livemode true and false).
-There is no separate Sandbox account under it. The product and price above are
-therefore in that account's **test mode**, which is isolated from live data and
-uses its own `sk_test_` keys, but it is not a Sandbox with an account id of its
-own. If a real Sandbox is connected later, recreate the product and price there
-and replace `stripePriceIdSandbox` in both files with the new id.
+Test mode and the Sandbox are the same place. `livemode: false` on this account
+is what the dashboard presents as the Sandbox, which is why Checkout renders a
+Sandbox badge on every test purchase. It has its own `sk_test_` keys, its own
+webhook signing secret and its own products and prices, all isolated from live.
+Nothing else needs connecting: `stripePriceIdSandbox` above is the Sandbox
+price, and it is correct as recorded.
 
 ### The webhook endpoint to register
 
