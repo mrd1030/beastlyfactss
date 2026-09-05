@@ -55,6 +55,7 @@ about this species", not to claim a new verification date.
 | `MA-ma-exotic-wildlife.txt` | Massachusetts's closed exemption list, the categorical override that cuts across it, and the hybrid statute |
 | `MA-ma-masswildlife-pets.txt` | MassWildlife's own reading of that override, and its line that pet permits are not issued |
 | `NE-ne-captive-wildlife.txt` | Nebraska's renumbered wildlife chapters, its statutory felid ban, and the definition that decides the rest |
+| `FL-fl-captive-and-nonnative.txt` | Florida's four separate chapters, its 22-item no-permit list, and the arthropod rule that is not FWC's |
 
 ## Reading the awkward ones
 
@@ -79,6 +80,14 @@ Several of these are PDFs whose text extracts badly. The tricks that work:
   what selective breeding has done rather than by species, which is what makes the pet rabbit
   clean there when the same species is a hard call in Minnesota and Illinois. Read (a)(7) and
   (a)(21) before the lists.
+- **`FL-fl-captive-and-nonnative.txt`** covers a state with four chapters where reading one gets you
+  the wrong answer. 68A-6 sorts wildlife into three classes and then 68A-6.003(14) exempts 22
+  categories from the permit scheme entirely, which is the answer for most pet species; 68-5 is the
+  nonnative prohibited and conditional lists; 68A-25.002 handles native turtles with numbers rather
+  than permits; and 5B-57.004 handles arthropods and belongs to the Department of Agriculture, not
+  FWC. Check the no-permit list before the class lists, and check 5B-57.004 for anything with more
+  than four legs. FWC's own personal pet page is worth reading alongside the rule, because it
+  resolves the Class II canid entry, which on its face would make every fox a $140 animal.
 - **`NE-ne-captive-wildlife.txt`** is the file to read before citing anything for Nebraska, because
   the title number changed: 163 NAC ch. 4 is now Title 166, and Title 163 is called ADMINISTRATION.
   The old text is still served over plain HTTP from govdocs.nebraska.gov as R163.0004-2016.pdf,
@@ -167,6 +176,7 @@ not on the sites, so a person with a browser can open all of them.
 | `publications.tnsosfiles.com`, `sos.tn.gov`, `tnsos.org` | 403 "Request blocked" from CloudFront on every path, with or without a browser User-Agent and Referer. This is the whole of Tennessee's rules and proclamations publishing | No workaround found. `www.tn.gov` IS reachable, so read the TWRA pages instead, and cross-check the statutes against two reproductions |
 | `statutes.capitol.texas.gov` | Angular SPA. Every `/Docs/` path returns the same 250KB shell, so a fetch looks successful and contains no law; headless Chromium cannot reach it at all | Fetch `https://tcss.legis.texas.gov/resources/<CODE>/htm/<CODE>.<CHAPTER>.htm` instead and cite the capitol URL. The base is in the SPA chunk `chunk-7GRZWKYH.js` as `TCASCore` |
 | `texreg.sos.state.tx.us` | Retired. Serves "Site Has Moved" to every path, the old `TacPage` viewer included | The TAC is on an Appian portal now: POST `{"#t":"UiConfig"}` to `texas-sos.appianportalsgov.com/rules-and-meetings/_/ui?interface=VIEW_TAC&title=..&part=..&chapter=..` with a cookie jar and `X-Client-Version: APNX-1-4105-002`. Full recipe in `TX-tx-nongame.txt` |
+| `flrules.org` | 403 to plain curl, fine with a browser User-Agent. `RuleNo.asp` returns metadata, not rule text | The text is a Word doc at `/gateway/readFile.asp?sid=0&tid=<tid>&type=1&file=<rule>.doc`; scrape the tid off the RuleNo page. LibreOffice cannot open these files; extract with a printable-run regex at a 4-character threshold, since a higher one silently drops the short list items that are the whole point |
 | `rules.nebraska.gov` | TLS fails with "unable to get local issuer certificate": the server omits the intermediate for a genuine DigiCert `*.nebraska.gov` cert | Complete the chain instead of disabling verification. Fetch `http://cacerts.digicert.com/DigiCertGlobalG2TLSRSASHA2562020CA1-1.crt`, convert with `openssl x509 -inform DER`, concatenate onto the proxy bundle, pass with `--cacert`. Then the JSON API needs no headers: `/api/title`, `/api/chapter/GetByTitleId/<id>` returns full chapter text |
 | `outdoornebraska.gov`, `govdocs.nebraska.gov` directory listings | 403 on every path | Use `rules.nebraska.gov` per the row above. `govdocs.nebraska.gov` serves individual PDFs but only a 2016 snapshot under the retired title numbering |
 | `iucnredlist.org`, `api.iucnredlist.org` | 403 to this container, and the v4 API needs a token anyway | Use the GBIF mirror: `api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=<binomial>` returns `threatStatuses` per accepted name |

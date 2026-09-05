@@ -98,35 +98,35 @@
     "note": "All 50 states and DC have been researched, 51 jurisdictions in all, plus New York City, but not every animal was checked against every one of them: a jurisdiction was read for the animals on the list at the time. 13 of the 52 jurisdictions have now been read for all 52 animals and 34 for at least 43 of them, while the least-read are down at 15. So an entry means that jurisdiction was read for that animal and this is what it says, including a status of \"legal\" which means read and nothing found. No entry means it has NOT been read for that animal and the answer is unknown. Never render a missing entry as unrestricted. coverage.perAnimal below records how far each species actually got, and it now spans a wide range because eight encyclopedia animals were added to the matrix later than the rest and start with only the jurisdictions that decide their answer.",
     "perAnimal": {
       "rabbit": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "hissing-cockroach": {
-        "checked": 18,
+        "checked": 19,
         "of": 51
       },
       "bearded-dragon": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "leopard-gecko": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "crested-gecko": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "blue-tongue-skink": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "chameleon-jackson": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "green-anole": {
-        "checked": 19,
+        "checked": 20,
         "of": 51
       },
       "flying-squirrel": {
@@ -134,27 +134,27 @@
         "of": 51
       },
       "tarantula": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "emperor-scorpion": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "axolotl": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "box-turtle": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "giant-millipede": {
-        "checked": 43,
+        "checked": 44,
         "of": 51
       },
       "red-eared-slider": {
-        "checked": 44,
+        "checked": 45,
         "of": 51
       },
       "sulcata-tortoise": {
@@ -170,19 +170,19 @@
         "of": 51
       },
       "tiger-salamander": {
-        "checked": 45,
+        "checked": 46,
         "of": 51
       },
       "savannah-monitor": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "snapping-turtle": {
-        "checked": 46,
+        "checked": 47,
         "of": 51
       },
       "tokay-gecko": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "nile-monitor": {
@@ -202,7 +202,7 @@
         "of": 51
       },
       "russian-tortoise": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "red-footed-tortoise": {
@@ -210,31 +210,31 @@
         "of": 51
       },
       "degu": {
-        "checked": 47,
+        "checked": 48,
         "of": 51
       },
       "ackie-monitor": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "hamster": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "gerbil": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "quaker-parakeet": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "bengal-cat": {
-        "checked": 48,
+        "checked": 49,
         "of": 51
       },
       "guinea-pig": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "milk-snake": {
@@ -258,15 +258,15 @@
         "of": 51
       },
       "chinchilla": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "fennec-fox": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "serval": {
-        "checked": 49,
+        "checked": 50,
         "of": 51
       },
       "rosy-boa": {
@@ -278,7 +278,7 @@
         "of": 51
       },
       "ferret": {
-        "checked": 50,
+        "checked": 51,
         "of": 51
       },
       "capybara": {
@@ -595,9 +595,9 @@
       "note": "§ 169.01(37) defines wild animal; § 169.11(1)(a) designates harmful wild animals as cougars, ursidae, wild and feral swine. § 169.04(4)(b) exempts most non-native species from licensing."
     },
     "fl-prohibited": {
-      "title": "Florida FWC Prohibited Nonnative Species List (Ch. 68-5, F.A.C.)",
-      "url": "https://myfwc.com/wildlifehabitats/nonnatives/prohibited-species-list/",
-      "note": "16 high-risk reptiles added 25 Feb 2021, effective 29 April 2021. Prohibited species may be possessed only by permit for educational exhibition, research or eradication. Tegu and green iguana owners who held one before 29 April 2021 and applied by October 2021 keep a no-cost, non-transferable personal permit for that animal's life."
+      "title": "68-5.004, 68-5.006 and 68-5.007, F.A.C., Conditional and Prohibited Non-Native Species",
+      "url": "https://www.flrules.org/gateway/ChapterHome.asp?Chapter=68-5",
+      "note": "Florida's nonnative species chapter, and the rule that answers the animals Florida is famous for. 68-5.006 is the prohibited list, and its reptile section is what the 2021 rulemaking rewrote: the yellow, Beni, DeSchauensee's and green anacondas, the brown tree snake, the Burmese, reticulated, Northern African, Southern African, amethystine and scrub pythons, the Nile monitor, the green iguana and the tegus of genera Salvator and Tupinambis. Its mammal section is short and has nothing a pet keeper would want, and its bird section names four. 68-5.007 governs what a prohibited species owner can do, and the answer is close to nothing: personal possession permits are issued only to people who already held the animal before listing, for that animal's life, PIT-tagged, with no new specimens ever. 68-5.004 is the separate conditional list, which for this map means one animal, the red-eared slider."
     },
     "ny-11-0103": {
       "title": "N.Y. Environmental Conservation Law § 11-0103(6)(e), definition of wild animal",
@@ -1020,9 +1020,9 @@
       "note": "The definition at § 71.001(1) reads \"wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria\", and the bare word \"fox\" is what makes people read Texas as a fox ban state. It is not one. Chapter 71 and the proclamation at 31 TAC §§ 65.371-65.375 govern taking, trapping, pelts and fur dealing; § 65.375(a)(2) says there are no bag or possession limits for fur-bearing animals; and nothing in either bars keeping one. The series is also headed by \"wild\", which a captive-bred animal is not."
     },
     "fl-class3": {
-      "title": "Florida Administrative Code Chapter 68A-6, Captive Wildlife",
-      "url": "https://flrules.org/gateway/ChapterHome.asp?Chapter=68A-6",
-      "note": "FWC's captive wildlife chapter sets the Class I, II and III tiers, with Class III requiring only a free personal-pet permit."
+      "title": "68A-6.002, 68A-6.003 and 68A-6.004, F.A.C., Captive Wildlife",
+      "url": "https://www.flrules.org/gateway/ChapterHome.asp?Chapter=68A-6",
+      "note": "Florida sorts all wildlife into three classes and then exempts a list from the scheme entirely, and the exemption list is what most pet questions turn on. 68A-6.002 puts 24 taxa in Class I, which 68A-6.003(6) says may not be possessed for personal use at all, and 38 in Class II, which needs a $140 annual permit plus documented experience and caging. Class III is everything else, and 68A-6.003(8) requires a no-cost personal use permit for it. Then 68A-6.003(14) lists 22 categories needing no permit at all, and that list is the answer for most of this map: nonvenomous unprotected reptiles and amphibians, gerbils, hedgehogs, sugar gliders, rabbits, squirrels, ferrets, guinea pigs, hamsters, prairie dogs, chinchillas and parrots among them. Read the class lists without 68A-6.003(14) and Florida looks like a permit state for a bearded dragon. Read (14) without the class lists and it looks like a free-for-all for a capybara."
     },
     "nc-113-272-5": {
       "title": "North Carolina General Statutes § 113-272.5",
@@ -1343,6 +1343,16 @@
       "title": "Neb. Rev. Stat. §§ 37-245, 37-246, 37-247, 37-477 and 37-479",
       "url": "https://nebraskalegislature.gov/laws/statutes.php?statute=37-477",
       "note": "The statute does two things the regulation does not. § 37-477(2) is a flat ban with no permit behind it: \"no person shall keep in captivity in this state any wolf, any skunk, or any member of the families Felidae and Ursidae\", excepting only Felis domesticus, accredited zoos and public facilities, and lynx or bobcat fur producers. And §§ 37-245 and 37-246 define wild birds and wild mammals by geography rather than by wildness, as species \"native to, migrating to or through, or having established free-ranging populations in the State of Nebraska\". That definition is the hinge of the whole state: a Nebraska native is caught by the captive wildlife scheme and an exotic is not, which sends the exotic question to the importation list instead. § 37-247 defines wildlife far more broadly, reaching every arthropod and invertebrate, and that breadth sits awkwardly with an importation list containing only mammals and birds."
+    },
+    "fl-turtles": {
+      "title": "68A-25.002, F.A.C., General Provisions for Taking, Possession and Sale of Reptiles",
+      "url": "https://www.flrules.org/gateway/RuleNo.asp?id=68A-25.002",
+      "note": "The rule that reaches Florida's native turtles, and it is separate from both the captive wildlife chapter and the nonnative one, which is why it is easy to miss. Subsection (6) caps take at one turtle per day, bars taking snapping turtles, cooters and two other groups from the wild entirely, caps possession at two for the Florida native box turtles and two other species, and bars buying or selling any turtle taken from the wild. None of it turns on a permit for an ordinary keeper; it is a set of numbers and a sale ban."
+    },
+    "fl-arthropods": {
+      "title": "5B-57.004, F.A.C., Introduction, Possession or Movement of Arthropods, Plant Pests and Biological Control Agents",
+      "url": "https://www.flrules.org/gateway/RuleNo.asp?id=5B-57.004",
+      "note": "The rule that catches invertebrates in Florida, and it belongs to the Department of Agriculture and Consumer Services rather than to FWC, which is why reading only the wildlife chapters gets this wrong. It makes it unlawful to possess \"any arthropod ... regulated by the Department or the USDA\" without a state permit, unless a federal PPQ 526 has issued with the Department's concurrence. The test is therefore federal as much as state: an arthropod USDA treats as a plant pest is caught, and one it does not is not. That splits the four invertebrates on this map, since the giant African millipede and the Madagascar hissing cockroach are both moved under PPQ 526 and a tarantula and a scorpion are not plant pests at all. Permits turn on containment: the Department must find the animal can be contained to prevent escape."
     }
   },
   "animals": {
@@ -1421,9 +1431,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "No mammal entry covers hedgehogs; the 2021 rule is reptile-focused.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(b)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(b) alongside the gerbil. Florida exempts it from the permit scheme entirely rather than putting it in Class III, so there is nothing to apply for and no renewal.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -2150,6 +2162,14 @@
           "quote": "In the family Mustelidae. All species of the skunks.",
           "note": "The Game Commission's prohibited list reaches Mustelidae only through its skunk line, and the domestic ferret is not a skunk. No other category in § 137.1(a) names it, and Pennsylvania is not one of the states that treats ferrets as wildlife. Read literally, § 137.1(a)(11) bars possessing any wildlife captive bred in another state, and 34 Pa.C.S. § 102 defines wild animals as every mammal except horses, cattle, sheep, goats and pigs, so the text reaches far wider than the Game Commission applies it. The Commission draws its line at undomesticated species, which is why hedgehogs and sugar gliders are pursued and long domesticated pets are not.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(h)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(h) as \"Ferrets (domestic; European)\", which is the pet in both of its usual names. No permit, no neutering condition of the kind Massachusetts attaches, and no import rule.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -2210,10 +2230,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04",
-          "cite": "Ch. 68-5, F.A.C.",
-          "note": "Florida's prohibited list is sixteen high-risk reptiles, added in February 2021. It contains no mammal, so the sugar glider is outside it. Florida separately classes some mammals as Class I, II or III wildlife; the sugar glider is not among them."
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(c)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(c) as \"Honey possums, sugar gliders\". Being on this list rather than in Class III is the whole difference: a Class III marsupial like the wallaby needs the free personal use permit and the sugar glider needs nothing.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -2949,6 +2970,14 @@
           "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
           "note": "Answered twice over, which is unusual. The golden hamster, Mesocricetus auratus, is on the domestic animal list at 9.02(3), and the exemption list adds the Chinese or Siberian dwarf hamster, Cricetulus barabensis, at 9.01(12)(a)(11) with a note pointing back to the domestic list for the golden. Both routes end in no permit.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(j)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(j) for possession and at 68A-6.003(12) for sale. Florida is one of the states where the hamster is answered explicitly rather than by falling outside a definition.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/hamster-legal-guide/"
@@ -3337,6 +3366,14 @@
           "cite": "321 CMR 9.02(3)",
           "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
           "note": "The Mongolian gerbil, Meriones unguiculatus, is on the domestic animal list by name. That list matters more than it looks: 9.02(2)(c) provides that any vertebrate taxon not on it is PRESUMED WILD and subject to c. 131, so in Massachusetts being domestic is itself a listed status rather than a description.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(b)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(b) with the hedgehog, and named again at 68A-6.003(12), which says no permit is required for the SALE of poultry, hamsters, guinea pigs, domestic rats and mice, gerbils, or chameleons. Florida answers this animal twice, once for keeping and once for selling.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -3736,6 +3773,14 @@
           "cite": "§ 64.002(a), (d)",
           "quote": "(a) Except as provided by this code, no person may: (1) catch, kill, injure, pursue, or possess, dead or alive, or purchase, sell, expose for sale, transport, ship, or receive or deliver for transportation, a bird that is not a game bird ... (d) Canaries, parrots, and other exotic nongame birds may be sold, purchased, and kept as domestic pets.",
           "note": "Subsection (a) would reach a monk parakeet on its face, since it covers possessing, purchasing or selling \"a bird that is not a game bird\" and says nothing about where the bird came from. Subsection (d) is the answer, and it is written for exactly this: parrots and other exotic nongame birds may be kept as pets. Texas is worth flagging because it has large established monk parakeet colonies and the state has chosen to deal with them through the depredation provisions in § 64.002(c) rather than through a possession ban. No Texas rule bars keeping one.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(q)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the entry at (14)(q), which is the single word \"Parrots\", sitting in a list that separately names shell parakeets, canaries, lovebirds, cockatiels, finches, myna birds and toucans. The monk parakeet is a parrot and is not carved back out anywhere. That is worth stating plainly, because Florida has large established monk parakeet colonies and is often assumed to restrict the species for that reason. It does not: the prohibited list at 68-5.006(5) names four birds, the dioch, the Java sparrow, the pink starling and the red-whiskered bulbul, and this is none of them.",
           "verifiedOn": "2026-09-05"
         }
       },
@@ -4151,6 +4196,14 @@
             "before": "1994-01-01",
             "detail": "An owner in possession on 1 January 1994 who obtained a permit from the director on or before 31 July 1994 is outside the section."
           }
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c), (d)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
+          "note": "The twelfth Bengal answer on this map, and the only one written as a resemblance test. 68A-6.002(1)(d) reaches hybrids of wildlife and domestic animals only where they are \"substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal\", and then regulates them at the class of the wild parent. A Bengal sold as a pet is not indistinguishable from an Asian leopard cat, so the clause does not engage. And even where it did, the answer would be mild: Prionailurus bengalensis is on neither the Class I nor the Class II list, only the fishing cat represents that genus in Class II, so the wild parent is itself Class III and the worst case is the free personal use permit rather than a bar. No generation number appears anywhere, which leaves an early-generation animal to an argument about whether it looks like its wild parent.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/bengal-cat-legal-guide/",
@@ -4208,9 +4261,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not on the prohibited list.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Chamaeleo calyptratus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Worth noting that this species has established populations in south Florida and the state has still not listed it, which is a reminder that the prohibited list is a set of individual decisions rather than a rule about establishment.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -4951,6 +5006,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Testudo horsfieldii is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Testudo horsfieldii is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Florida's tortoise restriction is aimed at its own: the gopher tortoise, Gopherus polyphemus, is on the imperiled list with its own protective provisions.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/russian-tortoise-legal-guide/"
@@ -4998,9 +5061,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Python regius is not on the prohibited list, unlike the large pythons.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Python regius is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The prohibited list names six pythons and this is not one of them, which is a species-by-species line rather than a genus one.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -5388,9 +5453,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not on the prohibited list.",
-          "verifiedOn": "2026-08-04"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Boa constrictor is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. All four anacondas are prohibited and the boa constrictor is not, so the two large constrictors most often grouped together sit on opposite sides of the Florida line.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -6116,6 +6183,14 @@
           "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
           "note": "Nebraska defines wildlife broadly enough to include a tarantula, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-arthropods",
+          "cite": "5B-57.004(1); 68-5.006",
+          "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
+          "note": "Florida regulates invertebrates only in water. The prohibited list reaches the zebra and quagga mussels, the mitten crab and the Australian crayfish; the conditional list reaches more crayfish and the arapaima; and every invertebrate entry across both chapters is aquatic. Nothing in either names a terrestrial arthropod, and the captive wildlife chapter answers a tarantula no better, since its no-permit list covers reptiles, amphibians, mammals and birds and its class lists name no invertebrate at all. The rule that does reach arthropods here belongs to the agriculture department: 5B-57.004(1) bars possessing any arthropod \"regulated by the Department or the USDA\" without a permit. That is a federal test as much as a state one, and it is what puts the giant African millipede and the hissing cockroach into the permit tier while leaving this animal out of it, since neither a tarantula nor a scorpion is a plant pest.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "scientific": "Theraphosidae",
@@ -6486,6 +6561,14 @@
           "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
           "note": "Nebraska defines wildlife broadly enough to include the emperor scorpion, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-arthropods",
+          "cite": "5B-57.004(1); 68-5.006",
+          "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
+          "note": "Florida regulates invertebrates only in water. The prohibited list reaches the zebra and quagga mussels, the mitten crab and the Australian crayfish; the conditional list reaches more crayfish and the arapaima; and every invertebrate entry across both chapters is aquatic. Nothing in either names a terrestrial arthropod, and the captive wildlife chapter answers the emperor scorpion no better, since its no-permit list covers reptiles, amphibians, mammals and birds and its class lists name no invertebrate at all. The rule that does reach arthropods here belongs to the agriculture department: 5B-57.004(1) bars possessing any arthropod \"regulated by the Department or the USDA\" without a permit. That is a federal test as much as a state one, and it is what puts the giant African millipede and the hissing cockroach into the permit tier while leaving this animal out of it, since neither a tarantula nor a scorpion is a plant pest.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/emperor-scorpion-legal-guide/"
@@ -6512,12 +6595,13 @@
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
-          "quote": "genera Salvator and Tupinambis, all species",
-          "note": "Grandfathered personal permit if possessed before 29 April 2021 and applied for by October 2021, for the life of that animal. Commercial breeding ended 30 June 2024.",
-          "verifiedOn": "2026-08-04",
+          "cite": "68-5.006(4)(n); 68-5.007",
+          "quote": "Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C. ... (4) Non-native reptiles: (a) Yellow anaconda ... (e) Indian or Burmese python (Python molurus). (f) Reticulated python (Python reticulatus). (g) Northern African python (Python sebae). (h) Southern African python (Python natalensis). (i) Amethystine python (Morelia amethistinus). (j) Scrub python (Morelia kinghorni). (k) Green anaconda (Eunectes murinus). (l) Nile monitor (Varanus niloticus). (m) Green iguana (Iguana iguana) (n) Tegus (genera Salvator and Tupinambis, all species)",
+          "note": "The entry reads \"Tegus (genera Salvator and Tupinambis, all species)\", which is written to survive the 2012 split that moved the Argentine black and white tegu from Tupinambis to Salvator. Naming both genera is the drafting choice that several other states on this map did not make, and it is why a taxonomy argument does not work here. The grandfathering is narrow and personal: under 68-5.007 a permit for personal possession may be issued only to someone in lawful possession before the species was listed, for the remainder of that animal's life, with the animal PIT-tagged, and no additional specimens may ever be acquired. A surviving spouse or beneficiary can be permitted to keep the animal out, but nobody new can start.",
+          "verifiedOn": "2026-09-05",
           "grandfathered": {
             "before": "2021-04-29",
-            "detail": "Personal, non-transferable, no-cost permit if applied for by October 2021, valid for that animal life."
+            "detail": "Only a person in lawful possession before the species was listed may hold one, for that animal's life, under a Conditional/Prohibited/Nonnative Species permit, with the animal PIT-tagged and no further specimens acquired."
           }
         },
         "ID": {
@@ -7271,6 +7355,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus exanthematicus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Varanus exanthematicus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The only monitor Florida prohibits is the Nile, so a savannah monitor needs nothing while its congener cannot be acquired at all.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/savannah-monitor-legal-guide/"
@@ -7307,10 +7399,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04",
-          "cite": "Ch. 68-5, F.A.C.",
-          "note": "The prohibited list is reptiles only, and the prairie dog is not on Florida's captive wildlife class lists either."
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(k)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(k), which makes Florida one of the more permissive states on this animal. Several states on this map either ban the prairie dog outright or cap it as native wildlife; Florida, where it is not native, simply exempted it. The federal CDC and FDA ban on the interstate sale of prairie dogs, imposed after the 2003 monkeypox outbreak, is what actually constrains acquisition.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -7725,11 +7818,12 @@
           "verifiedOn": "2026-08-04"
         },
         "FL": {
-          "status": "legal",
-          "sourceId": "fl-prohibited",
-          "verifiedOn": "2026-08-04",
-          "cite": "Ch. 68-5, F.A.C.",
-          "note": "The prohibited list is reptiles only. Capybaras are kept in Florida under the state's captive wildlife framework rather than barred by this rule."
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8), (14)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
+          "note": "Class III in Florida is a residual category, \"all other wildlife not listed herein, except those for which a permit is not required\", and the capybara lands in it by not being anywhere else. That means a Permit to Possess Class III Wildlife for Personal Use, which costs nothing, runs two years, and requires the applicant to be 16. The thing to notice is what it is not on: 68A-6.003(14) exempts 22 categories from any permit at all, and this animal is not among them. This entry previously read as unrestricted. The exemption list does carry several rodents, the guinea pig, the hamster, the gerbil, the prairie dog and the chinchilla, but not the capybara, and an unlisted rodent falls back to Class III rather than out of the scheme.",
+          "verifiedOn": "2026-09-05"
         },
         "NY": {
           "status": "legal",
@@ -8528,6 +8622,14 @@
           "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
           "note": "The mammal exemption list is thirteen entries and the fennec fox is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. No canid of any kind appears on either list, wild or otherwise, apart from the domestic dog. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8), (14)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
+          "note": "Class III in Florida is a residual category, \"all other wildlife not listed herein, except those for which a permit is not required\", and the fennec fox lands in it by not being anywhere else. That means a Permit to Possess Class III Wildlife for Personal Use, which costs nothing, runs two years, and requires the applicant to be 16. The thing to notice is what it is not on: 68A-6.003(14) exempts 22 categories from any permit at all, and this animal is not among them. Worth reading carefully, because Class II item 24 says \"Wolves, coyotes, jackals (family Canidae)\" and the parenthetical would sweep in every fox. FWC does not read it that way: its own personal pet page lists \"fox\" among the common Class III species requiring a permit, alongside the raccoon, the coatimundi and the wallaby. So the answer is the free permit rather than the $140 one, on the agency's reading of its own rule.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/fennec-fox-legal-guide/"
@@ -8970,6 +9072,14 @@
           "quote": "The purpose of 321 CMR 9.01 is to list those species which are exempt from the licensing provisions of M.G.L. c. 131, § 23, and which may be imported, possessed, maintained, propagated, bought, sold, exchanged or offered for sale without a license or permit from the Division. Species not listed, or which are expressly listed as \"require(s) a permit\", are not exempt from the provisions of M.G.L. c. 131, § 23.",
           "note": "The mammal exemption list is thirteen entries and the serval is not one of them, which in a closed-list state is the whole answer. 9.01(1) says species not listed \"are not exempt from the provisions of M.G.L. c. 131, § 23\", and 9.02(2)(c) adds that any vertebrate taxon not on the domestic list is presumed wild. No felid appears on the exemption list at all, and the domestic list carries only Felis catus, so Massachusetts reaches every exotic cat by omission rather than by naming one. MassWildlife's own guidance is blunt about what that means in practice: permits for non-exempt wildlife \"are issued only for certain scientific, educational, commercial, or other specific reasons\" and \"You will not be issued a permit for keeping a wild animal as a pet.\" The statute is less absolute, since § 23 contemplates \"an individual license for an animal that is not on the special exemption list\" and even sets a preference for captive-bred animals where wild depletion is an issue, so the licence exists on paper and the agency says it will not grant one for a pet.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(b)15; 68A-6.003(7); 68A-6.004",
+          "quote": "Class II: ... 15. Servals (Leptailurus serval) 16. European and Canadian lynx (Lynx lynx) 17. Bobcats (Lynx rufus) 18. Caracals (Caracal caracal) ... 24. Wolves, coyotes, jackals (family Canidae) ...",
+          "note": "Named at Class II item 15, between the lynxes and the caracals, so the serval is one of the few animals Florida answers by name rather than by class. A Permit to Possess Class II Wildlife for Personal Use costs $140 a year, requires the applicant to be 18, and requires documented experience: FWC asks for a logged experience record along with facility and caging standards under 68A-6.004 and 68A-6.010. That is a real barrier rather than a fee, and it is the difference between Class II and the free Class III permit. Class I, one tier up, cannot be held as a personal pet at all.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/serval-legal-guide/"
@@ -9363,6 +9473,14 @@
           "cite": "§ 822.101(4)",
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "Chinchilla lanigera is Andean and appears in no Texas list. The fur-bearing animal definition at Parks & Wild. Code § 71.001(1) is worth checking here because chinchillas are farmed for fur, and it does not name them: it is a closed list of eleven native fur-bearers.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(l)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(l), with no captive-stock qualifier of the kind Massachusetts and Nebraska attach. Florida asks nothing about provenance for this animal.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -9759,6 +9877,14 @@
           "quote": "Domestic animals as listed in 321 CMR 9.02(3) shall be exempt from the provisions of M.G.L. c. 131, § 23, and may be possessed, propagated, maintained, imported, bought, sold, or otherwise disposed of ... Any vertebrate taxa not listed in 321 CMR 9.02 shall be presumed to be wild and shall be subject to the provisions of M.G.L. c. 131.",
           "note": "Cavia porcellus is on the domestic animal list. The presumption in 9.02(2)(c) is what makes that listing necessary rather than obvious: an unlisted vertebrate is presumed wild here, so a domesticated species that nobody listed would be in the permit tier.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(i)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(i), and again at 68A-6.003(12) for sale without a permit. The contrast with the degu, an animal of similar size and origin that is not on either list, is what makes this a naming exercise rather than a principle.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -9781,12 +9907,13 @@
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
-          "quote": "Iguana iguana",
-          "note": "Same grandfather permit route as the tegu.",
-          "verifiedOn": "2026-08-04",
+          "cite": "68-5.006(4)(m); 68-5.007",
+          "quote": "Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C. ... (4) Non-native reptiles: (a) Yellow anaconda ... (e) Indian or Burmese python (Python molurus). (f) Reticulated python (Python reticulatus). (g) Northern African python (Python sebae). (h) Southern African python (Python natalensis). (i) Amethystine python (Morelia amethistinus). (j) Scrub python (Morelia kinghorni). (k) Green anaconda (Eunectes murinus). (l) Nile monitor (Varanus niloticus). (m) Green iguana (Iguana iguana) (n) Tegus (genera Salvator and Tupinambis, all species)",
+          "note": "Iguana iguana was added to the prohibited list in the 2021 rulemaking, which is recent enough that a lot of secondary material still describes Florida as the easiest state in the country for this animal. The transitional provisions in 68-5.007(1)(a)2 are unusually specific about it, letting a Class III exhibition or sale licensee who documented green iguanas on a 2018 or 2019 application keep exhibiting them, without importing any. The grandfathering is narrow and personal: under 68-5.007 a permit for personal possession may be issued only to someone in lawful possession before the species was listed, for the remainder of that animal's life, with the animal PIT-tagged, and no additional specimens may ever be acquired. A surviving spouse or beneficiary can be permitted to keep the animal out, but nobody new can start.",
+          "verifiedOn": "2026-09-05",
           "grandfathered": {
             "before": "2021-04-29",
-            "detail": "Same grandfathered personal permit route as the tegu."
+            "detail": "Only a person in lawful possession before the species was listed may hold one, for that animal's life, under a Conditional/Prohibited/Nonnative Species permit, with the animal PIT-tagged and no further specimens acquired."
           }
         },
         "ID": {
@@ -10552,6 +10679,14 @@
           "quote": "003.05 SNAPPING TURTLES: 003.05A It shall be unlawful to take snapping turtles except by hand, hand net, hook and line, bow and arrow or gaff. 003.05B It shall be unlawful to sell, offer for sale, trade or barter for any snapping turtle. ... 003.05E The take of any turtle(s) exceeding the daily bag limits shall be released immediately.",
           "note": "Nebraska answers this animal in its fishing regulations rather than its wildlife ones, which is why it is easy to miss. 166 NAC 10 excludes game species from its herp rules, and the snapping turtle is handled at 164 NAC 6 alongside fish, bullfrogs and mussels, with a daily bag limit and a possession limit set annually by the Commission, take restricted to hand, hand net, hook and line, bow or gaff, and a fishing permit behind all of it. The clause that matters most to a keeper is § 003.05B: it is unlawful to sell, offer for sale, trade or barter any snapping turtle, so there is no lawful in-state commerce in one at any number.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "conditional",
+          "sourceId": "fl-turtles",
+          "cite": "68A-25.002(6)(a)4, (c)",
+          "quote": "(6) Turtles. (a) Take and possession ... 1. No person shall take more than one turtle per day unless authorized by permit ... 4. No person shall take Escambia map turtles (Graptemys ernsti), cooters (Pseudemys spp.), striped mud turtles (Lower Keys population) (Kinosternon baurii) or snapping turtles (Chelydra spp.) from the wild. ... 8. No person shall possess more than two Escambia map turtles (Graptemys ernsti), two box turtles of Florida native species ... or two loggerhead musk turtles (Sternotherus minor). ... (c) Sale - No person shall buy, sell, or possess for sale turtles, their eggs or parts thereof, that have been taken from the wild.",
+          "note": "Wild take is barred outright. 68A-25.002(6)(a)4 says no person shall take Escambia map turtles, cooters, Lower Keys striped mud turtles \"or snapping turtles (Chelydra spp.)\" from the wild, and (6)(c) bars buying or selling any turtle taken from the wild. What is not barred is possession: the common snapping turtle is not on the imperiled list at 68A-27.003, is not among the species capped at two, and is a nonvenomous unprotected reptile for the purposes of 68A-6.003(14)(a), so a lawfully acquired captive-bred animal needs no permit. The alligator snapping turtle is the opposite: 68A-25.002(6)(a)5 bars taking, possessing, transporting or selling any Macrochelys at all.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -10926,6 +11061,14 @@
           "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Gekko gecko is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Gekko gecko is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -11314,6 +11457,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "This one comes from an absence rather than a decision, and the mechanism is worth understanding because it will catch other native amphibians. 166 NAC 10 § 001.03 reaches every reptile and amphibian native to Nebraska that is not a game species, a nongame species in need of conservation, or threatened or endangered, and it makes it unlawful to take, possess, transport, export, process, sell or ship any of them except as provided in § 001.03A. The exceptions are four closed lists: two bait frogs, sixteen species at ten each, seventeen at three each, and a scientific collectors permit. The tiger salamander is on none of them, and it is on none of the other three chapters either, so there is no exception available and no permit written for a pet. The out-of-state purchase route at § 001.03A2 does not help, because it is expressly limited to \"the species listed below in 001.03A3 and 001.03A4\". One caveat on the species: Nebraska's animal is the barred tiger salamander, treated as a subspecies of Ambystoma tigrinum under the lumping this rule's vintage reflects and often split off as A. mavortium now, and an argument that A. tigrinum sensu stricto is not native to Nebraska is the only visible way out of this.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Ambystoma tigrinum is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. It occurs in north Florida and is not on the imperiled list at 68A-27.003, which carries only the frosted and reticulated flatwoods salamanders. Taking one from the wild is a separate question from keeping a lawfully acquired animal.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -11324,9 +11475,14 @@
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
-          "quote": "Varanus niloticus",
-          "note": "Grandfathered for holders of a valid reptile of concern licence.",
-          "verifiedOn": "2026-08-04"
+          "cite": "68-5.006(4)(l); 68-5.007",
+          "quote": "Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C. ... (4) Non-native reptiles: (a) Yellow anaconda ... (e) Indian or Burmese python (Python molurus). (f) Reticulated python (Python reticulatus). (g) Northern African python (Python sebae). (h) Southern African python (Python natalensis). (i) Amethystine python (Morelia amethistinus). (j) Scrub python (Morelia kinghorni). (k) Green anaconda (Eunectes murinus). (l) Nile monitor (Varanus niloticus). (m) Green iguana (Iguana iguana) (n) Tegus (genera Salvator and Tupinambis, all species)",
+          "note": "Varanus niloticus is named on the prohibited list, and it is the only monitor there: the savannah and ackie monitors are untouched by this chapter and need no permit at all under 68A-6.003(14)(a). Florida draws the line at the species with established breeding populations in Cape Coral and Palm Beach County rather than at the genus. The grandfathering is narrow and personal: under 68-5.007 a permit for personal possession may be issued only to someone in lawful possession before the species was listed, for the remainder of that animal's life, with the animal PIT-tagged, and no additional specimens may ever be acquired. A surviving spouse or beneficiary can be permitted to keep the animal out, but nobody new can start.",
+          "verifiedOn": "2026-09-05",
+          "grandfathered": {
+            "before": "2021-04-29",
+            "detail": "Only a person in lawful possession before the species was listed may hold one, for that animal's life, under a Conditional/Prohibited/Nonnative Species permit, with the animal PIT-tagged and no further specimens acquired."
+          }
         },
         "ID": {
           "status": "unclear",
@@ -11712,12 +11868,13 @@
         "FL": {
           "status": "banned",
           "sourceId": "fl-prohibited",
-          "quote": "Python molurus",
-          "note": "Grandfathered for personal use by reptile of concern licence holders before 1 July 2010, for the life of the animal.",
-          "verifiedOn": "2026-08-04",
+          "cite": "68-5.006(4)(e); 68-5.007",
+          "quote": "Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C. ... (4) Non-native reptiles: (a) Yellow anaconda ... (e) Indian or Burmese python (Python molurus). (f) Reticulated python (Python reticulatus). (g) Northern African python (Python sebae). (h) Southern African python (Python natalensis). (i) Amethystine python (Morelia amethistinus). (j) Scrub python (Morelia kinghorni). (k) Green anaconda (Eunectes murinus). (l) Nile monitor (Varanus niloticus). (m) Green iguana (Iguana iguana) (n) Tegus (genera Salvator and Tupinambis, all species)",
+          "note": "Listed as \"Indian or Burmese python (Python molurus)\", which under the rule's own opening words reaches \"taxonomic successors, subspecies, or hybrids\", so the split of Python bivittatus out of P. molurus changes nothing. Florida is where this animal's reputation comes from and the rule is written accordingly. The grandfathering is narrow and personal: under 68-5.007 a permit for personal possession may be issued only to someone in lawful possession before the species was listed, for the remainder of that animal's life, with the animal PIT-tagged, and no additional specimens may ever be acquired. A surviving spouse or beneficiary can be permitted to keep the animal out, but nobody new can start.",
+          "verifiedOn": "2026-09-05",
           "grandfathered": {
-            "before": "2010-07-01",
-            "detail": "Personal use by reptile of concern licence holders, for the life of the animal."
+            "before": "2021-04-29",
+            "detail": "Only a person in lawful possession before the species was listed may hold one, for that animal's life, under a Conditional/Prohibited/Nonnative Species permit, with the animal PIT-tagged and no further specimens acquired."
           }
         },
         "NY": {
@@ -12495,6 +12652,14 @@
           "quote": "\"Dangerous wild animal\" means: (A) a lion; (B) a tiger; (C) an ocelot; (D) a cougar; (E) a leopard; (F) a cheetah; (G) a jaguar; (H) a bobcat; (I) a lynx; (J) a serval; (K) a caracal; (L) a hyena; (M) a bear; (N) a coyote; (O) a jackal; (P) a baboon; (Q) a chimpanzee; (R) an orangutan; (S) a gorilla; or (T) any hybrid of an animal listed in this subdivision.",
           "note": "Octodon degus is Chilean, so the nongame rules do not reach it, and the dangerous wild animal list contains no rodent. Texas asks nothing about it.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.002(1)(c); 68A-6.003(8), (14)",
+          "quote": "Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C. ... Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.",
+          "note": "Class III in Florida is a residual category, \"all other wildlife not listed herein, except those for which a permit is not required\", and the degu lands in it by not being anywhere else. That means a Permit to Possess Class III Wildlife for Personal Use, which costs nothing, runs two years, and requires the applicant to be 16. The thing to notice is what it is not on: 68A-6.003(14) exempts 22 categories from any permit at all, and this animal is not among them. This is the sharpest illustration of how the exemption list works, because the chinchilla is on it at (l) and the degu is not. Two South American caviomorph rodents of similar size and similar husbandry, and one needs a permit because a list written years ago named the other.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "encyclopediaId": "degu"
@@ -12859,6 +13024,14 @@
           "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Ambystoma mexicanum is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. The contrast with the tiger salamander is sharp and entirely about geography: the Mexican species is unregulated here and the native one cannot lawfully be possessed at all, because the chapter reaches natives and then lists the ones that may be collected.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Ambystoma mexicanum is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The two flatwoods salamanders are the only Ambystoma on Florida's imperiled list, and both are natives.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13231,6 +13404,14 @@
           "cite": "166 NAC 10 § 001.03, § 001.03A4",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "The ornate box turtle, Terrapene ornata, is on the three-per-species list at § 001.03A4. It is the box turtle that occurs in Nebraska; the eastern box turtle, Terrapene carolina, does not, which puts it outside 166 NAC 10 altogether since the chapter reaches only species native to Nebraska. So the answer depends on which box turtle, and for the one Nebraska has the number is three. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "conditional",
+          "sourceId": "fl-turtles",
+          "cite": "68A-25.002(6)(a)1, 8, (c)",
+          "quote": "(6) Turtles. (a) Take and possession ... 1. No person shall take more than one turtle per day unless authorized by permit ... 4. No person shall take Escambia map turtles (Graptemys ernsti), cooters (Pseudemys spp.), striped mud turtles (Lower Keys population) (Kinosternon baurii) or snapping turtles (Chelydra spp.) from the wild. ... 8. No person shall possess more than two Escambia map turtles (Graptemys ernsti), two box turtles of Florida native species ... or two loggerhead musk turtles (Sternotherus minor). ... (c) Sale - No person shall buy, sell, or possess for sale turtles, their eggs or parts thereof, that have been taken from the wild.",
+          "note": "Florida caps this animal by number rather than by permit, and the cap is two. 68A-25.002(6)(a)8 bars possessing more than \"two box turtles of Florida native species (Florida box turtles [Terrapene bauri]; eastern, Gulf Coast, and three-toed box turtles [Terrapene carolina subsp.]; their taxonomic successors; or hybrids thereof)\", which is written wide enough to reach every box turtle a keeper is likely to have. Take from the wild is one turtle per day at (6)(a)1, by hand, baited hook, minnow seine or dip net only, and (6)(c) bars buying or selling any turtle taken from the wild. No permit is involved at any point, which is why this is easy to miss: the animal is otherwise a nonvenomous unprotected reptile needing nothing.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -13607,6 +13788,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Trachemys scripta is on the three-per-species list at § 001.03A4, which is a mild answer by the standards of this row: several states ban the slider outright as an establishment risk, and Nebraska, where it is native, treats it as an ordinary collectible native. The route that matters for a pet is § 001.03A2: an animal legally bought or consigned from outside Nebraska may be possessed without regard to numbers, provided the keeper can produce proof of lawful acquisition, a bill of sale or a consignment record. So the cap is on collecting, and the receipt is what lifts it. The federal four-inch rule under 21 C.F.R. 1240.62 still applies to hatchlings and is untouched by any of this.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "conditional",
+          "sourceId": "fl-prohibited",
+          "cite": "68-5.004(3)",
+          "quote": "Non-native turtles. Red-eared slider (Trachemys scripta elegans): red-eared sliders may be possessed only by permitted individuals or commercial import or export businesses according to the provisions of subsection 68-5.005(4), F.A.C., except as provided below: (a) Red-eared sliders in personal possession prior to July 1, 2007 may continue in the possession of the owner without a permit, except that red-eared sliders less than four inches carapace length may not be possessed after July 1, 2008 without a permit. (b) Red-eared sliders with distinctive aberrant color patterns, including albino or amelanistic specimens, may be possessed without a permit otherwise required by this rule.",
+          "note": "Florida is the only state on this map that lets a colour morph out of a restriction it applies to the wild-type animal. Trachemys scripta elegans is a conditional nonnative species, which means a permit, with two exceptions written into the entry: an animal in personal possession before 1 July 2007 stays legal, and any slider \"with distinctive aberrant color patterns, including albino or amelanistic specimens\" may be kept with no permit at all. The logic is ecological rather than about the pet trade: an albino slider that escapes does not survive to establish, so the state has no reason to restrict it. The federal four-inch rule at 21 C.F.R. 1240.62 still applies on top, and Florida writes its own version of it into the grandfather clause.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -13650,10 +13839,12 @@
           "localOverride": true
         },
         "FL": {
-          "sourceId": "fl-prohibited",
           "status": "legal",
-          "note": "Not on Florida's prohibited list, which is sixteen high-risk reptiles and contains no tortoise.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Centrochelys sulcata is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         },
         "MS": {
           "sourceId": "ms-40-2-8-3",
@@ -14031,10 +14222,12 @@
           "localOverride": true
         },
         "FL": {
-          "sourceId": "fl-prohibited",
           "status": "legal",
-          "note": "Not on the prohibited list, which names large constrictors, monitors, tegus and the green iguana.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Heterodon is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Both Florida hognose species are unprotected and neither appears at 68A-27.003, which is a contrast with Massachusetts and Nebraska, where the eastern hognose is listed.",
+          "verifiedOn": "2026-09-05"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -14376,10 +14569,12 @@
           "verifiedOn": "2026-08-05"
         },
         "FL": {
-          "sourceId": "fl-prohibited",
           "status": "legal",
-          "note": "The prohibited list is reptiles only.",
-          "verifiedOn": "2026-08-05"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(q)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the entry at (14)(q), which is the single word \"Parrots\", sitting in a list that separately names shell parakeets, canaries, lovebirds, cockatiels, finches, myna birds and toucans. The African grey is a parrot on any reading. Nothing in the Florida rules distinguishes species by conservation status, so unlike Massachusetts the CITES Appendix I listing changes only where the bird can lawfully come from, not whether it can be kept.",
+          "verifiedOn": "2026-09-05"
         },
         "MS": {
           "sourceId": "ms-40-2-8-3",
@@ -15082,6 +15277,14 @@
           "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
           "note": "Nebraska defines wildlife broadly enough to include the giant African millipede, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals. The restriction that does exist for this animal is federal: USDA APHIS treats it as a plant pest at the border.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-arthropods",
+          "cite": "5B-57.004(1)",
+          "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
+          "note": "Florida answers this animal through its agriculture department, not FWC, and the wildlife chapters give no hint of it. 5B-57.004(1) makes it unlawful to possess any arthropod \"regulated by the Department or the USDA\" without a permit from the Division of Plant Industry, unless a federal PPQ 526 has already issued with the Department's concurrence. Archispirostreptus gigas moves interstate under exactly that federal permit, which is what brings it inside the sentence. The permit standard is containment: the Department must find the animal can be contained to prevent escape into the environment, which in practice means secure enclosure rather than a fee. Nothing in Chapter 68-5 or Chapter 68A-6 names it, so an entry resting on those chapters alone would read this as unrestricted.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -15144,9 +15347,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Corn snake is Florida native, though, so this covers lawfully acquired possession only; wild take of the native population falls under FWC's separate nongame take and bag-limit rules, not checked in detail here.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Pantherophis guttatus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. One caveat that applies to nobody buying a captive-bred animal: the Lower Keys population of the red rat snake, which is this species, has its own Species Conservation Measures incorporated into 68A-25.002, so a wild Keys animal is a different question from a pet.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "banned",
@@ -15511,9 +15716,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not on FWC's prohibited/Reptiles of Concern list. Florida's milk snake population (Coastal Plain milksnake) is native, so this covers lawfully acquired possession; wild take of the native population is a separate FWC nongame question we did not verify in detail.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Lampropeltis triangulum is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "banned",
@@ -15874,9 +16081,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not on FWC's prohibited/Reptiles of Concern list, which names large constrictors, monitors, tegus and the green iguana. Rosy boa is not Florida native.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Lichanura trivirgata is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         },
         "HI": {
           "status": "banned",
@@ -16233,12 +16442,12 @@
           "verifiedOn": "2026-08-27"
         },
         "FL": {
-          "status": "permit",
+          "status": "legal",
           "sourceId": "fl-class3",
-          "cite": "Ch. 68A-6, F.A.C. (Class III wildlife)",
-          "note": "Flying squirrels are not dangerous/large enough for Class I or II, so they default to Class III, which requires a free license (a 'Personal Pet' questionnaire suffices). FWC requires the animal's lineage trace to a lawfully captive-bred, USDA-licensed source; a wild-caught animal, even one hand-raised from birth, does not qualify.",
-          "permitFor": "personal",
-          "verifiedOn": "2026-08-27"
+          "cite": "68A-6.003(14)(g)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(g) as \"Squirrels; chipmunks\", and Glaucomys volans is a squirrel. This entry previously read as requiring a Class III permit, which is what the class scheme would give if the exemption list did not reach it first. Two other rules are worth knowing and neither changes the answer: 68A-6.003(13) bars keeping fox, skunks, bats, raccoons and whitetail deer taken from the wild as personal pets and does not mention squirrels, and the southern flying squirrel is not on Florida's imperiled species list at 68A-27.003.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "permit",
@@ -16833,6 +17042,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Varanus acanthurus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Varanus acanthurus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Like the savannah monitor, untouched by a prohibited list that names one monitor species.",
+          "verifiedOn": "2026-09-05"
         }
       },
       "article": "/blog/ackie-monitor-legal-guide/"
@@ -16913,9 +17130,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not a reptile of concern; that list covers large invasive constrictors, monitors, and tegus. Florida's captive wildlife rule allows nonvenomous, unprotected reptiles to be kept as personal pets without a license.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Thamnophis sirtalis is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The Lower Keys population of the peninsula ribbonsnake, a different Thamnophis, is the one with conservation measures attached.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "banned",
@@ -17321,9 +17540,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Not a reptile of concern; that category is built around large invasive constrictors, monitors, and tegus. Ordinary nonvenomous colubrids like the California kingsnake need no license as a personal pet.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Lampropeltis californiae is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. The Lampropeltis that Florida does regulate is the short-tailed snake, L. extenuata, which has its own conservation measures; the California kingsnake is untouched.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "legal",
@@ -17715,9 +17936,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "note": "Florida's prohibited/conditional captive wildlife lists are built around reptiles; no bird appears on them.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(q)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the entry at (14)(q), which is the single word \"Parrots\", sitting in a list that separately names shell parakeets, canaries, lovebirds, cockatiels, finches, myna birds and toucans. Cockatoos are parrots for this purpose, and Florida attaches no species test.",
+          "verifiedOn": "2026-09-05"
         },
         "GA": {
           "status": "legal",
@@ -18109,10 +18332,11 @@
         },
         "FL": {
           "status": "legal",
-          "sourceId": "fl-prohibited",
-          "cite": "Ch. 68-5, F.A.C.",
-          "note": "Not on Florida's prohibited reptile list (sixteen high-risk species, no tortoise) and not a Class I or II wildlife species requiring a specific license.",
-          "verifiedOn": "2026-08-27"
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Chelonoidis carbonarius is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         },
         "TX": {
           "status": "legal",
@@ -18580,6 +18804,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Pogona vitticeps is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Pogona vitticeps is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -18741,6 +18973,14 @@
           "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Eublepharis macularius is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Eublepharis macularius is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -18904,6 +19144,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Correlophus ciliatus is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Correlophus ciliatus is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Florida attaches no conservation-status test to its clearance, so unlike Massachusetts the IUCN listing for this species does not reach it.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19065,6 +19313,14 @@
           "cite": "166 NAC 10 § 001.03; 166 NAC 8 § 001.01B",
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Tiliqua scincoides is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. Nebraska's own skinks go the other way: the five-lined and Great Plains skinks are nongame species in need of conservation with no take at all, and the prairie and many-lined skinks are capped at three.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Tiliqua scincoides is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
           "verifiedOn": "2026-09-05"
         }
       }
@@ -19228,6 +19484,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Trioceros jacksonii is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Trioceros jacksonii is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19389,6 +19653,14 @@
           "quote": "001.03 Regulated Taking of Reptiles and Amphibians - The provisions of 001.03 apply to all species and subspecies of reptiles and amphibians native to Nebraska except those legally designated as Game species, Nongame Species in Need of Conservation, and Threatened or Endangered species. It shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship any reptile or amphibian species defined in this section except as provided in 001.03A. ... 001.03A2 For those individual specimens or parts thereof legally obtained by purchase or consignment from outside of Nebraska, sale, offer of sale and associated transport, possession or processing will be permitted without regard to limits or numbers for the species listed below in 001.03A3 and 001.03A4, provided that such authority shall be contingent upon a persons ability to provide proof of legal acquisition including bill of sale or consignment.",
           "note": "Nebraska regulates reptiles and amphibians only where they are its own. 166 NAC 10 § 001.03 opens by limiting itself to \"all species and subspecies of reptiles and amphibians native to Nebraska\", and Anolis carolinensis is not one. The captive wildlife chapter does not reach it either, because § 001.01B is written about wild birds and wild mammals and §§ 37-245 and 37-246 define both by Nebraska geography. So no permit, no cap and no list. No Anolis is native to Nebraska, so the whole genus sits outside the chapter.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(a)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Cleared by the first entry on the no-permit list, \"Reptiles or amphibians (nonvenomous, unprotected)\", which is the broadest single clearance on this map: it is not a species list, and it takes in every nonvenomous reptile and amphibian that no other Florida rule reaches. Anolis carolinensis is nonvenomous, is on no imperiled species list at 68A-27.003, and is on neither the prohibited list at 68-5.006 nor the conditional list at 68-5.004. Answered twice over, since 68A-6.003(12) separately says no permit is required for the sale of \"chameleons (Anolis)\", using the old trade name for the genus.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19544,6 +19816,14 @@
           "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
           "note": "The cottontail, Sylvilagus floridanus, is on the § 001.01B list of native species that need a Captive Wildlife Permit, and the domestic rabbit is not that animal. Oryctolagus cuniculus is not native to Nebraska and has no established free-ranging population here, so it is not a wild mammal, and as a domesticated species it is outside § 37-247 as well. Nebraska is another state where the rabbit question is answered by the animal simply not being the one the law is about.",
           "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "legal",
+          "sourceId": "fl-class3",
+          "cite": "68A-6.003(14)(f)",
+          "quote": "No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission: (a) Reptiles or amphibians (nonvenomous, unprotected) (b) Gerbils, hedgehogs (c) Honey possums, sugar gliders (d) Rats and mice (e) Moles; shrews (f) Rabbits (g) Squirrels; chipmunks (h) Ferrets (domestic; European) (i) Guinea pigs (j) Hamsters (k) Prairie dogs (l) Chinchillas (m) Shell parakeets (n) Canaries (o) Lovebirds (p) Cockatiels (q) Parrots (r) Finches (s) Myna birds (t) Toucans (u) Doves; ringed, ruddy, and diamond (v) Button quail",
+          "note": "Named at (14)(f) with no qualifier, so the entry reaches the domestic rabbit without the wild-versus-domestic sorting that Minnesota, Illinois and Massachusetts each have to do for the same species.",
+          "verifiedOn": "2026-09-05"
         }
       }
     },
@@ -19697,6 +19977,14 @@
           "cite": "Neb. Rev. Stat. §§ 37-247, 37-477(1); 166 NAC 8 § 001.01B",
           "quote": "Wildlife means any member of any nondomesticated species of the animal kingdom, whether reared in captivity or not, including any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate and includes any part, product, egg, or offspring thereof or the dead body or parts thereof.",
           "note": "Nebraska defines wildlife broadly enough to include the Madagascar hissing cockroach, since § 37-247 reaches \"any mammal, fish, bird, amphibian, reptile, mollusk, crustacean, arthropod, or other invertebrate\". What it does not do is regulate one. The captivity prohibition at § 37-477(1) and at 166 NAC 8 § 001.01B is written about wild birds, wild mammals, nongame species in need of conservation and listed species, none of which is an arthropod; 166 NAC 10 covers only reptiles and amphibians; and the importation list at § 001.08A contains nothing but mammals and birds. The one loose end is that the list is headed \"the following wildlife may be imported\" and wildlife on the statutory definition includes arthropods, so a very literal reading of that heading would bar importing a tarantula. Nothing in the chapter turns that heading into a prohibition, and every operative sentence in it is about birds and mammals. As with the millipede, the real constraint is the USDA permit for interstate movement rather than anything in Nebraska law.",
+          "verifiedOn": "2026-09-05"
+        },
+        "FL": {
+          "status": "permit",
+          "sourceId": "fl-arthropods",
+          "cite": "5B-57.004(1)",
+          "quote": "It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance.",
+          "note": "Florida answers this animal through its agriculture department, not FWC, and the wildlife chapters give no hint of it. 5B-57.004(1) makes it unlawful to possess any arthropod \"regulated by the Department or the USDA\" without a permit from the Division of Plant Industry, unless a federal PPQ 526 has already issued with the Department's concurrence. Gromphadorhina portentosa moves interstate under exactly that federal permit, which is what brings it inside the sentence. The permit standard is containment: the Department must find the animal can be contained to prevent escape into the environment, which in practice means secure enclosure rather than a fee. Nothing in Chapter 68-5 or Chapter 68A-6 names it, so an entry resting on those chapters alone would read this as unrestricted. The same reasoning reaches it as reaches the millipede, and for the same reason: it is the federal plant-pest status that does the work, not anything Florida wrote about the species.",
           "verifiedOn": "2026-09-05"
         }
       }

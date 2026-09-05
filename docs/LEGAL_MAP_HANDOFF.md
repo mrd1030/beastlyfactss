@@ -8,12 +8,12 @@ Read this, then `docs/legal-sources/README.md`, then start.
 | | |
 |---|---|
 | Animals on the map | 52 |
-| Jurisdictions complete for every animal | 17 (AZ, CO, CT, DE, HI, IL, MA, MD, MI, MN, NE, NM, NV, OR, PA, TN, TX) |
-| Unread cells | 460 |
-| Cached primary sources | 42 files in `docs/legal-sources` |
+| Jurisdictions complete for every animal | 18 (AZ, CO, CT, DE, FL, HI, IL, MA, MD, MI, MN, NE, NM, NV, OR, PA, TN, TX) |
+| Unread cells | 430 |
+| Cached primary sources | 43 files in `docs/legal-sources` |
 
 `main` carries everything through Delaware and is deployed. Colorado, Illinois, Minnesota,
-Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts and Nebraska sit on
+Oregon, Connecticut, Maryland, Tennessee, Texas, Massachusetts, Nebraska and Florida sit on
 `claude/legal-map-colorado-dca3og`; either continue there or cut a fresh branch from main once it
 lands.
 
@@ -28,7 +28,7 @@ One jurisdiction per sitting. It takes a while and that is fine.
    that explains rather than asserts, and `verifiedOn` set to today in US Eastern.
 4. Re-run `legal-gaps.mjs`, then `node scripts/check-legal-map-sync.mjs`. That script
    cross-checks every legal guide against the map and will catch guides you just made
-   wrong. It sits at 11 pre-existing errors; anything above that is yours.
+   wrong. It sits at 9 pre-existing errors; anything above that is yours.
 5. Also run `check-internal-links` and `check-related-articles` if you touched content.
 6. Cache the sources you fetched into `docs/legal-sources` and add a README row.
 7. Commit, push. Do not run `npm run build`.
@@ -67,6 +67,14 @@ cats, primates, non-wolf canids, bears and crocodilians. The reasoning was sound
 the wrong one. Both animals are named on ODFW's prohibited species list, which is where a rodent
 question in Oregon is actually answered. When an entry's note explains why some statute does not
 reach an animal, that is the moment to ask which statute does.
+
+Florida is the sixth, and there it was a whole agency rather than a whole statute. Its wildlife
+chapters are FWC's, and arthropods are not FWC's business: 5B-57.004 belongs to the Department of
+Agriculture and makes it unlawful to possess any arthropod "regulated by the Department or the
+USDA" without a permit. Reading only Chapters 68-5 and 68A-6 makes every invertebrate look
+unrestricted, and it was the millipede guide, which had found the agriculture rule, that caught the
+error. When a state's wildlife code says nothing at all about a whole phylum, that is a prompt to
+ask which agency it belongs to, not evidence that nobody regulates it.
 
 That failure mode has now cost five states. Oregon's prairie dog and capybara, Connecticut's
 prairie dog and capybara, Illinois's garter snake and Maryland's corn snake and garter snake all
@@ -132,14 +140,20 @@ state that codifies by version. And confirm the citation itself still resolves.
 
 | Code | State | Unread | Note |
 |---|---|---|---|
-| FL | Florida | 30 | 2 sources on file |
 | NY | New York | 30 | 4 sources on file |
 | GA | Georgia | 29 | 4 sources on file |
 | NYC | New York City | 29 | 1 source on file |
 | NJ | New Jersey | 28 | 3 sources on file |
+| UT | Utah | 27 | 5 sources on file |
 
 ## Loose ends
 
+- **Florida has no open cells, and one reading that rests on the agency rather than the rule.**
+  Class II item 24 in 68A-6.002 reads "Wolves, coyotes, jackals (family Canidae)", and the
+  parenthetical on its face makes every fox a $140-a-year Class II animal. FWC's own personal pet
+  page lists "fox" among common Class III species, which is the free permit, and that is what the
+  fennec fox entry records. The rule text would support the harsher reading, so if the agency page
+  ever changes, that cell changes with it.
 - **Nebraska has one unclear cell and one entry that rests on an absence.** The unclear one is the
   hedgehog: the importation list at 166 NAC 8 § 001.08A reads "Eurasian Hedgehogs, Erinaceus spp."
   and the pet is Atelerix albiventris. The vintage argument is real, since Massachusetts still
@@ -238,9 +252,10 @@ They are corrected now, but anything drafted against the older map needs re-read
 prairie dog in particular reads very differently once Colorado, its own native range, turns out
 to prohibit it by name.
 
-Cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51, and veiled chameleon,
-prairie dog, ferret and capybara at 50. Then Russian tortoise, hamster, gerbil, guinea pig,
-chinchilla, fennec fox and serval at 49.
+Ferret, cockatoo, hedgehog, sugar glider, garter snake and kingsnake are at 51 of 51. Then Russian
+tortoise, hamster, gerbil, guinea pig, veiled chameleon, chinchilla, fennec fox and serval at 50.
+Eight animals are one jurisdiction short of complete, which is the largest article-ready batch this
+map has had.
 
 The eight encyclopedia animals added this week (bearded dragon, leopard gecko, crested
 gecko, blue-tongue skink, Jackson's chameleon, green anole, rabbit, hissing cockroach) sit
@@ -282,6 +297,13 @@ Maryland is the only state that answers it by weight: § 10-621(b)(1)(iv) reache
 only "if the hybrid weighs over 30 pounds", with no generation test anywhere in the section. The
 line is drawn on the individual animal rather than its ancestry, which is the one version of
 this rule whose answer could change as a cat grows.
+
+Florida is the twelfth Bengal answer and the only one written as a resemblance test. 68A-6.002(1)(d)
+reaches a wildlife-domestic hybrid only where it is "substantially similar in size, characteristics
+and behavior so as to be indistinguishable from the wild animal", and then regulates it at the wild
+parent's class. A pet Bengal is not indistinguishable from an Asian leopard cat, so the clause never
+engages, and even if it did the leopard cat is itself Class III, so the worst case is a free permit.
+Every other state on this row counts generations or weighs the cat; Florida asks what it looks like.
 
 Nebraska is the eleventh Bengal answer and the one with the least written down. Neb. Rev. Stat.
 § 37-477(2) bans every member of Felidae and excepts "the species Felis domesticus", with no

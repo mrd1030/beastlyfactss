@@ -1,0 +1,309 @@
+# Florida: three separate chapters, and the exemption list beats the class list
+sourceId: fl-prohibited / fl-class3 / fl-turtles / fl-arthropods
+jurisdiction: FL
+url: https://www.flrules.org/gateway/ChapterHome.asp?Chapter=68-5
+     https://www.flrules.org/gateway/ChapterHome.asp?Chapter=68A-6
+     https://www.flrules.org/gateway/RuleNo.asp?id=68A-25.002
+     https://www.flrules.org/gateway/RuleNo.asp?id=5B-57.004
+     https://myfwc.com/license/captive-wildlife/personal-pet/
+fetched: 2026-09-05
+fetch notes: flrules.org 403s a plain curl and answers a browser User-Agent, so
+      curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ..." 
+  RuleNo.asp gives you METADATA, not the rule. The text is a Word document behind a link on that
+  page shaped
+  Scrape the tid off the RuleNo page. LibreOffice refuses these files ("source file could not be
+  loaded"), so extract with a printable-run regex instead:
+  Use a threshold of 4 characters, not 25. The species lists are short lines and a higher threshold
+  silently drops them, which is how you get a 22-item no-permit list that reads as four items.
+  myfwc.com answers plain curl.
+FOUR CHAPTERS, and reading only one is how Florida gets recorded wrong:
+  68A-6      captive wildlife. Class I (no personal pet, ever), Class II ($140/yr + documented
+             experience + caging), Class III (free 2-year permit). THEN 68A-6.003(14) exempts 22
+             categories from the permit scheme altogether, and that list is the answer for most of
+             this map. Read the class lists without it and a bearded dragon looks like a permit.
+  68-5       nonnative species. 68-5.006 prohibited (the 2021 reptile rewrite), 68-5.004
+             conditional, 68-5.007 what a prohibited-species owner may do, which is almost nothing.
+  68A-25.002 native turtles. Numbers, not permits: one turtle per day, two box turtles per person,
+             no wild take of snapping turtles or cooters, no sale of any wild-taken turtle.
+  5B-57.004  ARTHROPODS, and it belongs to the Department of Agriculture, not FWC. Unlawful to
+             possess any arthropod "regulated by the Department or the USDA" without a permit.
+             This is the one an FWC-only reading misses entirely.
+THE 68A-6.003(14) NO-PERMIT LIST, in full, because it decides more cells than anything else here:
+  (a) Reptiles or amphibians (nonvenomous, unprotected)   (l) Chinchillas
+  (b) Gerbils, hedgehogs                                  (m) Shell parakeets
+  (c) Honey possums, sugar gliders                        (n) Canaries
+  (d) Rats and mice                                       (o) Lovebirds
+  (e) Moles; shrews                                       (p) Cockatiels
+  (f) Rabbits                                             (q) Parrots
+  (g) Squirrels; chipmunks                                (r) Finches
+  (h) Ferrets (domestic; European)                        (s) Myna birds
+  (i) Guinea pigs                                         (t) Toucans
+  (j) Hamsters                                            (u) Doves; ringed, ruddy, and diamond
+  (k) Prairie dogs                                        (v) Button quail
+  Note what is NOT on it. The capybara, the degu and the fennec fox all fall back to Class III and
+  its free permit, and the chinchilla being on the list while the degu is not is the sharpest
+  illustration that this is a set of individual namings rather than a principle.
+TRAPS:
+  Class II item 24 reads "Wolves, coyotes, jackals (family Canidae)", which on its face would make
+  every fox a $140 animal. FWC does not read it that way: its own personal pet page lists "fox"
+  among common CLASS III species. The agency reading is recorded in the fennec fox entry.
+  68A-6.002(1)(d) is the hybrid rule and it is a resemblance test, not a generation rule: a hybrid
+  is regulated at the wild parent's class only where it is "indistinguishable from the wild animal".
+  The prohibited list names "Tegus (genera Salvator and Tupinambis, all species)", written to
+  survive the 2012 genus split, and "Indian or Burmese python (Python molurus)", where the chapter's
+  opening words reach taxonomic successors. Taxonomy arguments do not work on this list.
+  The red-eared slider entry at 68-5.004(3) exempts albino and amelanistic animals from the permit
+  by name. It is the only colour-morph carve-out on this map.
+--- 68A-6.002, Classes of Captive Wildlife -------------------------------------------------
+bjbj
+68A-6.002 Classes of Captive Wildlife.
+(1) The Commission hereby establishes the following categories of wildlife including their taxonomic successors and subspecies thereof:
+(a) Class I:
+1. Chimpanzees (genus Pan)
+2. Gorillas (genus Gorilla)
+3. Gibbons and Siamangs (family Hylobatidae)
+4. Drills and mandrills (genus Mandrillus)
+5. Orangutans (genus Pongo)
+6. Baboons (genus Papio)
+7. Gelada baboons (genus Theropithecus)
+8. Snow leopards (Panthera uncia)
+9. Leopards (Panthera pardus)
+10. Jaguars (Panthera onca)
+11. Tigers (Panthera tigris)
+12. Lions (Panthera leo)
+13. Bears (family Ursidae)
+14. Rhinoceros (family Rhinocerotidae)
+15. Elephants (family Elephantidae)
+16. Hippopotamuses (family Hippopotamidae)
+17. Cape buffalos and Gaur (family Bovidae)
+18. Crocodiles (except dwarf and Congo) (family Crocodylidae)
+19. Gavials (family Gavialidae)
+20. Black caimans (Melanosuchus niger)
+21. Komodo dragons (Varanus komodoensis)
+22. Hyenas and Aardwolf (family Hyaenidae)
+23. Cougars, panthers (Puma concolor)
+24. Cheetahs (Acinonyx jabatus)
+(b) Class II:
+1. Howler monkeys (genus Alouatta)
+2. Uakaris (genus Cacajao)
+3. Mangabeys (genus Cercocebus)
+4. Guenons (genus Cercopithecus)
+5. Patas monkeys (genus Erythrocebus)
+6. Vervet, Grivet or Green monkeys (genus Chlorocebus)
+7. Sakis (genus Chiropotes and Pithecea)
+8. Guereza monkeys (genus Colobus)
+9. Idris (genus Indri)
+10. Macaques and Celebes black apes (genus Macaca)
+11. Langurs (genus Presbytis)
+12. Douc langurs (genus Pygathrix)
+13. Snub-nosed langurs (genus Phinopithecus)
+14. Proboscis monkeys (genus Nasalis)
+15. Servals (Leptailurus serval)
+16. European and Canadian lynx (Lynx lynx)
+17. Bobcats (Lynx rufus)
+18. Caracals (Caracal caracal)
+19. African golden cats (Profelis aurata)
+20. Temminck
+s golden cats (Profelis temmincki)
+21. Fishing cats (Prionailurus viverrina)
+22. Ocelots (Leopardus pardalis)
+23. Clouded leopards (Neofelis nebulosa)
+24. Wolves, coyotes, jackals (family Canidae)
+25. Indian dholes (Cuon alpinus)
+26. African hunting dogs (Lycaon pictus)
+27. Wolverines (Gulo gulo)
+28. Honey badgers (Mellivora capensis)
+29. American badgers (Taxides taxus)
+30. Old World badgers (Meles meles)
+31. Binturongs (Arctictis binturong)
+32. Dwarf crocodiles (Osteolaemus tetraspis)
+33. Alligators, caimans (family Alligatoridae)
+34. Ostrich (Struthio camelus)
+35. Cassowary (Casuarius spp.)
+36. Giraffe and Okapi (family Giraffidae)
+37. Tapir (family Tapiridae)
+38. Wild cattle; forest, woodland and aridland antelope; and similar species of non-native hoofstock (family Bovidae).
+Such non-native hoofstock to include: Forest buffalo, Banteng, Anoa, Waterbuck, Wildebeest, Hartebeest, Eland, Kudu, Nilgai, Bongo, lechwe, Roan and Sable antelope, Sitatunga, Bontebok, Blesbok, Topi, Kob, Addax, Oryx, Gemsbok, and other wild species of the family Bovidae which are of similar size, habits and nature.
+(c) Class III: All other wildlife not listed herein, except those for which a permit is not required pursuant to Rule 68A-6.003, F.A.C.
+(d) Hybrids resulting from the cross between wildlife and domestic animal, which are substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild animal shall be regulated as wildlife at the higher and more restricted class of the wild parent.
+Rulemaking Authority Art. IV, Sec. 9, Fla. Const. Law Implemented Art. IV, Sec. 9, Fla. Const. History
+New 8-1-79, Amended 12-3-79, 6-4-81, 6-21-82, Formerly 39-6.02, Amended 6-1-86, 7-1-90, 7-1-92, 9-15-96, Formerly 39-6.002, Amended 8-27-09, 9-30-19.
+--- 68A-6.003, Permit Requirements and Exceptions ----------------------------------------
+bjbj
+68A-6.003 Permit Requirements and Exceptions.
+(1) Except as otherwise provided in this Title, no person shall possess any native or non-native wildlife in captivity except as authorized by permit issued in accordance with Section 379.3761 or 379.3762, F.S., and as provided in this chapter.
+(2) No permit shall be issued to any other entity for a facility of which the current permittee is an owner, officer, director, principal, employee, or agent or in which the current permittee holds any interest, when either:
+(a) The Commission has notified the current permittee in writing that revocation or non-renewal proceedings have been or will be brought against the permit, until such time as final administrative action is rendered; or
+(b) The current permittee has been arrested, charged, indicted, or has appealed the conviction of a crime which is a violation of any provision of Chapter 379 or 828, F.S., or rules of the Commission, or other similar laws or rules in this or any jurisdiction that relate to the subject matter of the license, permit or authorization, until such time as final criminal disposition is rendered.
+(3) Any person whose permit is revoked or non-renewed as provided for in subsection 68-1.010(2), F.A.C., shall be subject to the following provisions:
+(a) Such person shall have ninety (90) days after the final administrative disposition to lawfully dispose of all captive wildlife previously authorized under the revoked or non-renewed permit . Except as provided in paragraph (3)(b), sale, if sale was previously authorized under the permit, or transfer of such wildlife shall be authorized within the lawful disposition period for the purposes of complying with this rule.
+(b) The facility and wildlife previously authorized under the revoked or non-renewed permit may not be sold or otherwise transferred to any entity within Florida of which such person is an owner, officer, director, principal, employee, or agent or in which such person holds any interest.
+(c) Records of final disposition for all wildlife must be maintained for one (1) year and provided to the Commission within thirty (30) days after the ninety (90) day lawful disposition period. Such records shall include the following:
+1. The common and scientific name of each species.
+2. The number of individual animals of each species.
+3. Documentation of final disposition.
+4. If transferred or sold, the full name, address, and Florida captive wildlife license ID (if applicable) of the recipient.
+5. The date of transfer, sale, or other disposition.
+(d) The Commission shall have the authority to verify the final disposition of wildlife previously authorized under the revoked or non-renewed permit, including inspection by officers of the Commission, pursuant to Section 379.304, F.S.
+(e) Such person shall not conduct exhibition or sale of any captive wildlife regulated under Chapter 68A-6, F.A.C., on the behalf of any other person or any other facility or permittee, including but not limited to as an employee, agent, or volunteer, whether paid or unpaid, for a period of three (3) years following final administrative action.
+(4) Any employee authorized or permitted as qualified personnel on a corporation
+s license in accordance with paragraph 68A-6.004(2)(e) or subparagraph 68A-6.017(3)(a)4., F.A.C., whose authorization or permit is revoked or non-renewed as provided for in subsection 68-1.010(2), F.A.C., shall not continue to have involvement with the care, feeding, handling, or husbandry of any wildlife authorized or permitted under the corporation
+s license following final administrative action.
+(5) Persons possessing any captive wildlife for purposes of public display or sale shall obtain a permit as specified in Section 379.3761, F.S.
+(6) Class I wildlife shall not be possessed for personal use, except as follows:
+(a) Any Class I wildlife possessed for personal use on August 1, 1980, shall be eligible for a permit in accordance with the provisions for Class II wildlife. Any Class II wildlife possessed as personal use wildlife in accordance with Section 379.3762, F.S., that is uplisted to Class I upon the effective date of Rule 68A-6.002, F.A.C., shall be eligible for a permit in accordance with the provisions of Class II wildlife. No other Class I wildlife shall be transferred or kept for personal use.
+1. All Class I wildlife possessed for personal use in accordance with the provisions for Class II Wildlife, shall be permanently identified by means of tattoo, brand, passive integrated transponder (PIT tag), photographic identification, or other method that clearly and permanently identifies that particular specimen so as to be distinguished from other specimens of the same species.
+a. For photographic identification the photograph of the specimen must include sufficient distinguishing characteristics (marks, scars, and patterns, etc.) to enable that particular specimen to be distinguished from other specimens of the same species.
+b. Record of identification including PIT tag numbers where applicable, along with information about the specimen being identified (species, method of identification, specimen name or number, gender and age) must be maintained in the possessor
+s records for as long as the specimen is possessed. Such records shall be made available for inspection, upon request, of commission personnel. A copy of such record shall be provided to the Florida Fish and Wildlife Conservation Commission, Division of Law Enforcement, upon annual renewal of the license issued in accordance with Section 379.3761, F.S., and authorizing possession of such wildlife.
+2. Effective Date: All permanent identification requirements in this rule shall not take effect until January 1, 2010.
+(b) Persons possessing Class I wildlife for personal use shall comply with all provisions of this chapter relating to the personal use of wildlife.
+(7) Persons possessing Class II wildlife as personal use wildlife shall purchase a permit as provided in Section 379.3762, F.S.
+(8) Persons possessing Class III wildlife as personal use wildlife shall obtain a no-cost permit from the Executive Director.
+(9) Any person engaging in the business of breeding or the purchase or sale of exotic birds or birds customarily kept as pets shall be licensed as provided in Section 379.3761, F.S.
+(10) The provisions of this chapter shall not apply to entities operating solely as research facilities, which are registered and regulated as such in accordance with Animal Welfare Act (7 U.S.C. 2131, et. seq.) and regulations promulgated thereunder, provided the following requirements are met:
+(a) Such facilities must maintain on premises a detailed research proposal which shall state with particularity the research objectives, methodology, and study duration, and outline planned safeguards to assure proper containment of the wildlife. Maintain an annual record of progress toward the research project objectives. Such research proposal and record of progress shall be available for inspection upon request of Commission personnel.
+(b) Such facilities housing wildlife must maintain such wildlife in cages or enclosures which meet the structural requirements as specified in Rules 68A-6.010 and 68A-6.011, F.A.C.
+(11) The provisions of this chapter shall not apply to persons possessing the following non-native wildlife species exclusively for the purpose of production of meat, skins or hides, feathers or progeny thereof, and not for personal possession or public display or exhibition:
+(a) Ostrich
+(b) Cassowary
+(c) Rhea
+(d) Emu
+(e) Bison
+(12) No permit shall be required for the sale of poultry, hamsters, guinea pigs, domestic rats and mice, gerbils, or chameleons (Anolis).
+(13) Fox, skunks, bats, raccoons, or whitetail deer taken from the wild shall not be possessed as personal use wildlife and shall be possessed only in accordance with permits issued under Rules 68A-9.002, 68A-9.006, F.A.C., or Section 379.3761, F.S.
+(14) No permit shall be required to possess the following wildlife for personal use, unless possession of a species is otherwise regulated by other rules of the Commission:
+(a) Reptiles or amphibians (nonvenomous, unprotected)
+(b) Gerbils, hedgehogs
+(c) Honey possums, sugar gliders
+(d) Rats and mice
+(e) Moles; shrews
+(f) Rabbits
+(g) Squirrels; chipmunks
+(h) Ferrets (domestic; European)
+(i) Guinea pigs
+(j) Hamsters
+(k) Prairie dogs
+(l) Chinchillas
+(m) Shell parakeets
+(n) Canaries
+(o) Lovebirds
+(p) Cockatiels
+(q) Parrots
+(r) Finches
+(s) Myna birds
+(t) Toucans
+(u) Doves; ringed, ruddy, and diamond
+(v) Button quail
+(15) A violation of the provisions of this rule shall constitute a ciolation of Section 379.4015, F.S.
+Rulemaking Authority Art. IV, Sec. 9, Fla. Const. Law Implemented Art. IV, Sec. 9, Fla. Const., 379.3761, 379.3762 FS. History
+New 8-1-79, Amended 6-21-82, Formerly 39-6.03, Amended 6-1-86, 7-1-90, 7-1-92, 2-1-98, Formerly 39-6.003, Amended 1-1-08, 1-8-08, 8-27-09, 11-8-10, 12-6-10, 9-30-19, 6-20-22.
+--- 68-5.006, Prohibited Non-Native Species ----------------------------------------------
+bjbj
+68-5.006 Prohibited Non-Native Species.
+Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.007, F.A.C.
+(1) Non-native freshwater aquatic species:
+(a) African electric catfishes (Family Malapteruridae, all species).
+(b) African tigerfishes (Genus Hydrocynus, all species).
+(c) Airbreathing catfishes (Family Clariidae, all species except Clarias batrachus).
+(d) Candiru catfishes (Family Trichomycteridae, all species).
+(e) Freshwater electric eels (Electrophorus electricus).
+(f) Lampreys (Family Petromyzontidae, all species).
+(g) All species of piranha and pirambeba (subfamily Serrasalminae).
+(h) Snakeheads (Family Channidae, all species).
+(i) Tilapias (Genera Tilapia, Sarotherodon, Alcolapia and Oreochromis, all species except Oreochromis aureus, Oreochromis urolepis, Oreochromis mossambicus, and Oreochromis niloticus).
+(j) Trahiras or Tigerfishes (Family Erythrinidae, all species).
+(k) Airsac catfishes (Family Heteropneustidae, all species).
+(l) Green sunfish (Lepomis cyanellus).
+(m) Australian crayfish (Genus Cherax, all species except Cherax quadricarinatus cultured in a closed tank system).
+(n) Zebra mussel (Dreissena polymorpha).
+(o) Quagga mussel (Dreissena bugensis).
+(2) Non-native mammals:
+(a) African giant pouched rats (Genus Cricetomys, all species).
+(b) Brushtail possum (Trichosurus vulpecula).
+(c) Dhole (Genus Cuon, all species).
+(d) Flying foxes (Genus Pteropus, all species).
+(e) Mongoose, meerkats (Genera Atilax, Cynictis, Helogale, Herpestes, Ichneumia, Mungos, and Suricata, all species).
+(f) Raccoon dog (Nyctereutes procyonoides).
+(3) Non-native marine species:
+(a) Mitten crab (Genus Eriocheir, all species).
+(b) Sea snakes (Family Hydrophiidae, all species), except that sea snakes may be possessed as described in paragraph 68-5.007(1)(f), F.A.C.
+(c) Weeverfishes (Family Trachinidae, all species).
+(d) Stone fishes (Genus Synanceia, all species).
+(e) Genus Synanceia, all species.
+(f) Pitted stonefish (Erosa erosa).
+(g) Red rock cod (Scorpaena papillosa).
+(h) Stonefish (Leptosynanceia asteroblepa).
+(i) Stargazing stonefish (Trachicephalus uranoscopus).
+(4) Non-native reptiles:
+(a) Yellow anaconda (Eunectes notaeus).
+(b) Beni anaconda (Eunectes beniensis).
+(c) DeSchauensee
+s anaconda (Eunectes deschauenseei).
+(d) Brown tree snake (Boiga irregularis).
+(e) Indian or Burmese python (Python molurus).
+(f) Reticulated python (Python reticulatus).
+(g) Northern African python (Python sebae).
+(h) Southern African python (Python natalensis).
+(i) Amethystine python (Morelia amethistinus).
+(j) Scrub python (Morelia kinghorni).
+(k) Green anaconda (Eunectes murinus).
+(l) Nile monitor (Varanus niloticus).
+(m) Green iguana (Iguana iguana)
+(n) Tegus (genera Salvator and Tupinambis, all species)
+(5) Non-native birds:
+(a) Dioch (Quelea quelea).
+(b) Java sparrow (Lonchura oryzivora).
+(c) Pink starling (Pastor roseus).
+(d) Red-whiskered bul-bul (P
+--- 68-5.004, Conditional Non-Native Species ---------------------------------------------
+bjbj
+68-5.004 Conditional Non-Native Species.
+Live specimens of the following species, including their taxonomic successors, subspecies, or hybrids or eggs thereof may be possessed only pursuant to permit issued by the Executive Director except as provided in Rule 68-5.005, F.A.C.
+(1) Non-native freshwater fish and aquatic invertebrate species.
+(a) Bighead carp (Aristichthys nobilis).
+(b) Bony-tongue fishes (Family Arapaimidae).
+1. Arapaima (Arapaima gigas).
+2. Heterotis (Heterotis niloticus).
+(c) Dorados (Genus Salminus, all species).
+(d) Freshwater stingrays (Family Potamotrygonidae, all species).
+(e) Grass carp (Ctenopharyngodon idella), with restrictions as provided in Rule 68A-23.088, F.A.C.
+(f) Silver carp (Hypophthalmichthys molitrix).
+(g) Snail or black carp (Mylopharyngodon piceus).
+(h) Nile perches (Genus Lates, all species). For owners of aquaculture facilities that are operating under permit or a certificate of registration, but which are not cultivating Nile perches as of April 11, 2007, and for owners of aquaculture facilities which are issued original permits or certificates of registration after April 11, 2007, Nile perches:
+1. Shall be held only in indoor facilities.
+2. Shall not be taken on a fee or for-hire basis using hook and line or rod and reel.
+(i) Blue tilapia (Oreochromis aureus), except that Oreochromis aureus may be possessed, cultured, and transported without permit in all counties of the Northeast, North Central, South and Southwest Regions.
+(j) Wami tilapia (Oreochromis urolepis).
+(k) Mozambique tilapia (Oreochromis mossambicus).
+(l) Nile tilapia (Oreochromis niloticus), except that Oreochromis niloticus may be possessed, cultured, and transported without permit in all counties of the Northeast, North Central, South and Southwest Regions.
+(m) Walking catfish (Clarias batrachus).
+(n) Blue catfish (Ictalurus furcatus), except that blue catfish may be possessed in the Suwannee River and its tributaries and north and west of the Suwannee River.
+(o) Australian red claw crayfish (Cherax quadricarinatus) only in closed tank culture systems.
+(p) Red swamp crayfish (Procambarus clarkii) and white river crayfish (Procambarus zonangulas).
+1. Pond aquaculture of either species is prohibited.
+2. Red swamp crayfish and white river crayfish may be possessed west of the Apalachicola River and its tributaries or imported for direct sale to food wholesalers and food retailers for resale to consumers without permit.
+(q) Arowanas (Family Osteoglossidae, all species except silver arowana, Osteoglossum bicirrhosum).
+(r) Northern largemouth bass (Micropterus salmoides salmoides), except that intergrade largemouth bass (northern largemouth bass x Florida largemouth bass Micropterus salmoides floridanus) may be possessed in the Suwannee River and its tributaries and north and west of the Suwannee River.
+(2) Non-native mammals
+Nutria (Myocaster coypus).
+(3) Non-native turtles. Red-eared slider (Trachemys scripta elegans): red-eared sliders may be possessed only by permitted individuals or commercial import or export businesses according to the provisions of subsection 68-5.005(4), F.A.C., except as provided below:
+(a) Red-eared sliders in personal possession prior to July 1, 2007 may continue in the possession of the owner without a permit, except that red-eared sliders less than four inches carapace length may not be possessed after July 1, 2008 without a permit.
+(b) Red-eared sliders with distinctive aberrant color patterns, including albino or amelanistic specimens, may be possessed without a permit otherwise required by this rule.
+(4) Non-native snakes and lizards: None listed at this time.
+Rulemaking Authority Article IV, Section 9, Florida Constitution. Law Implemented Article IV, Section 9, Florida Constitution. History
+New 10-23-08, Amended 8-23-10, 12-27-18, 4-29-21.
+--- 5B-57.004, arthropods (Department of Agriculture, not FWC) ----------------------------
+bjbj
+5B-57.004 Introduction, Possession or Movement of Arthropods, Biological Control Agents, Plant Pests, Noxious Weeds, and Invasive Plants, Regulated by the Department.
+(1) It is unlawful to introduce, multiply, possess, move, or release any arthropod, plant pest, biological control agent, noxious weed, or invasive plant regulated by the Department or the USDA except under permit issued by the Department unless a federal permit, PPQ 526, has been issued by the USDA with concurrence by the Department. No permit shall be issued nor concurrence with a federal permit, PPQ 526 made unless the Department has determined that the arthropod, plant pest, biological control agent, noxious weed, or invasive plant can be contained to prevent escape into the environment or that it will not pose a threat to agriculture, beneficial organisms, or the environment or become a public nuisance. If the possession of a plant listed in Rule 5B-57.007, F.A.C., has resulted from natural dispersion and there is neither danger of nor intent to further disperse the plant, then no permit is required. Any person transporting noxious or prohibited aquatic plants for disposal shall not be required to possess a permit pursuant to this chapter; however, disposal shall be carried out in such a manner that there is no further spread of the the plant species and no contamination of any waterbody of the state. In the case of biological control agents, they must be specialized to the target pest or pests. The Department
+s evaluation of permit applications may rely on findings of the Florida Department of Environmental Protection, the Florida Fish and Wildlife Conservation Commission, the USDA, the University of Florida, or any other State or Federal agency with expertise in these areas. In cases where there is inadequate information about the potential environmental impact of importing or releasing an organism, the Department will require the applicant to provide evidence that the accidental escape of organisms not intended for release would not be hazardous to Florida or U.S. agriculture, beneficial organisms, the public, or the environment and to provide contingency plans for containment should escape occur. The application procedures for permits are as follows:
+(2) Unless a USDA permit 526 has been issued, anyone seeking a permit shall submit a completed Application and Permit to Move Organisms Regulated by the State of Florida, FDACS 08208 (Rev. 01/13), to the Division of Plant Industry, P.O. Box 147100, Gainesville, FL 32614-7100. The form Application and Permit to Move Organisms Regulated by the State of Florida, FDACS 08208 (Rev. 01/13), is hereby adopted and incorporated by reference and may be obtained by writing the Division of Plant Industry at P.O. Box 147100, Gainesville, FL 32614-7100 or online at
+HYPERLINK "https://www.flrules.org/Gateway/reference.asp?No=Ref-02819"
+http://www.flrules.org/Gateway/reference.asp?No=Ref-02819
+(3) The completed application for permit shall be submitted to the Department for evaluation and approval or disapproval.
+(4) Following approval by the Department, a permit (Application and Permit to Move Organisms Regulated by the State of Florida, FDACS 08208, Rev. 01/13) shall be issued. The conditions under which movement, introduction, possession, or release is permitted, and the length of time for which the permit is valid, will be specified on the permit.
+(5) Failure to comply with permit requirements shall subject the permit to revocation by the Director of the Division of Plant Industry. Where the Director has revoked a permit for non-compliance with permit requirements, the permitted organism involved shall be seized by the Department if it is determined to pose a threat to the agricultural, horticultural, environmental, or public interests of the state as provided for in Section 581.031(15)(a), F.S.
+Rulemaking Authority 570.07(23), 581.031(4), (5) FS. Law Implemented 369.251(3), 581.031(6), (7), 581.083, 581.091, 581.101 FS. History
+New 7-27-93, Amended 6-20-00, 4-18-04, 7-29-13, 9-28-20.
+
